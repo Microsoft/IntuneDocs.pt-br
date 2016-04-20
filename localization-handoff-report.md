@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/20d0e0322afed14c395a2d68f5a6a2147bfeb69d/InTuneDocs/DeployUse/add-apps.md) | HandedOffSuccess | [Details](#481f98af4a49c5690046dbfa8242d9134bec6d3d23)
+ [InTuneDocs\DeployUse\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e20b1658a9735d242552b6546fe7f7c6ff86bff9/InTuneDocs/DeployUse/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) | HandedOffSuccess | [Details](#c441f93f56f265928f138ba5d64579df4ab6dad081)
 
 ## Item Details
-##### <a name='481f98af4a49c5690046dbfa8242d9134bec6d3d23'></a> Source: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/20d0e0322afed14c395a2d68f5a6a2147bfeb69d/InTuneDocs/DeployUse/add-apps.md)
+##### <a name='c441f93f56f265928f138ba5d64579df4ab6dad081'></a> Source: [InTuneDocs\DeployUse\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e20b1658a9735d242552b6546fe7f7c6ff86bff9/InTuneDocs/DeployUse/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/224f48e9d9a4806273de8270dad669062a639711/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.pt-br.xlf)
-* Handoff Datetime: 2016-04-20 01:47:33
+* Handoff File: [manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.83911e723be0212c26740e6fd98288b612720528.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/135ab5208cb5c9bfadf8735c470c1253e051b2cd/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.83911e723be0212c26740e6fd98288b612720528.pt-br.xlf)
+* Handoff Datetime: 2016-04-20 02:19:43
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
