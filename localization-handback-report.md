@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\error-evaluating-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/error-evaluating-device.md) | InSyncHandedBackSuccess | [Details](#ee368dcc2427b8917a6097ed08835d4963c68e12297)
 
 ## Item Details
-##### <a name='ee368dcc2427b8917a6097ed08835d4963c68e12297'></a> Source: [InTuneDocs\EndUser\error-evaluating-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/EndUser/error-evaluating-device.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\error-evaluating-device.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/787624f008629268c45a279404c56c8d78a7afb9/InTuneDocs/EndUser/error-evaluating-device.md)
-* Handoff File: [error-evaluating-device.6b69de70204b65f202a28394b323a9f9ecf4a0fb.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/9997c8f5304d5d104f4e0f659b589fac2ff56d81/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/error-evaluating-device.6b69de70204b65f202a28394b323a9f9ecf4a0fb.pt-br.xlf)
-* Handoff Datetime: 2016-05-01 18:08:12
-* Handoff Reason: Include
-* Archive File: [error-evaluating-device.6b69de70204b65f202a28394b323a9f9ecf4a0fb.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/b48aca1d48f2ad0b7ed44fd35e34949fe9968923/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/archive/error-evaluating-device.6b69de70204b65f202a28394b323a9f9ecf4a0fb.pt-br.xlf)
-* Archive Datetime: 2016-05-09 20:08:56
-* Handback File: [error-evaluating-device.6b69de70204b65f202a28394b323a9f9ecf4a0fb.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/64dfb00b3a044c7d87a036ca41190cb3fd370728/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/error-evaluating-device.6b69de70204b65f202a28394b323a9f9ecf4a0fb.pt-br.xlf)
-* Handback Datetime: 2016-05-25 07:54:57
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
