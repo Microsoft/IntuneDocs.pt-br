@@ -63,11 +63,12 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 - [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [O dispositivo tem um caminho raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-android.md)
+- [O dispositivo tem um caminho raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 

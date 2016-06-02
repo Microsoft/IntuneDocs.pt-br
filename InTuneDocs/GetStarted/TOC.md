@@ -21,11 +21,9 @@
 ### [Registrar dispositivos móveis e instalar um aplicativo](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Tarefas pós-configuração](post-configuration-tasks.md)
 
-<!--
-## [Choose how to manage devices](choose-how-to-manage-devices.md)
-### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
--->
+## [Escolha como gerenciar dispositivos](choose-how-to-manage-devices.md)
+### [Recursos de gerenciamento de dispositivos móveis](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Recursos de gerenciamento do PC Windows](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Fases de distribuição para implantações do Intune](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Escopo do projeto](project-scope.md)
@@ -34,12 +32,12 @@
 ### [Distribuição na empresa](enterprise-rollout.md)
 ### [Operações e manutenção](operations-and-maintenance.md)
 
-
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Implantação e Uso](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Desenvolver e personalizar aplicativos](/intune/develop/intune-app-sdk)
 # [Solução de problemas](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
