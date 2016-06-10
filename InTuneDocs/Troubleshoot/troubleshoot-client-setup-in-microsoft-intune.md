@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,7 +44,7 @@ Use as informações a seguir para ajudá-lo a solucionar problemas comuns de in
 
     -   O número total de alertas ativos
 
-3.  Clique em **Todos os Alertas** para exibir as seguintes informações sobre a página **Alertas** . Os alertas críticos são exibidos primeiro:
+3.  Clique em **Todos os Alertas** para exibir as seguintes informações sobre a página **Alertas**. Os alertas críticos são exibidos primeiro:
 
     -   **Nome** – O nome do tipo de alerta que gerou o alerta.
 
@@ -72,8 +72,7 @@ Use as informações a seguir para ajudá-lo a solucionar problemas comuns de in
 
 Isso pode ser causado pela ausência de atualizações críticas de software no computador.
 
-**Solução:** 
-Certifique-se de que sua política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune) 
+**Resolução:** certifique-se de que sua política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune) 
 
 
 ## Erros relacionados à política do Microsoft Intune em policyplatform.log
@@ -85,8 +84,7 @@ Para dispositivos do Windows não MDM, erros de política no arquivo policyplatf
 
 2.  Espere 20 minutos para o software cliente ser removido.
 
-    > [!NOTE]
-    > Não tente remover o cliente em Programas e Recursos.
+    > [!NOTE] Não tente remover o cliente em Programas e Recursos.
 
 3.  No menu Iniciar, digite **UAC** para abrir as configurações de Controle de Conta de Usuário.
 
@@ -123,7 +121,7 @@ A tabela a seguir descreve os códigos de erro exibidos em **Alertas** se ocorre
 |**0x80043008**|Não foi possível iniciar o serviço de atualizações do Microsoft Online Management.|Entre em contato com suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).|
 |**0x80043009**|O computador cliente já está inscrito no serviço.|Você deve retirar o computador cliente antes de ser possível registrá-lo novamente no serviço. Para obter instruções, confira [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Desativar dispositivos de gerenciamento do Microsoft Intune).|
 |**0x8004300B**|O pacote de instalação do software cliente não pode ser executado porque a versão do Windows que está em execução no cliente não é suportada.|O Intune não dá suporte à versão do Windows em execução no computador cliente. Para obter uma lista dos sistemas operacionais com suporte, confira [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) (Requisitos de infraestrutura de rede do Microsoft Intune).|
-|**0xAB2**|O Windows Installer não pode acessar o tempo de uma ação personalizada de execução do VBScript.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas em [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255) (Suporte da Microsoft KB198038: Ferramentas úteis para problemas de implantação e pacote).|
+|**0xAB2**|O Windows Installer não pode acessar o tempo de uma ação personalizada de execução do VBScript.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas em [Microsoft Support KB198038: Ferramentas úteis para problemas de implantação e pacote](http://go.microsoft.com/fwlink/?LinkID=234255).|
 |**0x8004300f**|O software não pode ser instalado porque o cliente do System Center Configuration Manager já está instalado.|Remova o cliente do Configuration Manager e tente novamente a instalação do software cliente.|
 |**0x80043010**|O software não pode ser instalado porque o cliente Open Mobile Alliance Device Management (OMADM) já está instalado.|Cancele registro do cliente OMADM e, em seguida, tente novamente a instalação do software cliente.|
 Se os problemas de instalação persistirem, entre em contato com o suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune). Tenha em mãos o log de registro do computador cliente (localizado em %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log e %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) e log do Windows Update (%*windir*%\windowsupdate.log) disponíveis para mostrar aos engenheiros de suporte.
@@ -132,6 +130,6 @@ Se os problemas de instalação persistirem, entre em contato com o suporte, con
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

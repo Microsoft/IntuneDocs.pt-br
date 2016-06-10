@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Monitorar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune
-Depois de configurar uma política de MAM e aplicá-la aos usuários, você pode monitorar o status de conformidade no Portal do Azure. O Portal do Azure inclui informações sobre os usuários afetados pela política, o status de conformidade e os problemas que os usuários finais possam estar ocorrendo.
+Depois de configurar uma política MAM e aplicá-la aos usuários, você pode monitorar o status de conformidade no [Portal do Azure](https://portal.azure.com). O Portal do Azure inclui informações sobre os usuários afetados pela política, o status de conformidade e os problemas que os usuários finais possam estar ocorrendo.
 ## Exibição de Resumo
 Na folha **Gerenciamento de aplicativos móveis do Intune**, você pode ver um resumo do status de conformidade, conforme descrito abaixo:
 
@@ -77,6 +77,6 @@ A exibição detalhada exibe a mensagem de erro, o aplicativo que foi acessado q
 [Experiência do usuário final para aplicativos habilitados para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

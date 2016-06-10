@@ -30,7 +30,7 @@ Use as informações nesta seção para ajudá-lo a resolver problemas de atuali
 
 Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
 
-A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** do Intune. Se você não encontrar um código de erro específico nessa tabela, confira [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542) (Códigos de resultados do agente do Windows Update).
+A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** do Intune. Se você não encontrar um código de erro específico nessa tabela, consulte [Códigos de resultados do agente do Windows Update](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Código do erro|Nome simbólico|Mais informações|
 |--------------|-----------------|--------------------|
@@ -256,18 +256,18 @@ Esse problema poderá ocorrer se as atualizações substituídas (que foram troc
 
 **Resolução**: para resolver esse problema, siga estas etapas:
 1. Faça logon no [console de administração do Intune](https://manage.microsoft.com).
-2. Selecione **Atualizações** > **Todas as atualizações**.
+2. Selecione **Atualizações** > **Todas as Atualizações**.
 3. Use a opção de filtro na barra de ferramentas superior para filtrar as atualizações substituídas.
 4. Recuse todas as atualizações substituídas que podem ser aplicáveis ao Windows 7 ou aos aplicativos (por exemplo, o Microsoft Office) que foram instalados nos clientes afetados. 
 5. Reinicie os clientes afetados.
 
-Além disso, se você estiver executando o Windows 7, certifique-se de que você tenha a seguinte atualização instalada:[3050265 Windows Update Client para o Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
+Além disso, se você estiver executando o Windows 7, certifique-se de que você tenha a seguinte atualização instalada:[3050265 Windows Update Client para Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
 
 ### Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

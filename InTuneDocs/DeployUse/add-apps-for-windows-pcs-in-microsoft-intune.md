@@ -36,10 +36,9 @@ Use as informações neste tópico para aprender a adicionar aplicativos ao Intu
 ## Adicionar o aplicativo
 Você usa o Intune Software Publisher para configurar as propriedades do aplicativo e carregá-lo no seu espaço de armazenamento em nuvem usando o seguinte procedimento:
 
-1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o Intune Software Publisher.
+1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
 
-    > [!TIP]
-    > Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
+    > [!TIP] Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
 
 
 
@@ -47,9 +46,12 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 
     **Selecione como este software é disponibilizado para dispositivos**: escolha **Instalador do software** e especifique:
 
-    - **Selecione o tipo de arquivo do instalador de software**|Isso indica o tipo de software que você deseja implantar. Para um computador Windows, escolha **Windows Installer**.|
-    - **Especifique o local dos arquivos de configuração do software**|Insira o local dos arquivos de instalação, ou clique em **Procurar** para selecionar o local em uma lista.|
-    - **Incluir arquivos e subpastas adicionais da mesma pasta**|Alguns softwares que usam o Windows Installer requerem arquivos de suporte, que geralmente se encontram na mesma pasta que os arquivos de instalação. Selecione esta opção se você também deseja implantar esses arquivos de suporte.|
+    - **Selecione o tipo de arquivo do instalador de software**: isso indica o tipo de software que você deseja implantar. Para um computador Windows, escolha **Windows Installer**.
+    - **Especifique o local dos arquivos de configuração do software**: insira o local dos arquivos de instalação, ou clique em **Procurar** para selecionar o local em uma lista.
+    - **Incluir arquivos e subpastas adicionais da mesma pasta** - Alguns softwares que usam o Windows Installer requerem arquivos de suporte, que geralmente se encontram na mesma pasta que os arquivos de instalação. Selecione esta opção se você também deseja implantar esses arquivos de suporte.
+
+    Por exemplo, se você quiser publicar um aplicativo chamado Application.msi no Intune, a página terá esta aparência: ![PC Software Publisher](./media/publisher-for-pc.png) (Fornecedor de Software do Computador)
+
    Esse tipo de instalação usa uma parte do seu espaço de armazenamento em nuvem.
 
 3.  Na página **Descrição do Software**, defina as seguintes configurações:
@@ -57,16 +59,15 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
     Dependendo do arquivo instalador que você está usando, talvez alguns desses valores tenham sido inseridos automaticamente ou não apareçam.
 
     - **Editor**: insira o nome do editor do aplicativo.
-    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa.<br /><br />Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.|
-    - **Descrição**: insira uma descrição para o aplicativo. Isso será exibido para os usuários no portal da empresa.|
-    - **URL para informações do software**| (opcional) insira a URL de um site que contém informações sobre este aplicativo. A URL será exibida para os usuários no portal da empresa.
+    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa.<br /><br />Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
+    - **Descrição**: insira uma descrição para o aplicativo. Isso será exibido para os usuários no portal da empresa.
+    - **URL para informações do software** - (opcional) insira a URL de um site que contém informações sobre este aplicativo. A URL será exibida para os usuários no portal da empresa.
     - **URL privada**: (opcional) insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida para os usuários no portal da empresa.
     - **Categoria**: (opcional) selecione uma das categorias de aplicativo interno. Isso facilitará a localização do aplicativo quando os usuários navegarem pelo portal da empresa.
 
     - **Ícone**: (opcional) carregue um ícone que será associado ao aplicativo. Esse é o ícone que será exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
 
-    Por exemplo, se você quiser publicar um aplicativo chamado Application.msi no Intune, a página terá essa aparência:
-    ![Fornecedor de software de computador](./media/publisher-for-pc.png)
+
 
 4.  Na página **Requisitos**, selecione os requisitos que devem ser atendidos antes que o aplicativo possa começar a ser instalado em um dispositivo. Escolha **Arquitetura**: selecione se esse aplicativo pode ser instalado em sistemas operacionais de 32 bits, 64 bits ou ambos, **Sistema Operacional**: selecione o sistema operacional mínimo no qual esse aplicativo pode ser instalado.
 
@@ -74,7 +75,7 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
     As regras que você pode configurar são:
     - **Há um arquivo**: especifique o caminho para o arquivo que deseja detectar. Você pode pesquisar em **%ProgramFiles%** (que procura em **Arquivos de Programas**\*&lt;caminho&gt;* e **Arquivos de Programas (x86)**\*&lt;caminho&gt;*) no computador ou **%SystemDrive%** (que pesquisa da unidade raiz do computador, geralmente C:)
     - **O código do produto MSI existe**: clique em **Procurar** para escolher o arquivo do Windows Installer (msi) que você deseja detectar. 
-    - **Chave do Registro existente**: especifique uma chave do Registro que comece com **HKEY_LOCAL_MACHINE\**. Os caminhos do Registro de 32 e 64 bits são pesquisados. Se a chave especificada existe em um dos locais, a regra de detecção é satisfeita.
+    - **Chave do Registro existente** - especifique uma chave do Registro que comece com **HKEY_LOCAL_MACHINE\**. Os caminhos do Registro de 32 e 64 bits são pesquisados. Se a chave especificada existe em um dos locais, a regra de detecção é satisfeita.
 
     Se o aplicativo satisfazer alguma das regras que você configurou, ele não será instalado.
 
@@ -91,8 +92,8 @@ O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicati
 
 ## Próximas etapas
 
-Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais, consulte [Deploy apps in Microsoft Intune.md](deploy-apps.md) (Implantar aplicativos no Microsoft Intune.md)
+Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implantar aplicativos no Microsoft Intune)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

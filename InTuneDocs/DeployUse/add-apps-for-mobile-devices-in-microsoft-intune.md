@@ -36,21 +36,20 @@ Use as informações neste tópico para aprender a adicionar aplicativos ao Intu
 ## Adicionar o aplicativo
 Use o Intune Software Publisher para configurar as propriedades do aplicativo e, onde aplicável, carregá-lo no seu espaço de armazenamento em nuvem usando o seguinte procedimento:
 
-1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o Intune Software Publisher.
+1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
 
-    > [!TIP]
-    > Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
+    > [!TIP] Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
 
 2.  Na página **Instalação de software**, o fornecedor de software, escolha uma das seguintes opções para **Selecionar como este software é disponibilizado para dispositivos**:
     - **Instalador de software**, para aplicativos com a extensão **.msi** ou **.exe**, especifique:
-        - **Selecione o tipo de arquivo do instalador de software**: isso indica o tipo de software que você deseja implantar. Por exemplo, se você quiser instalar um aplicativo iOS, escolha **Pacote do Aplicativo para iOS (arquivo &#42;.ipa)**.
+        - **Selecione o tipo de arquivo do instalador de software**: isso indica o tipo de software que você deseja implantar. Por exemplo, se você quiser instalar um aplicativo iOS, escolha **Pacote do Aplicativo para iOS (&#42;arquivo .ipa)**.
         - **Especifique o local dos arquivos de configuração do software**: insira o local dos arquivos de instalação, ou clique em **Procurar** para selecionar o local em uma lista.
         - **Incluir arquivos e subpastas adicionais da mesma pasta**: apenas para o tipo de arquivo do **Windows Installer**.<br>Alguns softwares que usam o Windows Installer requerem arquivos de suporte, que geralmente se encontram na mesma pasta que os arquivos de instalação. Selecione esta opção se você também deseja implantar esses arquivos.<br>Esse tipo de instalação usa uma parte do seu espaço de armazenamento em nuvem.
 
   -   **Link externo**, para aplicativos que você deseja criar, especificando um link para uma loja de aplicativos, especifique:
 
         - **Especificar a URL**: especifique a URL em um dos seguintes formatos:
-            - A URL da Windows Store do aplicativo que você deseja implantar. Por exemplo, se você quiser implantar o aplicativo Microsoft Remote Desktop para o Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**. Para localizar a URL do aplicativo, use um mecanismo de pesquisa para localizar a página da loja contendo o aplicativo. Por exemplo, para localizar o aplicativo Área de Trabalho Remota, você pode pesquisar **Área de Trabalho Remota da Microsoft Android**.
+            - A URL da Windows Store do aplicativo que você deseja implantar. Por exemplo, se você quiser implantar o aplicativo Microsoft Remote Desktop para o Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**. Para localizar a URL do aplicativo, use um mecanismo de pesquisa para localizar a página da loja contendo o aplicativo. Por exemplo, para localizar o aplicativo Remote Desktop, você pode pesquisar **Microsoft Remote Desktop Android**.
             - Um site. O Intune implantará um ícone de atalho para o site para o dispositivo (conhecido como um clipe da web).
             - Um aplicativo na web. O Intune implantará um ícone de atalho para o aplicativo no dispositivo.
         - **É necessário um navegador gerenciado para abrir este link (somente Android e iOS)**: quando você implanta um link para um site ou aplicativo Web para os usuários, eles só poderão abri-lo no navegador gerenciado do Intune que deve estar instalado em seu dispositivo.<br>Para mais detalhes sobre o navegador gerenciado, consulte [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) (Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune).<br>Esse tipo de instalação não usa porção nenhuma do seu espaço de armazenamento em nuvem.
@@ -65,8 +64,7 @@ Use o Intune Software Publisher para configurar as propriedades do aplicativo e,
 
 3.  Na página **Descrição do Software**, defina as seguintes configurações:
 
-    > [!TIP]
-    > Dependendo do tipo de instalador que você está usando, talvez alguns desses valores tenham sido inseridos automaticamente ou não apareçam.
+    > [!TIP] Dependendo do tipo de instalador que você está usando, talvez alguns desses valores tenham sido inseridos automaticamente.
 
     - **Editor**: insira o nome do editor do aplicativo.
     - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa.<br>Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
@@ -84,8 +82,7 @@ Use o Intune Software Publisher para configurar as propriedades do aplicativo e,
 
 4.  Na página **Requisitos**, selecione os requisitos que devem ser atendidos antes que o aplicativo possa começar a ser instalado em um dispositivo. Por exemplo, para um pacote de aplicativos para iOS, você pode selecionar a versão mínima do iOS necessária e o tipo de dispositivo, como um iPhone ou um iPad.
 
-    > [!TIP]
-    > A página **Requisitos** não é exibida para todos os tipos de aplicativos.
+    > [!TIP] A página **Requisitos** não é exibida para todos os tipos de aplicativos.
 
 5.  Mais páginas do assistente são exibidas quando você escolhe o tipo de arquivo do **Windows Installer**. Esse tipo de arquivo é usado quando você implanta software em PCs que executam o Windows 10 ou posterior e que são registrados com o Intune.
 
@@ -95,6 +92,12 @@ Use o Intune Software Publisher para configurar as propriedades do aplicativo e,
 
 O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicativos**.
 
+## Exemplos
+
+### Implantando aplicativos MSI para dispositivos Windows 10
+Neste vídeo de quatro minutos, você aprenderá como implantar aplicativos do Microsoft Installer (msi) para dispositivos registrados que executam o Windows 10.<br><br>
+
+<iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## Próximas etapas
 
@@ -104,6 +107,6 @@ Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

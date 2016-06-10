@@ -29,7 +29,7 @@ ms.suite: ems
 
 O Microsoft Intune é um serviço baseado em nuvem que ajuda você a gerenciar computadores Windows e dispositivos móveis, iOS, Mac OS X, Android e Windows. O Intune também ajuda a proteger dados e aplicativos corporativos. Você pode usar o Intune sozinho ou integrá-lo com o System Center 2012 R2 Configuration Manager para estender os recursos de gerenciamento.
 
-A Microsoft oferece o benefício do Intune Onboarding para serviços qualificados em planos qualificados. O benefício do Onboarding permite que você trabalhe remotamente com especialistas da Microsoft para deixar seu ambiente do Intune pronto para uso. Para saber mais, consulte [Microsoft Intune Onboarding Benefit Description (Descrição do benefício do Microsoft Intune Onboarding)](http://go.microsoft.com/fwlink/?LinkId=619281).
+A Microsoft oferece o benefício do Intune Onboarding para serviços qualificados em planos qualificados. O benefício do Onboarding permite que você trabalhe remotamente com especialistas da Microsoft para deixar seu ambiente do Intune pronto para uso. Para saber mais, consulte [Descrição do Benefício do Microsoft Intune Onboarding](http://go.microsoft.com/fwlink/?LinkId=619281).
 
 É possível começar a usar o Intune com uma versão de avaliação gratuita por 30 dias, que inclui 100 licenças para usuários. Para iniciar sua avaliação gratuita, [clique aqui para visitar a página de inscrição do Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). Se a sua empresa tiver um contrato corporativo ou um contrato de licenciamento por volume equivalente, entre em contato com o seu representante Microsoft para configurar sua avaliação gratuita.
 
@@ -42,7 +42,7 @@ Para ver uma lista de configurações que você pode definir em dispositivos mó
 
 -   [Configurações gerais para dispositivos móveis no Configuration Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
-Para obter informações sobre o System Center 2012 R2 Configuration Manager, consulte a [Documentation Library for System Center 2012 Configuration Manager (Biblioteca de Documentação do System Center 2012 Configuration Manager)](https://technet.microsoft.com/library/gg682041.aspx).
+Para obter informações sobre o System Center 2012 R2 Configuration Manager, consulte a [Biblioteca de Documentação do System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
 
 ## Entenda como as atualizações de serviço do Intune afetam você
 Como o Intune é um serviço online, a Microsoft pode atualizá-lo regularmente.
@@ -51,7 +51,9 @@ Use as informações neste tópico para ajudá-lo a entender a frequência dessa
 
 Para saber mais sobre as alterações no serviço do Intune, consulte [What's new in Microsoft Intune (O que há de novo no Microsoft Intune)](/intune/deploy-use/Whats-new-in-microsoft-intune.md). O [Blog do Microsoft Intune](http://blogs.technet.com/b/microsoftintune/) também aborda as alterações no serviço e fornece dicas úteis para que você possa obter o máximo do Intune.
 
-Além disso, atualizações de serviço importantes serão comunicadas diretamente pelo console do Intune no quadro de avisos.
+Atualizações do serviço importantes também serão comunicadas no Centro de Mensagens do [portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx). Se você instalar o complemento [aplicativo móvel de administração do Office 365](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), você poderá receber notificações em seu dispositivo móvel.
+
+> [!NOTE] Você pode monitorar a integridade do serviço Intune no [Portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Integridade do Serviço** no painel esquerdo.  
 
 Aqui estão os tipos de avisos que a Microsoft fornece sobre o serviço do Intune:
 -   Para ajudar a planejar alterações no serviço, notificaremos pelo menos 30 a 90 dias antes da atualização de serviço, dependendo do impacto da alteração. Isso acontecerá usando canais de comunicação dentro do produto, como alertas do quadro de avisos. Essas alterações podem incluir:
@@ -60,7 +62,7 @@ Aqui estão os tipos de avisos que a Microsoft fornece sobre o serviço do Intun
 * APIs novas ou alteradas – notificando que você precisará testar para garantir a compatibilidade com versões anteriores de aplicativos personalizados
 * Alterações em requisitos de sistema, por exemplo, a versão mínima necessária do navegador
 * Quaisquer atualizações que exigem providências para habilitar o recurso ou para evitar a interrupção de serviço para o recurso.
--   A Microsoft fornece informações sobre novos recursos, novas funcionalidades e aprimoramentos em funcionalidades existentes em nossa atualização mensal do serviço. Em geral, a Microsoft lança atualizações de serviço em meados de cada mês. Atualizações são descritas em [O que há de novo no Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md).
+-   A Microsoft fornece informações sobre novos recursos, novas funcionalidades e aprimoramentos em funcionalidades existentes em nossa atualização mensal do serviço. Em geral, a Microsoft lança atualizações de serviço em meados de cada mês. As atualizações são descritas em [What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md) (Novidades do Microsoft Intune).
 -   No caso de desativação do serviço do Intune, você seria notificado com 12 meses de antecedência.
 
 ## Escolha a solução de gerenciamento que é ideal para você
@@ -86,6 +88,6 @@ Use estes recursos para saber mais sobre o Intune:
 [Novidades do Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

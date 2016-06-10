@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurações de política do iOS no Microsoft Intune | Microsoft Intune
+title: Configurações de política do iOS | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Use a **Política de configuração geral do iOS** do Microsoft Intune para defi
 -   **Aplicativos compatíveis e não compatíveis** - especifique uma lista de aplicativos que são compatíveis ou não com sua empresa. Nos dispositivos Android e iOS, o **Relatório de aplicativos incompatíveis** pode ser usado para exibir a compatibilidade de aplicativos especificados na lista em relação as aplicativos que os usuários instalaram (mas não é possível realmente bloquear a instalação do aplicativo).
 
 > [!TIP]
-> Você pode configurar os termos e condições de usuários para garantir que eles reconhecem que aplicativos no seu dispositivo, incluindo aplicativos pessoais, serão avaliados, e aplicativos incompatíveis serão bloqueados, ou relatados como não compatível. Os usuários devem aceitar esses termos e condições antes de registrar seus dispositivos e usar o portal da empresa para obter aplicativos. Para saber mais sobre os termos e condições de uso, consulte [Terms and conditions policy settings in Microsoft Intune (Configurações de políticas de termos e condições de uso no Microsoft Intune)](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Você pode configurar os termos e condições de usuários para garantir que eles reconhecem que aplicativos no seu dispositivo, incluindo aplicativos pessoais, serão avaliados, e aplicativos incompatíveis serão bloqueados, ou relatados como não compatível. Os usuários devem aceitar esses termos e condições antes de registrar seus dispositivos e usar o portal da empresa para obter aplicativos. Para saber mais sobre os termos e condições de uso, consulte [Terms and conditions policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) (Configurações de políticas de termos e condições de uso no Microsoft Intune).
 
 Se a configuração que você está procurando não aparecer nesse tópico, você poderá criá-la usando uma política personalizada do iOS que lhe permite importar configurações criadas usando a [Ferramenta configuradora da Apple](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para obter mais informações, consulte **Configurações de política personalizadas** mais adiante neste tópico.
 
@@ -160,7 +160,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |**Permitir alternador de toque**|Habilita ou desabilita a opção de alternar toque (mudo) no dispositivo.|
 |**Permitir que o botão de ativação e suspensão da tela**|Habilita ou desabilita o botão de ativação e suspensão da tela no dispositivo.|
 |**Permitir bloqueio automático**|Habilita ou desabilita o bloqueio automático do dispositivo.|
-|**Habilitar o áudio mono**|Habilita ou desabilita a configuração de acessibilidade **Áudio mono**.|
+|**Habilitar o áudio mono**|Habilita ou desabilita a configuração de acessibilidade **áudio Mono**.|
 |**Ativar leitura de texto**|Habilita ou desabilita a configuração de acessibilidade **Leitura de texto** que lê em voz alta o texto na tela do dispositivo.|
 |**Ativar ajustes da leitura de texto**|Habilita ou desabilita os ajustes da leitura de texto que permitem que você ajuste a função Leitura de texto (por exemplo, a rapidez que o texto na tela é lido em voz alta).|
 |**Habilitar o zoom**|Habilita ou desabilita a opção de acessibilidade de **Zoom** que permite usar o toque para ampliar a tela do dispositivo de acessibilidade.|
@@ -170,8 +170,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |**Habilitar toque auxiliar**|Habilita ou desabilita a opção de acessibilidade **Toque auxiliar** , que ajuda os usuários a executarem gestos ne tela que podem ser difíceis de executar.|
 |**Habilitar ajustes de toque auxiliar**|Habilita ou desabilita os ajustes de toque auxiliar que permitem ajustar a função de toque auxiliar.|
 |**Habilitar a seleção de fala**|Habilita ou desabilita as configurações de acessibilidade **Seleção de fala** que podem ler em voz alta o texto que você selecionar.|
-> [!NOTE]
-> As observações a seguir aplicam-se às configurações do modo de quiosque para dispositivos iOS:
+> [!NOTE] As observações a seguir aplicam-se às configurações do modo de quiosque para dispositivos iOS:
 > 
 > -   Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar o [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o gerenciador de registros de dispositivos para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre o Apple Configurator Tool, consulte sua documentação da Apple.
 > -   Se o aplicativo iOS que você especificar for instalado depois de implantar a política de configuração, ele não entrará no modo de quiosque até depois de ser reiniciado.
@@ -185,7 +184,7 @@ Use o **Relatório de aplicativos incompatíveis** para exibir a compatibilidade
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicativos Incompatíveis**.
 
-2.  Selecione os grupos de dispositivos que você deseja verificar, se deseja verificar se há aplicativos compatíveis, aplicativos incompatíveis ou ambos e clique em **Exibir Relatório**.
+2.  Selecione os grupos de dispositivos que você deseja verificar, se deseja verificar se há aplicativos compatíveis, aplicativos incompatíveis ou ambos, e clique em **Exibir relatório**.
 
 #### Como especificar URLs para lojas de aplicativos
 Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e não compatíveis, ou na opção **Selecionar um aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque** (somente iOS), use um dos seguintes formatos:
@@ -196,8 +195,7 @@ Copie a URL da página e use-a como a URL para configurar a lista de aplicativos
 
 **Exemplo:** pesquise **Microsoft Word para iPad**. A URL usada será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
+> [!NOTE] Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
 
 
 ## Configurações de política personalizada
@@ -232,6 +230,6 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

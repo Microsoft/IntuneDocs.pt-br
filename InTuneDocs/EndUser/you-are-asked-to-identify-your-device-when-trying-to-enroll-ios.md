@@ -15,7 +15,7 @@ ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -30,13 +30,13 @@ ms.suite: ems
 
 Se você está tentando registrar seu dispositivo iOS ou Mac OS X no Intune e vê uma tela solicitando que o identifique, significa que pelo menos um dos dispositivos já foi registrado e atribuído à sua conta usando um método que não é do aplicativo Portal da Empresa. Para o aplicativo Portal da Empresa funcionar corretamente, você deve identificar se o dispositivo que está usando já foi registrado no Intune.
 
-1. Se você ver seu dispositivo na lista, toque nele. Caso contrário, toque em **Novo Dispositivo**.
+1. Se você ver seu dispositivo na lista, toque nele. Se não estiver visível, toque em **Novo Dispositivo**.
 2. Toque em **Continuar.**
 3. Insira os últimos quatro caracteres do número de série do dispositivo para confirmar que o seu dispositivo está registrado no Intune. Para localizar o número de série, consulte [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md) (Como localizar o número de série em meu dispositivo?).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

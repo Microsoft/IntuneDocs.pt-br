@@ -29,11 +29,11 @@ ms.suite: ems
 
 O ciclo de vida do aplicativo do Intune começa quando um aplicativo é adicionado e passa pelas fases adicionais até você removê-los.
 
-![O ciclo de vida do aplicativo](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![O ciclo de vida do aplicativo](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Adicionar
 
-A primeira etapa na implantação do aplicativo é adicionar os aplicativos que você deseja gerenciar e implantar no Intune. Embora haja muitos tipos de aplicativos diferentes com que você pode trabalhar, os procedimentos básicos são os mesmos. Você pode adicionar aplicativos a [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou a [computadores Windows que você gerencia com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md), ou ambos.
+A primeira etapa na implantação do aplicativo é adicionar os aplicativos que você deseja gerenciar e implantar no Intune. Embora haja muitos tipos de aplicativos diferentes com que você pode trabalhar, os procedimentos básicos são os mesmos. O Intune permite que você adicione aplicativos a [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou a [computadores Windows que você gerencia com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Implantar
 
@@ -56,6 +56,6 @@ O Intune oferece várias maneiras para ajudar a proteger os dados em seus aplica
 Por fim, é provável que os aplicativos que você implantou fiquem desatualizados e precisem ser removidos. O Intune facilita [desativar aplicativos de serviço](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

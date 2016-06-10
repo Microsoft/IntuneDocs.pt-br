@@ -65,6 +65,7 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
 
     **Valor padrão = sim**
 - **Criptografar dados de aplicativo:** escolha **Sim** para habilitar a criptografia. Quando essa configuração está habilitada, para aplicativos associados a uma política de gerenciamento de aplicativos móveis, a criptografia é fornecida pela Microsoft. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo. O conteúdo no armazenamento do dispositivo sempre será criptografado.
+  >[!NOTE] O método de criptografia não tem certificação FIPS 140-2
 
   **Valor padrão = sim**
 
@@ -75,12 +76,13 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
 ##  Configurações de política de acesso do Android
 O termo **Aplicativos gerenciados pela política** é usado para fazer referência a aplicativos configurados com políticas de MAM
 
-- **Solicitar PIN simples para acesso:** escolha **Sim** para exigir um PIN para usar aplicativos gerenciados pela política. O usuário será solicitado a configurar isso na primeira vez em que executar o aplicativo no contexto corporativo.
+- **Solicitar PIN para acesso:** escolha **Sim** para exigir que um PIN use aplicativos gerenciados pela política. O usuário será solicitado a configurar isso na primeira vez em que executar o aplicativo no contexto corporativo.
 
  **Valor padrão = sim**
-- **Número de tentativas antes da redefinição do PIN:** especifique o número de tentativas de entrada de PIN que podem ser feitas antes que o usuário precise redefinir o PIN.
 
- **Não há valor padrão para esta configuração.**
+ -  **Permitir PIN simples:** especifique se deseja permitir que os usuários usem sequências PIN simples como 1234 ou 1111. **Valor padrão = Sim**.
+ - **Comprimento do PIN:** especifique o número mínimo de dígitos em um PIN. **Valor padrão = 4**
+ - **Número de tentativas antes da redefinição do PIN:** especifique o número de tentativas de entrada de PIN que podem ser feitas antes que o usuário precise redefinir o PIN. **Não há valor padrão para esta configuração.**
 - **Exigir credenciais corporativas para acesso:** escolha **Sim** para exigir credenciais corporativas, em vez de um PIN, para acesso ao aplicativo.  Se você definir como **Sim**, ele substituirá os requisitos de PIN ou da ID de Toque.  O usuário deverá fornecer suas credenciais corporativas.
 
   **Valor padrão = Não**
@@ -98,6 +100,6 @@ O termo **Aplicativos gerenciados pela política** é usado para fazer referênc
 - **Bloquear captura de tela e o Assistente do Android (Android 6 Marshmallow ou posterior):** escolha **Sim** para bloquear a captura de tela e as funcionalidades do **Assistente do Android** do dispositivo ao usar este aplicativo.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

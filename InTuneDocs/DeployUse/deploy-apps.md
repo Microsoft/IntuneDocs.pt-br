@@ -61,10 +61,11 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 
 -   **Instalação obrigatória** – O aplicativo está instalado no dispositivo, sem necessidade de intervenção do usuário final.
 
-    > [!TIP]
-    > Para dispositivos iOS que não estão no modo supervisionado, e para todos os dispositivos Android, o usuário deve aceitar a oferta do aplicativo antes que ele seja instalado.
+    > [!TIP] Para dispositivos iOS que não estão no modo supervisionado e para todos os dispositivos Android, o usuário deve aceitar a oferta do aplicativo antes que ele seja instalado.
     >
     > Você não pode mais criar novas implantações de aplicativo para dispositivos iOS executando um sistema operacional anterior ao iOS 7.1. As implantações de aplicativos existentes em dispositivos em execução em um sistema operacional anterior ao iOS 7.1 continuarão funcionando e serão gerenciadas pelo Intune.
+    > 
+    >  Se um usuário final desinstalar um aplicativo implantado como instalação obrigatória, o Intune reinstalará automaticamente o aplicativo após o próximo ciclo de inventário, que normalmente ocorre a cada 7 dias.
 
 -   **Instalação disponível** – O aplicativo é exibido no portal da empresa e os usuários finais podem instalá-lo sob demanda.
 
@@ -86,8 +87,7 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 |Link externo (implantado em um grupo de dispositivos)|Não|Não|Não|Não|
 |Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de usuários)|Sim|Sim|Sim|Sim|
 |Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
-> [!TIP]
-> Ao implantar aplicativos, se você selecionar usuários e grupos de dispositivos, só poderá implantar o aplicativo como uma **Instalação disponível**.
+> [!TIP] Ao implantar aplicativos, se você selecionar usuários e grupos de dispositivos, só poderá implantar o aplicativo como uma **Instalação disponível**.
 
 ## Conflitos de implantação
 Quando duas implantações com a mesma ação de implantação são recebidas por um dispositivo, as seguintes regras se aplicam:
@@ -105,6 +105,6 @@ Quando duas implantações com a mesma ação de implantação são recebidas po
 
 Saiba como [implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

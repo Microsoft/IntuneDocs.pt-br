@@ -55,7 +55,7 @@ Antes de começar, você precisará obter um token de VPP da Apple e carregá-lo
 
 3.  Na página **Gerenciar VPP (Apple Volume Purchase Program)** do console do Intune, clique em **Carregar o token VPP**.
 
-4.  Na caixa de diálogo **Carregar o token VPP**, digite ou cole o nome do token VPP e sua ID da Apple e clique em **Carregar**.
+4.  Na caixa de diálogo **Carregar Token VPP**, digite ou cole o nome do token VPP e sua ID da Apple e clique em **Carregar**.
 
 5.  Na caixa de diálogo de aviso, clique na caixa de seleção para indicar que você entende que não é possível mudar para uma conta de VPP diferente posteriormente e clique em **Sim**.
 
@@ -63,11 +63,11 @@ Na página **Volume Purchase Program**, agora você pode exibir informações so
 
 Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer momento clicando em **Sincronizar agora**.
 
-## Para carregar e implantar um aplicativo comprado por volume
+## Implantar um aplicativo comprado por volume
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Software Gerenciado** &gt; **Aplicativos Adquiridos por Volume**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Software Gerenciado** &gt; **Aplicativos Adquiridos por Volume**. Esta lista mostra todos os aplicativos que foram sincronizados do serviço VPP da Apple.
 
-2.  Use as instruções no tópico [Adicionar aplicativos para dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) para concluir o carregamento, a criação e a implantação do aplicativo.
+2.  Escolha o aplicativo que deseja implantar, clique em **Gerenciar Implantação** e use as instruções no tópico [Implantar aplicativos em dispositivos móveis no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, criação e implantação do aplicativo.
 
 Quando você implantar o aplicativo como uma instalação **Obrigatória**, uma licença será usada por cada usuário que instalar o aplicativo.
 
@@ -75,22 +75,20 @@ Para recuperar uma licença, você deve alterar a ação de implantação para *
 
 Quando um usuário com um dispositivo qualificado tenta instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. Eles devem fazer isso antes que a instalação do aplicativo prossiga.
 
-> [!TIP]
-> Examine a coluna **Status de Termos do VPP** para ver o status de aceitação para cada usuário ao qual o aplicativo foi implantado.
+> [!TIP] Examine a coluna **Status de Termos do VPP** para ver o status de aceitação para cada usuário ao qual o aplicativo foi implantado.
 
 Se não houver nenhuma licença adicional disponível, a implantação falhará.
 
 ## Para monitorar aplicativos de VPP da Apple
-Você pode monitorar quais aplicativos VPP foram implantados e quantas licenças são usadas do espaço de trabalho **Aplicativos**, no nó **Software Gerenciado** &gt; **Aplicativos Comprados por Volume**.
+Você pode monitorar quais aplicativos de VPP foram implantados e quantas licenças são usadas do espaço de trabalho **Aplicativos**, no nó **Software Gerenciado** &gt; **Aplicativos Adquiridos por Volume**.
 
-> [!TIP]
-> Você também pode usar o aplicativo **Filtros** para examinar o status de cada instalação do aplicativo.
+> [!TIP] Você também pode usar o aplicativo **Filtros** para examinar o status de cada instalação do aplicativo.
 
 ### Consulte também
-[Adicionar aplicativos a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política de configuração do Android no Microsoft Intune | Microsoft Intune
+title: Configurações de política de configuração do Android e Samsung KNOX | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Configurações de política do Android no Microsoft Intune
+# Configurações de política do Android e Samsung KNOX no Microsoft Intune
 
 ## Política de configuração geral
 
@@ -150,7 +150,7 @@ Especifique as configurações a seguir para **dispositivos Samsung KNOX**:
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
-|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Clique em **Procurar**, selecione o aplicativo gerenciado ou um aplicativo de uma loja que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque. Nenhum outro aplicativo poderá ser executado no dispositivo.<br /><br />Para obter ajuda, consulte Como especificar URLs para lojas de aplicativos mais adiante neste tópico.|
+|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Clique em **Procurar**, em seguida, selecione o aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque (aplicativos especificados como um link para a loja não tem suporte no momento). Nenhum outro aplicativo poderá ser executado no dispositivo.|
 |**Permitir o uso dos botões de volume**|Habilita ou desabilita o uso dos botões de volume no dispositivo.|
 |**Permitir que o botão de ativação e suspensão da tela**|Habilita ou desabilita o botão de ativação e suspensão da tela no dispositivo.|
 
@@ -163,10 +163,10 @@ Use o **Relatório de aplicativos incompatíveis** para exibir a compatibilidade
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicativos Incompatíveis**.
 
-2.  Selecione os grupos de dispositivos que você deseja verificar, se deseja verificar se há aplicativos compatíveis, aplicativos incompatíveis ou ambos e clique em **Exibir Relatório**.
+2.  Selecione os grupos de dispositivos que você deseja verificar, se deseja verificar se há aplicativos compatíveis, aplicativos incompatíveis ou ambos, e clique em **Exibir relatório**.
 
 #### Como especificar URLs para lojas de aplicativos
-Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e não compatíveis, ou na opção **Selecionar um aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque** (somente iOS), use um dos seguintes formatos:
+Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e incompatíveis, use o seguinte formato:
 
 Na [seção Aplicativos do Google Play](https://play.google.com/store/apps), pesquise o aplicativo que você deseja usar.
 
@@ -195,7 +195,7 @@ Essa funcionalidade destina-se a permitir que você implante configurações do 
     |--------|--------------------|
     |**Nome da configuração**|Insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.|
     |**Descrição da configuração**|Forneça uma descrição que proporciona uma visão geral da configuração e outras informações relevantes que o ajudarão a localizá-la.|
-    |**Tipo de dados**|Selecione o tipo de data em que você especificará essa configuração de OMA-URI. Escolha **Cadeia de Caracteres, Cadeia de Caracteres (XML), Data e hora, Número Inteiro, Ponto flutuante** ou **Booliano**.|
+    |**Tipo de dados**|Selecione o tipo de data em que você especificará essa configuração de OMA-URI. Escolha **Cadeia de Caracteres, Cadeia de Caracteres (XML), Data e Hora, Número Inteiro, Ponto Flutuante**, ou **Booliano**.|
     |**OMA-URI (com distinção entre maiúsculas e minúsculas)**|Especifique o OMA-URI para o qual você deseja fornecer uma configuração.|
     |**Valor**|Especifique o valor a ser associado ao OMA-URI especificado anteriormente.|
 
@@ -258,6 +258,6 @@ Embora o Intune dê suporte a perfis de Wi-Fi para dispositivos Android, atualme
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

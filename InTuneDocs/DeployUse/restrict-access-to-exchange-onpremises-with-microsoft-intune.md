@@ -40,9 +40,9 @@ Para saber mais sobre como o acesso condicional funciona, leia o artigo [Restric
 
 -   Você deve usar o **conector do Exchange local**, que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a instalações do Microsoft Exchange local. Isso lhe permite gerenciar dispositivos por meio do console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Para obter detalhes sobre o conector, consulte o [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md) (Exchange Connector local do Intune).
 
-    -   O Exchange Connector local disponível para você no console do Intune é específico ao seu locatário do Intune e não pode ser usado com nenhum outro locatário. Você também deve garantir que o Exchange Connector para seu locatário esteja instalado em **exatamente um computador**.
+    -   O Exchange Connector local disponível para você no console do Intune é específico ao seu locatário do Intune e não pode ser usado com nenhum outro locatário. Você também deve garantir que o Exchange Connector do seu locatário esteja instalado em **apenas um computador**.
 
-        Esse conector deve ser baixado do console de administração do Intune.  Para obter uma explicação sobre como configurar o Exchange Connector no loca, consulte [configure Exchange on-premises connector for on-premises or hosted Exchange (configurar co conector local do Exchange para Exchange local ou hospedado)](intune-on-premises-exchange-connector.md).
+        Esse conector deve ser baixado do console de administração do Intune.  Para obter uma explicação sobre como configurar o Exchange Connector local, consulte [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md) (configurar o conector local do Exchange para Exchange local ou hospedado).
 
     -   O conector pode ser instalado em qualquer computador, desde que o computador seja capaz de se comunicar com o servidor Exchange.
 
@@ -63,8 +63,7 @@ Quando políticas de acesso condicionais são configuradas e direcionadas ao usu
 
 O diagrama a seguir ilustra o fluxo usado por políticas de acesso condicional para o Exchange local a fim de avaliar se devem permitir ou bloquear os dispositivos.
 
-![Diagrama que mostra os pontos de decisão que determinam se um dispositivo tem acesso permitido ou bloqueado ao Exchange local](../media/ConditionalAccess8-2.png)
-Se uma política de acesso condicional não for atendida, o usuário receberá uma das mensagens a seguir ao fazer logon:
+![O diagrama que mostra os pontos de decisão que determinam se um dispositivo tem o acesso permitido ao Exchange local ou bloqueado](../media/ConditionalAccess8-2.png) Se uma política de acesso condicional não for atendida, uma das seguintes mensagens será apresentada ao usuário quando ele fizer logon:
 
 - Se o dispositivo não estiver registrado no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou não estiver registrado no Azure Active Directory, será exibida uma mensagem com instruções sobre como instalar o aplicativo Portal da Empresa, registrar o dispositivo e ativar o email. Esse processo também associa a ID do Exchange ActiveSync do dispositivo com o registro do dispositivo no Azure Active Directory.
 
@@ -76,6 +75,7 @@ Se uma política de acesso condicional não for atendida, o usuário receberá u
 -   Aplicativo de email nativo no iOS.
 
 -   Aplicativo de email nativo no Android 4 ou posterior
+> [!NOTE] Não há suporte para o aplicativo Microsoft Outlook no Android e iOS.
 
 ## Suporte para computadores
 
@@ -86,8 +86,7 @@ O aplicativo de **Email** do Windows 8 e posterior (quando registrado com [!INCL
 1.  No [console de Administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** > **Acesso Condicional** > **Política do Exchange local**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Configure a política com as configurações necessárias:
-![Captura de tela da página de política do Exchange local](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2.  Configure a política com as configurações necessárias: ![captura de tela da página de política do Exchange local](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
   - **Impedir aplicativos de email de acessar o Exchange local se o dispositivo não está em conformidade ou não registrado no Microsoft Intune:** quando você seleciona essa opção, os dispositivos que não são gerenciados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], ou não compatíveis com uma política de conformidade são impedidos de acessar os serviços do Exchange.
 
@@ -105,10 +104,9 @@ O aplicativo de **Email** do Windows 8 e posterior (quando registrado com [!INCL
 >Se sua intenção for primeiro bloquear todos os dispositivos antes de conceder acesso ao email, escolha a regra Bloquear acesso ou Quarentena. A regra padrão se aplica a todos os tipos de dispositivos, portanto os tipos de dispositivos que você configurar como exceções da plataforma ou que não tiverem suporte do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] também serão afetados.
 
   - **Notificação do Usuário:** além do email de notificação enviado do Exchange, o Intune envia um email que você contém etapas para desbloquear o dispositivo. Você pode editar a mensagem padrão para personalizá-la às suas necessidades. Como o email de notificação do Intune que contém instruções de correção é entregue à caixa de correio do Exchange do usuário, se o dispositivo do usuário for bloqueado antes dele receber a mensagem de email, ele poderá usar um dispositivo desbloqueado ou outro método para acessar o Exchange e exibir a mensagem. Isso é especialmente verdadeiro quando a **Regra Padrão** está definida como bloquear ou colocar em quarentena.  Nesse caso, o usuário final precisará ir para sua loja de aplicativos, baixar o aplicativo Portal da Empresa da Microsoft e registrar o dispositivo. Isso é aplicável a dispositivos iOS, Windows e Samsung KNOX.  Para dispositivos que não executam o Samsung KNOX, você precisará enviar o email de quarentena a uma conta de email alternativa, que o usuário final precisará copiar para seu dispositivo bloqueado para concluir o processo de registro e de conformidade.|
-  > [!NOTE]
-  > Para que o Exchange possa enviar o email de notificação, você deve especificar a conta que deve ser usada para enviar o email de notificação.
+  > [!NOTE] Para que o Exchange possa enviar o email de notificação, você deve especificar a conta que deve ser usada para enviar o email de notificação.
   >
-  > Para obter mais detalhes, consulte [configure Exchange on-premises connector for on-premises or hosted Exchange (configurar o conector do Exchange local para o Exchange local ou hospedado)](intune-on-premises-exchange-connector.md).
+  > Para obter mais detalhes, consulte [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md) (configurar o conector do Exchange local para o Exchange local ou hospedado).
 
 3.  Quando terminar, selecione **Salvar**.
 
@@ -120,7 +118,7 @@ O aplicativo de **Email** do Windows 8 e posterior (quando registrado com [!INCL
 
 -   Se o usuário cancelar o registro do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], pode levar de 1 a 3 horas para o dispositivo ser bloqueado.
 
-**Para ver alguns cenários de exemplo de como você poderia configurar política de acesso condicional para restringir o acesso ao dispositivo, consulte [restrict email access example scenarios (restringir cenários de exemplo de acesso a email)](restrict-email-access-example-scenarios.md).**
+**Para ver alguns cenários de exemplo de como você poderia configurar política de acesso condicional para restringir o acesso ao dispositivo, consulte [restrict email access example scenarios](restrict-email-access-example-scenarios.md) (restringir cenários de exemplo de acesso a email).**
 
 ## Próximas etapas
 [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
@@ -128,6 +126,6 @@ O aplicativo de **Email** do Windows 8 e posterior (quando registrado com [!INCL
 [Restringir o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

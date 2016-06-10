@@ -48,12 +48,11 @@ As políticas de MAM (gerenciamento de aplicativos móveis) são aplicadas somen
 
     ![Captura de tela do aplicativo OneDrive solicitando um PIN](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  Depois de definir e confirmar o PIN, você poderá acessar os arquivos no **OneDrive for Business**.
+5.  Depois de definir e confirmar o PIN, você poderá acessar os arquivos no seu **OneDrive for Business**.
 
     ![Captura de tela mostrando o local do arquivo aberto com a lista de arquivos existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]
-    > Quando você altera uma política implantada, as alterações serão aplicadas da próxima vez que abrir o aplicativo.
+    > [!NOTE] Quando você altera uma política implantada, as alterações serão aplicadas da próxima vez que você abrir o aplicativo.
 
 ##  Acessando o OneDrive em um dispositivo Android
 
@@ -112,7 +111,7 @@ O Microsoft Word é usado como um exemplo para este cenário.
 
     ![Captura de tela sem dados colados na postagem do Facebook](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Agora, repita as etapas 2 e 3 para criar outro novo documento, digite uma frase de sua escolha e, em vez de salvá-la em seu trabalho, salve-a em um local pessoal, como **OneDrive - pessoal**.
+6.  Agora, repita as etapas 2 e 3 para criar outro novo documento, digite uma frase de sua escolha e, em vez de salvá-la em seu trabalho, salve-a em uma localização pessoal, como **OneDrive - pessoal**.
 
     ![Captura de tela das seleções recortar, copiar e colar, com a frase selecionada para copiar](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -134,7 +133,7 @@ Para os **aplicativos OneDrive e Outlook**, só pode ser usada uma conta corpora
 
 Leia o cenário de exemplo abaixo para obter uma compreensão mais profunda de como várias contas de usuário são tratadas.
 
-O usuário A trabalha para duas empresas - **empresa X**, e **empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de MAM. A **Empresa X** implanta políticas de MAM **antes da** **empresa Y**. A conta associada à **empresa X** obterá a política de MAM, mas não a conta associada à empresa Y. Se você quiser que a conta de usuário associada à empresa Y seja gerenciada pelas políticas de MAM, deverá remover a conta de usuário associada a empresa X.
+O usuário A trabalha para duas empresas - **empresa X**, e **empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de MAM. A **Empresa X** implanta políticas MAM **antes da** **empresa Y**. A conta associada à **empresa X** obterá a política de MAM, mas não a conta associada à empresa Y. Se você quiser que a conta de usuário associada à empresa Y seja gerenciada pelas políticas de MAM, deverá remover a conta de usuário associada a empresa X.
 ### Adicionando uma segunda conta
 #### IOS
 Se você estiver usando um dispositivo iOS, ao tentar adicionar uma segunda conta corporativa ao mesmo dispositivo, poderá ver uma mensagem de bloqueio.  Você também verá uma opção para remover a conta existente e adicionar uma nova. Você pode fazer isso clicando em **Sim**.
@@ -146,15 +145,23 @@ Se você estiver usando um dispositivo Android, poderá ver uma mensagem de bloq
 ![Captura de tela da mensagem de erro e as instruções para remover a conta](../media/AppManagement/Android_SwitchUser.png)
 
 ##  Exibindo arquivos de mídia com o aplicativo de compartilhamento do Rights Management
-Para exibir a empresa AV, PDF e arquivos de imagem em dispositivos Android, use o aplicativo de compartilhamento [Microsoft Rights Management (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+Para exibir os arquivos AV, PDF e de imagem em dispositivos Android, use o [aplicativo de compartilhamento RMS (Microsoft Rights Management)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
 Baixe este aplicativo da Google Play Store.  Depois que o aplicativo é instalado no dispositivo, inicie o aplicativo e autentique com suas credenciais da empresa. Agora, você poderá exibir arquivos desprotegidos e protegidos de outros aplicativos gerenciados por política.
+
+**Os dispositivos Android não estão registrados no Intune**
+
+Antes de usar o aplicativo RMS sharing para exibir arquivos de outros aplicativos gerenciados pelo Intune, inicie o aplicativo RMS e autentique com sua conta corporativa.  Quando você faz logon, você verá a seguinte mensagem **somente se você não tiver uma licença do RMS**:
+
+**Autenticação Bem-Sucedida – Agora você pode exibir arquivos corporativos, mas sua organização não está configurada para permitir que você proteja arquivos. Para obter mais detalhes, entre em contato com seu administrador de TI.**
+
+Isso não impede você de usar o aplicativo RMS sharing para exibir arquivos da empresa. Você pode abrir e exibir arquivos da empresa de outros aplicativos gerenciados pelo Intune e as políticas MAM ainda se aplicarão.  O que essa mensagem está dizendo é que você não poderá adicionar os recursos de proteção adicionais que o aplicativo RMS sharing fornece.  Você deve ter uma licença do RMS para adicionar proteção para seus arquivos. Para saber mais sobre os recursos de proteção de arquivo do RMS, consulte [Proteger arquivos em um dispositivo](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) e [Proteger arquivos que você compartilha por email](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Consulte também
 [Criar e implantar políticas de gerenciamento de aplicativo móvel com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

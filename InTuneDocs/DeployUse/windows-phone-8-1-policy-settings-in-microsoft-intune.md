@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurações de política do Windows Phone 8.1 no Microsoft Intune | Microsoft Intune
+title: Configurações de política do Windows Phone 8.1 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Definições de configuração geral
 
-Use a **Política de configuração geral do Windows Phone** do Microsoft Intune para definir as seguintes configurações para dispositivos Windows Phone 8.1:
+Use a **Política de configuração geral do Windows Phone (Windows Phone 8.1 e posterior)** do Microsoft Intune para definir as seguintes configurações para dispositivos Windows Phone 8.1:
 
 -   **Configurações de segurança de dispositivo móvel** – Escolha em uma lista de configurações predefinidas que permitem controlar uma variedade de recursos e funcionalidade do dispositivo.
 
 -   **Aplicativos compatíveis e não compatíveis** - especifique uma lista de aplicativos que são compatíveis ou não com sua empresa. Dispositivos Windows Phone podem bloquear ou permitir a instalação desses aplicativos.
+
+### Configurações de aplicabilidade
+
+|Nome da configuração|Detalhes|
+|----------------|----------------------------------|
+|**Aplicar todas as configurações ao Windows 10**|Permite que as configurações desta política sejam aplicadas a dispositivos Windows 10 Mobile além de em dispositivos Windows Phone 8.1.|
 
 ### Configurações de senha
 
@@ -54,7 +60,7 @@ Use a **Política de configuração geral do Windows Phone** do Microsoft Intune
 
 |Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Exigir criptografia no dispositivo móvel**|Exige que os dados em dispositivos móveis com suporte sejam criptografados.<br>Para dispositivos Windows Phone 8, você deve definir esta opção para **Sim**.|Sim|Sim|
+|**Exigir criptografia no dispositivo móvel**|Exige que os dados em dispositivos móveis com suporte sejam criptografados.<br>Para dispositivos Windows Phone 8, defina como **Sim**.|Sim|Sim|
 
 ### Configurações de sistema
 
@@ -121,8 +127,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.|
 |**Editar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
 |**Excluir**|Exclui o aplicativo selecionado da lista.|
-> [!IMPORTANT]
-> Se você especificar uma lista de aplicativos permitidos para dispositivos Windows Phone 8.1, deverá adicionar o aplicativo Portal da empresa a essa lista, caso contrário, ele será bloqueado.
+> [!IMPORTANT] Se você especificar uma lista de aplicativos permitidos para dispositivos Windows Phone 8.1, deverá adicionar o aplicativo do Portal da Empresa a essa lista, caso contrário, ele será bloqueado.
 
 
 ### Informações de referência para aplicativos compatíveis e não compatíveis
@@ -141,7 +146,7 @@ Use a **Política de configuração personalizada do Windows Phone** do Microsof
 
 Essa funcionalidade destina-se a permitir que você implante configurações do Windows Phone que não podem ser configuradas com a política de configuração geral do Intune. Para obter informações sobre as configurações que você pode definir com essas políticas, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e recursos em seus dispositivos com as políticas do Microsoft Intune).
 
-Para obter ajuda para a criação de configurações de OMA-URI para dispositivos Windows Phone, consulte [Windows Phone 8.1 MDM protocol documentation](http://technet.microsoft.com/library/dn499787.aspx) (Documentação do protocolo MDM do Windows Phone 8.1).
+Para obter ajuda para criar configurações de OMA-URI para dispositivos Windows Phone, consulte [Documentação do protocolo MDM do Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Configurações gerais
 
@@ -169,6 +174,6 @@ Na caixa de diálogo **Adicionar ou Editar Configuração de OMA-URI**, especifi
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

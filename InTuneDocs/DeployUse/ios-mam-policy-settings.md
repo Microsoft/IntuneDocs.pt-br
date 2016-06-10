@@ -33,8 +33,7 @@ Há duas categorias de configurações de política, Realocação dos dados e Co
 ##  Configurações de realocação de dados
 O termo **Aplicativos gerenciados por política** é usado para fazer referência a aplicativos configurados com políticas de MAM.
 
-- **Impedir backups do iTunes e iCloud:**
-  Escolha **Sim** para desabilitar ou **não** para permitir o backup dos dados da empresa de aplicativos gerenciados por política.
+- **Evitar backups do iTunes e iCloud:** escolha **Sim** para desabilitar ou **Não** para permitir o backup dos dados da empresa de aplicativos gerenciados pela política.
 
   **Valor padrão = sim**
 
@@ -54,13 +53,11 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
 
   **Valor padrão = todos os aplicativos**
 
-- **Impedir Salvar como:**
-  Escolha **Sim** para desabilitar o uso da opção Salvar Como em qualquer aplicativo que use essa política. Escolha **Não** se quiser permitir o uso de Salvar Como.
+- **Impedir Salvar como:** escolha **Sim** para desabilitar o uso da opção Salvar Como em qualquer aplicativo que use essa política. Escolha **Não** se quiser permitir o uso de Salvar Como.
 
   **Valor padrão = sim**
 
-- **Restringir recortar, copiar e colar com outros aplicativos:**
-Especifique quando as operações de recortar, copiar e colar devem ser restringidas. Escolha:
+- **Restringir recortar, copiar e colar com outros aplicativos:** especifique quando recortar, copiar e colar operações deve ser restrito. Escolha:
   -   **Bloqueado:** não permite as operações recortar, copiar e colar entre aplicativos gerenciados por políticas.
   -   **Aplicativos Gerenciados pela Política:** permite operações de recortar, copiar e colar apenas entre aplicativos gerenciados pela política.
   -   **Aplicativos Gerenciados pela Política com Colar Em**: permite recortar ou copiar entre aplicativos gerenciados pela política. Permite que dados recortados ou copiados de qualquer aplicativo sejam colados neste aplicativo.
@@ -93,16 +90,18 @@ Especifique quando as operações de recortar, copiar e colar devem ser restring
   **Valor padrão = sim**
 ##  Configurações de política de acesso ao iOS
 O termo **Aplicativos gerenciados por política** é usado para fazer referência a aplicativos configurados com políticas de MAM.
-- **Exigir PIN simples para acesso:** escolha **Sim** para exigir um PIN para usar a política de aplicativos gerenciados. O usuário será solicitado a configurar isso na primeira vez em que executar o aplicativo no contexto corporativo.
+- **Solicitar PIN para acesso:** escolha **Sim** para exigir que um PIN use aplicativos gerenciados pela política. O usuário será solicitado a configurar isso na primeira vez em que executar o aplicativo no contexto corporativo.
 
   **Valor padrão = sim**
-- **Número de tentativas antes da redefinição do PIN:** especifique o número de tentativas de entrada de PIN que podem ser feitas antes que o usuário precise redefinir o PIN.
+    -  **Permitir PIN simples:** especifique se deseja permitir que os usuários usem sequências PIN simples como 1234 ou 1111. **Valor padrão = Sim**.
+    - **Comprimento do PIN:** especifique o número mínimo de dígitos em um PIN. **Valor padrão = 4**
+    - **Número de tentativas antes da redefinição do PIN:** especifique o número de tentativas de entrada de PIN que podem ser feitas antes que o usuário precise redefinir o PIN.
+  **Não há valor padrão para esta configuração**.
 
-  **Não há valor padrão para esta configuração.**.
-- **Exigir a impressão digital em vez de PIN (iOS 8.0 +):** escolha **Sim** para exigir uma identidade de impressão digital, em vez de um PIN numerado, para acesso ao aplicativo.
+  - **Exigir a impressão digital em vez de PIN (iOS 8.0 +):** escolha **Sim** para exigir uma identidade de impressão digital, em vez de um PIN numerado, para acesso ao aplicativo.
 Em dispositivos iOS, você pode permitir que o usuário se identifique usando a impressão digital em dispositivos iOS, em vez de um PIN numerado. Quando o usuário final tenta acessar esse aplicativo usando sua conta corporativa, ele é solicitado a fornecer a identidade de impressão digital, em vez de inserir um número de PIN.
 
-  **Valor padrão = sim**
+    **Valor padrão = sim**
 - **Exigir credenciais corporativas para acesso:** escolha **Sim** para exigir credenciais corporativas, em vez de um PIN, para acesso ao aplicativo. **Se você tiver definido isto como Sim, ele substituirá os requisitos de PIN ou da ID de Toque.** O usuário deverá fornecer suas credenciais corporativas.
 
   **Valor padrão = Não**
@@ -113,11 +112,11 @@ Em dispositivos iOS, você pode permitir que o usuário se identifique usando a 
   -   **Período de carência offline:** se o dispositivo estiver offline, especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente.
 
   **Valor padrão = tempo limite de 30 minutos com período de carência offline de 720 minutos**
-  - **Intervalo offline antes do apagamento dos dados do aplicativo (dias):** você pode optar por apagar os dados da empresa se um dispositivo ficar offline por um determinado período.  Especifique o número de dias que um dispositivo pode ficar offline antes que os dados da empresa sejam removidos do dispositivo. **A entrada de um valor 0 desativa essa configuração**.
+  - **Intervalo offline antes do apagamento dos dados do aplicativo (dias):** você pode optar por apagar os dados da empresa se um dispositivo ficar offline por um determinado período.  Especifique o número de dias que um dispositivo pode ficar offline antes que os dados da empresa sejam removidos do dispositivo. **A entrada de um valor de 0 desativa essa configuração**.
 
   **Valor padrão = 90 dias**
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 
 ### Se as informações de contato de TI estiverem faltando no portal da empresa
 
-1.  No console de administração do Intune, clique em **Admin** &gt; **Portal da Empresa**.
+1.  No console de administração do Intune, clique em **Administrador** &gt; **Portal da Empresa**.
 
 2.  Defina os detalhes de **Contato de TI** .
 
@@ -63,7 +63,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 
 4.  Se a barra de progresso do download do aplicativo iOS chegar ao final, mas a instalação do aplicativo falhar, talvez haja algum problema com os arquivos do aplicativo fornecidos por você.
 
-### Se você clicar em um link para um aplicativo iOS e for levado para um local anterior na iTunes App Store
+### Se um link do aplicativo iOS levá-lo para uma localização anterior na iTunes App Store
 
 1.  A sessão atual da iTunes App Store está sendo aberta na página do aplicativo anterior.
 
@@ -109,6 +109,6 @@ A tabela a seguir relaciona os erros comuns que podem ocorrer durante a implanta
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

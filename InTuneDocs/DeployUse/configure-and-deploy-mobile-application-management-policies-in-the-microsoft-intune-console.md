@@ -34,9 +34,8 @@ As políticas de gerenciamento de aplicativos móveis dão suporte a:
 
 -   Dispositivos que executam o iOS 7 e posterior.
 
-> [!TIP]
-> Políticas de gerenciamento de aplicativos móveis dão suporte a dispositivos registrados com o Intune.
-> 
+> [!TIP] Políticas de gerenciamento de aplicativos móveis dão suporte a dispositivos registrados com o Intune.
+>
 > Se você estiver procurando informações sobre como criar políticas de gerenciamento de aplicativos para dispositivos que não são gerenciados pelo Intune, consulte [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteger os dados do aplicativo usando políticas de gerenciamento de aplicativos móveis com o Microsoft Intune).
 
 Diferente de outras políticas do Intune, você não implanta uma política de gerenciamento de aplicativo móvel diretamente. Em vez disso, você associa a política ao aplicativo que deseja restringir. Quando o aplicativo é implantado e instalado em dispositivos, as configurações especificadas entrarão em vigor.
@@ -45,7 +44,7 @@ Para aplicar restrições a um aplicativo, o aplicativo deve incorporar o SDK (S
 
 -   **Usar um aplicativo gerenciado por política** – tem o SDK interno do aplicativo. Para adicionar este tipo de aplicativo, especifique um link para o aplicativo de uma loja de aplicativos, como a iTunes Store ou o Google Play. Nenhum processamento adicional é necessário para este tipo de aplicativo. Veja uma lista de [aplicativos que você pode usar com políticas de gerenciamento de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Usar um aplicativo "encapsulado"** – aplicativos que são empacotados novamente para incluir o SDK do aplicativo usando a **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune**. Normalmente, essa ferramenta é usada para processar aplicativos da empresa criados internamente. Ele não pode ser usado para processar aplicativos que foram baixados da loja de aplicativos. Consulte [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos iOS para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune).
+-   **Usar um aplicativo "encapsulado"** – aplicativos que são empacotados novamente para incluir o SDK do aplicativo usando a **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune**. Normalmente, essa ferramenta é usada para processar aplicativos da empresa criados internamente. Ele não pode ser usado para processar aplicativos que foram baixados da loja de aplicativos. Consulte [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos iOS para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição de Aplicativo do Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune).
 
 Alguns aplicativos gerenciados, como o aplicativo do Outlook para iOS e Android, dão suporte a **multi-identidade**. Isso significa que Intune aplica as configurações de gerenciamento somente a dados ou contas corporativas no aplicativo.
 
@@ -57,8 +56,7 @@ Por exemplo, usando o aplicativo do Outlook:
 
 -   A conta corporativa usada deve ser a mesma conta que foi usada para registrar o dispositivo no Intune.
 
-> [!TIP]
-> Se estiver usando o Intune com o Configuration Manager, consulte [How to Control Apps Using Mobile Application Management Policies in Configuration Manager (Como controlar aplicativos usando políticas de gerenciamento de aplicativos móveis no Configuration Manager)](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP] Se estiver usando o Intune com o Configuration Manager, consulte [How to Control Apps Using Mobile Application Management Policies in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx) (Como controlar aplicativos usando políticas de gerenciamento de aplicativos móveis no Configuration Manager).
 
 ## Criar e implantar um aplicativo com uma política de gerenciamento de aplicativos móveis
 
@@ -89,7 +87,7 @@ Quando você publica um aplicativo gerenciado, os procedimentos diferem se você
 
 1.  Quando você estiver pronto para carregar o aplicativo em seu espaço de armazenamento em nuvem, siga as instruções em [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Adicionar aplicativos para dispositivos móveis no Microsoft Intune).
 
-2.  Para aplicativos iOS, selecione **App iOS gerenciado na App Store**em **Selecione como este software é disponibilizado para dispositivos**.
+2.  Para aplicativos do iOS, selecione **Aplicativo iOS gerenciado da App Store**em **Selecionar como este software é disponibilizado para dispositivos**.
 
     Para aplicativos Android, selecione **Link externo**.
 
@@ -103,7 +101,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
 
 1.  Quando você estiver pronto para carregar o aplicativo em seu espaço de armazenamento em nuvem, siga as instruções em [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Adicionar aplicativos para dispositivos móveis no Microsoft Intune).
 
-2.  Selecione **Instalador de Software** em **Selecione como este software é disponibilizado para dispositivos**.
+2.  Selecione **Instalador de Software**em **selecionar como este software é disponibilizado para dispositivos**.
 
 3.  Selecione **Pacote do aplicativo para iOS (arquivo &#42;.ipa)** em **Tipo de arquivo do instalador de software**.
 
@@ -113,7 +111,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
 
 ## **Etapa 3:** criar uma política de gerenciamento de aplicativos móveis
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Visão Geral** &gt; **Adicionar Política**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Visão geral** &gt; **Adicionar Política**.
 
 2.  Configure e implante uma das seguintes políticas de **Software** , dependendo do tipo de dispositivo para o qual deseja configurar aplicativos:
 
@@ -121,7 +119,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
 
     -   **Política de gerenciamento de aplicativos móveis (iOS 7 e posterior)**
 
-    É possível usar as configurações recomendadas ou personalizá-las. Para obter mais detalhes, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e funcionalidades em seus dispositivos com políticas do Microsoft Intune).
+    É possível usar as configurações recomendadas ou personalizá-las. Para obter mais detalhes, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune).
 
 3.  Defina as seguintes configurações conforme necessário. As opções podem variar dependendo do tipo de dispositivo para o qual você está configurando a política.
 
@@ -141,10 +139,10 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
     |**Exigir conformidade do dispositivo com a política corporativa para acesso**|Permite que o aplicativo seja usado somente quando o dispositivo não está desbloqueado ou modificado.|
     |**Verificar novamente os requisitos de acesso após (minutos)**|No campo **Tempo Limite** , especifique o período de tempo antes que os requisitos de acesso para o aplicativo sejam verificados novamente após o aplicativo ser iniciado.|
     |**Período de cortesia offline**|Se o dispositivo estiver offline, especifique o período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente.|
-    |**Criptografar dados do aplicativo**|Especifica que todos os dados associados ao aplicativo sejam criptografados, inclusive dados armazenados externamente, como em cartões SD.<br /><br />**Criptografia para iOS**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativo móvel do Intune, os dados são criptografados em repouso usando a criptografia no nível do dispositivo fornecida pelo sistema operacional. Isso é habilitado pela política de PIN do dispositivo que deve ser definida com o administrador de TI. Quando um PIN for solicitado, os dados serão criptografados segundo as configurações na política de gerenciamento de aplicativos móveis. Conforme indicado na documentação da Apple, [os módulos usados pelo iOS 7 têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Criptografia para Android**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativos móveis do Intune, a criptografia é fornecida pela Microsoft. Os dados são criptografados de forma síncrona durante operações de E/S de arquivos, de acordo com a configuração na política de gerenciamento de aplicativos móveis. Aplicativos gerenciados no Android usam a criptografia AES-128 no modo CBC utilizando as bibliotecas de criptografia da plataforma. O método de criptografia não tem certificação FIPS 140-2. O conteúdo no armazenamento do dispositivo sempre será criptografado.|
+    |**Criptografar dados do aplicativo**|Especifica que todos os dados associados ao aplicativo sejam criptografados, inclusive dados armazenados externamente, como em cartões SD.<br /><br />**Criptografia para iOS**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativo móvel do Intune, os dados são criptografados em repouso usando a criptografia no nível do dispositivo fornecida pelo sistema operacional. Isso é habilitado pela política de PIN do dispositivo que deve ser definida com o administrador de TI. Quando um PIN for solicitado, os dados serão criptografados segundo as configurações na política de gerenciamento de aplicativos móveis. Conforme indicado na documentação da Apple, [os módulos usados pelo iOS 7 têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Criptografia para Android**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativos móveis do Intune, a criptografia é fornecida pela Microsoft. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo.  O conteúdo no armazenamento do dispositivo sempre será criptografado. O método de criptografia não tem certificação FIPS 140-2.|
     |**Bloquear captura de tela** (somente para dispositivos Android)|Especifica que as funcionalidades de captura de tela do dispositivo sejam bloqueadas durante o uso do aplicativo.|
 
-4.  Quando tiver terminado, clique em **Salvar Política**.
+4.  Quando tiver terminado, clique em **Salvar política**.
 
 A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política** .
 
@@ -153,9 +151,8 @@ Implantar o aplicativo, garantindo que você selecione a política de gerenciame
 
 Para mais detalhes, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implantar aplicativos no Microsoft Intune).
 
-> [!IMPORTANT]
-> Para dispositivos que executam sistemas operacionais anteriores ao iOS 7.1, as políticas associadas não serão removidas quando o aplicativo for desinstalado.
-> 
+> [!IMPORTANT] Para dispositivos que executam sistemas operacionais anteriores ao iOS 7.1, as políticas associadas não serão removidas quando o aplicativo for desinstalado.
+>
 > Se o dispositivo tiver o registro no Intune desfeito, as políticas não serão removidas dos aplicativos. Quaisquer aplicativos que tiverem políticas aplicadas manterão as configurações de política, mesmo depois de ser desinstalado e reinstalado.
 
 ### O que fazer quando um aplicativo já está implantado em dispositivos
@@ -165,8 +162,7 @@ Nesse caso, você deve pedir ao usuário para desinstalar manualmente a versão 
 
 No entanto, para dispositivos que executam o iOS 9 e versões posteriores, o Intune automaticamente solicitará ao usuário permissão para assumir o gerenciamento do aplicativo existente. Se eles concordarem, o aplicativo será gerenciado pelo Intune e qualquer política de gerenciamento de aplicativo móvel associada ao aplicativo também será aplicada.
 
-> [!TIP]
-> Se o dispositivo estiver em modo de supervisionado, o Intune assumirá o gerenciamento do aplicativo existente sem solicitar permissão de usuários.
+> [!TIP] Se o dispositivo estiver em modo supervisionado, o Intune assumirá o gerenciamento do aplicativo existente sem solicitar permissão de usuários.
 
 ## **Etapa 5:** monitorar a implantação do aplicativo.
 Após ter criado e implantado um aplicativo associado a uma política de gerenciamento de aplicativo móvel, use os procedimentos a seguir para monitorar o aplicativo e resolver conflitos de política.
@@ -201,9 +197,6 @@ Em casos em que o dispositivo ou usuário receber duas políticas conflitantes, 
 -   Se nenhuma política tiver sido implantada no dispositivo e duas configurações conflitantes forem implantadas, a configuração padrão integrada no dispositivo será usada.
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

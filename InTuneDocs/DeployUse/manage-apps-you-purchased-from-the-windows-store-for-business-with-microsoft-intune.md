@@ -39,6 +39,8 @@ Examine as seguintes informações antes de iniciar a sincronização e a implan
 * Depois que você tiver associado uma conta da Windows Business Store ao Intune, não será possível alterar para uma conta diferente no futuro.
 * Aplicativos adquiridos da loja não poderão ser adicionados ao ou excluídos manualmente do Intune. Eles só poderão ser sincronizados com a Windows Store for Business.
 * O Intune sincroniza apenas aplicativos online licenciados que você adquiriu da Windows Store for Business.
+* Os dispositivos devem ser ingressados no Domínio do Active Directory ou ingressou no local de trabalho para usar essa funcionalidade.
+* Dispositivos registrados devem estar usando a versão 1511 do Windows 10.
 
 ## Associe sua conta da Windows Store for Business ao Intune
 Antes de habilitar a sincronização no console do Intune, você deve configurar sua conta de repositório para usar o Intune como uma ferramenta de gerenciamento:
@@ -50,7 +52,7 @@ Agora você pode continuar e configurar a sincronização no console do Intune.
 
 ## Configurar sincronização
 
-1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Administração**.
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Administrador**.
 2. No espaço de trabalho **Administração**, expanda **Gerenciamento de Dispositivo Móvel** e clique em **Store for Business**.
 3. Na página **Windows Store for Business**, faça o seguinte:
 * Se você ainda tiver feito isso, clique no link para inscrever-se para a Windows Store for Business
@@ -80,6 +82,6 @@ Quando você implanta um aplicativo da Windows Store for Business, uma licença 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

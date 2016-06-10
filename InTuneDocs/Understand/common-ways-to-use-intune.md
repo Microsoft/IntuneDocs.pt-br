@@ -67,11 +67,11 @@ Os funcionários estão cada vez mais fazendo uso de tecnologias móveis.  Por e
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Habilitar os funcionários para acessar o Office 365 de forma segura de um quiosque público não gerenciado
-Às vezes, seus funcionários precisam usar dispositivos, aplicativos ou navegadores que você não pode gerenciar, como os computadores públicos em feiras de negócios e lobbies de hotel.  Você deve permitir que seus funcionários acessem o email corporativo deles?  Com o Intune e o Enterprise Mobility Suite, você tem opções.  A resposta pode ser simplesmente "não" limitando o acesso ao email para dispositivos que são gerenciados pela sua organização.  Como alternativa, você pode optar por permitir o acesso limitado a esses computadores não confiáveis exigindo a autenticação multifator e permitindo somente acesso de navegador (Outlook Web Access) em um modo em que os arquivos não podem ser baixados (por exemplo, anexos de email).  Isso garantirá que seus funcionários com autenticação forte não deixarão acidentalmente dados corporativos em um computador não confiável.
+Às vezes, seus funcionários precisam usar dispositivos, aplicativos ou navegadores que você não pode gerenciar, como os computadores públicos em feiras de negócios e lobbies de hotel. Você deve permitir que seus funcionários acessem o email corporativo deles? Com o Intune e o Enterprise Mobility Suite, <!--you have choices. The--> a resposta pode ser simplesmente "não" limitando o acesso do email aos dispositivos que são gerenciados pela sua organização.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Isso garantirá que seus funcionários com autenticação forte não deixarão acidentalmente dados corporativos em um computador não confiável.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

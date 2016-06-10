@@ -6,7 +6,7 @@ description:
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 Você pode perceber que, depois de implantar o Microsoft Intune, encontrará problemas com sua configuração ou com clientes. Os recursos abaixo podem ajudá-lo a descobrir qual pode ser a causa do problema para que você possa resolvê-lo.
 
 > [!NOTE]
-> Para criar uma solicitação de suporte ou para exibir uma solicitação existente, clique [aqui](https://portal.office.com/admin/default.aspx) para visitar o centro de administração do Office 365. Para obter mais informações sobre opções de suporte, consulte [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
+> Para criar uma solicitação de suporte ou para exibir uma solicitação, [visite o Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Para obter mais informações sobre opções de suporte, consulte [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 ## Definir o problema
 
 -   Qual é o comportamento?
@@ -46,6 +46,8 @@ Você pode perceber que, depois de implantar o Microsoft Intune, encontrará pro
 
 -   O usuário poderia estar enfrentando um problema de autenticação? Se esta for uma possibilidade, verifique se o usuário pode fazer logon em outros serviços que usam o Azure Active Directory. Consulte também se o usuário pode fazer logon de um dispositivo diferente.
 
+-   Você verificou o status do serviço? Você pode monitorar a integridade do serviço Intune no [Portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Integridade do Serviço** no painel esquerdo. 
+
 ## Coletar dados disponíveis
 
 -   Logs de dispositivo. Saiba como coletar logs do dispositivo em:
@@ -54,7 +56,7 @@ Você pode perceber que, depois de implantar o Microsoft Intune, encontrará pro
   - [Enviar erros de registro do Android para o administrador de TI](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
   - [Enviar erros de registro do iOS para o administrador de TI](/intune/enduser/send-errors-to-your-it-admin-ios.md)
 
--   Dados de console do administrador, por exemplo, para problemas de implementação de política, você deve examinar a política desejada e o status dessa política, conforme descrito em [Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Dados de console do administrador, por exemplo, para problemas de implementação de política, você deve examinar a política desejada e o status dessa política, conforme descrito em [Use groups to manage users and devices with Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune).
 
 ## Pesquisar a solução
 
@@ -64,7 +66,7 @@ Você pode perceber que, depois de implantar o Microsoft Intune, encontrará pro
 
 -   Você pode abrir uma solicitação de suporte. O Suporte do Intune estará mais capacitado a ajudar você a resolver um problema quando você tiver definido o problema e coletado os dados disponíveis.
 
-    Para criar uma solicitação de suporte, clique [aqui](https://portal.office.com/admin/default.aspx) para visitar o centro de administração do Office 365. Para obter mais informações sobre opções de suporte, consulte [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
+    Para criar uma solicitação de suporte [visite o Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Para obter mais informações sobre opções de suporte, consulte [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 ## Recursos da comunidade
 Você pode encontrar outras informações úteis nestes recursos da comunidade:
@@ -77,8 +79,8 @@ Você pode encontrar outras informações úteis nestes recursos da comunidade:
 
 -   [Os fóruns do Intune](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## Próximas etapas
-Os tópicos listados abaixo têm ajuda de solução para problemas específicos. Se essas informações não o ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+### Próximas etapas
+Os tópicos listados abaixo têm ajuda de solução para problemas específicos. Se essas informações não ajudarem, contate o Suporte da Microsoft conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
@@ -93,9 +95,8 @@ Os tópicos listados abaixo têm ajuda de solução para problemas específicos.
 [Solucionar problemas de instalação do cliente no Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Solucionar problemas de atualização de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-g
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

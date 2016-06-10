@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Ajudar a proteger dispositivos iOS com bypass de Bloqueio de Ativação para o Microsoft Intune | Microsoft Intune
+title: Ajude a proteger dispositivos iOS com bypass de Bloqueio de Ativação | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Para ajudar a resolver esses problemas, a Apple introduziu bypass de Bloqueio de
 > O modo supervisionado para dispositivos iOS permite que você use a ferramenta Apple Configurator para bloquear um dispositivo para limitar a funcionalidade para fins comerciais específicos. O modo supervisionado geralmente é somente para dispositivos corporativos.
 
 ## Como o Intune ajuda você a gerenciar o Bloqueio de Ativação
-O Intune pode solicitar o status de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados que executam o iOS 7.1 e posterior. Para dispositivos supervisionados, o Intune pode recuperar o código de bypass de Bloqueio de Ativação e emiti-lo diretamente para o dispositivo. Se o dispositivo for apagado, você poderá acessá-lo diretamente usando o código como o nome de usuário e uma senha em branco).
+O Intune pode solicitar o status de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados que executam o iOS 7.1 e posterior. Somente para dispositivos supervisionados, o Intune pode recuperar o código de bypass de Bloqueio de Ativação e emiti-lo diretamente para o dispositivo. Se o dispositivo for apagado, você poderá acessá-lo diretamente usando o código como o nome de usuário e uma senha em branco).
 
 **Os benefícios para o negócio são**:
 
@@ -61,9 +61,9 @@ O Intune pode solicitar o status de Bloqueio de Ativação de dispositivos super
 > [!IMPORTANT]
 > Depois de efetuar bypass do Bloqueio de Ativação em um dispositivo, ele aplicará automaticamente um novo Bloqueio de Ativação se o aplicativo Buscar meu iPhone for aberto. Por isso, **é necessário estar em posse física do dispositivo antes de seguir este procedimento**.
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos de Propriedade Corporativa**.
+1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos de Propriedade Corporativa**.
 
-2.  Selecione o dispositivo cujo Bloqueio de Ativação você deseja efetuar bypass. Escolha **Bypass de Bloqueio de Ativação**.
+2.  Selecione o dispositivo cujo Bloqueio de Ativação você deseja efetuar bypass. Escolha **Bypass do Bloqueio de Ativação**.
 
 3.  Leia a mensagem de aviso. Escolha **Sim** para continuar.
 
@@ -93,6 +93,6 @@ Você pode ver quais dispositivos estão usando o Bloqueio de Ativação de duas
 [Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

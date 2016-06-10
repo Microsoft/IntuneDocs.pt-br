@@ -33,7 +33,7 @@ Você pode implantar aplicativos para todos os tipos de dispositivos que têm su
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Esse tipo de aplicativo deve dar suporte à instalação silenciosa sem nenhuma entrada do usuário. A documentação do seu aplicativo deve incluir as opções de linha de comando relevantes para instalar silenciosamente o aplicativo (por exemplo, **/q**).
+- Esse tipo de aplicativo deve dar suporte à instalação silenciosa sem nenhuma entrada do usuário. A documentação do seu aplicativo deve incluir as opções de linha de comando relevantes para instalar silenciosamente o aplicativo (por exemplo, **/q**). Uma lista de opções de linha de comando comuns pode ser encontrada [aqui](https://support.microsoft.com/en-us/kb/227091).
 - Todos os arquivos e pastas adicionais exigidos pelo programa de instalação do aplicativo deverão estar disponíveis na localização que você especificou para os arquivos de instalação de aplicativo.
 - Na maioria dos casos, os arquivos do Windows Installer (.msi) e Windows Installer Patch (.msp) não necessitam de argumentos de linha de comando para serem instalados pelo Intune. Verifique a documentação do seu aplicativo. Se argumentos de linha de comando forem necessários, insira-os como pares Name=Value (como TRANSFORMS=custom_transform.mst).
 
@@ -49,7 +49,7 @@ Este tipo de aplicativo é carregado em seu espaço de armazenamento de nuvem.
 
 Este tipo de aplicativo é carregado em seu espaço de armazenamento de nuvem.
 
-Atualmente, os usuários finais não conseguem instalar aplicativos corporativos do aplicativo de Portal da Empresa do Intune para iOS. Isso ocorre devido a restrições colocadas em aplicativos que são publicados no iOS App Store (consulte [diretrizes de revisão do aplicativo Store](https://developer.apple.com/app-store/review/guidelines/)). Os usuários podem acessar aplicativos corporativos (incluindo aplicativos gerenciados da Windows Store e pacotes de aplicativos de linha de negócios) ao iniciar o aplicativo Portal da Empresa em seus dispositivos e tocar no bloco Aplicativos da Empresa, que abrirá o navegador e redirecioná-los ao Portal da Web do Intune.
+Atualmente, os usuários finais não conseguem instalar aplicativos corporativos do aplicativo diretamente do Portal da Empresa do Intune para iOS. Isso ocorre devido a restrições colocadas em aplicativos que são publicados no iOS App Store (consulte [diretrizes de revisão do aplicativo Store](https://developer.apple.com/app-store/review/guidelines/)). Os usuários podem acessar aplicativos corporativos (incluindo aplicativos gerenciados da Windows Store e pacotes de aplicativos de linha de negócios) ao iniciar o aplicativo Portal da Empresa em seus dispositivos e tocar no bloco Aplicativos da Empresa, que abrirá o navegador e redirecioná-los ao Portal da Web do Intune.
 
 ### **Pacote do aplicativo do Windows Phone (&#42;.xap, .appx, .appxbundle)**
 - Para implantar aplicativos, você precisará de um certificado de assinatura de código móvel corporativo. Para obter detalhes, consulte [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurar o gerenciamento do Windows Phone com o Microsoft Intune).
@@ -81,8 +81,7 @@ Usado quando você tiver um(a):
 Aplicativos com base em links externos não são armazenados em seu espaço de armazenamento em nuvem do Intune.
 ### **Aplicativo iOS gerenciados da loja de aplicativos**
 Permite que você gerencie e implante aplicativos do iOS gratuitos da Windows Store. Também permite associar [políticas de gerenciamento de aplicativos móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicativos compatíveis](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e examinar seu status no console do administrador.<br /><br />Aplicativos iOS gerenciados não são armazenados no seu espaço de armazenamento em nuvem do Intune.
-> [!TIP]
-> As opções para dispositivos móveis não estão disponíveis até que você [defina a Autoridade de Gerenciamento de Dispositivo Móvel](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
+> [!TIP] As opções para dispositivos móveis não estão disponíveis até que você [defina a Autoridade de Gerenciamento de Dispositivo Móvel](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
 
 ## Suporte para aplicativos da UWP (Plataforma Universal do Windows)
 Dispositivos Windows 10 não exigem uma chave de sideload para instalar aplicativos de linha de negócios. No entanto, a chave do Registro **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve ter um valor de **1** para habilitar o sideload.
@@ -95,8 +94,8 @@ Em dispositivos Windows 10 Mobile, você pode usar um certificado de assinatura 
 
 ## Próximas etapas 
 
-Em seguida, você precisará adicionar aplicativos no console do Intune antes de implantá-los. Você pode adicionar aplicativos para [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou para [computadores Windows que você gerencia com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
+Em seguida, você precisará adicionar aplicativos no console do Intune antes de implantá-los. Você pode adicionar aplicativos para [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou para [computadores Windows gerenciados com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

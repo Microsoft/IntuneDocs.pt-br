@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurações de política do Windows no Microsoft Intune | Microsoft Intune
+title: Configurações de política do Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Configurações de política do Windows no Microsoft Intune
-Use a **Política de configuração geral do Windows** do Microsoft Intune para definir as configurações para dispositivos Windows 8 e Windows 8.1 registrados:
+Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)** do Microsoft Intune para definir as configurações para dispositivos Windows 8.1 e Windows 8 registrados:
+
+## Configurações de aplicabilidade
+
+|Nome da configuração|Detalhes|
+|----------------|----------------------------------|
+|**Aplicar todas as configurações ao Windows 10**|Permite que as configurações desta política sejam aplicadas a dispositivos Windows 10 além de dispositivos Windows 8 e Windows 8.1.|
 
 ## Configurações de segurança
 
@@ -47,7 +53,7 @@ Use a **Política de configuração geral do Windows** do Microsoft Intune para 
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Exige que os arquivos no dispositivo sejam criptografados.<br>Para dispositivos Windows Phone 8, você deve definir esta opção para **Sim**.|Sim|Não|
+|**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Exige que os arquivos no dispositivo sejam criptografados.<br>Para dispositivos Windows Phone 8, defina como **Sim**.|Sim|Não|
 <sup>1</sup> Informações adicionais sobre dispositivos que executam o Windows 8.1
 
 -   Para impor a criptografia em dispositivos que executam o Windows 8.1, você deve instalar a [Atualização do cliente do MDM de dezembro de 2014 para Windows](http://support.microsoft.com/kb/3013816) em cada dispositivo.
@@ -119,6 +125,6 @@ Use a **Política de configuração geral do Windows** do Microsoft Intune para 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

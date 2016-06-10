@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurações de política de segurança de dispositivo móvel no Microsoft Intune | Microsoft Intune
+title: Configurações de política de segurança de dispositivo móvel | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ Ao definir a implantação de uma política de tamanho da senha a dispositivos q
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exigir criptografia no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, você deve definir esta opção para **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
+|**Exigir criptografia no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
 |**Exigir criptografia em cartões de memória**<br /><br />Aplica-se também a dispositivos gerenciados pelo Exchange ActiveSync.|N/D|N/D|n/d (aplicativos e dados associados são criptografados automaticamente)|N/D|Sim|
 Informações adicionais sobre dispositivos que executam o Windows 8.1
 
@@ -217,6 +217,6 @@ Informações adicionais sobre dispositivos que executam o Windows 8.1
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

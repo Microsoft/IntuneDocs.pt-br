@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,11 +56,11 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 ### Para excluir dispositivos no portal do Active Directory do Azure
 
-1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou clique em **Admin** &gt; **AD do Azure** de [https://portal.office.com](https://portal.office.com).
+1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou clique em **Administrador** &gt; **Azure AD** de [https://portal.office.com](https://portal.office.com).
 
 2.  Faça logon com sua ID da organização usando o link no lado esquerdo da página.
 
-3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deve exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Registrar seu Active Directory do Azure gratuito** ).
+3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
 
 4.  Selecione **Active Directory** e selecione sua organização.
 
@@ -68,13 +68,13 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 6.  Selecione o usuário cujos dispositivos que deseja excluir.
 
-7.  Clique em **Dispositivos**.
+7.  Escolha **Dispositivos**.
 
 8.  Remova os dispositivos conforme apropriado, como aqueles que não estão mais em uso, ou aqueles que têm definições imprecisas.
 
 > [!NOTE]
 
-> Você pode evitar o limite de registro de dispositivo usando os Gerenciadores de Registro do Dispositivo, conforme descrito em [Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivo no Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> Você pode evitar o limite de registro de dispositivo usando os Gerenciadores de Registro do Dispositivo, conforme descrito em [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (Registrar dispositivos corporativos com o Gerenciador de Registro do Dispositivo no Microsoft Intune).
 >
 > Uma conta de usuário que é adicionada ao grupo de Gerenciadores de registro de dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
 
@@ -111,10 +111,9 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 ### Solucionando o erro de autoridade MDM não definida
 
-1.  Verifique se a Autoridade MDM foi definida corretamente para a versão do serviço do Intune que você está usando, ou seja, para o Intune, MDM O365 ou System Center Configuration Manager com o Intune. Para o Intune, a Autoridade MDM é definida em **Admin** &gt; **Gerenciamento de Dispositivos Móveis**. Para o Configuration Manager com o Intune, ela é definida quando você configura o conector do Intune e, no O365, ela é uma configuração de **Dispositivos móveis**.
+1.  Verifique se a Autoridade MDM foi definida corretamente para a versão do serviço do Intune que você está usando, ou seja, para o Intune, MDM O365 ou System Center Configuration Manager com o Intune. Para o Intune, a Autoridade MDM é definida em **Administrador** &gt; **Gerenciamento de Dispositivo Móvel**. Para o Configuration Manager com o Intune, ela é definida quando você configura o conector do Intune e, no O365, ela é uma configuração de **Dispositivos Móveis**.
 
-    > [!NOTE]
-    > Após definir a Autoridade MDM, você só pode alterá-la entrando em contato com o Suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
+    > [!NOTE] Após definir a Autoridade MDM, você só pode alterá-la entrando em contato com o Suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 2.  Verifique se as credenciais do usuário foram sincronizadas corretamente com o Active Directory do Azure, verificando se seu UPN corresponde às informações do Active Directory no Portal da conta.
     Se o UPN não coincidir com as informações do Active Directory:
@@ -135,15 +134,13 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
     3.  Abra a pasta de bancos de dados e localize e abra a pasta **CM_DBName**, em que DBName é o nome do banco de dados do cliente.
 
-    4.  Na parte superior, clique em Nova Consulta e execute as seguintes consultas:
+    4.  Na parte superior, escolha **Nova Consulta** e execute as seguintes consultas:
 
-        -   Para ver todos os usuários:
-            `select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   Para ver todos os usuários: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Para ver Usuários específicos, use a seguinte consulta, em que % testuser1% representa username@domain.com para o usuário que você deseja pesquisar:
-            `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Para ver Usuários Específicos, use a seguinte consulta, em que % testuser1% representa username@domain.com para o usuário que você deseja pesquisar: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        Depois de gravar a consulta, clique em **!Execute**.
+        Depois de gravar a consulta, escolha **!Execute**.
         Após os resultados serem retornados, procure a ID do clouduser.  Se nenhuma ID for encontrada, o usuário não está licenciado para usar o Intune.
 
 ## Dispositivos móveis desaparecem quando o System Center Configuration Manager é usado com o Intune
@@ -175,7 +172,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 **Resolução:** execute as etapas a seguir:
 
 1. Desabilite o iOS dentro do conector do Windows Intune. 
-    1. Clique com o botão direito do mouse na assinatura do Intune e selecione "Propriedades".
+    1. Clique com o botão direito do mouse na assinatura do Intune e selecione **Propriedades**.
     1. Na guia "iOS", desmarque a opção "Habilitar registro do iOS".
 
 
@@ -205,14 +202,14 @@ Isso pode ocorrer porque o computador já foi registrado anteriormente ou tem a 
 
 **Solução:** 
 
-1. Do menu **Iniciar**, **execute o** -> **MMC**. 
-1. **Arquivo** -> **Adicionar / Remover Snap-ins**.
-1. Clique duas vezes em **Certificados**, escolha **Conta de computador**, **Avançar** e selecione **Computador local**.
+1. Do menu **Iniciar**, **Execute** -> **MMC**. 
+1. **Arquivo** -> **Adicionar/Remover Snap-ins**.
+1. Clique duas vezes em **Certificados**, escolha a **Conta de computador**, **Avançar** e selecione **Computador Local**.
 1. Clique duas vezes em **Certificados (computador local)**, escolha **Pessoal/Certificados**. 
 1. Procure pelo certificado Intune emitido por Sc_Online_Issuing e exclua-o, se estiver presente
 1. Exclua essa chave do Registro, se ela existir: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
 1. Tente registrar novamente. 
-1. Se o computador ainda não puder registrar, procure e exclua essa chave, caso ela exista: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Se o computador ainda não puder ser registrado, procure e exclua esta chave, caso ela exista: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
 1. Tente registrar novamente. 
 
     > [!IMPORTANT]
@@ -262,6 +259,6 @@ Uma lista de outros erros de registro do iOS é fornecida em nossa documentaçã
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Sincronizar o dispositivo manualmente
-Se a instalação do aplicativo estiver demorando muito, use as instruções a seguir para sincronizar manualmente seu dispositivo Windows, pois isso pode ajudar a acelerar a instalação. Use as instruções que correspondem ao tipo de dispositivo que você tem:
+Se a instalação do aplicativo estiver demorando muito, use as instruções a seguir para sincronizar manualmente seu dispositivo Windows, pois isso pode ajudar a acelerar a instalação. Somente as versões com suporte são aquelas listadas. Use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você tem:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -58,7 +58,7 @@ Para sincronizar manualmente seu dispositivo Windows 10 Mobile e acelerar uma in
 ## Windows 10 Desktop
 Para sincronizar manualmente seu dispositivo Windows 10 Desktop e acelerar uma instalação de aplicativo que está lenta:
 
-1. Selecione o botão **Iniciar**, conforme mostrado abaixo, e selecione **Configurações**.
+1. Selecione o botão **Iniciar**, conforme mostrado abaixo e selecione **Configurações**.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
@@ -83,7 +83,7 @@ Para sincronizar manualmente seu dispositivo Windows 10 Desktop e acelerar uma i
 ## Windows Phone 8.1
 Para sincronizar manualmente seu dispositivo Windows Phone 8.1 e acelerar uma instalação de aplicativo que está lenta:
 
-1. Vá para **Todos os aplicativos** > **Configurações** > **empresa**.
+1. Vá para **Todos os aplicativos** > **Configurações** > **Local de trabalho**.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ Para sincronizar manualmente seu dispositivo Windows Phone 8.1 e acelerar uma in
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

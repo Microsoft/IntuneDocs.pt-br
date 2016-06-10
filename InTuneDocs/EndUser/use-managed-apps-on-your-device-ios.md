@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -39,7 +39,7 @@ Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensage
 ### Como obtenho os aplicativos gerenciados?
 Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
--   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, confira [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrar o dispositivo iOS no Intune) ou [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrar o dispositivo Mac OS X no Intune).
+-   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrar o dispositivo iOS no Intune) ou [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrar o dispositivo Mac OS X no Intune).
 
 -   Instale um aplicativo da Windows Store e, em seguida, entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
 
@@ -81,6 +81,6 @@ Para obter mais informações sobre os aplicativos gerenciados em seu dispositiv
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

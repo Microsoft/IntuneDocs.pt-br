@@ -48,15 +48,18 @@ O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tip
 
 
 
-Tipo de conexão |iOS e Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop e Mobile |
----------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Sim |Sim   |Não    |     Não    |Não  |Não    | Sim, (OMA-URI, somente celulares)|     
-Pulse Secure |Sim  |Sim |Sim   |Não  |Sim  |Sim| Sim|        
-F5 Edge Client |Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
-Dell SonicWALL Mobile Connect |Sim |Sim |Sim |Não  |Sim |Sim |Sim|         
-CheckPoint Mobile VPN |Sim |Sim |Sim |Sim |Sim|Sim|Sim|
-
-
+Tipo de conexão |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop e Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Cisco AnyConnect|Sim |Sim   |Não    |     Não    |Não  |Não    | Sim, (OMA-URI, somente celulares)|     
+Pulse Secure|Sim  |Sim |Sim   |Não  |Sim  |Sim| Sim|        
+F5 Edge Client|Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
+Dell SonicWALL Mobile Connect|Sim |Sim |Sim |Não  |Sim |Sim |Sim|         
+CheckPoint Mobile VPN|Sim |Sim |Sim |Sim |Sim|Sim|Sim|
+Microsoft SSL (SSTP)|Não |Não |Não |Não |Não|Não|Não|
+Microsoft Automatic|Não |Não |Não |Não |Não|Não|Sim|
+IKEv2|Não |Não |Não |Não |Não|Não|Sim|
+PPTP|Não |Não |Não |Não |Não|Não|Sim|
+L2TP|Não |Não |Não |Não |Não|Não|Sim|
 
 
 > [!IMPORTANT] Antes de poder usar perfis VPN implantados em um dispositivo, você deve instalar o aplicativo VPN aplicável para o perfil. Você pode usar as informações no tópico [Deploy apps with Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implantar aplicativos com o Microsoft Intune) para ajudá-lo a implantar o aplicativo desejado usando o Intune.  
@@ -81,7 +84,7 @@ O usuário autentica para o servidor VPN, fornecendo seu nome de usuário e senh
 
 ## Criar um perfil VPN
 
-1. No [Console de Administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política > Adicionar Política**.
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política > Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e escolha o perfil VPN para o dispositivo:
     * **Perfil de VPN (Android 4 e posterior)**
     * **Perfil de VPN (iOS 7.1 e posterior)**
@@ -102,15 +105,15 @@ Nome da configuração  |Mais informações
 **Tipo de conexão**     |  Selecione um dos seguintes tipos de conexão para usar no perfil de VPN: **Cisco AnyConnect** (não está disponível para Windows 8.1 ou Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**
 **Descrição do servidor VPN**     | Especifique uma descrição para o servidor VPN ao qual os dispositivos se conectarão. **Exemplo:** Servidor VPN Contoso. Quando o tipo de conexão é **F5 Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.
 **Endereço IP do servidor ou o FQDN**    |Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos vão se conectar. **Exemplos:** 192.168.1.1, vpn.contoso.com.  Quando o tipo de conexão é **F5 Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.         |         
-**Lista de servidores**     |Clique em **Adicionar** para adicionar um novo servidor VPN a ser usado para a conexão VPN. Você também pode especificar qual servidor deve ser o padrão para a conexão. Essa opção somente é exibida quando o tipo de conexão é **F5 Edge Client**.         
+**Lista de servidores**     |Clique em **Adicionar** para adicionar um novo servidor VPN a ser usado para a conexão VPN. Você também pode especificar qual servidor deve ser o padrão para a conexão. Essa opção somente é exibida somente quando o tipo de conexão é **F5 Edge Client**.         
 **Enviar todo o tráfego de rede através da conexão VPN**     |Se você selecionar essa opção, todo o tráfego é enviado pela conexão VPN. Se você não selecionar essa opção, o cliente negocia dinamicamente as rotas para criar um túnel dividido ao se conectar ao servidor VPN de terceiros. Apenas as conexões com a rede da empresa são enviadas por um túnel VPN. O túnel VPN não é usado quando você se conecta aos recursos na Internet.
 **Método de autenticação**| Selecione o método de autenticação usado pela conexão VPN: **Certificados** ou **Nome de Usuário e Senha**. (Nome de Usuário e Senha não está disponível quando o tipo de conexão é Cisco AnyConnect.) A opção **Método de Autenticação** não está disponível para Windows 8.1.
 **Lembrar as credenciais do usuário a cada logon**|Selecione esta opção para garantir que as credenciais do usuário sejam lembradas para que o usuário não precise digitar as credenciais sempre que uma conexão for estabelecida.
 **Selecione um certificado de cliente para autenticação de cliente (certificado de identidade)**|Selecione o certificado do protocolo SCEP cliente que você criou anteriormente e que será usado para autenticar a conexão do VPN. Para obter mais informações sobre como usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado). Essa opção é exibida somente quando o método de autenticação é **Certificados**.
-**Função**| Especifique o nome da função do usuário que tem acesso a essa conexão. Uma função de usuário define configurações pessoais, opções e habilita ou desabilita determinados recursos de acesso. Essa opção somente é exibida quando o tipo de conexão é **Pulse Secure**.
-**Território**|Especifique o nome do território de autenticação que você deseja usar. Um realm de autenticação é um agrupamento de recursos de autenticação usado pelo tipo de conexão Pulse Secure. Essa opção somente é exibida quando o tipo de conexão é **Pulse Secure**.
-**Grupo de logon ou domínio**|Especifique o nome do grupo de logon ou domínio ao qual você deseja se conectar. Essa opção somente é exibida quando o tipo de conexão é **Dell SonicWALL Mobile Connect**.
-**Impressão digital**|Especifique uma cadeia de caracteres, por exemplo "Código de impressões digitais da Contoso" que será usado para verificar se o servidor VPN é confiável. Uma impressão digital pode ser: enviada ao cliente para que ele saiba que pode confiar em qualquer servidor que apresentar essa impressão digital durante a conexão. Se o dispositivo ainda não tiver a impressão digital, ele solicitará ao usuário para confiar no servidor VPN enquanto mostra a impressão digital (o usuário verifica a impressão digital manualmente e clica em **Confiar** para se conectar). Essa opção somente é exibida quando o tipo de conexão é **CheckPoint Mobile VPN**.
+**Função**| Especifique o nome da função do usuário que tem acesso a essa conexão. Uma função de usuário define configurações pessoais, opções e habilita ou desabilita determinados recursos de acesso. Essa opção é exibida somente quando o tipo de conexão é **Pulse Secure**.
+**Território**|Especifique o nome do território de autenticação que você deseja usar. Um realm de autenticação é um agrupamento de recursos de autenticação usado pelo tipo de conexão Pulse Secure. Essa opção é exibida somente quando o tipo de conexão é **Pulse Secure**.
+**Grupo de logon ou domínio**|Especifique o nome do grupo de logon ou domínio ao qual você deseja se conectar. Essa opção é exibida somente quando o tipo de conexão é **Dell SonicWALL Mobile Connect**.
+**Impressão digital**|Especifique uma cadeia de caracteres, por exemplo "Código de impressões digitais da Contoso" que será usado para verificar se o servidor VPN é confiável. Uma impressão digital pode ser: enviada ao cliente para que ele saiba que pode confiar em qualquer servidor que apresentar essa impressão digital durante a conexão. Se o dispositivo ainda não tiver a impressão digital, ele solicitará ao usuário que confie no servidor VPN ao qual ele está se conectando enquanto mostra a impressão digital (o usuário verifica a impressão digital manualmente e clica em **confiar** para se conectar). Essa opção é exibida somente quando o tipo de conexão é **CheckPoint Mobile VPN**.
 **VPN por aplicativo**|Selecione esta opção se você deseja associar essa conexão VPN a um aplicativo iOS do Mac OS X para que a conexão seja aberta quando o aplicativo é executado. Você pode associar o perfil VPN a um aplicativo ao implantar o software. Para obter mais informações, consulte [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implantar aplicativos no Microsoft Intune)
 **Detectar automaticamente as configurações de proxy** (iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1 apenas)|Se o servidor VPN exigir um servidor proxy para a conexão, especifique se deseja que os dispositivos detectem automaticamente as configurações de conexão. Para obter mais informações, consulte a documentação do Windows Server.
 **Usar script de configuração automática** (iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1 apenas)|Se o servidor VPN exigir um servidor proxy para a conexão, especifique se deseja usar um script de configuração automática para definir as configurações e especifique uma URL para o arquivo que contém as configurações. Para obter mais informações, consulte a documentação do Windows Server.
@@ -131,6 +134,8 @@ Nome da configuração  |Mais informações
 **Aplicativos associados**     | Você pode fornecer uma lista de aplicativos que usarão automaticamente a conexão VPN. O tipo de aplicativo determinará o identificador do aplicativo. Para aplicativos universais – forneça o Nome da Família de Pacotes, e para aplicativos de desktop – forneça o caminho do arquivo do aplicativo.          
 
 
+> [!IMPORTANT] É recomendável que você proteja todas as listas de aplicativos compiladas para uso na configuração de VPN por aplicativo. Se um usuário não autorizado modificar sua lista e você o importar para a lista de aplicativo VPN por aplicativo, você potencialmente autorizará o acesso VPN para aplicativos que não deveriam ter acesso. É uma maneira de proteger as listas de aplicativo usando uma ACL (lista de controle de acesso).
+
 Aqui está um exemplo de quando você pode usar as configurações de limites corporativos. Se você quiser habilitar VPN apenas para a área de trabalho remota, crie uma regra de tráfego de rede que permita o tráfego para o número de protocolo 27 na porta externa 3996. Nenhum outro tráfego usará a VPN.
 
 Definir rotas em limites corporativos é útil quando o tipo de conexão VPN não permite definir como o tráfego é tratado no túnel dividido. Nesse caso, use **Rotas** para listar as rotas que usarão VPN.
@@ -141,11 +146,11 @@ A nova política é exibida no nó **Políticas de configuração** do espaço d
 
 ## Implantar a política
 
-1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
+1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
 2.  Na caixa de diálogo **Gerenciar implantação** :
 
-    -   **Para implantar a política** - Selecione um ou mais grupos nos quais deseja implantar a política e clique em **Adicionar** &gt; **OK**.
+    -   **Implantação da política** - Selecione um ou mais grupos nos quais deseja implantar a política e escolha **Adicionar** &gt; **OK**.
 
     -   **Para fechar a caixa de diálogo sem implantá-la** - Clique em **Cancelar**.
 
@@ -154,8 +159,11 @@ Após a implantação bem-sucedida, os usuários verão o nome da conexão VPN e
 
 Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho Painel.
 
+### Consulte também
+[Configurações personalizadas para perfis VPN](Custom-configurations-for-VPN-profiles.md)
+[VPN por aplicativo para Pulse Secure do Android](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Implantar aplicativos no Microsoft Intune | Microsoft Intune
+title: Implantar aplicativos | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ Neste procedimento, você implantará o aplicativo para os usuários ou disposit
 
 ### Para implantar um aplicativo
 
-1. No [console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos** para exibir a lista dos aplicativos gerenciados.
+1. No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos** para exibir a lista dos aplicativos gerenciados por você.
 
 2.  Selecione o aplicativo que deseja implantar e clique em **Gerenciar Implantação**.
 
@@ -39,7 +39,7 @@ Neste procedimento, você implantará o aplicativo para os usuários ou disposit
     [Veja quais aplicativos da Microsoft são compatíveis com políticas de gerenciamento de aplicativo móvel.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Se o aplicativo que você está implantando for compatível com perfis de VPN do Intune, a página **Perfil de VPN** será exibida. Nessa página, você pode optar por associar aplicativos iOS a um perfil de VPN implantado por você anteriormente. A conexão VPN será aberta automaticamente quando o aplicativo for iniciado. Para disponibilizar um perfil VPN, ele deve ter a configuração de perfil **VPN por aplicativo** habilitada.
- Para obter informações sobre como configurar perfis de VPN, incluindo suporte para associar perfis de aplicativos, consulte [Help users connect to their work using VPN profiles with Microsoft Intune (Ajudar os usuários a se conectarem aos seus trabalhos usando perfis de VPN com o Microsoft Intune)](vpn-connections-in-microsoft-intune.md).
+ Para obter informações sobre como configurar perfis de VPN, incluindo suporte para associar perfis de aplicativos, consulte [Help users connect to their work using VPN profiles with Microsoft Intune](vpn-connections-in-microsoft-intune.md) (Ajudar os usuários a se conectarem aos seus trabalhos usando perfis de VPN com o Microsoft Intune).
 
 ## Exemplo
 
@@ -52,9 +52,9 @@ Se você implantou o aplicativo como **Necessário** em um dispositivo iOS, o us
 
 ## Próximas etapas
 
-Depois de implantar um aplicativo, monitore seu andamento. Para obter mais informações, consulte [Monitor apps in Microsoft Intune (Monitorar aplicativos no Microsoft Intune)](monitor-apps-in-microsoft-intune.md).
+Depois de implantar um aplicativo, monitore seu andamento. Para obter mais informações, consulte [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Monitorar aplicativos no Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

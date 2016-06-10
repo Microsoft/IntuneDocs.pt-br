@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política de configuração do Windows Team no Microsoft Intune | Microsoft Intune
+title: Definições de política de configuração do Windows Team | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -33,7 +33,7 @@ Use a **Política de configuração geral do Windows 10 Team** do Microsoft Intu
 |**Permitir que a tela seja ativada automaticamente quando houver alguém na sala**|Permite que o dispositivo seja ativado automaticamente quando o sensor detectar a alguém na sala.|
 |**Exigir PIN para projeção sem fio**|Especifica se você deve inserir um PIN antes de poder usar os recursos de projeção sem fio do dispositivo.|
 |**Configurar uma janela de manutenção para atualizações do dispositivo**|Configura a o intervalo em que atualizações podem ocorrer no dispositivo. Você pode configurar a hora de início do intervalo e sua duração (de 1 a 5 horas).|
-|**Habilitar Insights Operacionais do Azure**|Os Insights Operacionais do Azure, parte do pacote do Microsoft Operations Manager, coleta, armazena e analisa os dados de arquivo de log de dispositivos Windows 10 Team.<br /><br />Para se conectar aos Insights Operacionais do Azure, você deverá especificar uma **ID do Espaço de Trabalho** e uma **Chave do Espaço de Trabalho**.|
+|**Habilitar Insights Operacionais do Azure**|Os Insights Operacionais do Azure, parte do pacote do Microsoft Operations Manager, coleta, armazena e analisa os dados de arquivo de log de dispositivos Windows 10 Team.<br /><br />Para se conectar aos Insights Operacionais do Azure, você deve especificar uma **ID do Espaço de Trabalho** e uma **Chave do Espaço de Trabalho**.|
 |**Habilitar projeção sem fio do Miracast**|Habilite esta opção se você quiser permitir que o dispositivo Windows 10 Team use dispositivos habilitados do Miracast para o projeto.<br /><br />Se você habilitar essa opção, em **Escolher Canal do Miracast**, selecione o canal do Miracast usado para o conteúdo do projeto.|
 |**Escolha as informações da reunião exibidas na tela de boas-vindas**|Se você habilitar essa opção, você poderá escolher as informações que serão exibidas no bloco **Reuniões** da tela **Bem-vindo**. Você pode:<br /><br />-   **Mostrar apenas organizador e hora**<br />-   **Mostrar organizador, hora e assunto (assunto oculto para reuniões particulares)**|
 |**URL de imagem de tela de fundo Lockscreen**|Habilite essa configuração para exibir uma tela de fundo personalizada na tela **Bem-vindo** dos dispositivos Windows 10 Team da URL que você especificar.<br /><br />A imagem deve estar no formato PNG e a URL deve começar com **https://**.|
@@ -44,6 +44,6 @@ Use a **Política de configuração geral do Windows 10 Team** do Microsoft Intu
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

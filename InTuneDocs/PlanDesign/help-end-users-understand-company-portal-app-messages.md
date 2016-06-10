@@ -45,7 +45,7 @@ A mensagem está solicitando que os usuários permitam que o IMEI e o número de
 > [!NOTE]
 > **O aplicativo de Portal da Empresa nunca faz ou gerencia chamadas telefônicas!** O texto da mensagem é controlado pelo Google e não pode ser alterado.
 
-Para ver a página **Hardware**, vá para **Grupos** > **Todos os dispositivos móveis** > **Dispositivos**. Selecione o dispositivo do usuário e vá para **Exibir propriedades** > **Hardware**.
+Para ver a página **Hardware**, vá para **Grupos** > **Todos os dispositivos móveis** > **Dispositivos**. Selecione o dispositivo do usuário e vá para **Exibir Propriedades** > **Hardware**.
 
 ### O que acontece se os usuários permitirem ou negarem o acesso
 Se os usuários permitirem o acesso, o IMEI e o número de telefone do dispositivo serão exibidos na página Hardware no console do Administrador.
@@ -55,7 +55,7 @@ Se os usuários negarem o acesso, eles poderão continuar a usar o aplicativo do
 Se os usuários permitem, mas posteriormente negam o acesso, a mensagem é exibida na próxima vez que os usuários entrarem no aplicativo do Portal da Empresa após o registro.</br></br>Se os usuários decidirem posteriormente permitir o acesso, eles poderão acessar **Configurações** > **Aplicativos** > **Portal da Empresa** > **Permissões** > **Telefone** e ativar a permissão.
 
 ### Para onde enviar os usuários para obter mais informações
-[Entrar para o aplicativo do Portal da Empresa](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+Etapa 5 em [Registrar seu dispositivo Android no Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?
 
@@ -83,6 +83,6 @@ Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após n
 [O que dizer a seus usuários finais sobre como usar o Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

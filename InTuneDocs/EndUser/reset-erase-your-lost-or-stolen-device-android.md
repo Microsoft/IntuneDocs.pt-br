@@ -28,12 +28,11 @@ ms.suite: ems
 
 # Redefinir (apagar) o dispositivo perdido ou roubado
 
-Se o seu telefone for perdido ou roubado, você poderá redefini-lo para os padrões de fábrica pelo aplicativo Portal da Empresa ou pelo site. Para obter instruções ao usar o aplicativo Portal da Empresa, use as seguintes etapas ou assista a este [vídeo](http://aka.ms/ly1x17). Também é possível [redefinir seu dispositivo usando o site do Portal da Empresa](reset-your-device-cpwebsite.md).
+Se o seu telefone Android for perdido ou roubado, você poderá redefini-lo para os padrões de fábrica pelo aplicativo do Portal da Empresa ou pelo site. Para obter instruções ao usar o aplicativo Portal da Empresa, use as seguintes etapas ou assista a este [vídeo](http://aka.ms/ly1x17). Também é possível [redefinir seu dispositivo usando o site do Portal da Empresa](reset-your-device-cpwebsite.md).
 
-Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal (O que acontece se você redefinir seu dispositivo usando o Portal da Empresa)](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
+Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) (O que acontecerá se você redefinir seu dispositivo usando o Portal da Empresa).
 
-> [!WARNING] 
-> Redefinir um dispositivo para os padrões de fábrica remove dele as suas informações pessoais e de trabalho.
+> [!WARNING] Redefinir um dispositivo para os padrões de fábrica remove dele as suas informações pessoais e de trabalho.
 
 1.  No navegador, abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e entre com sua conta de trabalho.
 
@@ -48,6 +47,6 @@ Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu a
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

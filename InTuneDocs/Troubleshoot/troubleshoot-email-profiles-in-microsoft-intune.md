@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ Isso ocorre quando a opção **Permitir que o email seja enviado de aplicativos 
 
 ### Solução do Intune
 
-1.  Abra o Console de administração do Microsoft Intune, selecione **Política** Cargas de trabalho &gt; **Política de configuração**.
+1.  Abra o Console de administração do Microsoft Intune, selecione **Política** Carga de trabalho &gt;**Política de configuração**.
 
 2.  Selecione o perfil de email e clique em **Editar**.
 
@@ -47,16 +47,16 @@ Isso ocorre quando a opção **Permitir que o email seja enviado de aplicativos 
 
 1.  Abra o console do Configuration Manager &gt; **Ativos e Conformidade**.
 
-2.  Expanda **Visão geral** -&gt; **Configurações de conformidade** -&gt; **Acesso aos recursos da empresa**, e selecione **Perfis de email**.
+2.  Expanda **Visão geral** -&gt; **Configurações de Conformidade** -&gt; **Acesso aos Recursos da Empresa** e selecione **Perfis de Email**.
 
 3.  Clique com o botão direito do mouse no perfil de email e abra as **Propriedades**.
 
-4.  Na guia **Configurações de sincronização**, selecione **Permitir que o email seja enviado de aplicativos de terceiros**.
+4.  Na guia **Configurações de Sincronização**, selecione **Permitir que o email seja enviado de aplicativos de terceiros**.
 
 ## Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

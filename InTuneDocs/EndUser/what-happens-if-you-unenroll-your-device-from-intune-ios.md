@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -44,11 +44,11 @@ Ao cancelar o registro do dispositivo iOS do Intune:
 
 -   Perfis de email da empresa são removidos do dispositivo.
 
-Para obter instruções de como cancelar o registro, consulte [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md) (Cancelar o registro do dispositivo no Intune).
+Para obter instruções sobre como cancelar o registro, consulte [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md) (Cancelar o registro de dispositivo do Intune).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

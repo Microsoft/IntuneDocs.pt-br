@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -43,6 +43,7 @@ As informações nesta seção ajudam na instalação do Portal da Empresa do In
 As informações nesta seção ajudam com as ações que precisam ser realizadas depois que o dispositivo iOS é registrado no Intune.
 
 - [Use aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-ios.md)</br>
+- [Definir ou alterar sua senha](set-or-change-your-passcode-ios.md)</br>
 - [Redefinir (apagar) o dispositivo perdido ou roubado](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [Desativar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Cancelar o registro do dispositivo do Intune](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

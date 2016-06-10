@@ -31,11 +31,10 @@ Antes de configurar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], 
 
 O Portal da Empresa do Intune é uma ferramenta que fornece aos usuários acesso a aplicativos e dados da empresa. O Portal da Empresa está disponível em duas formas:
 
--   **O aplicativo do portal da empresa**: um aplicativo disponível em dispositivos que você gerencia com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Saiba mais sobre os aplicativos de Portal da Empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
- e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **O aplicativo do portal da empresa**: um aplicativo disponível em dispositivos que você gerencia com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Saiba mais sobre os aplicativos do Portal da Empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **O site do portal da empresa**: um site que fornece acesso de um [navegador com suporte](supported-web-browsers.md). A URL é [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Saiba mais sobre esse site em [Usando o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website).
+- **O site do portal da empresa**: um site que fornece acesso de um [navegador com suporte](supported-web-browsers.md). A URL é [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Saiba mais sobre esse site em [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website) (Usando o site do Portal da Empresa do Intune).
 
 Estas são algumas das tarefas que os usuários podem fazer no Portal da Empresa:
 
@@ -59,6 +58,6 @@ Antes que um usuário possa acessar o Portal da Empresa, a conta do usuário dev
 [O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

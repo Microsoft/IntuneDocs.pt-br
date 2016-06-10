@@ -37,7 +37,7 @@ Você pode exibir informações do administrador de locatários ao usar o consol
 ## Para adicionar manualmente as contas de usuário individuais
 Use as etapas a seguir para criar contas de usuário adicionais no seu locatário de avaliação. Lembre-se, cada conta de usuário que você adiciona conta como uma das 100 licenças que você obtém como parte da avaliação gratuita do Intune.
 
-1.  No [Centro de administração do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), escolha **Adicionar Usuários** &gt; **Novo**&gt; **Usuário** para iniciar o assistente **Novos usuários**.
+1.  No [Centro de administração do Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), escolha **Adicionar Usuários** &gt; **Novo**&gt; **Usuário** para iniciar o assistente **Novos usuários**.
 
 2.  Na página **Detalhes** , preencha os campos obrigatórios.
 
@@ -51,14 +51,14 @@ Use as etapas a seguir para criar contas de usuário adicionais no seu locatári
 
 7.  Quando o novo usuário é exibido no Centro de administração do Office 365, verifique se o novo usuário foi criado com êxito:
 
-    1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Administração** &gt; **Portal da Empresa** e role até a parte inferior da tela. Copie a URL mostrada em **Portal da Empresa do Intune**.
+    1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Administrador** &gt; **Portal da Empresa** e role até a parte inferior da tela. Copie a URL mostrada em **Portal da Empresa do Intune**.
 
-    2.  Abra uma nova janela do navegador em "modo de privacidade" (no Internet Explorer, escolha **Configurações** &gt; **Navegação InPrivate**) ou abra uma nova janela do navegador em um dispositivo diferente e, em seguida, navegue para a URL que você copiou na etapa anterior. Quando os usuários entrarem pela primeira vez, deverão fornecer uma nova senha para a conta.
+    2.  Abra uma nova janela do navegador em "modo de privacidade" (no Internet Explorer, escolha **Ferramentas** &gt; **Navegação InPrivate**) ou abra uma nova janela do navegador em um dispositivo diferente e, em seguida, navegue para a URL que você copiou na etapa anterior. Quando os usuários entrarem pela primeira vez, deverão fornecer uma nova senha para a conta.
 
 ## Adicionar usuários em massa
-Para adicionar usuários em massa no Intune, use o assistente **Adicionar usuários em massa** para carregar um arquivo de valores separados por vírgulas (CSV) que contém os dados dos seus usuários. Os links do assistente permitem que você baixe um arquivo CSV de exemplo e o modelo em branco. A primeira linha do arquivo CSV deve conter, na ordem correta, cada um dos rótulos da coluna de dados do usuário. Em seguida, para cada usuário do arquivo CSV, você deve incluir o **nome de usuário** (como **bob@contoso.com**) e um **nome de exibição** (como **Bob Kelly**)).
+Para adicionar usuários em massa no Intune, use o assistente **Adicionar usuários em massa** para carregar um arquivo de valores separados por vírgulas (CSV) que contém os dados dos seus usuários. Os links do assistente permitem que você baixe um arquivo CSV de exemplo e o modelo em branco. A primeira linha do arquivo CSV deve conter, na ordem correta, cada um dos rótulos da coluna de dados do usuário. Então, para cada usuário do arquivo CSV, você deve incluir o **nome de usuário** (como **bob@contoso.com**) e um **nome de exibição** (como **Bob Kelly**).
 
-1.  No [Centro de administração do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), escolha **usuários** &gt; **Novo**.
+1.  No [Centro de administração do Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), escolha **Usuários** &gt; **Novo**.
 
 2.  Escolha **Adicionar em massa** para iniciar o assistente Adicionar usuários em massa.
 
@@ -84,6 +84,6 @@ Parabéns! Você concluiu a etapa 2 do passo a passo da *avaliação do Microsof
 >[&larr; **Inscreva-se para uma avaliação**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Criar grupos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -32,11 +32,11 @@ O **portal do Azure** permite criar e gerenciar políticas de gerenciamento de a
 O portal do Azure dá suporte à criação de políticas de MAM para:
 - Aplicativos que são executados em dispositivos **registrados e gerenciados pelo Intune**.
 - Aplicativos que são executados em dispositivos que **não são registrados** em nenhuma solução de MDM.
-- Aplicativos que são executados em dispositivos que são **registrados em uma solução de MDM de terceiros**.
+- Aplicativos que são executados em dispositivos que são **registrados em uma solução MDM de terceiros**.
 
-Se no momento você estiver usando o **console de administração do Intune** para gerenciar seus dispositivos, poderá criar uma política de MAM que dê suporte a aplicativos para dispositivos registrados no Intune usando o [console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Se no momento você estiver usando o **console de administração do Intune** para gerenciar seus dispositivos, poderá criar uma política MAM que dê suporte a aplicativos para dispositivos registrados no Intune usando o [Console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
-> Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas de MAM.
+> Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas MAM. Se você criar políticas MAM no console de administração do Intune e no portal do Azure, a política no portal do Azure será aplicada aos aplicativos e implantada para usuários.
 
 ## Faça logon no portal do Azure e personalize sua página inicial
 
@@ -64,6 +64,6 @@ Se no momento você estiver usando o **console de administração do Intune** pa
 [Preparar-se para configurar políticas de gerenciamento de aplicativos móveis](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

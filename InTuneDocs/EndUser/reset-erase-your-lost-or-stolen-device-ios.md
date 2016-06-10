@@ -15,7 +15,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -31,7 +31,7 @@ ms.suite: ems
 Se um telefone que tenha sido registrado no Intune for perdido ou roubado, você poderá redefini-lo para as configurações padrão de fábrica usando o aplicativo Portal da empresa de um dispositivo diferente ou usando o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 > [!WARNING]
-> Redefinir um dispositivo para os padrões de fábrica remove dele as suas informações pessoais e de trabalho. Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal? (O que acontece se você redefinir seu dispositivo usando o Portal da Empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
+> Redefinir um dispositivo para os padrões de fábrica remove dele as suas informações pessoais e de trabalho. Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) (O que acontecerá se você redefinir seu dispositivo usando o Portal da Empresa?).
 
 Para redefinir seu dispositivo usando o aplicativo Portal da Empresa:
 
@@ -44,12 +44,11 @@ Para redefinir seu dispositivo usando o site Portal da Empresa, siga estas etapa
 1.  No [site do Portal da Empresa](http://portal.manage.microsoft.com), selecione o dispositivo que deseja apagar.
 
 2.  Toque em **Redefinir** &gt; **Redefinir**.
-> [!NOTE]
-> Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você.
+> [!NOTE] Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você.
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

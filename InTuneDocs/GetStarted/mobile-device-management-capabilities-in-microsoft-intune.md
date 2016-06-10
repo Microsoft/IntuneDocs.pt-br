@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Recursos de gerenciamento de dispositivos móveis do Windows no Microsoft Intune | Microsoft Intune
+title: Recursos de gerenciamento de dispositivo móvel | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,12 +66,13 @@ Gerenciamento, inventário, implantação de aplicativos, provisionamento e desa
 
 |Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
-|Inventário e relatório|Encontre informações sobre os dispositivos que você gerencia e o software que eles estão usando.<br /><br />Você pode filtrar esses relatórios de várias formas, como por plataforma do dispositivo, e se o dispositivo está em conformidade com os padrões corporativos.|[Entender as operações do Microsoft Intune usando relatórios](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|Inventário e relatório|Encontre informações sobre os dispositivos que você gerencia e o software que eles estão usando.|[Compreenda seus dispositivos com um inventário no Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### Consulte também
-[Recursos de gerenciamento de PC do Windows no Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Recursos de gerenciamento de PC do Windows no Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

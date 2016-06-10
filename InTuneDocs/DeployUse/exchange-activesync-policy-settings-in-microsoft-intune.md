@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurações de política do Exchange ActiveSync no Microsoft Intune | Microsoft Intune
+title: Configurações de política do Exchange ActiveSync | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -47,7 +47,7 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 
 |Nome da configuração|Detalhes|
 |----------------|
-|**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Requer que os dados no dispositivo sejam criptografados quando tiverem suporte.<br>Para dispositivos Windows Phone 8, você deve definir esta opção para **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|
+|**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Requer que os dados no dispositivo sejam criptografados quando tiverem suporte.<br>Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|
 |**Exigir criptografia em cartões de memória**|Exige que os dados armazenados externamente, como em um cartão SD, sejam criptografados (em dispositivos com suporte).
 <sup>1</sup> Informações adicionais sobre dispositivos que executam o Windows 8.1
 
@@ -86,6 +86,6 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

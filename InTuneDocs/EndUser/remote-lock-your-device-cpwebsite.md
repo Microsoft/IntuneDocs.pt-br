@@ -50,7 +50,7 @@ Para usar o Bloqueio Remoto para bloquear seu dispositivo:
 
     Ao tocar em **Bloqueio Remoto**, um status "Bloqueio remoto pendente" será exibido.  Quando o Bloqueio Remoto for bem-sucedido, o status é alterado para "Bloqueio remoto bem-sucedido."
 
-    O status aparece em três locais:
+    O status do Bloqueio Remoto aparece em três locais:
 
     * A área de notificações do site. 
     * A página Detalhes do dispositivo.
@@ -64,6 +64,6 @@ Para usar o Bloqueio Remoto para bloquear seu dispositivo:
 ### Consulte também
 [Usando o Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

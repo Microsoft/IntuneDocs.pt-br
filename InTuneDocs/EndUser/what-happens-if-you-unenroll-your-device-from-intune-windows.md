@@ -28,7 +28,7 @@ ms.suite: ems
 
 # O que acontece quando você cancela o registro do dispositivo no Intune?
 
-Quando você desinstala o aplicativo Portal da Empresa do dispositivo, ele também cancela o registro do dispositivo no Intune. Para obter informações adicionais sobre o que acontece, use o link que corresponde ao tipo de dispositivo que você está usando.
+Quando você desinstala o aplicativo Portal da Empresa do dispositivo, ele também cancela o registro do dispositivo no Intune. Para obter informações adicionais sobre o que acontece use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você está usando.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 ou Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,8 +43,7 @@ Quando você desinstala o aplicativo Portal da Empresa do dispositivo, ele tamb�
 
 -   O software Intune Endpoint Protection será removido do computador. Se o computador tiver outro software de proteção contra vírus instalado que esteja desabilitado, esse software poderá ser habilitado novamente depois que o Intune Endpoint Protection for removido. Você deverá verificar o computador depois de removê-lo do Portal da Empresa.
 
-    > [!IMPORTANT]
-    > Se outro software de proteção contra vírus não for habilitado novamente ou não estiver instalado, o seu computador poderá ficar vulnerável a vírus e malware.
+    > [!IMPORTANT] Se outro software de proteção contra vírus não for habilitado novamente ou não estiver instalado, o seu computador poderá ficar vulnerável a vírus e malware.
 
 -   As configurações alteradas no seu dispositivo quando ele foi adicionado (por exemplo, a desabilitação da câmera) não se aplicarão mais.
 
@@ -97,6 +96,6 @@ Quando você remover seu dispositivo Windows RT, acontecerá o seguinte:
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

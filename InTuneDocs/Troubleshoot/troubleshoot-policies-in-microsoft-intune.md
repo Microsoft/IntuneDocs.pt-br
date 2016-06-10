@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,8 +53,7 @@ Na captura de tela abaixo, você pode ver dois exemplos claros:
 
 ![Política de dispositivo Intune](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE]
-> Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
+> [!NOTE] Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
 
 ## Atualização de política e intervalos de atualização
 Lembre-se de que as políticas são atualizadas em intervalos regulares. Em geral, as políticas devem ser registradas em dispositivos dentro de 15 minutos depois de fazer uma alteração. Aqui estão mais detalhes sobre os intervalos regulares para atualização de política:
@@ -63,21 +62,20 @@ Lembre-se de que as políticas são atualizadas em intervalos regulares. Em gera
 
 -   **Windows Phone**: a política é atualizada a cada 8 horas. Isso pode ser forçado por uma atualização no Portal da Empresa, em **Configurações**.
 
--   **iOS**: a política é atualizada uma vez por dia em um intervalo de tempo aleatório. Isso também pode ser forçado abrindo o Portal da Empresa, selecionando o dispositivo e clicando em **Sincronização**.
+-   **iOS**: a política é atualizada uma vez por dia em um intervalo de tempo aleatório. Isso também pode ser forçado abrindo o Portal da Empresa, selecionando o dispositivo e escolhendo **Sincronização**.
 
--   **Android**: a política é atualizada uma vez por dia em um intervalo de tempo aleatório. Isso também pode ser forçado abrindo o Portal da Empresa, selecionando o dispositivo e clicando em **Sincronização**.
+-   **Android**: a política é atualizada uma vez por dia em um intervalo de tempo aleatório. Isso também pode ser forçado abrindo o Portal da Empresa, selecionando o dispositivo e escolhendo **Sincronização**.
 
 ## Erros relacionados à política do Microsoft Intune em policyplatform.log
 Para dispositivos do Windows não MDM, erros de política no arquivo policyplatform.log podem ser o resultado de configurações não padrão no UAC (Controle de Conta de Usuário) do Windows no dispositivo. Algumas configurações de UAC não padrão podem afetar as instalações de cliente do Microsoft Intune e a execução da política.
 
 ### Para resolver problemas do UAC
 
-1.  Desative o computador, conforme descrito em [Desativar dispositivos do gerenciamento do Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
+1.  Desative o computador, conforme descrito em [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Desativar dispositivos do gerenciamento do Microsoft Intune).
 
 2.  Espere 20 minutos para o software cliente ser removido.
 
-    > [!NOTE]
-    > Não tente remover o cliente em Programas e Recursos.
+    > [!NOTE] Não tente remover o cliente em Programas e Recursos.
 
 3.  No menu Iniciar, digite **UAC** para abrir as configurações de Controle de Conta de Usuário.
 
@@ -102,8 +100,8 @@ Para resolver esse problema, defina a hora do sistema local o mais próximo poss
 Dispositivos Windows Phone e Windows RT não permitem que políticas de segurança definidas por meio do MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define um **Número mínimo de caracteres de senha** para 8 e tenta reduzi-lo a 4. A política mais restritiva já foi aplicada ao dispositivo.
 
 Dependendo da plataforma do dispositivo, se você quiser alterar a política para um valor menos seguro, pode ser necessário redefinir as políticas de segurança.
-Por exemplo, no Windows RT, na área de trabalho, passe o dedo da direita para a esquerda para abrir a barra **Botões** e clique em **Configurações** &gt; **Painel de Controle**.  Selecione o miniaplicativo **Contas de Usuário** .
-No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** na parte inferior. Clique nele e, em seguida, clique no botão **Redefinir Políticas** .
+Por exemplo, no Windows RT, na área de trabalho, passe o dedo da direita para a esquerda para abrir a barra **Botões** e escolha **Configurações** &gt; **Painel de Controle**.  Selecione o miniaplicativo **Contas de Usuário** .
+No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** na parte inferior. Escolha-o e clique no botão **Redefinir Políticas**.
 Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior e iOS, precisarão ser desativados e registrados novamente no serviço para que você possa aplicar uma política menos restritiva.
 
 ## Dispositivos Android não forçam alterações de política de segurança sem aceitação do usuário final
@@ -118,6 +116,6 @@ O MDM para Android não permite que o serviço force alterações de política i
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

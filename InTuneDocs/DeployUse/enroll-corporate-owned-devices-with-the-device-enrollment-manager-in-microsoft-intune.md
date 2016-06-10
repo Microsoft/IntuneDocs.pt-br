@@ -36,15 +36,21 @@ As organizações podem usar o Intune para gerenciar um grande número de dispos
 
 -   Configurar o acesso aos dados da empresa
 
-Somente use a conta de Gerenciador de dispositivos para dispositivos que não recebem email nem fazem logon como um usuário específico. Dispositivos gerenciados com uma conta de gerenciador de dispositivos não podem ser configurados com acesso condicional, já que esses são também cenários por usuário. O gerenciador de armazenamento não redefine o dispositivo a partir do portal da empresa.
 
-**Exemplos de cenários do gerenciador de registro de dispositivos:**
-Um restaurante quer tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam ter acesso aos dados da empresa ou fazer logon como um usuário. O administrador do Intune cria uma conta de gerenciador de registro de dispositivos e registra os dispositivos da empresa usando essa conta. Como alternativa, o administrador pode conceder credenciais de gerenciador de registro de dispositivos a um gerente do restaurante, permitindo que ele registre e gerencie os dispositivos.
+**Exemplos de cenários do gerenciador de registro do dispositivo:** um restaurante quer oferecer tablets de ponto de venda para sua equipe de garçons e monitores de pedidos para sua equipe da cozinha. Os funcionários nunca precisam ter acesso aos dados da empresa ou fazer logon como um usuário. O administrador do Intune cria uma conta de gerenciador de registro de dispositivos e registra os dispositivos da empresa usando essa conta. Como alternativa, o administrador pode conceder credenciais de gerenciador de registro de dispositivos a um gerente do restaurante, permitindo que ele registre e gerencie os dispositivos.
 
 O administrador ou o gerente podem implantar aplicativos específicos da função para os dispositivos do restaurante. Um administrador também pode selecionar o dispositivo no console do Intune e retirá-lo de gerenciamento de dispositivos móveis com o console de administração.
 
+Dispositivos registrados com uma conta DEM (gerenciador de registro do dispositivo) têm as seguintes restrições:
+  - Nenhum usuário específico, então todos os dispositivos são livres de usuários; portanto, não há acesso de dados da empresa ou do email, embora a VPN, por exemplo, ainda possa fornecer aplicativos de dispositivos com acesso a dados
+  - Sem acesso condicional pois esses são cenários por usuário
+  - Não podem ser dispositivos de redefinição do portal da empresa
+  - Nenhum aplicativo de Apple Volume Purchase Program (VPP) devido a requisitos de ID da Apple por usuário para o gerenciamento de aplicativo
+  - Também não podem ser registrados com o Apple Configurator ou o programa de registro de dispositivo da Apple (dispositivos iOS)
+
 > [!NOTE]
 > Contas de usuário do gerenciador de registro de dispositivos com mais de 20 dispositivos registrados podem ter problemas ao usar o aplicativo Portal da Empresa. Para implantar aplicativos da empresa em dispositivos gerenciados com o gerenciador de registro do dispositivo, implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** para a conta de usuário do gerenciador de registro do dispositivo.
+> Para melhorar o desempenho, exibir o aplicativo de Portal da Empresa em um dispositivo DEM mostra somente os dispositivos locais e apenas se eles foram registrados usando o aplicativo do Portal da Empresa. Gerenciamento remoto de outros dispositivos DEM só pode ser feito no console do Intune.
 
 ## Criar contas de gerenciador de registro de dispositivo
 Contas de gerenciador de registro de dispositivos são contas de usuário com permissão para registrar um grande número de dispositivos corporativos. Somente os usuários no console do Intune podem gerenciadores de registro de dispositivos.
@@ -90,6 +96,6 @@ Excluir um gerenciador de registro de dispositivos não afeta os dispositivos re
 -   A relação da conta do gerenciador de registro de dispositivos excluído com os dispositivos registrados permanece, mas nenhum dispositivo adicional pode ser registrado
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

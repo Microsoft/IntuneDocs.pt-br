@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Atualizar aplicativos usando o Microsoft Intune | Microsoft Intune
+title: Atualizar aplicativos | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,14 +34,14 @@ Quando uma nova versão de um aplicativo que você implantou for lançada, o Int
 > [!IMPORTANT]
 > Quando você implanta um aplicativo com uma ação de implantação de **Instalação requerida** e, posteriormente, altera a ação de implantação para **Instalação disponível**, atualizações do aplicativo não são instaladas automaticamente em dispositivos que instalaram o aplicativo antes da alteração de implantação ter sido feita. Para corrigir esse problema, você pode fazer o seguinte:
 > 
-> -   O usuário do dispositivo deve acessar o portal da empresa, selecionar o aplicativo instalado e clicar em **Instalar**.
+> -   O usuário do dispositivo deve ir ao portal da empresa, selecionar o aplicativo instalado e clicar em **Instalar**.
 > -   Altere a ação de implantação para **Desinstalar**e, após o aplicativo ser desinstalado, reimplante o aplicativo com uma ação de implantação de **Instalação disponível**.
 
 ### Para atualizar um aplicativo
 
-1.  Em [Console do Administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos**.
+1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos**.
 
-2.  Na lista **Aplicativos**, selecione o aplicativo que você deseja atualizar e clique em **Editar**.
+2.  Na lista **Aplicativos** , selecione o aplicativo que você deseja atualizar e clique em **Editar**.
 
 3.  No assistente **Editar Software** , forneça quaisquer detalhes novos para o pacote do aplicativo.
 
@@ -53,6 +53,6 @@ Da próxima vez que os dispositivos verificarem os aplicativos disponíveis, o a
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

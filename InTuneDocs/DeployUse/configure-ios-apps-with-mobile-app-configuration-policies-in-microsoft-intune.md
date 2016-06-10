@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune | Microsoft Intune
+title: Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,8 +42,7 @@ Políticas de configuração de aplicativo móvel podem ajudar a eliminar esses 
 
 Você não implanta essas políticas diretamente para usuários e dispositivos. Em vez disso, você associar a política um aplicativo e implanta o aplicativo. As configurações de política serão usadas sempre que o aplicativo verificá-las (normalmente, na primeira vez que é executado).
 
-> [!TIP]
-> Esse tipo de política está atualmente disponível somente a dispositivos que executam iOS 7.1 e mais recente e tem suporte para os seguintes tipos de instalação do aplicativo:
+> [!TIP] Esse tipo de política está atualmente disponível somente em dispositivos que executam iOS 7.1 e mais recente e tem suporte para os seguintes tipos de instalação do aplicativo:
 > 
 > -   **Aplicativo iOS gerenciados da loja de aplicativos**
 > -   **Pacote do aplicativo do iOS**
@@ -52,9 +51,9 @@ Você não implanta essas políticas diretamente para usuários e dispositivos. 
 
 ## Configurar uma política de configuração do aplicativo móvel
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Visão Geral** &gt; **Adicionar Política**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Visão geral** &gt; **Adicionar Política**.
 
-2.  Na lista de políticas, expanda **iOS**, clique em **Configuração do Aplicativo Móvel** e, em seguida, clique em **Criar Política**.
+2.  Na lista de políticas, expanda **iOS**, clique em **Configuração do Aplicativo Móvel**e, em seguida, clique em **Criar Política**.
 
     > [!TIP]
     > Você só pode definir configurações personalizadas para esse tipo de política. Configurações recomendadas não estão disponíveis.
@@ -63,8 +62,7 @@ Você não implanta essas políticas diretamente para usuários e dispositivos. 
 
 4.  Na seção **Política de Configuração de Aplicativo Móvel** da página, digite ou cole uma lista de propriedades XML que contenham as definições de configuração do aplicativo que você quer na caixa.
 
-    > [!TIP]
-    > Para obter mais informações sobre listas de propriedades XML, consulte [Compreender as listas de propriedades XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) na biblioteca do desenvolvedor do iOS.
+    > [!TIP] Para obter mais informações sobre listas de propriedades XML, consulte [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Compreender as Listas de Propriedades XML) na biblioteca do Desenvolvedor iOS.
     > 
     > O formato da lista de propriedades XML vai variar dependendo do aplicativo que você está configurando. Entre em contato com o fornecedor do aplicativo para obter detalhes sobre o formato exato a ser usado.
     > 
@@ -72,7 +70,7 @@ Você não implanta essas políticas diretamente para usuários e dispositivos. 
     > 
     > &lt;integer&gt;
     > &lt;real&gt;
-    > &lt;cadeia de caracteres&gt;
+    > &lt;string&gt;
     > &lt;array&gt;
     > &lt;dict&gt;
     > &lt;true /&gt; ou &lt;false /&gt;
@@ -81,15 +79,7 @@ Você não implanta essas políticas diretamente para usuários e dispositivos. 
     >
         > Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propriedades:
     >    
-    > \{\{userprincipalname\}\} - (Exemplo: **John@contoso.com**)
-    > \{\{mail\}\} - (Exemplo: **John@contoso.com**)
-    > \{\{partialupn\}\} - (Exemplo: **John**)
-    > \{\{accountid\}\} - (Exemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} - (Exemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} - (Exemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} - (Exemplo: **John Doe**)
-    > \{\{serialnumber\}\} - (Exemplo: **F4KN99ZUG5V2**) para dispositivos iOS
-    > \{\{serialnumberlast4digits\}\} - (Exemplo: **G5V2**) para dispositivos iOS
+    > \{\{userprincipalname\}\} - (exemplo: **John@contoso.com**) \{\{mail\}\} - (exemplo: **John@contoso.com**) \{\{partialupn\}\} - (exemplo: **John**) \{\{accountid\}\} - (exemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (exemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (exemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (exemplo: **John Doe**) \{\{serialnumber\}\} - (exemplo: **F4KN99ZUG5V2**) para dispositivos iOS \{\{serialnumberlast4digits\}\} - (exemplo: **G5V2**) para dispositivos iOS
 >
 > Os caracteres \{\{ e \}\} são usados por tipos de token apenas e não devem ser usados para outras finalidades.
 
@@ -114,8 +104,7 @@ Em seguida, continue a implantar e monitorar a implantação de aplicativo como 
 
 Quando o aplicativo implantado é executado em um dispositivo, ele é executado com as configurações definidas na política de configuração do aplicativo móvel.
 
-> [!TIP]
-> Se uma ou mais políticas de configuração de aplicativo móvel estiverem em conflito, nenhuma política será aplicada e o conflito será relatado no **Painel** do console de administração do Intune.
+> [!TIP] Se uma ou mais políticas de configuração de aplicativo móvel estiverem em conflito, nenhuma política será aplicada e o conflito será relatado no **Painel** do console de administração do Intune.
 
 ## Exemplo de formato de arquivo XML de configuração de aplicativo móvel
 
@@ -150,6 +139,6 @@ Quando você cria um arquivo de configuração de aplicativo móvel, você pode 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

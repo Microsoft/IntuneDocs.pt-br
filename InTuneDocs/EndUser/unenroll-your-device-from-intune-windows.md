@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Cancelar o registro do dispositivo do Intune
 
-Se você se registrou no Intune, mas não deseja mais usar seu dispositivo Windows para o trabalho ou escola e não precisa mais acessar o email corporativo ou de estudante, os aplicativos ou outros recursos, você precisará cancelar o registro de seu dispositivo.   Depois que você cancelar o registro do dispositivo do Intune, você não poderá acessar esses recursos. Para obter mais informações sobre o que acontece quando você cancela o registro do seu dispositivo, confira [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) (O que acontece quando você cancela o registro do seu dispositivo do Intune?).
+Se você se registrou no Intune, mas não deseja mais usar seu dispositivo Windows para o trabalho ou escola e não precisa mais acessar o email corporativo ou de estudante, os aplicativos ou outros recursos, você precisará cancelar o registro de seu dispositivo. Depois que você cancelar o registro do dispositivo do Intune, você não poderá acessar esses recursos. Para obter mais informações sobre o que acontece quando você cancela o registro do seu dispositivo, confira [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) (O que acontece quando você cancela o registro do seu dispositivo do Intune?).
 
-Para cancelar o registro do seu dispositivo, siga as etapas que correspondem ao dispositivo que você está usando:
+Para cancelar o registro do seu dispositivo, use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que está usando:
 
 -   [Cancelar o registro do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
 -   [Cancelar o registro de seu computador Windows 8.1](#unenroll-your-windows-8-1-computer)
@@ -48,7 +48,7 @@ Para cancelar o registro do seu dispositivo, siga as etapas que correspondem ao 
 
 ## Cancelar o registro de seu computador Windows 8.1
 
-1.  Acesse **Configurações do computador** &gt; **Rede** &gt; **Local de trabalho**.
+1.  Acesse **Configurações de Computador** &gt; **Rede** &gt; **Local de Trabalho**.
 
 2.  Em **Ingresso no Local de Trabalho**, toque em **Sair**.
 
@@ -58,17 +58,17 @@ Para cancelar o registro do seu dispositivo, siga as etapas que correspondem ao 
 
 ## Cancelar o registro de seu dispositivo Windows 8.1
 
-1.  Acesse **Configurações** &gt; **Local de trabalho**.
+1.  Toque em **Configurações** &gt; **Local de trabalho**.
 
 2.  Toque na conta de local de trabalho que deseja cancelar o registro.
 
 3.  Toque em **Excluir** na parte inferior da página.
 
-4.  Na caixa de diálogo **Excluir conta**, toque em **Excluir**.
+4.  Na caixa de diálogo **Excluir Conta**, toque em **Excluir**.
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

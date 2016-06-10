@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Registrar dispositivos no Microsoft Intune | Microsoft Intune
+title: Registrar dispositivos | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Registrar dispositivos para gerenciamento no Intune
 O MDM (Gerenciamento de Dispositivo Móvel) do Microsoft Intune usa o registro para trazer dispositivos para o gerenciamento e permitir acesso aos recursos. A maneira como você registra dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. Cenários BYOD (Traga seu próprio dispositivo) e COD (Dispositivo de Propriedade da Empresa) exigem um processo de registro. Organizações que usam o Exchange ActiveSync, hospedado na nuvem ou local, podem habilitar gerenciamento mais leve sem requisitos de registro. Computadores Windows também podem ser gerenciados usando o software cliente Intune.
+
+###  Plataformas de dispositivos com suporte
+
+O Intune pode gerenciar as seguintes plataformas de dispositivo:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Habilitar registro de dispositivo  
  O registro permite que os usuários acessem os recursos da empresa em seus dispositivos pessoais e permite que o administrador verifique se esses dispositivos estão em conformidade com as políticas que protegem os recursos da empresa. Essa é a melhor maneira de habilitar cenários "traga seu próprio dispositivo" com o Intune. O administrador deve habilitar o registro no console do Intune, que pode exigir a criação de uma relação de confiança com o dispositivo e atribuição de licenças aos usuários. O dispositivo é então registrado, geralmente quando os usuários inserem suas credenciais corporativas ou de estudante. Em seguida, o dispositivo recebe a política do Intune e obtém acesso aos recursos.
@@ -58,6 +64,6 @@ Computadores gerenciados com o software cliente Intune não podem ser apagados n
 [Gerenciar PCs Windows com o Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 
