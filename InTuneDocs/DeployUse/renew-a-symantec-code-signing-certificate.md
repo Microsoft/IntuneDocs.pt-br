@@ -59,7 +59,7 @@ Fornecer um arquivo .xap do SSP assinado é a única maneira de fornecer o certi
 
 2.  Abra o [Console de Administração do Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) e vá para **Admin** &gt; **Gerenciamento de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar o Aplicativo Assinado**.
 
-3.  Carregue o Portal da Empresa assinado. You’ll need the newly signed SSP.xap and the new .PFX file you received from Symantec or the Application enrollment token that wcomo created with this new .PFX file.
+3.  Carregue o Portal da Empresa assinado. Você precisará de SSP.xap recentemente assinado e o novo arquivo .PFX que recebeu da Symantec ou o token de registro de aplicativo que foi criado com esse novo arquivo .PFX.
 
 4.  Quando o upload for concluído, remova a versão antiga do Portal da Empresa no espaço de trabalho **Software**  .
 
