@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,9 @@ O Apple AppStore o alertará quando uma nova versão do Portal da Empresa estive
 
     > [!NOTE] Se não for possível acessar a Windows Store, entre em contato com seu administrador de TI.
 
+
+Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 Para obter informações sobre outras tarefas que você pode fazer com seu dispositivo, use o link que corresponde ao seu tipo de dispositivo:
 
 - [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)</br>
@@ -54,6 +57,6 @@ Para obter informações sobre outras tarefas que você pode fazer com seu dispo
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

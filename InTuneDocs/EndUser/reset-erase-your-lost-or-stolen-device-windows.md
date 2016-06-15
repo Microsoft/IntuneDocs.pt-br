@@ -18,7 +18,7 @@ ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,7 +32,7 @@ Se seu dispositivo Windows registrado for perdido ou roubado, você poderá rede
 
 
 > [!WARNING]
-> Redefinir um dispositivo para os padrões de fábrica remove suas informações pessoais e de trabalho. Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal? (O que acontece se você redefinir seu dispositivo usando o Portal da Empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md).
+> Redefinir um dispositivo para os padrões de fábrica remove suas informações pessoais e de trabalho. Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) (O que acontecerá se você redefinir seu dispositivo usando o Portal da Empresa?).
 
 1.  No navegador, abra o Portal da empresa e entrar na sua conta de trabalho.
 
@@ -41,11 +41,11 @@ Se seu dispositivo Windows registrado for perdido ou roubado, você poderá rede
 3.  Toque em **Redefinir** &gt; **Redefinir**.
 
 > [!NOTE]
-> Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você.
+> Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Como criptografar um dispositivo Windows
-Para reconectar-se ao trabalho, você precisará criptografar seu dispositivo seguindo estas instruções:
 
-## Opção 1 – Adicionar uma conta da Microsoft
+Para proteger seus dados corporativos ou de estudante, o administrador de TI pode exigir que você criptografe o dispositivo Windows. Se você tiver um Windows Phone que você registrou, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
 
-1.  Procure e abra o aplicativo **Configurações do computador** .
+Se você tiver um dispositivo de desktop, siga as instruções abaixo para criptografá-lo. 
 
-2.  Clique em **Contas** &gt; **Sua conta** e depois em **Conectar-se a uma conta da Microsoft**.
+1.  Pesquise e inicie o aplicativo **Gerenciar o BitLocker**.
 
-3.  Siga as instruções mostradas.
+2.  Clique em **Ativar o BitLocker** e siga as instruções mostradas para criptografar cada uma das unidades.
 
-4.  Verifique se o dispositivo está registrado no Intune seguindo as instruções em [Registrar o dispositivo para usá-lo no trabalho](http://go.microsoft.com/fwlink/?LinkId=519071).
-
-## Opção 2 – Habilitar o BitLocker:
-
-1.  Procure e abra o aplicativo **Gerenciar o BitLocker** .
-
-2.  Clique em **Ativar o BitLocker**e siga as instruções mostradas para criptografar cada uma das unidades.
-
-3.  Verifique se o dispositivo está registrado no Intune seguindo as instruções em [Registrar o dispositivo para usá-lo no trabalho](http://go.microsoft.com/fwlink/?LinkId=519071).
+Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

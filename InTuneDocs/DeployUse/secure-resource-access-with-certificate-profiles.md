@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Habilitar o acesso aos recursos da empresa usando perfis de certificado com o Microsoft Intune | Microsoft Intune
+title: Habilitar o acesso aos recursos da empresa usando perfis de certificado |Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -61,6 +61,6 @@ Você precisa criar um perfil separado para cada plataforma. Ao criar o perfil, 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

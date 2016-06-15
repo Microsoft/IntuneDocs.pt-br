@@ -100,10 +100,14 @@ Para ver como redefinir o dispositivo, escolha um dos seguintes links:
 ## Não vejo todos os meus dispositivos no Portal da Empresa
 Para ver um dispositivo, ele deve ser adicionado ao Portal da Empresa. Navegue até o Portal conforme orientado pelo seu administrador e siga as etapas para seu dispositivo. Além disso, você não verá dispositivos que são de propriedade e gerenciados por sua empresa.
 
+## Se você tiver dúvidas, entre em contato com o administrador de TI
+Se você precisar de Ajuda, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 

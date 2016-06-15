@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Como reconectar um dispositivo Android comprometido
-Seu administrador de TI detectou que você está usando um dispositivo de raiz. Essa configuração pode comprometer a segurança e pode ser uma ameaça para os recursos da empresa.
+Seu administrador de TI detectou que você está usando um dispositivo de raiz. "Raiz" significa que o dispositivo foi alterado para permitir o acesso ao sistema operacional, o que pode comprometer a segurança e ser uma ameaça para os recursos da empresa. Quando isso acontece, o dispositivo não poderá mais acessar os recursos da empresa.
 
-Entre em contato com seu administrador de TI para ajudá-lo a reconectar seu dispositivo.
+Entre em contato com seu administrador de TI para ajudar a reconectar seu dispositivo. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

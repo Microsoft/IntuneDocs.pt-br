@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Portal da Empresa do Microsoft Intune
 
-Antes de configurar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], examine este tópico e outros requisitos listados em [O que saber antes de começar a usar Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Antes de configurar o Intune, examine este tópico e outros requisitos listados em [O que saber antes de começar a usar Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 O Portal da Empresa do Intune é uma ferramenta que fornece aos usuários acesso a aplicativos e dados da empresa. O Portal da Empresa está disponível em duas formas:
 
@@ -58,6 +58,6 @@ Antes que um usuário possa acessar o Portal da Empresa, a conta do usuário dev
 [O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

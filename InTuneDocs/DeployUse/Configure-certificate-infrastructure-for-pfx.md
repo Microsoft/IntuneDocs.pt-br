@@ -16,7 +16,7 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -105,7 +105,7 @@ Nesta tarefa, você publicará o modelo de certificado
 
 5.  No computador da AC, certifique-se de que o computador que hospeda o Conector de Certificado do Intune tenha a permissão de registro, para que ele possa acessar o modelo usado na criação do perfil .PFX. Defina essa permissão na guia **Segurança** das propriedades do computador da Autoridade de Certificação.
 
-### Tarefa 4 - Habilitar, instalar e configurar o Conector de Certificado do Intune
+### Tarefa 2 - Habilitar, instalar e configurar o Conector de Certificado do Intune
 Nesta tarefa, você vai:
 
 Baixar, instalar e configurar o Conector de Certificado
@@ -158,6 +158,6 @@ Para validar que o serviço está em execução, abra um navegador e digite a se
 Agora você está pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurar perfis de certificado).
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

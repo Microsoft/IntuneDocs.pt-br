@@ -18,7 +18,7 @@ ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
 ROBOTS: noindex
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Você encontra erros ao tentar registrar seu dispositivo iOS no Intune
 
-A tabela a seguir lista os erros que você pode encontrar durante o registro do seu dispositivo iOS no Intune. Compartilhe este link com o administrador de TI. 
+A tabela a seguir lista os erros que você pode encontrar durante o registro do seu dispositivo iOS no Intune. Compartilhe este link com o administrador de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 |Mensagem de erro|Problema|O que dizer ao administrador de TI|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,6 +42,6 @@ A tabela a seguir lista os erros que você pode encontrar durante o registro do 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

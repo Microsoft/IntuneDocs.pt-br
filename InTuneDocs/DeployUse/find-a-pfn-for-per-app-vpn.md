@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Localizar um PFN (nome de família de pacote) para VPN por aplicativo | Microsoft Intune|
+title: Localizar um PFN (nome de família de pacote) para VPN por aplicativo | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -18,7 +18,7 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: tycast
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -91,6 +91,6 @@ No Edge, as informações que você deseja são exibidas; no Internet Explorer, 
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

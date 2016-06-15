@@ -40,13 +40,13 @@ Este artigo responde às perguntas mais frequentes sobre o Intune. Se você não
 
 -   **Existe uma funcionalidade de assistência remota no Intune para dispositivos móveis?**
 
-    Não, não existe. Aplicativos de terceiros, como [Bomgar](http://www.bomgar.com/) e [TeamViewer](https://www.teamviewer.com/) podem ser úteis.
+    Não, não existe. Aplicativos de terceiros, como [Bomgar](http://www.bomgar.com/) <!---and [TeamViewer](https://www.teamviewer.com/)---> podem ser úteis.
 
 ## Contas
 
 -   **Se eu começar a avaliar o Intune e criar um novo locatário para a avaliação, posso adicionar Office 365 à avaliação usando o mesmo locatário?**
 
-    Sim. Basta entrar usando o administrador global da assinatura/locatário do Intune existente, como *globaladmin@&lt;company&gt;.onmicrosoft.com*.
+    Sim. Basta entrar usando o administrador global da assinatura/locatário do Intune existente, como *globaladmin@&lt;empresa&gt;.onmicrosoft.com*.
 
 -   **Se eu atribuir autoridade MDM durante uma assinatura de avaliação, isso dificulta alternar para o serviço de outra empresa se mudar de ideia sobre o Intune?**
 
@@ -70,7 +70,7 @@ Este artigo responde às perguntas mais frequentes sobre o Intune. Se você não
 
 -   **Como posso coletar logs de registro se um usuário tiver um problema de registro?**
 
-    Siga [estas instruções](http://www.microsoft.com/en-us/download/46391).
+    Siga [essas instruções](http://www.microsoft.com/en-us/download/46391).
 
 ## Gerenciamento de dispositivos móveis
 
@@ -104,10 +104,7 @@ Este artigo responde às perguntas mais frequentes sobre o Intune. Se você não
 
         Você pode mudar a autoridade MDM em algumas situações. Para isso, entre em contato com suporte, conforme descrito em [Como obter suporte para o Microsoft Intune](/intune/Troubleshoot/How-to-get-support-for-Microsoft-Intune.md). A tabela a seguir descreve as alterações que são possíveis. Alterações na autoridade MDM exigem um novo registro de dispositivos.
 
-        ||**Para:** Intune!**Para:** O365|**Para:** Configuration Manager com Intune|
-        |**De:** Intune| |Yes&#42;|Sim|
-        |**De:** O365||Yes&#42;||Sim|
-        |**De:** Configuration Manager com Intune|Sim|Sim| |
+        ||**To:** Intune!**To:** O365|**To:** Configuration Manager com o Intune| |**From:** Intune| |Yes&#42;|Yes| |**From:** O365||Yes&#42;||Yes| |**From:** Configuration Manager com o Intune|Yes|Yes| |
         
         &#42;As autoridades MDM do O365 e do Intune podem coexistir. Você não precisará registrar novamente os dispositivos móveis.
 
@@ -143,8 +140,7 @@ Este artigo responde às perguntas mais frequentes sobre o Intune. Se você não
     **Como o AET é criado para usuários do Intune?**
   Quando administradores carregam o arquivo .pfx de seu certificado da Symantec, o Intune cria o AET automaticamente e o implanta nos dispositivos Windows Phone registrados. Administradores do Intune não precisam usar a ferramenta de geração de AET no SDK do Windows Phone.
 
-      > [!IMPORTANT]
-        > O Intune não dá suporte à criação manual do AET e à sua implantação fora de banda.
+      > [!IMPORTANT] O Intune não dá suporte à criação manual do AET e à sua implantação fora de banda.
 
     **Quais alterações foram feitas para reduzir o requisito de um certificado da Symantec?**
        Na versão de novembro de 2014, o Intune fez alterações para permitir cenários em que as empresas não têm um certificado da Symantec.
@@ -283,7 +279,7 @@ Este artigo responde às perguntas mais frequentes sobre o Intune. Se você não
 
     Sim. Você pode ler sobre isso em [Implantar aplicativos](/Intune/Deploy-Use/deploy-apps.md), na seção *Requisitos de armazenamento em nuvem*.
 
-## Segurança
+## Segurança 
 
 -   **O BitLocker pode ser imposto pelo Intune?**
 
@@ -315,6 +311,6 @@ Este artigo responde às perguntas mais frequentes sobre o Intune. Se você não
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

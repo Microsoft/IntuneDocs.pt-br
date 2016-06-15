@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,10 +31,10 @@ O dispositivo foi encontrado incompatível com uma ou mais das políticas da emp
 
 Para resolver esse problema, aguarde alguns minutos e, em seguida, toque em **Verificar conformidade**.
 
-Se o problema persistir, contate o administrador de TI.
+Se o problema persistir, contate o administrador de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,11 +34,11 @@ Se receber erros enquanto estiver usando o dispositivo iOS ao usar o aplicativo 
 
 -   Na tela **Sobre** do aplicativo de Portal da Empresa: toque em **Enviar Relatório de Diagnóstico**.
 
--   Enquanto estiver no aplicativo da Portal da Empresa: agite o dispositivo e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e certifique-se de que a opção **Gesto de Agitação** esteja ativada.
+-   Enquanto estiver no aplicativo da Portal da Empresa: agite o dispositivo e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e garanta que a opção **Gesto de Agitação** esteja ativada.
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

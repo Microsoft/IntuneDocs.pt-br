@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,11 +69,11 @@ Além disso, os relatórios dão suporte às seguintes ações:
 |**Carregamento**|Na página **Criar novo relatório** , clique em **Carregar** para recuperar quaisquer configurações salvas anteriormente ou parâmetros de relatório.|
 |**Excluir**|No espaço de trabalho **Relatórios** , selecione o tipo de relatório desejado, clique em **Carregar**e, em seguida, na lista de relatórios, clique no ícone excluir (x) próximo ao relatório.|
 
-## Consulte também
+### Consulte também
 [Monitoramento e relatórios com o Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Você pode usar o site do Portal da Empresa para:
 
 -   [Sincronizar o dispositivo manualmente para acelerar instalações de aplicativos lentas](sync-your-device-manually-cpwebsite.md)
 
--   Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas pelo administrador de TI
+-   Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas pelo administrador de TI. Se você não conseguir encontrá-lo, veja se ele está listado no [site de Portal da Empresa](http://portal.manage.microsoft.com).
 
 -   Ver detalhes sobre seu dispositivo, incluindo se ele é compatível com as políticas da empresa ou da escola
 
@@ -55,6 +55,6 @@ Você pode fazer no **site do Portal da Empresa** a maioria das mesmas tarefas q
 - [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

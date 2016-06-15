@@ -67,7 +67,7 @@ A tabela a seguir mostra os métodos de registro para métodos de registro do di
 **Métodos de registro para dispositivos de propriedade corporativa**
 
 ### BYOD
-“Traga seu próprio dispositivo”. Os usuários instalam o aplicativo de Portal da Empresa e registram o dispositivo. Registrar um dispositivo com o Portal da Empresa unirá o dispositivo ao local de trabalho. Registrar os dispositivos iOS com o Portal da Empresa requer uma ID da Apple. O BYOD não requer configuração adicional para dispositivos de propriedade corporativa. Consulte as etapas para [Configurar o gerenciamento de dispositivo](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md).
+“Traga seu próprio dispositivo”. Os usuários instalam o aplicativo de Portal da Empresa e registram o dispositivo. Registrar um dispositivo com o Portal da Empresa unirá o dispositivo ao local de trabalho. Registrar os dispositivos iOS com o Portal da Empresa requer uma ID da Apple. O BYOD não requer configuração adicional para dispositivos de propriedade corporativa. Consulte as etapas para [Configurar o gerenciamento de dispositivo](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md). ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
 
 ### DEM
 Gerenciador de registro do dispositivo. O administrador cria contas DEM. Os gerentes podem então instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
@@ -105,7 +105,7 @@ Especifica se o método de registro dá suporte a "Afinidade de Usuário", que s
   - Acesso condicional para dados de email e da empresa
   - Aplicativo do Portal da Empresa
 
-([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
 
 ### Bloqueio
 Especifica se o dispositivo pode ser bloqueado para impedir que o usuário remova a política do Intune, removendo efetivamente o dispositivo do gerenciamento. Para dispositivos iOS, bloquear o dispositivo requer que ele esteja no modo Supervisionado.

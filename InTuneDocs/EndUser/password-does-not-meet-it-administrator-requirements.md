@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisgre
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 
 # Senha não atende aos requisitos de administrador de TI
 
-Sua senha não atende um ou mais requisitos que seu administrador de TI configurou para seu dispositivo. Dependendo das políticas que seu administrador de TI criou, você pode ter um problema ou uma combinação desses problemas:
+A senha que você usa para acessar os recursos da empresa ou escola não atende a um ou mais requisitos que o administrador de TI configurou para seu dispositivo. Dependendo das políticas que seu administrador de TI criou, você pode ter um problema ou uma combinação desses problemas:
 
 - A senha não contém caracteres complexos
 - A senha é muito simples e é não segura o suficiente
@@ -38,14 +38,14 @@ Sua senha não atende um ou mais requisitos que seu administrador de TI configur
 - A senha foi usada muito recentemente
 - A senha não é complexa o suficiente para atender aos requisitos
 
-Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI.
-
 Para obter informações sobre como configurar seu PIN ou senha ou sobre outras tarefas que você pode fazer com seu dispositivo, use o link que corresponde ao seu tipo de dispositivo:
 
-- [Definir o PIN ou senha](set-your-pin-or-password-android.md)</br>
-- [Definir ou alterar sua senha](set-or-change-your-passcode-ios.md)</br>
-- - [Definir ou alterar sua senha](set-or-change-your-password-windows.md)
+- [Definir a PIN ou a senha do seu dispositivo Android](set-your-pin-or-password-android.md)
+- [Definir ou alterar a senha do seu dispositivo iOS](set-or-change-your-passcode-ios.md)
+- [Definir ou alterar a senha do seu dispositivo Windows](set-or-change-your-password-windows.md)
 
-<!--HONumber=May16_HO4-->
+Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO1-->
 
 

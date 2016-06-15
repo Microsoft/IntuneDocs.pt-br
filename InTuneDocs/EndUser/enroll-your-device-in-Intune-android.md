@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -59,7 +59,7 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca faz nem gerencia suas chamadas telefônicas**! O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permite o acesso, tudo o que faz é permitir que o dispositivo grave logs de dados no cartão SD do dispositivo, o que permite que você mova esses logs usando um cabo USB. Talvez seja necessário usar essa funcionalidade para enviar logs para o administrador de TI, se você tiver um problema ao usar o aplicativo Portal da Empresa. Saiba como [enviar registros de erros para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md).
 
-    Se você negar acesso, a mensagem será exibida novamente na próxima vez que você entrar no Portal da Empresa, mas você pode desligar as mensagens futuras tocando na caixa de seleção **Nunca Perguntar Novamente**.  Se você decidir posteriormente permitir o acesso, vá para **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; ** Permissões** &gt; **Telefone** e ative a permissão.
+    Se você negar acesso, a mensagem será exibida novamente na próxima vez que você entrar no Portal da Empresa, mas você pode desligar as mensagens futuras tocando na caixa de seleção **Nunca Perguntar Novamente**.  Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telefone** e ative a permissão.
 
     -   **Permitir que o Portal da Empresa acesse seus contatos?**
 
@@ -67,13 +67,13 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acessa seus contatos!** O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permite o acesso, ele só permite que o aplicativo Portal da Empresa acesse logs de dados para ajudar a solucionar problemas no dispositivo.
 
-    Se você negar o acesso, a mensagem será exibida novamente na próxima vez que você tocar em **Enviar Dados**, mas você poderá desligar mensagens futuras tocando na caixa de seleção **Nunca perguntar novamente**. Se você decidir posteriormente permitir o acesso, vá para **Configurações** &gt; ** Aplicativos** &gt; **Portal da Empresa** &gt; ** Permissões** &gt; **Armazenamento** e ative a permissão.
+    Se você negar o acesso, a mensagem será exibida novamente na próxima vez que você tocar em **Enviar Dados**, mas você poderá desligar mensagens futuras tocando na caixa de seleção **Nunca perguntar novamente**. Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ativar a permissão.
 
-6.  Abra o aplicativo Portal da Empresa, usando sua conta e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
+6.  Conecte-se no aplicativo Portal da Empresa, usando sua conta e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-7.  Na tela **Configuração de Acesso da Empresa**, toque em **INICIAR**.
+7.  Na tela **Configuração de Acesso da Empresa**, toque em **Iniciar**.
 
     ![Tela Configuração de acesso da empresa](./media/and-enroll-4a-comp-access-setup.png)
 
@@ -111,7 +111,7 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![Tela de registro do dispositivo](./media/and-enroll-8-device-enrolling.png)
 
-14. Quando a tela **Configuração de Acesso da Empresa** for exibida, toque em **CONTINUAR**. Se você vir uma mensagem indicando que o dispositivo está fora de conformidade, siga as instruções para corrigir o problema e, em seguida, toque em **CONTINUAR**.
+14. Quando a tela **Configuração de Acesso da Empresa** for exibida, toque em **CONTINUAR**. Se você ver uma mensagem indicando que o dispositivo está fora de conformidade, siga as instruções para corrigir o problema e, em seguida, toque em **CONTINUAR**.
 
     ![Tela Configuração de acesso da empresa](./media/and-enroll-9-comp-access-setup.png)  
 
@@ -119,13 +119,14 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![Tela Configuração de acesso da empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Antes de instalar os aplicativos da empresa, vá para **Configurações** &gt; **Segurança**, e ative **Fontes desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem "Instalação bloqueada". Por motivos de segurança, seu telefone está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes Desconhecidas**.
+Antes de instalar os aplicativos da empresa, acesse **Configurações** &gt; **Segurança**, e ative **Fontes Desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem "Instalação bloqueada". Por motivos de segurança, seu telefone está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes Desconhecidas**.
 
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

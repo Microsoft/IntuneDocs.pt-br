@@ -18,7 +18,7 @@ ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -124,6 +124,8 @@ Quando você adicionar um computador:
 -   O administrador de TI pode instalar aplicativos e atualizações no seu computador.
 
 -   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. Se você inserir a senha incorreta por muitas vezes seguidas, o seu acesso ao computador poderá ser bloqueado ou todos os dados do disco rígido do seu computador poderão ser excluídos.
+
+Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)

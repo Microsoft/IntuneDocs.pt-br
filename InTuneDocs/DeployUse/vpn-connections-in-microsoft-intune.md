@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,19 +48,20 @@ O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tip
 
 
 
-Tipo de conexão |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop e Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Tipo de conexão |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |     Não    |Não  |Não    | Sim, (OMA-URI, somente celulares)|     
 Pulse Secure|Sim  |Sim |Sim   |Não  |Sim  |Sim| Sim|        
 F5 Edge Client|Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
 Dell SonicWALL Mobile Connect|Sim |Sim |Sim |Não  |Sim |Sim |Sim|         
 CheckPoint Mobile VPN|Sim |Sim |Sim |Sim |Sim|Sim|Sim|
-Microsoft SSL (SSTP)|Não |Não |Não |Não |Não|Não|Não|
-Microsoft Automatic|Não |Não |Não |Não |Não|Não|Sim|
-IKEv2|Não |Não |Não |Não |Não|Não|Sim|
-PPTP|Não |Não |Não |Não |Não|Não|Sim|
-L2TP|Não |Não |Não |Não |Não|Não|Sim|
+Microsoft SSL (SSTP)|Não |Não |Não |Não |Não|Não|VPNv1 OMA-URI*|
+Microsoft Automatic|Não |Não |Não |Não |Não|Sim (OMA-URI)|Sim|
+IKEv2|Perfil personalizado do iOS|Não |Não |Não |Não|Sim (OMA-URI)|Sim|
+PPTP|Perfil personalizado do iOS|Não |Não |Não |Não|Não|Sim|
+L2TP|Perfil personalizado do iOS|Não |Não |Não |Não|Sim (OMA-URI)|Sim|
 
+\* Sem configurações adicionais que estariam disponíveis para Windows 10.
 
 > [!IMPORTANT] Antes de poder usar perfis VPN implantados em um dispositivo, você deve instalar o aplicativo VPN aplicável para o perfil. Você pode usar as informações no tópico [Deploy apps with Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implantar aplicativos com o Microsoft Intune) para ajudá-lo a implantar o aplicativo desejado usando o Intune.  
 
@@ -164,6 +165,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 [VPN por aplicativo para Pulse Secure do Android](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha
 
 3.  Verifique se o dispositivo está registrado no Intune seguindo as instruções em [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Registrar o dispositivo para usá-lo no trabalho).
 
+Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

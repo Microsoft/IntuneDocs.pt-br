@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -297,8 +297,8 @@ Todos os dispositivos deverão estar registrados no Intune se você quiser usar 
 |**AllowUserUIAccess**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/AllowUserUIAccess<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** – não permitido<br>**1** – permitido (padrão)|
 |**ScanParameter**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ScanParameter<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**1** – Verificação rápida (padrão)<br>**2** - varredura completa|
 |**ScheduleScanDay**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleScanDay<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** - Todos os dias (padrão)<br>**1** - segunda-feira<br>**2** - terça-feira<br>**3** - quarta-feira<br>**4** - quinta-feira<br>**5** - sexta-feira<br>**6** - sábado<br>**7** - domingo<br>**8** – Nenhuma varredura agendada|
-|**ScheduleScanTime**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** - 12:00 AM<br>**60** – 1:00 AM<br>**120** – 2h00 (default)<br>**180** – 3:00 AM<br>**240** – 4:00 AM<br>**300** – 5:00 AM<br>**360** – 6:00 AM<br>**420** – 7:00 AM<br>**480** – 8:00 AM<br>**540** – 9:00 AM<br>**600** – 10:00 AM<br>**660** – 11:00 AM<br>**720** – 12:00 PM<br>**780** – 1:00 PM<br>**840** – 2:00 PM<br>**900** – 3:00 PM<br>**960** – 4:00 PM<br>**1020** – 5:00 PM<br>**1080** – 6:00 PM<br>**1140** – 7:00 PM<br>**1200** – 8:00 PM<br>**1260** – 9:00 PM<br>**1320** – 10:00 PM<br>**1381** – Janela de manutenção|
-|**ScheduleQuickScanTime**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime<br>**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** - 12:00 AM<br>**60** – 1:00 AM<br>**120** – 2h00 (default)<br>**180** – 3:00 AM<br>**240** – 4:00 AM<br>**300** – 5:00 AM<br>**360** – 6:00 AM<br>**420** – 7:00 AM<br>**480** – 8:00 AM<br>**540** – 9:00 AM<br>**600** – 10:00 AM<br>**660** – 11:00 AM<br>**720** – 12:00 PM<br>**780** – 1:00 PM<br>**840** – 2:00 PM<br>**900** – 3:00 PM<br>**960** – 4:00 PM<br>**1020** – 5:00 PM<br>**1080** – 6:00 PM<br>**1140** – 7:00 PM<br>**1200** – 8:00 PM<br>**1260** – 9:00 PM<br>**1320** – 10:00 PM<br>**1380** – 11:00 PM|
+|**ScheduleScanTime**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** - 12:00 AM<br>**60** – 1:00 AM<br>**120** – 2h00 (padrão)<br>**180** – 3:00 AM<br>**240** – 4:00 AM<br>**300** – 5:00 AM<br>**360** – 6:00 AM<br>**420** – 7:00 AM<br>**480** – 8:00 AM<br>**540** – 9:00 AM<br>**600** – 10:00 AM<br>**660** – 11:00 AM<br>**720** – 12:00 PM<br>**780** – 1:00 PM<br>**840** – 2:00 PM<br>**900** – 3:00 PM<br>**960** – 4:00 PM<br>**1020** – 5:00 PM<br>**1080** – 6:00 PM<br>**1140** – 7:00 PM<br>**1200** – 8:00 PM<br>**1260** – 9:00 PM<br>**1320** – 10:00 PM<br>**1381** – Janela de manutenção|
+|**ScheduleQuickScanTime**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime<br>**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** - 12:00 AM<br>**60** – 1:00 AM<br>**120** – 2h00 (padrão)<br>**180** – 3:00 AM<br>**240** – 4:00 AM<br>**300** – 5:00 AM<br>**360** – 6:00 AM<br>**420** – 7:00 AM<br>**480** – 8:00 AM<br>**540** – 9:00 AM<br>**600** – 10:00 AM<br>**660** – 11:00 AM<br>**720** – 12:00 PM<br>**780** – 1:00 PM<br>**840** – 2:00 PM<br>**900** – 3:00 PM<br>**960** – 4:00 PM<br>**1020** – 5:00 PM<br>**1080** – 6:00 PM<br>**1140** – 7:00 PM<br>**1200** – 8:00 PM<br>**1260** – 9:00 PM<br>**1320** – 10:00 PM<br>**1380** – 11:00 PM|
 |**AVGCPULoadFactor**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/AVGCPULoadFactor<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:0** - **100** (padrão: **50**)|
 |**AllowArchiveScanning**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/AllowArchiveScanning<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** – não permitido<br>**1** – permitido (padrão)|
 |**AllowEmailScanning**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning<br /><br />**Tipo de dados:** inteiro<br>**Valores permitidos:**<br>**0** – não permitido (padrão)<br>**1** – permitido|
@@ -332,6 +332,6 @@ Todos os dispositivos deverão estar registrados no Intune se você quiser usar 
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

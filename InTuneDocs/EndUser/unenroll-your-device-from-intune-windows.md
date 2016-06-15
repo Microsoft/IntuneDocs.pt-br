@@ -18,7 +18,7 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -58,7 +58,7 @@ Para cancelar o registro do seu dispositivo, use o link, mostrado na seção “
 
 ## Cancelar o registro de seu dispositivo Windows 8.1
 
-1.  Toque em **Configurações** &gt; **Local de trabalho**.
+1.  Vá para **Configurações** &gt; **Local de trabalho**.
 
 2.  Toque na conta de local de trabalho que deseja cancelar o registro.
 
@@ -66,9 +66,11 @@ Para cancelar o registro do seu dispositivo, use o link, mostrado na seção “
 
 4.  Na caixa de diálogo **Excluir Conta**, toque em **Excluir**.
 
+Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

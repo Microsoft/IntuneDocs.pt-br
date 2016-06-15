@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Como reconectar um dispositivo iOS comprometido
-Seu administrador de TI detectou que você está usando um dispositivo com jailbreak. Essa configuração pode comprometer a segurança e pode ser uma ameaça para os recursos da empresa.
+Seu administrador de TI detectou que você está usando um dispositivo com jailbreak. "Desbloqueados" significa que as restrições de software, impostas pelo iOS, foram removidas, o que pode comprometer a segurança e pode ser uma ameaça para os recursos da empresa. Quando isso acontece, o dispositivo não poderá mais acessar os recursos da empresa.
 
-Entre em contato com seu administrador de TI para ajudá-lo a reconectar seu dispositivo.
+Entre em contato com seu administrador de TI para ajudar a reconectar seu dispositivo. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

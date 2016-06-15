@@ -18,7 +18,7 @@ ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,9 +36,11 @@ Quando você usar o aplicativo Portal da Empresa ou o site Portal da Empresa par
 |Seu dispositivo pode acessar somente o email da empresa|**Windows Phone 8.1 e Windows Phone 8**<br />Seu dispositivo não aparecerá mais no Portal da Empresa e sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.<br /><br />**Windows RT**<br />Seu dispositivo não aparecerá mais no Portal da Empresa e sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.<br /><br />**Computadores com Windows 7 ou Windows Vista**<br />Você não poderá redefinir um computador que esteja executando o Windows 7 ou anterior e seja usado somente para email.<br /><br />**Computadores com Windows 8.1 e Windows 8**<br />Seu dispositivo não aparecerá mais no Portal da Empresa e sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.|
 |PCs e laptops|**Computadores com Windows 8.1 e Windows 8**<br />Você não pode redefinir um computador que esteja executando o Windows 8 ou o Windows 8.1, a menos que ele seja usado somente para email.<br /><br />**Computadores com Windows 7 ou Windows Vista**<br />Não será possível redefinir um computador que esteja executando o Windows 7 ou anterior.|
 
+Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

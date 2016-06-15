@@ -18,7 +18,7 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,27 +40,26 @@ Todos os servidores listados acima devem atender aos requisitos de sistema forne
 #### MFA com o Intune
 Se sua organização tem uma infraestrutura de TI local que inclui um domínio do Active Directory com ADFS (Serviços de Federação do Active Directory), você pode configurar a MFA no servidor de federação e habilitar a MFA para registro no Intune. Ao configurar a MFA no Intune, você habilita que os usuários possam se autenticar uma vez e durante o registro e ser capaz de acessar recursos corporativos sem repetir o processo de MFA a cada vez.
 
->[!NOTE]
->A MFA pode ser necessária por usuário ou por grupo no servidor de ADFS.  
+>[!NOTE] A MFA pode ser necessária por usuário ou por grupo no servidor de ADFS.  
 
 #### MFA sem Intune
 Se você configurar a MFA no servidor de federação, mas não habilitar a MFA para registro no Intune, os usuários precisarão usar a MFA sempre que acessarem os recursos corporativos (e não somente no registro do dispositivo).
 
-Você também pode usar a MFA AAD (Azure Active Directory) para exigir a MFA sempre que os usuários acessarem os recursos corporativos, por usuário. A MFA do AD é um serviço de nuvem que não requer nenhuma infraestrutura de TI local. Para saber como configurar a MFA do AAD, consulte [Getting started with Azure Multi-Factor Authentication in the cloud (Introdução ao Azure Multi-Factor Authentication na nuvem).](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-cloud/).
+Você também pode usar a MFA AAD (Azure Active Directory) para exigir a MFA sempre que os usuários acessarem os recursos corporativos, por usuário. A MFA do AD é um serviço de nuvem que não requer nenhuma infraestrutura de TI local. Para saber como configurar a MFA do AAD, consulte [Getting started with Azure Multi-Factor Authentication in the cloud (Introdução ao Azure Multi-Factor Authentication na nuvem)](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-cloud/).
 
 ## Exigir MFA do ADFS durante o registro de dispositivos Windows
-Para obter informações sobre como habilitar a MFA no ADFS, consulte [Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications (Gerenciar riscos com autenticação multifator adicional para aplicativos confidenciais)](http://technet.microsoft.com/library/dn280949.aspx).
+Para obter informações sobre como habilitar a MFA no ADFS, consulte [Gerenciar riscos com autenticação multifator adicional para aplicativos confidenciais](http://technet.microsoft.com/library/dn280949.aspx).
 
 ## Configurar a MFA de registro de dispositivo no Intune
 >[!Important]  
 >Habilite a MFA em seu ambiente de locatário ou local do AD do Azure antes de exigir a MFA para o registro de dispositivos Windows no Intune. Se você não fizer isso, os usuários receberão uma mensagem de erro ao tentar registrar seus dispositivos Windows ou quando tentarem ingressar seus dispositivos no Azure AD, se o registro automático durante o Ingresso no Azure AD estiver configurado.
 
-1.  No console de administração do Intune, clique em **Administração** &gt; **Gerenciamento de Dispositivos Móveis** &gt; **Autenticação multifator**.
+1.  No console de administração do Intune, clique em **Administração** &gt; **Gerenciamento de dispositivo móvel** &gt; **Multi-factor Authentication**.
 
 2.  Clique em **Configurar Multi-factor Authentication** e em **Habilitar Multi-factor Authentication**.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

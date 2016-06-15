@@ -18,7 +18,7 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,10 +44,11 @@ Para cancelar o registro do seu dispositivo do Intune e desinstalar o aplicativo
 
     Agora você pode desinstalar o aplicativo Portal da Empresa.
 
+Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

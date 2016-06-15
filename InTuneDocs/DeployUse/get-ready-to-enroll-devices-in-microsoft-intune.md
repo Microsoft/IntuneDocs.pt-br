@@ -28,7 +28,7 @@ ms.suite: ems
 # Prepare-se registrar dispositivos no Microsoft Intune
 Para permitir que os funcionários registrem dispositivos móveis (incluindo [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e [Computadores Windows](set-up-windows-device-management-with-microsoft-intune.md)) com o Intune, você deve habilitar o registro de dispositivo. Para permitir o registro você deve definir uma autoridade de gerenciamento de dispositivo móvel, configurar o Portal da Empresa do Intune, atribuir licenças e habilitar o registro para a plataforma do dispositivo.
 
-## <a name="BKMK_Set_MDM_Authority"></a>Defina a autoridade de gerenciamento de dispositivos móveis
+## Defina a autoridade de gerenciamento de dispositivos móveis
 A autoridade MDM define o serviço de gerenciamento com permissão para gerenciar um conjunto de dispositivos. As opções para a autoridade MDM incluem o Intune e o Configuration Manager com Intune. Se você definir o Configuration Manager como a autoridade de gerenciamento, nenhum outro serviço poderá ser usado para gerenciamento de dispositivo móvel.
 
 >[!IMPORTANT]
@@ -45,11 +45,17 @@ A autoridade MDM define o serviço de gerenciamento com permissão para gerencia
 3.  O Intune solicita a confirmação de que você deseja o Intune como autoridade MDM. Marque a caixa de seleção e escolha **Sim** para usar o Microsoft Intune para gerenciar dispositivos móveis.
 
 ## Configurar o Portal da Empresa do Intune
+
+O Portal da Empresa do Intune é onde os usuários acessam os dados da empresa e podem fazer tarefas comuns, como o registro de dispositivo, a instalação de aplicativos e a localização de informações de assistência do departamento de TI.
+
+> [!TIP] Quando você personaliza o Portal da Empresa, as configurações se aplicam ao site do Portal da Empresa e aos aplicativos do Portal da Empresa.
+
 Personalizar o Portal da Empresa ajuda a fornecer uma experiência familiar e útil para os usuários finais. Para fazer isso, basta fazer logon no [Console do administrador do Microsoft Intune](https://manage.microsoft.com) como administrador de serviços ou locatário, escolher **Administrador** &gt; **Portal da Empresa** e definir as configurações do Portal da Empresa.
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### Declaração de privacidade e informações de contato de empresa
+
 O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e as informações de contato são exibidos para os usuários na tela Contatar TI do Portal da Empresa. A política de privacidade é exibida quando um usuário clica no link de privacidade.
 
 |Nome do campo|Comprimento máx.|Mais informações|
@@ -69,7 +75,9 @@ O site de suporte é exibido para os usuários no Portal da Empresa para que ele
     |URL do site de suporte|150|Se tiver um site de suporte que queira que os usuários usem, especifique o URL aqui. A URL deve estar no formato https://www.contoso.com. Se você não especificar uma URL, nada será exibido no site de suporte da página **Contatar TI**, no Portal da Empresa.|
     |Nome do site|40|Este é o nome amigável exibido para a URL do site de suporte. Se você especificar uma URL do site de suporte e nenhum nome amigável, **Ir para o site da TI** será exibido na página **Contatar IT** do Portal da Empresa.|
 
-## Personalização da identidade visual da empresa
+
+#### Personalização da identidade visual da empresa
+
 Você pode personalizar o Portal da Empresa com o logotipo e o nome da empresa, uma cor de tema e um segundo plano.
 
 |Nome do campo|Mais informações|
@@ -81,13 +89,11 @@ Você pode personalizar o Portal da Empresa com o logotipo e o nome da empresa, 
 
 Depois de salvar suas alterações, é possível usar os links fornecidos na parte inferior da página do **Portal da Empresa** do console do administrador para exibir o site do Portal da Empresa. Esses links não podem ser alterados. Quando um usuário entra, esses links exibem o Portal da Empresa das suas assinaturas.
 
-
-
 ## Atribuir uma licença de usuário do Intune
 
-Você usa o **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
+Você usa o **portal de gerenciamento do Office 365** para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
 
-1.  Entre no [portal de conta do Intune](https://portal.office.com/Admin/Default.aspx) usando suas credenciais de administrador de locatário.
+1.  Entre no [portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx) usando suas credenciais de administrador de locatário.
 
 2.  Selecione a conta de usuário a que deseja atribuir uma licença de usuário do Intune e habilite a caixa de seleção **Microsoft Intune** nas propriedades da conta de usuário.
 
