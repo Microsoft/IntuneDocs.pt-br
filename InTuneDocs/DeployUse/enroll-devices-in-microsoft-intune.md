@@ -18,7 +18,7 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -64,6 +64,6 @@ Computadores gerenciados com o software cliente Intune não podem ser apagados n
 [Gerenciar PCs Windows com o Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

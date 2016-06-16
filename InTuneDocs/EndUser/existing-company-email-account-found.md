@@ -36,10 +36,10 @@ Você já tem uma conta de email da empresa. Para continuar a se conectar ao seu
 
 3.  Aguarde alguns instantes para novas configurações de email a serem aplicadas automaticamente ao seu dispositivo.
 
-Se as novas configurações de email não aparecem após alguns instantes, entre em contato com o administrador de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se as novas configurações de email não aparecem após alguns instantes, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

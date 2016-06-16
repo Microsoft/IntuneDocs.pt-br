@@ -31,10 +31,10 @@ O dispositivo foi encontrado incompatível com uma ou mais das políticas da emp
 
 Para resolver esse problema, aguarde alguns minutos e, em seguida, toque em **Verificar conformidade**.
 
-Se o problema persistir, contate o administrador de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se o problema persistir, contate o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

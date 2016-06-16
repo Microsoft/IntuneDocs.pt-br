@@ -18,7 +18,7 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -100,6 +100,6 @@ O termo **Aplicativos gerenciados pela política** é usado para fazer referênc
 - **Bloquear captura de tela e o Assistente do Android (Android 6 Marshmallow ou posterior):** escolha **Sim** para bloquear a captura de tela e as funcionalidades do **Assistente do Android** do dispositivo ao usar este aplicativo.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 
