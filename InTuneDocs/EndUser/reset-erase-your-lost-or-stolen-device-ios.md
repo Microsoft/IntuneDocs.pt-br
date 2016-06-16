@@ -45,11 +45,11 @@ Para redefinir seu dispositivo usando o site Portal da Empresa, siga estas etapa
 
 2.  Toque em **Redefinir** &gt; **Redefinir**.
 > [!NOTE]
-> Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+> Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

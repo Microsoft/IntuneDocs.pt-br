@@ -48,11 +48,11 @@ Se você tiver problemas de configuração de uma senha que atenda a todos os re
 4. Insira sua nova senha no campo **Nova senha** e, em seguida, digite-a novamente no campo **Confirmar senha**.
 4. Toque em **concluído**.
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

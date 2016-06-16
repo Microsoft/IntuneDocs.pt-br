@@ -36,8 +36,8 @@ Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha
 
 3.  Verifique se o dispositivo está registrado no Intune seguindo as instruções em [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Registrar o dispositivo para usá-lo no trabalho).
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

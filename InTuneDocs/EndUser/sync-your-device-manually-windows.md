@@ -97,11 +97,12 @@ Para sincronizar manualmente seu dispositivo Windows Phone 8.1 e acelerar uma in
     
    A mensagem "Estamos sincronizando sua conta" é exibida na parte superior da tela até que o dispositivo conclua a sincronização.
 
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

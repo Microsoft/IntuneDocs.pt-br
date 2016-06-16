@@ -47,7 +47,7 @@ O Apple AppStore o alertará quando uma nova versão do Portal da Empresa estive
     > [!NOTE] Se não for possível acessar a Windows Store, entre em contato com seu administrador de TI.
 
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 Para obter informações sobre outras tarefas que você pode fazer com seu dispositivo, use o link que corresponde ao seu tipo de dispositivo:
 
@@ -57,6 +57,6 @@ Para obter informações sobre outras tarefas que você pode fazer com seu dispo
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

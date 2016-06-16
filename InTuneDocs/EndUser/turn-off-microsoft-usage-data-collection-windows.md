@@ -32,9 +32,11 @@ Para aprimorar seus produtos e serviços, a Microsoft coleta automaticamente dad
 
 Você pode desligar a coleta de dados em seu dispositivo Windows usando a configuração de **Dados de Uso** no aplicativo Portal da Empresa. Os administradores de TI não têm controle sobre a coleta desses dados e não podem alterar a seleção dessa configuração.
 
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

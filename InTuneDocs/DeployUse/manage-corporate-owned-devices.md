@@ -83,7 +83,6 @@ Saiba mais sobre o [DEP](ios-device-enrollment-program-in-microsoft-intune.md). 
 
 ### USB-SA
 Registro de assistente de configuração conectado com USB. O administrador cria uma política do Intune e a exporta para o Apple Configurator. Dispositivos conectados por USB são preparados com a política do Intune. O administrador deve registrar manualmente cada dispositivo. Os usuários recebem seus dispositivos e executam o Assistente de Instalação, registrando seu dispositivo. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
-  - Registro bloqueado
   - Acesso condicional
   - Detecção de jailbreak
   - Gerenciamento de aplicativos móveis
@@ -112,6 +111,6 @@ Especifica se o dispositivo pode ser bloqueado para impedir que o usuário remov
 ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

@@ -48,9 +48,11 @@ O Portal da Empresa é um aplicativo que você instala em seu dispositivo Androi
 
 Para registrar seu dispositivo no Intune para obter acesso aos recursos e dados de escola ou da empresa, consulte [Enroll your device in Intune (Registrar seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
 
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

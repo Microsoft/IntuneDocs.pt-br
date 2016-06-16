@@ -30,11 +30,11 @@ ms.suite: ems
 
 Quando seu dispositivo Android tem raiz, significa que ele foi alterado para habilitar determinadas funcionalidades que poderiam comprometer a segurança e os recursos da empresa. Quando seu dispositivo tem um caminho raiz, você não pode acessar recursos da empresa e deve entrar em contato com seu administrador de TI para ajudá-lo a reconectar-se aos recursos da empresa.
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

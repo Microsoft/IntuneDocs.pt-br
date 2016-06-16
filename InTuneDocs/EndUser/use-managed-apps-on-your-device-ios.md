@@ -64,23 +64,12 @@ Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenci
 
 -   Requisitos de criptografia de dados
 
-Estes são aplicativos comuns que o departamento de TI pode gerenciar:
 
--   Navegador da web gerenciados
-
--   Visualizador de imagem gerenciada
-
--   Visualizador de PDF gerenciado
-
--   Player de AV gerenciado
-
--   Microsoft Word, Excel, PowerPoint
-
-Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

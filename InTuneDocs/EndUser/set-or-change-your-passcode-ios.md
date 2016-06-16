@@ -46,11 +46,11 @@ Se você tiver problemas para configurar uma senha que atenda a todos os requisi
 2. Toque em **Alterar Senha** e insira sua senha antiga.
 3. Insira uma nova senha que atenda aos requisitos do seu administrador de TI e, em seguida, insira-a novamente para verificá-los.
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

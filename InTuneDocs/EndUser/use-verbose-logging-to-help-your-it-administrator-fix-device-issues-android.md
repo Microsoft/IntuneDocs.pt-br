@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Quando o dispositivo Android está registrado no Intune, você pode usar a confi
 
 Para ativar ou desativar o **Log Detalhado**, entre no aplicativo Portal da Empresa usando suas credenciais de trabalho ou de estudante, toque em **Configurações** e toque no botão de ativar/desativar ao lado da configuração de **Log Detalhado**.
 
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

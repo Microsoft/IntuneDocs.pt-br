@@ -2,6 +2,7 @@
 
 # [Introdução](what-to-know-before-you-start-microsoft-intune.md)
 ## [O que você deve saber antes de iniciar ](what-to-know-before-you-start-microsoft-intune.md)
+### [Dispositivos móveis e computadores com suporte](supported-mobile-devices-and-computers.md)
 ### [Navegadores com suporte](supported-web-browsers.md)
 ### [Requisitos de infraestrutura de rede](network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Contas administrativas, sites e permissões](administrative-accounts-websites-perms.md)
@@ -38,6 +39,6 @@
 # [Solução de problemas](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

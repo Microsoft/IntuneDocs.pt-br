@@ -44,8 +44,8 @@ Para obter informações sobre como configurar seu PIN ou senha ou sobre outras 
 - [Definir ou alterar a senha do seu dispositivo iOS](set-or-change-your-passcode-ios.md)
 - [Definir ou alterar a senha do seu dispositivo Windows](set-or-change-your-password-windows.md)
 
-Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

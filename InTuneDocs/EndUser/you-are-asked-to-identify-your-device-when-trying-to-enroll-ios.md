@@ -34,11 +34,11 @@ Se você está tentando registrar seu dispositivo iOS ou Mac OS X no Intune e v�
 2. Toque em **Continuar.**
 3. Insira os últimos quatro caracteres do número de série do dispositivo para confirmar que o seu dispositivo está registrado no Intune. Para localizar o número de série, consulte [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md) (Como localizar o número de série em meu dispositivo?).
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

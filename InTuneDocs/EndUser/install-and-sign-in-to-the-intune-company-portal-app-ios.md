@@ -40,11 +40,11 @@ O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS pa
 
     Se você está entrando no aplicativo de Portal da Empresa pela primeira vez e sua empresa ou escola está usando o Intune, você será solicitado a registrar seu dispositivo no Intune. Para registrar, siga as etapas em [Enroll your iOS device in Intune (Registrar seu dispositivo iOS no Intune)](enroll-your-device-in-intune-ios.md) ou [OS X device in Intune (Registrar seu dispositivo Mac OS X no Intune)](enroll-your-device-in-intune-mac-os-x.md).
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele estará listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
