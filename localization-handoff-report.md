@@ -1,59 +1,43 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\update-apps-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0581d1476fba5bedcdd4446df20f8f92b151f41b/InTuneDocs/DeployUse/update-apps-using-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b249)
- [InTuneDocs\DeployUse\wi-fi-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/327c3aaf42aaf7f97e2b78d5ae38584bc13773e1/InTuneDocs/DeployUse/wi-fi-connections-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#1ab6229a31da94ba8fe46534a7d2cd386bb37362260)
- [InTuneDocs\Troubleshoot\troubleshoot-app-deployment-problems-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/327c3aaf42aaf7f97e2b78d5ae38584bc13773e1/InTuneDocs/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#dc782a54983e4db39a029a15183834a925d0e00c1143)
+ [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/398d93d4e2317d00a2f9d5f89966aaec3b942504/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) | OutofSyncHandedBackSuccess | [Details](#af4b87eb8082ee5ff11cd2d42b788ad17b334bcb243)
+ [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b203f51171d38f2b0fc2b46e556679322701d29b/InTuneDocs/DeployUse/whats-coming-in-intune.md) | OutofSyncHandedBackSuccess | [Details](#77d2e74dcb032ff52808998c56de7d6b8847ebbe256)
 
 ## Item Details
-##### <a name='9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b249'></a> Source: [InTuneDocs\DeployUse\update-apps-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0581d1476fba5bedcdd4446df20f8f92b151f41b/InTuneDocs/DeployUse/update-apps-using-microsoft-intune.md)
+##### <a name='af4b87eb8082ee5ff11cd2d42b788ad17b334bcb243'></a> Source: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/398d93d4e2317d00a2f9d5f89966aaec3b942504/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [update-apps-using-microsoft-intune.72c09951dde9b41ed50ca9080091bfb2859290dc.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/d898a9ce835f8258cd1a950c8d9141078d2c3391/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/update-apps-using-microsoft-intune.72c09951dde9b41ed50ca9080091bfb2859290dc.pt-br.xlf)
-* Handoff Datetime: 2016-06-17 17:12:05
+* Handoff File: [specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.98366d4155635dd3d87986d1a68d70e40c9c303b.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/5d1035656522804c0b7d3135fb0b3c5800e96edd/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.98366d4155635dd3d87986d1a68d70e40c9c303b.pt-br.xlf)
+* Handoff Datetime: 2016-06-17 18:57:51
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\update-apps-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/3c3d449b52e98eaa05fbf35c0c8000a27b039010/InTuneDocs/DeployUse/update-apps-using-microsoft-intune.md)
-* Current Handback File: [update-apps-using-microsoft-intune.72c09951dde9b41ed50ca9080091bfb2859290dc.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/c573fe811355e0d40c6068366541c9a052286182/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/update-apps-using-microsoft-intune.72c09951dde9b41ed50ca9080091bfb2859290dc.pt-br.xlf)
+* Current Target File: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/3c3d449b52e98eaa05fbf35c0c8000a27b039010/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+* Current Handback File: [specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.98366d4155635dd3d87986d1a68d70e40c9c303b.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/c573fe811355e0d40c6068366541c9a052286182/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.98366d4155635dd3d87986d1a68d70e40c9c303b.pt-br.xlf)
 * Current Handback Datetime: 2016-06-10 21:14:04
 * [Back to Top](#report-top)
 
-##### <a name='1ab6229a31da94ba8fe46534a7d2cd386bb37362260'></a> Source: [InTuneDocs\DeployUse\wi-fi-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/327c3aaf42aaf7f97e2b78d5ae38584bc13773e1/InTuneDocs/DeployUse/wi-fi-connections-in-microsoft-intune.md)
+##### <a name='77d2e74dcb032ff52808998c56de7d6b8847ebbe256'></a> Source: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b203f51171d38f2b0fc2b46e556679322701d29b/InTuneDocs/DeployUse/whats-coming-in-intune.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [wi-fi-connections-in-microsoft-intune.71c114c22de3902ebac9f1af1cc6c1423267a68e.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/d898a9ce835f8258cd1a950c8d9141078d2c3391/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/wi-fi-connections-in-microsoft-intune.71c114c22de3902ebac9f1af1cc6c1423267a68e.pt-br.xlf)
-* Handoff Datetime: 2016-06-17 17:12:05
+* Handoff File: [whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/5d1035656522804c0b7d3135fb0b3c5800e96edd/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.pt-br.xlf)
+* Handoff Datetime: 2016-06-17 18:57:51
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\wi-fi-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/3c3d449b52e98eaa05fbf35c0c8000a27b039010/InTuneDocs/DeployUse/wi-fi-connections-in-microsoft-intune.md)
-* Current Handback File: [wi-fi-connections-in-microsoft-intune.71c114c22de3902ebac9f1af1cc6c1423267a68e.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/c573fe811355e0d40c6068366541c9a052286182/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/wi-fi-connections-in-microsoft-intune.71c114c22de3902ebac9f1af1cc6c1423267a68e.pt-br.xlf)
-* Current Handback Datetime: 2016-06-10 21:14:04
-* [Back to Top](#report-top)
-
-##### <a name='dc782a54983e4db39a029a15183834a925d0e00c1143'></a> Source: [InTuneDocs\Troubleshoot\troubleshoot-app-deployment-problems-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/327c3aaf42aaf7f97e2b78d5ae38584bc13773e1/InTuneDocs/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [troubleshoot-app-deployment-problems-in-microsoft-intune.d21e35a8fe39a74189b692654c15a7798ada5208.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/d898a9ce835f8258cd1a950c8d9141078d2c3391/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/troubleshoot-app-deployment-problems-in-microsoft-intune.d21e35a8fe39a74189b692654c15a7798ada5208.pt-br.xlf)
-* Handoff Datetime: 2016-06-17 17:12:05
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\Troubleshoot\troubleshoot-app-deployment-problems-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/3c3d449b52e98eaa05fbf35c0c8000a27b039010/InTuneDocs/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-* Current Handback File: [troubleshoot-app-deployment-problems-in-microsoft-intune.d21e35a8fe39a74189b692654c15a7798ada5208.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/c573fe811355e0d40c6068366541c9a052286182/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/troubleshoot-app-deployment-problems-in-microsoft-intune.d21e35a8fe39a74189b692654c15a7798ada5208.pt-br.xlf)
-* Current Handback Datetime: 2016-06-10 21:14:04
+* Current Target File: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/73a2ad426fc75c266654beadba0c8a8d711b4aa0/InTuneDocs/DeployUse/whats-coming-in-intune.md)
+* Current Handback File: [whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/75d4179d9c693fdefaa1045709845c58393f8918/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.pt-br.xlf)
+* Current Handback Datetime: 2016-06-15 21:09:12
 * [Back to Top](#report-top)
 
 
