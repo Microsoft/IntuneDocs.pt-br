@@ -79,17 +79,16 @@ Aqui está uma lista de etapas para introdução à fase de **Distribuição na 
 
 -   Identifique os grupos que podem necessitar de comunicações direcionadas e treinamento.
 
--   Personalizar comunicações por email, atualizar o site da intranet
-    Identifique o proprietário em curso para atualização de comunicações e recursos.
+-   Personalizar comunicações por email, atualizar o site da intranet Identificar o proprietário em andamento para atualização de comunicações/recursos.
 
 -   Descreva quais métodos de treinamento você usará.
 
 -   Crie uma lista de verificação de introdução e um guia de registro para os usuários.
     Use esses guias do usuário como ponto de partida:
-    -  [Registrar seu dispositivo Windows no Intune] (/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Registrar seu dispositivo Android no Intune] (/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Registrar seu dispositivo iOS no Intune] (/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Registrar seu dispositivo Mac OS X no Intune] (/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Registrar seu dispositivo Windows no Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Registrar seu dispositivo Android no Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Registrar seu dispositivo iOS no Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Registrar seu dispositivo Mac OS X no Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Defina um processo para atualizar materiais de treinamento, conforme necessário.
 
@@ -114,6 +113,6 @@ Aqui estão alguns desafios que você pode encontrar na fase de **Distribuição
 [Operações e manutenção](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

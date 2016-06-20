@@ -53,7 +53,7 @@ As seguintes etapas ajudam você a configurar uma política de configuração de
 
 4.  Na lista de políticas, expanda a plataforma para a qual você deseja criar uma política e selecione **Configuração Geral** > **Criar e Implantar uma Política com as Configurações Recomendadas** > **Criar Política**.
 
-5.  Quando solicitado, **Selecione os grupos nos quais você deseja implantar essa política**, selecione **Usuários do Intune** (o grupo criado na etapa anterior) na lista de grupos disponíveis, escolha **Adicionar** > **OK**.
+5.  Quando solicitado, **Selecione os grupos nos quais você deseja implantar essa política**, selecione um grupo da lista de grupos disponíveis e escolha **Adicionar** > **OK**.
 
 Sua política aparece na lista de políticas de configuração e foi implantada no grupo **Usuários do Intune**. Clique duas vezes na política para exibir suas configurações.
 
@@ -114,6 +114,6 @@ Parabéns! Você acabou de concluir a etapa 6 do *Guia de início rápido do Int
 >[&larr; **Organizar usuários e dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personalizar o Portal da Empresa** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

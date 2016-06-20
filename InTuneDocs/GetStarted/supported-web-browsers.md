@@ -31,8 +31,8 @@ Antes de instalar o Intune, examine este tópico e outros requisitos listados em
 
 |Recurso do Intune |Navegadores com suporte|
 |---------|---------|
-|Console de administração do Intune     |  Internet Explorer 10 ou posterior<br /><br />Google Chrome (versões anteriores à versão 42)<br /><br />Mozilla Firefox  <br /><br />**Observação:** atualmente não há suporte para o Edge no console de administração.                      
-|Portal de administração do Office 365     |Todos os navegadores  |
+|Console de administração do Intune     |  Internet Explorer 10 ou posterior<br /><br />Google Chrome (versões anteriores à versão 42)<br /><br />Mozilla Firefox  <br /><br />**Observação:** o Microsoft Edge e navegadores móveis não têm suporte para o console de administração.                      
+|Portal de administração do Office 365     |Todos os navegadores, incluindo navegadores móveis e navegadores gerenciados  |
 |Site do Portal da Empresa     |**Em dispositivos móveis:** usar o navegador da Web padrão para cada plataforma com suporte   <br /><br />**Em computadores Windows:** Internet Explorer 10 ou posterior ou Microsoft Edge<br /><br />**No Mac OS X 10.9 ou posterior:** Safari da Apple    |
 
 
@@ -42,6 +42,6 @@ Antes de instalar o Intune, examine este tópico e outros requisitos listados em
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
