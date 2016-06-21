@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,7 +60,7 @@ Para obter uma lista completa de políticas do Intune, consulte a [referência d
 
 4.  Na tela **Criar Política** , configure um nome e uma descrição opcional para a política.
 
-5.  Defina as configurações de política necessárias, clique em **Salvar Política**.
+5.  Defina as configurações de política necessárias e clique em **Salvar Política**.
 
     Se você precisar de ajuda com qualquer configuração de política, escolha o tipo de política na lista a seguir:
 
@@ -74,9 +74,9 @@ Para obter uma lista completa de políticas do Intune, consulte a [referência d
     - [Configurações para dispositivos Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
     - [Configurações do Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
     - [Configurações da política de termos e condições](terms-and-condition-policy-settings-in-microsoft-intune.md)
-    - [Configurações de política para dispositivos móveis (herdado)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+    - [Configurações gerais de dispositivos móveis (herdado)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Na caixa de diálogo de confirmação, clique em **Sim** para implantar a política agora, ou em **Não** para criar a política sem implantá-la.
+4.  Na caixa de diálogo de confirmação, escolha **Sim** para implantar a política agora ou **Não** para criar a política sem implantá-la.
 
 Você pode exibir e editar a nova política navegando nas seções de cada tipo de política no espaço de trabalho **Política** .
 
@@ -89,13 +89,13 @@ Agora que você criou uma política, você geralmente deseja implantá-la em um 
 
 ## Implantar uma política de configuração
 
-1.  No espaço de trabalho **Política** , selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
+1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
 2.  Na caixa de diálogo **Gerenciar implantação** :
 
-    -   **Para implantar a política** - Selecione um ou mais grupos ao qual você deseja implantar a política, clique **Adicionar** &gt; **OK**.
+    -   **Implantação da política** - Selecione um ou mais grupos nos quais deseja implantar a política e escolha **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implantá-la** - clique em **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implantá-la** - Clique em **Cancelar**.
 
 Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 
@@ -109,15 +109,6 @@ Quando você seleciona uma política implantada, pode exibir mais informações 
 - **Excluir** - Exclui a política selecionada.<br>Ao excluir uma diretiva, ela é removida de todos os grupos nos quais foi implantada.
 - **Gerenciar a Implantação** - Selecione o grupo no qual você deseja implantar a política e clique em **Adicionar**.
 
-## Tarefas para políticas do Intune
-
-### Para atualizar as políticas em um dispositivo para garantir que eles estejam atualizadas (aplica-se apenas aos computadores Windows que executam software cliente do Intune)
-
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Grupos**e selecione um grupo de dispositivos.
-
-2.  Selecione os dispositivos nos quais deseja atualizar as políticas e, em seguida, clique em **Tarefas Remotas** &gt; **Atualizar Políticas**.
-
-3.  Clique em **Tarefas Remotas**, no canto inferior direito da janela do console de administração do Intune para verificar o status da tarefa.
 
 ## Perguntas frequentes sobre as políticas do Intune
 
@@ -187,25 +178,7 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
         - Tipo de senha necessária
         - Expiração da senha (dias)
         - Lembrar de histórico de senha
-        - Número de falhas de logon repetidas permitido antes do dispositivo ser apagado
-        - Minutos de inatividade antes de a senha ser necessária
-        - Tipo de senha necessária – o número mínimo de conjuntos de caracteres
-        - Permitir câmera
-        - Exigir criptografia no dispositivo móvel
-        - Permitir armazenamento removível
-        - Permitir navegador da web
-        - Permitir loja de aplicativo
-        - Permitir captura de tela
-        - Permitir localização geográfica
-        - Permitir Conta da Microsoft
-        - Permitir copiar e colar
-        - Permitir compartilhamento de Internet por Wi-Fi
-        - Permitir conexão automática para liberar pontos de acesso Wi-Fi
-        - Permitir relatórios de pontos de acesso Wi-Fi
-        - Permitir redefinição de fábrica
-        - Permitir Bluetooth
-        - Permitir NFC
-        - Permitir Wi-Fi
+        - Número de falhas de conexão repetidas permitidas antes de o dispositivo ser apagado - Minutos de inatividade antes da senha ser necessária - Tipo de senha necessária – Número mínimo de conjuntos de caracteres - Permitir câmera - Exigir criptografia no dispositivo móvel - Permitir armazenamento removível - Permitir navegador da Web - Permitir loja de aplicativos - Permitir captura de tela - Permitir localização geográfica - Permitir conta da Microsoft - Permitir copiar e colar - Permitir compartilhamento de Internet por Wi-Fi - Permitir conexão automática a hotspots Wi-Fi gratuitos - Permitir relatório de hotspots Wi-Fi - Permitir redefinição de fábrica - Permitir Bluetooth - Permitir NFC - Permitir Wi-Fi
     
     - **iOS** - Todas as configurações são removidas, exceto:
         - Permitir roaming de Voz
@@ -220,9 +193,16 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
 - **Configurações do Firewall do Windows** – As configurações são redefinidas para o padrão do sistema operacional do computador. Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
 
 
+### Como posso atualizar as políticas em um dispositivo para garantir que elas estejam atualizadas (aplica-se apenas aos computadores Windows que executam software cliente do Intune)
+
+1.  Em qualquer grupo de dispositivos selecione os dispositivos nos quais deseja atualizar as políticas e, em seguida, clique em **Tarefas Remotas** &gt; **Atualizar Políticas**.
+2.  Selecione **Tarefas Remotas**, no canto inferior direito da janela do console de administração do Intune para verificar o status da tarefa.
+
+### Onde posso encontrar ajuda para solucionar problemas de políticas?
+
+Consulte [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md) (Solução de problemas com políticas no Microsoft Intune).
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

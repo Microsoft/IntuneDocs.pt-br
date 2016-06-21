@@ -125,12 +125,12 @@ Quando você adicionar um computador:
 
 -   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. Se você inserir a senha incorreta por muitas vezes seguidas, o seu acesso ao computador poderá ser bloqueado ou todos os dados do disco rígido do seu computador poderão ser excluídos.
 
-Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

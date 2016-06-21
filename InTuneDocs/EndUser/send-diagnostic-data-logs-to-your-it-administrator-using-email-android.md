@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Enviar logs de dados de diagnóstico para o administrador de TI usando email
 
-Se receber um erro em seu dispositivo Android enquanto estiver trabalhando com aplicativos da empresa ou escolares ou enquanto estiver no aplicativo do Portal da Empresa, você poderá enviar logs de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos logs, o que torna mais fácil para o administrador de TI descobrir o problema, ative o Log Detalhado.
+Se receber um erro em seu dispositivo Android enquanto estiver trabalhando com aplicativos da empresa ou escolares ou enquanto estiver no aplicativo do Portal da Empresa, você poderá enviar logs de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos logs, o que torna mais fácil para o administrador de TI descobrir o problema, ative o Log Detalhado. Você pode ler mais sobre [registro detalhado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Para ativar o log detalhado:
 
@@ -54,6 +54,6 @@ Para ativar o log detalhado:
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

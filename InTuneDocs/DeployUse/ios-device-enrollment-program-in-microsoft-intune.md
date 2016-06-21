@@ -18,7 +18,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,7 +56,7 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 5.  **Adicionar Política de Registro de Dispositivo Corporativo** No [console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Registro de Dispositivo Corporativo** e, em seguida, clique em **Adicionar**.
 
     Forneça detalhes **Gerais**, incluindo **Nome** e **Descrição**, especifique se os dispositivos atribuídos ao perfil têm afinidade de usuário ou pertencem a um grupo.
-      - **Solicitar afinidade de usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial e depois receber permissão para acessar dados e email da empresa como esse usuário.  A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem aos usuários e que precisam usar o portal da empresa (por exemplo, para instalar aplicativos). 
+      - **Solicitar afinidade de usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial e depois receber permissão para acessar dados e email da empresa como esse usuário.  A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem aos usuários e que precisam usar o portal da empresa (por exemplo, para instalar aplicativos).
       - **Sem afinidade de usuário**: o dispositivo não está afiliado a um usuário. Use esta afiliação para dispositivos que executam tarefas sem acessar aos dados de usuário local. Aplicativos que exigem a afiliação do usuário, incluindo o aplicativo do Portal da Empresa usado para instalar aplicativos de linha de negócios, não funcionarão.
 
     Em seguida, habilite **Configurar definições do Programa de Registro do Dispositivo para esta política** para dar suporte ao DEP.
@@ -78,16 +78,8 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
         - **Serviços de Localização** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
         - **Restaurar** - Se habilitado, o Assistente de Instalação solicitará o backup do iCloud durante a ativação
         - **ID da Apple** - Uma ID da Apple é exigida para baixar aplicativos na App Store do iOS, incluindo aqueles instalados pelo Intune. Se habilitado, o iOS solicitará aos usuários uma ID da Apple quando o Intune tentar instalar um aplicativo sem uma ID.
-        - **Termos e Condições** - Se habilitado, o Assistente de Instalação solicitará que os usuários aceitem os termos e as condições da Apple durante a ativação
-        - **ID de Toque** - Se habilitada, o Assistente de Instalação solicitará o serviço durante a ativação
-        - **Pagamento da Apple** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
-        - **Aplicar zoom** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
-        - **Siri** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
-        - **Enviar dados de diagnóstico para a Apple** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
-     -  **Habilitar o gerenciamento adicional do Apple Configurator** - Defina como **Não permitir** para impedir a sincronização de arquivos com iTunes ou gerenciamento por meio do Apple Configurator. A Microsoft recomenda que você defina como **Não permitir**, exportar qualquer configuração adicional do Apple Configurator e, em seguida, implantar como um perfil de configuração do iOS Personalizado por meio do Intune, em vez de usar essa configuração para permitir a implantação manual com ou sem um certificado.
-        - **Não permitir** - Impede que o dispositivo se comunique via USB (desabilita emparelhamento)
-        - **Permitir** - Permite que o dispositivo se comunique por meio de conexão USB para qualquer PC ou Mac
-        - **Exigir certificados** - Permite o emparelhamento com um Mac com um certificado importado para o perfil de registro
+        - **Termos e Condições** - Se habilitado, o Assistente de Instalação solicitará que usuários aceitem os termos e condições da Apple durante a ativação do - **ID de Toque** - Se habilitado, o Assistente de Instalação solicitará esse serviço durante a ativação do - **Pagamento de Apple** - Se habilitado, o Assistente de Instalação solicitará esse serviço durante a ativação do - **Zoom** - Se habilitado, o Assistente de Instalação solicitará esse serviço durante a ativação da - **Siri** - Se habilitado, o Assistente de Instalação solicitará esse serviço durante a ativação de - **Enviar dados de diagnóstico à Apple** - Se habilitado, o Assistente de Instalação solicitará este serviço durante a ativação de -  **Permitir gerenciamento adicional pelo Apple Configurator** - Defina para **Não permitir** para impedir a sincronização de arquivos com o iTunes ou o gerenciamento por meio do Apple Configurator. A Microsoft recomenda que você defina como **Não permitir**, exportar qualquer configuração adicional do Apple Configurator e, em seguida, implantar como um perfil de configuração do iOS Personalizado por meio do Intune, em vez de usar essa configuração para permitir a implantação manual com ou sem um certificado.
+        - **Não permitir** - Impede que o dispositivo se comunique via USB (desabilita emparelhamento) - **Permitir** - Permite que o dispositivo se comunique via conexão USB em qualquer PC ou Mac - **Exigir certificado** - Permite o emparelhamento com um Mac com um certificado importado para o perfil de registro
 
 6.  **Atribuir Dispositivos DEP para Gerenciamento** Vá até o [Portal do Programa de Registro de Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID da Apple corporativa. Vá até o **Programa de Implantação** &gt; **Programa de Registro de Dispositivo** &gt; **Gerenciar Dispositivos**. Especifique como você vai **escolher dispositivos**, forneça informações do dispositivo e especifique os detalhes por **número de série**, **número do pedido**do dispositivo ou **carregue o arquivo CSV**. Em seguida, selecione **Atribuir ao Servidor** e selecione o &lt;ServerName&gt; especificado para o Microsoft Intune e, em seguida, clique em **OK**.
 
@@ -105,6 +97,6 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 [Prepare-se para registrar dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

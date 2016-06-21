@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,11 +40,15 @@ As políticas de gerenciamento de aplicativos móveis dão suporte a:
 
 Diferente de outras políticas do Intune, você não implanta uma política de gerenciamento de aplicativo móvel diretamente. Em vez disso, você associa a política ao aplicativo que deseja restringir. Quando o aplicativo é implantado e instalado em dispositivos, as configurações especificadas entrarão em vigor.
 
-Para aplicar restrições a um aplicativo, o aplicativo deve incorporar o SDK (Software Development Kit ) do Aplicativo da Microsoft. Há dois métodos de obter esse tipo de aplicativo:
+Para aplicar restrições a um aplicativo, o aplicativo deve incorporar o SDK de Aplicativos do Microsoft Intune. Há três métodos de obter esse tipo de aplicativo:
 
 -   **Usar um aplicativo gerenciado por política** – tem o SDK interno do aplicativo. Para adicionar este tipo de aplicativo, especifique um link para o aplicativo de uma loja de aplicativos, como a iTunes Store ou o Google Play. Nenhum processamento adicional é necessário para este tipo de aplicativo. Veja uma lista de [aplicativos que você pode usar com políticas de gerenciamento de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 -   **Usar um aplicativo "encapsulado"** – aplicativos que são empacotados novamente para incluir o SDK do aplicativo usando a **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune**. Normalmente, essa ferramenta é usada para processar aplicativos da empresa criados internamente. Ele não pode ser usado para processar aplicativos que foram baixados da loja de aplicativos. Consulte [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos iOS para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição de Aplicativo do Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune).
+
+- **Escrever seu próprio aplicativo que incorpora o SDK de Aplicativos do Intune** - O SDK de Aplicativos do Intune permite que você incorpore recursos de gerenciamento de aplicativo em um aplicativo enquanto ele estiver sendo gravado. Para obter mais informações, consulte [Intune App SDK Overview](/develop/intune-app-sdk) (Visão geral do SDK de Aplicativos do Intune)
+
+Para obter ajuda para decidir entre a ferramenta de disposição de aplicativo e o SDK de Aplicativos do Intune, consulte [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) (Decidir como preparar aplicativos para gerenciamento de aplicativo móvel com o Microsoft Intune)
 
 Alguns aplicativos gerenciados, como o aplicativo do Outlook para iOS e Android, dão suporte a **multi-identidade**. Isso significa que Intune aplica as configurações de gerenciamento somente a dados ou contas corporativas no aplicativo.
 
@@ -60,7 +64,7 @@ Por exemplo, usando o aplicativo do Outlook:
 
 ## Criar e implantar um aplicativo com uma política de gerenciamento de aplicativos móveis
 
--   **Etapa 1:** obter o link para um aplicativo gerenciado por política ou criar um aplicativo encapsulado.
+-   **Etapa 1:** obtenha o link para um aplicativo gerenciado por política, crie um aplicativo disposto ou use o SDK de Aplicativos do Intune para gravar um aplicativo habilitado para MAM.
 
 -   **Etapa 2:** publicar o aplicativo em seu espaço de armazenamento de nuvem.
 
@@ -70,15 +74,12 @@ Por exemplo, usando o aplicativo do Outlook:
 
 -   **Etapa 5:** monitorar a implantação do aplicativo.
 
-## **Etapa 1:** obter o link para um aplicativo gerenciado por política ou criar um aplicativo encapsulado
+## **Etapa 1:** obtenha o link para um aplicativo gerenciado por política, crie um aplicativo disposto ou use o SDK de Aplicativos do Intune para gravar um aplicativo habilitado para MAM.
 
--   **Para obter um link para um aplicativo gerenciado por política** - na Windows Store, encontre e anote a URL do aplicativo gerenciado por política que você deseja implantar.
+-   **Para obter um link para um aplicativo gerenciado por política em uma loja de aplicativos** - Na loja de aplicativos, encontre e anote a URL do aplicativo gerenciado por política que você deseja implantar.
 
     Por exemplo, a URL do aplicativo do Microsoft Word para iPad é **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **Para criar um aplicativo encapsulado**: use as informações nos tópicos [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos iOS para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune) para criar um aplicativo encapsulado.
-
-    A ferramenta cria um aplicativo processado que será usado quando você publica o aplicativo no espaço de armazenamento de nuvem.
 
 ## **Etapa 2:** publicar o aplicativo em seu espaço de armazenamento de nuvem
 Quando você publica um aplicativo gerenciado, os procedimentos diferem se você estiver publicando um aplicativo gerenciado por política ou um aplicativo que foi processado usando a ferramenta de disposição de aplicativos do Microsoft Intune para iOS.
@@ -111,7 +112,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
 
 ## **Etapa 3:** criar uma política de gerenciamento de aplicativos móveis
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Visão geral** &gt; **Adicionar Política**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** &gt; **Visão geral** &gt; **Adicionar Política**.
 
 2.  Configure e implante uma das seguintes políticas de **Software** , dependendo do tipo de dispositivo para o qual deseja configurar aplicativos:
 
@@ -142,7 +143,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
     |**Criptografar dados do aplicativo**|Especifica que todos os dados associados ao aplicativo sejam criptografados, inclusive dados armazenados externamente, como em cartões SD.<br /><br />**Criptografia para iOS**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativo móvel do Intune, os dados são criptografados em repouso usando a criptografia no nível do dispositivo fornecida pelo sistema operacional. Isso é habilitado pela política de PIN do dispositivo que deve ser definida com o administrador de TI. Quando um PIN for solicitado, os dados serão criptografados segundo as configurações na política de gerenciamento de aplicativos móveis. Conforme indicado na documentação da Apple, [os módulos usados pelo iOS 7 têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Criptografia para Android**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativos móveis do Intune, a criptografia é fornecida pela Microsoft. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo.  O conteúdo no armazenamento do dispositivo sempre será criptografado. O método de criptografia não tem certificação FIPS 140-2.|
     |**Bloquear captura de tela** (somente para dispositivos Android)|Especifica que as funcionalidades de captura de tela do dispositivo sejam bloqueadas durante o uso do aplicativo.|
 
-4.  Quando tiver terminado, clique em **Salvar política**.
+4.  Quando tiver terminado, selecione **Salvar Política**.
 
 A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política** .
 
@@ -169,15 +170,15 @@ Após ter criado e implantado um aplicativo associado a uma política de gerenci
 
 #### Para exibir o status da implantação
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Grupos** &gt; **Visão Geral**.
+1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Grupos** &gt; **Visão Geral**.
 
 2.  Execute uma das seguintes etapas:
 
-    -   Clique em **Todos os Usuários** e clique duas vezes no usuário cujos dispositivos você deseja examinar. Na página **Propriedades do Usuário**, clique em **Dispositivos** e clique duas vezes no dispositivo que você deseja examinar.
+    -   Selecione **Todos os Usuários** e clique duas vezes no usuário cujos dispositivos você deseja examinar. Na página **Propriedades do Usuário**, selecione **Dispositivos** e clique duas vezes no dispositivo que você deseja examinar.
 
-    -   Clique em **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**. Na página **Propriedades do Grupo de Dispositivos**, clique em **Dispositivos** e clique duas vezes no dispositivo que você deseja examinar.
+    -   Selecione **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**. Na página **Propriedades do Grupo de Dispositivos**, selecione **Dispositivos** e clique duas vezes no dispositivo que você deseja examinar.
 
-3.  Na página **Propriedades do Dispositivo Móvel** , clique em **Política** para ver uma lista das políticas de gerenciamento de aplicativo móvel que foram implantados no dispositivo.
+3.  Na página **Propriedades do Dispositivo Móvel**, selecione **Política** para ver uma lista das políticas de gerenciamento de aplicativo móvel que foram implantados no dispositivo.
 
 4.  Selecione a política de gerenciamento de aplicativo móvel cujo status você deseja exibir. Você pode ver detalhes da política no painel inferior e expandir o nó para exibir as configurações.
 
@@ -197,6 +198,6 @@ Em casos em que o dispositivo ou usuário receber duas políticas conflitantes, 
 -   Se nenhuma política tiver sido implantada no dispositivo e duas configurações conflitantes forem implantadas, a configuração padrão integrada no dispositivo será usada.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

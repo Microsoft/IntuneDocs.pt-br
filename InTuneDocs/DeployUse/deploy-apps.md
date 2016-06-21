@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ As regras a seguir aplicam-se à aquisição de armazenamento baseado em nuvem a
 
 -   Você deve ter uma assinatura paga ativa para adquirir armazenamento adicional.
 
--   Somente administradores de cobrança ou globais do Microsoft Online Service podem adquirir armazenamento adicional no portal de contas do Intune. Para adicionar, excluir ou gerenciar esses administradores, você deve ser um administrador global e estar conectado ao portal de conta do Intune.
+-   Somente administradores de cobrança ou globais do Microsoft Online Service podem adquirir armazenamento adicional no Portal de Gerenciamento do Office 365. Para adicionar, excluir ou gerenciar esses administradores, você deve ser um administrador global e se conectar ao Portal de Gerenciamento do Office 365.
 
 -   Para clientes de licenciamento por volume que adquiriram o Intune ou o Complemento do Microsoft Intune através de um contrato corporativo, contate seu Gerente de Conta da Microsoft ou seu Parceiro da Microsoft para obter informações de preço e adquirir armazenamento adicional.
 
@@ -105,6 +105,6 @@ Quando duas implantações com a mesma ação de implantação são recebidas po
 
 Saiba como [implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

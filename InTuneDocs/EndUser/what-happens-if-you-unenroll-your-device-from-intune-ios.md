@@ -46,11 +46,11 @@ Ao cancelar o registro do dispositivo iOS do Intune:
 
 Para obter instruções sobre como cancelar o registro, consulte [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md) (Cancelar o registro de dispositivo do Intune).
 
-Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Configurar o gerenciamento do Windows 8.0 com o Microsoft Intune | Microsoft Intune
+title: Configurar o gerenciamento do Windows Phone 8.0 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Configurar o gerenciamento de dispositivo para o Windows Phone 8.0
 
 O Windows Phone 8.0 requer um certificado Symantec para instalar o aplicativo de Portal da Empresa do Intune e permitir o gerenciamento de dispositivo. Um certificado também é necessário para assinar aplicativos de linha de negócios. O tópico a seguir é apenas para Windows Phone 8.0. Para gerenciar o Windows Phone 8.1 ou posterior, incluindo o Windows 10 Mobile, consulte [Set up Windows Phone enrollment](set-up-windows-phone-management-with-microsoft-intune.md) (Configurar o registro do Windows Phone).
+
+> [!IMPORTANT] A partir de setembro de 2016, o aplicativo de Portal da Empresa para Windows 8.0 e Windows Phone 8.0 não estará disponível para download.
 
 -   **Windows Phone 8** - Certificado exigido
 -   **Windows Phone 8.1 e Windows 10 Mobile** requerem um certificado somente se:
@@ -184,6 +186,6 @@ Você pode implantar o aplicativo do Portal da empresa em dispositivos Windows P
     > -   Se aplicativos em sideload tiverem que ser instalados e dispositivos Windows Phone 8.0 precisarem ser registrados e receber o ssp.xap, crie uma nova implantação de software do ssp.xap e implante-a com a ação **desinstalar** . Dispositivos Windows Phone 8.0 não dão suporte à instalação ou desinstalação forçada de aplicativos, portanto eles ignoram a implantação. Dispositivos Windows Phone 8.1 dão suporte para a ação de desinstalação e removem o ssp.xap.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

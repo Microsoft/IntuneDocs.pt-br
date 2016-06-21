@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 Para proteger os dados da empresa, você precisa certificar-se de que os dispositivos usados para acessar os aplicativos e os dados da empresa estão em conformidade com determinadas regras, como usar um PIN para acessar o dispositivo e a criptografia de dados armazenados no dispositivo. Um conjunto de tais regras é referido como uma política de conformidade.
 
 ## Como devo usar as políticas de conformidade?
-Você pode usar políticas de conformidade com políticas de acesso condicional para restringir o acesso a dispositivos que estão em conformidade com as regras de política de conformidade. Leia o artigo [Restringir o acesso ao email e serviços O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) para compreender como as duas políticas podem ser usadas juntas.
+Você pode usar políticas de conformidade com políticas de acesso condicional permitir somente o acesso a dispositivos que estão em conformidade com as regras de política de conformidade para acessar email ou outros serviços. Leia o artigo [Restringir o acesso ao email e serviços O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) para compreender como as duas políticas podem ser usadas juntas.
 
 Você também pode usar políticas de conformidade independentemente do acesso condicional. Quando usadas de forma independente, os dispositivos de destino são avaliados e informados com o status de conformidade. Por exemplo, você talvez deseje um relatório sobre o número de dispositivos que não estão criptografados ou quais dispositivos estão com jailbreak ou com raiz. No entanto, quando usados de forma independente, não há restrições de acesso aos recursos da empresa em vigor.
 
@@ -67,6 +67,6 @@ A tabela a seguir lista os tipos de dispositivos suportados pelas políticas de 
 [Restringir o acesso ao email e aos serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

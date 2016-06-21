@@ -18,7 +18,7 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,7 +36,7 @@ Use as informações neste tópico para aprender a adicionar aplicativos ao Intu
 ## Adicionar o aplicativo
 Você usa o Intune Software Publisher para configurar as propriedades do aplicativo e carregá-lo no seu espaço de armazenamento em nuvem usando o seguinte procedimento:
 
-1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
+1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
 
     > [!TIP] Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
 
@@ -47,7 +47,7 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
     **Selecione como este software é disponibilizado para dispositivos**: escolha **Instalador do software** e especifique:
 
     - **Selecione o tipo de arquivo do instalador de software**: isso indica o tipo de software que você deseja implantar. Para um computador Windows, escolha **Windows Installer**.
-    - **Especifique o local dos arquivos de configuração do software**: insira o local dos arquivos de instalação, ou clique em **Procurar** para selecionar o local em uma lista.
+    - **Especifique o local dos arquivos de configuração do software**: insira o local dos arquivos de instalação ou escolha **Procurar** para selecionar o local em uma lista.
     - **Incluir arquivos e subpastas adicionais da mesma pasta** - Alguns softwares que usam o Windows Installer requerem arquivos de suporte, que geralmente se encontram na mesma pasta que os arquivos de instalação. Selecione esta opção se você também deseja implantar esses arquivos de suporte.
 
     Por exemplo, se você quiser publicar um aplicativo chamado Application.msi no Intune, a página terá esta aparência: ![PC Software Publisher](./media/publisher-for-pc.png) (Fornecedor de Software do Computador)
@@ -71,22 +71,23 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 
 4.  Na página **Requisitos**, selecione os requisitos que devem ser atendidos antes que o aplicativo possa começar a ser instalado em um dispositivo. Escolha **Arquitetura**: selecione se esse aplicativo pode ser instalado em sistemas operacionais de 32 bits, 64 bits ou ambos, **Sistema Operacional**: selecione o sistema operacional mínimo no qual esse aplicativo pode ser instalado.
 
-5.  Somente para o tipo de arquivo do **Windows Installer** (somente exe): na página **Regras de detecção**, você pode configurar regras para detectar se o aplicativo que você está configurando já está instalado em um computador ou pode usar as regras de detecção padrão para substituir automaticamente quaisquer versões previamente instaladas do aplicativo.
+5.  Na página **Regras de detecção**, você pode configurar regras para detectar se o aplicativo que você está configurando já está instalado em um computador ou você pode usar as regras de detecção padrão para substituir automaticamente as versões previamente instaladas do aplicativo. Essa opção é para o Windows Installer (somente arquivos .exe).
+6.  
     As regras que você pode configurar são:
     - **Há um arquivo**: especifique o caminho para o arquivo que deseja detectar. Você pode pesquisar em **%ProgramFiles%** (que procura em **Arquivos de Programas**\*&lt;caminho&gt;* e **Arquivos de Programas (x86)**\*&lt;caminho&gt;*) no computador ou **%SystemDrive%** (que pesquisa da unidade raiz do computador, geralmente C:)
-    - **O código do produto MSI existe**: clique em **Procurar** para escolher o arquivo do Windows Installer (msi) que você deseja detectar. 
+    - **O código do produto MSI existe**: selecione **Procurar** para escolher o arquivo do Windows Installer (msi) que você deseja detectar. 
     - **Chave do Registro existente** - especifique uma chave do Registro que comece com **HKEY_LOCAL_MACHINE\**. Os caminhos do Registro de 32 e 64 bits são pesquisados. Se a chave especificada existe em um dos locais, a regra de detecção é satisfeita.
 
     Se o aplicativo satisfazer alguma das regras que você configurou, ele não será instalado.
 
-6.  Somente para o tipo de arquivo do **Windows Installer** (msi e exe): na página **Argumentos de linha de comando**, escolha se deseja fornecer argumentos de linha de comando opcionais para o instalador. Por exemplo, alguns instaladores podem dar suporte ao argumento **/q** para instalar silenciosamente, sem intervenção do usuário.
+7.  Somente para o tipo de arquivo do **Windows Installer** (msi e exe): na página **Argumentos de linha de comando**, escolha se deseja fornecer argumentos de linha de comando opcionais para o instalador. Por exemplo, alguns instaladores podem dar suporte ao argumento **/q** para instalar silenciosamente, sem intervenção do usuário.
 
-7.  Somente para o tipo de arquivo do **Windows Installer** (exe apenas): na página **Códigos de retorno**, você pode adicionar novos códigos de erro que são interpretados pelo Intune quando o aplicativo é instalado em um computador Windows gerenciado.
+8.  Somente para o tipo de arquivo do **Windows Installer** (exe apenas): na página **Códigos de retorno**, você pode adicionar novos códigos de erro que são interpretados pelo Intune quando o aplicativo é instalado em um computador Windows gerenciado.
     Por padrão, o Intune usa códigos de retorno padrão do setor para reportar a falha ou o êxito da instalação de um pacote do aplicativo: **0**: êxito ou **3010**: êxito com reinicialização. Você também pode adicionar seus próprios códigos de retorno a essa lista. Se você especificar uma lista de códigos de retorno e a instalação do aplicativo retornar um código não contido na lista, ele será interpretado como uma falha.
 
-8.  Na página **Resumo**, examine as informações especificadas por você. Quando estiver pronto, clique em **Carregar**.
+9.  Na página **Resumo**, examine as informações especificadas por você. Quando estiver pronto, selecione **Carregar**.
 
-9. Clique em **Fechar** para concluir.
+10. Selecione **Fechar** para concluir.
 
 O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicativos**.
 
@@ -94,6 +95,6 @@ O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicati
 
 Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implantar aplicativos no Microsoft Intune)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

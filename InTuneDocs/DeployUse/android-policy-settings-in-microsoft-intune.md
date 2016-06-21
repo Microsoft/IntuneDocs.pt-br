@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -138,8 +138,8 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
-|**Reportar não conformidade quando os usuários instalam os aplicativos listados**|Lista os aplicativos que não são gerenciados pelo Intune, para os quais os usuários não têm permissão para instalar e executar.|
-|**Não relatar não conformidade quando os usuários instalam os aplicativos listados**|Lista os aplicativos que os usuários têm permissão para instalar. Para permanecer compatível, os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
+|**Reportar não conformidade quando os usuários instalam os aplicativos listados**|Lista os aplicativos que não são gerenciados pelo Intune, para os quais você não deseja que os usuários instalem e executem. Se os usuários instalarem um desses aplicativos, ele será listado no relatório de aplicativos não compatíveis.|
+|**Não relatar não conformidade quando os usuários instalam os aplicativos listados**|Lista os aplicativos que você deseja permitir na sua empresa. Para permanecer compatível, os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
 |**Adicionar**|Adiciona um aplicativo à lista selecionada. Especifique um nome da sua preferência, opcionalmente o editor do aplicativo, e a URL para o aplicativo na loja de aplicativos.<br /><br />Para obter ajuda, consulte Como especificar URLs para lojas de aplicativos mais adiante neste tópico.|
 |**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.|
 |**Editar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
@@ -150,7 +150,7 @@ Especifique as configurações a seguir para **dispositivos Samsung KNOX**:
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
-|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Clique em **Procurar**, em seguida, selecione o aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque (aplicativos especificados como um link para a loja não tem suporte no momento). Nenhum outro aplicativo poderá ser executado no dispositivo.|
+|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Selecione **Procurar** e, em seguida, selecione o aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque (aplicativos especificados como um link para a loja não tem suporte no momento). Nenhum outro aplicativo poderá ser executado no dispositivo.|
 |**Permitir o uso dos botões de volume**|Habilita ou desabilita o uso dos botões de volume no dispositivo.|
 |**Permitir que o botão de ativação e suspensão da tela**|Habilita ou desabilita o botão de ativação e suspensão da tela no dispositivo.|
 
@@ -177,10 +177,9 @@ Abra a página de instalação do aplicativo e copie a URL para a área de trans
 ## Configurações de política personalizada
 Use a **Política de configuração personalizada do Android** do Microsoft Intune para implantar configurações OMA-URI (Open Mobile Alliance Uniform Resource Identifier), que podem ser usadas para controlar funcionalidades em dispositivos Android. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
-Essa funcionalidade destina-se a permitir que você implante configurações do Android que não são configuráveis com as políticas do Intune. Para obter informações sobre as configurações que você pode definir com essas políticas, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e recursos em seus dispositivos com as políticas do Microsoft Intune).
+Essa funcionalidade destina-se a permitir que você implante configurações do Android que não são configuráveis com as políticas do Intune.
 
-> [!NOTE]
-> Atualmente, as políticas personalizadas do Android dão suporte apenas à definição de configurações de Wi-Fi para dispositivos Android que incluem uma chave pré-compartilhada. Consulte Configurar um perfil de Wi-Fi personalizado com uma chave pré-compartilhada posteriormente nesse tópico para obter mais informações.
+> [!NOTE] Atualmente, as políticas personalizadas do Android dão suporte apenas à definição de configurações de Wi-Fi para dispositivos Android que incluem uma chave pré-compartilhada.
 
 ### Configurações gerais
 
@@ -258,6 +257,6 @@ Embora o Intune dê suporte a perfis de Wi-Fi para dispositivos Android, atualme
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

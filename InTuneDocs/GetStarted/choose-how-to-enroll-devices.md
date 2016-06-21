@@ -35,31 +35,52 @@ Registro de dispositivo móvel é o processo que traz smartphones, tablets e com
 
 As respostas para as perguntas a seguir ajudam a determinar o melhor método de registro para os dispositivos gerenciados.
 
-## Os funcionários trazem seus próprios dispositivos ou recebem dispositivos fornecidos pela sua organização?
+## **Os funcionários trazem seus próprios dispositivos ou recebem dispositivos fornecidos pela sua organização?**
 
-  **Dispositivos de usuários** – registro "BYOD" (Traga seu próprio dispositivo): os usuários podem instalar o aplicativo de Portal da Empresa do Intune em seu dispositivo e registrá-lo, obtendo acesso a recursos da empresa como email, aplicativos da empresa, dados da empresa e suporte.  
-  > [!div class="button"]   [Registro BYOD >](..deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+  **Dispositivos de usuários**, também conhecidos como registro BYOD ("Traga seu próprio dispositivo"), permitem que os usuários registrem seus dispositivos para obter acesso aos recursos da empresa, como email, aplicativos da empresa, os dados da empresa e suporte. **COD (Dispositivos da empresa)** são fornecidos pela organização para os funcionários atenderem uma necessidade de negócios.
+  > [!div class="button"]   [Registro BYOD >](#byod-device-enrollment)   [Registro de COD>](cod-device-enrollment)
 
-  **Dispositivos da empresa**: COD (dispositivos da empresa) podem ser registrados de diversas maneiras, dependendo das necessidades da organização e dos tipos de dispositivos gerenciados. Próxima pergunta...
+### Registro de dispositivo BYOD
 
-## Seus dispositivos da empresa são compartilhados ou têm usuários individuais?
+O registro de BYOD requer que os usuários instalem o aplicativo de Portal da Empresa do Intune em seus dispositivos. Em seguida, eles podem iniciar o aplicativo e registrá-lo fornecendo suas credenciais corporativas ou de estudante. O Intune fornecido localiza uma licença para essas credenciais, o dispositivo é adicionado ao console de administração do Intune e recebe a política do Intune, concedendo acesso aos recursos da empresa.
 
-**Dispositivos da empresa compartilhados**: esses dispositivos não tem um único usuário e geralmente não estão configurados para acessar email. Os exemplos incluem dispositivos de quiosque ou dispositivos orientados a tarefas que os usuários extraem de um pool, conforme necessário e depois retornam. Os métodos de registro recomendados dependem da plataforma dos dispositivos.
+**Selecionar o tipo de dispositivo:**
+
+> [!div class="op_single_selector"]
+- [Configurar o gerenciamento de Android com o Microsoft Intune](..deploy-use/set-up-android-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Configurar o gerenciamento do Windows Phone com o Microsoft Intune](..deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
+- [Configurar o gerenciamento do dispositivo Windows com o Microsoft Intune](..deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
+
+
+### Registro de dispositivo COD
+
+Dispositivos da empresa podem ser registrados para dar suporte a um usuário dedicado ou compartilhado.  **Dispositivos compartilhados** não tem um único usuário e geralmente não estão configurados para acessar email. Os exemplos incluem dispositivos de quiosque ou dispositivos orientados a tarefas que os usuários emprestam de um pool conforme necessário e depois retornam. Os métodos de registro recomendados dependem da plataforma dos dispositivos. Os **usuários individuais** que são emitidos a usuários individuais precisam ser controlados como ativos da empresa ao mesmo tempo que permitem aos usuários acessar email e dados como dispositivos personalizados. Os métodos de registro recomendados dependem da plataforma dos dispositivos.
+
+## **Seus dispositivos da empresa são compartilhados ou têm usuários dedicados?**
+
+> [!div class="button"] [Compartilhado >](#Shared-company-owned-devices)   [Dedicado >](..deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+
+
+### Dispositivos da empresa compartilhados
+
+Esses dispositivos não tem um único usuário e geralmente não estão configurados para acessar email. Os exemplos incluem dispositivos de quiosque ou dispositivos orientados a tarefas que os usuários emprestam de um pool conforme necessário e depois retornam. Os métodos de registro recomendados dependem da plataforma dos dispositivos.
 
   - **Dispositivos com Android e Windows**: um *gerenciador de registro de dispositivo* é uma conta do Intune que pode ser usada para registrar vários dispositivos compartilhados usando o aplicativo de Portal da Empresa.
-  > [!div class="button"]   [Gerenciador de registro de dispositivo >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+  > [!div class="button"]   [Windows >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#shared-ios-device-enrollment)
 
-  - **Dispositivos iOS**: dispositivos iOS compartilhados podem ser gerenciados de três maneiras.  **Como você registrará seus dispositivos iOS compartilhados?**
+### Registro de dispositivo iOS compartilhado
 
-    - **DEP (Programa de Registro do Dispositivo) da Apple**: dispositivos iOS podem ser comprados ou gerenciados com o DEP com um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com ele
-    > [!div class="button"]     [Registro DEP >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+O método preferido de registro para dispositivos iOS da empresa compartilhados depende de como você comprar e gerenciar esses dispositivos:
 
-    - **Apple Configurator em um Mac**: o Apple Configurator é um aplicativo da Apple que é executado em um computador Mac. Você pode conectar dispositivos iOS ao Mac com um cabo USB para instalar um perfil de registro no dispositivo. Se você puder redefinir os dispositivos para os padrões de fábrica, use o Assistente de Configuração. Se você não quiser redefinir os dispositivos para os padrões de fábrica, use o Registro direto.
+  - **DEP (Programa de Registro do Dispositivo) da Apple**: dispositivos iOS podem ser comprados ou gerenciados com o DEP com um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com ele
+  - **Apple Configurator em um Mac (Mac)**: o Apple Configurator é um aplicativo da Apple que é executado em um computador Mac. Você pode conectar dispositivos iOS ao Mac com um cabo USB para instalar um perfil de registro no dispositivo. Se você puder redefinir os dispositivos para os padrões de fábrica, use o Assistente de Configuração. Se você não quiser redefinir os dispositivos para os padrões de fábrica, use o Registro direto.
+  - **Nenhum deles**: se você não puder ou não quiser usar os métodos de DEP ou Apple Configurator, use o gerenciador de registro de dispositivo do Intune.
 
-    > [!div class="button"]     [Registro do assistente de configuração >](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) ou [Registro direto >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)
+  **Escolha:**
+    > [!div class="button"]      [Registro DEP >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Mac >](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Registro direto >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)  
 
-    - **Nenhum deles**: se você não puder ou não quiser usar os métodos de DEP ou Apple Configurator, use o gerenciador de registro de dispositivo do Intune.
-    > [!div class="button"]     [Registro DEM >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+  > [!div class="button"]     [Registro DEM >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 **Usuários individuais**: -dispositivos da empresa que são concedidos a usuários individuais precisam ser controlados como ativos da empresa, permitindo ainda aos usuários acessar email e dados como dispositivos pessoais. Os métodos de registro recomendados dependem da plataforma dos dispositivos.
 
@@ -80,6 +101,6 @@ As respostas para as perguntas a seguir ajudam a determinar o melhor método de 
     - **Nenhum deles**: se você não puder ou não quiser usar os métodos de registro do DEP ou o Apple Configurator, importando o IMEI (identidade internacional de equipamentos móveis) de dispositivos da empresa, você poderá marcá-los como dispositivos da empresa no Intune. Os usuários podem registrar seus dispositivos como um dispositivos pessoal instalando o Portal da Empresa para acessar os recursos da empresa como email, aplicativos e dados. > [!div class="button"][Marcar dispositivos com números do IMEI](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

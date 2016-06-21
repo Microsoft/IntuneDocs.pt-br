@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Seu computador já está registrado
 
-Se você receber um erro que seu computador já está registrado, isso significará que seu computador já foi adicionado ao Portal da Empresa, mas ainda não está vinculado à sua conta de usuário. Siga este procedimento para vincular seu computador a sua conta de usuário e concluir o processo.
+Se você receber um erro que seu computador já está registrado, isso significará que seu computador já foi adicionado ao Portal da Empresa, mas ainda não está vinculado à sua conta de usuário. Siga este procedimento para vincular seu computador a sua conta de usuário e concluir o processo.  
 
 Para vincular o seu computador:
 
@@ -38,8 +38,10 @@ Para vincular o seu computador:
 
 3.  Siga os avisos para vincular o computador a sua conta de usuário.
 
-Se você precisar de Ajuda e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você preferir cancelar o registro do seu dispositivo, use as instruções para o tipo de dispositivo que você tem: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
-<!--HONumber=Jun16_HO1-->
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Proteger aplicativos de linha de negócios e dados em dispositivos não registrados | Microsoft Intune]
+title: Proteger aplicativos de linha de negócios e dados em dispositivos não registrados | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ Para associar seu aplicativo de linha de negócios com as políticas de MAM, voc
 
 ## Etapa 3: aplicar políticas MAM
 Depois dos metadados do aplicativo serem carregados para o serviço, o aplicativo aparecerá na lista de aplicativos.  Agora você pode [criar uma nova política ou uma política existente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) e aplicá-la no aplicativo de linha de negócios adicionado na etapa 2.
+
+>[!IMPORTANT]
+>Você deve direcionar a política MAM aos usuários que pretendem usar o aplicativo encapsulado.  Os usuários que não têm essa política implantada não poderão usar o aplicativo.
+
+
   ![Captura de tela da folha Lista de destino de aplicativos com o novo aplicativo de linha de negócios exibido](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Etapa 4: distribuir o aplicativo
 Você pode implantar aplicativos para seus usuários finais das seguintes maneiras:
@@ -75,6 +80,6 @@ Você pode remover um aplicativo de linha de negócios da lista de aplicativos. 
   Isso removerá os aplicativos da lista de aplicativos da linha de negócios e da lista de destino de aplicativos na política MAM.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

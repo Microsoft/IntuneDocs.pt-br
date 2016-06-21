@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Para remover de maneira seletiva os dados dos aplicativos da empresa, crie uma s
 
     ![Captura de tela da folha Gerenciamento de aplicativo móvel do Intune com bloco Resumo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Clique em **Nova solicitação para apagar**.
+2.  Clique em **Nova solicitação de apagamento**.
 
     ![Captura de tela da folha Nova solicitação para apagar](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -58,7 +58,7 @@ A folha **Gerenciamento de aplicativos móveis do Intune** tem um relatório res
 
 1.  Na folha **Gerenciamento de aplicativo móvel do Intune**, escolha o bloco **Solicitação para apagar** para abrir a folha **Solicitação para apagar**.
 
-2.  Na folha **Solicitação de apagamento** , você pode ver a lista de suas solicitações agrupadas por usuário.  Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário.  O status indica se uma solicitação de apagamento ainda está **pendente**, se apresenta **falha** ou se foi **bem-sucedida**.
+2.  Na folha **Solicitação de apagamento** , você pode ver a lista de suas solicitações agrupadas por usuário.  Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário.  O status indica se uma solicitação de apagamento ainda está **pendente**, com **falha**ou **bem-sucedida**.
 
 ### Consulte também
 [Protect app data using mobile app management policies (Proteger dados de aplicativo usando políticas de gerenciamento de aplicativo móvel) ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -66,6 +66,6 @@ A folha **Gerenciamento de aplicativos móveis do Intune** tem um relatório res
 [Using the Azure portal (Usando o Portal do Azure)](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

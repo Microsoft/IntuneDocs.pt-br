@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -75,12 +75,10 @@ Se um usuário estiver nos dois grupos, ele ficará isento da política.
 ### Etapa 2: Configurar e implantar uma política de conformidade
 [Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implante](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade para todos os dispositivos que serão afetados pela política. Esses seriam todos os dispositivos usados pelos usuários nos **Grupos de destino**.
 
-> [!NOTE]
-> Enquanto as políticas de conformidade são implantadas em grupos [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
+> [!NOTE] Enquanto as políticas de conformidade são implantadas em grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
 
 
-> [!IMPORTANT]
-> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
+> [!IMPORTANT] Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
 
 Quando estiver pronto, continue na **Etapa 3**.
 
@@ -121,6 +119,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 * **Dispositivos registrados com o AAD e que são compatíveis** – esses dispositivos podem acessar o Skype for Business Online.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

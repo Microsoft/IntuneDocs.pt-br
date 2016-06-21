@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 06/03/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,43 +32,43 @@ Siga estas etapas para realizar as tarefas que precisar no dispositivo Android q
 
 ## Instalação do aplicativo de Portal da Empresa e registro no Intune
 
-As informações nesta seção ajudam na instalação do Portal da Empresa do Intune e no registro de dispositivos iOS.
+As informações nesta seção ajudam na instalação do Portal da Empresa do Intune e no registro de dispositivos para dispositivos Android.
 
-- [Registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md)</br>
+- [Registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md)
 - [O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Coisas que você pode fazer quando seu dispositivo está registrado no Intune
 
-As informações nesta seção ajudam com as ações que precisam ser realizadas depois que o dispositivo iOS é registrado no Intune.
+As informações nesta seção ajudam com as ações que precisam ser realizadas depois que o dispositivo Android é registrado no Intune.
 
-- [Use aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-android.md)</br>
-- [Criptografar seu dispositivo](encrypt-your-device-android.md)</br>
-- [Definir o PIN ou senha](set-your-pin-or-password-android.md)</br>
-- [Instalar a VPN (rede privada virtual) da sua empresa](install-your-companys-virtual-private-network-VPN-android.md)</br>
-- [Definir o período de tempo antes que seu dispositivo seja bloqueado](set-the-amount-of-time-before-your-device-is-locked-android.md)</br>
-- [Redefinir (apagar) o dispositivo perdido ou roubado](reset-erase-your-lost-or-stolen-device-android.md)</br>
-- [Desativar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-android.md)</br>
-- [Cancelar o registro do dispositivo do Intune](unenroll-your-device-from-intune-android.md)</br>
-- [Cancelar o registro do dispositivo quando você recusa os Termos de Uso](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)</br>
-- [O que acontece quando você cancela o registro do dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)</br>
+- [Use aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-android.md)
+- [Criptografar seu dispositivo](encrypt-your-device-android.md)
+- [Definir o PIN ou senha](set-your-pin-or-password-android.md)
+- [Instalar a VPN (rede privada virtual) da sua empresa](install-your-companys-virtual-private-network-VPN-android.md)
+- [Definir o período de tempo antes que seu dispositivo seja bloqueado](set-the-amount-of-time-before-your-device-is-locked-android.md)
+- [Redefinir (apagar) o dispositivo perdido ou roubado](reset-erase-your-lost-or-stolen-device-android.md)
+- [Desativar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-android.md)
+- [Cancelar o registro do dispositivo do Intune](unenroll-your-device-from-intune-android.md)
+- [Cancelar o registro do dispositivo quando você recusa os Termos de Uso](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- [O que acontece quando você cancela o registro do dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [O que acontece quando você redefine o dispositivo Android usando o aplicativo Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 
 ## Corrigir problemas com seu dispositivo
 
-As informações nesta seção ajudam a corrigir problemas que podem ser encontrados depois que o dispositivo iOS é registrado no Intune.
+As informações nesta seção ajudam a corrigir problemas que podem ser encontrados depois que o dispositivo Android for registrado no Intune.
 
-- [Use o Registro em Log Detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)</br>
-- [Enviar logs de dados de diagnóstico para o administrador de TI usando email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)</br>
-- [Enviar logs de dados de diagnóstico para o administrador de TI usando cabo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
-- [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)</br>
-- [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
-- [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [O dispositivo tem um caminho raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)</br>
-- [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-android.md)</br>
-
-
+- [Use o Registro em Log Detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Enviar logs de dados de diagnóstico para o administrador de TI usando email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
+- [Enviar logs de dados de diagnóstico para o administrador de TI usando cabo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+- [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)
+- [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
+- [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [O dispositivo tem um caminho raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)
+- [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-android.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 

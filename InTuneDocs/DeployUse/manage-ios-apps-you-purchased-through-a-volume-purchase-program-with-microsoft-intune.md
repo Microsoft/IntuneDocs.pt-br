@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Antes de começar, você precisará obter um token de VPP da Apple e carregá-lo
 * Por padrão, o Intune é sincronizado com o serviço VPP da Apple duas vezes por dia. No entanto, você pode iniciar uma sincronização manual a qualquer momento.
 * Depois de importar o token VPP no Intune, não importe o mesmo token em outra solução de gerenciamento de dispositivo. Isso pode resultar na perda de registros de usuário e atribuição de licença.
 * Antes de começar a usar o VPP do iOS com o Intune, remova as contas de usuário VPP existentes criadas com outros fornecedores MDM. O Intune não sincronizará essas contas de usuário no Intune como medida de segurança. O Intune somente sincronizará os dados do serviço VPP da Apple que foram criados pelo Intune. 
+* Não é possível implantar aplicativos VPP do iOS em dispositivos que tenham sido registrados usando o DEP (Protocolo de Registro de Dispositivo).
 
 ## Obter e carregar um token de VPP da Apple
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Administrador** &gt; **iOS e Mac OS X** &gt;  **Volume Purchase Program**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administrador** &gt; **iOS e Mac OS X** &gt;  **Volume Purchase Program**.
 
-2.  Clique no link **conta VPP da Apple** e, se você ainda não fez isso, inscreva-se no Volume Purchase Program para Empresas. Depois de se inscrever, baixe o token de VPP da Apple para sua conta.
+2.  Selecione o link **Conta da Apple VPP** e, se você ainda não fez isso, inscreva-se no Volume Purchase Program para Empresas. Depois de se inscrever, baixe o token de VPP da Apple para sua conta.
 
-3.  Na página **Gerenciar VPP (Apple Volume Purchase Program)** do console do Intune, clique em **Carregar o token VPP**.
+3.  Na página **Gerenciar VPP (Apple Volume Purchase Program)** do console do Intune, selecione **Carregar o token VPP**.
 
-4.  Na caixa de diálogo **Carregar Token VPP**, digite ou cole o nome do token VPP e sua ID da Apple e clique em **Carregar**.
+4.  Na caixa de diálogo **Carregar Token VPP**, digite ou cole o nome do token VPP e sua ID da Apple e selecione **Carregar**.
 
-5.  Na caixa de diálogo de aviso, clique na caixa de seleção para indicar que você entende que não é possível mudar para uma conta de VPP diferente posteriormente e clique em **Sim**.
+5.  Na caixa de diálogo de aviso, selecione a caixa de seleção para indicar que você entende que não é possível mudar para uma conta de VPP diferente posteriormente e selecione **Sim**.
 
 Na página **Volume Purchase Program**, agora você pode exibir informações sobre o token de VPP da Apple, inclusive quando foi a última atualização, quando ela expirará e quando foi sincronizada pela última vez com o Intune.
 
-Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer momento clicando em **Sincronizar agora**.
+Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer momento selecionando **Sincronizar agora**.
 
 ## Implantar um aplicativo comprado por volume
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Software Gerenciado** &gt; **Aplicativos Adquiridos por Volume**. Esta lista mostra todos os aplicativos que foram sincronizados do serviço VPP da Apple.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Software Gerenciado** &gt; **Aplicativos de Compra de Volume**. Esta lista mostra todos os aplicativos que foram sincronizados do serviço VPP da Apple.
 
-2.  Escolha o aplicativo que deseja implantar, clique em **Gerenciar Implantação** e use as instruções no tópico [Implantar aplicativos em dispositivos móveis no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, criação e implantação do aplicativo.
+2.  Escolha o aplicativo que deseja implantar, selecione **Gerenciar Implantação** e use as instruções no tópico [Implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, criação e implantação do aplicativo.
 
 Quando você implantar o aplicativo como uma instalação **Obrigatória**, uma licença será usada por cada usuário que instalar o aplicativo.
 
@@ -89,6 +90,6 @@ Você pode monitorar quais aplicativos de VPP foram implantados e quantas licen�
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

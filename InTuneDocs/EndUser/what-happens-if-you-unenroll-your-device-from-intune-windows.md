@@ -28,7 +28,7 @@ ms.suite: ems
 
 # O que acontece quando você cancela o registro do dispositivo no Intune?
 
-Quando você desinstala o aplicativo Portal da Empresa do dispositivo, ele também cancela o registro do dispositivo no Intune. Para obter informações adicionais sobre o que acontece use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você está usando.
+Para obter informações adicionais sobre o que acontece use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você está usando.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 ou Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,11 +92,11 @@ Quando você remover seu dispositivo Windows RT, acontecerá o seguinte:
 
 -   Quaisquer configurações alteradas no seu dispositivo quando ele foi adicionado, por exemplo a desabilitação da câmera ou a solicitação de uma senha de determinado tamanho, não se aplicarão mais.
 
-Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

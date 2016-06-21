@@ -100,11 +100,11 @@ Quando o dispositivo é registrado, o administrador de TI pode:
 
 Para obter as etapas de como registrar o dispositivo, consulte [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrar o dispositivo iOS no Intune) ou [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrar o dispositivo Mac OS X no Intune).
 
-Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

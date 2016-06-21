@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,7 @@ Se no momento você estiver usando o **Console de administração do Intune** pa
 
 - Android 4 ou posterior
 
+Não há suporte para dispositivos Windows.
 ##  Aplicativos com suporte
 * **Aplicativos Microsoft:** esses aplicativos têm o SDK de Aplicativo do Intune interno e não exigem nenhum processamento adicional antes de aplicar as políticas MAM.
 Para ver a lista completa de aplicativos da Microsoft com suporte, vá para a [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) na página de parceiros de aplicativos do Microsoft Intune. Clique no aplicativo para ver os cenários e plataformas com suporte e se o aplicativo dá suporte a várias identidades ou não.
@@ -123,6 +124,6 @@ A tabela a seguir lista a função e as permissões que você pode atribuir a us
 [Criar e implantar políticas de gerenciamento de aplicativo móvel com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

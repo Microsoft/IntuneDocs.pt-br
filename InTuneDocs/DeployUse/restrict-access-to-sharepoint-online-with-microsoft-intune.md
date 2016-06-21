@@ -18,7 +18,7 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,7 +48,7 @@ Quando um usuário tenta se conectar a um arquivo usando um aplicativo com supor
   Para conectar-se aos arquivos necessários, o dispositivo precisa:
 -   Estar **registrado** no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou em um computador ingressado no domínio.
 
--   **Registre o dispositivo** no Azure Active Directory (isso ocorre automaticamente quando o dispositivo for registrado no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Registre o dispositivo** no Azure Active Directory (isso ocorre automaticamente quando o dispositivo for registrado com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
 
 -   Ser compatível com qualquer política de conformidade do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implantada
@@ -78,7 +78,7 @@ O AAD DRS será ativado automaticamente para clientes do Intune e do Office 365.
   - Se a política estiver definida para exigir ingresso no domínio ou compatibilidade e o computador não atender a nenhum dos dois requisitos, será exibida uma mensagem com instruções sobre como instalar o aplicativo do Portal da Empresa e realizar o registro.
 -    [A autenticação moderna do Office 365 deve estar habilitada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
 
-    A autenticação moderna leva as credenciais baseadas na ADAL (Active Directory Authentication Library) aos clientes Windows com Office 2013 e permite mais segurança como a **autenticação multifator** e a **autenticação baseada em certificado**.
+    A autenticação moderna leva as credenciais baseadas na ADAL (Active Directory Authentication Library) para os clientes Windows com Office 2013 e permite mais segurança como a **autenticação multifator** e a **autenticação baseada em certificado**.
 
 
 ## Configurar o acesso condicional para o SharePoint Online
@@ -97,13 +97,11 @@ Se um usuário estiver nos dois grupos, ele ficará isento da política.
 ### Etapa 2: Configurar e implantar uma política de conformidade
 Se ainda não tiver feito isso, crie e implante uma política de conformidade para todos os usuários aos quais a política do SharePoint Online se destinará.
 
-> [!NOTE]
-> Enquanto as políticas de conformidade são implantadas em grupos [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
+> [!NOTE] Enquanto as políticas de conformidade são implantadas em grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
 
-Para obter detalhes sobre como configurar a política de conformidade, veja [criar uma política de conformidade](create-a-device-compliance-policy-in-microsoft-intune.md).
+Para obter detalhes sobre como configurar a política de conformidade, consulte [create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md) (criar uma política de conformidade).
 
-> [!IMPORTANT]
-> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
+> [!IMPORTANT] Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
 
 Quando estiver pronto, continue na **Etapa 3**.
 
@@ -123,7 +121,7 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
 
         Isso requer que qualquer dispositivo usado para acessar o **SharePoint Online** seja registrado no Intune e esteja compatível com as políticas.  Qualquer aplicativo cliente usando a **autenticação moderna** está sujeito à política de acesso condicional. Se a plataforma não tiver suporte do Intune, o acesso ao **SharePoint Online** será bloqueado.
         >[!TIP]
-        >Você não encontrará essa opção se você não estiver usando o acesso condicional para computadores.  Em vez disso, use **Plataformas específicas**. O acesso condicional para computadores não está disponível no momento para todos os clientes do Intune.   Você pode encontrar mais informações sobre problemas conhecidos, bem como para obter acesso a esse recurso no [site do Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >Você não encontrará essa opção se você não estiver usando o acesso condicional para computadores.  Em vez disso, use **Plataformas específicas**. O acesso condicional para computadores não está disponível no momento para todos os clientes do Intune.   Você pode encontrar mais informações sobre problemas conhecidos e como obter acesso a esse recurso no [site do Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
 
     -   **Plataformas específicas**
 
@@ -160,6 +158,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 [Restringir o acesso a email e serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

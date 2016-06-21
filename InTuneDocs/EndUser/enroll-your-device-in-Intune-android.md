@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/24/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo Android para obter acesso a email, arquivos e outros recursos corporativos. O registro dos dispositivos permite que o departamento de TI gerencie recursos corporativos ou de estudante e os mantenha seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo o aplicativo Portal da Empresa e registro meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-Essas instruções de registro são para dispositivos Samsung Knox Android e dispositivos Android "nativos" (não Samsung Knox). Para determinar se você tem um dispositivo Samsung Knox, vá para **Configurações** &gt; **Sobre o telefone**. Se você não vir a palavra "Knox" listada, terá um dispositivo Android nativo.
+Essas instruções de registro são para dispositivos Samsung Knox Android e dispositivos Android "nativos" (não Samsung Knox). Para determinar se você tem um dispositivo Samsung Knox, vá para **Configurações** &gt; **Sobre o dispositivo**. Se você não vê a "versão do KNOX" listada, tem um dispositivo Android nativo.
 
 Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O administrador de TI usa essa categoria para ajudar a determinar quais aplicativos você terá acesso.
 
@@ -57,7 +57,7 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca faz nem gerencia suas chamadas telefônicas**! O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permite o acesso, tudo o que faz é permitir que o dispositivo grave logs de dados no cartão SD do dispositivo, o que permite que você mova esses logs usando um cabo USB. Talvez seja necessário usar essa funcionalidade para enviar logs para o administrador de TI, se você tiver um problema ao usar o aplicativo Portal da Empresa. Saiba como [enviar registros de erros para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md).
+    Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca faz nem gerencia suas chamadas telefônicas**! O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permite o acesso, tudo o que faz é permitir que o dispositivo grave logs de dados no cartão SD do dispositivo, o que permite que você mova esses logs usando um cabo USB.
 
     Se você negar acesso, a mensagem será exibida novamente na próxima vez que você entrar no Portal da Empresa, mas você pode desligar as mensagens futuras tocando na caixa de seleção **Nunca Perguntar Novamente**.  Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telefone** e ative a permissão.
 
@@ -65,7 +65,7 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acessa seus contatos!** O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permite o acesso, ele só permite que o aplicativo Portal da Empresa acesse logs de dados para ajudar a solucionar problemas no dispositivo.
+    Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acessa seus contatos!** O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permitir acesso, ele só permitirá que o aplicativo do Portal da Empresa crie, use e gerencie sua conta corporativa.
 
     Se você negar o acesso, a mensagem será exibida novamente na próxima vez que você tocar em **Enviar Dados**, mas você poderá desligar mensagens futuras tocando na caixa de seleção **Nunca perguntar novamente**. Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ativar a permissão.
 
@@ -97,7 +97,7 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![Inserir o PIN ou a senha](./media/and-enroll-6-PIN-native.png)
 
-13.  Siga as instruções abaixo que corresponde ao tipo de dispositivo que você está usando (Android nativo ou Samsung Knox). Para determinar se você tem um dispositivo Samsung Knox, vá para **Configurações** &gt; **Sobre o telefone**. Se você não vir a palavra "Knox" listada, terá um dispositivo Android nativo.
+13.  Siga as instruções abaixo que corresponde ao tipo de dispositivo que você está usando (Android nativo ou Samsung Knox). Para determinar se você tem um dispositivo Samsung Knox, vá para **Configurações** &gt; **Sobre o dispositivo**. Se você não vê a "versão do KNOX" listada, tem um dispositivo Android nativo.
 
     -   Dispositivo nativo (não Samsung Knox): na tela **Nome do certificado**, toque em **OK** para aceitar o certificado padrão.
 
@@ -119,7 +119,7 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![Tela Configuração de acesso da empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Antes de instalar os aplicativos da empresa, acesse **Configurações** &gt; **Segurança**, e ative **Fontes Desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem "Instalação bloqueada". Por motivos de segurança, seu telefone está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes Desconhecidas**.
+Antes de instalar os aplicativos da empresa, acesse **Configurações** &gt; **Segurança**, e ative **Fontes Desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem "Instalação bloqueada". Por motivos de segurança, seu dispositivo está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes Desconhecidas**.
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 

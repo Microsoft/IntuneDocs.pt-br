@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo Andr
 
 -   Redefinir seu telefone para configurações de fábrica, caso ele seja perdido ou roubado
 
-Ao adicionar seu dispositivo Android, você permitirá que o seu administrador de TI acesse o dispositivo. Ele pode fazer o seguinte:
+Ao registrar seu dispositivo Android, você permitirá que o seu administrador de TI acesse o dispositivo. Ele pode fazer o seguinte:
 
 -   Redefinir o dispositivo de volta para os padrões de fábrica. Essa ação será útil se o dispositivo for perdido ou roubado.
 
@@ -60,11 +60,11 @@ Ao adicionar seu dispositivo Android, você permitirá que o seu administrador d
 
     -   Enviar quaisquer atualizações de inventário de aplicativo da empresa (essas atualizações não contêm informações pessoais).
 
-Se você tiver dúvidas e não for possível encontrar informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

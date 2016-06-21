@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ Permite que você gerencie e implante aplicativos do iOS gratuitos da Windows St
 > [!TIP] As opções para dispositivos móveis não estão disponíveis até que você [defina a Autoridade de Gerenciamento de Dispositivo Móvel](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
 
 ## Suporte para aplicativos da UWP (Plataforma Universal do Windows)
-Dispositivos Windows 10 não exigem uma chave de sideload para instalar aplicativos de linha de negócios. No entanto, a chave do Registro **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve ter um valor de **1** para habilitar o sideload.
+Computadores Windows 10 não exigem uma chave de sideload para instalar aplicativos de linha de negócios. No entanto, a chave do Registro **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve ter um valor de **1** para habilitar o sideload.
 
 Se essa chave do Registro não estiver configurada, o Intune definirá automaticamente esse valor como **1** na primeira vez que um aplicativo for implantado no dispositivo. Se você tiver definido o valor como **0**, o Intune não poderá alterar o valor automaticamente e a implantação de aplicativos de linha de negócios falhará.
 
@@ -96,6 +96,6 @@ Em dispositivos Windows 10 Mobile, você pode usar um certificado de assinatura 
 
 Em seguida, você precisará adicionar aplicativos no console do Intune antes de implantá-los. Você pode adicionar aplicativos para [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou para [computadores Windows gerenciados com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,21 +32,21 @@ Se o seu telefone Android for perdido ou roubado, você poderá redefini-lo para
 
 Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) (O que acontecerá se você redefinir seu dispositivo usando o Portal da Empresa).
 
-> [!WARNING] Redefinir um dispositivo para os padrões de fábrica remove dele as suas informações pessoais e de trabalho.
+> [!WARNING] Redefinir um dispositivo para os padrões de fábrica remove dele as suas informações pessoais, corporativas ou de estudante.
 
-1.  No navegador, abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e entre com sua conta de trabalho.
+1.  No navegador, abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e entre com sua conta corporativa ou de estudante.
 
 2.  Toque em **Meus Dispositivos** e selecione o nome do dispositivo perdido ou roubado.
 
 3.  Clique em **Redefinir** &gt; **Redefinir**.
 
-Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

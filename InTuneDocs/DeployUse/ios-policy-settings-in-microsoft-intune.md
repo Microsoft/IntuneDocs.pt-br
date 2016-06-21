@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ Se a configuração que você está procurando não aparecer nesse tópico, voc�
 |**Permitir loja de aplicativo**|Permite que o dispositivo acesse a loja de aplicativos.|Sim|
 |**Exigir uma senha para acessar a loja de aplicativo**|Sim|
 |**Permitir aquisições em aplicativo**|Permitir que aquisições da loja sejam feitas de um aplicativo em execução.|Sim|
-|**Permitir documentos gerenciados em outros aplicativos não gerenciados**|Permite que documentos corporativos sejam exibidos em qualquer aplicativo.|SO 7.1 e posterior|
+|**Permitir documentos gerenciados em outros aplicativos não gerenciados**|Permite que documentos corporativos sejam exibidos em qualquer aplicativo.<br>**Exemplo:** você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como não. Depois que o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permitirá salvar.|iOS 7.1 e posterior|
 |**Permitir documentos não gerenciados em outros aplicativos gerenciados**|Permitir que qualquer documento seja exibido em aplicativos gerenciados corporativos.|iOS 7.1 e posterior|
 |**Permitir videoconferência**|Permitir aplicativos de videoconferência como Facetime no dispositivo.|Sim|
 |**Permitir conteúdo de adulto na loja de mídia**|Permitir ao dispositivo acessar o conteúdo classificado como adulto na loja.|Sim|
@@ -153,7 +153,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
-|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Clique em **Procurar**e selecione o aplicativo gerenciado ou o aplicativo de uma loja que poderá ser executado quando o dispositivo estiver no modo quiosque. Nenhum outro aplicativo poderá ser executado no dispositivo. Para obter mais ajuda, consulte **Como especificar URLs para lojas de aplicativos** mais adiante neste tópico.|
+|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Escolha **Procurar** e especifique o aplicativo gerenciado ou o aplicativo de uma loja que poderá ser executado quando o dispositivo estiver no modo de quiosque. Nenhum outro aplicativo poderá ser executado no dispositivo. Para obter mais ajuda, consulte **Como especificar URLs para lojas de aplicativos** mais adiante neste tópico.|
 |**Permitir toque**|Habilita ou desabilita a tela sensível ao toque no dispositivo.|
 |**Permitir rotação da tela**|Habilita ou desabilita a alteração da orientação da tela quando você gira o dispositivo.|
 |**Permitir o uso dos botões de volume**|Habilita ou desabilita o uso dos botões de volume no dispositivo.|
@@ -222,7 +222,7 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 |Nome da configuração|Detalhes|
     |----------------|--------------------|
 |**Nome do perfil de configuração personalizada (exibido aos usuários)**|Forneça um nome para a política, como ela será exibida no dispositivo e em relatórios da política do Intune.|
-|**Arquivo de configuração de perfil**|Clique em **Importar**e navegue até o perfil de configuração que você criou usando o Apple Configurador. **Observação:** certifique-se de que as configurações que você exportar da ferramenta Apple Configurator sejam compatíveis com a versão do iOS nos dispositivos nos quais você implantar a política personalizada do iOS. Para obter informações sobre como as incompatibilidades de configuração são resolvidas, pesquise a **Referência de Perfil de Configuração** e a **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).|
+|**Arquivo de configuração de perfil**|Clique em **Importar** e navegue até o perfil de configuração criado usando o Apple Configurador. **Observação:** certifique-se de que as configurações que você exportar da ferramenta Apple Configurator sejam compatíveis com a versão do iOS nos dispositivos nos quais você implantar a política personalizada do iOS. Para obter informações sobre como as incompatibilidades de configuração são resolvidas, pesquise a **Referência de Perfil de Configuração** e a **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).|
     |**Detalhes da configuração do perfil**|Exibe o código xml para o perfil de configuração que você importou.|
 
 ### Consulte também
@@ -230,6 +230,6 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

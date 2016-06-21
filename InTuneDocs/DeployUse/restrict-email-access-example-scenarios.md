@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -70,7 +70,7 @@ O fluxo a seguir é usado para decidir quais dispositivos podem acessar o Exchan
 ## Nenhum dispositivo Android pode acessar o Exchange local.
 ### Requisitos do cenário
 - Todos os dispositivos Android devem ser impedidos de acessar o Exchange.
-- Todos os outros dispositivos com suporte poderão acessar o Exchange se forem gerenciados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Todos os outros dispositivos com suporte podem acessar o Exchange se forem gerenciados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 Para fazer isso, configure uma política de acesso condicional para o Exchange local com as seguintes configurações:
 
@@ -86,6 +86,6 @@ O fluxo a seguir é usado para decidir quais dispositivos podem acessar o Exchan
 ![Fluxo de acesso ao dispositivo](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

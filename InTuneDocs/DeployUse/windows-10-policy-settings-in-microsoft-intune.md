@@ -31,7 +31,7 @@ Use as configurações de política listadas neste tópico para ajudar a definir
 
 ## Definições de política de configuração geral
 
-Use a **política de configuração geral** do Microsoft Intune para Windows 10 para definir configurações para Windows 10 Desktops e dispositivos Windows 10 Mobile registrados:
+Use a **política de configuração geral** do Microsoft Intune para Windows 10 para definir configurações gerais para Windows 10 Desktop e dispositivos Windows 10 Mobile registrados. Essa política não pode ser usada quando você gerenciar computadores Windows 10 com o software cliente do Intune.
 
 
 ### Senha
@@ -332,6 +332,6 @@ Todos os dispositivos deverão estar registrados no Intune se você quiser usar 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

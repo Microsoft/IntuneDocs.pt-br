@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ Políticas de MAM dão suporte aos aplicativos em execução em:
 
 -   **Dispositivos gerenciados e registrados em uma solução de gerenciamento de dispositivo móvel de terceiros**.   Os dispositivos nessa categoria normalmente são dispositivos corporativos.
 
-  > [!NOTE]
-  > Políticas de gerenciamento de aplicativo móvel não devem ser usadas com o gerenciamento de aplicativos móveis de terceiros ou com soluções seguras de contêiner.
+  > [!NOTE] Políticas de gerenciamento de aplicativo móvel não devem ser usadas com o gerenciamento de aplicativos móveis de terceiros ou com soluções seguras de contêiner.
 
 -   **Dispositivos que não são gerenciados**.  Os dispositivos nessa categoria normalmente são dispositivos de funcionários que não são gerenciados ou registrados no Intune ou outras soluções de MDM.
 
@@ -64,6 +63,7 @@ Há benefícios adicionais em usar MDM com políticas MAM, e as empresas podem u
 
 -   Android 4 ou posterior
 
+Não há suporte para dispositivos Windows.
 ##  Como as políticas de MAM protegem os dados do aplicativo
 
 ####  Aplicativos sem políticas de MAM:
@@ -77,8 +77,7 @@ Quando os aplicativos são usados sem restrições, os dados corporativos e pess
 ![A imagem que mostra como os dados da empresa são protegidos quando as políticas de MAM são aplicadas ](../media/Apps_with_mobile_app_policies.png)
 
 Você pode usar as políticas de MAM para impedir que os dados da empresa sejam salvos no armazenamento local do dispositivo, bem como restringir a movimentação de dados para outros aplicativos que não estão protegidos pelas políticas de MAM. As configurações de política de MAM incluem:
-- Políticas de realocação de dados como
- **Evitar Salvar como**, **Restringir recortar, copiar e colar**.
+- Políticas de realocação de dados como **Evitar Salvar como**, **Restringir recortar, copiar e colar**.
 - Configurações de política de acesso como **Exigir PIN simples para acesso**, **Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou raiz**.
 
 ### Proteção de dados com políticas de MAM nos dispositivos gerenciados por uma solução de MDM:
@@ -138,6 +137,6 @@ Todos os aplicativos móveis do Office dão suporte a várias identidades.
 [Criar e implantar políticas de gerenciamento de aplicativo móvel com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

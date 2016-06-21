@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,22 +66,22 @@ Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenci
 
 Estes são aplicativos comuns que o departamento de TI pode gerenciar:
 
--   Navegador da web gerenciados
+-   Intune Managed Browser
 
--   Visualizador de imagem gerenciada
+-   Visualizador de imagem do Intune
 
--   Visualizador de PDF gerenciado
+-   Visualizador de PDF do Intune
 
--   Player de AV gerenciado
+-   AV Player do Intune
 
 -   Microsoft Word, Excel, PowerPoint
 
-Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Se você não encontrar as informações de contato do administrador de TI, veja se ele está listado no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

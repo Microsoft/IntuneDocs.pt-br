@@ -144,29 +144,6 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 **Resolução:** os clientes do Microsoft Office 365 que utilizarem o logon único (SSO) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo.  Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
-### O computador já está registrado - erro hr 0x8007064c
-**Problema:** o registro falha com o erro **O computador já está registrado**. O log de registro mostra o erro **hr 0x8007064c**.
-  
-Isso pode ocorrer porque o computador já foi registrado anteriormente ou tem a imagem clonada de um computador que tinha sido registrado. O certificado de conta da conta anterior ainda está presente no computador.
-
-
-
-**Solução:** 
-
-1. Do menu **Iniciar**, **Execute** -> **MMC**. 
-1. **Arquivo** -> **Adicionar/Remover Snap-ins**.
-1. Clique duas vezes em **Certificados**, escolha a **Conta de computador**, **Avançar** e selecione **Computador Local**.
-1. Clique duas vezes em **Certificados (computador local)**, escolha **Pessoal/Certificados**. 
-1. Procure pelo certificado Intune emitido por Sc_Online_Issuing e exclua-o, se estiver presente
-1. Exclua essa chave do Registro, se ela existir: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
-1. Tente registrar novamente. 
-1. Se o computador ainda não puder ser registrado, procure e exclua esta chave, caso ela exista: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Tente registrar novamente. 
-
-    > [!IMPORTANT]
-    > Nesta seção, o método ou tarefa contém etapas que descrevem como modificar o Registro. No entanto, problemas graves podem ocorrer se você modificar o Registro incorretamente. Portanto, certifique-se de seguir estas etapas com cuidado. Para maior proteção, faça backup do Registro antes de modificá-lo. Assim, será possível restaurá-lo se houver algum problema.
-    > Para obter mais informações sobre como fazer backup e restaurar o Registro, leia [Como fazer backup e restaurar o registro no Windows](https://support.microsoft.com/en-us/kb/322756)
-
 
 ## Problemas de Android
 ### Falha na instalação do perfil
@@ -248,6 +225,31 @@ Isso pode ocorrer porque o computador já foi registrado anteriormente ou tem a 
 
 ### Outros erros de registro do iOS
 Uma lista de erros de registro do iOS é fornecida em nossa documentação de usuário do dispositivo em [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) (Erros ao tentar registrar seu dispositivo no Intune).
+
+## Problemas do computador
+
+### O computador já está registrado - erro hr 0x8007064c
+**Problema:** o registro falha com o erro **O computador já está registrado**. O log de registro mostra o erro **hr 0x8007064c**.
+  
+Isso pode ocorrer porque o computador já foi registrado anteriormente ou tem a imagem clonada de um computador que tinha sido registrado. O certificado de conta da conta anterior ainda está presente no computador.
+
+
+
+**Solução:** 
+
+1. Do menu **Iniciar**, **Execute** -> **MMC**. 
+1. **Arquivo** -> **Adicionar/Remover Snap-ins**.
+1. Clique duas vezes em **Certificados**, escolha a **Conta de computador**, **Avançar** e selecione **Computador Local**.
+1. Clique duas vezes em **Certificados (computador local)**, escolha **Pessoal/Certificados**. 
+1. Procure pelo certificado Intune emitido por Sc_Online_Issuing e exclua-o, se estiver presente
+1. Exclua essa chave do Registro, se ela existir: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
+1. Tente registrar novamente. 
+1. Se o computador ainda não puder ser registrado, procure e exclua esta chave, caso ela exista: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Tente registrar novamente. 
+
+    > [!IMPORTANT]
+    > Nesta seção, o método ou tarefa contém etapas que descrevem como modificar o Registro. No entanto, problemas graves podem ocorrer se você modificar o Registro incorretamente. Portanto, certifique-se de seguir estas etapas com cuidado. Para maior proteção, faça backup do Registro antes de modificá-lo. Assim, será possível restaurá-lo se houver algum problema.
+    > Para obter mais informações sobre como fazer backup e restaurar o Registro, leia [Como fazer backup e restaurar o registro no Windows](https://support.microsoft.com/en-us/kb/322756)
 
 ## Códigos de erro geral de registro
 

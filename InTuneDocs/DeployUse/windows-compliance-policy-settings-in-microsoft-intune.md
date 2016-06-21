@@ -18,7 +18,7 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,24 +39,16 @@ As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e po
 
 ## Configurações de segurança do sistema
 ### Senha
-- **Exigir uma senha para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que os usuários insiram uma senha para
-  poderem acessar seus dispositivos.
+- **Exigir uma senha para desbloquear dispositivos móveis:**    defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que eles possam acessar o dispositivo.
 
-- **Permitir senha simples:** defina esta opção
-   como **Sim** para permitir que os usuários criem senhas simples
-   como “**1234**” ou “**1111**”.
+- **Permitir senhas simples:**    defina como **Sim** para permitir que os usuários criem senhas simples, como '**1234**' ou '**1111**'.
 
--  **Comprimento mínimo da senha:**
-  Especifique o número mínimo de dígitos ou caracteres que
-  a senha do usuário deve conter.
-- **Tipo de senha necessária:** especifique se os usuários devem criar
-uma senha **Alfanumérica** ou **Numérica**.
+-  **Comprimento mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
+- **Tipo de senha exigido:** especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
 
   Para dispositivos que executam o Windows e são acessados com uma Conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 
-- **Número mínimo de conjuntos de caracteres:** se **Tipo de senha necessária** estiver definido como
-**Alfanumérico**, essa configuração especifica o número mínimo de
-conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
+- **Número mínimo de caracteres configurado:** se **Tipo de Senha Necessário** é definido como **Alfanumérico**, essa configuração especifica o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
   -   Letras minúsculas
   -   Letras maiúsculas
   -   Símbolos
@@ -65,20 +57,16 @@ conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracter
   Definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas. Para dispositivos que executam o Windows e são acessados com uma Conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 - **Minutos de inatividade antes da senha ser necessária:** especifica o tempo ocioso antes que o usuário precise digitar novamente a senha.
 
-- **Expiração da senha (dias):** selecione o número de dias antes de a senha do usuário expirar
-  e ser necessário criar uma nova.
+- **Expiração da senha (dias):** selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
 
-- **Lembrar histórico de senha:** use essa configuração junto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário
-  crie senhas usadas anteriormente.
+- **Lembrar o histórico da senha:** use essa configuração em conjunto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
 
-- **Evitar a reutilização de senhas anteriores:** se **Lembrar histórico de senha** for selecionado, especifique o
-  número de senhas usadas anteriormente que não podem ser reutilizadas.
+- **Evitar a reutilização de senhas anteriores:** se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** essa configuração deve ser usada junto com **Minutos de inatividade antes da senha ser necessária**. Os usuários finais serão solicitados a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
   **Essa configuração só se aplica a dispositivos Windows 10 Mobile.**
 ### Criptografia
-- **Exigir criptografia no dispositivo móvel:** defina esta opção como **Sim** para exigir que o dispositivo seja
-  criptografados para se conectarem aos recursos.
+- **Exigir criptografia no dispositivo móvel:** defina esta opção como **Sim** para exigir que o dispositivo seja criptografado para conectar-se aos recursos.
 
 ## Configurações de integridade do dispositivo
 - **Exigir que os dispositivos sejam relatados como íntegros:** você pode definir uma regra para exigir que os dispositivos **Windows 10 Mobile** sejam relatados como íntegros nas Políticas de Conformidade novas ou existentes.  Se essa configuração estiver habilitada, dispositivos Windows 10 serão avaliados por meio do HAS (Serviço de Atestado de Integridade) para os seguintes pontos de dados:
@@ -86,14 +74,12 @@ conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracter
   -  **Integridade de código habilitada:** a integridade de código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade do código detecta se um arquivo de sistema ou de driver não assinado está sendo carregado no kernel, ou se um arquivo do sistema foi modificado por software mal-intencionado que está sendo executado por uma conta de usuário com privilégios de administrador.
   - **Inicialização Segura habilitada:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma isso antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
 
-  Para obter informações sobre como o serviço HAS funciona, consulte [Health Attestation CSP (CSP do Estado de Integridade)](https://msdn.microsoft.com/library/dn934876.aspx).
+  Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
 ##  Configurações de propriedade do dispositivo
-- **Sistema operacional mínimo necessário:** quando um dispositivo não atende o requisito mínimo de versão de sistema operacional,
-    ele é relatado como não compatível.
+- **Sistema operacional mínimo exigido:** quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível.
     É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
-- **Versão máxima do sistema operacional permitida:** quando um dispositivo estiver usando uma
-    versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+- **Versão do sistema operacional máxima permitida:** quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
 
 ## Configurações da política de conformidade para computadores Windows
@@ -140,7 +126,7 @@ Você pode definir uma regra para exigir que os dispositivos Windows 10 sejam re
   - **Inicialização Segura habilitada:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma isso antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
   - **Antimalware de Início Antecipado habilitado:** o ELAM (Antimalware de Início Antecipado) fornece proteção para os computadores na sua rede quando eles são iniciados e antes de inicializar drivers de terceiros.
 
-  Para obter informações sobre como o serviço HAS funciona, consulte [Health Attestation CSP (CSP do Estado de Integridade)](https://msdn.microsoft.com/library/dn934876.aspx).
+  Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
 
 ## Configurações de propriedade do dispositivo
 - **Sistema operacional mínimo necessário:** - Com suporte no Windows 8.1 e no Windows 10.
@@ -159,6 +145,6 @@ Para localizar a versão do sistema operacional que deve ser usada para as confi
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
