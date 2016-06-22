@@ -67,7 +67,7 @@ Na lista Aplicativos **Compatíveis &amp; Incompatíveis para Mac OS X**, habili
 |**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e ID do pacote do aplicativo encontrados no arquivo.|
 |**Editar**|Permite editar o nome, editor e ID do pacote do aplicativo para o aplicativo selecionado.|
 |**Excluir**|Exclui o aplicativo selecionado da lista.|
-> [!TIP] Para obter mais informações sobre relatórios do Intune, consulte [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md) (Entender as operações do Microsoft Intune usando relatórios).
+> [!TIP] Para obter mais informações sobre relatórios do Intune, consulte [Entender as operações do Microsoft Intune usando relatórios](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Quando um dispositivo Mac OS X está no modo de Suspensão, as políticas e os perfis não podem ser entregues nem inventariados. Assim, o console do Intune pode exibir temporariamente o status **Erro nas configurações de política** até a próxima vez que o dispositivo sair do modo de Suspensão.
