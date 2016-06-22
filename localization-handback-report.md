@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md) | OutofSyncHandedBackSuccess | [Details](#b8af36cef1bcb9077d0ab611a14fb88c0f458ece248)
 
 ## Item Details
-##### <a name='b8af36cef1bcb9077d0ab611a14fb88c0f458ece248'></a> Source: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/61b493a284398c92a23b504fe42b5321d39dfdba/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.pt-br.xlf)
-* Handoff Datetime: 2016-06-21 17:11:36
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/227cbb1e72c4386d961a6d3176316955ee59d84c/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
-* Current Handback File: [understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/b1c543eb9fa7a2dbfb325884b79882c3e45a94e8/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/understand-microsoft-intune-operations-by-using-reports.d55d0cc7ce38170afa526b0b0094526138a0680a.pt-br.xlf)
-* Current Handback Datetime: 2016-06-22 18:14:22
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
