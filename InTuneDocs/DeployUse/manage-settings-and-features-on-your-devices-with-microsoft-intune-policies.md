@@ -200,9 +200,9 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
 
 ### Onde posso encontrar ajuda para solucionar problemas de políticas?
 
-Consulte [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md) (Solução de problemas com políticas no Microsoft Intune).
+Consulte [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune) (Políticas de solução de problemas no Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

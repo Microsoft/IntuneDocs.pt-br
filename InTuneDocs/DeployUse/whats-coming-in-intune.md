@@ -79,13 +79,13 @@ Os usuários finais de dispositivos não compatíveis serão solicitados a regis
 Regras de notificação do Intune definem para quem um alerta de email será enviado do Intune. No momento, você pode configurar as regras de notificação para enviarem emails para todos os usuários de dispositivos em um grupo de dispositivos do Intune que você criou. A partir de 1º de junho de 2016, direcionar grupos criados pelo usuário não terá mais suporte.
 
 A linha do tempo preliminar para essa alteração é a seguinte:
-- Em junho de 2016 novos locatários não verão a etapa dois do assistente Criação de Regra de Notificação. Os locatários existentes não são afetados.
-- Em torno de agosto de 2016, alguns locatários existentes não verão "selecionar grupos de dispositivo" no assistente.
-- Em torno de outubro de 2016, esperamos que todos os locatários não verão "selecionar grupos de dispositivo" no assistente.
+- Em agosto de 2016, novos locatários não verão a etapa dois do Assistente para Criar Regra de Notificação. Os locatários existentes não são afetados.
+- Em torno de setembro de 2016, alguns locatários existentes não verão "selecione grupos de dispositivos" no assistente.
+- Em torno de novembro de 2016, esperamos que todos os locatários não vejam "selecione grupos de dispositivos" no assistente.
 <!---   TFS 1278864--->
 
 **Alterações no suporte para o aplicativo do Portal da Empresa do iOS.**
-Os usuários devem atualizar para o aplicativo de Portal da Empresa do iOS mais recente. Nos próximos meses, todos os usuários do aplicativo do Portal da Empresa do Microsoft Intune para iOS deverão usar a versão mais recente. Novos usuários só poderão baixar a versão mais recente e os usuários atuais precisarão atualizar para ela. A versão mais recente requer iOS 8.0 ou posterior, por isso dispositivos que executam versões anteriores do iOS não conseguirão usar o Portal da Empresa ou registrar-se até atualizar seu dispositivo para o iOS 8.0 ou posterior, para então atualizar o aplicativo de Portal da Empresa para a versão mais recente. Os dispositivos que executam versões abaixo do iOS 8.0 continuarão a ser gerenciados e listados no Console de Administração do Intune.  
+Em julho, todos os usuários do aplicativo do Portal da Empresa Microsoft Intune para iOS deverão usar a versão mais recente. Novos usuários só poderão baixar a versão mais recente e os usuários atuais precisarão atualizar para ela. A versão mais recente requer iOS 8.0 ou posterior, por isso dispositivos que executam versões anteriores do iOS não conseguirão usar o Portal da Empresa ou registrar-se até atualizar seu dispositivo para o iOS 8.0 ou posterior, para então atualizar o aplicativo de Portal da Empresa para a versão mais recente. Os dispositivos que executam versões abaixo do iOS 8.0 continuarão a ser gerenciados e listados no Console de Administração do Intune.  
 
 **Aplicativos do visualizador do Intune.** Com o lançamento do novo aplicativo RMS sharing, estamos removendo os seguintes aplicativos do visualizador do Intune a partir de agosto de 2016:
 - Visualizador de AV do Intune
@@ -99,6 +99,6 @@ Em vez de usar os aplicativos do visualizador do Intune, é recomendável usar o
 Veja [Novidades do Microsoft Intune](whats-new-in-microsoft-intune.md) para saber detalhes sobre os desenvolvimentos mais recentes.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
