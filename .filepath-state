@@ -694,19 +694,10 @@
   "e256cb6a104706c8e1d861dc565b88abb00e6652": [
     "InTuneDocs\\EndUser\\media\\and-enroll-2-cp-sign-in.png"
   ],
-  "e76c105cd90d2172c2d80565e54573995b0087a5": [
-    "InTuneDocs\\EndUser\\media\\and-enroll-2-cp-sign-in.png"
-  ],
   "e9fd27ac80a101d2e8b5bbd65249913b45111a16": [
     "InTuneDocs\\EndUser\\media\\and-enroll-3-accept-terms.png"
   ],
-  "9a0b75f97efb0fca001ea4d6cd5f8b582c059615": [
-    "InTuneDocs\\EndUser\\media\\and-enroll-3-accept-terms.png"
-  ],
   "1d96acea0475ff448c6895f38dfbf2305fd4edca": [
-    "InTuneDocs\\EndUser\\media\\andr-1-my-devices-choose.png"
-  ],
-  "574a3642f5160ff07c565a2b3c60084ceb198757": [
     "InTuneDocs\\EndUser\\media\\andr-1-my-devices-choose.png"
   ],
   "dec809a4e6430f212aa2680bd24cda1d5b831d0f": [
@@ -764,15 +755,6 @@
     "InTuneDocs\\DeployUse\\media\\ios-required-install.PNG"
   ],
   "2bb92c233767e29035ee7309984d3bcb1003f475": [
-    "InTuneDocs\\media\\Intune-iOS-enrollment-with-APNS.png"
-  ],
-  "18e989b17ac7b5ae661fab1abb4a22ab9b6b970d": [
-    "InTuneDocs\\media\\Intune-iOS-enrollment-with-APNS.png"
-  ],
-  "b5192178543e9b1084aa92548bc921b6cef05334": [
-    "InTuneDocs\\media\\Intune-iOS-enrollment-with-APNS.png"
-  ],
-  "a1fc1220518728a6371ddcbe7f8a680abe6de4c9": [
     "InTuneDocs\\media\\Intune-iOS-enrollment-with-APNS.png"
   ],
   "357558a36a885fc6c50279d11801440587fe3676": [
@@ -1181,9 +1163,6 @@
     "InTuneDocs\\media\\AppManagement\\AzurePortal_MAMStartboard_NoMAM.png"
   ],
   "135fa1a2fe339c2a7d071bd6c844be0466754f66": [
-    "InTuneDocs\\media\\AppManagement\\iOS_AppPINPrompt.png"
-  ],
-  "4e604d7b70b728e57979112bc5e596c43c2b5814": [
     "InTuneDocs\\media\\AppManagement\\iOS_AppPINPrompt.png"
   ],
   "324064e6e4172486b8a30a18cd63d20e7151e0c8": [
