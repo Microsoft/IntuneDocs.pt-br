@@ -95,9 +95,6 @@
   "b1b1cc90672903ac0336151373272b5e20e56165": [
     "InTuneDocs\\DeployUse\\help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md"
   ],
-  "2925b9ce88aa73648c0ac5384c1ad5b4743466e3": [
-    "InTuneDocs\\DeployUse\\help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md"
-  ],
   "723bef398338946e085e9d04d57a85b433ebc1c8": [
     "InTuneDocs\\DeployUse\\install-the-windows-pc-client-with-microsoft-intune.md"
   ],
@@ -1291,9 +1288,6 @@
   "65d582958d77150091880cce72e079b87308209f": [
     "InTuneDocs\\DeployUse\\previous-intune-releases.md"
   ],
-  "c082a47dd0bc348ce4b5e6e8c23a5d1ce9d01547": [
-    "InTuneDocs\\DeployUse\\previous-intune-releases.md"
-  ],
   "902d8a8962bcadbe9fb10845bb80023781cb8b3c": [
     "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-android.md"
   ],
@@ -1709,15 +1703,6 @@
     "InTuneDocs\\Understand\\microsoft-intune-service-description.md"
   ],
   "e07053b9b26afacc03e45f2cb104eda6088a1e05": [
-    "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
-  ],
-  "695bc6bd6063f83cbc2432796c9f596c9a25a725": [
-    "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
-  ],
-  "a21a2eaac2d685d5902b0f73090b0a3b813e1663": [
-    "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
-  ],
-  "25d293e4821bfcfb364c1eca0297252885989e64": [
     "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
   ],
   "1e00d5fb315cac297294a74496d2a4342051f945": [
