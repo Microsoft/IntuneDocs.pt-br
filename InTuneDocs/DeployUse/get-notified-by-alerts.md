@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Ser notificado pelos alertas | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
+ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+
 
 ---
 
@@ -83,12 +77,14 @@ Os alertas do Intune permanecem ativos até que:
 
 -   45 dias passaram desde que o alerta foi gerado
 
-> [!TIP] Se o mesmo alerta for gerado por dispositivos em execução em sistemas operacionais diferentes, você poderá ver várias versões do mesmo alerta na lista de alertas.
+> [!TIP]
+> Se o mesmo alerta for gerado por dispositivos em execução em sistemas operacionais diferentes, você poderá ver várias versões do mesmo alerta na lista de alertas.
 
 ### Consulte também
 [Monitoramento e relatórios com o Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

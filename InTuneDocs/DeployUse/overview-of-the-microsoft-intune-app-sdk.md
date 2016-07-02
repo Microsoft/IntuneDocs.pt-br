@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Visão geral do SDK do Microsoft Intune App | Microsoft Intune
-description:
-keywords:
+title: "Visão geral do SDK do Microsoft Intune App | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -53,7 +47,7 @@ Os administradores de TI podem impor o uso de um navegador gerenciado ao abrir l
 Os administradores de TI podem impor uma política PIN quando um aplicativo gerenciado pelo Intune é iniciado. Essa política ajuda a garantir que os usuários finais que registraram seus dispositivos com o Microsoft Intune são as mesmas pessoas que estão abrindo os aplicativos. Quando os usuários finais configuram seus PINs, o SDK do Intune App usa o Active Directory do Azure para verificar as credenciais de usuários finais em relação às credenciais de registro do dispositivo. 
 
 ## Os usuários devem inserir credenciais para poderem abrir os aplicativos
-Os administradores de TI podem exigir que os usuários digitem suas credenciais para poderem abrir um aplicativo gerenciado pelo Intune. O SDK do Intune App usa o Active Directory do Azure para fornecer uma experiência de logon único, em que as credenciais, uma vez inseridas, são reutilizadas para logons subsequentes. Também há suporte para autenticação de soluções de gerenciamento de identidade [federada com o Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
+Os administradores de TI podem exigir que os usuários digitem suas credenciais para poderem abrir um aplicativo gerenciado pelo Intune. O SDK do Intune App usa o Active Directory do Azure para fornecer uma experiência de logon único, em que as credenciais, uma vez inseridas, são reutilizadas para logons subsequentes. Também há suporte para autenticação de soluções de gerenciamento de identidade [federada com o Active Directory do Azure](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
 
 ## Verificar a integridade e conformidade do dispositivo
 Os administradores de TI podem realizar uma verificação de integridade do dispositivo e sua conformidade com políticas corporativas antes que os usuários finais possam acessar aplicativos gerenciados pelo Intune. Na plataforma iOS, esta política verifica se o dispositivo foi desbloqueado com jailbreak. Na plataforma Android, esta política verifica se o dispositivo apresenta raiz.  
@@ -61,6 +55,7 @@ Os administradores de TI podem realizar uma verificação de integridade do disp
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
