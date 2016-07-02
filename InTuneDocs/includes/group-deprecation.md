@@ -6,6 +6,6 @@
 >Uma nova atribuição de grupos de dispositivo dinâmico pode ser definida no Azure Active Directory com base no nome do Perfil de Registro Corporativo. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. Mais detalhes serão publicados em breve.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
