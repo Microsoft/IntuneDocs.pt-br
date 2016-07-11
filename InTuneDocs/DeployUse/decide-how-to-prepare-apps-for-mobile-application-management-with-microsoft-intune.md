@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+
 
 ---
 
@@ -29,7 +22,7 @@ ms.suite: ems
 Você pode habilitar seus aplicativos para usar políticas de gerenciamento de aplicativo móvel usando a Ferramenta de Encapsulamento de Aplicativos do Intune ou o SDK de Aplicativos do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
 
 ## Ferramenta de Encapsulamento de Aplicativo do Intune
-A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos internos de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper no aplicativo, que permite que o aplicativo seja gerenciado por uma política de gerenciamento de aplicativos móveis do Intune. O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura.  Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Para obter a documentação da Ferramenta de Disposição de Aplicativo, consulte [Ferramenta de Disposição do Aplicativo Android ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Ferramenta de Disposição do Aplicativo iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos internos de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper no aplicativo, que permite que o aplicativo seja gerenciado por uma política de gerenciamento de aplicativos móveis do Intune. O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura.  Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da Ferramenta de Disposição de Aplicativo, consulte [Ferramenta de Disposição do Aplicativo Android ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Ferramenta de Disposição do Aplicativo iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 A Ferramenta de Encapsulamento de Aplicativo não dá suporte a aplicativos na Windows Store ou Play Store ou a recursos que exigem integração do tempo de desenvolvimento (consulte a tabela de comparação de recursos a seguir).
 
@@ -43,7 +36,8 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](/intune/develop/intune-ap
 ## Comparação de recursos
 Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
 
-> [!NOTE] A Ferramenta de Disposição do Aplicativo pode ser usada com o Intune autônomo ou o Intune com o Configuration Manager.
+> [!NOTE]
+> A Ferramenta de disposição do aplicativo só pode ser usada quando você estiver usando o Intune Standalone ou o Intune com o Configuration Manager.
 
 |Recurso|SDK do Aplicativo|Ferramenta de Encapsulamento de Aplicativo|
 |-----------|---------------------|-----------|
@@ -73,6 +67,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 [Use o SDK para habilitar aplicativos para o gerenciamento de aplicativos móveis](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Referência da política do Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Referência da política do Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+
 
 ---
 
@@ -57,7 +51,7 @@ Use as informações neste tópico para ajudar na decisão sobre qual política 
 |**Perfil de certificado confiável (iOS 7.1 e posterior)**|Configurar um certificado confiável de dispositivo móvel que pode ser usado para autenticar dispositivos móveis para permitir que eles acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de VPN (iOS 7.1 e posterior)**|Configurar e implantar configurações que oferecem aos usuários acesso seguro à rede da empresa a partir de seus dispositivos móveis. Ao implantar essas configurações, você minimiza o esforço necessário para se conectar ao seu trabalho para o usuário final.<br /><br />Para ver mais detalhes, consulte [VPN connections in Microsoft Intune.md (Conexões VPN no Microsoft Intune.md)](vpn-connections-in-microsoft-intune.md).|
 |**Perfil de Wi-Fi (iOS 7.1 e posterior)**|Configurar e implantar as configurações de rede sem fio para usuários em sua organização. Ao implantar essas configurações, você minimiza o esforço do usuário final necessário para conectar-se à rede sem fio.<br /><br />Para ver mais detalhes, consulte [Wi-Fi connections in Microsoft Intune (Conexões Wi-Fi no Microsoft Intune)](wi-fi-connections-in-microsoft-intune.md).|
-|**Política de configuração de aplicativo móvel (iOS 7.1 e posterior)**|Use políticas de configuração de aplicativo móvel para fornecer automaticamente as configurações que podem ser necessárias quando o usuário executa um aplicativo iOS.<br /><br />Para ver mais detalhes, consulte [Configure iOS apps with mobile app configuration policies in Microsoft Intune (Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune)](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+|**Política de configuração de aplicativo móvel (iOS 7.1 e posterior)**|Use políticas de configuração de aplicativo móvel para fornecer automaticamente as configurações que podem ser necessárias quando o usuário executa um aplicativo iOS.<br /><br />Para ver mais detalhes, consulte [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md) (Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune).|
 
 ## Políticas de configuração do Mac OS X
 
@@ -85,7 +79,7 @@ Aplica-se apenas a Windows Phone e dispositivos com Windows.
 |**Configuração geral (Windows Phone 8.1 e posterior)**|Configurar a segurança de dispositivo móvel e configurações funcionais.<br />Especificar os aplicativos que os usuários podem ou não usar e impedir que aplicativos incompatíveis sejam instalados ou usados.<br /><br />Para ver mais detalhes, consulte [Windows Phone 8.1 settings in Microsoft Intune (Configurações do Windows Phone 8.1 no Microsoft Intune)](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
 |**Perfil de certificado PKCS nº 12 (.PFX) (Windows 10 Desktop e Mobile e posterior)**|Use esse perfil para criar e implantar configurações PFX para solicitações de certificado do dispositivo.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de certificado SCEP (Windows 8.1 e posterior)**<br /><br />**Perfil de certificado SCEP (Windows Phone 8.1 e posterior)**|Configurar um certificado do protocolo SCEP que pode ser usado com um certificado confiável de dispositivos móveis para autenticar dispositivos móveis a fim de permitir que acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
-|**Perfil de certificado confiável (Windows 8.1 e posterior)**<br /><br />**Perfil de certificado confiável (Windows Phone 8.1 e posterior)**|Configurar um certificado confiável de dispositivo móvel que pode ser usado para autenticar dispositivos móveis para permitir que eles acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md)).|
+|**Perfil de certificado confiável (Windows 8.1 e posterior)**<br /><br />**Perfil de certificado confiável (Windows Phone 8.1 e posterior)**|Configurar um certificado confiável de dispositivo móvel que pode ser usado para autenticar dispositivos móveis para permitir que eles acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil da VPN (Windows 10 Desktop e Mobile e posterior)**<br /><br />**Perfil de VPN (Windows 8.1 e posterior)**<br /><br />**Perfil de VPN (Windows Phone 8.1 e posterior)**|Configurar e implantar configurações que oferecem aos usuários acesso seguro à rede da empresa a partir de seus dispositivos móveis. Ao implantar essas configurações, você minimiza o esforço necessário para se conectar ao seu trabalho para o usuário final.<br /><br />Para ver mais detalhes, consulte [VPN connections in Microsoft Intune.md (Conexões VPN no Microsoft Intune.md)](vpn-connections-in-microsoft-intune.md).|
 |**Importação de Wi-Fi**|Importar e implantar configurações de Wi-Fi do Windows que você exportou anteriormente em um arquivo.<br /><br />Para ver mais detalhes, consulte [Wi-Fi connections in Microsoft Intune (Conexões Wi-Fi no Microsoft Intune)](wi-fi-connections-in-microsoft-intune.md).|
 
@@ -119,15 +113,15 @@ Aplica-se apenas a Windows Phone e dispositivos com Windows.
 
 |Nome da política|Use quando desejar|
 |---------------|------------------------|
-|**Políticas de conformidade**|Defina o nível de conformidade para os dispositivos e, em seguida, reporte sobre os dispositivos que não forem compatíveis. Essas políticas são usadas com acesso condicional para ajudar a avaliar os dispositivos que devem ser bloqueados dos serviços.<br /><br />Para ver mais detalhes, consulte [Device compliance policies in Microsoft Intune (Políticas de conformidade do dispositivo no Microsoft Intune)](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
+|**Políticas de conformidade**|Defina o nível de conformidade para os dispositivos e, em seguida, reporte sobre os dispositivos que não forem compatíveis. Essas políticas são usadas com acesso condicional para ajudar a avaliar os dispositivos que devem ser bloqueados dos serviços.<br /><br />Para obter detalhes, consulte [Políticas de conformidade do dispositivo no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
 
 ## Gerenciamento de computador Windows
 
 |Nome da política|Use quando desejar|
 |---------------|------------------------|
-|**Configurações do agente do Microsoft Intune**|Configure o cliente do computador do Intune no computador, incluindo configurações para:<br /><br />-   Endpoint Protection<br />-   Atualizações de software<br />-   Agenda de verificação de política<br /><br />Esse tipo de política pode ser implantado somente para grupos de dispositivos.<br /><br />Os clientes do Intune baixam políticas novas e atualizadas de acordo com a configuração **Frequência de detecção de aplicativos e atualização**, cujo valor padrão é 8 horas. No entanto, você pode forçar uma atualização de política a qualquer momento nos computadores.<br /><br />Para ver mais detalhes, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune)](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
-|**Configurações do Microsoft Intune Center**|Configure os detalhes exibidos na central do Microsoft Intune nos computadores gerenciados.<br /><br />Esse tipo de política pode ser implantado somente para grupos de dispositivos.<br /><br />Para detalhes, consulte [Common Windows PC management tasks with the Microsoft Intune computer client (Tarefas comuns de gerenciamento de computadores Windows com o cliente de computador do Microsoft Intune)](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
-|**Configurações do Firewall do Windows**|Define as configurações do Firewall do Windows e as exceções para comunicações de rede comuns em computadores, incluindo:<br /><br />-   BranchCache<br />-   Assistência Remota<br />-   Compartilhamento de mídia<br /><br />Esse tipo de política pode ser implantado somente para grupos de dispositivos.<br /><br />Para ver mais detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune)](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
+|**Configurações do agente do Microsoft Intune**|Configure o cliente do computador do Intune no computador, incluindo configurações para:<br /><br />-   Endpoint Protection<br />-   Atualizações de software<br />-   Agenda de verificação de política<br /><br />Esse tipo de política pode ser implantado somente para grupos de dispositivos.<br /><br />Os clientes do Intune baixam políticas novas e atualizadas de acordo com a configuração **Frequência de detecção de aplicativos e atualização**, cujo valor padrão é 8 horas. No entanto, você pode forçar uma atualização de política a qualquer momento nos computadores.<br /><br />Para obter detalhes, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter os computadores Windows atualizados com as atualizações de software no Microsoft Intune).|
+|**Configurações do Microsoft Intune Center**|Configure os detalhes exibidos na central do Microsoft Intune nos computadores gerenciados.<br /><br />Esse tipo de política pode ser implantado somente para grupos de dispositivos.<br /><br />Para detalhes, consulte [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) (Tarefas comuns de gerenciamento de computadores Windows com o cliente de computador do Microsoft Intune).|
+|**Configurações do Firewall do Windows**|Define as configurações do Firewall do Windows e as exceções para comunicações de rede comuns em computadores, incluindo:<br /><br />-   BranchCache<br />-   Assistência Remota<br />-   Compartilhamento de mídia<br /><br />Esse tipo de política pode ser implantado somente para grupos de dispositivos.<br /><br />Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).|
 
 ### Consulte também
 
@@ -135,6 +129,7 @@ Aplica-se apenas a Windows Phone e dispositivos com Windows.
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

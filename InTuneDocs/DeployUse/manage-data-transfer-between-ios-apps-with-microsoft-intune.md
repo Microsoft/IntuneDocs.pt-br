@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Gerenciar transferência de dados entre aplicativos iOS | Microsoft Intune
-description:
-keywords:
+title: "Gerenciar transferência de dados entre aplicativos iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ Para certificar-se de que os aplicativos implantados usando a solução do MDM d
 Essa configuração é necessária para dispositivos gerenciados por uma solução MDM de terceiro. O procedimento descrito a seguir é um fluxo geral de como implementar a configuração de UPN e experiência do usuário final resultante:
 
 
-1.  Configure uma política de gerenciamento de aplicativo móvel para a plataforma iOS. Defina as configurações de política conforme os requisitos da sua empresa e selecione os aplicativos que devem ter essa política.
+1.  No portal do Azure, [configure uma política de gerenciamento de aplicativo móvel](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para a plataforma iOS. Defina as configurações de política conforme os requisitos da sua empresa e selecione os aplicativos que devem ter essa política.
 
-2.  Implante os aplicativos e o perfil de email que você deseja gerenciar por meio da solução MDM de terceiros usando a configuração descrita nas etapas 3 e 4.
+2.  Implante os aplicativos e o perfil de email que você deseja gerenciar **por meio da solução MDM de terceiros** usando a configuração descrita nas etapas 3 e 4.
 
 3.  Implante o aplicativo com as seguintes configurações do aplicativo: key=IntuneMAMUPN, Value=<username@company.com> [exemplo: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -80,6 +73,7 @@ Essa configuração é necessária para dispositivos gerenciados por uma soluç�
 [Proteger dados de aplicativo usando políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

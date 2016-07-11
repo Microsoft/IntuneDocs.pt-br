@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Proteger aplicativos de linha de negócios e dados em dispositivos não registrados | Microsoft Intune
-description:
-keywords:
+title: "Proteger aplicativos de linha de negócios e dados em dispositivos não registrados | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Você pode implantar aplicativos para seus usuários finais das seguintes maneir
 * Para dispositivos não gerenciados por qualquer solução de MDM, você precisará de uma solução personalizada. Os usuários finais têm que baixar e instalar o aplicativo em seu dispositivo.
 
 ## Mudando os metadados
-Se você precisar alterar os detalhes do aplicativo como o nome do aplicativo ou o identificador de pacote, você deverá [remover o aplicativo](#remove-apps) e [adicioná-lo](#add-the-app) com os novos metadados.
+Se você precisar alterar os detalhes do aplicativo, como o nome do aplicativo ou o identificador de pacote, você deverá [remover o aplicativo](#remove-apps) e [adicioná-lo](#step-2-add-the-app) com os novos metadados.
 
 ##  Remover aplicativos
 Você pode remover um aplicativo de linha de negócios da lista de aplicativos.  Isso removerá o aplicativo da lista e removerá a associação com políticas MAM, mas não removerá ou desinstalará o aplicativo do dispositivo do usuário final.  
@@ -80,6 +73,7 @@ Você pode remover um aplicativo de linha de negócios da lista de aplicativos. 
   Isso removerá os aplicativos da lista de aplicativos da linha de negócios e da lista de destino de aplicativos na política MAM.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

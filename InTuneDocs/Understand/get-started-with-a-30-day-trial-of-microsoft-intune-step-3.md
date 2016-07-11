@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Criar grupos para organizar usuários e dispositivos de assinatura de avaliação | Microsoft Intune
-description:
-keywords:
+title: "Criar grupos para organizar usuários e dispositivos de assinatura de avaliação | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f438b2b5e53d9bc119341effae1533d26cc9a47b
+
 
 ---
 
@@ -31,7 +25,7 @@ Os grupos no Intune oferecem grande flexibilidade para o gerenciamento de dispos
 ## Criar um grupo de dispositivos
 Use grupos de dispositivos para implantar software e atualizações e configurar políticas de Configurações do Agente do Microsoft Intune e Configurações do Firewall do Windows. Por exemplo, configure um grupo "Meus Dispositivos de Avaliação" usando as seguintes etapas:
 
-1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Visão Geral** &gt; **Criar Grupo**.
+1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Visão geral** &gt; **Criar Grupo**.
 
 2.  Em **Nome do grupo**, digite “Meus Dispositivos de Avaliação”, na lista de grupos pai, selecione **Todos os Dispositivos** e, em seguida, escolha **Avançar**.
 
@@ -46,11 +40,11 @@ O grupo recém-criado pode ser encontrado na lista **Grupos** , no espaço de tr
 ## Criar um grupo de usuários
 Use grupos de usuários para implantar políticas de dispositivo e software. Por exemplo, configure um grupo "Meus Usuários de Avaliação" usando as seguintes etapas:
 
-1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Visão Geral** &gt; **Criar Grupo**.
+1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Visão geral** &gt; **Criar Grupo**.
 
 2.  Em **Nome do grupo**, digite “Meus Usuários de Avaliação” e, na lista de grupos pai, selecione **Todos os usuários** e, em seguida, escolha **Avançar**.
 
-3.  Na página **Definir Critérios de Associação**, defina **Iniciar associação de grupo com** como **Todos os usuários no grupo Pai**.
+3.  Na página **Definir Critérios de Associação** , defina **Iniciar associação de grupo com** como **Todos os usuários no grupo Pai**.
 
 4.  Ao lado de **Excluir membros destes grupos de segurança**, escolha **Procurar** e, em seguida, selecione **Administrador da Empresa**. Essa exclusão permitirá gerenciar o grupo Meus Usuários de Avaliação sem afetar a conta de Administrador da Empresa (também conhecida como administrador de locatários).
 
@@ -60,7 +54,7 @@ Use grupos de usuários para implantar políticas de dispositivo e software. Por
 
 O grupo recém-criado pode ser encontrado na lista **Grupos** , no espaço de trabalho **Grupos** em **Todos os Usuários**. Nesse local, também é possível editar ou excluir o grupo.
 
-Para saber mais sobre como usar grupos, consulte [Use groups to manage users and devices with Microsoft Intune (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune)](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+Para saber mais sobre como usar grupos, consulte [Use groups to manage users and devices with Microsoft Intune](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune) (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune).
 
 ### Próximas etapas
 Parabéns! Você concluiu a etapa 3 do passo a passo da *avaliação do Microsoft Intune*.
@@ -70,6 +64,7 @@ Parabéns! Você concluiu a etapa 3 do passo a passo da *avaliação do Microsof
 >[&larr; **Adicionar usuários**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)     [**Criar políticas** &larr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

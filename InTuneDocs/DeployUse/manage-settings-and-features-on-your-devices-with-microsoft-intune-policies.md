@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gerenciar configurações e recursos em seus dispositivos com políticas | Microsoft Intune
-description:
-keywords:
+title: "Gerenciar configurações e recursos em seus dispositivos com políticas | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Para obter uma lista completa de políticas do Intune, consulte a [referência d
 
 2.  Escolha a política desejada, opte por usar as configurações recomendadas para a política (quando disponíveis, você pode alterar essas configurações posteriormente) ou crie uma política personalizada com suas próprias configurações.
 
-    > [!TIP] Para obter ajuda sobre como escolher a política certa, consulte a [referência de política do Microsoft Intune](microsoft-intune-policy-reference.md).
+    > [!TIP]
+    > Para obter ajuda sobre como escolher a política certa, consulte a [referência de política do Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando estiver pronto, clique em **Criar Política**.
 
@@ -74,7 +69,7 @@ Para obter uma lista completa de políticas do Intune, consulte a [referência d
     - [Configurações para dispositivos Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
     - [Configurações do Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
     - [Configurações da política de termos e condições](terms-and-condition-policy-settings-in-microsoft-intune.md)
-    - [Configurações gerais de dispositivos móveis (herdado)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+    - [Configurações de política para dispositivos móveis (herdado)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  Na caixa de diálogo de confirmação, escolha **Sim** para implantar a política agora ou **Não** para criar a política sem implantá-la.
 
@@ -119,7 +114,7 @@ Se um dispositivo não fizer o check-in para obter a política após a primeira 
 
 Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:
 
-- iOS - A cada 6 horas
+- iOS e Mac OS X - A cada 6 horas
 - Android - A cada 8 horas
 - Windows Phone - A cada 8 horas
 - Dispositivos Windows RT registrados - a cada 24 horas
@@ -127,10 +122,10 @@ Nesse caso, o dispositivo receberá a política no próximo check-in agendado co
 
 Se o dispositivo recém tiver sido registrado, a frequência de check-in será maior da seguinte maneira:
 
-- iOS - A cada 15 minutos por 6 horas, depois a cada 6 horas
+- iOS e Mac OS X - A cada 15 minutos por 6 horas, depois a cada 6 horas
 - Android - A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas
 - Windows Phone- A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas
-- Computadores Windows registrados como dispositivos - A cada 3 minutos para 30 minutos e a cada 24 horas
+- Computadores Windows registrados como dispositivos - A cada 3 minutos para 30 minutos e a cada 8 horas
 
 Os usuários também podem iniciar o aplicativo de Portal da empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer momento.
 
@@ -149,7 +144,7 @@ Outras alterações, como revisar as informações de contato no portal da empre
 
 -   A configuração de política de conformidade mais restritiva é aplicada se avaliada em relação à mesma configuração em uma política de conformidade diferente
 
--   A definição de política de configuração mais restritiva é aplicada se avaliada em relação à mesma definição em uma política de configuração diferente
+-   Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune. Você deve resolver esses conflitos manualmente.
 
 ### O que acontece quando MAM (políticas de gerenciamento de aplicativo móvel) entram em conflito entre si? Qual delas será aplicada ao aplicativo?
 Os valores de conflito são as configurações mais restritivas disponíveis em uma política de gerenciamento de aplicativos móveis, exceto pelo número de entrada de campos (como tentativas de PIN antes de redefinir).  O número de campos de entrada será definido para o mesmo que os valores como se você criasse uma política MAM no console usando a opção de configurações recomendadas.
@@ -178,7 +173,25 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
         - Tipo de senha necessária
         - Expiração da senha (dias)
         - Lembrar de histórico de senha
-        - Número de falhas de conexão repetidas permitidas antes de o dispositivo ser apagado - Minutos de inatividade antes da senha ser necessária - Tipo de senha necessária – Número mínimo de conjuntos de caracteres - Permitir câmera - Exigir criptografia no dispositivo móvel - Permitir armazenamento removível - Permitir navegador da Web - Permitir loja de aplicativos - Permitir captura de tela - Permitir localização geográfica - Permitir conta da Microsoft - Permitir copiar e colar - Permitir compartilhamento de Internet por Wi-Fi - Permitir conexão automática a hotspots Wi-Fi gratuitos - Permitir relatório de hotspots Wi-Fi - Permitir redefinição de fábrica - Permitir Bluetooth - Permitir NFC - Permitir Wi-Fi
+        - Número de falhas de logon repetidas permitido antes do dispositivo ser apagado
+        - Minutos de inatividade antes de a senha ser necessária
+        - Tipo de senha necessária – o número mínimo de conjuntos de caracteres
+        - Permitir câmera
+        - Exigir criptografia no dispositivo móvel
+        - Permitir armazenamento removível
+        - Permitir navegador da web
+        - Permitir loja de aplicativo
+        - Permitir captura de tela
+        - Permitir localização geográfica
+        - Permitir Conta da Microsoft
+        - Permitir copiar e colar
+        - Permitir compartilhamento de Internet por Wi-Fi
+        - Permitir conexão automática para liberar pontos de acesso Wi-Fi
+        - Permitir relatórios de pontos de acesso Wi-Fi
+        - Permitir redefinição de fábrica
+        - Permitir Bluetooth
+        - Permitir NFC
+        - Permitir Wi-Fi
     
     - **iOS** - Todas as configurações são removidas, exceto:
         - Permitir roaming de Voz
@@ -200,9 +213,10 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
 
 ### Onde posso encontrar ajuda para solucionar problemas de políticas?
 
-Consulte [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune) (Políticas de solução de problemas no Microsoft Intune).
+Consulte [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune) (Políticas de solução de problemas no Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

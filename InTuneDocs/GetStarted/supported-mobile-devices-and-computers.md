@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Dispositivos móveis e computadores com suporte | Microsoft Intune
-description:
-keywords:
+title: "Dispositivos móveis e computadores com suporte | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/08/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e91193523284113c2029e0762dfc48ddc15540d4
+ms.openlocfilehash: d908654b30a29e3b1e3a52096767d42019af772f
+
 
 ---
 
@@ -33,12 +26,13 @@ Você pode gerenciar os seguintes dispositivos móveis e computadores:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)] 
 
-Você pode gerenciar dispositivos e computadores, mesmo que eles não façam parte de um domínio ou não estejam fisicamente no local. Consulte [Choose how to manage devices](/Intune/Deploy-use/choose-how-to-manage-devices) (Escolher como gerenciar dispositivos) para obter mais informações sobre como gerenciar dispositivos.
+Você pode gerenciar dispositivos e computadores, mesmo que eles não façam parte de um domínio ou não estejam fisicamente no local. Consulte [Choose how to manage devices](/Intune/get-started/choose-how-to-manage-devices) (Escolher como gerenciar dispositivos) para obter mais informações sobre como gerenciar dispositivos.
 
 
 ### Consulte também
 [O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

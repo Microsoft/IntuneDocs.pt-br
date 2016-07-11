@@ -1,25 +1,19 @@
 ---
-title: Usar bloqueio remoto e redefinição de senha | Microsoft Intune
-description:
-keywords:
+title: "Usar bloqueio remoto e redefinição de senha | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e redefinição de senha.
@@ -39,7 +33,7 @@ Se um usuário perder o dispositivo, você poderá bloquear o dispositivo remota
 
 ### Para bloquear um dispositivo móvel remotamente usando o console do Intune
 
-1.  No [Console do Administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
+1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
 
 2.  Clique em **Todos os Dispositivos Gerenciados Diretamente** para exibir os dispositivos registrados no Intune ou **Todos os Dispositivos de Gerenciados pelo Exchange ActiveSync**.
 
@@ -62,7 +56,7 @@ Se um usuário esquecer sua senha, você poderá ajudá-lo removendo a senha de 
 
 ### Para redefinir uma senha
 
-1.  No [Console do Administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
+1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
 
 2.  Clique em **Todos os Dispositivos Gerenciados Diretamente** para exibir os dispositivos registrados no Intune ou **Todos os Dispositivos de Gerenciados pelo Exchange ActiveSync**.
 
@@ -77,6 +71,7 @@ Se um usuário esquecer sua senha, você poderá ajudá-lo removendo a senha de 
 [Apagamento seletivo do Windows para o gerenciamento de dados de dispositivos](http://technet.microsoft.com/library/dn486874.aspx)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

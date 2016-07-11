@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Regras de acesso do Exchange para dispositivos móveis gerenciados pelo Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Regras de acesso do Exchange para dispositivos móveis gerenciados pelo Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -47,7 +41,7 @@ O procedimento a seguir descreve como criar uma regra personalizada.
 
 1.  No [console de administração do Microsoft Intune](http://manage.microsoft.com) &gt; **Política** &gt; **Acesso do Exchange a Dispositivos Móveis**.
 
-2.  Na lista **Regra Padrão** , selecione a regra de acesso que deseja aplicar a todos os dispositivos móveis não gerenciados por uma regra ou isenção pessoal. Escolha **Salvar**.
+2.  Na lista **Regra Padrão** , selecione a regra de acesso que deseja aplicar a todos os dispositivos móveis não gerenciados por uma regra ou isenção pessoal. Selecione **Salvar**.
 
 O procedimento a seguir descreve como criar uma regra personalizada.
 
@@ -55,9 +49,10 @@ O procedimento a seguir descreve como criar uma regra personalizada.
 
 1. No [console de administração do Microsoft Intune](http://manage.microsoft.com) &gt; **Política** &gt; **Acesso do Exchange a Dispositivos Móveis**.
 
-2.  Na lista **Regras Personalizadas**, clique em **Adicionar Regra** e crie uma regra personalizada. Escolha **Salvar**.
+2.  Na lista **Regras Personalizadas**, clique em **Adicionar Regra** e crie uma regra personalizada. Selecione **Salvar**.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Renovar um certificado de assinatura de código corporativo do Symantec para usar com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Renovar um certificado de assinatura de código corporativo do Symantec para usar com o Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -43,7 +37,7 @@ O certificado da Symantec usado para gerenciar determinados dispositivos móveis
 
 1.  Baixe e assine o Portal da Empresa do Windows Phone mais recente localizado aqui: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Abra o Console de Administração do Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) e vá para **Admin**, **Gerenciamento de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar o Aplicativo Assinado**.
+2.  Abra o Console de Administração do Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) e vá para **Admin** **Gerenciamento de Dispositivo Móvel** &gt; **Windows Phone** e clique em **Carregar o Aplicativo Assinado**.
 
 3.  Carregue o Portal da Empresa assinado. Você precisará de SSP.xap recentemente assinado e o novo arquivo .PFX que recebeu da Symantec ou o token de registro de aplicativo que foi criado com esse novo arquivo .PFX.
 
@@ -57,7 +51,7 @@ Fornecer um arquivo .xap do SSP assinado é a única maneira de fornecer o certi
 
 1.  Baixe e assine o Portal da Empresa do Windows Phone no Centro de Download mais recente localizado aqui: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Abra o [Console de Administração do Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) e vá para **Admin** &gt; **Gerenciamento de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar o Aplicativo Assinado**.
+2.  Abra o [Console de Administração do Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) e vá para **Admin** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Windows Phone** e clique em **Carregar o Aplicativo Assinado**.
 
 3.  Carregue o Portal da Empresa assinado. Você precisará de SSP.xap recentemente assinado e o novo arquivo .PFX que recebeu da Symantec ou o token de registro de aplicativo que foi criado com esse novo arquivo .PFX.
 
@@ -71,6 +65,7 @@ Fornecer um arquivo .xap do SSP assinado é a única maneira de fornecer o certi
 [Configurar o gerenciamento do Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

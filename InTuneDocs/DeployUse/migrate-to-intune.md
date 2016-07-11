@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Migrar para o Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+
 
 ---
 
@@ -34,7 +27,7 @@ A migração para o Intune em sua solução de gerenciamento de mobilidade empre
 
 ## Notificar os usuários
 
-Quando estiver confiante de que a implantação piloto do Intune atingiu seus requisitos, comunique-se com os usuários sobre a migração futura de seus dispositivos ao Intune. Mensagens de email, [instruções](http://www.microsoft.com/en-us/download/details.aspx?id=46398) e [cartazes](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) podem ajudar a definir as expectativas e fornecer detalhes de registro, os usuários de etapas necessárias para manter a conectividade contínua para aplicativos e recursos da empresa. Verifique se que sua equipe de suporte está pronta para ajudar os usuários no processo de migração.
+Quando estiver confiante de que a implantação piloto do Intune atingiu seus requisitos, comunique-se com os usuários sobre a migração futura de seus dispositivos ao Intune. Mensagens de email, instruções e [cartazes](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) podem ajudar a definir as expectativas e fornecer detalhes de registro, os usuários de etapas necessárias para manter a conectividade contínua para aplicativos e recursos da empresa. Verifique se que sua equipe de suporte está pronta para ajudar os usuários no processo de migração.
 
 ## Modificar sua solução de gerenciamento de mobilidade empresarial existente
 
@@ -78,6 +71,7 @@ Você precisa de ajuda adicional com a migração para o Intune? Fornecemos opç
 Para obter uma cópia baixável deste guia inteiro, visite a [Galeria do TechNet](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

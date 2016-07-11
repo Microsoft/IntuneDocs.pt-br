@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Atualizar aplicativos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
+ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+
 
 ---
 
@@ -34,25 +27,28 @@ Quando uma nova versão de um aplicativo que você implantou for lançada, o Int
 > [!IMPORTANT]
 > Quando você implanta um aplicativo com uma ação de implantação de **Instalação requerida** e, posteriormente, altera a ação de implantação para **Instalação disponível**, atualizações do aplicativo não são instaladas automaticamente em dispositivos que instalaram o aplicativo antes da alteração de implantação ter sido feita. Para corrigir esse problema, você pode fazer o seguinte:
 > 
-> -   O usuário do dispositivo deve ir ao portal da empresa, selecionar o aplicativo instalado e clicar em **Instalar**.
+> -   O usuário do dispositivo deve ir ao portal da empresa, selecionar o aplicativo instalado e escolher **Instalar**.
 > -   Altere a ação de implantação para **Desinstalar**e, após o aplicativo ser desinstalado, reimplante o aplicativo com uma ação de implantação de **Instalação disponível**.
 
 ### Para atualizar um aplicativo
 
-1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos**.
+1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicativos** &gt; **Aplicativos**.
 
-2.  Na lista **Aplicativos** , selecione o aplicativo que você deseja atualizar e clique em **Editar**.
+2.  Na lista **Aplicativos**, selecione o aplicativo que você deseja atualizar e escolha **Editar**.
 
 3.  No assistente **Editar Software** , forneça quaisquer detalhes novos para o pacote do aplicativo.
 
-4.  Quando tiver terminado, clique em **Atualizar**.
+4.  Quando você terminar, escolha **Atualizar**.
 
 Da próxima vez que os dispositivos verificarem os aplicativos disponíveis, o aplicativo será atualizado automaticamente para a versão mais recente.
+Para aplicativos instalados por meio de um pacote do aplicativo (aplicativos de linha de negócios), o aplicativo será atualizado automaticamente para implantações necessárias e disponíveis, desde que o aplicativo tenha o mesmo identificador.
+Para aplicativos implantados como um link para um repositório, a atualização é gerenciada pelo repositório do qual se origina o aplicativo.
 
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

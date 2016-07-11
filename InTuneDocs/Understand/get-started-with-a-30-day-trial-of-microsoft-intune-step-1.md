@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
+ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+
 
 ---
 
@@ -41,7 +35,7 @@ Antes de inscrever-se ou entrar no Intune, você deve considerar o seguinte:
 
 |Inscreva-se para uma NOVA conta se qualquer uma das seguintes condições for verdadeira:|Entre com sua conta CORPORATIVA ou DE ESTUDANTE se:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Você não tem uma conta corporativa ou de estudante** . Uma conta corporativa ou de estudante é fornecida quando você assina um contrato de licenciamento por volume com a Microsoft ou assina o Office 365. Se a sua organização não assinou um Contrato Enterprise ou um contrato de licenciamento por volume equivalente com a Microsoft (ou tem uma conta do Office 365), você não tem uma conta do Microsoft Online Services que pode ser usada para entrar no Microsoft Online Services.<br /><br />**Você descartará seu locatário do Intune depois de concluir a avaliação de 30 dias.** Você deve se inscrever para uma nova conta se estiver usando a assinatura de avaliação gratuita do Intune somente para fins de avaliação e também se planeja refazer sua configuração do serviço Intune e provisionamento do dispositivo depois da avaliação. Essa é a opção recomendada se você planeja usar o Intune com o System Center 2012 Configuration Manager.<br /><br />Se você se inscrever em uma nova conta, não poderá usar posteriormente uma conta do trabalho ou da escola existente para gerenciar essa conta, nem combiná-la com contratos de licenciamento em volume existentes.|**Você tem uma conta corporativa ou de estudante fornecida com um contrato de licenciamento por volume ou assinatura do Office 365 e está usando esta avaliação para o Intune.**<br /><br />Se estiver configurando o Intune em uma conta existente, recomendamos que você examine a [Escolher como gerenciar dispositivos](choose-how-to-manage-devices.md) antes de continuar com estas etapas.|
+|**Você não tem uma conta corporativa ou de estudante** . Uma conta corporativa ou de estudante é fornecida quando você assina um contrato de licenciamento por volume com a Microsoft ou assina o Office 365. Se a sua organização não assinou um Contrato Enterprise ou um contrato de licenciamento por volume equivalente com a Microsoft (ou tem uma conta do Office 365), você não tem uma conta do Microsoft Online Services que pode ser usada para entrar no Microsoft Online Services.<br /><br />**Você descartará seu locatário do Intune depois de concluir a avaliação de 30 dias.** Você deve se inscrever para uma nova conta se estiver usando a assinatura de avaliação gratuita do Intune somente para fins de avaliação e também se planeja refazer sua configuração do serviço Intune e provisionamento do dispositivo depois da avaliação. Essa é a opção recomendada se você planeja usar o Intune com o System Center 2012 Configuration Manager.<br /><br />Se você se inscrever em uma nova conta, não poderá usar posteriormente uma conta do trabalho ou da escola existente para gerenciar essa conta, nem combiná-la com contratos de licenciamento em volume existentes.|**Você tem uma conta corporativa ou de estudante fornecida com um contrato de licenciamento por volume ou assinatura do Office 365 e está usando esta avaliação para o Intune.**<br /><br />Caso esteja configurando o Intune em uma conta existente, recomendamos que você examine a [Escolher como gerenciar dispositivos](/intune/get-started/choose-how-to-manage-devices) antes de continuar com estas etapas.|
 
 ## Inscrever-se ou entrar no Intune
 
@@ -63,9 +57,10 @@ Parabéns! Você concluiu a etapa 1 do passo a passo da *avaliação do Microsof
 
 >[!div class="step-by-step"]
 
->[&larr; **Introdução**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Adicionar usuários** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **Introdução**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Adicionar usuários** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Visão geral do ciclo de vida do dispositivo | Microsoft Intune
-description:
-keywords:
+title: "Visão geral do ciclo de vida do MDM | Microsoft Intune"
+description: "Saiba como o Intune ajuda você a gerenciar dispositivos por meio de seu ciclo de vida desde o registro até a configuração e desativação eventual."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Visão geral sobre o ciclo de vida de MDM (gerenciamento de dispositivos móveis)
 
-O ciclo de vida do dispositivo Intune começa a registrar inicialmente um dispositivo e, em seguida, passa por várias etapas, concluindo quando o dispositivo não for mais necessário.
+Todos os dispositivos gerenciados têm o que chamamos um *ciclo de vida*. O Intune pode ajudar você a gerenciar esse ciclo de vida desde o registro até a desativação o dispositivo quando ele não é mais necessário:
 
 ![O ciclo de vida do dispositivo](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ No mundo de TI modernos, proteger dispositivos contra acesso não autorizado é 
 Quando um dispositivo é perdido ou roubado, precisa ser substituído ou quando os usuários mudam para outro cargo, geralmente é hora de [desativar ou apagar](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) o dispositivo. Há várias maneiras de fazer isso, desde redefinir o dispositivo, remover o gerenciamento ou apagar os dados corporativos dele.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Recursos de gerenciamento do computador Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -39,6 +33,8 @@ Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune,
 -   **Gerenciamento de licenças de software** – Controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
 -   **Implantação de aplicativo** – Implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativo não estão disponíveis quando você gerencia computadores com o software cliente.
 
+
+O Intune dá suporte à instalação do software cliente de computador em até 7.000 dispositivos Windows.
 
 ## Requisitos de sistema operacional
 O Intune pode gerenciar computadores que executam as seguintes versões do Windows (x86 e x64):
@@ -77,6 +73,7 @@ Veja a seguir os requisitos de software para instalar o cliente de computador do
 [Recursos de gerenciamento de dispositivos móveis do Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

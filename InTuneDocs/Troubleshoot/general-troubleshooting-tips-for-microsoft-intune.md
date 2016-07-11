@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Dicas de solução de problemas gerais | Microsoft Intune
-description:
-keywords:
+title: "Dicas de solução de problemas gerais | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+
 
 ---
 
@@ -46,7 +40,7 @@ Você pode perceber que, depois de implantar o Microsoft Intune, encontrará pro
 
 -   O usuário poderia estar enfrentando um problema de autenticação? Se esta for uma possibilidade, verifique se o usuário pode fazer logon em outros serviços que usam o Azure Active Directory. Consulte também se o usuário pode fazer logon de um dispositivo diferente.
 
--   Você verificou o status do serviço? Você pode monitorar a integridade do serviço Intune no [Portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Integridade do Serviço** no painel esquerdo. 
+-   Você verificou o status do serviço? Você pode monitorar a integridade do serviço Intune no [Portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Integridade do Serviço** no painel esquerdo.
 
 ## Coletar dados disponíveis
 
@@ -54,9 +48,9 @@ Você pode perceber que, depois de implantar o Microsoft Intune, encontrará pro
   - [Enviar logs de dados de diagnóstico do Android para o administrador de TI usando um cabo USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Enviar logs de dados de diagnóstico do Android para o administrador de TI usando o email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Enviar erros de registro do Android para o administrador de TI](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [Enviar erros de registro do iOS para o administrador de TI](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [Enviar erros de registro do iOS para o administrador de TI](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Dados de console do administrador, por exemplo, para problemas de implementação de política, você deve examinar a política desejada e o status dessa política, conforme descrito em [Use groups to manage users and devices with Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune).
+-   Dados de console do administrador, por exemplo, para problemas de implementação de política, você deve examinar a política desejada e o status dessa política, conforme descrito em [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune).
 
 ## Pesquisar a solução
 
@@ -97,6 +91,7 @@ Os tópicos listados abaixo têm ajuda de solução para problemas específicos.
 [Solucionar problemas de atualização de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,33 +1,28 @@
 ---
-# required metadata
-
 title: Guia de Desenvolvedor do SDK de Aplicativo do Microsoft Intune para iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # SDK do Microsoft Intune App para o Guia do Desenvolvedor do iOS
 
-> [!NOTE] Leia primeiro a [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md) (Introdução ao Guia de SDK de Aplicativo do Intune), que explica como preparar a integração em cada plataforma com suporte.* 
+> [!NOTE]
+> Leia primeiro a [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md) (Introdução ao Guia de SDK de Aplicativo do Intune), que explica como preparar a integração em cada plataforma com suporte.* 
 
 O SDK do Microsoft Intune App para iOS permite incorporar MAM (Gerenciamento) do Intune Mobile App em seu aplicativo iOS. Um aplicativo habilitado para MAM é integrado com o SDK do Intune App e permite que os administradores de TI implantem políticas para seu aplicativo móvel quando o aplicativo for gerenciado ativamente.
 
@@ -232,7 +227,8 @@ Antes de testar seu aplicativo habilitado para MAM com o Microsoft Intune, você
 
 * Inicie o aplicativo (dentro ou fora do Xcode). Verifique se o PIN funciona conforme o esperado.
 
-> [!NOTE] Agora você pode usar "Configurações -> Nome do Seu Aplicativo -> Habilitar Políticas de Teste" para habilitar e alternar configurações.
+> [!NOTE]
+> Agora você pode usar "Configurações -> Nome do Seu Aplicativo -> Habilitar Políticas de Teste" para habilitar e alternar configurações.
 
 # Práticas Recomendadas de iOS
 
@@ -244,6 +240,7 @@ Se o Xcode tiver problemas para encontrar `libIntuneMAM.a`, você pode corrigir 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

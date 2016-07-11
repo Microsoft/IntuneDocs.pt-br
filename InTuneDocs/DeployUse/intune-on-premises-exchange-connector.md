@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Instalar o Microsoft Intune Exchange Connector para o Exchange local | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+
 
 ---
 
@@ -37,13 +30,13 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 |---------------|--------------------|
 |Sistemas operacionais|O Intune dá suporte para o Exchange Connector local em um computador que executa qualquer edição do Windows Server 2008 SP2 64 bits, Windows Server 2008 R2, Windows Server 2012 ou Windows Server 2012 R2.<br /><br />O conector não tem suporte em instalações Server Core.|
 |Versão do Microsoft Exchange|O Connector local requer o Microsoft Exchange 2010 SP1 ou posterior.|
-|Autoridade de gerenciamento de dispositivo móvel| [Definir a autoridade de gerenciamento de dispositivo móvel para Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|Autoridade de gerenciamento de dispositivo móvel| [Defina a autoridade de gerenciamento de dispositivo móvel para Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Hardware|O computador em que você instala o conector requer uma CPU de 1,6 GHz com 2 GB de ram e 10 GB de espaço livre mínimo em disco do hardware.|
 |Sincronização do Active Directory|Antes de usar qualquer um dos conectores para conectar o Intune ao Exchange Server, é preciso [configurar a sincronização do Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) para que os usuários e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
 |Software adicional|Uma instalação completa do Microsoft .NET Framework 4 e Windows PowerShell 2.0 deve ser feita no computador que hospeda o conector.|
 |Rede|O computador no qual o conector será instalado deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />O computador precisa de configurações para habilitá-lo a acessar o serviço Intune por meio dos firewalls e servidores proxy por Portas 80 e 443. Os domínios usados pelo Intune incluem manage.microsoft.com, &#42;manage.microsoft.com e &#42;.manage.microsoft.com.|
 |Hosted Exchange configurado e em execução|Consulte [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) para obter mais informações. |
-|Definir a autoridade de gerenciamento de dispositivo móvel para Intune|[Defina a autoridade de dispositivo móvel para Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
+|Definir a autoridade de gerenciamento de dispositivo móvel para Intune|[Defina a autoridade de dispositivo móvel para Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Requisitos de cmdlets do Exchange
 
@@ -68,11 +61,11 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 1. Em um sistema operacional com suporte para o Exchange Connector local, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) com uma conta de usuário que seja um administrador no locatário do Exchange com uma licença para usar o Exchange Server.
 ![Abra a configuração de conexão com o Exchange](../media/ExchangeConnector.gif)
 
-2.  No painel de atalhos do espaço de trabalho, selecione **ADMINISTRADOR**.
+2.  No painel de atalhos do espaço de trabalho, clique em **ADMINISTRADOR**.
 
 3.  No painel de navegação, em **Gerenciamento de Dispositivo Móvel**, expanda o **Microsoft Exchange** e, em seguida, clique em **Configurar conexão com o Exchange**.
 
-4.  Na página **Configurar conexão com o Exchange**, clique em **Baixar o On-Premises Connector**.
+4.  Na página **Configurar a Conexão do Exchange**, clique em **Baixar o On-Premises Connector**.
 
 5.  O Exchange Connector local vem em uma pasta compactada (.zip) que pode ser aberta ou salva. Na caixa de diálogo **Download de Arquivos**, clique em **Salvar** para armazenar a pasta compactada em um local seguro.
 
@@ -104,7 +97,7 @@ Execute as seguintes etapas para instalar o Exchange Connector local no Intune. 
       3.  Localize o valor **Servidor Externo POP** .
 
       4.  Clique em **Servidor Proxy** para especificar as configurações do servidor proxy para seu Exchange Server hospedado.
-        1.  Selecione **Use um servidor proxy ao sincronizar informações do dispositivo móvel**.
+        1.  Selecione **Usar um servidor proxy ao sincronizar informações do dispositivo móvel**.
 
         2.  Insira o **nome do servidor proxy** e o **número da porta** a serem usados para acessar o servidor.
 
@@ -139,6 +132,7 @@ Após configurar o Exchange Connector com êxito, você pode exibir o status da 
 Você também pode verificar a hora e data da última tentativa de sincronização bem-sucedida.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

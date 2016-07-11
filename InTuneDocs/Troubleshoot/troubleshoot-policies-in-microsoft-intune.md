@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Solução de problemas com políticas | Microsoft Intune
-description:
-keywords:
+title: "Solução de problemas com políticas | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -58,7 +51,7 @@ Na captura de tela abaixo, você pode ver dois exemplos claros:
 ## Atualização de política e intervalos de atualização
 Lembre-se de que as políticas são atualizadas em intervalos regulares. Em geral, as políticas devem ser registradas em dispositivos dentro de 15 minutos depois de fazer uma alteração. Aqui estão mais detalhes sobre os intervalos regulares para atualização de política:
 
--   **Dispositivos Windows registrados no MDM**: é disparado por uma tarefa agendada às 3h, horário local, no dispositivo e ocorre diariamente.
+-   **Dispositivo Windows registrado para o MDM**: a política é atualizada a cada 8 horas para dispositivos Windows 8.1 e Windows 10 e a cada 24 horas para dispositivos Windows RT.
 
 -   **Windows Phone**: a política é atualizada a cada 8 horas. Isso pode ser forçado por uma atualização no Portal da Empresa, em **Configurações**.
 
@@ -116,6 +109,7 @@ O MDM para Android não permite que o serviço force alterações de política i
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

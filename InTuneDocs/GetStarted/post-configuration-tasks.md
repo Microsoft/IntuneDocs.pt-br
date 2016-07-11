@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Tarefas pós configuração | Microsoft Intune
-description:
-keywords:
+title: "Tarefas pós configuração | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 2ea7f48c8d34da920c7cb3a70309d34c3f768fed
+
 
 ---
 
@@ -35,6 +29,7 @@ Depois de concluir as etapas de configuração inicial para uma assinatura paga 
 -   **Proteger os recursos da empresa:** depois de ter configurado o Intune e registrado seus dispositivos, você desejará certificar-se de que está protegendo dispositivos contra perda de dados e outras ameaças. Para saber mais sobre como proteger recursos, consulte [Protect apps and data with Microsoft Intune (Proteger aplicativos e dados com o Microsoft Intune)](/Intune/deploy-use/protect-apps-and-data-with-microsoft-intune).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

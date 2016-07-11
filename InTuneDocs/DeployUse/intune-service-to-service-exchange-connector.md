@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurar o conector do Microsoft Intune Exchange para o Exchange hospedado | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+
 
 ---
 
@@ -57,7 +51,7 @@ Também é preciso criar uma conta de usuário do Exchange Online que seja usada
 2.  No painel de atalhos do espaço de trabalho, escolha **ADMIN**, acesse **Gerenciamento de Dispositivos Móveis** > **Microsoft Exchange** > **Configurar Conexão do Exchange**.
 ![Configurar página do Service to Service Connector](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  Na página **Configurar a Conexão do Exchange**, clique em **Configurar o Service to Service Connector**.
+3.  Na página **Configurar a Conexão do Exchange**, clique em **Configurar o Conector de Serviços**.
 
 
 O Service to Service Connector será configurado e sincronizado automaticamente com o ambiente do Exchange Hospedado.
@@ -69,6 +63,7 @@ Após configurar com êxito o Exchange Connector, no console do administrador do
 Você também pode verificar a hora e data da última tentativa de sincronização bem-sucedida.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

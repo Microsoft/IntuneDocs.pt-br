@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: VPN por aplicativo para Android usando Pulse Secure | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
+ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
+ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: chrisbal
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -35,7 +26,7 @@ Você pode criar um perfil de VPN por aplicativo para dispositivos Android geren
 2. Selecione um modelo para a nova política expandindo **Android** e escolha **Perfil de VPN (Android 4 e posterior)**.
 
 3. No modelo, para **Tipo de conexão**, escolha **Pulse Secure**.
-4. Conclua e salve o perfil de VPN. Para obter mais detalhes sobre perfis de VPN, consulte [Perfis de VPN](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md).
+4. Conclua e salve o perfil de VPN. Para obter mais detalhes sobre perfis de VPN, consulte [Conexões VPN](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
 Anote o nome do perfil de VPN para uso na próxima etapa. Por exemplo, **MyAppVpnProfile**.
@@ -82,6 +73,7 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

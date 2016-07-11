@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Adicionar aplicativos a dispositivos móveis | Microsoft Intune
-description:
-keywords:
+title: Adicionar aplicativos a dispositivos registrados | Microsoft Intune
+description: "Antes de implantar um aplicativo, você deve adicioná-lo ao Intune. Em seguida, ele está disponível no console do Intune, em que você pode implantá-lo e gerenciá-lo."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
+
 
 ---
 
-# Adicionar aplicativos a dispositivos móveis no Microsoft Intune
+# Adicionar aplicativos para dispositivos registrados ao Intune
 
-Use as informações neste tópico para aprender a adicionar aplicativos ao Intune antes de implantá-los.
+Antes de implantar ou gerenciar um aplicativo, você deve adicioná-lo ao Microsoft Intune. Este tópico mostra como adicionar aplicativos para dispositivos registrados.
 
 
 > [!IMPORTANT]
@@ -36,14 +29,15 @@ Use as informações neste tópico para aprender a adicionar aplicativos ao Intu
 ## Adicionar o aplicativo
 Use o Intune Software Publisher para configurar as propriedades do aplicativo e, onde aplicável, carregá-lo no seu espaço de armazenamento em nuvem usando o seguinte procedimento:
 
-1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
+1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
 
-    > [!TIP] Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
+    > [!TIP]
+    > Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
 
 2.  Na página **Instalação de software**, o fornecedor de software, escolha uma das seguintes opções para **Selecionar como este software é disponibilizado para dispositivos**:
     - **Instalador de software**, para aplicativos com a extensão **.msi** ou **.exe**, especifique:
         - **Selecione o tipo de arquivo do instalador de software**: isso indica o tipo de software que você deseja implantar. Por exemplo, se você quiser instalar um aplicativo iOS, escolha **Pacote do Aplicativo para iOS (&#42;arquivo .ipa)**.
-        - **Especifique o local dos arquivos de configuração do software**: insira o local dos arquivos de instalação, ou clique em **Procurar** para selecionar o local em uma lista.
+        - **Especifique o local dos arquivos de configuração do software**: insira o local dos arquivos de instalação ou escolha **Procurar** para selecionar o local em uma lista.
         - **Incluir arquivos e subpastas adicionais da mesma pasta**: apenas para o tipo de arquivo do **Windows Installer**.<br>Alguns softwares que usam o Windows Installer requerem arquivos de suporte, que geralmente se encontram na mesma pasta que os arquivos de instalação. Selecione esta opção se você também deseja implantar esses arquivos.<br>Esse tipo de instalação usa uma parte do seu espaço de armazenamento em nuvem.
 
   -   **Link externo**, para aplicativos que você deseja criar, especificando um link para uma loja de aplicativos, especifique:
@@ -64,7 +58,8 @@ Use o Intune Software Publisher para configurar as propriedades do aplicativo e,
 
 3.  Na página **Descrição do Software**, defina as seguintes configurações:
 
-    > [!TIP] Dependendo do tipo de instalador que você está usando, talvez alguns desses valores tenham sido inseridos automaticamente.
+    > [!TIP]
+    > Dependendo do tipo de instalador que você está usando, talvez alguns desses valores tenham sido inseridos automaticamente.
 
     - **Editor**: insira o nome do editor do aplicativo.
     - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa.<br>Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
@@ -82,13 +77,14 @@ Use o Intune Software Publisher para configurar as propriedades do aplicativo e,
 
 4.  Na página **Requisitos**, selecione os requisitos que devem ser atendidos antes que o aplicativo possa começar a ser instalado em um dispositivo. Por exemplo, para um pacote de aplicativos para iOS, você pode selecionar a versão mínima do iOS necessária e o tipo de dispositivo, como um iPhone ou um iPad.
 
-    > [!TIP] A página **Requisitos** não é exibida para todos os tipos de aplicativos.
+    > [!TIP]
+    > A página **Requisitos** não é exibida para todos os tipos de aplicativos.
 
 5.  Mais páginas do assistente são exibidas quando você escolhe o tipo de arquivo do **Windows Installer**. Esse tipo de arquivo é usado quando você implanta software em PCs que executam o Windows 10 ou posterior e que são registrados com o Intune.
 
-6.  Na página **Resumo**, examine as informações especificadas por você. Quando estiver pronto, clique em **Carregar**.
+6.  Na página **Resumo**, examine as informações especificadas por você. Quando estiver pronto, selecione **Carregar**.
 
-7.  Clique em **Fechar** para concluir.
+7.  Selecione **Fechar** para concluir.
 
 O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicativos**.
 
@@ -107,6 +103,7 @@ Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
