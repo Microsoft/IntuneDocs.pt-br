@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 11
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 142
-[ In Sync Handback Files ](#insync-handback-success-list)| 682
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 140
+[ In Sync Handback Files ](#insync-handback-success-list)| 684
 [ Ignored Files ](#ignored-list)| 241
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -348,7 +348,6 @@
  [InTuneDocs\includes\group-deprecation.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5ec8e8d42232efdac7e8c36e00341bb07c66c0e5/InTuneDocs/includes/group-deprecation.md) | OutofSyncHandedBackSuccess | [Details](#de6b0a502492984a20cb9f16abbdea1d7c34dc60603)
  [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5f336cf52cbecd93cb7b2850560327e6024302e0/InTuneDocs/includes/mdm-supported-devices.md) | OutofSyncHandedBackSuccess | [Details](#250e15795ac6bed9504f8c08d387d02526792687607)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-25-json-pg-cancel.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png) | OutofSyncHandedBackSuccess | [Details](#02ee7250a87309ddedcd0cc19c61928e7b78045f674)
- [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg) | OutofSyncHandedBackSuccess | [Details](#83f8f374e137074faa15c9a5025cfbb63a179e1a701)
  [InTuneDocs\media\AppManagement\Android_CompanyPortalInstall.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/AppManagement/Android_CompanyPortalInstall.png) | OutofSyncHandedBackSuccess | [Details](#f68f26299083b8c8614da06d0c1ce4d254724b1e729)
  [InTuneDocs\media\AppManagement\iOS_WordCopyPersonal.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/AppManagement/iOS_WordCopyPersonal.png) | OutofSyncHandedBackSuccess | [Details](#091fc88ed6356e1b4801771da80af4a5b9629d9c791)
  [InTuneDocs\media\ConditionalAccess4.png](https://github.com/Microsoft/IntuneDocs-pr/blob/7fe42d39f80b19c1c043777d356b82f7c3f432c0/InTuneDocs/media/ConditionalAccess4.png) | OutofSyncHandedBackSuccess | [Details](#f44d674ab5577636bf3171cf43ed105bbedb280c844)
@@ -364,7 +363,6 @@
  [InTuneDocs\Understand\get-started-with-a-30-day-trial-of-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4af13629986e7cef814104f3d1f298eb2be240ac/InTuneDocs/Understand/get-started-with-a-30-day-trial-of-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#26ecc3dfe8816da9f30829901d929af53b1bedc01175)
  [InTuneDocs\Understand\introduction-to-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8b2faea503fd0c03014a7eed2cbf379375d86bb2/InTuneDocs/Understand/introduction-to-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#f929933391049ac9d6f53fc568d5c306345a0d1c1176)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-25-json-pg-cancel.png](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png) | OutofSyncHandedBackSuccess | [Details](#02ee7250a87309ddedcd0cc19c61928e7b78045f1193)
- [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg) | OutofSyncHandedBackSuccess | [Details](#83f8f374e137074faa15c9a5025cfbb63a179e1a1224)
  [InTuneDocs\Understand\media\Email-Walkthrough\Email-Walkthrough-7.png](https://github.com/Microsoft/IntuneDocs-pr/blob/857cae72431286cc3e67b8b649bcc99c81d216c7/InTuneDocs/Understand/media/Email-Walkthrough/Email-Walkthrough-7.png) | OutofSyncHandedBackSuccess | [Details](#797b763dbbee12e9bef74dcc544be0cfacea17861249)
  [InTuneDocs\Understand\microsoft-intune-service-description.md](https://github.com/Microsoft/IntuneDocs-pr/blob/206f7c927cce0b66cf554f60342f3f0b1ca43105/InTuneDocs/Understand/microsoft-intune-service-description.md) | OutofSyncHandedBackSuccess | [Details](#1171ec6d7984d8a9649fbcd5533211bab5d567ee1252)
  [InTuneDocs\Understand\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cd5425af051a5221518c603ef2bc99797f950ad/InTuneDocs/Understand/TOC.md) | OutofSyncHandedBackSuccess | [Details](#8e24b2f0d978fe59c1fab350230026c58171fa2b1255)
@@ -826,6 +824,7 @@
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-49-profile-install-2.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg) | InSyncHandedBackSuccess | [Details](#2dce1561cfab99a670bb8e903605d6fd943d8111698)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-50-warning-install-3.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png) | InSyncHandedBackSuccess | [Details](#610ea703a53060f6a466b8ab46b6038a40a65eff699)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-51-remt-mgmt-trust.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg) | InSyncHandedBackSuccess | [Details](#0ad03e0ab85624031c48db341f37edb527115e06700)
+ [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg) | InSyncHandedBackSuccess | [Details](#83f8f374e137074faa15c9a5025cfbb63a179e1a701)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-53-devc-enrolled-ok.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png) | InSyncHandedBackSuccess | [Details](#0396c31e4ee120e82bf667065b49d5d36ed7fd05702)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-54-passcode-req-cont.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png) | InSyncHandedBackSuccess | [Details](#8afe928fe21b830b9475d6fff1a46fc927a04c80703)
  [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-55-passcode-enter.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg) | InSyncHandedBackSuccess | [Details](#a66218e0f957627194f77bdb43b93763d9c5cec4704)
@@ -1028,6 +1027,7 @@
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-49-profile-install-2.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg) | InSyncHandedBackSuccess | [Details](#2dce1561cfab99a670bb8e903605d6fd943d81111219)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-50-warning-install-3.png](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png) | InSyncHandedBackSuccess | [Details](#610ea703a53060f6a466b8ab46b6038a40a65eff1221)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-51-remt-mgmt-trust.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg) | InSyncHandedBackSuccess | [Details](#0ad03e0ab85624031c48db341f37edb527115e061222)
+ [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg) | InSyncHandedBackSuccess | [Details](#83f8f374e137074faa15c9a5025cfbb63a179e1a1224)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-53-devc-enrolled-ok.png](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png) | InSyncHandedBackSuccess | [Details](#0396c31e4ee120e82bf667065b49d5d36ed7fd051226)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-54-passcode-req-cont.png](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png) | InSyncHandedBackSuccess | [Details](#8afe928fe21b830b9475d6fff1a46fc927a04c801227)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-55-passcode-enter.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg) | InSyncHandedBackSuccess | [Details](#a66218e0f957627194f77bdb43b93763d9c5cec41228)
@@ -4633,14 +4633,14 @@
 
 ##### <a name='893e896fc52e6e883fcd151db2c47030113502a2254'></a> Source: [InTuneDocs\DeployUse\what-to-tell-your-end-users-about-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/DeployUse/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\what-to-tell-your-end-users-about-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/152932c30903411844ec5dbe9baed2f038dce287/InTuneDocs/DeployUse/what-to-tell-your-end-users-about-using-microsoft-intune.md)
+* Target File: [InTuneDocs\DeployUse\what-to-tell-your-end-users-about-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/DeployUse/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 * Handoff File: [what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/99b0890bf6dd7c92481947d4fd4e162e1dd7d74b/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf)
 * Handoff Datetime: 2016-06-27 11:35:12
 * Handoff Reason: Include
 * Archive File: [what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/7ed8f1412b92c3800c0391e76bc7c48f2b3b14c1/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/archive/what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf)
 * Archive Datetime: 2016-07-02 01:29:34
-* Handback File: [what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/9e027dd40b405cdb57e3bf2a6bb878ea35d4fff4/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf)
-* Handback Datetime: 2016-07-02 23:12:55
+* Handback File: [what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/what-to-tell-your-end-users-about-using-microsoft-intune.75782c091e439be2e606e59a19dabd450941b21a.pt-br.xlf)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='1282ec1214a2c499166299a0a13b0bd3bfc7f3b2258'></a> Source: [InTuneDocs\DeployUse\wi-fi-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/910ccd7c91593114ddf57c842c0bf9c9ffa54fdc/InTuneDocs/DeployUse/wi-fi-connections-in-microsoft-intune.md)
@@ -6296,15 +6296,15 @@
 
 ##### <a name='e72c97da1bf359b6ef633161d4a41e7a0f8b6516388'></a> Source: [InTuneDocs\EndUser\media\W10-enroll-2-accounts-your-account.png](https://github.com/Microsoft/IntuneDocs-pr/blob/71af89a1feb73bccae1f07007bb5c30ea3f7950e/InTuneDocs/EndUser/media/W10-enroll-2-accounts-your-account.png)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\media\W10-enroll-2-accounts-your-account.png](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/568bd10d9b5cc300aa6ba9325d2b2a2f0156415e/InTuneDocs/EndUser/media/W10-enroll-2-accounts-your-account.png)
+* Target File: [InTuneDocs\EndUser\media\W10-enroll-2-accounts-your-account.png](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/EndUser/media/W10-enroll-2-accounts-your-account.png)
 * Handoff File: [e72c97da1bf359b6ef633161d4a41e7a0f8b6516.png](https://github.com/Microsoft/EM.handoff/blob/585ef405113143fe429b841eb52a9028a1e36faf/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/e72c97da1bf359b6ef633161d4a41e7a0f8b6516.png)
 * Handoff Datetime: 2016-06-30 16:21:56
 * Handoff Reason: IsDependency
 * Dependency From: InTuneDocs\md-using-your-windows-device-with-intune.md, InTuneDocs\using-your-android-device-with-intune.md, InTuneDocs\using-your-windows-device-with-intune.md, InTuneDocs\EndUser\enroll-your-device-in-intune-windows.md, InTuneDocs\EndUser\enroll-your-w10-phone-or-w10-pc-windows.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [e72c97da1bf359b6ef633161d4a41e7a0f8b6516.png](https://github.com/Microsoft/EM.handback/blob/5120be56076b8be7bf1b0a1b116bdf903e830a65/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/e72c97da1bf359b6ef633161d4a41e7a0f8b6516.png)
-* Handback Datetime: 2016-07-12 08:53:10
+* Handback File: [e72c97da1bf359b6ef633161d4a41e7a0f8b6516.png](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/e72c97da1bf359b6ef633161d4a41e7a0f8b6516.png)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='fbdceabc89cd98dbc786fdfb0bf92bd32ac9c836389'></a> Source: [InTuneDocs\EndUser\media\W10-enroll-3-add-work-school-acct.png](https://github.com/Microsoft/IntuneDocs-pr/blob/e50c3401ce0b8e5e1e10e196b3d9e00c71de884d/InTuneDocs/EndUser/media/W10-enroll-3-add-work-school-acct.png)
@@ -9188,14 +9188,14 @@
 
 ##### <a name='6517856f8c3a3fda3ae28305a05d127f0e1bdb97619'></a> Source: [InTuneDocs\includes\win8_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_client_2_md.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\win8_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/c666ba76c472bc39b5bf0dfa58ee8fedd58a2518/InTuneDocs/includes/win8_client_2_md.md)
+* Target File: [InTuneDocs\includes\win8_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/includes/win8_client_2_md.md)
 * Handoff File: [win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/99b0890bf6dd7c92481947d4fd4e162e1dd7d74b/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf)
 * Handoff Datetime: 2016-06-27 11:35:12
 * Handoff Reason: Include
 * Archive File: [win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/7ed8f1412b92c3800c0391e76bc7c48f2b3b14c1/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/archive/win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf)
 * Archive Datetime: 2016-07-02 01:29:34
-* Handback File: [win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/ca0852da0b4a517784ec8a09bad872d07b5be5bb/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf)
-* Handback Datetime: 2016-07-02 19:35:18
+* Handback File: [win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/win8_client_2_md.60715d1e2a32d044cc5e0b50051a21445afd475e.pt-br.xlf)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='0a1bed55d2b1fd0a78b7196e1b37e4b7f118cc0f620'></a> Source: [InTuneDocs\includes\win8_server_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_server_2.md)
@@ -10213,16 +10213,16 @@
 * [Back to Top](#report-top)
 
 ##### <a name='83f8f374e137074faa15c9a5025cfbb63a179e1a701'></a> Source: [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/0a5032fea6bf8f6139100ca2e580faf27a2ab88c/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
 * Handoff File: [83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg](https://github.com/Microsoft/EM.handoff/blob/b0f0ea51f6e91c72d7209ef53ab61fcda736c584/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg)
 * Handoff Datetime: 2016-07-12 17:42:15
 * Handoff Reason: IsDependency
 * Dependency From: InTuneDocs\Understand\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg](https://github.com/Microsoft/EM.handback/blob/44b990d1f4511b17a56fc60aa81c0eb11b465208/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg)
-* Handback Datetime: 2016-07-12 04:47:49
+* Handback File: [83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='0396c31e4ee120e82bf667065b49d5d36ed7fd05702'></a> Source: [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-53-devc-enrolled-ok.png](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png)
@@ -12196,15 +12196,15 @@
 
 ##### <a name='eca341e075c54bd11ce80916237eaf81723ec103856'></a> Source: [InTuneDocs\media\dev-sa-ios-dep.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1a21f2c8f9da9827b4214d1f1300bd6697434e79/InTuneDocs/media/dev-sa-ios-dep.png)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\media\dev-sa-ios-dep.png](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/af22a323eb46346875b3f4edaff0b0e43dcc992a/InTuneDocs/media/dev-sa-ios-dep.png)
+* Target File: [InTuneDocs\media\dev-sa-ios-dep.png](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/media/dev-sa-ios-dep.png)
 * Handoff File: [eca341e075c54bd11ce80916237eaf81723ec103.png](https://github.com/Microsoft/EM.handoff/blob/00b28a8f6bd1d47aeafe5aff011c57ecba80c21f/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/eca341e075c54bd11ce80916237eaf81723ec103.png)
 * Handoff Datetime: 2016-07-01 18:42:33
 * Handoff Reason: IsDependency
 * Dependency From: InTuneDocs\DeployUse\ios-device-enrollment-program-in-microsoft-intune.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [eca341e075c54bd11ce80916237eaf81723ec103.png](https://github.com/Microsoft/EM.handback/blob/03b9f3987ca395841a9abe357239a205da4e41da/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/eca341e075c54bd11ce80916237eaf81723ec103.png)
-* Handback Datetime: 2016-07-12 03:58:07
+* Handback File: [eca341e075c54bd11ce80916237eaf81723ec103.png](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/eca341e075c54bd11ce80916237eaf81723ec103.png)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='cd9cbfed5ec82b480656983649fd5a2db0731a92857'></a> Source: [InTuneDocs\media\dev-sa-wipe.png](https://github.com/Microsoft/IntuneDocs-pr/blob/1a21f2c8f9da9827b4214d1f1300bd6697434e79/InTuneDocs/media/dev-sa-wipe.png)
@@ -13540,15 +13540,15 @@
 
 ##### <a name='70314be91e0af4e2f83d5026faa73f1bb947cfe1958'></a> Source: [InTuneDocs\media\mam-azure-portal-delete-app.png](https://github.com/Microsoft/IntuneDocs-pr/blob/4b8d9f3034bf96ee6854524d12409ac1c6eaaa67/InTuneDocs/media/mam-azure-portal-delete-app.png)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\media\mam-azure-portal-delete-app.png](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a28f3fbf344f8889fabace60ff158e5140db2745/InTuneDocs/media/mam-azure-portal-delete-app.png)
+* Target File: [InTuneDocs\media\mam-azure-portal-delete-app.png](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/media/mam-azure-portal-delete-app.png)
 * Handoff File: [70314be91e0af4e2f83d5026faa73f1bb947cfe1.png](https://github.com/Microsoft/EM.handoff/blob/585ef405113143fe429b841eb52a9028a1e36faf/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/70314be91e0af4e2f83d5026faa73f1bb947cfe1.png)
 * Handoff Datetime: 2016-06-30 16:21:56
 * Handoff Reason: IsDependency
 * Dependency From: InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [70314be91e0af4e2f83d5026faa73f1bb947cfe1.png](https://github.com/Microsoft/EM.handback/blob/8925f3a79b3b71f176d91c1e2aa0b3dca116b76a/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/70314be91e0af4e2f83d5026faa73f1bb947cfe1.png)
-* Handback Datetime: 2016-07-12 09:38:54
+* Handback File: [70314be91e0af4e2f83d5026faa73f1bb947cfe1.png](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/70314be91e0af4e2f83d5026faa73f1bb947cfe1.png)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='2415ec9b08debedea47e3ec5343224e924f205d1959'></a> Source: [InTuneDocs\media\mam-azure-portal-lob-context-menu.png](https://github.com/Microsoft/IntuneDocs-pr/blob/4b8d9f3034bf96ee6854524d12409ac1c6eaaa67/InTuneDocs/media/mam-azure-portal-lob-context-menu.png)
@@ -16842,16 +16842,16 @@
 * [Back to Top](#report-top)
 
 ##### <a name='83f8f374e137074faa15c9a5025cfbb63a179e1a1224'></a> Source: [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/0a5032fea6bf8f6139100ca2e580faf27a2ab88c/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.jpg](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/a87d317ecbcc22297945a2f810bf0d645e60ba6b/InTuneDocs/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
 * Handoff File: [83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg](https://github.com/Microsoft/EM.handoff/blob/b0f0ea51f6e91c72d7209ef53ab61fcda736c584/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg)
 * Handoff Datetime: 2016-07-12 17:42:15
 * Handoff Reason: IsDependency
 * Dependency From: InTuneDocs\Understand\start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg](https://github.com/Microsoft/EM.handback/blob/44b990d1f4511b17a56fc60aa81c0eb11b465208/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg)
-* Handback Datetime: 2016-07-12 04:47:49
+* Handback File: [83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg](https://github.com/Microsoft/EM.handback/blob/db81f273c927070b068794fa3e15d288d796ede3/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/83f8f374e137074faa15c9a5025cfbb63a179e1a.jpg)
+* Handback Datetime: 2016-07-13 16:57:36
 * [Back to Top](#report-top)
 
 ##### <a name='a1eb85b6a803daaad928cdaaef931df786b199361225'></a> Source: [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.png](https://github.com/Microsoft/IntuneDocs-pr/blob/342ba96505b4ac7ce2c407a2f65c07379b29d7b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.png)
