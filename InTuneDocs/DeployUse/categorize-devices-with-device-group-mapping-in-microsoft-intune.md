@@ -52,6 +52,6 @@ Agora, quando os usuários registrarem seus dispositivos, eles verão uma lista 
 [Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -72,6 +72,6 @@ Para obter uma cópia baixável deste guia inteiro, visite a [Galeria do TechNet
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

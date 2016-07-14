@@ -46,6 +46,7 @@ As políticas de MAM (gerenciamento de aplicativos móveis) são aplicadas somen
 
     ![Captura de tela mostrando o local do arquivo aberto com a lista de arquivos existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Quando você altera uma política implantada, as alterações serão aplicadas da próxima vez que você abrir o aplicativo.
 
 ##  Acessando o OneDrive em um dispositivo Android
@@ -169,6 +170,6 @@ Isso não impede você de usar o aplicativo RMS sharing para exibir arquivos da 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

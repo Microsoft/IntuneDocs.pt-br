@@ -46,6 +46,7 @@ Na captura de tela abaixo, você pode ver dois exemplos claros:
 
 ![Política de dispositivo Intune](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
 
 ## Atualização de política e intervalos de atualização
@@ -68,6 +69,7 @@ Para dispositivos do Windows não MDM, erros de política no arquivo policyplatf
 
 2.  Espere 20 minutos para o software cliente ser removido.
 
+    > [!NOTE]
     > [!NOTE] Não tente remover o cliente em Programas e Recursos.
 
 3.  No menu Iniciar, digite **UAC** para abrir as configurações de Controle de Conta de Usuário.
@@ -110,6 +112,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
