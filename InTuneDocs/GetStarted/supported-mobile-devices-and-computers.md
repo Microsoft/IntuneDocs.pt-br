@@ -33,6 +33,6 @@ Você pode gerenciar dispositivos e computadores, mesmo que eles não façam par
 [O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
