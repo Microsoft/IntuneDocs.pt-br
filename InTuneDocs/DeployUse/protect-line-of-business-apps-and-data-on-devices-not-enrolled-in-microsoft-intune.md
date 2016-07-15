@@ -74,6 +74,6 @@ Você pode remover um aplicativo de linha de negócios da lista de aplicativos. 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

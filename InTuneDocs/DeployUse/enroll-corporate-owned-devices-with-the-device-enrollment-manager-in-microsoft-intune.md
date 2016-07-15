@@ -91,6 +91,6 @@ Excluir um gerenciador de registro de dispositivos não afeta os dispositivos re
 -   A relação da conta do gerenciador de registro de dispositivos excluído com os dispositivos registrados permanece, mas nenhum dispositivo adicional pode ser registrado
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

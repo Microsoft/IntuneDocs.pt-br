@@ -28,6 +28,7 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 
 -   **Instalação obrigatória** – O aplicativo está instalado no dispositivo, sem necessidade de intervenção do usuário final.
 
+    > [!TIP]
     > [!TIP] Para dispositivos iOS que não estão no modo supervisionado e para todos os dispositivos Android, o usuário deve aceitar a oferta do aplicativo antes que ele seja instalado.
     > 
     >  Se um usuário final desinstalar um aplicativo implantado como instalação obrigatória, o Intune reinstalará automaticamente o aplicativo após o próximo ciclo de inventário, que normalmente ocorre a cada 7 dias.
@@ -52,6 +53,7 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 |Link externo (implantado em um grupo de dispositivos)|Não|Não|Não|Não|
 |Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de usuários)|Sim|Sim|Sim|Sim|
 |Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
+> [!TIP]
 > [!TIP] Ao implantar aplicativos, se você selecionar usuários e grupos de dispositivos, só poderá implantar o aplicativo como uma **Instalação disponível**.
 
 ## Conflitos de implantação
@@ -70,6 +72,6 @@ Saiba como [implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
