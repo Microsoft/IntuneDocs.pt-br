@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\ios-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e736d688032dd2ddee5be9edf2a33d5e7ba5257b/InTuneDocs/DeployUse/ios-compliance-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#591023ea08b669ca69e8cac45e37b5fb2689ddcd56)
- [InTuneDocs\includes\winblue_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2_md.md) | InSyncHandedBackSuccess | [Details](#9fe8c734d18c33e1fe587ed88ac86891c9413013623)
 
 ## Item Details
-##### <a name='591023ea08b669ca69e8cac45e37b5fb2689ddcd56'></a> Source: [InTuneDocs\DeployUse\ios-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e736d688032dd2ddee5be9edf2a33d5e7ba5257b/InTuneDocs/DeployUse/ios-compliance-policy-settings-in-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\ios-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/5e422db557f4cf49c3de2facb22cdb8cc485936d/InTuneDocs/DeployUse/ios-compliance-policy-settings-in-microsoft-intune.md)
-* Handoff File: [ios-compliance-policy-settings-in-microsoft-intune.db013c1c1889068db19096dff5552dba4f910541.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/ea2edf7984d1a8c6480838c143d4bb9187df06e0/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/ios-compliance-policy-settings-in-microsoft-intune.db013c1c1889068db19096dff5552dba4f910541.pt-br.xlf)
-* Handoff Datetime: 2016-07-11 21:32:28
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [ios-compliance-policy-settings-in-microsoft-intune.db013c1c1889068db19096dff5552dba4f910541.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d3fbf551e5ca0577fba448a8bd781d9312829986/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/ios-compliance-policy-settings-in-microsoft-intune.db013c1c1889068db19096dff5552dba4f910541.pt-br.xlf)
-* Handback Datetime: 2016-07-15 02:26:59
-* [Back to Top](#report-top)
-
-##### <a name='9fe8c734d18c33e1fe587ed88ac86891c9413013623'></a> Source: [InTuneDocs\includes\winblue_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2_md.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\winblue_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr.pt-br/blob/5e422db557f4cf49c3de2facb22cdb8cc485936d/InTuneDocs/includes/winblue_client_2_md.md)
-* Handoff File: [winblue_client_2_md.e3d7bb6c7488d9cf1bd81349494a8a46e6905bde.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/99b0890bf6dd7c92481947d4fd4e162e1dd7d74b/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/winblue_client_2_md.e3d7bb6c7488d9cf1bd81349494a8a46e6905bde.pt-br.xlf)
-* Handoff Datetime: 2016-06-27 11:35:12
-* Handoff Reason: Include
-* Archive File: [winblue_client_2_md.e3d7bb6c7488d9cf1bd81349494a8a46e6905bde.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/7ed8f1412b92c3800c0391e76bc7c48f2b3b14c1/ol-handoff/Microsoft/IntuneDocs-pr.pt-br/master/archive/winblue_client_2_md.e3d7bb6c7488d9cf1bd81349494a8a46e6905bde.pt-br.xlf)
-* Archive Datetime: 2016-07-02 01:29:34
-* Handback File: [winblue_client_2_md.e3d7bb6c7488d9cf1bd81349494a8a46e6905bde.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d3fbf551e5ca0577fba448a8bd781d9312829986/ol-handback/Microsoft/IntuneDocs-pr.pt-br/master/winblue_client_2_md.e3d7bb6c7488d9cf1bd81349494a8a46e6905bde.pt-br.xlf)
-* Handback Datetime: 2016-07-15 02:26:59
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
