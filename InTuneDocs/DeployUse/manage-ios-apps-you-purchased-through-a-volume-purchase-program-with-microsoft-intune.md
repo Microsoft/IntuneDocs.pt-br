@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gerenciar aplicativos iOS adquiridos por meio de um programa de compra por volume | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Para recuperar uma licença, você deve alterar a ação de implantação para *
 
 Quando um usuário com um dispositivo qualificado tenta instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. Eles devem fazer isso antes que a instalação do aplicativo prossiga.
 
-> [!TIP] Examine a coluna **Status de Termos do VPP** para ver o status de aceitação para cada usuário ao qual o aplicativo foi implantado.
+> [!TIP]
+> Examine a coluna **Status de Termos do VPP** para ver o status de aceitação para cada usuário ao qual o aplicativo foi implantado.
 
 Se não houver nenhuma licença adicional disponível, a implantação falhará.
 
 ## Para monitorar aplicativos de VPP da Apple
 Você pode monitorar quais aplicativos de VPP foram implantados e quantas licenças são usadas do espaço de trabalho **Aplicativos**, no nó **Software Gerenciado** &gt; **Aplicativos Adquiridos por Volume**.
 
-> [!TIP] Você também pode usar o aplicativo **Filtros** para examinar o status de cada instalação do aplicativo.
+> [!TIP]
+> Você também pode usar o aplicativo **Filtros** para examinar o status de cada instalação do aplicativo.
 
 ### Consulte também
 [Implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

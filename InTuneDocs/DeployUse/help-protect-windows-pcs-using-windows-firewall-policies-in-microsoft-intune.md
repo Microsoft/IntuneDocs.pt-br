@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Políticas de firewall para computadores Windows | Microsoft Intune
-description:
-keywords:
+title: "Políticas de firewall para computadores Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 O Microsoft Intune pode ajudá-lo a proteger seus computadores Windows gerenciados com o cliente do Intune, incluindo o uso de políticas que permitem que você defina as configurações de Firewall do Windows nos computadores.
 
-Se você ainda não tiver instalado o cliente em seus computadores Windows com Intune, consulte [Install the Windows PC client with Microsoft Intune (Instalar o cliente do computador Windows com o Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
+Se você ainda não tiver instalado o cliente em seus computadores Windows com Intune, consulte [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar o cliente do computador Windows com o Microsoft Intune).
 
 Use as informações nas seções a seguir para ajudar a configurar, implantar e monitorar as políticas de Firewall do Windows nos computadores Windows.
 
@@ -36,7 +30,7 @@ Use as informações nas seções a seguir para ajudar a configurar, implantar e
 A política de Firewall do Windows permite criar e implantar as configurações que controlam o Firewall do Windows em computadores gerenciados. Não é possível gerenciar exceções personalizadas para o Firewall do Windows e essas configurações não afetam os firewalls de terceiros.
 
 > [!NOTE]
-> Se a política do Microsoft Intune e a Política de grupo estiverem configuradas para gerenciar a mesma configuração no computador, a configuração da Política de grupo substituirá a política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre as políticas do Intune e a Política de grupo, consulte [Resolve GPO and Microsoft Intune policy conflicts (Resolver conflitos de política do Microsoft Intune e de GPO)](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
+> Se a política do Microsoft Intune e a Política de grupo estiverem configuradas para gerenciar a mesma configuração no computador, a configuração da Política de grupo substituirá a política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre as políticas do Intune e a Política de Grupo, consulte [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) (Resolver conflitos de política do Microsoft Intune e de GPO).
 >
 > Se você quiser implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deve primeiro instalar o [Hotfix KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
 
@@ -50,7 +44,7 @@ A política de Firewall do Windows permite criar e implantar as configurações 
 
 1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** &gt; **Adicionar Política**.
 
-2.  Defina e implante uma política de **Configurações de firewall do Windows** . É possível usar as configurações recomendadas ou personalizá-las. Se você precisar de mais informações sobre como criar e implantar políticas, consulte [Common Windows PC management tasks with the Microsoft Intune computer client (Tarefas comuns de gerenciamento de computador Windows com o cliente do computador Microsoft Intune)](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2.  Defina e implante uma política de **Configurações de firewall do Windows** . É possível usar as configurações recomendadas ou personalizá-las. Se você precisar de mais informações sobre como criar e implantar políticas, consulte [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) (Tarefas comuns de gerenciamento de computador Windows com o cliente do computador Microsoft Intune).
 
     A seção a seguir lista os valores que você pode configurar na política e também os valores padrão que serão usados se a política não for personalizada.
 
@@ -124,6 +118,7 @@ Depois de configurar os valores básicos descritos acima, você pode configurar 
 [Políticas para proteger computadores Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

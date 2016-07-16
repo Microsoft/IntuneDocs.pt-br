@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Configurar perfis de certificado | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
+ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+
 
 ---
 
 # Configurar perfis de certificado do Intune
-Depois de configurar a infraestrutura e os certificados conforme descrito em [Configure certificate infrastructure](configure-certificate-infrastructure.md) (Configurar infraestrutura de certificado), você pode configurar perfis de certificado:
+Depois de configurar a infraestrutura e os certificados conforme descrito em [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) (Configurar infraestrutura de certificado para SCEP) ou [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md) (Configurar a infraestrutura de certificado para PFX), você pode configurar perfis de certificado:
 
-**Tarefa 1**: Exportar o Certificado de AC raiz confiável
-**Tarefa 2**: Criar perfis de Certificado de Autoridade de Certificação confiável
-**Tarefa 3**: uma das seguintes tarefas:
+**Tarefa 1** - Exportar o certificado de AC raiz confiável **Tarefa 2** - Criar perfis de certificado de autoridade de certificação confiável **Tarefa 3** - Uma das opções a seguir:
 
 Criar perfis de certificado SCEP
 
@@ -46,7 +38,7 @@ Você deve criar um **Perfil de certificado confiável** antes de ser possível 
 
 ##### Para criar um perfil de certificado confiável
 
-1.  Abra o [Console de administração do Intune](https://manage.microsoft.com) e clique em **Política** &gt; **Adicionar Política**.
+1.  Abra o [Console de Administração do Intune](https://manage.microsoft.com) e clique em **Política** &gt; **Adicionar Política**.
 
 2.  Configure um dos seguintes tipos de política:
 
@@ -65,7 +57,7 @@ Você deve criar um **Perfil de certificado confiável** antes de ser possível 
 3.  Forneça as informações solicitadas para definir as configurações de perfil de certificado confiável para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. Na configuração **Arquivo de certificado**, importe o Certificado de AC raiz confiável (**.cer**) que você exportou da AC emissora. A configuração **Repositório de destino** se aplica apenas aos dispositivos que executam o Windows 8.1 e posterior e apenas se o dispositivo tiver mais de um repositório de certificados.
 
 
-4.  Quando tiver terminado, clique em **Salvar Política**.
+4.  Quando tiver terminado, clique em **Salvar política**.
 
 A nova política é exibida no espaço de trabalho **Política** e pode ser implantada.
 
@@ -92,7 +84,7 @@ Depois de criar um perfil de certificado de Autoridade de Certificação confiá
 
 3.  Siga as instruções na página de configuração do perfil para definir as configurações de perfil de certificado SCEP.
 
-4.  Quando tiver terminado, clique em **Salvar Política**.
+4.  Quando tiver terminado, clique em **Salvar política**.
 
 A nova política é exibida no espaço de trabalho **Política** e pode ser implantada.
 
@@ -116,7 +108,7 @@ A nova política é exibida no espaço de trabalho **Política** e pode ser impl
 
 3.  Forneça a informação solicitada no formulário de política.
 
-4.  Quando tiver terminado, clique em **Salvar Política**.
+4.  Quando tiver terminado, clique em **Salvar política**.
 
 A nova política é exibida no espaço de trabalho **Política** e pode ser implantada.
 
@@ -134,13 +126,13 @@ Perfis de certificado são instalados somente em dispositivos aplicáveis de aco
 
 Você implanta os perfis de certificado da mesma maneira que implanta outra política para o Intune:
 
-1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
+1.  No espaço de trabalho **Política** , selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
 
 2.  Na caixa de diálogo **Gerenciar implantação** :
 
-    -   **Para implantar a política** - Selecione um ou mais grupos nos quais deseja implantar a política e clique em **Adicionar** &gt; **OK**.
+    -   **Para implantar a política** - Selecione um ou mais grupos ao qual você deseja implantar a política, clique **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implantá-la** - Clique em **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implantá-la** - clique em **Cancelar**.
 
 Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 ###  Próximas etapas
@@ -152,6 +144,7 @@ Agora você pode usar certificados para ajudar a proteger perfis VPN, Wi-Fi e em
 -  [Conexões VPN no Microsoft Intune](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

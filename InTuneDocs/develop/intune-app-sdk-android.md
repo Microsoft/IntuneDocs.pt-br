@@ -1,38 +1,32 @@
 ---
-# required metadata
-
 title: Guia do SDK de Aplicativo do Microsoft Intune para Desenvolvedores do Android | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Guia do SDK de Aplicativos do Microsoft Intune para Desenvolvedores do Android
 
-> [!NOTE] Leia primeiro a [Intune App SDK overview](intune-app-sdk.md) (Visão geral do SDK de Aplicativo do Intune), que explica os recursos atuais do SDK e descreve a preparação para a integração em cada plataforma com suporte. 
+> [!NOTE]
+> Leia primeiro a [Intune App SDK overview](intune-app-sdk.md) (Visão geral do SDK de Aplicativo do Intune), que explica os recursos atuais do SDK e descreve a preparação para a integração em cada plataforma com suporte. 
 
 # Novidades no SDK 
 
-O SDK de Aplicativos do Microsoft Intune é uma biblioteca Android padrão sem dependências externas. 
-O SDK é composto de:  
+O SDK de Aplicativos do Microsoft Intune é uma biblioteca Android padrão sem dependências externas. O SDK é composto de:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: as interfaces necessárias para habilitar o MAM em um aplicativo, além de habilitar a interoperabilidade com o aplicativo Portal da Empresa do Microsoft Intune. Os aplicativos devem especificá-lo como uma referência de biblioteca Android.
 
@@ -370,6 +364,7 @@ O SDK do Intune mantém o contrato fornecido pela API do Android, embora condiç
 * Evite o uso de qualquer API de forma ambígua. Por exemplo, `Activity.startActivityForResult/onActivityResult` sem verificar o requestCode causará um comportamento estranho.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

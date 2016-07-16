@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Proteger aplicativos e dados | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+
 
 ---
 
@@ -56,6 +50,7 @@ Você também pode [habilitar seus aplicativos de linha de negócios personaliza
 Além de restringir a movimentação dos dados, se um dispositivo for perdido ou roubado ou se o usuário não trabalhar mais para sua empresa, você poderá [apagar seletivamente os dados corporativos](wipe-managed-company-app-data-with-microsoft-intune.md), deixando apenas os dados pessoais.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

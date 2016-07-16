@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivo no Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivo | Microsoft Intune
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 7b0154d73ab540e7543fab9088463ed8b61b45a0
+ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
+
 
 ---
 
+
 # Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivo no Microsoft Intune
-As organizações podem usar o Intune para gerenciar um grande número de dispositivos móveis com uma única conta de usuário. O *Gerenciador de registro de dispositivos* é uma conta especial do Intune com permissão para registrar mais de cinco dispositivos. Você pode atribui-la a um gerente da loja ou supervisor, por exemplo, como um conta de usuário de gerenciador de registro de dispositivos, para permitir que ela faça o seguinte:
+As organizações podem usar o Intune para gerenciar um grande número de dispositivos móveis com uma única conta de usuário. O *Gerenciador de registro de dispositivos* (DEM) é uma conta especial do Intune com permissão para registrar até 1000 dispositivos. Use dispositivos registrados usando a conta do gerenciador de registro de dispositivos como dispositivos compartilhados em vez de dispositivos ("BYOD") pessoais. Os usuários não poderão usar aplicativos de email "nativo", por exemplo. Você pode atribui-la a um gerente da loja ou supervisor, por exemplo, como um conta de usuário de gerenciador de registro de dispositivos, para permitir que ela faça o seguinte:
 
 -   Registrar dispositivos no Intune
 
@@ -41,16 +35,17 @@ As organizações podem usar o Intune para gerenciar um grande número de dispos
 
 O administrador ou o gerente podem implantar aplicativos específicos da função para os dispositivos do restaurante. Um administrador também pode selecionar o dispositivo no console do Intune e retirá-lo de gerenciamento de dispositivos móveis com o console de administração.
 
-Dispositivos registrados com uma conta DEM (gerenciador de registro do dispositivo) têm as seguintes restrições:
+Dispositivos registrados com uma conta de gerenciador de registro de dispositivos têm as seguintes restrições:
   - Nenhum usuário específico, então todos os dispositivos são livres de usuários; portanto, não há acesso de dados da empresa ou do email, embora a VPN, por exemplo, ainda possa fornecer aplicativos de dispositivos com acesso a dados
   - Sem acesso condicional pois esses são cenários por usuário
-  - Não podem ser dispositivos de redefinição do portal da empresa
+  - Não podem ser dispositivos de redefinição do Portal da empresa
+  - Somente o dispositivo local é exibido no aplicativo de Portal da empresa ou no site
   - Nenhum aplicativo de Apple Volume Purchase Program (VPP) devido a requisitos de ID da Apple por usuário para o gerenciamento de aplicativo
   - Também não podem ser registrados com o Apple Configurator ou o programa de registro de dispositivo da Apple (dispositivos iOS)
 
 > [!NOTE]
-> Contas de usuário do gerenciador de registro de dispositivos com mais de 20 dispositivos registrados podem ter problemas ao usar o aplicativo Portal da Empresa. Para implantar aplicativos da empresa em dispositivos gerenciados com o gerenciador de registro do dispositivo, implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** para a conta de usuário do gerenciador de registro do dispositivo.
-> Para melhorar o desempenho, exibir o aplicativo de Portal da Empresa em um dispositivo DEM mostra somente os dispositivos locais e apenas se eles foram registrados usando o aplicativo do Portal da Empresa. Gerenciamento remoto de outros dispositivos DEM só pode ser feito no console do Intune.
+> Para implantar aplicativos da empresa em dispositivos gerenciados com o gerenciador de registro do dispositivo, implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** para a conta de usuário do gerenciador de registro do dispositivo.
+> Para melhorar o desempenho, exibir o aplicativo de Portal da Empresa em um dispositivo DEM mostra somente os dispositivos locais. Gerenciamento remoto de outros dispositivos DEM só pode ser feito no console do administrador do Intune.
 
 ## Criar contas de gerenciador de registro de dispositivo
 Contas de gerenciador de registro de dispositivos são contas de usuário com permissão para registrar um grande número de dispositivos corporativos. Somente os usuários no console do Intune podem gerenciadores de registro de dispositivos.
@@ -59,17 +54,17 @@ Contas de gerenciador de registro de dispositivos são contas de usuário com pe
 
 1.  Acesse o [Portal de conta do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) e entre na sua conta de administrador.
 
-2.  Clique em **Adicionar usuário**.
+2.  Escolha **Adicionar usuário**.
 
-3.  Confirme se a conta de usuário que será o gerenciador de registro de dispositivos está listada. Caso contrário, adicione o usuário clicando em **Novo** e concluindo o processo de Adicionar usuário. Uma licença de assinatura é necessária para cada usuário que acessa o serviço e o *gerenciador de registro do dispositivos* não pode ser um administrador do Intune. Determine se você precisa adicionar mais licenças antes de usar esse recurso.
+3.  Confirme se a conta de usuário que será o gerenciador de registro de dispositivos está listada. Caso contrário, adicione o usuário escolhendo **Novo** e concluindo o processo de Adicionar usuário. Uma licença de assinatura é necessária para cada usuário que acessa o serviço e o *gerenciador de registro do dispositivos* não pode ser um administrador do Intune. Determine se você precisa adicionar mais licenças antes de usar esse recurso.
 
 4.  Faça logon no [Console de administração do Microsoft Intune](http://manage.microsoft.com) com sua inscrição de administrador.
 
-5.  No painel de navegação, clique em **Administração**, vá para **Gerenciamento do Administrador** e selecione **Gerenciador de Registro de Dispositivos**. Abra a página de Gerenciadores de Registro de Dispositivos.
+5.  No painel de navegação, escolha **Administração**, vá para **Gerenciamento do Administrador** e selecione **Gerenciador de Registro de Dispositivos**. Abra a página de Gerenciadores de Registro de Dispositivos.
 
-6.  Clique em **Adicionar...**. A caixa de diálogo **Adicionar Gerenciador de Registro de Dispositivos** é aberta.
+6.  Escolha **Adicionar...**. A caixa de diálogo **Adicionar Gerenciador de Registro de Dispositivos** é aberta.
 
-7.  Insira a **ID de usuário** da conta do Intune e clique em **OK**. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
+7.  Insira a **ID de usuário** da conta do Intune e escolha **OK**. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
 
 8.  O gerenciador de registro de dispositivos pode registrar dispositivos móveis usando o mesmo procedimento que um usuário final usa para um cenário de BYOD no portal da empresa.
 
@@ -77,11 +72,11 @@ Contas de gerenciador de registro de dispositivos são contas de usuário com pe
 
 1.  Faça logon no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com sua entrada de administrador.
 
-2.  No painel de navegação, clique em **Admin** , vá para **Gerenciamento do Administrador** e selecione **Gerenciador de Registro de Dispositivos**. Abra a página de Gerenciadores de Registro de Dispositivos.
+2.  No painel de navegação, escolha **Administração**, vá para **Gerenciamento do Administrador** e selecione **Gerenciador de Registro de Dispositivos**. Abra a página de Gerenciadores de Registro de Dispositivos.
 
-3.  Selecione o **Usuário** gerenciador de registro de dispositivos que você deseja excluir e clique em **Excluir**. Este usuário não será excluído do Intune e os dispositivos gerenciados por ele permanecerão registrados no Intune. Excluir um gerenciador de registro de dispositivos impede que tal usuário registre outros dispositivos no Intune.
+3.  Selecione o **Usuário** gerenciador de registro de dispositivos que você deseja excluir e escolha **Excluir**. Este usuário não será excluído do Intune e os dispositivos gerenciados por ele permanecerão registrados no Intune. Excluir um gerenciador de registro de dispositivos impede que tal usuário registre outros dispositivos no Intune.
 
-4.  Clique em **Sim** para confirmar que deseja excluir o gerenciador de registro de dispositivos.
+4.  Escolha **Sim** para confirmar que deseja excluir o gerenciador de registro de dispositivos.
 
 Excluir um gerenciador de registro de dispositivos não afeta os dispositivos registrados. Quando um gerenciador de registro de dispositivos é excluído:
 
@@ -96,6 +91,6 @@ Excluir um gerenciador de registro de dispositivos não afeta os dispositivos re
 -   A relação da conta do gerenciador de registro de dispositivos excluído com os dispositivos registrados permanece, mas nenhum dispositivo adicional pode ser registrado
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

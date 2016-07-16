@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurações de política de termos e condições no Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configurações de política de termos e condições no Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+
 
 ---
 
@@ -85,6 +79,7 @@ Quando você editar uma política de termos e condições existente, você pode 
 [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

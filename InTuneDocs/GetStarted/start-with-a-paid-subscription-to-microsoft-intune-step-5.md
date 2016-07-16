@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Criar grupos para organizar usuários e dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Criar grupos para organizar usuários e dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 00ac59ffe219109dd48c47e59de9ecf588f07344
+
 
 ---
 
@@ -35,7 +29,7 @@ Os grupos de usuários e de dispositivos são criados no espaço de trabalho GRU
 
 
 > [!TIP]
-> Para saber mais sobre como usar grupos, consulte [Use groups to manage users and devices with Microsoft Intune (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune)](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+> Para saber mais sobre como usar grupos, consulte [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune).
 
 
 ## Criar um grupo de dispositivos
@@ -60,7 +54,7 @@ Use grupos de usuários para implantar políticas de dispositivo e software. Por
 
 2.  Em **Nome do Grupo**, digite “Usuários do Intune” e, na lista de grupos pai, selecione **Todos os Usuários** e selecione **Avançar**.
 
-3.  Na página **Definir Critérios de Associação**, defina **Iniciar associação de grupo com** como **Todos os usuários no grupo Pai**.
+3.  Na página **Definir Critérios de Associação** , defina **Iniciar associação de grupo com** como **Todos os usuários no grupo Pai**.
 
 4.  Ao lado de **Excluir membros destes grupos de segurança**, escolha **Procurar** e, em seguida, selecione **Administrador da Empresa**. Essa exclusão permite gerenciar o grupo Usuários do Intune sem afetar a conta Administrador da empresa (também conhecida como administrador de locatários).
 
@@ -80,6 +74,7 @@ Parabéns! Você acabou de concluir a etapa 5 do *Guia de início rápido do Int
 >[&larr; **Gerenciar licenças do Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Criar políticas e aplicativos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

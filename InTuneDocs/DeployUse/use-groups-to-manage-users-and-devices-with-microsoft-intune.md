@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Usar grupos para gerenciar usuários e dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Usar grupos para gerenciar usuários e dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
+ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+
 
 ---
 
@@ -50,7 +44,7 @@ Além disso, sua hierarquia de grupo é exibida com resumos de status para ajuda
 
 ## Criar um grupo de dispositivos
 
-1.  No console de administração do Intune, escolha **Grupos** &gt; **Visão Geral** &gt; **Criar Grupo**.
+1.  No console de administração do Intune, escolha **Grupos** &gt; **Visão geral** &gt; **Criar Grupo**.
 
 2.  Forneça um nome e uma descrição opcional para o grupo e selecione um grupo de dispositivos como o grupo pai. Escolha **Avançar**.
 
@@ -71,7 +65,7 @@ O grupo recém-criado pode ser encontrado na lista **Grupos**, no espaço de tra
 
 ## Criar um grupo de usuários
 
-1.  No console de administração do Intune, escolha **Grupos** &gt; **Visão Geral** &gt; **Criar Grupo**.
+1.  No console de administração do Intune, escolha **Grupos** &gt; **Visão geral** &gt; **Criar Grupo**.
 
 2.  Forneça um nome e uma descrição opcional para o grupo e selecione um grupo de usuários como o grupo pai. Escolha **Avançar**.
 
@@ -123,11 +117,11 @@ Após configurar a exibição de grupo filtrado para um administrador de serviç
 
 ### Configurar os modos de exibição de grupo filtrado
 
-1.  No console de administração do Microsoft Intune, escolha **Admin** &gt; **Gerenciamento de administrador** &gt; **Administradores de serviço**.
+1.  No console de administração do Intune, escolha **Admin** &gt; **Gerenciamento de Administradores** &gt; **Administradores de Serviço**.
 
-2.  Selecione o administrador de serviços para o qual você deseja filtrar os grupos e clique em **Gerenciar grupos**.
+2.  Selecione o administrador de serviços para o qual você deseja filtrar grupos e clique em **Gerenciar grupos**.
 
-3.  Na caixa de diálogo **Selecionar os grupos que serão visíveis para esse administrador de serviços**, adicione os grupos selecionados que o administrador de serviços poderá acessar e clique em **OK**.
+3.  Na caixa de diálogo **Selecionar os grupos que serão visíveis para esse administrador de serviços** , adicione os grupos selecionados que o administrador de serviços poderá acessar e clique em **OK**.
 
 Depois de configurar os modos de exibição do grupo filtrado, o administrador de TI será capaz de ver e selecionar apenas os grupos que você selecionou.
 
@@ -158,6 +152,7 @@ Cada política tem um **Valor Pretendido** e um **Status**. O valor pretendido �
 > Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

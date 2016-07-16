@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Distribuição de política | Microsoft Intune
-description:
-keywords:
+title: "Distribuição de política | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
@@ -102,6 +96,7 @@ Durante o piloto, você implantará a política para um pequeno grupo de usuári
 [Solução de problemas com políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

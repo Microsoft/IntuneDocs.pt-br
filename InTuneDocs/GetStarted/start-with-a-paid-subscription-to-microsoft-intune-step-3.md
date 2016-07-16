@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Sincronizar o Active Directory e adicionar usuários ao Intune | Microsoft Intune
-description:
-keywords:
+title: "Sincronizar o Active Directory e adicionar usuários ao Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 70a2d32de67f0a69bbc29ca68a1c831c9cf38796
+
 
 ---
 
@@ -53,6 +47,7 @@ Parabéns! Você acabou de concluir a etapa 3 do *Guia de início rápido do Int
 >[&larr; **Configurações de domínio**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gerenciar licenças do Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

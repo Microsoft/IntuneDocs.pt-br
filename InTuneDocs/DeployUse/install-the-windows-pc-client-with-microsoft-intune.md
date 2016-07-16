@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Instalar o cliente do computador Windows com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -50,7 +44,7 @@ Se não precisar mais gerenciar um computador com o Intune, será recomendável 
 
 ### Para baixar o software cliente
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Administração** &gt; **Download de Software Cliente**
+1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Administração** &gt; **Download de Software Cliente**
 
   ![Baixe o Intune no computador cliente](./media/pc-SA-client-download.png)
 
@@ -104,11 +98,11 @@ Os usuários podem registrar cada um dos seus computadores automaticamente por m
 
 2.  Clique em **Adicionar dispositivo**.
 
-3.  Clique em **Baixar software** e, em seguida, clique em **Executar**.
+3.  Clique em **Baixar software** e em **Executar**.
 
 4.  Clique em **Avançar** para iniciar o Assistente de Instalação do Microsoft Intune.
 
-5.  Quando o assistente de instalação tiver concluído, clique em **Concluir**.
+5.  Quando o Assistente de Instalação estiver concluído, clique em **Concluir**.
 
 ### Instalar o software cliente do Microsoft Intune como parte de uma imagem
 É possível implantar o software cliente do Intune em computadores como parte de uma imagem do sistema operacional, usando o seguinte procedimento de exemplo como base:
@@ -153,9 +147,9 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 
 ### Para criar um relatório de inventário do computador para exibir todos os computadores registrados
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Relatórios** &gt; **Relatórios de inventário do computador**.
+1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Relatórios** &gt; **Relatórios de Inventário do Computador**.
 
-2.  Na página **Criar novo relatório**, deixe todos os campos com os valores padrão (a menos que deseje aplicar filtros) e clique em **Exibir relatório**.
+2.  Na página **Criar novo relatório** , deixe todos os campos com os valores padrão (a menos que deseje aplicar filtros) e clique em **Exibir relatório**.
 
 3.  A página **Relatório de inventário do computador** é aberta em uma nova janela e exibe todos os computadores registrados com sucesso no Intune.
 
@@ -167,6 +161,7 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 [Gerenciar PCs com Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

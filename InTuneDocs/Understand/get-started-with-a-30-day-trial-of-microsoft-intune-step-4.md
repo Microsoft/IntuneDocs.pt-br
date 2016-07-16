@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Criar políticas e publicar um aplicativo para usuários de avaliação | Microsoft Intune
-description:
-keywords:
+title: "Criar políticas e publicar um aplicativo para usuários de avaliação | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
@@ -60,7 +54,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
 3.  Na página **Antes de começar**, clique em **Avançar**.
 
-4.  Na página **Configuração de software**, em **Selecionar como esse software será disponibilizado para os dispositivos**, selecione **Link externo**.
+4.  Na página **Configuração de software** , em **Selecionar como esse software será disponibilizado para os dispositivos**, selecione **Link externo**.
 
 5.  Insira o link externo para o software em **Especificar a URL** e clique em **Avançar**. Certifique-se de iniciar a URL com **https://**. Para o aplicativo do Skype, use o link abaixo que corresponda à plataforma de dispositivo móvel que você está usando:
 
@@ -88,7 +82,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
 8.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Aplicativos** &gt; **Aplicativos** &gt; **Skype** &gt; **Gerenciar Implantação**.
 
-9. Na página **Selecionar grupos**, selecione **Meus Usuários de Avaliação** para implantar o software a esse grupo de usuários e clique em **Adicionar** &gt; **Avançar**.
+9. Na página **Selecionar grupos**, selecione **Meus Usuários de Avaliação** para implantar o software a esse grupo de usuários e escolha **Adicionar** &gt; **Avançar**.
 
 10. Na página **Ação de implantação** , selecione **Instalação disponível** na coluna **Aprovação** de seu grupo.
 
@@ -101,9 +95,10 @@ Parabéns! Você concluiu a etapa 4 do passo a passo da *avaliação do Microsof
 
 >[!div class="step-by-step"]
 
->[&larr; **Criar Grupos**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Registrar Dispositivos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
+>[&larr; **Criar grupos**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Registrar dispositivos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

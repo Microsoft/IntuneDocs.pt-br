@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Registrar dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
+ms.openlocfilehash: 930cbc806d8fd1185cf33fd64d866b88ec9a6a04
+
 
 ---
 
@@ -33,6 +27,73 @@ O MDM (Gerenciamento de Dispositivo Móvel) do Microsoft Intune usa o registro p
 O Intune pode gerenciar as seguintes plataformas de dispositivo:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## Visão geral dos métodos de registro do dispositivo
+
+A tabela a seguir mostra os métodos de registro para métodos de registro do dispositivo de propriedade corporativa com seus benefícios.
+
+**Métodos de Registro do iOS**
+
+| **Método** |  **[Apagamento](#Wipe)** | **[Afinidade](#Affinity)**   |   **[Bloqueado](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | Não|    Sim |   Não |
+|**[DEM](#DEM)**|   Não |Não |Não  |
+|**[DEP](#DEP)**|   Sim |   Opt |   Opt|
+|**[USB-SA](#USB-SA)**| Sim |   Opt |   Não|
+|**[USB-Direct](#USB-Direct)**| Não |    Não  | Não|
+
+**Métodos de Registro do Android e do Windows**
+
+| **Método** |  **[Apagamento](#Wipe)** | **[Afinidade](#Affinity)**   |   **[Bloqueado](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | Não|    Sim |   Não |
+|**[DEM](#DEM)**|   Não |Não |Não  |
+
+**Métodos de registro para dispositivos de propriedade corporativa**
+
+### BYOD
+“Traga seu próprio dispositivo”. Os usuários instalam o aplicativo de Portal da Empresa e registram o dispositivo. Registrar um dispositivo com o Portal da Empresa unirá o dispositivo ao local de trabalho. Registrar os dispositivos iOS com o Portal da Empresa requer uma ID da Apple. O BYOD não requer configuração adicional para dispositivos de propriedade corporativa. Consulte as etapas para [Configurar o gerenciamento de dispositivo](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+### DEM
+Gerenciador de registro do dispositivo. O administrador cria contas DEM para gerenciar dispositivos corporativos. Os gerentes podem então instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+### DEP
+Programa de Registro do Dispositivo da Apple. O administrador cria e implanta a política "por ondas de rádio" para dispositivos iOS corporativos adquiridos e gerenciados com o DEP. O dispositivo é registrado quando o usuário executa o Assistente de Instalação do iOS. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
+  - Registro bloqueado
+  - Acesso condicional
+  - Detecção de jailbreak
+  - Gerenciamento de aplicativos móveis
+
+Saiba mais sobre o [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+### USB-SA
+Registro de assistente de configuração conectado com USB. O administrador cria uma política do Intune e a exporta para o Apple Configurator. Dispositivos conectados por USB e corporativos são preparados com a política do Intune. O administrador deve registrar manualmente cada dispositivo. Os usuários recebem seus dispositivos e executam o Assistente de Instalação, registrando seu dispositivo. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
+  - Acesso condicional
+  - Detecção de jailbreak
+  - Gerenciamento de aplicativos móveis
+
+Saiba mais sobre [Assistente para configuração de registro com Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+### USB-Direct
+Registro direto. O administrador cria uma política do Intune e a exporta para o Apple Configurator. Dispositivos conectados por USB e corporativos são registrados diretamente sem a necessidade de uma redefinição de fábrica. O administrador deve registrar manualmente cada dispositivo. Os dispositivos são gerenciados como dispositivos sem usuário. Eles não são bloqueados ou supervisionados e não dão suporte a acesso condicional, detecção de jailbreak, gerenciamento de aplicativos móveis. Saiba mais sobre o [registro direto com o Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+**Comportamento para dispositivos móveis de propriedade corporativa**
+
+### Apagamento
+Especifica se o registro do dispositivo exige que o dispositivo seja redefinido de fábrica, removendo todos os dados do dispositivo e retornando-o ao seu estado original.
+([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+### Afinidade
+Especifica se o método de registro dá suporte a "Afinidade de Usuário", que se conecta a um dispositivo com um usuário específico. Dispositivos "Opt" dispositivos podem ser registrados com ou sem afinidade de usuário. Afinidade de usuário é necessária para dar suporte ao seguinte:
+  - Aplicativos MAM (Gerenciamento de aplicativos móveis)
+  - Acesso condicional para dados de email e da empresa
+  - Aplicativo do Portal da Empresa
+
+([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
+
+### Bloqueio
+Especifica se o dispositivo pode ser bloqueado para impedir que o usuário remova a política do Intune, removendo efetivamente o dispositivo do gerenciamento. Para dispositivos iOS, bloquear o dispositivo requer que ele esteja no modo Supervisionado.
+([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods)) ([Voltar à tabela](#overview-of-corporate-owned-device-enrollment-methods))
 
 ## Habilitar registro de dispositivo  
  O registro permite que os usuários acessem os recursos da empresa em seus dispositivos pessoais e permite que o administrador verifique se esses dispositivos estão em conformidade com as políticas que protegem os recursos da empresa. Essa é a melhor maneira de habilitar cenários "traga seu próprio dispositivo" com o Intune. O administrador deve habilitar o registro no console do Intune, que pode exigir a criação de uma relação de confiança com o dispositivo e atribuição de licenças aos usuários. O dispositivo é então registrado, geralmente quando os usuários inserem suas credenciais corporativas ou de estudante. Em seguida, o dispositivo recebe a política do Intune e obtém acesso aos recursos.
@@ -64,6 +125,7 @@ Computadores gerenciados com o software cliente Intune não podem ser apagados n
 [Gerenciar PCs Windows com o Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

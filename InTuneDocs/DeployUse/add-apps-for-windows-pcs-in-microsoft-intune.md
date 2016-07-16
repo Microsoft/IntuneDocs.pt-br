@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Adicionar aplicativos para computadores Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 
 1.  No [Console do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicativos** &gt; **Adicionar Aplicativos** para iniciar o editor de software do Intune.
 
-    > [!TIP] Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
+    > [!TIP]
+    > Talvez seja necessário inserir seu nome de usuário e senha do Intune antes de iniciar o editor.
 
 
 
@@ -95,6 +90,7 @@ O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicati
 
 Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implantar aplicativos no Microsoft Intune)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Entender as operações usando relatórios | Microsoft Intune
-description:
-keywords:
+title: "Entender as operações usando relatórios | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -41,10 +34,11 @@ Os relatórios do Intune fornecem informações sobre software, hardware e licen
 |**Relatórios de inventário de dispositivos móveis**|Exibe informações sobre os dispositivos móveis na sua organização. É possível filtrar as informações exibidas com base em grupos, se o dispositivo é de jailbreak ou de raiz, e pelo sistema operacional.|
 |**Relatórios de Aquisição de Licenças**|Exibe os títulos de software de todos os softwares licenciados em grupos de licenças selecionados, com base em seus contratos de licenciamento. Se as informações de licenças não tiverem sido atualizadas há mais de 24 horas, elas serão atualizadas quando você gerar um relatório de licenças. Um relatório de licenças não deve ser considerado um cálculo exato de títulos de software que estão sendo usados nem uma prova de conformidade com contratos. O relatório é uma ferramenta para ajudar a tomar decisões de licenciamento na sua empresa. O Intune pode não detectar alguns produtos que podem ter uma licença por volume da Microsoft. Os filtros disponíveis são:<br /><br />**Todos os contratos** exibe todos os produtos de software licenciados que são gerenciados pelo Intune.<br /><br />**Contratos de licenciamento por volume** exibe apenas produtos de software do VLSC.<br /><br />**Outros contratos de licenciamento de software** exibe produtos de software que são gerenciados fora do VLSC.|
 |**Relatórios de Instalação de Licenças**|Compara os softwares instalados em computadores da sua organização com a cobertura do seu contrato de licença atual, de acordo com o Centro de Serviços de Licenciamento por Volume (VLSC). Filtros incluem:<br /><br />**Todos os contratos** exibe todos os produtos de software licenciados que são gerenciados pelo Intune.<br /><br />**Contratos de licenciamento por volume** exibe apenas produtos de software do VLSC.<br /><br />**Outros contratos de licenciamento de software** exibe produtos de software que são gerenciados fora do VLSC.|
-|**Relatórios de termos e condições**|Mostra se os usuários aceitaram os termos e condições que você implantou e qual versão foi aceita. Você pode especificar que até 10 usuários cuja aceitação de quaisquer termos e condições implantados para eles sejam mostrados, ou mostrar o status de aceitação para um termo específico implantado a eles.|
+|**Relatórios de termos e condições**|Mostre se os usuários aceitaram os termos e condições que você implantou e qual versão foi aceita. Você pode especificar que até 10 usuários cuja aceitação de quaisquer termos e condições implantados para eles sejam mostrados, ou mostrar o status de aceitação para um termo específico implantado a eles.|
 |**Relatórios de aplicativos fora de conformidade**|Exibe informações sobre os usuários que têm aplicativos instalados que estão nas suas listas de aplicativos compatíveis e não compatíveis. Use esse relatório para encontrar usuários e dispositivos que não estão em conformidade com as políticas para aplicativos da sua empresa.|
-|**Relatórios de conformidade de certificados**|Mostra quais certificados foram emitidos aos usuários e os dispositivos por meio do SCEP ou do PKCS #12 (.PFX). Use esse relatório para encontrar certificados emitidos, vencidos e revogados.|
-|**Relatórios de Histórico de Dispositivo**|Mostra um registro em formato de histórico das ações de desativar, apagar e excluir. Use este relatório para ver quem iniciou ações em dispositivos no passado.|
+|**Relatórios de conformidade de certificados**|Mostre quais certificados foram emitidos aos usuários e os dispositivos por meio do SCEP ou do PKCS #12 (.PFX). Use esse relatório para encontrar certificados emitidos, vencidos e revogados.|
+|**Relatórios de Histórico de Dispositivo**|Mostre um registro em formato de histórico das ações de desativar, apagar e excluir. Use este relatório para ver quem iniciou ações em dispositivos no passado.|
+|**Relatórios de atestado de integridade**|Mostre a integridade dos dispositivos móveis.|
 |**Relatório de hardware do Mac OS X**|Exibe detalhes de hardware para todos os dispositivos Mac OS X nos grupos selecionados. Para obter informações sobre o inventário de hardware coletado desses dispositivos, confira [Entender seus dispositivos com o inventário do Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Relatório de software do Mac OS X**|Exibe o software instalado em todos os dispositivos Mac OS X nos grupos selecionados. O relatório lista o nome do software (como uma ID de pacote), a versão curta (ou amigável) do nome, a versão e o número de dispositivos instalados com o software.|
 
@@ -74,6 +68,7 @@ Além disso, os relatórios dão suporte às seguintes ações:
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

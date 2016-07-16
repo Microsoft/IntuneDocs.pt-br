@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gerenciar computadores Windows com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0335b80afa8e330263baad054f0e902f019f75bb
+ms.openlocfilehash: 92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f
+
 
 ---
 
@@ -35,8 +29,7 @@ O Intune gerencia computadores Windows usando as políticas de modo semelhante a
 
 ## Requisitos para o gerenciamento de computadores no Intune
 
-**Hardware**:
-Veja a seguir os requisitos mínimos de hardware para instalar o cliente do Intune:
+**Hardware**: veja a seguir os requisitos mínimos de hardware para instalar o cliente do Intune:
 
 |Requisito|Mais informações|
 |---------------|--------------------|
@@ -44,13 +37,12 @@ Veja a seguir os requisitos mínimos de hardware para instalar o cliente do Intu
 |Processador e memória|Consulte os requisitos de RAM e de processador para o sistema operacional do PC.|
 |Espaço em disco|200 MB de espaço em disco disponível antes de instalar o software cliente.|
 
-**Software**:
-Veja a seguir os requisitos de software para a instalação do cliente:
+**Software**: veja a seguir os requisitos de software para a instalação do cliente:
 
 |Requisito|Mais informações|
 |---------------|--------------------|
 |Permissões administrativas|A conta que instalará o software cliente deve ter permissões de administrador local para esse PC.|
-|Windows Installer 3.1|O PC deve ter, no mínimo, o Windows Installer 3.1.<br /><br />Para exibir a versão do Windows Installer em um PC cliente:<br /><br />No computador, clique com o botão direito do mouse em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Você pode baixar a versão mais recente do Windows Installer em [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) no site do Microsoft Developer Network.|
+|Windows Installer 3.1|O PC deve ter, no mínimo, o Windows Installer 3.1.<br /><br />Para exibir a versão do Windows Installer em um PC cliente:<br /><br />-   No PC, clique com o botão direito do mouse em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Você pode baixar a versão mais recente do Windows Installer em [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) no site do Microsoft Developer Network.|
 |Remover o software cliente incompatível|Antes de instalar o software do cliente do Intune, você deve desinstalar qualquer software cliente do Configuration Manager ou System Management Server do computador.|
 
 ## Instalar o cliente de computador Intune
@@ -92,6 +84,7 @@ Além das ações de agente cliente do Intune executadas localmente em computado
 O agente cliente Intune geralmente é executado silenciosamente em segundo plano sem necessidade de muita interação do usuário nem solução de problemas. No entanto, se você precisar de ajuda na resolução de problemas de gerenciamento do computador, haverá vários [recursos disponíveis para ajudá-lo a resolvê-los](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

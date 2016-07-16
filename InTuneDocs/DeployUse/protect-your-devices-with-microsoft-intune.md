@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Proteger dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c52448ab454a764be922319fb930a85a86c3996e
+ms.openlocfilehash: c8f833593e6a4606b0dd56373d4dc016c7ea0924
+
 
 ---
 
@@ -47,6 +41,7 @@ O Bloqueio de Ativação é um recurso que ajuda a proteger os dispositivos dos 
 O Intune continua a dar suporte às políticas de segurança para computadores Windows que não são registrados, mas que são gerenciados com o software cliente do computador Intune. Para descobrir como essas políticas podem ajudar a proteger seus computadores Windows, consulte [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Usar políticas para ajudar a proteger os computadores Windows que executam o software cliente do Intune).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Controlar as configurações do Microsoft Passport em dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Controlar as configurações do Microsoft Passport em dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ O Intune se integra com o Passport for Work de duas maneiras:
     - **Permitido**: os usuários podem usar o tipo de caractere no seu PIN, mas não é obrigatório.
     - **Necessário**: os usuários devem incluir pelo menos um dos tipos de caracteres em seu PIN. Por exemplo, é uma prática comum exigir pelo menos uma maiúscula e um caractere especial.
     - **Não permitido** (padrão): os usuários não devem usar esses tipos de caracteres em seu PIN (este também será o comportamento se a configuração não estiver definida).
-    > [!TIP] Os caracteres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > Os caracteres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Expiração do PIN (dias)**: é uma boa prática especificar um período de expiração de um PIN após o qual os usuários finais devem alterá-lo. O padrão é 41 dias. 
 - **Lembrar do histórico do PIN**: use essa configuração para restringir a reutilização de PINs usados anteriormente. Por padrão, os últimos cinco PINS usados não podem ser reutilizados.
 
@@ -79,6 +74,7 @@ Para obter mais informações sobre o Microsoft Passport, consulte [o guia](http
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
