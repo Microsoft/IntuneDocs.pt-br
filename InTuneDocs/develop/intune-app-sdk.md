@@ -71,6 +71,6 @@ O gerenciamento de aplicativo sem registro de dispositivo permite que o serviço
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
