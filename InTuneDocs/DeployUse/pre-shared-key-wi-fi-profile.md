@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Wi-Fi usando PSK | Microsoft Intune
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
@@ -188,13 +182,13 @@ Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
 
 ## Implantar a política
 
-1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
+1.  No espaço de trabalho **Política** , selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
 
 2.  Na caixa de diálogo **Gerenciar implantação** :
 
-    -   **Para implantar a política** - Selecione um ou mais grupos nos quais deseja implantar a política e clique em **Adicionar** &gt; **OK**.
+    -   **Para implantar a política** - Selecione um ou mais grupos ao qual você deseja implantar a política, clique **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implantá-la** - Clique em **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implantá-la** - clique em **Cancelar**.
 
 Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 
@@ -202,6 +196,7 @@ Quando você seleciona uma política implantada, pode exibir mais informações 
 [Conexões Wi-Fi no Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

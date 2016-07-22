@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Gerenciar alertas | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -108,10 +103,11 @@ Alertas marcados como fechados são excluídos permanentemente após 90 dias.
 3.  Para reativar o alerta selecionado, clique em **Reativar Alerta**.
 
 ### Consulte também
-[Ser notificado pelos alertas do Microsoft Intune](get-notified-by-microsoft-intune-alerts.md)
+[Ser notificado pelos alertas do Microsoft Intune](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

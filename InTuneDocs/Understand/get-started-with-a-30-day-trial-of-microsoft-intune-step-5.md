@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Registrar dispositivos móveis de avaliação | Microsoft Intune
-description:
-keywords:
+title: "Registrar dispositivos móveis de avaliação | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+
 
 ---
 
@@ -38,11 +32,11 @@ Para configurar o gerenciamento de dispositivo móvel com o Intune, você deve p
 
     Habilite o gerenciamento de dispositivos móveis para a plataforma de dispositivo que você deseja gerenciar. Dependendo de sua plataforma, são necessários requisitos diferentes:
 
-    -   **iOS e Mac OS X**: consulte [Set up iOS and Mac management with Microsoft Intune (Configurar gerenciamento de iOS e Mac com o Microsoft Intune)](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
+    -   **iOS e Mac OS X**: consulte [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune) (Configurar gerenciamento de iOS e Mac com o Microsoft Intune).
 
     -   **Android**: dispositivos móveis Android permitem que usuários realizem seu registro usando o aplicativo do Portal da Empresa disponível no Google Play. Nenhuma configuração adicional no Intune é necessária.
 
-    -   **Windows Phone**: consulte [Set up Windows Phone management with Microsoft Intune (Configurar o gerenciamento do Windows Phone com o Microsoft Intune)](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
+    -   **Windows Phone**: consulte [Set up Windows Phone management with Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune) (Configurar o gerenciamento do Windows Phone com o Microsoft Intune).
 
 ## Registrar dispositivos de teste
 
@@ -64,16 +58,17 @@ Se for solicitado um **Endereço do servidor**, digite “manage.microsoft.com�
 ## Instalar o aplicativo implantado anteriormente
 Abra o Portal da Empresa no dispositivo móvel, escolha **Aplicativos**e, em seguida, instale o **Microsoft Skype**.
 
-Para saber mais sobre o gerenciamento de dispositivo móvel usando o Intune, consulte [Get ready to enroll devices in Microsoft Intune (Preparar-se para registrar dispositivos no Microsoft Intune)](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Para saber mais sobre o gerenciamento de dispositivo móvel usando o Intune, consulte [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) (Preparar-se para registrar dispositivos no Microsoft Intune).
 
 ### Próximas etapas
 Parabéns! Você concluiu a etapa 5 do passo a passo da *avaliação do Microsoft Intune*.
 
 >[!div class="step-by-step"]
 
->[&larr; **Criar Políticas**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Opções e extras** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
+>[&larr; **Criar políticas**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Opções e extras** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Benefícios do SDK de Aplicativo do Intune | Microsoft Intune
-description:
-keywords:
+title: "Benefícios do SDK de Aplicativo do Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Visão Geral do SDK de Aplicativo do Intune
-O SDK do Intune App está disponível para as plataformas Android e iOS, e habilita os recursos de gerenciamento de aplicativos móveis com o Microsoft Intune. Além disso, buscamos sempre reduzir a quantidade de alterações de código necessárias por parte do desenvolvedor. Você descobrirá que é possível habilitar a maioria dos recursos do SDK sem alterar o comportamento do seu aplicativo. Para o usuário final avançado e a experiência do administrador de TI, você pode usar nossas APIs para personalizar o comportamento do seu aplicativo para recursos que exigem a participação do seu aplicativo. 
-Depois de habilitar seu aplicativo, os administradores de TI podem implantar políticas para aplicativos gerenciados pelo Intune e aproveitar esses recursos para proteger seus dados corporativos.
+O SDK do Intune App está disponível para as plataformas Android e iOS, e habilita os recursos de gerenciamento de aplicativos móveis com o Microsoft Intune. Além disso, buscamos sempre reduzir a quantidade de alterações de código necessárias por parte do desenvolvedor. Você descobrirá que é possível habilitar a maioria dos recursos do SDK sem alterar o comportamento do seu aplicativo. Para o usuário final avançado e a experiência do administrador de TI, você pode usar nossas APIs para personalizar o comportamento do seu aplicativo para recursos que exigem a participação do seu aplicativo. Depois de habilitar seu aplicativo, os administradores de TI podem implantar políticas para aplicativos gerenciados pelo Intune e aproveitar esses recursos para proteger seus dados corporativos.
 
 ## Recursos Comuns
 
@@ -77,6 +70,7 @@ O gerenciamento de aplicativo sem registro de dispositivo permite que o serviço
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

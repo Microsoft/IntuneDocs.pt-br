@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Preparar-se para configurar políticas de gerenciamento de aplicativos móveis | Microsoft Intune
-description:
-keywords:
+title: "Preparar-se para configurar políticas de gerenciamento de aplicativos móveis | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ O portal do Azure é o novo console de administração para criar políticas MAM
 Se você for novo no uso do portal do Azure, leia o tópico [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portal do Azure para políticas MAM do Microsoft Intune) para obter uma visão geral rápida.
 
 Se no momento você estiver usando o **Console de administração do Intune** para gerenciar seus dispositivos, poderá criar um uso de políticas MAM que dê suporte a aplicativos para dispositivos registrados no Intune usando o **Console de administração do Intune**, mas recomenda-se usar o portal do Azure mesmo para dispositivos registrados no Intune. Para obter instruções sobre como criar uma política MAM usando o console de administração do Intune, consulte [aqui](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+As políticas de MAM criadas no console de administração do Intune não podem ser importadas no portal do Azure.  As políticas de MAM devem ser recriadas no portal do Azure.
 
 >[!IMPORTANT]
 > Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. Se você criar políticas MAM no console de administração do Intune e no portal do Azure, a política no portal do Azure será aplicada aos aplicativos e implantada para usuários.
@@ -62,7 +57,7 @@ Para ver a lista completa de aplicativos da Microsoft com suporte, vá para a [G
 -   Uma assinatura do **Office 365 (O365)** é necessária para o seguinte:
   - Para aplicar políticas de MAM a aplicativos com suporte a várias identidade.
   - Para criar contas corporativas do SharePoint Online e Exchange Online. Não há suporte para o Exchange e SharePoint local.
--    **Habilitar a autenticação moderna** para o **Skype for Business Online**. Faça logon no Microsoft Connect e preencha [este formulário](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para se registrar no programa de autenticação moderna.
+-    [Habilitar a autenticação moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) para o **Skype for Business Online**.
 
 
 - **Azure Active Directory (Azure AD)** para criar usuários. O Azure AD autentica o usuário quando o usuário final inicia o aplicativo e insere suas credenciais de trabalho.
@@ -124,6 +119,7 @@ A tabela a seguir lista a função e as permissões que você pode atribuir a us
 [Criar e implantar políticas de gerenciamento de aplicativo móvel com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Endpoint Protection para computadores Windows| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Para alternar de seu aplicativo Endpoint Protection atual ao Endpoint Protection
 
     -   Removendo manualmente o aplicativo de proteção de ponto de extremidade de terceiros.
 
-> [!NOTE] O Intune não desinstalará aplicativos Endpoint Protection automaticamente de terceiros.
+> [!NOTE]
+> O Intune não desinstalará aplicativos Endpoint Protection de terceiros.
 
 ## Como configurar o Microsoft Intune Endpoint Protection
 Use as etapas a seguir para ajudá-lo a configurar o Endpoint Protection para o Microsoft Intune.
@@ -162,7 +157,8 @@ Monitore o status de malware em seus computadores, usando o espaço de trabalho 
   - **Exibir propriedades** – abre uma página com mais informações sobre o malware selecionado.
   - **Informações sobre este malware** – abre um tópico do Centro de Proteção contra Malware da Microsoft com mais informações sobre o malware.
 
-> [!IMPORTANT] O espaço de trabalho **Proteção** não é exibido no console do administrador até que você tenha instalado o cliente e gerencie pelo menos um cliente do computador.
+> [!IMPORTANT]
+> O espaço de trabalho **Proteção** não é exibido no console do administrador até que você tenha instalado o cliente e gerencie pelo menos um cliente do computador.
 
   ![Monitorar o Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ O Intune pode executar uma verificação completa ou rápida de malware usando o
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/) vá em **Grupos** > **Visão geral** > **Todos os Dispositivos** > **Todos os Computadores** e selecione o computador de destino.
 
 2. Clique na lista suspensa **Tarefas Remotas** e, em seguida, selecione a tarefa. A tarefa a ser executada no computador remoto.
-![Executar verificação de malware remoto](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Para obter mais ajuda e suporte, consulte [Troubleshoot Endpoint Protection in M
 [Políticas para proteger computadores Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

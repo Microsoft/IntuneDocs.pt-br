@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Restringir o acesso ao Skype for Business Online | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
+ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+
 
 ---
 
@@ -39,7 +32,7 @@ Quando um determinado usuário tenta usar o Skype for Business Online em seu dis
 **Antes** de configurar uma política de acesso condicional para o Skype for Business Online, você precisa:
 - Ter uma **assinatura do Skype for Business Online** e atribuir a licença do Skype for Business Online aos usuários.
 - Ter uma assinatura do **Enterprise Mobility Suite** ou do **Azure Active Directory Premium**.
--   **Habilitar a autenticação moderna** para o Skype for Business Online. Faça logon no Microsoft Connect e preencha [este formulário](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para se registrar no programa de autenticação moderna.
+-   [Habilitar a autenticação moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para o Skype for Business Online. 
 -  Todos os seus usuários finais devem estar usando o **Skype for Business Online**. Se você tiver uma implantação com o Skype for Business Online e o Skype for Business local, a política de acesso condicional não será aplicada aos usuários finais.
 
     O dispositivo que precisa acessar o Skype for Business Online deve:
@@ -119,6 +112,7 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 * **Dispositivos registrados com o AAD e que são compatíveis** – esses dispositivos podem acessar o Skype for Business Online.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

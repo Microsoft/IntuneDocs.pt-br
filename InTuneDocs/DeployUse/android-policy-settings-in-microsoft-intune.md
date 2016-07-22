@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurações de política de configuração do Android e Samsung KNOX | Microsoft Intune
-description:
-keywords:
+title: "Configurações de política de configuração do Android e Samsung KNOX | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 |**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Impede a reutilização de senhas usadas anteriormente.|Sim|Sim|
 |**Qualidade da senha**|Selecione o nível necessário de complexidade de senha e também se dispositivos biométricos podem ser usados.|Sim|Sim|
 |**Permitir desbloqueio de impressão digital**|Permitir o uso de uma digital para desbloquear o dispositivo.|Não|Sim|
+|**Permitir Smart Lock e outros agentes de confiança**<br>(Android 5 e posterior)|Permite controlar o recurso Smart Lock em dispositivos Android compatíveis. Essa capacidade do telefone, às vezes conhecida como agentes de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável, como quando ele está conectado a um dispositivo Bluetooth específico, ou quando ele está perto de uma marca NFC. Você pode usar essa configuração para impedir que os usuários finais configurem o Smart Lock.|Sim|Não|
 
 ### Configurações de criptografia
 
@@ -73,7 +68,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 
 ### Configurações de nuvem – documentos e dados
 
-|Nome da configuração|Detalhes|Android e Samsung KNOX|Android 4.0+|
+|Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Permitir backup do Google**|Permite o uso do backup do Google.|Não|Sim|
 
@@ -95,7 +90,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 
 ### Configurações de aplicativo - aplicativos
 
-|Nome da configuração|Android 4.0+|Samsung KNOX|
+|Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Permitir armazenamento do Google Play**|Permite ao usuário acessar o Google Play Store no dispositivo.|Não|Sim|
 
@@ -179,7 +174,8 @@ Use a **Política de configuração personalizada do Android** do Microsoft Intu
 
 Essa funcionalidade destina-se a permitir que você implante configurações do Android que não são configuráveis com as políticas do Intune.
 
-> [!NOTE] Atualmente, as políticas personalizadas do Android dão suporte apenas à definição de configurações de Wi-Fi para dispositivos Android que incluem uma chave pré-compartilhada.
+> [!NOTE]
+> Atualmente, as políticas personalizadas do Android dão suporte apenas à definição de configurações de Wi-Fi para dispositivos Android que incluem uma chave pré-compartilhada.
 
 ### Configurações gerais
 
@@ -257,6 +253,7 @@ Embora o Intune dê suporte a perfis de Wi-Fi para dispositivos Android, atualme
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

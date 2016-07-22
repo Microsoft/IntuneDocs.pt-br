@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inicie uma avaliação do Microsoft Intune e implante políticas de PIN iOS | Microsoft Intune
-description:
-keywords:
+title: "Inicie uma avaliação do Microsoft Intune e implante políticas de PIN iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
@@ -58,7 +52,7 @@ Estas instruções passo a passo ajudarão você a configurar uma avaliação do
 
     ![Valide seus detalhes](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  Salve as informações mostradas na tela e, em seguida, clique em **Você está pronto para começar...**..
+5.  Salvar as informações mostradas na tela e, em seguida, clique em **Você está pronto para começar...**.
 
     ![Pronto para começar](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -154,7 +148,7 @@ Estas instruções passo a passo ajudarão você a configurar uma avaliação do
 
         ![Especifique onde o arquivo JSON deve ser salvo](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        Se sua página não for redirecionada automaticamente depois de alguns segundos, clique em **Cancelar**.
+        Se sua página não redirecionar automaticamente depois de alguns segundos, clique em **Cancelar**.
 
         ![Cancele se a página não for redirecionada](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
@@ -196,7 +190,7 @@ Estas instruções passo a passo ajudarão você a configurar uma avaliação do
 
         ![Abra os Grupos](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  Na extremidade direita, clique em **Criar Grupo**.
+    2.  Mais à direita, clique em **Criar Grupo**.
 
         ![Criar um grupo](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
@@ -214,7 +208,7 @@ Estas instruções passo a passo ajudarão você a configurar uma avaliação do
 
         ![Abra o espaço de trabalho de política](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  Na extremidade direita, clique em **Adicionar Política**.
+    2.  Mais à direita, clique em **Adicionar Política**.
 
         ![Adicione uma política](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
@@ -230,7 +224,7 @@ Estas instruções passo a passo ajudarão você a configurar uma avaliação do
 
         ![Implante a política](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Clique no grupo de usuário criado anteriormente, clique em **Adicionar**, e clique em **OK**.
+    6.  Clique no grupo de usuário criado anteriormente, clique em **Adicionar**, e clique em **Ok**.
 
         ![Selecione o grupo para a política](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -290,6 +284,7 @@ Estas instruções passo a passo ajudarão você a configurar uma avaliação do
 [Guia de avaliação do Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurações de política MAM iOS | Microsoft Intune
-description:
-keywords:
+title: "Configurações de política MAM iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
   Quando você habilita essa configuração, é obrigatório que o usuário final configure e use PIN para acessar seu dispositivo.  Se não houver configuração de PIN, os aplicativos não serão inicializados e o usuário final será solicitado a definir um PIN com uma mensagem: "A empresa exigiu que você habilite primeiro um dispositivo PIN para acessar este aplicativo".
 
   **Valor padrão - a opção de criptografia não está selecionada.**
-- **ContactSyncDisabled:** escolha **Sim** para impedir que as informações de contato sincronizem com o aplicativo de catálogo de endereço nativo no dispositivo. Se você escolher **Não**, o aplicativo salvará as informações de contato no aplicativo de catálogo de endereço nativo no dispositivo.
+- **Desabilitar sincronização do contato:** escolha **Sim** para impedir que as informações de contato sincronizem com o aplicativo de catálogo de endereço nativo no dispositivo. Se você escolher **Não**, o aplicativo salvará as informações de contato no aplicativo de catálogo de endereço nativo no dispositivo.
 
   Ao fazer um apagamento seletivo para remover dados da empresa, contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso é aplicável somente ao aplicativo **Microsoft Outlook**.
 
@@ -117,6 +111,7 @@ Em dispositivos iOS, você pode permitir que o usuário se identifique usando a 
   **Valor padrão = 90 dias**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

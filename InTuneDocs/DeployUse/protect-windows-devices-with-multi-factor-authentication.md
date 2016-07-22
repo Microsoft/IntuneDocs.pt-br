@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Proteger dispositivos Windows com autenticação multifator | Microsoft Intune
-description:
-keywords:
+title: "Proteger dispositivos Windows com autenticação multifator | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
+ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+
 
 ---
 
@@ -40,7 +34,8 @@ Todos os servidores listados acima devem atender aos requisitos de sistema forne
 #### MFA com o Intune
 Se sua organização tem uma infraestrutura de TI local que inclui um domínio do Active Directory com ADFS (Serviços de Federação do Active Directory), você pode configurar a MFA no servidor de federação e habilitar a MFA para registro no Intune. Ao configurar a MFA no Intune, você habilita que os usuários possam se autenticar uma vez e durante o registro e ser capaz de acessar recursos corporativos sem repetir o processo de MFA a cada vez.
 
->[!NOTE] A MFA pode ser necessária por usuário ou por grupo no servidor de ADFS.  
+>[!NOTE]
+>A MFA pode ser necessária por usuário ou por grupo no servidor de ADFS.  
 
 #### MFA sem Intune
 Se você configurar a MFA no servidor de federação, mas não habilitar a MFA para registro no Intune, os usuários precisarão usar a MFA sempre que acessarem os recursos corporativos (e não somente no registro do dispositivo).
@@ -60,6 +55,7 @@ Para obter informações sobre como habilitar a MFA no ADFS, consulte [Gerenciar
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

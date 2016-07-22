@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Como obter suporte | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
+ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+
 
 ---
 
@@ -41,6 +34,7 @@ Para autoatendimento com o Intune, consulte [Dicas de solução de problemas ger
 
     -   Para todos os outros problemas com o Intune selecione **Gerenciamento de Dispositivo Móvel**. Essa opção também aborda o MDM do Office 365 e o System Center Configuration Manager com o Intune.
 
+    > [!NOTE]
     > [!NOTE] Talvez você precise clicar em **mais** na parte inferior da lista para ver todas as categorias.
 
 3.  Na página **Identificar o Problema**, selecione o **Recurso** e **Sintoma** com o qual você precisa de ajuda. Você deverá fornecer um **Resumo do problema** e **Detalhes do problema**.
@@ -58,7 +52,8 @@ Consulte [Contact Assisted Phone Support for Microsoft Intune (Entrar em contato
 Para acompanhar solicitações, vá para o [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Na parte inferior da lista **Criar uma solicitação de serviço**, clique em **Ver todos os tíquetes de suporte**. Por padrão, você verá todas as suas solicitações de serviço que estão com status aberto. Para alterar quais solicitações de serviço você deseja consultar, por exemplo, para ver as solicitações fechadas, clique no ícone de filtro no painel de navegação superior e selecione o modo de exibição de sua preferência.
 
 > [!NOTE]
-> **Se você usar o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Centro de Soluções do Microsoft System Center Configuration Manager e do System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar materiais avançados de autoajuda, com a opção de abrir uma solicitação de suporte online ou por telefone.
+> [!NOTE]
+**Se você usar o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Centro de Soluções do Microsoft System Center Configuration Manager e do System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar materiais avançados de autoajuda, com a opção de abrir uma solicitação de suporte online ou por telefone.
 >
 > O suporte técnico do System Center Configuration Manager ou System Center Endpoint Protection requer um pagamento ou é diminuído dos seus contratos existentes de licenciamento ou Suporte Premier.
 
@@ -144,9 +139,7 @@ Nossa função é:
 [Solucionar problemas de atualização de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-[Perguntas frequentes sobre o Microsoft Intune](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)
 
-
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

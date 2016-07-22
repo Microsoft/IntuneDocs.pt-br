@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Distribuição de aplicativos | Microsoft Intune
-description:
-keywords:
+title: "Distribuição de aplicativos | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
@@ -55,6 +49,9 @@ Considere o seguinte:
 -   Determine se o Intune dá suporte ao tipo de aplicativo.
 
 -   Verifique se você tem espaço de armazenamento de nuvem suficiente disponível para carregar o aplicativo. São fornecidas instruções para adquirir armazenamento adicional em [Adicionar aplicativos com o Microsoft Intune](/intune/deploy-use/add-apps).
+
+> [!NOTE]           
+> Você pode baixar este [modelo de planejamento para aplicativos móveis](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) para auxiliar no processo de distribuição.
 
 ## Prova de conceito
 Na fase de Prova de conceito, teste a implantação do aplicativo em um ambiente de laboratório em dispositivos e usuários que você configurou estritamente para fins de teste.
@@ -97,6 +94,7 @@ Durante o piloto, você implantará o aplicativo para um pequeno grupo de usuár
 [Solucionar problemas de implantação de aplicativo no Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

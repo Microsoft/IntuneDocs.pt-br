@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Guia de início rápido do Intune | Microsoft Intune
-description:
-keywords:
+title: "Guia de início rápido do Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -41,7 +35,7 @@ As etapas neste guia de início rápido compartilham muitas das mesmas etapas qu
 -   Personalizando recursos do Intune para uso em produção
 
 >[!TIP]
->Se você adquirir, pelo menos, 150 licenças para Microsoft Intune em um plano qualificado, você pode usar o "Benefício do FastTrack Center", um serviço no qual os especialistas da Microsoft trabalharão com você para deixar o ambiente pronto para o Intune. Consulte a [Microsoft Intune Service Benefit Description (Descrição do Benefício do Serviço do Microsoft Intune)](https://technet.microsoft.com/library/mt228265.aspx).
+>Se você adquirir, pelo menos, 150 licenças para Microsoft Intune em um plano qualificado, você pode usar o "Benefício do FastTrack Center", um serviço no qual os especialistas da Microsoft trabalharão com você para deixar o ambiente pronto para o Intune. Consulte a [Descrição do Benefício do Serviço do Microsoft Intune](https://technet.microsoft.com/library/mt228265.aspx).
 
 
 ## Antes de começar
@@ -55,7 +49,7 @@ Use este guia quando estiver começando a usar uma assinatura paga e estiver pro
 Pronto para começar? Você precisará dos seguintes itens para começar a usar sua assinatura paga do Intune:
 
 ### Um dispositivo com navegador da Web habilitado para Silverlight
-Você precisará dele para acessar o console de administração do Intune, no qual gerenciará dispositivos, aplicativos e políticas. Você também precisará de um navegador da Web para acessar o portal da empresa baseado na web quando não estiver acessando o aplicativo do portal da empresa de um dispositivo móvel. Para facilitar, você pode usar a configuração “modo de privacidade” no mesmo navegador que usa para a administração do Intune (por exemplo: no Internet Explorer, é possível clicar em **Ferramentas** &gt; **Navegação InPrivate**)).
+Você precisará dele para acessar o console de administração do Intune, no qual gerenciará dispositivos, aplicativos e políticas. Você também precisará de um navegador da Web para acessar o portal da empresa baseado na web quando não estiver acessando o aplicativo do portal da empresa de um dispositivo móvel. Para facilitar, você pode usar a configuração “modo de privacidade” no mesmo navegador que usa para a administração do Intune (por exemplo: no Internet Explorer, é possível clicar em **Ferramentas** &gt; **Navegação InPrivate**).
 
 >[!TIP]
 >Devido a esse requisito, não há suporte para o navegador Microsoft Edge para acessar o console de administração do Intune.
@@ -67,7 +61,7 @@ Se for gerenciar dispositivos iOS ou Windows Phone com o Intune, você precisar�
 - Nenhum certificado é necessário para usuários do **Windows Phone 8.1** que instalam o aplicativo do portal da empresa da Loja. No entanto, um [certificado de assinatura de código Symantec](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) é necessário para **Windows Phone 8.0** ou para usar o Intune para implantar o aplicativo do portal da empresa em dispositivos Windows Phone 8.1.
 
 >[!NOTE]
->Este guia de início rápido pressupõe que seus usuários obtenham o aplicativo do Portal da Empresa pela Loja em um dispositivo Windows Phone 8.1 ou posterior. Para obter informações sobre o suporte ao Windows Phone 8.0, consulte [Set up Windows Phone 8.0 management with Microsoft Intune (Configurar o gerenciamento do Windows Phone 8,0 com o Microsoft Intune)](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
+>Este guia de início rápido pressupõe que seus usuários obtenham o aplicativo do Portal da Empresa pela Loja em um dispositivo Windows Phone 8.1 ou posterior. Para obter informações sobre o suporte ao Windows Phone 8.0, consulte [Set up Windows Phone 8.0 management with Microsoft Intune (Configurar o gerenciamento do Windows Phone 8.0 com o Microsoft Intune)](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
 - Não há requisitos de certificado para **computadores Windows** ou **dispositivos Windows RT** ao registrar computadores Windows como dispositivos ou [instalar o cliente de computador Windows para o Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
@@ -80,6 +74,7 @@ Se for gerenciar dispositivos iOS ou Windows Phone com o Intune, você precisar�
 [**Entrar no Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

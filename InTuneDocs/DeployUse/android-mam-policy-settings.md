@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurações de política de MAM do Android | Microsoft Intune
-description:
-keywords:
+title: "Configurações de política de MAM do Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
 
     **Valor padrão = sim**
 - **Criptografar dados de aplicativo:** escolha **Sim** para habilitar a criptografia. Quando essa configuração está habilitada, para aplicativos associados a uma política de gerenciamento de aplicativos móveis, a criptografia é fornecida pela Microsoft. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo. O conteúdo no armazenamento do dispositivo sempre será criptografado.
-  >[!NOTE] O método de criptografia não tem certificação FIPS 140-2
+  >[!NOTE]
+  >O método de criptografia não tem certificação FIPS 140-2
 
   **Valor padrão = sim**
 
-- **ContactSyncDisabled:** escolha **Sim** para impedir que as informações de contato sincronizem com o aplicativo de catálogo de endereço nativo no dispositivo. Se você escolher **Não**, o aplicativo salvará as informações de contato no aplicativo de catálogo de endereço nativo no dispositivo.<br/>Ao fazer um apagamento seletivo para remover dados da empresa, contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso é aplicável somente ao aplicativo **Microsoft Outlook**.
+- **Desabilitar sincronização do contato:** escolha **Sim** para impedir que as informações de contato sincronizem com o aplicativo de catálogo de endereço nativo no dispositivo. Se você escolher **Não**, o aplicativo salvará as informações de contato no aplicativo de catálogo de endereço nativo no dispositivo.<br/>Ao fazer um apagamento seletivo para remover dados da empresa, contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso é aplicável somente ao aplicativo **Microsoft Outlook**.
 
   **Valor padrão = sim**
 
@@ -100,6 +95,7 @@ O termo **Aplicativos gerenciados pela política** é usado para fazer referênc
 - **Bloquear captura de tela e o Assistente do Android (Android 6 Marshmallow ou posterior):** escolha **Sim** para bloquear a captura de tela e as funcionalidades do **Assistente do Android** do dispositivo ao usar este aplicativo.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

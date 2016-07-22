@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar e implantar políticas de gerenciamento de aplicativo móvel no console do Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configurar e implantar políticas de gerenciamento de aplicativo móvel no console do Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ As políticas de gerenciamento de aplicativos móveis dão suporte a:
 
 -   Dispositivos que executam o iOS 7 e posterior.
 
-> [!TIP] Políticas de gerenciamento de aplicativos móveis dão suporte a dispositivos registrados com o Intune.
+> [!TIP]
+> Políticas de gerenciamento de aplicativos móveis dão suporte a dispositivos registrados com o Intune.
 >
 > Se você estiver procurando informações sobre como criar políticas de gerenciamento de aplicativos para dispositivos que não são gerenciados pelo Intune, consulte [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteger os dados do aplicativo usando políticas de gerenciamento de aplicativos móveis com o Microsoft Intune).
 
@@ -46,9 +41,9 @@ Para aplicar restrições a um aplicativo, o aplicativo deve incorporar o SDK de
 
 -   **Usar um aplicativo "encapsulado"** – aplicativos que são empacotados novamente para incluir o SDK do aplicativo usando a **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune**. Normalmente, essa ferramenta é usada para processar aplicativos da empresa criados internamente. Ele não pode ser usado para processar aplicativos que foram baixados da loja de aplicativos. Consulte [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos iOS para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição de Aplicativo do Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune).
 
-- **Escrever seu próprio aplicativo que incorpora o SDK de Aplicativos do Intune** - O SDK de Aplicativos do Intune permite que você incorpore recursos de gerenciamento de aplicativo em um aplicativo enquanto ele estiver sendo gravado. Para obter mais informações, consulte [Intune App SDK Overview](/develop/intune-app-sdk) (Visão geral do SDK de Aplicativos do Intune)
+- **Escrever seu próprio aplicativo que incorpora o SDK de Aplicativos do Intune** - O SDK de Aplicativos do Intune permite que você incorpore recursos de gerenciamento de aplicativo em um aplicativo enquanto ele estiver sendo gravado. Para obter mais informações, consulte [Intune App SDK Overview](/intune/develop/intune-app-sdk) (Visão geral do SDK de Aplicativos do Intune)
 
-Para obter ajuda para decidir entre a ferramenta de disposição de aplicativo e o SDK de Aplicativos do Intune, consulte [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) (Decidir como preparar aplicativos para gerenciamento de aplicativo móvel com o Microsoft Intune)
+Para obter ajuda para decidir entre a ferramenta de disposição de aplicativo e o SDK de Aplicativos do Intune, consulte [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) (Decidir como preparar aplicativos para gerenciamento de aplicativo móvel com o Microsoft Intune)
 
 Alguns aplicativos gerenciados, como o aplicativo do Outlook para iOS e Android, dão suporte a **multi-identidade**. Isso significa que Intune aplica as configurações de gerenciamento somente a dados ou contas corporativas no aplicativo.
 
@@ -60,7 +55,8 @@ Por exemplo, usando o aplicativo do Outlook:
 
 -   A conta corporativa usada deve ser a mesma conta que foi usada para registrar o dispositivo no Intune.
 
-> [!TIP] Se estiver usando o Intune com o Configuration Manager, consulte [How to Control Apps Using Mobile Application Management Policies in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx) (Como controlar aplicativos usando políticas de gerenciamento de aplicativos móveis no Configuration Manager).
+> [!TIP]
+> Se estiver usando o Intune com o Configuration Manager, consulte [How to Control Apps Using Mobile Application Management Policies in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx) (Como controlar aplicativos usando políticas de gerenciamento de aplicativos móveis no Configuration Manager).
 
 ## Criar e implantar um aplicativo com uma política de gerenciamento de aplicativos móveis
 
@@ -152,7 +148,8 @@ Implantar o aplicativo, garantindo que você selecione a política de gerenciame
 
 Para mais detalhes, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implantar aplicativos no Microsoft Intune).
 
-> [!IMPORTANT] Para dispositivos que executam sistemas operacionais anteriores ao iOS 7.1, as políticas associadas não serão removidas quando o aplicativo for desinstalado.
+> [!IMPORTANT]
+> Para dispositivos que executam sistemas operacionais anteriores ao iOS 7.1, as políticas associadas não serão removidas quando o aplicativo for desinstalado.
 >
 > Se o dispositivo tiver o registro no Intune desfeito, as políticas não serão removidas dos aplicativos. Quaisquer aplicativos que tiverem políticas aplicadas manterão as configurações de política, mesmo depois de ser desinstalado e reinstalado.
 
@@ -163,7 +160,8 @@ Nesse caso, você deve pedir ao usuário para desinstalar manualmente a versão 
 
 No entanto, para dispositivos que executam o iOS 9 e versões posteriores, o Intune automaticamente solicitará ao usuário permissão para assumir o gerenciamento do aplicativo existente. Se eles concordarem, o aplicativo será gerenciado pelo Intune e qualquer política de gerenciamento de aplicativo móvel associada ao aplicativo também será aplicada.
 
-> [!TIP] Se o dispositivo estiver em modo supervisionado, o Intune assumirá o gerenciamento do aplicativo existente sem solicitar permissão de usuários.
+> [!TIP]
+> Se o dispositivo estiver em modo de supervisionado, o Intune assumirá o gerenciamento do aplicativo existente sem solicitar permissão de usuários.
 
 ## **Etapa 5:** monitorar a implantação do aplicativo.
 Após ter criado e implantado um aplicativo associado a uma política de gerenciamento de aplicativo móvel, use os procedimentos a seguir para monitorar o aplicativo e resolver conflitos de política.
@@ -198,6 +196,7 @@ Em casos em que o dispositivo ou usuário receber duas políticas conflitantes, 
 -   Se nenhuma política tiver sido implantada no dispositivo e duas configurações conflitantes forem implantadas, a configuração padrão integrada no dispositivo será usada.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

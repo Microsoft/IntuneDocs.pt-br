@@ -1,37 +1,33 @@
 ---
-# required metadata
-
-title: Configurações de política do iOS | Microsoft Intune
-description:
-keywords:
+title: "Configurações de política do iOS | Microsoft Intune"
+description: "Crie políticas que controlam as configurações e os recursos nos dispositivos iOS que você gerencia com o Intune."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # Configurações de política do iOS no Microsoft Intune
 
+O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos iOS. Além disso, use a ferramenta Apple Configurator para criar configurações personalizadas que não estão disponíveis no Intune.
+
 ## Definições de política de configuração geral
 
 Use a **Política de configuração geral do iOS** do Microsoft Intune para definir configurações para:
 
--   **Configurações de segurança de dispositivo móvel** – Escolha em uma lista de configurações predefinidas que permitem controlar uma variedade de recursos e funcionalidade do dispositivo.
+-   **Configurações gerais de segurança de dispositivo** – Escolha em uma lista de configurações predefinidas que permitem controlar uma variedade de recursos e funcionalidade do dispositivo.
 
 -   **Modo de quiosque** - bloqueia um dispositivo para permitir que apenas alguns recursos funcionem. Por exemplo, você pode permitir que um dispositivo execute apenas um aplicativo gerenciado que você especificar ou pode desabilitar os botões de volume em um dispositivo. Essas configurações podem ser usadas para um modelo de demonstração de um dispositivo ou um dispositivo que é dedicado a apenas uma função, como um dispositivo de ponto de venda.
 
@@ -47,8 +43,8 @@ Se a configuração que você está procurando não aparecer nesse tópico, voc�
 |Nome da configuração|Detalhes|iOS|
 |----------------|-------|
 |**Exigir uma senha para desbloquear os dispositivos móveis**|Especifique se os usuários serão solicitados a inserir uma senha para acessar seu dispositivo.|Sim|
-|**Tipo de senha necessária**|Especifica o tipo de senha que será necessário, apenas com caracteres numéricos ou alfanuméricos|Sim|
-|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Há quatro conjuntos de caracteres: minúsculas, maiúsculas, símbolos e números. Essa configuração especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha). No entanto, para dispositivos iOS, isso especifica que o número de caracteres de símbolo deve ser incluído na senha)|Sim|
+|**Tipo de senha necessária**|Especifica o tipo de senha necessária, por exemplo, apenas numérica ou alfanumérica.|Sim|
+|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Isso especifica o número de caracteres de símbolo (como **#** ou **@**) que deve ser incluído na senha.|Sim|
 |**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres na senha.|Sim|
 |**Permitir senha simples**|Permita senhas simples como '0000' e '1234'.|Sim|
 |**Número de falhas de logon repetidas permitido antes do dispositivo ser apagado**|Apaga o dispositivo se houver falha neste número de tentativas de logon.|Sim|
@@ -77,7 +73,7 @@ Se a configuração que você está procurando não aparecer nesse tópico, voc�
 |Nome da configuração|Detalhes|iOS|
 |----------------|-------|
 |**Permitir backup no iCloud**|Permite ao usuário fazer backup do dispositivo no iCloud.|Sim|
-|**Permitir sincronização do documento com o iCloud**|Permitir a sincronização de documento e chave-valor para o espaço de armazenamento no iCloud. Sim|
+|**Permitir sincronização do documento com o iCloud**|Permitir a sincronização de documento e chave-valor para o espaço de armazenamento no iCloud.|Sim|
 |**Permitir sincronização do Photo Stream com o iCloud**|Permitir a sincronização de fotos no dispositivo com o iCloud.|Sim|
 |**Requer Backup com criptografia**|Exigir que quaisquer backups de dispositivo sejam criptografados.|Sim|
 
@@ -97,7 +93,7 @@ Se a configuração que você está procurando não aparecer nesse tópico, voc�
 |Nome da configuração|Detalhes|iOS|
 |----------------|-------|
 |**Permitir loja de aplicativo**|Permite que o dispositivo acesse a loja de aplicativos.|Sim|
-|**Exigir uma senha para acessar a loja de aplicativo**|Sim|
+|**Exigir uma senha para acessar a loja de aplicativo**|Exigir que o usuário insira uma senha antes de poder visitar a loja de aplicativos.|Sim|
 |**Permitir aquisições em aplicativo**|Permitir que aquisições da loja sejam feitas de um aplicativo em execução.|Sim|
 |**Permitir documentos gerenciados em outros aplicativos não gerenciados**|Permite que documentos corporativos sejam exibidos em qualquer aplicativo.<br>**Exemplo:** você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como não. Depois que o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permitirá salvar.|iOS 7.1 e posterior|
 |**Permitir documentos não gerenciados em outros aplicativos gerenciados**|Permitir que qualquer documento seja exibido em aplicativos gerenciados corporativos.|iOS 7.1 e posterior|
@@ -170,7 +166,8 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |**Habilitar toque auxiliar**|Habilita ou desabilita a opção de acessibilidade **Toque auxiliar** , que ajuda os usuários a executarem gestos ne tela que podem ser difíceis de executar.|
 |**Habilitar ajustes de toque auxiliar**|Habilita ou desabilita os ajustes de toque auxiliar que permitem ajustar a função de toque auxiliar.|
 |**Habilitar a seleção de fala**|Habilita ou desabilita as configurações de acessibilidade **Seleção de fala** que podem ler em voz alta o texto que você selecionar.|
-> [!NOTE] As observações a seguir aplicam-se às configurações do modo de quiosque para dispositivos iOS:
+> [!NOTE]
+> As observações a seguir aplicam-se às configurações do modo de quiosque para dispositivos iOS:
 > 
 > -   Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar o [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o gerenciador de registros de dispositivos para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre o Apple Configurator Tool, consulte sua documentação da Apple.
 > -   Se o aplicativo iOS que você especificar for instalado depois de implantar a política de configuração, ele não entrará no modo de quiosque até depois de ser reiniciado.
@@ -195,7 +192,8 @@ Copie a URL da página e use-a como a URL para configurar a lista de aplicativos
 
 **Exemplo:** pesquise **Microsoft Word para iPad**. A URL usada será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE] Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
+> [!NOTE]
+> Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
 
 
 ## Configurações de política personalizada
@@ -230,6 +228,7 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

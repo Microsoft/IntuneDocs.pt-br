@@ -1,28 +1,19 @@
 ---
-# required metadata
-
-title: Instalar uma nova versão do aplicativo do Portal da Empresa | Microsoft Intune
-description:
-keywords:
+title: "Instalar uma nova versão do aplicativo do Portal da Empresa | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -44,7 +35,8 @@ O Apple AppStore o alertará quando uma nova versão do Portal da Empresa estive
 
 2.  Siga as direções de instalação.
 
-    > [!NOTE] Se não for possível acessar a Windows Store, entre em contato com seu administrador de TI.
+    > [!NOTE]
+    > Se não for possível acessar a Windows Store, entre em contato com seu administrador de TI.
 
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
@@ -57,6 +49,7 @@ Para obter informações sobre outras tarefas que você pode fazer com seu dispo
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

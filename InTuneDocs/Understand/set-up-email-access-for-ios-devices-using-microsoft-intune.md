@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurar o acesso a email para dispositivos iOS usando o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+
 
 ---
 
@@ -58,8 +52,7 @@ Para este passo a passo, usaremos o servidor Exchange hospedado que vem com uma 
 9. Será exibida uma caixa de diálogo perguntando se você deseja implantar a política agora. Clique em **Sim**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
 10. Na janela que aparece em seguida, selecione o grupo de usuários no qual deseja implantar o perfil de email, clique em **Adicionar** e clique em **OK**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)
-Após você clicar em **OK**, a política começará a fluir para os dispositivos registrados dentro de um ou dois minutos.
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) Após você clicar em **OK**, a política começará a fluir para os dispositivos registrados dentro de um ou dois minutos.
 
 ## Etapas para verificar se o perfil foi aplicado com êxito
 
@@ -72,20 +65,19 @@ O aplicativo solicitará o nome de usuário e a senha do email do usuário.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Verifique as configurações da conta do aplicativo Mail para certificar-se de que o nome da conta seja o mesmo que você inseriu no perfil de email (por exemplo, **Email da Contoso**) e de que as configurações de sincronização estejam definidas corretamente.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)
-  Se parecer que o perfil de email não foi aplicado automaticamente ao dispositivo, você poderá aplicar a política manualmente usando o aplicativo do Portal da Empresa no dispositivo.
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) Se parecer que o perfil de email não foi aplicado automaticamente ao dispositivo, você poderá aplicar a política manualmente usando o aplicativo do Portal da Empresa no dispositivo.
 1. Abra o aplicativo do Portal da Empresa.
 2. Toque em **Meus Dispositivos**.
 3. Toque no nome de seu dispositivo.
 ![<tap-device-name](./media/Email-Walkthrough/Email-Walkthrough-10.png)
 4. Toque em **Sincronização** > **Verificar Conformidade**.
-![<tap-sync-check-device>](./media/Email-Walkthrough/Email-Walkthrough-11.png)
-Após alguns instantes, o perfil de email é aplicado ao dispositivo. Depois disso, você pode seguir as etapas de verificação para certificar-se de que o perfil foi aplicado corretamente.
+![<tap-sync-check-device>](./media/Email-Walkthrough/Email-Walkthrough-11.png) Após alguns instantes, o perfil de email é aplicado ao dispositivo. Depois disso, você pode seguir as etapas de verificação para certificar-se de que o perfil foi aplicado corretamente.
 
 ## Consulte também
 [Guia de avaliação do Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

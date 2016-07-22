@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Solucionar problemas de instalação do cliente | Microsoft Intune
-description:
-keywords:
+title: "Solucionar problemas de instalação do cliente | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,7 +26,7 @@ Use as informações a seguir para ajudá-lo a solucionar problemas comuns de in
 
 -   Se nenhum alerta de implantação do software cliente estiver visível no [console de administração do Microsoft Intune](https://manage.microsoft.com/), verifique a configuração de proxy e a conectividade do computador com a Internet e confirme se ele consegue se comunicar com a URL do serviço, [https://manage.microsoft.com](https://manage.microsoft.com/). Repita a instalação do software cliente.
 
--   Você pode enviar um email para destinatários selecionados quando ocorrer um alerta de falha de implantação de software cliente configurando uma regra de notificação no espaço de trabalho **Administração** . Para mais informações, confira [Get notified by Microsoft Intune alerts](/intune/deploy-use/get-notified-by-microsoft-intune-alerts) (Ser notificado pelos alertas do Microsoft Intune).
+-   Você pode enviar um email para destinatários selecionados quando ocorrer um alerta de falha de implantação de software cliente configurando uma regra de notificação no espaço de trabalho **Administração** . Para mais informações, confira [Get notified by Microsoft Intune alerts](/intune/deploy-use/get-notified-by-alerts) (Ser notificado pelos alertas do Microsoft Intune).
 
 -   O Intune exibe o alerta crítico **Falha na Implantação do Software Cliente** se ocorrer falha na implantação do software cliente. Esse alerta será exibido nas páginas **Visão Geral do Sistema** e **Alertas** do [console de administração do Microsoft Intune](https://manage.microsoft.com/). Aqui está como verificar se há alertas:
 
@@ -56,23 +50,23 @@ Use as informações a seguir para ajudá-lo a solucionar problemas comuns de in
 
 ## O pacote de registro do computador não faz o download
 **Problema:** ao tentar registrar um computador, você observa o seguinte:
--  Falha ao baixar o pacote de registro 
+-  Falha ao baixar o pacote de registro
 -  A caixa de diálogo do download é exibida, mas expira
 
 **Resolução:** no navegador que você está usando para o download, durante o seu período de duração, certifique-se de que os downloads estão habilitados e que os arquivos criptografados podem ser salvos em seu disco local.
 
 ## A instalação do cliente trava com o código de erro 0x80040154
 **Problema:**
- 
+
 -  A instalação de cliente durante o registro trava
 
--  Não é possível registrar o dispositivo 
+-  Não é possível registrar o dispositivo
 
 -  Erro 0x80040154 no WindowsUpdate.log
 
 Isso pode ser causado pela ausência de atualizações críticas de software no computador.
 
-**Resolução:** certifique-se de que sua política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune) 
+**Resolução:** certifique-se de que sua política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune)
 
 
 ## Erros relacionados à política do Microsoft Intune em policyplatform.log
@@ -84,7 +78,8 @@ Para dispositivos do Windows não MDM, erros de política no arquivo policyplatf
 
 2.  Espere 20 minutos para o software cliente ser removido.
 
-    > [!NOTE] Não tente remover o cliente em Programas e Recursos.
+    > [!NOTE]
+    > Não tente remover o cliente em Programas e Recursos.
 
 3.  No menu Iniciar, digite **UAC** para abrir as configurações de Controle de Conta de Usuário.
 
@@ -130,6 +125,7 @@ Se os problemas de instalação persistirem, entre em contato com o suporte, con
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

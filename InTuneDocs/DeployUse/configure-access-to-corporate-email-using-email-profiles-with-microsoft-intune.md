@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurar o acesso a email corporativo usando perfis de email | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/05/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
+ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+
 
 ---
 
@@ -89,9 +83,10 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     |**Agenda de sincronização** (Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda pela qual os dispositivos sincronizarão os dados do Exchange Server. Você também pode selecionar **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo deve iniciar a sincronização.|
     |**Usar SSL**|Use comunicação Secure Sockets Layer (SSL) ao enviar e receber emails, e se comunicar com o Exchange Server.<br /><br />Para dispositivos que executam o Samsung KNOX 4.0 ou posterior, você deve exportar o certificado SSL do Exchange Server e implantá-lo como um Perfil de Certificado Confiável do Android no Intune. O Intune não dá suporte ao acesso a este certificado se ele estiver instalado no Exchange Server por outros meios.|
     |**Tipo de conteúdo para sincronizar**|Selecione os tipos de conteúdo que você deseja sincronizar com dispositivos.| 
-    |**Permitir que o email seja enviado de aplicativos de terceiros** (somente iOS)|Permita que aplicativos de terceiros abram emails no aplicativo de email nativo, por exemplo, para anexar arquivos ao email.|
+    |**Permitir que o email seja enviado de aplicativos de terceiros** (somente iOS)|Permita que o usuário selecione este perfil como a conta padrão para enviar email e permitir que aplicativos de terceiros abram o email no aplicativo de email nativo, por exemplo, para anexar arquivos de email.|
 
-    > [!IMPORTANT] Se você implantou um perfil de email e deseja alterar os valores do **host** ou do **Endereço de email**, deverá excluir o perfil de email existente e criar um novo com os valores necessários.
+    > [!IMPORTANT]
+    > Se você implantou um perfil de email e deseja alterar os valores do **host** ou do **Endereço de Email**, deverá excluir o perfil de email existente e criar um novo com os valores necessários.
 
 4.  Quando tiver terminado, clique em **Salvar política**.
 
@@ -109,11 +104,13 @@ A nova política é exibida no nó **Políticas de configuração** do espaço d
 
 Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho Painel.
 
-> [!NOTE] Se você quiser remover um perfil de email de um dispositivo, edite a implantação e remova todos os grupos dos quais o dispositivo é membro.
+> [!NOTE]
+> Se você quiser remover um perfil de email de um dispositivo, edite a implantação e remova todos os grupos dos quais o dispositivo é membro.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

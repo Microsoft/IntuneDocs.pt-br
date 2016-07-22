@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Restringir o acesso ao SharePoint Online | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+
 
 ---
 
@@ -30,7 +24,7 @@ Use o acesso condicional [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)
 O acesso condicional tem dois componentes:
 - A política de conformidade do dispositivo, com que o dispositivo deve estar em conformidade para ser considerado compatível.
 - A política de acesso condicional, na qual você especifica as condições que o dispositivo deve atender para acessar o serviço.
-Para saber mais sobre como o acesso condicional funciona, leia o tópico [restringir acesso a email e a serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como o acesso condicional funciona, leia o tópico [Restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir acesso a email, O365 e outros serviços).
 
 Quando um usuário tenta se conectar a um arquivo usando um aplicativo com suporte assim como o OneDrive em seu dispositivo, ocorre a seguinte avaliação:
 
@@ -66,6 +60,13 @@ Se uma condição não for atendida, o usuário receberá uma das seguintes mens
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 ou posterior
 - Windows Phone 8.1 e posterior
 
+Você pode restringir o acesso ao SharePoint Online quando acessado por um navegador em dispositivos **iOS** e **Android**.  O acesso será permitido somente de navegadores com suporte em dispositivos compatíveis:
+* Safari (iOS)
+* Chrome (Android)
+* Navegador gerenciado (iOS e Android)
+
+**Navegadores sem suporte serão bloqueados**.
+
 ## Suporte para computadores
 - Windows 8.1 e posterior (quando registrado no Intune)
 - Windows 7.0 ou Windows 8.1 (quando ingressado no domínio)
@@ -97,11 +98,13 @@ Se um usuário estiver nos dois grupos, ele ficará isento da política.
 ### Etapa 2: Configurar e implantar uma política de conformidade
 Se ainda não tiver feito isso, crie e implante uma política de conformidade para todos os usuários aos quais a política do SharePoint Online se destinará.
 
-> [!NOTE] Enquanto as políticas de conformidade são implantadas em grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
+> [!NOTE]
+> Enquanto as políticas de conformidade são implantadas em grupos [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
 
 Para obter detalhes sobre como configurar a política de conformidade, consulte [create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md) (criar uma política de conformidade).
 
-> [!IMPORTANT] Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
+> [!IMPORTANT]
+> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
 
 Quando estiver pronto, continue na **Etapa 3**.
 
@@ -110,8 +113,8 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** > **Acesso Condicional** > **Política do SharePoint Online**.
-![Instantâneo da página de Política do SharePoint Online](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do SharePoint Online**.
+![Instantâneo da página de Política do SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Selecione **Habilitar política de acesso condicional para o SharePoint Online**.
 
@@ -120,6 +123,10 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
     -   **Todas as plataformas**
 
         Isso requer que qualquer dispositivo usado para acessar o **SharePoint Online** seja registrado no Intune e esteja compatível com as políticas.  Qualquer aplicativo cliente usando a **autenticação moderna** está sujeito à política de acesso condicional. Se a plataforma não tiver suporte do Intune, o acesso ao **SharePoint Online** será bloqueado.
+
+        Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente.  Todas as plataformas precisarão ser registradas e tornam-se compatíveis, exceto para:
+        *   Dispositivos Windows precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambos
+        * Plataformas sem suporte, como Mac.  No entanto, os aplicativos que usam autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
         >[!TIP]
         >Você não encontrará essa opção se você não estiver usando o acesso condicional para computadores.  Em vez disso, use **Plataformas específicas**. O acesso condicional para computadores não está disponível no momento para todos os clientes do Intune.   Você pode encontrar mais informações sobre problemas conhecidos e como obter acesso a esse recurso no [site do Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
 
@@ -135,11 +142,28 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
 
      -   **Os dispositivos devem ser compatíveis.** Escolha essa opção para exigir que os computadores sejam compatíveis e estejam registrados em [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Se o computador não estiver registrado, será exibida uma mensagem com instruções sobre como registrá-lo.
 
-4.  Em **Grupos de Destino**, clique em **Modificar** para selecionar os grupos de segurança do Active Directory do Azure aos quais a política será aplicada. Você pode escolher aplicar isso a todos os usuários ou apenas a um grupos seleto de usuários.
+4.   Em **Acesso do navegador** ao SharePoint Online e OneDrive for Business, você pode optar por permitir o acesso ao Exchange Online somente por meio de navegadores com suporte: Safari (iOS) e Chrome (Android). O acesso de outros navegadores será bloqueado.  As mesmas restrições de plataforma que você selecionou para acesso de aplicativo para OneDrive também se aplicam aqui.
 
-5.  Opcionalmente, em **Grupos isentos**, clique em **Modificar** para selecionar os grupos de segurança do Active Directory do Azure que são isentos dessa política.
+  Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador.  Para isso, os usuários finais devem habilitar a opção "Habilitar Acesso do Navegador" no dispositivo registrado da seguinte maneira:
+  1.    Inicie o **aplicativo do Portal da Empresa**.
+  2.    Vá para a página **Configurações** por meio dos três pontos (...) ou do botão de menu do hardware.
+  3.    Pressione o botão **Habilitar Acesso do Navegador**.
+  4.  No navegador Chrome, saia do Office 365 e reinicie o Chrome.
 
-6.  Quando terminar, clique em **Salvar**.
+  Em plataformas **iOS e Android**, para identificar o dispositivo usado para acessar o serviço, o Azure Active Directory emitirá um certificado de protocolo TLS para o dispositivo.  O dispositivo exibe o certificado com um prompt ao usuário final para selecionar o certificado conforme visto nas capturas de tela abaixo. O usuário final deve selecionar este certificado antes de continuar usando o navegador.
+
+  **iOS**
+
+  ![captura de tela da solicitação de certificado em um ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![captura de tela da solicitação de certificado em um dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode escolher aplicar isso a todos os usuários ou apenas a um grupos seleto de usuários.
+
+6.  Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
+
+6.  Quando terminar, selecione **Salvar**.
 
 Você não precisa implantar a política de acesso condicional, ele entra em vigor imediatamente.
 
@@ -158,6 +182,7 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 [Restringir o acesso a email e serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

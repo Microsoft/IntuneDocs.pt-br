@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Criar políticas e publicar um aplicativo | Microsoft Intune
-description:
-keywords:
+title: "Criar políticas e publicar um aplicativo | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] Ao iniciar o **Intune Software Publisher** pela primeira vez, um pequeno atraso ocorrerá durante a instalação do aplicativo.
+    > [!NOTE]
+    > Ao iniciar o **Intune Software Publisher** pela primeira vez, um pequeno atraso ocorrerá durante a instalação do aplicativo.
 
 2.  Examine o aviso de segurança e selecione **Executar**.
 
@@ -114,6 +109,7 @@ Parabéns! Você acabou de concluir a etapa 6 do *Guia de início rápido do Int
 >[&larr; **Organizar usuários e dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personalizar o Portal da Empresa** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
