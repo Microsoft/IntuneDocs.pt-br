@@ -1,10 +1,10 @@
 ---
-title: Configurar o acesso a email corporativo usando perfis de email | Microsoft Intune
-description: 
+title: Acessar o email corporativo com perfis de email | Microsoft Intune
+description: "As configurações de perfil de email podem ser usadas para definir configurações de acesso de email para clientes de email específicos em dispositivos móveis."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ Muitas plataformas móveis incluem um cliente de email *nativo* que é fornecido
 
 Se você precisar de DLP (prevenção de perda de dados) adicional, escolha [Acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), que controla o acesso à caixa de correio do usuário para qualquer cliente de email, incluindo clientes de email nativos.
 
-As configurações de perfil de email podem ser usadas para definir configurações de acesso de email para clientes de email específicos em dispositivos móveis.   A maioria das plataformas móveis inclui um cliente de email *nativo* que é fornecido como parte do sistema operacional.  Em plataformas com suporte os clientes de email nativos podem ser configurados pelo Microsoft Intune para permitir aos usuários acessar seu email corporativo nos dispositivos pessoais sem qualquer configuração.  
+As configurações de perfil de email podem ser usadas para definir configurações de acesso de email para clientes de email específicos em dispositivos móveis. A maioria das plataformas móveis inclui um cliente de email *nativo* que é fornecido como parte do sistema operacional.  Em plataformas com suporte os clientes de email nativos podem ser configurados pelo Microsoft Intune para permitir aos usuários acessar seu email corporativo nos dispositivos pessoais sem qualquer configuração.  
 
 Os administradores de TI ou usuários também podem optar por instalar clientes de email alternativos, por exemplo, o Microsoft Outlook para Android ou iOS.  Esses clientes de email podem não dar suporte a perfis de email e não são configuráveis usando perfis de email do Microsoft Intune.  
 
@@ -111,6 +111,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

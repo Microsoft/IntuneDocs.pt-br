@@ -1,9 +1,9 @@
 ---
 title: Registrar seu dispositivo Android no Intune| Microsoft Intune
-description: 
+description: Descreve como registrar um dispositivo Android no Intune
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/14/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 76cc1a43e09039285be76858155ef22f7b41cf9b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
 
 
 ---
@@ -115,13 +115,14 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
 Antes de instalar os aplicativos da empresa, acesse **Configurações** &gt; **Segurança**, e ative **Fontes Desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem "Instalação bloqueada". Por motivos de segurança, seu dispositivo está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes Desconhecidas**.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

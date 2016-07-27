@@ -1,6 +1,6 @@
 ---
 title: "Solução de problemas com políticas | Microsoft Intune"
-description: 
+description: "Solucione problemas de configuração de política."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -47,7 +48,7 @@ Na captura de tela abaixo, você pode ver dois exemplos claros:
 ![Política de dispositivo Intune](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
-> [!NOTE] Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
+> Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
 
 ## Atualização de política e intervalos de atualização
 Lembre-se de que as políticas são atualizadas em intervalos regulares. Em geral, as políticas devem ser registradas em dispositivos dentro de 15 minutos depois de fazer uma alteração. Aqui estão mais detalhes sobre os intervalos regulares para atualização de política:
@@ -70,7 +71,7 @@ Para dispositivos do Windows não MDM, erros de política no arquivo policyplatf
 2.  Espere 20 minutos para o software cliente ser removido.
 
     > [!NOTE]
-    > [!NOTE] Não tente remover o cliente em Programas e Recursos.
+    > Não tente remover o cliente em Programas e Recursos.
 
 3.  No menu Iniciar, digite **UAC** para abrir as configurações de Controle de Conta de Usuário.
 
@@ -112,6 +113,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

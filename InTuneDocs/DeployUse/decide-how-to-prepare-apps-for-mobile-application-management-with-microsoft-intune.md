@@ -1,10 +1,10 @@
 ---
-title: "Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune | Microsoft Intune"
-description: 
+title: "Preparar aplicativos para o gerenciamento de aplicativo móvel | Microsoft Intune"
+description: "As informações neste tópico ajudam você a decidir quando deve usar a App Wrapping Tool e o SDK do Aplicativo para permitir que seus aplicativos de linha de negócios personalizados para usar as políticas de gerenciamento de aplicativos móveis."
 keywords: 
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
 
 
 ---
@@ -68,6 +69,6 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

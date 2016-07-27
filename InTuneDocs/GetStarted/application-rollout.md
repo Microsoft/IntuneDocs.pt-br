@@ -1,6 +1,6 @@
 ---
 title: "Distribuição de aplicativos | Microsoft Intune"
-description: 
+description: "Recomendações específicas para uma distribuição em fases de aplicativos no Microsoft Intune."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 ---
@@ -44,7 +44,7 @@ Considere o seguinte:
 
 -   Verifique se o instalador do aplicativo escolhido tem suporte pela distribuição de aplicativos do Intune, conforme descrito em [Adicionar aplicativos com o Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Garanta que os pré-requisitos da distribuição de aplicativo estejam instalados. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Garanta que os pré-requisitos da distribuição de aplicativo estejam instalados. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Determine se o Intune dá suporte ao tipo de aplicativo.
 
@@ -95,6 +95,6 @@ Durante o piloto, você implantará o aplicativo para um pequeno grupo de usuár
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

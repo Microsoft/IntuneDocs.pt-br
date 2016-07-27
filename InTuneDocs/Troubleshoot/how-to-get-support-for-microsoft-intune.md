@@ -1,10 +1,10 @@
 ---
 title: Como obter suporte | Microsoft Intune
-description: 
+description: "O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas."
 keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
-ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 
 
 ---
@@ -26,34 +27,33 @@ Este tópico informa como abrir uma solicitação de serviço ou ligar para o su
 Para autoatendimento com o Intune, consulte [Dicas de solução de problemas gerais do Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou qualquer um dos tópicos de solução de problemas para problemas específicos, listados na seção **Consulte também** deste tópico.
 ## Criar uma solicitação de serviço online
 
-1.  Entre no Intune e, em seguida, visite o [Centro de administração do Office 365](https://portal.office.com/Support/SupportEntry.aspx).
+1.  Entre no [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) com suas credenciais do Intune.
 
-2.  Sob o título **Criar uma solicitação de serviço**, selecione a categoria do problema para o qual você deseja abrir um tíquete:
+2.  Em **Criar uma solicitação de serviço**, selecione a categoria do problema para o qual você deseja abrir um tíquete:
 
-    -   Para problemas de licenciamento e cobrança, selecione **Informações de Cobrança e Produto**.
+    -   Para problemas cobrança, licenciamento e conta, selecione **Billing and product info** (Informações de cobrança e produto).
 
-    -   Para todos os outros problemas com o Intune selecione **Gerenciamento de Dispositivo Móvel**. Essa opção também aborda o MDM do Office 365 e o System Center Configuration Manager com o Intune.
+    -   Para todos os outros problemas com o Intune selecione **Gerenciamento de Dispositivo Móvel**.
 
     > [!NOTE]
-    > [!NOTE] Talvez você precise clicar em **mais** na parte inferior da lista para ver todas as categorias.
+    > Talvez você precise selecionar **mais** na parte inferior da lista para ver todas as categorias.
 
 3.  Na página **Identificar o Problema**, selecione o **Recurso** e **Sintoma** com o qual você precisa de ajuda. Você deverá fornecer um **Resumo do problema** e **Detalhes do problema**.
 
-4.  Na página **Examinar Sugestões**, você encontrará links para conteúdo que pode ajudá-lo a resolver o problema sozinho.  Se não puder resolver o problema, você poderá clicar em **Sim, continuar** na parte inferior da página para enviar sua solicitação de serviço.
+4.  Na página **Examinar Sugestões**, você encontrará links para conteúdo que pode ajudá-lo a resolver o problema sozinho.  Se não puder resolver o problema, você poderá selecionar **Sim, continuar** na parte inferior da página para enviar sua solicitação de serviço.
 
-5.  Na página **Adicionar detalhes**, forneça as informações solicitadas. Você pode anexar capturas de tela ou outros documentos clicando em **Anexar um Arquivo**.
+5.  Na página **Adicionar detalhes**, forneça as informações solicitadas. Você pode anexar capturas de tela ou outros documentos selecionando **anexar um arquivo**.
 
-6.  Na página **Confirmar e enviar**, forneça informações de contato, examine a solicitação e clique em **Enviar solicitação**. Depois que a solicitação for enviada, você será levado a uma lista de suas solicitações de serviço.
+6.  Na página **confirmar e enviar**, forneça informações de contato, examine a solicitação e clique em **Enviar solicitação**. Depois que a solicitação for enviada, você será levado a uma lista de suas solicitações de serviço.
 
 ## Suporte por telefone
 Consulte [Contact Assisted Phone Support for Microsoft Intune (Entrar em contato por assistência telefônica para o Microsoft Intune)](contact-assisted-phone-support-for-microsoft-intune.md) para obter uma lista de números de telefone de suporte por país e região, horários de atendimento e idiomas com suporte para cada região.
 
 ## Controlar suas solicitações de serviço
-Para acompanhar solicitações, vá para o [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Na parte inferior da lista **Criar uma solicitação de serviço**, clique em **Ver todos os tíquetes de suporte**. Por padrão, você verá todas as suas solicitações de serviço que estão com status aberto. Para alterar quais solicitações de serviço você deseja consultar, por exemplo, para ver as solicitações fechadas, clique no ícone de filtro no painel de navegação superior e selecione o modo de exibição de sua preferência.
+Para acompanhar solicitações, vá para o [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Na parte inferior da lista **Criar uma solicitação de serviço**, selecione **Ver todos os tíquetes de suporte**. Por padrão, você verá todas as suas solicitações de serviço que estão com status aberto. Para alterar quais solicitações de serviço você deseja ver, por exemplo, para ver as solicitações fechadas, selecione o ícone de filtro no painel de navegação superior e selecione o modo de exibição de sua preferência.
 
 > [!NOTE]
-> [!NOTE]
-**Se você usar o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Centro de Soluções do Microsoft System Center Configuration Manager e do System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar materiais avançados de autoajuda, com a opção de abrir uma solicitação de suporte online ou por telefone.
+> **Se você usa o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Centro de Soluções do Microsoft System Center Configuration Manager e do System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar materiais avançados de autoajuda, com a opção de abrir uma solicitação de suporte online ou por telefone.
 >
 > O suporte técnico do System Center Configuration Manager ou System Center Endpoint Protection requer um pagamento ou é diminuído dos seus contratos existentes de licenciamento ou Suporte Premier.
 
@@ -140,6 +140,6 @@ Nossa função é:
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

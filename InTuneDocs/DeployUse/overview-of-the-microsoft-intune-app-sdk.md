@@ -13,8 +13,8 @@ ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+ms.sourcegitcommit: 206f7c927cce0b66cf554f60342f3f0b1ca43105
+ms.openlocfilehash: d40687127841754f3994b8ad55e839e08bb8dd33
 
 
 ---
@@ -47,7 +47,7 @@ Os administradores de TI podem impor o uso de um navegador gerenciado ao abrir l
 Os administradores de TI podem impor uma política PIN quando um aplicativo gerenciado pelo Intune é iniciado. Essa política ajuda a garantir que os usuários finais que registraram seus dispositivos com o Microsoft Intune são as mesmas pessoas que estão abrindo os aplicativos. Quando os usuários finais configuram seus PINs, o SDK do Intune App usa o Active Directory do Azure para verificar as credenciais de usuários finais em relação às credenciais de registro do dispositivo. 
 
 ## Os usuários devem inserir credenciais para poderem abrir os aplicativos
-Os administradores de TI podem exigir que os usuários digitem suas credenciais para poderem abrir um aplicativo gerenciado pelo Intune. O SDK do Intune App usa o Active Directory do Azure para fornecer uma experiência de logon único, em que as credenciais, uma vez inseridas, são reutilizadas para logons subsequentes. Também há suporte para autenticação de soluções de gerenciamento de identidade [federada com o Active Directory do Azure](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
+Os administradores de TI podem exigir que os usuários digitem suas credenciais para poderem abrir um aplicativo gerenciado pelo Intune. O SDK do Intune App usa o Active Directory do Azure para fornecer uma experiência de logon único, em que as credenciais, uma vez inseridas, são reutilizadas para logons subsequentes. Também há suporte para a autenticação de soluções de gerenciamento de identidade [federadas com o Azure Active Directory](/active-directory/active-directory-aadconnect-federation-compatibility). 
 
 ## Verificar a integridade e conformidade do dispositivo
 Os administradores de TI podem realizar uma verificação de integridade do dispositivo e sua conformidade com políticas corporativas antes que os usuários finais possam acessar aplicativos gerenciados pelo Intune. Na plataforma iOS, esta política verifica se o dispositivo foi desbloqueado com jailbreak. Na plataforma Android, esta política verifica se o dispositivo apresenta raiz.  
@@ -56,6 +56,6 @@ Os administradores de TI podem realizar uma verificação de integridade do disp
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

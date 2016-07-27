@@ -1,27 +1,27 @@
 ---
-title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune? | Microsoft Intune"
+title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo iOS ou Mac OS X no Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: f07eaf82a3bd8fc7fb47032642b30850fcbbb30d
 
 
 ---
 
 
-# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune?
+# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo iOS ou Mac OS X no Intune?
 
 Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo iOS ou Mac OS X no Intune, você pode usar o aplicativo Portal da Empresa para:
 
@@ -29,9 +29,9 @@ Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo iOS 
 
 -   Obter aplicativos da empresa do Portal da Empresa
 
--   Configurar automaticamente sua conta de email da empresa
+-   Redefinir remotamente seu telefone para configurações de fábrica, caso ele seja perdido ou roubado
 
--   Redefinir seu telefone para configurações de fábrica, caso ele seja perdido ou roubado
+-   Configurar automaticamente sua conta de email da empresa
 
 Quando registra seu dispositivo no Intune, você está concedendo permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
 
@@ -64,8 +64,6 @@ Quando registra seu dispositivo no Intune, você está concedendo permissão ao 
 -   Proprietário
 
 -   Nome do dispositivo
-
--   Fabricante
 
 Quando o dispositivo é registrado, o administrador de TI pode:
 
@@ -101,6 +99,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

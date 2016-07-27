@@ -1,9 +1,9 @@
 ---
 title: "Criar políticas e publicar um aplicativo | Microsoft Intune"
-description: 
+description: "Explica como criar políticas e publicar um aplicativo de exemplo para sua assinatura do Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 As políticas do Intune fornecem configurações que ajudam a controlar as configurações de segurança em dispositivos móveis, a manter as configurações do Firewall do Windows e do Endpoint Protection para computadores e a implantar aplicativos. Você pode aprender mais em [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune) e [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
 
 Você pode executar dois tipos de instalações de aplicativos usando o Intune. A primeira é uma **instalação requerida**, que implanta o aplicativo automaticamente em computadores gerenciados. A outra é uma **instalação disponível**, que implanta o aplicativo ou um link para o aplicativo, no Portal da Empresa do Intune para que os usuários possam optar por instalá-lo em seus computadores ou em seus dispositivos móveis.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 As seguintes etapas ajudam você a configurar uma política de configuração de dispositivo móvel e uma política de firewall de computador Windows, além de configurar o Skype como uma instalação disponível para dispositivos móveis depois de eles serem registrados.
 
@@ -46,6 +41,10 @@ As seguintes etapas ajudam você a configurar uma política de configuração de
 3.  Na lista **Tarefas**, na página **Visão Geral de Políticas**, escolha **Adicionar Política**.
 
 4.  Na lista de políticas, expanda a plataforma para a qual você deseja criar uma política e selecione **Configuração Geral** > **Criar e Implantar uma Política com as Configurações Recomendadas** > **Criar Política**.
+
+> [!NOTE]
+> Não há nenhuma configuração recomendada para políticas de configuração de dispositivo, pois há muitas opções que você pode escolher. Você precisa criar uma política de configuração de dispositivo personalizada.
+
 
 5.  Quando solicitado, **Selecione os grupos nos quais você deseja implantar essa política**, selecione um grupo da lista de grupos disponíveis e escolha **Adicionar** > **OK**.
 
@@ -110,6 +109,6 @@ Parabéns! Você acabou de concluir a etapa 6 do *Guia de início rápido do Int
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

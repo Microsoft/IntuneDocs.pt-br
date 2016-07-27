@@ -1,10 +1,10 @@
 ---
 title: "Configurações de política MAM iOS | Microsoft Intune"
-description: 
+description: "Este tópico descreve as configurações de política de gerenciamento de aplicativo móvel para dispositivos iOS."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
 
 
 ---
@@ -37,6 +37,8 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
   - **Nenhum**: não permitir a transferência de dados para qualquer aplicativo, incluindo outros aplicativos gerenciados por política.
 
   Além disso, se você definir essa opção como **Aplicativos Gerenciados por Política** ou **Nenhum**, o recurso do iOS 9 que permite a Pesquisa de Destaque pesquise dados em aplicativos será bloqueado.
+
+  **Essa configuração não controla o uso do recurso Open In em dispositivos móveis. Para gerenciar o recurso Open In, consulte [aqui](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Valor padrão = aplicativos gerenciados por política**
 
@@ -112,6 +114,6 @@ Em dispositivos iOS, você pode permitir que o usuário se identifique usando a 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

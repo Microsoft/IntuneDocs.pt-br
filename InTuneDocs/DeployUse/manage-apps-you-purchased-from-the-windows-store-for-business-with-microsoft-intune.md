@@ -1,10 +1,10 @@
 ---
-title: Gerenciar aplicativos adquiridos na Windows Store para Empresas com o Microsoft Intune
-description: 
+title: Gerenciar aplicativos da Windows Store para Empresas | Microsoft Intune
+description: "Conecte o Microsoft Intune à Windows Store para Empresas se deseja gerenciar e implantar aplicativos adquiridos por volume no console do Intune"
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: b6e2f0ec13caa9616b72a2fa225e77fe43a4755c
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: fb553cfd5e22a22b0ab18d3c1a8301a3966e2806
 
 
 ---
@@ -77,6 +77,6 @@ Quando você implanta um aplicativo da Windows Store for Business, uma licença 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

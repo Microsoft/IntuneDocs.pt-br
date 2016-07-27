@@ -1,19 +1,20 @@
 ---
-title: Instalar o Microsoft Intune Exchange Connector para o Exchange local | Microsoft Intune
-description: 
+title: Exchange Connector para EAS local | Microsoft Intune
+description: "Use a ferramenta do Connector para habilitar a comunicação entre o console de administração do Intune e o Exchange Server local para MDM do Exchange ActiveSync."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 |Software adicional|Uma instalação completa do Microsoft .NET Framework 4 e Windows PowerShell 2.0 deve ser feita no computador que hospeda o conector.|
 |Rede|O computador no qual o conector será instalado deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />O computador precisa de configurações para habilitá-lo a acessar o serviço Intune por meio dos firewalls e servidores proxy por Portas 80 e 443. Os domínios usados pelo Intune incluem manage.microsoft.com, &#42;manage.microsoft.com e &#42;.manage.microsoft.com.|
 |Hosted Exchange configurado e em execução|Consulte [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) para obter mais informações. |
-|Definir a autoridade de gerenciamento de dispositivo móvel para Intune|[Defina a autoridade de dispositivo móvel para Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Requisitos de cmdlets do Exchange
 
@@ -58,16 +58,14 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 
 ## Baixe o pacote de instalação de software do Exchange Connector local
 
-1. Em um sistema operacional com suporte para o Exchange Connector local, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) com uma conta de usuário que seja um administrador no locatário do Exchange com uma licença para usar o Exchange Server.
+1. Em um sistema operacional Windows Server com suporte para o Exchange Connector local, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) com uma conta de usuário que seja um administrador no locatário do Exchange com uma licença para usar o Exchange Server.
 ![Abra a configuração de conexão com o Exchange](../media/ExchangeConnector.gif)
 
-2.  No painel de atalhos do espaço de trabalho, clique em **ADMINISTRADOR**.
+2.  No painel de atalhos do espaço de trabalho, escolha **Administrador**, selecione **Gerenciamento de Dispositivo Móvel** > **Microsoft Exchange** e selecione **Setup Exchange Connection** (Configurar Conexão do Exchange).
 
-3.  No painel de navegação, em **Gerenciamento de Dispositivo Móvel**, expanda o **Microsoft Exchange** e, em seguida, clique em **Configurar conexão com o Exchange**.
+3.  Na página **Configurar a Conexão do Exchange**, clique em **Baixar o On-Premises Connector**.
 
-4.  Na página **Configurar a Conexão do Exchange**, clique em **Baixar o On-Premises Connector**.
-
-5.  O Exchange Connector local vem em uma pasta compactada (.zip) que pode ser aberta ou salva. Na caixa de diálogo **Download de Arquivos**, clique em **Salvar** para armazenar a pasta compactada em um local seguro.
+4.  O Exchange Connector local vem em uma pasta compactada (.zip) que pode ser aberta ou salva. Na caixa de diálogo **Download de Arquivos**, clique em **Salvar** para armazenar a pasta compactada em um local seguro.
 
 > [!IMPORTANT]
 > Não renomeie ou mova os arquivos dentro da pasta do Exchange Connector local. Mover ou renomear o conteúdo da pasta interromperá a instalação.
@@ -133,6 +131,6 @@ Você também pode verificar a hora e data da última tentativa de sincronizaç�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

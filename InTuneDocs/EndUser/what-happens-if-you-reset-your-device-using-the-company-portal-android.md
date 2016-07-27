@@ -1,26 +1,27 @@
 ---
-title: "O que acontece quando você redefine o dispositivo usando o Portal da Empresa? | Microsoft Intune"
+title: "O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: ccadd02107f96c680cadd4e3b7a337292c530bae
 
 
 ---
 
 
-# O que acontece quando você redefine o dispositivo usando o Portal da Empresa?
+# O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa?
 
 Quando você usa o Portal da Empresa para redefinir seu dispositivo Android, todos os aplicativos, configurações e dados pessoais em seu dispositivo serão excluídos, retornando seu dispositivo para as configurações padrão de fábrica.
 
@@ -36,6 +37,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,20 +1,20 @@
 ---
-title: Instalar o cliente do computador Windows com o Microsoft Intune | Microsoft Intune
-description: 
+title: Instalar o cliente do computador Windows | Microsoft Intune
+description: "Use este guia para ajudá-lo a ter os computadores Windows gerenciados pelo software cliente do Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 ---
@@ -35,8 +35,6 @@ Em seguida, use um ou mais dos seguintes métodos para instalar o cliente:
 -   [Para implantar manualmente o software cliente](#to-manually-deploy-the-client-software)
 
 -   [Para implantar o software cliente automaticamente usando a Política de grupo](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Como os usuários podem autoinscrever computadores](#how-users-can-self-enroll-their-computers)
 
 -   [Instalar o software cliente do Microsoft Intune como parte de uma imagem](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ Se não precisar mais gerenciar um computador com o Intune, será recomendável 
 3.  Use a Política de grupo para implantar o software nos computadores da sua rede.
 
     Para obter mais informações sobre como usar a Política de Grupo para implantar o software automaticamente, consulte a documentação do Windows Server.
-
-### Como os usuários podem autoinscrever computadores
-Os usuários podem registrar cada um dos seus computadores automaticamente por meio do portal da empresa do Intune. Cada computador registrado é vinculado à conta de usuário usada para instalar o software cliente.
-
-> [!NOTE]
-> -   O usuário deve ser um administrador no computador para instalar o software cliente.
-> -   O autorregistro requer que o Internet Explorer esteja instalado no computador cliente.
-> -   Cada vez que um usuário registra automaticamente um computador, ele usa uma licença do Intune.
-> -   Você deve usar uma conta de trabalho ou da escola para registrar automaticamente um computador. Você não pode registrar automaticamente um computador usando uma conta da Microsoft.
-> -   Se o software cliente já estiver instalado em um computador, o usuário final receberá uma mensagem de erro.
-
-### Para registrar automaticamente um computador (informações para usuários finais)
-
-1.  Faça logon no portal da empresa a partir do computador que deseja inscrever.
-
-2.  Clique em **Adicionar dispositivo**.
-
-3.  Clique em **Baixar software** e em **Executar**.
-
-4.  Clique em **Avançar** para iniciar o Assistente de Instalação do Microsoft Intune.
-
-5.  Quando o Assistente de Instalação estiver concluído, clique em **Concluir**.
 
 ### Instalar o software cliente do Microsoft Intune como parte de uma imagem
 É possível implantar o software cliente do Intune em computadores como parte de uma imagem do sistema operacional, usando o seguinte procedimento de exemplo como base:
@@ -158,10 +134,11 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 
 
 ### Consulte também
-[Gerenciar PCs com Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Gerenciar computadores Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Solucionar problemas de instalação do cliente](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Cancelar o registro de dispositivo do Intune se você recusou os Termos de Uso | Microsoft Intune"
-description: 
+description: "Descreve como cancelar o registro de um dispositivo Android do Intune se você recusou os Termos de Uso e não pode entrar no aplicativo Portal da Empresa"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: abcb7dbe4f3423fcba108a7ea0c4b2efa295c970
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 06e2fa597e9e4143d17e817daee7eeac8eb46bf7
 
 
 ---
@@ -38,12 +38,13 @@ Para cancelar o registro do seu dispositivo do Intune e desinstalar o aplicativo
 
     Agora você pode desinstalar o aplicativo Portal da Empresa.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

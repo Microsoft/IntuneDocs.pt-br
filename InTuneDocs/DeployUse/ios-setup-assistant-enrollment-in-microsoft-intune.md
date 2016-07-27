@@ -1,10 +1,10 @@
 ---
-title: "Registro do Assistente de Configuração para dispositivos iOS com Microsoft Intune | Microsoft Intune"
-description: 
+title: "Registrar dispositivos iOS com o Assistente de Configuração | Microsoft Intune"
+description: "Registre dispositivos iOS corporativos usando a Apple Configurator Tool para redefinir o dispositivo para os padrões de fábrica e prepará-lo para executar o Assistente de Configuração."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
 
 
 ---
@@ -27,6 +27,7 @@ O Intune dá suporte ao registro de dispositivos iOS corporativos usando a ferra
 Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS e prepara-los para a configuração pelo novo usuário do dispositivo.  Esse método requer que você conecte o dispositivo iOS por USB a um computador Mac para configurar o registro corporativo e supõe que você esteja usando o Apple Configurator 2.0. A maioria dos cenários exige que a política aplicada ao dispositivo iOS inclua *afinidade de usuário* para habilitar o aplicativo Portal da Empresa Intune.
 
 **Pré-requisitos**
+* [Registro do iOS habilitado](set-up-ios-and-mac-management-with-microsoft-intune.md) instalando um certificado de APNs
 * Acesso físico aos dispositivos iOS - dispositivos devem ser não configurados (redefinição de fábrica) sem proteção por senha
 * Números de série do dispositivo – [Como obter um número de série do iOS](https://support.apple.com/en-us/HT204308)
 * Cabos de conexão USB
@@ -36,8 +37,6 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 1.  **Criar um grupo de dispositivos móveis** (Opcional) Se sua empresa exigir grupos de dispositivos móveis para ajudar a gerenciar dispositivos, crie esses grupos. [Use grupos para gerenciar usuários e dispositivos com o Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Criar um perfil para dispositivos** Um perfil de registro de dispositivos define as configurações aplicadas a um grupo de dispositivos. Se você ainda não tiver, crie um perfil de registro para dispositivos iOS registrados usando o Apple Configurator.
-
-    ###### Para criar um perfil
 
     1.  No [console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Dispositivos Corporativos** e, em seguida, clique em **Adicionar...**.
 
@@ -62,8 +61,7 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 
         -   **Pré-atribuição de grupo de dispositivos** – todos os dispositivos implantados nesse perfil pertencerão inicialmente a esse grupo. Você pode reatribuir dispositivos após o registro.
 
-        >[!Important]
-        >As atribuições de grupo serão movidas do Intune para o Azure Active Directory. [Saiba mais](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Programa de Registro de Dispositivo** - O DEP (Programa de Registro de Dispositivo) da Apple não pode ser usado com o registro do Assistente de Configuração. Verifique se a alternância está definida como **desligado**.
 
@@ -153,6 +151,6 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,20 +1,21 @@
 ---
-title: Desligar a coleta de dados de uso da Microsoft | Microsoft Intune
+title: Desligar a coleta de dados de uso da Microsoft para Windows | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 2c0f538ab85de4b76feb52bde71b9f325eacf17f
+ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
+ms.openlocfilehash: 69bdd678de55c033c89ba8f4d3a6c75ff14c2e25
 
 
 ---
@@ -32,6 +33,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

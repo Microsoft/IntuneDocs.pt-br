@@ -3,37 +3,45 @@ title: "Como definir o período antes do dispositivo Android ser bloqueado | Mic
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 00fca8673ff1b52535fb6c06a02b38b7879f204f
+ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
+ms.openlocfilehash: 6ffad8fd23afb4d47dc8ead1ba4a7a930a30ea73
 
 
 ---
 
 # Como definir o período antes do dispositivo Android ser bloqueado
-Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha no seu dispositivo seguindo estas instruções:
+Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha no seu dispositivo seguindo as etapas para o tipo de dispositivo.
 
-1.  Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Bloqueio Automático** (isso é exibido como **Bloquear telefone após** em alguns dispositivos).
+## Dispositivo nativo (não Samsung KNOX)
+
+1.  Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Automatically Lock (Bloqueio Automático)** (isso é exibido como **Lock phone after (Bloquear telefone após)** em alguns dispositivos).
 
     Se o **Bloqueio automático** (**Bloquear telefone após** em alguns dispositivos) não for exibido, certifique-se de ter definido uma senha válida em **Configurações** &gt; **Bloqueio de tela** &gt; **Senha**.
 
-2.  Especifique o valor do tempo limite da senha.
+2.  Selecione o valor de tempo limite da senha.
 
-3.  Verifique se o dispositivo está registrado no Intune seguindo as instruções em [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Registrar o dispositivo para usá-lo no trabalho).
+## Dispositivo Samsung KNOX
+
+1.  Em **Configurações** no seu dispositivo, toque em **Lock screen and security (Tela de bloqueio e segurança)** &gt; **Lock automatically (Bloquear automaticamente)**.
+
+    Se o **Lock automatically Lock (Bloqueio automático)** (**Lock phone after (Bloquear telefone após)** em alguns dispositivos) não for exibido, certifique-se de ter definido uma senha válida em **Configurações** &gt; **Screen Lock (Bloqueio de tela)** &gt; **Senha**.
+
+2.  Selecione um valor de tempo limite da senha.
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

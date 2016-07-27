@@ -1,26 +1,27 @@
 ---
-title: "O que acontece quando você cancela o registro do dispositivo no Intune? | Microsoft Intune"
+title: "O que acontece quando você cancela o registro do dispositivo Windows no Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 38dc295f3b1d591d97c651c948b3cdacbba5b0d4
 
 
 ---
 
 
-# O que acontece quando você cancela o registro do dispositivo no Intune?
+# O que acontece quando você cancela o registro do dispositivo Windows no Intune?
 
 Para obter informações adicionais sobre o que acontece use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você está usando.
 
@@ -93,6 +94,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

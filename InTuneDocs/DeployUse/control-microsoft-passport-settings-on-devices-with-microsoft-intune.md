@@ -1,10 +1,10 @@
 ---
 title: "Controlar as configurações do Microsoft Passport em dispositivos | Microsoft Intune"
-description: 
+description: "Saiba como o Intune se integra com o **Microsoft Passport for Work**, um método de entrada alternativo que usa o Active Directory ou uma conta do Azure Active Directory para substituir uma senha, cartão inteligente ou cartão inteligente virtual."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+ms.sourcegitcommit: ada366e91806c6f443ac4548af99c587ac218ec9
+ms.openlocfilehash: 934ae78edf4de2003d62179fa38269d97e6d7ef6
 
 
 ---
@@ -23,6 +23,9 @@ ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
 O Microsoft Intune permite a integração com o **Microsoft Passport for Work**, que é um método de entrada alternativo que usa o Active Directory ou uma conta do Azure Active Directory para substituir uma senha, um cartão inteligente ou um cartão inteligente virtual.
 
 O Passport permite que você use um **gesto de usuário** para o logon, em vez de uma senha. Um gesto do usuário pode ser um PIN simples, uma autenticação biométrica, como o Windows Hello, ou um dispositivo externo, como um leitor de impressão digital.
+
+>[!TIP]
+>O Microsoft Passport for Work agora é conhecido como o Windows Hello para Empresas. O console do Intune será atualizado para refletir essa alteração em uma atualização futura.
 
 O Intune se integra com o Passport for Work de duas maneiras:
 
@@ -75,6 +78,6 @@ Para obter mais informações sobre o Microsoft Passport, consulte [o guia](http
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

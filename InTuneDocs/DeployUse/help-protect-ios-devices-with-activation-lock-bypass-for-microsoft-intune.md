@@ -1,20 +1,20 @@
 ---
-title: "Ajude a proteger dispositivos iOS com bypass de Bloqueio de Ativação | Microsoft Intune"
-description: 
+title: "Gerenciar o Bloqueio de Ativação do iOS em dispositivos | Microsoft Intune"
+description: "O Microsoft Intune pode ajudar a gerenciar o Bloqueio de Ativação do iOS, um recurso do aplicativo Buscar meu iPhone para dispositivos iOS 7.1 e posterior."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
-ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
 
 
 ---
@@ -82,12 +82,16 @@ Você pode ver quais dispositivos estão usando o Bloqueio de Ativação de duas
 
     Se você selecionar um dispositivo no nó **Todos os Dispositivos Corporativos** e o Bloqueio de Ativação estiver habilitado para o dispositivo, você também poderá ver o código de bypass. Esse código pode ser usado para emitir manualmente um bypass de Bloqueio de Ativação.
 
+    > [!IMPORTANT]
+    >O Intune faz o inventário dos dispositivos para o Bloqueio de Ativação a cada 7 dias. Por causa disso, os dispositivos podem não ser exibidos imediatamente com seu status de Bloqueio de Ativação no console do Intune.
+
+
 ### Consulte também
 [Desativar dispositivos](retire-devices-from-microsoft-intune-management.md)
 [Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

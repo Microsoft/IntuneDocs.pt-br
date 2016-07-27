@@ -1,10 +1,10 @@
 ---
 title: Atualizar aplicativos | Microsoft Intune
-description: 
+description: "Use as informações neste tópico para entender como você pode atualizar aplicativos quando uma nova versão é requerida."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bb077902e33d6ab18dea33a6ab2d1ff9a70ce937
 
 
 ---
@@ -23,6 +24,16 @@ O Microsoft Intune pode ajudar você a gerenciar as atualizações de aplicativo
 
 ## Como atualizar aplicativos
 Quando uma nova versão de um aplicativo que você implantou for lançada, o Intune permitirá que você atualize e implante a versão mais recente do aplicativo. Só é possível substituir uma implantação com uma versão mais recente do mesmo aplicativo (usando o mesmo identificador). Não é possível usar atualizações de aplicativo para atualizar uma implantação com um pacote do aplicativo diferente.
+
+### Identificadores de aplicativo
+O identificador de aplicativo é uma propriedade que identifica exclusivamente um aplicativo. Não é possível instalar várias cópias de um aplicativo com o mesmo identificador. Por exemplo:
+
+- **iOS** – ID do pacote (por exemplo: com.microsoft.excel)
+- **Android** – ID do pacote (por exemplo: com.microsoft.excel)
+- **Windows Phone** – (instalador xap), use a ID do produto (GUID)
+- **Windows** – (appx/appxbundle), use o nome completo do pacote
+
+
 
 > [!IMPORTANT]
 > Quando você implanta um aplicativo com uma ação de implantação de **Instalação requerida** e, posteriormente, altera a ação de implantação para **Instalação disponível**, atualizações do aplicativo não são instaladas automaticamente em dispositivos que instalaram o aplicativo antes da alteração de implantação ter sido feita. Para corrigir esse problema, você pode fazer o seguinte:
@@ -49,6 +60,6 @@ Para aplicativos implantados como um link para um repositório, a atualização 
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

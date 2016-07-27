@@ -1,10 +1,10 @@
 ---
-title: Habilitar o acesso aos recursos da empresa usando perfis de certificado |Microsoft Intune
-description: 
+title: Perfis de certificado para o acesso a recursos | Microsoft Intune
+description: "Proteja o acesso ao email, Wi-Fi e VPN com um certificado instalado em cada dispositivo do usuário."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
 
 
 ---
@@ -47,7 +47,7 @@ Você precisa criar um perfil separado para cada plataforma. Ao criar o perfil, 
 > -    Se você não tiver uma autoridade de certificação corporativa, você precisará criar uma.
 >- Se você decidir, com base em suas plataformas de dispositivo, usar o perfil de SCEP (Protocolo de Registro de Certificado Simplificado), você também precisará configurar um NDES (Serviço de Registro de Dispositivo de Rede).
 >-  Se você planeja usar o protocolo SCEP ou perfis .PFX, você precisa baixar e configurar o Conector de Certificado do Microsoft Intune.
-> A configuração de tudo isso é descrita no tópico [Configurar a infraestrutura de certificado](configure-certificate-infrastructure.md).
+> A configuração de todos esses itens é descrita em [Configurar a infraestrutura de certificado para SCEP](configure-certificate-infrastructure-for-scep.md) e [Configurar a infraestrutura de certificado para PFX](configure-certificate-infrastructure-for-pfx.md).
 
 ### Próximas etapas
 - [Configurar a infraestrutura de certificado para SCEP](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Você precisa criar um perfil separado para cada plataforma. Ao criar o perfil, 
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

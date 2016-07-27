@@ -1,10 +1,10 @@
 ---
-title: Implantar aplicativos | Microsoft Intune
-description: 
+title: Como implantar aplicativos | Microsoft Intune
+description: "Use as informações neste tópico para ajudá-lo a implantar aplicativos com o Microsoft Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # Implantar aplicativos no Microsoft Intune
 
-Use as informações neste tópico para ajudá-lo a implantar aplicativos no Microsoft Intune.
+Use as informações neste tópico para ajudá-lo a implantar aplicativos com o Microsoft Intune.
 
 
 ## Implantar um aplicativo
-Neste procedimento, você implantará o aplicativo para os usuários ou dispositivos selecionados.
+Neste procedimento, você implantará o aplicativo para os grupos de dispositivos ou usuários selecionados.
 
 ### Para implantar um aplicativo
 
@@ -52,11 +52,11 @@ Neste procedimento, você implantará o aplicativo para os usuários ou disposit
 ## Exemplo
 
 Neste exemplo, você implantou o aplicativo como **Disponível** em um dispositivo iOS.
-O aplicativo será exibido no portal da empresa no dispositivo dos usuários, de onde eles poderão instalar o aplicativo. Por exemplo, nesta captura de tela, o aplicativo Bing para iOS foi implantado usando o tipo de instalação **Link Externo** com um ícone personalizado e a opção **Exibir como um aplicativo em destaque e realçá-lo no portal de empresa** foi selecionado.
-    ![Aplicativo disponível no iOS](./media/available-install-on-iOS.png)
+O aplicativo será exibido no portal da empresa no dispositivo dos usuários, de onde eles poderão instalar o aplicativo. Por exemplo, nesta captura de tela, o aplicativo Bing para iOS foi implantado usando o tipo de instalação **Link Externo** com um ícone personalizado e a opção **Exibir como um aplicativo em destaque e realçá-lo no portal de empresa** foi selecionado.  
+![Aplicativo disponível no iOS](./media/available-install-on-iOS.png)
 
-Se você implantou o aplicativo como **Necessário** em um dispositivo iOS, o usuário receberá uma notificação de que um aplicativo está pronto para ser instalado. Por exemplo, nesta captura de tela, o aplicativo Pastas de Trabalho para iOS foi implantado usando o tipo de instalação **Aplicativo iOS gerenciado da Windows Store**.
-    ![Aplicativo necessário no iOS](./media/iOS-Required-install.PNG)
+Se você implantou o aplicativo como **Necessário** em um dispositivo iOS, o usuário receberá uma notificação de que um aplicativo está pronto para ser instalado. Por exemplo, nesta captura de tela, o aplicativo Pastas de Trabalho para iOS foi implantado usando o tipo de instalação **Aplicativo iOS gerenciado da Windows Store**.  
+![Aplicativo necessário no iOS](./media/iOS-Required-install.PNG)
 
 ## Próximas etapas
 
@@ -64,6 +64,6 @@ Depois de implantar um aplicativo, monitore seu andamento. Para obter mais infor
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

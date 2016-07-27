@@ -1,27 +1,27 @@
 ---
-title: Use aplicativos gerenciados no seu dispositivo | Microsoft Intune
+title: Usar aplicativos gerenciados no seu dispositivo iOS | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 8feb4b293a021efd1f4cd26c43be76355d947143
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8a219cd10bbfe1dd01003e732c8e9bf11c29b0f5
 
 
 ---
 
 
-# Use aplicativos gerenciados no seu dispositivo
+# Usar aplicativos gerenciados no seu dispositivo iOS
 
 Aplicativos gerenciados são aplicativos que o administrador de TI pode configurar para ajudar a proteger os dados da empresa que você pode acessar nesse aplicativo. Ao acessar dados da empresa em um aplicativo gerenciado no seu dispositivo iOS, você pode perceber que o aplicativo funciona um pouco diferente do que o esperado. Por exemplo, não é possível copiar e colar os dados da empresa protegidos, ou você pode não conseguir salvar esses dados em determinados locais.
 
@@ -66,6 +66,6 @@ Para obter mais informações sobre os aplicativos gerenciados em seu dispositiv
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

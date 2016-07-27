@@ -1,10 +1,10 @@
 ---
 title: "Configurações de política do Windows 10 | Microsoft Intune"
-description: 
+description: "Use as configurações de política listadas neste tópico para ajudá-lo a definir as configurações internas e personalizadas para dispositivos Windows 10 Mobile e Windows 10 Desktop."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Configurações de política do Windows 10 no Microsoft Intune
 
-Use as configurações de política listadas neste tópico para ajudar a definir as configurações Windows 10 desktops e dispositivos móveis Windows 10 registrados.
+Use as configurações de política listadas neste tópico para ajudá-lo a definir as configurações internas e personalizadas para dispositivos Windows 10 Mobile e Windows 10 Desktop.
+
+> [!IMPORTANT]
+> Você pode gerenciar computadores Windows 10 de duas maneiras: registrando-os ou instalando o software cliente de computador do Intune. Cada método oferece funcionalidades diferentes (consulte [Escolha como gerenciar dispositivos](/intune/get-started/choose-how-to-manage-devices) para obter mais informações).
+> Ao gerenciar seus computadores Windows 10 com o software cliente de computador do Intune, você não pode usar as políticas e configurações detalhadas neste tópico. Para aplicar essas configurações, os dispositivos Windows 10 devem ser registrados com o Intune.
 
 ## Definições de política de configuração geral
 
-Use a **política de configuração geral** do Microsoft Intune para Windows 10 para definir configurações gerais para Windows 10 Desktop e dispositivos Windows 10 Mobile registrados. Essa política não pode ser usada quando você gerenciar computadores Windows 10 com o software cliente do Intune.
+Use a **política de configuração geral** do Microsoft Intune para Windows 10 para definir configurações gerais para Windows 10 Desktop e dispositivos Windows 10 Mobile registrados. 
 
 
 ### Senha
@@ -161,7 +166,7 @@ Todas as configurações são somente para Windows 10 Desktop.
 |**Intervalo de atualização de assinatura**|Especifique o intervalo no qual o Defender verificará novos arquivos de assinatura.|
 |**Permitir proteção de nuvem**|Permite ou bloqueia o Microsoft Active Protection Service de receber informações sobre a atividade de malware de dispositivos gerenciados. Essas informações são usadas para aprimorar o serviço futuramente.|
 |**Solicitar aos usuários o envio de amostras**|Controla se os arquivos que podem exigir mais análise pela Microsoft para determinar se são mal-intencionados sejam enviados automaticamente para a Microsoft.|
-|**Detecção de aplicativos potencialmente indesejados**|Esta configuração pode ser usada para proteger os computadores Windows Desktop registrados contra a execução de software classificado pelo Windows Defender como potencialmente indesejado. Você pode se proteger esses aplicativos executando ou usando o modo de auditoria para relatar quando um aplicativo potencialmente indesejado é instalado.|
+|**Detecção de aplicativos potencialmente indesejados**|Esta configuração pode ser usada para proteger os dispositivos Windows Desktop registrados contra a execução de software classificado pelo Windows Defender como potencialmente indesejado. Você pode se proteger esses aplicativos executando ou usando o modo de auditoria para relatar quando um aplicativo potencialmente indesejado é instalado.|
 |**Arquivos e pastas a serem excluídos quando executar uma verificação ou usar uma proteção em tempo real**|Adicionar um ou mais arquivos e pastas como **C:\Path** ou **ProgramFiles%\Path\filename.exe** à lista de exclusões. Esses arquivos e pastas não serão incluídas em verificações em tempo real ou programadas.|
 |**As extensões de arquivos a serem excluídas quando executar uma verificação ou usar uma proteção em tempo real**|Adicionar uma ou mais extensões de arquivo como **jpg** ou **txt** à lista de exclusões. Quaisquer arquivos com essas extensões não serão incluídos em verificações em tempo real ou programadas.|
 |**Processos a serem excluídos quando executar uma verificação ou usar uma proteção em tempo real**|Adicionar um ou mais processos do tipo **.exe**, **.com**, ou **. scr** à lista de exclusões. Esses processos não serão incluídas em verificações em tempo real ou programadas.| 
@@ -327,6 +332,6 @@ Todos os dispositivos deverão estar registrados no Intune se você quiser usar 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

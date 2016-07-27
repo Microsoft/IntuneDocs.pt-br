@@ -1,10 +1,10 @@
 ---
-title: Gerenciamento de DEP Apple para dispositivos iOS com o Microsoft Intune | Microsoft Intune
-description: 
+title: Gerenciamento de DEP da Apple para dispositivos iOS | Microsoft Intune
+description: Implante um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) do iOS &quot;pelo ar&quot; para gerenciar dispositivos Apple.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
 
 
 ---
 
 # Registrar dispositivos iOS do Programa de Registro de Dispositivos corporativos
-O Microsoft Intune pode implantar um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) "pelo ar". O pacote de registro pode incluir opções do assistente de instalação para o dispositivo. Registros de dispositivos feitos pelo DEP não podem ser desfeitos pelos usuários.
+O Microsoft Intune pode implantar um perfil de registro que registra os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) "pelo ar". O pacote de registro pode incluir opções do assistente de instalação para o dispositivo. Registros de dispositivos feitos pelo DEP não podem ser desfeitos pelos usuários.
 
 ## Gerenciamento de DEP da Apple para dispositivos iOS com o Microsoft Intune
 Para gerenciar dispositivos iOS corporativos com o Programa de registro de dispositivo (DEP) da Apple, sua organização deve ingressar em Apple DEP e adquirir dispositivos por meio do programa. Mais detalhes desse processo estão disponíveis em:  [https://deploy.apple.com](https://deploy.apple.com). As vantagens do programa incluem instalação não assistida de dispositivos sem conectar cada dispositivo por USB a um computador.
@@ -55,9 +55,7 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 
     Você também pode **Atribuir dispositivos ao seguinte grupo**. Clique em **Selecionar...** para escolher um grupo.
 
-    >[!Important]
-    >As atribuições de grupo serão movidas do Intune para o Azure Active Directory. [Saiba mais](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     Em seguida, habilite **Configurar definições do Programa de Registro do Dispositivo para esta política** para dar suporte ao DEP.
 
@@ -101,13 +99,13 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 
 ## Alterações em atribuições de grupo do Intune
 
-A partir de setembro, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de **Perfil de Registro Corporativo**. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Mais detalhes serão publicados em breve.
+A partir de setembro, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de **Perfil de Registro Corporativo**. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Uma nova atribuição de grupos de dispositivo dinâmico pode ser definida no Azure Active Directory com base no nome do Perfil de Registro Corporativo. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Consulte também
 [Prepare-se para registrar dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

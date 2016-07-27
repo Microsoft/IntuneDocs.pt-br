@@ -1,9 +1,9 @@
 ---
 title: Criptografar seu dispositivo | Microsoft Intune
-description: 
+description: Descreve como criptografar um dispositivo Android
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39bcea03cad061e5b84e073cc5affcdd14fc6015
-ms.openlocfilehash: 22e9071171d2dc63562e94cabe2abdec3b2bd85e
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 
 ---
@@ -40,7 +40,7 @@ Se você algum dia cancelar o registro do seu telefone, ele continuará criptogr
 
 **O que fazer**: verifique se você definiu um PIN ou senha no seu dispositivo.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
@@ -48,6 +48,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

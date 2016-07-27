@@ -1,10 +1,10 @@
 ---
 title: Restringir o acesso ao Skype for Business Online | Microsoft Intune
-description: 
+description: Proteja e controle o acesso ao Skype for Business Online com acesso condicional.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
-ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 693feee133a594032c0edc69f03f65681bacfb81
 
 
 ---
@@ -32,7 +33,7 @@ Quando um determinado usuário tenta usar o Skype for Business Online em seu dis
 **Antes** de configurar uma política de acesso condicional para o Skype for Business Online, você precisa:
 - Ter uma **assinatura do Skype for Business Online** e atribuir a licença do Skype for Business Online aos usuários.
 - Ter uma assinatura do **Enterprise Mobility Suite** ou do **Azure Active Directory Premium**.
--   [Habilitar a autenticação moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para o Skype for Business Online. 
+-   [Habilitar a autenticação moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para o Skype for Business Online.
 -  Todos os seus usuários finais devem estar usando o **Skype for Business Online**. Se você tiver uma implantação com o Skype for Business Online e o Skype for Business local, a política de acesso condicional não será aplicada aos usuários finais.
 
     O dispositivo que precisa acessar o Skype for Business Online deve:
@@ -68,10 +69,12 @@ Se um usuário estiver nos dois grupos, ele ficará isento da política.
 ### Etapa 2: Configurar e implantar uma política de conformidade
 [Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implante](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade para todos os dispositivos que serão afetados pela política. Esses seriam todos os dispositivos usados pelos usuários nos **Grupos de destino**.
 
-> [!NOTE] Enquanto as políticas de conformidade são implantadas em grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
+> [!NOTE]
+> Enquanto as políticas de conformidade são implantadas em grupos [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
 
 
-> [!IMPORTANT] Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
+> [!IMPORTANT]
+> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
 
 Quando estiver pronto, continue na **Etapa 3**.
 
@@ -113,6 +116,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

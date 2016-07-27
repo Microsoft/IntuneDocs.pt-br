@@ -1,6 +1,6 @@
 ---
 title: Restringir o acesso a email ao Dynamics CRM Online | Microsoft Intune
-description: 
+description: Proteja e controle o acesso ao Dynamics CRM Online com acesso condicional.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: cbcf2c8d923524b8a1993140fbec0234740075ae
 
 
 ---
@@ -55,10 +56,10 @@ Se um usuário estiver nos dois grupos, ele ficará isento da política.
 [Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implante](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade para todos os dispositivos que serão afetados pela política. Esses seriam todos os dispositivos usados pelos usuários nos Grupos de destino.
 
 > [!NOTE]
-> [!NOTE] Enquanto as políticas de conformidade são implantadas em grupos do Microsoft Intune, as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
+> Enquanto as políticas de conformidade são implantadas em grupos do Microsoft Intune, as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
 
 > [!IMPORTANT]
-> [!IMPORTANT] Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
+> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
 
 Quando estiver pronto, continue na Etapa 3.
 ### Etapa 3: Configurar a política do Dynamics CRM
@@ -96,6 +97,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

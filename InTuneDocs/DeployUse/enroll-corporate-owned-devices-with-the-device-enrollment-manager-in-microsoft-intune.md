@@ -1,10 +1,10 @@
 ---
-title: Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivo | Microsoft Intune
-description: 
+title: Registrar com o Gerenciador de Registro de Dispositivos | Microsoft Intune
+description: "A conta do DEM (Gerenciador de Registro de Dispositivos) do Microsoft Intune pode gerenciar grandes quantidades de dispositivos móveis corporativos compartilhados com uma única conta de usuário."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 7b0154d73ab540e7543fab9088463ed8b61b45a0
-ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 5c7eecf5b7801eca3d23dd0eee954203e9c9cb06
 
 
 ---
@@ -91,6 +92,7 @@ Excluir um gerenciador de registro de dispositivos não afeta os dispositivos re
 -   A relação da conta do gerenciador de registro de dispositivos excluído com os dispositivos registrados permanece, mas nenhum dispositivo adicional pode ser registrado
 
 
-<!--HONumber=Jul16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

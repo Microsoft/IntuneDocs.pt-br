@@ -1,10 +1,10 @@
 ---
-title: "Configurar e implantar políticas de gerenciamento de aplicativo móvel no console do Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configurar políticas do MAM no console do Intune | Microsoft Intune"
+description: "As políticas de gerenciamento de aplicativos móveis no Microsoft Intune permitem que você modifique a funcionalidade dos aplicativos implantados para ajudar a alinhá-los às políticas de segurança e conformidade de sua empresa."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: df75c3512091dff55ace65ef6106dc2cbc503bd2
 
 
 ---
@@ -126,7 +126,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
     |**Descrição**|Ou especifique uma descrição para a política.|
     |**Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo**|Quando essa configuração for habilitada, todos os links no aplicativo serão abertos no navegador gerenciado. Você precisa ter implantado o aplicativo em dispositivos para que essa opção funcione.|
     |**Impedir backups do Android** ou **Impedir backups do iTunes e iCloud**|Desabilita o backup de todas as informações do aplicativo.|
-    |**Permitir que o aplicativo transfira dados para outros aplicativos**|Especifica os aplicativos para os quais esse aplicativo pode enviar dados. Você pode optar por não permitir a transferência de dados para qualquer aplicativo, permitir somente a transferência para outros aplicativos gerenciados ou permitir a transferência para qualquer aplicativo. Essa configuração não controla o uso do recurso **Open In** em dispositivos móveis.<br /><br />Por exemplo, quando você não permite a transferência de dados, você restringe a transferência de dados em serviços como mensagens SMS, atribuição de imagens a contatos e publicações no Facebook ou Twitter.<br /><br />Para dispositivos iOS, para evitar a transferência de documentos entre os aplicativos gerenciados e não gerenciados, você deve também deve configurar e implantar uma política de segurança de dispositivo móvel que desabilite a configuração **Permitir documentos gerenciados em outros aplicativos não gerenciados**. Se você optar por permitir somente a transferência para outros aplicativos gerenciados, os visualizadores de imagem e PDF do Intune (se implantados) serão usados para abrir o conteúdo dos respectivos tipos.<br /><br />Além disso, se você definir essa opção como **Aplicativos Gerenciados por Política** ou **Nenhum**, o recurso do iOS 9 que permite a Pesquisa de Destaque pesquise dados em aplicativos será bloqueado.|
+    |**Permitir que o aplicativo transfira dados para outros aplicativos**|Especifica os aplicativos para os quais esse aplicativo pode enviar dados. Você pode optar por não permitir a transferência de dados para qualquer aplicativo, permitir somente a transferência para outros aplicativos gerenciados ou permitir a transferência para qualquer aplicativo. Essa configuração não controla o uso do recurso **Open In** em dispositivos móveis.<br /><br />Por exemplo, quando você não permite a transferência de dados, você restringe a transferência de dados em serviços como mensagens SMS, atribuição de imagens a contatos e publicações no Facebook ou Twitter.<br /><br />Para dispositivos iOS, para evitar a transferência de documentos entre os aplicativos gerenciados e não gerenciados, você deve também deve configurar e implantar uma política de segurança de dispositivo móvel que desabilite a configuração **Permitir documentos gerenciados em outros aplicativos não gerenciados**. Se você optar por permitir somente a transferência para outros aplicativos gerenciados, os visualizadores de imagem e PDF do Intune (se implantados) serão usados para abrir o conteúdo dos respectivos tipos.<br /><br />Além disso, se você definir essa opção como **Aplicativos Gerenciados por Política** ou **Nenhum**, o recurso do iOS 9 que permite a Pesquisa de Destaque pesquise dados em aplicativos será bloqueado.<br><br>**Essa configuração não controla o uso do recurso Open In em dispositivos móveis. Para gerenciar o recurso Open In, consulte [aqui](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.|
     |**Permitir que o aplicativo receba dados de outros aplicativos**|Especifica os aplicativos dos quais este aplicativo pode receber dados. Você pode optar por não permitir a transferência de dados de qualquer aplicativo, permitir somente a transferência de outros aplicativos gerenciados ou permitir a transferência de qualquer aplicativo<br /><br />Para aplicativos iOS que dão suporte a várias identidades (em que o Intune só aplica configurações de gerenciamento a contas corporativas ou dados no aplicativo), para um dispositivo registrado com uma política de gerenciamento de aplicativos móveis aplicada, quando um usuário acessa dados em um aplicativo que não é gerenciado por uma política de gerenciamento de aplicativos móveis, os dados serão tratados como dados corporativos e protegidos pela política.|
     |**Impedir "Salvar como"**|Desabilita o uso da opção **Salvar como** para salvar dados em locais de armazenamento de nuvem particular (como OneDrive pessoal ou Dropbox) em qualquer aplicativo que use essa política.|
     |**Restringir recortar, copiar e colar com outros aplicativos**|Especifica como as operações recortar, copiar e colar podem ser usadas com o aplicativo. Escolha:<br /><br />**Bloqueado** – não permite as operações de recortar, copiar e colar entre este aplicativo e outros aplicativos.<br /><br />**Aplicativos Gerenciados por Política** – permite apenas operações de recortar, copiar e colar entre este aplicativo e outros aplicativos gerenciados.<br /><br />**Aplicativos Gerenciados por Política com Colar em** – permite a transferência de dados copiados ou recortados deste aplicativo somente para outros aplicativos gerenciados. Permitir a transferência de dados recortados ou copiados de qualquer aplicativo para este aplicativo.<br /><br />**Qualquer Aplicativo** – sem restrições para operações de recortar, copiar e colar deste ou para este aplicativo.<br /><br />Para copiar e colar dados entre aplicativos gerenciados, ambos os aplicativos devem ter as configurações **Aplicativos Gerenciados por Política** ou **Aplicativos Gerenciados por Política com Colar em** definidas.|
@@ -197,6 +197,6 @@ Em casos em que o dispositivo ou usuário receber duas políticas conflitantes, 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

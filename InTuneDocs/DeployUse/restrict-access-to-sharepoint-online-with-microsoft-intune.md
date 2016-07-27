@@ -1,10 +1,10 @@
 ---
 title: Restringir o acesso ao SharePoint Online | Microsoft Intune
-description: 
+description: Proteja e controle o acesso aos dados da empresa no SharePoint Online com acesso condicional.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 06/16/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 334eb869ddbc67767a6e9ed6711bd9135ceb558b
 
 
 ---
@@ -25,6 +25,8 @@ O acesso condicional tem dois componentes:
 - A política de conformidade do dispositivo, com que o dispositivo deve estar em conformidade para ser considerado compatível.
 - A política de acesso condicional, na qual você especifica as condições que o dispositivo deve atender para acessar o serviço.
 Para saber mais sobre como o acesso condicional funciona, leia o tópico [Restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir acesso a email, O365 e outros serviços).
+
+As políticas de acesso condicional e conformidade são implantadas para o usuário. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
 
 Quando um usuário tenta se conectar a um arquivo usando um aplicativo com suporte assim como o OneDrive em seu dispositivo, ocorre a seguinte avaliação:
 
@@ -55,6 +57,10 @@ Se uma condição não for atendida, o usuário receberá uma das seguintes mens
 
 -   Se o dispositivo não for compatível, será exibida uma mensagem que direciona o usuário ao site do Portal da Empresa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], no qual ele pode encontrar informações sobre o problema e como corrigi-lo.
 
+**O acesso condicional é aplicado a todos os sites do SharePoint e o compartilhamento externo é bloqueado**
+
+>[!NOTE]
+>Se você habilitar o acesso condicional para o SharePoint Online, recomendamos que desabilite o domínio na lista, conforme descrito no tópico [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 ## Suporte para dispositivos móveis
 - iOS 7.1 e posterior
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 ou posterior
@@ -183,6 +189,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

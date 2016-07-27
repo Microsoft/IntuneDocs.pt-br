@@ -1,6 +1,6 @@
 ---
 title: "Restringir o acesso a email e serviços do O365 | Microsoft Intune"
-description: 
+description: "Este tópico descreve como a condicional pode ser usada para permitir que apenas dispositivos compatíveis acessem dados e o email da empresa no SharePoint Online e outros serviços."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: df430a31e13027c7a342beb90b78d48c74bce9e6
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # Restringir o acesso a email, O365 e outros serviços com o Microsoft Intune
 Você pode restringir o acesso a seus emails corporativos e serviços de O365 com acesso condicional do Intune. Essa funcionalidade de acesso condicional do Intune permite que você certifique-se de que o acesso ao seu email da empresa e serviços O365 seja restrito aos dispositivos que são compatíveis com as regras que você definir.
 ## Como funciona o acesso condicional?
-Configurações de política de conformidade são usadas para avaliar a conformidade do dispositivo. A política de acesso condicional usa a avaliação para restringir ou permitir o acesso a um serviço específico. Quando uma política de acesso condicional é usada em combinação com uma política de conformidade, apenas os dispositivos compatíveis poderão acessar o serviço.
+Configurações de política de conformidade são usadas para avaliar a conformidade do dispositivo. A política de acesso condicional usa a avaliação para restringir ou permitir o acesso a um serviço específico. Quando uma política de acesso condicional é usada em combinação com uma política de conformidade, apenas os dispositivos compatíveis poderão acessar o serviço. A política de conformidade e a política de acesso condicional são implantadas para o usuário. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
 
-Tenha em mente que o usuário que está usando o dispositivo também deve ter uma política de conformidade implantada para que o dispositivo seja avaliado para fins de conformidade.
+Tenha em mente que o usuário que está usando o dispositivo deve ter uma política de conformidade implantada para que o dispositivo seja avaliado quanto à conformidade.
 Se nenhuma política de conformidade for implantada para o usuário, o dispositivo será tratado como compatível e nenhuma restrição de acesso será aplicada.
 
 Quando dispositivos não atendem às condições definidas na política, o usuário final é guiado pelo processo de registro do dispositivo e correção do problema que está impedindo o dispositivo de ser compatível.
@@ -64,6 +65,6 @@ Ao contrário de outras políticas do Intune, você não implanta políticas de 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

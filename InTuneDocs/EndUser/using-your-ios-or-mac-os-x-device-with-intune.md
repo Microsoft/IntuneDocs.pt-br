@@ -1,9 +1,9 @@
 ---
 title: Usando um dispositivo iOS ou Mac OS X com o Intune | Microsoft Intune
-description: 
+description: "Lista de links para tarefas que você pode fazer em seu dispositivo móvel iOS ou Mac OS X quando o dispositivo é registrado no Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 ---
@@ -50,7 +50,7 @@ As informações nesta seção ajudam com as ações que precisam ser realizadas
 
 As informações nesta seção ajudam a corrigir problemas que podem ser encontrados depois que o dispositivo iOS é registrado no Intune.
 
-- [Como reconectar um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device)
+- [Como reconectar um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device.md)
 - [Enviar erros para o administrador de TI](send-errors-to-your-it-admin-ios.md)
 - [Você obterá um erro ao usar o aplicativo Portal da Empresa](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Se você receber erros ao tentar registrar seu dispositivo no Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -63,6 +63,6 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

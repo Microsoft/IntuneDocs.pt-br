@@ -1,10 +1,10 @@
 ---
-title: "Proteger dispositivos Windows com autenticação multifator | Microsoft Intune"
-description: 
+title: Multi-factor Authentication para Windows | Microsoft Intune
+description: "O Intune integra o MFA (Multi-factor Authentication) para ajudar você a proteger seus recursos corporativos."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
-ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c2c1a35152dc0f9ec9464c056fed3300540bf33c
 
 
 ---
@@ -56,6 +56,6 @@ Para obter informações sobre como habilitar a MFA no ADFS, consulte [Gerenciar
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

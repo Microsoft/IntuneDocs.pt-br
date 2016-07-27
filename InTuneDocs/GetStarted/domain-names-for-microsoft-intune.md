@@ -1,6 +1,6 @@
 ---
 title: "Nomes de domínio do Microsoft Intune | Microsoft Intune"
-description: 
+description: "adicionar nome de domínio para o Intune"
 keywords: 
 author: andredm7
 manager: swadhwa
@@ -13,15 +13,15 @@ ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d99669f90fe7ebec7854b7a800b09b0685c314e
-ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
+ms.sourcegitcommit: 32723f5b2c92073dda43a0b1f36a48ded0e13ba3
+ms.openlocfilehash: 2adbe1e4a92af5302550a8b78069bc49d725dbc3
 
 
 ---
 
 
 
-# Gerenciar domínios personalizados com o Microsoft Intune
+# Nomes de domínio personalizados com o Microsoft Intune
 
 As etapas para adicionar e verificar um domínio personalizado também podem ser [executadas no Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
 
@@ -37,15 +37,11 @@ Você não pode renomear ou remover esse nome de domínio inicial. No entanto, v
 2. No painel de navegação, escolha **Configurações** &gt; **Domínios**.
 3. Escolha **Adicionar domínio** e digite o nome de domínio personalizado.
 4. A caixa de diálogo **Verificar domínio** é aberta, fornecendo os valores para criar o registro TXT no seu provedor de hospedagem de DNS.
-    > [!TIP]
-    > O Portal de gerenciamento do Office 365 redireciona você à página de logon do GoDaddy ao usar um domínio do GoDaddy. O registro TXT é criado automaticamente depois que você insere suas credenciais e aceita o contrato de permissão de alteração do domínio.
-    > 
-    > Como alternativa, você pode [criar o registro TXT manualmente ao usar um domínio do GoDaddy](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US), com base nos valores fornecidos nesta etapa.
+    - **Usuários do GoDaddy**: o Portal de gerenciamento do Office 365 redireciona você para a página de logon do GoDaddy. Após inserir suas credenciais e aceitar o contrato de permissão de alteração de domínio, o registro TXT é criado automaticamente. Como alternativa, [crie o registro TXT](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
+    - **Usuários do Register.com**: siga as [instruções passo a passo](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) para criar o registro TXT.
 
-    > [!NOTE]
-    > Execute as [instruções passo a passo](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) para criar o registro TXT ao usar um domínio de Register.com, com base nos valores fornecidos nesta etapa.
-
-5. Crie um alias DNS (CNAME) para o [registro de dispositivos do Windows](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), enquanto faz alterações no seu provedor de hospedagem de DNS.
+    > [!TIP] 
+    > Certifique-se de criar um alias DNS (CNAME) para o [registro de dispositivos Windows](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), enquanto faz alterações no seu provedor de hospedagem de DNS.
 
 Em um cenário de nuvem híbrida, depois que você adicionou seu nome de domínio personalizado e foi verificado que sua organização o possui, você pode manter o gerenciamento de contas de usuário no Active Directory local e sincronizá-lo com o Azure AD.
 
@@ -64,6 +60,6 @@ Em um cenário de nuvem híbrida, depois que você adicionou seu nome de domíni
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

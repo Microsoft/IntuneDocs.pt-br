@@ -1,6 +1,6 @@
 ---
 title: Configurar o gerenciamento do Windows 10 Mobile e do Windows Phone com o Microsoft Intune | Microsoft Intune
-description: 
+description: "Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows 10 Mobile ou Windows Phone com o Microsoft Intune."
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
 
 
 ---
@@ -29,7 +29,7 @@ Para a maioria dos cenários, os usuários podem instalar o aplicativo do Portal
 
 2.  **Definir um alias DNS para o endereço do servidor de registro** (opcional)
 
-    Criar um alias DNS (tipo de registro CNAME) facilita para os usuários registrarem seus dispositivos. Se você não criar um alias DNS, os usuários deverão
+    Criar um alias DNS (tipo de registro CNAME) facilita para os usuários registrarem seus dispositivos. Embora a entrada DNS CNAME seja opcional para o registro do dispositivo do Windows, é recomendável criar um ou mais registros quando necessário, para facilitar as coisas durante o processo de registro de dispositivo Windows. Se nenhum registro CNAME for encontrado, o usuário será solicitado a inserir manualmente o nome do servidor MDM.
 
   1.  Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para manage.microsoft.com. Se houver mais de um domínio verificado, crie um registro CNAME para cada domínio. Os registros de recurso CNAME devem conter as seguintes informações:
 
@@ -56,6 +56,6 @@ Nenhum trabalho adicional é necessário, a menos que você vá implantar o Port
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

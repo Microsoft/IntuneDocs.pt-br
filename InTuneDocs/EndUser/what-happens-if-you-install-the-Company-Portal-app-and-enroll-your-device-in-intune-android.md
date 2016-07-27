@@ -1,26 +1,27 @@
 ---
-title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune? | Microsoft Intune"
+title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 39aafbccda265ee24c7561440a11f1b22fef6170
 
 
 ---
 
 
-# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune?
+# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune?
 
 Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo Android no Intune, você pode usar o aplicativo Portal da Empresa para:
 
@@ -54,12 +55,13 @@ Ao registrar seu dispositivo Android, você permitirá que o seu administrador d
 
     -   Enviar quaisquer atualizações de inventário de aplicativo da empresa (essas atualizações não contêm informações pessoais).
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+
 
 ### Consulte também
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

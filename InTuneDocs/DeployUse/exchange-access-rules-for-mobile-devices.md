@@ -1,26 +1,26 @@
 ---
-title: "Regras de acesso do Exchange para dispositivos móveis gerenciados pelo Microsoft Intune | Microsoft Intune"
-description: 
+title: "Regras de acesso do Exchange para dispositivos móveis | Microsoft Intune"
+description: "As regras de acesso do ActiveSync para o MDM (gerenciamento de dispositivo móvel) determinam o nível de acesso que esses dispositivos têm ao Exchange."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
 # Regras de acesso do Exchange para dispositivos móveis
-As regras de acesso do Exchange para dispositivos móveis determinam o nível de acesso ao Exchange concedido a esses dispositivos. Essas configurações afetam todos os dispositivos móveis, incluindo aqueles não registrados no Microsoft Intune. Você pode começar definindo uma **Regra Padrão** que se aplicará a qualquer dispositivo móvel que não tenha uma regra personalizada aplicada a ele. A tabela a seguir contém os níveis de acesso gerenciados pelo Exchange ActiveSync:
+As regras de acesso do Exchange para dispositivos móveis determinam o nível de acesso que esses dispositivos têm ao Exchange ActiveSync. Essas configurações afetam todos os dispositivos móveis, incluindo aqueles não registrados no Microsoft Intune. Você pode começar definindo uma **Regra Padrão** que se aplicará a qualquer dispositivo móvel que não tenha uma regra personalizada aplicada a ele. A tabela a seguir contém os níveis de acesso gerenciados pelo Exchange ActiveSync:
 
 |Nível de acesso|Descrição|
 |----------------|---------------|
@@ -53,6 +53,6 @@ O procedimento a seguir descreve como criar uma regra personalizada.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

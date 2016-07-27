@@ -1,26 +1,27 @@
 ---
-title: Sincronizar o dispositivo manualmente | Microsoft Intune
+title: Sincronizar o dispositivo Windows manualmente | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: fbe46abe0b13e8972a5e9fa09566dff0c09b9939
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
 
 
 ---
 
 
-# Sincronizar o dispositivo manualmente
+# Sincronizar o dispositivo Windows manualmente
 Se a instalação do aplicativo estiver demorando muito, use as instruções a seguir para sincronizar manualmente seu dispositivo Windows, pois isso pode ajudar a acelerar a instalação. Somente as versões com suporte são aquelas listadas. Use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você tem:
 
 * [Windows 10 Mobile](#windows-10-mobile)
@@ -98,6 +99,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

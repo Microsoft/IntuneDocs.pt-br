@@ -1,10 +1,10 @@
 ---
 title: "Personalizar exibições do console para funções do administrador | Microsoft Intune"
-description: 
+description: "Use este tópico para ajudá-lo a filtrar a exibição do console de administração do Intune para permitir que seus administradores vejam apenas os itens necessários para sua função."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 52a77e50b3dde24ba270766d4472bdd6176cc415
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
 
 
 ---
@@ -68,6 +68,6 @@ Na próxima vez em que o administrador configurado abrir o console de administra
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

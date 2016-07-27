@@ -1,10 +1,10 @@
 ---
 title: Implantar aplicativos | Microsoft Intune
-description: 
+description: "Este tópico explica conceitos que você precisará compreender antes de iniciar a implantação de aplicativos com o Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
-ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
 
 
 ---
@@ -29,7 +30,7 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 -   **Instalação obrigatória** – O aplicativo está instalado no dispositivo, sem necessidade de intervenção do usuário final.
 
     > [!TIP]
-    > [!TIP] Para dispositivos iOS que não estão no modo supervisionado e para todos os dispositivos Android, o usuário deve aceitar a oferta do aplicativo antes que ele seja instalado.
+    > Para dispositivos iOS que não estão no modo supervisionado, e para todos os dispositivos Android, o usuário deve aceitar a oferta do aplicativo antes que ele seja instalado.
     > 
     >  Se um usuário final desinstalar um aplicativo implantado como instalação obrigatória, o Intune reinstalará automaticamente o aplicativo após o próximo ciclo de inventário, que normalmente ocorre a cada 7 dias.
 
@@ -54,7 +55,7 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 |Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de usuários)|Sim|Sim|Sim|Sim|
 |Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
 > [!TIP]
-> [!TIP] Ao implantar aplicativos, se você selecionar usuários e grupos de dispositivos, só poderá implantar o aplicativo como uma **Instalação disponível**.
+> Ao implantar aplicativos, se você selecionar usuários e grupos de dispositivos, poderá implantar o aplicativo apenas como uma **Instalação disponível**.
 
 ## Conflitos de implantação
 Quando duas implantações com a mesma ação de implantação são recebidas por um dispositivo, as seguintes regras se aplicam:
@@ -72,6 +73,6 @@ Saiba como [implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

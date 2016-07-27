@@ -13,8 +13,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
+ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
 
 
 ---
@@ -29,6 +29,9 @@ Da mesma forma que com dispositivos, há momentos em que você quer ou precisa [
 
 
 O **Apagamento Completo** restaura um dispositivo para suas configurações padrão de fábrica, removendo todas as configurações e os dados da empresa e do usuário. O dispositivo é removido do Intune. O apagamento completo é útil para redefinir um dispositivo antes de fornecê-lo a um novo usuário ou quando o dispositivo é roubado ou perdido.  **Tenha cuidado ao selecionar o apagamento completo. Os dados no dispositivo não podem ser recuperados**.
+
+> [!Warning]
+> Dispositivos Windows 10 RTM (ou seja, dispositivos anteriores ao Windows 10 versão 1511) com menos de 4 GB de RAM podem se tornar inacessíveis se apagados. Para acessar um dispositivo Windows 10 que parou de responder, você pode inicializar o dispositivo de uma unidade USB ou uma solução alternativa semelhante.
 
 ## Apagamento seletivo
 
@@ -55,7 +58,7 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Aplicativos Google Play não gerenciados|Os aplicativos e dados permanecem instalados|Os aplicativos e dados permanecem instalados|
 |Aplicativos de linha de negócios não gerenciados|Os aplicativos e dados permanecem instalados|Os aplicativos são desinstalados e dados locais do aplicativo são removidos como resultado. Nenhum dado fora do aplicativo (cartão SD, etc.) é removido.|
 |Aplicativos Google Play gerenciados|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia MAM fora do aplicativo (cartão SD, etc.) permanecem criptografados e inutilizáveis, mas não são removidos.|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia MAM fora do aplicativo (cartão SD, etc.) permanecem criptografados, mas não são removidos.|
-|Aplicativos de linha de negócios gerenciadas|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia MAM fora do aplicativo (cartão SD, etc.) permanecem criptografados e inutilizáveis, mas não são removidos.|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia MAM fora do aplicativo (cartão SD, etc.) permanecem criptografados, mas não são removidos.|
+|Aplicativos de linha de negócios gerenciadas|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia MAM fora do aplicativo (cartão SD, etc.) permanecem criptografados e inutilizáveis, mas não são removidos.|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia MAM fora do aplicativo (cartão SD, etc.) permanecem criptografados e inutilizáveis, mas não são removidos.|
 |Configurações|As configurações definidas pela política do Intune não são mais impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não são mais impostas e os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removido|Removido|
 |Configurações do perfil de certificado|Certificados revogados, mas não removidos.|Certificados removidos e revogados.|
@@ -139,6 +142,6 @@ Para obter um relatório de dispositivos que foram desativados, apagados ou excl
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

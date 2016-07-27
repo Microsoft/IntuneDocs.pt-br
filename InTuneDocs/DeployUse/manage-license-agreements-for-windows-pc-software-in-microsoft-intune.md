@@ -1,20 +1,20 @@
 ---
-title: "Gerenciar contratos de licença para software de computador Windows | Microsoft Intune"
-description: 
+title: "Gerenciar contratos de licença para software de computador | Microsoft Intune"
+description: "O Intune permite que você gerencie contratos de licença para software adquirido por meio de contratos de Licenciamento por Volume da Microsoft e para software adquirido por outros meios."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 6570c0cd42102e45171a39ccbaef609a494a27d6
 
 
 ---
@@ -183,6 +183,6 @@ Os contratos de licenciamento de software podem ser adicionados aos grupos de li
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -3,22 +3,24 @@ title: "Você será solicitado a desativar Fontes desconhecidas | Microsoft Intu
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: 7ea8494dacb3f9ccf3077c654801979bab9b096b
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
+ms.openlocfilehash: 0a4bf23b547a4f02db663049b84e77365509aeaf
 
 
 ---
 
 # Você será solicitado a desativar Fontes desconhecidas
 
-Se você vir a mensagem "A instalação de fontes desconhecidas deve ser desabilitada", precisará ir para **Configurações** > **Segurança** e desativar **Fontes desconhecidas**. 
+Se você vir a mensagem "A instalação de fontes desconhecidas deve ser desabilitada", precisará ir para **Configurações** > **Segurança** (em alguns dispositivos, pode ser **Lock screen and security (Tela de bloqueio e segurança)**) e desligar **Unknown sources (Fontes desconhecidas)**. 
 
 O administrador de TI exige que essa configuração esteja desativada para proteger os dados corporativos em seu dispositivo Android. Quando **Fontes desconhecidas** for ativada, ela permitirá que você instale aplicativos de fontes desconhecidas, o que pode ser um risco à segurança.
 
@@ -31,6 +33,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

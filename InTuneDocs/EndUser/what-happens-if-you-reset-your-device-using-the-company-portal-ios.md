@@ -1,27 +1,27 @@
 ---
-title: "O que acontece quando você redefine o dispositivo usando o Portal da Empresa? | Microsoft Intune"
+title: "O que acontece quando você redefine o dispositivo iOS usando o Portal da Empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a9512738cd48438d85c7a98b0d533fbe6e6b8ba2
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6f7ad227a4b129ae75891813da8795ac7b257e3d
 
 
 ---
 
 
-# O que acontece quando você redefine o dispositivo usando o Portal da Empresa?
+# O que acontece quando você redefine o dispositivo iOS usando o Portal da Empresa?
 
 Quando você usar o Portal da Empresa para redefinir seu iPhone ou iPad, alguns aplicativos e configurações no seu dispositivo poderão ser excluídos, inclusive alguns dados pessoais. O que acontece em cada dispositivo depende de como você está usando o dispositivo, conforme descrito nas listas a seguir.
 
@@ -43,6 +43,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

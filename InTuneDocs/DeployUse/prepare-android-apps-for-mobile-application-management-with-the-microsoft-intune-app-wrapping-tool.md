@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Preparar aplicativos Android para o gerenciamento com a Ferramenta de Encapsulamento de Aplicativos | Microsoft Intune | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "Encapsular aplicativos Android com a Ferramenta de Disposição do Aplicativo | Microsoft Intune"
+description: "Use as informações neste tópico para aprender a encapsular seus aplicativos Android sem modificar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 76ee04237d54b4c171df74e8c134f003bbc32966
+
 
 ---
 
@@ -32,7 +26,7 @@ A ferramenta é um aplicativo de linha de comando do Windows que é executado no
 
 Se seu aplicativo estiver usando a ADAL (Biblioteca Azure Active Directory), você deverá executar as etapas em [Como encapsular aplicativos que usam a Informações para aplicativos que usam a Biblioteca do Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library) antes de encapsular o aplicativo. Se você não tiver certeza se seu aplicativo usa essa biblioteca, contate o desenvolvedor do aplicativo.
 
-Antes de executar a ferramenta, consulte [Security considerations for running the app wrapping tool (Considerações de segurança para executar a ferramenta de encapsulamento de aplicativos)](#security-considerations-for-running-the-app-wrapping-tool). Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for Android (Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune para Android)](https://www.microsoft.com/download/details.aspx?id=47267).
+Antes de executar a ferramenta, consulte [Security considerations for running the app wrapping tool (Considerações de segurança para executar a ferramenta de encapsulamento de aplicativos)](#security-considerations-for-running-the-app-wrapping-tool). Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for Android - Português (Brasil)](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## Etapa 1: Cumprir os pré-requisitos para usar a ferramenta de encapsulamento de aplicativos
 
@@ -63,7 +57,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: **C:\Arqu
 
 ## Etapa 3: Executar a ferramenta de encapsulamento de aplicativos
 
-1.  No computador Windows onde você instalou a ferramenta de encapsulamento de aplicativos, abra uma janela do PowerShell.
+1.  No computador Windows em que você instalou a App Wrapping Tool, abra uma janela do PowerShell no modo de administrador.
 
 2.  Da pasta onde instalou a ferramenta, importe o módulo do PowerShell da ferramenta de encapsulamento de aplicativos:
 
@@ -71,14 +65,14 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: **C:\Arqu
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  Execute a ferramenta usando o comando **invoke-AppWrappingTool** com um ou mais dos parâmetros a seguir. Parâmetros que são marcados como "opcional" são aplicativos que usam o Azure Active Directory Library (ADAL). Para obter mais informações, consulte [How to wrap apps that use the Azure Active Directory Library (Como encapsular aplicativos que usam a Informações para aplicativos que usam a Azure Active Directory Library)](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
+3.  Execute a ferramenta usando o comando **invoke-AppWrappingTool** com um ou mais dos parâmetros a seguir. Parâmetros que são marcados como "opcional" são aplicativos que usam o Azure Active Directory Library (ADAL). Para obter mais informações, consulte [Como encapsular aplicativos que usam a Biblioteca do Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 |Parâmetro|Mais informações|Exemplos|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Caminho do aplicativo Android de origem (.apk).| |
 |**-OutputPath**&lt;String&gt;|Caminho para o aplicativo Android de "saída". Se esse for o mesmo caminho do diretório que InputPath, o pacote falhará.| |
 |**-KeyStorePath**&lt;String&gt;|Caminho para o arquivo de armazenamento de chaves que contém o par de chaves pública/privada para a assinatura.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|Senha usada para descriptografar o armazenamento de chave.| |
+|**-KeyStorePassword**&lt;SecureString&gt;|Senha usada para descriptografar o armazenamento de chave. O Android requer que todos os pacotes de aplicativos (.apk) sejam assinados. Use a Ferramenta de Chave Java para gerar o KeyStorePassword como mostrado no exemplo. Leia mais sobre [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;String&gt;|Nome da chave a ser usada para assinatura.| |
 |**-KeyPassword**&lt;SecureString&gt;|Senha usada para descriptografar a chave privada que será usada para a assinatura.| |
 |**-SigAlg**&lt;SecureString&gt;|Nome do algoritmo de assinatura a ser usado para assinatura. O algoritmo deve ser compatível com a chave privada.|Exemplos: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -89,7 +83,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: **C:\Arqu
 
 
 **&lt;CommonParameters&gt;**
-    (opcional – dá suporte a parâmetros comuns do PowerShell como verbose, debug etc.)
+ (opcional – dá suporte a parâmetros comuns do PowerShell como verbose, debug etc.)
 
 - Para obter uma lista de parâmetros comuns, consulte o [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx).
 
@@ -98,13 +92,13 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: **C:\Arqu
     ```
     Help Invoke-AppWrappingTool
     ```
-- Para obter mais informações sobre a integração do AAD (Azure Active Directory), consulte [Como encapsular os aplicativos que usam a biblioteca do Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
+- Para obter mais informações sobre a integração do AAD (Azure Active Directory), consulte [Como encapsular aplicativos que usam a Biblioteca do Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 **Exemplo:**
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActiveDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
 Serão solicitadas a **KeyStorePassword** e a **KeyPassword**.
 
@@ -115,9 +109,9 @@ Para evitar potenciais falsificações, divulgações de informações e aumento
 
 -   Certifique-se de que o aplicativo de linha de negócios de entrada, o aplicativo de saída e o Armazenamento de Chaves Java estejam no mesmo computador onde a ferramenta de encapsulamento de aplicativos está sendo executado.
 
--   Importe o aplicativo de saída para o console do Intune no mesmo computador em que a ferramenta está em execução.
+-   Importe o aplicativo de saída para o console do Intune no mesmo computador em que a ferramenta está em execução. Consulte [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para obter mais informações sobre o keytool Java.
 
--   Se o aplicativo de saída e a ferramenta estiverem em um caminho UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](http://en.wikipedia.org/wiki/IPsec) ou [Assinatura do protocolo SMB](https://support.microsoft.com/en-us/kb/887429).
+-   Se o aplicativo de saída e a ferramenta estiverem em um caminho de UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](http://en.wikipedia.org/wiki/IPsec) ou [Assinatura SMB (Server Message Block)](https://support.microsoft.com/en-us/kb/887429).
 
 -   Certifique-se de que o aplicativo seja proveniente de uma fonte confiável, especialmente se você estiver usando o AAD (Azure Active Directory), que pode permitir que o aplicativo acesse o token do AAD durante o tempo de execução.
 
@@ -131,7 +125,7 @@ Para aplicativos que usam a ADAL, as afirmações seguir devem ser verdadeiras:
 
 -   O aplicativo deve incorporar uma versão da ADAL maior que ou superior à 1.0.2.
 
--   O desenvolvedor deve conceder acesso ao aplicativo para o recurso do Gerenciamento de Aplicativo Móvel do Intune, conforme descrito em [Etapa 3 Configurar o acesso ao gerenciamento de aplicativo móvel no AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
+-   O desenvolvedor deve conceder acesso ao aplicativo para o recurso do Gerenciamento de Aplicativo Móvel do Intune, conforme descrito na [Etapa 3: Configurar o acesso ao gerenciamento de aplicativo móvel no AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
 
 ### Etapa 2: Examinar os identificadores que você precisa obter ao registrar o aplicativo
 Na próxima etapa, você usará o portal de gerenciamento do Azure para registrar seus aplicativos (os quais estão usando a ADAL com o AAD (Active Directory do Azure)) para obter os identificadores exclusivos listados na tabela a seguir. Em seguida, você fornece os identificadores ao desenvolvedor ao integrar a ADAL ao aplicativo.
@@ -149,11 +143,11 @@ Antes de usar os valores de registro do AAD do aplicativo na ferramenta de dispo
 
 1.  Faça logon em uma conta existente do AAD no portal de gerenciamento do Azure.
 
-2.  Clique em **registro de aplicativo LOB existente**.
+2.  Clique em **existing LOB application registration (registro de aplicativo LOB existente)**.
 
-3.  Na seção **Configurar**, escolha **Configurar o Acesso às APIs da Web em outros aplicativos**.
+3.  Na seção para **configurar** , escolha **Configurar o Acesso às APIs da Web em outros aplicativos**.
 
-4.  Na primeira lista suspensa, na seção **Permissão para outros aplicativos**, escolha **Gerenciamento de Aplicativo Móvel do Intune**.
+4.  Na primeira lista suspensa na seção **Permission to other applications (Permissão para outros aplicativos)**, escolha **Gerenciamento de Aplicativo Móvel do Intune**.
 
 Agora você pode usar a ID do Cliente do aplicativo na ferramenta de disposição do aplicativo. Você pode encontrar a ID do Cliente no portal de gerenciamento do Azure Active Directory conforme descrito na tabela na [Etapa 2: Examinar os identificadores que você precisa obter ao registrar o aplicativo](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
 
@@ -169,12 +163,7 @@ Usando os valores do identificador que você obteve no processo de registro, ins
 |ID do Recurso|ResourceID|
 Lembre-se dos pontos a seguir ao encapsular seu aplicativo:
 
--   A ferramenta de disposição do aplicativo não pesquisa binários da ADAL (se houver) no aplicativo. Se o aplicativo se vincular a uma versão desatualizada de binários, pode haver erros de tempo de execução durante o logon se as políticas de autenticação estiverem habilitadas.
-
--   Para verificar se a autenticação foi bem-sucedida,
-  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] busca o token do AAD que está associado à ID de recurso do MAM. No entanto, o token não é usado em qualquer chamada que, por sua vez, verificaria a validade do token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] apenas lê o nome UPN do usuário conectado para determinar o acesso do aplicativo. O token do AAD não é usado para outras chamadas de serviço.
-
--   Tokens de autenticação são compartilhados entre aplicativos do mesmo editor, pois eles são armazenados no conjunto de chaves compartilhado. Para isolar um aplicativo específico, você deve usar certificado de autenticação, armazenamento de chave de perfil de provisionamento e alias de chave diferentes para esse aplicativo.
+-   Para verificar se a autenticação foi bem-sucedida, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] busca o token do AAD associado à ID de recurso do MAM. No entanto, o token não é usado em qualquer chamada que, por sua vez, verificaria a validade do token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] apenas lê o nome UPN do usuário conectado para determinar o acesso do aplicativo. O token do AAD não é usado para outras chamadas de serviço.
 
 -   Prompts de logon duplo são impedidos se você fornecer a ID do Cliente do aplicativo cliente e o URI de Autoridade. Você precisa registrar esta ID do Cliente para permitir que ela acesse a ID de recursos de MAM do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] publicada no Painel do AAD. Se você não registrar a ID do Cliente, os usuários obterão uma falha de logon quando o aplicativo for executado.
 
@@ -185,6 +174,7 @@ Lembre-se dos pontos a seguir ao encapsular seu aplicativo:
 - [Use o SDK para habilitar aplicativos para o gerenciamento de aplicativos móveis](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

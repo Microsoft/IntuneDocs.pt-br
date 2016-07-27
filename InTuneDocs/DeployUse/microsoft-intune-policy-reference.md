@@ -1,27 +1,27 @@
 ---
-title: "Referência da política do Microsoft Intune | Microsoft Intune"
-description: 
+title: "Referência da política de configuração | Microsoft Intune"
+description: "Use as informações neste tópico para ajudar na decisão sobre qual política do Microsoft Intune você precisa usar para gerenciar seus dispositivos."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 ---
 
 # Referência da política do Microsoft Intune
 
-Use as informações neste tópico para ajudar na decisão sobre qual política do Microsoft Intune você precisa usar para gerenciar seus dispositivos.
+Use as informações neste tópico para ajudar na decisão sobre qual política de configuração do Microsoft Intune você precisa usar para gerenciar seus dispositivos.
 
 > [!TIP]
 > Para obter mais informações detalhadas sobre como usar políticas, consulte [Manage settings and features on your devices with Microsoft Intune Policies (Gerenciar configurações e funcionalidades em seus dispositivos com as políticas do Microsoft Intune)](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
@@ -47,11 +47,14 @@ Use as informações neste tópico para ajudar na decisão sobre qual política 
 |**Configuração personalizada (iOS 7.1 e posterior)**|Implante perfis de configuração para dispositivos iOS que você criou usando a ferramenta Apple Configurador. Isso é útil quando a configuração não está disponível em uma política de configuração.<br /><br />Para ver mais detalhes, consulte [iOS policy settings in Microsoft Intune (Configurações de política do iOS no Microsoft Intune)](ios-policy-settings-in-microsoft-intune.md).|
 |**Perfil de email (iOS 7.1 e posterior)**|Criar, implantar e monitorar as configurações de email do Exchange ActiveSync nos dispositivos gerenciados. Isso permite que os usuários acessem o email corporativo nos dispositivos pessoais deles sem que precisem fazer nenhum tipo de configuração.<br /><br />Para ver mais detalhes, consulte [Configure access to corporate email using email profiles with Microsoft Intune (Configurar o acesso ao email corporativo usando perfis de email com o Microsoft Intune)](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configuração geral (iOS 7.1 e posterior)**|Configurar a segurança de dispositivo móvel e configurações funcionais.<br />-   Especificar os aplicativos que são compatíveis ou não, e reportar quando eles são usados.<br />Configure o modo de quiosque que bloqueia dispositivos para permitir que somente determinados recursos de trabalho, por exemplo, permitir que o dispositivo execute apenas um aplicativo ou desabilitar os botões de volume.<br /><br />Para ver mais detalhes, consulte [iOS policy settings in Microsoft Intune (Configurações de política do iOS no Microsoft Intune)](ios-policy-settings-in-microsoft-intune.md).|
+|**Política de configuração de aplicativo móvel (iOS 7.1 e posterior)**|Use políticas de configuração de aplicativo móvel para fornecer automaticamente as configurações que podem ser necessárias quando o usuário executa um aplicativo iOS.<br /><br />Para ver mais detalhes, consulte [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md) (Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune).|
+|**Política de perfil de provisionamento móvel (iOS 7.1 e posterior)**|Os aplicativos móveis de linha de negócios de iOS da Apple são criados com um perfil de provisionamento incluído e com assinatura por código com um certificado. Quando o aplicativo é executado em um dispositivo iOS, o iOS confirma a integridade do aplicativo iOS e impõe políticas definidas pelo perfil de provisionamento.<br><br>A empresa de assinatura de certificado usada para assinar aplicativos normalmente tem duração de três anos. No entanto, o perfil de provisionamento expira após um ano. Use essa política para implantar proativamente uma nova política de perfil de provisionamento a dispositivos que têm aplicativos perto do vencimento enquanto o certificado ainda é válido.<br><br>Para obter detalhes, consulte [Usar políticas de perfil de provisionamento móvel do iOS para impedir que os aplicativos expirem](ios-mobile-app-provisioning-profiles.md).|
+|**Perfil de Certificado PKCS nº 12 (.PFX) (iOS 7.1 e posterior)**|Use esse perfil para criar e implantar configurações PFX para solicitações de certificado do dispositivo.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de certificado SCEP (iOS 7.1 e posterior)**|Configurar um certificado do protocolo SCEP que pode ser usado com um certificado confiável de dispositivos móveis para autenticar dispositivos móveis a fim de permitir que acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de certificado confiável (iOS 7.1 e posterior)**|Configurar um certificado confiável de dispositivo móvel que pode ser usado para autenticar dispositivos móveis para permitir que eles acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de VPN (iOS 7.1 e posterior)**|Configurar e implantar configurações que oferecem aos usuários acesso seguro à rede da empresa a partir de seus dispositivos móveis. Ao implantar essas configurações, você minimiza o esforço necessário para se conectar ao seu trabalho para o usuário final.<br /><br />Para ver mais detalhes, consulte [VPN connections in Microsoft Intune.md (Conexões VPN no Microsoft Intune.md)](vpn-connections-in-microsoft-intune.md).|
 |**Perfil de Wi-Fi (iOS 7.1 e posterior)**|Configurar e implantar as configurações de rede sem fio para usuários em sua organização. Ao implantar essas configurações, você minimiza o esforço do usuário final necessário para conectar-se à rede sem fio.<br /><br />Para ver mais detalhes, consulte [Wi-Fi connections in Microsoft Intune (Conexões Wi-Fi no Microsoft Intune)](wi-fi-connections-in-microsoft-intune.md).|
-|**Política de configuração de aplicativo móvel (iOS 7.1 e posterior)**|Use políticas de configuração de aplicativo móvel para fornecer automaticamente as configurações que podem ser necessárias quando o usuário executa um aplicativo iOS.<br /><br />Para ver mais detalhes, consulte [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md) (Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune).|
+
 
 ## Políticas de configuração do Mac OS X
 
@@ -80,8 +83,10 @@ Aplica-se apenas a Windows Phone e dispositivos com Windows.
 |**Perfil de certificado PKCS nº 12 (.PFX) (Windows 10 Desktop e Mobile e posterior)**|Use esse perfil para criar e implantar configurações PFX para solicitações de certificado do dispositivo.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de certificado SCEP (Windows 8.1 e posterior)**<br /><br />**Perfil de certificado SCEP (Windows Phone 8.1 e posterior)**|Configurar um certificado do protocolo SCEP que pode ser usado com um certificado confiável de dispositivos móveis para autenticar dispositivos móveis a fim de permitir que acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
 |**Perfil de certificado confiável (Windows 8.1 e posterior)**<br /><br />**Perfil de certificado confiável (Windows Phone 8.1 e posterior)**|Configurar um certificado confiável de dispositivo móvel que pode ser usado para autenticar dispositivos móveis para permitir que eles acessem recursos da rede, como aqueles configurados por Wi-Fi e perfis VPN.<br /><br />Para ver mais detalhes, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).|
-|**Perfil da VPN (Windows 10 Desktop e Mobile e posterior)**<br /><br />**Perfil de VPN (Windows 8.1 e posterior)**<br /><br />**Perfil de VPN (Windows Phone 8.1 e posterior)**|Configurar e implantar configurações que oferecem aos usuários acesso seguro à rede da empresa a partir de seus dispositivos móveis. Ao implantar essas configurações, você minimiza o esforço necessário para se conectar ao seu trabalho para o usuário final.<br /><br />Para ver mais detalhes, consulte [VPN connections in Microsoft Intune.md (Conexões VPN no Microsoft Intune.md)](vpn-connections-in-microsoft-intune.md).|
+|**Perfil da VPN (Windows 10 Desktop e Mobile e posterior)**<br /><br />**Perfil de VPN (Windows 8.1 e posterior)**<br /><br />**Perfil de VPN (Windows Phone 8.1 e posterior)**|Configurar e implantar configurações que oferecem aos usuários acesso seguro à rede da empresa a partir de seus dispositivos móveis. Ao implantar essas configurações, você minimiza o esforço necessário para se conectar ao seu trabalho para o usuário final.<br /><br />Para mais detalhes, consulte [Conexões VPN no Microsoft Intune](vpn-connections-in-microsoft-intune.md).|
 |**Importação de Wi-Fi**|Importar e implantar configurações de Wi-Fi do Windows que você exportou anteriormente em um arquivo.<br /><br />Para ver mais detalhes, consulte [Wi-Fi connections in Microsoft Intune (Conexões Wi-Fi no Microsoft Intune)](wi-fi-connections-in-microsoft-intune.md).|
+|**Windows Information Protection**<br>(anteriormente conhecido como proteção de dados empresariais)|Com o aumento de dispositivos do funcionário na empresa, também há um risco crescente de vazamentos de dados acidentais por meio de aplicativos e serviços, como email, mídia social e nuvem pública, que estão fora do controle da empresa. Por exemplo, quando um funcionário envia as imagens mais recentes de engenharia da sua conta de email pessoal, copia e cola informações do produto em um tweet ou salva um relatório de vendas em andamento para o armazenamento de nuvem pública.<br><br>O Windows Information Protection ajuda a proteger contra esses possíveis vazamentos de dados sem interferir de outra forma com a experiência do funcionário. Ele também ajuda a proteger dados e aplicativos corporativos e contra vazamentos de dados acidentais em dispositivos pessoais e de funcionários que os funcionários trazem para o trabalho sem a necessidade de alterações em seu ambiente ou outros aplicativos.<br><br>Essa política do Intune gerencia a lista de aplicativos protegidos pelo Windows Information Protection, locais de rede corporativa, nível de proteção e configurações de criptografia.<br><br>Para obter mais informações, consulte [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp) (Proteger seus dados empresariais usando o Windows Information Protection).|
+
 
 ## Políticas de software
 
@@ -129,7 +134,6 @@ Aplica-se apenas a Windows Phone e dispositivos com Windows.
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

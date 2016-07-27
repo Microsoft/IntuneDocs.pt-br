@@ -1,9 +1,9 @@
 ---
 title: "Tarefas de avaliação comuns do Intune | Microsoft Intune"
-description: 
+description: "Listas e links para algumas tarefas comuns, por exemplo, implantar a política de PIN do iOS e configurar o acesso ao email, que você pode desejar fazer usando o Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/5/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: c7c2d100-793a-4ed8-b1ac-1da637a1a19d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: d93ab710f6bc2bc62321be5f7079f6092c261284
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 5ba5c82de668a69aee29a06a5732f9a52079a9a6
 
 
 ---
@@ -34,6 +34,6 @@ Verifique novamente em breve, pois mais tarefas serão adicionadas em breve.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

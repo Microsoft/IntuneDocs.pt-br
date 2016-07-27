@@ -1,26 +1,27 @@
 ---
-title: "O que acontece quando você redefine o dispositivo usando o Portal da Empresa? | Microsoft Intune"
+title: "O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 29fab114e2b5b9b3a7c8e050af6f37287a715026
 
 
 ---
 
 
-# O que acontece quando você redefine o dispositivo usando o Portal da Empresa?
+# O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
 
 Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empresa](reset-your-device-cpwebsite.md) para redefinir o dispositivo do Windows, ele redefine o dispositivo para as configurações de fábrica e exclui todos os aplicativos, configurações e dados, incluindo seus dados pessoais. O que acontece em cada dispositivo depende do tipo de dispositivo que você tem e de como ele é usado, conforme descrito na tabela a seguir. Para obter instruções sobre como redefinir o dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md) (Redefinir (apagar) o dispositivo perdido ou roubado).
 
@@ -36,6 +37,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

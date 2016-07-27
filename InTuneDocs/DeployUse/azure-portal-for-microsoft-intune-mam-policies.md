@@ -1,6 +1,6 @@
 ---
 title: "Portal do Azure para políticas de MAM | Microsoft Intune"
-description: 
+description: "Crie políticas de gerenciamento de aplicativo móvel usando o Portal do Azure. As políticas que você criar aqui podem ser aplicadas a dispositivos com ou sem registro no Intune."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 ---
@@ -28,8 +28,10 @@ O portal do Azure dá suporte à criação de políticas de MAM para:
 - Aplicativos que são executados em dispositivos que **não são registrados** em nenhuma solução de MDM.
 - Aplicativos que são executados em dispositivos que são **registrados em uma solução MDM de terceiros**.
 
-Se no momento você estiver usando o **console de administração do Intune** para gerenciar seus dispositivos, poderá criar uma política MAM que dê suporte a aplicativos para dispositivos registrados no Intune usando o [Console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
+
+> Se no momento você estiver usando o console de administração do Intune para gerenciar seus dispositivos, poderá criar uma política de MAM que dê suporte a aplicativos para dispositivos registrados no Intune usando o [Console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
 > Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas MAM. Se você criar políticas MAM no console de administração do Intune e no portal do Azure, a política no portal do Azure será aplicada aos aplicativos e implantada para usuários.
 
 ## Faça logon no portal do Azure e personalize sua página inicial
@@ -59,6 +61,6 @@ Se no momento você estiver usando o **console de administração do Intune** pa
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

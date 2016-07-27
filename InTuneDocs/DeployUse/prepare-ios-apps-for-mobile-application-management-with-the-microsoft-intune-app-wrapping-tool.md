@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Preparar aplicativos iOS para o gerenciamento com a Ferramenta de Encapsulamento de Aplicativos | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "Encapsular aplicativos iOS com Ferramenta de Disposição do Aplicativo | Microsoft Intune"
+description: "Use as informações neste tópico para aprender a encapsular seus aplicativos iOS sem modificar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -30,7 +24,7 @@ Use a **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune para iOS
 
 A ferramenta é um aplicativo de linha de comando do Mac OS que cria um "wrapper" em torno de um aplicativo. Após um aplicativo ser processado, você pode alterar sua funcionalidade usando [políticas de gerenciamento de aplicativo móvel](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) que você configurar.
 
-Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS (Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune para iOS)](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
+Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS - Português (Brasil)](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Etapa 1: Cumprir os pré-requisitos para usar a ferramenta de encapsulamento de aplicativos
 
@@ -59,7 +53,7 @@ Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS (
 
 1.  No computador Mac, abra uma janela de Terminal e navegue até a pasta em que você salvou os arquivos. Como o executável fica dentro do pacote, você precisará executar o comando da seguinte maneira:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -149,7 +143,7 @@ Para aplicativos que usam a ADAL, as afirmações seguir devem ser verdadeiras:
 
 -   O aplicativo deve incorporar uma versão da ADAL maior que ou superior à 1.0.2
 
--   Os desenvolvedores devem conceder acesso ao aplicativo para o recurso de Gerenciamento de Aplicativo Móvel do Intune, conforme descrito em [Etapas a serem seguidas para aplicativos que usam o ADAL](#steps-to-follow-for-apps-that-use-adal).
+-   Os desenvolvedores devem conceder acesso ao aplicativo para o recurso de Gerenciamento de aplicativo móvel do Intune, conforme descrito em [Etapas a seguir para aplicativos que usam a AD](#steps-to-follow-for-apps-that-use-adal).
 
 ### Visão geral dos identificadores que você precisa obter
 Aplicativos que usam a ADAL devem ser registrados através do portal de gerenciamento do Azure para obter dois identificadores exclusivos para seu aplicativo:
@@ -170,9 +164,9 @@ Aplicativos que usam a ADAL devem ser registrados através do portal de gerencia
 
     2.  Clique em **registro de aplicativo de LOB existente** no Active Directory do Azure.
 
-    3.  Na seção Configurar, escolha **Configurar o Acesso às APIs da Web em outros aplicativos**.
+    3.  Na seção de configuração, escolha **Configurar o Acesso às APIs da Web em outros aplicativos**.
 
-    4.  Na seção **Permissão para outros aplicativos**, na primeira lista suspensa, escolha **Gerenciamento de Aplicativos Móveis do Intune**.
+    4.  Na seção **Permission to other applications (Permissão para outros aplicativos)**, na primeira lista suspensa, escolha **Gerenciamento de aplicativo móvel do Intune**.
 
         Agora você pode usar a ID do Cliente do aplicativo na ferramenta de disposição do aplicativo. Você pode encontrar a ID do Cliente do aplicativo no portal de gerenciamento do Azure Active Directory conforme descrito na seção [Visão geral dos identificadores que você precisa obter](#overview-of-identifiers-you-need-to-get).
 
@@ -199,7 +193,7 @@ Aplicativos que usam a ADAL devem ser registrados através do portal de gerencia
 -   Prompts de logon duplo são impedidos se você fornecer a Id de cliente e o URI de redirecionamento do aplicativo cliente. Essa ID de cliente precisa ser registrada para acessar a ID do recurso de MAM [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] publicado no painel do AAD. Deixar de fazer isso resultará em uma falha de logon quando o aplicativo for executado.
 
 ## Definindo direitos de aplicativo
-Antes de encapsular seu aplicativo, você pode conceder **direitos** para conceder ao aplicativo permissões e recursos adicionais que excedem o que um aplicativo normalmente pode fazer.  Um **arquivo de direito** é usado durante a assinatura de código para especificar permissões especiais dentro de seu aplicativo (por exemplo, acesso a um conjunto de chaves compartilhado). Serviços de aplicativos específicos, chamados **funcionalidades**, são habilitados em Xcode durante o desenvolvimento do aplicativo. Uma vez habilitadas, as funcionalidades são refletidas no arquivo de direitos. Para obter mais informações sobre os recursos e funcionalidades, consulte [Adicionando Funcionalidades](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) na Biblioteca do Desenvolvedor iOS. Para obter uma lista completa de funcionalidades com suporte, consulte [Funcionalidades com suporte](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
+Antes de encapsular seu aplicativo, você pode conceder **direitos** para conceder ao aplicativo permissões e recursos adicionais que excedem o que um aplicativo normalmente pode fazer.  Um **arquivo de direito** é usado durante a assinatura de código para especificar permissões especiais dentro de seu aplicativo (por exemplo, acesso a um conjunto de chaves compartilhado). Serviços de aplicativos específicos, chamados **funcionalidades**, são habilitados em Xcode durante o desenvolvimento do aplicativo. Uma vez habilitadas, as funcionalidades são refletidas no arquivo de direitos. Para obter mais informações sobre os recursos e funcionalidades, consulte [Adicionando Funcionalidades](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) na Biblioteca do Desenvolvedor iOS. Para obter uma lista completa de funcionalidades com suporte, consulte [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Funcionalidades com suporte).
 
 ### Funcionalidades com suporte para a Ferramenta de Encapsulamento de Aplicativos para iOS
 
@@ -211,7 +205,7 @@ Antes de encapsular seu aplicativo, você pode conceder **direitos** para conced
 |Compras no aplicativo|As Compras no aplicativo incorporam uma loja diretamente ao seu aplicativo, permitindo que você se conecte à loja e processe com segurança pagamentos do usuário. Você pode usar a Compra no aplicativo para coletar pagamentos por uma funcionalidade avançada ou conteúdo adicional usado pelo seu aplicativo.||
 |Compartilhamento de conjunto de chaves|Habilitar o compartilhamento de conjunto de chaves permite que seu aplicativo compartilhe senhas do conjunto de chaves com outros aplicativos desenvolvidos pela sua equipe.|Ao usar o Compartilhamento de conjunto de chaves, use a notação inversa de DNS:<br /><br />*com.companyName.KeychainGroup*|
 |VPN pessoal|Habilite VPN pessoal para permitir que seu aplicativo crie e controle uma configuração de VPN personalizada do sistema usando a estrutura de extensão de rede.||
-|Notificações por push|O APNs (Apple Push Notification Service) permite que um aplicativo que não está em execução em primeiro plano notifique o usuário de que ele tem informações para o usuário.|Para que as notificações por push funcionem, você precisa usar um perfil de provisionamento específico ao aplicativo.<br /><br />Siga as etapas na [Documentação do desenvolvedor Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html).|
+|Notificações por push|O APNs (Apple Push Notification Service) permite que um aplicativo que não está em execução em primeiro plano notifique o usuário de que ele tem informações para o usuário.|Para que as notificações por push funcionem, você precisa usar um perfil de provisionamento específico ao aplicativo.<br /><br />Siga as etapas na [Apple developer documentation](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Documentação para desenvolvedores da Apple).|
 |Configuração de acessório sem fio|Habilitar a configuração de acessório sem fio adiciona a estrutura External Accessory ao seu projeto e permite que seu aplicativo configure acessórios MFi Wi-Fi.||
 
 ### Etapas para habilitar direitos
@@ -230,7 +224,7 @@ Antes de encapsular seu aplicativo, você pode conceder **direitos** para conced
 
     1.  Faça logon na Central de Associados do Desenvolvedor da Apple.
 
-    2.  Crie um perfil de provisionamento para seu aplicativo. Para obter instruções, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS (Como obter os pré-requisitos para a Ferramenta de Encapsulamento de Aplicativos para iOS)](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx).
+    2.  Crie um perfil de provisionamento para seu aplicativo. Para obter instruções, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Como obter os pré-requisitos para a Ferramenta de Disposição do Aplicativo do Intune para iOS).
 
     3.  No seu perfil de provisionamento, habilite os mesmo direitos que você tem em seu aplicativo. Você precisará fornecer as mesmas IDs que especificou durante o desenvolvimento do seu aplicativo.
 
@@ -271,7 +265,7 @@ Para examinar as autorizações existentes de um aplicativo assinado e do perfil
 Este comando remove quaisquer funcionalidades habilitadas no aplicativo que não estão no arquivo de direitos. Se você remover as funcionalidades que estão sendo usadas pelo aplicativo, elas poderão interromper seu aplicativo. Um exemplo de onde você poderá remover funcionalidades ausentes é se você tiver um aplicativo produzido pelo fornecedor que tem todas as funcionalidades por padrão.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Segurança e privacidade da ferramenta de encapsulamento de aplicativo
@@ -297,6 +291,7 @@ Use as seguintes práticas recomendadas de segurança e privacidade ao usar a fe
 - [Use o SDK para habilitar aplicativos para o gerenciamento de aplicativos móveis](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

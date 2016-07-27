@@ -1,10 +1,10 @@
 ---
-title: Gerenciar aplicativos iOS adquiridos por meio de um programa de compra por volume | Microsoft Intune
-description: 
+title: Gerenciar aplicativos iOS adquiridos por volume | Microsoft Intune
+description: "Use o Intune para gerenciar aplicativos comprados por volume da Apple importando as informações de licença da App Store, acompanhando quantas licenças você usou e evitando a instalação de um número maior de cópias do aplicativo do que você tem."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
-ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 6e179ce99dbda518dbefcaab6f502cc24498d7a3
 
 
 ---
 
 # Gerenciar aplicativos iOS adquiridos por meio de um programa de compra por volume com o Microsoft Intune
-Algumas lojas de aplicativos oferecem a possibilidade de comprar várias licenças para um aplicativo que você deseja executar na empresa. Isso ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos.
+A iOS App Store permite que você compre várias licenças para um aplicativo que deseja executar na empresa. Isso ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos.
 
-O Microsoft Intune ajuda a gerenciar aplicativos comprados por meio de tal programa, importando as informações de licença da Windows Store e acompanhando quantas licenças você usou, além de evitar a instalação de mais cópias do seu aplicativo.
+O Microsoft Intune ajuda a gerenciar aplicativos comprados por meio de tal programa importando as informações de licença da App Store, acompanhando quantas licenças você usou e evitando a instalação de um número maior de cópias do aplicativo do que você tem.
 
 > [!Important]
 > Atualmente, o Intune atribui licenças de aplicativo VPP do iOS para usuários, e não dispositivos. Por isso, os usuários finais devem digitar sua senha de ID da Apple para instalar o aplicativo.
@@ -87,6 +87,6 @@ Você pode monitorar quais aplicativos de VPP foram implantados e quantas licen�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
