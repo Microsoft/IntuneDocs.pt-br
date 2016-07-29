@@ -3,7 +3,7 @@ title: Registrar seu dispositivo Mac OS X no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Mac OS X no Intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ Registrar seu dispositivo Mac OS X no Intune:
 
 2.  Toque em **Este dispositivo não está registrado ou o Portal da Empresa não pode identificá-lo**.
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Toque **Instalar** para registrar seu dispositivo.
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  Na caixa de diálogo **Instalar o Perfil de Gerenciamento**, toque **Instalar**. Se uma caixa de diálogo for exibida solicitando que você insira suas credenciais, digite seu nome de usuário e senha e, em seguida, toque em **Continuar** &gt; **Instalar**.
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     Ao concluir o registro, você verá uma página de Perfil de Gerenciamento mostrando que o perfil foi verificado.
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
@@ -54,6 +54,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

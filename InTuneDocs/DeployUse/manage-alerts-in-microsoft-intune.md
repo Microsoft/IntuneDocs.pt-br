@@ -3,19 +3,19 @@ title: Gerenciar alertas | Microsoft Intune
 description: "Use o espaço de trabalho Alertas para avaliar a integridade geral dos dispositivos na sua organização."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Use o espaço de trabalho **Alertas** no console de administração do Intune pa
 
         > [!NOTE]
         > Em alguns casos, um tipo de alerta pode aparecer mais de uma vez na lista **Resumo de Tipos de Alertas**.
-        > 
+        >
         > Por exemplo, as seguintes instâncias do tipo de alerta Espaço Livre no Disco Lógico podem aparecer na lista:
-        > 
+        >
         > -   Espaço Livre no Disco Lógico 3
         > -   2 Espaço Livre em Disco Lógico
-        > 
+        >
         > Esse comportamento ocorre quando o mesmo tipo de alerta é gerado para dispositivos que executam diferentes sistemas operacionais. No exemplo, a primeira instância do tipo de alerta Espaço Livre em Disco Lógico, Espaço Livre em Disco Lógico 3, pode ter sido gerada por computadores que executam o Windows® 7. A segunda instância do tipo de alerta Espaço Livre em Disco Lógico pode ter sido gerada por computadores que executam o Windows Vista®.
 
     -   **Para exibir todos os alertas ativos**, clique em **Alertas &gt; Todos os Alertas**. A página **Alertas** exibe uma lista de todos os alertas ativos com as seguintes colunas:
@@ -107,7 +107,6 @@ Alertas marcados como fechados são excluídos permanentemente após 90 dias.
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

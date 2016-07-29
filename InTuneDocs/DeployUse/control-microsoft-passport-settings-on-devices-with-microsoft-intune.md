@@ -3,7 +3,7 @@ title: "Controlar as configurações do Microsoft Passport em dispositivos | Mic
 description: "Saiba como o Intune se integra com o **Microsoft Passport for Work**, um método de entrada alternativo que usa o Active Directory ou uma conta do Azure Active Directory para substituir uma senha, cartão inteligente ou cartão inteligente virtual."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada366e91806c6f443ac4548af99c587ac218ec9
-ms.openlocfilehash: 934ae78edf4de2003d62179fa38269d97e6d7ef6
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 9f75306e1448bd474bd90b1836393962c0e08522
 
 
 ---
@@ -78,6 +78,6 @@ Para obter mais informações sobre o Microsoft Passport, consulte [o guia](http
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

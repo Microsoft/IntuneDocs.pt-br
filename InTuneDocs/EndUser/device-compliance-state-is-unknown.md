@@ -3,7 +3,7 @@ title: "O estado de conformidade do dispositivo é desconhecido | Microsoft Intu
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 2adae96c0051056beae86b12dfef1234c00fff9f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 51f07c6c8c7a361fc69ec42da7e270460489e7f7
 
 
 ---
@@ -23,12 +23,12 @@ ms.openlocfilehash: 2adae96c0051056beae86b12dfef1234c00fff9f
 
 # O estado de conformidade do dispositivo é desconhecido
 
-Se você vir a mensagem "O estado de conformidade do dispositivo é desconhecido" em seu dispositivo, isso significará que Intune está tentando verificar se o dispositivo está em conformidade com as políticas corporativas. Enquanto estiver sendo feita essa verificação, você poderá ser impedido de acessar recursos da empresa, como email. Aguarde alguns minutos para que a verificação de conformidade seja concluída e, em seguida, tente acessar os recursos corporativos novamente. 
+Se você vir a mensagem "O estado de conformidade do dispositivo é desconhecido" em seu dispositivo, isso significará que Intune está tentando verificar se o dispositivo está em conformidade com as políticas corporativas. Enquanto estiver sendo feita essa verificação, você poderá ser impedido de acessar recursos da empresa, como email. Aguarde alguns minutos para que a verificação de conformidade seja concluída e, em seguida, tente acessar os recursos corporativos novamente.
 
 Se você não puder acessar os recursos da empresa, entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

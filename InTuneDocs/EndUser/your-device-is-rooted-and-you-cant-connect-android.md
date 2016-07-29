@@ -3,7 +3,7 @@ title: "Seu dispositivo Android tem raiz e você não pode se conectar | Microso
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 2f59f8675cc80e1f455347dc877b6678f1f9e470
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 # Seu dispositivo Android tem raiz e você não pode se conectar
 
-Quando seu dispositivo Android tem raiz, significa que ele foi alterado para habilitar determinadas funcionalidades que poderiam comprometer a segurança e os recursos da empresa. Se você vir essa mensagem, não conseguirá acessar os recursos da empresa até que o problema seja resolvido. 
+Quando seu dispositivo Android tem raiz, significa que ele foi alterado para habilitar determinadas funcionalidades que poderiam comprometer a segurança e os recursos da empresa. Se você vir essa mensagem, não conseguirá acessar os recursos da empresa até que o problema seja resolvido.
 
 Se você não acredita que fez nada para deliberadamente modificar a raiz de seu dispositivo, veja essas outras razões pelas quais seu dispositivo pode ter sido modificado com raiz:
 
@@ -36,6 +36,7 @@ Se você não acredita que fez nada para deliberadamente modificar a raiz de seu
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

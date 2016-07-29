@@ -3,7 +3,7 @@ title: Sobre o Portal da Empresa | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
 O Portal da Empresa do Microsoft Intune fornece acesso a dados e aplicativos corporativos ou de estudante. Você pode obter o Portal da Empresa de duas diferentes maneiras:
 
 - Instalando o aplicativo do Portal da Empresa no seu dispositivo. Você geralmente obtém o aplicativo do Portal da Empresa indo para a loja de aplicativos do dispositivo, mas o administrador de TI também pode instalar o aplicativo do Portal da Empresa para você usando métodos diferentes.
-- Acessando o [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI tiver configurado. 
+- Acessando o [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI tiver configurado.
 
 Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em um que você pode fazer no outro. Alguns exemplos são:
 
@@ -100,10 +100,6 @@ Se você precisar de Ajuda, entre em contato com o administrador de TI. Para obt
 
 
 
-
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

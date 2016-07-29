@@ -3,8 +3,8 @@ title: Registrar seu dispositivo Android no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Android no Intune
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 ---
@@ -44,7 +44,27 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Se você estiver usando o Android 6.0 ou posterior, execute esta etapa. Caso contrário, vá para a próxima etapa. 
+5.  Conecte-se no aplicativo Portal da Empresa, usando sua conta e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  Na tela **Configuração de Acesso da Empresa**, toque em **Iniciar**.
+
+    ![Tela Configuração de acesso da empresa](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  Na tela **Por que registrar seu dispositivo?** leia sobre o que você pode fazer ao registrar o dispositivo e, em seguida, toque em **CONTINUAR**.
+
+    ![Tela Por que registrar seu dispositivo](./media/and-enroll-4b-why-enroll.png)
+
+8.  Examine uma lista do que o administrador de TI pode ou não ver em seu dispositivo e toque em **CONTINUAR**.
+
+    ![Configurações de privacidade](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  Na tela **O que vem em seguida**, leia sobre o que acontece durante o registro e, em seguida, toque em **REGISTRAR**.
+
+    ![Tela O que vem em seguida](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Se você estiver usando o Android 6.0 ou posterior, execute esta etapa. Caso contrário, vá para a próxima etapa.
 
     Se o administrador de TI tiver configurado algumas políticas, você poderá ver as seguintes mensagens:
     -   **Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?**
@@ -62,26 +82,6 @@ Se você receber um erro ao tentar registrar o dispositivo no Intune, poderá [e
     Se você vir essa mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acessa seus contatos!** O Google controla o texto da mensagem, e a Microsoft não pode alterá-lo. Quando você permitir acesso, ele só permitirá que o aplicativo do Portal da Empresa crie, use e gerencie sua conta corporativa.
 
     Se você negar o acesso, a mensagem será exibida novamente na próxima vez que você tocar em **Enviar Dados**, mas você poderá desligar mensagens futuras tocando na caixa de seleção **Nunca perguntar novamente**. Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ativar a permissão.
-
-6.  Conecte-se no aplicativo Portal da Empresa, usando sua conta e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  Na tela **Configuração de Acesso da Empresa**, toque em **Iniciar**.
-
-    ![Tela Configuração de acesso da empresa](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  Na tela **Por que registrar seu dispositivo?** leia sobre o que você pode fazer ao registrar o dispositivo e, em seguida, toque em **CONTINUAR**.
-
-    ![Tela Por que registrar seu dispositivo](./media/and-enroll-4b-why-enroll.png)
-
-9.  Examine uma lista do que o administrador de TI pode ou não ver em seu dispositivo e toque em **CONTINUAR**.
-
-    ![Configurações de privacidade](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  Na tela **O que vem em seguida**, leia sobre o que acontece durante o registro e, em seguida, toque em **REGISTRAR**.
-
-    ![Tela O que vem em seguida](./media/and-enroll-4d-what-comes-next.png)
 
 11.  Na tela **Ativar administrador do dispositivo**, clique em **Ativar**.
 
@@ -123,6 +123,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

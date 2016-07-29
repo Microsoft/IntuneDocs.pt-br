@@ -3,7 +3,7 @@ title: "O dispositivo não tem Inicialização Segura habilitada | Microsoft Int
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: f0388a0f73b4ac1a9ee17fd3681bcfcb7a682099
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 76ba33d470bc9040076ed885fae7968416cd7eb9
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: f0388a0f73b4ac1a9ee17fd3681bcfcb7a682099
 
 # O dispositivo não tem Inicialização Segura habilitada
 
-Sua organização exige que você habilite a Inicialização Segura do Windows, que é um recurso de segurança que ajuda a proteger o seu dispositivo. 
+Sua organização exige que você habilite a Inicialização Segura do Windows, que é um recurso de segurança que ajuda a proteger o seu dispositivo.
 
-Habilitar a Inicialização Segura é uma tarefa avançada. Se você estiver usando um dispositivo móvel, entre em contato com o administrador de TI para obter ajuda. 
+Habilitar a Inicialização Segura é uma tarefa avançada. Se você estiver usando um dispositivo móvel, entre em contato com o administrador de TI para obter ajuda.
 
 Se você estiver usando um computador, entre em contato com o administrador de TI ou consulte a seção “To re-enable Secure Boot” (Como reabilitar a inicialização segura) na página [Disabling Secure Boot (Desabilitando Inicialização Segura)](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tentar habilitar a Inicialização Segura por conta própria.
 
@@ -35,6 +35,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

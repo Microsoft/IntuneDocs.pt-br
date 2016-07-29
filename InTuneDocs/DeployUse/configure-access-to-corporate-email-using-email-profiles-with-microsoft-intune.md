@@ -3,7 +3,7 @@ title: Acessar o email corporativo com perfis de email | Microsoft Intune
 description: "As configurações de perfil de email podem ser usadas para definir configurações de acesso de email para clientes de email específicos em dispositivos móveis."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -82,7 +82,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     |**Número de dias de email para sincronizar**|O número de dias de email que você deseja sincronizar ou selecione **Ilimitado** para sincronizar todos os emails disponíveis.|
     |**Agenda de sincronização** (Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda pela qual os dispositivos sincronizarão os dados do Exchange Server. Você também pode selecionar **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo deve iniciar a sincronização.|
     |**Usar SSL**|Use comunicação Secure Sockets Layer (SSL) ao enviar e receber emails, e se comunicar com o Exchange Server.<br /><br />Para dispositivos que executam o Samsung KNOX 4.0 ou posterior, você deve exportar o certificado SSL do Exchange Server e implantá-lo como um Perfil de Certificado Confiável do Android no Intune. O Intune não dá suporte ao acesso a este certificado se ele estiver instalado no Exchange Server por outros meios.|
-    |**Tipo de conteúdo para sincronizar**|Selecione os tipos de conteúdo que você deseja sincronizar com dispositivos.| 
+    |**Tipo de conteúdo para sincronizar**|Selecione os tipos de conteúdo que você deseja sincronizar com dispositivos.|
     |**Permitir que o email seja enviado de aplicativos de terceiros** (somente iOS)|Permita que o usuário selecione este perfil como a conta padrão para enviar email e permitir que aplicativos de terceiros abram o email no aplicativo de email nativo, por exemplo, para anexar arquivos de email.|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

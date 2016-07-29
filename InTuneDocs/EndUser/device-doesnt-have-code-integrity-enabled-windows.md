@@ -3,7 +3,7 @@ title: "O dispositivo não tem Integridade de código habilitada | Microsoft Int
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 391035d0ba51e95eb3206a864cfcf375a98170f8
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: eab8d7108e869ae78ab4470aa60584362fe3d3e2
 
 
 ---
@@ -23,11 +23,11 @@ ms.openlocfilehash: 391035d0ba51e95eb3206a864cfcf375a98170f8
 
 # O dispositivo não tem Integridade de Código habilitada
 
-Sua organização exige que você habilite a Integridade de Código do Windows, que é um recurso que verifica os drivers e arquivos do sistema em seu dispositivo para certificar-se de que eles são seguros. 
+Sua organização exige que você habilite a Integridade de Código do Windows, que é um recurso que verifica os drivers e arquivos do sistema em seu dispositivo para certificar-se de que eles são seguros.
 
-Para habilitar a Integridade de Código do Windows, habilite o recurso de Inicialização Segura. O recurso de Integridade de Código será, em seguida, ativado automaticamente. 
+Para habilitar a Integridade de Código do Windows, habilite o recurso de Inicialização Segura. O recurso de Integridade de Código será, em seguida, ativado automaticamente.
 
-Habilitar a Inicialização Segura é uma tarefa avançada. Se você estiver usando um dispositivo móvel, entre em contato com o administrador de TI para obter ajuda. 
+Habilitar a Inicialização Segura é uma tarefa avançada. Se você estiver usando um dispositivo móvel, entre em contato com o administrador de TI para obter ajuda.
 
 Se você estiver usando um computador, entre em contato com o administrador de TI ou consulte a seção “To re-enable Secure Boot” (Como reabilitar a inicialização segura) na página [Disabling Secure Boot (Desabilitando Inicialização Segura)](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tentar habilitar a Inicialização Segura por conta própria.
 
@@ -37,6 +37,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Gerenciar aplicativos iOS adquiridos por volume | Microsoft Intune
 description: "Use o Intune para gerenciar aplicativos comprados por volume da Apple importando as informações de licença da App Store, acompanhando quantas licenças você usou e evitando a instalação de um número maior de cópias do aplicativo do que você tem."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 6e179ce99dbda518dbefcaab6f502cc24498d7a3
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
 
 
 ---
@@ -87,6 +87,6 @@ Você pode monitorar quais aplicativos de VPP foram implantados e quantas licen�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

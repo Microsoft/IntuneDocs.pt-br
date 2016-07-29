@@ -3,7 +3,7 @@ title: "Visão geral dos ciclos de vida do dispositivo e do aplicativo | Microso
 description: "Visão geral dos ciclos de vida do dispositivo e do aplicativo com o Intune."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: a87df3551d0758a3db8eb622db32fdcb60e4fd0e
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 686dc048c8a582ea188c5ab742e94328405f3a29
 
 
 ---
@@ -31,6 +31,6 @@ Da mesma forma, aplicativos com os quais você trabalha têm seus próprios [cic
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

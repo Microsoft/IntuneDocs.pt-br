@@ -3,7 +3,7 @@ title: "Encapsular aplicativos Android com a Ferramenta de Disposição do Aplic
 description: "Use as informações neste tópico para aprender a encapsular seus aplicativos Android sem modificar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 76ee04237d54b4c171df74e8c134f003bbc32966
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 15d0877f799c89e2a8af65c416c0e914f898641f
 
 
 ---
@@ -175,6 +175,6 @@ Lembre-se dos pontos a seguir ao encapsular seu aplicativo:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

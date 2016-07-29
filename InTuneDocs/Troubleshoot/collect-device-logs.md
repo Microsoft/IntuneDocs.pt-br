@@ -3,7 +3,7 @@ title: Coletar logs de dispositivo| Microsoft Intune
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,15 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac5c66f57194a84580aa495a58e5281683aa1cca
-ms.openlocfilehash: 4fc08fcea6cea897b9ddc3d0c00f2d83069f639d
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46579569c33b50f4b19a62d83c1db5e0e304621b
 
 
 ---
 
 # Logs de dispositivo
 
-Como parte dos esforços de solução de problemas, convém coletar logs de dispositivos de usuário. As instruções para coletar os logs são descritas aqui. Normalmente, você precisará de acesso ao dispositivo ou solicitará do usuário que ele colete os logs e envie para você. 
+Como parte dos esforços de solução de problemas, convém coletar logs de dispositivos de usuário. As instruções para coletar os logs são descritas aqui. Normalmente, você precisará de acesso ao dispositivo ou solicitará do usuário que ele colete os logs e envie para você.
 
 ### Localização do log do Android
 Logs do Android estão localizados em *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. O usuário pode também enviar você arquivos de log por email, conforme descrito em [Enviar logs de dados de diagnóstico do Android para o administrador de TI por email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android).
@@ -46,6 +46,6 @@ Para o Portal da Empresa do Windows, os logs estão localizados em *%localappdat
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

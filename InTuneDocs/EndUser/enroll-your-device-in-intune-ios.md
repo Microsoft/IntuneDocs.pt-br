@@ -3,7 +3,7 @@ title: Registrar seu dispositivo iOS no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo iOS no Intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 3cf778aa14aab093c9f5d58bda932a35f2db5089
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
 
 
 ---
@@ -35,53 +35,53 @@ Se você estiver tentando registrar um dispositivo Mac OS X, consulte [Enroll yo
 
 2. Na tela **Configuração de Acesso da Empresa**, toque em **Iniciar**.
 
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
+    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
 
 3. Na tela **Por que registrar seu dispositivo?** leia sobre o que você pode fazer ao registrar o dispositivo e, em seguida, toque em **Continuar**.
 
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png) 
+    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
 4. Examine uma lista do que o administrador de TI pode ou não ver em seu dispositivo registrado e toque em **Continuar**.
 
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png) 
+    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
 5.  Na tela **O que vem em seguida**, leia sobre o que acontece durante o registro e, em seguida, toque em **Registrar**.
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png) 
+    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Na tela **Instalar Perfil**, toque em **Instalar** e insira sua senha, se solicitado.
 
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png) 
-  
+    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
+
 7.  Toque em **Instalar**.
 
     ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
 
 8.  Toque em **Instalar** para indicar que você leu o aviso.
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png) 
+    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Toque em **Confiar**.
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png) 
+    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Quando a tela for alterada para mostrar que o perfil terminou de instalar, toque em **Concluído**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png) 
+    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     Uma mensagem "Registrando dispositivo" é exibida na tela.
 
 11.  Quando uma mensagem for exibida perguntando se você deseja abrir a página no Portal da Empresa, toque em **Abrir**.
 
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
+    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
 12. Na tela **Configuração de Acesso da Empresa**, toque em **Continuar**. Se o administrador de TI configurar requisitos de segurança adicionais, como a necessidade de definir uma senha, siga as instruções na tela até atender a todos os requisitos de conformidade, retornar à tela Configuração de Acesso da Empresa, em seguida, toque em **Continuar**.
 
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
+    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
-13. Toque em **Concluído**. 
+13. Toque em **Concluído**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png) 
+    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
 
 O dispositivo agora está registrado no Intune, e você é levado de volta ao aplicativo Portal da Empresa.
 
@@ -91,6 +91,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

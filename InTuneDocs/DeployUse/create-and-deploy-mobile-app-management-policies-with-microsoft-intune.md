@@ -3,8 +3,8 @@ title: "Criar e implantar políticas de MAM | Microsoft Intune"
 description: "Use as instruções passo a passo neste tópico para criar e implantar políticas de gerenciamento de aplicativos móveis."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 9e1c8f3c125633f1224005b7f80d3578fd4b729d
 
 
 ---
@@ -50,24 +50,20 @@ Antes de criar uma política de MAM, examine as informações de [pré-requisito
     > [!TIP]
     > Se esta é a primeira vez que você está usando o Portal do Azure, leia [Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) primeiro para se familiarizar com o portal.
 
-2.  Na folha **Configurações**, escolha **Política de aplicativos**.  Isso abre a folha **Política de aplicativo**, em que você criará novas políticas e editará as políticas existentes.
-
-    ![Captura de tela da folha Política de aplicativos mostrando uma lista de políticas existentes](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Escolha **Adicionar uma política**.
+2.  Na folha **Configurações**, escolha **Política de aplicativos**.  Isso abre a folha **Política de aplicativo**, em que você criará novas políticas e editará as políticas existentes. Escolha **Adicionar uma política**.
 
     ![Captura de tela da folha Política de aplicativos com a opção de menu Adicionar uma política realçada ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Digite um nome para a política, adicione uma breve descrição e selecione o tipo de plataforma para criar uma política para iOS ou Android.  Você pode criar mais de uma política para cada plataforma.
+3.  Digite um nome para a política, adicione uma breve descrição e selecione o tipo de plataforma para criar uma política para iOS ou Android.  Você pode criar mais de uma política para cada plataforma.
 
     ![Captura de tela da folha Adicionar uma política](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Escolha **Aplicativos** para abrir a **folha Aplicativos**, em que uma lista de aplicativos disponíveis é exibida. Você pode selecionar um ou mais aplicativos da lista que deseja associar à política que está sendo criada. Depois de selecionar os aplicativos, escolha o botão **Selecionar** na parte inferior da folha **Aplicativos** para salvar sua seleção.
+4.  Escolha **Aplicativos** para abrir a **folha Aplicativos**, em que uma lista de aplicativos disponíveis é exibida. Você pode selecionar um ou mais aplicativos da lista que deseja associar à política que está sendo criada. Depois de selecionar os aplicativos, escolha o botão **Selecionar** na parte inferior da folha **Aplicativos** para salvar sua seleção.
 
     > [!IMPORTANT]
     > Você deve selecionar pelo menos um aplicativo para criar uma política.
 
-6.  Na folha **Adicionar uma política**, escolha **Definir as configurações necessárias** para abrir a folha de configurações da política.
+5.  Na folha **Adicionar uma política**, escolha **Definir as configurações necessárias** para abrir a folha de configurações da política.
 
     Há duas categorias de configurações de política-**Realocação dos dados** e **Acesso**.  Políticas de realocação de dados aplicam-se à movimentação de dados dentro e fora dos aplicativos, enquanto as políticas de acesso determinam como o usuário final acessa os aplicativos em um contexto de trabalho.
     As configurações de política têm valores padrão para que você possa começar mais facilmente.  Não é necessário fazer alterações se os valores padrão atendem às suas necessidades.
@@ -77,11 +73,11 @@ Antes de criar uma política de MAM, examine as informações de [pré-requisito
 
     ![Captura de tela da folha de configurações, juntamente com a folha Adicionar uma política](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Escolha **OK** para salvar esta configuração.  Agora você retornou à folha **Adicionar uma política** . Escolha **Criar** para criar a política e salvar suas configurações.
+6.  Escolha **OK** para salvar esta configuração.  Agora você retornou à folha **Adicionar uma política** . Escolha **Criar** para criar a política e salvar suas configurações.
 
     ![Captura de tela da folha Adicionar uma política mostrando que aplicativos e configurações foram definidos](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![Captura de tela da folha Política de aplicativos com a notificação Adicionando uma política ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuários.  Siga as etapas descritas abaixo para implantar a política.
 
@@ -169,6 +165,6 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Criptografar seu dispositivo | Microsoft Intune
 description: Descreve como criptografar um dispositivo Android
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 
 
 ---
@@ -24,9 +24,9 @@ ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 Se sua empresa ou organização exigir que você criptografe o dispositivo antes de acessar os arquivos, email ou dados da empresa, siga estas etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigi-los.
 
-Se você algum dia cancelar o registro do seu telefone, ele continuará criptografado. 
+Se você algum dia cancelar o registro do seu telefone, ele continuará criptografado.
 
-1.  Assegure que um PIN ou senha de bloqueio de tela seja definido para o dispositivo. 
+1.  Assegure que um PIN ou senha de bloqueio de tela seja definido para o dispositivo.
 
 2.  Em **Configurações**, clique em **Segurança** &gt; **Criptografar Telefone**.
     (Em alguns telefones, você precisará clicar em **Armazenamento** &gt; **Criptografia de armazenamento** ou **Armazenamento** &gt; **Tela de bloqueio e segurança** &gt; **Outras configurações de segurança** para encontrar a opção "Criptografar").
@@ -47,7 +47,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
