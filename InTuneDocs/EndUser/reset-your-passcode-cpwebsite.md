@@ -3,18 +3,19 @@ title: Redefinir a senha do dispositivo pelo site do Portal da Empresa | Microso
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
 
 Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para redefini-la. O site do Portal da Empresa é uma página da Web que você pode usar para gerenciar computadores e dispositivos registrados no Intune e para a maioria das mesmas tarefas que você pode fazer ao usar o aplicativo Portal da Empresa.
 
-> [!NOTE] 
+> [!NOTE]
 > Você não pode ver o botão Redefinição de Senha no site do Portal da Empresa, dependendo de como o administrador de TI tiver configurado o Intune. Não há suporte para a Redefinição de Senha em dispositivos Windows 8.1 e Windows RT.
 
 Para redefinir sua senha:
@@ -33,7 +34,7 @@ Para redefinir sua senha:
 
 2.  Toque em **Redefinir Senha**.
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Toque em **Entrar** e entre novamente com as suas credenciais corporativas ou de estudante. Você precisa entrar novamente em cinco minutos.
 
@@ -63,6 +64,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Usando o Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

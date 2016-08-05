@@ -3,7 +3,7 @@ title: "Configurações de política de conformidade para dispositivos Android |
 description: "Este tópico descreve as configurações de política de conformidade de dispositivo Android."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
+ms.sourcegitcommit: 465a5f305ac191fdf761997df565423f4349ff91
+ms.openlocfilehash: ed358c07594507d3a9144e9c686b54dcbd30aede
 
 
 ---
@@ -56,9 +56,17 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 ### Criptografia
 - **Exigir criptografia no dispositivo móvel:** defina esta opção como **Sim** para exigir que os dispositivos sejam criptografados para conectarem-se aos recursos. Os dispositivos serão criptografados quando você definir a configuração **Exigir uma senha para desbloquear dispositivos móveis**.
 
-## Configurações de integridade do dispositivo
+## Configurações de segurança e integridade do dispositivo
 
 - **O dispositivo não pode estar com jailbreak ou com raiz:** se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.
+- **Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas (Android 4.0 ou posterior)** Para bloquear dispositivos que têm a opção **Segurança > Fontes desconhecidas** habilitado no dispositivo, habilite essa configuração e defina-a como **Sim**.  
+>[!IMPORTANT]
+>Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** esteja habilitada.  Você só deverá aplicar esta política de conformidade se não estiver fazendo o sideload de aplicativos Android nos dispositivos.
+
+- **Exigir que a depuração de USB esteja desabilitada (Android 4.2 ou posterior)**: essa configuração especifica se a opção de detecção de depuração de USB no dispositivo de está habilitada.
+- **Exigir que os dispositivos tenham habilitado "Examinar dispositivo contra ameaças à segurança" (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
+- **Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android.  Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser especificada no formato: AAAA-MM-DD.
+
 
 ## Configurações de propriedade do dispositivo
 - **Sistema operacional mínimo exigido:** quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível.
@@ -68,6 +76,6 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

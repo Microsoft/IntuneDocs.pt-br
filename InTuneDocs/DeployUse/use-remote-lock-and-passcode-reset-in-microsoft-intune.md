@@ -1,18 +1,19 @@
 ---
 title: "Usar bloqueio remoto e redefinição de senha | Microsoft Intune"
-description: 
+description: "O Intune fornece funcionalidades de bloqueio remoto e redefinição de senha."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
-ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
 
 ---
 # Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
@@ -25,7 +26,7 @@ Se um usuário perder o dispositivo, você poderá bloquear o dispositivo remota
 |------------|---------------|
 |iOS|Com suporte|
 |Android|Com suporte|
-|Windows 10 Mobile|Com suporte|
+|Windows 10 e Windows 10 Mobile|Com suporte|
 |Windows Phone 8 e Windows Phone 8.1|Com suporte|
 |Windows RT 8.1 e Windows RT|Suportado se o usuário atual do dispositivo for o mesmo usuário que registrou o dispositivo.|
 |Windows 8.1|Suportado se o usuário atual do dispositivo for o mesmo usuário que registrou o dispositivo.|
@@ -72,6 +73,6 @@ Se um usuário esquecer sua senha, você poderá ajudá-lo removendo a senha de 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

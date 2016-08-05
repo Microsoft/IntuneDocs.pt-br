@@ -3,8 +3,8 @@ title: "Portal do Azure para políticas de MAM | Microsoft Intune"
 description: "Crie políticas de gerenciamento de aplicativo móvel usando o Portal do Azure. As políticas que você criar aqui podem ser aplicadas a dispositivos com ou sem registro no Intune."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -40,13 +40,13 @@ O portal do Azure dá suporte à criação de políticas de MAM para:
 
     ![Captura de tela da página de logon do portal do Azure](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Quando você estiver entrado com êxito, verá o **Painel**. A página **Painel** vem com um conjunto de blocos padrão que você pode remover e adicionar para personalizar a página.
+2.  Quando você estiver entrado com êxito, verá o **Painel**. A página **Painel** pode ser personalizada.
 
     ![Captura de tela do painel do portal do Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  No menu **Procurar**, localize **Intune**.![Captura de tela do menu Procurar com Intune realçado](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Clique em **Intune > Gerenciamento de aplicativos móveis do Intune > Configurações**.
+4.  Escolha **Intune > Gerenciamento de aplicativos móveis do Intune > Configurações**.
 
     ![Captura de tela da folha de gerenciamento de aplicativos móveis do Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ O portal do Azure dá suporte à criação de políticas de MAM para:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,19 @@ title: Redefinir seu dispositivo pelo site do Portal da Empresa | Microsoft Intu
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: dcde651a95a7f1affaf5489c2664d96a7f5e9e8f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f65861373339a50cfc7dd6756baf3e091409044
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: dcde651a95a7f1affaf5489c2664d96a7f5e9e8f
 
 Se o dispositivo for perdido ou roubado, talvez seja necessário redefini-lo para suas configurações padrão de fábrica para evitar acesso não autorizado aos seus dados. Também é possível redefinir seu dispositivo remotamente usando o [site do Portal da Empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que você pode usar para gerenciar computadores e dispositivos registrados no Intune e para a maioria das mesmas tarefas que você pode fazer ao usar o aplicativo Portal da Empresa.
 
-Se você redefinir este dispositivo, ele não será mais listado no Portal da Empresa e será redefinido para as configurações padrão de fábrica. 
+Se você redefinir este dispositivo, ele não será mais listado no Portal da Empresa e será redefinido para as configurações padrão de fábrica.
 
 Para redefinir o dispositivo:
 
@@ -32,7 +33,9 @@ Para redefinir o dispositivo:
 
 2.  Toque em **Redefinir**.
 
-    ![reset-device](./media//iwp-1-tap-reset-passcode.png)
+    ![reset-device-option-on-company-portal-website](./media//iwp-screen-with-all-options.png)
+
+3. Leia a mensagem de aviso que indica que você está prestes a redefinir o dispositivo para as configurações padrão de fábrica e toque em **Redefinir** para redefinir o dispositivo.
 
 O dispositivo foi redefinido.
 
@@ -43,6 +46,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

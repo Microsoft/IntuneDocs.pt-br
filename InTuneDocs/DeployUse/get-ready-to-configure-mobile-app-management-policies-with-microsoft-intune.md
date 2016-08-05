@@ -3,8 +3,8 @@ title: "Preparar-se para configurar as políticas de MAM | Microsoft Intune"
 description: "Este tópico descreve os pré-requisitos e configuração dos usuários antes de ser possível criar políticas de gerenciamento de aplicativo móvel."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
 
 
 ---
@@ -79,11 +79,13 @@ Para ver a lista completa de aplicativos da Microsoft com suporte, vá para a [G
 
     ![Página Usuários Ativos no portal do Office](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Edite a página do usuário no portal do Office](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  Para conceder a um usuário a capacidade de acessar o portal do Office, o portal do Azure AD e o Portal do Azure, atribua a função de **Administrador Global** ao usuário.
 
     ![Página para editar as funções de usuário no portal do Office](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  Políticas de MAM são implantadas para grupos de usuários no Active Directory do Azure. Para criar grupos de usuários para as políticas de MAM, vá até a página **Grupos** no portal do Office e clique no ícone **+** para criar um novo grupo de segurança.  Digite um nome, uma descrição e clique em **Criar**. Quando o grupo é criado, você pode adicionar usuários ao grupo clicando em **Editar membros**. O grupo de segurança é criado no Active Directory do Azure.
+5.  Políticas de MAM são implantadas para grupos de usuários no Active Directory do Azure. Para criar grupos de usuários para as políticas de MAM, vá até a página **Grupos** no portal do Office e selecione a **opção Adicionar um grupo** no menu superior para criar um novo grupo de segurança.  Digite um nome, uma descrição e clique em **Criar**. Quando o grupo é criado, você pode adicionar usuários ao grupo clicando em **Editar membros**. O grupo de segurança é criado no Active Directory do Azure.
 
     ![Página de grupos de segurança no portal do Office](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ Os administradores globais têm acesso ao [Portal do Azure](https://portal.azure
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

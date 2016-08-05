@@ -3,8 +3,8 @@ title: Remova o dispositivo do Portal da Empresa | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 80912ee8c78e00ae090d21259dfa780cc8d220a2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 43ed6e3dc88ddf0668dafe1f728b6e7c5225ca2c
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 80912ee8c78e00ae090d21259dfa780cc8d220a2
 
 Se você decidir que não deseja que seu dispositivo para ser gerenciado pelo Intune e pelo administrador de TI, você poderá removê-lo do Portal da Empresa usando o [site do Portal da empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que você pode usar para gerenciar computadores e dispositivos registrados no Intune e para a maioria das mesmas tarefas que você pode fazer ao usar o aplicativo Portal da Empresa.
 
-Se você remover seu dispositivo, ele não será mais listado no Portal da Empresa e você também poderá perder o acesso a email, aplicativos ou dados da escola e da empresa. 
+Se você remover seu dispositivo, ele não será mais listado no Portal da Empresa e você também poderá perder o acesso a email, aplicativos ou dados da escola e da empresa.
 
 Para remover seu dispositivo:
 
@@ -33,7 +33,9 @@ Para remover seu dispositivo:
 
 2.  Toque em **Remover**.
 
-    ![remove-device](./media/iwp-1-tap-reset-passcode.png)
+    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3. Leia a mensagem de aviso que indica o que acontecerá se você remover o dispositivo e depois toque em **Remover** para remover seu dispositivo do Portal da Empresa.
 
 O dispositivo foi removido.
 
@@ -43,6 +45,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Usando o Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

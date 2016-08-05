@@ -3,7 +3,7 @@ title: "Registrar dispositivos iOS com o Assistente de Configuração | Microsof
 description: "Registre dispositivos iOS corporativos usando a Apple Configurator Tool para redefinir o dispositivo para os padrões de fábrica e prepará-lo para executar o Assistente de Configuração."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
 
 
 ---
@@ -38,8 +38,7 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 
 2.  **Criar um perfil para dispositivos** Um perfil de registro de dispositivos define as configurações aplicadas a um grupo de dispositivos. Se você ainda não tiver, crie um perfil de registro para dispositivos iOS registrados usando o Apple Configurator.
 
-    1.  No [console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Dispositivos Corporativos** e, em seguida, clique em **Adicionar...**.
-
+    1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Registro do Dispositivo Corporativo** e, em seguida, selecione **Adicionar...**.
     ![Criar perfil de registro do dispositivo](../media/pol-sa-corp-enroll.png)
 
     2.  Insira os detalhes para os perfis de dispositivo:
@@ -50,14 +49,9 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 
         -   **Detalhes de registro** – especifica como os dispositivos são registrados.
 
-            -   **Solicitar afinidade do usuário** – o dispositivo iOS pode ser afiliado a um usuário durante a configuração inicial e depois receber permissão para acessar dados e o email da empresa como esse usuário. Para a maioria dos cenários do Assistente de Configuração, use **Solicitar afinidade do usuário**.
-            Esse modo oferece suporte a vários cenários:
+            -   **Solicitar afinidade do usuário** – o dispositivo deve ser afiliado a um usuário durante a configuração inicial e depois pode receber permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem aos usuários e que precisam usar o portal da empresa (por exemplo, para instalar aplicativos).
 
-                -   **Dispositivo corporativo pessoal** – "Escolha seu próprio dispositivo" (CYOD), semelhante aos dispositivos pessoais ou de propriedade particular, mas o administrador temi certos privilégios, incluindo permissão para apagar, redefinir, administrar e cancelar o registro do dispositivo. O usuário do dispositivo pode instalar aplicativos e tem a maioria das outras permissões para usar o dispositivo quando ele não está bloqueado pela política de gerenciamento.
-
-                -   **Conta de gerenciador de registro de dispositivos** – O dispositivo foi registrado usando uma conta de administrador especial do Intune. Ela pode ser gerenciada como uma conta particular, mas apenas o usuário que conhece as credenciais de gerenciador de registro pode instalar aplicativos, apagar, redefinir, administrar e cancelar o registro do dispositivo. Para obter informações sobre como registrar um dispositivo compartilhado por muitos usuários por meio de uma conta comum, consulte [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) (Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivo no Microsoft Intune).
-
-            -   **Nenhuma afinidade de usuário** – o dispositivo não tem usuários. Use esta afiliação para dispositivos que executam tarefas sem acessar aos dados de usuário local. Aplicativos que exigem a afiliação do usuário são desabilitados ou não funcionarão.
+            -   **Sem afinidade d usuário**: o dispositivo não é afiliado a um usuário. Use esta afiliação para dispositivos que executam tarefas sem acessar aos dados de usuário local. Aplicativos que exigem a afiliação do usuário, incluindo o aplicativo do Portal da Empresa usado para instalar aplicativos de linha de negócios, não funcionarão.
 
         -   **Pré-atribuição de grupo de dispositivos** – todos os dispositivos implantados nesse perfil pertencerão inicialmente a esse grupo. Você pode reatribuir dispositivos após o registro.
 
@@ -121,26 +115,24 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 
     3. Insira o **Nome** e a **URL do Registro** para o servidor MDM da Etapa 6 acima. Para a URL de registro, insira a URL do perfil de registro exportada do Intune. Escolha **Avançar**.  
 
-       Se você receber um aviso sobre os requisitos de perfil de confiança para Apple TV, poderá cancelar com segurança a opção **Perfil de Confiança** selecionando o "X" cinza. Você também pode ignorar com segurança qualquer aviso de certificado de Âncora. Para continuar, clique em **Avançar** até que o assistente seja concluído.
+       Se receber um aviso indicando "URL do servidor não verificada", você poderá desconsiderar o aviso com segurança. Para continuar, clique em **Avançar** até que o assistente seja concluído.
 
-    4.  No painel **Servidores**, selecione "Editar" ao lado do perfil do novo servidor. Garanta que a URL de Registro corresponde exatamente à URL exportada do Intune. Execute novamente a URL original se ela for diferente e escolha **Salvar** o perfil de registro exportado do Intune.
-
-    5.  Conecte os dispositivos móveis iOS ao computador Apple com um adaptador USB.
+    4.  Conecte os dispositivos móveis iOS ao computador Apple com um adaptador USB.
 
         > [!WARNING]
         > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Como melhor prática, os dispositivos devem estar na tela **Hello** quando você iniciar o Assistente de Configuração.
 
-    6.  Selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e, em seguida, selecione **Avançar**.
+    5.  Selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e, em seguida, selecione **Avançar**.
 
-    7. No painel **Registrar no Servidor MDM**, selecione o nome do servidor que você criou e, em seguida, selecione **Avançar**.
+    6. No painel **Registrar no Servidor MDM**, selecione o nome do servidor que você criou e, em seguida, selecione **Avançar**.
 
-    8. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Avançar**.
+    7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Avançar**.
 
-    9. No painel **Criar uma Organização**, escolha **Organização** ou crie uma nova organização e, em seguida, selecione **Avançar**.
+    8. No painel **Criar uma Organização**, escolha **Organização** ou crie uma nova organização e, em seguida, selecione **Avançar**.
 
-    10. No painel **Configurar o Assistente de Instalação do iOS**, escolha as etapas apresentadas ao usuário e, em seguida, selecione **Preparar**. Se solicitado, autentique para atualizar as configurações de confiança.  
+    9. No painel **Configurar o Assistente de Instalação do iOS**, escolha as etapas apresentadas ao usuário e, em seguida, selecione **Preparar**. Se solicitado, autentique para atualizar as configurações de confiança.  
 
-    11. Quando o dispositivo iOS termina a preparação, você pode desconectar o cabo USB.  
+    10. Quando o dispositivo iOS termina a preparação, você pode desconectar o cabo USB.  
 
 8.  **Distribuir dispositivos** Os dispositivos agora estão prontos para registro corporativo. Desligue os dispositivos e distribua-os aos usuários. Quando o dispositivo for ativado, o Assistente de Configuração será iniciado.
 
@@ -151,6 +143,6 @@ Usando o configurador Apple, é possível redefinir de fábrica dispositivos iOS
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

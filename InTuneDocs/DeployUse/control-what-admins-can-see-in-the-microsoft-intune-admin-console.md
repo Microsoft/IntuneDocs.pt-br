@@ -3,7 +3,7 @@ title: "Personalizar exibições do console para funções do administrador | Mi
 description: "Use este tópico para ajudá-lo a filtrar a exibição do console de administração do Intune para permitir que seus administradores vejam apenas os itens necessários para sua função."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,16 +13,16 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
 
 # Personalizar exibições do console do Intune de acordo com funções do administrador
-Você pode filtrar a exibição do console de administração do Microsoft Intune para permitir que seus administradores vejam apenas os itens que precisam ver para sua função. Por exemplo, você pode permitir que apenas os operadores do console de administração atualizem as definições de malware ou redefinam a senha em dispositivos. Você faz isso usando a predefinição **designações**, que atribui a usuários específicos. Quando esses usuários acessam o console do administrador, eles veem apenas itens específicos para suas designações.
+Você pode filtrar a exibição do console de administração do Microsoft Intune para permitir que seus administradores vejam apenas os itens que precisam ver para sua função. Por exemplo, você pode permitir que apenas os operadores do console de administração atualizem as definições de malware ou redefinam a senha em dispositivos. Você faz isso usando a predefinição **designações**, que atribui a usuários específicos. Quando acessam o console de administração, esses usuários podem ver apenas itens específicos para suas designações.
 
-## Como criar uma exibição personalizada
+## Para criar uma exibição personalizada
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Admin** &gt; **Administradores de Serviço**.
 
@@ -62,12 +62,12 @@ Você pode filtrar a exibição do console de administração do Microsoft Intun
 
         -   Bloquear um dispositivo remotamente
 
-        -   Redefinição de senha
+        -   Redefinir uma senha
 
 Na próxima vez em que o administrador configurado abrir o console de administração do Intune, ele receberá o nível de acesso designado.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

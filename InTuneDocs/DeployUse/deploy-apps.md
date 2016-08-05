@@ -3,7 +3,7 @@ title: Implantar aplicativos | Microsoft Intune
 description: "Este tópico explica conceitos que você precisará compreender antes de iniciar a implantação de aplicativos com o Intune."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,32 +13,32 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
+ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
+ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
 
 
 ---
 
 # Implantar aplicativos com o Microsoft Intune
 
-Este tópico explica alguns dos conceitos que você precisará compreender antes de iniciar a implantação de aplicativos com o Microsoft Intune.
+Este tópico explica alguns dos conceitos que você precisa compreender antes de iniciar a implantação de aplicativos com o Microsoft Intune.
 
 
 ## Ações de implantação de aplicativo
 Quando você implanta aplicativos, pode escolher uma das seguintes ações de implantação:
 
--   **Instalação obrigatória** – O aplicativo está instalado no dispositivo, sem necessidade de intervenção do usuário final.
+-   **Instalação obrigatória** – O aplicativo está instalado no dispositivo, sem necessidade de intervenção do usuário.
 
     > [!TIP]
     > Para dispositivos iOS que não estão no modo supervisionado, e para todos os dispositivos Android, o usuário deve aceitar a oferta do aplicativo antes que ele seja instalado.
-    > 
-    >  Se um usuário final desinstalar um aplicativo implantado como instalação obrigatória, o Intune reinstalará automaticamente o aplicativo após o próximo ciclo de inventário, que normalmente ocorre a cada 7 dias.
+    >
+    >  Se um usuário desinstalar um aplicativo implantado como instalação obrigatória, o Intune reinstalará automaticamente o aplicativo após o próximo ciclo de inventário, que normalmente ocorre a cada sete dias.
 
--   **Instalação disponível** – O aplicativo é exibido no portal da empresa e os usuários finais podem instalá-lo sob demanda.
+-   **Instalação disponível** – O aplicativo é exibido no portal da empresa e os usuários podem instalá-lo sob demanda.
 
 -   **Desinstalar** – O aplicativo é desinstalado do dispositivo.
 
--   **Não aplicável** – O aplicativo não será exibido no portal da empresa e não está instalado em todos os dispositivos.
+-   **Não aplicável** – O aplicativo não será exibido no portal da empresa e não está instalado em nenhum dos dispositivos.
 
 #### Entender quais ações de implantação estão disponíveis para cada tipo de instalador
 
@@ -60,11 +60,11 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 ## Conflitos de implantação
 Quando duas implantações com a mesma ação de implantação são recebidas por um dispositivo, as seguintes regras se aplicam:
 
--   Implantações em um grupo de dispositivos têm precedência sobre as implantações para um grupo de usuários. No entanto, se um aplicativo é implantado em um grupo de usuários com a ação de implantação **disponível** e o mesmo aplicativo também é implantado em um grupo de dispositivos com uma ação de implantação de **não aplicável**, o aplicativo será disponibilizado no portal da empresa para os usuários instalarem.
+-   Implantações em um grupo de dispositivos têm precedência sobre as implantações para um grupo de usuários. No entanto, se um aplicativo for implantado em um grupo de usuários com a ação de implantação **disponível** e o mesmo aplicativo também for implantado em um grupo de dispositivos com uma ação de implantação de **não aplicável**, o aplicativo será disponibilizado no portal da empresa para os usuários instalarem.
 
 -   Uma ação de instalação tem precedência sobre uma ação de desinstalação.
 
--   Se uma instalação necessária e uma disponível forem recebidas por um dispositivo, as ações serão combinadas (o aplicativo é necessário e disponível - em outras palavras, o usuário final pode instalá-lo do portal da empresa antes de iniciar a instalação necessária).
+-   Se uma instalação obrigatória e uma instalação disponível forem recebidas por um dispositivo, as ações serão combinadas. Em outras palavras, o usuário pode instalar o aplicativo disponível do portal da empresa antes de iniciar a instalação obrigatória.
 
 
 ## Próximas etapas
@@ -73,6 +73,6 @@ Saiba como [implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

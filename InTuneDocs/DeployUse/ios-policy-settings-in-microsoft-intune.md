@@ -3,8 +3,8 @@ title: "Configurações de política do iOS | Microsoft Intune"
 description: "Crie políticas que controlam as configurações e os recursos nos dispositivos iOS que você gerencia com o Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
-ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+ms.sourcegitcommit: 947328a5c28839d8227a9e5ae0dd8b1fc5ad8e81
+ms.openlocfilehash: 63bc2cedf8d81b050a384a947a0b43827de5c352
 
 
 ---
@@ -39,95 +39,108 @@ Use a **Política de configuração geral do iOS** do Microsoft Intune para defi
 Se a configuração que você está procurando não aparecer nesse tópico, você poderá criá-la usando uma política personalizada do iOS que lhe permite importar configurações criadas usando a [Ferramenta configuradora da Apple](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para obter mais informações, consulte **Configurações de política personalizadas** mais adiante neste tópico.
 
 ### Configurações de segurança
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Exigir uma senha para desbloquear os dispositivos móveis**|Especifique se os usuários serão solicitados a inserir uma senha para acessar seu dispositivo.|Sim|
-|**Tipo de senha necessária**|Especifica o tipo de senha necessária, por exemplo, apenas numérica ou alfanumérica.|Sim|
-|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Isso especifica o número de caracteres de símbolo (como **#** ou **@**) que deve ser incluído na senha.|Sim|
-|**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres na senha.|Sim|
-|**Permitir senha simples**|Permita senhas simples como '0000' e '1234'.|Sim|
-|**Número de falhas de logon repetidas permitido antes do dispositivo ser apagado**|Apaga o dispositivo se houver falha neste número de tentativas de logon.|Sim|
-|**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Especifique o número de minutos antes de a tela do dispositivo ser desativada.|Sim|
-|**Expiração da senha (dias)**|Especifica o número de dias antes que a senha do dispositivo precise ser alterada.|Sim|
-|**Lembrar de histórico de senha**|Especifica se o usuário pode usar senhas que tenha usado anteriormente.|Sim|
-|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.|Sim|
-|**Minutos de inatividade antes de a senha ser necessária**<sup>1</sup>|Especifica quanto tempo o dispositivo pode permanecer ocioso antes que o usuário precise digitar novamente sua senha.|Sim|
-|**Permitir desbloqueio de impressão digital**|Permitir usar a impressão digital para desbloquear o dispositivo.|iOS 7.1 e posterior|
+|**Exigir uma senha para desbloquear os dispositivos móveis**|Especifique se os usuários serão solicitados a inserir uma senha para acessar seu dispositivo.|
+|**Tipo de senha necessária**|Especifica o tipo de senha necessária, por exemplo, apenas numérica ou alfanumérica.|
+|**Número de caracteres complexos necessários na senha**|Isso especifica o número de caracteres de símbolo (como **#** ou **@**) que deve ser incluído na senha.|
+|**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres na senha.|
+|**Permitir senha simples**|Permita senhas simples como '0000' e '1234'.|
+|**Número de falhas de logon repetidas permitido antes do dispositivo ser apagado**|Apaga o dispositivo se houver falha neste número de tentativas de logon.|
+|**Minutos de inatividade antes de a senha ser necessária**<sup>1</sup>|Especifica quanto tempo o dispositivo pode permanecer ocioso antes que o usuário precise digitar novamente sua senha.|
+|**Expiração da senha (dias)**|Especifica o número de dias antes que a senha do dispositivo precise ser alterada.|
+|**Lembrar de histórico de senha**|Especifica se o usuário pode usar senhas que tenha usado anteriormente.|
+|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.|
+|**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Especifique o número de minutos antes de a tela do dispositivo ser desativada.|
+|**Permitir desbloqueio de impressão digital**|Permitir usar a impressão digital para desbloquear o dispositivo.|
 <sup>1</sup> Para dispositivos iOS, quando você define as configurações **Minutos de inatividade antes de a tela desligar** e **Minutos de inatividade antes de a senha ser solicitada**, eles são aplicados em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
 
 ### Configurações de sistema
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir captura de tela**|Permite ao usuário capturar os conteúdos da tela como uma imagem.|Sim|
-|**Permitir centro de controle na tela de bloqueio**|Controla se o aplicativo do centro de controle pode ser acessado quando o dispositivo estiver bloqueado.|iOS 7.1 e posterior|
-|**Permitir exibir notificações na tela de bloqueio**|Permitir ao usuário acessar a exibição de notificações sem desbloquear o dispositivo.|iOS 7.1 e posterior|
-|**Permitir exibição atual na tela de bloqueio**|Controla se as notificações podem ser exibidas quando o dispositivo estiver bloqueado.|iOS 7.1 e posterior|
-|**Permitir envio de dados diagnósticos**|Permitir ou bloquear a habilidade do dispositivo enviar dados de diagnóstico para a Apple.|Sim|
-|**Permitir certificados de TLS não confiáveis**|Permitir certificados do protocolo TLS não confiáveis no dispositivo.|Sim|
-|**Permitir senha quando bloqueado**|Permitir ao usuário acessar o aplicativo de senha enquanto o dispositivo estiver bloqueado.|Sim|
+|**Permitir captura de tela**|Permite ao usuário capturar os conteúdos da tela como uma imagem.|
+|**Permitir centro de controle na tela de bloqueio**|Controla se o aplicativo do centro de controle pode ser acessado quando o dispositivo estiver bloqueado.|
+|**Permitir exibir notificações na tela de bloqueio**|Permitir ao usuário acessar a exibição de notificações sem desbloquear o dispositivo.|
+|**Permitir exibição atual na tela de bloqueio**|Controla se as notificações podem ser exibidas quando o dispositivo estiver bloqueado.|
+|**Permitir certificados de TLS não confiáveis**|Permitir certificados do protocolo TLS não confiáveis no dispositivo.|
+|**Permitir envio de dados diagnósticos**|Permitir ou bloquear a habilidade do dispositivo enviar dados de diagnóstico para a Apple.|
+|**Permitir senha quando bloqueado**|Permitir ao usuário acessar o aplicativo de senha enquanto o dispositivo estiver bloqueado.|
 
 ### Configurações de nuvem – documentos e dados
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir backup no iCloud**|Permite ao usuário fazer backup do dispositivo no iCloud.|Sim|
-|**Permitir sincronização do documento com o iCloud**|Permitir a sincronização de documento e chave-valor para o espaço de armazenamento no iCloud.|Sim|
-|**Permitir sincronização do Photo Stream com o iCloud**|Permitir a sincronização de fotos no dispositivo com o iCloud.|Sim|
-|**Requer Backup com criptografia**|Exigir que quaisquer backups de dispositivo sejam criptografados.|Sim|
+|**Permitir backup no iCloud**|Permite ao usuário fazer backup do dispositivo no iCloud.|
+|**Permitir sincronização do documento com o iCloud**|Permitir a sincronização de documento e chave-valor para o espaço de armazenamento no iCloud.|
+|**Permitir sincronização do Photo Stream com o iCloud**|Permitir a sincronização de fotos no dispositivo com o iCloud.|
+|**Requer Backup com criptografia**|Exigir que quaisquer backups de dispositivo sejam criptografados.|
+|**Permitir que aplicativos gerenciados sincronizem dados no iCloud**|Permitir que os aplicativos que você gerencia com o Intune sincronizem dados com a conta do iCloud dos usuários.|
+|**Permitir que a Entrega continue as atividades em outro dispositivo**|A Entrega permite que você continue o trabalho iniciado em um dispositivo iOS em outro dispositivo iOS ou Mac OS X.|
 
 ### Configurações de aplicativo - navegador
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir Safari**|Especifique se o navegador Safari pode ser usado no dispositivo.|Sim|
-|**Permitir preenchimento automático**|O usuário pode alterar as configurações de preenchimento automático no navegador.|Sim|
-|**Permitir bloqueador de pop-up**|Habilitar ou desabilitar o bloqueador de pop-up do navegador.|Sim|
-|**Permitir cookies**|Permitir que o navegador da Web do dispositivo use cookies.|Sim|
-|**Permitir scripts Java**|Permitir a execução de scripts Java no navegador.|Sim|
-|**Permitir aviso de fraude**|Permitir avisos de fraude no navegador do dispositivo.|Sim|
+|**Permitir Safari**|Especifique se o navegador Safari pode ser usado no dispositivo.|
+|**Permitir preenchimento automático**|O usuário pode alterar as configurações de preenchimento automático no navegador.|
+|**Permitir bloqueador de pop-up**|Habilitar ou desabilitar o bloqueador de pop-up do navegador.|
+|**Permitir cookies**|Permitir que o navegador da Web do dispositivo use cookies.|
+|**Permitir scripts Java**|Permitir a execução de scripts Java no navegador.|
+|**Permitir aviso de fraude**|Permitir avisos de fraude no navegador do dispositivo.|
 
 ### Configurações de aplicativo - aplicativos
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir loja de aplicativo**|Permite que o dispositivo acesse a loja de aplicativos.|Sim|
-|**Exigir uma senha para acessar a loja de aplicativo**|Exigir que o usuário insira uma senha antes de poder visitar a loja de aplicativos.|Sim|
-|**Permitir aquisições em aplicativo**|Permitir que aquisições da loja sejam feitas de um aplicativo em execução.|Sim|
-|**Permitir documentos gerenciados em outros aplicativos não gerenciados**|Permite que documentos corporativos sejam exibidos em qualquer aplicativo.<br>**Exemplo:** você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como não. Depois que o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permitirá salvar.|iOS 7.1 e posterior|
-|**Permitir documentos não gerenciados em outros aplicativos gerenciados**|Permitir que qualquer documento seja exibido em aplicativos gerenciados corporativos.|iOS 7.1 e posterior|
-|**Permitir videoconferência**|Permitir aplicativos de videoconferência como Facetime no dispositivo.|Sim|
-|**Permitir conteúdo de adulto na loja de mídia**|Permitir ao dispositivo acessar o conteúdo classificado como adulto na loja.|Sim|
+|**Permitir loja de aplicativo**|Permite que o dispositivo acesse a loja de aplicativos.|
+|**Exigir uma senha para acessar a loja de aplicativo**|Exigir que o usuário insira uma senha antes de poder visitar a loja de aplicativos.|
+|**Permitir aquisições em aplicativo**|Permitir que aquisições da loja sejam feitas de um aplicativo em execução.|
+|**Permitir documentos gerenciados em outros aplicativos não gerenciados**|Permite que documentos corporativos sejam exibidos em qualquer aplicativo.<br>**Exemplo:** você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como não. Depois que o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permitirá salvar.|
+|**Permitir documentos não gerenciados em outros aplicativos gerenciados**|Permitir que qualquer documento seja exibido em aplicativos gerenciados corporativos.|
+|**Permitir videoconferência**|Permitir aplicativos de videoconferência como Facetime no dispositivo.|
+|**Permitir conteúdo de adulto na loja de mídia**|Permitir ao dispositivo acessar o conteúdo classificado como adulto na loja.|
+|**Permitir que o usuário baixe o conteúdo da iBook Store sinalizado como 'Erotismo'**|Permitir que o usuário baixe livros da categoria “Erotismo”.|
 
 ### Configurações de aplicativo - Jogos
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir adição de amigos no Game Center**|Permitir que o usuário adicione amigos no Game Center.|Sim|
-|**Permitir jogo multiplayer**|Permitir que o usuário execute jogos com vários participantes no dispositivo.|Sim|
+|**Permitir adição de amigos no Game Center**|Permitir que o usuário adicione amigos no Game Center.|
+|**Permitir jogo multiplayer**|Permitir que o usuário execute jogos com vários participantes no dispositivo.|
 
 ### Configurações de recursos do dispositivo - hardware
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir câmera**|Especifica se a câmera no dispositivo pode ser usada.|Sim|
+|**Permitir câmera**|Especifica se a câmera no dispositivo pode ser usada.|
+|**Exigir uma senha de emparelhamento para solicitações de saída do AirPlay**|O AirPlay permite transmitir conteúdo para outros dispositivos da Apple. Use essa configuração para exigir uma senha de emparelhamento para se conectar a outros dispositivos.|
 
 ### Configurações de recursos do dispositivo - celular
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir roaming de Voz**|Permitir roaming de voz quando o dispositivo estiver em uma rede de celular.|Sim|
-|**Permitir roaming de Dados**|Permitir roaming de dados quando o dispositivo estiver em uma rede de celular.|Sim|
-|**Permitir busca em segundo plano global durante roaming**|Permitir ao dispositivo buscar dados, como emails, durante roaming na rede celular.|Sim|
+|**Permitir roaming de Voz**|Permitir roaming de voz quando o dispositivo estiver em uma rede de celular.|
+|**Permitir roaming de Dados**|Permitir roaming de dados quando o dispositivo estiver em uma rede de celular.|
+|**Permitir busca em segundo plano global durante roaming**|Permitir ao dispositivo buscar dados, como emails, durante roaming na rede celular.|
 
 ### Configurações de recursos do dispositivo - recursos
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
 
-|Nome da configuração|Detalhes|iOS|
+|Nome da configuração|Detalhes|
 |----------------|-------|
-|**Permitir Siri**|Permitir o uso do Assistente de voz Siri no dispositivo.|Sim|
-|**Permitir Siri enquanto o dispositivo está bloqueado**|Permitir o uso do Assistente de voz Siri no dispositivo enquanto ele estiver bloqueado.|Sim|
-|**Permitir discagem de voz**|Permitir o uso do recurso de discagem por voz no dispositivo.|Sim|
+|**Permitir Siri**|Permitir o uso do Assistente de voz Siri no dispositivo.|
+|**Permitir Siri enquanto o dispositivo está bloqueado**|Permitir o uso do Assistente de voz Siri no dispositivo enquanto ele estiver bloqueado.|
+|**Permitir discagem de voz**|Permitir o uso do recurso de discagem por voz no dispositivo.|
 
 
 ### Configurações para aplicativos compatíveis e não compatíveis
@@ -139,7 +152,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
 |**Reportar não conformidade quando os usuários instalam os aplicativos listados**|Lista os aplicativos que não são gerenciados pelo Intune, para os quais os usuários não têm permissão para instalar e executar.|
-|**Não relatar não conformidade quando os usuários instalam os aplicativos listados**|Lista os aplicativos que os usuários têm permissão para instalar. Para permanecer compatível, os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
+|**Relatar não conformidade quando os usuários instalam aplicativos não listados**|Lista os aplicativos que os usuários têm permissão para instalar. Para permanecer compatível, os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
 |**Adicionar**|Adiciona um aplicativo à lista selecionada. Especifique um nome da sua preferência, opcionalmente o editor do aplicativo, e a URL para o aplicativo na loja de aplicativos. Leia **Como especificar URLs para lojas de aplicativos** mais adiante neste tópico para obter mais ajuda.|
 |**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.|
 |**Editar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
@@ -195,6 +208,32 @@ Copie a URL da página e use-a como a URL para configurar a lista de aplicativos
 > [!NOTE]
 > Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
 
+### Configurações de registro
+Todas as configurações se aplicam ao iOS 7.1 e posterior.
+
+|Nome da configuração|Detalhes|
+|----------------|--------------------|
+|**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**|Habilita o Bloqueio de Ativação em dispositivos iOS supervisionados.|
+
+### Supervisão
+As configurações a seguir podem ser configuradas em dispositivos com iOS 7.1 e posterior que estão no modo supervisionado.
+
+|Nome da configuração|Detalhes|
+|----------------|--------------------|
+|**Permitir modificação da conta**|Permitir que o usuário altere as configurações de conta, como configurações de email.|
+|**Permitir o AirDrop**|Permitir o uso do recurso Airdrop para trocar conteúdo com dispositivos próximos.|
+|**Permitir alterações nas configurações de uso de dados para celular do aplicativo**|Permitir ao usuário controlar quais aplicativos podem usar dados de celular.|
+|**Permitir que o Siri consulte o conteúdo gerado por usuários da Internet**|Permitir que o Siri acesse sites para responder perguntas.|
+|**Permitir o acesso à iBooks Store**|Permitir que o usuário procure e compre livros da iBooks Store.|
+|**Permitir alterações nas configurações do aplicativo Find My Friends**|Permitir que o usuário altere as configurações do aplicativo Find My Friends.|
+|**Permitir o uso da opção Apagar todo o conteúdo e as configurações do dispositivo**|Permitir que o usuário use a opção de apagar todo o conteúdo e as configurações no dispositivo.|
+|**Permitir que o usuário habilite restrições nas configurações do dispositivo**|Permitir que o usuário configure restrições de dispositivo (controles dos pais) no dispositivo|
+|**Permitir que a pesquisa do Spotlight retorne resultados da Internet**|Permite que a pesquisa do Spotlight se conecte à Internet para fornecer mais resultados.|
+|**Permitir o uso do aplicativo Game Center**|Permitir o uso do aplicativo Game Center.|
+|**Permitir que o emparelhamento de host controle os dispositivos que podem ser emparelhados com um dispositivo iOS**|O emparelhamento de host permite ao administrador controlar com quais dispositivos um dispositivo iOS 7 pode emparelhar.|
+|**Permitir que o usuário instale perfis e certificados de configuração**|Permitir que o usuário instale certificados e perfis de configuração.|
+|**Permitir o uso do aplicativo Mensagens no dispositivo**|Permitir o uso do aplicativo Mensagens para enviar mensagens de texto.|
+
 
 ## Configurações de política personalizada
 
@@ -229,6 +268,6 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: Configurar perfis de certificado | Microsoft Intune
 description: Saiba como criar um perfil de certificado do Intune.
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ Você deve criar um **Perfil de certificado confiável** antes de ser possível 
 
     Saiba mais: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e funcionalidades em seus dispositivos com políticas do Microsoft Intune).
 
-3.  Forneça as informações solicitadas para definir as configurações de perfil de certificado confiável para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. Na configuração **Arquivo de certificado**, importe o Certificado de AC raiz confiável (**.cer**) que você exportou da AC emissora. A configuração **Repositório de destino** se aplica apenas aos dispositivos que executam o Windows 8.1 e posterior e apenas se o dispositivo tiver mais de um repositório de certificados.
+3.  Forneça as informações solicitadas para definir as configurações de perfil de certificado confiável para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. 
+
+    - Na configuração **Arquivo de certificado**, importe o Certificado de AC raiz confiável (**.cer**) que você exportou da AC emissora. A configuração **Repositório de destino** se aplica apenas aos dispositivos que executam o Windows 8.1 e posterior e apenas se o dispositivo tiver mais de um repositório de certificados.
+
+    
+    - Em **Formato de nome da entidade**, selecione **Personalizado** para fornecer um formato de nome da entidade personalizado.  
+
+        As duas variáveis que atualmente têm suporte para o formato personalizado são **Nome Comum (CN)** e **Email (E)**. Usando uma combinação dessas cadeias de caracteres variáveis e estáticas, você pode criar um formato de nome de entidade personalizado, como mostrado neste exemplo:  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        No exemplo, o administrador criou um formato de nome de entidade que, além das variáveis CN e E, usa cadeias de caracteres para a Unidade Organizacional, Organização, Local, Estado e País. Uma lista de cadeias de caracteres com suporte é fornecida no tópico [Função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  Quando tiver terminado, clique em **Salvar política**.
@@ -83,6 +94,15 @@ Depois de criar um perfil de certificado de Autoridade de Certificação confiá
     Saiba mais: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e funcionalidades em seus dispositivos com políticas do Microsoft Intune).
 
 3.  Siga as instruções na página de configuração do perfil para definir as configurações de perfil de certificado SCEP.
+    > [!NOTE]
+    > 
+    > Em **Formato de nome da entidade**, selecione **Personalizado** para fornecer um formato de nome da entidade personalizado.
+    > 
+    >  As duas variáveis que atualmente têm suporte para o formato personalizado são Nome Comum (CN) e Email (E). Usando uma combinação dessas cadeias de caracteres variáveis e estáticas, você pode criar um formato de nome de entidade personalizado, como mostrado neste exemplo:
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    No exemplo, o administrador criou um formato de nome de entidade que, além das variáveis *CN* e *E*, usa cadeias de caracteres para a Unidade Organizacional, Organização, Local, Estado e País. Uma lista de cadeias de caracteres com suporte é fornecida no tópico [Função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
 4.  Quando tiver terminado, clique em **Salvar política**.
 
@@ -145,6 +165,6 @@ Agora você pode usar certificados para ajudar a proteger perfis VPN, Wi-Fi e em
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
