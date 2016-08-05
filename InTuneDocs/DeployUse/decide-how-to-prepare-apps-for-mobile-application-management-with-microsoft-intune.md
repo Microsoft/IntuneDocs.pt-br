@@ -3,7 +3,7 @@ title: "Preparar aplicativos para o gerenciamento de aplicativo móvel | Microso
 description: "As informações neste tópico ajudam você a decidir quando deve usar a App Wrapping Tool e o SDK do Aplicativo para permitir que seus aplicativos de linha de negócios personalizados para usar as políticas de gerenciamento de aplicativos móveis."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: a7aa32704a8eb33d20a3149941b3e6f2a91478a0
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: d2d11cc8bed7575b2fe818c9aa5b2359a62a77e0
 
 
 ---
@@ -69,6 +69,6 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Solucionar problemas de implantação de aplicativo | Microsoft Intune"
-description: 
+description: "Este tópico ajuda você a solucionar problemas de implantação de aplicativo com o Microsoft Intune."
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
-ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+translationtype: Human Translation
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
 
 
 ---
@@ -80,7 +81,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 
 ### Erro: o editor não existe
 Você usa a opção **Adicionar outro contrato de Software** para adicionar um contrato de licença de terceiro. Você tenta adicionar o editor da página **Outro contrato de licenciamento de software**. A página fornece uma lista com os editores existentes em ordem alfabética.
-Você insere o editor ausente, mas recebe o erro **O editor não existe**. 
+Você insere o editor ausente, mas recebe o erro **O editor não existe**.
 
 Isso ocorre por design. O Intune fornece acompanhamento de licença apenas para títulos de softwares populares. O Intune exige que pelo menos quatro contas separadas reportem o software antes que ele esteja disponível como uma opção na carga de trabalho de licenciamento.
 
@@ -104,6 +105,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 
