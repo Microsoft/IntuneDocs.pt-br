@@ -3,7 +3,7 @@ title: Novidades | Microsoft Intune
 description: "Descubra as novidades deste mês e os lançamentos anteriores do Microsoft Intune"
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8bff8951c8ced7656f007787d614fd277401fd0
-ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -22,8 +22,17 @@ ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
 # Novidades do Microsoft Intune
 Conheça as novidades nesta versão do Microsoft Intune. Você também pode descobrir sobre alterações futuras que você deve estar planejando, bem como informações sobre versões anteriores.
 
-As seguintes alterações estão em desenvolvimento para o Intune. Todos esses recursos eventualmente terão suporte para implantações híbridas de clientes (Configuration Manager com o Intune). Para obter mais informações sobre os novos recursos híbridos, confira a [página Hybrid What’s New](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) (Novidades do Híbrido).
+Todos esses recursos eventualmente terão suporte para implantações híbridas de clientes (Configuration Manager com o Intune). Para obter mais informações sobre os novos recursos híbridos, confira a [página Hybrid What’s New](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) (Novidades do Híbrido).
 
+## Agosto de 2016
+## Atualizações do Portal da Empresa
+
+### Android
+- **Aplicativo Android do Portal da Empresa**<br/>
+O aplicativo do Portal da empresa Intune para Android oferece suporte de "dia 0" para o próximo sistema de operacional Android 7.0 para dispositivos móveis.  
+
+- **Remoção pelo Google da funcionalidade de redefinição remota de senha em dispositivos Android 7.0**<br/>
+Em dispositivos Android 7.0, os administradores de TI do Intune e os usuários finais não serão capazes de redefinir remotamente a senha do dispositivo, porque o Google removeu essa funcionalidade para dispositivos Android 7.0. Para versões anteriores ao Android 7.0, os administradores de TI ainda poderão redefinir remotamente a senha do usuário e os usuários finais ainda poderão redefinir suas senhas do site do Portal da Empresa.
 
 ## Julho de 2016
 ## Gerenciamento de aplicativos
@@ -41,7 +50,9 @@ O componente Xamarin do SDK do aplicativo do Intune permite que você habilite o
 O Intune aumentou o limite máximo de registro de dispositivo configurável de 5 para 15 dispositivos por usuário.
 <!---TFS 1289896 --->
 
-
+### Integração do TeamViewer para computadores Windows que executam o software cliente do Intune
+A integração do [TeamViewer](https://www.teamviewer.com) para computadores Windows que executam o cliente do Intune permite que você estabeleça sessões de assistência remota com computadores Windows para ajudar a dar suporte a departamentos de suporte técnico para o usuário final. Compatível com o Windows 7, 8, 8.1 e o Windows 10. Para obter detalhes, consulte [Common Windows PC management tasks with the Microsoft Intune computer client](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client) (Tarefas comuns de gerenciamento de computadores Windows com o cliente de computador do Microsoft Intune).
+<!---TFS 1284856--->
 
 ## Atualizações do Portal da Empresa
 ### Site do Portal da Empresa
@@ -93,7 +104,7 @@ Além das alterações no gerenciamento de grupo, as seguintes funcionalidades s
 Para obter mais informações sobre como essas substituições podem ser mitigadas serão liberadas em agosto.
 
 ### Adição de 'Notificações' ao Portal da Empresa para Android
-Lançaremos uma atualização para o Portal da Empresa para Android em agosto que apresentará um novo ícone **Notificações** na home page. Tocar nesse ícone acessará a pagina **Notificações** que lhe mostrará ao seu usuário final todos os itens que exigem atenção no aplicativo Portal da Empresa, como a não conformidade de dispositivo, atualização de registro e ativação de registro. Se você também usar o aplicativo de Portal da Empresa do iOS, já verá a experiência de notificações. Com a introdução da página **Notificações**, você não verá a página **Configuração de Acesso da Empresa** sempre que iniciar ou retomar o Portal da Empresa para Android contanto que o dispositivo já esteja registrado. Ouvimos que muitos de vocês criaram diretrizes para usuário final e apreciariam um aviso antecipado quando for possível que suas diretrizes/capturas precisem ser atualizadas. Atualize sua documentação para refletir a alteração futura na experiência. Encontre capturas de tela atualizadas aqui: https://aka.ms/androidcpupdate.  
+Lançaremos uma atualização para o Portal da Empresa para Android em setembro que apresentará um novo ícone **Notificações** na home page. Tocar nesse ícone acessará a pagina **Notificações** que lhe mostrará ao seu usuário final todos os itens que exigem atenção no aplicativo Portal da Empresa, como a não conformidade de dispositivo, atualização de registro e ativação de registro. Se você também usar o aplicativo de Portal da Empresa do iOS, já verá a experiência de notificações. Com a introdução da página **Notificações**, você não verá a página **Configuração de Acesso da Empresa** sempre que iniciar ou retomar o Portal da Empresa para Android contanto que o dispositivo já esteja registrado. Ouvimos que muitos de vocês criaram diretrizes para usuário final e apreciariam um aviso antecipado quando for possível que suas diretrizes/capturas precisem ser atualizadas. Atualize sua documentação para refletir a alteração futura na experiência. Encontre capturas de tela atualizadas aqui: https://aka.ms/androidcpupdate.  
 
 
 
@@ -147,6 +158,6 @@ Se você quiser ver o que foi lançado no Intune durante os últimos seis meses,
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,9 +34,11 @@ Se você algum dia cancelar o registro do seu telefone, ele continuará criptogr
 3.  Siga as instruções apresentadas na tela. Durante a criptografia, seu dispositivo pode ser reiniciado várias vezes.
 
 ### O que fazer se você tiver problemas
-**Problema**: seu dispositivo já foi criptografado, mas um dos seguintes cenários ocorre: - O botão de criptografia está desabilitado.
+**Problema**: seu dispositivo já foi criptografado, mas um dos seguintes cenários ocorre:
+
+- O botão de criptografia está desabilitado.
 - Uma mensagem dizendo que você ainda precisa criptografá-lo é exibida.
-- Você receber erros ao tentar usar o aplicativo de Portal da Empresa.
+- Você recebe erros ao tentar usar o aplicativo do Portal da Empresa.
 
 **O que fazer**: verifique se você definiu um PIN ou senha no seu dispositivo.
 
@@ -47,6 +49,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

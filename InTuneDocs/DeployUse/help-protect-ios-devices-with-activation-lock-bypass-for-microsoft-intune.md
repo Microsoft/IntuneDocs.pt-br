@@ -3,7 +3,7 @@ title: "Gerenciar o Bloqueio de Ativação do iOS em dispositivos | Microsoft In
 description: "O Microsoft Intune pode ajudar a gerenciar o Bloqueio de Ativação do iOS, um recurso do aplicativo Buscar meu iPhone para dispositivos iOS 7.1 e posterior."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
+ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
+ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
 
 
 ---
 
 # Ajude a proteger dispositivos iOS com bypass de Bloqueio de Ativação para o Microsoft Intune
-O Microsoft Intune pode ajudar a gerenciar o Bloqueio de Ativação do iOS, um recurso do aplicativo Buscar meu iPhone para dispositivos iOS 7.1 e posterior. O Bloqueio de Ativação é habilitado automaticamente quando o aplicativo Buscar meu iPhone for usado em um dispositivo. Depois que ele for habilitado, a ID da Apple e a senha do usuário deverão ser inseridas antes que qualquer pessoa possa:
+O Microsoft Intune pode ajudar a gerenciar o Bloqueio de Ativação do iOS, um recurso do aplicativo Buscar meu iPhone para dispositivos iOS 7.1 e posterior. O Bloqueio de Ativação é habilitado automaticamente quando um usuário abre o aplicativo Buscar meu iPhone em um dispositivo. Depois que ele for habilitado, a ID da Apple e a senha do usuário deverão ser inseridas antes que qualquer pessoa possa: 
 
 -   Desligar o Buscar meu iPhone
 
@@ -29,31 +29,31 @@ O Microsoft Intune pode ajudar a gerenciar o Bloqueio de Ativação do iOS, um r
 -   Reativar o dispositivo
 
 ## Como o Bloqueio de Ativação afeta você
-Embora o Bloqueio de Ativação ajude a proteger dispositivos iOS e aumente a probabilidade de recuperação caso eles sejam perdidos e roubados, como administrador de TI, essa funcionalidade pode apresentar vários desafios. Por exemplo:
+Embora o Bloqueio de Ativação ajude a proteger dispositivos iOS e aumente a probabilidade de recuperação de um dispositivo perdido ou roubado, como administrador de TI, essa funcionalidade pode apresentar vários desafios. Por exemplo:
 
--   Um dos seus usuários configura o Bloqueio de Ativação em um dispositivo. O usuário sai da empresa e retorna o dispositivo. Sem a ID da Apple e a senha do usuário, não é possível reativar o dispositivo.
+-   Um usuário configura o Bloqueio de Ativação em um dispositivo. O usuário sai da empresa e retorna o dispositivo. Sem a ID da Apple e a senha do usuário, não é possível reativar o dispositivo.
 
 -   Você precisa de um relatório de todos os dispositivos que têm o Bloqueio de Ativação habilitado.
 
--   Durante uma atualização do dispositivo na sua organização, você deseja transferir alguns dispositivos para um outro departamento. Só é possível reatribuir dispositivos que não têm o Bloqueio de Ativação habilitado.
+-   Você deseja transferir alguns dispositivos para um outro departamento durante uma atualização do dispositivo na sua organização. Só é possível reatribuir dispositivos que não têm o Bloqueio de Ativação habilitado.
 
 Para ajudar a resolver esses problemas, a Apple introduziu bypass de Bloqueio de Ativação no iOS 7.1. Isso permite remover o Bloqueio de Ativação de dispositivos supervisionados sem a ID Apple e a senha do usuário. Dispositivos supervisionados podem gerar um código de bypass de Bloqueio de Ativação específico do dispositivo, que é armazenado no servidor de ativação da Apple.
 
 > [!TIP]
-> O modo supervisionado para dispositivos iOS permite que você use a ferramenta Apple Configurator para bloquear um dispositivo para limitar a funcionalidade para fins comerciais específicos. O modo supervisionado geralmente é somente para dispositivos corporativos.
+> O modo supervisionado para dispositivos iOS permite que você use o Apple Configurator para bloquear um dispositivo e limitar a funcionalidade para fins comerciais específicos. O modo supervisionado geralmente é somente para dispositivos corporativos.
 
 ## Como o Intune ajuda você a gerenciar o Bloqueio de Ativação
-O Intune pode solicitar o status de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados que executam o iOS 7.1 e posterior. Somente para dispositivos supervisionados, o Intune pode recuperar o código de bypass de Bloqueio de Ativação e emiti-lo diretamente para o dispositivo. Se o dispositivo for apagado, você poderá acessá-lo diretamente usando o código como o nome de usuário e uma senha em branco).
+O Intune pode solicitar o status de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados que executam o iOS 7.1 e posterior. Somente para dispositivos supervisionados, o Intune pode recuperar o código de bypass de Bloqueio de Ativação e emiti-lo diretamente para o dispositivo. Se o dispositivo for apagado, você poderá acessá-lo diretamente usando o código como o nome de usuário e uma senha em branco.
 
 **Os benefícios para o negócio são**:
 
 -   O usuário obtém os benefícios de segurança do aplicativo Buscar meu iPhone.
 
--   É possível permitir que o usuário faça seu trabalho sabendo que, quando o dispositivo precisar ser realocado, será possível desativar ou desbloqueá-lo.
+-   É possível permitir que usuários façam seu trabalho e saibam que, quando um dispositivo precisar ser realocado, será possível desativá-lo ou desbloqueá-lo.
 
 ## Como usar o bypass de Bloqueio de Ativação do console do administrador do Intune
 > [!IMPORTANT]
-> Depois de efetuar bypass do Bloqueio de Ativação em um dispositivo, ele aplicará automaticamente um novo Bloqueio de Ativação se o aplicativo Buscar meu iPhone for aberto. Por isso, **é necessário estar em posse física do dispositivo antes de seguir este procedimento**.
+> Depois de efetuar bypass do Bloqueio de Ativação em um dispositivo, um novo Bloqueio de Ativação será aplicado automaticamente se o aplicativo Buscar meu iPhone for aberto. Por isso, **é necessário estar em posse física do dispositivo antes de seguir este procedimento**.
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos de Propriedade Corporativa**.
 
@@ -76,14 +76,14 @@ Você pode ver quais dispositivos estão usando o Bloqueio de Ativação de duas
 
     -   Não habilitado
 
-    O campo **Status de Ativação do Bloqueio** fica em branco para dispositivos que não executam o iOS 7.1 ou posterior.
+    A caixa **Status de Ativação do Bloqueio** fica em branco para dispositivos que não executam o iOS 7.1 ou posterior.
 
--   Selecione um dispositivo em uma exibição de grupos, você pode ver o status de Bloqueio de Ativação no painel de detalhes do dispositivo.
+-   Selecione um dispositivo em uma exibição de grupos para ver o status de Bloqueio de Ativação no painel de detalhes do dispositivo.
 
-    Se você selecionar um dispositivo no nó **Todos os Dispositivos Corporativos** e o Bloqueio de Ativação estiver habilitado para o dispositivo, você também poderá ver o código de bypass. Esse código pode ser usado para emitir manualmente um bypass de Bloqueio de Ativação.
+    Se selecionar um dispositivo no nó **Todos os Dispositivos Corporativos** e o Bloqueio de Ativação estiver habilitado para o dispositivo, você também poderá ver o código de bypass. Esse código pode ser usado para emitir manualmente um bypass de Bloqueio de Ativação.
 
     > [!IMPORTANT]
-    >O Intune faz o inventário dos dispositivos para o Bloqueio de Ativação a cada 7 dias. Por causa disso, os dispositivos podem não ser exibidos imediatamente com seu status de Bloqueio de Ativação no console do Intune.
+    >O Intune faz o inventário dos dispositivos para o Bloqueio de Ativação a cada sete dias. Por causa disso, os dispositivos podem não ser exibidos imediatamente com seu status de Bloqueio de Ativação no console do Intune.
 
 
 ### Consulte também
@@ -92,6 +92,6 @@ Você pode ver quais dispositivos estão usando o Bloqueio de Ativação de duas
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

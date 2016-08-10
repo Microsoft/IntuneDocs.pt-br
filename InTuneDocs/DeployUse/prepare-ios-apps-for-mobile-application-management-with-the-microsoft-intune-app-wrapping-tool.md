@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ A ferramenta é um aplicativo de linha de comando do Mac OS que cria um "wrapper
 Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS - Português (Brasil)](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Etapa 1: Cumprir os pré-requisitos para usar a ferramenta de encapsulamento de aplicativos
+Leia [esta postagem de blog](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para saber mais sobre os pré-requisitos e como defini-los.
 
 |Requisito|Mais informações|
 |---------------|--------------------------------|
 |Sistema operacional e conjunto de ferramentas com suporte|Você deve executar a ferramenta de encapsulamento de aplicativo em um computador Mac que execute o OS X 10.8.5 ou posterior e que tenha a versão 5 do conjunto de ferramentas XCode ou posterior instalada.|
 |Certificado de autenticação e perfil de provisionamento|Você precisa ter um perfil de provisionamento e um certificado de autenticação da Apple. Consulte sua [Apple developer documentation (Documentação para desenvolvedores da Apple)](https://developer.apple.com/).|
-|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo|Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor de software independente). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 7.0 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte sua documentação para desenvolvedor da Apple. O aplicativo deve ter a extensão de formato **.app**ou **.ipa**.|
+|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo|Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor de software independente). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 7.1 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte sua documentação para desenvolvedor da Apple. O aplicativo deve ter a extensão de formato **.app**ou **.ipa**.|
 |Aplicativos que a ferramenta de encapsulamento não pode processar|Aplicativos criptografados, não assinados e com atributos de arquivo estendido.|
 |Aplicativos que usam a Informações para aplicativos que usam a ADAL (Biblioteca do Active Directory do Azure)|Se seu aplicativo usar ADAL, o aplicativo deverá incorporar uma versão da ADAL maior ou igual à 1.0.2 e o desenvolvedor deve conceder ao aplicativo acesso ao recurso de Gerenciamento de Aplicativos Móveis do Intune.<br /><br />Consulte as [Informações para aplicativos que usam a Biblioteca do Azure Active Directory](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) neste artigo para ver mais detalhes sobre como usar o ADAL.|
 |Direitos de configuração para seu aplicativo|Você deve definir direitos, que concedem ao aplicativo permissões adicionais e recursos além daqueles normalmente concedidos, antes de você encapsular o aplicativo. Consulte [Configurando direitos de aplicativo](#setting-app-entitlements) para obter instruções.|
@@ -292,6 +293,6 @@ Use as seguintes práticas recomendadas de segurança e privacidade ao usar a fe
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

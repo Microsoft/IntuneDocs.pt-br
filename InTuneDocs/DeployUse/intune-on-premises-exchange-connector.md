@@ -3,8 +3,8 @@ title: Exchange Connector para EAS local | Microsoft Intune
 description: "Use a ferramenta do Connector para habilitar a comunicação entre o console de administração do Intune e o Exchange Server local para MDM do Exchange ActiveSync."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 # Instalar o Exchange Connector local no Intune
 
 
-Para configurar uma conexão que habilite o Microsoft Intune a se comunicar com o Exchange Server, que hospeda as caixas de correio dos dispositivos móveis, você precisa baixar e configurar a ferramenta On-Premises Connector do console do administrador do Intune.
+Para configurar uma conexão que habilite o Microsoft Intune a se comunicar com o Exchange Server, que hospeda as caixas de correio dos dispositivos móveis, você precisa baixar e configurar a ferramenta On-Premises Connector do console do administrador do Intune. O Intune oferece suporte apenas a uma conexão do conector do Exchange de qualquer tipo por assinatura.
 
 ## Requisitos do Conector Local
 A tabela a seguir lista os requisitos para o computador no qual o Exchange Connector local será instalado.
@@ -30,7 +30,7 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 |Requisito|Mais informações|
 |---------------|--------------------|
 |Sistemas operacionais|O Intune dá suporte para o Exchange Connector local em um computador que executa qualquer edição do Windows Server 2008 SP2 64 bits, Windows Server 2008 R2, Windows Server 2012 ou Windows Server 2012 R2.<br /><br />O conector não tem suporte em instalações Server Core.|
-|Versão do Microsoft Exchange|O Connector local requer o Microsoft Exchange 2010 SP1 ou posterior.|
+|Versão do Microsoft Exchange|O Connector local requer o Microsoft Exchange 2010 SP1 ou posterior, ou Exchange Online Dedicated herdado. Para determinar se o seu ambiente Exchange Online Dedicated está na configuração **nova** ou **herdada**, entre em contato com seu gerente de conta.|
 |Autoridade de gerenciamento de dispositivo móvel| [Defina a autoridade de gerenciamento de dispositivo móvel para Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Hardware|O computador em que você instala o conector requer uma CPU de 1,6 GHz com 2 GB de ram e 10 GB de espaço livre mínimo em disco do hardware.|
 |Sincronização do Active Directory|Antes de usar qualquer um dos conectores para conectar o Intune ao Exchange Server, é preciso [configurar a sincronização do Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) para que os usuários e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
@@ -131,6 +131,6 @@ Você também pode verificar a hora e data da última tentativa de sincronizaç�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

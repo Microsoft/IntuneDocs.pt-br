@@ -3,8 +3,8 @@ title: Recursos de gerenciamento do computador Windows | Microsoft Intune
 description: Saiba mais sobre os recursos do Intune ao gerenciar computadores Windows com o software cliente do Intune.
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune,
 
 -   **Proteção antimalware** – O Intune conta com o Endpoint Protection, que ajuda a proteger seus computadores contra malware.
 
--   **Assistência remota** – O Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluso no Intune <!--- (requires TeamViewer software)--->.
+-   **Assistência remota** – O Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluso no Intune (requer o software TeamViewer).
 
 -   **Gerenciamento de licenças de software** – Controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
 -   **Implantação de aplicativo** – Implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativo não estão disponíveis quando você gerencia computadores com o software cliente.
@@ -48,7 +48,7 @@ O Intune pode gerenciar computadores que executam as seguintes versões do Windo
 
 -   **Windows 8.1** - Versões Pro e Enterprise.
 
-- **Windows 10** - Versões Home, Pro, Education e Enterprise.
+- **Windows 10** - Versões Pro, Education e Enterprise.
 
 
 ## Requisitos mínimos de hardware
@@ -74,6 +74,6 @@ Veja a seguir os requisitos de software para instalar o cliente de computador do
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

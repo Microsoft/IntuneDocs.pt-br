@@ -3,7 +3,7 @@ title: Configurar gerenciamento de iOS e MAC | Microsoft Intune
 description: "Habilite MDM (gerenciamento de dispositivo móvel) para dispositivos iOS, inclusive iPads e iPhones, bem como dispositivos Mac OS X com o Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,13 +13,15 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 
 
 ---
 
 # Configurar gerenciamento de dispositivos iOS e Mac
+Para configurar seu dispositivo iOS ou Mac, você pode encontrar ajuda [aqui](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md).
+
 Gerenciamento de dispositivo móvel do Intune de iPads, iPhones e dispositivos Mac OS X e conceder acesso a aplicativos e email da empresa. Um certificado APNs (Apple Push Notification Service) é necessário para o Intune gerenciar dispositivos iOS e Mac. Depois que o certificado for adicionado ao Intune, os usuários poderão instalar o aplicativo Portal da Empresa para registrar seus dispositivos ou o administrador poderá configurar o [gerenciamento de dispositivos iOS corporativos](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurar Intune**<br>
@@ -39,7 +41,9 @@ Gerenciamento de dispositivo móvel do Intune de iPads, iPhones e dispositivos M
     No [Console de administração do Microsoft Intune](http://manage.microsoft.com), vá para **Administração** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **iOS e Mac OS X** &gt; **Carregar um Certificado APNs** e clique em **Carregar o certificado APNs**. **Vá** até o arquivo de certificado (.pem) e clique em **Abrir** e, em seguida, digite sua **ID Apple**. Com o certificado APNs, o Intune pode registrar e gerenciar dispositivos iOS enviando políticas para dispositivos móveis registrados.
 
 5.  **Diga aos usuários como obter acesso aos recursos da empresa com o portal da empresa**<br>
-    Seus usuários precisam saber como registrar seus dispositivos e o que esperar quando eles são abertos no gerenciamento. [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    Seus usuários precisam saber como registrar seus dispositivos e o que esperar quando eles são abertos no gerenciamento.
+    - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [Diretrizes do usuário final para dispositivos iOS e Mac](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 Se sua empresa ou organização adquirir dispositivos iOS para os usuários, esses dispositivos também poderão ser registrados para gerenciamento como [dispositivos iOS de propriedade da empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -48,6 +52,6 @@ Se sua empresa ou organização adquirir dispositivos iOS para os usuários, ess
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

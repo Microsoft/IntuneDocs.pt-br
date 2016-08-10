@@ -3,7 +3,7 @@ title: Registrar dispositivos | Microsoft Intune
 description: "O MDM (Gerenciamento de Dispositivo Móvel) usa o registro para trazer dispositivos para o gerenciamento e permitir acesso a recursos."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
-ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ Especifica se o método de registro dá suporte a "Afinidade de Usuário", que s
   - Acesso condicional para dados de email e da empresa
   - Aplicativo do Portal da Empresa
 
-[Afinidade do usuário](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([Voltar à tabela](#overview-of-device-enrollment-methods))
+[Afinidade do usuário](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### Bloqueio
 Especifica se o dispositivo pode ser bloqueado para impedir que o usuário remova a política do Intune, removendo efetivamente o dispositivo do gerenciamento. Para dispositivos iOS, bloquear o dispositivo requer que ele esteja no modo Supervisionado.
@@ -124,6 +124,6 @@ Computadores gerenciados com o software cliente Intune não podem ser apagados n
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Implante o aplicativo de navegador gerenciado para restringir a na
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,22 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 44f6ee1354f1fdfc7f8db7d5b844dc12c01e686c
+ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
+ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
 
 
 ---
 
 # Gerenciar o acesso à internet usando políticas de navegador gerenciado com o Microsoft Intune
-O navegador gerenciado é um aplicativo de navegação na web que você pode implantar em sua organização usando o Microsoft Intune. Uma política de navegador gerenciado configura uma lista de permissões ou uma lista de bloqueios que restringe os sites que podem ser visitados pelos usuários do navegador gerenciado.
+O navegador gerenciado é um aplicativo de navegação na Web que você pode implantar em sua organização usando o Microsoft Intune. Uma política de navegador gerenciado configura uma lista de permitidos ou uma lista de contatos bloqueados que restringe os sites que podem ser visitados pelos usuários do navegador gerenciado.
 
-Como esse aplicativo é um aplicativo gerenciado, você também pode aplicar políticas de gerenciamento de aplicativo móvel ao aplicativo, como controlar o uso dos comandos recortar, copiar e colar, impedir capturas de tela e garantir que os links para conteúdos em que os usuários clicam abram somente em outros aplicativos gerenciados. Para detalhes, consulte [Configure and deploy mobile application management policies in the Microsoft Intune console (Configurar e implantar políticas de gerenciamento de aplicativo móvel no console do Microsoft Intune)](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Já que este aplicativo é um aplicativo gerenciado, você também pode aplicar políticas de gerenciamento de aplicativos móveis para o aplicativo. Essas políticas podem incluir controlar o uso de recortar, copiar e colar, impedir capturas de tela e garantir que os links para conteúdo que os usuários selecionem sejam abertos somente em outros aplicativos gerenciados. Para detalhes, consulte [Configure and deploy mobile application management policies in the Microsoft Intune console (Configurar e implantar políticas de gerenciamento de aplicativo móvel no console do Microsoft Intune)](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Se os usuários instalarem o navegador gerenciado da loja de aplicativos e ele não for gerenciado pelo Intune, o comportamento a seguir será aplicável: iOS – o aplicativo de navegador gerenciado pode ser usado como um navegador da Web básico, mas alguns recursos não estarão disponíveis e ele não poderá acessar dados de outros aplicativos gerenciados pelo Intune.
-Android – o aplicativo de navegador gerenciado não pode ser usado.
-Se os usuários instalarem o navegador gerenciado em um dispositivo iOS com uma versão menor do que o iOS 9, ele não será gerenciado por nenhuma das políticas que você criar. Para garantir que o navegador seja gerenciado pelo Intune, eles deverão desinstalar o aplicativo antes de você implantá-lo como um aplicativo gerenciado. No iOS 9 e versões posterior, se o usuário instalar o navegador gerenciado, será solicitado que ele permita que o navegador seja gerenciado pela política.
+>Se os usuários instalarem o navegador gerenciado da loja de aplicativos e ele não for gerenciado pelo Intune, o seguinte comportamento se aplicará:<br /><br />
+iOS – o aplicativo de navegador gerenciado pode ser usado como um navegador da Web básico, mas alguns recursos não estarão disponíveis e ele não será capaz de acessar dados de outros aplicativos gerenciados pelo Intune.<br />
+Android – o aplicativo de navegador gerenciado não pode ser usado.<br /><br />
+Se os usuários instalarem o navegador gerenciado em um dispositivo iOS com uma versão anterior ao iOS 9, ele não será gerenciado por nenhuma das políticas que você criar. Para garantir que o navegador seja gerenciado pelo Intune, os usuários deverão desinstalar o aplicativo antes de você implantá-lo como um aplicativo gerenciado. No iOS 9 e versões posteriores, se o usuário instalar o navegador gerenciado, será solicitado que ele permita que o navegador seja gerenciado pela política.
 
 Você pode criar políticas de navegador gerenciado para os seguintes tipos de dispositivo:
 
@@ -35,11 +36,11 @@ Você pode criar políticas de navegador gerenciado para os seguintes tipos de d
 
 -   Dispositivos que executam o iOS 7.1 e versões posteriores
 
-O navegador gerenciado do Intune dá suporte à abertura de conteúdo da web de [parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+O navegador gerenciado do Intune dá suporte à abertura de conteúdo da Web de [parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Criar uma política de navegador gerenciado
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Adicionar Política**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** &gt; **Adicionar Política**.
 
 2.  Configure um dos seguintes tipos de política de **Software** :
 
@@ -51,15 +52,17 @@ O navegador gerenciado do Intune dá suporte à abertura de conteúdo da web de 
 
 3.  Use a tabela a seguir para ajudá-lo a definir as configurações da política de navegador gerenciado:
 
-|Nome da configuração|Detalhes|
-    |----------------|--------------------|
-    |**Nome**|Insira um nome exclusivo para a política de navegador gerenciado para ajudar a identificá-lo no console do Intune.|
-    |**Descrição**|Forneça uma descrição que proporciona uma visão geral da política de navegador gerenciado e outras informações relevantes que o ajudarão a localizá-la.|
-    |**Habilite uma lista de permissões ou lista de bloqueios para restringir as URLs que o navegador gerenciado pode abrir**|Selecione uma das seguintes opções:<br /><br />**Permitir que o navegador gerenciado abra apenas as URLs listadas abaixo** – especifique uma lista de URLs que o navegador gerenciado pode abrir.<br /><br />**Impedir que o navegador gerenciado abra as URLs listadas abaixo** – especifique uma lista de URLs que o navegador gerenciado será impedido de abrir. **Observação:** você não pode incluir URLs permitidas e bloqueadas na mesma política de navegador gerenciado.<br />Para obter mais informações sobre os formatos de URL que pode especificar, consulte **Formato de URL para URLs permitidas e bloqueadas** neste tópico.|
+    - **Nome**. Insira um nome exclusivo para a política de navegador gerenciado para ajudar a identificá-lo no console do Intune.
+    - **Descrição**. Forneça uma descrição que proporciona uma visão geral da política de navegador gerenciado e outras informações relevantes que o ajudarão a localizá-la.
+    - **Habilite uma lista de permitidas ou lista de bloqueadas para restringir as URLs que o navegador gerenciado pode abrir**. Selecione uma das seguintes opções:
+        - **Permitir que o navegador gerenciado abra apenas as URLs listadas abaixo (lista de permissões)**. Especifique uma lista de URLs que o navegador gerenciado pode abrir.
+        - **Impedir que o navegador gerenciado abra as URLs listadas abaixo**. Especifique uma lista de URLs cuja abertura pelo navegador gerenciado será bloqueada.
+**Observação:** você não pode incluir URLs permitidas e bloqueadas na mesma política de navegador gerenciado.
+Para obter mais informações sobre os formatos de URL que pode especificar, consulte **Formato de URL para URLs permitidas e bloqueadas** neste tópico.
 
-4.  Quando tiver terminado, clique em **Salvar política**.
+4.  Quando tiver terminado, selecione **Salvar Política**.
 
-A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política** .
+A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
 ## Crie uma implantação para o aplicativo de navegador gerenciado
 Depois de ter criado a política de navegador gerenciado, você pode criar uma implantação de software para o aplicativo de navegador gerenciado e associá-la à política de navegador gerenciado que você criou.
@@ -73,25 +76,25 @@ Para mais informações sobre como implantar aplicativos, consulte [Deploy apps 
 
 ## Segurança e privacidade para o navegador gerenciado
 
--   Em dispositivos iOS, sites visitados por usuários que possuem um certificado expirado ou não confiável não pode ser abertos.
+-   Em dispositivos iOS, sites visitados por usuários que têm um certificado expirado ou não confiável não pode ser abertos.
 
--   As configurações feitas pelos usuários para o navegador interno em seus dispositivos não são usadas pelo navegador gerenciado. Isso ocorre porque o navegador gerenciado não tem acesso a essas configurações.
+-   As configurações realizadas pelos usuários para o navegador interno em seus dispositivos não são usadas pelo navegador gerenciado. Isso ocorre porque o navegador gerenciado não tem acesso a essas configurações.
 
--   Se você configurar as opções **Exigir PIN simples para acesso** ou **Exigir credenciais corporativas para acesso** em uma política de gerenciamento de aplicativo móvel associada ao navegador gerenciado e um usuário clicar no link de ajuda na página de autenticação, eles podem navegar por qualquer site da Internet, independentemente dele ter sido adicionado a uma lista de bloqueios na política de navegador gerenciado.
+-   Se você configurar as opções **Exigir PIN simples para acesso** ou **Exigir credenciais corporativas para acesso** em uma política de gerenciamento de aplicativo móvel associada ao navegador gerenciado e um usuário selecionar o link de ajuda na página de autenticação, eles poderão navegar por qualquer site da Internet, independentemente dele ter sido adicionado a uma lista de bloqueados na política de navegador gerenciado.
 
 -   O navegador gerenciado pode bloquear o acesso a sites apenas quando eles são acessados diretamente. Ele não pode bloquear o acesso quando serviços intermediários (como um serviço de tradução) são usados para acessar o site.
 
--   Para permitir a autenticação e garantir que a documentação possa ser acessada, **&#42;.microsoft.com** é isento das configurações da lista de permitidos e lista de contatos bloqueados – ele sempre é permitido.
+-   Para permitir a autenticação e garantir que a documentação possa ser acessada, **&#42;.microsoft.com** é isenta das configurações da lista de permitidos ou bloqueados. Ela é sempre permitida.
 
 ### Desligar os dados de uso
-A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do navegador gerenciado para melhorar os produtos e serviços Microsoft, mas o usuário pode desligar a coleta de dados usando a configuração **Dados de Uso** em seu dispositivo. Você não tem controle sobre a coleta desses dados.
+A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do navegador gerenciado para aprimorar os produtos e serviços Microsoft. Os usuários podem desligar a coleta de dados usando a configuração **Dados de Uso** em seus dispositivos. Você não tem controle sobre a coleta desses dados.
 
 ## Informações de referência
 
 ### Formato de URL para URLs permitidas e bloqueadas
-Use as informações a seguir para saber mais sobre os formatos permitidos e caracteres curinga que você pode usar ao especificar URLs para as listas permitidas e bloqueadas.
+Use as informações a seguir para saber mais sobre os formatos permitidos e caracteres curinga que você pode usar ao especificar URLs para as listas de permitidas e bloqueadas:
 
--   Você pode usar o símbolo de caractere curinga ‘**&#42;**’de acordo com as regras na lista de padrões permitidos abaixo.
+-   Você pode usar o símbolo de caractere curinga (**&#42;**) de acordo com as regras na lista de padrões permitidos abaixo.
 
 -   Certifique-se de prefixar todas as URLs com **http** ou **https** ao inseri-las na lista.
 
@@ -101,7 +104,7 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
 
     -   Porta 443 para https
 
-    Não há suporte para o uso de caracteres curinga para o número da porta, como **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*;**
+    Não há suporte para o uso de caracteres curinga no número da porta. Por exemplo, não há suporte para **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*;**.
 
 -   Use a tabela a seguir para aprender sobre os padrões permitidos que você pode usar para especificar URLs:
 
@@ -112,11 +115,11 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
     |http://www.contoso.com/&#42;|Corresponde a todas as URLs iniciadas por www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
     |http://&#42;.contoso.com/&#42;|Corresponde a todos os subdomínios em contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
     |http://www.contoso.com/images|Corresponde a uma única pasta|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Corresponde a uma única página, usando um número de porta|http://www.contoso.com:80||
+    |http://www.contoso.com:80|Corresponde a uma única página, usando um número da porta|http://www.contoso.com:80||
     |https://www.contoso.com|Corresponde a uma única página segura|https://www.contoso.com|http://www.contoso.com|
     |http://www.contoso.com/images/&#42;|Corresponde a uma única pasta e todas as subpastas|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
--   Seguem exemplos de algumas das entradas que você não pode especificar:
+-   A seguir, exemplos de algumas das entradas que você não pode especificar:
 
     -   &#42;.com
 
@@ -151,6 +154,6 @@ Se várias políticas de navegador gerenciado forem implantadas em um dispositiv
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

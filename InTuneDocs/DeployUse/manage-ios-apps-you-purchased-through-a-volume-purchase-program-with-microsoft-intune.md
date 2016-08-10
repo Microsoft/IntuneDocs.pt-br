@@ -4,7 +4,7 @@ description: "Use o Intune para gerenciar aplicativos comprados por volume da Ap
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 
 2.  Escolha o aplicativo que deseja implantar, selecione **Gerenciar Implantação** e use as instruções no tópico [Implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, criação e implantação do aplicativo.
 
+> [!TIP]
+> Você deve escolher uma ação de implantação do tipo **Necessária**. Atualmente, não há suporte para as instalações disponíveis.
+
 Quando você implantar o aplicativo como uma instalação **Obrigatória**, uma licença será usada por cada usuário que instalar o aplicativo.
 
 Para recuperar uma licença, você deve alterar a ação de implantação para **Desinstalar**. A licença será recuperada quando o aplicativo for desinstalado.
@@ -87,6 +90,6 @@ Você pode monitorar quais aplicativos de VPP foram implantados e quantas licen�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

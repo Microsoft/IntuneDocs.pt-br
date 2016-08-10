@@ -3,8 +3,8 @@ title: Redefinir (apagar) seu dispositivo Windows perdido ou roubado | Microsoft
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
 
 
 ---
@@ -34,7 +34,7 @@ Se um telefone que tenha sido registrado no Intune for perdido ou roubado, você
 
 2.  Em **Meus Dispositivos**, selecione dispositivo perdido ou roubado.
 
-3.  Toque em **Redefinir** &gt; **Redefinir**.
+3.  Toque no ícone **Redefinir** e depois em **redefinir**.
 
 Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
@@ -42,6 +42,7 @@ Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu a
 [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 

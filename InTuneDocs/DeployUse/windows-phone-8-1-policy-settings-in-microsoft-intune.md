@@ -3,8 +3,8 @@ title: "Configurações de política do Windows Phone 8.1 | Microsoft Intune"
 description: "O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Windows Phone 8.1. Além disso, você pode especificar valores de OMA-URI para criar configurações personalizadas que não estão disponíveis no Intune."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Use a **Política de configuração geral do Windows Phone (Windows Phone 8.1 e 
 |----------------|-----------------------------------------|
 |**Permitir copiar e colar**|Permitir a funcionalidade copiar e colar nos dispositivos.|Não|Sim|
 
-### Configurações para aplicativos compatíveis e não compatíveis
-Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma lista de aplicativos compatíveis ou incompatíveis usando as seguintes informações:
+### Configurações para URLs permitidas e bloqueadas
+Na lista de **Aplicativos permitidos e bloqueados**, especifique uma lista de aplicativos que você deseja permitir ou bloquear usando as seguintes informações:
 
 > [!NOTE]
-> Uma única política só pode conter uma lista de compatibilidade ou de incompatibilidade. Não é possível especificar ambos na mesma política.
+> Uma única política só pode conter uma lista de aplicativos permitidos ou uma lista de aplicativos bloqueados. Não é possível especificar ambos na mesma política.
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 > Se você especificar uma lista de aplicativos permitidos para dispositivos Windows Phone 8.1, deverá adicionar o aplicativo Portal da empresa a essa lista, caso contrário, ele será bloqueado.
 
 
-### Informações de referência para aplicativos compatíveis e não compatíveis
+### Informações de referência para aplicativos permitidos e bloqueados
 
 #### Como especificar URLs para lojas de aplicativos
-Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e incompatíveis, use o seguinte formato:
+Para especificar uma URL de aplicativo na lista de aplicativos permitidos e bloqueados, use o seguinte formato:
 
 Na [página Aplicativos+Jogos do Windows Phone](http://www.windowsphone.com/en-us/store/overview) , procure o aplicativo que você deseja usar.
 
-Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar essa URL na lista de aplicativos compatíveis ou incompatíveis.
+Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.
 
 **Exemplo:** Procure o aplicativo Skype na loja. A URL usada será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Na caixa de diálogo **Adicionar ou Editar Configuração de OMA-URI**, especifi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

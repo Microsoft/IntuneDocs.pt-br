@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+translationtype: Human Translation
+ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
+ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 ---
@@ -43,7 +44,7 @@ O registro dos dispositivos devem ser cancelados de sua solução de gerenciamen
 
 ## Registrar dispositivos no Intune
 
-Usuários programados para a migração devem imediatamente se registrar no Intune para recuperar ou evitar a perda de acesso aos aplicativos, email e recursos corporativos. Se você tiver configurado o acesso condicional e os usuários tentarem se conectar ao email antes de registrar no Intune, seu acesso será bloqueado e um email de registro será saudá-los. Este email vai guiá-los sobre como registrar seu dispositivo no Intune.  Como alternativa, os usuários podem registrar no Intune por meio do aplicativo de Portal da Empresa do Intune ou nativamente no sistema operacional Windows 8.1 e Windows 10 Mobile. Consulte [What to tell your end users about using Microsoft Intune (O que dizer aos seus usuários finais sobre como usar o Microsoft Intune)](what-to-tell-your-end-users-about-using-microsoft-intune.md) para ver diretrizes sobre etapas de registro por plataforma.
+Usuários programados para a migração devem imediatamente se registrar no Intune para recuperar ou evitar a perda de acesso aos aplicativos, email e recursos corporativos. Se você tiver configurado o acesso condicional e os usuários tentarem se conectar ao email antes de registrar no Intune, seu acesso será bloqueado e um email de registro os saudará. Este email os guia no registro de seu dispositivo no Intune.  Como alternativa, os usuários podem registrar no Intune por meio do aplicativo de Portal da Empresa do Intune ou nativamente no sistema operacional Windows 8.1 e Windows 10 Mobile. Consulte [What to tell your end users about using Microsoft Intune (O que dizer aos seus usuários finais sobre como usar o Microsoft Intune)](what-to-tell-your-end-users-about-using-microsoft-intune.md) para ver diretrizes sobre etapas de registro por plataforma.
 
 ## Configurar o acesso condicional com o Intune (opcional)
 
@@ -72,6 +73,6 @@ Para obter uma cópia baixável deste guia inteiro, visite a [Galeria do TechNet
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO1-->
 
 

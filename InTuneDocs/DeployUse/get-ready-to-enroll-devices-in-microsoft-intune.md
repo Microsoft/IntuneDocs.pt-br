@@ -3,8 +3,8 @@ title: Prepare-se registrar dispositivos | Microsoft Intune
 description: "Configure os pré-requisitos de MDM (gerenciamento de dispositivo móvel) e prepare-se para registrar diferentes sistemas operacionais."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # Prepare-se registrar dispositivos no Microsoft Intune
-Para permitir que os funcionários registrem dispositivos móveis (incluindo [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e [Computadores Windows](set-up-windows-device-management-with-microsoft-intune.md)) com o Intune, você deve habilitar o registro de dispositivo. Para permitir o registro você deve definir uma autoridade de MDM (gerenciamento de dispositivo móvel), configurar o Portal da Empresa do Intune, atribuir licenças e habilitar o registro para a plataforma do dispositivo.
+Para permitir que os funcionários registrem dispositivos móveis (incluindo [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e [Computadores Windows](set-up-windows-device-management-with-microsoft-intune.md)) com o Intune ou gerenciem dispositivos da empresa, você deve habilitar o registro de dispositivo. Para permitir o registro você deve definir uma autoridade de MDM (gerenciamento de dispositivo móvel), configurar o Portal da Empresa do Intune, atribuir licenças e habilitar o registro para a plataforma do dispositivo.
 
 ## Defina a autoridade de gerenciamento de dispositivos móveis
 A autoridade de MDM define o serviço de gerenciamento que tem permissão para gerenciar um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune e o Configuration Manager com Intune. Se você definir o Configuration Manager como a autoridade de gerenciamento, nenhum outro serviço poderá ser usado para gerenciamento de dispositivo móvel.
@@ -109,6 +109,6 @@ Você também pode:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 
