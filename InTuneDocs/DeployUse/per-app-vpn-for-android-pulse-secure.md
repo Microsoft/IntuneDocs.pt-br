@@ -51,7 +51,7 @@ Anote o nome do perfil de VPN para uso na próxima etapa. Por exemplo, **MyAppVp
 
 
    ![Exemplo de política personalizada de VPN por aplicativo Android](..\media\android_per_app_vpn_oma_uri.png)
-#### Definir sua lista de aplicativos como lista negra ou lista branca (opcional)
+#### Definir sua lista de aplicativos como lista de bloqueios ou lista de permissões (opcional)
 Você pode especificar que a sua lista de aplicativos *não* terá permissão para usar a conexão VPN, usando o valor **BLACKLIST**.  Todos os outros aplicativos se conectarão por meio de VPN.
 
 Como alternativa, você pode especificar que *somente* os aplicativos especificados poderão usar a conexão VPN, usando o valor **WHITELIST**.
