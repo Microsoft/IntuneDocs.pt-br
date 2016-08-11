@@ -3,7 +3,7 @@ title: Arquivo de novidades | Microsoft Intune
 description: 
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805dfa1eeb81f4407066e27f203f315451937f8b
-ms.openlocfilehash: acf502bdf73176450157535577047c9428aabfd1
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 458ee268d0c6a8fa6cbe6cc23ad07f0e45eff3e5
 
 
 ---
@@ -145,7 +145,7 @@ Comentários gerais do Microsoft Intune, incluindo preenchimento de DCRs (Solici
 * [Apagar os dados de aplicativos da empresa gerenciados com o Microsoft Intune](https://technet.microsoft.com/library/mt627826.aspx): como você pode remover dados de aplicativos da empresa.
 
 **Conteúdo atualizado**
-* [Definições de política de configuração do Windows 10 no Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): novas configurações do navegador Edge adicionadas.
+* [Definições de política de configuração do Windows 10 no Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): novas configurações do navegador Microsoft Edge adicionadas.
 * [Configurar o gerenciamento do Mac e iOS com o Microsoft Intune e iOS](http://technet.microsoft.com/library/dn408185.aspx): adicionadas informações sobre como registrar dispositivos Mac OS X.
 * [Entender seus dispositivos com o inventário do Microsoft Intune](https://technet.microsoft.com/library/jj733634.aspx): adicionadas informações sobre o inventário coletado dos dispositivos Mac OS X. Além disso, o tópico com as informações mais recentes para todas as plataformas de dispositivo foi atualizado.
 * [Entender as operações do Microsoft Intune usando relatórios](https://technet.microsoft.com/library/dn646977.aspx): adicionadas informações sobre os dois novos relatórios usados para exibir informações sobre os dispositivos gerenciados do Mac OS X.
@@ -267,6 +267,6 @@ Microsoft automatically collects anonymous data about the performance and use of
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
