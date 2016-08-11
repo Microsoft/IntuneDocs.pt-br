@@ -75,16 +75,16 @@ Use a **política de configuração geral** do Microsoft Intune para Windows 10 
 
 |Nome da configuração|Detalhes|
 |----------------|----------------------|
-|**Permitir navegador da web**|Permitir o uso do navegador da Web Edge no dispositivo.<br>(Somente Windows 10 Mobile)|
+|**Permitir navegador da web**|Permitir o uso do navegador da Web Microsoft Edge no dispositivo.<br>(Somente Windows 10 Mobile)|
 |**Permitir sugestões de pesquisa na barra de endereços**|Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.|
 |**Permitir envio de tráfego de intranet no Internet Explorer**|Permite que os usuários abram sites da intranet no Internet Explorer.<br>(Somente Windows 10 Desktop)|
-|**Permitir Não Rastrear**|Configura o navegador Edge para enviar cabeçalhos Não Rastrear para sites visitados pelos usuários.|
+|**Permitir Não Rastrear**|Configura o navegador Microsoft Edge para enviar cabeçalhos Não Rastrear para sites visitados pelos usuários.|
 |**Habilitar SmartScreen**|Habilita a configuração do navegador SmartScreen nos dispositivos.|
-|**Permitir script ativo**|Permite que scripts, como JavaScript, sejam executados no navegador Edge.|
+|**Permitir script ativo**|Permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge.|
 |**Permitir pop-ups**|Habilita ou desabilita o bloqueador de pop-ups do navegador.<br>(Somente Windows 10 Desktop)|
 |**Permitir cookies**|Habilita ou desabilita cookies.|
 |**Permitir Preenchimento Automático**|Permite que os usuários possam alterar as configurações de preenchimento automático no navegador.<br>(Somente Windows 10 Desktop)|
-|**Permitir Gerenciador de Senhas**|Habilitar ou desabilitar o recurso de Gerenciamento de Senha do Edge.|
+|**Permitir Gerenciador de Senhas**|Habilitar ou desabilitar o recurso de Gerenciamento de Senha do Microsoft Edge.|
 |**Local do Enterprise Mode Site List**|Especifica onde encontrar a lista de sites que será aberta no modo Empresarial. Os usuários não podem editar essa lista.<br>(Somente Windows 10 Desktop)|
 
 ### Aplicativos
@@ -302,13 +302,13 @@ Todos os dispositivos deverão estar registrados no Intune se você quiser usar 
 |**ExcludedPaths**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Tipo de dados:** cadeia de caracteres<br /><br />**Valores permitidos:**<br /><br />*&lt;lista dos caminhos separados por ponto e vírgula&gt;*<br /><br />Exemplo: **c:\test;c:\test1.exe**<br /><br />**Valor padrão:** nenhum caminho será excluído|
 |**ExcludedProcesses**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Tipo de dados:** cadeia de caracteres<br /><br />**Valores permitidos:**<br>*&lt;lista dos caminhos separados por ponto e vírgula&gt;*<br>Exemplo: **c:\test.exe;c:\test1.exe**<br>**Valor padrão:** nenhum processo será excluído|
 
-### Configurações de URI do navegador Edge
+### Configurações de URI do navegador Microsoft Edge
 
 |Nome da política|Detalhes|
 |---------------|------------|-----------|
 |**Permitir navegador**<br>(somente no Mobile)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0**: navegação desativada<br>**1**: navegação ativada (padrão)|
 |**AllowSearchSuggestionsinAddressBar**<br>(Desktop e Mobile)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0**: não exibir sugestões de pesquisa<br>**1**: exibir sugestões de pesquisa (padrão)|
-|**SendIntranetTraffictoInternetExplorer**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0**: desabilitado (abrir sites da intranet no navegador Edge - padrão)<br>**1** - habilitado (abrir sites de intranet no Internet Explorer).|
+|**SendIntranetTraffictoInternetExplorer**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0**: desabilitado (abrir sites da intranet no navegador  Microsoft Edge - padrão)<br>**1** - habilitado (abrir sites de intranet no Internet Explorer).|
 |**Permitir Não Rastrear**<br>(Desktop e Mobile)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** – desabilitado (DNT não enviado - padrão)<br>**1** – habilitado (enviar DNT)|
 |**Configurar o SmartScreen**<br>(Desktop e Mobile)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** – Não permitido<br>**1** – Permitir (padrão)|
 |**Permitir pop-ups**<br>(somente no Desktop)|**Caminho de URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Tipo de dados:** inteiro<br /><br />**Valores permitidos:**<br>**0** – Bloquear pop-ups (padrão)<br>**1** – Permitir pop-ups|

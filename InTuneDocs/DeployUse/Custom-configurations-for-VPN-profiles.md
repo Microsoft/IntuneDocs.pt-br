@@ -102,9 +102,9 @@ Exemplos:
 
 > Anotações
 > - Usar o mesmo *nome* que você atribuiu ao perfil personalizado
-> - Valores possíveis: *GLOBAL*, *LISTA BRANCA*, *LISTA NEGRA*
+> - Valores possíveis: *GLOBAL*, *LISTA DE PERMISSÕES*, *LISTA DE BLOQUEIOS*
 > - O padrão será *GLOBAL* se nenhum PackageList for fornecido (compatibilidade com versões anteriores com perfis de todo o sistema)
-> - O padrão será *LISTA BRANCA* se for fornecido um PackageList
+> - O padrão será *LISTA DE PERMISSÕES* se for fornecido um PackageList
 
 
 ### Consulte também
