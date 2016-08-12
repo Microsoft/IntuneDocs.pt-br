@@ -13,14 +13,14 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
-ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
+ms.sourcegitcommit: ed64b7cb3b0658846bce1ec8a5aefe7bdc715508
+ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
 
 
 ---
 
 # Gerenciar licenças do Intune
-Antes que os usuários possam entrar para usar o serviço do Intune ou registrar seus dispositivos no gerenciamento, você deve primeiro atribuir a cada usuário uma licença para sua assinatura do Intune usando o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Depois de ser atribuído a uma licença, nomes de usuários serão exibidos no console de administração do Intune. Os usuários podem então registrar até quinze dispositivos.
+Antes que os usuários possam entrar para usar o serviço do Intune ou registrar seus dispositivos no gerenciamento, você deve primeiro atribuir a cada usuário uma licença para sua assinatura do Intune usando o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Depois de ser atribuído a uma licença, nomes de usuários serão exibidos no console de administração do Intune. Os usuários podem então registrar até cinco dispositivos.
 
 As organizações que usam o EMS (Enterprise Mobility Suite) da Microsoft podem ter usuários que precisam apenas dos serviços do Azure Active Directory Premium ou do Intune no pacote do EMS. Você pode atribuir um serviço ou um subconjunto de serviços usando [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Para obter mais informações, consulte [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) (Gerenciar licenças do Intune usando o PowerShell).
 
@@ -90,6 +90,6 @@ Parabéns! Você acabou de concluir a etapa 4 do *Intune quick start guide* (Gui
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO1-->
 
 

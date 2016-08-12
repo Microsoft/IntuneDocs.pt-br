@@ -3,7 +3,7 @@ title: "Como os usuários iOS podem obter aplicativos | Microsoft Intune"
 description: "Métodos para disponibilizar aplicativos do iOS para usuários finais"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: cce64fef4a7e6d81024794ab3f535e907e501bd8
+ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
+ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
 
 
 ---
@@ -22,11 +22,11 @@ ms.openlocfilehash: cce64fef4a7e6d81024794ab3f535e907e501bd8
 
 # Como os usuários iOS podem obter aplicativos
 
-Use estas informações para entender como e onde os usuários finais obtêm os aplicativos que você distribui por meio do Microsoft Intune. 
+Use estas informações para entender como e onde os usuários finais obtêm os aplicativos que você distribui por meio do Microsoft Intune.
 
 **Aplicativos necessários** - Aplicativos que são exigidos pelo administrador e instalados no dispositivo com envolvimento mínimo do usuário, dependendo da plataforma.
 
-**Aplicativos necessários** - Aplicativos fornecidos na lista do aplicativo Portal da Empresa e que o usuário pode optar por instalar.
+**Aplicativos necessários** - Aplicativos fornecidos na lista do aplicativo do Portal da Empresa e que o usuário pode optar por instalar.
 
 **Aplicativos gerenciados** - Aplicativos que podem ser gerenciados pelas políticas e que foram "encapsulados" pelo Intune ou foram compilados com o SDK (Software Development Kit) de MAM (Mobile Application Management) do Intune. Esses aplicativos podem ser gerenciados pelo Intune e é possível aplicar políticas de aplicativo a eles.
 
@@ -37,6 +37,7 @@ Use estas informações para entender como e onde os usuários finais obtêm os 
 [Como os usuários Windows podem obter aplicativos](how-your-windows-users-get-their-apps.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 
