@@ -69,7 +69,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Liechtenstein|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Francês&#42;, alemão&#42;, italiano&#42;, inglês|0800000300|0227614114|
 |Lituânia|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 EET (UTC +2)|Lituano&#42;, inglês|880030960||
 |Luxemburgo|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Francês&#42;, alemão&#42;, inglês|80021094|24871510|
-|Macedônia, ARJ da|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Inglês|0800-94288<br /><br />Etapa 1: disque o número do telefone<br /><br />Etapa 2: insira 001<br /><br />Etapa 3: insira 877-663-5075||
+|Antiga República Iugoslava da Macedônia|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Inglês|0800-94288<br /><br />Etapa 1: disque o número do telefone<br /><br />Etapa 2: insira 001<br /><br />Etapa 3: insira 877-663-5075||
 |Malásia|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 18:00 MYT (UTC +8)|Bahasa&#42;, malaio&#42;, inglês|1800 220030|362074606|
 |Malta|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Inglês|0 80062231||
 |México|24 horas, 7 dias por semana|Segunda a sexta<br /><br />09:00 – 17:00 CST (UTC -6)|Espanhol&#42;, inglês|01-8005630605|55473856567|
