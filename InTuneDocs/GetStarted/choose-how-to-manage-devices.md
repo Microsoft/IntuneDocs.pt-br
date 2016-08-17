@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ Para sistemas operacionais de dispositivos móveis, incluindo iOS, Android e Win
 |**Descrição**|Dispositivo pessoal registrado usando o Microsoft Intune|Dispositivo corporativo para usuário único|Dispositivo corporativo gerenciado usando uma conta de gerente compartilhada por vários usuários|Dispositivo corporativo sem usuário usado por muitos usuários.|
 |**Usuário do dispositivo**|Proprietário|Usuário atribuído|Nenhuma conta de usuário específica|Nenhum usuário específico|
 |**Quem registra?**|Proprietário|Administrador|Gerenciador de Dispositivos|Qualquer pessoa|
-|**Quem cancela o registro?**|Proprietário ou administrador|Administrador|Administrador|Administrador|
+|**Quem cancela o registro?**|Proprietário ou administrador|Plataforma |Administrador ou usuário|Administrador ou usuário|
 |**Quem pode redefinir?**|Proprietário ou administrador|Administrador|Administrador|Administrador|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Agora, você descobriu algumas das funcionalidades que podem ser usadas ao regis
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

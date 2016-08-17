@@ -3,7 +3,7 @@ title: "Guia de início rápido do Intune | Microsoft Intune"
 description: "Requisitos e pré-requisitos para começar a usar sua assinatura do Intune"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e7ecf24c3fa678e68603f0e3523f2694a73e145c
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ Este guia de início rápido orienta você ao longo das etapas de configuração
 >[!NOTE]
 >Este artigo se concentra na configuração do Intune como um serviço autônomo. Como alternativa, se você estiver usando o Microsoft System Center Configuration Manager para gerenciar computadores e servidores, pode [estender o Configuration Manager para gerenciar dispositivos móveis](https://technet.microsoft.com/library/jj884158.aspx). Você pode fazer isso conectando o Intune ao Configuration Manager em uma implantação de MDM (gerenciamento de dispositivo móvel) híbrida.
 
-As etapas neste guia de início rápido compartilham muitas das mesmas etapas que estão no [Guia de avaliação do Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). No entanto, ao terminar sua avaliação e estiver pronto para começar a gerenciar seus dispositivos móveis, você precisa tratar de diversos requisitos adicionais:
+Este guia de início rápido compartilha muitas das mesmas etapas que são encontradas no [Guia de avaliação do Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). No entanto, ao terminar sua avaliação e estiver pronto para começar a gerenciar seus dispositivos móveis, você precisa tratar de diversos requisitos adicionais:
 
 -   Sincronizar contas locais do Active Directory com o Intune e o Azure Active Directory.
 
@@ -75,6 +75,6 @@ Se estiver gerenciando dispositivos iOS ou Windows Phone com o Intune, você pre
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

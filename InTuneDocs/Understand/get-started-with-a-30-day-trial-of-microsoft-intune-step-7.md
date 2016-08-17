@@ -2,9 +2,9 @@
 title: "Próximas etapas após a avaliação do Intune | Microsoft Intune"
 description: "O que você precisa saber sobre assinaturas e licenciamento depois de configurar sua avaliação gratuita de 30 dias do Intune"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 882ea746690197c98a8f686bd9a0adca591bb988
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -30,10 +30,10 @@ Você pode converter sua avaliação gratuita do Intune para uma assinatura paga
 
 -   **Enterprise Agreement** (&gt;250 usuários) - O melhor programa de licenciamento para empresas com mais de 250 usuários. O EA oferece a flexibilidade de escolher entre software no local e serviços online para melhor atender às necessidades dos seus usuários e ajudá-los a otimizar seus gastos com tecnologia. Entre em contato com seu gerente de conta da Microsoft ou o revendedor local para obter mais detalhes, ou consulte o [site de Licenciamento por Volume Corporativo](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
--   **Programa de assinaturas online** (&lt;250 usuários) - o programa de [Licenciamento por volume de serviços online](http://www.microsoft.com/licensing/online-services/default.aspx) é projetado especificamente para empresas com menos de 250 usuários. Use o programa para assinar, gerenciar e implantar seus serviços do Intune.
+-   **Programa de assinaturas online** (&lt;250 usuários) - o programa de [Licenciamento por volume do Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) foi projetado especificamente para empresas com menos de 250 usuários. Use o programa para assinar, gerenciar e implantar seus serviços do Intune.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

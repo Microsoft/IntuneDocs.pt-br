@@ -2,7 +2,7 @@
 title: "Solução de problemas com políticas | Microsoft Intune"
 description: "Solucione problemas de configuração de política."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # Solução de problemas com políticas no Microsoft Intune
 
-Aqui estão relacionados alguns problemas que podem surgir da sua configuração de políticas do Microsoft Intune e as recomendações de solução para esses problemas.
-
-Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
-
+Se você estiver tendo problemas ao implantar e gerenciar políticas com o Intune, comece aqui. Este tópico contém alguns problemas comuns que podem ocorrer, juntamente com as soluções.
 
 ## A política é aplicada a um usuário?
 **Problema:** não está claro se uma determinada política está sendo aplicada a um dispositivo ou se um dispositivo se comporta de forma contrária a ela.
@@ -109,6 +106,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

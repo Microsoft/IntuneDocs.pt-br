@@ -13,8 +13,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
+ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
+ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
 
 
 ---
@@ -23,11 +23,11 @@ ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
 
 Algumas lojas de aplicativos oferecem a possibilidade de comprar várias licenças para um aplicativo que você deseja executar na empresa. Isso ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos.
 
-O Microsoft Intune ajuda a gerenciar aplicativos comprados por meio de tal programa, importando as informações de licença da Windows Store e acompanhando quantas licenças você usou, além de evitar a instalação de mais cópias do seu aplicativo.
+O Microsoft Intune ajuda a gerenciar aplicativos adquiridos por meio de um programa desse tipo, importando as informações de licença da loja de aplicativos, acompanhando a quantidade de licenças utilizadas e impedindo a instalação de um número maior de cópias de seu aplicativo.
 
 ## Que tipos de aplicativos você pode gerenciar?
 
-O Intune atualmente permite gerenciar aplicativos adquiridos em volume da loja de aplicativos iOS e da Windows Store para Empresas.
+Com o Intune, é possível gerenciar aplicativos adquiridos com base em volume na loja de aplicativos iOS e na Windows Store para Empresas.
 Para descobrir como gerenciar aplicativos licenciados de cada loja, escolha um dos tópicos a seguir:
 
 - [Gerenciar aplicativos adquiridos por volume no iOS](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -35,9 +35,6 @@ Para descobrir como gerenciar aplicativos licenciados de cada loja, escolha um d
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

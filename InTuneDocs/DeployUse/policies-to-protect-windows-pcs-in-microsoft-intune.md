@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 65924fc508c415d2146d955e891d403ba280b324
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # Usar políticas para ajudar a proteger computadores Windows que executam o software cliente do Intune
 
-O Microsoft Intune oferece três políticas que você pode usar para ajudar a garantir a segurança dos computadores Windows quando eles são gerenciados pelo [software cliente do Intune](manage-windows-pcs-with-microsoft-intune.md). 
+O Microsoft Intune oferece três políticas que você pode usar para ajudar a garantir a segurança de computadores Windows gerenciados pelo [software cliente do Intune](manage-windows-pcs-with-microsoft-intune.md).
 
 
 ## Atualizações de software
@@ -30,7 +30,7 @@ O Intune torna mais fácil para você [manter os computadores Windows gerenciado
 
 ## Firewall do Windows
 
-O Firewall do Windows ajuda a manter hackers, malware e outras ameaças longe dos computadores Windows. O Intune permite [gerenciar a configuração e as funcionalidades para o Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) em todos os computadores que você gerencia.
+O Firewall do Windows ajuda a manter hackers, malware e outras ameaças longe dos computadores Windows. Com o Intune, você pode [gerenciar as configurações e os recursos para o Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) em todos os computadores gerenciados.
 
 ## Endpoint Protection
 
@@ -43,7 +43,6 @@ Como administrador de TI, uma das suas principais prioridades é [manter os comp
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

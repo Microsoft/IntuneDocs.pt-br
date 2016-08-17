@@ -2,7 +2,7 @@
 title: "Solucionar problemas de implantação de aplicativo | Microsoft Intune"
 description: "Este tópico ajuda você a solucionar problemas de implantação de aplicativo com o Microsoft Intune."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Solucionar problemas de implantação de aplicativo no Microsoft Intune
-Este tópico ajuda você a solucionar problemas de implantação de aplicativo com o Microsoft Intune.
-
-Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
-
+Se você estiver tendo problemas ao implantar e gerenciar aplicativos com o Intune, comece aqui. Este tópico contém alguns problemas comuns que podem ocorrer, juntamente com as soluções.
 
 ## Problemas comuns de implantação de aplicativo
 
-### Se você não puder fazer logon no portal da empresa do Microsoft Intune
+### Os usuários não conseguem fazer logon no Portal da Empresa do Intune
 
-1.  Verifique se sua conta existe no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) ou se está desabilitada.
+1.  Verifique se a conta do usuário existe e se ela está habilitada no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-2.  Verifique se você está provisionado nessa conta no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
+3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), verifique se o usuário está inserindo o nome de usuário correto para fazer logon no Intune e se o formato é: **julio@domínio.com**. Se parecer que o usuário está inserindo a senha incorreta, solicite a ele que redefina a senha.
 
-3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), verifique se você está usando o nome de usuário e a senha corretos para fazer logon no Intune e se o formato é: **jose@domain.com**.
-
-### Se as informações de contato de TI estiverem faltando no portal da empresa
+### As informações de contato de TI estão ausentes no Portal da Empresa
 
 1.  No console de administração do Intune, clique em **Administrador** &gt; **Portal da Empresa**.
 
@@ -105,6 +100,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

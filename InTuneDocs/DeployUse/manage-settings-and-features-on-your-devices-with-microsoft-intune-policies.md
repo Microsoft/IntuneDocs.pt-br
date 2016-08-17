@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -100,7 +100,7 @@ Quando você seleciona uma política implantada, pode exibir mais informações 
 
 2.  Selecione uma das seguintes ações:
 
-- **Editar:** abre as propriedades da política selecionada para que você possa fazer alterações.
+- **Editar:** abra as propriedades da política selecionada para que você possa fazer alterações.
 - **Excluir**: exclui a política selecionada.<br>Ao excluir uma diretiva, ela é removida de todos os grupos nos quais foi implantada.
 - **Gerenciar a Implantação**: selecione o grupo no qual você deseja implantar a política e clique em **Adicionar**.
 
@@ -108,7 +108,7 @@ Quando você seleciona uma política implantada, pode exibir mais informações 
 ## Perguntas frequentes sobre as políticas do Intune
 
 ### Quanto tempo leva para dispositivos móveis obterem uma política ou os aplicativos depois de terem sido implantados?
-Quando uma política ou um aplicativo é implantado, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer o check-in com o serviço do Intune. Isso geralmente leva menos de 5 minutos.
+Quando uma política ou um aplicativo é implantado, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer o check-in com o serviço do Intune. Em geral, isso leva menos de cinco minutos.
 
 Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas.  Se o dispositivo estiver offline (por exemplo, desativado ou desconectado da rede), ele poderá não receber as notificações. Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:
 
@@ -128,7 +128,7 @@ Se o dispositivo tiver sido registrado recentemente, a frequência de check-in s
 Os usuários também podem iniciar o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer momento.
 
 ### Que ações fazem o Intune enviar imediatamente uma notificação para um dispositivo?
-Os dispositivos fazem o check-in no Intune quando recebem uma notificação para fazer check-in ou durante o check-in agendado regularmente.  Quando você seleciona um dispositivo ou usuário especificamente com uma ação como apagamento, bloqueio, redefinição de senha, implantação de aplicativos, implantação do perfil (WiFi, VPN, email etc.) ou implantação de política, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer check-in com o serviço Intune para receber essas atualizações.
+Os dispositivos fazem o check-in no Intune quando recebem uma notificação que os informa para fazer check-in ou durante o check-in agendado regularmente.  Quando você seleciona um dispositivo ou usuário especificamente com uma ação como apagamento, bloqueio, redefinição de senha, implantação de aplicativo, implantação do perfil (Wi-Fi, VPN, email, etc.) ou implantação de política, o Intune começa imediatamente a tentar notificar o dispositivo de que ele deve fazer check-in no serviço Intune para receber essas atualizações.
 
 Outras alterações, como revisar as informações de contato no portal da empresa, não causam uma notificação imediata para os dispositivos.
 
@@ -145,14 +145,14 @@ Quando duas ou mais políticas são implantadas para o mesmo usuário ou disposi
 -   Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune. Você deve resolver esses conflitos manualmente.
 
 ### O que acontece quando as políticas de gerenciamento de aplicativo móvel entram em conflito entre si? Qual delas será aplicada ao aplicativo?
-Os valores de conflito são as configurações mais restritivas disponíveis em uma política de MAM, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).  Os campos de entrada de número serão definidos para o mesmo que os valores como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.
+Os valores de conflito são as configurações mais restritivas disponíveis em uma política de MAM, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).  Os campos de entrada de número serão definidos com os mesmos valores, como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.
 
 Os conflitos ocorrem quando duas configurações de política são iguais.  Por exemplo, você configurou duas políticas MAM idênticas, exceto pela configuração de copiar/colar.  Nesse cenário, a configuração de copiar/colar será definida para o valor mais restritivo, mas o restante das configurações será aplicado como configurado.
 
 Se uma política for implantada para o aplicativo e entrar em vigor e então uma segunda for implantada, a primeira terá precedência e continuará em vigor, enquanto a segunda aparecerá como estando em conflito. Se as duas forem aplicadas ao mesmo tempo, o que significa que não há política anterior, as duas estarão em conflito. Quaisquer configurações conflitantes serão definidas com os valores mais restritivos.
 
 ### O que acontece quando há conflito de políticas personalizadas de iOS?
-O Intune não avalia o conteúdo dos arquivos de configuração Apple nem a política OMA-URI personalizada. Ele simplesmente serve como o mecanismo de entrega.
+O Intune não avalia o conteúdo dos arquivos de Configuração da Apple ou uma política personalizada de URI-OMA (Open Mobile Alliance Uniform Resource Identifier). Ele simplesmente serve como o mecanismo de entrega.
 
 Quando você implantar uma política personalizada, garanta que as configurações definidas não entrem em conflito com as políticas de conformidade, configuração ou outras políticas personalizadas. No caso de uma política personalizada com configurações entrar em conflitos, a ordem na qual as configurações são aplicadas é aleatória.
 
@@ -181,7 +181,7 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
         - Permitir loja de aplicativo
         - Permitir captura de tela
         - Permitir localização geográfica
-        - Permitir Conta da Microsoft
+        - Permitir conta da Microsoft
         - Permitir copiar e colar
         - Permitir compartilhamento de Internet por Wi-Fi
         - Permitir conexão automática para liberar pontos de acesso Wi-Fi
@@ -215,6 +215,6 @@ Consulte [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubl
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

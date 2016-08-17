@@ -3,7 +3,7 @@ title: "Resolver conflitos de política do GPO e do Intune | Microsoft Intune"
 description: "Saiba como resolver conflitos entre a Política de Grupo e as políticas de configuração do Intune."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,30 +13,30 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 77f7bc40471437cf69fe5553d4d82dc71a6ba405
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # Resolver conflitos de política do Microsoft Intune e GPO (Objetos de Política de Grupo)
-O Intune usa políticas que ajudam a gerenciar as configurações nos computadores Windows que você gerencia. Por exemplo, é possível usar uma política para controlar as configurações do Firewall do Windows nos computadores. Muitas das configurações do Intune são semelhantes às configurações que podem ser feitas com a Política de Grupo do Windows. No entanto, é possível que, às vezes, os dois métodos entrem em conflito.
+O Intune usa políticas que ajudam a gerenciar as configurações em computadores Windows. Por exemplo, é possível usar uma política para controlar as configurações do Firewall do Windows nos computadores. Várias configurações do Intune são semelhantes às configurações que podem ser feitas com a Política de Grupo do Windows. No entanto, é possível que, às vezes, os dois métodos entrem em conflito.
 
-Quando ocorrem conflitos, a Política de Grupo de nível de domínio tem precedência sobre a política do Intune, a menos que o computador não possa fazer logon no domínio. Nesse caso, a política do Intune é aplicada ao computador cliente.
+Quando ocorrem conflitos, a Política de Grupo no nível de domínio tem precedência sobre a política do Intune, a menos que o computador não possa entrar no domínio. Nesse caso, a política do Intune é aplicada ao computador cliente.
 
 ## O que fazer se você estiver usando a política de grupo
-Verifique se todas as políticas aplicadas não estão sendo gerenciadas pela política de grupo. Para evitar conflitos, é possível usar um ou mais dos seguintes métodos:
+Garanta que as políticas aplicadas não estão sendo gerenciadas pela Política de Grupo. Para ajudar a evitar conflitos, é possível usar um ou mais dos seguintes métodos:
 
 -   Mova seus computadores para uma OU (unidade organizacional) do Active Directory que não tenha configurações de Política de Grupo aplicadas antes de instalar o cliente do Intune. Você também pode bloquear a herança da Política de Grupo nas OUs que contenham computadores inscritos no Intune, aos quais você não deseja aplicar as configurações de Política de Grupo.
 
--   Use um filtro do grupo de segurança para restringir somente GPOs para computadores não gerenciados pelo Intune. 
+-   Use um filtro do grupo de segurança para restringir somente GPOs para computadores não gerenciados pelo Intune.
 
 -   Desabilite ou remova os Objetos da Política de Grupo que entram em conflito com as políticas do Intune.
 
 Para obter mais informações sobre o Active Directory e a Política de Grupo do Windows, consulte a documentação do Windows Server.
 
 ## Como filtrar os GPOs (Objetos da Política de Grupo) existentes para evitar conflitos com a política do Intune
-Se você tiver identificado os GPOs com configurações que possam entrar em conflito com as políticas do Intune, será possível usar os filtros do grupo de segurança para restringir os GPOs somente aos computadores não gerenciados pelo Intune.
+Se você identificou GPOs com configurações que entram em conflito com as políticas do Intune, é possível usar os filtros de grupo de segurança para restringir os GPOs apenas aos computadores não gerenciados pelo Intune.
 
 <!--- ### Use WMI filters
 WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
@@ -102,13 +102,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-A política de Grupo permite aplicar GPOs apenas aos grupos de segurança especificados na área **Filtragem de Segurança** do console do Gerenciamento de política de Grupo de um GPO selecionado. Por padrão, os GPOs aplicam-se aos **Usuários Autenticados**.
+Você pode aplicar GPOs apenas aos grupos de segurança especificados na área **Filtragem de Segurança** do console do Gerenciamento de Política de Grupo de um GPO selecionado. Por padrão, os GPOs aplicam-se a *Usuários Autenticados*.
 
--   No snap-in **Usuários e Computadores do Active Directory**, crie uma novo grupo de segurança que contenha computadores e contas de usuário que você não deseja gerenciar usando o Intune. Por exemplo, você pode nomear o grupo como **Fora do Microsoft Intune**.
+-   No snap-in **Usuários e Computadores do Active Directory**, crie um novo grupo de segurança que contém computadores e contas de usuário que você não deseja que o Intune gerencie. Por exemplo, você pode nomear o grupo *Não pertence ao Microsoft Intune*.
 
 -   No console de Gerenciamento de Política de Grupo, na guia **Delegação** do GPO selecionado, clique com o botão direito do mouse no novo grupo de segurança para delegar as permissões **Leitura** e **Aplicar Política de Grupo** a usuários e computadores no grupo de segurança. (As permissões para**Aplicar Política de Grupo** estão disponíveis na caixa de diálogo **Avançado** .)
 
--   Em seguida, aplique o filtro do novo grupo de segurança a um GPO selecionado e remova o filtro padrão **Usuários Autenticados** .
+-   Em seguida, aplique o novo filtro de grupo de segurança a um GPO selecionado e remova o filtro padrão **Usuários Autenticados**.
 
 O novo grupo de segurança deve ser mantido como registro nas alterações de serviço do Intune.
 
@@ -117,6 +117,6 @@ O novo grupo de segurança deve ser mantido como registro nas alterações de se
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

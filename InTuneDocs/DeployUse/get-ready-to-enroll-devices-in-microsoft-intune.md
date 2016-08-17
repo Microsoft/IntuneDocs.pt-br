@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
-ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 768dd08ad838b621f18a24747618ef1e37c5c804
 
 
 ---
@@ -55,7 +55,7 @@ O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e 
 
 |Nome do campo|Comprimento máx.|Mais informações|
     |----------|------------------------|----------------|
-    |Nome da empresa|40|Este é o nome exibido como título do Portal da Empresa.|
+    |Nome da empresa|40|Este é o nome exibido como título do Portal da Empresa. **Observação**: apenas caracteres alfanuméricos. Este campo não dá suporte a caracteres especiais.|
     |Nome do contato do departamento de TI|40|Esse nome é exibido na página **Contatar TI**.|
     |Telefone do departamento de TI|20|Este número de contato é exibido na página **Contatar TI**.|
     |Endereço de email do departamento de TI|40|Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato **alias@domainname.com**.|
@@ -109,6 +109,6 @@ Você também pode:
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

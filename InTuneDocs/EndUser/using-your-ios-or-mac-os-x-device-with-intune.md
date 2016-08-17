@@ -4,7 +4,7 @@ description: "Lista de links para tarefas que você pode fazer em seu dispositiv
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Esta página contém links para todas as tarefas que os usuários finais podem fazer em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem consultar essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias: informações relacionadas ao registro, tarefas de gerenciamento e questões de conformidade.
+Este artigo inclui links para todas as tarefas que os usuários finais podem realizar em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem consultar essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias: 
+- Instalação do aplicativo do portal da Empresa e registro no Intune 
+- Tarefas de gerenciamento pós-registro
+- Problemas de conformidade
 
 ## Instalação do aplicativo de Portal da Empresa e registro no Intune
 
-As informações nesta seção ajudam na instalação do Portal da Empresa do Intune e no registro de dispositivos iOS.
+As informações contidas nesta seção ajudam com a instalação do Portal da Empresa do Intune e o registro de dispositivos iOS.
 
 - [Instalar e entrar no aplicativo de Portal da Empresa no Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Registrar seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md)
@@ -35,7 +38,7 @@ As informações nesta seção ajudam na instalação do Portal da Empresa do In
 
 ## Coisas que você pode fazer quando seu dispositivo está registrado no Intune
 
-As informações nesta seção ajudam com as ações que precisam ser realizadas depois que o dispositivo iOS é registrado no Intune.
+As informações contidas nesta seção ajudam com as ações que precisam ser realizadas após o registro do dispositivo iOS no Intune.
 
 - [Use aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Definir ou alterar sua senha](set-or-change-your-passcode-ios.md)
@@ -48,7 +51,7 @@ As informações nesta seção ajudam com as ações que precisam ser realizadas
 
 ## Corrigir problemas com seu dispositivo
 
-As informações nesta seção ajudam a corrigir problemas que podem ser encontrados depois que o dispositivo iOS é registrado no Intune.
+As informações contidas nesta seção ajudam a corrigir problemas que podem ocorrer após o registro do dispositivo iOS no Intune.
 
 - [Como reconectar um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device.md)
 - [Enviar erros para o administrador de TI](send-errors-to-your-it-admin-ios.md)
@@ -61,6 +64,6 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
