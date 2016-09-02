@@ -13,15 +13,18 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 
 ---
 
 # Usando seu dispositivo Windows com o Intune
 
-Esta página contém links para todas as tarefas que os usuários finais podem fazer em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem consultar essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias: informações relacionadas ao registro, tarefas de gerenciamento e questões de conformidade.
+Este artigo inclui links para todas as tarefas que os usuários finais podem realizar em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem consultar essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias: 
+- Instalação do aplicativo do portal da Empresa e registro no Intune 
+- Tarefas de gerenciamento pós-registro
+- Problemas de conformidade
 
 ## Instalação do aplicativo de Portal da Empresa e registro no Intune
 
@@ -57,6 +60,6 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

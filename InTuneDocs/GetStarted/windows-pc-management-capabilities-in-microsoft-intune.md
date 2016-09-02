@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
-ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
+ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
+ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 
 
 ---
@@ -37,18 +37,18 @@ Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune,
 O Intune dá suporte à instalação do software cliente de computador em até 7.000 dispositivos Windows.
 
 ## Requisitos de sistema operacional
-O Intune pode gerenciar computadores que executam as seguintes versões do Windows (x86 e x64):
+O Intune pode gerenciar computadores que executam as seguintes versões do Windows (32 e 64 bits):
 
 
--   **Windows Vista** - versões Business, Enterprise e Ultimate.
+-   **Windows Vista** - versões Business, Enterprise e Ultimate
 
--   **Windows 7** - Versões Pro, Enterprise e Ultimate (sem service pack ou com SP1).
+-   **Windows 7** - Versões Pro, Enterprise e Ultimate (sem service pack ou com SP1)
 
--   **Windows 8** - Versões Pro e Enterprise.
+-   **Windows 8** - Versões Pro e Enterprise
 
--   **Windows 8.1** - Versões Pro e Enterprise.
+-   **Windows 8.1** - Versões Pro e Enterprise
 
-- **Windows 10** - Versões Pro, Education e Enterprise.
+- **Windows 10** - Versões Pro, Education e Enterprise
 
 
 ## Requisitos mínimos de hardware
@@ -65,8 +65,8 @@ Veja a seguir os requisitos de software para instalar o cliente de computador do
 
 |Requisito|Detalhes|
 |---------------|--------------------|
-|Permissões administrativas|A conta que instalará o software cliente deve ter permissões de administrador local para esse PC.|
-|Windows Installer 3.1|O computador deve ter, no mínimo, o Windows Installer 3.1 instalado.|
+|Permissões administrativas|A conta que instalará o software cliente deve ter permissões de administrador local para esse computador.|
+|Windows Installer 3.1|O PC deve ter, no mínimo, o Windows Installer 3.1.|
 |Remover o software cliente incompatível|Antes de instalar o software cliente de computador do Intune, você deve desinstalar o seguinte software cliente do computador:<br /><br />- Qualquer versão do Configuration Manager<br />- Qualquer versão do Microsoft SMS (Systems Management Server)|
 
 ### Consulte também
@@ -74,6 +74,6 @@ Veja a seguir os requisitos de software para instalar o cliente de computador do
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

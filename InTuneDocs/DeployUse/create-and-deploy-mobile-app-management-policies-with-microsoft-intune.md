@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
+ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
+ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 
 
 ---
@@ -28,12 +28,16 @@ Esse tópico descreve o processo de criação de uma política de MAM no **Porta
 - Dispositivos que não são gerenciados por uma solução MDM (BYOD).
 
 >[!IMPORTANT]
+Considere o seguinte se você estiver usando o **console de administração do Intune** para gerenciar seus dispositivos:
 
-> Se no momento você estiver usando o **console de administração do Intune** para gerenciar seus dispositivos, poderá criar uma política MAM que dê suporte a aplicativos para dispositivos registrados no Intune usando o [Console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-As políticas de MAM criadas no console de administração do Intune não podem ser importadas no portal do Azure.  As políticas de MAM devem ser recriadas no portal do Azure.
+> * você pode criar uma política de MAM que dá suporte a aplicativos para dispositivos registrados no Intune usando o [console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * As políticas de MAM criadas no console de administração do Intune não podem ser importadas no portal do Azure.  As políticas de MAM devem ser recriadas no portal do Azure.
 
+> * Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas de MAM.
 
-> Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas de MAM. Se você criar políticas MAM no console de administração do Intune e no portal do Azure, a política no portal do Azure será aplicada aos aplicativos e implantada para usuários.
+> * Para implantar aplicativos de gerenciamento, você deve criar uma política de MAM no console de administração do Intune. Nesse caso, talvez você queira criar políticas de MAM no console de administração do Intune e no portal do Azure: o console de administração do Intune para certificar-se de que você tenha a capacidade de implantar aplicativos gerenciados, o portal do Azure porque ele é o novo console de administração que tem todas as configurações de política de MAM.
+
+> * Se você criar políticas de MAM no console de administração do Intune e no portal do Azure, a política criada no portal do Azure será aplicada aos aplicativos.
 
 Para ver uma lista de configurações de política com suporte para as plataformas Android e iOS, selecione um dos seguintes:
 
@@ -165,6 +169,6 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

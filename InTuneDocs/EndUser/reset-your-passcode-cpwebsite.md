@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
+ms.sourcegitcommit: fd74fcdb26827b94d894b28d9d7f48e62420b14a
+ms.openlocfilehash: 8f7b33a7e3cf73caee62eaa696fed8b7f65f28dc
 
 
 ---
@@ -34,7 +34,7 @@ Para redefinir sua senha:
 
 2.  Toque em **Redefinir Senha**.
 
-    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Toque em **Entrar** e entre novamente com as suas credenciais corporativas ou de estudante. Você precisa entrar novamente em cinco minutos.
 
@@ -65,6 +65,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
