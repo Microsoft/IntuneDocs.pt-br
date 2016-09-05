@@ -4,7 +4,7 @@ description: "Use o Intune para criar e implantar políticas que controlam confi
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Os dispositivos fazem o check-in no Intune quando recebem uma notificação que 
 
 Outras alterações, como revisar as informações de contato no portal da empresa, não causam uma notificação imediata para os dispositivos.
 
-> [!TIP]
-> Quando uma política que contém configurações é implantada em um dispositivo Android, o usuário é solicitado a agir de acordo com a política. Até que o usuário execute essa ação ou o dispositivo seja reiniciado, as novas configurações de política não terão efeito.
-
 ### Se várias políticas forem implantadas para o mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?
 Quando duas ou mais políticas são implantadas para o mesmo usuário ou dispositivo, a avaliação de qual configuração é aplicada ocorre no nível da configuração individual:
 
@@ -215,6 +212,6 @@ Consulte [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubl
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 
