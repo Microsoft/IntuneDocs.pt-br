@@ -3,19 +3,19 @@ title: "O que acontecerá se você redefinir o dispositivo | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fe110bbc-479b-4d11-beeb-70d15b199eda
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: fe36fb1cd57549b7e6921751a6549fb99a975be0
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: ea594a179b0b79be103643e5ffa3d21cfd04ac73
 
 
 ---
@@ -31,7 +31,6 @@ Para saber o que acontece se você redefinir o dispositivo, use o link abaixo qu
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
