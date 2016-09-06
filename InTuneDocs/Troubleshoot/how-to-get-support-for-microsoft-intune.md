@@ -3,18 +3,18 @@ title: Como obter suporte | Microsoft Intune
 description: "O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 Este tópico informa como abrir uma solicitação de serviço ou ligar para o suporte por telefone em vários idiomas.
 
 Para autoatendimento com o Intune, consulte [Dicas de solução de problemas gerais do Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou qualquer um dos tópicos de solução de problemas para problemas específicos, listados na seção **Consulte também** deste tópico.
+
+>[!NOTE]
+>
+>Clientes Premier podem abrir um tíquete de suporte do Intune na [Página de suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+
 ## Criar uma solicitação de serviço online
 
 1.  Entre no [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) com suas credenciais do Intune.
@@ -140,6 +145,6 @@ Nossa função é:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

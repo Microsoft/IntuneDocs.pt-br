@@ -3,16 +3,17 @@ title: Definir ou alterar sua senha | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: dca7579ff5cd2ae45616797314195f83ae6571bd
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
 
 Se o dispositivo do iOS não estiver em conformidade com a política de senha do administrador de TI, aparecerá uma mensagem que descreve o problema rapidamente e explica o que você precisa fazer para que sua senha atenda aos requisitos.
 
-O administrador de TI pode definir mais de um requisito de senha. Por exemplo, a senha pode ter um determinado número de caracteres e ela poderá ter que ser uma combinação de números e letras, etc. Como pode ser definido mais de um requisito, essas instruções podem explicar somente como definir ou alterar sua senha. Elas não explicam cada combinação possível de requisitos. 
+O administrador de TI pode definir mais de um requisito de senha. Por exemplo, a senha pode ter um determinado número de caracteres e ela poderá ter que ser uma combinação de números e letras, etc. Como pode ser definido mais de um requisito, essas instruções podem explicar somente como definir ou alterar sua senha. Elas não explicam cada combinação possível de requisitos.
 
 Se você tiver problemas para configurar uma senha que atenda a todos os requisitos de senha, entre em contato com seu administrador de TI para obter ajuda.
 
@@ -44,6 +45,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

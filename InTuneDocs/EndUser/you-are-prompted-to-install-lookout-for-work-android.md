@@ -3,29 +3,29 @@ title: "Você é solicitado a instalar o Lookout for Work | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 987076918d8604086e7178a6342e0f4345eec8f3
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7be786dafa5b4707688bacd1f2b4790db91bad6c
 
 
 ---
 
 # Aparecerá um aviso para que você instale o Lookout for Work
-Observação: esse recurso foi adicionado para o aplicativo do Portal da Empresa do Android, mas ele não estará operacional até agosto de 2016. 
+Observação: esse recurso foi adicionado para o aplicativo do Portal da Empresa do Android, mas ele não estará operacional até agosto de 2016.
 
 Lookout for Work é um aplicativo que ajuda a proteger seu dispositivo verificando os riscos e ameaças à segurança. Quando você receber uma notificação dizendo que você deve instalar o Lookout for Work, isso significa que o administrador de TI definiu uma política que exige que você baixe e instale o aplicativo da Play Store.
 
 **O que você deve fazer:**
 
-1.  Siga os avisos para baixar e instalar o aplicativo. 
+1.  Siga os avisos para baixar e instalar o aplicativo.
 2.  Quando a instalação for concluída e você retornar para o aplicativo do Portal da Empresa, toque em **Verificar Conformidade** para concluir o processo. Você pode então continuar a usar o dispositivo para acessar recursos e dados da empresa.
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
@@ -35,6 +35,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
@@ -32,11 +32,12 @@ A sintaxe para Get-AppxPackage é:
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Observação: você precisará executar o PowerShell como administrador para recuperar o PFN
+> [!NOTE]
+Você precisará executar o PowerShell como administrador para recuperar o PFN.
 
-Por exemplo, para obter informações sobre todos os aplicativos universais instalados no computador use `Get-AppxPackage`.
+Por exemplo, para obter informações sobre todos os aplicativos universais instalados no computador, use `Get-AppxPackage`.
 
-Para obter informações sobre um aplicativo que você sabe o nome, ou parte do nome, use `Get-AppxPackage *<app_name>`. Observe o uso do caractere curinga, particularmente útil se você não tiver certeza do nome completo do aplicativo. Por exemplo, para obter as informações do OneNote, use `Get-AppxPackage *OneNote`.
+Para obter informações sobre um aplicativo do qual você sabe o nome, ou parte do nome, use `Get-AppxPackage *<app_name>`. Observe o uso do caractere curinga, particularmente útil se você não tiver certeza do nome completo do aplicativo. Por exemplo, para obter as informações sobre o OneNote, use `Get-AppxPackage *OneNote`.
 
 
 Eis aqui as informações recuperadas do OneNote:
@@ -67,13 +68,12 @@ Eis aqui as informações recuperadas do OneNote:
 
 ## Localizar um PFN se o aplicativo não estiver instalado em um computador
 
-1.  Vá para https://www.microsoft.com/pt-br/store/apps
+1.  Vá para https://www.microsoft.com/pt-br/store/apps.
 2.  Insira o nome do aplicativo na barra de pesquisa. No nosso exemplo, pesquise o OneNote.
-3.  Clique no link para o aplicativo. Observe que a URL que você acessar tem uma série de letras no final. No nosso exemplo, a URL tem esta aparência:
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  Em uma guia diferente, cole a seguinte URL, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`, (substituindo `<app id>` pela ID do aplicativo obtida em https://www.microsoft.com/pt-br/store/appss) a série de letras no final da URL na etapa 3. Em nosso exemplo do OneNote, você deve colar: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.  Escolha o link para o aplicativo. Observe que a URL tem uma série de letras no final. No nosso exemplo, a URL tem esta aparência: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.  Em uma guia diferente, cole a URL a seguir, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Substitua `<app id>` pela ID do aplicativo obtida em https://www.microsoft.com/pt-br/store/apps – a série de letras no final da URL na etapa 3. Em nosso exemplo do OneNote, você colaria: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-No Microsoft Edge, as informações que você deseja são exibidas; no Internet Explorer, clique em **Abrir** para ver as informações. O valor PFN é fornecido na primeira linha. Aqui está a aparência dos resultados do nosso exemplo:
+O Microsoft Edge exibe as informações que você deseja. No Internet Explorer, selecione **Abrir** para ver as informações. O valor PFN é fornecido na primeira linha. Veja os resultados para nosso exemplo:
 
 
 `{`
@@ -85,6 +85,6 @@ No Microsoft Edge, as informações que você deseja são exibidas; no Internet 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
