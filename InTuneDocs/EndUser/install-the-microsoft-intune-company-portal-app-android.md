@@ -3,19 +3,19 @@ title: Instalar o aplicativo de Portal da Empresa do Microsoft Intune | Microsof
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: 3dcf6d299957319977bb9b65d079d197a1c03fd2
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: a56fe54c62d8b0a35d3613a7b8802cd017be4cba
 
 
 ---
@@ -49,6 +49,7 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 
