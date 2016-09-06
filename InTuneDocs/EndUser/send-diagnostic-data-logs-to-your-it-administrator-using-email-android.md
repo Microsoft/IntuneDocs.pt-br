@@ -3,18 +3,19 @@ title: "Enviar logs de dados de diagnóstico para o administrador de TI usando e
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7e90141f08cf029a005aad1ae0501fc1962eb958
 
 
 ---
@@ -30,13 +31,13 @@ Para ativar o log detalhado:
 
 2.  Toque em **Menu** &gt; **Configurações**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > **Menu** pode ser um botão de software ou de hardware, dependendo do tipo de dispositivo Android que você tem.
 
 3.  Em **Dados de Diagnóstico**, toque em **Enviar Dados**.
 
     > [!NOTE]
-    > **Se você estiver usando apenas dispositivos com Android 6.0 ou posteriores:** quando você toca em **Enviar Dados**, você vê a mensagem **Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?**. 
+    > **Se você estiver usando apenas dispositivos com Android 6.0 ou posteriores:** quando você toca em **Enviar Dados**, você vê a mensagem **Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?**.
 
     Essa mensagem é enganosa, porque a **Microsoft nunca acessa fotos, mídia ou arquivos em seu dispositivo!** O Google controla o texto da mensagem, então a Microsoft não pode alterá-lo.  Quando você permite o acesso, tudo o que está fazendo é permitir que seu dispositivo grave logs de dados no cartão SD do dispositivo, o que permite que você mova esses logs usando um cabo USB.
 
@@ -49,6 +50,7 @@ Para ativar o log detalhado:
 [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 
