@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Implantar e monitorar política de conformidade de dispositivo no Microsoft Intune
 ## Implantar uma política de conformidade
-Implante a política de conformidade [criada](create-a-device-compliance-policy-in-microsoft-intune.md) para um ou mais grupos de usuários ou dispositivos em sua organização.
+Implante a política de conformidade [criada](create-a-device-compliance-policy-in-microsoft-intune.md) para um ou mais grupos de usuários em sua organização. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade.
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 ![Captura de tela da página de política de conformidade, mostrando a opção de menu Gerenciar Implantação na parte superior](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Na caixa de diálogo **Gerenciar Implantação**, escolha um ou mais grupos para os quais deseja implantar a política e clique em **Adicionar > OK**.
-![Captura de tela da caixa de diálogo Gerenciar implantação](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Você pode implantar uma política de conformidade para usuários e/ou dispositivos. Use os grupos do Active Directory que você já criou e sincronizado com o Intune ou crie esses grupos manualmente no console do Intune. Para saber mais sobre como implantar políticas, consulte [deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (implantar uma política de configuração).
+![Captura de tela da caixa de diálogo Gerenciar Implantação](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Você pode implantar uma política de conformidade para usuários. Use os grupos do Active Directory que você já criou e sincronizado com o Intune ou crie esses grupos manualmente no console do Intune. Para saber mais sobre como implantar políticas, consulte [deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (implantar uma política de configuração).
 
 Use o resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** para identificar problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho **Painel** .
 
@@ -72,6 +72,6 @@ Agora, você pode usar a política de conformidade com políticas de acesso cond
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

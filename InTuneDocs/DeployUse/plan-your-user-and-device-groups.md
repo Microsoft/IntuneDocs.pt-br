@@ -3,7 +3,7 @@ title: "Planejar seus grupos de dispositivos e de usuários | Microsoft Intune"
 description: "Planeje grupos para atender às necessidades da organização."
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 73909ebf2226b4fa50ad39b095a7cc1d73460c65
+ms.sourcegitcommit: 55e21f56c3d1b73427e4019054a0f9fab862f26d
+ms.openlocfilehash: 70949301499efedd99eeddb60dd2fa0efc6d2309
 
 
 ---
 
 # Planejar seus grupos de dispositivos e usuários
-Os grupos no Intune oferecem uma grande flexibilidade para o gerenciamento de seus dispositivos e usuários. Você pode configurar grupos para atender às suas necessidades organizacionais de acordo com:
+Os grupos no Intune oferecem grande flexibilidade quando você está gerenciando dispositivos e usuários. Você pode configurar grupos para atender às suas necessidades organizacionais de acordo com:
 
 - localização geográfica
 - department
@@ -32,55 +32,55 @@ Os grupos no Intune oferecem uma grande flexibilidade para o gerenciamento de se
 ## Como funcionam os grupos do Intune
 
 
-A exibição padrão do nó Grupos no console de administrador do Intune é:
+Esta é a exibição padrão do nó **Grupos** no console de administrador do Intune:
 
-![Captura de tela da exibição padrão do nó Grupos no console do Intune](/intune/media/Intune_Planning_Groups_Default_small.png)
+![Captura de tela da exibição padrão do nó Grupos no console do Intune](../media/Intune_Planning_Groups_Default_small.png)
 
-As políticas são implantadas em grupos, de modo que a hierarquia de grupo é uma das suas principais considerações de design. Também é importante saber que o grupo pai desse grupo não pode ser alterado depois que o grupo é criado, portanto, o design de seus grupos é extremamente importante desde o momento em que você começa a usar o serviço do Intune. Algumas das práticas recomendadas para a criação de uma hierarquia de grupo com base em suas necessidades organizacionais são descritas aqui.
+As políticas são implantadas em grupos, de modo que a hierarquia de grupo é uma das suas principais considerações de design. É importante saber que você não pode alterar o grupo pai de um grupo depois de ter criado o grupo. A forma como você projeta seus grupos é extremamente importante desde o momento em que você começa a usar o serviço Intune. Algumas das práticas recomendadas para a criação de uma hierarquia de grupo com base em suas necessidades organizacionais são descritas aqui.
 
 ## Regras de associação de grupo
 
-1. Um grupo pode conter usuários ou dispositivos, mas não ambos.
+- Um grupo pode conter usuários ou dispositivos, mas não ambos.
 
-    * **Grupos de dispositivos:** isso inclui computadores e dispositivos móveis. Antes de adicionar um computador a um grupo, é preciso registrá-lo. Antes de adicionar um dispositivo móvel a um grupo, o ambiente deve ser configurado para dar suporte a dispositivos móveis e os dispositivos devem ser registrados ou descobertos a partir do Exchange ActiveSync.
+    * **Grupos de dispositivos**. Inclui computadores e dispositivos móveis. Antes de adicionar um computador a um grupo, é preciso registrá-lo. Antes de adicionar um dispositivo móvel a um grupo, o ambiente deve ser configurado para dar suporte a dispositivos móveis e os dispositivos devem ser registrados ou descobertos no Exchange ActiveSync.
 
-    * **Grupos de usuários:** um grupo pode conter usuários de grupos de segurança, que são sincronizados a partir de seu Active Directory. Se você não usar a sincronização do Active Directory, é possível criar esses grupos manualmente.
+    * **Grupos de usuários**. Um grupo pode ter usuários de grupos de segurança. Sincronização de grupos de segurança com sua instância do Active Directory. Se não sincronizar com o Active Directory, você poderá criar esses grupos manualmente.
 
-2. Um dispositivo ou um usuário pode pertencer a mais de um grupo.
+- Um dispositivo ou um usuário pode pertencer a mais de um grupo.
 
-3. Um grupo pode incluir e excluir membros com base nas seguintes regras de associação:
+- Um grupo pode incluir e excluir membros com base nas seguintes regras de associação:
 
-    * **Critérios de Associação:** essas são regras dinâmicas que o Intune executa para incluir ou excluir membros. Esses critérios usam **grupos de segurança** e outras informações sincronizadas no seu AD (Active Directory) local. Quando os dados ou o grupo de segurança mudam, a associação ao grupo muda quando você sincroniza com o AD.
+    * **Critérios de Associação**. Essas são regras dinâmicas que o Intune executa para incluir ou excluir membros. Esses critérios usam grupos de segurança e outras informações sincronizadas com sua instância local do Active Directory. Quando os dados ou o grupo de segurança mudam, a associação ao grupo muda quando você sincroniza com o Active Directory.
 
-    * **Associação Direta:** essas são regras estáticas que agregam ou excluem membros explicitamente. A lista de membros é estática.
+    * **Associação Direta**. Essas são regras estáticas que agregam ou excluem membros explicitamente. A lista de membros é estática.
 
-4. Os Serviços de Domínio Active Directory (AD DS) não são necessários para criar grupos de usuários ou grupos de dispositivos que incluam usuários ou computadores. Entretanto, para que os grupos de dispositivos incluam dispositivos móveis, o ambiente tem que estar configurado para dar suporte a dispositivos móveis.
+-   Os AD DS (Serviços de Domínio do Active Directory) não são necessários quando você cria grupos de usuários ou grupos de dispositivos que incluem usuários ou computadores. Mas, para que os grupos de dispositivos incluam dispositivos móveis, seu ambiente deve ser configurado para dar suporte a dispositivos móveis.
 
     Além disso, os dispositivos devem ser descobertos e adicionados ao Intune.
 
 ## Regras de relação de grupo
 
-1. Cada grupo criado deve ter um grupo pai e não é possível alterá-lo depois de criado.
+- Cada grupo criado deve ter um grupo pai. Você não pode alterar o grupo pai de um grupo depois de ter criado o grupo.
 
-2. Ao adicionar usuários ou dispositivos a um grupo filho:
+- Ao adicionar usuários ou dispositivos a um grupo filho:
 
-    * Grupos filho sempre são subconjuntos do grupo pai.
+    * O grupo filho sempre é um subconjunto do grupo pai.
 
     * Novos membros adicionados a um grupo filho serão adicionados automaticamente ao seu respectivo grupo pai.
 
     * Não é possível adicionar um membro a um grupo filho, quando esse membro tiver sido excluído do grupo pai.
 
-3. A associação de um grupo pai define a disponibilidade de associação ao grupo filho.
+- A associação de um grupo pai define a disponibilidade de associação ao grupo filho.
 
-4. Quando você excluir um grupo pai, todos os grupos filho serão excluídos.
+- Quando você excluir um grupo pai, todos os grupos filho serão excluídos.
 
-5. É possível implantar o conteúdo e as políticas para um grupo pai e excluir a implantação para grupos filho.
+- É possível implantar o conteúdo e as políticas para um grupo pai e excluir a implantação para grupos filho.
 
-6. Você pode adicionar um usuário ou dispositivo específico a um grupo filho que não seja membro do grupo pai. Se você fizer isso, o novo membro do grupo será adicionado ao grupo pai.
+- Você poderá adicionar um usuário ou dispositivo específico a um grupo filho se o usuário ou dispositivo já não for membro do grupo pai. Se você fizer isso, o novo membro do grupo filho será adicionado ao grupo pai.
 
-    No entanto, não é possível adicionar um membro a um grupo filho excluído do grupo pai.
+    No entanto, não será possível adicionar um membro a um grupo filho se o membro for excluído do grupo pai.
 
-7. A associação ao grupo é recursiva. Por exemplo:
+- A associação ao grupo é recursiva. Por exemplo:
 
     * **Pat** é um membro de apenas um grupo, o grupo de segurança **Usuários de Laptop** .
 
@@ -89,17 +89,17 @@ As políticas são implantadas em grupos, de modo que a hierarquia de grupo é u
     * Você cria um grupo no Intune que usa uma consulta de associação dinâmica que inclui os membros do grupo **Usuários Aprovados**. O resultado disso é que o seu grupo de usuários do Intune incluirá **Pat**.
 
 > [!TIP]
-> Quando estiver criando seus grupos, reflita como você aplicará a política. Por exemplo, você pode ter políticas específicas para sistemas operacionais do dispositivo e políticas específicas para diferentes funções na sua organização, ou para Unidades organizacionais que você já definiu no Active Directory. Algumas pessoas consideram útil ter grupos de dispositivos específicos para iOS, Android e Windows, bem como grupos de usuários para cada função organizacional.
+> Quando criar grupos, reflita sobre como você aplicará políticas. Por exemplo, você pode ter políticas específicas para sistemas operacionais do dispositivo ou políticas específicas para diferentes funções ou unidades organizacionais que você já definiu no serviço do Active Directory. Alguns administradores consideram útil criar grupos de dispositivos específicos para iOS, Android e Windows. Isso vai além da criação de grupos de usuários para cada função organizacional.
 
 <!--- should we just link to a policies topic at this point and remove this? Ask Rob
- You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your company. Then create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
+ You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your organization. Then, you create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
 
- Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
+ Be careful when you name your policies, so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
 
- Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
+ Each time you create a restrictive policy, you'll want to communicate it to your users. After you create the more general groups and policies, pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
 
 ## Grupos internos
-O Intune fornece nove grupos internos que não podem ser editados nem excluídos: <!--maybe a screen shot would be best?-->
+O Intune tem nove grupos internos que não se pode editar nem excluir: <!--maybe a screen shot would be best?-->
 
 -   **Todos os Usuários**
     -   Usuários Desagrupados
@@ -112,109 +112,109 @@ O Intune fornece nove grupos internos que não podem ser editados nem excluídos
     -   Dispositivos Desagrupados
 
 > [!NOTE]
-> Seu lema deve ser: *manter as coisas simples*. Se sua organização não tem necessidades específicas como as descritas a seguir, mantenha a simplicidade e use a estrutura de grupo e políticas padrão para tornar o serviço mais gerenciável a longo prazo. A manutenção será mais fácil se for possível tratar os usuários igualmente com pouca diferenciação por grupo, mantendo, assim, menos políticas.
+> Seu lema deve ser: *manter as coisas simples*. Se sua organização não tiver necessidades específicas como as descritas a seguir, mantenha a simplicidade e use a estrutura de grupo e políticas padrão. Isso tornará o serviço mais gerenciável no longo prazo. A manutenção será mais fácil se você puder tratar seus usuários uniformemente. Com pouca diferenciação por grupo, você terá menos políticas para manter.
 
 
 ### Todos os usuários e dispositivos na sua organização
-Defina um grupo pai para todos os usuários e dispositivos na sua organização, pois, provavelmente, você tem políticas que se aplicam a todos. Você pode usar os grupos **Todos os usuários** e **Todos os dispositivos** padrão no Intune para esta finalidade. Subgrupos que organizam os dispositivos por informações específicas, como um grupo de traga seu próprio dispositivo (BYOD) e outra para dispositivos corporativos (CO), podem ser filhos dos grupos pai **Todos os Usuários** e **Todos os dispositivos**.
+Defina um grupo pai para todos os usuários e dispositivos na sua organização. É provável que você tenha políticas que se aplicam a todos. Você pode usar os grupos padrão do Intune **Todos os Usuários** e **Todos os Dispositivos** para esta finalidade. Subgrupos que organizam os dispositivos por informações específicas, como um grupo de traga seu próprio dispositivo (BYOD) e outro para dispositivos corporativos (CO), podem ser grupos filho dos grupos pai **Todos os Usuários** e **Todos os Dispositivos**.
 
-## Personalizando grupos da sua organização
+## Personalizar grupos para sua organização
 
 ### Dispositivos de propriedade corporativa e BYOD
-Se sua organização permitir que os funcionários usem seus próprios dispositivos no trabalho (BYOD), fornecer dispositivos da empresa (CO) ou uma combinação de ambos, será recomendável que você aplique políticas com base nessas duas categorias de dispositivos.
+Se sua organização permitir que os funcionários usem seus próprios dispositivos, fornecer dispositivos da empresa ou trabalhar com uma combinação de ambos, será recomendável que você aplique políticas para essas duas categorias de dispositivos.
 
-No caso de BYOD ou uma mistura de ambos, tenha cuidado em planejar políticas que não venham a infringir os regulamentos de privacidade locais. Crie um grupo pai para todos os usuários que levarão seus próprios dispositivos. Esse grupo pode ser usado para aplicar políticas que se aplicam a todos os usuários nesta categoria.
+No caso de BYOD ou uma mistura de ambos, tenha cuidado em planejar políticas que não venham a infringir os regulamentos de privacidade locais. Crie um grupo pai para todos os usuários que levarão seus próprios dispositivos. Você pode usar esse grupo para aplicar políticas que se aplicam a todos os usuários nesta categoria.
 
-![Captura de tela da criação de um grupo pai BYOD](/intune/media/Intune_Planning_Groups_BYOD_small.png)
+![Criar um grupo pai de BYOD](../media/Intune_Planning_Groups_BYOD_small.png)
 
-Da mesma forma, você pode criar um grupo para usuários CO em sua organização:
+Da mesma forma, você pode criar um grupo para usuários de dispositivos CO em sua organização:
 
-![Captura de tela de grupos de usuário irmãos para a BYOD e CO](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Grupos de usuário irmãos para dispositivos BYOD e CO](../media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Grupos para regiões geográficas
-Se sua organização precisar de políticas para regiões específicas, você poderá criar grupos com base na região geográfica. Você pode baseá-los em grupos regionais que já podem ter sido criados no AD (Active Directory) e sincronizá-los com o Azure AD. Você também pode criá-los diretamente no Azure AD.
+Se sua organização precisar de políticas para regiões específicas, você poderá criar grupos com base na região geográfica. Você pode baseá-los em grupos regionais que pode ter já criado em sua instância do Active Directory e sincronizá-los com o serviço do Azure Active Directory. Você também pode criar grupos regionais diretamente no Azure Active Directory.
 
-Essas capturas de tela mostram como criar grupos do Intune com base em grupos sincronizados do seu AD local. Este exemplo pressupõe que você tem um grupo de segurança do AD chamado **Grupo de usuários dos EUA**.
+As próximas capturas de tela mostram como criar grupos do Intune com base em grupos sincronizados com sua instância local do Active Directory. Esses exemplos pressupõem que você tenha um grupo de segurança do AD chamado **Grupo de Usuários dos EUA**.
 
-1. Primeiro, forneça as informações gerais.
+Primeiro, forneça as informações gerais.
 
-![Captura de tela da área Editar Grupo](/intune/media/Intune_Planning_Groups_AD_General_small.png)
+![Captura de tela da área Editar Grupo](../media/Intune_Planning_Groups_AD_General_small.png)
 
-Em Critérios de associação, selecione **Grupo de Usuários dos EUA**, sincronizado do AD, como o grupo de segurança para usar em Regras de associação.
+Em **Critérios de Associação**, selecione o **Grupo de Usuários dos EUA**, sincronizado com o Active Directory, como o grupo de segurança para usar nas regras de associação.
 
-![Caixa de diálogo Editar grupo](/intune/media/Intune_Planning_Groups_AD_Criteria_small.png)
+![Captura de tela da caixa de diálogo Editar Grupo](../media/Intune_Planning_Groups_AD_Criteria_small.png)
 
-Examine e escolha **Concluir** para concluir a criação do grupo.
+Examine suas entradas e escolha **Concluir** para criar o grupo.
 
-![Caixa de diálogo Editar grupo](/intune/media/Intune_Planning_Groups_AD_Summary_small.png)
+![Captura de tela da caixa de diálogo Editar Grupo](../media/Intune_Planning_Groups_AD_Summary_small.png)
 
-Em nosso exemplo, também criamos um grupo Oriente Médio e Ásia, MEA.
+Em nosso exemplo, também criamos um grupo chamado **MEA** para o Oriente Médio e Ásia.
 
 > [!NOTE]
-> Se a associação de grupo não for preenchida com base nas associações de grupo de segurança, verifique se você atribuiu licenças do Intune aos membros.
+> Se a associação de grupo não for preenchida com base nas associações de grupo de segurança, verifique se você atribuiu licenças do Intune aos membros do grupo.
 
 ### Grupos de hardware específico
-Se sua organização exigir políticas que se aplicam a tipos específicos de hardware, você poderá criar grupos com base nesse critério. Você pode baseá-los em grupos específicos já criados no seu AD local e sincronizá-los com o Azure AD. Você também pode criá-los diretamente no Azure AD. Neste exemplo, usamos o **Grupo de usuários dos EUA** como o pai para o grupo **Usuários de laptop**.
+Se sua organização exigir políticas que se aplicam a tipos específicos de hardware, você poderá criar grupos com base nesse critério. Você pode basear as políticas em grupos específicos já criados em sua instância local do Active Directory e sincronizá-los com o serviço do Azure Active Directory. Você também pode criar grupos diretamente no Azure Active Directory. Neste exemplo, usamos o **Grupo de Usuários dos EUA** como o grupo pai para o grupo **Usuários de Laptop**.
 
-![Caixa de diálogo Selecionar grupo de segurança](/intune/media/Intune_Planning_Groups_Laptop_small.png)
+![Caixa de diálogo Selecionar Grupo de Segurança](../media/Intune_Planning_Groups_Laptop_small.png)
 
-Neste ponto, a hierarquia de grupos deve aparecer como mostrado abaixo. Como você pode ver, agora existem membros no grupo **Usuários de Laptop** do Intune. Todas as políticas aplicadas a esse grupo agora serão aplicadas a usuários de laptop BYOD da região dos EUA.
+Neste ponto, a hierarquia do grupo deve ser semelhante à seguinte captura de tela. Como você pode ver, agora existem membros no grupo **Usuários de Laptop** do Intune. Todas as políticas aplicadas a esse grupo serão aplicadas a usuários de laptop BYOD da região dos EUA.
 
-![Exibição do grupo de Usuários de Laptop](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Exibição do grupo de Usuários de Laptop](../media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Grupos para sistemas operacionais específicos
-Se sua organização exigir políticas aplicáveis a sistemas operacionais específicos, como Android, iOS ou Windows, você poderá criar grupos com base nessa exigência. Como nos exemplos anteriores, você pode baseá-los em grupos específicos de sistemas operacionais já criados no seu AD local e sincronizá-los com o Azure AD. Você também pode criá-los diretamente no Azure AD.
+Se sua organização exigir políticas aplicáveis a sistemas operacionais específicos, como Android, iOS ou Windows, você poderá criar grupos com base nessa exigência. Assim como em exemplos anteriores, você pode baseá-las em grupos específicos já criados em sua instância local do Active Directory e sincronizá-los com o serviço do Azure Active Directory. Você também pode criá-las diretamente na sua instância do Azure Active Directory.
 
-Seguindo o mesmo método dos exemplos anteriores, podemos criar grupos com base em usuários <!--devices?--> usando plataformas especificas de sistema operacional.
+Usando o mesmo método dos exemplos anteriores, você pode criar grupos com base em usuários <!--devices?--> que usam plataformas de sistema operacional específicas.
 
 > [!NOTE]
-> Se você tiver usuários que usam vários sistemas operacionais/plataformas móveis e não tiver uma forma automatizada para categorizar os usuários como usuários Android, iOS ou Windows, considere a aplicação de políticas no nível do dispositivo, o que lhe dará mais flexibilidade na aplicação de políticas específicas do sistema operacional.
+> Se você tiver usuários que usam vários sistemas operacionais/plataformas móveis e não tiver uma forma automatizada para categorizar os usuários como usuários Android, iOS ou Windows, considere a aplicação de políticas no nível do dispositivo. Isso lhe dará mais flexibilidade para aplicar políticas específicas a um sistema operacional.
 >
-> Você não pode provisionar grupos dinamicamente com base no sistema operacional do dispositivo. Faça isso usando os grupos de segurança do AAD ou do AD.
+> Você não pode provisionar grupos dinamicamente com base no sistema operacional do dispositivo. Em vez disso, use grupos de segurança do Active Directory ou do Azure Active Directory.
 
-![Exibição do grupo de usuários de laptop](/intune/media/Intune_Planning_Groups_OS_Hierachy_small.png)
+![Grupo de Usuários de Laptop](../media/Intune_Planning_Groups_OS_Hierachy_small.png)
 
 Depois que todos os seus grupos de usuários forem preenchidos com base nesses requisitos organizacionais, sua hierarquia de grupo deve ter esta aparência:
 
-![Exibição de hierarquia de grupos](/intune/media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
+![Exibição de hierarquia de grupos](../media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
 
-Essa hierarquia pode ser usada para aplicar as políticas da organização adequadamente.
+Você pode usar essa hierarquia para aplicar as políticas da organização.
 
 ### Grupos de dispositivos
-Você também pode criar grupos semelhantes para dispositivos conforme mostrado abaixo, começando com um amplo grupo que inclui todos os dispositivos dos funcionários para o cenário BYOD:
+Você também pode criar grupos semelhantes para dispositivos conforme mostrado abaixo, começando com um amplo grupo que inclui todos os dispositivos dos funcionários para o cenário de BYOD.
 
-![Caixa de diálogo Criar Grupo](/intune/media/Intune_Planning_Groups_Device_General_small.png)
+![Caixa de diálogo Criar Grupo](../media/Intune_Planning_Groups_Device_General_small.png)
 
 Verifique se você selecionou **Todos os dispositivos (computadores e dispositivos móveis)** para que o grupo inclua todos os dispositivos BYO:
 
-![Página Definir critérios de associação](/intune/media/Intune_Planning_Groups_Device_Criteria_small.png)
+![Página Definir critérios de associação](../media/Intune_Planning_Groups_Device_Criteria_small.png)
 
-Examine e clique em **Concluir** para criar o grupo BYOD.
+Examine suas entradas e escolha **Concluir** para criar o grupo de BYOD.
 
-![Caixa de diálogo criar grupo](/intune/media/Intune_Planning_Groups_Device_Summary_small.png)
+![Caixa de diálogo Criar Grupo](../media/Intune_Planning_Groups_Device_Summary_small.png)
 
-Continue a criar grupos de dispositivos, até que você tenha uma hierarquia de grupos de dispositivos semelhante à hierarquia de grupos dos usuários. Então, seu nó de grupo no console do Intune deve ser semelhante a este:
+Continue a criar grupos de dispositivos, até que você tenha uma hierarquia de grupos de dispositivos semelhante à hierarquia de grupos dos usuários. Seu nó de grupo no console do Intune será semelhante a este:
 
-![Exibição de hierarquia de grupos do Intune](/intune/media/Intune_Groups_Hierarchy_Final_Small.png)
+![Exibição de hierarquia de grupos do Intune](../media/Intune_Groups_Hierarchy_Final_Small.png)
 
 ## Convenções de nomenclatura e hierarquias de grupo
-Para facilitar o gerenciamento de políticas, é recomendável nomear cada política de acordo com a finalidade, plataforma e escopo ao qual ela é aplicada. Esse padrão de nomenclatura deve seguir a estrutura do grupo que você criou na preparação para aplicar as políticas.
+Para facilitar o gerenciamento de políticas, é recomendável nomear cada política de acordo com a finalidade, plataforma e escopo ao qual ela é aplicada. Use um padrão de nomenclatura que siga a estrutura de grupos que você criou quando se preparou para aplicar as políticas.
 
-Por exemplo, para uma política do Android que é aplicada a todos os dispositivos corporativos, Android e dispositivos móveis no nível regional dos EUA, a política pode ser nomeada como **CO_US_Mob_Android_General**.
+Por exemplo, para uma política do Android que é aplicada a todos os dispositivos corporativos, Android e dispositivos móveis no nível regional dos EUA, a política pode ser nomeada **CO_US_Mob_Android_General**.
 
-![Criar política para Android](/intune/media/Intune_planning_policy_android_small.png)
+![Criar política para Android](../media/Intune_planning_policy_android_small.png)
 
-Ao nomear as políticas dessa forma, você poderá identificar rapidamente as políticas e seu uso pretendido, bem como o escopo do nó de políticas do console, conforme mostrado:
+Ao nomear as políticas dessa forma, você poderá identificar rapidamente as políticas e seu uso pretendido, bem como o escopo do nó **Políticas** do console, da seguinte forma:
 
-![Lista de política do Intune](/intune/media/Intune_planning_policy_view_small.png)
+![Lista de política do Intune](../media/Intune_planning_policy_view_small.png)
 
 ## Próximas etapas
 [Criar grupos](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

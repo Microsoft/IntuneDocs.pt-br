@@ -3,18 +3,18 @@ title: "Dicas de solução de problemas gerais | Microsoft Intune"
 description: Recursos gerais para ajudar a resolver problemas com o Intune.
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 3fe277417c82bc4d60f355ac5366f0f7d70039ab
+ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
+ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
 
 
 ---
@@ -24,6 +24,7 @@ Você pode perceber que, depois de implantar o Microsoft Intune, encontrará pro
 
 > [!NOTE]
 > Para criar uma solicitação de suporte ou para exibir uma solicitação, [visite o Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Para obter mais informações sobre opções de suporte, consulte [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
+
 ## Definir o problema
 
 -   Qual é o comportamento?
@@ -92,6 +93,6 @@ Os tópicos listados abaixo têm ajuda de solução para problemas específicos.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

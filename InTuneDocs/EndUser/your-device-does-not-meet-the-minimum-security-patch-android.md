@@ -3,17 +3,17 @@ title: "Seu dispositivo não atende o patch de segurança mínima | Microsoft In
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 4710a94b8772c064881137a273dd6d0d0ca7d37a
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 83fd5ebdabe092c46cb17aee5cc5c603386b1b70
 
 
 ---
@@ -32,7 +32,7 @@ O local do nível de patch de segurança atual pode ser diferente, dependendo do
 
 **Para instalar o patch de segurança necessário:**
 
-- Dispositivos não Samsung Knox: vá para **Configurações** > **Sobre** > **Atualizações de software**. 
+- Dispositivos não Samsung Knox: vá para **Configurações** > **Sobre** > **Atualizações de software**.
 
 - Dispositivos Samsung Knox: vá para **Configurações** > **Atualizações do sistema** > **Verificar se há novas atualizações de sistema**.
 
@@ -43,6 +43,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

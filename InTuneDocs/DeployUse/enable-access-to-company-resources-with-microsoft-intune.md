@@ -13,26 +13,26 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ae9b3be57e4008d25f5222025c057fc4211f1119
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
 
 # Habilitar o acesso aos recursos da empresa com o Microsoft Intune
-Os perfis de Wi-Fi, VPN e email do Microsoft Intune funcionam em conjunto para ajudar os usuários a obter acesso aos arquivos e recursos necessários para realizar seu trabalho com êxito, independentemente de onde estejam. Perfis de certificado ajudam a proteger o acesso.
+Os perfis de Wi-Fi, VPN e email do Microsoft Intune funcionam em conjunto para ajudar os usuários a obter acesso aos arquivos e recursos necessários para realizar seu trabalho, independentemente de onde estiverem. Perfis de certificado ajudam a proteger o acesso.
 
 ## [Perfis de Wi-Fi](wi-fi-connections-in-microsoft-intune.md) e plataformas com suporte
 
-Implante configurações de rede sem fio aos seus usuários. Ao implantar essas configurações, você minimiza o esforço necessário para o usuário final se conectar à rede corporativa.
+Implante configurações de rede sem fio aos seus usuários. Essas configurações facilitam para os usuários se conectar à rede corporativa.
 #### Plataformas com suporte
 
 |Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Sim (você pode importar um perfil de Wi-Fi do Windows)|Sim (você pode configurar o OMA-URI) |Sim|Sim|Sim|
+|Sim (Você pode importar um perfil de Wi-Fi do Windows.)|Sim (Você pode configurar OMA-URI.) |Sim|Sim|Sim|
 
 ## [Perfis de VPN](vpn-connections-in-microsoft-intune.md) e plataformas com suporte
-Implante configurações de VPN (Rede Virtual Privada) para seus usuários. Ao implantar essas configurações, você minimiza o esforço do usuário final necessário para conectar-se aos recursos na rede corporativa.
+Implante configurações de VPN (rede virtual privada) para seus usuários. Essas configurações facilitam para os usuários se conectar aos recursos na rede corporativa.
 
 |Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Ajude a proteger o acesso aos recursos de empresa, incluindo conexões VPN e red
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
