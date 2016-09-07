@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Desativar dispositivos do gerenciamento do Intune
 
-Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. A desativação de dispositivo é relativamente simples. Você pode executar um apagamento seletivo ou completo em dispositivos gerenciados como dispositivos móveis. Você também pode desativar computadores gerenciados com o software cliente do Intune.
+Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. Um dispositivo pode ter que ser desativado por diversos motivos:
+
+-   O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
+-   O usuário parte abruptamente (é demitido, pede demissão etc.).
+-   Perda de dispositivo
+-   Realocação de um dispositivo (mudança para outro usuário, reutilização para uma finalidade diferente etc.)
+
+Você pode executar um apagamento seletivo ou completo em dispositivos gerenciados como dispositivos móveis ou bloquear um dispositivo e redefinir a senha. Apagando o dispositivo, você libera a assinatura do usuário para adicionar um dispositivo diferente. Você também pode desativar computadores gerenciados com o software cliente Intune.
 
 ## Apagar dados e aplicativos dos dispositivos
 Tanto o apagamento seletivo quanto o apagamento completo removem o dispositivo do gerenciamento do Intune removendo sua política e o portal da empresa, o que significa que o dispositivo deixa de ter as credenciais necessárias para fazer logon em recursos da empresa, como o Microsoft SharePoint, o email ou o Office 365.
@@ -62,6 +69,6 @@ Você também deseja revogar a licença da conta de usuário Intune do funcioná
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
