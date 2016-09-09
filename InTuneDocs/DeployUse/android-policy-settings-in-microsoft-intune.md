@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 1809f619173ca57868cfd2b8466e6e2bcf05f0c7
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 ### Configurações de criptografia
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Exigir criptografia no dispositivo móvel**|Requer que os arquivos no dispositivo móvel sejam criptografados.|Sim|Sim|
 |**Exigir criptografia em cartões de memória**|Especifica se o cartão de memória do dispositivo deve ser criptografado.|Não|Sim|
 
 ### Configurações de sistema
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Permitir captura de tela**|Permite que o usuário capture o conteúdo da tela como uma imagem.|Não|Sim|
 |**Permitir envio de dados diagnósticos**|Permite que o dispositivo envie informações de diagnóstico para o Google.|Não|Sim|
 |**Permitir redefinição de fábrica**|Permite que o usuário execute uma redefinição de fábrica no dispositivo.|Não|Sim|
@@ -72,19 +72,19 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 ### Configurações de nuvem – documentos e dados
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Permitir backup do Google**|Permite o uso do backup do Google.|Não|Sim|
 
 ### Configurações de nuvem – contas e sincronização
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir sincronização automática da conta do Google**|Permite que as configurações de conta do Google sejam sincronizadas automaticamente.|Não|Sim|
 
 ### Configurações de aplicativo - navegador
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir navegador da web**|Especifica se o navegador da Web padrão do dispositivo pode ser usado.|Não|Sim|
 |**Permitir preenchimento automático**|Permite que a função de preenchimento automático do navegador da Web seja usada.|Não|Sim|
 |**Permitir bloqueador de pop-up**|Permite o uso do bloqueador de pop-up no navegador da Web.|Não|Sim|
@@ -94,13 +94,13 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 ### Configurações de aplicativo - aplicativos
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Permitir armazenamento do Google Play**|Permite ao usuário acessar o Google Play Store no dispositivo.|Não|Sim|
 
 ### Configurações de recursos do dispositivo - hardware
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir câmera**|Permite o uso da câmera do dispositivo.|Sim|Sim|
 |**Permitir armazenamento removível**|Permite que o dispositivo use o armazenamento removível, como um cartão SD.|Não|Sim|
 |**Permitir Wi-Fi**|Permite o uso das funcionalidades de Wi-Fi do dispositivo.|Não|Sim|
@@ -113,7 +113,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 ### Configurações de recursos do dispositivo - celular
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Permitir roaming de Voz**|Permite roaming de voz quando o dispositivo estiver em uma rede de celular.|Não|Sim|
 |**Permitir roaming de Dados**|Permite roaming de dados quando o dispositivo estiver em uma rede de celular.|Não|Sim|
 |**Permitir mensagens SMS/MMS**|Permite o uso de mensagens SMS e MMS no dispositivo.|Não|Sim|
@@ -121,7 +121,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 ### Configurações de recursos do dispositivo - recursos
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Permitir assistência de voz**|Permite o uso de software do assistente de voz no dispositivo.|Não|Sim|
 |**Permitir discagem de voz**|Habilita ou desabilita o recurso de discagem de voz no dispositivo.|Não|Sim|
 |**Permitir copiar e colar**|Permite as funções de copiar e colar no dispositivo.|Não|Sim|
@@ -208,6 +208,6 @@ Essa funcionalidade destina-se a permitir que você implante configurações do 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

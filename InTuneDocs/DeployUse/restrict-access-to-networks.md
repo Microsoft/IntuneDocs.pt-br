@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
-ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -60,7 +60,10 @@ b. Escolha o ícone de cadeado &gt;  **Mais informações**.
 
 
 2. De dentro do console do ISE, importe o certificado do Intune (o arquivo exportado) para o repositório **Certificados Confiáveis**.
+
+
 ### Obtenha um certificado autoassinado do ISE 
+
 1.  No console do ISE, vá para **Administração** > **Certificados** > **Certificados do Sistema** > **Gerar certificado Autoassinado**.  
 2.       Exporte o certificado autoassinado.
 3. Em um editor de texto, edite o certificado exportado: [comentário]: <> Eu preferiria não colocar um ponto no final dessas duas instruções, acredito que pode ser confuso.
@@ -147,6 +150,6 @@ Também há um [conjunto baixável de instruções de registro](https://gallery.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
