@@ -3,8 +3,8 @@ title: Cancelar o registro do dispositivo iOS do Intune | Microsoft Intune
 description: Descreve como cancelar o registro de um dispositivo iOS do Intune
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e8572d873ca83f4fad7a1e1e01f60ece3f1319a6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
 
 
 ---
@@ -27,7 +27,7 @@ Quando você cancelar o registro do seu dispositivo iOS no Intune, seu dispositi
 
 Para cancelar o registro do seu dispositivo do Intune, use essas etapas ou assista a este vídeo:
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
 
 
 1.  No aplicativo Portal da Empresa, em **Meus Dispositivos**, selecione o dispositivo cujo registro deseja cancelar.
@@ -54,10 +54,9 @@ Quando você cancela o registro de dispositivo do Intune, o seguinte acontece:
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 

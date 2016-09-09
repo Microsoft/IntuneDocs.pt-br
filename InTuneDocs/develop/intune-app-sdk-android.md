@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
-ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 090b295ee8bf4aadb17bc58bf0282e87daf67a40
 
 
 ---
@@ -24,13 +24,13 @@ ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 > [!NOTE]
 > Leia primeiro a [Intune App SDK overview](intune-app-sdk.md) (Visão geral do SDK de Aplicativo do Intune), que explica os recursos atuais do SDK e descreve a preparação para a integração em cada plataforma com suporte. 
 
-# Novidades no SDK 
+## Novidades no SDK 
 
 O SDK de Aplicativos do Microsoft Intune é uma biblioteca Android padrão sem dependências externas. O SDK é composto de:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: as interfaces necessárias para habilitar o MAM em um aplicativo, além de habilitar a interoperabilidade com o aplicativo Portal da Empresa do Microsoft Intune. Os aplicativos devem especificá-lo como uma referência de biblioteca Android.
 
-*  **`Microsoft.Intune.MAM.SDK.Support.v4.jar`**: as interfaces necessárias para habilitar o MAM em aplicativos que utilizam a biblioteca de suporte do Android v4.  Os aplicativos que precisam desse suporte devem referenciar diretamente o arquivo jar. 
+* **`Microsoft.Intune.MAM.SDK.Support.v4.jar`**: as interfaces necessárias para habilitar o MAM em aplicativos que utilizam a biblioteca de suporte do Android v4.  Os aplicativos que precisam desse suporte devem referenciar diretamente o arquivo jar. 
 
 * **`Microsoft.Intune.MAM.SDK.Support.v7.jar`**: as interfaces necessárias para habilitar o MAM em aplicativos que utilizam a biblioteca de suporte do Android v7.   Os aplicativos que precisam desse suporte devem referenciar diretamente o arquivo jar
 
@@ -42,11 +42,11 @@ O SDK de Aplicativos do Microsoft Intune é uma biblioteca Android padrão sem d
 
 * **`THIRDPARTYNOTICES.TXT`**: um aviso de atribuição que reconhece códigos de terceiros e/ou códigos de sistemas operacionais que serão compilados em seu aplicativo. 
 
-# Requisitos 
+## Requisitos 
 
 O SDK de Aplicativos do Intune é um projeto Android compilado. Como resultado, ele é amplamente independente da versão do Android que o aplicativo usa para suas versões de API mínima ou de destino. O SDK dá suporte à API do Android 14 (Android 4.0 +) ao Android 24. 
 
-# Como o SDK de Aplicativos do Intune funciona 
+## Como o SDK de Aplicativos do Intune funciona 
 
 O SDK de Aplicativos do Intune requer alterações no código-fonte do aplicativo para habilitar as políticas de gerenciamento do aplicativo. Isso é feito por meio da substituição das classes base do Android por classes gerenciadas equivalentes, mencionadas no documento com o prefixo `MAM`. As classes do SDK estão entre a classe base do Android e a versão do próprio aplicativo derivada dessa classe.  Usando uma atividade como exemplo, você acabará com uma hierarquia de herança que se parece com: `Activity ->MAMActivity->AppSpecificActivity`.
 
@@ -54,11 +54,11 @@ Quando `AppSpecificActivity` quiser interagir com seu pai, por exemplo, `super.o
 
 O SDK de Aplicativos do Intune para Android depende da presença do aplicativo de Portal da Empresa no dispositivo para habilitar as políticas de MAM. Quando o aplicativo de Portal da Empresa não estiver presente, o comportamento do aplicativo habilitado para MAM não será alterado e ele atuará como qualquer outro aplicativo móvel. Quando o Portal da Empresa estiver instalado e tiver a política para o usuário, os pontos de entrada do SDK serão inicializados assincronamente. A inicialização só é necessária quando o processo é criado inicialmente pelo Android. Durante a inicialização, uma conexão é estabelecida com o aplicativo de Portal da Empresa e a política de restrição de aplicativo é baixada.  
 
-# Como integrar o SDK de Aplicativos do Intune
+## Como integrar o SDK de Aplicativos do Intune
  
 Conforme descrito anteriormente, o SDK requer alterações no código-fonte do aplicativo para habilitar as políticas de gerenciamento do aplicativo. Aqui estão as etapas necessárias para habilitar o MAM em seu aplicativo: 
 
-## Substitua classes, métodos e atividades por seus equivalentes com MAM (obrigatório) 
+### Substitua classes, métodos e atividades por seus equivalentes com MAM (obrigatório) 
 
 * Classes com base em Android devem ser substituídas por seus equivalentes com MAM. Para fazer isso, localize todas as instâncias das classes listadas na tabela a seguir e as substitua pelo SDK de Aplicativos do Intune equivalente.  
 
@@ -112,7 +112,7 @@ Conforme descrito anteriormente, o SDK requer alterações no código-fonte do a
 
     Por exemplo, ao derivar de `MAMActivity`, em vez de substituir `onCreate` e chamar `super.onCreate`, a Atividade deve substituir `onMAMCreate` e chamar s`uper.onMAMCreate`. Isso permite que a inicialização da Atividade (entre outros) seja restrito em determinados casos. 
 
-# Habilitar recursos que exigem a participação do aplicativo 
+### Habilitar recursos que exigem a participação do aplicativo 
 
 Há algumas políticas que o SDK não pode implementar por conta própria. Para habilitar o aplicativo a controlar seu comportamento para esses recursos, expomos várias APIs que você pode encontrar na interface `AppPolicy` abaixo.  
 
@@ -152,7 +152,7 @@ Há algumas políticas que o SDK não pode implementar por conta própria. Para 
         boolean getIsManagedBrowserRequired();
     }
 
-## Habilitar o controle de administração de TI sobre o comportamento de salvamento do aplicativo
+### Habilitar o controle de administração de TI sobre o comportamento de salvamento do aplicativo
 
 Muitos aplicativos implementam recursos que permitem que o usuário final salve arquivos localmente ou em outro serviço. O SDK de Aplicativos do Azure permite que os administradores de TI protejam contra vazamento de dados aplicando as restrições de política da forma como acharem melhor para sua organização.  Uma das políticas que o administrador pode controlar é se o usuário final pode salvar em um repositório de dados pessoais. Isso inclui salvar localmente, em cartões SD ou serviços de backup. A participação do aplicativo é necessária para habilitar o recurso. Se seu aplicativo permitir o salvamento em locais na nuvem ou pessoais diretamente do aplicativo, você deve implementar esse recurso para garantir que o administrador de TI possa controlar se é permitido salvar em um local ou não. A API abaixo permite que o aplicativo saiba se salvar em um armazenamento pessoal é permitido segundo a atual política do administrador. O aplicativo pode, então, aplicar a política, pois ele está ciente de que o armazenamento pessoal de dados está disponível para o usuário final por meio do aplicativo.  
 
@@ -162,7 +162,7 @@ Para determinar se a política é aplicada, o aplicativo pode fazer a chamada a 
 
 **Observação**: MAMComponents.get(AppPolicy.class) sempre retornará uma Política de aplicativo não nula, mesmo que o dispositivo ou aplicativo não esteja sob gerenciamento. 
 
-## Permitir que o aplicativo detecte se a Política de PIN é necessária
+### Permitir que o aplicativo detecte se a Política de PIN é necessária
  
  Há políticas adicionais em que o aplicativo pode querer desabilitar algumas das suas funcionalidades para não duplicar a funcionalidade no SDK de Aplicativos do Intune. Por exemplo, se o aplicativo tiver sua própria experiência do usuário de PIN, ele poderá desabilitá-la se o SDK estiver configurado para exigir que o usuário final insira um PIN. 
 
@@ -170,7 +170,7 @@ Para determinar se a política de PIN será configurada para exigir a entrada do
 
     MAMComponents.get(AppPolicy.class).getIsPinRequired();
 
-## Registrando-se para notificações do SDK  
+### Registrando-se para notificações do SDK  
 
 O SDK de Aplicativos do Intune permite que seu aplicativo tenha controle sobre o comportamento quando algumas políticas, como uma política de apagamento remoto, são usadas pelo administrador de TI. Para fazer isso, você precisará se registrar para notificações do SDK, criando uma classe `MAMNotificationReceiver` e registrando-a no `MAMNotificationReceiverRegistry`. Isso é feito fornecendo o receptor e o tipo de notificação que o receptor deseja receber em  `App.onCreate`, como mostra o exemplo a seguir:
  
@@ -212,17 +212,17 @@ As seguintes notificações são enviadas para o aplicativo e algumas delas pode
 
 * **`REFRESH_POLICY` notificação**: essa notificação é enviada em um MAMNotification sem qualquer informação adicional. Quando essa notificação é recebida, qualquer política armazenada em cache deve ser considerada não invalidada e, portanto, deve verificar qual é a política. Normalmente, isso é tratado pelo SDK, porém deve ser tratado pelo aplicativo se a política for usada de qualquer maneira persistente. 
 
-## Métodos e tentativas pendentes 
+### Métodos e tentativas pendentes 
 
 Depois de derivar de um dos pontos de entrada de MAM, você pode usar o Contexto como faria normalmente, para iniciar Atividades, usando seu `PackageManager`etc.  `PendingIntents` são uma exceção a essa regra. Ao chamar essas classes, você precisa alterar o nome de classe. Por exemplo, em vez de usar `PendingIntent.get*`, `MAMPendingIntents.get*` deve ser usado. 
 
 Em alguns casos, um método disponível na classe Android foi marcado como final na classe de MAM de substituição. Nesse caso, a classe de MAM de substituição fornece um método nomeado da mesma forma (em geral com o sufixo "MAM") que deve ser substituído em vez disso. Por exemplo, em vez de substituir `ContentProvider.query`, você substituiria `MAMContentProvider.queryMAM`. O compilador Java deve impor as restrições finais para evitar a substituição acidental do método original em vez do MAM equivalente. 
 
-# Proteção de dados de backup 
+## Proteção de dados de backup 
 
 A partir do Android Marshmallow (API 23), o Android tem duas formas para um aplicativo fazer backup de seus dados. Essas opções estão disponíveis para uso em seu aplicativo e exigem etapas diferentes para garantir que a proteção de dados de MAM seja aplicada corretamente. Você pode examinar a tabela abaixo para ter visão geral rápida sobre as ações correspondentes necessárias para o comportamento correto de proteção de dados.  Você também pode encontrar mais informações sobre o backup do Android no [Android Developer Data Backup guide](http://developer.android.com/guide/topics/data/backup.html) (Guia de backup de dados para o desenvolvedor Android). 
 
-## Backup completo automático
+### Backup completo automático
 
 No Android M, o Android começou a oferecer backups completos automáticos para aplicativos, independentemente da API de destino durante a execução em um dispositivo do Android M. Desde que o atributo `android:allowBackup` não seja false, um aplicativo receberá backups completos e não filtrados de seu aplicativo. Isso representa um risco de vazamento de dados, portanto, o SDK requer as alterações descritas na tabela a seguir para garantir que a proteção de dados seja aplicada.  É importante seguir as diretrizes descritas abaixo para proteger os dados do cliente corretamente.  Se você definir `android:allowBackup=false` , seu aplicativo nunca será ser enfileirado para backups pelo sistema operacional e você não terá outra ação para o MAM, já que não haverá nenhum backup
  
@@ -230,44 +230,44 @@ No Android M, o Android começou a oferecer backups completos automáticos para 
 
 Essa opção está disponível para todas as APIs e usa `BackupAgent` e `BackupAgentHelper`. 
 
-### Usando BackupAgentHelper
+#### Usando BackupAgentHelper
 
 `BackupAgentHelper` é muito mais simples de implementar do que o `BackupAgent` em termos de funcionalidade nativa do Android e integração de MAM. `BackupAgentHelper` permite que o desenvolvedor registre arquivos inteiros e preferências compartilhadas com um `FileBackupHelper` ou `SharedPreferencesBackupHelper`, respectivamente, que são adicionados ao `BackupAgentHelper` no momento da criação. 
 
-### Usando BackupAgent
+#### Usando BackupAgent
 
 `BackupAgent` permite que você seja muito mais explícito sobre de quais dados é feito backup. No entanto, esta opção significa que você não poderá aproveitar a estrutura de backup do Android.  Como você é bastante responsável pela implementação, há mais etapas necessárias para garantir a proteção de dados apropriada do MAM. Uma vez que a maioria do trabalho é passado para você, o desenvolvedor, integração do MAM é um pouco mais envolvida. 
 
-#### O aplicativo não tem um agente de backup
+##### O aplicativo não tem um agente de backup
   
 Essas são as opções do desenvolvedor quando `Android:allowbBackup =true`:
 
-##### Backup completo de acordo com um arquivo de configuração: 
+###### Backup completo de acordo com um arquivo de configuração: 
 
 Forneça um recurso sob a marca de metadados `com.microsoft.intune.mam.FullBackupContent` em seu manifesto. Por exemplo:
     `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />`
 
 Adicione o seguinte atributo na marca `<application>` : `android:fullBackupContent="@xml/my_scheme"`, em que `my_scheme` é um recurso XML em seu aplicativo. 
 
-##### Backup completo sem exclusões 
+###### Backup completo sem exclusões 
 
 Forneça uma marcação no manifesto, como `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />` 
  
 Adicione o seguinte atributo na marcação `<application>`: `android:fullBackupContent="true"`.
 
-#### O aplicativo tem um agente de backup
+##### O aplicativo tem um agente de backup
 
 Siga as recomendações nas seções `BackupAgent` e `BackupAgentHelper` descritas acima 
 
 Considere a possibilidade de usar nosso `MAMDefaultFullBackupAgent`, que fornece backup fácil no Android M. 
 
-### Antes do backup
+#### Antes do backup
 
 Antes de iniciar o backup, você deve verificar se os arquivos ou buffers de dados de que você pretende fazer backup têm permissão para backup. Nós fornecemos uma função `isBackupAllowed` em `MAMFileProtectionManager` e `MAMDataProtectionManager` para determinar isso. Se o buffer de dados ou arquivo não tiver permissão para backup, você não deve tentar continuar utilizando-o em seu backup.
 
 Em algum momento durante o backup, se desejar que as identidades dos arquivos verificados na etapa 1 façam backup, você deverá chamar `backupMAMFileIdentity(BackupDataOutput data, File … files)` com os arquivos dos quais planejada extrair dados. Isso criará automaticamente novas entidades de backup e as gravará em `BackupDataOutput` para você. Essas entidades serão consumidas automaticamente após a restauração. 
 
-## Configurar a ADAL (Biblioteca de Autenticação do Active Directory)  
+### Configurar a ADAL (Biblioteca de Autenticação do Active Directory)  
 
 O SDK depende a ADAL para autenticação e cenários de inicialização condicional, o que exige que os aplicativos tenham alguma configuração do Active Directory do Azure. Os valores de configuração são comunicados para o SDK por meio dos metadados `AndroidManifest` . Para configurar seu aplicativo e habilitar a autenticação adequada, adicione o seguinte ao nó de aplicativo no `AndroidManifest`. Algumas dessas configurações somente são necessárias se seu aplicativo usar o ADAL para autenticação em geral. Nesse caso, você precisará dos valores específicos que seu aplicativo usa para se registrar com o AAD. Isso é feito para garantir que não seja solicitada a autenticação do usuário final duas vezes devido ao AAD reconhecer dois valores de registro separados: um do aplicativo e um do SDK. 
 
@@ -286,17 +286,17 @@ O SDK depende a ADAL para autenticação e cenários de inicialização condicio
 
 Os GUIDs não devem ter o colchete à direita ou à esquerda.
 
-### Configurações comuns do ADAL 
+#### Configurações comuns do ADAL 
 
 A seguir estão as configurações comua para os valores explicados acima. 
 
-#### O aplicativo não se integra ao ADAL
+##### O aplicativo não se integra ao ADAL
 
 * A autoridade deve ser configurada para o ambiente desejado em que as contas do AAD foram configuradas.
 
 * O SkipBroker deve ser definido como true.
 
-#### O aplicativo integra o ADAL
+##### O aplicativo integra o ADAL
 
 * A autoridade deve ser configurada para o ambiente desejado em que as contas do AAD foram configuradas.
 
@@ -309,7 +309,7 @@ A seguir estão as configurações comua para os valores explicados acima.
 
 * O AAD deve ser configurado para aceitar o URI de redirecionamento do agente.
 
-#### O aplicativo integra-se ao ADAL, mas não dá suporte ao aplicativo do Autenticador do AAD.
+##### O aplicativo integra-se ao ADAL, mas não dá suporte ao aplicativo do Autenticador do AAD.
 
 * A autoridade deve ser configurada para o ambiente desejado em que as contas do AAD foram configuradas.
 
@@ -319,13 +319,13 @@ A seguir estão as configurações comua para os valores explicados acima.
 
     * Or `urn:ietf:wg:oauth:2.0:oob` deve ser configurado como um URI de redirecionamento do AAD válido.
 
-## Como habilitar o registro no SDK 
+### Como habilitar o registro no SDK 
 
 O registro em log é feito por meio da estrutura `java.util.logging` . Para receber os logs, configure o registro conforme descrito no [Guia técnico de Java](http://docs.oracle.com/javase/6/docs/technotes/guides/logging/overview.html). Dependendo do aplicativo, `App.onCreate` geralmente é o melhor local para iniciar o registro. Observe que as mensagens de Log são criptografadas pelo nome de classe, que pode ser ofuscado.
 
-# Limitações conhecidas da plataforma 
+## Limitações conhecidas da plataforma 
 
-## Limitações de tamanho do arquivo 
+### Limitações de tamanho do arquivo 
 
 No Android, as limitações do formato de arquivo executável Dalvik podem se tornar um problema para grandes bases de código que são executadas sem o ProGuard. Especificamente, as limitações a seguir podem ocorrer: 
 
@@ -341,7 +341,7 @@ Ao incluir vários projetos, cada android:package obterá uma cópia do R que au
 
 * Remova todas as bibliotecas desnecessárias e não utilizadas (por exemplo, `android.support.v4`)
 
-## Limitações de imposição de política
+### Limitações de imposição de política
 
 **Captura de tela**: o SDK não impõe um novo valor de configuração de captura de tela Atividades que já passaram por Activity.onCreate. Isso pode resultar em um período de tempo em que o aplicativo foi configurado para desabilitar as capturas de tela, mas capturas de tela ainda podem ser feitas.
 
@@ -351,7 +351,7 @@ Ao incluir vários projetos, cada android:package obterá uma cópia do R que au
 
 **Serviços exportados**: o arquivo `AndroidManifest.xml` incluído no SDK de Aplicativos do Intune contém `MAMNotificationReceiverService`, que deve ser um serviço exportado para permitir que o Portal da Empresa envie notificações para um aplicativo esclarecido. O serviço verifica o chamador para garantir que apenas o Portal da Empresa tenha permissão para enviar notificações. 
 
-# Práticas Recomendadas de Android 
+## Práticas Recomendadas de Android 
 
 O SDK do Intune mantém o contrato fornecido pela API do Android, embora condições de falha possam ser disparadas com mais frequência como resultado da aplicação de políticas. Essas práticas recomendadas do Android reduzirão a probabilidade de falha: 
 
@@ -365,6 +365,6 @@ O SDK do Intune mantém o contrato fornecido pela API do Android, embora condiç
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

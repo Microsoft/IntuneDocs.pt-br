@@ -3,8 +3,8 @@ title: Cancelar o registro do seu dispositivo Android do Intune| Microsoft Intun
 description: Descreve como cancelar o registro de um dispositivo Android do Intune
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 18b34de09cc24730cca6eacb0d5d2c5f99c24d1e
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 8ae9b8b128408d6afe56f99886a70155e858c9e8
 
 
 ---
@@ -26,7 +26,7 @@ Quando você cancelar o registro do dispositivo Android do Intune, você não po
 
 Para cancelar o registro do dispositivo do Intune e desinstalar o aplicativo Portal da Empresa, siga estas etapas ou assista a este vídeo:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
 1.  Entre no aplicativo Portal da Empresa.
 
@@ -45,10 +45,9 @@ Para cancelar o registro do dispositivo do Intune e desinstalar o aplicativo Por
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
 
 
-### Consulte também
-[Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 35cb5187260eb7b96e09ee7feb24bad90cbb0cb3
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 5a2a53e1fa012c2b786d5955749d1f8442a32030
 
 
 ---
@@ -31,11 +31,10 @@ Se receber erros enquanto estiver usando o dispositivo iOS ao usar o aplicativo 
 
 -   Enquanto estiver no aplicativo da Portal da Empresa: agite o dispositivo e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e garanta que a opção **Gesto de Agitação** esteja ativada.
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

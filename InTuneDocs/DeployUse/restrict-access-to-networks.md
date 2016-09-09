@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
+ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
 
 
 ---
@@ -29,33 +29,34 @@ Para habilitar essa integração, você não precisa fazer nenhuma configuraçã
 ### Etapa 1: Gerenciar os certificados
 1. No console do Azure AD (Azure Active Directory), exporte o certificado.
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Execute o Internet Explorer como administrador e entre no console do Azure AD.
+   a. Execute o Internet Explorer como administrador e entre no console do Azure AD.
 
-    b. Escolha o ícone de cadeado na barra de endereços e escolha **Exibir certificados**.
+   b. Escolha o ícone de cadeado na barra de endereços e escolha **Exibir certificados**.
 
-    c. Na guia **Detalhes** das propriedades do certificado, escolha **Copiar para arquivo**.
+   c. Na guia **Detalhes** das propriedades do certificado, escolha **Copiar para arquivo**.
 
-    d. Na página de boas-vindas **Assistente para Exportação de Certificados**, escolha **Avançar**.
+   d. Na página de boas-vindas **Assistente para Exportação de Certificados**, escolha **Avançar**.
 
-    e. Na pagina **Formato do arquivo de exportação**, deixe o padrão **x.509 binário codificado por DER (.CER)** e escolha **Avançar**.  
+   e. Na pagina **Formato do arquivo de exportação**, deixe o padrão **x.509 binário codificado por DER (.CER)** e escolha **Avançar**.  
 
-    f. Na página **Arquivo a ser exportado**, escolha **Procurar** para escolher um local no qual salvar o arquivo e forneça um nome de arquivo. Embora pareça que você está escolhendo um arquivo para ser exportado, na verdade você está nomeando o arquivo no qual o certificado exportado será salvo. Escolha **Avançar** &gt; **Concluir**.
+   f. Na página **Arquivo a ser exportado**, escolha **Procurar** para escolher um local no qual salvar o arquivo e forneça um nome de arquivo. Embora pareça que você está escolhendo um arquivo para ser exportado, na verdade você está nomeando o arquivo no qual o certificado exportado será salvo. Escolha **Avançar** &gt; **Concluir**.
 
-    #### Safari
+#### Safari
 
-    a. Entre no console do Azure AD.
+ a. Entre no console do Azure AD.
 
-    b. Escolha o ícone de cadeado &gt;  **Mais informações**.
+b. Escolha o ícone de cadeado &gt;  **Mais informações**.
 
-    c. Escolha **Exibir certificado** &gt; **Detalhes**.
+   c. Escolha **Exibir certificado** &gt; **Detalhes**.
 
-    d. Escolha o certificado e, em seguida, escolha **Exportar**.  
+   d. Escolha o certificado e, em seguida, escolha **Exportar**.  
 
-    > [!IMPORTANT]
-    > Verifique a data de validade do certificado, pois você terá que exportar e importar um novo certificado quando este expirar.
+> [!IMPORTANT]
+>
+> Verifique a data de validade do certificado, pois você terá que exportar e importar um novo certificado quando este expirar.
 
 
 2. De dentro do console do ISE, importe o certificado do Intune (o arquivo exportado) para o repositório **Certificados Confiáveis**.
@@ -146,6 +147,6 @@ Também há um [conjunto baixável de instruções de registro](https://gallery.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
