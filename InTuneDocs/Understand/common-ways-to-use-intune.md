@@ -4,7 +4,7 @@ description: Lista seis das tarefas mais comuns nas quais o Intune ajuda
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: 2ebb8fcf348cfdc7600c37b40824f5bba37a7f36
+ms.openlocfilehash: 4614c13d98c4b05882bbeabfbbd7de83d9bea2da
 
 
 ---
@@ -26,10 +26,14 @@ Antes de se envolver em tarefas de implementação, é importante alinhar os par
 >[!NOTE]
 >Você deseja saber como a equipe de TI da Microsoft utiliza o Intune para permitir que os funcionários da Microsoft acessem recursos corporativos em seus dispositivos móveis enquanto também mantêm os dados corporativos protegidos? [Leia este estudo de caso técnico](https://www.microsoft.com/itshowcase/Article/Content/588) para ver em detalhes como o a equipe de TI da Microsoft utiliza o Intune e outros serviços para gerenciar identidades, dispositivos e aplicativos e dados.  
 
+>[!IMPORTANT]
+>Garantindo que os dispositivos móveis estejam atualizados<br>
+>Levando em consideração os ataques de malware "Trident" recentes em dispositivos iOS, publicamos uma nova postagem no blog, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Garantindo que os dispositivos móveis sejam atualizados usando o Microsoft Intune) para ajudá-lo a saber mais sobre as diferentes maneiras em que o Intune pode ajudar a manter seus dispositivos seguros e atualizados.
+
 ## Protegendo seus dados e emails locais para que eles possam ser acessados com segurança pelos dispositivos móveis
 A maioria das estratégias de mobilidade corporativa começam com um plano para habilitar o acesso seguro ao email para funcionários com dispositivos móveis na Internet. Muitas organizações ainda têm dados locais e servidores de aplicativos, como o Microsoft Exchange, hospedados em sua rede corporativa. O Intune e o EMS (Enterprise Mobility Suite) oferecem uma [solução de acesso condicional](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) integrada exclusivamente para o Exchange Server que garante que nenhum aplicativo móvel poderá acessar o email até que o dispositivo seja registrado no Intune, tudo sem implantar outro computador de gateway na borda da sua rede corporativa!
 
-Além do email, o Intune dá suporte à habilitação do acesso a aplicativos móveis que precisam de acesso seguro aos dados locais, como um servidor de aplicativo de linha de negócios.  Isso geralmente é feito usando [certificados gerenciados pelo Intune](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles) para o controle de acesso combinado com um gateway de VPN padrão ou o proxy no perímetro, como o Proxy de Aplicativo do Microsoft Azure AD.  Nesses casos, a única maneira de acessar os dados corporativos é registrar o dispositivo no gerenciamento.  Depois de registrado, o sistema de gerenciamento garante que os dispositivos que acessam dados corporativos são compatíveis com suas políticas.  Além disso, a [Ferramenta de Disposição do Aplicativo e o SKD do Aplicativo](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) do Intune podem ser usadas para ajudar a conter os dados acessados dentro de seu aplicativo de linha de negócios, portanto, ele não pode passar dados corporativos para serviços ou aplicativos de consumidor.
+Além do email, o Intune dá suporte à habilitação do acesso a aplicativos móveis que precisam de acesso seguro aos dados locais, como um servidor de aplicativo de linha de negócios.  Isso geralmente é feito usando [certificados gerenciados pelo Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles) para o controle de acesso combinado com um gateway de VPN padrão ou o proxy no perímetro, como o Proxy de Aplicativo do Microsoft Azure AD.  Nesses casos, a única maneira de acessar os dados corporativos é registrar o dispositivo no gerenciamento.  Depois de registrado, o sistema de gerenciamento garante que os dispositivos que acessam dados corporativos são compatíveis com suas políticas.  Além disso, a [Ferramenta de Disposição do Aplicativo e o SKD do Aplicativo](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) do Intune podem ser usadas para ajudar a conter os dados acessados dentro de seu aplicativo de linha de negócios, portanto, ele não pode passar dados corporativos para serviços ou aplicativos de consumidor.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -68,6 +72,6 @@ Os funcionários estão cada vez mais fazendo uso de tecnologias móveis.  Por e
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
