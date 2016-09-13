@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Usar grupos para gerenciar usuários e dispositivos no Microsoft Intune
+
+Este tópico descreve como criar grupos no Intune. Ele também fornece informações sobre como o gerenciamento de grupos será alterado nos próximos meses. Para saber mais sobre a abordagem *atual* de gerenciamento de grupos, veja [Criar grupos para gerenciar usuários e dispositivos com o Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) neste tópico.
+
 ## Aviso sobre futuras melhorias para a experiência de administração de grupos
 
 Com base nos seus comentários relativos a ter uma experiência de agrupamento e direcionamento no Enterprise Mobility + Security, estamos convertendo os Grupos do Intune para Grupos de segurança baseados no Azure Active Directory. Isso unificará o gerenciamento de grupos no Intune e no Azure Active Directory (Azure AD). Com a nova experiência, você não precisará duplicar grupos entre os serviços e terá extensibilidade usando o PowerShell e o Graph. 
@@ -72,7 +76,7 @@ Embora a experiência de grupo vá melhorar, algumas funcionalidades do Intune n
 -  se você tiver administradores que não têm permissões para criar grupos no Azure AD, peça que o administrador do Azure AD os adicione à função **Administrador de serviço do Intune** do Azure AD.
 
 
-# Criar grupos para gerenciar usuários e dispositivos com o Microsoft Intune
+## Criar grupos para gerenciar usuários e dispositivos com o Microsoft Intune
 
 Esta seção descreve como criar grupos do Intune no console de administração do Intune.
 
@@ -208,6 +212,6 @@ Cada política tem um **Valor Pretendido** e um **Status**. O valor pretendido �
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

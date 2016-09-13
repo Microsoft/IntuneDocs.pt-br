@@ -3,19 +3,19 @@ title: "O que acontece quando você redefine o dispositivo Windows usando o Port
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 29fab114e2b5b9b3a7c8e050af6f37287a715026
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
 
 
 ---
@@ -33,10 +33,10 @@ Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empre
 
 Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

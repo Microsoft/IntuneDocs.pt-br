@@ -1,10 +1,10 @@
 ---
-title: Recursos de gerenciamento do computador Windows | Microsoft Intune
-description: Saiba mais sobre os recursos do Intune ao gerenciar computadores Windows com o software cliente do Intune.
+title: Recursos de cliente de software de computador Intune | Microsoft Intune
+description: Saiba mais sobre os recursos do Intune ao gerenciar computadores Windows com o cliente de software Intune.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Recursos de gerenciamento de computador Windows (com o cliente de computador do Microsoft Intune)
-Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune, que fornece um conjunto maior de recursos que o cliente de computador do Intune. No entanto, você também pode gerenciar computadores usando o cliente de computador do Intune, que fornece os seguintes recursos:
+# Recursos de gerenciamento de computadores do Windows quando você usa o cliente de software Intune)
+Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune, que fornece um maior conjunto de recursos. No entanto, você também pode gerenciar computadores usando o cliente de software Intune, que fornece os seguintes recursos:
 
 -   **Gerenciamento de atualizações de software** – Você pode manter os computadores atualizados e gerenciar quando as atualizações são aplicadas.
 
@@ -31,10 +31,10 @@ Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune,
 -   **Assistência remota** – O Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluso no Intune (requer o software TeamViewer).
 
 -   **Gerenciamento de licenças de software** – Controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
--   **Implantação de aplicativo** – Implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativo não estão disponíveis quando você gerencia computadores com o software cliente.
+-   **Implantação de aplicativo** – Implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativos não estão disponíveis quando você gerencia computadores com o cliente de software.
 
 
-O Intune dá suporte à instalação do software cliente de computador em até 7.000 dispositivos Windows.
+O Intune dá suporte à instalação do cliente de software em até 7.000 dispositivos Windows.
 
 ## Requisitos de sistema operacional
 O Intune pode gerenciar computadores que executam as seguintes versões do Windows (32 e 64 bits):
@@ -52,7 +52,7 @@ O Intune pode gerenciar computadores que executam as seguintes versões do Windo
 
 
 ## Requisitos mínimos de hardware
-Veja a seguir os requisitos mínimos de hardware para instalar o cliente de computador do Intune:
+Veja a seguir os requisitos mínimos de hardware para instalar o cliente de software Intune:
 
 |Requisito|Detalhes|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ Veja a seguir os requisitos mínimos de hardware para instalar o cliente de comp
 |Espaço em disco|200 MB de espaço em disco disponível antes de instalar o software cliente.|
 
 ## Requisitos adicionais
-Veja a seguir os requisitos de software para instalar o cliente de computador do Intune:
+Veja a seguir os requisitos de software para instalar o cliente de software Intune:
 
 |Requisito|Detalhes|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ Veja a seguir os requisitos de software para instalar o cliente de computador do
 |Remover o software cliente incompatível|Antes de instalar o software cliente de computador do Intune, você deve desinstalar o seguinte software cliente do computador:<br /><br />- Qualquer versão do Configuration Manager<br />- Qualquer versão do Microsoft SMS (Systems Management Server)|
 
 ### Consulte também
-[Recursos de gerenciamento de dispositivos móveis do Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Recursos de gerenciamento de dispositivos registrados do Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

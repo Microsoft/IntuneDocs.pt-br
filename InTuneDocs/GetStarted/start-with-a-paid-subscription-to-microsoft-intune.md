@@ -2,9 +2,9 @@
 title: "Guia de início rápido do Intune | Microsoft Intune"
 description: "Requisitos e pré-requisitos para começar a usar sua assinatura do Intune"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
-ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: aecd5f76e234835c38bf47d8de7e13034d683998
 
 
 ---
@@ -75,6 +75,6 @@ Se estiver gerenciando dispositivos iOS ou Windows Phone com o Intune, você pre
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

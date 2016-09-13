@@ -2,9 +2,9 @@
 title: "Tarefas pós configuração | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: a589974b4170754f94fbc73fcbaff4d7776261f7
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 2ea332e7f0739ef55fcd0174d21e67086bcc9f4f
 
 
 ---
@@ -30,6 +30,6 @@ Depois de concluir as etapas de configuração inicial para uma assinatura paga 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

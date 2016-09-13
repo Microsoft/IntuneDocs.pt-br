@@ -3,19 +3,19 @@ title: "Aguarde enquanto o dispositivo está sendo avaliado | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
-ms.openlocfilehash: 08e0104ef1a7979cef332848b791026ecc55ef6a
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 698ba3e3af78c857eae5c5f81dd81ba1954835fd
 
 
 ---
@@ -27,7 +27,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

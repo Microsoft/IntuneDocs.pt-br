@@ -1,10 +1,10 @@
 ---
-title: "Recursos de gerenciamento de dispositivo móvel | Microsoft Intune"
-description: "Leia este tópico para saber como o Intune pode ajudá-lo a gerenciar seus dispositivos móveis registrados com o serviço."
+title: Recursos de gerenciamento de dispositivos registrados | Microsoft Intune
+description: "Leia este tópico para saber como o Intune pode ajudar a gerenciar dispositivos registrados."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Recursos de gerenciamento de dispositivos móveis do Microsoft Intune
+# Recursos de gerenciamento de dispositivos registrados do Microsoft Intune
 
 O Microsoft Intune permite que você gerencie uma variedade de dispositivos *registrando-os* no serviço. Você mesmo pode registrar alguns tipos de dispositivos, ou os usuários podem registrá-los usando o aplicativo do *portal da empresa*. Isso também permite que eles executem operações como navegar e instalar aplicativos, garantindo que seus dispositivos sejam compatíveis com as políticas da empresa, e entrem em contato com o suporte de TI.
 
@@ -70,6 +70,6 @@ Gerenciamento, inventário, implantação de aplicativos, provisionamento e desa
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

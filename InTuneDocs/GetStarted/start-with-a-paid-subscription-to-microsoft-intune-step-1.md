@@ -2,9 +2,9 @@
 title: Inscrever-se ou entrar no Intune | Microsoft Intune
 description: "Como se inscrever para uma assinatura do Intune ou entrar se você já tiver uma assinatura"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: ccd78b30e72e2431aff7d4154796f4250f710b5a
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: fddf33ecc0296d5bfabb710e0d4b178f75659009
 
 
 ---
@@ -51,6 +51,6 @@ Parabéns! Você acabou de concluir a etapa 1 do *Guia de início rápido do Int
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
