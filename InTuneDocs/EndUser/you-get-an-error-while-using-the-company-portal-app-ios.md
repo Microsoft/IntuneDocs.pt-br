@@ -3,19 +3,19 @@ title: "Você recebe um erro ao usar o aplicativo Portal da Empresa | Microsoft 
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/04/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
-ms.openlocfilehash: 9f377cf9293c9697a59c736b07a82bca09728e14
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 481f9570f4c1cf30bfb7be9beef2681fa5fc84f7
 
 
 ---
@@ -32,10 +32,10 @@ Se receber um erro enquanto estiver usando o aplicativo Portal da Empresa em seu
 -   Agitando seu dispositivo enquanto você estiver no aplicativo Portal da Empresa e, em seguida, tocando em **Email** quando o alerta de diagnóstico aparecer. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e garanta que a opção **Gesto de Agitação** esteja ativada.
 
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

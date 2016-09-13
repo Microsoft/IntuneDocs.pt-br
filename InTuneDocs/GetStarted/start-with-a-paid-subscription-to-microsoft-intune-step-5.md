@@ -2,9 +2,9 @@
 title: "Criar grupos para organizar usuários e dispositivos | Microsoft Intune"
 description: "Explica como criar usuários e grupos para sua assinatura do Intune"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 8c6620d5d8f0d927da6328ea844625957ba2d240
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 3b2f896ea6c3e66924dbd8b35fcddcccd0b65ca6
 
 
 ---
@@ -75,6 +75,6 @@ Parabéns! Você acabou de concluir a etapa 5 do *Guia de início rápido do Int
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

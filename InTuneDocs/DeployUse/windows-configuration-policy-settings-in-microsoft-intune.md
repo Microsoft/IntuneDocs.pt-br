@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 ## Configurações de segurança
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Tipo de senha necessária**|Especifica o tipo de senha necessário, como apenas com caracteres numéricos ou alfanuméricos.|Sim|Sim|
 |**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. No entanto, para dispositivos iOS, essa configuração especifica o número de símbolos que devem ser incluídos na senha.|Sim|Sim|
 |**Comprimento mínimo da senha**<sup>1</sup>|Define o tamanho mínimo necessário (em caracteres) para a senha.|Sim|Sim|
@@ -46,7 +46,7 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 ## Configurações de criptografia
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Exige que os arquivos no dispositivo sejam criptografados.<br>Para dispositivos Windows Phone 8, defina como **Sim**.|Sim|Não|
 <sup>1</sup> Informações adicionais sobre dispositivos que executam o Windows 8.1
 
@@ -61,14 +61,14 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 ## Configurações de malware
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Requer firewall de rede**|Exige que o Firewall do Windows esteja ativado.|Sim|Não|
 |**Habilitar SmartScreen**|Exige o uso do Windows SmartScreen.|Sim|Não|
 
 ## Configurações de sistema
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Requer atualizações automáticas**|Ativa a configuração de atualizações automáticas em dispositivos.|Sim|Não|
 |**Requer atualizações automáticas – Classificação mínima das atualizações a serem instaladas automaticamente**|Escolhe a classificação das atualizações que serão instaladas automaticamente:<br /><br />-   **Importante** – Instala todas as atualizações classificadas como importantes.<br />-   **Recomendado** – Instala todas as atualizações classificadas como importantes ou recomendadas.|Sim|Não|
 |**Controle de conta de usuário**|Exige o uso de UAC (Controle de Conta de Usuário ) em dispositivos.|Sim|Não|
@@ -78,19 +78,19 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 ## Configurações de nuvem – documentos e dados
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**URL de pastas de trabalho**|Define a URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.|Sim|Não|
 
 ## Configurações de email
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Tornar a conta da Microsoft opcional em aplicativo de correio do Windows**|Habilita o acesso ao aplicativo de Email do Windows sem uma conta da Microsoft.|Sim|Não|
 
 ## Configurações de aplicativo - navegador
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Permitir preenchimento automático**|Habilita os usuários a alterarem as configurações de preenchimento automático no navegador.|Sim|Não|
 |**Permitir bloqueador de pop-up**|Habilita ou desabilita o bloqueador de pop-ups do navegador.|Sim|Não|
 |**Permitir plug-ins**|Habilita os usuários a adicionar plug-ins ao Internet Explorer.|Sim|Não|
@@ -109,7 +109,7 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 ## Configurações de recursos do dispositivo - celular
 
 |Nome da configuração|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Permitir roaming de Dados**|Habilita o roaming de dados quando o dispositivo estiver em uma rede de celular.|Sim|Não|
 
 
@@ -119,6 +119,6 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

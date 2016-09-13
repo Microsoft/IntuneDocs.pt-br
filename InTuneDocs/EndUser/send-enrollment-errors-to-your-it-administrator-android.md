@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 0d1b9b16df643004aca7fd620f738d226a6ebb07
+ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
+ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
 
 
 ---
@@ -29,14 +29,12 @@ Um email, endereçado ao seu administrador de TI, é criado automaticamente e co
 
 Há diferentes maneiras de enviar logs de dados do dispositivo para o administrador de TI para obter ajuda com erros:
 
-[Usar um cabo USB para enviar logs](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
-[Usar o email para enviar logs](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-
-### Consulte também
-[Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
+- [Usar um cabo USB para enviar logs](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+- [Usar o email para enviar logs](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO2-->
 
 

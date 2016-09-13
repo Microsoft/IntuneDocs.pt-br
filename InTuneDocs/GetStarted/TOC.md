@@ -23,8 +23,8 @@
 ### [Tarefas pós-configuração](post-configuration-tasks.md)
 
 ## [Escolha como gerenciar dispositivos](choose-how-to-manage-devices.md)
-### [Recursos de gerenciamento de dispositivos móveis](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Recursos de gerenciamento do PC Windows](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [Recursos de gerenciamento de dispositivos registrados](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Recursos de cliente de software de computador do Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Fases de distribuição para implantações do Intune](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Escopo do projeto](project-scope.md)
@@ -39,6 +39,6 @@
 # [Solução de problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

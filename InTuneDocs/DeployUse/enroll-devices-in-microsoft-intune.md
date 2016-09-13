@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ A tabela a seguir mostra os métodos de registro para métodos de registro do di
 |**[BYOD](#BYOD)** | Não|    Sim |   Não |
 |**[DEM](#DEM)**|   Não |Não |Não  |
 
-**Métodos de registro para dispositivos de propriedade corporativa**
+**Métodos de registro para dispositivos**
 
 ### BYOD
 “Traga seu próprio dispositivo”. Os usuários instalam o aplicativo de Portal da Empresa e registram o dispositivo. Registrar um dispositivo com o Portal da Empresa unirá o dispositivo ao local de trabalho. Registrar os dispositivos iOS com o Portal da Empresa requer uma ID da Apple. O BYOD não requer configuração adicional para dispositivos de propriedade corporativa. Consulte as etapas para [Configurar o gerenciamento de dispositivo](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Voltar à tabela](#overview-of-device-enrollment-methods))
@@ -151,6 +151,6 @@ Computadores gerenciados com o software cliente Intune não podem ser apagados n
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

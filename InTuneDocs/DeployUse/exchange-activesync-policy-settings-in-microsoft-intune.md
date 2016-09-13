@@ -4,7 +4,7 @@ description: "Use a política do Exchange ActiveSync do Intune para definir as c
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
-ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 ## Configurações de senha
 
 |Nome da configuração|Detalhes
-|----------------|
+|----------------|---|
 |**Exigir uma senha para desbloquear os dispositivos móveis**|Especifica se os dispositivos devem ser bloqueados usando uma senha.<br>(não aplicável a dispositivos que executam o Windows RT).|
 |**Tipo de senha necessária**|Especifica o tipo de senha necessária, por exemplo, apenas numérica ou alfanumérica.|
 |**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres necessários na senha do dispositivo.|
@@ -40,7 +40,7 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 ## Configurações de criptografia
 
 |Nome da configuração|Detalhes|
-|----------------|
+|----------------|---|
 |**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Requer que os dados em um dispositivo sejam criptografados quando tiverem suporte.<br><br>Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir uma senha para desbloquear dispositivos móveis**.|
 |**Exigir criptografia em cartões de memória**|Exige que os dados armazenados externamente, como em um cartão SD, sejam criptografados (em dispositivos com suporte).
 <sup>1</sup> Informações adicionais sobre dispositivos que executam o Windows 8.1
@@ -56,7 +56,7 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 ## Configurações de email
 
 |Nome da configuração|Detalhes
-|----------------|
+|----------------|---|
 |**Permitir que usuários baixem anexos de email**|Especifica se anexos de email podem ser baixados no dispositivo móvel.|
 |**Período de sincronização de email**|Especifica o número de dias de email recebido que serão sincronizados com o dispositivo.
 |**Permitir que dispositivos móveis que não dão suporte total às configurações do Exchange Sync sincronizem com o Exchange**|Especifica se o acesso do Exchange deve ser permitido em dispositivos que não oferecem suporte a uma ou mais configurações do Exchange ActiveSync.
@@ -64,13 +64,13 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 ## Configurações do navegador
 
 |Nome da configuração|Detalhes
-|----------------|-
+|----------------|---|
 |**Permitir navegador da web**|Especifica se o navegador da Web no dispositivo pode ser usado.<br>(Não disponível para Windows RT ou Windows Phone).
 
 ## Configurações de hardware
 
 |Nome da configuração|Detalhes
-|----------------|
+|----------------|---|
 |**Permitir câmera**|Especifica se a câmera no dispositivo pode ser usada.<br>(Não disponível para Windows RT ou Windows Phone).
 
 
@@ -80,6 +80,6 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

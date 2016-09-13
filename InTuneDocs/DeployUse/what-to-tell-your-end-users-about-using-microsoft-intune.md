@@ -3,8 +3,8 @@ title: "O que dizer a seus usuários finais sobre como usar o Intune | Microsoft
 description: "Links para informações para compartilhar com os usuários finais"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Lembre-se de incluir as informações de contato do administrador de TI quando v
 
 ## Onde os usuários finais podem encontrar informações sobre tarefas comuns
 
-Forneça aos usuários finais os seguintes links de ajuda do usuário final quando eles estiverem procurando informações de como usar o Intune em seus dispositivos. Nestes links, os usuários verão etapas de como instalar o aplicativo Portal da Empresa, registrar seus dispositivos, obter aplicativos gerenciados, solucionar problemas e muito mais.
+Quando usuários registrados precisam de ajuda para usar o Intune, normalmente veem um link no site Portal da Empresa ou no aplicativo Portal da Empresa que aponta para um artigo específico com etapas para corrigir o problema ou concluir a tarefa. Por exemplo, se usuários do Android veem uma mensagem que diz que um certificado necessário está ausente, podem tocar em um link "Como resolver isso" para acessar um artigo com etapas sobre como obter o certificado. 
+
+Os links a seguir são para administradores de TI. Essas páginas contêm links para todos os artigos aos quais os usuários são encaminhados quando estão no site ou aplicativo Portal da Empresa. Os links são divididos em seções: instalação de aplicativo Portal da Empresa e registro do Intune; tarefas que os usuários podem realizar em seus dispositivos, como usar aplicativos gerenciados e sincronizar manualmente seus dispositivos; e solução de problemas.
 
 - [Usando seu dispositivo Android com o Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ Para entender como os usuários finais podem obter aplicativos, escolha entre as
 
 Para ajudar os usuários a resolver problemas que possam ocorrer ao usar o Portal da empresa, você pode examinar uma [lista de mensagens que podem ser exibidas aos usuários no Portal da Empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
+Se há outras informações que você gostaria que fossem abordados neste artigo, adicione sua sugestão à caixa Comentário na parte inferior deste tópico. Obrigado!
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

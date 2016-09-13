@@ -2,9 +2,9 @@
 title: Personalizar o Portal da Empresa | Microsoft Intune
 description: Explica como personalizar o Portal da Empresa para sua assinatura do Intune
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: cd82cb9b049a4f61dc19beeedb62cb454a62512c
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
 
 
 ---
@@ -70,6 +70,6 @@ Parabéns! Você acabou de concluir a etapa 7 do *Guia de início rápido do Int
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
