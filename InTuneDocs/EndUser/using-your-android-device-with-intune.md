@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Usando seu dispositivo Android com o Intune
 
-Este artigo inclui links para todas as tarefas que os usuários finais podem realizar em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem consultar essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias: 
+Este artigo inclui links para todas as tarefas que os usuários finais podem realizar em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem conferir essas informações para ver as etapas que os usuários devem seguir para realizar diversas tarefas, que são agrupadas nas seguintes categorias:
 
-- Instalação do aplicativo do portal da Empresa e registro no Intune 
+- Instalação do aplicativo de Portal da Empresa e registro no Intune
 - Tarefas de gerenciamento pós-registro
 - Problemas de conformidade
 
 ## Instalação do aplicativo de Portal da Empresa e registro no Intune
 
-As informações nesta seção ajudam na instalação do Portal da Empresa do Intune e no registro de dispositivos para dispositivos Android.
+As informações contidas nesta seção ajudam com a instalação do Portal da Empresa do Intune e o registro de dispositivos Android.
 
 - [Registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md)
 - [O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Coisas que você pode fazer quando seu dispositivo está registrado no Intune
 
-As informações nesta seção ajudam com as ações que precisam ser realizadas depois que o dispositivo Android é registrado no Intune.
+As informações contidas nesta seção ajudam com as ações que precisam ser realizadas após o registro do dispositivo Android no Intune.
 
 - [Use aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-android.md)
 - [Criptografar seu dispositivo](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ As informações nesta seção ajudam com as ações que precisam ser realizadas
 
 ## Corrigir problemas com seu dispositivo
 
-As informações nesta seção ajudam a corrigir problemas que podem ser encontrados depois que o dispositivo Android for registrado no Intune.
+As informações contidas nesta seção ajudam a corrigir problemas que podem ocorrer após o registro do dispositivo Android no Intune.
 
 - [Use o Registro em Log Detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Enviar logs de dados de diagnóstico para o administrador de TI usando email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

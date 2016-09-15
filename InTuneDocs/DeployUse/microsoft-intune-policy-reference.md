@@ -4,7 +4,7 @@ description: "Use as informações neste tópico para ajudar na decisão sobre q
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Referência da política do Microsoft Intune
+# Referência da política de configuração do Microsoft Intune
 
 Use as informações neste tópico para ajudar na decisão sobre qual política de configuração do Microsoft Intune você precisa usar para gerenciar seus dispositivos.
 
@@ -74,7 +74,7 @@ Aplica-se somente ao Windows Phone e a dispositivos Windows registrados.
 |---------------|------------------------|
 |**Configuração personalizada (Windows 10 Desktop e Mobile e posterior)**|Implante as configurações OMA-URI que podem ser usadas para controlar recursos do dispositivo. Isso é útil quando a configuração necessária não está disponível em uma política de configuração.<br />    Para ver mais detalhes, consulte [Windows 10 policy settings in Microsoft Intune (Configurações de política do Windows 10 no Microsoft Intune)](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuração personalizada (Windows Phone 8.1 e posterior)**|Implante as configurações OMA-URI que podem ser usadas para controlar recursos do dispositivo. Isso é útil quando a configuração necessária não está disponível em uma política de configuração.<br /><br />Para ver mais detalhes, consulte [Windows Phone 8.1 settings in Microsoft Intune (Configurações do Windows Phone 8.1 no Microsoft Intune)](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
-|**Política de Atualização de Edição (Windows 10 Desktop e posterior)**<br><br>**Política de Atualização de Edição (Windows 10 Holographic e posterior)**|Configurar e implantar políticas que contêm informações de chave de licença ou chave do produto (Product Key) que são usadas para atualizar dispositivos Windows 10 para uma versão mais recente.<br><br>Para detalhes, consulte [Edition upgrade policy settings in Microsoft Intune (Configurações da política de atualização de edição no Microsoft Intune)](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
+|**Política de Atualização de Edição (Windows 10 Desktop e posterior)**<br><br>**Política de Atualização de Edição (Windows 10 Holographic e posterior)**<br><br>**Política de Atualização de Edição (Windows Mobile 10 e posterior)**|Configurar e implantar políticas que contêm informações de chave de licença ou chave do produto (Product Key) que são usadas para atualizar dispositivos Windows 10 para uma versão mais recente.<br><br>Para detalhes, consulte [Edition upgrade policy settings in Microsoft Intune (Configurações da política de atualização de edição no Microsoft Intune)](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
 |**Perfil de email (Windows Phone 8 e posterior)**<br /><br />**Perfil de email (Windows 10 Desktop e Mobile e posterior)**|Criar, implantar e monitorar as configurações de email do Exchange ActiveSync em dispositivos gerenciados. Isso permite que os usuários acessem o email corporativo nos dispositivos pessoais deles sem que precisem fazer nenhum tipo de configuração.<br /><br />Para ver mais detalhes, consulte [Configure access to corporate email using email profiles with Microsoft Intune (Configurar o acesso ao email corporativo usando perfis de email com o Microsoft Intune)](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configuração geral (Windows 10 Desktop e Mobile e posterior)**|Configure a segurança do dispositivo móvel e configurações funcionais para dispositivos Windows 10 Desktop e Mobile.<br /><br />Para ver mais detalhes, consulte [Windows 10 policy settings in Microsoft Intune (Configurações de política do Windows 10 no Microsoft Intune)](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuração geral (Windows 10 Team e posterior)**|Defina as configurações funcionais e de segurança do dispositivo para dispositivos registrados no Windows 10 Team (por exemplo, um dispositivo de Surface Hub).<br /><br />Para detalhes, consulte [Windows Team configuration policy settings in Microsoft Intune (Definições de política de configuração do Windows Team no Microsoft Intune)](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
@@ -104,25 +104,7 @@ Aplica-se somente ao Windows Phone e a dispositivos Windows registrados.
 > [!IMPORTANT]
 O Microsoft Intune agora traz **políticas de configuração** separadas para cada plataforma de dispositivo e essas políticas contêm as configurações mais recentes que você pode usar. Você pode continuar a usar a política de segurança de dispositivo móvel e todas as implantações existentes continuarão funcionando, mas você deve planejar a migração para as novas políticas de configuração assim que possível.<br />Para obter detalhes, veja [Configurações de política de segurança de dispositivo móvel no Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
 
-## Políticas de conformidade e acesso condicionais
-
-### Acesso condicional
-
-|Nome da política|Use quando desejar|
-|---------------|------------------------|
-|**Política do Exchange Online**<br /><br />**Política local do Exchange**|Gerenciar o acesso ao email do Microsoft Exchange por dispositivos que não são gerenciados pelo Intune ou que não são compatíveis com uma política de conformidade que você criou.<br /><br />Para ver mais detalhes, consulte [Restrict email access to Exchange Online and new Exchange Online Dedicated environment with Intune (Restringir acesso a email ao Exchange Online e ao novo ambiente do Exchange Online Dedicado com o Intune)](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**Política do SharePoint Online**|Gerenciar o acesso ao SharePoint Online por dispositivos que não são gerenciados pelo Intune ou que não são compatíveis com uma política de conformidade que você criou.<br /><br />Para ver mais detalhes, consulte [Restrict access to SharePoint Online with Microsoft Intune (Restringir o acesso ao SharePoint Online com o Microsoft Intune)](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
-|**Skype for Business**|Gerenciar o acesso ao Skype for Business por dispositivos que não são gerenciados pelo Intune ou que não são compatíveis com uma política de conformidade que você criou.<br /><br />Para ver mais detalhes, consulte [Restrict access to Skype for Business with Microsoft Intune (Restringir o acesso ao Skype for Business com o Microsoft Intune)](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
-> [!NOTE]
-> Você não pode implantar políticas de acesso condicional a usuários e dispositivos. Em vez disso, você configura a política necessária e ela se aplica a todos os grupos que são direcionados na política.
-
-### Políticas de conformidade
-
-|Nome da política|Use quando desejar|
-|---------------|------------------------|
-|**Políticas de conformidade**|Definir o nível de conformidade para os dispositivos e relatar sobre os dispositivos que não são compatíveis. Essas políticas são usadas com acesso condicional para ajudar a avaliar os dispositivos que devem ser bloqueados dos serviços.<br /><br />Para obter detalhes, consulte [Políticas de conformidade do dispositivo no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
-
-## Gerenciamento de computador Windows
+## Políticas para computadores Windows gerenciados pelo cliente de software do Intune
 
 |Nome da política|Use quando desejar|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ O Microsoft Intune agora traz **políticas de configuração** separadas para ca
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
