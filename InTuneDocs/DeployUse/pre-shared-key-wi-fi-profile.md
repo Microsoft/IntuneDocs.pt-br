@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
-ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,7 +22,7 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 # Para criar um perfil de Wi-Fi com uma chave pré-compartilhada
 Veja aqui como usar a **Configuração Personalizada** do Azure para criar um perfil de Wi-Fi com uma chave pré-compartilhada. Este tópico também apresenta um exemplo de como criar um perfil de Wi-Fi baseado em EAP.
 
-Observação:
+> [!NOTE]
 -   Talvez seja mais fácil copiar o código de um computador que se conecta à rede, conforme descrito abaixo.
 - Para o Android, você também tem a opção de usar este [Gerador de PSK de Android](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornecido por Johnathon Biersack.
 -   Você pode adicionar várias redes e chaves acrescentando mais Configurações OMA-URI.
@@ -40,18 +40,27 @@ Observação:
 
    c.   **Tipo de Dados**: defina isso como "String(XML)"
 
-   d.   **OMA-URI**: 
-        
-- **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-- **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   d.   **OMA-URI**:
 
-Observação: lembre-se de incluir o caractere de ponto no início.
+    - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID é o SSID para o qual você está criando a política. Por exemplo,
-`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+Lembre-se de incluir o caractere de ponto no início.
 
-  e.    Campo de Valor: é aqui que você cola o código XML. Veja este exemplo. Cada valor deve ser adaptado às suas configurações de rede. Consulte a seção de comentários do código para ver algumas dicas.
+    SSID é o SSID para o qual você está criando a política. Por exemplo,
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **Campo de Valor** é onde você cola o código XML. Veja este exemplo. Cada valor deve ser adaptado às suas configurações de rede. Consulte a seção de comentários do código para ver algumas dicas.
+4. Escolha **OK**, salve e implante a política.
+
+    > [!NOTE]
+Essa política só pode ser implantada para grupos de usuários.
+
+Na próxima vez em que cada dispositivo fizer check-in, a política será aplicada e um perfil de Wi-Fi será criado no dispositivo. O dispositivo poderá conectar-se à rede automaticamente.
+## Perfil de Wi-Fi do Android ou do Windows
+
+Aqui está um exemplo de código XML de um perfil de Wi-Fi do Android ou do Windows:
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -173,33 +182,31 @@ Aqui está um exemplo de código XML de um perfil de Wi-Fi baseado em EAP:
       </MSM>
     </WLANProfile>
 
-4.  Clique em OK, salve e implante a política.
-Observação. Essa política só pode ser implantada para grupos de usuários
-
-Na próxima vez em que cada dispositivo fizer check-in, a política será aplicada e um perfil de Wi-Fi será criado no dispositivo. O dispositivo poderá conectar-se à rede automaticamente.
 ## Criar o arquivo XML de uma conexão Wi-Fi existente
 Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
-1.     Em um computador que está conectado ou recentemente foi conectado à rede sem fio, abra a seguinte pasta: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. É melhor usar um computador não conectado a várias redes sem fio, pois você precisará pesquisar em cada perfil para encontrar o correto.
+1. Em um computador que está conectado ou recentemente foi conectado à rede sem fio, abra a seguinte pasta: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+
+    É melhor usar um computador não conectado a várias redes sem fio, pois você precisará pesquisar em cada perfil para encontrar o correto.
 3.     Pesquise nos arquivos XML para localizar aquele com o nome correto.
 4.     Depois de localizar o arquivo XML correto, copie e cole o código XML no campo de Dados da página de configurações de OMA-URI.
 
 ## Implantar a política
 
-1.  No espaço de trabalho **Política** , selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
+1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
 2.  Na caixa de diálogo **Gerenciar implantação** :
 
-    -   **Para implantar a política** - Selecione um ou mais grupos ao qual você deseja implantar a política, clique **Adicionar** &gt; **OK**.
+    -   **Para implantar a política** – Selecione um ou mais grupos aos quais você deseja implantar a política e selecione **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implantá-la** - clique em **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implantá-la** - Clique em **Cancelar**.
 
-Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
+Ao selecionar uma política implantada, você poderá exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 
 ### Consulte também
 [Conexões Wi-Fi no Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
