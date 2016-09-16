@@ -4,7 +4,7 @@ description: Registro de dispositivos iOS corporativos usando o DEP (Programa de
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d81ef697518745b258598124d6e73899bdd76a0f
-ms.openlocfilehash: 00d7e73154bb293fec48b74b6f6454d67e5ef378
+ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
+ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
 
 
 ---
@@ -40,6 +40,11 @@ O DEP implanta um perfil de registro "over the air" em dispositivos que são adq
 ## Usar o Portal da Empresa em dispositivos registrados por DEP ou no Apple Configurator
 
 Os dispositivos configurados com a afinidade de usuário podem instalar e executar o aplicativo Portal da Empresa para baixar aplicativos e gerenciar dispositivos. Assim que os usuários receberem seus dispositivos, eles deverão concluir várias etapas adicionais a fim de completar o Assistente de Configuração e instalar o aplicativo Portal da Empresa.
+
+Afinidade de usuário é necessária para dar suporte ao seguinte:
+  - Aplicativos MAM (Gerenciamento de aplicativos móveis)
+  - Acesso condicional para dados de email e da empresa
+  - Aplicativo do Portal da Empresa
 
 **Como os usuários registram dispositivos iOS corporativos com afinidade de usuário**
 1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.
@@ -75,6 +80,6 @@ Se a afinidade de usuário for necessária, certifique-se de que o perfil de reg
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
