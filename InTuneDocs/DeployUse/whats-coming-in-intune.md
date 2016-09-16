@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0653af30aa6e75888dd72c5b3a4afa0b2b1d596
-ms.openlocfilehash: a3cc5ea639c31e3fec08e86f27f118e193b8f4b3
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,25 +78,6 @@ Além das alterações no gerenciamento de grupo, **as seguintes funcionalidades
 - Dinamização com grupos em relatórios
 <!--- TFS 1295329--->
 
-## Portal da Empresa
-
-### Link de comentários do Portal da Empresa para a Microsoft
-O site de Portal da empresa permitirá que os usuários finais toquem em um novo link "Comentários" na parte inferior da página para enviar comentários à Microsoft sobre sua experiência com o site. Os comentários anônimos coletados ajudarão a Microsoft a aprimorar a experiência do site do Portal da Empresa para os usuários.
-<!--- TFS 1313657--->
-
-### Melhorias na maneira como os usuários finais do iOS obtêm seus aplicativos
-As alterações a seguir estão sendo feitas em setembro nos blocos de aplicativos no aplicativo Portal da Empresa para iOS para encaminhar os usuários a diferentes modos de exibição em um único local, o site Portal da Empresa, para todos os seus aplicativos. Atualmente, as restrições da Apple proíbem que aplicativos gerenciados e de linha de negócios da app store sejam listados no aplicativo Portal da Empresa e exigem que os usuários acessem diferentes modos de exibição para localizar todos os seus aplicativos.
-
-- Atualmente, o bloco **Aplicativos da Empresa** aponta para uma lista de todos os aplicativos na guia TODOS do site Portal da Empresa e continuará a funcionar da mesma maneira. O nome do bloco será alterado para **Todos os Aplicativos**.
-- O bloco **Outros Aplicativos** aponta para um modo de exibição no aplicativo Portal da Empresa que lista todos os aplicativos que Apple permite que o aplicativo Portal da Empresa mostre. O nome do bloco será alterado para **Aplicativos em Destaque** e, ao tocar no bloco, os usuários são levados para a guia EM DESTAQUE do site Portal da Empresa.
--  O bloco **Categorias** aponta atualmente para um modo de exibição no aplicativo Portal da Empresa que lista categorias de aplicativos. O nome do bloco não será alterado, mas agora apontará para a guia CATEGORIAS do site Portal da Empresa.
-Você pode encontrar capturas de tela atualizadas [aqui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-<!---TFS 1317133--->
-
-### Solicitar a instalação do aplicativo de Navegador Gerenciado do iOS se o profissional de TI definir esse requisito para um aplicativo
-Na versão de setembro do aplicativo Portal da Empresa do iOS, se você tiver configurado um clipe da Web para ser aberto apenas no navegador gerenciado, e o navegador gerenciado não estiver instalado em um dispositivo, o aplicativo Portal da Empresa no dispositivo solicitará que o usuário instale o navegador gerenciado para que o clipe da Web possa ser instalado. 
-<!---TFS 1228570--->
-
 ## Serviço preterido
 ### Aplicativos Portal da Empresa para Windows 8 e Windows Phone 8 serão preteridos a partir de setembro de 2016
 A partir de outubro de 2016, o Microsoft Intune preterirá o suporte para aplicativos do Portal da Empresa do Windows 8 e Windows Phone 8. O Microsoft Intune também preterirá o suporte para a plataforma Windows Phone 8. Em consequência disso, você não poderá registrar nem atualizar dispositivos Windows Phone 8. Você pode continuar a gerenciar dispositivos Windows Phone 8 e Windows 8 já registrados. Atualize os dispositivos Windows Phone 8 e Windows 8 para Windows 8.1 e Windows Phone 8.1 e use os aplicativos do Portal da Empresa correspondentes do Windows 8.1 e do Windows Phone 8.1 para continuar a distribuir aplicativos para esses dispositivos sem interrupções.
@@ -132,6 +113,6 @@ Veja [Novidades do Microsoft Intune](whats-new-in-microsoft-intune.md) para sabe
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
