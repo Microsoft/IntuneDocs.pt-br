@@ -4,17 +4,17 @@ description: "Leia este tópico para saber como o Intune pode ajudar a gerenciar
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ Gerenciamento, inventário, implantação de aplicativos, provisionamento e desa
 |Configuração do aplicativo móvel iOS|Usa políticas de configuração de aplicativo móvel para fornecer configurações para aplicativos iOS que podem ser necessárias quando o usuário executar o aplicativo. Por exemplo, um aplicativo pode exigir que o usuário especifique o número da porta ou informações de logon. Isso pode ajudar a simplificar a configuração do aplicativo e reduzir o número de chamadas de suporte.|[Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Perfis de provisionamento de aplicativo móvel do iOS|Ajuda a implantar perfis de provisionamento para aplicativos iOS que estão se aproximando da expiração. |[Usar políticas de perfil de provisionamento móvel do iOS para impedir que os aplicativos expirem](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Navegador gerenciado|Configura políticas de navegador gerenciado para controlar os sites que os usuários do dispositivo podem visitar. Além disso, você também pode aplicar políticas de gerenciamento de aplicativos móveis para o navegador gerenciado.|[Gerenciar o acesso à internet usando políticas de navegador gerenciado com o Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Permite se integrar ao Microsoft Passport for Work, que é um método de entrada alternativo para o Windows 10 que usa o Active Directory local ou o Azure Active Directory para substituir senhas, cartões inteligentes ou cartões inteligentes virtuais.|[Controlar as configurações do Microsoft Passport em dispositivos com Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello para Empresas|Permite se integrar ao Windows Hello para Empresas, que é um método de entrada alternativo para o Windows 10 que usa o Active Directory local ou o Azure Active Directory para substituir senhas, cartões inteligentes ou cartões inteligentes virtuais.|[Controlar configurações do Windows Hello para Empresas em dispositivos com o Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Aplicativos adquiridos por volume|Ajuda a gerenciar aplicativos adquiridos por meio de um programa de compra por volume, importando as informações de licença da loja de aplicativos, acompanhando a quantidade de licenças utilizadas e impedindo a instalação de um número maior de cópias de seu aplicativo.|[Gerenciar aplicativos adquiridos por volume que usam o Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Acesso de recursos da empresa
 
@@ -70,6 +71,6 @@ Gerenciamento, inventário, implantação de aplicativos, provisionamento e desa
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

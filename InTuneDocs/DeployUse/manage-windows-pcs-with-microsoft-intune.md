@@ -4,7 +4,7 @@ description: Gerenciar computadores Windows instalando o software cliente do Int
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
-ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
 
 
 ---
@@ -24,10 +24,10 @@ Em vez de [registrar computadores Windows como dispositivos móveis](set-up-wind
 
 O Intune gerencia computadores Windows usando as políticas de modo semelhante ao usado pelos GPOs (objetos de política de grupo) do AD DS (Serviços de Domínio do Active Directory) do Windows Server. Se você estiver gerenciando computadores ingressados em domínio do Active Directory com o Intune, [certifique-se de que as políticas do Intune não entrem em conflito com GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) em vigor para a sua organização.
 
-Embora o cliente de software Intune dê suporte a [recursos de gerenciamento que ajudam a proteger computadores](policies-to-protect-windows-pcs-in-microsoft-intune.md) gerenciando atualizações de software, o firewall do Windows e o Endpoint Protection, computadores gerenciados com o cliente Intune não podem ser direcionados com outras políticas do Intune, incluindo as configurações de política do **Windows** específicas do gerenciamento de dispositivos móveis.
+Embora o cliente de software Intune dê suporte a [recursos de gerenciamento que ajudam a proteger computadores](policies-to-protect-windows-pcs-in-microsoft-intune.md) gerenciando atualizações de software, o firewall do Windows e o Endpoint Protection, computadores gerenciados com o software cliente Intune não podem ser direcionados com outras políticas do Intune, incluindo as configurações de política do **Windows** específicas do gerenciamento de dispositivos móveis.
 
 > [!NOTE]
-> Os dispositivos que executam o Windows 8.1 ou posterior podem ser gerenciados usando o cliente Intune ou podem ser registrados como dispositivos móveis. As informações a seguir se aplicam a computadores que executam o cliente Intune. Não há suporte para a instalação do cliente do computador do Intune e o registro do dispositivo Windows para o gerenciamento de dispositivo móvel.
+> Dispositivos que executam o Windows 8.1 ou posterior podem ser gerenciados com o cliente do Intune ou como dispositivos móveis. Este tópico se aplica a computadores que executam o cliente de software do Intune. Não há suporte para a instalação do cliente do Intune e a inscrição no gerenciamento de dispositivos móveis.
 
 ## Requisitos para o gerenciamento de cliente de computador do Intune
 
@@ -48,29 +48,14 @@ Embora o cliente de software Intune dê suporte a [recursos de gerenciamento que
 |Windows Installer 3.1|O PC deve ter, no mínimo, o Windows Installer 3.1.<br /><br />Para exibir a versão do Windows Installer em um PC cliente:<br /><br />-   No PC, clique com o botão direito do mouse em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Você pode baixar a versão mais recente do Windows Installer em [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) no site do Microsoft Developer Network.|
 |Remover o software cliente incompatível|Antes de instalar o software do cliente do Intune, você deve desinstalar qualquer software cliente do Configuration Manager ou System Management Server do computador.|
 
-## Instalar o cliente de computador Intune
-O software cliente do Intune pode ser instalado em uma das seguintes maneiras:
-
--  [Implantar manualmente o software cliente do Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Nesse tipo de implantação, um administrador baixa o software cliente Intune e instala-o manualmente em cada PC.
-
-  Para baixar o software cliente do Intune, abra o [Console de administração do Intune](https://manage.microsoft.com) e selecione **Administrador** > **Download de Software Cliente** e clique em **Download do Software Cliente**.
-
--  Use os mesmos arquivos de download para instalar manualmente o software cliente Intune para [implantar o cliente em computadores unidos ao domínio usando GPOs do Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
-
--  Implante o software cliente Intune nos computadores como [parte de uma implantação de sistema operacional](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
-
--  Envie aos usuários instruções com a URL do Portal da Empresa do Intune, [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). Ao abrir o Portal da Empresa, os usuários são solicitados a registrar seus computadores baixando e executando o software cliente Intune.
-
 ## Gerenciamento do computador com o cliente do computador Intune
-Depois que o software cliente Intune estiver instalado, ele habilitará vários recursos de gerenciamento de computador, incluindo: [gerenciamento de aplicativos](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventário de hardware e software, controle remoto (por meio de solicitações de assistência remota), atualizações de software e relatórios de configurações de conformidade.
+Depois que o software cliente do Intune é instalado, os recursos de gerenciamento incluem: [gerenciamento de aplicativos](deploy-apps-in-microsoft-intune.md), [monitoramento em tempo real e proteção de ponto de extremidade](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md), [gerenciamento de configurações do Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), inventário de hardware e software, controle remoto (por meio de solicitações de assistência remota), [configurações de atualização de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) e relatórios de configurações de conformidade.
 
-Várias tarefas de gerenciamento de computador habilitadas pelo cliente de computador são gerenciadas usando políticas do Intune, como:
+Determinadas opções de gerenciamento disponíveis para computadores gerenciados como dispositivos móveis não estão disponíveis para os computadores gerenciados por cliente de software, incluindo:
 
--   Definir as [configurações do Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) nos computadores gerenciados.
-
--   Definir as [configurações de atualização de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) para os computadores gerenciados procurarem, e baixarem, as atualizações de software necessárias.
-
--   Ajudando a proteger computadores gerenciados contra possíveis ameaças e softwares mal-intencionados através de gerenciamento de [monitoramento em tempo real e Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+-   Apagamento completo (o apagamento seletivo está disponível)
+-   Acesso condicional
+-   Políticas do Windows diferentes de políticas de **Gerenciamento do computador**
 
 ![Modelo de políticas para computadores Windows](../media/pc_policy_template.png)
 
@@ -90,6 +75,6 @@ O agente cliente Intune geralmente é executado silenciosamente em segundo plano
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

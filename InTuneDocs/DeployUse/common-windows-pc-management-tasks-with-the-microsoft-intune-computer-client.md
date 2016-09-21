@@ -1,6 +1,6 @@
 ---
 title: Tarefas comuns de gerenciamento de computadores Windows | Microsoft Intune
-description: "Examine as tarefas deste tópico para saber como gerenciar seus computadores que executam o software cliente do computador do Intune."
+description: "Examine as tarefas neste tópico para saber como gerenciar computadores Windows que executam o cliente de software do Intune."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Tarefas comuns de gerenciamento de computadores Windows com o cliente de computador do Microsoft Intune
-Examine as tarefas deste tópico para saber como gerenciar seus computadores que executam o software cliente do computador do Intune. Se você ainda não tiver instalado o cliente em seus computadores, consulte [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar o cliente do computador Windows com o Microsoft Intune).
+# Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune
+Examine as tarefas deste tópico para saber como gerenciar seus computadores que executam o software cliente do Intune. Se ainda não tiver instalado o cliente em seus computadores, veja [Instalar o cliente de software Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Usar políticas para simplificar o gerenciamento de computador
-### Gerenciar o Firewall do Windows
-As políticas simplificam a administração de configurações do Firewall do Windows em computadores gerenciados. Para obter detalhes, consulte [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) (Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune).
+
+Computadores Windows que executam o cliente de software do Intune podem ser gerenciados por meio das políticas de **Gerenciamento do Computador** do Intune.
+
+![Modelo de políticas para computadores Windows](../media/pc_policy_template.png)
 
 ### Gerenciar o Microsoft Intune Center
-O Microsoft Intune Center permite que os usuários:
+Os usuários veem o cliente de software do Intune como o **Microsoft Intune Center**. O Microsoft Intune Center permite que os usuários:
 
 -   Obtenham aplicativos a partir do portal da empresa.
 
@@ -49,11 +51,14 @@ O Microsoft Intune Center é instalado em todos os computadores gerenciados. Voc
 |**URL do site**|A URL do site de suporte.<br /><br />Comprimento máximo: 150 caracteres|
 |**Anotações**|Uma observação que é exibida para os usuários.<br /><br />Comprimento máximo: 120 caracteres|
 
-### Gerenciar configurações de atualização de software
-Use as políticas para definir as configurações que os computadores gerenciados usam para procurar e baixar atualizações de software da Microsoft e de terceiros. Para mais informações, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune).
+## Configurações de atualizações de software
+Use as políticas para definir as configurações que os computadores gerenciados usam para procurar e baixar atualizações de software da Microsoft e de terceiros. Essas atualizações não incluem atualizações do sistema operacional (ou seja, atualização do Windows 7 para o Windows 10 ou atualizações de uma versão do Windows 10 para uma versão posterior). Para mais informações, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune).
 
-### Gerenciar configurações do Endpoint Protection
+### Configurações do Endpoint Protection
 Use as políticas para definir as configurações do Endpoint Protection que você implantará depois nos computadores gerenciados. Isso inclui as agendas de verificação, ações a serem tomadas quando um malware for detectado e muito mais. Para obter mais informações, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
+
+## Configurações do Firewall do Windows
+As políticas simplificam a administração de configurações do Firewall do Windows em computadores gerenciados. Para obter detalhes, consulte [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) (Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune).
 
 ## Exibir o inventário de hardware e software
 O Intune coleta informações detalhadas sobre o hardware e o software dos computadores gerenciados. Use as informações nos procedimentos a seguir para aprender a criar:
@@ -113,17 +118,17 @@ O Intune coleta informações detalhadas sobre o hardware e o software dos compu
 
 2.  Selecione os dispositivos que deseja desativar e escolha **Desativar/Apagar**.
 
-Para refazer o registro de um computador no Intune, reinstale o software cliente no computador usando as informações no tópico [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar o cliente do computador Windows com o Microsoft Intune).
+Para reinscrever um computador no Intune, reinstale o cliente de software no computador usando as diretrizes em [Instalar o cliente do computador Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Se um computador não puder se conectar ao Intune, será exibida uma mensagem no espaço de trabalho **Painel**.
 
 Ao desativar um computador:
 
--   Ele é removido do gerenciamento e inventário do Intune e a licença associada ao computador é disponibilizada para reutilização. O recurso Desativar/Apagar remove o cliente de software do Intune, mas não remove aplicativos nem dados do computador.
+-   Ele é removido do gerenciamento e inventário do Intune e a licença associada ao computador é disponibilizada para reutilização. O recurso Desativar/Apagar remove o cliente de software do Intune, mas não remove aplicativos nem dados do computador. Essa desativação não executa um apagamento completo no computador.
 
 -   Seu status não é mais exibido no console do Intune.
 
--   O Intune remove o software cliente do computador. Se o computador não estiver conectado ao serviço do Intune, o software cliente será removido na próxima vez em que se conectar.
+-   O Intune remove o cliente de software do computador. Se o computador não estiver conectado ao serviço do Intune, o cliente de software será removido na próxima vez em que se conectar.
 
 -   O Endpoint Protection do Microsoft Intune é removido do computador. Se o computador tiver outro aplicativo de ponto de extremidade instalado e estiver desabilitado, esse aplicativo poderá ser habilitado novamente depois que o Endpoint Protection do Microsoft Intune for removido para garantir que seus computadores estejam protegidos.
 
@@ -160,9 +165,9 @@ Antes de implantar o software em um usuário, você deve vincular o usuário a u
 > [!TIP]
 > Se você quiser restringir a capacidade dos usuários finais de vincular-se a computadores, habilite a opção **Restringir a Capacidade dos Usuários de Vincular-se a Computadores** na política **Configurações do Agente do Microsoft Intune**.
 
-## Solicitar e fornecer assistência remota a computadores Windows que usam o software cliente do Intune
+## Solicitar e fornecer assistência remota para computadores Windows
 
-O Microsoft Intune pode usar o software do [TeamViewer](https://www.teamviewer.com) para permitir que os usuários de computadores que executam o software cliente do Intune obtenham ajuda da assistência remota por você. Quando um usuário solicita ajuda do Microsoft Intune Center, você será informado por um alerta, pode aceitar a solicitação e, em seguida, fornecer assistência.
+O Microsoft Intune pode usar o software [TeamViewer](https://www.teamviewer.com), adquirido separadamente, para permitir que os usuários de computadores que executam o cliente de software do Intune obtenham sua ajuda por meio de assistência remota. Quando um usuário solicita ajuda do Microsoft Intune Center, você será informado por um alerta, pode aceitar a solicitação e, em seguida, fornecer assistência.
 Esta funcionalidade substitui a funcionalidade de Assistência Remota do Windows existente no Intune.
 
 
@@ -211,6 +216,6 @@ Do menu **Ações** da janela **TeamViewer**, escolha **Encerrar a Sessão**.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
-ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
+ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
+ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 ---
@@ -23,12 +23,6 @@ ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 Se você estiver tendo problemas ao implantar e gerenciar aplicativos com o Intune, comece aqui. Este tópico contém alguns problemas comuns que podem ocorrer, juntamente com as soluções.
 
 ## Problemas comuns de implantação de aplicativo
-
-### Os usuários não conseguem fazer logon no Portal da Empresa do Intune
-
-1.  Verifique se a conta do usuário existe e se ela está habilitada no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), verifique se o usuário está inserindo o nome de usuário correto para fazer logon no Intune e se o formato é: **julio@domínio.com**. Se parecer que o usuário está inserindo a senha incorreta, solicite a ele que redefina a senha.
 
 ### As informações de contato de TI estão ausentes no Portal da Empresa
 
@@ -52,15 +46,6 @@ Se você estiver tendo problemas ao implantar e gerenciar aplicativos com o Intu
 
 4.  Se a barra de progresso do download do aplicativo iOS chegar ao final, mas a instalação do aplicativo falhar, talvez haja algum problema com os arquivos do aplicativo fornecidos por você.
 
-### Se um link do aplicativo iOS levá-lo para uma localização anterior na iTunes App Store
-
-1.  A sessão atual da iTunes App Store está sendo aberta na página do aplicativo anterior.
-
-2.  Feche a iTunes App Store no dispositivo e repita o link.
-
-### Se você receber um erro ao iniciar um aplicativo do iOS
-
-1.  Talvez a data de expiração do aplicativo não seja válida.
 
 ### Se o seu aplicativo estiver preso em "em andamento" ao carregar
 
@@ -73,12 +58,6 @@ Se você estiver tendo problemas ao implantar e gerenciar aplicativos com o Intu
 1.  Certifique-se de que o firewall da organização permite acesso aos sites da web de provisionamento e de certificação da Apple.
 
 2.  Para obter mais informações, exiba a documentação do desenvolvedor Apple.
-
-### Erro: o editor não existe
-Você usa a opção **Adicionar outro contrato de Software** para adicionar um contrato de licença de terceiro. Você tenta adicionar o editor da página **Outro contrato de licenciamento de software**. A página fornece uma lista com os editores existentes em ordem alfabética.
-Você insere o editor ausente, mas recebe o erro **O editor não existe**.
-
-Isso ocorre por design. O Intune fornece acompanhamento de licença apenas para títulos de softwares populares. O Intune exige que pelo menos quatro contas separadas reportem o software antes que ele esteja disponível como uma opção na carga de trabalho de licenciamento.
 
 ### Se os aplicativos gerenciados não comunicarem o status da instalação
 
@@ -93,13 +72,13 @@ A tabela a seguir relaciona os erros comuns que podem ocorrer durante a implanta
 |0x80073CF0|Não foi possível abrir o pacote.|Possíveis causas:<br /><br />-   O pacote não está assinado.<br />-   O nome do editor não corresponde ao assunto do certificado de assinatura.<br /><br />Consulte o log de eventos de AppxPackagingOM para obter mais informações.|
 |0x80073CF3|Falha na atualização do pacote, dependência ou validação de conflito|Possíveis causas:<br /><br />-   O pacote de entrada está em conflito com um pacote instalado.<br />-   Uma dependência de pacote especificada não foi encontrada.<br />-   O pacote não dá suporte à arquitetura de processador correta.<br /><br />Consulte o log de eventos de AppXDeployment-Server para obter mais informações.|
 |0x80073CFB|O pacote fornecido já foi instalado e sua reinstalação está bloqueada|Talvez você receba esse erro se estiver instalando um pacote que não é idêntico ao pacote já instalado. Confirme se a assinatura digital também faz parte do pacote. Quando um pacote é recriado ou assinado novamente, ele não é mais idêntico bit a bit ao pacote instalado anteriormente. Duas opções possíveis para corrigir esse erro são as seguintes:<br /><br />-   Aumente o número de versão do aplicativo e recrie e assine novamente o pacote.<br />-   Remova o pacote antigo para cada usuário no sistema antes de instalar o novo pacote.|
-|0x87D1041C|Êxito na instalação do aplicativo, mas o aplicativo não foi detectado.|- Usuário instalou o aplicativo por meio do portal da empresa e desinstalou diretamente do dispositivo. Reinstale o aplicativo por meio do portal da empresa.<br /><br />- Você pode ter uma incompatibilidade entre o número de versão de um aplicativo de linha de negócios como reconhecido pelo Intune e a versão instalada no dispositivo. Verifique se o Intune tem a versão correta e reinstale o aplicativo.|
+|0x87D1041C|Êxito na instalação do aplicativo, mas o aplicativo não foi detectado.|-O aplicativo foi implantado com êxito pelo Intune e subsequentemente desinstalado (possivelmente pelo usuário final). Instrua o usuário a reinstalar o aplicativo do portal da empresa. Os aplicativos necessários serão reinstalados automaticamente na próxima vez em que o dispositivo fizer check-in.|
 
 ### Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/27/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,14 +12,14 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7be786dafa5b4707688bacd1f2b4790db91bad6c
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 3ac185bae98948ab756abdc2a2bb22672b362f90
 
 
 ---
 
 # Aparecerá um aviso para que você instale o Lookout for Work
-Observação: esse recurso foi adicionado para o aplicativo do Portal da Empresa do Android, mas ele não estará operacional até agosto de 2016.
+Observação: esse recurso foi adicionado ao aplicativo do Portal da Empresa do Android, mas não estará operacional até setembro de 2016.
 
 Lookout for Work é um aplicativo que ajuda a proteger seu dispositivo verificando os riscos e ameaças à segurança. Quando você receber uma notificação dizendo que você deve instalar o Lookout for Work, isso significa que o administrador de TI definiu uma política que exige que você baixe e instale o aplicativo da Play Store.
 
@@ -30,11 +30,10 @@ Lookout for Work é um aplicativo que ajuda a proteger seu dispositivo verifican
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

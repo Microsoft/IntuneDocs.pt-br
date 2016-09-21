@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 
 
 ---
@@ -25,7 +25,9 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 ## **Seus dispositivos da empresa são compartilhados ou têm usuários dedicados?**
 
 > [!div class="button"]
-[Compartilhado >](choose-how-to-enroll-devices4.md)   [Dedicado >](choose-how-to-enroll-devices6.md)
+[Compartilhado >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[Dedicado >](choose-how-to-enroll-devices6.md)
 
 - **Dispositivos da empresa compartilhados**: esses dispositivos não tem um único usuário e geralmente não estão configurados para acessar email. Os exemplos incluem dispositivos de quiosque ou dispositivos orientados a tarefas que os usuários extraem de um pool, conforme necessário e depois retornam. Os métodos de registro recomendados dependem da plataforma dos dispositivos.
 
@@ -36,6 +38,6 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 
