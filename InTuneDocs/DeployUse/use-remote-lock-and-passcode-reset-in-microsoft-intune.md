@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e redefinição de senha.
 
 ## Bloquear um dispositivo remotamente
-Se um usuário perder o dispositivo, você poderá bloquear o dispositivo remotamente. A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas remotas.
+Se um usuário perder o dispositivo, você poderá bloquear o dispositivo remotamente. A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas remotas. Não há suporte para o bloqueio remoto
 
 |Plataforma|Bloqueio remoto|
 |------------|---------------|
@@ -31,6 +31,7 @@ Se um usuário perder o dispositivo, você poderá bloquear o dispositivo remota
 |Windows RT 8.1 e Windows RT|Suportado se o usuário atual do dispositivo for o mesmo usuário que registrou o dispositivo.|
 |Windows 8.1|Suportado se o usuário atual do dispositivo for o mesmo usuário que registrou o dispositivo.|
 
+Não há suporte para o bloqueio remoto para computadores com Windows registrados com o cliente de software do Intune.
 
 ### Para bloquear um dispositivo móvel remotamente usando o console do Intune
 
@@ -55,6 +56,8 @@ Se um usuário esquecer sua senha, você poderá ajudá-lo removendo a senha de 
 |Windows RT 8.1 e Windows RT|Sem suporte|
 |Windows 8.1|Sem suporte|
 
+Não há suporte para a redefinição de senha para computadores com Windows registrados com o cliente de software do Intune.
+
 ### Para redefinir uma senha
 
 1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
@@ -73,6 +76,6 @@ Se um usuário esquecer sua senha, você poderá ajudá-lo removendo a senha de 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

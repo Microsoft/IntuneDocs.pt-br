@@ -13,22 +13,22 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # Usando seu dispositivo Windows com o Intune
 
-Este artigo inclui links para todas as tarefas que os usuários finais podem realizar em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem consultar essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias: 
-- Instalação do aplicativo do portal da Empresa e registro no Intune 
+Este artigo inclui links para todas as tarefas que os usuários podem realizar em seus dispositivos gerenciados pelo Intune. Os administradores de TI podem conferir essas informações para ver as etapas que os usuários seguem para realizar diversas tarefas, que são agrupadas em categorias da seguinte maneira:
+- Instalação do aplicativo de Portal da Empresa e registro no Intune
 - Tarefas de gerenciamento pós-registro
 - Problemas de conformidade
 
 ## Instalação do aplicativo de Portal da Empresa e registro no Intune
 
-As informações nesta seção ajudam na instalação do Portal da Empresa do Intune e no registro de dispositivos Windows.
+As informações contidas nesta seção ajudam na instalação do Portal da Empresa do Intune e o registro de dispositivos Windows.
 
 - [Registrar seu dispositivo Windows no Intune](enroll-your-device-in-intune-windows.md)
 - [O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -36,7 +36,7 @@ As informações nesta seção ajudam na instalação do Portal da Empresa do In
 
 ## Coisas que você pode fazer quando seu dispositivo está registrado no Intune
 
-As informações nesta seção ajudam com as ações que precisam ser realizadas depois que o dispositivo Windows é registrado no Intune.
+As informações nesta seção ajudam nas ações que precisam ser realizadas depois que o dispositivo Windows é registrado no Intune.
 
 - [Criptografar seu dispositivo](encrypt-your-device-windows.md)
 - [Definir ou alterar sua senha](set-or-change-your-password-windows.md)
@@ -47,9 +47,9 @@ As informações nesta seção ajudam com as ações que precisam ser realizadas
 - [Desativar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sincronizar o dispositivo manualmente](sync-your-device-manually-windows.md)
 
-## Corrigir problemas com seu dispositivo
+## Como corrigir problemas do dispositivo
 
-As informações nesta seção ajudam a corrigir problemas que podem ser encontrados depois que o dispositivo Windows é registrado no Intune.
+As informações contidas nesta seção ajudam a corrigir problemas que podem ocorrer após o registro do dispositivo Windows no Intune.
 
 - [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 - [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
@@ -60,6 +60,6 @@ As informações nesta seção ajudam a corrigir problemas que podem ser encontr
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

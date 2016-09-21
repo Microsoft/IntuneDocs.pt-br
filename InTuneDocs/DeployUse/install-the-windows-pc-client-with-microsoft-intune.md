@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# Instalar o cliente do PC Windows com o Microsoft Intune
-Use este guia para ajudá-lo a ter os computadores Windows gerenciados pelo software cliente do Microsoft Intune.
+# Instalar o cliente de software Intune em computadores Windows
+Computadores Windows podem ser registrados instalando o software cliente do Intune. O software cliente do Intune pode ser instalado das seguintes maneiras:
 
-## Antes de começar
-Antes de iniciar a instalação do software cliente do Intune, leia o tópico [Resolver conflitos de política do Microsoft Intune e GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md) para entender o que deve estar em vigor para a instalação correta do cliente e, em seguida, volte para estas instruções.
+- Instalado manualmente
+- Instalar usando a política de grupo
+- Incluir em uma imagem de disco
+- Instalado pelos usuários
 
-## Instale o cliente
-Use estas etapas para instalar o cliente:
+## Baixar o software cliente do Intune
 
--   [Para baixar o software cliente](#to-download-the-client-software)
-
-Em seguida, use um ou mais dos seguintes métodos para instalar o cliente:
-
--   [Para implantar manualmente o software cliente](#to-manually-deploy-the-client-software)
-
--   [Para implantar o software cliente automaticamente usando a Política de grupo](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Instalar o software cliente do Microsoft Intune como parte de uma imagem](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Se não precisar mais gerenciar um computador com o Intune, será recomendável que você desative o computador, o que também removerá o software cliente dele. Para mais informações, consulte [Common Windows PC management tasks with the Microsoft Intune computer client (Tarefas comuns de gerenciamento de computadores Windows com o cliente de computador do Microsoft Intune)](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### Para baixar o software cliente
+Todos os métodos, exceto quando os usuários instalam o software cliente do Intune, exigem que você baixe o software para que ele possa ser implantado.
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Administração** &gt; **Download de Software Cliente**
 
-  ![Baixe o Intune no computador cliente](./media/pc-SA-client-download.png)
+  ![Baixe o Intune no computador cliente](../media/pc-sa-client-download.png)
 
 2.  Na página **Download de Software Cliente**, clique em **Download de Software Cliente** e salve o pacote do **Microsoft_Intune_Setup.zip**, que contém o software, em local seguro na sua rede.
 
@@ -56,14 +45,14 @@ Se não precisar mais gerenciar um computador com o Intune, será recomendável 
     > [!IMPORTANT]
     > Não renomeie ou remova o arquivo **ACCOUNTCERT** extraído. Caso contrário, ocorrerá uma falha na instalação do software cliente.
 
-### Para implantar manualmente o software cliente
+## Implantar manualmente
 
 1.  No computador, procure a pasta em que os arquivos de instalação do software cliente estão localizados e execute **Microsoft_Intune_Setup.exe** para instalar o software cliente.
 
     > [!NOTE]
     > O status da instalação é exibido ao passar o mouse sobre o ícone na barra de tarefas no computador cliente.
 
-### Para implantar o software cliente automaticamente usando a Política de grupo
+## Implantar com política de grupo
 
 1.  Na pasta que contém os arquivos **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert**, execute o seguinte comando para extrair os programas de instalação baseados no Windows Installer para computadores de 32 e 64 bits:
 
@@ -80,7 +69,7 @@ Se não precisar mais gerenciar um computador com o Intune, será recomendável 
 
     Para obter mais informações sobre como usar a Política de Grupo para implantar o software automaticamente, consulte a documentação do Windows Server.
 
-### Instalar o software cliente do Microsoft Intune como parte de uma imagem
+## Instalar como parte de uma imagem
 É possível implantar o software cliente do Intune em computadores como parte de uma imagem do sistema operacional, usando o seguinte procedimento de exemplo como base:
 
 1.  Copie os arquivos de instalação do cliente, o **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert** na pasta **%Systemdrive%\Temp\Microsoft_Intune_Setup** no computador de referência.
@@ -109,6 +98,12 @@ Quando o computador definido como destino for reiniciado após a conclusão da i
 Quando a tarefa de Registro automático do Intune for executada no próximo horário agendado, ela verificará a existência do valor do registro **WindowsIntuneEnrollPending** e tentará registrar o computador definido como destino no Intune. Se a inscrição falhar por algum motivo, haverá uma nova tentativa na próxima vez que a tarefa for executada. As tentativas continuam por um período de um mês.
 
 A tarefa de registro automático do Intune, o valor do Registro **WindowsIntuneEnrollPending** e o certificado da conta serão excluídos do computador definido como destino quando o registro for concluído com êxito ou depois de um mês.
+
+## Instrua o usuário a se registrar por conta própria
+
+Os usuários podem instalar o software cliente do Intune navegando até [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com). Se o portal da Web detectar que o dispositivo é um computador Windows, ele será solicitado a registrar o computador baixando o cliente de software do Intune. Após o download, os usuários podem instalar o software para incluir seus computadores no gerenciamento.
+
+![Portal do Intune solicitando o download do cliente de software do Intune](../media/software-client-download.png)
 
 ## Monitorar e validar a implantação com êxito do cliente
 Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a implantação do cliente com êxito.
@@ -139,6 +134,6 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

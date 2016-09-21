@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
 
 
 ---
@@ -83,6 +83,9 @@ O AAD DRS será ativado automaticamente para clientes do Intune e do Office 365.
   - Se a política estiver definida para exigir o ingresso no domínio e o computador não tiver ingressado no domínio, uma mensagem será exibida para que o usuário entre em contato com o administrador de TI.
 
   - Se a política estiver definida para exigir ingresso no domínio ou compatibilidade e o computador não atender a nenhum dos dois requisitos, será exibida uma mensagem com instruções sobre como instalar o aplicativo do Portal da Empresa e realizar o registro.
+  >[!NOTE]
+  >Não há suporte ao acesso condicional em computadores que executam o cliente Intune.
+
 -    [A autenticação moderna do Office 365 deve estar habilitada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
 
     A autenticação moderna leva as credenciais baseadas na ADAL (Active Directory Authentication Library) para os clientes Windows com Office 2013 e permite mais segurança como a **autenticação multifator** e a **autenticação baseada em certificado**.
@@ -189,6 +192,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

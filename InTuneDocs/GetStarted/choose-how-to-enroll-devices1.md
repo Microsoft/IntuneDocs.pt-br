@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 509a0af6949d95a0c66c72043e67567b70ace22d
 
 
 ---
@@ -26,7 +26,9 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 ## **Os funcionários trazem seus próprios dispositivos (BYOD) ou os dispositivos são fornecidos pela sua organização (COD)?**
 
 > [!div class="button"]
-[BYOD >](choose-how-to-enroll-devices2.md)   [COD >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)
+> [!div class="button"]
+[COD >](choose-how-to-enroll-devices3.md)
 
 - **Dispositivos de usuários** – registro "BYOD" (Traga seu próprio dispositivo): os usuários podem instalar o aplicativo de Portal da Empresa do Intune em seu dispositivo e registrá-lo, obtendo acesso a recursos da empresa como email, aplicativos da empresa, dados da empresa e suporte.  
 
@@ -34,6 +36,6 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

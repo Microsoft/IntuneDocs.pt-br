@@ -4,7 +4,7 @@ description: "Use perfis de VPN para implantar as configurações de VPN para us
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ Por exemplo, suponha que você deseje provisionar todos os dispositivos iOS com 
 Você pode configurar os seguintes tipos de dispositivo usando perfis VPN:
 
 * Dispositivos que executam o Android 4 e posterior.
-* Dispositivos que executam o iOS 7.1 e versões posteriores
+* Dispositivos que executam o iOS 8.0 e posterior
 * Dispositivos que executam Mac OS X 10.9 e versões posteriores
 * Dispositivos registrados que executam o Windows 8.1 e versões posteriores
 * Dispositivos que executam o Windows Phone 8.1 e versões posteriores
@@ -45,8 +45,10 @@ O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tip
 Tipo de conexão |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |     Não    |Não  |Não    | Sim (OMA-URI, somente celulares)|     
+Cisco (IPsec)|Sim |Não   |Não  |  Não|Não  |Não | Não|
+Citrix|Sim |Não   |Não  |  Não|Não  |Não | Não|
 Pulse Secure|Sim  |Sim |Sim   |Não  |Sim  |Sim| Sim|        
-F5 Edge Client|Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
+F5 Microsoft Edge Client|Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
 Dell SonicWALL Mobile Connect|Sim |Sim |Sim |Não  |Sim |Sim |Sim|         
 CheckPoint Mobile VPN|Sim |Sim |Sim |Sim |Sim|Sim|Sim|
 Microsoft SSL (SSTP)|Não |Não |Não |Não |Não|Não|VPNv1 OMA-URI*|
@@ -83,7 +85,7 @@ O usuário autentica no servidor VPN, fornecendo seu nome de usuário e senha.
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e escolha o perfil VPN para o dispositivo:
     * **Perfil de VPN (Android 4 e posterior)**
-    * **Perfil de VPN (iOS 7.1 e posterior)**
+    * **Perfil de VPN (iOS 8.0 e posterior)**
     * **Perfil VPN (Mac OS X 10.9 e superior)**
     * **Perfil de VPN (Windows 8.1 e posterior)**
     * **Perfil de VPN (Windows Phone 8.1 e posterior)**
@@ -98,10 +100,10 @@ Nome da configuração  |Mais informações
 **Nome**     |Insira um nome exclusivo para o perfil de VPN que ajude a identificá-lo no console do Intune.         
 **Descrição**     |Forneça uma descrição que indica uma visão geral do perfil de VPN e outras informações relevantes que o ajudarão a localizá-lo.         
 **Nome da conexão VPN (exibido aos usuários)**     |Especifique um nome para o perfil VPN. Esse é o nome que os usuários verão na lista de conexões VPN disponíveis em seus dispositivos.         
-**Tipo de conexão**     |  Selecione um dos seguintes tipos de conexão para usar no perfil de VPN: **Cisco AnyConnect** (não está disponível para Windows 8.1 ou Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
-**Descrição do servidor VPN**     | Especifique uma descrição para o servidor VPN ao qual os dispositivos se conectarão. Exemplo: **Servidor VPN Contoso**. Quando o tipo de conexão é **F5 Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.
-**Endereço IP do servidor ou o FQDN**    |Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos vão se conectar. Exemplos: **192.168.1.1**, **vpn.contoso.com**.  Quando o tipo de conexão é **F5 Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.         |         
-**Lista de servidores**     |Clique em **Adicionar** para adicionar um novo servidor VPN a ser usado para a conexão VPN. Você também pode especificar qual servidor será o padrão para a conexão. Essa opção somente é exibida somente quando o tipo de conexão é **F5 Edge Client**.         
+**Tipo de conexão**     |  Selecione um dos seguintes tipos de conexão para usar no perfil de VPN: **Cisco AnyConnect** (não está disponível para Windows 8.1 ou Windows Phone 8.1), **Pulse Secure**, **F5 Microsoft Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Descrição do servidor VPN**     | Especifique uma descrição para o servidor VPN ao qual os dispositivos se conectarão. Exemplo: **Servidor VPN Contoso**. Quando o tipo de conexão é **F5 Microsoft Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.
+**Endereço IP do servidor ou o FQDN**    |Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos vão se conectar. Exemplos: **192.168.1.1**, **vpn.contoso.com**.  Quando o tipo de conexão é **F5 Microsoft Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.         |         
+**Lista de servidores**     |Clique em **Adicionar** para adicionar um novo servidor VPN a ser usado para a conexão VPN. Você também pode especificar qual servidor será o padrão para a conexão. Essa opção somente é exibida somente quando o tipo de conexão é **F5 Microsoft Edge Client**.         
 **Enviar todo o tráfego de rede através da conexão VPN**     |Se você selecionar essa opção, todo o tráfego é enviado pela conexão VPN. Se você não selecionar essa opção, o cliente negociará dinamicamente as rotas para criar um túnel dividido ao se conectar ao servidor VPN de terceiros. Apenas as conexões com a rede da empresa são enviadas por um túnel VPN. O túnel VPN não é usado quando você se conecta aos recursos na Internet.
 **Método de autenticação**| Selecione o método de autenticação usado pela conexão VPN: **Certificados** ou **Nome de Usuário e Senha**. (**Nome de Usuário e Senha** não está disponível quando o tipo de conexão é Cisco AnyConnect.) A opção **Método de Autenticação** não está disponível para Windows 8.1.
 **Lembrar as credenciais do usuário a cada logon**|Selecione esta opção para garantir que as credenciais do usuário sejam lembradas para que o usuário não precise digitar as credenciais sempre que uma conexão for estabelecida.
@@ -111,11 +113,12 @@ Nome da configuração  |Mais informações
 **Grupo de logon ou domínio**|Especifique o nome do grupo de logon ou domínio ao qual você deseja se conectar. Essa opção é exibida somente quando o tipo de conexão é **Dell SonicWALL Mobile Connect**.
 **Impressão digital**|Especifique uma cadeia de caracteres, (por exemplo "Código de impressões digitais da Contoso") que será usado para verificar se o servidor VPN é confiável. Uma impressão digital pode ser enviada ao cliente para que ele saiba que pode confiar em qualquer servidor que apresentar essa impressão digital durante a conexão. Se o dispositivo não tiver a impressão digital, ele solicitará ao usuário para confiar no servidor VPN durante a conexão enquanto mostra a impressão digital. (O usuário verifica a impressão digital e manualmente clica em **confiar** para se conectar.) Essa opção é exibida somente quando o tipo de conexão é **CheckPoint Mobile VPN**.
 **VPN por aplicativo**|Selecione esta opção se você deseja associar essa conexão VPN a um aplicativo iOS ou Mac OS X para que a conexão seja aberta quando o aplicativo é executado. Você pode associar o perfil VPN a um aplicativo ao implantar o software. Para obter mais informações, consulte [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implantar aplicativos no Microsoft Intune).
+**VPN sob demanda**|Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posteriores. Confira as instruções para configurar isso em [VPN sob demanda para dispositivos iOS](#on-demand-vpn-for-ios-devices).
 **Detectar automaticamente as configurações de proxy** (iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1 apenas)|Se o servidor VPN exigir um servidor proxy para a conexão, especifique se deseja que os dispositivos detectem automaticamente as configurações de conexão. Para obter mais informações, consulte a documentação do Windows Server.
 **Usar script de configuração automática** (iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1 apenas)|Se o servidor VPN exigir um servidor proxy para a conexão, especifique se deseja usar um script de configuração automática para definir as configurações e especifique uma URL para o arquivo que contém as configurações. Para obter mais informações, consulte a documentação do Windows Server.
 **Usar servidor proxy** (iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1 apenas)|Se o servidor VPN exigir um servidor proxy para a conexão, selecione essa opção e especifique o número da porta e endereço do servidor proxy. Para obter mais informações, consulte a documentação do Windows Server.
 **Bypass de configurações de proxy para endereços locais** (iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1 apenas)|Se o servidor VPN exigir um servidor proxy para a conexão, selecione esta opção se você não quiser usar o servidor proxy para endereços locais que você especificar. Para obter mais informações, consulte a documentação do Windows Server.
-**XML personalizado** (Windows 8.1 e posterior e Windows Phone 8.1 e posterior)|Especifique comandos XML personalizados para configurar a conexão VPN. Exemplo para **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Exemplo para **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Exemplo para **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Exemplo para **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Consulte a documentação do VPN de cada fabricante para obter mais informações sobre como escrever comandos XML personalizados.
+**XML personalizado** (Windows 8.1 e posterior e Windows Phone 8.1 e posterior)|Especifique comandos XML personalizados para configurar a conexão VPN. Exemplo para **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Exemplo para **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Exemplo para **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Exemplo para **F5 Microsoft Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Consulte a documentação do VPN de cada fabricante para obter mais informações sobre como escrever comandos XML personalizados.
 **Lista de pesquisa de sufixo DNS** (somente Windows Phone 8.1)|Especifique um sufixo DNS em cada linha. Cada sufixo DNS que você especificar será pesquisado durante a conexão com um site usando um nome curto. Por exemplo, especifique os sufixos DNS **domain1.contoso.com** e **domain2.contoso.com**, acesse a URL **http://mywebsite**, e as URLs **http://mywebsite.domain1.contoso.com** e **http://mywebsite.domain2.contoso.com** serão pesquisadas.
 **Bypass de VPN quando conectado à rede da Wi-Fi empresarial** (somente Windows Phone 8.1)|Selecione esta opção para especificar que a conexão VPN não será usada quando o dispositivo estiver conectado à rede Wi-Fi da empresa.
 **Bypass de VPN quando conectado à rede Wi-Fi doméstica** (somente Windows Phone 8.1)|Selecione esta opção para especificar que a conexão VPN não será usada quando o dispositivo estiver conectado à rede Wi-Fi doméstica.
@@ -141,6 +144,32 @@ Você pode restringir o uso de VPN para dispositivos Windows 10 a aplicativos es
 
 A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
+### VPN sob demanda para dispositivos iOS
+Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
+
+> [!NOTE]
+>  
+> É possível usar a VPN por aplicativo e a VPN sob demanda na mesma política.
+ 
+1. Na página de configuração da política, localize **Regras sob demanda para esta conexão VPN**. As colunas recebem o nome de **Correspondência**, que é a condição que as regras devem conferir, e **Ação**, a ação que a política disparará quando houver correspondência da condição. 
+2. Escolha **Adicionar** para criar uma regra. Há dois tipos de correspondências que podem ser definidas na regra. Você só pode configurar um desses tipos por regra.
+  - **SSIDs**, que se refere a redes sem fio. 
+  - **Domínios de pesquisa de DNS**, que são...  Você pode usar nomes de domínio totalmente qualificados, como *team.corp.contoso.com*, ou usar domínios como *contoso.com*, que é o equivalente a usar * *.contoso.com*.
+3. Opcional: forneça uma investigação de cadeia de caracteres de URL, que é uma URL usada pela regra como um teste. Se o dispositivo no qual esse perfil está instalado for capaz de acessar essa URL sem redirecionamento, a VPN será estabelecida e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres de URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de se conectar a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
+4. Escolha uma destas ações:
+  - **Connect**
+  - **Avaliar conexão**, que tem três configurações a. **Ação de domínio** - escolha **Conectar se necessário** ou **Nunca se conectar**
+     b. **Lista de domínios separados por vírgulas ** - configure essa opção somente se você escolher uma **Ação de domínio** do tipo **Conectar se necessário** 
+     c. **Investigação de cadeia de caracteres de URL necessária** - uma URL HTTP ou HTTPS (preferencial) URL, como *https://vpntestprobe.contoso.com*. A regra verificará se há uma resposta proveniente desse endereço. Se não houver, e a **Ação de domínio** for **Conectar se necessário**, a VPN será disparada.
+     > [!TIP]
+     >
+     >Um exemplo de quando você pode usar essa ação é quando alguns sites em sua rede corporativa exigirem uma conexão de rede corporativa de VPN ou direta, mas outros não. Se você listar em **Lista separada por vírgulas de domínios de pesquisa DNS** *corp.contoso.com*, poderá escolher **Conectar se necessário** e listar sites específicos dentro dessa rede que podem exigir a VPN, como *sharepoint.corp.contoso.com*. Em seguida, a regra verificará se *vpntestprobe.contoso.com* pode ser acessado. Se não puder, a VPN será disparada para o site do SharePoint.
+  - **Ignorar** - isso não causa qualquer alteração na conectividade da VPN. Se a VPN estiver conectada, deixe-a conectada, e se não estiver conectada, não a conecte. Por exemplo, talvez você tenha uma regra que conecta a VPN a todos os seus sites corporativos internos, mas você queira disponibilizar um desses sites internos somente quando o dispositivo estiver realmente conectado à rede corporativa. Nesse caso, crie uma regra ignorar para esse site.
+  - **Desconectar** - desconecte dispositivos da VPN quando as condições forem atendidas. Por exemplo, você pode listar suas redes sem fio corporativas no campo **SSIDs** e criar uma regra que desconecta os dispositivos da VPN quando eles se conectarem a uma dessas redes.
+
+As regras específicas de domínio são avaliadas antes das regras de todos os domínios. 
+
+
 ## Implantar a política
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
@@ -163,6 +192,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
