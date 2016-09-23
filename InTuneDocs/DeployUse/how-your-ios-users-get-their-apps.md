@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ Use estas informações para entender como e onde os usuários finais obtêm os 
 
 **Aplicativos não gerenciados** - Aplicativos que podem ser gerenciados por meio de políticas e que não foram encapsulados pelo Intune ou que não incorporam o SDK de MAM do Intune. Políticas de aplicativo que não podem ser aplicadas a esses aplicativos.
 
-As restrições da Apple proíbem que aplicativos gerenciados e de linha de negócios da app store sejam listados no aplicativo Portal da Empresa. Portanto, isso significa que os usuários precisam acessar diferentes modos de exibição para localizar todos os seus aplicativos. Os aplicativos de cada bloco mostrado na página Aplicativos do Aplicativo Portal da Empresa estão disponíveis da seguinte maneira:
+Restrições de Apple proíbem que aplicativos gerenciados e de linha de negócios da loja de aplicativos sejam listados no aplicativo Portal da Empresa. Para solucionar esse problema, os blocos de aplicativos no aplicativo Portal da Empresa para iOS encaminham os usuários a diferentes modos de exibição em um único local (o site Portal da Empresa) para todos os seus aplicativos, da seguinte forma:
 
-- O bloco **Aplicativos da Empresa** aponta para uma lista de todos os aplicativos na guia **TODOS** do [site Portal da Empresa](http://portal.manage.microsoft.com).
+- Anteriormente, o bloco **Aplicativos da Empresa** apontavam para uma lista de todos os aplicativos na guia TODOS do [site Portal da Empresa](http://portal.manage.microsoft.com) e continuará funcionando da mesma maneira. O nome do bloco foi alterado para **Todos os Aplicativos**.
 
-- O bloco **Outros Aplicativos** aponta atualmente para um modo de exibição no aplicativo Portal da Empresa que lista todos os aplicativos que a Apple permite que o aplicativo Portal da Empresa mostre. Isso inclui todos os aplicativos, exceto aplicativos gerenciados e de linha de negócios da app store.
+- Anteriormente, o bloco **Outros Aplicativos** apontava para um modo de exibição no aplicativo Portal da Empresa que lista todos os aplicativos que Apple permite que o aplicativo Portal da Empresa mostre. O nome do bloco foi alterado para **Aplicativos em Destaque** e, ao tocar no bloco, os usuários são levados para a guia EM DESTAQUE do site Portal da Empresa.
 
-- O bloco **Categorias** aponta atualmente para um modo de exibição no aplicativo Portal da Empresa que lista categorias de aplicativos.
+-  O bloco **Categorias** apontava para um modo de exibição no aplicativo Portal da Empresa que lista categorias de aplicativos. O nome do bloco não foi alterado, mas agora ele aponta para a guia CATEGORIAS do site Portal da Empresa.
+Você pode encontrar capturas de tela atualizadas [aqui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###Consulte também
@@ -49,6 +49,6 @@ As restrições da Apple proíbem que aplicativos gerenciados e de linha de neg�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ O diagrama abaixo ilustra o fluxo usado pelas políticas de acesso condicional p
 Você pode restringir o acesso ao email do Exchange Online de **Outlook** e outros **aplicativos que usam autenticação moderna**:-
 
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior
-- iOS 7.1 e posterior
+- iOS 8.0 e posterior
 - Windows Phone 8.1 e posterior
 
 A **autenticação moderna** leva a entrada baseada no ADAL (Active Directory Authentication Library) a clientes do Microsoft Office.
@@ -93,7 +93,7 @@ Você pode restringir o acesso ao email do Exchange por meio do **cliente de ema
 
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior
 
-- iOS 7.1 e posterior
+- iOS 8.0 e posterior
 
 - Windows Phone 8.1 e posterior
 
@@ -262,6 +262,6 @@ No painel do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha o b
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 310a1160d105a80623742ce4e2dc046c670bc167
-ms.openlocfilehash: d597cd13bd2254a9303769e2f5d5519c739f0aaf
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
 
 ---
@@ -40,7 +40,7 @@ Você pode implantar perfis de Wi-Fi para as seguintes plataformas:
 
 -   Android 4.0 e posterior
 
--   iOS 7.1 e posterior
+-   iOS 8.0 e posterior
 
 -   Mac OS X 10.9 e posterior
 
@@ -52,7 +52,7 @@ Para dispositivos que executam o Windows 8.1 ou o Windows 10 Desktop ou Mobile, 
 
     -   Perfil de Wi-Fi (Android 4 e posterior)
 
-    -   Perfil de Wi-Fi (iOS 7.1 e posterior)
+    -   Perfil de Wi-Fi (iOS 8.0 e posterior)
 
     -   Perfil de Wi-Fi (Mac OS X 10.9 e posterior)
 
@@ -173,6 +173,6 @@ Saiba como criar um perfil de Wi-Fi com uma chave pré-compartilhada no [Perfil 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
