@@ -4,7 +4,7 @@ description: "Saiba como o Intune é integrado ao Windows Hello para Empresas, u
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ O Intune é integrado ao Hello para Empresas de duas maneiras:
 -   Você pode usar uma política do Intune para controlar quais gestos os usuários podem e não podem usar para entrar.
 
 -   Você pode armazenar certificados de autenticação no Windows Hello para Empresas para o KSP (provedor de armazenamento de chaves). Para obter mais informações, consulte [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado no Microsoft Intune).
+
+> [!IMPORTANT]
+> Nas versões do Windows 10 Desktop e Mobile anteriores à Atualização de Aniversário, você podia configurar dois PINs diferentes que poderiam ser usados para se autenticar nos recursos:
+- O **PIN do dispositivo** poderia ser usado para desbloquear o dispositivo e conectar-se aos recursos de nuvem.
+- O **PIN de trabalho** foi usado para acessar recursos do Azure AD em dispositivos pessoais do usuário (BYOD).
+
+>Na Atualização de Aniversário, esses dois PINs foram mesclados em um único PIN do dispositivo.
+Qualquer política de configuração do Intune definida para controlar o PIN do dispositivo e, além disso, qualquer política do Windows Hello para Empresas configurada; agora ambas definem esse novo valor do PIN.
+Se você tiver definido os dois tipos de política para controlar o PIN, a política do Windows Hello para Empresas será aplicada nos dispositivos Windows 10 Desktop e Mobile.
+Para garantir que os conflitos de política sejam resolvidos e que a política de PIN seja aplicada corretamente, atualize sua Política do Windows Hello para Empresas para que corresponda às configurações em sua política de configuração e solicite aos usuários que sincronizem seus dispositivos no aplicativo Portal da Empresa.
+
+
 
 ## Criar uma política do Windows Hello para Empresas
 
@@ -67,6 +79,6 @@ Para obter mais informações sobre o Microsoft Passport, consulte [o guia](http
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

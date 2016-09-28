@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 
 ---
@@ -25,29 +25,20 @@ ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
 
 Se receber um erro em seu dispositivo Android enquanto estiver trabalhando com aplicativos da empresa ou escolares ou enquanto estiver no aplicativo do Portal da Empresa, você poderá enviar logs de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos logs, o que torna mais fácil para o administrador de TI descobrir o problema, ative o Log Detalhado. Você pode ler mais sobre [registro detalhado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Para ativar o log detalhado:
+Para enviar logs ao seu administrador de TI usando email:
 
 1.  Abra o aplicativo do Portal da Empresa.
 
-2.  Toque em **Menu** &gt; **Configurações**.
+2.  Toque em **Menu** &gt;  **Ajuda e Comentários**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou de hardware, dependendo do tipo de dispositivo Android que você tem.
 
-3.  Em **Dados de Diagnóstico**, toque em **Enviar Dados**.
+3.  Em **Ajuda**, toque em **Obter Ajuda**.
 
-    > [!NOTE]
-    > **Se você estiver usando apenas dispositivos com Android 6.0 ou posteriores:** quando você toca em **Enviar Dados**, você vê a mensagem **Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?**.
-
-    Essa mensagem é enganosa, porque a **Microsoft nunca acessa fotos, mídia ou arquivos em seu dispositivo!** O Google controla o texto da mensagem, então a Microsoft não pode alterá-lo.  Quando você permite o acesso, tudo o que está fazendo é permitir que seu dispositivo grave logs de dados no cartão SD do dispositivo, o que permite que você mova esses logs usando um cabo USB.
-
-    Se você negar acesso, a mensagem será exibida novamente na próxima vez que você tocar em **Enviar Dados**, mas você pode desligar as mensagens futuras tocando na caixa de seleção **Nunca Perguntar Novamente**.  Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ativar a permissão.
-
-4.  Siga os prompts para escolher um aplicativo de email para ser usado para enviar os logs para o administrador de TI. O aplicativo criará um email pré-endereçado com todos os logs anexados.
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
