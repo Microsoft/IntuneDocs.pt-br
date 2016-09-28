@@ -4,7 +4,7 @@ description: Saiba mais sobre os recursos do Intune ao gerenciar computadores Wi
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,25 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
 
-# Recursos de gerenciamento de computadores do Windows quando você usa o cliente de software Intune)
+# Recursos de gerenciamento de computadores Windows quando você usa o cliente de software do Intune
 Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune, que fornece um maior conjunto de recursos. No entanto, você também pode gerenciar computadores usando o cliente de software Intune, que fornece os seguintes recursos:
 
--   **Gerenciamento de atualizações de software** – Você pode manter os computadores atualizados e gerenciar quando as atualizações são aplicadas.
+-   **[Gerenciamento de atualização de software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** – você pode manter os computadores atualizados e decidir quando as atualizações serão aplicadas.
 
--   **Política do Firewall do Windows** – Ajuda a garantir que nenhum computador usado pela sua empresa tenha um Firewall do Windows inativo ou configurado incorretamente.
+-   **[Política de Firewall do Windows](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** – ajuda a garantir que nenhum computador usado pela sua empresa tenha um Firewall do Windows inativo ou configurado incorretamente.
 
--   **Proteção antimalware** – O Intune conta com o Endpoint Protection, que ajuda a proteger seus computadores contra malware.
+-   **[Proteção antimalware](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** – o Intune conta com o Endpoint Protection, que ajuda a proteger seus computadores contra malware.
 
--   **Assistência remota** – O Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluso no Intune (requer o software TeamViewer).
+-   **[Assistência remota](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** – o Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluído no Intune (requer o software TeamViewer).
 
--   **Gerenciamento de licenças de software** – Controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
--   **Implantação de aplicativo** – Implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativos não estão disponíveis quando você gerencia computadores com o cliente de software.
+-   **[Gerenciamento de licenças de software](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** – controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
+-   **[Implantação de aplicativo](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** – implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativos não estão disponíveis quando você gerencia computadores com o cliente de software.
 
 
 O Intune dá suporte à instalação do cliente de software em até 7.000 dispositivos Windows.
@@ -74,6 +74,6 @@ Veja a seguir os requisitos de software para instalar o cliente de software Intu
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

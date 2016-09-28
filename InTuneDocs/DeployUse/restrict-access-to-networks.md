@@ -4,7 +4,7 @@ description: "Use o Cisco ISE com o Intune para que os dispositivos sejam regist
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ A integração do Intune com o Cisco ISE (Mecanismo de serviços de identidade) 
 Para habilitar essa integração, você não precisa fazer nenhuma configuração no seu locatário do Intune. Você precisará fornecer permissões para seu servidor do Cisco ISE acessar o locatário do Intune. Quando isso for concluído, o restante da configuração acontecerá em seu servidor do Cisco ISE. Este artigo fornece instruções sobre como fornecer a seu servidor do ISE as permissões para acessar seu locatário do Intune.
 
 ### Etapa 1: Gerenciar os certificados
-1. No console do Azure AD (Azure Active Directory), exporte o certificado.
+Exporte o certificado do console do Azure AD (Azure Active Directory) e importe-o para o repositório de Certificados confiáveis do console do ISE:
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ Para habilitar essa integração, você não precisa fazer nenhuma configuraçã
 
    f. Na página **Arquivo a ser exportado**, escolha **Procurar** para escolher um local no qual salvar o arquivo e forneça um nome de arquivo. Embora pareça que você está escolhendo um arquivo para ser exportado, na verdade você está nomeando o arquivo no qual o certificado exportado será salvo. Escolha **Avançar** &gt; **Concluir**.
 
+   g. De dentro do console do ISE, importe o certificado do Intune (o arquivo exportado) para o repositório **Certificados Confiáveis**.
+
 #### Safari
 
  a. Entre no console do Azure AD.
@@ -52,14 +54,13 @@ b. Escolha o ícone de cadeado &gt;  **Mais informações**.
 
    c. Escolha **Exibir certificado** &gt; **Detalhes**.
 
-   d. Escolha o certificado e, em seguida, escolha **Exportar**.  
+   d. Escolha o certificado e, em seguida, escolha **Exportar**. 
+
+   e. De dentro do console do ISE, importe o certificado do Intune (o arquivo exportado) para o repositório **Certificados Confiáveis**.
 
 > [!IMPORTANT]
 >
 > Verifique a data de validade do certificado, pois você terá que exportar e importar um novo certificado quando este expirar.
-
-
-2. De dentro do console do ISE, importe o certificado do Intune (o arquivo exportado) para o repositório **Certificados Confiáveis**.
 
 
 ### Obtenha um certificado autoassinado do ISE 
@@ -97,8 +98,57 @@ Verifique se todo o texto está em uma única linha
 |Ponto de Extremidade do Token OAuth 2.0|URL de emissão de token|
 |Atualizar seu código com sua ID de cliente|ID do Cliente|
 
+### Etapa 4: Carregar o certificado autoassinado do ISE no aplicativo do ISE criado no Azure AD
+1.     Obtenha o valor do certificado codificado em base64 e a impressão digital de um arquivo de certificado público .cer X509. Este exemplo usa o PowerShell:
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    Armazene os valores de $base64Thumbprint, $base64Value e $keyid que serão usados na próxima etapa.
+2.       Carregue o certificado por meio do arquivo de manifesto. Faça logon no [Portal de Gerenciamento do Azure](https://manage.windowsazure.com)
+2.      No snap-in do Azure AD, encontre o aplicativo que deseja configurar com um certificado x.509.
+3.      Baixe o arquivo de manifesto de aplicativo. 
+5.      Substitua a propriedade vazia “KeyCredentials”: [] pelo JSON a seguir.  O tipo complexo KeyCredentials é documentado na [Referência de entidades e tipos complexos](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
 
-### Etapa 3: Definir configurações do ISE
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+Por exemplo:
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      Salve a alteração no arquivo de manifesto de aplicativo.
+7.      Carregue o arquivo de manifesto do aplicativo editado por meio do portal de gerenciamento do Azure.
+8.      Opcional: baixe o manifesto novamente para verificar se o certificado x.509 está presente no aplicativo.
+
+>[!NOTE]
+>
+> KeyCredentials é uma coleção, portanto, você pode carregar vários certificados x.509 para cenários de sobreposição ou excluir certificados em cenários de comprometimento.
+
+
+### Etapa 4: Definir configurações do ISE
 No console de administração do ISE, forneça estes valores de configuração:
   - **Tipo de servidor**: Gerenciador de Dispositivos Móveis
   - **Tipo de autenticação**: OAuth – Credenciais do cliente
@@ -150,6 +200,6 @@ Também há um [conjunto baixável de instruções de registro](https://gallery.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

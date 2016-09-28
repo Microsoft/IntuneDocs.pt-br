@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ Este tópico explica as etapas necessárias para aplicar políticas MAM em aplic
 ##  Etapa 1: preparar o aplicativo
 Antes de aplicar as políticas MAM a um aplicativo, você deve primeiro encapsular o aplicativo com a Ferramenta de Disposição do Aplicativo do Microsoft Intune.  As instruções para instalar e usar a ferramenta de disposição do aplicativo são incluídas no download.  
 >[!IMPORTANT]  
->Esta versão da ferramenta do wrapper de aplicativo, que dá suporte a dispositivos não registrados no Intune, estará disponível no modo de visualização particular nas próximas semanas. Se você deseja participar, envie um email para msintuneappsdk@microsoft.com para obter mais informações.
+>Esta versão da ferramenta de disposição do aplicativo, que dá suporte a dispositivos não registrados no Intune, está disponível na visualização pública. Se desejar participar da visualização pública, você poderá baixar a ferramenta [nesta página do GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) para iOS e [neste site do GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) para Android.
 
 ## Etapa 2: adicionar o aplicativo
 
@@ -75,6 +75,6 @@ Você pode remover um aplicativo de linha de negócios da lista de aplicativos. 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

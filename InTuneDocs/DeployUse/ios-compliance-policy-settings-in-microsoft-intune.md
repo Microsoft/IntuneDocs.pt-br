@@ -13,8 +13,8 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
-ms.openlocfilehash: 1e2dc1e94870bb53143bee62ccc9696a28285987
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: a2f98bbd34cf8b0c86531ae6ff40b1044c15d8bd
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1e2dc1e94870bb53143bee62ccc9696a28285987
 
 # Configurações de política de conformidade para dispositivos iOS no Microsoft Intune
 
-As configurações de política descritas neste tópico se aplicam a dispositivos que executam o iOS 6 e posterior.
+As configurações de política descritas neste tópico se aplicam a dispositivos que executam o iOS 8.0 e posterior.
 
 Se você estiver procurando informações sobre outras plataformas, selecione uma das seguintes opções:
 > [!div class="op_single_selector"]
@@ -80,6 +80,6 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

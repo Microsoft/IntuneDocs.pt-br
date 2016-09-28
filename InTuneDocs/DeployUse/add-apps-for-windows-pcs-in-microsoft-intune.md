@@ -1,5 +1,5 @@
 ---
-title: Adicionar aplicativos para computadores Windows | Microsoft Intune
+title: Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune | Microsoft Intune
 description: "Use as informações neste tópico para aprender a adicionar aplicativos para computadores Windows ao Intune antes de implantá-los."
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Adicionar aplicativos para computadores Windows no Microsoft Intune
+# Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune
 
 Use as informações neste tópico para aprender a adicionar aplicativos ao Intune antes de implantá-los.
 
 > [!IMPORTANT]
-> As informações neste tópico lhe ajudam a adicionar aplicativos em para computadores Windows que você gerencia usando o software cliente de computador do Intune. Se você quiser adicionar aplicativos para computadores Windows registrados e outros dispositivos móveis, consulte [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Adicionar aplicativos para dispositivos móveis no Microsoft Intune).
+> As informações neste tópico ajudam a adicionar aplicativos a computadores Windows que você gerencia usando o cliente de software do Intune. Se você quiser adicionar aplicativos para computadores Windows registrados e outros dispositivos móveis, consulte [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Adicionar aplicativos para dispositivos móveis no Microsoft Intune).
 
 
 ## Adicionar o aplicativo
@@ -91,6 +91,6 @@ Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

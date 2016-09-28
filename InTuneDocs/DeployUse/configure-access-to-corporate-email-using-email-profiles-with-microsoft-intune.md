@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ Os administradores de TI ou usuários também podem optar por instalar clientes 
 Você pode usar perfis de email para configurar o cliente de email nativo nos seguintes tipos de dispositivo:
 -   Windows Phone 8 e posterior
 -   Windows 10 (para desktop), Windows 10 Mobile e posterior
--   iOS 7.1 e posterior
+-   iOS 8.0 e posterior
 -   Samsung KNOX padrão (4.0 e posterior)
 
 Além de configurar uma conta de email no dispositivo, você pode definir quantos emails sincronizar e, dependendo do tipo de dispositivo, os tipos de conteúdo a serem sincronizados.
@@ -71,7 +71,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
 
     -   **Perfil de email para Samsung KNOX padrão (4.0 e posterior)**
 
-    -   **Perfil de email (iOS 7.1 e posterior)**
+    -   **Perfil de email (iOS 8.0 e posterior)**
 
     -   **Perfil de email (Windows Phone 8 e posterior)**
 
@@ -122,6 +122,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

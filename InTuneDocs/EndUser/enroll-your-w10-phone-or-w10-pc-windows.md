@@ -4,7 +4,7 @@ description: Descreve como registrar um dispositivo Windows 10 Mobile ou Desktop
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d1df63c349685333fbebcbba527e46b1f3047f43
-ms.openlocfilehash: a34d3fb4fe45ad4dd6da3dfacc832f0e97b5bee6
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
 
 
 ---
@@ -59,7 +59,7 @@ Para registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune
 
 4. Quando você vir a página **Tudo pronto!**, tela, toque em **Fechar**. Você terminou.
 
-  ![Toque em fechar na tela "Você está  pronto!"](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Toque em fechar na tela “Tudo pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
 
 5. Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.
 
@@ -106,6 +106,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

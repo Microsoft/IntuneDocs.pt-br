@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
 
 
 ---
@@ -50,7 +50,7 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 5.  **Adicionar Política de Registro de Dispositivo Corporativo** No [console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Registro de Dispositivo Corporativo** e, em seguida, clique em **Adicionar**.
 
     Forneça detalhes **Gerais**, incluindo **Nome** e **Descrição**, especifique se os dispositivos atribuídos ao perfil têm afinidade de usuário ou pertencem a um grupo.
-      - **Solicitar afinidade de usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial e depois receber permissão para acessar dados e email da empresa como esse usuário.  A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem aos usuários e que precisam usar o portal da empresa (por exemplo, para instalar aplicativos).
+      - **Solicitar afinidade de usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial e depois receber permissão para acessar dados e email da empresa como esse usuário.  A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem aos usuários e que precisam usar o portal da empresa (por exemplo, para instalar aplicativos). **Observação:** dispositivos com DEP com afinidade do usuário não dão suporte à autenticação multifator.
       - **Sem afinidade de usuário**: o dispositivo não está afiliado a um usuário. Use esta afiliação para dispositivos que executam tarefas sem acessar aos dados de usuário local. Aplicativos que exigem a afiliação do usuário, incluindo o aplicativo do Portal da Empresa usado para instalar aplicativos de linha de negócios, não funcionarão.
 
     Você também pode **Atribuir dispositivos ao seguinte grupo**. Clique em **Selecionar...** para escolher um grupo.
@@ -89,7 +89,7 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 
 6.  **Atribuir Dispositivos DEP para Gerenciamento** Vá até o [Portal do Programa de Registro de Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID da Apple corporativa. Vá até o **Programa de Implantação** &gt; **Programa de Registro de Dispositivo** &gt; **Gerenciar Dispositivos**. Especifique como você vai **escolher dispositivos**, forneça informações do dispositivo e especifique os detalhes por **número de série**, **número do pedido**do dispositivo ou **carregue o arquivo CSV**. Em seguida, selecione **Atribuir ao Servidor** e selecione o &lt;ServerName&gt; especificado para o Microsoft Intune e, em seguida, clique em **OK**.
 
-7.  **Sincronizar Dispositivos Gerenciados por DEP** Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Administrador** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e clique em **Sincronizar agora**. Uma solicitação de sincronização é enviada à Apple. Para ver os dispositivos gerenciados pelo DEP após a sincronização, no [console de administração do Microsoft Intune](http://manage.microsoft.com) vá para **Grupos** &gt; **Todos os Dispositivos Corporativos**. No espaço de trabalho **Dispositivos Corporativos**, o **Estado** para dispositivos gerenciados lê "Não contatado" até que o dispositivo esteja ligado e executa o Assistente de Configuração para registrar o dispositivo.
+7.  **Sincronizar Dispositivos Gerenciados por DEP** Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Administrador** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e clique em **Sincronizar agora**. Uma solicitação de sincronização é enviada à Apple. Para ver os dispositivos gerenciados por DEP após a sincronização, no [Console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Grupos** &gt; **Todos os Dispositivos Corporativos** &gt; **Dispositivos corporativos pré-registrados** &gt; **Pelo número de série do iOS**. No espaço de trabalho **Pelo número de série do iOS**, o **Estado** dos dispositivos gerenciados é "Não contatado" até que o dispositivo seja ligado e execute o Assistente de Configuração para ser registrado.
 
     Para cumprir os termos da Apple para tráfego DEP aceitável, o Intune impõe as seguintes restrições:
      -  Uma sincronização completa do DEP pode executar não mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza cada número de série que a Apple atribuiu ao Intune, tenha o número de série sido sincronizado anteriormente ou não. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
@@ -99,13 +99,13 @@ Para poder registrar dispositivos iOS corporativos com o DEP, é necessário um 
 
 ## Alterações em atribuições de grupo do Intune
 
-A partir de outubro, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de **Perfil de Registro Corporativo**. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+A partir de novembro, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de **Perfil de Registro Corporativo**. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Consulte também
 [Prepare-se para registrar dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 
