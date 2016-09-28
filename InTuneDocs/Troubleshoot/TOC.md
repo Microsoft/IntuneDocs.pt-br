@@ -17,6 +17,11 @@
 ## [Solucionar problemas de acesso condicional](troubleshoot-conditional-access.md)
 ## [Solucionar problemas no Exchange Connector](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Aug16_HO1-->
+## [Solucionar problemas do gerenciamento de aplicativos móveis](troubleshoot-mam.md)
+
+## [Solucionar problemas de integração do Lookout](troubleshooting-lookout-integration.md)
+
+
+<!--HONumber=Sep16_HO2-->
 
 

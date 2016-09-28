@@ -29,7 +29,7 @@ Veja informações gerais e dados de resumo sobre alertas ativos.
 
 #### Para exibir alertas ativos
 
-No console de administração do Intune, siga uma dessas séries de etapas:
+No console de administração do Intune, siga uma destas séries de etapas:
 
 -  **Para exibir informações gerais sobre alertas**, incluindo os três principais alertas e o número total de alertas ativos, selecione **Visão Geral do Sistema**. Escolha os links nesses alertas para ver informações mais detalhadas.
 
@@ -90,7 +90,7 @@ Alertas marcados como fechados são excluídos permanentemente após 90 dias.
 
 #### Para fechar um alerta manualmente
 
-No console de administração do Intune, siga uma dessas séries de etapas:
+No console de administração do Intune, siga uma destas séries de etapas:
 
 - **Para fechar um alerta da lista de Alertas**, escolha **Alertas** > **Todos os Alertas**. Selecione um alerta e escolha **Fechar Alerta**.
 

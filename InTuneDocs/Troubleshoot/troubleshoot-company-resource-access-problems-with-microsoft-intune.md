@@ -4,7 +4,7 @@ description: "Códigos de erro e de status neste tópico para ajudá-lo a soluci
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Recuperando conteúdo|Causa provável: o status de trabalho 30 indica que o download de um aplicativo por um usuário falhou.<br /><br />As causas prováveis disso podem ser:<br /><br />O dispositivo perdeu a conectividade com a Internet enquanto o download estava em andamento.<br /><br />O certificado emitido para o dispositivo no momento do registro pode ter expirado.<br /><br />Mitigação:<br /><br />Inicie o aplicativo Company Apps no Painel de Controle do dispositivo para verificar se o certificado do dispositivo não expirou. Em caso afirmativo, você precisará registrar o dispositivo novamente.<br /><br />Confirme se o dispositivo está conectado à Internet e tente solicitar o aplicativo novamente.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Download do conteúdo concluído||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Instalação em andamento||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Ocorreu um errona instalação|A instalação do aplicativo falhou após o download.<br /><br />O certificado de assinatura de código com o qual o aplicativo foi assinado não está presente no dispositivo.<br /><br />Uma dependência de estrutura da qual o aplicativo depende não está instalada no dispositivo.<br /><br />Verifique se o certificado de assinatura de código com o qual seu aplicativo foi assinado está presente no dispositivo e confirme com o administrador que esse certificado foi direcionado para todos os dispositivos Windows RT registrados da empresa.<br /><br />Caso a falha de instalação se deva à ausência de uma dependência de estrutura, o administrador precisará publicar novamente o aplicativo, empacotando a estrutura no pacote de aplicativos.<br /><br />O pacote de aplicativos baixado não é um pacote válido, pode ter sido corrompido ou pode não ser compatível com a versão do sistema operacional no dispositivo.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Ocorreu um erro de instalação|A instalação do aplicativo falhou após o download.<br /><br />O certificado de assinatura de código com o qual o aplicativo foi assinado não está presente no dispositivo.<br /><br />Uma dependência de estrutura da qual o aplicativo depende não está instalada no dispositivo.<br /><br />Verifique se o certificado de assinatura de código com o qual seu aplicativo foi assinado está presente no dispositivo e confirme com o administrador que esse certificado foi direcionado para todos os dispositivos Windows RT registrados da empresa.<br /><br />Caso a falha de instalação se deva à ausência de uma dependência de estrutura, o administrador precisará publicar novamente o aplicativo, empacotando a estrutura no pacote de aplicativos.<br /><br />O pacote de aplicativos baixado não é um pacote válido, pode ter sido corrompido ou pode não ser compatível com a versão do sistema operacional no dispositivo.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Instalação bem-sucedida||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Desinstalação em andamento||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Ocorreu um erro de desinstalação||
@@ -127,7 +127,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |-2016314112|0x87D17D00|22000: uso de chave inválido|
 |-2016315105|0x87D1791F|21007: não é possível verificar a conta|
 |-2016315106|0x87D1791E|21006: não é possível descriptografar o certificado|
-|-2016315107|0x87D1791D|21005: conta não exclusiva|
+|-2016315107|0x87D1791D|21005: Conta não exclusiva (o Perfil de Email já existe no dispositivo)|
 |-2016315108|0x87D1791C|21004: não é possível criar a conta|
 |-2016315109|0x87D1791B|21003: nenhum nome de host|
 |-2016315110|0x87D1791A|21002: não é possível manter a conformidade com a política de criptografia do servidor|
@@ -372,6 +372,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

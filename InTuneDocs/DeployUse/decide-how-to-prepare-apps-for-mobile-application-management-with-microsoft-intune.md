@@ -4,23 +4,23 @@ description: "As informações neste tópico ajudam você a decidir quando deve 
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
-ms.reviewer: jeffgilb
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d2d11cc8bed7575b2fe818c9aa5b2359a62a77e0
+ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
+ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
 
 
 ---
 
 # Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune
-Você pode habilitar seus aplicativos para usar políticas de gerenciamento de aplicativo móvel usando a Ferramenta de Encapsulamento de Aplicativos do Intune ou o SDK de Aplicativos do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
+Você pode habilitar seus aplicativos para usar políticas de MAM (gerenciamento de aplicativo móvel) usando a Ferramenta de Encapsulamento de Aplicativo do Intune ou o SDK de Aplicativo do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
 
 ## Ferramenta de Encapsulamento de Aplicativo do Intune
 A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos internos de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper no aplicativo, que permite que o aplicativo seja gerenciado por uma política de gerenciamento de aplicativos móveis do Intune. O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura.  Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da Ferramenta de Disposição de Aplicativo, consulte [Ferramenta de Disposição do Aplicativo Android ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Ferramenta de Disposição do Aplicativo iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
@@ -29,10 +29,24 @@ A Ferramenta de Encapsulamento de Aplicativo não dá suporte a aplicativos na W
 
 Você deve usar a Ferramenta de Encapsulamento de Aplicativo, em vez do SDK, se o aplicativo já tiver sido escrito ou se o código-fonte não estiver disponível.
 
+**Atualmente, a Ferramenta de Encapsulamento de Aplicativo para MAM em dispositivos que não estão registrados no Intune tem suporte na visualização pública. Para obter mais informações, consulte o tópico ** em [Proteger aplicativos de linha de negócios e dados em dispositivos não registrados no Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+
+### Plataformas suportadas
+
+|**Ferramenta de Encapsulamento de Aplicativo** | **Xamarin** |**Cordova** |
+|------|----|----|
+|**iOS** |Sim|Sim|
+|**Android**| Não |Sim|
 ## SDK do Aplicativo do Intune
 O SDK do Aplicativo é projetado principalmente para clientes que têm aplicativos na Windows Store ou Play Store e desejam a capacidade de gerenciar os aplicativos com o Intune. No entanto, qualquer aplicativo podem tirar proveito da integração do SDK, mesmo se for um aplicativo LOB.
 
 Para saber mais sobre o SDK, consulte a [Visão Geral](/intune/develop/intune-app-sdk). Para começar a usar o SDK, consulte [Getting Started With the Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started) (Introdução ao SDK de Aplicativo do Microsoft Intune).
+
+### Plataformas suportadas
+|**SDK do Aplicativo do Intune** |**Xamarin** |**Cordova**
+|------|----|----|
+|**iOS**|Sim – usar o componente Xamarin do SDK de Aplicativo do Intune|Sim – usar o plug-in Cordova do SDK de Aplicativo do Intune|
+|**Android**| Sim – usar o Componente Xamarin do SDK de Aplicativo do Intune|Sim – usar o plug-in Cordova do SDK de Aplicativo do Intune|
 
 ## Comparação de recursos
 Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
@@ -61,14 +75,14 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Apagamento seletivo <br></br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
 |Impedir "Salvar como" |X||
 |Suporte para múltiplas identidades|X||
-
 ### Consulte também
+
 [Ferramenta de disposição do aplicativo Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [Ferramenta de disposição do aplicativo iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [Use o SDK para habilitar aplicativos para o gerenciamento de aplicativos móveis](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

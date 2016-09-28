@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 3831b4897596c7b49caaee76cb7063bab4399216
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 # Como localizar o número de série em meu dispositivo?
 
-Em dispositivos que executam o iOS 7.1 e posterior, toque no ícone **Configurações**, toque em **Geral** > **Sobre**, e, em seguida, role para baixo até encontrar **Número de Série**.
+Em dispositivos que executam o iOS 8.0 e posterior, toque no ícone **Configurações**, toque em **Geral** > **Sobre** e role para baixo até encontrar **Número de Série**.
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
@@ -31,6 +31,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "Implante o aplicativo de navegador gerenciado para restringir a na
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Você pode criar políticas de navegador gerenciado para os seguintes tipos de d
 
 -   Dispositivos que executam o Android 4 e posterior.
 
--   Dispositivos que executam o iOS 7.1 e versões posteriores
+-   Dispositivos que executam o iOS 8.0 e posterior
 
 O navegador gerenciado do Intune dá suporte à abertura de conteúdo da Web de [parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -44,9 +44,9 @@ O navegador gerenciado do Intune dá suporte à abertura de conteúdo da Web de 
 
 2.  Configure um dos seguintes tipos de política de **Software** :
 
-    -   **Política de navegador gerenciado (Android 4 e posterior)**
+    -   **Managed Browser (Android 4 e posterior)**
 
-    -   **Política de navegador gerenciado (iOS 7.1 e posterior)**
+    -   **Managed Browser (iOS 8.0 e posterior)**
 
     Para obter mais informações sobre como criar e implantar políticas, consulte o tópico [Manage settings and features on your devices with Microsoft Intune Policies (Gerenciar configurações e recursos em seus dispositivos com as políticas do Microsoft Intune)](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -154,6 +154,6 @@ Se várias políticas de navegador gerenciado forem implantadas em um dispositiv
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

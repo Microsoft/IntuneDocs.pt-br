@@ -4,7 +4,7 @@ description: "Use políticas de configuração de aplicativo móvel no Intune pa
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +37,7 @@ Políticas de configuração de aplicativo móvel podem ajudar a eliminar esses 
 Você não implanta essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e implanta o aplicativo. As configurações de política serão usadas sempre que o aplicativo verificá-las (normalmente, na primeira vez que é executado).
 
 > [!TIP]
-> No momento, este tipo de política está disponível somente para dispositivos que executam o iOS 7.1 e posterior. Ela dá suporte aos seguintes tipos de instalação de aplicativo:
+> No momento, este tipo de política está disponível somente para dispositivos que executam o iOS 8.0 e posterior. Ela dá suporte aos seguintes tipos de instalação de aplicativo:
 >
 > -   **Aplicativo iOS gerenciados da loja de aplicativos**
 > -   **Pacote do aplicativo do iOS**
@@ -139,6 +139,6 @@ Quando você cria um arquivo de configuração de aplicativo móvel, você pode 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
