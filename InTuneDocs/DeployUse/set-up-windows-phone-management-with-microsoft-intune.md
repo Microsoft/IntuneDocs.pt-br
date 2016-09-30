@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d88405e913fe61cef2c297f9d50408e10674cf3f
 
 
 ---
@@ -33,7 +33,7 @@ Como administrador do Intune, você pode habilitar o registro e o gerenciamento 
 ## Registro de aplicativo no Portal da Empresa
 Você pode permitir que os usuários registrem seus dispositivos instalando e registrando seus dispositivos com o aplicativo do Portal da Empresa do Intune. A criação de um DNS CNAME ajuda os usuários a se registrarem no Intune sem inserir um nome do servidor. Se gerenciar dispositivos Windows Phone 8.0 ou precisar implantar o Portal da Empresa em dispositivos Windows Phone, você também precisará baixar e assinar o aplicativo do Portal da Empresa. Consulte [Set up Windows Phone 8.0 management](set-up-windows-phone-8.0-management-with-microsoft-intune.md) (Configurar o gerenciamento do Windows Phone 8.0).
 
-1.  **Configurar Intune**<br>Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de gerenciamento do dispositivo móvel](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e configure o MDM.
+1.  **Configurar Intune**<br>Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de gerenciamento do dispositivo móvel](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e configure o MDM.
 
 2.  **Criar CNAMEs** (opcional)<br>Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para manage.microsoft.com. Se houver mais de um domínio verificado, crie um registro CNAME para cada domínio. Os registros de recursos de CNAME deve conter as seguintes informações:
 
@@ -65,6 +65,6 @@ Nenhum trabalho adicional é necessário, a menos que você vá implantar o Port
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

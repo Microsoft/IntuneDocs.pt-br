@@ -1,6 +1,5 @@
 # [Compreensão e Exploração](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Introdução](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
-# [Plano e design](ways-to-do-enterprise-mobility.md)
 <!--- ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
@@ -15,12 +14,12 @@
 ## [Help secure access from hotel kiosks](help-secure-access-from-hotel-kiosks.md)
 ## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)--->
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
-
+# [Novidades](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Implantação e Uso](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Desenvolver e personalizar aplicativos](/intune/develop/intune-app-sdk)
 # [Solução de problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 
