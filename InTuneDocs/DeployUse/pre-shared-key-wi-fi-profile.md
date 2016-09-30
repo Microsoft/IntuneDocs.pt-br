@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ Aqui está um exemplo de código XML de um perfil de Wi-Fi do Android ou do Wind
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`: Defina como **false**, pois **true** poderia fazer o dispositivo esperar uma senha criptografada e tentar descriptografá-la, o que poderia causar uma falha de conexão.
+> `<protected>false</protected>`deve ser definido como **false**, pois **true** poderia fazer o dispositivo esperar uma senha criptografada e tentar descriptografá-la, o que poderia causar uma falha de conexão.
 > 
 >  `<hex>53534944</hex>` deve ser definido como o valor hexadecimal de `<name><SSID of wifi profile></name>`.
+>  Dispositivos Windows 10 podem retornar um erro falso *A correção 0x87D1FDE8 falhou*, mas ainda ser provisionado com o perfil.
 
     <!--
     <Name of wifi profile> = Name of profile
