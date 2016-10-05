@@ -4,7 +4,7 @@ description: Saiba como criar um perfil de certificado do Intune.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,22 +41,16 @@ Você deve criar um perfil de certificado Confiável para poder criar um protoco
 1.  No [Console de administração do Intune](https://manage.microsoft.com), escolha **Política** &gt; **Adicionar Política**.
 2.  Adicione um destes tipos de política:
     - **Android &gt; Perfil de certificado confiável (Android 4 e posterior)**
-    - **iOS &gt; Perfil de certificado confiável (iOS 7.1 e posterior)**
+    - **iOS &gt; Perfil de Certificado Confiável (iOS 8.0 e posterior)**
     - **Mac OS X &gt; Perfil de certificado confiável (Mac OS X 10.9 e posterior)**
     - **Windows &gt; Perfil de certificado confiável (Windows 8.1 e posterior)**
     - **Windows &gt; Perfil de certificado confiável (Windows Phone 8.1 e posterior)**
 
     Saiba mais: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e funcionalidades em seus dispositivos com políticas do Microsoft Intune).
 
-3.  Insira as informações solicitadas para definir as configurações de perfil de certificado Confiável para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1.
-
-    - Na configuração **Arquivo de certificado**, importe o Certificado de AC raiz confiável (arquivo .cer) que você exportou da AC emissora. A configuração **Repositório de destino** se aplica apenas aos dispositivos que executam o Windows 8.1 e posterior e apenas se o dispositivo tiver mais de um repositório de certificados.
-    -  Em **Formato de nome da entidade**, selecione **Personalizado** para inserir um formato de nome da entidade personalizado.  
-        As duas variáveis que atualmente têm suporte para o formato personalizado são `Common Name (CN)` e `Email (E)`. Usando uma combinação dessas variáveis e cadeias de caracteres estáticas, você pode criar um formato de nome de entidade personalizado, como este:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        No exemplo, o administrador criou um formato de nome de entidade que, além das variáveis `CN` e `E`, usa cadeias de caracteres para os valores de Unidade Organizacional, Organização, Local, Estado e País. [Função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) listas cadeias de caracteres com suporte.  
+3.  Insira as informações solicitadas para definir as configurações de perfil de certificado Confiável para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. 
+4.  Na configuração **Arquivo de certificado**, importe o Certificado de AC raiz confiável (arquivo .cer) que você exportou da AC emissora. A configuração **Repositório de destino** se aplica apenas aos dispositivos que executam o Windows 8.1 e posterior e apenas se o dispositivo tiver mais de um repositório de certificados.
+    
 4.  Escolha **Salvar Política**.
 
 A nova política é mostrada no espaço de trabalho **Política**. Agora você pode implantá-la.
@@ -69,7 +63,7 @@ Depois de criar um perfil de certificado de Autoridade de Certificação confiá
 1.  No [Console de administração do Intune](https://manage.microsoft.com), escolha **Política** &gt; **Adicionar Política**.
 2.  Adicione um destes tipos de política:
     - **Android &gt; Perfil de certificado SCEP (Android 4 e posterior)**
-    - **iOS &gt; Perfil de certificado SCEP (iOS 7.1 e posterior)**
+    - **iOS &gt; Perfil de Certificado SCEP (iOS 8.0 e posterior)**
     - **Mac OS X &gt; Perfil de certificado SCEP (Mac OS X 10.9 e posterior)**
     - **Windows &gt; Perfil de certificado SCEP (Windows 8.1 e posterior)**
     - **Windows &gt; Perfil de certificado SCEP (Windows Phone 8.1 e posterior)**
@@ -79,7 +73,7 @@ Depois de criar um perfil de certificado de Autoridade de Certificação confiá
 3.  Siga as instruções na página de configuração do perfil para definir as configurações de perfil de certificado SCEP.
     > [!NOTE]
     >
-    > Em **Formato de nome da entidade**, selecione **Personalizado** para inserir um formato de nome da entidade personalizado.
+    > Em **Formato de nome da entidade**, selecione **Personalizado** para inserir um formato de nome da entidade personalizado (somente em perfis do iOS).
     >
     > As duas variáveis que atualmente têm suporte para o formato personalizado são `Common Name (CN)` e `Email (E)`. Usando uma combinação dessas variáveis e cadeias de caracteres estáticas, você pode criar um formato de nome de entidade personalizado, como este:
 
@@ -98,7 +92,7 @@ A nova política é mostrada no espaço de trabalho **Política**. Agora você p
   - **Android &gt; Perfil de certificado .PFX (Android 4 e posterior)**
   - **Windows &gt; Perfil de Certificado PKCS nº 12 (.PFX) (Windows 10 e posterior)**
   - **Windows &gt; Perfil de Certificado PKCS nº 12 (.PFX) (Windows Phone 10 e posterior)**
-  - **iOS > Perfil de Certificado PKCS nº 12 (.PFX) (iOS 7.1 e posterior)**    
+  - **iOS > Perfil de Certificado PKCS nº 12 (.PFX) (iOS 8.0 e posterior)**    
     Saiba mais: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e funcionalidades em seus dispositivos com políticas do Microsoft Intune).
 3.  Insira as informações solicitadas no formulário de política.
 4.  Escolha **Salvar Política**.
@@ -136,6 +130,6 @@ Em seguida, saiba como usar certificados para proteger emails, Wi-Fi e perfis de
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
