@@ -4,7 +4,7 @@ description: "O Intune fornece uma variedade de configurações gerais internas 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Use a **Política de configuração geral do Windows Phone (Windows Phone 8.1 e 
 
 ### Configurações de senha
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Exigir uma senha para desbloquear os dispositivos móveis**|Especifica se os usuários devem inserir uma senha para acessar os dispositivos.|Sim|Sim|
-|**Tipo de senha necessária**|Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.|Sim|Sim|
-|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. No entanto, para dispositivos iOS, isso especifica que o número de símbolos que devem ser incluídos na senha.|Sim|Sim|
-|**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres necessários na senha.|Sim|Sim|
-|**Permitir senha simples**|Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.|Sim|Sim|
-|**Número de falhas de logon repetidas permitido antes do dispositivo ser apagado**|Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.|Sim|Sim|
-|**Minutos de inatividade antes que a tela se apague**|Especifica a quantidade de tempo que um dispositivo deve permanecer ocioso antes que a tela seja bloqueada automaticamente.|Sim|Sim|
+|Nome da configuração|Detalhes|
+|----------------|------|
+|**Exigir uma senha para desbloquear os dispositivos móveis**|Especifica se os usuários devem inserir uma senha para acessar os dispositivos.|
+|**Tipo de senha necessária**|Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.|
+|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. No entanto, para dispositivos iOS, isso especifica que o número de símbolos que devem ser incluídos na senha.|
+|**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres necessários na senha.|
+|**Permitir senha simples**|Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.|
+|**Número de falhas de logon repetidas permitido antes do dispositivo ser apagado**|Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.|
+|**Minutos de inatividade antes que a tela se apague**|Especifica a quantidade de tempo que um dispositivo deve permanecer ocioso antes que a tela seja bloqueada automaticamente.|
 |**Expiração da senha (dias)**|Especifica o número de dias antes que a senha do dispositivo precise ser alterada.|Sim|Sim|
-|**Lembrar de histórico de senha**|Especifica se as senhas usadas anteriormente devem ser lembradas para impedir o usuário de usá-las novamente.|Sim|Sim|
-|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especifica quantas senhas usadas anteriormente devem ser lembradas.|Sim|Sim|
+|**Lembrar de histórico de senha**|Especifica se as senhas usadas anteriormente devem ser lembradas para impedir o usuário de usá-las novamente.|
+|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especifica quantas senhas usadas anteriormente devem ser lembradas.|
 
 ### Configurações de criptografia
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|------|-----------------------------|
-|**Exigir criptografia no dispositivo móvel**|Exige que os dados em dispositivos móveis com suporte sejam criptografados.<br>Para dispositivos Windows Phone 8, defina como **Sim**.|Sim|Sim|
+|Nome da configuração|Detalhes|
+|----------------|------|
+|**Exigir criptografia no dispositivo móvel**|Exige que os dados em dispositivos móveis com suporte sejam criptografados.|
 
 ### Configurações de sistema
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Permitir captura de tela**|Permite que o usuário capture o conteúdo da tela como um arquivo de imagem.|Não|Sim|
-|**Permitir envio de dados diagnósticos**|Permite que o dispositivo envie informações de diagnóstico à Microsoft.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|-----|
+|**Permitir captura de tela**|Permite que o usuário capture o conteúdo da tela como um arquivo de imagem.|
+|**Permitir envio de dados diagnósticos**|Permite que o dispositivo envie informações de diagnóstico à Microsoft.|
 
 ### Configurações de nuvem – contas e sincronização
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Permitir conta da Microsoft**|Permite que uma conta da Microsoft seja vinculada ao dispositivo.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|------|
+|**Permitir conta da Microsoft**|Permite que uma conta da Microsoft seja vinculada ao dispositivo.|
 
 ### Configurações de email
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Permitir contas de email personalizadas**|Permite que o dispositivo se conecte a contas de email não Microsoft.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|-----|
+|**Permitir contas de email personalizadas**|Permite que o dispositivo se conecte a contas de email não Microsoft.|
 
 ### Configurações de aplicativo - navegador
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Permitir navegador da web**|Permite ou bloqueia o navegador da Web interno em dispositivos.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|-----|
+|**Permitir navegador da web**|Permite ou bloqueia o navegador da Web interno em dispositivos.|
 
 ### Configurações de aplicativo - aplicativos
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Permitir loja de aplicativo**|Permite que os usuários se conectem à loja de aplicativos do dispositivo.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|-----|
+|**Permitir loja de aplicativo**|Permite que os usuários se conectem à loja de aplicativos do dispositivo.|
 
 ### Configurações de recursos do dispositivo - hardware
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|----|--------------------------------|
-|**Permitir câmera**|Permite ou bloqueia a câmera do dispositivo.|Não|Sim|
-|**Permitir armazenamento removível**|Permite que o dispositivo use armazenamento removível, como cartões SD.|Sim|Sim|
-|**Permitir Wi-Fi**|Habilita ou desabilita a funcionalidade Wi-Fi do dispositivo.|Não|Sim|
-|**Permitir compartilhamento de Internet por Wi-Fi**|Permite o uso de compartilhamento de Internet por Wi-Fi no dispositivo.|Não|Sim
-|**Permitir conexão automática para liberar pontos de acesso Wi-Fi**|Permite que o dispositivo se conecte automaticamente a hotspots Wi-Fi gratuitos e aceite automaticamente os termos de uso.|Não|Sim|
-|**Permitir relatórios de pontos de acesso Wi-Fi**|Envia informações sobre conexões Wi-Fi para ajudar o usuário a descobrir conexões próximas.|Não|Sim|
-|**Permitir localização geográfica**|Permite que o dispositivo utilize informações de localização.|Não|Sim|
-|**Permitir NFC**|Permite operações que usam comunicação a curta distância.|Não|Sim|
-|**Permitir Bluetooth**|Habilita ou desabilita a funcionalidade Bluetooth do dispositivo.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|-----|
+|**Permitir câmera**|Permite ou bloqueia a câmera do dispositivo.|
+|**Permitir armazenamento removível**|Permite que o dispositivo use armazenamento removível, como cartões SD.|
+|**Permitir Wi-Fi**|Habilita ou desabilita a funcionalidade Wi-Fi do dispositivo.|
+|**Permitir compartilhamento de Internet por Wi-Fi**|Permite o uso de compartilhamento de Internet por Wi-Fi no dispositivo.|
+|**Permitir conexão automática para liberar pontos de acesso Wi-Fi**|Permite que o dispositivo se conecte automaticamente a hotspots Wi-Fi gratuitos e aceite automaticamente os termos de uso.|
+|**Permitir relatórios de pontos de acesso Wi-Fi**|Envia informações sobre conexões Wi-Fi para ajudar o usuário a descobrir conexões próximas.|
+|**Permitir localização geográfica**|Permite que o dispositivo utilize informações de localização.|
+|**Permitir NFC**|Permite operações que usam comunicação a curta distância.|
+|**Permitir Bluetooth**|Habilita ou desabilita a funcionalidade Bluetooth do dispositivo.|
 
 ### Configurações de recursos do dispositivo - recursos
 
-|Nome da configuração|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|----|------|-------------------------------|
-|**Permitir copiar e colar**|Permitir a funcionalidade copiar e colar nos dispositivos.|Não|Sim|
+|Nome da configuração|Detalhes|
+|----------------|----|
+|**Permitir copiar e colar**|Permitir a funcionalidade copiar e colar nos dispositivos.|
 
 ### Configurações para URLs permitidas e bloqueadas
 Na lista de **Aplicativos permitidos e bloqueados**, especifique uma lista de aplicativos que você deseja permitir ou bloquear usando as seguintes informações:
@@ -171,6 +171,6 @@ Na caixa de diálogo **Adicionar ou Editar Configuração de OMA-URI**, especifi
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
