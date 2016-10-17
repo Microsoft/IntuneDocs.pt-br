@@ -4,7 +4,7 @@ description: "As políticas de gerenciamento de aplicativos móveis no Microsoft
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ As políticas de gerenciamento de aplicativos móveis dão suporte a:
 
 -   Dispositivos que executam o Android 4 e posterior.
 
--   Dispositivos que executam o iOS 7 e posterior.
+-   Dispositivos que executam o iOS 8.0 e posterior.
 
 > [!TIP]
 > Políticas de gerenciamento de aplicativos móveis dão suporte a dispositivos registrados com o Intune.
@@ -112,7 +112,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
 
     -   **Política de gerenciamento de aplicativos móveis (Android 4 e posterior)**
 
-    -   **Política de gerenciamento de aplicativos móveis (iOS 7 e posterior)**
+    -   **Política de Gerenciamento de Aplicativo Móvel (iOS 8.0 e posterior)**
 
     É possível usar as configurações recomendadas ou personalizá-las. Para obter mais detalhes, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune).
 
@@ -134,7 +134,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
     |**Exigir conformidade do dispositivo com a política corporativa para acesso**|Essa configuração permite que o aplicativo seja usado somente quando o dispositivo não estiver desbloqueado ou modificado.|
     |**Verificar novamente os requisitos de acesso após (minutos)**|No campo **Tempo Limite**, especifique o período de tempo antes que os requisitos de acesso para o aplicativo sejam verificados novamente após o aplicativo ser aberto.|
     |**Período de cortesia offline**|Se o dispositivo estiver offline, especifique o período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente.|
-    |**Criptografar dados do aplicativo**|Essa configuração especifica que todos os dados associados ao aplicativo sejam criptografados. Isso inclui dados armazenados externamente, como cartões SD.<br /><br />**Criptografia para iOS**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativo móvel do Intune, os dados são criptografados em repouso por meio da criptografia no nível do dispositivo fornecida pelo iOS. Isso é habilitado por uma política de PIN do dispositivo que é ser definida pelo administrador de TI. Quando um PIN for solicitado, os dados serão criptografados de acordo com as configurações na política de gerenciamento de aplicativos móveis. Conforme indicado na documentação da Apple, [os módulos usados pelo iOS 7 têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Criptografia para Android**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativos móveis do Intune, a Microsoft fornece a criptografia. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo.  O conteúdo no armazenamento do dispositivo sempre será criptografado. O método de criptografia não tem certificação FIPS 140-2.|
+    |**Criptografar dados do aplicativo**|Essa configuração especifica que todos os dados associados ao aplicativo sejam criptografados. Isso inclui dados armazenados externamente, como cartões SD.<br /><br />**Criptografia para iOS**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativo móvel do Intune, os dados são criptografados em repouso por meio da criptografia no nível do dispositivo fornecida pelo iOS. Isso é habilitado por uma política de PIN do dispositivo que é ser definida pelo administrador de TI. Quando um PIN for solicitado, os dados serão criptografados de acordo com as configurações na política de gerenciamento de aplicativos móveis. Conforme indicado na documentação da Apple, [os módulos usados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Criptografia para Android**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativos móveis do Intune, a Microsoft fornece a criptografia. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo.  O conteúdo no armazenamento do dispositivo sempre será criptografado. O método de criptografia não tem certificação FIPS 140-2.|
     |**Bloquear captura de tela** (somente para dispositivos Android)|Essa configuração especifica que as funcionalidades de captura de tela do dispositivo sejam bloqueadas quando alguém estiver usando o aplicativo.|
     
 4. Quando tiver terminado, selecione **Salvar Política**.
@@ -147,8 +147,6 @@ Certifique-se de selecionar a política de gerenciamento de aplicativos móveis 
 Para mais detalhes, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implantar aplicativos no Microsoft Intune).
 
 > [!IMPORTANT]
-> Para dispositivos que executam sistemas operacionais anteriores ao iOS 7.1, as políticas associadas não serão removidas quando o aplicativo for desinstalado.
->
 > Se o dispositivo tiver seu registro no Intune cancelado, as políticas não serão removidas dos aplicativos. Quaisquer aplicativos que tivessem políticas aplicadas manterão as configurações de política após o aplicativo ser desinstalado e reinstalado.
 
 ### O que fazer quando um aplicativo já está implantado em dispositivos
@@ -195,6 +193,6 @@ Em casos em que o dispositivo ou usuário receber duas políticas conflitantes, 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

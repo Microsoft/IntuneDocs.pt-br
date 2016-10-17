@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ Dispositivos registrados com uma conta de gerenciador de registro de dispositivo
   - Não é possível redefinir esses dispositivos no Portal da Empresa.
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
   - Não é possível usar aplicativos VPP (Programa de compra por volume da Apple) devido a requisitos de ID da Apple por usuário para o gerenciamento de aplicativo.
-  - Também não é possível registrá-los com o Apple Configurator ou o Device Enrollment Program da Apple (dispositivos iOS).
+  - (iOS) Também não podem ser registrados com o Apple Configurator ou o DEO (programa de registro de dispositivos) da Apple, mas o DEP ou dispositivos gerenciados pelo Apple Configurator podem ser registrados sem afinidade de usuário.
 
 > [!NOTE]
 > Para implantar aplicativos da empresa em dispositivos gerenciados pelo gerenciador de registro do dispositivo, implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** para a conta de usuário do gerenciador de registro do dispositivo.
@@ -95,6 +95,6 @@ Excluir um gerenciador de registro de dispositivos não afeta os dispositivos re
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
