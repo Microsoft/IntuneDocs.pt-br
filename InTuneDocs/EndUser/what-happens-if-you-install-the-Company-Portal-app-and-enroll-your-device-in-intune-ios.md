@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ Quando o dispositivo é registrado, o administrador de TI pode:
 
 -   Exige que você aceite os termos e condições.
 
--   Habilitar ou desabilitar a câmera no seu dispositivo.
+-   Habilitar ou desabilitar a câmera no seu dispositivo para impedir que você tire fotos de dados confidenciais da empresa.
 
 -   Habilitar ou desabilitar a navegação na Web no seu dispositivo.
 
@@ -91,12 +91,10 @@ Quando o dispositivo é registrado, o administrador de TI pode:
 
 -   Habilitar ou desabilitar a sincronização automática de arquivos durante o modo de roaming no seu dispositivo. Se a sincronização automática de arquivos for permitida, as taxas de roaming poderão ser cobradas.
 
-Para obter as etapas de como registrar o dispositivo, consulte [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrar o dispositivo iOS no Intune) ou [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrar o dispositivo Mac OS X no Intune).
-
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

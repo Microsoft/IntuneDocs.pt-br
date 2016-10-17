@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/8/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 
 ---
@@ -23,16 +23,16 @@ ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
 
 # O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows no Intune?
 
-Quando você instala o aplicativo Portal da Empresa e o utiliza para registrar um dispositivo Windows ou Windows Phone, está habilitando seu administrador de TI para gerenciar seu dispositivo para manter os dados corporativos ou de estudante seguros, como descrito abaixo para dispositivos anteriores ao Windows 10. Para obter informações sobre dispositivos Windows 10, consulte [essa página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Quando você instala o aplicativo Portal da Empresa e o utiliza para registrar um dispositivo Windows ou Windows Phone, está permitindo que o seu administrador de TI gerencie seu dispositivo para manter os dados corporativos ou de estudante seguros, como descrito abaixo para dispositivos anteriores ao Windows 10. Consulte [essa página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) para dispositivos Windows 10.
 
 ## O que acontece com todos os dispositivos Windows após o registro
-Quando você registra seu dispositivo Windows ou Windows Phone no Intune, pode:
+Registre seu dispositivo Windows ou Windows Phone no Intune permite que você:
 
 -   Acessar a rede da empresa, além de seu email e arquivos de trabalho
 
 -   Obter aplicativos da empresa do site do Portal da Empresa (para Windows 7 e Vista, pode obter os aplicativos da empresa apenas do site do Portal da Empresa)
 
--   Configurar automaticamente sua conta de email corporativo ou de estudante
+-   Configure automaticamente sua conta de email corporativo ou de estudante
 
 -   Redefinir seu telefone para configurações de fábrica, caso ele seja perdido ou roubado
 
@@ -40,19 +40,17 @@ Ao registrar seu dispositivo, você permitirá que o seu administrador de TI rea
 
 -   Redefinir o dispositivo de volta para as configurações padrão de fábrica. Essa ação será útil se o dispositivo for perdido ou roubado.
 
--   Remover todos os dados relacionados à empresa e aplicativos de negócios que foram instalados. Suas configurações pessoais e de dados não são removidas.
+-   Remova somente os arquivos relacionados à empresa e aplicativos de negócios. **Suas configurações pessoais e de dados não são removidas.**
 
--   O seu administrador de TI pode obter um inventário de todo software instalado no computador, inclusive o software que você instalou pessoalmente.
+-   O seu administrador de TI ver o software instalado no dispositivo, inclusive o software que você instalou pessoalmente.
 
--   Forçá-lo a ter uma senha ou PIN no dispositivo, o que pode bloquear seu acesso ao dispositivo ou redefinir seu dispositivo para a as configurações padrão do fabricante, o que pode incluir a exclusão de dados se houver muitas tentativas de inserção de senha incorreta.
+-   Definir requisitos do dispositivo, como exigir que você tenha uma senha de dispositivo ou PIN para proteger dados da empresa. O administrador de TI também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo se você tentar muitas vezes.
 
--   Forçar que todos os dados no dispositivo sejam criptografados, o que ajuda a proteger os dados caso o dispositivo seja perdido ou roubado.
+-   Exige a criptografia os dados no dispositivo para ajudar a proteger os dados da empresa, caso o dispositivo seja perdido ou roubado. 
 
 -   Exige que você aceite os termos e condições.
 
--   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. Se você inserir a senha incorreta por muitas vezes seguidas, o seu acesso ao computador poderá ser bloqueado ou todos os dados do disco rígido do seu computador poderão ser excluídos.
-
--   Desabilitar o cartão SD.
+-   Impede que você tire fotos de dados relacionados à empresa.
 
 ## O que acontece com todos os computadores Windows após o registro
 
@@ -60,16 +58,9 @@ Ao registrar seu dispositivo, você permitirá que o seu administrador de TI rea
 
 -  O Intune Endpoint Protection pode ser instalado no computador. Esse é o software que verifica a existência de vírus e malwares.
 
--  O seu administrador de TI pode obter um inventário de todo software instalado no computador, inclusive o software que você instalou pessoalmente.
-
--  Pode ser necessário que você aceite os termos e condições.
-
--  O administrador de TI pode coletar ou excluir os dados do disco rígido do seu computador. O administrador de TI também pode excluir o disco rígido inteiro.
+-  O administrador de TI pode coletar ou excluir os dados do disco rígido do seu computador.
 
 -  O administrador de TI pode instalar aplicativos e atualizações no seu computador.
-
--  O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. Se você inserir a senha incorreta muitas vezes seguidas, o seu acesso ao computador poderá ser bloqueado ou todos os dados do disco rígido do seu computador poderão ser excluídos.
-
 
 ## O que acontece a cada oito horas após o registro de dispositivo
 Aproximadamente a cada oito horas, os dispositivos registrados vão:
@@ -80,15 +71,11 @@ Aproximadamente a cada oito horas, os dispositivos registrados vão:
 
 -   Enviar quaisquer atualizações de inventário de aplicativos da empresa.
 
-Para acessar as etapas para registrar, consulte [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md) (Registrar o dispositivo Windows no Intune). Para saber mais sobre o seu administrador de TI pode ver no seu dispositivo, consulte [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (O que meu administrador de TI pode ver quando registro meu dispositivo no Intune?).
-
 Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
