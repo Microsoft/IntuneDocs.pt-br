@@ -13,8 +13,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
 # Registrar seu dispositivo Windows Phone 8.1 no Intune
 
-Se sua empresa ou escola usa o Microsoft Intune, você pode registrar os dispositivos para obter acesso aos emails, arquivos e outros recursos da empresa. O registro dos dispositivos permite que sua organização mantenha os dados corporativos protegidos. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?). e [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (O que o administrador de TI pode ver ou não no seu dispositivo).
+Se sua empresa ou escola usa o Microsoft Intune, você pode registrar os dispositivos para obter acesso aos emails, arquivos e outros recursos da empresa. Quando você registra os dispositivos, a sua organização pode manter os dados corporativos protegidos. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?). e [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (O que o administrador de TI pode ver ou não no seu dispositivo).
 
 
 Para registrar seu dispositivo Phone 8.1 no Intune, siga as instruções que se aplicam à sua empresa ou escola:
@@ -66,7 +66,7 @@ Registrar seu dispositivo:
 
     ![Tela Configurações de local de trabalho](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Insira informações adicionais, conforme solicitado e, em seguida, toque em **Entrar** para concluir o registro. Agora, você verá a sua conta de local de trabalho listada na página **Configurações** &gt; **Local de Trabalho**.
+7.  Insira informações adicionais conforme o solicitado e, em seguida, toque em **Entrar** para concluir o registro. Agora, você verá a sua conta de local de trabalho listada na página **Configurações** &gt; **Local de Trabalho**.
 
     ![Tela Conta adicionada](./media/WP81-enroll-4-account-added.png)
 
@@ -76,17 +76,16 @@ Registrar seu dispositivo:
 
 2.  Toque em **Adicionar Conta** e entre usando sua conta de trabalho.
 
-3.  Insira informações adicionais conforme solicitado e, em seguida, toque em **Entrar** para concluir o registro.
+3.  Insira informações adicionais conforme o solicitado e, em seguida, toque em **Entrar** para concluir o registro.
 
 4.  Se solicitado a instalar o aplicativo da empresa ou o Hub, verifique se a caixa relevante está marcada e toque em **Concluído**.
 
-Se seu administrador de TI tiver configurado o Portal da Empresa para ser instalado durante o registro, você verá que Portal da Empresa é exibido na lista de aplicativos.
+Se o administrador de TI tiver configurado o Portal da Empresa para ser instalado durante o registro, você o verá na lista de aplicativos.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO3-->
+
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Use o Intune para definir uma ampla variedade de configurações q
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +40,7 @@ Você pode criar e implantar políticas de segurança de dispositivo móvel para
 
 > [!NOTE]
 > Algumas configurações não são aplicáveis a alguns dispositivos. Consulte a tabela abaixo para obter uma lista completa das configurações que você pode definir.
+> A partir de outubro de 2016, o Microsoft Intune preterirá o suporte para aplicativos do Portal da Empresa do Windows 8. O Microsoft Intune também preterirá o suporte para as plataformas Windows Phone 8 e WinRT. Em consequência disso, você não poderá registrar nem atualizar dispositivos Windows Phone 8 ou WinRT. É possível continuar a gerenciar dispositivos Windows Phone 8, WinRT e Windows 8 já registrados. Atualize os dispositivos Windows Phone 8 e Windows 8 para Windows 8.1 e Windows Phone 8.1 e use os aplicativos do Portal da Empresa correspondentes do Windows 8.1 e do Windows Phone 8.1 para continuar a distribuir aplicativos para esses dispositivos sem interrupções.
 
 ## Configurações de segurança
 
@@ -49,7 +50,7 @@ Você pode criar e implantar políticas de segurança de dispositivo móvel para
 |**Tipo de senha necessária**<br /><br />Esta configuração especifica o tipo de senha que será necessário, apenas com caracteres numéricos ou alfanuméricos.|Sim|Sim|Sim|Sim|Não|
 |**Tipo de senha necessária – número mínimo de conjuntos de caracteres**<br /><br />Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. Essa configuração especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. No entanto, para dispositivos iOS, ela especifica o número de caracteres de símbolo que devem ser incluídos na senha.|Sim|Sim|Sim|Sim|Não|
 |**Comprimento mínimo da senha**|Sim|Sim|Sim|Sim|Sim|
-|**Permitir senha simples**<br /><br />Senhas simples incluem '0000' e '1234'.|Não|Não|Sim|Sim|Não|
+|**Permitir senha simples**<br /><br />Senhas simples incluem “0000” e “1234”.|Não|Não|Sim|Sim|Não|
 |**Número de falhas de logon repetidas permitido antes do dispositivo ser apagado**|Sim|Sim|Sim|Sim|Sim|
 |**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Sim|Sim|Sim|Sim|Sim|
 |**Expiração da senha (dias)**|Sim|Sim|Sim|Sim|Sim|
@@ -142,7 +143,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Permitir plug-ins**|Sim|Não|Não|Não|Não|
 |**Permitir script ativo**|Sim|Não|Não|Sim|Sim (apenas Samsung KNOX)|
 |**Permitir aviso de fraude**|Sim|Não|Não|Sim|Não|
-|**Permitir site de intranet para entrada de palavra única**<br /><br />(Esta configuração permite o uso de uma única palavra para direcionar o Internet Explorer a um site – por exemplo, "Bing".)|Sim|Não|Não|Não|Não|
+|**Permitir site de intranet para entrada de palavra única**<br /><br />(Esta configuração permite o uso de uma única palavra para direcionar o Internet Explorer a um site – por exemplo, “Bing”.)|Sim|Não|Não|Não|Não|
 |**Permitir detecção automática de rede intranet**|Sim|Não|Não|Não|Não|
 |**Nível de segurança para Internet**|Sim|Não|Não|Não|Não|
 |**Nível de segurança para a intranet**|Sim|Não|Não|Não|Não|
@@ -212,6 +213,6 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

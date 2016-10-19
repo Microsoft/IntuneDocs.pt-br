@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
-ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: ed8f280de4582863f77e5b0e9cb5dfb2f20159c4
 
 
 ---
@@ -35,7 +35,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 -  **Comprimento mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
 
-- **Qualidade da senha:** habilite essa configuração para configurar os requisitos de senha para dispositivos Android. Escolha:
+- **Qualidade da senha:** essa configuração detecta se os requisitos de senha especificados por você estão configurados no dispositivo. Habilite essa configuração para exigir que os usuários configurem certos requisitos de senha para dispositivos Android. Escolha:
   -   **Biométrico de baixa segurança**
   - **Necessária**
   -   **Ao menos numérico**
@@ -64,7 +64,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 >Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** esteja habilitada.  Você só deverá aplicar esta política de conformidade se não estiver fazendo o sideload de aplicativos Android nos dispositivos.
 
 - **Exigir que a depuração de USB esteja desabilitada (Android 4.2 ou posterior)**: essa configuração especifica se a opção de detecção de depuração de USB no dispositivo de está habilitada.
-- **Exigir que os dispositivos tenham habilitado "Examinar dispositivo contra ameaças à segurança" (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
+- **Exigir que os dispositivos tenham habilitado “Examinar dispositivo contra ameaças à segurança” (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
 - **Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android.  Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser especificada no formato: AAAA-MM-DD.
 - **Requer proteção contra ameaças de dispositivo a ser habilitado**: use esta configuração para fazer a avaliação de risco da solução Consulta MTP como uma condição para conformidade. Selecione o nível máximo de ameaça permitido, que é um dos seguintes:
 
@@ -83,6 +83,6 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

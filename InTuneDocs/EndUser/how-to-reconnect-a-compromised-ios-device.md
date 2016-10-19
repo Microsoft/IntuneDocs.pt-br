@@ -14,17 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c47a7097d86ded8e6f38f0270352a7c432110464
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: 166c0708645d191abaaa73aa3143ca558d64ffd0
 
 
 ---
 
 # Como reconectar um dispositivo iOS comprometido
-Seu administrador de TI detectou que você está usando um dispositivo com jailbreak. "Desbloqueados" significa que as restrições de software, impostas pelo iOS, foram removidas, o que pode comprometer a segurança e pode ser uma ameaça para os recursos da empresa. Quando isso acontece, o dispositivo não pode mais acessar recursos da empresa e deve entrar em contato com o administrador de TI para obter ajuda. Para obter as informações de contato do administrador de TI, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Seu administrador de TI detectou que você está usando um dispositivo com jailbreak. “Com jailbreak” significa que restrições de software impostas pelo iOS foram removidas. A remoção dessas restrições pode comprometer a segurança e ser uma ameaça para os recursos da empresa. 
+
+Quando isso acontece, o dispositivo não pode mais acessar recursos da empresa e deve entrar em contato com o administrador de TI para obter ajuda. Para obter as informações de contato do administrador de TI, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -21,7 +21,7 @@ O registro automático permite que os usuários registrem computadores Windows 1
 
 5. Especifique as URLs para o Intune:
 
-  - **URL de registro do MDM** – use `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` para a URL de registro do MDM.
+  - **URL de Registro do MDM** – Use o valor padrão.
   - **URL de termos de uso do MDM** – use o valor padrão. Essa URL exibe os termos de uso para os usuários ao registrarem dispositivos.
   - **URL de conformidade do MDM** – use o valor padrão. Se um dispositivo estiver fora de conformidade, uma mensagem de **Acesso negado** será exibida com essa URL. A URL aponta para uma página que ajuda os usuários a entender por que o dispositivo não é compatível com a política e como eles podem colocá-lo novamente em conformidade.
 
@@ -34,6 +34,6 @@ O registro automático permite que os usuários registrem computadores Windows 1
 7. Selecione **Salvar**.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

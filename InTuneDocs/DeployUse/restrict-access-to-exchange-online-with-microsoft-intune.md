@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +64,7 @@ O diagrama abaixo ilustra o fluxo usado pelas políticas de acesso condicional p
 ## Suporte para dispositivos móveis
 Você pode restringir o acesso ao email do Exchange Online de **Outlook** e outros **aplicativos que usam autenticação moderna**:-
 
-- Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior
+- Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior e Android for Work
 - iOS 8.0 e posterior
 - Windows Phone 8.1 e posterior
 
@@ -184,7 +184,7 @@ Somente os grupos que são destinados pela política de acesso condicional são 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do Exchange Online**.
 ![Captura de tela da página de política de acesso condicional do Exchange Online](../media/mdm-ca-exo-policy-configuration.png)
 
-2.  Na página **Política do Exchange Online** , selecione **Habilitar política de acesso condicional para o Exchange Online**.
+2.  Na página **Política do Exchange Online**, selecione **Habilitar política de acesso condicional para o Exchange Online**.
 
     > [!NOTE]
     > Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
@@ -207,7 +207,7 @@ Somente os grupos que são destinados pela política de acesso condicional são 
 
 4. Em **Outlook web access (OWA)**, você pode optar por permitir o acesso ao Exchange Online por meio de navegadores com suporte: Safari (iOS) e Chrome (Android). O acesso de outros navegadores será bloqueado. As mesmas restrições de plataforma que você selecionou para acesso de aplicativo para Outlook também se aplicam aqui.
 
-  Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador.  Para isso, os usuários finais devem habilitar a opção "Habilitar Acesso do Navegador" no dispositivo registrado da seguinte maneira:
+  Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador.  Para isso, os usuários finais devem habilitar a opção “Habilitar Acesso do Navegador” no dispositivo registrado da seguinte maneira:
   1.    Inicie o **aplicativo do Portal da Empresa**.
   2.    Vá para a página **Configurações** por meio dos três pontos (...) ou do botão de menu do hardware.
   3.    Pressione o botão **Habilitar Acesso do Navegador**.
@@ -224,6 +224,9 @@ Somente os grupos que são destinados pela política de acesso condicional são 
   ![captura de tela da solicitação de certificado em um dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
 
 5.  Em **aplicativos do Exchange ActiveSync**, você pode optar por bloquear dispositivos incompatíveis de acessar o Exchange Online. Você também pode selecionar se deseja permitir ou bloquear o acesso a email quando o dispositivo não estiver em execução em uma plataforma com suporte. Plataformas com suporte incluem iOS, Android, Windows e Windows Phone.
+
+ Aplicativos do Exchange Active Sync em dispositivos **Android for Work**:
+ -  Em dispositivos Android for Work, há suporte somente para os aplicativos **Gmail** e **Nine Work** no **perfil de trabalho**. Para obter acesso condicional aos dispositivos Android for Work, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e implantá-lo como uma instalação **requerida**. 
 
 6.  Em **Grupos de destino**, selecione os grupos de segurança de usuários do Active Directory aos quais a política será aplicada. Você pode optar por direcionar todos os usuários ou uma lista selecionada de grupos de usuários.
 ![Captura de tela da página da política de acesso condicional do Exchange Online mostrando as opções de grupo de Destino e Isento](../media/IntuneSA5eTargetedExemptedGroups.PNG)
@@ -263,6 +266,6 @@ No painel do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha o b
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

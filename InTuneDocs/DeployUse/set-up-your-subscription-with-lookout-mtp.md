@@ -13,8 +13,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c334b96134040fd124c348c6f2a4b2e5c85886a
-ms.openlocfilehash: d56d9b62a7df3a17b38b7ac01881245c079dc6d4
+ms.sourcegitcommit: de65f43ac83b25fa2dd1dacd2a7807668c2b6e9a
+ms.openlocfilehash: fa3230e1faf24bdbbd7e84a211ca95c1fd0fadfd
 
 
 ---
@@ -57,13 +57,13 @@ Você precisará usar uma conta de usuário com a função de Administrador Glob
 
 ![captura de tela da primeira página de logon do console do Lookout](../media/mtp/lookout_mtp_initial_login.png) Após aceitar e dar o consentimento, você será redirecionado para o Console do Lookout. Logons posteriores, após o registro inicial, podem ser feitos usando a URL: https://aad.lookout.com
 
-Consulte o [artigo de solução de problemas](https://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration)  se você se deparar com problemas de logon.
+Consulte o [artigo de solução de problemas](https://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration) se você se deparar com problemas de logon.
 
 As próximas etapas destacam as tarefas que devem ser realizadas para concluir a configuração do Lookout dentro do [Console do Lookout](https://aad.lookout.com).
 
 ### Etapa 2: Configurar o Conector do Intune
 
-1.  No console do Lookout, vá até o módulo **Sistema**, escolha a guia **Conectores** e selecione **Intune**.
+1.  No console do Lookout, no módulo **Sistema**, escolha a guia **Conectores** e selecione **Intune**.
 
   ![captura de tela do console do Lookout com a guia Conectores aberta e a opção Intune realçada](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -77,6 +77,7 @@ Na opção **Gerenciamento de Registro**, defina um conjunto de usuários cujos 
 Para começar a usar os grupos de registros, primeiro defina um grupo de segurança do Azure AD que representaria um bom conjunto de usuários para registrar na proteção contra ameaças do dispositivo. Após ter criado o grupo no Azure AD, no console do Lookout, vá para a opção **Gerenciamento de Registro** e adicione o(s) **Nome(s) de Exibição** do grupo de segurança do Azure AD para registro.
 
 Quando um usuário estiver em um grupo de registro, qualquer um de seus dispositivos que estiver identificado e tiver suporte no Azure AD estará registrado e qualificado para ativação na proteção contra ameaça do dispositivo Lookout.  Na primeira vez que o usuário abrir o aplicativo Lookout for Work em seu dispositivo com suporte, ele será ativado no Lookout.
+
 ![captura de tela da página de registro do conector do Intune](../media/mtp/lookout-mtp-enrollment.png)
 
 A melhor prática é deixar o padrão (5 minutos) para o incremento de tempo para verificar se há novos dispositivos.
@@ -97,11 +98,16 @@ Na opção **Gerenciamento de Erros**, insira o endereço de email que deve rece
 
 ![captura de tela da página de gerenciamento de erros do conector do Intune](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### Etapa 6: Configurar notificações por email
-Se quiser receber alertas de ameaças por email, entre no [console do Lookout](https://aad.lookout.com) com a conta de usuário que deve receber as notificações. Na guia **Preferências** do módulo **Sistema**, escolha as notificações desejadas e defina-as como **ATIVADO**. Salve as alterações.
+### Etapa 6. Definir configurações de registro
+No módulo **Sistema**, na página **Conectores**, especifique o número de dias antes que um dispositivo seja considerado desconectado.  Dispositivos desconectados são considerados não compatíveis e serão impedidos de acessar seus aplicativos da empresa com base nas políticas de acesso condicional do Intune. Você pode especificar valores entre 1 e 90 dias.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
+
+### Etapa 7: Configurar notificações por email
+Se quiser receber alertas de ameaças por email, entre no [console do Lookout](https://aad.lookout.com) com a conta de usuário que deverá receber as notificações. Na guia **Preferências** do módulo **Sistema**, escolha as notificações desejadas e defina-as como **ATIVADO**. Salve as alterações.
 
 ![captura de tela da página Preferências com a conta de usuário exibida](../media/mtp/lookout-mtp-email-notifications.png) Se quiser deixar de receber notificações por email, defina as notificações como **DESATIVADO** e salve as alterações.
-### Etapa 7: Configurar a classificação das ameaças
+### Etapa 8: Configurar a classificação das ameaças
 A proteção contra ameaça do dispositivo Lookout classifica ameaças móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/en-us/articles/114094130693) têm níveis de risco padrão associados a elas. Eles podem ser alterados a qualquer momento para se adequar aos requisitos da sua empresa.
 
 ![captura de tela da página de política mostrando ameaças e classificações](../media/mtp/lookout-mtp-threat-classification.png)
@@ -116,6 +122,6 @@ Quando a instalação estiver concluída, a proteção contra ameaça do disposi
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 1a41bfd926b1dac88ca8c8cd33483955f1150e34
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 0fbc8fc23ce65987e4694bce0748362d8ce10153
 
 
 ---
@@ -41,7 +41,7 @@ Nestas etapas, você vai configurar uma política de configuração de dispositi
 
 5.  Quando for solicitado para **Selecionar os grupos aos quais você deseja implantar essa política**, selecione **Meus Usuários de Avaliação** na lista e escolha **Adicionar** &gt; **OK**.
 
-Sua política aparece na lista de políticas de configuração e foi implantada no grupo **Meus usuários de avaliação** . Clique duas vezes na política para exibir suas configurações.
+Sua política aparece na lista de políticas de configuração e foi implantada no grupo **Meus usuários de avaliação**. Clique duas vezes na política para exibir suas configurações.
 
 ## Publicar o aplicativo do Skype para dispositivos móveis
 
@@ -54,7 +54,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
 3.  Na página **Antes de começar**, clique em **Avançar**.
 
-4.  Na página **Configuração de software** , em **Selecionar como esse software será disponibilizado para os dispositivos**, selecione **Link externo**.
+4.  Na página **Configuração de software**, em **Selecionar como esse software será disponibilizado para os dispositivos**, selecione **Link externo**.
 
 5.  Insira o link externo para o software em **Especificar a URL** e clique em **Avançar**. Certifique-se de iniciar a URL com **https://**. Para o aplicativo do Skype, use o link abaixo que corresponda à plataforma de dispositivo móvel que você está usando:
 
@@ -62,7 +62,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
     -   **Android:** [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8 ou Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  Na página **Descrição do software**, forneça as informações que deseja que os usuários vejam no Portal da Empresa para o software e clique em **Avançar**. As configurações a seguir estão disponíveis (este exemplo refere-se ao Skype):
 
@@ -76,7 +76,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
     -   **Exibir isto como um aplicativo em destaque e realçá-lo no portal da empresa:** selecione esta opção para exibir o aplicativo em destaque no Portal da Empresa em dispositivos móveis.
 
-    -   **Ícone:**  (Opcional) Escolha se deseja associar um ícone ao software. O tamanho máximo do ícone é de 250 x 250 pixels, mas o tamanho do ícone recomendado é 32 x 32 pixels.
+    -   **Ícone:** (Opcional) Escolha se deseja associar um ícone ao software. O tamanho máximo do ícone é de 250 x 250 pixels, mas o tamanho do ícone recomendado é 32 x 32 pixels.
 
 7.  Na página **Resumo**, verifique as informações do software e, em seguida, escolha **Carregar**. Selecione **Fechar** para sair do assistente.
 
@@ -84,7 +84,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
 9. Na página **Selecionar grupos**, selecione **Meus Usuários de Avaliação** para implantar o software a esse grupo de usuários e escolha **Adicionar** &gt; **Avançar**.
 
-10. Na página **Ação de implantação** , selecione **Instalação disponível** na coluna **Aprovação** de seu grupo.
+10. Na página **Ação de implantação**, selecione **Instalação disponível** na coluna **Aprovação** de seu grupo.
 
 11. Escolha **Concluir**.
 
@@ -99,6 +99,6 @@ Parabéns! Você concluiu a etapa 4 do passo a passo da *avaliação do Microsof
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

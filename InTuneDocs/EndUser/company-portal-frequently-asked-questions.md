@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
 
 
 ---
@@ -25,10 +25,10 @@ ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
 ## O que é o Portal da Empresa e o que você pode fazer com ele?
 O Portal da Empresa do Microsoft Intune fornece acesso a dados e aplicativos corporativos ou de estudante. Você pode obter o Portal da Empresa de duas diferentes maneiras:
 
-- Instalando o aplicativo do Portal da Empresa no seu dispositivo. Você geralmente obtém o aplicativo do Portal da Empresa indo para a loja de aplicativos do dispositivo, mas o administrador de TI também pode instalar o aplicativo do Portal da Empresa para você usando métodos diferentes.
-- Acessando o [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI tiver configurado.
+- Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o administrador de TI também pode instalá-lo para você.
+- Ao acessar o [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI configurou.
 
-Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em um que você pode fazer no outro. Alguns exemplos são:
+Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. A seguir estão algumas tarefas que você pode executar:
 
 - Registrar seus dispositivos
 - Ver o status dos dispositivos
@@ -37,7 +37,7 @@ Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o
 - Redefinir o PIN ou senha
 - Contatar o departamento de TI para obter ajuda
 
-Para ver o que você pode fazer usando o site de Portal da Empresa em vez de usar o aplicativo de Portal da Empresa no seu dispositivo, escolha um dos seguintes links:
+Para ver o que você pode fazer usando o site do Portal da Empresa versus o que você pode fazer no aplicativo do Portal da Empresa no seu dispositivo, escolha um dos seguintes links:
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -45,8 +45,8 @@ Para ver o que você pode fazer usando o site de Portal da Empresa em vez de usa
 - [Windows](using-your-windows-device-with-intune.md)
 - [Site do Portal da Empresa](using-the-intune-company-portal-website.md)
 
-## O que acontece quando eu adiciono um computador ou dispositivo ao Portal da Empresa?
-Quando você adiciona um computador ou dispositivo ao portal da empresa, um software pode ser instalado ou um aplicativo baixado (dependendo do dispositivo).  Você também está concedendo permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
+## O que acontece quando você adiciona um computador ou dispositivo ao Portal da Empresa?
+Quando você adiciona um computador ou dispositivo ao Portal da Empresa, um software pode ser instalado ou um aplicativo baixado (dependendo do dispositivo).  Você também está concedendo permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
 
 Para saber mais sobre o que o administrador de TI pode e não pode ver no seu dispositivo, use o link que corresponde ao tipo de dispositivo que você está usando:
 
@@ -55,27 +55,25 @@ Para saber mais sobre o que o administrador de TI pode e não pode ver no seu di
 - [iOS e Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Que tipo de computadores ou dispositivos posso adicionar ao Portal da Empresa?
+## Que tipo de computadores ou dispositivos você pode adicionar ao Portal da Empresa?
 
--   iPhones, iPads e Mac OS X
+-   Dispositivos iPhones, iPads e Mac OS X
 
 -   Dispositivos móveis Android
 
 -   Dispositivos Windows
-    -   10 Mobile
+    -   Windows 10 Mobile
     -   Windows 10 Desktop
     -   Windows Phone 8.1
     -   Windows 8.1
-    -   Dispositivos Windows RT
-    -   Windows Phone 8
     -   iPhones, iPads e Mac OS X
     -   Dispositivos móveis Android
 
 
-## Posso remover um computador ou dispositivo do Portal da Empresa?
-Sim, você pode remover ou redefinir um computador ou dispositivo do Portal da Empresa. Existe uma diferença entre **remover** e **redefinir**:
+## É possível remover um computador ou dispositivo do Portal da Empresa?
+Você pode remover ou redefinir um computador ou dispositivo do Portal da Empresa. Existe uma diferença entre **remover** e **redefinir**.
 
-Quando você *remover* um computador ou dispositivo, você estará cancelando o registro do seu dispositivo do Intune. Quando você tiver cancelado um registro, não poderá mais acessar o Portal da Empresa por meio desse dispositivo e alguns dados da empresa podem ser removidos do seu dispositivo. Para ver como remover seu dispositivo do Portal da Empresa, escolha um dos seguintes links:
+Quando você *remover* um computador ou dispositivo, você estará cancelando o registro do seu dispositivo do Intune. Uma vez que o registro for cancelado, você não poderá acessar o Portal da Empresa por meio desse dispositivo e alguns dados da empresa podem ser removidos do seu dispositivo. Para ver como remover seu dispositivo do Portal da Empresa, escolha um dos seguintes links:
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
@@ -92,14 +90,14 @@ Para ver como redefinir o dispositivo, escolha um dos seguintes links:
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Redefinir seu dispositivo pelo site do Portal da Empresa](reset-your-device-cpwebsite.md)
 
-## Não vejo todos os meus dispositivos no Portal da Empresa
-Para ver um dispositivo, ele deve ser adicionado ao Portal da Empresa. Navegue até o Portal conforme orientado pelo seu administrador e siga as etapas para seu dispositivo. Além disso, você não verá dispositivos que são de propriedade e gerenciados por sua empresa.
+## Você não vê todos os dispositivos no Portal da Empresa
+Para ver um dispositivo, ele deve ser adicionado ao Portal da Empresa. Acesse o Portal da Empresa conforme orientado pelo administrador e siga as etapas para o seu dispositivo. Além disso, você não verá dispositivos que são de propriedade e gerenciados por sua empresa.
 
 ## Se você tiver dúvidas, entre em contato com o administrador de TI
 Se você precisar de Ajuda, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

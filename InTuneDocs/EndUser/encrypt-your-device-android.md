@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
+ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
+ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 
 ---
@@ -22,14 +22,14 @@ ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 # Criptografar seu dispositivo
 
-Se sua empresa ou organização exigir que você criptografe o dispositivo antes de acessar os arquivos, email ou dados da empresa, siga estas etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigi-los.
+Se sua empresa ou organização pedir que você criptografe o dispositivo Android antes de acessar os arquivos, email ou dados da empresa, siga as etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigi-los.
 
 Se você algum dia cancelar o registro do seu telefone, ele continuará criptografado.
 
 1.  Assegure que um PIN ou senha de bloqueio de tela seja definido para o dispositivo.
 
 2.  Em **Configurações**, clique em **Segurança** &gt; **Criptografar Telefone**.
-    (Em alguns telefones, você precisará clicar em **Armazenamento** &gt; **Criptografia de armazenamento** ou **Armazenamento** &gt; **Tela de bloqueio e segurança** &gt; **Outras configurações de segurança** para encontrar a opção "Criptografar").
+    (Em alguns telefones, você precisará clicar em **Armazenamento** &gt; **Criptografia de armazenamento** ou **Armazenamento** &gt; **Tela de bloqueio e segurança** &gt; **Outras configurações de segurança** para encontrar a opção “Criptografar”).
 
 3.  Siga as instruções apresentadas na tela. Durante a criptografia, seu dispositivo pode ser reiniciado várias vezes.
 
@@ -64,6 +64,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

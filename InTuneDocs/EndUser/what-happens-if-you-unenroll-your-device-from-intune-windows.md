@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # O que acontece quando você cancela o registro do dispositivo Windows no Intune?
 
-Para obter informações adicionais sobre o que acontece use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que você está usando.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 ou Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows RT que executa o Windows 8.1 ou Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Use os links no lado direito desta página, em "Neste artigo", para localizar informações sobre o tipo de dispositivo que você está usando.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Além disso, para Windows 8.1:
 
 -   Talvez você não tenha mais acesso a alguns recursos da empresa, como compartilhamentos de arquivos ou sites internos, no seu dispositivo.
 
-## Windows 10 mobile, Windows Phone 8.1 ou Windows Phone 8
+## Windows 10 Mobile e Windows Phone 8.1
 
 -   O aplicativo Portal da Empresa é desinstalado do dispositivo, o que significa que o dispositivo não aparecerá mais no Portal da Empresa, e você não poderá mais instalar aplicativos do aplicativo Portal da Empresa ou do site Portal da Empresa.
 
@@ -66,7 +62,7 @@ Além disso, para Windows 8.1:
     > [!IMPORTANT]
     > As únicas exceções a isso são as políticas de criptografia, que ainda se aplicarão. Se a política da sua empresa solicitou a criptografia do seu Windows Phone, a única maneira de retirar a criptografia do seu telefone será redefini-lo usando o menu **Configurações** no seu Windows Phone.
 
-## Windows RT que executa o Windows 8.1 ou Windows RT
+## Windows RT executando o Windows 8.1
 
 -   O aplicativo Portal da Empresa é desinstalado do dispositivo, o que significa que o dispositivo não aparecerá mais no Portal da Empresa, e você não poderá mais instalar aplicativos do Portal da Empresa.
 
@@ -93,6 +89,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

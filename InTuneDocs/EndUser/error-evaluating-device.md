@@ -14,22 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: a497a3e9372a89326f31d6eb869e38200ebe6802
+ms.sourcegitcommit: 703878a70227716213f5a25b1b5dfa99fce42ee5
+ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 
 
 ---
 
 
 # Erro ao avaliar o dispositivo
-O dispositivo foi encontrado incompatível com uma ou mais das políticas da empresa e um erro ocorreram durante a avaliação do dispositivo para essa condição.
+O dispositivo foi identificado como fora de conformidade com uma ou mais das políticas da empresa, mas não podemos exibir o erro agora, pois o sistema apresentou um problema ao tentar avaliar o dispositivo.  
 
-Para resolver esse problema, aguarde alguns minutos e, em seguida, toque em **Verificar conformidade**.
-
-Se o problema persistir, contate o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Para resolver esse problema, aguarde alguns minutos e, em seguida, toque em **Verificar conformidade**. Se o problema persistir, contate o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

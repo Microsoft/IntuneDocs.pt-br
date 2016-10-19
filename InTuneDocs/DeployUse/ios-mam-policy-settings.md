@@ -4,7 +4,7 @@ description: "Este tópico descreve as configurações de política de gerenciam
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -76,7 +76,7 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
   -   **Quando o dispositivo está bloqueado (exceto arquivos abertos):** todos os dados de aplicativo associados a essa política ficam criptografados enquanto o dispositivo está bloqueado, exceto para dados nos arquivos que estão abertos no aplicativo no momento.
   -   **Após o dispositivo reiniciar:** todos os dados de aplicativo associados a essa política são criptografados quando o dispositivo é reiniciado, até que o dispositivo seja desbloqueado pela primeira vez.
   -   **Usar configurações do dispositivo:** os dados do aplicativo são criptografados com base nas configurações padrão do dispositivo.
-  Quando você habilita essa configuração, é obrigatório que o usuário final configure e use PIN para acessar seu dispositivo.  Se não houver configuração de PIN, os aplicativos não serão inicializados e o usuário final será solicitado a definir um PIN com uma mensagem: "A empresa exigiu que você habilite primeiro um dispositivo PIN para acessar este aplicativo".
+  Quando você habilita essa configuração, é obrigatório que o usuário final configure e use PIN para acessar seu dispositivo.  Se não houver configuração de PIN, os aplicativos não serão inicializados e o usuário final será solicitado a definir um PIN com uma mensagem: “A empresa exigiu que você habilite primeiro um dispositivo PIN para acessar este aplicativo”.
 
   **Valor padrão - a opção de criptografia não está selecionada.**
 - **Desabilitar sincronização do contato:** escolha **Sim** para impedir que as informações de contato sincronizem com o aplicativo de catálogo de endereço nativo no dispositivo. Se você escolher **Não**, o aplicativo salvará as informações de contato no aplicativo de catálogo de endereço nativo no dispositivo.
@@ -84,6 +84,11 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
   Ao fazer um apagamento seletivo para remover dados da empresa, contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso é aplicável somente ao aplicativo **Microsoft Outlook**.
 
   **Valor padrão = sim**
+  
+- **Desabilitar a impressão:** escolha **Sim** para evitar dados de impressão da empresa dos aplicativos associados à política de MAM.
+
+    **Valor padrão – Sim**
+
 ##  Configurações de política de acesso ao iOS
 O termo **Aplicativos gerenciados por política** é usado para fazer referência a aplicativos configurados com políticas de MAM.
 - **Solicitar PIN para acesso:** escolha **Sim** para exigir que um PIN use aplicativos gerenciados pela política. O usuário será solicitado a configurar isso na primeira vez em que executar o aplicativo no contexto corporativo.
@@ -114,6 +119,6 @@ Em dispositivos iOS, você pode permitir que o usuário se identifique usando a 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

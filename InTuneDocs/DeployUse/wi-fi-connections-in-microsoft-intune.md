@@ -4,7 +4,7 @@ description: "Use perfis de Wi-Fi para ajudar os usuários a se conectar a redes
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ Por exemplo, você pode instalar uma nova rede Wi-Fi chamada **Wi-Fi Contoso** e
 
 1.   Crie um perfil de Wi-Fi contendo as configurações necessárias para conectar à rede sim fio **Wi-Fi Contoso**.
 
-2. Implante o perfil para o grupo de usuários com dispositivos iOS.
+2.   Implante o perfil para o grupo de usuários com dispositivos iOS.
 
 3.   Os usuários encontram a nova rede **Wi-Fi Contoso** na lista de redes sem fio e podem facilmente se conectar a esta rede.
 
@@ -39,6 +39,8 @@ Por exemplo, você pode instalar uma nova rede Wi-Fi chamada **Wi-Fi Contoso** e
 Você pode implantar perfis de Wi-Fi para as seguintes plataformas:
 
 -   Android 4.0 e posterior
+
+-   Android for Work   
 
 -   iOS 8.0 e posterior
 
@@ -52,10 +54,13 @@ Para dispositivos que executam o Windows 8.1 ou o Windows 10 Desktop ou Mobile, 
 
     -   Perfil de Wi-Fi (Android 4 e posterior)
 
+    -   Perfil de Wi-Fi (Android for Work)
+
     -   Perfil de Wi-Fi (iOS 8.0 e posterior)
 
     -   Perfil de Wi-Fi (Mac OS X 10.9 e posterior)
-
+    
+    
     Não há nenhuma configuração recomendada para este tipo de política. Você deve criar uma política personalizada.
 
 3.  Forneça o nome e a descrição do perfil.
@@ -91,7 +96,7 @@ No Windows, você pode usar o utilitário **netsh wlan** para exportar um perfil
 
 3.  Execute o comando `netsh wlan show profiles`, e observe o nome do perfil que você deseja exportar.  Neste exemplo, o nome do perfil é *WiFiName*.
 
-4.  Execute este comando: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Isso criará um arquivo de perfil de Wi-Fi chamado "Wi-Fi-WiFiName.xml” na sua pasta de destino.
+4.  Execute este comando: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Isso criará um arquivo de perfil de Wi-Fi chamado "Wi-Fi-WiFiName.xml" na sua pasta de destino.
 
 ### Importar um perfil de Wi-Fi
 Use **Política de importação Wi-Fi do Windows** para importar um conjunto de configurações de Wi-Fi que podem ser implantadas para os grupos de usuário ou dispositivo necessários.
@@ -122,15 +127,15 @@ Use **Política de importação Wi-Fi do Windows** para importar um conjunto de 
 
 5.  Quando tiver terminado, clique em **Salvar política**.
 
-6.  A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política** .
+6.  A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
 ## Implantar o perfil
 
 Um perfil é um tipo de política e, portanto, use o espaço de trabalho de política para implantá-lo.
 
-1.  No espaço de trabalho **Política** , selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
+1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
 
-2.  Na caixa de diálogo **Gerenciar implantação** :
+2.  Na caixa de diálogo **Gerenciar implantação**:
 
     -   **Para implantar a política** - Selecione um ou mais grupos ao qual você deseja implantar a política, clique **Adicionar** &gt; **OK**.
 
@@ -173,6 +178,6 @@ Saiba como criar um perfil de Wi-Fi com uma chave pré-compartilhada no [Perfil 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

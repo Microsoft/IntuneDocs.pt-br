@@ -14,22 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 63c14e31f9a97d263c59aa6e08883e7f1f205444
+ms.sourcegitcommit: 1e00d2d1e8e46b512eb70c2c594712b9505541ec
+ms.openlocfilehash: 01fce3200a5aa481dde6cd560cbad426592ef381
 
 
 ---
 
 
 # Desativar a coleta de dados de uso da Microsoft
-Para aprimorar seus produtos e serviços, a Microsoft coleta automaticamente dados anônimos sobre o desempenho e a confiabilidade do aplicativo de Portal da Empresa e sobre como ele é usado. Você pode desligar a coleta de dados em seu dispositivo Android usando a configuração de **Dados de Uso** no aplicativo Portal da Empresa. Os administradores de TI não têm controle sobre a coleta desses dados e não podem alterar a seleção dessa configuração.
+Para aprimorar seus produtos e serviços, a Microsoft coleta automaticamente dados anônimos sobre o desempenho e a confiabilidade do aplicativo do Portal da Empresa e sobre como ele é usado. Você pode desligar a coleta de dados em seu dispositivo Android usando a configuração de **Dados de Uso** no aplicativo Portal da Empresa. Os administradores de TI não têm controle sobre a coleta desses dados e não podem alterar a seleção dessa configuração.
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

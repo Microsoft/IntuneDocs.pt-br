@@ -15,14 +15,14 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
+ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
 
 
 ---
 
 # Introdução ao Intune
-O Microsoft Intune é o “braço de gerenciamento” do Microsoft Enterprise Mobility + Security (EMS, anteriormente Enterprise Mobility Suite). A mobilidade corporativa resume-se a capacitar seus funcionários a serem produtivos em todos os dispositivos, ao mesmo tempo que mantêm protegidas as informações de sua organização.  
+O Microsoft Intune é o braço de gerenciamento do Microsoft Enterprise Mobility + Security (EMS, anteriormente Enterprise Mobility Suite). A mobilidade corporativa resume-se a capacitar seus funcionários a serem produtivos em todos os dispositivos, ao mesmo tempo que mantêm protegidas as informações de sua organização.  
 
 O EMS é um pacote integrado completo para a mobilidade corporativa, incluindo produtividade, identidade, controle de acesso, gerenciamento e proteção de dados. Ele fornece a uma maneira eficiente para implantar e operar uma solução de mobilidade em sua organização.  
 
@@ -35,8 +35,8 @@ Os problemas de negócios comuns que o Intune ajuda a resolver incluem:
 * Proteção de sua infraestrutura de colaboração e email local para que ela possa ser acessada por dispositivos móveis e aplicativos na Internet.
 * Proteção de sua infraestrutura do Office 365 e para que ela possa ser acessada de forma segura por dispositivos móveis e aplicativos na Internet.
 * Habilitando sua organização para emitir celulares para os funcionários.
-* Habilitando sua organização para fornecer uso limitado de "dispositivos compartilhados" para os trabalhadores.
-* Habilitando sua organização para implementar uma estratégia de dispositivo pessoal ou "BYOD (Traga seu próprio dispositivo)" segura.
+* Habilitando sua organização para fornecer uso limitado de “dispositivos compartilhados” para os trabalhadores.
+* Habilitando sua organização para implementar uma estratégia de dispositivo pessoal ou “BYOD (Traga seu próprio dispositivo)” segura.
 * Habilitando sua organização para dar suporte a funcionários acessando o Office 365 de dispositivos e aplicativos que você não controla, como um quiosque no corredor de uma feira.
 
 As principais ferramentas que o Intune oferece incluem:
@@ -55,6 +55,6 @@ Em toda esta documentação, vamos explicar como usar as ferramentas que o Intun
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

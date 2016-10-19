@@ -1,6 +1,6 @@
 ---
-title: Enviar erros de registro para o administrador de TI | Microsoft Intune
-description: 
+title: Enviar erros de registro ao seu administrador de TI | Microsoft Intune
+description: Enviar erros de registro ao seu administrador de TI
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,18 +14,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
+ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
+ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
 
 
 ---
 
 
-# Enviar erros de registro para o administrador de TI
+# Enviar erros de registro ao seu administrador de TI
 
-Se receber um erro ao tentar registrar seu dispositivo Android no Intune, você poderá tentar registrar novamente tocando em **Tentar novamente** ou poderá enviar as informações de erro para o administrador de TI em um email tocando em **Enviar Informações**.
+Se houver um erro ao tentar registrar o dispositivo Android no Intune, você pode tentar se registrar novamente tocando em **Tente novamente**. Também é possível enviar as informações de erro ao seu administrador de TI por email tocando em **Enviar informações**.
 
-Um email, endereçado ao seu administrador de TI, é criado automaticamente e contém os logs de que seu administrador de TI precisa para solucionar o problema do seu dispositivo.
+Ao tocar em **Enviar informações**, um email que contém os logs necessários para solucionar o problema do seu dispositivo é criado automaticamente e enviado para o administrador de TI.
 
 Há diferentes maneiras de enviar logs de dados do dispositivo para o administrador de TI para obter ajuda com erros:
 
@@ -34,7 +34,6 @@ Há diferentes maneiras de enviar logs de dados do dispositivo para o administra
 
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
+ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
+ms.openlocfilehash: da1c2da0970d38b410ba67a03f1c302c2b352f27
 
 
 ---
@@ -23,14 +23,12 @@ ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
 
 # O dispositivo iOS não tem a versão de sistema operacional mínima exigida
 
-O dispositivo iOS não atende à versão mínima do sistema operacional exigida pelo seu departamento de TI.  Antes de atualizar seu dispositivo, verifique a versão atual do sistema operacional, tocando em **Configurações** &gt; **Sobre**. Para atualizar o dispositivo para a versão mais recente, toque em **Configurações** &gt; **Geral** &gt; **Atualização de Software**.
+O dispositivo iOS não atende à versão mínima do sistema operacional exigida pelo departamento de TI. Antes de atualizar o dispositivo, verifique a versão atual do sistema operacional escolhendo **Configurações** &gt; **Sobre**. Para atualizar o dispositivo para a versão mais recente, escolha **Configurações** &gt; **Geral** &gt; **Atualização de Software**.
 
 Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

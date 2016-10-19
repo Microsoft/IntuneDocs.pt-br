@@ -4,7 +4,7 @@ description: "As configurações de perfil de email podem ser usadas para defini
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
+ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
+ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
 
 
 ---
@@ -33,13 +33,16 @@ Você pode usar perfis de email para configurar o cliente de email nativo nos se
 -   Windows 10 (para desktop), Windows 10 Mobile e posterior
 -   iOS 8.0 e posterior
 -   Samsung KNOX padrão (4.0 e posterior)
+-   Android for Work
+
+>[!NOTE]
+>O Intune fornece dois perfis de email do Android for Work, um para o aplicativo Gmail e outro para o Nine Work. Esses aplicativos estão disponíveis na loja do Google Play e dão suporte a conexões com o Exchange. Para habilitar a conectividade do email, implante um desses aplicativos de email nos dispositivos dos usuários, e crie e implante o perfil apropriado 
 
 Além de configurar uma conta de email no dispositivo, você pode definir quantos emails sincronizar e, dependendo do tipo de dispositivo, os tipos de conteúdo a serem sincronizados.
+
 >[!NOTE]
 >
 >Se o usuário tiver instalado um perfil de email antes de configurar um perfil pelo Intune, o resultado da implantação do perfil de email do Intune dependerá da plataforma de dispositivo:
-
-[comentário]: <> a construção passiva nos três próximos parágrafos é necessária até que o processo de detecção de duplicidades seja esclarecido pelo PM.
 
 >**iOS**: um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O perfil de email duplicado criado pelo usuário bloqueia a implantação de um perfil criado pelo administrador do Intune. Esse é um problema comum, pois usuários do iOS normalmente criam um perfil de email e, depois, se registram. O portal da empresa informa o usuário de que ele não é compatível devido ao seu perfil de email configurado manualmente e solicita que o usuário remova esse perfil. O usuário deve remover seu perfil de email para que o perfil do Intune possa ser configurado. Para evitar o problema, instrua os usuários a se registrarem antes de instalar um perfil de email e permitirem que o Intune configure o perfil.
 
@@ -48,6 +51,8 @@ Além de configurar uma conta de email no dispositivo, você pode definir quanto
 >**Samsung KNOX**: um perfil de email existente e duplicado é detectado com base no endereço de email e é substituído pelo perfil do Intune. Se o usuário configurar essa conta, ela será substituída novamente pelo perfil do Intune. Observe que isso pode causar confusão para o usuário.
 
 >Como o Samsung KNOX não usa o nome do host para identificar o perfil, é recomendável que você não crie vários perfis de email para usar com o mesmo endereço de email em hosts diferentes, pois eles substituirão uns aos outros.
+
+>**Android for Work**: o perfil do Intune é aplicado somente ao perfil de trabalho do dispositivo e não afeta os perfis de email no perfil do usuário do dispositivo.
 
 
 ## Proteger perfis de email
@@ -76,6 +81,10 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     -   **Perfil de email (Windows Phone 8 e posterior)**
 
     -   **Perfil de email (Windows 10 Desktop e Mobile e posterior)**
+    
+    -   **Perfil de Email (Android for Work – Gmail)**
+
+    -   **Perfil de Email (Android for Work – Nine Work)**
 
     Você só pode criar e implantar uma política de perfil de email personalizado. Configurações recomendadas não estão disponíveis.
 
@@ -89,27 +98,27 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     |**Nome da Conta**|O nome de exibição para a conta de email, como será exibido para os usuários em seus dispositivos.|
     |**Nome de usuário**|Como o nome de usuário da conta de email será obtido. Selecione **Nome de usuário** para um servidor Exchange local ou selecione **Nome UPN** para o Office 365.|
     |**Endereço de email**|Como o endereço de email do usuário em cada dispositivo é gerado. Selecione **Endereço SMTP Primário** para usar o endereço SMTP primário para fazer logon no Exchange ou use **Nome UPN** para usar o nome da entidade completo como o endereço de email.|
-    |**Método de autenticação** (Samsung KNOX e iOS)|Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.|
-    |**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Samsung KNOX e iOS)|Selecione o certificado do protocolo SCEP cliente que você criou anteriormente e que será usado para autenticar a conexão do Exchange. Para obter mais informações sobre como usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado). Essa opção é exibida somente quando o método de autenticação é **Certificados**.|
+    |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.|
+    |**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado do protocolo SCEP cliente que você criou anteriormente e que será usado para autenticar a conexão do Exchange. Para obter mais informações sobre como usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado). Essa opção é exibida somente quando o método de autenticação é **Certificados**.|
     |**Usar S/MIME** (Samsung KNOX e iOS)|Enviar email de saída usando a criptografia de S/MIME.|
     |**Certificado de autenticação** (Samsung KNOX e iOS)|Selecione o certificado de autenticação que será usado para assinar o email de saída. Esta opção é exibida somente quando você seleciona **Usar S/MIME**.|
     |**Número de dias de email para sincronizar**|O número de dias de email que você deseja sincronizar, ou selecione **Ilimitado** para sincronizar todos os emails disponíveis.|
-    |**Agenda de sincronização** (Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda segundo a qual os dispositivos sincronizarão dados do Exchange Server. Você também pode selecionar **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo deve iniciar a sincronização.|
+    |**Agenda de sincronização** (Android for Work, Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda segundo a qual os dispositivos sincronizarão dados do Exchange Server. Você também pode selecionar **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo deve iniciar a sincronização.|
     |**Usar SSL**|Use comunicação SSL (protocolo SSL) ao enviar e receber emails e se comunicar com o Exchange Server. Para dispositivos que executam o Samsung KNOX 4.0 ou posterior, você deve exportar o certificado SSL do Exchange Server e implantá-lo como um Perfil de Certificado Confiável do Android no Intune. O Intune não dará suporte ao acesso a este certificado se ele estiver instalado no Exchange Server por outros meios.|
-    |**Tipo de conteúdo para sincronizar**|Selecione os tipos de conteúdo que você deseja sincronizar com dispositivos.|
+    |**Tipo de sincronização de conteúdo** (todas as plataformas, exceto Gmail do Android for Work)|Selecione os tipos de conteúdo que você deseja sincronizar com dispositivos.|
     |**Permitir que o email seja enviado de aplicativos de terceiros** (somente iOS)|Permita que o usuário selecione este perfil como a conta padrão para enviar email e permitir que aplicativos de terceiros abram o email no aplicativo de email nativo, por exemplo, para anexar arquivos de email.|
     > [!IMPORTANT]
     > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
 
 4.  Quando tiver terminado, clique em **Salvar política**.
 
-A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política** .
+A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
 ## Implantar a política
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
-2.  Na caixa de diálogo **Gerenciar implantação** :
+2.  Na caixa de diálogo **Gerenciar implantação**:
 
     -   **Para implantar a política** – Selecione um ou mais grupos aos quais você deseja implantar a política e selecione **Adicionar** &gt; **OK**.
 
@@ -122,6 +131,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
