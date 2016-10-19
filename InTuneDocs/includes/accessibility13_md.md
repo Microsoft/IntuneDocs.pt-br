@@ -1,5 +1,5 @@
 Se você for deficiente auditivo ou tiver problemas de audição, o acesso completo aos produtos da Microsoft e ao atendimento ao cliente estão disponíveis pelo serviço de telefone de texto (TTY/TDD):
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

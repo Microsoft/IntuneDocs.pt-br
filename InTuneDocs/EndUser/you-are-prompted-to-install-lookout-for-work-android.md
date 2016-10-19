@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ Antes de poder acessar seu trabalho, o administrador de TI exige que você insta
 
     ![abra o Lookout for Work e toque em Ativar](./media/lookout-activate-button-android.png)
 
-4. Toque em **Entre com sua conta corporativa** e digite a conta que você usa para acessar email e arquivos corporativos ou de estudante.
+4. Toque em **Entrar no Azure Active Directory** e digite a conta que você usa para acessar email e arquivos corporativos ou de estudante.
 
-    ![entre com sua conta corporativa ou de estudante](./media/lookout-sign-in-android.png)
+    ![entre com sua conta corporativa ou de estudante](./media/lookout-sign-in-azure-android.png)
 
 5. Selecione a conta que você usa para acessar seus arquivos e email corporativo ou de estudante e toque em **ADICIONAR CONTA**.
 
@@ -78,6 +78,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

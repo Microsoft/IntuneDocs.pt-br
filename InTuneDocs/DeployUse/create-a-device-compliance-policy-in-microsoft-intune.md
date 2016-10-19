@@ -4,7 +4,7 @@ description: "Crie uma política de conformidade para ajudar a proteger os compu
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ A tabela a seguir lista as configurações de política de conformidade e as pla
 -------------
 |Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Exigir uma senha para desbloquear os dispositivos móveis|iOS 6 e posterior|Android 4.0 e posterior <br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior|
-|Permitir senha simples|iOS 6 e posterior|Sem suporte|Windows Phone 8 e posterior|
-|Comprimento mínimo da senha|iOS 6 e posterior| Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior| Windows Phone 8 e posterior<br>Windows 8.1|
-|Tipo de senha necessária|iOS 6 e posterior|Não disponível|Windows Phone 8 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Número mínimo de conjuntos de caracteres|iOS 6 e posterior|Não disponível|Windows Phone 8 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Exigir uma senha para desbloquear os dispositivos móveis|iOS 6 e posterior|Android 4.0 e posterior <br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior|
+|Permitir senha simples|iOS 6 e posterior|Sem suporte|Windows Phone 8.1 e posterior|
+|Comprimento mínimo da senha|iOS 6 e posterior| Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior| Windows Phone 8.1 e posterior<br>Windows 8.1|
+|Tipo de senha necessária|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Número mínimo de conjuntos de caracteres|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Qualidade da senha|Não disponível|Android 4.0 e posterior <br>Samsung KNOX padrão 4.0 e posterior|Não disponível|
-|Minutos de inatividade antes de a senha ser necessária|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
-|Expiração da senha (dias)|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
-|Lembrar de histórico de senha|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
-|Evitar a reutilização de senhas anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Minutos de inatividade antes de a senha ser necessária|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Expiração da senha (dias)|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Lembrar de histórico de senha|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Evitar a reutilização de senhas anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
 |Exigir senha quando o dispositivo retorna de um estado ocioso| Não disponível| Não disponível|Windows 10 Mobile|
-|Exigir criptografia no dispositivo móvel|Não aplicável|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior<br> Windows 8.1|
+|Exigir criptografia no dispositivo móvel|Não aplicável|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br> Windows 8.1|
 |Exigir que os dispositivos sejam relatados como íntegros| Não disponível| Não disponível|Windows <br>Windows 10 Mobile|
 |O dispositivo não deve estar desbloqueado nem pode ter raiz|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Não disponível|
 |A conta de email deve ser gerenciada pelo Intune|iOS 6 e posterior|Não disponível| Não disponível|
 |Selecione o perfil de email que deve ser gerenciado pelo Intune|iOS 6 e posterior|Não disponível| Não disponível|
-|SO mínimo requerido|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior| Windows Phone 8 e posterior<br>Windows 8.1|
-|Versão máxima do SO permitida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8 e posterior<br>Windows 8.1|
+|SO mínimo requerido|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior| Windows Phone 8.1 e posterior<br>Windows 8.1|
+|Versão máxima do SO permitida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows 8.1|
 
 Selecione uma das opções a seguir para saber mais sobre configurações de conformidade com suporte em cada plataforma:
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ Selecione uma das opções a seguir para saber mais sobre configurações de con
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

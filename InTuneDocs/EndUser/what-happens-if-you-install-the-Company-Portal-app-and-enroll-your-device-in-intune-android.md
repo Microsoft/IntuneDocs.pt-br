@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ Ao registrar seu dispositivo Android, você permitirá que o seu administrador d
 
 -   Remover todos os dados relacionados à empresa. Suas configurações pessoais e de dados não são removidas.
 
--   Tenha uma senha ou um PIN no dispositivo, o que pode travá-lo, ou redefina-o para as configurações padrão do fabricante, que pode incluir a exclusão de dados, quando ocorre muitas tentativas erradas para inserir a senha.
+-   Definir requisitos do dispositivo, como exigir que você tenha uma senha de dispositivo ou PIN para proteger dados da empresa. O administrador de TI também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo se você tentar muitas vezes.
 
 -   Exige que você aceite os termos e condições.
 
--   Habilitar ou desabilitar a câmera no seu dispositivo.
+-   Desabilitar a câmera (apenas dispositivos Samsung Knox, não dispositivos Nexus) para impedir que você tire fotos de material de trabalho confidencial que não deve ser compartilhado.
 
--   Forçar a criptografia de todos os dados, inclusive dados corporativos e pessoais, que estão no dispositivo. Essa ação ajudará a proteger os dados caso o dispositivo seja perdido ou roubado.
+-   Requerer que todos os dados no dispositivo sejam criptografados, o que ajuda a proteger os dados caso o dispositivo seja perdido ou roubado.
 
 -   Após o dispositivo ser adicionado ao portal da empresa, aproximadamente a cada 8 horas ele irá:
 
@@ -58,11 +58,8 @@ Ao registrar seu dispositivo Android, você permitirá que o seu administrador d
 Precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
 
 
-### Consulte também
-[Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
