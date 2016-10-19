@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 Este tópico fornece informações sobre a verificação de problemas depois que você configura o MAM (gerenciamento de aplicativos móveis). Esta orientação se aplica a políticas de MAM no Portal do Azure.
 
 ### Verificar sintomas
-Não é provável que os usuários relatem problemas, pois o MAM é uma ferramenta de proteção de dados. Se houver um problema com a configuração de MAM, o usuário terá acesso irrestrito, como teria sem o MAM, e não estará ciente de que há um problema. Por esse motivo, é recomendável que você valide sua configuração de MAM realizando um piloto de suas políticas de MAM com um pequeno grupo de usuários que podem testar deliberadamente as restrições de MAM. 
+Não é provável que os usuários relatem problemas, pois o MAM é uma ferramenta de proteção de dados. Se houver um problema com a configuração de MAM, o usuário terá acesso irrestrito, como teria sem o MAM, e não estará ciente de que há um problema. Por esse motivo, é recomendável que você valide sua configuração de MAM realizando um piloto de suas políticas de MAM com um pequeno grupo de usuários que podem testar deliberadamente as restrições de MAM.
 
 
-### O que verificar 
+### O que verificar
 
 Se o teste mostrar que o comportamento da política de MAM não é esperado, é recomendável que você verifique o seguinte:
 
@@ -40,7 +40,7 @@ Se o teste mostrar que o comportamento da política de MAM não é esperado, é 
 
 2. Escolha um usuário na lista ou procure e escolha um usuário e escolha **Selecionar usuário**. Na parte superior da coluna **Relatórios de aplicativo**, você verá se o usuário está licenciado para MAM. Abaixo disso, você verá se o usuário está licenciado para o O365 e o status do aplicativo para todos os dispositivos do usuário.
 
-![Status de aplicativo para MAM](..\media\ts-mam-use-apps.png) 
+![Status de aplicativo para MAM](..\media\ts-mam-user-apps.png) 
 
 ### O que fazer
 Aqui estão as ações necessárias com base no status do usuário:
@@ -57,6 +57,6 @@ Aqui estão as ações necessárias com base no status do usuário:
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

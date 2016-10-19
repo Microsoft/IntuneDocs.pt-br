@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Se você estiver usando um dispositivo Android, poderá ver uma mensagem de bloq
 
 ![Captura de tela da mensagem de erro e as instruções para remover a conta](../media/AppManagement/Android_SwitchUser.png)
 
-##  Exibindo arquivos de mídia com o aplicativo de compartilhamento do Rights Management
-Para exibir os arquivos AV, PDF e de imagem em dispositivos Android, use o [aplicativo de compartilhamento RMS (Microsoft Rights Management)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+##  Exibindo arquivos de mídia com o aplicativo Proteção de Informações do Azure (anteriormente conhecido como aplicativo de compartilhamento Rights Management)
+Para exibir os arquivos AV, PDF e de imagem em dispositivos Android, use o [aplicativo Proteção de Informações do Azure](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Baixe este aplicativo da Google Play Store.  Depois que o aplicativo é instalado no dispositivo, inicie o aplicativo e autentique com suas credenciais da empresa. Agora, você poderá exibir arquivos desprotegidos e protegidos de outros aplicativos gerenciados por política.
+Baixe este aplicativo da Google Play Store.  
 
 Os tipos de arquivo a seguir têm suporte:
 
 * **Áudio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ aprimorado), AAC ELD (AAC com pouco atraso aprimorado), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Imagem:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**pfile**|**text**|
 |----|----|
-|Pfile é um formato genérico "wrapper" para arquivos protegidos que encapsula o conteúdo criptografado e as licenças do RMS e pode ser usado para proteger qualquer tipo de arquivo.|Arquivos de texto, inclusive XML, CSV etc. podem ser abertos para visualização no aplicativo, mesmo quando eles são protegidos. Tipos de arquivo: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile é um formato genérico “wrapper” para arquivos protegidos que encapsula o conteúdo criptografado e as licenças da Proteção de Informações do Azure e podem ser usadas para proteger qualquer tipo de arquivo.|Arquivos de texto, inclusive XML, CSV etc. podem ser abertos para visualização no aplicativo, mesmo quando eles são protegidos. Tipos de arquivo: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Os dispositivos Android não estão registrados no Intune**
 
-Antes de usar o aplicativo RMS sharing para exibir arquivos de outros aplicativos gerenciados pelo Intune, inicie o aplicativo RMS e autentique com sua conta corporativa.  Quando você faz logon, você verá a seguinte mensagem **somente se você não tiver uma licença do RMS**:
-
-**Autenticação Bem-Sucedida – Agora você pode exibir arquivos corporativos, mas sua organização não está configurada para permitir que você proteja arquivos. Para obter mais detalhes, entre em contato com seu administrador de TI.**
-
-Isso não impede você de usar o aplicativo RMS sharing para exibir arquivos da empresa. Você pode abrir e exibir arquivos da empresa de outros aplicativos gerenciados pelo Intune e as políticas MAM ainda se aplicarão.  O que essa mensagem está dizendo é que você não poderá adicionar os recursos de proteção adicionais que o aplicativo RMS sharing fornece.  Você deve ter uma licença do RMS para adicionar proteção para seus arquivos. Para saber mais sobre os recursos de proteção de arquivo do RMS, consulte [Proteger arquivos em um dispositivo](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) e [Proteger arquivos que você compartilha por email](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Consulte também
@@ -171,6 +165,6 @@ Isso não impede você de usar o aplicativo RMS sharing para exibir arquivos da 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

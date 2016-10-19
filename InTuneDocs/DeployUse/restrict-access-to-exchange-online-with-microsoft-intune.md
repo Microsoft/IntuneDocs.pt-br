@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -26,14 +26,12 @@ Se você tiver um ambiente do Exchange Online Dedicado e precisar descobrir se e
 Para controlar o acesso ao email para Exchange Online ou para seu novo ambiente herdado do Exchange Online dedicado, configure o acesso condicional ao Exchange Online no Intune.
 Para saber mais sobre como o acesso condicional funciona, leia o artigo [Restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir acesso a email, O365 e outros serviços).
 
->[!IMPORTANT]
->O acesso condicional para computadores e dispositivos Windows 10 Mobile com aplicativos usando autenticação moderna atualmente não está disponível para todos os clientes do Intune. Se você já estiver usando esses recursos, você não precisará realizar nenhuma ação. Você pode continuar a usá-los.
-
->Se você não tiver criado políticas de acesso condicional para computadores ou para o Windows 10 Mobile para aplicativos que usam a autenticação moderna e quiser fazer isso, inscreva-se na visualização pública do Azure Active Directory, que inclui o acesso condicional com base em dispositivo para dispositivos gerenciados pelo Intune ou computadores Windows unidos ao domínio. Leia [esta postagem de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) para saber mais.  
 
 **Antes** de poder configurar o acesso condicional, você deve:
 
 -   Ter uma **assinatura do Office 365 que inclui o Exchange Online (como E3)** e os usuários devem ser licenciados para o Exchange Online.
+
+- Ter uma **assinatura do Enterprise Mobility + Security ou do Azure Active Directory Premium** e ter os usuários licenciados para o EMS ou o Azure AD. Para obter mais detalhes, veja a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Considere configurar o **Microsoft Intune Service to Service Connector**, que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Microsoft Exchange Online e ajuda a gerenciar informações de dispositivos por meio do console do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Você não precisa usar o conector para usar políticas de conformidade ou políticas de acesso condicional, mas ele é necessário para executar relatórios que ajudam a avaliar o impacto de acesso condicional.
 
@@ -84,9 +82,7 @@ Você pode restringir o acesso ao **Outlook Web Access (OWA)** no Exchange Onlin
 
 **Navegadores sem suporte serão bloqueados**.
 
-Não há suporte para os aplicativos do OWA para iOS e Android.  Eles devem ser bloqueados por meio de regras de declarações do ADFS.
-
-
+**O aplicativo do OWA para iOS e Android pode ser modificado para não usar autenticação moderna e não tem suporte.  Acesso do aplicativo OWA deve ser bloqueado por meio de regras de declaração do ADFS.**
 
 
 Você pode restringir o acesso ao email do Exchange por meio do **cliente de email do Exchange ActiveSync** interno nas seguintes plataformas:
@@ -101,14 +97,18 @@ Você pode restringir o acesso ao email do Exchange por meio do **cliente de ema
 
 É possível configurar o acesso condicional para PCs que executam aplicativos da área de trabalho do Office para acessar o **Exchange Online** e o **SharePoint Online** para PCs que atendam aos seguintes requisitos:
 
--   O PC deve estar executando o Windows 7.0 ou Windows 8.1.
+-   O PC deve estar executando Windows 7.0, Windows 8.1 ou Windows 10.
 
--   O computador deve estar ingressado no domínio ou deve ser compatível com as regras de políticas de conformidade.
+  >[!NOTE]
+  > Para usar o acesso condicional em PCs com Windows 10, você deve atualizar esses PCs com a Atualização de Aniversário do Windows 10.
 
-    Para ser considerado em compatível, o computador deve ser registrado no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e estar em conformidade com as políticas.
+  O computador deve estar ingressado no domínio ou deve ser compatível com as regras de políticas de conformidade.
 
-    Para computadores ingressados no domínio, você deve configurá-lo para [registrar o dispositivo automaticamente](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) com o Azure Active Directory.
-    >[!NOTE]
+  Para ser considerado em compatível, o computador deve ser registrado no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e estar em conformidade com as políticas.
+
+  Para computadores ingressados no domínio, você deve configurá-lo para [registrar o dispositivo automaticamente](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) com o Azure Active Directory.
+
+  >[!NOTE]
     >Não há suporte ao acesso condicional em computadores que executam o cliente Intune.
 
 -   [A autenticação moderna do Office 365 deve estar habilitada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
@@ -177,6 +177,10 @@ Somente os grupos que são destinados pela política de acesso condicional são 
 
 ### Etapa 4: Configurar a política de acesso condicional
 
+>[!NOTE]
+> Você também pode criar uma política de acesso condicional no console de gerenciamento do Azure AD. O console de gerenciamento do Azure AD permite que você crie as políticas de acesso condicional de dispositivo do Intune (conhecidas como **política de acesso condicional com base no dispositivo** no Azure AD), além de outras políticas de acesso condicional, como autenticação multifator.  Também é possível definir políticas de acesso condicional para aplicativos empresariais de terceiros, como Salesforce e Box, compatíveis com o Azure AD. Para obter mais detalhes, consulte [Como definir a política de acesso condicional com base no dispositivo do Azure Active Directory para controle de acesso dos aplicativos conectados do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
+
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do Exchange Online**.
 ![Captura de tela da página de política de acesso condicional do Exchange Online](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -196,9 +200,6 @@ Somente os grupos que são destinados pela política de acesso condicional são 
         Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente.  Todas as plataformas precisarão ser registradas e tornam-se compatíveis, exceto para:
         *   Dispositivos Windows precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambos
         * Plataformas sem suporte, como Mac OS.  No entanto, os aplicativos que usam autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
-
-        >[!TIP]
-           Você não encontrará essa opção se você não estiver usando o acesso condicional para computadores.  Em vez disso, use **Plataformas específicas**. O acesso condicional para computadores não está disponível no momento para todos os clientes do Intune.   Você pode encontrar mais informações sobre como obter acesso a esse recurso [nesta postagem de blog ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Plataformas específicas**
 
@@ -262,6 +263,6 @@ No painel do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha o b
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

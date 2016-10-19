@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ Instale o aplicativo do **Portal da Empresa do Intune** da Microsoft Corporation
 ### Windows Phone 8.1
 Os usuários instalam o aplicativo do **Portal da Empresa** da Microsoft Corporation, disponível na loja do Windows Phone, e entram com as credenciais de usuário do Intune adicionadas acima.  Exiba os **Dispositivos registrados** para adicionar seu dispositivo.
 
- ### Windows Phone 8.0
- Os usuários clicam em **configurações do sistema** &gt; **aplicativos da empresa** e entram com as credenciais de usuário do Intune adicionadas acima. O aplicativo Portal da Empresa é implantado em seu telefone.
-
-Se for solicitado um **Endereço do servidor**, digite “manage.microsoft.com”.
-
-
 ## Instalar o aplicativo implantado anteriormente
 Abra o Portal da Empresa no dispositivo móvel, escolha **Aplicativos**e, em seguida, instale o **Microsoft Skype**.
 
-Para saber mais sobre o gerenciamento de dispositivo móvel usando o Intune, consulte [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) (Preparar-se para registrar dispositivos no Microsoft Intune).
+Para saber mais sobre o gerenciamento de dispositivo móvel usando o Intune, consulte [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment) (Prepare-se para registrar dispositivos no Microsoft Intune).
 
 ### Próximas etapas
 Parabéns! Você concluiu a etapa 5 do passo a passo da *avaliação do Microsoft Intune*.
@@ -69,6 +63,6 @@ Parabéns! Você concluiu a etapa 5 do passo a passo da *avaliação do Microsof
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

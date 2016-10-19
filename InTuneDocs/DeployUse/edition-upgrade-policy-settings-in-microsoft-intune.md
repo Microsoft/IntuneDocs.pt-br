@@ -4,7 +4,7 @@ description: "Saiba como atualizar automaticamente os dispositivos Windows 10 pa
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
-ms.openlocfilehash: 45130e3e12968d9df579a7a9d0cade0343b7c165
+ms.sourcegitcommit: f2aa531744dbd0774958e0450819e45e60a91086
+ms.openlocfilehash: 93a632f0f0b8d31149fa1d5fbe15b31d715d20a8
 
 
 ---
@@ -24,6 +24,12 @@ A **Política de atualização de edição** do Microsoft Intune permite atualiz
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile
+
+Há suporte para os seguintes caminhos de atualização:
+- Do Windows 10 Pro para o Windows 10 Enterprise
+- Do Windows 10 Home para o Windows 10 Enterprise
+- Do Windows 10 Mobile para o Windows 10 Mobile Enterprise
+- Do Windows 10 Holographic Pro para o Windows 10 Holographic Enterprise
 
 ## Antes de começar
 Antes de começar a atualizar os dispositivos para a versão mais recente, será necessário o seguinte:
@@ -46,6 +52,6 @@ Antes de começar a atualizar os dispositivos para a versão mais recente, será
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 
