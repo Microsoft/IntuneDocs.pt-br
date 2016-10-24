@@ -3,6 +3,7 @@ title: "Criar uma política de conformidade do dispositivo | Microsoft Intune"
 description: "Crie uma política de conformidade para ajudar a proteger os computadores e dispositivos móveis usados para acessar os dados de sua empresa."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

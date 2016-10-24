@@ -3,6 +3,7 @@ title: "Como os usuários Android podem obter aplicativos | Microsoft Intune"
 description: "Métodos para disponibilizar aplicativos do Android para usuários finais"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

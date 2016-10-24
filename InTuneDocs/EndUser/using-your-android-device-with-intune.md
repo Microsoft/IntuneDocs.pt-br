@@ -3,6 +3,7 @@ title: Usando o dispositivo Android com o Intune | Microsoft Intune
 description: "Lista de links para tarefas que você pode fazer em seu dispositivo móvel Android quando o dispositivo é registrado no Intune"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

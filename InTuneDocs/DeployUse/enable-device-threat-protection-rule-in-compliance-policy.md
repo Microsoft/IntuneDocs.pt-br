@@ -3,6 +3,7 @@ title: "Habilitar a regra de proteção de dispositivo na política de conformid
 description: "Habilite a regra de proteção contra ameaças móveis na política de conformidade do dispositivo."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

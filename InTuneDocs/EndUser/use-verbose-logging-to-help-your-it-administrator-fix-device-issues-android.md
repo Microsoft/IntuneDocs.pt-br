@@ -3,6 +3,7 @@ title: Use o Log Detalhado para ajudar o administrador de TI a corrigir problema
 description: Ajude o administrador de TI a corrigir problemas do dispositivo usando o log detalhado
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

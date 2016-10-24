@@ -3,6 +3,7 @@ title: "Gerenciar configurações de usuário com políticas | Microsoft Intune"
 description: "Use o Intune para criar e implantar políticas que controlam configurações e recursos nos dispositivos gerenciados que você gerencia."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Registrar seu dispositivo Windows no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Windows no Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

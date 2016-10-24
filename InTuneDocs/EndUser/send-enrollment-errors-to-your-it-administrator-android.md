@@ -3,6 +3,7 @@ title: Enviar erros de registro ao seu administrador de TI | Microsoft Intune
 description: Enviar erros de registro ao seu administrador de TI
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

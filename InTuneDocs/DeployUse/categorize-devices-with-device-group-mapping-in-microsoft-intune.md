@@ -3,6 +3,7 @@ title: Categorizar os dispositivos com o mapeamento do grupo de dispositivos | M
 description: "Use o mapeamento do grupo de dispositivos do Microsoft Intune para agrupar dispositivos em categorias que você define para facilitar o gerenciamento desses dispositivos."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

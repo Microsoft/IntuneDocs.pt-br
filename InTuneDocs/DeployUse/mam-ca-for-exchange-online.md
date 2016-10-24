@@ -3,6 +3,7 @@ title: Configurar acesso do aplicativo ao Exchange Online | Microsoft Intune
 description: "Este tópico descreve como você pode configurar uma política de acesso condicional para aplicativos MAM."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

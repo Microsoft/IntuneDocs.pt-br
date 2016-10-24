@@ -3,6 +3,7 @@ title: "Controlar configurações do Windows Hello para Empresas em dispositivos
 description: "Saiba como o Intune é integrado ao Windows Hello para Empresas, um método de entrada alternativo que usa o Active Directory ou uma conta do Azure Active Directory para substituir uma senha, cartão inteligente ou cartão inteligente virtual."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

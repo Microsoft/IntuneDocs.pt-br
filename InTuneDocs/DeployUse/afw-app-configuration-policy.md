@@ -3,6 +3,7 @@ title: "Usar políticas de configuração de aplicativo móvel Android for Work 
 description: "Use políticas de configuração de aplicativo móvel no Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo Android for Work."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Instalar o aplicativo de Portal da Empresa do Microsoft Intune | Microsof
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

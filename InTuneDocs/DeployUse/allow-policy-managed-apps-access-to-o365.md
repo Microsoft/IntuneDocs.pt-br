@@ -3,6 +3,7 @@ title: Acesso condicional baseado em aplicativo ao O365 | Microsoft Intune
 description: "Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

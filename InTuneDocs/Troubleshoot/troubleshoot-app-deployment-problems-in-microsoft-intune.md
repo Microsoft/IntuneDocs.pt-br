@@ -3,6 +3,7 @@ title: "Solucionar problemas de implantação de aplicativo | Microsoft Intune"
 description: "Este tópico ajuda você a solucionar problemas de implantação de aplicativo com o Microsoft Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

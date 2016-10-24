@@ -3,6 +3,7 @@ title: "Criar políticas e publicar um aplicativo para usuários | Microsoft Int
 description: "Como criar políticas e publicar um aplicativo quando você se inscrever para uma avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

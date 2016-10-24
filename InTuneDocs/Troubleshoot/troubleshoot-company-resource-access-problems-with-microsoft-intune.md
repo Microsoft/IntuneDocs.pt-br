@@ -3,6 +3,7 @@ title: Solucionar problemas de acesso ao recurso da empresa | Microsoft Intune
 description: "Códigos de erro e de status neste tópico para ajudá-lo a solucionar problemas de acesso do recurso."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

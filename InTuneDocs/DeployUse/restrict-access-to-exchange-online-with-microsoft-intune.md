@@ -3,6 +3,7 @@ title: Restringir o acesso de email ao Exchange Online | Microsoft Intune
 description: Proteja e controle o acesso ao email da empresa no Exchange Online com acesso condicional.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

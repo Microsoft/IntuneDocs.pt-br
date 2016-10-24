@@ -3,6 +3,7 @@ title: Registrar seu dispositivo Android no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Android no Intune
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

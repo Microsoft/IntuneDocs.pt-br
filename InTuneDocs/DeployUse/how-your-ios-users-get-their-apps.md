@@ -3,6 +3,7 @@ title: "Como os usuários iOS podem obter aplicativos | Microsoft Intune"
 description: "Métodos para disponibilizar aplicativos do iOS para usuários finais"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

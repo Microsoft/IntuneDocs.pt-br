@@ -3,6 +3,7 @@ title: "Encapsular aplicativos iOS com Ferramenta de Disposição do Aplicativo 
 description: "Use as informações neste tópico para aprender a encapsular seus aplicativos iOS sem modificar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

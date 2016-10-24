@@ -3,6 +3,7 @@ title: "Usar grupos para gerenciar usuários e dispositivos | Microsoft Intune"
 description: "Crie e gerencie grupos usando o espaço de trabalho Grupos."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

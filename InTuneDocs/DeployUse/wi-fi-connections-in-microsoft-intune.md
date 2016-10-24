@@ -3,6 +3,7 @@ title: "Conexões Wi-Fi | Microsoft Intune"
 description: "Use perfis de Wi-Fi para ajudar os usuários a se conectar a redes Wi-Fi."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Habilitar o acesso aos recursos da empresa | Microsoft Intune
 description: "Os perfis de Wi-Fi, VPN e email funcionam em conjunto para ajudar seus usuários a obter acesso aos arquivos e recursos necessários."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

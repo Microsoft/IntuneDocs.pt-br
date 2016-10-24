@@ -3,6 +3,7 @@ title: Implantar aplicativos em dispositivos Android for Work | Microsoft Intune
 description: "Use este tópico para sincronizar e implantar aplicativos em dispositivos Android for Work da Google Play for Work Store."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

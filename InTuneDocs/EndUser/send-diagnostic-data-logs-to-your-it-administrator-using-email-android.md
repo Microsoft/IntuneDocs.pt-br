@@ -3,6 +3,7 @@ title: "Enviar logs de dados de diagnóstico para o administrador de TI usando o
 description: Enviar logs de dados usando o email em um dispositivo Android
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Aplicativos permitidos e bloqueados para KNOX | Microsoft Intune
 description: Perfil personalizado para criar uma lista de aplicativos permitidos e bloqueados para KNOX.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

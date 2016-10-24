@@ -3,6 +3,7 @@ title: "Referência da política de configuração | Microsoft Intune"
 description: "Use as informações neste tópico para ajudar na decisão sobre qual política do Microsoft Intune você precisa usar para gerenciar seus dispositivos."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

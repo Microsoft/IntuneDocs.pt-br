@@ -3,6 +3,7 @@ title: "Proteger dados de aplicativo usando políticas MAM | Microsoft Intune"
 description: "Este tópico explica como as políticas de gerenciamento de aplicativo móvel pode ajudar a proteger os dados de sua empresa, evitar perda de dados e manter as informações pessoais e de trabalho separadas."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Como localizar o número de série em meu dispositivo? | Microsoft Intun
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

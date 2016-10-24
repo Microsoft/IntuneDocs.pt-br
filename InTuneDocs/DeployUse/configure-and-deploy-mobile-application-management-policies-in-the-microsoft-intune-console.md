@@ -3,6 +3,7 @@ title: "Configurar políticas do MAM no console do Intune | Microsoft Intune"
 description: "As políticas de gerenciamento de aplicativos móveis no Microsoft Intune permitem que você modifique a funcionalidade dos aplicativos implantados para ajudar a alinhá-los às políticas de segurança e conformidade de sua empresa."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

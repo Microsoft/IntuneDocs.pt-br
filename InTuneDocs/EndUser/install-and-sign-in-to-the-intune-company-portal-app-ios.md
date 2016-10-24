@@ -3,6 +3,7 @@ title: Instalar e entrar no aplicativo Portal da Empresa no Intune | Microsoft I
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

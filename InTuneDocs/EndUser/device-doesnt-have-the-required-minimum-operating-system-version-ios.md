@@ -3,6 +3,7 @@ title: "O dispositivo iOS não tem a versão de sistema operacional mínima exig
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

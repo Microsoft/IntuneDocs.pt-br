@@ -3,6 +3,7 @@ title: "Configurações de política de segurança de dispositivo móvel | Micro
 description: "Use o Intune para definir uma ampla variedade de configurações que você pode implantar em dispositivos gerenciados na sua organização."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

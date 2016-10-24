@@ -3,6 +3,7 @@ title: "Configurações de política de conformidade para o Android for Work | M
 description: "Este tópico descreve as configurações de política de conformidade para dispositivos Android compatíveis com o Android for Work."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Cancelar o registro do seu dispositivo Android do Intune| Microsoft Intun
 description: Descreve como cancelar o registro de um dispositivo Android do Intune
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

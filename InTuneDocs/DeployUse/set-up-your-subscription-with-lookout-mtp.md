@@ -3,6 +3,7 @@ title: Configurar sua assinatura com Lookout | Microsoft Intune
 description: "Este tópico fornece detalhes de como configurar a proteção de ameaça do dispositivo Lookout."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
