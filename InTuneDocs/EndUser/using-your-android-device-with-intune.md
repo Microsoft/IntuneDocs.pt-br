@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -33,6 +33,7 @@ Este artigo inclui links para todas as tarefas que os usuários finais podem rea
 As informações contidas nesta seção ajudam com a instalação do Portal da Empresa do Intune e o registro de dispositivos Android.
 
 - [Registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md)
+- [Criar um perfil de trabalho e registrar seu dispositivo no Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Coisas que você pode fazer quando seu dispositivo está registrado no Intune
@@ -73,6 +74,6 @@ As informações contidas nesta seção ajudam a corrigir problemas que podem oc
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -1,7 +1,7 @@
 ---
 title: Proteger aplicativos e dados | Microsoft Intune
-description: 
-keywords: "Este tópico descreve os vários recursos e funcionalidades do Intune que estão disponíveis para ajudar a proteger os dados e aplicativos da sua empresa."
+description: "Este tópico descreve os vários recursos e funcionalidades do Intune que estão disponíveis para ajudar a proteger os dados e aplicativos da sua empresa."
+keywords: 
 author: karthikaraman
 manager: angrobe
 ms.date: 07/18/2016
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: cf2ef1510aa9dafeddf54855123c826c9ccc2fd0
+ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
+ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
 
 
 ---
@@ -53,6 +53,6 @@ Além de restringir a movimentação dos dados, se um dispositivo for perdido ou
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

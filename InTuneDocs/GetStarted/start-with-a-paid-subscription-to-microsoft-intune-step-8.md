@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
 
 ---
@@ -52,7 +52,7 @@ Na [etapa 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) deste
 
 Abra o Portal da Empresa no dispositivo móvel registrado, escolha **Aplicativos** e, então, instale o **Microsoft Skype**.
 
-Para saber mais sobre o gerenciamento de dispositivo móvel usando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], consulte [Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) (Preparar-se para registrar dispositivos no Microsoft Intune).
+Para saber mais sobre o gerenciamento de dispositivo móvel usando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], consulte [Pré-requisitos para registrar dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
 
 
 ### Próximas etapas
@@ -64,6 +64,6 @@ Parabéns! Você acabou de concluir a última etapa do *Guia de início rápido 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

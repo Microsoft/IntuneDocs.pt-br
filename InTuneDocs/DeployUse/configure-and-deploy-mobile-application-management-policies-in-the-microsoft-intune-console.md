@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +37,7 @@ Diferente de outras políticas do Intune, você não implanta uma política de g
 
 Para aplicar restrições a um aplicativo, o aplicativo deve incorporar o SDK de Aplicativos do Microsoft Intune. Há três métodos de obter esse tipo de aplicativo:
 
--   **Usar um aplicativo gerenciado por política**. Um aplicativo gerenciado por política tem o SDK interno do aplicativo. Para adicionar este tipo de aplicativo, especifique um link para o aplicativo de uma loja de aplicativos, como a iTunes Store ou o Google Play. Nenhum processamento adicional é necessário para este tipo de aplicativo. Para obter mais informações, veja a lista de [aplicativos que você pode usar com políticas de gerenciamento de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Usar um aplicativo gerenciado por política**. Um aplicativo gerenciado por política tem o SDK interno do aplicativo. Para adicionar este tipo de aplicativo, especifique um link para o aplicativo de uma loja de aplicativos, como a iTunes Store ou o Google Play. Nenhum processamento adicional é necessário para este tipo de aplicativo. Para obter mais informações, veja a lista de [aplicativos que você pode usar com políticas de gerenciamento de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Usar um aplicativo encapsulado**. Um aplicativo encapsulado é um aplicativo que é empacotado novamente para incluir o SDK do aplicativo usando a Ferramenta de Disposição do Aplicativo do Microsoft Intune. Normalmente, essa ferramenta é usada para processar aplicativos da empresa criados internamente. Você não pode utilizá-la para processar aplicativos que foram baixados da loja de aplicativos. Para obter mais informações, consulte [Preparar aplicativos iOS para gerenciamento de aplicativos móveis com a Ferramenta de Encapsulamento de Aplicativos do Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Disposição do Aplicativo do Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +136,7 @@ Depois de verificar se o aplicativo foi carregado com êxito, prossiga para a Et
     |**Período de cortesia offline**|Se o dispositivo estiver offline, especifique o período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente.|
     |**Criptografar dados do aplicativo**|Essa configuração especifica que todos os dados associados ao aplicativo sejam criptografados. Isso inclui dados armazenados externamente, como cartões SD.<br /><br />**Criptografia para iOS**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativo móvel do Intune, os dados são criptografados em repouso por meio da criptografia no nível do dispositivo fornecida pelo iOS. Isso é habilitado por uma política de PIN do dispositivo que é ser definida pelo administrador de TI. Quando um PIN for solicitado, os dados serão criptografados de acordo com as configurações na política de gerenciamento de aplicativos móveis. Conforme indicado na documentação da Apple, [os módulos usados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Criptografia para Android**<br /><br />Para aplicativos associados a uma política de gerenciamento de aplicativos móveis do Intune, a Microsoft fornece a criptografia. Os dados são criptografados de forma síncrona durante operações de E/S de arquivo.  O conteúdo no armazenamento do dispositivo sempre será criptografado. O método de criptografia não tem certificação FIPS 140-2.|
     |**Bloquear captura de tela** (somente para dispositivos Android)|Essa configuração especifica que as funcionalidades de captura de tela do dispositivo sejam bloqueadas quando alguém estiver usando o aplicativo.|
-    
+
 4. Quando tiver terminado, selecione **Salvar Política**.
 
 A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.
@@ -193,6 +193,6 @@ Em casos em que o dispositivo ou usuário receber duas políticas conflitantes, 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
