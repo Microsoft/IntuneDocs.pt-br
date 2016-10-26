@@ -2,8 +2,8 @@
 title: "Enviar logs de dados de diagnóstico para o administrador de TI usando um cabo USB | Microsoft Intune"
 description: Enviar logs de dados usando um cabo USB
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
