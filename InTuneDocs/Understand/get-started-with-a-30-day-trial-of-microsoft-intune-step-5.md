@@ -3,6 +3,7 @@ title: "Registrar dispositivos móveis de avaliação | Microsoft Intune"
 description: "Como registrar dispositivos móveis e instalar um aplicativo quando você se inscrever para uma avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

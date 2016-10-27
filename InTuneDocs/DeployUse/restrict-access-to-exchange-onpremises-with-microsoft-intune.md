@@ -3,8 +3,9 @@ title: Restringir o acesso de email ao Exchange local | Microsoft Intune
 description: Proteja e controle o acesso ao email da empresa no Exchange local com acesso condicional.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +65,19 @@ O diagrama a seguir ilustra o fluxo usado por políticas de acesso condicional p
 -   Se o dispositivo não for compatível, será exibida uma mensagem que direciona o usuário para o site do Portal da Empresa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou para o aplicativo Portal da Empresa, em que ele pode encontrar informações sobre o problema e como corrigi-lo.
 
 ## Suporte para dispositivos móveis
--   Windows Phone 8 e posterior
+-   Windows Phone 8.1 e posterior
 
 -   Aplicativo de email nativo no iOS.
 
--   Aplicativo de email nativo no Android 4 ou posterior
+-   Clientes de email EAS, como Gmail no Android 4 ou versões posteriores.
+- Clientes de email EAS com **dispositivos Android for Work:** há suporte somente para os aplicativos **Gmail** e **Nine Work** do **perfil de trabalho** em dispositivos Android for Work. Para obter acesso condicional ao Android for Work, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e implantá-los como uma instalação requerida. 
+
 > [!NOTE]
 > Não há suporte para o aplicativo Microsoft Outlook no Android e iOS.
 
 ## Suporte para computadores
 
-O aplicativo de **Email** do Windows 8 e posterior (quando registrado com [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+O aplicativo de **Email** do Windows 8.1 e versões posteriores (quando registrado com [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Configurar uma política de acesso condicional
 
@@ -123,6 +126,6 @@ O aplicativo de **Email** do Windows 8 e posterior (quando registrado com [!INCL
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

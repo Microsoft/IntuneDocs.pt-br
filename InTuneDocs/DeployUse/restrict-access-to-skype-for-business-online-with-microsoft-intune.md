@@ -3,8 +3,9 @@ title: Restringir o acesso ao Skype for Business Online | Microsoft Intune
 description: Proteja e controle o acesso ao Skype for Business Online com acesso condicional.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -32,7 +33,7 @@ Quando um determinado usuário tenta usar o Skype for Business Online em seu dis
 
 **Antes** de configurar uma política de acesso condicional para o Skype for Business Online, você precisa:
 - Ter uma **assinatura do Skype for Business Online** e atribuir a licença do Skype for Business Online aos usuários.
-- Ter uma **assinatura do Enterprise Mobility + Security ou do Azure Active Directory Premium** e ter os usuários licenciados para o EMS ou o Azure AD. Para obter mais detalhes, veja a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+- Ter uma **assinatura do Enterprise Mobility + Security ou do Azure Active Directory Premium** e ter os usuários licenciados para o EMS ou o Azure AD. Para obter mais detalhes, veja a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -   [Habilitar a autenticação moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para o Skype for Business Online.
 -  Todos os seus usuários finais devem estar usando o **Skype for Business Online**. Se você tiver uma implantação com o Skype for Business Online e o Skype for Business local, a política de acesso condicional não será aplicada aos usuários finais.

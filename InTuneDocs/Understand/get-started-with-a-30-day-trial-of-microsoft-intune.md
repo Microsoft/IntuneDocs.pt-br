@@ -3,6 +3,7 @@ title: "Guia de avaliação do Intune | Microsoft Intune"
 description: "Introdução e pré-requisitos em como configurar uma avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
 
 Neste tópico, você aprenderá o básico para obter uma avaliação do Intune em funcionamento e obterá uma visão geral do serviço para poder avaliar os recursos e as funcionalidades do Intune.
 
-Assista ao seguinte vídeo de demonstração de cinco minutos para ver como é fácil começar com uma avaliação gratuita do Microsoft Intune e gerenciar seus dispositivos. A primeira parte do vídeo menciona um portal foi "desativado", assim, embora você usará um portal diferente, as etapas serão essencialmente as mesmas. Você pode ler mais sobre o portal [aqui](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365).
+Assista ao seguinte vídeo de demonstração de cinco minutos para ver como é fácil começar com uma avaliação gratuita do Microsoft Intune e gerenciar seus dispositivos. A primeira parte do vídeo menciona um portal foi “desativado”, assim, embora você usará um portal diferente, as etapas serão essencialmente as mesmas. Você pode ler mais sobre o portal [aqui](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365).
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
@@ -37,12 +38,12 @@ Antes de começar com o Intune, será necessário o seguinte:
 
 -   Se você tiver uma conta existente do Microsoft Online Services, precisará das credenciais de administrador para essa conta. Se você não tiver esta conta ou se desejar usar este locatário do Intune somente para fins de avaliação, você não precisará de credenciais de administrador.
 
--   Se você gerenciar dispositivos iOS ou Windows Phone com a avaliação do Intune, precisará de certificados (ou chaves) e contas para recuperar esses certificados (consulte a tabela a seguir). Dispositivos Android não precisam de nenhum certificado adicional.
+-   Se você gerenciar dispositivos iOS ou Windows Phone 8.1 com a avaliação do Intune, precisará de certificados (ou chaves) e contas para recuperar esses certificados (consulte a tabela a seguir). Dispositivos Android não precisam de nenhum certificado adicional.
 
     |Plataforma|Requisitos de Certificado|Mais informações|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 e Windows Phone 8 |Nenhum certificado é necessário para usuários do Windows Phone 8.1 que instalam o aplicativo do Portal da Empresa da Loja. Um certificado Symantec é necessário para Windows Phone 8.0 ou para usar o Intune a fim de implantar o aplicativo Portal da Empresa em dispositivos do Windows Phone 8.1.|Estas diretrizes pressupõem que os usuários obtiverem o aplicativo Portal da Empresa pela Loja em um dispositivo Windows Phone 8.1 ou posterior. Para obter informações sobre o suporte ao Windows Phone 8.0, consulte [Set up Windows Phone management with Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune) (Configurar o gerenciamento do Windows Phone com o Microsoft Intune).|
-    |Dispositivos do Windows 10, Windows RT 8.1, Windows RT ou Windows 8.1|Não existem requisitos de certificado para registrar dispositivos do Windows RT e do Windows.|[Instalar o cliente do PC Windows com o Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |Nenhum certificado é necessário para usuários do Windows Phone 8.1 que instalam o aplicativo do Portal da Empresa da Loja. |Estas diretrizes pressupõem que os usuários obtiverem o aplicativo Portal da Empresa pela Loja em um dispositivo Windows Phone 8.1 ou posterior. |
+    |Dispositivos Windows 10, Windows RT 8.1 ou Windows 8.1|Não existem requisitos de certificado para registrar dispositivos do Windows RT e do Windows.|[Instalar o cliente do PC Windows com o Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 ou posterior|Obter um certificado de serviço de Notificação por Push da Apple.|Solicitar um certificado do Apple Push Notification Service da Apple, conforme descrito aqui: [Configurar gerenciamento do iOS e Mac com o Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Etapas para realizar uma avaliação de 30 dias do Intune
@@ -52,7 +53,7 @@ Antes de começar com o Intune, será necessário o seguinte:
 - [Etapa 4: Criar políticas e publicar um aplicativo](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md). As políticas do Intune fornecem configurações que ajudam a controlar as configurações de segurança em dispositivos móveis, a manter as configurações do Firewall do Windows e do Endpoint Protection para computadores e a implantar aplicativos.
 - [Etapa 5: Registrar dispositivos móveis e instalar um aplicativo](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md). Para configurar o gerenciamento de dispositivo móvel com o Intune, você deve definir a autoridade de gerenciamento de dispositivo móvel, habilitar o gerenciamento de plataformas de dispositivo específicas e registrar seus dispositivos com o aplicativo Portal da Empresa. Em seguida, você pode implantar o aplicativo Microsoft Skype que publicou.
 - [Etapa 6: Outras opções e extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md). Escolha como usar alertas, relatórios e outros recursos do Intune para atender às suas necessidades de negócios.
-- [Etapa 7: Próximas etapas](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md). Prepare-se para ir para uma assinatura paga do Intune e aproveitar o benefício "FastTrack Center" do Intune.
+- [Etapa 7: Próximas etapas](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md). Prepare-se para ir para uma assinatura paga do Intune e aproveitar o benefício “FastTrack Center” do Intune.
 
 
 ### Próximas etapas
@@ -66,6 +67,6 @@ Antes de começar com o Intune, será necessário o seguinte:
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

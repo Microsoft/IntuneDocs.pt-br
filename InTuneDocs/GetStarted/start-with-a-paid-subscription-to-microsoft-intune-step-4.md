@@ -3,6 +3,7 @@ title: "Licenças do Microsoft Intune | Microsoft Intune"
 description: "Explica como atribuir licenças a usuários para sua assinatura do Intune"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

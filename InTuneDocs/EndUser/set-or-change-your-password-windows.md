@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ O administrador de TI pode definir mais de um requisito de senha. Por exemplo, a
 
 Se você tiver problemas de configuração de uma senha que atenda a todos os requisitos de senha, entre em contato com seu administrador de TI para obter ajuda.
 
-## Para alterar sua senha em um Windows Phone 8 ou 8.1:
+## Para alterar sua senha no Windows Phone 8.1:
 
 1. Da tela **inicial**, toque em **Configurações** e, em seguida, selecione a **tela de bloqueio**.
 2. Role para baixo até **Senha** e toque em **Alterar senha**.
@@ -34,7 +34,7 @@ Se você tiver problemas de configuração de uma senha que atenda a todos os re
 4. Insira sua nova senha no campo **Nova senha** e, em seguida, digite-a novamente no campo **Confirmar senha**.
 4. Toque em **concluído**.
 
-## Para definir sua senha em um Windows Phone 8 ou 8.1:
+## Para definir sua senha no Windows Phone 8.1:
 
 1. Da tela **inicial**, toque em **Configurações** e, em seguida, selecione a **tela de bloqueio**.
 2. Role para baixo até **Senha** e deslize a barra **Senha** para **Ligado**.
@@ -47,6 +47,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Solução de problemas de registro de dispositivo| Microsoft Intune"
 description: "Sugestões para solução de problemas de registro de dispositivo."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

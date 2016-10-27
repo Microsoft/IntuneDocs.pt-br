@@ -2,9 +2,10 @@
 title: Registrar seu dispositivo Windows 10 no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Windows 10 Mobile ou Desktop no Intune
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune

@@ -1,8 +1,9 @@
 ---
 title: Redefinir (apagar) seu dispositivo Windows perdido ou roubado | Microsoft Intune
-description: 
+description: Redefinir um dispositivo Windows perdido ou roubado
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
+ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
 
 
 ---
@@ -23,11 +24,11 @@ ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 # Redefinir (apagar) o dispositivo perdido ou roubado
 
-Se um telefone que tenha sido registrado no Intune for perdido ou roubado, você poderá redefini-lo para as configurações padrão de fábrica usando o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se um dispositivo registrado no Intune for perdido ou roubado, será possível redefini-lo para as configurações padrão de fábrica usando o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 > [!WARNING]
-> Redefinir um dispositivo para os padrões de fábrica remove suas informações pessoais e de trabalho. Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) (O que acontecerá se você redefinir seu dispositivo usando o Portal da Empresa?).
+> Redefinir um dispositivo para os padrões de fábrica remove suas informações pessoais e de trabalho. Para obter mais informações sobre o que acontece quando você redefine seu dispositivo, consulte [What happens if you reset your device using the Company Portal? (O que acontece se você redefinir seu dispositivo usando o Portal da Empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 
 
 1.  No navegador, abra seu [site do Portal da Empresa](http://portal.manage.microsoft.com) e entre com sua conta corporativa.
@@ -40,8 +41,6 @@ Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu a
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

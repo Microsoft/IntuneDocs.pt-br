@@ -3,19 +3,20 @@ experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Documentação do Intune – documentação do MDM | Microsoft Docs"
+title: "Documentação do Intune | Microsoft Docs"
 description: "Documentação técnica do Microsoft Intune - gerenciamento de dispositivos móveis e aplicativos"
-keywords: "documentação do intune, documentação d MDM, Documentação do Gerenciamento do Dispositivo Móvel, Documentação do Gerenciamento de aplicativos e dispositivos móveis"
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: "documentação do intune, gerenciamento de aplicativos, gerenciamento de dispositivos, documentação do MDM, documentação do MAM"
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
+ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 ---
@@ -24,20 +25,20 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
     <section id="hero-content">
       <h1>Documentação do Intune</h1>
       <h2>Aprenda a implantar e gerenciar o Microsoft Intune, um dispositivo móvel e o serviço de gerenciamento de aplicativo.</h2>
-      <h3>Gerenciar o Intune com o Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Exibir a Documentação do Configuration Manager &rarr;</a></h3>
+      <h3>Quer gerenciar o Intune com o Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Saiba mais sobre o gerenciamento híbrido de dispositivo móvel &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em destaque</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introdução ao Microsoft Intune</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Cenários comuns que dependem do Intune</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Guia de início rápido do Intune</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">Quais são as novidades?</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Maneiras comuns de usar o Intune</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteger dados do aplicativo</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Visão geral dos ciclos de vida do dispositivo e do aplicativo</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteger dados do aplicativo</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">O que dizer a seus usuários finais sobre o Intune</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteger o acesso aos recursos da empresa</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">SDK do Microsoft Intune App para o Guia do Desenvolvedor do iOS</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">Guia do SDK de Aplicativos do Microsoft Intune para Desenvolvedores do Android</a></li>
         </ul>
       </div>
     </section>
@@ -284,6 +285,6 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

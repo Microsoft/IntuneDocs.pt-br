@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
 Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para redefini-la. O site do Portal da Empresa é uma página da Web que você pode usar para gerenciar computadores e dispositivos registrados no Intune e para a maioria das mesmas tarefas que você pode fazer ao usar o aplicativo Portal da Empresa.
 
 > [!NOTE]
-> Você não pode ver o botão Redefinição de Senha no site do Portal da Empresa, dependendo de como o administrador de TI tiver configurado o Intune. Não há suporte para a Redefinição de Senha em dispositivos Windows 8.1 e Windows RT.
+> Você não pode ver o botão Redefinição de Senha no site do Portal da Empresa, dependendo de como o administrador de TI tiver configurado o Intune. Não há suporte para a Redefinição de Senha em dispositivos Windows 8.1.
 
 Para redefinir sua senha:
 
@@ -64,6 +64,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

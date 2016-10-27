@@ -3,6 +3,7 @@ title: Adicionar aplicativos | Microsoft Intune
 description: "Antes de iniciar a implantação de aplicativos com o Intune, reserve um tempo para se familiarizar com os conceitos apresentados neste tópico."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
