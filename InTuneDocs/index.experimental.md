@@ -6,6 +6,7 @@ title: "Documentação do Intune – documentação do MDM | Microsoft Docs"
 description: "Documentação técnica do Microsoft Intune - gerenciamento de dispositivos móveis e aplicativos"
 keywords: "documentação do intune, documentação d MDM, Documentação do Gerenciamento do Dispositivo Móvel, Documentação do Gerenciamento de aplicativos e dispositivos móveis"
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

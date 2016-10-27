@@ -3,18 +3,19 @@ title: "Encapsular aplicativos iOS com Ferramenta de Disposição do Aplicativo 
 description: "Use as informações neste tópico para aprender a encapsular seus aplicativos iOS sem modificar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
-ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
+ms.sourcegitcommit: c67a5042fd177a4c5bd897092e84281db0977f5e
+ms.openlocfilehash: 2c187b61b8fe25b2870d0cbc62f8352494583fc2
 
 
 ---
@@ -22,69 +23,98 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 # Preparar aplicativos iOS para gerenciamento de aplicativos móveis com a Ferramenta de Encapsulamento de Aplicativos do Intune
 Use a **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune para iOS** para modificar o comportamento de aplicativos iOS internamente restringindo as funcionalidades do aplicativo sem modificar seu código.
 
-A ferramenta é um aplicativo de linha de comando do Mac OS que cria um "wrapper" em torno de um aplicativo. Após um aplicativo ser processado, você pode alterar sua funcionalidade usando [políticas de gerenciamento de aplicativo móvel](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) que você configurar.
+A ferramenta é um aplicativo de linha de comando do Mac OS que cria um "wrapper" em torno de um aplicativo. Depois que um aplicativo for processado, você poderá alterar sua funcionalidade usando as [políticas de gerenciamento de aplicativo móvel](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) do Intune que você configurar.
 
-Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS - Português (Brasil)](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
+Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS - Português (Brasil)](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
-## Etapa 1: Cumprir os pré-requisitos para usar a ferramenta de encapsulamento de aplicativos
+
+
+## Etapa 1. Cumprir os pré-requisitos para usar a ferramenta de encapsulamento de aplicativo
 Leia [esta postagem de blog](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para saber mais sobre os pré-requisitos e como defini-los.
 
 |Requisito|Mais informações|
 |---------------|--------------------------------|
-|Sistema operacional e conjunto de ferramentas com suporte|Você deve executar a ferramenta de encapsulamento de aplicativo em um computador Mac que execute o OS X 10.8.5 ou posterior e que tenha a versão 5 do conjunto de ferramentas XCode ou posterior instalada.|
+|Sistema operacional e conjunto de ferramentas com suporte|Você deve executar a ferramenta de disposição de aplicativo em um computador macOS que execute o OS X 10.8.5 ou posterior e que tenha a versão 5 do conjunto de ferramentas XCode ou posterior instalada.|
 |Certificado de autenticação e perfil de provisionamento|Você precisa ter um perfil de provisionamento e um certificado de autenticação da Apple. Consulte sua [Apple developer documentation (Documentação para desenvolvedores da Apple)](https://developer.apple.com/).|
-|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo|Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor de software independente). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 7.1 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte sua documentação para desenvolvedor da Apple. O aplicativo deve ter a extensão de formato **.app**ou **.ipa**.|
+|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo|Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor de software independente). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 8.0 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte sua documentação para desenvolvedor da Apple. O aplicativo deve ter a extensão de formato **.app**ou **.ipa**.|
 |Aplicativos que a ferramenta de encapsulamento não pode processar|Aplicativos criptografados, não assinados e com atributos de arquivo estendido.|
-|Aplicativos que usam a Informações para aplicativos que usam a ADAL (Biblioteca do Active Directory do Azure)|Se seu aplicativo usar ADAL, o aplicativo deverá incorporar uma versão da ADAL maior ou igual à 1.0.2 e o desenvolvedor deve conceder ao aplicativo acesso ao recurso de Gerenciamento de Aplicativos Móveis do Intune.<br /><br />Consulte as [Informações para aplicativos que usam a Biblioteca do Azure Active Directory](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) neste artigo para ver mais detalhes sobre como usar o ADAL.|
 |Direitos de configuração para seu aplicativo|Você deve definir direitos, que concedem ao aplicativo permissões adicionais e recursos além daqueles normalmente concedidos, antes de você encapsular o aplicativo. Consulte [Configurando direitos de aplicativo](#setting-app-entitlements) para obter instruções.|
 
-## Etapa 2: Instalar a ferramenta de encapsulamento de aplicativos
+## Etapa 2. Instalar a ferramenta de encapsulamento de aplicativos
 
-1.  Na página da **Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune para iOS** no [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=45218), baixe o arquivo de instalação da ferramenta de encapsulamento do aplicativo para um computador Mac.
+1.  Do **repositório hospedado em GitHub** da [ferramenta de encapsulamento de aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), baixe os arquivos localmente para a ferramenta de encapsulamento de aplicativo em um computador macOS.
 
-2.  No computador Mac, clique duas vezes no arquivo de instalação **Microsoft Intune App Wrapping Tool for iOS.dmg**.
+2.  Clique duas vezes no arquivo de instalação **Microsoft Intune App Wrapping Tool for iOS.dmg**. Será exibida uma janela com o EULA (Contrato de Licença de Usuário Final). Leia o documento atentamente.
 
-3.  Escolha em **Concordo** para aceitar o EULA (Contrato de licença de usuário final). O instalador é montado e exibido no computador Mac.
+3. Escolha **Concordo** para aceitar o EULA, que monta o pacote em seu computador.
 
-4.  Abra o instalador e copie os arquivos exibidos em uma nova pasta no computador. Agora, você pode desconectar a unidade montada do instalador.
+4.  Abra o pacote **IntuneMAMPackager** e salve os arquivos em uma pasta local no computador macOS. Agora, você está pronto para executar a ferramenta de encapsulamento de aplicativo.
 
-    Agora, você está pronto para executar a ferramenta de encapsulamento de aplicativo.
+## Etapa 3. Executar a ferramenta de encapsulamento de aplicativo
+* No computador macOS, abra uma janela de Terminal e navegue até a pasta em que você salvou os arquivos da ferramenta de encapsulamento de aplicativo. A ferramenta executável se chama **IntuneMAMPackager** e está localizada em **IntuneMAMPackager/conteúdo/MacOS**. Você precisará executar o comando da seguinte maneira:
 
-## Etapa 3: Executar a ferramenta de encapsulamento de aplicativos
+    ```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 
-1.  No computador Mac, abra uma janela de Terminal e navegue até a pasta em que você salvou os arquivos. Como o executável fica dentro do pacote, você precisará executar o comando da seguinte maneira:
-```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
-```
+    ```
+
     > [!NOTE]
-    > Some parameters are optional as shown in the table below.
+    > Alguns parâmetros são opcionais, conforme mostrado na tabela a seguir.
 
-    **Example:** The following example command runs the app wrapping tool on an app named **MyApp.ipa**. A provisioning profile and SHA-1 hash are specified. The processed app is created and stored in the **/users/myadmin/Documents** on the Mac computer.
+    **Exemplo:** o comando de exemplo a seguir executa a ferramenta de encapsulamento de aplicativo em um aplicativo chamado **MyApp.ipa**. Um perfil de provisionamento e o hash SHA-1 são especificados. O aplicativo processado é criado, nomeado como **MyApp_Wrapped.ipa** e armazenado na pasta da Área de Trabalho do usuário.
 
     ```
-    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB –a 20e1cd0d-268e-4308-9583-02ae97dd353e –r https://contoso/ -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
     ```
-    You can use the following command line properties with the app wrapping tool:
+    Você pode usar as seguintes propriedades de linha de comando com a ferramenta de encapsulamento de aplicativo:
 
-|Propriedade|Mais informações|
+    |Propriedade|Como usá-lo|
   |------------|--------------------|
-  |**-h**|Exibe as propriedades de linha de comando disponíveis para a ferramenta de encapsulamento de aplicativo.|
-  |**-i**|Especifica o caminho e o nome do arquivo do aplicativo de entrada.|
-  |**-o**|Especifica o caminho no qual salvar o aplicativo processado.|
-  |**-p**|Especifica o caminho para o perfil de provisionamento para aplicativos iOS.|
-  |**-c**|Especifica o hash SHA1 do certificado de autenticação.|
-  |**-a**|ID do cliente do aplicativo de entrada (no formato GUID) se o aplicativo usar as Bibliotecas do Active Directory do Azure (opcional).|
-  |**-r**|Redirecione o URI do aplicativo de entrada se o aplicativo usar as Bibliotecas do Active Directory do Azure (opcional).|
-  |**-v**|Mensagens detalhadas de saída para o console (opcional).|
+  |**-i**|`<Path of the input native iOS application file>`. O arquivo deve terminar em .app ou .ipa. |
+  |**-o**|`<Path of the wrapped output application>` |
+  |**-p**|`<Path of your provisioning profile for iOS apps>`|
+  |**-c**|`<SHA1 hash of the signing certificate>`|
+    |-h|Exibe as informações de uso detalhadas das propriedades de linha de comando disponíveis para a ferramenta de encapsulamento de aplicativo.|
+  |-v|(Opcional, mas útil) Produz mensagens detalhadas no console.|
+  |-e | (Opcional) O uso desse sinalizador com a ferramenta de encapsulamento de aplicativo remove direitos ausentes conforme ele processa o aplicativo. Confira a seção "Definindo direitos de aplicativo" para obter mais detalhes.|
+  |-xe| (Opcional) Imprime informações sobre as extensões do iOS no aplicativo e quais direitos são necessários para usá-los. Confira a seção "Definindo direitos de aplicativo" para obter mais detalhes. |
+  |-x| (Opcional) `<An array of paths to extension provisioning profiles>`. Use esta opção se seu aplicativo precisar de perfis de provisionamento de extensão.|
+  |-f |(Opcional) `<Path to a plist file specifying arguments.>` Use este sinalizador na frente do arquivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se você optar por usar o modelo plist para especificar o restante das propriedades IntuneMAMPackager: -i, -s, -p, etc. Confira a seção "Usar um plist para argumentos de entrada" para obter mais detalhes. |
+  |-b|(Opcional) Use -b sem um argumento se você quiser que o aplicativo de saída encapsulado tenha a mesma versão do pacote que o aplicativo de entrada (não recomendado). <br/><br/> Use `-b <custom bundle version>` se você quiser que o aplicativo encapsulado tenha um CFBundleVersion personalizado. Se você optar por especificar um CFBundleVersion personalizado, recomendamos que incremente o CFBundleVersion do aplicativo nativo pelo componente menos significativo, por exemplo, 1.0.0 -> 1.0.1. |
 
-2. Após a conclusão do processamento, a mensagem **O aplicativo foi encapsulado com êxito** será exibida.
+
+###Use um plist para argumentos de entrada
+Uma maneira fácil de executar a ferramenta de disposição de aplicativo é colocar todos os argumentos de comando em um arquivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html). Plist é um formato de arquivo semelhante ao XML que podemos usar para os argumentos de linha de comando usando uma interface de formulário de entrada.
+
+Na pasta **IntuneMAMPackager/Contents/MacOS**, abra `Parameters.plist`, um modelo plist em branco, com um editor de texto ou Xcode. Insira seus argumentos para as chaves a seguir:
+
+| Chave plist |  Valor padrão| Anotações |
+|------------------|--------------|-----|
+| Caminho do pacote de aplicativos de entrada  |vazio| Mesmo que -i. |
+| Caminho do pacote de aplicativos de saída |vazio| Mesmo que -o.|
+| Caminho do perfil de provisionamento |vazio| Mesmo que -p. |
+| Hash de certificado SHA-1 |vazio| Mesmo que -c. |
+| Modo detalhado habilitado |false| Mesmo que -v. |
+| Remover direitos ausentes | false| Mesmo que -c.|
+| Impedir o build padrão |false | Equivalente a usar -b sem argumentos. |
+|Compilar substituição da cadeia de caracteres | vazio| O CFBundleVersion personalizado do aplicativo de saída encapsulado |
+|Caminhos do perfil de provisionamento de extensão | vazio| Uma matriz de perfis de provisionamento de extensão para o aplicativo.
+  
+
+Por fim, execute o IntuneMAMPackager com o plist como o único argumento:
+
+```
+./IntuneMAMPackager –f Parameters.plist
+```
+
+* Após a conclusão do processamento, a mensagem “**O aplicativo foi encapsulado com êxito**” será exibida.
 
     Se ocorrer um erro, consulte [Mensagens de erro](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) para obter ajuda.
 
-3.  O aplicativo encapsulado é salvo na pasta de saída especificada anteriormente. Agora, você pode carregar o aplicativo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e associá-lo a uma política de gerenciamento de aplicativos móveis.
+*   O aplicativo encapsulado é salvo na pasta de saída especificada anteriormente. Agora, você pode carregar o aplicativo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e associá-lo a uma política de gerenciamento de aplicativos móveis.
 
     > [!IMPORTANT]
-    > Você deve carregar o aplicativo como um novo aplicativo. Você não pode atualizar uma versão mais antiga, não encapsulada do aplicativo.
+    > Ao carregar um aplicativo encapsulado, você poderá tentar atualizar uma versão mais antiga do aplicativo se uma versão mais antiga (encapsulada ou nativa) já tiver sido implantada no Intune. Se houver um erro, carregue o aplicativo como um novo aplicativo e exclua a versão mais antiga.
 
     Agora você pode implantar o aplicativo em seus grupos [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], e o aplicativo será executado no dispositivo usando as restrições de aplicativo que você especificar.
 
@@ -92,7 +122,7 @@ Leia [esta postagem de blog](http://social.technet.microsoft.com/wiki/contents/a
 Use as seguintes informações para solucionar problemas com a ferramenta de encapsulamento de aplicativo.
 
 ### Mensagens de erro
-Se a ferramenta de encapsulamento de aplicativos não for concluída com êxito, uma das seguintes mensagens de erro será exibida:
+Se a ferramenta de disposição de aplicativos não for concluída com êxito, uma das seguintes mensagens de erro será exibida no console:
 
 |Mensagem de erro|Mais informações|
 |-----------------|--------------------|
@@ -104,20 +134,18 @@ Se a ferramenta de encapsulamento de aplicativos não for concluída com êxito,
 |O arquivo de perfil de provisionamento de entrada especificado não foi encontrado. Especifique um arquivo de perfil de provisionamento de entrada válido.|Certifique-se de que o caminho para o arquivo de provisionamento de entrada é válido e de que o arquivo especificado existe.|
 |A pasta do aplicativo de saída especificada não foi encontrada. Especifique um caminho válido para o aplicativo de saída.|Certifique-se de que o caminho de saída especificado é válido e existe.|
 |O aplicativo de saída não tem a extensão .ipa.|Somente aplicativos com as extensões **.app** e **.ipa** são aceitos pelo a ferramenta de encapsulamento de aplicativo. Verifique se que o arquivo de saída tem uma extensão válida.|
-|Um certificado de autenticação inválido foi especificado. Especifique um certificado de autenticação válido da Apple.|Verifique se que você baixou o certificado de autenticação correto do portal do desenvolvedor da Apple. O certificado também pode ter expirado. Se o seu perfil de provisionamento e certificado da Apple puderem ser usados para assinar corretamente um aplicativo no Xcode, eles são válidos para a ferramenta de encapsulamento de aplicativo.|
+|Um certificado de autenticação inválido foi especificado. Especifique um certificado de autenticação válido da Apple.|Verifique se que você baixou o certificado de autenticação correto do portal do desenvolvedor da Apple. Seu certificado pode ter expirado ou talvez não tenha uma chave pública ou privada. Se o seu perfil de provisionamento e certificado da Apple puderem ser usados para assinar corretamente um aplicativo no Xcode, eles são válidos para a ferramenta de encapsulamento de aplicativo.|
 |O aplicativo de entrada especificado é inválido. Especifique um aplicativo válido.|Verifique se que você tem um aplicativo iOS válido que foi compilado como um arquivo .app ou .ipa.|
-|O aplicativo de entrada especificado está criptografado. Especifique um aplicativo não criptografado válido.|A ferramenta de encapsulamento de aplicativo não dá suporte a aplicativos criptografados. Especifique um aplicativo sem criptografia.|
+|O aplicativo de entrada especificado está criptografado. Especifique um aplicativo não criptografado válido.|A ferramenta de encapsulamento de aplicativo não dá suporte a aplicativos criptografados. Forneça um aplicativo sem criptografia.|
 |O aplicativo de entrada especificado não está no formato PIE (Position Independent Executable). Especifique um aplicativo válido no formato PIE.|Aplicativos PIE (Position Independent Executable) podem ser carregados em um endereço de memória aleatório quando executados, o que pode ter benefícios de segurança. Para obter mais informações, consulte sua documentação para desenvolvedores da Apple.|
 |O aplicativo de entrada especificado já foi encapsulado. Especifique um aplicativo não encapsulado válido.|Você não pode processar um aplicativo que já foi processado pela ferramenta. Se você quiser processar um aplicativo novamente, execute a ferramenta usando a versão original do aplicativo.|
 |O aplicativo de entrada especificado não está assinado. Especifique um aplicativo assinado válido.|A ferramenta de encapsulamento de aplicativo requer que os aplicativos sejam assinados. Consulte a documentação do desenvolvedor para saber como assinar um aplicativo encapsulado.|
 |O aplicativo de entrada especificado deve estar no formato .ipa ou .app.|Somente as extensões .app e .ipa são aceitas pela ferramenta de encapsulamento de aplicativo. Verifique se o arquivo de entrada tem uma extensão válida e foi compilado como um arquivo .app ou .ipa.|
 |O aplicativo de entrada especificado já foi encapsulado e está na versão mais recente de modelo de política.|A ferramenta de encapsulamento de aplicativo não encapsula novamente aplicativo existente com a versão mais recente do modelo de política.|
-|A ID de Cliente do Active Directory do Azure determinada não é um GUID bem formado. Especifique uma ID de cliente válida.|Ao usar o parâmetro de ID do Cliente, verifique se você forneceu uma ID de Cliente válida no formato GUID.|
-|A URI de resposta do Active Directory do Azure determinada não é um URI bem formado. Especifique uma URI de resposta válida.|Ao usar a propriedade de linha de comando de URI de resposta, certifique-se de que você forneceu uma URI de resposta válida.|
-|AVISO: você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Verifique se você especificou um hash SHA (usando a propriedade de linha de comando **–c** ).|
+|AVISO: você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Verifique se você especificou um hash SHA1 válido seguindo a propriedade de linha de comando **–c**. |
 
 ### Arquivos de log para a ferramenta de encapsulamento de aplicativo
-Aplicativos que foram encapsulados usando a ferramenta de encapsulamento de aplicativo geram logs que são gravados no console do dispositivo de cliente do iOS. Essas informações são úteis em situações em que você tiver problemas com o aplicativo e precisar diagnosticar se o problema está relacionado à ferramenta de encapsulamento de aplicativo. Para recuperar as informações, execute as seguintes etapas:
+Aplicativos que foram encapsulados usando a ferramenta de encapsulamento de aplicativo geram logs que são gravados no console do dispositivo de cliente do iOS. Essas informações são úteis quando você tiver problemas com o aplicativo e precisar diagnosticar se o problema está relacionado à ferramenta de encapsulamento de aplicativo. Para recuperar as informações, execute as seguintes etapas:
 
 1.  Reproduza o problema executando o aplicativo.
 
@@ -133,65 +161,19 @@ Aplicativos que foram encapsulados usando a ferramenta de encapsulamento de apli
     > [!NOTE]
     > No arquivo de log, o item "build version" representa a versão da compilação do Xcode.
 
-    Aplicativos de encapsulamento também apresentam aos usuários a opção de enviar logs diretamente do dispositivo por email após o aplicativo falhar. Os usuários podem enviar o log para você examinar e encaminhar à Microsoft, se necessário.
+    Aplicativos de encapsulamento também apresentam aos usuários a opção de enviar logs diretamente do dispositivo por email após o aplicativo falhar. Os usuários podem enviar os logs para você examinar e encaminhar à Microsoft, se necessário.
 
-## Informações para aplicativos que usam a Biblioteca do Azure Active Directory
-As informações nesta seção se aplicam somente aos aplicativos que usam a ADAL (Biblioteca do Active Directory do Azure). Se você não tiver certeza se seu aplicativo usa essa biblioteca, contate o desenvolvedor do aplicativo.
-
-O aplicativo deve incorporar uma versão da ADAL maior que ou superior à 1.0.2.
-
-Para aplicativos que usam a ADAL, as afirmações seguir devem ser verdadeiras:
-
--   O aplicativo deve incorporar uma versão da ADAL maior que ou superior à 1.0.2
-
--   Os desenvolvedores devem conceder acesso ao aplicativo para o recurso de Gerenciamento de aplicativo móvel do Intune, conforme descrito em [Etapas a seguir para aplicativos que usam a AD](#steps-to-follow-for-apps-that-use-adal).
-
-### Visão geral dos identificadores que você precisa obter
-Aplicativos que usam a ADAL devem ser registrados através do portal de gerenciamento do Azure para obter dois identificadores exclusivos para seu aplicativo:
-
-|Identificador|Mais informações|Valor padrão|
-|--------------|--------------------|-----------------|
-|**ID do Cliente**|Um identificador GUID exclusivo é gerado para cada aplicativo após ele ser registrado com o Active Directory do Azure.<br /><br />Se souber a ID de cliente específica do aplicativo, você pode especificar esse valor. Caso contrário, o valor padrão deve ser usado.|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**URI de redirecionamento**|Um valor de URI que os desenvolvedores podem fornecer ao registrar seu aplicativo no Active Directory do Azure para garantir os tokens de autenticação sejam retornados especificamente ao ponto de extremidade.<br /><br />Fornecer um URI de redirecionamento é um parâmetro opcional para a ferramenta de encapsulamento de aplicativo. Se não for especificado, um URI padrão será usado.|urn:ietf:wg:oauth:2.0:oob|
-
-
-### Etapas a seguir para aplicativos que usam a ADAL
-
-1.  Examine a [Visão geral dos identificadores que você precisa obter](#overview-of-identifiers-you-need-to-get) para identificar os valores que você precisa para começar.
-
-2.  Configure o acesso ao gerenciamento de aplicativos móveis no Active Directory do Azure fazendo o seguinte:
-
-    1. Faça logon em uma conta existente do Active Directory do Azure no portal de gerenciamento do Azure.
-
-    2.  Clique em **registro de aplicativo de LOB existente** no Active Directory do Azure.
-
-    3.  Na seção de configuração, escolha **Configurar o Acesso às APIs da Web em outros aplicativos**.
-
-    4.  Na seção **Permission to other applications (Permissão para outros aplicativos)**, na primeira lista suspensa, escolha **Gerenciamento de aplicativo móvel do Intune**.
-
-        Agora você pode usar a ID do Cliente do aplicativo na ferramenta de disposição do aplicativo. Você pode encontrar a ID do Cliente do aplicativo no portal de gerenciamento do Azure Active Directory conforme descrito na seção [Visão geral dos identificadores que você precisa obter](#overview-of-identifiers-you-need-to-get).
-
-3.  Use os valores de **Client-ID** (usando a propriedade **–a**) e **Redirect-URI** como propriedades de linha de comando na ferramenta de encapsulamento de aplicativo. Se você não tiver esses valores, os valores padrão são usados. Você deve especificar os dois valores ou o usuário final não poderá autenticar o aplicativo processado com êxito.
 
 ### Requisitos de autenticação, perfil de provisionamento e certificado
 
+A ferramenta de encapsulamento de aplicativo tem alguns requisitos que devem ser cumpridos para assegurar a funcionalidade completa.
+
 |Requisito|Detalhes|
 |---------------|-----------|
-|Perfil de provisionamento|**Certifique-se de que o perfil de provisionamento é válido antes de incluí-lo** - A ferramenta de encapsulamento do aplicativo não verifica se o perfil de provisionamento expirou durante o processamento de um aplicativo iOS. Se um perfil de provisionamento expirado for especificado, a ferramenta de encapsulamento do aplicativo incluirá o perfil de provisionamento expirado e você não saberá que há um problema até que o aplicativo não possa ser instalado em um dispositivo iOS.|
-|Certificate|**Certifique-se de que o certificado é válido antes de especificá-lo** - A ferramenta não verifica se um certificado expirou durante o processamento de aplicativos iOS. Se o hash de um certificado expirado for fornecido, a ferramenta processará e assinará o aplicativo, mas ele não será instalado em dispositivos.<br /><br />**Certifique-se de que o certificado fornecido para assinar o aplicativo empacotado tenha uma correspondência no perfil de provisionamento** - A ferramenta não é validada se o perfil de provisionamento tiver uma correspondência para o certificado fornecido para assinar o aplicativo encapsulado.|
-|Autenticação|Um dispositivo deve ter um PIN definido para criptografia funcionar. Em dispositivos nos quais você implantou um aplicativo encapsulado, tocar a barra de status no dispositivo exige que o usuário autentique novamente no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. A política padrão em um aplicativo encapsulado é *autenticação na nova inicialização*. O iOS lida qualquer notificação externa (por exemplo, uma chamada telefônica) como saindo do aplicativo e então reiniciando-o.<br /><br />Para aplicativos encapsulados, o primeiro usuário que assina qualquer aplicativo encapsulado do mesmo editor é armazenado em cache. Depois disso, somente esse usuário tem permissão para acessar o aplicativo. Para redefinir o usuário, o dispositivo deve ter o registro cancelado e, em seguida, ser registrado novamente.|
+|Perfil de provisionamento|**Verifique se o perfil de provisionamento é válido antes de incluí-lo**. A ferramenta de encapsulamento de aplicativo não verifica se o perfil de provisionamento expirou durante o processamento de um aplicativo iOS. Se um perfil de provisionamento expirado for especificado, a ferramenta de encapsulamento do aplicativo incluirá o perfil de provisionamento expirado e você não saberá que há um problema até que o aplicativo não possa ser instalado em um dispositivo iOS.|
+|Certificate|**Verifique se certificado é válido antes de especificá-lo**. A ferramenta não verifica se um certificado expirou durante o processamento de aplicativos iOS. Se o hash de um certificado expirado for fornecido, a ferramenta processará e assinará o aplicativo, mas ele não será instalado em dispositivos.<br /><br />**Verifique se o certificado fornecido para assinar o aplicativo empacotado tem uma correspondência no perfil de provisionamento**. A ferramenta não valida se o perfil de provisionamento tiver uma correspondência para o certificado fornecido para assinar o aplicativo encapsulado.|
+|Autenticação|Um dispositivo deve ter um PIN definido para a criptografia funcionar. Em dispositivos nos quais você implantou um aplicativo encapsulado, tocar a barra de status no dispositivo exige que o usuário autentique novamente no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. A política padrão em um aplicativo encapsulado é *autenticação na nova inicialização*. O iOS lida com qualquer notificação externa (por exemplo, uma chamada telefônica) ao encerrar o aplicativo e, em seguida, iniciando-o novamente.
 
-### Notas técnicas e solução de problemas sobre a ADAL
-
--   Se nenhum recurso da ADAL for encontrado, a ferramenta incluirá a biblioteca dinâmica da ADAL. A ferramenta pesquisará a biblioteca da ADAL com o nome **ADALiOS.bundle** na pasta raiz.
-
--   A ferramenta não pesquisará binários da ADAL (se houver) no aplicativo. Se o aplicativo se conectar a uma versão desatualizada, pode haver erros de tempo de execução durante o logon se as políticas de autenticação estiverem habilitadas.
-
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] busca o token do AAD para a ID de recurso do MAM do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para autenticação. No entanto, não é usado em qualquer chamada que, por sua vez, verificaria a validade do token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] apenas lê o UPN do usuário conectado para determinar o acesso do aplicativo. O token do AAD não é usado para outras chamadas de serviço.
-
--   Tokens de autenticação são compartilhados entre aplicativos do mesmo editor, pois eles são armazenados no conjunto de chaves compartilhado. Se quiser isolar um aplicativo específico, você deve usar um certificado de autenticação e um perfil de provisionamento diferente para esse aplicativo.
-
--   Prompts de logon duplo são impedidos se você fornecer a Id de cliente e o URI de redirecionamento do aplicativo cliente. Essa ID de cliente precisa ser registrada para acessar a ID do recurso de MAM [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] publicado no painel do AAD. Deixar de fazer isso resultará em uma falha de logon quando o aplicativo for executado.
 
 ## Definindo direitos de aplicativo
 Antes de encapsular seu aplicativo, você pode conceder **direitos** para conceder ao aplicativo permissões e recursos adicionais que excedem o que um aplicativo normalmente pode fazer.  Um **arquivo de direito** é usado durante a assinatura de código para especificar permissões especiais dentro de seu aplicativo (por exemplo, acesso a um conjunto de chaves compartilhado). Serviços de aplicativos específicos, chamados **funcionalidades**, são habilitados em Xcode durante o desenvolvimento do aplicativo. Uma vez habilitadas, as funcionalidades são refletidas no arquivo de direitos. Para obter mais informações sobre os recursos e funcionalidades, consulte [Adicionando Funcionalidades](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) na Biblioteca do Desenvolvedor iOS. Para obter uma lista completa de funcionalidades com suporte, consulte [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Funcionalidades com suporte).
@@ -272,17 +254,17 @@ Este comando remove quaisquer funcionalidades habilitadas no aplicativo que não
 ## Segurança e privacidade da ferramenta de encapsulamento de aplicativo
 Use as seguintes práticas recomendadas de segurança e privacidade ao usar a ferramenta de encapsulamento de aplicativo.
 
--   O certificado de autenticação, perfil de provisionamento e o aplicativo de linha de negócios que você especificar devem estar no mesmo computador Mac que você usar para executar a ferramenta de encapsulamento de aplicativo. Se os arquivos estiverem em um caminho UNC, certifique-se de que eles são acessíveis no computador Mac. O caminho deve ser protegido por assinatura SMB ou IPsec.
+-   O certificado de autenticação, o perfil de provisionamento e o aplicativo de linha de negócios que você especificar devem estar no mesmo computador macOS que você usar para executar a ferramenta de encapsulamento de aplicativo. Se os arquivos estiverem em um caminho UNC, verifique se eles são acessíveis no computador macOS. O caminho deve ser protegido por assinatura SMB ou IPsec.
 
     O aplicativo encapsulado importado no console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] deve estar no mesmo computador no qual você executa a ferramenta. Se os arquivos estiverem em um caminho UNC, certifique-se de que eles são acessíveis no computador que executa o console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. O caminho deve ser protegido por assinatura SMB ou IPsec.
 
--   O ambiente em que a ferramenta de encapsulamento de aplicativo é baixada do site Centro de Download da Microsoft precisa ser protegido por assinatura SMB ou IPsec.
+-   O ambiente em que a ferramenta de encapsulamento de aplicativo é baixada do repositório GitHub precisa ser protegido por assinatura IPsec ou SMB.
 
 -   O aplicativo que você processar deve vir de uma fonte confiável para garantir a proteção contra ataques.
 
 -   Certifique-se de que a pasta de saída que você especificar na ferramenta de encapsulamento de aplicativo esteja protegida, principalmente se ela for uma pasta remota.
 
--   Aplicativos iOS que incluem uma caixa de diálogo de carregamento de arquivos podem permitir que usuários contornem restrições de recortar, copiar e colar aplicadas ao aplicativo. Por exemplo, um usuário poderia usar a caixa de diálogo de carregamento de arquivo para carregar uma captura de tela dos dados do aplicativo.
+-   Aplicativos iOS que incluem uma caixa de diálogo de upload de arquivos podem permitir que os usuários contornem restrições de recortar, copiar e colar aplicadas ao aplicativo. Por exemplo, um usuário poderia usar a caixa de diálogo de carregamento de arquivo para carregar uma captura de tela dos dados do aplicativo.
 
 -   Quando os usuários monitoram a pasta documentos em seu dispositivo de dentro de um aplicativo encapsulado, eles podem ver uma pasta chamada **.msftintuneapplauncher**. Se essa pasta for alterada ou excluída, isso pode afetar o funcionamento correto dos aplicativos restritos.
 
@@ -293,6 +275,6 @@ Use as seguintes práticas recomendadas de segurança e privacidade ao usar a fe
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

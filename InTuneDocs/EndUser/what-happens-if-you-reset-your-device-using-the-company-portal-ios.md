@@ -3,6 +3,7 @@ title: "O que acontece quando você redefine o dispositivo iOS usando o Portal d
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

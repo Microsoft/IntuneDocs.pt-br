@@ -3,8 +3,9 @@ title: "Gerenciar configurações de usuário com políticas | Microsoft Intune"
 description: "Use o Intune para criar e implantar políticas que controlam configurações e recursos nos dispositivos gerenciados que você gerencia."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Para obter uma lista completa de políticas do Intune, consulte a [referência d
 
     - [Configurações para dispositivos iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Configurações para dispositivos Android](android-policy-settings-in-microsoft-intune.md)
+    - [Configurações para dispositivos Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Configurações para dispositivos Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Configurações para dispositivos do Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Configurações de dispositivos móveis Windows 10 desktop](windows-10-policy-settings-in-microsoft-intune.md)
@@ -86,7 +88,7 @@ Após criar uma política, geralmente você desejará implantá-la em um ou mais
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
-2.  Na caixa de diálogo **Gerenciar implantação** :
+2.  Na caixa de diálogo **Gerenciar implantação**:
 
     -   Para implantar a política, selecione um ou mais grupos aos quais você deseja implantar a política e selecione **Adicionar** &gt; **OK**.
 
@@ -115,7 +117,6 @@ Se um dispositivo não fizer o check-in para obter a política após a primeira 
 - iOS e Mac OS X: a cada 6 horas.
 - Android: a cada 8 horas.
 - Windows Phone: a cada 8 horas.
-- Dispositivos Windows RT registrados: a cada 24 horas.
 - Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada 8 horas.
 
 Se o dispositivo tiver sido registrado recentemente, a frequência de check-in será maior, da seguinte maneira:
@@ -212,6 +213,6 @@ Consulte [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubl
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: Restringir o acesso a redes com o Cisco ISE | Microsoft Intune
 description: "Use o Cisco ISE com o Intune para que os dispositivos sejam registrados no Intune e compatíveis com a política antes de acessarem redes Wi-Fi e VPN controladas pelo Cisco ISE."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article

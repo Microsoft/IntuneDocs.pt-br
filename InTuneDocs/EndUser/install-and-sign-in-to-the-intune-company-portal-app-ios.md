@@ -3,6 +3,7 @@ title: Instalar e entrar no aplicativo Portal da Empresa no Intune | Microsoft I
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,9 +30,9 @@ O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS pa
 
 2.  Baixe o aplicativo **Portal da Empresa do Microsoft Intune**.
 
-    ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
+    ![Baixe o aplicativo Portal da Empresa do Intune](./media/ios-cpinstall-1-cpinstore.png)
 
-3.  Abra o aplicativo Portal da Empresa, digite seu email e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
+3.  Abra o aplicativo Portal da Empresa, digite seu endereço de email e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
 
     Se você está entrando no aplicativo de Portal da Empresa pela primeira vez e sua empresa ou escola está usando o Intune, você será solicitado a registrar seu dispositivo no Intune. Para registrar, siga as etapas em [Enroll your iOS device in Intune (Registrar seu dispositivo iOS no Intune)](enroll-your-device-in-intune-ios.md) ou [OS X device in Intune (Registrar seu dispositivo Mac OS X no Intune)](enroll-your-device-in-intune-mac-os-x.md).
 
@@ -39,7 +40,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

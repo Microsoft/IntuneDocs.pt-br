@@ -4,7 +4,7 @@ description: "Este tópico descreve as configurações de política de gerenciam
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ O termo **Aplicativos gerenciados por política** é usado para fazer referênci
 - **Desabilitar sincronização do contato:** escolha **Sim** para impedir que as informações de contato sincronizem com o aplicativo de catálogo de endereço nativo no dispositivo. Se você escolher **Não**, o aplicativo salvará as informações de contato no aplicativo de catálogo de endereço nativo no dispositivo.<br/>Ao fazer um apagamento seletivo para remover dados da empresa, contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso é aplicável somente ao aplicativo **Microsoft Outlook**.
 
   **Valor padrão = sim**
+- **Desabilitar a impressão:** escolha **Sim** para evitar dados de impressão da empresa dos aplicativos associados à política de MAM.
+
+  **Valor padrão – Sim**
 
 ##  Configurações de política de acesso do Android
 O termo **Aplicativos gerenciados pela política** é usado para fazer referência a aplicativos configurados com políticas de MAM
@@ -96,6 +99,6 @@ O termo **Aplicativos gerenciados pela política** é usado para fazer referênc
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

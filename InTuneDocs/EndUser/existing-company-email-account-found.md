@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Conta de email da empresa existente encontrada
-Você já tem uma conta de email da empresa. Para continuar a se conectar ao seu email da empresa, você precisará executar as seguintes etapas para habilitar o seu administrador de TI configurados corretamente e gerenciar sua conta:
+Você já tem uma conta de email da empresa. Para continuar a se conectar ao email da empresa, execute as seguintes etapas para que o administrador de TI configure e gerencie sua conta corretamente:
 
 1.  Em **configurações** em seu dispositivo, remova a conexão é configurado anteriormente para emails da sua empresa.
 
@@ -35,6 +35,6 @@ Se as novas configurações de email não aparecem após alguns instantes, entre
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

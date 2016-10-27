@@ -3,6 +3,7 @@ title: "Configurações de política do iOS | Microsoft Intune"
 description: "Crie políticas que controlam as configurações e os recursos nos dispositivos iOS que você gerencia com o Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -382,6 +383,6 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -2,9 +2,10 @@
 title: Registrar seu dispositivo Windows no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Windows no Intune
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 35cc0e04c1f57ccd5db9e2ba05083d75711600c0
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: 4dae33a2991573cca778852ab81d3087fac97d80
 
 
 ---
@@ -22,22 +23,16 @@ ms.openlocfilehash: 35cc0e04c1f57ccd5db9e2ba05083d75711600c0
 
 # Registrar seu dispositivo Windows no Intune
 
-Se sua empresa ou escola usar o Microsoft Intune, você poderá registrar seu dispositivo Windows para obter acesso a email, arquivos e outros recursos corporativos. O registro dos dispositivos permite que sua organização mantenha os dados corporativos protegidos. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?). e [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (O que o administrador de TI pode ver ou não no seu dispositivo).
+Se sua empresa ou escola usar o Microsoft Intune, você poderá registrar seu dispositivo Windows para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, a sua organização pode manter os dados corporativos protegidos. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?). e [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (O que o administrador de TI pode ver ou não no seu dispositivo).
 
 Para se registrar, use o link que corresponde ao dispositivo que você está usando:
 
-
-
 -  [Windows 10 Mobile e Windows 10 Desktop](enroll-your-w10-phone-or-w10-pc-windows.md)
 -  [Windows 8.1 ou Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
--  [Windows RT](enroll-your-rt-windows.md)
 -  [Windows Phone 8.1](enroll-your-wp81-windows.md)
--  [Windows Phone 8](enroll-your-wp8-windows.md)
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

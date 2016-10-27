@@ -3,8 +3,9 @@ title: Restringir o acesso a email ao Dynamics CRM Online | Microsoft Intune
 description: Proteja e controle o acesso ao Dynamics CRM Online com acesso condicional.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ Você pode controlar o acesso ao Microsoft Dynamics CRM Online de dispositivos i
 
 Para saber mais sobre como o acesso condicional funciona, leia o artigo [Restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir acesso a email, O365 e outros serviços).
 
-[!IMPORTANT] Para implantar o acesso condicional, você deve ter assinaturas do Intune e do Azure Active Directory Premium e os usuários devem estar licenciados para ambos os produtos. A **assinatura do EMS (Enterprise Mobility + Security)** inclui tanto assinaturas do Intune quanto do Azure Active Directory Premium. Para obter mais detalhes, consulte a página de preços do [Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se você não tiver a assinatura do EMS, poderá obter uma assinatura para o Azure Active Directory Premium. Veja a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+[!IMPORTANT] Para implantar o acesso condicional, você deve ter assinaturas do Intune e do Azure Active Directory Premium e os usuários devem estar licenciados para ambos os produtos. A **assinatura do EMS (Enterprise Mobility + Security)** inclui tanto assinaturas do Intune quanto do Azure Active Directory Premium. Para obter mais detalhes, consulte a página de preços do [Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se você não tiver a assinatura do EMS, poderá obter uma assinatura para o Azure Active Directory Premium. Veja a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 Quando um determinado usuário tenta usar o aplicativo Dynamics CRM em seu dispositivo, ocorre a seguinte avaliação:
 

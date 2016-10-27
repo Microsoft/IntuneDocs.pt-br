@@ -3,6 +3,7 @@ title: "Configurações da política de atualização de edição do Windows | M
 description: "Saiba como atualizar automaticamente os dispositivos Windows 10 para a versão mais recente com o Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

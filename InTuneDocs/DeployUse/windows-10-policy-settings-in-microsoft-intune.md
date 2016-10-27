@@ -3,6 +3,7 @@ title: "Configurações de política do Windows 10 | Microsoft Intune"
 description: "Use as configurações de política listadas neste tópico para ajudá-lo a definir as configurações internas e personalizadas para dispositivos Windows 10 Mobile e Windows 10 Desktop."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article
