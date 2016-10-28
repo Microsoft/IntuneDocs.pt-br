@@ -2,8 +2,8 @@
 title: "Enviar logs de dados de diagnóstico para o administrador de TI usando um cabo USB | Microsoft Intune"
 description: Enviar logs de dados usando um cabo USB
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# Enviar logs de dados de diagnóstico para seu administrador de TI usando um cabo USB
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Enviar logs de dados de diagnóstico para seu administrador de TI usando um cabo USB
 
 Se você quiser enviar logs de dados para o administrador de TI, você poderá enviar os logs usando um computador e um cabo USB em vez de enviá-los do seu dispositivo móvel.
 
