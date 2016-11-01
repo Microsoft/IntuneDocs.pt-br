@@ -3,7 +3,7 @@ title: "Você precisa resolver uma ameaça que o Lookout for Work encontrou em s
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article

@@ -3,7 +3,7 @@ title: "Enviar logs de dados de diagnóstico para o administrador de TI usando u
 description: Enviar logs de dados usando um cabo USB
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

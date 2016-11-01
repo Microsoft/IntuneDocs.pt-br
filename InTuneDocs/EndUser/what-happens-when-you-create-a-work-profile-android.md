@@ -3,7 +3,7 @@ title: "O que acontece quando você cria um perfil de trabalho | Microsoft Intun
 description: Descreve como criptografar um dispositivo Android
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
