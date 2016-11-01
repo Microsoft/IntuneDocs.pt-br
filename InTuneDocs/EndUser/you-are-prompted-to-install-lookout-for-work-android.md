@@ -3,8 +3,9 @@ title: "Você é solicitado a instalar o Lookout for Work em seu dispositivo And
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,17 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
 
 # Aparecerá um aviso para que você instale o Lookout for Work
 
-Antes de poder acessar seu trabalho, o administrador de TI exige que você instale o aplicativo Lookout for Work, que ajuda a proteger seu dispositivo ao localizar possíveis ameaças à segurança.
+Antes de poder acessar seu trabalho, o administrador de TI exige que você instale o aplicativo Lookout for Work, que ajuda a proteger seu dispositivo localizando possíveis ameaças à segurança.
+
+Se tiver problemas com a instalação, tente executar as etapas de solução de problemas no final deste tópico.
 
 
 **O que você deve fazer:**
@@ -35,7 +38,7 @@ Antes de poder acessar seu trabalho, o administrador de TI exige que você insta
 
     ![toque em aceitar para permitir que o Lookout for Work acesse seu dispositivo](./media/lookout-accept-store-permissions-android.png)
 
-3. Abra o Lookout for Work e toque em **Ativar**.
+3. Abra o Lookout for Work e toque em **ATIVAR**.
 
     ![abra o Lookout for Work e toque em Ativar](./media/lookout-activate-button-android.png)
 
@@ -57,7 +60,7 @@ Antes de poder acessar seu trabalho, o administrador de TI exige que você insta
 
     ![examine como o Lookout for Work protege seu dispositivo](./media/lookout-how-it-protects-your-device-android.png)
 
-    Quando você vir a tela a seguir, significa que o Lookout está instalado e conectado.
+    Quando você vir a tela a seguir, o Lookout está instalado e conectado.
 
     ![agora, você está conectado ao Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
@@ -71,13 +74,14 @@ Antes de poder acessar seu trabalho, o administrador de TI exige que você insta
 
     Se o Lookout for Work encontrar uma ameaça à segurança em seu dispositivo, você verá instruções para corrigir o problema.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+**Se a instalação não funcionar**
+
+Às vezes, as instalações podem falhar devido a problemas técnicos fora de seu controle. Se isso acontecer, tente instalar o Lookout for Work manualmente da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

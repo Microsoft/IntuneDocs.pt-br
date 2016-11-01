@@ -1,8 +1,9 @@
 ---
 title: Usar o SDK para habilitar aplicativos para MAM | Microsoft Intune
-description: 
+description: "Este tópico fornece uma visão geral rápida dos motivos para usar o SDK do Intune."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
-ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
+ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
+ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
 
 
 ---
 
 # Use o SDK para habilitar aplicativos para o gerenciamento de aplicativos móveis
-Use o SDK de Aplicativos do Microsoft Intune para habilitar o Intune para gerenciar determinados recursos dos seus aplicativos móveis iOS ou Android. Após seu aplicativo estar habilitado, você pode implantar políticas no aplicativo. Essas políticas usam esses recursos para proteger seus dados corporativos. Os exemplos dos tipos de proteção que você pode implementar com o SDK são:
+Use o SDK do Aplicativo do Microsoft Intune para habilitar o Intune a gerenciar determinados recursos dos seus aplicativos iOS ou Android. Após seu aplicativo estar habilitado, você pode implantar políticas no aplicativo. Essas políticas usam esses recursos para proteger seus dados corporativos. Os exemplos dos tipos de proteção que você pode implementar com o SDK são:
 
 -   Impedir que os usuários copiem documentos corporativos na nuvem
 
@@ -39,6 +40,6 @@ Para obter uma visão geral do SDK, consulte a página [Visão Geral](/intune/de
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

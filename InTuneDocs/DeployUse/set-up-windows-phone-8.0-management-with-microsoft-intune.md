@@ -3,8 +3,9 @@ title: Configurar o gerenciamento do Windows Phone 8.0 | Microsoft Intune
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows Phone 8.0 com o Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/09/2016
+ms.author: nathbarn
+manager: angrobe
+ms.date: 07/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
 O Windows Phone 8.0 requer um certificado Symantec para instalar o aplicativo de Portal da Empresa do Intune e permitir o gerenciamento de dispositivo. Um certificado também é necessário para assinar aplicativos de linha de negócios. O tópico a seguir é apenas para Windows Phone 8.0. Para gerenciar o Windows Phone 8.1 ou posterior, incluindo o Windows 10 Mobile, consulte [Set up Windows Phone enrollment](set-up-windows-phone-management-with-microsoft-intune.md) (Configurar o registro do Windows Phone).
 
 > [!IMPORTANT]
-> A partir de setembro de 2016, o aplicativo de Portal da Empresa para Windows 8.0 e Windows Phone 8.0 não estará disponível para download.
+> Desde setembro de 2016, o aplicativo de Portal da Empresa para Windows 8 e Windows Phone 8 não está mais disponível para download.
 
 -   **Windows Phone 8** - Certificado exigido
 -   **Windows Phone 8.1 e Windows 10 Mobile** requerem um certificado somente se:
@@ -42,7 +43,7 @@ O Windows Phone 8.0 requer um certificado Symantec para instalar o aplicativo de
 Os requisitos de configuração de gerenciamento de dispositivo móvel do Windows Phone dependem de como você gerenciará dispositivos.  Definir duas CNAMEs no registro do DNS da sua empresa facilita o registro para usos. Se seus usuários baixarão o aplicativo Portal da Empresa da Loja, após definir as configurações de DNS, basta configurar o Portal da Empresa e informar aos usuários como se registrar.  Para Windows Phone 8.0 ou Windows Phone 8.1, no qual você implantará o Portal da Empresa, você precisará de um certificado de Symantec para assinar código do aplicativo.
 
 ## Configurar requisitos de configuração para habilitar o gerenciamento do Windows Phone
-1.  **Configurar Intune** Se você ainda não o fez, prepare-se para o gerenciamento de dispositivo móvel ao [Configurar a autoridade de gerenciamento do dispositivo móvel](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e configurando o MDM.
+1.  **Configurar Intune** Se você ainda não o fez, prepare-se para o gerenciamento de dispositivo móvel ao [configurar a autoridade de gerenciamento do dispositivo móvel](prerequisites-for-enrollment.md#set-mobile-device-management-authority), como **Microsoft Intune** e configurando o MDM.
 
 2.  **Definir um alias DNS para o endereço do servidor de registro** (opcional)
 
@@ -183,6 +184,6 @@ Você pode implantar o aplicativo do Portal da empresa em dispositivos Windows P
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

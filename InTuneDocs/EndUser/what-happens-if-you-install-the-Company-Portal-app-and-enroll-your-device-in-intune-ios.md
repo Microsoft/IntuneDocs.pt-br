@@ -2,9 +2,10 @@
 title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo iOS ou Mac OS X no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo iOS ou Mac OS X no Intune, você pode usar o aplicativo Portal da Empresa para:
 
--   Acessar a rede da empresa, além de seu email e arquivos de trabalho
+-   acessar a rede da empresa, bem como seu email e arquivos de trabalho.
 
--   Obter aplicativos da empresa do Portal da Empresa
+-   obter aplicativos da empresa pelo Portal da Empresa.
 
--   Redefinir remotamente seu telefone para configurações de fábrica, caso ele seja perdido ou roubado
+-   redefinir remotamente seu telefone para as configurações de fábrica caso ele seja perdido ou roubado.
 
--   Configurar automaticamente sua conta de email da empresa
+-   configurar automaticamente sua conta de email da empresa.
 
-Quando registra seu dispositivo no Intune, você está concedendo permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
+Quando registra seu dispositivo no Intune, você concede permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
 
 **O que a equipe de TI não pode ver**
 
@@ -85,16 +86,16 @@ Quando o dispositivo é registrado, o administrador de TI pode:
 
 -   Habilitar ou desabilitar o Photo Stream para o iCloud.
 
--   Habilitar ou desabilitar o roaming de dados no seu dispositivo. Se o roaming de dados for permitido, as taxas de roaming poderão ser cobradas.
+-   Habilitar ou desabilitar o roaming de dados no seu dispositivo. Se o roaming de dados for permitido, taxas de roaming poderão ser cobradas.
 
--   Habilitar ou desabilitar o roaming de voz no seu dispositivo. Se o roaming de voz for permitido, as taxas de roaming poderão ser cobradas.
+-   Habilitar ou desabilitar o roaming de voz no seu dispositivo. Se o roaming de voz for permitido, taxas de roaming poderão ser cobradas.
 
--   Habilitar ou desabilitar a sincronização automática de arquivos durante o modo de roaming no seu dispositivo. Se a sincronização automática de arquivos for permitida, as taxas de roaming poderão ser cobradas.
+-   Habilitar ou desabilitar a sincronização automática de arquivos durante o modo de roaming no seu dispositivo. Se a sincronização automática de arquivos for permitida, taxas de roaming poderão ser cobradas.
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

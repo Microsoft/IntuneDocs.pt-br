@@ -2,7 +2,8 @@
 title: "Seu dispositivo Android tem raiz e você não pode se conectar | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 14180d4dd324134f3b4e0a8d0241ccb61c3207e0
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
 
 
 ---
 
 
-# Seu dispositivo Android tem raiz e você não pode se conectar
+# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Seu dispositivo Android tem raiz e você não pode se conectar
 
-Quando seu dispositivo Android tem raiz, significa que ele foi alterado para habilitar determinadas funcionalidades que poderiam comprometer a segurança e os recursos da empresa. Se você vir essa mensagem, não conseguirá acessar os recursos da empresa até que o problema seja resolvido.
+Quando seu dispositivo Android tem raiz, ele foi alterado para habilitar determinadas funcionalidades que poderiam comprometer a segurança e os recursos da empresa. Se vir essa mensagem, você não conseguirá acessar os recursos da empresa até que o problema seja corrigido.
 
-Se você não acredita que fez nada para deliberadamente modificar a raiz de seu dispositivo, veja essas outras razões pelas quais seu dispositivo pode ter sido modificado com raiz:
+Se você não acredita que fez algo para modificar deliberadamente a raiz de seu dispositivo, veja estas outras razões pelas quais seu dispositivo pode ter passado a ter raiz:
 
 - Talvez você tenha instalado um aplicativo em seu dispositivo que o software de detecção de raiz considera um risco à segurança. Se você vir essa mensagem depois de instalar um aplicativo, convém tentar desinstalar o aplicativo para ver se isso ajuda.
 
@@ -33,8 +34,6 @@ Se você não acredita que fez nada para deliberadamente modificar a raiz de seu
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
