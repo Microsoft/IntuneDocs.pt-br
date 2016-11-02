@@ -3,6 +3,7 @@ title: "Impedir vazamentos de dados da empresa de aplicativos móveis do Office 
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eccef06d8ac2ac8b27b8695b9a0263794b615df
-ms.openlocfilehash: 0e72db79ca305f4d20fe3fd2f5c9954a04b0482d
+ms.sourcegitcommit: cbb34c02e782248a5895a83fba6808f7fef0db9b
+ms.openlocfilehash: b28beb0219e1669e6cd7eacf03f3875b76cd6e27
 
 
 ---
@@ -30,7 +31,7 @@ Se sim, o Microsoft Intune permite que você defina políticas de MAM para aplic
 ## Como fazer isso?
 1.  Tenha um entendimento básico de [como o MAM (gerenciamento de aplicativos móveis) do Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) funciona.
 2.  Descubra [o que você precisa fazer para começar a criar políticas de MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) no Portal do Azure.
-3.  [Criar e implantar políticas de MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) com o Intune.
+3.  [Criar e implantar políticas de MAM](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) com o Intune.
 
 ### Informação adicional:
 - [Experiência do usuário final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) usando aplicativos habilitados para MAM.
@@ -44,6 +45,6 @@ Se sim, o Microsoft Intune permite que você defina políticas de MAM para aplic
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

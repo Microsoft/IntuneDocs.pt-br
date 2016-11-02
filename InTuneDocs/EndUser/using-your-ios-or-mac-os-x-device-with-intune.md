@@ -3,6 +3,7 @@ title: Usando um dispositivo iOS ou Mac OS X com o Intune | Microsoft Intune
 description: "Lista de links para tarefas que você pode fazer em seu dispositivo móvel iOS ou Mac OS X quando o dispositivo é registrado no Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6e84676a8ea1e149f73871ef1468c2da80fa221c
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: e894ad75fd6e86d5d93393886b37e2af87b5eefc
 
 
 ---
@@ -61,9 +62,11 @@ As informações contidas nesta seção ajudam a corrigir problemas que podem oc
 - [Como localizar o número de série em meu dispositivo?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
 - [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+- [Você é solicitado a instalar o Lookout for Work em seu dispositivo iOS](you-are-prompted-to-install-lookout-for-work-ios.md)
+- [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo iOS](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

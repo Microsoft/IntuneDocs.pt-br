@@ -3,6 +3,7 @@ title: Configurar o gerenciamento do dispositivo Windows com o Microsoft Intune 
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para computadores Windows, incluindo dispositivos Windows 10 com o Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
+ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
+ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
 
 
 ---
@@ -23,18 +24,18 @@ ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
 
 Como administrador do Intune, você pode habilitar o registro e o gerenciamento de computadores Windows de duas maneiras:
 
-- **[Registro automático com o Azure AD](#azure-active-directory-enrollment)** - usuários do Windows 10 e do Windows 10 Mobile registram seus dispositivos adicionando uma conta corporativa ou de estudante para o dispositivo
-- **[Registro do Portal da empresa](#company-portal-app-enrollment)** - dispositivos Windows 8.1 e posteriores são registrados baixando e instalando o aplicativo de Portal da Empresa e, em seguida, inserindo as credenciais de sua conta corporativa ou de estudante no aplicativo.
+- **[Registro automático com o Azure Active Directory](#azure-active-directory-enrollment)** – usuários do Windows 10 e do Windows 10 Mobile registram seus dispositivos adicionando uma conta corporativa ou de estudante para o dispositivo
+- **[Registro no Portal da Empresa](#company-portal-app-enrollment)** – usuários do Windows 8.1 e posteriores registram seus dispositivos baixando e instalando o aplicativo de Portal da Empresa e inserindo as credenciais de sua conta corporativa ou de estudante no aplicativo.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Configurar registro de aplicativo de Portal da Empresa
-Você pode permitir que os usuários registrem seus dispositivos instalando e registrando seus dispositivos com o aplicativo do Portal da Empresa do Intune. A criação de um DNS CNAME ajuda os usuários a se registrarem no Intune sem inserir um nome do servidor.
+## Configurar o registro do aplicativo de Portal da Empresa
+Você pode permitir que os usuários instalem e registrem seus dispositivos usando o aplicativo do Portal da Empresa do Intune. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem inserir um nome do servidor.
 
 1. **Configurar Intune**<br>
-Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de gerenciamento do dispositivo móvel](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e configure o MDM.
+Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de MDM (gerenciamento de dispositivo móvel)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e configure o MDM.
 
-2. **Criar CNAMEs** (opcional)<br>Crie registros **CNAME** de recurso DNS para o domínio de sua empresa para simplificar o registro. Embora a criação de entradas de DNS CNAME seja opcional, a criação de registros CNAME facilita o registro para os usuários. Se nenhum registro CNAME de registro for encontrado, os usuários serão solicitados a inserir manualmente o nome do servidor MDM `https://manage.microsoft.com`.  Os registros de recursos de CNAME deve conter as seguintes informações:
+2. **Criar CNAMEs** (opcional)<br>Crie registros **CNAME** de recurso DNS para o domínio de sua empresa para simplificar o registro. Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se nenhum registro CNAME de registro for encontrado, os usuários serão solicitados a inserir manualmente o nome do servidor MDM `https://manage.microsoft.com`. Registros de recursos de CNAME devem conter as seguintes informações:
 
   |TYPE|Nome do host|Aponta para|TTL|
   |--------|-------------|-------------|-------|
@@ -47,23 +48,23 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
   Se sua empresa usa vários domínios para credenciais de usuário, crie registros CNAME para cada domínio.
 
-  Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com. Alterações de registro DNS podem levar até 72 horas para serem propagadas. Você não pode verificar a alteração do DNS no Intune até que o registro DNS seja propagado.
+  Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com. Alterações em registros DNS podem levar até 72 horas para serem propagadas. Você não pode verificar a alteração do DNS no Intune até que o registro DNS seja propagado.
 
-3.  **Verificar CNAME**<br>No [console de administração do Intune](http://manage.microsoft.com), clique em **Administrador** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Windows**. Digite a URL do domínio verificado do site na empresa na caixa **Especificar um Nome de Domínio Verificado** e clique em **Testar Detecção Automática**.
+3.  **Verificar CNAME**<br>No [console de administração do Intune](http://manage.microsoft.com), escolha **Admin** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Windows**. Digite a URL do domínio verificado do site na empresa na caixa **Especificar um Nome de Domínio Verificado** e escolha **Testar Detecção Automática**.
 
   ![Caixa de diálogo de gerenciamento de dispositivo do Windows](../media/enroll-intune-winenr.png)
 
-4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** só é necessária se você vai distribuir aplicativos de LOB (linha de negócios) para dispositivos não disponíveis na Windows Store. [Saiba mais](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos. [Saiba mais](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
 6.  **Informar os usuários**<br>Você precisará dizer aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento:
       - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
 ### Consulte também
-[Prepare-se registrar dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

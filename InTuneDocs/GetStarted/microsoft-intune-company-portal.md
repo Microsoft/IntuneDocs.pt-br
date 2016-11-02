@@ -3,18 +3,19 @@ title: Portal da Empresa do Microsoft Intune | Microsoft Intune
 description: configurar o Portal da Empresa do Intune
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Estas são algumas das tarefas que os usuários podem fazer no Portal da Empresa
 
 Antes que um usuário possa acessar o Portal da Empresa, a conta do usuário deve receber uma licença para usar o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e ter um status de entrada de **Permitido**. Saiba mais sobre como [adicionar usuários](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) e [atribuir licenças à assinatura](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Você também pode [Personalizar o site de Portal da empresa](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) com o logotipo da sua empresa, termos de uso e muito mais. Os usuários acessam o site de Portal da empresa usando o site e entrando com sua conta de trabalho ou de estudante.
 
+> [!NOTE]
+> O aplicativo de Portal da Empresa ainda não está disponível em alguns países.
+
+> __iOS__: o aplicativo de Portal da Empresa para iOS foi publicado para [todas as regiões disponíveis](https://go.microsoft.com/fwlink/?linkid=831284) da App Store do Apple iOS.
+
+> __Android__: o aplicativo do Portal da Empresa para Android, Antígua e Barbuda, Aruba, Benin, Burquina Faso, Camboja, China, Cuba, Gabão, Guiné-Bissau, Haiti, Irã, Laos, Mali, Moçambique, Mianmar (Birmânia), Antilhas Holandesas, Níger, Papua-Nova Guiné, Sudão, Togo. Para esses países, uma solução alternativa é [efetuar o sideload da versão para Android do aplicativo de Portal da Empresa](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
 ### Consulte também
 [O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

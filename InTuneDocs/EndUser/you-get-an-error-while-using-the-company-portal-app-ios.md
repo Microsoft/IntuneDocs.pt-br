@@ -3,6 +3,7 @@ title: "Você recebe um erro ao usar o aplicativo Portal da Empresa | Microsoft 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
 
 
 ---
@@ -25,17 +26,14 @@ ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
 
 Se receber um erro enquanto estiver usando o aplicativo Portal da Empresa em seu dispositivo iOS, você poderá enviar informações sobre o erro para ajudar o administrador de TI a solucionar o problema. Você pode enviar informações de erro de diferentes maneiras:
 
--   Tocando em **Relatório** nas mensagens de alerta de erro.
+-   Toque em **Relatório** nas mensagens de alerta de erro.
 
--   Tocando em **Send Diagnostic Report** (Enviar Relatório de Diagnóstico) na tela **Sobre** do aplicativo Portal da Empresa
+-   Toque em **Enviar Relatório de Diagnóstico** na tela **Sobre** do aplicativo de Portal da Empresa.
 
--   Agitando seu dispositivo enquanto você estiver no aplicativo Portal da Empresa e, em seguida, tocando em **Email** quando o alerta de diagnóstico aparecer. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e garanta que a opção **Gesto de Agitação** esteja ativada.
-
-
+-   Agite o dispositivo enquanto estiver no aplicativo de Portal da Empresa e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e garanta que a opção **Gesto de Agitação** esteja ativada.
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

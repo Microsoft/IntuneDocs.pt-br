@@ -2,9 +2,10 @@
 title: Criptografar seu dispositivo | Microsoft Intune
 description: Descreve como criptografar um dispositivo Android
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
-ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
+ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
+ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 
 ---
@@ -22,14 +23,14 @@ ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 # Criptografar seu dispositivo
 
-Se sua empresa ou organização pedir que você criptografe o dispositivo Android antes de acessar os arquivos, email ou dados da empresa, siga as etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigi-los.
+Se sua empresa ou organização pedir que você criptografe o dispositivo Android antes de acessar os arquivos, email ou dados da empresa, siga as etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigir.
 
-Se você algum dia cancelar o registro do seu telefone, ele continuará criptografado.
+Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
 1.  Assegure que um PIN ou senha de bloqueio de tela seja definido para o dispositivo.
 
-2.  Em **Configurações**, clique em **Segurança** &gt; **Criptografar Telefone**.
-    (Em alguns telefones, você precisará clicar em **Armazenamento** &gt; **Criptografia de armazenamento** ou **Armazenamento** &gt; **Tela de bloqueio e segurança** &gt; **Outras configurações de segurança** para encontrar a opção “Criptografar”).
+2.  Em **Configurações**, escolha em **Segurança** &gt; **Criptografar Telefone**.
+    (Em alguns telefones, você precisará escolher **Armazenamento** &gt; **Criptografia de armazenamento** ou **Armazenamento** &gt; **Tela de bloqueio e segurança** &gt; **Outras configurações de segurança** para encontrar a opção “Criptografar”).
 
 3.  Siga as instruções apresentadas na tela. Durante a criptografia, seu dispositivo pode ser reiniciado várias vezes.
 
@@ -40,30 +41,26 @@ Se você algum dia cancelar o registro do seu telefone, ele continuará criptogr
 - Uma mensagem dizendo que você ainda precisa criptografá-lo é exibida.
 - Você recebe erros ao tentar usar o aplicativo do Portal da Empresa.
 
-**Ações recomendadas**: 
+**Ações recomendadas**
 
-1. Verifique se o dispositivo está carregado e conectado.
+- Verifique se o dispositivo está carregado e conectado.
+- Verifique se você definiu um PIN ou uma senha no dispositivo.
+- Se você já tiver definido um PIN ou uma senha no dispositivo, tente as etapas a seguir, que o administrador de TI pode exigir para tornar seu dispositivo mais seguro. Os nomes dos menus que você vê podem ser ligeiramente diferentes daqueles mostrados nas etapas, dependendo do tipo de dispositivo Android que você tem.
 
-2. Verifique se você definiu um PIN ou uma senha no dispositivo.
+    1. Vá para **Configurações** > **Segurança** > **Bloqueio de tela**. Confirme seu PIN ou sua senha atual.
 
-3. Se você já tiver definido um PIN ou uma senha no dispositivo, tente as etapas a seguir, que o administrador de TI pode exigir para tornar seu dispositivo mais seguro. Os nomes de menu que você vê podem ser ligeiramente diferentes daqueles mostrados nas etapas, dependendo do tipo de dispositivo Android que você tem.
+    2. Na tela **Escolher bloqueio de tela**, escolha o tipo de bloqueio de tela que você deseja usar.
 
-    a. Vá para **Configurações** > **Segurança** > **Bloqueio de tela**. Confirme seu PIN ou sua senha atual.
+    3. Na tela **Inicialização segura**, toque em **Exigir PIN para iniciar o dispositivo** e em **Continuar**.
 
-    b. Na tela **Escolher bloqueio de tela**, escolha o tipo de bloqueio de tela que você deseja usar.
+    4. Escolha um PIN (você pode inserir o mesmo inserido anteriormente) e toque em **Confirmar seu PIN**.
 
-    c. Na tela **Inicialização segura**, toque em **Exigir PIN para iniciar o dispositivo** e em **Continuar**.
+    5. Abra o aplicativo do Portal da Empresa, selecione seu dispositivo e toque em **Verificar Conformidade**.
 
-    d. Escolha um PIN (você pode inserir o mesmo inserido anteriormente) e toque em **Confirmar seu PIN**.
-
-    e. Abra o aplicativo do Portal da Empresa, selecione seu dispositivo e toque em **Verificar Conformidade**.
-
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

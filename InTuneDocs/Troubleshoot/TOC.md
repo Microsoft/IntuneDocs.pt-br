@@ -23,6 +23,6 @@
 ## [Solucionar problemas de integração do Lookout](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

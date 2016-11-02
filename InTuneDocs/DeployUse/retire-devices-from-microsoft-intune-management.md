@@ -3,6 +3,7 @@ title: Desativar dispositivos | Microsoft Intune
 description: "O Intune dá suporte ao apagamento seletivo e ao apagamento completo para remover o dispositivo do gerenciamento do Intune removendo suas políticas e o portal da empresa."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,25 +14,25 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
-ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
+ms.sourcegitcommit: f2ecd0c90df60dce3a610c00fa0bc35ea7c3a7d3
+ms.openlocfilehash: c96f320856270281772cc3abc891d142eab97ac7
 
 
 ---
 
 # Desativar dispositivos do gerenciamento do Intune
 
-Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. Um dispositivo pode ter que ser desativado por diversos motivos:
+Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. Você pode ter que desativar um dispositivo por diversos motivos:
 
 -   O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
 -   O usuário parte abruptamente (é demitido, pede demissão etc.).
 -   Perda de dispositivo
 -   Realocação de um dispositivo (mudança para outro usuário, reutilização para uma finalidade diferente etc.)
 
-Você pode executar um apagamento seletivo ou completo em dispositivos gerenciados como dispositivos móveis ou bloquear um dispositivo e redefinir a senha. Apagando o dispositivo, você libera a assinatura do usuário para adicionar um dispositivo diferente. Você também pode desativar computadores gerenciados com o software cliente Intune.
+Você pode executar um apagamento seletivo ou completo em um dispositivo gerenciado como um dispositivo móvel ou bloquear um dispositivo e redefinir a senha. Apagando o dispositivo, você libera a assinatura do usuário para adicionar um dispositivo diferente. Você também pode desativar computadores gerenciados com o software cliente do Intune.
 
 ## Apagar dados e aplicativos dos dispositivos
-Tanto o apagamento seletivo quanto o apagamento completo removem o dispositivo do gerenciamento do Intune removendo sua política e o portal da empresa, o que significa que o dispositivo deixa de ter as credenciais necessárias para fazer logon em recursos da empresa, como o Microsoft SharePoint, o email ou o Office 365.
+O apagamento seletivo e o apagamento completo removem o dispositivo do gerenciamento do Intune, removendo sua política e o portal da empresa. Como resultado, o dispositivo não tem mais as credenciais necessárias para entrar em recursos da empresa como o Microsoft SharePoint, email ou Office 365.
 
 O [apagamento seletivo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) é a ação preferencial para funcionários que tiverem registrado seus próprios dispositivos no Intune, porque ela não afeta as informações pessoais no dispositivo. Somente dados corporativos são removidos.
 
@@ -39,25 +40,25 @@ Para dispositivos que precisam ser realocados, também é possível usar um [apa
 
 ## Para excluir dispositivos no portal do Active Directory do Azure
 
-1.  Faça logon com suas credenciais da organização em [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com) e escolha **Centros de Administração** &gt; **Azure AD**.
+1.  Entre com suas credenciais da organização em [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com) e escolha **Centros de Administração** &gt; **Azure AD**.
 
-2.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
+2.  Se não tiver uma, crie uma assinatura do Azure. Isso não deve exigir um cartão de crédito ou pagamento se você tiver uma conta paga. Escolha o link de assinatura **Registrar seu Azure Active Directory gratuito**.
 
-4.  Selecione **Active Directory** e selecione sua organização.
+4.  Escolha **Active Directory** e escolha sua organização.
 
-5.  Selecione a guia **Usuários** .
+5.  Escolha a guia **Usuários**.
 
-6.  Selecione o usuário cujos dispositivos que deseja excluir.
+6.  Selecione o usuário cujos dispositivos deseja excluir.
 
 7.  Escolha **Dispositivos**.
 
-8.  Selecione os dispositivos, conforme apropriado, e escolha **Excluir dispositivo**. O dispositivo será excluído na próxima vez que for sincronizado com o Active Directory. Em geral, isso ocorre em até 4 horas. Após a sincronização, o dispositivo é removido do gerenciamento. Isso remove um dispositivo do limite de dispositivos deste usuário.
+8.  Escolha os dispositivos, conforme apropriado e escolha **Excluir dispositivo**. O dispositivo será excluído na próxima vez que for sincronizado com o Active Directory. Normalmente, isso ocorre em até quatro horas. Após a sincronização, o dispositivo é removido do gerenciamento. Isso remove um dispositivo do limite de dispositivos deste usuário.
 
 ## Desativar computadores gerenciados
-Os computadores gerenciados com o software cliente do Intune podem ser removidos do gerenciamento por meio do console do administrador do Intune. Esse processo também desinstala o software cliente e exclui a política do Intune do computador. Veja informações sobre [como desativar computadores gerenciados com o software cliente do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Computadores gerenciados com o software cliente do Intune podem ser removidos do gerenciamento por meio do console do administrador do Intune. Esse processo também desinstala o software cliente e exclui a política do Intune do computador. Veja informações sobre [como desativar computadores gerenciados com o software cliente do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Bloquear o acesso a um dispositivo
-No caso de perda de dispositivo ou quando for necessário desativar um dispositivo devido à saída de um funcionário da empresa sem a devolução de um hardware de propriedade da empresa, também é possível [redefinir a senha e bloquear remotamente](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) o dispositivo. Isso impede que as informações da empresa sejam indevidamente utilizadas, embora você possa precisar dar baixa no dispositivo como perda.
+Se um dispositivo for perdido ou quando for necessário desativar um dispositivo devido à saída de um funcionário da empresa sem a devolução de um hardware de propriedade da empresa, também será possível [redefinir a senha e bloquear remotamente](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) o dispositivo. Isso impede que as informações da empresa sejam indevidamente utilizadas, embora você possa precisar dar baixa no dispositivo como perda.
 
 Você também deseja revogar a licença da conta de usuário Intune do funcionário. Isso libera a licença, permitindo atribuí-la a uma nova conta de usuário.
 
@@ -69,6 +70,6 @@ Você também deseja revogar a licença da conta de usuário Intune do funcioná
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,6 +3,7 @@ title: "O que acontece quando você cancela o registro do dispositivo Windows no
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
+ms.sourcegitcommit: 8975e57c604565c57c86472564ab660aed560a7b
+ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
 
 
 ---
@@ -23,29 +24,29 @@ ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 # O que acontece quando você cancela o registro do dispositivo Windows no Intune?
 
-Use os links no lado direito desta página, em "Neste artigo", para localizar informações sobre o tipo de dispositivo que você está usando.
+Use os links no lado direito desta página, em **Neste artigo**, para localizar informações sobre o tipo de dispositivo que você está usando.
 
 
-## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
+## Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
--   O dispositivo não aparecerá mais no Portal da Empresa, e você não poderá mais instalar aplicativos do Portal da Empresa.
+-   O dispositivo não aparece mais no Portal da Empresa e você não pode mais instalar aplicativos do Portal da Empresa.
 
 -   Se você tiver instalado o software cliente do Intune, ele será removido do computador.
 
--   O software Intune Endpoint Protection será removido do computador. Se o computador tiver outro software de proteção contra vírus instalado que esteja desabilitado, esse software poderá ser habilitado novamente depois que o Intune Endpoint Protection for removido. Você deverá verificar o computador depois de removê-lo do Portal da Empresa.
+-   O software Intune Endpoint Protection será removido do computador. Se o computador tiver outro software de proteção contra vírus instalado que esteja desabilitado, esse software poderá ser habilitado novamente depois que o Intune Endpoint Protection for removido. Verifique o computador depois de removê-lo do Portal da Empresa.
 
     > [!IMPORTANT]
     > Se outro software de proteção contra vírus não for habilitado novamente ou não estiver instalado, o seu computador poderá ficar vulnerável a vírus e malware.
 
--   As configurações alteradas no seu dispositivo quando ele foi adicionado (por exemplo, a desabilitação da câmera) não se aplicarão mais.
+-   Configurações que foram alteradas no seu dispositivo quando ele foi adicionado (por exemplo, a desabilitação da câmera) não se aplicam mais.
 
--   O computador não receberá mais as atualizações automáticas de software ou de software antivírus do serviço Intune. No entanto, dependendo de como estiver configurado, seu computador ainda poderá receber atualizações do Windows Server Update Services, Windows Update ou Microsoft Update.
+-   O computador não recebe mais as atualizações automáticas de software ou de software antivírus do serviço Intune. No entanto, dependendo de como estiver configurado, seu computador ainda pode receber atualizações do Windows Server Update Services, Windows Update ou Microsoft Update.
 
 Além disso, para Windows 8.1:
 
 -   Você não poderá mais usar os aplicativos e os dados da empresa no seu dispositivo.
 
--   Alguns aplicativos de correspondência, como Windows Mail, não poderão mais acessar os emails da empresa armazenados no seu dispositivo.
+-   Alguns aplicativos de email, como o Windows Mail, não podem mais acessar os emails da empresa armazenados no seu dispositivo.
 
 -   Talvez você não consiga se conectar à sua rede da empresa usando o Wi-Fi ou uma rede virtual privada.
 
@@ -53,42 +54,41 @@ Além disso, para Windows 8.1:
 
 ## Windows 10 Mobile e Windows Phone 8.1
 
--   O aplicativo Portal da Empresa é desinstalado do dispositivo, o que significa que o dispositivo não aparecerá mais no Portal da Empresa, e você não poderá mais instalar aplicativos do aplicativo Portal da Empresa ou do site Portal da Empresa.
+-   O aplicativo de Portal da Empresa é desinstalado do seu dispositivo. isso significa que o dispositivo não aparece mais no Portal da Empresa e você não pode instalar aplicativos do site do Portal da Empresa ou do aplicativo de Portal da Empresa.
 
 -   Você não poderá mais usar os aplicativos e os dados da empresa no seu dispositivo.
 
--   Quaisquer configurações alteradas no seu dispositivo quando ele foi adicionado, por exemplo a desabilitação da câmera ou a solicitação de uma senha de determinado tamanho, não se aplicarão mais.
+-   Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.
 
     > [!IMPORTANT]
-    > As únicas exceções a isso são as políticas de criptografia, que ainda se aplicarão. Se a política da sua empresa solicitou a criptografia do seu Windows Phone, a única maneira de retirar a criptografia do seu telefone será redefini-lo usando o menu **Configurações** no seu Windows Phone.
+    > As únicas exceções a isso são as políticas de criptografia, que ainda se aplicam. Se a política da sua empresa exigiu que você criptografasse seu Windows Phone, a única maneira de descriptografar o telefone será redefini-lo usando o menu **Configurações**.
 
 ## Windows RT executando o Windows 8.1
 
--   O aplicativo Portal da Empresa é desinstalado do dispositivo, o que significa que o dispositivo não aparecerá mais no Portal da Empresa, e você não poderá mais instalar aplicativos do Portal da Empresa.
+-   O aplicativo de Portal da Empresa é desinstalado do seu dispositivo. Isso significa que o dispositivo não aparece mais no Portal da Empresa e você não pode instalar aplicativos do Portal da Empresa.
 
 -   Você não poderá mais usar os aplicativos e os dados da empresa no seu dispositivo.
 
--   Quaisquer configurações alteradas no seu dispositivo quando ele foi adicionado, por exemplo a desabilitação da câmera ou a solicitação de uma senha de determinado tamanho, não se aplicarão mais.
+-   Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.
 
 -   Talvez você não consiga mais se conectar à sua rede da empresa usando o Wi-Fi ou uma rede virtual privada.
 
 -   Talvez você não tenha mais acesso a alguns recursos da empresa, como compartilhamentos de arquivos ou sites internos, no seu dispositivo.
 
--   Alguns aplicativos de correspondência, como Windows Mail, não poderão mais acessar os emails da empresa armazenados no seu dispositivo.
+-   Alguns aplicativos de email, como o Windows Mail, não podem mais acessar os emails da empresa armazenados no seu dispositivo.
 
 Quando você remover seu dispositivo Windows RT, acontecerá o seguinte:
 
--   O aplicativo Portal da Empresa é desinstalado do dispositivo, o que significa que o dispositivo não aparecerá mais no Portal da Empresa, e você não poderá mais instalar aplicativos do Portal da Empresa.
+-   O aplicativo de Portal da Empresa é desinstalado do seu dispositivo. Isso significa que o dispositivo não aparece mais no Portal da Empresa e você não pode instalar aplicativos do Portal da Empresa.
 
 -   Você não poderá mais usar os aplicativos e os dados da empresa no seu dispositivo.
 
--   Quaisquer configurações alteradas no seu dispositivo quando ele foi adicionado, por exemplo a desabilitação da câmera ou a solicitação de uma senha de determinado tamanho, não se aplicarão mais.
+-   Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
+Se tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

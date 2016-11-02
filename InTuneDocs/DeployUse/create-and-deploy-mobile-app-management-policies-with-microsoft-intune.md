@@ -3,6 +3,7 @@ title: "Criar e implantar políticas de MAM | Microsoft Intune"
 description: "Use as instruções passo a passo neste tópico para criar e implantar políticas de gerenciamento de aplicativos móveis."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ Somente usuários com licenças [!INCLUDE[wit_nextref](../includes/wit_nextref_m
 >[!IMPORTANT]
 > Se você estiver usando o Intune com o Configuration Manager para gerenciar seus dispositivos Android e iOS, a política só será aplicada aos usuários diretamente no grupo que você selecionou.  Membros de grupos filho aninhados dentro do grupo selecionado não serão afetados.
 
-Os usuários finais terão que baixar os aplicativos da Windows Store ou do Google Play. Para obter uma explicação detalhada de como o MAM protege os dados da empresa no dispositivo, consulte o tópico [Experiência do usuário final com aplicativos habilitados para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
-
+Os usuários finais terão que baixar os aplicativos da Windows Store ou do Google Play. Para obter mais informações, consulte:
+* [O que esperar quando seu aplicativo Android é gerenciado por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Alterar políticas existentes
 Você pode editar uma política existente e aplicá-la aos usuários de destino. No entanto, quando você altera as políticas existentes, os usuários já conectados aos aplicativos só verão as alterações após um período de 8 horas.
 
@@ -165,10 +167,11 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 [Monitorar conformidade e status do usuário](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### Consulte também
-[Experiência do usuário final para aplicativos habilitados para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo Android é gerenciado por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

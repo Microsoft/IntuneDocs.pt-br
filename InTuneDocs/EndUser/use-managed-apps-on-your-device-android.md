@@ -3,6 +3,7 @@ title: Usar aplicativos gerenciados no seu dispositivo Android | Microsoft Intun
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 
 ---
@@ -36,10 +37,10 @@ Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
 -   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre como se registrar, confira [Enroll your device in Intune](enroll-your-device-in-Intune-android.md) (Registrar seu dispositivo no Intune).
 
--   Instale um aplicativo da Play Store e, em seguida, entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
+-   Instale um aplicativo da Play Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
 
 ## O que meu administrador de TI pode gerenciar em um aplicativo?
-Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no seu dispositivo:
+Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
 
 -   Acesso a sites específicos
 
@@ -51,7 +52,7 @@ Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenci
 
 -   Requisitos de acesso do PIN
 
--   Seu logon, usando as credenciais da empresa
+-   Suas credenciais, usando as credenciais da empresa
 
 -   Capacidade de fazer backup para a nuvem
 
@@ -69,14 +70,12 @@ Estes são aplicativos comuns que o departamento de TI pode gerenciar:
 
 -   AV Player do Intune
 
--   Microsoft Word, Excel, PowerPoint
+-   Microsoft Word, Excel e PowerPoint
 
 Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

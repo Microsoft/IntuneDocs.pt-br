@@ -2,7 +2,7 @@
 title: Registrar seu dispositivo Windows 10 no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Windows 10 Mobile ou Desktop no Intune
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/18/2016
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar os dispositivos para obter acesso aos emails, arquivos e outros recursos da empresa. O registro dos dispositivos permite que sua organização mantenha os dados corporativos protegidos. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?). e [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (O que o administrador de TI pode ver ou não no seu dispositivo).
 
@@ -42,7 +42,7 @@ Para registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune
 
     ![Sua conta](./media/w10-enroll-2-accounts-your-account.png)
 
-## As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante
 
 1.  Toque **Acessar trabalho ou escola** e, em seguida, toque em **Conectar**.
 
@@ -69,7 +69,7 @@ Para registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune
 Se você seguiu as etapas anteriores, mas ainda não consegue acessar sua conta de email e seus arquivos corporativos ou de estudante, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 
-## As etapas a serem seguidas se você vir Sua conta
+## <a name="steps-to-follow-if-you-see-your-account"></a>As etapas a serem seguidas se você vir Sua conta
 
 1.  Vá para as **Configurações** do Windows e toque em **Contas**.
 
