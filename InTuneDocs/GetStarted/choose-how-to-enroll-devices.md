@@ -3,6 +3,7 @@ title: "Escolher como registrar dispositivos móveis | Microsoft Intune"
 description: "Decidir como registrar dispositivos móveis no Intune respondendo algumas perguntas simples"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 0e516e3762dc5712a1b2d0f83016b51b15b7070f
+ms.sourcegitcommit: 2c14071f5fb1a3604b897d6b2f81797d40bedc6d
+ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
 
 
 ---
@@ -53,27 +54,27 @@ As respostas para as perguntas a seguir ajudam a determinar o melhor método de 
   > [!div class="button"]
   [Registro do iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Registro do iOS Direct >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Registro de DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-  - **DEP (Programa de Registro do Dispositivo) da Apple**: dispositivos iOS podem ser comprados ou gerenciados com o DEP com um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com ele.
+  - **DEP (Programa de Registro do Dispositivo) da Apple** – dispositivos iOS adquiridos ou gerenciados com o DEP podem ser associados a um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com ele.
 
-  - **Apple Configurator em um Mac**: o Apple Configurator é um aplicativo da Apple que é executado em um computador Mac. Você pode conectar dispositivos iOS ao Mac com um cabo USB para instalar um perfil de registro no dispositivo. Se você puder redefinir os dispositivos para os padrões de fábrica, use o Assistente de Configuração. Se você não quiser redefinir os dispositivos para os padrões de fábrica, use o Registro direto.
+  - **Apple Configurator em um Mac**: o Apple Configurator é um aplicativo da Apple que é executado em um computador Mac. Você pode conectar dispositivos iOS ao Mac com um cabo USB para instalar um perfil de registro no dispositivo. Se você puder redefinir os dispositivos para os padrões de fábrica para registrá-los, use a opção de registro do Assistente de Configuração. Se você não quiser redefinir os dispositivos para os padrões de fábrica, use a opção de registro Direto.
 
-  - **Gerenciador de Registro de Dispositivo** - O gerenciador de registro de dispositivo (DEM) do Intune permite que um gerente ou administrador registre vários dispositivos móveis com uma única conta de usuário. Esses dispositivos não podem ter afinidade de usuário (ou seja, usuários dedicados) e devem ser registrados instalando e entrando no aplicativo do Portal da Empresa.
+  - **Gerenciador de Registro de Dispositivo (Intune)** – o DEM (gerenciador de registro de dispositivo) do Intune permite que um gerente ou administrador registre vários dispositivos móveis com uma única conta de usuário. Esses dispositivos não podem ter usuários dedicados (afinidade do usuário) e devem ser registrados instalando e entrando no aplicativo de Portal da Empresa.
 
 ## **Como você gerenciará seus dispositivos iOS dedicados?**
 
   > [!div class="button"]
-  [Marcar com IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente de configuração do iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Marcar com IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+   [iOS DEP](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente de Configuração do iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Marcação com IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Você pode registrar dispositivos da empresa com usuários dedicados das seguintes maneiras:
 
-  - **DEP (Programa de Registro do Dispositivo) da Apple**: dispositivos iOS podem ser comprados ou gerenciados com o DEP com um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com o Intune.
+  - **DEP (Programa de Registro do Dispositivo) da Apple** – dispositivos iOS adquiridos ou gerenciados com o DEP podem ser associados a um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com o Intune.
 
-  - **Apple Configurator em um Mac**: o Apple Configurator é um aplicativo da Apple que é executado em um computador Mac. Você pode conectar dispositivos iOS ao Mac com um cabo USB para instalar um perfil de registro no dispositivo. Se você puder redefinir os dispositivos para os padrões de fábrica, use o Assistente de Configuração.
+  - **Apple Configurator em um Mac**: o Apple Configurator é um aplicativo da Apple que é executado em um computador Mac. Você pode conectar dispositivos iOS ao Mac com um cabo USB para instalar um perfil de registro no dispositivo. Se você puder redefinir os dispositivos para os padrões de fábrica para registrá-los, use a opção de registro do Assistente de Configuração.
 
-  - **Marcar com número IMEI** - Importando os números do IMEI (identidade internacional de equipamentos móveis) dos dispositivos da empresa, você poderá marcá-los como dispositivos da empresa no Intune. Os usuários podem registrar seus dispositivos como um dispositivos pessoal instalando o Portal da Empresa para acessar os recursos da empresa como email, aplicativos e dados.
+  - **Marcar com número IMEI** – importando os números do IMEI (identidade internacional de equipamentos móveis) dos dispositivos da empresa, você poderá marcá-los como dispositivos da empresa no Intune. Os usuários podem registrar seus dispositivos como um dispositivos pessoal instalando o Portal da Empresa para acessar os recursos da empresa como email, aplicativos e dados.
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

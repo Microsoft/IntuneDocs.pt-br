@@ -2,7 +2,7 @@
 title: Enviar erros para o administrador de TI | Microsoft Intune
 description: Enviar erros para o administrador
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# Enviar erros para o administrador de TI
+# <a name="send-errors-to-your-it-admin"></a>Enviar erros para o administrador de TI
 
 Se receber erros enquanto estiver usando o dispositivo iOS ao usar o aplicativo de Portal da Empresa, você pode enviar informações para ajudar seu administrador de TI a solucionar o problema. Você pode enviar informações de erro de diferentes maneiras:
 

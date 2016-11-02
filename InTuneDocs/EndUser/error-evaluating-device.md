@@ -2,7 +2,7 @@
 title: Erro ao avaliar o dispositivo | Microsoft Intune
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# Erro ao avaliar o dispositivo
+# <a name="error-evaluating-device"></a>Erro ao avaliar o dispositivo
 O dispositivo foi identificado como fora de conformidade com uma ou mais das políticas da empresa, mas não podemos exibir o erro agora, pois o sistema apresentou um problema ao tentar avaliar o dispositivo.  
 
 Para resolver esse problema, aguarde alguns minutos e, em seguida, toque em **Verificar conformidade**. Se o problema persistir, contate o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

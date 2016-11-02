@@ -3,8 +3,9 @@ title: "Senha não atende aos requisitos de administrador de TI | Microsoft Intu
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,34 +13,42 @@ ms.technology:
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 782fb6132a8f049e67446085babe5d7e699c4749
+ms.sourcegitcommit: b13d2a37cc6a1e4d2b6287fc8d43675441386f03
+ms.openlocfilehash: fa9a3a89e50e8d03beb2efc067925ca0a4fcd68c
 
 
 ---
 
 # Senha não atende aos requisitos de administrador de TI
 
-A senha que você usa para acessar os recursos da empresa ou escola não atende a um ou mais requisitos que o administrador de TI configurou para seu dispositivo. Dependendo das políticas que o administrador de TI criou, você pode estar enfrentando um dos seguintes problemas ou uma combinação deles:
+A senha que você usa para acessar recursos corporativos ou de estudante não atende a um ou mais requisitos que o administrador de TI configurou. Para corrigir o problema, siga as instruções que são mostradas no seu dispositivo. Descrições dos problemas estão listadas abaixo.
 
-- A senha não contém caracteres complexos
-- A senha é muito simples e é não segura o suficiente
-- A senha expirou
-- Senha não definida
-- Senha muito curta
-- A senha foi usada muito recentemente
-- A senha não é complexa o suficiente para atender aos requisitos
-
-Para obter informações sobre como configurar seu PIN ou senha ou sobre outras tarefas que você pode realizar com o dispositivo, use o link correspondente ao tipo de dispositivo:
+Para ver as etapas de como definir seu PIN ou senha, use o link que corresponde ao tipo de dispositivo que você tem:
 
 - [Definir a PIN ou a senha do seu dispositivo Android](set-your-pin-or-password-android.md)
 - [Definir ou alterar a senha do seu dispositivo iOS](set-or-change-your-passcode-ios.md)
 - [Definir ou alterar a senha do seu dispositivo Windows](set-or-change-your-password-windows.md)
 
+Descrições de problemas com senha ou PIN:
+
+- **A senha não contém caracteres complexos**. Seu administrador de TI exige que você use caracteres complexos em sua senha. Exemplos de caracteres complexos podem ser números, letras maiúsculas e símbolos como $, % e #. 
+
+- **A senha é muito simples e é não segura o suficiente**. Exemplos de senhas simples podem ser 1234 ou 1111. Se você não tiver certeza de quais tipos de senhas são permitidos, tente garantir que a senha não contenha números sequenciais ou repetidos, como aqueles no exemplo.
+
+- **A senha expirou**. Sua senha expirou, portanto, você precisa definir uma nova senha que atenda aos requisitos definidos pelo administrador de TI.
+
+- **Senha não definida**. Antes de poder acessar o email e dados de trabalho em seu dispositivo, você deve definir uma senha que atenda aos requisitos definidos pelo administrador de TI.
+
+- **Senha muito curta**. Seu administrador de TI exige que você use uma senha maior com mais caracteres.
+
+- **A senha foi usada muito recentemente**. Seu administrador de TI está impedindo o uso de senhas anteriores que você usou no passado. Escolha uma senha que você nunca usou antes. 
+
+- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #. 
+
 Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

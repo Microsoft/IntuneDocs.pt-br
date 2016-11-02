@@ -2,8 +2,8 @@
 title: Solucionar problemas de acesso ao recurso da empresa | Microsoft Intune
 description: "Códigos de erro e de status neste tópico para ajudá-lo a solucionar problemas de acesso do recurso."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 ---
 
-# Solucionar problemas de acesso ao recurso da empresa com o Microsoft Intune
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acesso ao recurso da empresa com o Microsoft Intune
 Use os códigos de erro e de status neste tópico para ajudá-lo a solucionar problemas quando uma ação do Microsoft Intune retornar um código de erro.
 
 Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
 
-## Códigos de status de dispositivos Windows gerenciados pelo MDM
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de status de dispositivos Windows gerenciados pelo MDM
 
 |Código de status|Mensagem de erro|O que fazer|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |130 (APP_CI_ENFORCEMENT_ERROR)|Falha na instalação da licença MSADP||
 |Nenhum status (APP_CI_ENFORCEMENT_UNKNOWN)|N/D|O status é desconhecido no momento.|
 
-## Acesso aos recursos da empresa (erros comuns)
+## <a name="company-resource-access-common-errors"></a>Acesso aos recursos da empresa (erros comuns)
 
 |Código de status|Código de erro hexadecimal|Mensagem de erro|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |-2016341111|0x87D11389|O dispositivo iOS retornou um status ocioso inesperado|
 |-2016341112|0x87D11388|O dispositivo iOS está ocupado no momento|
 
-## Erros retornados por dispositivos iOS
+## <a name="errors-returned-by-ios-devices"></a>Erros retornados por dispositivos iOS
 
 |Código de status|Código de erro hexadecimal|Mensagem de erro|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |-2016335111|0x87D12AF9|1001: versão de perfil sem suporte|
 |-2016335112|0x87D12AF8|1000: perfil malformado|
 
-## Códigos de resposta do OMA
+## <a name="oma-response-codes"></a>Códigos de resposta do OMA
 
 |Código de status|Código de erro hexadecimal|Mensagem de erro|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |-2016345912|0x87D100C8|O comando SyncML foi concluído com êxito.|
 |-2016346011|0x87D10065|O comando SyncML especificado está sendo executado, mas ainda não foi concluído.|
 
-### Próximas etapas
+### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
