@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Configurar aplicativos Android for Work com as políticas de configuração de aplicativo móvel no Microsoft Intune
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurar aplicativos Android for Work com as políticas de configuração de aplicativo móvel no Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Use políticas de configuração de aplicativo móvel no Microsoft Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo. Por exemplo, um aplicativo pode exigir que os usuários especifiquem:
 
 -   Um número da porta personalizado.
@@ -37,7 +40,7 @@ Para utilizar as políticas de configuração do aplicativo, as configurações 
 
 A política de configuração do aplicativo é implantada para os mesmos usuários para os quais você implantou o aplicativo que deseja configurar. As configurações de política serão usadas sempre que o aplicativo for executado.
 
-## Configurar uma política de configuração do aplicativo móvel
+## <a name="configure-a-mobile-app-configuration-policy"></a>Configurar uma política de configuração do aplicativo móvel
 
 1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** &gt; **Visão geral** &gt; **Adicionar Política**.
 
@@ -61,7 +64,7 @@ A política de configuração do aplicativo é implantada para os mesmos usuári
 A nova política é exibida no nó **Políticas de Configuração**.
 
 
-## Implantar a política de configuração do aplicativo
+## <a name="deploy-the-app-configuration-policy"></a>Implantar a política de configuração do aplicativo
 Depois de criar uma política de configuração de aplicativo móvel, você deve implantá-la para os mesmos usuários para os quais você implantará o aplicativo ao qual tais configurações se aplicam.
 
 Para obter mais informações sobre como implantar políticas, consulte [implantar uma política de configuração](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
@@ -72,10 +75,6 @@ Quando o aplicativo implantado é executado em um dispositivo, ele é executado 
 
 > [!TIP]
 > Apenas uma política de configuração de aplicativo para cada aplicativo deve ser implantada para o usuário.
-
-
-
-
 
 
 
