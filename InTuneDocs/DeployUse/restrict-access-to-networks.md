@@ -2,10 +2,10 @@
 title: Restringir o acesso a redes com o Cisco ISE | Microsoft Intune
 description: "Use o Cisco ISE com o Intune para que os dispositivos sejam registrados no Intune e compatíveis com a política antes de acessarem redes Wi-Fi e VPN controladas pelo Cisco ISE."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
 
-# Usando o Cisco ISE com o Microsoft Intune
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Usando o Cisco ISE com o Microsoft Intune
 A integração do Intune com o Cisco ISE (Mecanismo de serviços de identidade) permite criar políticas de rede em seu ambiente de ISE usando o estado de conformidade e de registro do dispositivo do Intune. Você pode usar essas políticas para garantir que o acesso à rede da empresa seja restrito aos dispositivos gerenciados pelo Intune e em conformidade com as políticas do Intune.
 
-## Etapas de configuração
+## <a name="configuration-steps"></a>Etapas de configuração
 
 Para habilitar essa integração, você não precisa fazer nenhuma configuração no seu locatário do Intune. Você precisará fornecer permissões para seu servidor do Cisco ISE acessar o locatário do Intune. Quando isso for concluído, o restante da configuração acontecerá em seu servidor do Cisco ISE. Este artigo fornece instruções sobre como fornecer a seu servidor do ISE as permissões para acessar seu locatário do Intune.
 
-### Etapa 1: Gerenciar os certificados
+### <a name="step-1-manage-the-certificates"></a>Etapa 1: Gerenciar os certificados
 Exporte o certificado do console do Azure AD (Azure Active Directory) e importe-o para o repositório de Certificados confiáveis do console do ISE:
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. Execute o Internet Explorer como administrador e entre no console do Azure AD.
@@ -47,7 +47,7 @@ Exporte o certificado do console do Azure AD (Azure Active Directory) e importe-
 
    g. De dentro do console do ISE, importe o certificado do Intune (o arquivo exportado) para o repositório **Certificados Confiáveis**.
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Entre no console do Azure AD.
 
@@ -64,18 +64,19 @@ b. Escolha o ícone de cadeado &gt;  **Mais informações**.
 > Verifique a data de validade do certificado, pois você terá que exportar e importar um novo certificado quando este expirar.
 
 
-### Obtenha um certificado autoassinado do ISE 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>Obtenha um certificado autoassinado do ISE 
 
 1.  No console do ISE, vá para **Administração** > **Certificados** > **Certificados do Sistema** > **Gerar certificado Autoassinado**.  
 2.       Exporte o certificado autoassinado.
-3. Em um editor de texto, edite o certificado exportado: [comentário]: <> Eu preferiria não colocar um ponto no final dessas duas instruções, acredito que pode ser confuso.
+3. Em um editor de texto, edite o certificado exportado:
+
  - Excluir ** -----INICIAR CERTIFICADO-----**
  - Excluir ** -----CONCLUIR CERTIFICADO-----**
  
 Verifique se todo o texto está em uma única linha
 
 
-### Etapa 2: Criar um aplicativo para o ISE em seu locatário do Azure AD
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>Etapa 2: Criar um aplicativo para o ISE em seu locatário do Azure AD
 1. No console do Azure AD, escolha **Aplicativos** > **Adicionar um Aplicativo** > **Adicionar um aplicativo que minha organização esteja desenvolvendo**.
 2. Forneça um nome e uma URL para o aplicativo. A URL pode ser o site da empresa.
 3. Baixe o manifesto do aplicativo (um arquivo JSON).
@@ -99,7 +100,7 @@ Verifique se todo o texto está em uma única linha
 |Ponto de Extremidade do Token OAuth 2.0|URL de emissão de token|
 |Atualizar seu código com sua ID de cliente|ID do Cliente|
 
-### Etapa 4: Carregar o certificado autoassinado do ISE no aplicativo do ISE criado no Azure AD
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Etapa 4: Carregar o certificado autoassinado do ISE no aplicativo do ISE criado no Azure AD
 1.     Obtenha o valor do certificado codificado em base64 e a impressão digital de um arquivo de certificado público .cer X509. Este exemplo usa o PowerShell:
    
       
@@ -136,7 +137,7 @@ Por exemplo:
 > KeyCredentials é uma coleção, portanto, você pode carregar vários certificados x.509 para cenários de sobreposição ou excluir certificados em cenários de comprometimento.
 
 
-### Etapa 4: Definir configurações do ISE
+### <a name="step-4-configure-ise-settings"></a>Etapa 4: Definir configurações do ISE
 No console de administração do ISE, forneça estes valores de configuração:
   - **Tipo de servidor**: Gerenciador de Dispositivos Móveis
   - **Tipo de autenticação**: OAuth – Credenciais do cliente
@@ -147,7 +148,7 @@ No console de administração do ISE, forneça estes valores de configuração:
 
 
 
-## Informações compartilhadas entre seu locatário do Intune e seu servidor Cisco ISE
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informações compartilhadas entre seu locatário do Intune e seu servidor Cisco ISE
 Esta tabela lista as informações compartilhadas entre seu locatário do Intune e seu servidor Cisco ISE para dispositivos gerenciados pelo Intune.
 
 |Propriedade|  Descrição|
@@ -166,7 +167,7 @@ Esta tabela lista as informações compartilhadas entre seu locatário do Intune
 |lastContactTimeUtc|A data e hora quando o dispositivo fez a última verificação no serviço de gerenciamento do Intune.
 
 
-## Experiência do usuário
+## <a name="user-experience"></a>Experiência do usuário
 
 Quando um usuário tentar acessar recursos usando um dispositivo não registrado, ele receberá uma solicitação para se registrar, como mostrado aqui:
 
@@ -182,12 +183,12 @@ Quando um usuário optar por se registrar, ele será redirecionado para o proces
 Também há um [conjunto baixável de instruções de registro](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) que você pode usar para criar orientação personalizada para sua experiência de usuário.
 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 
 [Guia do Administrador do Mecanismo de Serviços de Identidade da Cisco, versão 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
