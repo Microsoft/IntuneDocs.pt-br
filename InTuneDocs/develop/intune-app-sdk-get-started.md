@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# Introdução ao SDK de Aplicativos do Microsoft Intune
+# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
 Este Guia de introdução o ajudará a habilitar rapidamente seu aplicativo móvel para o Gerenciamento de aplicativos móveis com o Microsoft Intune. Pode ser útil compreender primeiro os benefícios do SDK de Aplicativo do Intune enumerados na [Visão geral do SDK do Aplicativo do Intune](intune-app-sdk.md).
 
 Este guia aborda as principais etapas necessárias para habilitar o gerenciamento de aplicativos móveis em seu aplicativo com o Microsoft Intune. O SDK de Aplicativos do Intune dá suporte a cenários semelhantes em diferentes plataformas e destina-se a criar uma experiência consistente em todas as plataformas para os administradores de TI. No entanto, existem pequenas diferenças no suporte a determinados recursos devido a limitações da plataforma.
 
-# Guia de introdução
+# <a name="getting-started"></a>Guia de introdução
 
-## Registrar seu aplicativo de uma loja de aplicativos no Microsoft
+## <a name="register-your-store-app-with-microsoft"></a>Registrar seu aplicativo de uma loja de aplicativos no Microsoft
 
 **Se o aplicativo for interno à sua empresa e não for disponibilizado em uma loja de aplicativos pública**:
 
@@ -55,12 +55,12 @@ Se o link profundo do aplicativo da loja for alterado no futuro, você precisar�
 
 
 
-## Baixar os arquivos do SDK
+## <a name="download-the-sdk-files"></a>Baixar os arquivos do SDK
 
 Os SDKs do Aplicativo do Intune para iOS e Android nativo são hospedados em uma conta do GitHub da Microsoft. Os repositórios públicos abaixo contêm os arquivos do SDK para iOS e Android, respectivamente:
 
-* [SDK do Aplicativo do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
-* [SDK do Aplicativo do Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
+* [SDK de Aplicativo do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [SDK de Aplicativo do Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
 **Se seu aplicativo for um aplicativo Xamarin ou Cordova, use as ferramentas de desenvolvedor abaixo**:
 
@@ -73,7 +73,7 @@ Os SDKs do Aplicativo do Intune para iOS e Android nativo são hospedados em uma
 
 
 
-## Habilitar seu aplicativo móvel iOS ou Android para MAM com o SDK
+## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>Habilitar seu aplicativo móvel iOS ou Android para MAM com o SDK
 
 Para integrar o SDK do Aplicativo do Intune em seu aplicativo iOS nativo, você precisará do seguinte: 
 
@@ -87,7 +87,7 @@ Para integrar o SDK do Aplicativo do Intune em seu aplicativo Android nativo, vo
 A documentação do Componente Xamarin do SDK de Aplicativo do Intune e do Plug-in Cordova do SDK de Aplicativo do Intune pode ser encontrada em seus respectivos repositórios do GitHub. 
 
 
-## Configurando a telemetria para seu aplicativo
+## <a name="configuring-telemetry-for-your-app"></a>Configurando a telemetria para seu aplicativo
 
 O Microsoft Intune coleta dados sobre estatísticas de uso para seu aplicativo.
 
@@ -97,7 +97,7 @@ O Microsoft Intune coleta dados sobre estatísticas de uso para seu aplicativo.
 
 * **SDK do Aplicativo do Intune para Android**: os dados de telemetria não são registrados por meio do SDK.
 
-## Testar seu aplicativo habilitado para MAM com o Microsoft Intune
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Testar seu aplicativo habilitado para MAM com o Microsoft Intune
 
 Depois de concluir as etapas necessárias para integrar seu aplicativo iOS ou Android com um SDK do Aplicativo do Intune, você precisará garantir que todas as políticas de gerenciamento de aplicativo estejam habilitadas e funcionando para o usuário final e o administrador de TI. Para testar seu aplicativo integrado, você precisará do seguinte:
 
