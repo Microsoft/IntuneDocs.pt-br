@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 
 ---
@@ -100,7 +100,7 @@ Você também pode usar o Microsoft Intune para gerenciar computadores Windows c
 
  - Informar inventários de hardware e software
  - Instalar aplicativos da área de trabalho (por exemplo arquivos .exe e .msi)
- - Configurações de firewall
+ - Gerenciar as configurações do firewall
 
 Computadores que são gerenciados com o software cliente do Intune não podem ser totalmente apagados, embora o apagamento seletivo esteja disponível. Computadores gerenciados com o cliente de software do Intune não podem tirar proveito de muitos recursos de gerenciamento do Intune como acesso condicional, configurações de VPN e Wi-Fi ou implantação de certificados e configurações de email.
 
@@ -119,6 +119,6 @@ O Intune pode gerenciar as seguintes plataformas de dispositivo:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
