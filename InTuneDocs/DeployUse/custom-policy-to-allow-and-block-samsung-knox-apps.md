@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,22 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
-ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
 
 
 
 ---
-# Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard
 
 Use os procedimentos neste tópico para criar uma política personalizada do Microsoft Intune que cria um destes procedimentos:
 
 - Uma lista de aplicativos cuja execução no dispositivo é bloqueada. Aplicativos nesta lista serão impedidos de serem executados, mesmo se já tiverem sido instalados quando a política foi aplicada.
 - Uma lista de aplicativos que os usuários do dispositivo podem instalar da loja Google Play. Apenas os aplicativos listados podem ser instalados. Nenhum outro aplicativo pode ser instalado da loja.
 
-Essas configurações podem ser usadas apenas por dispositivos que executam o Samsung KNOX.
+Essas configurações podem ser usadas apenas por dispositivos que executam o Samsung KNOX Standard.
 
-## Para criar uma lista de aplicativos permitidos ou bloqueados
+## <a name="to-create-an-allowed-or-blocked-app-list"></a>Para criar uma lista de aplicativos permitidos ou bloqueados
 
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Política** &gt; **Políticas de Configuração** &gt; **Adicionar**.
 2. Na caixa de diálogo **Criar Nova política**, expanda **Android**, escolha **Configuração Personalizada** e escolha **Criar Política**.
@@ -58,7 +58,7 @@ Essas configurações podem ser usadas apenas por dispositivos que executam o Sa
 Na próxima vez que cada dispositivo de destino fizer check-in, as configurações do aplicativo serão aplicadas.
 
 
-## Implantar a política
+## <a name="deploy-the-policy"></a>Implantar a política
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e clique em **Gerenciar Implantação**.
 
@@ -67,11 +67,11 @@ Na próxima vez que cada dispositivo de destino fizer check-in, as configuraçõ
  
 Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 
-### Consulte também
-[Configurações de política do Android e Samsung KNOX no Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
+### <a name="see-also"></a>Consulte também
+[Configurações de política do Android e do Samsung KNOX no Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

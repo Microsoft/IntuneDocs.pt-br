@@ -2,9 +2,10 @@
 title: Ser notificado pelos alertas | Microsoft Intune
 description: "Saiba como os alertas mantêm você em contato com o que está acontecendo no Microsoft Intune."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
-ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 44b496aecd62d515512f10d2aae97f2c7a06dc6a
 
 
 ---
 
-# Ser notificado pelos alertas do Microsoft Intune
+# <a name="get-notified-by-microsoft-intune-alerts"></a>Ser notificado pelos alertas do Microsoft Intune
 Os alertas mantém você em contato com o que está acontecendo no Microsoft Intune.
 
 Por exemplo, alertas podem notificá-lo sobre os eventos a seguir:
@@ -31,7 +32,7 @@ Por exemplo, alertas podem notificá-lo sobre os eventos a seguir:
 -   Um conflito entre duas políticas do Intune foi detectado
 
 
-## Como os alertas funcionam
+## <a name="how-alerts-work"></a>Como os alertas funcionam
 Alertas são gerados com base em **tipos de alertas**, um conjunto de regras pré-configuradas internas ao Intune. Por exemplo, o tipo de alerta **O armazenamento em nuvem tem 10% ou menos de espaço livre** avisa quando há pouco espaço para armazenar seus aplicativos na nuvem. Você pode habilitar ou desabilitar tipos de alerta e configurar as propriedades de cada tipo de alerta. Por exemplo, ao usar o tipo de alerta acima, você pode configurar:
 
 -   **Estado:** Se o tipo de alerta está habilitado ou desabilitado
@@ -51,16 +52,16 @@ Outros tipos de alerta podem ter itens diferentes que você pode configurar, com
 
 Além disso, você pode configurar o Intune para ser notificado por email quando um alerta é gerado.
 
-## Configurar alertas
+## <a name="set-up-alerts"></a>Configurar alertas
 No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Administrador** &gt; **Alertas e Notificações** e, em seguida, escolha uma das seguintes tarefas:
 
 |Tarefa|Descrição|
 |--------|---------------|
-|**Tipos de alerta**|Escolha o tipo de alerta que deseja configurar e siga um destes procedimentos:<br /><br />Escolha **Configurar**. Na caixa de diálogo **Configurar Tipo de Alerta**, defina as configurações desejadas e clique em **OK**.<br /><br />**Habilite** ou **Desabilite** o alerta.<br /><br />Expanda o nó **Tipos de Alertas** e escolha uma categoria para exibir somente os tipos de alertas nesta categoria.|
+|**Tipos de Alerta**|Escolha o tipo de alerta que deseja configurar e siga um destes procedimentos:<br /><br />Escolha **Configurar**. Na caixa de diálogo **Configurar Tipo de Alerta**, defina as configurações desejadas e clique em **OK**.<br /><br />**Habilite** ou **Desabilite** o alerta.<br /><br />Expanda o nó **Tipos de Alertas** e escolha uma categoria para exibir somente os tipos de alertas nesta categoria.|
 |**Destinatários**|Escolha **Adicionar** para adicionar um novo endereço de email que receberá as notificações de email que você configurar.<br /><br />Você também pode **Editar** ou **Excluir** os destinatários existentes.<br /><br />Para receber notificações, você também deve adicionar esse endereço de email como um destinatário em **Regras de Notificação**.|
 |**Regras de Notificação**|Configura as regras que definem a quem um alerta de email será enviado. Você pode:<br /><br />**Escolher uma regra existente** – Escolha uma regra e clique em **Selecionar Destinatários**. Você pode selecionar todos os destinatários que receberão um email quando um alerta que atenda a essa regra é gerado.<br /><br />**Criar uma nova regra** - insira um nome para a regra, selecione a severidade do alerta e as categorias de alerta que se aplicam às regras, selecione os grupos de dispositivos aos quais a regra se aplica e selecione os usuários que receberão um email quando um alerta é gerado.<br /><br />Você também pode **Habilitar**, **Desabilitar**, **Editar**ou **Excluir** uma regra existente.|
 
-## Trabalhando com alertas
+## <a name="working-with-alerts"></a>Trabalhando com alertas
 Use as opções a seguir para ajudá-lo a trabalhar com alertas no console de administração do Intune.
 
 |Opção|Descrição|
@@ -80,11 +81,11 @@ Os alertas do Intune permanecem ativos até que:
 > [!TIP]
 > Se o mesmo alerta for gerado por dispositivos em execução em sistemas operacionais diferentes, você poderá ver várias versões do mesmo alerta na lista de alertas.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Monitoramento e relatórios com o Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

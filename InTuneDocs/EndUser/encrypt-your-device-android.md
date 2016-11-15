@@ -2,7 +2,7 @@
 title: Criptografar seu dispositivo | Microsoft Intune
 description: Descreve como criptografar um dispositivo Android
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b11a7080cf80ad2a261546bdf91f07bdbebd6c95
 
 
 ---
 
 
-# Criptografar seu dispositivo
+# <a name="encrypt-your-device"></a>Criptografar seu dispositivo
 
 Se sua empresa ou organização pedir que você criptografe o dispositivo Android antes de acessar os arquivos, email ou dados da empresa, siga as etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigir.
 
@@ -34,7 +34,7 @@ Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
 3.  Siga as instruções apresentadas na tela. Durante a criptografia, seu dispositivo pode ser reiniciado várias vezes.
 
-### O que fazer se você tiver problemas
+### <a name="what-to-do-if-you-have-issues"></a>O que fazer se você tiver problemas
 **Problema**: seu dispositivo já foi criptografado, mas um dos seguintes cenários ocorre:
 
 - O botão de criptografia está desabilitado.
@@ -61,6 +61,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

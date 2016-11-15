@@ -2,7 +2,7 @@
 title: "O que o administrador de TI pode ver quando você registra o dispositivo no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
-ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 4563673f1c38cbe29e7cf27e94e8b32411c6c089
 
 
 ---
 
 
-# O que o administrador de TI pode ver quando você registra o dispositivo no Intune?
+# <a name="what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune"></a>O que o administrador de TI pode ver quando você registra o dispositivo no Intune?
 
 Ao registrar o dispositivo Windows no Intune, você concede permissão ao administrador de TI para gerenciar o dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
 
@@ -62,6 +62,6 @@ Para obter mais informações, consulte [O que acontece quando você instala o a
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

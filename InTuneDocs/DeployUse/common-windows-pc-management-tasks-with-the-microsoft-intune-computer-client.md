@@ -2,7 +2,8 @@
 title: Tarefas comuns de gerenciamento de computadores Windows | Microsoft Intune
 description: "Examine as tarefas neste tópico para saber como gerenciar computadores Windows que executam o cliente de software do Intune."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
 
 
 ---
 
-# Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune
 Examine as tarefas deste tópico para saber como gerenciar seus computadores que executam o software cliente do Intune. Se ainda não tiver instalado o cliente em seus computadores, veja [Instalar o cliente de software Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
-## Usar políticas para simplificar o gerenciamento de computador
+## <a name="use-policies-to-simplify-pc-management"></a>Usar políticas para simplificar o gerenciamento de computador
 
 Computadores Windows que executam o cliente de software do Intune podem ser gerenciados por meio das políticas de **Gerenciamento do Computador** do Intune.
 
 ![Modelo de políticas para computadores Windows](../media/pc_policy_template.png)
 
-### Gerenciar o Microsoft Intune Center
+### <a name="manage-the-microsoft-intune-center"></a>Gerenciar o Microsoft Intune Center
 Os usuários veem o cliente de software do Intune como o **Microsoft Intune Center**. O Microsoft Intune Center permite que os usuários:
 
 -   Obtenham aplicativos a partir do portal da empresa.
@@ -49,18 +50,18 @@ O Microsoft Intune Center é instalado em todos os computadores gerenciados. Voc
 |**Endereço de email**|O endereço de email do administrador que gerencia o computador.<br /><br />Comprimento máximo: 40 caracteres|
 |**Nome do site**|O nome do site de suporte para os usuários.<br /><br />Comprimento máximo: 40 caracteres|
 |**URL do site**|A URL do site de suporte.<br /><br />Comprimento máximo: 150 caracteres|
-|**Anotações**|Uma observação que é exibida para os usuários.<br /><br />Comprimento máximo: 120 caracteres|
+|**Observações**|Uma observação que é exibida para os usuários.<br /><br />Comprimento máximo: 120 caracteres|
 
-## Configurações de atualizações de software
+## <a name="software-updates-settings"></a>Configurações de atualizações de software
 Use as políticas para definir as configurações que os computadores gerenciados usam para procurar e baixar atualizações de software da Microsoft e de terceiros. Essas atualizações não incluem atualizações do sistema operacional (ou seja, atualização do Windows 7 para o Windows 10 ou atualizações de uma versão do Windows 10 para uma versão posterior). Para mais informações, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune).
 
-### Configurações do Endpoint Protection
+### <a name="endpoint-protection-settings"></a>Configurações do Endpoint Protection
 Use as políticas para definir as configurações do Endpoint Protection que você implantará depois nos computadores gerenciados. Isso inclui as agendas de verificação, ações a serem tomadas quando um malware for detectado e muito mais. Para obter mais informações, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
 
-## Configurações do Firewall do Windows
+## <a name="windows-firewall-settings"></a>Configurações do Firewall do Windows
 As políticas simplificam a administração de configurações do Firewall do Windows em computadores gerenciados. Para obter detalhes, consulte [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) (Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune).
 
-## Exibir o inventário de hardware e software
+## <a name="view-hardware-and-software-inventory"></a>Exibir o inventário de hardware e software
 O Intune coleta informações detalhadas sobre o hardware e o software dos computadores gerenciados. Use as informações nos procedimentos a seguir para aprender a criar:
 
 -   Um relatório que relaciona as informações sobre os recursos de hardware dos computadores.
@@ -69,7 +70,7 @@ O Intune coleta informações detalhadas sobre o hardware e o software dos compu
 
 -   Como atualizar o inventário de um computador para garantir que os dados no relatório estejam atualizados.
 
-### Para exibir informações sobre seus computadores
+### <a name="to-display-information-about-your-computers"></a>Para exibir informações sobre seus computadores
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Inventário de Computador**.
 
@@ -79,7 +80,7 @@ O Intune coleta informações detalhadas sobre o hardware e o software dos compu
 
     Você pode classificar o relatório com base em qualquer uma das colunas, como **Nome**, **Tipo de Chassi** ou **Fabricante** selecionando cada título de coluna.
 
-### Para exibir o software instalado em seus computadores
+### <a name="to-display-software-installed-on-your-computers"></a>Para exibir o software instalado em seus computadores
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Software Detectados**.
 
@@ -89,7 +90,7 @@ O Intune coleta informações detalhadas sobre o hardware e o software dos compu
 
     O relatório pode ser classificado com base em qualquer uma das colunas, como **Nome**, **Editor** ou **Categoria** selecionando cada título de coluna. Você pode expandir as atualizações nessa lista para mostrar mais detalhes (como os computadores nos quais está instalado) clicando na seta de direção ao lado do item de lista.
 
-### Para atualizar o inventário do computador e garantir que esteja atualizado
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Para atualizar o inventário do computador e garantir que esteja atualizado
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o computador para o qual deseja atualizar o inventário).
 
@@ -102,7 +103,7 @@ O Intune coleta informações detalhadas sobre o hardware e o software dos compu
     A caixa de diálogo **Status da tarefa** é exibida e mostra as tarefas remotas atuais, seus status, nome do dispositivo, todos os erros reportados e fornece um link para as informações sobre a solução problemas.
 
 
-## Reiniciar remotamente um computador Windows
+## <a name="remotely-restart-a-windows-pc"></a>Reiniciar remotamente um computador Windows
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o computador que deseja reiniciar).
 
@@ -112,7 +113,7 @@ O Intune coleta informações detalhadas sobre o hardware e o software dos compu
 
 4.  Na caixa de diálogo **Status da tarefa** , examine as tarefas remotas atuais, seus status, nome do dispositivo e todos os erros reportados.
 
-## Desativar um computador
+## <a name="retire-a-computer"></a>Desativar um computador
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o computador que deseja desativar).
 
@@ -143,10 +144,10 @@ Ao desativar um computador:
 
     Se o cliente não desinstalar, leia [Troubleshoot Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Solucionar problemas de proteção de ponto de extremidade) para obter mais ajuda.
 
-## Gerenciar a vinculação de usuário e dispositivo
+## <a name="manage-userdevice-linking"></a>Gerenciar a vinculação de usuário e dispositivo
 Antes de implantar o software em um usuário, você deve vincular o usuário a um computador. Você pode vincular um usuário a vários computadores, mas cada computador pode ser vinculado a apenas um usuário. Os usuários são vinculados automaticamente a quaisquer computadores que se registram no Intune usando o portal da empresa.
 
-### Para vincular um usuário a um computador
+### <a name="to-link-a-user-to-a-computer"></a>Para vincular um usuário a um computador
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o computador que você deseja vincular a um usuário).
 
@@ -165,13 +166,13 @@ Antes de implantar o software em um usuário, você deve vincular o usuário a u
 > [!TIP]
 > Se você quiser restringir a capacidade dos usuários finais de vincular-se a computadores, habilite a opção **Restringir a Capacidade dos Usuários de Vincular-se a Computadores** na política **Configurações do Agente do Microsoft Intune**.
 
-## Solicitar e fornecer assistência remota para computadores Windows
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar e fornecer assistência remota para computadores Windows
 
 O Microsoft Intune pode usar o software [TeamViewer](https://www.teamviewer.com), adquirido separadamente, para permitir que os usuários de computadores que executam o cliente de software do Intune obtenham sua ajuda por meio de assistência remota. Quando um usuário solicita ajuda do Microsoft Intune Center, você será informado por um alerta, pode aceitar a solicitação e, em seguida, fornecer assistência.
 Esta funcionalidade substitui a funcionalidade de Assistência Remota do Windows existente no Intune.
 
 
-### Antes de começar
+### <a name="before-you-start"></a>Antes de começar
 
 Antes de começar a estabelecer e responder às solicitações de assistência remota, você deve garantir que os seguintes pré-requisitos estão em vigor:
 
@@ -179,7 +180,7 @@ Antes de começar a estabelecer e responder às solicitações de assistência r
 - Computadores Windows que você deseja administrar devem ser [gerenciados pelo cliente do computador Windows](manage-windows-pcs-with-microsoft-intune.md)
 - Todos os sistemas operacionais de computador Windows com suporte pelo Intune podem ser administrados.
 
-### Configure o TeamViewer Connector
+### <a name="configure-the-teamviewer-connector"></a>Configure o TeamViewer Connector
 
 1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administrador**.
 2. No espaço de trabalho **Administrador**, escolha **TeamViewer**.
@@ -190,7 +191,7 @@ Antes de começar a estabelecer e responder às solicitações de assistência r
 7. No console do Intune, verifique se o item **TeamViewer Connector** é mostrado como **Habilitado**.
 
 
-### Abrir uma solicitação de assistência remota (usuário final)
+### <a name="open-a-remote-assistance-request-end-user"></a>Abrir uma solicitação de assistência remota (usuário final)
 
 1. Em um cliente de computador Windows, abra o **Microsoft Intune Center**.
 2. Em **Assistência Remota**, escolha **Solicitar Assistência Remota**.
@@ -198,7 +199,7 @@ Antes de começar a estabelecer e responder às solicitações de assistência r
 4. O usuário vê uma mensagem perguntando se você pode controlar o seu computador. Eles devem aceitar esta mensagem para continuar.
 5. Durante a sessão de assistência remota, o usuário vê uma janela que mostra a eles que estão conectados. Se eles fecharem esta janela, a sessão remota será encerrada.
 
-### Responder a uma solicitação de assistência remota
+### <a name="respond-to-a-remote-assistance-request"></a>Responder a uma solicitação de assistência remota
 
 1. Quando um usuário envia uma solicitação de assistência remota, você poderá exibi-la no espaço de trabalho **Alertas**, em **Monitoramento** > **Assistência Remota**. Por exemplo:
 > ![Captura de tela de uma solicitação de assistência remota](./media/team-viewer.png)
@@ -210,12 +211,12 @@ Antes de começar a estabelecer e responder às solicitações de assistência r
 
 Durante uma sessão de assistência remota, você poderá usar todos os comandos disponíveis do TeamViewer para controlar o computador remoto. Para obter ajuda com esses comandos, baixe o [Manual for remote control](http://www.teamviewer.com/en/support/documents/) (Manual para controle remoto) do site do TeamViewer.
 
-### Feche a sessão de assistência remota
+### <a name="close-the-remote-assistance-session"></a>Feche a sessão de assistência remota
 
 Do menu **Ações** da janela **TeamViewer**, escolha **Encerrar a Sessão**.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

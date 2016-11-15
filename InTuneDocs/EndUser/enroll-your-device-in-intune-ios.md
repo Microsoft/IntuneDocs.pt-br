@@ -2,10 +2,10 @@
 title: Registrar seu dispositivo iOS no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo iOS no Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 
 ---
 
 
-# Registrar seu dispositivo iOS no Intune
+# <a name="enroll-your-ios-device-in-intune"></a>Registrar seu dispositivo iOS no Intune
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo iOS para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, o departamento de TI pode gerenciar recursos corporativos ou de estudante e mantê-los seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?).
 
 Se você estiver tentando registrar um dispositivo Mac OS X, consulte [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrar seu dispositivo Mac OS X no Intune).
 
-**Antes de iniciar:**
+**Antes de começar:**
 
 - Verifique se o registro foi concluído após o início das etapas. Se você iniciá-las, mas não concluí-las, o registro pode não funcionar se você tentar novamente mais tarde.
 - Verifique se o Wi-Fi está funcionando. Caso contrário, o registro falhará.
@@ -92,10 +92,10 @@ Se você estiver tentando registrar um dispositivo Mac OS X, consulte [Enroll yo
 O dispositivo agora está registrado no Intune, e você é levado de volta ao aplicativo Portal da Empresa.
 
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

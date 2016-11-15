@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: 2959ad5f09be686e4dae9b751e8ede5e6b60bd89
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
 
 
 ---
@@ -28,21 +28,21 @@ Os perfis de Wi-Fi, VPN e email do Microsoft Intune funcionam em conjunto para a
 Implante configurações de rede sem fio aos seus usuários. Essas configurações facilitam para os usuários se conectar à rede corporativa.
 #### <a name="supported-platforms"></a>Plataformas com suporte
 
-|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
+|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Sim (Você pode importar um perfil de Wi-Fi do Windows.)|Sim (Você pode configurar OMA-URI.) |Sim|Sim|Sim|
 
 ## <a name="vpn-profilesvpnconnectionsinmicrosoftintunemd-and-supported-platforms"></a>[Perfis de VPN](vpn-connections-in-microsoft-intune.md) e plataformas com suporte
 Implante configurações de VPN (rede virtual privada) para seus usuários. Essas configurações facilitam para os usuários se conectar aos recursos na rede corporativa.
 
-|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
+|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Sim|Sim|Sim|Sim|Sim|
 
 ## <a name="email-profilesconfigureaccesstocorporateemailusingemailprofileswithmicrosoftintunemd-and-supported-platforms"></a>[Perfis de email](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) e plataformas com suporte
 Crie, implante e monitore configurações de email nativas em dispositivos de sua organização.
 
-|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
+|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Não|Sim|Sim|Não|Sim|
 > [!NOTE]
@@ -51,12 +51,12 @@ Crie, implante e monitore configurações de email nativas em dispositivos de su
 ## <a name="certificate-profilessecureresourceaccesswithcertificateprofilesmd-and-supported-platforms"></a>[Perfis de certificado](secure-resource-access-with-certificate-profiles.md) e plataformas com suporte
 Ajude a proteger o acesso aos recursos de empresa, incluindo conexões VPN e redes sem fio.
 
-|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
+|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Sim|Sim|Sim|Sim|Sim|
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

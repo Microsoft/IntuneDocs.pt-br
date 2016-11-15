@@ -2,9 +2,10 @@
 title: Wi-Fi usando PSK | Microsoft Intune
 description: "Use a Configuração Personalizada do Azure para criar um perfil de Wi-Fi com uma chave pré-compartilhada."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
-ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
+ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# Para criar um perfil de Wi-Fi com uma chave pré-compartilhada
+# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>Usar uma política personalizada para criar um perfil de Wi-Fi com uma chave pré-compartilhada
 Veja aqui como usar a **Configuração Personalizada** do Azure para criar um perfil de Wi-Fi com uma chave pré-compartilhada. Este tópico também apresenta um exemplo de como criar um perfil de Wi-Fi baseado em EAP.
 
 > [!NOTE]
@@ -48,8 +49,7 @@ Veja aqui como usar a **Configuração Personalizada** do Azure para criar um pe
     > [!NOTE]
 Lembre-se de incluir o caractere de ponto no início.
 
-    SSID é o SSID para o qual você está criando a política. Por exemplo,
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID é o SSID para o qual você está criando a política. Por exemplo, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
   e. **Campo de Valor** é onde você cola o código XML. Veja este exemplo. Cada valor deve ser adaptado às suas configurações de rede. Consulte a seção de comentários do código para ver algumas dicas.
 4. Escolha **OK**, salve e implante a política.
@@ -58,7 +58,7 @@ Lembre-se de incluir o caractere de ponto no início.
     > Essa política só pode ser implantada para grupos de usuários.
 
 Na próxima vez em que cada dispositivo fizer check-in, a política será aplicada e um perfil de Wi-Fi será criado no dispositivo. O dispositivo poderá conectar-se à rede automaticamente.
-## Perfil de Wi-Fi do Android ou do Windows
+## <a name="android-or-windows-wifi-profile"></a>Perfil de Wi-Fi do Android ou do Windows
 
 Aqui está um exemplo de código XML de um perfil de Wi-Fi do Android ou do Windows:
 
@@ -109,7 +109,7 @@ Aqui está um exemplo de código XML de um perfil de Wi-Fi do Android ou do Wind
       </MSM>
     </WLANProfile>
 
-## Perfil de Wi-Fi baseado em EAP
+## <a name="eapbased-wifi-profile"></a>Perfil de Wi-Fi baseado em EAP
 Aqui está um exemplo de código XML de um perfil de Wi-Fi baseado em EAP:
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ Aqui está um exemplo de código XML de um perfil de Wi-Fi baseado em EAP:
       </MSM>
     </WLANProfile>
 
-## Criar o arquivo XML de uma conexão Wi-Fi existente
+## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>Criar o arquivo XML de uma conexão Wi-Fi existente
 Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
 1. Em um computador que está conectado ou recentemente foi conectado à rede sem fio, abra a seguinte pasta: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
@@ -198,7 +198,7 @@ Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
 3.     Pesquise nos arquivos XML para localizar aquele com o nome correto.
 4.     Depois de localizar o arquivo XML correto, copie e cole o código XML no campo de Dados da página de configurações de OMA-URI.
 
-## Implantar a política
+## <a name="deploy-the-policy"></a>Implantar a política
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
@@ -210,11 +210,11 @@ Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
 
 Ao selecionar uma política implantada, você poderá exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Conexões Wi-Fi no Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

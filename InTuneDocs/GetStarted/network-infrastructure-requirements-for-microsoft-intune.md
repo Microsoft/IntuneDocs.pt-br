@@ -2,7 +2,8 @@
 title: Requisitos de infraestrutura de rede | Microsoft Intune
 description: "Requisitos do servidor proxy, domínio, porta e firewall do Intune"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
-ms.openlocfilehash: aa4d2219a5962d83b80630ed3a09660a76469764
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 178d9fc474588c088ed510098dc71bc763695b3c
 
 
 ---
@@ -29,7 +30,7 @@ Não há exigência de uso de infraestrutura local (como um servidor para instal
 Para gerenciar computadores com firewalls e servidores proxy, é preciso configurar firewalls e servidores proxy para permitir comunicações para o Intune.
 
 ## Requisitos de firewalls, portas e domínios
-Os dispositivos gerenciados exigem configurações que permitem que **Todos os Usuários** acessem vários serviços através de firewalls.
+Os dispositivos gerenciados exigem configurações que permitem que **Todos os Usuários** acessem serviços através de firewalls.
 
 A tabela a seguir lista os domínios e serviços que o cliente do Intune acessa.
 
@@ -170,6 +171,6 @@ Também é possível usar um servidor proxy que armazene conteúdo em cache para
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,10 +2,10 @@
 title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/16/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 
 ---
 
 
-# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune?
 
 Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo Android no Intune, você pode usar o aplicativo Portal da Empresa para:
 
@@ -56,10 +56,10 @@ Após o dispositivo ser adicionado ao Portal da Empresa, aproximadamente a cada 
 
 -   Enviar quaisquer atualizações de inventário de aplicativos da empresa. (Essas atualizações não têm informações pessoais.)
 
-Precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+Precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a [equipe de Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

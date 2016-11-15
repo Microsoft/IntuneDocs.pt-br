@@ -2,8 +2,8 @@
 title: "Você é solicitado a instalar o Lookout for Work em seu dispositivo Android | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 
 ---
 
-# Aparecerá um aviso para que você instale o Lookout for Work
+# <a name="you-are-prompted-to-install-lookout-for-work"></a>Aparecerá um aviso para que você instale o Lookout for Work
 
 Antes de poder acessar seu trabalho, o administrador de TI exige que você instale o aplicativo Lookout for Work, que ajuda a proteger seu dispositivo localizando possíveis ameaças à segurança.
 
@@ -78,10 +78,10 @@ Se tiver problemas com a instalação, tente executar as etapas de solução de 
 
 Às vezes, as instalações podem falhar devido a problemas técnicos fora de seu controle. Se isso acontecer, tente instalar o Lookout for Work manualmente da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
