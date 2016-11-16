@@ -3,8 +3,9 @@ title: Escolher como gerenciar dispositivos | Microsoft Intune
 description: Saiba mais sobre as diferentes maneiras de registrar e gerenciar dispositivos.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
-ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 
 ---
 
-# Escolha como gerenciar dispositivos
+# <a name="choose-how-to-manage-devices"></a>Escolha como gerenciar dispositivos
 
 Para tirar proveito dos muitos recursos que o Intune oferece, como a implantação de aplicativo e o controle de configurações de dispositivo, os dispositivos devem ser *gerenciados*. A maneira como você gerencia os dispositivos depende dos recursos do Intune que deseja usar.
 Este tópico o ajudará a escolher qual método atende às suas necessidades.
@@ -31,7 +32,7 @@ Para gerenciar computadores Windows, você tem duas opções:
 1. Registrar o dispositivo **ou**
 2. Instalar o *cliente de software do Intune*.
 
-## Decidir qual método usar
+## <a name="decide-which-method-to-use"></a>Decidir qual método usar
 Use este fluxo de decisão para decidir como registrar seus dispositivos gerenciados.
 
 ![Fluxo de decisão para registrar seus dispositivos gerenciados.](./media/choose-manage-method.png)
@@ -48,12 +49,12 @@ Para obter uma lista detalhada dos recursos de gerenciamento que você obterá c
 Para obter informações sobre os dispositivos e os computadores aos quais o Intune dá suporte, veja [Suporte para dispositivos móveis e computadores](/intune/get-started/supported-mobile-devices-and-computers)
 
 
-## Gerenciamento do Exchange ActiveSync
+## <a name="exchange-activesync-management"></a>Gerenciamento do Exchange ActiveSync
 Além de registrar um dispositivo ou instalar o software cliente do Intune, você também pode gerenciar dispositivos [usando o Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). Esse método requer que você instale o Conector Local ou use o Service to Service Connector interno para se conectar ao seu Exchange Server.
 Embora essa seja uma terceira opção para gerenciar dispositivos, ela fornece um conjunto limitado de recursos de gerenciamento quando comparada aos outros métodos.
 
 
-## Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 
 - [Escolher como registrar dispositivos móveis](/intune/get-started/choose-how-to-enroll-devices1)
 - [Gerenciar computadores Windows com o software cliente de computador do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
@@ -64,7 +65,6 @@ Embora essa seja uma terceira opção para gerenciar dispositivos, ela fornece u
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

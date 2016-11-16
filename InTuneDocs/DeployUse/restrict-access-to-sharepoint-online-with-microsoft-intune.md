@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
+ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 
 ---
@@ -68,7 +68,7 @@ Se uma condição não for atendida, o usuário receberá uma das seguintes mens
 Você pode restringir o acesso ao SharePoint Online quando acessado por um navegador em dispositivos **iOS** e **Android**.  O acesso será permitido somente de navegadores com suporte em dispositivos compatíveis:
 * Safari (iOS)
 * Chrome (Android)
-* Navegador gerenciado (iOS e Android)
+* Managed Browser (iOS e Android 5.0 e posteriores)
 
 **Navegadores sem suporte serão bloqueados**.
 
@@ -156,7 +156,7 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
 
 4.   Em **Acesso do navegador** ao SharePoint Online e OneDrive for Business, você pode optar por permitir o acesso ao Exchange Online somente por meio de navegadores com suporte: Safari (iOS) e Chrome (Android). O acesso de outros navegadores será bloqueado.  As mesmas restrições de plataforma que você selecionou para acesso de aplicativo para OneDrive também se aplicam aqui.
 
-  Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador.  Para isso, os usuários finais devem habilitar a opção "Habilitar Acesso do Navegador" no dispositivo registrado da seguinte maneira:
+  Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador.  Para isso, os usuários finais devem habilitar a opção “Habilitar Acesso do Navegador” no dispositivo registrado da seguinte maneira:
   1.    Inicie o **aplicativo do Portal da Empresa**.
   2.    Vá para a página **Configurações** por meio dos três pontos (...) ou do botão de menu do hardware.
   3.    Pressione o botão **Habilitar Acesso do Navegador**.
@@ -195,6 +195,6 @@ Selecione qualquer grupo de dispositivos móveis e então, na guia **Dispositivo
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

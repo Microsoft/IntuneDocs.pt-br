@@ -2,9 +2,10 @@
 title: Configurar a infraestrutura de certificado para PFX | Microsoft Intune
 description: Criar e implantar perfis de certificado .PFX.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
 
 
 
 ---
-# Configurar a infraestrutura de certificado
+# <a name="configure-certificate-infrastructure"></a>Configurar a infraestrutura de certificado
 Este tópico descreve o que você precisa para criar e implantar perfis de certificado .PFX.
 
 Para fazer qualquer autenticação baseada em certificado na sua organização, você precisa de uma Autoridade de Certificação Corporativa.
@@ -30,7 +31,7 @@ Para usar perfis de certificado .PFX, além da Autoridade de Certificação Corp
 
 -  O Conector de Certificado do Intune, que é executado no computador, que pode se comunicar com a Autoridade de Certificação.
 
-## Descrição da infraestrutura local
+## <a name="onpremises-infrastructure-description"></a>Descrição da infraestrutura local
 
 
 -    **Domínio do Active Directory**: todos os servidores listados nesta seção (exceto pelo Servidor Proxy de Aplicativo Web) devem ser ingressados em seu domínio do Active Directory.
@@ -50,7 +51,7 @@ Para usar perfis de certificado .PFX, além da Autoridade de Certificação Corp
     Para obter mais informações sobre certificados de WAP, consulte a seção **Planejar certificados** de [Planejando Publicar Aplicativos Usando o Proxy de Aplicativo Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre servidores WAP, consulte [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx) (Trabalhando com o Proxy de Aplicativo Web).|
 
 
-### Certificados e modelos
+### <a name="certificates-and-templates"></a>Certificados e modelos
 
 |Objeto|Detalhes|
 |----------|-----------|
@@ -58,16 +59,16 @@ Para usar perfis de certificado .PFX, além da Autoridade de Certificação Corp
 |**Certificado de AC raiz confiável**|Você o exporta como um arquivo **.cer** da AC emissora ou de qualquer dispositivo que confie na AC emissora e o implanta nos dispositivos usando o perfil de certificado de AC confiável.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
 
 
-## Configure sua infraestrutura
+## <a name="configure-your-infrastructure"></a>Configure sua infraestrutura
 Para poder configurar perfis de certificado, você deve concluir as tarefas a seguir. Essas tarefas exigem conhecimento do Windows Server 2012 R2 e do ADCS (Serviços de Certificados do Active Directory):
 
 - **Tarefa 1** – configurar modelos de certificado na autoridade de certificação.
 - **Tarefa 2** - habilitar, instalar e configurar o Conector de Certificado do Intune.
 
-### Tarefa 1 – Configurar modelos de certificado na autoridade de certificação
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Tarefa 1 – Configurar modelos de certificado na autoridade de certificação
 Nesta tarefa, você publicará o modelo de certificado.
 
-##### Para configurar a autoridade de certificação
+##### <a name="to-configure-the-certification-authority"></a>Para configurar a autoridade de certificação
 
 1.  Na AC emissora, use o snap-in de Modelos de Certificado para criar um novo modelo personalizado ou copie e edite um modelo existente (como o modelo de Usuário) para uso com o .PFX.
 
@@ -103,12 +104,12 @@ Nesta tarefa, você publicará o modelo de certificado.
 
 4.  No computador da AC, certifique-se de que o computador que hospeda o Conector de Certificado do Intune tenha a permissão de registro, para que ele possa acessar o modelo usado na criação do perfil .PFX. Defina essa permissão na guia **Segurança** das propriedades do computador da Autoridade de Certificação.
 
-### Tarefa 2 - Habilitar, instalar e configurar o Conector de Certificado do Intune
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Tarefa 2 - Habilitar, instalar e configurar o Conector de Certificado do Intune
 Nesta tarefa, você vai:
 
 Baixar, instalar e configurar o Conector de Certificado.
 
-##### Para habilitar o suporte ao Conector de Certificado
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Para habilitar o suporte ao Conector de Certificado
 
 1.  Abra o [Console de administração do Intune](https://manage.microsoft.com) e escolha **Administrador** &gt; **Conector de Certificado**.
 
@@ -116,7 +117,7 @@ Baixar, instalar e configurar o Conector de Certificado.
 
 3.  Selecione **Habilitar Conector de Certificado**e escolha **OK**.
 
-##### Para baixar, instalar e configurar o Conector de Certificado
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Para baixar, instalar e configurar o Conector de Certificado
 
 1.  Abra o [Console de administração do Intune](https://manage.microsoft.com) e escolha **Administrador** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Conector de Certificado** &gt; **Baixar Conector de Certificado**.
 
@@ -153,13 +154,13 @@ Baixar, instalar e configurar o Conector de Certificado.
 
 Para validar que o serviço está em execução, abra um navegador e digite a seguinte URL, que deve retornar um erro **403** :
 
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
+**http:// &lt;FQDN_do_seu_servidor_NDES&gt;/certsrv/mscep/mscep.dll**
 
-### Próximas etapas
+### <a name="next-steps"></a>Próximas etapas
 Agora você está pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurar perfis de certificado).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

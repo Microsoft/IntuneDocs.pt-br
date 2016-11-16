@@ -2,8 +2,8 @@
 title: Acessar o email corporativo com perfis de email | Microsoft Intune
 description: "As configurações de perfil de email podem ser usadas para definir configurações de acesso de email para clientes de email específicos em dispositivos móveis."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
-ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
 
 
 ---
 
-# Configurar o acesso a email corporativo usando perfis de email com o Microsoft Intune
+# <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar o acesso a email corporativo usando perfis de email com o Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Muitas plataformas móveis incluem um cliente de email nativo que é fornecido como parte do sistema operacional. Alguns desses clientes podem ser configurados usando perfis de email, conforme descrito neste tópico.
 
 As configurações de perfil de email podem ser usadas para definir configurações de acesso de email para clientes de email específicos em dispositivos móveis. Em plataformas com suporte, os clientes de email nativos podem ser configurados pelo Microsoft Intune para permitir aos usuários acessar o email corporativo em seus dispositivos pessoais, sem qualquer configuração adicional.
@@ -56,36 +59,36 @@ Além de configurar uma conta de email no dispositivo, você pode definir quanto
 >**Android for Work**: o perfil do Intune se aplica somente a aplicativos de email específicos no perfil de trabalho do dispositivo e não afeta a configuração de email no perfil do usuário do dispositivo.
 
 
-## Proteger perfis de email
+## <a name="secure-email-profiles"></a>Proteger perfis de email
 Você pode proteger perfis de email usando um certificado ou uma senha.
 
-### Certificados
+### <a name="certificates"></a>Certificados
 Ao criar o perfil de email, você escolhe um perfil de certificado que você criou anteriormente no Intune. Ele é conhecido como certificado de identidade e é usado para autenticar em relação a um perfil de certificado confiável (ou um certificado raiz) para estabelecer que o dispositivo do usuário tem permissão para se conectar. O certificado confiável é implantado no computador que autentica a conexão de email, em geral, o servidor de email nativo.
 
 Para obter mais informações sobre como criar e usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado).
 
-### Nome e senha do usuário
+### <a name="user-name-and-password"></a>Nome e senha do usuário
 O usuário se autentica no servidor de email nativo fornecendo seu nome de usuário e senha.
 
 A senha não está contida no perfil do email, portanto o usuário deve fornecê-la ao se conectar ao email.
 
-### Criar um perfil de email
+### <a name="create-an-email-profile"></a>Criar um perfil de email
 
 1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** &gt; **Adicionar Política**.
 
 2.  Configure um dos seguintes tipos de política:
 
-    -   **Perfil de email para Samsung KNOX padrão (4.0 e posterior)**
+    -   **Perfil de email para Samsung KNOX Standard (4.0 e posterior)**
 
     -   **Perfil de email (iOS 8.0 e posterior)**
 
-    -   **Perfil de Email (Windows Phone 8.1 e posterior)**
+    -   **Perfil de email (Windows Phone 8.1 e posterior)**
 
     -   **Perfil de email (Windows 10 Desktop e Mobile e posterior)**
 
-    -   **Perfil de Email (Android for Work – Gmail)**
+    -   **Perfil de email (Android for Work – Gmail)**
 
-    -   **Perfil de Email (Android for Work – Nine Work)**
+    -   **Perfil de email (Android for Work – Nine Work)**
 
     Você só pode criar e implantar uma política de perfil de email personalizado. Configurações recomendadas não estão disponíveis.
 
@@ -96,7 +99,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     |**Nome**|Nome exclusivo do perfil de email.|
     |**Descrição**|Uma descrição que ajuda a identificar esse perfil.|
     |**Host**|O nome do host do servidor da empresa que hospeda o serviço de email nativo.|
-    |**Nome da Conta**|O nome de exibição para a conta de email, como será exibido para os usuários em seus dispositivos.|
+    |**Nome da conta**|O nome de exibição para a conta de email, como será exibido para os usuários em seus dispositivos.|
     |**Nome de usuário**|Como o nome de usuário da conta de email será obtido. Selecione **Nome de usuário** para um servidor Exchange local ou selecione **Nome UPN** para o Office 365.|
     |**Endereço de email**|Como o endereço de email do usuário em cada dispositivo é gerado. Selecione **Endereço SMTP Primário** para usar o endereço SMTP primário para fazer logon no Exchange ou use **Nome UPN** para usar o nome da entidade completo como o endereço de email.|
     |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.|
@@ -117,7 +120,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
 
 A nova política é exibida no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
-## Implantar a política
+## <a name="deploy-the-policy"></a>Implantar a política
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
@@ -135,6 +138,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

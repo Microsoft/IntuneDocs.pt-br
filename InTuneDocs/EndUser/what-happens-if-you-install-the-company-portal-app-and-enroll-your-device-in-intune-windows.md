@@ -2,10 +2,10 @@
 title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows no Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows no Intune?
 
 Quando você instala o aplicativo Portal da Empresa e o utiliza para registrar um dispositivo Windows ou Windows Phone, está permitindo que o seu administrador de TI gerencie seu dispositivo para ajudar manter os dados corporativos ou de estudante seguros. Este tópico descreve o que acontece para dispositivos anteriores ao Windows 10. Para dispositivos Windows 10, consulte o [tópico relacionado](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
-## O que acontece com todos os dispositivos Windows após o registro
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>O que acontece com todos os dispositivos Windows após o registro
 Registre seu dispositivo Windows ou Windows Phone no Intune permite que você:
 
 -   acessar a rede da empresa, bem como seu email e arquivos de trabalho.
@@ -41,7 +41,7 @@ Ao registrar seu dispositivo, você permitirá que o seu administrador de TI rea
 
 -   Redefinir o dispositivo de volta para as configurações padrão de fábrica. Essa ação será útil se o dispositivo for perdido ou roubado.
 
--   Remova somente os arquivos relacionados à empresa e aplicativos de negócios. *Suas configurações pessoais e de dados não são removidas.*
+-   Remova somente os arquivos relacionados à empresa e aplicativos de negócios. *Suas configurações e dados pessoais não são removidos.*
 
 -   O seu administrador de TI ver o software instalado no dispositivo, inclusive o software que você instalou pessoalmente.
 
@@ -53,7 +53,7 @@ Ao registrar seu dispositivo, você permitirá que o seu administrador de TI rea
 
 -   Impede que você tire fotos de dados relacionados à empresa.
 
-## O que acontece com todos os computadores Windows após o registro
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>O que acontece com todos os computadores Windows após o registro
 
 -  Um software será instalado no computador para permitir que o administrador de TI gerencie o computador e que você acesse os recursos da empresa, como aplicativos e informações de suporte. O administrador de TI pode atualizar esse software automaticamente.
 
@@ -63,7 +63,7 @@ Ao registrar seu dispositivo, você permitirá que o seu administrador de TI rea
 
 -  O administrador de TI pode instalar aplicativos e atualizações no seu computador.
 
-## O que acontece a cada oito horas após o registro de dispositivo
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>O que acontece a cada oito horas após o registro de dispositivo
 Aproximadamente a cada oito horas, os dispositivos registrados vão:
 
 -   Baixar atualizações de aplicativos e políticas disponibilizadas pelo seu administrador de TI.
@@ -72,10 +72,10 @@ Aproximadamente a cada oito horas, os dispositivos registrados vão:
 
 -   Enviar quaisquer atualizações de inventário de aplicativos da empresa.
 
-Se tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

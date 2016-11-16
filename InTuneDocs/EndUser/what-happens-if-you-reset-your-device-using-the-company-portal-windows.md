@@ -2,10 +2,10 @@
 title: "O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bdb221d9c52231d31511b29cbdc69985bc0da5b2
-ms.openlocfilehash: 1cc7e4ad5abee16a0e06780b37c23903d196a018
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
 
 
 ---
 
 
-# O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
+# <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
 
 Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empresa](reset-your-device-cpwebsite.md) para redefinir o dispositivo do Windows, ele redefine o dispositivo para as configurações de fábrica e exclui todos os aplicativos, configurações e dados, incluindo seus dados pessoais. O que acontece em cada dispositivo depende do tipo de dispositivo que você tem e de como ele é usado (conforme descrito na tabela a seguir). Para obter instruções sobre como redefinir o dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md) (Redefinir (apagar) o dispositivo perdido ou roubado).
 
@@ -32,10 +32,10 @@ Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empre
 |Seu dispositivo pode acessar somente o email da empresa|**Windows Phone 8.1**<br />Seu dispositivo não aparecerá mais no Portal da Empresa, sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.<br /><br />**Windows 7 ou Windows Vista**<br />Você não poderá redefinir um computador que esteja executando o Windows 7 ou anterior e seja usado somente para email.<br /><br />**Windows 8.1 e Windows 8**<br />Seu dispositivo não aparecerá mais no Portal da Empresa, sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.|
 |PCs e laptops|**Windows 8.1 e Windows 8**<br />Você não pode redefinir um computador que esteja executando o Windows 8 ou o Windows 8.1, a menos que ele seja usado somente para email.<br /><br />**Windows 7 ou Windows Vista**<br />Não será possível redefinir um computador que esteja executando o Windows 7 ou anterior.|
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

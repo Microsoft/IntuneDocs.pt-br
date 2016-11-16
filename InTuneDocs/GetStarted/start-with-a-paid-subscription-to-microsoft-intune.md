@@ -2,7 +2,8 @@
 title: "Guia de início rápido do Intune | Microsoft Intune"
 description: "Requisitos e pré-requisitos para começar a usar sua assinatura do Intune"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: aecd5f76e234835c38bf47d8de7e13034d683998
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 2e385a6f1721c7b8acbc1e280b8d8c3277fa00f8
 
 
 ---
 
 
 # Guia de início rápido do Intune
-Este guia de início rápido orienta você ao longo das etapas de configuração de uma assinatura paga do Microsoft Intune, para que você possa gerenciar modo fácil e rápido dispositivos móveis e computadores Windows que sua organização usa. Você poderá seguir cada etapa na ordem ou simplesmente ignorar se uma etapa não for aplicável às suas necessidades de negócios ou seu ambiente específico.
+Este guia de início rápido orienta você ao longo das etapas de configuração de uma assinatura paga do Microsoft Intune, para que você possa gerenciar modo fácil e rápido os dispositivos móveis e computadores Windows que sua organização usa. Você poderá seguir cada etapa na ordem ou simplesmente ignorar se uma etapa não for aplicável às suas necessidades de negócios ou seu ambiente específico.
 
 >[!NOTE]
 >Este artigo se concentra na configuração do Intune como um serviço autônomo. Como alternativa, se você estiver usando o Microsoft System Center Configuration Manager para gerenciar computadores e servidores, pode [estender o Configuration Manager para gerenciar dispositivos móveis](https://technet.microsoft.com/library/jj884158.aspx). Você pode fazer isso conectando o Intune ao Configuration Manager em uma implantação de MDM (gerenciamento de dispositivo móvel) híbrida.
@@ -75,6 +76,6 @@ Se estiver gerenciando dispositivos iOS ou Windows Phone com o Intune, você pre
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

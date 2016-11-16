@@ -2,9 +2,10 @@
 title: "Configurações personalizadas para perfis de VPN | Microsoft Intune"
 description: "Use configurações personalizadas para criar perfis de VPN no Intune."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,18 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
+ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 
 
 ---
 
-# Configurações personalizadas para perfis de VPN
+# <a name="custom-configurations-for-vpn-profiles"></a>Configurações personalizadas para perfis de VPN
 
-## Criar uma configuração personalizada
+## <a name="create-a-custom-configuration"></a>Criar uma configuração personalizada
 Você pode usar configurações personalizadas para criar perfis de VPN no Intune. Parta criar uma configuração personalizada:
 
-   1. No console do administrador do Intune **Política** > **Adicionar Política** > *<Expand platform>* > **Configuração personalizada** > **Criar Política**.
+   1. No console do administrador do Intune, **Política** > **Adicionar Política** > *Expandir plataforma* > **Configuração personalizada** > **Criar Política**.
    2. Forneça um nome para a política.
    3. Para cada configuração de URI, selecione **Adicionar** e forneça as informações solicitadas. Aqui está um exemplo:
 
@@ -32,7 +33,7 @@ Você pode usar configurações personalizadas para criar perfis de VPN no Intun
 
    4.  Depois de inserir todas as configurações de URI, selecione **Salvar política** e implante a política.
 
-## Implantar uma política de configuração
+## <a name="deploy-a-configuration-policy"></a>Implantar uma política de configuração
 
 1.  No espaço de trabalho **Política**, escolha a política que deseja implantar e clique em **Gerenciar Implantação**.
 
@@ -44,7 +45,7 @@ Você pode usar configurações personalizadas para criar perfis de VPN no Intun
 
 Quando seleciona uma política implantada, você pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
 
-##Exemplo de configurações de URI para uma configuração personalizada de perfil de VPN
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Exemplo de configurações de URI para uma configuração personalizada de perfil de VPN
 Aqui estão exemplos de entradas para valores de URI a fim de criar uma configuração personalizada para uma VPN em uma empresa fictícia chamada Contoso. Para obter mais informações, como o tipo de dados para cada entrada, consulte [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN de Contoso nativa (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +86,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Para solucionar dúvidas sobre como essas configurações devem ser usadas ou obter mais detalhes sobre o que elas fazem, os clientes devem consultar a documentação do CSP (provedor de serviços de configuração): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## Configurações de URI para VPN por aplicativo Android em PulseSecure
-### URI PERSONALIZADO PARA LISTA DE PACOTES
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>Configurações de URI para VPN por aplicativo Android em PulseSecure
+### <a name="custom-uri-for-package-list"></a>URI PERSONALIZADO PARA LISTA DE PACOTES
 -  Tipo de dados = Cadeia de caracteres
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Valor = lista de pacotes separados por delimitador.
    - Delimitadores: ponto e vírgula (;), dois pontos (:), vírgula (,), barra vertical (|)
 
@@ -96,7 +97,7 @@ Exemplos:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### URI PERSONALIZADO PARA MODO (OPCIONAL)
+### <a name="custom-uri-for-mode-optional"></a>URI PERSONALIZADO PARA MODO (OPCIONAL)
 - Tipo de Dados = Cadeia de caracteres
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +108,11 @@ Exemplos:
 > - O padrão será *LISTA DE PERMISSÕES* se for fornecido um PackageList
 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 (Conexões VPN no Microsoft Intune) [vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

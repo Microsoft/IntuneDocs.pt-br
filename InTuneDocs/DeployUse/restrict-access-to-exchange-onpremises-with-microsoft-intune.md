@@ -14,13 +14,13 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
-ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
 
 
 ---
 
-# Restringir acesso a email ao Exchange local e Exchange Online Dedicado herdado com o Intune
+# <a name="restrict-email-access-to-exchange-onpremises-and-legacy-exchange-online-dedicated-with-intune"></a>Restringir acesso a email ao Exchange local e Exchange Online Dedicado herdado com o Intune
 
 
 Se você tiver um ambiente do Exchange Online Dedicado e precisar descobrir se ele está na configuração nova ou herdada, entre em contato com seu gerente de conta.
@@ -58,13 +58,13 @@ Quando políticas de acesso condicionais são configuradas e direcionadas ao usu
 
 O diagrama a seguir ilustra o fluxo usado por políticas de acesso condicional para o Exchange local a fim de avaliar se devem permitir ou bloquear os dispositivos.
 
-![O diagrama que mostra os pontos de decisão que determinam se um dispositivo tem o acesso permitido ao Exchange local ou bloqueado](../media/ConditionalAccess8-2.png) Se uma política de acesso condicional não for atendida, uma das seguintes mensagens será apresentada ao usuário quando ele fizer logon:
+![Diagrama que mostra os pontos de decisão que determinam se um dispositivo tem ou não permissão para acessar o Exchange local](../media/ConditionalAccess8-2.png) Se uma política de acesso condicional não for atendida, uma das seguintes mensagens será apresentada ao usuário quando ele fizer logon:
 
 - Se o dispositivo não estiver registrado no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou não estiver registrado no Azure Active Directory, será exibida uma mensagem com instruções sobre como instalar o aplicativo Portal da Empresa, registrar o dispositivo e ativar o email. Esse processo também associa a ID do Exchange ActiveSync do dispositivo com o registro do dispositivo no Azure Active Directory.
 
 -   Se o dispositivo não for compatível, será exibida uma mensagem que direciona o usuário para o site do Portal da Empresa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou para o aplicativo Portal da Empresa, em que ele pode encontrar informações sobre o problema e como corrigi-lo.
 
-## Suporte para dispositivos móveis
+## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 -   Windows Phone 8.1 e posterior
 
 -   Aplicativo de email nativo no iOS.
@@ -72,19 +72,21 @@ O diagrama a seguir ilustra o fluxo usado por políticas de acesso condicional p
 -   Clientes de email EAS, como Gmail no Android 4 ou versões posteriores.
 - Clientes de email EAS com **dispositivos Android for Work:** há suporte somente para os aplicativos **Gmail** e **Nine Work** do **perfil de trabalho** em dispositivos Android for Work. Para obter acesso condicional ao Android for Work, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e implantá-los como uma instalação requerida. 
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 > [!NOTE]
 > Não há suporte para o aplicativo Microsoft Outlook no Android e iOS.
 
-## Suporte para computadores
+## <a name="support-for-pcs"></a>Suporte para computadores
 
 O aplicativo de **Email** do Windows 8.1 e versões posteriores (quando registrado com [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
-##  Configurar uma política de acesso condicional
+##  <a name="configure-a-conditional-access-policy"></a>Configurar uma política de acesso condicional
 
 1.  No [console de Administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** > **Acesso Condicional** > **Política do Exchange local**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Configure a política com as configurações necessárias: ![captura de tela da página de política do Exchange local](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2.  Configure a política com as configurações necessárias: ![Captura de tela da página de política do Exchange local](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
   - **Impedir aplicativos de email de acessar o Exchange local se o dispositivo não está em conformidade ou não registrado no Microsoft Intune:** quando você seleciona essa opção, os dispositivos que não são gerenciados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], ou não compatíveis com uma política de conformidade são impedidos de acessar os serviços do Exchange.
 
@@ -117,15 +119,15 @@ O aplicativo de **Email** do Windows 8.1 e versões posteriores (quando registra
 
 -   Se o usuário cancelar o registro do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], pode levar de 1 a 3 horas para o dispositivo ser bloqueado.
 
-**Para ver alguns cenários de exemplo de como você poderia configurar política de acesso condicional para restringir o acesso ao dispositivo, consulte [restrict email access example scenarios](restrict-email-access-example-scenarios.md) (restringir cenários de exemplo de acesso a email).**
+**Para ver alguns cenários de exemplo de como você poderia configurar política de acesso condicional para restringir o acesso ao dispositivo, consulte [cenários de exemplo de restrição de acesso a email](restrict-email-access-example-scenarios.md).**
 
-## Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Restringir o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

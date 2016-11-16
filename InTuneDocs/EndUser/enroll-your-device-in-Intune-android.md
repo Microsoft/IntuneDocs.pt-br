@@ -2,7 +2,7 @@
 title: Registrar seu dispositivo Android no Intune| Microsoft Intune
 description: Descreve como registrar um dispositivo Android no Intune
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,18 +14,18 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# Registrar seu dispositivo Android no Intune
+# <a name="enroll-your-android-device-in-intune"></a>Registrar seu dispositivo Android no Intune
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo Android para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, o departamento de TI pode gerenciar recursos corporativos ou de estudante e mantê-los seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo o aplicativo Portal da Empresa e registro meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-Essas instruções de registro são para dispositivos Samsung Knox Android e dispositivos Android “nativos” (não Samsung Knox). Para verificar se você tem um dispositivo Samsung Knox, vá para **Configurações** &gt; **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
+Essas instruções de registro são para dispositivos Samsung KNOX Android e dispositivos Android “nativos” (que não são Samsung Knox). Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** &gt; **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
 
 Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O administrador de TI usa essa categoria para ajudar a verificar os aplicativos aos quais você tem acesso.
 
@@ -114,6 +114,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

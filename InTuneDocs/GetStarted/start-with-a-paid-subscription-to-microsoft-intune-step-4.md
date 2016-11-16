@@ -1,9 +1,9 @@
 ---
 title: "Licenças do Microsoft Intune | Microsoft Intune"
-description: "Explica como atribuir licenças a usuários para sua assinatura do Intune"
+description: "Atribuir licenças a usuários para sua assinatura do Intune"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
-ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: df2a8c526f3c569a491d999ee4c80a36a30b77e3
 
 
 ---
@@ -43,7 +43,7 @@ Você usa o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=6988
 
 3.  Agora, a conta de usuário tem as permissões necessárias para usar o serviço e registrar dispositivos no gerenciamento.
 
-> [!NOTE] Os usuários serão exibidos no console depois de registrar um dispositivo. 
+> [!NOTE] Os usuários serão exibidos no console depois de registrar um dispositivo.
 
 ### Usar o PowerShell para gerenciar seletivamente licenças de usuário do EMS
 As organizações que usam o Microsoft Enterprise Mobility + Security (conhecido anteriormente como Enterprise Mobility Suite) podem ter usuários que precisam apenas do Azure Active Directory Premium ou dos serviços do Intune no pacote do EMS. Você pode atribuir um serviço ou um subconjunto de serviços usando os [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
@@ -93,6 +93,6 @@ Parabéns! Você acabou de concluir a etapa 4 do *Intune quick start guide* (Gui
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

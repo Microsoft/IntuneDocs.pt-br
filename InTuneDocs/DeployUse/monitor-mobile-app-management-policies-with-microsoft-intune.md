@@ -1,11 +1,11 @@
 ---
 title: "Monitorar políticas de MAM com o Microsoft Intune | Microsoft Intune"
-description: "Veja quantos usuários têm a política, faça o drill down para descobrir mais detalhes."
+description: "Veja quantos usuários têm a política e faça uma busca detalhada para encontrar mais informações."
 keywords: 
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,69 +14,72 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
-ms.openlocfilehash: bc68a13b8d5694908cd00e5e615f81f6e15cfe22
+ms.sourcegitcommit: aec3b198ef6246cfc148eee09796f264e8bd037a
+ms.openlocfilehash: 05250ba1165b0dfc13757bb2a5ebe3562f8bea63
 
 
 ---
 
-# Monitorar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune
-Depois de configurar uma política MAM e aplicá-la aos usuários, você pode monitorar o status de conformidade no [Portal do Azure](https://portal.azure.com). O Portal do Azure inclui informações sobre os usuários afetados pela política, o status de conformidade e os problemas que os usuários finais possam estar ocorrendo.
-## Exibição de Resumo
-Na folha **Gerenciamento de aplicativos móveis do Intune**, você pode ver um resumo do status de conformidade, conforme descrito abaixo:
+# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune
+Depois de configurar uma política de MAM (gerenciamento de dispositivo móvel) e aplicá-la aos usuários, você pode monitorar o status de conformidade no [portal do Azure](https://portal.azure.com). O portal do Azure inclui informações sobre os usuários afetados pela política, o status de conformidade e os problemas que os usuários possam encontrar.
+## <a name="summary-view"></a>Exibição de Resumo
+Na folha **Gerenciamento de aplicativo móvel do Intune**, você pode ver um resumo do status de conformidade:
 
 
 ![Bloco de Resumo da folha de gerenciamento de aplicativos móveis do Intune](../media/mam-azure-portal-user-status-summary.png)
 
--   **USERS:** o número total de usuários da sua empresa que usam os aplicativos que estão associados com a política.
+-   **Usuários**: o número total de usuários da sua empresa que usam os aplicativos que estão associados à política.
 
--   **MANAGED BY POLICY:** este é o número de usuários que usaram pelo menos um dos aplicativos no contexto de trabalho.
+-   **GERENCIADO PELA POLÍTICA**: este é o número de usuários que usaram pelo menos um dos aplicativos no contexto de trabalho.
 
--   **NO POLICY:** o número de usuários que estão usando os aplicativos associados à política, mas não são afetados pela sua política.  Você pode considerar adicionar esses usuários à sua política.
+-   **SEM POLÍTICA**: o número de usuários que estão usando os aplicativos associados à política, mas que não são afetados pela política. Você pode considerar adicionar esses usuários à política.
 
-- **Usuários sinalizados:** o número de usuários que estão tendo problemas. Atualmente, apenas os usuários com dispositivos desbloqueados com jailbreak são relatados em **Usuários sinalizados**.
+- **Usuários sinalizados**: o número de usuários que estão tendo problemas. Atualmente, apenas usuários com dispositivos com jailbreak são relatados em **Usuários sinalizados**.
 
 
-## Exibição detalhada
-Você pode obter a exibição detalhada do resumo clicando nos blocos **Status do usuário** e **Usuários sinalizados**.
+## <a name="detailed-view"></a>Exibição detalhada
+Você pode obter a exibição detalhada do resumo escolhendo os blocos **Status do usuário** e **Usuários sinalizados**.
 
-### Status do usuário
-Você pode pesquisar por um único usuário e verificar o status de conformidade para ele. A folha **Relatórios de aplicativo** exibe as seguintes informações para um usuário selecionado:
-- Dispositivos que estão associados com a conta de usuário
-- Aplicativos com a política de MAM no dispositivo
+### <a name="user-status"></a>Status do usuário
+Você pode pesquisar por um único usuário e verificar o status de conformidade dele. A folha **Relatório de aplicativo** exibe as seguintes informações para um usuário selecionado:
+- Dispositivos que estão associados à conta de usuário
+
+- Aplicativos com política de MAM no dispositivo
+
 - Status:
 
-  **Check-in:** isso significa que a política foi implantada para o usuário e o aplicativo foi usado no contexto de trabalho pelo menos uma vez.
+  - **Check-in**: a política foi implantada para o usuário e o aplicativo foi usado no contexto de trabalho pelo menos uma vez.
 
-  **Check in não realizado:** indica que a política foi implantada para o usuário, mas o aplicativo ainda não foi usado no contexto de trabalho.
+  - **Check-in não realizado**: a política foi implantada para o usuário, mas o aplicativo ainda não foi usado no contexto de trabalho.
 
 >[!NOTE]
 > Se o usuário pesquisado não tiver a política de MAM implantada nele, você verá uma mensagem informando que o usuário não é alvo de nenhuma política de aplicativo.
 
 Para ver o relatório para um usuário, siga estas etapas:
 
-**Etapa 1:** Para selecionar um usuário, clique no bloco do resumo ou escolha a opção **APP REPORTING BY USER** opção na folha **Configurações** conforme mostrado abaixo:
+1.  Para selecionar um usuário, escolha o bloco **Resumo** ou a opção **RELATÓRIO DE APLICATIVO PELO USUÁRIO** na folha **Configurações**:
 
-![Opção de relatório do aplicativo na folha configurações](../media/mam-azure-portal-app-reporting-by-user-settings-blade.png)
+    ![Opção de relatório de aplicativo na folha Configurações](../media/mam-azure-portal-app-reporting-by-user-settings-blade.png)
 
-**Etapa 2:** Isso abre a folha **Relatórios do aplicativo**. Escolha **Selecionar usuário** para pesquisar por um usuário do Azure Active Directory.
+2. Na folha **Relatório de aplicativo** que é aberta, escolha **Selecionar usuário** para pesquisar por um usuário do Azure Active Directory.
 
-![selecione a opção de usuário na folha Relatório do aplicativo](../media/mam-azure-portal-app-reporting-select-user.png)
+    ![Selecione a opção de usuário na folha Relatório de aplicativo](../media/mam-azure-portal-app-reporting-select-user.png)
 
-**Etapa 3:** Depois de selecionar o usuário na lista, você verá os detalhes do status de conformidade para esse usuário.
+3. Selecione um usuário da lista. Você verá os detalhes do status de conformidade para esse usuário.
 
-![Detalhes de relatório do aplicativo](../media/mam-azure-portal-app-reporting-by-user.png)
-### Usuários sinalizados
+    ![Detalhes de relatório do aplicativo](../media/mam-azure-portal-app-reporting-by-user.png)
+
+### <a name="flagged-users"></a>Usuários sinalizados
 A exibição detalhada exibe a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do dispositivo e um carimbo de hora.  
 
-### Consulte também
-[Gerenciar a transferência de dados entre aplicativos do iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+### <a name="see-also"></a>Consulte também
+[Gerenciar a transferência de dados entre aplicativos iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [O que esperar quando seu aplicativo Android é gerenciado por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [O que esperar quando seu aplicativo iOS é gerenciado por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO5-->
 
 

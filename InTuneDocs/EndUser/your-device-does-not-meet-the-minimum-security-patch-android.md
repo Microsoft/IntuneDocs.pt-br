@@ -2,7 +2,7 @@
 title: "Seu dispositivo não atende o patch de segurança mínima | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/25/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
 
 
 ---
 
-# Seu dispositivo não atende ao patch de segurança mínima
+# <a name="your-device-does-not-meet-the-minimum-security-patch"></a>Seu dispositivo não atende ao patch de segurança mínima
 
 Se vir a mensagem "O nível mínimo de patch de segurança Android não está configurado", você precisará instalar pelo menos o patch de segurança mínima ou um posterior. O administrador de TI exige essa instalação para proteger os dados corporativos em seu dispositivo Android.
 
@@ -41,6 +41,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

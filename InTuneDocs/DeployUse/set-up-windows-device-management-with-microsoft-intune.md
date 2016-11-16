@@ -2,9 +2,8 @@
 title: Configurar o gerenciamento do dispositivo Windows com o Microsoft Intune | Microsoft Intune
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para computadores Windows, incluindo dispositivos Windows 10 com o Microsoft Intune."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
@@ -14,13 +13,13 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
-ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
 
 
 ---
 
-# Configurar o gerenciamento do dispositivo Windows
+# <a name="set-up-windows-device-management"></a>Configurar o gerenciamento do dispositivo Windows
 
 Como administrador do Intune, você pode habilitar o registro e o gerenciamento de computadores Windows de duas maneiras:
 
@@ -29,7 +28,7 @@ Como administrador do Intune, você pode habilitar o registro e o gerenciamento 
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Configurar o registro do aplicativo de Portal da Empresa
+## <a name="set-up-company-portal-app-enrollment"></a>Configurar o registro do aplicativo de Portal da Empresa
 Você pode permitir que os usuários instalem e registrem seus dispositivos usando o aplicativo do Portal da Empresa do Intune. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem inserir um nome do servidor.
 
 1. **Configurar Intune**<br>
@@ -42,7 +41,7 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 hora|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 hora|
 
-  `EnterpriseEnrollment-s.manage.microsoft.com` – Dá suporte ao redirecionamento para o serviço Intune com reconhecimento de domínio por meio do nome de domínio do email
+  `EnterpriseEnrollment-s.manage.microsoft.com` – dá suporte ao redirecionamento para o serviço Intune com reconhecimento de domínio por meio do nome de domínio do email
 
   `EnterpriseRegistration.windows.net` – dá suporte a dispositivos Windows 8.1 e Windows 10 Mobile que serão registrados no Azure Active Directory usando sua conta corporativa ou de estudante
 
@@ -54,17 +53,17 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
   ![Caixa de diálogo de gerenciamento de dispositivo do Windows](../media/enroll-intune-winenr.png)
 
-4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos. [Saiba mais](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos.
 
 6.  **Informar os usuários**<br>Você precisará dizer aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento:
       - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

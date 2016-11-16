@@ -8,19 +8,19 @@ manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
-ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
 
 
 ---
 
-# Habilitar a regra de proteção de dispositivo na política de conformidade
+# <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>Habilitar a regra de proteção de dispositivo na política de conformidade
 O Intune com a proteção contra ameaças móveis Lookout possibilita detectar ameaças móveis e fazer uma avaliação de riscos no dispositivo. Você pode criar uma regra de política de conformidade para incluir a avaliação de riscos para determinar se o dispositivo é compatível. Você pode, então, usar a política de acesso condicional para permitir ou bloquear acesso ao Exchange, SharePoint e a outros serviços com base na conformidade do dispositivo.
 
 Para que a detecção de ameaças do dispositivo Lookout influencie a política de conformidade do dispositivo:
@@ -52,16 +52,16 @@ Você pode ver o estado de conformidade de um dispositivo na página **Todos os 
 
 ![captura de tela da página de dispositivos no console do administrador do Intune mostrando o status de conformidade de um dispositivo](../media/mtp/mtp-device-status-intune-console.png)
 
-## Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 * Criar política de acesso condicional
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  * [Exchange local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  * [SharePoint online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+  * [Exchange Local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+  * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune,md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

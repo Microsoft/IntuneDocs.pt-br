@@ -1,8 +1,9 @@
 ---
 title: "Criar políticas e publicar um aplicativo | Microsoft Intune"
-description: "Explica como criar políticas e publicar um aplicativo de exemplo para sua assinatura do Intune"
+description: "Criar políticas e publicar um aplicativo de exemplo para sua assinatura do Intune"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 748df2b7af8cf1679f31435f89730170ca723dc4
 
 
 ---
@@ -109,6 +110,6 @@ Parabéns! Você acabou de concluir a etapa 6 do *Guia de início rápido do Int
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 
