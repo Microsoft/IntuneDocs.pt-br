@@ -2,8 +2,8 @@
 title: "Como os usuários Windows podem obter aplicativos | Microsoft Intune"
 description: "Métodos para disponibilizar aplicativos do Windows para usuários"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -14,14 +14,14 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2cb9258ea84c50c04670e51172020ed27a5eaf
-ms.openlocfilehash: 67b0b8ef58f184329a54c8e9ca96107911d0e37a
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: ba4b0ca8a986f98b0699872b70e5f07aa074a65c
 
 
 ---
 
 
-# Como os usuários Windows podem obter aplicativos
+# <a name="how-your-windows-users-get-their-apps"></a>Como os usuários Windows podem obter aplicativos
 
 Use estas informações para entender como e onde os usuários obtêm os aplicativos que você distribui por meio do Microsoft Intune.
 
@@ -33,12 +33,12 @@ Use estas informações para entender como e onde os usuários obtêm os aplicat
 
 **Aplicativos não gerenciados** – Aplicativos que podem ser gerenciados por meio de políticas e que não foram encapsulados pelo Intune ou que não incorporam o SDK do MAM do Intune. Políticas de aplicativo que não podem ser aplicadas a esses aplicativos.
 
-### Consulte também
-[Como os usuários Android podem obter aplicativos](how-your-android-users-get-their-apps.md)</br>
-[Como os usuários iOS podem obter aplicativos](how-your-ios-users-get-their-apps.md)
+### <a name="see-also"></a>Consulte também
+[Como os usuários do Android podem obter aplicativos](how-your-android-users-get-their-apps.md)</br>
+[Como usuários do iOS podem obter aplicativos](how-your-ios-users-get-their-apps.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
 title: Usando o site Portal da Empresa do Intune | Microsoft Intune
-description: "Descreve o site Portal da Empresa e fornece links para as etapas para tarefas que você pode fazer no site"
+description: "Descreve o site do Portal da Empresa e fornece links para as etapas de tarefas que os usuários finais podem realizar no site"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
-ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 
 ---
 
-# Usando o Portal da Empresa do Intune
-O [site do Portal da Empresa](http://portal.manage.microsoft.com) é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no Intune.
+# <a name="using-the-intune-company-portal-website"></a>Usando o Portal da Empresa do Intune
+O [site do Portal da Empresa](http://portal.manage.microsoft.com) é uma página da Web que os usuários podem usar para gerenciar computadores e dispositivos que eles registraram no Intune.
 
-Você pode usar o site do Portal da Empresa para:
+Os usuários podem realizar as seguintes tarefas no site do Portal da Empresa:
 
 -   [Renomear o dispositivo](rename-your-device-cpwebsite.md)
 
@@ -37,13 +37,13 @@ Você pode usar o site do Portal da Empresa para:
 
 -   [Sincronizar o dispositivo manualmente para acelerar instalações de aplicativos lentas](sync-your-device-manually-cpwebsite.md)
 
--   Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas por ele
+-   Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas
 
 -   Ver detalhes sobre seu dispositivo, incluindo se ele é compatível com as políticas da empresa ou da escola
 
 -   Gerenciar remotamente seu PC (funciona apenas em PCs)
 
-Você pode fazer no **site do Portal da Empresa** a maioria das mesmas tarefas que pode fazer usando o **aplicativo de Portal da Empresa** que você instala em seu dispositivo. Para saber mais sobre o aplicativo Portal da Empresa, como registrar um dispositivo no Intune e outras informações, toque no link referente ao seu tipo de dispositivo:
+Os usuários podem realizar no **site do Portal da Empresa** a maioria das mesmas tarefas que podem realizar usando o **aplicativo de Portal da Empresa** que você instala em seu dispositivo. As páginas a seguir contêm links para todas as tarefas que os usuários finais podem realizar em seus dispositivos:
 
 - [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 - [Usando seu dispositivo iOS ou Mac OS X com o Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
@@ -51,6 +51,6 @@ Você pode fazer no **site do Portal da Empresa** a maioria das mesmas tarefas q
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

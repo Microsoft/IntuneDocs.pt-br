@@ -14,35 +14,35 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 20f61b9dec289252797650e7ef40ff4c5b7c0fbc
 
 
 ---
 
 
-# Configurações de política de conformidade para dispositivos Android no Microsoft Intune
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Configurações de política de conformidade para dispositivos Android no Microsoft Intune
 
-As configurações de política descritas neste tópico se aplicam a dispositivos que executam o Android 4.0 e posterior ou o Samsung KNOX 4.0 e posterior.
+As configurações de política descritas neste tópico se aplicam a dispositivos que executam o Android 4.0 e posterior ou o Samsung KNOX Standard 4.0 e posterior.
 
 Se você estiver procurando informações sobre outras plataformas, selecione uma das seguintes opções:
 > [!div class="op_single_selector"]
-- [Configurações da política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Configurações da política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações de política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Configurações de segurança do sistema
-### Senha
+## <a name="system-security-settings"></a>Configurações de segurança do sistema
+### <a name="password"></a>Senha
 - **Exigir uma senha para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que possam acessar o dispositivo.
 
 -  **Comprimento mínimo da senha**: especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.
 
 - **Qualidade da senha**: essa configuração detecta se os requisitos de senha especificados por você estão configurados no dispositivo. Habilite essa configuração para exigir que os usuários atendam certos requisitos de senha para dispositivos Android. Escolha:
 
-  -   **Biométrico de baixa segurança**
+  -   **Biométrico de segurança baixa**
   -   **Necessária**
-  -   **Ao menos numérico**
-  -   **Ao menos alfabético**
-  -   **Ao menos alfanumérico**
+  -   **Pelo menos, numérico**
+  -   **Pelo menos, alfabético**
+  -   **Pelo menos, alfanumérico**
   -   **Alfanumérico com símbolos**
 
 - **Minutos de inatividade antes que a senha seja exigida**: especifique o tempo ocioso antes que o usuário precise digitar novamente sua senha.
@@ -55,10 +55,10 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** use essa configuração em conjunto com **Minutos de inatividade antes da senha ser necessária**. O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
-### Criptografia
+### <a name="encryption"></a>Criptografia
 - **Exigir criptografia no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam criptografados para conectarem-se aos recursos. Os dispositivos serão criptografados quando você escolher a configuração **Exigir uma senha para desbloquear dispositivos móveis**.
 
-## Configurações de segurança e integridade do dispositivo
+## <a name="device-health-and-security-settings"></a>Configurações de segurança e integridade do dispositivo
 
 - **O dispositivo não pode estar com jailbreak ou com raiz**: se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.
 - **Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas (Android 4.0 ou posterior)**: para bloquear dispositivos que têm a opção **Segurança** > **Fontes desconhecidas** habilitado no dispositivo, habilite essa configuração e defina-a como **Sim**.  
@@ -77,7 +77,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
   Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Configurações de propriedade do dispositivo
+## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 - **Sistema operacional mínimo exigido**: quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível.
   É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar seus dispositivos após o que será possível acessar os recursos da empresa.
 
@@ -85,6 +85,6 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

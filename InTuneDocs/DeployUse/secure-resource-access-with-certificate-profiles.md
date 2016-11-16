@@ -2,9 +2,10 @@
 title: Perfis de certificado para o acesso a recursos | Microsoft Intune
 description: "Proteja o acesso ao email, Wi-Fi e VPN com um certificado instalado em cada dispositivo do usuário."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: ee10ea01bb2e55a1c8b52a7ec0bdaf14f3c297f1
 
 
 ---
 
-# Proteger o acesso a recursos com perfis de certificado no Microsoft Intune
+# <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Proteger o acesso a recursos com perfis de certificado no Microsoft Intune
 Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi ou perfis de email, você pode proteger o acesso usando um certificado instalado em cada dispositivo de usuário. Assim é como funciona:
 
 1. Verifique se você tem a infraestrutura de certificado correta, conforme descrito em [Configurar a infraestrutura de certificado para SCEP](configure-certificate-infrastructure-for-scep.md) e [Configurar a infraestrutura de certificado para PFX](configure-certificate-infrastructure-for-pfx.md).
@@ -28,13 +29,17 @@ Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi 
  -  iOS 8.0 e posterior
  -  Mac OS X 10.9 e posterior
  -  Android 4.0 e posterior
+ -  Android for Work
  -  Windows 8.1 e posterior
  -  Windows Phone 8.1 e posterior
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. Crie perfis de certificado para que os dispositivos solicitem um certificado a ser usado para autenticação de VPN, Wi-Fi e acesso por email, conforme descrito em [Configurar perfis de certificado do Intune](configure-intune-certificate-profiles.md). Você pode criar e implantar um **Perfil de Certificado PKCS #12 (.PFX)** *ou* um **Perfil de Certificado SCEP** para dispositivos em execução nestas plataformas:
 
   -  iOS 8.0 e posterior
   -  Android 4.0 e posterior
+  -  Android for Work
   -  Windows 10 (Desktop e Mobile) e posterior
 
   Use um **Perfil de Certificado SCEP** para dispositivos executados nestas plataformas:
@@ -49,13 +54,13 @@ Você deve criar um perfil separado para cada plataforma. Ao criar o perfil, voc
 >-  Se planeja usar perfis SCEP ou .PFX, você precisa baixar e configurar o Conector de Certificado do Microsoft Intune.
 >-  Saiba como configurar todos os serviços necessários em [Configurar a infraestrutura de certificado para SCEP](configure-certificate-infrastructure-for-scep.md) ou [Configurar a infraestrutura de certificado para PFX](configure-certificate-infrastructure-for-pfx.md).
 
-### Próximas etapas
+### <a name="next-steps"></a>Próximas etapas
 - [Configurar a infraestrutura de certificado para SCEP](configure-certificate-infrastructure-for-scep.md)
 - [Configurar a infraestrutura de certificado para PFX](configure-certificate-infrastructure-for-pfx.md)
 - [Configurar perfis de certificado do Intune](configure-intune-certificate-profiles.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

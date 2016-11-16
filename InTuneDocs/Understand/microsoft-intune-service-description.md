@@ -2,8 +2,8 @@
 title: "Descrição do Serviço | Microsoft Intune"
 description: "O Intune é um serviço baseado em nuvem que ajuda você a gerenciar computadores Windows e dispositivos móveis iOS, Mac OS X, Android e Windows."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
-ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 423282fd8dd80358311373862f808cdaa58212bd
 
 
 ---
 
-# Descrição do serviço do Microsoft Intune
+# <a name="microsoft-intune-service-description"></a>Descrição do serviço do Microsoft Intune
 
 O Microsoft Intune é um serviço baseado em nuvem que ajuda você a gerenciar computadores Windows e dispositivos móveis, iOS, Mac OS X, Android e Windows. O Intune também ajuda a proteger dados e aplicativos corporativos. Você pode usar o Intune sozinho ou integrá-lo ao System Center Configuration Manager para estender suas funcionalidades de gerenciamento. 
 
@@ -39,7 +39,7 @@ Para ver uma lista de configurações que você pode definir em dispositivos mó
 
 Para obter informações sobre o System Center Configuration Manager, consulte a [Documentação do System Center Configuration Manager](https://technet.microsoft.com/library/mt346023.aspx).
 
-## Entenda como as atualizações de serviço do Intune afetam você
+## <a name="understand-how-intune-service-updates-affect-you"></a>Entenda como as atualizações de serviço do Intune afetam você
 Como o Intune é um serviço online, a Microsoft pode atualizá-lo regularmente.
 
 Use as informações neste tópico para ajudá-lo a entender a frequência dessas atualizações de serviço e a notificação antecipada que fornecemos quando uma atualização puder afetar seu uso do serviço.
@@ -61,7 +61,7 @@ Aqui estão os tipos de avisos que a Microsoft fornece sobre o serviço do Intun
 -   A Microsoft fornece informações sobre novos recursos, novas funcionalidades e aprimoramentos em funcionalidades existentes em nossa atualização mensal do serviço. Em geral, a Microsoft lança atualizações de serviço em meados de cada mês. As atualizações são descritas em [What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune) (Novidades do Microsoft Intune).
 -   No caso de desativação do serviço do Intune, você seria notificado com 12 meses de antecedência.
 
-## Escolha a solução de gerenciamento que é ideal para você
+## <a name="choose-the-management-solution-thats-right-for-you"></a>Escolha a solução de gerenciamento que é ideal para você
 Você pode configurar o Intune de várias formas para gerenciar e ajudar a proteger os dispositivos móveis e computadores da sua empresa (chamados de **dispositivos** neste documento).
 
 -   **Configuração autônoma do Intune.** Use o console de administração baseado na Web do Intune para gerenciar dispositivos na sua organização. O Intune pode ser usado sem nenhuma infraestrutura de TI local, mas se usar o Intune com os Serviços de Domínio do Active Directory, você poderá usar contas de usuário de domínio que você gerencia com os Serviços de Domínio com Intune.
@@ -69,14 +69,14 @@ Você pode configurar o Intune de várias formas para gerenciar e ajudar a prote
 -   **Intune com System Center Configuration Manager.** Use o console de gerenciamento do Configuration Manager para gerenciar computadores e dispositivos móveis na sua empresa. Essa configuração pode ajudá-lo a gerenciar todos os dispositivos da sua empresa por meio de um único console, o Console de Admin do Configuration Manager. O Configuration Manager é compatível com inúmeros dispositivos móveis, servidores e computadores. Para obter mais informações, consulte [Gerenciamento de dispositivo móvel (MDM) híbrido com o System Center Configuration Manager e o Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx).  Para obter mais ajuda para decidir qual abordagem é adequada para você, veja [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) (Escolher entre gerenciamento de dispositivo móvel do Microsoft Intune autônomo ou híbrido com o Configuration Manager). 
 
 
-## Saiba mais sobre o Intune
+## <a name="learn-more-about-intune"></a>Saiba mais sobre o Intune
 Use estes recursos para saber mais sobre o Intune:
 
 -   O [Microsoft Intune Trust Center](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) fornece informações sobre as práticas de segurança, privacidade e conformidade do Intune e descreve algumas das certificações do Intune.
 
 -   [Recursos de gerenciamento de dispositivos registrados do Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [Biblioteca de documentação do System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
@@ -84,6 +84,6 @@ Use estes recursos para saber mais sobre o Intune:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

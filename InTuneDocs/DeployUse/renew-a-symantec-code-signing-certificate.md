@@ -2,8 +2,8 @@
 title: "Renovar um certificado de autenticação de código corporativo da Symantec para usar com o Intune | Microsoft Intune"
 description: "Diretrizes para renovar os certificados da Symantec usados para gerenciar determinados dispositivos móveis Windows e Windows Phone"
 keywords: 
-author: NathBarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
+ms.sourcegitcommit: 8fd2a90025ae9310a214978cd2d42ea7ad035fa3
+ms.openlocfilehash: 2479f8065a2bb46e63b0e3971700a8d2c0982755
 
 
 ---
 
-# Renovar um certificado de assinatura de código corporativo do Symantec para dispositivos Windows
+# <a name="renew-a-symantec-enterprise-codesigning-certificate-for-windows-devices"></a>Renovar um certificado de assinatura de código corporativo do Symantec para dispositivos Windows
 
-O certificado da Symantec usado para gerenciar determinados dispositivos móveis do Windows e Windows Phone deve ser renovado periodicamente. Para dispositivos Windows Phone 8.0, um aplicativo do Portal da Empresa assinado e o certificado de assinar código são necessários para o registro do dispositivo. Dispositivos Windows Phone posteriores podem usar o aplicativo de portal da empresa baixado do repositório. Um certificado de assinar código também é necessário para implantar aplicativos de linha de negócios.
+O certificado da Symantec usado para implantar aplicativos móveis do Windows e do Windows Phone deve ser renovado periodicamente.
 
-## Como renovar o certificado corporativo de autenticação de código Symantec
+## <a name="how-to-renew-the-symantec-enterprise-codesigning-certificate"></a>Como renovar o certificado corporativo de autenticação de código Symantec
 
 1.  Procure um email de renovação enviado da Symantec aproximadamente 14 dias antes da expiração do certificado. O email contém instruções da Symantec sobre como renovar o certificado corporativo.
 
@@ -33,7 +33,7 @@ O certificado da Symantec usado para gerenciar determinados dispositivos móveis
 
 3.  Após a renovação ser aprovada e paga, baixe o certificado.
 
-## Como instalar o certificado atualizado para o Windows Phone 8.0
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-80"></a>Como instalar o certificado atualizado para o Windows Phone 8.0
 
 1.  Baixe e assine o Portal da Empresa do Windows Phone mais recente localizado aqui: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -47,7 +47,7 @@ O certificado da Symantec usado para gerenciar determinados dispositivos móveis
 
 Fornecer um arquivo .xap do SSP assinado é a única maneira de fornecer o certificado de assinatura de código atualizado. Para dar suporte a aplicativos de linha de negócios assinados, você deve assinar e carregar um aplicativo do Portal da Empresa, mesmo que os usuários instalem o aplicativo do Portal da Empresa na loja.
 
-## Como instalar o certificado atualizado para Windows Phone 8.1 e os dispositivos posteriores
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-81-and-later-devices"></a>Como instalar o certificado atualizado para Windows Phone 8.1 e os dispositivos posteriores
 
 1.  Baixe e assine o Portal da Empresa do Windows Phone no Centro de Download mais recente localizado aqui: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -60,12 +60,12 @@ Fornecer um arquivo .xap do SSP assinado é a única maneira de fornecer o certi
 5.  Assine todos aplicativos de linha de negócios de empresa novos e atualizados usando o novo certificado. Os aplicativos existentes não precisam ser assinados e reimplantados.
 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Configurar o gerenciamento do Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [Configurar o gerenciamento do Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

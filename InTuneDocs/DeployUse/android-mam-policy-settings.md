@@ -14,17 +14,17 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5e41cbbf3bac3ed78ee3a6929e364f829fa1d4b
-ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
+ms.sourcegitcommit: 552473cb704ead5f7cc30a2311e2f722265bfcea
+ms.openlocfilehash: c7ecf73c28a8332bd3fe1465a2f64f7f09a7a690
 
 
 ---
 
-# Configurações de política de gerenciamento de aplicativo móvel de Android no Microsoft Intune
+# <a name="android-mobile-app-management-policy-settings-in-microsoft-intune"></a>Configurações de política de gerenciamento de aplicativo móvel de Android no Microsoft Intune
 As configurações de política descritas neste tópico podem ser [configuradas](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para uma política de MAM (gerenciamento de aplicativo móvel) na folha **Configurações** no portal do Azure.
 Há duas categorias de configurações de política: configurações de realocação de dados e configurações de acesso. Neste tópico, o termo *aplicativos gerenciados pela política* faz referência a aplicativos configurados com políticas de MAM.
 
-##  Configurações de realocação de dados
+##  <a name="data-relocation-settings"></a>Configurações de realocação de dados
 
 - **Evitar backups do Android**: escolha **Sim** para desabilitar ou escolha **Não** para permitir o backup dos dados da empresa de aplicativos gerenciados pela política.
 
@@ -74,7 +74,7 @@ Há duas categorias de configurações de política: configurações de realoca�
 
   Valor padrão = **Sim**.
 
-##  Configurações de acesso
+##  <a name="access-settings"></a>Configurações de acesso
 
 - **Solicitar PIN para acesso**: escolha **Sim** para exigir que um PIN use aplicativos gerenciados pela política. O usuário será solicitado a configurar isso na primeira vez em que executar o aplicativo no contexto corporativo.
 
@@ -83,7 +83,9 @@ Há duas categorias de configurações de política: configurações de realoca�
  -  **Permitir PIN simples**: especifique se deseja permitir que os usuários usem sequências de PIN simples como 1234 ou 1111. Valor padrão = **Sim**.
  - **Comprimento do PIN**: especifique o número mínimo de dígitos em um PIN. Valor padrão = **4**.
  - **Número de tentativas antes da redefinição do PIN**: especifique o número de tentativas de entrada de PIN que podem ser feitas antes que o usuário precise redefinir o PIN. Não há valor padrão para esta configuração.
-- **Exigir credenciais corporativas para acesso**: escolha **Sim** para exigir credenciais corporativas, em vez de um PIN, para acesso ao aplicativo. Se você definir como **Sim**, ele substituirá os requisitos de PIN ou da ID de Toque. O usuário deverá fornecer suas credenciais corporativas.
+ - **Exigir a impressão digital em vez de PIN (Android 6.0 +):** escolha **Sim** para exigir uma identidade de impressão digital, em vez de um PIN numerado, para acesso ao aplicativo.
+ Em dispositivos Android, você pode permitir que o usuário se identifique usando a impressão digital em vez de um PIN numerado. Quando o usuário final tenta acessar esse aplicativo usando sua conta corporativa, ele é solicitado a fornecer a identidade de impressão digital, em vez de inserir um número de PIN.
+ - **Exigir credenciais corporativas para acesso**: escolha **Sim** para exigir credenciais corporativas, em vez de um PIN ou impressão digital, para acesso ao aplicativo. Se você definir como **Sim**, ele substituirá os requisitos de PIN ou da ID de Toque. O usuário deverá fornecer suas credenciais corporativas.
 
   Valor padrão = **Não**.
 - **Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou com raiz**: escolha **Sim** para bloquear a execução de aplicativos em dispositivos com jailbreak ou com raiz. O usuário continuará a ser capaz de usar os aplicativos para tarefas pessoais, mas terá que usar um dispositivo diferente para o trabalho.
@@ -105,6 +107,6 @@ Há duas categorias de configurações de política: configurações de realoca�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,29 +2,29 @@
 title: Portal da Empresa do Microsoft Intune | Microsoft Intune
 description: configurar o Portal da Empresa do Intune
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jve
+ms.reviewer: jve, arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
-ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
+ms.sourcegitcommit: 4ae0bd214dbae7e459f52b79e388aab23b5d6e8e
+ms.openlocfilehash: bea321c455a13a11766f19de42df193cefecf05f
 
 
 ---
 
-# Portal da Empresa do Microsoft Intune
+# <a name="microsoft-intune-company-portal"></a>Portal da Empresa do Microsoft Intune
 
 Antes de configurar o Intune, examine este tópico e outros requisitos listados em [O que saber antes de começar a usar Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
-O Portal da Empresa do Intune é uma ferramenta que fornece aos usuários acesso a aplicativos e dados da empresa. O Portal da Empresa está disponível em duas formas:
+O Portal da Empresa do Intune fornece aos usuários acesso a aplicativos e dados da empresa. O Portal da Empresa está disponível em duas formas:
 
 -   **O aplicativo do portal da empresa**: um aplicativo disponível em dispositivos que você gerencia com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Saiba mais sobre os aplicativos do Portal da Empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
@@ -54,13 +54,13 @@ Antes que um usuário possa acessar o Portal da Empresa, a conta do usuário dev
 
 > __iOS__: o aplicativo de Portal da Empresa para iOS foi publicado para [todas as regiões disponíveis](https://go.microsoft.com/fwlink/?linkid=831284) da App Store do Apple iOS.
 
-> __Android__: o aplicativo do Portal da Empresa para Android, Antígua e Barbuda, Aruba, Benin, Burquina Faso, Camboja, China, Cuba, Gabão, Guiné-Bissau, Haiti, Irã, Laos, Mali, Moçambique, Mianmar (Birmânia), Antilhas Holandesas, Níger, Papua-Nova Guiné, Sudão, Togo. Para esses países, uma solução alternativa é [efetuar o sideload da versão para Android do aplicativo de Portal da Empresa](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+> __Android__: atualmente, o aplicativo de Portal da Empresa para Android não está disponível na China. Para esses países, uma solução alternativa é [efetuar o sideload da versão para Android do aplicativo de Portal da Empresa](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
-### Consulte também
-[O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
+### <a name="see-also"></a>Consulte também
+[O que saber antes de iniciar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

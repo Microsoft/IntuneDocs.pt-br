@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,37 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 609d3ab2c96d9a3dff7a6bb6aa085f9cda83ba38
-ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: f1176c923e059ad085855423e95522d2e4fec76e
 
 
 ---
 
 
-# Configurações de política de conformidade para dispositivos Android for Work no Microsoft Intune
+# <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Configurações de política de conformidade para dispositivos Android for Work no Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 As configurações de política descritas neste tópico se aplicam a dispositivos Android for Work.
 
 Se você estiver procurando informações sobre outras plataformas, selecione uma das seguintes opções:
 > [!div class="op_single_selector"]
-- [Configurações da política de conformidade para Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Configurações da política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Configurações da política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações de política de conformidade para Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações de política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Configurações de segurança do sistema
-### Senha
+## <a name="system-security-settings"></a>Configurações de segurança do sistema
+### <a name="password"></a>Senha
 - **Exigir uma senha para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que eles possam acessar o dispositivo.
 
 -  **Comprimento mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
 
 - **Qualidade da senha:** essa configuração detecta se os requisitos de senha especificados por você estão configurados no dispositivo. Habilite essa configuração para exigir que os usuários configurem certos requisitos de senha para dispositivos Android. Escolha:
-  -   **Biométrico de baixa segurança**
+  -   **Biométrico de segurança baixa**
   - **Necessária**
-  -   **Ao menos numérico**
-  -   **Ao menos alfabético**
-  -   **Ao menos alfanumérico**
+  -   **Pelo menos, numérico**
+  -   **Pelo menos, alfabético**
+  -   **Pelo menos, alfanumérico**
   -   **Alfanumérico com símbolos**
 
 - **Minutos de inatividade antes da senha ser necessária:** especifica o tempo ocioso antes que o usuário precise digitar novamente a senha.
@@ -55,10 +57,10 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** essa configuração deve ser usada junto com a configuração **Minutos de inatividade antes da senha ser necessária**. Os usuários finais serão solicitados a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
-### Criptografia
+### <a name="encryption"></a>Criptografia
 - **Exigir criptografia no dispositivo móvel:** não é necessário definir essa configuração, pois os dispositivos Android for Work impõem a criptografia.
 
-## Configurações de segurança e integridade do dispositivo
+## <a name="device-health-and-security-settings"></a>Configurações de segurança e integridade do dispositivo
 
 - **O dispositivo não pode estar com jailbreak ou com raiz:** se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.
 - **Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas:** não é necessário definir essa configuração, pois dispositivos Android for Work sempre restringem a instalação de fontes desconhecidas. .  
@@ -75,7 +77,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
   Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Configurações de propriedade do dispositivo
+## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 - **Sistema operacional mínimo exigido:** quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível.
   É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos após o que será possível acessar os recursos da empresa.
 
@@ -83,6 +85,6 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

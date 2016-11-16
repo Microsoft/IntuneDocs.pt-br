@@ -2,7 +2,8 @@
 title: "Regras de acesso do Exchange para dispositivos móveis | Microsoft Intune"
 description: "Regras de acesso do Exchange ActiveSync para permitir ou bloquear conexões de dispositivo com o EAS"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 73c3b57ac8b896001758eb22181c865ff68c3b93
-ms.openlocfilehash: f933df0436e73a7db2cd94c9a104294591ea96c0
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
 
 
 ---
 
-# Regras de acesso do Exchange para dispositivos móveis
+# <a name="exchange-access-rules-for-mobile-devices"></a>Regras de acesso do Exchange para dispositivos móveis
 As regras de acesso do Exchange para dispositivos móveis determinam o nível de acesso que esses dispositivos têm ao Exchange ActiveSync. Essas configurações afetam todos os dispositivos móveis, incluindo aqueles não registrados no Microsoft Intune. Você pode começar definindo uma **Regra Padrão** que se aplica a qualquer dispositivo móvel que não tenha uma regra personalizada aplicada a ele.
 
 A tabela a seguir contém os níveis de acesso gerenciados pelo Exchange ActiveSync:
@@ -27,8 +28,8 @@ A tabela a seguir contém os níveis de acesso gerenciados pelo Exchange ActiveS
 |Nível de acesso|Descrição|
 |----------------|---------------|
 |**Permitir que os dispositivos acessem o Exchange**|No estado *permitir acesso*, um dispositivo móvel pode sincronizar por meio do Exchange ActiveSync e se conectar ao servidor Exchange para recuperar email e gerenciar calendário, contatos, tarefas e observações. Isso continuará desde que o dispositivo esteja em conformidade com a política de caixa de correio do Exchange ActiveSync configurada no Exchange, a menos que o usuário ou o dispositivo móvel específico tenha sido bloqueado pelo administrador do Exchange.|
-|**Bloquear o acesso dos dispositivos móveis ao Exchange**|No estado *bloquear acesso*, os dispositivos móveis são bloqueados e não tem permissão para se conectar ao servidor do Exchange. Os dispositivos recebem um erro HTTP 403 Proibido. O usuário recebe uma mensagem de email do servidor Exchange informando que o dispositivo móvel foi impedido de acessar sua caixa de correio. Esta mensagem não pode estar no dispositivo móvel bloqueado. Usando a tarefa **Definir Notificação do Usuário**você pode adicionar texto personalizado a essa mensagem a fim de fornecer instruções aos usuários cujos dispositivos estão bloqueados. |
-|**Colocar os dispositivos móveis em quarentena para que você possa permiti-los ou bloqueá-los mais tarde**|Quando um dispositivo móvel está em quarentena, ele tem permissão para se conectar ao servidor do Exchange. No entanto, ele recebe apenas acesso limitado aos dados. O usuário pode adicionar conteúdo às suas próprias pastas Calendário, Contatos, Tarefas e Anotações, mas o servidor não permite que o dispositivo recupere conteúdo da caixa de correio do usuário. O usuário recebe uma única mensagem de email informando que o dispositivo móvel foi colocado em quarentena. Essa mensagem é enviada ao dispositivo e à caixa de correio do usuário. Usando a tarefa **Definir Notificação do Usuário**, você pode adicionar texto personalizado a essa mensagem, para fornecer instruções para os usuários cujos dispositivos estão em quarentena.|
+|**Bloquear o acesso dos dispositivos ao Exchange**|No estado *bloquear acesso*, os dispositivos móveis são bloqueados e não tem permissão para se conectar ao servidor do Exchange. Os dispositivos recebem um erro HTTP 403 Proibido. O usuário recebe uma mensagem de email do servidor Exchange informando que o dispositivo móvel foi impedido de acessar sua caixa de correio. Esta mensagem não pode estar no dispositivo móvel bloqueado. Usando a tarefa **Definir Notificação do Usuário**você pode adicionar texto personalizado a essa mensagem a fim de fornecer instruções aos usuários cujos dispositivos estão bloqueados. |
+|**Colocar os dispositivos em quarentena para permiti-los ou bloqueá-los mais tarde**|Quando um dispositivo móvel está em quarentena, ele tem permissão para se conectar ao servidor do Exchange. No entanto, ele recebe apenas acesso limitado aos dados. O usuário pode adicionar conteúdo às suas próprias pastas Calendário, Contatos, Tarefas e Anotações, mas o servidor não permite que o dispositivo recupere conteúdo da caixa de correio do usuário. O usuário recebe uma única mensagem de email informando que o dispositivo móvel foi colocado em quarentena. Essa mensagem é enviada ao dispositivo e à caixa de correio do usuário. Usando a tarefa **Definir Notificação do Usuário**, você pode adicionar texto personalizado a essa mensagem, para fornecer instruções para os usuários cujos dispositivos estão em quarentena.|
 
 Uma estratégia de acesso é uma combinação de uma **Regra Padrão** e **Exceções de Plataforma** que se aplicam a todos os dispositivos móveis conectados ao Exchange. A tabela a seguir lista alguns exemplos de estratégia de acesso.
 
@@ -39,7 +40,7 @@ Uma estratégia de acesso é uma combinação de uma **Regra Padrão** e **Exce�
 |Listas mistas de permissões e bloqueios|Além de criar listas de permissões e bloqueios, você pode colocar em quarentena novos dispositivos móveis à medida que eles são inseridos na organização, enquanto são avaliados. Por exemplo, se você tem uma lista de bloqueio para dispositivos móveis que não são permitidos dentro de sua organização, e uma lista de permissões para os dispositivos móveis que são permitidos dentro da organização, você pode definir a regra padrão para a quarentena. Todos os outros dispositivos são colocados automaticamente em quarentena. Isso permite que você descubra novos dispositivos à medida que são introduzidos na organização e decida se quer adicioná-los à lista de permissões ou de bloqueio.|
 O procedimento a seguir descreve como criar uma regra personalizada.
 
-## Criar uma regra de acesso padrão
+## <a name="create-a-default-access-rule"></a>Criar uma regra de acesso padrão
 
 1.  No [console de administração do Microsoft Intune](http://manage.microsoft.com), escolha **Política** &gt; **Exchange ActiveSync**.
 
@@ -47,7 +48,7 @@ O procedimento a seguir descreve como criar uma regra personalizada.
 
 O procedimento a seguir descreve como criar uma regra personalizada:
 
-## Criar uma regra de acesso personalizada
+## <a name="create-a-custom-access-rule"></a>Criar uma regra de acesso personalizada
 
 1. No [console de administração do Microsoft Intune](http://manage.microsoft.com), escolha **Política** &gt; **Exchange ActiveSync**.
 
@@ -55,6 +56,6 @@ O procedimento a seguir descreve como criar uma regra personalizada:
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

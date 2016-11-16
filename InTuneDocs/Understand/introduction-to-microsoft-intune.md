@@ -16,13 +16,13 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
-ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Introdução ao Intune
+# <a name="introduction-to-intune"></a>Introdução ao Intune
 O Microsoft Intune é o braço de gerenciamento do Microsoft Enterprise Mobility + Security (EMS, anteriormente Enterprise Mobility Suite). A mobilidade corporativa resume-se a capacitar seus funcionários a serem produtivos em todos os dispositivos, ao mesmo tempo que mantêm protegidas as informações de sua organização.  
 
 O EMS é um pacote integrado completo para a mobilidade corporativa, incluindo produtividade, identidade, controle de acesso, gerenciamento e proteção de dados. Ele fornece a uma maneira eficiente para implantar e operar uma solução de mobilidade em sua organização.  
@@ -49,13 +49,13 @@ Essas ferramentas são usadas em diferentes combinações para habilitar os cen�
 
 Em toda esta documentação, vamos explicar como usar as ferramentas que o Intune fornece para dar suporte aos seus cenários de negócios.  Explicaremos também como usar essas ferramentas com o Office 365, Azure AD, Azure RMS e outras partes do Microsoft Mobility Suite. Forneceremos uma visão ampla das maneiras pelas quais a tecnologia é normalmente usada e como ela pode ser útil em seu ambiente, bem como os procedimentos para sua implementação. A tecnologia em si é flexível e pode ser adaptada para todos os tipos de cenários além dos que descrevemos aqui.
 
-### Próximas etapas
+### <a name="next-steps"></a>Próximas etapas
 * Leia sobre algumas das [formas comuns para usar o Intune](common-ways-to-use-intune.md).
 * Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Aprofunde-se nas [funcionalidades e requisitos técnicos](/intune/get-started/what-to-know-before-you-start-microsoft-intune) do Intune.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

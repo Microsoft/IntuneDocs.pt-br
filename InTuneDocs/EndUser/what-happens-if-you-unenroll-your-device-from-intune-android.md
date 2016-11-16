@@ -2,10 +2,10 @@
 title: "O que acontece quando você cancela o registro do dispositivo Android no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 ---
 
 
-# O que acontece quando você cancela o registro do dispositivo Android no Intune?
+# <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>O que acontece quando você cancela o registro do dispositivo Android no Intune?
 
 Ao cancelar o registro do dispositivo Android do Intune:
 
@@ -40,10 +40,10 @@ Se o dispositivo estiver configurado apenas para receber email da empresa e canc
 
 Para obter instruções de como cancelar o registro, consulte [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md) (Cancelar o registro do dispositivo no Intune usando o aplicativo do Portal da Empresa).
 
-Precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+Precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a [equipe de Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

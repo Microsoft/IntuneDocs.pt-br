@@ -2,10 +2,10 @@
 title: Criptografar seu dispositivo | Microsoft Intune
 description: Descreve como criptografar um dispositivo Android
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# Criptografar seu dispositivo
+# <a name="encrypt-your-device"></a>Criptografar seu dispositivo
 
 Se sua empresa ou organização pedir que você criptografe o dispositivo Android antes de acessar os arquivos, email ou dados da empresa, siga as etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigir.
 
@@ -34,7 +34,7 @@ Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
 3.  Siga as instruções apresentadas na tela. Durante a criptografia, seu dispositivo pode ser reiniciado várias vezes.
 
-### O que fazer se você tiver problemas
+### <a name="what-to-do-if-you-have-issues"></a>O que fazer se você tiver problemas
 **Problema**: seu dispositivo já foi criptografado, mas um dos seguintes cenários ocorre:
 
 - O botão de criptografia está desabilitado.
@@ -57,10 +57,10 @@ Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
     5. Abra o aplicativo do Portal da Empresa, selecione seu dispositivo e toque em **Verificar Conformidade**.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a [equipe de Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,10 +2,10 @@
 title: "Como os usuários iOS podem obter aplicativos | Microsoft Intune"
 description: "Métodos para disponibilizar aplicativos do iOS para usuários finais"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37841027c7ae040163440a19f9e163fb4eb87233
-ms.openlocfilehash: ad780fb3403f6caaee1218d785a5cad326c18df5
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 3ba0a5cda91164761c4576df935c54390bc78f8c
 
 
 ---
 
 
-# Como os usuários iOS podem obter aplicativos
+# <a name="how-your-ios-users-get-their-apps"></a>Como os usuários iOS podem obter aplicativos
 
 Use estas informações para entender como e onde os usuários finais obtêm os aplicativos que você distribui por meio do Microsoft Intune.
 
@@ -35,22 +35,26 @@ Use estas informações para entender como e onde os usuários finais obtêm os 
 
 As restrições da Apple proíbem que aplicativos gerenciados e de linha de negócios da loja de aplicativos sejam listados no aplicativo do Portal da Empresa. Para solucionar esse problema, os blocos no aplicativo do Portal da Empresa para iOS encaminham os usuários a diferentes modos de exibição em um único local (o site do Portal da Empresa) para todos os seus aplicativos.
 
-- Anteriormente, **Aplicativos da Empresa** apontava para uma lista de todos os aplicativos na guia TODOS do [site do Portal da Empresa](http://portal.manage.microsoft.com) e continuará funcionando da mesma maneira. O nome do bloco foi alterado para **Todos os Aplicativos**.
+Os usuários registrados obtêm seus aplicativos tocando nos blocos a seguir na tela Aplicativos do aplicativo de Portal da Empresa:
 
-- Anteriormente, **Outros Aplicativos** apontava para um modo de exibição no aplicativo do Portal da Empresa que listava todos os aplicativos que a Apple permite que o aplicativo do Portal da Empresa mostre. O nome do bloco foi alterado para **Aplicativos em Destaque** e, ao tocar no bloco, os usuários são levados para a guia EM DESTAQUE do site Portal da Empresa.
+- **Todos os Aplicativos** aponta para uma lista de todos os aplicativos na guia TODOS do [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
--  **Categorias** apontava para um modo de exibição no aplicativo do Portal da Empresa que listava categorias de aplicativos. O nome do bloco não foi alterado, mas agora ele aponta para a guia CATEGORIAS do site Portal da Empresa.
-Você pode encontrar capturas de tela atualizadas em [Melhorias na maneira como os usuários finais do iOS obtêm seus aplicativos](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+- **Aplicativos em destaque** leva os usuários à guia EM DESTAQUE do site do Portal da empresa.
+
+- **Categorias** aponta para a guia CATEGORIAS do site do Portal da Empresa.
+
+ 
+![Tela de aplicativos do Portal da Empresa para iOS](./media/ios-cp-app-main-apps-screen.png)
+
+Para obter informações sobre como adicionar aplicativos e colocá-los nesses blocos, consulte [Adicionar aplicativos para dispositivos registrados ao Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+### <a name="see-also"></a>Consulte também
+[Como os usuários do Android podem obter aplicativos](how-your-android-users-get-their-apps.md)
+
+[Como os usuários do Windows podem obter aplicativos](how-your-windows-users-get-their-apps.md)
 
 
 
-### Consulte também
-[Como os usuários Android podem obter aplicativos](how-your-android-users-get-their-apps.md)
-
-[Como os usuários Windows podem obter aplicativos](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

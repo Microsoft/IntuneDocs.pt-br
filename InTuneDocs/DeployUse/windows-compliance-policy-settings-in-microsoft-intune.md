@@ -14,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Configurações de política de conformidade para dispositivos Windows no Microsoft Intune
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Configurações de política de conformidade para dispositivos Windows no Microsoft Intune
 
 As configurações de política descritas neste tópico se aplicam a dispositivos que executam o sistema operacional Windows. A versão específica do Windows com suporte é indicada nas seções a seguir.
 
@@ -28,12 +28,13 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 > [!div class="op_single_selector"]
 - [Configurações da política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Configurações da política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações da política de conformidade para o Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Configurações da política de conformidade para dispositivos Windows Phone
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Configurações da política de conformidade para dispositivos Windows Phone
 As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e posterior.
 
-## Configurações de segurança do sistema
-### Senha
+## <a name="system-security-settings"></a>Configurações de segurança do sistema
+### <a name="password"></a>Senha
 - **Exigir uma senha para desbloquear dispositivos móveis:**    defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que eles possam acessar o dispositivo.
 
 - **Permitir senhas simples:**    defina como **Sim** para permitir que os usuários criem senhas simples, como '**1234**' ou '**1111**'.
@@ -60,27 +61,27 @@ As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e po
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** essa configuração deve ser usada junto com **Minutos de inatividade antes da senha ser necessária**. Os usuários finais serão solicitados a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
   **Essa configuração só se aplica a dispositivos Windows 10 Mobile.**
-### Criptografia
+### <a name="encryption"></a>Criptografia
 - **Exigir criptografia no dispositivo móvel:** defina esta opção como **Sim** para exigir que o dispositivo seja criptografado para conectar-se aos recursos.
 
-## Configurações de integridade do dispositivo
+## <a name="device-health-settings"></a>Configurações de integridade do dispositivo
 - **Exigir que os dispositivos sejam relatados como íntegros:** você pode definir uma regra para exigir que os dispositivos **Windows 10 Mobile** sejam relatados como íntegros nas Políticas de Conformidade novas ou existentes.  Se essa configuração estiver habilitada, dispositivos Windows 10 serão avaliados por meio do HAS (Serviço de Atestado de Integridade) para os seguintes pontos de dados:
   -  **BitLocker habilitado**: quando o Bitlocker está ativado, o dispositivo é capaz de proteger os dados armazenados na unidade do acesso não autorizado quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados de usuário e ajuda a garantir que um computador não foi violado, mesmo se tiver sido deixado sem supervisão, tiver sido perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Consequentemente, as chaves não poderão ser acessadas até que o TPM verifique o estado do computador
   -  **Integridade de código habilitada:** a integridade de código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade do código detecta se um arquivo de sistema ou de driver não assinado está sendo carregado no kernel, ou se um arquivo do sistema foi modificado por software mal-intencionado que está sendo executado por uma conta de usuário com privilégios de administrador.
   - **Inicialização Segura habilitada:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma isso antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
 
   Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
-##  Configurações de propriedade do dispositivo
+##  <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 - **Sistema operacional mínimo exigido:** quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível.
     É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
 - **Versão do sistema operacional máxima permitida:** quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
 
-## Configurações da política de conformidade para computadores Windows
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Configurações da política de conformidade para computadores Windows
 As configurações listadas nesta seção têm suporte em computadores Windows.
-## Configurações de segurança do sistema
-### Senha
+## <a name="system-security-settings"></a>Configurações de segurança do sistema
+### <a name="password"></a>Senha
 - **Comprimento mínimo da senha:** - Com suporte no Windows 8.1.
 
   Especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
@@ -113,7 +114,7 @@ As configurações listadas nesta seção têm suporte em computadores Windows.
 
   Se a opção **Lembrar Histórico de Senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 
-## Configurações de integridade do dispositivo
+## <a name="device-health-settings"></a>Configurações de integridade do dispositivo
 - **Exigir que os dispositivos sejam relatados como íntegros:** - Com suporte em dispositivos Windows 10.
 Você pode definir uma regra para exigir que os dispositivos Windows 10 sejam relatados como íntegros nas Políticas de Conformidade novas ou existentes.  Se essa configuração estiver habilitada, dispositivos Windows 10 serão avaliados por meio do HAS (Serviço de Atestado de Integridade) para os seguintes pontos de dados:
   -  **BitLocker habilitado**: quando o Bitlocker está ativado, o dispositivo é capaz de proteger os dados armazenados na unidade do acesso não autorizado quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados de usuário e ajuda a garantir que um computador não foi violado, mesmo se tiver sido deixado sem supervisão, tiver sido perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Consequentemente, as chaves não poderão ser acessadas até que o TPM verifique o estado do computador
@@ -123,7 +124,7 @@ Você pode definir uma regra para exigir que os dispositivos Windows 10 sejam re
 
   Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Configurações de propriedade do dispositivo
+## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 - **Sistema operacional mínimo necessário:** - Com suporte no Windows 8.1 e no Windows 10.
 
   Especifique o número de major.minor.build aqui. O número de versão deve corresponder à versão retornada pelo comando winver.
@@ -141,6 +142,6 @@ Para localizar a versão do sistema operacional que deve ser usada para as confi
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,36 +2,36 @@
 title: "Senha não atende aos requisitos de administrador de TI | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b13d2a37cc6a1e4d2b6287fc8d43675441386f03
-ms.openlocfilehash: fa9a3a89e50e8d03beb2efc067925ca0a4fcd68c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 60659d60e3fcf2146b444a3334192c8b1181f735
 
 
 ---
 
-# Senha não atende aos requisitos de administrador de TI
+# <a name="password-does-not-meet-it-administrator-requirements"></a>Senha não atende aos requisitos de administrador de TI
 
 A senha que você usa para acessar recursos corporativos ou de estudante não atende a um ou mais requisitos que o administrador de TI configurou. Para corrigir o problema, siga as instruções que são mostradas no seu dispositivo. Descrições dos problemas estão listadas abaixo.
 
 Para ver as etapas de como definir seu PIN ou senha, use o link que corresponde ao tipo de dispositivo que você tem:
 
-- [Definir a PIN ou a senha do seu dispositivo Android](set-your-pin-or-password-android.md)
+- [Definir o PIN ou a senha do seu dispositivo Android](set-your-pin-or-password-android.md)
 - [Definir ou alterar a senha do seu dispositivo iOS](set-or-change-your-passcode-ios.md)
 - [Definir ou alterar a senha do seu dispositivo Windows](set-or-change-your-password-windows.md)
 
 Descrições de problemas com senha ou PIN:
 
-- **A senha não contém caracteres complexos**. Seu administrador de TI exige que você use caracteres complexos em sua senha. Exemplos de caracteres complexos podem ser números, letras maiúsculas e símbolos como $, % e #. 
+- **A senha não contém caracteres complexos**. Seu administrador de TI exige que você use caracteres complexos em sua senha. Exemplos de caracteres complexos podem ser números, letras maiúsculas e símbolos como $, % e #.
 
 - **A senha é muito simples e é não segura o suficiente**. Exemplos de senhas simples podem ser 1234 ou 1111. Se você não tiver certeza de quais tipos de senhas são permitidos, tente garantir que a senha não contenha números sequenciais ou repetidos, como aqueles no exemplo.
 
@@ -41,14 +41,14 @@ Descrições de problemas com senha ou PIN:
 
 - **Senha muito curta**. Seu administrador de TI exige que você use uma senha maior com mais caracteres.
 
-- **A senha foi usada muito recentemente**. Seu administrador de TI está impedindo o uso de senhas anteriores que você usou no passado. Escolha uma senha que você nunca usou antes. 
+- **A senha foi usada muito recentemente**. Seu administrador de TI está impedindo o uso de senhas anteriores que você usou no passado. Escolha uma senha que você nunca usou antes.
 
-- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #. 
+- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #.
 
-Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
