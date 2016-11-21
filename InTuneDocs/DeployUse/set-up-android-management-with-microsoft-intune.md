@@ -14,8 +14,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 1cde91da5dd42488925c2a3c57cc79db0a9e16fa
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 
 
 ---
@@ -29,18 +29,19 @@ Como administrador do Intune, você pode habilitar o gerenciamento de dispositiv
 2.  **Registro do Android habilitado**<br>
     Nenhuma configuração adicional no console do Intune é necessária para habilitar o registro de dispositivo móvel Android.
 
-3.  **Diga aos usuários como obter acesso aos recursos da empresa com o portal da empresa**<br>
-    Seus usuários precisam saber como registrar seus dispositivos e o que esperar quando eles são abertos no gerenciamento. [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+3.  **Informe aos usuários como registrar seus dispositivos para obter acesso aos recursos da empresa.**
 
-4.  Seus usuários precisam saber como registrar seus dispositivos e o que esperar quando eles são abertos no gerenciamento.
-  - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-  - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-android-device-with-intune.md)
+    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Android no Intune](../enduser/enroll-your-device-in-intune-android.md). O processo de registro informa aos usuários o que eles podem esperar, e o que os administradores de TI podem e não podem ver em seus dispositivos.
+
+    Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
+  - [Recursos sobre a experiência do usuário final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Diretrizes do usuário final para dispositivos com Android](../enduser/using-your-android-device-with-intune.md)
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Habilite o MDM (gerenciamento de dispositivo móvel) para disposit
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: a077d5a6cd111d84cb98bfcb5e05cab0c0c4d49c
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 66d533d094a12239ca4ed1a30f9ce3a06e5cece1
 
 
 ---
@@ -35,7 +35,11 @@ Você pode permitir que os usuários instalem e registrem seus dispositivos usan
 
 1.  **Configurar Intune**<br>Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de MDM (gerenciamento de dispositivo móvel)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e configure o MDM.
 
-2.  **Criar CNAMEs** (opcional)<br>Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para manage.microsoft.com. Se houver mais de um domínio verificado, crie um registro CNAME para cada domínio. Os registros de recursos de CNAME deve conter as seguintes informações:
+2.  **Criar CNAMEs** (opcional)<br>Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. 
+
+    Se você tiver um CNAME no DNS que redireciona o EnterpriseEnrollment.contoso.com para manage.microsoft.com, sugerimos a substituição por um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. Essa alteração é recomendada, pois o ponto de extremidade manage.microsoft.com está sendo desativado para inscrições em uma versão futura.
+
+    Se houver mais de um domínio verificado, crie um registro CNAME para cada domínio. Os registros de recursos de CNAME deve conter as seguintes informações:
 
   |TYPE|Nome do host|Aponta para|TTL|
   |--------|-------------|-------------|-------|
@@ -54,9 +58,13 @@ Você pode permitir que os usuários instalem e registrem seus dispositivos usan
 
     ![Caixa de diálogo Configurar o gerenciamento de dispositivo móvel para Windows](../media/windows-phone-enrollment.png)
 
-4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos.
+4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você estiver distribuindo aplicativos LOB (linha de negócios) que não estão disponíveis da Windows Store para os dispositivos.
 
-5.  **Informar os usuários**<br>Seus usuários precisam saber como registrar seus dispositivos e o que esperar após eles passarem a fazer parte do gerenciamento.
+5.  **Informe aos usuários como registrar seus dispositivos para obter acesso aos recursos da empresa.**
+
+    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md). Você também pode enviar os usuários para [O que o administrador de TI pode ver quando você registra o dispositivo no Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+
+    Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
     - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
@@ -64,6 +72,6 @@ Nenhum trabalho adicional é necessário, a menos que você vá implantar o Port
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

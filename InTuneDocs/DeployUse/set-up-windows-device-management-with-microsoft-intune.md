@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
 
 
 ---
@@ -55,8 +55,12 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
 4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos.
 
-6.  **Informar os usuários**<br>Você precisará dizer aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento:
-      - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **Diga aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento.**
+
+    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md).
+
+    Para saber mais sobre tarefas de usuário final, consulte estes artigos:
+      - [Recursos sobre a experiência do usuário final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>Consulte também
@@ -64,6 +68,6 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
