@@ -2,7 +2,8 @@
 title: Registrar dispositivos de propriedade corporativa | Microsoft Intune
 description: "Registre dispositivos corporativos de diversas formas, com base no tipo de dispositivo, em como ele foi comprado e nas necessidades da organização."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88409332d203dc4ee82fdf98f89a94e5a89a7eed
-ms.openlocfilehash: c29cd2c0c4c5671a84f7c0b0ba473e6fb32604d9
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
@@ -33,7 +34,7 @@ Saiba como [registrar dispositivos iOS corporativos](enroll-corporate-owned-ios-
 
 ## <a name="create-a-device-enrollment-manager-account"></a>Criar uma conta de gerenciador de registro de dispositivo
 
-Você pode criar uma conta de DEM (gerenciador de registro de dispositivo) de usuário único no Intune para gerenciar um grande número de dispositivos móveis na sua organização. Depois de criar uma conta de DEM, o gerente da conta designada pode registrar mais do que os cinco dispositivos que um usuário padrão pode registrar.
+Você pode criar uma conta de DEM (gerenciador de registro de dispositivo) de usuário único no Intune para gerenciar um grande número de dispositivos móveis na sua organização. Depois de criar uma conta de DEM, o gerente da conta designada pode registrar mais do que os 15 dispositivos que um usuário padrão pode registrar.
 
 Você pode usar uma conta de DEM para registrar apenas dispositivos que não são usados por um usuário único específico. Esses tipos de dispositivos são bons para aplicativos de ponto de venda ou utilitários, por exemplo, mas não para usuários que precisam acessar os recursos da empresa ou o email.
 
@@ -60,6 +61,6 @@ Em uma lista de dispositivos, o valor de **Propriedade** é **Empresarial**. Um 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

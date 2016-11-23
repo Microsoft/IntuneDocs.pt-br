@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: bb94cb21bce5fb25c821b6a01d952ccba2f94834
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
 ---
@@ -81,7 +81,7 @@ Usando o Apple Configurator, você pode redefinir um dispositivo iOS para as con
         111111111,PO 1234
         ```
 
-    -   **Adicionar manualmente os detalhes do dispositivo**&mdash;Insira o número de série e os detalhes de até cinco dispositivos.
+    -   **Adicionar manualmente os detalhes do dispositivo**&mdash;Insira o número de série e os detalhes de até 15 dispositivos.
 
     > [!NOTE]
     > Se, posteriormente, você precisar remover dispositivos corporativos do gerenciamento do Intune, será necessário remover o número de série do dispositivo do Intune no grupo **Por número de série do iOS** em **Dispositivos corporativos pré-registrados** para desabilitar o registro do dispositivo. Se o Intune executar um procedimento de recuperação de desastres quando ou próximo à época em que você remover os números de série, você precisará confirmar que apenas os números de série de dispositivos ativos estão presentes nesse grupo.
@@ -151,6 +151,6 @@ Usando o Apple Configurator, você pode redefinir um dispositivo iOS para as con
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

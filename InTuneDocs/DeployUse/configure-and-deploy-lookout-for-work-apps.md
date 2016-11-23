@@ -7,22 +7,22 @@ manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
-ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# Configurar e implantar aplicativos Lookout for Work
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>Configurar e implantar aplicativos Lookout for Work
 Este artigo explica como configurar e implantar o aplicativo Lookout for Work em dispositivos Android e iOS.
 
-## Android (aplicativo da Google Play Store)
+## <a name="android-google-play-store-app"></a>Android (aplicativo da Google Play Store)
 
 * **Etapa 1:** no [console do administrador do Microsoft Intune](https://manage.microsoft.com), vá até **Aplicativos** e selecione **Adicionar Aplicativos**.   
 * **Etapa 2:** na página **Configuração de Software** do editor, escolha **Link externo** e especifique a seguinte URL: https://play.google.com/store/apps/details?id=com.lookout.enterprise
@@ -47,7 +47,7 @@ No Console do Intune, quando clicar em **Aplicativos**, agora você verá o apli
 * **Etapa 6**: escolha a opção **Instalação Obrigatória** para exigir que o aplicativo Lookout seja instalado no dispositivo do usuário.
 
 
-## iOS (versão Enterprise assinada do aplicativo Lookout)
+## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (versão Enterprise assinada do aplicativo Lookout)
 
 * **Etapa 1:** verifique se o **Gerenciamento de iOS** está configurado no dispositivo. Para obter instruções sobre como configurar seu dispositivo para gerenciamento de iOS, consulte [Configurar o gerenciamento de dispositivos iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -82,7 +82,7 @@ No Console do Intune, quando clicar em **Aplicativos**, agora você verá o apli
 
 Escolha a opção **Instalação Obrigatória** para exigir que o aplicativo Lookout seja instalado no dispositivo do usuário.
 
-## O que acontece quando o aplicativo implantado for aberto no dispositivo
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>O que acontece quando o aplicativo implantado for aberto no dispositivo
 
 
 
@@ -93,11 +93,11 @@ Quando abrir o Lookout for Work no dispositivo, o usuário será solicitado a at
 
 * [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## Próximas etapas
-* [Habilitar a regra de proteção de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md)
+## <a name="next-steps"></a>Próximas etapas
+* [Habilitar a regra de proteção de dispositivo contra ameaças na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

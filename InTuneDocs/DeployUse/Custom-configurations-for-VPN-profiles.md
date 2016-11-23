@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
-ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
@@ -23,7 +23,15 @@ ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 # <a name="custom-configurations-for-vpn-profiles"></a>Configurações personalizadas para perfis de VPN
 
 ## <a name="create-a-custom-configuration"></a>Criar uma configuração personalizada
-Você pode usar configurações personalizadas para criar perfis de VPN no Intune. Parta criar uma configuração personalizada:
+Você pode usar configurações personalizadas para criar perfis de VPN no Intune para:
+
+* Dispositivos que executam o Android 4 e posterior
+* Dispositivos Android for Work
+* Dispositivos registrados que executam o Windows 8.1 e versões posteriores
+* Dispositivos que executam o Windows Phone 8.1 e versões posteriores
+* Dispositivos que executam o Windows 10 Desktop e Mobile
+
+Parta criar uma configuração personalizada:
 
    1. No console do administrador do Intune, **Política** > **Adicionar Política** > *Expandir plataforma* > **Configuração personalizada** > **Criar Política**.
    2. Forneça um nome para a política.
