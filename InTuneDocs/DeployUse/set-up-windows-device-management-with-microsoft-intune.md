@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 2d8f0694281249a30f55579b4cce2ade21fb14d7
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ Você pode permitir que os usuários instalem e registrem seus dispositivos usan
 1. **Configurar Intune**<br>
 Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de MDM (gerenciamento de dispositivo móvel)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e configure o MDM.
 
-2. **Criar CNAMEs** (opcional)<br>Crie registros **CNAME** de recurso DNS para o domínio de sua empresa para simplificar o registro. Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se nenhum registro CNAME de registro for encontrado, os usuários serão solicitados a inserir manualmente o nome do servidor MDM `https://manage.microsoft.com`. Registros de recursos de CNAME devem conter as seguintes informações:
+2. **Criar CNAMEs** (opcional)<br>Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
+
+    Se você tiver um CNAME no DNS que redireciona o EnterpriseEnrollment.contoso.com para manage.microsoft.com, sugerimos a substituição por um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. Essa alteração é recomendada, pois o ponto de extremidade manage.microsoft.com está sendo desativado para inscrições em uma versão futura.
+
+    Registros de recursos de CNAME devem conter as seguintes informações:
 
   |TYPE|Nome do host|Aponta para|TTL|
   |--------|-------------|-------------|-------|
@@ -55,8 +59,12 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
 4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos.
 
-6.  **Informar os usuários**<br>Você precisará dizer aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento:
-      - [O que dizer a seus usuários finais sobre como usar o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **Diga aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento.**
+
+    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md).
+
+    Para saber mais sobre tarefas de usuário final, consulte estes artigos:
+      - [Recursos sobre a experiência do usuário final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>Consulte também
@@ -64,6 +72,6 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

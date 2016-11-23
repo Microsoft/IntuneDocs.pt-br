@@ -2,10 +2,10 @@
 title: "Bloqueio remoto e redefinição de senha | Microsoft Intune"
 description: "O Intune fornece funcionalidades de bloqueio remoto e redefinição de senha."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: b32ef59aa33205e5687d951d50dfd605a6b071f2
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
 
 ---
-# Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
+# <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e redefinição de senha.
 
-## Bloquear um dispositivo remotamente
+## <a name="lock-a-device-remotely"></a>Bloquear um dispositivo remotamente
 Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remotamente. A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas móveis.
 
 |Plataforma|Bloqueio remoto|
@@ -34,7 +34,7 @@ Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remot
 
 Não há suporte para o bloqueio remoto para computadores com Windows registrados com o cliente de software do Intune.
 
-### Para bloquear um dispositivo móvel remotamente usando o console do Intune
+### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>Para bloquear um dispositivo móvel remotamente usando o console do Intune
 
 1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
 
@@ -45,13 +45,13 @@ Não há suporte para o bloqueio remoto para computadores com Windows registrado
 
 3.  Na lista, clique no dispositivo ou nos dispositivos que deseja bloquear. Na barra de tarefas, escolha **Tarefas Remotas** e selecione **Bloqueio Remoto**.
 
-## Redefinir a senha em um dispositivo
+## <a name="reset-the-passcode-on-a-device"></a>Redefinir a senha em um dispositivo
 Se um usuário esquecer a senha, você poderá ajudá-lo removendo a senha de um dispositivo ou impondo uma nova senha temporária em um dispositivo. A tabela a seguir lista como a redefinição de senha funciona em diferentes plataformas remotas.
 
 |Plataforma|Redefinição de senha|
 |------------|------------------|
 |iOS|Suportado para limpar a senha de um dispositivo. Não cria uma nova senha temporária.|
-|Android|Tem suporte. Cria uma senha temporária.|
+|Android|Suporte em versões anteriores ao Android 7.0. Cria uma senha temporária.|
 |Windows 10 Mobile|Com suporte|
 |Windows Phone 8 e Windows Phone 8.1|Com suporte|
 |Windows RT 8.1 e Windows RT|Sem suporte|
@@ -59,7 +59,7 @@ Se um usuário esquecer a senha, você poderá ajudá-lo removendo a senha de um
 
 Não há suporte para a redefinição de senha para computadores com Windows registrados com o cliente de software do Intune.
 
-### Redefinir uma senha
+### <a name="reset-a-passcode"></a>Redefinir uma senha
 
 1.  No [console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
 
@@ -71,11 +71,11 @@ Não há suporte para a redefinição de senha para computadores com Windows reg
 3.  Na lista, clique no dispositivo ou nos dispositivos que deseja bloquear. Na barra de tarefas, escolha **Tarefas Remotas** e selecione **Redefinição de Senha**.
 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Desativar dispositivos](retire-devices-from-microsoft-intune-management.md) e [Apagamento seletivo do Windows para o gerenciamento de dados de dispositivos](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

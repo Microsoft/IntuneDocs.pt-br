@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: f903a62e7fb28e71e773a27db341c846e1f76b63
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
@@ -76,7 +76,7 @@ Nesta tarefa, você publicará o modelo de certificado.
 
     -   Especifique um **Nome amigável de exibição do modelo** para o modelo.
 
-    -   Na guia **Nome da Entidade** , selecione **Fornecer na solicitação**. (A segurança é imposta pelo módulo de política do Intune para o NDES).
+    -   Na guia **Nome da Entidade** , selecione **Fornecer na solicitação**. 
 
     -   Na guia **Extensões** , verifique se a **Descrição das Políticas de Aplicativo** inclui **Autenticação de Cliente**.
 
@@ -142,8 +142,6 @@ Baixar, instalar e configurar o Conector de Certificado.
 
     a. Escolha **Entrar** e insira suas credenciais de administrador de serviços do Intune ou as credenciais de um administrador de locatários com permissão de administração global.
 
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
     b. Selecione a guia **Avançado** e forneça credenciais para uma conta que tenha a permissão **Emitir e Gerenciar Certificados** na sua Autoridade de Certificação emissora.
 
     c. Escolha **Aplicar**.
@@ -152,15 +150,12 @@ Baixar, instalar e configurar o Conector de Certificado.
 
 6.  Abra um prompt de comando e digite **services.msc**. Em seguida, pressione **Enter**, clique com o botão direito do mouse em **Serviço de Conector Intune** e escolha **Reiniciar**.
 
-Para validar que o serviço está em execução, abra um navegador e digite a seguinte URL, que deve retornar um erro **403** :
-
-**http:// &lt;FQDN_do_seu_servidor_NDES&gt;/certsrv/mscep/mscep.dll**
 
 ### <a name="next-steps"></a>Próximas etapas
 Agora você está pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurar perfis de certificado).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

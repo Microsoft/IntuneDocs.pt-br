@@ -2,8 +2,8 @@
 title: "Configurações da política de termos e condições | Microsoft Intune"
 description: "Você pode implantar os termos e condições do Intune em grupos de usuários para explicar como o registro, o acesso aos recursos de trabalho e o uso do aplicativo Portal da Empresa afetam usuários e dispositivos."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Configurações de política de termos e condições no Microsoft Intune
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Configurações de política de termos e condições no Microsoft Intune
 Você pode implantar os termos e condições do Intune em grupos de usuários para explicar como o registro, o acesso aos recursos de trabalho e o aplicativo de Portal da Empresa afetam usuários e dispositivos. Os usuários devem aceitar estes termos e condições antes de poderem usar o Portal da Empresa para registrar e acessar o trabalho.
 
 Você pode criar e implantar várias políticas que contêm termos e condições diferentes. Você pode também gerar versões dos mesmos termos e condições em idiomas diferentes e, em seguida, implantá-las aos grupos apropriados.
 
-## Criar uma política de termos e condições
+## <a name="create-a-terms-and-conditions-policy"></a>Criar uma política de termos e condições
 
 1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
@@ -47,7 +47,7 @@ Você pode criar e implantar várias políticas que contêm termos e condições
 
 4.  Ao terminar, clique em **Salvar**. A nova política é exibida no nó **Termos e Condições** do espaço de trabalho **Política**.
 
-## Implantar uma política de termos e condições
+## <a name="deploy-a-terms-and-conditions-policy"></a>Implantar uma política de termos e condições
 
 1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
@@ -57,16 +57,16 @@ Você pode criar e implantar várias políticas que contêm termos e condições
 
     Quando os usuários de destino acessam o portal da empresa, o Intune exibe os termos e condições que você implantou. Os usuários devem aceitar esses termos antes de que possam obter acesso aos recursos da empresa.
 
-## Monitorar uma política de termos e condições
+## <a name="monitor-a-terms-and-conditions-policy"></a>Monitorar uma política de termos e condições
 
 1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
 2.  Na janela **Criar Novo Relatório**, clique em **Exibir Relatório**. O relatório será aberto, detalhando quais usuários que aceitaram os termos e condições que você implantou.
 
-### Atualizações e controle de versão dos termos e condições
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>Atualizações e controle de versão dos termos e condições
 Quando edita uma política de termos e condições existente, você pode escolher qual comportamento ocorre ao implantar a política. Use o procedimento a seguir para ajudá-lo a atualizar as políticas de termos e condições existentes.
 
-## Trabalhar com várias versões dos termos e condições
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Trabalhar com várias versões dos termos e condições
 
 1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
@@ -76,11 +76,11 @@ Quando edita uma política de termos e condições existente, você pode escolhe
 
     É recomendável aumentar o número de versão e exigir a aceitação sempre que você fizer alterações significativas em sua política de termos e condições. Se você estiver corrigindo erros de digitação ou alterando a formatação, por exemplo, mantenha o número de versão atual.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

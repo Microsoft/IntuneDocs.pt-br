@@ -14,8 +14,8 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 14ba34d46df4b4ff9de4427800b146e383f8a3d2
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
 
 
 ---
@@ -38,7 +38,7 @@ O Microsoft Intune permite aos administradores importar números IMEI (identidad
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **Adicionar manualmente os detalhes do dispositivo** – insira o número IMEI e detalhes de até cinco dispositivos.
+    -   **Adicionar manualmente os detalhes do dispositivo** – insira o número IMEI e detalhes de até 15 dispositivos.
 
    *Detalhes* são para uso administrativo para que você possa identificar qual número IMEI está associado um dispositivo. Essas informações não são enviadas para o dispositivo, mas serão exibidas no console do Intune.
 
@@ -50,6 +50,6 @@ Quando o dispositivo com esse número IMEI é registrado no Intune, normalmente 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
