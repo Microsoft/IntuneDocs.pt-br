@@ -3,8 +3,9 @@ title: "Gerenciar transferência de dados entre aplicativos iOS | Microsoft Intu
 description: "Use este tópico para entender como você pode usar o recurso Open in do iOS e as políticas de gerenciamento de aplicativo móvel para gerenciar transferências de dados entre aplicativos."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Gerenciar transferência de dados entre aplicativos iOS com Microsoft Intune
-## Gerenciar aplicativos iOS
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gerenciar transferência de dados entre aplicativos iOS com Microsoft Intune
+## <a name="manage-ios-apps"></a>Gerenciar aplicativos iOS
 Proteger os dados da sua empresa inclui garantir que as transferências de arquivos sejam restritas a aplicativos gerenciados por você.  Você pode gerenciar aplicativos iOS das seguintes maneiras:
 
 -   Evite a perda de dados da empresa configurando uma política MAM para aplicativos, que chamaremos de aplicativos **gerenciados por política** aplicativos.
@@ -28,7 +29,7 @@ Proteger os dados da sua empresa inclui garantir que as transferências de arqui
 -   Você também pode implantar e gerenciar aplicativos pelo **canal MDM**.  Isso requer que os dispositivos sejam registrados na solução MDM. Eles podem ser aplicativos **gerenciados por política** ou outros aplicativos gerenciados.
 
 O recurso **Abrir em gerenciamento** para dispositivos iOS pode limitar as transferências de arquivo entre os aplicativos que são implantados por meio do canal **MDM**. As restrições de Abrir em gerenciamento são definidas nas definições de configuração e implantadas usando o software de MDM.  Quando o usuário instala o aplicativo implantado, são aplicadas restrições definidas por você.
-##  Usando MAM com aplicativos do iOS
+##  <a name="using-mam-with-ios-apps"></a>Usando MAM com aplicativos do iOS
 Políticas MAM (gerenciamento de aplicativo móvel) podem ser usadas com o recurso iOS **Abrir em gerenciamento** para proteger os dados da empresa das seguintes maneiras:
 
 -   **Dispositivos de propriedade do funcionário não gerenciados por qualquer solução de MDM:** você pode definir as configurações de política MAM para **Permitir que o aplicativo transfira dados somente para aplicativos gerenciados**. Quando o usuário final abrir um arquivo protegido em um aplicativo não gerenciado por política, o arquivo ficará ilegível.
@@ -41,7 +42,7 @@ Para certificar-se de que os aplicativos implantados usando a solução do MDM d
 > [!IMPORTANT]
 > A configuração de UPN do usuário só será necessária para aplicativos implantados para dispositivos gerenciados por um MDM de terceiro.  Para dispositivos gerenciados pelo Intune, essa configuração não é necessária.
 
-## Definir configuração de UPN do usuário
+## <a name="configure-user-upn-setting"></a>Definir configuração de UPN do usuário
 Essa configuração é necessária para dispositivos gerenciados por uma solução MDM de terceiro. O procedimento descrito a seguir é um fluxo geral de como implementar a configuração de UPN e experiência do usuário final resultante:
 
 
@@ -53,7 +54,7 @@ Essa configuração é necessária para dispositivos gerenciados por uma soluç�
 
 4.  Implantar a política de Gerenciamento Aberto nos dispositivos registrados.
 
-### Experiência do usuário final de exemplo
+### <a name="example-end-user-experience"></a>Experiência do usuário final de exemplo
 
 1.  O usuário final instala um aplicativo Microsoft Word no dispositivo.
 
@@ -70,11 +71,11 @@ Essa configuração é necessária para dispositivos gerenciados por uma soluç�
 
 6.  Agora a transferência de dados é bem-sucedida e o documento é marcado como identidade corporativa no aplicativo. Além disso, os dados são tratados em um contexto de trabalho e as configurações da política são aplicadas de acordo.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Proteger dados de aplicativo usando políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
