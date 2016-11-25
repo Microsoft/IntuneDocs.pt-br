@@ -14,13 +14,13 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 81eb6df96f4c34e8524bb8f3faef964179c91dfc
+ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
+ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
 
 
 ---
 
-# <a name="enroll-corporateowned-ios-devices-in-microsoft-intune"></a>Registrar dispositivos iOS corporativos no Microsoft Intune
+# <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Registrar dispositivos iOS corporativos no Microsoft Intune
 O Microsoft Intune dá suporte ao registro de dispositivos iOS corporativos usando o DEP (Programa de Registro do Dispositivo) da Apple ou a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) executada em um computador Mac.
 
 **Pré-requisito:** um[certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md) é obrigatório.
@@ -38,7 +38,7 @@ Você pode registrar dispositivos iOS exportando um perfil de Registro Corporati
 ## <a name="use-the-device-enrollment-program-dep"></a>Usar o DEP (Device Enrollment Program)
 O DEP implanta um perfil de registro "over the air" em dispositivos que são adquiridos por meio do DEP. Quando o usuário executa o Assistente de Configuração no dispositivo, o dispositivo é registrado no Intune.  O registro dos dispositivos feito pelo DEP não pode ser desfeito pelos usuários. Para saber mais, confira [Registrar dispositivos iOS no Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md).
 
-## <a name="use-the-company-portal-on-depenrolled-or-apple-configuratorenrolled-devices"></a>Usar o Portal da Empresa em dispositivos registrados por DEP ou no Apple Configurator
+## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Usar o Portal da Empresa em dispositivos registrados por DEP ou no Apple Configurator
 
 Os dispositivos configurados com a afinidade de usuário podem instalar e executar o aplicativo Portal da Empresa para baixar aplicativos e gerenciar dispositivos. Assim que os usuários receberem seus dispositivos, eles deverão concluir várias etapas adicionais a fim de completar o Assistente de Configuração e instalar o aplicativo Portal da Empresa.
 
@@ -68,7 +68,7 @@ Afinidade de usuário é necessária para dar suporte ao seguinte:
 
 8. O registro está concluído. Agora o usuário pode usar este dispositivo com o conjunto completo de recursos.
 
-### <a name="about-corporateowned-managed-devices-with-no-user-affinity"></a>Sobre dispositivos gerenciados de propriedade da empresa sem afinidade de usuário
+### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>Sobre dispositivos gerenciados de propriedade da empresa sem afinidade de usuário
 
 Os dispositivos configurados sem a afinidade de usuário não têm suporte no Portal da Empresa e não devem instalar o aplicativo. O Portal da Empresa se destina a usuários com credenciais corporativas e que precisam de acesso aos recursos corporativos personalizados (por exemplo, email). Os dispositivos registrados sem afinidade de usuário não devem ter uma entrada de usuário dedicada. O quiosque, o ponto de venda (PDV) ou os dispositivos de utilitário compartilhados são casos de uso comuns de dispositivos registrados sem afinidade de usuário.
 
@@ -77,10 +77,10 @@ Se a afinidade de usuário for necessária, certifique-se de que o perfil de reg
 
 
 ### <a name="see-also"></a>Consulte também
-[Pré-requisitos para registrar dispositivos no Microsoft Intune](gprerequisites-for-enrollment.md)
+[Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

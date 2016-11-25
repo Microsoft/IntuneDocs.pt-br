@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
 ms.reviewer: camoya
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: efb8dd90eab9bbcc77135ef2ff3e0ffd37d128bf
+ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
+ms.openlocfilehash: 80681cf6c1b76b70b1da00b4a1f1b56a3436014a
 
 
 ---
 
-# Navegadores da web com suporte do Microsoft Intune
+# <a name="microsoft-intune-supported-web-browsers"></a>Navegadores da web com suporte do Microsoft Intune
 
 Antes de instalar o Intune, examine este tópico e outros requisitos listados em [What to know before you start](what-to-know-before-you-start-microsoft-intune.md) (O que saber antes de começar a usar).
 
@@ -33,11 +33,11 @@ Antes de instalar o Intune, examine este tópico e outros requisitos listados em
 > [!Note]
 > O Microsoft Edge e os navegadores móveis não têm suporte para o console de administração porque não dão suporte ao [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx). O console do Intune está deixando a experiência do Silverlight ao longo de um período. Eventualmente, todos os recursos de gerenciamento de aplicativos e dispositivos móveis do Intune serão [disponibilizados no novo portal do Microsoft Azure](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
-### Consulte também
-[O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
+### <a name="see-also"></a>Consulte também
+[O que saber antes de iniciar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
