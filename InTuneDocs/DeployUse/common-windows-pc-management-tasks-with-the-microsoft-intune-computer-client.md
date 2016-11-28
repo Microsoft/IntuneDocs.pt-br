@@ -14,8 +14,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
@@ -45,21 +45,20 @@ O Microsoft Intune Center é instalado em todos os computadores gerenciados. Voc
 
 |Configuração de política|Detalhes|
 |------------------|--------------------|
-|**Nome**|O nome do administrador que gerencia o computador.<br /><br />Comprimento máximo: 40 caracteres|
-|**Número do telefone**|O número do telefone do administrador que gerencia o computador.<br /><br />Comprimento máximo: 20 caracteres|
-|**Endereço de email**|O endereço de email do administrador que gerencia o computador.<br /><br />Comprimento máximo: 40 caracteres|
-|**Nome do site**|O nome do site de suporte para os usuários.<br /><br />Comprimento máximo: 40 caracteres|
-|**URL do site**|A URL do site de suporte.<br /><br />Comprimento máximo: 150 caracteres|
-|**Observações**|Uma observação que é exibida para os usuários.<br /><br />Comprimento máximo: 120 caracteres|
+|**Nome**|O nome do administrador que gerencia o computador.<br />Comprimento máximo: 40 caracteres|
+|**Número do telefone**|O número do telefone do administrador que gerencia o computador.<br />Comprimento máximo: 20 caracteres|
+|**Endereço de email**|O endereço de email do administrador que gerencia o computador.<br />Comprimento máximo: 40 caracteres|
+|**Nome do site**|O nome do site de suporte para os usuários.<br />>Comprimento máximo: 40 caracteres|
+|**URL do site**|A URL do site de suporte.<br />Comprimento máximo: 150 caracteres|
+|**Observações**|Uma observação que é exibida para os usuários.<br />Comprimento máximo: 120 caracteres|
 
-## <a name="software-updates-settings"></a>Configurações de atualizações de software
-Use as políticas para definir as configurações que os computadores gerenciados usam para procurar e baixar atualizações de software da Microsoft e de terceiros. Essas atualizações não incluem atualizações do sistema operacional (ou seja, atualização do Windows 7 para o Windows 10 ou atualizações de uma versão do Windows 10 para uma versão posterior). Para mais informações, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune).
+Consulte os seguintes recursos para obter informações sobre as políticas e configurações que você pode definir para computadores Windows:
 
-### <a name="endpoint-protection-settings"></a>Configurações do Endpoint Protection
-Use as políticas para definir as configurações do Endpoint Protection que você implantará depois nos computadores gerenciados. Isso inclui as agendas de verificação, ações a serem tomadas quando um malware for detectado e muito mais. Para obter mais informações, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
+- [Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) – essas políticas fazem os computadores gerenciados procurar e baixar atualizações de software da Microsoft e de terceiros. Essas atualizações não incluem atualizações de SO (por exemplo, atualizar do Windows 7 para o Windows 10 ou atualizar de uma versão do Windows 10 para uma versão posterior).
 
-## <a name="windows-firewall-settings"></a>Configurações do Firewall do Windows
-As políticas simplificam a administração de configurações do Firewall do Windows em computadores gerenciados. Para obter detalhes, consulte [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) (Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune).
+- [Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) – essas configurações incluem agendas de verificação e ações a serem tomadas quando um malware for detectado.
+
+- [Ajudar a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) – essas políticas simplificam a administração de configurações do Firewall do Windows nos computadores gerenciados.
 
 ## <a name="view-hardware-and-software-inventory"></a>Exibir o inventário de hardware e software
 O Intune coleta informações detalhadas sobre o hardware e o software dos computadores gerenciados. Use as informações nos procedimentos a seguir para aprender a criar:
@@ -144,7 +143,7 @@ Ao desativar um computador:
 
     Se o cliente não desinstalar, leia [Troubleshoot Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Solucionar problemas de proteção de ponto de extremidade) para obter mais ajuda.
 
-## <a name="manage-userdevice-linking"></a>Gerenciar a vinculação de usuário e dispositivo
+## <a name="manage-user-device-linking"></a>Gerenciar a vinculação de usuário e dispositivo
 Antes de implantar o software em um usuário, você deve vincular o usuário a um computador. Você pode vincular um usuário a vários computadores, mas cada computador pode ser vinculado a apenas um usuário. Os usuários são vinculados automaticamente a quaisquer computadores que se registram no Intune usando o portal da empresa.
 
 ### <a name="to-link-a-user-to-a-computer"></a>Para vincular um usuário a um computador
@@ -217,6 +216,6 @@ Do menu **Ações** da janela **TeamViewer**, escolha **Encerrar a Sessão**.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

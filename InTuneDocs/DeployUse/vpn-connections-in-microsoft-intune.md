@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: 00845ca053f443691a103c3d775906877eb59c9c
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 
 ---
@@ -50,7 +50,7 @@ O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tip
 Tipo de conexão |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |Não  |Não    | Sim (OMA-URI, somente celulares)|     
-Cisco (IPsec)|Sim |Não   |Não  |Não  |Não | Não|
+Cisco (IPsec)|Sim |Sim   |Não  |Não  |Não | Não|
 Citrix|Sim |Não   |Não  |Não  |Não | Não|
 Pulse Secure|Sim  |Sim |Sim   |Sim  |Sim| Sim|        
 F5 Microsoft Edge Client|Sim |Sim |Sim |Sim  |   Sim |  Sim|   
@@ -109,7 +109,7 @@ Nome da configuração  |Mais informações
 **Nome**     |Insira um nome exclusivo para o perfil de VPN que ajude a identificá-lo no console do Intune.         
 **Descrição**     |Forneça uma descrição que indica uma visão geral do perfil de VPN e outras informações relevantes que o ajudarão a localizá-lo.         
 **Nome da conexão VPN (exibido aos usuários)**     |Especifique um nome para o perfil VPN. Esse é o nome que os usuários verão na lista de conexões VPN disponíveis em seus dispositivos.         
-**Tipo de conexão**     |  Selecione um dos seguintes tipos de conexão para usar no perfil de VPN: **Cisco AnyConnect** (não está disponível para Windows 8.1 ou Windows Phone 8.1), **Pulse Secure**, **F5 Microsoft Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Tipo de conexão**     |  Selecione um dos seguintes tipos de conexão para usar no perfil de VPN: **Cisco AnyConnect** (não está disponível para Windows 8.1 ou Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
 **Descrição do servidor VPN**     | Especifique uma descrição para o servidor VPN ao qual os dispositivos se conectarão. Exemplo: **Servidor VPN Contoso**. Quando o tipo de conexão é **F5 Microsoft Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.
 **Endereço IP do servidor ou o FQDN**    |Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos vão se conectar. Exemplos: **192.168.1.1**, **vpn.contoso.com**.  Quando o tipo de conexão é **F5 Microsoft Edge Client**, use o campo **Lista de servidores** para especificar uma lista de descrições de servidores e endereços IP.         |         
 **Lista de servidores**     |Clique em **Adicionar** para adicionar um novo servidor VPN a ser usado para a conexão VPN. Você também pode especificar qual servidor será o padrão para a conexão. Essa opção somente é exibida somente quando o tipo de conexão é **F5 Microsoft Edge Client**.         
@@ -117,8 +117,8 @@ Nome da configuração  |Mais informações
 **Método de autenticação**| Selecione o método de autenticação usado pela conexão VPN: **Certificados** ou **Nome de Usuário e Senha**. (**Nome de Usuário e Senha** não está disponível quando o tipo de conexão é Cisco AnyConnect.) A opção **Método de Autenticação** não está disponível para Windows 8.1.
 **Lembrar as credenciais do usuário a cada logon**|Selecione esta opção para garantir que as credenciais do usuário sejam lembradas para que o usuário não precise digitar as credenciais sempre que uma conexão for estabelecida.
 **Selecione um certificado de cliente para autenticação de cliente (certificado de identidade)**|Selecione o certificado do protocolo SCEP cliente que você criou anteriormente e que será usado para autenticar a conexão do VPN. Para obter mais informações sobre como usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado). Essa opção é exibida somente quando o método de autenticação é **Certificados**.
-**Função**| Especifique o nome da função do usuário que tem acesso a essa conexão. Uma função de usuário define configurações e opções pessoais e habilita ou desabilita determinados recursos de acesso. Essa opção é exibida somente quando o tipo de conexão é **Pulse Secure**.
-**Território**|Especifique o nome do território de autenticação que você deseja usar. Um realm de autenticação é um agrupamento de recursos de autenticação usado pelo tipo de conexão Pulse Secure. Essa opção é exibida somente quando o tipo de conexão é **Pulse Secure**.
+**Função**| Especifique o nome da função do usuário que tem acesso a essa conexão. Uma função de usuário define configurações e opções pessoais e habilita ou desabilita determinados recursos de acesso. Essa opção é exibida somente quando o tipo de conexão é **Pulse Secure** ou **Citrix**.
+**Território**|Especifique o nome do território de autenticação que você deseja usar. Um realm de autenticação é um agrupamento de recursos de autenticação usado pelos tipos de conexão Pulse Secure ou Citrix. Essa opção é exibida somente quando o tipo de conexão é **Pulse Secure** ou **Citrix**.
 **Grupo de logon ou domínio**|Especifique o nome do grupo de logon ou domínio ao qual você deseja se conectar. Essa opção é exibida somente quando o tipo de conexão é **Dell SonicWALL Mobile Connect**.
 **Impressão digital**|Especifique uma cadeia de caracteres, (por exemplo "Código de impressões digitais da Contoso") que será usado para verificar se o servidor VPN é confiável. Uma impressão digital pode ser enviada ao cliente para que ele saiba que pode confiar em qualquer servidor que apresentar essa impressão digital durante a conexão. Se o dispositivo não tiver a impressão digital, ele solicitará ao usuário para confiar no servidor VPN durante a conexão enquanto mostra a impressão digital. (O usuário verifica a impressão digital e manualmente clica em **confiar** para se conectar.) Essa opção é exibida somente quando o tipo de conexão é **CheckPoint Mobile VPN**.
 **Por VPN de Aplicativo**|Selecione esta opção se você deseja associar essa conexão VPN a um aplicativo iOS ou Mac OS X para que a conexão seja aberta quando o aplicativo é executado. Você pode associar o perfil VPN a um aplicativo ao implantar o software. Para obter mais informações, consulte [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implantar aplicativos no Microsoft Intune).
@@ -153,7 +153,7 @@ Você pode restringir o uso de VPN para dispositivos Windows 10 a aplicativos es
 
 A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
-### <a name="ondemand-vpn-for-ios-devices"></a>VPN sob demanda para dispositivos iOS
+### <a name="on-demand-vpn-for-ios-devices"></a>VPN sob demanda para dispositivos iOS
 Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 
 > [!NOTE]
@@ -201,6 +201,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

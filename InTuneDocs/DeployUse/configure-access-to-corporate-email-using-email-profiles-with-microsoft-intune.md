@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     |**Descrição**|Uma descrição que ajuda a identificar esse perfil.|
     |**Host**|O nome do host do servidor da empresa que hospeda o serviço de email nativo.|
     |**Nome da conta**|O nome de exibição para a conta de email, como será exibido para os usuários em seus dispositivos.|
-    |**Nome de usuário**|Como o nome de usuário da conta de email será obtido. Selecione **Nome de usuário** para um servidor Exchange local ou selecione **Nome UPN** para o Office 365.|
+    |**Nome de usuário**|Esse é o atributo no AD (Active Directory) ou no Azure AD, que será usado para gerar o nome de usuário para este perfil de email. Selecione o Endereço SMTP Primário, como *user1@contoso.com*, ou nome UPN, como *user1* ou *user1@contoso.com*.|
     |**Endereço de email**|Como o endereço de email do usuário em cada dispositivo é gerado. Selecione **Endereço SMTP Primário** para usar o endereço SMTP primário para fazer logon no Exchange ou use **Nome UPN** para usar o nome da entidade completo como o endereço de email.|
     |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.|
     |**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado do protocolo SCEP cliente que você criou anteriormente e que será usado para autenticar a conexão do Exchange. Para obter mais informações sobre como usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado). Essa opção é exibida somente quando o método de autenticação é **Certificados**.|
@@ -138,6 +138,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
