@@ -14,60 +14,64 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b25c7d7063ce586bb1cd960534f3e2ed57f6aec4
-ms.openlocfilehash: f70a32cf7db4d46f15cdef85e111a8857a1a0215
+ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
+ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para gerenciamento de aplicativos móveis com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
-Use a Ferramenta de Encapsulamento do Aplicativo do Microsoft Intune para iOS para alterar o comportamento de aplicativos iOS internamente restringindo as funcionalidades do aplicativo sem modificar seu código.
+Use a Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS para alterar o comportamento de aplicativos iOS internamente ao habilitar os recursos de proteção do aplicativo do Intune sem alterar o código do aplicativo.
 
-A ferramenta é um aplicativo de linha de comando do macOS que cria um wrapper em torno de um aplicativo. Após um aplicativo ser processado, você poderá alterar sua funcionalidade usando as [políticas de gerenciamento de aplicativo móvel](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) do Intune que configurar.
+A ferramenta é um aplicativo de linha de comando do macOS que cria um wrapper em torno de um aplicativo. Depois que um aplicativo for processado, você poderá alterar sua funcionalidade usando as [políticas de gerenciamento de aplicativo móvel](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) do Intune implantadas pelo administrador de TI.
 
-Para baixar a ferramenta, consulte [Microsoft Intune App Wrapping Tool for iOS - Português (Brasil)](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+Para baixar a ferramenta, consulte [Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
 
 
 
-## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Cumprir os pré-requisitos para usar a Ferramenta de Disposição do Aplicativo
-Consulte [Skype for Business Online: habilitar seu locatário para autenticação moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para saber mais sobre os pré-requisitos e como defini-los.
+## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Cumprir os pré-requisitos da Ferramenta de Disposição do Aplicativo
+Consulte a postagem de blog [Como obter os pré-requisitos para a Ferramenta de Disposição do Aplicativo do Intune para iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) para saber mais sobre como obter os pré-requisitos.
 
 |Requisito|Mais informações|
 |---------------|--------------------------------|
-|Sistema operacional e conjunto de ferramentas com suporte|Você precisa executar a Ferramenta de Disposição do Aplicativo em um computador macOS que executa o OS X 10.8.5 ou posterior e que tem a versão 5 do conjunto de ferramentas XCode ou posterior instalada.|
-|Certificado de autenticação e perfil de provisionamento|Você precisa ter um perfil de provisionamento e um certificado de autenticação da Apple. Consulte sua [Apple developer documentation (Documentação para desenvolvedores da Apple)](https://developer.apple.com/).|
-|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo|Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor independente de software). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 8.0 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte a documentação para desenvolvedor da Apple. Por fim, a aplicativo deve ter a extensão **.app**ou **.ipa**.|
-|Aplicativos que a ferramenta não pode processar|Aplicativos criptografados, não assinados e com atributos de arquivo estendido.|
+|Sistema operacional e conjunto de ferramentas com suporte | Você precisa executar a Ferramenta de Disposição do Aplicativo em um computador macOS que executa o OS X 10.8.5 ou posterior e que tem a versão 5 do conjunto de ferramentas XCode ou posterior instalada.|
+|Certificado de autenticação e perfil de provisionamento | Você precisa ter um perfil de provisionamento e um certificado de autenticação da Apple. Consulte sua [Apple developer documentation (Documentação para desenvolvedores da Apple)](https://developer.apple.com/).|
+|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo  |Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor independente de software). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 8.0 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte a documentação para desenvolvedor da Apple. Por fim, a aplicativo deve ter a extensão **.app**ou **.ipa**.|
+|Aplicativos que a ferramenta não pode processar | Aplicativos criptografados, não assinados e com atributos de arquivo estendido.|
 |Direitos de configuração para seu aplicativo|Antes de encapsular o aplicativo, você precisa definir direitos, que concedem ao aplicativo permissões e recursos adicionais além daqueles concedidos normalmente. Consulte [Configurando direitos de aplicativo](#setting-app-entitlements) para obter instruções.|
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
 
-1.  Baixe os arquivos da Ferramenta de Disposição do Aplicativo do [repositório hospedado no GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) da Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS em um computador macOS.
+1.  Baixe os arquivos para a Ferramenta de Disposição do Aplicativo no [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) para um computador macOS.
 
 2.  Clique duas vezes em **Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS.dmg**. Será exibida uma janela com o EULA (Contrato de Licença de Usuário Final). Leia o documento atentamente.
 
 3. Escolha **Concordo** para aceitar o EULA, que monta o pacote em seu computador.
 
-4.  Abra IntuneMAMPackager e salve os arquivos em uma pasta local no computador macOS. Agora, você está pronto para executar a Ferramenta de Disposição do Aplicativo.
+4.  Abra a pasta **IntuneMAMPackager** e salve seu conteúdo em seu computador macOS. Agora, você está pronto para executar a Ferramenta de Disposição do Aplicativo.
 
 ## <a name="run-the-app-wrapping-tool"></a>Executar a ferramenta de encapsulamento de aplicativos
-* Abra um terminal e vá para a pasta em que você salvou o arquivos da ferramenta de disposição do aplicativo. A ferramenta executável se chama IntuneMAMPackager e está localizada em IntuneMAMPackager/Conteúdo/MacOS. Execute o comando da seguinte forma:
 
-    ```
+### <a name="use-terminal"></a>Usar terminal
+
+Abra o programa de Terminal do macOS e navegue até a pasta na qual salvou os arquivos da ferramenta de disposição de aplicativo. A ferramenta executável se chama IntuneMAMPackager e está localizada em IntuneMAMPackager/Conteúdo/MacOS. Execute o comando da seguinte forma:
+
+```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+```
 
-    ```
+> [!NOTE]
+> Alguns parâmetros são opcionais, conforme mostrado na tabela a seguir.
 
-    > [!NOTE]
-    > Alguns parâmetros são opcionais, conforme mostrado na tabela a seguir.
+**Exemplo:** o comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
 
-    **Exemplo:** o comando de exemplo a seguir executa a Ferramenta de Disposição do Aplicativo no aplicativo MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 são especificados. O aplicativo processado (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta Área de Trabalho.
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+```
 
-    ```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
-    ```
-    Você pode usar as seguintes propriedades de linha de comando com a Ferramenta de Disposição do Aplicativo:
+### <a name="command-line-parameters"></a>Parâmetros da linha de comando
+Você pode usar os seguintes parâmetros de linha de comando com a Ferramenta de Disposição do Aplicativo:
 
 |Propriedade|Como usá-lo|
 |---------------|--------------------------------|
@@ -103,20 +107,20 @@ Na pasta IntuneMAMPackager/Conteúdo/MacOS, abra `Parameters.plist` (um modelo p
 
 Execute o IntuneMAMPackager com plist como o único argumento:
 
-```
+```bash
 ./IntuneMAMPackager –f Parameters.plist
 ```
 
-* Após a conclusão do processamento, a mensagem “O aplicativo foi encapsulado com êxito” será exibida.
+### <a name="post-wrapping"></a>Após a disposição
 
-    Se ocorrer um erro, consulte [Mensagens de erro](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) para obter ajuda.
+Após a conclusão do processamento de disposição, a mensagem “O aplicativo foi encapsulado com êxito” será exibida. Se ocorrer um erro, consulte [Mensagens de erro](#error-messages-and-log-files) para obter ajuda.
 
-*   O aplicativo encapsulado é salvo na pasta de saída especificada anteriormente. Você pode carregar o aplicativo no [wit_nextref](../includes/wit_nextref_md.md) e associá-lo a uma política de gerenciamento de aplicativo móvel.
+O aplicativo encapsulado é salvo na pasta de saída especificada anteriormente. Você pode carregar o aplicativo no console de administração do Intune e associá-lo a uma política de gerenciamento de aplicativo móvel.
 
-    > [!IMPORTANT]
-    > Ao carregar um aplicativo encapsulado, você poderá tentar atualizar uma versão mais antiga do aplicativo se uma versão mais antiga (encapsulada ou nativa) já tiver sido implantada no Intune. Se houver um erro, carregue o aplicativo como um novo aplicativo e exclua a versão mais antiga.
+> [!IMPORTANT]
+> Ao carregar um aplicativo encapsulado, você poderá tentar atualizar uma versão mais antiga do aplicativo se uma versão mais antiga (encapsulada ou nativa) já tiver sido implantada no Intune. Se houver um erro, carregue o aplicativo como um novo aplicativo e exclua a versão mais antiga.
 
-    Agora, você pode implantar o aplicativo em seus grupos [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e o aplicativo será executado no dispositivo usando as restrições de aplicativo que você especificar.
+Agora você pode implantar o aplicativo em seus grupos de usuários e as políticas de proteção de aplicativo de destino no aplicativo. O aplicativo será executado no dispositivo usando as políticas de proteção de aplicativo que você especificar.
 
 ## <a name="error-messages-and-log-files"></a>Mensagens de erro e arquivos de log
 Use as seguintes informações para solucionar problemas com a ferramenta de encapsulamento de aplicativo.
@@ -166,13 +170,13 @@ Aplicativos que foram encapsulados usando a Ferramenta de Disposição do Aplica
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Requisitos de autenticação, perfil de provisionamento e certificado
 
-A Ferramenta de Disposição do Aplicativo tem alguns requisitos que precisam ser atendidos para assegurar a funcionalidade completa.
+A Ferramenta de Disposição do Aplicativo para iOS tem alguns requisitos que precisam ser atendidos para assegurar a funcionalidade completa.
 
 |Requisito|Detalhes|
 |---------------|-----------|
-|Perfil de provisionamento|Verifique se o perfil de provisionamento é válido antes de incluí-lo. A Ferramenta de Disposição do Aplicativo não verifica se o perfil de provisionamento expirou durante o processamento de um aplicativo iOS. Se um perfil de provisionamento expirado for especificado, a ferramenta de encapsulamento do aplicativo incluirá o perfil de provisionamento expirado e você não saberá que há um problema até que o aplicativo não possa ser instalado em um dispositivo iOS.|
-|Certificate|Verifique se certificado é válido antes de especificá-lo. A ferramenta não verifica se um certificado expirou durante o processamento de aplicativos iOS. Se o hash de um certificado expirado for fornecido, a ferramenta processará e assinará o aplicativo, mas ele não será instalado em dispositivos.<br /><br />Verifique se o certificado fornecido para assinar o aplicativo empacotado tem uma correspondência no perfil de provisionamento. A ferramenta não valida se o perfil de provisionamento tiver uma correspondência para o certificado fornecido para assinar o aplicativo encapsulado.|
-|Autenticação|Um dispositivo deve ter um PIN definido para a criptografia funcionar. Em dispositivos nos quais você implantou um aplicativo encapsulado, tocar a barra de status no dispositivo exige que o usuário se autentique novamente no [wit_nextref](../includes/wit_nextref_md.md). A política padrão em um aplicativo encapsulado é *autenticação na nova inicialização*. O iOS lida com qualquer notificação externa (como uma chamada telefônica) saindo do aplicativo e reiniciando-o.
+|Perfil de provisionamento do iOS|Verifique se o perfil de provisionamento é válido antes de incluí-lo. A Ferramenta de Disposição do Aplicativo não verifica se o perfil de provisionamento expirou durante o processamento de um aplicativo iOS. Se um perfil de provisionamento expirado for especificado, a ferramenta de encapsulamento do aplicativo incluirá o perfil de provisionamento expirado e você não saberá que há um problema até que o aplicativo não possa ser instalado em um dispositivo iOS.|
+|Certificado de autenticação do iOS|Verifique se o certificado de autenticação é válido antes de especificá-lo. A ferramenta não verifica se um certificado expirou durante o processamento de aplicativos iOS. Se o hash de um certificado expirado for fornecido, a ferramenta processará e assinará o aplicativo, mas ele não será instalado em dispositivos.<br /><br />Verifique se o certificado fornecido para assinar o aplicativo encapsulado tem uma correspondência no perfil de provisionamento. A ferramenta não valida se o perfil de provisionamento tiver uma correspondência para o certificado fornecido para assinar o aplicativo encapsulado.|
+|Autenticação|Um dispositivo deve ter um PIN definido para a criptografia funcionar. Em dispositivos nos quais você implantou um aplicativo encapsulado, tocar a barra de status no dispositivo exige que o usuário efetue o logon novamente com uma conta corporativa ou de estudante. A política padrão em um aplicativo encapsulado é *autenticação na nova inicialização*. O iOS lida com qualquer notificação externa (como uma chamada telefônica) saindo do aplicativo e reiniciando-o.
 
 
 ## <a name="setting-app-entitlements"></a>Definindo direitos de aplicativo
@@ -195,27 +199,27 @@ Antes de encapsular seu aplicativo, você pode conceder *direitos* para conceder
 
 1.  Habilite as funcionalidades em seu aplicativo:
 
-    1.  No Xcode, vá até o destino do aplicativo e clique em **Funcionalidades**.
+    a.  No Xcode, vá até o destino do aplicativo e clique em **Funcionalidades**.
 
-    2.  Habilite as funcionalidades apropriadas. Para obter informações detalhadas sobre cada funcionalidade e como determinar os valores corretos, consulte [Adicionando Funcionalidades](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) na Biblioteca do Desenvolvedor iOS.
+    b.  Habilite as funcionalidades apropriadas. Para obter informações detalhadas sobre cada funcionalidade e como determinar os valores corretos, consulte [Adicionando Funcionalidades](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) na Biblioteca do Desenvolvedor iOS.
 
-    3.  Tome nota de quaisquer IDs que você criar durante o processo.
+    c.  Tome nota de quaisquer IDs que você criar durante o processo.
 
-    4.  Compile e assine seu aplicativo a ser encapsulado.
+    d.  Compile e assine seu aplicativo a ser encapsulado.
 
 2.  Habilite os direitos no seu perfil de provisionamento:
 
-    1.  Entre na Central de Associados do Desenvolvedor da Apple.
+    a.  Entre na Central de Associados do Desenvolvedor da Apple.
 
-    2.  Crie um perfil de provisionamento para seu aplicativo. Para obter instruções, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Como obter os pré-requisitos para a Ferramenta de Disposição do Aplicativo do Intune para iOS).
+    b.  Crie um perfil de provisionamento para seu aplicativo. Para obter instruções, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Como obter os pré-requisitos para a Ferramenta de Disposição do Aplicativo do Intune para iOS).
 
-    3.  No seu perfil de provisionamento, habilite os mesmo direitos que você tem em seu aplicativo. Você precisará fornecer as mesmas IDs que especificou durante o desenvolvimento do seu aplicativo.
+    c.  No seu perfil de provisionamento, habilite os mesmo direitos que você tem em seu aplicativo. Você precisará fornecer as mesmas IDs que especificou durante o desenvolvimento do seu aplicativo.
 
-    4.  Conclua o assistente de perfil de provisionamento e baixe o arquivo.
+    d.  Conclua o assistente de perfil de provisionamento e baixe o arquivo.
 
 3.  Certifique-se de que foram satisfeitos todos os pré-requisitos e encapsule o aplicativo.
 
-### <a name="troubleshooting-common-errors-with-entitlements"></a>Solucionando erros comuns com direitos
+### <a name="troubleshoot-common-errors-with-entitlements"></a>Solucione erros comuns com direitos
 Se a Ferramenta de Disposição do Aplicativo para iOS exibir um erro de direito, tente as seguintes etapas de solução de problemas.
 
 |Problema|Causa|Resolução|
@@ -223,7 +227,7 @@ Se a Ferramenta de Disposição do Aplicativo para iOS exibir um erro de direito
 |Falha ao analisar direitos gerados do aplicativo de entrada.|A Ferramenta de Encapsulamento de Aplicativos não pode ler o arquivo de direitos que foi extraído do aplicativo. O arquivo de direitos pode estar malformado.|Inspecione o arquivo de direitos de seu aplicativo. As instruções a seguir explicam como fazer isso. Ao inspecionar o arquivo de direitos, verifique se há qualquer sintaxe malformada. O arquivo deve estar no formato XML.|
 |Direitos estão ausentes no perfil de provisionamento (direitos ausentes são listados). Empacote novamente o aplicativo com um perfil de provisionamento que tenha esses direitos.|Há uma incompatibilidade entre os direitos habilitados no perfil de provisionamento e os recursos habilitados no aplicativo. Essa incompatibilidade também se aplica às IDs associadas a recursos específicos (como grupos de aplicativos e acesso de conjunto de chaves).|Em geral, você pode criar um novo perfil de provisionamento que habilita os mesmos recursos que o aplicativo. Quando as IDs entre o perfil e o aplicativo não coincidirem, a Ferramenta de Encapsulamento de Aplicativos substituirá as IDs se conseguir fazer isso. Se ainda receber o erro depois de criar um novo perfil de provisionamento, você pode tentar remover direitos do aplicativo usando o parâmetro –e (consulte a seção "Usando o parâmetro –e para remover direitos do aplicativo”).|
 
-### <a name="finding-the-existing-entitlements-of-a-signed-app"></a>Localizando os direitos existentes de um aplicativo assinado
+### <a name="find-the-existing-entitlements-of-a-signed-app"></a>Localize os direitos existentes de um aplicativo assinado
 Para examinar as autorizações existentes de um aplicativo assinado e do perfil de provisionamento:
 
 1.  Localize o arquivo .ipa, altere a extensão para .zip.
@@ -254,7 +258,7 @@ Use as seguintes melhores práticas de segurança e privacidade ao usar a Ferram
 
 -   O certificado de autenticação, o perfil de provisionamento e o aplicativo de linha de negócios que você especificar devem estar no mesmo computador macOS que você usar para executar a ferramenta de disposição do aplicativo. Se os arquivos estiverem em um caminho UNC, verifique se eles são acessíveis no computador macOS. O caminho deve ser protegido por assinatura SMB ou IPsec.
 
-    O aplicativo encapsulado importado para o console do [wit_nextref](../includes/wit_nextref_md.md) deve estar no mesmo computador no qual você executa a ferramenta. Se o arquivo estiver em um caminho UNC, verifique se ele está acessível no computador que executa o console do [wit_nextref](../includes/wit_nextref_md.md). O caminho deve ser protegido por assinatura SMB ou IPsec.
+    O aplicativo encapsulado importado no console de administração deve estar no mesmo computador no qual você executa a ferramenta. Se os arquivos estiverem em um caminho UNC, certifique-se de que serão acessíveis no computador que executa o console de administração. O caminho deve ser protegido por assinatura SMB ou IPsec.
 
 -   O ambiente para o qual a Ferramenta de Disposição do Aplicativo é baixada do repositório do GitHub precisa ser protegido por assinatura IPsec ou SMB.
 
@@ -273,6 +277,6 @@ Use as seguintes melhores práticas de segurança e privacidade ao usar a Ferram
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 
