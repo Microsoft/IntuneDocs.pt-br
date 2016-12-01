@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
@@ -25,6 +25,7 @@ Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remot
 
 |Plataforma|Bloqueio remoto|
 |------------|---------------|
+|macOS|Sem suporte|
 |iOS|Com suporte|
 |Android|Com suporte|
 |Windows 10 e Windows 10 Mobile|Com suporte|
@@ -50,12 +51,14 @@ Se um usuário esquecer a senha, você poderá ajudá-lo removendo a senha de um
 
 |Plataforma|Redefinição de senha|
 |------------|------------------|
+|macOS|Sem suporte|
 |iOS|Suportado para limpar a senha de um dispositivo. Não cria uma nova senha temporária.|
 |Android|Suporte em versões anteriores ao Android 7.0. Cria uma senha temporária.|
 |Windows 10 Mobile|Com suporte|
 |Windows Phone 8 e Windows Phone 8.1|Com suporte|
-|Windows RT 8.1 e Windows RT|Sem suporte|
+|Windows RT 8.1|Sem suporte|
 |Windows 8.1|Sem suporte|
+|Windows 10 Desktop|Sem suporte|
 
 Não há suporte para a redefinição de senha para computadores com Windows registrados com o cliente de software do Intune.
 
@@ -76,6 +79,6 @@ Não há suporte para a redefinição de senha para computadores com Windows reg
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

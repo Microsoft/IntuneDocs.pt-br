@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 1/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7a4f1af9843cba6fa7b7325d0a678dd445cc1000
 
 
 ---
 
-# Tarefas de pós-configuração
+# <a name="post-configuration-tasks"></a>Tarefas de pós-configuração
 Depois de concluir as etapas de configuração inicial para uma assinatura paga do Intune, considere a possibilidade de habilitar a funcionalidade de gerenciamento de dispositivos móveis adicionais.
 
 -   **Conectar o Exchange ao Intune:** para usuários com dispositivos móveis que ainda não foram registrados no Intune, você pode habilitar o gerenciamento do Exchange ActiveSync usando um conector para o Exchange local e para o Exchange Online no Microsoft Office 365. O Exchange Connector conecta você à sua implantação do Exchange e permite gerenciar dispositivos móveis por meio do console de administração do Intune. Para saber mais sobre o conector do Exchange, consulte [Mobile device management with Exchange ActiveSync and Microsoft Intune (Gerenciamento de dispositivo móvel usando o Exchange ActiveSync e o Microsoft Intune)](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
@@ -31,6 +31,6 @@ Depois de concluir as etapas de configuração inicial para uma assinatura paga 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -3,6 +3,7 @@ title: "Próximas etapas após a avaliação do Intune | Microsoft Intune"
 description: "O que você precisa saber sobre assinaturas e licenciamento depois de configurar sua avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,14 +14,14 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: ea0e43d93a3e388d55329142292595a8b3b3dbd2
 
 
 ---
 
-# Próximas etapas após a avaliação do Intune
-Se você adquirir, pelo menos, 150 licenças para Microsoft Intune em um plano qualificado, você pode usar o "Benefício do FastTrack Center", um serviço no qual os especialistas da Microsoft trabalharão com você para deixar o ambiente pronto para o Intune. Consulte [FastTrack Center Benefit for Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems) (Benefício do FastTrack Center para o Enterprise Mobility Suite [EMS]).
+# <a name="next-steps-after-your-intune-evaluation-is-completed"></a>Próximas etapas após a avaliação do Intune
+Se você adquirir, pelo menos, 150 licenças para Microsoft Intune em um plano qualificado, você pode usar o "Benefício do FastTrack Center", um serviço no qual os especialistas da Microsoft trabalharão com você para deixar o ambiente pronto para o Intune. Consulte [Benefício do FastTrack Center para o EMS (Enterprise Mobility + Security)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 Você pode converter sua avaliação gratuita do Intune para uma assinatura paga das seguintes maneiras:
 
@@ -34,6 +35,6 @@ Você pode converter sua avaliação gratuita do Intune para uma assinatura paga
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

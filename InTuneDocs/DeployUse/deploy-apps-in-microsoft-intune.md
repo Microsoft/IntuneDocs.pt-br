@@ -3,6 +3,7 @@ title: Como implantar aplicativos | Microsoft Intune
 description: "Use as informações neste tópico para ajudá-lo a implantar aplicativos com o Microsoft Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,19 +14,19 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
-ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
+ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
+ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 
 ---
-# Implantar aplicativos no Microsoft Intune
+# <a name="deploy-apps-in-microsoft-intune"></a>Implantar aplicativos no Microsoft Intune
 
 Use as informações neste tópico para ajudá-lo a implantar aplicativos com o Microsoft Intune.
 
 
-## Implantar um aplicativo
+## <a name="deploy-an-app"></a>Implantar um aplicativo
 Neste procedimento, você implantará o aplicativo para os grupos de dispositivos ou usuários selecionados.
 
-### Para implantar um aplicativo
+### <a name="to-deploy-an-app"></a>Para implantar um aplicativo
 
 1. No [Console do administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos** para exibir a lista dos aplicativos gerenciados por você.
 
@@ -49,23 +50,28 @@ Neste procedimento, você implantará o aplicativo para os grupos de dispositivo
 6. Se o aplicativo que você está implantando for compatível com perfis de VPN do Intune, a página **Perfil de VPN** será exibida. Nessa página, você pode optar por associar aplicativos iOS a um perfil de VPN implantado por você anteriormente. A conexão VPN é aberta automaticamente quando o aplicativo é iniciado. Para disponibilizar um perfil VPN, ele deve ter a configuração de perfil **VPN por aplicativo** habilitada.
  Para obter informações sobre como configurar perfis VPN, incluindo informações sobre como associar perfis a aplicativos, consulte [Conexões VPN no Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
-## Exemplo
+<!---
+>[!TIP]
+>If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
+
+## <a name="example"></a>Exemplo
 
 Neste exemplo, você implantou o aplicativo como **Disponível** em um dispositivo iOS.
 O aplicativo é exibido em dispositivos dos usuários no portal da empresa e os usuários podem instalá-lo de lá.
 
 Por exemplo, nesta captura de tela, o Bing para aplicativo iOS foi implantado usando o tipo de instalação **link externo** com um ícone personalizado. A opção **Exibir como um aplicativo em destaque e realçá-lo no portal de empresa** foi selecionada.  
-![Aplicativo disponível no iOS](./media/available-install-on-iOS.png)
+![Aplicativo disponível para iOS](./media/available-install-on-iOS.png)
 
 Se você implantou o aplicativo como **Necessário** em um dispositivo iOS, o usuário receberá uma notificação de que um aplicativo está pronto para ser instalado. Por exemplo, nesta captura de tela, o aplicativo Pastas de Trabalho para iOS foi implantado usando o tipo de instalação **Aplicativo iOS gerenciado da loja de aplicativos**.  
-![Aplicativo necessário no iOS](./media/iOS-Required-install.PNG)
+![Aplicativo necessário para iOS](./media/iOS-Required-install.PNG)
 
-## Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de implantar um aplicativo, você vai querer monitorar seu andamento. Para obter mais informações, consulte [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Monitorar aplicativos no Microsoft Intune).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

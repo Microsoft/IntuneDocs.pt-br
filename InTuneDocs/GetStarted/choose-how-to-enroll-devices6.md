@@ -3,33 +3,34 @@ title: "Escolher como registrar dispositivos móveis | Microsoft Intune"
 description: "Decidir como registrar dispositivos móveis no Intune respondendo algumas perguntas simples"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2bfba29b5b2585f276a85a8dee7e62009e41ec3f
-ms.openlocfilehash: b96b970b3326b0b17f1a5f57f6d1407756c78e41
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 ---
-# Escolher como registrar dispositivos móveis
+# <a name="choose-how-to-enroll-mobile-devices"></a>Escolher como registrar dispositivos móveis
 
 As respostas para esta série de perguntas ajudarão a determinar o melhor método de registro para os dispositivos gerenciados.
 
-## **Como você gerenciará dispositivos dedicados corporativos?**
+## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**Como você gerenciará dispositivos dedicados corporativos?**
 
   > [!div class="button"]
 [iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
 [Assistente de Configuração do iOS >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[Marca com IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[Marcar com IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Você pode registrar dispositivos da empresa com usuários dedicados das seguintes maneiras:
 
@@ -44,6 +45,6 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

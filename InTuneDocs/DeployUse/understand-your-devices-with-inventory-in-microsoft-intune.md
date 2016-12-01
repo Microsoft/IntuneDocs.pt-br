@@ -3,8 +3,9 @@ title: "Compreender seus dispositivos com um inventário | Microsoft Intune"
 description: "Use o Intune para exibir informações sobre o hardware dos dispositivos que você gerencia."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
-ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Compreenda seus dispositivos com um inventário no Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Compreenda seus dispositivos com um inventário no Microsoft Intune
 O Microsoft Intune permite que você exiba o inventário de dispositivos e computadores Windows registrados que executam o software cliente do Intune.
 O Intune normalmente coleta o inventário de dispositivos gerenciados a cada sete dias. Por isso, pode haver um atraso antes que os relatórios mostrem os resultados das alterações recentes nos dispositivos; por exemplo, uma alteração no nome do dispositivo ou o espaço de armazenamento livre.
 
-## O que é coletado dos dispositivos registrados?
+## <a name="whats-collected-from-enrolled-devices"></a>O que é coletado dos dispositivos registrados?
 Para exibir o inventário coletado por dispositivos móveis, execute os [Relatórios de inventário de dispositivos móveis](understand-microsoft-intune-operations-by-using-reports.md). O Intune coleta o seguinte inventário dos dispositivos registrados:
 
 |Propriedade|Coletado por|
@@ -32,35 +33,35 @@ Para exibir o inventário coletado por dispositivos móveis, execute os [Relató
 |**Sistema operacional**|Todos os dispositivos|
 |**Fabricante**|Todos os dispositivos|
 |**Modelo**|Todos os dispositivos|
-|**Canal de Gerenciamento**|Todos os dispositivos|
+|**Canal de gerenciamento**|Todos os dispositivos|
 |**Registrado no AAD**|Todos os dispositivos, exceto o Mac OS X|
 |**Compatível**|Todos os dispositivos|
 |**EAS ativado**|Todos os dispositivos, exceto o Mac OS X|
 |**ID de ativação de EAS**|Todos os dispositivos, exceto o Mac OS X|
 |**Tempo de ativação de EAS**|Todos os dispositivos, exceto o Mac OS X|
-|**Estado de Gerenciamento**|Todos os dispositivos|
+|**Estado de gerenciamento**|Todos os dispositivos|
 |**Endereço de email**|Todos os dispositivos|
 |**ID do Exchange ActiveSync**|Todos os dispositivos|
-|**Desbloqueado ou com raiz**|Somente os dispositivos iOS e Android|
-|**Identificação de dispositivo exclusivo**|Todos os dispositivos, exceto o Exchange ActiveSync|
-|**Número de série**|Dispositivos iOS, Mac OS X, Android, Windows 8.1 e Windows 10|
-|**Espaço de armazenamento total**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10|
-|**Espaço livre de armazenamento**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10|
-|**Número do telefone**<br>Os telefones categorizados como Empresariais são identificados com o número de telefone completo (por exemplo, quando você executa um relatório de inventário de dispositivo móvel). Os números de telefone BYOD são mascarados com &#42;, e apenas os quatro últimos dígitos são exibidos.|Dispositivos iOS, Android e Windows Phone|
+|**Com jailbreak ou com raiz**|Somente os dispositivos iOS e Android|
+|**ID exclusiva do dispositivo**|Todos os dispositivos, exceto o Exchange ActiveSync|
+|**Número de série**|Dispositivos iOS, Mac OS X, Android, Windows 8.1 e Windows 10 Desktop|
+|**Espaço de armazenamento total**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10 Desktop e Mobile|
+|**Espaço de armazenamento livre**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10 Desktop|
+|**Número de telefone**<br>Os telefones categorizados como Empresariais são identificados com o número de telefone completo (por exemplo, quando você executa um relatório de inventário de dispositivo móvel). Os números de telefone BYOD são mascarados com &#42;, e apenas os quatro últimos dígitos são exibidos.|Dispositivos iOS, Android e Windows Phone|
 |**IMEI**|Dispositivos Exchange ActiveSync, iOS, Android e Windows Phone|
 |**MEID**<br>Identificador de Equipamentos Móveis|Somente os dispositivos iOS|
-|**MAC Wi-Fi**|Todos os dispositivos, exceto o Exchange ActiveSync|
-|**Operadora do assinante**|Somente os dispositivos iOS e Android|
+|**Wi-Fi MAC**|Todos os dispositivos, exceto o Exchange ActiveSync|
+|**Carrier do assinante**|Somente os dispositivos iOS e Android|
 |**Tecnologia celular**|Somente os dispositivos iOS e Android|
 |**Supervisionado**|Somente os dispositivos iOS|
 |**Estado de Bloqueio de Ativação**|Somente os dispositivos iOS|
 |**Data registrada**|Todos os dispositivos|
-|**Última Atualização**|Todos os dispositivos|
+|**Última atualização**|Todos os dispositivos|
 |**Ethernet MAC**|Somente os dispositivos Mac OS X|
-|**Bloqueio de ativação habilitado**|Somente os dispositivos iOS|
+|**Bloqueio de Ativação habilitado**|Somente os dispositivos iOS|
 |**Criptografia habilitada**|Todos os dispositivos|
 
-## O que é coletado de computadores Windows?
+## <a name="whats-collected-from-windows-pcs"></a>O que é coletado de computadores Windows?
 > [!IMPORTANT]
 > Esta seção se aplica somente aos computadores Windows que executam o software cliente do computador Windows com o Intune.
 
@@ -68,7 +69,7 @@ Para exibir o inventário coletado por computadores Windows, execute os [Relató
 
 -   **Nome**
 
--   **Tipo de Chassi**
+-   **Tipo de chassi**
 
 -   **Fabricante**
 
@@ -78,21 +79,21 @@ Para exibir o inventário coletado por computadores Windows, execute os [Relató
 
 -   **Versão do TPM**
 
--   **Espaço Total em Disco**
+-   **Espaço total em disco**
 
--   **Espaço em Disco Utilizado**
+-   **Espaço em disco utilizado**
 
--   **Espaço Livre em Disco**
+-   **Espaço livre em disco**
 
--   **Nome de Disco do SO**
+-   **Nome de disco do SO**
 
--   **Espaço em Disco do SO**
+-   **Espaço em disco do SO**
 
--   **Espaço Livre em Disco do SO**
+-   **Espaço livre em disco do SO**
 
 -   **Memória física**
 
--   **Nome do Processador**
+-   **Nome do processador**
 
 -   **Arquitetura do processador**
 
@@ -102,11 +103,11 @@ Para exibir o inventário coletado por computadores Windows, execute os [Relató
 
 -   **Número de série**
 
--   **Último Usuário a Fazer Logon**
+-   **Último usuário a fazer logon**
 
--   **Usuário Atribuído**
+-   **Usuário atribuído**
 
--   **Última Atualização**
+-   **Última atualização**
 
 <!-- this section below belongs in the planning journey
 ### See Also
@@ -115,6 +116,6 @@ Para exibir o inventário coletado por computadores Windows, execute os [Relató
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
