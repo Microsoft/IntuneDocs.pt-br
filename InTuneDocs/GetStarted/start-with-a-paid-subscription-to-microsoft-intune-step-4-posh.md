@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: 116069454002567d412d059ffcfafe6c7178b197
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
 
 
 ---
 
-# Gerenciar licenças do Intune usando o PowerShell
+# <a name="manage-intune-licenses-using-powershell"></a>Gerenciar licenças do Intune usando o PowerShell
 Antes que os usuários possam entrar para usar o serviço do Intune ou registrar seus dispositivos no gerenciamento, ele deverão primeiro ser atribuídos a uma licença para sua assinatura do Intune, conforme descrito em [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) (Gerenciar licenças do Intune). No entanto, as organizações que usam Microsoft Enterprise Mobility + Security podem ter usuários que precisam apenas dos serviços do Azure Active Directory Premium ou do Intune no pacote do EMS. Você pode atribuir um serviço ou um subconjunto de serviços usando os [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Para atribuir seletivamente licenças de usuário para serviços do EMS, abra o PowerShell como administrador em um computador com o [Módulo do Azure Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) instalado. Você pode instalar o PowerShell em um computador local ou em um servidor do ADFS.
@@ -60,7 +60,7 @@ Verifique com:
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### Próximas etapas
+### <a name="next-steps"></a>Próximas etapas
 Parabéns! Você acabou de concluir a etapa 4 do *Intune quick start guide* (Guia de início rápido do Intune).
 >[!div class="step-by-step"]
 
@@ -68,6 +68,6 @@ Parabéns! Você acabou de concluir a etapa 4 do *Intune quick start guide* (Gui
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

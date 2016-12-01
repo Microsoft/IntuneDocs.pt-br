@@ -1,49 +1,13 @@
 ---
-title: "Integração do Intune com serviços em nuvem da Microsoft | Microsoft Intune"
-description: "Integração do Intune com produtos e serviços em nuvem da Microsoft e com outros produtos da Microsoft"
-keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 08/29/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
-ms.reviewer: jeffgilb
-ms.suite: ems
+redirect_url: https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management
 translationtype: Human Translation
-ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
-ms.openlocfilehash: b2df2a2ec092ed9bb7d12b7f51a4fd9c9858f041
-
+ms.sourcegitcommit: 2829272e71faac2089e3f96cf39869414d170c0d
+ms.openlocfilehash: e1bae2127904c95320255bbb8add4fbabf78ae7d
 
 ---
 
-# Integração do Intune com produtos e serviços em nuvem da Microsoft
-
-Antes de configurar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], examine este tópico e outros requisitos listados em [O que saber antes de começar a usar Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
-##Integração com outros serviços em nuvem da Microsoft
 
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compartilha uma base comum com outros serviços em nuvem da Microsoft. Quando você usa a mesma conta para assinar vários serviços de nuvem, esses serviços usam a mesma infraestrutura do Microsoft Azure AD e são locatários do Azure AD. O AD Azure fornece os principais recursos de gerenciamento de identidades e diretórios de serviços em nuvem da Microsoft.
-
-Saiba mais sobre como [administrar o Azure AD](http://technet.microsoft.com/library/hh967611.aspx) na biblioteca do TechNet.
-
-## Integração com outros produtos da Microsoft
-Você pode usar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] como um serviço de nuvem autônomo ou como um serviço de nuvem integrado a outros produtos. Atualmente, apenas o [!INCLUDE[cmshort](../includes/cmshort_md.md)] pode ser integrado diretamente ao [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
-
-A decisão de integrar o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao [!INCLUDE[cmshort](../includes/cmshort_md.md)] é uma escolha permanente que requer que você defina a autoridade de gerenciamento de dispositivos móveis a partir do console do [!INCLUDE[cmshort](../includes/cmshort_md.md)] e não a partir do [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]. Depois que a autoridade de gerenciamento de dispositivo móvel é definida, não é possível alterar ou reverter esta configuração.
-
-Ao usar o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] com o [!INCLUDE[cmshort](../includes/cmshort_md.md)], [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] não é utilizado para gerenciar o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e sim o console do [!INCLUDE[cmshort](../includes/cmshort_md.md)]. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ainda usa seu armazenamento em nuvem no Azure para hospedar o software que você implanta nos dispositivos gerenciados com [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
-
-Para obter mais informações, consulte [Manage Mobile Devices with Configuration Manager and Microsoft Intune (Gerenciar dispositivos móveis com o Configuration Manager e o Microsoft Intune)](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) na documentação do [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1.
-
-### Consulte também
-[O que saber antes de começar a usar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

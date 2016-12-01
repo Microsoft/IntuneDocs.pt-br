@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ O **Apagamento Completo** restaura um dispositivo para suas configurações padr
 
 Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para excluir dispositivos no portal do Active Directory do Azure
+
+1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou clique em **Administrador** &gt; **Azure AD** de [https://portal.office.com](https://portal.office.com).
+
+2.  Faça logon com sua ID da organização usando o link no lado esquerdo da página.
+
+3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
+
+4.  Selecione **Active Directory** e selecione sua organização.
+
+5.  Selecione a guia **Usuários** .
+
+6.  Selecione o usuário cujos dispositivos que deseja excluir.
+
+7.  Escolha **Dispositivos**.
+
+8.  Remova os dispositivos conforme apropriado, como aqueles que não estão mais em uso, ou aqueles que têm definições imprecisas.
+
+
 ## <a name="selective-wipe"></a>Apagamento seletivo
 
 O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (gerenciamento de aplicativo móvel), quando aplicável, configurações e perfis de email do dispositivo. O apagamento seletivo deixa os dados pessoais do usuário no dispositivo. O dispositivo é removido do Intune. As tabelas a seguir descrevem quais dados são removidos e o efeito nos dados que permaneceram no dispositivo após o apagamento seletivo. (As tabelas são organizadas por plataforma).
@@ -95,7 +114,7 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|
 |Configurações do perfil de certificado|Certificados revogados, mas não removidos.|Certificados removidos e revogados.|
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
-|Email|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído. Se o Microsoft Exchange estiver hospedado localmente, os perfis de email e emails armazenados em cache não serão removidos.|
+|Email|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
 |Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
 |Sair do Active Directory do Azure (AAD)|Registro no AAD removido.|Registro no AAD removido.|
 |Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
@@ -111,7 +130,7 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Email|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows.|Não há suporte.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows. Remove contas de email que foram provisionadas pelo Intune.</br>**Exceção**: se o Microsoft Exchange estiver hospedado localmente, as contas de email não serão removidas.|
 |Sair do Active Directory do Azure (AAD)|Não.|Não.|Registro no AAD removido.|Não aplicável. O Windows 10 não dá suporte ao apagamento seletivo de dispositivos associados ao Azure Active Directory.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>Apagar conteúdo habilitado para EFS (sistema de arquivos com criptografia)
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Apagar conteúdo habilitado para EFS (sistema de arquivos com criptografia)
 O apagamento seletivo de conteúdo criptografados com EFS é suportado pelo Windows 8.1 e Windows RT 8.1. Os pontos a seguir se aplicam a um apagamento seletivo de conteúdo habilitado para EFS:
 
 -   Somente os aplicativos e dados protegidos por EFS que usam o mesmo domínio de Internet como a conta do Intune são apagados seletivamente. Para obter mais informações, consulte [Apagamento Seletivo do Windows para Gerenciamento de Dados do Dispositivo](http://technet.microsoft.com/library/dn486874.aspx).
@@ -146,6 +165,6 @@ Este relatório também mostra quem executou a ação.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -3,27 +3,28 @@ title: "Escolher como registrar dispositivos móveis | Microsoft Intune"
 description: "Decidir como registrar dispositivos móveis no Intune respondendo algumas perguntas simples"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 509a0af6949d95a0c66c72043e67567b70ace22d
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 09c2940a99577769df1482314c488acf5823b51f
 
 
 ---
 
-# Escolher como registrar dispositivos móveis
+# <a name="choose-how-to-enroll-mobile-devices"></a>Escolher como registrar dispositivos móveis
 
 As respostas para esta série de perguntas ajudarão a determinar o melhor método de registro para os dispositivos gerenciados.
 
-## **Os funcionários trazem seus próprios dispositivos (BYOD) ou os dispositivos são fornecidos pela sua organização (COD)?**
+## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a>**Os funcionários trazem seus próprios dispositivos (BYOD) ou os dispositivos são fornecidos pela sua organização (COD)?**
 
 > [!div class="button"]
 [BYOD >](choose-how-to-enroll-devices2.md)
@@ -36,6 +37,6 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -13,12 +13,12 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
-ms.openlocfilehash: f93dc1d57e87b17bb949de8ad5476dd8abc364d0
+ms.sourcegitcommit: df77e1473532399056c3e0c1b4c4db3c7b6ba995
+ms.openlocfilehash: 0fc24f1c93cfcdb86c2a66c9a027b4ed9c516dab
 
 
 ---
-# O que esperar ao usar um aplicativo com AC do MAM
+# <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>O que esperar ao usar um aplicativo com AC do MAM
 O AC de MAM verifica a identidade do aplicativo aprovado por meio de um aplicativo agente, que deve estar presente no dispositivo:
 *  No **iOS**, o **aplicativo Microsoft Authenticator** é o aplicativo agente.
 * No **Android**, o **aplicativo do Portal da Empresa do Intune** é o aplicativo agente. 
@@ -32,8 +32,16 @@ A seguir, temos uma lista de propriedades que são derivadas diretamente do disp
 * deviceOSVersion
 * displayName
 
+## <a name="to-remove-a-device-from-azure-ad-registration"></a>Para remover um dispositivo do registro no Azure AD.
+É possível remover o registro do dispositivo usando o console de administração do Azure AD, o que normalmente é feito pelo administrador de TI.  Isso também pode ser feito pelo usuário final no próprio dispositivo.
 
-## AC do MAM com acesso condicional baseado na conformidade do dispositivo  
+* **Console de administração do Azure AD**: no console de administração do Azure AD**, exclua o dispositivo que deseja remover.
+* **Dispositivo iOS**: abra o aplicativo Microsoft Authenticator, passe o dedo para a esquerda na conta e escolha Cancelar registro.  
+* **Dispositivo Android**: desinstale o aplicativo do Portal da Empresa ou remova a conta das **Configurações do sistema**.
+
+
+
+## <a name="mam-ca-with-conditional-access-based-on-device-compliance"></a>AC do MAM com acesso condicional baseado na conformidade do dispositivo  
 
 Você pode configurar o [Acesso condicional baseado na conformidade do dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**AC do Dispositivo**) no [console do administrador do Intune](https://manage.microsoft.com) ou no [console de gerenciamento do Azure AD Premium] (https://manage.windowsazure.com). O AC do dispositivo exige que os usuários se conectem ao Exchange Online somente por meio de dispositivos gerenciados pelo Intune que estejam em conformidade com a política de conformidade do dispositivo do Intune ou computadores de domínio associado.  Se um usuário pertencer a um ou mais grupos de segurança destinados a políticas de AC de MAM e de AC do dispositivo, o usuário deverá atender a um dos dois requisitos:
 * O aplicativo usado para acessar o serviço é móvel com suporte do AC do MAM e o dispositivo no qual aplicativo está sendo executado tem um **Autenticador iOS (para dispositivos iOS)** ou o **aplicativo do Portal da Empresa (para dispositivos Android)** instalados.
@@ -44,17 +52,17 @@ Você pode configurar o [Acesso condicional baseado na conformidade do dispositi
 
 
 
-## Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 [Criar uma política do Exchange Online para aplicativos MAM](mam-ca-for-exchange-online.md)
 
 [Bloquear aplicativos que não têm autenticação moderna](block-apps-with-no-modern-authentication.md)
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 
-[Proteger os dados do aplicativo com políticas de MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Proteger dados de aplicativos com políticas de MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

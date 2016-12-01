@@ -2,8 +2,8 @@
 title: Gerenciamento de DEP da Apple para dispositivos iOS | Microsoft Intune
 description: Implante um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) do iOS &quot;pelo ar&quot; para gerenciar dispositivos Apple.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -14,16 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 021c02c9a148746a76309efc819b9e28a2748c4f
-ms.openlocfilehash: b608d6353db2f37eed03d34c9216726fa7cd1cb2
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
 
 
 ---
 
-# Registrar dispositivos iOS do Programa de Registro de Dispositivos corporativos
+# <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrar dispositivos iOS do Programa de Registro de Dispositivos corporativos
 O Microsoft Intune pode implantar um perfil de registro que registra os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) "pelo ar". O pacote de registro pode incluir opções do assistente de instalação para o dispositivo. O registro dos dispositivos feito pelo DEP não pode ser desfeito pelos usuários.
 
-## Gerenciamento de DEP da Apple para dispositivos iOS com o Microsoft Intune
+## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gerenciamento de DEP da Apple para dispositivos iOS com o Microsoft Intune
 Para gerenciar dispositivos iOS corporativos com o DEP (Programa de Registro de Dispositivo) da Apple, sua organização deve ingressar no DEP da Apple e obter dispositivos por meio do programa. Mais detalhes desse processo estão disponíveis em:  [https://deploy.apple.com](https://deploy.apple.com). As vantagens do programa incluem a instalação não assistida de dispositivos sem usar um cabo USB para conectar cada dispositivo a um computador.
 
 Antes que possa registrar dispositivos iOS da empresa com o DEP, você precisa de m token do DEP da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos de sua empresa que fazem parte do DEP. Ele também permite que o Intune realize carregamentos de Perfis de registro para a Apple e atribua dispositivos para esses perfis.
@@ -31,12 +31,12 @@ Antes que possa registrar dispositivos iOS da empresa com o DEP, você precisa d
 1.  **Começar a gerenciar dispositivos iOS com o Microsoft Intune**</br>
     Antes de poder registrar dispositivos no DEP (Programa de Registro do Dispositivo) do iOS, você precisa concluir a habilitação do gerenciamento de iOS para o Intune.
 
-2.  **Obter uma chave de criptografia**</br>
+2.  **Obter uma Chave de Criptografia**</br>
     Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador ** &gt; **Gerenciamento de Dispositivo Móvel ** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**. Salve o arquivo de criptografia (.pem) localmente. O arquivo .pem é usado para solicitar um certificado de relação de confiança do portal do Programa de registro de dispositivo da Apple.
 
       ![Atualizar um token de programa de registro do dispositivo](../media/dev-sa-ios-dep.png)
 
-3.  **Obter um token de programa de registro do dispositivo**</br>
+3.  **Obter um token do Programa de registro de dispositivos**</br>
     Vá até o [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID Apple corporativa. Essa ID da Apple deve ser usada posteriormente para renovar seu token do DEP.
 
     1.  No [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com), vá até **Programa de Registro de Dispositivo** &gt; **Gerenciar Servidores** e escolha **Adicionar Servidor MDM**.
@@ -52,11 +52,11 @@ Antes que possa registrar dispositivos iOS da empresa com o DEP, você precisa d
 4.  **Adicionar o token de DEP ao Intune**</br>
     No [Console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Admin** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Carregar Token de DEP**. **Vá** até o arquivo de certificado (.p7m), insira sua **ID da Apple** e escolha **Carregar**.
 
-5.  **Adicionar política de registro de dispositivo corporativo**</br>
+5.  **Adicionar Política de Registro de Dispositivo Corporativo**</br>
     No [Console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Registro do Dispositivo Corporativo** e selecione **Adicionar**.
 
     Forneça detalhes **Gerais**, incluindo **Nome** e **Descrição**, e especifique se os dispositivos atribuídos ao perfil têm afinidade de usuário ou pertencem a um grupo.
-      - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos).</br> **Observação:** dispositivos com DEP com afinidade do usuário não dão suporte à autenticação multifator.
+      - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos). A MFA (autenticação multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos. 
 
       > [!NOTE]
       > O DEP com afinidade do usuário requer que o ponto de extremidade misto/nome do usuário do WS-Trust 1.3 esteja habilitado para solicitar o token do usuário.
@@ -107,15 +107,15 @@ Antes que possa registrar dispositivos iOS da empresa com o DEP, você precisa d
 
 8.  **Distribuir dispositivos para usuários** Seus dispositivos de propriedade corporativa agora podem ser distribuídos para usuários. Quando um dispositivo iOS for ativado, ele será registrado para gerenciamento pelo Intune.
 
-## Alterações em atribuições de grupo do Intune
+## <a name="changes-to-intune-group-assignments"></a>Alterações em atribuições de grupo do Intune
 
 A partir de novembro, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de **Perfil de Registro Corporativo**. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

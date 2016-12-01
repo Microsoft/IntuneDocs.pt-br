@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
+ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
+ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
 # <a name="how-your-android-users-get-their-apps"></a>Como os usuários Android podem obter aplicativos
 Use estas informações para entender como e onde os usuários finais do Android obtêm os aplicativos que você distribui por meio do Microsoft Intune. As informações podem variar de acordo com o tipo de dispositivo (dispositivos Android nativos ou Samsung Knox Standard).
 
-## <a name="native-nonsamsung-knox-android-devices"></a>Dispositivos Android (não Samsung Knox) nativos
+## <a name="native-non-samsung-knox-standard-android-devices"></a>Dispositivos Android nativos (que não são Samsung Knox Standard)
 
 | Tipo de aplicativo | Aplicativos LOB (Linha de negócios) | Aplicativos da Play Store  |
 | ------------- |-------------| -----|
@@ -53,6 +53,6 @@ Aplicativos podem ser gerenciados ou não gerenciados, conforme descrito abaixo.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
