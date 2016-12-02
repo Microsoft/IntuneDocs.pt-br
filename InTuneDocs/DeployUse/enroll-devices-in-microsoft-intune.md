@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
 
 
 ---
@@ -30,7 +30,7 @@ Caso utilize o [Exchange ActiveSync](#mobile-device-management-with-exchange-act
 A tabela a seguir mostra os métodos de registro do Intune e os requisitos e recursos com suporte de cada método. Os requisitos e recursos são descritos abaixo.
 
 - **Apagar** – indica se o dispositivo precisa ser apagado antes que os usuários possam registrá-lo. O termo "apagar" significa uma redefinição de fábrica do dispositivo, que remove todos os dados. Para obter mais informações, consulte [Desativar dispositivos](retire-devices-from-microsoft-intune-management.md).
-- **Afinidade** – associa dispositivos a usuários. Necessário para MAM (gerenciamento de dispositivo móvel) e acesso condicional a dados da empresa. Para obter mais informações, consulte [Afinidade do usuário](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
+- **Afinidade** – associa dispositivos a usuários. Necessário para MAM (gerenciamento de dispositivo móvel) e acesso condicional a dados da empresa. Para obter mais informações, consulte [Afinidade do usuário](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
 - **Bloqueio** – impede que os usuários removam o dispositivo do gerenciamento. Dispositivos iOS exigem o modo Supervisionado para o Bloqueio. Para obter mais informações, consulte [Bloqueio remoto](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **Métodos de registro do iOS**
@@ -120,6 +120,6 @@ O Intune pode gerenciar as seguintes plataformas de dispositivo:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

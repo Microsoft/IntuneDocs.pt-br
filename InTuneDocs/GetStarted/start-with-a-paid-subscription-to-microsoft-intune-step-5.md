@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Os grupos no Intune oferecem grande flexibilidade para o gerenciamento de dispos
 
 >[!IMPORTANT]
 >
->Se você abrir o espaço de trabalho Grupos no portal do Intune e vir **Grupos de usuários do Intune agora são gerenciados como grupos no Azure Active Directory** com um link para o portal do Azure Active Directory, então você já está usando a *nova* abordagem de grupos de segurança do Azure AD para o gerenciamento de grupos no Intune. Para saber como criar grupos, consulte [Gerenciar grupos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
+>Se você abrir o espaço de trabalho Grupos no portal do Intune e vir **Grupos de usuários do Intune agora são gerenciados como grupos no Azure Active Directory** com um link para o portal do Azure Active Directory, então você já está usando a *nova* abordagem de grupos de segurança do Azure AD para o gerenciamento de grupos no Intune. Para saber como criar grupos, consulte [Gerenciar grupos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
 >
 >Caso não esteja vendo o link para o portal do Azure AD, você ainda está usando o portal do Intune para gerenciamento de grupos.
 
@@ -89,6 +89,6 @@ Parabéns! Você acabou de concluir a etapa 5 do *Guia de início rápido do Int
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

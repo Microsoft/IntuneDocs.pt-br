@@ -4,15 +4,15 @@ description: O Intune gerencia o Android for Work para fornecer privacidade e re
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: aafeb58e28144740540a765ac04de68b41ae5ce5
+ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
+ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
 
 
 ---
@@ -43,7 +43,7 @@ Os aplicativos são instalados sem interação do usuário e sem exigir que ele 
 
 ## <a name="app-configuration"></a>Configuração de aplicativo
 
-O Android for Work fornece infraestrutura para implantar valores de configuração de aplicativo em aplicativos que têm suporte para isso. Especificando valores de configuração para aplicativos de trabalho, você garante que eles sejam configurados corretamente quando os usuários iniciarem o aplicativo pela primeira vez. O suporte para configuração de aplicativo requer que os desenvolvedores de aplicativos criem seus aplicativos Android especificamente para dar suporte a valores de configuração gerenciados. Se eles derem suporte, você pode usar o Intune para especificar e aplicar essas configurações definidas. Saiba mais sobre as [Configurações de aplicativo no Android for Work](deploy-use/afw-app-configuration-policy.md).
+O Android for Work fornece infraestrutura para implantar valores de configuração de aplicativo em aplicativos que têm suporte para isso. Especificando valores de configuração para aplicativos de trabalho, você garante que eles sejam configurados corretamente quando os usuários iniciarem o aplicativo pela primeira vez. O suporte para configuração de aplicativo requer que os desenvolvedores de aplicativos criem seus aplicativos Android especificamente para dar suporte a valores de configuração gerenciados. Se eles derem suporte, você pode usar o Intune para especificar e aplicar essas configurações definidas. Saiba mais sobre as [Configurações de aplicativo no Android for Work](afw-app-configuration-policy.md).
 
 ## <a name="email-configuration"></a>Configuração de email
 
@@ -77,7 +77,7 @@ As mesmas opções de configuração de perfil de certificado que estão dispon�
 
 Saiba mais sobre os [Perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
-## <a name="wifi-profiles"></a>Perfis de Wi-Fi
+## <a name="wi-fi-profiles"></a>Perfis de Wi-Fi
 
 É garantido que os perfis de Wi-Fi gerenciados pelo Android for Work serão removidos quando o dispositivo for retirado do Intune e o perfil de trabalho for excluído. Saiba mais sobre [Perfis Wi-Fi](wi-fi-connections-in-microsoft-intune.md).
 
@@ -87,6 +87,6 @@ Saiba mais sobre os [Perfis de certificado](secure-resource-access-with-certific
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 
