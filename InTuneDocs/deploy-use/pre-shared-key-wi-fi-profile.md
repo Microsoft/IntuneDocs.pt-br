@@ -14,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>Usar uma política personalizada para criar um perfil de Wi-Fi com uma chave pré-compartilhada
+# <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usar uma política personalizada para criar um perfil de Wi-Fi com uma chave pré-compartilhada
 Veja aqui como usar a **Configuração Personalizada** do Azure para criar um perfil de Wi-Fi com uma chave pré-compartilhada. Este tópico também apresenta um exemplo de como criar um perfil de Wi-Fi baseado em EAP.
 
 > [!NOTE]
@@ -58,7 +58,7 @@ Lembre-se de incluir o caractere de ponto no início.
     > Essa política só pode ser implantada para grupos de usuários.
 
 Na próxima vez em que cada dispositivo fizer check-in, a política será aplicada e um perfil de Wi-Fi será criado no dispositivo. O dispositivo poderá conectar-se à rede automaticamente.
-## <a name="android-or-windows-wifi-profile"></a>Perfil de Wi-Fi do Android ou do Windows
+## <a name="android-or-windows-wi-fi-profile"></a>Perfil de Wi-Fi do Android ou do Windows
 
 Aqui está um exemplo de código XML de um perfil de Wi-Fi do Android ou do Windows:
 
@@ -109,7 +109,7 @@ Aqui está um exemplo de código XML de um perfil de Wi-Fi do Android ou do Wind
       </MSM>
     </WLANProfile>
 
-## <a name="eapbased-wifi-profile"></a>Perfil de Wi-Fi baseado em EAP
+## <a name="eap-based-wi-fi-profile"></a>Perfil de Wi-Fi baseado em EAP
 Aqui está um exemplo de código XML de um perfil de Wi-Fi baseado em EAP:
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ Aqui está um exemplo de código XML de um perfil de Wi-Fi baseado em EAP:
       </MSM>
     </WLANProfile>
 
-## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>Criar o arquivo XML de uma conexão Wi-Fi existente
+## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Criar o arquivo XML de uma conexão Wi-Fi existente
 Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
 1. Em um computador que está conectado ou recentemente foi conectado à rede sem fio, abra a seguinte pasta: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
