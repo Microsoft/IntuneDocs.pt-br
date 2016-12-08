@@ -15,7 +15,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
 
 
@@ -70,19 +70,19 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 |**Permitir envio de dados de diagnóstico**|Permite que o dispositivo envie informações de diagnóstico para o Google.|Não|Sim|
 |**Permitir redefinição de fábrica**|Permite que o usuário execute uma redefinição de fábrica no dispositivo.|Não|Sim|
 
-### <a name="cloud-settings-documents-and-data"></a>Configurações de nuvem – documentos e dados
+### <a name="cloud-settings---documents-and-data"></a>Configurações de nuvem – documentos e dados
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------------------|----------------|
 |**Permitir backup do Google**|Permite o uso do backup do Google.|Não|Sim|
 
-### <a name="cloud-settings-accounts-and-synchronization"></a>Configurações de nuvem – contas e sincronização
+### <a name="cloud-settings---accounts-and-synchronization"></a>Configurações de nuvem – contas e sincronização
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Permitir sincronização automática da conta do Google**|Permite que as configurações de conta do Google sejam sincronizadas automaticamente.|Não|Sim|
 
-### <a name="application-settings-browser"></a>Configurações de aplicativo - navegador
+### <a name="application-settings---browser"></a>Configurações de aplicativo - navegador
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -92,13 +92,13 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 |**Permitir cookies**|Permite que o navegador da Web do dispositivo use cookies.|Não|Sim|
 |**Permitir scripts ativos**|Permite que o navegador da Web do dispositivo use script ativo.|Não|Sim|
 
-### <a name="application-settings-apps"></a>Configurações de aplicativo - aplicativos
+### <a name="application-settings---apps"></a>Configurações de aplicativo - aplicativos
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
 |**Permitir loja Google Play**|Permite ao usuário acessar o Google Play Store no dispositivo.|Não|Sim|
 
-### <a name="device-capabilities-settings-hardware"></a>Configurações de recursos do dispositivo - hardware
+### <a name="device-capabilities-settings---hardware"></a>Configurações de recursos do dispositivo - hardware
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -111,7 +111,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 |**Permitir Bluetooth**|Permite o uso de Bluetooth no dispositivo.|Não|Sim|
 |**Permitir desligamento**|Permite que o usuário desligue o dispositivo.<br /><br />Se essa configuração estiver desabilitada, a configuração **Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado** não funcionará para dispositivos Samsung KNOX Standard.|Não|Sim|
 
-### <a name="device-capabilities-settings-cellular"></a>Configurações de recursos do dispositivo - celular
+### <a name="device-capabilities-settings---cellular"></a>Configurações de recursos do dispositivo - celular
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
@@ -119,7 +119,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 |**Permitir roaming de dados**|Permite roaming de dados quando o dispositivo estiver em uma rede de celular.|Não|Sim|
 |**Permitir mensagens SMS/MMS**|Permite o uso de mensagens SMS e MMS no dispositivo.|Não|Sim|
 
-### <a name="device-capabilities-settings-features"></a>Configurações de recursos do dispositivo - recursos
+### <a name="device-capabilities-settings---features"></a>Configurações de recursos do dispositivo - recursos
 
 |Nome da configuração|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
@@ -188,7 +188,7 @@ Essa funcionalidade destina-se a permitir que você implante configurações do 
     |**Nome**|Insira um nome exclusivo para a política personalizada do Android para ajudar a identificá-la no console do Intune.|
     |**Descrição**|Forneça uma descrição que dê uma visão geral da política personalizada do Android e outras informações relevantes que o ajudarão a localizá-la.|
 
-### <a name="omauri-settings"></a>Configurações de OMA-URI
+### <a name="oma-uri-settings"></a>Configurações de OMA-URI
 
    |Nome da configuração|Detalhes|
     |--------|--------------------|

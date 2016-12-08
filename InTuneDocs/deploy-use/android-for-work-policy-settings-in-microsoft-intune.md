@@ -15,7 +15,7 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
@@ -77,7 +77,7 @@ Essa funcionalidade destina-se a permitir que você implante configurações do 
     |**Nome**|Insira um nome exclusivo para a política personalizada do Android para ajudar a identificá-la no console do Intune.|
     |**Descrição**|Forneça uma descrição que dê uma visão geral da política personalizada do Android e outras informações relevantes que o ajudarão a localizá-la.|
 
-### <a name="omauri-settings"></a>Configurações de OMA-URI
+### <a name="oma-uri-settings"></a>Configurações de OMA-URI
 
    |Nome da configuração|Detalhes|
     |--------|--------------------|
