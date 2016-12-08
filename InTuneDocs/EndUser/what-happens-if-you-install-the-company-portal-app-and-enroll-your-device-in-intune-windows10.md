@@ -2,10 +2,10 @@
 title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows 10 no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 0462635a4c995866f8ad504ea724e795424b4405
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 
 ---
 
 
-# O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows 10 no Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows 10 no Intune?
 
 Quando instala o aplicativo de Portal da Empresa e usa o aplicativo para registrar seu dispositivo Windows 10 Enterprise ou Professional no Intune, você pode usar o aplicativo de Portal da Empresa para:
 
@@ -52,10 +52,10 @@ Quando você adicionar um computador:
 
 -   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. O administrador de TI também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo ou excluir todos os dados do disco rígido se você tentar muitas vezes.
 
-Se tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

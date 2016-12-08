@@ -2,10 +2,10 @@
 title: "Seu computador já está registrado | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 6ea001a00007a323c88f2f384bc768edc06eaa87
 
 
 ---
 
-
-# Seu computador já está registrado
+# <a name="your-computer-is-already-enrolled"></a>Seu computador já está registrado
 
 Se você receber um erro informando que seu computador já está registrado, significa que seu computador já foi adicionado ao Portal da Empresa, mas ainda não está vinculado à sua conta de usuário. Siga este procedimento para vincular seu computador à sua conta de usuário e concluir o processo.  
 
@@ -36,10 +35,10 @@ Para vincular o seu computador:
 
 Se preferir cancelar o registro do seu dispositivo, use as instruções para o tipo de dispositivo que você tem: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
