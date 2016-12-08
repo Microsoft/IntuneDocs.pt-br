@@ -14,7 +14,7 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
 
 
@@ -36,7 +36,7 @@ O Exchange Connector permite gerenciar a implantação do Exchange no console do
 -   [Instalar o conector do Intune para servidores do Exchange locais e ambientes do Exchange Online Dedicated herdados](intune-on-premises-exchange-connector.md)
 
 
-## <a name="apply-policy-for-exchangemanaged-mobile-devices"></a>Aplicar política a dispositivos móveis gerenciados pelo Exchange
+## <a name="apply-policy-for-exchange-managed-mobile-devices"></a>Aplicar política a dispositivos móveis gerenciados pelo Exchange
 O console do Intune pode ser usado para gerenciar [configurações de política EAS](exchange-activesync-policy-settings-in-microsoft-intune.md) e [restringir o acesso aos recursos da empresa](restrict-access-to-email-and-o365-services-with-microsoft-intune.md). Para obter uma lista de recursos e configurações de política do Exchange ActiveSync com suporte de dispositivos móveis específicos, consulte [Tabela de Comparação do Cliente Exchange ActiveSync](http://go.microsoft.com/fwlink/?LinkId=247270).
 
 > [!NOTE]

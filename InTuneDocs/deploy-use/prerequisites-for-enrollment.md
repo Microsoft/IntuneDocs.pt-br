@@ -14,7 +14,7 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 
 
@@ -119,7 +119,7 @@ Você usa o **Portal de gerenciamento do Office 365** para adicionar manualmente
 
 3.  Agora a conta de usuário será adicionada ao grupo de usuários do Microsoft Intune, o que concede ao usuário permissões para usar o serviço e registrar seus dispositivos para gerenciamento.
 
-### <a name="to-synchronize-onpremises-users-with-azure-ad"></a>Para sincronizar usuários locais com o Azure AD
+### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>Para sincronizar usuários locais com o Azure AD
 
 1. [Adicione o sufixo UPN](https://technet.microsoft.com/en-us/library/cc772007.aspx) a seu domínio personalizado no seu Active Directory local.
 2. Defina o novo sufixo UPN para os usuários locais que você pretende importar.

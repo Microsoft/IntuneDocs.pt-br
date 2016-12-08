@@ -14,7 +14,7 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 
@@ -133,7 +133,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Tornar a conta da Microsoft opcional em um aplicativo Windows Mail**|Sim|Não|Não|Não|Não|
 |**Permitir contas de email personalizadas**|Não|Não|Somente Windows Phone 8.1|Não|Não|
 
-## <a name="application-settings-browser"></a>Configurações de aplicativo - navegador
+## <a name="application-settings---browser"></a>Configurações de aplicativo - navegador
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -154,7 +154,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Permitir o acesso ao menu em Modo Empresarial**|Sim|Não|Não|Não|Não|
 |**Local do Enterprise Mode Site List**|Sim|Não|Não|Não|Não|
 
-## <a name="application-settings-apps"></a>Configurações de aplicativo - aplicativos
+## <a name="application-settings---apps"></a>Configurações de aplicativo - aplicativos
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -167,14 +167,14 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Permitir conteúdo somente para adultos no repositório de mídia**|Não|Não|Não|Sim|Não|
 |**Permitir instalação de aplicativos**|Não|Não|Não|iOS 6 e posterior|Não|
 
-## <a name="application-settings-gaming"></a>Configurações de aplicativo - jogos
+## <a name="application-settings---gaming"></a>Configurações de aplicativo - jogos
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Permitir amigos no Game Center**|Não|Não|Não|Sim|Não|
 |**Permitir jogo para vários participantes**|Não|Não|Não|Sim|Não|
 
-## <a name="device-capabilities-settings-hardware"></a>Configurações de recursos do dispositivo - hardware
+## <a name="device-capabilities-settings---hardware"></a>Configurações de recursos do dispositivo - hardware
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -189,7 +189,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Permitir Bluetooth**|Não|Não|Somente Windows Phone 8.1|Não|Sim (Samsung KNOX Standard somente)|
 |**Permitir desligamento**<br>Se essa configuração estiver desabilitada, a configuração **Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado** não funcionará para dispositivos Samsung KNOX Standard.|Não|Não|Não|Não|Sim (Samsung KNOX Standard somente)|
 
-## <a name="device-capabilities-settings-cellular"></a>Configurações de recursos do dispositivo - celular
+## <a name="device-capabilities-settings---cellular"></a>Configurações de recursos do dispositivo - celular
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -198,7 +198,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Permitir sincronização automática enquanto em roaming**|Não|Não|Não|Sim|Não|
 |**Permitir mensagens SMS/MMS**|Não|Não|Não|Não|Sim (Samsung KNOX Standard somente)|
 
-## <a name="device-capabilities-settings-features"></a>Configurações de recursos do dispositivo - recursos
+## <a name="device-capabilities-settings---features"></a>Configurações de recursos do dispositivo - recursos
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
