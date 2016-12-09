@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
-ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
 
 
 ---
@@ -37,7 +37,7 @@ A tabela a seguir mostra os métodos de registro do Intune e os requisitos e rec
 
 | **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Não |Não |Não  | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
@@ -47,14 +47,14 @@ A tabela a seguir mostra os métodos de registro do Intune e os requisitos e rec
 
 | **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sim|   Sim |   Não | [Mais informações](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[BYOD](#byod)** | Sim|   Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do Android**
 
 | **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 Para ver uma série de perguntas que o ajudarão a encontrar o método certo, consulte [Escolher como registrar dispositivos](/intune/get-started/choose-how-to-enroll-devices1).
@@ -120,6 +120,6 @@ O Intune pode gerenciar as seguintes plataformas de dispositivo:
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

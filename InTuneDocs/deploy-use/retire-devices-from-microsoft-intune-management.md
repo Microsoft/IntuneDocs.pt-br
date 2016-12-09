@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Para dispositivos que precisam ser realocados, também é possível usar um [apa
 8.  Escolha os dispositivos, conforme apropriado e escolha **Excluir dispositivo**. O dispositivo será excluído na próxima vez que for sincronizado com o Active Directory. Normalmente, isso ocorre em até quatro horas. Após a sincronização, o dispositivo é removido do gerenciamento. Isso remove um dispositivo do limite de dispositivos deste usuário.
 
 ## <a name="retire-managed-computers"></a>Desativar computadores gerenciados
-Computadores gerenciados com o software cliente do Intune podem ser removidos do gerenciamento por meio do console do administrador do Intune. Esse processo também desinstala o software cliente e exclui a política do Intune do computador. Veja informações sobre [como desativar computadores gerenciados com o software cliente do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Computadores gerenciados com o software cliente do Intune podem ser removidos do gerenciamento por meio do console do administrador do Intune. Esse processo também desinstala o software cliente e exclui a política do Intune do computador. Veja informações sobre [como desativar computadores gerenciados com o software cliente do Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Bloquear o acesso a um dispositivo
 Se um dispositivo for perdido ou quando for necessário desativar um dispositivo devido à saída de um funcionário da empresa sem a devolução de um hardware de propriedade da empresa, também será possível [redefinir a senha e bloquear remotamente](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) o dispositivo. Isso impede que as informações da empresa sejam indevidamente utilizadas, embora você possa precisar dar baixa no dispositivo como perda.
@@ -70,6 +70,6 @@ Você também deseja revogar a licença da conta de usuário Intune do funcioná
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
