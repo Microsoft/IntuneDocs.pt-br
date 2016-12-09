@@ -2,8 +2,8 @@
 title: Apagar dados de aplicativos de empresa gerenciados | Microsoft Intune
 description: "Saiba como você pode remover seletivamente os dados da empresa de dispositivos remotamente."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ A folha **Gerenciamento de aplicativos móveis do Intune** tem um relatório res
 
 2.  Na folha **Solicitação de apagamento**, você pode ver a lista de suas solicitações agrupadas por usuário. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
 
-O usuário deve abrir o aplicativo para que o apagamento ocorra, e ele pode durar até 30 minutos após a criação da solicitação. 
+O usuário deve abrir o aplicativo para que o apagamento ocorra, e ele pode durar até 30 minutos após a criação da solicitação.
 
 Apagamentos com status pendente são exibidos até serem excluídos manualmente.  Para excluir manualmente uma solicitação de apagamento, clique com o botão direito do mouse e escolha Excluir.
 
@@ -66,6 +66,6 @@ Apagamentos com status pendente são exibidos até serem excluídos manualmente.
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
