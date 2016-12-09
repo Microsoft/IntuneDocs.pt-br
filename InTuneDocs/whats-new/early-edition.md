@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ Agora você pode impor a autenticação multifator (MFA) em um grupo selecionado
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>Configurar o acesso condicional para o MAM com o SharePoint Online <!--VSO 679339-->
 Você pode impedir que os aplicativos sem suporte das políticas de gerenciamento do aplicativo móvel do Intune (MAM) acessem o SharePoint Online.  Você pode começar usando o gerenciamento de aplicativo móvel do Intune no portal do Azure. Procure a seção __Acesso Condicional__ na folha __Configurações__ que inclui a opção para o SharePoint Online. Este recurso será enviado separadamente do restante da versão de serviço.
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>Capacidade de restringir o registro de dispositivos móveis do Intune
+O Intune está adicionando novas restrições de registro que controlam quais plataformas de dispositivos móveis têm permissão para registrar. O Intune separa plataformas de dispositivos móveis como iOS, macOS, Android, Windows e Windows Mobile. 
+* O macOS e o Windows 8.1 ou superior podem ter os registros impedidos como plataformas de dispositivos móveis. 
+* Restringir o registro do dispositivo móvel não restringe o registro de agente do computador. 
+* Apenas para iOS, há uma opção adicional para bloquear o registro de dispositivos de propriedade pessoal. O Intune marca todos os novos dispositivos como pessoais, a menos que o administrador de TI marque-os como de propriedade corporativa, conforme explicado [neste artigo](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+
 ## <a name="notices"></a>Avisos
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>A Autenticação Multifator no Registro movida para o portal do Azure <!--VSO 750545-->
@@ -82,6 +89,6 @@ Veja [Novidades do Microsoft Intune](whats-new-in-microsoft-intune.md) para sabe
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
