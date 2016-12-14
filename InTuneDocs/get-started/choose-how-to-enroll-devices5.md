@@ -14,8 +14,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: 5581e80612286471b29d35f193fba5146f9ca90f
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 53c22143b5b367ed5732ed14fb06937d66489afa
 
 
 ---
@@ -26,12 +26,12 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Como você gerenciará dispositivos iOS compartilhados?**
 
-  > [!div class="button"]
-  [Registro no DEP para iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
-  > [!div class="button"]
-  [Registro direto para iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
-  > [!div class="button"]
-  [Registro no DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[Registro no DEP para iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [!div class="button"]
+[Registro direto para iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[Registro no DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **DEP (Programa de Registro do Dispositivo) da Apple**: dispositivos iOS podem ser comprados ou gerenciados com o DEP com um perfil de registro. Quando os usuários ligam seus dispositivos pela primeira vez, o dispositivo baixa o perfil de DEP e registra-se com ele.
 
@@ -44,6 +44,6 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
