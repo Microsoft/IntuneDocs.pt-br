@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 Você pode apagar os aplicativos e dados de dispositivos gerenciados pelo Intune que não são mais necessários, que estão sendo realocados ou estão ausentes. Para isso, o Intune fornece funcionalidades de apagamento completo e apagamento seletivo. Os usuários também podem emitir um comando de apagamento remoto de dados no dispositivo do aplicativo de Portal da Empresa do Intune em dispositivos privados registrados no Intune.
 
   > [!NOTE]
-  > Este tópico trata apenas do apagamento de dispositivos gerenciados pelo gerenciamento de dispositivo móvel do Intune. Você também pode usar o [portal do Azure](https://portal.azure.com) para [apagar dados da empresa dos aplicativos](wipe-managed-company-app-data-with-microsoft-intune.md). Você também pode [desativar computadores gerenciados com o software cliente do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > Este tópico trata apenas do apagamento de dispositivos gerenciados pelo gerenciamento de dispositivo móvel do Intune. Você também pode usar o [portal do Azure](https://portal.azure.com) para [apagar dados da empresa dos aplicativos](wipe-managed-company-app-data-with-microsoft-intune.md). Você também pode [desativar computadores gerenciados com o software cliente do Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>Apagamento completo
 
@@ -165,6 +165,6 @@ Este relatório também mostra quem executou a ação.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

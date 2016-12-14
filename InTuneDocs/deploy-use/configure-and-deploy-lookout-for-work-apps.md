@@ -1,8 +1,8 @@
 ---
 title: Implantar o aplicativo Lookout for Work | Microsoft Intune
 description: Configurar e implantar aplicativos Lookout for Work para Android.
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 
 ---
@@ -40,14 +40,15 @@ No Console do Intune, quando clicar em **Aplicativos**, agora você verá o apli
 
 * **Etapa 5**: implante o aplicativo para usuários selecionando o aplicativo Lookout for Work e escolhendo **Gerenciar Implantação**.
 
-  Você precisa selecionar os mesmos usuários adicionados à opção de Gerenciamento de Registro no console da Consulta MTP.  Consulte a Etapa 3 na seção [Configurar sua assinatura da Consulta MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) para obter informações sobre como adicionar grupos de usuários à Consulta MTP.
+  Você precisa selecionar os mesmos usuários adicionados à opção de Gerenciamento de Registro no console da Consulta MTP.  Consulte a Etapa 3 na seção [Configurar sua assinatura da Consulta MTP](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) para obter informações sobre como adicionar grupos de usuários à Consulta MTP.
+
   >[!IMPORTANT]
   > O assistente de implantação de aplicativo do Intune não está ciente dos grupos de usuários do Azure AD e usa os grupos de usuários do Intune em vez disso. Sendo assim, você precisa criar um grupo de usuários do Intune com base no grupo de usuários do Azure AD que está registrado no console da Consulta MTP, conforme descrito [neste](plan-your-user-and-device-groups.md) tópico.
 
 * **Etapa 6**: escolha a opção **Instalação Obrigatória** para exigir que o aplicativo Lookout seja instalado no dispositivo do usuário.
 
 
-## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (versão Enterprise assinada do aplicativo Lookout)
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (versão Enterprise assinada do aplicativo Lookout)
 
 * **Etapa 1:** verifique se o **Gerenciamento de iOS** está configurado no dispositivo. Para obter instruções sobre como configurar seu dispositivo para gerenciamento de iOS, consulte [Configurar o gerenciamento de dispositivos iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -76,7 +77,8 @@ No Console do Intune, quando clicar em **Aplicativos**, agora você verá o apli
 
 * **Etapa 6:** **para implantar o aplicativo para usuários**, selecione o aplicativo Lookout for Work e escolha **Gerenciar Implantação**.
 
-  Você precisa selecionar os mesmos usuários que foram adicionados à opção de Gerenciamento de Registro no console do Lookout.  Consulte a Etapa 3 na seção [Configurar sua assinatura com a proteção contra ameaça do dispositivo Lookout](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) para obter informações sobre como adicionar grupos de usuários ao Lookout MTP.
+  Você precisa selecionar os mesmos usuários que foram adicionados à opção de Gerenciamento de Registro no console do Lookout.  Consulte a Etapa 3 na seção [Configurar sua assinatura com a proteção contra ameaça do dispositivo Lookout](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) para obter informações sobre como adicionar grupos de usuários ao Lookout MTP.
+
 >[!IMPORTANT]
 > O assistente de implantação de aplicativo do Intune não está ciente dos grupos de usuários do Azure AD e, em vez disso, usa os grupos de usuários do Intune, portanto você deve criar um grupo de usuários do Azure AD que está registrado no console do Lookout, conforme descrito [neste](plan-your-user-and-device-groups.md) tópico.
 
@@ -98,6 +100,6 @@ Quando abrir o Lookout for Work no dispositivo, o usuário será solicitado a at
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ Procurando o Intune com o Configuration Manager?
 ## <a name="step-1-enable-connections"></a>Etapa 1: Habilitar conexões
 
 Antes de habilitar o registro de dispositivo móvel, certifique-se de ter feito o seguinte:
-- [Examinar as portas e URLs de rede necessárias](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Adicionar e verificar o nome de domínio](../get-started/domain-names-for-microsoft-intune)
+- [Examinar as portas e URLs de rede necessárias](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Adicionar e verificar o nome de domínio](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>Etapa 2: Configurar a autoridade de MDM
 A autoridade de MDM define o serviço de gerenciamento que tem permissão para gerenciar um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune e o Configuration Manager com Intune. Se você definir o Configuration Manager como a autoridade de gerenciamento, nenhum outro serviço poderá ser usado para gerenciamento de dispositivo móvel.
@@ -111,7 +111,7 @@ Depois de salvar suas alterações, é possível usar os links fornecidos na par
 
 ## <a name="step-5-assign-user-licenses"></a>Etapa 5: Atribuir licenças de usuário
 
-Você usa o **Portal de gerenciamento do Office 365** para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD (Azure Active Directory). É possível [sincronizar usuários locais com o Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+Você usa o **Portal de gerenciamento do Office 365** para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD (Azure Active Directory). É possível [sincronizar usuários locais com o Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Entre no [Portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx) usando suas credenciais de administrador de locatário.
 
@@ -136,7 +136,7 @@ Configurar o gerenciamento para as seguintes plataformas:
 - [PCs e laptops com Windows](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-Você também pode habilitar o [registro de dispositivos corporativos](manage-corporate-owned-devices).
+Você também pode habilitar o [registro de dispositivos corporativos](manage-corporate-owned-devices.md).
 
 ## <a name="step-7-next-steps"></a>Etapa 7: Próximas etapas
 
@@ -149,6 +149,6 @@ Agora que o registro está habilitado, você deve configurar o gerenciamento par
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

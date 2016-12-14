@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -28,8 +28,8 @@ Se a instalação do aplicativo estiver demorando muito, tente sincronizar o dis
 Somente as versões a seguir têm suporte. Se o dispositivo não estiver listado, a sincronização não tem suporte. Use as instruções que correspondem ao tipo de dispositivo que você tem.
 
 * [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows 10 desktop](#windows-10-desktop)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ Para sincronizar manualmente seu dispositivo Windows 10 Mobile e acelerar uma in
     A mensagem “Estamos sincronizando sua conta” aparece na parte superior da tela. O botão **Sincronizar** fica esmaecido até que o dispositivo termine a sincronização.
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. Para descobrir quais etapas usar, examine as capturas de tela e siga as etapas que se parecem com o que você vê em seu dispositivo. 
+Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. Para descobrir quais etapas usar, examine as capturas de tela e siga as etapas que se parecem com o que você vê em seu dispositivo.
 
 1. Clique no botão **Iniciar** e, em seguida, escolha **Configurações**.
 
@@ -72,7 +72,7 @@ Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. P
 
     Se você vir essa tela, que exibe “Acessar conta corporativa”, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa](#steps-to-follow-if-you-see-your-account).
 
-    ![Escolha acesso corporativo como tipo de conta](./media/win10pc-sync-3-work-access.png) 
+    ![Escolha acesso corporativo como tipo de conta](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante
 
@@ -80,9 +80,9 @@ Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. P
 
     ![Escolha Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Escolha sua conta corporativa ou de estudante. Dependendo de como o administrador de TI tiver configurado as coisas, você poderá ver duas contas semelhantes ao exemplo a seguir. Ao lado de uma conta, há uma pasta, ao lado da outra há um logotipo da Microsoft. 
+2. Escolha sua conta corporativa ou de estudante. Dependendo de como o administrador de TI tiver configurado as coisas, você poderá ver duas contas semelhantes ao exemplo a seguir. Ao lado de uma conta, há uma pasta, ao lado da outra há um logotipo da Microsoft.
 
-    - Se vir a conta com a pasta, selecione-a e procure um botão de **Informações** abaixo dela. 
+    - Se vir a conta com a pasta, selecione-a e procure um botão de **Informações** abaixo dela.
     - Se vir apenas a conta com o logotipo da Microsoft, selecione a conta e procure um botão de **Informações** abaixo dela.
 
     ![Escolha o nome da sua conta ao lado da pasta ou do logotipo da Microsoft](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. P
 4. Escolha o botão **Sincronizar**. Se dispositivo será sincronizado com o Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Etapas a serem seguidas se você vir Acesso corporativo
-    
+
 1. Na página **Contas**, escolha **Acesso corporativo**.
 
     ![Escolha acesso corporativo como tipo de conta](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
