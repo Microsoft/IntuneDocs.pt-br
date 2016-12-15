@@ -1,11 +1,11 @@
 ---
-title: "O dispositivo iOS não está em conformidade com a versão máxima do sistema operacional | Microsoft Intune"
+title: "O dispositivo não é compatível com a versão máxima do sistema operacional | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 994fbd726b5173ce18e284c94a658189f100a9b0
-ms.openlocfilehash: 99c41c884d1e6e4e0d1ba6d2edb0d902551ea21a
+ms.sourcegitcommit: 308706452538ea6d87546d72ca4478b227ced0d6
+ms.openlocfilehash: 928845c6e0bc21ae678fd6ba31c3bd0bbde5d338
 
 
 ---
 
 
-# O dispositivo iOS não está em conformidade com a configuração da última versão do sistema operacional
+# <a name="your-devices-operating-system-version-isnt-yet-supported"></a>Ainda não há suporte para a versão do sistema operacional do seu dispositivo
 
-Seu dispositivo iOS não está em conformidade com a política do administrador de TI para a última versão do sistema operacional que você pode usar. Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Com o ritmo acelerado do desenvolvimento de tecnologias móveis, às vezes, seu dispositivo pode estar à frente do que o seu administrador de TI teve a oportunidade de testar. É possível que a versão mais recente do iOS não funcione com algumas ferramentas da empresa.
+
+Será necessário entrar em contato com o administrador de TI para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

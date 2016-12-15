@@ -1,5 +1,5 @@
 ---
-title: "O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo iOS ou Mac OS X no Intune? | Microsoft Intune"
+title: "O que acontece se você instalar o aplicativo do Portal da Empresa e registrar o dispositivo iOS ou macOS no Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo iOS ou Mac OS X no Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>O que acontece se você instalar o aplicativo do Portal da Empresa e registrar o dispositivo iOS ou macOS no Intune?
 
-Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo iOS ou Mac OS X no Intune, você pode usar o aplicativo Portal da Empresa para:
+Quando você instala o aplicativo do Portal da Empresa e registra o dispositivo iOS ou macOS no Intune, é possível usar o aplicativo do Portal da Empresa para:
 
 -   acessar a rede da empresa, bem como seu email e arquivos de trabalho.
 
@@ -96,6 +96,6 @@ Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as inf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

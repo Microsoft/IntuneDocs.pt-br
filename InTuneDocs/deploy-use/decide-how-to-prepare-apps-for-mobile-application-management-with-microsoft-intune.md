@@ -14,8 +14,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 977716dd821bf9c487db199b57130c432b008a12
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
 
 
 ---
@@ -58,7 +58,7 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](/intune/develop/intune-ap
 * Seu aplicativo não tem recursos internos de proteção de dados.
 * Seu aplicativo é complexo e contém muitas experiências.
 * Seu aplicativo é implantado em uma loja de aplicativos pública, como Google Play ou App Store da Apple.
-* Você é desenvolvedor de aplicativos e tem experiência técnica para usar o SDK.
+* Você é um desenvolvedor de aplicativos e tem experiência técnica para usar o SDK.
 * Seu aplicativo tem outras integrações de SDK.
 * Seu aplicativo é atualizado com frequência.
 
@@ -85,7 +85,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Solicitar PIN simples para acesso|X|X|
 |Substituir o PIN do aplicativo interno pelo PIN do Intune|X||
 |Especificar o número de tentativas antes da redefinição do PIN|X|X|
-|Permitir a impressão digital em vez de PIN |X|X|
+|Permitir a impressão digital em vez do PIN |X|X|
 |Exigir credenciais corporativas para acesso|X|X|
 |Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root|X|X|
 |Criptografar dados do aplicativo|X|X|
@@ -97,7 +97,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Impedir "Salvar como" |X||
 |Suporte para múltiplas identidades|X||
 |Suporte para MAM sem registro de dispositivo|X|X|
-|Estilo personalizável |X|||
+|Estilo Personalizável |X|||
 ### <a name="see-also"></a>Consulte também
 
 [Ferramenta de disposição do aplicativo Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
@@ -106,6 +106,6 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

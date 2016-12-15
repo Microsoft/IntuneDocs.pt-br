@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Seu dispositivo Android tem raiz e você não pode se conectar
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Seu dispositivo Android tem raiz e você não pode se conectar
+Você chegou aqui porque viu uma mensagem informando que o dispositivo tem _raiz_.
 
-Quando seu dispositivo Android tem raiz, ele foi alterado para habilitar determinadas funcionalidades que poderiam comprometer a segurança e os recursos da empresa. Se vir essa mensagem, você não conseguirá acessar os recursos da empresa até que o problema seja corrigido.
+Se um dispositivo Android tem “raiz”, isso significa que alguma parte do software do dispositivo foi alterada para habilitar recursos que podem não estar presentes. Frequentemente, essas modificações podem comprometer o acesso seguro aos recursos organizacionais, como emails e documentos. Portanto, dispositivos com “raiz” não podem ser usados para acessar tais recursos até que o problema seja solucionado.  
 
-Se você não acredita que fez algo para modificar deliberadamente a raiz de seu dispositivo, veja estas outras razões pelas quais seu dispositivo pode ter passado a ter raiz:
+Há algumas maneiras comuns pelas quais o dispositivo pode ter se tornado com raiz:
 
-- Talvez você tenha instalado um aplicativo em seu dispositivo que o software de detecção de raiz considera um risco à segurança. Se você vir essa mensagem depois de instalar um aplicativo, convém tentar desinstalar o aplicativo para ver se isso ajuda.
+- Talvez você tenha instalado um aplicativo em seu dispositivo que o software de detecção de raiz considera um risco à segurança. Se você vir essa mensagem imediatamente após instalar um aplicativo, tente desinstalá-lo.
 
-- O fabricante do dispositivo instalou um software no seu dispositivo que o software de detecção de raiz considera um risco à segurança. É necessário entrar em contato com seu administrador de TI para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+- O fabricante do dispositivo instalou um software no seu dispositivo que o software de detecção de raiz considera um risco à segurança. Nesse caso, é necessário entrar em contato com o administrador de TI para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+Se você mesmo tiver colocado raiz no dispositivo, será necessário reverter o processo e restaurar o estado sem raiz do dispositivo.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

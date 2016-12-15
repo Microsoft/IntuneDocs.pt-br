@@ -1,11 +1,11 @@
 ---
-title: Aplicativos do Portal da Empresa sem suporte | Microsoft Intune
+title: Atualizar o aplicativo do Portal da Empresa | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: a6b551ce5c0810ec98ed2303733f0efa43b8ffdb
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: b3e98f32901512b9164c2e28c38e3bad751f7e8a
 
 
 ---
 
-# Aplicativos do Portal da Empresa sem suporte
-Esta versão do Portal da Empresa não pode mais ser usada. Instale o aplicativo mais recente do **Portal da Empresa** da Windows Store para continuar.
+# <a name="your-company-portal-app-is-out-of-date"></a>O aplicativo do Portal da Empresa está desatualizado
+É necessário atualizar o aplicativo do Portal da Empresa para continuar a acessar o email corporativo, os contatos e os documentos. Para corrigir isso, abra a **Windows Store** e instale a nova versão do aplicativo do **Portal da Empresa**.
+
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 
