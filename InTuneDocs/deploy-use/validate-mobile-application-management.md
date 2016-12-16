@@ -2,8 +2,8 @@
 title: "Validar a configuração do MAM | Microsoft Docs"
 description: "Este tópico descreve como você pode testar e validar se a política de MAM está configurada corretamente e funcionando conforme o esperado."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article
