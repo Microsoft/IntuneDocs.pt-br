@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,27 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 62b9808c234b31f08467a971d8e4d4cb600e563b
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
 
 
 ---
 
 
-# <a name="sync-your-device-manually-by-using-the-company-portal-website"></a>Sincronizar o dispositivo manualmente usando o site do Portal da Empresa
+# <a name="use-the-company-portal-website-to-sync-your-device"></a>Usar o site do Portal da Empresa para sincronizar o dispositivo
 
-Se a instalação do aplicativo ou outra tarefa estiver demorando muito, tente sincronizar o dispositivo manualmente. A sincronização manual pode ajudar a acelerar a instalação ou a tarefa.
+Às vezes, instalar um aplicativo ou fazer alguma outra tarefa pode demorar mais do que o normal. Se demorar muito, é possível tentar sincronizar manualmente o dispositivo para acelerar o que você está tentando fazer.
 
-O recurso de sincronização funciona somente para os dispositivos a seguir. Se o dispositivo não estiver listado, a sincronização não tem suporte. Use o link que corresponde ao dispositivo que você está usando. 
+> [!Note]
+> Atualmente, o recurso de sincronização não está disponível para todos os dispositivos. Se o seu dispositivo não estiver listado, tente redefini-lo desativando o WiFi por aproximadamente 30 segundos e, em seguida, reconecte-se à rede.
 
 * [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

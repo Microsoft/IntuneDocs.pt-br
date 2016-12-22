@@ -1,21 +1,21 @@
 ---
-title: "Introdução ao SDK de Aplicativo do Microsoft Intune | Microsoft Intune"
+title: "Introdução ao SDK de Aplicativo do Microsoft Intune | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
 
 
 ---
@@ -85,11 +85,11 @@ Para integrar o SDK do Aplicativo do Intune em seu aplicativo Android nativo, vo
 
 Para compilar aplicativos Cordova com o Plug-in do Cordova do SDK de Aplicativo Intune, você precisará do seguinte:
 
-* **[Guia de plug-in do Cordova do SKD de Aplicativo do Intune](intune-app-sdk-cordova)**: este documento ajudará você a criar aplicativos iOS e Android usando o Cordova para gerenciamento de aplicativos móveis do Intune.
+* **[Guia de plug-in do Cordova do SKD de Aplicativo do Intune](intune-app-sdk-cordova.md)**: este documento ajudará você a criar aplicativos iOS e Android usando o Cordova para gerenciamento de aplicativos móveis do Intune.
 
 Para compilar aplicativos Xamarim com o Componente do Xamarin do SDK de Aplicativo do Intune, você precisará do seguinte:
 
-* **[Guia do Componente do Xamarin do SDK de Aplicativo do Intune](intune-app-sdk-xamarin)**: este documento o ajudará a criar aplicativos iOS e Android usando o Cordova para gerenciamento de aplicativos móveis do Intune.
+* **[Guia do Componente do Xamarin do SDK de Aplicativo do Intune](intune-app-sdk-xamarin.md)**: este documento o ajudará a criar aplicativos iOS e Android usando o Cordova para gerenciamento de aplicativos móveis do Intune.
 
 
 
@@ -118,6 +118,6 @@ Depois de concluir as etapas necessárias para integrar seu aplicativo iOS ou An
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

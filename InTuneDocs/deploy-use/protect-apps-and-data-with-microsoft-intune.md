@@ -14,8 +14,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3e302c50d931bd2545116dc510ddf2f1d7aa4f93
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
 
 
 ---
@@ -29,31 +29,31 @@ A primeira etapa importante para a proteção de dados da empresa é implementar
 
 O [acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) é determinado por dois tipos de políticas que podem ser definidas no Intune:
 - Você usa [políticas de conformidade](introduction-to-device-compliance-policies-in-microsoft-intune.md) para determinar a conformidade de um dispositivo. Elas avaliam as configurações e as condições, como:
-  - PINs e senhas: você pode criar regras para exigir senhas para desbloquear um dispositivo, seus requisitos de complexidade e outras definições de senha.
+  - PINs e senhas: é possível criar regras para exigir senhas para desbloquear um dispositivo, seus requisitos de complexidade e outras definições de senha.
   - Criptografia: você pode restringir o acesso a dispositivos criptografados.
-  - Quando um dispositivo não está desbloqueado ou enraizado: o Intune pode detectar se um dispositivo registrado está desbloqueado. Você pode definir a política para bloquear o acesso a tais dispositivos.
+  - Quando um dispositivo não está desbloqueado ou enraizado: o Intune pode detectar se um dispositivo registrado está desbloqueado. É possível definir a política para bloquear o acesso a tais dispositivos.
 - Configure [políticas de acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) para um serviço específico como o Exchange Online ou no SharePoint Online. Para cada serviço, você pode definir a quais grupos de usuários essas políticas devem ser aplicadas. Por exemplo, você pode garantir que todos no departamento financeiro possam acessar apenas email de dispositivos registrados e compatíveis.
 
 Proteger o acesso aos recursos da empresa é apenas o primeiro passo para proteger os dados da empresa. Você ainda precisa ser capaz de proteger os dados depois que eles tiverem sido acessados no dispositivo. O conteúdo agora pode ser copiado, movido, salvo em um local diferente ou compartilhado. O Intune resolve esse problema fornecendo a capacidade de restringir a movimentação dos dados, criando um conjunto de regras como:
 - Bloquear a ação de copiar e colar ou impedir a transferência de dados fora do contexto de trabalho.
 - Impedir backup para armazenamento em nuvem particular e impedir "Salvar como".
 - Proteger o acesso a aplicativos exigindo PIN/senha ou credenciais corporativas.
-- Fazer todos os links da Web serem abertos no Navegador Gerenciado do Intune.
+- Fazer todos os links da Web serem abertos no Intune Managed Browser.
 
-Esse conjunto de regras é denominado [políticas de MAM (Gerenciamento de Aplicativo Móvel)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md). Você pode aplicar políticas de MAM para aplicativos que são executados em dispositivos que podem ou não ser gerenciados por você.  
+Esse conjunto de regras é denominado [políticas de MAM (Gerenciamento de Aplicativo Móvel)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md). É possível aplicar políticas de MAM para aplicativos executados em dispositivos que podem ou não ser gerenciados por você.  
 
-Você pode proteger os dados da empresa usando políticas de MAM para dispositivos **registrados no Intune**, dispositivos **registrados e gerenciados por uma solução de gerenciamento de dispositivos móveis (MDM) de terceiros** ou um dispositivo **não registrado em nenhuma solução de MDM**, como dispositivos de funcionários.
+É possível proteger os dados da empresa usando políticas de MAM para dispositivos **registrados no Intune**, dispositivos **registrados e gerenciados por uma solução de gerenciamento de dispositivo móvel (MDM) de terceiros** ou um dispositivo **não registrado em nenhuma solução de MDM**, como dispositivos de funcionários.
 
-Para associar um aplicativo a uma política de MAM, o aplicativo deve incorporar o SDK (Kit de Desenvolvimento de Software) do Microsoft Intune ou você pode usar a Ferramenta de encapsulamento de aplicativos.
+Para associar um aplicativo a uma política de MAM, o aplicativo deve incorporar o SDK (Kit de Desenvolvimento de Software) do Microsoft Intune ou você pode usar a Ferramenta de Encapsulamento de Aplicativos.
 
-Os aplicativos como os do Microsoft Office têm o SDK interno do aplicativo do Intune. É possível ver a lista completa de aplicativos com suporte na [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicativos do Microsoft Intune. Escolha aplicativo para ver os cenários e plataformas com suporte e se o aplicativo dá suporte a várias identidades.
+Aplicativos como os do Microsoft Office têm o SDK interno do aplicativo do Intune. É possível ver a lista completa de aplicativos com suporte na [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicativos do Microsoft Intune. Escolha o aplicativo para ver os cenários e plataformas com suporte e se o aplicativo dá suporte a várias identidades.
 
-Você também pode [habilitar seus aplicativos de linha de negócios personalizados](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para uso com políticas de MAM.
+Também é possível [habilitar seus aplicativos de linha de negócios personalizados](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para uso com políticas de MAM.
 
 Além de restringir a movimentação dos dados, se um dispositivo for perdido ou roubado ou se o usuário não trabalhar mais para sua empresa, você poderá [apagar seletivamente os dados corporativos](wipe-managed-company-app-data-with-microsoft-intune.md), deixando apenas os dados pessoais.
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
