@@ -1,11 +1,11 @@
 ---
-title: "Solucionar problemas de integração do Lookout | Microsoft Intune"
+title: "Solucionar problemas de integração do Lookout | Microsoft Docs"
 description: "Este tópico descreve a solução de problemas que costumam ocorrer com a integração do Lookout"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ Você pode ver o seguinte erro quando o usuário administrador global do Azure A
 
 ![captura de tela da tela de logon do Lookout mostrando erro ao entrar](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Para solucionar esse problema, um usuário administrador global precisa fazer logon em https://aad.lookout.com/les?action=consent e aceitar a solicitação para iniciar a instalação. Informações mais detalhadas podem ser encontradas no tópico [Set up your subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md) (Configurar sua assinatura com a Consulta MTP)
+Para solucionar esse problema, um usuário administrador global precisa fazer logon em https://aad.lookout.com/les?action=consent e aceitar a solicitação para iniciar a instalação. Informações mais detalhadas podem ser encontradas no tópico [Set up your subscription with Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) (Configurar sua assinatura com a Consulta MTP)
 
 ## <a name="troubleshoot-device-status-issues"></a>Solucionar problemas de status do dispositivo
 
@@ -90,6 +90,6 @@ Se o novo usuário estiver em um dos grupos de registro especificados no console
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

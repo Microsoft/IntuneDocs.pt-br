@@ -14,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 
 
 ---
@@ -46,11 +46,11 @@ Os usuários podem realizar as seguintes tarefas no site do Portal da Empresa:
 Os usuários podem realizar no **site do Portal da Empresa** a maioria das mesmas tarefas que podem realizar usando o **aplicativo de Portal da Empresa** que você instala em seu dispositivo. As páginas a seguir contêm links para todas as tarefas que os usuários finais podem realizar em seus dispositivos:
 
 - [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
-- [Usando seu dispositivo iOS ou Mac OS X com o Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Usando um dispositivo iOS ou macOS com o Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

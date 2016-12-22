@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo iOS para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, o departamento de TI pode gerenciar recursos corporativos ou de estudante e mantê-los seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?).
 
-Se você estiver tentando registrar um dispositivo Mac OS X, consulte [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrar seu dispositivo Mac OS X no Intune).
+Se você estiver tentando registrar um dispositivo macOS, consulte [Registrar seu dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 **Antes de começar:**
 
@@ -96,6 +96,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

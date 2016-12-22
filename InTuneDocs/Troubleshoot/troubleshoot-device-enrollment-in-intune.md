@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 >
 > Uma conta de usuário que é adicionada ao grupo de Gerenciadores de registro de dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
 
-### <a name="company-portal-temporarily-unavailable"></a>Portal da empresa temporariamente indisponível
+### <a name="company-portal-emporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
 **Problema:** um usuário recebe um erro de **Portal da empresa temporariamente indisponível** no dispositivo.
 
 **Resolução:**
@@ -214,23 +214,40 @@ Se a Resolução nº2 não funcionar, oriente os usuários a seguir estas etapas
 
 ### <a name="android-certificate-issues"></a>Problemas de certificado do Android
 
-**Problema**: o usuário recebe a seguinte mensagem em seu dispositivo: *Você não pode entrar porque o dispositivo não tem um certificado necessário.*
+**Problema**: o usuário recebe a seguinte mensagem em seu dispositivo: *Não é possível se conectar porque o dispositivo não tem um certificado necessário.*
 
-**Resolução**:
+**Resolução 1**:
 
-- O usuário pode ser capaz de recuperar o certificado ausente seguindo [estas instruções](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- Se o usuário não conseguir recuperar o certificado, você poderá perder certificados intermediários no servidor ADFS. Os certificados intermediários são exigidos pelo Android para confiar no servidor.
+Solicite aos usuários que sigam as instruções em [Falta ao dispositivo um certificado necessário](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro persistir após os usuários seguirem essas instruções, tente a Resolução 2.
 
-Você pode importar os certificados para o repositório intermediário no servidor ADFS ou proxies da seguinte maneira:
+**Resolução 2**:
 
-1.  No servidor ADFS, inicie o **Console de Gerenciamento Microsoft** e adicione o snap-in de certificados para a **conta de computador**.
-5.  Localize o certificado que seu serviço do ADFS está usando e exiba seu certificado pai.
-6.  Copie o certificado pai e cole-o em **Computador\Autoridades de Certificação Intermediárias\Certificados**.
-7.  Copie seus certificados de ADFS, descriptografia do ADFS e assinatura do ADFS e cole-os no Repositório Pessoal do serviço do ADFS.
-8.  Reinicie os servidores ADFS.
+Se os usuários ainda virem o erro de ausência de certificado após inserir suas credenciais corporativas e serem redirecionados à experiência de logon federado, um certificado intermediário pode estar faltando no seu servidor de Serviços de Federação do Active Directory (AD FS).
 
+O erro de certificado ocorre porque dispositivos Android exigem que certificados intermediários sejam incluídos em uma [saudação do servidor SSL](https://technet.microsoft.com/library/cc783349.aspx), mas, no momento, um servidor padrão do AD FS ou a instalação do servidor proxy do AD FS envia apenas o certificado SSL do serviço de AD FS na saudação de resposta do servidor SSL à uma saudação do cliente SSL.
+
+Para corrigir o problema, importe os certificados para os Certificados Pessoais do Computador no servidor do AD FS ou proxies da seguinte maneira:
+
+1.  Nos servidores AD FS e proxy, inicie o console de Gerenciamento de Certificados do computador local clicando com o botão direito do mouse em **Iniciar**, escolhendo **Executar** e digitando **certlm.msc**.
+2.  Expanda **Pessoal** e selecione **Certificados**.
+3.  Localize o certificado da comunicação de serviço do AD FS (certificado assinado publicamente) e clique duas vezes para exibir suas propriedades.
+4.  Selecione a guia **Caminho de Certificação** para ver o(s) certificado(s) pai do certificado.
+5.  Em cada certificado pai, selecione **Exibir Certificado**.
+6.  Selecione a guia **Detalhes** e escolha **Copiar para arquivo...**.
+7.  Siga as solicitações do assistente para exportar ou salvar a chave pública do certificado para o local de arquivo desejado.
+8.  Importe os certificados pai que foram exportados na Etapa 3 para Computador Local\Pessoal\Certificados clicando com o botão direito do mouse em **Certificados**, selecionado **Todas Tarefas** > **Importar** e seguindo as solicitações do assistente para importar o(s) certificado(s).
+9.  Reinicie os servidores AD FS.
+10. Repita as etapas acima em todos os servidores AD FS e proxy.
 Agora, o usuário deve ser capaz de entrar no Portal da Empresa no dispositivo Android.
 
+**Para validar a instalação correta do certificado**:
+
+As etapas a seguir descrevem apenas um dos vários métodos e ferramentas que você pode usar para validar a instalação correta do certificado.
+
+1. Vá para a [ferramenta gratuita do Digicert](ttps://www.digicert.com/help/).
+2. Insira o nome de domínio totalmente qualificado do servidor AD FS (por exemplo, sts.contoso.com) e selecione **VERIFICAR SERVIDOR**.
+
+Se o certificado do servidor estiver instalado corretamente, você verá todas as marcas de seleção nos resultados. Se o problema acima existir, você ver um “X” vermelho nas seções “Correspondências de Nome de Certificado” e “Certificado SSL instalado corretamente” do relatório.
 
 
 ## <a name="ios-issues"></a>Problemas de iOS
@@ -356,6 +373,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

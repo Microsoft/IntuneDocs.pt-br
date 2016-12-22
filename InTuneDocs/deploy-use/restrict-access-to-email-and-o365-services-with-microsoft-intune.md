@@ -1,6 +1,6 @@
 ---
 title: "Restringir o acesso a email e serviços do Office 365 | Microsoft Intune"
-description: "Este tópico descreve como você pode usar acesso condicional para permitir que apenas dispositivos compatíveis acessem dados e o email da empresa no SharePoint Online e outros serviços."
+description: "Este tópico descreve como usar o acesso condicional para permitir que apenas dispositivos compatíveis acessem dados e o email da empresa no SharePoint Online e outros serviços."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,16 +14,16 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3a58e075813fac6a37ec8f82a39e44a856ef1cce
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 5665ca431eb186d4378953b7047228e07ae9dc60
 
 
 ---
 
 # <a name="restrict-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Restringir o acesso a email, Office 365 e outros serviços com o Microsoft Intune
-Você pode restringir o acesso a seus emails corporativos, Office 365 e outros serviços usando o acesso condicional do Intune. A funcionalidade de acesso condicional do Intune permite que você certifique-se de que o acesso ao seu email da empresa e serviços Office 365 seja restrito aos dispositivos que são compatíveis com as regras que você definir.
+É possível restringir o acesso a seus emails corporativos, ao Office 365 e a outros serviços usando o acesso condicional do Intune. A funcionalidade de acesso condicional do Intune permite que você se certifique de que o acesso ao email da empresa e a serviços Office 365 seja restrito aos dispositivos compatíveis com as regras que você definir.
 ## <a name="how-does-conditional-access-work"></a>Como funciona o acesso condicional?
-Você pode usar as configurações de política de conformidade para avaliar a conformidade de um dispositivo. Uma política de acesso condicional usa a avaliação para restringir ou permitir o acesso a um serviço específico. Quando você usa uma política de acesso condicional em combinação com uma política de conformidade, apenas os dispositivos compatíveis poderão acessar o serviço. A política de conformidade e a política de acesso condicional são implantadas para o usuário. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
+É possível usar as configurações de política de conformidade para avaliar a conformidade de um dispositivo. Uma política de acesso condicional usa a avaliação para restringir ou permitir o acesso a um serviço específico. Quando você usa uma política de acesso condicional em combinação com uma política de conformidade, apenas os dispositivos compatíveis poderão acessar o serviço. A política de conformidade e a política de acesso condicional são implantadas para o usuário. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
 
 Tenha em mente que o usuário que está usando o dispositivo deve ter uma política de conformidade implantada para que o dispositivo seja avaliado quanto à conformidade.
 Se nenhuma política de conformidade for implantada para o usuário, o dispositivo será tratado como compatível e nenhuma restrição de acesso será aplicada.
@@ -32,7 +32,7 @@ Quando dispositivos não atendem às condições definidas na política, o usuá
 
 Um fluxo típico do acesso condicional:
 
-![O diagrama que mostra os pontos de decisão usados para determinar se um dispositivo tem acesso permitido ou bloqueado acesso a um serviço](../media/ConditionalAccess4.png)
+![Diagrama que mostra os pontos de decisão usados para determinar se um dispositivo tem acesso permitido ou bloqueado a um serviço](../media/ConditionalAccess4.png)
 
 ## <a name="how-to-configure-conditional-access"></a>Como configurar o acesso condicional
 Use o acesso condicional para gerenciar o acesso ao Microsoft **Exchange Local**, **Exchange Online**, **Exchange Online Dedicado**, **SharePoint Online** e **Skype for Business Online**.
@@ -66,6 +66,6 @@ Ao contrário de outras políticas do Intune, você não implanta políticas de 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
