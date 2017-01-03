@@ -1,11 +1,11 @@
 ---
-title: "O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa? | Microsoft Intune"
+title: "O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa? | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f531adc042677d12c64e2efb4f8e3401e4b5bd4
-ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a696858380fe15efd4e40db9f2b4c6b5157051bc
 
 
 ---
 
 
-# O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa?
+# <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa?
 
 Quando você usa o Portal da Empresa para redefinir seu dispositivo Android, todos os aplicativos, configurações e dados pessoais em seu dispositivo são excluídos. Isso redefine o dispositivo para as configurações padrão de fábrica.
 
@@ -32,10 +32,10 @@ Se tiver um dispositivo Samsung Knox, você poderá realizar um "apagamento sele
 - email, VPN e Wi-Fi.
 - a capacidade de seu administrador de TI de impor certas configurações.
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
