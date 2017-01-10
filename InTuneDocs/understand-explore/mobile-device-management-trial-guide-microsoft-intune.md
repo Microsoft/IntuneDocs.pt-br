@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Avaliar o gerenciamento de dispositivos móveis no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este guia de avaliação mostrará como funciona o gerenciamento de dispositivos móveis no Intune. Você irá:
 - Registrar um dispositivo a ser gerenciado pelo Intune.
 - Criar grupos para organizar usuários e dispositivos.
