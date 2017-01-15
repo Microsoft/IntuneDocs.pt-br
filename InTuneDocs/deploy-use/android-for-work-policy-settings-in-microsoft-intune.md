@@ -1,12 +1,12 @@
 ---
 
-title: "Configurações de política do Android for Work | Microsoft Intune"
+title: "Configurações da política do Android para Trabalho | Microsoft Docs"
 description: "Crie políticas que controlam as configurações e os recursos nos dispositivos Android for Work que você gerencia com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Configurações de política do Android for Work no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -66,9 +68,7 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 Use a **Política de configuração personalizada do Android for Work** do Microsoft Intune para implantar configurações OMA-URI, que podem ser usadas para controlar funcionalidades em dispositivos Android for Work. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
 Essa funcionalidade destina-se a permitir que você implante configurações do Android que não são configuráveis com as políticas do Intune.
-
-> [!NOTE]
-> Atualmente, as políticas personalizadas do Android dão suporte apenas à definição de configurações de Wi-Fi para dispositivos Android que incluem uma chave pré-compartilhada.
+No momento, o Intune dá suporte a um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para descobrir quais políticas podem ser configuradas.
 
 ### <a name="general-settings"></a>Configurações gerais
 
@@ -97,6 +97,6 @@ Essa funcionalidade destina-se a permitir que você implante configurações do 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

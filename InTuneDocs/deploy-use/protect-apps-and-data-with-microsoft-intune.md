@@ -1,11 +1,11 @@
 ---
-title: Proteger aplicativos e dados | Microsoft Intune
+title: Proteger aplicativos e dados | Microsoft Docs
 description: "Este tópico descreve os vários recursos e funcionalidades do Intune que estão disponíveis para ajudar a proteger os dados e aplicativos da sua empresa."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteger aplicativos e dados com o Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune protege os dados da empresa por meio de várias camadas de tecnologia. Na camada de identidade, o acesso condicional protege o acesso aos serviços, permitindo o acesso somente de dispositivos gerenciados e compatíveis. Na camada de aplicativo do cliente, o MAM (Gerenciamento de aplicativos Móveis) protege contra a perda de dados impedindo que os dados sejam movidos para aplicativos ou locais de armazenamento não protegidos e apagando os dados quando um dispositivo é perdido ou roubado. Recomendamos usar essas duas camadas de proteção juntas para ajudar a proteger os dados, mantendo sua força de trabalho móvel produtiva.
 
@@ -54,6 +55,6 @@ Além de restringir a movimentação dos dados, se um dispositivo for perdido ou
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

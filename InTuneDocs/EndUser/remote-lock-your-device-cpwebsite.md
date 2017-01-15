@@ -1,9 +1,9 @@
 ---
-title: Bloquear remotamente um dispositivo do site do Portal da Empresa | Microsoft Intune
+title: Bloquear remotamente um dispositivo pelo site do Portal da Empresa | Microsoft Docs
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 04c7ae7df65a0873e794420c1880aa901aa230b6
 
 
 ---
 
 
-# Bloquear remotamente um dispositivo do site do Portal da Empresa
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Bloquear remotamente um dispositivo do site do Portal da Empresa
 
 Se seu dispositivo foi perdido ou roubado, você poderá bloqueá-lo usando a opção de Bloqueio Remoto no [site do Portal da Empresa](http://portal.manage.microsoft.com). O Bloqueio Remoto funciona para os seguintes tipos de dispositivos:
 
@@ -59,11 +59,11 @@ Para usar o Bloqueio Remoto para bloquear seu dispositivo:
 
     Se uma nova tentativa não funcionar, entre em contato com seu administrador de TI para obter ajuda. Se você encontrar seu dispositivo e desejar desbloqueá-lo depois de usar o Bloqueio Remoto, basta inserir sua senha.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

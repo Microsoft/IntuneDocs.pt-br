@@ -1,12 +1,12 @@
 ---
-title: Escolher como gerenciar dispositivos | Microsoft Intune
+title: Escolher como gerenciar dispositivos | Microsoft Docs
 description: Saiba mais sobre as diferentes maneiras de registrar e gerenciar dispositivos.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 
 
 ---
 
 # <a name="choose-how-to-manage-devices"></a>Escolha como gerenciar dispositivos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Para tirar proveito dos muitos recursos que o Intune oferece, como a implantação de aplicativo e o controle de configurações de dispositivo, os dispositivos devem ser *gerenciados*. A maneira como você gerencia os dispositivos depende dos recursos do Intune que deseja usar. Este tópico ajuda a escolher um método que atenda às suas necessidades.
 
@@ -44,7 +46,7 @@ Inscrever os computadores Windows para obter o máximo de funcionalidade. No ent
 - Assistência remota aos usuários usando o software TeamViewer
 
 Para obter uma lista detalhada dos recursos de gerenciamento que você obterá com cada método, veja [Recursos de gerenciamento de dispositivo móvel](mobile-device-management-capabilities-in-microsoft-intune.md) e [Recursos do cliente de software PC Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
-Para saber mais sobre os dispositivos e computadores aos quais o Intune dá suporte, veja [Suporte para dispositivos móveis e computadores](/intune/get-started/supported-mobile-devices-and-computers).
+Para saber mais sobre os dispositivos e computadores aos quais o Intune dá suporte, veja [Suporte para dispositivos móveis e computadores](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -54,6 +56,6 @@ Para saber mais sobre os dispositivos e computadores aos quais o Intune dá supo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

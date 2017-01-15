@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de acesso ao recurso da empresa | Microsoft Intune
+title: Solucionar problemas de acesso a recursos da empresa | Microsoft Docs
 description: "Códigos de erro e de status neste tópico para ajudá-lo a solucionar problemas de acesso do recurso."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 76056f04440b53aa76f833b5fd4f5cf3cbeb88b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acesso ao recurso da empresa com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use os códigos de erro e de status neste tópico para ajudá-lo a solucionar problemas quando uma ação do Microsoft Intune retornar um código de erro.
 
 Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.

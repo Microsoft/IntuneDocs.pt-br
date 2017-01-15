@@ -1,5 +1,5 @@
 ---
-title: Usando o dispositivo Windows com o Intune | Microsoft Intune
+title: Usando o dispositivo Windows com o Intune | Microsoft Docs
 description: "Lista de links para tarefas que os usuários podem fazer em seu dispositivo Windows quando o dispositivo é registrado no Intune"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -52,15 +54,15 @@ As informações contidas nesta seção ajudam os usuários com as ações que e
 
 As informações contidas nesta seção ajudam os usuários a corrigirem problemas que podem ocorrer quando seu dispositivo Windows é registrado no Intune.
 
-- [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [O dispositivo não tem o BitLocker habilitado](device-doesnt-have-bitlocker-enabled-windows.md)
-- [O dispositivo não tem software antimalware habilitado](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [O dispositivo não tem Inicialização Segura habilitada](device-doesnt-have-secure-boot-enabled-windows.md)
-- [O dispositivo não tem Integridade de Código habilitada](device-doesnt-have-code-integrity-enabled-windows.md)
+- [O dispositivo não tem a versão de sistema operacional mínima exigida](you-need-to-update-your-windows-device.md)
+- [O dispositivo não está em conformidade com a versão do sistema operacional máxima](your-windows-version-isnt-yet-supported.md)
+- [O dispositivo não tem o BitLocker habilitado](you-need-to-enable-windows-encryption.md)
+- [O dispositivo não tem software antimalware habilitado](your-device-needs-antimalware-software.md)
+- [O dispositivo não tem Inicialização Segura habilitada](you-need-to-enable-secure-boot-windows.md)
+- [O dispositivo não tem Integridade de Código habilitada](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

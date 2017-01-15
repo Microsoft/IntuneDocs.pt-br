@@ -1,5 +1,5 @@
 ---
-title: Acesso condicional baseado em aplicativo ao O365 | Microsoft Intune
+title: Acesso condicional ao O365 baseado em aplicativo | Microsoft Docs
 description: "Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Permitir que apenas aplicativos móveis que dão suporte às políticas de MAM do Intune acessem os serviços do Office 365
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As [Políticas de gerenciamento de aplicativos móveis (MAM) do Intune](protect-apps-and-data-with-microsoft-intune.md) ajudam a proteger os dados da empresa em dispositivos registrados para gerenciamento no Intune. É possível usar as políticas MAM em **dispositivos do funcionário que não estão registrados para gerenciamento no Intune**.  Nesse caso, mesmo que você não gerencie o dispositivo, ainda é necessário se certificar de que os dados e recursos da empresa estão protegidos. Ao usar o acesso condicional para MAM (MAM CA), você pode criar uma política que permita aos aplicativos móveis que dão suporte às políticas de MAM do Intune acessar serviços do O365, como o Exchange Online.
 
 Por exemplo, ao permitir que apenas o **aplicativo do Microsoft Outlook** acesse o Exchange Online você pode **bloquear os aplicativos de email interno no iOS e no Android**, que não têm a proteção de dados das políticas de MAM do Intune, para receber email do **Exchange Online**.

@@ -1,11 +1,11 @@
 ---
-title: Adicionar aplicativos | Microsoft Intune
+title: Adicionar aplicativos | Microsoft Docs
 description: "Antes de iniciar a implantação de aplicativos com o Intune, reserve um tempo para se familiarizar com os conceitos apresentados neste tópico."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Adicionar aplicativos com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de iniciar a implantação de aplicativos com o Microsoft Intune, reserve um tempo para se familiarizar com os conceitos apresentados neste tópico. Esses conceitos ajudarão você a entender quais aplicativos você pode implantar em qual plataforma. Eles também o ajudarão a entender os pré-requisitos que devem estar em vigor antes da implantação dos aplicativos.
 
 ## <a name="app-types-that-you-can-deploy"></a>Tipos de aplicativo que você pode implantar
@@ -93,6 +96,6 @@ Você precisará adicionar aplicativos no console do Intune antes de implantá-l
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

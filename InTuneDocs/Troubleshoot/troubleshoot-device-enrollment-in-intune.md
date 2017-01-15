@@ -1,11 +1,11 @@
 ---
-title: "Solução de problemas de registro de dispositivo| Microsoft Intune"
+title: Solucionar problemas de registro do dispositivo | Microsoft Docs
 description: "Sugestões para solução de problemas de registro de dispositivo."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
+ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
 
 
 ---
@@ -29,7 +29,7 @@ Este tópico fornece sugestões para solução de problemas de registro do dispo
 
 Antes de iniciar a solução de problemas, verifique se você configurou o Intune corretamente para habilitar o registro. Você pode ler sobre os requisitos de configuração em:
 
--   [Prepare-se registrar dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [Prepare-se registrar dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -   [Configurar gerenciamento de dispositivos iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Configurar o gerenciamento do Windows 10 Mobile e do Windows Phone com o Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Configurar o gerenciamento de dispositivo Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ Esses problemas podem ocorrer em todas as plataformas de dispositivo.
 
 2.  Verifique no console de administração do Intune, em Admin\Mobile Device Management\Enrollment Rules, se o limite de registro de dispositivos está definido como 15.
 
-Os usuários de dispositivos móveis podem excluir dispositivos na seguinte URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Os administradores podem excluir dispositivos no portal do Azure Active Directory.
 
@@ -86,7 +86,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 >
 > Uma conta de usuário que é adicionada ao grupo de Gerenciadores de registro de dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
 
-### <a name="company-portal-emporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
+### <a name="company-portal-temporarily-unavailable"></a>Portal da empresa temporariamente indisponível
 **Problema:** um usuário recebe um erro de **Portal da empresa temporariamente indisponível** no dispositivo.
 
 **Resolução:**
@@ -319,7 +319,7 @@ Se o certificado do servidor estiver instalado corretamente, você verá todas a
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de registro do iOS
 Uma lista de erros de registro do iOS é fornecida em nossa documentação de usuário do dispositivo em [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) (Erros ao tentar registrar seu dispositivo no Intune).
 
-## <a name="pc-issues"></a>Problemas do computador
+## <a name="pc--issues"></a>Problemas do computador
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está registrado - erro hr 0x8007064c
 **Problema:** o registro falha com o erro **O computador já está registrado**. O log de registro mostra o erro **hr 0x8007064c**.
@@ -373,6 +373,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

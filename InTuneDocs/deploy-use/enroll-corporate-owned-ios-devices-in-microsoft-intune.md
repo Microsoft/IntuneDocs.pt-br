@@ -1,5 +1,5 @@
 ---
-title: Registrar dispositivos iOS corporativos | Microsoft Intune
+title: Registrar dispositivos iOS de propriedade corporativa | Microsoft Docs
 description: Registro de dispositivos iOS corporativos usando o DEP (Programa de Registro de Dispositivo) da Apple ou o Apple Configurator
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Registrar dispositivos iOS corporativos no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune dá suporte ao registro de dispositivos iOS corporativos usando o DEP (Programa de Registro do Dispositivo) da Apple ou a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) executada em um computador Mac.
 
 **Pré-requisito:** um[certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md) é obrigatório.
@@ -81,6 +84,6 @@ Se a afinidade de usuário for necessária, certifique-se de que o perfil de reg
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

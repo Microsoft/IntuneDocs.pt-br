@@ -1,28 +1,30 @@
 ---
-title: Usar aplicativos gerenciados no seu dispositivo Android | Microsoft Intune
+title: Usar aplicativos gerenciados no dispositivo Android | Microsoft Docs
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ca37b4bf393d03e61bed93fa8e7d83efe3922412
 
 
 ---
 
 
-# Usar aplicativos gerenciados no seu dispositivo Android
+# <a name="use-managed-apps-on-your-android-device"></a>Usar aplicativos gerenciados no seu dispositivo Android
 
 Aplicativos gerenciados são aplicativos que o administrador de TI pode configurar para ajudar a proteger os dados da empresa que você pode acessar nesse aplicativo. Ao acessar dados da empresa em um aplicativo gerenciado no seu dispositivo Android, você pode perceber que o aplicativo funciona um pouco diferente do que o esperado. Por exemplo, não é possível copiar e colar os dados da empresa protegidos, ou você pode não conseguir salvar esses dados em determinados locais.
 
@@ -32,14 +34,14 @@ Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensage
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
-## Como obtenho os aplicativos gerenciados?
+## <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?
 Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
 -   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre como se registrar, confira [Enroll your device in Intune](enroll-your-device-in-Intune-android.md) (Registrar seu dispositivo no Intune).
 
 -   Instale um aplicativo da Play Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
 
-## O que meu administrador de TI pode gerenciar em um aplicativo?
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>O que meu administrador de TI pode gerenciar em um aplicativo?
 Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
 
 -   Acesso a sites específicos
@@ -72,10 +74,10 @@ Estes são aplicativos comuns que o departamento de TI pode gerenciar:
 
 -   Microsoft Word, Excel e PowerPoint
 
-Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

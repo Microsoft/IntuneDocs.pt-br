@@ -1,5 +1,5 @@
 ---
-title: Usando o dispositivo Android com o Intune | Microsoft Intune
+title: Usando seu dispositivo Android com o Intune | Microsoft Docs
 description: "Lista de links para tarefas que os usuários finais podem realizar em seu dispositivo móvel Android quando o dispositivo é registrado no Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 ---
@@ -62,8 +62,8 @@ As informações contidas nesta seção ajudam os usuários a corrigirem problem
 - [Enviar logs de dados de diagnóstico para o administrador de TI usando email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [Enviar logs de dados de diagnóstico para o administrador de TI usando cabo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)
-- [O dispositivo não tem a versão de sistema operacional mínima exigida](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [O dispositivo não está em conformidade com a versão do sistema operacional máxima](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [O dispositivo não tem a versão de sistema operacional mínima exigida](you-need-to-update-your-android-device.md)
+- [O dispositivo não está em conformidade com a versão do sistema operacional máxima](your-android-version-isnt-yet-supported.md)
 - [O dispositivo tem raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-android.md)
 - [Você será solicitado a desligar Fontes desconhecidas](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ As informações contidas nesta seção ajudam os usuários a corrigirem problem
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

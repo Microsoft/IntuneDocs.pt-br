@@ -1,5 +1,5 @@
 ---
-title: Aplicativos sideload para Windows e Windows Phone | Microsoft Intune
+title: Executar sideload de aplicativos para o Windows e Windows Phone | Microsoft Docs
 description: "Saiba como assinar linha de aplicativos de negócios para que você possa usar o Intune para implantá-los."
 keywords: 
 author: robstackmsft
@@ -11,12 +11,14 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicativos da linha de negócios para que possam ser implantados em dispositivos Windows com o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Como administrador do Intune, é possível implantar aplicativos da linha de negócios (LOB) em dispositivos Windows e Windows 10 Mobile, incluindo o aplicativo de Portal da Empresa. Para implantar aplicativos .appx ou. xap em dispositivos Windows 10 Mobile e Windows 10 ou implantar qualquer aplicativo LOB em dispositivos Windows Phone 8.1 ou Windows 8.1, você deve obter um **Certificado de Assinatura de Código Móvel Empresarial da Symantec**. Somente o certificado da Symantec é confiável para esses aplicativos para os respectivos dispositivos Windows. Você pode usar sua própria autoridade de certificação para aplicativos do Windows 10 e "universal". Esse certificado é necessário para:
 

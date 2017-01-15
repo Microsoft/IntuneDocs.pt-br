@@ -1,5 +1,5 @@
 ---
-title: Registrar seu dispositivo Windows 10 no Intune| Microsoft Intune
+title: Registrar seu dispositivo Windows 10 no Intune | Microsoft Docs
 description: Descreve como registrar um dispositivo Windows 10 Mobile ou Desktop no Intune
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
 
 
 ---
@@ -49,10 +49,10 @@ Quer saber mais? Saiba o que acontece quando você [registra seu dispositivo no 
 3.  Em __Informações do dispositivo__, toque em __Mais informações__. Você verá uma lista de informações sobre o dispositivo. Dentro dessa lista, localize a __Versão__.
 4.  Se sua versão for a __1607__, prossiga com [estas etapas](enroll-your-w10-device-access-work-or-school.md). Se sua versão for a __1511__, prossiga com [estas etapas](enroll-your-w10-device-your-account.md).
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

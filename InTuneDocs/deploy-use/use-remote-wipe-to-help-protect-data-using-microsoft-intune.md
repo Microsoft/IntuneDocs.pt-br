@@ -1,5 +1,5 @@
 ---
-title: Usar apagamento remoto para ajudar a proteger dados | Microsoft Intune
+title: Usar o apagamento remoto para ajudar a proteger dados | Microsoft Docs
 description: O Intune fornece recursos de apagamento completo e apagamento seletivo para remover dados corporativos confidenciais e remover o acesso a muitos recursos corporativos.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ajude a proteger os dados com apagamento completo ou seletivo usando o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Você pode apagar os aplicativos e dados de dispositivos gerenciados pelo Intune que não são mais necessários, que estão sendo realocados ou estão ausentes. Para isso, o Intune fornece funcionalidades de apagamento completo e apagamento seletivo. Os usuários também podem emitir um comando de apagamento remoto de dados no dispositivo do aplicativo de Portal da Empresa do Intune em dispositivos privados registrados no Intune.
 
   > [!NOTE]

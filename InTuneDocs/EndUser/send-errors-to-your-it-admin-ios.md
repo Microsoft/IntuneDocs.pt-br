@@ -1,26 +1,27 @@
 ---
-title: Enviar erros para o administrador de TI | Microsoft Intune
+title: Enviar erros para o administrador de TI | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 577e26066095b42542cfcd7b917877ddb0a88c55
+ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
+ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
 
 
 ---
-
 
 # <a name="send-errors-to-your-it-admin"></a>Enviar erros para o administrador de TI
 
@@ -30,10 +31,12 @@ Se receber erros enquanto estiver usando o dispositivo iOS ao usar o aplicativo 
 
 -   Na tela **Sobre** do aplicativo do Portal da Empresa, toque em **Enviar Relatório de Diagnóstico**.
 
--   No aplicativo do Portal da Empresa, agite o dispositivo e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não aparecer quando você agitar o dispositivo, abra **Configurações** &gt; **Portal da Empresa** e garanta que a opção **Gesto de Agitação** esteja ativada.
+-   No aplicativo do Portal da Empresa, agite o dispositivo e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não for exibido quando você agitar o dispositivo, abra **Configurações** > **Portal da Empresa** e verifique se a opção **Gesto de Agitar** está ativada.
+
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

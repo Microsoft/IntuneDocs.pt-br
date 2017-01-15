@@ -1,5 +1,5 @@
 ---
-title: "Bloquear aplicativos sem autenticação moderna | Microsoft Intune"
+title: "Bloquear aplicativos sem autenticação moderna | Microsoft Docs"
 description: 
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 5c95cd8510faa437a33ac25d6602a2bcc57c05d5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 0e1fa2341c0f74492a0ef80d0054922052bbe561
 
 
 ---
 
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Bloquear aplicativos que não usam autenticação moderna (ADAL)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O acesso condicional para aplicativos com políticas de MAM (AC de MAM) se baseia nos aplicativos que usam [autenticação moderna](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), que é uma implementação do OAuth2. Os aplicativos do Office mais recentes, tanto os móveis como os de área de trabalho, usam autenticação moderna; no entanto, há aplicativos de terceiros e aplicativos do Office mais antigos que usam outros métodos de autenticação, como autenticação básica e autenticação baseada em formulários.
 
 Para bloquear o acesso a esses aplicativos, recomendamos o seguinte:

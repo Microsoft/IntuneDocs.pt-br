@@ -1,5 +1,5 @@
 ---
-title: "Conexões Wi-Fi | Microsoft Intune"
+title: "Conexões Wi-Fi | Microsoft Docs"
 description: "Use perfis de Wi-Fi para ajudar os usuários a se conectar a redes Wi-Fi."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configure dispositivos para se conectar às redes Wi-Fi corporativas
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use os perfis de Wi-Fi do Microsoft Intune para implantar configurações de rede sem fio para usuários e dispositivos na organização. Quando você implantar um perfil de Wi-Fi, os usuários terão acesso ao Wi-Fi de sua empresa sem precisar configurá-lo por conta própria.
 
@@ -181,6 +183,6 @@ Saiba como criar um perfil de Wi-Fi com uma chave pré-compartilhada no [Perfil 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

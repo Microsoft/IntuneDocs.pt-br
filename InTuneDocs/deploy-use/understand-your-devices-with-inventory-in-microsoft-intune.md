@@ -1,5 +1,5 @@
 ---
-title: "Compreender seus dispositivos com um inventário | Microsoft Intune"
+title: "Compreender seus dispositivos com um inventário | Microsoft Docs"
 description: "Use o Intune para exibir informações sobre o hardware dos dispositivos que você gerencia."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
-ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3ae5809f8506e2255d9443d3587f2564bc863066
 
 
 ---
 
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Compreenda seus dispositivos com um inventário no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune permite que você exiba o inventário de dispositivos e computadores Windows registrados que executam o software cliente do Intune.
 O Intune normalmente coleta o inventário de dispositivos gerenciados a cada sete dias. Por isso, pode haver um atraso antes que os relatórios mostrem os resultados das alterações recentes nos dispositivos; por exemplo, uma alteração no nome do dispositivo ou o espaço de armazenamento livre.
 
@@ -116,6 +119,6 @@ Para exibir o inventário coletado por computadores Windows, execute os [Relató
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

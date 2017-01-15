@@ -1,5 +1,5 @@
 ---
-title: Categorizar os dispositivos com o mapeamento do grupo de dispositivos | Microsoft Intune
+title: Categorizar dispositivos com o mapeamento do grupo de dispositivos | Microsoft Docs
 description: "Use o mapeamento do grupo de dispositivos do Microsoft Intune para agrupar dispositivos em categorias que você define para facilitar o gerenciamento desses dispositivos."
 keywords: 
 author: robstackmsft
@@ -14,12 +14,15 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
 
 ---
 
-# Categorize os dispositivos com o mapeamento do grupo de dispositivos no Microsoft Intune
+# <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Categorize os dispositivos com o mapeamento do grupo de dispositivos no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use o **mapeamento do grupo de dispositivos** do Microsoft Intune para adicionar dispositivos aos grupos automaticamente, com base nas categorias que você definir para facilitar o gerenciamento desses dispositivos. 
 
 O mapeamento do grupo de dispositivos usa o seguinte fluxo de trabalho:
@@ -36,18 +39,18 @@ Você pode criar as categorias de dispositivo que desejar, por exemplo:
 * Contabilização
 * Manager
 
-## Informações importantes sobre uma alteração no gerenciamento de grupos para o Intune
+## <a name="important-information-about-a-change-in-group-management-for-intune"></a>Informações importantes sobre uma alteração no gerenciamento de grupos para o Intune
 
 Com base nos seus comentários, estamos unificando a experiência de agrupamento e direcionamento no Enterprise Mobility + Security. Por esse motivo, em breve converteremos os grupos do Intune em grupos de segurança baseados no Azure Active Directory. Após essa alteração, você não criará grupos usando o Intune novamente. Em vez disso, você poderá criá-los no portal do Azure. Essa alteração ocorrerá de forma gradual e você pode ler os detalhes completos e a linha do tempo [neste tópico](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-### Qual procedimento deste tópico você deve usar para configurar o mapeamento de grupo de dispositivos?
+### <a name="which-procedure-in-this-topic-should-you-use-to-configure-device-group-mapping"></a>Qual procedimento deste tópico você deve usar para configurar o mapeamento de grupo de dispositivos?
 
 Em virtude da implementação faseada dos grupos de segurança do Azure Active Directory, você deve abrir o espaço de trabalho **Grupos** no [console de administração do Intune](https://manage.microsoft.com) para identificar o procedimento a se usar:
 
 -  Se um link para o portal do Azure for exibido, você não está mais usando os grupos do Intune. Siga o procedimento [Como configurar o mapeamento do grupo de dispositivos para grupos do Azure Active Directory](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-azure-active-directory-groups) abaixo.
 -  Se um link para o portal do Azure não for exibido, você ainda está usando os grupos do Intune. Siga o procedimento [Como configurar o mapeamento do grupo de dispositivos para grupos do Intune](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-intune-groups) abaixo.
 
-## Como configurar o mapeamento do grupo de dispositivos para grupos do Intune
+## <a name="how-to-configure-device-group-mapping-for-intune-groups"></a>Como configurar o mapeamento do grupo de dispositivos para grupos do Intune
 1. Para cada categoria de dispositivos que você deseja usar, crie um grupo de dispositivos do Intune ou identifique um grupo existente. Para obter informações sobre como criar grupos, consulte [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) (Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune).
 2. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administrador**.
 3. No espaço de trabalho **Administração**, expanda o **Gerenciamento de Dispositivo Móvel** e escolha **Mapeamento do Grupo de Dispositivos**.
@@ -58,9 +61,9 @@ Em virtude da implementação faseada dos grupos de segurança do Azure Active D
 
 
 
-## Como configurar o mapeamento do grupo de dispositivos para grupos do Azure Active Directory
+## <a name="how-to-configure-device-group-mapping-for-azure-active-directory-groups"></a>Como configurar o mapeamento do grupo de dispositivos para grupos do Azure Active Directory
 
-### Etapa 1 – Criar categorias de dispositivo no console de administração do Intune
+### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>Etapa 1 – Criar categorias de dispositivo no console de administração do Intune
 1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administrador**.
 3. No espaço de trabalho **Administração**, expanda o **Gerenciamento de Dispositivo Móvel** e escolha **Categorias de Dispositivo**.
 4. Na página **Categorias de Dispositivo**, será exibida uma lista na qual você poderá configurar categorias de dispositivo: 
@@ -69,7 +72,7 @@ Em virtude da implementação faseada dos grupos de segurança do Azure Active D
 
 Você usará o nome da categoria do dispositivo quando criar grupos de segurança do Azure Active Directory na etapa 2.
 
-### Etapa 2 – Criar grupos de segurança do Azure Active Directory
+### <a name="step-2---create-azure-active-directory-security-groups"></a>Etapa 2 – Criar grupos de segurança do Azure Active Directory
 
 Nesta etapa, você criará grupos dinâmicos no portal do Azure com base na categoria do dispositivo e no nome da categoria do dispositivo.
 
@@ -78,15 +81,15 @@ Use as informações desse tópico para criar um grupo de dispositivos com uma r
 Por exemplo, (**dispositivo.Categoriadodispositivo -eq** ”<*nome da categoria do dispositivo obtido no console de administração do Intune*>”)
 
 
-## Depois de configurar os grupos de dispositivos
+## <a name="after-you-configure-device-groups"></a>Depois de configurar os grupos de dispositivos
 
 Quando os usuários registrarem seus dispositivos, eles verão uma lista de categorias que você configurou. Depois que eles escolherem uma categoria e concluírem o registro, o dispositivo será adicionado ao grupo de dispositivos do Intune ou ao grupo de segurança do Active Directory que corresponde à categoria escolhida.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Usar grupos para gerenciar usuários e dispositivos com o Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
