@@ -1,5 +1,5 @@
 ---
-title: "Configurações de política de segurança de dispositivo móvel | Microsoft Intune"
+title: "Configurações da política de segurança de dispositivo móvel | Microsoft Docs"
 description: "Use o Intune para definir uma ampla variedade de configurações que você pode implantar em dispositivos gerenciados na sua organização."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Configurações de política de segurança de dispositivo móvel no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Agora, o Microsoft Intune apresenta políticas de configuração separadas para cada plataforma de dispositivo. Essas políticas contêm as configurações mais atualizadas que você pode usar. Você pode continuar usando a política de segurança de dispositivo móvel e todas as implantações existentes ainda funcionarão. No entanto, você deve planejar a migração para as novas políticas de configuração assim que possível, pois a política de segurança de dispositivo móvel será removida no futuro.
 
@@ -53,7 +56,7 @@ Você pode criar e implantar políticas de segurança de dispositivo móvel para
 |**Comprimento mínimo da senha**|Sim|Sim|Sim|Sim|Sim|
 |**Permitir senha simples**<br /><br />Senhas simples incluem “0000” e “1234”.|Não|Não|Sim|Sim|Não|
 |**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**|Sim|Sim|Sim|Sim|Sim|
-|**Minutos de inatividade antes que a tela se apague**1|Sim|Sim|Sim|Sim|Sim|
+|**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Sim|Sim|Sim|Sim|Sim|
 |**Expiração da senha (dias)**|Sim|Sim|Sim|Sim|Sim|
 |**Lembrar histórico de senha**|Sim|Sim|Sim|Sim|Sim|
 |**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Sim|Sim|Sim|Sim|Sim|
@@ -61,7 +64,7 @@ Você pode criar e implantar políticas de segurança de dispositivo móvel para
 |**Permitir senha de imagem e PIN**|Sim|Sim|Não|Não|Não|
 |**Minutos de inatividade antes de a senha ser necessária**|Não|Não|Não|Sim|Não|
 |**Permitir desbloqueio por impressão digital**|Não|Não|Não|iOS 7 e posterior|Não|
-1Para dispositivos iOS, quando você define as configurações **Minutos de inatividade antes que a tela se apague** e **Minutos de inatividade antes de a senha ser solicitada**, elas são aplicados em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
+<sup>1</sup>Para dispositivos iOS, ao definir as configurações **Minutos de inatividade antes que a tela seja desligada** e **Minutos de inatividade antes que a senha seja solicitada**, elas serão aplicadas em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
 
 Quando você implantar uma política de tamanho da senha em dispositivos que executam o Windows RT, os usuários serão forçados a redefinir sua senha, mesmo que a senha atual esteja em conformidade com os requisitos da política.
 
@@ -69,9 +72,9 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exigir criptografia no dispositivo móvel**1<br /><br />Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
+|**Exigir criptografia no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
 |**Exigir criptografia em cartões de armazenamento**<br /><br />Esta configuração se aplica também a dispositivos gerenciados pelo Exchange ActiveSync.|N/D|N/D|N/D <br />Aplicativos e dados associados são criptografados automaticamente.|N/D|Sim|
-1Veja informações adicionais sobre dispositivos que executam o Windows 8.1:
+<sup>1</sup>Consulte mais informações sobre dispositivos que executam o Windows 8.1:
 
 -   Para impor a criptografia em dispositivos que executam o Windows 8.1, você deve instalar a [Atualização do cliente do MDM de dezembro de 2014 para Windows](http://support.microsoft.com/kb/3013816) em cada dispositivo.
 
@@ -105,7 +108,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**Permitir redefinição de fábrica**|Não|Não|Não|Não|Sim (Samsung KNOX Standard somente)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Configurações de nuvem – documentos e dados
+## <a name="cloud-settings--documents-and-data"></a>Configurações de nuvem – documentos e dados
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +119,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 |**URL de pastas de trabalho**<br /><br />Esta configuração define a URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.|Sim|Não|Não|Não|Não|
 |**Permitir backup do Google**|Não|Não|Não|Não|Sim (Samsung KNOX Standard somente)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Configurações de nuvem – contas e sincronização
+## <a name="cloud-settings--accounts-and-synchronization"></a>Configurações de nuvem – contas e sincronização
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,7 +130,7 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 
 |Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Permitir que usuários baixem anexos de email**1|N/D|N/D|N/D|N/D|N/D|
+|**Permitir que os usuários baixem anexos de email**<sup>1</sup>|N/D|N/D|N/D|N/D|N/D|
 |**Período de sincronização de email** <br /><br />Esta configuração se aplica também a dispositivos gerenciados pelo Exchange ActiveSync.|N/D|N/D|N/D|N/D|N/D|
 |**Permitir que dispositivos móveis que não dão suporte total a essas configurações sejam sincronizados com o Exchange (Exchange ActiveSync)** <br /><br />Esta configuração se aplica também a dispositivos gerenciados pelo Exchange ActiveSync.|N/D|N/D|N/D|N/D|N/D|
 |**Tornar a conta da Microsoft opcional em um aplicativo Windows Mail**|Sim|Não|Não|Não|Não|
@@ -214,6 +217,6 @@ Quando você implantar uma política de tamanho da senha em dispositivos que exe
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

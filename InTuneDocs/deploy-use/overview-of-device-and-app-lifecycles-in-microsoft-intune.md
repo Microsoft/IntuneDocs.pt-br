@@ -1,11 +1,11 @@
 ---
-title: "Visão geral dos ciclos de vida do dispositivo e do aplicativo | Microsoft Intune"
+title: "Visão geral dos ciclos de vida do dispositivo e do aplicativo | Microsoft Docs"
 description: "Visão geral dos ciclos de vida do dispositivo e do aplicativo com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: fa5bb041949232e7a6c31e6a0007a16b4ff6b8a7
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: c2e4087790cc6fe7025f2b3b634ba115f13a7856
 
 
 ---
 
 # <a name="overview-of-device-and-app-lifecycles"></a>Visão geral dos ciclos de vida do dispositivo e do aplicativo
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Embora as necessidades das organizações individuais possam ser diferentes, existem algumas etapas comuns que todas as empresas precisam realizar continuamente, qualquer seja suas outras necessidades operacionais. Eles podem ser agrupadas em duas categorias principais, conhecidas como **ciclos de vida**. O ciclo de vida de implantação que você seguir dependerá do cenário que você está tentando habilitar. Por exemplo, talvez seja necessário apenas o ciclo de vida do dispositivo, o ciclo de vida do aplicativo ou você poderá precisar de ambos.
 
-![O ciclo de vida do aplicativo e MDM](./media/device-app-lifecycle.png "mobile device and app lifecycles")
+![O ciclo de vida de MDM e do aplicativo](./media/device-app-lifecycle.png "ciclos de vida do dispositivo móvel e do aplicativo")
 
 Para fins de gerenciamento, todos os dispositivos têm um ciclo de vida. Ele começa quando você registra o dispositivo e estende até sua desativação. O [ciclo de vida de gerenciamento de dispositivo](overview-of-device-lifecycle-in-microsoft-intune.md) explica como registrar o dispositivo, como configurá-lo e protegê-lo e como removê-lo do gerenciamento.
 
@@ -32,6 +34,6 @@ Da mesma forma, aplicativos com os quais você trabalha têm seus próprios [cic
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO5-->
 
 

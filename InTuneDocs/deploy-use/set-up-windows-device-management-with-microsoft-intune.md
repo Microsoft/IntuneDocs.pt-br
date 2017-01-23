@@ -1,5 +1,5 @@
 ---
-title: Configurar o gerenciamento do dispositivo Windows com o Microsoft Intune | Microsoft Intune
+title: Configurar o gerenciamento de dispositivo Windows com o Microsoft Intune | Microsoft Docs
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para computadores Windows, incluindo dispositivos Windows 10 com o Microsoft Intune."
 keywords: 
 author: staciebarker
@@ -13,18 +13,21 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 7c518c176e315cbf005b2fceb8d74de09bdcfa98
+ms.sourcegitcommit: 31d58d9973cca4023186731a5411c9c9e830e32a
+ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
 
 
 ---
 
 # <a name="set-up-windows-device-management"></a>Configurar o gerenciamento do dispositivo Windows
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Como administrador do Intune, você pode habilitar o registro e o gerenciamento de computadores Windows de duas maneiras:
 
-- **[Registro automático com o Azure Active Directory](#azure-active-directory-enrollment)** – usuários do Windows 10 e do Windows 10 Mobile registram seus dispositivos adicionando uma conta corporativa ou de estudante para o dispositivo
-- **[Registro no Portal da Empresa](#company-portal-app-enrollment)** – usuários do Windows 8.1 e posteriores registram seus dispositivos baixando e instalando o aplicativo de Portal da Empresa e inserindo as credenciais de sua conta corporativa ou de estudante no aplicativo.
+- **[Registro automático com o Azure Active Directory](#azure-active-directory-enrollment)** – os usuários do Windows 10 e do Windows 10 Mobile registram seus dispositivos adicionando uma conta corporativa ou de estudante ao dispositivo.
+
+- **[Registro no Portal da Empresa](#set-up-company-portal-app-enrollment)** – usuários do Windows 8.1 e posteriores registram seus dispositivos baixando e instalando o aplicativo de Portal da Empresa e inserindo as credenciais de sua conta corporativa ou de estudante no aplicativo.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
@@ -55,23 +58,20 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 
 3.  **Verificar CNAME**<br>No [console de administração do Intune](http://manage.microsoft.com), escolha **Admin** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Windows**. Digite a URL do domínio verificado do site na empresa na caixa **Especificar um Nome de Domínio Verificado** e escolha **Testar Detecção Automática**.
 
-  ![Caixa de diálogo de gerenciamento de dispositivo do Windows](../media/enroll-intune-winenr.png)
-
 4.  **Etapas opcionais**<br>A etapa **Adicionar chaves de sideload** não é necessária para o Windows 10. A etapa **Carregar Certificado de Assinatura de Código** será necessária somente se você for distribuir aplicativos de LOB (linha de negócios) que não estão disponíveis da Windows Store para dispositivos.
 
 6.  **Diga aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento.**
 
-    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md).
+    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
 
-    Para saber mais sobre tarefas de usuário final, consulte estes artigos:
-      - [Recursos sobre a experiência do usuário final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-      - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
+    Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

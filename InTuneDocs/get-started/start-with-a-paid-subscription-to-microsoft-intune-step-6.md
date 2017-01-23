@@ -1,5 +1,5 @@
 ---
-title: "Implantar políticas e aplicativos | Microsoft Intune"
+title: "Implantar políticas e aplicativos | Microsoft Docs"
 description: "É possível habilitar as configurações de política e implantar aplicativos que serão aplicados assim que os dispositivos forem registrados no gerenciamento."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Criar políticas e publicar aplicativos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de começar a registrar aplicativos no Intune, você poderá habilitar as configurações de política e os aplicativos que serão implantados assim que esses dispositivos entrarem em gerenciamento. As políticas do Intune fornecem configurações que ajudam a controlar as configurações de segurança em dispositivos móveis, a manter as configurações do Firewall do Windows e do Endpoint Protection para computadores e a implantar aplicativos. Você pode configurar a política, adicionar aplicativos e implantar esses aplicativos para que os dispositivos recebam as configurações e aplicativos assim que se registrarem no Intune.
 
 As políticas e os aplicativos são específicos da plataforma.

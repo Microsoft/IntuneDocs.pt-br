@@ -1,5 +1,5 @@
 ---
-title: Instalar e entrar no aplicativo Portal da Empresa no Intune | Microsoft Intune
+title: Instalar e conectar-se ao aplicativo Portal da Empresa do Intune | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: fa7527d3dad71fada2abd0aeb8e2dd0f76b983b3
 
 
 ---
@@ -36,10 +38,10 @@ O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS pa
 
     Se você está entrando no aplicativo de Portal da Empresa pela primeira vez e sua empresa ou escola está usando o Intune, você será solicitado a registrar seu dispositivo no Intune. Para registrar, siga as etapas em [Registrar seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar seu dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

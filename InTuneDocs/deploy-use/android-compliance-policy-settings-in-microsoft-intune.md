@@ -1,5 +1,5 @@
 ---
-title: "Configurações de política de conformidade para dispositivos Android | Microsoft Intune"
+title: "Configurações da política de conformidade para dispositivos Android | Microsoft Docs"
 description: "Este tópico descreve as configurações de política de conformidade de dispositivo Android."
 keywords: 
 author: andredm7
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Configurações de política de conformidade para dispositivos Android no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As configurações de política descritas neste tópico se aplicam a dispositivos que executam o Android 4.0 e posterior ou o Samsung KNOX 4.0 e posterior.
 

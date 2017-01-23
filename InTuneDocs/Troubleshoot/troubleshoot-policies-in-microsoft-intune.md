@@ -1,11 +1,11 @@
 ---
-title: "Solução de problemas com políticas | Microsoft Intune"
+title: "Solucionar problemas de políticas | Microsoft Docs"
 description: "Solucione problemas de configuração de política."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
 
 
 ---
 
-# Solução de problemas com políticas no Microsoft Intune
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Solução de problemas com políticas no Microsoft Intune
 
 Se você estiver tendo problemas ao implantar e gerenciar políticas com o Intune, comece aqui. Este tópico contém alguns problemas comuns que podem ocorrer, juntamente com as soluções.
 
-## Problemas gerais
+## <a name="general-issues"></a>Problemas gerais
 
-### Uma política implantada foi aplicada ao dispositivo?
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>Uma política implantada foi aplicada ao dispositivo?
 **Problema:** você não tem certeza se uma política foi aplicada corretamente.
 
 No console de administração do Intune, cada dispositivo tem uma guia de política em **Propriedades do Dispositivo**. Cada política tem um **Valor Pretendido** e um **Status**. O valor pretendido é o que você quis realizar ao atribuir a política. O status é o que realmente é aplicado quando todas as politicas que se aplicam ao dispositivo, bem como as restrições e requisitos de hardware e sistema operacional, são consideradas em conjunto. Os status possíveis são:
@@ -49,14 +49,14 @@ Na captura de tela abaixo, você pode ver dois exemplos claros:
 > Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
 
 
-## Problemas com dispositivos registrados
+## <a name="issues-with-enrolled-devices"></a>Problemas com dispositivos registrados
 
-### Alerta: falha ao salvar regras de acesso ao Exchange
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: falha ao salvar regras de acesso ao Exchange
 **Problema**: você recebe o alerta **Falha ao salvar as regras de acesso ao Exchange** no console do administrador.
 
 Se você criou as políticas no espaço de trabalho de Políticas do Exchange local, no Console de administração, mas estiver usando o O365, as configurações definidas para a política não serão impostas pelo Intune. Observe a origem da política no alerta.  No espaço de trabalho de Política do Exchange local, exclua as regras herdadas, pois elas são regras globais do Exchange no Intune para o Exchange local e não são relevantes para o O365. Em seguida, crie uma nova política para o O365.
 
-### Não é possível alterar a política de segurança para vários dispositivos registrados
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>Não é possível alterar a política de segurança para vários dispositivos registrados
 Dispositivos Windows Phone não permitem que políticas de segurança definidas por meio do MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define um **Número mínimo de caracteres de senha** para 8 e tenta reduzi-lo a 4. A política mais restritiva já foi aplicada ao dispositivo.
 
 Dependendo da plataforma do dispositivo, se você quiser alterar a política para um valor menos seguro, pode ser necessário redefinir as políticas de segurança.
@@ -64,12 +64,12 @@ Por exemplo, no Windows, na área de trabalho, passe o dedo da direita para a es
 No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** na parte inferior. Escolha-o e clique no botão **Redefinir Políticas**.
 Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior e iOS, precisarão ser desativados e registrados novamente no serviço para que você possa aplicar uma política menos restritiva.
 
-## Problemas com computadores que executam o cliente de software do Intune
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Problemas com computadores que executam o cliente de software do Intune
 
-### Erros relacionados à política do Microsoft Intune em policyplatform.log
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Erros relacionados à política do Microsoft Intune em policyplatform.log
 Para computadores com Windows gerenciados com o cliente de software do Intune, erros de política no arquivo policyplatform.log podem ser o resultado de configurações não padrão no UAC (Controle de Conta de Usuário) do Windows no dispositivo. Algumas configurações de UAC não padrão podem afetar as instalações de cliente do Microsoft Intune e a execução da política.
 
-#### Para resolver problemas do UAC
+#### <a name="to-resolve-uac-issues"></a>Para resolver problemas do UAC
 
 1.  Desative o computador, conforme descrito em [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Desativar dispositivos do gerenciamento do Microsoft Intune).
 
@@ -82,7 +82,7 @@ Para computadores com Windows gerenciados com o cliente de software do Intune, e
 
 4.  Mova o controle deslizante de notificação para a configuração padrão.
 
-### ERRO: Não é possível obter o valor do computador, 0x80041013
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>ERRO: Não é possível obter o valor do computador, 0x80041013
 Isso poderá ocorrer se a hora do sistema local estiver fora de sincronia por cinco minutos ou mais. Se a hora no computador local estiver fora de sincronia, transações seguras falharão porque os carimbos de data/hora serão inválidos.
 
 Para resolver esse problema, defina a hora do sistema local o mais próximo possível do horário da Internet ou do horário definido nos controladores de domínio na rede.
@@ -94,11 +94,11 @@ Para resolver esse problema, defina a hora do sistema local o mais próximo poss
 
 
 
-### Próximas etapas
+### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

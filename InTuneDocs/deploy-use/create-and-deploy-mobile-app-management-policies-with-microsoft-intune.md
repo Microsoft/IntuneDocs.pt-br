@@ -1,9 +1,9 @@
 ---
-title: "Criar e implantar políticas de MAM | Microsoft Intune"
+title: "Criar e implantar políticas de MAM | Microsoft Docs"
 description: "Use as instruções passo a passo neste tópico para criar e implantar políticas de gerenciamento de aplicativos móveis."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
 
 
 ---
 
 # <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Criar e implantar políticas de gerenciamento de aplicativo móvel com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Políticas de MAM (Gerenciamento de Aplicativo Móvel) podem ser aplicadas a aplicativos executados em dispositivos que podem ou não ser gerenciados pelo Intune. Para obter uma descrição mais detalhada do funcionamento das políticas de MAM e os cenários com suporte pelas políticas de MAM do Intune, consulte [Proteger dados de aplicativo usando políticas de gerenciamento de aplicativo móvel](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 Esse tópico descreve o processo de criação de uma política de MAM no **Portal do Azure**. O portal do Azure é o novo console de administração para criar políticas de MAM e é recomendável que você use este portal para criá-las. O portal do Azure dá suporte aos seguintes cenários MAM:
@@ -173,6 +176,6 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

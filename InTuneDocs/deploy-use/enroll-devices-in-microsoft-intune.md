@@ -1,5 +1,5 @@
 ---
-title: Registrar dispositivos | Microsoft Intune
+title: Registrar dispositivos | Microsoft Docs
 description: "O MDM (Gerenciamento de Dispositivo Móvel) usa o registro para trazer dispositivos para o gerenciamento e permitir acesso a recursos."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para gerenciamento no Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Você pode registrar dispositivos, incluindo computadores Windows, para habilitar o MDM (gerenciamento de dispositivo móvel) com o Microsoft Intune. Este tópico descreve diferentes maneiras de registrar dispositivos móveis no gerenciamento do Intune. A maneira como você registra seus dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. O registro de BYOD (Traga seu próprio dispositivo) permite que os usuários registrem seus telefones, tablets ou computadores pessoais. O registro de COD (Dispositivo de propriedade corporativa) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade do usuário para um dispositivo.
 
 Caso utilize o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), hospedado na nuvem ou local, você pode habilitar o gerenciamento simples do Intune sem registro. Computadores Windows também podem ser gerenciados usando o [software cliente do Intune](#manage-windows-pcs-with-intune).

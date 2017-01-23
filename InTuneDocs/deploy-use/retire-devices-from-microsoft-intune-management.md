@@ -1,11 +1,11 @@
 ---
-title: Desativar dispositivos | Microsoft Intune
+title: Desativar dispositivos | Microsoft Docs
 description: "O Intune dá suporte ao apagamento seletivo e ao apagamento completo para remover o dispositivo do gerenciamento do Intune removendo suas políticas e o portal da empresa."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Desativar dispositivos do gerenciamento do Intune
 
-Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. Você pode ter que desativar um dispositivo por diversos motivos:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. 
+
+Os dispositivos nunca serão removidos do Intune sem a intervenção do usuário, mesmo se eles não tiverem sido conectados ao serviço Intune por um período. 
+
+Você pode ter que desativar um dispositivo por diversos motivos:
 
 -   O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
 -   O usuário parte abruptamente (é demitido, pede demissão etc.).
@@ -70,6 +76,6 @@ Você também deseja revogar a licença da conta de usuário Intune do funcioná
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

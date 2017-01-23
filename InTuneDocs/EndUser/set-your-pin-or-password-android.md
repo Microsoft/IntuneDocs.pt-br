@@ -1,27 +1,29 @@
 ---
-title: Definir seu PIN ou senha | Microsoft Intune
+title: Definir o PIN ou a senha | Microsoft Docs
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f08be661936b092cfa100b2454a3f2a3dd24746
-ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
 
 
 ---
 
-# Definir o PIN ou senha
+# <a name="set-your-pin-or-password"></a>Definir o PIN ou senha
 
 O administrador de TI pode exigir que você defina um PIN ou senha no dispositivo Android quando você estiver usando o Intune para acessar seus dados do trabalho ou da escola. Você também pode ver mensagens que exigem que você defina um PIN ou senha mais longa ou mais complexa, para que seja mais segura.  
 
@@ -32,10 +34,10 @@ Use as seguintes etapas para definir um PIN ou senha.
 2.  Escolha e confirme sua nova senha.
 
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

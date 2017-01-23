@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de Dispositivo do Exchange ActiveSync | Microsoft Intune
+title: Gerenciamento de dispositivos do Exchange ActiveSync | Microsoft Docs
 description: "Gerenciar dispositivos móveis com o gerenciamento do Exchange ActiveSync (EAS) usando o conector do Exchange"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
 
 
 ---
 
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Gerenciamento de dispositivos móveis do Exchange ActiveSync com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Para o Microsoft Intune gerenciar dispositivos móveis diretamente, os dispositivos devem ser [registrados no Intune](prerequisites-for-enrollment.md). Como alternativa, os administradores podem habilitar uma solução de gerenciamento mais limitada que usa o gerenciamento do EAS (Exchange ActiveSync) com um conector do Exchange. Dispositivos podem ser gerenciados nos servidores Exchange locais ou no Exchange Online usando o Microsoft Office 365. O Intune dá suporte apenas a uma conexão do conector do Exchange de qualquer tipo por assinatura.
 
 ## <a name="exchange-access-rules-for-mobile-devices"></a>Regras de acesso do Exchange para dispositivos móveis ##
@@ -47,6 +50,6 @@ Por fim, você pode [apagar os dados da empresa dos dispositivos móveis gerenci
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

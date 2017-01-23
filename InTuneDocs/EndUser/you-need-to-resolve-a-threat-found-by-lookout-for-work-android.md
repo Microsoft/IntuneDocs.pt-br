@@ -1,5 +1,5 @@
 ---
-title: "Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android | Microsoft Intune"
+title: "É necessário resolver uma ameaça encontrada pelo Lookout for Work em seu dispositivo Android | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b6f8cf9eda8983b8bfe4edd8fca6e6872e0c8103
 
 
 ---
@@ -43,12 +45,12 @@ Se tiver instalado um aplicativo que o Lookout for Work considera como uma amea�
 
 Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e aos dados da empresa imediatamente. Se você ignorar a solicitação para desinstalar o aplicativo, perderá acesso ao email e aos dados até que desinstale o aplicativo.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

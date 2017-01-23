@@ -1,12 +1,12 @@
 ---
-title: "Publicar aplicativos móveis para seus usuários | Microsoft Intune"
+title: "Publicar aplicativos móveis em usuários | Microsoft Docs"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
 
 
 ---
 
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Guia de início rápido: Publicar aplicativos móveis para seus usuários
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune pode ajudar a aumentar a produtividade de seus usuários de modo rápido e fácil dando a eles acesso aos aplicativos móveis e da área de trabalho de que precisam dos dispositivos de sua escolha. Tornar aplicativos facilmente disponíveis para os usuários finais reduz o tempo e os esforços que os usuários dispendem procurando e instalando os aplicativos corretos, o que reduz as chamadas de assistência técnica quando os usuários não conseguem localizar os aplicativos de que precisam.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Este é o guia de início rápido certo para mim?
@@ -42,6 +45,6 @@ Se a publicação de aplicativos do Office Mobile for feita com a intenção de 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

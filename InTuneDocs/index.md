@@ -9,14 +9,14 @@ keywords: "documentação do intune, gerenciamento de aplicativos, gerenciamento
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
+ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 ---
@@ -37,8 +37,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteger o acesso aos recursos da empresa</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">SDK do Microsoft Intune App para o Guia do Desenvolvedor do iOS</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Guia do SDK de Aplicativos do Microsoft Intune para Desenvolvedores do Android</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Trabalhando com o Intune no Microsoft Graph</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Recursos sobre a experiência do usuário final com o Microsoft Intune</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Introdução ao Intune</h3>
+                    <h3>O que é o Intune?</h3>
                     <p>Aprenda como o Intune oferece funcionalidades avançadas de gerenciamento de dados, de aplicativos e de dispositivos para dispositivos móveis (dispositivos iOS, dispositivos Android e Windows Phones) e computadores Windows.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Guia de avaliação do Intune</h3>
+                    <h3>O Intune é ideal para você?</h3>
                     <p>Use o guia de avaliação para percorrer as etapas para configurar sua avaliação com até 100 usuários e dispositivos.</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>O que você deve saber antes de iniciar </h3>
-                    <p>Familiarize-se rapidamente com os requisitos de linha de base para qualquer implantação do Intune.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Guia de início rápido do Intune</h3>
-                    <p>Começando no guia de avaliação de 30 dias, este tópico explica sincronização do Azure Active Directory, domínio e considerações sobre DNS e outras personalizações do Intune.</p>
+                    <h3>Guia de introdução</h3>
+            <p>Começando no guia de avaliação de 30 dias, este tópico explica sincronização do Azure Active Directory, domínio e considerações sobre DNS e outras personalizações do Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Fases de distribuição</h3>
-                    <p>Defina seus planos de distribuição de produção, arquitetura, piloto e metas do Intune.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Impedir vazamentos de dados da empresa de aplicativos móveis do Office 365</h3>
+                    <p>Proteja os dados de sua organização usando políticas de proteção do aplicativo que ajudam a prevenir a perda de dados da empresa.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>Simplificar a configuração de email em dispositivos móveis</h3>
+                    <p>Economize tempo e recursos de sua empresa implantando perfis de email (bem como de VPN e WiFi) em dispositivos móveis Windows, iOS e Android gerenciados pelo serviço Intune.</p>
                   </a>
                 </li>
               </ul>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Restringir o acesso ao email e aos serviços do O365</h3>
-                    <p>Use a funcionalidade de acesso condicional do Intune para restringir o acesso ao email corporativo e serviços do Office 365.</p>
+                    <h3>Proteger o acesso ao email e aos serviços do O365</h3>
+                    <p>Use a funcionalidade de acesso condicional do Intune para proteger o acesso ao email da empresa e aos serviços do Office 365.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Você é solicitado a instalar o Lookout for Work em seu dispositivo Android | Microsoft Intune"
+title: "Você é solicitado a instalar o Lookout for Work em seu dispositivo Android | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
 
 
 ---
@@ -82,6 +84,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

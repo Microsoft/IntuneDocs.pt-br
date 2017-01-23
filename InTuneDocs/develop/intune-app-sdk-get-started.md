@@ -1,11 +1,11 @@
 ---
 title: "Introdução ao SDK de Aplicativo do Microsoft Intune | Microsoft Docs"
-description: 
+description: "Habilite rapidamente seu aplicativo móvel para MAM (gerenciamento de aplicativo móvel) com o Microsoft Intune."
 keywords: 
 author: mtillman
 manager: angrobe
 ms.author: oydang
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,31 +14,33 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
+ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
+ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
 
 
 ---
 
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
-Este guia o ajudará a habilitar rapidamente seu aplicativo móvel para o MAM (gerenciamento de aplicativos móveis) com o Microsoft Intune. Pode ser útil compreender primeiro os benefícios do SDK de Aplicativo do Intune enumerados na [Visão geral do SDK de Aplicativos do Intune](intune-app-sdk.md).
+Este guia ajudará você a habilitar rapidamente seu aplicativo móvel para políticas de proteção do aplicativo com o Microsoft Intune. Pode ser útil compreender primeiro os benefícios do SDK de Aplicativo do Intune enumerados na [Visão geral do SDK de Aplicativos do Intune](intune-app-sdk.md).
 
-Este guia aborda as principais etapas para habilitar o MAM em seu aplicativo com o Microsoft Intune. O SDK de Aplicativos do Intune dá suporte a cenários semelhantes em diferentes plataformas e destina-se a criar uma experiência consistente em todas as plataformas para os administradores de TI. Porém, há pequenas diferenças no suporte a determinados recursos devido a limitações da plataforma.
+O SDK do Aplicativo do Intune dá suporte a cenários semelhantes no iOS e Android e destina-se a criar uma experiência consistente em todas as plataformas para os administradores de TI. Porém, há pequenas diferenças no suporte a determinados recursos devido a limitações da plataforma.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Registrar seu aplicativo de uma loja de aplicativos no Microsoft
 
-**Se o aplicativo for interno à sua empresa e não for disponibilizado em uma loja de aplicativos pública**:
+### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Caso o aplicativo seja interno à sua organização e não esteja disponível publicamente:
 
-Você *não precisa* registrar seu aplicativo. Para aplicativos de linha de negócios internos, o administrador de TI implantará o aplicativo internamente. O Intune detectará que o aplicativo foi criado com o SDK e permitirá que o administrador de TI aplique configurações de política de MAM a ele. Você pode passar diretamente para a seção [Habilitar seu aplicativo móvel iOS ou Android para MAM com o SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
+Você *não precisa* registrar seu aplicativo. Para aplicativos de linha de negócios internos, o administrador de TI implantará o aplicativo internamente. O Intune detectará que o aplicativo foi criado com o SDK e permitirá que o administrador de TI aplique a política de proteção do aplicativo a ele. É possível ignorar a seção [Habilitar o aplicativo iOS ou Android para a política de proteção do aplicativo](#enable-your-iOS-or-Android-app-for-app-protection-policy).
 
-**Se o aplicativo for liberado para uma loja de aplicativos pública, como a Apple App Store ou o Google Play**:
+### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se o aplicativo for liberado para uma loja pública de aplicativos, como a Apple App Store ou o Google Play:
 
-Primeiro, você *precisa* registrar seu aplicativo com o Microsoft Intune e concordar com os termos de registro. Os administradores de TI podem aplicar configurações de política de MAM do Intune ao aplicativo habilitado, que será listado como um parceiro de aplicativo do Intune. Até a conclusão e a confirmação do registro pela equipe do Microsoft Intune, os administradores do Intune não terão a opção de aplicar a política de MAM ao link profundo do seu aplicativo. A Microsoft também adicionará seu aplicativo à [página Parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Nessa página, o ícone do aplicativo será exibido para mostrar que ele oferece suporte à política de MAM do Microsoft Intune.
+Primeiro, você _**deve**_ registrar o aplicativo no Microsoft Intune e concordar com os termos de registro. Em seguida, os administradores de TI poderão aplicar a política de proteção do aplicativo ao aplicativo habilitado, que será listado como um parceiro de aplicativos do Intune.
+
+Somente depois que o registro for concluído e confirmado pela equipe do Microsoft Intune os administradores do Intune terão a opção de aplicar a política de proteção do aplicativo ao link profundo do aplicativo. A Microsoft também adicionará seu aplicativo à [página Parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Nessa página, o ícone do aplicativo será exibido para mostrar que ele dá suporte às políticas de proteção do aplicativo do Intune.
 
 Para iniciar o processo de registro, preencha o [Questionário de Parceiro de Aplicativo do Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
-Usaremos os endereços de email listados em suas respostas ao questionário para entrar em contato e continuar o processo de registro. Além disso, usamos o seu endereço de email de registro para entrar em contato com você caso tenhamos quaisquer dúvidas.
+Usaremos os endereços de email listados em suas respostas ao questionário para contatá-lo e continuar o processo de registro. Além disso, usamos o seu endereço de email de registro para entrar em contato com você caso tenhamos quaisquer dúvidas.
 
 > [!NOTE]
 > Todas as informações coletadas no questionários e por email com a equipe do Microsoft Intune serão tratadas de acordo com a [Política de Privacidade da Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
@@ -46,50 +48,49 @@ Usaremos os endereços de email listados em suas respostas ao questionário para
 **O que esperar no processo de registro**:
 
 1. Após enviar o questionário, nós contataremos você pelo endereço de email registrado para confirmar o recebimento ou para solicitar informações adicionais para concluir o registro.
+
 2. Após recebermos de você todas as informações necessárias, enviaremos o Contrato de Parceiro do Aplicativo do Microsoft Intune para você assinar. Este contrato descreve os termos que sua empresa deve aceitar antes de se tornar um parceiro de aplicativo do Microsoft Intune.
+
 3. Você também será notificado quando seu aplicativo for registrado com êxito no serviço do Microsoft Intune e quando ele estiver em destaque no site de [parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+
 4. Por fim, o link profundo de seu aplicativo será adicionado à próxima atualização mensal do Serviço do Intune. Por exemplo, se as informações o registro forem concluídas em julho, o link profundo terá suporte em meados de agosto.
 
-Se o link profundo do aplicativo for alterado no futuro, você precisará registrar novamente o aplicativo. Além disso, informe se você atualizar seu aplicativo com uma nova versão do SDK de Aplicativo do Intune.
+Se o link profundo do aplicativo for alterado no futuro, você precisará registrar novamente o aplicativo.
+
+> [!NOTE]
+> Além disso, informe se você atualizou o aplicativo com uma nova versão do SDK do Aplicativo do Intune.
 
 
 
 ## <a name="download-the-sdk-files"></a>Baixar os arquivos do SDK
 
-Os SDKs do Aplicativo do Intune para iOS e Android nativo são hospedados em uma conta do GitHub da Microsoft. Estes repositórios públicos contêm os arquivos do SDK para iOS e Android, respectivamente:
+Os SDKs do Aplicativo do Intune para iOS e Android nativo são hospedados em uma conta do GitHub da Microsoft. Esses repositórios públicos têm os arquivos do SDK para o iOS e Android nativo, respectivamente:
 
 * [SDK de Aplicativo do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK de Aplicativo do Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Se seu aplicativo for um aplicativo Xamarin ou Cordova, use estas ferramentas de desenvolvedor:
+Caso o aplicativo seja um aplicativo Xamarin ou Cordova, use essas variantes do SDK:
 
 * [Componente Xamarin do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Plug-in Cordova do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
-Convém criar uma conta do GitHub que você possa usar para bifurcar e efetuar pull de nosso repositórios. O GitHub permite que os desenvolvedores se comuniquem com nossa equipe de produto, abram questões e recebam respostas rápidas, exibam notas de versão e forneçam comentários à Microsoft. Para enviar perguntas sobre a conta e os repositórios do GitHub, entre em contato com msintuneappsdk@microsoft.com.
+Convém criar uma conta do GitHub que você possa usar para bifurcar e efetuar pull de nosso repositórios. O GitHub permite que os desenvolvedores se comuniquem com nossa equipe de produto, abram questões e recebam respostas rápidas, exibam notas de versão e forneçam comentários à Microsoft. Em caso de dúvidas sobre o GitHub do SDK do Aplicativo do Intune, contate msintuneappsdk@microsoft.com.
 
 
 
 
 
-## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>Habilitar seu aplicativo móvel iOS ou Android para MAM com o SDK
+## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>Habilitar o aplicativo iOS ou Android para a política de proteção do aplicativo
 
-Para integrar o SDK do Aplicativo do Intune em seu aplicativo iOS nativo, você precisará do seguinte:
+Você precisará de um dos seguintes guias do desenvolvedor para ajudá-lo a integrar o SDK do Aplicativo do Intune em seu aplicativo:
 
-* **[Guia do desenvolvedor do SDK de Aplicativos do Intune para iOS](intune-app-sdk-ios.md)**: este documento fornece uma orientação passo a passo durante a habilitação de seu aplicativo móvel iOS com o SDK de Aplicativos do Intune.
+* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para iOS](intune-app-sdk-ios.md)**: esse documento fornece um passo a passo para a habilitação do aplicativo iOS nativo com o SDK do Aplicativo do Intune.
 
+* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para Android](intune-app-sdk-android.md)**: esse documento fornece um passo a passo para a habilitação do aplicativo Android nativo com o SDK do Aplicativo do Intune.
 
-Para integrar o SDK do Aplicativo do Intune em seu aplicativo Android nativo, você precisará do seguinte:
+* **[Guia do plug-in Cordova do SDK de Aplicativo do Intune](intune-app-sdk-cordova.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Cordova para as políticas de proteção do aplicativo do Intune.
 
-* **[Guia do desenvolvedor do SDK de Aplicativos do Intune para Android](intune-app-sdk-android.md)**: este documento fornece uma orientação passo a passo durante a habilitação de seu aplicativo móvel Android com o SDK de Aplicativos do Intune.
-
-Para compilar aplicativos Cordova com o Plug-in do Cordova do SDK de Aplicativo Intune, você precisará do seguinte:
-
-* **[Guia de plug-in do Cordova do SKD de Aplicativo do Intune](intune-app-sdk-cordova.md)**: este documento ajudará você a criar aplicativos iOS e Android usando o Cordova para gerenciamento de aplicativos móveis do Intune.
-
-Para compilar aplicativos Xamarim com o Componente do Xamarin do SDK de Aplicativo do Intune, você precisará do seguinte:
-
-* **[Guia do Componente do Xamarin do SDK de Aplicativo do Intune](intune-app-sdk-xamarin.md)**: este documento o ajudará a criar aplicativos iOS e Android usando o Cordova para gerenciamento de aplicativos móveis do Intune.
+* **[Guia do Componente Xamarin do SDK do Aplicativo do Intune](intune-app-sdk-xamarin.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Cordova para as políticas de proteção do aplicativo do Intune.
 
 
 
@@ -102,22 +103,42 @@ O Microsoft Intune coleta dados sobre estatísticas de uso para seu aplicativo.
 
     * Se optar por não enviar dados de telemetria do SDK para o Microsoft Intune do seu aplicativo, você deverá desabilitar a transmissão de telemetria definindo a propriedade `MAMTelemetryDisabled` como ”YES” no dicionário IntuneMAMSettings.
 
+
 * **SDK do Aplicativo do Intune para Android**: os dados de telemetria não são registrados por meio do SDK.
 
-## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Testar seu aplicativo habilitado para MAM com o Microsoft Intune
+## <a name="next-steps-after-integration"></a>Próximas etapas após integração
 
-Depois de concluir as etapas necessárias para integrar seu aplicativo iOS ou Android com o SDK de Aplicativos do Intune, você precisará garantir que todas as políticas de gerenciamento de aplicativo estejam habilitadas e funcionando para o usuário final e o administrador de TI. Para testar seu aplicativo integrado, você precisará do seguinte:
+### <a name="test-your-app"></a>Teste seu aplicativo
+Depois de concluir as etapas necessárias para integrar seu aplicativo iOS ou Android com o SDK do Aplicativo do Intune, você precisará garantir que todas as políticas de proteção do aplicativo estão habilitadas e funcionando para o usuário e o administrador de TI. Para testar seu aplicativo integrado, você precisará do seguinte:
 
-<!--TODO-->
+* **Conta de teste do Microsoft Intune**: para testar seu aplicativo habilitado pelo Intune nos recursos de proteção do aplicativo do Intune, você precisará de uma conta do Microsoft Intune.
 
-* **Testar seu aplicativo habilitado para MAM com o Microsoft Intune**: este documento fornece uma orientação passo a passo para testar seus aplicativos iOS ou Android habilitados para MAM com o Microsoft Intune. Você pode encontrar este documento nos repositórios GitHub sobre os SDKs.
+    * Se você for um ISV que habilita aplicativos da loja do iOS ou do Android para a política de proteção do aplicativo do Intune, receberá um código promocional após a conclusão do registro no Microsoft Intune, conforme descrito na etapa de registro. O código de promoção permitirá que você se inscreva para uma avaliação de um ano de uso estendido do Microsoft Intune.
 
-* **Conta do Microsoft Intune**: para testar seus aplicativos habilitados para MAM com o Microsoft Intune, você precisará de uma conta do Microsoft Intune.
-    * Se for um ISV habilitando seus aplicativos iOS ou Android para o MAM do Intune, você receberá um código de promoção após concluir o registro com o Microsoft Intune, conforme descrito na etapa de registro. O código de promoção permitirá que você se inscreva para uma avaliação de um ano de uso estendido do Microsoft Intune.
     * Se estiver desenvolvendo um aplicativo de linha de negócios que não será enviado para a loja, você deverá ter acesso ao Microsoft Intune por meio de sua organização. Você também pode se inscrever para uma avaliação gratuita de uma mês no [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
+* **Políticas de proteção do aplicativo do Intune**: para testar seu aplicativo em todas as políticas de proteção do aplicativo do Intune, é necessário saber qual é o comportamento esperado para cada configuração da política. Consulte as descrições de [políticas de proteção do aplicativo do iOS](../deploy-use/ios-mam-policy-settings.md) e [políticas de proteção do aplicativo do Android](../deploy-use/android-mam-policy-settings.md).
+
+* **Solução de problemas**: em caso de problemas durante o teste manual da experiência do usuário de seu aplicativo, confira [Solucionar problemas do gerenciamento de aplicativo móvel](../troubleshoot/troubleshoot-mam.md). Este artigo oferece ajuda para problemas comuns, caixas de diálogo e mensagens de erro que podem ocorrer em aplicativos habilitados pelo Intune. 
+
+### <a name="badge-your-app-optional"></a>Marcar com uma notificação no aplicativo (opcional)
+
+Depois de validar que as políticas de proteção do aplicativo do Intune funcionam no aplicativo, é possível marcar o ícone do aplicativo com uma notificação do logotipo de proteção do aplicativo do Intune.
+
+Essa notificação indica aos administradores de TI, usuários finais e clientes potenciais do Intune que seu aplicativo funciona com as políticas de proteção do aplicativo do Intune. Ela incentiva o uso e a adoção de seu aplicativo pelos clientes do Intune.
+
+A notificação é um ícone de porta-arquivos e pode ser vista nos exemplos abaixo:
+
+![Exemplo de notificação 1](../media/intune-app-badge/example-1.png) ![Exemplo de notificação 2](../media/intune-app-badge/example-2.png)
+
+**O que será necessário para marcar o aplicativo com uma notificação**:
+
+* Um aplicativo de manipulação de imagem que pode ler arquivos **.eps** ou um aplicativo Adobe que pode ler arquivos **.ai**.
+
+* Encontre os [ativos de notificação de aplicativo do Intune e as diretrizes](https://github.com/msintuneappsdk/intune-app-partner-badge) no GitHub do Microsoft Intune.
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Dec16_HO5-->
 
 

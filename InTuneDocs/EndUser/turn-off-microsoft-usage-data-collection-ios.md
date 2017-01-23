@@ -1,40 +1,38 @@
 ---
-title: Desligar a coleta de dados de uso da Microsoft para iOS | Microsoft Intune
+title: Como desligar a coleta de dados da Microsoft | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
 
 
 ---
 
-
 # <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a coleta de dados de uso da Microsoft
 
-Para aprimorar seus produtos e serviços, a Microsoft coleta automaticamente dados anônimos sobre o desempenho e a confiabilidade do aplicativo de Portal da Empresa e sobre como ele é usado.
+A Microsoft coleta automaticamente determinados dados sobre nossos produtos e serviços. Fazemos isso para melhorar a confiabilidade e o desempenho de nossos produtos, incluindo o aplicativo Portal da Empresa. Embora esses dados sejam anônimos, alguns usuários talvez não se sintam à vontade com essa coleta. O administrador de TI não tem controle sobre a coleta desses dados e não pode alterar a seleção dessa configuração.
 
-Para desativar a coleta de dados de uso no seu dispositivo iOS, vá para **Configurações**, toque em **Portal da Empresa** e desative a configuração **Dados de Uso**.
+Caso deseje desligar a coleta de dados de uso em seu dispositivo iOS, abra **Configurações**, toque em **Portal da Empresa** e desative **Dados de Uso**.
 
-Os administradores de TI não têm controle sobre a coleta desses dados e não podem alterar a seleção dessa configuração.
-
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

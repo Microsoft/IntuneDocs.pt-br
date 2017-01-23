@@ -1,11 +1,11 @@
 ---
-title: "Criar políticas e publicar um aplicativo para usuários | Microsoft Intune"
+title: "Criar políticas e publicar um aplicativo em usuários | Microsoft Docs"
 description: "Como criar políticas e publicar um aplicativo quando você se inscrever para uma avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Criar políticas e publicar um aplicativo para usuários de avaliação
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As políticas do Intune fornecem configurações que ajudam a controlar as configurações de segurança em dispositivos móveis, a manter as configurações do Firewall do Windows e do Endpoint Protection para computadores e a implantar aplicativos. Se você estiver planejando usar o Intune em dispositivos que você configura para uso em produção após a avaliação, será absolutamente essencial que você siga as instruções em [Gerenciar configurações e recursos em seus dispositivos com as políticas do Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Proteger computadores Windows com o Endpoint Protection do Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Você pode executar dois tipos de instalações de aplicativos usando o Intune. A primeira é uma **instalação obrigatória**, que implanta automaticamente o aplicativo em dispositivos gerenciados. A outra é uma **instalação disponível**, que implanta o aplicativo ou um link para o aplicativo, no Portal da Empresa do Intune para que os usuários possam optar por instalá-lo em seus computadores ou em seus dispositivos móveis.
@@ -102,6 +105,6 @@ Converter em uma [assinatura paga](get-started-with-a-30-day-trial-of-microsoft-
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

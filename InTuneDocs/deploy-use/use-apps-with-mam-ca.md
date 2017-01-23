@@ -1,5 +1,5 @@
 ---
-title: Usando aplicativos com AC de MAM | Microsoft Intune
+title: Usando aplicativos com AC de MAM | Microsoft Docs
 description: "Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
@@ -14,12 +14,15 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 317d101c34854fdf4913adcf53bdef614599deb7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
 
 
 ---
 # <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>O que esperar ao usar um aplicativo com AC do MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O AC de MAM verifica a identidade do aplicativo aprovado por meio de um aplicativo agente, que deve estar presente no dispositivo:
 *  No **iOS**, o **aplicativo Microsoft Authenticator** é o aplicativo agente.
 * No **Android**, o **aplicativo do Portal da Empresa do Intune** é o aplicativo agente. 
