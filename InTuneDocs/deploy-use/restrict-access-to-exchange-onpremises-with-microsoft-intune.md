@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso a email para o Exchange no Local | Microsoft Docs
+title: Proteger o acesso ao email para o Exchange no Local | Microsoft Docs
 description: Proteja e controle o acesso ao email da empresa no Exchange local com acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,22 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Restringir acesso a email ao Exchange local e Exchange Online Dedicado herdado com o Intune
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Proteger o acesso de email ao Exchange no Local e ao Exchange Online Dedicado herdado com o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > Se você tiver um ambiente do Exchange Online Dedicado e precisar descobrir se ele está com a configuração nova ou herdada, contate seu gerente de conta.
 
 
 Para controlar o acesso a email para o Exchange no Local ou para o ambiente herdado do Exchange Online Dedicado, é possível configurar o acesso condicional para o Exchange no Local usando o Microsoft Intune.
-Para saber mais sobre como o acesso condicional funciona, leia o artigo [Restringir acesso a email e a serviços do O365]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como o acesso condicional funciona, leia o artigo [Proteger acesso a email e a serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 **Antes** de poder configurar o acesso condicional, verifique o seguinte:
 
@@ -125,15 +127,15 @@ Há suporte para o seguinte:
 
 -   Se o usuário cancelar o registro do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], poderá levar de uma a três horas até que o dispositivo seja bloqueado.
 
-**Para ver alguns cenários de exemplo de como você poderá configurar uma política de acesso condicional para restringir o acesso ao dispositivo, consulte [Restringir o acesso a email – cenários de exemplo](restrict-email-access-example-scenarios.md).**
+**Para ver alguns cenários de exemplo de como você poderá configurar uma política de acesso condicional para proteger o acesso ao dispositivo, consulte [Proteger o acesso a email – cenários de exemplo](restrict-email-access-example-scenarios.md).**
 
 ## <a name="next-steps"></a>Próximas etapas
--   [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Restringir o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Proteger o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

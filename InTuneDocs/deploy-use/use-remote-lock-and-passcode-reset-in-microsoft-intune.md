@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e redefinição de senha.
 
 ## <a name="lock-a-device-remotely"></a>Bloquear um dispositivo remotamente
-Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remotamente. A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas móveis.
+Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remotamente. O dispositivo já deve ter um PIN ou senha configurada antes de usar o bloqueio remoto. 
+
+A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas móveis.
 
 |Plataforma|Bloqueio remoto|
 |------------|---------------|
@@ -79,6 +84,6 @@ Não há suporte para a redefinição de senha para computadores com Windows reg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

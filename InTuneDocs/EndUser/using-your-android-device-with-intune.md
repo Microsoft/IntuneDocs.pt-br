@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
-ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
+ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
+ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 
 ---
@@ -59,22 +59,22 @@ As informações contidas nesta seção ajudam os usuários com as ações que e
 As informações contidas nesta seção ajudam os usuários a corrigirem problemas que podem ocorrer quando seu dispositivo Android é registrado no Intune.
 
 - [Usar o Registro em Log Detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Enviar logs de dados de diagnóstico para o administrador de TI usando email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Enviar logs de dados de diagnóstico para o administrador de TI usando cabo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)
+- [Enviar logs ao administrador de TI usando o email](send-logs-to-your-it-admin-by-email-android.md)
+- [Enviar logs para o administrador de TI usando um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-admin-android.md)
 - [O dispositivo não tem a versão de sistema operacional mínima exigida](you-need-to-update-your-android-device.md)
 - [O dispositivo não está em conformidade com a versão do sistema operacional máxima](your-android-version-isnt-yet-supported.md)
 - [O dispositivo tem raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-android.md)
+- [Falta ao dispositivo um certificado necessário](your-device-is-missing-a-required-certificate-landing-android.md)
 - [Você será solicitado a desligar Fontes desconhecidas](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [Você será solicitado a desligar a depuração de USB](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Você será solicitado a ativar "Verificar dispositivo" contra ameaças à segurança](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Você será solicitado a ativar a verificação de dispositivo contra ameaças à segurança](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Seu dispositivo não atende ao patch de segurança mínima](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Você é solicitado a instalar o Lookout for Work em seu dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
 - [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

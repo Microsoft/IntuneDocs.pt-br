@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: d07c7e667dbb5c01a9dcd8b2f69e7d930c27f25a
+ms.sourcegitcommit: a567d55141c4510a5c81861df1522f118104de61
+ms.openlocfilehash: 900b3a9bcc9ce58cd165b14592c850b50739a33a
 
 
 ---
@@ -43,7 +43,7 @@ O gerenciamento de dispositivo do Intune fornece [estes recursos](mobile-device-
 
 ### <a name="windows-pc-software-client"></a>Cliente de software de computadores Windows
 
-Um [cliente de software do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) pode ser implantado e instalado em computadores Windows como um método alternativo de registro. É possível usar o cliente de software do Intune para gerenciar computadores Windows 7 e posterior, com exceção do Windows 10 Home Edition. O Gerenciamento de PCs com o software cliente fornece [esses recursos](windows-pc-management-capabilities-in-microsoft-intune.md).
+Um [cliente de software do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) pode ser implantado e instalado em computadores Windows como um método alternativo de registro. É possível usar o cliente de software do Intune para gerenciar o Windows 7 e computadores posteriores. O Gerenciamento de PCs com o software cliente fornece [esses recursos](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### <a name="exchange-activesync-management"></a>Gerenciamento do Exchange ActiveSync
 
@@ -74,6 +74,6 @@ Apenas usuários com permissões de administrador de serviços ou administradore
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

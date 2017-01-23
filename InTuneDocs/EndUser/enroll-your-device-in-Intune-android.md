@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 385565bd1ce05c9402a52cdd6eeb93f58caaf72a
-ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
+ms.sourcegitcommit: 3da636b15807623bb60895870e6d43cd2e0aa01c
+ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
 
 ---
@@ -25,11 +27,11 @@ ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo Android para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, o departamento de TI pode gerenciar recursos corporativos ou de estudante e mantê-los seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo o aplicativo Portal da Empresa e registro meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-Essas instruções de registro são para dispositivos Samsung KNOX Android e dispositivos Android “nativos” (que não são Samsung Knox). Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** &gt; **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
+Essas instruções de registro são para dispositivos Samsung KNOX Android e dispositivos Android “nativos” (que não são Samsung Knox). Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** > **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
 
 Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O administrador de TI usa essa categoria para ajudar a verificar os aplicativos aos quais você tem acesso.
 
-Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar erros de registro ao administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md).
+Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar erros de registro ao administrador de TI](send-enrollment-errors-to-your-it-admin-android.md).
 
 **Para registrar seu dispositivo Android:**
 
@@ -110,10 +112,10 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 
 Antes de tentar instalar aplicativos corporativos, acesse **Configurações** &gt; **Segurança** e ative **Fontes desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem: “Instalação bloqueada”. Por motivos de segurança, seu dispositivo está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes desconhecidas**.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
+Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a equipe de Android da Microsoft em wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 01/10/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
-ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
+ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
+ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
 
 
 ---
 
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Este tópico fornece sugestões para solução de problemas de registro do dispositivo. Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
 
@@ -37,11 +39,8 @@ Antes de iniciar a solução de problemas, verifique se você configurou o Intun
 
 Seus usuários de dispositivo gerenciado podem coletar logs de registro e diagnóstico para você examinar. As instruções para o usuário coletar logs são fornecidas em:
 
-- [Enviar logs de dados de diagnóstico do Android para o administrador de TI usando um cabo USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [Enviar logs de dados de diagnóstico do Android para o administrador de TI usando o email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [Enviar erros de registro do Android para o administrador de TI](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-- [Enviar erros de registro do iOS para o administrador de TI](/intune/enduser/send-errors-to-your-it-admin-ios)
-
+- [Enviar erros de registro do Android ao seu administrador de TI](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
+- [Enviar erros do iOS para o administrador de TI](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>Problemas gerais de registro
@@ -56,7 +55,7 @@ Esses problemas podem ocorrer em todas as plataformas de dispositivo.
 
 1.  Valide no portal de administração do Intune que o usuário tem não mais do que o máximo permitido de 15 dispositivos atribuídos.
 
-2.  Verifique no console de administração do Intune, em Admin\Mobile Device Management\Enrollment Rules, se o limite de registro de dispositivos está definido como 15.
+2.  Em **Administrador** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** no console do administrador do Intune, verifique se o Limite de registro do dispositivo está definido como 15.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -68,7 +67,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 2.  Faça logon com sua ID da organização usando o link no lado esquerdo da página.
 
-3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
+3.  Se você não tiver uma, crie uma assinatura do Azure escolhendo o link de assinatura **Registre a sua assinatura gratuita do Azure Active Directory**. Se você tiver uma conta paga, não precisará usar um cartão de crédito ou pagamento.
 
 4.  Selecione **Active Directory** e selecione sua organização.
 
@@ -82,12 +81,12 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 > [!NOTE]
 
-> Você pode evitar o limite de registro de dispositivo usando os Gerenciadores de Registro do Dispositivo, conforme descrito em [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (Registrar dispositivos corporativos com o Gerenciador de Registro do Dispositivo no Microsoft Intune).
+> Você pode evitar o limite de registro de dispositivo usando a conta do Gerenciador de Registro do Dispositivo, conforme descrito em [Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivos no Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
-> Uma conta de usuário que é adicionada ao grupo de Gerenciadores de registro de dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
+> Uma conta de usuário que é adicionada à conta de Gerenciadores de Registro de Dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Portal da empresa temporariamente indisponível
-**Problema:** um usuário recebe um erro de **Portal da empresa temporariamente indisponível** no dispositivo.
+**Problema:** os usuários recebem um erro de **Portal da Empresa temporariamente indisponível** no dispositivo.
 
 **Resolução:**
 
@@ -99,19 +98,19 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 4.  Se isso falhar, confirme que as credenciais do usuário foram sincronizadas corretamente com o Active Directory do Azure.
 
-5.  Se o usuário fizer logon com êxito, um dispositivo iOS solicitará que você instale o aplicativo de Portal da Empresa do Intune e o registre. Em um dispositivo Android, você precisará instalar manualmente o aplicativo de Portal da Empresa do Intune, e depois disso você poderá tentar novamente a inscrição.
+5.  Se o usuário fizer logon com êxito, um dispositivo iOS solicitará que você instale o aplicativo de Portal da Empresa do Intune e o registre. Em um dispositivo Android, você precisará instalar manualmente o aplicativo de Portal da Empresa do Intune e depois disso você poderá tentar novamente o registro.
 
 ### <a name="mdm-authority-not-defined"></a>Autoridade MDM não definida
 **Problema:** um usuário recebe um erro de **Autoridade MDM não definida**.
 
 **Resolução:**
 
-1.  Verifique se a Autoridade MDM foi definida corretamente para a versão do serviço do Intune que você está usando, ou seja, para o Intune, MDM O365 ou System Center Configuration Manager com o Intune. Para o Intune, a Autoridade MDM é definida em **Administrador** &gt; **Gerenciamento de Dispositivo Móvel**. Para o Configuration Manager com o Intune, ela é definida quando você configura o conector do Intune e, no O365, ela é uma configuração de **Dispositivos Móveis**.
+1.  Verifique se a Autoridade MDM foi definida corretamente para o tipo de serviço do Intune que está usando (isto é, Intune, Office 365 ou System Center Configuration Manager com Intune). Para o Intune, a Autoridade MDM é definida em **Administrador** &gt; **Gerenciamento de Dispositivo Móvel**. Para o Configuration Manager com o Intune, ela é definida quando você configura o conector do Intune e, no Office 365, ela é uma configuração de **Dispositivos Móveis**.
 
     > [!NOTE]
-    > Após definir a Autoridade MDM, você só pode alterá-la entrando em contato com o Suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
+    > Após definir a Autoridade MDM, você pode alterá-la apenas entrando em contato com o Suporte, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-2.  Verifique se as credenciais do usuário foram sincronizadas corretamente com o Active Directory do Azure, verificando se seu UPN corresponde às informações do Active Directory no Portal da conta.
+2.  Verifique se as credenciais do usuário foram sincronizadas corretamente com o Azure Active Directory, verificando se seu UPN corresponde às informações do Active Directory no Portal do Office 365.
     Se o UPN não coincidir com as informações do Active Directory:
 
     1.  Desligue o DirSync no servidor local.
@@ -148,7 +147,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 **Problema:** quando você adiciona um segundo domínio verificado ao seu ADFS, os usuários com o sufixo de nome UPN do segundo domínio não poderão fazer logon nos portais ou registrar dispositivos.
 
 
-**Resolução:** os clientes do Microsoft Office 365 que utilizarem o logon único (SSO) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com)) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo.  Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
+**Resolução:** os clientes do Microsoft Office 365 que usam o SSO (logon único) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com)) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo. Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
 
 ## <a name="android-issues"></a>Problemas de Android
@@ -251,6 +250,34 @@ Se o certificado do servidor estiver instalado corretamente, você verá todas a
 
 
 ## <a name="ios-issues"></a>Problemas de iOS
+
+### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Os dispositivos estão inativos ou o console de administração não pode se comunicar com eles
+**Problema:** os dispositivos iOS não estão fazendo check-in no serviço do Intune. Os dispositivos devem fazer o check-in no serviço periodicamente para manter o acesso aos recursos corporativos protegidos. Se os dispositivos não fizerem o check-in:
+
+- Eles não poderão receber políticas, aplicativos e comandos remotos do serviço do Intune.
+- Eles mostram um Estado de Gerenciamento **não íntegro** no console do administrador.
+- Os usuários que são protegidos por políticas de acesso condicional podem perder o acesso aos recursos corporativos.
+
+**Resolução:** compartilhe as seguintes resoluções com seus usuários finais para ajudá-los a recuperar o acesso aos recursos corporativos.
+
+Quando os usuários iniciarem o aplicativo do Portal da Empresa do iOS, ele poderá informar se o dispositivo perdeu contato com o Intune. Se detectar que não há nenhum contato, ele tenta automaticamente a sincronização com o Intune para se reconectar e os usuários verão a notificação embutida **Tentando sincronizar...** . 
+
+  ![Notificação Tentando sincronizar](./media/ios_cp_app_trying_to_sync_notification.png)
+
+Se a sincronização for bem-sucedida, você verá uma notificação embutida **Sincronização bem-sucedida** no aplicativo do Portal da Empresa do iOS, indicando que o dispositivo está em um estado íntegro.
+
+  ![Notificação Sincronização bem-sucedida](./media/ios_cp_app_sync_successful_notification.png)
+
+Se a sincronização não for bem-sucedida, os usuários verão uma notificação embutida **Não é possível sincronizar** no aplicativo do Portal da Empresa do iOS. 
+
+  ![Não é possível sincronizar a notificação](./media/ios_cp_app_unable_to_sync_notification.png)
+
+Para corrigir o problema, os usuários devem selecionar o botão **Configurar**, que está à direita da notificação **Não é possível sincronizar**. O botão Configurar leva os usuários para a tela de fluxo Configuração do Acesso da Empresa, em que eles podem seguir os prompts para registrar seu dispositivo. 
+
+  ![Tela de Configuração de Acesso da Empresa](./media/ios_cp_app_company_access_setup.png)
+
+Depois de registrado, os dispositivos retornam ao estado íntegro e recuperam o acesso aos recursos da empresa.
+
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
 **Problema:** um usuário recebe um erro de **Falha na instalação de perfil** em um dispositivo iOS.
 
@@ -317,7 +344,7 @@ Se o certificado do servidor estiver instalado corretamente, você verá todas a
 
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de registro do iOS
-Uma lista de erros de registro do iOS é fornecida em nossa documentação de usuário do dispositivo em [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) (Erros ao tentar registrar seu dispositivo no Intune).
+Uma lista de erros de registro do iOS é fornecida em nossa documentação de usuário do dispositivo em [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-iOS-or-macOS-device-with-intune) (Erros ao tentar registrar seu dispositivo no Intune).
 
 ## <a name="pc--issues"></a>Problemas do computador
 
@@ -330,14 +357,14 @@ Isso pode ocorrer porque o computador já foi registrado anteriormente ou tem a 
 
 **Resolução:**
 
-1. Do menu **Iniciar**, **Execute** -> **MMC**.
-1. **Arquivo** -> **Adicionar/Remover Snap-ins**.
-1. Clique duas vezes em **Certificados**, escolha a **Conta de computador**, **Avançar** e selecione **Computador Local**.
-1. Clique duas vezes em **Certificados (computador local)**, escolha **Pessoal/Certificados**.
-1. Procure pelo certificado Intune emitido por Sc_Online_Issuing e exclua-o, se estiver presente
-1. Exclua essa chave do Registro, se ela existir: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
+1. No menu **Iniciar**, digite **Executar** -> **MMC**.
+1. Escolha **Arquivo** > **Adicionar/Remover Snap-ins**.
+1. Clique duas vezes em **Certificados**, escolha a **Conta de computador** > **Avançar** e selecione **Computador Local**.
+1. Clique duas vezes em **Certificados (computador local)** e escolha **Pessoal/Certificados**.
+1. Procure pelo certificado Intune emitido por Sc_Online_Issuing e exclua-o, se estiver presente.
+1. Se a chave do Registro a seguir existir, exclua-a: existir: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
 1. Tente registrar novamente.
-1. Se o computador ainda não puder ser registrado, procure e exclua esta chave, caso ela exista: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Se o computador ainda não conseguir realizar o registro, procure e exclua essa chave, se existir: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Tente registrar novamente.
 
     > [!IMPORTANT]
@@ -373,6 +400,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

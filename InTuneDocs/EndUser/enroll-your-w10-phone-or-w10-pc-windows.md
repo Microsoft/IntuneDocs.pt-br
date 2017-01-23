@@ -5,17 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-ms.reviewer: priyar
+searchScope:
+- Company Portal
+ms.reviewer: jieyan
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
+ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
+ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 
 ---
@@ -40,19 +42,19 @@ Quer saber mais? Saiba o que acontece quando você [registra seu dispositivo no 
 
  ![Windows 10 Desktop – Sobre seu PC](../media/settings_about_pc.png)
 
-3.  Se sua versão for a __1607__, prossiga com [estas etapas](enroll-your-w10-device-access-work-or-school.md). Se sua versão for a __1511__, prossiga com [estas etapas](enroll-your-w10-device-your-account.md).
+3.  Se sua versão for a __1607__, prossiga com [estas etapas](enroll-your-w10-device-access-work-or-school.md). Se sua versão for a __1511 ou inferior__, prossiga com [estas etapas](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Dispositivos com Windows 10 Mobile
 
 1.  Em __Iniciar__, passe o dedo sobre a lista __Todos os aplicativos__ e selecione o aplicativo de __Configurações__.
 2.  Toque em __Sistema__ e em __Sobre__.
 3.  Em __Informações do dispositivo__, toque em __Mais informações__. Você verá uma lista de informações sobre o dispositivo. Dentro dessa lista, localize a __Versão__.
-4.  Se sua versão for a __1607__, prossiga com [estas etapas](enroll-your-w10-device-access-work-or-school.md). Se sua versão for a __1511__, prossiga com [estas etapas](enroll-your-w10-device-your-account.md).
+4.  Se sua versão for a __1607__, prossiga com [estas etapas](enroll-your-w10-device-access-work-or-school.md). Se sua versão for a __1511 ou inferior__, prossiga com [estas etapas](enroll-your-w10-device-your-account.md).
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

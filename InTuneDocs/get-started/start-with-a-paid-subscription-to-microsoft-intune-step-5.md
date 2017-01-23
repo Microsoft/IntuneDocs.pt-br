@@ -14,14 +14,17 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1587ffbc85470624e53983278b7a6d00b6dc8a51
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
 
 
 ---
 
 
 # <a name="create-groups-to-organize-users-and-devices"></a>Crie grupos para organizar usuários e dispositivos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Os grupos no Intune oferecem grande flexibilidade para o gerenciamento de dispositivos e usuários. Você pode configurar grupos para atender às suas necessidades organizacionais (por exemplo, por localização geográfica, departamento ou características de hardware) e usá-los para executar uma variedade de tarefas administrativas, da implantação de políticas para um conjunto de usuários à implantação de aplicativos para um conjunto de dispositivos.
 
 ## <a name="group-management-moving-to-azure-ad"></a>Gerenciamento de grupo migrando para o Azure AD
@@ -84,6 +87,6 @@ O grupo recém-criado pode ser encontrado na lista **Grupos**, no espaço de tra
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

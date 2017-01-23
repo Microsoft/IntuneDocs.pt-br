@@ -14,14 +14,17 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Inscrever-se ou entrar no Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de poder inscrever-se ou entrar no Intune, você precisará determinar se sua organização já tem uma conta corporativa ou de estudante do Microsoft Online Services ou se tem um Contrato Enterprise ou contrato semelhante de licenciamento por volume com a Microsoft. Uma conta corporativa ou de estudante é fornecida quando você assina um contrato de licenciamento por volume com a Microsoft ou assina outros serviços em nuvem da Microsoft, como o Office 365.
 
 Se já tiver uma conta corporativa ou de estudante, você poderá simplesmente **entrar** com essa conta para adicionar o Intune ao seu ambiente de assinatura preexistente. Caso contrário, será necessário **inscrever-se** para criar uma nova conta usar para gerenciar o Intune para sua organização.
@@ -50,6 +53,6 @@ Depois de concluir o processo de inscrição, você será direcionado para uma p
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

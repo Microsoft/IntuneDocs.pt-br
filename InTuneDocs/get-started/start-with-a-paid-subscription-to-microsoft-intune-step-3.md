@@ -14,13 +14,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Adicionar usuários e conceder permissão administrativa para o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Como administrador, é possível adicionar usuários diretamente ou sincronizar os usuários do seu Active Directory local. Depois de adicionados, os usuários podem registrar dispositivos e acessar os recursos da empresa. Também é possível conceder aos usuários permissões adicionais, incluindo *administrador de locatários*, *administrador de serviços* e *permissões de gerenciador de registro de dispositivo*.
 
@@ -101,6 +103,6 @@ Os gerenciadores de registro de dispositivos são contas de usuário padrão que
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
