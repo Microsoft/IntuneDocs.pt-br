@@ -1,5 +1,5 @@
 ---
-title: "Políticas de conformidade do dispositivo | Microsoft Intune"
+title: "Políticas de conformidade do dispositivo | Microsoft Docs"
 description: "Este tópico explica o que são políticas de conformidade do dispositivo e como elas funcionam."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Políticas de conformidade do dispositivo no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>O que é uma política de conformidade?
 Para ajudar a proteger dados da empresa, você precisa garantir que os dispositivos usados para acessar dados e aplicativos da empresa estejam em conformidade com determinadas regras. Essas regras podem incluir o uso de um PIN para acessar os dispositivos e criptografar dados armazenados em dispositivos. Um conjunto dessas regras é chamado de política de conformidade.
 

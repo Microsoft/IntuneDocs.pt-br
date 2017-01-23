@@ -1,11 +1,11 @@
 ---
-title: "Conexões VPN (rede virtual privada) | Microsoft Intune"
+title: "Conexões VPN | Microsoft Docs"
 description: "Use perfis de VPN para implantar as configurações de VPN para usuários e dispositivos na sua organização."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>Conexões VPN no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Redes virtuais privadas (VPN) oferecem aos usuários acesso remoto seguro à rede da empresa. Dispositivos usam um *perfil de conexão VPN* para iniciar uma conexão com o servidor VPN. Use *perfis de VPN* no Microsoft Intune para implantar configurações de VPN para usuários e dispositivos na organização, para que eles possam se conectar à rede de forma fácil e segura.
 
@@ -67,7 +69,7 @@ L2TP|Perfil personalizado do iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
 > [!IMPORTANT]
 > Antes de poder usar perfis VPN implantados em um dispositivo, você deve instalar o aplicativo VPN aplicável para o perfil. Você pode usar as informações no tópico [Implantar aplicativos com o Microsoft Intune](deploy-apps-in-microsoft-intune.md) para ajudá-lo a implantar o aplicativo desejado usando o Intune.  
 
- Saiba como criar perfis de VPN personalizados usando configurações de URI em [Configurações personalizadas para perfis de VPN](custom-configurations-for-vpn-profiles.md).     
+ Saiba como criar perfis de VPN personalizados usando configurações de URI em [Configurações personalizadas para perfis de VPN](create-custom-vpn-profiles.md).     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
 
@@ -194,13 +196,10 @@ Após a implantação bem-sucedida, os usuários verão o nome da conexão VPN e
 
 Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho Painel.
 
-### <a name="see-also"></a>Consulte também
-[Configurações personalizadas para perfis de VPN](Custom-configurations-for-VPN-profiles.md)
-
-[VPN por aplicativo para Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Dec16_HO3-->
 
 

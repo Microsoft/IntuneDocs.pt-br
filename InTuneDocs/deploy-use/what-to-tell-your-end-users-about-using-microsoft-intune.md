@@ -1,5 +1,5 @@
 ---
-title: "Recursos sobre a experiência do usuário final com o Microsoft Intune | Microsoft Intune"
+title: "Recursos sobre a experiência do usuário final com o Microsoft Intune | Microsoft Docs"
 description: "Compartilhe informações com seus usuários finais para que sua implantação do Intune seja bem-sucedida."
 keywords: "usuários finais, usuários, comunicação"
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 83436b7d8e554eef0cf48d0f07999f06bf811bbc
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
 
 
 ---
@@ -35,7 +35,7 @@ Você pode usar esse [modelo de registro de usuário final personalizável do In
 Use os links a seguir para ver as etapas para as quais usuários são enviados do site de Portal da Empresa ou aplicativo. Os links são divididos em seções sobre a instalação do aplicativo do Portal da Empresa e registro no Intune, tarefas gerais que os usuários podem realizar em seus dispositivos e solução de problemas.
 
 - [Usando seu dispositivo Android com o Intune](/Intune/EndUser/using-your-android-device-with-intune)
-- [Usando seu dispositivo iOS ou macOS com o Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [Usando um dispositivo iOS ou macOS com o Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 - [Usando seu dispositivo Windows com o Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Usando o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website)
 
@@ -50,6 +50,6 @@ Para entender como os usuários finais podem obter aplicativos, escolha entre as
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

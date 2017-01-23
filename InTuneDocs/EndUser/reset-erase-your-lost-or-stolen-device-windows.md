@@ -1,28 +1,30 @@
 ---
-title: Redefinir (apagar) seu dispositivo Windows perdido ou roubado | Microsoft Intune
+title: Redefinir (apagar) seu dispositivo Windows perdido ou roubado | Microsoft Docs
 description: Redefinir um dispositivo Windows perdido ou roubado
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
-ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 421d20765ba03489a762e472b3856bfec723c594
 
 
 ---
 
 
-# Redefinir (apagar) o dispositivo perdido ou roubado
+# <a name="reset-erase-your-lost-or-stolen-device"></a>Redefinir (apagar) o dispositivo perdido ou roubado
 
 Se um dispositivo registrado no Intune for perdido ou roubado, será possível redefini-lo para as configurações padrão de fábrica usando o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
@@ -37,10 +39,10 @@ Se um dispositivo registrado no Intune for perdido ou roubado, será possível r
 
 3.  Toque no ícone **Redefinir** e depois em **redefinir**.
 
-Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

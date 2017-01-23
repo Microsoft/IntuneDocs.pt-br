@@ -1,5 +1,5 @@
 ---
-title: Restringir o acesso a redes com o Cisco ISE | Microsoft Intune
+title: Restringir o acesso a redes com o Cisco ISE | Microsoft Docs
 description: "Use o Cisco ISE com o Intune para que os dispositivos sejam registrados no Intune e compatíveis com a política antes de acessarem redes Wi-Fi e VPN controladas pelo Cisco ISE."
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b. Escolha o ícone de cadeado &gt;  **Mais informações**.
 > Verifique a data de validade do certificado, pois você terá que exportar e importar um novo certificado quando este expirar.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Obtenha um certificado autoassinado do ISE 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Obtenha um certificado autoassinado do ISE 
 
 1.  No console do ISE, vá para **Administração** > **Certificados** > **Certificados do Sistema** > **Gerar certificado Autoassinado**.  
 2.       Exporte o certificado autoassinado.
@@ -100,7 +100,7 @@ Verifique se todo o texto está em uma única linha
 |Ponto de Extremidade do Token OAuth 2.0|URL de emissão de token|
 |Atualizar seu código com sua ID de cliente|ID do Cliente|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Etapa 4: Carregar o certificado autoassinado do ISE no aplicativo do ISE criado no Azure AD
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Etapa 4: Carregar o certificado autoassinado do ISE no aplicativo do ISE criado no Azure AD
 1.     Obtenha o valor do certificado codificado em base64 e a impressão digital de um arquivo de certificado público .cer X509. Este exemplo usa o PowerShell:
    
       
@@ -189,6 +189,6 @@ Também há um [conjunto baixável de instruções de registro](https://gallery.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Criar uma política de conformidade do dispositivo | Microsoft Intune"
+title: "Criar uma política de conformidade do dispositivo | Microsoft Docs"
 description: "Crie uma política de conformidade para ajudar a proteger os computadores e dispositivos móveis usados para acessar os dados de sua empresa."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade do dispositivo no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve as etapas que você pode usar para criar uma política de conformidade que um dispositivo deve seguir para ser considerado compatível.
 
 ##  <a name="step-1-add-a-new-policy"></a>Etapa 1: Adicionar uma nova política
@@ -28,7 +31,7 @@ Este tópico descreve as etapas que você pode usar para criar uma política de 
 
   ![Captura de tela da página da política de conformidade no console de administração do Intune, mostrando a opção Adicionar no menu na parte superior da página](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>Etapa 2: Definir configurações
+##  <a name="step-2--configure-settings"></a>Etapa 2: Definir configurações
 Na página **Criar Política**, habilite as configurações necessárias:
   -   As configurações de segurança do sistema, como senha e criptografia.
   -   Configurações de integridade do dispositivo, como, por exemplo, se ele está ou não com jailbreak, ou foi relatado como íntegro pelo serviço de atestado de integridade do dispositivo do Windows.

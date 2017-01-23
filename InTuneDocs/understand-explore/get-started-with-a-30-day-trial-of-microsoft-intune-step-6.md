@@ -1,5 +1,5 @@
 ---
-title: "Outras opções e extras para avaliações do Intune | Microsoft Intune"
+title: "Outras opções e recursos extras para avaliações do Intune | Microsoft Docs"
 description: "Descreve os alertas, a notificação e os relatórios, além das funcionalidades gerais do Intune sobre as quais você precisa saber ao se inscrever para uma avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
@@ -13,13 +13,15 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Outras opções e extras para assinaturas de avaliação do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>Alertas, notificações e relatórios
 No console de administração do Intune, os **alertas** são usados para avaliar rapidamente a integridade geral dos dispositivos gerenciados na sua organização. Você pode configurar e personalizar alertas para que eles relatem e exibam somente as informações necessárias à sua organização. Você pode definir se um alerta está habilitado ou desabilitado, configurar a severidade, usar o limite de exibição para determinar a frequência em que um alerta de evento deve ser disparado antes da exibição de um alerta e também definir configurações específicas para certos tipos de alertas.
@@ -56,6 +58,6 @@ Converter em uma [assinatura paga](get-started-with-a-30-day-trial-of-microsoft-
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

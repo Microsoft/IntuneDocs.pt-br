@@ -1,5 +1,5 @@
 ---
-title: Novidades | Microsoft Intune
+title: Novidades | Microsoft Docs
 description: "Descubra as novidades deste mês e os lançamentos anteriores do Microsoft Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9fd309a10d9eb020795c5ce46df124b13dc1a006
-ms.openlocfilehash: d117c929fbde4dd0a39503b8da695aa9c9ea91ad
+ms.sourcegitcommit: 1d9ebc7fd727b80091625ed5256ae634323a9257
+ms.openlocfilehash: f7e71d20923e113b533668a7b5aef688de196182
 
 
 ---
@@ -33,15 +33,12 @@ A experiência de administração no portal do Azure usará o novo agrupamento j
 Em caso de dúvidas sobre a linha do tempo para a migração do locatário, entre em contato com nossa equipe de migração em [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Integração de gerenciamento de despesas de telecomunicações na visualização pública do portal do Azure<!--747605-->
-Agora estamos começando a visualizar a integração com serviços de gerenciamento de despesas de telecomunicações de terceiros (TEM) no portal do Azure. Você pode usar o Intune para impor limites de uso de dados locais e móveis. Estamos começando essas integrações com o [Saaswedo](http://www.saaswedo.com).
+Agora estamos começando a visualizar a integração com serviços de gerenciamento de despesas de telecomunicações de terceiros (TEM) no portal do Azure. Você pode usar o Intune para impor limites de uso de dados locais e móveis. Estamos começando essas integrações com o [Saaswedo](http://www.saaswedo.com). Para habilitar esse recurso no locatário de teste, [contate o Suporte da Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ## <a name="new-capabilities"></a>Novos recursos
 
 ### <a name="multi-factor-authentication-across-all-platforms---747590--"></a>Autenticação multifator em todas as plataformas <!--747590-->
 Agora você pode impor a autenticação multifator (MFA) em um grupo selecionado de usuários quando registram um dispositivo iOS, Android, Windows 8.1 e posterior ou Windows Phone 8.1 e posterior do Portal de Gerenciamento do Azure, configurando o MFA no aplicativo de Registro do Microsoft Intune no Azure Active Directory.
-
-<!--VSO 679339, awaiting chrisgre for go-live--><!--### Conditional access for MAM with SharePoint Online
-Você pode impedir que os aplicativos sem suporte das políticas de gerenciamento do aplicativo móvel do Intune (MAM) acessem o SharePoint Online.  Você pode começar usando o gerenciamento de aplicativo móvel do Intune no portal do Azure. Procure a seção __Acesso Condicional__ na folha __Configurações__ que inclui a opção para o SharePoint Online. Este recurso será enviado separadamente do restante da versão de serviço. Saiba mais sobre esse novo recurso [aqui](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
 
 ### <a name="ability-to-restrict-mobile-device-enrollment--747596--"></a>Capacidade de restringir o registro de dispositivos móveis<!--747596-->
 O Intune está adicionando novas restrições de registro que controlam quais plataformas de dispositivos móveis têm permissão para registrar. O Intune separa plataformas de dispositivos móveis como iOS, macOS, Android, Windows e Windows Mobile.
@@ -56,7 +53,7 @@ O Intune marca todos os novos dispositivos como pessoais, a menos que o administ
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>A Autenticação Multifator no Registro movida para o portal do Azure <!--VSO 750545-->
 Anteriormente, os administradores iriam para o console do Intune ou para o console do Configuration Manager (anterior à versão de outubro de 2016) a fim de definir o MFA para os registros do Intune. Com esse recurso atualizado, você fará o logon no [portal do Microsoft Azure](https://manage.windowsazure.com) usando suas credenciais do Intune e configurará o MFA por meio do Azure AD. Saiba mais sobre isso [aqui](https://aka.ms/mfa_ad).
 
-### <a name="company-portal-app-for-android-now-available-in-china---vso-658093--"></a>O aplicativo do Portal da Empresa para Android já disponível na China <!--VSO 658093-->
+### <a name="company-portal-app-for-android-now-available-in-china--vso-658093--"></a>O aplicativo do Portal da Empresa para Android já disponível na China <!--VSO 658093-->
 Estamos publicando o aplicativo do Portal da Empresa para Android para download na China. Devido à ausência da Google Play Store na China, os dispositivos Android devem obter aplicativos dos mercados de aplicativo chineses. O aplicativo do Portal da Empresa para Android estará disponível para download nas seguintes lojas:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
@@ -88,10 +85,10 @@ A partir de meados de dezembro de 2016, os usuários não poderão usar os aplic
 ### <a name="see-also"></a>Consulte também
 * [Blog do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Mapa da Plataforma de Nuvem](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Versões anteriores do Intune](whats-new-archive.md)
+* [Arquivo de novidades](whats-new-archive.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

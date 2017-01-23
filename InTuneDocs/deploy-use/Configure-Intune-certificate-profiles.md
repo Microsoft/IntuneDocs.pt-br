@@ -1,5 +1,5 @@
 ---
-title: Configurar perfis de certificado | Microsoft Intune
+title: Configurar perfis de certificado | Microsoft Docs
 description: Saiba como criar um perfil de certificado do Intune.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfis de certificado do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Depois de configurar a infraestrutura e os certificados conforme descrito em [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) (Configurar infraestrutura de certificado para SCEP) ou [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md) (Configurar a infraestrutura de certificado para PFX), você pode criar perfis de certificado. Este é o processo:
 
 - **Tarefa 1**: exportar o certificado de AC Raiz Confiável
@@ -157,6 +160,6 @@ Em seguida, saiba como usar certificados para proteger emails, Wi-Fi e perfis de
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

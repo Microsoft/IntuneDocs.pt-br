@@ -1,5 +1,5 @@
 ---
-title: Gerenciar alertas | Microsoft Intune
+title: Gerenciar alertas | Microsoft Docs
 description: "Use o espaço de trabalho Alertas no Intune para avaliar a integridade geral dos dispositivos na sua organização."
 keywords: 
 author: arob98
@@ -15,13 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b84a6e353103f35ad62fb95052c44581dd439963
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 67a7e25c8365970eb108b2529692a6f67c5de054
 
 
 ---
 
 # <a name="manage-alerts-in-microsoft-intune"></a>Gerenciar alertas no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use o espaço de trabalho **Alertas** no console de administração do Intune para avaliar a integridade geral dos dispositivos na sua empresa e identificar problemas.
 
 ## <a name="view-active-alerts"></a>Exibir alertas ativos

@@ -1,11 +1,11 @@
 ---
-title: "O que é o Portal da Empresa? | Microsoft Intune"
+title: "O que é o Portal da Empresa? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
+ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 
 
 ---
@@ -41,10 +41,10 @@ Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o
 Para ver o que você pode fazer usando o site do Portal da Empresa versus o que você pode fazer no aplicativo do Portal da Empresa no seu dispositivo, escolha um dos seguintes links:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS e macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Site do Portal da Empresa](using-the-intune-company-portal-website.md)
+- [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
+- [Usando dispositivos iOS e macOS com o Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
+- [Usando o site do Portal da Empresa](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>O que acontece quando você adiciona um computador ou dispositivo ao Portal da Empresa?
 Quando você adiciona um computador ou dispositivo ao Portal da Empresa, um software pode ser instalado ou um aplicativo baixado (dependendo do dispositivo).  Você também está concedendo permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
@@ -58,9 +58,9 @@ Para saber mais sobre o que o administrador de TI pode e não pode ver no seu di
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Que tipo de computadores ou dispositivos você pode adicionar ao Portal da Empresa?
 
--   Dispositivos iPhone, iPad e macOS
+-   Dispositivos Apple que usam iOS (iPhone, iPad) e macOS (iMac MacBook)
 
--   Dispositivos móveis Android
+-   Dispositivos Android
 
 -   Dispositivos Windows
     -   Windows 10 Mobile
@@ -96,6 +96,6 @@ Se você precisar de Ajuda, entre em contato com o administrador de TI. Para obt
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

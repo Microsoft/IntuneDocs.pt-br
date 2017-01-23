@@ -1,5 +1,5 @@
 ---
-title: Aplicativo de Portal da Empresa do Windows 8.0 preterido | Microsoft Intune
+title: Aplicativo do Portal da Empresa do Windows 8.0 preterido | Microsoft Docs
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows Phone 8.0 com o Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -13,18 +13,20 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 7cab684c3d51dc9d51ac252b5cbb7b61ffd29dfa
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: c1e39aa0944785f2f0fa624a8ba2cd55814ece7f
 
 
 ---
 
-#  Aplicativo do Portal da Empresa do Windows Phone 8.0 preterido
+#  <a name="windows-phone-80-company-portal-app-deprecated"></a>Aplicativo do Portal da Empresa do Windows Phone 8.0 preterido
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Desde setembro de 2016, o aplicativo de Portal da Empresa do Windows 8.0 foi preterido. Os dispositivos registrados com Windows 8.0 permanecerão no gerenciamento, mas nenhum dispositivo novo poderá ser registrado.
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

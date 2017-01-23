@@ -1,5 +1,5 @@
 ---
-title: "Encapsular aplicativos iOS com a Ferramenta de Disposição do Aplicativo do Intune | Microsoft Intune"
+title: "Encapsular aplicativos iOS com a Ferramenta de Disposição do Aplicativo do Intune | Microsoft Docs"
 description: "Use as informações neste tópico para aprender a encapsular seus aplicativos iOS sem alterar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
 keywords: 
 author: mtillman
@@ -14,34 +14,154 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para gerenciamento de aplicativos móveis com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
-Use a Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS para alterar o comportamento de aplicativos iOS internamente ao habilitar os recursos de proteção do aplicativo do Intune sem alterar o código do aplicativo.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A ferramenta é um aplicativo de linha de comando do macOS que cria um wrapper em torno de um aplicativo. Depois que um aplicativo for processado, você poderá alterar sua funcionalidade usando as [políticas de gerenciamento de aplicativo móvel](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) do Intune implantadas pelo administrador de TI.
+Use a Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS para habilitar políticas de proteção do aplicativo do Intune em aplicativos iOS internos sem alterar o código do aplicativo em si.
+
+A ferramenta é um aplicativo de linha de comando do macOS que cria um wrapper em torno de um aplicativo. Quando um aplicativo é processado, é possível alterar a funcionalidade do aplicativo implantando [políticas de proteção do aplicativo](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) nele.
 
 Para baixar a ferramenta, consulte [Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Cumprir os pré-requisitos da Ferramenta de Disposição do Aplicativo
-Consulte a postagem de blog [Como obter os pré-requisitos para a Ferramenta de Disposição do Aplicativo do Intune para iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) para saber mais sobre como obter os pré-requisitos.
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Pré-requisitos gerais para a Ferramenta de Disposição do Aplicativo
 
-|Requisito|Mais informações|
-|---------------|--------------------------------|
-|Sistema operacional e conjunto de ferramentas com suporte | Você precisa executar a Ferramenta de Disposição do Aplicativo em um computador macOS que executa o OS X 10.8.5 ou posterior e que tem a versão 5 do conjunto de ferramentas XCode ou posterior instalada.|
-|Certificado de autenticação e perfil de provisionamento | Você precisa ter um perfil de provisionamento e um certificado de autenticação da Apple. Consulte sua [Apple developer documentation (Documentação para desenvolvedores da Apple)](https://developer.apple.com/).|
-|Processamento de um aplicativo com a Ferramenta de Encapsulamento de Aplicativo  |Os aplicativos devem ser desenvolvidos e assinados por sua empresa ou por um ISV (fornecedor independente de software). Você não pode usar essa ferramenta para processar aplicativos da Apple Store. O aplicativo deve ser escrito para iOS 8.0 ou posterior. Aplicativos devem estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte a documentação para desenvolvedor da Apple. Por fim, a aplicativo deve ter a extensão **.app**ou **.ipa**.|
-|Aplicativos que a ferramenta não pode processar | Aplicativos criptografados, não assinados e com atributos de arquivo estendido.|
-|Direitos de configuração para seu aplicativo|Antes de encapsular o aplicativo, você precisa definir direitos, que concedem ao aplicativo permissões e recursos adicionais além daqueles concedidos normalmente. Consulte [Configurando direitos de aplicativo](#setting-app-entitlements) para obter instruções.|
+Antes de executar a Ferramenta de Disposição do Aplicativo, é necessário atender a alguns pré-requisitos gerais:
 
-## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
+* Baixe a [Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
+
+* Um computador macOS que executa o OS X 10.8.5 ou posterior e que tem o conjunto de ferramentas do XCode versão 5 ou posterior instalado.
+
+* O aplicativo iOS de entrada deve ser desenvolvido e assinado por sua empresa ou por um ISV (fornecedor independente de software).
+
+  * O arquivo do aplicativo de entrada deve ter a extensão **.ipa** ou **.app**.
+
+  * O aplicativo de entrada deve ser compilado para o iOS 8.0. ou posterior.
+
+  * O aplicativo de entrada não pode ser criptografado.
+
+  * O aplicativo de entrada não pode ter atributos de arquivo estendidos.
+
+  * O aplicativo de entrada deve ter os direitos definidos antes de ser processado pela Ferramenta de Disposição do Aplicativo do Intune. Os [direitos](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) concedem permissões adicionais ao aplicativo, bem como funcionalidades além daquelas normalmente concedidas. Consulte [Configurando direitos de aplicativo](#setting-app-entitlements) para obter instruções.
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Pré-requisitos do Desenvolvedor da Apple para a Ferramenta de Disposição do Aplicativo
+
+
+Para distribuir aplicativos encapsulados exclusivamente para os usuários de sua organização, você precisa de uma conta no [Programa Corporativo do Desenvolvedor da Apple](https://developer.apple.com/programs/enterprise/) e várias entidades para autenticação do aplicativo vinculadas à sua conta de Desenvolvedor da Apple.
+
+Para saber mais sobre como distribuir aplicativos iOS internamente para os usuários de sua organização, leia o guia oficial [Distributing Apple Developer Enterprise Program Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1) (Distribuindo aplicativos do Programa Corporativo do Desenvolvedor da Apple).
+
+Você precisará do seguinte para distribuir aplicativos encapsulados pelo Intune:
+
+* Uma conta de desenvolvedor no Programa Corporativo do Desenvolvedor da Apple.
+
+* Certificado de autenticação de distribuição interno e ad hoc com um Identificador de Equipe válido.
+
+  * Você precisará do hash SHA1 do certificado de autenticação como um parâmetro para a Ferramenta de Disposição do Aplicativo do Intune.
+
+
+* Perfil de provisionamento de distribuição interno.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Etapas para criar uma conta Corporativa do Desenvolvedor da Apple
+1. Acesse o [site do Programa Corporativo do Desenvolvedor da Apple](https://developer.apple.com/programs/enterprise/).
+
+2. No canto superior direito da página, clique em **Registrar**.
+
+3. Leia a lista de verificação dos itens de que você precisa para se registrar. Clique em **Iniciar Registro** na parte inferior da página.
+
+4. **Conecte-se** com a ID da Apple de sua organização. Se você não tiver uma, clique em **Criar ID da Apple**.
+
+5. Selecione seu **Tipo de Entidade** e clique em **Continuar**.
+
+6. Preencha o formulário com as informações de sua organização. Clique em **Continue**. Neste ponto, a Apple o contatará para verificar se você está autorizado para registrar sua organização.
+
+8. Após a verificação, clique em **Concordo com a Licença**.
+
+9. Depois de concordar com a licença, conclua com a **compra e ativação do programa**.
+
+10. Se você for um agente de equipe (a pessoa que participa do Programa Corporativo do Desenvolvedor da Apple em nome de sua organização), crie sua equipe primeiro convidando os membros da equipe e atribuindo funções. Para saber como gerenciar sua equipe, leia a documentação da Apple [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) (Gerenciando sua equipe de conta de desenvolvedor).
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Etapas para criar um certificado de autenticação da Apple
+
+1. Acesse o [portal do Desenvolvedor da Apple](https://developer.apple.com/).
+
+2. No canto superior direito da página, clique em **Conta**.
+
+3. **Conecte-se** com sua ID organizacional da Apple.
+
+4. Clique em **Certificados, IDs e Perfis**.
+
+  ![Portal do Desenvolvedor da Apple](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Clique no botão ![Sinal de adição do portal do Desenvolvedor da Apple](../media/app-wrapper/iOS-signing-cert-2.png) no canto superior direito para adicionar um certificado do iOS.
+
+6. Opte por criar um certificado **Interno e Ad Hoc** em **Produção**.
+
+  ![Selecionar o certificado Interno e Ad Hoc](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. Clique em **Avançar** na parte inferior da página.
+
+8. Leia as instruções sobre como criar uma **CSR (Solicitação de Assinatura de Certificado)** usando o aplicativo Acesso ao Conjunto de Chaves no computador macOS.
+
+  ![Ler as instruções para criar uma CSR](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Siga as instruções acima para criar uma Assinatura de Solicitação de Certificado. No computador macOS, inicie o aplicativo **Acesso ao Conjunto de Chaves**.
+
+10. No menu do macOS na parte superior da tela, acesse **Acesso ao Conjunto de Chaves > Assistente de Certificado > Solicitar um Certificado de uma Autoridade de Certificação**.  
+
+  ![Solicitar um certificado de uma Autoridade de Certificação no Acesso ao Conjunto de Chaves](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Siga as instruções no site do desenvolvedor da Apple acima sobre como criar um arquivo CSR. Salve o arquivo CSR no computador macOS.
+
+  ![Solicitar um certificado de uma Autoridade de Certificação no Acesso ao Conjunto de Chaves](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Retorne ao site do desenvolvedor da Apple. Clique em **Continue**. Em seguida, carregue o arquivo CSR.
+
+13. A Apple gera o certificado de autenticação. Baixe e salve-o em um local fácil de ser lembrado no computador macOS.
+
+  ![Baixar o certificado de autenticação](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Clique duas vezes no arquivo de certificado que você acabou de baixar para adicionar o certificado a um conjunto de chaves.
+
+15. Abra **Acesso ao Conjunto de Chaves** novamente. Localize o certificado pesquisando **“iPhone”** na barra de pesquisa à direita na janela Acesso ao Conjunto de Chaves. Clique com o botão direito do mouse no item para exibir o menu e clique em **Obter Informações**.
+
+  ![Adicionar o certificado a um conjunto de chaves](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Uma janela informativa é exibida. Role até a parte inferior e procure o rótulo **Impressões Digitais**. Copie a cadeia de caracteres **SHA1** para ser usada como o parâmetro -c para a Ferramenta de Disposição do Aplicativo.
+
+  ![Adicionar o certificado a um conjunto de chaves](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Etapas para criar um perfil de Provisionamento de Distribuição Interno
+
+1. Volte ao [portal de contas do Desenvolvedor da Apple](https://developer.apple.com/account/) e **conecte-se** com sua ID organizacional da Apple.
+
+2. Clique em **Certificados, IDs e Perfis**.
+
+3. Clique no botão ![Sinal de adição do portal do Desenvolvedor da Apple](../media/app-wrapper/iOS-signing-cert-2.png) no canto superior direito para adicionar um perfil de provisionamento do iOS.
+
+4. Opte por criar um perfil de provisionamento **Interno** em **Distribuição**.
+
+  ![Selecionar o perfil de provisionamento Interno](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Clique em **Continue**. Lembre-se de vincular o certificado de autenticação gerado anteriormente ao perfil de provisionamento.
+
+6. Siga as etapas para baixar o perfil (com a extensão .mobileprovision) no computador macOS.
+
+7. Salve o arquivo em um local fácil de ser lembrado. Esse arquivo será usado para o parâmetro -p durante o uso da Ferramenta de Disposição do Aplicativo.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Baixar a Ferramenta de Disposição do Aplicativo
 
 1.  Baixe os arquivos para a Ferramenta de Disposição do Aplicativo no [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) para um computador macOS.
 

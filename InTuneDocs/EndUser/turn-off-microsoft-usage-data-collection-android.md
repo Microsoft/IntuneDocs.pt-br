@@ -1,34 +1,38 @@
 ---
-title: Desligar a coleta de dados de uso da Microsoft para Android | Microsoft Intune
+title: Como desligar a coleta de dados da Microsoft | Microsoft Docs
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e00d2d1e8e46b512eb70c2c594712b9505541ec
-ms.openlocfilehash: 01fce3200a5aa481dde6cd560cbad426592ef381
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b2554e66150f8b6d61f184bf739750c482b3058e
 
 
 ---
 
+# <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a coleta de dados de uso da Microsoft
 
-# Desativar a coleta de dados de uso da Microsoft
-Para aprimorar seus produtos e serviços, a Microsoft coleta automaticamente dados anônimos sobre o desempenho e a confiabilidade do aplicativo do Portal da Empresa e sobre como ele é usado. Você pode desligar a coleta de dados em seu dispositivo Android usando a configuração de **Dados de Uso** no aplicativo Portal da Empresa. Os administradores de TI não têm controle sobre a coleta desses dados e não podem alterar a seleção dessa configuração.
+A Microsoft coleta automaticamente determinados dados sobre nossos produtos e serviços. Fazemos isso para melhorar a confiabilidade e o desempenho de nossos produtos, incluindo o aplicativo Portal da Empresa. Embora esses dados sejam anônimos, alguns usuários talvez não se sintam à vontade com essa coleta. O administrador de TI não tem controle sobre a coleta desses dados e não pode alterar a seleção dessa configuração.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se desejar desligar a coleta desses dados em seu dispositivo Android, abra a configuração **Dados de Uso** no aplicativo Portal da Empresa.
+
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Registrar dispositivos de propriedade corporativa | Microsoft Intune
+title: Gerenciar dispositivos de propriedade corporativa | Microsoft Docs
 description: "Registre dispositivos corporativos de diversas formas, com base no tipo de dispositivo, em como ele foi comprado e nas necessidades da organização."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos corporativos usando o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Registre dispositivos corporativos ou da organização para registrá-los com o Intune de diversas formas, dependendo do tipo do dispositivo, de como ele foi adquirido e das necessidades da organização. Você também pode instalar o aplicativo de Portal da Empresa para registrar e gerenciar dispositivos corporativos, como em cenários de BYOD ("traga seu próprio dispositivo").
 
@@ -63,6 +65,6 @@ Quando um dispositivo é marcado como corporativo, você verá **Corporativo** n
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

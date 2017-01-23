@@ -1,9 +1,9 @@
 ---
-title: "Pré-requisitos para políticas de MAM | Microsoft Intune"
+title: "Pré-requisitos para políticas de MAM | Microsoft Docs"
 description: "Este tópico descreve os pré-requisitos para a configuração de usuários antes de criar políticas de gerenciamento de aplicativo móvel."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>Preparar-se para configurar políticas de gerenciamento de aplicativo móvel no portal do Azure
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve os pré-requisitos e as etapas que você deve concluir **antes** de criar políticas de MAM (gerenciamento de aplicativo móvel) no portal do Azure.
 
 Para compreender como as políticas de MAM do Intune podem proteger os dados da empresa, consulte [Proteger aplicativos e dados usando políticas de gerenciamento de aplicativo móvel](protect-apps-and-data-with-microsoft-intune.md).
@@ -121,6 +124,6 @@ A tabela a seguir lista as funções e as permissões que podem ser atribuídas 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

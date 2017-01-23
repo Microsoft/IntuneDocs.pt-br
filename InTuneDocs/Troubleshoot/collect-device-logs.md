@@ -1,11 +1,11 @@
 ---
-title: Coletar logs de dispositivo| Microsoft Intune
+title: Coletar logs de dispositivo | Microsoft Docs
 description: Saiba como coletar logs de seus dispositivos gerenciados.
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c05b4e16f7b0a87215a0cd20f7d559cd8497296
-ms.openlocfilehash: 0f175b1eb2d80a68c8b7864d21f5a9e585de458b
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: 7009cf7626008124e4c8a71198e21ae6def93581
 
 
 ---
 
 # <a name="device-logs"></a>Logs de dispositivo
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Como parte dos esforços de solução de problemas, convém coletar logs de dispositivos de usuário. As instruções para coletar os logs são descritas aqui. Normalmente, você precisará de acesso ao dispositivo para obter esses logs ou solicitar do usuário que ele colete os logs e envie para você.
 
@@ -57,6 +59,6 @@ Para o Portal da Empresa do Windows, os logs estão localizados em *%localappdat
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

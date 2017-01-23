@@ -1,11 +1,11 @@
 ---
-title: Solucionar problemas de perfis de email | Microsoft Intune
+title: Solucionar problemas de perfis de email | Microsoft Docs
 description: "Problemas com o perfil de email e como resolvê-los."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Solucionar problemas de perfis de email no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Aqui estão relacionados alguns problemas com o perfil de email e como resolvê-los.
 
 Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
 
 
-## <a name="unable-to-send-images-from-email-account"></a>Não é possível enviar imagens da conta de email
+## <a name="unable-to-send-images-from--email-account"></a>Não é possível enviar imagens da conta de email
 Os usuários que têm contas de email configuradas automaticamente não podem enviar imagens de seus dispositivos.
 Isso ocorre quando a opção **Permitir que o email seja enviado de aplicativos de terceiros** não está habilitada.
 
@@ -61,7 +64,7 @@ Se o usuário instalou um perfil de email antes de provisionar um perfil pelo In
 
 Como o Samsung KNOX não usa o nome do host para identificar o perfil, é recomendável que você não crie vários perfis de email para implantar o mesmo endereço de email em hosts diferentes, pois eles substituirão uns aos outros.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
 **Problema**: depois de criar e implantar um perfil de email do Exchange Active Sync para Samsung KNOX Standard para vários dispositivos Android, o erro **0x87D1FDE8** ou **falha na correção** é reportado na guia da política &gt; das propriedades do dispositivo.
 
 Examine a configuração do seu perfil de EAS para Samsung KNOX e a política de origem. Não há suporte para a opção de sincronização das Samsung Notes e essa opção não deve estar selecionada em seu perfil. Certifique-se de que os dispositivos tiveram tempo suficiente, se até 24 horas, para processar a política.
@@ -71,6 +74,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

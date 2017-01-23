@@ -1,9 +1,9 @@
 ---
-title: "Monitorar políticas de MAM com o Microsoft Intune | Microsoft Intune"
+title: "Monitorar políticas de MAM com o Microsoft Intune | Microsoft Docs"
 description: "Veja quantos usuários têm a política e faça uma busca detalhada para encontrar mais informações."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 2a18ad7226c6fc6de0277f1f20443ea64dc8b918
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Depois de configurar uma política de MAM (gerenciamento de dispositivo móvel) e aplicá-la aos usuários, você pode monitorar o status de conformidade no [portal do Azure](https://portal.azure.com). O portal do Azure inclui informações sobre os usuários afetados pela política, o status de conformidade e os problemas que os usuários possam encontrar.
 ## <a name="summary-view"></a>Exibição de Resumo
 Na folha **Gerenciamento de aplicativo móvel do Intune**, você pode ver um resumo do status de conformidade:
@@ -80,6 +83,6 @@ A exibição detalhada exibe a mensagem de erro, o aplicativo que foi acessado q
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

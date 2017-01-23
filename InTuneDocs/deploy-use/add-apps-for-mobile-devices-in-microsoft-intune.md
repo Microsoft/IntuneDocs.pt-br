@@ -1,5 +1,5 @@
 ---
-title: Adicionar aplicativos a dispositivos registrados | Microsoft Intune
+title: Adicionar aplicativos para dispositivos registrados | Microsoft Docs
 description: "Antes de implantar um aplicativo, você deve adicioná-lo ao Intune. Em seguida, ele está disponível no console do Intune, em que você pode implantá-lo e gerenciá-lo."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ccd9dacdb2c59febdd741b1a95617cadc1347639
 
 
 ---
 
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Adicionar aplicativos para dispositivos registrados ao Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Antes de implantar ou gerenciar um aplicativo, você deve adicioná-lo ao Microsoft Intune. Este tópico mostra como adicionar aplicativos para dispositivos registrados.
 
@@ -101,6 +103,6 @@ Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Configurar gerenciamento de iOS e MAC | Microsoft Intune
+title: Configurar o gerenciamento do iOS e do Mac | Microsoft Docs
 description: "Habilite MDM (gerenciamento de dispositivo móvel) para dispositivos iOS, inclusive iPads e iPhones, bem como dispositivos Mac OS X com o Microsoft Intune."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 641d2db2bfb49ce6c4f88d823188a714e61f683c
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: 594b6b66a4c756155e958815b926674e63f07bb5
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>Configurar gerenciamento de dispositivos iOS e Mac
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Intune possibilita o MDM (gerenciamento de dispositivo móvel) de iPads, iPhones e dispositivos Mac OS X, além de conceder aos usuários acesso a aplicativos e email da empresa. Um certificado APNs (Apple Push Notification Service) é necessário para o Intune gerenciar dispositivos iOS e Mac. Depois que o certificado for adicionado ao Intune, os usuários poderão instalar o aplicativo de Portal da Empresa para registrar seus dispositivos ou o administrador poderá configurar o [gerenciamento de dispositivos iOS de propriedade da empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurar Intune**<br>
@@ -48,7 +51,7 @@ O Intune possibilita o MDM (gerenciamento de dispositivo móvel) de iPads, iPhon
 
     Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
     - [Recursos sobre a experiência do usuário final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [Diretrizes do usuário final para dispositivos iOS e Mac](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
+    - [Diretrizes do usuário final para dispositivos iOS e Mac](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 Se sua empresa ou organização adquirir dispositivos iOS para os usuários, esses dispositivos também poderão ser registrados para gerenciamento como [dispositivos iOS de propriedade da empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -57,6 +60,6 @@ Se sua empresa ou organização adquirir dispositivos iOS para os usuários, ess
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

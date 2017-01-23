@@ -1,5 +1,5 @@
 ---
-title: Configurar a infraestrutura de certificado para SCEP | Microsoft Intune
+title: Configurar a infraestrutura de certificado para o SCEP | Microsoft Docs
 description: Infraestrutura para criar e implantar perfis de certificado SCEP.
 keywords: 
 author: robstackmsft
@@ -14,11 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar a infraestrutura de certificado para SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve qual infraestrutura é necessária para criar e implantar perfis de certificado SCEP.
 
 ### <a name="on-premises-infrastructure"></a>Infraestrutura local
@@ -93,7 +96,7 @@ Nesta tarefa, você vai:
 
 ##### <a name="to-configure-the-certification-authority"></a>Para configurar a autoridade de certificação
 
-1.  Faça logon como administrador corporativo. 
+1.  Faça logon como administrador corporativo.
 
 2.  Na AC emissora, use o snap-in de Modelos de Certificado para criar um novo modelo personalizado ou copie um modelo existente (como o modelo de Usuário) e o edite para uso com o NDES.
 
@@ -109,7 +112,7 @@ Nesta tarefa, você vai:
         > Para modelos de certificado do iOS e Mac OS X, na guia **Extensões**, edite **Uso da Chave** e verifique se **A assinatura é uma prova de origem** não está selecionado.
 
     -   Na guia **Segurança**, adicione a conta de serviço NDES e dê a ela permissões para **Registrar** no modelo. Administradores do Intune que criarão perfis SCEP exigem direitos de **leitura** para que possam navegar no modelo durante a criação de perfis SCEP.
-    
+
     > [!NOTE]
     > Para revogar certificados, a conta de serviço do NDES precisa de direitos de *Emitir e Gerenciar Certificados* para cada modelo de certificado usado por um perfil de certificado.
 
@@ -120,19 +123,19 @@ Nesta tarefa, você vai:
 
 Aqui estão as capturas de tela de um exemplo de configuração de modelo.
 
-![Modelo, guia de tratamento de solicitação](..\media\scep_ndes_request_handling.png) 
+![Modelo, guia de tratamento de solicitação](..\media\scep_ndes_request_handling.png)
 
-![Modelo, guia de nome da entidade](..\media\scep_ndes_subject_name.jpg) 
+![Modelo, guia de nome da entidade](..\media\scep_ndes_subject_name.jpg)
 
-![Modelo, guia de segurança](..\media\scep_ndes_security.jpg) 
+![Modelo, guia de segurança](..\media\scep_ndes_security.jpg)
 
-![Modelo, guia de extensões](..\media\scep_ndes_extensions.jpg) 
+![Modelo, guia de extensões](..\media\scep_ndes_extensions.jpg)
 
-![Modelo, guia de requisitos de emissão](..\media\scep_ndes_issuance_reqs.jpg) 
+![Modelo, guia de requisitos de emissão](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > Para Políticas de Aplicativo (na captura de tela 4), adicione somente as políticas de aplicativo necessárias. Confirme suas escolhas com seus administradores de segurança.
-   
+
 
 
 Para configurar a AC para permitir que o solicitante especifique o período de validade, execute os seguintes comandos na AC:
@@ -239,12 +242,12 @@ Nesta tarefa, você vai:
 
 4. No Gerenciador do IIS, escolha **Site Padrão** -> **Filtragem de Solicitações** -> **Editar Configuração do Recurso** e altere o **Comprimento máximo da URL** e **Cadeia de caracteres de consulta máxima** para *65534*, conforme mostrado.
 
-    ![Comprimento máximo de URL e consulta do IIS](..\media\SCEP_IIS_max_URL.png) 
+    ![Comprimento máximo de URL e consulta do IIS](..\media\SCEP_IIS_max_URL.png)
 
 5.  Reinicie o servidor. Executar **iisreset** no servidor não será suficiente para finalizar as alterações.
 6. Navegue até http://*FQDN*/certsrv/mscep/mscep.dll. Você deve ver uma página NDES semelhante a esta:
 
-    ![Testar NDES](..\media\SCEP_NDES_URL.png) 
+    ![Testar NDES](..\media\SCEP_NDES_URL.png)
 
     Se você receber **503 Serviço indisponível**, verifique o Visualizador de Eventos. É provável que o pool de aplicativos seja interrompido devido a um direito ausente para o usuário NDES. Esses direitos são descritos na Tarefa 1.
 
@@ -350,6 +353,6 @@ Agora você está pronto para configurar perfis de certificado, conforme descrit
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

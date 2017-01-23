@@ -1,12 +1,12 @@
 ---
 
-title: "Configurações de política do Android e do Samsung KNOX Standard | Microsoft Intune"
+title: "Configurações da política do Android e do Samsung KNOX Standard | Microsoft Docs"
 description: "Crie políticas que controlam as configurações e os recursos nos dispositivos Android que você gerencia com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Configurações de política do Android e do Samsung KNOX Standard no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Android. Além disso, você pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar configurações personalizadas que não estão disponíveis no Intune.
 
@@ -144,6 +146,8 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |**Editarar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
 |**Excluir**|Exclui o aplicativo selecionado da lista.|
 
+As políticas que contêm configurações de aplicativo que estão em conformidade e fora de conformidade devem ser implantadas em grupos de usuários.
+
 ### <a name="kiosk-mode-settings"></a>Configurações do modo de quiosque
 Especifique as configurações a seguir para **dispositivos Samsung KNOX Standard**:
 
@@ -177,9 +181,7 @@ Exemplo: pesquise Google Play para Microsoft Office Mobile. A URL usada será **
 Use a **Política de configuração personalizada do Android** do Microsoft Intune para implantar configurações OMA-URI, que podem ser usadas para controlar funcionalidades em dispositivos Android. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
 Essa funcionalidade destina-se a permitir que você implante configurações do Android que não são configuráveis com as políticas do Intune.
-
-> [!NOTE]
-> Atualmente, as políticas personalizadas do Android dão suporte apenas à definição de configurações de Wi-Fi para dispositivos Android que incluem uma chave pré-compartilhada.
+No momento, o Intune dá suporte a um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para descobrir quais políticas podem ser configuradas.
 
 ### <a name="general-settings"></a>Configurações gerais
 
@@ -209,6 +211,6 @@ Essa funcionalidade destina-se a permitir que você implante configurações do 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

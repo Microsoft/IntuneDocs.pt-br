@@ -1,30 +1,32 @@
 ---
-title: "Como definir o período antes do dispositivo Android ser bloqueado | Microsoft Intune"
+title: "Como definir o período antes de o dispositivo Android ser bloqueado | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 5df88351d84da28c93d010b8484601b7dbcdaf7e
 
 
 ---
 
-# Como definir o período antes do dispositivo Android ser bloqueado
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Como definir o período antes do dispositivo Android ser bloqueado
 Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha no seu dispositivo seguindo as etapas para o tipo de dispositivo.
 
-## Dispositivo nativo (não Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (não Samsung KNOX)
 
 1.  Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Automatically Lock (Bloqueio Automático)** (isso é exibido como **Lock phone after (Bloquear telefone após)** em alguns dispositivos).
 
@@ -32,7 +34,7 @@ Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha
 
 2.  Selecione o valor de tempo limite da senha.
 
-## Dispositivo Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
 
 1.  Em **Configurações** no seu dispositivo, toque em **Lock screen and security (Tela de bloqueio e segurança)** &gt; **Lock automatically (Bloquear automaticamente)**.
 
@@ -40,10 +42,10 @@ Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha
 
 2.  Selecione um valor de tempo limite da senha.
 
-Ainda precisa de ajuda? Entre em contato com seu administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

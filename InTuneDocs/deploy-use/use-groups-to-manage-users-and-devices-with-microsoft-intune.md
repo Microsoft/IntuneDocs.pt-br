@@ -1,11 +1,11 @@
 ---
-title: "Usar grupos para gerenciar usuários e dispositivos | Microsoft Intune"
+title: "Usar grupos para gerenciar usuários e dispositivos | Microsoft Docs"
 description: "Crie e gerencie grupos usando o espaço de trabalho Grupos."
 keywords: 
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,78 +14,26 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
+ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
+ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
 
 
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Usar grupos para gerenciar usuários e dispositivos no Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve como criar grupos no Intune. Ele também fornece informações sobre como o gerenciamento de grupos será alterado nos próximos meses. 
 
 >[!IMPORTANT]
 >
->Se você abrir o espaço de trabalho Grupos no portal do Intune e vir um link para o portal do Azure AD (Azure Active Directory), você já está usando a *nova* abordagem aos grupos de segurança do Azure AD no Intune, descrito em [Aviso de futuras melhorias para a experiência de administração de grupos](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Clique no link para o portal do Azure AD para criar e gerenciar seus grupos.
+>Se você abre o espaço de trabalho Grupos no portal do Intune e vê um link para o portal do Azure AD (Azure Active Directory), significa que você está usando a *nova* abordagem dos grupos de segurança do Azure AD para o gerenciamento de grupos no Intune, descrita em [Migrando grupos para o Azure Active Directory](migrating-groups-to-azure-active-directory.md). Clique no link para o portal do Azure AD para criar e gerenciar seus grupos.
 >
 >![Captura de tela do link para o gerenciamento de grupo do Azure](../media/groups-link-azure.png) 
 >
 >Se você não ver o link para o portal do Azure AD, você ainda estará usando a abordagem *atual* ao gerenciamento de grupos, descrita em [Criar grupos para gerenciar usuários e dispositivos no Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) neste tópico.
 
-
-## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>Aviso de futuras melhorias para a experiência de administração de grupos
-
-Vocês nos informaram que gostariam de ter uma experiência de agrupamento e direcionamento no Enterprise Mobility + Security. Nós ouvimos. Com base em seus comentários, em breve converteremos os grupos do Intune em grupos de segurança baseados no Azure Active Directory. Essa mudança unificará o gerenciamento de grupos no Intune e no Azure Active Directory (Azure AD). A nova experiência significa que você não terá que duplicar grupos entre serviços. Ela também fornecerá extensibilidade por meio de opções para usar o Windows PowerShell e o Microsoft Graph.
-
-### <a name="how-does-this-affect-me-right-now"></a>Como isso afeta me agora?
-Se você já for cliente do Intune, essa alteração não o afetará. Mas veja o que está por vir:
-
--   As contas novas usarão grupos de segurança do Azure AD em vez dos grupos de *usuário* do Intune.   
--   Em novembro de 2016, as novas contas que forem provisionadas após a versão de serviço mensal gerenciarão grupos baseados em usuários e dispositivos no portal do Azure AD. Não haverá nenhum efeito sobre clientes existentes.
--   Em dezembro de 2016, a equipe de produtos do Intune iniciará a migração de clientes existentes para a nova experiência de gerenciamento de grupos baseada no Azure AD. Todos os grupos de usuários e dispositivos que existem no Intune serão migrados para os grupos de segurança do Azure AD. Não começaremos as migrações até que possamos minimizar o efeito sobre seu trabalho diário e quando esperarmos que não haja nenhum efeito sobre seus usuários. Também notificaremos você antes de migrar sua conta.
-
-
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>Como e quando eu migrarei para a nova experiência de grupos?
-Nós migraremos clientes atuais do Intune durante um período. Estamos finalizando o cronograma da migração e atualizaremos este tópico em algumas semanas para dar mais detalhes. Você receberá um aviso antes de ser migrado. Se tiver preocupações relacionadas à migração, entre em contato com nossa equipe de migração em [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). Consulte [Migrando grupos para o Azure Active Directory](migrating-groups-to-azure-active-directory.md) para obter detalhes sobre como os grupos serão migrados.
-
-### <a name="what-happens-to-my-existing-user-and-device-groups"></a>O que acontece com meus grupos de usuários e dispositivos existentes?
- Grupos de usuários e grupos de dispositivos que você criou no Intune serão migrados para grupos de segurança do Azure AD. Grupos padrão do Intune, como o grupo Todos os Usuários, serão migrados apenas se você os estiver usando em implantações no momento da migração. A migração pode ser mais complexa para alguns grupos. Você será notificado se etapas adicionais forem necessárias para a migração em sua organização.
-
-### <a name="what-new-features-will-be-available-to-me"></a>Quais novos recursos estarão disponíveis para mim?
-Estas são as novas funcionalidades que introduziremos com essa migração do Intune para o Azure Active Directory:
-
--    Os grupos de segurança do Azure AD terão suporte do Intune para todos os tipos de implantações.
--    Os grupos de segurança do Azure AD darão suporte ao agrupamento de dispositivos e usuários.
--    Os grupos de segurança do Azure AD darão suporte a grupos dinâmicos que têm atributos de dispositivos do Intune. Por exemplo, você poderá agrupar dinamicamente os dispositivos com base na plataforma, como iOS. Quando um novo dispositivo iOS for registrado em sua organização, ele será adicionado automaticamente ao grupo dinâmico de dispositivos iOS.
--    Você terá uma experiência de administração compartilhada para o gerenciamento de grupos no Azure AD e no Intune.
-- A função de Administrador de serviços do Intune será adicionada ao Azure AD para que os administradores de serviço do Intune possam executar tarefas de gerenciamento de grupos no Azure AD.
-
-### <a name="what-intune-functionality-wont-be-available"></a>Quais funcionalidades do Intune não estarão disponíveis?
-Embora a experiência de grupos vá melhorar, haverá algumas funcionalidades do Intune que não estarão disponíveis após sua organização migrar dos grupos do Intune para os grupos de segurança do Azure AD.
-
-#### <a name="group-management-functionality"></a>Funcionalidade de gerenciamento de grupos
-
--   Após a migração, você não poderá excluir membros ou grupos quando criar um novo grupo. No entanto, com os grupos dinâmicos do Azure AD, você pode usar atributos para criar regras avançadas que pode usar para excluir os membros de um grupo com base nos critérios que definir.
--   Não haverá suporte para grupos Usuários Desagrupados e Dispositivos Desagrupados. Nós não migraremos esses grupos do Intune para o Azure AD.
-
-
-#### <a name="group-dependent-functionality"></a>Funcionalidade dependente de grupo
-
--   A função de Administrador de serviço não terá permissões para **Gerenciar grupos**.
--   Não será possível agrupar dispositivos do Exchange ActiveSync. O grupo Todos os Dispositivos Gerenciados pelo EAS será convertido de um grupo para um modo de exibição de relatório.
--  A dinamização com grupos em relatórios não estará disponível.
--  O direcionamento de grupos personalizados de regras de notificação não estará disponível.
-
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>O que eu devo fazer para me preparar para essa alteração?
- Temos recomendações que facilitarão essa transição para você:
-
-- Limpe quaisquer grupos indesejados ou desnecessários do Intune antes da migração.
-- Avalie seu uso da exclusão em grupos e considere recriar seus grupos de modo que não precisa usar a exclusão.
--  Se você tiver administradores que não têm permissões para criar grupos no Azure AD, peça que o administrador do Azure AD os adicione à função Administrador de serviços do Intune do Azure AD.
-
-
-## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>Criar grupos para gerenciar usuários e dispositivos com o Microsoft Intune
-
-Esta seção descreve como criar grupos do Intune no console de administração do Intune.
+Este tópico descreve como criar grupos do Intune no console de administração do Intune.
 
 Você pode criar e gerenciar grupos no espaço de trabalho **Grupos** no console de administração do Microsoft Intune. A página **Visão Geral dos Grupos** mostra resumos de status que podem ajudar a identificar e priorizar problemas que exigem a sua atenção. Os resumos de status abordam essas áreas:
 
@@ -108,7 +56,7 @@ Sua hierarquia de grupo também exibe resumos de status para ajudar você a iden
 >
 > Sempre que criar uma política restritiva, é recomendável comunicá-la aos seus usuários. Depois de criar os grupos e políticas mais gerais, fique atento ao criar os grupos menores para reduzir a comunicação desnecessária.
 
-### <a name="to-create-a-device-group"></a>Para criar um grupo de dispositivos
+## <a name="to-create-a-device-group"></a>Para criar um grupo de dispositivos
 
 1.  No console de administração do Intune, escolha **Grupos** &gt; **Visão geral** &gt; **Criar Grupo**.
 
@@ -128,7 +76,7 @@ Sua hierarquia de grupo também exibe resumos de status para ajudar você a iden
 
 O grupo recém-criado é mostrado na lista **Grupos**, no espaço de trabalho **Grupos**, no grupo pai. Nesse local, também é possível editar ou excluir o grupo.
 
-### <a name="to-create-a-user-group"></a>Para criar um grupo de usuários
+## <a name="to-create-a-user-group"></a>Para criar um grupo de usuários
 
 1.  No console de administração do Intune, escolha **Grupos** &gt; **Visão geral** &gt; **Criar Grupo**.
 
@@ -205,6 +153,6 @@ Cada política tem um **Valor Pretendido** e um **Status**. O valor pretendido �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
