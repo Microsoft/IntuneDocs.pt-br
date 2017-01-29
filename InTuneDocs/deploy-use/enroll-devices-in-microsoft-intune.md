@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 
 
 ---
@@ -34,7 +34,7 @@ A tabela a seguir mostra os métodos de registro do Intune e os requisitos e rec
 
 - **Apagar** – indica se o dispositivo precisa ser apagado antes que os usuários possam registrá-lo. O termo "apagar" significa uma redefinição de fábrica do dispositivo, que remove todos os dados. Para obter mais informações, consulte [Desativar dispositivos](retire-devices-from-microsoft-intune-management.md).
 - **Afinidade** – associa dispositivos a usuários. Necessário para MAM (gerenciamento de dispositivo móvel) e acesso condicional a dados da empresa. Para obter mais informações, consulte [Afinidade do usuário](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Bloqueio** – impede que os usuários removam o dispositivo do gerenciamento. Dispositivos iOS exigem o modo Supervisionado para o Bloqueio. Para obter mais informações, consulte [Bloqueio remoto](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
+- **Bloqueio** – indica se os usuários são impedidos de cancelar o registro de seus dispositivos no gerenciamento. Os usuários podem cancelar o registro de seus dispositivos em todas as plataformas usando o aplicativo Portal da Empresa. Eles não podem usar os menus do sistema operacional nativo para cancelar o registro. 
 
 **Métodos de registro do iOS**
 
@@ -123,6 +123,6 @@ O Intune pode gerenciar as seguintes plataformas de dispositivo:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

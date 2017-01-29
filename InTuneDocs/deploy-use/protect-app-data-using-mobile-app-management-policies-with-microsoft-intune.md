@@ -14,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af067236e27a65c52c78107fefdb956ad0fd5aa5
-ms.openlocfilehash: b4672b19517f1871a276000c6e8f5d01c0280e35
+ms.sourcegitcommit: 40298ae2de5f3bc8090e19882e039c5ec6471820
+ms.openlocfilehash: 3d3c3e0b5fa68f838b8cf1d72346d7abb140073a
 
 
 ---
@@ -61,7 +61,7 @@ Atualmente, há suporte para políticas de MAM em:
 -   Android 4 ou posterior
 
 >[!NOTE]
->Os dispositivos Windows não são compatíveis com o MAM sem um cenário de registro. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Os dispositivos Windows não são compatíveis com o MAM sem um cenário de registro. No entanto, ao >registrar dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que >oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ##  <a name="how-mam-policies-protect-app-data"></a>Como as políticas de MAM protegem os dados do aplicativo

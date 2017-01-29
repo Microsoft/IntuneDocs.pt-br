@@ -5,7 +5,7 @@ keywords:
 author: stabar
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
-ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 3417d2966dea166c96a2b727977e8c85a63af80c
 
 
 ---
@@ -36,9 +36,9 @@ Para remover seletivamente os dados de aplicativo da empresa, crie uma solicita�
 
 1.  Entre no Portal do Azure e escolha **Mais serviços** > **Outros** > **Intune**.
 
-2.  Na folha do Intune, escolha **Gerenciar aplicativos**.
+2.  Na folha do Intune, escolha **Gerenciar aplicativos** > **Apagamento Seletivo de Aplicativo**.
 
-3.  Clique em **Nova solicitação de apagamento**. Isso abre a folha **Nova solicitação para apagar**.
+3.  Escolha **Nova solicitação de apagamento**. A folha **Nova solicitação de apagamento** é aberta.
 
     ![Captura de tela da folha Nova solicitação para apagar](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -71,6 +71,6 @@ Apagamentos com status pendente são exibidos até serem excluídos manualmente.
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
