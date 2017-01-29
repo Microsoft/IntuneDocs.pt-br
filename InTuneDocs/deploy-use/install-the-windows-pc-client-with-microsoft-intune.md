@@ -5,7 +5,7 @@ description: "Use este guia para ajudá-lo a ter os computadores Windows gerenc
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 01/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,27 +14,29 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
-ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 7cef6b6eac01c0056f7c75a7010ee280932a5dfb
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
-Computadores Windows podem ser registrados instalando o software cliente do Intune. O software cliente do Intune pode ser instalado das seguintes maneiras:
+Computadores Windows podem ser registrados instalando o software cliente do Intune. É possível instalar o software cliente do Intune usando os seguintes métodos:
 
-- Instalado manualmente
-- Instalado usando a Política de Grupo
-- Incluído em uma imagem de disco
-- Instalado pelos usuários
+- Pelo administrador de TI:
+  - Instalação manual
+  - Instalação usando Política de Grupo
+  - Instalação incluída em uma imagem de disco
 
-O cliente de software do Intune que for baixado primeiro contará com o software mínimo necessário para registrar o PC no gerenciamento do Intune. Depois que um PC for registrado, o cliente de software do Intune baixa o software cliente completo que é necessário para o gerenciamento de PC.
+- Por usuários finais, que instalam o software cliente manualmente
 
-Esta série de downloads minimiza o tempo necessário para registrar inicialmente seu PC no Intune. Ela também garante que o cliente tenha o software mais recente disponível após a conclusão do download do segundo.
+O software cliente do Intune, que o administrador de TI implanta para o usuário ou que o usuário final baixa, contém os requisitos mínimos de software necessários para registrar o computador no gerenciamento do Intune. Depois de registrar um computador, o software cliente do Intune baixa o software cliente completo que é necessário para o gerenciamento de computador.
+
+Esta série de downloads reduz o impacto sobre a largura de banda da rede e diminui o tempo necessário para registrar inicialmente o computador no Intune. Ela também garante que o cliente tenha o software mais recente disponível após a conclusão do download do segundo.
 
 ## <a name="download-the-intune-client-software"></a>Baixe o software cliente do Intune
 
-Todos os métodos, exceto quando os usuários instalam o software cliente do Intune, exigem que você baixe o software para que ele possa ser implantado.
+Todos os métodos, exceto quando os próprios usuários instalam o software cliente do Intune, exigem que os administradores de TI baixem primeiro o software a fim de implantá-lo posteriormente para os usuários finais.
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Administração** &gt; **Download de Software Cliente**.
 
@@ -43,7 +45,7 @@ Todos os métodos, exceto quando os usuários instalam o software cliente do Int
 2.  Na página **Download de Software Cliente**, clique em **Baixar Software Cliente**. Em seguida, salve o pacote **Microsoft_Intune_Setup.zip** que contém o software em um local seguro na sua rede.
 
     > [!NOTE]
-    > O pacote de instalação do software cliente do Intune contém informações sobre sua conta. Se usuários não autorizados obtiverem acesso ao pacote de instalação, eles poderão registrar computadores na conta representada por seu certificado integrado e poderão obter acesso aos recursos da empresa.
+    > O pacote de instalação do software cliente do Intune contém informações exclusivas e específicas sobre sua conta, que estão disponíveis por meio de um certificado inserido. Se usuários não autorizados obtiverem acesso ao pacote de instalação, eles poderão registrar computadores na conta representada por seu certificado integrado e poderão obter acesso aos recursos da empresa.
 
 3.  Extraia o conteúdo do pacote de instalação para o local seguro na sua rede.
 
@@ -52,7 +54,7 @@ Todos os métodos, exceto quando os usuários instalam o software cliente do Int
 
 ## <a name="deploy-the-client-software-manually"></a>Implante manualmente o software cliente
 
-Em um computador, vá para a pasta na qual estão os arquivos de instalação do software cliente. Em seguida, execute **Microsoft_Intune_Setup.exe** para instalar o software cliente.
+Nos computadores em que vai instalar o software cliente, vá para a pasta na qual os arquivos de instalação foram colocados. Em seguida, execute **Microsoft_Intune_Setup.exe** para instalar o software cliente.
 
     > [!NOTE]
     > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
@@ -108,6 +110,8 @@ A tarefa de registro automático do Intune, o valor do Registro **WindowsIntuneE
 
 Os usuários podem instalar o software cliente do Intune visitando [o site do Portal da Empresa](http://portal.manage.microsoft.com). Se o portal da Web detectar que o dispositivo é um computador Windows, ele solicitará aos usuários que registrem o computador baixando o cliente de software do Intune. Após o download do software, os usuários podem instalá-lo para incluir seus computadores no gerenciamento.
 
+As informações exatas que os usuários exibem no portal da Web podem variar, de acordo com a Autoridade MDM, a plataforma e a versão do computador do usuário.
+
 ![Portal do Intune solicitando o download do cliente de software do Intune](../media/software-client-download.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>Monitorar e validar a implantação com êxito do cliente
@@ -139,6 +143,6 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

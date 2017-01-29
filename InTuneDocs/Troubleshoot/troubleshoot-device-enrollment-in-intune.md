@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
@@ -294,32 +294,20 @@ Depois de registrado, os dispositivos retornam ao estado íntegro e recuperam o 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Os dispositivos iOS registrados não aparecem no console ao usar o System Center Configuration Manager com o Intune
 **Problema:** o usuário registra um dispositivo iOS, mas ele não aparece no console de administração do Configuration Manager. O dispositivo não indica que ele foi registrado. Possíveis causas:
 
-- Você pode ter registrado seu conector Intune em uma conta e, então, ter registrado o dispositivo em outra conta.
+- O Conector do Microsoft Intune, no site do Gerenciador de Configurações, não está se comunicando com o serviço do Intune.
+- O componente do Data Discovery Manager ou do Gerenciamento de estado não está processando mensagens no serviço do Intune.
 - Você pode ter baixado o certificado MDM de uma conta e o usado em outra conta.
 
 
-**Resolução:** execute as etapas a seguir:
+**Resolução:** examine os seguintes arquivos de log para identificar possíveis erros:
 
-1. Desabilite o iOS dentro do conector do Windows Intune.
-    1. Clique com o botão direito do mouse na assinatura do Intune e selecione **Propriedades**.
-    1. Na guia "iOS", desmarque a opção "Habilitar registro do iOS".
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. No SQL, execute as etapas a seguir no banco de dados do CAS
-
-    1. atualizar o SC_ClientComponent_Property set Value2 = '', em que Nome é igual a '%APNS%'
-    1. excluir do MDMPolicy, em que PolicyType = 7
-    1. excluir do MDMPolicyAssignment, em que PolicyType = 7
-    1. atualizar o SC_ClientComponent_Property set Value2 = '', em que Nome é igual a '%APNS%'
-    1. excluir do MDMPolicy, em que PolicyType = 11
-    1. excluir do MDMPolicyAssignment, em que PolicyType = 11
-    1. EXCLUIR Drs_Signals
-1. Reinicie o serviço SMS Executive ou o servidor CM
+Em breve, adicionaremos exemplos sobre o que procurar nesses arquivos de log.
 
 
-
-1. Obtenha um novo certificado APN e carregue-o: clique com o botão direito do mouse na assinatura do Intune, no painel esquerdo do Configuration Manager. Selecione a opção **Criar solicitação de certificado APNs** e siga as instruções.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas ao usar o System Center Configuration Manager com o Intune
 ### <a name="mobile-devices-disappear"></a>Dispositivos móveis desaparecem
 **Problema:** após registrar com êxito um dispositivo móvel no Configuration Manager, ele desaparece da coleção de dispositivos móveis, mas o dispositivo ainda tem o Perfil de gerenciamento e é listado no Gateway de CSS.
@@ -400,6 +388,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

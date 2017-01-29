@@ -14,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
+ms.sourcegitcommit: af067236e27a65c52c78107fefdb956ad0fd5aa5
+ms.openlocfilehash: b4672b19517f1871a276000c6e8f5d01c0280e35
 
 
 ---
@@ -60,7 +60,10 @@ Atualmente, há suporte para políticas de MAM em:
 -   iOS 8.1 ou posterior
 -   Android 4 ou posterior
 
-Não há suporte para dispositivos Windows.
+>[!NOTE]
+>Os dispositivos Windows não são compatíveis com o MAM sem um cenário de registro. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>Como as políticas de MAM protegem os dados do aplicativo
 
 ###  <a name="apps-without-mam-policies"></a>Aplicativos sem políticas de MAM
@@ -132,6 +135,6 @@ Todos os aplicativos móveis do Office dão suporte ao acesso de várias identid
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
