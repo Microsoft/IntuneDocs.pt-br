@@ -43,7 +43,7 @@
 ## [Recursos adicionais](plan-design/additional-resources.md)
 
 # [Novidades](whats-new/whats-new-in-microsoft-intune.md)
-## [Novidades](whats-new/whats-new-in-microsoft-intune.md)
+## [Novidades na interface do usuário de aplicativos do Intune](whats-new/whats-new-in-intune-app-ui.md)
 ## [Novidades na visualização do Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Arquivo de novidades](whats-new/whats-new-archive.md)
 
@@ -73,6 +73,7 @@
 #### [Instalar o cliente de computador](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Tarefas comuns de gerenciamento de computador](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolver conflitos de política de computador](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Gerenciar Android for Work](deploy-use/android-for-work.md)
 
 ## Configurar dispositivos
 ### [Gerenciar configurações e recursos em seus dispositivos com políticas](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -98,6 +99,7 @@
 #### [Conexões VPN no Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Perfis de email no Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Usar grupos para gerenciar usuários e dispositivos](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Migrar grupos para o Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Mapear dispositivos para grupos](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Compreender seus dispositivos com um inventário](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -156,11 +158,11 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Bloquear aplicativos sem ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Proteger o acesso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Proteger o acesso com base no dispositivo, na rede e no risco do aplicativo](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Configurar a proteção contra ameaças do dispositivo do Lookout](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Habilitar o Lookout no Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Implantar aplicativos do Lookout for Work](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Habilitar política de conformidade de proteção contra ameaças do dispositivo](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Proteger o acesso com base no dispositivo, na rede e no risco do aplicativo](deploy-use/device-threat-protection.md)
+#### [Configurar a proteção contra ameaças do dispositivo do Lookout](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Habilitar o Lookout no Intune](deploy-use/device-threat-protection-enable.md)
+#### [Implantar aplicativos do Lookout for Work](deploy-use/device-threat-protection-apps.md)
+#### [Habilitar política de conformidade de proteção contra ameaças do dispositivo](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteger os dados do aplicativo com MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portal do Azure para políticas de MAM](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -220,6 +222,6 @@
 # [Glossário](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
