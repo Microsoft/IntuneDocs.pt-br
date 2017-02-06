@@ -1,11 +1,11 @@
 ---
-title: "Você é solicitado a instalar o Lookout for Work em seu dispositivo Android | Microsoft Docs"
+title: "Você precisa instalar o Lookout for Work em seu dispositivo Android | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work"></a>Aparecerá um aviso para que você instale o Lookout for Work
+# <a name="you-need-to-install-lookout-for-work"></a>É necessário instalar o Lookout for Work
 
 Antes de poder acessar seu trabalho, o administrador de TI exige que você instale o aplicativo Lookout for Work, que ajuda a proteger seu dispositivo localizando possíveis ameaças à segurança.
 
@@ -78,12 +78,12 @@ Se tiver problemas com a instalação, tente executar as etapas de solução de 
 
 **Se a instalação não funcionar**
 
-Às vezes, as instalações podem falhar devido a problemas técnicos fora de seu controle. Se isso acontecer, tente instalar o Lookout for Work manualmente da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+Às vezes, as instalações podem falhar devido a problemas técnicos fora de seu controle. Se isso acontecer, tente instalar o Lookout for Work manualmente da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

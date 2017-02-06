@@ -1,11 +1,11 @@
 ---
-title: "A senha não atende aos requisitos de administrador de TI | Microsoft Docs"
+title: "Sua senha não atende aos requisitos do administrador de TI | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>Senha não atende aos requisitos de administrador de TI
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Sua senha não atende aos requisitos do administrador de TI
 
 A senha que você usa para acessar recursos corporativos ou de estudante não atende a um ou mais requisitos que o administrador de TI configurou. Para corrigir o problema, siga as instruções que são mostradas no seu dispositivo. Descrições dos problemas estão listadas abaixo.
 
@@ -51,6 +51,6 @@ Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisi
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
