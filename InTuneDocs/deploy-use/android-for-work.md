@@ -4,15 +4,15 @@ description: O Intune gerencia o Android for Work para fornecer privacidade e re
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e9a99868e7bd4c3aa45de4d221f28c1d2f3efb74
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1c7c0967cfd29f68e8d6d0428f1f8407e2cbd9cb
 
 
 ---
@@ -21,27 +21,27 @@ ms.openlocfilehash: e9a99868e7bd4c3aa45de4d221f28c1d2f3efb74
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-O Android for Work é um conjunto de serviços e recursos para dispositivos Android. Esses serviços e recursos fornecem privacidade e funcionalidades de gerenciamento adicionais quando as pessoas usam seus dispositivos Android para trabalhar. O Intune pode ajudar a implantar aplicativos e recursos da empresa em dispositivos com Android for Work para garantir que informações pessoais e de trabalho permaneçam separadas. Quando implantados com êxito, os aplicativos e os dados que eles acessam permanecem exclusivamente dentro do ambiente do Android for Work no dispositivo.
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+Android for Work é um conjunto de recursos e serviços do dispositivo Android que separa aplicativos e dados pessoais de um perfil de trabalho que contém aplicativos e dados de trabalho. O Android for Work fornece recursos de gerenciamento adicionais e privacidade quando as pessoas usam seus dispositivos Android para trabalhar. O Intune ajuda a implantar aplicativos e recursos da empresa em dispositivos com Android for Work para garantir que informações pessoais e de trabalho permaneçam separadas. Quando implantados com êxito, os aplicativos e os dados que eles acessam permanecem exclusivamente dentro do ambiente do Android for Work no dispositivo.
 
 ## <a name="supported-devices"></a>Dispositivos com suporte
 
-O Android for Work requer hardware Android mais recente porque muitas funcionalidades de gerenciamento contam com recursos que fazem parte do sistema operacional Android mais recente. Atualmente, o Android for Work tem suporte em dispositivos que executam o Android 5.0 Lollipop e posteriores e que têm suporte para perfil de trabalho. Para dispositivos que não têm suporte nativo para Android for Work, o gerenciamento convencional do Android permanece disponível. Saiba mais sobre os [Requisitos do Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Os recursos de gerenciamento do Android for Work dependem de recursos que fazem parte do sistema operacional Android mais recente. Atualmente, o Android for Work tem suporte em dispositivos que executam o Android 5.0 Lollipop e posteriores e que têm suporte para perfil de trabalho. Para dispositivos que não têm suporte para Android for Work, o gerenciamento convencional do Android permanece disponível. Saiba mais sobre os [Requisitos do Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## <a name="onboarding"></a>Integração
 
-Antes de registrar dispositivos com Android for Work, você precisa concluir algumas etapas de integração. Essas etapas estabelecem uma conexão entre seu locatário do Intune e o serviço Google Play for Work, que faz parte do processo de gerenciamento e distribuição do aplicativo Android for Work. Saiba mais sobre o tema em [Habilitando o registro do Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work).
+Antes de registrar dispositivos com Android for Work, você precisa concluir algumas etapas de integração. Essas etapas estabelecem uma conexão entre seu locatário do Intune e o serviço Google Play for Work, que faz parte do processo de gerenciamento e distribuição do aplicativo Android for Work. Saiba mais sobre o tema em [Habilitando o registro do Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work).
 
 ## <a name="work-profile-management"></a>Gerenciamento de perfil de trabalho
 
-Quando gerencia um dispositivo com Android for Work com o Intune, você não gerencia todo o dispositivo. Os recursos de gerenciamento afetam apenas os perfis de trabalho criados durante o registro. Todos os aplicativos implantados no dispositivo com o Intune fazem parte do perfil de trabalho. Os ícones dos aplicativos no perfil de trabalho exibem um porta-arquivos cor de laranja. Essa marcação diferencia aplicativos da empresa de aplicativos pessoais no dispositivo. Todos os dados e aplicativos Android fora da parte referente ao Android for Work no dispositivo continuam sendo pessoais e sob controle do usuário final. Os usuários podem instalar qualquer aplicativo que desejarem na parte pessoal do dispositivo, enquanto os administradores podem gerenciar e monitorar as ações no escopo do perfil de trabalho.
+Quando gerencia um dispositivo com Android for Work com o Intune, você não gerencia todo o dispositivo. Os recursos de gerenciamento afetam apenas os perfis de trabalho criados no dispositivo durante o registro. Os aplicativos implantados no dispositivo com o Intune são instalados no perfil de trabalho. Ícones de aplicativo no perfil de trabalho exibem uma pasta laranja para diferenciar aplicativos de trabalho dos aplicativos pessoais no dispositivo. Todos os dados e aplicativos Android fora da parte referente ao Android for Work no dispositivo continuam sendo pessoais e sob controle do usuário final. Os usuários podem instalar qualquer aplicativo que desejarem na parte pessoal do dispositivo, enquanto os administradores podem gerenciar e monitorar aplicativos e ações no escopo do perfil de trabalho.
+
+O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Android for Work. Saiba mais sobre as [configurações de política do Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
 
 ## <a name="app-publishing-and-distribution"></a>Publicação e distribuição de aplicativos
 
-O serviço Google Play for Work faz parte do gerenciamento e da distribuição de aplicativos. Todos os aplicativos implantados em dispositivos com o Android for Work, no perfil de trabalho, são provenientes do Play for Work. Para gerenciar e implantar aplicativos na Play Store, faça logon como administrador do Intune no site do Play for Work e aprove aplicativos para seu locatário do Intune. Esses aplicativos são sincronizados com o console do Intune, em que posteriormente podem ser implantados e gerenciados usando o Intune. Aplicativos de LOB (linha de negócios) desenvolvidos pela sua organização devem ser publicados no Play for Work usando o console de publicação de aplicativos do Android do Google. Os aplicativos de linha de negócios devem ser configurados no console de publicação de aplicativos do Android para restringir o acesso à sua organização.
+O serviço Google Play for Work faz parte integral do gerenciamento e da distribuição de aplicativos do Android for Work. Todos os aplicativos implantados em dispositivos com o Android for Work, no perfil de trabalho, são provenientes do serviço Play for Work. Para gerenciar e implantar aplicativos na Play Store, faça logon como administrador do Intune no site do Play for Work e aprove aplicativos para seu locatário do Intune. Esses aplicativos são sincronizados com o console do Intune, em que posteriormente podem ser implantados e gerenciados usando o Intune. Aplicativos de LOB (linha de negócios) desenvolvidos pela sua organização devem ser publicados no Play for Work usando o console de publicação de aplicativos do Android do Google. Os aplicativos de linha de negócios devem ser configurados no console de publicação de aplicativos do Android para restringir o acesso à sua organização.
 
-Os aplicativos são instalados sem interação do usuário e sem exigir que ele permita a **Instalação de Fontes Desconhecidas**. Para procurar e instalar aplicativos opcionais ou disponíveis, o usuário do aplicativo implanta o aplicativo da Play Store com selo de trabalho em seu dispositivo. Saiba mais em [Implantando aplicativos para Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps).
+Os aplicativos podem ser instalados sem interação do usuário e sem exigir que ele permita a **Instalação de Fontes Desconhecidas**. Para procurar e instalar aplicativos opcionais ou disponíveis, o usuário pode procurar na Play Store em seu dispositivo. Saiba mais em [Implantando aplicativos para Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## <a name="app-configuration"></a>Configuração de aplicativo
 
@@ -53,35 +53,33 @@ O Android for Work não fornece um aplicativo de email padrão ou objeto de perf
 
 O Intune fornece modelos de configuração para aplicativos do Gmail e do Nine Work. Outros aplicativos de email que dão suporte a perfis de configuração de aplicativo podem ser configurados com as políticas de configuração de aplicativo móvel.
 
-Se estiver usando o acesso condicional do EAS para um dispositivo com Android for Work, você deve usar o aplicativo de email do Nine Work ou do Gmail. O aplicativo do Microsoft Outlook para Android ou qualquer outro aplicativo de email que usa autenticação moderna por meio da ADAL, também tem suporte. Saiba mais sobre os [Perfis de email para email da empresa](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
+Se estiver usando o acesso condicional do Exchange ActiveSync para um dispositivo com Android for Work, você deverá usar o aplicativo de email do Nine Work ou do Gmail. O aplicativo do Microsoft Outlook para Android ou qualquer outro aplicativo de email que usa autenticação moderna por meio da ADAL, também tem suporte. Saiba mais sobre os [Perfis de email para email da empresa](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
 ## <a name="mobile-app-management-policies"></a>Políticas de gerenciamento de aplicativos móveis
 
-As políticas de restrição aplicadas a aplicativos habilitados para MAM (gerenciamento de aplicativo móvel) têm suporte total no perfil de trabalho e no perfil pessoal. Você pode publicar aplicativos de linha de negócios no console de publicação de aplicativo do Android em https://play.google.com/apps/publish. Esse console inclui uma opção para tornar aplicativos particulares para sua organização. Saiba mais sobre as [Configurações de política de conformidade](afw-compliance-policy-settings-in-microsoft-intune.md). Para obter mais informações, consulte [Políticas de gerenciamento de aplicativo móvel](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+As políticas de restrição aplicadas a aplicativos habilitados para MAM (gerenciamento de aplicativo móvel) têm suporte total no perfil de trabalho e no perfil pessoal. Você pode publicar aplicativos de linha de negócios no console de publicação de aplicativo do Android em https://play.google.com/apps/publish. Esse console inclui uma opção para tornar aplicativos particulares para sua organização. Saiba mais sobre as [configurações de política de conformidade do Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md). Para obter informações gerais sobre as políticas de MAM, consulte [políticas de gerenciamento de aplicativo móvel](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## <a name="vpn-profiles"></a>Perfis de VPN
 
-O suporte a VPN é semelhante aos perfis VPN do Android. Os mesmos provedores de VPN e opções de configuração básicas estão disponíveis. Há duas diferenças principais:
+O suporte a VPN é semelhante aos perfis VPN do Android. Os mesmos provedores VPN e opções de configuração básicas estão disponíveis para gerenciamento do Android for Work com duas diferenças:
 
-1.  **VPN com escopo de perfil de trabalho** – as conexões VPN têm como escopo apenas os aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android for Work podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada.
+-  **VPN com escopo de perfil de trabalho** – as conexões VPN são limitadas apenas aos aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android for Work podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada.
 
-2.  **VPN específica ao aplicativo** – se um provedor de VPN der suporte à configuração para VPN específica ao aplicativo e fornecer a capacidade de configurar a VPN por aplicativo por meio do perfil de configuração de aplicativo do Android for Work, a VPN específica ao aplicativo pode ser configurada no Intune. Verifique com o provedor de VPN se há suporte para essa capacidade. Saiba mais sobre os [Perfis de conexão VPN](vpn-connections-in-microsoft-intune.md).
+-  **VPN específica ao aplicativo** – se um provedor de VPN der suporte à configuração para VPN específica ao aplicativo e fornecer a capacidade de configurar a VPN por aplicativo por meio do perfil de configuração de aplicativo do Android for Work, a VPN específica ao aplicativo poderá ser configurada no Intune. Verifique com o provedor de VPN se há suporte para essa capacidade. Saiba mais sobre os [Perfis de conexão VPN](vpn-connections-in-microsoft-intune.md).
 
 ## <a name="certificate-profiles"></a>Perfis de certificado
 
-As mesmas opções de configuração de perfil de certificado que estão disponíveis para o gerenciamento tradicional do Android também estão disponíveis para dispositivos com Android for Work. O Android for Work fornece APIs de gerenciamento avançado de certificados. O gerenciamento avançado de certificados fornece a seguinte funcionalidade:
+As mesmas opções de configuração de perfil de certificado que estão disponíveis para o gerenciamento do Android também estão disponíveis para dispositivos com Android for Work. O Android for Work fornece APIs de gerenciamento avançado de certificados. O gerenciamento avançado de certificados fornece a seguinte funcionalidade:
 
-1.  garante que a implantação de certificados seja silenciosa e simples para o usuário.
-
-2.  garante que os certificados implantados sejam removidos completamente quando um dispositivo é retirado do Intune e o perfil de trabalho é removido.
-
-3.  fornece mensagens aperfeiçoadas que informam os usuários que o certificado foi implantado e configurado pelo departamento de TI por meio do serviço de gerenciamento.
+- garante que a implantação de certificados seja silenciosa e simples para o usuário.
+-  garante que os certificados implantados sejam removidos completamente quando um dispositivo é retirado do Intune e o perfil de trabalho é removido.
+-  fornece mensagens aperfeiçoadas que informam os usuários que o certificado foi implantado e configurado pelo departamento de TI por meio do serviço de gerenciamento.
 
 Saiba mais sobre os [Perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
 ## <a name="wi-fi-profiles"></a>Perfis de Wi-Fi
 
-É garantido que os perfis de Wi-Fi gerenciados pelo Android for Work serão removidos quando o dispositivo for retirado do Intune e o perfil de trabalho for excluído. Saiba mais sobre [Perfis Wi-Fi](wi-fi-connections-in-microsoft-intune.md).
+Perfis de Wi-Fi gerenciados pelo Android for Work serão removidos quando o dispositivo for retirado do Intune e o perfil de trabalho for excluído. Saiba mais sobre [Perfis Wi-Fi](wi-fi-connections-in-microsoft-intune.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 [Habilitando o registro do Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
@@ -89,6 +87,6 @@ Saiba mais sobre os [Perfis de certificado](secure-resource-access-with-certific
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

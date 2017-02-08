@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
 
 
 ---
@@ -26,9 +26,18 @@ ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 O Microsoft Intune dá suporte ao registro de dispositivos iOS corporativos usando o DEP (Programa de Registro do Dispositivo) da Apple ou a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) executada em um computador Mac.
 
-**Pré-requisito:** um[certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md) é obrigatório.
+**Pré-requisito:** um [certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-Você pode registrar dispositivos iOS inscritos na empresa de três maneiras: usando o Apple Configurator, o DEP ou o Portal da Empresa.
+Você pode registrar dispositivos iOS com registro corporativo usando um de três métodos:
+
+- Apple Configurator, usando o Assistente de Configuração ou o registro direto
+- Programa de registro de dispositivo
+- Aplicativo do Portal da Empresa
+
+>[!NOTE]
+>Os métodos de registro de programa de registro de Apple Configurator and Device não podem ser usados com o método do [gerenciador de registro do dispositivo](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+
+Por padrão, todos os dispositivos iOS têm permissão para se registrarem no Intune. Para bloquear o registro de dispositivos pessoais ou de propriedade corporativa, entre no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com suas credenciais de administrador. Escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** e desmarque as opções aplicáveis.
 
 ## <a name="use-apple-configurator"></a>Usar o Apple Configurator
 
@@ -84,6 +93,6 @@ Se a afinidade de usuário for necessária, certifique-se de que o perfil de reg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
