@@ -2,8 +2,8 @@
 title: Exchange Connector para Exchange Online | Microsoft Docs
 description: "Conecte o Intune ao serviço Office 365 Exchange para dar suporte ao MDM (gerenciamento de dispositivo móvel) do Exchange ActiveSync."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
