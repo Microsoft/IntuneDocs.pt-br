@@ -1,4 +1,3 @@
-
 ---
 title: "Contatar o suporte telefônico assistido | Microsoft Docs"
 description: "Números de telefone de ajuda do Microsoft Intune."

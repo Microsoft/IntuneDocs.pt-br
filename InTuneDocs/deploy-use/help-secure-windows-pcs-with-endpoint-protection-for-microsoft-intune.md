@@ -2,10 +2,10 @@
 title: Endpoint Protection para computadores Windows | Microsoft Docs
 description: "Proteja seus computadores gerenciados com o Endpoint Protection, que fornece proteção em tempo real contra ameaças de malware."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
