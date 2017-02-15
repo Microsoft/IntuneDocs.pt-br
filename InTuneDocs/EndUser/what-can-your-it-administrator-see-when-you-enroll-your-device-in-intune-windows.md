@@ -30,35 +30,35 @@ Ao registrar o dispositivo Windows no Intune, você concede permissão ao admini
 
 **O que a equipe de TI não pode ver**
 
--   Histórico de chamada e da Web
+- Histórico de chamada e da Web
 
--   Local
+-    Local
 
--   Email e mensagens de texto
+- Email e mensagens de texto
 
--   Contatos
+- Contatos
 
--   Senhas
+-    Senhas
 
--   Calendário
+- Calendário
 
--   Rolo da câmera
+- Rolo da câmera
 
 **O que a equipe de TI pode ver**
 
--   Modelo
+- Modelo
 
--   Número de série
+- Número de série
 
--   Sistema operacional
+- Sistema operacional
 
--   Nomes de aplicativo
+- Nomes de aplicativo
 
--   Proprietário
+- Proprietário
 
--   Nome do dispositivo
+- Nome do dispositivo
 
--   Fabricante
+- Fabricante
 
 Para obter mais informações, consulte [O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo Windows no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
