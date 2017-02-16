@@ -38,6 +38,7 @@
 #### [Adicionar números de série do Apple Configurator](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [Registrar dispositivos iOS usando o programa de registro de dispositivos](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Registrar dispositivos usando o gerenciador de registro de dispositivo](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+### [Registrar dispositivos macOS](enroll-devices/enroll-macos-devices.md)
 ### [Registrar dispositivos Windows](enroll-devices/enroll-window-devices.md)
 ### Gerenciar registro do dispositivo
 #### [Criar termos e condições](enroll-devices/create-terms-and-conditions.md)
