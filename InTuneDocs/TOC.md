@@ -6,6 +6,7 @@
 ### [Criar políticas e publicar um aplicativo](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Outras opções e extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Converter em uma assinatura paga](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [Perguntas frequentes sobre o MAM e a proteção do aplicativo](understand-explore/mam-faq.md)
 ## [Cenários comuns](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -182,7 +183,6 @@
 #### [Aplicativos de LOB em dispositivos não gerenciados pelo Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Usar o SDK ao escrever um aplicativo](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [Perguntas frequentes sobre o MAM e a proteção do aplicativo](deploy-use/mam-faq.md)
 
 ## Desativar aplicativos e dados
 ### [Usar o apagamento completo ou seletivo](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [Glossário](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
