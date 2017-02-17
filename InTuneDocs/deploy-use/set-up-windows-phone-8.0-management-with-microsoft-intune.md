@@ -4,7 +4,7 @@ description: "Habilite o MDM (gerenciamento de dispositivo móvel) para disposit
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 10/21/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
