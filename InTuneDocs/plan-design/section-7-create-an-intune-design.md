@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -147,7 +148,7 @@ Encontre mais informações sobre os requisitos de Identidade do Intune abaixo.
 
 ### <a name="user-and-device-groups"></a>Grupos de usuários e de dispositivos
 
-Os grupos de usuários e de dispositivos determinam o destino de uma implantação. Isso pode incluir uma implantação que tem políticas, aplicativos e perfis como destino. O serviço de nuvem do Intune dá suporte apenas a grupos de usuários e de dispositivos – você precisará determinar quais grupos de usuários e de dispositivos serão necessários. É recomendável criar todos os grupos no Active Directory local e sincronizá-los com o Azure Active Directory. Encontre mais informações sobre o planejamento e a criação de grupos de usuários e de dispositivos abaixo.
+Os grupos de usuários e de dispositivos determinam o destino de uma implantação. Isso pode incluir uma implantação que tem políticas, aplicativos e perfis como destino. O serviço de nuvem do Intune dá suporte apenas a grupos de usuários e de dispositivos. Você precisará determinar quais grupos de usuários e de dispositivos serão necessários. É recomendável criar todos os grupos no Active Directory local e sincronizá-los com o Azure Active Directory. Encontre mais informações sobre o planejamento e a criação de grupos de usuários e de dispositivos abaixo.
 
 -   Saiba mais sobre como [planejar os grupos de usuários e de dispositivos](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
@@ -236,7 +237,7 @@ Vamos examinar cada uma dessas áreas mais detalhadamente.
 
 ### <a name="terms-and-conditions-policies"></a>Políticas de Termos e Condições
 
-Termos e Condições podem ser usados para explicar as políticas ou condições que um usuário final deverá aceitar antes do registro. O Intune dá suporte à capacidade de adicionar e implantar várias políticas de termos e condições em grupos de usuários. Você precisa determinar se as políticas de termos e condições são necessárias. Em caso afirmativo, quem será responsável por fornecer essas informações na organização?
+Termos e Condições podem ser usados para explicar as políticas ou condições que um usuário final deverá aceitar antes do registro. O Intune dá suporte à capacidade de adicionar e implantar várias políticas de termos e condições em grupos de usuários. Você precisa determinar se as políticas de termos e condições são necessárias. Nesse caso, quem será responsável por fornecer essas informações na organização?
 
 -   Saiba [como criar políticas de termos e condições](https://docs.microsoft.com/intune/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) no Intune. Veja abaixo um exemplo de como documentar a política de termos e condições.
 
@@ -411,6 +412,6 @@ A próxima seção fornece diretrizes sobre o [processo de implementação do In
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
 
 
 ---
@@ -28,6 +29,8 @@ Você pode registrar dispositivos, incluindo computadores Windows, para habilita
 
 Caso utilize o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), hospedado na nuvem ou local, você pode habilitar o gerenciamento simples do Intune sem registro. Computadores Windows também podem ser gerenciados usando o [software cliente do Intune](#manage-windows-pcs-with-intune).
 
+Por padrão, dispositivos para todas as plataformas têm permissão para se registrarem no Intune. Para bloquear o registro de dispositivos, entre no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com suas credenciais de administrador. Escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** e desmarque as caixas de seleção aplicáveis para as plataformas que deseja bloquear.
+
 ## <a name="overview-of-device-enrollment-methods"></a>Visão geral dos métodos de registro do dispositivo
 
 A tabela a seguir mostra os métodos de registro do Intune e os requisitos e recursos com suporte de cada método. Os requisitos e recursos são descritos abaixo.
@@ -38,41 +41,41 @@ A tabela a seguir mostra os métodos de registro do Intune e os requisitos e rec
 
 **Métodos de registro do iOS**
 
-| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes** |
+| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**| Não |    Não  | Não|[Mais informações](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|    Sim |    Opcional |    Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**|    Sim |    Opcional |    Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**|    Não |    Não    | Não|[Mais informações](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Métodos de registro do Windows**
 
-| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sim|   Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Sim|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do Android**
 
-| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do Android para Trabalho**
 
-| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do macOS**
 
-| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sim|   Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Sim|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+
 
 Para ver uma série de perguntas que o ajudarão a encontrar o método certo, consulte [Escolher como registrar dispositivos](/intune/get-started/choose-how-to-enroll-devices1).
 
@@ -89,15 +92,15 @@ O Gerenciador de registro do dispositivo é um conta especial do Intune usada pa
 
 ### <a name="dep"></a>DEP
 O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
-  - Registro bloqueado
-  - Modo de quiosque e outras restrições e configurações avançadas
+  -    Registro bloqueado
+  -    Modo de quiosque e outras restrições e configurações avançadas
 
 Saiba mais sobre o [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI usam o Apple Configurator, por USB, para preparar manualmente todos os dispositivos de propriedade corporativa para o registro usando o Assistente de Configuração. O administrador de TI cria um perfil de registro e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, eles devem executar o Assistente de Instalação para registrá-los. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
-  - Registro bloqueado
-  - Modo de quiosque e outras restrições e configurações avançadas
+  -    Registro bloqueado
+  -    Modo de quiosque e outras restrições e configurações avançadas
 
 Saiba mais sobre [Assistente para configuração de registro com Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
@@ -130,6 +133,6 @@ O Intune pode gerenciar as seguintes plataformas de dispositivo:
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

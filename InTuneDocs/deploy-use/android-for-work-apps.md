@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/6/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 A maneira pela qual aplicativos são implantados em dispositivos Android for Work e dispositivos Android padrão é diferente. Todos os aplicativos instalados no Android for Work são obtidos na loja do Google Play for Work. Faça logon na loja, procure os aplicativos que você deseja e aprove-os.
 Então, o aplicativo aparecerá no nó **Aplicativos Adquiridos por Volume** do console do Intune. A partir desse momento, é possível gerenciar a implantação do aplicativo do mesmo modo que você implanta qualquer outro aplicativo.
+
 Além disso, se você criou seus próprios aplicativos de linha de negócios (LOB), você pode implantá-los. Para fazer isso, é necessário criar um conta de desenvolvedor do Google, que permite que você publique aplicativos em uma área privada da loja do Google Play e sincronize-os com o Intune.
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -40,9 +40,9 @@ Além disso, se você criou seus próprios aplicativos de linha de negócios (LO
 1. Vá para a [loja do Google Play for Work](https://play.google.com/work). Entre com a mesma conta usada para configurar a conexão entre o Intune e o Android for Work.
 2. Pesquise o aplicativo que deseja implantar usando o Intune.
 3. Na página do aplicativo que você escolheu, escolha **Aprovar**. Neste exemplo, você escolheu o aplicativo Microsoft Excel.<br>
-  ![Aprovar o exemplo de aplicativo](/intune/deploy-use/media/approve.png)
+  ![Aprovar o exemplo de aplicativo](media/approve.png)
 4. Uma janela do aplicativo se abrirá solicitando que você conceda permissões para o aplicativo executar várias operações. Você deve escolher **Aprovar** para continuar.<br>
-  ![Aprovar o exemplo de permissões de aplicativo](/intune/deploy-use/media/approve-app-permissions.png)
+  ![Aprovar o exemplo de permissões de aplicativo](media/approve-app-permissions.png)
 5. Após alguns instantes, você verá uma mensagem de confirmação informando que o aplicativo foi aprovado e está disponível no console do administrador de TI.
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Publique e, em seguida, sincronize um aplicativo de linha de negócios da loja do Google Play for Work
@@ -51,7 +51,7 @@ Além disso, se você criou seus próprios aplicativos de linha de negócios (LO
 2. Entre com a mesma conta usada para configurar a conexão entre o Intune e o Android for Work. Se você estiver entrando pela primeira vez, será necessário se registrar e pagar uma taxa para se tornar membro do programa de Desenvolvedor do Google.
 3. No console, escolha **Adicionar novo aplicativo**.
 4. Carregue e forneça informações sobre o aplicativo da mesma maneira que você publica aplicativos na loja do Google Play. No entanto, você deve selecionar a configuração **Disponibilizar este aplicativo somente para a minha organização (<*nome da organização*>) * *, conforme mostrado abaixo.<br>
-  ![Opção para disponibilizar o aplicativo apenas para sua organização](/intune/deploy-use/media/restrict.png)<br>
+  ![Opção para disponibilizar o aplicativo apenas para sua organização](media/restrict.png)<br>
 Isso garante que o aplicativo estará disponível apenas para a sua organização e não estará disponível na loja pública do Google Play.
 Para obter mais informações sobre como carregar e publicar aplicativos Android, consulte [Ajuda do Console do Desenvolvedor do Google](https://support.google.com/googleplay/android-developer/answer/113469).
 5. Depois publicar o aplicativo, vá para a [loja do Google Play for Work](https://play.google.com/work). Entre com a mesma conta usada para configurar a conexão entre o Intune e o Android for Work.
@@ -71,6 +71,6 @@ Depois de implantar o aplicativo, ele será instalado nos dispositivos de destin
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
