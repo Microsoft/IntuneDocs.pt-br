@@ -1,11 +1,11 @@
 ---
-title: Criptografar seu dispositivo | Microsoft Docs
-description: Descreve como criptografar um dispositivo Android
+title: Como proteger o seu dispositivo Android com criptografia | Microsoft Docs
+description: Proteger o seu dispositivo Android
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Criptografar seu dispositivo
+# <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android usando criptografia
 
-Se sua empresa ou organização pedir que você criptografe o dispositivo Android antes de acessar os arquivos, email ou dados da empresa, siga as etapas abaixo para criptografar o dispositivo. Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigir.
+Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que suas informações estejam protegidas, sua organização está exigindo que você criptografe seu dispositivo Android antes de poder acessar os dados, email ou arquivos da empresa.
+
+> [!Note]
+> Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigir.
 
 Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
@@ -63,6 +68,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 
