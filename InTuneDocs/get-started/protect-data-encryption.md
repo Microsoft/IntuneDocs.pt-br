@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Este guia de início rápido é um bom recurso se você atender aos seguintes re
 Este guia pode ajudar você a proteger sua empresa contra perda de dados forçando senhas e criptografia de dados usando políticas nos aplicativos móveis que seus funcionários usam para acessar dados confidenciais, sem exigir o registro completo em qualquer solução de gerenciamento de dispositivo. O Microsoft Intune permite que você defina políticas de MAM (gerenciamento de aplicativo móvel) em aplicativos móveis do Office para [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) e [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android). Esta abordagem protege dados do O365 sem exigir que os usuários registrem seus dispositivos em uma solução de gerenciamento de dispositivo móvel, enquanto mantêm uma excelente experiência do usuário final com aplicativos móveis do Office.
 
 ## <a name="how-do-i-do-it"></a>Como fazer isso?
-1.  [Examine como você pode proteger dados de aplicativos](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [Prepare-se para configurar políticas de gerenciamento de aplicativos móveis](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [Crie e implante políticas de gerenciamento de aplicativo móvel](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [Examine como você pode proteger dados de aplicativos](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [Prepare-se para configurar políticas de gerenciamento de aplicativos móveis](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [Crie e implante políticas de gerenciamento de aplicativo móvel](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Informação adicional:
 - [Saiba mais sobre a experiência do usuário final de aplicativos habilitados para MAM com o Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

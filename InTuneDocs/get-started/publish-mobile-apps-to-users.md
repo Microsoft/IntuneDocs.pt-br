@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Você gostaria que os usuários tivessem acesso rápido a todos os aplicativos d
 Se sim, o Microsoft Intune permitirá que você publique aplicativos (Office Mobile, aplicativos de linha de negócios internos ou outros aplicativos móveis e de área de trabalho) em um único portal comum: o [site ou aplicativo de Portal da Empresa do Intune](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Como fazer isso?
-1.  [Registre dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) no gerenciamento de dispositivo móvel do Intune.
-2.  [Adicione ao Intune aplicativos](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que você deseja implantar em dispositivos registrados.
-3.  [Implante aplicativos usando o Intune](/intune/deploy-use/deploy-apps) em dispositivos registrados.
+1.    [Registre dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) no gerenciamento de dispositivo móvel do Intune.
+2.    [Adicione ao Intune aplicativos](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que você deseja implantar em dispositivos registrados.
+3.    [Implante aplicativos usando o Intune](/intune/deploy-use/deploy-apps) em dispositivos registrados.
 
 ### <a name="additional-information"></a>Informação adicional:
 Se a publicação de aplicativos do Office Mobile for feita com a intenção de usar recursos de MAM do Intune para gerenciar a proteção contra perda de dados para esses aplicativos, cada usuário final que for alvo de políticas de MAM precisará [receber uma licença de usuário para o Office 365](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).

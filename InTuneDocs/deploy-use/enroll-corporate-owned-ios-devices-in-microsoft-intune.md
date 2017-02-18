@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
@@ -56,8 +57,8 @@ Os dispositivos configurados com a afinidade de usuário podem instalar e execut
 
 Afinidade de usuário é necessária para dar suporte ao seguinte:
   - Aplicativos MAM (Gerenciamento de aplicativos móveis)
-  - Acesso condicional para dados de email e da empresa
-  - Aplicativo do Portal da Empresa
+  -    Acesso condicional para dados de email e da empresa
+  -    Aplicativo do Portal da Empresa
 
 **Como os usuários registram dispositivos iOS corporativos com afinidade do usuário**
 1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.

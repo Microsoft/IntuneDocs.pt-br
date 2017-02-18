@@ -14,6 +14,7 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
@@ -30,13 +31,13 @@ Se tiver problemas com a instalação, tente executar as etapas de solução de 
 
 **O que você deve fazer:**
 
-1.  Arraste para baixo da parte superior da tela para abrir a barra de Notificações e toque em **Aplicativo necessário – Instalar Lookout for Work da Play Store**.
+1.    Arraste para baixo da parte superior da tela para abrir a barra de Notificações e toque em **Aplicativo necessário – Instalar Lookout for Work da Play Store**.
 
     ![você precisa instalar o Lookout for Work](./media/lookout-required-app-install-android.png)
 
     Você será levado à página de instalação do Lookout for Work na Play Store.
 
-2.  Instale o Lookout for Work e toque em **ACEITAR** para permitir que o Lookout for Work acesse seu dispositivo.
+2.    Instale o Lookout for Work e toque em **ACEITAR** para permitir que o Lookout for Work acesse seu dispositivo.
 
     ![toque em aceitar para permitir que o Lookout for Work acesse seu dispositivo](./media/lookout-accept-store-permissions-android.png)
 

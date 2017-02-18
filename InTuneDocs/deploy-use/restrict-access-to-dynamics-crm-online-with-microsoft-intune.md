@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
@@ -81,8 +82,8 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
   * **iOS**
   * **Android**
 4.  Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
-5.  Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
-6.  Quando terminar, selecione **Salvar**.
+5.    Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
+6.    Quando terminar, selecione **Salvar**.
 
 Você configurou o acesso condicional ao Dynamics CRM. Não é necessário implantar a política de acesso condicional, ela entra em vigor imediatamente.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorar a conformidade e políticas de acesso condicional
