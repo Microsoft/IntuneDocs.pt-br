@@ -1,33 +1,35 @@
 ---
-title: Redefinir a senha do dispositivo pelo site do Portal da Empresa | Microsoft Docs
+title: Como redefinir sua senha do site do Portal da Empresa | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a8ce59755a74199eda6865feda68c0613d10c2a7
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Redefinir a senha do dispositivo pelo site do Portal da Empresa
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
 Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para redefini-la. Você pode usar o site do Portal da Empresa para gerenciar computadores e dispositivos que você registrou no Intune e para realizar a maioria das mesmas tarefas que você pode fazer quando usa o aplicativo de Portal da Empresa.
 
 > [!NOTE]
-> Você pode não ver o botão **Redefinir Senha** no site do Portal da Empresa, dependendo de como o administrador de TI tiver configurado o Intune. Não há suporte para a redefinição de senha em dispositivos Windows 8.1.
+> É possível que você não veja o botão **Redefinir Senha** botão no site do Portal da Empresa. Se não o vir, será necessário entrar em contato com seu administrador de TI para obter suporte por meio do site do Portal da Empresa.
 
 Para redefinir sua senha:
 
@@ -47,15 +49,14 @@ Para redefinir sua senha:
 
     Verifique a tabela para ver como **Redefinir Senha** funciona em seu dispositivo.
 
-    |Plataforma|Suporte|
+    |Tipo de dispositivo|O que acontece quando você redefine|
     |------------|-----------|
-    |Android|Cria uma senha temporária alfanumérica.|
-    |iOS|Remove a senha do dispositivo e não cria uma senha temporária. Se estiver usando Touch ID, você precisará configurá-lo novamente no seu dispositivo, porque ele será removido quando você redefinir sua senha.|
-    |Windows 10 (somente para dispositivos móveis)|Cria uma senha temporária alfanumérica. Há suporte para o Windows Hello.|
-    |Windows Phone 8.1|Cria uma senha temporária numérica.|
-    Depois de desbloquear o dispositivo, você pode definir uma nova senha indo para **Configurações** em seu dispositivo.
+    |Android|Remove a senha existente e cria uma senha temporária com letras e números|
+    |iOS|Remove a senha existente e não cria uma senha temporária. Se você estiver usando o scanner de impressão digital de ID de Toque para abrir o dispositivo ou fazer compras, será necessário configurá-lo novamente.|
+    |Windows 10 Mobile|Remove a senha existente e cria uma senha temporária com letras e números. Se você estiver usando o reconhecimento do rosto Windows Hello para fazer logon, ele ainda terá suporte.|
+    |Windows Phone 8.1|Remove a senha existente e cria uma senha temporária com números.|
 
-5.  Desbloqueie seu dispositivo e, em seguida, defina uma nova senha ou altere a senha temporária acessando **Configurações** em seu dispositivo.
+    5.  Desbloqueie seu dispositivo e defina uma nova senha ou altere a senha temporária acessando as **Configurações** de seu dispositivo.
 
     Para ver uma notificação confirmando que sua senha foi redefinida com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
@@ -63,6 +64,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
