@@ -15,8 +15,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
-ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -25,13 +25,13 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
     <section id="hero-content">
       <h1>Documentação do Intune</h1>
       <h2>Gerenciamento de dispositivo móvel e de aplicativo e gerenciamento de computador com base na nuvem. </h2>
-      <h3>Quer gerenciar o Intune com o Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Saiba mais sobre o gerenciamento híbrido de dispositivo móvel&rarr;</a></h3>
+      <h3>Quer gerenciar o Intune com o Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Saiba mais sobre o gerenciamento de dispositivo móvel híbrido&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em destaque</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">Mais de 150 licenças? Aproveite seus benefícios do FastTrack</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Mais de&150; licenças? Aproveite seus benefícios do FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Maneiras comuns de usar o Intune</a></li>
           <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune na visualização do portal do Azure</a></li>
         </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>O que dizer aos seus usuários finais</h3>
                     <p>Entenda as etapas que os usuários finais precisam executar para usar seus dispositivos com o Intune e compartilhar essas informações com usuários finais para ajudá-los a executarem tarefas por conta própria.</p>
                   </a>
@@ -262,8 +262,8 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
       <h2 class="section-heading"><span class="icon icon-note"></span>Recursos adicionais do Intune</h2>
       <div class="resource-list row">
           <ul class="column-half">
-          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Comentar a funcionalidade do Intune</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">Envie comentários sobre a documentação</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Enviar comentários sobre a funcionalidade do Intune</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">Enviar comentários sobre a documentação</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Downloads de documentação do Intune</a></li>
           </ul>
           <ul class="column-half">
@@ -285,6 +285,6 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 
