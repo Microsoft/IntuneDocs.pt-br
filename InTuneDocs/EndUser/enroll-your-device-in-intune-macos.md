@@ -13,19 +13,20 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 70b11804b6b96e76b43cc450ac4c433fb31be6f8
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
 
 ---
 
 # <a name="enroll-your-macos-device-in-intune"></a>Registrar seu dispositivo macOS no Intune
 
-Obter acesso a aplicativos, dados e recursos da sua organização possibilita fazer seu trabalho. Se estiver usando um dispositivo macOS no trabalho, isso significa instalar um __Perfil de Gerenciamento__. Isso é simplesmente um arquivo configurado pelo seu administrador de TI que carrega as configurações e informações de acesso em seu Mac. Quer saber mais? Descubra [o que acontece quando você instala o aplicativo do Portal da Empresa e registra o dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Obter acesso a aplicativos, dados e recursos da sua organização possibilita fazer seu trabalho. Se estiver usando um dispositivo macOS no trabalho, isso significa instalar um __Perfil de Gerenciamento__. Esse é simplesmente um arquivo configurado pelo seu administrador de TI que carrega as configurações e informações de acesso para seu Mac. Quer saber mais? Descubra [o que acontece quando você instala o aplicativo do Portal da Empresa e registra o dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > Se estiver, de fato, tentando registrar um dispositivo iOS, como um iPhone ou iPad, [tente estas instruções em vez disso](enroll-your-device-in-intune-ios.md).
@@ -66,6 +67,6 @@ Ainda precisa de ajuda? Faça o check-in com o administrador de TI. Você pode e
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

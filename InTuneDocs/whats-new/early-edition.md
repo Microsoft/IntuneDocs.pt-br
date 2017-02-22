@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 877e4aabb3d8f0244429731e84d6ec67d413e948
-ms.openlocfilehash: 6b4586b1d18992b33cd773bc2d7b0c05cabc06c2
+ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
+ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
 
 
 ---
 
-# <a name="the-early-edition---february-2017"></a>A edição antecipada – fevereiro de 2017
+
+# <a name="the-early-edition-for-microsoft-intune---february-2017"></a>A edição antecipada do Microsoft Intune – Fevereiro de 2017
 
 A **Edição antecipada** fornece uma lista de recursos que estarão disponíveis em versões futuras do Microsoft Intune. Estas informações são fornecidas sob NDA (acordo de confidencialidade) de forma extremamente limitada e estão sujeitas a alterações. Alguns recursos listados aqui correm o risco de não estarem prontos na data de fechamento e serem atrasados até uma versão futura. Outros recursos estão sendo testados em um piloto (liberação de versões de pré-lançamento) para garantir que fiquem prontos para o cliente. Entre em contato com seu colega do Intune/PM caso tenha perguntas ou dúvidas.
 
@@ -34,6 +35,11 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Modernizando o site Portal da Empresa <!--753980-->
 O site Portal da Empresa oferecerá suporte a aplicativos destinados a usuários que não têm dispositivos gerenciados. O site será alinhado com outros produtos e serviços da Microsoft usando um novo esquema de cores contrastantes, ilustrações dinâmicas e um "menu de hambúrguer", ![Pequena imagem do menu de hambúrguer que é agora adicionada ao canto superior esquerdo do site Portal da Empresa](./media/CP_hamburger_menu.png) e que conterá detalhes de contato de suporte técnico e informações sobre os dispositivos gerenciados existentes. A página de aterrissagem será reorganizada para enfatizar os aplicativos que estão disponíveis aos usuários, com carrosséis para aplicativos em destaque e atualizados recentemente. Você pode localizar imagens de antes e depois disponíveis na [página de atualizações da interface do usuário](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
+
+### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nova experiência orientada para o Portal da Empresa do Windows 10 <!--713927-->
+A partir de março, o Portal da Empresa para o Windows 10 incluirá uma experiência passo a passo interativa do Intune para dispositivos que não foram identificados ou registrados. A nova experiência fornece instruções passo a passo personalizadas para o build do Windows 10 do usuário, que guia os usuários pela execução do registro AAD (necessário para a identificação de recursos de Acesso Condicional) e o registro de MDM (necessário para recursos de gerenciamento de dispositivo). A experiência interativa poderá ser acessada na home page do Portal da Empresa e é opcional. Os usuários poderão continuar a usar o aplicativo mesmo se não concluírem o registro, porém podem ter funcionalidades limitadas.
+
+###
 
 ## <a name="notices"></a>Avisos
 
@@ -56,6 +62,9 @@ A partir de março, o aplicativo de Portal da empresa para Android seguirá [as 
 * __Serviço__: as guias Meus Dispositivos e Contatar TI têm legibilidade aprimorada.
 
 Você pode localizar imagens de antes e depois na [página de atualizações da interface do usuário](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
+
+### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>Associar várias ferramentas de gerenciamento da Windows Store para Empresas <!--926135-->
+Se você está usando mais de uma ferramenta de gerenciamento para implantar aplicativos da Windows Store para Empresas, anteriormente, você podia associar apenas um deles à Windows Store para Empresas. Agora você pode associar várias ferramentas de gerenciamento com a loja, por exemplo, o Intune e o Configuration Manager. Para ver mais detalhes, consulte [Gerenciar aplicativos adquiridos na Windows Store para Empresas com o Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Visualização pública da nova experiência do administrador do Intune no Azure <!--736542-->
 
@@ -108,6 +117,6 @@ Veja [Novidades do Microsoft Intune](whats-new-in-microsoft-intune.md) para sabe
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

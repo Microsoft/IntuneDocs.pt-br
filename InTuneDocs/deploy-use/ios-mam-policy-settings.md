@@ -5,17 +5,17 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 01/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-ms.reviewer: andcerat
+ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d80f548f0c1382e1bd024bd31078d2a4e6366656
-ms.openlocfilehash: a2130fa76f66528f6e77c720bc93286e0d01aba2
+ms.sourcegitcommit: 136c0ea7c9c43afc589ce5aaa03978a0818e8e7e
+ms.openlocfilehash: ff8394bbceb21668e60b1ec27ffc0be5308ca6cd
 
 
 ---
@@ -51,14 +51,29 @@ Há duas categorias de configurações de política: configurações de realoca�
 
 | Setting | Como usar | Valor padrão |
 |------|------|------|
-| **Exigir PIN para acesso** | Escolha **Sim** para exigir um PIN para usar esse aplicativo. O usuário deverá configurar esse PIN na primeira vez que executar o aplicativo em um contexto corporativo ou de estudante. Valor padrão = **Sim**.<br><br> Defina as seguintes configurações de força do PIN: <ul><li>**Número de tentativas antes da redefinição do PIN**: especifique o número de tentativas que o usuário deverá inserir o PIN com êxito antes de precisar redefini-lo. Valor padrão = **5**.</li><li> **Permitir PIN simples**: escolha **Sim** para permitir que os usuários usem sequências de PIN simples como 1234 ou 1111. Escolha **Não** para impedi-los de usar sequências simples. Valor padrão = **Sim**. </li><li> **Tamanho do PIN**: especifique o número mínimo de dígitos em uma sequência de PIN. Valor padrão = **4**. </li><li> **Permitir impressão digital em vez do PIN (iOS 8.0+)**: escolha **Sim** para permitir que o usuário use uma [ID de Toque](https://support.apple.com/en-us/HT201371) em vez de um PIN para acesso ao aplicativo. Valor padrão = **Sim**.<br><br> Em dispositivos iOS, é possível permitir que o usuário prove sua identidade usando uma [ID de Toque](https://support.apple.com/en-us/HT201371) em vez de um PIN. Quando o usuário tenta usar esse aplicativo com sua conta corporativa ou de estudante, ele deve fornecer sua identidade de impressão digital em vez de inserir um PIN. </li></ul>| Exigir PIN: Sim <br><br> Tentativas de redefinição do PIN: 5 <br><br> Permitir PIN simples: Sim <br><br> Tamanho do PIN: 4 <br><br> Permitir impressão digital: Sim |
+| **Exigir PIN para acesso** | Escolha **Sim** para exigir um PIN para usar esse aplicativo. O usuário deverá configurar esse PIN na primeira vez que executar o aplicativo em um contexto corporativo ou de estudante. Valor padrão = **Sim**.<br><br> Defina as seguintes configurações de força do PIN: <ul><li>**Número de tentativas antes da redefinição do PIN**: especifique o número de tentativas que o usuário deverá inserir o PIN com êxito antes de precisar redefini-lo. Valor padrão = **5**.</li><li> **Permitir PIN simples**: escolha **Sim** para permitir que os usuários usem sequências de PIN simples como 1234 ou 1111. Escolha **Não** para impedi-los de usar sequências simples. Valor padrão = **Sim**. </li><li> **Tamanho do PIN**: especifique o número mínimo de dígitos em uma sequência de PIN. Valor padrão = **4**. </li><li> **Permitir impressão digital em vez do PIN (iOS 8.0+)**: escolha **Sim** para permitir que o usuário use uma [ID de Toque](https://support.apple.com/en-us/HT201371) em vez de um PIN para acesso ao aplicativo. Valor padrão = **Sim**.<br><br> Em dispositivos iOS, é possível permitir que o usuário prove sua identidade usando uma [ID de Toque](https://support.apple.com/en-us/HT201371) em vez de um PIN. Quando o usuário tenta usar esse aplicativo com sua conta corporativa ou de estudante, ele deve fornecer sua identidade de impressão digital em vez de inserir um PIN. Quando essa configuração for habilitada, a imagem de visualização do alternador de aplicativo será indefinida enquanto usar uma conta corporativa ou escolar. </li></ul>| Exigir PIN: Sim <br><br> Tentativas de redefinição do PIN: 5 <br><br> Permitir PIN simples: Sim <br><br> Tamanho do PIN: 4 <br><br> Permitir impressão digital: Sim |
 | **Exigir credenciais corporativas para acesso** | Escolha **Sim** para exigir que o usuário se conecte com sua conta corporativa ou de estudante em vez de inserir um PIN para acesso ao aplicativo. Se você definir como **Sim**, ele substituirá os requisitos de PIN ou da ID de Toque.  | Não |
 | **Impedir que aplicativos gerenciados sejam executados em dispositivos com jailbreak ou root** |  Escolha **Sim** para impedir que esse aplicativo seja executado em dispositivos com jailbreak ou root. O usuário continuará podendo usar esse aplicativo para tarefas pessoais, mas precisará usar um dispositivo diferente para acessar dados corporativos ou de estudante nesse aplicativo. | Sim |
-| **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: especifique o tempo (em minutos) antes que os requisitos de acesso ao aplicativo sejam verificados novamente. Valor padrão = **30** minutos.</li><li>**Período de carência offline**: se o dispositivo estiver offline, especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas).</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
-| **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Os dados corporativos ou de estudante nesse aplicativo poderão ser apagados se um dispositivo tiver ficado offline por mais tempo que um período específico. Especifique o número de dias que um dispositivo pode ficar offline antes que os dados corporativos ou de estudante sejam removidos do dispositivo. <br><br> | 90 dias |
+| **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: esse é o número de minutos antes que os requisitos de acesso (definidos anteriormente na política) sejam verificados novamente. Por exemplo, um administrador ativa o PIN na política, um usuário abre um aplicativo MAM e deve inserir um pin. Ao usar essa configuração, o usuário não precisa inserir um PIN em qualquer aplicativo MAM por mais **30 minutos** (valor padrão).</li><li>**Período de carência offline**: esse é o número de minutos em que os aplicativos MAM podem ser executados offline. Especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas). Após esse período expirar, o aplicativo exigirá a autenticação do usuário para o AAD para que o aplicativo possa continuar a ser executado.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
+| **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo fará um apagamento seletivo. Essa limpeza seletiva é a mesma limpeza que a que pode ser iniciada pelo administrador no fluxo de trabalho de apagamento MAM. <br><br> | 90 dias |
+
+##  <a name="add-ins-for-outlook-app"></a>Suplementos do aplicativo do Outlook
+
+Recentemente, o Outlook trouxe suplementos para o Outlook para iOS que permitem integrar aplicativos populares ao cliente de email. Os suplementos para Outlook estão disponíveis na Web, Windows, Mac e Outlook para iOS. Como os suplementos são gerenciados pelo Microsoft Exchange, os usuários poderão compartilhar dados e mensagens entre o Outlook e aplicativos de suplementos não gerenciados, a menos que os suplementos sejam desativados para o usuário pelo Exchange.
+
+Se você quiser impedir que os usuários finais acessem e instalem suplementos do Outlook (isso afeta todos os clientes do Outlook), verifique se você tem as seguintes alterações em funções no Centro de administração do Exchange:
+
+- Para impedir que os usuários instalem os suplementos da Office Store, remova a função My Marketplace deles.
+- Para impedir que usuários carreguem suplementos lateralmente, remova a função de Meus Aplicativos Personalizados deles.
+- Para impedir que os usuários instalem todo e qualquer suplemento, remova ambas as funções Meus Aplicativos Personalizados e My Marketplace deles.
+
+Essas instruções se aplicam ao Office 365, Exchange 2016 e Exchange 2013 no Outlook na Web, Windows, Mac e celular.
+
+- Saiba mais sobre [suplementos do Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
+- Saiba mais sobre [como especificar os administradores e usuários que podem instalar e gerenciar suplementos para aplicativos do Outlook](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

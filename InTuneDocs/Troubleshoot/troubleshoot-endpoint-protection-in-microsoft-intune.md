@@ -2,10 +2,10 @@
 title: Solucionar problemas do Endpoint Protection | Microsoft Docs
 description: Solucione problemas ao usar o Endpoint Protection do Microsoft Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Use as informações nesta seção para ajudá-lo a resolver problemas durante o uso do Endpoint Protection do Microsoft Intune.
+Use as informações nesta seção para ajudá-lo a resolver problemas durante o uso do Endpoint Protection do Microsoft Intune. Você também pode examinar informações sobre a [solução de problemas do Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Mensagens de erro do Endpoint Protection
 Esta seção descreve as possíveis causas e soluções para os seguintes erros e avisos, que aparecem no painel **Status do Endpoint Protection**, no [console de administração do Intune](https://manage.microsoft.com).
@@ -52,6 +52,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

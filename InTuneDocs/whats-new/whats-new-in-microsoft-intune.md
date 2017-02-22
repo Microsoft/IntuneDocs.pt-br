@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ab53e40f4b7ea67733127f445005ecb77a404f7
-ms.openlocfilehash: 37031eed6efa48ff52ec37a942fa77af414f78fe
+ms.sourcegitcommit: 053cf0a1b5d06496397b36cbd1a7ebdce420fed3
+ms.openlocfilehash: 5158d58c32066ea720335a878fef87451542c195
 
 
 ---
@@ -55,8 +55,11 @@ Links inside of the Company Portal app for iOS, including those to documentation
 ### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Melhorando o suporte de gerenciamento de aplicativo móvel para o apagamento seletivo <!--581242-->
 Os usuários finais receberão outras diretrizes sobre como recuperar o acesso a dados corporativos ou de estudante se esses dados forem removidos automaticamente devido à política “Intervalo offline antes do apagamento dos dados de aplicativo”.<!--, or the removal of the Intune Company Portal on Android.-->
 
+### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Portal da Empresa para links do iOS abertos no aplicativo <!--665954-->
+Os links dentro do aplicativo Portal da Empresa para iOS, incluindo os links para a documentação e os aplicativos, serão abertos diretamente no aplicativo Portal da Empresa usando uma exibição no aplicativo do Safari. Essa atualização será fornecida separadamente da atualização de serviço em janeiro.
+
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Modernizando o site Portal da Empresa <!--753980-->
-A partir de fevereiro, o site Portal da Empresa oferecerá suporte a aplicativos destinados a usuários que não têm dispositivos gerenciados. O site será alinhado com outros produtos e serviços da Microsoft usando um novo esquema de cores contrastantes, ilustrações dinâmicas e um "menu de hambúrguer", ![menu de hambúrguer do site Portal da Empresa](../media/CP_hamburger_menu.png) contendo detalhes de contato de suporte técnico e informações sobre os dispositivos gerenciados existentes. A página de aterrissagem será reorganizada para enfatizar os aplicativos que estão disponíveis aos usuários, com carrosséis para aplicativos em destaque e atualizados recentemente. Você pode encontrar imagens de antes e depois disponíveis na [página Novidades na interface do usuário do Portal da Empresa](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017).
+A partir de fevereiro, o site Portal da Empresa oferecerá suporte a aplicativos destinados a usuários que não têm dispositivos gerenciados. O site será alinhado com outros produtos e serviços da Microsoft usando um novo esquema de cores contrastantes, ilustrações dinâmicas e um "menu de hambúrguer", ![menu de hambúrguer do site Portal da Empresa](./media/CP_hamburger_menu.png) contendo detalhes de contato de suporte técnico e informações sobre os dispositivos gerenciados existentes. A página de aterrissagem será reorganizada para enfatizar os aplicativos que estão disponíveis aos usuários, com carrosséis para aplicativos em destaque e atualizados recentemente. É possível encontrar imagens de antes e depois disponíveis na [página Novidades na interface do usuário do aplicativo do Intune](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017).
 
 ### <a name="new-documentation-for-app-protection-policies---583398--"></a>Nova documentação para as políticas de proteção do aplicativo <!--583398-->
 Atualizamos nossa documentação para os administradores e desenvolvedores de aplicativo que desejam habilitar políticas de proteção do aplicativo (conhecidas como políticas de MAM) em aplicativos iOS e Android usando a Ferramenta de Disposição do Aplicativo do Intune ou o SDK do Aplicativo do Intune.
@@ -75,6 +78,9 @@ Os seguintes artigos são novas adições à biblioteca de documentos:
 
 <!--### Progress bar when launching the Company Portal on iOS <!--665978
 The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.-->
+
+### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>Barra de progresso ao iniciar o Portal da Empresa no iOS <!--665978-->
+O Portal da Empresa para iOS introduziu uma barra de progresso na tela de inicialização para fornecer ao usuário informações sobre os processos de carregamento ocorridos. Haverá uma distribuição em fases da barra de progresso para substituição do controle giratório. Isso significa que alguns dos usuários verão a nova barra de progresso enquanto outros continuarão vendo o controle giratório.
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novidades na visualização pública da experiência de administração do Intune no Azure <!--736542-->
 
@@ -97,6 +103,6 @@ Você pode encontrar as novidades na visualização do Intune no Azure [aqui](ht
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

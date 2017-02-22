@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 7cef6b6eac01c0056f7c75a7010ee280932a5dfb
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 
 
 ---
@@ -56,8 +56,8 @@ Todos os métodos, exceto quando os próprios usuários instalam o software clie
 
 Nos computadores em que vai instalar o software cliente, vá para a pasta na qual os arquivos de instalação foram colocados. Em seguida, execute **Microsoft_Intune_Setup.exe** para instalar o software cliente.
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> O status da instalação é exibido ao passar o mouse sobre o ícone na barra de tarefas no computador cliente.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Implante o software cliente usando a Política de Grupo
 
@@ -74,7 +74,7 @@ Nos computadores em que vai instalar o software cliente, vá para a pasta na qua
 
 3.  Use a Política de grupo para implantar o software nos computadores da sua rede.
 
-    Para obter mais informações sobre como usar a Política de Grupo para implantar o software automaticamente, consulte a documentação do Windows Server.
+    Para obter mais informações sobre como usar a Política de Grupo para implantar software automaticamente, consulte [Política de Grupo para Iniciantes](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Implante o software cliente como parte de uma imagem
 É possível implantar o software cliente do Intune em computadores como parte de uma imagem do sistema operacional, usando o seguinte procedimento como guia:
@@ -100,11 +100,11 @@ Nos computadores em que vai instalar o software cliente, vá para a pasta na qua
 
 5.  Capture uma imagem do computador de referência e implante-a nos computadores de destino.
 
-Quando o computador definido como destino for reiniciado após a conclusão da instalação do Windows, a chave do Registro **WindowsIntuneEnrollPending** será criada. O pacote de registro verifica se o computador está registrado. Se o computador estiver inscrito, nenhuma outra ação adicional será executada. Se o computador não estiver registrado, o pacote de registro criará uma Tarefa de registro automática do Microsoft Intune.
+    Quando o computador definido como destino for reiniciado após a conclusão da instalação do Windows, a chave do Registro **WindowsIntuneEnrollPending** será criada. O pacote de registro verifica se o computador está registrado. Se o computador estiver inscrito, nenhuma outra ação adicional será executada. Se o computador não estiver registrado, o pacote de registro criará uma Tarefa de registro automática do Microsoft Intune.
 
-Quando a tarefa de Registro automático do Intune for executada no próximo horário agendado, ela verificará a existência do valor do registro **WindowsIntuneEnrollPending** e tentará registrar o computador definido como destino no Intune. Se a inscrição falhar por algum motivo, haverá uma nova tentativa na próxima vez que a tarefa for executada. As tentativas continuam por um mês.
+    Quando a tarefa de Registro automático do Intune for executada no próximo horário agendado, ela verificará a existência do valor do registro **WindowsIntuneEnrollPending** e tentará registrar o computador definido como destino no Intune. Se a inscrição falhar por algum motivo, haverá uma nova tentativa na próxima vez que a tarefa for executada. As tentativas continuam por um mês.
 
-A tarefa de registro automático do Intune, o valor do Registro **WindowsIntuneEnrollPending** e o certificado da conta serão excluídos do computador definido como destino quando o registro for concluído com êxito ou depois de um mês (o que ocorrer primeiro).
+    A tarefa de registro automático do Intune, o valor do Registro **WindowsIntuneEnrollPending** e o certificado da conta serão excluídos do computador definido como destino quando o registro for concluído com êxito ou depois de um mês (o que ocorrer primeiro).
 
 ## <a name="instruct-users-to-self-enroll"></a>Instrua os usuários a se registrarem por conta própria
 
@@ -143,6 +143,6 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

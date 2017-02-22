@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3da636b15807623bb60895870e6d43cd2e0aa01c
-ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: b1de425a00e3c4200f71c8bf03661e4d0aca45c7
 
 
 ---
@@ -25,9 +27,11 @@ ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
 # <a name="enroll-your-android-device-in-intune"></a>Registrar seu dispositivo Android no Intune
 
-Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo Android para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, o departamento de TI pode gerenciar recursos corporativos ou de estudante e mantê-los seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo o aplicativo Portal da Empresa e registro meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispositivo Android para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, o departamento de TI pode gerenciar recursos corporativos ou de estudante e mantê-los seguros, dando-lhe a liberdade de usar seu dispositivo preferido para realizar o trabalho. Para saber mais sobre registro, consulte [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo o aplicativo Portal da Empresa e registro meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-Essas instruções de registro são para dispositivos Samsung KNOX Android e dispositivos Android “nativos” (que não são Samsung Knox). Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** > **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+Essas instruções de registro destinam-se a dispositivos Samsung KNOX Android e nativos. O Samsung KNOX é um tipo de segurança que certos dispositivos Samsung usam para proporcionar proteção adicional além da fornecida pelo Android de maneira nativa. Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** > **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
 
 Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O administrador de TI usa essa categoria para ajudar a verificar os aplicativos aos quais você tem acesso.
 
@@ -70,7 +74,7 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 10.  Se você estiver usando o Android 6.0 ou posterior, execute esta etapa. Caso contrário, vá para a próxima etapa.
 
     Se o administrador de TI tiver configurado algumas políticas, você poderá ver as seguintes mensagens:
-    -   **Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?**
+    -    **Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -78,7 +82,7 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 
     Se você negar acesso, a mensagem será exibida novamente na próxima vez que você entrar no Portal da Empresa, mas você poderá desligar as mensagens futuras tocando na caixa **Nunca perguntar novamente**. Se você decidir posteriormente permitir o acesso, acesse **Configurações** &gt; **Aplicativos** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telefone** e ative a permissão.
 
-    -   **Permitir que o Portal da Empresa acesse seus contatos?**
+    -    **Permitir que o Portal da Empresa acesse seus contatos?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -116,6 +120,6 @@ Ainda precisa de ajuda? Entre em contato com seu administrador de TI (consulte o
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

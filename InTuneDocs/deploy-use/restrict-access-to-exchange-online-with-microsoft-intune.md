@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso a email para o Exchange Online | Microsoft Docs
+title: Proteger email para o Exchange Online | Microsoft Docs
 description: Proteja e controle o acesso ao email da empresa no Exchange Online com acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,34 +13,39 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Restringir acesso a email ao Exchange Online e ao novo Exchange Online Dedicado com o Intune
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Proteger o acesso ao email no Exchange Online e ao novo Exchange Online Dedicado com o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Você pode configurar o acesso condicional para o Exchange Online ou Exchange Online Dedicado usando o Microsoft Intune. Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao email, O365 e outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!NOTE]
 >Se você tiver um ambiente do Exchange Online Dedicado e precisar descobrir se ele está com a configuração nova ou herdada, contate seu gerente de conta.
 
-Para controlar o acesso ao email para o Exchange Online ou para o novo ambiente herdado do Exchange Online Dedicado, é possível configurar o acesso condicional para o Exchange Online usando o Microsoft Intune. Para saber mais sobre como funciona o acesso condicional, leia o artigo [Restringir acesso a email, ao O365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+## <a name="before-you-begin"></a>Antes de começar
 
-
-**Antes** de poder configurar o acesso condicional, você deve:
+Para configurar o acesso condicional, você deve:
 
 -   Ter uma **assinatura do Office 365 que inclui o Exchange Online (como E3)**; além disso, os usuários devem ser licenciados para o Exchange Online.
 
 - Ter uma **assinatura do Enterprise Mobility + Security** ou do **Azure Active Directory Premium** e ter os usuários licenciados para o EMS ou o Azure AD. Para obter mais detalhes, veja a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Considere a configuração do **conector serviço a serviço opcional do Intune**, que conecta o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Exchange Online e ajuda você a gerenciar as informações do dispositivo por meio do console do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Você não precisa usar o conector para usar políticas de conformidade ou políticas de acesso condicional, mas ele é necessário para executar relatórios que ajudam a avaliar o impacto do acesso condicional.
+    -  Saiba mais sobre o [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Não configure o conector serviço a serviço se você pretende usar o acesso condicional para o Exchange Online e o Exchange no Local.
+   > Não configure o Intune Service to Service Connector se você pretende usar o acesso condicional para o Exchange Online e o Exchange local.
 
-   Para obter instruções sobre como configurar o conector, consulte [Configurar o conector serviço a serviço do Intune para o Exchange Online](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
 
 Ao configurar políticas de acesso condicional e direcioná-las a um usuário, antes que um usuário possa se conectar a seu email, o **dispositivo** usado deve ser/estar:
 
@@ -52,23 +57,25 @@ Ao configurar políticas de acesso condicional e direcioná-las a um usuário, a
 
 -   **Em conformidade** com todas as políticas de conformidade do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implantadas nesse dispositivo ou ingressadas no domínio em um domínio local.
 
-Se uma política de acesso condicional não for atendida, o usuário verá uma das seguintes mensagens de erro durante a conexão:
+### <a name="when-the-device-is-not-compliant"></a>Quando o dispositivo não for compatível
+
+Se uma política de acesso condicional não for atendida, o dispositivo será colocado imediatamente em quarentena e o usuário receberá um email com uma das seguintes notificações de quarentena ao entrar:
 
 - Se o dispositivo não estiver registrado no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou não estiver registrado no Azure Active Directory, será exibida uma mensagem com instruções sobre como instalar o aplicativo Portal da Empresa, registrar o dispositivo e ativar o email. Esse processo também associa a ID do Exchange ActiveSync do dispositivo com o registro no Azure Active Directory.
 
 -   Se o dispositivo for avaliado como não estando em conformidade com as regras da política de conformidade, o usuário será direcionado para o site do Portal da Empresa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou para o aplicativo Portal da Empresa, em que poderá encontrar informações sobre o problema e como corrigi-lo.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Como o acesso condicional funciona com o Exchange Online
 
 O diagrama a seguir ilustra o fluxo usado pelas políticas de acesso condicional para o Exchange Online.
 
 ![Diagrama que ilustra os pontos de decisões que determinam se um dispositivo tem permissão de acesso ou está bloqueado](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
-É possível restringir o acesso ao email do Exchange Online no **Outlook** e em outros **aplicativos que usam a autenticação moderna**. Há suporte para os recursos a seguir:
+É possível proteger o acesso ao email do Exchange Online no **Outlook** e em outros **aplicativos que usam a autenticação moderna**. Há suporte para os recursos a seguir:
 
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior e Android for Work
 - iOS 8.0 e posterior
-- Windows Phone 8.1 e posterior
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -77,18 +84,19 @@ A **autenticação moderna** leva a conexão baseada no ADAL (Biblioteca de Aute
 -   A autenticação baseada em ADAL permite que os clientes do Office participem da autenticação baseada em navegador (também conhecida como autenticação passiva). Para se autenticar, um usuário é direcionado para uma página da Web de conexão.
 -   Esse novo método de conexão permite uma melhor segurança, como a **autenticação multifator** e a **autenticação baseada em certificado**. Para obter informações mais detalhadas, consulte [Como funciona a autenticação moderna](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). É possível configurar regras de declaração do ADFS para bloquear protocolos de autenticação não moderna. Instruções detalhadas são fornecidas em [Cenário 3: bloquear todo o acesso ao O365, exceto para aplicativos baseados em navegador](https://technet.microsoft.com/library/dn592182.aspx).
 
-É possível restringir o acesso ao **OWA (Outlook Web Access)** no Exchange Online quando um usuário acessá-lo em um navegador em dispositivos **iOS** e **Android**. O acesso será permitido somente de navegadores com suporte em dispositivos compatíveis:
+É possível proteger o acesso ao **OWA (Outlook Web Access)** no Exchange Online quando um usuário o acessa em um navegador em dispositivos **iOS** e **Android**. O acesso será permitido somente de navegadores com suporte em dispositivos compatíveis:
 
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 e posterior)
 
-**Navegadores sem suporte serão bloqueados**.
+   > [!IMPORTANT]
+   > **Navegadores sem suporte serão bloqueados**.
 
 **O aplicativo OWA para iOS e Android pode ser modificado para não usar a autenticação moderna e não há suporte para isso. O acesso do aplicativo OWA deve ser bloqueado por meio de regras de declaração do ADFS.**
 
 
-Você pode restringir o acesso ao email do Exchange por meio do **cliente de email do Exchange ActiveSync** interno nas seguintes plataformas:
+Você pode proteger o acesso ao email no Exchange por meio do **cliente de email do Exchange ActiveSync** interno nas seguintes plataformas:
 
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior
 
@@ -202,7 +210,7 @@ Somente os grupos que são afetados pela política de acesso condicional são av
         Isso exige que os dispositivos usados para acessar o **Exchange Online** sejam registrados no Intune e estejam em conformidade com as políticas. Qualquer aplicativo cliente que use a **autenticação moderna** está sujeito à política de acesso condicional. Se, no momento, não houver suporte para a plataforma no Intune, o acesso ao **Exchange Online** será bloqueado.
 
         Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente. Todas as plataformas devem ser registradas e estar em conformidade, exceto:
-        *   Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
+        *    Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
         * Plataformas sem suporte, como Mac OS. No entanto, os aplicativos que usam a autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
 
     -   **Plataformas específicas**
@@ -254,7 +262,7 @@ Somente os grupos que são afetados pela política de acesso condicional são av
 
 -   Se o usuário cancelar o registro de seu dispositivo, o email será bloqueado após seis horas, aproximadamente.
 
-Para ver alguns **cenários de exemplo de como você poderá configurar uma política de acesso condicional para restringir o acesso ao dispositivo**, consulte [Restringir o acesso a email – cenários de exemplo](restrict-email-access-example-scenarios.md).
+Para ver alguns **cenários de exemplo de como você poderá configurar uma política de acesso condicional para proteger o acesso ao dispositivo**, consulte [Proteger o acesso a email – cenários de exemplo](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorar a conformidade e políticas de acesso condicional
 
@@ -264,12 +272,12 @@ No painel do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha o b
 ![Captura de tela do painel do Intune mostrando o número de dispositivos que são impedidos de acessar o Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Próximas etapas
-- [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [Restringir o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [Proteger o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

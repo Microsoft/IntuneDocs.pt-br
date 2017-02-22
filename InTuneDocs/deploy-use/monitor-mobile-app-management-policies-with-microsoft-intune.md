@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune
-É possível monitorar o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários na folha de proteção do aplicativo do Intune no [Portal do Azure](https://portal.azure.com). Você poderá encontrar informações sobre os usuários afetados pelas políticas de MAM, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.
+É possível monitorar o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários. Você poderá encontrar informações sobre os usuários afetados pelas políticas de MAM, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.
 
 Há três locais diferentes para monitorar o status de conformidade:
 
@@ -36,7 +36,7 @@ Há três locais diferentes para monitorar o status de conformidade:
 Siga as três etapas abaixo para abrir a exibição de Resumo:
 
 1. Acesse o [Portal do Azure](https://portal.azure.com) e insira suas credenciais.
-2. Escolha **Mais Serviços** e digite "Intune".
+2. Escolha **Mais Serviços** e digite **Intune** na caixa de texto de filtro.
 3. Escolha **Proteção de Aplicativo do Intune**.
 
 Na folha **Gerenciamento de aplicativo móvel do Intune**, você pode ver um resumo do status de conformidade:
@@ -89,13 +89,11 @@ A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado 
 
 Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios adicionais para ajudá-lo com o status de conformidade de política de MAM:
 
-![Captura de tela 4](../media/MAM-reporting-7.png)
+![Captura de tela&4;](../media/MAM-reporting-7.png)
 
 -   **App protection user report (Relatório de usuário da proteção do aplicativo):** descreve as mesmas informações que podem ser encontradas no relatório **Status do usuário** na exibição detalhada acima.
 
 -   **Relatório de aplicativo de proteção do aplicativo:** fornece dois status de proteção de aplicativo diferentes que os administradores podem selecionar antes de gerar o relatório. Os status podem ser protegidos ou não protegidos.
-
-    ![Captura de tela 1](../media/MAM-reporting-1.png)
 
     -   Status do usuário para a atividade de MAM gerenciada (protegido): este relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário.
 
@@ -107,7 +105,28 @@ Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios
 
         -   Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de MAM.
 
-![Captura de tela 2](../media/MAM-reporting-4.png)
+![Captura de tela&2;](../media/MAM-reporting-4.png)
+
+## <a name="table-grouping"></a>Agrupamento de tabela
+
+Depois que os dados do **Relatório do usuário de proteção de aplicativo** aparecerem, você poderá agregar os dados fazendo o seguinte:
+
+- **Resultado da validação:** os dados aparecem agrupados pelo status de proteção do aplicativo, que pode ser êxito, aviso ou falha.
+- **Nome do aplicativo:** os dados aparecem agrupados por aplicativos (o nome real do aplicativo) com falha, aviso ou êxito.
+
+## <a name="export-app-protection-activities-to-csv"></a>Exportar as atividades de proteção do aplicativo para CSV
+
+Você pode exportar todas as atividades de política de proteção de aplicativo para um único arquivo .csv. Isso pode ser útil para analisar todos os status de proteção de aplicativo relatados dos usuários.
+
+Siga estas etapas para gerar o relatório de proteção do aplicativo:
+
+1. Na folha Gerenciamento de aplicativo móvel do Intune, escolha Relatório de proteção de aplicativo.
+
+    ![Captura de tela-6](../media/app-protection-report-csv-2.png)
+
+2. Escolha Sim para salvar o relatório, escolha Salvar como e selecione a pasta na qual você deseja salvar o relatório.
+
+    ![Captura de tela-7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Consulte também
 [Gerenciar a transferência de dados entre aplicativos iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -117,6 +136,6 @@ Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
