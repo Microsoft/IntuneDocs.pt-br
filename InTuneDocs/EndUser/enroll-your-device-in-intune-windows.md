@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8829d392931cdbe23d5b0be7622729ddd2903fcb
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 # <a name="enroll-your-windows-device-in-intune"></a>Registrar seu dispositivo Windows no Intune
 
-Se sua empresa ou escola usar o Microsoft Intune, você poderá registrar seu dispositivo Windows para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, a sua organização pode manter os dados corporativos protegidos. Para saber mais sobre registro, consulte [O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [O que o administrador de TI pode ver ou não no seu dispositivo](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+Se sua empresa ou escola usar o Microsoft Intune, você poderá registrar seu dispositivo Windows para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, a sua organização pode manter os dados corporativos protegidos. Para saber mais sobre registro, consulte [O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [O que o administrador de TI pode ver ou não no seu dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 Para se registrar, use o link que corresponde ao dispositivo que você está usando:
 
@@ -36,6 +37,6 @@ Para se registrar, use o link que corresponde ao dispositivo que você está usa
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

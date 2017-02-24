@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ Para habilitar a conexão com o Consulta MTP no Intune, na página **Administra�
 >[!IMPORTANT]
 > Você **precisa** configurar o aplicativo do Lookout for Work antes de criar regras de política de conformidade e configurar o acesso condicional. Isso garante que o aplicativo esteja pronto e disponível para os usuários finais instalarem antes que possam ter acesso a emails ou outros recursos da empresa.
 
-Isso conclui a configuração da integração do Lookout com o Intune no console do administrador do Intune.  As próximas etapas para implementar esta solução envolvem a implantação de [aplicativos do Lookout for Work](configure-and-deploy-lookout-for-work-apps.md) e a configuração da política de [conformidade](enable-device-threat-protection-rule-in-compliance-policy.md).
+Isso conclui a configuração da integração do Lookout com o Intune no console do administrador do Intune.  As próximas etapas para implementar esta solução envolvem a implantação de [aplicativos do Lookout for Work](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) e a configuração da política de [conformidade](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy).
 
 
 ## <a name="next-steps"></a>Próximas etapas
-[Configurar o aplicativo Lookout for Work ](configure-and-deploy-lookout-for-work-apps.md)
+[Configurar o aplicativo Lookout for Work ](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: ab94439d9fd5300d61c5991434d41f7fdca693d2
 
 
 ---
@@ -78,7 +78,7 @@ Este artigo explica como configurar e implantar o aplicativo Lookout for Work em
 
 6. **Para implantar o aplicativo nos usuários**, selecione o aplicativo Lookout for Work e escolha **Gerenciar Implantação**.
 
-  Você precisa selecionar os mesmos usuários que foram adicionados à opção de Gerenciamento de Registro no console do Lookout.  Consulte a Etapa 3 na seção [Configurar sua assinatura com a proteção contra ameaça do dispositivo Lookout](configure-and-deploy-lookout-for-work-apps.md) para obter informações sobre como adicionar grupos de usuários ao Lookout MTP.
+  Você precisa selecionar os mesmos usuários que foram adicionados à opção de Gerenciamento de Registro no console do Lookout.  Consulte a Etapa 3 na seção [Configurar sua assinatura com a proteção contra ameaça do dispositivo Lookout](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) para obter informações sobre como adicionar grupos de usuários ao Lookout MTP.
 
   >[!IMPORTANT]
   > O assistente de implantação de aplicativo do Intune não está ciente dos grupos de usuários do Azure AD e, em vez disso, usa os grupos de usuários do Intune, portanto você deve criar um grupo de usuários do Azure AD que está registrado no console do Lookout, conforme descrito [neste](plan-your-user-and-device-groups.md) tópico.
@@ -94,10 +94,10 @@ Quando abrir o Lookout for Work no dispositivo, o usuário será solicitado a at
 * [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Habilitar a regra de proteção de dispositivo contra ameaças na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [Habilitar a regra de proteção de dispositivo contra ameaças na política de conformidade](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

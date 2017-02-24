@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
-ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 Registrar seus dispositivos no Microsoft Intune permite que dispositivos Windows 10 tenham acesso a dados protegidos da sua organização, incluindo email, arquivos e outros recursos. Isso vale para dispositivos com Windows 10 Desktop e Windows 10 Mobile. Registrar seus dispositivos ajuda a proteger o acesso para você e para sua organização e ajuda a manter dados de trabalho separados de dados pessoais.
 
-Quer saber mais? Saiba o que acontece quando você [registra seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e o que isso significa para as [informações no dispositivo](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Quer saber mais? Saiba o que acontece quando você [registra seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e o que isso significa para as [informações no dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="windows-10-desktop-devices"></a>Dispositivos com Windows 10 Desktop
 1.    Vá até __Iniciar__.
@@ -56,6 +57,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter s
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
