@@ -14,8 +14,8 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
 
 ---
 
@@ -36,7 +36,7 @@ A configuração de autoridade de gerenciamento de dispositivo móvel determina 
 
 **Para definir a autoridade de gerenciamento de dispositivo móvel:**
 
-1. No Portal do Azure, escolha **Mais Serviços**, digite **Intune** na caixa de texto e escolha **Outros** > **Intune**.
+1. No portal do Azure, escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
 2. Na folha Intune, escolha **Registrar dispositivos** e **Visão Geral**.
 
@@ -44,6 +44,6 @@ A configuração de autoridade de gerenciamento de dispositivo móvel determina 
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

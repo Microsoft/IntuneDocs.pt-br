@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Este tópico informa os administradores do Intune como eles podem criar políticas e publicar aplicativos que eles podem implantar em dispositivos gerenciados.
+
 Antes de começar a registrar aplicativos no Intune, você poderá habilitar as configurações de política e os aplicativos que serão implantados assim que esses dispositivos entrarem em gerenciamento. As políticas do Intune fornecem configurações que ajudam a controlar as configurações de segurança em dispositivos móveis, a manter as configurações do Firewall do Windows e do Endpoint Protection para computadores e a implantar aplicativos. Você pode configurar a política, adicionar aplicativos e implantar esses aplicativos para que os dispositivos recebam as configurações e aplicativos assim que se registrarem no Intune.
 
 As políticas e os aplicativos são específicos da plataforma.
 
 ## <a name="manage-device-settings"></a>Gerenciar configurações do dispositivo
 
- As configurações de política de dispositivo são configuradas e gerenciadas por plataforma. É possível configurar a política para as seguintes plataformas:
+ As configurações de política de dispositivo são configuradas e gerenciadas por plataforma. Os links a seguir fornecem listas de configurações disponíveis para suas respectivas plataformas:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android e Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -72,6 +75,6 @@ Agora que o aplicativo está disponível no Intune, você pode implantá-lo em d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

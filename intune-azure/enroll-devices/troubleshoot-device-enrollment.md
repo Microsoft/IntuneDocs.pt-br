@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
 
 
 ---
@@ -46,7 +46,7 @@ Esses problemas podem ocorrer em todas as plataformas de dispositivo.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Verifique o número de dispositivos registrados e permitidos
 
-Na folha do Intune do Portal do Azure, vá para **Registrar dispositivos** > **Restrições de Registro** e valide se o usuário não tem mais do que o máximo permitido de 15 dispositivos atribuídos.
+No portal do Azure, escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**. Na folha do Intune do Portal do Azure, vá para **Registrar dispositivos** > **Restrições de Registro** e valide se o usuário não tem mais do que o máximo permitido de 15 dispositivos atribuídos.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -218,16 +218,16 @@ O erro de certificado ocorre porque dispositivos Android exigem que certificados
 
 Para corrigir o problema, importe os certificados para os Certificados Pessoais do Computador no servidor do AD FS ou proxies da seguinte maneira:
 
-1.  Nos servidores AD FS e proxy, inicie o console de Gerenciamento de Certificados do computador local clicando com o botão direito do mouse em **Iniciar**, escolhendo **Executar** e digitando **certlm.msc**.
-2.  Expanda **Pessoal** e selecione **Certificados**.
-3.  Localize o certificado da comunicação de serviço do AD FS (certificado assinado publicamente) e clique duas vezes para exibir suas propriedades.
-4.  Selecione a guia **Caminho de Certificação** para ver o(s) certificado(s) pai do certificado.
-5.  Em cada certificado pai, selecione **Exibir Certificado**.
-6.  Selecione a guia **Detalhes** e escolha **Copiar para arquivo...**.
-7.  Siga as solicitações do assistente para exportar ou salvar a chave pública do certificado para o local de arquivo desejado.
-8.  Importe os certificados pai que foram exportados na Etapa 3 para Computador Local\Pessoal\Certificados clicando com o botão direito do mouse em **Certificados**, selecionado **Todas Tarefas** > **Importar** e seguindo as solicitações do assistente para importar o(s) certificado(s).
-9.  Reinicie os servidores AD FS.
-10. Repita as etapas acima em todos os servidores AD FS e proxy.
+1.    Nos servidores AD FS e proxy, inicie o console de Gerenciamento de Certificados do computador local clicando com o botão direito do mouse em **Iniciar**, escolhendo **Executar** e digitando **certlm.msc**.
+2.    Expanda **Pessoal** e selecione **Certificados**.
+3.    Localize o certificado da comunicação de serviço do AD FS (certificado assinado publicamente) e clique duas vezes para exibir suas propriedades.
+4.    Selecione a guia **Caminho de Certificação** para ver o(s) certificado(s) pai do certificado.
+5.    Em cada certificado pai, selecione **Exibir Certificado**.
+6.    Selecione a guia **Detalhes** e escolha **Copiar para arquivo...**.
+7.    Siga as solicitações do assistente para exportar ou salvar a chave pública do certificado para o local de arquivo desejado.
+8.    Importe os certificados pai que foram exportados na Etapa 3 para Computador Local\Pessoal\Certificados clicando com o botão direito do mouse em **Certificados**, selecionado **Todas Tarefas** > **Importar** e seguindo as solicitações do assistente para importar o(s) certificado(s).
+9.    Reinicie os servidores AD FS.
+10.    Repita as etapas acima em todos os servidores AD FS e proxy.
 Agora, o usuário deve ser capaz de entrar no Portal da Empresa no dispositivo Android.
 
 **Para validar a instalação correta do certificado**:
@@ -346,7 +346,7 @@ Esse erro pode ocorrer porque o computador já foi registrado anteriormente ou t
 
 **Resolução:**
 
-1. No menu **Iniciar**, digite **Executar** -> **MMC**.
+1.. No menu **Iniciar**, digite **Executar** -> **MMC**.
 1. Escolha **Arquivo** > **Adicionar/Remover Snap-ins**.
 1. Clique duas vezes em **Certificados**, escolha a **Conta de computador** > **Avançar** e selecione **Computador Local**.
 1. Clique duas vezes em **Certificados (computador local)** e escolha **Pessoal/Certificados**.
@@ -389,6 +389,6 @@ Se essas informações para solução de problemas não ajudarem, entre em conta
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

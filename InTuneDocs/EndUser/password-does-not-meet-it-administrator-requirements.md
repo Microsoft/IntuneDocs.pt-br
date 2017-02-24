@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
@@ -45,12 +46,12 @@ Descrições de problemas com senha ou PIN:
 
 - **A senha foi usada muito recentemente**. Seu administrador de TI está impedindo o uso de senhas anteriores que você usou no passado. Escolha uma senha que você nunca usou antes.
 
-- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #.
+- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #. Isso pode também ser verdadeiro para outras contas em seu dispositivo, portanto certifique-se de verificar outras contas de trabalho para garantir que sua senha atenda aos requisitos configurados pelo IT para seu dispositivo.
 
 Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
