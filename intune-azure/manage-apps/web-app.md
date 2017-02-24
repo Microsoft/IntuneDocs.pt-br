@@ -1,11 +1,11 @@
 ---
 title: "Como adicionar aplicativos Web ao Intune | Versão prévia do Intune Azure | Microsoft Docs"
-description: "Versão prévia do Intune Azure: aprenda a adicionar aplicativos Web ao Intune."
+description: "Visualização do Intune Azure: aprenda a adicionar aplicativos Web ao Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4188957e263717d416853f308a50e3dbd7a9244a
-ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 8b14b9dfef7100a86c338c362ba56be329a8639c
 
 ---
 
-# <a name="how-to-add-web-apps-to-intune"></a>Como adicionar aplicativos Web ao Intune
+# <a name="how-to-add-web-apps-to-microsoft-intune"></a>Como adicionar aplicativos Web ao Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -44,6 +44,6 @@ ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
 O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

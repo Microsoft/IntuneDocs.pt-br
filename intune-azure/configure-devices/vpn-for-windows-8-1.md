@@ -1,11 +1,11 @@
 ---
 title: "Configurações de VPN do Intune para dispositivos Windows 8.1 | Versão prévia do Intune Azure | Microsoft Docs"
-description: "Versão prévia do Intune Azure: saiba mais sobre as configurações do Intune que você pode usar para configurar conexões de VPN em dispositivos Windows 8.1."
+description: "Visualização do Intune Azure: saiba mais sobre as configurações do Intune que você pode usar para configurar conexões de VPN em dispositivos Windows 8.1."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
 
 
 ---
 
-# <a name="vpn-settings-for-windows-81-devices-in-intune-azure-preview"></a>Configurações de VPN para dispositivos Windows 8.1 na versão prévia do Intune Azure
+# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Configurações VPN para dispositivos Windows 8.1 no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -96,6 +96,6 @@ Consulte a documentação do VPN de cada fabricante para obter mais informaçõe
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
@@ -26,6 +27,8 @@ Use as informações neste tópico para aprender a adicionar aplicativos ao Intu
 
 > [!IMPORTANT]
 > As informações neste tópico ajudam a adicionar aplicativos a computadores Windows que você gerencia usando o cliente de software do Intune. Se você quiser adicionar aplicativos para computadores Windows registrados e outros dispositivos móveis, consulte [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Adicionar aplicativos para dispositivos móveis no Microsoft Intune).
+
+Para instalar aplicativos em PCs, eles devem ser capazes de serem instalados silenciosamente, sem interação do usuário. Se esse não for o caso, a instalação falhará.
 
 
 ## <a name="add-the-app"></a>Adicionar o aplicativo
@@ -40,7 +43,7 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 
     - **Selecione o tipo de arquivo do instalador do software**. Isso indica o tipo de software que você deseja implantar. Para um computador Windows, escolha **Windows Installer**.
     - **Especifique o local dos arquivos de instalação do software**. Insira o local dos arquivos de instalação, ou escolha **Procurar** para selecionar o local em uma lista.
-    - **Incluir arquivos e subpastas adicionais da mesma pasta**. Alguns softwares que usam o Windows Installer precisam de arquivos de suporte. Normalmente, eles são encontrados na mesma pasta que os arquivos de instalação. Selecione esta opção se você também deseja implantar esses arquivos de suporte.
+    - **Incluir arquivos e subpastas adicionais da mesma pasta**. Alguns softwares que usam o Windows Installer precisam de arquivos de suporte. Eles devem ser localizados na mesma pasta que o arquivo de instalação. Selecione esta opção se você também deseja implantar esses arquivos de suporte.
 
     Por exemplo, se você quiser publicar um aplicativo chamado Application.msi no Intune, a página terá esta aparência: ![Página de instalação de software do editor](./media/publisher-for-pc.png)
 
@@ -74,7 +77,11 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 
     Se o aplicativo satisfizer alguma das regras que você configurou, ele não será instalado.
 
-6.  Somente para o tipo de arquivo do **Windows Installer** (.msi e .exe): na página **Argumentos de linha de comando**, escolha se deseja fornecer argumentos de linha de comando opcionais para o instalador. Por exemplo, alguns instaladores podem dar suporte ao argumento **/q** para instalar silenciosamente, sem intervenção do usuário.
+6.  Somente para o tipo de arquivo do **Windows Installer** (.msi e .exe): na página **Argumentos de linha de comando**, escolha se deseja fornecer argumentos de linha de comando opcionais para o instalador.
+    Os seguintes parâmetros são adicionados automaticamente pelo Intune:
+    - Para arquivos .exe, **/install** é adicionado.
+    - Para arquivos .msi, **/quiet** é adicionado.
+    Observe que essas opções só funcionarão se o criador do pacote do aplicativo tiver habilitado a funcionalidade para tal.
 
 7.  Somente para o tipo de arquivo do **Windows Installer** (exe apenas): na página **Códigos de retorno**, você pode adicionar novos códigos de erro que são interpretados pelo Intune quando o aplicativo é instalado em um computador Windows gerenciado.
 
@@ -90,8 +97,10 @@ O aplicativo é exibido no nó **Aplicativos** do espaço de trabalho **Aplicati
 
 Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais, consulte [Implantar aplicativos no Microsoft Intune](deploy-apps.md).
 
+Se você quiser ler mais informações sobre dicas e truques para implantar o software em PCs Windows, consulte o postagem no blog [Dica de suporte: práticas recomendadas para distribuição de Software do Intune para PCs](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
 
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Feb17_HO3-->
 
 

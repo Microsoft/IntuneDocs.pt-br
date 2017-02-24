@@ -13,35 +13,35 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Criar e implantar políticas de gerenciamento de aplicativo móvel com o Microsoft Intune
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Políticas de MAM (Gerenciamento de Aplicativo Móvel) podem ser aplicadas a aplicativos executados em dispositivos que podem ou não ser gerenciados pelo Intune. Para obter uma descrição mais detalhada do funcionamento das políticas de MAM e os cenários com suporte pelas políticas de MAM do Intune, consulte [Proteger dados de aplicativo usando políticas de gerenciamento de aplicativo móvel](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Esse tópico descreve o processo de criação de uma política de proteção de aplicativo no **Portal do Azure**. O portal do Azure é o novo console de administração para criar políticas de proteção de aplicativo e é recomendável que você use este portal para criá-las. O portal do Azure dá suporte aos seguintes cenários MAM:
 
-Esse tópico descreve o processo de criação de uma política de MAM no **Portal do Azure**. O portal do Azure é o novo console de administração para criar políticas de MAM e é recomendável que você use este portal para criá-las. O portal do Azure dá suporte aos seguintes cenários MAM:
 - Dispositivos registrados no Intune.
 - Dispositivos gerenciados por uma solução de MDM terceirizada.
 - Dispositivos que não são gerenciados por uma solução MDM (BYOD).
 
 >[!IMPORTANT]
-Considere o seguinte se você estiver usando o **console de administração do Intune** para gerenciar seus dispositivos:
+Aqui estão algumas considerações caso você esteja usando o **console de administração do Intune** para gerenciar seus dispositivos:
 
-> * você pode criar uma política de MAM que dá suporte a aplicativos para dispositivos registrados no Intune usando o [console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * As políticas de MAM criadas no console de administração do Intune não podem ser importadas no portal do Azure.  As políticas de MAM devem ser recriadas no Portal do Azure.
+> * você pode criar uma política de proteção de aplicativo que dá suporte a aplicativos para dispositivos registrados no Intune usando o [console de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * As políticas de proteção de aplicativo criadas no console de administração do Intune não podem ser importadas no portal do Azure.  As políticas de proteção de aplicativo devem ser recriadas no Portal do Azure.
 
-> * Você não poderá ver todas as configurações de política de MAM no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas de MAM.
+> * Você não poderá ver todas as configurações de política de proteção de aplicativo no console de administração do Intune. O portal do Azure é o novo console de administração para criar políticas de proteção de aplicativo.
 
-> * Para implantar aplicativos gerenciados, você precisa criar uma política de MAM no console de administração do Intune. Nesse caso, talvez você queira criar políticas de MAM no console de administração do Intune e no portal do Azure: no console de administração do Intune para poder implantar aplicativos gerenciados e no portal do Azure porque ele é o novo console de administração que tem todas as configurações de política de MAM.
+> * Para implantar aplicativos gerenciados, você precisa criar uma política de proteção de aplicativo no console de administração do Intune. Nesse caso, talvez você queira criar política de proteção de aplicativo no console de administração do Intune e no portal do Azure: no console de administração do Intune para poder implantar aplicativos gerenciados e no portal do Azure porque ele é o novo console de administração que tem todas as configurações de política de proteção de aplicativo.
 
-> * Se você criar políticas de MAM no console de administração do Intune e no portal do Azure, a política criada no portal do Azure será aplicada aos aplicativos.
+> * Se você criar políticas de proteção de aplicativo no console de administração do Intune e no portal do Azure, a política criada no portal do Azure será aplicada aos aplicativos.
 
 Para ver uma lista de configurações de política com suporte para as plataformas Android e iOS, selecione um dos seguintes:
 
@@ -49,16 +49,24 @@ Para ver uma lista de configurações de política com suporte para as plataform
 - [Políticas do iOS](ios-mam-policy-settings.md)
 - [Políticas do Android](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>Criar uma política de MAM
-Antes de criar uma política de MAM, examine as informações de [pré-requisitos e suporte](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
-1.  Escolha **Gerenciamento de aplicativos móveis do Intune&gt; Configurações** para abrir a folha **Configurações**.
+- Para obter uma descrição mais detalhada do funcionamento das políticas de proteção de aplicativo e os cenários com suporte nas políticas de proteção de aplicativo do Intune, consulte [proteger dados de aplicativo usando as políticas de proteção de aplicativo](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-    ![Captura de tela da folha de gerenciamento de aplicativos móveis do Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicativo
+As políticas de proteção de aplicativo são criadas no Portal do Azure. Se esta é a primeira vez que você está usando o Portal do Azure, leia [Portal do Azure para políticas de proteção de aplicativo do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para se familiarizar com o Portal do Azure. Antes de criar uma política de proteção de aplicativo, examine as informações de [pré-requisitos e suporte](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
 
-    > [!TIP]
-    > Se esta é a primeira vez que você está usando o Portal do Azure, leia [Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) primeiro para se familiarizar com o portal.
+Siga as etapas abaixo para criar as políticas de proteção de aplicativo:
 
-2.  Na folha **Configurações**, escolha **Política de aplicativos**. Isso abre a folha **Política de aplicativo**, em que você criará novas políticas e editará as políticas existentes. Escolha **Adicionar uma política**.
+1. Acesse o [Portal do Azure](http://portal.azure.com) e insira suas credenciais.
+
+2. Escolha **Mais Serviços** e digite "Intune".
+
+3. Escolha **Proteção de Aplicativo do Intune**.
+
+4. Escolha **Gerenciamento de aplicativos móveis do Intune &gt; Configurações** para abrir a folha **Todas as Configurações**.
+
+    ![Captura de tela da folha de gerenciamento de aplicativos móveis do Intune](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  Na folha **Todas as configurações**, escolha **Política de aplicativos**. Isso abre a folha **Política de aplicativo**, em que você criará novas políticas e editará as políticas existentes. Escolha **Adicionar uma política**.
 
     ![Captura de tela da folha Política de aplicativos com a opção de menu Adicionar uma política realçada ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -90,10 +98,10 @@ Antes de criar uma política de MAM, examine as informações de [pré-requisito
 Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuários. Para implantar uma política, consulte a seção a seguir, "Implantar uma política para usuários".
 
 > [!IMPORTANT]
-> Se você criar uma política de MAM para um aplicativo usando o console de administração do Intune e uma política de MAM usando o portal do Azure, a política criada usando o portal do Azure terá precedência. No entanto, o relatório no console do Intune ou do Configuration Manager relatará as configurações de política criadas no console de administração do Intune. Por exemplo:
+> Se você criar uma política de proteção de aplicativo para um aplicativo usando o console de administração do Intune e uma política de proteção de aplicativo usando o portal do Azure, a política criada usando o portal do Azure terá precedência. No entanto, o relatório no console do Intune ou do Configuration Manager relatará as configurações de política criadas no console de administração do Intune. Por exemplo:
 >
-> -   Você criou uma política de MAM no console de administração do Intune que bloqueia a cópia em um aplicativo.
-> -   Você criou uma política de MAM no console do Azure que permite a cópia em um aplicativo.
+> -   Você criou uma política de proteção de aplicativo no console de administração do Intune que bloqueia a cópia de um aplicativo.
+> -   Você criou uma política de proteção de aplicativo no console do Azure que permite a cópia em um aplicativo.
 > -   Você associa essas duas políticas ao mesmo aplicativo.
 > -   A política criada no console do Azure tem precedência e a cópia é permitida.
 > -   No entanto, status e relatórios no console do Intune indicarão incorretamente que a cópia está bloqueada.
@@ -116,8 +124,8 @@ Somente usuários com licenças [!INCLUDE[wit_nextref](../includes/wit_nextref_m
 > Se você estiver usando o Intune com o Configuration Manager para gerenciar seus dispositivos Android e iOS, a política só será aplicada aos usuários diretamente no grupo que você selecionou. Membros de grupos filho aninhados dentro do grupo selecionado não serão afetados.
 
 Os usuários finais podem baixar os aplicativos da loja de aplicativos ou do Google Play. Para obter mais informações, consulte:
-* [O que esperar quando seu aplicativo Android é gerenciado por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Alterar políticas existentes
 Você pode editar uma política existente e aplicá-la aos usuários de destino. No entanto, quando você altera as políticas existentes, os usuários já conectados aos aplicativos só verão as alterações após um período de 8 horas.
@@ -171,11 +179,11 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 [Monitorar conformidade e status do usuário](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Consulte também
-* [O que esperar quando seu aplicativo Android é gerenciado por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
