@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Proteger o acesso ao email: exemplos](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Permitir o acesso aos serviços do O365 somente a aplicativos gerenciados por política](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [Aplicativos com AC de MAM](deploy-use/use-apps-with-mam-ca.md)
+#### [Usar aplicativos com AC baseada em aplicativo](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Bloquear aplicativos sem ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Proteger o acesso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -222,8 +222,3 @@
 ## [Solucionar problemas de proteção contra ameaças ao dispositivo](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Glossário](understand-explore/intune-glossary.md)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
