@@ -1,11 +1,12 @@
 ---
-title: "Como configurar certificados com o Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: Como configurar certificados com o Intune
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: aprenda a usar o Intune para criar e atribuir certificados que ajudarão a proteger Wi-Fi, VPN e outras conexões."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Como configurar certificados na versão prévia do Intune Azure
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Como configurar certificados no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi 
 
     Somente é possível usar um perfil de certificado SCEP nestas plataformas:
 
--   macOS 10.9 e posterior
--   Windows Phone 8.1 e posterior
+-     macOS 10.9 e posterior
+-     Windows Phone 8.1 e posterior
 
 Você deve criar um perfil separado para cada plataforma de dispositivo. Ao criar o perfil, associe-o ao perfil de certificado raiz confiável já criado.
 
@@ -196,9 +199,4 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 
 ## <a name="next-steps"></a>Próximas etapas
 Consulte [Como atribuir perfis de dispositivo](how-to-assign-device-profiles.md) para obter informações gerais sobre como atribuir perfis de dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

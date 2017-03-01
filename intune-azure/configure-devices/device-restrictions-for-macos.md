@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e9c97d66e80de635ad43a1339d092b7987f738b
-ms.openlocfilehash: 6856303581f5275c88d5d4efe07088de8f7ab713
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: b666f442fe2f71b2a04747a50951da38d8d8b3b4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="macos-device-restriction-settings-in-intune-azure-preview"></a>Configurações de restrição de dispositivo macOS na versão prévia do Intune Azure
+# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo macOS no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="password"></a>Senha
--   **Senha obrigatória** – Exigir que o usuário final insira uma senha para acessar o dispositivo.
-    -   **Tipo de senha necessária** – Especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números). Essa configuração só tem suporte no Mac OS X versão 10.10.3 e posterior.
-    -   **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caractere complexo é um símbolo, como **?**.
-    -   **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
-    -   **Senhas simples** – Permita o uso de senhas simples como **0000** ou **1234**.
-    -   **Máximo de minutos após o bloqueio de tela antes da senha ser exigida** – Especifique quanto tempo o computador deverá ficar inativo antes da senha ser necessária para desbloqueá-lo.
-    -   **Máximo de minutos de inatividade para o bloqueio de tela** – Especifique o período que um computador deve permanecer ocioso antes da tela ser bloqueada.
-    -   **Expiração de senha (dias)** – Especifique o número de dias que precisam transcorrer antes que o usuário precise alterar a senha (de **1** a **255** dias).
-    -   **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que não podem ser reutilizadas (de **1** a **24**).
+-     **Senha obrigatória** – Exigir que o usuário final insira uma senha para acessar o dispositivo.
+    -     **Tipo de senha necessária** – Especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números). Essa configuração só tem suporte no Mac OS X versão 10.10.3 e posterior.
+    -     **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caractere complexo é um símbolo, como **?**.
+    -     **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
+    -     **Senhas simples** – Permita o uso de senhas simples como **0000** ou **1234**.
+    -     **Máximo de minutos após o bloqueio de tela antes da senha ser exigida** – Especifique quanto tempo o computador deverá ficar inativo antes da senha ser necessária para desbloqueá-lo.
+    -     **Máximo de minutos de inatividade para o bloqueio de tela** – Especifique o período que um computador deve permanecer ocioso antes da tela ser bloqueada.
+    -     **Expiração de senha (dias)** – Especifique o número de dias que precisam transcorrer antes que o usuário precise alterar a senha (de **1** a **255** dias).
+    -     **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que não podem ser reutilizadas (de **1** a **24**).
 
 ## <a name="restricted-apps"></a>Aplicativos restritos
 
@@ -44,10 +45,5 @@ Uma lista de **Aplicativos aprovados** – Listar os aplicativos que os usuário
 
 Para configurar a lista, clique em **Adicionar**, especifique um nome de sua preferência, o editor do aplicativo (opcional) e a ID do pacote do aplicativo (por exemplo *com.apple.calculator*).
 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

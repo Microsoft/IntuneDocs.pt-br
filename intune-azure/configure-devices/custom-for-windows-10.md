@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Configurações de dispositivo personalizadas para dispositivos Windows 10 na versão prévia do Intune Azure
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Configurações personalizadas do dispositivo para dispositivos Windows 10 no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ Na captura de tela abaixo, a configuração **Connectivity/AllowVPNOverCellular*
 |**Permitir Salvar Senha**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Área de trabalho e dispositivos móveis<br />**Tipo de dados:** inteiro<br />**Valores:**<br>**0** – O gerenciador de senha é desabilitado; <br>**1** – O Gerenciador de senha é habilitado (padrão)|
 |**Permitir Preenchimento Automático**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Somente Área de trabalho<br />**Tipo de dados:** inteiro<br />**Valores:** **0** – desabilitado (padrão), **1** – habilitado|
 |**Configurar Lista de Sites Empresariais**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Somente Área de trabalho<br />**Tipo de dados:** cadeia de caracteres<br />**Valores:<br>**0** – não configurado<br>**1** – usar lista de sites de modo empresarial do IE se configurado (padrão)<br>**2** – especificar o local da lista de sites corporativos|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

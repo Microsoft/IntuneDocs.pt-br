@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 8c6c92e6e7bd375063f2f19308fe19f6e44962ac
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -54,7 +55,7 @@ Preencha os seguintes pré-requisitos antes de configurar o registro do disposit
 
 Um perfil de registro de dispositivos define as configurações aplicadas a um grupo de dispositivos. As etapas a seguir mostram como criar um perfil de registro de dispositivo para dispositivos iOS registrados usando o Apple Configurator.
 
-1. No Portal do Azure, escolha **Mais Serviços**, digite **Intune** na caixa de texto e escolha **Outros** > **Intune**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
 2. Na folha Intune, escolha **Registrar dispositivos** e escolha **Registro Apple**.
 
@@ -78,11 +79,13 @@ Depois de criar perfis do Apple Configurator, você poderá atribuir números de
 
 ### <a name="assign-serial-numbers-to-apple-configurator-profiles"></a>Atribuir números de série a perfis do Apple Configurator
 
-1. Na folha **Perfis de Registro do Apple Configurator**, selecione o perfil ao qual você deseja atribuir números de série.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-2. Na folha nomeada para o perfil, selecione **Números de Série** > **Atribuir**.
+2. Na folha **Perfis de Registro do Apple Configurator**, selecione o perfil ao qual você deseja atribuir números de série.
 
-3. Selecione os números de série para os quais você deseja atribuir o perfil e selecione o botão **Atribuir**.
+3. Na folha nomeada para o perfil, selecione **Números de Série** > **Atribuir**.
+
+4. Selecione os números de série para os quais você deseja atribuir o perfil e selecione o botão **Atribuir**.
 
 ## <a name="export-the-profile-to-ios-devices"></a>Exportar o perfil para dispositivos iOS
 
@@ -90,11 +93,13 @@ Depois de criar o perfil e atribuir os números de série, você precisará expo
 
 ### <a name="export-a-profile-using-setup-assistant-enrollment"></a>Exportar um perfil usando o Assistente para configuração de registro
 
-1. Na folha **Perfis de Registro do Apple Configurator**, escolha o perfil a ser exportado.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-2. Na folha do perfil, selecione **Exportar Perfil**.
+2. Na folha **Perfis de Registro do Apple Configurator**, escolha o perfil a ser exportado.
 
-3. Copie a URL do perfil para o [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) com o dispositivo iOS anexado. Você fará o upload no Apple Configurator posteriormente para definir o perfil do Intune utilizado pelos dispositivos iOS.
+3. Na folha do perfil, selecione **Exportar Perfil**.
+
+4. Copie a URL do perfil para o [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) com o dispositivo iOS anexado. Você fará o upload no Apple Configurator posteriormente para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
   Para dar suporte ao Apple Configurator 2, a URL do Perfil 2.0 deve ser editada. Para fazer isso, substitua este código:
     ```
@@ -108,7 +113,7 @@ Depois de criar o perfil e atribuir os números de série, você precisará expo
 
    Você carregará essa URL do perfil para o serviço Apple DEP usando o Apple Configurator no procedimento a seguir para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
-4. Carregue essa URL do perfil para o serviço Apple DEP usando o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
+5. Carregue essa URL do perfil para o serviço Apple DEP usando o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
 
     1.  Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
@@ -139,7 +144,7 @@ Depois de criar o perfil e atribuir os números de série, você precisará expo
 
     10. Quando o dispositivo iOS concluir a preparação, desconecte o cabo USB.  
 
-8.  **Distribuir dispositivos**.
+6.  **Distribuir dispositivos**.
     Os dispositivos agora estão prontos para registro corporativo. Desligue os dispositivos e distribua-os para os usuários. Quando os usuários ligarem seus dispositivos, o Assistente de Configuração será iniciado.
 
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Como os usuários instalam e usam o Portal da Empresa em seus dispositivos
@@ -165,9 +170,4 @@ Os dispositivos configurados com a afinidade de usuário podem instalar e execut
 7. Após a verificação do número de série, o aplicativo Portal da Empresa redirecionará para o site do Portal da Empresa a fim de finalizar o registro. Em seguida, o site solicita que os usuários retornem ao aplicativo.
 
 Agora o registro foi concluído, e os usuários podem usar este dispositivo com o conjunto completo de recursos.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

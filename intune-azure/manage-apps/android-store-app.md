@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: ac3a901c4ecb900cb728c8dda04943071669f063
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bb31b9fac5b6ab7dd26425f5520cb3fb694bf4e7
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-android-store-apps-to-intune"></a>Como adicionar aplicativos da Android Store ao Intune
+# <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Como adicionar aplicativos Android Store ao Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -48,8 +49,3 @@ ms.openlocfilehash: ac3a901c4ecb900cb728c8dda04943071669f063
 8. Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**.
 
 O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: b29374c3abcca90de6cba7ed83866c04350f69c5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6026c942aea906e7e730152e6e92797ec5775bc3
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-ios-store-apps-to-intune"></a>Como adicionar aplicativos da loja do iOS ao Intune
+# <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Como adicionar aplicativos da iOS Store ao Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -56,8 +57,3 @@ ms.openlocfilehash: b29374c3abcca90de6cba7ed83866c04350f69c5
 3. Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**.
 
 O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
-
-
-<!--HONumber=Feb17_HO1-->
-
-

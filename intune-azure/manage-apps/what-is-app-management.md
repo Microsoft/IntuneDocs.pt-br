@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 33bc87d16834cb2950cc7c66ad4887dddb12e811
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d3be47257556e8bfa331cebf68baa43524690d1a
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-app-management"></a>O que é gerenciamento de aplicativos?
+# <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -97,9 +98,4 @@ Para obter detalhes, consulte [Monitorar aplicativos](monitor-apps.md)
     - [Aplicativos da Windows Store para Empresas comprados por volume](wsfb-apps.md)
 - **Portal de identidade visual da empresa** – Personalize o portal da empresa para dar a identidade visual da sua empresa. 
     - [Configuração do Portal da Empresa](company-portal-app.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

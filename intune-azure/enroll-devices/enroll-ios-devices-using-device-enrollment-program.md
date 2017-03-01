@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ Preencha os seguintes pré-requisitos antes de configurar o registro do disposit
 
 Um perfil de registro de dispositivos define as configurações aplicadas a um grupo de dispositivos. As etapas a seguir mostram como criar um perfil de registro de dispositivo para dispositivos iOS registrados usando o DEP.
 
-1. No Portal do Azure, escolha **Mais Serviços**, digite **Intune** na caixa de texto e escolha **Outros** > **Intune**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
 2. Na folha Intune, escolha **Registrar dispositivos** e escolha **Registro Apple**.
 
@@ -110,17 +111,19 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
 ## <a name="synchronize-dep-managed-devices"></a>Sincronizar dispositivos gerenciados pelo DEP
 
-1. Na folha do Intune no Portal do Azure, escolha **Registrar Dispositivos** e escolha **Registro Apple**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-2. Em **Gerenciar configurações de DEP (Programa de registro de dispositivos) da Apple**, selecione **Números de Série de DEP**.
+2. Na folha do Intune no Portal do Azure, escolha **Registrar Dispositivos** e escolha **Registro Apple**.
+
+3. Em **Gerenciar configurações de DEP (Programa de registro de dispositivos) da Apple**, selecione **Números de Série de DEP**.
 
 4. Na folha **Números de Série de DEP da Apple**, selecione **Sincronizar**.
 
 5. Na folha **Sincronizar**, selecione **Solicitar Sincronização**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
 
     Para cumprir os termos da Apple para tráfego DEP aceitável, o Intune impõe as seguintes restrições:
-     -  Uma sincronização completa do DEP pode executar não mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza cada número de série que a Apple atribuiu ao Intune, tenha o número de série sido sincronizado anteriormente ou não. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
-     -  Qualquer solicitação de sincronização tem 10 minutos para ser concluída. Durante esse tempo ou até a solicitação ser bem-sucedida, o botão de **Sincronizar** fica desabilitado.
+     -    Uma sincronização completa do DEP pode executar não mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza cada número de série que a Apple atribuiu ao Intune, tenha o número de série sido sincronizado anteriormente ou não. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
+     -    Qualquer solicitação de sincronização tem 10 minutos para ser concluída. Durante esse tempo ou até a solicitação ser bem-sucedida, o botão de **Sincronizar** fica desabilitado.
 
 >[!NOTE]
 >Você também pode atribuir números de série de DEP a perfis na folha **Números de Série de DEP da Apple**.
@@ -153,9 +156,4 @@ Os dispositivos configurados com a afinidade de usuário podem instalar e execut
 7. Após a verificação do número de série, o aplicativo Portal da Empresa redirecionará para o site do Portal da Empresa a fim de finalizar o registro. Em seguida, o site solicita que os usuários retornem ao aplicativo.
 
 Agora o registro foi concluído, e os usuários podem usar este dispositivo com o conjunto completo de recursos.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

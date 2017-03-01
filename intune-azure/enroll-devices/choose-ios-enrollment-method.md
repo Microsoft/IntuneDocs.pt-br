@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ Use as seguintes informações para decidir qual método usar para registro de d
 
 ## <a name="user-owned-ios-devices-byod"></a>BYOD (Dispositivos iOS de propriedade do usuário)
 
-Se quiserem que os usuários registrem dispositivos pessoais BYOD (traga seu próprio dispositivo), o único método de registro disponível será os usuários baixarem o aplicativo Portal da Empresa para iOS da App Store e seguir as instruções de registro no aplicativo. Depois de registrado, os usuários podem se conectar à rede da empresa, ingressar no domínio ou no Azure Active Directory e obter acesso aos recursos corporativos.
+Se quiserem que os usuários registrem dispositivos pessoais BYOD (traga seu próprio dispositivo), o único método de registro disponível será os usuários baixarem o aplicativo Portal da Empresa para iOS da App Store e seguir as instruções de registro no aplicativo. Depois de registrado, os usuários podem se conectar à rede da empresa, ingressar no domínio ou no Azure Active Directory e obter acesso aos recursos corporativos. Você pode bloquear o registro de dispositivos iOS de propriedade pessoal. Consulte [Definir restrições de tipo de dispositivo](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) para obter instruções.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ O DEP implanta um perfil de registro "over the air" em dispositivos que são adq
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>Usar o DEM (Gerenciador de Registro de Dispositivos)
 O Gerenciador de registro do dispositivo é um tipo de conta de usuário que pode registrar e gerenciar até 1.000 dispositivos. Adicione usuários existentes à conta do DEM para fornecer recursos especiais. Cada dispositivo que o usuário DEM registra usa uma única licença Intune. Para obter mais informações, consulte [Registrar dispositivos usando o Gerenciador de registro de dispositivo](enroll-devices-using-device-enrollment-manager.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

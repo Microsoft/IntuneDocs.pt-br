@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1609ed2f127fe9d7d1f1c3b3e923bd12f1088200
-ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 57dce5b23b9c8cd878a9ce746e6459a69f1270ff
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -41,7 +42,7 @@ Você pode criar as categorias de dispositivo que desejar, por exemplo:
 ## <a name="how-to-configure-device-categories"></a>Como definir categorias de dispositivo
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Etapa 1 – Criar categorias de dispositivo na folha do Intune no Portal do Azure
-1. Entre no portal do Azure.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
 3. Na folha **Intune**, escolha **Registrar dispositivos**.
 3. Na folha **Registro**, escolha **Categorias de Dispositivo**.
@@ -61,17 +62,20 @@ Use as informações dessa seção para criar um grupo de dispositivos com uma r
 Após configurar os grupos de dispositivos e quando os usuários registrarem seus dispositivos, eles verão uma lista de categorias que você configurou. Depois que escolherem uma categoria e concluírem o registro, o dispositivo será adicionado ao grupo de segurança do Active Directory que corresponde à categoria escolhida.
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Como exibir as categorias dos dispositivos que você gerencia
-1.    Na folha do Intune do Portal do Azure, escolha **Dispositivos e Grupos**.
 
-2.    Em **Gerenciar**, clique em **Todos os dispositivos**.
+1.    No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-3.    Na lista de dispositivos, examine a coluna **Categoria**.
+2. Na folha do Intune do Portal do Azure, escolha **Dispositivos e Grupos**.
+
+3.    Em **Gerenciar**, clique em **Todos os dispositivos**.
+
+4.    Na lista de dispositivos, examine a coluna **Categoria**.
 
 Se a coluna **Categoria** não for exibida, clique em **Colunas**, escolha **Categoria** na lista e clique **Aplicar**.
 
 ### <a name="to-change-the-category-of-a-device"></a>Para alterar a categoria de um dispositivo
 
-1. Entre no portal do Azure.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
 3. Na folha **Intune**, escolha **Dispositivos e Grupos**.
 4. Na folha **Dispositivos e Grupos**, escolha **Gerenciar** > **Todos os dispositivos**.
@@ -85,10 +89,5 @@ Se a coluna **Categoria** não for exibida, clique em **Colunas**, escolha **Cat
 
 - Se você excluir uma categoria, todos os dispositivos que foram atribuídos a ela posteriormente exibirão o nome da categoria **Não atribuído**.
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

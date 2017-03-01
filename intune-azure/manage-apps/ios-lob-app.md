@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6d41adabfab178daa7f6fce3d86bc8216bf4ab29
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-ios-line-of-business-lob-apps-to-intune"></a>Como adicionar aplicativos de LOB (linha de negócios) do iOS ao Intune
+# <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicativos de linha de negócios (LOB) do iOS para o Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -54,8 +55,3 @@ ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
 2. Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**.
 
 O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
-
-
-<!--HONumber=Feb17_HO1-->
-
-
