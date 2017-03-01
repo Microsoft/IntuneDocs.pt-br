@@ -1,5 +1,6 @@
 ---
-title: "Configurar um serviço de gerenciamento de despesas de telecomunicações | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Configurar um serviço de gestão de despesas de telecomunicações"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: configurar o serviço de gerenciamento de despesas de telecomunicações da Saaswedo para integração com o Intune."
 keywords: Saaswedo
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d243aaf8de5bb235f1c60141ff62f156b81f312b
-ms.openlocfilehash: faf662d2d5c9cb05fe507da8a1ec5c2eb89f3352
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -50,7 +53,7 @@ O Intune atualmente se integra com os seguintes provedores de gerenciamento de d
 
 ## <a name="deploy-the-intune-and-datalert-integrated-solution"></a>Implantar a solução integrada do Intune e Datalert
 
-Antes de começar, certifique-se de que você já tenha uma assinatura de serviço de gerenciamento de gastos de telecomunicações do Intune e Datalert.
+Antes de começar, verifique se você já possui uma assinatura do Intune e do serviço de gerenciamento de gastos de telecomunicações do Datalert.
 
 ### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>Etapa 1: conectar o serviço Datalert ao Microsoft Intune
 
@@ -164,9 +167,4 @@ Se você desabilitar o serviço Datalert no Portal do Azure:
 No momento, os relatórios de dados de uso estão disponíveis somente no console de gerenciamento do Saaswedo Datalert.
 
 As instruções que os usuários finais seguem para instalar o aplicativo Datalert serão adicionadas em breve.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
