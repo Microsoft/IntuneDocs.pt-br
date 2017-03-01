@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Registre seu dispositivo Windows ou Windows Phone no Intune permite que você:
 
 -   acessar a rede da empresa, bem como seu email e arquivos de trabalho.
 
--   Obter aplicativos da empresa do site do Portal da Empresa. (Para Windows 7 e Windows Vista, você pode obter aplicativos da empresa somente do site do Portal da Empresa).
+-   Obter aplicativos da empresa do site do Portal da Empresa. (__Observação__: para o Windows 7 e o Windows Vista, só é possível obter aplicativos da empresa no site do Portal da Empresa.)
 
 -   Configurar automaticamente sua conta de email corporativo ou de estudante.
 
@@ -67,6 +68,7 @@ Ao registrar seu dispositivo, você permitirá que o seu administrador de TI rea
 -  O administrador de TI pode instalar aplicativos e atualizações no seu computador.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>O que acontece a cada oito horas após o registro de dispositivo
+
 Aproximadamente a cada oito horas, os dispositivos registrados vão:
 
 -   Baixar atualizações de aplicativos e políticas disponibilizadas pelo seu administrador de TI.
@@ -76,9 +78,4 @@ Aproximadamente a cada oito horas, os dispositivos registrados vão:
 -   Enviar quaisquer atualizações de inventário de aplicativos da empresa.
 
 Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

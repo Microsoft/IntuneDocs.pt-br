@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,37 +37,36 @@ Obter acesso a aplicativos, dados e recursos da sua organização possibilita fa
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. Ao fazer o logon, você verá qualquer __Aplicativos__ disponível, __Meus dispositivos__ e qualquer __informação de contato__ disponível para sua equipe de TI. Na parte superior da página, você verá um aviso que diz **Este dispositivo não está registrado ou o Portal da Empresa não pode identificá-lo. <u>Toque Aqui</u> para selecionar um dispositivo diferente.** Clique em __Toque Aqui__.
+3. Ao fazer logon, você verá todas as guias __Início__, __Aplicativos__ e __Categorias__ disponíveis. Essa página mostrará todos os aplicativos disponíveis para instalação. Se você ainda não tiver dispositivos registrados, verá um aviso que informa **Não é possível mostrar nenhum aplicativo.** É possível continuar selecionando __Meus Dispositivos__.
 
- ![Página inicial macOS do Portal da Empresa](./media/macOS_enroll_001_landing_page.png)
+ ![Uma captura de tela da página de aterrissagem do portal da Web com o portal da Web mostrando que nenhum aplicativo pode ser instalado ainda, com um botão Meus Dispositivos abaixo.](./media/macOS_enroll_001_landing_page.png)
 
-4. Uma janela pop-up será exibida com uma breve explicação sobre por que vocês vão __Identificar ou registrar este dispositivo__. Examine isso, clique em __Registrar__ para continuar.
+4. Na página __Meus Dispositivos__, você verá uma lista de dispositivos registrados ou apenas uma barra de notificação. Isso depende se você já tiver um dispositivo registrado, macOS ou de outra forma. Para registrar um dispositivo que não está listado, selecione a barra de notificação que informa __Caso seu dispositivo esteja listado, toque aqui para identificá-lo. Também é possível tocar aqui para registrar seu dispositivo se ele não estiver listado__.
 
- ![Identifique ou registre este dispositivo macOS](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. Uma segunda janela pop-up será exibida com uma breve explicação sobre o que vai acontecer quando __Registrar este dispositivo__. Examine isso, clique em __Instalar__ para continuar.
+5. Uma janela pop-up será exibida com uma breve explicação sobre por que vocês vão __Identificar ou registrar este dispositivo__. Examine isso, clique em __Registrar__ para continuar.
 
- ![Registrar este dispositivo macOS](./media/macOS_enroll_003_enroll_popup.png)
+ ![Identifique ou registre este dispositivo macOS](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. Uma segunda janela pop-up será exibida com uma breve explicação sobre o que vai acontecer quando __Registrar este dispositivo__. Examine isso, clique em __Instalar__ para continuar.
+
+ ![Registrar este dispositivo macOS](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > O Intune precisa de acesso ao seu computador para certificar-se de que o dispositivo é seguro o suficiente para acessar recursos da sua organização. Descubra [o que acontece quando você registra seu dispositivo no Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
-6. As __Preferências do Sistema__ serão abertas e perguntarão se deseja __Instalar "Perfil de Gerenciamento"?__ Clique em __Instalar__ para continuar ou obtenha mais detalhes clicando __Mostrar Perfil__.
+7. As __Preferências do Sistema__ serão abertas e perguntarão se deseja __Instalar "Perfil de Gerenciamento"?__ Clique em __Instalar__ para continuar ou obtenha mais detalhes clicando __Mostrar Perfil__.
 
- ![Instalar o Perfil de Gerenciamento](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![Instalar o Perfil de Gerenciamento](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. Será exibida uma janela pop-up do macOS. Confirme que deseja fazer alterações, fornecendo o __nome de usuário__ e __senha__ do computador, em seguida, clicando em __OK__. Isso instalará o perfil de gerenciamento em seu Mac.
+8. Será exibida uma janela pop-up do macOS. Confirme que deseja fazer alterações, fornecendo o __nome de usuário__ e __senha__ do computador, em seguida, clicando em __OK__. Isso instalará o perfil de gerenciamento em seu Mac.
 
- ![Janela pop-up de Instalação do Perfil macOS](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![Janela pop-up de Instalação do Perfil macOS](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. Você pode ver algumas mensagens adicionais do seu Mac com mais detalhes sobre o perfil ou se tem certeza de que deseja __Instalar__. Clique em __Continuar__ e __Instalar__ por meio desses para continuar. Depois que a instalação for concluída, você poderá exibir seu recém-instalado __Perfil de Gerenciamento__ na lista de __Perfis de Dispositivo__.
+9. Você pode ver algumas mensagens adicionais do seu Mac com mais detalhes sobre o perfil ou se tem certeza de que deseja __Instalar__. Clique em __Continuar__ e __Instalar__ por meio desses para continuar. Depois que a instalação for concluída, você poderá exibir seu recém-instalado __Perfil de Gerenciamento__ na lista de __Perfis de Dispositivo__.
 
- ![Perfil macOS Instalado](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![Perfil macOS Instalado](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Ainda precisa de ajuda? Faça o check-in com o administrador de TI. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

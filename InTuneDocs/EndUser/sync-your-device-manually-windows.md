@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
-ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 Às vezes, tentar instalar um aplicativo no dispositivo Windows pode levar mais tempo do que o esperado. Se isso acontecer, você poderá tentar sincronizar o dispositivo Windows manualmente. A sincronização pode ajudar a acelerar a instalação.
 
-> [!Note] 
+> [!Note]
 > Os aplicativos poderão levar algum tempo para serem instalados se você estiver em uma rede com velocidades mais lentas ou se houver uma quantidade maior de dispositivos baixando conteúdo ao mesmo tempo.
 
 As versões do Windows a seguir podem ser sincronizadas manualmente. Infelizmente, se o dispositivo estiver usando outra versão do Windows, não será possível iniciar uma sincronização manual.
@@ -131,9 +133,4 @@ Para sincronizar manualmente seu dispositivo Windows Phone 8.1 e acelerar uma in
    A mensagem “Estamos sincronizando sua conta” aparece na parte superior da tela até que o dispositivo conclua a sincronização.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

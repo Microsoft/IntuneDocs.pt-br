@@ -1,5 +1,6 @@
 ---
-title: "Apagamento completo ou seletivo de dispositivos usando o Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: Apagamento completo ou seletivo em dispositivos usando o Intune
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como realizar um apagamento seletivo de dados da empresa em um dispositivo ou fazer um apagamento completo para redefinição de fábrica do dispositivo."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 3.  Na folha que mostra o nome do dispositivo, escolha **Remover dados da emp... ** (significa Remover dados da empresa) e escolha **Sim** para confirmar o apagamento.
 
 Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

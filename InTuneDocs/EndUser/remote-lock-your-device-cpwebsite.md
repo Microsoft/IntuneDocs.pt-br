@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,15 +41,21 @@ Para ficar seguro, você pode bloqueá-lo usando a opção de Bloqueio Remoto no
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar o Bloqueio Remoto para bloquear seu dispositivo
 
-1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no dispositivo que você deseja bloquear.
+1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
 
-2.    Toque em **Bloqueio Remoto**.
+  ![Uma imagem do site do Portal da Empresa com um menu lateral expandido no lado esquerdo da tela, com os botões Início, Todos os Aplicativos, Meus Dispositivos, Assistência Técnica e Saída.](/media/iwp-expanded-sidebar.png)
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja bloquear.
 
-3.    Aparecerá um aviso informando que você está prestes a bloquear seu dispositivo. Toque em **Bloqueio Remoto** e o site do Portal da Empresa tentará bloquear seu dispositivo.
+  ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-    Ao tocar em **Bloqueio Remoto**, uma mensagem "Bloqueio remoto pendente" será exibida.  Quando o Bloqueio Remoto for bem-sucedido, o status é alterado para "Bloqueio remoto bem-sucedido."
+3.    O dispositivo será aberto em uma janela pop-up. Toque no botão **Bloqueio Remoto**.
+
+    ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+
+4.    Aparecerá um aviso informando que você está prestes a bloquear seu dispositivo. Toque em **Bloqueio Remoto** e o site do Portal da Empresa tentará bloquear seu dispositivo.
+
+    Depois de selecionar **Bloqueio Remoto**, uma mensagem “Bloqueio remoto pendente” será exibida.  Quando o Bloqueio Remoto for bem-sucedido, o status é alterado para "Bloqueio remoto bem-sucedido."
 
     O status do Bloqueio Remoto aparece em três locais:
 
@@ -62,9 +69,4 @@ Para ficar seguro, você pode bloqueá-lo usando a opção de Bloqueio Remoto no
 Se você encontrar seu dispositivo e desejar desbloqueá-lo depois de usar o Bloqueio Remoto, basta inserir sua senha.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

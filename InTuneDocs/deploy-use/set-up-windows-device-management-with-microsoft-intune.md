@@ -12,9 +12,11 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 115eae8e2d733397eb4b0f025789ca7d0522a845
-ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -45,7 +47,9 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
 2. **Criar CNAMEs** (opcional)<br>
 Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-    Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum CNAME de registro, os usuários deverão inserir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.    
+
+    Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME do registro, os usuários deverão inserir manualmente o nome do servidor MDM: https://enrollment.manage.microsoft.com.
+
 
     Registros de recursos de CNAME devem conter as seguintes informações:
 
@@ -70,12 +74,9 @@ Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exe
 
     Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
+Para obter mais informações sobre tarefas do usuário final, consulte estes artigos:       - [Recursos sobre a experiência do usuário final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+      - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

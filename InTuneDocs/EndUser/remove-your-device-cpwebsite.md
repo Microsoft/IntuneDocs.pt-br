@@ -5,45 +5,45 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 28c6f72336447f85628e4913edbe5c0f003e2717
+ms.sourcegitcommit: b47b5159a5de5180859a9d3d9edc500b0853448c
+ms.openlocfilehash: dfcc383f88d82ff1a12d917905ca25740f2e9ac0
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-
 # <a name="remove-your-device-from-the-company-portal"></a>Remova o dispositivo do Portal da Empresa
 
-Se você decidir que não deseja que seu dispositivo seja gerenciado pelo Intune e pelo administrador de TI, será possível removê-lo do Portal da Empresa usando o [site do Portal da Empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no Intune. No site do Portal da Empresa, você pode executar a maioria das tarefas disponíveis no aplicativo do Portal da Empresa.
-
-Se você remover seu dispositivo, ele não será mais listado no Portal da Empresa e você também poderá perder o acesso a email, aplicativos ou dados da escola e da empresa.
+Se você decidir que não deseja mais que seu dispositivo seja gerenciado por sua empresa ou organização, poderá removê-lo do Portal da Empresa usando o [site do Portal da Empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no gerenciamento pelo departamento de TI. Se você remover seu dispositivo, ele não será mais listado no Portal da Empresa e você também poderá perder o acesso a email, aplicativos ou dados da escola e da empresa.
 
 Para remover seu dispositivo:
 
-1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no nome do dispositivo que você deseja remover.
+1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
 
-2.  Toque em **Remover**.
+  ![Uma imagem do site do Portal da Empresa com um menu lateral expandido no lado esquerdo da tela, com os botões Início, Todos os Aplicativos, Meus Dispositivos, Assistência Técnica e Saída.](/media/iwp-expanded-sidebar.png)
 
-    ![Remova a opção de dispositivo no site do Portal da Empresa](./media/iwp-screen-with-all-options.png)
+2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja remover.
 
-3. Leia a mensagem de aviso e toque em **Remover** para remover o dispositivo do Portal da Empresa.
+    ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-O dispositivo foi removido.
+3.    O dispositivo será aberto em uma janela pop-up. Toque no botão **Remover**.
+
+      ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+
+4. Leia a mensagem de aviso e toque em **Remover** para remover o dispositivo do Portal da Empresa.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

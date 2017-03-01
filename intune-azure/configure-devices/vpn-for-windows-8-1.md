@@ -1,6 +1,7 @@
 ---
-title: "Configurações de VPN do Intune para dispositivos Windows 8.1 | Versão prévia do Intune Azure | Microsoft Docs"
-description: "Visualização do Intune Azure: saiba mais sobre as configurações do Intune que você pode usar para configurar conexões de VPN em dispositivos Windows 8.1."
+title: "Configurações de VPN do Intune para dispositivos Windows 8.1"
+titleSuffix: Intune Azure preview
+description: "Versão prévia do Intune Azure: saiba mais sobre as configurações do Intune que você pode usar para configurar conexões de VPN em dispositivos Windows 8.1."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: f38526a3e60f2a6628e61ffca5f5d179a2718e9b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -93,9 +96,4 @@ Consulte a documentação do VPN de cada fabricante para obter mais informaçõe
     - **Endereço** – Insira o endereço do servidor proxy (como um endereço IP).
     - **Número da porta** – Insira o número de porta associado ao servidor proxy.
 - **Bypass de proxy para endereços locais** – Se o servidor VPN exigir um servidor proxy para a conexão, selecione essa opção se não quiser usar o servidor proxy para endereços locais que você especificar. Para obter mais informações, consulte a documentação do Windows Server.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

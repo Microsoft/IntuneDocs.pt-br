@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -75,6 +76,9 @@ As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e po
   -  **BitLocker habilitado**: quando o BitLocker está ativado, o dispositivo é capaz de proteger os dados armazenados na unidade contra acesso não autorizado quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados do usuário. O BitLocker também ajuda a garantir que o computador não seja adulterado, mesmo que seja autônomo ou seja perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que ajudam a proteger os dados. Como resultado, as chaves não podem ser acessadas até que o TPM tenha verificado o estado do computador.
   -  **Integridade de código habilitada:** a integridade de código é um recurso que valida a integridade de um arquivo de sistema ou driver cada vez que ele é carregado na memória. A integridade de código detecta quando um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Ela também detecta se um arquivo de sistema foi modificado por software mal-intencionado que está sendo executado por uma conta de usuário com privilégios de administrador.
   - **Inicialização Segura habilitada:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma isso antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
+
+  > [!IMPORTANT]
+  > Os dispositivos Windows não dão suporte a software **ELAM** (Antimalware de Início Antecipado) de terceiros instalados como parte do Atestado de integridade do dispositivo.
 
   Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
@@ -151,9 +155,4 @@ Para localizar a versão do SO que deve ser usada para as configurações **SO m
 
 - Para computadores que executam o Windows 10, a versão deve ser definida como **10.0** mais o número de build do sistema operacional retornado pelo comando **winver**. Por exemplo, poderia ser algo como 10.0.10586.
 > ![Versão do build do SO realçada na caixa de diálogo "Sobre o Windows"](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

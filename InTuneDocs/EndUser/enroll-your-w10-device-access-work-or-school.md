@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,43 +16,42 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 865c0e607b053c4d5aff648332b1dcfc68dc0e6c
+ms.sourcegitcommit: cfd6d509b6683f563d56ef149ff3739de4772394
+ms.openlocfilehash: c87be1a3cdea23d5d40dcd8abe902b4ee5c06bc4
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrar seu dispositivo Windows 10 no Intune
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment-with-AAD/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Toque **Acessar trabalho ou escola** e, em seguida, toque em **Conectar**.
+1.  Abra o aplicativo **Configurações** do Windows acessando o **menu Iniciar** e selecionando o botão **Configurações**. Também é possível pesquisar “configurações” na barra de pesquisa.
 
-    ![Toque em Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.
 
-2.  Insira o endereço de email de sua conta corporativa ou de estudante e toque em **Avançar**.
+    ![Selecione Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+3.  Insira seu endereço de email corporativo ou de estudante e selecione **Avançar**.
 
     ![Insira sua conta corporativa ou de estudante](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-3. Entre no Intune com sua conta corporativa ou de estudante.
+4. Entre no Intune com sua conta corporativa ou de estudante.
 
     ![Adicionar uma conta corporativa ou de estudante](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     Você verá uma mensagem que indica que sua empresa ou escola está registrando o dispositivo.
 
-4. Quando você vir a página **Tudo pronto!**, tela, toque em **Fechar**. Você terminou.
+5. Quando você vir a página **Tudo pronto!**, selecione **Fechar**. Você terminou.
 
-  ![Toque em fechar na tela “Tudo pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Selecione Fechar na tela “Você está pronto!” “Tudo pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.
+6. Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.
 
     ![Valide se a conexão foi configurada corretamente](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
 Se você seguiu as etapas anteriores, mas ainda não consegue acessar sua conta de email e seus arquivos corporativos ou de estudante, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "Definir a autoridade de gerenciamento de dispositivo móvel | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Defina a autoridade de gerenciamento de dispositivo móvel"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como configurar a autoridade de gerenciamento de dispositivo móvel no Intune. "
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -41,9 +44,4 @@ A configuração de autoridade de gerenciamento de dispositivo móvel determina 
 2. Na folha Intune, escolha **Registrar dispositivos** e **Visão Geral**.
 
 3. na folha **Começar a gerenciar dispositivos**, escolha **Definir autoridade MDM Intune**. Uma mensagem indica que você configurou com êxito sua autoridade MDM Intune.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

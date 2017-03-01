@@ -1,5 +1,6 @@
 ---
-title: "Aplicativos iOS com políticas de proteção de aplicativo | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Aplicativos iOS com políticas de proteção do aplicativo | Visualização do Intune Azure"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: este tópico descreve o que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: ae646cf3dd1b1469b9f87ac66ad7171d77ef6518
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -63,9 +66,4 @@ Se estiver usando um dispositivo iOS, ao tentar adicionar uma segunda conta corp
 [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-android-apps.md)
 ### <a name="see-also"></a>Consulte também
 [Criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

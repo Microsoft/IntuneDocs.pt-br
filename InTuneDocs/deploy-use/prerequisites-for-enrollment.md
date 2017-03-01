@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -51,8 +52,7 @@ Antes de habilitar o registro de dispositivo móvel, certifique-se de ter feito 
 A autoridade de MDM define o serviço de gerenciamento que tem permissão para gerenciar um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune e o Configuration Manager com Intune. Se você definir o Configuration Manager como a autoridade de gerenciamento, nenhum outro serviço poderá ser usado para gerenciamento de dispositivo móvel.
 
 >[!IMPORTANT]
-> Considere atentamente se você quer gerenciar dispositivos móveis usando apenas o Intune (serviço online) ou o System Center Configuration Manager com Intune (solução de software local em conjunto com o serviço online). Depois de configurar a autoridade de gerenciamento de dispositivo móvel, ela não poderá ser alterada.
-
+> Considere atentamente se você quer gerenciar dispositivos móveis usando apenas o Intune (serviço online) ou o System Center Configuration Manager com Intune (solução de software local em conjunto com o serviço online). Depois de definir a autoridade de gerenciamento de dispositivo móvel, não será possível alterá-la sem a ajuda do Suporte da Microsoft. Consulte [O que fazer se você escolher a configuração incorreta de autoridade de MDM](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) para obter instruções.
 
 
 1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), selecione **Administrador** &gt; **Gerenciamento de Dispositivo Móvel**.
@@ -151,8 +151,63 @@ Agora que o registro está habilitado, você deve configurar o gerenciamento par
 - [Adicionar aplicativos](add-apps.md) e [implantar aplicativos](deploy-apps.md) em dispositivos gerenciados
 - [Criar políticas de conformidade de dispositivo](introduction-to-device-compliance-policies-in-microsoft-intune.md) e [restringir o acesso com base na conformidade](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>O que fazer se você escolher a configuração incorreta de autoridade de MDM
 
+Se você decidir que escolheu a configuração incorreta de autoridade de MDM e precisar alterá-la, contate o Suporte da Microsoft. Não é possível alterar a configuração por conta própria. Antes de contatar o Suporte da Microsoft, examine as informações a seguir, que descrevem as informações que o Suporte da Microsoft precisará de você para fazer a alteração.
 
-<!--HONumber=Dec16_HO2-->
+Há três maneiras possíveis pelas quais a autoridade de MDM pode ser redefinida. Na solicitação do Suporte, você precisará escolher a maneira que se aplica à sua situação. Se o cenário que você está solicitando não estiver listado, faça um acompanhamento com o Suporte da Microsoft.
 
+O Suporte da Microsoft solicitará que você confirme as seguintes informações:
+
+- ID do Locatário: o domínio usado para fazer logon no serviço (por exemplo, intune.onmicrosoft.com)
+- A autoridade de MDM para a qual você deseja alterar
+- Confirmação das etapas de pré-requisito concluídas, conforme listado abaixo
+
+Se você estiver usando a coexistência, precisará verificar as listas de verificação do Intune e do Office 365.
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Redefinir a autoridade de MDM do Intune para o Configuration Manager
+
+Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua autoridade de MDM.
+
+- Desative todos os dispositivos no console de administração do Intune. Não tente desativar um dispositivo no próprio dispositivo. 
+- Exclua o Service To Service Connector (em **Administração** > **Gerenciamento de Dispositivo Móvel** > **Microsoft Exchange**) ou desabilite o Exchange Connector se você o tiver configurado. 
+- Remova a função Gerenciador de Registro de Dispositivo em **Administrador** > **Gerenciador de Registro de Dispositivo**.
+- Desligue o Mapeamento de Grupo de Dispositivos em **Administrador** > **Gerenciamento de Dispositivo Móvel** > **Mapeamento de Grupo de Dispositivos**.
+- Exclua as chaves de sideload em **Administrador** > **Gerenciamento de Dispositivo Móvel** > **Windows** > **Chaves de Sideload**.
+- Exclua o certificado APNs do iOS na página **Administrador** > **Gerenciamento de Dispositivo Móvel** > **iOS**.
+- Exclua o token DEP do iOS na página **Administrador** > **Gerenciamento de Dispositivo Móvel** > **iOS**.
+- Exclua todas as políticas destinadas a Dispositivos de MDM em **Política** > **Políticas de Configuração**.
+- Exclua todos os aplicativos publicados destinados a Dispositivos de MDM em **Aplicativos** > **Software Gerenciado**.
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Redefinir a autoridade de MDM do Configuration Manager para o Intune
+
+Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua autoridade de MDM.
+
+- Desative todos os dispositivos (que são gerenciados como dispositivos móveis) no Console do Configuration Manager. Não tente desativar um dispositivo no próprio dispositivo. 
+- Remova todos os usuários do Grupo de Usuários do Intune. Aponte a assinatura do Intune para uma coleção vazia de usuários ou remova todos os usuários da coleção de destino.  No CloudUserSync.log, confirme se os usuários foram removidos. 
+- Desmarque a plataforma iOS para limpar o certificado APNs.
+- Exclua todos os aplicativos publicados destinados a dispositivos de MDM.
+- Exclua todas as políticas destinadas a dispositivos de MDM. 
+- Remova o Conector do Windows Intune por meio do Console do Configuration Manager (aplicável somente ao R2 SP1 ou abaixo).
+- Remova a assinatura do Intune clicando com o botão direito do mouse na assinatura e selecionando **Excluir**.
+- Reinicie o Serviço SMS Executive.
+- Forneça para nós alguns usuários de exemplo para que possamos verificar, após a conclusão do processo, se as licenças do Configuration Manager foram removidas.
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Redefinir a autoridade de MDM do Office 365 para o Configuration Manager
+
+1. Navegue até [https://protection.office.com](https://protection.office.com).
+2. Selecione a guia **Políticas de Segurança** e selecione **Gerenciamento de Dispositivo**. 
+3. Desative todos os dispositivos escolhendo **Apagamento Seletivo**. Não tente desativar um dispositivo no próprio dispositivo. Se o apagamento seletivo estiver desabilitado, nenhuma ação adicional será necessária.
+4. Selecione a guia **Políticas de Segurança** e selecione **Políticas de Segurança do Dispositivo**. 
+5. Selecione **Excluir** para todas as políticas existentes. Se as políticas estiverem em um estado pendente, nenhuma ação adicional será necessária.
+
+>[!NOTE]
+>O certificado APsN do iOS não pode ser excluído e permanece anexado à conta. 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>Próximas etapas para redefinições de autoridade de MDM
+
+Depois que o Suporte da Microsoft verificar os itens da lista de verificação aplicável, a redefinição da autoridade de MDM poderá levar até três dias úteis, mas geralmente ocorre em um dia. 
+
+>[!IMPORTANT]
+>Não tente configurar sua assinatura até que o Suporte da Microsoft confirme que a redefinição foi concluída com êxito. A configuração prematura poderá corromper a assinatura e/ou afetar sua capacidade de usar o serviço Intune. 
 

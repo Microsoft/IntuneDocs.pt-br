@@ -1,5 +1,6 @@
 ---
-title: "Solucionar problemas de registro de dispositivo | Versão prévia do Intune Azure | Microsoft Docs"
+title: Solucionar problemas de registro de dispositivo
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como solucionar problemas de registro do dispositivo."
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -346,7 +349,7 @@ Esse erro pode ocorrer porque o computador já foi registrado anteriormente ou t
 
 **Resolução:**
 
-1.. No menu **Iniciar**, digite **Executar** -> **MMC**.
+1. No menu **Iniciar**, digite **Executar** -> **MMC**.
 1. Escolha **Arquivo** > **Adicionar/Remover Snap-ins**.
 1. Clique duas vezes em **Certificados**, escolha a **Conta de computador** > **Avançar** e selecione **Computador Local**.
 1. Clique duas vezes em **Certificados (computador local)** e escolha **Pessoal/Certificados**.
@@ -386,9 +389,4 @@ Esse erro pode ocorrer porque o computador já foi registrado anteriormente ou t
 
 ### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) (Como obter suporte para o Microsoft Intune).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

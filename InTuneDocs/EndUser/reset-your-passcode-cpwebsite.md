@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: a8ce59755a74199eda6865feda68c0613d10c2a7
+ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
+ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -33,21 +34,26 @@ Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que voc�
 
 Para redefinir sua senha:
 
-1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e escolha o dispositivo cuja senha você deseja redefinir.
+1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
 
-2.  Escolha **Redefinir Senha**.
+2. Na página __Meus Dispositivos__, selecione o nome do dispositivo cuja senha você deseja redefinir.
 
-    ![Detalhes do dispositivo com o botão Redefinir Senha](./media/iwp-screen-with-all-options.png)
+  ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Escolha **Entrar** e entre novamente com as suas credenciais corporativas ou de estudante. Você precisa entrar novamente em cinco minutos.
+3.    O dispositivo será aberto em uma janela pop-up. Selecione o botão **Redefinir Senha**.
 
-    ![Mensagem de redefinição com o botão de saída](./media/iwp-2-sign-out.png)
+    ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
 
-4.  Escolha **Redefinir Senha**.
+4.  Uma barra de notificação será exibida solicitando que você confirme se deseja redefinir a senha e informando que o dispositivo o desconectará após essa ação. Em seguida, você precisará aguardar 5 minutos antes de se conectar novamente.
 
-    ![Mensagem que explica o que acontece quando você redefine a senha](./media/iwp-3-tap-reset-passcode-after-signin.png)
+  ![A barra de notificação de redefinição de senha com o aviso sobre como redefinir a senha do dispositivo e como o usuário será desconectado. Os botões para a entrada do usuário são Sair e Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-    Verifique a tabela para ver como **Redefinir Senha** funciona em seu dispositivo.
+4.  Selecione **Sair** e você receberá uma mensagem final informando sobre a remoção da senha do dispositivo. Se você não tiver o dispositivo com você, não remova a senha, pois qualquer pessoa que tiver acesso físico ao dispositivo poderá acessar a maior parte das informações contidas nele – pessoais ou corporativas.
+
+  ![A segunda barra de notificação de redefinição de senha com o aviso sobre como redefinir a senha do dispositivo e como a senha será removida dele. Ela também informa como definir uma nova senha acessando as configurações do dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
+
+
+Como dispositivos diferentes têm tipos diferentes de senhas, é possível descobrir como a redefinição da senha pode afetar o dispositivo específico na tabela abaixo. 
 
     |Tipo de dispositivo|O que acontece quando você redefine|
     |------------|-----------|
@@ -61,9 +67,4 @@ Para redefinir sua senha:
     Para ver uma notificação confirmando que sua senha foi redefinida com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

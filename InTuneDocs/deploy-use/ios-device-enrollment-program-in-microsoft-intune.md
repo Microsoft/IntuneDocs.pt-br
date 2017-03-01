@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: ab035d069fa1dbf5f5f38a959dc2f896a0109b6f
+ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
+ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -76,7 +77,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 2. Forneça detalhes **Gerais**, incluindo **Nome** e **Descrição**, além de especificar se os dispositivos atribuídos ao perfil têm afinidade de usuário ou pertencem a um grupo:
 
-   - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos). A MFA (autenticação multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos.
+   - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos). A MFA (autenticação multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos. Novos usuários que precisam alterar a senha ao se conectarem pela primeira vez não podem receber um prompt durante o registro em dispositivos DEP. Além disso, os usuários cujas senhas expiraram não receberão um prompt para redefinir a senha durante o registro DEP e deverão redefinir a senha em um dispositivo diferente. 
 
    > [!NOTE]
    > O DEP com afinidade do usuário requer que o ponto de extremidade misto/nome do usuário do WS-Trust 1.3 esteja habilitado para solicitar o token do usuário.
@@ -161,9 +162,4 @@ A partir de dezembro de 2016, o gerenciamento de grupo de dispositivos será mov
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

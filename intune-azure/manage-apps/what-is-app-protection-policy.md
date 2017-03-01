@@ -1,5 +1,6 @@
 ---
-title: "O que são políticas de proteção de aplicativo | Versão prévia do Intune Azure | Microsoft Docs"
+title: "O que são políticas de proteção do aplicativo"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: use este tópico para aprender a proteger os dados da empresa com as políticas de proteção de aplicativo do Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 34f5f17e581e8e146fccce6534202939d1418135
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -134,9 +137,4 @@ Todos os aplicativos móveis do Office dão suporte a várias identidades.
 ##  <a name="next-steps"></a>Próximas etapas
 
 [Como criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

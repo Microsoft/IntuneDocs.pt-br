@@ -1,11 +1,12 @@
 ---
-title: "RBAC (Controle de acesso baseado em função) para o Microsoft Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "RBAC (controle de acesso baseado em função) para o Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como o RBAC permite controlar quem pode executar ações e fazer alterações."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,7 +43,7 @@ As seguintes são funções internas do Intune e você pode personalizá-las ou 
 - **Administrador do Intune** – Tem permissões completas para executar todas as operações do Intune.
 - **Gerenciador de Aplicativos** – Gerenciar e implantar aplicativos e perfis.
 - **Gerenciador de Políticas de Configuração** – Gerenciar e implantar definições de configurações e perfis.
-- **Operador de suporte técnico** – Execute tarefas remotas e exibir informações de usuário e dispositivo.
+- **Operador de assistência técnica** – realizar tarefas remotas e exibir informações do usuário e do dispositivo.
 - **Operador somente leitura** – Exibir informações no Portal do Intune sem a capacidade de fazer alterações.
 
 
@@ -171,8 +174,3 @@ Ao criar uma função personalizada, é possível definir uma ou mais das seguin
 |**Excluir**|Excluir as configurações de termos e condições.|
 |**Ler**|Ler as configurações de termos e condições no Portal do Intune.|
 |**Atualizar**|Atualizar configurações de termos e condições existentes.|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

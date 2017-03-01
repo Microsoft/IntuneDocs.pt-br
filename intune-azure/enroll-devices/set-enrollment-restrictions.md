@@ -1,5 +1,6 @@
 ---
-title: "Definir restrições de registro no Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Definir restrições de registro no Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: restringir o registro pela plataforma e definir um limite de registro de dispositivo no Intune. "
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 56996592febf0be5ab74b158a70404728fe17a4d
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -63,9 +66,4 @@ Você pode definir os tipos e o número máximo de dispositivos que você permit
 4. Na folha **Todos os Usuários**, selecione **Limite de Dispositivos**.
 
 5. Selecione o número máximo de dispositivos que um usuário pode registrar e selecione **Salvar**.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
