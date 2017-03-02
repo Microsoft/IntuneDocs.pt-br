@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune
-É possível monitorar o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários. Você poderá encontrar informações sobre os usuários afetados pelas políticas de MAM, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorar as políticas de proteção de aplicativo com o Microsoft Intune
+É possível monitorar o status de conformidade das políticas de proteção de aplicativo que você aplicou aos usuários. Você poderá encontrar informações sobre os usuários afetados pelas políticas de proteção de aplicativo, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.
 
 Há três locais diferentes para monitorar o status de conformidade:
 
@@ -59,7 +61,7 @@ Você pode obter a exibição detalhada do resumo escolhendo os blocos **Status 
 Você pode pesquisar por um único usuário e verificar o status de conformidade dele. A folha **Relatório de aplicativo** exibe as seguintes informações para um usuário selecionado:
 - Dispositivos que estão associados à conta de usuário
 
-- Aplicativos com política de MAM no dispositivo
+- Aplicativos com uma política de proteção do aplicativo no dispositivo
 
 - Status:
 
@@ -68,7 +70,7 @@ Você pode pesquisar por um único usuário e verificar o status de conformidade
   - **Check-in não realizado**: a política foi implantada para o usuário, mas o aplicativo ainda não foi usado no contexto de trabalho.
 
 >[!NOTE]
-> Se os usuários pesquisados não tiverem a política de MAM implantada neles, você verá uma mensagem informando que o usuário não é alvo de nenhuma política de MAM.
+> Se os usuários pesquisados não tiverem a política de proteção de aplicativo implantada, você verá uma mensagem informando que o usuário não é alvo de nenhuma política.
 
 Para ver o relatório para um usuário, siga estas etapas:
 
@@ -87,7 +89,7 @@ A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado 
 
 ## <a name="reporting-view"></a>Exibição de Relatórios
 
-Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios adicionais para ajudá-lo com o status de conformidade de política de MAM:
+Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios adicionais para ajudá-lo com o status de conformidade de política de proteção do aplicativo:
 
 ![Captura de tela&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios
 
     -   Status do usuário para a atividade de MAM gerenciada (protegido): este relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário.
 
-        -   Ele mostra todos os aplicativos alvo das políticas de MAM para cada usuário e divide o status de cada aplicativo como com check-in feito nas políticas de MAM ou que eram alvo de uma política de MAM, mas nunca foi feito o check-in do aplicativo.
+        -   Ele mostra todos os aplicativos alvo das políticas de proteção de aplicativo para cada usuário e dividem o status de cada aplicativo como com check-in feito nas políticas de proteção do aplicativo ou que eram alvo de uma política de proteção do aplicativo mas o check-in nunca foi feito.
 <br></br>
     -   Status do usuário para a atividade de MAM não gerenciada (desprotegido): este relatório descreve a atividade de aplicativos habilitados para MAM atualmente não gerenciados, por usuário. Isso pode acontecer de acordo com os seguintes motivos:
 
-        -   Esses aplicativos estão sendo usados por um usuário ou um aplicativo que no momento não é alvo de uma política de MAM.
+        -   Esses aplicativos estão sendo usados por um usuário ou um aplicativo que, no momento, não é alvo de uma política de proteção de aplicativo.
 
-        -   Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de MAM.
+        -   Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de proteção de aplicativo.
 
 ![Captura de tela&2;](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ Siga estas etapas para gerar o relatório de proteção do aplicativo:
 ## <a name="see-also"></a>Consulte também
 [Gerenciar a transferência de dados entre aplicativos iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [O que esperar quando seu aplicativo Android é gerenciado por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
