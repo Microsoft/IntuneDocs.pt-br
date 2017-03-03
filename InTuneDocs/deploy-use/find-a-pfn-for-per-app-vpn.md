@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
@@ -71,10 +72,10 @@ Eis aqui as informações recuperadas do OneNote:
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Localizar um PFN se o aplicativo não estiver instalado em um computador
 
-1.  Vá para https://www.microsoft.com/pt-br/store/apps.
-2.  Insira o nome do aplicativo na barra de pesquisa. No nosso exemplo, pesquise o OneNote.
-3.  Escolha o link para o aplicativo. Observe que a URL tem uma série de letras no final. No nosso exemplo, a URL tem esta aparência: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
-4.  Em uma guia diferente, cole a URL a seguir, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Substitua `<app id>` pela ID do aplicativo obtida em https://www.microsoft.com/pt-br/store/apps – a série de letras no final da URL na etapa 3. Em nosso exemplo do OneNote, você colaria: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+1.    Vá para https://www.microsoft.com/pt-br/store/apps.
+2.    Insira o nome do aplicativo na barra de pesquisa. No nosso exemplo, pesquise o OneNote.
+3.    Escolha o link para o aplicativo. Observe que a URL tem uma série de letras no final. No nosso exemplo, a URL tem esta aparência: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.    Em uma guia diferente, cole a URL a seguir, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Substitua `<app id>` pela ID do aplicativo obtida em https://www.microsoft.com/pt-br/store/apps – a série de letras no final da URL na etapa 3. Em nosso exemplo do OneNote, você colaria: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 O Microsoft Edge exibe as informações que você deseja. No Internet Explorer, selecione **Abrir** para ver as informações. O valor PFN é fornecido na primeira linha. Veja os resultados para nosso exemplo:
 

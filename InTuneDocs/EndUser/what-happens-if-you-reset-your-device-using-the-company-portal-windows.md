@@ -1,5 +1,5 @@
 ---
-title: "O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa? | Microsoft Docs"
+title: "O que acontecerá se você redefinir seu dispositivo Windows? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
 
-Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empresa](reset-your-device-cpwebsite.md) para redefinir o dispositivo do Windows, ele redefine o dispositivo para as configurações de fábrica e exclui todos os aplicativos, configurações e dados, incluindo seus dados pessoais. O que acontece em cada dispositivo depende do tipo de dispositivo que você tem e de como ele é usado (conforme descrito na tabela a seguir). Para obter instruções sobre como redefinir o dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md) (Redefinir (apagar) o dispositivo perdido ou roubado).
+Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empresa](reset-erase-your-device-cpwebsite.md) para redefinir o dispositivo do Windows, ele redefine o dispositivo para as configurações de fábrica e exclui todos os aplicativos, configurações e dados, incluindo seus dados pessoais. O que acontece em cada dispositivo depende do tipo de dispositivo que você tem e de como ele é usado (conforme descrito na tabela a seguir). Para obter instruções sobre como redefinir o dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md) (Redefinir (apagar) o dispositivo perdido ou roubado).
 
 |Gerenciamento e configuração do dispositivo|Tipo de dispositivo|
 |---------------------------------------|---------------|
@@ -38,6 +39,6 @@ Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

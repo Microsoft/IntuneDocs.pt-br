@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
@@ -40,9 +41,9 @@ Essas configurações podem ser usadas apenas por dispositivos que executam o Sa
     
     - **Nome da configuração.** Digite **PreventStartPackages**.
     - **Descrição da configuração.** Insira uma descrição opcional, como “Lista de aplicativos impedidos de serem executados”.
-    -   **Tipo de dados.** Na lista suspensa, escolha **Cadeia de caracteres**.
-    -   **OMA-URI.** Digite **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **Valor.** Insira uma lista dos nomes de pacotes do aplicativo que deseja permitir. Você pode usar **; : ,** ou **|** como delimitador. (Exemplo: pacote1; pacote2;)
+    -     **Tipo de dados.** Na lista suspensa, escolha **Cadeia de caracteres**.
+    -     **OMA-URI.** Digite **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -     **Valor.** Insira uma lista dos nomes de pacotes do aplicativo que deseja permitir. Você pode usar **; : ,** ou **|** como delimitador. (Exemplo: pacote1; pacote2;)
 
     Para obter uma lista dos aplicativos que os usuários do dispositivo podem instalar da loja Google Play enquanto todos os outros aplicativos são excluídos:
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|
 |Configurações do perfil de certificado|Certificados revogados, mas não removidos.|Certificados removidos e revogados.|
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
-|Email|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
-|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
+|Email|N/A. Consulte o item do Outlook.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
+|Outlook|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
 |Sair do Active Directory do Azure (AAD)|Registro no AAD removido.|Registro no AAD removido.|
 |Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
+
+**Android for Work**
+
+Executar a limpeza seletiva em um dispositivo Android para Trabalho remove todos os dados, os aplicativos e as configurações no perfil de trabalho nesse dispositivo. Isso desativa o dispositivo de gerenciamento com o Intune. Não há suporte para o apagamento completo no Android para Trabalho.
 
 **Windows**
 
@@ -168,6 +173,6 @@ Este relatório também mostra quem executou a ação.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

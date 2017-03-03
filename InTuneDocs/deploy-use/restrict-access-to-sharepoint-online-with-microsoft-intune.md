@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso ao SharePoint Online | Microsoft Docs
+title: Proteger SharePoint Online | Microsoft Docs
 description: Proteja e controle o acesso aos dados da empresa no SharePoint Online usando o acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Restringir o acesso ao SharePoint Online com o Microsoft Intune
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Proteger o acesso ao SharePoint Online com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use o acesso condicional [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar o acesso a arquivos localizados no SharePoint Online.
 O acesso condicional tem dois componentes:
 - Uma política de conformidade do dispositivo, com a qual o dispositivo deve estar em conformidade para ser considerado compatível.
 - Uma política de acesso condicional, na qual você especifica as condições que o dispositivo deve atender para acessar o serviço.
-Para saber mais sobre como o acesso condicional funciona, leia o tópico [Restringir acesso a email, O365 e outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como funciona o acesso condicional, leia o tópico [Proteger o acesso ao email, O365 e outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Você implanta a conformidade e políticas de acesso condicional para os usuários. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
 
@@ -66,7 +70,7 @@ Há suporte para os recursos a seguir:
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 ou posterior
 - Windows Phone 8.1 e posterior
 
-É possível restringir o acesso ao SharePoint Online quando acessado por um navegador em dispositivos **iOS** e **Android**. O acesso será permitido somente de navegadores com suporte em dispositivos compatíveis:
+É possível proteger o acesso ao SharePoint Online quando acessado por um navegador em dispositivos **iOS** e **Android**. O acesso será permitido somente de navegadores com suporte em dispositivos compatíveis:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS e Android 5.0 e posteriores)
@@ -140,7 +144,7 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
         Isso requer que qualquer dispositivo usado para acessar o **SharePoint Online** seja registrado no Intune e esteja compatível com as políticas. Qualquer aplicativo cliente que use a **autenticação moderna** está sujeito à política de acesso condicional. Se a plataforma não tiver suporte do Intune, o acesso ao **SharePoint Online** será bloqueado.
 
         Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente. Todas as plataformas precisarão ser registradas e se tornarem compatíveis, exceto:
-        *   Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
+        *    Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
         * Plataformas sem suporte, como Mac. No entanto, os aplicativos que usam autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
 
     -   **Plataformas específicas**
@@ -150,8 +154,6 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
      Para computadores Windows, o computador deve estar ingressado no domínio ou ser compatível e estar registrado em [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Você pode definir os seguintes requisitos:
 
      -   **Os dispositivos devem estar ingressados no domínio ou ser compatíveis.** Escolha essa opção se quiser que os computadores estejam ingressados no domínio ou sejam compatíveis com as políticas definidas em [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Se um computador não atender a esses requisitos, será solicitado que o usuário registre o dispositivo com [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
-
-     -   **Os dispositivos devem estar ingressados no domínio.** Escolha essa opção para exigir que os computadores estejam ingressados no domínio para acessar o Exchange Online. Se um PC não estiver ingressado no domínio, o acesso ao email será bloqueado e será solicitado que o usuário entre em contato com o administrador de TI.
 
      -   **Os dispositivos devem ser compatíveis.** Escolha essa opção para exigir que os computadores sejam compatíveis e estejam registrados em [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Se um computador não estiver registrado, será exibida uma mensagem com instruções sobre como registrá-lo.
 
@@ -192,10 +194,10 @@ Selecione qualquer grupo de dispositivos móveis. Em seguida, na guia **Disposit
 -   **Dispositivos registrados com o AAD e que são compatíveis**. Esses dispositivos podem acessar o SharePoint Online.
 
 ### <a name="see-also"></a>Consulte também
-[Restringir o acesso a email e serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Proteger o acesso a email e serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

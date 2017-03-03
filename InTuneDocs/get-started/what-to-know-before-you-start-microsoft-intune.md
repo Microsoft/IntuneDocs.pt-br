@@ -1,11 +1,11 @@
 ---
-title: "Pré-requisitos | Microsoft Docs"
-description: "Links para os requisitos e pré-requisitos do Intune"
+title: "Dispositivos com suporte – Microsoft Intune | Microsoft Docs"
+description: Lista as plataformas de dispositivo e navegadores com suporte para o gerenciamento de dispositivo do Intune
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: d07c7e667dbb5c01a9dcd8b2f69e7d930c27f25a
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>Pré-requisitos para introdução do Intune
+# <a name="supported-devices-and-browsers"></a>Dispositivos e navegadores com suporte
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Este artigo é voltado para os administradores de sistema responsáveis pelo gerenciamento de dispositivo na empresa. Para obter ajuda sobre como instalar o Intune em seu telefone, consulte [usando dispositivos gerenciados para realizar seu trabalho](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Antes de iniciar a configuração do Microsoft Intune, examine os requisitos a seguir:
 
@@ -74,6 +77,6 @@ Apenas usuários com permissões de administrador de serviços ou administradore
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

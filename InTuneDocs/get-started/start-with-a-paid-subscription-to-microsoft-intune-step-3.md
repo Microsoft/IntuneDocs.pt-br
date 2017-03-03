@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Adicionar usuários e conceder permissão administrativa para o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Este tópico informa os administradores como adicionar usuários ao Intune e quais permissões administrativas estão disponíveis no serviço Intune.
 
 Como administrador, é possível adicionar usuários diretamente ou sincronizar os usuários do seu Active Directory local. Depois de adicionados, os usuários podem registrar dispositivos e acessar os recursos da empresa. Também é possível conceder aos usuários permissões adicionais, incluindo *administrador de locatários*, *administrador de serviços* e *permissões de gerenciador de registro de dispositivo*.
 
@@ -33,7 +38,7 @@ Este tópico ajuda a:
   - [Gerenciadores de registro de dispositivos](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Adicionar usuários ao Intune
-É possível adicionar manualmente os usuários à assinatura do Intune usando o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), pois eles não são atribuídos automaticamente a uma licença do Intune. Em vez disso, posteriormente, um administrador de locatários do Intune precisa editar a conta do usuário para atribuir uma licença ao usuário do portal do Office 365. Para obter diretrizes, consulte [Adicionar usuários individualmente ou em massa ao portal do Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+É possível adicionar manualmente os usuários à assinatura do Intune usando o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), mas eles não são atribuídos automaticamente a uma licença do Intune. Em vez disso, posteriormente, um administrador de locatários do Intune precisa editar a conta do usuário para atribuir uma licença ao usuário do portal do Office 365. Para obter diretrizes, consulte [Adicionar usuários individualmente ou em massa ao portal do Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizar o Active Directory e adicionar usuários ao Intune
 É possível configurar a sincronização de diretórios para importar contas de usuários do Active Directory local para o Microsoft Azure Active Directory (Azure AD), o que inclui os usuários do Intune. Conectar o Active Directory local a todos os seus serviços baseados no Active Directory do Azure simplifica muito o gerenciamento de identidades de usuário. Você também pode configurar recursos de logon único para tornar a experiência de autenticação fácil e familiar para seus usuários. Ao vincular o mesmo [locatário do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) a vários serviços, as contas de usuário sincronizadas anteriormente estarão disponíveis para todos os serviços baseados em nuvem.
@@ -93,7 +98,7 @@ Como administrador de serviços, use este portal para gerenciar as tarefas do di
 
 ### <a name="device-enrollment-managers"></a>Gerenciadores de registro de dispositivos
 
-Os gerenciadores de registro de dispositivos são contas de usuário padrão que têm permissão adicional para registrar mais dispositivos sem usuário. Por padrão, cada usuário do Intune pode registrar até 15 dispositivos. Como administrador, é possível conceder a uma conta de usuário uma permissão de gerenciador de registro do dispositivo. Essa conta pode registrar um grande número de dispositivos corporativos. Isso é útil quando os dispositivos podem ser atribuídos aos usuários em caráter temporário ou podem trabalhar em um modo de quiosque em que não é necessária associação entre usuário e dispositivo. Para obter mais informações, consulte [Gerenciador de registro de dispositivo](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+Os gerenciadores de registro de dispositivos são contas de usuário padrão que têm permissão adicional para registrar mais dispositivos sem usuário. Por padrão, cada usuário do Intune pode registrar até&15; dispositivos. Como administrador, é possível conceder a uma conta de usuário uma permissão de gerenciador de registro do dispositivo. Essa conta pode registrar um grande número de dispositivos corporativos. Isso é útil quando os dispositivos podem ser atribuídos aos usuários em caráter temporário ou podem trabalhar em um modo de quiosque em que não é necessária associação entre usuário e dispositivo. Para obter mais informações, consulte [Gerenciador de registro de dispositivo](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 >[!div class="step-by-step"]
 
@@ -101,6 +106,6 @@ Os gerenciadores de registro de dispositivos são contas de usuário padrão que
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

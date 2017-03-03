@@ -1,11 +1,11 @@
 ---
-title: Criptografar seu dispositivo Windows | Microsoft Docs
+title: Como proteger o seu dispositivo Windows com criptografia | Microsoft Docs
 description: Descreve como criptografar um dispositivo Windows
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
-ms.openlocfilehash: ce4e912259321d72e6bb4278e5b3e8da5cf39332
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: c6414623087ed1a61ca26ca83d6ddccb2b1c1f70
 
 
 ---
 
 
-# <a name="encrypt-your-windows-device"></a>Criptografar seu dispositivo Windows
+# <a name="how-to-protect-your-windows-device-using-encryption"></a>Como proteger o seu dispositivo Windows usando criptografia
 
-O administrador de TI pode exigir que você criptografe o dispositivo Windows para proteger seus dados corporativos ou de estudante. Se você tiver um Windows Phone registrado, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
+Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que suas informações estejam protegidas, sua organização está exigindo que você criptografe seu dispositivo Windows para proteger dados da empresa ou de estudante.
+
+> [!Note]
+> Se você tiver um Windows Phone registrado, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
 
 Se você tiver um dispositivo de área de trabalho, as instruções abaixo descrevem como criptografá-lo.
 
@@ -37,6 +42,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter i
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

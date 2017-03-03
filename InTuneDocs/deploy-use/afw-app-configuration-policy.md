@@ -1,11 +1,11 @@
 ---
-title: "Usar políticas de configuração de aplicativo móvel do Android para Trabalho | Microsoft Docs"
+title: "Política de configuração de aplicativo do Android para Trabalho | Microsoft Docs"
 description: "Use políticas de configuração de aplicativo móvel no Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo Android for Work."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
 
 Use políticas de configuração de aplicativo móvel no Microsoft Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo. Por exemplo, um aplicativo pode exigir que os usuários especifiquem:
 
--   Um número da porta personalizado.
+-   Um número de porta personalizado
+-   Configurações de idioma
+-   Configurações de identidade visual, como um logotipo da empresa
 
--   Configurações de idioma.
+Se os usuários inserirem as configurações incorretamente, a carga do suporte técnico poderá aumentar e a adoção de novos aplicativos poderá ser mais lenta.
 
--   Configurações de identidade visual, como um logotipo da empresa.
+As políticas de configuração de aplicativo móvel permitem implantar essas configurações nos dispositivos antes de os usuários executarem o aplicativo. As configurações são fornecidas automaticamente e os usuários não precisam executar nenhuma ação.
 
-Se os usuários inserirem essas configurações incorretamente, isso poderá aumentar a carga do suporte técnico e reduzir a adoção de novos aplicativos.
+Para usar as políticas de configuração do aplicativo, as configurações do aplicativo corporativo devem ter sido expostas pelo desenvolvedor ao criá-lo. Por exemplo, o Google Chrome expõe as configurações que permitem que você defina indicadores padrão, sites autorizados e negados e muito mais. Entre em contato com o desenvolvedor do aplicativo para saber se há suporte para essas configurações e como especificá-las na política.
 
-Políticas de configuração de aplicativo móvel podem ajudar a eliminar esses problemas, permitindo que você implante essas configurações para os usuários antes que eles executem o aplicativo. As configurações então são fornecidas automaticamente e os usuários não precisam executar nenhuma ação.
-
-Para utilizar as políticas de configuração do aplicativo, as configurações de aplicativo corporativo devem ter sido expostas pelo desenvolvedor quando foram criadas. Por exemplo, o Google Chrome expõe as configurações que permitem que você defina indicadores padrão, sites autorizados e negados e muito mais. Entre em contato com o desenvolvedor do aplicativo para saber se há suporte para essas configurações e como especificá-las na política.
-
-A política de configuração do aplicativo é implantada para os mesmos usuários para os quais você implantou o aplicativo que deseja configurar. As configurações de política serão usadas sempre que o aplicativo for executado.
+A política de configuração do aplicativo é implantada para os mesmos usuários para os quais você implantou o aplicativo que deseja configurar. As configurações do aplicativo são aplicadas quando o aplicativo é executado.
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>Configurar uma política de configuração do aplicativo móvel
 
@@ -80,6 +79,6 @@ Quando o aplicativo implantado é executado em um dispositivo, ele é executado 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
+ms.sourcegitcommit: b7a066c1387a97d6100be0e6ab22d78222bf2a30
+ms.openlocfilehash: 3311ba5081c4b04d72fdeb1f9a558ffc2e1b02fc
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -40,15 +42,10 @@ Registrar seus dispositivos é apenas a primeira etapa. Para tirar proveito de t
 
 ## <a name="protect"></a>Proteger
 No moderno mundo de TI, proteger dispositivos contra o acesso não autorizado é uma das tarefas mais importantes que você realizará. Além dos itens descritos na etapa **Configurar** do ciclo de vida do dispositivo, o Intune fornece essas funcionalidades que ajudam a proteger dispositivos gerenciados contra o acesso não autorizado ou contra ataques mal-intencionados:
-- [**Autenticação multifator**](protect-windows-devices-with-multi-factor-authentication.md). Adicionar uma camada extra de autenticação aos logons de usuário pode ajudar a tornar os dispositivos ainda mais seguros. Dispositivos Windows, Windows Phone e Windows Mobile oferecem autenticação multifator que exige um segundo nível de autenticação, como uma chamada telefônica ou mensagem de texto, antes que os usuários possam obter acesso.
+- [**Autenticação multifator**](protect-your-devices-with-microsoft-intune.md). Adicionar uma camada extra de autenticação aos logons de usuário pode ajudar a tornar os dispositivos ainda mais seguros. Vários dispositivos dão suporte à autenticação multifator que exige um segundo nível de autenticação, como uma chamada telefônica ou mensagem de texto, antes que os usuários possam obter acesso.
 - [**Configurações do Microsoft Passport**](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). O Microsoft Passport é um método de entrada alternativo que permite aos usuários usar um *gesto* – como uma impressão digital ou o Windows Hello – para fazer logon sem a necessidade de uma senha.
 - [**Políticas para proteger computadores Windows (com o software cliente do Intune)**](policies-to-protect-windows-pcs-in-microsoft-intune.md). Quando você gerencia computadores Windows usando o software cliente do Intune, há políticas disponíveis que permitem controlar as configurações do Endpoint Protection, atualizações de software e Firewall do Windows em computadores gerenciados.
 
 ## <a name="retire"></a>Desativar
 Quando um dispositivo é perdido ou roubado, quando ele precisa ser substituído ou quando os usuários mudam de cargo, geralmente, esse é o momento de [desativar ou apagar](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) o dispositivo. Há várias maneiras de fazer isso – incluindo a redefinição do dispositivo, sua remoção do gerenciamento ou apagamento dos dados corporativos do dispositivo.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

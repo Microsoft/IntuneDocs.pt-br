@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Se sim, o Microsoft Intune poderá configurar automaticamente o email para os di
 Depois que o perfil de email é configurado, você pode restringir facilmente o acesso ao email da empresa e a serviços do Office 365 com as políticas de acesso condicional do Intune. Essas políticas permitem que você certifique-se de que o acesso ao seu email da empresa e serviços Office 365 seja restrito aos dispositivos que são compatíveis com as regras que você definir no Intune.
 
 ## <a name="how-do-i-do-it"></a>Como fazer isso?
-1.  [Configure perfis de email do usuário final](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) automaticamente em dispositivos Windows, iOS e Android.
-2.  [Controle o acesso ao email da empresa](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando políticas de acesso condicional.
+1.    [Configure perfis de email do usuário final](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) automaticamente em dispositivos Windows, iOS e Android.
+2.    [Controle o acesso ao email da empresa](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando políticas de acesso condicional.
 
 
 ### <a name="additional-information"></a>Informação adicional:

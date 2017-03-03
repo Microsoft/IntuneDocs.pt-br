@@ -13,8 +13,10 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
 ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
@@ -37,7 +39,7 @@ Os usuários podem realizar as seguintes tarefas no site do Portal da Empresa:
 
 -   [Bloquear um dispositivo remotamente](remote-lock-your-device-cpwebsite.md)
 
--   [Sincronizar o dispositivo manualmente para acelerar instalações de aplicativos lentas](sync-your-device-manually-cpwebsite.md)
+-    [Sincronizar o dispositivo manualmente para acelerar instalações de aplicativos lentas](sync-your-device-manually-cpwebsite.md)
 
 -   Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas
 

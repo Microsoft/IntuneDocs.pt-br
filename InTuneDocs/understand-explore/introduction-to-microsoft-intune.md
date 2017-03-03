@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.lasthandoff: 01/11/2017
 
 
 ---
@@ -71,7 +73,7 @@ Isso, em conjunto com recursos do sistema operacional para proteger dados (por e
 Quando usa o Intune com outros serviços no EMS, você pode fornecer à sua organização segurança de aplicativo móvel muito além da que é fornecida pelo sistema operacional móvel e pelo próprio aplicativo por meio da configuração do aplicativo. Um aplicativo gerenciado com o EMS tem acesso a um conjunto mais amplo de proteções de dados e aplicativos móveis que inclui:
 
 * [Logon único](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Autenticação multifator](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [Autenticação multifator](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [Acesso condicional do aplicativo (permitir acesso se o aplicativo móvel contiver dados corporativos)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [Isolar dados corporativos de dados pessoais dentro do mesmo aplicativo](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Política de proteção de aplicativo (PIN, criptografia, salvar como, área de transferência etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -95,7 +97,7 @@ A maioria das soluções de gerenciamento de mobilidade empresarial dá suporte 
 
 As organizações variam em termos do quanto adotam cenários "sem registro". Algumas organizações os padronizam. Alguns os permitem para dispositivos complementares, como um tablet particular. Outras não dão suporte algum. Mesmo nesse último caso, em que a organização exige que todos os dispositivos de funcionários estejam registrados no MDM, essas organizações normalmente dão suporte a cenários "sem registro" para prestadores de serviços, fornecedores e outros dispositivos que têm uma isenção específica.
 
-Você pode até mesmo usar a tecnologia "sem registro" do Intune em dispositivos registrados. Por exemplo, um dispositivo registrado no MDM pode ter proteções do tipo "abrir em" fornecidas pelo sistema operacional móvel. Além disso, o setor de TI pode aplicar a política de proteção de aplicativo a aplicativos móveis gerenciados pelo EMS para controlar as opções de "salvar como" ou fornecer autenticação multifator.
+Você pode até mesmo usar a tecnologia "sem registro" do Intune em dispositivos registrados. Por exemplo, um dispositivo registrado no MDM pode ter proteções do tipo "abrir em" fornecidas pelo sistema operacional móvel. (A proteção aberta é um recurso do iOS que o impede de abrir um documento de um aplicativo, como o Outlook, em outro aplicativo, como o Word, a menos que ambos os aplicativos sejam gerenciados pelo provedor do MDM). Além disso, o setor de TI pode aplicar a política de proteção de aplicativo a aplicativos móveis gerenciados pelo EMS para controlar as opções de "salvar como" ou fornecer autenticação multifator.
 
 Qualquer que seja o posicionamento da sua organização com relação a aplicativos e dispositivos móveis não registrados, o Intune, como parte do EMS, tem ferramentas que ajudarão a aumentar a produtividade da sua força de trabalho enquanto protege os dados corporativos.
 
@@ -113,9 +115,4 @@ A lista a seguir de problemas de negócios leva a informações mais detalhadas 
 * Leia sobre algumas das [formas comuns para usar o Intune](common-ways-to-use-intune.md).
 * Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Aprofunde-se nas [funcionalidades e requisitos técnicos](/intune/get-started/what-to-know-before-you-start-microsoft-intune) do Intune.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

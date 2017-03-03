@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
@@ -24,16 +25,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune. 
+Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune.
 
-Os dispositivos nunca serão removidos do Intune sem a intervenção do usuário, mesmo se eles não tiverem sido conectados ao serviço Intune por um período. 
+Os dispositivos nunca serão removidos do Intune sem a intervenção do usuário, mesmo se eles não tiverem sido conectados ao serviço Intune por um período.
 
 Você pode ter que desativar um dispositivo por diversos motivos:
 
--   O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
--   O usuário parte abruptamente (é demitido, pede demissão etc.).
--   Perda de dispositivo
--   Realocação de um dispositivo (mudança para outro usuário, reutilização para uma finalidade diferente etc.)
+-    O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
+-    O usuário parte abruptamente (é demitido, pede demissão etc.).
+-    Perda de dispositivo
+-    Realocação de um dispositivo (mudança para outro usuário, reutilização para uma finalidade diferente etc.)
 
 Você pode executar um apagamento seletivo ou completo em um dispositivo gerenciado como um dispositivo móvel ou bloquear um dispositivo e redefinir a senha. Apagando o dispositivo, você libera a assinatura do usuário para adicionar um dispositivo diferente. Você também pode desativar computadores gerenciados com o software cliente do Intune.
 
@@ -43,6 +44,9 @@ O apagamento seletivo e o apagamento completo removem o dispositivo do gerenciam
 O [apagamento seletivo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) é a ação preferencial para funcionários que tiverem registrado seus próprios dispositivos no Intune, porque ela não afeta as informações pessoais no dispositivo. Somente dados corporativos são removidos.
 
 Para dispositivos que precisam ser realocados, também é possível usar um [apagamento completo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), que redefine o dispositivo para as configurações padrão de fábrica.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Removendo licenças de usuário e dispositivos gerenciados
+Quando você remover uma licença de usuário, os dispositivos registrados do usuário não serão mais registrados. Como prática recomendada, você deve usar o apagamento seletivo para remover os dados da empresa de dispositivos gerenciados antes de remover a licença do Intune para um usuário. Quando você remover a licença de usuário, o dispositivo não pode ser alvo de ações remotas.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para excluir dispositivos no portal do Active Directory do Azure
 
@@ -76,6 +80,6 @@ Você também deseja revogar a licença da conta de usuário Intune do funcioná
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

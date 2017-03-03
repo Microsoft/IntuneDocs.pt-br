@@ -1,11 +1,11 @@
 ---
-title: Instalar e conectar-se ao aplicativo Portal da Empresa do Intune | Microsoft Docs
+title: Instalar e conectar-se ao aplicativo Portal da Empresa | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: fa7527d3dad71fada2abd0aeb8e2dd0f76b983b3
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
 
 
 ---
 
 
-# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Instalar e entrar no aplicativo de Portal da Empresa no Intune
+# <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e entrar no aplicativo Portal da Empresa
 
 O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS para ter acesso a aplicativos, email e rede da empresa ou escola.  Antes de poder obter acesso, você deve instalar o aplicativo de Portal da Empresa e, em seguida, usar o aplicativo para registrar seu dispositivo no Microsoft Intune. Para obter mais informações, consulte [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando você instala o aplicativo de Portal da empresa e registra seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -42,6 +43,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

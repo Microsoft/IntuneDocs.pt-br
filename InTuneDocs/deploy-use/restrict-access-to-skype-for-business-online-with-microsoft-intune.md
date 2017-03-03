@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso ao Skype for Business Online | Microsoft Docs
+title: Proteger o Skype for Business Online | Microsoft Docs
 description: Proteja e controle o acesso ao Skype for Business Online usando o acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 23199b84ca1acf202442e096c637f0dbad53f3e0
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Restringir o acesso ao Skype for Business Online com o Microsoft Intune
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteger o acesso ao Skype for Business Online com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use a política de acesso condicional para controlar o acesso ao **Skype for Business Online**.
 O acesso condicional tem dois componentes:
 - Uma política de conformidade do dispositivo, com a qual o dispositivo deve estar em conformidade para ser considerado compatível.
 - Uma política de acesso condicional, na qual você especifica as condições que o dispositivo deve atender para acessar o serviço.
-Para saber mais sobre como o acesso condicional funciona, leia o artigo [Restringir acesso a email e a serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como o acesso condicional funciona, leia o artigo [Proteger acesso a email e a serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Quando um determinado usuário tenta usar o Skype for Business Online em seu dispositivo, ocorre a seguinte avaliação:
 
@@ -117,6 +121,6 @@ Selecione qualquer grupo de dispositivos móveis. Em seguida, na guia **Disposit
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ Para associar seu aplicativo de linha de negócios com as políticas de MAM, é 
 2. Na folha **Aplicativos da linha de negócios**, escolha **Adicionar um aplicativo personalizado**.
 
   ![Captura de tela da folha de aplicativos da linha de negócios com o botão Adicionar aplicativo personalizado na parte superior](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Nomeie o aplicativo, o identificador de pacote em um campo Identificador de aplicativo e a plataforma (iOS ou Android).
+3.    Nomeie o aplicativo, o identificador de pacote em um campo Identificador de aplicativo e a plataforma (iOS ou Android).
 
   ![Captura de tela da folha Adicionar um aplicativo personalizado](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ Se você precisar alterar os detalhes do aplicativo, como o nome do aplicativo o
 ##  <a name="remove-apps"></a>Remover aplicativos
 É possível remover um aplicativo de linha de negócios da lista de aplicativos. Isso removerá o aplicativo da lista e removerá a associação com políticas de MAM, mas não removerá ou desinstalará o aplicativo do dispositivo do usuário.  
 
-1.  No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações**. Na folha **Configurações**, escolha **Linha de negócios** para abrir a lista de aplicativos existentes.  
-2.  Escolha o aplicativo que você deseja remover e escolha o menu **(…) contexto**.
+1.    No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações**. Na folha **Configurações**, escolha **Linha de negócios** para abrir a lista de aplicativos existentes.  
+2.    Escolha o aplicativo que você deseja remover e escolha o menu **(…) contexto**.
 
   ![Captura de tela da folha de aplicativos da linha de negócios com reticências](../media/mam-azure-portal-lob-context-menu.png)
-3.  Escolha **Excluir Aplicativo** para excluir o aplicativo.
+3.    Escolha **Excluir Aplicativo** para excluir o aplicativo.
 
   ![Captura de tela da folha linha de negócios com a opção de exclusão do aplicativo](../media/mam-azure-portal-delete-app.png)
 

@@ -2,10 +2,10 @@
 title: Registrar dispositivos iOS de propriedade corporativa | Microsoft Docs
 description: Registro de dispositivos iOS corporativos usando o DEP (Programa de Registro de Dispositivo) da Apple ou o Apple Configurator
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -26,9 +28,18 @@ ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 O Microsoft Intune dá suporte ao registro de dispositivos iOS corporativos usando o DEP (Programa de Registro do Dispositivo) da Apple ou a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) executada em um computador Mac.
 
-**Pré-requisito:** um[certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md) é obrigatório.
+**Pré-requisito:** um [certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-Você pode registrar dispositivos iOS inscritos na empresa de três maneiras: usando o Apple Configurator, o DEP ou o Portal da Empresa.
+Você pode registrar dispositivos iOS com registro corporativo usando um de três métodos:
+
+- Apple Configurator, usando o Assistente de Configuração ou o registro direto
+- Programa de registro de dispositivo
+- Aplicativo do Portal da Empresa
+
+>[!NOTE]
+>Os métodos de registro Apple Configurator e Programa de registro de dispositivos não podem ser usados com o método [gerenciador de registro de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+
+Por padrão, todos os dispositivos iOS têm permissão para se registrarem no Intune. Para bloquear o registro de dispositivos pessoais ou de propriedade corporativa, entre no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com suas credenciais de administrador. Escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** e desmarque as opções aplicáveis.
 
 ## <a name="use-apple-configurator"></a>Usar o Apple Configurator
 
@@ -39,7 +50,7 @@ Você pode registrar dispositivos iOS exportando um perfil de Registro Corporati
 - **Registro direto**: cria um arquivo compatível com Apple Configurator para uso durante a preparação do dispositivo. O dispositivo registrado não é redefinido para os padrões de fábrica, mas não fica associado a qualquer usuário. Esse método requer que o administrador de USB conecte via USB o dispositivo iOS a um computador Mac que esteja executando o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para registrar o dispositivo. Para saber mais, confira [Registrar dispositivos iOS usando o Apple Configurator Device Enrollment](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Usar o DEP (Device Enrollment Program)
-O DEP implanta um perfil de registro "over the air" em dispositivos que são adquiridos por meio do DEP. Quando o usuário executa o Assistente de Configuração no dispositivo, o dispositivo é registrado no Intune.  O registro dos dispositivos feito pelo DEP não pode ser desfeito pelos usuários. Para saber mais, confira [Registrar dispositivos iOS no Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md).
+O DEP implanta um perfil de registro "over the air" em dispositivos que são adquiridos por meio do DEP. Quando o usuário executa o Assistente de Configuração no dispositivo, o dispositivo é registrado no Intune. Para saber mais, confira [Registrar dispositivos iOS no Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Usar o Portal da Empresa em dispositivos registrados por DEP ou no Apple Configurator
 
@@ -47,8 +58,8 @@ Os dispositivos configurados com a afinidade de usuário podem instalar e execut
 
 Afinidade de usuário é necessária para dar suporte ao seguinte:
   - Aplicativos MAM (Gerenciamento de aplicativos móveis)
-  - Acesso condicional para dados de email e da empresa
-  - Aplicativo do Portal da Empresa
+  -    Acesso condicional para dados de email e da empresa
+  -    Aplicativo do Portal da Empresa
 
 **Como os usuários registram dispositivos iOS corporativos com afinidade do usuário**
 1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.
@@ -81,9 +92,4 @@ Se a afinidade de usuário for necessária, certifique-se de que o perfil de reg
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

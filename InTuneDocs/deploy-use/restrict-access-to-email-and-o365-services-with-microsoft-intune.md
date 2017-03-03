@@ -1,11 +1,11 @@
 ---
-title: "Restringir o acesso a email e serviços do Office 365 | Microsoft Docs"
+title: Proteger o email e o Office 365 | Microsoft Docs
 description: "Este tópico descreve como usar o acesso condicional para permitir que apenas dispositivos compatíveis acessem dados e o email da empresa no SharePoint Online e outros serviços."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e342bef07ff28bf2df027240471f74dfe373f83
-ms.openlocfilehash: a55087b96855645ef3f6e161fe85f6244c30120d
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
 
 
 ---
 
-# <a name="restrict-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Restringir o acesso a email, Office 365 e outros serviços com o Microsoft Intune
-É possível restringir o acesso ao email de sua empresa, a serviços do Office 365 como **Exchange no Local**, **Exchange Online**, **Exchange Online Dedicado**, **SharePoint Online**, **Skype for Business Online** e a outros serviços usando o Acesso Condicional do EMS (Enterprise Mobility + Security). Essa funcionalidade permite que você garanta que o acesso ao email de sua empresa e a serviços do Office 365 é restrito aos dispositivos que estão em conformidade com as regras de acesso condicional definidas no console de administração do Intune ou no Portal Clássico do Azure.
+# <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Proteger o acesso a email, Office 365 e outros serviços com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+É possível proteger o acesso ao email de sua empresa, a serviços do Office 365 como **Exchange no Local**, **Exchange Online**, **Exchange Online Dedicado**, **SharePoint Online**, **Skype for Business Online** e a outros serviços usando o Acesso Condicional do EMS (Enterprise Mobility + Security). Essa funcionalidade permite que você garanta que o acesso ao email de sua empresa e a serviços do Office 365 é restrito aos dispositivos que estão em conformidade com as regras de acesso condicional definidas no console de administração do Intune ou no Portal Clássico do Azure.
 ## <a name="how-does-conditional-access-work"></a>Como funciona o acesso condicional?
 É possível usar as configurações de política de conformidade para avaliar a conformidade de um dispositivo. Uma política de acesso condicional usa a avaliação para restringir ou permitir o acesso a um serviço específico. Quando você usa uma política de acesso condicional em combinação com uma política de conformidade do dispositivo, apenas os dispositivos que estão em conformidade poderão acessar o serviço. A política de conformidade e a política de acesso condicional são implantadas para o usuário. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
 
@@ -40,7 +44,7 @@ Um fluxo típico do acesso condicional:
 
 O Microsoft Intune e o Azure AD (Azure Active Directory) Premium trabalham diretamente juntos para fornecer várias camadas de controle por meio do acesso condicional do EMS. Se você desejar implantar políticas de acesso condicional usando o Intune, será necessário ter a licença dos dois produtos.
 
-**Licenças do Azure AD Premium** podem ser adquiridas como um serviço independente ou ser adquiridas (juntamente com o Intune) como parte do Enterprise. Se você tiver implantado políticas de acesso condicional com o Intune, garanta que você obteve as **licenças adequadas do EMS** ou do Azure AD Premium.
+**Licenças do Azure AD Premium** podem ser adquiridas como um serviço independente ou ser adquiridas (juntamente com o Intune) como parte do Enterprise Agreement. Se você tiver implantado políticas de acesso condicional com o Intune, garanta que você obteve as **licenças adequadas do EMS** ou do Azure AD Premium.
 
 - Saiba mais sobre a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
@@ -54,7 +58,7 @@ Para configurar o acesso condicional, configure uma política de conformidade do
 
 ### <a name="conditional-access-policy"></a>Política de acesso condicional
 
-Você pode definir uma política de acesso condicional para restringir o acesso com base em:
+Você pode definir uma política de acesso condicional para proteger o acesso com base em:
 - Status de conformidade do dispositivo.
 - Plataforma em execução no dispositivo.
 - Tipos de aplicativos usados para acessar os serviços.
@@ -79,6 +83,6 @@ Ao contrário de outras políticas do Intune, você não implanta políticas de 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

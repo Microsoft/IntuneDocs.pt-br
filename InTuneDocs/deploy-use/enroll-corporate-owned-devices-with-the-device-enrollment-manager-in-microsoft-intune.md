@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 01/29/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,64 +13,77 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 751c6bee73175b8e6ac5ad192f12540520c676c0
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
 
 
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrar dispositivos corporativos com o Gerenciador de registro de dispositivo no Microsoft Intune
-As organizações podem usar o Intune para gerenciar um grande número de dispositivos móveis com uma única conta de usuário. A conta do *gerenciador de registro de dispositivos* (DEM) é uma conta especial do Intune que pode registrar até 1.000 dispositivos. Cada dispositivo registrado usa uma única licença. Recomendamos o uso de dispositivos registrados com essa conta como dispositivos compartilhados em vez de dispositivos pessoais ("BYOD"). Os usuários não poderão usar aplicativos de email "nativo", por exemplo. O licenciamento do DEM é por dispositivo, não por usuário.
 
-Por exemplo, você pode atribuir uma conta de usuário do gerenciador de registro de dispositivos a um gerente ou supervisor de loja para permitir que ela faça o seguinte:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   Registre dispositivos no Intune.
+As organizações podem usar o Intune para gerenciar um grande número de dispositivos móveis com uma única conta de usuário. A conta do *DEM* (gerenciador de registro de dispositivos) é uma conta especial do usuário que pode registrar até 1.000 dispositivos. Adicionar usuários existentes à conta do DEM para fornecer recursos de DEM especiais. Cada dispositivo registrado usa uma única licença. Recomendamos o uso de dispositivos registrados com essa conta como dispositivos compartilhados (ou seja, sem afinidade do usuário) em vez de dispositivos pessoais ("BYOD").  
 
+Os usuários devem existir no Portal do Azure para serem adicionados como gerenciadores de registro do dispositivo. Para uma melhor segurança, o usuário do DEM não deve ser um administrador do Intune também.
+
+>[!NOTE]
+>O método de registro DEM não pode ser usado com o [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou [registro direto](ios-direct-enrollment-in-microsoft-intune.md) ou com o [método de registro de DEP](ios-device-enrollment-program-in-microsoft-intune.md). 
+
+## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gerenciador de registro de dispositivos
+
+Um restaurante quer fornecer 50 tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma conta de gerenciador de registro de dispositivos e adiciona um supervisor do restaurante à conta DEM, na verdade concedendo recursos de DEM a esse supervisor. O supervisor agora pode registrar os 50 dispositivos de tablets usando as credenciais do DEM.
+
+Somente os usuários no console do Intune podem gerenciadores de registro de dispositivos. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
+
+O usuário do DEM pode:
+
+-   Registrar até 1000 dispositivos no Intune.
 -   Entre no Portal de Empresa para obter aplicativos corporativos.
+-   Configurar o acesso aos dados da empresa implantando aplicativos específicos da função nos tablets.
 
--   Instale e desinstale software.
-
--   Configure o acesso aos dados da empresa.
-
-
-**Cenário de um gerenciador de registro do dispositivo:** um restaurante quer oferecer tablets de ponto de venda para sua equipe de garçons e monitores de pedidos para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma conta de gerenciador de registro de dispositivos e registra os dispositivos da empresa usando essa conta. Como alternativa, o administrador pode conceder credenciais do gerenciador de registro de dispositivos a um gerente do restaurante, permitindo que ele registre e gerencie os dispositivos.
-
-O administrador ou o gerente podem implantar aplicativos específicos da função para os dispositivos do restaurante. Um administrador também pode selecionar o dispositivo no console do Intune e retirá-lo de gerenciamento de dispositivos móveis com o console de administração.
+## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitações de dispositivos registrados com uma conta do DEM
 
 Dispositivos registrados com uma conta de gerenciador de registro de dispositivos têm as seguintes limitações:
-  - Não há qualquer "usuário" de dispositivo específico, portanto, não há nenhum acesso a dados da empresa ou email. No entanto, a VPN, por exemplo, ainda pode fornecer ao dispositivo aplicativos com acesso aos dados.
+
+  - Não há nenhum "usuário" de dispositivo específico. Portanto, não há nenhum acesso a dados da empresa ou email. No entanto, a VPN, por exemplo, ainda pode ser usada para fornecer aplicativos de dispositivo com acesso a dados.
+
   - Não há acesso condicional, pois esses são cenários por usuário.
-  - Não é possível redefinir esses dispositivos no Portal da Empresa.
+
+  - O usuário do DEM não pode cancelar o registro de dispositivos registrados pelo DEM no próprio dispositivo usando o Portal da Empresa. O administrador do Intune tem essa funcionalidade, mas o usuário do DEM não.
+
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
-  - Não é possível usar aplicativos VPP (Programa de compra por volume da Apple) devido a requisitos de ID da Apple por usuário para o gerenciamento de aplicativo.
-  - (iOS) Também não podem ser registrados com o Apple Configurator ou o DEO (programa de registro de dispositivos) da Apple, mas o DEP ou dispositivos gerenciados pelo Apple Configurator podem ser registrados sem afinidade de usuário.
+ 
+  - Os usuários não podem usar aplicativos VPP (Apple Volume Purchase Program) devido aos requisitos de ID da Apple por usuário para o gerenciamento de aplicativo.
+ 
+  - (somente iOS) Se você usar o DEM para registrar dispositivos iOS, não poderá usar o Apple Configurator ou o DEP(Programa de registro de dispositivo) da Apple para registrar dispositivos.
 
 > [!NOTE]
 > Para implantar aplicativos da empresa em dispositivos gerenciados pelo gerenciador de registro do dispositivo, implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** para a conta de usuário do gerenciador de registro do dispositivo.
 > Para melhorar o desempenho, exibir o aplicativo de Portal da Empresa em um dispositivo DEM mostra somente os dispositivos locais. Gerenciamento remoto de outros dispositivos DEM só pode ser feito no console do administrador do Intune.
 
-## <a name="create-device-enrollment-manager-accounts"></a>Criar contas de gerenciador de registro de dispositivo
-Contas de gerenciador de registro de dispositivos são contas de usuário com permissão para registrar um grande número de dispositivos corporativos. Somente os usuários no console do Intune podem gerenciadores de registro de dispositivos.
 
-#### <a name="add-a-device-enrollment-manager-to-intune"></a>Adicionar um gerenciador de registro de dispositivos ao Intune
+## <a name="add-a-device-enrollment-manager"></a>Adicionar um gerenciador de registro de dispositivo
 
-1.  Acesse o [portal de conta do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) e entre em sua conta de administrador.
+1.  Certifique-se de que o usuário que você deseja adicionar à conta DEM já exista. Se você precisar adicionar o usuário, entre no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e siga as etapas em [Adicionar usuários individualmente ou em lote ao portal do Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Escolha **Adicionar usuário**.
+2.  Entre no [Console de administração do Microsoft Intune](http://manage.microsoft.com) com suas credenciais de administrador.
 
-3.  Confirme se a conta de usuário que será o gerenciador de registro de dispositivos está listada. Se não estiver, adicione o usuário escolhendo **Novo** e concluindo o processo de **Adicionar usuário**. Uma licença de assinatura é necessária para cada usuário que acessa o serviço. O gerenciador de registro de dispositivos não pode ser um administrador do Intune. Verifique se você precisa adicionar mais licenças antes de usar esse recurso.
+3.  No painel de navegação, escolha **Administração**, vá para **Gerenciamento do Administrador** e selecione **Gerenciador de Registro de Dispositivos**. A página **Gerenciadores de Registro de Dispositivos** abre.
 
-4.  Entre no [Console de administração do Microsoft Intune](http://manage.microsoft.com) com suas credenciais de administrador.
+4.  Escolha **Adicionar...**. A caixa de diálogo **Adicionar Gerenciador de Registro de Dispositivos** é aberta.
 
-5.  No painel de navegação, escolha **Administração**, vá para **Gerenciamento do Administrador** e selecione **Gerenciador de Registro de Dispositivos**. A página **Gerenciadores de Registro de Dispositivos** abre.
+5.  Insira a **ID de usuário** da conta do Intune e escolha **OK**. 
 
-6.  Escolha **Adicionar...**. A caixa de diálogo **Adicionar Gerenciador de Registro de Dispositivos** é aberta.
+    O usuário do DEM pode registrar dispositivos móveis usando o mesmo procedimento que um usuário final utiliza para um cenário de BYOD no Portal da Empresa. O usuário final do gerenciador pode instalar o aplicativo do Portal da Empresa e registrar o dispositivo usando suas credenciais do DEM em até 1.000 dispositivos. Para as etapas de registro do usuário final para cada plataforma, consulte:
 
-7.  Insira a **ID de usuário** da conta do Intune e escolha **OK**. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
-
-8.  O gerenciador de registro de dispositivos pode registrar dispositivos móveis usando o mesmo procedimento que um usuário final utiliza para um cenário de BYOD no Portal da Empresa. O usuário final do gerenciador pode instalar o aplicativo do Portal da Empresa e registrar o dispositivo usando suas credenciais do DEM em até 1.000 dispositivos.
+  - [Registrar seu dispositivo iOS no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-ios)
+  - [Registrar seu dispositivo macOS no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)
+  - [Registrar seu dispositivo Android no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android)
+  - [Registrar seu dispositivo Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Excluir um gerenciador de registro de dispositivos do Intune
 
@@ -96,6 +109,6 @@ Excluir um gerenciador de registro de dispositivos não afeta os dispositivos re
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
