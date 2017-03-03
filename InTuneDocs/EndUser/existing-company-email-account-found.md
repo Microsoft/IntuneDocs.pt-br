@@ -1,42 +1,41 @@
 ---
-title: Conta de email da empresa existente encontrada | Microsoft Docs
+title: Uma conta de email da empresa existente foi encontrada | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: df92e0945c0ed9387eda14c145b28c604453cb86
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: 27bb2c0834d07225756ea9133e557a930290dcf5
+ms.lasthandoff: 01/05/2017
 
 
 ---
 
-# <a name="existing-company-email-account-found"></a>Conta de email da empresa existente encontrada
+# <a name="an-existing-company-email-account-was-found"></a>Uma conta de email da empresa existente foi encontrada
 
-Você já tem uma conta de email da empresa. Para continuar a se conectar à sua conta de email da empresa, execute as seguintes etapas para permitir que o administrador de TI a configure e gerencie corretamente:
+Você já tem uma conta de email com sua organização ou empresa e agora deseja acessá-la em seu dispositivo móvel. Seu administrador de TI precisa de sua ajuda a proteger o acesso ao email em seu trajeto da pessoa que o enviou para seu dispositivo. Seu email atual pode ter funcionado, mas executar essas etapas manterá as informações mais seguras.
 
-1.  Em **configurações** em seu dispositivo, remova a conexão é configurado anteriormente para emails da sua empresa.
+1.  Encontre as **Configurações** em seu dispositivo e remova a conexão configurada anteriormente para o email da empresa.
 
-    Por exemplo, em um dispositivo iOS, toque **Configurações** &gt; **Email, Contatos, Calendário**. Selecione sua conta de email de trabalho e, em seguida, clique em **Excluir**.
+    Por exemplo, em um dispositivo iOS, toque **Configurações** > **Email** > **Contas**. Selecione sua conta de email de trabalho e, em seguida, toque em **Excluir**.
 
-2.  Abra o aplicativo de Portal da Empresa no seu dispositivo e toque em **Verificar Conformidade**.
+2.  Saia de **Configurações** e abra o aplicativo de Portal da Empresa em seu dispositivo, em seguida, toque em **Verificar Conformidade**.
 
 3.  Aguarde alguns instantes para novas configurações de email a serem aplicadas automaticamente ao seu dispositivo.
 
-Se as novas configurações de email não aparecem após alguns instantes, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
