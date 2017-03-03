@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d335572ae2bc5ce74532de281658d06903f995ee
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
+ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -44,7 +44,7 @@ Preencha os seguintes pré-requisitos antes de configurar o registro do disposit
 - [Configurar domínios](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Definir a Autoridade MDM](set-mdm-authority.md)
 - [Criar grupos](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configurar o Portal da Empresa](/intune-azure/manage-apps/company-portal-app.md)
+- [Configurar o Portal da Empresa](/intune-azure/manage-apps/company-portal-app)
 - Atribuir licenças de usuário no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtenha um certificado push de MDM da Apple](get-an-apple-mdm-push-certificate.md)
 - Verifique se você tem acesso físico aos dispositivos iOS
