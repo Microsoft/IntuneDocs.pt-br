@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -23,8 +24,6 @@ ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar o acesso a email corporativo usando perfis de email com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Muitas plataformas móveis incluem um cliente de email nativo que é fornecido como parte do sistema operacional. Alguns desses clientes podem ser configurados usando perfis de email, conforme descrito neste tópico.
 
@@ -35,11 +34,11 @@ Se você precisar tomar medidas adicionais de prevenção de perda de dados, use
 Os administradores de TI ou usuários também podem optar por instalar clientes de email alternativos (por exemplo, Microsoft Outlook para Android ou iOS). Esses clientes de email podem não dar suporte a perfis de email e não podem ser configurados usando perfis de email do Intune.  
 
 Você pode usar perfis de email para configurar o cliente de email nativo nos seguintes tipos de dispositivo:
--   Windows Phone 8.1 e posterior
--   Windows 10 (para desktop), Windows 10 Mobile e posterior
--   iOS 8.0 e posterior
--   Samsung KNOX padrão (4.0 e posterior)
--   Android for Work
+-    Windows Phone 8.1 e posterior
+-    Windows 10 (para desktop), Windows 10 Mobile e posterior
+-    iOS 8.0 e posterior
+-    Samsung KNOX padrão (4.0 e posterior)
+-    Android for Work
 
 >[!NOTE]
 >O Intune fornece dois perfis de email do Android for Work, um para o aplicativo Gmail e outro para o Nine Work. Esses aplicativos estão disponíveis na loja do Google Play e dão suporte a conexões com o Exchange. Para habilitar a conectividade de email, implante um desses aplicativos de email nos dispositivos dos usuários e crie e implante o perfil apropriado.
@@ -90,7 +89,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
 
     -   **Perfil de email (Android for Work – Gmail)**
 
-    -   **Perfil de email (Android for Work – Nine Work)**
+    -    **Perfil de email (Android for Work – Nine Work)**
 
     Você só pode criar e implantar uma política de perfil de email personalizado. Configurações recomendadas não estão disponíveis.
 
@@ -136,10 +135,10 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 > [!NOTE]
 > - Para o Android for Work, implante também os aplicativos Gmail ou Nine Work além do perfil de email apropriado.
-> - Se você quiser remover um perfil de email de um dispositivo, edite a implantação e remova todos os grupos dos quais o dispositivo é membro.
+> - Se você quiser remover um perfil de email de um dispositivo, edite a implantação e remova todos os grupos dos quais o dispositivo é membro. Observe que você não poderá remover um perfil de email dessa forma se este for o único perfil de email em um dispositivo.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

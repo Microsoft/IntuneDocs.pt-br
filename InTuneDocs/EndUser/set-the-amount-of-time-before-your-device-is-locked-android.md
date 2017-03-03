@@ -1,11 +1,11 @@
 ---
-title: Definir a quantidade de tempo antes que o dispositivo seja bloqueado | Microsoft Docs
+title: Como definir a quantidade de tempo antes que o dispositivo seja bloqueado | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,18 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>Definir o período de tempo antes que seu dispositivo seja bloqueado
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Como definir a quantidade de tempo antes que seu dispositivo seja bloqueado
 
-Para manter os dados em seu dispositivo Android mais seguros, seu administrador de TI pode definir uma política que exige que você defina o período que dispositivo pode ficar ocioso antes que seja bloqueado automaticamente. Siga estas etapas para definir o período antes que o dispositivo seja bloqueado.
+Para manter os dados em seu dispositivo Android mais seguros, seu administrador de TI pode definir uma política que exige que você defina o período que o dispositivo pode ficar ocioso antes que seja bloqueado automaticamente. Siga estas etapas para definir o período antes que o dispositivo seja bloqueado.
 
 1.  Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Bloqueio Automático** (isso é exibido como **Bloquear telefone após** em alguns dispositivos).
 
@@ -36,8 +37,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

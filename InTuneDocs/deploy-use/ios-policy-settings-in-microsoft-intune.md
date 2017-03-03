@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
@@ -85,7 +86,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir que aplicativos gerenciados sincronizem dados no iCloud**|Permitir que os aplicativos que você gerencia com o Intune sincronizem dados com a conta do iCloud do usuário.|
 |**Permitir que a Entrega continue as atividades em outro dispositivo**|Permitir que o usuário continue, em outro dispositivo iOS ou Mac OS X, o trabalho iniciado em um dispositivo iOS.|
 |**Permitir compartilhamento de fotos do iCloud**|Defina como **Não** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo.|
-|**Permitir biblioteca de fotos do iCloud**|Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.   As fotos que não forem totalmente baixadas na biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção for definida como **Não**.|
+|**Permitir biblioteca de fotos do iCloud**|Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.    As fotos que não forem totalmente baixadas na biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção for definida como **Não**.|
 
 ### <a name="application-settings-for-the-browser"></a>Configurações de aplicativo do navegador
 Todas as configurações se aplicam ao iOS 8.0 e posterior.

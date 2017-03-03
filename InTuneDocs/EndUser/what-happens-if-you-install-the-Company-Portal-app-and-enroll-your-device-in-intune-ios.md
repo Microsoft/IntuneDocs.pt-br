@@ -1,11 +1,11 @@
 ---
-title: "O que acontece se você instalar o aplicativo do Portal da Empresa e registrar o dispositivo iOS ou macOS no Intune? | Microsoft Docs"
+title: Instalando o aplicativo Portal da Empresa para iOS e macOS | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -37,36 +38,6 @@ Quando você instala o aplicativo do Portal da Empresa e registra o dispositivo 
 -   configurar automaticamente sua conta de email da empresa.
 
 Quando registra seu dispositivo no Intune, você concede permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
-
-**O que a equipe de TI não pode ver**
-
--   Histórico de chamada e da Web
-
--   Local
-
--   Email e mensagens de texto
-
--   Contatos
-
--   Senhas
-
--   Calendário
-
--   Rolo da câmera
-
-**O que a equipe de TI pode ver**
-
--   Modelo
-
--   Número de série
-
--   Sistema operacional
-
--   Nomes de aplicativo
-
--   Proprietário
-
--   Nome do dispositivo
 
 Quando o dispositivo é registrado, o administrador de TI pode:
 
@@ -98,6 +69,6 @@ Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as inf
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

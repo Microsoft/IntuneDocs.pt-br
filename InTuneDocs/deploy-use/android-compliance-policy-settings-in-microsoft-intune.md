@@ -1,11 +1,11 @@
 ---
-title: "Configurações da política de conformidade para dispositivos Android | Microsoft Docs"
+title: "Configurações da política de conformidade para Android | Microsoft Docs"
 description: "Este tópico descreve as configurações de política de conformidade de dispositivo Android."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 4ddc0839f05b2dd7cb1faf0a3e0901df67010f71
 
 
 ---
@@ -31,6 +32,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 > [!div class="op_single_selector"]
 - [Configurações da política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Configurações de política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Configurações da política de conformidade para dispositivos Android para Trabalho](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Configurações de segurança do sistema
 ### <a name="password"></a>Senha
@@ -89,6 +91,6 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

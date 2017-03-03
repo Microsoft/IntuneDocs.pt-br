@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
 
 
 ---
@@ -30,7 +31,7 @@ Após você implantar a política nos grupos de usuários ou no dispositivo Andr
 
 > [!NOTE]
 >
-> Para este perfil, há suporte apenas para o tipo de conexão Pulse Secure.
+> Para este perfil, há suporte apenas para o tipo de conexão Pulse Secure e Citrix.
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>Etapa 1: Criar um perfil de VPN
@@ -52,7 +53,7 @@ Após você implantar a política nos grupos de usuários ou no dispositivo Andr
    4. Insira um nome para a configuração.
    5. Para **Tipo de dados**, especifique **Cadeia de caracteres**.
    6. Para **OMA-URI**, especifique esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/PackageList**, em que *Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Em nosso exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.   Em **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a serem associados ao perfil. Por exemplo, se desejar que o Excel e o navegador Google Chrome usem a conexão VPN, digite: **com.microsoft.office.excel;com.android.chrome**.
+   7.    Em **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a serem associados ao perfil. Por exemplo, se desejar que o Excel e o navegador Google Chrome usem a conexão VPN, digite: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicativo Android](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,6 +81,6 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

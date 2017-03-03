@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ccd9dacdb2c59febdd741b1a95617cadc1347639
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
 
 
 ---
@@ -60,6 +61,9 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 
         ![Intune Software Publisher](./media/publisher-for-mobile.png)
 
+> [!NOTE]
+> Quando você adiciona e implanta um aplicativo de uma loja, os usuários finais deve ter uma conta naquela loja para poderem instalar o aplicativo.
+
 3.  Na página **Descrição do Software**, defina as seguintes configurações:
 
     > [!TIP]
@@ -103,6 +107,6 @@ Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

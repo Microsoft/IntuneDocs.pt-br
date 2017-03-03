@@ -13,8 +13,10 @@ ms.technology:
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
@@ -29,9 +31,9 @@ Se você se registrou no Intune, mas não deseja mais usar seu dispositivo Windo
 
 Para cancelar o registro do seu dispositivo, use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que está usando:
 
--   [Cancelar o registro do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
--   [Cancelar o registro do seu computador Windows 8.1](#unenroll-your-windows-8-1-computer)
--   [Cancelar o registro do seu dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-8-1-device)
+-    [Cancelar o registro do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
+-    [Cancelar o registro do seu computador Windows 8.1](#unenroll-your-windows-8-1-computer)
+-    [Cancelar o registro do seu dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Cancelar o registro do seu dispositivo Windows 10
 

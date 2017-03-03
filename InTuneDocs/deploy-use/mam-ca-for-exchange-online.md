@@ -1,5 +1,5 @@
 ---
-title: Configurar o acesso do aplicativo ao Exchange Online | Microsoft Docs
+title: Acesso de aplicativo para o Exchange Online | Microsoft Docs
 description: "Este tópico descreve como você pode configurar uma política de acesso condicional para aplicativos MAM."
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
 
 
 ---
@@ -24,25 +25,32 @@ ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Este tópico fornece instruções passo a passo sobre como configurar o acesso condicional para o Exchange Online para permitir apenas aplicativos móveis com suporte para políticas de gerenciamento de aplicativos móveis (MAM) do Intune.
+Este tópico fornece instruções passo a passo sobre como configurar o acesso condicional para o Exchange Online para permitir apenas aplicativos móveis com suporte para políticas de proteção de aplicativo do Intune.
 
 
 ## <a name="create-an-exchange-online-policy"></a>Criar uma política do Exchange Online
-1.  Entre no [portal do Azure](https://portal.azure.com) que inclui o recurso de acesso do aplicativo. Caso você seja novo na experiência do portal do Azure, leia o tópico [Portal do Azure para políticas de MAM](azure-portal-for-microsoft-intune-mam-policies.md).
+1.  Entre no [portal do Azure](https://portal.azure.com) que inclui o recurso de acesso do aplicativo. Caso você seja novo na experiência do portal do Azure, leia o tópico [Portal do Azure para políticas de proteção de aplicativo](azure-portal-for-microsoft-intune-mam-policies.md).
 
-2.  Escolha **Procurar > Intune > Folha de gerenciamento de aplicativos móveis do Intune > Configurações** e na seção **acesso condicional**, escolha **Exchange Online**.
+2.  Escolha **Mais serviços** e digite "Intune".
 
-  ![Captura de tela da folha de configurações mostrando a seção acesso condicional com a opção Exchange Online em destaque](../media/mam-ca-settings-exo.png)
+3.  Escolha **Proteção de Aplicativo do Intune**.
 
-3.  Na folha **Aplicativos permitidos**, escolha a opção **Permitir aplicativos que dão suporte às políticas de aplicativo do Intune** para permitir que somente aplicativos com suporte para as políticas de MAM do Intune acessem o Exchange Online. Ao selecionar essa opção, a lista de aplicativos com suporte é exibida.
+4.  Na folha **Gerenciamento de aplicativo móvel do Intune**, escolha **Todas as Configurações**.
 
-  >[!NOTE]
-  >Todos os clientes de email do Exchange Active Sync, incluindo os de email interno no iOS e no Android que se conectam ao Exchange Online, serão impedidos de enviar ou receber emails. Em vez disso, os usuários receberão um único email informando que eles precisam usar o aplicativo de email do Outlook. 
-4.   Para aplicar essa política aos usuários, abra a folha **Grupos de usuários com restrições** e escolha **Adicionar grupo de usuário**. Selecione um ou mais grupos de usuários ao(s) qual(is) essa política deve ser aplicada.
+5.  Na seção **Acesso condicional**, escolha **Exchange Online**.
 
-  ![Captura de tela da folha grupos de usuários com restrições com a opção adicionar grupo de usuários em destaque](../media/mam-ca-add-user-group.png)
+    ![Captura de tela da folha de configurações mostrando a seção acesso condicional com a opção Exchange Online em destaque](../media/MAM-conditional-access-1.png)
 
-5.  Você pode desejar que alguns usuários no grupo de usuários que você selecionou na etapa anterior não sejam afetados por essa política. Nesses casos, adicione o grupo de usuários à lista de grupos de usuários isentos. Na folha **Exchange Online**, escolha **Grupos de usuários isentos**. Escolha **Adicionar grupo de usuário** para abrir a lista de grupos de usuários. Selecione os grupos que você deseja isentar dessa política.  
+6. Na folha **Aplicativos permitidos**, escolha a opção **Permitir aplicativos que dão suporte às políticas de aplicativo do Intune** para permitir que somente aplicativos com suporte para as políticas de proteção de aplicativo do Intune acessem o Exchange Online. Ao selecionar essa opção, a lista de aplicativos com suporte é exibida.
+
+    >[!NOTE]
+    >Todos os clientes de email do Exchange Active Sync, incluindo os de email interno no iOS e no Android que se conectam ao Exchange Online, serão impedidos de enviar ou receber emails. Em vez disso, os usuários receberão um único email informando que eles precisam usar o aplicativo de email do Outlook.
+
+7. Para aplicar essa política aos usuários, abra a folha **Grupos de usuários com restrições** e escolha **Adicionar grupo de usuário**. Selecione um ou mais grupos de usuários ao(s) qual(is) essa política deve ser aplicada.
+
+    ![Captura de tela da folha grupos de usuários com restrições com a opção adicionar grupo de usuários em destaque](../media/mam-ca-add-user-group.png)
+
+8. Você pode desejar que alguns usuários no grupo de usuários que você selecionou na etapa anterior não sejam afetados por essa política. Nesses casos, adicione o grupo de usuários à lista de grupos de usuários isentos. Na folha **Exchange Online**, escolha **Grupos de usuários isentos**. Escolha **Adicionar grupo de usuário** para abrir a lista de grupos de usuários. Selecione os grupos que você deseja isentar dessa política.  
 
 ## <a name="modify-an-existing-policy"></a>Modifique uma política existente
 ### <a name="add-or-delete-user-groups"></a>Adicione ou exclua grupos de usuários
@@ -53,10 +61,10 @@ Para **excluir um grupo de usuários** da lista de **grupos de usuários com res
 ## <a name="next-steps"></a>Próximas etapas
 [Bloquear aplicativos que não têm autenticação moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Consulte também
-[Proteger dados de aplicativos com políticas de MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Proteger dados de aplicativo com as políticas de proteção de aplicativo](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "A senha não atende aos requisitos de administrador de TI | Microsoft Docs"
+title: "Sua senha não atende aos requisitos do administrador de TI | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>Senha não atende aos requisitos de administrador de TI
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Sua senha não atende aos requisitos do administrador de TI
 
 A senha que você usa para acessar recursos corporativos ou de estudante não atende a um ou mais requisitos que o administrador de TI configurou. Para corrigir o problema, siga as instruções que são mostradas no seu dispositivo. Descrições dos problemas estão listadas abaixo.
 
@@ -45,12 +46,12 @@ Descrições de problemas com senha ou PIN:
 
 - **A senha foi usada muito recentemente**. Seu administrador de TI está impedindo o uso de senhas anteriores que você usou no passado. Escolha uma senha que você nunca usou antes.
 
-- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #.
+- **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #. Isso pode também ser verdadeiro para outras contas em seu dispositivo, portanto certifique-se de verificar outras contas de trabalho para garantir que sua senha atenda aos requisitos configurados pelo IT para seu dispositivo.
 
 Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

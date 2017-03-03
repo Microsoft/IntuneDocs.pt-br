@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |Perfil de email|Essa política pode ser usada para definir [configurações de acesso de email](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) para clientes de email específicos em dispositivos móveis, minimizando a quantidade de configuração que o usuário final precisa fazer.|
 |EMS|O Microsoft Enterprise Mobility + Security (anteriormente conhecido como Enterprise Mobility Suite) mantém os dados da empresa protegidos ao mesmo tempo em que permite que os usuários [acessem os aplicativos e o conteúdo que precisam](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|Usuário final|[Os usuários de dispositivos como telefones e PCs](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) que você gerencia usando o Intune.|
+|Usuário final|[Usuários de dispositivos como telefones e computadores](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) gerenciados com o Intune.|
 |Registrar|O Microsoft Intune usa o [registro](/intune/deploy-use/enroll-devices-in-microsoft-intune) para trazer dispositivos para o gerenciamento e permitir acesso aos recursos.|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Perfil de Wi-Fi|Uma política que implanta [configurações de rede sem fio](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) em dispositivos para permitir que os usuários se conectem à rede da empresa sem precisar saber ou definir as configurações.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -14,14 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7777b7fb4a0977ed663a3ef01547f22e9e61bb8a
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 804c62c3ee840a01ee7b3f7d96bf984bc9501ea0
 
 
 ---
 
 
 # <a name="intune-quick-start-guide"></a>Guia de início rápido do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este guia ajuda a começar a usar sua assinatura paga do Microsoft Intune. Siga estas etapas para gerenciar os dispositivos móveis e computadores Windows, além dos aplicativos em sua organização. Você poderá seguir cada etapa na ordem ou ignorar se uma etapa não for aplicável às suas necessidades de negócios ou seu ambiente. Se quiser experimentar o Intune, consulte o [guia de avaliação do Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
 
 Caso esteja usando o Microsoft System Center Configuration Manager para gerenciar computadores e servidores, é possível [estender o Configuration Manager para gerenciar dispositivos móveis](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
@@ -50,6 +53,6 @@ Caso esteja usando o Microsoft System Center Configuration Manager para gerencia
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

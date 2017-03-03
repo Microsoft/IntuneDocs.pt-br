@@ -1,11 +1,11 @@
 ---
-title: Como desligar a coleta de dados da Microsoft | Microsoft Docs
+title: Como desligar a coleta de dados da Microsoft para iOS | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,15 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: cea226a32c5c2c6d49f1444e55a986d0c68d5448
 
 
 ---
 
-# <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a coleta de dados de uso da Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Como desligar a coleta de dados da Microsoft
 
 A Microsoft coleta automaticamente determinados dados sobre nossos produtos e serviços. Fazemos isso para melhorar a confiabilidade e o desempenho de nossos produtos, incluindo o aplicativo Portal da Empresa. Embora esses dados sejam anônimos, alguns usuários talvez não se sintam à vontade com essa coleta. O administrador de TI não tem controle sobre a coleta desses dados e não pode alterar a seleção dessa configuração.
 
@@ -33,6 +34,6 @@ Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter a
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

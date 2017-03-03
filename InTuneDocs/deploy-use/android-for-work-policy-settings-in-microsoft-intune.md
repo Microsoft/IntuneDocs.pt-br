@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Android for Work.
+O Intune fornece uma variedade de configurações gerais internas que você pode definir em [dispositivos Android para Trabalho](android-for-work.md).
 
 ## <a name="general-configuration-policy"></a>Política de configuração geral
 
@@ -60,8 +59,6 @@ Se a configuração que está procurando não aparecer nesse tópico, você pode
 |**Permitir o compartilhamento de dados entre perfis pessoais e de trabalho**|Permite que os aplicativos do perfil de trabalho compartilhem dados com os aplicativos do perfil pessoal do usuário. Escolha:<br><br>- **Evitar qualquer compartilhamento em limites**<br>- **Os aplicativos no perfil de trabalho podem lidar com a solicitação de compartilhamento do perfil pessoal**<br>- **Nenhuma restrição sobre compartilhamento**|
 |**Ocultar notificações de perfil de trabalho quanto o dispositivo estiver bloqueado**<br>(Android 6 e versões posteriores)|Decidir se deseja mostrar notificações do perfil de trabalho quando o dispositivo estiver bloqueado.|
 |**Configurar política de permissão de aplicativo padrão**<br>(Android 6 e versões posteriores)|Define a política de permissão padrão para todos os aplicativos no perfil de trabalho.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Configurações de política personalizada
@@ -97,6 +94,6 @@ No momento, o Intune dá suporte a um número limitado de políticas personaliza
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

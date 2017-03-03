@@ -2,33 +2,40 @@
 title: "Bloqueio remoto e redefinição de senha | Microsoft Docs"
 description: "O Intune fornece funcionalidades de bloqueio remoto e redefinição de senha."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e redefinição de senha.
 
 ## <a name="lock-a-device-remotely"></a>Bloquear um dispositivo remotamente
-Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remotamente. A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas móveis.
+Se um usuário perder um dispositivo, você poderá bloquear o dispositivo remotamente. O dispositivo já deve ter um PIN ou senha configurada antes de usar o bloqueio remoto.
+
+A tabela abaixo lista como o bloqueio remoto funciona em diferentes plataformas móveis.
 
 |Plataforma|Bloqueio remoto|
 |------------|---------------|
 |macOS|Sem suporte|
 |iOS|Com suporte|
 |Android|Com suporte|
-|Windows 10 e Windows 10 Mobile|Com suporte|
+|Windows 10 (mobile)|Com suporte|
+|Windows 10 (desktop)|Sem suporte|
 |Windows Phone 8 e Windows Phone 8.1|Com suporte|
 |Windows RT 8.1 e Windows RT|Suportado se o usuário atual do dispositivo for o mesmo usuário que registrou o dispositivo.|
 |Windows 8.1|Suportado se o usuário atual do dispositivo for o mesmo usuário que registrou o dispositivo.|
@@ -79,6 +86,6 @@ Não há suporte para a redefinição de senha para computadores com Windows reg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

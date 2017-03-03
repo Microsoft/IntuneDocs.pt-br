@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
 ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
@@ -57,22 +58,22 @@ Aplicativos Xamarin criados com o Componente Xamarin do SDK de Aplicativo do Int
 
 ## <a name="get-started"></a>Introdução
 
-1.  Baixe o arquivo **Xamarin-component.exe** [aqui](https://components.xamarin.com/submit/xpkg) e extraia o arquivo.
+1.    Baixe o arquivo **Xamarin-component.exe** [aqui](https://components.xamarin.com/submit/xpkg) e extraia o arquivo.
 
 2. Leia os [termos de licença](https://components.xamarin.com/license/microsoft.intune.mam) do Componente Xamarin para MAM no Microsoft Intune.
 
-3.  Baixar a pasta do Componente Xamarin do SDK de Aplicativo do Intune do [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ou do [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) e extraia. Os arquivos baixados na etapa 1 e na etapa 2 deve estar no mesmo nível de diretório.
+3.    Baixar a pasta do Componente Xamarin do SDK de Aplicativo do Intune do [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ou do [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) e extraia. Os arquivos baixados na etapa 1 e na etapa 2 deve estar no mesmo nível de diretório.
 
-4.  Na linha de comando como administrador, execute `Xamain.Component.exe install <.xam> file`.
+4.    Na linha de comando como administrador, execute `Xamain.Component.exe install <.xam> file`.
 
-5.  No Visual Studio, clique com o botão direito do mouse em **componentes** no seu projeto Xamarin criado anteriormente.
+5.    No Visual Studio, clique com o botão direito do mouse em **componentes** no seu projeto Xamarin criado anteriormente.
 
-6.  Selecione **Editar Componentes** e adicione o componente do SDK de Aplicativo do Intune que você baixou localmente em seu computador.
+6.    Selecione **Editar Componentes** e adicione o componente do SDK de Aplicativo do Intune que você baixou localmente em seu computador.
 
 
 
 ## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>Habilitar o MAM do Intune em seu aplicativo móvel iOS
-1.  Para inicializar o SDK de Aplicativo do Intune, você precisará fazer uma chamada de API na classe `AppDelegate.cs`. Por exemplo:
+1.    Para inicializar o SDK de Aplicativo do Intune, você precisará fazer uma chamada de API na classe `AppDelegate.cs`. Por exemplo:
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -83,7 +84,7 @@ Aplicativos Xamarin criados com o Componente Xamarin do SDK de Aplicativo do Int
 
       ```
 
-2.  Agora que o componente foi adicionado e inicializado, você pode seguir as etapas gerais necessárias para a criação do SDK de Aplicativo em um aplicativo móvel iOS. Você pode encontrar a documentação completa para habilitar aplicativos iOS nativos no [Guia do SDK de Aplicativos do Intune para desenvolvedores de iOS](intune-app-sdk-ios.md).
+2.    Agora que o componente foi adicionado e inicializado, você pode seguir as etapas gerais necessárias para a criação do SDK de Aplicativo em um aplicativo móvel iOS. Você pode encontrar a documentação completa para habilitar aplicativos iOS nativos no [Guia do SDK de Aplicativos do Intune para desenvolvedores de iOS](intune-app-sdk-ios.md).
 3. **Importante**: há várias modificações específicas para aplicativos iOS baseados em Xamarin. Por exemplo, ao habilitar grupos de conjunto de chaves, você precisará adicionar o seguinte para incluir o aplicativo de exemplo do Xamarin que incluímos no componente. Veja abaixo um exemplo dos grupos que você precisaria ter em seus grupos de Acesso de Conjunto de Chaves:
 
       ```xml
@@ -109,15 +110,15 @@ Para aplicativos Android baseados em Xamarin que não usam uma estrutura de inte
 
 Para Formulários do Xamarin e outras estruturas de interface do usuário, fornecemos uma ferramenta chamada `MAM.Remapper`. A ferramenta realizará a substituição da classe para você. No entanto, você precisará realizar as seguintes etapas:
 
-1.  Adicione uma referência ao` Microsoft.Intune.MAM.Remapper.Tasks` pacote NuGet 0.1.0.0 ou superior.
+1.    Adicione uma referência ao` Microsoft.Intune.MAM.Remapper.Tasks` pacote NuGet 0.1.0.0 ou superior.
 
-2.  Adicione a seguinte linha ao seu csproj Android:
+2.    Adicione a seguinte linha ao seu csproj Android:
   ```xml
   <Import
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
-3.  Defina a ação de build do arquivo `remapping-config.json` adicionado como **RemappingConfigFile**. O `remapping-config.json` incluído só funciona com Xamarin.Forms. Para outras estruturas de interface do usuário, consulte o arquivo Leiame incluído no pacote NuGet Remapper.
+3.    Defina a ação de build do arquivo `remapping-config.json` adicionado como **RemappingConfigFile**. O `remapping-config.json` incluído só funciona com Xamarin.Forms. Para outras estruturas de interface do usuário, consulte o arquivo Leiame incluído no pacote NuGet Remapper.
 
 ## <a name="test-your-app"></a>Teste seu aplicativo
 

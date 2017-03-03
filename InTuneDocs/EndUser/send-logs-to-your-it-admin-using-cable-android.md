@@ -37,7 +37,7 @@ Se você receber um erro enquanto estiver usando o aplicativo Portal da Empresa 
 
 3.  No computador, procure um diretório com o nome do seu dispositivo. Nesse diretório, encontre **Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
 
-4.  Selecione os arquivos e anexe-os a um email. Envie este email para o administrador de TI.
+4.  Selecione os arquivos e anexe-os a um email. Envie esse email para o administrador de TI.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 

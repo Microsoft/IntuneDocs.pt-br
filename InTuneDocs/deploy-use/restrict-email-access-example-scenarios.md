@@ -1,11 +1,11 @@
 ---
-title: "Restringir o acesso a email – cenários de exemplo | Microsoft Docs"
+title: "Proteger cenários de email | Microsoft Docs"
 description: "Alguns cenários de exemplo e como eles podem ser implementados com acesso condicional."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d6ead1495a64e4e215c49b14064e390065a06de
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 
 
 ---
 
-# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Restringir o acesso a email com o Microsoft Intune: cenários de exemplo
+# <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Proteger o acesso a email com o Microsoft Intune: cenários de exemplo
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Cenário 1: impedir que usuários usem dispositivos não compatíveis para acessar o Exchange Online
 ### <a name="scenario-requirements"></a>Requisitos do cenário
@@ -82,6 +85,6 @@ O fluxo a seguir é usado para decidir quais dispositivos podem acessar o Exchan
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

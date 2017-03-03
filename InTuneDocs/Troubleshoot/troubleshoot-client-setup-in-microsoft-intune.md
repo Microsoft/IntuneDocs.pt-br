@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -119,17 +121,22 @@ A tabela a seguir descreve os códigos de erro exibidos em **Alertas** se ocorre
 |**0x80070032**|Um ou mais pré-requisitos de instalação do software cliente não foram encontrados no computador cliente.|Verifique se todas as atualizações necessárias estão instaladas no computador cliente e tente instalar novamente o software cliente. Para obter mais informações sobre os pré-requisitos para instalar o software cliente, confira [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) (Requisitos de infraestrutura de rede do Microsoft Intune).|
 |**0x80043008**|Não foi possível iniciar o serviço de atualizações do Microsoft Online Management.|Entre em contato com suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).|
 |**0x80043009**|O computador cliente já está inscrito no serviço.|Você deve retirar o computador cliente antes de ser possível registrá-lo novamente no serviço. Para obter instruções, confira [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Desativar dispositivos de gerenciamento do Microsoft Intune).|
+|**0x8004300A**|(Estágio 21) Ocorre um erro quando o pacote de registro é implantado no GPO a ser instalado no escopo do usuário e não no escopo do computador. |Verifique se o GPO está direcionado corretamente por meio da GPSI no escopo do computador. Para ver as postagens do fórum sobre esse assunto, consulte [Fórum do TechNet](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod).|
 |**0x8004300B**|O pacote de instalação do software cliente não pode ser executado porque a versão do Windows que está em execução no cliente não é suportada.|O Intune não dá suporte à versão do Windows em execução no computador cliente. Para obter uma lista dos sistemas operacionais com suporte, confira [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune) (Requisitos de infraestrutura de rede do Microsoft Intune).|
 |**0xAB2**|O Windows Installer não pode acessar o tempo de uma ação personalizada de execução do VBScript.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas em [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255) (Suporte da Microsoft KB198038: Ferramentas úteis para problemas de implantação e pacote).|
 |**0x8004300f**|O software não pode ser instalado porque o cliente do System Center Configuration Manager já está instalado.|Remova o cliente do Configuration Manager e tente novamente a instalação do software cliente.|
 |**0x80043010**|O software não pode ser instalado porque o cliente Open Mobile Alliance Device Management (OMADM) já está instalado.|Cancele registro do cliente OMADM e, em seguida, tente novamente a instalação do software cliente.|
 Se os problemas de instalação persistirem, entre em contato com o suporte, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune). Tenha em mãos o log de registro do computador cliente (localizado em %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log e %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) e log do Windows Update (%*windir*%\windowsupdate.log) disponíveis para mostrar aos engenheiros de suporte.
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>O que fazer se o Endpoint Protection não estiver desinstalado durante a desinstalação do cliente
+
+Às vezes, o agente de Proteção do Host (Endpoint Protection) pode ser deixado após a execução dos comandos acima. Se isso acontecer, execute este comando em um prompt com privilégios elevados:
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

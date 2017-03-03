@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ Você precisará do seguinte para distribuir aplicativos encapsulados pelo Intun
 
   ![Selecionar o certificado Interno e Ad Hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Se não planeja distribuir o aplicativo e apenas deseja testá-lo internamente, você poderá usar um certificado de desenvolvimento de aplicativos do iOS em vez de um certificado para a produção. Se você usar um certificado de desenvolvimento, assegure-se de que o perfil de provisionamento móvel faz referência aos dispositivos nos quais o aplicativo será instalado.
+
 7. Clique em **Avançar** na parte inferior da página.
 
 8. Leia as instruções sobre como criar uma **CSR (Solicitação de Assinatura de Certificado)** usando o aplicativo Acesso ao Conjunto de Chaves no computador macOS.
@@ -131,11 +135,12 @@ Você precisará do seguinte para distribuir aplicativos encapsulados pelo Intun
 
 14. Clique duas vezes no arquivo de certificado que você acabou de baixar para adicionar o certificado a um conjunto de chaves.
 
-15. Abra **Acesso ao Conjunto de Chaves** novamente. Localize o certificado pesquisando **“iPhone”** na barra de pesquisa à direita na janela Acesso ao Conjunto de Chaves. Clique com o botão direito do mouse no item para exibir o menu e clique em **Obter Informações**.
+15. Abra **Acesso ao Conjunto de Chaves** novamente. Localize o certificado pesquisando pelo nome na barra de pesquisa na parte superior direita. Clique com o botão direito do mouse no item para exibir o menu e clique em **Obter Informações**. Nas telas de exemplo, estamos usando um certificado de desenvolvimento em vez de um certificado de produção.
+
 
   ![Adicionar o certificado a um conjunto de chaves](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. Uma janela informativa é exibida. Role até a parte inferior e procure o rótulo **Impressões Digitais**. Copie a cadeia de caracteres **SHA1** para ser usada como o parâmetro -c para a Ferramenta de Disposição do Aplicativo.
+16. Uma janela informativa é exibida. Role até a parte inferior e procure o rótulo **Impressões Digitais**. Copie a cadeia de caracteres **SHA1** (escurecida) para ser usada como o argumento “-c” para a Ferramenta de Disposição do Aplicativo.
 
   ![Adicionar o certificado a um conjunto de chaves](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ Use as seguintes melhores práticas de segurança e privacidade ao usar a Ferram
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
