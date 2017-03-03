@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
 ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
+ms.lasthandoff: 12/20/2016
 
 
 ---
@@ -53,9 +55,4 @@ Para saber mais sobre os dispositivos e computadores aos quais o Intune dá supo
 - [Escolher como registrar dispositivos móveis](/intune/get-started/choose-how-to-enroll-devices1)
 - [Gerenciar computadores Windows com o software cliente de computador do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [Gerenciamento de dispositivos móveis do Exchange ActiveSync com o Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
