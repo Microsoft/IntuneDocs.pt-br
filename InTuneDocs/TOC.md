@@ -1,4 +1,4 @@
-# Compreensão e Exploração
+# Entender e explorar
 ## [Introdução ao Intune](understand-explore/introduction-to-microsoft-intune.md)
 ## [Inscreva-se para uma avaliação gratuita](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [Avaliar o Intune MDM](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
@@ -49,7 +49,7 @@
 ## [Novidades na visualização do Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Arquivo de novidades](whats-new/whats-new-archive.md)
 
-# Implantação e Uso
+# Implantar e usar
 ## [Visão geral dos ciclos de vida do dispositivo e do aplicativo](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Ciclo de vida do dispositivo](deploy-use/overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Ciclo de vida do aplicativo](deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -160,11 +160,12 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Bloquear aplicativos sem ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Proteger o acesso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Proteger o acesso com base no dispositivo, na rede e no risco do aplicativo](deploy-use/device-threat-protection.md)
-#### [Configurar a proteção contra ameaças ao dispositivo](deploy-use/device-threat-protection-subscription-setup.md)
-#### [Habilitar a proteção contra ameaças ao dispositivo](deploy-use/device-threat-protection-enable.md)
-#### [Implantar os aplicativos de proteção contra ameaças ao dispositivo](deploy-use/device-threat-protection-apps.md)
-#### [Habilitar política de conformidade de proteção contra ameaças do dispositivo](deploy-use/device-threat-protection-policy.md)
+### [Proteger o acesso com base no dispositivo, na rede e no risco do aplicativo](deploy-use/mobile-threat-defense.md)
+#### [Conector de Defesa contra Ameaças Móveis da Lookout](deploy-use/lookout-mobile-threat-defense-connector.md)
+##### [Configurar Defesa contra Ameaças Móveis](deploy-use/device-threat-protection-subscription-setup.md)
+##### [Habilitar Defesa contra Ameaças Móveis](deploy-use/device-threat-protection-enable.md)
+##### [Implantar aplicativos de Defesa contra Ameaças Móveis](deploy-use/device-threat-protection-apps.md)
+##### [Habilitar política de conformidade de Defesa contra Ameaças Móveis](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteger os dados do aplicativo com MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portal do Azure para as políticas de proteção do aplicativo](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
