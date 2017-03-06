@@ -4,7 +4,7 @@ description: Implante um perfil de registro que registre os dispositivos iOS com
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 

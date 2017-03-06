@@ -4,7 +4,7 @@ description: "Use a Apple Configurator Tool para registrar diretamente dispositi
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Ao registrar dispositivos iOS diretamente, você pode registrar um dispositivo s
 9.  No dispositivo iOS, abra **Configurações** e vá para **Geral** &gt; **Gerenciamento de Dispositivo** &gt; **Perfil de Gerenciamento**. Confirme que o perfil de instalação está listado, verifique as restrições de política do iOS e os aplicativos instalados. Aplicativos e restrições de política podem levar até 10 minutos para serem exibidos no dispositivo.
 
 10.  Distribuir dispositivos. O dispositivo iOS agora está registrado com o Intune e é gerenciado.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
