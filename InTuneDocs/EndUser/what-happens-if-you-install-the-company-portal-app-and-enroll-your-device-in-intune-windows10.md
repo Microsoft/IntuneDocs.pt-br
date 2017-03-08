@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
 ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -55,9 +56,4 @@ Quando você adicionar um computador:
 -   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. O administrador de TI também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo ou excluir todos os dados do disco rígido se você tentar muitas vezes.
 
 Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

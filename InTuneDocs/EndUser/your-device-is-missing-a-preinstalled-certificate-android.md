@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: e0aaa48e46e547d4853478fdbb80711700a9c22a
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -48,9 +50,4 @@ Corrija esse problema obtendo o certificado necessário na [página de certifica
 > Se a instalação desse certificado não resolver o problema e você receber outra mensagem de “Certificado ausente”, será necessário realizar etapas adicionais para [instalar o certificado ausente](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

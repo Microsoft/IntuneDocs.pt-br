@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -44,9 +45,4 @@ Se o dispositivo estiver configurado apenas para receber email da empresa e canc
 Para obter instruções de como cancelar o registro, consulte [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md) (Cancelar o registro do dispositivo no Intune usando o aplicativo do Portal da Empresa).
 
 Precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a [equipe de Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

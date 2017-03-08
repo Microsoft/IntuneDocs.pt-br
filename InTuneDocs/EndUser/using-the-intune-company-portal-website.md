@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
 ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -52,9 +53,4 @@ Os usuários podem realizar no **site do Portal da Empresa** a maioria das mesma
 - [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 - [Usando um dispositivo iOS ou macOS com o Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Usando seu dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
