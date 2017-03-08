@@ -2,7 +2,8 @@
 title: Configurar o gerenciamento do Windows 10 Mobile e do Windows Phone | Microsoft Docs
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows 10 Mobile ou Windows Phone com o Microsoft Intune."
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

@@ -2,8 +2,8 @@
 title: Solucionar problemas de registro do dispositivo | Microsoft Docs
 description: "Sugestões para solução de problemas de registro de dispositivo."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

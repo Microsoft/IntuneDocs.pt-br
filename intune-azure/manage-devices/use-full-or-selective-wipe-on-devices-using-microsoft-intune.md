@@ -3,8 +3,8 @@ title: Apagamento completo ou seletivo em dispositivos usando o Intune
 titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como realizar um apagamento seletivo de dados da empresa em um dispositivo ou fazer um apagamento completo para redefinição de fábrica do dispositivo."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

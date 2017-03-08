@@ -2,8 +2,8 @@
 title: "Registrar dispositivos iOS com o Assistente de Configuração | Microsoft Docs"
 description: "Registre dispositivos iOS corporativos usando a ferramenta Apple Configurator para redefinir o dispositivo para as configurações de fábrica e prepará-lo para executar o Assistente de Configuração."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
 ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -186,9 +187,4 @@ Desligue os dispositivos e distribua-os para os usuários. Quando os usuários l
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
