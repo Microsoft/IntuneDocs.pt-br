@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
 ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.lasthandoff: 01/17/2017
 
 
 ---
@@ -95,9 +96,4 @@ Envolver a equipe de suporte de TI/assistência técnica nos estágios iniciais 
 ## <a name="next-section"></a>Próxima seção
 
 A próxima seção fornece diretrizes sobre [como desenvolver o Intune](section-7-create-an-intune-design.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 
