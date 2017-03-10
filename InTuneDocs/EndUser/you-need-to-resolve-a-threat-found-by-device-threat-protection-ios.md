@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: b9d7c7970ddc334dd6c500105b250d516a60a6d4
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -49,9 +50,4 @@ Se vir algo assim, toque no nome do aplicativo exibido na parte superior da tela
 Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e a outros dados corporativos ou de estudante imediatamente. Se ignorar a solicitação para desinstalar o aplicativo, você perderá acesso ao email e aos dados da empresa até que desinstale o aplicativo.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
