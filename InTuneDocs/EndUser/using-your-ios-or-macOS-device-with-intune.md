@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ Há várias coisas que você pode fazer com o Intune para facilitar sua vida pro
 
 - [Usar aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Definir ou alterar sua senha](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Redefinir (apagar) um dispositivo perdido ou roubado](reset-erase-your-device-cpwebsite.md)
 - [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Cancelar o registro do dispositivo no Intune](unenroll-your-device-from-intune-ios.md)

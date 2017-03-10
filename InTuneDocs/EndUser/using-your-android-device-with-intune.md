@@ -43,7 +43,6 @@ Há várias coisas que você pode fazer com o Intune para facilitar sua vida pro
 - [Definir o PIN ou senha](set-your-pin-or-password-android.md)
 - [Instalar a VPN (rede privada virtual) da sua empresa](install-your-companys-virtual-private-network-VPN-android.md)
 - [Definir o período antes que seu dispositivo seja bloqueado](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Redefinir (apagar) um dispositivo perdido ou roubado](reset-erase-your-device-cpwebsite.md)
 - [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Cancelar o registro do dispositivo no Intune](unenroll-your-device-from-intune-android.md)
