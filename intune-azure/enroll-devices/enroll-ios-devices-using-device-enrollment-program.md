@@ -1,9 +1,10 @@
 ---
-title: "Registrar dispositivos iOS – Programa de registro de dispositivos | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Registrar dispositivos iOS – Programa de registro de dispositivos"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como registrar dispositivos iOS da empresa usando o Programa de registro de dispositivos."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
 6. Para **Afinidade de Usuário**, escolha se os dispositivos com esse perfil serão registrados com ou sem afinidade de usuário.
 
- - **Inscrever com afinidade do utilizador** – O dispositivo deve ser afiliado a um usuário durante a configuração inicial e, depois, pode receber permissão para acessar dados e email da empresa. Escolha afinidade de usuário para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa para serviços como instalar aplicativos. Observe que a MFA (Autenticação Multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos.
+ - **Inscrever com afinidade do utilizador** – O dispositivo deve ser afiliado a um usuário durante a configuração inicial e, depois, pode receber permissão para acessar dados e email da empresa. Escolha afinidade de usuário para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa para serviços como instalar aplicativos. Observe que a MFA (Autenticação Multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos. Novos usuários que precisam alterar a senha ao se conectarem pela primeira vez não podem receber um prompt durante o registro em dispositivos DEP. Além disso, os usuários cujas senhas expiraram não receberão um prompt para redefinir a senha durante o registro DEP e deverão redefinir a senha em um dispositivo diferente.
 
     >[!NOTE]
     >O DEP com afinidade do usuário requer que o ponto de extremidade misto/nome do usuário do WS-Trust 1.3 esteja habilitado para solicitar o token do usuário.
@@ -101,11 +103,11 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Atribuir números de série de DEP da Apple ao seu servidor MDM
 
-1. Vá até o [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID Apple corporativa. 
+1. Vá até o [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID Apple corporativa.
 
-2. Vá para **Programa de Implantação** &gt; **Programa de Registro de Dispositivo** &gt; **Gerenciar Dispositivos**. 
+2. Vá para **Programa de Implantação** &gt; **Programa de Registro de Dispositivo** &gt; **Gerenciar Dispositivos**.
 
-3. Especifique como você vai **Escolher Dispositivos**, forneça informações do dispositivo e especifique os detalhes por **Número de Série**, **Número do Pedido** ou **Carregar o Arquivo CSV**. 
+3. Especifique como você vai **Escolher Dispositivos**, forneça informações do dispositivo e especifique os detalhes por **Número de Série**, **Número do Pedido** ou **Carregar o Arquivo CSV**.
 
 4. Escolha **Atribuir ao Servidor**, escolha o &lt;ServerName&gt; especificado para o Microsoft Intune e escolha **OK**.
 
@@ -137,7 +139,7 @@ Agora você pode distribuir dispositivos da empresa para os usuários. Quando um
 
 Os dispositivos configurados com a afinidade de usuário podem instalar e executar o aplicativo Portal da Empresa para baixar aplicativos e gerenciar dispositivos. Assim que os usuários receberem seus dispositivos, eles deverão realizar várias etapas adicionais descritas abaixo para concluir o Assistente de Configuração e instalar o aplicativo do Portal da Empresa.
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Como os usuários registram dispositivos iOS corporativos com afinidade de usuário 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Como os usuários registram dispositivos iOS corporativos com afinidade de usuário
 
 1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.
 

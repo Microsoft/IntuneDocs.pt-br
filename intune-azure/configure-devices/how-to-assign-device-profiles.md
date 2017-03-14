@@ -1,5 +1,6 @@
 ---
-title: "Como atribuir perfis de dispositivos com o Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: Como atribuir perfis de dispositivo com o Intune
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: depois de criar um perfil de dispositivo do Intune, use este tópico para saber como atribuí-lo a dispositivos."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 0bc43e59c63fb07b07187bd9b8ae78fbc3aa0557
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
+ms.lasthandoff: 02/18/2017
 
 
 ---
