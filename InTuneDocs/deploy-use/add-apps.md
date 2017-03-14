@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: 0945fb2f67c6cc49ca8d10bb5c24f3c4a5f9b2c5
+ms.openlocfilehash: c65dc8ec22f717c5dcce51bb3c45d65bad8d8bde
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -33,7 +34,7 @@ Antes de iniciar a implantação de aplicativos com o Microsoft Intune, reserve 
 
 |Tipo de aplicativo|Detalhes|
 |----------------|-------|
-|**Windows Installer (&#42; .exe, &#42; .msi)**|Esse tipo de aplicativo deve dar suporte à instalação silenciosa sem nenhuma entrada do usuário. A documentação do seu aplicativo deve incluir as opções de linha de comando relevantes para instalar silenciosamente o aplicativo (por exemplo, **/q**). Você pode encontrar uma lista de opções de linha de comando comuns em [Opções de linha de comando para a ferramenta do Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Quaisquer arquivos e pastas adicionais exigidos pelo programa de instalação do aplicativo deverão estar disponíveis na localização que você especificou para os arquivos de instalação de aplicativo.<br><br>Na maioria dos casos, os arquivos do Windows Installer (.msi) e Windows Installer Patch (.msp) não precisam do Intune para instalar nenhum argumento de linha de comando. Verifique a documentação do seu aplicativo.<br><br>Se argumentos de linha de comando forem necessários, insira-os como pares Name=Value (como TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42; .exe, &#42; .msi)**|Esse tipo de aplicativo deve dar suporte à instalação silenciosa sem nenhuma entrada do usuário. A documentação do seu aplicativo deve incluir as opções de linha de comando relevantes para instalar silenciosamente o aplicativo (por exemplo, **/q**). Você pode encontrar uma lista de opções de linha de comando comuns em [Opções de linha de comando para a ferramenta do Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Quaisquer arquivos e pastas adicionais exigidos pelo programa de instalação do aplicativo deverão estar disponíveis na localização que você especificou para os arquivos de instalação de aplicativo.<br><br>Na maioria dos casos, os arquivos do Windows Installer (.msi) e Windows Installer Patch (.msp) não precisam do Intune para instalar nenhum argumento de linha de comando. Verifique a documentação do seu aplicativo.<br><br>Se argumentos de linha de comando forem necessários, insira-os como pares Name=Value (como TRANSFORMS=custom_transform.mst).<br><br>Esse tipo de aplicativo se aplica apenas a computadores que executam o cliente de software do Intune.|
 |**Pacote do aplicativo para Android (&#42; .apk)**|Para implantar aplicativos Android, você deve ter um pacote .apk válido.|
 |**Pacote do aplicativo para iOS (&#42; .ipa)**|Para implantar aplicativos iOS, você deve ter um pacote .ipa válido.<br><br>Isso significa que o pacote .ipa foi assinado pela Apple e a data de vencimento no perfil de provisionamento ainda é válida. O Intune pode distribuir aplicativos iOS empresariais certificados.<br><br>Nem todos os aplicativos de certificado de desenvolvedor Apple têm suporte.<br><br>Sua empresa deve ser registrada no Programa da Empresa do Desenvolvedor iOS.<br><br>Certifique-se de que o firewall da organização permite acesso aos sites de provisionamento e de certificação iOS.<br><br>Você não precisa implantar um arquivo de manifesto (. plist) com o aplicativo.|
 |**Pacote do aplicativo do Windows Phone (&#42; .xap, .appx, .appxbundle)**|Para implantar aplicativos, você precisará de um certificado de assinatura de código móvel corporativo. Para obter detalhes, consulte [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurar o gerenciamento do Windows Phone com o Microsoft Intune).|
@@ -94,9 +95,4 @@ Dessa forma, ao carregar o aplicativo para o Intune, os arquivos da pasta **Depe
 ## <a name="next-steps"></a>Próximas etapas
 
 Você precisará adicionar aplicativos no console do Intune antes de implantá-los. Você pode adicionar aplicativos para [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou para [computadores Windows gerenciados com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
