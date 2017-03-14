@@ -193,12 +193,10 @@
 ### [Apagar dados de aplicativos de empresa gerenciados](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Como instruir os usuários finais sobre o Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Usando um dispositivo Android com o Intune](EndUser/using-your-android-device-with-intune.md)
-#### [Como os usuários do Android podem obter aplicativos](deploy-use/how-your-android-users-get-their-apps.md)
-### [Usando um dispositivo iOS com o Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [Como usuários do iOS podem obter aplicativos](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Usando um dispositivo Windows com o Intune](EndUser/using-your-windows-device-with-intune.md)
-#### [Como os usuários do Windows podem obter aplicativos](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Mensagens do Portal da Empresa que os usuários finais podem ver](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Como os usuários do Android podem obter aplicativos](deploy-use/how-your-android-users-get-their-apps.md)
+### [Como usuários do iOS podem obter aplicativos](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Como os usuários do Windows podem obter aplicativos](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Desenvolver e personalizar aplicativos
 ## [Visão geral do SDK de Aplicativos do Microsoft Intune](develop/intune-app-sdk.md)
