@@ -4,8 +4,8 @@ description: "Proteja seus computadores gerenciados com o Endpoint Protection, q
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ Monitore o status de malware em seus computadores, usando o espaço de trabalho 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Como exibir Caminhos de detecção recentes para malware em computadores
 O Intune pode exibir os caminhos de até 10 das instâncias de malware detectadas mais recentemente em um dispositivo. O **Caminho de detecção recente** fica desabilitado por padrão. Para habilitar a exibição:
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** > **Todos os Dispositivos** > **Malware**.
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** > **Todos os Dispositivos** > **Todos os Computadores**.
+2. Clique no computador cujos caminhos de detecção recentes você deseja ver e selecione **Propriedades**.
+3. Selecione **Malware** nas guias na parte superior.
 
-2.  Clique com o botão direito no cabeçalho de uma coluna. É exibida uma lista das de colunas disponíveis.
-
-3.  Marque a caixa de seleção **Caminhos de detecção recentes** na lista. A coluna **Caminhos de detecção recentes** aparece e exibe até 10 instâncias de malware mais recentes monitoradas no dispositivo.
+   ![Selecione a guia Malware e, em seguida, clique na caixa de seleção Caminhos de Detecção Recentes](../media/malware-path-column.png)
+4. Clique com o botão direito no cabeçalho da coluna. É exibida uma lista das de colunas disponíveis. Marque a caixa de seleção **Caminhos de detecção recentes** na lista. A coluna **Caminhos de detecção recentes** aparece e exibe até 10 instâncias de malware mais recentes monitoradas no dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Executar uma verificação de malware ou atualizar definições de malware em um computador
 O Intune pode executar uma verificação completa ou rápida de malware usando o Endpoint Protection ou o Windows Defender em um computador gerenciado remotamente com o cliente do Intune instalado.
@@ -184,9 +185,6 @@ O Intune pode executar uma verificação completa ou rápida de malware usando o
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/) vá até **Grupos** > **Visão geral** > **Todos os Dispositivos** > **Todos os Computadores** e selecione o computador que deseja como destino.
 
 2. Escolha a lista suspensa **Tarefas Remotas** e selecione a tarefa a ser executada no computador remoto.
-
-
-
 
 ## <a name="need-more-help"></a>Precisa de mais ajuda?
 Para obter mais ajuda e suporte, consulte [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Solucionando problemas do Endpoint Protection no Microsoft Intune).

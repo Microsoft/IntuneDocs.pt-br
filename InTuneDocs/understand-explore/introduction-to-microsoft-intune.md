@@ -5,7 +5,7 @@ keywords: "o que é o Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
-ms.lasthandoff: 01/11/2017
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ O Intune é um serviço de EMM (gerenciamento de mobilidade empresarial) baseado
 * proteger informações da empresa, ajudando a controlar a forma como sua força de trabalho as acessa e compartilha.
 * garantir que dispositivos e aplicativos sejam compatíveis com os requisitos de segurança da empresa.
 
-O Intune se integra estreitamente ao Azure AD (Azure Active Directory) para o controle de acesso e identidade e ao Azure RMS (Azure Rights Management) para proteção de dados. Ele é o *braço de gerenciamento* do Microsoft EMS (Enterprise Mobility + Security), enquanto o Office 365 é o *braço de produtividade* da solução de mobilidade da Microsoft.  
+O Intune se integra estreitamente ao Azure AD (Azure Active Directory) para o controle de acesso e identidade e à Proteção de Informações do Azure para proteção de dados. Ele é o *braço de gerenciamento* do Microsoft EMS (Enterprise Mobility + Security), enquanto o Office 365 é o *braço de produtividade* da solução de mobilidade da Microsoft.  
 
 Juntos, o Office 365 e o EMS possibilitam que sua força de trabalho seja produtiva usando todos os seus dispositivos, ao mesmo tempo em que mantêm protegidas as informações da organização. O Office 365 com o EMS é um pacote integrado completo para mobilidade corporativa, que inclui produtividade, identidade, controle de acesso, gerenciamento e proteção de dados. Ele fornece a uma maneira eficiente para implantar e operar uma solução de mobilidade em sua organização.
 

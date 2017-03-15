@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ Para obter mais informações sobre como carregar e publicar aplicativos Android
 
 ## <a name="deploy-an-android-for-work-app"></a>Implantar um aplicativo Android for Work
 
-Normalmente, o Intune realiza duas sincronizações por dia com a loja do Google Play for Work. Se você aprovou um aplicativo da loja e ainda não o encontrou no nó **Aplicativos Adquiridos por Volume** do espaço de trabalho **Aplicativos**, será possível forçar uma sincronização imediata da seguinte maneira:
+Se você aprovou um aplicativo da loja e ainda não o encontrou no nó **Aplicativos Adquiridos por Volume** do espaço de trabalho **Aplicativos**, será possível forçar uma sincronização imediata da seguinte maneira:
 
 1. No [Console do administrador do Intune](https://manage.microsoft.com), escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Android for Work**.
 2. Na página **Configuração do Gerenciamento de Dispositivo Móvel do Android for Work**, escolha **Sincronizar Agora**.
 3. A página também exibe o tempo e o status da última sincronização.
 
-Quando o aplicativo for exibido no nó **Aplicativos Adquiridos por Volume** do espaço de trabalho **Aplicativos**, você pode [implantá-lo, assim como faria com qualquer outro aplicativo](deploy-apps-in-microsoft-intune.md). O aplicativo pode ser implantado somente em grupos de usuários. No momento, você pode selecionar apenas as ações **Necessário** e **Desinstalar**. Em outubro de 2016, começaremos a adicionar a ação de implantação **Disponível** aos novos locatários.
+Quando o aplicativo for exibido no nó **Aplicativos Adquiridos por Volume** do espaço de trabalho **Aplicativos**, você pode [implantá-lo, assim como faria com qualquer outro aplicativo](deploy-apps-in-microsoft-intune.md). O aplicativo pode ser implantado somente em grupos de usuários. No momento, você pode selecionar apenas as ações **Necessário** e **Desinstalar**.
+
+A capacidade de implantar um aplicativo como **Disponível** utiliza a nova experiência de agrupamento e direcionamento. As contas de serviço do Intune recém-provisionadas poderão usar esse recurso após o lançamento. Os clientes atuais do Intune podem usar esse recurso quando seu locatário for migrado no portal do Intune Azure. Clientes atuais são incentivados a criar uma conta de avaliação do Intune para planejar e testar o recurso até que seu locatário seja migrado.
 
 Depois de implantar o aplicativo, ele será instalado nos dispositivos de destino. A aprovação do usuário do dispositivo não será solicitada.
 
+## <a name="manage-app-permissions"></a>Gerenciar permissões de aplicativo
+O Android for Work exige que você aprove aplicativos no console da web do Play gerenciado do Google antes de sincronizá-los para o Intune e implantá-los para os usuários.  Como Android for Work permite que você envie de maneira silenciosa e automática esses aplicativos para os dispositivos dos usuários, você deve aceitar as permissões do aplicativo em nome de todos os seus usuários.  Os usuários finais não verão as permissões do aplicativo ao instalar; portanto, é importante que você leia e entenda essas permissões.
 
+Quando um desenvolvedor de aplicativo publica uma nova versão do aplicativo com permissões atualizadas, essas permissões não são automaticamente aceitas, mesmo se você tiver aprovado as permissões anteriores. Os dispositivos que executarem a versão antiga do aplicativo ainda poderão usá-lo, mas o aplicativo não será atualizado até que as novas permissões sejam aprovadas. Os dispositivos sem o aplicativo instalado não podem instalar o aplicativo até que você aprove novas permissões do aplicativo.
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>Como atualizar as permissões do aplicativo
 
+Periodicamente, você deverá visitar o console gerenciado do Google Play para verificar se há novas permissões. Se você implantar um aplicativo e observar que ele não está instalado nos dispositivos, verifique se há novas permissões com as seguintes etapas:
+
+1. Visite http://play.google.com/work
+2. Entre com a conta do Google usada para publicar e aprovar os aplicativos.
+3. Visite a guia **Atualizações** para ver se algum aplicativo precisa de atualização.  Todos os aplicativos listados exigem novas permissões e não serão implantados até que isso aconteça.  
 
