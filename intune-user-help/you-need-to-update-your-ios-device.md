@@ -1,5 +1,5 @@
 ---
-title: "O dispositivo está fora de conformidade | Microsoft Docs"
+title: "É necessário atualizar seu dispositivo iOS | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
+ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 searchScope:
 - User help
 ROBOTS: 
@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c111993248e900f663640cf45db4525dc7c7df95
+ms.openlocfilehash: bb9dfe52aa2c0150bd48f5c5cfad48a03748142c
 ms.lasthandoff: 03/16/2017
 
 
 ---
 
-# <a name="your-device-is-noncompliant"></a>Seu dispositivo está fora de conformidade
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Seu dispositivo iOS não tem a versão de sistema operacional mínima exigida
 
-Seu dispositivo não está em conformidade com, pelo menos, uma das políticas de segurança de sua organização, mas o erro não pode ser exibido no momento.  
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-No aplicativo Portal da Empresa, toque em **Verificar Conformidade**. O aplicativo Portal da Empresa informará a você o que está causando a não conformidade do dispositivo.
+Atualize seu dispositivo iOS tocando em **Configurações** > **Geral** > **Atualização de Software**.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
