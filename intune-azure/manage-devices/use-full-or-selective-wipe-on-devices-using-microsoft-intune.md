@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
-# <a name="use-full-or-selective-wipe"></a>Usar o apagamento completo ou seletivo 
+# <a name="use-full-or-selective-wipe"></a>Usar o apagamento completo ou seletivo
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -104,6 +104,10 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
 |Sair do Active Directory do Azure (AAD)|Registro no AAD removido.|Registro no AAD removido.|
 |Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
+
+**Android for Work**
+
+Executar a limpeza seletiva em um dispositivo Android para Trabalho remove todos os dados, os aplicativos e as configurações no perfil de trabalho nesse dispositivo. Isso desativa o dispositivo de gerenciamento com o Intune. Não há suporte para o apagamento completo no Android para Trabalho.
 
 **Windows**
 
