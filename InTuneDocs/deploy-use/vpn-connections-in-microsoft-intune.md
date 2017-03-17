@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
   - **Avaliar conexão**, que tem três configurações a. **Ação de domínio** - escolha **Conectar se necessário** ou **Nunca se conectar**
      b. **Lista de domínios separados por vírgulas ** - configure essa opção somente se você escolher uma **Ação de domínio** do tipo **Conectar se necessário**
      c. **Investigação de cadeia de caracteres de URL necessária** - uma URL HTTP ou HTTPS (preferencial) URL, como *https://vpntestprobe.contoso.com*. A regra verificará se há uma resposta proveniente desse endereço. Se não houver, e a **Ação de domínio** for **Conectar se necessário**, a VPN será disparada.
+      
      > [!TIP]
      >
      >Um exemplo de quando você pode usar essa ação é quando alguns sites em sua rede corporativa exigirem uma conexão de rede corporativa de VPN ou direta, mas outros não. Se você listar em **Lista separada por vírgulas de domínios de pesquisa DNS** *corp.contoso.com*, poderá escolher **Conectar se necessário** e listar sites específicos dentro dessa rede que podem exigir a VPN, como *sharepoint.corp.contoso.com*. Em seguida, a regra verificará se *vpntestprobe.contoso.com* pode ser acessado. Se não puder, a VPN será disparada para o site do SharePoint.
@@ -192,9 +194,4 @@ As regras específicas de domínio são avaliadas antes das regras de todos os d
 Após a implantação bem-sucedida, os usuários verão o nome da conexão VPN especificado na lista de conexões de VPN em seus dispositivos.
 
 Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho Painel.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
