@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As configurações de perfil de email podem ser usadas para configurar dispositivos gerenciados com as configurações necessárias para se conectar e sincronizar o email da empresa. Isso pode ajudar a garantir que as configurações sejam padronizadas em todos os seus dispositivos, bem como ajudar a reduzir as chamadas de suporte dos usuários finais que não conhecem as configurações de email corretas.
+Os perfis de email podem ser usados para configurar dispositivos gerenciados com as configurações necessárias para se conectar e sincronizar o email da empresa. Isso pode ajudar a garantir que as configurações sejam padronizadas em todos os seus dispositivos, bem como ajudar a reduzir as chamadas de suporte dos usuários finais que não conhecem as configurações de email corretas.
 
 Há suporte para o cliente de email interno na maioria das plataformas. Atualmente, não há suporte para a maioria dos aplicativos de email de terceiros.
 

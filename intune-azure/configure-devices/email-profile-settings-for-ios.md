@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c388cb26be11edb6f8f4b23d455632fad9ca98c9
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 - **Método de autenticação** – Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.
     - Se você selecionou **Certificado**, escolha um cliente SCEP ou perfil de certificado PKCS criado anteriormente para ser usado para autenticar a conexão do Exchange.
 - **SSL** – Use a comunicação por protocolo SSL ao enviar e receber emails e ao se comunicar com o servidor Exchange.
-- **S/MIME** – Envia emails de saída usando a criptografia S/MIME.
+- **S/MIME** - Enviar email de saída usando a assinatura de S/MIME.
     - Se você selecionou **Certificado**, escolha um cliente SCEP ou perfil de certificado PKCS criado anteriormente para ser usado para autenticar a conexão do Exchange.
 - **Quantidade de emails a ser sincronizada** – Escolha o número de dias de emails que você deseja sincronizar ou selecione **Ilimitado** para sincronizar todas as mensagens disponíveis.
 - **Permitir que as mensagens sejam movidas para outras contas de email** – Isso permite que os usuários movam mensagens de email entre contas diferentes que podem estar configuradas em seu dispositivo.
