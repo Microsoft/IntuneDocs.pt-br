@@ -74,7 +74,7 @@ Ao contrário de outras políticas do Intune, você não implanta políticas de 
 2. [Criar uma política de conformidade do dispositivo](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 2.  Criar uma política de acesso condicional para um dos seguintes produtos/serviços em nuvem da Microsoft:
-> [!div class="op_single_selector"]
+
   - [Criar uma política de acesso condicional para o Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Criar uma política de acesso condicional para o Exchange Local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Criar uma política de acesso condicional para o novo Exchange Online Dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md)
