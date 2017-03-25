@@ -41,7 +41,7 @@
 #### [Registrar dispositivos iOS usando o programa de registro de dispositivos](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Registrar dispositivos usando o gerenciador de registro de dispositivo](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrar dispositivos macOS](enroll-devices/enroll-macos-devices.md)
-### [Registrar dispositivos Windows](enroll-devices/enroll-window-devices.md)
+### [Registrar dispositivos Windows](enroll-devices/enroll-windows-devices.md)
 ### Gerenciar registro do dispositivo
 #### [Criar termos e condições](enroll-devices/create-terms-and-conditions.md)
 #### [Definir restrições de registro](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +108,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Como
 ### [Configurar perfis do dispositivo](configure-devices/how-to-create-device-profiles.md)
+
+### [Configurar recursos do dispositivo](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Configurar restrições do dispositivo](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
