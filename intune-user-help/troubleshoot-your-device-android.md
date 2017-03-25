@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 9862ef9fd1d4827ae99480cd2cf2eac8dfca54d8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,6 +28,7 @@ ms.lasthandoff: 02/21/2017
 
 Às vezes, podem ocorrer problemas com seu dispositivo Android, que poderão ser corrigidos pela solução de problemas. Alguns dos problemas comuns que já vimos e que você pode primeiro tentar corrigir sozinho estão listados abaixo. Para os problemas mais complexos, é recomendável contatar seu administrador de TI por meio de suas informações de contato no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
+- [Verificar a conformidade em seu dispositivo Android](check-compliance-on-your-device-android.md)
 - [Usar o Registro em Log Detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Enviar logs ao administrador de TI usando o email](send-logs-to-your-it-admin-by-email-android.md)
 - [Enviar logs para o administrador de TI usando um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)

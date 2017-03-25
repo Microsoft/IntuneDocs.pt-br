@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
-ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -34,6 +34,8 @@ Se receber erros enquanto estiver usando o dispositivo iOS ao usar o aplicativo 
 -   Na tela **Sobre** do aplicativo do Portal da Empresa, toque em **Enviar Relatório de Diagnóstico**.
 
 -   No aplicativo do Portal da Empresa, agite o dispositivo e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não for exibido quando você agitar o dispositivo, abra **Configurações** > **Portal da Empresa** e verifique se a opção **Gesto de Agitar** está ativada.
+
+Se tiver problemas com essa forma de envio de logs, você também pode tentar [enviar seus logs de administração de IT usando o email](send-logs-to-your-it-admin-by-email-iOS.md).
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 

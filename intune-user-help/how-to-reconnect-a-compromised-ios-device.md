@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 38edb26334cdfdee0ab66465c4bed21d6e8d14c1
-ms.openlocfilehash: 7506063b56231feea1b2f6b22b157171896e25ab
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 208b7775ef66042339ed5e77637a6f0d63eb9831
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -29,5 +29,5 @@ ms.lasthandoff: 12/21/2016
 
 Seu administrador de TI detectou que você está usando um dispositivo com jailbreak. Desbloqueado com “jailbreak” significa que o dispositivo foi alterado para habilitar acesso irrestrito a alguns arquivos críticos, o que pode comprometer a segurança e ser uma ameaça para os recursos da empresa.
 
-Quando isso acontece, o dispositivo não pode mais acessar os recursos da empresa e é necessário contatar o administrador de TI para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Quando isso acontece, o dispositivo não pode mais acessar os recursos da empresa e é necessário contatar seu administrador de TI para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 

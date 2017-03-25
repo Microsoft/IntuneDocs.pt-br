@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: 011bdf38327319358a364a17fa82c03f1320ab63
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d3401f32994fcd0e54d35a2615a636c5d06183d2
+ms.lasthandoff: 03/13/2017
 
 
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Instalar o aplicativo Portal da Empresa para Android
 
-O Portal da Empresa é um aplicativo que fornece acesso aos aplicativos e ao email corporativo ou de estudante, bem como conexões com a Internet. Esse aplicativo ajuda você a manter as informações de sua organização seguras mantendo seu dispositivo seguro – por exemplo, mantendo os aplicativos da empresa atualizados ou garantindo o bloqueio automático do dispositivo após determinado período. O aplicativo Portal da Empresa pode fazer isso ajudando você a [registrar seu dispositivo no Microsoft Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+O Portal da Empresa é um aplicativo que fornece acesso aos aplicativos e ao email de sua empresa ou escola, bem como conexões com a Internet. Esse aplicativo ajuda você a manter ambas as informações de sua organização seguras mantendo seu dispositivo seguro – por exemplo, mantendo os aplicativos da empresa atualizados ou garantindo o bloqueio automático do dispositivo após determinado período. O aplicativo Portal da Empresa pode fazer isso ajudando você a [registrar seu dispositivo no Microsoft Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
 1.  Toque em **Início** > **Play Store**.
 
-2.  Na caixa **Pesquisar** , digite **portal da empresa**.
+2.  Na caixa **Pesquisar** , digite **portal da empresa do Intune**.
 
 3.  Toque em **Portal para Empresas do Intune**.
 
@@ -44,7 +44,7 @@ O Portal da Empresa é um aplicativo que fornece acesso aos aplicativos e ao ema
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-Depois de baixar o aplicativo Portal da Empresa, você pode [registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md) para obter acesso completo às suas informações corporativas.
+Depois de baixar o aplicativo Portal da Empresa, provavelmente, você desejará [registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md) para obter acesso completo às suas informações corporativas.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 

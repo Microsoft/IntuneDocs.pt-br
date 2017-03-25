@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-A seção do guia deve ser usada em paralelo com outros tópicos da Seção 2. Esse design se baseará nas informações que você coletará e nas decisões que serão tomadas, concluindo as seções anteriores deste guia. Nesta seção sobre design, teremos como foco o Intune independente, que é um serviço baseado em nuvem da Microsoft que reside na nuvem.
+A seção do guia deve ser usada em paralelo com outros tópicos da Seção 2. Esse design se baseará nas informações que você coletará e nas decisões que serão tomadas, concluindo as seções anteriores deste guia. Nesta seção sobre design, teremos como foco o Intune independente, que é um serviço baseado em nuvem da Microsoft.
 
-Embora haja requisitos mínimos de infraestrutura local, ainda é recomendável trabalhar em um plano de design para garantir que você terá a solução de gerenciamento de dispositivo móvel certa que atende a suas metas, seus objetivos e requisitos.
+Embora haja requisitos mínimos de infraestrutura local, trabalhe em um plano de design para garantir que você terá a solução de gerenciamento de dispositivo móvel certa que atende a suas metas, seus objetivos e requisitos.
 
-Além disso, é comum haver alterações de design durante as fases de implementação e teste. Portanto, lembre-se de documentar todas essas alterações e o motivo, conforme elas ocorrerem. Vamos abordar as seguintes áreas:
+Além disso, é comum haver alterações de design durante as fases de implementação e teste. Portanto, lembre-se de documentar essas alterações e o motivo, conforme elas ocorrerem. Vamos abordar as seguintes áreas:
 
 -   O ambiente atual
 
@@ -409,9 +410,4 @@ Este é um exemplo de como documentar as políticas de acesso condicional:
 ## <a name="next-section"></a>Próxima seção
 
 A próxima seção fornece diretrizes sobre o [processo de implementação do Intune](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

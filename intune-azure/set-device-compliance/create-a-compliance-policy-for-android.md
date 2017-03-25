@@ -16,45 +16,24 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android na versão prévia do Intune Azure
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android no portal de visualização do Intune Azure
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As políticas de conformidade são criadas para cada plataforma.  Você pode criar uma política de conformidade no Portal do Azure. Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](what-is-device-compliance.md). Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](get-started-with-device-compliance.md).
+Políticas de conformidade do dispositivo são criadas para cada formulário de plataforma no portal de visualização do Intune Azure. 
 
-A tabela abaixo descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
+- Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](what-is-device-compliance.md).
+- Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](get-started-with-device-compliance.md).
 
---------------------
-
-|**configuração de política**| **Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior** |
-| --- | ----|
-| **Configuração de senha ou PIN** |  Em Quarentena |
-| **Criptografia de dispositivo** | Em Quarentena |
-| **Dispositivo desbloqueado ou com raiz** | Em Quarentena (não é uma configuração) |
-| **perfil de email** | Não aplicável |
-| **Versão mínima do SO** | Em Quarentena |
-| **Versão máxima do SO** |   Em Quarentena |
-| **Atestado de integridade do Windows** | Não aplicável |
-
---------------------------
-
-
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)+
-
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:+
-
-- O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
-- O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Criar uma política de conformidade no Portal do Azure
+## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
 
 1. Na folha **Intune**, escolha **Definir conformidade do dispositivo**. Em **Gerenciar**, escolha **Todas as políticas de conformidade de dispositivo** e selecione **Criar**.
 2. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
@@ -67,7 +46,7 @@ A tabela abaixo descreve como as configurações não compatíveis são gerencia
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Atribuir grupos de usuários
+## <a name="to-assign-user-groups"></a>Para atribuir grupos de usuários
 
 Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas na folha **Conformidade – Políticas**.
 
@@ -77,6 +56,26 @@ Para atribuir uma política de conformidade aos usuários, escolha uma política
 Você aplicou a política para os usuários.  A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
 
 <!---##  Compliance policy settings--->
+
+## <a name="device-health-and-security-settings"></a>Configurações de segurança e integridade do dispositivo
+
+- **O dispositivo não pode estar com jailbreak ou com raiz:** se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.
+- **Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas (Android 4.0 ou posterior)**: para bloquear dispositivos que têm a opção **Segurança** > **Fontes desconhecidas** habilitado no dispositivo, habilite essa configuração e defina-a como **Sim**.
+
+### <a name="important"></a>Importante
+
+Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** esteja habilitada. Aplique esta política de conformidade somente se você não estiver fazendo o sideload de aplicativos Android nos dispositivos.
+
+- **Exigir que a depuração de USB esteja desabilitada (Android 4.2 ou posterior)**: essa configuração especifica se a opção de detecção de depuração de USB no dispositivo de está habilitada.
+- **Exigir que os dispositivos tenham habilitado “Examinar dispositivo contra ameaças à segurança” (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
+- **Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser especificada no formato: AAAA-MM-DD.
+- **Exigir proteção contra ameaças ao dispositivo a ser habilitado**: use esta configuração para fazer a avaliação de risco da solução Lookout MTP como uma condição para conformidade. Escolha o nível máximo de ameaça permitido, que é um dos seguintes:
+  - **Nenhum (Seguro)**: este é o mais seguro. Isso significa que o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
+  - **Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Médio**: o dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.
+  - **Alto**: esta é a opção menos segura. Essencialmente, isso permite todos os níveis de ameaça. Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.
+
+Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Configurações de segurança do sistema
 
@@ -101,30 +100,35 @@ Você aplicou a política para os usuários.  A conformidade dos dispositivos us
 
 - **Exigir criptografia no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam criptografados para conectar aos recursos. Os dispositivos serão criptografados quando você escolher a configuração **Exigir uma senha para desbloquear dispositivos móveis**.
 
-## <a name="device-health-and-security-settings"></a>Configurações de segurança e integridade do dispositivo
-
-- **O dispositivo não pode estar com jailbreak ou com raiz:** se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.
-- **Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas (Android 4.0 ou posterior)**: para bloquear dispositivos que têm a opção **Segurança** > **Fontes desconhecidas** habilitado no dispositivo, habilite essa configuração e defina-a como **Sim**.
-
-### <a name="important"></a>Importante
-
-Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** esteja habilitada. Aplique esta política de conformidade somente se você não estiver fazendo o sideload de aplicativos Android nos dispositivos.
-
-- **Exigir que a depuração de USB esteja desabilitada (Android 4.2 ou posterior)**: essa configuração especifica se a opção de detecção de depuração de USB no dispositivo de está habilitada.
-- **Exigir que os dispositivos tenham habilitado “Examinar dispositivo contra ameaças à segurança” (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
-- **Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser especificada no formato: AAAA-MM-DD.
-- **Exigir proteção contra ameaças ao dispositivo a ser habilitado**: use esta configuração para fazer a avaliação de risco da solução Lookout MTP como uma condição para conformidade. Escolha o nível máximo de ameaça permitido, que é um dos seguintes:
-  - **Nenhum (Seguro)**: este é o mais seguro. Isso significa que o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
-  - **Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Médio**: o dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.
-  - **Alto**: esta é a opção menos segura. Essencialmente, isso permite todos os níveis de ameaça. Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.
-
-Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 
 - **Sistema operacional mínimo exigido**: quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar seus dispositivos após o que será possível acessar os recursos da empresa.
 - **Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e será solicitado que o usuário entre em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Como as configurações não compatíveis funcionam com políticas de acesso condicional?
+
+A tabela abaixo descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
+
+--------------------
+
+|**Configuração de política**| **Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior** |
+| --- | ----|
+| **Configuração de senha ou PIN** |  Em Quarentena |
+| **Criptografia de dispositivo** | Em Quarentena |
+| **Dispositivo desbloqueado ou com raiz** | Em Quarentena (não é uma configuração) |
+| **perfil de email** | Não aplicável |
+| **Versão mínima do SO** | Em Quarentena |
+| **Versão máxima do SO** |   Em Quarentena |
+| **Atestado de integridade do Windows** | Não aplicável |
+
+--------------------------
+
+**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)+
+
+**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:+
+
+- O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
+- O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
 
 <!--- ## Next steps
 

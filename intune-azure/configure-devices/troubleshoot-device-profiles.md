@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Quando uma política ou um aplicativo é implantado, o Intune imediatamente come
 
 Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas.  Se o dispositivo estiver offline (por exemplo, desativado ou desconectado da rede), ele poderá não receber as notificações. Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:
 
-- iOS e Mac OS X: a cada 6 horas.
+- iOS e macOS: a cada 6 horas.
 - Android: a cada 8 horas.
 - Windows Phone: a cada 8 horas.
 - Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada 8 horas.
 
 Se o dispositivo tiver sido registrado recentemente, a frequência de check-in será maior, da seguinte maneira:
 
-- iOS e Mac OS X: a cada 15 minutos por 6 horas, depois a cada 6 horas.
+- iOS e macOS: a cada 15 minutos por 6 horas, e depois a cada 6 horas.
 - Android: a cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.
 - Windows Phone: a cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.
 - Computadores Windows registrados como dispositivos: a cada 3 minutos por 30 minutos e a cada 8 horas.
@@ -499,8 +500,3 @@ Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior e iOS, prec
 
 ### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) (Como obter suporte para o Microsoft Intune).
-
-
-<!--HONumber=Feb17_HO3-->
-
-

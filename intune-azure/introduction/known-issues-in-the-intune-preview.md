@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Se desejar solicitar que um novo recurso seja adicionado ao Intune, considere en
 ## <a name="administration-and-accounts"></a>Administração e contas
 
 - Administradores globais (também conhecidos como administradores de locatários) podem continuar a executar tarefas de administração cotidianas sem uma licença separada do Intune ou EMS (Enterprise Mobility Suite). No entanto, se os administradores globais quiserem usar o serviço, como registrar seus próprios dispositivos, um dispositivo corporativo ou usar o Portal da Empresa do Intune, eles precisarão de uma licença do Intune ou EMS, assim como qualquer outro usuário.
+
+## <a name="apple-enrollment-profile-migration"></a>Migração de perfil de registro da Apple
+- Nos próximos meses, o Intune permitirá gerenciar suas inscrições do Programa de Registro de Dispositivo Apple e do Apple Configurator por meio do novo Portal do Azure. Se você excluir o token do Programa de Registro de Dispositivo Apple e não carregar um token atualizado, o token original será restaurado no novo Portal do Azure como parte da migração de sua conta do Intune. Para remover esse token e evitar o registro de DEP, basta excluir o token no Portal do Azure. 
 

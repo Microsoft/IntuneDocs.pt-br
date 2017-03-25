@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
-ms.lasthandoff: 01/17/2017
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ Ter um plano de suporte do Intune pode ser útil e uma identificação e soluç�
 
 -   Quais equipes serão responsáveis por fornecer suporte do Intune?
 
--   Caso sua organização de suporte tenha várias camadas (por exemplo, camadas 1-3), quais são as responsabilidades de suporte do Intune para cada uma delas?
+-   Caso sua organização de suporte tenha várias camadas (por exemplo, camadas 1-3), quais serão as responsabilidades de suporte do Intune para cada uma delas?
 
 -   Qual processo será usado para fornecer suporte do Intune?
 

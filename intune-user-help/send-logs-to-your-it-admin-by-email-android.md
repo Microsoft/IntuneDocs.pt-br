@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 # <a name="send-logs-to-your-it-admin-using-email"></a>Enviar logs ao administrador de TI usando o email
 
-Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empresa em seu dispositivo Android, você poderá ajudar o administrador de TI a solucionar o problema enviando informações a ele por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+Se você receber um erro enquanto estiver usando o aplicativo Portal da Empresa em seu dispositivo Android, será possível ajudar o administrador de TI a solucionar o problema enviando informações a ele por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
 
 > [!Note]
 > Para facilitar para o administrador de TI descobrir o problema, você deverá ativar o _log detalhado_. O log detalhado inclui todos os detalhes relevantes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).

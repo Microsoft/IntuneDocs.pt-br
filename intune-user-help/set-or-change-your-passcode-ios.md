@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 Se o dispositivo do iOS não estiver em conformidade com a política de senha do administrador de TI, aparecerá uma mensagem que descreve o problema rapidamente e explica o que você precisa fazer para que sua senha atenda aos requisitos.
 
-O administrador de TI pode definir mais de um requisito de senha. Por exemplo, a senha pode ter de conter um determinado número de caracteres e ser uma combinação de números, letras e caracteres. Como mais de um requisito pode ser definido, essas instruções podem explicar somente como definir ou alterar sua senha. Elas não explicam cada combinação possível de requisitos.
+O administrador de TI pode definir mais de um requisito de senha. Por exemplo, a senha pode ter de conter um determinado número de caracteres e ser uma combinação de números, letras e caracteres. Como mais de um requisito pode ser definido, essas instruções podem explicar somente como definir ou alterar sua senha. Elas não explicam cada combinação possível de requisitos. Essas senhas são usadas, por exemplo, para acessar seu dispositivo a partir da tela de bloqueio.
 
 Se você tiver problemas para configurar uma senha que atenda aos requisitos de senha, entre em contato com o administrador de TI para obter ajuda.
 
