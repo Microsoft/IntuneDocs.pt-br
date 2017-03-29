@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
 
     -   Porta 443 para https
 
-    Não há suporte para o uso de caracteres curinga no número da porta. Por exemplo, não há suporte para **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*;**.
+    Não há suporte para o uso de caracteres curinga no número da porta. Por exemplo, não há suporte para **http&colon;//www&period;contoso&period;com:*;**e**http&colon;//www&period;contoso&period;com: /*;**.
 
 -   Use a tabela a seguir para aprender sobre os padrões permitidos que você pode usar para especificar URLs:
 
@@ -156,9 +157,4 @@ Se várias políticas de navegador gerenciado forem implantadas em um dispositiv
 -   Se um dispositivo estiver recebendo políticas de navegador gerenciado pela primeira vez e houver conflito entre duas políticas, as URLs não serão impostas ao dispositivo. Use o nó **Conflitos de Política** do espaço de trabalho **Política** para ver os conflitos.
 
 -   Se um dispositivo já tiver recebido uma política de navegador gerenciado e uma segunda política for implantada com configurações conflitantes, as configurações originais permanecerão no dispositivo. Use o nó **Conflitos de Política** do espaço de trabalho **Política** para ver os conflitos.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
