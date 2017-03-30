@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -275,9 +276,4 @@ No painel do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha o b
 - [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Proteger o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

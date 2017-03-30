@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Atalhos de teclado (somente supervisionado)** – Permite o uso de atalhos de teclado.
 -     **Detecção de pulso para Apple Watch emparelhado** – Quando habilitada, o Apple Watch não exibirá notificações quando não estiver sendo usado.
 - **Exigir uma senha de emparelhamento de solicitações de saída do AirPlay** – Exigir uma senha emparelhamento quando o usuário usar AirPlay para transmitir o conteúdo para outros dispositivos da Apple.
-- **Modificação de conta (somente supervisionado)** – Permitir que o usuário altere as configurações de conta, como configurações de email.
+- **Modificação de conta (somente com supervisão)** - Quando é bloqueada, impede que o usuário modifique as configurações específicas do dispositivo no aplicativo de configurações do iOS, como a criação de novas contas de dispositivo e alteração do nome de usuário ou senha.
+Isso também se aplica às configurações acessadas no aplicativo de configurações do iOS, como Mail, Contatos, Calendário, Facebook e Twitter. Isso não se aplica a aplicativos com configurações de conta que não podem ser definidas no aplicativo de configurações do iOS, por exemplo, o aplicativo Microsoft Outlook.
 - **Emparelhamento de Apple Watch (somente supervisionado)** – Permite que o dispositivo seja emparelhado com um Apple Watch.
 - **Modificação de Bluetooth (somente supervisionado)** – Impede o usuário final de alterar as configurações de Bluetooth no dispositivo.
 - **Observação de tela remota pelo aplicativo Classroom (somente supervisionado)** – Permitir ou bloquear que o aplicativo Classroom observe a tela em dispositivos remotos.

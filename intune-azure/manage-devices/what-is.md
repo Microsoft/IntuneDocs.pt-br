@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Se um dispositivo iOS foi roubado ou perdido, você poderá habilitar o modo per
 2.    Na folha **Modo perdido**, ative o modo perdido, digite a mensagem que será exibida e, opcionalmente, um número de telefone de contato.
 3.    Clique em **OK**.
 Quando você ativa o modo perdido, bloqueia todo o uso do dispositivo. O usuário final não poderá acessar o dispositivo até que você desative o modo perdido. Enquanto o modo perdido estiver habilitado, você poderá usar a ação **Localizar dispositivo** para descobrir onde está o dispositivo.
+Para usar o modo perdido, o dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado.
 
 ### <a name="locate-device"></a>**Localizar dispositivo**
-Use esta ação remota para exibir a localização de um dispositivo iOS perdido ou roubado em um mapa. O dispositivo deve ser um dispositivo iOS corporativo no modo supervisionado. Antes de usar essa ação, o dispositivo deve ser colocado no modo perdido.
+Use esta ação remota para exibir a localização de um dispositivo iOS perdido ou roubado em um mapa. O dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado. Antes de usar essa ação, o dispositivo deve ser colocado no modo perdido.
 1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Localizar dispositivo**.
 2.    Depois do dispositivo ser localizado, o local será exibido na folha **Localizar dispositivo**. 
     ![Folha Localizar dispositivo](./media/locate-device.png)

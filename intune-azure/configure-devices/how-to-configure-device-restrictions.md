@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 14b26c06ce9f880e44167c194d1d14f78c5e7386
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: b593b2ddd756bc5bf7700eca4f2544b87008a8ab
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -46,7 +46,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
     - **Windows Phone 8.1**
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
-6. Na lista suspensa do tipo de **Perfil**, escolha **Restrições de dispositivo**. Se você quiser criar um perfil de restrições de dispositivo para dispositivos Windows 10 Team como um Surface Hub, escolha **Restrições de dispositivos (Windows 10 Team)**.
+6. Na lista suspensa de **Tipo de perfil**, escolha **Restrições de dispositivo**. Se você quiser criar um perfil de restrições de dispositivo para dispositivos Windows 10 Team como um Surface Hub, escolha **Restrições de dispositivos (Windows 10 Team)**.
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do Android](device-restrictions-for-android.md)
     - [Configurações do iOS](device-restrictions-for-ios.md)

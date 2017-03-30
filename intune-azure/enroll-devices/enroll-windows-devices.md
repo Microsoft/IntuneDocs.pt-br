@@ -5,7 +5,7 @@ description: "Versão prévia do Intune Azure: habilitar o MDM (gerenciamento de
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Use um dos métodos a seguir para configurar o registro para dispositivos do Win
  -  Você deve ter o Azure Active Directory Premium para usar esse método. Caso contrário, use o método de registro para Windows 8.1 e Windows Phone 8.1.
  -  Se você optar por não habilitar o registro automático, use o método de registro para Windows 8.1 e Windows Phone 8.1.
 
-- [**Registro do Windows 8.1 e Windows Phone 8.1 configurando CNAME**](#simplify-enrollment-by-configuring-cname)
+- [**Registro sem o registro automático do Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
  - Você deve usar esse método para registrar dispositivos Windows 8.1 e Windows Phone 8.1.
- - Você também pode usar esse método se não tiver o Azure Active Directory (AD) Premium.
-
-
-## <a name="prerequisites"></a>Pré-requisitos
-
-Se alguns dos seguintes pré-requisitos não estiverem na versão prévia do Intune Azure ainda, você precisará executá-las no console de administração clássico do Intune.
-
-- [Configurar um nome de domínio personalizado](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Definir a autoridade de MDM (gerenciamento de dispositivo móvel)](set-mdm-authority.md) como **Microsoft Intune**
-- [Configurar o aplicativo do Portal da Empresa](/intune-azure/manage-apps/company-portal-app.md)
-- Atribuir licenças a usuários
+ - Você pode usar esse método para dispositivos Windows 8.1 e posteriores se não quiser usar o Azure Active Directory (AD) Premium.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Habilitar o registro do local de trabalho do Windows
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Habilitar o registro do Windows sem o Azure AD Premium
 
 Você pode permitir aos usuários a instalação e o registro de seus dispositivos sem registro automático do Azure AD Premium. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem inserir um nome do servidor.
 
@@ -79,7 +69,7 @@ Você pode permitir aos usuários a instalação e o registro de seus dispositiv
 
     Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Você também pode direcionar os usuários para [O que meu administrador de TI poderá ver em meu dispositivo](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-    Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 Nenhum trabalho adicional é necessário, a menos que você vá implantar o Portal da Empresa em dispositivos.  As etapas 2 e 3 no console do administrador podem ser ignoradas com segurança.
 

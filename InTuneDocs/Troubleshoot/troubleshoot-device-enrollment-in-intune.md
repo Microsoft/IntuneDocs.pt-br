@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Antes de iniciar a solução de problemas, verifique se você configurou o Intun
 
 -    [Prepare-se registrar dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -    [Configurar gerenciamento de dispositivos iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Configurar o gerenciamento do Windows 10 Mobile e do Windows Phone com o Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Configurar o gerenciamento de dispositivo Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Configurar o gerenciamento de dispositivo do Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - Não há etapas adicionais necessárias
+-    [Configurar o gerenciamento de dispositivo do Android for Work](/intune/deploy-use/set-up-android-for-work)
 
 Seus usuários de dispositivo gerenciado podem coletar logs de registro e diagnóstico para você examinar. As instruções para o usuário coletar logs são fornecidas em:
 
@@ -149,7 +149,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 **Problema:** quando você adiciona um segundo domínio verificado ao seu ADFS, os usuários com o sufixo de nome UPN do segundo domínio não poderão fazer logon nos portais ou registrar dispositivos.
 
 
-**Resolução:** os clientes do Microsoft Office 365 que usam o SSO (logon único) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com)) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo. Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
+**Resolução:** os clientes do Microsoft Office 365 que usam o SSO (logon único) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo. Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
 
 ## <a name="android-issues"></a>Problemas de Android
@@ -279,6 +279,18 @@ Para corrigir o problema, os usuários devem selecionar o botão **Configurar**,
   ![Tela de Configuração de Acesso da Empresa](./media/ios_cp_app_company_access_setup.png)
 
 Depois de registrado, os dispositivos retornam ao estado íntegro e recuperam o acesso aos recursos da empresa.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>Verifique se o WS-Trust 1.3 está habilitado
+**Problema** Não é possível registrar dispositivos iOS do DEP (Programa de Registro de Dispositivo)
+
+O registro de dispositivos do Programa de Registro de Dispositivo com afinidade do usuário requer que o ponto de extremidade misto/nome do usuário do WS-Trust 1.3 esteja habilitado para solicitar tokens do usuário. O Active Directory permite esse ponto de extremidade por padrão. Você pode obter uma lista de pontos de extremidade habilitados usando o cmdlet Get-AdfsEndpoint do PowerShell e procurando o ponto de extremidade trust/13/UsernameMixed. Por exemplo:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Para saber mais, veja a [documentação do Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+Para saber mais, veja as [Práticas recomendadas para proteção dos Serviços de Federação do Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se você precisar de mais assistência para determinar se o Nome de Usuário/Misto do WS-Trust 1.3 está habilitado em seu provedor de federação de identidade, entre em contato com o Suporte da Microsoft se você usar o AD FS, ou com o fornecedor de identidade de terceiro.
+
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
 **Problema:** um usuário recebe um erro de **Falha na instalação de perfil** em um dispositivo iOS.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0cf638348df2f01d70c0765a4932abc3eb801f23
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 2c79f5f796152e930c4a952388541383ab50e595
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -41,7 +41,7 @@ Depois que você implantar a política para os grupos de usuários ou o disposit
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
+3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 2. Na folha da lista de perfis, escolha **Criar Perfil**.
 3. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** opcional para o perfil VPN.
@@ -55,7 +55,7 @@ Anote o nome do perfil de VPN para uso na etapa seguinte. Por exemplo, **MyAppVp
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
+3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, clique em **Criar Perfil**.
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil personalizado.
@@ -65,7 +65,7 @@ Anote o nome do perfil de VPN para uso na etapa seguinte. Por exemplo, **MyAppVp
 3. Na folha **Configurações personalizadas de OMA-URI**, escolha **Adicionar**.
     - Insira um nome para a configuração.
     - Para **Tipo de dados**, especifique **Cadeia de caracteres**.
-    - Para **OMA-URI**, especifique esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/PackageList**, em que *Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Nesse exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - Para **OMA-URI**, especifique esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/PackageList**, em que*Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Nesse exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
     - Em **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a serem associados ao perfil. Por exemplo, se desejar que o Excel e o navegador Google Chrome usem a conexão VPN, digite: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicativo Android](./media/android_per_app_vpn_oma_uri.png)
@@ -76,7 +76,7 @@ Como alternativa, você pode usar o valor **WHITELIST** para especificar uma lis
   1.    Na folha **Configurações personalizadas de OMA-URI**, escolha **Adicionar**.
   2.    Insira um nome para a configuração.
   3.    Para **Tipo de dados**, especifique **Cadeia de caracteres**.
-  4.    Para **OMA-URI**, use esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Em nosso exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Para **OMA-URI**, use esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que*Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Em nosso exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    Em **Valor**, digite **BLACKLIST** ou **WHITELIST**.
 
 

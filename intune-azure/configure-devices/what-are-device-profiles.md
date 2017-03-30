@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use o a carga de trabalho **Configurar dispositivos** do Microsoft Intune para gerenciar as configurações e recursos em todos os dispositivos gerenciados. Na maioria das vezes, você usará essa carga de trabalho para criar perfis de dispositivo, que permitem gerenciar e controlar um intervalo inteiro de diferentes recursos e funcionalidades em dispositivos gerenciados.
+Use o a carga de trabalho **Configuração de dispositivo** do Microsoft Intune para gerenciar as configurações e recursos em todos os dispositivos gerenciados. Na maioria das vezes, você usará essa carga de trabalho para criar perfis de dispositivo, que permitem gerenciar e controlar um intervalo inteiro de diferentes recursos e funcionalidades em dispositivos gerenciados.
 
 Quando você abrir essa carga de trabalho, verá as seguintes opções:
 
@@ -41,8 +41,13 @@ O fluxo de trabalho para a criação de perfis de dispositivo é semelhante para
 
 É possível gerenciar os seguintes recursos em seus dispositivos:
 
+## <a name="device-features"></a>Recursos de dispositivo
+
+Os recursos de dispositivo permitem que você controle os recursos em dispositivos iOS e macOS, como AirPrint, notificações e configurações compartilhadas do dispositivo.
+Para saber mais, veja [Como definir as configurações de recursos do dispositivo](how-to-configure-device-features.md) Oferece suporte a: iOS e macOS.
+
 ## <a name="device-restrictions"></a>Restrições de dispositivo
-Restrições de dispositivo permitem controlar uma grande variedade de configurações e recursos que você gerencia em uma gama de categorias, incluindo configurações de segurança, navegador, hardware e compartilhamento de dados. Por exemplo, você pode criar um perfil de restrição de dispositivo que impede que os usuários de dispositivos iOS acessem a câmera do dispositivo.
+Restrições de dispositivo permitem controlar uma grande variedade de configurações em dispositivos que você gerencia em uma gama de categorias, incluindo configurações de segurança, navegador, hardware e compartilhamento de dados. Por exemplo, você pode criar um perfil de restrição de dispositivo que impede que os usuários de dispositivos iOS acessem a câmera do dispositivo.
 Para obter mais informações, consulte [Como definir as configurações de restrição de dispositivo](how-to-configure-device-restrictions.md) Há suporte para: Android, iOS, macOS, Windows 10 e Windows 10 Team.
 
 ## <a name="email"></a>Email
@@ -57,6 +62,10 @@ Para obter mais informações, consulte [Como definir configurações de Wi-Fi](
 Redes virtuais privadas (VPN) oferecem aos usuários acesso remoto seguro à rede da empresa. Dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o servidor VPN. Use perfis de VPN para implantar configurações de VPN para usuários e dispositivos na organização, para que eles possam se conectar à rede de forma fácil e segura.
 Para obter mais informações, consulte [Como definir as configurações de VPN](how-to-configure-vpn-settings.md).
 Dá suporte a: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 e Windows 10.
+
+## <a name="education"></a>Educação
+Permite configurar opções o aplicativo Windows Take a Test. Quando você configura essas opções, nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.
+Para saber mais, veja [Como definir as configurações de educação](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>Certificados
 Esse tipo de perfil permite que você configure certificados SCEP e PKCS confiáveis que podem ser atribuídos aos dispositivos e usados para autenticar o Wi-Fi, VPN e perfis de email.

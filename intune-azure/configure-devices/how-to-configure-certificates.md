@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: d1c1833ea7fe9e794a70b2b2536f44801b68fa7e
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -79,18 +79,18 @@ Você deverá criar um perfil de certificado confiável antes de criar um perfil
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
+3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de certificado confiável.
-5. Na lista suspensa **Plataforma**, selecione a plataforma de dispositivo para esse certificado confiável. No momento, é possível escolher uma das seguintes plataformas para as configurações de restrição de dispositivo:
+5. Na lista suspensa **Plataforma**, selecione a plataforma de dispositivo para esse certificado confiável. No momento, é possível escolher uma das seguintes plataformas para as configurações de certificado:
     - **Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
-6. Na lista suspensa de tipos de **Perfil**, escolha **Certificado confiável**.
+6. Na lista suspensa de **Tipo de perfil**, escolha **Certificado confiável**.
 7. Navegue até o certificado salvo na tarefa 1 e clique em **OK**.
 8. Somente para dispositivos Windows 8.1 e Windows 10, selecione o **Repositório de Destino** para o certificado confiável de:
     - **Repositório de certificados do computador – Raiz**

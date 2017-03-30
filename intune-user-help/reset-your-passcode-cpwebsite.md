@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ Para redefinir sua senha:
 
   ![A barra de notificação de redefinição de senha com o aviso sobre como redefinir a senha do dispositivo e como o usuário será desconectado. Os botões para a entrada do usuário são Sair e Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-4.  Selecione **Sair** e você receberá uma mensagem final informando sobre a remoção da senha do dispositivo. Se você não tiver o dispositivo com você, não remova a senha, pois qualquer pessoa que tiver acesso físico ao dispositivo poderá acessar a maior parte das informações contidas nele – pessoais ou corporativas.
+5.  Selecione **Sair** e você receberá uma mensagem final informando sobre a remoção da senha do dispositivo. Se você não tiver o dispositivo com você, não remova a senha, pois qualquer pessoa que tiver acesso físico ao dispositivo poderá acessar a maior parte das informações contidas nele – pessoais ou corporativas.
 
   ![A segunda barra de notificação de redefinição de senha com o aviso sobre como redefinir a senha do dispositivo e como a senha será removida dele. Ela também informa como definir uma nova senha acessando as configurações do dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Dispositivos diferentes têm tipos diferentes de senhas.
 
-Como dispositivos diferentes têm tipos diferentes de senhas, é possível descobrir como a redefinição da senha pode afetar o dispositivo específico na tabela abaixo. 
+  **Android**: remove a senha existente e cria uma senha temporária com letras e números
 
-    |Tipo de dispositivo|O que acontece quando você redefine|
-    |------------|-----------|
-    |Android|Remove a senha existente e cria uma senha temporária com letras e números|
-    |iOS|Remove a senha existente e não cria uma senha temporária. Se você estiver usando o scanner de impressão digital de ID de Toque para abrir o dispositivo ou fazer compras, será necessário configurá-lo novamente.|
-    |Windows 10 Mobile|Remove a senha existente e cria uma senha temporária com letras e números. Se você estiver usando o reconhecimento do rosto Windows Hello para fazer logon, ele ainda terá suporte.|
-    |Windows Phone 8.1|Remove a senha existente e cria uma senha temporária com números.|
+  **iOS**: remove a senha existente e não cria uma senha temporária. Se você estiver usando o scanner de impressão digital de ID de Toque para abrir o dispositivo ou fazer compras, será necessário configurá-lo novamente.
 
-    5.  Desbloqueie seu dispositivo e defina uma nova senha ou altere a senha temporária acessando as **Configurações** de seu dispositivo.
+  **Windows 10 Mobile**: remove a senha existente e cria uma senha temporária com letras e números. Se você estiver usando o reconhecimento do rosto Windows Hello para fazer logon, ele ainda terá suporte.
+    
+  **Windows Phone 8.1**: remove a senha existente e cria uma senha temporária com números
 
-    Para ver uma notificação confirmando que sua senha foi redefinida com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
+6.  Desbloqueie seu dispositivo e defina uma nova senha ou altere a senha temporária acessando as **Configurações** de seu dispositivo.
+
+Para ver uma notificação confirmando que sua senha foi redefinida com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
