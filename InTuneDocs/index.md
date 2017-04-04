@@ -1,290 +1,1167 @@
 ---
-experimental: true
-experiment_id: lindavr-hubpage-20160925
-asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Documentação do Intune | Microsoft Docs"
-description: "Documentação técnica do Microsoft Intune - gerenciamento de dispositivos móveis e aplicativos"
-keywords: "documentação do intune, gerenciamento de aplicativos, gerenciamento de dispositivos, documentação do MDM, documentação do MAM"
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 12/20/2016
-ms.topic: hubpage
+hide_bc: true
+author: jasongroce
+ms.author: apexprodleads
 ms.service: microsoft-intune
-ms.suite: ems
-ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
+ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
+ms.topic: hub-page
+title: "Documentação do Microsoft Intune | Microsoft Docs"
+description: Saiba como usar o Microsoft Intune (FIXME)
 translationtype: Human Translation
-ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
-ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
-
+ms.sourcegitcommit: 53fb11411bef8bc581692651e6773157f0c61cb8
+ms.openlocfilehash: 84f8f39d7696a1e33af044612443f7f4eb392300
+ms.lasthandoff: 03/30/2017
 
 ---
-# <a name="intune-documentation"></a>Documentação do Intune
-<article id="main">
-    <section id="hero-content">
-      <h1>Documentação do Intune</h1>
-      <h2>Gerenciamento de dispositivo móvel e de aplicativo e gerenciamento de computador com base na nuvem. </h2>
-      <h3>Quer gerenciar o Intune com o Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Saiba mais sobre o gerenciamento de dispositivo móvel híbrido&rarr;</a></h3>
-    </section>
-    <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em destaque</h2>
-      <div class="features row">
-        <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">Mais de&150; licenças? Aproveite seus benefícios do FastTrack</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Maneiras comuns de usar o Intune</a></li>
-          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune na visualização do portal do Azure</a></li>
-        </ul>
-        <ul class="column column-half">
-          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteger o acesso aos recursos da empresa</a></li>
-          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Trabalhando com o Intune no Microsoft Graph</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Recursos sobre a experiência do usuário final com o Microsoft Intune</a></li>
-        </ul>
-      </div>
-    </section>
-    <div id="journeys">
-      <section class="container">
-        <!-- <h2 class="section-heading"><span class="icon icon-inheritance"></span> Stages</h2> -->
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                <div class="title column-third">
-                  <span class="step-number">1</span>
-                  <p>Entender &amp; explorar</p>
-                </div>
-                <p class="description column-two-thirds">Aprenda os conceitos básicos e funcionalidades do Microsoft Intune.
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>O que é o Intune?</h3>
-                    <p>Aprenda como o Intune oferece funcionalidades avançadas de gerenciamento de dados, de aplicativos e de dispositivos para dispositivos móveis (dispositivos iOS, dispositivos Android e Windows Phones) e computadores Windows.</p>
-                  </a>
+<div id="main" class="v2">
+<div class="container">
+    <h1>Documentação do Microsoft Intune</h1>
+    <ul class="pivots">
+        <li>
+            <a href="#manage">Gerenciar</a>
+            <ul id="manage">
+                <li>
+                    <a href="#manage-featured">Artigos em destaque</a>
+                    <ul id="manage-featured" class="cardsC">
+                        <li>
+                            <div>
+                                <h3>Artigos populares</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Artigos recomendados</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Novos artigos</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-portalpreview.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune na visualização do portal do Azure</a></h3>
+                                            <p>Enquanto o Microsoft Intune passa para o portal do Azure, conheça as alterações disponíveis no novo portal. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-deploymentplanning.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune/plan-design/introduction">Design e planejamento de implantação</a></h3>
+                                            <p>Percorra o processo de desenvolvimento de um plano de implantação, criação de um design, integração do Intune e realização de uma distribuição de produção.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">Como instruir os usuários finais sobre o Microsoft Intune</a></h3>
+                                            <p>Saiba como você pode fazer com que seu usuário final tenha o acesso seguro que o Intune oferece.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-microsoftgraph.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview">Trabalhar com o Intune no Microsoft Graph</a></h3>
+                                            <p>Use as APIs do Microsoft Graph para configurar os controles e políticas do Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-fasttrack.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="http://fasttrack.microsoft.com/ems">Mais de 150 licenças? Aproveite seus benefícios do FastTrack</a></h3>
+                                            <p>Trabalhe com especialistas da Microsoft para acessar, corrigir, habilitar e orientar o uso dos seus serviços.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-faq.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune/understand-explore/mam-faq">Perguntas frequentes sobre o MAM e a proteção do aplicativo</a></h3>
+                                            <p>Encontre as respostas para algumas perguntas frequentes sobre o gerenciamento de aplicativo móvel do Intune e a proteção do aplicativo do Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+<!--                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune/understand-explore/common-ways-to-use-intune">Common ways to use Intune</a></h3>
+                                            <p>Consider how Intune is commonly used to solve real-world business problems.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune/whats-new/whats-new-in-intune-app-ui">UI updates for Intune end user apps</a></h3>
+                                            <p>Learn what updates we&rsquo;ve made to the UI for apps that your end users will see in the latest release.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3><a href="/intune-azure/access-control/role-based-access-control">Role-based access control for Intune</a><h3>
+                                            <p>Find out how you can either use the built-in roles that cover some common Intune scenarios, or create your own roles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>-->
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Confira <a href="/intune/understand-explore/introduction-to-microsoft-intune">toda a documentação do Intune</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-                <li class="column-third">
-                  <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>O Intune é ideal para você?</h3>
-                    <p>Use o guia de avaliação para percorrer as etapas para configurar sua avaliação com até 100 usuários e dispositivos.</p>
-                  </a>
+                <li>
+                    <a href="#manage-intro">Introdução</a>
+                    <ul id="manage-intro" class="cardsC">
+                        <li>
+                            <a href="/intune/understand-explore/introduction-to-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-intro-whatisintune.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Introdução ao Intune</h3>
+                                            <p>Aprenda como o Intune oferece funcionalidades avançadas de gerenciamento de dados, de aplicativos e de dispositivos para dispositivos móveis e computadores Windows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/understand-explore/common-ways-to-use-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-intro-scenarios.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Cenários comuns</h3>
+                                            <p>Considere como o Intune é normalmente usado para resolver problemas de negócios reais.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Gerenciamento de dispositivos móveis no Microsoft Intune</h3>
+                                            <p>Avalie como o gerenciamento de dispositivos móveis funciona no Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+<!--                        <li>
+                            <a href="(/intune/whats-new/whats-new-in-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>What's new</h3>
+                                            <p>Evaluate how mobile device management works in Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/whats-new/whats-new-in-intune-app-ui">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>What's new in app UI</h3>
+                                            <p>Evaluate how mobile device management works in Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune-azure/introduction/whats-new">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>What's new in the Azure preview</h3>
+                                            <p>Evaluate how mobile device management works in Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>-->
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Confira <a href="/intune/understand-explore/introduction-to-microsoft-intune">toda a documentação introdutória</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-                <li class="column-third">
-                  <a href="/intune/understand-explore/common-ways-to-use-intune">
-                    <h3>Cenários comuns</h3>
-                    <p>Considere como o Intune é normalmente usado para resolver problemas de negócios reais.</p>
-                  </a>
+               <!-- <li>
+                    <a href="#manage-start">Get started</a>
+                    <ul id="manage-start" class="cardsC">
+                        <li>
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Prerequisites</h3>
+                                            <p>Before you start setting up Intune, review the requirements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Sign in</h3>
+                                            <p>Sign in with your work or school account to add Intune to your subscription environment. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Configure domains</h3>
+                                            <p>Create a DNS CNAME to simplify and customize the logon experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Add users</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Manage licenses</h3>
+                                            <p>Maecenas nec ligula hendrerit, venenatis elit id, congue nisi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Organize users and devices</h3>
+                                            <p>Fusce accumsan ante vel iaculis euismod.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Looking for all of the documentation? See <a href="/intune/get-started/get-started">all of the getting started documentation</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="#manage-plan">Planejar implantação</a>
+                    <ul id="manage-plan" class="cardsC">
+                        <li>
+                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-deployments-goals.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Determinar metas, objetivos e desafios</h3>
+                                            <p>O escope de metas, objetivos e desafios que você precisa gerenciar ao implementar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/plan-design/section-2-identify-use-case-scenarios">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Identificar os cenários de caso de uso</h3>
+                                            <p>Analise alguns exemplos de casos de uso conforme identifica os cenários de caso de uso da sua implantação. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Desenvolver um plano de distribuição</h3>
+                                            <p>Determine os grupos organizacionais que são destinados à sua distribuição do Intune e o período de tempo de distribuição para cada grupo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+<!--                        <li>
+                            <a href="/intune/plan-design/section-5-develop-a-rollout-communication-plan">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Develop a communication plan</h3>
+                                            <p>Find advice about how to communicate a rollout plan for an Intune deployment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/plan-design/section-6-develop-a-support-plan">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Develop a support plan</h3>
+                                            <p>Find advice about how to communicate a support plan, including who to contact.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/plan-design/section-7-create-an-intune-design">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Create an Intune design</h3>
+                                            <p>Identify a mobile device management solution that meets the goals and requirements for your organization. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>-->
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Confira <a href="/intune/plan-design/introduction">toda a documentação de implantação do plano</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-              </ul>
-            </section>
-          </li>
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                <div class="title column-third">
-                  <span class="step-number">2</span>
-                  <p>Introdução</p>
-                </div>
-                <p class="description column-two-thirds">Configure seu ambiente.
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Guia de introdução</h3>
-            <p>Começando no guia de avaliação de 30 dias, este tópico explica sincronização do Azure Active Directory, domínio e considerações sobre DNS e outras personalizações do Intune.</p>
-                  </a>
+                <li>
+                    <a href="#manage-howto">Como</a>
+                    <ul id="manage-howto" class="cardsC">    
+                        <li>
+                            <a href="/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-howto-conditionalpolicy.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Criar política de acesso condicional</h3>
+                                            <p>Configure o acesso condicional para o Exchange local com base na conformidade do dispositivo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune-azure/enroll-devices/set-mdm-authority">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-howto-mdm.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Definir a autoridade MDM</h3>
+                                            <p>Saiba mais sobre as opções disponíveis ao configurar a autoridade de gerenciamento de dispositivo móvel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune-azure/configure-devices/how-to-create-device-profiles">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-howto-configuredevice.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Configurar perfis do dispositivo</h3>
+                                            <p>Saiba como criar perfis de configuração do dispositivo no Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune-azure/configure-devices/how-to-configure-device-restrictions">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-howto-configurerestrictions.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Configurar restrições do dispositivo</h3>
+                                            <p>Saiba como definir as configurações de restrição de dispositivo no Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>     
+                        <li>
+                            <a href="/intune-azure/manage-apps/add-apps">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-howto-manageapps.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Gerenciar aplicativos</h3>
+                                            <p>Saiba como adicionar, atribuir e monitorar aplicativos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>     
+                        <li>
+                            <a href="/intune-azure/manage-apps/app-protection-policies">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-howto-protectaccess.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Criar e atribuir as políticas de proteção de aplicativo</h3>
+                                            <p>Saiba como criar e atribuir as políticas de proteção de aplicativo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>     
+<!--                        <li>
+                            <a href="/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Use full or selective wipe</h3>
+                                            <p>Learn how to do a factory reset of a device or selectively remove company data from a managed device.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>        
+                        <li>
+                            <a href="/intune-azure/conditional-access/install-intune-on-premises-exchange-connector">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Install Exchange on-premises connector</h3>
+                                            <p>Set up a connection that enables Intune to communicate with the Exchange Server.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Overview of device and app lifecycles</h3>
+                                            <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>-->
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Confira <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">toda a documentação de instruções</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-                <li class="column-third">
-                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
-                    <h3>Impedir vazamentos de dados da empresa de aplicativos móveis do Office 365</h3>
-                    <p>Proteja os dados de sua organização usando políticas de proteção do aplicativo que ajudam a prevenir a perda de dados da empresa.</p>
-                  </a>
+                <li>
+                    <a href="#manage-troubleshoot">Monitorar e solucionar problemas</a>
+                    <ul id="manage-troubleshoot" class="cardsC">
+                        <li>
+                            <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-troubleshoot-getsupport.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Obter suporte para o Intune</h3>
+                                            <p>Familiarize-se com as várias maneiras que a Microsoft fornece suporte técnico, de pré-vendas e de cobrança.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune-azure/introduction/known-issues-in-the-intune-preview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-troubleshoot-knownissues.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Problemas conhecidos</h3>
+                                            <p>Leia mais sobre problemas conhecidos na versão prévia do Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-troubleshoot-appdeployment.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Solucionar problemas de implantação de aplicativos</h3>
+                                            <p>Solucione problemas comuns de implantação de aplicativo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/troubleshoot/troubleshoot-device-enrollment-in-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-troubleshoot-deviceentrollment.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Solucionar problemas de registro de dispositivos</h3>
+                                            <p>Solucione problemas encontrados durante o registro de dispositivos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune-azure/configure-devices/troubleshoot-device-profiles">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-troubleshoot-deviceprofiles.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Solucionar problemas de perfis de dispositivos</h3>
+                                            <p>Solucione problemas encontrados ao criar perfis para dispositivos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/troubleshoot/troubleshoot-email-profiles-in-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-troubleshoot-emailprofiles.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Solucionar problemas de perfis de email</h3>
+                                            <p>Solucione problemas encontrados ao criar perfis para emails.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Confira <a href="/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune">toda a documentação de solução de problemas</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-                <li class="column-third">
-                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
-                    <h3>Simplificar a configuração de email em dispositivos móveis</h3>
-                    <p>Economize tempo e recursos de sua empresa implantando perfis de email (bem como de VPN e WiFi) em dispositivos móveis Windows, iOS e Android gerenciados pelo serviço Intune.</p>
-                  </a>
+            </ul>
+        </li>
+        <li>
+            <a href="#sdkstools">SDKs/Ferramentas</a>
+            <ul id="sdkstools">
+                <li>
+                    <a href="#sdkstools-all">Todos</a>
+                    <ul id="sdkstools-all" class="cardsC">                       
+                        <li>
+                            <a href="/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-getstarted-overview.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Visão geral do SDK do Aplicativo do Intune</h3>
+                                            <p>Saiba mais sobre o SDK que você pode usar para habilitar seu aplicativo para as políticas de proteção de aplicativo do Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="/intune/develop/intune-app-sdk-get-started">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-sdk-getstarted.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Introdução ao SDK de Aplicativos do Microsoft Intune</h3>
+                                            <p>Este guia aborda as principais etapas necessárias para habilitar o gerenciamento de aplicativos móveis em seu aplicativo com o Microsoft Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/develop/intune-app-sdk-ios">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-sdk-iosguide.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Guia do desenvolvedor do SDK de Aplicativos do Intune para iOS</h3>
+                                            <p>O SDK de Aplicativos do Intune para iOS inclui uma biblioteca estática, arquivos de recursos, cabeçalhos de API, uma lista de configurações de depuração e uma ferramenta do configurador.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/develop/intune-app-sdk-android">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-sdk-androidguide.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Guia de desenvolvedores do SDK de Aplicativos do Intune para Android</h3>
+                                            <p>O SDK de Aplicativos do Microsoft Intune é uma biblioteca Android padrão sem dependências externas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-featured-microsoftgraph.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Trabalhando com o Intune no Microsoft Graph</h3>
+                                            <p>Use as APIs do Microsoft Graph para configurar os controles e políticas do Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/intune-mam.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Preparar a linha de aplicativos de negócios para o MAM</h3>
+                                            <p>Habilite seus aplicativos para usar políticas de MAM (gerenciamento de aplicativo móvel) usando a Ferramenta de Encapsulamento de Aplicativo do Intune ou o SDK de Aplicativo do Intune.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li><!--
+                        <li>
+                            <a href="/intune/develop/intune-app-sdk-cordova">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Intune App SDK Cordova Plugin</h3>
+                                            <p>Enable Intune mobile app management feature in iOS and Android apps built with Cordova. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/develop/intune-app-sdk-xamarin">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/hubs/intune/placeholder.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Intune App SDK Xamarin Component</h3>
+                                            <p>Enable Intune mobile app management feature in iOS and Android apps built with Xamarin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>-->
+                        <li class="fullSpan">
+                            <div class="container">
+                                <h3>Procurando toda a documentação? Confira <a href="/intune/understand-explore/introduction-to-microsoft-intune">toda a documentação do Intune</a>.</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-              </ul>
-            </section>
-          </li>
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Implantar &amp; Usar</p>
-                </div>
-                <p class="description column-two-thirds">Gerencie dispositivos, aplicativos e dados com o Intune.
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
-                    <h3>Visão geral dos ciclos de vida do dispositivo e do aplicativo</h3>
-                    <p>Saiba mais sobre as fases típicas envolvidas com o gerenciamento de dispositivos e aplicativos usando o Intune.</p>
-                  </a>
+            </ul>
+        </li>
+        <li>
+            <a href="#moreres">Mais recursos</a>
+            <ul id="moreres">
+                <li>
+                    <a href="#moreres-all">Todos</a>
+                    <ul id="moreres-all" class="cardsF">
+                        <li>
+                            <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/common/i_feedback.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Enviar comentários sobre o Intune</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/msintune/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/common/i_twitter.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Siga o Microsoft Intune no Twitter</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/common/i_support.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Perguntar e responder a perguntas no fórum</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blogs.technet.microsoft.com/enterprisemobility/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/common/i_blog.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Leia o blog do Enterprise Mobility and Security</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/common/i_feedback.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Enviar comentários sobre o serviço do Intune</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/common/i_feedback.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Comentar a documentação do Intune</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="column-third">
-                  <a href="/intune/deploy-use/enroll-devices-in-microsoft-intune">
-                    <h3>Registrar dispositivos</h3>
-                    <p>Conheça as várias maneiras de registrar dispositivos móveis e computadores Windows para gerenciamento com o Intune.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
-                    <h3>O que dizer aos seus usuários finais</h3>
-                    <p>Entenda as etapas que os usuários finais precisam executar para usar seus dispositivos com o Intune e compartilhar essas informações com usuários finais para ajudá-los a executarem tarefas por conta própria.</p>
-                  </a>
-                </li>
-              </ul>
-          <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune">
-                    <h3>Políticas de conformidade do dispositivo</h3>
-                    <p>Criar e usar políticas de conformidade que protegem seus aplicativos e dados.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Proteger o acesso ao email e aos serviços do O365</h3>
-                    <p>Use a funcionalidade de acesso condicional do Intune para proteger o acesso ao email da empresa e aos serviços do Office 365.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies">
-                    <h3>Gerenciar configurações e recursos em seus dispositivos</h3>
-                    <p>Use políticas do Intune para controlar as configurações e recursos em seus dispositivos e computadores.</p>
-                  </a>
-                </li>
-              </ul>
-                <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/deploy-use/deploy-apps-in-microsoft-intune">
-                    <h3>Implantar aplicativos em dispositivos e computadores</h3>
-                    <p>Implante um aplicativo para usuários e dispositivos selecionados.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">
-                    <h3>Proteger dados do aplicativo</h3>
-                    <p>Você pode usar as políticas de MAM (Gerenciamento de Aplicativo Móvel) do Intune para ajudar a proteger os dados do aplicativo.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune">
-                    <h3>Redefinição de senha e bloqueio remoto</h3>
-                    <p>Proteger dispositivos perdidos ou remotos usando funcionalidades de senha e de bloqueio remoto.</p>
-                  </a>
-                </li>
-              </ul>
-        </section>
-          </li>
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/intune/develop/intune-app-sdk">
-                <div class="title column-third">
-                  <span class="step-number">4</span>
-                  <p>Desenvolver e personalizar aplicativos</p>
-                </div>
-                <p class="description column-two-thirds">Habilite o gerenciamento de aplicativos móveis para iOS e Android.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/develop/intune-app-sdk-get-started">
-                    <h3>Introdução ao SDK de Aplicativos do Microsoft Intune</h3>
-                    <p>Este guia aborda as principais etapas necessárias para habilitar o gerenciamento de aplicativos móveis em seu aplicativo com o Microsoft Intune.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/develop/intune-app-sdk-ios">
-                    <h3>Guia do desenvolvedor do SDK de Aplicativos do Intune para iOS</h3>
-                    <p>O SDK de Aplicativos do Intune para iOS inclui uma biblioteca estática, arquivos de recursos, cabeçalhos de API, um plist de configurações de depuração e uma ferramenta do configurador.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/develop/intune-app-sdk-android">
-                    <h3>Guia de desenvolvedores do SDK de Aplicativos do Intune para Android</h3>
-                    <p>O SDK de Aplicativos do Microsoft Intune é uma biblioteca Android padrão sem dependências externas.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-            </li>
-      <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
-                <div class="title column-third">
-                  <span class="step-number">5</span>
-                  <p>Solução de problemas</p>
-                </div>
-                <p class="description column-two-thirds">Recursos para ajudá-lo a solucionar problemas do Intune.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
-                    <h3>Como obter suporte para o Intune</h3>
-                    <p>Familiarize-se com as várias maneiras que a Microsoft fornece suporte técnico, de pré-vendas e de cobrança.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/troubleshoot/troubleshoot-device-enrollment-in-intune">
-                    <h3>Solucionar problemas de registro de dispositivo</h3>
-                    <p>Solucione problemas encontrados durante o registro de dispositivos.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
-                    <h3>Solucionar problemas de implantação de aplicativos no Intune</h3>
-                    <p>Solucione problemas comuns de implantação de aplicativo.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class="section-border">
-      <section class="resources container">
-      <h2 class="section-heading"><span class="icon icon-note"></span>Recursos adicionais do Intune</h2>
-      <div class="resource-list row">
-          <ul class="column-half">
-          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Enviar comentários sobre a funcionalidade do Intune</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">Enviar comentários sobre a documentação</a></li>
-          <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Downloads de documentação do Intune</a></li>
-          </ul>
-          <ul class="column-half">
-          <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center para Enterprise Mobility Suite</a></li>
-          <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Fórum do Microsoft Intune no TechNet</a></li>
-          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Visite a página do Intune</a></li>
-          </ul>
-      </div>
-      </section>
-    </div>
-    <aside class="alert alert-social">
-      <p>Mantenha o Intune atualizado</p>
-      <ol class="action-list">
-        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Blog da equipe do Intune</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune no Twitter</a></li>
-      </ol>
-    </aside>
-</article>
-
-
-
-<!--HONumber=Feb17_HO3-->
-
-
+            </ul>
+        </li>
+    </ul>
+</div>
