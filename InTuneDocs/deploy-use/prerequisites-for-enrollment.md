@@ -189,7 +189,7 @@ Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua
 - Exclua todos os aplicativos publicados destinados a dispositivos de MDM.
 - Exclua todas as políticas destinadas a dispositivos de MDM. 
 - Remova o Conector do Windows Intune por meio do Console do Configuration Manager (aplicável somente ao R2 SP1 ou abaixo).
-- Remova a assinatura do Intune clicando com o botão direito do mouse na assinatura e selecionando **Excluir**.
+-Remova a assinatura do Intune clicando com o botão direito do mouse na assinatura e selecionando **Excluir**.
 - Reinicie o Serviço SMS Executive.
 - Forneça para nós alguns usuários de exemplo para que possamos verificar, após a conclusão do processo, se as licenças do Configuration Manager foram removidas.
 
