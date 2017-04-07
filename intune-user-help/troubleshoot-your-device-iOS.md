@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 200c992caa36ca74bf3e4ad82a21099a4b7ada4c
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -37,6 +37,6 @@ ms.lasthandoff: 02/21/2017
 - [Como localizar o número de série em meu dispositivo?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Preciso atualizar meu dispositivo iOS](you-need-to-update-your-ios-device.md)
 - [Ainda não há suporte para minha versão do iOS](your-ios-version-isnt-yet-supported.md)
-- [Preciso instalar o Lookout for Work em meu dispositivo iOS](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [Preciso resolver uma ameaça encontrada pelo Lookout for Work em meu dispositivo iOS](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+- [Preciso instalar a Defesa contra Ameaças Móveis em meu dispositivo iOS](you-are-prompted-to-install-mtd-ios.md)
+- [Preciso resolver uma ameaça que a Defesa contra Ameaças Móveis encontrou em meu dispositivo iOS](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
 

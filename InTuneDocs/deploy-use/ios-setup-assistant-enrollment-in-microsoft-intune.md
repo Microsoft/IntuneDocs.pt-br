@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Adicionar dispositivos iOS para registro com o Assistente de Configuração
 
-1. No [Console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os dispositivos de propriedade corporativa** &gt; **Todos os Dispositivos** e escolha **Adicionar dispositivos**. 
+1. No [Console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os dispositivos de propriedade corporativa** &gt; **Todos os Dispositivos** e escolha **Adicionar dispositivos**.
 
    Você pode adicionar dispositivos de duas maneiras:
 
@@ -96,7 +96,7 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
     |||
     |-|-|
     |&lt;Nº de série 1&gt;|&lt;Detalhes do dispositivo nº 1&gt;|
-    |&lt;Nº de série&2;&gt;|&lt;Detalhes do dispositivo nº 2&gt;|
+    |&lt;Nº de série 2&gt;|&lt;Detalhes do dispositivo nº 2&gt;|
 
   Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
@@ -107,13 +107,13 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
   -  **Adicionar manualmente os detalhes do dispositivo**&mdash;Insira o número de série e quaisquer observações ou detalhes de até 15 dispositivos.
 
-  No painel **Examinar Dispositivos**, você pode confirmar os números de série. Você também pode decidir se deseja substituir os **Detalhes** para números de série que estão sendo importados novamente ou você pode desmarcar a caixa **Substituir** para preservar os detalhes atuais. 
+  No painel **Examinar Dispositivos**, você pode confirmar os números de série. Você também pode decidir se deseja substituir os **Detalhes** para números de série que estão sendo importados novamente ou você pode desmarcar a caixa **Substituir** para preservar os detalhes atuais.
 
-> [!NOTE] 
+> [!NOTE]
 > No console do administrador do Intune existente, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes para números de série individuais. No novo Portal do Azure, você só poderá substituir os detalhes de todos os números de série ou ignorar os novos detalhes para todos os números de série.
 
-  > [!NOTE]
-  > Se, posteriormente, você desejar remover dispositivos corporativos do gerenciamento do Intune, será necessário ir até **Por número de série do iOS** em **Dispositivos corporativos pré-registrados** e remover o número de série do dispositivo do Intune para desabilitar o registro do dispositivo. Se o Intune executar um procedimento de recuperação de desastre quando ou próximo à época em que você remover os números de série, você precisará confirmar que apenas os números de série de dispositivos ativos estão presentes nesse grupo.
+> [!NOTE]
+> Se, posteriormente, você desejar remover dispositivos corporativos do gerenciamento do Intune, será necessário ir até **Por número de série do iOS** em **Dispositivos corporativos pré-registrados** e remover o número de série do dispositivo do Intune para desabilitar o registro do dispositivo. Se o Intune executar um procedimento de recuperação de desastre quando ou próximo à época em que você remover os números de série, você precisará confirmar que apenas os números de série de dispositivos ativos estão presentes nesse grupo.
 
 2. Escolha **Avançar**.
 
@@ -128,23 +128,22 @@ Especifique o perfil para atribuir a dispositivos adicionados na lista de perfis
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exportar um perfil para ser implantado em dispositivos iOS
 
-1. No [Console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Política** &gt; **Registro de Dispositivo Corporativo** e selecione o perfil a ser implantado nos dispositivos móveis. 
+1. No [Console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Política** &gt; **Registro de Dispositivo Corporativo** e selecione o perfil a ser implantado nos dispositivos móveis.
 
 2. Escolha **Exportar** na barra de tarefas. Copie e salve a **URL do perfil**. Você fará o upload no Apple Configurator posteriormente para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
   Para dar suporte ao Apple Configurator 2, a URL do Perfil 2.0 deve ser editada. Para fazer isso, substitua este código:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    Por este código:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  Por este código:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    Você carregará essa URL do perfil para o serviço Apple DEP usando o Apple Configurator no procedimento a seguir para definir o perfil do Intune utilizado pelos dispositivos iOS.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Preparar o dispositivo com o Apple Configurator
 
@@ -180,9 +179,10 @@ Dispositivos iOS são conectados ao computador Mac e registrados para o gerencia
 
 ### <a name="distribute-devices"></a>Distribuir dispositivos
 
-Os dispositivos agora estão prontos para registro corporativo. 
+Os dispositivos agora estão prontos para registro corporativo. Desligue os dispositivos e distribua-os para os usuários. Quando os usuários ligarem seus dispositivos, o Assistente de Configuração será iniciado.
 
-Desligue os dispositivos e distribua-os para os usuários. Quando os usuários ligarem seus dispositivos, o Assistente de Configuração será iniciado.
+>[!NOTE]
+>Se uma usuária tentar registrar um dispositivo DEP, mas tiver ultrapassado seu limite de dispositivos, o registro falhará silenciosamente sem avisar o usuário.
 
 
 ### <a name="see-also"></a>Consulte também

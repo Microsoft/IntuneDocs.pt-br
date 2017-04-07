@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/13/2017
 Às vezes, podem ocorrer problemas com seu dispositivo Android, que poderão ser corrigidos pela solução de problemas. Alguns dos problemas comuns que já vimos e que você pode primeiro tentar corrigir sozinho estão listados abaixo. Para os problemas mais complexos, é recomendável contatar seu administrador de TI por meio de suas informações de contato no [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 - [Verificar a conformidade em seu dispositivo Android](check-compliance-on-your-device-android.md)
-- [Usar o Registro em Log Detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Use o log detalhado para ajudar o administrador de TI a corrigir problemas do dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Enviar logs ao administrador de TI usando o email](send-logs-to-your-it-admin-by-email-android.md)
 - [Enviar logs para o administrador de TI usando um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
 - [Enviar erros de registro para o administrador de TI](send-enrollment-errors-to-your-it-admin-android.md)
@@ -41,6 +41,6 @@ ms.lasthandoff: 03/13/2017
 - [Você precisa desligar a depuração de USB](you-need-to-turn-off-usb-debugging-android.md)
 - [Você precisa ativar a verificação de ameaças de segurança](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Seu dispositivo não atende ao patch de segurança mínima](you-need-to-update-your-device-OS-security-patch-android.md)
-- [Você é solicitado a instalar o Lookout for Work em seu dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
-- [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+- [Você precisará instalar um aplicativo de Defesa contra Ameaças Móveis em seu dispositivo Android](you-are-prompted-to-install-mtd-android.md)
+- [É necessário resolver uma ameaça encontrada pela Defesa contra Ameaças Móveis em seu dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 
