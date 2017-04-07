@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -61,7 +62,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Implante a política Abrir no gerenciamento usando o provedor de MDM de terceiros para dispositivos registrados.
+  2.  Implante Abrir na política de gerenciamento usando o provedor de MDM de terceiros para dispositivos registrados.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Exemplo 1: experiência de Admin no console do MDM de terceiros
@@ -76,9 +77,9 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 
 |Provedor de MDM de terceiros| Chave de Configuração | Tipo de valor | Valor da Configuração|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | Cadeia de caracteres | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | Cadeia de caracteres | ${userUPN} **ou** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | Cadeia de caracteres | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | Cadeia de caracteres | $EMAIL$ **ou** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | Cadeia de caracteres | ${userUPN} **ou** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>Exemplo 2: experiência do usuário final
 
@@ -95,7 +96,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 
 5.  Quando o logon for bem-sucedido, as configurações da política de proteção de aplicativo são aplicadas ao aplicativo Word.
 
-6.  Agora a transferência de dados é bem-sucedida e o documento é marcado como identidade corporativa no aplicativo. Além disso, os dados são tratados em um contexto de trabalho e as configurações da política são aplicadas de acordo.
+6.  Agora, a transferência de arquivos deu certo e o documento foi marcado como identidade corporativa no aplicativo. Além disso, o arquivo é tratado em um contexto de trabalho, e as configurações da política são aplicadas adequadamente.
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Validar configuração de UPN do usuário para EMM de terceiros
 
@@ -109,9 +110,4 @@ Primeiro, [crie e implante uma política de proteção de aplicativo](create-and
 
 ### <a name="see-also"></a>Consulte também
 [Proteger dados de aplicativo usando políticas de proteção de aplicativo com o Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

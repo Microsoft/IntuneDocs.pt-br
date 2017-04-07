@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ Há suporte para os recursos a seguir:
 -   O aplicativo de email nativo no iOS.
 
 -   Clientes de email do Exchange ActiveSync, como Gmail no Android 4 ou posterior.
-- Clientes de email do Exchange ActiveSync em dispositivos **Android para Trabalho**: há suporte apenas aos aplicativos **Gmail** e **Nine Work** no **perfil de trabalho** em dispositivos Android para Trabalho. Para que o acesso condicional funcione com o Android para Trabalho, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e também implantá-los como uma instalação obrigatória. 
+-   Clientes de email do Exchange ActiveSync em dispositivos **Android para Trabalho**: há suporte apenas aos aplicativos **Gmail** e **Nine Work** no **perfil de trabalho** em dispositivos Android para Trabalho. Para que o acesso condicional funcione com o Android para Trabalho, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e também implantá-los como uma instalação obrigatória. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > Não há suporte para o aplicativo Microsoft Outlook para Android e iOS.
 
 ## <a name="support-for-pcs"></a>Suporte para computadores
@@ -110,14 +112,12 @@ Há suporte para o seguinte:
   - **Exceções de Plataforma**: escolha **Adicionar Regra** para configurar uma regra que define os níveis de acesso para as famílias e os modelos de dispositivos móveis especificados. Como esses dispositivos podem ser de qualquer tipo, também é possível configurar os tipos de dispositivos que não têm suporte no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Regra Padrão:** para um dispositivo que não está coberto por nenhuma das outras regras, é possível optar por permitir que ele acesse o Exchange, bloqueie-o ou coloque-o em quarentena. Quando você define a regra para permitir o acesso, para dispositivos que estão registrados e são compatíveis, o acesso a email é concedido automaticamente para dispositivos iOS, Windows e Samsung KNOX. O usuário não precisa passar por nenhum processo para receber seus emails.
-
-        Em dispositivos Android que não executam o Samsung KNOX, os usuários recebem um email de quarentena, que inclui um passo a passo guiado para verificar o registro e a conformidade antes de poderem acessar o email. Se você definir a regra para bloquear o acesso ou colocar dispositivos em quarentena, todos os dispositivos serão impedidos de obter acesso ao Exchange, independentemente de já estarem registrados ou não no Intune. Para impedir que dispositivos registrados e em conformidade sejam afetados por essa regra, marque a caixa **Substituição de Regra Padrão**.
+      - Em dispositivos Android que não executam o Samsung KNOX, os usuários recebem um email de quarentena, que inclui um passo a passo guiado para verificar o registro e a conformidade antes de poderem acessar o email. Se você definir a regra para bloquear o acesso ou colocar dispositivos em quarentena, todos os dispositivos serão impedidos de obter acesso ao Exchange, independentemente de já estarem registrados ou não no Intune. Para impedir que dispositivos registrados e em conformidade sejam afetados por essa regra, marque a caixa **Substituição de Regra Padrão**.
 >[!TIP]
 >Se sua intenção for primeiro bloquear todos os dispositivos antes de conceder acesso ao email, escolha a regra Bloquear acesso ou Colocar em quarentena. A regra padrão se aplica a todos os tipos de dispositivos – portanto, os tipos de dispositivo configurados como exceções da plataforma sem suporte no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] também são afetados.
 
   - **Notificação do Usuário**: além do email de notificação enviado pelo Exchange, o Intune envia um email que contém etapas para desbloquear o dispositivo. Você pode editar a mensagem padrão para personalizá-la às suas necessidades. Caso o dispositivo do usuário esteja bloqueado antes que ele receba o email de notificação do Intune que contém instruções de correção (esse email é entregue na caixa de correio do Exchange do usuário), ele poderá usar um dispositivo desbloqueado ou outro método para acessar o Exchange e exibir a mensagem.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Isso é especialmente verdadeiro quando a **Regra Padrão** está definida como bloquear ou colocar em quarentena. Nesse caso, o usuário precisará acessar sua loja de aplicativos, baixar o aplicativo Portal da Empresa da Microsoft e registrar o dispositivo. Isso é aplicável a dispositivos iOS, Windows e Samsung KNOX. Para dispositivos que não executam o Samsung KNOX, é necessário enviar o email de quarentena para uma conta de email alternativa. O usuário precisa copiar o email em seu dispositivo bloqueado para concluir o processo de registro e conformidade.
   > [!NOTE]
   > Para que o Exchange possa enviar o email de notificação, é necessário especificar a conta usada para enviar o email de notificação.
   >
@@ -139,9 +139,4 @@ Há suporte para o seguinte:
 -   [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Proteger o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

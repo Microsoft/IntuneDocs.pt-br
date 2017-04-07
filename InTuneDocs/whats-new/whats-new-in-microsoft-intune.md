@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -28,6 +28,17 @@ Conheça as novidades nesta versão do Microsoft Intune. Você também pode desc
 > Todos esses recursos eventualmente terão suporte para implantações híbridas de clientes (Configuration Manager com o Intune). Para obter mais informações sobre os novos recursos híbridos, confira a [página Hybrid What’s New](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) (Novidades do Híbrido).
 
 ## <a name="new-capabilities"></a>Novos recursos
+
+### <a name="support-for-skycure"></a>Suporte para Skycure
+
+Agora, é possível controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Skycure, uma solução de defesa contra ameaças móveis integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos com o Skycure em execução, incluindo:
+
+- Defesa física
+- Defesa de rede
+- Defesa do aplicativo
+- Defesa de vulnerabilidades
+
+É possível configurar políticas de acesso condicional de EMS com base na avaliação de risco do Skycure habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos incompatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector de Defesa contra Ameaças Móveis do Skycure](/intune/deploy-use/skycure-mobile-threat-defense-connector).
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência do usuário para o aplicativo Portal da Empresa para Android <!--621622-->
 
@@ -51,6 +62,12 @@ Se você precisar baixar e carregar o aplicativo Portal da Empresa do Windows 10
 
 
 ## <a name="notices"></a>Avisos
+
+### <a name="support-for-ios-103"></a>Suporte para iOS 10.3
+
+A versão do iOS 10.3 começou a ser distribuída em 27 de março de 2017 para os usuários de iOS. Todos os cenários existentes do Intune MDM e MAM são compatíveis com a versão mais recente do sistema operacional Apple. Antecipamos que todas as funcionalidades existentes do Intune disponíveis atualmente para gerenciar dispositivos iOS continuarão a funcionar quando os usuários atualizarem seus dispositivos e aplicativos para o iOS 10.3.
+
+No momento, não há problemas conhecidos para compartilhar. Se você encontrar algum problema com o iOS 10.3, entre em contato com a [equipe de suporte do Intune](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Suporte aprimorado para os usuários do Android com base na China <!--720444-->
 
@@ -82,10 +99,15 @@ No início de 2017, vamos migrar nossa experiência de administração completa 
 
 Novos locatários de avaliação começarão a ver a visualização pública da nova experiência de administração no portal do Azure neste mês. Enquanto estiver no estado de visualização, os recursos e o paritário com o console do Intune existente serão entregues interativamente.
 
-A experiência de administração no portal do Azure usará o novo agrupamento já anunciado e a funcionalidade de destino. Quando seu locatário existente for migrado para a nova experiência de agrupamento, você também será migrado para visualizar a nova experiência de administração no seu locatário. Enquanto isso, se desejar testar ou examinar uma das novas funcionalidades até a migração do locatário, inscreva-se para uma nova conta de avaliação do Intune ou confira a [nova documentação](https://docs.microsoft.com/intune-azure/introduction/whats-new).
+A experiência de administração no portal do Azure usará o novo agrupamento já anunciado e a funcionalidade de destino. Quando seu locatário existente for migrado para a nova experiência de agrupamento, você também será migrado para visualizar a nova experiência de administração no seu locatário. Enquanto isso, se desejar testar ou examinar uma das novas funcionalidades até a migração do locatário, inscreva-se para uma nova conta de avaliação do Intune ou confira a [nova documentação](/intune-azure/introduction/whats-new).
 
 > [!Note]
 > Para a visualização do portal do Azure, estamos implantando atualizações este mês. No entanto, as alterações podem não estar disponíveis imediatamente devido a como o serviço do Intune é distribuído.  Vários componentes do serviço devem ser atualizados em sequência antes dos novos recursos do portal ficarem disponíveis. Procure alterações na visualização do portal do Azure na distribuição posterior deste mês. Para obter uma lista completa de alterações, consulte [O que há de novo na visualização do Microsoft Intune](/intune-azure/introduction/whats-new).
+
+### <a name="administration-roles-being-replaced-in-azure-portal"></a>Funções de administração que estão sendo substituídas no Portal do Azure
+
+As funções de administração de MAM (gerenciamento de aplicativo móvel) existentes (Colaborador, Proprietário e Somente leitura) usadas no Portal Clássico (Silverlight) estão sendo substituídas por um conjunto completo de novos RBAC (Controles de administração baseados em função) no Portal do Intune no Azure. Após a migração para o Portal do Azure, será necessário atribuir novamente essas novas funções de administração aos seus administradores. Para saber mais sobre RBAC e as novas funções, consulte [Controle de acesso baseado em função do Microsoft Intune](/intune-azure/access-control/role-based-access-control).
+
 
 ## <a name="whats-coming"></a>O que está por vir
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
-ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -29,7 +29,8 @@ ms.lasthandoff: 02/22/2017
 O Microsoft Intune pode implantar um perfil de registro que registra os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) "pelo ar". O pacote de registro pode incluir opções do assistente de instalação para o dispositivo.
 
 >[!NOTE]
->Esse método de registro não pode ser usado com o método de [gerenciador de registro de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+>O registro DEP não pode ser usado com o método de [gerenciador de registro de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+>Além disso, se os usuários registrarem dispositivos iOS (ou seja, usando o aplicativo Portal da Empresa), e os números de série desses dispositivos forem importados e receberem um perfil de DEP, o registro dos dispositivos no Intune será cancelado.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Pré-requisitos para registro de dispositivos iOS usando o gerenciamento de DEP da Apple
 
@@ -45,7 +46,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 ### <a name="get-an-encryption-key"></a>Obter uma chave de criptografia
 
-1. Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador** &gt; **Gerenciamento de Dispositivo Móvel ** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**. 
+1. Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador** &gt; **Gerenciamento de Dispositivo Móvel ** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**.
 
 2. Salve o arquivo de criptografia (.pem) localmente. O arquivo .pem é usado para solicitar um certificado de relação de confiança do portal do Programa de registro de dispositivo da Apple.
 
@@ -77,7 +78,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 2. Forneça detalhes **Gerais**, incluindo **Nome** e **Descrição**, além de especificar se os dispositivos atribuídos ao perfil têm afinidade de usuário ou pertencem a um grupo:
 
-   - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos). A MFA (autenticação multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos. Novos usuários que precisam alterar a senha ao se conectarem pela primeira vez não podem receber um prompt durante o registro em dispositivos DEP. Além disso, os usuários cujas senhas expiraram não receberão um prompt para redefinir a senha durante o registro DEP e deverão redefinir a senha em um dispositivo diferente. 
+   - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos). A MFA (autenticação multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos. Novos usuários que precisam alterar a senha ao se conectarem pela primeira vez não podem receber um prompt durante o registro em dispositivos DEP. Além disso, os usuários cujas senhas expiraram não receberão um prompt para redefinir a senha durante o registro DEP e deverão redefinir a senha em um dispositivo diferente.
 
    > [!NOTE]
    > O DEP com afinidade do usuário requer que o ponto de extremidade misto/nome do usuário do WS-Trust 1.3 esteja habilitado para solicitar o token do usuário.
@@ -154,11 +155,14 @@ Esta etapa sincroniza os dispositivos com o Serviço Apple DEP e faz com que os 
 
 ### <a name="distribute-devices-to-users"></a>Distribuir dispositivos para usuários
 
-Seus dispositivos corporativos agora podem ser distribuídos para usuários. Quando um dispositivo iOS for ativado, ele será registrado para gerenciamento pelo Intune.
+Seus dispositivos corporativos agora podem ser distribuídos para usuários. Quando um dispositivo iOS for ativado, ele será registrado para gerenciamento pelo Intune. O limite de dispositivo do usuário se aplica a dispositivos gerenciados por DEP.
+
+>[!NOTE]
+>Se uma usuária tentar registrar um dispositivo DEP, mas tiver ultrapassado seu limite de dispositivos, o registro falhará silenciosamente sem avisar o usuário.
 
 ## <a name="changes-to-intune-group-assignments"></a>Alterações em atribuições de grupo do Intune
 
-A partir de dezembro de 2016, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de Perfil de Registro Corporativo. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Durante a migração para grupos de dispositivos do Azure Active Directory, para cada grupo de dispositivos do Intune previamente atribuído por um perfil de Registro de Dispositivo Corporativo, um grupo de dispositivos dinâmico correspondente será criado no AAD com base no nome desse perfil. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+A partir de abril de 2017, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de Perfil de Registro Corporativo. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Durante a migração para grupos de dispositivos do Azure Active Directory, para cada grupo de dispositivos do Intune previamente atribuído por um perfil de Registro de Dispositivo Corporativo, um grupo de dispositivos dinâmico correspondente será criado no AAD com base no nome desse perfil. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos](prerequisites-for-enrollment.md)
