@@ -2,9 +2,9 @@
 title: Gerenciamento de DEP da Apple para dispositivos iOS | Microsoft Docs
 description: Implante um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) do iOS &quot;pelo ar&quot; para gerenciar dispositivos Apple.
 keywords: 
-author: staciebarker
-ms.author: stabar
-manager: arob98
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
@@ -45,7 +45,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 ### <a name="get-an-encryption-key"></a>Obter uma chave de criptografia
 
-1. Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador ** &gt; **Gerenciamento de Dispositivo Móvel ** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**. 
+1. Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador** &gt; **Gerenciamento de Dispositivo Móvel ** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**. 
 
 2. Salve o arquivo de criptografia (.pem) localmente. O arquivo .pem é usado para solicitar um certificado de relação de confiança do portal do Programa de registro de dispositivo da Apple.
 

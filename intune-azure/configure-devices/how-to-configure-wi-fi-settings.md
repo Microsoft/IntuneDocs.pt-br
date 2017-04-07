@@ -1,11 +1,12 @@
 ---
-title: "Como definir as configurações de Wi-Fi do Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Como definir configurações de Wi-Fi do Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: aprenda a usar o Intune para definir as conexões Wi-Fi nos dispositivos gerenciados."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: bc7d94f70c65f06d10fffa04788072e504a2d071
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 34b906301fca2e91f2c014b9959c305a39f46af1
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -47,7 +49,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
+3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de Wi-Fi.

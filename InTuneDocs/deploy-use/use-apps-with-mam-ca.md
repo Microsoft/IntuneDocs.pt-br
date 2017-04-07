@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ A seguir, temos uma lista de propriedades que são derivadas diretamente do disp
 * **Dispositivo iOS**: abra o aplicativo Microsoft Authenticator, passe o dedo para a esquerda na conta e escolha Cancelar registro.  
 * **Dispositivo Android**: desinstale o aplicativo do Portal da Empresa ou remova a conta das **Configurações do sistema**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>AC baseado em aplicativo com acesso condicional baseado na conformidade do dispositivo  
+## <a name="app-based-ca-with-device-based-ca"></a>AC baseada em aplicativo com AC baseada em dispositivo  
 
 Você pode configurar o [Acesso condicional baseado na conformidade do dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**AC do Dispositivo**) no [console do administrador do Intune](https://manage.microsoft.com) ou no [console de gerenciamento do Azure AD Premium] (https://manage.windowsazure.com). O AC do dispositivo exige que os usuários se conectem ao Exchange Online somente por meio de dispositivos gerenciados pelo Intune que estejam em conformidade com a política de conformidade do dispositivo do Intune ou computadores de domínio associado.  Se um usuário pertencer a um ou mais grupos de segurança destinados a políticas de AC baseado em aplicativo e de AC do dispositivo, o usuário deverá atender a um dos dois requisitos:
 * O aplicativo usado para acessar o serviço é um aplicativo móvel com suporte 
@@ -63,9 +62,4 @@ Você pode configurar o [Acesso condicional baseado na conformidade do dispositi
 ### <a name="see-also"></a>Consulte também
 
 [Proteger dados de aplicativo com as políticas de proteção de aplicativo](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>O que é a conformidade de dispositivo na versão prévia do Intune Azure?
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Para ajudar a proteger dados da empresa, você precisa garantir que os dispositivos usados para acessar dados e aplicativos da empresa estejam em conformidade com determinadas regras. Essas regras podem incluir o uso de um PIN para acessar os dispositivos e criptografar dados armazenados em dispositivos. Chamamos um conjunto dessas regras de **política de conformidade**.
+As políticas de conformidade de dispositivo no Intune definem as regras e configurações às quais um dispositivo deve obedecer para ser considerado compatível pelas políticas de acesso condicional do EMS e do Intune. Você também pode usar as políticas de conformidade de dispositivo para monitorar e corrigir problemas de conformidade com dispositivos. 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>Como devo usar uma política de conformidade do dispositivo?
-Você pode usar políticas de conformidade com políticas de acesso condicional para permitir que somente dispositivos que estão em conformidade com as regras de política de conformidade acessem o email e outros serviços.
+Essas regras incluem o seguinte:
 
-Você também pode usar uma política de conformidade independentemente do acesso condicional.
-Quando você usa as políticas de conformidade de forma independente, os dispositivos de destino são avaliados e relatados com o status de conformidade. Por exemplo, você pode querer obter um relatório do número de dispositivos que não estão criptografados ou quais dispositivos estão com jailbreak ou com raiz. No entanto, quando você usa as políticas de conformidade de forma independente, não há restrições de acesso aos recursos da empresa em vigor.
+- Uso de senha para acessar os dispositivos
+- Criptografia
+- Quer o dispositivo esteja desbloqueado ou com raiz
+- Versão mínima do SO obrigatória
+- Versão máxima do SO permitida
+- Requer que o dispositivo esteja no nível de Defesa Contra Ameaças Móveis
 
-Você pode implantar uma política de conformidade para usuários. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade. Para saber quanto tempo levará para que dispositivos móveis obtenham uma política após a política ser implantada, consulte Gerenciar configurações e recursos em seus dispositivos.
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>Conceitos
-Veja a seguir alguns termos e conceitos que são úteis para entender como usar políticas de conformidade.
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>Requisitos de conformidade
-Requisitos de conformidade são essencialmente regras como exigir um PIN do dispositivo ou especificar o que é necessário ou não para uma política de conformidade de criptografia.
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,14 +67,22 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>Diferenças entre o console de administração do Intune clássico e o Intune no Portal do Azure
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>Como devo usar uma política de conformidade do dispositivo?
 
+### <a name="using-ems-conditional-access"></a>Uso do acesso condicional do EMS
+Você pode usar políticas de conformidade com o acesso condicional do EMS para permitir que somente dispositivos que estão em conformidade com uma ou mais regras de política de conformidade do dispositivo acessem o email e outros recursos corporativos.
 
-Se você já usou o console de administração do Intune clássico anteriormente, observe as seguintes diferenças para ajudar na transição para o novo fluxo de trabalho de conformidade do dispositivo no Portal do Azure:
+### <a name="not-using-ems-conditional-access"></a>Não usar o acesso condicional do EMS
+Você também pode usar políticas de conformidade independentemente do acesso condicional do EMS.
+Quando você usa as políticas de conformidade de forma independente, os dispositivos de destino são avaliados e relatados com o status de conformidade. Por exemplo, você pode obter um relatório do número de dispositivos que não estão criptografados ou quais dispositivos estão desbloqueados ou com raiz. No entanto, quando você usa as políticas de conformidade de forma independente, não há restrições de acesso aos recursos da empresa em vigor.
 
+Você pode implantar uma política de conformidade para usuários. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade. Para saber quanto tempo levará para que dispositivos móveis obtenham uma política após a política ser implantada, consulte Gerenciar configurações e recursos em seus dispositivos.
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Console de administração clássica do Intune vs. Portal de visualização do Intune no Azure
+
+Se você já usou o console de administração clássica do Intune, observe as seguintes diferenças para ajudar na transição para o novo fluxo de trabalho da política de conformidade do dispositivo no portal do Azure:
 
 -   No Portal do Azure, as políticas de conformidade são criadas separadamente para cada plataforma com suporte. No console de administração do Intune, uma política de conformidade era comum a todas as plataformas com suporte.
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
@@ -81,15 +90,10 @@ Se você já usou o console de administração do Intune clássico anteriormente
 
 ##  <a name="next-steps"></a>Próximas etapas
 
-[Introdução às políticas de conformidade](get-started-with-device-compliance.md)
+[Introdução às políticas de conformidade do dispositivo](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

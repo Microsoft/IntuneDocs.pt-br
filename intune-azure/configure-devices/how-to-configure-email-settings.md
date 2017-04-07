@@ -1,5 +1,6 @@
 ---
-title: "Como definir as configurações de email do Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Como definir configurações de email do Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como configurar o Intune para criar conexões para email corporativo nos dispositivos gerenciados."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 786028412ca46d07e5180f469d07f9103f956033
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -25,7 +27,7 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As configurações de perfil de email podem ser usadas para configurar dispositivos gerenciados com as configurações necessárias para se conectar e sincronizar o email da empresa. Isso pode ajudar a garantir que as configurações sejam padronizadas em todos os seus dispositivos, bem como ajudar a reduzir as chamadas de suporte dos usuários finais que não conhecem as configurações de email corretas.
+Os perfis de email podem ser usados para configurar dispositivos gerenciados com as configurações necessárias para se conectar e sincronizar o email da empresa. Isso pode ajudar a garantir que as configurações sejam padronizadas em todos os seus dispositivos, bem como ajudar a reduzir as chamadas de suporte dos usuários finais que não conhecem as configurações de email corretas.
 
 Há suporte para o cliente de email interno na maioria das plataformas. Atualmente, não há suporte para a maioria dos aplicativos de email de terceiros.
 
@@ -42,7 +44,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
+3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de email.

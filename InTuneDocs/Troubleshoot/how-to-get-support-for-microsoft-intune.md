@@ -2,8 +2,8 @@
 title: Como obter suporte | Microsoft Docs
 description: "O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -41,15 +42,13 @@ Faça uma pergunta ou inicie uma conversa com especialistas técnicos da Microso
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de comentários do produto Microsoft Intune UserVoice
 
-Você tem comentários sobre como a Microsoft pode melhorar ainda mais o Intune? Informe-nos adicionando suas ideias no site de comentários Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). Também é possível votar nas ideias que outras pessoas adicionaram ao UserVoice. 
+Você tem comentários sobre como a Microsoft pode melhorar ainda mais o Intune? Informe-nos adicionando suas ideias no site de comentários Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). Também é possível votar nas ideias que outras pessoas adicionaram ao UserVoice.
 
 ![Página de comentários do Microsoft Intune UserVoice](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Criar um tíquete de suporte online
+## <a name="create-a-support-ticket"></a>Criar um tíquete de suporte
 
-Se você não encontrar respostas usando os recursos de autoajuda, crie um tíquete de suporte online.
-
-**Limite cada tíquete de suporte a um único problema** para nos ajudar a atendê-lo melhor. Veja o motivo:
+Se você não encontrar respostas usando os recursos de autoajuda, crie um tíquete de suporte online. **Limite cada tíquete de suporte a um único problema** para nos ajudar a atendê-lo melhor. Veja o motivo:
 
 - Os engenheiros de suporte que fornecem assistência provavelmente são especializados em áreas específicas e é mais fácil identificar os especialistas certos para ajudá-lo com o seu problema.
 - As equipes de engenharia podem priorizar o trabalho em áreas de produtos nas quais a maioria dos incidentes são gerados.
@@ -57,12 +56,15 @@ Se você não encontrar respostas usando os recursos de autoajuda, crie um tíqu
 
 Examine a [definição de um incidente de suporte](#definition-of-a-support-incident) antes de criar um tíquete de suporte.
 
-**Para criar um tíquete de suporte online**:
+### <a name="steps-to-create-an-online-support-ticket"></a>Etapas para criar um tíquete de suporte online
 
 1.  Entre no [Centro de administração do Office 365](https://portal.office.com) com suas credenciais do Intune.
+
+    Se você for cliente do Suporte Premier, poderá abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+
     >[!NOTE]
     >
-    >Os clientes do Suporte Premier podem abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+    >Os clientes do Suporte Premier devem abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Selecione o bloco de **Admin**.
 3.  À esquerda, em **Suporte**, selecione **Suporte** para abrir um tíquete.
@@ -83,9 +85,9 @@ Examine a [definição de um incidente de suporte](#definition-of-a-support-inci
 
 3.  Siga as instruções para abrir sua solicitação.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Criar um tíquete de suporte com métodos alternativos
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Etapas para criar um tíquete de suporte com métodos alternativos
 
-Siga este procedimento se sua página de suporte tiver esta aparência:
+Siga este procedimento se sua página de suporte no centro de administração do Office 365 tiver esta aparência:
 
 ![Suporte alternativo do Intune](../media/alternate-support-ui.png)
 
@@ -101,30 +103,30 @@ Siga este procedimento se sua página de suporte tiver esta aparência:
 Veja [Contatar o suporte do fornecido por telefone assistido do Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) para obter uma lista de números de telefone de suporte por país e região, horários de atendimento e idiomas com suporte para cada região.
 
 ## <a name="track-your-support-requests"></a>Acompanhar suas solicitações de suporte
-1.  Entre no [Centro de administração do Office 365](https://portal.office.com) com suas credenciais do Intune.
+1.  Entre no [centro de administração do Office 365](https://portal.office.com) com suas credenciais do administrador do Intune.
 2.  Selecione o bloco de **Admin**.
 3.  À esquerda, em **Suporte**, selecione **Solicitações de serviço**. Em seguida, você pode examinar suas solicitações.
 
-Nossas respostas iniciais às solicitações de suporte dependem da gravidade do problema. Para problemas mais graves, nossa primeira resposta para clientes Professional será dentro de duas horas. Para clientes do Suporte Premier, a resposta variará de acordo com o contrato de suporte. Esses são casos em que:
+Nossas respostas iniciais às solicitações de suporte dependem da gravidade do problema. Para problemas mais graves, nossa primeira resposta para clientes Professional será dentro de duas horas. Para clientes do Suporte Premier, a resposta variará de acordo com o contrato de suporte. Um caso é **mais grave** quando:
 
 - Um ou mais serviços não estão acessíveis ou não podem ser utilizados.
 - Prazos de produção, operações ou implantações são gravemente afetados, ou haverá um impacto drástico na produção ou na rentabilidade.
 - Vários usuários ou serviços são afetados.
 
-Para problemas moderadamente graves, nossa primeira resposta para clientes Professional será dentro de quatro horas. Para clientes do Suporte Premier, a resposta variará de acordo com o contrato de suporte.  Esses são casos em que:
+Para problemas moderadamente graves, nossa primeira resposta para clientes Professional será dentro de quatro horas. Para clientes do Suporte Premier, a resposta variará de acordo com o contrato de suporte. Um caso é **moderadamente grave** quando:
 
 - O serviço pode ser usado, mas não está funcionando bem como de costume.
 - A situação tem um impacto moderado nos negócios e pode ser tratada durante o horário comercial.
 - Um único usuário, cliente ou serviço é parcialmente afetado.
 
-Para outros problemas, nossa primeira resposta para clientes Professional será dentro de oito horas. Para clientes do Suporte Premier, a resposta variará de acordo com o contrato de suporte.  Esses são casos em que:
+Para outros problemas, nossa primeira resposta para clientes Professional será dentro de oito horas. Para clientes do Suporte Premier, a resposta variará de acordo com o contrato de suporte. Um caso é menos grave quando:
 
 - O problema tem um impacto mínimo sobre os negócios.
 - O problema é importante, mas não tem um impacto significativo imediato sobre o serviço ou a produtividade do cliente.
 - Um único usuário está enfrentando interrupção parcial, mas há uma solução alternativa aceitável.
 
 > [!NOTE]
-> **Se você usa o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Centro de Soluções do Microsoft System Center Configuration Manager e do System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar materiais avançados de autoajuda. Ele também oferece a opção de abrir uma solicitação de suporte online ou por telefone.
+> **Se você usa o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) e a documentação do [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) para encontrar materiais avançados de autoajuda. Ele também oferece a opção de abrir uma solicitação de suporte online ou por telefone.
 >
 > O suporte técnico do System Center Configuration Manager ou System Center Endpoint Protection requer um pagamento ou é diminuído dos seus contratos existentes de licenciamento ou Suporte Premier.
 
@@ -146,9 +148,4 @@ O suporte de "interrupção/reparo" está incluído nas assinaturas do Microsoft
 Se um engenheiro de suporte solicitar que você abra incidentes de suporte adicionais para problemas adicionais, entenda que isso realmente será o melhor para todos. Agradecemos pela compreensão e parceria conosco para que possamos fornecer experiências de suporte da mais alta qualidade!
 
 Para obter os preços por incidente e os níveis de gravidade, consulte [Opções de suporte profissional](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

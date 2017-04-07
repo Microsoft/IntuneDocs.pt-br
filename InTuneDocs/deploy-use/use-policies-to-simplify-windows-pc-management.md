@@ -2,8 +2,8 @@
 title: "Usar políticas para simplificar o gerenciamento de computadores Windows | Microsoft Docs"
 description: "Descreve as políticas de gerenciamento de computador Windows e as configurações para o Microsoft Intune Center."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -61,9 +62,4 @@ Consulte os seguintes recursos para obter informações sobre as políticas e co
 ### <a name="see-also"></a>Consulte também
 
 [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -38,27 +39,21 @@ Você pode usar perfis de email para configurar o cliente de email nativo nos se
 -    Windows 10 (para desktop), Windows 10 Mobile e posterior
 -    iOS 8.0 e posterior
 -    Samsung KNOX padrão (4.0 e posterior)
--    Android for Work
-
->[!NOTE]
->O Intune fornece dois perfis de email do Android for Work, um para o aplicativo Gmail e outro para o Nine Work. Esses aplicativos estão disponíveis na loja do Google Play e dão suporte a conexões com o Exchange. Para habilitar a conectividade de email, implante um desses aplicativos de email nos dispositivos dos usuários e crie e implante o perfil apropriado.
+-    Android for Work (aplicativos de email de terceiros, o aplicativo de email nativo é somente para perfil pessoal)
 
 Além de configurar uma conta de email no dispositivo, você pode definir quantos emails sincronizar e, dependendo do tipo de dispositivo, os tipos de conteúdo a serem sincronizados.
 
->[!NOTE]
->
->Se o usuário tiver instalado um perfil de email antes de configurar um perfil pelo Intune, o resultado da implantação do perfil de email do Intune dependerá da plataforma de dispositivo:
+Se o usuário tiver instalado um perfil de email antes de configurar um perfil pelo Intune, o resultado da implantação do perfil de email do Intune dependerá da plataforma de dispositivo:
 
->**iOS**: um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O perfil de email duplicado criado pelo usuário bloqueia a implantação de um perfil criado pelo administrador do Intune. Esse é um problema comum, pois usuários do iOS normalmente criam um perfil de email e, depois, se registram. O portal da empresa informa o usuário de que ele não é compatível devido ao seu perfil de email configurado manualmente e solicita que o usuário remova esse perfil. O usuário deve remover seu perfil de email para que o perfil do Intune possa ser configurado. Para evitar o problema, instrua os usuários a se registrarem antes de instalar um perfil de email e permitirem que o Intune configure o perfil.
+**iOS**<br>Um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O perfil de email duplicado criado pelo usuário bloqueia a implantação de um perfil criado pelo administrador do Intune. Esse é um problema comum, pois usuários do iOS normalmente criam um perfil de email e, depois, se registram. O portal da empresa informa o usuário de que ele não é compatível devido ao seu perfil de email configurado manualmente e solicita que o usuário remova esse perfil. O usuário deve remover seu perfil de email para que o perfil do Intune possa ser configurado. Para evitar o problema, instrua os usuários a se registrarem antes de instalar um perfil de email e permitirem que o Intune configure o perfil.
 
->**Windows**: um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O Intune substitui o perfil de email existente criado pelo usuário.
+**Windows**<br>Um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O Intune substitui o perfil de email existente criado pelo usuário.
 
->**Samsung KNOX**: um perfil de email existente e duplicado é detectado com base no endereço de email e é substituído pelo perfil do Intune. Se o usuário configurar essa conta, ela será substituída novamente pelo perfil do Intune. Observe que isso pode causar confusão para o usuário.
+**Samsung KNOX**<br>Um perfil de email existente e duplicado é detectado com base no endereço de email e é substituído pelo perfil do Intune. Se o usuário configurar essa conta, ela será substituída novamente pelo perfil do Intune. Observe que isso pode causar confusão para o usuário.
 
->Como o Samsung KNOX não usa o nome do host para identificar o perfil, é recomendável que você não crie vários perfis de email para usar com o mesmo endereço de email em hosts diferentes, pois eles substituirão uns aos outros.
+Como o Samsung KNOX não usa o nome do host para identificar o perfil, é recomendável que você não crie vários perfis de email para usar com o mesmo endereço de email em hosts diferentes, pois eles substituirão uns aos outros.
 
->**Android for Work**: o perfil do Intune se aplica somente a aplicativos de email específicos no perfil de trabalho do dispositivo e não afeta a configuração de email no perfil do usuário do dispositivo.
-
+**Android for Work**<br>O Intune fornece dois perfis de email do Android for Work, um para o aplicativo Gmail e outro para o Nine Work. Esses aplicativos estão disponíveis na Google Play Store, são instalados no perfil de trabalho do dispositivo e dão suporte a conexões com o Exchange. Para habilitar a conectividade de email, implante um desses aplicativos de email nos dispositivos dos usuários e crie e implante o perfil apropriado. Aplicativos de email, como o Nine Work podem não ser gratuitos. Examine os detalhes de licenciamento do aplicativo ou entre em contato com a empresa do aplicativo com quaisquer perguntas.
 
 ## <a name="secure-email-profiles"></a>Proteger perfis de email
 Você pode proteger perfis de email usando um certificado ou uma senha.
@@ -105,7 +100,7 @@ A senha não está contida no perfil do email, portanto o usuário deve fornecê
     |**Endereço de email**|Como o endereço de email do usuário em cada dispositivo é gerado. Selecione **Endereço SMTP Primário** para usar o endereço SMTP primário para fazer logon no Exchange ou use **Nome UPN** para usar o nome da entidade completo como o endereço de email.|
     |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.|
     |**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado do protocolo SCEP cliente que você criou anteriormente e que será usado para autenticar a conexão do Exchange. Para obter mais informações sobre como usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado). Essa opção é exibida somente quando o método de autenticação é **Certificados**.|
-    |**Usar S/MIME** (Samsung KNOX e iOS)|Enviar email de saída usando a criptografia de S/MIME.|
+    |**Usar S/MIME** (Samsung KNOX e iOS)|Enviar email de saída usando a assinatura de S/MIME.|
     |**Certificado de autenticação** (Samsung KNOX e iOS)|Selecione o certificado de autenticação que será usado para assinar o email de saída. Esta opção é exibida somente quando você seleciona **Usar S/MIME**.|
     |**Número de dias de email para sincronizar**|O número de dias de email que você deseja sincronizar, ou selecione **Ilimitado** para sincronizar todos os emails disponíveis.|
     |**Agenda de sincronização** (Android for Work, Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda segundo a qual os dispositivos sincronizarão dados do Exchange Server. Você também pode selecionar **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo deve iniciar a sincronização.|
@@ -136,9 +131,4 @@ Um resumo de status e alertas na página **Visão geral** do espaço de trabalho
 > [!NOTE]
 > - Para o Android for Work, implante também os aplicativos Gmail ou Nine Work além do perfil de email apropriado.
 > - Se você quiser remover um perfil de email de um dispositivo, edite a implantação e remova todos os grupos dos quais o dispositivo é membro. Observe que você não poderá remover um perfil de email dessa forma se este for o único perfil de email em um dispositivo.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

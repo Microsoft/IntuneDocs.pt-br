@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Neste tópico, você aprenderá mais sobre o que é necessário antes de poder começar a criar uma política de conformidade do dispositivo e uma visão rápida sobre o que pode ser visto e realizado no Portal do Azure. Se a conformidade do dispositivo for novidade para você, poderá ser útil ler este tópico para aprender o que é a conformidade do dispositivo e como você poderá usá-la na sua empresa.
+Neste tópico, você aprenderá o seguinte: 
+
+- O que é necessário antes de você começar a criar uma política de conformidade do dispositivo.
+- Uma visão rápida sobre o que você pode ver e fazer no portal de visualização do Intune Azure. 
+
+Se a conformidade do dispositivo for novidade para você, poderá ser útil ler [este tópico](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) para aprender o que é a conformidade do dispositivo e como você poderá usá-la em sua organização.
 
 ##  <a name="pre-requisites"></a>Pré-requisitos
-
 
 -   Uma assinatura do Intune
 
 -   Uma assinatura do Azure Active Directory
 
-
-
 ##  <a name="supported-platforms"></a>Plataformas com Suporte:
-
 
 -   Android
 
@@ -54,8 +55,7 @@ Neste tópico, você aprenderá mais sobre o que é necessário antes de poder c
 
 ##  <a name="azure-portal-workflow"></a>Fluxo de trabalho do Portal do Azure
 
-
-Esta é uma visão geral de como você pode criar e gerenciar a conformidade do dispositivo no Portal do Azure.
+Esta é uma visão geral de como você pode criar e gerenciar a conformidade do dispositivo no portal de visualização do Intune Azure.
 
 <!---### Overview
 

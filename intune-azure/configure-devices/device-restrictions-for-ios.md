@@ -1,11 +1,12 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para iOS | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Configurações de restrições de dispositivo do Intune para iOS"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: conheça as configurações do Intune que você pode usar para controlar as configurações do dispositivo e as funcionalidades dos dispositivos iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2b8bf6d3944f9968d0f4020fbb5c57ef8180062c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -45,11 +47,12 @@ ms.lasthandoff: 02/16/2017
 -     **Pesquisa por definição de palavra (somente supervisionado)** – Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.
 -     **Teclados preditivos (somente supervisionado)** – Permitir o uso de teclados preditivos que sugerem palavras que o usuário pode querer.
 -     **Correção automática (somente supervisionado)** – Permite que o dispositivo corrija automaticamente palavras incorretas.
--     **Verificação ortográfica do teclado (somente supervisionada) ** – Permite usar o verificador de ortografia do dispositivo.
+-     **Verificação ortográfica do teclado (somente supervisionada)** – Permite usar o verificador de ortografia do dispositivo.
 -     **Atalhos de teclado (somente supervisionado)** – Permite o uso de atalhos de teclado.
 -     **Detecção de pulso para Apple Watch emparelhado** – Quando habilitada, o Apple Watch não exibirá notificações quando não estiver sendo usado.
 - **Exigir uma senha de emparelhamento de solicitações de saída do AirPlay** – Exigir uma senha emparelhamento quando o usuário usar AirPlay para transmitir o conteúdo para outros dispositivos da Apple.
-- **Modificação de conta (somente supervisionado)** – Permitir que o usuário altere as configurações de conta, como configurações de email.
+- **Modificação de conta (somente com supervisão)** - Quando é bloqueada, impede que o usuário modifique as configurações específicas do dispositivo no aplicativo de configurações do iOS, como a criação de novas contas de dispositivo e alteração do nome de usuário ou senha.
+Isso também se aplica às configurações acessadas no aplicativo de configurações do iOS, como Mail, Contatos, Calendário, Facebook e Twitter. Isso não se aplica a aplicativos com configurações de conta que não podem ser definidas no aplicativo de configurações do iOS, por exemplo, o aplicativo Microsoft Outlook.
 - **Emparelhamento de Apple Watch (somente supervisionado)** – Permite que o dispositivo seja emparelhado com um Apple Watch.
 - **Modificação de Bluetooth (somente supervisionado)** – Impede o usuário final de alterar as configurações de Bluetooth no dispositivo.
 - **Observação de tela remota pelo aplicativo Classroom (somente supervisionado)** – Permitir ou bloquear que o aplicativo Classroom observe a tela em dispositivos remotos.
@@ -220,7 +223,7 @@ Use as informações nesta lista para identificar o nome, o editor e a ID do pac
 -     **Biblioteca de Fotos do iCloud** – Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.    As fotos que não forem totalmente baixadas na biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção for definida como **Não**.
 -     **Sincronizar aplicativos gerenciados com a nuvem** – Permitir que os aplicativos que você gerencia com o Intune sincronizem dados com a conta do iCloud do usuário.
 -     **Fluxo de fotos compartilhado** – Defina como **Não** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo.
--     **Continuação da atividade** – Permitir que o usuário continue, em outro dispositivo iOS ou Mac OS X, o trabalho iniciado em um dispositivo iOS (Handoff).
+-     **Continuação da atividade** – Permitir que o usuário continue, em outro dispositivo iOS ou macOS, o trabalho iniciado em um dispositivo iOS (Handoff).
 
 ## <a name="kiosk"></a>Quiosque
 -     **Bloqueio de Ativação** – Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.

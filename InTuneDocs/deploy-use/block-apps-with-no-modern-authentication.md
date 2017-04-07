@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 0e1fa2341c0f74492a0ef80d0054922052bbe561
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: b2d708e35a7993ff7c5e3db170b1025794b33baf
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -25,22 +26,15 @@ ms.openlocfilehash: 0e1fa2341c0f74492a0ef80d0054922052bbe561
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-O acesso condicional para aplicativos com políticas de MAM (AC de MAM) se baseia nos aplicativos que usam [autenticação moderna](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), que é uma implementação do OAuth2. Os aplicativos do Office mais recentes, tanto os móveis como os de área de trabalho, usam autenticação moderna; no entanto, há aplicativos de terceiros e aplicativos do Office mais antigos que usam outros métodos de autenticação, como autenticação básica e autenticação baseada em formulários.
+O acesso condicional baseado em aplicativo com políticas de proteção de aplicativo depende de aplicativos usando a [autenticação moderna](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) que é uma implementação do OAuth2. Os aplicativos do Office mais recentes, tanto os móveis como os de área de trabalho, usam autenticação moderna; no entanto, há aplicativos de terceiros e aplicativos do Office mais antigos que usam outros métodos de autenticação, como autenticação básica e autenticação baseada em formulários.
 
 Para bloquear o acesso a esses aplicativos, recomendamos o seguinte:
 
 * Configure as regras de declarações do ADFS para bloquear protocolos de autenticação não moderna. Instruções detalhadas são fornecidas no cenário 3 – [bloquear todo o acesso ao O365, exceto aplicativos baseados em navegador](https://technet.microsoft.com/library/dn592182.aspx).
 
 >[!IMPORTANT]
->O AC de MAM não deve ser usado com a autenticação baseada em certificado do Azure Active Directory (Azure AD). Só é possível ter um deles configurado de cada vez.
-
-
+>O AC baseado em aplicativo não deve ser usado com a autenticação baseada em certificado do Azure AD (Azure Active Directory). Só é possível ter um deles configurado de cada vez.
 
 ### <a name="see-also"></a>Consulte também
 [Permitir que somente aplicativos em que há suporte para o Intune acessem os serviços do O365](allow-policy-managed-apps-access-to-o365.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

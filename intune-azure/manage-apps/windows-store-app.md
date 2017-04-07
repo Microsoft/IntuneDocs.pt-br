@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e6e6ba0aae5da25b3f8b07326a2e323c75268ff5
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -51,3 +51,7 @@ ms.lasthandoff: 02/18/2017
 8. Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**.
 
 O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
+
+## <a name="sign-the-windows-10-company-portal-app"></a>Assinar o aplicativo do Portal da Empresa do Windows 10
+Para clientes que precisam baixar e carregar o aplicativo de Portal da Empresa do Windows 10, agora você pode usar um script para simplificar e facilitar o processo de autenticação de aplicativo para sua organização. Para baixar o script e as instruções de uso, confira [Script de assinatura do Microsoft Intune](https://aka.ms/win10cpscript) do Portal da Empresa do Windows 10 na Galeria do TechNet.
+

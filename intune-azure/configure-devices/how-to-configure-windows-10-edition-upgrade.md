@@ -1,22 +1,24 @@
 ---
-title: "Configurar atualizações da edição do Windows 10 com o Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Configurar atualizações da edição do Windows 10 com o Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como usar o Intune para atualizar os dispositivos com Windows 10 que você gerencia."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,9 +29,10 @@ ms.lasthandoff: 02/16/2017
 
 Use as informações neste tópico para aprender a configurar um perfil de atualização da edição do Windows 10. Este perfil permite atualizar automaticamente os dispositivos que executam uma das seguintes versões do Windows 10 para uma edição mais recente:
 
-- Windows 10 Desktop
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
+
 
 Há suporte para os seguintes caminhos de atualização:
 
@@ -37,6 +40,7 @@ Há suporte para os seguintes caminhos de atualização:
 - Do Windows 10 Home para o Windows 10 Enterprise
 - Do Windows 10 Mobile para o Windows 10 Mobile Enterprise
 - Do Windows 10 Holographic Pro para o Windows 10 Holographic Enterprise
+
 
 ## <a name="before-you-start"></a>Antes de começar
 Antes de começar a atualizar os dispositivos para a versão mais recente, será necessário o seguinte:
@@ -48,7 +52,7 @@ Antes de começar a atualizar os dispositivos para a versão mais recente, será
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
+3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de atualização de edição.

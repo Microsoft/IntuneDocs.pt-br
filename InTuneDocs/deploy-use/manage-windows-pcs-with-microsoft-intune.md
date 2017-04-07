@@ -2,8 +2,8 @@
 title: Gerenciar computadores com software cliente | Microsoft Docs
 description: Gerenciar computadores Windows instalando o software cliente do Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

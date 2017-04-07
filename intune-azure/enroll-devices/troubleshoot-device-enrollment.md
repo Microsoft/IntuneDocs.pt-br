@@ -3,8 +3,8 @@ title: Solucionar problemas de registro de dispositivo
 titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como solucionar problemas de registro do dispositivo."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

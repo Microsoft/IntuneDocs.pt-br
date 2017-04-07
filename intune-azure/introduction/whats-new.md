@@ -1,11 +1,12 @@
 ---
-title: "Novidades na versão prévia do Microsoft Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Novidades da visualização do Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Descubra as novidades da visualização do Intune Azure"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
-ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 586bdab54ee60ba8d620857ab3506aa27622d17a
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -25,6 +27,60 @@ ms.lasthandoff: 02/15/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Conforme o andamento da versão prévia pública e à medida que mais recursos forem adicionados, nós os apresentaremos aqui.
+
+> [!Note]
+> Estamos distribuindo as alterações listadas nesta página para visualização do portal do Azure. No entanto, as alterações podem não estar disponíveis imediatamente devido a como o serviço do Intune é atualizado.  Vários componentes do serviço devem ser atualizados em sequência antes dos novos recursos do portal ficarem disponíveis. Procure essas alterações na distribuição posterior deste mês.
+
+## <a name="march-2017"></a>Março de 2017
+
+### <a name="support-for-ios-lost-mode---431695--"></a>Suporte para o Modo Perdido do iOS<!--431695-->
+
+Para o iOS 9.3 e dispositivos posteriores, o Intune adicionou suporte para o **Modo Perdido**. Agora, você pode bloquear um dispositivo para impedir o uso e exibir uma mensagem e número de telefone de contato da tela de bloqueio do dispositivo.
+
+O usuário final não conseguirá desbloquear o dispositivo até que um administrador desative o Modo Perdido. Quando o Modo Perdido é habilitado, você pode usar a ação **Localizar dispositivo** para exibir a localização geográfica do dispositivo em um mapa no console do Intune.
+
+O dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado.
+
+Para obter mais informações, consulte [O que é gerenciamento de dispositivos do Microsoft Intune](/intune-azure/manage-devices/what-is)?
+
+### <a name="improvements-to-device-actions-report---677150--"></a>Aprimoramentos para o relatório de Ações de Dispositivo <!--677150-->
+
+Fizemos aprimoramentos no relatório de Ações de Dispositivo para melhorar o desempenho. Além disso, agora você pode filtrar o relatório por estado. Por exemplo, você pode filtrar o relatório para mostrar somente as ações do dispositivo que foram concluídas.
+
+### <a name="actions-for-non-compliance---730266--"></a>Medidas para não conformidade <!--730266-->
+
+**Ações de não conformidade** é um novo recurso das políticas de conformidade que permite tomar medidas em relação a dispositivos que estão fora de conformidade. É possível especificar uma ou várias ações e especificar o período em que essas ações devem ocorrer. Por exemplo, é possível notificar por email os usuários de dispositivos que não estão em conformidade imediatamente depois que os dispositivos passarem para esse estado ou impedir que os dispositivos que não estão em conformidade acessem recursos corporativos após um período de cortesia de três dias por meio do Acesso Condicional.
+
+### <a name="custom-app-categories---748805--"></a>Categorias de aplicativo personalizadas <!--748805-->
+
+Agora você pode criar, editar e atribuir categorias aos aplicativos adicionados ao Intune. Atualmente, as categorias podem ser especificadas apenas em inglês.
+Consulte [como adicionar um aplicativo ao Intune](/intune-azure/manage-apps/add-apps).
+
+### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>Atribuir aplicativos LOB para usuários com dispositivos não registrados <!--748823-->
+
+Agora você pode atribuir aplicativos de linhas de negócios e aplicativos da loja aos usuários, independentemente de seus dispositivos estarem registrados ou não no Intune. Se o dispositivo do usuário não estiver registrado no Intune, ele deverá ir para o site Portal da Empresa para instalá-lo, em vez do aplicativo Portal da Empresa.
+
+### <a name="new-compliance-reports---846671--"></a>Novos relatórios de conformidade <!--846671-->
+
+Agora você tem relatórios de conformidade que dão a postura de conformidade de dispositivos na sua empresa e permitem que você solucione rapidamente problemas relacionados à conformidade encontrados pelos usuários. Você pode exibir informações sobre
+
+- Estado de conformidade geral de dispositivos
+- Estado de conformidade para uma configuração individual
+- Estado de conformidade para uma política individual
+
+Você também pode usar esses relatórios para uma busca detalhada em um dispositivo individual para exibir as configurações específicas e as diretivas que afetam esse dispositivo.
+
+<!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+
+- Windows 10 Professional
+- Windows 10 Professional N
+- Windows 10 Professional Education
+- Windows 10 Professional Education N --->
+
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acesso direto aos cenários de registro da Apple <!--951869-->
+
+Para contas do Intune criadas depois de janeiro de 2017, o Intune habilitou o acesso direto aos cenários de registro da Apple usando a carga de trabalho de registrar dispositivos na Versão Prévia do Portal do Azure. Anteriormente, a visualização de registro da Apple só estava acessível a partir de links no portal clássico do Intune. As contas do Intune criadas antes de janeiro de 2017 exigirão uma migração única antes de esses recursos estarem disponíveis no Azure. A agenda de migração ainda não foi anunciada, mas os detalhes serão disponibilizados assim que possível. É altamente recomendável criar uma conta de avaliação para testar a nova experiência se sua conta existente não puder acessar a visualização.
+
 
 ## <a name="february-2017"></a>Fevereiro de 2017
 
@@ -47,7 +103,13 @@ Agora você pode criar, editar e atribuir categorias aos aplicativos adicionados
 Consulte [como adicionar um aplicativo ao Intune](/intune-azure/manage-apps/add-apps).
 
 ### <a name="display-device-categories---814654--"></a>Exibir categorias de dispositivos <!--814654-->
-Agora você pode exibir a categoria de dispositivo como uma coluna na lista de dispositivos. Você também pode editar a categoria da seção de propriedades da folha de propriedades do dispositivo. Consulte [como adicionar um aplicativo ao Intune](/intune-azure/manage-apps/add-apps). 
+Agora você pode exibir a categoria de dispositivo como uma coluna na lista de dispositivos. Você também pode editar a categoria da seção de propriedades da folha de propriedades do dispositivo. Consulte [como adicionar um aplicativo ao Intune](/intune-azure/manage-apps/add-apps).
+
+### <a name="configure-windows-update-for-business-settings---776716--"></a>Definir as configurações do Windows Update para Empresas <!--776716-->
+
+O Windows como um Serviço é a nova maneira de fornecer atualizações para o Windows 10. Começando no Windows 10, quaisquer novas Atualizações de Recursos e Atualizações de Qualidade terão o conteúdo de todas as atualizações anteriores. Isso significa que contanto que você tenha instalado a atualização mais recente, sabe que seus dispositivos do Windows 10 estão completamente atualizados. Ao contrário das versões anteriores do Windows, agora você deve instalar a atualização inteira, em vez de parte de uma.
+
+Usando o Windows Update para Empresas, você pode simplificar a experiência de gerenciamento da atualização para que não precise aprovar as atualizações individuais para os grupos de dispositivos. Você ainda pode gerenciar os riscos em seus ambientes configurando uma estratégia de distribuição de atualização e o Windows Update irá assegurar que as atualizações sejam instaladas no momento certo. O Microsoft Intune fornece a capacidade de definir as configurações da atualização nos dispositivos e oferece a capacidade de adiar a instalação da atualização. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acessam o Windows Update diretamente para as atualizações. Use o Intune para configurar e gerenciar os **anéis de atualização do Windows 10**. Um anel de atualização contém um grupo de configurações que definem quando e como as atualizações do Windows 10 são instaladas. Para obter detalhes, consulte [Definir as configurações do Windows Update para Empresas](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
 
 ## <a name="january-2017"></a>Janeiro de 2017
 

@@ -2,8 +2,8 @@
 title: "Pré-requisitos para registro de dispositivo móvel | Microsoft Docs"
 description: "Configure os pré-requisitos de MDM (gerenciamento de dispositivo móvel) e prepare-se para registrar diferentes sistemas operacionais."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article
@@ -189,7 +189,7 @@ Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua
 - Exclua todos os aplicativos publicados destinados a dispositivos de MDM.
 - Exclua todas as políticas destinadas a dispositivos de MDM. 
 - Remova o Conector do Windows Intune por meio do Console do Configuration Manager (aplicável somente ao R2 SP1 ou abaixo).
-- Remova a assinatura do Intune clicando com o botão direito do mouse na assinatura e selecionando **Excluir**.
+-Remova a assinatura do Intune clicando com o botão direito do mouse na assinatura e selecionando **Excluir**.
 - Reinicie o Serviço SMS Executive.
 - Forneça para nós alguns usuários de exemplo para que possamos verificar, após a conclusão do processo, se as licenças do Configuration Manager foram removidas.
 

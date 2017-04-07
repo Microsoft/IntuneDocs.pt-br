@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -56,6 +57,13 @@ Essas condições podem ser exibidas para cada dispositivo no Portal de gerencia
      -     Um dispositivo iOS pode ficar parado em um estado de verificação de conformidade, impedindo que o usuário inicie outro check-in. Reiniciar o portal da empresa pode corrigir isso, e o estado da conformidade refletirá o estado do dispositivo no Intune. Depois que todos os dados forem coletados de uma sincronização de dispositivo, a verificação de conformidade será rápida, levando em média menos da metade de uma segundo.
 
         Normalmente, o motivo para os dispositivos permanecerem nesse estado é porque eles estão com problemas de conexão com o serviço ou a sincronização está levando muito tempo.  Se o problema persistir em diferentes configurações de rede (celular, Wi-Fi, VPN), após várias reinicializações do dispositivo e após a verificação de que o SSP está atualizado no dispositivo, entre em contato com o Suporte da Microsoft conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
+ - Para dispositivos Android:
+     - Certos dispositivos Android parecem ser criptografados, mas o aplicativo de Portal da Empresa reconhece esses dispositivos como não criptografados. 
+    
+        -    Os dispositivos nesse estado exigem que o usuário defina uma senha de inicialização segura. O usuário verá uma notificação do dispositivo no aplicativo Portal da Empresa solicitando uma senha de inicialização para o dispositivo. Depois de tocar na notificação do dispositivo e confirmar o PIN existente ou a senha, escolha a opção **Exigir PIN para iniciar o dispositivo** na tela **Proteger inicialização**. Em seguida, toque no botão **Verificar Conformidade** do dispositivo no aplicativo Portal da Empresa. Agora o dispositivo deve ser detectado como criptografado.
+    
+        -     Alguns fabricantes de dispositivos criptografam seus dispositivos usando um PIN padrão em vez do PIN secreto definido pelo usuário. O Intune reconhece a criptografia usando o PIN padrão como inseguro, pois esse método de criptografia pode colocar os dados no dispositivo em risco, podendo ser acessados por usuários mal-intencionados com acesso físico ao dispositivo. Se esse for o problema, considere o uso de [políticas de proteção do aplicativo](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de política
 
@@ -159,9 +167,4 @@ Para habilitar o log detalhado:
 
 ### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

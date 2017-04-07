@@ -2,8 +2,8 @@
 title: "Exibir o inventário de hardware e software para computadores Windows | Microsoft Docs"
 description: "Como exibir informações de hardware e software sobre áreas de trabalho do Windows gerenciadas como computadores com o cliente de software do Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 8425cee511cdd54e051a93a10a941142c33df893
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -66,8 +67,3 @@ O Intune coleta informações detalhadas sobre o hardware e software de áreas d
 ### <a name="see-also"></a>Consulte também
 
 [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

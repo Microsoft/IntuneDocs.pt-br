@@ -1,9 +1,10 @@
 ---
-title: "Registrar dispositivos iOS – Apple Configurator-Assistente de Configuração | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Registrar dispositivos iOS – Apple Configurator – Assistente de Configuração"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: aprenda a usar o Apple Configurator para registrar dispositivos iOS corporativos com o Assistente de Configuração."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,15 +14,16 @@ ms.technology:
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b2d2e4e0210526ff70b86526bd0b2e17bab0286b
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>Registrar dispositivos iOS com o Apple Configurator e o Assistente de Configuração 
+# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>Registrar dispositivos iOS com o Apple Configurator e o Assistente de Configuração
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -100,50 +102,39 @@ Depois de criar o perfil e atribuir os números de série, você precisará expo
 3. Na folha do perfil, selecione **Exportar Perfil**.
 
 4. Copie a URL do perfil para o [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) com o dispositivo iOS anexado. Você fará o upload no Apple Configurator posteriormente para definir o perfil do Intune utilizado pelos dispositivos iOS.
-
   Para dar suporte ao Apple Configurator 2, a URL do Perfil 2.0 deve ser editada. Para fazer isso, substitua este código:
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
     Por este código:
-
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-
-   Você carregará essa URL do perfil para o serviço Apple DEP usando o Apple Configurator no procedimento a seguir para definir o perfil do Intune utilizado pelos dispositivos iOS.
+Você carregará essa URL do perfil para o serviço Apple DEP usando o Apple Configurator no procedimento a seguir para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
 5. Carregue essa URL do perfil para o serviço Apple DEP usando o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
+ 1.  Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
 
+  > [!WARNING]
+  > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você conectar o dispositivo.
 
-    1.  Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
+  2. No painel de **preferências**, selecione **Servidores** e escolha o símbolo de mais (+) para inicializar o assistente do Servidor MDM. Escolha **Avançar**.
 
-         > [!WARNING]
-         > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você conectar o dispositivo.
+  3. Insira o **Nome** e a **URL do Registro** para o servidor MDM da etapa 6 em Registro do Assistente de Configuração para dispositivos iOS com o Microsoft Intune. Para URL de Registro, insira a URL do perfil de registro exportada do Intune. Escolha **Avançar**.  
 
-    2. No painel de **preferências**, selecione **Servidores** e escolha o símbolo de mais (+) para inicializar o assistente do Servidor MDM. Escolha **Avançar**.
+  Você pode desconsiderar com segurança um aviso indicando "URL do servidor não verificada". Para continuar, clique em **Avançar** até que o assistente seja concluído.
 
-    3. Insira o **Nome** e a **URL do Registro** para o servidor MDM da etapa 6 em Registro do Assistente de Configuração para dispositivos iOS com o Microsoft Intune. Para URL de Registro, insira a URL do perfil de registro exportada do Intune. Escolha **Avançar**.  
+  4.  Conecte os dispositivos móveis iOS ao computador Mac com um adaptador USB.
 
-       Você pode desconsiderar com segurança um aviso indicando "URL do servidor não verificada". Para continuar, clique em **Avançar** até que o assistente seja concluído.
+  > [!WARNING]
+  > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você iniciar o Assistente de Configuração.
 
-    4.  Conecte os dispositivos móveis iOS ao computador Mac com um adaptador USB.
-
-        > [!WARNING]
-        > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você iniciar o Assistente de Configuração.
-
-    5.  Selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e, em seguida, selecione **Avançar**.
-
-    6. No painel **Registrar no Servidor MDM**, selecione o nome do servidor que você criou e escolha **Avançar**.
-
-    7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Avançar**.
-
-    8. No painel **Criar uma Organização**, escolha **Organização** ou crie uma nova organização e escolha **Avançar**.
-
-    9. No painel **Configurar o Assistente de Instalação do iOS**, escolha as etapas que serão apresentadas ao usuário e escolha **Preparar**. Se solicitado, autentique para atualizar as configurações de confiança.  
-
-    10. Quando o dispositivo iOS concluir a preparação, desconecte o cabo USB.  
-
+  5.  Selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e, em seguida, selecione **Avançar**.
+  6. No painel **Registrar no Servidor MDM**, selecione o nome do servidor que você criou e escolha **Avançar**.
+  7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Avançar**.
+  8. No painel **Criar uma Organização**, escolha **Organização** ou crie uma nova organização e escolha **Avançar**.
+  9. No painel **Configurar o Assistente de Instalação do iOS**, escolha as etapas que serão apresentadas ao usuário e escolha **Preparar**. Se solicitado, autentique para atualizar as configurações de confiança.  
+  10. Quando o dispositivo iOS concluir a preparação, desconecte o cabo USB.  
 6.  **Distribuir dispositivos**.
     Os dispositivos agora estão prontos para registro corporativo. Desligue os dispositivos e distribua-os para os usuários. Quando os usuários ligarem seus dispositivos, o Assistente de Configuração será iniciado.
 

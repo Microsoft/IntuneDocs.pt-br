@@ -2,9 +2,9 @@
 title: Configurar o gerenciamento de dispositivo Windows com o Microsoft Intune | Microsoft Docs
 description: "Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows com o Microsoft Intune."
 keywords: 
-author: staciebarker
-manager: stabar
-ms.date: 02/15/2017
+author: NathBarn
+manager: angrobe
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: f66bc5a26f137f62defef4a83a36b22247be4ec1
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -27,13 +27,13 @@ ms.lasthandoff: 02/18/2017
 
 Use um dos métodos a seguir para configurar o registro para dispositivos do Windows:
 
-- [**Registro automático do Windows 10 e Windows 10 Mobile com o Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
+- [**Registro automático do Windows 10 e Windows 10 Mobile com o Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  Esse método é aplicável somente a dispositivos Windows 10 e Windows 10 Mobile.
  -  Você deve ter o Azure Active Directory Premium para usar esse método. Caso contrário, use o método de registro para Windows 8.1 e Windows Phone 8.1.
  -  Se você optar por não habilitar o registro automático, use o método de registro para Windows 8.1 e Windows Phone 8.1.
 
 
-- [**Registro do Windows 8.1 e Windows Phone 8.1 configurando CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
+- [**Registro do Windows 8.1 e Windows Phone 8.1 configurando CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - Você deve usar esse método para registrar dispositivos Windows 8.1 e Windows Phone 8.1.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -41,17 +41,18 @@ Use um dos métodos a seguir para configurar o registro para dispositivos do Win
 ## <a name="set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname"></a>Configurar o registro do Windows 8.1 e Windows Phone 8.1 configurando CNAME
 Você pode permitir que os usuários instalem e registrem seus dispositivos usando o Portal da Empresa do Intune. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem inserir um nome do servidor.
 
-1. **Configurar Intune**<br>
+### <a name="step-1-set-up-intune"></a>Etapa 1: Configurar o Intune
+
 Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo móvel [configurando a autoridade de MDM (gerenciamento de dispositivo móvel)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e configure o MDM.
 
-2. **Criar CNAMEs** (opcional)<br>
+### <a name="step-2-create-cnames-optional"></a>Etapa 2: Criar CNAMES (opcional)
+
 Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
 
-    Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME do registro, os usuários deverão inserir manualmente o nome do servidor MDM: https://enrollment.manage.microsoft.com.
+   Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum CNAME de registro, os usuários deverão inserir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-
-    Registros de recursos de CNAME devem conter as seguintes informações:
+   Registros de recursos de CNAME devem conter as seguintes informações:
 
   |TYPE|Nome do host|Aponta para|TTL|
   |--------|-------------|-------------|-------|
@@ -66,16 +67,15 @@ Criar registros de recurso DNS **CNAME** para o domínio da sua empresa. Por exe
 
   Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com. Alterações em registros DNS podem levar até 72 horas para serem propagadas. Você não pode verificar a alteração do DNS no Intune até que o registro DNS seja propagado.
 
-3.  **Verificar CNAME**<br>No [console de administração do Intune](http://manage.microsoft.com), escolha **Admin** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Windows**. Digite a URL do domínio verificado do site na empresa na caixa **Especificar um Nome de Domínio Verificado** e escolha **Testar Detecção Automática**.
+### <a name="step-3-verify-cname"></a>Etapa 3: Verificar CNAME
 
-4.  **Diga aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento.**
+No [console de administração do Intune](http://manage.microsoft.com), escolha **Admin** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Windows**. Digite a URL do domínio verificado do site na empresa na caixa **Especificar um Nome de Domínio Verificado** e escolha **Testar Detecção Automática**.
 
-    Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
+### <a name="step-4-tell-your-users-how-to-enroll-their-devices-and-what-to-expect-after-theyre-brought-into-management"></a>Etapa 4: Dizer aos usuários como registrar seus dispositivos e o que esperar quando eles forem incluídos no gerenciamento.
 
-    Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+   Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).
 
-Para obter mais informações sobre tarefas do usuário final, consulte estes artigos:       - [Recursos sobre a experiência do usuário final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-      - [Diretrizes do usuário final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
+   Para obter mais informações sobre as tarefas do usuário final, consulte [Como instruir os usuários finais sobre o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) e [Diretrizes do usuário final para dispositivos Windows](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune).
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)

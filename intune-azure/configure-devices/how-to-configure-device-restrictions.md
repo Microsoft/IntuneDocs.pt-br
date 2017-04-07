@@ -1,5 +1,6 @@
 ---
-title: "Definir configurações de restrição de dispositivo do Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "Definir configurações de restrição de dispositivo do Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: aprenda a usar o Intune para definir configurações e recursos nos dispositivos gerenciados."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: c6293e9c669266203705a8fe06c323869dc7881f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: b593b2ddd756bc5bf7700eca4f2544b87008a8ab
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -44,7 +46,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
     - **Windows Phone 8.1**
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
-6. Na lista suspensa do tipo de **Perfil**, escolha **Restrições de dispositivo**. Se você quiser criar um perfil de restrições de dispositivo para dispositivos Windows 10 Team como um Surface Hub, escolha **Restrições de dispositivos (Windows 10 Team)**.
+6. Na lista suspensa de **Tipo de perfil**, escolha **Restrições de dispositivo**. Se você quiser criar um perfil de restrições de dispositivo para dispositivos Windows 10 Team como um Surface Hub, escolha **Restrições de dispositivos (Windows 10 Team)**.
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do Android](device-restrictions-for-android.md)
     - [Configurações do iOS](device-restrictions-for-ios.md)

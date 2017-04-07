@@ -2,8 +2,8 @@
 title: Desativar dispositivos | Microsoft Docs
 description: "O Intune dá suporte ao apagamento seletivo e ao apagamento completo para remover o dispositivo do gerenciamento do Intune removendo suas políticas e o portal da empresa."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
 ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -77,9 +78,4 @@ Você também deseja revogar a licença da conta de usuário Intune do funcioná
 
 ### <a name="see-also"></a>Consulte também
 [Ajudar a proteger os dados com apagamento completo ou seletivo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

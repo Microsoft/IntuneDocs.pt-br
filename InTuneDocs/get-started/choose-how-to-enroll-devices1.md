@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +38,4 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
 - **Dispositivos de usuários** – registro "BYOD" (Traga seu próprio dispositivo): os usuários podem instalar o aplicativo de Portal da Empresa do Intune em seu dispositivo e registrá-lo, obtendo acesso a recursos da empresa como email, aplicativos da empresa, dados da empresa e suporte.  
 
 - **Dispositivos da empresa**: COD (dispositivos da empresa) podem ser registrados de diversas maneiras, dependendo das necessidades da organização e dos tipos de dispositivos gerenciados.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

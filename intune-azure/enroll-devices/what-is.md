@@ -1,9 +1,10 @@
 ---
-title: "O que é o registro de dispositivo do Microsoft Intune | Versão prévia do Intune Azure | Microsoft Docs"
+title: "O que é o registro do dispositivo do Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba mais sobre o registro de dispositivos iOS, Android e Windows."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 Este tópico descreve o registro e as diferentes maneiras de registrar dispositivos móveis no gerenciamento do Intune.
 
-Os dispositivos, incluindo computadores Windows, são registrado no Intune, para que você possa gerenciá-los. Chamamos essa funcionalidade na documentação do Intune de MDM (gerenciamento de dispositivo móvel). Quando dispositivos são registrados como dispositivos móveis (não como PCs), eles são recebem um certificado do MDM, que os dispositivos usam para se comunicar com o serviço Intune. 
+Os dispositivos, incluindo computadores Windows, são registrado no Intune, para que você possa gerenciá-los. Chamamos essa funcionalidade na documentação do Intune de MDM (gerenciamento de dispositivo móvel). Quando dispositivos são registrados como dispositivos móveis (não como PCs), eles são recebem um certificado do MDM, que os dispositivos usam para se comunicar com o serviço Intune.
 
 A maneira como você registra seus dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. O registro de BYOD (Traga seu próprio dispositivo) permite que os usuários registrem seus telefones, tablets ou computadores pessoais. O registro de CODs (dispositivos de propriedade corporativa) permite cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados.
 
@@ -58,7 +59,7 @@ A tabela a seguir mostra os métodos de registro do Intune e os requisitos e rec
 
 | **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sim|    Sim |    Não | Mais informações em breve|
+|**[BYOD](#byod)** | Não |    Sim |    Não | Mais informações em breve|
 |**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-devices-using-device-enrollment-manager.md)|
 
 **Métodos de registro do Android**
@@ -76,7 +77,7 @@ Usuários de “Traga seu próprio dispositivo” instalam o aplicativo de Porta
 CODs (dispositivos de propriedade corporativa) podem ser gerenciados com o Portal do Azure. Dispositivos iOS podem ser registrados diretamente por meio das ferramentas fornecidas pela Apple. Todos os tipos de dispositivo podem ser registrados por um administrador ou gerente usando o gerenciador de registro do dispositivo. Dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa para habilitar cenários de COD.
 
 ### <a name="dem"></a>DEM
-O Gerenciador de registro do dispositivo é um conta especial do usuário usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](enroll-devices-using-device-enrollment-manager.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
+O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](enroll-devices-using-device-enrollment-manager.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
@@ -87,7 +88,7 @@ O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar 
 Para saber mais sobre o registro de iOS, consulte:
 
 - [Escolha como registrar dispositivos iOS](choose-ios-enrollment-method.md)
-- [Registre dispositivos iOS usando o Programa de registro de dispositivos](enroll-ios-devices-using-device-enrollment-program.md). 
+- [Registrar dispositivos iOS usando o Programa de registro de dispositivos](enroll-ios-devices-using-device-enrollment-program.md)
 - [Voltar à tabela acima](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ Os administradores de TI usam o Apple Configurator, por USB, para preparar manua
 Para saber mais sobre o registro de iOS, consulte:
 
 - [Decidir como registrar dispositivos iOS](choose-ios-enrollment-method.md)
-- [Registrar dispositivos iOS com o Configurator e o Assistente de Configuração](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). 
+- [Registrar dispositivos iOS com o Configurator e o Assistente de Configuração](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Para o registro direto, o administrador deve registrar todos os dispositivos manualmente criando uma política de registro e exportando-a para o Apple Configurator. Dispositivos conectados por USB e corporativos são registrados diretamente sem a necessidade de uma redefinição de fábrica. Os dispositivos são gerenciados como dispositivos sem usuário. Eles não são bloqueados ou supervisionados e não dão suporte a acesso condicional, detecção de jailbreak ou gerenciamento de aplicativo móvel. 
+Para o registro direto, o administrador deve registrar todos os dispositivos manualmente criando uma política de registro e exportando-a para o Apple Configurator. Dispositivos conectados por USB e corporativos são registrados diretamente sem a necessidade de uma redefinição de fábrica. Os dispositivos são gerenciados como dispositivos sem usuário. Eles não são bloqueados ou supervisionados e não dão suporte a acesso condicional, detecção de jailbreak ou gerenciamento de aplicativo móvel.
 
 Para saber mais sobre o registro de iOS, consulte:
 

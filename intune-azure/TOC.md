@@ -1,12 +1,13 @@
 # Introdução
 ## [O que é a visualização do Portal do Azure?](introduction/what-is-microsoft-intune.md)
+## [Recursos do Intune no Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Introdução
 <!---(introduction/get-started.md) --->
 ### [Inscreva-se para uma avaliação gratuita](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Novidades](introduction/whats-new.md)
 ## [Problemas conhecidos](introduction/known-issues-in-the-intune-preview.md)
 ## [Obter suporte](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -33,6 +34,7 @@
 ### [Obtenha um token DEP da Apple](enroll-devices/get-apple-dep-token.md)
 ### [Escolha como registrar dispositivos iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Como
+### [Atribuir licenças a usuários](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Registrar dispositivos Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Registrar dispositivos iOS
 #### [Registrar dispositivos iOS usando o Assistente de Configuração](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
@@ -41,7 +43,7 @@
 #### [Registrar dispositivos iOS usando o programa de registro de dispositivos](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Registrar dispositivos usando o gerenciador de registro de dispositivo](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrar dispositivos macOS](enroll-devices/enroll-macos-devices.md)
-### [Registrar dispositivos Windows](enroll-devices/enroll-window-devices.md)
+### [Registrar dispositivos Windows](enroll-devices/enroll-windows-devices.md)
 ### Gerenciar registro do dispositivo
 #### [Criar termos e condições](enroll-devices/create-terms-and-conditions.md)
 #### [Definir restrições de registro](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +110,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Como
 ### [Configurar perfis do dispositivo](configure-devices/how-to-create-device-profiles.md)
+
+### [Configurar recursos do dispositivo](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Configurar restrições do dispositivo](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -138,6 +145,7 @@
 #### [Windows 8.1 e Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Definir configurações de atualização de edição do Windows 10](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Definir as configurações do Windows Update for Business](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configurar certificados](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -168,6 +176,8 @@
 ### [Criar política de conformidade do Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Criar política de conformidade iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Criar política de conformidade Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Criar Ações para não conformidade](set-device-compliance/actions-for-noncompliance.md)
+### [Monitorar a conformidade do dispositivo](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 

@@ -1,11 +1,12 @@
 ---
-title: "Configurar a infraestrutura de certificado do Intune para o PKCS | Versão prévia do Intune Azure | Microsoft Docs"
+title: Configurar a infraestrutura de certificado do Intune para PKCS
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: saiba como configurar sua infraestrutura para usar certificados PKCS com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
+ms.lasthandoff: 03/13/2017
 
 
 
@@ -84,12 +86,12 @@ Nesta tarefa, você publicará o modelo de certificado.
     -   Na guia **Extensões** , verifique se a **Descrição das Políticas de Aplicativo** inclui **Autenticação de Cliente**.
 
         > [!IMPORTANT]
-        > Para modelos de certificado do iOS e Mac OS X, na guia **Extensões**, edite **Uso da Chave** e verifique se **A assinatura é uma prova de origem** não está selecionado.
+        > Para modelos de certificado do iOS e macOS, na guia **Extensões**, edite **Uso da Chave** e verifique se a opção **A assinatura é uma prova de origem** não está selecionada.
 
 2.  Examine o **Período de validade** na guia **Geral** do modelo. Por padrão, o Intune usa o valor configurado no modelo. No entanto, você tem a opção de configurar a AC para permitir que o solicitante especifique um valor diferente, que você pode definir de dentro do Console do administrador do Intune. Se você quiser usar sempre o valor no modelo, ignore o restante desta etapa.
 
     > [!IMPORTANT]
-    > As plataformas do iOS e Mac OS X sempre usam o valor definido no modelo, independentemente de outras configurações que você fizer.
+    > O iOS e o macOS sempre usam o valor definido no modelo, independentemente de outras configurações que você fizer.
 
     Para configurar a AC para permitir que o solicitante especifique o período de validade, execute os seguintes comandos na AC:
 

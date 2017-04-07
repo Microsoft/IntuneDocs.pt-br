@@ -2,10 +2,10 @@
 title: Configurar o gerenciamento do iOS e do Mac | Microsoft Docs
 description: "Habilite MDM (gerenciamento de dispositivo móvel) para dispositivos iOS, inclusive iPads e iPhones, bem como dispositivos Mac OS X com o Microsoft Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,19 +49,14 @@ O Intune habilita o MDM (gerenciamento de dispositivo móvel) de iPads, iPhones 
 
 5.  **Informe aos usuários como registrar seus dispositivos para obter acesso aos recursos da empresa.**
 
-    Para obter instruções sobre o registro de usuário final, confira [Registrar seu dispositivo iOS no Intune](../enduser/enroll-your-device-in-intune-ios.md) e [Registrar seu dispositivo macOS no Intune](../enduser/enroll-your-device-in-intune-macos.md). O processo de registro informa aos usuários o que eles podem esperar, e o que os administradores de TI podem e não podem ver em seus dispositivos.
+    Para obter instruções sobre o registro de usuário final, confira [Registrar seu dispositivo iOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) e [Registrar seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). O processo de registro informa aos usuários o que eles podem esperar, e o que os administradores de TI podem e não podem ver em seus dispositivos.
 
     Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
     - [Recursos sobre a experiência do usuário final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [Diretrizes do usuário final para dispositivos iOS e Mac](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [Diretrizes do usuário final para dispositivos iOS e Mac](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Se sua empresa ou organização adquirir dispositivos iOS para os usuários, esses dispositivos também poderão ser registrados para gerenciamento como [dispositivos iOS de propriedade da empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 ### <a name="see-also"></a>Consulte Também
 [Pré-requisitos para registro no Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

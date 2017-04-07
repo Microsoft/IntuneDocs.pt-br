@@ -1,5 +1,6 @@
 ---
-title: "Como atribuir aplicativos a grupos | Versão prévia do Intune Azure | Microsoft Docs"
+title: Como atribuir aplicativos aos grupos
+titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: depois de adicionar um aplicativo ao Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
 
 > [!NOTE]
 > No momento, é possível atribuir aplicativos iOS e Android (tanto linha de negócios quanto comprados na loja) a dispositivos que não são registrados com o Intune.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Mudanças na forma de atribuir aplicativos a grupos na visualização do Intune
+
+Na visualização do Intune Azure, você não usa mais os grupos do Intune para atribuir aplicativos, agora você usa os grupos de segurança do Azure AD (Azure Active Directory). Por isso, você precisará conhecer algumas alterações para a forma como as atribuições do aplicativo funcionam, particularmente quando tiver atribuído aplicativos a grupos filho do Intune.
+O mais importante a ser observado é que o conceito de grupos filho não existe no Azure AD. No entanto, alguns grupos podem conter os mesmos membros. Nesse caso, o comportamento entre o Intune clássico e a visualização do Intune Azure é diferente. A tabela a seguir ilustra isso:
+
+||||||
+|-|-|-|-|-|
+|**Intune clássico (antes da migração de locatário)**|-|**Intune Azure (após locatário migração ser concluída)**|-|**Mais informações**|
+|**Tentativa de implantação de grupo pai**|**Tentativa de implantação de grupo filho**|**Tentativa de atribuição resultante para membros comuns do grupo pai e filho anterior**|**Ação de tentativa de atribuição resultante para membros do grupo pai**|-|    
+|Disponível|Necessária|Necessária e Disponível|Disponível|Necessária e Disponível significa que os aplicativos atribuídos conforme necessário também podem ser vistos no aplicativo Portal da Empresa.
+|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução alternativa: remova a tentativa de implantação 'Não Aplicável' do grupo pai do Intune.
+|Necessária|Disponível|Necessária e Disponível|Necessária|-|
+|Necessária e Disponível<sup>1</sup>|Disponível|Necessária e Disponível|Necessária e Disponível|-|    
+|Necessária|Não Aplicável|Necessária|Necessária|-|    
+|Necessária e Disponível|Não Aplicável|Necessária e Disponível|Necessária e Disponível|-|    
+|Necessária|Desinstalar|Necessária|Necessária|-|    
+|Necessária e Disponível|Desinstalar|Necessária e Disponível|Necessária e Disponível|-|
+<sup>1</sup> Apenas para aplicativos da iOS Store gerenciados, quando você os adiciona ao Intune e os implanta como Necessários, eles são criados automaticamente com as tentativas Necessária e Disponível.
+
+Você pode executar as seguintes ações para evitar conflitos de implantação:
+
+1.    Se você tiver implantado aplicativos para grupos pai e filho do Intune relacionados, considere remover essas implantações antes de começar a migração do locatário.
+2.    Remover grupos filho de grupos pai e criar um novo grupo que contém os membros do grupo filho antigo. Você pode, então, criar uma nova implantação de aplicativo para esse grupo.
+Observações: se o grupo pai anterior era "Todos os Usuários", você precisará criar um novo grupo dinâmico que não inclui membros do grupo filho.
+É necessário fazer alterações em grupos no [Portal do Azure](https://portal.azure.com/) para grupos de usuários e de dispositivos. O [Portal Clássico do Azure](https://manage.windowsazure.com/) permitirá que você faça alterações apenas em grupos de usuários.
+
 
 ## <a name="how-to-assign-an-app"></a>Como atribuir um aplicativo
 
