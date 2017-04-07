@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -65,7 +66,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 - **Exigir uma senha quando o dispositivo volta do estado ocioso**: use essa configuração em conjunto com **Minutos de inatividade antes que a senha seja exigida**. O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
 ### <a name="email-profile"></a>Perfil de email
-- **A conta de email deve ser gerenciada pelo Intune **: quando essa opção é definida como **Sim**, o dispositivo deve usar o perfil de email implantado no dispositivo. O dispositivo é considerado incompatível nas seguintes situações:
+- **A conta de email deve ser gerenciada pelo Intune**: quando essa opção é definida como **Sim**, o dispositivo deve usar o perfil de email implantado no dispositivo. O dispositivo é considerado incompatível nas seguintes situações:
   - O perfil de email é implantado em um grupo de usuários diferente do grupo de usuários que é destino da política de conformidade.
   - O usuário já configurou uma conta de email no dispositivo que corresponde ao perfil de email do Intune implantado no dispositivo. Intune não pode substituir o perfil de usuário provisionado e, portanto, não é capaz de gerenciá-lo. Para garantir a conformidade, o usuário deve remover as configurações de email existentes. Depois, o Intune pode instalar o perfil de email gerenciado.
 
@@ -82,9 +83,4 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar o dispositivo. Depois disso, ele pode acessar recursos da empresa.
 
 - **Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
