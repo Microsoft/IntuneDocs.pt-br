@@ -1,6 +1,6 @@
 ---
 title: "Conector de defesa contra ameaças móveis do Skycure | Microsoft Docs"
-description: "Proteja o acesso aos recursos da empresa com base no risco do dispositivo, rede e aplicativo com o conector de Defesa Contra Ameaças Móveis do Skycure e com o Intune."
+description: "Proteja o acesso aos recursos da empresa com base no risco do dispositivo, da rede e do aplicativo usando o conector de Defesa contra Ameaças Móveis do Skycure e o Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/21/2017
 
 ---
 
-# <a name="skycure-mobile-threat-defense-connector"></a>Conector da Defesa contra Ameaças Móveis do Skycure
+# <a name="skycure-mobile-threat-defense-connector"></a>Conector de Defesa contra Ameaças Móveis do Skycure
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -44,7 +44,7 @@ O aplicativo móvel do Skycure para Android e iOS captura o sistema de arquivos,
 
 A política de conformidade do dispositivo do Intune inclui uma regra para defesa contra ameaças móveis do Skycure, que tem base na avaliação de risco do Skycure. Quando essa regra é habilitada, o Intune avalia a conformidade do dispositivo com a política habilitada.
 
-Se o dispositivo for considerado fora de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online serão bloqueados. Os usuários em dispositivos bloqueados recebem orientação do aplicativo móvel do Skycure para resolver o problema e recuperar o acesso aos recursos corporativos.
+Se o dispositivo for considerado fora de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online serão bloqueados. Os usuários com dispositivos bloqueados recebem orientação do aplicativo móvel do Skycure para resolver o problema e recuperar o acesso aos recursos corporativos.
 
 O Intune dá suporte a dois modos de integração com o Skycure:
 
@@ -58,7 +58,7 @@ Confira alguns cenários comuns:
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>Controlar o acesso com base em ameaças de aplicativos mal-intencionados
 
-Quando aplicativos mal-intencionados, como malware, são detectados nos dispositivos, é possível bloquear dispositivos até que a ameaça seja resolvida:
+Quando aplicativos mal-intencionados, como malwares, são detectados nos dispositivos, é possível bloquear os dispositivos até que a ameaça seja resolvida:
 
 -   Conectar-se ao email corporativo
 
@@ -120,11 +120,11 @@ Estas são as etapas que precisam ser concluídas para integrar o Intune ao Skyc
 
 1.  [Configurar o Skycure para usar o SSO (Logon único) do Azure Active Directory](https://docs.microsoft.com/intune/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
-2.  [Baixar política de configuração de aplicativo iOS do Skycure](https://docs.microsoft.com/intune/deploy-use/download-skycure-ios-app-configuration-policy)
+2.  [Baixar a política de configuração de aplicativo iOS do Skycure](https://docs.microsoft.com/intune/deploy-use/download-skycure-ios-app-configuration-policy)
 
-3.  [Adicionar aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
+3.  [Adicionar os aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
 
-4.  [Implantar aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
+4.  [Implantar os aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
 5.  [Configurar a integração do Skycure com o Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
