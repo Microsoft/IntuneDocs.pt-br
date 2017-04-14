@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ Desafios de implantação são problemas prioritários de uma organização e qu
 <br>
     -   **Mitigação:** embora você possa estar animado para começar o projeto agora mesmo, verifique se você definiu com clareza suas metas e seus objetivos. Inclua-os em todas as atividades de treinamento e reconhecimento para ajudar a garantir que os usuários entendem o motivo pelo qual sua organização escolheu o Intune.
 
-## <a name="next-section"></a>Próxima seção
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você identificou as metas e os objetivos de implantação, bem como seus possíveis desafios, vamos passar para a próxima seção: [Identificar os cenários de caso de uso](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
