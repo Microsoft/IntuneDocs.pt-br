@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 04/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb2848e42e0e842bd8049ab74904c70c582d6917
-ms.openlocfilehash: 5f01c174be566b9dd645bb058de501b02693e07e
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
+ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
+ms.lasthandoff: 04/11/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como instruir os usuários finais sobre o Microsoft Intune
 
-O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositivos móveis, ao mesmo tempo que mantém seus dados corporativos protegidos. Há várias etapas para garantir uma implantação bem-sucedida, incluindo a avaliação do Intune por meio de uma [avaliação gratuita](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), [proteção do email](/Intune/Understand/common-ways-to-use-intune#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices.md) e [inserção dos aplicativos com o SDK do Intune](/intune/develop/intune-app-sdk.md).
+O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositivos móveis, ao mesmo tempo que mantém seus dados corporativos protegidos. Há várias etapas para garantir uma implantação bem-sucedida, incluindo a avaliação do Intune por meio de uma [avaliação gratuita](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), [proteção do email](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) e [inserção dos aplicativos com o SDK do Intune](/intune/develop/intune-app-sdk.md).
 
 Nenhuma dessas tecnologias garantirá que os usuários entenderão a importância do motivo pelo qual você está gerenciando os dispositivos deles. Na verdade, muitos dos usuários finais poderão achar que você está violando a privacidade deles – especialmente, se estiver implantando o Intune como uma [solução BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md).
 
