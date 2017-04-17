@@ -31,17 +31,16 @@
 ### [Defina a autoridade MDM](enroll-devices/set-mdm-authority.md)
 ## Plano e design
 ### [Obtenha um certificado push de MDM da Apple](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Obtenha um token DEP da Apple](enroll-devices/get-apple-dep-token.md)
 ### [Escolha como registrar dispositivos iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Como
 ### [Atribuir licenças a usuários](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Registrar dispositivos Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Registrar dispositivos iOS
-#### [Registrar dispositivos iOS usando o Assistente de Configuração](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Registrar dispositivos iOS usando o registro direto](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator – Assistente de configuração](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator – registro direto](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Adicionar números de série do Apple Configurator](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Registrar dispositivos iOS usando o programa de registro de dispositivos](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Registrar dispositivos usando o gerenciador de registro de dispositivo](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Gerenciador de registro de dispositivos](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrar dispositivos macOS](enroll-devices/enroll-macos-devices.md)
 ### [Registrar dispositivos Windows](enroll-devices/enroll-windows-devices.md)
 ### Gerenciar registro do dispositivo
