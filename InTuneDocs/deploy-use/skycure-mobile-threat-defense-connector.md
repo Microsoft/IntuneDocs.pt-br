@@ -124,7 +124,7 @@ Estas são as etapas que precisam ser concluídas para integrar o Intune ao Skyc
 
 3.  [Adicionar os aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
 
-4.  [Implantar os aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
+4.  [Implantar os aplicativos Skycure, o aplicativo Microsoft Authenticator e a política de configuração do iOS](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
 5.  [Configurar a integração do Skycure com o Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
