@@ -1,6 +1,7 @@
 # Ajuda do usuário do Intune
 ## [Usando dispositivos gerenciados para realizar o trabalho](use-managed-devices-to-get-work-done.md)
 ## [Quais informações minha empresa pode ver com o Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+## [O que acontece quando eu faço a redefinição do dispositivo?](what-happens-if-you-reset-your-device-cpwebsite.md)
 ## [Usando seu dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 ### [O que acontece quando você registra um dispositivo Android?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Corrigindo problemas comuns com o Android](troubleshoot-your-device-android.md)
@@ -12,8 +13,3 @@
 ### [O que acontece quando você registra um dispositivo Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Corrigindo problemas comuns com o Windows](troubleshoot-your-device-windows.md)
 ## [Usando o site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
