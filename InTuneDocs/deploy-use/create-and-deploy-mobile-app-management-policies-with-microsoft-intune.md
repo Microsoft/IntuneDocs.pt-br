@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ Siga as etapas abaixo para criar as políticas de proteção de aplicativo:
 
     ![Captura de tela da folha Adicionar uma política mostrando que aplicativos e configurações foram definidos](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuários. Para implantar uma política, consulte a seção a seguir, "Implantar uma política para usuários".
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ Ao terminar de criar uma política conforme descrito no procedimento anterior, e
 > -   Você associa essas duas políticas ao mesmo aplicativo.
 > -   A política criada no console do Azure tem precedência e a cópia é permitida.
 > -   No entanto, status e relatórios no console do Intune indicarão incorretamente que a cópia está bloqueada.
+
+## <a name="line-of-business-lob-apps-optional"></a>Aplicativos de linha de negócios (LOB) (opcionais)
+
+Começando com a versão do Intune 1703, você tem a opção de adicionar de modo geral aplicativos LOB no Intune ao criar uma nova política de proteção de aplicativos. Isso lhe dá a opção de definir políticas de proteção de aplicativos para aplicativos LOB usando o SDK do MAM sem a necessidade de permissões totais de implantação do aplicativo.
+
+> [!TIP] 
+> Você também pode adicionar aplicativos LOB no Intune percorrendo o fluxo de trabalho do [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
+
+> [!IMPORTANT]
+> Se os usuários tiverem apenas permissões específicas para implantar aplicativos MAM e não permissões totais de implantação de aplicativos, o que lhes permitiria implantar qualquer aplicativo no Intune, eles não conseguirão percorrer o fluxo de trabalho Intune SDK, mas ainda poderão adicionar seus aplicativos LOB por meio do fluxo de trabalho de criação de política de proteção de aplicativos MAM.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>Para adicionar aplicativos LOB (iOS e Android)
+
+1.  Na caixa Adicionar uma folha de política, selecione Configurar **aplicativos** para abrir a folha de aplicativos.
+
+    ![MAM Adicionar uma folha de política](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Clique em **Mais aplicativos**, em seguida, digite a **ID do pacote** (para iOS), **ID do pacote** (para Android), clique em Selecionar para adicionar seus aplicativos LOB.
+
+    ![MAM Folha de mais aplicativos](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>Para adicionar aplicativos LOB (Windows)
+
+> [!IMPORTANT] 
+> Você precisa selecionar o Windows 10 na lista suspensa da plataforma ao criar uma nova política de proteção de aplicativos.
+
+1.  Na caixa Adicionar uma folha de política, selecione **Aplicativos permitidos** ou **Aplicativos isentos** para abrir a folha de aplicativos permitidos ou isentos.
+
+    > [!NOTE]
+    > 
+    - **Aplicativos permitidos**: Estes são os aplicativos que precisam atender a esta política.
+    - **Aplicativos isentos**: Estes aplicativos são isentos desta política e podem acessar dados corporativos sem restrições.
+<br></br>
+2. Na folha de aplicativos permitidos ou isentos, clique em **Adicionar aplicativos**. Você pode adicionar aplicativos recomendados pela Microsoft, adicionar aplicativos da área de trabalho ou da loja.
+
+    a.  **Aplicativos recomendados:** uma lista pré-populada de aplicativos (principalmente do Office) que deixamos os administradores importar facilmente para a política.
+
+    b.  **Aplicativos da loja:** O administrador pode adicionar qualquer aplicativo da Windows Store à política.
+
+    c.  **Aplicativos da área de trabalho do Windows:** O administrador pode adicionar qualquer aplicativo tradicional de área de trabalho do Windows à política (por exemplo, exe, dll, etc.)
 
 ## <a name="deploy-a-policy-to-users"></a>Implantar uma política para os usuários
 
@@ -181,9 +220,4 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 ### <a name="see-also"></a>Consulte também
 * [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

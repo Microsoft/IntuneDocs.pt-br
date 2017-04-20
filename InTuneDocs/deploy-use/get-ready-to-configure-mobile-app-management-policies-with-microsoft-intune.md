@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -57,9 +58,10 @@ Para obter instruções sobre como criar uma política de aplicativo no console 
 ##  <a name="supported-platforms"></a>Plataformas com suporte
 - iOS 8.1 ou posterior
 - Android 4 ou posterior
+- Windows 10
 
 >[!NOTE]
->Dispositivos do Windows não dão suporte a políticas de proteção de aplicativo. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Começando com a versão 1703, políticas de proteção de aplicativos podem ser definidas para dispositivos Windows 10 no MAM sem o cenário de registro. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Aplicativos com suporte
 * **Aplicativos Microsoft:** esses aplicativos têm o SDK de Aplicativo do Intune interno e não exigem nenhum processamento adicional antes de aplicar as políticas de proteção de aplicativo.
@@ -106,9 +108,4 @@ Os administradores globais têm acesso ao [Portal do Azure](https://portal.azure
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

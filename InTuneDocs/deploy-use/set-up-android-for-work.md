@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -34,20 +35,20 @@ Se ainda não tiver feito isso, prepare-se para o gerenciamento de dispositivo m
     Como administrador do Intune, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá para **Administração** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **Android for Work** e clique em **Configurar** para abrir o site do Android for Work no Google Play. Uma nova guia será aberta no navegador.
 
 3. **Faça logon no Google**<br>
-   Na página de credenciais do Google, entre com a conta do Google que será associada a todas as tarefas de gerenciamento do Android for Work para o locatário. A conta do Google compartilhada entre os administradores que gerenciam o Intune pode ser usada. Esta é a conta do Google que a organização usa para gerenciar e publicar aplicativos no console do Play for Work.
+   Na página de entrada do Google, entre com a conta do Google que será associada a todas as tarefas de gerenciamento do Android for Work para o locatário. Essa é a conta do Google compartilhada entre os administradores de TI da sua organização que costumavam gerenciar e publicar aplicativos no console Play for Work.
 
 4. **Forneça os detalhes da organização**<br>
    Forneça o nome da empresa em **Nome da organização**. O **Microsoft Intune** deverá ser exibido para o *Provedor EMM (Enterprise Mobility Management)*. Aceite o acordo do Android for Work e clique em **Confirmar**. Sua solicitação será processada.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Especifique as Configurações de Registro do Android for Work
-   Há suporte para o Android for Work apenas em determinados dispositivos Android. Consulte os [requisitos do Google para o Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window").  Qualquer dispositivo que dê suporte ao Android for Work também dará suporte ao gerenciamento de Android convencional.  O Intune permite que você especifique como o suporte a dispositivos Android for Work deve ser gerenciado:
+   Há suporte para o Android for Work apenas em determinados dispositivos Android. Consulte os [requisitos do Google para o Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window").  Qualquer dispositivo que dê suporte ao Android for Work também dará suporte ao gerenciamento de Android convencional.  O Intune lhe permite especificar como devem ser gerenciados os dispositivos com suporte para o Android for Work:
 
-   - **Gerenciar todos os dispositivos com o Android** – (Desabilitado) Todos os dispositivos Android, incluindo dispositivos com suporte para o Android for Work, serão registrados como dispositivos Android convencionais.
-   - **Gerenciar dispositivos com suporte com o Android for Work** – (Habilitado) Todos os dispositivos com suporte para o Android for Work serão registrados como dispositivos Android for Work. Os dispositivos Android que não dão suporte ao Android for Work são registrados como dispositivos Android convencionais.
-   - **Gerenciar dispositivos com suporte para usuários somente em grupos desse usuário com o Android for Work** – (Em teste) Permite direcionar o gerenciamento do Android for Work para um conjunto limitado de usuários. Somente os membros dos grupos selecionados que registram um dispositivo que dá suporte ao Android for Work são registrados como dispositivos Android for Work. Todos os outros são registrados como dispositivos Android.
+   - **Gerencie todos os dispositivos como Android** – Todos os dispositivos Android, incluindo dispositivos com suporte para o Android for Work, serão registrados como dispositivos Android convencionais.
+   - **Gerencie dispositivos com suporte como Android for Work** – Todos os dispositivos com suporte para o Android for Work serão registrados como dispositivos Android for Work. Os dispositivos Android que não dão suporte ao Android for Work são registrados como dispositivos Android convencionais.
+   - **Gerencie dispositivos com suporte para usuários somente nos grupos de usuários como Android for Work** – Permite direcionar o gerenciamento do Android for Work para um conjunto limitado de usuários. Somente os membros dos grupos selecionados que registram um dispositivo que dá suporte ao Android for Work são registrados como dispositivos Android for Work. Todos os outros são registrados como dispositivos Android. Isso é útil durante os pilotos do Android for Work.
 
 ## <a name="next-steps-for-android-for-work"></a>Próximas etapas para o Android for Work
-Após a configuração da associação e das preferências do Android for Work, faça o seguinte:
+Após a configuração da associação e das preferências do Android for Work, você pode fazer o seguinte:
 - [Implante os aplicativos Android for Work](android-for-work-apps.md)
 - [Adicione as políticas de configuração do Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
 
@@ -62,9 +63,4 @@ Após a configuração da associação e das preferências do Android for Work, 
 
 2. **Aceite a exclusão da associação do Android for Work**<br>
   Clique em **Sim** para excluir a associação e cancelar o registro de todos os dispositivos Android for Work do Intune.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

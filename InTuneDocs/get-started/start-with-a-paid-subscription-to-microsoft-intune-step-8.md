@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Este tópico descreve como um administrador do Intune pode habilitar o registro de dispositivo móvel. Para obter ajuda sobre como usar o Intune em seu telefone, consulte [usando dispositivos gerenciados para realizar seu trabalho](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
+Este tópico descreve como um administrador do Intune pode habilitar o registro de dispositivo móvel. Para obter ajuda sobre como usar o Intune em seu telefone, consulte [usando dispositivos gerenciados para realizar seu trabalho](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Para configurar o gerenciamento de dispositivo móvel com o Intune, você deve primeiro definir a *autoridade de gerenciamento de dispositivo móvel*, que identifica o serviço que pode gerenciar dispositivos associados à sua conta. Estas diretrizes presumem que você usará o serviço do Intune em vez do System Center Configuration Manager. Depois que a autoridade MDM estiver configurada, você poderá habilitar o gerenciamento de plataformas de dispositivo e registrar seus dispositivos com o aplicativo de Portal da Empresa.
 
@@ -49,9 +50,9 @@ O registro deve ser habilitado para iOS, Mac e Android para dispositivos de Trab
 
 Habilite o registro de dispositivo para a plataforma de dispositivo que deseja gerenciar. Dependendo de sua plataforma, são necessários requisitos diferentes:
 
--  [iOS e macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [PC Window](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Windows 10 Mobile e Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS e macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Windows 10 e Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [PC com Windows](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (cliente de software do Intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 Quando o registro estiver habilitado, os usuários poderão baixar o aplicativo de Portal da Empresa em seu dispositivo e concluir o processo de registro do dispositivo.
@@ -60,18 +61,12 @@ Quando o registro estiver habilitado, os usuários poderão baixar o aplicativo 
 Você também pode habilitar uma variedade de situações de [registro de dispositivo da empresa](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices), incluindo:
 - [Programa de Registro do Dispositivo da Apple](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Registro do Assistente de Configuração do Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Registro do Assistente de Configuração do Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Registro direto do Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Gerenciador de Registro de Dispositivos](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>Próximas etapas
 Parabéns! Você acabou de concluir a última etapa do *Guia de início rápido do Intune*. Agora que sua configuração inicial foi concluída, você pode considerar habilitar funcionalidades adicionais do MDM.
 
 >[!div class="step-by-step"]
-
 >[&larr; **Registrar dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Tarefas de pós-configuração** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

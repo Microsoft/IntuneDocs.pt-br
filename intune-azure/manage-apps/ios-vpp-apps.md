@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 A loja de aplicativos iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Isso ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos.
 
 O Microsoft Intune ajuda a gerenciar aplicativos adquiridos por meio desse programa, importando as informações de licença da loja de aplicativos, acompanhando a quantidade de licenças utilizadas e impedindo a instalação de um número maior de cópias de seu aplicativo.
-
-> [!Important]
-> Atualmente, o Intune atribui licenças de aplicativo do iOS VPP (Volume Purchase Program) for Business a usuários, não a dispositivos. Por isso, os usuários devem inserir sua senha de ID da Apple para instalar o aplicativo.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerenciar aplicativos adquiridos por volume para dispositivos iOS
 Você compra várias licenças para aplicativos iOS por meio do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) ou [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). Isso envolve a configuração de uma conta do Apple VPP no site da Apple e upload do token do Apple VPP no Intune.  Você pode sincronizar suas informações de compra por volume com o Intune e controlar o uso do aplicativo adquirido por volume.
@@ -71,8 +68,8 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 1. Na carga de trabalho de **Aplicativos Móveis**, escolha **Gerenciar** > **Aplicativos Licenciados**.
 2. Na folha da lista de aplicativos, escolha o aplicativo que você deseja atribuir e selecione “**...**” > **Atribuir Grupos**.
 3. Na folha <*nome do aplicativo*> – **Grupos Atribuídos**, escolha **Gerenciar** > **Grupos Atribuídos**.
-4. Escolha **Atribuir Grupos** e, na folha **Selecionar grupos**, escolha os grupos do Azure AD para o qual você deseja atribuir o aplicativo.
-Você deve escolher uma ação de atribuição de **Obrigatório**. Atualmente, não há suporte para as instalações disponíveis.
+4. Escolha **Atribuir Grupos** e então, na folha **Selecionar grupos**, escolha o usuário ou os grupos de dispositivos do Azure AD para o(s) qual(is) você deseja atribuir o aplicativo.
+Você deve escolher uma ação de atribuição de **Obrigatório**. Atualmente, não há suporte para as instalações disponíveis. Além disso, as atribuições a grupos de dispositivos estão disponíveis para novos locatários criados depois de janeiro de 2017. Se seu locatário foi criado antes e você não tiver a opção de atribuir aplicativos VPP a grupos de dispositivos, entre em contato com o suporte do Intune.
 5. Quando terminar, escolha **Salvar**.
 
 Consulte [Como monitorar aplicativos](monitor-apps.md) para obter informações para ajudá-lo a monitorar as atribuições de aplicativo.
