@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Configurar o gerenciamento para as seguintes plataformas:
 - [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [PCs e laptops com Windows](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile e Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [PCs e laptops com Windows](manage-windows-pcs-with-microsoft-intune.md) (software cliente do Intune)
 
 Você também pode habilitar o [registro de dispositivos corporativos](manage-corporate-owned-devices.md).
 
@@ -170,7 +170,7 @@ Se você estiver usando a coexistência, precisará verificar as listas de verif
 Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua autoridade de MDM.
 
 - Desative todos os dispositivos no console de administração do Intune. Não tente desativar um dispositivo no próprio dispositivo. 
-- Exclua o Service To Service Connector (em **Administração** > **Gerenciamento de Dispositivo Móvel** > **Microsoft Exchange**) ou desabilite o Exchange Connector se você o tiver configurado. 
+- Exclua o Service To Service Connector (em **Administração** > **Gerenciamento de Dispositivo Móvel** > **Microsoft Exchange**) ou desabilite o Exchange Connector se você o tiver configurado.
 - Remova a função Gerenciador de Registro de Dispositivo em **Administrador** > **Gerenciador de Registro de Dispositivo**.
 - Desligue o Mapeamento de Grupo de Dispositivos em **Administrador** > **Gerenciamento de Dispositivo Móvel** > **Mapeamento de Grupo de Dispositivos**.
 - Exclua as chaves de sideload em **Administrador** > **Gerenciamento de Dispositivo Móvel** > **Windows** > **Chaves de Sideload**.
@@ -187,7 +187,7 @@ Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua
 - Remova todos os usuários do Grupo de Usuários do Intune. Aponte a assinatura do Intune para uma coleção vazia de usuários ou remova todos os usuários da coleção de destino.  No CloudUserSync.log, confirme se os usuários foram removidos. 
 - Desmarque a plataforma iOS para limpar o certificado APNs.
 - Exclua todos os aplicativos publicados destinados a dispositivos de MDM.
-- Exclua todas as políticas destinadas a dispositivos de MDM. 
+- Exclua todas as políticas destinadas a dispositivos de MDM.
 - Remova o Conector do Windows Intune por meio do Console do Configuration Manager (aplicável somente ao R2 SP1 ou abaixo).
 -Remova a assinatura do Intune clicando com o botão direito do mouse na assinatura e selecionando **Excluir**.
 - Reinicie o Serviço SMS Executive.
@@ -196,18 +196,18 @@ Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Redefinir a autoridade de MDM do Office 365 para o Configuration Manager
 
 1. Navegue até [https://protection.office.com](https://protection.office.com).
-2. Selecione a guia **Políticas de Segurança** e selecione **Gerenciamento de Dispositivo**. 
+2. Selecione a guia **Políticas de Segurança** e selecione **Gerenciamento de Dispositivo**.
 3. Desative todos os dispositivos escolhendo **Apagamento Seletivo**. Não tente desativar um dispositivo no próprio dispositivo. Se o apagamento seletivo estiver desabilitado, nenhuma ação adicional será necessária.
-4. Selecione a guia **Políticas de Segurança** e selecione **Políticas de Segurança do Dispositivo**. 
+4. Selecione a guia **Políticas de Segurança** e selecione **Políticas de Segurança do Dispositivo**.
 5. Selecione **Excluir** para todas as políticas existentes. Se as políticas estiverem em um estado pendente, nenhuma ação adicional será necessária.
 
 >[!NOTE]
->O certificado APsN do iOS não pode ser excluído e permanece anexado à conta. 
+>O certificado APsN do iOS não pode ser excluído e permanece anexado à conta.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Próximas etapas para redefinições de autoridade de MDM
 
-Depois que o Suporte da Microsoft verificar os itens da lista de verificação aplicável, a redefinição da autoridade de MDM poderá levar até três dias úteis, mas geralmente ocorre em um dia. 
+Depois que o Suporte da Microsoft verificar os itens da lista de verificação aplicável, a redefinição da autoridade de MDM poderá levar até três dias úteis, mas geralmente ocorre em um dia.
 
 >[!IMPORTANT]
->Não tente configurar sua assinatura até que o Suporte da Microsoft confirme que a redefinição foi concluída com êxito. A configuração prematura poderá corromper a assinatura e/ou afetar sua capacidade de usar o serviço Intune. 
+>Não tente configurar sua assinatura até que o Suporte da Microsoft confirme que a redefinição foi concluída com êxito. A configuração prematura poderá corromper a assinatura e/ou afetar sua capacidade de usar o serviço Intune.
 

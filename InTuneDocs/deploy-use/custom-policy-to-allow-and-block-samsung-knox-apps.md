@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -43,7 +44,7 @@ Essas configurações podem ser usadas apenas por dispositivos que executam o Sa
     - **Descrição da configuração.** Insira uma descrição opcional, como “Lista de aplicativos impedidos de serem executados”.
     -     **Tipo de dados.** Na lista suspensa, escolha **Cadeia de caracteres**.
     -     **OMA-URI.** Digite **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **Valor.** Insira uma lista dos nomes de pacotes do aplicativo que deseja permitir. Você pode usar **; : ,** ou **|** como delimitador. (Exemplo: pacote1; pacote2;)
+    -     **Valor.** Insira uma lista dos nomes de pacotes do aplicativo que deseja bloquear. Você pode usar **; : ,** ou **|** como delimitador. (Exemplo: pacote1; pacote2;)
 
     Para obter uma lista dos aplicativos que os usuários do dispositivo podem instalar da loja Google Play enquanto todos os outros aplicativos são excluídos:
 
@@ -72,9 +73,4 @@ Quando você seleciona uma política implantada, pode exibir mais informações 
 
 ### <a name="see-also"></a>Consulte também
 [Configurações de política do Android e do Samsung KNOX no Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
