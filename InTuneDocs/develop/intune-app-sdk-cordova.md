@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 613e293d9bd853d6de7cdc0d753cc8473afc180b
-ms.openlocfilehash: 9ef09f43e6c878af689a500457bab578149de499
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 40c369bb0ff18bda30b221c461f75799e601c67c
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -25,143 +26,136 @@ ms.openlocfilehash: 9ef09f43e6c878af689a500457bab578149de499
 > [!NOTE]
 > Primeiro, leia o artigo [Introdução ao SDK de Aplicativo do Intune](intune-app-sdk-get-started.md), que explica como se preparar para a integração em cada plataforma com suporte.
 
-
 ## <a name="overview"></a>Visão geral
 
-O [Plug-in Cordova do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) habilita [recursos de gerenciamento de aplicativo móvel do Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) em aplicativos iOS e Android criados com Cordova. O plug-in permite que os desenvolvedores integrem os recursos de proteção de dados e aplicativos do Intune em seu aplicativo baseado no Cordova.
+O [Plug-in Cordova do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) habilita [política de proteção de aplicativo móvel do Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) em aplicativos iOS e Android criados com Cordova. O plug-in permite que os desenvolvedores integrem os recursos de proteção de dados e aplicativos do Intune em seu aplicativo baseado no Cordova.
 
-Você descobrirá que é possível habilitar os recursos do SDK sem alterar o comportamento do seu aplicativo. Após você ter incorporado o plug-in em seu aplicativo móvel iOS ou Android, o administrador de TI poderá implantar a política por meio do Microsoft Intune MAM (gerenciamento de aplicativo móvel) para dar suporte a vários recursos de proteção de dados. Nós criamos o plug-in para a maioria das etapas sejam realizadas automaticamente no processo de build do Cordova. Como resultado, você deve ser capaz de habilitar seu aplicativo para gerenciamento rapidamente. Para começar, siga as etapas abaixo com base em sua plataforma de destino.
+Você descobrirá que é possível habilitar os recursos do SDK sem alterar o comportamento do seu aplicativo. Depois de compilar o plug-in em seu aplicativo iOS ou Android, o administrador do Microsoft Intune será capaz de implantar a política de proteção de aplicativo do Intune, que é composta por uma vários recursos de proteção de dados. O plug-in é compilado para que a maioria das etapas sejam realizadas automaticamente no processo de build do Cordova. Como resultado, você deve ser capaz de habilitar rapidamente seu aplicativo para proteção de aplicativo do Intune. Para começar, siga as etapas abaixo com base em sua plataforma de destino.
 
+## <a name="supported-platforms"></a>Plataformas suportadas
 
+* O plug-in funciona nos sistemas operacionais Windows, Mac e Linux
+* O plug-in funciona para aplicativos Android com `minSdkVersion` >= 14 e `targetSdkVersion` <= 24
+* O plug-in funciona para aplicativos iOS direcionados para iOS 9.0 e posterior.
 
-
-## <a name="whats-supported"></a>Para que há suporte?
-
-### <a name="developer-machines"></a>Computadores de desenvolvedores
-* Windows
-* Mac OS
-
-
-### <a name="mobile-app-platforms"></a>Plataformas de aplicativo móvel
-* Android 4.0+
-* iOS
-
-### <a name="intune-mobile-application-management-scenarios"></a>Cenários de gerenciamento de aplicativo móvel do Intune
+## <a name="intune-mobile-application-management-scenarios"></a>Cenários de gerenciamento de aplicativo móvel do Intune
 
 * Dispositivos registrados no MDM do Intune
 * Dispositivos registrados em EMM de terceiros
 * Dispositivos não gerenciados (não registrados com em nenhum MDM)
 
-Aplicativos Cordova criados com o Plug-in Cordova do SDK de Aplicativo do Intune agora podem receber políticas de MAM (gerenciamento de aplicativo móvel) em dispositivos registrados no MDM (gerenciamento de dispositivo móvel) do Intune e em dispositivos não registrados.
-
-
+Os aplicativos Cordova criados com o Plug-in Cordova do SDK de Aplicativo do Intune agora podem receber políticas de proteção de aplicativo em dispositivos registrados no MDM (gerenciamento de dispositivo móvel) do Intune e em dispositivos não registrados.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-### <a name="technical-prerequisites"></a>Pré-requisitos técnicos
+### <a name="android"></a>Android
 
-* **[Somente Android]** O aplicativo de Portal da Empresa do Microsoft Intune mais recente sempre deve estar instalado no dispositivo.
+* O aplicativo de Portal da Empresa do Microsoft Intune mais recente sempre deve estar instalado no dispositivo.
+* É necessário ter, no mínimo, Java 7 no caminho onde você executará a compilação do Cordova ao usar o plug-in.
 
+### <a name="ios"></a>iOS
+
+* O aplicativo de Portal da Empresa do Microsoft Intune mais recente deve estar instalado no dispositivo para poder contar com os recursos de MDM. Ele *não* é necessário para a política de proteção de aplicativo do Intune sem recursos de registro do dispositivo.
+
+### <a name="both-platforms"></a>As duas plataformas
 
 * A versão 0.8.0+ do [plug-in da ADAL (Biblioteca de Autenticação do Azure Active Directory) para Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) é necessária.
-  * **Importante:** devido a um bug do Apache Cordova registrado [aqui](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), os aplicativos que já têm a dependência do plug-in não atualizarão automaticamente o plug-in para a versão solicitada.
 
+> [!NOTE]
+> Devido a um bug do Apache Cordova registrado [aqui](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), os aplicativos que já têm a dependência do plug-in não atualizarão automaticamente o plug-in para a versão solicitada.
 
-### <a name="before-you-install-and-use-microsoft-intune-app-sdk-cordova-plugin-you-must"></a>Antes de instalar e usar o Plug-in Cordova do SDK de Aplicativo do Microsoft Intune, você **precisa**:
-
-* Examinar os [Termos de Licença do Plug-in Cordova do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf).
-
-* Imprimir e guardar uma cópia dos termos de licença para seus registros. Ao baixar e usar o Plug-in Cordova do SDK de Aplicativo do Intune, você concorda com esses termos de licença.  Se você não aceitá-los, não use o software.
 
 
 ## <a name="quick-start"></a>Início rápido
 
 1. Atualize sua versão da ADAL:
 
-    ```
-    cordova plugin remove cordova-plugin-ms-adal
-    cordova plugin add cordova-plugin-ms-adal@0.8.x
-    ```
+  ```shell
+  cordova plugin remove cordova-plugin-ms-adal
+  cordova plugin add cordova-plugin-ms-adal@0.8.x
+  ```
 
 2. Adicione o Plug-in Cordova do SDK de Aplicativo do Intune:
 
-    ```
-    cordova plugin add cordova-plugin-ms-intune-mam
-    ```
+  ```shell
+  cordova plugin add cordova-plugin-ms-intune-mam
+  ```
 
-## <a name="how-to-build-the-plugin-into-your-ios-app"></a>Como incorporar o plug-in ao seu aplicativo iOS
+## <a name="build-the-plugin-into-your-ios-app"></a>Compilar o plug-in em seu aplicativo iOS
 
-Você precisará concluir algumas etapas para que seu aplicativo seja habilitado para o MAM do Intune. Por conveniência, essas etapas são executadas automaticamente no processo de compilação do Cordova como um gancho pré-compilação. Como resultado, as etapas automatizadas modificarão seus arquivos `*.pbxproj`, `*-Info.plist` e `*.entitlements` que estão associados a uma configuração do projeto. Se seu projeto não contiver um arquivo de direitos, o plug-in criará um automaticamente.
+Você precisará concluir algumas etapas para que seu aplicativo seja habilitado para a política de proteção de aplicativo do Intune. Por conveniência, essas etapas são executadas automaticamente no processo de compilação do Cordova como um gancho pré-compilação. Como resultado, as etapas automatizadas modificarão seus arquivos `*.pbxproj`, `*-Info.plist` e `*.entitlements` que estão associados a uma configuração do projeto. Se seu projeto não contiver um arquivo de direitos, o plug-in criará um automaticamente.
 
 Essa configuração dá suporte a um único destino e executará a configuração no primeiro destino encontrado se houver vários destinos. Se o processo falhar, verifique se:
 
 1. O projeto Xcode do seu aplicativo é `[name].xcodeproj`, em que `[name]` é o valor definido em `config.xml`
 2. O projeto usa a [estrutura de diretório de aplicativos padrão do Cordova](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html#directory-structure).
 
-## <a name="how-to-build-the-plugin-into-your-android-app"></a>Como incorporar o plug-in ao seu aplicativo Android
+## <a name="build-the-plugin-into-your-android-app"></a>Compilar o plug-in em seu aplicativo Android
 
 1. Importe esse plug-in com as ferramentas mais recentes do Cordova. Automaticamente, o plug-in será invocado como uma etapa `after_compile`.
 
-2. O plug-in criará uma versão habilitada para MAM de um APK interno (Android API 14+) no final do processo de build. A saída do build conterá um `[Project]-intunewrapped-[Build_Configuration].apk` (por exemplo, `helloWorld-intunewrapped-debug.apk`).
+2. O plug-in criará uma versão habilitada para Intune de um APK interno (Android API 14+) no final do processo de build. A saída do build conterá um `[Project]-intunewrapped-[Build_Configuration].apk` (por exemplo, `helloWorld-intunewrapped-debug.apk`).
 
-O plug-in somente dá suporte a compilações Gradle.
+> [!NOTE]
+> O plug-in somente dá suporte a compilações Gradle.
 
 Devido a um bug do Cordova registrado [aqui](https://issues.apache.org/jira/browse/CB-9434) que faz com que determinados ganchos do Cordova sejam ignorado no `cordova run`, para executar o aplicativo encapsulado na linha de comando, você deve fazer o seguinte:
 
-```
+```shell
 $ cordova build
 $ cordova run --nobuild
 ```
 
+## <a name="sign-your-android-app"></a>Assinatura de seu aplicativo Android
 
-### <a name="signing-your-android-app"></a>Assinatura de seu aplicativo Android
-Para adicionar informações de assinatura ao APK encapsulado, modifique `build.json` como faria normalmente para adicionar informações de assinatura. Por exemplo:
-```json
-{
-  "android": {
-    "release": {
-      "keystore": "your.keystore",
-      "storePassword": "yourpassword",
-      "alias": "youralias",
-      "password" : "yourpassword",
-      "keystoreType": ""
-    }
-  }
-}
-```
+O plug-in reconhece automaticamente as informações de assinatura fornecidas para o Cordova nos seguintes locais:
 
-### <a name="build-for-android-test-only"></a>Build somente para teste em Android
+* platforms/android/debug-signing.properties
+* platforms/android/release-signing.properties
+* res/native/android/ant.properties
 
-1. Adicione `android:testOnly="true"` ao nó do aplicativo no arquivo `AndroidManifest.xml`.
+Veja as [informações de assinatura gradle do Cordova](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) para saber mais sobre o formato esperado.
 
+No momento, não há suporte para a capacidade de fornecer informações de assinatura em `build.json` ou em locais aleatórios fornecidos via parâmetros à compilação do Cordova.
 
-2. **Cordova 6.x.x:** Em `[PROJECT_ROOT]/platforms/android/cordova/lib/Adb.js`, altere a linha 60 de
+## <a name="debugging-from-visual-studio"></a>Depuração do Visual Studio
 
-    ```javascript
-    var args = ['-s', target, 'install'];
-    ```
-    como
-    ```javascript
-    var args = ['-s', target, 'install', '-t'];
-    ```
-
-O efeito disso é executar `adb install` com o sinalizador "-t", uma vez que aplicativos `testOnly` não podem ser instalados sem ele.
-
-### <a name="debugging-from-visual-studio"></a>Depuração do Visual Studio
 Após iniciar o aplicativo pela primeira vez, você verá uma caixa de diálogo informando que o aplicativo é gerenciado pelo Intune. Clique em "Não mostrar novamente" e clique no botão depurar/executar novamente do VS para que os pontos de interrupção sejam atingidos.
 
 ## <a name="known-limitations"></a>Limitações conhecidas
+
 ### <a name="android"></a>Android
+
 * Suporte incompleto para MultiDex.
-* O aplicativo deve ter como destino o Android 4.0 (API 14 do Android) ou superior.
+* O aplicativo deve ter um `minSdkVersion` de 14 e um `targetSdkVersion` de 24 ou abaixo. No momento, não há suporte para aplicativos destinados à API 25
+* Não podemos assinar novamente aplicativos assinados com o Esquema de assinatura V2. Quando aplicativos assinados por V2 são agrupados com o plug-in, a saída .apk agrupada não é assinada.
+*
+  * Desabilite a Assinatura V2 padrão do Cordova adicionando o seguinte ao seu arquivo `build-extras.gradle`:
+
+  ```gradle
+  android {
+      signingConfigs {
+          release {
+              v2SigningEnabled false
+          }
+          debug {
+              v2SigningEnabled false
+          }
+      }
+      buildTypes {
+          release {
+              signingConfig signingConfigs.release
+          }
+          debug {
+              signingConfig signingConfigs.debug
+          }
+      }
+  }
+  ```
 
 ### <a name="ios"></a>iOS
-* Sempre que modificar a lista de UTI no nó **CFBundleDocumentTypes** do arquivo **plist**, você deve limpar o UTI do Intune na seção de UTIs Importados do mesmo arquivo plist (nó **UTImportedTypeDeclarations**) antes de compilar novamente. Todos os UTIs do Intune começarão com o prefixo `com.microsoft.intune.mam`.
 
-* Se quiser remover o plug-in do Intune do seu projeto do Cordova, você também deverá remover a plataforma iOS e adicioná-la novamente para desfazer parte da configuração do Intune nos arquivos .xcodeproj e .plist.
+* Sempre que modificar a lista de UTI no nó **CFBundleDocumentTypes** do arquivo **Info.plist**, você deve limpar o UTI do Intune na seção de UTIs Importados do mesmo arquivo plist (nó **UTImportedTypeDeclarations**) antes de compilar novamente. Todos os UTIs do Intune começarão com o prefixo `com.microsoft.intune.mam`.
 
-
-
-<!--HONumber=Dec16_HO2-->
-
+* Se quiser remover o plug-in SDK de Aplicativo do Intune para Cordova de seu projeto Cordova, você também deverá remover a plataforma iOS e adicioná-la novamente para desfazer parte da configuração do Intune nos arquivos .xcodeproj e .plist.
 
