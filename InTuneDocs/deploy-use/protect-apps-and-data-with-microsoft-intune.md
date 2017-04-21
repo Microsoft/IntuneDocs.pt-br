@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Esse conjunto de regras é denominado [políticas de MAM (Gerenciamento de Aplic
 
 Para associar um aplicativo a uma política de MAM, o aplicativo deve incorporar o SDK (Kit de Desenvolvimento de Software) do Microsoft Intune ou você pode usar a Ferramenta de Encapsulamento de Aplicativos.
 
-Aplicativos como os do Microsoft Office têm o SDK interno do aplicativo do Intune. É possível ver a lista completa de aplicativos com suporte na [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicativos do Microsoft Intune. Escolha o aplicativo para ver os cenários e plataformas com suporte e se o aplicativo dá suporte a várias identidades.
+Aplicativos como os do Microsoft Office têm o SDK interno do aplicativo do Intune. É possível ver a lista completa de aplicativos com suporte na [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicativos do Microsoft Intune. Escolha o aplicativo para ver os cenários e plataformas com suporte e se o aplicativo dá suporte a várias identidades.
 
 Também é possível [habilitar seus aplicativos de linha de negócios personalizados](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para uso com políticas de MAM.
 
 Além de restringir a movimentação dos dados, se um dispositivo for perdido ou roubado ou se o usuário não trabalhar mais para sua empresa, você poderá [apagar seletivamente os dados corporativos](wipe-managed-company-app-data-with-microsoft-intune.md), deixando apenas os dados pessoais.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

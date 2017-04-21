@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: 6258917de60bdbf8efde4720c17ec6fc643154bd
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c795b0b5b12d900155e55e0874009177b32a2546
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +36,7 @@ Esses são problemas comuns que um administrador de TI pode enfrentar ao usar a 
 | Problema | Descrição | Resolução |
 | -- | -- | -- |
 | A política não é aplicada ao Skype for Business | A política de proteção do aplicativo sem registro de dispositivo, feita no Portal do Azure, não está sendo aplicada ao aplicativo Skype for Business em dispositivos iOS e Android. | O Skype for Business deve ser configurado para a autenticação moderna.  Siga as instruções em [Habilitar o locatário para autenticação moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
-| Política de aplicativos do Office não aplicada | As políticas de proteção do aplicativo não estão sendo aplicadas aos [aplicativos do Office com suporte](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) de nenhum usuário. | Confirme se o usuário está licenciado para o Intune e se os aplicativos do Office são afetados por uma política de proteção do aplicativo implantada. A aplicação de uma política de proteção de aplicativo implantada recentemente pode levar até 8 horas. |
+| Política de aplicativos do Office não aplicada | As políticas de proteção do aplicativo não estão sendo aplicadas aos [aplicativos do Office com suporte](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) de nenhum usuário. | Confirme se o usuário está licenciado para o Intune e se os aplicativos do Office são afetados por uma política de proteção do aplicativo implantada. A aplicação de uma política de proteção de aplicativo implantada recentemente pode levar até 8 horas. |
 | O administrador não pode configurar a política de proteção do aplicativo no Portal do Azure | O usuário administrador de TI não consegue configurar políticas de proteção do aplicativo no Portal do Azure. | As funções de usuário a seguir têm acesso ao Portal do Azure: <ul><li>Administrador global, que pode ser configurada no [Portal do Office](http://portal.office.com/)</li><li>Proprietário, que pode ser configurada no [Portal do Azure](https://portal.azure.com/).</li><li>Colaborador, que pode ser configurada no [Portal do Azure](https://portal.azure.com/).</li></ul>  Consulte [Preparar-se para configurar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) para obter ajuda para configurar essas funções.|
 |Contas de usuário ausentes dos relatórios da política de proteção do aplicativo | Os relatórios do console do administração não mostram as contas de usuário nas quais a política de proteção do aplicativo foi implantada recentemente. | Se uma política de proteção do aplicativo for destinada a um usuário recentemente, poderá levar até 24 horas para que esse usuário seja mostrado nos relatórios como um usuário de destino. |
 | As alterações da política não funcionam | As alterações e atualizações da política de proteção do aplicativo podem levar até 8 horas para serem aplicadas. | Se aplicável, o usuário final poderá fazer logoff do aplicativo e fazer logon novamente para forçar a sincronização com o serviço. |
@@ -87,7 +88,7 @@ Mensagem de erro ou caixa de diálogo | Causa | Remediação |
 **Bem-vindo ao Intune Managed Browser**: este aplicativo funciona melhor quando gerenciado pelo Microsoft Intune. Sempre é possível usar esse aplicativo para navegar na Web e, quando ele é gerenciado pelo Microsoft Intune, você obtém acesso a recursos adicionais de proteção de dados. | Falha ao detectar a política de proteção de aplicativo necessária para o aplicativo do Intune Managed Browser. <br><br>O usuário ainda pode usar o aplicativo para navegar na Web, mas ele não é gerenciado pelo Intune. | Verifique se uma política de proteção de aplicativo iOS está implantada no grupo de segurança do usuário e se ela se destina ao aplicativo do Intune Managed Browser.
 **Falha ao Entrar**: não é possível entrar neste momento. Tente novamente mais tarde. | Falha ao registrar o usuário com o serviço de MAM depois que o usuário tenta entrar com a conta corporativa ou de estudante. | Verifique se uma política de proteção de aplicativo iOS está implantada no grupo de segurança do usuário e se ela se destina a esse aplicativo.
 **Conta Não Configurada**: a organização não configurou sua conta para acessar dados corporativos ou de estudante. Entre em contato com o administrador de TI para obter ajuda. | A conta de usuário não tem uma licença do Intune A Direct. | Verifique se a conta do usuário tem uma licença do Intune atribuída no [Portal do Office](http://portal.office.com).
-**Dispositivo Não Compatível**: este aplicativo não pode ser utilizado porque você está usando um dispositivo com jailbreak. Entre em contato com seu administrador de TI para obter ajuda. | Intune detectou que o usuário está em um dispositivo com jailbreak. | Redefina o dispositivo para as configurações padrão de fábrica. Siga [estas instruções](https://support.apple.com/en-us/HT201274) do site de suporte da Apple.
+**Dispositivo Não Compatível**: este aplicativo não pode ser utilizado porque você está usando um dispositivo com jailbreak. Entre em contato com seu administrador de TI para obter ajuda. | Intune detectou que o usuário está em um dispositivo com jailbreak. | Redefina o dispositivo para as configurações padrão de fábrica. Siga [estas instruções](https://support.apple.com/HT201274) do site de suporte da Apple.
 **Conexão à Internet Necessária**: é necessário estar conectado à Internet para verificar se você pode usar este aplicativo. | Este dispositivo não está conectado à Internet. | Conecte o dispositivo a uma rede WiFi ou de Dados.
 **Falha Desconhecida**: tente reiniciar o aplicativo. Se o problema persistir, entre em contato com o administrador de TI para obter ajuda. | Ocorreu uma falha desconhecida. | Aguarde um momento e tente novamente. Se o erro persistir, crie um tíquete de suporte com o Intune [aqui](how-to-get-support-for-microsoft-intune.md).
 **Acessando os Dados da Organização**: a conta corporativa ou de estudante especificada não tem acesso a este aplicativo. Você terá que entrar com uma conta diferente. Entre em contato com seu administrador de TI para obter ajuda. | O Intune detecta que o usuário tentou entrar com uma segunda conta corporativa ou de estudante, diferente da conta registrada no MAM para o dispositivo. Somente uma conta corporativa ou de estudante pode ser gerenciada pelo MAM de cada vez por dispositivo. | Solicite ao usuário que entre com a conta cujo nome de usuário é previamente preenchido pela tela de credenciais. <br> <br> Ou solicite que o usuário entre com a nova conta corporativa ou de estudante e remova a conta existente registrada no MAM.
@@ -116,9 +117,4 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 - [Validar a configuração do gerenciamento de aplicativo móvel](../deploy-use/validate-mobile-application-management.md)
 - [Preparar-se para configurar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

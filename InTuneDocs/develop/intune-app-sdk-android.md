@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 178fbaeb1d3235a81cb4da49b7a955f6999c49a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 17fa23f1d04e22a2cb10452fe3a9425f7482a6de
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -80,7 +80,7 @@ O SDK de Aplicativo do Intune exige três [permissões de sistema do Android](ht
 
 * `android.permission.USE_CREDENTIALS`
 
-A Biblioteca de Autenticação do Azure Active Directory ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) exige essas permissões para realizar a autenticação agenciada. Se essas permissões não forem concedidas ao aplicativo ou revogadas pelo usuário, os fluxos de autenticação que exigem o agente (o aplicativo de Portal da Empresa) serão desabilitados.
+A Biblioteca de Autenticação do Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige essas permissões para realizar a autenticação agenciada. Se essas permissões não forem concedidas ao aplicativo ou revogadas pelo usuário, os fluxos de autenticação que exigem o agente (o aplicativo de Portal da Empresa) serão desabilitados.
 
 
 ###<a name="company-portal-app"></a>Aplicativo do Portal da Empresa

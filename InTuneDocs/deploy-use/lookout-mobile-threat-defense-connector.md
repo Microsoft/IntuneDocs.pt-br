@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 47645e1f133b172d059f849e2f73e59e115046c6
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Se o dispositivo for considerado fora de conformidade, o acesso a recursos como 
 ## <a name="supported-platforms"></a>Plataformas com suporte:
 Há suporte para as seguintes plataformas no Lookout quando registradas no Intune:
 * **Android 4.1 e posterior**
-* **iOS 8 e posterior** Para obter mais informações sobre o suporte a plataformas e idiomas, visite o [site do Lookout](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
+* **iOS 8 e posterior** Para obter mais informações sobre o suporte a plataformas e idiomas, visite o [site do Lookout](https://personal.support.lookout.com/hc/articles/114094140253).
 
 ## <a name="prerequisites"></a>Pré-requisitos:
 * Assinatura do Microsoft Intune
@@ -86,9 +86,9 @@ Detecta ameaças à sua rede, como ataques do tipo man-in-the-middle, e impede a
 ![Diagrama mostrando o acesso condicional bloqueando o acesso do dispositivo ao SharePoint Online com base na detecção de ameaças](../media/mtp/network-spo-blocked.png)
 
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
-![Diagrama mostrando o acesso condicional permitindo o acesso após a correção da ameaça à rede](../media/mtp/network-spo-unblocked.png)
+![Diagrama que mostra o acesso condicional permitindo o acesso após a correção da ameaça à rede](../media/mtp/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 Veja as principais etapas que você precisa realizar para implementar esta solução:

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Para obter instruções sobre como criar uma política de aplicativo no console 
 - Windows 10
 
 >[!NOTE]
->Começando com a versão 1703, políticas de proteção de aplicativos podem ser definidas para dispositivos Windows 10 no MAM sem o cenário de registro. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Começando com a versão 1703, políticas de proteção de aplicativos podem ser definidas para dispositivos Windows 10 no MAM sem o cenário de registro. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Aplicativos com suporte
 * **Aplicativos Microsoft:** esses aplicativos têm o SDK de Aplicativo do Intune interno e não exigem nenhum processamento adicional antes de aplicar as políticas de proteção de aplicativo.
-Para ver a lista completa de aplicativos da Microsoft com suporte, vá para a [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicativos do Microsoft Intune. Clique em um aplicativo para ver os cenários e plataformas com suporte e para ver se o aplicativo dá suporte a várias identidades ou não.
+Para ver a lista completa de aplicativos da Microsoft com suporte, vá para a [Galeria de aplicativos móveis do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicativos do Microsoft Intune. Clique em um aplicativo para ver os cenários e plataformas com suporte e para ver se o aplicativo dá suporte a várias identidades ou não.
 
 * **Aplicativos de linha de negócios da organização:** é necessário preparar esses aplicativos para incluir o SDK de Aplicativo do Intune antes que seja possível aplicar as políticas de proteção de aplicativo.
 
@@ -76,7 +76,7 @@ Para ver a lista completa de aplicativos da Microsoft com suporte, vá para a [G
 ## <a name="prerequisites"></a>Pré-requisitos
 
 -   **Uma assinatura do Microsoft Intune**. Os usuários precisam de licenças do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para obter aplicativos que têm políticas de proteção de aplicativo.
-Você já tem uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se estiver usando o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para gerenciar seus dispositivos. Você também terá uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se tiver adquirido uma licença do EMS (Enterprise Mobility Suite). Se estiver tentando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]conferir os recursos de MAM, será possível obter uma conta de avaliação na [página do Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+Você já tem uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se estiver usando o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para gerenciar seus dispositivos. Você também terá uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se tiver adquirido uma licença do EMS (Enterprise Mobility Suite). Se estiver tentando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]conferir os recursos de MAM, será possível obter uma conta de avaliação na [página do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
     Para verificar se você tem uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] no portal do Office, acesse a página **Cobrança**.  Se você tiver uma assinatura, verá [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] como **Ativo** nas assinaturas.
 
@@ -98,13 +98,13 @@ Você já tem uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_m
 
 1.  Entre no [portal do Office](http://portal.office.com) com suas credenciais de administrador.
 
-2.  Adicione usuários, conforme descrito na seção **Etapas para realizar uma avaliação de 30 dias do Intune** do [Guia de avaliação do Intune](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) e, em seguida, atribua as licenças do Intune. Para conceder a um usuário a capacidade de acessar o portal do Office, o portal do Azure AD e o Portal do Azure, atribua a função de **Administrador Global** ao usuário.
+2.  Adicione usuários, conforme descrito na seção **Etapas para realizar uma avaliação de 30 dias do Intune** do [Guia de avaliação do Intune](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) e, em seguida, atribua as licenças do Intune. Para conceder a um usuário a capacidade de acessar o portal do Office, o portal do Azure AD e o Portal do Azure, atribua a função de **Administrador Global** ao usuário.
 
-5.  Políticas de proteção de aplicativo são implantadas ema grupos de usuários no Azure Active Directory. Para criar grupos de usuários para as políticas de proteção de aplicativo, crie um grupo de usuários, conforme descrito na seção **Criar um grupo de usuários** de [Criar grupos para organizar usuários e dispositivos de assinatura de avaliação](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
+5.  Políticas de proteção de aplicativo são implantadas ema grupos de usuários no Azure Active Directory. Para criar grupos de usuários para as políticas de proteção de aplicativo, crie um grupo de usuários, conforme descrito na seção **Criar um grupo de usuários** de [Criar grupos para organizar usuários e dispositivos de assinatura de avaliação](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Atribua funções a usuários administradores não globais
 
-Os administradores globais têm acesso ao [Portal do Azure](https://portal.azure.com).  Se você desejar que usuários que não são administradores globais possam configurar políticas e realizar outras tarefas de gerenciamento de aplicativo móvel, consulte o artigo [Usar atribuições de função para gerenciar acesso para seus recursos de assinatura do Azure](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
+Os administradores globais têm acesso ao [Portal do Azure](https://portal.azure.com).  Se você desejar que usuários que não são administradores globais possam configurar políticas e realizar outras tarefas de gerenciamento de aplicativo móvel, consulte o artigo [Usar atribuições de função para gerenciar acesso para seus recursos de assinatura do Azure](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/).
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |Perfil de email|Essa política pode ser usada para definir [configurações de acesso de email](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) para clientes de email específicos em dispositivos móveis, minimizando a quantidade de configuração que o usuário final precisa fazer.|
-|EMS|O Microsoft Enterprise Mobility + Security (anteriormente conhecido como Enterprise Mobility Suite) mantém os dados da empresa protegidos ao mesmo tempo em que permite que os usuários [acessem os aplicativos e o conteúdo que precisam](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|O Microsoft Enterprise Mobility + Security (anteriormente conhecido como Enterprise Mobility Suite) mantém os dados da empresa protegidos ao mesmo tempo em que permite que os usuários [acessem os aplicativos e o conteúdo que precisam](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Usuário final|[Usuários de dispositivos como telefones e computadores](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) gerenciados com o Intune.|
 |Registrar|O Microsoft Intune usa o [registro](/intune/deploy-use/enroll-devices-in-microsoft-intune) para trazer dispositivos para o gerenciamento e permitir acesso aos recursos.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Bloqueio remoto|Um recurso do Intune que permitirá que você [bloqueie dispositivos com suporte](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), mesmo se você não estiver em posse do dispositivo.|
 |Relatórios|O Intune fornece uma variedade de [relatórios internos](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) que disponibilizam informações sobre os dispositivos que você gerencia.|
 |Instalação requerida|Quando você implanta um aplicativo com esta ação, ele é instalado no dispositivo [sem intervenção do usuário](/intune/deploy-use/deploy-apps) (embora em algumas plataformas, o usuário final possa ter que aceitar a instalação).|
-|Requisitos|Uma [operação de implantação de aplicativo](/en-us/intune/deploy-use/add-apps) que permite que você selecione os requisitos que devem ser atendidos em um dispositivo antes que o aplicativo seja instalado. Por exemplo, é possível especificar a versão do sistema operacional do iOS que deve ser instalada antes do aplicativo.|
+|Requisitos|Uma [operação de implantação de aplicativo](/intune/deploy-use/add-apps) que permite que você selecione os requisitos que devem ser atendidos em um dispositivo antes que o aplicativo seja instalado. Por exemplo, é possível especificar a versão do sistema operacional do iOS que deve ser instalada antes do aplicativo.|
 
 ## <a name="s"></a>S
 |||

@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -42,27 +42,27 @@ As etapas a seguir são necessárias para configurar a Defesa contra Ameaças M�
 
 
 > [!IMPORTANT]
-> Um locatário existente do Lookout Mobile Endpoint Security que não está associado ao seu locatário do Azure AD não pode ser usado para a integração com o Azure AD e o Intune. Entre em contato com o suporte do Lookout para criar um novo locatário do Lookout Mobile Endpoint Security. Use o novo locatário para carregar os usuários do Azure AD.
+> Um locatário existente do Lookout Mobile Endpoint Security que não está associado ao seu locatário do Azure AD não pode ser usado para a integração com o Azure AD e o Intune. Contate o suporte do Lookout para criar um novo locatário do Lookout Mobile Endpoint Security. Use o novo locatário para carregar os usuários do Azure AD.
 
 ## <a name="collect-azure-ad-information"></a>Coletar informações do Azure AD
 O locatário do Lookout Mobility Endpoint Security será associado à sua assinatura do Azure AD para integrar o Lookout com o Intune. Para habilitar sua assinatura do serviço de Defesa contra Ameaças Móveis do Lookout, o suporte do Lookout (enterprisesupport@lookout.com) precisa das seguintes informações:  
 
 * **ID do locatário do Azure AD**
-* **ID do objeto de grupo do Azure AD** para acesso **completo** ao Lookout
+* **ID do Objeto de Grupo do Azure AD** para acesso **completo** ao console do Lookout
 * **ID do objeto de grupo do Azure AD** para acesso **restrito** ao Lookout (opcional)
 
 Use as etapas a seguir para coletar as informações de que precisa para fornecer à equipe de suporte do Lookout.
 
 1. Entre no [portal de gerenciamento do Azure AD](https://manage.windowsazure.com) e selecione sua assinatura. 
   ![captura de tela da página do Azure AD mostrando o nome do locatário](../media/mtp/aad_tenant_name.png)
-2. Ao escolher o nome de sua assinatura, a URL resultante incluirá a ID da assinatura.  Se você tiver problemas para localizar sua ID da assinatura, consulte este [artigo do suporte da Microsoft](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) para obter dicas sobre como encontrar sua ID de assinatura. 
+2. Ao escolher o nome de sua assinatura, a URL resultante incluirá a ID da assinatura.  Se você tiver problemas para localizar sua ID da assinatura, consulte este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter dicas sobre como encontrar sua ID de assinatura. 
 3. Encontre sua ID do Grupo do Azure AD. O console do Lookout dá suporte a 2 níveis de acesso:  
-  * **Acesso Completo:** o administrador do Azure AD pode criar um grupo para usuários que terão Acesso completo e, opcionalmente, pode criar um grupo para usuários que terão Acesso restrito.  Somente os usuários nesses grupos poderão fazer logon no **console do Lookout**.
-  * **Acesso restrito:** os usuários neste grupo não terão acesso a vários módulos relacionados à configuração e ao registro do console do Lookout, e terão acesso somente leitura ao módulo **Política de Segurança** do console do Lookout.  
+  * **Acesso completo:** o administrador do Azure AD pode criar um grupo de usuários que terá acesso completo e, opcionalmente, criar um grupo de usuários que terá acesso restrito.  Somente os usuários nesses grupos poderão fazer logon no **console do Lookout**.
+  * **Acesso restrito:** os usuários neste grupo não terão acesso a várias configurações e módulos relacionados ao registro do console do Lookout e terão acesso somente leitura ao módulo de **Política de segurança** do console do Lookout.  
 
-  Para obter mais detalhes sobre as permissões, leia [este artigo](https://personal.support.lookout.com/hc/en-us/articles/114094105653) no site do Lookout.
+  Para obter mais detalhes sobre as permissões, leia [este artigo](https://personal.support.lookout.com/hc/articles/114094105653) no site do Lookout.
 
-  A **ID do objeto do grupo** está na página **Propriedades** do grupo no **console de gerenciamento do Azure AD**.
+  A **ID de Objeto do Grupo** está na página **Propriedades** do grupo no **console de gerenciamento do Azure AD**.
 
   ![captura de tela da página de propriedades com o campo GroupID realçado](../media/mtp/aad_group_object_id.png)
 
@@ -127,7 +127,7 @@ Se desejar receber alertas de ameaças por email, conecte-se ao [console do Look
 ![captura de tela da página Preferências com a conta de usuário exibida](../media/mtp/lookout-mtp-email-notifications.png) Se não quiser receber notificações por email, defina as notificações como **DESATIVADO** e salve as alterações.
 
 ### <a name="configure-threat-classification"></a>Configurar a classificação de ameaças
-A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/en-us/articles/114094130693) têm níveis de risco padrão associados a elas. Elas podem ser alteradas a qualquer momento de acordo com os requisitos de sua empresa.
+A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/articles/114094130693) têm níveis de risco padrão associados a elas. Elas podem ser alteradas a qualquer momento de acordo com os requisitos de sua empresa.
 
 ![captura de tela da página de política mostrando ameaças e classificações](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -135,7 +135,7 @@ A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vári
 > Os níveis de risco são um aspecto importante da Defesa contra Ameaças Móveis, porque a integração com o Intune calcula a conformidade do dispositivo de acordo com esses níveis de risco em tempo de execução. O administrador do Intune define uma regra na política para identificar um dispositivo que não está em conformidade se ele tem uma ameaça ativa com um nível mínimo de **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na Defesa contra Ameaças Móveis do Lookout alimenta diretamente o cálculo de conformidade no Intune.
 
 ## <a name="watching-enrollment"></a>Verificar o registro
-Quando a instalação estiver concluída, a Defesa contra Ameaças Móveis do Lookout começa a sondar o Azure AD em busca de dispositivos que correspondem aos grupos de registro especificados.  Você pode encontrar informações sobre os dispositivos registrados no módulo Dispositivos.  O status inicial dos dispositivos é pendente.  O status do dispositivo será alterado depois que o aplicativo Lookout for Work for instalado, aberto e ativado no dispositivo.  Para obter detalhes sobre como fazer com que o aplicativo Lookout for Work seja enviado por push ao dispositivo, consulte o tópico [Configurar e implantar o aplicativo Lookout for Work](configure-and-deploy-lookout-for-work-apps.md).
+Quando a instalação estiver concluída, a Defesa contra Ameaças Móveis do Lookout começa a sondar o Azure AD em busca de dispositivos que correspondem aos grupos de registro especificados.  Você pode encontrar informações sobre os dispositivos registrados no módulo Dispositivos.  O status inicial dos dispositivos é mostrado como pendente.  O status do dispositivo será alterado quando o aplicativo Lookout for Work estiver instalado, aberto e ativado no dispositivo.  Para obter detalhes sobre como obter o Lookout for Work no dispositivo, consulte o tópico [Configurar e implantar aplicativos Lookout for Work](configure-and-deploy-lookout-for-work-apps.md).
 ## <a name="next-steps"></a>Próximas etapas
-[Habilitar a conexão da Consulta MTP no Intune](enable-lookout-mtp-connection-in-intune.md)
+[Habilitar conexão do Lookout MTP no Intune](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

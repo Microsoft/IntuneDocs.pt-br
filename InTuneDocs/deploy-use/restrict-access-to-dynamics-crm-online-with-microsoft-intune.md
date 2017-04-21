@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 Para saber mais sobre como o acesso condicional funciona, leia o artigo [Protect access to email, 0365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Proteger o acesso ao email, O365 e outros serviços).
 
 > [!IMPORTANT]
-> Para implantar o acesso condicional, é necessário ter assinaturas do Intune e do Azure Active Directory Premium e os usuários devem estar licenciados para ambos os produtos. A **assinatura do EMS (Enterprise Mobility + Security)** inclui tanto assinaturas do Intune quanto do Azure Active Directory Premium. Para obter mais detalhes, consulte a página de preços do [Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se você não tiver a assinatura do EMS, poderá obter uma assinatura para o Azure Active Directory Premium. Veja a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+> Para implantar o acesso condicional, é necessário ter assinaturas do Intune e do Azure Active Directory Premium e os usuários devem estar licenciados para ambos os produtos. A **assinatura do EMS (Enterprise Mobility + Security)** inclui tanto assinaturas do Intune quanto do Azure Active Directory Premium. Para obter mais detalhes, consulte a página de preços do [Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing). Se você não tiver a assinatura do EMS, poderá obter uma assinatura para o Azure Active Directory Premium. Veja a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Quando um determinado usuário tenta usar o aplicativo Dynamics CRM em seu dispositivo, ocorre a seguinte avaliação:
 
@@ -82,8 +83,8 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
   * **iOS**
   * **Android**
 4.  Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
-5.    Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
-6.    Quando terminar, selecione **Salvar**.
+5.    Opcionalmente, em **Grupos Isentos**, escolha em **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
+6.    Quando terminar, escolha **Salvar**.
 
 Você configurou o acesso condicional ao Dynamics CRM. Não é necessário implantar a política de acesso condicional, ela entra em vigor imediatamente.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorar a conformidade e políticas de acesso condicional
@@ -102,9 +103,4 @@ Escolha qualquer grupo de dispositivos móveis e, então, na guia **Dispositivos
 * [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Proteger o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

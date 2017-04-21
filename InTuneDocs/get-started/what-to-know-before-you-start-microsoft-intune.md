@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Diferentes tarefas administrativas exigem o uso de um dos seguintes sites admini
 |**Site do Portal da Empresa**     |**Em dispositivos móveis:** usar o navegador da Web padrão para cada plataforma com suporte   <br /><br />**Em computadores Windows:** Internet Explorer 10 ou posterior ou Microsoft Edge<br /><br />**No Mac OS X 10.9 ou posterior:** Safari da Apple    |
 
 > [!Note]
-> O Microsoft Edge e os navegadores móveis não têm suporte para o console de administração porque não dão suporte ao [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx). O console do Intune está deixando a experiência do Silverlight ao longo de um período. Eventualmente, todos os recursos de gerenciamento de aplicativos e dispositivos móveis do Intune serão [disponibilizados no novo portal do Microsoft Azure](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
+> O Microsoft Edge e os navegadores móveis não têm suporte para o console de administração porque não dão suporte ao [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx). O console do Intune está deixando a experiência do Silverlight ao longo de um período. Eventualmente, todos os recursos de gerenciamento de aplicativos e dispositivos móveis do Intune serão [disponibilizados no novo portal do Microsoft Azure](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 
 Apenas usuários com permissões de administrador de serviços ou administradores de locatários com a função de administrador global podem entrar nesse portal. Para acessar o console de administração, sua conta deve ter uma licença para usar o Intune e um status de entrada de **Permitido**.

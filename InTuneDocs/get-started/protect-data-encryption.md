@@ -15,8 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Este guia de início rápido é um bom recurso se você atender aos seguintes re
 > [!NOTE]
 > O Windows ainda não é uma plataforma com suporte para aplicativos móveis do Office. O gerenciamento de aplicativo móvel sem registro ainda não é compatível com o Exchange ou com o SharePoint local. Você só pode proteger dados hospedados em versões online.
 
-Este guia pode ajudar você a proteger sua empresa contra perda de dados forçando senhas e criptografia de dados usando políticas nos aplicativos móveis que seus funcionários usam para acessar dados confidenciais, sem exigir o registro completo em qualquer solução de gerenciamento de dispositivo. O Microsoft Intune permite que você defina políticas de MAM (gerenciamento de aplicativo móvel) em aplicativos móveis do Office para [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) e [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android). Esta abordagem protege dados do O365 sem exigir que os usuários registrem seus dispositivos em uma solução de gerenciamento de dispositivo móvel, enquanto mantêm uma excelente experiência do usuário final com aplicativos móveis do Office.
+Este guia pode ajudar você a proteger sua empresa contra perda de dados forçando senhas e criptografia de dados usando políticas nos aplicativos móveis que seus funcionários usam para acessar dados confidenciais, sem exigir o registro completo em qualquer solução de gerenciamento de dispositivo. O Microsoft Intune permite que você defina políticas de MAM (gerenciamento de aplicativo móvel) em aplicativos móveis do Office para [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) e [Android](https://products.office.com/mobile/office-mobile-apps-for-android). Esta abordagem protege dados do O365 sem exigir que os usuários registrem seus dispositivos em uma solução de gerenciamento de dispositivo móvel, enquanto mantêm uma excelente experiência do usuário final com aplicativos móveis do Office.
 
 ## <a name="how-do-i-do-it"></a>Como fazer isso?
 1.    [Examine como você pode proteger dados de aplicativos](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -50,10 +51,5 @@ Este guia pode ajudar você a proteger sua empresa contra perda de dados forçan
 ## <a name="additional-information"></a>Informação adicional:
 - [Saiba mais sobre a experiência do usuário final de aplicativos habilitados para MAM com o Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune.](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [Exiba a lista de parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+- [Exiba a lista de parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 35543604ed68393e859517e32f5186247be001df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f30ab8799b2e049372139c7f9ee7213547736bb0
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ As políticas de proteção de aplicativo aplicam a segurança no nível do apli
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Políticas de proteção de aplicativo com aplicativos LOB
 
-Também é possível estender as políticas de proteção de aplicativo móvel aos seus aplicativos LOB (linha de negócios) aproveitando o [SDK de Aplicativo do Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) ou a Microsoft Intune App Wrapping Tool para as plataformas [IOS](https://www.microsoft.com/en-us/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) e [Android](https://www.microsoft.com/en-us/download/details.aspx?id=47267).
+Também é possível estender as políticas de proteção de aplicativo móvel aos seus aplicativos LOB (linha de negócios) aproveitando o [SDK de Aplicativo do Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) ou a Microsoft Intune App Wrapping Tool para as plataformas [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) e [Android](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Como as políticas de proteção de aplicativo ajudam durante a migração?
 
@@ -46,9 +46,9 @@ Quando você desabilita o acesso condicional no provedor antigo de MDM, os usuá
 
 ## <a name="task-list-for-app-protection-policies"></a>Lista de tarefas para políticas de proteção de aplicativo
 
--   Tarefa 1: Saiba [como se preparar para configurar as políticas de proteção de aplicativo móvel](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+-   Tarefa 1: Saiba [como se preparar para configurar as políticas de proteção de aplicativo móvel](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 
--   Tarefa 2: Saiba [como criar e implantar as políticas de proteção de aplicativo móvel](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   Tarefa 2: Saiba [como criar e implantar as políticas de proteção de aplicativo móvel](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Próximas etapas 
 
