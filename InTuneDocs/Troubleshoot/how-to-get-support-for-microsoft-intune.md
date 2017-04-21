@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
-ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -70,11 +70,11 @@ Examine a [definição de um incidente de suporte](#definition-of-a-support-inci
 
 1.  Entre no [Centro de administração do Office 365](https://portal.office.com) com suas credenciais do Intune.
 
-    Se você for cliente do Suporte Premier, poderá abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+    Se você for cliente do Suporte Premier, poderá abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/premier/contacts).
 
     >[!NOTE]
     >
-    >Os clientes do Suporte Premier devem abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+    >Os clientes do Suporte Premier devem abrir um tíquete de suporte do Intune na [página do Suporte Premier](https://support.microsoft.com/premier/contacts).
 
 2.  Selecione o bloco de **Admin**.
 3.  À esquerda, em **Suporte**, selecione **Suporte** para abrir um tíquete.
@@ -136,7 +136,7 @@ Para outros problemas, nossa primeira resposta para clientes Professional será 
 - Um único usuário está enfrentando interrupção parcial, mas há uma solução alternativa aceitável.
 
 > [!NOTE]
-> **Se você usa o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) e a documentação do [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) para encontrar materiais avançados de autoajuda. Ele também oferece a opção de abrir uma solicitação de suporte online ou por telefone.
+> **Se você usa o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, entre em contato com o seu parceiro ou visite o [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) e a documentação do [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) para encontrar materiais avançados de autoajuda. Ele também oferece a opção de abrir uma solicitação de suporte online ou por telefone.
 >
 > O suporte técnico do System Center Configuration Manager ou System Center Endpoint Protection requer um pagamento ou é diminuído dos seus contratos existentes de licenciamento ou Suporte Premier.
 
