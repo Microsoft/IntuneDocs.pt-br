@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ O Microsoft Intune é um serviço baseado em nuvem que ajuda você a gerenciar d
 
 A Microsoft oferece o benefício do Intune Onboarding para serviços qualificados em planos qualificados. O benefício do Onboarding permite que você trabalhe remotamente com especialistas da Microsoft para deixar seu ambiente do Intune pronto para uso. Para obter mais informações sobre o benefício de Integração, consulte [Descrição do Benefício de Integração do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=619281).
 
-É possível começar a usar o Intune com uma versão de avaliação gratuita por 30 dias, que inclui 100 licenças para usuários. Para iniciar sua avaliação gratuita, vá até a [página de inscrição do Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). Se a sua empresa tiver um contrato corporativo ou um contrato de licenciamento por volume equivalente, entre em contato com o seu representante da Microsoft para configurar sua avaliação gratuita.
+É possível começar a usar o Intune com uma versão de avaliação gratuita por 30 dias, que inclui 100 licenças para usuários. Para iniciar sua avaliação gratuita, vá até a [página de inscrição do Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Se a sua empresa tiver um contrato corporativo ou um contrato de licenciamento por volume equivalente, entre em contato com o seu representante da Microsoft para configurar sua avaliação gratuita.
 
 > [!NOTE]
 > Se a sua organização tem uma conta corporativa ou de estudante do Microsoft Online Services e é provável que você continue com essa assinatura do Intune em produção depois que o período de avaliação terminar, escolha a opção **Entrar** nessa página e faça a autenticação usando a conta de administrador global da sua organização. Esta ação assegurará seus links de avaliação do Intune para sua conta do trabalho ou da escola.
@@ -69,13 +70,13 @@ Você pode configurar o Intune de várias formas para gerenciar e ajudar a prote
 
 -**Configuração autônoma do Intune.** Use o console de administração baseado na Web do Intune para gerenciar dispositivos na sua organização. O Intune pode ser usado sem nenhuma infraestrutura de TI local. Se usar o Intune com os Active Directory Domain Services, você poderá usar contas de usuário de domínio que você gerencia com os Serviços de Domínio com Intune.
 
--**Intune com System Center Configuration Manager.** Use o console de gerenciamento do Configuration Manager para gerenciar computadores e dispositivos móveis na sua empresa. Essa configuração pode ajudá-lo a gerenciar todos os dispositivos da sua empresa por meio de um único console, o Console de Admin do Configuration Manager. O Configuration Manager dá suporte a inúmeros dispositivos móveis, servidores e computadores. Para obter mais informações, consulte [MDM (gerenciamento de dispositivo móvel) híbrido com o System Center Configuration Manager e o Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx). Para obter mais ajuda para decidir qual abordagem é adequada para você, veja [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) (Escolher entre gerenciamento de dispositivo móvel do Microsoft Intune autônomo ou híbrido com o Configuration Manager).
+-**Intune com System Center Configuration Manager.** Use o console de gerenciamento do Configuration Manager para gerenciar computadores e dispositivos móveis na sua empresa. Essa configuração pode ajudá-lo a gerenciar todos os dispositivos da sua empresa por meio de um único console, o Console de Admin do Configuration Manager. O Configuration Manager dá suporte a inúmeros dispositivos móveis, servidores e computadores. Para obter mais informações, consulte [MDM (gerenciamento de dispositivo móvel) híbrido com o System Center Configuration Manager e o Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx). Para obter mais ajuda para decidir qual abordagem é adequada para você, veja [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/library/mt706478.aspx) (Escolher entre gerenciamento de dispositivo móvel do Microsoft Intune autônomo ou híbrido com o Configuration Manager).
 
 
 ## <a name="learn-more-about-intune"></a>Saiba mais sobre o Intune
 Use estes recursos para saber mais sobre o Intune:
 
-- A [Central de Confiabilidade do Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) fornece informações sobre as práticas de segurança, privacidade e conformidade do Intune e descreve algumas das certificações do Intune.
+- A [Central de Confiabilidade do Microsoft Intune](https://www.microsoft.com/server-cloud/products/intune-trust-center/) fornece informações sobre as práticas de segurança, privacidade e conformidade do Intune e descreve algumas das certificações do Intune.
 
 - [Recursos de gerenciamento de dispositivos registrados do Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
@@ -84,9 +85,4 @@ Use estes recursos para saber mais sobre o Intune:
 [Biblioteca de documentação do System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
 [Novidades do Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

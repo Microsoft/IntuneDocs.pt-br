@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,14 +38,14 @@ Você *não precisa* registrar seu aplicativo. Para aplicativos de linha de neg�
 
 Primeiro, você _**deve**_ registrar o aplicativo no Microsoft Intune e concordar com os termos de registro. Em seguida, os administradores de TI poderão aplicar a política de proteção do aplicativo ao aplicativo habilitado, que será listado como um parceiro de aplicativos do Intune.
 
-Somente depois que o registro for concluído e confirmado pela equipe do Microsoft Intune os administradores do Intune terão a opção de aplicar a política de proteção do aplicativo ao link profundo do aplicativo. A Microsoft também adicionará seu aplicativo à [página Parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Nessa página, o ícone do aplicativo será exibido para mostrar que ele dá suporte às políticas de proteção do aplicativo do Intune.
+Somente depois que o registro for concluído e confirmado pela equipe do Microsoft Intune os administradores do Intune terão a opção de aplicar a política de proteção do aplicativo ao link profundo do aplicativo. A Microsoft também adicionará seu aplicativo à [página Parceiros do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Nessa página, o ícone do aplicativo será exibido para mostrar que ele dá suporte às políticas de proteção do aplicativo do Intune.
 
 Para iniciar o processo de registro, preencha o [Questionário de Parceiro de Aplicativo do Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
 Usaremos os endereços de email listados em suas respostas ao questionário para contatá-lo e continuar o processo de registro. Além disso, usamos o seu endereço de email de registro para entrar em contato com você caso tenhamos quaisquer dúvidas.
 
 > [!NOTE]
-> Todas as informações coletadas no questionários e por email com a equipe do Microsoft Intune serão tratadas de acordo com a [Política de Privacidade da Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+> Todas as informações coletadas no questionários e por email com a equipe do Microsoft Intune serão tratadas de acordo com a [Política de Privacidade da Microsoft](https://www.microsoft.com/privacystatement/default.aspx).
 
 **O que esperar no processo de registro**:
 
@@ -52,7 +53,7 @@ Usaremos os endereços de email listados em suas respostas ao questionário para
 
 2. Após recebermos de você todas as informações necessárias, enviaremos o Contrato de Parceiro do Aplicativo do Microsoft Intune para você assinar. Este contrato descreve os termos que sua empresa deve aceitar antes de se tornar um parceiro de aplicativo do Microsoft Intune.
 
-3. Você também será notificado quando seu aplicativo for registrado com êxito no serviço do Microsoft Intune e quando ele estiver em destaque no site de [parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+3. Você também será notificado quando seu aplicativo for registrado com êxito no serviço do Microsoft Intune e quando ele estiver em destaque no site de [parceiros do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 4. Por fim, o link profundo de seu aplicativo será adicionado à próxima atualização mensal do Serviço do Intune. Por exemplo, se as informações o registro forem concluídas em julho, o link profundo terá suporte em meados de agosto.
 
@@ -137,9 +138,4 @@ A notificação é um ícone de porta-arquivos e pode ser vista nos exemplos aba
 * Um aplicativo de manipulação de imagem que pode ler arquivos **.eps** ou um aplicativo Adobe que pode ler arquivos **.ai**.
 
 * Encontre os [ativos de notificação de aplicativo do Intune e as diretrizes](https://github.com/msintuneappsdk/intune-app-partner-badge) no GitHub do Microsoft Intune.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

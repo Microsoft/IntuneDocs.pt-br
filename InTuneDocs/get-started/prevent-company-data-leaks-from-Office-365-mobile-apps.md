@@ -15,8 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4c13eb3149ea0cc21604a5a05445cfccdc984293
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,15 +41,10 @@ Se sim, o Microsoft Intune permite que você defina políticas de MAM para aplic
 ### <a name="additional-information"></a>Informação adicional:
 - [Experiência do usuário final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) usando aplicativos habilitados para MAM.
 - [Preparar aplicativos de LOB para MAM com o Intune](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- <a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners" target="_blank"> Lista de parceiros de aplicativos do Microsoft Intune &rarr;</a> que fornecem aplicativos habilitados para MAM.
+- <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> Lista de parceiros de aplicativos do Microsoft Intune &rarr;</a> que fornecem aplicativos habilitados para MAM.
 
 ## <a name="what-should-i-do-next"></a>O que devo fazer em seguida?
 [Migrar de uma solução que não faz parte do MDM da Microsoft para o Microsoft Intune](/intune/deploy-use/migrate-to-intune)
 
 [Registrar dispositivos no MDM do Intune](/intune/deploy-use/enroll-devices-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

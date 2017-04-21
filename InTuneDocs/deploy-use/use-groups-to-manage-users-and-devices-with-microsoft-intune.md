@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ O grupo recém-criado é mostrado na lista **Grupos**, no espaço de trabalho **
     > No momento, se o seu grupo incluir membros de grupos de segurança ou grupos de gerenciamento específicos, e você excluir membros de alguns grupos, os membros incluídos inicialmente serão removidos. Para criar um grupo que tenha membros incluídos e excluídos, é recomendável que primeiro você crie um grupo pai que tenha os membros incluídos. Em seguida, crie um grupo filho para esse grupo pai. No novo grupo filho, liste os membros excluídos. Então, use esse grupo filho para gerenciar a distribuição de aplicativos, perfis e políticas do Intune.
 
     > [!NOTE]
-    > No portal do Azure, você pode criar grupos com base nos gerentes a que os usuários são subordinados. Esse tipo de grupo é dinâmico e muda conforme os funcionários são adicionados ou removidos da equipe do gerente no Azure Active Directory. O procedimento para criar um grupo do Azure baseado no nome do gerente é descrito em [Usar atributos para criar regras avançadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) na seção **Para configurar um grupo como grupo de “Gerente”**.
+    > No portal do Azure, você pode criar grupos com base nos gerentes a que os usuários são subordinados. Esse tipo de grupo é dinâmico e muda conforme os funcionários são adicionados ou removidos da equipe do gerente no Azure Active Directory. O procedimento para criar um grupo do Azure baseado no nome do gerente é descrito em [Usar atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) na seção **Para configurar um grupo como grupo de “Gerente”**.
 
 4.  Na página **Definir Associação Direta**, escolha **Procurar** para selecionar usuários individuais a serem incluídos ou excluídos. Se você selecionar os usuários que não estão no grupo pai especificado, esses dispositivos serão automaticamente adicionados ao grupo pai. A opção de adicionar manualmente um usuário está na parte inferior da caixa de diálogo **Selecionar Membros**. Isso é útil se você quiser adicionar um usuário que ainda não tem um dispositivo registrado.
 
@@ -151,9 +152,4 @@ Cada política tem um **Valor Pretendido** e um **Status**. O valor pretendido �
 
 > [!NOTE]
 > Lembre-se de que, quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva se aplica na prática.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

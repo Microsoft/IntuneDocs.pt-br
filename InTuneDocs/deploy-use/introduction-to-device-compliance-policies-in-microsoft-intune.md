@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2de9a7d639ee667ee195ded2875a8ac8e478fffb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +35,7 @@ Você pode usar políticas de conformidade com políticas de acesso condicional 
 Você também pode usar políticas de conformidade independentemente do acesso condicional. Quando você usa as políticas de conformidade de forma independente, os dispositivos de destino são avaliados e relatados com o status de conformidade. Por exemplo, você talvez deseje um relatório sobre o número de dispositivos que não estão criptografados ou quais dispositivos estão com jailbreak ou com raiz. No entanto, quando você usa as políticas de conformidade de forma independente, não há restrições de acesso aos recursos da empresa em vigor.
 
 Você pode implantar políticas de conformidade para usuários. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade.
-Para saber quanto tempo levará para que dispositivos móveis obtenham uma política após a política ser implantada, consulte [Gerenciar configurações e recursos em seus dispositivos](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
+Para saber quanto tempo levará para que dispositivos móveis obtenham uma política após a política ser implantada, consulte [Gerenciar configurações e recursos em seus dispositivos](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 A tabela a seguir lista os tipos de dispositivos que têm suporte das políticas de conformidade. A tabela também descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
 
@@ -67,9 +68,4 @@ A tabela a seguir lista os tipos de dispositivos que têm suporte das políticas
 
 ### <a name="see-also"></a>Consulte também
 [Restringir o acesso ao email e aos serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

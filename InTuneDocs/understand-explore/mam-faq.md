@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 
 **O que é o MAM?** [Gerenciamento de aplicativo móvel do Intune](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) refere-se ao pacote de recursos de gerenciamento do Intune que permite publicar, enviar por push, configurar, proteger, monitorar e atualizar aplicativos móveis para os usuários.
 
-**Quais são os benefícios da proteção do aplicativo do MAM?** O MAM protege os dados de uma organização em um aplicativo. Com o MAM-WE, um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase todos os dispositivos, incluindo dispositivos pessoais em cenários de BYOD (traga seu próprio dispositivo). Vários aplicativos de produtividade, como os aplicativos do Microsoft Office, podem ser gerenciados pelo Intune MAM. Consulte a lista oficial de [aplicativos habilitados pelo Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) disponíveis para uso público.
+**Quais são os benefícios da proteção do aplicativo do MAM?** O MAM protege os dados de uma organização em um aplicativo. Com o MAM-WE, um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase todos os dispositivos, incluindo dispositivos pessoais em cenários de BYOD (traga seu próprio dispositivo). Vários aplicativos de produtividade, como os aplicativos do Microsoft Office, podem ser gerenciados pelo Intune MAM. Consulte a lista oficial de [aplicativos habilitados pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para uso público.
 
 **Quais configurações de dispositivo têm suporte no MAM?** O Intune MAM dá suporte a duas configurações:
   1. **Intune MDM + MAM**: essa foi a primeira configuração com suporte no MAM quando ele foi lançado pela primeira vez. Os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console independente do Intune em http://manage.microsoft.com.
@@ -48,7 +49,7 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Aplicativos que podem ser gerenciados com políticas de proteção do aplicativo
 
-**Quais aplicativos podem ser gerenciados por políticas de proteção do aplicativo?** Qualquer aplicativo que tenha sido habilitado pelo [SDK do Aplicativo do Intune](../develop/intune-app-sdk.md) ou encapsulado pela [Ferramenta de Disposição do Aplicativo do Intune](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) pode ser gerenciado por políticas de proteção do aplicativo do Intune. Consulte a lista oficial de [aplicativos habilitados pelo Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) disponíveis para uso público.
+**Quais aplicativos podem ser gerenciados por políticas de proteção do aplicativo?** Qualquer aplicativo que tenha sido habilitado pelo [SDK do Aplicativo do Intune](../develop/intune-app-sdk.md) ou encapsulado pela [Ferramenta de Disposição do Aplicativo do Intune](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) pode ser gerenciado por políticas de proteção do aplicativo do Intune. Consulte a lista oficial de [aplicativos habilitados pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para uso público.
 
 **Quais são os requisitos de linha de base para usar as políticas de proteção do aplicativo em um aplicativo habilitado pelo Intune?**
   1. O usuário final deve ter uma conta do AAD (Azure Active Directory). Consulte [Adicionar usuários e conceder permissão administrativa para o Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) para saber como criar usuários do Intune no Azure Active Directory.
@@ -59,18 +60,18 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 
   4. O usuário final deve se conectar ao aplicativo usando sua conta do AAD.
 
-**Quais são os requisitos adicionais para usar o [aplicativo móvel do Outlook](https://www.microsoft.com/en-us/outlook-com/mobile/)?**
+**Quais são os requisitos adicionais para usar o [aplicativo móvel do Outlook](https://www.microsoft.com/outlook-com/mobile/)?**
 
   1. O usuário final deve ter o aplicativo móvel do Outlook instalado em seu dispositivo.
 
-  2. O usuário final deve ter uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online) e uma licença vinculada à sua conta do Azure Active Directory.
+  2. O usuário final deve ter uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) e uma licença vinculada à sua conta do Azure Active Directory.
 
   >[!NOTE]
   > No momento, o aplicativo móvel do Outlook dá suporte apenas ao Microsoft Exchange Online e não dá suporte ao Exchange no Local nem ao Exchange no Office 365 Dedicated.
 
 **Quais são os requisitos adicionais para usar os [aplicativos Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-  1. O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e uma conta de armazenamento em nuvem com o [OneDrive para Empresas](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
+  1. O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e uma conta de armazenamento em nuvem com o [OneDrive para Empresas](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
   2. O usuário final deve ter o aplicativo [OneDrive](https://onedrive.live.com/about/) instalado em seu dispositivo e entrar com sua conta do AAD.
 
@@ -140,9 +141,4 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 - [Validar a configuração do gerenciamento de aplicativo móvel](../deploy-use/validate-mobile-application-management.md)
 - [Preparar-se para configurar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Como obter suporte para o Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

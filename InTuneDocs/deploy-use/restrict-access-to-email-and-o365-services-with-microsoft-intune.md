@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 ## <a name="how-does-conditional-access-work"></a>Como funciona o acesso condicional?
 É possível usar as configurações de política de conformidade para avaliar a conformidade de um dispositivo. Uma política de acesso condicional usa a avaliação para restringir ou permitir o acesso a um serviço específico. Quando você usa uma política de acesso condicional em combinação com uma política de conformidade do dispositivo, apenas os dispositivos que estão em conformidade poderão acessar o serviço. A política de conformidade e a política de acesso condicional são implantadas para o usuário. Qualquer dispositivo que o usuário utiliza para acessar os serviços é verificado quanto à conformidade com as políticas.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Tenha em mente que o usuário que está usando o dispositivo deve ter uma política de conformidade implantada para que o dispositivo seja avaliado quanto à conformidade.
 > Se nenhuma política de conformidade for implantada para o usuário, o dispositivo será tratado como compatível e nenhuma restrição de acesso será aplicada.
 
@@ -48,7 +48,7 @@ O Microsoft Intune e o Azure AD (Azure Active Directory) Premium trabalham diret
 
 **Licenças do Azure AD Premium** podem ser adquiridas como um serviço independente ou ser adquiridas (juntamente com o Intune) como parte do Enterprise Agreement. Se você tiver implantado políticas de acesso condicional com o Intune, garanta que você obteve as **licenças adequadas do EMS** ou do Azure AD Premium.
 
-- Saiba mais sobre a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Saiba mais sobre a [página de preços do Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Além disso, garanta que os usuários aos quais você pretende aplicar as políticas de acesso condicional [recebem as licenças do Azure AD Premium ou do EMS](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 

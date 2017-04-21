@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: acfcb5fc8bf0af2ba5fb897e9e18d61e60f11978
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -108,7 +108,7 @@ Depois de criar um perfil de certificado de Autoridade de Certificação confiá
 
     >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
 
-    > No exemplo, o administrador criou um formato de nome de entidade que, além das variáveis `CN` e `E`, usa cadeias de caracteres para os valores de Unidade Organizacional, Organização, Local, Estado e País. [Função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) listas cadeias de caracteres com suporte.
+    > No exemplo, o administrador criou um formato de nome de entidade que, além das variáveis `CN` e `E`, usa cadeias de caracteres para os valores de Unidade Organizacional, Organização, Local, Estado e País. [Função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) listas cadeias de caracteres com suporte.
 
 4.  Escolha **Salvar Política**.
 

@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -136,7 +137,7 @@ Na lista de **Aplicativos permitidos e bloqueados**, especifique uma lista de ap
 #### <a name="how-to-specify-urls-to-app-stores"></a>Como especificar URLs para lojas de aplicativos
 Para especificar uma URL de aplicativo na lista de aplicativos permitidos e bloqueados, use o seguinte formato:
 
-Na [página Aplicativos+Jogos do Windows Phone](http://www.windowsphone.com/en-us/store/overview), procure o aplicativo que você deseja usar.
+Na [página Aplicativos+Jogos do Windows Phone](http://www.windowsphone.com/store/overview), procure o aplicativo que você deseja usar.
 
 Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.
 
@@ -172,9 +173,4 @@ Na caixa de diálogo **Adicionar ou Editar Configuração de OMA-URI**, especifi
 
 ### <a name="see-also"></a>Consulte também
 [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

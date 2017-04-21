@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Implantar aplicativos no Microsoft Intune
@@ -48,7 +49,7 @@ Neste procedimento, você implantará o aplicativo para os grupos de dispositivo
 
 5. Se o aplicativo que você está implantando puder ser configurado por uma política de gerenciamento de aplicativo móvel, a página **Gerenciamento de Aplicativo Móvel** será exibida. Nessa página, escolha a política de gerenciamento de aplicativo móvel que você deseja associar a esse aplicativo.
 
-    [Veja quais aplicativos da Microsoft são compatíveis com políticas de gerenciamento de aplicativo móvel.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Veja quais aplicativos da Microsoft são compatíveis com políticas de gerenciamento de aplicativo móvel.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Se o aplicativo que você está implantando for compatível com perfis de VPN do Intune, a página **Perfil de VPN** será exibida. Nessa página, você pode optar por associar aplicativos iOS a um perfil de VPN implantado por você anteriormente. A conexão VPN é aberta automaticamente quando o aplicativo é iniciado. Para disponibilizar um perfil VPN, ele deve ter a configuração de perfil **VPN por aplicativo** habilitada.
  Para obter informações sobre como configurar perfis VPN, incluindo informações sobre como associar perfis a aplicativos, consulte [Conexões VPN no Microsoft Intune](vpn-connections-in-microsoft-intune.md).
@@ -72,9 +73,4 @@ Se você implantou o aplicativo como **Necessário** em um dispositivo iOS, o us
 ## <a name="next-steps"></a>Próximas etapas
 
 Depois de implantar um aplicativo, você vai querer monitorar seu andamento. Para obter mais informações, consulte [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Monitorar aplicativos no Microsoft Intune).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

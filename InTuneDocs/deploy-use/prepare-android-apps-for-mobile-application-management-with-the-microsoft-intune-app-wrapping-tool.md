@@ -15,8 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a89c2b26daf2b3b4da57e0c190f772e078681bee
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -130,7 +131,7 @@ Para evitar potenciais falsificações, divulgações de informações e aumento
 
 -   Importe o aplicativo de saída para o console do Intune no mesmo computador em que a ferramenta está sendo executada. Consulte [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para saber mais sobre o Java keytool.
 
--   Se o aplicativo de saída e a ferramenta estiverem em um caminho UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](http://en.wikipedia.org/wiki/IPsec) ou [Assinatura do Protocolo SMB (Server Message Block)](https://support.microsoft.com/en-us/kb/887429).
+-   Se o aplicativo de saída e a ferramenta estiverem em um caminho UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](http://wikipedia.org/wiki/IPsec) ou [Assinatura do Protocolo SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
 
 -   Certifique-se de que o aplicativo é proveniente de uma fonte confiável.
 
@@ -140,9 +141,4 @@ Para evitar potenciais falsificações, divulgações de informações e aumento
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 - [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
