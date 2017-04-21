@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 6932e75fd002661245baa7754824ec6cfe500a22
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: d70b3bc82b528184b5cfb4d4cad19cb034093e94
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -46,5 +46,5 @@ O relatório de conformidade de configuração fornece detalhes sobre cada confi
 - Número de dispositivos que não estão em conformidade com a configuração.
 - A plataforma à qual a configuração é aplicada.
 
-Você pode fazer uma busca detalhada em cada configuração para obter mais informações sobre os perfis nos quais essas configurações tem sido habilitadas e o valor definido da configuração.
+Você pode fazer uma busca detalhada em cada configuração para obter mais informações sobre os perfis nos quais essas configurações tem sido habilitadas e o valor da configuração.
 

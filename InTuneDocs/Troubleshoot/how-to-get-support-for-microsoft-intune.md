@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>Como os administradores obtém suporte para o Microsoft Intune
+# <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Intune. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível apenas em inglês e japonês. O suporte via telefone e o suporte de cobrança online estão disponíveis em outros idiomas.
 
 O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Os clientes do Suporte Premier incorrerão em um custo para perguntas sobre procedimentos (por exemplo, instruções sobre como configurar um recurso do Intune).
+
+>[!IMPORTANT]
+> Para obter suporte técnico de produtos que funcionam com o Intune, e que não são produzidos pela Microsoft, por exemplo, SaaSwedo, Cisco ou Lookout, contate o fornecedor do produto primeiro para garantir que você o configurou corretamente antes de abrir um caso com o suporte do Intune.
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Encontrar ajuda sem abrir um tíquete de suporte
 
@@ -39,6 +42,13 @@ Antes de criar um tíquete de suporte, confira os seguintes recursos para obter 
 Faça uma pergunta ou inicie uma conversa com especialistas técnicos da Microsoft! Fornecemos respostas e análises sobre o [Fórum do Microsoft Intune no TechNet](https://social.technet.microsoft.com/Forums/home) pesquisável.
 
 ![Fórum do Microsoft Intune no TechNet](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Introdução ao fórum
+
+1. Na página de fóruns, insira Microsoft Intune na caixa Fóruns e selecione-o na lista.<br>
+![Controle de seleção do fórum do Intune](./media/forum-select-intune.png)
+2. Agora você verá o Microsoft Intune em sua lista de fóruns selecionados.<br>
+![Intune selecionado no controle de fóruns](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de comentários do produto Microsoft Intune UserVoice
 
