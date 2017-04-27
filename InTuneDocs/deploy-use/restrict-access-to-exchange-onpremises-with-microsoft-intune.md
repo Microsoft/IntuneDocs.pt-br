@@ -83,10 +83,7 @@ Há suporte para os recursos a seguir:
 -   Clientes de email do Exchange ActiveSync, como Gmail no Android 4 ou posterior.
 -   Clientes de email do Exchange ActiveSync em dispositivos **Android para Trabalho**: há suporte apenas aos aplicativos **Gmail** e **Nine Work** no **perfil de trabalho** em dispositivos Android para Trabalho. Para que o acesso condicional funcione com o Android para Trabalho, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e também implantá-los como uma instalação obrigatória. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > Não há suporte para o aplicativo Microsoft Outlook para Android e iOS.
 
 ## <a name="support-for-pcs"></a>Suporte para computadores

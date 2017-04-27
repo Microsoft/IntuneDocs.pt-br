@@ -58,8 +58,6 @@ Você deve criar um perfil de certificado Confiável para poder criar um protoco
 
 -  Windows Phone 8.1 e posterior
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Adicione uma política de **Perfil de Certificado Confiável**.
 
     Saiba mais: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e funcionalidades em seus dispositivos com políticas do Microsoft Intune).
