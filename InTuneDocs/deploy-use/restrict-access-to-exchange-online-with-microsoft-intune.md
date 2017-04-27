@@ -78,8 +78,6 @@ O diagrama a seguir ilustra o fluxo usado pelas políticas de acesso condicional
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior e Android for Work
 - iOS 8.0 e posterior
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 A **autenticação moderna** leva a conexão baseada no ADAL (Biblioteca de Autenticação do Active Directory) para os clientes do Microsoft Office.
 
 -   A autenticação baseada em ADAL permite que os clientes do Office participem da autenticação baseada em navegador (também conhecida como autenticação passiva). Para se autenticar, um usuário é direcionado para uma página da Web de conexão.

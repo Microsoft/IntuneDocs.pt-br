@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -36,8 +37,6 @@ Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi 
  -  Android for Work
  -  Windows 8.1 e posterior
  -  Windows Phone 8.1 e posterior
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. Crie perfis de certificado para que os dispositivos solicitem um certificado a ser usado para autenticação de VPN, Wi-Fi e acesso por email, conforme descrito em [Configurar perfis de certificado do Intune](configure-intune-certificate-profiles.md). Você pode criar e implantar um **Perfil de Certificado PKCS #12 (.PFX)** *ou* um **Perfil de Certificado SCEP** para dispositivos em execução nestas plataformas:
 
@@ -62,9 +61,4 @@ Você deve criar um perfil separado para cada plataforma. Ao criar o perfil, voc
 - [Configurar a infraestrutura de certificado para SCEP](configure-certificate-infrastructure-for-scep.md)
 - [Configurar a infraestrutura de certificado para PFX](configure-certificate-infrastructure-for-pfx.md)
 - [Configurar perfis de certificado do Intune](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
