@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Se você tiver definido os valores da política para **Instalar o Endpoint Prote
 |**Monitorar a atividade de arquivos e programas nos computadores**|Permite o monitoramento de arquivos de entrada e saída e da atividade do programa em computadores. Com essa configuração, o Endpoint Protection pode monitorar quando os arquivos e programas começam a ser executados e alertá-lo sobre todas as ações que desempenham ou ações que são realizadas neles.<br /><br />Valor recomendado: **Sim**|
 |**Arquivos monitorados**|Permite que você escolha se apenas os arquivos de entrada, de saída ou todos os arquivos serão monitorados.<br /><br />Valor recomendado: **Monitorar todos os arquivos**|
 |**Habilitar o comportamento de monitoramento**|Permite que o Microsoft Intune Endpoint Protection verifique determinados padrões de atividades suspeitas em computadores cliente.<br /><br />Valor recomendado: **Sim**|
-|**Habilitar Sistema de Inspeção de Rede**|Habilita o Network Inspection System (NIS) nos computadores cliente. O NIS utiliza assinaturas de vulnerabilidades conhecidas do [Centro de Proteção contra Malware da Microsoft](http://go.microsoft.com/fwlink/?LinkId=234249) para ajudar a detectar e bloquear o tráfego mal-intencionado na rede.<br /><br />Valor recomendado: **Sim**|
+|**Habilitar Sistema de Inspeção de Rede**|Habilita o Network Inspection System (NIS) nos computadores cliente. O NIS utiliza assinaturas de vulnerabilidades conhecidas do [Centro de Proteção contra Malware da Microsoft](https://go.microsoft.com/fwlink/?LinkId=234249) para ajudar a detectar e bloquear o tráfego mal-intencionado na rede.<br /><br />Valor recomendado: **Sim**|
 
   ![Configurações em tempo real do Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 

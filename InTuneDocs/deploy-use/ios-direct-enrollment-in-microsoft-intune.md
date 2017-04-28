@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Ao registrar dispositivos iOS diretamente, você pode registrar um dispositivo s
 
 1.  Se ainda não tiver feito isso, crie um perfil de registro para dispositivos iOS registrados usando o Apple Configurator. Um perfil de registro do dispositivo define as configurações aplicadas a dispositivos.
 
-    1.  No [Console de administração do Microsoft Intune](http://manage.microsoft.com), acesse **Política** &gt; **Registro do Dispositivo Corporativo** e escolha **Adicionar**.
+    1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), acesse **Política** &gt; **Registro do Dispositivo Corporativo** e escolha **Adicionar**.
 
         ![Criar página de perfil de registro do dispositivo](../media/pol-sa-corp-enroll.png)
 

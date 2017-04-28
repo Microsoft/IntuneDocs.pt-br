@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -46,7 +47,7 @@ O procedimento a seguir descreve como criar uma regra personalizada.
 
 ## <a name="create-a-default-access-rule"></a>Criar uma regra de acesso padrão
 
-1.  No [console de administração do Microsoft Intune](http://manage.microsoft.com), escolha **Política** &gt; **Exchange ActiveSync**.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** &gt; **Exchange ActiveSync**.
 
 2.  Na lista **Regra Padrão**, selecione a regra de acesso que você quer aplicar a todos os dispositivos móveis não gerenciados por uma regra ou isenção pessoal. Selecione **Salvar**.
 
@@ -54,12 +55,7 @@ O procedimento a seguir descreve como criar uma regra personalizada:
 
 ## <a name="create-a-custom-access-rule"></a>Criar uma regra de acesso personalizada
 
-1. No [console de administração do Microsoft Intune](http://manage.microsoft.com), escolha **Política** &gt; **Exchange ActiveSync**.
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** &gt; **Exchange ActiveSync**.
 
 2.  Na lista **Exceções de Plataforma**, escolha **Adicionar Regra** e crie uma regra personalizada. Selecione **Salvar**.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

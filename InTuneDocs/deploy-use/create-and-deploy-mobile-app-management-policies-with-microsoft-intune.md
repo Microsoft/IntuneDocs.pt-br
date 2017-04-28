@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ As políticas de proteção de aplicativo são criadas no Portal do Azure. Se es
 
 Siga as etapas abaixo para criar as políticas de proteção de aplicativo:
 
-1. Acesse o [Portal do Azure](http://portal.azure.com) e insira suas credenciais.
+1. Acesse o [Portal do Azure](https://portal.azure.com) e insira suas credenciais.
 
 2. Escolha **Mais Serviços** e digite "Intune".
 
@@ -109,7 +109,7 @@ Ao terminar de criar uma política conforme descrito no procedimento anterior, e
 
 Começando com a versão do Intune 1703, você tem a opção de adicionar de modo geral aplicativos LOB no Intune ao criar uma nova política de proteção de aplicativos. Isso lhe dá a opção de definir políticas de proteção de aplicativos para aplicativos LOB usando o SDK do MAM sem a necessidade de permissões totais de implantação do aplicativo.
 
-> [!TIP] 
+> [!TIP]
 > Você também pode adicionar aplicativos LOB no Intune percorrendo o fluxo de trabalho do [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ Começando com a versão do Intune 1703, você tem a opção de adicionar de mod
 
 ### <a name="to-add-lob-apps-windows"></a>Para adicionar aplicativos LOB (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Você precisa selecionar o Windows 10 na lista suspensa da plataforma ao criar uma nova política de proteção de aplicativos.
 
 1.  Na caixa Adicionar uma folha de política, selecione **Aplicativos permitidos** ou **Aplicativos isentos** para abrir a folha de aplicativos permitidos ou isentos.
 
     > [!NOTE]
-    > 
+    >
     - **Aplicativos permitidos**: Estes são os aplicativos que precisam atender a esta política.
     - **Aplicativos isentos**: Estes aplicativos são isentos desta política e podem acessar dados corporativos sem restrições.
 <br></br>
