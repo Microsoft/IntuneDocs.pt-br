@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Nos computadores em que o software cliente será instalado, vá para a pasta na 
 
 ## <a name="instruct-users-to-self-enroll"></a>Instrua os usuários a se registrarem por conta própria
 
-Os usuários podem instalar o software cliente do Intune visitando o [site do Portal da Empresa](http://portal.manage.microsoft.com). As informações exatas que os usuários visualizam no portal da Web podem variar, de acordo com a Autoridade de MDM da sua conta e a plataforma e versão do computador do usuário.
+Os usuários podem instalar o software cliente do Intune visitando o [site do Portal da Empresa](https://portal.manage.microsoft.com). As informações exatas que os usuários visualizam no portal da Web podem variar, de acordo com a Autoridade de MDM da sua conta e a plataforma e versão do computador do usuário.
 
 Se os usuários ainda não tiverem recebido uma licença do Intune ou se a autoridade de MDM da organização não tiver sido definida para o Intune, as opções de registro não serão exibidas aos usuários.
 

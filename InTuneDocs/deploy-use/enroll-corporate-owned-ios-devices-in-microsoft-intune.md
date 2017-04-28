@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-O Microsoft Intune dá suporte ao registro de dispositivos iOS corporativos usando o DEP (Programa de Registro do Dispositivo) da Apple ou a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) executada em um computador Mac.
+O Microsoft Intune dá suporte ao registro de dispositivos iOS corporativos usando o DEP (Programa de Registro do Dispositivo) da Apple ou a ferramenta [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) executada em um computador Mac.
 
 **Pré-requisito:** um [certificado do Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
@@ -39,15 +39,15 @@ Você pode registrar dispositivos iOS com registro corporativo usando um de trê
 >[!NOTE]
 >Os métodos de registro Apple Configurator e Programa de registro de dispositivos não podem ser usados com o método [gerenciador de registro de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-Por padrão, todos os dispositivos iOS têm permissão para se registrarem no Intune. Para bloquear o registro de dispositivos pessoais ou de propriedade corporativa, entre no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com suas credenciais de administrador. Escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** e desmarque as opções aplicáveis.
+Por padrão, todos os dispositivos iOS têm permissão para se registrarem no Intune. Para bloquear o registro de dispositivos pessoais ou de propriedade corporativa, entre no [Portal de administração do Microsoft Intune](https://manage.microsoft.com) com suas credenciais de administrador. Escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** e desmarque as opções aplicáveis.
 
 ## <a name="use-apple-configurator"></a>Usar o Apple Configurator
 
 Você pode registrar dispositivos iOS exportando um perfil de Registro Corporativo e, em seguida, conectando esses dispositivos móveis a um Mac que esteja executando o Apple Configurator. O Apple Configurator dá suporte a duas formas de registro:
 
-- **Registro no Assistente de Configuração**: redefine o dispositivo para as configurações de fábrica e o prepara para a configuração do novo usuário do dispositivo. Esse método requer que o administrador conecte o dispositivo iOS a um computador Mac via USB executando o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para pré-configurar o registro. Em seguida, os dispositivos são entregues aos usuários, que executam o processo do Assistente de Configuração. Esse processo configura o dispositivo com suas credenciais corporativas ou de estudante e conclui o processo de registro. Para saber mais, confira [Registrar dispositivos iOS usando o Apple Configurator e o Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+- **Registro no Assistente de Configuração**: redefine o dispositivo para as configurações de fábrica e o prepara para a configuração do novo usuário do dispositivo. Esse método requer que o administrador conecte o dispositivo iOS a um computador Mac via USB executando o [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) para pré-configurar o registro. Em seguida, os dispositivos são entregues aos usuários, que executam o processo do Assistente de Configuração. Esse processo configura o dispositivo com suas credenciais corporativas ou de estudante e conclui o processo de registro. Para saber mais, confira [Registrar dispositivos iOS usando o Apple Configurator e o Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
-- **Registro direto**: cria um arquivo compatível com Apple Configurator para uso durante a preparação do dispositivo. O dispositivo registrado não é redefinido para os padrões de fábrica, mas não fica associado a qualquer usuário. Esse método requer que o administrador de USB conecte via USB o dispositivo iOS a um computador Mac que esteja executando o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para registrar o dispositivo. Para saber mais, confira [Registrar dispositivos iOS usando o Apple Configurator Device Enrollment](ios-direct-enrollment-in-microsoft-intune.md).
+- **Registro direto**: cria um arquivo compatível com Apple Configurator para uso durante a preparação do dispositivo. O dispositivo registrado não é redefinido para os padrões de fábrica, mas não fica associado a qualquer usuário. Esse método requer que o administrador de USB conecte via USB o dispositivo iOS a um computador Mac que esteja executando o [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) para registrar o dispositivo. Para saber mais, confira [Registrar dispositivos iOS usando o Apple Configurator Device Enrollment](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Usar o DEP (Device Enrollment Program)
 O DEP implanta um perfil de registro "over the air" em dispositivos que são adquiridos por meio do DEP. Quando o usuário executa o Assistente de Configuração no dispositivo, o dispositivo é registrado no Intune. Para saber mais, confira [Registrar dispositivos iOS no Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md).
