@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Microsoft MyApps agora tem um suporte melhor dentro do navegador gerenciado. Usu
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Novos ícones para o navegador gerenciado e o Portal da empresa <!--918433, 918431-->
 
-O navegador gerenciado está recebendo ícones atualizados para versões de Android e iOS do aplicativo. O novo ícone conterá o selo do Intune atualizado para torná-lo mais consistente com outros aplicativos no Enterprise Mobility + Security (EM + S).
+O navegador gerenciado está recebendo ícones atualizados para versões de Android e iOS do aplicativo. O novo ícone conterá o selo do Intune atualizado para torná-lo mais consistente com outros aplicativos no Enterprise Mobility + Security (EM + S). Você pode ver o ícone novo para o Navegador Gerenciado na [página Novidades de interface do usuário do aplicativo Intune](whats-new-in-intune-app-ui.md).
 
 O Portal da empresa também está recebendo ícones atualizados para as versões do Windows, iOS e Android do aplicativo para aprimorar a consistência com outros aplicativos EM + S. Esses ícones serão liberados gradualmente em plataformas a partir de abril até o fim de maio.
 
@@ -59,7 +59,7 @@ Os usuários não precisam mais entrar no aplicativo do Outlook se estiverem con
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progresso de conexão no Portal da empresa Android <!--953374-->
 
-Uma atualização para o aplicativo de Portal da empresa Android mostra um indicador de progresso de conexão quando o usuário inicia ou reinicia o aplicativo. O indicador avança por novos status, começando com "Conectando…", "Fazendo logon..." e "Verificando os requisitos de segurança..." antes de permitir que o usuário acesse o aplicativo.
+Uma atualização para o aplicativo de Portal da empresa Android mostra um indicador de progresso de conexão quando o usuário inicia ou reinicia o aplicativo. O indicador avança por novos status, começando com "Conectando…", "Fazendo logon..." e "Verificando os requisitos de segurança..." antes de permitir que o usuário acesse o aplicativo. Você pode ver as novas telas do aplicativo do Portal da Empresa para Android na [página Novidades de interface do usuário do aplicativo Intune](whats-new-in-intune-app-ui.md). 
 
 
 ## <a name="notices"></a>Avisos
@@ -175,11 +175,6 @@ Você pode atribuir aplicativos iOS adquiridos com base em volume (VPP) como ins
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Sincronize livros eletrônicos da Apple VPP Store <!-- 800878 -->
 
 Você pode sincronizar os livros que adquiriu da loja Apple de programas de aquisição com base em volume com o Intune e atribuí-los aos usuários.
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Dispositivos de trabalho de turno compartilhado para dispositivos Samsung KNOX Standard <!-- 773753 -->
-
-Você pode configurar um dispositivo Samsung KNOX Standard como um dispositivo de trabalho de turno compartilhado no portal do Intune. Quando o dispositivo estiver no modo compartilhado, o email, políticas e aplicativos no dispositivo estão vinculados à identidade do usuário que está fazendo logon no portal da empresa.
-Os usuários podem fazer logon no aplicativo Portal da empresa usando suas credenciais do Azure Active Directory e suas configurações de aplicativos, políticas e email serão aplicadas automaticamente ao dispositivo.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Gerenciamento de vários usuários para dispositivos Samsung KNOX Standard <!-- 971988 -->
 

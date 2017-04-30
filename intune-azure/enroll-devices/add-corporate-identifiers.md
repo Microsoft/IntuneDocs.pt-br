@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
-ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: 8c9e6b39ee01697d993e5738ec35e8a64fc8e236
+ms.lasthandoff: 04/07/2017
 
 ---
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 04/05/2017
 
 Como administrador de TI, você pode criar e importar um arquivo de valores separados por vírgulas (.csv) que lista os números IMEI (Identidade de equipamentos móveis internacionais) para identificar dispositivos corporativos. Cada número IMEI pode ter detalhes especificados na lista para fins administrativos.
 
-Quando você carrega os números de série para dispositivos iOS de propriedade da empresa, eles devem ser combinados com um perfil de registro corporativo. Os dispositivos devem então ser registrados usando o programa de registro do dispositivo (DEP) da Apple ou o Apple Configurator para que apareçam como sendo de propriedade da empresa. 
+<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
-## <a name="create-a-csv-file"></a>Criar um arquivo .csv
-Para criar a lista, crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione o identificador IMEI à coluna esquerda e os detalhes à coluna direita. Os detalhes são limitados a 128 caracteres. O limite atual é de 500 linhas por arquivo .csv.
+## <a name="add-corporate-identifiers"></a>Adicionar identificadores corporativos
+Para criar a lista, crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione o identificador IMEI à coluna esquerda e os detalhes à coluna direita. Os detalhes limitam-se a 128 caracteres e são exclusivamente para uso administrativo. O dispositivo não exibe detalhes. O limite atual é de 500 linhas por arquivo .csv.
 
 **Carregar um arquivo .csv contendo números de série** – crie uma lista de valores separados por vírgula (.csv) de duas colunas, sem cabeçalho, e limite a lista a 5.000 dispositivos ou 5 MB por arquivo .csv.
 
@@ -40,35 +40,37 @@ Para criar a lista, crie uma lista de duas colunas de valores separados por vír
 |&lt;IMEI nº 1&gt;|&lt;Detalhes do dispositivo nº 1&gt;|
 |&lt;IMEI nº 2&gt;|&lt;Detalhes do dispositivo nº 2&gt;|
 
-    This .csv file when viewed in a text editor appears as:
+Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
-    ```
-    01 234567 890123,device details
-    02 234567 890123,device details
-    ```
+```
+01 234567 890123,device details
+02 234567 890123,device details
+```
+
+
+> [!IMPORTANT]
+> Alguns dispositivos com Android possuem vários números IMEI. O Intune armazena um número IMEI por dispositivo. Se você importar um número IMEI, mas não for o IMEI armazenado pelo Intune, o dispositivo será classificado como um dispositivo pessoal em vez de um dispositivo da empresa. Se você importar vários números IMEI para um dispositivo, os números não armazenados exibirão **Desconhecido** como o status do registro.
 
 **Para adicionar uma lista .csv de identificadores corporativos**
 
 1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-2. Na folha do Intune, escolha **Registrar dispositivos** e selecione **Identificadores de Dispositivo Corporativo**.
+2. Na folha do Intune, escolha **Registro de dispositivo** > **Restrições de Registro**, escolha **Identificadores de Dispositivo Corporativo** e, em seguida, clique em **Adicionar**.
 
-3. Se você estiver importando um arquivo com novos detalhes que substituirão os existentes, selecione **Substituir os detalhes para os identificadores existentes** para que os novos detalhes substituam os existentes.
+3. Na folha **Adicionar Identificadores**, especifique o tipo de identificador, **IMEI**. Você pode especificar se números importados anteriormente devem **substituir os detalhes para os identificadores existentes**.  
 
-4. Navegue até o arquivo CSV IMEI e selecione **Adicionar**.
-
-> [!IMPORTANT]
-> Alguns dispositivos com Android possuem vários números IMEI. O Intune armazena um número IMEI por dispositivo. Se você importar um número IMEI, mas não for o IMEI armazenado pelo Intune, o dispositivo será classificado como um dispositivo pessoal em vez de um dispositivo da empresa. Se você importar vários números IMEI para um dispositivo, os números não armazenados exibirão **Desconhecido** como o status do registro.
+4. Clique no ícone de pasta e especifique o caminho para a lista que quer importar. Navegue até o arquivo CSV IMEI e selecione **Adicionar**.
 
 Depois de importados, esses dispositivos podem ou não ser registrados, e têm um estado de **Registrado** ou**Não contatado**. **Não contatado** significa que o dispositivo nunca se comunicou com o serviço do Intune.
 
-## <a name="delete-a-csv-list"></a>Excluir uma lista .csv
+## <a name="delete--corporate-identifiers"></a>Excluir identificadores corporativos
 
 1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-2. Na folha do Intune, escolha **Registrar dispositivos** e selecione **Identificadores de Dispositivo Corporativo**.
+2. Na folha do Intune, escolha **Registro de dispositivo** > **Restrições de Registro**, escolha **Identificadores de Dispositivo Corporativo** e escolha **Excluir**.
 
-3. Escolha **Excluir**.
+3. Na folha **Excluir Identificadores**, navegue para o arquivo .csv de IDs de dispositivo para excluir e, em seguida, clique em **Excluir**.
 
+## <a name="imei-specifications"></a>Especificações do IMEI
 Para obter especificações detalhadas sobre Identificadores de equipamentos móveis internacionais, veja [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

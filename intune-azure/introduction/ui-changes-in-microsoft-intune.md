@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
-ms.openlocfilehash: 791486a8d4cc490cd452ea9075fe323395635b5f
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
+ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/31/2017
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Assim, criamos este guia de referência para aqueles que estão totalmente familiarizados com o Intune no console clássico e querem saber como fazer algo no Intune no Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
 ## <a name="quick-reference-guide"></a>Guia de referência rápida
 | Recurso | Caminho no console clássico | Caminho do Intune no Azure | |------------||---------------|---------------|
-| Programa de registro do dispositivo (DEP) | Admin > gerenciamento de dispositivo móvel > iOS e Mac OS X > programa de registro de dispositivo |[Registrar dispositivos > registro Apple > Token do programa de registro](#where-did-apple-dep-go) |
-|Programa de registro do dispositivo (DEP) | Admin > gerenciamento de dispositivo móvel > iOS e Mac OS X > programa de registro de dispositivo |[Registrar dispositivos > registro Apple > números de série do programa de registro](#where-did-apple-dep-go) |
-|Regras de registro | Admin > gerenciamento de dispositivo móvel > regras de registro |[Registrar dispositivos > restrições de registro](#where-did-enrollment-rules-go) |
-| Grupos pelo número de série do iOS | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > pelo número de série do iOS |[Registrar dispositivos > registro Apple > números de série do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
-|Grupos pelo número de série do iOS | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > pelo número de série do iOS | [Registrar dispositivos > registro Apple > números de série de CA](#where-did-corporate-pre-enrolled-devices-go)|
-|Grupos por IMEI (todas as plataformas) | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > por IMEI (todas as plataformas) | [Registrar dispositivos > identificadores de dispositivo corporativo](#by-imei-all-platforms)|
-| Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registrar dispositivos > registro Apple > perfis do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
-| Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registrar dispositivos > registro Apple > perfis de CA](#where-did-corporate-pre-enrolled-devices-go) |
+| Programa de registro do dispositivo (DEP) | Admin > gerenciamento de dispositivo móvel > iOS e Mac OS X > programa de registro de dispositivo |[Registro de dispositivo > registro Apple > Token do programa de registro](#where-did-apple-dep-go) |
+|Programa de registro do dispositivo (DEP) | Admin > gerenciamento de dispositivo móvel > iOS e Mac OS X > programa de registro de dispositivo |[Registro de dispositivo > registro Apple > números de série do programa de registro](#where-did-apple-dep-go) |
+|Regras de registro | Admin > gerenciamento de dispositivo móvel > regras de registro |[Registro de dispositivo > restrições de registro](#where-did-enrollment-rules-go) |
+| Grupos pelo número de série do iOS | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > pelo número de série do iOS |[Registro de dispositivo > registro Apple > números de série do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
+|Grupos pelo número de série do iOS | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > pelo número de série do iOS | [Registro de dispositivo > registro Apple > números de série de CA](#where-did-corporate-pre-enrolled-devices-go)|
+|Grupos por IMEI (todas as plataformas) | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > por IMEI (todas as plataformas) | [Registro de dispositivo > identificadores de dispositivo corporativo](#by-imei-all-platforms)|
+| Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registro de dispositivo > registro Apple > perfis do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
+| Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registro de dispositivo > registro Apple > perfis de CA](#where-did-corporate-pre-enrolled-devices-go) |
 
 
 ## <a name="where-do-i-manage-groups"></a>Onde gerencio grupos?
