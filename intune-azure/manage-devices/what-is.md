@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune? 
+# <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Agora, escolha uma das seguintes opções:
 - **Visão geral** Obtenha informações sobre os dispositivos registrados e os sistemas operacionais que cada dispositivo executado.
 - **Gerenciar** – Escolha **Todos os Dispositivos** para ver uma lista de todos os dispositivos gerenciados.
     Selecione um desses dispositivos na lista para abrir a folha <*nome do dispositivo*> **Visão geral** na qual você pode selecionar um destes:
-    - **Visão geral** – Veja informações gerais sobre o dispositivo, incluindo informações sobre seu nome, proprietário, se ele é um dispositivo BYOD, quando foi seu último check-in e muito mais. 
-                
+    - **Visão geral** – Veja informações gerais sobre o dispositivo, incluindo informações sobre seu nome, proprietário, se ele é um dispositivo BYOD, quando foi seu último check-in e muito mais.
+
     - **Hardware** – Consulte informações mais detalhadas sobre o dispositivo, inclusive do espaço de armazenamento livre, modelo e fabricante e muito mais.
     ![Inventário de hardware de dispositivo gerenciado](./media/hardware-inventory.png)
     - **Aplicativos detectados** – Exibe uma lista de todos os aplicativos que o Intune encontrou instalados no dispositivo.
@@ -67,6 +67,12 @@ Gera uma nova senha para o dispositivo que será exibido na folha *nome do dispo
 ### <a name="bypass-activation-lock"></a>**Bypass de Bloqueio de Ativação**
 Isso removerá o bloqueio de ativação de um dispositivo iOS sem a ID da Apple e a senha do usuário. Depois de fazer o bypass do bloqueio de ativação, o dispositivo ativa-o novamente quando inicia o aplicativo o Localizar Meu iPhone. Faça bypass do bloqueio de ativação apenas se você tiver acesso físico ao dispositivo.
 
+### <a name="fresh-start"></a>**Começar do zero**
+
+Remove todos os aplicativos que foram instalados em um computador com Windows 10 executando a Atualização para Criadores e, em seguida, atualiza automaticamente o computador para a versão mais recente do Windows.
+Isso pode ser usado para ajudar a remover aplicativos pré-instalados (OEM) que geralmente são fornecidos com um novo computador. Você pode configurar se os dados do usuário são mantidos quando essa ação do dispositivo é realizada. Nesse caso, os aplicativos e as configurações são removidas, mas o conteúdo da pasta base dos usuários é mantido.
+
+
 ### <a name="lost-mode"></a>**Modo perdido**
 Se um dispositivo iOS foi roubado ou perdido, você poderá habilitar o modo perdido. Ele permite especificar uma mensagem e um número de telefone que serão exibidos na tela de bloqueio do dispositivo. Para fazer isto:
 1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Modo perdido**.
@@ -78,7 +84,7 @@ Para usar o modo perdido, o dispositivo deve ser um dispositivo iOS corporativo,
 ### <a name="locate-device"></a>**Localizar dispositivo**
 Use esta ação remota para exibir a localização de um dispositivo iOS perdido ou roubado em um mapa. O dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado. Antes de usar essa ação, o dispositivo deve ser colocado no modo perdido.
 1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Localizar dispositivo**.
-2.    Depois do dispositivo ser localizado, o local será exibido na folha **Localizar dispositivo**. 
+2.    Depois do dispositivo ser localizado, o local será exibido na folha **Localizar dispositivo**.
     ![Folha Localizar dispositivo](./media/locate-device.png)
 
 >[!NOTE]
