@@ -1,6 +1,6 @@
-## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Configurar o registro automático do Windows 10 e Windows 10 Mobile com o Azure Active Directory Premium
+## <a name="enable-windows-10-automatic-enrollment"></a>Habilitar o registro automático do Windows 10
 
-O registro automático permite que os usuários registrem computadores Windows 10 e dispositivos Windows 10 Mobile da empresa ou pessoais no Intune adicionando uma conta corporativa ou de estudante e concordando em ser gerenciados. Simples assim. Em segundo plano, o dispositivo do usuário registra e ingressa no Azure Active Directory. Depois de registrado, o dispositivo é gerenciado com o Intune.
+O registro automático permite que os usuários registrem seus dispositivos com Windows 10 no Intune ao adicionar a conta de trabalho a seus dispositivos pessoais, ou ao ingressar seus dispositivos corporativos ao Azure Active Directory. Em segundo plano, o dispositivo do usuário registra-se e ingressa no Azure Active Directory. Depois de registrado, o dispositivo é gerenciado com o Intune.
 
 **Pré-requisitos**
 - Assinatura do Azure Active Directory Premium ([assinatura de avaliação](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -9,26 +9,31 @@ O registro automático permite que os usuários registrem computadores Windows 1
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurar o registro automático do MDM
 
-1. No [portal de gerenciamento do Azure](https://manage.windowsazure.com) (https://manage.windowsazure.com), navegue até o nó do **Active Directory** e selecione o diretório.
+1. Entre no [Portal de Gerenciamento do Azure](https://portal.azure.com) (https://manage.windowsazure.com) e selecione **Azure Active Directory**.
 
-2. Escolha a guia **Aplicativos**. **Microsoft Intune** aparece na lista de aplicativos.
+  ![Captura de tela do portal do Azure](../media/auto-enroll-azure-main.png)
 
-    ![Aplicativos do Azure AD com o Microsoft Intune](../media/aad-intune-app.png)
+2. Selecione **Mobilidade (MDM e MAM)**.
 
-3. Selecione a seta para **Microsoft Intune**. Você verá uma página que permite que você configure o Microsoft Intune.
+  ![Captura de tela do portal do Azure](../media/auto-enroll-mdm.png)
 
-4. Clique em **Configurar** para começar a configurar o registro automático de MDM com o Microsoft Intune.
+3. Selecione **Microsoft Intune**.
+
+  ![Captura de tela do portal do Azure](../media/auto-enroll-intune.png)
+
+4. Configure **Escopo de Usuário MDM**. Especifique quais dispositivos dos usuários devem ser gerenciados pelo Microsoft Intune. Os dispositivos do Windows 10 desses usuários serão automaticamente registrados para gerenciamento com o Microsoft Intune.
+
+  - **Nenhum**
+  - **Alguns**
+  - **Todos**
+
+ ![Captura de tela do portal do Azure](../media/auto-enroll-scope.png)
 
 5. Use os valores padrão para as seguintes URLs:
+  - **URL dos Termos de uso do MDM**
+  - **URL de Descoberta do MDM**
+  - **URL da Conformidade do MDM**
 
-  - **Registro do MDM**
-  - **Termos de uso do MDM** 
-  - **Conformidade do MDM**
+6. Selecione **Salvar**.
 
-6.  Especifica quais dispositivos dos usuários devem ser gerenciados pelo Microsoft Intune. Os dispositivos do Windows 10 desses usuários serão automaticamente registrados para gerenciamento com o Microsoft Intune.
-
-  - **Todos**
-  - **Grupos**
-  - **Nenhum**
-
-7. Selecione **Salvar**.
+Por padrão, autenticação de dois fatores não está habilitada para o serviço. No entanto, a autenticação de dois fatores é recomendável ao registrar um dispositivo. Antes de solicitar a autenticação de dois fatores para esse serviço, você deve configurar um provedor de autenticação de dois fatores no Azure Active Directory e configurar suas contas de usuário para autenticação multifator. Consulte [Guia de Introdução com o servidor de autenticação multifator do Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

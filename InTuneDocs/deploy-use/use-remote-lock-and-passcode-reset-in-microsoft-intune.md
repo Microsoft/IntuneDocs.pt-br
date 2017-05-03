@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/06/17
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
-ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: f0a477c9eb1ed0580314e79135e377809eaab197
+ms.openlocfilehash: 9b0ae19b211373548061e2c2979620739a0bf0a0
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajude a proteger os dispositivos com bloqueio remoto e redefinição de senha
@@ -64,7 +64,7 @@ Se um usuário esquecer a senha, você poderá ajudá-lo removendo a senha de um
 |iOS|Suportado para limpar a senha de um dispositivo. Não cria uma nova senha temporária.|
 |Android|Suporte em versões anteriores ao Android 7.0. Cria uma senha temporária.|
 |Android for Work|Sem suporte|
-|Windows 10 Mobile|Com suporte|
+|Windows 10 Mobile|Suporte para dispositivos móveis com a versão do Windows 10 para Criadores e posteriores ingressados no Azure AD.|
 |Windows Phone 8 e Windows Phone 8.1|Com suporte|
 |Windows RT 8.1|Sem suporte|
 |Windows 8.1|Sem suporte|

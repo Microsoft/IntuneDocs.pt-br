@@ -1,11 +1,11 @@
 ---
 title: "Registrar seu dispositivo iOS no gerenciamento de despesas de telecomunicações com o Intune"
-description: 
+description: "Saiba como registrar um dispositivo iOS no gerenciamento de despesas de telecomunicações."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/03/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
 - User help
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 439adf2481eef00f22f809724c121dd58b5788d7
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a71b8d1a100100e204eb7e90ba0ab00573ffc5c6
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -31,19 +31,36 @@ Sua organização pode estar usando o software de gerenciamento de despesas de t
 
   ![Uma captura da tela "selecionando a melhor categoria para um dispositivo" em um dispositivo iOS. Ele mostra uma seleção de registro pessoal ou corporativo.](./media/ios-enroll-10-tem-select-best-category.png)
 
-1. Selecione a opção apropriada, e você receberá uma notificação para instalar o aplicativo [__Datalert__](https://itunes.apple.com/us/app/datalert/id771029268?mt=8) da App Store. O aplicativo Datalert é a forma como sua organização pode medir o uso de dados. Você precisará fornecer informações como o número de telefone e verificar usando um código. .
+Selecione a opção apropriada, e você receberá uma notificação para instalar o aplicativo [__Datalert__](https://itunes.apple.com/app/datalert/id771029268?mt=8) da App Store. O aplicativo Datalert é a forma como sua organização pode medir o uso de dados. Se sua organização tiver configurado a opção de registro corporativo ou estudante da Microsoft, será necessário fazer logon com sua conta corporativa ou de estudante. Se isso ainda não tiver sido habilitado, você precisará fornecer informações como o número de telefone e confirmar seu dispositivo usando um código para registrar-se no serviço Datalert do aplicativo.
 
   ![Uma captura de tela da tela de boas-vindas do aplicativo Datalert, que solicita que você vá para a próxima tela depois de fornecer uma breve explicação sobre como o Datalert pode ajudá-lo a obter o máximo possível de seu plano de dados.](./media/ios-enroll-11-tem-datalert-setup.png)
 
-2. Forneça o número de telefone do dispositivo.
+## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a>Registrar no Datalert usando sua conta corporativa ou de estudante da Microsoft
+
+> [!NOTE]
+> O aplicativo [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) deve estar instalado e ativo em seu telefone para registrar-se dessa maneira.
+
+1. Selecione __Registrar-se com a conta da Microsoft__.
+
+  ![Uma imagem de tela Configurações do aplicativo Datalert, que oferece um campo de número de telefone para registrar um dispositivo na metade superior da tela e "registrar com a conta da Microsoft" na parte inferior, desde que você tenha uma conta do Microsoft Office 365 e uma assinatura do Intune.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+
+2. Você receberá uma notificação de que o __"Datalert" deseja abrir o "Autenticador"__. Selecione __Abrir__.
+
+  ![Uma imagem da janela pop-up solicitando que o usuário abra o aplicativo Authenticator mediante solicitação do aplicativo Datalert.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+
+3. Entre com sua __conta corporativa ou de estudante da Microsoft__. A instalação do Datalert ocorrerá por alguns instantes até ser concluída. Toque em __Concluir__ após a conclusão.
+
+## <a name="enroll-into-datalert-using-your-phone-number"></a>Registrar no Datalert usando seu número de telefone
+
+1. Forneça o número de telefone do dispositivo.
 
   ![Uma captura de tela do aplicativo Datalert solicitando um número de telefone.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
-3. Você receberá um código de verificação por meio de uma mensagem SMS. Forneça o código e toque em __OK__.
+2. Você receberá um código de verificação por meio de uma mensagem SMS. Forneça o código e toque em __OK__.
 
   ![Uma captura de tela do aplicativo Datalert solicitando o código de verificação SMS.](./media/ios-enroll-13-tem-datalert-sms.png)
 
-4. Se você tiver fornecido o código de verificação, a instalação de Datalert estará concluída. Toque em __Concluir__ e você será capaz de monitorar os dados do aplicativo Datalert.
+3. Se você tiver fornecido o código de verificação, a instalação de Datalert estará concluída. Toque em __Concluir__ e você será capaz de monitorar os dados do aplicativo Datalert.
 
   ![Uma captura de tela do aplicativo Datalert monitorando o uso de dados de hoje.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 

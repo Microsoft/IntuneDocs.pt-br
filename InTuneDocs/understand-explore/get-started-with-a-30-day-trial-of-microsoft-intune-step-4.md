@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
-ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 21d1e624069117d905dc7aced33b70abeb0e1109
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +68,7 @@ Sua política aparece na lista de políticas de configuração e foi implantada 
 
     -   **Android:** [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8.1:** [http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  Na página **Descrição do software**, forneça as informações que deseja que os usuários vejam no Portal da Empresa para o software e clique em **Avançar**. As configurações a seguir estão disponíveis (este exemplo refere-se ao Skype):
 
@@ -103,9 +104,4 @@ Saber mais sobre outros [recursos do Intune](get-started-with-a-30-day-trial-of-
 Ler sobre as [formas comuns para usar o Intune](common-ways-to-use-intune.md)
 
 Converter em uma [assinatura paga](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -5,7 +5,7 @@ description: "Versão prévia do Intune Azure: habilitar o MDM (gerenciamento de
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 Este tópico ajuda os administradores de TI a simplificar o registro do Windows para os seus usuários.  Dispositivos do Windows podem ser registrados sem etapas adicionais, mas você pode facilitar o registro para os usuários.
 
-Dois fatores determinam como você vai registrar os dispositivos Windows:
+Os dispositivos que executam a Atualização do Windows 10 para Criadores, e que estão ingressados no domínio do Azure Active Directory, agora têm suporte para o gerenciamento de vários usuários do Intune. Isso significa que, quando usuários padrão diferentes fizerem logon no dispositivo com suas credenciais do Azure AD, eles receberão quaisquer aplicativos e políticas que foram atribuídos ao seu nome de usuário. No momento, os usuários não podem usar o Portal da Empresa para cenários de autoatendimento como a instalação de aplicativos.
+
+Dois fatores determinam como você pode simplificar o registro de dispositivos do Windows:
+
 - **Você usa o Azure Active Directory Premium?** <br>[O Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído no Enterprise Mobility + Security e outros planos de licenciamento.
 - **Quais versões de clientes Windows serão registradas?** <br>Dispositivos Windows 10 podem registrar automaticamente adicionando uma conta corporativa ou escolar. Versões anteriores devem ser registrados usando o aplicativo de Portal da Empresa.
 
@@ -40,7 +43,7 @@ Dois fatores determinam como você vai registrar os dispositivos Windows:
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Habilitar o registro do Windows sem o Azure AD Premium
-Você pode permitir aos usuários o registro de seus dispositivos sem registro automático do Azure AD Premium. Depois que você atribuir licenças a contas de usuários, os usuários podem adicionar essa conta a um dispositivo Windows e concordar em registrar o dispositivo no gerenciamento. Criar um alias DNS (tipo de registro CNAME) facilita para os usuários registrarem seus dispositivos. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem precisar inserir um nome do servidor Intune.
+Você pode permitir aos usuários o registro de seus dispositivos sem registro automático do Azure AD Premium. Depois de atribuir licenças, os usuários podem registrar depois de adicionar sua conta corporativa aos seus dispositivos pessoais ou ingressar seus dispositivos corporativos ao Azure AD. Criar um alias DNS (tipo de registro CNAME) facilita para os usuários registrarem seus dispositivos. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem precisar inserir um nome do servidor Intune.
 
 **Etapa 1: Criar um CNAME** (opcional)<br>
 Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.

@@ -1,11 +1,11 @@
 ---
-title: Acesso condicional ao O365 baseado em aplicativo | Microsoft Docs
+title: Acesso condicional ao O365 baseado em aplicativo
 description: "Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: d53cded6670069f10bf645d23ff9a9102bd97539
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 8fc53e8717277a4075bc7ecde31fd60c3539a5f7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/25/2017
 
 As [Políticas de proteção de aplicativo do Intune](protect-apps-and-data-with-microsoft-intune.md) ajudam a proteger os dados de sua empresa nos dispositivos registrados para gerenciamento no Intune. É possível usar as políticas de proteção de aplicativo em **dispositivos do funcionário que não estão registrados para gerenciamento no Intune**.  Nesse caso, mesmo que você não gerencie o dispositivo, ainda é necessário se certificar de que os dados e recursos da empresa estão protegidos. Usando o acesso condicional baseado em aplicativo com MAM, você pode criar uma política que permite que apenas aplicativos móveis que dão suporte às políticas de proteção de aplicativo do Intune acessem os serviços do O365, como o Exchange Online.
 
-Por exemplo, ao permitir que apenas o **aplicativo do Microsoft Outlook** acesse o Exchange Online você pode **bloquear os aplicativos de email interno no iOS e no Android**, que não têm a proteção de dados das políticas de MAM do Intune, para receber email do **Exchange Online**.
+Por exemplo, ao permitir que apenas o **aplicativo do Microsoft Outlook** acesse o Exchange Online você pode **bloquear os aplicativos de email interno no iOS e no Android**, que não têm a proteção de dados das políticas de MAM do Intune, para receber email do **Exchange Online**. Ou você pode bloquear o acesso dos aplicativos móveis que não têm suporte do Intune MAM ao **SharePoint Online**.
 
 O diagrama a seguir ilustra o fluxo usado pelas políticas de acesso condicional baseados em aplicativo para determinar quando permitir ou bloquear o acesso: ![Diagrama que mostra os vários critérios incluídos para determinar se o acesso é permitido ou bloqueado](../media/mam-ca-decision-flow_simple.png).
 
@@ -39,17 +39,30 @@ Descrição das abreviações usadas nos diagramas:
 * **EAS**: Exchange Active Sync
 
 ## <a name="prerequisites"></a>Pré-requisitos
-**Antes** de criar uma política de acesso condicional baseado em aplicativo, você deve ter uma **assinatura premium do Enterprise Mobility + Security ou do Azure Active Directory** e os usuários devem ser licenciados para o EMS ou Azure AD. Para obter mais detalhes, veja a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+**Antes** de criar uma política de acesso condicional baseado em aplicativo, você deve ter uma **assinatura premium do Enterprise Mobility + Security ou do Azure Active Directory** e os usuários devem ser licenciados para o EMS ou Azure AD. Para obter mais detalhes, veja a [página de preços do Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
 ## <a name="supported-apps"></a>Aplicativos com suporte
-**Exchange Online**: **Microsoft Outlook** para Android e iOS.
+**Exchange Online**:
+* **Microsoft Outlook** para Android e iOS.
+
+**SharePoint Online**
+* Microsoft Word para iOS e Android
+* Microsoft Excel para iOS e Android
+* Microsoft PowerPoint para iOS e Android
+* Microsoft OneDrive para Empresas para iOS e Android
+* Microsoft OneNote para iOS
+
+>[!IMPORTANT]
+>Para dispositivos Android, o registro de dispositivo inicial deve ser feito por meio do logon no aplicativo OneDrive ou no aplicativo do Outlook. O aplicativo OneNote para Android ainda não tem suporte para MAM sem registro.
 
 Para saber mais sobre a experiência do usuário com um aplicativo que tem políticas de acesso condicional baseado em aplicativo, consulte [O que esperar ao usar um aplicativo com AC do MAM](use-apps-with-mam-ca.md).
 
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar uma política do Exchange Online para aplicativos MAM](mam-ca-for-exchange-online.md)
+
+[Criar uma política do SharePoint Online para aplicativos MAM](mam-ca-for-sharepoint-online.md)
 
 [Bloquear aplicativos que não têm autenticação moderna](block-apps-with-no-modern-authentication.md)
 

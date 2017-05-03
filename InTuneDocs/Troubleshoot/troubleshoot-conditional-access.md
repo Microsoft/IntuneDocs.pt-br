@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Essas condições podem ser exibidas para cada dispositivo no Portal de gerencia
     
         -    Os dispositivos nesse estado exigem que o usuário defina uma senha de inicialização segura. O usuário verá uma notificação do dispositivo no aplicativo Portal da Empresa solicitando uma senha de inicialização para o dispositivo. Depois de tocar na notificação do dispositivo e confirmar o PIN existente ou a senha, escolha a opção **Exigir PIN para iniciar o dispositivo** na tela **Proteger inicialização**. Em seguida, toque no botão **Verificar Conformidade** do dispositivo no aplicativo Portal da Empresa. Agora o dispositivo deve ser detectado como criptografado.
     
-        -     Alguns fabricantes de dispositivos criptografam seus dispositivos usando um PIN padrão em vez do PIN secreto definido pelo usuário. O Intune reconhece a criptografia usando o PIN padrão como inseguro, pois esse método de criptografia pode colocar os dados no dispositivo em risco, podendo ser acessados por usuários mal-intencionados com acesso físico ao dispositivo. Se esse for o problema, considere o uso de [políticas de proteção do aplicativo](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -     Alguns fabricantes de dispositivos criptografam seus dispositivos usando um PIN padrão em vez do PIN secreto definido pelo usuário. O Intune reconhece a criptografia usando o PIN padrão como inseguro, pois esse método de criptografia pode colocar os dados no dispositivo em risco, podendo ser acessados por usuários mal-intencionados com acesso físico ao dispositivo. Se esse for o problema, considere o uso de [políticas de proteção do aplicativo](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de política
 
@@ -119,7 +119,7 @@ Caso esses procedimentos de solução de problemas não resolvam o problema, há
 ### <a name="exchange-connector-logs"></a>Logs do Exchange Connector
 
 #### <a name="general-log-information"></a>Informações gerais sobre logs
-Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx'). Essa ferramenta requer que você baixe o SDK do Windows Server.
+Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Essa ferramenta requer que você baixe o SDK do Windows Server.
 
 >[!NOTE]
 >Os logs estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os logs estão contidos em uma série de 30 arquivos de log que começa com *Connector0.log* e para em *Connector29.log*. Os logs se sobrepõem uns aos outros após 10 MB de dados serem acumulados em um log. Depois de chegarem a Connector29, os logs recomeçam em Connector0, substituindo os arquivos de log anteriores.

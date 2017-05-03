@@ -1,5 +1,5 @@
 ---
-title: Usando aplicativos com AC de MAM | Microsoft Docs
+title: Usar aplicativos com AC de MAM
 description: "Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ A seguir, temos uma lista de propriedades que são derivadas diretamente do disp
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Em dispositivos Android:
+  * É necessário que o aplicativo Portal da Empresa esteja instalado no dispositivo, mas o usuário final não precisa fazer logon no aplicativo.
+  * O registro do dispositivo deve ser feito por meio do aplicativo OneDrive ou Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Para remover um dispositivo do registro no Azure AD.
 É possível remover o registro do dispositivo usando o console de administração do Azure AD, o que normalmente é feito pelo administrador de TI.  Isso também pode ser feito pelo usuário final no próprio dispositivo.

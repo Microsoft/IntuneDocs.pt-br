@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -44,8 +44,12 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
     - **macOS**
 6. Na lista suspensa do **Tipo de perfil**, escolha **Recursos do dispositivo**. 
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
-    - [Configurações do iOS](device-features-for-ios.md)
-    - [Configurações do macOS](device-features-for-macos.md)
+    - [Configurações do AirPrint para iOS e MacOS](air-print-settings-for-ios-and-macos.md)
+     - [Configurações do AirPlay para iOS](airplay-settings-for-ios-devices.md)
+    - [Configurações do layout da Tela inicial para iOS](home-screen-settings-for-ios.md)
+    - [Configurações de notificação de aplicativos para iOS](app-notification-settings-for-ios.md)
+    - [Definições de configuração de dispositivo compartilhado para iOS](shared-device-settings-for-ios.md)
+    - [Configurações de filtro de conteúdo da Web para iOS](web-content-filter-settings-for-ios.md)
 
 8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
 

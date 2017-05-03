@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
+ms.lasthandoff: 04/19/2017
 
 ---
 
@@ -30,6 +30,11 @@ ms.lasthandoff: 04/06/2017
 A loja de aplicativos iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Isso ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos.
 
 O Microsoft Intune ajuda a gerenciar aplicativos adquiridos por meio desse programa, importando as informações de licença da loja de aplicativos, acompanhando a quantidade de licenças utilizadas e impedindo a instalação de um número maior de cópias de seu aplicativo.
+
+Além disso, você pode sincronizar, gerenciar e atribuir livros que adquiriu da loja Apple de programas de aquisição com base em volume com o Intune e atribuí-los aos usuários. Use a carga de trabalho **Books** no portal do Intune para gerenciar livros. Os procedimentos para gerenciar livros são os mesmos utilizados para gerenciar aplicativos.
+Você deve ter carregado um token do Apple Volume Purchase Program para fazer isso. No momento, só é possível atribuir livros como uma instalação **Obrigatória**.
+Quando você atribui um livro a um dispositivo, esse dispositivo deve ter o aplicativo interno iBooks instalado. Se não estiver, o usuário final deverá instalá-lo novamente para ler o livro. No momento, não é possível usar o Intune para restaurar aplicativos internos removidos.
+
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerenciar aplicativos adquiridos por volume para dispositivos iOS
 Você compra várias licenças para aplicativos iOS por meio do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) ou [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). Isso envolve a configuração de uma conta do Apple VPP no site da Apple e upload do token do Apple VPP no Intune.  Você pode sincronizar suas informações de compra por volume com o Intune e controlar o uso do aplicativo adquirido por volume.
@@ -43,7 +48,6 @@ Antes de começar, você precisará obter um token do Apple VPP e carregá-lo em
 * Por padrão, o Intune é sincronizado com o serviço VPP da Apple duas vezes por dia. É possível iniciar uma sincronização manual a qualquer momento.
 * Depois de importar o token do VPP no Intune, não importe o mesmo token em outra solução de gerenciamento de dispositivo. Isso pode resultar na perda de registros de usuário e atribuição de licença.
 * Antes de começar a usar o iOS VPP com o Intune, remova todas as contas de usuário do VPP existentes criadas com outros fornecedores de MDM (gerenciamento de dispositivo móvel). O Intune não sincronizará essas contas de usuário no Intune como medida de segurança. O Intune somente sincronizará os dados do serviço do Apple VPP criados pelo Intune.
-* Não é possível atribuir aplicativos VPP do iOS em dispositivos que tenham sido registrados usando o DEP (Protocolo de registro do dispositivo).
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Obter e carregar um token de VPP da Apple
 
@@ -69,7 +73,7 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 2. Na folha da lista de aplicativos, escolha o aplicativo que você deseja atribuir e selecione “**...**” > **Atribuir Grupos**.
 3. Na folha <*nome do aplicativo*> – **Grupos Atribuídos**, escolha **Gerenciar** > **Grupos Atribuídos**.
 4. Escolha **Atribuir Grupos** e então, na folha **Selecionar grupos**, escolha o usuário ou os grupos de dispositivos do Azure AD para o(s) qual(is) você deseja atribuir o aplicativo.
-Você deve escolher uma ação de atribuição de **Obrigatório**. Atualmente, não há suporte para as instalações disponíveis. Além disso, as atribuições a grupos de dispositivos estão disponíveis para novos locatários criados depois de janeiro de 2017. Se seu locatário foi criado antes e você não tiver a opção de atribuir aplicativos VPP a grupos de dispositivos, entre em contato com o suporte do Intune.
+Você deve escolher uma ação de atribuição de **Obrigatório**. Além disso, as atribuições a grupos de dispositivos estão disponíveis para novos locatários criados depois de janeiro de 2017. Se seu locatário foi criado antes e você não tiver a opção de atribuir aplicativos VPP a grupos de dispositivos, entre em contato com o suporte do Intune.
 5. Quando terminar, escolha **Salvar**.
 
 Consulte [Como monitorar aplicativos](monitor-apps.md) para obter informações para ajudá-lo a monitorar as atribuições de aplicativo.
@@ -81,4 +85,6 @@ Quando você atribui o aplicativo como uma instalação **Obrigatória**, cada u
 Para recuperar uma licença, você deve alterar a ação de atribuição para **Desinstalar**. A licença será recuperada após a desinstalação do aplicativo.
 
 Quando um usuário com um dispositivo qualificado tenta instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. Eles devem fazer isso antes que a instalação do aplicativo prossiga.
+
+Quando você implanta um aplicativo VPP como Disponível, o conteúdo do aplicativo e a licença são implantados diretamente da loja de aplicativos.
 

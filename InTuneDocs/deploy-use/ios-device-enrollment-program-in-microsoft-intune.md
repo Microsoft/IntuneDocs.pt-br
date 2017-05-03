@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -46,7 +46,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 ### <a name="get-an-encryption-key"></a>Obter uma chave de criptografia
 
-1. Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador** &gt; **Gerenciamento de Dispositivo Móvel** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**.
+1. Como usuário administrativo, abra o [console de administração do Microsoft Intune](http://manage.microsoft.com), vá até **Administrador**  &gt; **Gerenciamento de Dispositivo Móvel ** &gt; **iOS** &gt; **Programa de Registro de Dispositivo** e escolha **Baixar a Chave de Criptografia**.
 
 2. Salve o arquivo de criptografia (.pem) localmente. O arquivo .pem é usado para solicitar um certificado de relação de confiança do portal do Programa de registro de dispositivo da Apple.
 
@@ -110,10 +110,10 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
        - **Restaurar** - Se habilitado, o Assistente de Instalação solicitará o backup do iCloud durante a ativação
        - **ID da Apple** – Se habilitado, o iOS solicitará aos usuários uma ID da Apple quando o Intune tentar instalar um aplicativo sem uma ID. Uma ID da Apple é exigida para baixar aplicativos na App Store do iOS, incluindo aqueles instalados pelo Intune.
        - **Termos e Condições** - Se habilitado, o Assistente de Instalação solicitará que os usuários aceitem os termos e as condições da Apple durante a ativação
-       - **ID de Toque** - Se habilitada, o Assistente de Instalação solicitará o serviço durante a ativação
-       - **Pagamento da Apple** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
-       - **Aplicar zoom** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
-       - **Siri** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
+       - **ID de Toque** – Se habilitada, o Assistente de Configuração solicitará o serviço durante a ativação
+       - **Apple Pay** – Se habilitado, o Assistente de Configuração solicitará o serviço durante a ativação
+       - **Zoom** – Se habilitado, o Assistente de Configuração solicitará o serviço durante a ativação
+       - **Siri** – Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
        - **Enviar dados de diagnóstico para a Apple** - Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação
    -  **Habilitar o gerenciamento adicional do Apple Configurator** - Defina como **Não permitir** para impedir a sincronização de arquivos com iTunes ou gerenciamento por meio do Apple Configurator. É uma boa ideia escolher **Não permitir**, exportar configurações adicionais do Apple Configurator e implantar como um perfil de configuração do iOS Personalizado por meio do Intune em vez de usar essa configuração para permitir a implantação manual com ou sem um certificado.
        - **Não permitir** - Impede que o dispositivo se comunique via USB (desabilita emparelhamento)
@@ -162,7 +162,9 @@ Seus dispositivos corporativos agora podem ser distribuídos para usuários. Qua
 
 ## <a name="changes-to-intune-group-assignments"></a>Alterações em atribuições de grupo do Intune
 
-A partir de abril de 2017, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de Perfil de Registro Corporativo. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Durante a migração para grupos de dispositivos do Azure Active Directory, para cada grupo de dispositivos do Intune previamente atribuído por um perfil de Registro de Dispositivo Corporativo, um grupo de dispositivos dinâmico correspondente será criado no AAD com base no nome desse perfil. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+A partir de abril de 2017, o gerenciamento de grupo de dispositivos será movido para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não aparecerá nas opções de Perfil de Registro Corporativo. Como essa alteração se estenderá por uma série de meses, talvez você não veja a alteração imediatamente. Após a mudança para o novo portal, atribuições de grupos de dispositivos dinâmicos podem ser definidas com base nos nomes do Perfil de Registro Corporativo. Durante a migração para grupos de dispositivos do Azure Active Directory, para cada grupo de dispositivos do Intune previamente atribuído por um perfil de Registro de Dispositivo Corporativo, um grupo de dispositivos dinâmico correspondente será criado no AAD com base no nome desse perfil. Esse processo garante que dispositivos previamente atribuídos a um grupo de dispositivos sejam registrados automaticamente no grupo com a política e aplicativos implantados. Para obter detalhes sobre como isso afeta o registro de dispositivo iOS corporativo, confira [Mudanças no agrupamento automático para dispositivos iOS corporativos pré-registrados](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/).
+
+Além disso, [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos](prerequisites-for-enrollment.md)
