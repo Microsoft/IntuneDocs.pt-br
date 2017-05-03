@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: d7f25657fc7cfb9298809f76f198810718e58c39
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -37,7 +37,7 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Status de instalação do aplicativo aprimorado para o aplicativo de Portal da empresa do Windows 10 <!--676495-->
 
-O aplicativo de Portal da empresa do Windows 10 agora oferecerá uma barra de progresso de instalação do aplicativo para todas as instalações de aplicativos modernos iniciadas no Portal da empresa.
+O aplicativo de Portal da empresa do Windows 10 agora oferecerá uma barra de progresso de instalação do aplicativo para todas as instalações de aplicativos modernos iniciadas no Portal da empresa. Você pode ver as novas mensagens de status do aplicativo do Portal da Empresa para Windows 10 na [página Novidades de interface do usuário do aplicativo Intune](whats-new-in-intune-app-ui.md).
 
 ### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Status do sistema de mensagens aprimorado no aplicativo do Portal da empresa para iOS <!--744866-->
 
