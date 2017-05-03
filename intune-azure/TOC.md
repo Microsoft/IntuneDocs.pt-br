@@ -94,6 +94,8 @@
 ### [Configurar o aplicativo do Portal da Empresa](manage-apps/company-portal-app.md)
 ## Como usar as políticas de proteção do aplicativo
 ### [Criar e atribuir as políticas de proteção do aplicativo](manage-apps/app-protection-policies.md)
+### [Preparar-se para as políticas de proteção do aplicativo WIP](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Criar e atribuir as políticas de proteção do aplicativo WIP](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Configurações do Android](manage-apps/android-app-protection-policy-settings.md)
 #### [Configurações do iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validar políticas de proteção do aplicativo](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [Definir configurações de atualização de edição do Windows 10](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Definir configurações de treinamento para Windows 10](configure-devices/how-to-configure-education-settings.md)
+### [Definir as configurações de treinamento para iOS](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [Definir as configurações do Windows Update for Business](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configurar certificados](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
