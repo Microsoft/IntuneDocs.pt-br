@@ -1,12 +1,12 @@
 ---
-title: Configurar a infraestrutura de certificado do Intune para PKCS
+title: Configurar e gerenciar certificados PKCS com o Intune
 titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como configurar sua infraestrutura para usar certificados PKCS com o Intune."
+description: "Visualização do Intune Azure: aprenda a configurar sua infraestrutura, depois crie e atribua perfis de certificado PKCS com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 0c378fe6ed26bafb5a78daf36b9326771fdd287b
+ms.lasthandoff: 04/19/2017
 
 
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2017
 # <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>Configurar sua infraestrutura de certificado do Microsoft Intune para PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Este tópico descreve o que você precisa para criar e implantar perfis de certificado PKCS com o Intune.
+Este tópico mostra como configurar sua infraestrutura, depois criar e atribuir perfis de certificado PKCS com o Intune.
 
 Para fazer qualquer autenticação baseada em certificado na sua organização, você precisa de uma Autoridade de Certificação Corporativa.
 
@@ -61,17 +61,16 @@ Para usar perfis de certificado PKCS, além da Autoridade de Certificação Corp
 |Objeto|Detalhes|
 |----------|-----------|
 |**Modelo de certificado**|Você configura este modelo na AC emissora.|
-|**Certificado de AC raiz confiável**|Você o exporta como um arquivo **.cer** da AC emissora ou de qualquer dispositivo que confie na AC emissora e o implanta nos dispositivos usando o perfil de certificado de AC confiável.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
+|**Certificado de AC raiz confiável**|Você o exporta como um arquivo **.cer** da AC emissora ou de qualquer dispositivo que confie na AC emissora e o atribui nos dispositivos usando o perfil de certificado de AC confiável.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
 
 
 ## <a name="configure-your-infrastructure"></a>Configure sua infraestrutura
-Para poder configurar perfis de certificado, você deve concluir as tarefas a seguir. Essas tarefas exigem conhecimento do Windows Server 2012 R2 e do ADCS (Serviços de Certificados do Active Directory):
+Para poder configurar perfis de certificado, você deve concluir as etapas a seguir. Essas etapas exigem conhecimento do Windows Server 2012 R2 e do ADCS (Serviços de Certificados do Active Directory):
 
-- **Tarefa 1** – configurar modelos de certificado na autoridade de certificação.
-- **Tarefa 2** - habilitar, instalar e configurar o Conector de Certificado do Intune.
+- **Etapa 1** - Configurar modelos de certificado na autoridade de certificação.
+- **Etapa 2** - Habilitar, instalar e configurar o Conector de Certificado do Intune.
 
-## <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Tarefa 1 – Configurar modelos de certificado na autoridade de certificação
-Nesta tarefa, você publicará o modelo de certificado.
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>Etapa 1 - Configurar modelos de certificado na autoridade de certificação
 
 ### <a name="to-configure-the-certification-authority"></a>Para configurar a autoridade de certificação
 
@@ -109,10 +108,11 @@ Nesta tarefa, você publicará o modelo de certificado.
 
 4.  No computador da AC, certifique-se de que o computador que hospeda o Intune Certificate Connector tenha a permissão de registro, para que ele possa acessar o modelo usado na criação do perfil de certificado PKCS. Defina essa permissão na guia **Segurança** das propriedades do computador da Autoridade de Certificação.
 
-## <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Tarefa 2 - Habilitar, instalar e configurar o Conector de Certificado do Intune
-Nesta tarefa, você vai:
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>Etapa 2 - Habilitar, instalar e configurar o Conector de Certificado do Intune
+Nesta etapa, você vai:
 
-Baixar, instalar e configurar o Conector de Certificado.
+- Habilitar o suporte ao Conector de Certificado
+- Baixar, instalar e configurar o Conector de Certificado.
 
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Para habilitar o suporte ao Conector de Certificado
 
@@ -158,6 +158,53 @@ Para validar que o serviço está em execução, abra um navegador e digite a se
 
 **http:// &lt;FQDN_do_seu_servidor_NDES&gt;/certsrv/mscep/mscep.dll**
 
-### <a name="next-steps"></a>Próximas etapas
-Agora você está pronto para configurar perfis de certificado, conforme descrito em [Como configurar certificados com o Microsoft Intune](how-to-configure-certificates.md).
+
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>Como criar um perfil de certificado PKCS
+
+No Portal do Azure, selecione a carga de trabalho **Configurar dispositivos**.
+2. Na folha **Configurações do dispositivo**, escolha **Gerenciar** > **Perfis**.
+3. Na folha de perfis, clique em **Criar Perfil**.
+4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de certificado PKCS.
+5. Na lista suspensa **Plataforma**, selecione a plataforma de dispositivo para esse certificado PKCS de:
+    - **Android**
+    - **Android for Work**
+    - **iOS**
+    - **Windows 10 e posterior**
+6. Na lista suspensa de tipos de **Perfil**, escolha **Certificado PKCS**.
+7. Na folha **Certificado PKCS**, defina as seguintes configurações:
+    - **Limite de renovação (%)** – Especifique o percentual do tempo de vida do certificado restante antes da renovação das solicitações de dispositivo do certificado.
+    - **Período de validade do certificado** – Se você executar o comando **certutil – setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** na AC emissora, o que permite usar um período de validade personalizado, poderá especificar a quantidade de tempo restante antes que o certificado expire.<br>Você pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado em um modelo de certificado for de dois anos, você pode especificar um valor de um ano, mas não de cinco anos. O valor também tem que ser inferior ao período de validade restante do certificado da AC emissora.
+    - **KSP (Provedor de Armazenamento de Chave)** (Windows 10) - especifique o local em que a chave do certificado será armazenada. Escolha um destes valores:
+        - **Registrar no KSP do TPM (Trusted Platform Module) se existir; caso contrário, no KSP de Software**
+        - **Registrar no KSP do TPM (Trusted Platform Module); caso contrário, falha**
+        - **Registrar no Passport; caso contrário, falha (Windows 10 e posterior)**
+        - **Registrar no Software KSP**
+    - **Autoridade de certificação** - uma AC (Autoridade de Certificação) Corporativa que é executada em uma edição Enterprise do Windows Server 2008 R2 ou posterior. Não há suporte para ACs autônomas. Para ver instruções sobre como configurar uma autoridade de certificação, consulte [Instalar a autoridade de certificação](http://technet.microsoft.com/library/jj125375.aspx). Se a sua AC executar o Windows Server 2008 R2, você deve [instalar o hotfix de KB2483564](http://support.microsoft.com/kb/2483564/).
+    - **Nome da autoridade de certificação** - insira o nome do sua autoridade de certificação.
+    - **Nome do modelo de certificado** – Insira o nome de um modelo de certificado que o Serviço de Registro de Dispositivo de Rede está configurado para usar e que foi adicionado a uma AC emissora.
+    Verifique se o nome corresponde exatamente a um dos modelos de certificado relacionados no registro do servidor que executa o Serviço de Registro de Dispositivo de Rede. Certifique-se de especificar o nome do modelo de certificado e não o nome para exibição do modelo de certificado. 
+    Para localizar os nomes dos modelos de certificado, navegue até a seguinte chave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. Você verá os modelos de certificado listados como os valores para **EncryptionTemplate**, **GeneralPurposeTemplate**e **SignatureTemplate**. Por padrão, o valor para todos os modelos de certificado é IPSECIntermediateOffline, que mapeia até o nome de exibição do modelo do **IPsec (solicitação offline)**. 
+    - **Formato de nome da entidade** – Na lista, selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. Se o certificado for para um usuário, você também pode incluir o endereço de email do usuário no nome da entidade. Escolha:
+        - **Não configurado**
+        - **Nome comum**
+        - **Nome comum incluindo email**
+        - **Nome comum como email**
+    - **Nome alternativo da entidade** – Especifique como o Intune criará automaticamente os valores para o SAN (nome alternativo da entidade) na solicitação de certificado. Se tiver selecionado um tipo de certificado de usuário, por exemplo, você pode incluir o UPN no nome alternativo da entidade. Se o certificado do cliente for usado para autenticar em um Servidor de Políticas de Rede, você deve definir o nome alternativo da entidade como o UPN.
+    - **Uso estendido da chave** (Android) – Escolha **Adicionar** para adicionar valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exigirá **Autenticação de cliente** para que o usuário ou dispositivo possa autenticar-se em um servidor. No entanto, você pode adicionar outros usos da chave conforme necessário. 
+    - **Certificado Raiz** (Android) – Escolha um perfil de certificado de AC raiz configurado anteriormente e atribuído ao usuário ou dispositivo. Esse certificado de AC raiz deve ser o certificado raiz da AC que emitirá o certificado que você está configurando nesse perfil de certificado. Este é o perfil de certificado confiável que você criou anteriormente.
+8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
+
+O perfil será criado e aparecerá na folha da lista de perfis.
+
+## <a name="how-to-assign-the-certificate-profile"></a>Como atribuir o perfil de certificado
+
+Antes de atribuir perfis de certificado a grupos, considere o seguinte:
+
+- Quando você atribui perfis de certificado a grupos, o arquivo de certificado do perfil do Certificado de Autoridade de Certificação Confiável é instalado no dispositivo. O dispositivo usa o perfil de certificado PKCS para criar uma solicitação de certificado pelo dispositivo.
+- Os perfis de certificado são instalados somente em dispositivos que executam a plataforma que você usa ao criar o perfil.
+- Você pode atribuir perfis de certificado para coleções de usuários ou coleções de dispositivos.
+- Para publicar um certificado em um dispositivo rapidamente depois que o dispositivo for registrado, atribua o perfil de certificado a um grupo de usuários em vez de um grupo de dispositivos. Se você atribuir um grupo de dispositivos, um registro de dispositivo completo será necessário para que o dispositivo receba políticas.
+- Embora você atribua cada perfil separadamente, também precisará atribuir a AC Raiz Confiável e o perfil PKCS. Caso contrário, a política de certificação PKCS falhará.
+
+Para saber mais sobre como atribuir perfis, confira [Como atribuir perfis de dispositivo](how-to-assign-device-profiles.md).
 

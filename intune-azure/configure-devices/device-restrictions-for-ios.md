@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/17/2017
 -     **Pesquisa por definição de palavra (somente supervisionado)** – Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.
 -     **Teclados preditivos (somente supervisionado)** – Permitir o uso de teclados preditivos que sugerem palavras que o usuário pode querer.
 -     **Correção automática (somente supervisionado)** – Permite que o dispositivo corrija automaticamente palavras incorretas.
--     **Verificação ortográfica do teclado (somente supervisionada)** – Permite usar o verificador de ortografia do dispositivo.
+-     **Verificação ortográfica do teclado (somente supervisionada)**  – Permite usar o verificador de ortografia do dispositivo.
 -     **Atalhos de teclado (somente supervisionado)** – Permite o uso de atalhos de teclado.
 -     **Detecção de pulso para Apple Watch emparelhado** – Quando habilitada, o Apple Watch não exibirá notificações quando não estiver sendo usado.
 - **Exigir uma senha de emparelhamento de solicitações de saída do AirPlay** – Exigir uma senha emparelhamento quando o usuário usar AirPlay para transmitir o conteúdo para outros dispositivos da Apple.
@@ -225,6 +225,67 @@ Use as informações nesta lista para identificar o nome, o editor e a ID do pac
 -     **Fluxo de fotos compartilhado** – Defina como **Não** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo.
 -     **Continuação da atividade** – Permitir que o usuário continue, em outro dispositivo iOS ou macOS, o trabalho iniciado em um dispositivo iOS (Handoff).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Modo autônomo de único aplicativo (somente supervisionado)
+
+Use estas configurações para configurar dispositivos iOS para executar aplicativos especificados no modo autônomo de aplicativo único. Quando esse modo está configurado e o aplicativo é executado, o dispositivo é bloqueado para que ele só possa executar esse aplicativo. Um exemplo disso é quando você configura um aplicativo que permite aos usuários fazer um teste no dispositivo. Quando as ações do aplicativo forem concluídas ou quando você remover essa política, o dispositivo retornará ao seu estado normal.
+
+### <a name="settings"></a>Configurações
+
+- **Nome do aplicativo** - insira o nome do aplicativo como ele aparecerá na lista de aplicativos desta folha.
+- **ID do Pacote de Aplicativos** - insira a ID do pacote de aplicativos do aplicativo. Para obter ajuda, veja **Referência da ID de Pacote para aplicativos iOS internos** neste tópico.
+
+Depois de especificar o nome de cada aplicativo e a ID de pacote, escolha **Adicionar** para acrescentá-los à lista.
+
+- **Importar** - importe um arquivo .csv (valores separados por vírgulas) contendo uma lista de nomes de aplicativo e suas IDs de pacote associadas.
+- **Exportar** - exporte os nomes de aplicativo e as IDs de pacote associadas configuradas para um arquivo .csv (valores separados por vírgulas).
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID de Pacote para aplicativos iOS internos
+
+Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software.
+
+|||
+|-|-|
+|Nome do aplicativo|ID do pacote|
+|Loja de aplicativos|com.apple.AppStore|
+|Calculadora|com.apple.calculator|
+|Calendário|com.apple.mobilecal|
+|Câmera|com.apple.camera|
+|Relógio|com.apple.mobiletimer|
+|Bússola|com.apple.compass|
+|Contacts|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Buscar Amigos|com.apple.mobileme.fmf1|
+|Buscar iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Integridade|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Email|com.apple.mobilemail|
+|Mapas|com.apple.Maps|
+|Mensagens|com.apple.MobileSMS|
+|Música|com.apple.Music|
+|News|com.apple.news|
+|Observações|com.apple.mobilenotes|
+|Números|com.apple.Numbers|
+|Páginas|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Fotos|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Lembretes|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Configurações|com.apple.Preferences|
+|Bolsa|com.apple.stocks|
+|Dicas|com.apple.tips|
+|Vídeos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Carteira|com.apple.Passbook|
+|Assistir|com.apple.Bridge|
+|Clima|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Quiosque
 -     **Bloqueio de Ativação** – Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.
 -     **Aplicativo que é executado no modo de quiosque** – Escolha **Aplicativo Gerenciado** para selecionar um aplicativo que você adicionou ao Intune, ou **Aplicativo da Loja** para especificar a URL para um aplicativo na loja. Nenhum outro aplicativo poderá ser executado no dispositivo. Para obter mais ajuda, consulte "How to specify URLs to app stores" (Como especificar URLs para lojas de aplicativos) mais adiante neste tópico.
@@ -256,4 +317,21 @@ Use as informações nesta lista para identificar o nome, o editor e a ID do pac
 -     **JavaScript** – Permitir a execução de scripts Java no navegador.
 -     **Avisos de fraude** – Permitir avisos de fraude no navegador.
 -     **Pop-ups** – Habilitar ou desabilitar o bloqueador de pop-ups do navegador.
+
+
+## <a name="domains"></a>Domínios
+
+### <a name="unmarked-email-domains"></a>Domínios de email desmarcados
+
+No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente daqueles configurados por você, o email será marcado como não confiável no aplicativo Mail do iOS.
+
+
+### <a name="managed-web-domains"></a>Domínios da web gerenciados
+
+No campo **URL do Domínio da Web**, adicione uma ou mais URLs à lista. Quando os documentos forem baixados dos domínios especificados, eles serão considerados gerenciados. Essa configuração só se aplica a documentos baixados usando o navegador Safari.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Domínios de preenchimento automático de senha do Safari
+
+No campo **URL do Domínio**, adicione uma ou mais URLs à lista. Os usuários só podem salvar senhas da Web das URLs nesta lista. Essa configuração se aplica somente ao navegador Safari e aos dispositivos com iOS 9.3 e posteriores no modo supervisionado. Se você não especificar URLs, será possível salvar senhas de todos os sites.
 

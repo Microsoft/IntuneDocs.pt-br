@@ -1,12 +1,12 @@
 ---
 title: "Configurar atualizações da edição do Windows 10 com o Intune"
 titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como usar o Intune para atualizar os dispositivos com Windows 10 que você gerencia."
+description: "Visualização do Intune Azure: saiba como usar o Intune para atualizar os dispositivos com Windows 10 que você gerencia para uma edição diferente."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use as informações neste tópico para aprender a configurar um perfil de atualização da edição do Windows 10. Este perfil permite atualizar automaticamente os dispositivos que executam uma das seguintes versões do Windows 10 para uma edição mais recente:
+Use as informações neste tópico para aprender a configurar um perfil de atualização da edição do Windows 10. Este perfil permite atualizar automaticamente os dispositivos que executam uma das seguintes versões do Windows 10 para uma edição diferente:
 
 - Windows 10 Home
 - Windows 10 Holographic
@@ -36,9 +36,9 @@ Use as informações neste tópico para aprender a configurar um perfil de atual
 
 Há suporte para os seguintes caminhos de atualização:
 
-- Do Windows 10 Pro para o Windows 10 Enterprise
-- Do Windows 10 Home para o Windows 10 Enterprise
-- Do Windows 10 Mobile para o Windows 10 Mobile Enterprise
+- Do Windows 10 Pro para Windows 10 Enterprise
+- Do Windows 10 Home para Windows 10 Education
+- Do Windows 10 Mobile para Windows 10 Mobile Enterprise
 - Do Windows 10 Holographic Pro para o Windows 10 Holographic Enterprise
 
 

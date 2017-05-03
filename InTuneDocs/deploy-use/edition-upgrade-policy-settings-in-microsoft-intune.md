@@ -1,22 +1,23 @@
 ---
 title: "Configurações da política de atualização de edição do Windows | Microsoft Docs"
-description: "Saiba como atualizar automaticamente os dispositivos Windows 10 para a versão mais recente com o Intune."
+description: "Saiba como atualizar automaticamente os dispositivos com Windows 10 para uma versão diferente com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A **Política de atualização de edição** do Microsoft Intune permite atualizar automaticamente os dispositivos que executam uma das seguintes versões do Windows 10 para uma edição mais recente:
+A **Política de Atualização de Edição** do Microsoft Intune permite atualizar automaticamente os dispositivos que executam uma das seguintes versões do Windows 10 para uma edição diferente:
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile
 
 Há suporte para os seguintes caminhos de atualização:
-- Do Windows 10 Pro para o Windows 10 Enterprise
-- Do Windows 10 Home para o Windows 10 Enterprise
-- Do Windows 10 Mobile para o Windows 10 Mobile Enterprise
+- Do Windows 10 Pro para Windows 10 Enterprise
+- Do Windows 10 Home para Windows 10 Education
+- Do Windows 10 Mobile para Windows 10 Mobile Enterprise
 - Do Windows 10 Holographic Pro para o Windows 10 Holographic Enterprise
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -54,9 +55,4 @@ Antes de começar a atualizar os dispositivos para a versão mais recente, será
 
 ### <a name="see-also"></a>Consulte também
 [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

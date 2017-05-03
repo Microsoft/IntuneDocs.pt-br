@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: f6014c5500b05762d123b2285ef859d67382e402
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 1d9bd55a8abee4175d2e71727d7ff18274defd3d
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,21 +25,21 @@ ms.lasthandoff: 04/06/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Use um dos métodos a seguir para configurar o registro para dispositivos do Windows:
+Este tópico ajuda os administradores de TI a simplificar o registro do Windows para os seus usuários.  Dispositivos do Windows podem ser registrados sem etapas adicionais, mas você pode facilitar o registro para os usuários.
 
-- [**Registro automático do Windows 10 com o Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  Este método só está disponível para dispositivos com Windows 10.
- -  Você deve ter o Azure Active Directory Premium para usar esse método.
- -  Se você optar por não habilitar o registro automático, use o método de registro para Windows 8.1 e Windows Phone 8.1.
+Dois fatores determinam como você pode simplificar o registro de dispositivos do Windows:
+- **Você usa o Azure Active Directory Premium?** <br>[O Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído no Enterprise Mobility + Security e outros planos de licenciamento.
+- **Quais versões de clientes Windows serão registradas?** <br>Dispositivos Windows 10 podem registrar automaticamente adicionando uma conta corporativa ou escolar. Versões anteriores devem ser registrados usando o aplicativo de Portal da Empresa.
 
-- [**Registro sem o registro automático do Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
- - Você deve usar esse método para registrar dispositivos Windows 8.1 e Windows Phone 8.1.
- - Você pode usar esse método para dispositivos Windows 8.1 e posteriores se não quiser usar o Azure Active Directory (AD) Premium.
+||**Azure AD Premium**|**Outro AD**|
+|----------|---------------|---------------|  
+|**Windows 10**|[Registro automático](#enable-windows-10-automatic-enrollment) |[Registro de usuário](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Versões anteriores do Windows**|[Registro de usuário](#enable-windows-enrollment-without-azure-ad-premium)|[Registro de usuário](#enable-windows-enrollment-without-azure-ad-premium)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Habilite o registro do Windows sem registro automático
-Você pode permitir aos usuários a instalação e o registro de seus dispositivos sem registro automático do Azure AD Premium. Depois que você atribuir uma licença a uma conta de usuário, o usuário pode adicionar essa conta a um dispositivo Windows e concordar em registrar o dispositivo no gerenciamento. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem inserir um nome do servidor.
+Você pode permitir aos usuários o registro de seus dispositivos sem registro automático do Azure AD Premium. Depois de atribuir licenças, os usuários podem registrar depois de adicionar sua conta corporativa aos seus dispositivos pessoais ou ingressar seus dispositivos corporativos ao Azure AD. Criar um alias DNS (tipo de registro CNAME) facilita para os usuários registrarem seus dispositivos. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem precisar inserir um nome do servidor Intune.
 
 **Etapa 1: Criar CNAMEs** (opcional)<br>
 Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.

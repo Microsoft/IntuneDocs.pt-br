@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,21 +30,21 @@ Este tópico descreve alguns problemas comuns que podem ocorrer durante a config
 
 **Erros de logon**
 
-## <a name="403-errors"></a>Erros&403;
+## <a name="403-errors"></a>Erros 403
 Ao fazer logon no [console do Lookout MTP](https://aad.lookout.com), você recebe um erro 403: **Você não tem autorização para acessar o serviço.** Isso pode acontecer quando o nome de usuário especificado não é membro do grupo do Azure AD (Active Directory) configurado para acessar o Lookout MTP.
 
 O Lookout MTP permite que apenas usuários de um grupo do Azure AD configurado acessem o serviço. Para determinar qual grupo está configurado com acesso ao Lookout MTP, contate o suporte do Lookout:
 
 * Email: enterprisesupport@lookout.com
-* Faça logon no [Console de MTP](http://aad.lookout.com) e navegue até o módulo **Suporte**.
-* Vá até:  https://enterprise.support.lookout.com/hc/en-us/requests e faça uma solicitação de suporte.
+* Faça logon no [Console do MTP](http://aad.lookout.com) e navegue até o módulo **Suporte**.
+* Acesse: https://enterprise.support.lookout.com/hc/requests e faça uma solicitação de suporte.
 
 ## <a name="unable-to-sign-in"></a>Não é possível entrar
 Você vê o erro a seguir quando o usuário administrador global do Azure AD não aceitou a configuração inicial do Lookout.
 
 ![captura de tela da tela de logon do Lookout mostrando erro ao entrar](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Para solucionar esse problema, um usuário administrador global precisa fazer logon em https://aad.lookout.com/les?action=consent e aceitar a solicitação para iniciar a instalação. Informações mais detalhadas podem ser encontradas no tópico [Set up your subscription with Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) (Configurar sua assinatura com a Consulta MTP)
+Para resolver esse problema, o usuário administrador global deve fazer logon em https://aad.lookout.com/les?action=consent e aceitar a solicitação para iniciar a instalação. Informações mais detalhadas podem ser encontradas no tópico [Set up your subscription with Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) (Configurar sua assinatura com a Consulta MTP)
 
 **Problemas de status do dispositivo**
 
@@ -55,7 +56,7 @@ Isso pode acontecer em um dos seguintes cenários:
 
 ### <a name="device-reported-as-pending"></a>Dispositivo relatado como **pendente**
 
-Um dispositivo é mostrado como **Pendente** se o usuário final não abriu o aplicativo Lookout for Work nem tocou no botão **Ativar**. Para obter mais detalhes sobre a ativação do dispositivo com o aplicativo Lookout for Work, consulte [Você é solicitado a instalar o Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) ou [Você é solicitado a instalar o Lookout for Work em seu dispositivo iOS](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
+Um dispositivo é mostrado como **Pendente** se o usuário final não abriu o aplicativo Lookout for Work nem tocou no botão **Ativar**. Para obter mais detalhes sobre a ativação do dispositivo com o aplicativo Lookout for Work, consulte [Você é solicitado a instalar o Lookout for Work](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) ou [Você é solicitado a instalar o Lookout for Work em seu dispositivo iOS](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>Dispositivo ativo, mas sem ID de dispositivo
 No console do Lookout MTP, se um dispositivo ativo não tiver nenhuma ID de dispositivo, o usuário do dispositivo não estará no grupo de registro. Um dispositivo poderá entrar nesse estado se o usuário do dispositivo tiver sido removido do grupo de registro ou se o grupo de registro tiver sido removido.
@@ -83,14 +84,9 @@ Se o novo usuário estiver em um grupo de registro do Lookout MTP, o dispositivo
 ## <a name="compliance-remediation-workflows"></a>Fluxos de trabalho de correção de conformidade
 - [Você é solicitado a instalar o Lookout for Work em seu dispositivo Android]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo iOS](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo iOS](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Consulte também
-[Configurar sua assinatura com a Consulta MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Configurar sua assinatura com a Consulta MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 
