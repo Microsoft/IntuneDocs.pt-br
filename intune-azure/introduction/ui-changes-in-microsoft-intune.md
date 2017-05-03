@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -34,6 +34,7 @@ Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à m
 |Grupos por IMEI (todas as plataformas) | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > por IMEI (todas as plataformas) | [Registro de dispositivo > identificadores de dispositivo corporativo](#by-imei-all-platforms)|
 | Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registro de dispositivo > registro Apple > perfis do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
 | Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registro de dispositivo > registro Apple > perfis de CA](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Admin > Gerenciamento de Dispositivo Móvel > Android for Work | Registro de Dispositivo > Registro do Android for Work | | Termos e Condições | Política > Termos e Condições |Registro de dispositivo > Termos e Condições |
 
 
 ## <a name="where-do-i-manage-groups"></a>Onde gerencio grupos?

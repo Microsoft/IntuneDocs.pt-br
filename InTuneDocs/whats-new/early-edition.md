@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ Os usuários não precisam mais entrar no aplicativo do Outlook se estiverem con
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progresso de conexão no Portal da empresa Android <!--953374-->
 
-Uma atualização para o aplicativo de Portal da empresa Android mostra um indicador de progresso de conexão quando o usuário inicia ou reinicia o aplicativo. O indicador avança por novos status, começando com "Conectando…", "Fazendo logon..." e "Verificando os requisitos de segurança..." antes de permitir que o usuário acesse o aplicativo. Você pode ver as novas telas do aplicativo do Portal da Empresa para Android na [página Novidades de interface do usuário do aplicativo Intune](whats-new-in-intune-app-ui.md). 
+Uma atualização para o aplicativo de Portal da empresa Android mostra um indicador de progresso de conexão quando o usuário inicia ou reinicia o aplicativo. O indicador avança por novos status, começando com "Conectando…", "Fazendo logon..." e "Verificando os requisitos de segurança..." antes de permitir que o usuário acesse o aplicativo. Você pode ver as novas telas do aplicativo do Portal da Empresa para Android na [página Novidades de interface do usuário do aplicativo Intune](whats-new-in-intune-app-ui.md).
 
 
 ## <a name="notices"></a>Avisos
@@ -186,7 +186,7 @@ Adicionamos suporte para configurações adicionais de restrição de dispositiv
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Suporte a vários usuários para atualização do Windows 10 para criadores <!-- 822547 -->
 
-Adicionamos suporte para o gerenciamento de vários usuários para dispositivos que executam a atualização do Windows 10 para criadores e estão ingressados no domínio do Azure Active Directory. Isso significa que, quando diferentes usuários fizerem logon no dispositivo com suas credenciais do AAD, eles receberão quaisquer aplicativos e políticas que foram atribuídos ao seu nome de usuário.
+Adicionamos suporte para o gerenciamento de vários usuários para dispositivos que executam a Atualização do Windows 10 para Criadores e estão ingressados no Domínio do Azure Active Directory. Isso significa que, quando usuários padrão diferentes fizerem logon no dispositivo com suas credenciais do Azure AD, eles receberão quaisquer aplicativos e políticas que foram atribuídos ao seu nome de usuário. No momento, os usuários não podem usar o Portal da Empresa para cenários de autoatendimento, como a instalação de aplicativos.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Começar do zero para PCs com Windows 10<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Agora você pode criar uma política de atualização de edição para atualizar
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Registro em massa de dispositivos com Windows 10 <!-- 747607 -->
 
-Você pode ingressar um grande número de dispositivos com Windows 10 ao Azure Active Directory e ao Intune com ferramentas de automação de TI. Para habilitar o registro automático do MDM para seu locatário do Azure AD, crie um pacote de provisionamento que associa o dispositivo ao seu locatário do Azure AD usando o Designer de configuração do Windows. Aplique esse pacote a dispositivos corporativos que você gostaria de registrar e gerenciar em massa.  Quando o pacote for aplicado, dispositivos se conectarão ao Azure AD, se registrarão no Intune e estarão prontos para que os seus usuários do Azure AD façam logon.
+Ingresse uma quantidade grande de dispositivos que executam a atualização do Windows 10 para Criadores no Azure Active Directory e no Intune com o WCD (Windows Configuration Designer). Para habilitar o registro automático do MDM para seu locatário do Azure AD, crie um pacote de provisionamento que ingressa dispositivos ao seu locatário do Azure AD usando o Windows Configuration Designer e aplique o pacote aos dispositivos corporativos que você gostaria de registrar e gerenciar em massa. Quando o pacote for aplicado aos seus dispositivos, eles ingressarão no Azure AD, se registrarão no Intune e estarão prontos para logon de seus usuários do Azure AD.  Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas atribuídas e os aplicativos necessários. Não há suporte no momento para cenários de autoatendimento e de Portal da Empresa.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Novas configurações de MAM para PIN e locais de armazenamento gerenciado <!-- 58112, 736644 -->
 
