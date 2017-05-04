@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
-ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
-ms.lasthandoff: 04/07/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: d8fa3a19915076f1a603449dd426172fbc5a613a
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -38,9 +38,8 @@ Este tópico ajuda os administradores de TI a registrar dispositivos iOS de prop
 2. [Crie um perfil DEP](#create-anapple-dep-profile)
 3. [Atribua números de série DEP da Apple a seu servidor Intune](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [Sincronize dispositivos gerenciados por DEP](#synchronize-dep-managed-devices)
-5. Distribuir dispositivos para usuários
-
-
+5. [Atribuir o perfil DEP a dispositivos](#assign-a-dep-profile-to-devices)
+6. [Distribuir dispositivos para usuários](#distribute-devices-to-users)
 
 ## <a name="get-the-apple-dep-certificate"></a>Obtenha o certificado DEP da Apple
 Para poder registrar dispositivos iOS de propriedade da empresa com o Programa de registro de dispositivos (DEP) da Apple, você precisa de um arquivo de certificado de DEP (.p7m) da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos de sua empresa que fazem parte do DEP. Ele também permite que o Intune realize carregamentos de perfis de registro para a Apple e atribua dispositivos a esses perfis.
@@ -49,9 +48,6 @@ Para gerenciar dispositivos iOS corporativos com o DEP, sua organização deve i
 
 > [!NOTE]
 > Se seu locatário Intune migrou do console clássico do Intune para o portal do Azure e você excluiu um token de DEP da Apple no console de administração do Intune durante o período de migração, o token de DEP pode ter sido restaurado para sua conta do Intune. Você pode excluir o token de DEP novamente no portal do Azure.
-
-
-
 
 **Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token de DEP da Apple.**<br>
 1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**. Na folha do Intune, selecione **Registro de dispositivo** > **Token de DEP da Apple**.
@@ -75,7 +71,7 @@ Vá até o arquivo de certificado (.pem), escolha **Abrir** e selecione **Carreg
 Um perfil de registro de dispositivos define as configurações aplicadas a um grupo de dispositivos. As etapas a seguir mostram como criar um perfil de registro de dispositivo para dispositivos iOS registrados usando o DEP.
 
 1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-2. Na folha Intune, escolha **Registrar dispositivos** e escolha **Registro Apple**.
+2. Na folha Intune, escolha **Registro de dispositivo** e escolha **Registro Apple**.
 3. Em **Gerenciar configurações de DEP (Programa de registro de dispositivos) da Apple**, selecione **Perfis de DEP**.
 4. Na folha **Perfis de DEP da Apple**, selecione **Criar**.
 5. Na folha **Criar Perfil de Registro**, insira um nome e uma descrição para o perfil.
@@ -118,6 +114,7 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 9. Para salvar as configurações de perfil, selecione **Criar** na folha **Criar Perfil de Registro**.
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Atribuir números de série de DEP da Apple ao seu servidor MDM
+Os números de série do dispositivo devem ser atribuídos ao seu servidor do Intune MDM no portal da Web DEP da Apple para permitir que o Intune gerencie esses dispositivos.
 
 1. Vá até o [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID Apple corporativa.
 
@@ -128,10 +125,11 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 4. Escolha **Atribuir ao Servidor**, escolha o &lt;ServerName&gt; especificado para o Microsoft Intune e escolha **OK**.
 
 ## <a name="synchronize-dep-managed-devices"></a>Sincronize dispositivos gerenciados pelo DEP
+Agora que o Intune recebeu permissão para gerenciar seus dispositivos DEP, você pode sincronizar o Intune com o serviço DEP para ver os dispositivos gerenciados no portal do Intune.
 
 1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
-2. Na folha do Intune no Portal do Azure, escolha **Registrar Dispositivos** e escolha **Registro Apple**.
+2. Na folha do Intune no Portal do Azure, escolha **Registro de dispositivo** e escolha **Registro Apple**.
 
 3. Em **Gerenciar configurações de DEP (Programa de registro de dispositivos) da Apple**, selecione **Números de Série de DEP**.
 
@@ -146,12 +144,29 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 >[!NOTE]
 >Você também pode atribuir números de série de DEP a perfis na folha **Números de Série de DEP da Apple**.
 
+## <a name="assign-a-dep-profile-to-devices"></a>Atribuir o perfil DEP a dispositivos
+Os dispositivos DEP gerenciados pelo Intune devem ser atribuídos a um perfil DEP antes de serem registrados.
+
+1. No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+
+2. Na folha do Intune no Portal do Azure, escolha **Registro de dispositivo** > **Registro Apple** e selecione **Perfis DEP**.
+
+3. Na lista de **Perfis de Registro de DEP da Apple**, selecione o perfil que você deseja atribuir a dispositivos e, em seguida, selecione **Atribuições de Dispositivo**
+
+4. Selecione **Atribuir** e, em seguida, selecione os dispositivos DEP que você deseja atribuir a esse perfil. Você pode filtrar para exibir os dispositivos DEP disponíveis:
+  - **não atribuído**
+  - **qualquer**
+  - **&lt;Nome do perfil DEP&gt;**
+
+  ![Captura de tela do botão Atribuir para atribuir o perfil DEP no portal do Intune](media/dep-profile-assignment.png)
+
+5. Selecionar os dispositivos que deseja atribuir. A caixa de seleção acima da coluna selecionará até 1000 dispositivos listados e, em seguida, clique em **Atribuir**. Para registrar mais de 1000 dispositivos, repita as etapas de atribuição até que todos os dispositivos sejam atribuídos a um perfil DEP.
+
 ## <a name="distribute-devices-to-users"></a>Distribuir dispositivos para usuários
 
-Agora você pode distribuir dispositivos da empresa para os usuários. Quando um dispositivo iOS for ativado, ele será registrado para gerenciamento pelo Intune.
+Agora você pode distribuir dispositivos da empresa para os usuários. Quando um dispositivo DEP do iOS for ativado, ele será registrado para gerenciamento pelo Intune. Se o dispositivo tiver sido ativado e estiver em uso, o perfil não poderá ser aplicado até que o dispositivo volte à redefinição de fábrica.
 
-
-## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Como os usuários instalam e usam o Portal da Empresa em seus dispositivos
+### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Como os usuários instalam e usam o Portal da Empresa em seus dispositivos
 
 Os dispositivos configurados com a afinidade de usuário podem instalar e executar o aplicativo Portal da Empresa para baixar aplicativos e gerenciar dispositivos. Assim que os usuários receberem seus dispositivos, eles deverão realizar várias etapas adicionais descritas abaixo para concluir o Assistente de Configuração e instalar o aplicativo do Portal da Empresa.
 
@@ -159,7 +174,7 @@ Os dispositivos configurados com a afinidade de usuário podem instalar e execut
 
 1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.
 
-2. Durante a configuração, os usuários receberão uma solicitação por uma ID Apple. Eles precisam fornecer uma ID Apple para permitir que o dispositivo instale o Portal da Empresa. Também podem fornecer a ID pelo menu de ajustes do iOS após a conclusão da instalação.
+2. Durante a configuração, os usuários receberão uma solicitação por uma ID Apple. Eles precisam fornecer uma ID Apple para permitir que o dispositivo instale o Portal da Empresa. Também podem fornecer a ID Apple no menu de ajustes do iOS após a conclusão da instalação.
 
 3. Após concluir a configuração, os usuários deverão instalar o aplicativo do Portal da Empresa na App Store.
 

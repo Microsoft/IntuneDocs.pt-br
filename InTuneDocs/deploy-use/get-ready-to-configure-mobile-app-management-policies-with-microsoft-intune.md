@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -86,7 +86,7 @@ Você já tem uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_m
 
   - Para criar contas corporativas do SharePoint Online e Exchange Online. Não há suporte para o Exchange e o SharePoint locais.
 
--   **Instalação do Skype for Business Online para autenticação moderna**. Para obter mais informações, consulte [Habilitar a autenticação moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+-   **Instalação do Skype for Business Online para autenticação moderna**. Para obter mais informações, consulte [Habilitar a autenticação moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure AD (Azure Active Directory) para criar usuários. O Azure AD autentica os usuários quando eles abrem o aplicativo e inserem suas credenciais de trabalho.
@@ -96,7 +96,7 @@ Você já tem uma assinatura do [!INCLUDE[wit_nextref](../includes/wit_nextref_m
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>Criar usuários e atribuir licenças do Microsoft Intune
 
-1.  Entre no [portal do Office](http://portal.office.com) com suas credenciais de administrador.
+1.  Entre no [portal do Office](https://portal.office.com) com suas credenciais de administrador.
 
 2.  Adicione usuários, conforme descrito na seção **Etapas para realizar uma avaliação de 30 dias do Intune** do [Guia de avaliação do Intune](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) e, em seguida, atribua as licenças do Intune. Para conceder a um usuário a capacidade de acessar o portal do Office, o portal do Azure AD e o Portal do Azure, atribua a função de **Administrador Global** ao usuário.
 

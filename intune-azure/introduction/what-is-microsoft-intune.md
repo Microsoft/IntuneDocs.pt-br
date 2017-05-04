@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Esta seção contém informações sobre [novidades](/intune-azure/introduction/
 Informações para ajudá-lo a [planejar e projetar](/intune-azure/plan-and-design/get-started) seu ambiente do Intune.
 ### <a name="device-enrollment"></a>Registro de dispositivo
 [Como fazer o Intune gerenciar seus dispositivos](/intune-azure/enroll-devices/what-is).
-### <a name="devices"></a>Dispositivos
-[Familiarize-se com os dispositivos gerenciados com relatórios e inventários](/intune-azure/manage-devices/what-is).
-### <a name="manage-users-and-groups"></a>Gerenciar usuários e grupos
-[Saiba mais sobre os usuários de dispositivos que você gerencia e classifique os recursos em grupos](/intune-azure/manage-users/what-is).
-### <a name="manage-apps"></a>Gerenciar aplicativos
-[Como publicar, gerenciar, configurar e proteger os aplicativos](/intune-azure/manage-apps/what-is-app-management).
-### <a name="device-configuration"></a>Configuração do dispositivo
-[Entenda os perfis que você pode usar para definir as configurações e recursos nos dispositivos gerenciados](/intune-azure/configure-devices/what-are-device-profiles).
 ### <a name="device-compliance"></a>Conformidade do dispositivo
 [Defina um nível de conformidade para seus dispositivos e faça relatórios sobre os dispositivos que não são compatíveis](/intune-azure/set-device-compliance/what-is-device-compliance).
+### <a name="device-configuration"></a>Configuração do dispositivo
+[Entenda os perfis que você pode usar para definir as configurações e recursos nos dispositivos gerenciados](/intune-azure/configure-devices/what-are-device-profiles).
+### <a name="devices"></a>Dispositivos
+[Familiarize-se com os dispositivos gerenciados com relatórios e inventários](/intune-azure/manage-devices/what-is).
+### <a name="mobile-apps"></a>Aplicativos móveis
+[Como publicar, gerenciar, configurar e proteger os aplicativos](/intune-azure/manage-apps/what-is-app-management).
 ### <a name="conditional-access"></a>Acesso condicional
 [Restrinja o acesso aos serviços do Exchange com base nas condições que você especificar](/intune-azure/conditional-access/what-is-conditional-access).
+### <a name="on-premises-access"></a>Acesso local
+[Configurar o acesso ao Exchange ActiveSync e ao Exchange local](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Usuários
+[Saiba mais sobre os usuários de dispositivos que você gerencia e classifique os recursos em grupos](/intune-azure/manage-users/what-is).
+### <a name="groups"></a>Grupos
+[Saiba mais sobre como você pode usar grupos do Azure Active Directory com o Intune](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Funções do Intune
 [Controle quem pode executar várias ações do Intune e a quem essas ações se aplicam](/intune-azure/access-control/role-based-access-control). Você pode usar as funções internas que abordam alguns cenários comuns do Intune ou pode criar suas próprias funções.
+### <a name="software-updates"></a>Atualizações de software
+[Saiba mais sobre como configurar atualizações de software para dispositivos com Windows 10](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
 
 
 

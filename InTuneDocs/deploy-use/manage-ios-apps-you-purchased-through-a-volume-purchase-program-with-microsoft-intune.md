@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Implantar um aplicativo comprado por volume
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Software Gerenciado** &gt; **Aplicativos de Compra de Volume**. Esta lista mostra todos os aplicativos que foram sincronizados do serviço VPP da Apple.
+1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicativos** &gt; **Aplicativos** &gt; **Aplicativos de Compra por Volume**. Esta lista mostra todos os aplicativos que foram sincronizados do serviço VPP da Apple.
 
 2.  Escolha o aplicativo que você deseja implantar, escolha **Gerenciar Implantação** e use as instruções no tópico [Implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, a criação e a implantação do aplicativo.
 
@@ -79,22 +80,14 @@ Para recuperar uma licença, você deve alterar a ação de implantação para *
 
 Quando um usuário com um dispositivo qualificado tenta instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. Eles devem fazer isso antes que a instalação do aplicativo prossiga.
 
-> [!TIP]
-> Examine a coluna **Status de Termos do VPP** para ver o status de aceitação para cada usuário ao qual o aplicativo foi implantado.
-
 Se não houver nenhuma outra licença disponível, a implantação falhará.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Para monitorar aplicativos de VPP da Apple
-Você pode monitorar quais aplicativos do VPP foram implantados e a quantidade de licenças utilizadas no espaço de trabalho **Aplicativos**, no nó **Software Gerenciado** &gt; **Aplicativos Adquiridos com Base em Volume**.
+Você pode monitorar quais aplicativos do VPP foram implantados e a quantidade de licenças utilizadas no espaço de trabalho **Aplicativos**, no nó **Aplicativos Adquiridos com Base em Volume**.
 
 > [!TIP]
 > Você também pode usar o aplicativo **Filtros** para examinar o status de cada instalação do aplicativo.
 
 ### <a name="see-also"></a>Consulte também
 [Implantar aplicativos no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

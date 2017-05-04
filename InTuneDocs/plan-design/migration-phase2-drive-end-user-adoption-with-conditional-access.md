@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ Está é uma abordagem típica para aprimorar uma campanha de migração com ace
 
 -   Os usuários da solução anterior poderiam acessar recursos usando dispositivos não gerenciados até que o acesso condicional fosse habilitado para eles.
 
-> [!TIP] 
+> [!TIP]
 > Essa é uma abordagem entre várias. Você pode escolher um processo mais simples que adia todo o acesso condicional até que cada fase tenha sido instruída para o registro, ou um processo mais rígido que garante o acesso condicional desde o começo e exige conformidade total para todos os acessos.
 
 -   Saiba mais sobre o [acesso condicional](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access).
@@ -61,7 +61,7 @@ Está é uma abordagem típica para aprimorar uma campanha de migração com ace
 
 -   Saiba [como configurar o acesso condicional](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
-### <a name="task-2-setup-intune-conditional-access"></a>Tarefa 2: Configurar o acesso condicional do Intune
+### <a name="task-2-set-up-intune-conditional-access"></a>Tarefa 2: Configurar o acesso condicional do Intune
 
 Escolha um dos tipos de política de acesso condicional a seguir para saber mais:
 

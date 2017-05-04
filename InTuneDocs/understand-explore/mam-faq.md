@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 **Quais são os benefícios da proteção do aplicativo do MAM?** O MAM protege os dados de uma organização em um aplicativo. Com o MAM-WE, um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase todos os dispositivos, incluindo dispositivos pessoais em cenários de BYOD (traga seu próprio dispositivo). Vários aplicativos de produtividade, como os aplicativos do Microsoft Office, podem ser gerenciados pelo Intune MAM. Consulte a lista oficial de [aplicativos habilitados pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para uso público.
 
 **Quais configurações de dispositivo têm suporte no MAM?** O Intune MAM dá suporte a duas configurações:
-  1. **Intune MDM + MAM**: essa foi a primeira configuração com suporte no MAM quando ele foi lançado pela primeira vez. Os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console independente do Intune em http://manage.microsoft.com.
+  1. **Intune MDM + MAM**: essa foi a primeira configuração com suporte no MAM quando ele foi lançado pela primeira vez. Os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console independente do Intune em https://manage.microsoft.com.
 
   2. **MAM sem registro de dispositivo**: o MAM sem registro de dispositivo, ou MAM-WE, permite que os administradores de TI gerenciem aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos não registrados no Intune MDM. Isso significa que os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados em provedores de EMM de terceiros. Para gerenciar aplicativos usando o MAM-WE, os clientes devem usar o console do Intune no portal do Azure em http://portal.azure.com.
 

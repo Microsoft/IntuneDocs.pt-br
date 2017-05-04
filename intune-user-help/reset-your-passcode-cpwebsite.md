@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -48,7 +48,7 @@ Para redefinir sua senha:
 
   ![A barra de notificação de redefinição de senha com o aviso sobre como redefinir a senha do dispositivo e como o usuário será desconectado. Os botões para a entrada do usuário são Sair e Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-5.  Selecione **Sair** e você receberá uma mensagem final informando sobre a remoção da senha do dispositivo. Se você não tiver o dispositivo com você, não remova a senha, pois qualquer pessoa que tiver acesso físico ao dispositivo poderá acessar a maior parte das informações contidas nele – pessoais ou corporativas.
+5.  Selecione **Sair** e você receberá uma mensagem final informando sobre a remoção da senha do dispositivo. Se você não tiver o dispositivo com você, não remova a senha, pois qualquer pessoa que tiver acesso físico ao dispositivo poderá acessar a maior parte das informações contidas nele – pessoais ou corporativas. 
 
   ![A segunda barra de notificação de redefinição de senha com o aviso sobre como redefinir a senha do dispositivo e como a senha será removida dele. Ela também informa como definir uma nova senha acessando as configurações do dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ Para redefinir sua senha:
   **Windows 10 Mobile**: remove a senha existente e cria uma senha temporária com letras e números. Se você estiver usando o reconhecimento do rosto Windows Hello para fazer logon, ele ainda terá suporte.
     
   **Windows Phone 8.1**: remove a senha existente e cria uma senha temporária com números
+
+  Para dispositivos Android e Windows, a senha temporária aparecerá nos **Detalhes do Dispositivo**. 
 
 6.  Desbloqueie seu dispositivo e defina uma nova senha ou altere a senha temporária acessando as **Configurações** de seu dispositivo.
 

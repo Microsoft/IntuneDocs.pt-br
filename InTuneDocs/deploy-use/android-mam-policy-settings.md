@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 9f1d00d5773aa604ec039d6f64bb901a795468ba
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: f6e3783e2d30d26424f3876d8bd22e3d2c8ef630
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 9f1d00d5773aa604ec039d6f64bb901a795468ba
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As configurações de política do aplicativo descritas neste tópico podem ser [configuradas](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) na folha **Configurações** no Portal do Azure.
-Há duas categorias de configurações de política: configurações de realocação de dados e configurações de acesso. Neste tópico, o termo _**aplicativos gerenciados por política**_ refere-se a aplicativos configurados com políticas de proteção de aplicativo.
+Há duas categorias de configurações de política: configurações de realocação de dados e configurações de acesso. Neste tópico, o termo _**aplicativos gerenciados por políticas**_ refere-se a aplicativos configurados com políticas de proteção de aplicativo.
 
 ##  <a name="data-relocation-settings"></a>Configurações de realocação de dados
 
@@ -35,13 +36,12 @@ Há duas categorias de configurações de política: configurações de realoca�
 | **Impedir backups do Android** | Escolha **Sim** para impedir que esse aplicativo faça backup de dados corporativos ou de estudante no [Serviço de Backup do Android](https://developer.android.com/google/backup/index.html) Escolha **não** para permitir que esse aplicativo faça backup de dados corporativos ou de estudante.| Sim |
 | **Permitir que o aplicativo transfira dados para outros aplicativos** | Especifique quais aplicativos podem receber dados desse aplicativo: <ul><li> **Aplicativos gerenciados por política**: permita a transferência apenas para outros aplicativos gerenciados por política.</li> <li>**Todos os aplicativos**: permitir a transferência para qualquer aplicativo. </li> <li>**Nenhum**: não permitir a transferência de dados para nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> <p>Há algumas isenções de aplicativos e serviços para os quais o Intune pode permitir transferência de dados. Consulte [Isenções de transferência de dados](#Data-transfer-exemptions) para obter uma lista completa dos aplicativos e serviços.| Todos os aplicativos |
 | **Permitir que o aplicativo receba dados de outros aplicativos** | Especifique quais aplicativos podem transferir dados para esse aplicativo: <ul><li>**Aplicativos gerenciados por política**: permita a transferência apenas de outros aplicativos gerenciados por política.</li><li>**Todos os aplicativos**: permitir a transferência de dados de qualquer aplicativo.</li><li>**Nenhum**: não permita a transferência de dados de nenhum aplicativo, incluindo outros aplicativos gerenciados por política. </li></ul> <p>Há algumas isenções de aplicativos e serviços dos quais o Intune pode permitir transferência de dados. Consulte [Isenções de transferência de dados](#Data-transfer-exemptions) para obter uma lista completa dos aplicativos e serviços. | Todos os aplicativos |
-| **Impedir “Salvar Como”** | Escolha **Sim** para desabilitar o uso da opção Salvar Como nesse aplicativo. Escolha **Não** se quiser permitir o uso de Salvar Como. | Não |
+| **Impedir “Salvar Como”** | Escolha **Sim** para desabilitar o uso da opção Salvar Como nesse aplicativo. Escolha **Não** se quiser permitir o uso de Salvar Como. <p>**Selecione em que serviços de armazenamento os dados empresariais podem ser guardados** <br>Os usuários são capazes de salvar os serviços selecionados (OneDrive for Busines, SharePoint e Armazenamento local). Todos os outros serviços serão bloqueados.</p> | Não |
 | **Restringir recortar, copiar e colar com outros aplicativos** | Especifique quando as ações recortar, copiar e colar podem ser usadas com esse aplicativo. Escolha: <ul><li>**Bloqueado**: não permita ações recortar, copiar e colar entre esse aplicativo e outros aplicativos.</li><li>**Aplicativos gerenciados por política**: permita ações recortar, copiar e colar entre esse aplicativo e outros aplicativos gerenciados por política.</li><li>**Aplicativos gerenciados por política com Colar Em**: permita o recorte ou a cópia entre esse aplicativo e outros aplicativos gerenciados por política. Permita que dados de qualquer aplicativo sejam colados nesse aplicativo.</li><li>**Qualquer aplicativo**: sem restrições para recortar, copiar e colar para e desse aplicativo. | Qualquer aplicativo |
 |**Restringir a exibição de conteúdo da Web no Managed Browser** | Escolha **Sim** para impor que os links da Web no aplicativo sejam abertos no aplicativo Managed Browser. <br><br> Para dispositivos não registrados no Intune, os links da Web em aplicativos gerenciados por política podem ser abertos apenas no aplicativo Managed Browser. <br><br> Se estiver usando o Intune para gerenciar seus dispositivos, consulte [Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md). | Não |
 | **Criptografar dados do aplicativo** | Escolha **Sim** para habilitar a criptografia de dados corporativos ou de estudante nesse aplicativo. O Intune usa um esquema de criptografia do AES de 128 bits OpenSSL, juntamente com o sistema de Repositório de Chaves do Android, para criptografar os dados do aplicativo com segurança. Os dados são criptografados de forma síncrona durante tarefas de E/S de arquivo. O conteúdo no armazenamento do dispositivo é Always Encrypted. <br><br> O método de criptografia **não** tem certificação FIPS 140-2.  | Sim |
 | **Desabilitar a sincronização de contatos** | Escolha **Sim** para impedir que o aplicativo salve dados no aplicativo de Contatos nativo do dispositivo. Se você escolher **Não**, o aplicativo poderá salvar dados no aplicativo de Contatos nativo do dispositivo. <br><br>Ao realizar um apagamento seletivo para remover dados corporativos ou de estudante do aplicativo, os contatos sincronizados diretamente do aplicativo para o aplicativo de Contatos nativo são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso se aplica somente ao aplicativo Microsoft Outlook. | Não |
 | **Desabilitar a impressão** | Escolha **Sim** para impedir que o aplicativo imprima dados corporativos ou de estudante. | Não |
-
 
   >[!NOTE]
   >O método de criptografia para a configuração **Criptografar dados do aplicativo** **não** tem certificação FIPS 140-2.
@@ -63,7 +63,7 @@ Há duas categorias de configurações de política: configurações de realoca�
   | com.google.android.webview | [WebView](https://developer.android.com/reference/android/webkit/WebView.html), que é necessário para muitos aplicativos, incluindo o Outlook. |
   | com.android.webview |[WebView](https://developer.android.com/reference/android/webkit/WebView.html), que é necessário para muitos aplicativos, incluindo o Outlook.|
   | com.google.android.tts | Conversão de texto em fala do Google |
-  | com.android.providers.settings | Configurações de sistema Android |
+  | com.android.providers.settings | Configurações de sistema do Android |
   | com.azure.authenticator | Aplicativo Microsoft Authenticator, que é necessário para autenticação bem-sucedida em muitos cenários. |
   | com.microsoft.windowsintune.companyportal | Intune Portal da empresa|
 
@@ -72,10 +72,10 @@ Há duas categorias de configurações de política: configurações de realoca�
 
   |Nome do aplicativo/serviço | Descrição | Condição de isenção|
   | ------ | ---- | --- |
-  | com.android.chrome | Navegador do Google Chrome | O Chrome é usado para alguns componentes WebView no Android 7.0 ou posterior e nunca fica oculto. Dados fluem de/para o aplicativo, no entanto, são sempre restritos.
+  | com.android.chrome | Navegador do Google Chrome | O Chrome é usado para alguns componentes do WebView no Android 7.0 ou posterior e nunca fica oculto. Dados fluem de/para o aplicativo, no entanto, são sempre restritos.
   | com.skype.raider | Skype | O aplicativo Skype é permitido apenas para determinadas ações que resultam em uma chamada telefônica. |
-  | com.android.providers.media | Provedor de conteúdo de mídia Android | O provedor de conteúdo de mídia é permitido somente para a ação de seleção de toque. |
-  | com.google.android.gms; com.google.android.gsf | Pacotes do Google Play Services | Esses pacotes são permitidos para ações Google Cloud Messaging, como notificações por push. |
+  | com.android.providers.media | Provedor de conteúdo de mídia do Android | O provedor de conteúdo de mídia é permitido somente para a ação de seleção de toque. |
+  | com.google.android.gms; com.google.android.gsf | Pacotes do Google Play Services | Esses pacotes são permitidos para ações do Google Cloud Messaging, como notificações por push. |
 
 
 
@@ -89,9 +89,5 @@ Há duas categorias de configurações de política: configurações de realoca�
 | **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: esse é o número de minutos antes que os requisitos de acesso (definidos anteriormente na política) sejam verificados novamente. Por exemplo, um administrador ativa o PIN na política, um usuário abre um aplicativo MAM e deve inserir um pin. Ao usar essa configuração, o usuário não precisa inserir um PIN em qualquer aplicativo MAM por mais **30 minutos** (valor padrão).</li><li>**Período de carência offline**: esse é o número de minutos em que os aplicativos MAM podem ser executados offline. Especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas). Após esse período expirar, o aplicativo exigirá a autenticação do usuário para o AAD para que o aplicativo possa continuar a ser executado.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo fará um apagamento seletivo. Essa limpeza seletiva é a mesma limpeza que a que pode ser iniciada pelo administrador no fluxo de trabalho de apagamento MAM. <br><br> | 90 dias |
 | **Bloquear captura de tela e Assistente do Android (Android 6.0+)** | Escolha **Sim** para bloquear capturas de tela e as funcionalidades do **Assistente do Android** do dispositivo ao usar esse aplicativo. Se você escolher **Sim**, a imagem de visualização do Gerenciador de Aplicativos também ficará desfocada ao usar esse aplicativo com uma conta corporativa ou de estudante. | Não |
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+| **Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado** | Escolha **Sim** para desabilitar o PIN do aplicativo quando um bloqueio de dispositivo for detectado em um dispositivo registrado. | Não |
 
