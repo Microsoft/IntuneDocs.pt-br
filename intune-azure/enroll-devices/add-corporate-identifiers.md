@@ -33,7 +33,7 @@ Como administrador de TI, você pode criar e importar um arquivo de valores sepa
 ## <a name="add-corporate-identifiers"></a>Adicionar identificadores corporativos
 Para criar a lista, crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione o identificador IMEI à coluna esquerda e os detalhes à coluna direita. Os detalhes limitam-se a 128 caracteres e são exclusivamente para uso administrativo. O dispositivo não exibe detalhes. O limite atual é de 500 linhas por arquivo .csv.
 
-**Carregar um arquivo .csv contendo números de série** – crie uma lista de valores separados por vírgula (.csv) de duas colunas, sem cabeçalho, e limite a lista a 5.000 dispositivos ou 5 MB por arquivo .csv.
+**Carregar um arquivo .csv contendo números de série** – crie uma lista de valores separados por vírgula (.csv) de duas colunas, sem cabeçalho, e limite a lista a 5.000 dispositivos ou 5 MB por arquivo .csv. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Para criar a lista, crie uma lista de duas colunas de valores separados por vír
 Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
