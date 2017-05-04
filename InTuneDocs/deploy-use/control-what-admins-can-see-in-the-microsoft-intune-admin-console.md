@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ Você pode filtrar a exibição do console de administração do Microsoft Intun
     -   **Acesso somente leitura**
     -   **Assistência técnica – nó Grupos**
 
-    Acesso completo e acesso somente leitura são autoexplicativos. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    Acesso completo e acesso somente leitura são autoexplicativos. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Assistência técnica - Nó dos Grupos** restringe o que o administrador pode ver e fazer ao seguinte:
 
@@ -70,9 +71,4 @@ Você pode filtrar a exibição do console de administração do Microsoft Intun
         -   Redefinir uma senha
 
 Na próxima vez em que o administrador configurado abrir o console de administração do Intune, ele receberá o nível de acesso designado.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
