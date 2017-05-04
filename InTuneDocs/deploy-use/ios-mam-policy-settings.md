@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Há duas categorias de configurações de política: configurações de realoca�
 | **Criptografar dados do aplicativo** | Para aplicativos gerenciados por política, os dados são criptografados em repouso usando o esquema de criptografia do dispositivo fornecido pelo iOS. Quando um PIN é necessário, os dados são criptografados de acordo com as configurações da política de proteção do aplicativo. <br><br> Acesse a documentação oficial da Apple [aqui](https://support.apple.com/HT202739) para ver quais módulos de criptografia do iOS têm certificação FIPS 140-2 ou cuja certificação FIPS 140-2 está pendente. <br><br> Especifique quando os dados corporativos ou de estudante nesse aplicativo são criptografados. Escolha: <ul><li>**Quando o dispositivo está bloqueado**: todos os dados de aplicativo associados a essa política são criptografados quando o dispositivo está bloqueado.</li><li>**Quando o dispositivo está bloqueado e há arquivos abertos**: todos os dados de aplicativo associados a essa política são criptografados quando o dispositivo está bloqueado, exceto pelos dados nos arquivos que estão abertos no aplicativo.</li><li>**Após a reinicialização do dispositivo**: todos os dados de aplicativo associados a essa política são criptografados quando o dispositivo é reiniciado, até que o dispositivo seja desbloqueado pela primeira vez.</li><li>**Usar configurações do dispositivo**: os dados do aplicativo são criptografados com base nas configurações padrão do dispositivo. Quando você habilita essa configuração, é obrigatório que o usuário configure e use um PIN para acessar o dispositivo.  Se não houver nenhum PIN, os aplicativos não serão abertos e o usuário deverá definir um PIN com a mensagem: “Para acessar este aplicativo, sua organização exige primeiro a habilitação de um PIN de dispositivo”. </li></ul> | Quando o dispositivo está bloqueado |
 | **Desabilitar a sincronização de contatos** | Escolha **Sim** para impedir que o aplicativo salve dados no aplicativo de Contatos nativo do dispositivo. Se você escolher **Não**, o aplicativo poderá salvar dados no aplicativo de Contatos nativo do dispositivo. <br><br>Ao realizar um apagamento seletivo para remover dados corporativos ou de estudante do aplicativo, os contatos sincronizados diretamente do aplicativo para o aplicativo de Contatos nativo são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso se aplica somente ao aplicativo Microsoft Outlook. | Não |
 | **Desabilitar a impressão** | Escolha **Sim** para impedir que o aplicativo imprima dados corporativos ou de estudante. | Não |
-
+| **Selecione em que serviços de armazenamento os dados empresariais podem ser guardados** | Os usuários são capazes de salvar os serviços selecionados (OneDrive for Busines, SharePoint e Armazenamento local). Todos os outros serviços serão bloqueados. | OneDrive for Business e SharePoint |
 
 > [!NOTE]
 > Nenhuma das configurações de relocação de dados controla o recurso “Open-in” gerenciado pela Apple em dispositivos iOS. Para usar o recurso “Open-in” gerenciado pela Apple, consulte [Gerenciar a transferência de dados entre aplicativos iOS com o Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
@@ -72,6 +72,7 @@ Há algumas isenções de aplicativos e serviços de plataforma em que a políti
 | **Impedir que aplicativos gerenciados sejam executados em dispositivos com jailbreak ou root** |  Escolha **Sim** para impedir que esse aplicativo seja executado em dispositivos com jailbreak ou root. O usuário continuará podendo usar esse aplicativo para tarefas pessoais, mas precisará usar um dispositivo diferente para acessar dados corporativos ou de estudante nesse aplicativo. | Sim |
 | **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: esse é o número de minutos antes que os requisitos de acesso (definidos anteriormente na política) sejam verificados novamente. Por exemplo, um administrador ativa o PIN na política, um usuário abre um aplicativo MAM e deve inserir um pin. Ao usar essa configuração, o usuário não precisa inserir um PIN em qualquer aplicativo MAM por mais **30 minutos** (valor padrão).</li><li>**Período de carência offline**: esse é o número de minutos em que os aplicativos MAM podem ser executados offline. Especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas). Após esse período expirar, o aplicativo exigirá a autenticação do usuário para o AAD para que o aplicativo possa continuar a ser executado.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo fará um apagamento seletivo. Essa limpeza seletiva é a mesma limpeza que a que pode ser iniciada pelo administrador no fluxo de trabalho de apagamento MAM. <br><br> | 90 dias |
+| **Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado** | Escolha **Sim** para desabilitar o PIN do aplicativo quando um bloqueio de dispositivo for detectado em um dispositivo registrado. | Não |
 
 ##  <a name="add-ins-for-outlook-app"></a>Suplementos do aplicativo do Outlook
 

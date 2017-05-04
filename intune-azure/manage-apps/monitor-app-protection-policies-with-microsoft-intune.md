@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Há três locais diferentes para monitorar o status de conformidade:
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Gerenciar aplicativos**.
-4. Na carga de trabalho **Gerenciar aplicativos**, escolha **Monitorar** > **Status do usuário da proteção de aplicativo**, para ver a exibição de resumo:
+3. Na folha **Intune**, escolha **Aplicativos móveis**.
+4. Na carga de trabalho **Aplicativos móveis**, escolha **Monitorar** > **Status do usuário da proteção de aplicativo**, para ver a exibição de resumo:
 
 ![Bloco de Resumo da folha de gerenciamento de aplicativos móveis do Intune](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado 
 
 Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios adicionais para ajudá-lo com o status de conformidade de política de MAM:
 
-![Captura de tela&4;](../media/MAM-reporting-7.png)
+![Captura de tela 4](../media/MAM-reporting-7.png)
 
 -   **App protection user report (Relatório de usuário da proteção do aplicativo):** descreve as mesmas informações que podem ser encontradas no relatório **Status do usuário** na exibição detalhada acima.
 
@@ -109,7 +110,7 @@ Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios
 
         -   Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de MAM.
 
-![Captura de tela&2;](../media/MAM-reporting-4.png)
+![Captura de tela 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupamento de tabela
 
@@ -137,9 +138,4 @@ Siga estas etapas para gerar o relatório de proteção do aplicativo:
 
 * [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-android-apps.md)
 * [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

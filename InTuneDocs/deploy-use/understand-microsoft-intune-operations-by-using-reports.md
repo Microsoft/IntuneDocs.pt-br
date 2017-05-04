@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Use as informações neste tópico para ajudá-lo a criar e gerenciar os relató
 ## <a name="using-reports"></a>Uso de relatórios
 Os relatórios do Intune fornecem informações sobre software, hardware e licenças da sua empresa. Relatórios podem ajudá-lo a confirmar as necessidades atuais e a previsão de despesas futuras. O espaço de trabalho **Relatórios** oferece as ferramentas para criar e gerenciar relatórios. 
 
-### <a name="report-types"></a>Tipos de relatório
+## <a name="report-types"></a>Tipos de relatório
 
 |Tipo de relatório|Descrição|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Os relatórios do Intune fornecem informações sobre software, hardware e licen
 |**Relatórios de Atestado de Integridade**|Mostre a integridade dos dispositivos móveis.|
 |**Relatório de Hardware Mac OS X**|Exibe detalhes de hardware para todos os dispositivos Mac OS X nos grupos selecionados. Para obter informações sobre o inventário de hardware coletado desses dispositivos, confira [Entender seus dispositivos com o inventário do Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Relatório de Software Mac OS X**|Exibe o software que está instalado em todos os dispositivos Mac OS X nos grupos que você selecionou. O relatório lista o nome do software (como uma ID de pacote), a versão curta (ou amigável) do nome, a versão e o número de dispositivos instalados com o software.|
+|**Relatórios de Proteção de Informações do Windows**|Mostra informações sobre as operações de WIP (Proteção de Informações do Windows) em dispositivos que você gerencia.|
+|**Relatórios de Atestado de Integridade**|Mostra informações relatadas pelo serviço de Atestado de integridade do Windows para dispositivos que você gerencia.|
 
-#### <a name="to-create-a-report"></a>Para criar um relatório
+## <a name="to-create-a-report"></a>Para criar um relatório
 
 1.  No console de administração do Intune, escolha **Relatórios**. Em seguida, escolha o tipo de relatório que você deseja gerar, conforme descrito na tabela anterior.
 

@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 Políticas de proteção de aplicativo podem ser aplicadas a aplicativos em execução em dispositivos que podem ou não ser gerenciados pelo Intune. Para obter uma descrição mais detalhada do funcionamento das políticas de proteção de aplicativo e os cenários com suporte nas políticas de proteção de aplicativo do Intune, consulte [O que são as políticas de proteção de aplicativo do Microsoft Intune](what-is-app-protection-policy.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicativo
-1.  Na carga de trabalho **Gerenciar aplicativos**, escolha **Gerenciar** > **Políticas de proteção de aplicativos**.
+1.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Políticas de proteção de aplicativos**.
 
 2.  Isso abre a folha **Políticas de proteção de aplicativo**, em que você criará novas políticas e editará as políticas existentes. Escolha **Adicionar uma política**.
 
