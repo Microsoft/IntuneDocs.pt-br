@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: 723830f686991fe13de13f75c6a5d1bc84e6920b
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.contentlocale: pt-br
+ms.lasthandoff: 04/26/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Ajudar os usuários com o portal de solução de problemas no Microsoft Intune
@@ -40,8 +41,9 @@ Para saber mais sobre as funções do Intune, confira [Funções do Intune (RBAC
 ## <a name="access-the-troubleshooting-portal"></a>Acessar o portal de solução de problemas
 
 A equipe de suporte técnico e os administradores do Intune podem acessar o portal de solução de problemas de duas maneiras:
-- No [Portal do Azure](https:portal.azure.com), selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**e na folha de navegação à esquerda, selecione **Solucionar problemas**. Outras cargas de trabalho ficam visíveis na folha de navegação à esquerda, mas não estão disponíveis.
-![Captura de tela da carga de trabalho de solução de problema do Intune com o link Selecionar Usuário](media/help-desk-user.png)
+- No [Portal do Azure](https://portal.azure.com), selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**e na folha de navegação à esquerda, selecione **Solucionar problemas**. Outras cargas de trabalho ficam visíveis na folha de navegação à esquerda, mas não estão disponíveis.
+
+![Captura de tela da carga de trabalho de solução de problemas do Microsoft Intune com o link Selecionar Usuário](media/help-desk-user.png)
 - Abra [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) em um navegador da Web. O portal de solução de problemas fica visível.
 
 ## <a name="use-the-troubleshooting-portal"></a>Usar o portal de solução de problemas
