@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Para garantir que o uso de dados somente de linhas de propriedade corporativas s
 
 Dependendo das suas necessidades organizacionais, você precisará criar ao menos duas categorias de dispositivos (por exemplo, Corporativo e Pessoal) e criar grupos de dispositivos dinâmicos para cada categoria. Você pode criar mais categorias para sua organização, conforme necessário.
 
-Essas categorias serão mostradas aos usuários durante o registro. Dependendo de qual categoria o usuário escolher, o dispositivo registrado será movido para o grupo de dispositivo correspondente. Para obter etapas sobre como criar categorias de dispositivos, consulte [Mapear dispositivos para grupos](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
+Essas categorias serão mostradas aos usuários durante o registro. Dependendo de qual categoria o usuário escolher, o dispositivo registrado será movido para o grupo de dispositivo correspondente. Para obter etapas sobre como criar categorias de dispositivos, consulte [Mapear dispositivos para grupos](../enroll-devices/how-to-use-device-group-mapping.md).
 
   ![Captura de tela da folha Adicionar uma política](../media/tem-dynamic-membership-rules.png)
 

@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-O Intune permite que você gerencie dispositivos macOS. Para habilitar o gerenciamento de dispositivos, os usuários devem registrar seus dispositivos acessando o [site do Portal da Empresa](http://portal.manage.microsoft.com) e seguir as instruções. Quando os dispositivos macOS estiverem sob gerenciamento, você pode [criar configurações personalizadas para dispositivos macOS](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Mais recursos serão disponibilizados em breve.
+O Intune permite que você gerencie dispositivos macOS. Para habilitar o gerenciamento de dispositivos, os usuários devem registrar seus dispositivos acessando o [site do Portal da Empresa](http://portal.manage.microsoft.com) e seguir as instruções. Quando os dispositivos macOS estiverem sob gerenciamento, você pode [criar configurações personalizadas para dispositivos macOS](../configure-devices/custom-for-macos.md). Mais recursos serão disponibilizados em breve.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -36,7 +37,7 @@ Atenda os seguintes pré-requisitos antes de configurar o registro do dispositiv
 - [Configurar domínios](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Definir a Autoridade MDM](set-mdm-authority.md)
 - [Criar grupos](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configurar o Portal da Empresa](/intune-azure/manage-apps/company-portal-app.md)
+- [Configurar o Portal da Empresa](../manage-apps/company-portal-app.md)
 - Atribuir licenças de usuário no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtenha um certificado push de MDM da Apple](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ Atenda os seguintes pré-requisitos antes de configurar o registro do dispositiv
 
 Por padrão, o Intune já está configurado para permitir o registro de dispositivos macOS.
 
-Para bloquear o registro de dispositivos macOS, consulte [Definir restrições de tipo de dispositivo](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+Para bloquear o registro de dispositivos macOS, consulte [Definir restrições de tipo de dispositivo](set-enrollment-restrictions.md#set-device-type-restrictions).
 
-Para definir o número máximo de dispositivos que um usuário pode registrar, consulte [Definir restrições de limite de dispositivos](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
+Para definir o número máximo de dispositivos que um usuário pode registrar, consulte [Definir restrições de limite de dispositivos](set-enrollment-restrictions.md#set-device-limit-restrictions).
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Informe aos usuários como registrar seus dispositivos para acessar os recursos da empresa
 
