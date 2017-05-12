@@ -15,10 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: c3e515011be14cea17f0fc1be5851f7806569962
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 70f0b575c92fb000f267e8b2585aff4482c5518c
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -67,5 +68,5 @@ ms.lasthandoff: 04/19/2017
 1. Na folha **Adicionar aplicativo**, verifique se as informações configuradas estão corretas.
 2. Escolha **Adicionar** para carregar o aplicativo no Intune.
 
-O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
+O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](deploy-apps.md).
 

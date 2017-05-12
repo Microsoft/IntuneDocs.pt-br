@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 
     ![Configuração do Windows para dados de diagnóstico e uso](./media/telemetry-basic.png)
 
-    Você pode definir essa configuração manualmente ou pode usar um perfil de restrição de dispositivo do Intune para o Windows 10 e posterior. Para tanto, defina a configuração **Geral** > **Envio dos dados de diagnóstico** para pelo menos o **Básico**. Para obter mais informações sobre os perfis do dispositivo, consulte [Como definir as configurações de restrição de dispositivo](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+    Você pode definir essa configuração manualmente ou pode usar um perfil de restrição de dispositivo do Intune para o Windows 10 e posterior. Para tanto, defina a configuração **Geral** > **Envio dos dados de diagnóstico** para pelo menos o **Básico**. Para obter mais informações sobre os perfis do dispositivo, consulte [Como definir as configurações de restrição de dispositivo](how-to-configure-device-restrictions.md).
 
 - No console de administração clássico do Intune, há quatro configurações que controlam o comportamento das atualizações do software. Essas configurações fazem parte da política de configuração geral para os dispositivos do Windows 10 desktop e Mobile:
     - **Permitir atualizações automáticas**

@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Use as seguintes informações para decidir qual método usar para registro de d
 
 ## <a name="user-owned-ios-devices-byod"></a>BYOD (Dispositivos iOS de propriedade do usuário)
 
-Se quiserem que os usuários registrem dispositivos pessoais BYOD (traga seu próprio dispositivo), o único método de registro disponível será os usuários baixarem o aplicativo Portal da Empresa para iOS da App Store e seguir as instruções de registro no aplicativo. Depois de registrado, os usuários podem se conectar à rede da empresa, ingressar no domínio ou no Azure Active Directory e obter acesso aos recursos corporativos. Você pode bloquear o registro de dispositivos iOS de propriedade pessoal. Consulte [Definir restrições de tipo de dispositivo](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) para obter instruções.
+Se quiserem que os usuários registrem dispositivos pessoais BYOD (traga seu próprio dispositivo), o único método de registro disponível será os usuários baixarem o aplicativo Portal da Empresa para iOS da App Store e seguir as instruções de registro no aplicativo. Depois de registrado, os usuários podem se conectar à rede da empresa, ingressar no domínio ou no Azure Active Directory e obter acesso aos recursos corporativos. Você pode bloquear o registro de dispositivos iOS de propriedade pessoal. Consulte [Definir restrições de tipo de dispositivo](set-enrollment-restrictions.md#set-device-type-restrictions) para obter instruções.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

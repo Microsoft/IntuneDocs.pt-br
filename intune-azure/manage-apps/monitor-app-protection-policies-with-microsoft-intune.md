@@ -15,10 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 382d549e485b8ccad27ccacf7d9359a92c75fe4e
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/24/2017
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**Se você não estiver na versão prévia do Intune no Azure**, este tópico explicará [como criar políticas de proteção de aplicativo](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) no console do Intune clássico.
+**Se você não estiver na versão prévia do Intune no Azure**, este tópico explicará [como criar políticas de proteção de aplicativo](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) no console do Intune clássico.
 
 
 É possível monitorar o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários na folha de proteção do aplicativo do Intune no [Portal do Azure](https://portal.azure.com). Você poderá encontrar informações sobre os usuários afetados pelas políticas de MAM, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.
