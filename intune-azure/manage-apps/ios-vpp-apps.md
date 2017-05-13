@@ -1,12 +1,12 @@
 ---
-title: Gerenciar aplicativos adquiridos por volume no iOS
+title: Gerenciar aplicativos adquiridos por volume para iOS | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: aprenda como sincronizar os aplicativos adquiridos por volume da loja do iOS para o Intune, bem como gerenciar e controlar seu uso."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
 ms.contentlocale: pt-br
-ms.lasthandoff: 04/24/2017
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -87,5 +87,5 @@ Para recuperar uma licença, você deve alterar a ação de atribuição para **
 
 Quando um usuário com um dispositivo qualificado tenta instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. Eles devem fazer isso antes que a instalação do aplicativo prossiga.
 
-Quando você implanta um aplicativo VPP como Disponível, o conteúdo do aplicativo e a licença são implantados diretamente da loja de aplicativos.
+Quando você atribui um aplicativo VPP como Disponível, o respectivo conteúdo e a licença são atribuídos diretamente da App Store.
 
