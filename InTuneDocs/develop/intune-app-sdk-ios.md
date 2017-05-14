@@ -14,9 +14,10 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
 ms.openlocfilehash: 1d2cb0d4b9442262c562e559a675f5a4a28ee572
+ms.contentlocale: pt-br
 ms.lasthandoff: 05/03/2017
 
 
