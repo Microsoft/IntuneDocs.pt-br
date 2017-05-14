@@ -15,9 +15,10 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 647415914fb0f44807eff7baf7a56ea3a382f027
+ms.contentlocale: pt-br
 ms.lasthandoff: 02/18/2017
 
 
@@ -169,5 +170,5 @@ Na captura de tela abaixo, a configuração **Connectivity/AllowVPNOverCellular*
 |**Permitir Cookies**<br>./Vendor/MSFT/Policy/Config/Browser/AllowCookies|Área de trabalho e dispositivos móveis<br />**Tipo de dados:** inteiro<br />**Valores:**<br>**0** – permitir cookies de todos os sites (padrão)<br>**1** – Bloquear somente os cookies de terceiros<br>**2** – Bloquear todos os cookies|
 |**Permitir Salvar Senha**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Área de trabalho e dispositivos móveis<br />**Tipo de dados:** inteiro<br />**Valores:**<br>**0** – O gerenciador de senha é desabilitado; <br>**1** – O Gerenciador de senha é habilitado (padrão)|
 |**Permitir Preenchimento Automático**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Somente Área de trabalho<br />**Tipo de dados:** inteiro<br />**Valores:** **0** – desabilitado (padrão), **1** – habilitado|
-|**Configurar Lista de Sites Empresariais**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Somente Área de trabalho<br />**Tipo de dados:** cadeia de caracteres<br />**Valores:<br>**0** – não configurado<br>**1** – usar lista de sites de modo empresarial do IE se configurado (padrão)<br>**2** – especificar o local da lista de sites corporativos|
+|**Configurar Lista de Sites Empresariais**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Somente Área de trabalho<br />**Tipo de dados:** cadeia de caracteres<br />**Valores:<br>**0 **– não configurado<br>**1** – usar lista de sites de modo empresarial do IE se configurado (padrão)<br>**2** – especificar o local da lista de sites corporativos|
 
