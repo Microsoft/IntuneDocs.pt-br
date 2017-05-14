@@ -5,7 +5,7 @@ keywords: "o que é o Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +33,7 @@ O Intune é um serviço de EMM (gerenciamento de mobilidade empresarial) baseado
 * proteger informações da empresa, ajudando a controlar a forma como sua força de trabalho as acessa e compartilha.
 * garantir que dispositivos e aplicativos sejam compatíveis com os requisitos de segurança da empresa.
 
-O Intune se integra estreitamente ao Azure AD (Azure Active Directory) para o controle de acesso e identidade e à Proteção de Informações do Azure para proteção de dados. Ele é o *braço de gerenciamento* do Microsoft EMS (Enterprise Mobility + Security), enquanto o Office 365 é o *braço de produtividade* da solução de mobilidade da Microsoft.  
+O Intune se integra estreitamente ao Azure AD (Azure Active Directory) para o controle de acesso e identidade e à Proteção de Informações do Azure para proteção de dados.
 
 Juntos, o Office 365 e o EMS possibilitam que sua força de trabalho seja produtiva usando todos os seus dispositivos, ao mesmo tempo em que mantêm protegidas as informações da organização. O Office 365 com o EMS é um pacote integrado completo para mobilidade corporativa, que inclui produtividade, identidade, controle de acesso, gerenciamento e proteção de dados. Ele fornece a uma maneira eficiente para implantar e operar uma solução de mobilidade em sua organização.
 
