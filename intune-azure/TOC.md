@@ -86,6 +86,7 @@
 #### [Aplicativos LOB para Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [Aplicativos da Windows Store](manage-apps/windows-store-app.md)
 #### [Aplicativos LOB para Windows](manage-apps/windows-line-of-business-app.md)
+#### [Aplicativos Android for Work](/manage-apps/android-for-work-apps.md)
 ### [Atribuir aplicativos](manage-apps/deploy-apps.md)
 ### [Monitorar aplicativos](manage-apps/monitor-apps.md)
 ### [Usar perfis de configuração de aplicativo](manage-apps/app-configuration-policies.md)
@@ -100,8 +101,8 @@
 ### [Criar e atribuir as políticas de proteção do aplicativo](manage-apps/app-protection-policies.md)
 ### [Preparar-se para as políticas de proteção do aplicativo WIP](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [Criar e atribuir as políticas de proteção do aplicativo WIP](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Configurações do Android](manage-apps/android-app-protection-policy-settings.md)
-#### [Configurações do iOS](manage-apps/ios-app-protection-policy-settings.md)
+### [Configurações do Android](manage-apps/android-app-protection-policy-settings.md)
+### [Configurações do iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validar políticas de proteção do aplicativo](manage-apps/validate-app-protection-policies.md)
 ### [Monitorar o status de usuário de proteção do aplicativo](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [Gerenciar a transferência de dados entre aplicativos iOS](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -190,7 +191,7 @@
 ### [Criar política de conformidade do Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Criar política de conformidade iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Criar política de conformidade Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Criar Ações para não conformidade](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Monitorar a conformidade do dispositivo](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
