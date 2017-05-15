@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
 ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.contentlocale: pt-br
 ms.lasthandoff: 03/13/2017
 
 
@@ -126,7 +127,7 @@ Executar a limpeza seletiva em um dispositivo Android para Trabalho remove todos
 
 2.  Escolha o nome do dispositivo que você deseja apagar.
 
-3.  Na folha que mostra o nome do dispositivo, escolha **Remover dados da emp... ** (significa Remover dados da empresa) e escolha **Sim** para confirmar o apagamento.
+3.  Na folha que mostra o nome do dispositivo, escolha **Remover dados da emp...** (significa Remover dados da empresa) e escolha **Sim** para confirmar o apagamento.
 
 Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
 
