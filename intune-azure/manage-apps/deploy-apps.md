@@ -1,12 +1,12 @@
 ---
-title: Como atribuir aplicativos aos grupos
+title: Como atribuir aplicativos a grupos | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: depois de adicionar um aplicativo ao Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
 |Atribuir aplicativos encapsulados ou aqueles que incorporam o SDK do Intune (para políticas de proteção de aplicativo)|Sim|Sim|
 |Atribuir aplicativos conforme a disponibilidade|Sim|Sim|
 |Atribuir aplicativos conforme necessário|Sim|Não|
-|Desinstalar aplicativos|Sim|Sim|
+|Desinstalar aplicativos|Sim|Não|
 |Os usuários finais instalam aplicativos disponíveis do aplicativo de Portal da Empresa|Sim|Não|
 |Os usuários finais instalam aplicativos disponíveis do Portal da Empresa baseado na Web|Sim|Sim|
 
@@ -53,21 +54,21 @@ O mais importante a ser observado é que o conceito de grupos filho não existe 
 ||||||
 |-|-|-|-|-|
 |**Intune clássico (antes da migração de locatário)**|-|**Intune Azure (após locatário migração ser concluída)**|-|**Mais informações**|
-|**Tentativa de implantação de grupo pai**|**Tentativa de implantação de grupo filho**|**Tentativa de atribuição resultante para membros comuns do grupo pai e filho anterior**|**Ação de tentativa de atribuição resultante para membros do grupo pai**|-|    
+|**Intenção de atribuição de grupo pai**|**Intenção de atribuição de grupo filho**|**Tentativa de atribuição resultante para membros comuns do grupo pai e filho anterior**|**Ação de tentativa de atribuição resultante para membros do grupo pai**|-|    
 |Disponível|Necessária|Necessária e Disponível|Disponível|Necessária e Disponível significa que os aplicativos atribuídos conforme necessário também podem ser vistos no aplicativo Portal da Empresa.
-|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução alternativa: remova a tentativa de implantação 'Não Aplicável' do grupo pai do Intune.
+|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução alternativa: remova a tentativa de atribuição 'Não Aplicável' do grupo pai do Intune.
 |Necessária|Disponível|Necessária e Disponível|Necessária|-|
 |Necessária e Disponível<sup>1</sup>|Disponível|Necessária e Disponível|Necessária e Disponível|-|    
 |Necessária|Não Aplicável|Necessária|Necessária|-|    
 |Necessária e Disponível|Não Aplicável|Necessária e Disponível|Necessária e Disponível|-|    
 |Necessária|Desinstalar|Necessária|Necessária|-|    
 |Necessária e Disponível|Desinstalar|Necessária e Disponível|Necessária e Disponível|-|
-<sup>1</sup> Apenas para aplicativos da iOS Store gerenciados, quando você os adiciona ao Intune e os implanta como Necessários, eles são criados automaticamente com as tentativas Necessária e Disponível.
+<sup>1</sup> Apenas para aplicativos da iOS Store gerenciados, quando você os adiciona ao Intune e os atribui como Necessários, eles são criados automaticamente com as tentativas Necessária e Disponível.
 
-Você pode executar as seguintes ações para evitar conflitos de implantação:
+Você pode executar as seguintes ações para evitar conflitos de atribuição:
 
-1.    Se você tiver implantado aplicativos para grupos pai e filho do Intune relacionados, considere remover essas implantações antes de começar a migração do locatário.
-2.    Remover grupos filho de grupos pai e criar um novo grupo que contém os membros do grupo filho antigo. Você pode, então, criar uma nova implantação de aplicativo para esse grupo.
+1.    Se você tiver atribuído aplicativos para grupos pai e filho do Intune relacionados, considere remover essas atribuições antes de começar a migração do locatário.
+2.    Remover grupos filho de grupos pai e criar um novo grupo que contém os membros do grupo filho antigo. Você pode, então, criar uma nova atribuição de aplicativo para esse grupo.
 Observações: se o grupo pai anterior era "Todos os Usuários", você precisará criar um novo grupo dinâmico que não inclui membros do grupo filho.
 É necessário fazer alterações em grupos no [Portal do Azure](https://portal.azure.com/) para grupos de usuários e de dispositivos. O [Portal Clássico do Azure](https://manage.windowsazure.com/) permitirá que você faça alterações apenas em grupos de usuários.
 

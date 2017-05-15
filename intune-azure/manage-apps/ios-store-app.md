@@ -1,12 +1,12 @@
 ---
-title: Como adicionar aplicativos da loja do iOS ao Intune
+title: Como adicionar aplicativos da loja do iOS ao Intune | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: "Versão prévia do Intune Azure: aprenda como adicionar aplicativos da loja do iOS ao Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,21 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 21e6089bf8a88f107518c7bccfa7bf79b3021a23
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 011f33d1d8569a079f73baaca6ba2a665131691d
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 ---
 
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Como adicionar aplicativos da iOS Store ao Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## <a name="before-you-start"></a>Antes de começar
+
+Você só poderá atribuir aplicativos usando este método se eles forem gratuitos na App Store. Se você quiser atribuir aplicativos pagos usando o Intune, considere o uso do [programa de compra por volume do iOS](ios-vpp-apps.md).
 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Etapa 1 – Pesquise o aplicativo na loja
@@ -58,4 +63,5 @@ ms.lasthandoff: 02/18/2017
 - **Carregar Ícone** – Carregue um ícone que será associado ao aplicativo. Esse é o ícone que será exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
 3. Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**.
 
-O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
+O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](deploy-apps.md).
+
