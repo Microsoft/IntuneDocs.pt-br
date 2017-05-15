@@ -15,23 +15,24 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Criar configurações de perfil personalizadas do Intune para dispositivos com Android for Work
 
-Use a política de configuração personalizada do Android for Work do Intune para implantar configurações OMA-URI, que podem ser usadas para controlar funcionalidades em dispositivos Android for Work. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
+Use a política de configuração personalizada do Android for Work do Intune para atribuir configurações OMA-URI, que podem ser usadas para controlar funcionalidades em dispositivos Android for Work. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
-Essa funcionalidade destina-se a permitir que você implante configurações do Android que não são configuráveis com as políticas do Intune. No momento, o Intune dá suporte a um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para descobrir quais políticas podem ser configuradas.
+Essa funcionalidade destina-se a permitir que você atribua configurações do Android que não são configuráveis com as políticas do Intune. No momento, o Intune dá suporte a um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para descobrir quais políticas podem ser configuradas.
 
 ## <a name="create-a-custom-profile"></a>Criar um perfil personalizado
 
-1. Use as instruções em [Como definir configurações personalizadas do dispositivo](/intune-azure/configure-devices/how-to-configure-custom-settings) para começar.
+1. Use as instruções em [Como definir configurações personalizadas do dispositivo](how-to-configure-custom-settings.md) para começar.
 2. Na folha **Configurações personalizadas do OMA-URI**, escolha **Adicionar** para adicionar uma nova configuração.
 3. Na folha **Adicionar Linha**, configure o seguinte:
     - **Nome** - insira um nome exclusivo para as configurações personalizadas do Android for Work para ajudar a identificá-las no portal do Intune.
