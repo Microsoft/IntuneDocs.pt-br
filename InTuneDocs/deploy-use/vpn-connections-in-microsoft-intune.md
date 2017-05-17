@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -163,7 +164,7 @@ Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 1. Na página de configuração da política, localize **Regras sob demanda para esta conexão VPN**. As colunas recebem o nome de **Correspondência**, que é a condição que as regras devem conferir, e **Ação**, a ação que a política disparará quando houver correspondência da condição.
 2. Escolha **Adicionar** para criar uma regra. Há dois tipos de correspondências que podem ser definidas na regra. Você só pode configurar um desses tipos por regra.
   - **SSIDs**, que se refere a redes sem fio.
-  - **Domínios de pesquisa de DNS**, que são...  Você pode usar nomes de domínio totalmente qualificados, como *team.corp.contoso.com*, ou usar domínios como *contoso.com*, que é o equivalente a usar * .contoso.com. **
+  - **Domínios de pesquisa DNS**. Você pode usar nomes de domínio totalmente qualificados, como *team.corp.contoso.com*, ou usar domínios como *contoso.com*, que é o equivalente a usar * *.contoso.com*.
 3. Opcional: forneça uma investigação de cadeia de caracteres de URL, que é uma URL usada pela regra como um teste. Se o dispositivo no qual esse perfil está instalado for capaz de acessar essa URL sem redirecionamento, a VPN será estabelecida e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres de URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de se conectar a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
 4. Escolha uma destas ações:
   - **Conectar**
