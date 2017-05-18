@@ -14,9 +14,10 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
 ms.openlocfilehash: b2fc3a3dc47466313a54d2f6aef6b67dff8d7343
+ms.contentlocale: pt-br
 ms.lasthandoff: 03/29/2017
 
 
