@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 531b09bb-ddfd-498f-8ee3-6675d2466208
 ms.reviewer: chrisgre
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
 ms.openlocfilehash: 992273f88e4bbe234f11f936d6416dbaf0d394e9
+ms.contentlocale: pt-br
 ms.lasthandoff: 04/19/2017
 
 
