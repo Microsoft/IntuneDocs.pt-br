@@ -13,9 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: a967758387e9904eb9ce794b3783e777322c83a7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 7944b6e16e72b781bb2f9101623deb1ce484fa46
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -70,9 +72,4 @@ O recurso de várias identidades ajuda a resolver o problema de proteção de da
 Muitos usuários com dispositivos pessoais desejam acessar dados corporativos sem registrar seus dispositivos pessoais em um provedor de MDM (gerenciamento de dispositivo móvel). Como o registro de MDM exige o controle global do dispositivo, os usuários costumam hesitar em fornecer o controle de seus dispositivos pessoais à empresa.
 
 A proteção do aplicativo sem registro de dispositivo permite que o serviço Microsoft Intune implante a política de proteção do aplicativo em um aplicativo diretamente, sem depender de um canal de gerenciamento de dispositivo para implantá-la.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

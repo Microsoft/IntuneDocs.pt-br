@@ -14,9 +14,11 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ee0d10f9b86b1122d0f16568b71b087c341e88df
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -47,9 +49,4 @@ Na lista de aplicativos, selecione qualquer aplicativo e escolha **Exibir Propri
 Na página **Propriedades de Software** do aplicativo, clique em uma dessas guias: **Geral** – mostra informações gerais sobre o aplicativo e seu status de instalação, **Dispositivos** – mostra os dispositivos que instalaram com êxito uma implantação direcionada do aplicativo e **Usuários** – mostra os usuários cujos dispositivos instalaram com êxito uma implantação direcionada do aplicativo.
 
 Assim como antes, você pode usar a lista suspensa **Filtros** para configurar os valores mostrados em cada uma das guias.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

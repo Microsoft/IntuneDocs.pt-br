@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: e83299392fc516ed2b11248f28341403419d6758
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -76,7 +77,7 @@ Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. P
 
     ![Escolha o nome da sua conta ao lado da pasta ou do logotipo da Microsoft](./media/win10pc-rs1-sync-button.png)
 
-4. Escolha o botão **Sincronizar**. Se dispositivo será sincronizado com o Intune.
+4. Escolha o botão **Sincronizar**. O dispositivo será sincronizado com o Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Etapas a serem seguidas se você vir Acesso corporativo
 
@@ -94,8 +95,8 @@ Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. P
 
    O botão fica esmaecido até que a sincronização seja concluída.
 
-   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
-   Para sincronizar manualmente seu dispositivo Windows 10 Mobile e acelerar uma instalação de aplicativo que está lenta:
+### <a name="windows-10-mobile"></a>Windows 10 Mobile
+Para sincronizar manualmente seu dispositivo Windows 10 Mobile e acelerar uma instalação de aplicativo que está lenta:
 
    1. Vá para **Todos os aplicativos** > **Configurações** > **Contas**.
 

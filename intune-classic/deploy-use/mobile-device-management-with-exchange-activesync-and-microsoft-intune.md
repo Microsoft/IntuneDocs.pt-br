@@ -14,9 +14,11 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: b9e6d1def269bc80d54f259bc8b7c12dbb520e06
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -48,9 +50,4 @@ O console do Intune pode ser usado para gerenciar [configurações de política 
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>Apagar os dados da empresa de dispositivos móveis
 Por fim, você pode [apagar os dados da empresa dos dispositivos móveis gerenciados EAS](wipe-for-exchange-managed-mobile-devices.md) quando eles não estão mais em uso ou se os dispositivos forem perdidos ou roubados.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

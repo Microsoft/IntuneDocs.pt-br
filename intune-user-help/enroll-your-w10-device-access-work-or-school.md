@@ -1,11 +1,11 @@
 ---
 title: Registrar seu dispositivo Windows 10 no Intune | Microsoft Docs
-description: Registrar um dispositivo Windows 10 1607 no Intune
+description: Registrar um dispositivo Windows 10 1607 ou superior no Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrar seu dispositivo Windows 10 no Intune
 
+> [!NOTE]
+> O Windows 10 opera em todos os tipos de dispositivos. Esteja você usando uma área de trabalho, um telefone ou tablet, as etapas a seguir serão as mesmas – mesmo se elas parecerem um pouco diferentes das imagens nesta página.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Abra o aplicativo **Configurações** do Windows acessando o **menu Iniciar** e selecionando o botão **Configurações**. Também é possível pesquisar “configurações” na barra de pesquisa.
+1. Vá até **Iniciar**.
 
-2. Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.
+  - Se você estiver usando um dispositivo **Windows 10 Desktop**, acesse o **Menu Iniciar**.
+  - Se você estiver usando um dispositivo **Windows 10 Mobile**, acesse a **Tela inicial** e, em seguida, passe para a lista **Todos os aplicativos**.
+
+2.  Abra o aplicativo **Configurações** do Windows, pesquisando por "configurações" na barra de pesquisa.
+
+3. Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.
 
     ![Selecione Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

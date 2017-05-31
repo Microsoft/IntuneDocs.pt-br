@@ -14,10 +14,11 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
-ms.lasthandoff: 01/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: fbb2e7ced783160fb6034aecc893d0c5dde639d7
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -66,7 +67,7 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 - **Exigir uma senha quando o dispositivo volta do estado ocioso**: use essa configuração em conjunto com **Minutos de inatividade antes que a senha seja exigida**. O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
 ### <a name="email-profile"></a>Perfil de email
-- **A conta de email deve ser gerenciada pelo Intune**: quando essa opção é definida como **Sim**, o dispositivo deve usar o perfil de email implantado no dispositivo. O dispositivo é considerado incompatível nas seguintes situações:
+- **A conta de email deve ser gerenciada pelo Intune** : quando essa opção é definida como **Sim**, o dispositivo deve usar o perfil de email implantado no dispositivo. O dispositivo é considerado incompatível nas seguintes situações:
   - O perfil de email é implantado em um grupo de usuários diferente do grupo de usuários que é destino da política de conformidade.
   - O usuário já configurou uma conta de email no dispositivo que corresponde ao perfil de email do Intune implantado no dispositivo. Intune não pode substituir o perfil de usuário provisionado e, portanto, não é capaz de gerenciá-lo. Para garantir a conformidade, o usuário deve remover as configurações de email existentes. Depois, o Intune pode instalar o perfil de email gerenciado.
 

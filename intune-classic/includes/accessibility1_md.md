@@ -1,5 +1,1 @@
 A Microsoft está comprometida em facilitar o uso de seus produtos e serviços. As seções a seguir fornecem informações sobre os recursos, produtos e serviços que tornam o Microsoft® Windows® mais acessível a pessoas com deficiências:
-
-<!--HONumber=Oct16_HO1-->
-
-
