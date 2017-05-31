@@ -80,8 +80,7 @@ Se o [ProGuard](http://proguard.sourceforge.net/) (ou qualquer outro mecanismo d
 As Bibliotecas de autenticação do Azure Active Directory (ADAL) podem ter suas próprias restrições de ProGuard. Se seu aplicativo se integrar com a ADAL, você deverá seguir a documentação do ADAL sobre estas restrições.
 
 ### <a name="entry-points"></a>Pontos de entrada
-=======
-A Biblioteca de Autenticação do Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige essas permissões para realizar a autenticação agenciada. Se essas permissões não forem concedidas ao aplicativo ou revogadas pelo usuário, os fluxos de autenticação que exigem o agente (o aplicativo de Portal da Empresa) serão desabilitados.
+======= A Biblioteca de Autenticação do Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige essas permissões para realizar a autenticação agenciada. Se essas permissões não forem concedidas ao aplicativo ou revogadas pelo usuário, os fluxos de autenticação que exigem o agente (o aplicativo de Portal da Empresa) serão desabilitados.
 
 O SDK de Aplicativo do Intune requer alterações no código-fonte do aplicativo para habilitar as políticas de proteção de aplicativo do Intune. Isso é feito por meio da substituição das classes base do Android por classes base do Intune equivalentes, cujos nomes têm o prefixo **MAM**. As classes do SDK estão entre a classe base do Android e a versão do próprio aplicativo derivada dessa classe. Usando uma atividade como exemplo, você acabará com uma hierarquia de herança que se parece com: `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
