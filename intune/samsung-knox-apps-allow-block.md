@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard no Microsoft Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] Use os procedimentos neste tópico para criar uma política personalizada do Microsoft Intune que cria um dos seguintes:
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]Use os procedimentos neste tópico para criar uma política personalizada do Microsoft Intune que cria um dos seguintes:
 
 - Uma lista de aplicativos cuja execução no dispositivo é bloqueada. Aplicativos nesta lista serão impedidos de serem executados, mesmo se já tiverem sido instalados quando a política foi aplicada.
 - Uma lista de aplicativos que os usuários do dispositivo podem instalar da loja Google Play. Apenas os aplicativos listados podem ser instalados. Nenhum outro aplicativo pode ser instalado da loja.

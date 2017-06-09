@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
 ##  <a name="accessing-apps"></a>Acessando aplicativos
 
 O aplicativo Portal da Empresa é necessário para todos os aplicativos associados a políticas de proteção de aplicativo em dispositivos Android.
