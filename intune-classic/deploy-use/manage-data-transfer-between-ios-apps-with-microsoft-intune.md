@@ -1,5 +1,5 @@
 ---
-title: "Gerenciar a transferência de dados entre aplicativos iOS | Microsoft Docs"
+title: "Gerenciar a transferência de dados entre aplicativos do iOS"
 description: "Use este tópico para entender como você pode usar o recurso Open in do iOS e as políticas de gerenciamento de aplicativo móvel para gerenciar transferências de dados entre aplicativos."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 05975303bd45764d56f00986aea5aa30399893f9
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

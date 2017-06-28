@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
+ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
+ms.contentlocale: pt-br
+ms.lasthandoff: 06/12/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrar seu dispositivo Windows 10 no Intune
 
-1.  Abra o aplicativo **Configurações** do Windows acessando o **menu Iniciar** e selecionando o botão **Configurações**. Também é possível pesquisar “configurações” na barra de pesquisa.
+  > [!NOTE]
+  > O Windows 10 opera em todos os tipos de dispositivos. Esteja você usando uma área de trabalho, um telefone ou tablet, as etapas a seguir serão as mesmas – mesmo se elas parecerem um pouco diferentes das imagens nesta página.
 
-2. Selecione **Contas**.
+1.  Vá até **Iniciar**.
+
+  - Se você estiver usando um dispositivo **Windows 10 Desktop**, acesse o **Menu Iniciar**.
+  - Se você estiver usando um dispositivo **Windows 10 Mobile**, acesse a **Tela inicial** e, em seguida, passe para a lista **Todos os aplicativos**.
+
+2. Abra o aplicativo **Configurações** do Windows, pesquisando por "configurações" na barra de pesquisa.
+
+3. Selecione **Contas**.
 
     ![Vá para Configurações e Contas](./media/W10-enroll-1-settings-accounts.png)
 
-3. Selecione **Sua conta**.
+4. Selecione **Sua conta**.
 
     ![Selecionar sua conta](./media/W10-enroll-2-accounts-your-account.png)
 
-4. Selecione **Adicionar uma conta corporativa ou de estudante**.
+5. Selecione **Adicionar uma conta corporativa ou de estudante**.
 
     ![Selecione adicionar uma conta corporativa ou de estudante](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. Entre com as suas credenciais corporativas ou de estudante.
+6. Entre com as suas credenciais corporativas ou de estudante.
 
     ![Entrar](./media/W10-enroll-4-sign-in.png)
 

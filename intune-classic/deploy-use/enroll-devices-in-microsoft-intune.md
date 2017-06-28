@@ -1,5 +1,5 @@
 ---
-title: Registrar dispositivos | Microsoft Docs
+title: Registrar dispositivos
 description: "O MDM (Gerenciamento de Dispositivo Móvel) usa o registro para trazer dispositivos para o gerenciamento e permitir acesso a recursos."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e724e648dc8e768f11e51103a050665a60ffcb1a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -43,40 +43,40 @@ A tabela a seguir mostra os métodos de registro do Intune e os requisitos e rec
 
 **Métodos de registro do iOS**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes** |
+| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Não |Não |Não    | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    Sim |    Opcional |    Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    Sim |    Opcional |    Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**|    Não |    Não    | Não|[Mais informações](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Não |Não |Não  | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| Não |    Não  | Não|[Mais informações](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Métodos de registro do Windows**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
+| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do Android**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
+| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do Android para Trabalho**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
+| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de registro do macOS**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
+| **Método** |  **Apagamento necessário?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
 
 
 Para ver uma série de perguntas que o ajudarão a encontrar o método certo, consulte [Escolher como registrar dispositivos](/intune-classic/get-started/choose-how-to-enroll-devices1).
@@ -94,15 +94,15 @@ O Gerenciador de registro do dispositivo é um conta especial do Intune usada pa
 
 ### <a name="dep"></a>DEP
 O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
-  -    Registro bloqueado
-  -    Modo de quiosque e outras restrições e configurações avançadas
+  - Registro bloqueado
+  - Modo de quiosque e outras restrições e configurações avançadas
 
 Saiba mais sobre o [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI usam o Apple Configurator, por USB, para preparar manualmente todos os dispositivos de propriedade corporativa para o registro usando o Assistente de Configuração. O administrador de TI cria um perfil de registro e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, eles devem executar o Assistente de Instalação para registrá-los. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
-  -    Registro bloqueado
-  -    Modo de quiosque e outras restrições e configurações avançadas
+  - Registro bloqueado
+  - Modo de quiosque e outras restrições e configurações avançadas
 
 Saiba mais sobre [Assistente para configuração de registro com Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
@@ -131,5 +131,5 @@ O Intune pode gerenciar as seguintes plataformas de dispositivo:
 ## <a name="next-steps"></a>Próximas etapas
 - [Pré-requisitos para registro de dispositivo](prerequisites-for-enrollment.md)
 - [Gerenciar dispositivos corporativos](manage-corporate-owned-devices.md)
-- [Dispositivos móveis e computadores com suporte](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
+- [Dispositivos móveis e computadores com suporte](/intune/supported-devices-browsers#intune-supported-devices)
 

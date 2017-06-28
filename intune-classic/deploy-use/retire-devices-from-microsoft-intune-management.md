@@ -1,5 +1,5 @@
 ---
-title: Desativar dispositivos | Microsoft Docs
+title: Desativar dispositivos
 description: "O Intune dá suporte ao apagamento seletivo e ao apagamento completo para remover o dispositivo do gerenciamento do Intune removendo suas políticas e o portal da empresa."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Os dispositivos nunca serão removidos do Intune sem a intervenção do usuário
 
 Você pode ter que desativar um dispositivo por diversos motivos:
 
--    O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
--    O usuário parte abruptamente (é demitido, pede demissão etc.).
--    Perda de dispositivo
--    Realocação de um dispositivo (mudança para outro usuário, reutilização para uma finalidade diferente etc.)
+-   O usuário deixa uma empresa de maneira planejada (partida "gerenciada")
+-   O usuário parte abruptamente (é demitido, pede demissão etc.).
+-   Perda de dispositivo
+-   Realocação de um dispositivo (mudança para outro usuário, reutilização para uma finalidade diferente etc.)
 
 Você pode executar um apagamento seletivo ou completo em um dispositivo gerenciado como um dispositivo móvel ou bloquear um dispositivo e redefinir a senha. Apagando o dispositivo, você libera a assinatura do usuário para adicionar um dispositivo diferente. Você também pode desativar computadores gerenciados com o software cliente do Intune.
 

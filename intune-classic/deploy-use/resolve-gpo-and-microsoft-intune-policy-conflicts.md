@@ -1,5 +1,5 @@
 ---
-title: "Resolver conflitos de política de GPO e do Intune | Microsoft Docs"
+title: "Resolver conflitos de política do Intune e GPO"
 description: "Saiba como resolver conflitos entre a Política de Grupo e as políticas de configuração do Intune."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflitos de política do Microsoft Intune e GPO (Objetos de Política de Grupo)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Intune usa políticas que ajudam a gerenciar as configurações em computadores Windows. Por exemplo, é possível usar uma política para controlar as configurações do Firewall do Windows nos computadores. Várias configurações do Intune são semelhantes às configurações que podem ser feitas com a Política de Grupo do Windows. No entanto, é possível que, às vezes, os dois métodos entrem em conflito.
 
 Quando ocorrem conflitos, a Política de Grupo no nível de domínio tem precedência sobre a política do Intune, a menos que o computador não possa entrar no domínio. Nesse caso, a política do Intune é aplicada ao computador cliente.

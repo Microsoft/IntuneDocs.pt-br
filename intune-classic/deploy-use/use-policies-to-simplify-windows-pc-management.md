@@ -1,5 +1,5 @@
 ---
-title: "Usar políticas para simplificar o gerenciamento de computadores Windows | Microsoft Docs"
+title: "Usar políticas para simplificar o gerenciamento de computador Windows"
 description: "Descreve as políticas de gerenciamento de computador Windows e as configurações para o Microsoft Intune Center."
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar políticas para simplificar o gerenciamento de computador Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Para gerenciar áreas de trabalho do Windows como computadores executando o cliente de software do Intune nelas, é possível usar apenas as políticas que estão sob as políticas **Gerenciamento do Computador** no console de administração do Intune. Todas as outras políticas listadas no console do administrador destinam-se somente a dispositivos móveis. Usando as políticas **Gerenciamento do Computador**, é possível definir as configurações no Microsoft Intune Center, controlar as atualizações em computadores e configurar o Firewall do Windows para computadores.
 

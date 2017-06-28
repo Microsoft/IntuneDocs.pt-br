@@ -1,5 +1,5 @@
 ---
-title: "Usar grupos para gerenciar usuários e dispositivos | Microsoft Docs"
+title: "Usar grupos para gerenciar usuários e dispositivos"
 description: "Crie e gerencie grupos usando o espaço de trabalho Grupos."
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ Nos modos de exibição de grupo filtrados, você pode ajustar o que um administ
 -   Você quer que seus administradores de TI só possam implantar itens em dispositivos e usuários específicos
 -   Você quer que seus administradores de TI vejam apenas os grupos que são relevantes para esse administrador
 
-Você pode configurar as exibições de grupo filtrado para administradores de serviço no console do administrador do Intune. Para detalhes, confira [What to know before you start Microsoft Intune](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune) (O que saber antes de iniciar o Microsoft Intune).
+Você pode configurar as exibições de grupo filtrado para administradores de serviço no console do administrador do Intune. Para detalhes, confira [What to know before you start Microsoft Intune](/intune/supported-devices-browsers) (O que saber antes de iniciar o Microsoft Intune).
 
 Depois de definir modos de exibição de grupo filtrados para um administrador de serviço, quando o administrador implantar software ou políticas ou executar relatórios, ele pode exibir e selecionar apenas os grupos que você especificou. O administrador também não ver informações de status nas seguintes páginas do console do administrador:
 
