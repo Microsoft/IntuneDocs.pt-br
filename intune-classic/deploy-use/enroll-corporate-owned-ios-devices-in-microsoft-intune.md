@@ -1,5 +1,5 @@
 ---
-title: Registrar dispositivos iOS de propriedade corporativa | Microsoft Docs
+title: Registrar dispositivos iOS corporativos
 description: Registro de dispositivos iOS corporativos usando o DEP (Programa de Registro de Dispositivo) da Apple ou o Apple Configurator
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ Os dispositivos configurados com a afinidade de usuário podem instalar e execut
 
 Afinidade de usuário é necessária para dar suporte ao seguinte:
   - Aplicativos MAM (Gerenciamento de aplicativos móveis)
-  -    Acesso condicional para dados de email e da empresa
-  -    Aplicativo do Portal da Empresa
+  - Acesso condicional para dados de email e da empresa
+  - Aplicativo do Portal da Empresa
 
 **Como os usuários registram dispositivos iOS corporativos com afinidade do usuário**
 1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.

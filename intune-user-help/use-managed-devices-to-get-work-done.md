@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: d05b3200d145aa535216dc81c62cc73b022528f2
-ms.openlocfilehash: ae364b9e77876612be4eb6d68b8b57a5d3be9db2
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
+ms.contentlocale: pt-br
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -37,7 +38,7 @@ O departamento de TI de sua empresa pode ver informações relevantes ao trabalh
 Você pode obter o Portal da Empresa de duas diferentes maneiras:
 
 - Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o administrador de TI também pode instalá-lo para você.
-- Acessando o [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI configurou.
+- Acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com) que o administrador de TI configurou.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre o aplicativo e o site?
 Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. Algumas tarefas que você pode fazer são:
@@ -99,5 +100,5 @@ A Microsoft recomenda que você tente primeiro ver se consegue corrigir o proble
 - [Corrigir problemas comuns com o dispositivo iOS](troubleshoot-your-device-ios.md)
 - [Corrigir problemas comuns com o dispositivo Windows](troubleshoot-your-device-windows.md)
 
-É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar seu administrador de TI para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar seu administrador de TI para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).
 

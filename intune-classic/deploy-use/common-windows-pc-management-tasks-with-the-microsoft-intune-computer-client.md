@@ -1,5 +1,5 @@
 ---
-title: Tarefas comuns de gerenciamento de computadores Windows | Microsoft Docs
+title: Tarefas comuns de gerenciamento de computadores Windows
 description: "Conheça maneiras de gerenciar computadores Windows que executam o cliente de software do Intune."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 548a4b84fe662d5634e2b82363f2ab3d86e48849
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico lista as tarefas que podem ser realizadas para gerenciar áreas de trabalho gerenciadas como computadores, com a instalação do cliente de software do Intune. Este tópico não aborda o gerenciamento de computadores como dispositivos móveis. Se ainda não tiver instalado o cliente nos computadores, consulte [Instalar o cliente de software do Intune em computadores Windows](install-the-windows-pc-client-with-microsoft-intune.md).
 
 

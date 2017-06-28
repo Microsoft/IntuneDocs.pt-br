@@ -1,5 +1,5 @@
 ---
-title: "Simplificar a configuração de email em dispositivos móveis | Microsoft Docs"
+title: "Simplificar a configuração de email em dispositivos móveis"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Se sim, o Microsoft Intune poderá configurar automaticamente o email para os di
 Depois que o perfil de email é configurado, você pode restringir facilmente o acesso ao email da empresa e a serviços do Office 365 com as políticas de acesso condicional do Intune. Essas políticas permitem que você certifique-se de que o acesso ao seu email da empresa e serviços Office 365 seja restrito aos dispositivos que são compatíveis com as regras que você definir no Intune.
 
 ## <a name="how-do-i-do-it"></a>Como fazer isso?
-1.    [Configure perfis de email do usuário final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) automaticamente em dispositivos Windows, iOS e Android.
-2.    [Controle o acesso ao email da empresa](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando políticas de acesso condicional.
+1.  [Configure perfis de email do usuário final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) automaticamente em dispositivos Windows, iOS e Android.
+2.  [Controle o acesso ao email da empresa](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando políticas de acesso condicional.
 
 
 ### <a name="additional-information"></a>Informação adicional:

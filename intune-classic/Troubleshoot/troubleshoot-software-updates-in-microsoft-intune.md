@@ -1,5 +1,5 @@
 ---
-title: "Solucionar problemas de atualizações de software | Microsoft Docs"
+title: "Solucionar problemas de atualizações de software"
 description: "Solucione problemas de atualização de software no Microsoft Intune."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: bb46e329230483009c6ac5327493a2a32d4f46d8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b33c5978c2cb27eb7e486d139e71937c41f48b28
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

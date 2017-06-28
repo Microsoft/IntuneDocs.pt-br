@@ -1,12 +1,12 @@
 ---
-title: "Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune"
+titleSuffix: Intune on Azure
 description: "Criar e implantar a política de proteção do aplicativo WIP com o Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca8e309653aa43292c7bd1ae1cb72cbb282d37dc
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
 ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A partir da versão 1704 do Intune, você poderá usar políticas de proteção de aplicativo com o Windows 10 no MAM (gerenciamento de aplicativo móvel) sem o cenário de registro.
 
@@ -52,7 +52,7 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 
 Você precisa configurar o provedor MAM antes de criar uma política de proteção de aplicativo WIP.
 
--   Saiba mais sobre [como configurar seu provedor MAM com o Intune](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md).
+-   Saiba mais sobre [como configurar seu provedor MAM com o Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Além disso, você precisará ter o seguintes:
 
