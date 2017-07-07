@@ -1,5 +1,5 @@
 ---
-title: "Configurações da política de MAM do iOS | Microsoft Docs"
+title: "Configurações de política do MAM do iOS"
 description: "Este tópico descreve as configurações de política de gerenciamento de aplicativo móvel para dispositivos iOS."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca0fa4b433710eecbb28f931e9b5cbe5b230598b
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 384c3a8c930bf7ee8487726c37f1ff3652675650
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 #  <a name="ios-mobile-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo móvel de iOS
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -71,14 +68,14 @@ Há algumas isenções de aplicativos e serviços de plataforma em que a políti
 | **Exigir PIN para acesso** | Escolha **Sim** para exigir um PIN para usar esse aplicativo. O usuário deverá configurar esse PIN na primeira vez que executar o aplicativo em um contexto corporativo ou de estudante. Valor padrão = **Sim**.<br><br> Defina as seguintes configurações de força do PIN: <ul><li>**Número de tentativas antes da redefinição do PIN**: especifique o número de tentativas que o usuário deverá inserir o PIN com êxito antes de precisar redefini-lo. Valor padrão = **5**.</li><li> **Permitir PIN simples**: escolha **Sim** para permitir que os usuários usem sequências de PIN simples como 1234 ou 1111. Escolha **Não** para impedi-los de usar sequências simples. Valor padrão = **Sim**. </li><li> **Tamanho do PIN**: especifique o número mínimo de dígitos em uma sequência de PIN. Valor padrão = **4**. </li><li> **Permitir impressão digital em vez do PIN (iOS 8.0+)**: escolha **Sim** para permitir que o usuário use uma [ID de Toque](https://support.apple.com/HT201371) em vez de um PIN para acesso ao aplicativo. Valor padrão = **Sim**</li></ul> Em dispositivos iOS, é possível permitir que o usuário prove sua identidade usando uma [ID de Toque](https://support.apple.com/HT201371) em vez de um PIN. Quando o usuário tenta usar esse aplicativo com sua conta corporativa ou de estudante, ele deve fornecer sua identidade de impressão digital em vez de inserir um PIN. Quando essa configuração for habilitada, a imagem de visualização do alternador de aplicativo será indefinida enquanto usar uma conta corporativa ou escolar. </li></ul>| Exigir PIN: Sim <br><br> Tentativas de redefinição do PIN: 5 <br><br> Permitir PIN simples: Sim <br><br> Tamanho do PIN: 4 <br><br> Permitir impressão digital: Sim |
 | **Exigir credenciais corporativas para acesso** | Escolha **Sim** para exigir que o usuário se conecte com sua conta corporativa ou de estudante em vez de inserir um PIN para acesso ao aplicativo. Se você definir como **Sim**, ele substituirá os requisitos de PIN ou da ID de Toque.  | Não |
 | **Impedir que aplicativos gerenciados sejam executados em dispositivos com jailbreak ou root** |  Escolha **Sim** para impedir que esse aplicativo seja executado em dispositivos com jailbreak ou root. O usuário continuará podendo usar esse aplicativo para tarefas pessoais, mas precisará usar um dispositivo diferente para acessar dados corporativos ou de estudante nesse aplicativo. | Sim |
-| **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: esse é o número de minutos antes que os requisitos de acesso (definidos anteriormente na política) sejam verificados novamente. Por exemplo, um administrador ativa o PIN na política, um usuário abre um aplicativo MAM e deve inserir um pin. Ao usar essa configuração, o usuário não precisa inserir um PIN em qualquer aplicativo MAM por mais **30 minutos** (valor padrão).</li><li>**Período de carência offline**: esse é o número de minutos em que os aplicativos MAM podem ser executados offline. Especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas). Após esse período expirar, o aplicativo exigirá a autenticação do usuário para o AAD para que o aplicativo possa continuar a ser executado.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
+| **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: esse é o número de minutos antes que os requisitos de acesso (definidos anteriormente na política) sejam verificados novamente. Por exemplo, um administrador ativa o PIN na política, um usuário abre um aplicativo MAM e deve inserir um pin. Ao usar essa configuração, o usuário não precisa inserir um PIN em nenhum aplicativo MAM por mais **30 minutos** (valor padrão).<br><br>O tempo limite para os requisitos de acesso é medido em termos do tempo de inatividade entre os aplicativos gerenciados por política.<br><br></li><li>**Período de carência offline**: esse é o número de minutos em que os aplicativos MAM podem ser executados offline. Especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas). Após esse período expirar, o aplicativo exigirá a autenticação do usuário para o AAD para que o aplicativo possa continuar a ser executado.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo fará um apagamento seletivo. Essa limpeza seletiva é a mesma limpeza que a que pode ser iniciada pelo administrador no fluxo de trabalho de apagamento MAM. <br><br> | 90 dias |
 | **Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado** | Escolha **Sim** para desabilitar o PIN do aplicativo quando um bloqueio de dispositivo for detectado em um dispositivo registrado. | Não |
 | **Exigir o sistema operacional iOS mínimo** | Escolha **Sim** para exigir um sistema operacional iOS mínimo para usar este aplicativo. O usuário não poderá acessar se a versão do iOS no dispositivo não atender ao requisito. | Não |
 | **Exigir o sistema operacional iOS mínimo (Somente aviso)** | Escolha **Sim** para exigir um sistema operacional iOS mínimo para usar este aplicativo. O usuário verá uma notificação se a versão do iOS no dispositivo não atender ao requisito. Essa notificação pode ser descartada. | Não |
 | **Exigir versão mínima do aplicativo** | Escolha **Sim** para exigir uma versão mínima do aplicativo para poder usá-lo. O usuário não poderá acessar se a versão do aplicativo no dispositivo não atender ao requisito.<br><br>Ao selecionar os aplicativos desejados, observe eles geralmente têm esquemas de controle de versão diferentes entre eles.<br><br> | Não | 
 | **Exigir versão mínima do aplicativo (somente Aviso)** | Escolha **Sim** para recomendar uma versão mínima de aplicativo para usar esse aplicativo. O usuário verá uma notificação se a versão do aplicativo no dispositivo não atender ao requisito. Essa notificação pode ser descartada.<br><br>Ao selecionar os aplicativos desejados, observe eles geralmente têm esquemas de controle de versão diferentes entre eles.<br><br> | Não | 
-| **Exigir versão mínima do SDK de política de proteção de aplicativo do Intune** | Escolha **Sim** para exigir uma versão mínima do SDK de política de proteção de aplicativo do Intune no aplicativo. O usuário não poderá acessar se a versão do SDK de política de proteção de aplicativo do Intune do aplicativo não atender ao requisito. <br> <br> Para saber mais sobre o SDK de política de proteção de aplicativo do Intune, veja [Visão geral do SDK de aplicativo do Intune](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | Não |
+| **Exigir versão mínima do SDK de política de proteção de aplicativo do Intune** | Escolha **Sim** para exigir uma versão mínima do SDK de política de proteção de aplicativo do Intune no aplicativo. O usuário não poderá acessar se a versão do SDK de política de proteção de aplicativo do Intune do aplicativo não atender ao requisito. <br> <br> Para saber mais sobre o SDK de política de proteção de aplicativo do Intune, veja [Visão geral do SDK de aplicativo do Intune](/intune/app-sdk) <br><br> | Não |
 ##  <a name="add-ins-for-outlook-app"></a>Suplementos do aplicativo do Outlook
 
 Recentemente, o Outlook trouxe suplementos para o Outlook para iOS que permitem integrar aplicativos populares ao cliente de email. Os suplementos para Outlook estão disponíveis na Web, Windows, Mac e Outlook para iOS. Como os suplementos são gerenciados pelo Microsoft Exchange, os usuários poderão compartilhar dados e mensagens entre o Outlook e aplicativos de suplementos não gerenciados, a menos que os suplementos sejam desativados para o usuário pelo Exchange.
@@ -93,4 +90,3 @@ Essas instruções se aplicam ao Office 365, Exchange 2016 e Exchange 2013 no Ou
 
 - Saiba mais sobre [suplementos do Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
 - Saiba mais sobre [como especificar os administradores e usuários que podem instalar e gerenciar suplementos para aplicativos do Outlook](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
-

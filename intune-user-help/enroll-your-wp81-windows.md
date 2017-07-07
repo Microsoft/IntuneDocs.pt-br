@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrar seu dispositivo Windows Phone 8.1 no Intune
 
 Se sua empresa ou escola usa o Microsoft Intune, você pode registrar os dispositivos para obter acesso aos emails, arquivos e outros recursos da empresa. Quando você registra os dispositivos, a sua organização pode manter os dados corporativos protegidos. Para saber mais sobre registro, consulte [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?). e [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (O que o administrador de TI pode ver ou não no seu dispositivo).
@@ -90,4 +85,3 @@ Registrar seu dispositivo:
 Se o administrador de TI tiver configurado o Portal da Empresa para ser instalado durante o registro, você o verá na lista de aplicativos.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

@@ -1,5 +1,5 @@
 ---
-title: "Gerenciar contratos de licença de software para computadores que executam o cliente de software do Intune | Microsoft Docs"
+title: "Gerenciar contratos de licença de software para computadores que executam o cliente de software do Intune"
 description: "O Intune permite que você gerencie contratos de licença para software adquirido por meio de contratos de Licenciamento por Volume da Microsoft e para software adquirido por outros meios."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerenciar contratos de licença para software de PC com Windows no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune permite adicionar e gerenciar informações de contrato de licença para software adquirido por meio de contratos de Licenciamento por Volume da Microsoft. Também é possível fazer isso para software da Microsoft e não Microsoft adquirido por outros meios. Você pode organizar essas informações em grupos lógicos.
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ Os contratos de licenciamento de software podem ser adicionados aos grupos de li
 |Renomear um grupo de licenças|No espaço de trabalho **Licenças**, escolha um grupo de licenças e **Editar Grupo de Licenças** no menu **Tarefas**.|
 |Excluir um grupo de licenças|No espaço de trabalho **Licenças**, escolha um grupo de licenças e, após, escolha **Excluir Grupo de Licenças** no menu **Tarefas**. **Dica:** Todas as licenças no grupo excluído são movidas para o grupo **Contratos não atribuídos**.|
 |Excluir um contrato de licença|No espaço de trabalho **Licenças**, escolha um contrato e, após, escolha **Excluir**. **Dica:** depois de excluir contratos de Licenciamento por Volume, para atualizar as informações de licença, escolha **Atualizar Agora** na página **Visão Geral de Licenças** ou na guia **Geral** de um grupo de licenças específico.|
-

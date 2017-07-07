@@ -14,15 +14,12 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,6 +36,5 @@ Este tópico lista as tarefas que podem ser realizadas para gerenciar áreas de 
 - [Gerenciar a vinculação de usuário e dispositivo para computadores Windows](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) – explica quando e como você precisa vincular um usuário a um computador antes de implantar o software no usuário.
 
 - [Solicitar e fornecer assistência remota para computadores Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - explica como os usuários de computadores Intune obtêm Ajuda da assistência remota e descreve os pré-requisitos e a instalação do TeamViewer.
-
 
 

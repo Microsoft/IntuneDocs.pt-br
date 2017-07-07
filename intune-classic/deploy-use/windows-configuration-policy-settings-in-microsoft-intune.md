@@ -1,5 +1,5 @@
 ---
-title: "Configurações da política do Windows | Microsoft Docs"
+title: "Configurações de política do Windows"
 description: "Use a Política de configuração geral do Windows (Windows 8.1 e posterior) do Intune para definir as configurações para dispositivos Windows 8.1 e Windows 8 registrados."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d95852c20b98ee86552672cf03364980f06f010a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ab39a1847dbba495b4946d12b96b6f8c724f38d8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Configurações de política do Windows no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -122,4 +119,3 @@ Use a **Política de configuração geral do Windows (Windows 8.1 e posterior)**
 
 ### <a name="see-also"></a>Consulte também
 [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

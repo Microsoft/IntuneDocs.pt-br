@@ -1,5 +1,5 @@
 ---
-title: "Política de configuração de aplicativo do Android para Trabalho | Microsoft Docs"
+title: "Política de configuração de aplicativo do Android for Work"
 description: "Use políticas de configuração de aplicativo móvel no Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo Android for Work."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 69cee5763cb8a24b4a3be6e981bcd46512bfc3ba
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f2284920852de5a79cf47fee81922a5b069157c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurar aplicativos Android for Work com as políticas de configuração de aplicativo móvel no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,4 +73,3 @@ Quando o aplicativo implantado é executado em um dispositivo, ele é executado 
 
 > [!TIP]
 > Apenas uma política de configuração de aplicativo para cada aplicativo deve ser implantada para o usuário.
-

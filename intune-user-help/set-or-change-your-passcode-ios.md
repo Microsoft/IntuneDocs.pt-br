@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-or-change-your-passcode"></a>Definir ou alterar sua senha
 
 Se o dispositivo do iOS não estiver em conformidade com a política de senha do administrador de TI, aparecerá uma mensagem que descreve o problema rapidamente e explica o que você precisa fazer para que sua senha atenda aos requisitos.
@@ -46,4 +42,3 @@ Se você tiver problemas para configurar uma senha que atenda aos requisitos de 
 3. Insira uma nova senha que atenda aos requisitos do administrador de TI e, em seguida, insira-a novamente para verificá-los.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

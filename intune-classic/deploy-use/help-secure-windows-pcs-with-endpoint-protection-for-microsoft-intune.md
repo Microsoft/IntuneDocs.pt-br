@@ -1,5 +1,5 @@
 ---
-title: Endpoint Protection para computadores Windows | Microsoft Docs
+title: Endpoint Protection para computadores Windows
 description: "Proteja seus computadores gerenciados com o Endpoint Protection, que fornece proteção em tempo real contra ameaças de malware."
 keywords: 
 author: nathbarn
@@ -14,16 +14,16 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 180da5e2e0d6980214fff1cfffa3fb1d5b0058d3
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune pode ajudar você a proteger seus computadores gerenciados com o Endpoint Protection, que fornece proteção em tempo real contra ameaças de malware, mantém definições de malware atualizadas e verifica automaticamente os computadores. O Endpoint Protection também fornece ferramentas que ajudam a gerenciar e monitorar ataques de malware.
 
 Se você ainda não tiver instalado o cliente do Intune em seus computadores, consulte [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar o cliente do computador Windows com o Microsoft Intune).
@@ -192,4 +192,3 @@ Para obter mais ajuda e suporte, consulte [Troubleshoot Endpoint Protection in M
 
 ### <a name="see-also"></a>Consulte Também
 [Políticas para proteger computadores Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

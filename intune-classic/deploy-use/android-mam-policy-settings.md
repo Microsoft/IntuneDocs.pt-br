@@ -1,5 +1,5 @@
 ---
-title: "Configurações da política de MAM do Android | Microsoft Docs"
+title: "Configurações da política de MAM do Android"
 description: "Este tópico descreve as configurações de política de gerenciamento de aplicativo móvel para dispositivos Android."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 017c316ce102b71b3ef9552d8fe69181b79473de
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ Há duas categorias de configurações de política: configurações de realoca�
 | **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo fará um apagamento seletivo. Essa limpeza seletiva é a mesma limpeza que a que pode ser iniciada pelo administrador no fluxo de trabalho de apagamento MAM. <br><br> | 90 dias |
 | **Bloquear captura de tela e Assistente do Android (Android 6.0+)** | Escolha **Sim** para bloquear capturas de tela e as funcionalidades do **Assistente do Android** do dispositivo ao usar esse aplicativo. Se você escolher **Sim**, a imagem de visualização do Gerenciador de Aplicativos também ficará desfocada ao usar esse aplicativo com uma conta corporativa ou de estudante. | Não |
 | **Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado** | Escolha **Sim** para desabilitar o PIN do aplicativo quando um bloqueio de dispositivo for detectado em um dispositivo registrado. | Não |
-

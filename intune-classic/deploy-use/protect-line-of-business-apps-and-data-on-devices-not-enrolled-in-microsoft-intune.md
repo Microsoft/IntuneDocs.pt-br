@@ -1,5 +1,5 @@
 ---
-title: "Proteger aplicativos LOB em dispositivos não registrados | Microsoft Docs"
+title: "Proteger aplicativos LOB em dispositivos não registrados"
 description: "Este tópico descreve como preparar seus aplicativos de linha de negócios personalizados para que você possa aplicar políticas de gerenciamento de aplicativo móvel que podem ajudar a evitar a perda de dados."
 keywords: 
 author: mtillman
@@ -14,29 +14,26 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteger aplicativos de linha de negócios e dados em dispositivos não registrados no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Políticas de gerenciamento de aplicativos móveis (MAM) ajudam a proteger dados da empresa, restringindo ações que poderiam vazar dados da empresa e impor requisitos de acesso de dados, como o PIN do aplicativo. Para aplicar políticas de MAM nos aplicativos de linha de negócios iOS e Android, você deve primeiro encapsular o aplicativo com a Ferramenta de Encapsulamento de Aplicativo do Microsoft Intune. Disposição de aplicativo é o processo de aplicação de uma camada de gerenciamento para um aplicativo móvel sem exigir nenhuma alteração ao aplicativo subjacente. Depois que o aplicativo é encapsulado, é possível aplicar políticas de MAM a ele e distribuí-lo aos seus usuários.  
+Políticas de gerenciamento de aplicativos móveis (MAM) ajudam a proteger dados da empresa, restringindo ações que poderiam vazar dados da empresa e impor requisitos de acesso de dados, como o PIN do aplicativo. Para aplicar políticas de MAM nos aplicativos de linha de negócios iOS e Android, você deve primeiro encapsular o aplicativo com a Ferramenta de Encapsulamento de Aplicativo do Microsoft Intune. O encapsulamento de aplicativo é o processo de aplicação de uma camada de gerenciamento a um aplicativo móvel sem a necessidade de nenhum chan/intune/apps-prepare-mobile-application-managementes a ele e distribuí-lo para os usuários.  
 
-Este tópico explica as etapas necessárias para aplicar políticas de MAM a aplicativos que os usuários acessam em **dispositivos de propriedade dos funcionários que não são gerenciados** e dispositivos gerenciados por uma **solução de MDM (gerenciamento de dispositivo móvel) de terceiros**.  Para preparar os aplicativos de linha de negócios executados em **dispositivos registrados no Intune MDM**, consulte [Decidir como preparar os aplicativos para gerenciamento de aplicativos móveis com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Este tópico explica as etapas necessárias para aplicar políticas de MAM a aplicativos que os usuários acessam em **dispositivos de propriedade dos funcionários que não são gerenciados** e dispositivos gerenciados por uma **solução de MDM (gerenciamento de dispositivo móvel) de terceiros**.  Para preparar os aplicativos de linha de negócios executados em **dispositivos registrados no Intune MDM**, consulte [Decidir como preparar os aplicativos para gerenciamento de aplicativos móveis com o Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 
 ##  <a name="step-1-prepare-the-app"></a>Etapa 1: preparar o aplicativo
 
-Antes de aplicar as políticas de MAM a um aplicativo, você deverá primeiro encapsular o aplicativo usando a Ferramenta de Encapsulamento de Aplicativos do Microsoft Intune para [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ou usar o [SDK de Aplicativo do Intune](../develop/intune-app-sdk.md) para integrar manualmente recursos de proteção de aplicativo do Intune.
+Antes de aplicar as políticas de MAM a um aplicativo, você deve primeiro encapsular o aplicativo usando a Ferramenta de Disposição de Aplicativo do Microsoft Intune para [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) ou usar o [SDK do Aplicativo do Intune](/intune/app-sdk) para integrar manualmente os recursos de Proteção de Aplicativo do Intune.
 
-Para saber mais sobre como usar a Ferramenta de Encapsulamento de Aplicativos em relação ao SDK, consulte [Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Para saber mais sobre como usar a Ferramenta de Encapsulamento de Aplicativos em relação ao SDK, consulte [Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 ## <a name="step-2-add-the-app"></a>Etapa 2: adicionar o aplicativo
 
@@ -49,7 +46,7 @@ Para associar seu aplicativo de linha de negócios com as políticas de MAM, é 
 2. Na folha **Aplicativos da linha de negócios**, escolha **Adicionar um aplicativo personalizado**.
 
   ![Captura de tela da folha de aplicativos da linha de negócios com o botão Adicionar aplicativo personalizado na parte superior](../media/mam-azure-portal-add-lob-app-action.png)
-3.    Nomeie o aplicativo, o identificador de pacote em um campo Identificador de aplicativo e a plataforma (iOS ou Android).
+3.  Nomeie o aplicativo, o identificador de pacote em um campo Identificador de aplicativo e a plataforma (iOS ou Android).
 
   ![Captura de tela da folha Adicionar um aplicativo personalizado](../media/mam-azure-portal-add-app-details.png)
 
@@ -74,13 +71,12 @@ Se você precisar alterar os detalhes do aplicativo, como o nome do aplicativo o
 ##  <a name="remove-apps"></a>Remover aplicativos
 É possível remover um aplicativo de linha de negócios da lista de aplicativos. Isso removerá o aplicativo da lista e removerá a associação com políticas de MAM, mas não removerá ou desinstalará o aplicativo do dispositivo do usuário.  
 
-1.    No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações**. Na folha **Configurações**, escolha **Linha de negócios** para abrir a lista de aplicativos existentes.  
-2.    Escolha o aplicativo que você deseja remover e escolha o menu **(…) contexto**.
+1.  No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações**. Na folha **Configurações**, escolha **Linha de negócios** para abrir a lista de aplicativos existentes.  
+2.  Escolha o aplicativo que você deseja remover e escolha o menu **(…) contexto**.
 
   ![Captura de tela da folha de aplicativos da linha de negócios com reticências](../media/mam-azure-portal-lob-context-menu.png)
-3.    Escolha **Excluir Aplicativo** para excluir o aplicativo.
+3.  Escolha **Excluir Aplicativo** para excluir o aplicativo.
 
   ![Captura de tela da folha linha de negócios com a opção de exclusão do aplicativo](../media/mam-azure-portal-delete-app.png)
 
   Isso removerá os aplicativos da lista de aplicativos da linha de negócios e da lista de destino de aplicativos na política de MAM.
-

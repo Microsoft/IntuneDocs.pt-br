@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 847b08efc2424da7ae9483db355f2804ac1e00c1
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Você precisa identificar o dispositivo quando tenta fazer o registro
 
 Se você estiver tentando registrar seu dispositivo iOS ou macOS no Intune e vir uma tela solicitando que o identifique, pelo menos um dos dispositivos já foi registrado e atribuído à sua conta usando um método diferente do aplicativo do Portal da Empresa. Para o aplicativo de Portal da Empresa funcionar corretamente, você deve identificar se o dispositivo que está usando já foi registrado no Intune.
@@ -36,4 +31,3 @@ Se você estiver tentando registrar seu dispositivo iOS ou macOS no Intune e vir
 3. Insira os últimos quatro caracteres do número de série do dispositivo para confirmar que o seu dispositivo está registrado no Intune. Para localizar o número de série, consulte [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md) (Como localizar o número de série em meu dispositivo?).
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

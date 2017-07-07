@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 56d1f2598c7489fdd09b1c27c6c76c5d80fb6e7e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-encrypt-your-windows-device"></a>Como criptografar um dispositivo Windows
 
 Para proteger seus dados corporativos ou de estudante, o administrador de TI pode exigir que você criptografe o dispositivo Windows. Se você tiver um Windows Phone que você registrou, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
@@ -37,4 +33,3 @@ Se você tiver um dispositivo de desktop, siga as instruções abaixo para cript
 2.  Clique em **Ativar o BitLocker** e siga as instruções mostradas para criptografar cada uma das unidades.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
