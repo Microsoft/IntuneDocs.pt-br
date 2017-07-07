@@ -1,5 +1,5 @@
 ---
-title: "Políticas de firewall para computadores Windows | Microsoft Docs"
+title: "Políticas de firewall para computadores Windows"
 description: "O Intune pode ajudá-lo a proteger seus computadores gerenciados com o cliente do Intune, incluindo ajuda para definir as configurações do Firewall do Windows."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune pode ajudá-lo a proteger seus computadores Windows gerenciados com o cliente do Intune de várias maneiras. Uma maneira em que ele faz isso é fornecer políticas que permitem que você defina as configurações de Firewall do Windows em computadores.
 
 Se você ainda não tiver instalado o cliente em seus computadores Windows com Intune, consulte [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar o cliente do computador Windows com o Microsoft Intune).
@@ -135,4 +135,3 @@ Você pode configurar as exceções que permitem tipos específicos de tráfego 
 
 ### <a name="see-also"></a>Consulte também
 [Políticas para proteger computadores Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

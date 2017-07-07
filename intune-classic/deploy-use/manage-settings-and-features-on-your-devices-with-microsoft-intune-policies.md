@@ -1,5 +1,5 @@
 ---
-title: "Gerenciar as configurações do dispositivo com políticas | Microsoft Docs"
+title: "Gerenciar as configurações do dispositivo com políticas"
 description: "Use o Intune para criar e implantar políticas que controlam configurações e recursos nos dispositivos gerenciados que você gerencia."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8f1a4cb3bcab4aee534fc5fb9a1f1a1eb5a6f3a1
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f8ceb98181543d846934a16b8c9551207892ae0e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -213,4 +210,3 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Onde posso encontrar ajuda para solucionar problemas de políticas?
 
 Consulte [Troubleshoot policies in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune) (Políticas de solução de problemas no Microsoft Intune).
-

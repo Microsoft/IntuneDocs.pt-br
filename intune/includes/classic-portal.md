@@ -1,4 +1,4 @@
 |Aplica-se a: Intune no portal clássico |
 |--|
-|Está procurando documentação sobre a visualização do portal do Azure no Intune? [Clique aqui](https://docs.microsoft.com/intune/what-is-intune).|
+|Buscando uma documentação sobre o Intune no Azure? [Clique aqui](https://docs.microsoft.com/intune/what-is-intune).|
 | |

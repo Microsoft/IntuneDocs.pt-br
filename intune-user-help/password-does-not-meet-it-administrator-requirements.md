@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Sua senha não atende aos requisitos do administrador de TI
 
 A senha que você usa para acessar recursos corporativos ou de estudante não atende a um ou mais requisitos que o administrador de TI configurou. Para corrigir o problema, siga as instruções que são mostradas no seu dispositivo. Descrições dos problemas estão listadas abaixo.
@@ -51,4 +47,3 @@ Descrições de problemas com senha ou PIN:
 - **A senha não é complexa o suficiente para atender aos requisitos**. Seu administrador de TI exige que você use caracteres mais complexos em sua senha. Tente usar caracteres como números, letras maiúsculas e símbolos como $, % e #. Isso pode também ser verdadeiro para outras contas em seu dispositivo, portanto certifique-se de verificar outras contas de trabalho para garantir que sua senha atenda aos requisitos configurados pelo IT para seu dispositivo.
 
 Se você tiver dificuldade em descobrir como fazer sua senha atender aos requisitos, entre em contato com seu administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

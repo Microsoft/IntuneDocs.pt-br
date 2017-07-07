@@ -1,5 +1,5 @@
 ---
-title: "Crie grupos para organizar usuários e dispositivos | Microsoft Docs"
+title: "Crie grupos para organizar usuários e dispositivos"
 description: "Criar usuários e grupos para sua assinatura do Intune"
 keywords: 
 author: nathbarn
@@ -14,16 +14,12 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 058006b2356d62c77c3a5a6ee0f4c8ed74ed4a50
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a6e9eb087b730c66bcf32f877fd22f2d3be0c121
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-groups-to-organize-users-and-devices"></a>Crie grupos para organizar usuários e dispositivos
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -87,6 +83,4 @@ Use grupos de usuários para implantar políticas de dispositivo e software. Por
 O grupo recém-criado pode ser encontrado na lista **Grupos**, no espaço de trabalho **Grupos**, em **Todos os usuários**. Nesse local, também é possível editar ou excluir o grupo.
 
 >[!div class="step-by-step"]
-
->[&larr; **Gerenciar licenças do Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Criar políticas e aplicativos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
+/intune/licenses-assign [&larr; **Gerenciar licenças do Intune**](/intune/licenses-assign)       [**Criar políticas e aplicativos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

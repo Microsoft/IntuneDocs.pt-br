@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Cancelar o registro do dispositivo Windows do Intune
 
 Se você se registrou no Intune, mas não deseja mais usar seu dispositivo Windows para o trabalho ou escola e não precisa mais acessar o email corporativo ou de estudante, os aplicativos ou outros recursos, você precisará cancelar o registro de seu dispositivo. Depois que você cancelar o registro do dispositivo do Intune, você não poderá acessar esses recursos. Para obter mais informações sobre o que acontece quando você cancela o registro do seu dispositivo, confira [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) (O que acontece quando você cancela o registro do seu dispositivo do Intune?).
 
 Para cancelar o registro do seu dispositivo, use o link, mostrado na seção “Nesse Artigo” acima, que corresponde ao tipo de dispositivo que está usando:
 
--    [Cancelar o registro do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
--    [Cancelar o registro do seu computador Windows 8.1](#unenroll-your-windows-81-computer)
--    [Cancelar o registro do seu dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
+-   [Cancelar o registro do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
+-   [Cancelar o registro do seu computador Windows 8.1](#unenroll-your-windows-81-computer)
+-   [Cancelar o registro do seu dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Cancelar o registro do seu dispositivo Windows 10
 
@@ -68,4 +63,3 @@ Para cancelar o registro do seu dispositivo, use o link, mostrado na seção “
 4.  Na caixa de diálogo **Excluir conta**, toque em **Excluir**.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

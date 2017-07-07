@@ -1,5 +1,5 @@
 ---
-title: "Configurações da política de conformidade para dispositivos iOS | Microsoft Docs"
+title: "Configuração da política de conformidade em dispositivos iOS"
 description: "Este tópico descreve as regras e configurações que você pode definir em uma política de conformidade para dispositivos iOS."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fbb2e7ced783160fb6034aecc893d0c5dde639d7
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1d3248747740dafe858a581ed19a02ba87c4b761
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Configurações de política de conformidade para dispositivos iOS no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +80,3 @@ Se você estiver procurando informações sobre outras plataformas, selecione um
 É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar o dispositivo. Depois disso, ele pode acessar recursos da empresa.
 
 - **Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
-

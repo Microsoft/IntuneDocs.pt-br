@@ -1,5 +1,5 @@
 ---
-title: Aplicativos permitidos e bloqueados para KNOX | Microsoft Docs
+title: Aplicativos permitidos e bloqueados no KNOX
 description: Perfil personalizado para criar uma lista de aplicativos permitidos e bloqueados para KNOX.
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard
 
@@ -43,9 +40,9 @@ Essas configurações podem ser usadas apenas por dispositivos que executam o Sa
     
     - **Nome da configuração.** Digite **PreventStartPackages**.
     - **Descrição da configuração.** Insira uma descrição opcional, como “Lista de aplicativos impedidos de serem executados”.
-    -     **Tipo de dados.** Na lista suspensa, escolha **Cadeia de caracteres**.
-    -     **OMA-URI.** Digite **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **Valor.** Insira uma lista dos nomes de pacotes do aplicativo que deseja bloquear. Você pode usar **; : ,** ou **|** como delimitador. (Exemplo: pacote1; pacote2;)
+    -   **Tipo de dados.** Na lista suspensa, escolha **Cadeia de caracteres**.
+    -   **OMA-URI.** Digite **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -   **Valor.** Insira uma lista dos nomes de pacotes do aplicativo que deseja bloquear. Você pode usar **; : ,** ou **|** como delimitador. (Exemplo: pacote1; pacote2;)
 
     Para obter uma lista dos aplicativos que os usuários do dispositivo podem instalar da loja Google Play enquanto todos os outros aplicativos são excluídos:
 
@@ -74,4 +71,3 @@ Quando você seleciona uma política implantada, pode exibir mais informações 
 
 ### <a name="see-also"></a>Consulte também
 [Configurações de política do Android e do Samsung KNOX no Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-

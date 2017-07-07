@@ -226,12 +226,12 @@
 ## [Alterar sua autoridade de MDM](deploy-use/change-mdm-authority.md)
 
 ## [Como instruir os usuários finais sobre o Intune](/intune/end-user-educate?toc=/intune-classic/toc.json)
-### [Mensagens do Portal da Empresa que os usuários finais podem ver](deploy-use/help-end-users-understand-company-portal-app-messages.md)
-### [Experiência do usuário final para aplicativos Android habilitados para MAM](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [Experiência do usuário final para aplicativos iOS habilitados para MAM](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-### [Como os usuários do Android podem obter aplicativos](deploy-use/how-your-android-users-get-their-apps.md)
-### [Como usuários do iOS podem obter aplicativos](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Como os usuários do Windows podem obter aplicativos](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Mensagens do Portal da Empresa que os usuários finais podem ver](/intune/end-user-company-portal-messages?toc=/intune-classic/toc.json)
+### [Experiência do usuário final para aplicativos Android habilitados para MAM](/intune/end-user-mam-apps-android?toc=/intune-classic/toc.json)
+### [Experiência do usuário final para aplicativos iOS habilitados para MAM](/intune/end-user-mam-apps-ios?toc=/intune-classic/toc.json)
+### [Como os usuários do Android podem obter aplicativos](/intune/end-user-apps-android?toc=/intune-classic/toc.json)
+### [Como usuários do iOS podem obter aplicativos](/intune/end-user-apps-ios?toc=/intune-classic/toc.json)
+### [Como os usuários do Windows podem obter aplicativos](/intune/end-user-apps-windows?toc=/intune-classic/toc.json)
 
 
 # Desenvolver e personalizar aplicativos

@@ -1,6 +1,6 @@
 ---
-title: Gerenciamento de DEP da Apple para dispositivos iOS | Microsoft Docs
-description: Implante um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) do iOS &quot;pelo ar&quot; para gerenciar dispositivos Apple.
+title: Gerenciamento do Apple DEP para dispositivos iOS
+description: Implante um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de Registro de Dispositivo) do iOS "pelo ar" para gerenciar dispositivos Apple.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5facd519f53ea8534445ad95ae9221cf537b50a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrar dispositivos iOS do Programa de Registro de Dispositivos corporativos
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -81,8 +78,8 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
    - **Solicitar afinidade do usuário**: o dispositivo deve ser afiliado a um usuário durante a configuração inicial antes que tenha permissão para acessar dados e email da empresa como esse usuário. A **afinidade do usuário** deve ser configurada para dispositivos gerenciados por DEP que pertencem a usuários e que precisam usar o portal da empresa (ou seja, para instalar aplicativos). A MFA (autenticação multifator) não funciona durante o registro em dispositivos DEP com afinidade de usuário. Após o registro, a MFA funciona conforme o esperado nesses dispositivos. Novos usuários que precisam alterar a senha ao se conectarem pela primeira vez não podem receber um prompt durante o registro em dispositivos DEP. Além disso, os usuários cujas senhas expiraram não receberão um prompt para redefinir a senha durante o registro DEP e deverão redefinir a senha em um dispositivo diferente.
 
-       >[!NOTE]
-       >O DEP com afinidade de usuário requer que o [ponto de extremidade nome do usuário/misto WS-Trust 1.3](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) esteja habilitado para solicitar um token de usuário. [Saiba mais sobre o WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >[!NOTE]
+    >O DEP com afinidade de usuário requer que o [ponto de extremidade nome do usuário/misto WS-Trust 1.3](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) esteja habilitado para solicitar um token de usuário. [Saiba mais sobre o WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Sem afinidade de usuário**: o dispositivo não está afiliado a um usuário. Use esta afiliação para dispositivos que executam tarefas sem acessar aos dados de usuário local. Aplicativos que exigem a afiliação do usuário, incluindo o aplicativo do Portal da Empresa usado para instalar aplicativos de linha de negócios, não funcionarão.
 
@@ -173,4 +170,3 @@ Além disso, [Saiba mais sobre os grupos do Azure Active Directory](https://azur
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para registrar dispositivos](prerequisites-for-enrollment.md)
-

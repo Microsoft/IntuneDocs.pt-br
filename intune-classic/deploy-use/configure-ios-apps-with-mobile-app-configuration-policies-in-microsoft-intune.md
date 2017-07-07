@@ -1,5 +1,5 @@
 ---
-title: "Usar políticas de configuração de aplicativo móvel do iOS | Microsoft Docs"
+title: "Usar políticas de configuração de aplicativo móvel do iOS"
 description: "Use políticas de configuração de aplicativo móvel no Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo iOS."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 48f31fa1a883abc2bba372c3aaffb1f998d33c00
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2f13baeec9e0a38ac27ae42d1bc766cf22d73634
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -143,4 +140,3 @@ Quando você cria um arquivo de configuração de aplicativo móvel, você pode 
 </dict>
 
 ```
-
