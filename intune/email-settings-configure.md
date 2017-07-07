@@ -1,12 +1,12 @@
 ---
 title: "Como definir configurações de email do Intune"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como configurar o Intune para criar conexões para email corporativo nos dispositivos gerenciados."
+titleSuffix: Intune on Azure
+description: "Saiba como configurar o Intune para criar conexões com o email corporativo nos dispositivos gerenciados."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8e22d95dbaa51e8a799c771ec2cfe34f09e527d8
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Como definir configurações de email no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Os perfis de email podem ser usados para configurar dispositivos gerenciados com as configurações necessárias para se conectar e sincronizar o email da empresa. Isso pode ajudar a garantir que as configurações sejam padronizadas em todos os seus dispositivos, bem como ajudar a reduzir as chamadas de suporte dos usuários finais que não conhecem as configurações de email corretas.
 
@@ -45,19 +42,20 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 ## <a name="create-a-device-profile-containing-email-settings"></a>Criar um perfil de dispositivo que contém configurações de email
 
 1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de email.
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações de email. No momento, é possível escolher uma das seguintes plataformas para as configurações de dispositivo de email:
-    - **Android**
+    - **Android** (somente Samsung Android KNOX Standard)
+    - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 e posterior**
 6. Na lista suspensa de tipos de **Perfil**, escolha **Email**.
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
-    - [Configurações do Android](email-settings-android.md)
+    - [Configurações do Android for Work e Samsung KNOX Standard](email-settings-android.md)
     - [Configurações do iOS](email-settings-ios.md)
     - [Configurações do Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Configurações do Windows 10](email-settings-windows-10.md)
@@ -88,10 +86,10 @@ Se o usuário já tiver configurado uma conta de email, o resultado da atribuiç
 
 - **iOS**: um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O perfil de email duplicado bloqueará a atribuição de um perfil do Intune. Nesse caso, o Portal da Empresa informa ao usuário que ele não está em conformidade e solicita que ele remova o perfil configurado manualmente. Para ajudar a evitar esse problema, instrua os usuários a se registrarem antes de instalar um perfil de email, permitindo que o Intune configure o perfil.
 - **Windows**: um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O Intune substitui o perfil de email existente criado pelo usuário.
-- **Android**: um perfil de email existente e duplicado é detectado com base no endereço de email e é substituído pelo perfil do Intune.
+- **Android Samsung KNOX Standard** Um perfil de email existente e duplicado é detectado com base no endereço de email e é substituído pelo perfil do Intune.
 Como o Android não usa o nome do host para identificar o perfil, é recomendável que você não crie vários perfis de email para usar com o mesmo endereço de email em hosts diferentes, pois eles substituirão uns aos outros.
+- **Android for Work** O Intune fornece dois perfis de email do Android for Work, um para o aplicativo Gmail e outro para o Nine Work. Esses aplicativos estão disponíveis na Google Play Store e são instalados no perfil de trabalho do dispositivo, portanto não podem resultar em perfis duplicados. Os dois aplicativos oferecem suporte a conexões com o Exchange. Para habilitar a conectividade de email, implante um desses aplicativos de email nos dispositivos dos usuários e crie e implante o perfil de email apropriado. Aplicativos de email, como o Nine Work podem não ser gratuitos. Examine os detalhes de licenciamento do aplicativo ou entre em contato com a empresa do aplicativo com quaisquer perguntas.
 
 ### <a name="update-an-email-profile"></a>Atualizar um perfil de email
 
 Se você fizer alterações em um perfil de email atribuído anteriormente, os usuários finais poderão ver uma mensagem solicitando a aprovação da reconfiguração de suas configurações de email.
-

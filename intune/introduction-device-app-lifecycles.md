@@ -14,15 +14,12 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: bc02af1e0813580ed70f181ff401d0408f6dd082
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="overview-of-device-and-app-lifecycles"></a>Visão geral dos ciclos de vida do dispositivo e do aplicativo
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -34,4 +31,3 @@ Embora as necessidades das organizações individuais possam ser diferentes, exi
 Para fins de gerenciamento, todos os dispositivos têm um ciclo de vida. Ele começa quando você registra o dispositivo e estende até sua desativação. O [ciclo de vida de gerenciamento de dispositivo](device-lifecycle.md) explica como registrar o dispositivo, como configurá-lo e protegê-lo e como removê-lo do gerenciamento.
 
 Da mesma forma, aplicativos com os quais você trabalha têm seus próprios [ciclo de vida do aplicativo](app-lifecycle.md) que incluem as etapas desde a adição de um aplicativo ao Intune até sua remoção quando eles não são mais necessários.
-

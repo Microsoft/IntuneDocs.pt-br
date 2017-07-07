@@ -1,6 +1,7 @@
 ---
-title: "Definir as configurações do Windows Update para Empresas - Intune | Visualização do Intune Azure | Microsoft Docs"
-description: "Visualização do Intune Azure: saiba como definir as configurações do Windows Update para Empresas no Intune para controlar as atualizações para os dispositivos do Windows 10."
+title: "Definir as configurações do Windows Update for Business – Intune"
+titleSuffix: Intune on Azure
+description: "Saiba como definir as configurações do Windows Update for Business no Intune para controlar as atualizações em dispositivos Windows 10."
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Como definir as configurações do Windows Update para Empresas com o Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introdução
 O Windows como um Serviço é a nova maneira de fornecer atualizações para o Windows 10. Começando no Windows 10, quaisquer novas Atualizações de Recursos e Atualizações de Qualidade terão o conteúdo de todas as atualizações anteriores. Isso significa que contanto que você tenha instalado a atualização mais recente, sabe que seus dispositivos do Windows 10 estão completamente atualizados. Ao contrário das versões anteriores do Windows, agora você deve instalar a atualização inteira, em vez de parte de uma.
@@ -87,7 +85,7 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
     - **Comportamento da atualização automática**: escolha como gerenciar o comportamento da atualização automática para verificar, baixar e instalar as atualizações. Para obter detalhes, consulte [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Período de adiamento da atualização de qualidade (dias)** - especifique o número de dias para os quais as atualizações de qualidade serão adiadas. Você pode adiar recebendo essas Atualizações de Qualidade por um período de até 30 dias a partir de seu lançamento.  
 
-      As Atualizações de Qualidade são, em geral, correções e aprimoramentos da funcionalidade existente do Windows e normalmente são publicadas na primeira terça-feira de cada mês, embora possam ser lançadas a qualquer momento pela Microsoft. Você pode definir se, e por quanto tempo, deseja adiar o recebimento das Atualizações de Qualidade após sua disponibilidade.
+    As Atualizações de Qualidade são, em geral, correções e aprimoramentos da funcionalidade existente do Windows e normalmente são publicadas na primeira terça-feira de cada mês, embora possam ser lançadas a qualquer momento pela Microsoft. Você pode definir se, e por quanto tempo, deseja adiar o recebimento das Atualizações de Qualidade após sua disponibilidade.
     - **Período de adiamento da atualização do recurso (dias)** - especifique o número de dias para os quais as Atualizações do Recurso serão adiadas. Você pode adiar o recebimento dessas Atualizações do Recurso por um período de 180 dias após seu lançamento.
 
     As Atualizações do Recurso são geralmente novos recursos para o Windows. Depois de definir a configuração **Branch de serviço** (**CB** ou **CBB**), você pode definir se, e por quanto tempo, deseja adiar o recebimento das Atualizações do Recurso após sua disponibilidade no Windows Update pela Microsoft.
@@ -148,4 +146,3 @@ Você pode pausar o recebimento pelo dispositivo das Atualizações do Recurso o
 > [!IMPORTANT]
 > Ao emitir um comando para pausar, os dispositivos receberão esse comando quando eles verificarem o serviço na próxima vez. É possível que antes de verificarem, eles possam instalar uma atualização agendada.
 > Além disso, se um dispositivo de destino estiver desativado quando você emitir o comando para pausar, quando você o ativar, ele poderá baixar e instalar as atualizações agendadas antes de verificar com o Intune.
-

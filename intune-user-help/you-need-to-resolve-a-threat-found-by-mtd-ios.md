@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 9f3d03fe3c9da641f3c33d5d1e32032ac540adc9
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Você precisa resolver uma ameaça encontrada por um aplicativo de Defesa contra Ameaças Móveis
 
 A Defesa contra Ameaças Móveis encontrou uma possível ameaça em seu dispositivo iOS, e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email corporativo ou de estudante. Dependendo de como seu administrador de TI configurou a Defesa contra Ameaças Móveis, você usará um dos aplicativos a seguir para resolver esses tipos de problemas.
@@ -40,4 +36,3 @@ Se você instalou um aplicativo que a Defesa contra Ameaças Móveis considera u
 Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e a outros dados corporativos ou de estudante imediatamente. Se ignorar a solicitação para desinstalar o aplicativo, você perderá acesso ao email e aos dados da empresa até que desinstale o aplicativo.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

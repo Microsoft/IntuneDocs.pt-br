@@ -1,7 +1,7 @@
 ---
 title: "Monitorar as políticas de conformidade do dispositivo do Intune"
-titleSuffix: Intune Azure preview
-description: "Visualização do Intune Azure: saiba como monitorar as políticas de conformidade do dispositivo."
+titleSuffix: Intune on Azure
+description: "Saiba como monitorar políticas de conformidade do dispositivo."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -123,8 +121,6 @@ Se você clicar no **botão Filtrar**, o filtro suspenso será aberto com as seg
 
 Se você clicar no **botão Atualizar**, o menu suspenso deverá fechar e os resultados deverão ser atualizados de acordo com os critérios do filtro selecionados.
 
-![Botão para atualizar o filtro](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Detalhes do dispositivo
 
 Clicar em um dispositivo abre o **Folha de Dispositivos** com o dispositivo selecionado. Isso fornece mais detalhes sobre a configuração da política de conformidade do dispositivo aplicada nesse dispositivo.
@@ -154,4 +150,3 @@ Este relatório permite exibir - a configuração por conformidade - o número t
 Quando você clicar no bloco de Conformidade da configuração, então, clicar em uma das configurações da política de conformidade do dispositivo, conseguirá ver o **status de conformidade**, **alias de email do usuário**, **modelo do dispositivo** e **local** de cada dispositivo que foi direcionado por essa configuração da política de conformidade do dispositivo.
 
 ![Bloco de conformidade da configuração](./media/idc-11.png)
-

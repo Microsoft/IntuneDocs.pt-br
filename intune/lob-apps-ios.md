@@ -1,7 +1,7 @@
 ---
 title: "Como adicionar aplicativos de linha de negócios do iOS ao Intune"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: aprenda como adicionar aplicativos de linha de negócios iOS ao Intune."
+titleSuffix: Intune on Azure
+description: "Saiba como adicionar aplicativos de linha de negócios do iOS ao Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e9dea2b44279c26de2b2ea4141fe010645ba942
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bb26ca341fbef6ae02556b09044f43cec23dae2b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicativos de linha de negócios (LOB) do iOS para o Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Etapa 1 – Especificar os arquivos de instalação de software
@@ -69,4 +67,3 @@ ms.lasthandoff: 05/23/2017
 2. Escolha **Adicionar** para carregar o aplicativo no Intune.
 
 O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](apps-deploy.md).
-

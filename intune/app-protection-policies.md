@@ -1,7 +1,7 @@
 ---
 title: "Criar e implantar políticas de proteção do aplicativo"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como políticas de proteção de aplicativo do Intune podem ajudar a proteger os dados corporativos usados por aplicativos gerenciados."
+titleSuffix: Intune on Azure
+description: "Saiba como as políticas de Proteção de Aplicativo do Intune podem ajudar a proteger os dados da empresa usados pelos aplicativos gerenciados."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,23 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d63e99561766268941b2c6d8b3bb6a1dd028f72c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Se você não estiver no serviço do Intune no programa de versão prévia do Portal do Azure**, este tópico explicará [como criar políticas de proteção de aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) no console do Intune clássico.
+## <a name="before-you-begin"></a>Antes de começar
+
+Se você estiver procurando instruções no console clássico do Intune, consulte [Como criar políticas de proteção de aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 Políticas de proteção de aplicativo podem ser aplicadas a aplicativos em execução em dispositivos que podem ou não ser gerenciados pelo Intune. Para obter uma descrição mais detalhada do funcionamento das políticas de proteção de aplicativo e os cenários com suporte nas políticas de proteção de aplicativo do Intune, consulte [O que são as políticas de proteção de aplicativo do Microsoft Intune](app-protection-policy.md).
+
+Se você estiver procurando uma lista de aplicativos com suporte no MAM, consulte [Lista de aplicativos do MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicativo
 1.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Políticas de proteção de aplicativos**.
@@ -116,7 +118,6 @@ Para ver o efeito das alterações imediatamente, o usuário final precisará sa
 ## <a name="policy-settings"></a>Configurações de política
 Para ver uma lista completa de configurações de política para iOS e Android, selecione um dos seguintes:
 
-> [!div class="op_single_selector"]
 - [Políticas do iOS](app-protection-policy-settings-ios.md)
 - [Políticas do Android](app-protection-policy-settings-android.md)
 
@@ -126,4 +127,3 @@ Para ver uma lista completa de configurações de política para iOS e Android, 
 ### <a name="see-also"></a>Consulte também
 * [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-apps-android.md)
 * [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-apps-ios.md)
-

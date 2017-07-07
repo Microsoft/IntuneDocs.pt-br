@@ -1,12 +1,12 @@
 ---
 title: "O que é o registro do dispositivo do Microsoft Intune"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba mais sobre o registro de dispositivos iOS, Android e Windows."
+titleSuffix: Intune on Azure
+description: Saiba mais sobre o registro de dispositivos iOS, Android e Windows.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,14 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 57bad4be991b61fe5212d340ab8d89cb6af3b0f7
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 927e2f21aad4ff39c9351bef68eb510e93410c37
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Este tópico descreve o registro e as diferentes maneiras de registrar dispositivos móveis no gerenciamento do Intune.
 
@@ -37,66 +34,67 @@ Caso use o Exchange ActiveSync, hospedado na nuvem ou local, você pode habilita
 
 ## <a name="overview-of-device-enrollment-methods"></a>Visão geral dos métodos de registro do dispositivo
 
-A tabela a seguir mostra os métodos de registro do Intune e os requisitos e recursos com suporte de cada método. Os requisitos e recursos são descritos abaixo. Os seguintes termos são usados na tabela:
+A tabela a seguir fornece uma visão geral dos métodos de registro do Intune com suas funcionalidades e seus requisitos descritos abaixo.
+**Legenda**
 
-- **Apagar** – indica se o dispositivo precisa ser apagado antes que os usuários possam registrá-lo. O termo "apagar" significa uma redefinição de fábrica do dispositivo, que remove todos os dados. Para obter mais informações, consulte [Usar apagamento completo ou seletivo em dispositivos](devices-wipe.md).
-- **Afinidade** – associa dispositivos a usuários. Necessário para MAM (gerenciamento de dispositivo móvel) e acesso condicional a dados da empresa. Para obter mais informações, consulte [Afinidade do usuário](device-enrollment-program-enroll-ios.md).
-- **Bloqueio** – indica se os usuários são impedidos de cancelar o registro de seus dispositivos no gerenciamento. Os usuários podem cancelar o registro de seus dispositivos em todas as plataformas usando o aplicativo Portal da Empresa. Eles não podem usar os menus do sistema operacional nativo para cancelar o registro.
-
+- **Redefinição necessária** – o dispositivo é redefinido para as configurações de fábrica durante o registro.
+- **Afinidade de usuário** – associa dispositivos a usuários. Para obter mais informações, consulte [Afinidade do usuário](device-enrollment-program-enroll-ios.md).
+- **Bloqueado** – impede que os usuários cancelem o registro de dispositivos.
 
 **Métodos de registro do iOS**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes** |
+| **Método** |  **Redefinição Necessária** |    **Afinidade do usuário**   |   **Bloqueado** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | Mais informações em breve|
-|**[DEM](#dem)**|    Não |Não |Não    | [Mais informações](device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|    Sim |    Opcional |    Opcional|[Mais informações](device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**|    Sim |    Opcional |    Não| [Mais informações](apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**|    Não |    Não    | Não|[Mais informações](apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#dem)**|   Não |Não |Não  | [Mais informações](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[Mais informações](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [Mais informações](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| Não |    Não  | Não|[Mais informações](./apple-configurator-direct-enroll-ios.md)|
 
 **Métodos de registro do Windows**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
+| **Método** |  **Redefinição Necessária** |    **Afinidade do usuário**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não |    Sim |    Não | [Mais informações](windows-enroll.md)|
-|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](device-enrollment-manager-enroll.md)|
+|**[BYOD](#byod)** | Não |   Sim |   Não | [Mais informações](windows-enroll.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](device-enrollment-manager-enroll.md)|
+|**Registrar automaticamente** | Não |Sim |Não | [Mais informações](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Registrar em massa** |Não |Não |Não | [Mais informações](./windows-bulk-enroll.md) |
 
 **Métodos de registro do Android**
 
-| **Método** |    **Apagamento necessário?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
+| **Método** |  **Redefinição Necessária** |    **Afinidade do usuário**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](android-enroll.md)|
-|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| Não | Sim | Não| [Mais informações](android-enroll.md) |
+|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](./android-enroll.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](./device-enrollment-program-enroll-ios.md)|
+|**Android for Work**| Não | Sim | Não| [Mais informações](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD
-Usuários de “Traga seu próprio dispositivo” instalam o aplicativo de Portal da Empresa e registram o dispositivo. Isso permite que os usuários se conectem à rede da empresa e ingressem no domínio ou no Azure Active Directory. Para a maioria das plataformas, você precisa habilitar o registro de BYOD para muitos cenários de COD. Você pode bloquear o registro de dispositivos Android e iOS de propriedade pessoal. Consulte [Definir restrições de tipo de dispositivo](enrollment-restrictions-set.md#set-device-type-restrictions) para obter instruções.
+Os usuários do cenário “Traga seu próprio dispositivo” instalam e executam o aplicativo do Portal da Empresa para registrar seus dispositivos. Esse programa permite que os usuários acessem os recursos da empresa como email.
 
 ## <a name="corporate-owned-devices"></a>Dispositivos de propriedade corporativa
-CODs (dispositivos de propriedade corporativa) podem ser gerenciados com o Portal do Azure. Dispositivos iOS podem ser registrados diretamente por meio das ferramentas fornecidas pela Apple. Todos os tipos de dispositivo podem ser registrados por um administrador ou gerente usando o gerenciador de registro do dispositivo. Dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa para habilitar cenários de COD.
+Veja abaixo os cenários de registro COD (dispositivos de propriedade corporativa). Dispositivos iOS podem ser registrados diretamente por meio das ferramentas fornecidas pela Apple. Todos os tipos de dispositivo podem ser registrados por um administrador ou gerente usando o gerenciador de registro do dispositivo. Dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa para habilitar cenários de COD.
 
 ### <a name="dem"></a>DEM
-O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](device-enrollment-manager-enroll.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
+O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
+O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Esse método dá suporte ao modo **Supervisionado do iOS**, que, por sua vez, habilita a seguinte funcionalidade:
 
-  -    Registro bloqueado
-  -    Modo de quiosque e outras restrições e configurações avançadas
+  - Registro bloqueado
+  - Modo de quiosque e outras restrições e configurações avançadas
 
-Para saber mais sobre o registro de iOS, consulte:
+Saiba mais sobre o registro DEP do iOS:
 
 - [Escolha como registrar dispositivos iOS](enrollment-method-choose-ios.md)
 - [Registrar dispositivos iOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md)
-- [Voltar à tabela acima](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
-Os administradores de TI usam o Apple Configurator, por USB, para preparar manualmente todos os dispositivos de propriedade corporativa para o registro usando o Assistente de Configuração. O administrador de TI cria um perfil de registro e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, eles devem executar o Assistente de Instalação para registrá-los. Este método dá suporte ao modo **Supervisionado do iOS** que, por sua vez, permite:
-  -    Registro bloqueado
-  -    Modo de quiosque e outras restrições e configurações avançadas
+Os administradores de TI usam o Apple Configurator, por USB, para preparar manualmente todos os dispositivos de propriedade corporativa para o registro usando o Assistente de Configuração. O administrador de TI cria um perfil de registro e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, eles devem executar o Assistente de Instalação para registrá-los. Esse método dá suporte ao modo **Supervisionado do iOS**, que, por sua vez, habilita os seguintes recursos:
+  - Registro bloqueado
+  - Modo de quiosque e outras restrições e configurações avançadas
 
-Para saber mais sobre o registro de iOS, consulte:
+Saiba mais sobre o registro do Apple Configurator no iOS com o Assistente de Configuração:
 
 - [Decidir como registrar dispositivos iOS](enrollment-method-choose-ios.md)
 - [Registrar dispositivos iOS com o Configurator e o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md)
@@ -110,13 +108,8 @@ Para saber mais sobre o registro de iOS, consulte:
 - [Registrar dispositivos iOS com o Configurator e registro direto](apple-configurator-direct-enroll-ios.md)
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Gerenciamento de dispositivos móveis usando o Exchange ActiveSync e o Intune
-Dispositivos móveis que não estão registrados, mas que conectam ao EAS (Exchange ActiveSync) podem ser gerenciados pelo Intune usando a política de MDM do EAS. O Intune usa um Exchange Connector para se comunicar com o EAS, hospedado na nuvem ou local. Mais informações em breve.
-
-## <a name="supported-device-platforms-and-browsers"></a>Plataformas de dispositivo e navegadores com suporte
-
-Consulte [Dispositivos e navegadores com suporte no Intune](https://docs.microsoft.com/intune-classic/get-started/supported-mobile-devices-and-computers)
+Os dispositivos móveis que não estão registrados, mas que se conectam ao EAS (Exchange ActiveSync), podem ser gerenciados pelo Intune usando a política de MDM do EAS. O Intune usa um Exchange Connector para se comunicar com o EAS, hospedado na nuvem ou local. Mais informações em breve.
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpeza de dispositivo móvel após a expiração do certificado MDM
 
 O certificado do MDM é renovado automaticamente quando os dispositivos móveis estão se comunicando com o serviço Intune. Se os dispositivos móveis forem apagados ou se eles não conseguirem se comunicar com o serviço Intune por um certo período, o certificado do MDM não será renovado. O dispositivo é removido do Portal do Azure 180 dias após a expiração do certificado do MDM.
-

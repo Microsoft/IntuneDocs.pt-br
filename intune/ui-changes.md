@@ -1,7 +1,7 @@
 ---
 title: Para onde foi o meu recurso Intune no Azure?
-titleSuffix: Intune Azure preview
-description: "Visualização do Intune Azure: ajuda a localizar recursos do Intune no console do Azure."
+titleSuffix: Intune on Azure
+description: Ajuda a encontrar recursos do Intune no console do Azure.
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Assim, criamos este guia de referência para aqueles que estão totalmente familiarizados com o Intune no console clássico e querem saber como fazer algo no Intune no Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
 ## <a name="quick-reference-guide"></a>Guia de referência rápida
-| Recurso | Caminho no console clássico | Caminho do Intune no Azure | |------------||---------------|---------------|
-| Programa de registro do dispositivo (DEP) | Admin > gerenciamento de dispositivo móvel > iOS e Mac OS X > programa de registro de dispositivo |[Registro de dispositivo > registro Apple > Token do programa de registro](#where-did-apple-dep-go) |
-|Programa de registro do dispositivo (DEP) | Admin > gerenciamento de dispositivo móvel > iOS e Mac OS X > programa de registro de dispositivo |[Registro de dispositivo > registro Apple > números de série do programa de registro](#where-did-apple-dep-go) |
-|Regras de registro | Admin > gerenciamento de dispositivo móvel > regras de registro |[Registro de dispositivo > restrições de registro](#where-did-enrollment-rules-go) |
-| Grupos pelo número de série do iOS | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > pelo número de série do iOS |[Registro de dispositivo > registro Apple > números de série do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
-|Grupos pelo número de série do iOS | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > pelo número de série do iOS | [Registro de dispositivo > registro Apple > números de série de CA](#where-did-corporate-pre-enrolled-devices-go)|
-|Grupos por IMEI (todas as plataformas) | Grupos > todos os dispositivos > dispositivos corporativos pré-registrados > por IMEI (todas as plataformas) | [Registro de dispositivo > identificadores de dispositivo corporativo](#by-imei-all-platforms)|
-| Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registro de dispositivo > registro Apple > perfis do programa de registro](#where-did-corporate-pre-enrolled-devices-go) |
-| Perfil de registro do dispositivo corporativo | Política > registro de dispositivo corporativo | [Registro de dispositivo > registro Apple > perfis de CA](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Admin > Gerenciamento de Dispositivo Móvel > Android for Work | Registro de Dispositivo > Registro do Android for Work | | Termos e Condições | Política > Termos e Condições |Registro de dispositivo > Termos e Condições |
+|Recurso |Caminho no console clássico |Caminho no Intune no Azure| |------------||---------------|---------------| |DEP (Programa de registro de dispositivos) |Administrador > Gerenciamento de Dispositivo Móvel > iOS e Mac OS X > Programa de registro de dispositivos |[Registro de dispositivo > Registro da Apple > Token do Programa de Registro](#where-did-apple-dep-go) | |DEP (Programa de registro de dispositivos)| Administrador > Gerenciamento de Dispositivo Móvel > iOS e Mac OS X > Programa de registro de dispositivos |[Registro de dispositivo > Registro da Apple > Números de Série do Programa de Registro](#where-did-apple-dep-go) | |Regras de Registro | Administrador > Gerenciamento de Dispositivo Móvel > Regras de Registro |[Registro de dispositivo > Restrições de Registro](#where-did-enrollment-rules-go) | |Grupos por Número de Série do iOS |Grupos > Todos os Dispositivos > Dispositivos corporativos pré-registrados > Por Número de Série do iOS|[Registro de dispositivo > Registro da Apple > Números de Série do Programa de Registro](#where-did-corporate-pre-enrolled-devices-go) | |Grupos por Número de Série do iOS |Grupos > Todos os Dispositivos > Dispositivos corporativos pré-registrados > Por Número de Série do iOS| [Registro de dispositivo > Registro da Apple > Números de Série da CA](#where-did-corporate-pre-enrolled-devices-go)| |Grupos por IMEI (todas as plataformas) | Grupos > Todos os Dispositivos > Dispositivos corporativos pré-registrados > Por IMEI (Todas as plataformas) | [Registro de dispositivo > Identificadores de Dispositivo Corporativo](#by-imei-all-platforms)| |Perfil de Registro de Dispositivo Corporativo | Política > Registro de Dispositivo Corporativo | [Registro de dispositivo > Registro da Apple > Perfis do Programa de Registro](#where-did-corporate-pre-enrolled-devices-go) | | Perfil de Registro do Dispositivo Corporativo | Política > Registro de Dispositivo Corporativo | [Registro de dispositivo > Registro da Apple > Perfis de CA](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | Administrador > Gerenciamento de Dispositivo Móvel > Android for Work | Registro de dispositivo > Registro do Android for Work | | Termos e Condições | Política > Termos e Condições | Registro de dispositivo > Termos e Condições |
 
 
 ## <a name="where-do-i-manage-groups"></a>Onde gerencio grupos?
@@ -117,4 +106,3 @@ Para reduzir a confusão entre os dois tipos de perfil e potencias atribuições
 
 **Perfis do Apple Configurator**
 ![Imagem de perfis do Azure Apple Configurator](./media/16-azure-ac-profiles.png)
-

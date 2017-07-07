@@ -1,12 +1,12 @@
 ---
 title: "Definir as configurações de educação do Intune para Windows 10"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: aprenda a usar o Intune para definir configurações de educação do Windows 10 nos dispositivos gerenciados."
+titleSuffix: Intune on Azure
+description: "Saiba como usar o Intune para definir as configurações de educação do Windows 10 nos dispositivos gerenciados."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3acb45ccc9e67fb410a9511f138d1558a49fadf9
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 39aa668794280adc612122e9b2c3c4e7737b65e9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Como definir configurações de educação do Windows 10 no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Os perfis de educação permitem que você especifique os detalhes de configuração do aplicativo Windows Take a Test, incluindo detalhes da conta e a URL do teste. Ao configurar isso, o aplicativo Take a Testa é aberto com o teste especificado, e nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.
 
@@ -35,7 +32,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Criar um perfil de dispositivo que contém as configurações do perfil de educação
 
 1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
@@ -51,7 +48,6 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 
 O perfil será criado e aparecerá na folha da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
-
 
 
 

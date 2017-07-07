@@ -1,12 +1,12 @@
 ---
 title: Apagamento completo ou seletivo em dispositivos usando o Intune
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como realizar um apagamento seletivo de dados da empresa em um dispositivo ou fazer um apagamento completo para redefinição de fábrica do dispositivo."
+titleSuffix: Intune on Azure
+description: "Saiba como fazer um apagamento seletivo dos dados da empresa em um dispositivo ou um apagamento completo para redefinir o dispositivo para as configurações de fábrica."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Usar o apagamento completo ou seletivo
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Você pode apagar os aplicativos e dados de dispositivos gerenciados pelo Intune que não são mais necessários, que estão sendo realocados ou estão ausentes. Para isso, o Intune fornece funcionalidades de apagamento completo e apagamento seletivo. Os usuários também podem emitir um comando de apagamento remoto de dados no dispositivo do aplicativo de Portal da Empresa do Intune em dispositivos privados registrados no Intune.
 
@@ -101,8 +98,8 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|
 |Configurações do perfil de certificado|Certificados revogados, mas não removidos.|Certificados removidos e revogados.|
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
-|Email|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
-|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
+|Email|N/D (não há suporte para perfis de email em dispositivos Android)|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
+|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
 |Sair do Active Directory do Azure (AAD)|Registro no AAD removido.|Registro no AAD removido.|
 |Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
@@ -130,4 +127,3 @@ Executar a limpeza seletiva em um dispositivo Android para Trabalho remove todos
 3.  Na folha que mostra o nome do dispositivo, escolha **Remover dados da emp...** (significa Remover dados da empresa) e escolha **Sim** para confirmar o apagamento.
 
 Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
-

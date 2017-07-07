@@ -14,15 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-intune-for-education"></a>O que é o Intune para Educação?
 
 O Intune para Educação foi projetado para permitir a produtividade de professores e alunos, mas mantendo os dados da escola protegidos. O Intune é um serviço EMM (gerenciamento de mobilidade empresarial) baseado em nuvem e é o alicerce para o Intune para Educação.
@@ -45,4 +42,3 @@ Com o Intune e o Intune para Educação, você pode:
 * Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
 * Leia sobre a maneira mais rápida de [começar a usar o Intune para Educação](/intune-education/what-is-express-configuration).
 * Aprofunde-se nas [funcionalidades e requisitos técnicos](/intune/supported-devices-browsers) do Intune.
-

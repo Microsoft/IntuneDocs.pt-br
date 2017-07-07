@@ -1,7 +1,7 @@
 ---
 title: "Como criar uma política de conformidade para o iOS"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: aprenda a criar uma política de conformidade para dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Saiba como criar uma política de conformidade para dispositivos iOS."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 423c6058c8a2803e62a90f309f4b9c9ad62f9ede
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos iOS no Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Como criar uma política de conformidade do dispositivo para dispositivos iOS na versão prévia do Intune Azure
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As políticas de conformidade são criadas para cada plataforma.  Você pode criar uma política de conformidade no Portal do Azure. Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -124,4 +121,3 @@ Para obter detalhes sobre o perfil de email, consulte [Configurar o acesso ao em
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

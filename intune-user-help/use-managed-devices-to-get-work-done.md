@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos gerenciados para realizar o trabalho
 O Microsoft Intune é um software que permite às organizações gerenciar dispositivos (como smartphones, tablets e computadores), aplicativos e outros recursos corporativos como email. Isso concede aos funcionários acesso às suas informações de trabalho de praticamente qualquer lugar em quase qualquer dispositivo, ajudando a proteger informações corporativas.
 
@@ -101,4 +97,3 @@ A Microsoft recomenda que você tente primeiro ver se consegue corrigir o proble
 - [Corrigir problemas comuns com o dispositivo Windows](troubleshoot-your-device-windows.md)
 
 É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar seu administrador de TI para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).
-

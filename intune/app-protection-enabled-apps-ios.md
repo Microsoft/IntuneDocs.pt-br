@@ -1,7 +1,7 @@
 ---
-title: "Aplicativos iOS com políticas de proteção do aplicativo | Visualização do Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: este tópico descreve o que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo."
+title: "Aplicativos iOS com políticas de proteção de aplicativo"
+titleSuffix: Intune on Azure
+description: "Este tópico descreve o que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5e172b940dfae32213c870b29f05f56573192704
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
 ##  <a name="accessing-apps"></a>Acessando aplicativos
 
 Se o dispositivo **não estiver registrado no Intune**, o usuário final será solicitado a reiniciar o aplicativo quando usar o aplicativo pela primeira vez.  Uma reinicialização é necessária para que as políticas de proteção de aplicativo possam ser aplicadas ao aplicativo. A captura de tela a seguir ilustra isso usando o aplicativo Skype:
@@ -67,4 +64,3 @@ Se estiver usando um dispositivo iOS, ao tentar adicionar uma segunda conta corp
 [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>Consulte também
 [Criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](app-protection-policies.md)
-
