@@ -1,7 +1,7 @@
 ---
 title: Como monitorar a conformidade do dispositivo
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como a monitorar a conformidade do dispositivo."
+titleSuffix: Intune on Azure
+description: Saiba como monitorar a conformidade do dispositivo.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,20 +15,18 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Como monitorar a conformidade do dispositivo na visualização do Intune no Azure
+# <a name="how-to-monitor-device-compliance-in-intune"></a>Como monitorar a conformidade do dispositivo no Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Você pode exibir o resumo do status dos seus **perfis de conformidade** na folha **Visão geral**.
-Você pode clicar em interativamente nos gráficos para analisar os detalhes. Se você tiver vários perfis de conformidade configurados, também será possível exibir o status de cada política indo até a folha de política e escolhendo **Relatórios** na seção **Gerenciar**.  Os detalhes dos relatórios disponíveis para a versão prévia estão listados abaixo.
+Você pode clicar em interativamente nos gráficos para analisar os detalhes. Se você tiver vários perfis de conformidade configurados, também será possível exibir o status de cada política indo até a folha de política e escolhendo **Relatórios** na seção **Gerenciar**.  Os detalhes dos relatórios disponíveis são listados abaixo.
 
 ##  <a name="device-compliance"></a>Conformidade do dispositivo
 
@@ -48,4 +46,3 @@ O relatório de conformidade de configuração fornece detalhes sobre cada confi
 - A plataforma à qual a configuração é aplicada.
 
 Você pode fazer uma busca detalhada em cada configuração para obter mais informações sobre os perfis nos quais essas configurações tem sido habilitadas e o valor da configuração.
-

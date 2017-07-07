@@ -1,12 +1,12 @@
 ---
 title: "Como definir configurações personalizadas do dispositivo do Intune"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: aprenda a usar o Intune para definir configurações personalizadas nos dispositivos gerenciados."
+titleSuffix: Intune on Azure
+description: "Saiba como usar o Intune para definir configurações personalizadas nos dispositivos gerenciados."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40a37a02ac49a74e3f715b0e2191868ecf2e264b
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Como definir configurações personalizadas do dispositivo no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="when-to-use-custom-settings"></a>Quando usar configurações personalizadas
 
@@ -38,7 +35,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a de
 ## <a name="create-a-device-profile-containing-custom-settings"></a>Criar um perfil de dispositivo que contém configurações personalizadas
 
 1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
@@ -53,7 +50,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a de
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do Android](custom-settings-android.md)
     - [Configurações do iOS](custom-settings-ios.md)
-    - [Configurações do macOS](custom settings-macos.md)
+    - [Configurações do macOS](custom-settings-macos.md)
     - [Configurações do Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Configurações do Windows 10](custom-settings-windows-10.md)
     - [Configurações do Android for Work](custom-settings-android-for-work.md)
@@ -61,4 +58,3 @@ Use as informações neste tópico para aprender as noções básicas sobre a de
 
 O perfil será criado e aparecerá na folha da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
-

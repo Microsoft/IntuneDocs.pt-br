@@ -1,7 +1,7 @@
 ---
 title: "Definir configurações de restrição de dispositivo do Intune"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: aprenda a usar o Intune para definir configurações e recursos nos dispositivos gerenciados."
+titleSuffix: Intune on Azure
+description: "Saiba como usar o Intune para definir configurações e recursos nos dispositivos gerenciados."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Como definir as configurações de restrição de dispositivo no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Restrições de dispositivo permitem controlar uma grande variedade de configurações e recursos que você gerencia em uma gama de categorias, incluindo configurações de segurança, navegador, hardware e compartilhamento de dados. Por exemplo, você pode criar um perfil de restrição de dispositivo que impede que os usuários de dispositivos iOS acessem a câmera do dispositivo.
 
@@ -35,7 +32,7 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Criar um perfil de dispositivo que contém as configurações de restrição de dispositivo
 
 1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Configurar dispositivos**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
@@ -67,5 +64,4 @@ Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis
 Neste exemplo de alto nível, você criará uma política de restrição de dispositivo que bloqueia o uso do aplicativo de câmera interna em dispositivos Android.
 
 ![Como desabilitar a câmera em dispositivos Android](./media/disable-android-camera.png)
-
 

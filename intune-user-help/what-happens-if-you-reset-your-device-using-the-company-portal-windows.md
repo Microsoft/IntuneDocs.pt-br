@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
 
 Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empresa](reset-erase-your-device-cpwebsite.md) para redefinir o dispositivo do Windows, ele redefine o dispositivo para as configurações de fábrica e exclui todos os aplicativos, configurações e dados, incluindo seus dados pessoais. O que acontece em cada dispositivo depende do tipo de dispositivo que você tem e de como ele é usado (conforme descrito na tabela a seguir). Para obter instruções sobre como redefinir o dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md) (Redefinir (apagar) o dispositivo perdido ou roubado).
@@ -38,4 +33,3 @@ Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empre
 |PCs e laptops|**Windows 8.1 e Windows 8**<br />Você não pode redefinir um computador que esteja executando o Windows 8 ou o Windows 8.1, a menos que ele seja usado somente para email.<br /><br />**Windows 7 ou Windows Vista**<br />Não será possível redefinir um computador que esteja executando o Windows 7 ou anterior.|
 
 Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

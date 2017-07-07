@@ -1,7 +1,7 @@
 ---
 title: "O que são políticas de proteção do aplicativo"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: use este tópico para aprender a proteger os dados da empresa com as políticas de proteção de aplicativo do Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Use este tópico para saber como proteger os dados da empresa com as políticas de Proteção de Aplicativo do Microsoft Intune."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As políticas de proteção de aplicativo do Microsoft Intune ajudam a proteger os dados da empresa e evitar a perda de dados.
 
@@ -68,7 +65,7 @@ Há benefícios adicionais em usar MDM com políticas de proteção de aplicativ
 
 -   Android 4 ou posterior
 
-Não há suporte para dispositivos Windows. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Não há suporte para dispositivos Windows. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicativo protegem dados do aplicativo
 
 ####  <a name="apps-without-app-protection-policies"></a>Aplicativos sem políticas de proteção de aplicativo
@@ -138,4 +135,3 @@ Por exemplo, quando o usuário inicia o aplicativo OneDrive usando sua conta de 
 ##  <a name="next-steps"></a>Próximas etapas
 
 [Como criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](app-protection-policies.md)
-

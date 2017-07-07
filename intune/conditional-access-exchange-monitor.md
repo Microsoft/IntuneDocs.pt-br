@@ -1,6 +1,6 @@
 ---
 title: Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online por meio do Portal do Azure no Intune
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online na visualização do Azure no Intune
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorar a conformidade de acesso condicional do Exchange Local e do Exchange Online no Intune
 
 A partir da versão 1704 do Intune, os administradores podem ver informações de relatório relacionadas aos registros de dispositivos do Exchange ActiveSync que estão sincronizados com o Intune através do Exchange Connector local ou o Service to Service Connector do Intune (conector do Exchange Online). Os relatórios de conformidade de acesso condicional fornecem um resumo dos dispositivos com estados de sincronização diferentes:
 
@@ -70,4 +67,3 @@ Na folha detalhes do dispositivo, você pode ver mais informações:
 -   **Configuração do dispositivo:** mostra todos os detalhes de configuração do dispositivo.
 
 -   **Acesso do Exchange:** aqui você pode aprender mais sobre o estado do dispositivo após a aplicação de políticas de acesso condicional.
-

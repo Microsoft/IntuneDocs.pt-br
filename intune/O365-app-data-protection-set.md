@@ -1,7 +1,7 @@
 ---
-title: "Definir o gerenciamento de dados básicos em aplicativos do Office 365 – visualização do Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: documentação de suporte para o Assistente de aplicativos para gerenciar o Office 365."
+title: "Definir o gerenciamento de dados básico em aplicativos do Office 365 no Intune"
+titleSuffix: Intune on Azure
+description: "Documentação de suporte do assistente Gerenciar aplicativos do Office 365."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Como seus usuários receberão a proteção básica nos aplicativos gerenciados do Office 365
 
 O assistente **Gerenciar aplicativos Office 365** cria uma política de proteção de aplicativo para cada plataforma de dispositivo.
@@ -129,9 +125,8 @@ No Android, para aplicativos que estão associados a uma política de MAM do Int
 Você sempre poderá editar essas configurações de política para atender às necessidades da sua organização.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Como posso exibir e editar as políticas criadas pelo assistente?
-Para ver ou atualizar essas políticas ou as políticas que você criar na versão prévia do Intune Azure, no painel, escolha **Gerenciar aplicativos** > **Políticas de Proteção de Aplicativo**. A lista de políticas será aberta à direita. Escolha a política que você deseja exibir para ver e editar as configurações. <br/>
+Para ver ou atualizar essas políticas ou as políticas que você criar no portal do Intune no Azure, no painel, escolha **Gerenciar aplicativos** > **Políticas de Proteção de Aplicativo**. A lista de políticas será aberta à direita. Escolha a política que você deseja exibir para ver e editar as configurações. <br/>
 ![Imagem do caminho da interface do usuário para exibir políticas](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais sobre as [políticas de proteção de aplicativo](https://docs.microsoft.comapp-protection-policy.md).
-

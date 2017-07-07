@@ -1,7 +1,7 @@
 ---
 title: Como apagar apenas dados corporativos de aplicativos
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como apagar seletivamente os aplicativos com o Microsoft Intune."
+titleSuffix: Intune on Azure
+description: Saiba como apagar aplicativos seletivamente com o Microsoft Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Quando um dispositivo é perdido ou roubado ou quando um funcionário sai da empresa, você quer ter certeza de que os dados dos aplicativos da empresa sejam removidos do dispositivo. No entanto, talvez você não queira remover dados pessoais do dispositivo, principalmente quando se trata de um dispositivo que pertence a um funcionário.
 
@@ -38,7 +36,7 @@ Para remover seletivamente os dados de aplicativo da empresa, crie uma solicita�
 
 1.  Entre no [Portal do Azure](https://portal.azure.com).
 
-2.  Escolha **Mais Serviços**, digite **Intune** na caixa de texto de filtro e selecione **Intune**. A folha da versão prévia do Intune se abre, escolha a folha **Gerenciar aplicativos**.
+2.  Escolha **Mais Serviços**, digite **Intune** na caixa de texto de filtro e selecione **Intune**. A folha do Intune é aberta. Escolha a folha **Gerenciar aplicativos**.
 
     ![Captura de tela da folha Nova solicitação para apagar](./media/intune-azure-preview-blade.png)
 

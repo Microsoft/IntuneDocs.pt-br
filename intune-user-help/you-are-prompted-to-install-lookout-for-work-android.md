@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work"></a>É necessário instalar o Lookout for Work
 
 Antes de poder acessar seu trabalho, o administrador de TI exige que você instale o aplicativo Lookout for Work, que ajuda a proteger seu dispositivo localizando possíveis ameaças à segurança.
@@ -32,11 +28,11 @@ Se tiver problemas com a instalação, tente executar as etapas de solução de 
 
 **O que você deve fazer:**
 
-1.    Arraste para baixo da parte superior da tela para abrir a barra de Notificações e toque em **Aplicativo necessário – Instalar Lookout for Work da Play Store**.
+1.  Arraste para baixo da parte superior da tela para abrir a barra de Notificações e toque em **Aplicativo necessário – Instalar Lookout for Work da Play Store**.
 
   ![você precisa instalar o Lookout for Work](./media/lookout-required-app-install-android.png)
 
-2.    Você será levado à página de instalação do Lookout for Work na Play Store. Instale o Lookout for Work e toque em **ACEITAR** para permitir que o Lookout for Work acesse seu dispositivo.
+2.  Você será levado à página de instalação do Lookout for Work na Play Store. Instale o Lookout for Work e toque em **ACEITAR** para permitir que o Lookout for Work acesse seu dispositivo.
 
   ![toque em aceitar para permitir que o Lookout for Work acesse seu dispositivo](./media/lookout-accept-store-permissions-android.png)
 
@@ -79,4 +75,3 @@ Se tiver problemas com a instalação, tente executar as etapas de solução de 
 Às vezes, as instalações podem falhar devido a problemas técnicos fora de seu controle. Se isso acontecer, tente instalar o Lookout for Work [manualmente na Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

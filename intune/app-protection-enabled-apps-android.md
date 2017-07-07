@@ -1,7 +1,7 @@
 ---
 title: "Aplicativos Android com políticas de proteção do aplicativo"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: este tópico descreve o que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo."
+titleSuffix: Intune on Azure
+description: "Este tópico descreve o que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c1704e5e63be434eaacaeec6e575640310ce74b3
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
 ##  <a name="accessing-apps"></a>Acessando aplicativos
 
 O aplicativo Portal da Empresa é necessário para todos os aplicativos associados a políticas de proteção de aplicativo em dispositivos Android.
@@ -84,4 +81,3 @@ Os tipos de arquivo a seguir têm suporte:
 
 ### <a name="see-also"></a>Consulte também
 [Criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](app-protection-policies.md)
-

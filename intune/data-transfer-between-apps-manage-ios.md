@@ -1,12 +1,12 @@
 ---
-title: "Gerenciar a transferência de dados entre aplicativos iOS | Visualização do Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: use este tópico para entender como você pode usar o recurso Open in do iOS e as políticas de gerenciamento de aplicativo móvel para gerenciar transferências de dados entre aplicativos."
+title: "Gerenciar a transferência de dados entre aplicativos iOS"
+titleSuffix: Intune on Azure
+description: "Use este tópico para entender como você pode usar o recurso “Open-in” do iOS e as políticas de gerenciamento de aplicativo móvel para gerenciar transferências de dados entre aplicativos."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Como gerenciar a transferência de dados entre aplicativos iOS
 ## <a name="manage-ios-apps"></a>Gerenciar aplicativos iOS
 Proteger os dados da sua empresa inclui garantir que as transferências de arquivos sejam restritas a aplicativos gerenciados por você.  Você pode gerenciar aplicativos iOS das seguintes maneiras:
@@ -36,7 +33,7 @@ O recurso **Abrir em gerenciamento** para dispositivos iOS pode limitar as trans
 ##  <a name="using-app-protection-with-ios-apps"></a>Usando a proteção do aplicativo com aplicativos iOS
 Políticas de proteção de aplicativo podem ser usadas com o recurso iOS **Abrir no gerenciamento** para proteger os dados da empresa das seguintes maneiras:
 
--   **Dispositivos de propriedade do funcionário não gerenciados por nenhuma solução de MDM:** você pode definir as configurações de política de proteção de aplicativo para **Permitir que o aplicativo transfira dados somente para aplicativos gerenciados**. O usuário final não poderá abrir o arquivo protegido em um aplicativo que não for gerenciado por políticas.
+-   **Dispositivos do funcionário não gerenciados por nenhuma solução de MDM:** defina as configurações de política de proteção de aplicativo como **Permitir que o aplicativo transfira dados somente para aplicativos Gerenciados por Política**. O comportamento do “Open-in” em um aplicativo Gerenciado por Política somente apresentará outros aplicativos Gerenciados por Política como uma opção de compartilhamento. Se um usuário tentar enviar um arquivo protegido por política como um anexo no OneDrive no email nativo, esse arquivo ficará ilegível.
 
 -   **Dispositivos gerenciados pelo Intune:** para dispositivos registrados no Intune, transferência de dados entre aplicativos com as políticas de proteção de aplicativo e outros aplicativos do iOS gerenciado implantados por meio do Intune é permitida automaticamente. Para permitir a transferência de dados entre aplicativos com as políticas de proteção de aplicativo, habilite a configuração **Permitir que o aplicativo transfira dados somente para aplicativos gerenciados**. Você pode usar o recurso **Aberto em gerenciamento** para controlar a transferência de dados entre aplicativos que são implantados pelo Intune.   
 
@@ -108,4 +105,3 @@ Primeiro, [crie e atribua uma política de proteção de aplicativo](app-protect
 
 ### <a name="see-also"></a>Consulte também
 [O que é a política de proteção de aplicativo do Intune](app-protection-policy.md)
-

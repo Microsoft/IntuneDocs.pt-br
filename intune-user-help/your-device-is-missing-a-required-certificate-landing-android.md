@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="your-device-is-missing-a-required-certificate"></a>Falta ao dispositivo um certificado necessário
 
 ## <a name="whats-a-certificate"></a>O que é um certificado?
@@ -43,4 +39,3 @@ A primeira etapa que você deve tentar é verificar se o dispositivo [não tem u
 Se isso não funcionar, o administrador de TI poderá [exigir a instalação de um segundo certificado para segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

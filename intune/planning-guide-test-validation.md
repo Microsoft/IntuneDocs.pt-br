@@ -14,15 +14,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 4ea2974c4724564cd8f9972fdb238b06d1b100e6
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -86,4 +83,3 @@ O teste de validação do usuário final deve ser realizado para validar se a ex
 ## <a name="next-steps"></a>Próximas etapas
 
 Agora que você testou e validou os cenários de caso de uso e funcionais do Intune, você está pronto para a distribuição de produção do Intune. Consulte [Recursos adicionais](planning-guide-resources.md) para obter mais informações.
-

@@ -1,7 +1,7 @@
 ---
 title: Conformidade do dispositivo
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: use este tópico para saber mais sobre a conformidade do dispositivo no Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Use este tópico para saber mais sobre a conformidade do dispositivo no Microsoft Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>O que é a conformidade do dispositivo no Intune?
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>O que é a conformidade de dispositivo na versão prévia do Intune Azure?
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As políticas de conformidade de dispositivo no Intune definem as regras e configurações às quais um dispositivo deve obedecer para ser considerado compatível pelas políticas de acesso condicional do EMS e do Intune. Você também pode usar as políticas de conformidade de dispositivo para monitorar e corrigir problemas de conformidade com dispositivos. 
 
@@ -79,7 +76,7 @@ Quando você usa as políticas de conformidade de forma independente, os disposi
 
 Você pode implantar uma política de conformidade para usuários. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade. Para saber quanto tempo levará para que dispositivos móveis obtenham uma política após a política ser implantada, consulte Gerenciar configurações e recursos em seus dispositivos.
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Console de administração clássica do Intune vs. Portal de visualização do Intune no Azure
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Console de administração clássica do Intune vs. Intune no portal do Azure
 
 Se você já usou o console de administração clássica do Intune, observe as seguintes diferenças para ajudar na transição para o novo fluxo de trabalho da política de conformidade do dispositivo no portal do Azure:
 
@@ -89,7 +86,7 @@ Se você já usou o console de administração clássica do Intune, observe as s
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migração do console clássico do Intune para o Portal de visualização do Intune no Azure
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Migração do console clássico do Intune para o Intune no portal do Azure
 
 As políticas de conformidade do dispositivo criadas no [Console clássico do Intune](https://manage.microsoft.com) não aparecerão no novo [Portal do Intune no Azure](https://portal.azure.com). No entanto, elas ainda serão destinadas aos usuários e poderão ser gerenciadas por meio do console clássico do Intune.
 
@@ -103,4 +100,3 @@ Se você quiser aproveitar os novos recursos relacionados à conformidade do dis
 <!---### See also
 
 Conditional access--->
-

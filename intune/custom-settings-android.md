@@ -1,7 +1,7 @@
 ---
 title: "Configurações personalizadas do Intune para dispositivos Android"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba as configurações que você pode usar em um perfil personalizado do Android."
+titleSuffix: Intune on Azure
+description: "Conheça as configurações que você pode usar em um perfil personalizado do Android."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ff3d3b1596f58213bed2509b1bfd5ae81c63f440
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Configurações personalizadas para dispositivos Android no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use o perfil **Personalizado** do Android do Microsoft Intune para atribuir configurações OMA-URI, que podem ser usadas para controlar recursos em dispositivos Android. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
@@ -43,4 +40,3 @@ Essa funcionalidade destina-se a permitir que você atribua configurações do A
     - **OMA-URI** – Especifique o OMA-URI para o qual você deseja fornecer uma configuração.
     - **Valor** – Especifique o valor que você deseja associar ao OMA-URI inserido.
 4. Clique em **OK** quando terminar e continue a adicionar mais configurações conforme necessário.
-

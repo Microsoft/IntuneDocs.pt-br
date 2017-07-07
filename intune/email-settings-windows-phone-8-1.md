@@ -1,7 +1,7 @@
 ---
 title: "Configurações de email do Intune para dispositivos Windows Phone 8.1"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba mais sobre as configurações do Intune que você pode usar para configurar conexões de email em dispositivos Windows Phone 8.1."
+titleSuffix: Intune on Azure
+description: "Conheça as configurações do Intune que você pode usar para configurar as conexões de email em dispositivos Windows Phone 8.1."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986d02721012ce356b18cf983087b5babd03bb23
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4925ceb1be344a12270ee40519096a62b1f0c739
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Configurações de perfil de email para dispositivos Windows Phone 8.1 no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 - **Aplicar todas as configurações somente ao Windows Phone 8.1** – Essa é uma configuração de pode ser definida no Portal Clássico do Intune. Não é possível alterar essa configuração no Portal do Azure. Se definido como **Configurado**, as configurações serão aplicadas somente aos dispositivos com Windows Phone 8.1. Se definido como **Não Configurado**, essas configurações também serão aplicadas aos dispositivos Windows 10 Mobile.
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
     - **Contatos**
     - **Calendário**
     - **Tarefas**
-

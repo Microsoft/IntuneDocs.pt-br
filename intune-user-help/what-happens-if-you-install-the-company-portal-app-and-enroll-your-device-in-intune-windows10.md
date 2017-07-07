@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows 10 no Intune?
 
 Quando instala o aplicativo de Portal da Empresa e usa o aplicativo para registrar seu dispositivo Windows 10 Enterprise ou Professional no Intune, você pode usar o aplicativo de Portal da Empresa para:
@@ -57,4 +53,3 @@ Quando você adicionar um computador:
 -   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. O administrador de TI também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo ou excluir todos os dados do disco rígido se você tentar muitas vezes.
 
 Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
-
