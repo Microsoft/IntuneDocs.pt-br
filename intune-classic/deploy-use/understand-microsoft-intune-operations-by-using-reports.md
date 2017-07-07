@@ -1,5 +1,5 @@
 ---
-title: "Entender as operações usando relatórios | Microsoft Docs"
+title: "Entender as operações usando relatórios"
 description: "Crie e gerencie relatórios sobre software, hardware e licenças de software em sua organização."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Entender as operações do Microsoft Intune usando relatórios
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Além disso, os relatórios dão suporte às seguintes ações:
 |**Salvar**|Na página **Criar novo relatório** , cada usuário pode salvar até 100 relatórios. Configure os parâmetros de relatório em seus requisitos e escolha **Salvar**ou **Salvar como** se desejar usar um nome diferente.|
 |**Carregar**|Na página **Criar novo relatório** , escolha **Carregar** para recuperar quaisquer configurações salvas anteriormente ou parâmetros de relatório.|
 |**Excluir**|No espaço de trabalho **Relatórios**, selecione o tipo de relatório desejado e escolha **Carregar**. Em seguida, na lista de relatórios, escolha o ícone Excluir (x) ao lado do relatório.|
-
 
 

@@ -1,5 +1,5 @@
 ---
-title: Proteger email para o Exchange Online | Microsoft Docs
+title: Proteger o email no Exchange Online
 description: Proteja e controle o acesso ao email da empresa no Exchange Online com acesso condicional.
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: c428d7f01872c9f0968bb69dc4dc1886a7c1828b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Proteger o acesso ao email no Exchange Online e ao novo Exchange Online Dedicado com o Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -210,7 +206,7 @@ Somente os grupos que são afetados pela política de acesso condicional são av
         Isso exige que os dispositivos usados para acessar o **Exchange Online** sejam registrados no Intune e estejam em conformidade com as políticas. Qualquer aplicativo cliente que use a **autenticação moderna** está sujeito à política de acesso condicional. Se, no momento, não houver suporte para a plataforma no Intune, o acesso ao **Exchange Online** será bloqueado.
 
         Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente. Todas as plataformas devem ser registradas e estar em conformidade, exceto:
-        *    Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
+        *   Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
         * Plataformas sem suporte, como Mac OS. No entanto, os aplicativos que usam a autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
 
     -   **Plataformas específicas**
@@ -275,4 +271,3 @@ No painel do Intune, escolha o bloco **Dispositivos Bloqueados do Exchange** par
 - [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Proteger o acesso ao Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-your-windows-device-with-intune"></a>Usando seu dispositivo Windows com o Intune
 
 Há várias coisas que você pode fazer com o Intune para facilitar sua vida profissional. Esta é uma lista das tarefas mais comuns que sua empresa pode exigir de você.
@@ -57,4 +53,3 @@ Existem algumas outras versões do Windows, tais como [Windows 10 Holographic](h
 - [O que acontece quando você redefine o dispositivo usando o Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sincronizar o dispositivo manualmente](sync-your-device-manually-windows.md)
-

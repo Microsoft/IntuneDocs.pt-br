@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Uma conta de email da empresa existente foi encontrada
 
 Você já tem uma conta de email com sua organização ou empresa e agora deseja acessá-la em seu dispositivo móvel. Seu administrador de TI precisa de sua ajuda a proteger o acesso ao email em seu trajeto da pessoa que o enviou para seu dispositivo. Seu email atual pode ter funcionado, mas executar essas etapas manterá as informações mais seguras.
@@ -39,4 +35,3 @@ Você já tem uma conta de email com sua organização ou empresa e agora deseja
 3.  Aguarde alguns instantes para novas configurações de email a serem aplicadas automaticamente ao seu dispositivo.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

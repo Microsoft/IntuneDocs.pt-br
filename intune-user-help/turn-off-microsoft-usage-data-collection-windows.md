@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: cc242a36957ed897198f597ab7864aca21a7820d
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Como desligar a coleta de dados da Microsoft
 
 A Microsoft coleta automaticamente determinados dados sobre nossos produtos e serviços. Fazemos isso para melhorar a confiabilidade e o desempenho de nossos produtos, incluindo o aplicativo Portal da Empresa. Embora esses dados sejam anônimos, alguns usuários talvez não se sintam à vontade com essa coleta. O administrador de TI não tem controle sobre a coleta desses dados e não pode alterar a seleção dessa configuração.
@@ -34,4 +29,3 @@ A Microsoft coleta automaticamente determinados dados sobre nossos produtos e se
 Se desejar desligar a coleta de dados de uso em seu dispositivo Windows, encontre a configuração **Dados de Uso** no aplicativo Portal da Empresa.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

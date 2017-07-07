@@ -1,5 +1,5 @@
 ---
-title: "Monitorar implantações de aplicativo | Microsoft Docs"
+title: "Monitorar implantações de aplicativo"
 description: Saiba como monitorar aplicativos implantados com o Intune.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Monitorar implantações de aplicativo no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ Na lista de aplicativos, selecione qualquer aplicativo e escolha **Exibir Propri
 Na página **Propriedades de Software** do aplicativo, clique em uma dessas guias: **Geral** – mostra informações gerais sobre o aplicativo e seu status de instalação, **Dispositivos** – mostra os dispositivos que instalaram com êxito uma implantação direcionada do aplicativo e **Usuários** – mostra os usuários cujos dispositivos instalaram com êxito uma implantação direcionada do aplicativo.
 
 Assim como antes, você pode usar a lista suspensa **Filtros** para configurar os valores mostrados em cada uma das guias.
-

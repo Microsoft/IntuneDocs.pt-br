@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector para Exchange Online | Microsoft Docs
+title: Exchange Connector para o Exchange Online
 description: "Conecte o Intune ao serviço Office 365 Exchange para dar suporte ao MDM (gerenciamento de dispositivo móvel) do Exchange ActiveSync."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b73767f585cfa6283c7fb0601e7061efe42c606
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c2f30e7827db280ba49fc49b6b7a00c9a8d9eade
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Configurar o Service to Service Connector do Intune para o Exchange Online
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,8 +33,8 @@ O **Service to Service Connector** tem suporte apenas para o Exchange Online ou 
 |---------------|--------------------|
 |Exchange Online configurado e em execução|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Autoridade de gerenciamento de dispositivo móvel| [Configurar a autoridade de gerenciamento de dispositivo móvel para o Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Versão do Microsoft Exchange|Serviço Exchange Online ou o novo Exchange Online Dedicado|
-|Sincronização do Active Directory|Antes de usar o Conector do Intune, é preciso [configurar a sincronização do Active Directory](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) para que os usuários e grupos de segurança locais sejam sincronizados com sua instância do Azure Active Directory.|
+|Versão do Microsoft Exchange|Serviço Exchange Online ou o novo Exchange Online Dedicado|/intune/users-permissions-add
+|Sincronização do Active Directory|Antes de usar o Conector do Intune, é preciso [configurar a sincronização do Active Directory](/intune/users-permissions-add) para que os usuários e grupos de segurança locais sejam sincronizados com sua instância do Azure Active Directory.|
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos de cmdlets do Exchange
 
@@ -67,4 +64,3 @@ O Service to Service Connector configura e sincroniza automaticamente seu ambien
 Após configurar com êxito o Exchange Connector, vá para o [console de administração do Microsoft Intune](https://manage.microsoft.com). Selecione **Admin**> **Gerenciamento de Dispositivo Móvel** > **Microsoft Exchange**. Em seguida, confirme se os detalhes fornecidos aparecem em **Informações sobre Conexão com o Exchange**.
 
 Você também pode verificar a hora e data da última tentativa de sincronização bem-sucedida.
-

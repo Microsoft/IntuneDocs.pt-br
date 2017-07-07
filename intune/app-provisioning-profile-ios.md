@@ -1,7 +1,7 @@
 ---
-title: Perfis de provisionamento do aplicativo | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Visualização do Intune Azure: o Intune fornece as ferramentas para atribuir proativamente um novo perfil provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração."
+title: Perfis de provisionamento de aplicativo
+titleSuffix: Intune on Azure
+description: "O Intune fornece as ferramentas para atribuir de forma proativa um novo perfil de provisionamento a dispositivos que têm aplicativos que estão se aproximando da expiração."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usar os perfis de provisionamento móvel do iOS para impedir que os aplicativos expirem
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introdução
 
@@ -42,7 +40,7 @@ Depois que o certificado expirar, você deverá assinar o aplicativo novamente c
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Como criar um perfil de provisionamento de aplicativo móvel iOS
 
 1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Aplicativos móveis**.
 1.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Perfis de provisionamento iOS**.
 2.  Na folha da lista de perfis, escolha **Criar Perfil**.
@@ -55,4 +53,3 @@ Depois que o certificado expirar, você deverá assinar o aplicativo novamente c
 ## <a name="next-steps"></a>Próximas etapas
 
 Atribua o perfil aos dispositivos iOS necessários. Para saber mais, use as etapas em [Como atribuir perfis de dispositivo](device-profile-assign.md).
-
