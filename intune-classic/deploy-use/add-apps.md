@@ -14,15 +14,12 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apps-with-microsoft-intune"></a>Adicionar aplicativos com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -96,4 +93,3 @@ Dessa forma, ao carregar o aplicativo para o Intune, os arquivos da pasta **Depe
 ## <a name="next-steps"></a>Próximas etapas
 
 Você precisará adicionar aplicativos no console do Intune antes de implantá-los. Você pode adicionar aplicativos para [dispositivos registrados](add-apps-for-mobile-devices-in-microsoft-intune.md) ou para [computadores Windows gerenciados com o software cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
-

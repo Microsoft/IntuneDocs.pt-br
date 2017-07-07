@@ -1,12 +1,12 @@
 ---
-title: Como configurar certificados com o Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: aprenda a usar o Intune para criar e atribuir certificados que ajudarão a proteger Wi-Fi, VPN e outras conexões."
+title: Como configurar certificados com o Intune
+titleSuffix: Intune on Azure
+description: "Saiba como usar o Intune para criar e atribuir certificados que ajudam você a proteger conexões Wi-Fi, VPN e outras."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Como configurar certificados no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi ou perfis de email, você pode autenticar essas conexões usando certificados. Eles eliminam a necessidade para inserir nomes de usuário e senhas para autenticar conexões.
 
@@ -56,8 +53,8 @@ Cada um desses tipos de certificado tem seus próprios pré-requisitos e requisi
 
     Somente é possível usar um perfil de certificado SCEP nestas plataformas:
 
--     macOS 10.9 e posterior
--     Windows Phone 8.1 e posterior
+-   macOS 10.9 e posterior
+-   Windows Phone 8.1 e posterior
 
 Você deve criar um perfil separado para cada plataforma de dispositivo. Ao criar o perfil, associe-o ao perfil de certificado raiz confiável já criado.
 
@@ -88,7 +85,7 @@ Você deverá criar um perfil de certificado confiável antes de criar um perfil
 ### <a name="to-create-a-trusted-certificate-profile"></a>Para criar um perfil de certificado confiável
 
 1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Configuração do dispositivo**.
 2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
 3. Na folha de perfis, escolha **Criar Perfil**.
@@ -128,4 +125,3 @@ Depois de criar um perfil de certificado confiável, crie perfis de certificado 
 
 ## <a name="next-steps"></a>Próximas etapas
 Consulte [Como atribuir perfis de dispositivo](device-profile-assign.md) para obter informações gerais sobre como atribuir perfis de dispositivo.
-

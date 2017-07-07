@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2393b7193a81f9489e56d1fe50b85291e5a2260e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Como definir a quantidade de tempo antes que seu dispositivo seja bloqueado
 
 Para manter os dados em seu dispositivo Android mais seguros, seu administrador de TI pode definir uma política que exige que você defina o período que o dispositivo pode ficar ocioso antes que seja bloqueado automaticamente. Siga estas etapas para definir o período antes que o dispositivo seja bloqueado.
@@ -36,4 +31,3 @@ Para manter os dados em seu dispositivo Android mais seguros, seu administrador 
 2.  Especifique o valor do tempo limite da senha.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

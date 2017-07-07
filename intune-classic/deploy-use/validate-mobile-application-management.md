@@ -1,5 +1,5 @@
 ---
-title: "Validar a configuração do MAM | Microsoft Docs"
+title: "Validar a configuração de MAM"
 description: "Este tópico descreve como você pode testar e validar se a política de MAM está configurada corretamente e funcionando conforme o esperado."
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>Validar a configuração do gerenciamento de aplicativo móvel
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Se o teste mostrar que o comportamento da política de MAM não é esperado, é 
 ### <a name="what-to-do"></a>O que fazer
 Aqui estão as ações necessárias com base no status do usuário:
 
-- Se o usuário não está licenciado para MAM, atribua uma licença do Intune ao usuário, conforme descrito em [Gerenciar licenças do Intune](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md).
+- Se o usuário não está licenciado para MAM, atribua uma licença do Intune ao usuário, conforme descrito em [Gerenciar licenças do Intune](/intune/setup-steps).
 - Se o usuário não está licenciado para o O365, obtenha uma licença para o usuário.
 - Se o aplicativo do usuário é listado como **Não submetido a check-in**, verifique se você configurou corretamente uma política de MAM para o aplicativo.
 - Verifique se essas condições são aplicadas a todos os usuários aos quais você deseja que as políticas MAM sejam aplicadas.
@@ -59,4 +56,3 @@ Aqui estão as ações necessárias com base no status do usuário:
 [Preparar-se para configurar as políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Proteger dados de aplicativo usando políticas de gerenciamento de aplicativos móveis com o Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
