@@ -22,10 +22,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="what-happens-if-you-reset-your-device"></a>O que acontecerá se você redefinir o dispositivo
+# <span data-ttu-id="95983-104">O que acontecerá se você redefinir o dispositivo</span><span class="sxs-lookup"><span data-stu-id="95983-104">What happens if you reset your device</span></span>
+<a id="what-happens-if-you-reset-your-device" class="xliff"></a>
 
-Para saber o que acontece se você redefinir o dispositivo, escolha o link abaixo que corresponde ao tipo de dispositivo que você está usando:
+<span data-ttu-id="95983-105">Para saber o que acontece se você redefinir o dispositivo, escolha o link abaixo que corresponde ao tipo de dispositivo que você está usando:</span><span class="sxs-lookup"><span data-stu-id="95983-105">To read about what happens if you reset your device, choose the link below that matches the type of device you're using:</span></span>
 
-- [Android](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-- [iOS](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-- [Windows](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [<span data-ttu-id="95983-106">Android</span><span class="sxs-lookup"><span data-stu-id="95983-106">Android</span></span>](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+- [<span data-ttu-id="95983-107">iOS</span><span class="sxs-lookup"><span data-stu-id="95983-107">iOS</span></span>](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+- [<span data-ttu-id="95983-108">Windows</span><span class="sxs-lookup"><span data-stu-id="95983-108">Windows</span></span>](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)

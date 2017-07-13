@@ -1,1 +1,1 @@
-**Learning Ally (anteriormente Recording for the Blind &amp; Dyslexic, Inc.)** 
+<span data-ttu-id="851ed-101">**Learning Ally (anteriormente Recording for the Blind &amp; Dyslexic, Inc.)**</span><span class="sxs-lookup"><span data-stu-id="851ed-101">**Learning Ally (formerly Recording for the Blind &amp; Dyslexic, Inc.)**</span></span> 

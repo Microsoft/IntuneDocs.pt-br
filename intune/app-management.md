@@ -21,83 +21,89 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
+# <span data-ttu-id="7674a-103">O que é o gerenciamento de aplicativo do Microsoft Intune?</span><span class="sxs-lookup"><span data-stu-id="7674a-103">What is Microsoft Intune app management?</span></span>
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Como administrador de TI, você é responsável por garantir que os usuários finais têm acesso aos aplicativos de que precisam para realizar seu trabalho. Isso pode ser um desafio porque:
-- Há uma ampla variedade de plataformas de dispositivo e tipos de aplicativos.
-- Talvez você precise gerenciar aplicativos nos dispositivos da empresa e nos dispositivos dos próprios usuários.
-- É necessário garantir que a rede e os dados permanecem seguros.
+<span data-ttu-id="7674a-104">Como administrador de TI, você é responsável por garantir que os usuários finais têm acesso aos aplicativos de que precisam para realizar seu trabalho.</span><span class="sxs-lookup"><span data-stu-id="7674a-104">As an IT admin, you are responsible for making sure that your end users have access to the apps they need to do their work.</span></span> <span data-ttu-id="7674a-105">Isso pode ser um desafio porque:</span><span class="sxs-lookup"><span data-stu-id="7674a-105">This can be a challenge because:</span></span>
+- <span data-ttu-id="7674a-106">Há uma ampla variedade de plataformas de dispositivo e tipos de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="7674a-106">There are a wide range of device platforms and app types.</span></span>
+- <span data-ttu-id="7674a-107">Talvez você precise gerenciar aplicativos nos dispositivos da empresa e nos dispositivos dos próprios usuários.</span><span class="sxs-lookup"><span data-stu-id="7674a-107">You might need to manage apps on company devices and users own devices.</span></span>
+- <span data-ttu-id="7674a-108">É necessário garantir que a rede e os dados permanecem seguros.</span><span class="sxs-lookup"><span data-stu-id="7674a-108">You must ensure your network, and your data remain secure.</span></span>
 
-Além disso, pode ser útil atribuir e gerenciar aplicativos em dispositivos que não estão registrados com o Intune.
+<span data-ttu-id="7674a-109">Além disso, pode ser útil atribuir e gerenciar aplicativos em dispositivos que não estão registrados com o Intune.</span><span class="sxs-lookup"><span data-stu-id="7674a-109">Additionally, you might want to assign, and manage apps on devices that are not enrolled with Intune.</span></span>
 
-O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja.
+<span data-ttu-id="7674a-110">O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja.</span><span class="sxs-lookup"><span data-stu-id="7674a-110">Intune offers a range of capabilities to help you get the apps you need, on the devices you want.</span></span>
 
-## <a name="app-management-capabilities-by-platform"></a>Recursos de gerenciamento de aplicativo por plataforma
+## <span data-ttu-id="7674a-111">Recursos de gerenciamento de aplicativo por plataforma</span><span class="sxs-lookup"><span data-stu-id="7674a-111">App management capabilities by platform</span></span>
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
-|Adicionar e atribuir aplicativos a dispositivos e usuários|Sim|Sim|Sim|Sim|
-|Atribuir aplicativos a dispositivos não registrados com o Intune|Sim|Sim|Não|Não|
-|Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos|Não|Sim|Não|Não|
-|Usar políticas de provisionamento de aplicativo móvel para renovar aplicativos expirados|Não|Sim|Não|Não|
-|Proteger os dados corporativos em aplicativos com as políticas de proteção de aplicativo|Sim|Sim|Não|Não<sup>1</sup>|
-|Remover apenas dados corporativos de um aplicativo instalado (apagamento seletivo do aplicativo)|Sim|Sim|Sim|Sim|
-|Monitorar as atribuições de aplicativo|Sim|Sim|Sim|Sim|
-|Atribuir e controlar aplicativos adquiridos por volume de uma loja de aplicativos|Não|Não|Não|Sim|
-|Instalação obrigatória de aplicativos nos dispositivos (Obrigatório)<sup>2</sup>|Sim|Sim|Sim|Sim|
-|Instalação opcional em dispositivos do Portal da Empresa (instalação disponível)|Sim|Sim|Sim|Sim|
-|Instalar o atalho a um aplicativo na Web (clipe da Web)|Sim|Sim|Sim|Sim|
-|Aplicativos na empresa (linha de negócios)|Sim|Sim|Não|Não|
-|Aplicativos de uma loja|Sim|Sim|Sim|Sim|
-|Atualizar aplicativos|Sim|Sim|Sim|Sim|
+|&nbsp; |<span data-ttu-id="7674a-112">Android</span><span class="sxs-lookup"><span data-stu-id="7674a-112">Android</span></span>|<span data-ttu-id="7674a-113">iOS</span><span class="sxs-lookup"><span data-stu-id="7674a-113">iOS</span></span>|<span data-ttu-id="7674a-114">Windows Phone 8.1</span><span class="sxs-lookup"><span data-stu-id="7674a-114">Windows Phone 8.1</span></span>|<span data-ttu-id="7674a-115">Windows 10</span><span class="sxs-lookup"><span data-stu-id="7674a-115">Windows 10</span></span>|
+|<span data-ttu-id="7674a-116">Adicionar e atribuir aplicativos a dispositivos e usuários</span><span class="sxs-lookup"><span data-stu-id="7674a-116">Add and assign apps to devices and users</span></span>|<span data-ttu-id="7674a-117">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-117">Yes</span></span>|<span data-ttu-id="7674a-118">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-118">Yes</span></span>|<span data-ttu-id="7674a-119">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-119">Yes</span></span>|<span data-ttu-id="7674a-120">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-120">Yes</span></span>|
+|<span data-ttu-id="7674a-121">Atribuir aplicativos a dispositivos não registrados com o Intune</span><span class="sxs-lookup"><span data-stu-id="7674a-121">Assign apps to devices not enrolled with Intune</span></span>|<span data-ttu-id="7674a-122">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-122">Yes</span></span>|<span data-ttu-id="7674a-123">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-123">Yes</span></span>|<span data-ttu-id="7674a-124">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-124">No</span></span>|<span data-ttu-id="7674a-125">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-125">No</span></span>|
+|<span data-ttu-id="7674a-126">Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-126">Use app configuration policies to control the startup behavior of apps</span></span>|<span data-ttu-id="7674a-127">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-127">No</span></span>|<span data-ttu-id="7674a-128">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-128">Yes</span></span>|<span data-ttu-id="7674a-129">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-129">No</span></span>|<span data-ttu-id="7674a-130">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-130">No</span></span>|
+|<span data-ttu-id="7674a-131">Usar políticas de provisionamento de aplicativo móvel para renovar aplicativos expirados</span><span class="sxs-lookup"><span data-stu-id="7674a-131">Use mobile app provisioning policies to renew expired apps</span></span>|<span data-ttu-id="7674a-132">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-132">No</span></span>|<span data-ttu-id="7674a-133">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-133">Yes</span></span>|<span data-ttu-id="7674a-134">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-134">No</span></span>|<span data-ttu-id="7674a-135">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-135">No</span></span>|
+|<span data-ttu-id="7674a-136">Proteger os dados corporativos em aplicativos com as políticas de proteção de aplicativo</span><span class="sxs-lookup"><span data-stu-id="7674a-136">Protect company data in apps with app protection policies</span></span>|<span data-ttu-id="7674a-137">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-137">Yes</span></span>|<span data-ttu-id="7674a-138">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-138">Yes</span></span>|<span data-ttu-id="7674a-139">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-139">No</span></span>|<span data-ttu-id="7674a-140">Não<sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="7674a-140">No<sup>1</sup></span></span>|
+|<span data-ttu-id="7674a-141">Remover apenas dados corporativos de um aplicativo instalado (apagamento seletivo do aplicativo)</span><span class="sxs-lookup"><span data-stu-id="7674a-141">Remove only corporate data from an installed app (App selective wipe)</span></span>|<span data-ttu-id="7674a-142">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-142">Yes</span></span>|<span data-ttu-id="7674a-143">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-143">Yes</span></span>|<span data-ttu-id="7674a-144">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-144">Yes</span></span>|<span data-ttu-id="7674a-145">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-145">Yes</span></span>|
+|<span data-ttu-id="7674a-146">Monitorar as atribuições de aplicativo</span><span class="sxs-lookup"><span data-stu-id="7674a-146">Monitor app assignments</span></span>|<span data-ttu-id="7674a-147">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-147">Yes</span></span>|<span data-ttu-id="7674a-148">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-148">Yes</span></span>|<span data-ttu-id="7674a-149">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-149">Yes</span></span>|<span data-ttu-id="7674a-150">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-150">Yes</span></span>|
+|<span data-ttu-id="7674a-151">Atribuir e controlar aplicativos adquiridos por volume de uma loja de aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-151">Assign and track volume-purchased apps from an app store</span></span>|<span data-ttu-id="7674a-152">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-152">No</span></span>|<span data-ttu-id="7674a-153">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-153">No</span></span>|<span data-ttu-id="7674a-154">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-154">No</span></span>|<span data-ttu-id="7674a-155">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-155">Yes</span></span>|
+|<span data-ttu-id="7674a-156">Instalação obrigatória de aplicativos nos dispositivos (Obrigatório)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="7674a-156">Mandatory install of apps on devices (Required)<sup>2</sup></span></span>|<span data-ttu-id="7674a-157">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-157">Yes</span></span>|<span data-ttu-id="7674a-158">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-158">Yes</span></span>|<span data-ttu-id="7674a-159">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-159">Yes</span></span>|<span data-ttu-id="7674a-160">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-160">Yes</span></span>|
+|<span data-ttu-id="7674a-161">Instalação opcional em dispositivos do Portal da Empresa (instalação disponível)</span><span class="sxs-lookup"><span data-stu-id="7674a-161">Optional installation on devices from the Company Portal (Available install)</span></span>|<span data-ttu-id="7674a-162">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-162">Yes</span></span>|<span data-ttu-id="7674a-163">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-163">Yes</span></span>|<span data-ttu-id="7674a-164">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-164">Yes</span></span>|<span data-ttu-id="7674a-165">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-165">Yes</span></span>|
+|<span data-ttu-id="7674a-166">Instalar o atalho a um aplicativo na Web (clipe da Web)</span><span class="sxs-lookup"><span data-stu-id="7674a-166">Install shortcut to an app on the web (web clip)</span></span>|<span data-ttu-id="7674a-167">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-167">Yes</span></span>|<span data-ttu-id="7674a-168">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-168">Yes</span></span>|<span data-ttu-id="7674a-169">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-169">Yes</span></span>|<span data-ttu-id="7674a-170">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-170">Yes</span></span>|
+|<span data-ttu-id="7674a-171">Aplicativos na empresa (linha de negócios)</span><span class="sxs-lookup"><span data-stu-id="7674a-171">In-house (line-of-business) apps</span></span>|<span data-ttu-id="7674a-172">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-172">Yes</span></span>|<span data-ttu-id="7674a-173">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-173">Yes</span></span>|<span data-ttu-id="7674a-174">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-174">No</span></span>|<span data-ttu-id="7674a-175">Não</span><span class="sxs-lookup"><span data-stu-id="7674a-175">No</span></span>|
+|<span data-ttu-id="7674a-176">Aplicativos de uma loja</span><span class="sxs-lookup"><span data-stu-id="7674a-176">Apps from a store</span></span>|<span data-ttu-id="7674a-177">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-177">Yes</span></span>|<span data-ttu-id="7674a-178">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-178">Yes</span></span>|<span data-ttu-id="7674a-179">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-179">Yes</span></span>|<span data-ttu-id="7674a-180">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-180">Yes</span></span>|
+|<span data-ttu-id="7674a-181">Atualizar aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-181">Update apps</span></span>|<span data-ttu-id="7674a-182">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-182">Yes</span></span>|<span data-ttu-id="7674a-183">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-183">Yes</span></span>|<span data-ttu-id="7674a-184">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-184">Yes</span></span>|<span data-ttu-id="7674a-185">Sim</span><span class="sxs-lookup"><span data-stu-id="7674a-185">Yes</span></span>|
 
-<sup>1</sup> Considere usar a [Proteção de Informações do Windows]windows-information-protection-configure.md) para proteger aplicativos em dispositivos com o Windows 10.
+<span data-ttu-id="7674a-186"><sup>1</sup> Considere usar a [Proteção de Informações do Windows]windows-information-protection-configure.md) para proteger aplicativos em dispositivos com o Windows 10.</span><span class="sxs-lookup"><span data-stu-id="7674a-186"><sup>1</sup> Consider using [Windows Information Protection]windows-information-protection-configure.md) to protect apps on devices that run Windows 10.</span></span>
 
-<sup>2</sup>Aplica-se apenas a dispositivos gerenciados pelo Intune.
+<span data-ttu-id="7674a-187"><sup>2</sup>Aplica-se apenas a dispositivos gerenciados pelo Intune.</span><span class="sxs-lookup"><span data-stu-id="7674a-187"><sup>2</sup>Applies to devices managed by Intune only.</span></span>
 
-## <a name="how-to-get-started"></a>Como começar
+## <span data-ttu-id="7674a-188">Como começar</span><span class="sxs-lookup"><span data-stu-id="7674a-188">How to get started</span></span>
+<a id="how-to-get-started" class="xliff"></a>
 
-Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho **Aplicativos Móveis**, que pode ser acessada da seguinte maneira:
+<span data-ttu-id="7674a-189">Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho **Aplicativos Móveis**, que pode ser acessada da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="7674a-189">You can find most things app-related in the **Mobile Apps** workload that you can access as follows:</span></span>
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Aplicativos móveis**.
+1. <span data-ttu-id="7674a-190">Entre no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="7674a-190">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="7674a-191">Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.</span><span class="sxs-lookup"><span data-stu-id="7674a-191">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="7674a-192">Na folha **Intune**, escolha **Aplicativos móveis**.</span><span class="sxs-lookup"><span data-stu-id="7674a-192">On the **Intune** blade, choose **Mobile apps**.</span></span>
 
     ![A carga de trabalho de Aplicativos Móveis](./media/apps-workload.png)
 
-### <a name="manage"></a>Gerenciar
-- **Aplicativos** – esse nó é o local em que você adiciona, atribui e monitora a maioria de seus aplicativos.
-    - [Adicionar aplicativos](apps-add.md)
-    - [Atribuir aplicativos](apps-deploy.md)
-    - [Monitorar aplicativos](apps-monitor.md)
-- **Políticas de configuração de aplicativo** – as políticas de configuração de aplicativo permitem que você forneça as configurações que podem ser necessárias quando um usuário executa um aplicativo.
-    - [Políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md)
-    - [Políticas de configuração de aplicativo do Android](app-configuration-policies-use-android.md)
-- **Políticas de proteção de aplicativo** – permite associar as configurações de um aplicativo para ajudar a proteger os dados da empresa que ele usa. Por exemplo, você pode restringir os recursos de um aplicativo em se comunicar com outros aplicativos ou exigir que o usuário insira um PIN para acessar um aplicativo da empresa.
-    - [Políticas de proteção de aplicativo](app-protection-policies.md)
-- **Apagamento seletivo do aplicativo** – remover apenas os dados corporativos de um dispositivo de usuários que você selecionar.
-    - [Apagamento seletivo de aplicativos](apps-selective-wipe.md)
-- **Perfis de provisionamento de iOS** – os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração.
-    - [Perfis de provisionamento de aplicativo iOS](app-provisioning-profile-ios.md)
+### <span data-ttu-id="7674a-194">Gerenciar</span><span class="sxs-lookup"><span data-stu-id="7674a-194">Manage</span></span>
+<a id="manage" class="xliff"></a>
+- <span data-ttu-id="7674a-195">**Aplicativos** – esse nó é o local em que você adiciona, atribui e monitora a maioria de seus aplicativos.</span><span class="sxs-lookup"><span data-stu-id="7674a-195">**Apps** - This node is where you add, assign, and monitor most of your apps.</span></span>
+    - [<span data-ttu-id="7674a-196">Adicionar aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-196">Add apps</span></span>](apps-add.md)
+    - [<span data-ttu-id="7674a-197">Atribuir aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-197">Assign apps</span></span>](apps-deploy.md)
+    - [<span data-ttu-id="7674a-198">Monitorar aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-198">Monitor apps</span></span>](apps-monitor.md)
+- <span data-ttu-id="7674a-199">**Políticas de configuração de aplicativo** – as políticas de configuração de aplicativo permitem que você forneça as configurações que podem ser necessárias quando um usuário executa um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="7674a-199">**App configuration policies** - App configuration policies let you supply settings that might be required when a user runs an app.</span></span>
+    - [<span data-ttu-id="7674a-200">Políticas de configuração de aplicativo iOS</span><span class="sxs-lookup"><span data-stu-id="7674a-200">iOS app configuration policies</span></span>](app-configuration-policies-use-ios.md)
+    - [<span data-ttu-id="7674a-201">Políticas de configuração de aplicativo do Android</span><span class="sxs-lookup"><span data-stu-id="7674a-201">Android app configuration policies</span></span>](app-configuration-policies-use-android.md)
+- <span data-ttu-id="7674a-202">**Políticas de proteção de aplicativo** – permite associar as configurações de um aplicativo para ajudar a proteger os dados da empresa que ele usa.</span><span class="sxs-lookup"><span data-stu-id="7674a-202">**App protection policies** - Lets you associate settings with an app to help protect the company data it uses.</span></span> <span data-ttu-id="7674a-203">Por exemplo, você pode restringir os recursos de um aplicativo em se comunicar com outros aplicativos ou exigir que o usuário insira um PIN para acessar um aplicativo da empresa.</span><span class="sxs-lookup"><span data-stu-id="7674a-203">For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app.</span></span>
+    - [<span data-ttu-id="7674a-204">Políticas de proteção de aplicativo</span><span class="sxs-lookup"><span data-stu-id="7674a-204">App protection policies</span></span>](app-protection-policies.md)
+- <span data-ttu-id="7674a-205">**Apagamento seletivo do aplicativo** – remover apenas os dados corporativos de um dispositivo de usuários que você selecionar.</span><span class="sxs-lookup"><span data-stu-id="7674a-205">**App selective wipe** - Remove only corporate data from a users device you select.</span></span>
+    - [<span data-ttu-id="7674a-206">Apagamento seletivo de aplicativos</span><span class="sxs-lookup"><span data-stu-id="7674a-206">App selective wipe</span></span>](apps-selective-wipe.md)
+- <span data-ttu-id="7674a-207">**Perfis de provisionamento de iOS** – os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado.</span><span class="sxs-lookup"><span data-stu-id="7674a-207">**iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate.</span></span> <span data-ttu-id="7674a-208">Quando o certificado expira, o aplicativo não pode mais ser executado.</span><span class="sxs-lookup"><span data-stu-id="7674a-208">When the certificate expires, the app can no longer be run.</span></span> <span data-ttu-id="7674a-209">O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração.</span><span class="sxs-lookup"><span data-stu-id="7674a-209">Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry.</span></span>
+    - [<span data-ttu-id="7674a-210">Perfis de provisionamento de aplicativo iOS</span><span class="sxs-lookup"><span data-stu-id="7674a-210">iOS app provisioning profiles</span></span>](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>Monitor
-- **Aplicativos Licenciados** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos.
-    - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
-- **Aplicativos descobertos** – Mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.
-- **Status de instalação do aplicativo** – Mostra o status de uma atribuição de aplicativo que você criou.
-- **Status de proteção do aplicativo** – mostra o status de uma política de proteção de aplicativo para um usuário selecionado.
+### <span data-ttu-id="7674a-211">Monitor</span><span class="sxs-lookup"><span data-stu-id="7674a-211">Monitor</span></span>
+<a id="monitor" class="xliff"></a>
+- <span data-ttu-id="7674a-212">**Aplicativos Licenciados** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="7674a-212">**Licensed Apps** - View, assign, and monitor volume-purchased apps from the app stores.</span></span>
+    - [<span data-ttu-id="7674a-213">Aplicativos da Windows Store para Empresas comprados por volume</span><span class="sxs-lookup"><span data-stu-id="7674a-213">Windows Store for Business volume-purchased apps</span></span>](windows-store-for-business.md)
+- <span data-ttu-id="7674a-214">**Aplicativos descobertos** – Mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.</span><span class="sxs-lookup"><span data-stu-id="7674a-214">**Discovered Apps** - Shows all apps that were assigned by Intune, and installed on a device.</span></span>
+- <span data-ttu-id="7674a-215">**Status de instalação do aplicativo** – Mostra o status de uma atribuição de aplicativo que você criou.</span><span class="sxs-lookup"><span data-stu-id="7674a-215">**App Install Status** - Shows the status of an app assignment you created.</span></span>
+- <span data-ttu-id="7674a-216">**Status de proteção do aplicativo** – mostra o status de uma política de proteção de aplicativo para um usuário selecionado.</span><span class="sxs-lookup"><span data-stu-id="7674a-216">**App protection status** - Shows the status of an app protection policy for a user you select.</span></span>
 
-Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)
+<span data-ttu-id="7674a-217">Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)</span><span class="sxs-lookup"><span data-stu-id="7674a-217">For details, see [Monitor apps](apps-monitor.md)</span></span>
 
-### <a name="setup"></a>Setup
+### <span data-ttu-id="7674a-218">Setup</span><span class="sxs-lookup"><span data-stu-id="7674a-218">Setup</span></span>
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store para Empresas** – configure a integração com a Windows Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças.
-    - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
-- **Identidade visual do Portal da Empresa** – personalize o Portal da Empresa para dar a identidade visual de sua empresa.
-    - [Configuração do Portal da Empresa](company-portal-app.md)
+- <span data-ttu-id="7674a-219">**Windows Store para Empresas** – configure a integração com a Windows Store para Empresas.</span><span class="sxs-lookup"><span data-stu-id="7674a-219">**Windows Store for Business** - Set up integration to the Windows Store for Business.</span></span> <span data-ttu-id="7674a-220">Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças.</span><span class="sxs-lookup"><span data-stu-id="7674a-220">Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage.</span></span>
+    - [<span data-ttu-id="7674a-221">Aplicativos da Windows Store para Empresas comprados por volume</span><span class="sxs-lookup"><span data-stu-id="7674a-221">Windows Store for Business volume-purchased apps</span></span>](windows-store-for-business.md)
+- <span data-ttu-id="7674a-222">**Identidade visual do Portal da Empresa** – personalize o Portal da Empresa para dar a identidade visual de sua empresa.</span><span class="sxs-lookup"><span data-stu-id="7674a-222">**Company Portal branding** - Customize the Company Portal to give it your company branding.</span></span>
+    - [<span data-ttu-id="7674a-223">Configuração do Portal da Empresa</span><span class="sxs-lookup"><span data-stu-id="7674a-223">Company portal configuration</span></span>](company-portal-app.md)
