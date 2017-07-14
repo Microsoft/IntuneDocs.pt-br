@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de caso de uso
+# Determinar os requisitos de cenários de caso de uso
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 Nesta seção, você determina os requisitos para cada grupo organizacional em cada cenário de caso de uso. Esse processo ajuda você a se preparar para as outras áreas de planejamento de implantação do Intune, como arquitetura e design, integração e distribuição. Ele também pode ajudar a identificar possíveis falhas e os desafios relacionados ao seu projeto de implantação do Intune.
 
@@ -41,7 +42,8 @@ Estes são alguns exemplos de requisitos de casos de uso de uma organização, m
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir os requisitos de casos de uso e subcasos de uso de sua organização.
 
 
-## <a name="examples-of-requirements"></a>Exemplos de requisitos
+## Exemplos de requisitos
+<a id="examples-of-requirements" class="xliff"></a>
 
 Estes são mais alguns exemplos que podem ser usados na coluna “Requisitos”:
 
@@ -62,6 +64,7 @@ Estes são mais alguns exemplos que podem ser usados na coluna “Requisitos”:
     - Office 365 com políticas de proteção do aplicativo
     - LOB (linha de negócios) com políticas de proteção do aplicativo
 
-## <a name="next-section"></a>Próxima seção
+## Próximas etapas
+<a id="next-steps" class="xliff"></a>
 
 A próxima seção fornece diretrizes sobre [como desenvolver um plano de distribuição do Intune](planning-guide-rollout-plan.md).

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
+# O que é o gerenciamento de aplicativo do Microsoft Intune?
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ Além disso, pode ser útil atribuir e gerenciar aplicativos em dispositivos que
 
 O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja.
 
-## <a name="app-management-capabilities-by-platform"></a>Recursos de gerenciamento de aplicativo por plataforma
+## Recursos de gerenciamento de aplicativo por plataforma
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 |Aplicativos de uma loja|Sim|Sim|Sim|Sim|
 |Atualizar aplicativos|Sim|Sim|Sim|Sim|
 
-<sup>1</sup> Considere usar a [Proteção de Informações do Windows]windows-information-protection-configure.md) para proteger aplicativos em dispositivos com o Windows 10.
+<sup>1</sup> Considere usar a [Proteção de Informações do Windows](windows-information-protection-configure.md) para proteger aplicativos em dispositivos que executam o Windows 10.
 
 <sup>2</sup>Aplica-se apenas a dispositivos gerenciados pelo Intune.
 
-## <a name="how-to-get-started"></a>Como começar
+## Como começar
+<a id="how-to-get-started" class="xliff"></a>
 
 Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho **Aplicativos Móveis**, que pode ser acessada da seguinte maneira:
 
@@ -70,7 +73,8 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 
     ![A carga de trabalho de Aplicativos Móveis](./media/apps-workload.png)
 
-### <a name="manage"></a>Gerenciar
+### Gerenciar
+<a id="manage" class="xliff"></a>
 - **Aplicativos** – esse nó é o local em que você adiciona, atribui e monitora a maioria de seus aplicativos.
     - [Adicionar aplicativos](apps-add.md)
     - [Atribuir aplicativos](apps-deploy.md)
@@ -85,7 +89,8 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 - **Perfis de provisionamento de iOS** – os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração.
     - [Perfis de provisionamento de aplicativo iOS](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>Monitor
+### Monitor
+<a id="monitor" class="xliff"></a>
 - **Aplicativos Licenciados** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos.
     - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
 - **Aplicativos descobertos** – Mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.
@@ -94,7 +99,8 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 
 Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store para Empresas** – configure a integração com a Windows Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças.
