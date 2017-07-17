@@ -1,5 +1,5 @@
 ---
-title: "Conexões VPN | Microsoft Docs"
+title: "Conexões VPN"
 description: "Use perfis de VPN para implantar as configurações de VPN para usuários e dispositivos na sua organização."
 keywords: 
 author: lleonard-msft
@@ -14,16 +14,14 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="vpn-connections-in-microsoft-intune"></a>Conexões VPN no Microsoft Intune
+# Conexões VPN no Microsoft Intune
+<a id="vpn-connections-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -43,7 +41,8 @@ Você pode configurar os seguintes tipos de dispositivo usando perfis VPN:
 
 As opções de configuração do perfil VPN são diferentes dependendo do tipo de dispositivo selecionado.
 
-## <a name="vpn-connection-types"></a>Tipos de conexão VPN
+## Tipos de conexão VPN
+<a id="vpn-connection-types" class="xliff"></a>
 
 O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tipos de conexão:
 
@@ -70,21 +69,25 @@ L2TP|Perfil personalizado do iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
 
  Saiba como criar perfis de VPN personalizados usando configurações de URI em [Configurações personalizadas para perfis de VPN](create-custom-vpn-profiles.md).     
 
-## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
+## Métodos para proteger perfis de VPN
+<a id="methods-of-securing-vpn-profiles" class="xliff"></a>
 
 Perfis VPN podem usar uma série de tipos de conexão e protocolos diferentes, de fabricantes diferentes. Essas conexões geralmente são protegidas usando um destes dois métodos.
 
-### <a name="certificates"></a>Certificados
+### Certificados
+<a id="certificates" class="xliff"></a>
 
 Ao criar o perfil de VPN, você escolhe um perfil de certificado SCEP ou .PFX criado anteriormente no Intune. Isso é conhecido como certificado de identidade. Ele é usado para autenticar um perfil de certificado confiável (ou *certificado raiz*) que você criou para estabelecer que o dispositivo do usuário tem permissão para se conectar. O certificado confiável é implantado no computador que autentica a conexão de VPN, em geral, o servidor VPN.
 
 Para obter mais informações sobre como criar e usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado).
 
-### <a name="user-name-and-password"></a>Nome e senha do usuário
+### Nome e senha do usuário
+<a id="user-name-and-password" class="xliff"></a>
 
 O usuário autentica no servidor VPN, fornecendo seu nome de usuário e senha.
 
-## <a name="create-a-vpn-profile"></a>Criar um perfil VPN
+## Criar um perfil VPN
+<a id="create-a-vpn-profile" class="xliff"></a>
 
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e escolha o perfil VPN para o dispositivo:
@@ -154,7 +157,8 @@ Você pode restringir o uso de VPN para dispositivos Windows 10 a aplicativos es
 
 A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
-### <a name="on-demand-vpn-for-ios-devices"></a>VPN sob demanda para dispositivos iOS
+### VPN sob demanda para dispositivos iOS
+<a id="on-demand-vpn-for-ios-devices" class="xliff"></a>
 Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 
 > [!NOTE]
@@ -168,9 +172,7 @@ Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 3. Opcional: forneça uma investigação de cadeia de caracteres de URL, que é uma URL usada pela regra como um teste. Se o dispositivo no qual esse perfil está instalado for capaz de acessar essa URL sem redirecionamento, a VPN será estabelecida e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres de URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de se conectar a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
 4. Escolha uma destas ações:
   - **Conectar**
-  - **Avaliar conexão**, que tem três configurações a. **Ação de domínio** - escolha **Conectar se necessário** ou **Nunca se conectar**
-     b. **Lista de domínios separados por vírgulas** - configure essa opção somente se você escolher uma **Ação de domínio** do tipo **Conectar se necessário** 
-     c. **Investigação de cadeia de caracteres de URL necessária** - uma URL HTTP ou HTTPS (preferencial) URL, como *https://vpntestprobe.contoso.com*. A regra verificará se há uma resposta proveniente desse endereço. Se não houver, e a **Ação de domínio** for **Conectar se necessário**, a VPN será disparada.
+  - **Avaliar conexão**, que tem três configurações a. **Ação de domínio** – escolha **Conectar se necessário** ou **Nunca conectar** b. **Lista de domínios separados por vírgulas** – configure essa opção somente se você escolher uma **Ação de domínio** do tipo **Conectar se necessário** c. **Investigação de cadeia de caracteres de URL necessária** - uma URL HTTP ou HTTPS (preferencial) URL, como *https://vpntestprobe.contoso.com*. A regra verificará se há uma resposta proveniente desse endereço. Se não houver, e a **Ação de domínio** for **Conectar se necessário**, a VPN será disparada.
       
      > [!TIP]
      >
@@ -181,7 +183,8 @@ Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 As regras específicas de domínio são avaliadas antes das regras de todos os domínios.
 
 
-## <a name="deploy-the-policy"></a>Implantar a política
+## Implantar a política
+<a id="deploy-the-policy" class="xliff"></a>
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
@@ -195,4 +198,3 @@ As regras específicas de domínio são avaliadas antes das regras de todos os d
 Após a implantação bem-sucedida, os usuários verão o nome da conexão VPN especificado na lista de conexões de VPN em seus dispositivos.
 
 Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho Painel.
-

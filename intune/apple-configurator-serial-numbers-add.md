@@ -1,7 +1,7 @@
 ---
 title: "Adicionar números de série do Apple Configurator"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: saiba como adicionar números de série aos dispositivos iOS corporativos usando o Apple Configurator."
+titleSuffix: Intune on Azure
+description: "Saiba como adicionar números de série a dispositivos iOS de propriedade corporativa usando o Apple Configurator."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,16 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
+# Adicionar números de série do Apple Configurator
+<a id="add-apple-configurator-serial-numbers" class="xliff"></a>
 
-# <a name="add-apple-configurator-serial-numbers"></a>Adicionar números de série do Apple Configurator
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use estas etapas para adicionar números de série ao Intune quando quiser [registrar dispositivos iOS corporativos usando o Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md). Você pode adicionar números de série um por vez ou carregar um arquivo de valores de separados por vírgula (CSV) dos números de série. Depois de adicionar os números de série, você poderá atribuir um perfil para eles. O perfil contém as configurações de gerenciamento específicas que você deseja aplicar aos dispositivos.
 
@@ -51,7 +49,8 @@ Outros métodos de registrar dispositivos iOS são descritos em [Escolher como r
 
 7. Navegue até o arquivo .csv de números de série e selecione **Adicionar**.
 
-## <a name="assign-a-profile-to-specific-serial-numbers"></a>Atribuir um perfil números de série específicos
+## Atribuir um perfil números de série específicos
+<a id="assign-a-profile-to-specific-serial-numbers" class="xliff"></a>
 
 O Intune permite atribuir perfis de dois locais diferentes no Portal do Azure. Você pode usar as etapas a seguir ou pode atribuir perfis na folha Perfis de Registro do Apple Configurator, na qual você cria o perfil (consulte [Registrar dispositivos iOS com Apple Configurator usando o Assistente de configuração](apple-configurator-setup-assistant-enroll-ios.md). Use as etapas a seguir para atribuir o perfil somente se você já o criou.
 
@@ -63,10 +62,12 @@ O Intune permite atribuir perfis de dois locais diferentes no Portal do Azure. V
 
 4. Na folha **Atribuir Perfil**, selecione o perfil que você deseja atribuir e selecione **Atribuir**.
 
-## <a name="delete-serial-numbers"></a>Excluir números de série
+## Excluir números de série
+<a id="delete-serial-numbers" class="xliff"></a>
 Você pode excluir os números de série importados anteriormente. Você poderá excluir os números de série apenas se o registro do dispositivo for cancelado primeiro. Quando você remove um número de série, não é possível usar o Apple Configurator por meio do Assistente de configuração, a menos que você adicione novamente o número de série.
 
-## <a name="view-the-state-of-a-device"></a>Exibir o estado de um dispositivo
+## Exibir o estado de um dispositivo
+<a id="view-the-state-of-a-device" class="xliff"></a>
 Os números de série do dispositivo pode ter um dos dois estados:
 
 - Registrado – o dispositivo é registrado e se conectou ao serviço do Intune
@@ -76,4 +77,3 @@ Os números de série do dispositivo pode ter um dos dois estados:
 **Para exibir o estado de um número de série**
 
 Na folha **Números de Série do Apple Configurator**, selecione o número de série cujo estado você deseja ver e procure o item **Estado**.
-
