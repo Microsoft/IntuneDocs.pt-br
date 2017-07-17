@@ -1,104 +1,79 @@
 ---
 title: Gerenciar dispositivos com o Intune
-titleSuffix: Intune Azure preview
-description: "Visualização do Intune Azure: saiba como exibir os dispositivos gerenciados com o Intune e executar várias operações neles."
+titleSuffix: Intune on Azure
+description: "Saiba como ver os dispositivos gerenciados com o Intune e executar várias operações neles."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/13/2017
+ms.date: 07/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 
+ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1fdb86184875d7082659d608b445b41b2ad9aa9e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/06/2017
 ---
-
-# <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
-
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenciados e permite que você execute tarefas remotas neles. Para acessar a carga de trabalho:
-
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Dispositivos**.
-
-Agora, escolha uma das seguintes opções:
-
-- **Visão geral** Obtenha informações sobre os dispositivos registrados e os sistemas operacionais que cada dispositivo executado.
-- **Gerenciar** – Escolha **Todos os Dispositivos** para ver uma lista de todos os dispositivos gerenciados.
-    Selecione um desses dispositivos na lista para abrir a folha <*nome do dispositivo*> **Visão geral** na qual você pode selecionar um destes:
-    - **Visão geral** – Veja informações gerais sobre o dispositivo, incluindo informações sobre seu nome, proprietário, se ele é um dispositivo BYOD, quando foi seu último check-in e muito mais.
-
-    - **Hardware** – Consulte informações mais detalhadas sobre o dispositivo, inclusive do espaço de armazenamento livre, modelo e fabricante e muito mais.
-    ![Inventário de hardware de dispositivo gerenciado](./media/hardware-inventory.png)
-    - **Aplicativos detectados** – Exibe uma lista de todos os aplicativos que o Intune encontrou instalados no dispositivo.
-    ![Nó de aplicativos detectado](./media/detected-applications.png)
-- **Monitorar** Escolha **Ações de Dispositivo** para ver uma lista de ações de dispositivo que foram realizadas em dispositivos gerenciados e o estado atual dessas ações.
-![Monitorar ações do dispositivo](./media/monitor-device-actions.png)
-- **Ajuda e Suporte** - exibe links para a documentação da solução de problemas e suporte.
-
-## <a name="available-device-actions"></a>Ações do dispositivo disponíveis
-
-Além disso, você pode executar as seguintes ações remotas no dispositivo (nem todas as ações têm suporte em todas as plataformas de dispositivo):
-
-### <a name="remove-company-data"></a>**Remover os dados da empresa**
-Remove somente os dados da empresa gerenciados pelo Intune. Não remove dados pessoais do dispositivo. O dispositivo não será mais gerenciado pelo Intune e não será capaz de acessar recursos corporativos (sem suporte para dispositivos Windows que fazem parte do Azure Active Directory).
-
-### <a name="factory-reset"></a>**Redefinição de fábrica**
-Retorna o dispositivo para suas configurações padrão. O dispositivo não será gerenciado pelo Intune e dados pessoais e da empresa serão removidos. Você não pode desfazer essa ação.
-
-### <a name="remote-lock"></a>**Bloqueio remoto**
-Bloqueia o dispositivo. O proprietário do dispositivo deve usar a senha para desbloqueá-lo. Você pode bloquear remotamente apenas um dispositivo que tenha um PIN ou senha definida.
-
-### <a name="reset-passcode"></a>**Redefinir senha**
-Gera uma nova senha para o dispositivo que será exibido na folha *nome do dispositivo*> **Visão Geral**.
-
-### <a name="bypass-activation-lock"></a>**Bypass de Bloqueio de Ativação**
-Isso removerá o bloqueio de ativação de um dispositivo iOS sem a ID da Apple e a senha do usuário. Depois de fazer o bypass do bloqueio de ativação, o dispositivo ativa-o novamente quando inicia o aplicativo o Localizar Meu iPhone. Faça bypass do bloqueio de ativação apenas se você tiver acesso físico ao dispositivo.
-
-### <a name="fresh-start"></a>**Começar do zero**
-
-Remove todos os aplicativos que foram instalados em um computador com Windows 10 executando a Atualização para Criadores e, em seguida, atualiza automaticamente o computador para a versão mais recente do Windows.
-Isso pode ser usado para ajudar a remover aplicativos pré-instalados (OEM) que geralmente são fornecidos com um novo computador. Você pode configurar se os dados do usuário são mantidos quando essa ação do dispositivo é realizada. Nesse caso, os aplicativos e as configurações são removidas, mas o conteúdo da pasta base dos usuários é mantido.
+# <span data-ttu-id="f817a-103">O que é o gerenciamento de dispositivo do Microsoft Intune?</span><span class="sxs-lookup"><span data-stu-id="f817a-103">What is Microsoft Intune device management?</span></span>
+<a id="what-is-microsoft-intune-device-management" class="xliff"></a>
 
 
-### <a name="lost-mode"></a>**Modo perdido**
-Se um dispositivo iOS foi roubado ou perdido, você poderá habilitar o modo perdido. Ele permite especificar uma mensagem e um número de telefone que serão exibidos na tela de bloqueio do dispositivo. Para fazer isto:
-1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Modo perdido**.
-2.    Na folha **Modo perdido**, ative o modo perdido, digite a mensagem que será exibida e, opcionalmente, um número de telefone de contato.
-3.    Clique em **OK**.
-Quando você ativa o modo perdido, bloqueia todo o uso do dispositivo. O usuário final não poderá acessar o dispositivo até que você desative o modo perdido. Enquanto o modo perdido estiver habilitado, você poderá usar a ação **Localizar dispositivo** para descobrir onde está o dispositivo.
-Para usar o modo perdido, o dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-### <a name="locate-device"></a>**Localizar dispositivo**
-Use esta ação remota para exibir a localização de um dispositivo iOS perdido ou roubado em um mapa. O dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado. Antes de usar essa ação, o dispositivo deve ser colocado no modo perdido.
-1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Localizar dispositivo**.
-2.    Depois do dispositivo ser localizado, o local será exibido na folha **Localizar dispositivo**.
-    ![Folha Localizar dispositivo](./media/locate-device.png)
+<span data-ttu-id="f817a-104">A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenciados e permite que você execute tarefas remotas neles.</span><span class="sxs-lookup"><span data-stu-id="f817a-104">The **Devices** workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices.</span></span> <span data-ttu-id="f817a-105">Para acessar a carga de trabalho:</span><span class="sxs-lookup"><span data-stu-id="f817a-105">To access the workload:</span></span>
 
->[!NOTE]
->Para fins de privacidade, a distância de ampliação do zoom do mapa é limitada.
+1. <span data-ttu-id="f817a-106">Entre no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="f817a-106">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="f817a-107">Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.</span><span class="sxs-lookup"><span data-stu-id="f817a-107">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="f817a-108">Na folha **Intune**, escolha **Dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="f817a-108">On the **Intune** blade, choose **Devices**.</span></span>
 
-### <a name="restart"></a>**Reiniciar**
-Faz com que o dispositivo seja reiniciado. O proprietário do dispositivo não será notificado automaticamente sobre a reinicialização, portanto ele pode perder trabalho.
+<span data-ttu-id="f817a-109">Agora é possível realizar as seguintes ações:</span><span class="sxs-lookup"><span data-stu-id="f817a-109">Now, you can perform the following actions:</span></span>
+
+- [<span data-ttu-id="f817a-110">Exibir inventário de dispositivo</span><span class="sxs-lookup"><span data-stu-id="f817a-110">View device inventory</span></span>](device-inventory.md)
+- <span data-ttu-id="f817a-111">Executar ações remotas de dispositivo:</span><span class="sxs-lookup"><span data-stu-id="f817a-111">Perform remote device actions:</span></span>
+    - [<span data-ttu-id="f817a-112">Remover os dados da empresa</span><span class="sxs-lookup"><span data-stu-id="f817a-112">Remove company data</span></span>](device-company-data-remove.md) 
+    - [<span data-ttu-id="f817a-113">Redefinição de fábrica</span><span class="sxs-lookup"><span data-stu-id="f817a-113">Factory reset</span></span>](device-factory-reset.md)
+    - [<span data-ttu-id="f817a-114">Bloqueio remoto</span><span class="sxs-lookup"><span data-stu-id="f817a-114">Remote lock</span></span>](device-remote-lock.md)
+    - [<span data-ttu-id="f817a-115">Redefinir senha</span><span class="sxs-lookup"><span data-stu-id="f817a-115">Reset passcode</span></span>](device-passcode-reset.md)
+    - [<span data-ttu-id="f817a-116">Bypass de Bloqueio de Ativação</span><span class="sxs-lookup"><span data-stu-id="f817a-116">Bypass Activation Lock</span></span>](device-activation-lock-bypass.md)
+    - [<span data-ttu-id="f817a-117">Começar do zero</span><span class="sxs-lookup"><span data-stu-id="f817a-117">Fresh Start</span></span>](device-fresh-start.md)
+    - [<span data-ttu-id="f817a-118">Modo perdido</span><span class="sxs-lookup"><span data-stu-id="f817a-118">Lost mode</span></span>](device-lost-mode.md)
+    - [<span data-ttu-id="f817a-119">Localizar dispositivo</span><span class="sxs-lookup"><span data-stu-id="f817a-119">Locate device</span></span>](device-locate.md)
+    - [<span data-ttu-id="f817a-120">Reiniciar</span><span class="sxs-lookup"><span data-stu-id="f817a-120">Restart</span></span>](device-restart.md)
+    - [<span data-ttu-id="f817a-121">Redefinir o PIN do Windows 10</span><span class="sxs-lookup"><span data-stu-id="f817a-121">Windows 10 PIN reset</span></span>](device-windows-pin-reset.md)
+    - [<span data-ttu-id="f817a-122">Controle remoto para Android</span><span class="sxs-lookup"><span data-stu-id="f817a-122">Remote control for Android</span></span>](device-profile-android-teamviewer.md)
 
 
-## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Informações sobre segurança e privacidade para o modo perdido e ações para localizar o dispositivo
-- Nenhuma informação do local do dispositivo será enviada para o Intune até que você ative esta ação.
-- Quando você usa a ação para localizar o dispositivo, as coordenadas da latitude e longitude do dispositivo são enviadas para o Intune e exibidas no portal do Azure.
-- Os dados são armazenados por 24 horas, então, removidos. Você não pode remover manualmente os dados de localização.
-- Os dados de localização são criptografados, enquanto estão armazenados e enquanto estão sendo transmitidos.
-- Ao configurar o modo perdido, recomendamos que a mensagem inserida, que é exibida na tela de bloqueio, inclua informações para que o local do dispositivo possa ser determinado.
+## <span data-ttu-id="f817a-123">Suporte para cada ação de dispositivo</span><span class="sxs-lookup"><span data-stu-id="f817a-123">Support for each device action</span></span>
+<a id="support-for-each-device-action" class="xliff"></a>
 
+<span data-ttu-id="f817a-124">Use a tabela a seguir para entender as plataformas de dispositivo com suporte em cada ação.</span><span class="sxs-lookup"><span data-stu-id="f817a-124">Use the following table to understand the device platforms that are supported by each action.</span></span>
+
+|||||||
+|-|-|-|-|-|-|
+|<span data-ttu-id="f817a-125">Ação do dispositivo</span><span class="sxs-lookup"><span data-stu-id="f817a-125">Device action</span></span>|<span data-ttu-id="f817a-126">Windows</span><span class="sxs-lookup"><span data-stu-id="f817a-126">Windows</span></span>|<span data-ttu-id="f817a-127">Windows Phone</span><span class="sxs-lookup"><span data-stu-id="f817a-127">Windows Phone</span></span>|<span data-ttu-id="f817a-128">iOS</span><span class="sxs-lookup"><span data-stu-id="f817a-128">iOS</span></span>|<span data-ttu-id="f817a-129">macOS</span><span class="sxs-lookup"><span data-stu-id="f817a-129">macOS</span></span>|<span data-ttu-id="f817a-130">Android</span><span class="sxs-lookup"><span data-stu-id="f817a-130">Android</span></span>|
+|<span data-ttu-id="f817a-131">**Remover os dados da empresa**</span><span class="sxs-lookup"><span data-stu-id="f817a-131">**Remove company data**</span></span>|<span data-ttu-id="f817a-132">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-132">Yes</span></span>|<span data-ttu-id="f817a-133">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-133">Yes</span></span>|<span data-ttu-id="f817a-134">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-134">Yes</span></span>|<span data-ttu-id="f817a-135">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-135">Yes</span></span>|<span data-ttu-id="f817a-136">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-136">Yes</span></span>|
+|<span data-ttu-id="f817a-137">**Redefinição de fábrica**</span><span class="sxs-lookup"><span data-stu-id="f817a-137">**Factory reset**</span></span>|<span data-ttu-id="f817a-138">Windows 8.1 e posterior (dispositivos não gerenciados por EAS)</span><span class="sxs-lookup"><span data-stu-id="f817a-138">Windows 8.1 and later (not EAS managed devices)</span></span>|<span data-ttu-id="f817a-139">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-139">Yes</span></span>|<span data-ttu-id="f817a-140">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-140">Yes</span></span>|<span data-ttu-id="f817a-141">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-141">No</span></span>|<span data-ttu-id="f817a-142">Não há suporte para o Android for Work</span><span class="sxs-lookup"><span data-stu-id="f817a-142">Android for Work not supported</span></span>|
+|<span data-ttu-id="f817a-143">**Excluir**</span><span class="sxs-lookup"><span data-stu-id="f817a-143">**Delete**</span></span>|<span data-ttu-id="f817a-144">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-144">Yes</span></span>|<span data-ttu-id="f817a-145">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-145">Yes</span></span>|<span data-ttu-id="f817a-146">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-146">Yes</span></span>|<span data-ttu-id="f817a-147">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-147">Yes</span></span>|<span data-ttu-id="f817a-148">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-148">Yes</span></span>|
+|<span data-ttu-id="f817a-149">**Bloqueio remoto**</span><span class="sxs-lookup"><span data-stu-id="f817a-149">**Remote lock**</span></span>|<span data-ttu-id="f817a-150">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-150">No</span></span>|<span data-ttu-id="f817a-151">Windows Phone 8.1 e posterior</span><span class="sxs-lookup"><span data-stu-id="f817a-151">Windows Phone 8.1 and later</span></span>|<span data-ttu-id="f817a-152">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-152">Yes</span></span>|<span data-ttu-id="f817a-153">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-153">No</span></span>|<span data-ttu-id="f817a-154">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-154">Yes</span></span>|
+|<span data-ttu-id="f817a-155">**Redefinir senha**</span><span class="sxs-lookup"><span data-stu-id="f817a-155">**Reset passcode**</span></span>|<span data-ttu-id="f817a-156">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-156">No</span></span>|<span data-ttu-id="f817a-157">Windows Phone 8.1 para atualização do Windows 10 para Criadores não ingressado no Azure AD, Atualização do Windows 10 para Criadores e posterior – todos</span><span class="sxs-lookup"><span data-stu-id="f817a-157">Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later - all</span></span>|<span data-ttu-id="f817a-158">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-158">Yes</span></span>|<span data-ttu-id="f817a-159">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-159">No</span></span>|<span data-ttu-id="f817a-160">Anteriores ao Android 7, sem suporte para o Android for Work</span><span class="sxs-lookup"><span data-stu-id="f817a-160">Earlier than Android 7, Android for Work not supported</span></span>|
+|<span data-ttu-id="f817a-161">**Nova senha** (para dispositivos Windows 10)</span><span class="sxs-lookup"><span data-stu-id="f817a-161">**New passcode** (for Windows 10 devices)</span></span>|<span data-ttu-id="f817a-162">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-162">No</span></span>|<span data-ttu-id="f817a-163">Atualização do Windows 10 para Criadores e posterior (ingressado no Azure AD)</span><span class="sxs-lookup"><span data-stu-id="f817a-163">Windows 10 Creators Update and later (Azure AD joined)</span></span>|<span data-ttu-id="f817a-164">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-164">No</span></span>|<span data-ttu-id="f817a-165">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-165">No</span></span>|<span data-ttu-id="f817a-166">Não há suporte para o Android for Work</span><span class="sxs-lookup"><span data-stu-id="f817a-166">Android for Work not supported</span></span>|
+|<span data-ttu-id="f817a-167">**Bypass de Bloqueio de Ativação**</span><span class="sxs-lookup"><span data-stu-id="f817a-167">**Bypass Activation Lock**</span></span>|<span data-ttu-id="f817a-168">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-168">No</span></span>|<span data-ttu-id="f817a-169">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-169">No</span></span>|<span data-ttu-id="f817a-170">Somente dispositivos corporativos</span><span class="sxs-lookup"><span data-stu-id="f817a-170">Only corporate owned devices</span></span>|<span data-ttu-id="f817a-171">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-171">No</span></span>|<span data-ttu-id="f817a-172">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-172">No</span></span>|
+|<span data-ttu-id="f817a-173">**Modo perdido**</span><span class="sxs-lookup"><span data-stu-id="f817a-173">**Lost mode**</span></span>|<span data-ttu-id="f817a-174">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-174">No</span></span>|<span data-ttu-id="f817a-175">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-175">No</span></span>|<span data-ttu-id="f817a-176">iOS 9.3 e posterior, supervisionado e corporativo</span><span class="sxs-lookup"><span data-stu-id="f817a-176">iOS 9.3 and later, supervised, and corp owned</span></span>|<span data-ttu-id="f817a-177">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-177">No</span></span>|<span data-ttu-id="f817a-178">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-178">No</span></span>|
+|<span data-ttu-id="f817a-179">**Localizar dispositivo**</span><span class="sxs-lookup"><span data-stu-id="f817a-179">**Locate device**</span></span>|<span data-ttu-id="f817a-180">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-180">No</span></span>|<span data-ttu-id="f817a-181">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-181">No</span></span>|<span data-ttu-id="f817a-182">Modo perdido do iOS 9.3 e posterior, supervisionado e corporativo</span><span class="sxs-lookup"><span data-stu-id="f817a-182">Lost mode iOS 9.3 and later, supervised, and corp owned</span></span>|<span data-ttu-id="f817a-183">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-183">No</span></span>|<span data-ttu-id="f817a-184">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-184">No</span></span>|
+|<span data-ttu-id="f817a-185">**Fazer logoff do usuário atual**</span><span class="sxs-lookup"><span data-stu-id="f817a-185">**Logout current user**</span></span>|<span data-ttu-id="f817a-186">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-186">No</span></span>|<span data-ttu-id="f817a-187">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-187">No</span></span>|<span data-ttu-id="f817a-188">iOS 9.3 e posterior (somente dispositivos iPad compartilhados)</span><span class="sxs-lookup"><span data-stu-id="f817a-188">iOS 9.3 and later (shared iPad devices only)</span></span>|<span data-ttu-id="f817a-189">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-189">No</span></span>|<span data-ttu-id="f817a-190">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-190">No</span></span>|
+|<span data-ttu-id="f817a-191">**Reiniciar**</span><span class="sxs-lookup"><span data-stu-id="f817a-191">**Restart**</span></span>|<span data-ttu-id="f817a-192">Windows 8.1 e posterior</span><span class="sxs-lookup"><span data-stu-id="f817a-192">Windows 8.1 and later</span></span>|<span data-ttu-id="f817a-193">Windows Phone 8.1 e posterior</span><span class="sxs-lookup"><span data-stu-id="f817a-193">Windows Phone 8.1 and later</span></span>|<span data-ttu-id="f817a-194">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-194">No</span></span>|<span data-ttu-id="f817a-195">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-195">No</span></span>|<span data-ttu-id="f817a-196">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-196">No</span></span>|
+|<span data-ttu-id="f817a-197">**Começar do zero**</span><span class="sxs-lookup"><span data-stu-id="f817a-197">**Fresh Start**</span></span>|<span data-ttu-id="f817a-198">Atualização do Windows 10 para Criadores e posterior</span><span class="sxs-lookup"><span data-stu-id="f817a-198">Windows 10 Creators update and later</span></span>|<span data-ttu-id="f817a-199">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-199">No</span></span>|<span data-ttu-id="f817a-200">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-200">No</span></span>|<span data-ttu-id="f817a-201">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-201">No</span></span>|<span data-ttu-id="f817a-202">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-202">No</span></span>|
+|<span data-ttu-id="f817a-203">**Nova sessão de Assistência Remota**</span><span class="sxs-lookup"><span data-stu-id="f817a-203">**New Remote Assistance session**</span></span>|<span data-ttu-id="f817a-204">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-204">No</span></span>|<span data-ttu-id="f817a-205">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-205">No</span></span>|<span data-ttu-id="f817a-206">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-206">No</span></span>|<span data-ttu-id="f817a-207">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-207">No</span></span>|<span data-ttu-id="f817a-208">Sim</span><span class="sxs-lookup"><span data-stu-id="f817a-208">Yes</span></span>|
+|<span data-ttu-id="f817a-209">**Remover usuário**</span><span class="sxs-lookup"><span data-stu-id="f817a-209">**Remove user**</span></span>|<span data-ttu-id="f817a-210">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-210">No</span></span>|<span data-ttu-id="f817a-211">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-211">No</span></span>|<span data-ttu-id="f817a-212">iOS 9.3 e posterior (somente dispositivos iPad compartilhados)</span><span class="sxs-lookup"><span data-stu-id="f817a-212">iOS 9.3 and later (shared iPad devices only)</span></span>|<span data-ttu-id="f817a-213">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-213">No</span></span>|<span data-ttu-id="f817a-214">Não</span><span class="sxs-lookup"><span data-stu-id="f817a-214">No</span></span>|
+
+## <span data-ttu-id="f817a-215">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="f817a-215">Next steps</span></span>
+<a id="next-steps" class="xliff"></a>
+
+- <span data-ttu-id="f817a-216">Escolha **Ações do Dispositivo** para ver o status das ações executadas nos dispositivos gerenciados.</span><span class="sxs-lookup"><span data-stu-id="f817a-216">Choose **Device Actions** to see the status of actions taken on devices you manage.</span></span> 
+<span data-ttu-id="f817a-217">![Monitorar ações do dispositivo](./media/monitor-device-actions.png)</span><span class="sxs-lookup"><span data-stu-id="f817a-217">![Monitor device actions](./media/monitor-device-actions.png)</span></span>
