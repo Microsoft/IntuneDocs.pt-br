@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # Introdução ao Microsoft Intune no portal do Azure
 <a id="introduction-to-microsoft-intune-in-the-azure-portal" class="xliff"></a>
@@ -105,7 +105,7 @@ Informações para ajudá-lo a [planejar e projetar](/intune-classic/plan-design
 [Configurar o acesso ao Exchange ActiveSync e ao Exchange local](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### Usuários
 <a id="users" class="xliff"></a>
-[Saiba mais sobre os usuários de dispositivos que você gerencia e classifique os recursos em grupos](user-management.md).
+[Saiba mais sobre os usuários de dispositivos que você gerencia e classifique os recursos em grupos](users-add.md).
 ### Grupos
 <a id="groups" class="xliff"></a>
 [Saiba mais sobre como você pode usar grupos do Azure Active Directory com o Intune](groups-get-started.md)

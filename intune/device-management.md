@@ -1,32 +1,30 @@
 ---
 title: Gerenciar dispositivos com o Intune
-titleSuffix: Intune Azure preview
-description: "Visualização do Intune Azure: saiba como exibir os dispositivos gerenciados com o Intune e executar várias operações neles."
+titleSuffix: Intune on Azure
+description: "Saiba como ver os dispositivos gerenciados com o Intune e executar várias operações neles."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/13/2017
+ms.date: 07/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 
+ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1fdb86184875d7082659d608b445b41b2ad9aa9e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/06/2017
 ---
+# O que é o gerenciamento de dispositivo do Microsoft Intune?
+<a id="what-is-microsoft-intune-device-management" class="xliff"></a>
 
-# <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenciados e permite que você execute tarefas remotas neles. Para acessar a carga de trabalho:
 
@@ -34,71 +32,48 @@ A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenc
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Dispositivos**.
 
-Agora, escolha uma das seguintes opções:
+Agora é possível realizar as seguintes ações:
 
-- **Visão geral** Obtenha informações sobre os dispositivos registrados e os sistemas operacionais que cada dispositivo executado.
-- **Gerenciar** – Escolha **Todos os Dispositivos** para ver uma lista de todos os dispositivos gerenciados.
-    Selecione um desses dispositivos na lista para abrir a folha <*nome do dispositivo*> **Visão geral** na qual você pode selecionar um destes:
-    - **Visão geral** – Veja informações gerais sobre o dispositivo, incluindo informações sobre seu nome, proprietário, se ele é um dispositivo BYOD, quando foi seu último check-in e muito mais.
+- [Exibir inventário de dispositivo](device-inventory.md)
+- Executar ações remotas de dispositivo:
+    - [Remover os dados da empresa](device-company-data-remove.md) 
+    - [Redefinição de fábrica](device-factory-reset.md)
+    - [Bloqueio remoto](device-remote-lock.md)
+    - [Redefinir senha](device-passcode-reset.md)
+    - [Bypass de Bloqueio de Ativação](device-activation-lock-bypass.md)
+    - [Começar do zero](device-fresh-start.md)
+    - [Modo perdido](device-lost-mode.md)
+    - [Localizar dispositivo](device-locate.md)
+    - [Reiniciar](device-restart.md)
+    - [Redefinir o PIN do Windows 10](device-windows-pin-reset.md)
+    - [Controle remoto para Android](device-profile-android-teamviewer.md)
 
-    - **Hardware** – Consulte informações mais detalhadas sobre o dispositivo, inclusive do espaço de armazenamento livre, modelo e fabricante e muito mais.
-    ![Inventário de hardware de dispositivo gerenciado](./media/hardware-inventory.png)
-    - **Aplicativos detectados** – Exibe uma lista de todos os aplicativos que o Intune encontrou instalados no dispositivo.
-    ![Nó de aplicativos detectado](./media/detected-applications.png)
-- **Monitorar** Escolha **Ações de Dispositivo** para ver uma lista de ações de dispositivo que foram realizadas em dispositivos gerenciados e o estado atual dessas ações.
+
+## Suporte para cada ação de dispositivo
+<a id="support-for-each-device-action" class="xliff"></a>
+
+Use a tabela a seguir para entender as plataformas de dispositivo com suporte em cada ação.
+
+|||||||
+|-|-|-|-|-|-|
+|Ação do dispositivo|Windows|Windows Phone|iOS|macOS|Android|
+|**Remover os dados da empresa**|Sim|Sim|Sim|Sim|Sim|
+|**Redefinição de fábrica**|Windows 8.1 e posterior (dispositivos não gerenciados por EAS)|Sim|Sim|Não|Não há suporte para o Android for Work|
+|**Excluir**|Sim|Sim|Sim|Sim|Sim|
+|**Bloqueio remoto**|Não|Windows Phone 8.1 e posterior|Sim|Não|Sim|
+|**Redefinir senha**|Não|Windows Phone 8.1 para atualização do Windows 10 para Criadores não ingressado no Azure AD, Atualização do Windows 10 para Criadores e posterior – todos|Sim|Não|Anteriores ao Android 7, sem suporte para o Android for Work|
+|**Nova senha** (para dispositivos Windows 10)|Não|Atualização do Windows 10 para Criadores e posterior (ingressado no Azure AD)|Não|Não|Não há suporte para o Android for Work|
+|**Bypass de Bloqueio de Ativação**|Não|Não|Somente dispositivos corporativos|Não|Não|
+|**Modo perdido**|Não|Não|iOS 9.3 e posterior, supervisionado e corporativo|Não|Não|
+|**Localizar dispositivo**|Não|Não|Modo perdido do iOS 9.3 e posterior, supervisionado e corporativo|Não|Não|
+|**Fazer logoff do usuário atual**|Não|Não|iOS 9.3 e posterior (somente dispositivos iPad compartilhados)|Não|Não|
+|**Reiniciar**|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|Não|Não|Não|
+|**Começar do zero**|Atualização do Windows 10 para Criadores e posterior|Não|Não|Não|Não|
+|**Nova sessão de Assistência Remota**|Não|Não|Não|Não|Sim|
+|**Remover usuário**|Não|Não|iOS 9.3 e posterior (somente dispositivos iPad compartilhados)|Não|Não|
+
+## Próximas etapas
+<a id="next-steps" class="xliff"></a>
+
+- Escolha **Ações do Dispositivo** para ver o status das ações executadas nos dispositivos gerenciados. 
 ![Monitorar ações do dispositivo](./media/monitor-device-actions.png)
-- **Ajuda e Suporte** - exibe links para a documentação da solução de problemas e suporte.
-
-## <a name="available-device-actions"></a>Ações do dispositivo disponíveis
-
-Além disso, você pode executar as seguintes ações remotas no dispositivo (nem todas as ações têm suporte em todas as plataformas de dispositivo):
-
-### <a name="remove-company-data"></a>**Remover os dados da empresa**
-Remove somente os dados da empresa gerenciados pelo Intune. Não remove dados pessoais do dispositivo. O dispositivo não será mais gerenciado pelo Intune e não será capaz de acessar recursos corporativos (sem suporte para dispositivos Windows que fazem parte do Azure Active Directory).
-
-### <a name="factory-reset"></a>**Redefinição de fábrica**
-Retorna o dispositivo para suas configurações padrão. O dispositivo não será gerenciado pelo Intune e dados pessoais e da empresa serão removidos. Você não pode desfazer essa ação.
-
-### <a name="remote-lock"></a>**Bloqueio remoto**
-Bloqueia o dispositivo. O proprietário do dispositivo deve usar a senha para desbloqueá-lo. Você pode bloquear remotamente apenas um dispositivo que tenha um PIN ou senha definida.
-
-### <a name="reset-passcode"></a>**Redefinir senha**
-Gera uma nova senha para o dispositivo que será exibido na folha *nome do dispositivo*> **Visão Geral**.
-
-### <a name="bypass-activation-lock"></a>**Bypass de Bloqueio de Ativação**
-Isso removerá o bloqueio de ativação de um dispositivo iOS sem a ID da Apple e a senha do usuário. Depois de fazer o bypass do bloqueio de ativação, o dispositivo ativa-o novamente quando inicia o aplicativo o Localizar Meu iPhone. Faça bypass do bloqueio de ativação apenas se você tiver acesso físico ao dispositivo.
-
-### <a name="fresh-start"></a>**Começar do zero**
-
-Remove todos os aplicativos que foram instalados em um computador com Windows 10 executando a Atualização para Criadores e, em seguida, atualiza automaticamente o computador para a versão mais recente do Windows.
-Isso pode ser usado para ajudar a remover aplicativos pré-instalados (OEM) que geralmente são fornecidos com um novo computador. Você pode configurar se os dados do usuário são mantidos quando essa ação do dispositivo é realizada. Nesse caso, os aplicativos e as configurações são removidas, mas o conteúdo da pasta base dos usuários é mantido.
-
-
-### <a name="lost-mode"></a>**Modo perdido**
-Se um dispositivo iOS foi roubado ou perdido, você poderá habilitar o modo perdido. Ele permite especificar uma mensagem e um número de telefone que serão exibidos na tela de bloqueio do dispositivo. Para fazer isto:
-1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Modo perdido**.
-2.    Na folha **Modo perdido**, ative o modo perdido, digite a mensagem que será exibida e, opcionalmente, um número de telefone de contato.
-3.    Clique em **OK**.
-Quando você ativa o modo perdido, bloqueia todo o uso do dispositivo. O usuário final não poderá acessar o dispositivo até que você desative o modo perdido. Enquanto o modo perdido estiver habilitado, você poderá usar a ação **Localizar dispositivo** para descobrir onde está o dispositivo.
-Para usar o modo perdido, o dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado.
-
-### <a name="locate-device"></a>**Localizar dispositivo**
-Use esta ação remota para exibir a localização de um dispositivo iOS perdido ou roubado em um mapa. O dispositivo deve ser um dispositivo iOS corporativo, inscrito pelo DEP e estar no modo supervisionado. Antes de usar essa ação, o dispositivo deve ser colocado no modo perdido.
-1.    Na folha de propriedades de um dispositivo iOS, escolha **Mais** > **Localizar dispositivo**.
-2.    Depois do dispositivo ser localizado, o local será exibido na folha **Localizar dispositivo**.
-    ![Folha Localizar dispositivo](./media/locate-device.png)
-
->[!NOTE]
->Para fins de privacidade, a distância de ampliação do zoom do mapa é limitada.
-
-### <a name="restart"></a>**Reiniciar**
-Faz com que o dispositivo seja reiniciado. O proprietário do dispositivo não será notificado automaticamente sobre a reinicialização, portanto ele pode perder trabalho.
-
-
-## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Informações sobre segurança e privacidade para o modo perdido e ações para localizar o dispositivo
-- Nenhuma informação do local do dispositivo será enviada para o Intune até que você ative esta ação.
-- Quando você usa a ação para localizar o dispositivo, as coordenadas da latitude e longitude do dispositivo são enviadas para o Intune e exibidas no portal do Azure.
-- Os dados são armazenados por 24 horas, então, removidos. Você não pode remover manualmente os dados de localização.
-- Os dados de localização são criptografados, enquanto estão armazenados e enquanto estão sendo transmitidos.
-- Ao configurar o modo perdido, recomendamos que a mensagem inserida, que é exibida na tela de bloqueio, inclua informações para que o local do dispositivo possa ser determinado.
-
