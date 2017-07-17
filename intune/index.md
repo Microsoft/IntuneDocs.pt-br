@@ -1,6 +1,6 @@
 ---
 layout: HubPage
-hide_bc: true
+hide_bc: True
 author: jasongroce
 ms.author: apexprodleads
 ms.service: microsoft-intune
@@ -8,12 +8,11 @@ ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
 title: "Documentação do Microsoft Intune"
 description: Saiba como usar o Microsoft Intune.
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 0f1b318d9aec367e2796b317751215febb6ae28d
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: db3afc3146c1b4e83aee5b64f0a7e6c5215c7ddd
+ms.sourcegitcommit: 716e0170683c03999e3cd8e1a6b2b14adb7d5b54
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/04/2017
 ---
 <div id="main" class="v2">
 <div class="container">
@@ -60,26 +59,7 @@ ms.lasthandoff: 06/08/2017
                             </a>
                         </li>
                         <li>
-                        <a href="/intune-classic/plan-design/introduction">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-featured-deploymentplanning.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Design e planejamento de implantação</h3>
-                                            <p>Percorra o processo de desenvolvimento de um plano de implantação, criação de um design, integração do Intune e realização de uma distribuição de produção.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/intune-education/what-is-intune-for-education">
+                         <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -91,6 +71,25 @@ ms.lasthandoff: 06/08/2017
                                         <div class="cardText">
                                             <h3>O que é o Intune para Educação?</h3>
                                             <p>Saiba como realizar tarefas diárias com dispositivos em salas de aula.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started-evaluation">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Introdução ao Intune</h3>
+                                            <p>Aprenda as noções básicas para criar um grupo e um usuário. Registre dispositivos. Atribua políticas e aplicativos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1178,4 +1177,3 @@ ms.lasthandoff: 06/08/2017
         </li>
     </ul>
 </div>
-
