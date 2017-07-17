@@ -1,12 +1,12 @@
 ---
 title: "Configurações de restrição de dispositivo do Intune para Windows 10"
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: conheça as configurações do Intune que você pode usar para controlar as configurações do dispositivo e as funcionalidades dos dispositivos Windows 10."
+titleSuffix: Intune on Azure
+description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos Windows 10."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,211 +15,272 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88910c6628bb356e4a757cbdb4cf63b0acf60040
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
+# <span data-ttu-id="f76b3-103">Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="f76b3-103">Windows 10 and later device restriction settings in Microsoft Intune</span></span>
+<a id="windows-10-and-later-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-## <a name="general"></a>Geral
--     **Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.
--     **Copiar e colar (somente dispositivo móvel)** – Permitir utilizar ações de copiar e colar entre os aplicativos do dispositivo.
--     **Cancelamento de registro manual** – Permite que o usuário exclua manualmente a conta de trabalho do dispositivo.
--     **Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
--     **Envio de dados de diagnóstico** – Os valores possíveis são:
-    -         **Nenhum** Nenhum dado é enviado para a Microsoft
-    -         **Básico** Informações limitadas são enviadas para a Microsoft
-    -         **Avançado** Dados de diagnóstico avançados são enviados para a Microsoft
-    -         **Completo** Envia os mesmos dados que Avançado, além de dados adicionais sobre o estado do dispositivo
--     **Câmera** – Permite ou bloqueia o uso da câmera do dispositivo.
--     **Sincronização de arquivos do OneDrive** - bloqueia a sincronização de arquivos do dispositivo com o OneDrive.
--     **Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como um cartão SD, no dispositivo.
--     **Geolocalização** – Especifica se o dispositivo pode usar informações de serviços de localização.
--     **Compartilhamento da Internet** – Permite o uso do compartilhamento de conexão com a Internet no dispositivo.
--     **Redefinição do telefone** – Controla se o usuário pode realizar uma redefinição de fábrica em seu dispositivo.
--     **Conexão USB (somente dispositivos móveis)** – controla se os dispositivos podem acessar dispositivos de armazenamento externo por meio de uma conexão USB.
--     **Modo AntiTheft (somente dispositivos móveis)** – configure se o modo AntiTheft do Windows está habilitado.
--     **Notificações da central de ações (somente dispositivos móveis)** – habilita ou desabilita as notificações da central de ações na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
--     **Cortana** – Habilitar ou desabilitar a assistente de voz Cortana.
--     **Gravação de voz (somente dispositivos móveis)** – permitir ou bloquear o uso do gravador de voz do dispositivo.
--     **Modificação das configurações de energia e suspensão (somente desktop)** - impede que o usuário final altere as configurações de energia e suspensão no dispositivo.
--     **Modificação das configurações de região (somente desktop)** - impede que o usuário final altere as configurações de região no dispositivo.
--     **Modificação das configurações de idioma (somente desktop)** - impede que o usuário altere as configurações de idioma no dispositivo.
--     **Modificação do horário do sistema** - impede que o usuário final altere a data e hora do dispositivo.
--     **Modificação do nome do dispositivo** - impede que o usuário final altere o nome do dispositivo.
--     **Adicionar pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que instala os pacotes de provisionamento.
--     **Remover pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que remove os pacotes de provisionamento.
--     **Descoberta de dispositivos** - bloqueia a descoberta de um dispositivo por outros dispositivos.
--     **Alternador de tarefas (somente dispositivos móveis)** - bloqueia o alternador de tarefas no dispositivo.
--     **Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
-
-
-## <a name="password"></a>Senha
--     **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
-    -     **Tipo de senha exigida** – Especifica se a senha deve ser apenas numérica ou alfanumérica.
-    -     **Tamanho mínimo da senha** – Aplicável somente a Windows 10 Mobile.
-    -     **Número de falhas conexão antes de limpar o dispositivo** – Para dispositivos que executam o Windows 10: se o dispositivo tiver o BitLocker habilitado, ele será colocado no modo de recuperação do BitLocker depois que a conexão falhar o número de vezes especificado. Se o dispositivo não tiver o BitLocker habilitado, essa configuração não será aplicada.
-Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar o número de vezes que você especificar, o dispositivo será apagado.
-    -     **Máximo de minutos de inatividade para o bloqueio de tela** – Especifica o período que um dispositivo deve permanecer ocioso antes da tela ser bloqueada.
-    -     **Expiração de senha (dias)** – Especifica o período após o qual a senha do dispositivo deve ser alterada.
-    -     **Impedir a reutilização de senhas anteriores** – Especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.
-    -     **Exigir senha quando o dispositivo retorna do estado inativo** – Especifica que o usuário deverá inserir uma senha para desbloquear o dispositivo (somente Windows 10 Mobile).
--     **Criptografia** – Habilitar a criptografia em dispositivos de destino (somente Windows 10 Mobile).
-
-## <a name="personalization"></a>Personalização
-
--     **URL de imagem de plano de fundo da área de trabalho (somente desktop)** - especifique a URL para uma imagem no formato PNG, JPG ou JPEG que será usada como o papel de parede da área de trabalho do Windows. Os usuários não poderão alterar isso.
-
-## <a name="locked-screen-experience"></a>Experiência na tela bloqueada
-
--     **URL de imagem da tela bloqueada (somente desktop)** - especifique a URL para uma imagem no formato PNG, JPG ou JPEG que será usada como o papel de parede de tela bloqueada do Windows. Os usuários não poderão alterar isso.
+## <span data-ttu-id="f76b3-104">Geral</span><span class="sxs-lookup"><span data-stu-id="f76b3-104">General</span></span>
+<a id="general" class="xliff"></a>
+-   <span data-ttu-id="f76b3-105">**Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.</span><span class="sxs-lookup"><span data-stu-id="f76b3-105">**Screen capture (mobile only)** - Lets the user capture the device screen as an image.</span></span>
+-   <span data-ttu-id="f76b3-106">**Copiar e colar (somente dispositivo móvel)** – Permitir utilizar ações de copiar e colar entre os aplicativos do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-106">**Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.</span></span>
+-   <span data-ttu-id="f76b3-107">**Cancelamento de registro manual** – Permite que o usuário exclua manualmente a conta de trabalho do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-107">**Manual unenrollment** - Lets the user manually delete the workplace account from the device.</span></span>
+-   <span data-ttu-id="f76b3-108">**Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.</span><span class="sxs-lookup"><span data-stu-id="f76b3-108">**Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.</span></span>
+-   <span data-ttu-id="f76b3-109">**Envio de dados de diagnóstico** – Os valores possíveis são:</span><span class="sxs-lookup"><span data-stu-id="f76b3-109">**Diagnostic data submission** - Possible values are:</span></span>
+    -       <span data-ttu-id="f76b3-110">**Nenhum** Nenhum dado é enviado para a Microsoft</span><span class="sxs-lookup"><span data-stu-id="f76b3-110">**None** No data is sent to Microsoft</span></span>
+    -       <span data-ttu-id="f76b3-111">**Básico** Informações limitadas são enviadas para a Microsoft</span><span class="sxs-lookup"><span data-stu-id="f76b3-111">**Basic** Limited information is sent to Microsoft</span></span>
+    -       <span data-ttu-id="f76b3-112">**Avançado** Dados de diagnóstico avançados são enviados para a Microsoft</span><span class="sxs-lookup"><span data-stu-id="f76b3-112">**Enhanced** Enhanced diagnostic data is sent to Microsoft</span></span>
+    -       <span data-ttu-id="f76b3-113">**Completo** Envia os mesmos dados que Avançado, além de dados adicionais sobre o estado do dispositivo</span><span class="sxs-lookup"><span data-stu-id="f76b3-113">**Full** Sends the same data as Enhanced, plus additional data about the device state</span></span>
+-   <span data-ttu-id="f76b3-114">**Câmera** – Permite ou bloqueia o uso da câmera do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-114">**Camera** - Allow or block use of the camera on the device.</span></span>
+-   <span data-ttu-id="f76b3-115">**Sincronização de arquivos do OneDrive** - bloqueia a sincronização de arquivos do dispositivo com o OneDrive.</span><span class="sxs-lookup"><span data-stu-id="f76b3-115">**OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.</span></span>
+-   <span data-ttu-id="f76b3-116">**Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como cartões SD, no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-116">**Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.</span></span>
+-   <span data-ttu-id="f76b3-117">**Geolocalização** – Especifica se o dispositivo pode usar informações de serviços de localização.</span><span class="sxs-lookup"><span data-stu-id="f76b3-117">**Geolocation** - Specifies whether the device can use location services information.</span></span>
+-   <span data-ttu-id="f76b3-118">**Compartilhamento da Internet** – Permite o uso do compartilhamento de conexão com a Internet no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-118">**Internet sharing** - Allow the use of Internet connection sharing on the device.</span></span>
+-   <span data-ttu-id="f76b3-119">**Redefinição do telefone** – Controla se o usuário pode realizar uma redefinição de fábrica em seu dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-119">**Phone reset** - Controls whether the user can do a factory reset on their device.</span></span>
+-   <span data-ttu-id="f76b3-120">**Conexão USB (somente dispositivos móveis)** – controla se os dispositivos podem acessar dispositivos de armazenamento externo por meio de uma conexão USB.</span><span class="sxs-lookup"><span data-stu-id="f76b3-120">**USB connection (mobile only)** - Controls whether devices can access external storage devices through a USB connection.</span></span>
+-   <span data-ttu-id="f76b3-121">**Modo AntiTheft (somente dispositivos móveis)** – configure se o modo AntiTheft do Windows está habilitado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-121">**AntiTheft mode (mobile only)** - Configure whether Windows Antitheft mode is enabled.</span></span>
+-   <span data-ttu-id="f76b3-122">**Notificações da central de ações (somente dispositivos móveis)** – habilita ou desabilita as notificações da central de ações na tela de bloqueio do dispositivo (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-122">**Action center notifications (mobile only)**   - Enable or disable action center notifications on the device lock screen (Windows 10 Mobile only).</span></span>
+-   <span data-ttu-id="f76b3-123">**Cortana** – Habilitar ou desabilitar a assistente de voz Cortana.</span><span class="sxs-lookup"><span data-stu-id="f76b3-123">**Cortana** - Enable or disable the Cortana voice assistant.</span></span>
+-   <span data-ttu-id="f76b3-124">**Gravação de voz (somente dispositivos móveis)** – Permitir ou bloquear o uso do gravador de voz do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-124">**Voice recording (mobile only)** - Allow or block use of the device voice recorder.</span></span>
+-   <span data-ttu-id="f76b3-125">**Modificação das configurações de energia e suspensão (somente desktop)** - impede que o usuário final altere as configurações de energia e suspensão no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-125">**Power and sleep settings modification (desktop only)** - Prevents the end user from changing power and sleep settings on the device.</span></span>
+-   <span data-ttu-id="f76b3-126">**Modificação das configurações de região (somente desktop)** - impede que o usuário final altere as configurações de região no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-126">**Region settings modification (desktop only)** - Prevents the end user from changing the region settings on the device.</span></span>
+-   <span data-ttu-id="f76b3-127">**Modificação das configurações de idioma (somente desktop)** - impede que o usuário altere as configurações de idioma no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-127">**Language settings modification (desktop only)** - Prevents the user from changing the language settings on the device.</span></span>
+-   <span data-ttu-id="f76b3-128">**Modificação do horário do sistema** - impede que o usuário final altere a data e hora do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-128">**System Time modification** - Prevents the end user from changing the device date and time.</span></span>
+-   <span data-ttu-id="f76b3-129">**Modificação do nome do dispositivo** - impede que o usuário final altere o nome do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-129">**Device name modification** - Prevents the end user from changing the device name.</span></span>
+-   <span data-ttu-id="f76b3-130">**Adicionar pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que instala os pacotes de provisionamento.</span><span class="sxs-lookup"><span data-stu-id="f76b3-130">**Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.</span></span>
+-   <span data-ttu-id="f76b3-131">**Remover pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que remove os pacotes de provisionamento.</span><span class="sxs-lookup"><span data-stu-id="f76b3-131">**Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.</span></span>
+-   <span data-ttu-id="f76b3-132">**Descoberta de dispositivos** - bloqueia a descoberta de um dispositivo por outros dispositivos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-132">**Device discovery** - Block a device from being discovered by other devices.</span></span>
+-   <span data-ttu-id="f76b3-133">**Alternador de tarefas (somente dispositivos móveis)** - bloqueia o alternador de tarefas no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-133">**Task Switcher (mobile only)** - Blocks the task switcher on the device.</span></span>
+-   <span data-ttu-id="f76b3-134">**Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-134">**SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.</span></span>
 
 
-## <a name="app-store"></a>Loja de aplicativos
+## <span data-ttu-id="f76b3-135">Senha</span><span class="sxs-lookup"><span data-stu-id="f76b3-135">Password</span></span>
+<a id="password" class="xliff"></a>
+-   <span data-ttu-id="f76b3-136">**Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-136">**Password** - Require the end user to enter a password to access the device.</span></span>
+    -   <span data-ttu-id="f76b3-137">**Tipo de senha exigida** – Especifica se a senha deve ser apenas numérica ou alfanumérica.</span><span class="sxs-lookup"><span data-stu-id="f76b3-137">**Required password type** - Specifies whether the password must be numeric only, or alphanumeric.</span></span>
+    -   <span data-ttu-id="f76b3-138">**Tamanho mínimo da senha** – Aplicável somente a Windows 10 Mobile.</span><span class="sxs-lookup"><span data-stu-id="f76b3-138">**Minimum password length** - Applies to Windows 10 Mobile only.</span></span>
+    -   <span data-ttu-id="f76b3-139">**Número de falhas de entrada antes de apagar o dispositivo** – Para dispositivos que executam o Windows 10: se o dispositivo tiver o BitLocker habilitado, ele será colocado no modo de recuperação do BitLocker depois que a entrada falhar o número de vezes especificado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-139">**Number of sign-in failures before wiping device** - For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign-in fails the number of times that you specified.</span></span> <span data-ttu-id="f76b3-140">Se o dispositivo não tiver o BitLocker habilitado, essa configuração não será aplicada.</span><span class="sxs-lookup"><span data-stu-id="f76b3-140">If the device is not BitLocker enabled, then this setting doesn't apply.</span></span>
+<span data-ttu-id="f76b3-141">Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar o número de vezes que você especificar, o dispositivo será apagado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-141">For devices running Windows 10 Mobile: After sign-in fails the number of times you specify, the device is wiped.</span></span>
+    -   <span data-ttu-id="f76b3-142">**Máximo de minutos de inatividade para o bloqueio de tela** – Especifica o período que um dispositivo deve permanecer ocioso antes da tela ser bloqueada.</span><span class="sxs-lookup"><span data-stu-id="f76b3-142">**Maximum minutes of inactivity until screen locks** - Specifies the length of time a device must be idle before the screen is locked.</span></span>
+    -   <span data-ttu-id="f76b3-143">**Expiração de senha (dias)** – Especifica o período após o qual a senha do dispositivo deve ser alterada.</span><span class="sxs-lookup"><span data-stu-id="f76b3-143">**Password expiration (days)** - Specifies the length of time after which the device password must be changed.</span></span>
+    -   <span data-ttu-id="f76b3-144">**Impedir a reutilização de senhas anteriores** – Especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-144">**Prevent reuse of previous passwords** - Specifies the number of previously used passwords that are remembered by the device.</span></span>
+    -   <span data-ttu-id="f76b3-145">**Exigir senha quando o dispositivo retorna do estado inativo** – Especifica que o usuário deverá inserir uma senha para desbloquear o dispositivo (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-145">**Require password when device returns from idle state** - Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).</span></span>
+    -   <span data-ttu-id="f76b3-146">**Senhas simples** – Permita o uso de senhas simples como 1111 ou 1234.</span><span class="sxs-lookup"><span data-stu-id="f76b3-146">**Simple passwords** – Lets you allow the use of simple passwords like 1111 and 1234.</span></span> <span data-ttu-id="f76b3-147">Essa configuração também permite ou bloqueia o uso de senhas de imagem do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-147">This setting also allows or blocks the use of Windows picture passwords.</span></span>
+-   <span data-ttu-id="f76b3-148">**Criptografia** – Habilitar a criptografia em dispositivos de destino (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-148">**Encryption** - Enable encryption on targeted devices (Windows 10 Mobile only).</span></span>
 
--     **Loja de aplicativos (somente dispositivo móvel)** – Habilitar ou bloquear o uso da loja de aplicativos em dispositivos Windows 10 Mobile.
--     **Atualizar aplicativos automaticamente a partir da Store** - permite que os aplicativos instalados a partir da Windows Store sejam atualizados automaticamente.
--     **Instalação de aplicativo confiável** - permite que os aplicativos assinados com um certificado de confiança sejam carregados por sideload.
--     **Desbloqueio do desenvolvedor** - permite que configurações de desenvolvedor do Windows, como a permissão de sideload de aplicativos, sejam modificadas pelo usuário final.
--     **Dados de aplicativo do usuário compartilhados** - permite que os aplicativos compartilhem dados entre usuários diferentes no mesmo dispositivo.
--     **Usar somente armazenamento privado** - habilite esta opção para permitir que somente os usuários finais possam baixar aplicativos de seu armazenamento privado.
--     **Inicialização de aplicativo originado na Store** - usada para desabilitar todos os aplicativos que foram previamente instalados no dispositivo ou baixados da Windows Store.
--     **Instalar dados do aplicativo no volume do sistema** - impede que os aplicativos armazenem dados no volume do sistema do dispositivo.
--     **Instalar aplicativos na unidade do sistema** - impede que os aplicativos armazenem dados na unidade do sistema do dispositivo.
--     **DVR de Jogos (somente desktop)** - Define se é permitido registrar e transmitir jogos.
+## <span data-ttu-id="f76b3-149">Personalização</span><span class="sxs-lookup"><span data-stu-id="f76b3-149">Personalization</span></span>
+<a id="personalization" class="xliff"></a>
 
+-   <span data-ttu-id="f76b3-150">**URL de imagem da tela de fundo da área de trabalho (somente desktop)** – Especifique a URL para uma imagem no formato PNG, JPG ou JPEG que você deseja usar como o papel de parede da área de trabalho do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-150">**Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper.</span></span> <span data-ttu-id="f76b3-151">Os usuários não poderão alterar isso.</span><span class="sxs-lookup"><span data-stu-id="f76b3-151">Users will not be able to change this.</span></span>
 
+## <span data-ttu-id="f76b3-152">Privacidade</span><span class="sxs-lookup"><span data-stu-id="f76b3-152">Privacy</span></span>
+<a id="privacy" class="xliff"></a>
 
-## <a name="edge-browser"></a>Navegador Edge
--     **Navegador Microsoft Edge (somente dispositivo móvel)** – Permitir o uso do navegador da Web Edge no dispositivo.
--     **SmartScreen** – Habilita ou desabilita o SmartScreen, que bloqueia sites fraudulentos.
--     **Enviar cabeçalhos Do Not Track** – Configura o navegador Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
--     **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
--     **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Edge.
--     **Pop-ups** - bloqueia janelas pop-up no navegador (aplica-se a somente a desktops com Windows 10).
--     **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
--     **Enviar tráfego da intranet para o Internet Explorer** – permite aos usuários abrir sites de intranet no Internet Explorer (somente para desktops com Windows 10).
--     **Preenchimento automático** – permite que os usuários alterem completamente as configurações de preenchimento automático no navegador (somente para desktop com Windows 10).
--     **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Edge.
--     **Local da lista de sites do modo Empresarial** – Especifica onde encontrar a lista de sites que serão abertos no modo Empresarial. Os usuários não podem editar essa lista.<br>(Somente Windows 10 Desktop).
--     **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Edge.
--     **Extensões** - permite ao usuário final instalar extensões do Edge no dispositivo.
--     **Navegação inPrivate** - impede que o usuário final abra sessões de navegação InPrivate.
--     **Url da primeira execução** - insira a URL que o navegador Edge abrirá na primeira vez que for executado (somente dispositivos móveis).
--     **Home pages** - adicione uma lista de sites que serão usados como home pages no navegador Edge (somente desktop).
--     **Bloquear acesso aos about:flags** - impede que o usuário final acesse a página about:flags no Edge que contém configurações experimentais e de desenvolvedor.
--     **Substituição do prompt de SmartScreen** - permite ao usuário final ignorar os avisos do filtro do SmartScreen sobre sites possivelmente mal-intencionados.
--     **Substituição do prompt de SmartScreen para arquivos** - permite ao usuário final ignorar os avisos do filtro do SmartScreen sobre o download de arquivos possivelmente mal-intencionados.
--     **Endereço IP do localhost WebRtc** - bloqueia a exibição do endereço IP do localhost de usuários ao fazer chamadas telefônicas usando a protocolo RTC da web.
--     **Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado. Os usuários finais podem alterar esse valor a qualquer momento.
-
-## <a name="search"></a>Pesquisar
-- **Pesquisa segura (somente dispositivos móveis)** - controla como o Cortana filtra o conteúdo adulto nos resultados da pesquisa. Você pode selecionar **Estrito**, **Moderado** ou permitir que o usuário final escolha suas próprias configurações.
-
-## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
--     **Conta da Microsoft** – Permite que o usuário associe uma conta da Microsoft ao dispositivo.
--     **Conta não Microsoft** – Permite que o usuário adicione contas de email ao dispositivo que não estão associadas a uma conta da Microsoft.
--     **Sincronização de configurações para conta da Microsoft** – Permitir configurações de dispositivo e aplicativos associadas a uma conta da Microsoft para sincronização entre dispositivos.
-
-## <a name="cellular-and-connectivity"></a>Rede Celular e Conectividade
--     **Roaming de dados** – Permitir roaming entre redes ao acessar os dados.
--     **VPN em rede celular** – Controla se o dispositivo pode acessar conexões VPN quando conectado a uma rede celular.
--     **Roaming VPN em rede celular** – Controla se o dispositivo pode acessar conexões VPN quando conectado a uma rede celular em roaming.
--     **Bluetooth** – Controla se o usuário pode habilitar e configurar o Bluetooth no dispositivo.
--     **Descoberta de Bluetooth** – Permite que o dispositivo seja descoberto por outros dispositivos habilitados para Bluetooth.
--     **Anúncios por Bluetooth** – Permite que o dispositivo receba anúncios via Bluetooth.
--     **Nome do Bluetooth do dispositivo** - permite que você especifique o nome do Bluetooth para o dispositivo.
--     **NFC** – Permite que o usuário habilite e configure recursos de comunicação a curta distância no dispositivo.
--     **Wi-Fi** – Permite que o usuário habilite e configure o Wi-Fi no dispositivo (somente Windows 10 Mobile).
--     **Conectar automaticamente a hotspots Wi-Fi** – Permite que o dispositivo se conecte automaticamente a hotspots Wi-Fi gratuitos e aceite os possíveis termos e condições da conexão automaticamente.
--     **Configuração manual de Wi-Fi** – Controla se o usuário pode configurar suas próprias conexões Wi-Fi ou se pode usar somente as conexões configuradas por um perfil Wi-Fi (somente Windows 10 Mobile).
--     **Intervalo de verificação de Wi-Fi** - especifique com que frequência os dispositivos procuram redes Wi-Fi.
-
-## <a name="control-panel-and-settings"></a>Painel de controle e configurações
-
--     **Configurações de aplicativo** - bloqueia o acesso ao aplicativo de configurações do Windows.
-    -     **Sistema** - bloqueia o acesso à área de sistema do aplicativo de configurações.
-    -     **Dispositivos** - bloqueia o acesso à área de dispositivos do aplicativo de configurações.
-    -     **Rede e Internet** - bloqueia o acesso à área de rede e internet do aplicativo de configurações.
-    -     **Personalização** - bloqueia o acesso à área de personalização do aplicativo de configurações.
-    -     **Contas** - bloqueia o acesso à área de contas do aplicativo de configurações.
-    -     **Hora e Idioma** - bloqueia o acesso à área de hora e idioma do aplicativo de configurações.
-    -     **Facilidade de Acesso** - bloqueia o acesso à área de facilidade de acesso do aplicativo de configurações.
-    -     **Privacidade** - bloqueia o acesso à área de privacidade do aplicativo de configurações.
-    -     **Atualização de Segurança** - bloqueia o acesso à área de atualizações e segurança do aplicativo de configurações.
-
-## <a name="defender"></a>Defender
-
--     **Monitoramento em tempo real** – Habilita a verificação em tempo real de malware, de spyware e de outros tipos de software indesejados.
--     **Monitoramento de comportamento** – Permite que o Defender verifique se há certos padrões conhecidos de atividade suspeita nos dispositivos.
--     **Sistema de Inspeção de Rede (NIS)** – O Sistema de Inspeção de Rede (NIS) ajuda a proteger os dispositivos contra explorações baseadas em rede usando as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detectar e bloquear tráfego mal-intencionado.
--     **Examinar todos os downloads** – Controla se o Defender examina todos os arquivos baixados da Internet.
--     **Examinar scripts carregados nos navegadores da Web da Microsoft** – Permite que o Defender verifique os scripts que são usados no Internet Explorer.
--     **Acesso do usuário final ao Defender** – Controla se a interface do usuário do Windows Defender está oculta para usuários finais.
-Quando essa configuração é alterada, ela entrará em vigor na próxima vez em que o computador do usuário final for reiniciado.
--     **Intervalo de atualização de assinatura (em horas)** – Especifique o intervalo no qual o Defender verificará novos arquivos de assinatura.
--     **Monitorar a atividade de arquivos e programas** – Permite que o Defender monitore a atividade de arquivos e programas nos dispositivos.
--     **Dias de espera antes de excluir malware em quarentena** – Permite que o Defender continue a rastrear o malware resolvido pelo número de dias que especificado para que você possa examinar manualmente os dispositivos infectados anteriormente. Se você definir o número de dias para **0**, o malware permanecerá na pasta de Quarentena e não será removido automaticamente.
--     **Limite de uso de CPU durante uma verificação** – Permite limitar a quantidade de CPU que as verificações têm permissão para usar (de **1** a **100**).
--     **Verificar arquivos mortos** – Permite que o Defender examine arquivos mortos, como os arquivos Zip ou Cab.
--     **Verificar mensagens de email recebidas** – Permite que o Defender verifique mensagens de email assim que elas chegarem ao dispositivo.
--     **Examinar unidades removíveis durante uma verificação completa** – Permite que o Defender examine unidades removíveis como pen drives.
--     **Examinar unidades de rede mapeadas durante uma verificação completa** – Permite que o Defender examine arquivos em unidades de rede mapeadas.<br>Se os arquivos na unidade forem somente leitura, o Defender não poderá o remover nenhum malware encontrado neles.
--     **Examinar arquivos abertos de pastas de rede** – Permite que o Defender examine arquivos em unidades de rede compartilhadas (por exemplo, aqueles acessados de um caminho UNC).
-Se os arquivos na unidade forem somente leitura, o Defender não poderá o remover nenhum malware encontrado neles.
--     **Proteção de nuvem** – Permite ou bloqueia o Microsoft Active Protection Service de receber informações sobre a atividade de malware de dispositivos gerenciados. Essas informações são usadas para aprimorar o serviço futuramente.
--     **Perguntar aos usuários antes de enviar amostras** – Controla se os arquivos que podem exigir mais análise pela Microsoft para determinar se são mal-intencionados são enviados automaticamente para a Microsoft.
--     **Hora para realizar uma verificação rápida diária** – Permite agendar uma verificação rápida que ocorre diariamente na hora que você selecionar.
--     **Tipo de verificação do sistema a ser executada** – Permite que você especifique o nível de verificação que será executado ao agendar uma verificação do sistema.
-
-## <a name="defender-exclusions"></a>Exclusões do Defender
-
--     **Arquivos e pastas a serem excluídas da verificação e proteção em tempo real** – Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Esses arquivos e pastas não serão incluídos em verificações em tempo real ou programadas.
--     **Extensões de arquivos a serem excluídas de verificações e proteção em tempo real** – Adicione uma ou mais extensões de arquivo como **jpg** ou **txt** à lista de exclusões. Qualquer arquivo com essas extensões não serão incluídos em verificações em tempo real ou programadas.
--     **Processos a serem excluídos de verificações e proteção em tempo real** – Adicionar um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Esses processos não serão incluídos em verificações em tempo real ou programadas.
+-   <span data-ttu-id="f76b3-153">**Personalização de entrada** – Não permite o uso de serviços de voz baseados em nuvem para aplicativos da Windows Store, ditado ou Cortana.</span><span class="sxs-lookup"><span data-stu-id="f76b3-153">**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Windows Store apps.</span></span> <span data-ttu-id="f76b3-154">Se você permitir esses serviços, a Microsoft poderá coletar dados de voz para melhorar o serviço.</span><span class="sxs-lookup"><span data-stu-id="f76b3-154">If you allow these services, Microsoft might collect voice data to improve the service.</span></span>
+-   <span data-ttu-id="f76b3-155">**Aceitação automática de solicitações de consentimento do usuário para privacidade e emparelhamento** – Permitir que o Windows aceite automaticamente mensagens de consentimento de emparelhamento e privacidade ao executar aplicativos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-155">**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.</span></span>
 
 
-## <a name="network-proxy"></a>Proxy de rede
-
--     **Detectar automaticamente as configurações de proxy** - quando essa opção estiver habilitada, o dispositivo tentará localizar o caminho até um script PAC.
--     **Usar script de proxy** - selecione esta opção se você quiser especificar um caminho até um script PAC para configurar o servidor proxy.
-    -     **Configurar URL de endereço do script** - insira a URL de um script PAC que você deseja usar para configurar o servidor proxy.
--     **Usar servidor proxy manual** - selecione esta opção se você quiser fornecer manualmente as informações do servidor proxy.
-    -     **Endereço** - insira o nome ou o endereço IP do servidor proxy.
-    -     **Número da porta** – insira o número de porta de seu servidor proxy.
-    -     **Exceções de proxy** - insira todas as URLs que não devem usar o servidor proxy. Use um ponto e vírgula para separar cada item.
-    -     **Ignorar servidor proxy para endereços locais** - habilite esta opção se você não quiser usar o servidor proxy para endereços locais na intranet.
+## <span data-ttu-id="f76b3-156">Experiência na tela bloqueada</span><span class="sxs-lookup"><span data-stu-id="f76b3-156">Locked screen experience</span></span>
+<a id="locked-screen-experience" class="xliff"></a>
 
 
-## <a name="windows-spotlight"></a>Destaque do Windows
+-   <span data-ttu-id="f76b3-157">**Notificações da central de ações (somente dispositivos móveis)** – Permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-157">**Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).</span></span>
+-   <span data-ttu-id="f76b3-158">**URL de imagem da tela bloqueada (somente desktop)** - especifique a URL para uma imagem no formato PNG, JPG ou JPEG que será usada como o papel de parede de tela bloqueada do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-158">**Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper.</span></span> <span data-ttu-id="f76b3-159">Os usuários não poderão alterar isso.</span><span class="sxs-lookup"><span data-stu-id="f76b3-159">Users will not be able to change this.</span></span>
+-   <span data-ttu-id="f76b3-160">**Tempo limite configurável de tela do usuário (somente em dispositivos móveis)** – Permite que usuários configurem o período</span><span class="sxs-lookup"><span data-stu-id="f76b3-160">**User configurable screen timeout (mobile only)** – Lets users configure the amount of time</span></span> 
+-   <span data-ttu-id="f76b3-161">**Cortana na tela bloqueada (somente no desktop)** – Não permitir que o usuário interaja com a Cortana quando o dispositivo estiver na tela de bloqueio (somente Windows 10 desktop).</span><span class="sxs-lookup"><span data-stu-id="f76b3-161">**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).</span></span>
+-   <span data-ttu-id="f76b3-162">**Notificações do sistema na tela bloqueada** – Impede que mensagens de alerta sejam exibidas na tela de bloqueio do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-162">**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.</span></span>
+-   <span data-ttu-id="f76b3-163">**Tempo limite da tela (somente dispositivos móveis)** – Especifica o tempo em segundos, depois do bloqueio da tela, em que ela será desligada.</span><span class="sxs-lookup"><span data-stu-id="f76b3-163">**Screen timeout (mobile only)** - Specifies the time in seconds after the screen locks, when it will turn off.</span></span>
 
--     **Destaque do Windows** - permita ou bloqueie o Destaque do Windows, que fornece recursos como dicas e truques, mensagens sobre a Tela de Bloqueio do Windows e muito mais.
-    -     **Dicas do Windows** - permite o bloqueio de exibição de dicas pop-up no Windows.
-    -     **Recursos de Consumidor** - permite o bloqueio de recursos do consumidor, como sugestões do menu Iniciar e notificações de associação.
 
-## <a name="display"></a>Vídeo
 
-- **Entrada do usuário de receptores de vídeo sem fio** - bloqueia a entrada do usuário de receptores de vídeo sem fio.
-- **Projeção neste PC** - impede que outros dispositivos descubram o PC para projeção.
-- **Exigir PIN para emparelhamento** - exige um PIN durante a conexão com um dispositivo de projeção.
+## <span data-ttu-id="f76b3-164">Loja de aplicativos</span><span class="sxs-lookup"><span data-stu-id="f76b3-164">App Store</span></span>
+<a id="app-store" class="xliff"></a>
 
-## <a name="start"></a>Inicie o
+-   <span data-ttu-id="f76b3-165">**Loja de aplicativos (somente dispositivo móvel)** – Habilitar ou bloquear o uso da loja de aplicativos em dispositivos Windows 10 Mobile.</span><span class="sxs-lookup"><span data-stu-id="f76b3-165">**App store (mobile only)** - Enable or block use of the app store on Windows 10 Mobile devices.</span></span>
+-   <span data-ttu-id="f76b3-166">**Atualizar aplicativos automaticamente a partir da Store** - permite que os aplicativos instalados a partir da Windows Store sejam atualizados automaticamente.</span><span class="sxs-lookup"><span data-stu-id="f76b3-166">**Auto-update apps from store** - Allows apps installed from the Windows Store to be automatically updated.</span></span>
+-   <span data-ttu-id="f76b3-167">**Instalação de aplicativo confiável** - permite que os aplicativos assinados com um certificado de confiança sejam carregados por sideload.</span><span class="sxs-lookup"><span data-stu-id="f76b3-167">**Trusted app installation** - Allows apps signed with a trusted certificate to be sideloaded.</span></span>
+-   <span data-ttu-id="f76b3-168">**Desbloqueio do desenvolvedor** - permite que configurações de desenvolvedor do Windows, como a permissão de sideload de aplicativos, sejam modificadas pelo usuário final.</span><span class="sxs-lookup"><span data-stu-id="f76b3-168">**Developer unlock** - Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.</span></span>
+-   <span data-ttu-id="f76b3-169">**Dados de aplicativo do usuário compartilhados** - permite que os aplicativos compartilhem dados entre usuários diferentes no mesmo dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-169">**Shared user app data** - Allows apps to share data between different users on the same device.</span></span>
+-   <span data-ttu-id="f76b3-170">**Usar somente armazenamento privado** - habilite esta opção para permitir que somente os usuários finais possam baixar aplicativos de seu armazenamento privado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-170">**Use private store only** - Enable this to only allow end users to download apps from your private store.</span></span>
+-   <span data-ttu-id="f76b3-171">**Inicialização de aplicativo originado na Store** - usada para desabilitar todos os aplicativos que foram previamente instalados no dispositivo ou baixados da Windows Store.</span><span class="sxs-lookup"><span data-stu-id="f76b3-171">**Store originated app launch** - Used to disable all apps that were pre-installed on the device, or downloaded from the Windows Store.</span></span>
+-   <span data-ttu-id="f76b3-172">**Instalar dados do aplicativo no volume do sistema** - impede que os aplicativos armazenem dados no volume do sistema do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-172">**Install app data on system volume** - Stops apps from storing data on the system volume of the device.</span></span>
+-   <span data-ttu-id="f76b3-173">**Instalar aplicativos na unidade do sistema** - impede que os aplicativos armazenem dados na unidade do sistema do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-173">**Install apps on system drive** - Stops apps from storing data on the system drive of the device.</span></span>
+-   <span data-ttu-id="f76b3-174">**DVR de Jogos (somente desktop)** - Define se é permitido registrar e transmitir jogos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-174">**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.</span></span>
 
-- **Desafixar aplicativos da barra de tarefas** - impede o usuário de desafixar aplicativos no menu Iniciar.
-- **Documentos em Iniciar** - oculta ou mostra a pasta Documentos no menu Iniciar do Windows.
-- **Downloads em Iniciar** - oculta ou mostra a pasta Downloads no menu Iniciar do Windows.
-- **Explorador de Arquivos em Iniciar** - oculta ou mostra o aplicativo Explorador de Arquivos no menu Iniciar do Windows.
-- **Grupo Doméstico em Iniciar** - oculta ou mostra a pasta Grupo Doméstico no menu Iniciar do Windows.
-- **Música em Iniciar** - oculta ou mostra a pasta Música no menu Iniciar do Windows.
-- **Rede em Iniciar** - oculta ou mostra a pasta Rede no menu Iniciar do Windows.
-- **Pasta Pessoal em Iniciar** - oculta ou mostra a pasta Pessoal no menu Iniciar do Windows.
-- **Imagens em Iniciar** - oculta ou mostra a pasta de imagens no menu Iniciar do Windows.
-- **Configurações em Iniciar** - oculta ou mostra o aplicativo Configurações no menu Iniciar do Windows.
-- **Vídeos em Iniciar** - oculta ou mostra a pasta de vídeos no menu Iniciar do Windows.
+
+
+## <span data-ttu-id="f76b3-175">Navegador Edge</span><span class="sxs-lookup"><span data-stu-id="f76b3-175">Edge Browser</span></span>
+<a id="edge-browser" class="xliff"></a>
+-   <span data-ttu-id="f76b3-176">**Navegador Microsoft Edge (somente dispositivo móvel)** – Permitir o uso do navegador da Web Edge no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-176">**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.</span></span>
+-   <span data-ttu-id="f76b3-177">**Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita.</span><span class="sxs-lookup"><span data-stu-id="f76b3-177">**Address bar dropdown (desktop only)** – Use this to stop Edge from displaying a list of suggestions in a drop-down list when you type.</span></span> <span data-ttu-id="f76b3-178">Isso ajuda a minimizar o uso de largura de banda da rede entre o Edge e os serviços da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f76b3-178">This helps to minimize network bandwidth use between Edge and Microsoft services.</span></span>
+-   <span data-ttu-id="f76b3-179">**Sincronizar favoritos entre navegadores da Microsoft (somente no desktop)** – Permite que o Windows sincronize os favoritos entre o Internet Explorer e o Edge.</span><span class="sxs-lookup"><span data-stu-id="f76b3-179">**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.</span></span>
+-   <span data-ttu-id="f76b3-180">**SmartScreen** – Habilita ou desabilita o SmartScreen, que bloqueia sites fraudulentos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-180">**SmartScreen** - Enables or disables SmartScreen, which blocks fraudulent web sites.</span></span>
+-   <span data-ttu-id="f76b3-181">**Enviar cabeçalhos Do Not Track** – Configura o navegador Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.</span><span class="sxs-lookup"><span data-stu-id="f76b3-181">**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.</span></span>
+-   <span data-ttu-id="f76b3-182">**Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-182">**Cookies** - Lets the browser save internet cookies to the device.</span></span>
+-   <span data-ttu-id="f76b3-183">**JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Edge.</span><span class="sxs-lookup"><span data-stu-id="f76b3-183">**JavaScript** - Allows scripts, such as Javascript, to run in the Edge browser.</span></span>
+-   <span data-ttu-id="f76b3-184">**Pop-ups** - bloqueia janelas pop-up no navegador (aplica-se a somente a desktops com Windows 10).</span><span class="sxs-lookup"><span data-stu-id="f76b3-184">**Pop-ups** - Blocks pop-up windows in the browser (Applies to Windows 10 desktop only).</span></span>
+-   <span data-ttu-id="f76b3-185">**Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="f76b3-185">**Search suggestions** - Lets your search engine suggest sites as you type search phrases.</span></span>
+-   <span data-ttu-id="f76b3-186">**Enviar tráfego da intranet para o Internet Explorer** – permite aos usuários abrir sites de intranet no Internet Explorer (somente para desktops com Windows 10).</span><span class="sxs-lookup"><span data-stu-id="f76b3-186">**Send intranet traffic to Internet Explorer** - Lets users open intranet websites in Internet Explorer (Windows 10 desktop only).</span></span>
+-   <span data-ttu-id="f76b3-187">**Preenchimento automático** – permite que os usuários alterem completamente as configurações de preenchimento automático no navegador (somente para desktop com Windows 10).</span><span class="sxs-lookup"><span data-stu-id="f76b3-187">**Autofill** - Allow users to change autocomplete settings in the browser (Windows 10 desktop only).</span></span>
+-   <span data-ttu-id="f76b3-188">**Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Edge.</span><span class="sxs-lookup"><span data-stu-id="f76b3-188">**Password Manager** - Enable or disable the Edge Password Manager feature.</span></span>
+-   <span data-ttu-id="f76b3-189">**Local da lista de sites do modo Empresarial** – Especifica onde encontrar a lista de sites que serão abertos no modo Empresarial.</span><span class="sxs-lookup"><span data-stu-id="f76b3-189">**Enterprise mode site list location** - Specifies where to find the list of web sites that open in Enterprise mode.</span></span> <span data-ttu-id="f76b3-190">Os usuários não podem editar essa lista.</span><span class="sxs-lookup"><span data-stu-id="f76b3-190">Users cannot edit this list.</span></span><br><span data-ttu-id="f76b3-191">(Somente Windows 10 Desktop).</span><span class="sxs-lookup"><span data-stu-id="f76b3-191">(Windows 10 desktop only).</span></span>
+-   <span data-ttu-id="f76b3-192">**Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Edge.</span><span class="sxs-lookup"><span data-stu-id="f76b3-192">**Developer tools** - Prevent the end user from opening the Edge developer tools.</span></span>
+-   <span data-ttu-id="f76b3-193">**Extensões** - permite ao usuário final instalar extensões do Edge no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-193">**Extensions** - Allow the end user to install Edge extensions on the device.</span></span>
+-   <span data-ttu-id="f76b3-194">**Navegação inPrivate** - impede que o usuário final abra sessões de navegação InPrivate.</span><span class="sxs-lookup"><span data-stu-id="f76b3-194">**InPrivate browsing** - Prevent the end user from opening InPrivate browsing sessions.</span></span>
+-   <span data-ttu-id="f76b3-195">**Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Edge for executado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-195">**Show first run page** – Stops the introduction page from appearing the first time you run Edge.</span></span>
+    -   <span data-ttu-id="f76b3-196">**URL da primeira execução** – Especifica a URL da página que é exibida na primeira vez que um usuário executa o Edge (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-196">**First run URL** – Specifies the URL of a page that is displayed the first time a user runs Edge (Windows 10 Mobile only).</span></span>
+-   <span data-ttu-id="f76b3-197">**Páginas iniciais** – Adicione uma lista de sites que você deseja usar como as páginas iniciais no navegador Edge (somente desktop).</span><span class="sxs-lookup"><span data-stu-id="f76b3-197">**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).</span></span>
+-   <span data-ttu-id="f76b3-198">**Alterações na página inicial** – Permite aos usuários alterar as páginas iniciais exibidas quando o Edge é aberto.</span><span class="sxs-lookup"><span data-stu-id="f76b3-198">**Changes to start page** – Lets users change the start pages displayed when Edge is opened.</span></span> <span data-ttu-id="f76b3-199">Use a configuração Página inicial para criar a página ou uma lista de páginas que é aberta quando o Edge é iniciado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-199">Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.</span></span>
+-   <span data-ttu-id="f76b3-200">**Bloquear acesso aos about:flags** - impede que o usuário final acesse a página about:flags no Edge que contém configurações experimentais e de desenvolvedor.</span><span class="sxs-lookup"><span data-stu-id="f76b3-200">**Block access to about flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.</span></span>
+-   <span data-ttu-id="f76b3-201">**Substituição do prompt de SmartScreen** - permite ao usuário final ignorar os avisos do filtro do SmartScreen sobre sites possivelmente mal-intencionados.</span><span class="sxs-lookup"><span data-stu-id="f76b3-201">**Smart screen prompt override** - Allow the end user to bypass SmartScreen filter warnings about potentially malicious websites.</span></span>
+-   <span data-ttu-id="f76b3-202">**Substituição do prompt de SmartScreen para arquivos** - permite ao usuário final ignorar os avisos do filtro do SmartScreen sobre o download de arquivos possivelmente mal-intencionados.</span><span class="sxs-lookup"><span data-stu-id="f76b3-202">**Smart screen prompt override for files** - Allow the end user to bypass SmartScreen filter warnings about downloading potentially malicious files.</span></span>
+-   <span data-ttu-id="f76b3-203">**Endereço IP do localhost WebRtc** - bloqueia a exibição do endereço IP do localhost de usuários ao fazer chamadas telefônicas usando a protocolo RTC da web.</span><span class="sxs-lookup"><span data-stu-id="f76b3-203">**WebRtc localhost ip address** - Block the users localhost IP address from being displayed when making phone calls using the web RTC protocol.</span></span>
+-   <span data-ttu-id="f76b3-204">**Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-204">**Default search engine** - Specify the default search engine to be used.</span></span> <span data-ttu-id="f76b3-205">Os usuários finais podem alterar esse valor a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="f76b3-205">End users can change this value at any time.</span></span>
+-   <span data-ttu-id="f76b3-206">**Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Edge.</span><span class="sxs-lookup"><span data-stu-id="f76b3-206">**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.</span></span>
+-   <span data-ttu-id="f76b3-207">**Coleta de dados de Blocos Dinâmico** – Impede que o Windows colete informações de Blocos Dinâmicos quando o usuários fixa um site no menu Iniciar do Edge.</span><span class="sxs-lookup"><span data-stu-id="f76b3-207">**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.</span></span>
+
+
+## <span data-ttu-id="f76b3-208">Pesquisar</span><span class="sxs-lookup"><span data-stu-id="f76b3-208">Search</span></span>
+<a id="search" class="xliff"></a>
+- <span data-ttu-id="f76b3-209">**Pesquisa segura (somente dispositivos móveis)** - controla como o Cortana filtra o conteúdo adulto nos resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="f76b3-209">**Safe Search (mobile only)** - Control how Cortana filters adult content in search results.</span></span> <span data-ttu-id="f76b3-210">Você pode selecionar **Estrito**, **Moderado** ou permitir que o usuário final escolha suas próprias configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-210">You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.</span></span>
+
+## <span data-ttu-id="f76b3-211">Nuvem e Armazenamento</span><span class="sxs-lookup"><span data-stu-id="f76b3-211">Cloud and Storage</span></span>
+<a id="cloud-and-storage" class="xliff"></a>
+-   <span data-ttu-id="f76b3-212">**Conta da Microsoft** – Permite que o usuário associe uma conta da Microsoft ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-212">**Microsoft account** - Lets the user associate a Microsoft account with the device.</span></span>
+-   <span data-ttu-id="f76b3-213">**Conta não Microsoft** – Permite que o usuário adicione contas de email ao dispositivo que não estão associadas a uma conta da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f76b3-213">**Non-Microsoft account** - Lets the user add email accounts to the device that are not associated with a Microsoft account.</span></span>
+-   <span data-ttu-id="f76b3-214">**Sincronização de configurações para conta da Microsoft** – Permitir configurações de dispositivo e aplicativos associadas a uma conta da Microsoft para sincronização entre dispositivos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-214">**Settings synchronization for Microsoft account** - Allow device and app settings that are associated with a Microsoft account to synchronize between devices.</span></span>
+
+## <span data-ttu-id="f76b3-215">Rede Celular e Conectividade</span><span class="sxs-lookup"><span data-stu-id="f76b3-215">Cellular and Connectivity</span></span>
+<a id="cellular-and-connectivity" class="xliff"></a>
+
+-   <span data-ttu-id="f76b3-216">**Canal de dados de rede celular** – Impedir que os usuários usem dados, como ao navegar na Web, quando eles estiverem conectados a uma rede de celular.</span><span class="sxs-lookup"><span data-stu-id="f76b3-216">**Cellular data channel** – Stop users from using data, like browsing the web, when they are connected to a cellular network.</span></span> 
+-   <span data-ttu-id="f76b3-217">**Roaming de dados** – Permitir roaming entre redes ao acessar os dados.</span><span class="sxs-lookup"><span data-stu-id="f76b3-217">**Data roaming** - Allow roaming between networks when accessing data.</span></span>
+-   <span data-ttu-id="f76b3-218">**VPN em rede celular** – Controla se o dispositivo pode acessar conexões VPN quando conectado a uma rede celular.</span><span class="sxs-lookup"><span data-stu-id="f76b3-218">**VPN over the cellular network** - Controls whether the device can access VPN connections when connected to a cellular network.</span></span>
+-   <span data-ttu-id="f76b3-219">**Roaming VPN em rede celular** – Controla se o dispositivo pode acessar conexões VPN quando conectado a uma rede celular em roaming.</span><span class="sxs-lookup"><span data-stu-id="f76b3-219">**VPN roaming over the cellular network** - Controls whether the device can access VPN connections when roaming on a cellular network.</span></span>
+-   <span data-ttu-id="f76b3-220">**Bluetooth** – Controla se o usuário pode habilitar e configurar o Bluetooth no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-220">**Bluetooth** - Controls whether the user can enable and configure Bluetooth on the device.</span></span>
+-   <span data-ttu-id="f76b3-221">**Descoberta de Bluetooth** – Permite que o dispositivo seja descoberto por outros dispositivos habilitados para Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="f76b3-221">**Bluetooth discoverability** - Lets the device be discovered by other Bluetooth-enabled devices.</span></span>
+-   <span data-ttu-id="f76b3-222">**Pré-emparelhamento Bluetooth** – Permite configurar dispositivos Bluetooth específicos emparelhamento automático com um dispositivo host.</span><span class="sxs-lookup"><span data-stu-id="f76b3-222">**Bluetooth pre-pairing** – Lets you configure specific Bluetooth devices to automatically pair with a host device.</span></span>
+-   <span data-ttu-id="f76b3-223">**Anúncios por Bluetooth** – Permite que o dispositivo receba anúncios via Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="f76b3-223">**Bluetooth advertising** - Lets the device receive advertisements over Bluetooth.</span></span>
+-   <span data-ttu-id="f76b3-224">**Nome do Bluetooth do dispositivo** – Especifique o nome do Bluetooth para o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-224">**Device Bluetooth name** – Specify the Bluetooth name for a device.</span></span> <span data-ttu-id="f76b3-225">Se você não especificar um nome, o nome de rádio padrão será usado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-225">If you don’t specify a name, the default radio name is used.</span></span>
+-   <span data-ttu-id="f76b3-226">**Serviço de dispositivos conectados** – Permite optar por permitir o serviço de dispositivos móveis, que habilita a descoberta e a conexão com outros dispositivos Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="f76b3-226">**Connected devices service** – Lets you choose whether to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.</span></span>
+-   <span data-ttu-id="f76b3-227">**NFC** – Permite que o usuário habilite e configure recursos de comunicação a curta distância no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-227">**NFC** - Lets the user enable and configure Near Field Communications capabilities on the device.</span></span>
+-   <span data-ttu-id="f76b3-228">**Wi-Fi** – Permite que o usuário habilite e configure o Wi-Fi no dispositivo (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-228">**Wi-Fi** - Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).</span></span>
+-   <span data-ttu-id="f76b3-229">**Conectar automaticamente a hotspots Wi-Fi** – Permite que o dispositivo se conecte automaticamente a hotspots Wi-Fi gratuitos e aceite os possíveis termos e condições da conexão automaticamente.</span><span class="sxs-lookup"><span data-stu-id="f76b3-229">**Automatically connect to Wi-Fi hotspots** - Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.</span></span>
+-   <span data-ttu-id="f76b3-230">**Configuração manual de Wi-Fi** – Controla se o usuário pode configurar suas próprias conexões Wi-Fi ou se pode usar somente as conexões configuradas por um perfil Wi-Fi (somente Windows 10 Mobile).</span><span class="sxs-lookup"><span data-stu-id="f76b3-230">**Manual Wi-Fi configuration** - Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).</span></span>
+-   <span data-ttu-id="f76b3-231">**Intervalo de verificação de Wi-Fi** – Especifique com que frequência os dispositivos procuram redes Wi-Fi.</span><span class="sxs-lookup"><span data-stu-id="f76b3-231">**Wi-Fi scan interval** – Specify how often devices scan for Wi-Fi networks.</span></span> <span data-ttu-id="f76b3-232">Especifique um valor de 1 (mais frequentes) a 500 (menos frequente).</span><span class="sxs-lookup"><span data-stu-id="f76b3-232">Specify a value from 1 (most frequent) to 500 (least frequent).</span></span>
+-   <span data-ttu-id="f76b3-233">**Serviços Bluetooth permitidos** – Especifique uma lista de serviços e perfis e permitidos de Bluetooth como cadeias de caracteres hexadecimais.</span><span class="sxs-lookup"><span data-stu-id="f76b3-233">**Bluetooth allowed services** – Specify as hex strings, a list of allowed Bluetooth services and profiles.</span></span>
+
+
+## <span data-ttu-id="f76b3-234">Painel de controle e configurações</span><span class="sxs-lookup"><span data-stu-id="f76b3-234">Control Panel and Settings</span></span>
+<a id="control-panel-and-settings" class="xliff"></a>
+
+-   <span data-ttu-id="f76b3-235">**Configurações de aplicativo** - bloqueia o acesso ao aplicativo de configurações do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-235">**Settings app** - Block access to the Windows settings app.</span></span>
+    -   <span data-ttu-id="f76b3-236">**Sistema** - bloqueia o acesso à área de sistema do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-236">**System** - Blocks access to the system area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-237">**Dispositivos** - bloqueia o acesso à área de dispositivos do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-237">**Devices** - Blocks access to the devices area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-238">**Rede e Internet** - bloqueia o acesso à área de rede e internet do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-238">**Network Internet** - Blocks access to the network and internet area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-239">**Personalização** - bloqueia o acesso à área de personalização do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-239">**Personalization** - Blocks access to the personalization area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-240">**Contas** - bloqueia o acesso à área de contas do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-240">**Accounts** - Blocks access to the accounts area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-241">**Hora e Idioma** - bloqueia o acesso à área de hora e idioma do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-241">**Time and Language** - Blocks access to the time and language area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-242">**Facilidade de Acesso** - bloqueia o acesso à área de facilidade de acesso do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-242">**Ease of Access** - Blocks access to the ease of access area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-243">**Privacidade** - bloqueia o acesso à área de privacidade do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-243">**Privacy** - Blocks access to the privacy area of the settings app.</span></span>
+    -   <span data-ttu-id="f76b3-244">**Atualização de Segurança** - bloqueia o acesso à área de atualizações e segurança do aplicativo de configurações.</span><span class="sxs-lookup"><span data-stu-id="f76b3-244">**Update Security** - Blocks access to the updates and security area of the settings app.</span></span>
+
+## <span data-ttu-id="f76b3-245">Defender</span><span class="sxs-lookup"><span data-stu-id="f76b3-245">Defender</span></span>
+<a id="defender" class="xliff"></a>
+
+-   <span data-ttu-id="f76b3-246">**Monitoramento em tempo real** – Habilita a verificação em tempo real de malware, de spyware e de outros tipos de software indesejados.</span><span class="sxs-lookup"><span data-stu-id="f76b3-246">**Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.</span></span>
+-   <span data-ttu-id="f76b3-247">**Monitoramento de comportamento** – Permite que o Defender verifique se há certos padrões de atividade suspeita nos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-247">**Behavior monitoring** - Lets Defender check for certain known patterns of suspicious activity on devices.</span></span>
+-   <span data-ttu-id="f76b3-248">**NIS (Sistema de Inspeção de Rede)** – O NIS ajuda a proteger dispositivos contra explorações baseadas em rede.</span><span class="sxs-lookup"><span data-stu-id="f76b3-248">**Network Inspection System (NIS)** - NIS helps to protect devices against network-based exploits.</span></span> <span data-ttu-id="f76b3-249">Ele utiliza assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detectar e bloquear o tráfego mal-intencionado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-249">It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.</span></span>
+-   <span data-ttu-id="f76b3-250">**Examinar todos os downloads** – Controla se o Defender examina todos os arquivos baixados da Internet.</span><span class="sxs-lookup"><span data-stu-id="f76b3-250">**Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.</span></span>
+-   <span data-ttu-id="f76b3-251">**Examinar scripts carregados nos navegadores da Web da Microsoft** – Permite que o Defender verifique os scripts que são usados no Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="f76b3-251">**Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.</span></span>
+-   <span data-ttu-id="f76b3-252">**Acesso do usuário final ao Defender** – Controla se a interface do usuário do Windows Defender está oculta para usuários finais.</span><span class="sxs-lookup"><span data-stu-id="f76b3-252">**End user access to Defender** - Controls whether the Windows Defender user interface is hidden from end users.</span></span>
+<span data-ttu-id="f76b3-253">Quando alterada, esta configuração entra em vigor na próxima vez em que o computador do usuário final for reiniciado.</span><span class="sxs-lookup"><span data-stu-id="f76b3-253">When this setting is changed, it takes effect the next time the end user's PC is restarted.</span></span>
+-   <span data-ttu-id="f76b3-254">**Intervalo de atualização de assinatura (em horas)** – Especifique o intervalo no qual o Defender verificará novos arquivos de assinatura.</span><span class="sxs-lookup"><span data-stu-id="f76b3-254">**Signature update interval (in hours)** - Specify the interval at which Defender checks for new signature files.</span></span>
+-   <span data-ttu-id="f76b3-255">**Monitorar a atividade de arquivos e programas** – Permite que o Defender monitore a atividade de arquivos e programas nos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="f76b3-255">**Monitor file and program activity** - Allows Defender to monitor file and program activity on devices.</span></span>
+-   <span data-ttu-id="f76b3-256">**Dias de espera antes de excluir malware em quarentena** – Permite que o Defender continue a rastrear o malware resolvido pelo número de dias que especificado para que você possa examinar manualmente os dispositivos infectados anteriormente.</span><span class="sxs-lookup"><span data-stu-id="f76b3-256">**Days before deleting quarantined malware** - Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices.</span></span> <span data-ttu-id="f76b3-257">Se você definir o número de dias para **0**, o malware permanecerá na pasta de Quarentena e não será removido automaticamente.</span><span class="sxs-lookup"><span data-stu-id="f76b3-257">If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed.</span></span>
+-   <span data-ttu-id="f76b3-258">**Limite de uso de CPU durante uma verificação** – Permite limitar a quantidade de CPU que as verificações têm permissão para usar (de **1** a **100**).</span><span class="sxs-lookup"><span data-stu-id="f76b3-258">**CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).</span></span>
+-   <span data-ttu-id="f76b3-259">**Verificar arquivos mortos** – Permite que o Defender examine arquivos mortos, como os arquivos Zip ou Cab.</span><span class="sxs-lookup"><span data-stu-id="f76b3-259">**Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.</span></span>
+-   <span data-ttu-id="f76b3-260">**Examinar mensagens de email de entrada** – Permite que o Defender examine mensagens de email assim que elas chegarem ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-260">**Scan incoming mail messages** - Allows Defender to scan email messages as they arrive on the device.</span></span>
+-   <span data-ttu-id="f76b3-261">**Examinar unidades removíveis durante uma verificação completa** – Permite que o Defender examine unidades removíveis como pen drives.</span><span class="sxs-lookup"><span data-stu-id="f76b3-261">**Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.</span></span>
+-   <span data-ttu-id="f76b3-262">**Examinar unidades de rede mapeadas durante uma verificação completa** – Permite que o Defender examine arquivos em unidades de rede mapeadas.</span><span class="sxs-lookup"><span data-stu-id="f76b3-262">**Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.</span></span><br><span data-ttu-id="f76b3-263">Se os arquivos na unidade forem somente leitura, o Defender não poderá o remover nenhum malware encontrado neles.</span><span class="sxs-lookup"><span data-stu-id="f76b3-263">If the files on the drive are read-only, Defender cannot remove any malware found in them.</span></span>
+-   <span data-ttu-id="f76b3-264">**Verificar arquivos abertos de pastas de rede** – Permite que o Defender verifique arquivos em unidades de rede compartilhadas (por exemplo, arquivos acessados de um caminho UNC).</span><span class="sxs-lookup"><span data-stu-id="f76b3-264">**Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, files accessed from a UNC path).</span></span>
+<span data-ttu-id="f76b3-265">Se os arquivos na unidade forem somente leitura, o Defender não poderá o remover nenhum malware encontrado neles.</span><span class="sxs-lookup"><span data-stu-id="f76b3-265">If the files on the drive are read-only, Defender cannot remove any malware found in them.</span></span>
+-   <span data-ttu-id="f76b3-266">**Proteção de nuvem** – Permite ou bloqueia o Microsoft Active Protection Service de receber informações sobre a atividade de malware de dispositivos gerenciados.</span><span class="sxs-lookup"><span data-stu-id="f76b3-266">**Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage.</span></span> <span data-ttu-id="f76b3-267">Essas informações são usadas para aprimorar o serviço futuramente.</span><span class="sxs-lookup"><span data-stu-id="f76b3-267">This information is used to improve the service in the future.</span></span>
+-   <span data-ttu-id="f76b3-268">**Perguntar aos usuários antes de enviar amostras** – Controla se os arquivos potencialmente mal-intencionados que podem exigir mais análise são enviados automaticamente para a Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f76b3-268">**Prompt users before sample submission** - Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.</span></span>
+-   <span data-ttu-id="f76b3-269">**Hora para realizar uma verificação rápida diária** – Permite agendar uma verificação rápida que ocorre diariamente na hora que você selecionar.</span><span class="sxs-lookup"><span data-stu-id="f76b3-269">**Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.</span></span>
+-   <span data-ttu-id="f76b3-270">**Tipo de verificação do sistema a ser executada** – Permite que você especifique o nível de verificação executado ao agendar uma verificação do sistema.</span><span class="sxs-lookup"><span data-stu-id="f76b3-270">**Type of system scan to perform** - Lets you specify the level of scanning that is performed when you schedule a system scan.</span></span>
+-   <span data-ttu-id="f76b3-271">**Detectar aplicativos potencialmente indesejados** – Escolha o nível de proteção quando o Windows detecta aplicativos potencialmente indesejados:</span><span class="sxs-lookup"><span data-stu-id="f76b3-271">**Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:</span></span>
+        - <span data-ttu-id="f76b3-272">**Bloquear**</span><span class="sxs-lookup"><span data-stu-id="f76b3-272">**Block**</span></span>
+        - <span data-ttu-id="f76b3-273">**Auditoria** Para obter mais informações sobre aplicativos potencialmente indesejados, consulte [este tópico](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).</span><span class="sxs-lookup"><span data-stu-id="f76b3-273">**Audit** For more information about potentially unwanted apps, see [this topic](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).</span></span>
+-   <span data-ttu-id="f76b3-274">**Ações contra ameaças de malware detectadas** – Habilite esta opção para especificar as ações que o Defender deve realizar para cada nível de ameaça detectada (Baixa, Moderada, Alta e Grave).</span><span class="sxs-lookup"><span data-stu-id="f76b3-274">**Actions on detected malware threats** – Enable this option to specify the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe).</span></span> <span data-ttu-id="f76b3-275">As ações que podem ser executadas são:</span><span class="sxs-lookup"><span data-stu-id="f76b3-275">The actions you can take are:</span></span>
+    -   <span data-ttu-id="f76b3-276">**Apagar**</span><span class="sxs-lookup"><span data-stu-id="f76b3-276">**Clean**</span></span>
+    -   <span data-ttu-id="f76b3-277">**Quarentena**</span><span class="sxs-lookup"><span data-stu-id="f76b3-277">**Quarantine**</span></span>
+    -   <span data-ttu-id="f76b3-278">**Removerr**</span><span class="sxs-lookup"><span data-stu-id="f76b3-278">**Remove**</span></span>
+    -   <span data-ttu-id="f76b3-279">**Permitir**</span><span class="sxs-lookup"><span data-stu-id="f76b3-279">**Allow**</span></span>
+    -   <span data-ttu-id="f76b3-280">**Definido pelo usuário**</span><span class="sxs-lookup"><span data-stu-id="f76b3-280">**User defined**</span></span>
+    -   <span data-ttu-id="f76b3-281">**Bloquear**</span><span class="sxs-lookup"><span data-stu-id="f76b3-281">**Block**</span></span>
+
+
+
+## <span data-ttu-id="f76b3-282">Exclusões do Defender</span><span class="sxs-lookup"><span data-stu-id="f76b3-282">Defender Exclusions</span></span>
+<a id="defender-exclusions" class="xliff"></a>
+
+-   <span data-ttu-id="f76b3-283">**Arquivos e pastas a serem excluídas da verificação e proteção em tempo real** – Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões.</span><span class="sxs-lookup"><span data-stu-id="f76b3-283">**Files and folders to exclude from scans and real-time protection** - Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list.</span></span> <span data-ttu-id="f76b3-284">Esses arquivos e pastas não serão incluídos em verificações em tempo real ou programadas.</span><span class="sxs-lookup"><span data-stu-id="f76b3-284">These files and folders aren't included in any real-time or scheduled scans.</span></span>
+-   <span data-ttu-id="f76b3-285">**Extensões de arquivos a serem excluídas de verificações e proteção em tempo real** – Adicione uma ou mais extensões de arquivo como **jpg** ou **txt** à lista de exclusões.</span><span class="sxs-lookup"><span data-stu-id="f76b3-285">**File extensions to exclude from scans and real-time protection** - Add one or more file extensions like **jpg** or **txt** to the exclusions list.</span></span> <span data-ttu-id="f76b3-286">Qualquer arquivo com essas extensões não serão incluídos em verificações em tempo real ou programadas.</span><span class="sxs-lookup"><span data-stu-id="f76b3-286">Any files with these extensions are not included in any real-time or scheduled scans.</span></span>
+-   <span data-ttu-id="f76b3-287">**Processos a serem excluídos de verificações e proteção em tempo real** – Adicionar um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões.</span><span class="sxs-lookup"><span data-stu-id="f76b3-287">**Processes to exclude from scans and real-time protection** - Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list.</span></span> <span data-ttu-id="f76b3-288">Esses processos não serão incluídos em verificações em tempo real ou programadas.</span><span class="sxs-lookup"><span data-stu-id="f76b3-288">These processes are not included in any real-time, or scheduled scans.</span></span>
+
+
+## <span data-ttu-id="f76b3-289">Proxy de rede</span><span class="sxs-lookup"><span data-stu-id="f76b3-289">Network proxy</span></span>
+<a id="network-proxy" class="xliff"></a>
+
+-   <span data-ttu-id="f76b3-290">**Detectar automaticamente as configurações de proxy** – Quando habilitado, o dispositivo tenta localizar o caminho até um script PAC.</span><span class="sxs-lookup"><span data-stu-id="f76b3-290">**Automatically detect proxy settings** - When enabled, the device attempts to find the path to a PAC script.</span></span>
+-   <span data-ttu-id="f76b3-291">**Usar script de proxy** - selecione esta opção se você quiser especificar um caminho até um script PAC para configurar o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="f76b3-291">**Use proxy script** - Select this if you want to specify a path to a PAC script to configure the proxy server.</span></span>
+    -   <span data-ttu-id="f76b3-292">**Configurar URL de endereço do script** - insira a URL de um script PAC que você deseja usar para configurar o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="f76b3-292">**Setup script address URL** - Enter the URL of a PAC script you want to use to configure the proxy server.</span></span>
+-   <span data-ttu-id="f76b3-293">**Usar servidor proxy manual** - selecione esta opção se você quiser fornecer manualmente as informações do servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="f76b3-293">**Use manual proxy server** - Select this if you want to manually provide proxy server information.</span></span>
+    -   <span data-ttu-id="f76b3-294">**Endereço** - insira o nome ou o endereço IP do servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="f76b3-294">**Address** - Enter the name, or IP address of the proxy server.</span></span>
+    -   <span data-ttu-id="f76b3-295">**Número da porta** – insira o número de porta de seu servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="f76b3-295">**Port number** - Enter the port number of your proxy server.</span></span>
+    -   <span data-ttu-id="f76b3-296">**Exceções de proxy** - insira todas as URLs que não devem usar o servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="f76b3-296">**Proxy exceptions** - Enter any URLs that must not use the proxy server.</span></span> <span data-ttu-id="f76b3-297">Use um ponto e vírgula para separar cada item.</span><span class="sxs-lookup"><span data-stu-id="f76b3-297">Use a semicolon to separate each item.</span></span>
+    -   <span data-ttu-id="f76b3-298">**Ignorar servidor proxy para endereços locais** – Habilite esta opção se você não quiser usar o servidor proxy para endereços locais na intranet.</span><span class="sxs-lookup"><span data-stu-id="f76b3-298">**Bypass proxy server for local address** - If you don't want to use the proxy server for local addresses on your intranet, enable this option .</span></span>
+
+
+## <span data-ttu-id="f76b3-299">Destaque do Windows</span><span class="sxs-lookup"><span data-stu-id="f76b3-299">Windows Spotlight</span></span>
+<a id="windows-spotlight" class="xliff"></a>
+
+
+- <span data-ttu-id="f76b3-300">Destaque do Windows – Use essa configuração para bloquear todas as funcionalidades de Destaque do Windows em dispositivos Windows 10.</span><span class="sxs-lookup"><span data-stu-id="f76b3-300">Windows Spotlight – Use this setting to block all Windows Spotlight functionality on Windows 10 devices.</span></span> <span data-ttu-id="f76b3-301">Se você bloquear essa configuração, as configurações a seguir não estarão disponíveis.</span><span class="sxs-lookup"><span data-stu-id="f76b3-301">If you block this setting, the following settings are not available.</span></span>
+    - <span data-ttu-id="f76b3-302">**Destaque do Windows na tela de bloqueio** – Impedir que o Destaque do Windows exiba informações na tela de bloqueio do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-302">**Windows Spotlight on lock screen** – Stop Windows Spotlight from displaying information on the device lock screen.</span></span>
+    - <span data-ttu-id="f76b3-303">**Sugestões de terceiros no Destaque do Windows** – Impedir que o Destaque do Windows sugira conteúdo não publicado pela Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f76b3-303">**Third-party suggestions in Windows Spotlight** – Stop Windows Spotlight from suggesting content that is not published by Microsoft.</span></span>
+    - <span data-ttu-id="f76b3-304">**Dicas do Windows** - permite o bloqueio de exibição de dicas pop-up no Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-304">**Windows Tips** - Lets you block pop-up tips from displaying in Windows.</span></span>
+    - <span data-ttu-id="f76b3-305">**Recursos de Consumidor** - permite o bloqueio de recursos do consumidor, como sugestões do menu Iniciar e notificações de associação.</span><span class="sxs-lookup"><span data-stu-id="f76b3-305">**Consumer Features** - Lets you block consumer features like Start menu suggestions, and membership notifications.</span></span>
+    - <span data-ttu-id="f76b3-306">**Destaque do Windows na Central de Ações** – Impedir que as sugestões de Destaque do Windows como um novo aplicativo ou conteúdo de segurança apareça no Windows Action Center.</span><span class="sxs-lookup"><span data-stu-id="f76b3-306">**Windows Spotlight in action center** – Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.</span></span>
+    - <span data-ttu-id="f76b3-307">**Personalização do Windows Spotlight** – Impede que o Destaque do Windows personalize os resultados com base no uso de um dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f76b3-307">**Windows Spotlight personalization** – Stops Windows Spotlight from personalizing results based on the usage of a device.</span></span>
+    - <span data-ttu-id="f76b3-308">**Experiência de boas-vindas do Windows** – Bloqueia a experiência de boas-vinda do Windows, que mostra as informações do usuário sobre os recursos atualizados ou atualizados.</span><span class="sxs-lookup"><span data-stu-id="f76b3-308">**Windows welcome experience** – Block the Windows welcome experience that shows the user information about new, or updated features.</span></span>
+
+
+## <span data-ttu-id="f76b3-309">Vídeo</span><span class="sxs-lookup"><span data-stu-id="f76b3-309">Display</span></span>
+<a id="display" class="xliff"></a>
+
+- <span data-ttu-id="f76b3-310">**Entrada do usuário de receptores de vídeo sem fio** - bloqueia a entrada do usuário de receptores de vídeo sem fio.</span><span class="sxs-lookup"><span data-stu-id="f76b3-310">**User input from wireless display receivers** - Blocks user input from wireless display receivers.</span></span>
+- <span data-ttu-id="f76b3-311">**Projeção neste PC** - impede que outros dispositivos descubram o PC para projeção.</span><span class="sxs-lookup"><span data-stu-id="f76b3-311">**Projection to this PC** - Stops other devices from discovering the PC for projection.</span></span>
+- <span data-ttu-id="f76b3-312">**Exigir PIN para emparelhamento** - exige um PIN durante a conexão com um dispositivo de projeção.</span><span class="sxs-lookup"><span data-stu-id="f76b3-312">**Require PIN for pairing** - Require a PIN when connecting to a projection device.</span></span>
+
+## <span data-ttu-id="f76b3-313">Inicie o</span><span class="sxs-lookup"><span data-stu-id="f76b3-313">Start</span></span>
+<a id="start" class="xliff"></a>
+
+- <span data-ttu-id="f76b3-314">**Desafixar aplicativos da barra de tarefas** - impede o usuário de desafixar aplicativos no menu Iniciar.</span><span class="sxs-lookup"><span data-stu-id="f76b3-314">**Unpin apps from task bar** - Stop the user from unpinning apps from the Start menu.</span></span>
+- <span data-ttu-id="f76b3-315">**Documentos em Iniciar** - oculta ou mostra a pasta Documentos no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-315">**Documents on Start** - Hide or show the Documents folder in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-316">**Downloads em Iniciar** - oculta ou mostra a pasta Downloads no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-316">**Downloads on Start** - Hide or show the Downloads folder in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-317">**Explorador de Arquivos em Iniciar** - oculta ou mostra o aplicativo Explorador de Arquivos no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-317">**File Explorer on Start** - Hide or show the File Explorer app in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-318">**Grupo Doméstico em Iniciar** - oculta ou mostra a pasta Grupo Doméstico no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-318">**HomeGroup on Start** - Hide or show the HomeGroup folder in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-319">**Música em Iniciar** - oculta ou mostra a pasta Música no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-319">**Music on Start** - Hide or show the Music folder in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-320">**Rede em Iniciar** - oculta ou mostra a pasta Rede no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-320">**Network on Start** - Hide or show the Network folder in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-321">**Pasta Pessoal em Iniciar** - oculta ou mostra a pasta Pessoal no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-321">**Personal folder on Start** - Hide or show the Personal folder in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-322">**Imagens em Iniciar** - oculta ou mostra a pasta de imagens no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-322">**Pictures on Start** - Hide or show the folder for pictures in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-323">**Configurações em Iniciar** - oculta ou mostra o aplicativo Configurações no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-323">**Settings on Start** - Hide or show the Settings app in the Windows Start menu.</span></span>
+- <span data-ttu-id="f76b3-324">**Vídeos em Iniciar** - oculta ou mostra a pasta de vídeos no menu Iniciar do Windows.</span><span class="sxs-lookup"><span data-stu-id="f76b3-324">**Videos on Start** - Hide or show the folder for videos in the Windows Start menu.</span></span>

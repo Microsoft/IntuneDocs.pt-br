@@ -1,12 +1,12 @@
 ---
-title: Como adicionar aplicativos ao Microsoft Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: tais procedimentos ajudam você a deixar seus aplicativos no Intune prontos para serem atribuído aos usuários e dispositivos. "
+title: Como adicionar aplicativos ao Microsoft Intune
+titleSuffix: Intune on Azure
+description: "Estes procedimentos ajudam você a deixar seus aplicativos no Intune prontos para serem atribuídos a usuários e dispositivos. \""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,112 +15,116 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36cafd2b943ab1dd5045a8ed1fe1fcf1b28af385
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
+# <span data-ttu-id="28c77-104">Como adicionar um aplicativo no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="28c77-104">How to add an app to Microsoft Intune</span></span>
+<a id="how-to-add-an-app-to-microsoft-intune" class="xliff"></a>
 
-# <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar um aplicativo no Microsoft Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+<span data-ttu-id="28c77-105">Antes de gerenciar e atribuir aplicativos aos seus usuários, você deve adicioná-los ao Intune.</span><span class="sxs-lookup"><span data-stu-id="28c77-105">Before you can manage and assign apps for your users, you must add them to Intune.</span></span> <span data-ttu-id="28c77-106">O Intune dá suporte a uma ampla variedade de tipos diferentes de aplicativos e as opções podem ser diferentes para cada tipo.</span><span class="sxs-lookup"><span data-stu-id="28c77-106">Intune supports a wide range of different app types, and the options might be different for each type.</span></span>
 
-Antes de gerenciar e atribuir aplicativos aos seus usuários, você deve adicioná-los ao Intune. O Intune dá suporte a uma ampla variedade de tipos diferentes de aplicativos e as opções podem ser diferentes para cada tipo.
-
-O Intune permite que você adicione e atribua esses tipos de aplicativo:
+<span data-ttu-id="28c77-107">O Intune permite que você adicione e atribua esses tipos de aplicativo:</span><span class="sxs-lookup"><span data-stu-id="28c77-107">Intune lets you add and assign these app types:</span></span>
 
 ![Tipos de aplicativo com suporte no Intune](./media/app-types.png)
 
-Há suporte para as seguintes plataformas.
+<span data-ttu-id="28c77-109">Há suporte para as seguintes plataformas.</span><span class="sxs-lookup"><span data-stu-id="28c77-109">The following platforms are supported.</span></span>
 
-- Aplicativos da Android Store
-- Aplicativos LOB para Android
-- Aplicativos da iOS Store
-- Aplicativos LOB para iOS
-- Aplicativos Web
-- Aplicativos da Windows Phone 8.1 Store
-- Aplicativos de linha de negócios para Windows Phone (arquivos .xap)
-- Aplicativos da Windows Store
-- Aplicativos de linha de negócios para Windows (apenas arquivos .msi)
+- <span data-ttu-id="28c77-110">Aplicativos da Android Store</span><span class="sxs-lookup"><span data-stu-id="28c77-110">Android store apps</span></span>
+- <span data-ttu-id="28c77-111">Aplicativos LOB para Android</span><span class="sxs-lookup"><span data-stu-id="28c77-111">Android line-of-business (LOB) apps</span></span>
+- <span data-ttu-id="28c77-112">Aplicativos da iOS Store</span><span class="sxs-lookup"><span data-stu-id="28c77-112">iOS store apps</span></span>
+- <span data-ttu-id="28c77-113">Aplicativos LOB para iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-113">iOS line-of-business (LOB) apps</span></span>
+- <span data-ttu-id="28c77-114">Aplicativos Web</span><span class="sxs-lookup"><span data-stu-id="28c77-114">Web apps</span></span>
+- <span data-ttu-id="28c77-115">Aplicativos da Windows Phone 8.1 Store</span><span class="sxs-lookup"><span data-stu-id="28c77-115">Windows Phone 8.1 store apps</span></span>
+- <span data-ttu-id="28c77-116">Aplicativos de linha de negócios para Windows Phone (arquivos .xap)</span><span class="sxs-lookup"><span data-stu-id="28c77-116">Windows Phone line-of-business apps (.xap files)</span></span>
+- <span data-ttu-id="28c77-117">Aplicativos da Windows Store</span><span class="sxs-lookup"><span data-stu-id="28c77-117">Windows store apps</span></span>
+- <span data-ttu-id="28c77-118">Aplicativos de linha de negócios para Windows (apenas arquivos .msi)</span><span class="sxs-lookup"><span data-stu-id="28c77-118">Windows line-of-business apps (.msi files only)</span></span>
 
 >[!TIP]
-> Um aplicativo LOB (ou de linha de negócios) é aquele que você instala do arquivo de instalação, em vez de instalar de uma loja de aplicativos. Por exemplo, para instalar um aplicativo LOB para iOS, adicione o respectivo arquivo morto cuja extensão seja .ipa. Normalmente, são aplicativos que você tem gravados internamente.
+> <span data-ttu-id="28c77-119">Um aplicativo LOB (ou de linha de negócios) é aquele que você instala do arquivo de instalação, em vez de instalar de uma loja de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="28c77-119">A line-of-business (or LOB) app is one that you do not install from an app store, but install from the app installation file.</span></span> <span data-ttu-id="28c77-120">Por exemplo, para instalar um aplicativo LOB para iOS, adicione o respectivo arquivo morto cuja extensão seja .ipa.</span><span class="sxs-lookup"><span data-stu-id="28c77-120">For example, to install an iOS LOB app, you add the application archive file (with the extension .ipa).</span></span> <span data-ttu-id="28c77-121">Normalmente, são aplicativos que você tem gravados internamente.</span><span class="sxs-lookup"><span data-stu-id="28c77-121">These are typically apps you have written in-house.</span></span>
 
-## <a name="before-you-start"></a>Antes de começar
+## <span data-ttu-id="28c77-122">Antes de começar</span><span class="sxs-lookup"><span data-stu-id="28c77-122">Before you start</span></span>
+<a id="before-you-start" class="xliff"></a>
 
-Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativos.
+<span data-ttu-id="28c77-123">Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativos.</span><span class="sxs-lookup"><span data-stu-id="28c77-123">Consider the following points before you begin to add and assign apps.</span></span>
 
-- Quando você adiciona e atribui um aplicativo de uma loja, os usuários finais devem ter uma conta nessa loja para poder instalar o aplicativo.
-- Alguns aplicativos ou itens que você atribui podem ser dependentes de aplicativos internos do iOS. Por exemplo, quando você atribui um livro da iOS Store, o aplicativo iBooks deve estar presente no dispositivo. Se você tiver removido o aplicativo interno iBooks, não será possível usar o Intune para reabilitá-lo.
+- <span data-ttu-id="28c77-124">Quando você adiciona e atribui um aplicativo de uma loja, os usuários finais devem ter uma conta nessa loja para poder instalar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="28c77-124">When you add and assign an app from a store, end users must have an account with that store in order to be able to install the app.</span></span>
+- <span data-ttu-id="28c77-125">Alguns aplicativos ou itens que você atribui podem ser dependentes de aplicativos internos do iOS.</span><span class="sxs-lookup"><span data-stu-id="28c77-125">Some apps or items you assign might be dependent on built-in iOS apps.</span></span> <span data-ttu-id="28c77-126">Por exemplo, quando você atribui um livro da iOS Store, o aplicativo iBooks deve estar presente no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="28c77-126">For example, if you assign a book from the iOS store, then the iBooks app must be present on the device.</span></span> <span data-ttu-id="28c77-127">Se você tiver removido o aplicativo interno iBooks, não será possível usar o Intune para reabilitá-lo.</span><span class="sxs-lookup"><span data-stu-id="28c77-127">If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.</span></span>
 
-## <a name="cloud-storage-space"></a>Espaço de armazenamento em nuvem
-Todos os aplicativos que você cria usando o tipo de instalação do instalador do software (por exemplo, um aplicativo LOB) são empacotados e carregados no armazenamento em nuvem do Microsoft Intune. Uma assinatura de avaliação do Intune inclui 2 GB de armazenamento baseado em nuvem que é usado para armazenar aplicativos gerenciados e atualizações. A assinatura completa inclui 20 GB de espaço de armazenamento.
+## <span data-ttu-id="28c77-128">Espaço de armazenamento em nuvem</span><span class="sxs-lookup"><span data-stu-id="28c77-128">Cloud storage space</span></span>
+<a id="cloud-storage-space" class="xliff"></a>
+<span data-ttu-id="28c77-129">Todos os aplicativos que você cria usando o tipo de instalação do instalador do software (por exemplo, um aplicativo LOB) são empacotados e carregados no armazenamento em nuvem do Microsoft Intune.</span><span class="sxs-lookup"><span data-stu-id="28c77-129">All apps that you create by using the software installer installation type (for example, a line-of-business app) are packaged and uploaded to Intune cloud storage.</span></span> <span data-ttu-id="28c77-130">Uma assinatura de avaliação do Intune inclui 2 GB de armazenamento baseado em nuvem que é usado para armazenar aplicativos gerenciados e atualizações.</span><span class="sxs-lookup"><span data-stu-id="28c77-130">A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates.</span></span> <span data-ttu-id="28c77-131">A assinatura completa inclui 20 GB de espaço de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="28c77-131">A full subscription includes 20 GB of storage space.</span></span>
 
-Você pode adquirir armazenamento adicional para o Intune usando seu método de compra original.  Se você paga por cartão de crédito ou fatura, visite o [portal de Gerenciamento de Assinatura](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Caso contrário, entre em contato com seu parceiro ou associado de vendas.
+<span data-ttu-id="28c77-132">Você pode adquirir armazenamento adicional para o Intune usando seu método de compra original.</span><span class="sxs-lookup"><span data-stu-id="28c77-132">You can purchase additional storage for Intune using your original purchase method.</span></span>  <span data-ttu-id="28c77-133">Se você paga por cartão de crédito ou fatura, visite o [portal de Gerenciamento de Assinatura](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).</span><span class="sxs-lookup"><span data-stu-id="28c77-133">If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).</span></span>  <span data-ttu-id="28c77-134">Caso contrário, entre em contato com seu parceiro ou associado de vendas.</span><span class="sxs-lookup"><span data-stu-id="28c77-134">Otherwise, contact your partner or sales associate.</span></span>
 
-Os requisitos de espaço de armazenamento em nuvem são os seguintes:
+<span data-ttu-id="28c77-135">Os requisitos de espaço de armazenamento em nuvem são os seguintes:</span><span class="sxs-lookup"><span data-stu-id="28c77-135">Requirements for cloud storage space are as follows:</span></span>
 
--   Todos os arquivos de instalação do aplicativo devem estar na mesma pasta.
--   O tamanho máximo do arquivo para qualquer arquivo que você carregar é de 2 GB.
+-   <span data-ttu-id="28c77-136">Todos os arquivos de instalação do aplicativo devem estar na mesma pasta.</span><span class="sxs-lookup"><span data-stu-id="28c77-136">All app installation files must be in the same folder.</span></span>
+-   <span data-ttu-id="28c77-137">O tamanho máximo do arquivo para qualquer arquivo que você carregar é de 2 GB.</span><span class="sxs-lookup"><span data-stu-id="28c77-137">The maximum file size for any file that you upload is 2 GB.</span></span>
 
-## <a name="how-to-create-and-edit-categories-for-apps"></a>Como criar e editar categorias para aplicativos
+## <span data-ttu-id="28c77-138">Como criar e editar categorias para aplicativos</span><span class="sxs-lookup"><span data-stu-id="28c77-138">How to create and edit categories for apps</span></span>
+<a id="how-to-create-and-edit-categories-for-apps" class="xliff"></a>
 
-Categorias de aplicativo podem ser usadas para ajudar a classificar aplicativos para facilitar a tarefa dos usuários finais de localizá-los no portal da empresa. Você pode atribuir uma ou mais categorias a um aplicativo, por exemplo, **Aplicativos de desenvolvedor** ou **Aplicativos de comunicação**.
-Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a categoria desejada. Use os tópicos específicos da plataforma para adicionar um aplicativo e atribuir categorias. Para criar e editar suas próprias categorias, use o procedimento a seguir:
+<span data-ttu-id="28c77-139">As categorias de aplicativo podem ser usadas para ajudar a classificar aplicativos para que os usuários possam encontrá-los com mais facilidade no portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="28c77-139">App categories can be used to help you sort apps to make them easier for users to find in the company portal.</span></span> <span data-ttu-id="28c77-140">Você pode atribuir uma ou mais categorias a um aplicativo, por exemplo, **Aplicativos de desenvolvedor** ou **Aplicativos de comunicação**.</span><span class="sxs-lookup"><span data-stu-id="28c77-140">You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.</span></span>
+<span data-ttu-id="28c77-141">Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a categoria desejada.</span><span class="sxs-lookup"><span data-stu-id="28c77-141">When you add an app to Intune, you are given the option to select the category you want.</span></span> <span data-ttu-id="28c77-142">Use os tópicos específicos da plataforma para adicionar um aplicativo e atribuir categorias.</span><span class="sxs-lookup"><span data-stu-id="28c77-142">Use the platform-specific topics to add an app, and assign categories.</span></span> <span data-ttu-id="28c77-143">Para criar e editar suas próprias categorias, use o procedimento a seguir:</span><span class="sxs-lookup"><span data-stu-id="28c77-143">To create and edit your own categories, use the following procedure:</span></span>
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Aplicativos móveis**.
-4. Na carga de trabalho **Aplicativos móveis**, escolha **Configurar** > **Categorias de aplicativos**.
-5. Na folha **Categorias de aplicativos**, é mostrada uma lista de categorias atuais. Escolha uma das seguintes ações:
-    - **Criar uma categoria de** – Na folha **Criar categoria**, insira um nome para a nova categoria. Os nomes podem ser inseridos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
-    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...** “. Na folha **Propriedades**, você pode inserir um novo nome para a categoria ou excluí-la.
+1. <span data-ttu-id="28c77-144">Entre no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="28c77-144">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="28c77-145">Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.</span><span class="sxs-lookup"><span data-stu-id="28c77-145">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="28c77-146">Na folha **Intune**, escolha **Aplicativos móveis**.</span><span class="sxs-lookup"><span data-stu-id="28c77-146">On the **Intune** blade, choose **Mobile apps**.</span></span>
+4. <span data-ttu-id="28c77-147">Na carga de trabalho **Aplicativos móveis**, escolha **Configurar** > **Categorias de aplicativos**.</span><span class="sxs-lookup"><span data-stu-id="28c77-147">In the **Mobile apps** workload, choose **Setup** > **App categories**.</span></span>
+5. <span data-ttu-id="28c77-148">Na folha **Categorias de aplicativos**, é mostrada uma lista de categorias atuais.</span><span class="sxs-lookup"><span data-stu-id="28c77-148">On the **App categories** blade, a list of the current categories is shown.</span></span> <span data-ttu-id="28c77-149">Escolha uma das seguintes ações:</span><span class="sxs-lookup"><span data-stu-id="28c77-149">Choose one of the following actions:</span></span>
+    - <span data-ttu-id="28c77-150">**Criar uma categoria de** – Na folha **Criar categoria**, insira um nome para a nova categoria.</span><span class="sxs-lookup"><span data-stu-id="28c77-150">**Create a category** - On the **Create category** blade, enter a name for the new category.</span></span> <span data-ttu-id="28c77-151">Os nomes podem ser inseridos em apenas um idioma e não são traduzidos pelo Intune.</span><span class="sxs-lookup"><span data-stu-id="28c77-151">Names can be entered in one language only, and are not translated by Intune.</span></span> <span data-ttu-id="28c77-152">Quando terminar, clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="28c77-152">When you are done, click **Create**.</span></span>
+    - <span data-ttu-id="28c77-153">**Editar uma categoria** – Para qualquer categoria na lista, escolha “**...** “.</span><span class="sxs-lookup"><span data-stu-id="28c77-153">**Edit a category** - For any category in the list, choose '**...**'.</span></span> <span data-ttu-id="28c77-154">Na folha **Propriedades**, você pode inserir um novo nome para a categoria ou excluí-la.</span><span class="sxs-lookup"><span data-stu-id="28c77-154">On the **Properties** blade, you can enter a new name for the category, or delete the category.</span></span>
 
 
-## <a name="apps-added-automatically-by-intune"></a>Aplicativos adicionados automaticamente pelo Intune
+## <span data-ttu-id="28c77-155">Aplicativos adicionados automaticamente pelo Intune</span><span class="sxs-lookup"><span data-stu-id="28c77-155">Apps added automatically by Intune</span></span>
+<a id="apps-added-automatically-by-intune" class="xliff"></a>
 
-Os aplicativos a seguir, publicados pela Microsoft, estão internos ao Intune e estão prontos para atribuição:
+<span data-ttu-id="28c77-156">Os aplicativos a seguir, publicados pela Microsoft, estão internos ao Intune e estão prontos para atribuição:</span><span class="sxs-lookup"><span data-stu-id="28c77-156">The following apps, published by Microsoft, are built-into Intune, and ready for you to assign:</span></span>
 
 |||
 |-|-|
-|Nome|Plataforma|Tipo de aplicativo|
-|Azure Information Protection|Android|Aplicativo gerenciado da loja do Android|
-|Dynamics CRM para telefones|Android|Aplicativo gerenciado da loja do Android|
-|Dynamics CRM para tablets|Android|Aplicativo gerenciado da loja do Android|
-|Excel|iOS|Aplicativo gerenciado de loja do iOS|
-|Excel|Android|Aplicativo gerenciado da loja do Android|
-|Managed Browser|Android|Aplicativo gerenciado da loja do Android|
-|Managed Browser|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Dynamics CRM em telefones|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Dynamics CRM em tablets|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Power BI|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Power BI|Android|Aplicativo gerenciado da loja do Android|
-|Microsoft SharePoint|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft SharePoint|Android|Aplicativo gerenciado da loja do Android|
-|Microsoft Teams|Android|Aplicativo gerenciado da loja do Android|
-|Microsoft Teams|iOS|Aplicativo gerenciado de loja do iOS|
-|OneDrive|iOS|Aplicativo gerenciado de loja do iOS|
-|OneDrive|Android|Aplicativo gerenciado da loja do Android|
-|OneNote|iOS|Aplicativo gerenciado de loja do iOS|
-|Outlook|Android|Aplicativo gerenciado da loja do Android|
-|Outlook|iOS|Aplicativo gerenciado de loja do iOS|
-|Outlook Groups|Android|Aplicativo gerenciado da loja do Android|
-|Outlook Groups|iOS|Aplicativo gerenciado de loja do iOS|
-|PowerPoint|iOS|Aplicativo gerenciado de loja do iOS|
+|<span data-ttu-id="28c77-157">Nome</span><span class="sxs-lookup"><span data-stu-id="28c77-157">Name</span></span>|<span data-ttu-id="28c77-158">Plataforma</span><span class="sxs-lookup"><span data-stu-id="28c77-158">Platform</span></span>|<span data-ttu-id="28c77-159">Tipo de aplicativo</span><span class="sxs-lookup"><span data-stu-id="28c77-159">App type</span></span>|
+|<span data-ttu-id="28c77-160">Azure Information Protection</span><span class="sxs-lookup"><span data-stu-id="28c77-160">Azure Information Protection</span></span>|<span data-ttu-id="28c77-161">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-161">Android</span></span>|<span data-ttu-id="28c77-162">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-162">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-163">Dynamics CRM para telefones</span><span class="sxs-lookup"><span data-stu-id="28c77-163">Dynamics CRM for Phones</span></span>|<span data-ttu-id="28c77-164">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-164">Android</span></span>|<span data-ttu-id="28c77-165">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-165">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-166">Dynamics CRM para tablets</span><span class="sxs-lookup"><span data-stu-id="28c77-166">Dynamics CRM for Tablets</span></span>|<span data-ttu-id="28c77-167">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-167">Android</span></span>|<span data-ttu-id="28c77-168">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-168">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-169">Excel</span><span class="sxs-lookup"><span data-stu-id="28c77-169">Excel</span></span>|<span data-ttu-id="28c77-170">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-170">iOS</span></span>|<span data-ttu-id="28c77-171">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-171">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-172">Excel</span><span class="sxs-lookup"><span data-stu-id="28c77-172">Excel</span></span>|<span data-ttu-id="28c77-173">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-173">Android</span></span>|<span data-ttu-id="28c77-174">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-174">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-175">Managed Browser</span><span class="sxs-lookup"><span data-stu-id="28c77-175">Managed Browser</span></span>|<span data-ttu-id="28c77-176">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-176">Android</span></span>|<span data-ttu-id="28c77-177">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-177">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-178">Managed Browser</span><span class="sxs-lookup"><span data-stu-id="28c77-178">Managed Browser</span></span>|<span data-ttu-id="28c77-179">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-179">iOS</span></span>|<span data-ttu-id="28c77-180">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-180">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-181">Microsoft Dynamics CRM em telefones</span><span class="sxs-lookup"><span data-stu-id="28c77-181">Microsoft Dynamics CRM on Phones</span></span>|<span data-ttu-id="28c77-182">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-182">iOS</span></span>|<span data-ttu-id="28c77-183">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-183">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-184">Microsoft Dynamics CRM em tablets</span><span class="sxs-lookup"><span data-stu-id="28c77-184">Microsoft Dynamics CRM on Tablets</span></span>|<span data-ttu-id="28c77-185">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-185">iOS</span></span>|<span data-ttu-id="28c77-186">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-186">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-187">Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="28c77-187">Microsoft Power BI</span></span>|<span data-ttu-id="28c77-188">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-188">iOS</span></span>|<span data-ttu-id="28c77-189">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-189">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-190">Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="28c77-190">Microsoft Power BI</span></span>|<span data-ttu-id="28c77-191">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-191">Android</span></span>|<span data-ttu-id="28c77-192">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-192">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-193">Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="28c77-193">Microsoft SharePoint</span></span>|<span data-ttu-id="28c77-194">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-194">iOS</span></span>|<span data-ttu-id="28c77-195">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-195">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-196">Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="28c77-196">Microsoft SharePoint</span></span>|<span data-ttu-id="28c77-197">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-197">Android</span></span>|<span data-ttu-id="28c77-198">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-198">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-199">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="28c77-199">Microsoft Teams</span></span>|<span data-ttu-id="28c77-200">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-200">Android</span></span>|<span data-ttu-id="28c77-201">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-201">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-202">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="28c77-202">Microsoft Teams</span></span>|<span data-ttu-id="28c77-203">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-203">iOS</span></span>|<span data-ttu-id="28c77-204">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-204">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-205">OneDrive</span><span class="sxs-lookup"><span data-stu-id="28c77-205">OneDrive</span></span>|<span data-ttu-id="28c77-206">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-206">iOS</span></span>|<span data-ttu-id="28c77-207">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-207">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-208">OneDrive</span><span class="sxs-lookup"><span data-stu-id="28c77-208">OneDrive</span></span>|<span data-ttu-id="28c77-209">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-209">Android</span></span>|<span data-ttu-id="28c77-210">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-210">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-211">OneNote</span><span class="sxs-lookup"><span data-stu-id="28c77-211">OneNote</span></span>|<span data-ttu-id="28c77-212">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-212">iOS</span></span>|<span data-ttu-id="28c77-213">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-213">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-214">Outlook</span><span class="sxs-lookup"><span data-stu-id="28c77-214">Outlook</span></span>|<span data-ttu-id="28c77-215">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-215">Android</span></span>|<span data-ttu-id="28c77-216">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-216">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-217">Outlook</span><span class="sxs-lookup"><span data-stu-id="28c77-217">Outlook</span></span>|<span data-ttu-id="28c77-218">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-218">iOS</span></span>|<span data-ttu-id="28c77-219">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-219">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-220">Outlook Groups</span><span class="sxs-lookup"><span data-stu-id="28c77-220">Outlook Groups</span></span>|<span data-ttu-id="28c77-221">Android</span><span class="sxs-lookup"><span data-stu-id="28c77-221">Android</span></span>|<span data-ttu-id="28c77-222">Aplicativo gerenciado da loja do Android</span><span class="sxs-lookup"><span data-stu-id="28c77-222">Managed Android store app</span></span>|
+|<span data-ttu-id="28c77-223">Outlook Groups</span><span class="sxs-lookup"><span data-stu-id="28c77-223">Outlook Groups</span></span>|<span data-ttu-id="28c77-224">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-224">iOS</span></span>|<span data-ttu-id="28c77-225">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-225">Managed iOS store app</span></span>|
+|<span data-ttu-id="28c77-226">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="28c77-226">PowerPoint</span></span>|<span data-ttu-id="28c77-227">iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-227">iOS</span></span>|<span data-ttu-id="28c77-228">Aplicativo gerenciado de loja do iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-228">Managed iOS store app</span></span>|
 
-## <a name="next-steps"></a>Próximas etapas
+## <span data-ttu-id="28c77-229">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="28c77-229">Next Steps</span></span>
+<a id="next-steps" class="xliff"></a>
 
-Escolha um dos tópicos a seguir para saber como adicionar aplicativos para cada plataforma no Microsoft Intune:
+<span data-ttu-id="28c77-230">Escolha um dos tópicos a seguir para saber como adicionar aplicativos para cada plataforma no Microsoft Intune:</span><span class="sxs-lookup"><span data-stu-id="28c77-230">Choose one of the following topics to find out how to add apps for each platform to Intune:</span></span>
 
-- [Aplicativos da Android Store](store-apps-android.md)
-- [Aplicativos LOB para Android](lob-apps-android.md)
-- [Aplicativos da iOS Store](store-apps-ios.md)
-- [Aplicativos LOB para iOS](lob-apps-ios.md)
-- [Aplicativos Web (para todas as plataformas)](web-app.md)
-- [Aplicação da loja do Windows Phone 8.1](store-apps-windows-phone-8-1.md)
-- [Aplicativos LOB para Windows Phone](lob-apps-windows-phone.md)
-- [Aplicativos da Windows Store](store-apps-windows.md)
-- [Aplicativos LOB para Windows](lob-apps-windows.md)
+- [<span data-ttu-id="28c77-231">Aplicativos da Android Store</span><span class="sxs-lookup"><span data-stu-id="28c77-231">Android store apps</span></span>](store-apps-android.md)
+- [<span data-ttu-id="28c77-232">Aplicativos LOB para Android</span><span class="sxs-lookup"><span data-stu-id="28c77-232">Android LOB apps</span></span>](lob-apps-android.md)
+- [<span data-ttu-id="28c77-233">Aplicativos da iOS Store</span><span class="sxs-lookup"><span data-stu-id="28c77-233">iOS store apps</span></span>](store-apps-ios.md)
+- [<span data-ttu-id="28c77-234">Aplicativos LOB para iOS</span><span class="sxs-lookup"><span data-stu-id="28c77-234">iOS LOB apps</span></span>](lob-apps-ios.md)
+- [<span data-ttu-id="28c77-235">Aplicativos Web (para todas as plataformas)</span><span class="sxs-lookup"><span data-stu-id="28c77-235">Web apps (for all platforms)</span></span>](web-app.md)
+- [<span data-ttu-id="28c77-236">Aplicação da loja do Windows Phone 8.1</span><span class="sxs-lookup"><span data-stu-id="28c77-236">Windows Phone 8.1 store apps</span></span>](store-apps-windows-phone-8-1.md)
+- [<span data-ttu-id="28c77-237">Aplicativos LOB para Windows Phone</span><span class="sxs-lookup"><span data-stu-id="28c77-237">Windows Phone LOB apps</span></span>](lob-apps-windows-phone.md)
+- [<span data-ttu-id="28c77-238">Aplicativos da Windows Store</span><span class="sxs-lookup"><span data-stu-id="28c77-238">Windows store apps</span></span>](store-apps-windows.md)
+- [<span data-ttu-id="28c77-239">Aplicativos LOB para Windows</span><span class="sxs-lookup"><span data-stu-id="28c77-239">Windows LOB app</span></span>](lob-apps-windows.md)
 
