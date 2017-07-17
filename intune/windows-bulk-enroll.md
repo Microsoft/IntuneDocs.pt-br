@@ -1,12 +1,12 @@
 ---
-title: Registro em massa para Windows 10 | Microsoft Docs
-titleSuffix: Intune Azure preview
+title: Registro em massa no Windows 10
+titleSuffix: Intune on Azure
 description: Criar um pacote de registro em massa para o Microsoft Intune
 keywords: 
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,31 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f8d1ff7a9a8bd804d4fe40f8aec7e7d0bf998e35
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
+# Registro em massa para dispositivos Windows
+<a id="bulk-enrollment-for-windows-devices" class="xliff"></a>
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Como administrador, você pode ingressar muitos dispositivos novos com Windows ao Azure Active Directory e ao Intune. Para registrar em massa os dispositivos em seu locatário do Azure AD, você cria um pacote de provisionamento com o aplicativo WCD (Windows Configuration Designer). A aplicação do pacote de provisionamento em dispositivos corporativos ingressa os dispositivos ao seu locatário do Azure AD e os registra no gerenciamento do Intune. Após a aplicação do pacote, ele estará pronto para logon de seus usuários do Azure AD.
 
 Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas do Intune atribuídas e os aplicativos necessários. Não há suporte no momento para cenários de autoatendimento e de Portal da empresa.
 
-## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para registro em massa de dispositivos Windows
+## Pré-requisitos para registro em massa de dispositivos Windows
+<a id="prerequisites-for-windows-devices-bulk-enrollment" class="xliff"></a>
 
 O registro em massa para dispositivos Windows exige o seguinte:
 
 - Dispositivos com Atualização do Windows 10 para Criadores ou posteriores
 - [Registro automático do Windows](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 
-## <a name="create-a-provisioning-package"></a>Criar um pacote de provisionamento
+## Criar um pacote de provisionamento
+<a id="create-a-provisioning-package" class="xliff"></a>
 
 1. Baixe o [WCD (Windows Configuration Designer)](https://www.microsoft.com/store/apps/9nblggh4tx22) da Windows Store.
 ![Capturas de tela e descrição do Windows Configuration Designer](media/bulk-enroll-store.png)
@@ -49,26 +51,27 @@ O registro em massa para dispositivos Windows exige o seguinte:
   - **Pasta do projeto** - onde seu novo projeto será salvo
   - **Descrição** - uma descrição opcional do projeto ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-name.png)
 
-4.    Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
+4.  Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
 ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
 
-5.    Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se isso não estiver configurado, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
+5.  Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se isso não estiver configurado, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
 ![Captura de tela da habilitação de Wi-Fi, incluindo as opções de SSID da Rede e o Tipo da rede, no aplicativo Windows Configuration Designer](media/bulk-enroll-network.png)
 
-6.    Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa** .
+6.  Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa** .
 ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-account.png)
 
 7. Forneça suas credenciais do Azure AD para obter um token em massa.
 ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-cred.png)
 
-8.    Clique em **Avançar** quando o **Token em Massa** for obtido com êxito.
+8.  Clique em **Avançar** quando o **Token em Massa** for obtido com êxito.
 
 9. Como opção, você pode **Adicionar aplicativos** e **Adicionar certificados**. Esses aplicativos e certificados são provisionados no dispositivo.
 
 10. Como opção, você pode proteger com senha seu pacote de provisionamento.  Clique em **Criar**.
 ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-create.png)
 
-## <a name="provision-devices"></a>Provisionar dispositivos
+## Provisionar dispositivos
+<a id="provision-devices" class="xliff"></a>
 
 1. Acesse o pacote de provisionamento no local especificado, na **Pasta do projeto** especificada no aplicativo.
 
@@ -83,10 +86,20 @@ O registro em massa para dispositivos Windows exige o seguinte:
 
 4. Quando o dispositivo for reiniciado, ele se conectará ao Azure Active Directory e registrará no Microsoft Intune.
 
-## <a name="troubleshooting-windows-bulk-enrollment"></a>Solução de problemas de registro em massa do Windows
+## Solução de problemas de registro em massa do Windows
+<a id="troubleshooting-windows-bulk-enrollment" class="xliff"></a>
 
+### Problemas de provisionamento
+<a id="provisioning-issues" class="xliff"></a>
 O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de provisionamento podem exigir a redefinição de fábrica do dispositivo ou a recuperação do dispositivo a partir de uma imagem de inicialização. Estes exemplos descrevem alguns dos motivos para falhas de provisionamento:
 
 - Um pacote de provisionamento que tenta ingressar em um domínio do Active Directory ou locatário do Azure Active Directory que não cria uma conta local poderia tornar o dispositivo inacessível se o processo de ingresso no domínio falhar devido à falta de conectividade de rede.
 - Os scripts executados pelo pacote de provisionamento são executados no contexto do sistema e podem fazer alterações aleatórias no sistema de arquivos e configurações do dispositivo. Um script mal-intencionado ou incorreto pode colocar o dispositivo em um estado que só pode ser recuperado refazendo a imagem ou redefinindo o dispositivo para as configurações de fábrica.
 
+### Problemas com o Portal da Empresa e registro em massa
+<a id="problems-with-bulk-enrollment-and-company-portal" class="xliff"></a>
+Se um usuário tenta registrar um dispositivo previamente registrado em massa usando o Portal da Empresa, eles receberão um aviso de que seu dispositivo precisa de outras ações, seja instalação ou registro. O dispositivo é registrado, mas o registro não é reconhecido pelo aplicativo de Portal da Empresa ou site.
+
+### Acesso condicional
+<a id="conditional-access" class="xliff"></a>
+O acesso condicional não está disponível para dispositivos Windows registrados em massa.

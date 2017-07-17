@@ -1,12 +1,12 @@
 ---
-title: Como atribuir aplicativos a grupos | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune Azure: depois de adicionar um aplicativo ao Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
+title: Como atribuir aplicativos aos grupos
+titleSuffix: Intune on Azure
+description: "Depois de adicionar um aplicativo ao Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,18 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/01/2017
 ---
+# Como atribuir aplicativos a grupos com o Microsoft Intune
+<a id="how-to-assign-apps-to-groups-with-microsoft-intune" class="xliff"></a>
 
-# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicativos a grupos com o Microsoft Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Depois de adicionar um aplicativo ao Intune, ele deverá ser distribuído para usuários e dispositivos. Para fazer isso, atribua-o.
+Depois de adicionar um aplicativo ao Intune, ele poderá ser atribuído para usuários e dispositivos.
 
 Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo Intune ou não. Use a tabela a seguir para ajudar a compreender as várias opções para atribuir aplicativos a usuários e dispositivos:
 
@@ -46,34 +45,8 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
 > [!NOTE]
 > No momento, é possível atribuir aplicativos iOS e Android (tanto linha de negócios quanto comprados na loja) a dispositivos que não são registrados com o Intune.
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Mudanças na forma de atribuir aplicativos a grupos na visualização do Intune
-
-Na visualização do Intune Azure, você não usa mais os grupos do Intune para atribuir aplicativos, agora você usa os grupos de segurança do Azure AD (Azure Active Directory). Por isso, você precisará conhecer algumas alterações para a forma como as atribuições do aplicativo funcionam, particularmente quando tiver atribuído aplicativos a grupos filho do Intune.
-O mais importante a ser observado é que o conceito de grupos filho não existe no Azure AD. No entanto, alguns grupos podem conter os mesmos membros. Nesse caso, o comportamento entre o Intune clássico e a visualização do Intune Azure é diferente. A tabela a seguir ilustra isso:
-
-||||||
-|-|-|-|-|-|
-|**Intune clássico (antes da migração de locatário)**|-|**Intune Azure (após locatário migração ser concluída)**|-|**Mais informações**|
-|**Intenção de atribuição de grupo pai**|**Intenção de atribuição de grupo filho**|**Tentativa de atribuição resultante para membros comuns do grupo pai e filho anterior**|**Ação de tentativa de atribuição resultante para membros do grupo pai**|-|
-|Disponível|Necessária|Necessária e Disponível|Disponível|Necessária e Disponível significa que os aplicativos atribuídos conforme necessário também podem ser vistos no aplicativo Portal da Empresa.
-|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução alternativa: remova a tentativa de atribuição 'Não Aplicável' do grupo pai do Intune.
-|Necessária|Disponível|Necessária e Disponível|Necessária|-|
-|Necessária e Disponível<sup>1</sup>|Disponível|Necessária e Disponível|Necessária e Disponível|-|
-|Necessária|Não Aplicável|Necessária|Necessária|-|
-|Necessária e Disponível|Não Aplicável|Necessária e Disponível|Necessária e Disponível|-|
-|Necessária|Desinstalar|Necessária|Necessária|-|
-|Necessária e Disponível|Desinstalar|Necessária e Disponível|Necessária e Disponível|-|
-<sup>1</sup> Apenas para aplicativos da iOS Store gerenciados, quando você os adiciona ao Intune e os atribui como Necessários, eles são criados automaticamente com as tentativas Necessária e Disponível.
-
-Você pode executar as seguintes ações para evitar conflitos de atribuição:
-
-1.    Se você tiver atribuído aplicativos para grupos pai e filho do Intune relacionados, considere remover essas atribuições antes de começar a migração do locatário.
-2.    Remover grupos filho de grupos pai e criar um novo grupo que contém os membros do grupo filho antigo. Você pode, então, criar uma nova atribuição de aplicativo para esse grupo.
-Observações: se o grupo pai anterior era "Todos os Usuários", você precisará criar um novo grupo dinâmico que não inclui membros do grupo filho.
-É necessário fazer alterações em grupos no [Portal do Azure](https://portal.azure.com/) para grupos de usuários e de dispositivos. O [Portal Clássico do Azure](https://manage.windowsazure.com/) permitirá que você faça alterações apenas em grupos de usuários.
-
-
-## <a name="how-to-assign-an-app"></a>Como atribuir um aplicativo
+## Como atribuir um aplicativo
+<a id="how-to-assign-an-app" class="xliff"></a>
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -87,10 +60,55 @@ Observações: se o grupo pai anterior era "Todos os Usuários", você precisar�
     - **Não Aplicável** – O aplicativo não é instalado nem é mostrado no Portal da Empresa.
     - **Obrigatório** – O aplicativo é instalado nos dispositivos dos grupos selecionados.
     - **Desinstalar** – O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
-    - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune. Consulte a tabela acima para obter ajuda.
+    - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune.
 6. Quando terminar, escolha **Salvar**.
 
-Agora, o aplicativo foi atribuído ao grupo escolhido.
+Agora o aplicativo foi atribuído ao grupo selecionado.
+
+## Como são resolvidos os conflitos entre as intenções de aplicativo
+<a id="how-conflicts-between-app-intents-are-resolved" class="xliff"></a>
+
+Às vezes, o mesmo aplicativo é atribuído a vários grupos, mas com intenções diferentes. Nesses casos, use essa tabela para entender a intenção resultante.
+
+||||
+|-|-|-|
+|Intenção do grupo 1|Intenção do grupo 2|Intenção resultante|
+|Necessário para o usuário|Disponível para o usuário|Necessária e Disponível|
+|Necessário para o usuário|Não Disponível para o Usuário|Necessária|
+|Necessário para o usuário|Desinstalação do usuário|Necessária|
+|Disponível para o usuário|Não Disponível para o Usuário|Não disponível|
+|Disponível para o usuário|Desinstalação do usuário|Desinstalar|
+|Não Disponível para o Usuário|Desinstalação do usuário|Desinstalar
+|Necessário para o usuário|Necessário para o dispositivo|Ambos, mas o Gateway trata como necessário 
+|Necessário para o usuário|Desinstalação do dispositivo|Ambos, mas o Gateway resolve como necessário 
+|Disponível para o usuário|Necessário para o dispositivo|Ambos, mas o Gateway resolve como necessário (Necessário e Disponível)
+|Disponível para o usuário|Desinstalação do dispositivo|Ambos, mas o Gateway resolve como Disponível.<br>O aplicativo aparece no Portal da Empresa.<br>Se o aplicativo já estiver instalado (como aplicativo necessário com intenção anterior), então o aplicativo será desinstalado.<br>Contudo, se o usuário clicar em instalar no portal da empresa, então o aplicativo será instalado e a intenção de desinstalar não é cumprida.|
+|Não Disponível para o Usuário|Necessário para o dispositivo|Necessária|
+|Não Disponível para o Usuário|Desinstalação do dispositivo|Desinstalar|
+|Desinstalação do usuário|Necessário para o dispositivo|Ambos, mas o Gateway resolve como Necessário|
+|Desinstalação do usuário|Desinstalação do dispositivo|Ambos, mas o Gateway resolve como Desinstalação|
+|Necessário para o dispositivo|Desinstalação do dispositivo|Necessária|
+|Necessário e Disponível para o usuário|Disponível para o usuário|Necessária e Disponível|
+|Necessário e Disponível para o usuário|Desinstalação do usuário|Necessária e Disponível|
+|Necessário e Disponível para o usuário|Não Disponível para o Usuário|Necessária e Disponível|
+|Necessário e Disponível para o usuário|Necessário para o dispositivo|Ambos Necessário e Disponível
+|Necessário e Disponível para o usuário|Não disponível para o dispositivo|Necessária e Disponível|
+|Necessário e Disponível para o usuário|Desinstalação do dispositivo|Ambos, mas o gateway resolve como necessário. Necessário + Disponível
+|Não Disponível para o Usuário|Não disponível para o dispositivo|Não disponível|
+|Disponível para o usuário|Não disponível para o dispositivo|Disponível|
+|Necessário para o usuário|Não disponível para o dispositivo|Necessária|
+|Disponível para o Usuário Sem Registro|Necessário e disponível para o usuário|Necessária e Disponível
+|Disponível para o usuário sem registro|Necessário para o usuário|Necessária
+|Disponível para o usuário sem registro|Não disponível para o usuário|Não disponível
+|Disponível para o usuário sem registro|Disponível para o usuário|Disponível|
+|Disponível para o usuário sem registro|Necessário para o dispositivo|Necessário e Disponível sem registro|
+|Disponível para o usuário sem registro|Não disponível para o dispositivo|Disponível sem registro|
+|Disponível para o usuário sem registro|Desinstalação do dispositivo|Desinstalação e Disponível sem registro.<br>Se o usuário não instalou o aplicativo do portal da empresa, a desinstalação será cumprida.<br>Se o usuário instalar o aplicativo do portal da empresa, a instalação terá prioridade sobre a desinstalação.|
+
+>[!NOTE]
+>Apenas para aplicativos da loja do iOS gerenciados, quando você os adiciona ao Intune e os atribui como Necessários, eles são criados automaticamente com as intenções Necessária e Disponível.
+
+## Próximas etapas
+<a id="next-steps" class="xliff"></a>
 
 Consulte [Como monitorar aplicativos](apps-monitor.md) para obter informações para ajudá-lo a monitorar as atribuições de aplicativo.
-
