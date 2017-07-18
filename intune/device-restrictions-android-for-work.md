@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Android for Work no Microsoft Intune
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>Senha do perfil de trabalho
 - **Exigir Senha de Perfil de Trabalho** – (Android 7.0 e posterior com o perfil de trabalho habilitado) Defina uma política de senha que se aplica apenas aos aplicativos no perfil de trabalho. Por padrão, o usuário final tem a opção de usar os dois PINs definidos separadamente ou optar por combinar os dois PINs definidos no mais forte dos dois.
 - **Tamanho mínimo da senha** – insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**16**)
-- **Máximo de minutos de inatividade até a tela ser bloqueada** – selecione o tempo antes que um dispositivo inativo exija que um usuário insira novamente a senha do perfil de trabalho para executar um aplicativo no perfil de trabalho.
+- **Máximo de minutos de inatividade até a tela ser bloqueada** – selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
 - **Número de falhas de entrada antes de apagar o dispositivo** – insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
 - **Expiração da senha (dias)** – insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
 - **Tipo de senha necessária** - selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
 - **Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.
 - **Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis. Essa capacidade do telefone, às vezes conhecida como agente de confiança, permitirá desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está perto de uma marca NFC). Use essa configuração para impedir que os usuários configurem o Smart Lock.
+
+## <a name="next-steps"></a>Próximas etapas
+
+Use as informações no tópico [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.

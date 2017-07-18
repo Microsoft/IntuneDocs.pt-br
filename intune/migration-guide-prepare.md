@@ -1,6 +1,6 @@
 ---
 title: "Preparar o Intune para o gerenciamento de dispositivo móvel"
-description: "A finalidade deste artigo é ajudar os leitores a avaliar seus requisitos comerciais e técnicos antes de migrar para o Intune."
+description: "Avalie seus requisitos comerciais e técnicos antes de migrar para o Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,26 +13,23 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 65e3bb4b6a4e6e8dcfa1dd16738ae47758f4fb9b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Intune para o MDM (gerenciamento de dispositivo móvel)
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requisitos de gerenciamento de dispositivos móveis de sua organização. Talvez seja útil executar relatórios de usuários ativos em seu provedor de MDM atual, a fim de identificar os grupos de usuário críticos. Depois, você pode começar a responder as perguntas na [seção Avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements).
+Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requisitos de gerenciamento de dispositivos móveis de sua organização. Pode ser útil executar relatórios de usuários ativos no seu provedor de MDM atual para identificar os grupos de usuários críticos. Em seguida, você pode começar a abordar as perguntas na seção [Avaliar os requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements).
 
 ## <a name="assess-mdm-requirements"></a>Avaliar os requisitos de MDM
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>Quais os tipos de dispositivos que você precisa gerenciar?
 
--   A quais [plataformas](/intune-classic/get-started/supported-mobile-devices-and-computers) você precisa oferecer suporte?
+-   A quais [plataformas](supported-devices-browsers.md) você precisa oferecer suporte?
 
--   Os dispositivos para os quais você precisa oferecer suporte são corporativos ou BYOD?
+-   Os dispositivos para os quais você precisa dar suporte são propriedade corporativa ou pessoais?
 
 -   Qual é o tipo de conectividade usado? Wi-Fi, celular, VPN?
 
@@ -48,10 +45,9 @@ Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requ
 
 -   Quantos usuários usarão um único dispositivo?
 
--   De quais Termos de Uso você precisa?
+-   De quais termos de uso você precisa?
 
     -   Envolva o departamento jurídico o quanto antes nesta questão.
-
     -   Qual localização é necessária?
 
 -   Os usuários estão familiarizados com tecnologia e TI em geral?
@@ -60,30 +56,23 @@ Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requ
 
 -   Você precisa de criptografia no nível do dispositivo?
 
--   Comprimentos do código pin/senha do dispositivo?
+-   Quais são seus comprimentos de código PIN/senha do dispositivo atuais?
 
--   Você precisa desativar recursos do dispositivo, ou restringir determinados comportamentos do dispositivo?
+-   Você precisa desativar recursos do dispositivo, ou restringir determinados comportamentos do dispositivo? Você pode controlar várias configurações específicas à plataforma com perfis de configuração do dispositivo, por exemplo:
+      - Desabilitar a câmera
+      - Bloqueio para o modo de aplicativo único<br/>
 
-    -   Você pode controlar várias configurações específicas à plataforma com perfis de configuração do dispositivo, por exemplo: desabilitar a câmera, bloqueio no modo de aplicativo único.
-<br></br>
--   Para quais tipos de autenticação você precisa dar suportar?
-
-    -   Se você precisar da autenticação baseada em certificado, quais são os tipos de certificados que devem ser provisionados?
-
-        -   O Intune pode provisionar certificados com os perfis de acesso aos recursos dos dispositivos registrados.
-<br></br>
+-   Para quais tipos de autenticação você precisa dar suportar? Se você precisar da autenticação baseada em certificado, quais são os tipos de certificados que devem ser provisionados?
+  - O Intune pode provisionar certificados com os perfis de acesso aos recursos dos dispositivos registrados.
     -   Para qual tipo de infraestrutura de PKI (Infraestrutura de chave pública) você precisa oferecer suporte?
 <br></br>
 -   Você precisa oferecer suporte à VPN (Rede virtual privada) no nível do aplicativo ou dispositivo?
 
     -   O Intune pode provisionar as configurações de VPN para provedores de VPN de terceiros.
-<br></br>
+<br/><br/>
 -   É possível fazer exceções temporárias para certos requisitos a fim de evitar o tempo de inatividade? Ou os dispositivos com acesso sempre devem atender a todos os requisitos de segurança?
 
-## <a name="additional-information"></a>Informações adicionais
-
--   Para obter mais exemplos, veja os [estudos de caso](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores diferentes da indústria para ver como as organizações avaliaram seus requisitos de gerenciamento de dispositivos móveis.
-
 ## <a name="next-steps"></a>Próximas etapas
+Leia estes [estudos de caso](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores diferentes da indústria para ver como as organizações avaliaram seus requisitos de gerenciamento de dispositivo móvel.
 
-[Configuração Básica](migration-guide-setup.md)
+Examine a [configuração básica do Intune](migration-guide-setup.md).

@@ -1,11 +1,11 @@
 ---
 title: "Iniciar uma campanha de migração do Intune"
-description: "A finalidade deste artigo é fornecer orientações sobre como iniciar uma campanha de migração."
+description: "Este artigo fornece diretrizes de como iniciar uma campanha de migração."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,34 +13,31 @@ ms.technology:
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9690572fd5f17fece0de7b533c98bfc52d77615b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="phase-2-migration-campaign"></a>Fase 2: Campanha de migração
+# <a name="phase-2-migration-campaign"></a>Fase 2: campanha de migração
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-As organizações devem usar abordagens de migração mais adequadas às suas necessidades e ajustar as táticas de implementação com base em suas necessidades específicas. O restante deste guia fornecerá a você as ferramentas necessárias para atingir o objetivo de registrar os dispositivos de usuários no Intune.
+Escolha uma abordagem de migração mais adequada às suas necessidades e ajuste as táticas de implementação com base em seus requisitos específicos. O restante deste guia fornecerá a você as ferramentas necessárias para atingir a meta de registrar os dispositivos de usuários no Intune.
 
 ## <a name="keys-to-a-successful-migration"></a>Segredos para uma migração bem-sucedida
 
-Estas são as principais lições aprendidas durante a migração de um provedor de MDM de terceiros para o Intune:
+Estas são as chaves para migrar com êxito de um provedor de MDM de terceiros para o Intune:
 
--   A comunicação é essencial para minimizar o tempo de inatividade e a satisfação do usuário final.
+-   Comunicação clara e útil pode minimizar a insatisfação e o tempo de inatividade do usuário final.
 
 -   Tenha instruções de migração específicas e concretas.
 
--   Todos os dispositivos gerenciados devem ter seu registro cancelado no provedor de MDM existente antes do registro no Intune.
+-   Todos os dispositivos gerenciados devem ter seu registro cancelado no provedor de MDM existente antes que possam ser registrados no Intune.
 
--   Forneça aos usuários finais a orientação do provedor de MDM existente sobre como cancelar o registro de seus dispositivos.
+-   Forneça aos usuários finais a orientação do seu provedor de MDM existente sobre como cancelar o registro de seus dispositivos.
 
 -   Use uma abordagem em fases. Comece com um pequeno grupo de usuários piloto e adicione aos poucos mais grupos de usuários até atingir a implantação completa.
 
--   Monitore a carga do suporte técnico e o sucesso do registro de cada ciclo. Reserve um tempo na agenda para garantir que os critérios de sucesso possam ser avaliados para cada grupo antes de migrar o próximo. Sua implantação piloto deve validar o seguinte:
+-   Monitore o carregamento do suporte técnico e o sucesso do registro de cada ciclo. Reserve um tempo na agenda para garantir que os critérios de sucesso possam ser avaliados para cada grupo antes de migrar o próximo. Sua implantação piloto deve validar o seguinte:
 
     -   Se as taxas de êxito e falha de registro estão dentro das expectativas.
 
@@ -48,25 +45,25 @@ Estas são as principais lições aprendidas durante a migração de um provedor
 
         -   Se os recursos corporativos, como VPN, Wi-Fi, email e certificados, estão funcionando.
 
-        -   Se os aplicativos provisionados podem ser acessados.
+        -   Os aplicativos provisionados podem ser acessados.
 
     -   Segurança de dados:
 
-        -   Relatório de conformidade
+        -   O relatório de conformidade está ocorrendo.
 
-        -   Proteções de aplicativo móvel impostas
+        -   As proteções de aplicativo móvel são impostas.
 
--   Quando você estiver satisfeito com a primeira fase da migração, repita o Ciclo de migração (descrito abaixo em Ciclo típico de migração) para a próxima fase.
+Quando você estiver satisfeito com a primeira fase da migração, repita o [ciclo de migração](migration-guide-cycle.md) para a próxima fase.
 
 -   Repita os ciclos em fases até que todos os usuários sejam migrados para o Intune.
 
--   Certifique-se de que a equipe de suporte técnico esteja pronta para dar suporte a usuários finais durante toda a campanha de migração. Execute uma migração voluntária até que você possa estimar a carga de trabalho de chamada de suporte.
+-   Verifique se a equipe de suporte técnico está pronta para dar suporte a usuários finais durante toda a campanha de migração. Execute uma migração voluntária até que você possa estimar a carga de trabalho de chamada de suporte.
 
 -   Não defina prazos para o registro até que a população restante possa ser atendida por seu suporte técnico
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Não configure o Intune e sua solução existente de MDM de terceiros para aplicar os controles de acesso aos recursos, como o Exchange ou SharePoint Online. Além disso, os dispositivos só devem ser registrados em uma solução por vez.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Plano de comunicação](migration-guide-communication-plan.md)
+Crie seu [plano de comunicação](migration-guide-communication-plan.md).

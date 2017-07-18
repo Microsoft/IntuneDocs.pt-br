@@ -4,7 +4,7 @@ description: "Use este guia para ajudá-lo a ter os computadores Windows gerenc
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
 
@@ -32,6 +32,8 @@ Computadores Windows podem ser registrados instalando o software cliente do Intu
 O software cliente do Intune conta com o software mínimo necessário para registrar o PC no gerenciamento do Intune. Depois de registrar um PC, o software cliente do Intune baixa o software cliente completo que é necessário para o gerenciamento do PC.
 
 Esta série de downloads reduz o impacto sobre a largura de banda da rede e diminui o tempo necessário para registrar inicialmente o computador no Intune. Ela também garante que o cliente tenha o software mais recente disponível após a conclusão do download do segundo.
+
+Uma licença do Intune permite que a instalação do software cliente do Intune em até cinco computadores.
 
 ## <a name="download-the-intune-client-software"></a>Baixe o software cliente do Intune
 
