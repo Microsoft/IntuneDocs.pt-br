@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Como usar as políticas de configuração de aplicativo do Microsoft Intune no Android for Work
 
@@ -65,7 +65,7 @@ Você não atribui essas políticas diretamente para usuários e dispositivos. E
 
 A política será criada e aparecerá na folha da lista de políticas.
 
-Em seguida, continue a [Atribuir](apps-deploy.md) e a [Monitor](apps-monitor.md) o aplicativo como de costume.
+
 
 Quando o aplicativo atribuído é executado em um dispositivo, ele é executado com as configurações definidas na política de configuração do aplicativo.
 
@@ -89,3 +89,8 @@ Você também pode pré-configurar a permissão para que os aplicativos acessem 
 8. Para atribuir a política de configuração de aplicativo, selecione a política de configuração de aplicativo, selecione **Atribuição** e, em seguida, selecione **Selecionar grupos**.
 9. Selecione os grupos de usuários a serem atribuídos e, em seguida, escolha **Selecionar**.
 10. Escolha **Salvar** para atribuir a política.
+
+## <a name="next-steps"></a>Próximas etapas
+
+Continue a [atribuir](apps-deploy.md) e a [monitorar](apps-monitor.md) o aplicativo como de costume.
+

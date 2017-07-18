@@ -1,11 +1,11 @@
 ---
 title: "Teste e validação do Intune"
-description: "Este artigo ajudará você com todos os detalhes que precisam ser considerados ao testar e validar a solução somente na nuvem do Intune em seu ambiente."
+description: "Os detalhes que você precisa considerar quando você está testando e validando uma solução somente em nuvem do Intune em seu ambiente."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,48 +13,41 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 4ea2974c4724564cd8f9972fdb238b06d1b100e6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ddeb71c6a678ff42b5075d65c2bb4e0d89ae47f1
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+A fase de teste ocorre durante e após a fase de implementação. Você precisa testar contas, grupos e dispositivos para testar todos os cenários de TI (administrador) e de usuário final (caso de uso) exigidos que você identificou anteriormente.
 
-A fase de teste deve ser realizada durante e após a fase de implementação. Você precisará ter contas, grupos e dispositivos de teste para testar todos os cenários de TI (administrador) e de usuário final (caso de uso) necessários identificados anteriormente.
-
-É recomendável incorporar a equipe de suporte de TI/assistência técnica na fase de teste para que a documentação de suporte seja criada e a equipe de suporte de TI/assistência técnica fique satisfeita de dar suporte ao produto. Se um componente ou cenário não funcionar de acordo com os casos de uso, lembre-se de documentar as alterações necessárias e incluir o motivo da alteração.
+Recomendamos que você incorpore a equipe de suporte de TI e de assistência técnica na fase de teste para que a documentação de suporte seja criada e a equipe de suporte de TI e de assistência técnica fique satisfeita de dar suporte ao produto. Se um componente ou cenário não funcionar de acordo com os casos de uso, lembre-se de documentar as alterações necessárias e incluir o motivo da alteração.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-É recomendável documentar o seguinte:
+Recomendamos que você documente o seguinte:
 
--   **Critérios de teste:** identifica os parâmetros de comparação com os quais comparar.
+-   **Critérios de teste:** identifique os parâmetros de comparação com os quais comparar.
 
--   **Componentes de design:** deve haver, pelo menos, um critério de teste.
+-   **Componentes de design:** devem existir em pelo menos um critério de teste.
 
-Se não houver nenhum componente de design em, pelo menos, um critério de teste alinhado a um requisito ou cenário, considere se o componente de design é necessário ou não. Além disso, garanta que você tem os seguintes itens:
+Se não houver nenhum componente de design em pelo menos um critério de teste alinhado a um requisito ou cenário, considere se o componente de design é necessário ou não. Além disso, garanta que você tem os seguintes itens:
 
--   **Contas:** as contas usadas no teste devem ser contas de teste licenciadas para o EMS e o Office 365 para testar todos os cenários de caso de uso.
+-   **Contas:** as contas de teste licenciadas para o EMS e o Office 365 para testar todos os cenários de caso de uso.
 
--   **Dispositivos:** os dispositivos usados neste ponto devem ser dispositivos de teste que potencialmente possam ser apagados ou redefinidos para os padrões de fábrica.
+-   **Dispositivos:** dispositivos que podem ser apagados ou redefinidos para as configurações padrão de fábrica.
 
--   **Componentes de integração:** todos os componentes de integração (Certificate Connector, conector de serviço a serviço do Intune para o Exchange hospedado e Exchange Connector local do Intune) devem ser instalados e configurados, se necessário.
+-   **Componentes de integração:** todos os componentes de integração (Certificate Connector, conector de serviço a serviço do Intune para o Exchange hospedado e Exchange connector local do Intune) devem ser instalados e configurados, se necessário.
 
-Alterações de design podem ser necessárias para considerar problemas imprevistos. Além disso, todas as alterações de design devem ser totalmente documentadas com o motivo de cada alteração. Aqui temos um exemplo para ilustrar o que uma alteração poderia ser:
+Alterações de design podem ser necessárias para a adequação a problemas imprevistos. Além disso, todas as alterações de design devem ser totalmente documentadas com o motivo de cada alteração. Aqui temos um exemplo para ilustrar o que uma alteração poderia ser:
 
--   Você pode perceber que não atende aos requisitos do NDES (Serviço de Registro de Dispositivo de Rede) e também descobrir que os perfis de VPN e Wi-Fi podem ser configurados com uma AC raiz, atendendo aos mesmos requisitos sem uma implementação de NDES.
+<blockquote>Você percebe que não atende aos requisitos do NDES (Serviço de Registro de Dispositivo de Rede) e também descobre que os perfis de VPN e Wi-Fi podem ser configurados com uma AC raiz, atendendo aos mesmos requisitos sem uma implementação de NDES.</blockquote>
 
-Você pode enfrentar desafios ou problemas que exigem diretrizes técnicas ou uma solução de problemas especializada durante o processo de teste e validação. É recomendável buscar assistência por meio dos canais do Suporte da Microsoft.
+Você pode enfrentar desafios ou problemas que exigem diretrizes técnicas ou uma solução de problemas especializada durante o processo de teste e validação. Recomendamos que você busque assistência por meio dos canais de Suporte da Microsoft.
 
--   [Saiba como obter suporte do Intune](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
-
--   [Dicas gerais de solução de problemas para o Microsoft Intune](/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
-
--   [Saiba como obter suporte para o Microsoft Intune.](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
+-   [Saiba como obter suporte do Intune](get-support.md)
 
 -   [Contatar o suporte telefônico assistido do Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
 
@@ -66,20 +59,22 @@ A validação funcional consiste em testar cada componente e configuração para
 
 ## <a name="use-case-validation-testing"></a>Teste de validação de caso de uso
 
-O teste de validação de caso de uso deve ser realizado para verificar se os cenários estão completos e funcionais. Há dois tipos de cenários de caso de uso: administrador de TI e usuário final.
+Realize o teste de validação de caso de uso para verificar se os cenários estão completos e funcionais. Há dois tipos de cenários de caso de uso: administrador de TI e usuário final.
 
 ### <a name="it-admin"></a>Administrador de TI
 
-O teste de validação do administrador de TI deve ser realizado para validar se uma ação Administrativa executada em um dispositivo ou usuário está funcionando corretamente. Abaixo temos um exemplo de cenário de validação de ponta a ponta do administrador de TI.
+Realize o teste de validação do administrador de TI para validar se ações administrativas executadas em um dispositivo ou usuário funcionam corretamente. Abaixo temos um exemplo de cenário de validação de ponta a ponta do administrador de TI.
 
 ![Seção 9 tabela 2](./media/section-9-image-2-table.PNG)
 
 ### <a name="end-user"></a>Usuário final
 
-O teste de validação do usuário final deve ser realizado para validar se a experiência do usuário final ocorre como esperado e é apresentada corretamente em todas as comunicações com o usuário. É importante validar se a experiência do usuário final está correta, pois uma falha na validação poderá levar a taxas de adoção mais baixas e um maior volume de chamadas de assistência técnica.
+Realize o teste de validação do usuário final para validar se a experiência do usuário final ocorre como esperado e é apresentada corretamente em todas as comunicações com o usuário. É importante validar que a experiência do usuário final está correta. Se você não conseguir validar, isso poderá resultar em reduzir as taxas de adoção e volumes maiores de chamadas de assistência técnica.
 
 ![Seção 9 tabela 3](./media/section-9-image-3-table.PNG)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Agora que você testou e validou os cenários de caso de uso e funcionais do Intune, você está pronto para a distribuição de produção do Intune. Consulte [Recursos adicionais](planning-guide-resources.md) para obter mais informações.
+Agora que você testou e validou os cenários de caso de uso e funcionais do Intune, você está pronto para a [distribuição de produção do Intune](planning-guide-rollout-plan.md).
+
+Consulte [recursos adicionais](planning-guide-resources.md) para obter mais informações e modelos de planejamento.

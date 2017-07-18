@@ -1,12 +1,12 @@
 ---
 title: Configurar o Exchange Connector para o EAS local com o Intune
-titleSuffix: Intune Azure preview
-description: "Versão prévia do Intune no Azure: Exchange ActiveSync MDM – Use a ferramenta Connector para habilitar a comunicação entre o Intune e o Exchange Server local"
+titleSuffix: Intune Azure
+description: "Intune no Azure: Exchange ActiveSync MDM – Use a ferramenta Connector para habilitar a comunicação entre o Intune e o Exchange Server local"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/14/2017
 ---
-# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Configurar o Exchange Connector local do Intune na versão prévia do Microsoft Intune no Azure
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune no Azure
 
 Os ambientes do Exchange Server local podem usar o conector do Exchange local do Intune para gerenciar o acesso de dispositivos a caixas de correio do Exchange local, levando em conta se os dispositivos estão registrados no Intune e em conformidade com as políticas de conformidade do dispositivo do Intune. O Exchange Connector local também é responsável pela descoberta de dispositivos móveis que se conectam a Exchange Servers locais, com a sincronização do registro existente do EAS (Exchange Active Sync) com o Intune.
 
@@ -42,8 +42,8 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 |Sistemas operacionais|O Intune dá suporte ao Exchange Connector Local em um computador que executa qualquer edição do Windows Server 2008 SP2 64 bits, do Windows Server 2008 R2, do Windows Server 2012 ou do Windows Server 2012 R2.<br /><br />O Connector não tem suporte em instalações Server Core.|
 |Microsoft Exchange|O Connector Local requer o Microsoft Exchange 2010 SP1 ou posterior, ou o Exchange Online Dedicado herdado. Para determinar se o seu ambiente do Exchange Online Dedicated está na configuração **nova** ou **herdada**, entre em contato com seu gerente de conta.|
 |Autoridade de gerenciamento de dispositivo móvel| [Defina a autoridade de gerenciamento de dispositivo móvel para o Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
-|Hardware|O computador em que você instala o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e 10 GB de espaço livre em disco.|users-permissions-add.md
-|Sincronização do Active Directory|Antes de usar qualquer o Connector para conectar o Intune ao Exchange Server, é necessário [configurar a sincronização do Active Directory](users-permissions-add.md) para que os usuários e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
+|Hardware|O computador em que você instala o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e 10 GB de espaço livre em disco.|users-add.md
+|Sincronização do Active Directory|Antes de usar qualquer o Connector para conectar o Intune ao Exchange Server, é necessário [configurar a sincronização do Active Directory](users-add.md) para que os usuários e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
 |Software adicional|Uma instalação completa do Microsoft .NET Framework 4.5 e do Windows PowerShell 2.0 deve ser feita no computador que hospeda o conector.|
 |Rede|O computador no qual o conector será instalado deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />O computador precisa de configurações para habilitá-lo a acessar o serviço Intune por meio dos firewalls e servidores proxy por Portas 80 e 443. Os domínios usados pelo Intune incluem manage.microsoft.com, &#42;manage.microsoft.com e &#42;.manage.microsoft.com.|
 

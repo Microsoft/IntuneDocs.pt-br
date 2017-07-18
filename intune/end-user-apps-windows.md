@@ -14,11 +14,11 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c503539679ec0b3e0326048743b9fd64eaa4a99b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 68b02a52dce49db470b11cbdf32308a74688ca45
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Como os usuários Windows podem obter aplicativos
 
@@ -35,5 +35,5 @@ Os **aplicativos gerenciados** podem ser gerenciados por meio de políticas e fo
 Os **aplicativos não gerenciados** podem ser gerenciados por meio de políticas e não foram encapsulados pelo Intune ou não incorporam o SDK do MAM do Intune. Políticas de aplicativo que não podem ser aplicadas a esses aplicativos.
 
 ### <a name="see-also"></a>Consulte também
-[Como os usuários do Android podem obter aplicativos](end-user-apps-android.md)</br>
-[Como usuários do iOS podem obter aplicativos](end-user-apps-android.md)
+[Como os usuários Android podem obtém aplicativos](end-user-apps-android.md)
+[Como os usuários iOS obtêm os aplicativos deles](end-user-apps-android.md)
