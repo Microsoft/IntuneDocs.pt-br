@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/11/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 560ce922fa58e759157358c6b7348fe0388ce408
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis
-<a id="compare-managing-windows-pcs-as-computers-or-mobile-devices" class="xliff"></a>
+# <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -41,12 +40,11 @@ As organizações podem usar o Microsoft Intune para gerenciar computadores Wind
 |**Política de Firewall do Windows**|Disponível <br>[Ajude a proteger Computadores Windows usando políticas de Firewall do Windows](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |Não disponível|
 |**Proteção antimalware**|Endpoint Protection<br>[Ajudar a proteger computadores Windows com o Endpoint Protection](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Configurações do Windows Defender](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
 |**Assistência remota** |TeamViewer<br>[Solicitar e fornecer assistência remota para computadores Windows](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|Não disponível |
-|**Implantação de aplicativo** | Não disponível para a Microsoft Store para Empresas,<br>somente .exe, .appx e .msi de vários arquivos<br>[Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Disponível para aplicativos da Microsoft Store e aplicativos de linha de negócios<br>[Como adicionar aplicativos da Windows Store](https://docs.microsoft.com/intune-azure/manage-apps/windows-store-app)<br>Implantação de aplicativos da Microsoft e aplicativos Win32 em breve |
+|**Implantação de aplicativo** | Não disponível para a Microsoft Store para Empresas,<br>somente .exe, .appx e .msi de vários arquivos<br>[Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Disponível para aplicativos da Microsoft Store e aplicativos de linha de negócios<br>[Como adicionar aplicativos da Windows Store](https://docs.microsoft.com/intune/store-apps-windows)<br>[Como adicionar aplicativos LOB (aplicativos de linha de negócios) do Windows](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**Proteção de aplicativo**|Não disponível|Disponível <br>[O que são políticas de proteção do aplicativo?](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
 
 
-### Vantagens do gerenciamento MDM de computadores Windows
-<a id="advantages-of-mdm-windows-pc-management" class="xliff"></a>
+### <a name="advantages-of-mdm-windows-pc-management"></a>Vantagens do gerenciamento MDM de computadores Windows
 O gerenciamento de computadores Windows com o moderno gerenciamento de dispositivo móvel apresenta as seguintes vantagens:
 - **Escalabilidade** – o gerenciamento MDM é dimensionado com gerenciamento de nuvem do Intune. O cliente de software do Intune é limitado a 7.000 computadores.
 - **Simplicidade** – usa funcionalidades de gerenciamento modernas incluídas no sistema operacional sem depender do download de um cliente de software

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,25 +14,26 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 716e3163156538723c5d0433c65ac64e85156c6a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/14/2017
 ---
-# Fazer logoff do usuário atual em dispositivos iOS gerenciados pelo Intune
-<a id="logout-the-current-user-on-intune-managed-ios-devices" class="xliff"></a>
+# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Fazer logoff do usuário atual em dispositivos iOS gerenciados pelo Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-A ação **Fazer logoff do usuário atual** faz logoff do usuário atual do dispositivo iOS escolhido.
+A ação **Fazer Logoff do Usuário Atual** registra o usuário atual em um dispositivo iPad compartilhado que foi configurado para gerenciar o aplicativo Classroom para iOS com um [perfil de educação do iOS](education-settings-configure-ios.md). 
 
 1.  Entre no portal do Azure.
 2.  Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3.  Na folha **Intune**, escolha **Dispositivos**.
 4.  Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
 5.  Na lista de dispositivos gerenciados, escolha um dispositivo iOS e, em seguida, selecione a ação remota do dispositivo **Fazer logoff do usuário atual**.
+
+## <a name="next-steps"></a>Próximas etapas
 
 Para ver o status da ação que você acabou de realizar, na folha **Dispositivos e grupos**, escolha **Ações de Dispositivo**.
