@@ -15,19 +15,20 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1354d3170f007af2a4bf7f5b2f233a186175c621
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c6b05522c7390acb3974e088ecd60d13db46ef5a
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
-# Criar uma política de conformidade de dispositivo de MTD (Defesa contra Ameaças Móveis) com o Intune
-<a id="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune" class="xliff"></a>
+# <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar uma política de conformidade de dispositivo de MTD (Defesa contra Ameaças Móveis) com o Intune
+
+> [!NOTE] 
+> Este tópico se aplica a todos os parceiros de Defesa contra Ameaças Móveis.
 
 O Intune com MTD ajuda a detectar ameaças e avaliar os riscos em dispositivos móveis. Você pode criar uma regra de política de conformidade do dispositivo Intune que avalia o risco para determinar se o dispositivo está em conformidade ou não. Em seguida, é possível usar uma política de acesso condicional para bloquear o acesso a serviços de acordo com a conformidade do dispositivo.
 
-## Antes de começar
-<a id="before-you-begin" class="xliff"></a>
+## <a name="before-you-begin"></a>Antes de começar
 
 Como parte da configuração de MTD, no console do parceiro de MTD, foi criada uma política que classifica diversas ameaças como os níveis alto, médio e baixo. Agora é necessário definir o nível de Defesa conta Ameaças Móveis na política de conformidade de dispositivo Intune.
 
@@ -37,8 +38,7 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 
 -   Habilitar o conector do MTD no Intune
 
-## Para criar uma política de conformidade de dispositivo MTD
-<a id="to-create-a-mtd-device-compliance-policy" class="xliff"></a>
+## <a name="to-create-a-mtd-device-compliance-policy"></a>Para criar uma política de conformidade de dispositivo MTD
 
 1.  Vá para o [Portal do Azure](https://portal.azure.com/) e entre com suas credenciais do Intune.
 
@@ -60,15 +60,14 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 
     c.  **Médio**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
 
-    d.  **Alto**: esta é a opção menos segura. Isso permite todos os níveis de ameaça e usa a Defesa contra Ameaças Móveis do Skycure apenas para fins de relatório.
+    d.  **Alto**: esta é a opção menos segura. Isso permite todos os níveis de ameaça e usa a Defesa contra Ameaças Móveis apenas para fins de relatório. É necessário ativar a MTD do aplicativo com esta configuração nos dispositivos.
 
 8.  Clique em **OK** duas vezes e escolha **Criar**.
 
 > [!IMPORTANT]
 > Se você criar políticas de acesso condicional para o Office 365 ou outros serviços, essa avaliação de conformidade do dispositivo será avaliada e os dispositivos que não estiverem em conformidade serão impedidos de acessar os recursos corporativos até que a ameaça seja resolvida no dispositivo.
 
-## Atribuir uma política de conformidade de dispositivo MTD
-<a id="to-assign-a-mtd-device-compliance-policy" class="xliff"></a>
+## <a name="to-assign-a-mtd-device-compliance-policy"></a>Atribuir uma política de conformidade de dispositivo MTD
 
 Para atribuir uma política de conformidade de dispositivo aos usuários, escolha uma política previamente configurada por você. As políticas existentes podem ser encontradas na folha **Políticas de conformidade de dispositivo**.
 

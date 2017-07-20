@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,13 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# Como adicionar um aplicativo no Microsoft Intune
-<a id="how-to-add-an-app-to-microsoft-intune" class="xliff"></a>
+# <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar um aplicativo no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -47,16 +46,14 @@ Há suporte para as seguintes plataformas.
 >[!TIP]
 > Um aplicativo LOB (ou de linha de negócios) é aquele que você instala do arquivo de instalação, em vez de instalar de uma loja de aplicativos. Por exemplo, para instalar um aplicativo LOB para iOS, adicione o respectivo arquivo morto cuja extensão seja .ipa. Normalmente, são aplicativos que você tem gravados internamente.
 
-## Antes de começar
-<a id="before-you-start" class="xliff"></a>
+## <a name="before-you-start"></a>Antes de começar
 
 Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativos.
 
 - Quando você adiciona e atribui um aplicativo de uma loja, os usuários finais devem ter uma conta nessa loja para poder instalar o aplicativo.
 - Alguns aplicativos ou itens que você atribui podem ser dependentes de aplicativos internos do iOS. Por exemplo, quando você atribui um livro da iOS Store, o aplicativo iBooks deve estar presente no dispositivo. Se você tiver removido o aplicativo interno iBooks, não será possível usar o Intune para reabilitá-lo.
 
-## Espaço de armazenamento em nuvem
-<a id="cloud-storage-space" class="xliff"></a>
+## <a name="cloud-storage-space"></a>Espaço de armazenamento em nuvem
 Todos os aplicativos que você cria usando o tipo de instalação do instalador do software (por exemplo, um aplicativo LOB) são empacotados e carregados no armazenamento em nuvem do Microsoft Intune. Uma assinatura de avaliação do Intune inclui 2 GB de armazenamento baseado em nuvem que é usado para armazenar aplicativos gerenciados e atualizações. A assinatura completa inclui 20 GB de espaço de armazenamento.
 
 Você pode adquirir armazenamento adicional para o Intune usando seu método de compra original.  Se você paga por cartão de crédito ou fatura, visite o [portal de Gerenciamento de Assinatura](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Caso contrário, entre em contato com seu parceiro ou associado de vendas.
@@ -66,8 +63,7 @@ Os requisitos de espaço de armazenamento em nuvem são os seguintes:
 -   Todos os arquivos de instalação do aplicativo devem estar na mesma pasta.
 -   O tamanho máximo do arquivo para qualquer arquivo que você carregar é de 2 GB.
 
-## Como criar e editar categorias para aplicativos
-<a id="how-to-create-and-edit-categories-for-apps" class="xliff"></a>
+## <a name="how-to-create-and-edit-categories-for-apps"></a>Como criar e editar categorias para aplicativos
 
 As categorias de aplicativo podem ser usadas para ajudar a classificar aplicativos para que os usuários possam encontrá-los com mais facilidade no portal da empresa. Você pode atribuir uma ou mais categorias a um aplicativo, por exemplo, **Aplicativos de desenvolvedor** ou **Aplicativos de comunicação**.
 Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a categoria desejada. Use os tópicos específicos da plataforma para adicionar um aplicativo e atribuir categorias. Para criar e editar suas próprias categorias, use o procedimento a seguir:
@@ -81,40 +77,13 @@ Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a c
     - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...** “. Na folha **Propriedades**, você pode inserir um novo nome para a categoria ou excluí-la.
 
 
-## Aplicativos adicionados automaticamente pelo Intune
-<a id="apps-added-automatically-by-intune" class="xliff"></a>
+## <a name="apps-added-automatically-by-intune"></a>Aplicativos adicionados automaticamente pelo Intune
 
-Os aplicativos a seguir, publicados pela Microsoft, estão internos ao Intune e estão prontos para atribuição:
+Antes, o Intune incluía vários aplicativos internos que você podia atribuir rapidamente. Com base em seus comentários, removemos esta lista e você não precisa mais conferir os aplicativos internos.
+No entanto, se você já atribuiu aplicativos internos, eles ainda estarão visíveis na lista de aplicativos. Você pode continuar a atribuir esses aplicativos conforme necessário.
+Planejamos adicionar um método mais fácil para selecionar e atribuir aplicativos internos no portal Microsoft Intune, em um lançamento posterior.
 
-|||
-|-|-|
-|Nome|Plataforma|Tipo de aplicativo|
-|Azure Information Protection|Android|Aplicativo gerenciado da loja do Android|
-|Dynamics CRM para telefones|Android|Aplicativo gerenciado da loja do Android|
-|Dynamics CRM para tablets|Android|Aplicativo gerenciado da loja do Android|
-|Excel|iOS|Aplicativo gerenciado de loja do iOS|
-|Excel|Android|Aplicativo gerenciado da loja do Android|
-|Managed Browser|Android|Aplicativo gerenciado da loja do Android|
-|Managed Browser|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Dynamics CRM em telefones|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Dynamics CRM em tablets|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Power BI|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft Power BI|Android|Aplicativo gerenciado da loja do Android|
-|Microsoft SharePoint|iOS|Aplicativo gerenciado de loja do iOS|
-|Microsoft SharePoint|Android|Aplicativo gerenciado da loja do Android|
-|Microsoft Teams|Android|Aplicativo gerenciado da loja do Android|
-|Microsoft Teams|iOS|Aplicativo gerenciado de loja do iOS|
-|OneDrive|iOS|Aplicativo gerenciado de loja do iOS|
-|OneDrive|Android|Aplicativo gerenciado da loja do Android|
-|OneNote|iOS|Aplicativo gerenciado de loja do iOS|
-|Outlook|Android|Aplicativo gerenciado da loja do Android|
-|Outlook|iOS|Aplicativo gerenciado de loja do iOS|
-|Outlook Groups|Android|Aplicativo gerenciado da loja do Android|
-|Outlook Groups|iOS|Aplicativo gerenciado de loja do iOS|
-|PowerPoint|iOS|Aplicativo gerenciado de loja do iOS|
-
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Escolha um dos tópicos a seguir para saber como adicionar aplicativos para cada plataforma no Microsoft Intune:
 

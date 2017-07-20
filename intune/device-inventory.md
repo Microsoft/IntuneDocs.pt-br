@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/25/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dae92c117bcf8a4a8ff133ed613f9f77ea0c07c2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# Como exibir o inventário de dispositivo do Intune
-<a id="how-to-view-intune-device-inventory" class="xliff"></a>
+# <a name="how-to-view-intune-device-inventory"></a>Como exibir o inventário de dispositivo do Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -45,9 +44,13 @@ Agora, selecione uma das seguintes opções:
     ![Inventário de hardware de dispositivo gerenciado](./media/hardware-inventory.png)
     - **Aplicativos descobertos** – Exibe uma lista de todos os aplicativos que o Intune encontrou instalados no dispositivo.
     ![Nó Aplicativos descobertos](./media/detected-applications.png)
+    
+
+
     - **Conformidade do dispositivo** – Exibe o estado de conformidade de todas as políticas de conformidade que foram atribuídas ao dispositivo.
     - **Configuração do dispositivo** – Exibe o estado de conformidade de todas as políticas de configuração do dispositivo que foram atribuídas a ele.
 - **Monitorar** Escolha **Ações de Dispositivo** para ver uma lista de ações de dispositivo que foram realizadas em dispositivos gerenciados por você, bem como o estado atual dessas ações.
 - **Instalação** > **Conector do TeamViewer** – Permite configurar a administração remota em dispositivos que usam o software do TeamViewer. Para ver mais detalhes, consulte [Fornecer assistência remota para dispositivos Android gerenciados pelo Intune](/intune/device-profile-android-teamviewer).
 
-
+>[!NOTE]
+> O Intune coleta o inventário de aplicativos apenas em dispositivos de propriedade da empresa. Os aplicativos não são inventariados nos dispositivos pessoais. No caso de PCs com Windows 10, o Intune coleta apenas um inventário de aplicativos modernos em dispositivos de propriedade da empresa. O Intune não coleta informações sobre aplicativos Win32 no dispositivo.
