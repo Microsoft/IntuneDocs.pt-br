@@ -20,90 +20,101 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="prepare-line-of-business-apps-for-mam"></a>Preparar a linha de aplicativos de negócios para o MAM
+# <span data-ttu-id="41604-103">Preparar a linha de aplicativos de negócios para o MAM</span><span class="sxs-lookup"><span data-stu-id="41604-103">Prepare line of business apps for MAM</span></span>
+<a id="prepare-line-of-business-apps-for-mam" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Você pode habilitar seus aplicativos para usar políticas de MAM (gerenciamento de aplicativo móvel) usando a Ferramenta de Encapsulamento de Aplicativo do Intune ou o SDK de Aplicativo do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
+<span data-ttu-id="41604-104">Você pode habilitar seus aplicativos para usar políticas de MAM (gerenciamento de aplicativo móvel) usando a Ferramenta de Encapsulamento de Aplicativo do Intune ou o SDK de Aplicativo do Intune.</span><span class="sxs-lookup"><span data-stu-id="41604-104">You can enable your apps to use mobile application management (MAM) policies by using either the Intune App Wrapping Tool or the Intune App SDK.</span></span> <span data-ttu-id="41604-105">Use essas informações para saber mais sobre esses dois métodos e quando usá-los.</span><span class="sxs-lookup"><span data-stu-id="41604-105">Use this information to learn about these two methods and when to use them.</span></span>
 
-## <a name="intune-app-wrapping-tool"></a>Ferramenta de Encapsulamento de Aplicativo do Intune
-A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos internos de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper em torno do aplicativo, o que permite que o aplicativo seja gerenciado por uma política de MAM do Intune.
+## <span data-ttu-id="41604-106">Ferramenta de Encapsulamento de Aplicativo do Intune</span><span class="sxs-lookup"><span data-stu-id="41604-106">Intune App Wrapping Tool</span></span>
+<a id="intune-app-wrapping-tool" class="xliff"></a>
+<span data-ttu-id="41604-107">A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos internos de linha de negócios (LOB).</span><span class="sxs-lookup"><span data-stu-id="41604-107">The App Wrapping Tool is used primarily for internal line-of-business (LOB) apps.</span></span> <span data-ttu-id="41604-108">A ferramenta é um aplicativo de linha de comando que cria um wrapper em torno do aplicativo, o que permite que o aplicativo seja gerenciado por uma política de MAM do Intune.</span><span class="sxs-lookup"><span data-stu-id="41604-108">The tool is a command line application that creates a wrapper around the app, which then allows the app to be managed by an Intune MAM policy.</span></span>
 
-O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura.  Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da Ferramenta de Disposição de Aplicativo, consulte [Ferramenta de Disposição do Aplicativo Android ](app-wrapper-prepare-android.md) e [Ferramenta de Disposição do Aplicativo iOS](app-wrapper-prepare-ios.md).
+<span data-ttu-id="41604-109">O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura.</span><span class="sxs-lookup"><span data-stu-id="41604-109">You don't need the source code to use the tool, but you do need signing credentials.</span></span>  <span data-ttu-id="41604-110">Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).</span><span class="sxs-lookup"><span data-stu-id="41604-110">For more about signing credentials, see the [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).</span></span> <span data-ttu-id="41604-111">Para obter a documentação da Ferramenta de Disposição de Aplicativo, consulte [Ferramenta de Disposição do Aplicativo Android ](app-wrapper-prepare-android.md) e [Ferramenta de Disposição do Aplicativo iOS](app-wrapper-prepare-ios.md).</span><span class="sxs-lookup"><span data-stu-id="41604-111">For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](app-wrapper-prepare-android.md) and [iOS App Wrapping Tool](app-wrapper-prepare-ios.md).</span></span>
 
-A Ferramenta de Disposição de Aplicativo **não** dá suporte a aplicativos da App Store da Apple ou da Google Play Store. Ele também não dá suporte a alguns recursos que exigem integração do desenvolvedor (consulte a tabela de comparação de recursos a seguir).
-
-
-Para obter mais informações sobre a Ferramenta de Disposição de Aplicativo para MAM em dispositivos que não estão registrados no Intune, consulte [Proteger dados e aplicativos de linha de negócios em dispositivos não registrados no Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
-
-### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para usar a Ferramenta de Encapsulamento de Aplicativos:
-* Seu aplicativo não tem recursos internos de proteção de dados.
-* Seu aplicativo é simples.
-* Seu aplicativo é implantado internamente.
-* Você não tem acesso ao código-fonte do aplicativo
-* Você não desenvolveu o aplicativo.
-* Seu aplicativo tem experiências de autenticação mínimas do usuário.
+<span data-ttu-id="41604-112">A Ferramenta de Disposição de Aplicativo **não** dá suporte a aplicativos da App Store da Apple ou da Google Play Store.</span><span class="sxs-lookup"><span data-stu-id="41604-112">The App Wrapping Tool does **not** support apps in the Apple App Store or Google Play Store.</span></span> <span data-ttu-id="41604-113">Ele também não dá suporte a alguns recursos que exigem integração do desenvolvedor (consulte a tabela de comparação de recursos a seguir).</span><span class="sxs-lookup"><span data-stu-id="41604-113">It also doesn't support certain features that require developer integration (see the following feature comparison table).</span></span>
 
 
-### <a name="supported-app-development-platforms"></a>Plataformas de desenvolvimento de aplicativo com suporte
+<span data-ttu-id="41604-114">Para obter mais informações sobre a Ferramenta de Disposição de Aplicativo para MAM em dispositivos que não estão registrados no Intune, consulte [Proteger dados e aplicativos de linha de negócios em dispositivos não registrados no Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).</span><span class="sxs-lookup"><span data-stu-id="41604-114">For more information about the App Wrapping Tool for MAM on devices that are not enrolled in Intune, see [Protect line of business apps and data on devices not enrolled in Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).</span></span>
 
-|**Ferramenta de Disposição de Aplicativo** | **Xamarin** |**Cordova** |
+### <span data-ttu-id="41604-115">Motivos para usar a Ferramenta de Encapsulamento de Aplicativos:</span><span class="sxs-lookup"><span data-stu-id="41604-115">Reasons to use the App Wrapping Tool:</span></span>
+<a id="reasons-to-use-the-app-wrapping-tool" class="xliff"></a>
+* <span data-ttu-id="41604-116">Seu aplicativo não tem recursos internos de proteção de dados.</span><span class="sxs-lookup"><span data-stu-id="41604-116">Your app does not have built-in data protection features.</span></span>
+* <span data-ttu-id="41604-117">Seu aplicativo é simples.</span><span class="sxs-lookup"><span data-stu-id="41604-117">Your app is simple.</span></span>
+* <span data-ttu-id="41604-118">Seu aplicativo é implantado internamente.</span><span class="sxs-lookup"><span data-stu-id="41604-118">Your app is deployed internally.</span></span>
+* <span data-ttu-id="41604-119">Você não tem acesso ao código-fonte do aplicativo</span><span class="sxs-lookup"><span data-stu-id="41604-119">You don't have access to the app's source code</span></span>
+* <span data-ttu-id="41604-120">Você não desenvolveu o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="41604-120">You didn't develop the app.</span></span>
+* <span data-ttu-id="41604-121">Seu aplicativo tem experiências de autenticação mínimas do usuário.</span><span class="sxs-lookup"><span data-stu-id="41604-121">Your app has minimal user authentication experiences.</span></span>
+
+
+### <span data-ttu-id="41604-122">Plataformas de desenvolvimento de aplicativo com suporte</span><span class="sxs-lookup"><span data-stu-id="41604-122">Supported app development platforms</span></span>
+<a id="supported-app-development-platforms" class="xliff"></a>
+
+|<span data-ttu-id="41604-123">**Ferramenta de Disposição de Aplicativo**</span><span class="sxs-lookup"><span data-stu-id="41604-123">**App Wrapping Tool**</span></span> | <span data-ttu-id="41604-124">**Xamarin**</span><span class="sxs-lookup"><span data-stu-id="41604-124">**Xamarin**</span></span> |<span data-ttu-id="41604-125">**Cordova**</span><span class="sxs-lookup"><span data-stu-id="41604-125">**Cordova**</span></span> |
 |------|----|----|
-|**iOS** |Sim|Sim|
-|**Android**| Não |Sim|
+|<span data-ttu-id="41604-126">**iOS**</span><span class="sxs-lookup"><span data-stu-id="41604-126">**iOS**</span></span> |<span data-ttu-id="41604-127">Sim</span><span class="sxs-lookup"><span data-stu-id="41604-127">Yes</span></span>|<span data-ttu-id="41604-128">Sim</span><span class="sxs-lookup"><span data-stu-id="41604-128">Yes</span></span>|
+|<span data-ttu-id="41604-129">**Android**</span><span class="sxs-lookup"><span data-stu-id="41604-129">**Android**</span></span>| <span data-ttu-id="41604-130">Não</span><span class="sxs-lookup"><span data-stu-id="41604-130">No</span></span> |<span data-ttu-id="41604-131">Sim</span><span class="sxs-lookup"><span data-stu-id="41604-131">Yes</span></span>|
 
-## <a name="intune-app-sdk"></a>SDK do Aplicativo do Intune
-O SDK do Aplicativo é projetado principalmente para clientes que têm aplicativos na App Store da Apple e/ou na Google Play Store e desejam gerenciar os aplicativos com o Intune. No entanto, qualquer aplicativo pode tirar proveito da integração do SDK, até mesmo aplicativos de linha de negócios.
+## <span data-ttu-id="41604-132">SDK do Aplicativo do Intune</span><span class="sxs-lookup"><span data-stu-id="41604-132">Intune App SDK</span></span>
+<a id="intune-app-sdk" class="xliff"></a>
+<span data-ttu-id="41604-133">O SDK do Aplicativo é projetado principalmente para clientes que têm aplicativos na App Store da Apple e/ou na Google Play Store e desejam gerenciar os aplicativos com o Intune.</span><span class="sxs-lookup"><span data-stu-id="41604-133">The App SDK is designed mainly for customers who have apps in the Apple App Store or Google Play Store, and want to be able to manage the apps with Intune.</span></span> <span data-ttu-id="41604-134">No entanto, qualquer aplicativo pode tirar proveito da integração do SDK, até mesmo aplicativos de linha de negócios.</span><span class="sxs-lookup"><span data-stu-id="41604-134">However, any app can take advantage of integrating the SDK, even line-of-business apps.</span></span>
 
-Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começar a usar o SDK, consulte [Getting Started With the Microsoft Intune App SDK](app-sdk-get-started.md) (Introdução ao SDK de Aplicativo do Microsoft Intune).
+<span data-ttu-id="41604-135">Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md).</span><span class="sxs-lookup"><span data-stu-id="41604-135">To learn more about the SDK, see the [Overview](app-sdk.md).</span></span> <span data-ttu-id="41604-136">Para começar a usar o SDK, consulte [Getting Started With the Microsoft Intune App SDK](app-sdk-get-started.md) (Introdução ao SDK de Aplicativo do Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="41604-136">To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](app-sdk-get-started.md).</span></span>
 
-### <a name="reasons-to-use-the-sdk"></a>Motivos para usar o SDK
-* Seu aplicativo não tem recursos internos de proteção de dados.
-* Seu aplicativo é complexo e contém muitas experiências.
-* Seu aplicativo é implantado em uma loja de aplicativos pública, como Google Play ou App Store da Apple.
-* Você é um desenvolvedor de aplicativos e tem experiência técnica para usar o SDK.
-* Seu aplicativo tem outras integrações de SDK.
-* Seu aplicativo é atualizado com frequência.
+### <span data-ttu-id="41604-137">Motivos para usar o SDK</span><span class="sxs-lookup"><span data-stu-id="41604-137">Reasons to use the SDK</span></span>
+<a id="reasons-to-use-the-sdk" class="xliff"></a>
+* <span data-ttu-id="41604-138">Seu aplicativo não tem recursos internos de proteção de dados.</span><span class="sxs-lookup"><span data-stu-id="41604-138">Your app does not have built-in data protection features.</span></span>
+* <span data-ttu-id="41604-139">Seu aplicativo é complexo e contém muitas experiências.</span><span class="sxs-lookup"><span data-stu-id="41604-139">Your app is complex and contains many experiences.</span></span>
+* <span data-ttu-id="41604-140">Seu aplicativo é implantado em uma loja de aplicativos pública, como Google Play ou App Store da Apple.</span><span class="sxs-lookup"><span data-stu-id="41604-140">Your app is deployed on a public app store such as Google Play or Apple's App Store.</span></span>
+* <span data-ttu-id="41604-141">Você é um desenvolvedor de aplicativos e tem experiência técnica para usar o SDK.</span><span class="sxs-lookup"><span data-stu-id="41604-141">You are an app developer and have the technical background to use the SDK.</span></span>
+* <span data-ttu-id="41604-142">Seu aplicativo tem outras integrações de SDK.</span><span class="sxs-lookup"><span data-stu-id="41604-142">Your app has other SDK integrations.</span></span>
+* <span data-ttu-id="41604-143">Seu aplicativo é atualizado com frequência.</span><span class="sxs-lookup"><span data-stu-id="41604-143">Your app is frequently updated.</span></span>
 
-### <a name="supported-app-development-platforms"></a>Plataformas de desenvolvimento de aplicativo com suporte
+### <span data-ttu-id="41604-144">Plataformas de desenvolvimento de aplicativo com suporte</span><span class="sxs-lookup"><span data-stu-id="41604-144">Supported app development platforms</span></span>
+<a id="supported-app-development-platforms" class="xliff"></a>
 
-|**SDK do Aplicativo do Intune** |**Xamarin** |**Cordova**
+|<span data-ttu-id="41604-145">**SDK do Aplicativo do Intune**</span><span class="sxs-lookup"><span data-stu-id="41604-145">**Intune App SDK**</span></span> |<span data-ttu-id="41604-146">**Xamarin**</span><span class="sxs-lookup"><span data-stu-id="41604-146">**Xamarin**</span></span> |<span data-ttu-id="41604-147">**Cordova**</span><span class="sxs-lookup"><span data-stu-id="41604-147">**Cordova**</span></span>
 |------|----|----|
-|**iOS**|Sim – usar o [Componente Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
-|**Android**| Sim – usar o [Componente Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
+|<span data-ttu-id="41604-148">**iOS**</span><span class="sxs-lookup"><span data-stu-id="41604-148">**iOS**</span></span>|<span data-ttu-id="41604-149">Sim – usar o [Componente Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).</span><span class="sxs-lookup"><span data-stu-id="41604-149">Yes – use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).</span></span>|<span data-ttu-id="41604-150">Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).</span><span class="sxs-lookup"><span data-stu-id="41604-150">Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).</span></span>|
+|<span data-ttu-id="41604-151">**Android**</span><span class="sxs-lookup"><span data-stu-id="41604-151">**Android**</span></span>| <span data-ttu-id="41604-152">Sim – usar o [Componente Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).</span><span class="sxs-lookup"><span data-stu-id="41604-152">Yes - use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).</span></span>|<span data-ttu-id="41604-153">Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).</span><span class="sxs-lookup"><span data-stu-id="41604-153">Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).</span></span>|
 
-## <a name="feature-comparison"></a>Comparação de recursos
-Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
+## <span data-ttu-id="41604-154">Comparação de recursos</span><span class="sxs-lookup"><span data-stu-id="41604-154">Feature comparison</span></span>
+<a id="feature-comparison" class="xliff"></a>
+<span data-ttu-id="41604-155">Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.</span><span class="sxs-lookup"><span data-stu-id="41604-155">This table lists the settings that you can use for the App SDK and App Wrapping Tool.</span></span>
 
 > [!NOTE]
-> A Ferramenta de Disposição de Aplicativo só pode ser usada quando você estiver usando o Intune autônomo ou o Intune com o Configuration Manager.
+> <span data-ttu-id="41604-156">A Ferramenta de Disposição de Aplicativo só pode ser usada quando você estiver usando o Intune autônomo ou o Intune com o Configuration Manager.</span><span class="sxs-lookup"><span data-stu-id="41604-156">The App Wrapping Tool can be used with Intune standalone or Intune with Configuration Manager.</span></span>
 
-|Recurso|SDK do Aplicativo|Ferramenta de Encapsulamento de Aplicativo|
+|<span data-ttu-id="41604-157">Recurso</span><span class="sxs-lookup"><span data-stu-id="41604-157">Feature</span></span>|<span data-ttu-id="41604-158">SDK do Aplicativo</span><span class="sxs-lookup"><span data-stu-id="41604-158">App SDK</span></span>|<span data-ttu-id="41604-159">Ferramenta de Encapsulamento de Aplicativo</span><span class="sxs-lookup"><span data-stu-id="41604-159">App Wrapping Tool</span></span>|
 |-----------|---------------------|-----------|
-|Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo|X|X|
-|Evitar backups do Android, iTunes ou iCloud|X|X|
-|Permitir que o aplicativo transfira dados para outros aplicativos|X|X|
-|Permitir que o aplicativo receba dados de outros aplicativos|X|X|
-|Restringir recortar, copiar e colar com outros aplicativos|X|X|
-|Solicitar PIN simples para acesso|X|X|
-|Substituir o PIN do aplicativo interno pelo PIN do Intune|X||
-|Especificar o número de tentativas antes da redefinição do PIN|X|X|
-|Permitir a impressão digital em vez do PIN |X|X|
-|Exigir credenciais corporativas para acesso|X|X|
-|Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root|X|X|
-|Criptografar dados do aplicativo|X|X|
-|Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos|X|X|
-|Especificar o período de cortesia offline|X|X|
-|Bloquear captura de tela (somente para Android)|X|X|
-|Suporte para MAM sem registro de dispositivo|X|X|
-|Apagamento completo|X|X|
-|Apagamento seletivo <br></br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
-|Impedir "Salvar como" |X||
-|Configuração de aplicativo direcionado |X||
-|Suporte para múltiplas identidades|X||
-|Estilo Personalizável |X|||
-### <a name="see-also"></a>Consulte também
+|<span data-ttu-id="41604-160">Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo</span><span class="sxs-lookup"><span data-stu-id="41604-160">Restrict web content to display in a corporate managed browser</span></span>|<span data-ttu-id="41604-161">X</span><span class="sxs-lookup"><span data-stu-id="41604-161">X</span></span>|<span data-ttu-id="41604-162">X</span><span class="sxs-lookup"><span data-stu-id="41604-162">X</span></span>|
+|<span data-ttu-id="41604-163">Evitar backups do Android, iTunes ou iCloud</span><span class="sxs-lookup"><span data-stu-id="41604-163">Prevent Android, iTunes or iCloud backups</span></span>|<span data-ttu-id="41604-164">X</span><span class="sxs-lookup"><span data-stu-id="41604-164">X</span></span>|<span data-ttu-id="41604-165">X</span><span class="sxs-lookup"><span data-stu-id="41604-165">X</span></span>|
+|<span data-ttu-id="41604-166">Permitir que o aplicativo transfira dados para outros aplicativos</span><span class="sxs-lookup"><span data-stu-id="41604-166">Allow app to transfer data to other apps</span></span>|<span data-ttu-id="41604-167">X</span><span class="sxs-lookup"><span data-stu-id="41604-167">X</span></span>|<span data-ttu-id="41604-168">X</span><span class="sxs-lookup"><span data-stu-id="41604-168">X</span></span>|
+|<span data-ttu-id="41604-169">Permitir que o aplicativo receba dados de outros aplicativos</span><span class="sxs-lookup"><span data-stu-id="41604-169">Allow app to receive data from other apps</span></span>|<span data-ttu-id="41604-170">X</span><span class="sxs-lookup"><span data-stu-id="41604-170">X</span></span>|<span data-ttu-id="41604-171">X</span><span class="sxs-lookup"><span data-stu-id="41604-171">X</span></span>|
+|<span data-ttu-id="41604-172">Restringir recortar, copiar e colar com outros aplicativos</span><span class="sxs-lookup"><span data-stu-id="41604-172">Restrict cut, copy and paste with other apps</span></span>|<span data-ttu-id="41604-173">X</span><span class="sxs-lookup"><span data-stu-id="41604-173">X</span></span>|<span data-ttu-id="41604-174">X</span><span class="sxs-lookup"><span data-stu-id="41604-174">X</span></span>|
+|<span data-ttu-id="41604-175">Solicitar PIN simples para acesso</span><span class="sxs-lookup"><span data-stu-id="41604-175">Require simple PIN for access</span></span>|<span data-ttu-id="41604-176">X</span><span class="sxs-lookup"><span data-stu-id="41604-176">X</span></span>|<span data-ttu-id="41604-177">X</span><span class="sxs-lookup"><span data-stu-id="41604-177">X</span></span>|
+|<span data-ttu-id="41604-178">Substituir o PIN do aplicativo interno pelo PIN do Intune</span><span class="sxs-lookup"><span data-stu-id="41604-178">Replace built-in app PIN with Intune PIN</span></span>|<span data-ttu-id="41604-179">X</span><span class="sxs-lookup"><span data-stu-id="41604-179">X</span></span>||
+|<span data-ttu-id="41604-180">Especificar o número de tentativas antes da redefinição do PIN</span><span class="sxs-lookup"><span data-stu-id="41604-180">Specify the number of attempts before PIN reset</span></span>|<span data-ttu-id="41604-181">X</span><span class="sxs-lookup"><span data-stu-id="41604-181">X</span></span>|<span data-ttu-id="41604-182">X</span><span class="sxs-lookup"><span data-stu-id="41604-182">X</span></span>|
+|<span data-ttu-id="41604-183">Permitir a impressão digital em vez do PIN</span><span class="sxs-lookup"><span data-stu-id="41604-183">Allow fingerprint instead of PIN</span></span> |<span data-ttu-id="41604-184">X</span><span class="sxs-lookup"><span data-stu-id="41604-184">X</span></span>|<span data-ttu-id="41604-185">X</span><span class="sxs-lookup"><span data-stu-id="41604-185">X</span></span>|
+|<span data-ttu-id="41604-186">Exigir credenciais corporativas para acesso</span><span class="sxs-lookup"><span data-stu-id="41604-186">Require corporate credentials for access</span></span>|<span data-ttu-id="41604-187">X</span><span class="sxs-lookup"><span data-stu-id="41604-187">X</span></span>|<span data-ttu-id="41604-188">X</span><span class="sxs-lookup"><span data-stu-id="41604-188">X</span></span>|
+|<span data-ttu-id="41604-189">Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root</span><span class="sxs-lookup"><span data-stu-id="41604-189">Block managed apps from running on jailbroken or rooted devices</span></span>|<span data-ttu-id="41604-190">X</span><span class="sxs-lookup"><span data-stu-id="41604-190">X</span></span>|<span data-ttu-id="41604-191">X</span><span class="sxs-lookup"><span data-stu-id="41604-191">X</span></span>|
+|<span data-ttu-id="41604-192">Criptografar dados do aplicativo</span><span class="sxs-lookup"><span data-stu-id="41604-192">Encrypt app data</span></span>|<span data-ttu-id="41604-193">X</span><span class="sxs-lookup"><span data-stu-id="41604-193">X</span></span>|<span data-ttu-id="41604-194">X</span><span class="sxs-lookup"><span data-stu-id="41604-194">X</span></span>|
+|<span data-ttu-id="41604-195">Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos</span><span class="sxs-lookup"><span data-stu-id="41604-195">Recheck the access requirements after a specified number of minutes</span></span>|<span data-ttu-id="41604-196">X</span><span class="sxs-lookup"><span data-stu-id="41604-196">X</span></span>|<span data-ttu-id="41604-197">X</span><span class="sxs-lookup"><span data-stu-id="41604-197">X</span></span>|
+|<span data-ttu-id="41604-198">Especificar o período de cortesia offline</span><span class="sxs-lookup"><span data-stu-id="41604-198">Specify the offline grace period</span></span>|<span data-ttu-id="41604-199">X</span><span class="sxs-lookup"><span data-stu-id="41604-199">X</span></span>|<span data-ttu-id="41604-200">X</span><span class="sxs-lookup"><span data-stu-id="41604-200">X</span></span>|
+|<span data-ttu-id="41604-201">Bloquear captura de tela (somente para Android)</span><span class="sxs-lookup"><span data-stu-id="41604-201">Block screen capture (Android only)</span></span>|<span data-ttu-id="41604-202">X</span><span class="sxs-lookup"><span data-stu-id="41604-202">X</span></span>|<span data-ttu-id="41604-203">X</span><span class="sxs-lookup"><span data-stu-id="41604-203">X</span></span>|
+|<span data-ttu-id="41604-204">Suporte para MAM sem registro de dispositivo</span><span class="sxs-lookup"><span data-stu-id="41604-204">Support for MAM without device enrollment</span></span>|<span data-ttu-id="41604-205">X</span><span class="sxs-lookup"><span data-stu-id="41604-205">X</span></span>|<span data-ttu-id="41604-206">X</span><span class="sxs-lookup"><span data-stu-id="41604-206">X</span></span>|
+|<span data-ttu-id="41604-207">Apagamento completo</span><span class="sxs-lookup"><span data-stu-id="41604-207">Full Wipe</span></span>|<span data-ttu-id="41604-208">X</span><span class="sxs-lookup"><span data-stu-id="41604-208">X</span></span>|<span data-ttu-id="41604-209">X</span><span class="sxs-lookup"><span data-stu-id="41604-209">X</span></span>|
+|<span data-ttu-id="41604-210">Apagamento seletivo</span><span class="sxs-lookup"><span data-stu-id="41604-210">Selective Wipe</span></span> <br></br><span data-ttu-id="41604-211">**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.</span><span class="sxs-lookup"><span data-stu-id="41604-211">**Note:** For iOS, when the management profile is removed, the app is also removed.</span></span>|<span data-ttu-id="41604-212">X</span><span class="sxs-lookup"><span data-stu-id="41604-212">X</span></span>||
+|<span data-ttu-id="41604-213">Impedir "Salvar como"</span><span class="sxs-lookup"><span data-stu-id="41604-213">Prevent “Save as”</span></span> |<span data-ttu-id="41604-214">X</span><span class="sxs-lookup"><span data-stu-id="41604-214">X</span></span>||
+|<span data-ttu-id="41604-215">Configuração de aplicativo direcionado</span><span class="sxs-lookup"><span data-stu-id="41604-215">Targeted Application Configuration</span></span> |<span data-ttu-id="41604-216">X</span><span class="sxs-lookup"><span data-stu-id="41604-216">X</span></span>||
+|<span data-ttu-id="41604-217">Suporte para múltiplas identidades</span><span class="sxs-lookup"><span data-stu-id="41604-217">Support for Multi-Identity</span></span>|<span data-ttu-id="41604-218">X</span><span class="sxs-lookup"><span data-stu-id="41604-218">X</span></span>||
+|<span data-ttu-id="41604-219">Estilo Personalizável</span><span class="sxs-lookup"><span data-stu-id="41604-219">Customizable Style</span></span> |<span data-ttu-id="41604-220">X</span><span class="sxs-lookup"><span data-stu-id="41604-220">X</span></span>|||
+### <span data-ttu-id="41604-221">Consulte também</span><span class="sxs-lookup"><span data-stu-id="41604-221">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-[Ferramenta de disposição do aplicativo Android](app-wrapper-prepare-android.md)</br>
-[Ferramenta de disposição do aplicativo iOS](app-wrapper-prepare-ios.md)</br>
-[Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+[<span data-ttu-id="41604-222">Ferramenta de disposição do aplicativo Android</span><span class="sxs-lookup"><span data-stu-id="41604-222">Android app wrapping tool</span></span>](app-wrapper-prepare-android.md)</br><span data-ttu-id="41604-223">
+[Ferramenta de disposição do aplicativo iOS](app-wrapper-prepare-ios.md)</span><span class="sxs-lookup"><span data-stu-id="41604-223">
+[iOS app wrapping tool](app-wrapper-prepare-ios.md)</span></span></br><span data-ttu-id="41604-224">
+[Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)</span><span class="sxs-lookup"><span data-stu-id="41604-224">
+[Use the SDK to enable apps for mobile application management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)</span></span>

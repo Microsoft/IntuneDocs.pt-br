@@ -1,7 +1,7 @@
 ---
-title: "Como criar uma política de conformidade para o Android"
+title: "<span data-ttu-id=\"75da6-101\">Como criar uma política de conformidade para o Android</span><span class=\"sxs-lookup\"><span data-stu-id=\"75da6-101\">How to create a compliance policy for Android</span></span>"
 titleSuffix: Intune on Azure
-description: "Saiba como criar uma política de conformidade para dispositivos Android."
+description: "<span data-ttu-id=\"75da6-102\">Saiba como criar uma política de conformidade para dispositivos Android.</span><span class=\"sxs-lookup\"><span data-stu-id=\"75da6-102\">Learn how to create a compliance policy for Android devices.\"</span></span>"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -21,21 +21,23 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android no Intune
+# <span data-ttu-id="75da6-103">Como criar uma política de conformidade do dispositivo para dispositivos Android no Intune</span><span class="sxs-lookup"><span data-stu-id="75da6-103">How to create a device compliance policy for Android devices in Intune</span></span>
+<a id="how-to-create-a-device-compliance-policy-for-android-devices-in-intune" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Políticas de conformidade do dispositivo são criadas para cada formulário de plataforma no portal do Intune no Azure. 
+<span data-ttu-id="75da6-104">Políticas de conformidade do dispositivo são criadas para cada formulário de plataforma no portal do Intune no Azure.</span><span class="sxs-lookup"><span data-stu-id="75da6-104">Device compliance policies are created for each platform form the Intune Azure portal.</span></span> 
 
-- Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](device-compliance.md).
-- Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+- <span data-ttu-id="75da6-105">Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](device-compliance.md).</span><span class="sxs-lookup"><span data-stu-id="75da6-105">To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic.</span></span>
+- <span data-ttu-id="75da6-106">Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).</span><span class="sxs-lookup"><span data-stu-id="75da6-106">To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.</span></span>
 
-## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
+## <span data-ttu-id="75da6-107">Para criar uma política de conformidade do dispositivo</span><span class="sxs-lookup"><span data-stu-id="75da6-107">To create a device compliance policy</span></span>
+<a id="to-create-a-device-compliance-policy" class="xliff"></a>
 
-1. Na folha **Intune**, escolha **Definir conformidade do dispositivo**. Em **Gerenciar**, escolha **Todas as políticas de conformidade de dispositivo** e selecione **Criar**.
-2. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
-3. Escolha **Requisitos de conformidade** para especificar as configurações de **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo**. Quando terminar, escolha **OK**.
+1. <span data-ttu-id="75da6-108">Na folha **Intune**, escolha **Definir conformidade do dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="75da6-108">From the **Intune** blade, choose **Set Device compliance**.</span></span> <span data-ttu-id="75da6-109">Em **Gerenciar**, escolha **Todas as políticas de conformidade de dispositivo** e selecione **Criar**.</span><span class="sxs-lookup"><span data-stu-id="75da6-109">Under **Manage**, choose **All device compliance policies**, and choose **Create**.</span></span>
+2. <span data-ttu-id="75da6-110">Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.</span><span class="sxs-lookup"><span data-stu-id="75da6-110">Type a name, description and choose the platform that you want this policy to apply to.</span></span>
+3. <span data-ttu-id="75da6-111">Escolha **Requisitos de conformidade** para especificar as configurações de **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="75da6-111">Choose **Compliance requirements** to specify the **Security**, **Device health**, and **Device property** settings.</span></span> <span data-ttu-id="75da6-112">Quando terminar, escolha **OK**.</span><span class="sxs-lookup"><span data-stu-id="75da6-112">When you are done, choose **OK**.</span></span>
 
 <!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -44,89 +46,97 @@ Políticas de conformidade do dispositivo são criadas para cada formulário de 
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="to-assign-user-groups"></a>Para atribuir grupos de usuários
+## <span data-ttu-id="75da6-113">Para atribuir grupos de usuários</span><span class="sxs-lookup"><span data-stu-id="75da6-113">To assign user groups</span></span>
+<a id="to-assign-user-groups" class="xliff"></a>
 
-Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas na folha **Conformidade – Políticas**.
+<span data-ttu-id="75da6-114">Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou.</span><span class="sxs-lookup"><span data-stu-id="75da6-114">To assign a compliance policy to users, choose a policy that you have configured.</span></span> <span data-ttu-id="75da6-115">As políticas existentes podem ser encontradas na folha **Conformidade – Políticas**.</span><span class="sxs-lookup"><span data-stu-id="75da6-115">Existing policies can be found in the **Compliance –policies** blade.</span></span>
 
-1. Escolha a política e as **Atribuições**. Isso abrirá a folha na qual é possível selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
-2. Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD. Aqui você pode encontrar os grupos de segurança no seu Azure Active Directory.  Você pode selecionar os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Selecionar**. Escolher **Selecionar** implanta a política para os usuários.
+1. <span data-ttu-id="75da6-116">Escolha a política e as **Atribuições**.</span><span class="sxs-lookup"><span data-stu-id="75da6-116">Choose the policy and choose **Assignments**.</span></span> <span data-ttu-id="75da6-117">Isso abrirá a folha na qual é possível selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.</span><span class="sxs-lookup"><span data-stu-id="75da6-117">This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.</span></span>
+2. <span data-ttu-id="75da6-118">Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="75da6-118">Choose **Select groups** to open the blade that displays the Azure AD security groups.</span></span> <span data-ttu-id="75da6-119">Aqui você pode encontrar os grupos de segurança no seu Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="75da6-119">Here you can find the security groups in your Azure Active Directory.</span></span>  <span data-ttu-id="75da6-120">Você pode selecionar os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Selecionar**.</span><span class="sxs-lookup"><span data-stu-id="75da6-120">You can select the user groups you want this policy to apply to and choose **Select**.</span></span> <span data-ttu-id="75da6-121">Escolher **Selecionar** implanta a política para os usuários.</span><span class="sxs-lookup"><span data-stu-id="75da6-121">Choosing **Select**  deploys the policy to users.</span></span>
 
-Você aplicou a política para os usuários.  A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
+<span data-ttu-id="75da6-122">Você aplicou a política para os usuários.</span><span class="sxs-lookup"><span data-stu-id="75da6-122">You have applied the policy to users.</span></span>  <span data-ttu-id="75da6-123">A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.</span><span class="sxs-lookup"><span data-stu-id="75da6-123">The devices used by the users who are targeted by the policy will be evaluated for compliance.</span></span>
 
 <!---##  Compliance policy settings--->
 
-## <a name="device-health-and-security-settings"></a>Configurações de segurança e integridade do dispositivo
+## <span data-ttu-id="75da6-124">Configurações de segurança e integridade do dispositivo</span><span class="sxs-lookup"><span data-stu-id="75da6-124">Device health and security settings</span></span>
+<a id="device-health-and-security-settings" class="xliff"></a>
 
-- **O dispositivo não pode estar com jailbreak ou com raiz:** se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.
-- **Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas (Android 4.0 ou posterior)**: para bloquear dispositivos que têm a opção **Segurança** > **Fontes desconhecidas** habilitado no dispositivo, habilite essa configuração e defina-a como **Sim**.
+- <span data-ttu-id="75da6-125">**O dispositivo não pode estar com jailbreak ou com raiz:** se você habilitar essa configuração, os dispositivos com jailbreak serão avaliados como não compatíveis.</span><span class="sxs-lookup"><span data-stu-id="75da6-125">**Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will be evaluated as noncompliant.</span></span>
+- <span data-ttu-id="75da6-126">**Exigir que dispositivos impeçam a instalação de aplicativos de fontes desconhecidas (Android 4.0 ou posterior)**: para bloquear dispositivos que têm a opção **Segurança** > **Fontes desconhecidas** habilitado no dispositivo, habilite essa configuração e defina-a como **Sim**.</span><span class="sxs-lookup"><span data-stu-id="75da6-126">**Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** >; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.</span></span>
 
-### <a name="important"></a>Importante
+### <span data-ttu-id="75da6-127">Importante</span><span class="sxs-lookup"><span data-stu-id="75da6-127">Important</span></span>
+<a id="important" class="xliff"></a>
 
-Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** esteja habilitada. Aplique esta política de conformidade somente se você não estiver fazendo o sideload de aplicativos Android nos dispositivos.
+<span data-ttu-id="75da6-128">Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** esteja habilitada.</span><span class="sxs-lookup"><span data-stu-id="75da6-128">Side-loading applications require that the **Unknown sources** setting is enabled.</span></span> <span data-ttu-id="75da6-129">Aplique esta política de conformidade somente se você não estiver fazendo o sideload de aplicativos Android nos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="75da6-129">Enforce this compliance policy only if you are not side-loading Android apps on devices.</span></span>
 
-- **Exigir que a depuração de USB esteja desabilitada (Android 4.2 ou posterior)**: essa configuração especifica se a opção de detecção de depuração de USB no dispositivo de está habilitada.
-- **Exigir que os dispositivos tenham habilitado “Examinar dispositivo contra ameaças à segurança” (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
-- **Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser especificada no formato: AAAA-MM-DD.
-- **Exigir proteção contra ameaças ao dispositivo a ser habilitado**: use esta configuração para fazer a avaliação de risco da solução Lookout MTP como uma condição para conformidade. Escolha o nível máximo de ameaça permitido, que é um dos seguintes:
-  - **Nenhum (Seguro)**: este é o mais seguro. Isso significa que o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
-  - **Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Médio**: o dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.
-  - **Alto**: esta é a opção menos segura. Essencialmente, isso permite todos os níveis de ameaça. Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.
+- <span data-ttu-id="75da6-130">**Exigir que a depuração de USB esteja desabilitada (Android 4.2 ou posterior)**: essa configuração especifica se a opção de detecção de depuração de USB no dispositivo de está habilitada.</span><span class="sxs-lookup"><span data-stu-id="75da6-130">**Require that USB debugging is disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.</span></span>
+- <span data-ttu-id="75da6-131">**Exigir que os dispositivos tenham habilitado “Examinar dispositivo contra ameaças à segurança” (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="75da6-131">**Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.</span></span>
+- <span data-ttu-id="75da6-132">**Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android.</span><span class="sxs-lookup"><span data-stu-id="75da6-132">**Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level.</span></span> <span data-ttu-id="75da6-133">Dispositivos com níveis de patch mais antigos são incompatíveis.</span><span class="sxs-lookup"><span data-stu-id="75da6-133">Devices that are not at least at this patch level will be noncompliant.</span></span> <span data-ttu-id="75da6-134">A data deve ser especificada no formato: AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="75da6-134">The date must be specified in the format YYYY-MM-DD.</span></span>
+- <span data-ttu-id="75da6-135">**Exigir proteção contra ameaças ao dispositivo a ser habilitado**: use esta configuração para fazer a avaliação de risco da solução Lookout MTP como uma condição para conformidade.</span><span class="sxs-lookup"><span data-stu-id="75da6-135">**Require device threat protection to be enabled** : Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance.</span></span> <span data-ttu-id="75da6-136">Escolha o nível máximo de ameaça permitido, que é um dos seguintes:</span><span class="sxs-lookup"><span data-stu-id="75da6-136">Choose the maximum allowed threat level, which is one of the following:</span></span>
+  - <span data-ttu-id="75da6-137">**Nenhum (Seguro)**: este é o mais seguro.</span><span class="sxs-lookup"><span data-stu-id="75da6-137">**None (secured)**: This is the most secure.</span></span> <span data-ttu-id="75da6-138">Isso significa que o dispositivo não pode ter nenhuma ameaça.</span><span class="sxs-lookup"><span data-stu-id="75da6-138">This means that the device cannot have any threats.</span></span> <span data-ttu-id="75da6-139">Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.</span><span class="sxs-lookup"><span data-stu-id="75da6-139">If the device is detected as having any level of threats, it will be evaluated as noncompliant.</span></span>
+  - <span data-ttu-id="75da6-140">**Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes.</span><span class="sxs-lookup"><span data-stu-id="75da6-140">**Low** : The device is evaluated as compliant if only low-level threats are present.</span></span> <span data-ttu-id="75da6-141">Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.</span><span class="sxs-lookup"><span data-stu-id="75da6-141">Anything higher puts the device in a noncompliant status.</span></span>
+  - <span data-ttu-id="75da6-142">**Médio**: o dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio.</span><span class="sxs-lookup"><span data-stu-id="75da6-142">**Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level.</span></span> <span data-ttu-id="75da6-143">Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.</span><span class="sxs-lookup"><span data-stu-id="75da6-143">If the device is detected to have high-level threats, it is determined to be noncompliant.</span></span>
+  - <span data-ttu-id="75da6-144">**Alto**: esta é a opção menos segura.</span><span class="sxs-lookup"><span data-stu-id="75da6-144">**High** : This is the least secure.</span></span> <span data-ttu-id="75da6-145">Essencialmente, isso permite todos os níveis de ameaça.</span><span class="sxs-lookup"><span data-stu-id="75da6-145">Essentially, this allows all threat levels.</span></span> <span data-ttu-id="75da6-146">Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.</span><span class="sxs-lookup"><span data-stu-id="75da6-146">Perhaps it is useful if you are using this solution only for reporting purposes.</span></span>
 
-Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+<span data-ttu-id="75da6-147">Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).</span><span class="sxs-lookup"><span data-stu-id="75da6-147">For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).</span></span>
 
-## <a name="system-security-settings"></a>Configurações de segurança do sistema
+## <span data-ttu-id="75da6-148">Configurações de segurança do sistema</span><span class="sxs-lookup"><span data-stu-id="75da6-148">System security settings</span></span>
+<a id="system-security-settings" class="xliff"></a>
 
-### <a name="password"></a>Senha
+### <span data-ttu-id="75da6-149">Senha</span><span class="sxs-lookup"><span data-stu-id="75da6-149">Password</span></span>
+<a id="password" class="xliff"></a>
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que possam acessar o dispositivo.
-- **Tamanho mínimo da senha**: especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.
-- **Qualidade da senha**: essa configuração detecta se os requisitos de senha especificados por você estão configurados no dispositivo. Habilite essa configuração para exigir que os usuários atendam certos requisitos de senha para dispositivos Android. Escolha:
-  - **Biométrico de segurança baixa**
-  - **Necessária**
-  - **Pelo menos, numérico**
-  - **Pelo menos, alfabético**
-  - **Pelo menos, alfanumérico**
-  - **Alfanumérico com símbolos**
-- **Minutos de inatividade antes que a senha seja exigida**: especifique o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
-- **Lembrar o histórico da senha**: use essa configuração em conjunto com **Impedir a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
-- **Impedir a reutilização de senhas anteriores**: se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
-- **Exigir uma senha quando o dispositivo retorna do estado ocioso:** use essa configuração junto com **Minutos de inatividade antes da senha ser necessária**. O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
+- <span data-ttu-id="75da6-150">**Exigir uma senha para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que possam acessar o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="75da6-150">**Require a password to unlock mobile devices** : Set this to **Yes** to require users to enter a password before they can access their device.</span></span>
+- <span data-ttu-id="75da6-151">**Tamanho mínimo da senha**: especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.</span><span class="sxs-lookup"><span data-stu-id="75da6-151">**Minimum password length** : Specify the minimum number of digits or characters that the user&#39;s password must have.</span></span>
+- <span data-ttu-id="75da6-152">**Qualidade da senha**: essa configuração detecta se os requisitos de senha especificados por você estão configurados no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="75da6-152">**Password quality** : This setting detects if the password requirements that you specify are set up on the device.</span></span> <span data-ttu-id="75da6-153">Habilite essa configuração para exigir que os usuários atendam certos requisitos de senha para dispositivos Android.</span><span class="sxs-lookup"><span data-stu-id="75da6-153">Enable this setting to require that users meet certain password requirements for Android devices.</span></span> <span data-ttu-id="75da6-154">Escolha:</span><span class="sxs-lookup"><span data-stu-id="75da6-154">Choose from:</span></span>
+  - <span data-ttu-id="75da6-155">**Biométrico de segurança baixa**</span><span class="sxs-lookup"><span data-stu-id="75da6-155">**Low security biometric**</span></span>
+  - <span data-ttu-id="75da6-156">**Necessária**</span><span class="sxs-lookup"><span data-stu-id="75da6-156">**Required**</span></span>
+  - <span data-ttu-id="75da6-157">**Pelo menos, numérico**</span><span class="sxs-lookup"><span data-stu-id="75da6-157">**At least numeric**</span></span>
+  - <span data-ttu-id="75da6-158">**Pelo menos, alfabético**</span><span class="sxs-lookup"><span data-stu-id="75da6-158">**At least alphabetic**</span></span>
+  - <span data-ttu-id="75da6-159">**Pelo menos, alfanumérico**</span><span class="sxs-lookup"><span data-stu-id="75da6-159">**At least alphanumeric**</span></span>
+  - <span data-ttu-id="75da6-160">**Alfanumérico com símbolos**</span><span class="sxs-lookup"><span data-stu-id="75da6-160">**Alphanumeric with symbols**</span></span>
+- <span data-ttu-id="75da6-161">**Minutos de inatividade antes que a senha seja exigida**: especifique o tempo ocioso antes que o usuário precise digitar novamente a senha.</span><span class="sxs-lookup"><span data-stu-id="75da6-161">**Minutes of inactivity before password is required** : Specify the idle time before the user must reenter their password.</span></span>
+- <span data-ttu-id="75da6-162">**Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.</span><span class="sxs-lookup"><span data-stu-id="75da6-162">**Password expiration (days)**: Select the number of days before the password expires and they must create a new one.</span></span>
+- <span data-ttu-id="75da6-163">**Lembrar o histórico da senha**: use essa configuração em conjunto com **Impedir a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.</span><span class="sxs-lookup"><span data-stu-id="75da6-163">**Remember password history** : Use this setting together with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.</span></span>
+- <span data-ttu-id="75da6-164">**Impedir a reutilização de senhas anteriores**: se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.</span><span class="sxs-lookup"><span data-stu-id="75da6-164">**Prevent reuse of previous passwords** : If you selected **Remember password history** , specify the number of previously used passwords that cannot be reused.</span></span>
+- <span data-ttu-id="75da6-165">**Exigir uma senha quando o dispositivo retorna do estado ocioso:** use essa configuração junto com **Minutos de inatividade antes da senha ser necessária**.</span><span class="sxs-lookup"><span data-stu-id="75da6-165">**Require a password when the device returns from an idle state** : Use this setting together with the **Minutes of inactivity before password is required** setting.</span></span> <span data-ttu-id="75da6-166">O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.</span><span class="sxs-lookup"><span data-stu-id="75da6-166">The user is prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.</span></span>
 
-### <a name="encryption"></a>Criptografia
+### <span data-ttu-id="75da6-167">Criptografia</span><span class="sxs-lookup"><span data-stu-id="75da6-167">Encryption</span></span>
+<a id="encryption" class="xliff"></a>
 
-- **Exigir criptografia no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam criptografados para conectar aos recursos. Os dispositivos serão criptografados quando você escolher a configuração **Exigir uma senha para desbloquear dispositivos móveis**.
+- <span data-ttu-id="75da6-168">**Exigir criptografia no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam criptografados para conectar aos recursos.</span><span class="sxs-lookup"><span data-stu-id="75da6-168">**Require encryption on mobile device** : Set this to **Yes** to require devices to be encrypted in order to connect to resources.</span></span> <span data-ttu-id="75da6-169">Os dispositivos serão criptografados quando você escolher a configuração **Exigir uma senha para desbloquear dispositivos móveis**.</span><span class="sxs-lookup"><span data-stu-id="75da6-169">Devices are encrypted when you choose the setting **Require a password to unlock mobile devices**.</span></span>
 
-## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
+## <span data-ttu-id="75da6-170">Configurações de propriedade do dispositivo</span><span class="sxs-lookup"><span data-stu-id="75da6-170">Device property settings</span></span>
+<a id="device-property-settings" class="xliff"></a>
 
-- **Sistema operacional mínimo exigido**: quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar seus dispositivos após o que será possível acessar os recursos da empresa.
-- **Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e será solicitado que o usuário entre em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+- <span data-ttu-id="75da6-171">**Sistema operacional mínimo exigido**: quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível.</span><span class="sxs-lookup"><span data-stu-id="75da6-171">**Minimum OS required** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant.</span></span> <span data-ttu-id="75da6-172">É exibido um link com informações sobre como atualizar.</span><span class="sxs-lookup"><span data-stu-id="75da6-172">A link with information on how to upgrade is shown.</span></span> <span data-ttu-id="75da6-173">O usuário pode optar por atualizar seus dispositivos após o que será possível acessar os recursos da empresa.</span><span class="sxs-lookup"><span data-stu-id="75da6-173">The user can choose to upgrade their device, after which they can access company resources.</span></span>
+- <span data-ttu-id="75da6-174">**Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e será solicitado que o usuário entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="75da6-174">**Maximum OS version allowed** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin.</span></span> <span data-ttu-id="75da6-175">Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.</span><span class="sxs-lookup"><span data-stu-id="75da6-175">Until there is a change in rules to allow the OS version, this device cannot be used to access company resources.</span></span>
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Como as configurações não compatíveis funcionam com políticas de acesso condicional?
+## <span data-ttu-id="75da6-176">Como as configurações não compatíveis funcionam com políticas de acesso condicional?</span><span class="sxs-lookup"><span data-stu-id="75da6-176">How non-compliant settings work with conditional access policies?</span></span>
+<a id="how-non-compliant-settings-work-with-conditional-access-policies" class="xliff"></a>
 
-A tabela abaixo descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
+<span data-ttu-id="75da6-177">A tabela abaixo descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="75da6-177">The table below describes how non-compliant settings are managed when a compliance policy is used with a conditional access policy.</span></span>
 
 --------------------
 
-|**Configuração de política**| **Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior** |
+|<span data-ttu-id="75da6-178">**Configuração de política**</span><span class="sxs-lookup"><span data-stu-id="75da6-178">**Policy setting**</span></span>| <span data-ttu-id="75da6-179">**Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior**</span><span class="sxs-lookup"><span data-stu-id="75da6-179">**Android 4.0 and later, Samsung Knox Standard 4.0 and later**</span></span> |
 | --- | ----|
-| **Configuração de senha ou PIN** |  Em Quarentena |
-| **Criptografia de dispositivo** | Em Quarentena |
-| **Dispositivo desbloqueado ou com raiz** | Em Quarentena (não é uma configuração) |
-| **perfil de email** | Não aplicável |
-| **Versão mínima do SO** | Em Quarentena |
-| **Versão máxima do SO** |   Em Quarentena |
-| **Atestado de integridade do Windows** | Não aplicável |
+| <span data-ttu-id="75da6-180">**Configuração de senha ou PIN**</span><span class="sxs-lookup"><span data-stu-id="75da6-180">**PIN or password configuration**</span></span> |  <span data-ttu-id="75da6-181">Em Quarentena</span><span class="sxs-lookup"><span data-stu-id="75da6-181">Quarantined</span></span> |
+| <span data-ttu-id="75da6-182">**Criptografia de dispositivo**</span><span class="sxs-lookup"><span data-stu-id="75da6-182">**Device encryption**</span></span> | <span data-ttu-id="75da6-183">Em Quarentena</span><span class="sxs-lookup"><span data-stu-id="75da6-183">Quarantined</span></span> |
+| <span data-ttu-id="75da6-184">**Dispositivo desbloqueado ou com raiz**</span><span class="sxs-lookup"><span data-stu-id="75da6-184">**Jailbroken or rooted device**</span></span> | <span data-ttu-id="75da6-185">Em Quarentena (não é uma configuração)</span><span class="sxs-lookup"><span data-stu-id="75da6-185">Quarantined (not a setting)</span></span> |
+| <span data-ttu-id="75da6-186">**perfil de email**</span><span class="sxs-lookup"><span data-stu-id="75da6-186">**email profile**</span></span> | <span data-ttu-id="75da6-187">Não aplicável</span><span class="sxs-lookup"><span data-stu-id="75da6-187">Not applicable</span></span> |
+| <span data-ttu-id="75da6-188">**Versão mínima do SO**</span><span class="sxs-lookup"><span data-stu-id="75da6-188">**Minimum OS version**</span></span> | <span data-ttu-id="75da6-189">Em Quarentena</span><span class="sxs-lookup"><span data-stu-id="75da6-189">Quarantined</span></span> |
+| <span data-ttu-id="75da6-190">**Versão máxima do SO**</span><span class="sxs-lookup"><span data-stu-id="75da6-190">**Maximum OS version**</span></span> |   <span data-ttu-id="75da6-191">Em Quarentena</span><span class="sxs-lookup"><span data-stu-id="75da6-191">Quarantined</span></span> |
+| <span data-ttu-id="75da6-192">**Atestado de integridade do Windows**</span><span class="sxs-lookup"><span data-stu-id="75da6-192">**Windows health attestation**</span></span> | <span data-ttu-id="75da6-193">Não aplicável</span><span class="sxs-lookup"><span data-stu-id="75da6-193">Not applicable</span></span> |
 
 --------------------------
 
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)+
+<span data-ttu-id="75da6-194">**Remediado** = o sistema operacional do dispositivo impõe a conformidade.</span><span class="sxs-lookup"><span data-stu-id="75da6-194">**Remediated** = The device operating system enforces compliance.</span></span> <span data-ttu-id="75da6-195">(Por exemplo, o usuário é forçado a definir um PIN.)+</span><span class="sxs-lookup"><span data-stu-id="75da6-195">(For example, the user is forced to set a PIN.)+</span></span>
 
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:+
+<span data-ttu-id="75da6-196">**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade.</span><span class="sxs-lookup"><span data-stu-id="75da6-196">**Quarantined** = The device operating system does not enforce compliance.</span></span> <span data-ttu-id="75da6-197">(Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:+</span><span class="sxs-lookup"><span data-stu-id="75da6-197">(For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+</span></span>
 
-- O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
-- O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
+- <span data-ttu-id="75da6-198">O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.</span><span class="sxs-lookup"><span data-stu-id="75da6-198">The device is blocked if a conditional access policy applies to the user.</span></span>
+- <span data-ttu-id="75da6-199">O portal da empresa notificará o usuário sobre qualquer problema de conformidade.</span><span class="sxs-lookup"><span data-stu-id="75da6-199">The company portal notifies the user about any compliance problems.</span></span>
 
 <!--- ## Next steps
 

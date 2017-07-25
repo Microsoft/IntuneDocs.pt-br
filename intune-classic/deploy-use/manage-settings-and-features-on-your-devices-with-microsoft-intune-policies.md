@@ -20,193 +20,209 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune
+# <span data-ttu-id="bbf8d-103">Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="bbf8d-103">Manage settings and features on your devices with Microsoft Intune policies</span></span>
+<a id="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-As *políticas* do Microsoft Intune são grupos de configurações que controlam os recursos nos dispositivos móveis e computadores. Políticas são criadas usando modelos que contêm configurações recomendadas ou personalizadas e depois são implantadas em grupos de dispositivos ou de usuários.
+<span data-ttu-id="bbf8d-104">As *políticas* do Microsoft Intune são grupos de configurações que controlam os recursos nos dispositivos móveis e computadores.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-104">Microsoft Intune *policies* are groups of settings that control features on mobile devices and computers.</span></span> <span data-ttu-id="bbf8d-105">Políticas são criadas usando modelos que contêm configurações recomendadas ou personalizadas e depois são implantadas em grupos de dispositivos ou de usuários.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-105">You create policies by using templates that contain recommended or custom settings, and then you deploy them to device or user groups.</span></span>
 
-## <a name="types-of-policies"></a>Tipos de políticas
+## <span data-ttu-id="bbf8d-106">Tipos de políticas</span><span class="sxs-lookup"><span data-stu-id="bbf8d-106">Types of policies</span></span>
+<a id="types-of-policies" class="xliff"></a>
 
-As políticas do Intune encaixam-se nas categorias a seguir. A categoria usada afeta como criar e implantar a política.
-
-
-- **Políticas de configuração:** são normalmente usadas para gerenciar configurações de segurança e recursos em seus dispositivos. Use as informações neste tópico para saber mais sobre como criar e implantar essas políticas e para explorar as configurações disponíveis.
-- **Políticas de conformidade de dispositivo**: definem as regras e configurações às quais um dispositivo deve obedecer para ser considerado compatível pelas políticas de acesso condicional. Você também pode usar as políticas de conformidade para monitorar e corrigir a conformidade de dispositivos, independentemente do acesso condicional.
-Para obter detalhes, consulte [Políticas de conformidade do dispositivo no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
-- **Políticas de acesso condicional:** ajudam a proteger emails e outros serviços dependendo das condições especificadas.
-Para obter detalhes, consulte [Restringir o acesso ao email e aos serviços O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-- **Políticas de registro de dispositivo corporativo:** para obter informações sobre as políticas de registro de dispositivo corporativo, consulte [Configurar gerenciamento de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
-- **Políticas de acesso aos recursos:** essas políticas funcionam em conjunto para ajudar os usuários a obter acesso a arquivos e recursos de que precisam para realizar seu trabalho com êxito, independentemente de onde estiverem.
-Para obter detalhes, consulte [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) (Habilitar o acesso aos recursos da empresa com o Microsoft Intune).
+<span data-ttu-id="bbf8d-107">As políticas do Intune encaixam-se nas categorias a seguir.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-107">Intune policies fall into the following categories.</span></span> <span data-ttu-id="bbf8d-108">A categoria usada afeta como criar e implantar a política.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-108">The category that you use affects how you create and deploy the policy.</span></span>
 
 
-Para obter uma lista completa de políticas do Intune, consulte a [referência de política do Microsoft Intune](microsoft-intune-policy-reference.md).
+- <span data-ttu-id="bbf8d-109">**Políticas de configuração:** são normalmente usadas para gerenciar configurações de segurança e recursos em seus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-109">**Configuration policies**: These are commonly used to manage security settings and features on your devices.</span></span> <span data-ttu-id="bbf8d-110">Use as informações neste tópico para saber mais sobre como criar e implantar essas políticas e para explorar as configurações disponíveis.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-110">Use the information in this topic to learn about how to create and deploy these policies and to explore the available settings.</span></span>
+- <span data-ttu-id="bbf8d-111">**Políticas de conformidade de dispositivo**: definem as regras e configurações às quais um dispositivo deve obedecer para ser considerado compatível pelas políticas de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-111">**Device compliance policies**: These define the rules and settings that a device must comply with in order to be considered compliant by conditional access polices.</span></span> <span data-ttu-id="bbf8d-112">Você também pode usar as políticas de conformidade para monitorar e corrigir a conformidade de dispositivos, independentemente do acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-112">You can also use compliance policies to monitor and remediate  the compliance of devices independent of conditional access.</span></span>
+<span data-ttu-id="bbf8d-113">Para obter detalhes, consulte [Políticas de conformidade do dispositivo no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-113">For details, see [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).</span></span>
+- <span data-ttu-id="bbf8d-114">**Políticas de acesso condicional:** ajudam a proteger emails e outros serviços dependendo das condições especificadas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-114">**Conditional access polices**: These policies help you secure email and other services, depending on conditions that you specify.</span></span>
+<span data-ttu-id="bbf8d-115">Para obter detalhes, consulte [Restringir o acesso ao email e aos serviços O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-115">For details, see [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).</span></span>
+- <span data-ttu-id="bbf8d-116">**Políticas de registro de dispositivo corporativo:** para obter informações sobre as políticas de registro de dispositivo corporativo, consulte [Configurar gerenciamento de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-116">**Corporate device enrollment policies**: For information about corporate device enrollment policies, see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).</span></span>
+- <span data-ttu-id="bbf8d-117">**Políticas de acesso aos recursos:** essas políticas funcionam em conjunto para ajudar os usuários a obter acesso a arquivos e recursos de que precisam para realizar seu trabalho com êxito, independentemente de onde estiverem.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-117">**Resource access policies**: These policies work together to help your users gain access to the files and resources that they need to do their work successfully, wherever they are.</span></span>
+<span data-ttu-id="bbf8d-118">Para obter detalhes, consulte [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) (Habilitar o acesso aos recursos da empresa com o Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-118">For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).</span></span>
 
-## <a name="create-a-configuration-policy"></a>Criar uma política de configuração
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Política** &gt; **Políticas de Configuração** &gt; **Adicionar**.
+<span data-ttu-id="bbf8d-119">Para obter uma lista completa de políticas do Intune, consulte a [referência de política do Microsoft Intune](microsoft-intune-policy-reference.md).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-119">For a complete list of Intune policies, see [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).</span></span>
 
-2.  Escolha a política desejada, opte por usar as configurações recomendadas para a política (se disponíveis, você poderá alterar essas configurações posteriormente) ou opte por criar uma política personalizada com suas próprias configurações.
+## <span data-ttu-id="bbf8d-120">Criar uma política de configuração</span><span class="sxs-lookup"><span data-stu-id="bbf8d-120">Create a configuration policy</span></span>
+<a id="create-a-configuration-policy" class="xliff"></a>
+
+1.  <span data-ttu-id="bbf8d-121">No [console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Política** &gt; **Políticas de Configuração** &gt; **Adicionar**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-121">In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Configuration Policies** &gt; **Add**.</span></span>
+
+2.  <span data-ttu-id="bbf8d-122">Escolha a política desejada, opte por usar as configurações recomendadas para a política (se disponíveis, você poderá alterar essas configurações posteriormente) ou opte por criar uma política personalizada com suas próprias configurações.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-122">Choose the policy that you want, choose to use the recommended settings for the policy (if available; you can change these settings later), or choose to create a custom policy with your own settings.</span></span>
 
     > [!TIP]
-    > Para obter ajuda sobre como escolher a política certa, consulte a [Referência da política do Microsoft Intune](microsoft-intune-policy-reference.md).
+    > <span data-ttu-id="bbf8d-123">Para obter ajuda sobre como escolher a política certa, consulte a [Referência da política do Microsoft Intune](microsoft-intune-policy-reference.md).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-123">For help choosing the right policy, see the [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).</span></span>
 
-3.  Quando estiver pronto, clique em **Criar Política**.
+3.  <span data-ttu-id="bbf8d-124">Quando estiver pronto, clique em **Criar Política**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-124">When you are ready, choose **Create Policy**.</span></span>
 
-4.  Na página **Criar Política**, configure um nome e uma descrição opcional para a política.
+4.  <span data-ttu-id="bbf8d-125">Na página **Criar Política**, configure um nome e uma descrição opcional para a política.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-125">On the **Create Policy** page, configure a name and optional description for the policy.</span></span>
 
-5.  Defina as configurações de política necessárias e selecione **Salvar Política**.
+5.  <span data-ttu-id="bbf8d-126">Defina as configurações de política necessárias e selecione **Salvar Política**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-126">Configure the required policy settings, and then choose **Save Policy**.</span></span>
 
-    Se você precisar de ajuda com qualquer configuração de política, escolha o tipo de política na lista a seguir:
+    <span data-ttu-id="bbf8d-127">Se você precisar de ajuda com qualquer configuração de política, escolha o tipo de política na lista a seguir:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-127">If you need help with any policy settings, choose your policy type from the following list:</span></span>
 
-    - [Configurações para dispositivos iOS](ios-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Android](android-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Android para Trabalho](android-for-work-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Windows 10 móveis e desktop](windows-10-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Windows Team](windows-team-configuration-policy-settings-in-microsoft-intune.md)
-    - [Configurações para atualização de edição do Windows](edition-upgrade-policy-settings-in-microsoft-intune.md)
-    - [Configurações para dispositivos Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [Configurações para Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Configurações para política de termos e condições](terms-and-condition-policy-settings-in-microsoft-intune.md)
-    - [Configurações gerais para dispositivos móveis (herdados)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-128">Configurações para dispositivos iOS</span><span class="sxs-lookup"><span data-stu-id="bbf8d-128">Settings for iOS devices</span></span>](ios-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-129">Configurações para dispositivos Android</span><span class="sxs-lookup"><span data-stu-id="bbf8d-129">Settings for Android devices</span></span>](android-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-130">Configurações para dispositivos Android para Trabalho</span><span class="sxs-lookup"><span data-stu-id="bbf8d-130">Settings for Android for Work devices</span></span>](android-for-work-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-131">Configurações para dispositivos Windows 8 e Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="bbf8d-131">Settings for Windows 8 and Windows 8.1 devices</span></span>](windows-configuration-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-132">Configurações para dispositivos Windows Phone 8.1</span><span class="sxs-lookup"><span data-stu-id="bbf8d-132">Settings for Windows Phone 8.1 devices</span></span>](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-133">Configurações para dispositivos Windows 10 móveis e desktop</span><span class="sxs-lookup"><span data-stu-id="bbf8d-133">Settings for Windows 10 desktop and mobile devices</span></span>](windows-10-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-134">Configurações para dispositivos Windows Team</span><span class="sxs-lookup"><span data-stu-id="bbf8d-134">Settings for Windows Team devices</span></span>](windows-team-configuration-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-135">Configurações para atualização de edição do Windows</span><span class="sxs-lookup"><span data-stu-id="bbf8d-135">Settings for Windows edition upgrade</span></span>](edition-upgrade-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-136">Configurações para dispositivos Mac OS X</span><span class="sxs-lookup"><span data-stu-id="bbf8d-136">Settings for Mac OS X devices</span></span>](mac-os-x-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-137">Configurações para Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="bbf8d-137">Settings for Exchange ActiveSync</span></span>](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-138">Configurações para política de termos e condições</span><span class="sxs-lookup"><span data-stu-id="bbf8d-138">Settings for the terms and conditions policy</span></span>](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [<span data-ttu-id="bbf8d-139">Configurações gerais para dispositivos móveis (herdados)</span><span class="sxs-lookup"><span data-stu-id="bbf8d-139">General settings for mobile devices (legacy)</span></span>](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Na caixa de diálogo de confirmação, escolha **Sim** para implantar a política agora ou **Não** para criar a política sem implantá-la.
+4.  <span data-ttu-id="bbf8d-140">Na caixa de diálogo de confirmação, escolha **Sim** para implantar a política agora ou **Não** para criar a política sem implantá-la.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-140">In the confirmation dialog box, choose **Yes** to deploy the policy now, or choose **No** to create the policy without deploying it.</span></span>
 
-Você pode exibir e editar a nova política navegando pelas seções de cada tipo de política no espaço de trabalho **Política**.
+<span data-ttu-id="bbf8d-141">Você pode exibir e editar a nova política navegando pelas seções de cada tipo de política no espaço de trabalho **Política**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-141">You can view and edit the new policy by browsing through the sections for each policy type in the **Policy** workspace.</span></span>
 
-Ao criar uma política que usa as configurações recomendadas, o nome da nova política é uma combinação do nome do modelo, da data e da hora. Ao editar a política, o nome é atualizado com a hora e a data da edição.
+<span data-ttu-id="bbf8d-142">Ao criar uma política que usa as configurações recomendadas, o nome da nova política é uma combinação do nome do modelo, da data e da hora.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-142">When you create a policy that uses the recommended settings, the name of the new policy is a combination of the template name, date, and time.</span></span> <span data-ttu-id="bbf8d-143">Ao editar a política, o nome é atualizado com a hora e a data da edição.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-143">When you edit the policy, the name is updated with the time and date of the edit.</span></span>
 
-Após criar uma política, geralmente você desejará implantá-la em um ou mais grupos de usuários ou dispositivos.
+<span data-ttu-id="bbf8d-144">Após criar uma política, geralmente você desejará implantá-la em um ou mais grupos de usuários ou dispositivos.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-144">After you create a policy, you will typically want to deploy it to one or more groups of users or devices.</span></span>
 
 > [!TIP]
-> Você não implanta todos os tipos de política. Por exemplo, a política de MAM (gerenciamento de aplicativo móvel) não é implantada. Esse tipo de política está associado um aplicativo, que então você implanta.
+> <span data-ttu-id="bbf8d-145">Você não implanta todos os tipos de política.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-145">You don't deploy all policy types.</span></span> <span data-ttu-id="bbf8d-146">Por exemplo, a política de MAM (gerenciamento de aplicativo móvel) não é implantada.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-146">For example, the mobile application management (MAM) policy is not deployed.</span></span> <span data-ttu-id="bbf8d-147">Esse tipo de política está associado um aplicativo, que então você implanta.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-147">This policy type is instead associated with an app, which you then deploy.</span></span>
 
-## <a name="deploy-a-configuration-policy"></a>Implantar uma política de configuração
+## <span data-ttu-id="bbf8d-148">Implantar uma política de configuração</span><span class="sxs-lookup"><span data-stu-id="bbf8d-148">Deploy a configuration policy</span></span>
+<a id="deploy-a-configuration-policy" class="xliff"></a>
 
-1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
+1.  <span data-ttu-id="bbf8d-149">No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-149">In the **Policy** workspace, select the policy that you want to deploy, and then choose **Manage Deployment**.</span></span>
 
-2.  Na caixa de diálogo **Gerenciar implantação**:
+2.  <span data-ttu-id="bbf8d-150">Na caixa de diálogo **Gerenciar implantação**:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-150">In the **Manage Deployment** dialog box:</span></span>
 
-    -   Para implantar a política, selecione um ou mais grupos aos quais você deseja implantar a política e selecione **Adicionar** &gt; **OK**.
+    -   <span data-ttu-id="bbf8d-151">Para implantar a política, selecione um ou mais grupos aos quais você deseja implantar a política e selecione **Adicionar** &gt; **OK**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-151">To deploy the policy, select one or more groups to which you want to deploy the policy, and then choose **Add** &gt; **OK**.</span></span>
 
-    -   Para fechar a caixa de diálogo sem implantar a política, selecione **Cancelar**.
+    -   <span data-ttu-id="bbf8d-152">Para fechar a caixa de diálogo sem implantar a política, selecione **Cancelar**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-152">To close the dialog box without deploying the policy, choose **Cancel**.</span></span>
 
-Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.
+<span data-ttu-id="bbf8d-153">Quando você seleciona uma política implantada, pode exibir mais informações sobre a implantação na parte inferior da lista de políticas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-153">When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.</span></span>
 
-## <a name="manage-policies"></a>Gerenciar políticas
+## <span data-ttu-id="bbf8d-154">Gerenciar políticas</span><span class="sxs-lookup"><span data-stu-id="bbf8d-154">Manage policies</span></span>
+<a id="manage-policies" class="xliff"></a>
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Política**, navegue até e selecione a política que você deseja gerenciar.
+1.  <span data-ttu-id="bbf8d-155">No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Política**, navegue até e selecione a política que você deseja gerenciar.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-155">In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy**, and then browse to and select the policy that you want to manage.</span></span>
 
-2.  Selecione uma das seguintes ações:
+2.  <span data-ttu-id="bbf8d-156">Selecione uma das seguintes ações:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-156">Select one of the following actions:</span></span>
 
-- **Editar:** abra as propriedades da política selecionada para que você possa fazer alterações.
-- **Excluir**: exclui a política selecionada.<br>Ao excluir uma diretiva, ela é removida de todos os grupos nos quais foi implantada.
-- **Gerenciar a Implantação**: selecione o grupo no qual você deseja implantar a política e clique em **Adicionar**.
-
-
-## <a name="frequently-asked-questions-about-intune-policies"></a>Perguntas frequentes sobre as políticas do Intune
-
-### <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Quanto tempo leva para dispositivos móveis obterem uma política ou os aplicativos depois de terem sido implantados?
-Quando uma política ou um aplicativo é implantado, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer o check-in com o serviço do Intune. Em geral, isso leva menos de cinco minutos.
-
-Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas.  Se o dispositivo estiver offline (por exemplo, desativado ou desconectado da rede), ele poderá não receber as notificações. Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:
-
-- iOS e Mac OS X: a cada 6 horas.
-- Android: a cada 8 horas.
-- Windows Phone: a cada 8 horas.
-- Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada 8 horas.
-
-Se o dispositivo tiver sido registrado recentemente, a frequência de check-in será maior, da seguinte maneira:
-
-- iOS e Mac OS X: a cada 15 minutos por 6 horas, depois a cada 6 horas.
-- Android: a cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.
-- Windows Phone: a cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.
-- Computadores Windows registrados como dispositivos: a cada 3 minutos por 30 minutos e a cada 8 horas.
-
-Os usuários também podem iniciar o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer momento.
-
-### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem com que o Intune envie imediatamente uma notificação para um dispositivo?
-Os dispositivos fazem o check-in no Intune quando recebem uma notificação que os informa para fazer check-in ou durante o check-in agendado regularmente.  Quando você seleciona um dispositivo ou usuário especificamente com uma ação como apagamento, bloqueio, redefinição de senha, implantação de aplicativo, implantação do perfil (Wi-Fi, VPN, email, etc.) ou implantação de política, o Intune começa imediatamente a tentar notificar o dispositivo de que ele deve fazer check-in no serviço Intune para receber essas atualizações.
-
-Outras alterações, como revisar as informações de contato no portal da empresa, não causam uma notificação imediata para os dispositivos.
-
-### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Se várias políticas forem implantadas para o mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?
-Quando duas ou mais políticas são implantadas para o mesmo usuário ou dispositivo, a avaliação de qual configuração é aplicada ocorre no nível da configuração individual:
-
--   Configurações de política de conformidade sempre têm precedência sobre configurações da política.
-
--   A configuração de política de conformidade mais restritiva é aplicada se avaliada em relação à mesma configuração em uma política de conformidade diferente.
-
--   Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune. Você deve resolver esses conflitos manualmente.
-
-### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>O que acontece quando as políticas de gerenciamento de aplicativo móvel entram em conflito entre si? Qual delas será aplicada ao aplicativo?
-Os valores de conflito são as configurações mais restritivas disponíveis em uma política de MAM, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).  Os campos de entrada de número serão definidos com os mesmos valores, como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.
-
-Os conflitos ocorrem quando duas configurações de política são iguais.  Por exemplo, você configurou duas políticas MAM idênticas, exceto pela configuração de copiar/colar.  Nesse cenário, a configuração de copiar/colar será definida para o valor mais restritivo, mas o restante das configurações será aplicado como configurado.
-
-Se uma política for implantada para o aplicativo e entrar em vigor e então uma segunda for implantada, a primeira terá precedência e continuará em vigor, enquanto a segunda aparecerá como estando em conflito. Se as duas forem aplicadas ao mesmo tempo, o que significa que não há política anterior, as duas estarão em conflito. Quaisquer configurações conflitantes serão definidas com os valores mais restritivos.
-
-### <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando há conflito de políticas personalizadas de iOS?
-O Intune não avalia o conteúdo dos arquivos de Configuração da Apple ou uma política personalizada de URI-OMA (Open Mobile Alliance Uniform Resource Identifier). Ele simplesmente serve como o mecanismo de entrega.
-
-Quando você implantar uma política personalizada, garanta que as configurações definidas não entrem em conflito com as políticas de conformidade, configuração ou outras políticas personalizadas. No caso de uma política personalizada com configurações entrar em conflitos, a ordem na qual as configurações são aplicadas é aleatória.
-
-### <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>O que acontece quando uma política é excluída ou não é mais aplicável?
-Quando você exclui uma política ou remove um dispositivo de um grupo no qual uma política foi implantada, a política e as configurações são removidas do dispositivo de acordo com as listas a seguir.
-
-#### <a name="enrolled-devices"></a>Dispositivos registrados
-
-- Perfis de email, certificado, VPN e Wi-Fi: esses perfis são removidos de todos os dispositivos registrados com suporte.
-- Todos os outros tipos de política:
-    - **Dispositivos Android e Windows**: as configurações não são removidas do dispositivo.
-    - **Dispositivos Windows Phone 8.1**: as configurações a seguir são removidas:
-        - Exigir uma senha para desbloquear os dispositivos móveis
-        - Permitir senha simples
-        - Comprimento mínimo da senha
-        - Tipo de senha necessária
-        - Expiração da senha (dias)
-        - Lembrar de histórico de senha
-        - Número de falhas de logon repetidas permitido antes do dispositivo ser apagado
-        - Minutos de inatividade antes de a senha ser necessária
-        - Tipo de senha necessária – o número mínimo de conjuntos de caracteres
-        - Permitir câmera
-        - Exigir criptografia no dispositivo móvel
-        - Permitir armazenamento removível
-        - Permitir navegador da web
-        - Permitir loja de aplicativo
-        - Permitir captura de tela
-        - Permitir localização geográfica
-        - Permitir conta da Microsoft
-        - Permitir copiar e colar
-        - Permitir compartilhamento de Internet por Wi-Fi
-        - Permitir conexão automática para liberar pontos de acesso Wi-Fi
-        - Permitir relatórios de pontos de acesso Wi-Fi
-        - Permitir redefinição de fábrica
-        - Permitir Bluetooth
-        - Permitir NFC
-        - Permitir Wi-Fi
-
-    - **iOS**: todas as configurações são removidas, exceto:
-        - Permitir roaming de Voz
-        - Permitir roaming de Dados
-        - Permitir sincronização automática durante roaming
-
-#### <a name="windows-pcs-running-the-intune-client-software"></a>Computadores Windows que executam o software cliente do Intune
-
-- **Configurações do Endpoint Protection**: as configurações são restauradas para os valores recomendados. A única exceção é a configuração **Ingressar no Microsoft Active Protection Service**, cujo valor padrão é **Não**. Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
-- **Configurações de atualizações de software**: as configurações são redefinidas para o estado padrão do sistema operacional. Para obter detalhes, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter os computadores Windows atualizados com as atualizações de software no Microsoft Intune).
-- **Configurações do Microsoft Intune Center**: qualquer informação de contato para suporte configurada pela política é excluída dos computadores.
-- **Configurações do Firewall do Windows**: as configurações são redefinidas para o padrão do sistema operacional do computador. Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
+- <span data-ttu-id="bbf8d-157">**Editar:** abra as propriedades da política selecionada para que você possa fazer alterações.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-157">**Edit**: Open the properties for the selected policy so that you can make changes.</span></span>
+- <span data-ttu-id="bbf8d-158">**Excluir**: exclui a política selecionada.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-158">**Delete**: Delete the selected policy.</span></span><br><span data-ttu-id="bbf8d-159">Ao excluir uma diretiva, ela é removida de todos os grupos nos quais foi implantada.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-159">When you delete a policy, it is removed from all groups to which it was deployed.</span></span>
+- <span data-ttu-id="bbf8d-160">**Gerenciar a Implantação**: selecione o grupo no qual você deseja implantar a política e clique em **Adicionar**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-160">**Manage Deployment**: Select the group that you want to deploy the policy to, and then choose **Add**.</span></span>
 
 
-### <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>Como posso atualizar as políticas em um dispositivo para garantir que elas estejam atualizadas (aplica-se apenas aos computadores Windows que executam software cliente do Intune)?
+## <span data-ttu-id="bbf8d-161">Perguntas frequentes sobre as políticas do Intune</span><span class="sxs-lookup"><span data-stu-id="bbf8d-161">Frequently asked questions about Intune policies</span></span>
+<a id="frequently-asked-questions-about-intune-policies" class="xliff"></a>
 
-1.  Em qualquer grupo de dispositivos selecione os dispositivos nos quais deseja atualizar as políticas e, em seguida, clique em **Tarefas Remotas** &gt; **Atualizar Políticas**.
-2.  Selecione **Tarefas Remotas**, no canto inferior direito da janela do console de administração do Intune para verificar o status da tarefa.
+### <span data-ttu-id="bbf8d-162">Quanto tempo leva para dispositivos móveis obterem uma política ou os aplicativos depois de terem sido implantados?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-162">How long does it take for mobile devices to get a policy or apps after they have been deployed?</span></span>
+<a id="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed" class="xliff"></a>
+<span data-ttu-id="bbf8d-163">Quando uma política ou um aplicativo é implantado, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer o check-in com o serviço do Intune.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-163">When a policy or an app is deployed, Intune immediately begins attempting to notify the device that it should check in with the Intune service.</span></span> <span data-ttu-id="bbf8d-164">Em geral, isso leva menos de cinco minutos.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-164">This typically takes less than five minutes.</span></span>
 
-### <a name="where-can-i-find-help-troubleshooting-policies"></a>Onde posso encontrar ajuda para solucionar problemas de políticas?
+<span data-ttu-id="bbf8d-165">Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-165">If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.</span></span>  <span data-ttu-id="bbf8d-166">Se o dispositivo estiver offline (por exemplo, desativado ou desconectado da rede), ele poderá não receber as notificações.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-166">If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications.</span></span> <span data-ttu-id="bbf8d-167">Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-167">In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:</span></span>
 
-Consulte [Troubleshoot policies in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune) (Políticas de solução de problemas no Microsoft Intune).
+- <span data-ttu-id="bbf8d-168">iOS e Mac OS X: a cada 6 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-168">iOS and Mac OS X: Every 6 hours.</span></span>
+- <span data-ttu-id="bbf8d-169">Android: a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-169">Android: Every 8 hours.</span></span>
+- <span data-ttu-id="bbf8d-170">Windows Phone: a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-170">Windows Phone: Every 8 hours.</span></span>
+- <span data-ttu-id="bbf8d-171">Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-171">Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.</span></span>
+
+<span data-ttu-id="bbf8d-172">Se o dispositivo tiver sido registrado recentemente, a frequência de check-in será maior, da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-172">If the device has just enrolled, the check-in frequency will be more frequent, as follows:</span></span>
+
+- <span data-ttu-id="bbf8d-173">iOS e Mac OS X: a cada 15 minutos por 6 horas, depois a cada 6 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-173">iOS and Mac OS X: Every 15 minutes for 6 hours, and then every 6 hours.</span></span>
+- <span data-ttu-id="bbf8d-174">Android: a cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-174">Android: Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.</span></span>
+- <span data-ttu-id="bbf8d-175">Windows Phone: a cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-175">Windows Phone: Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.</span></span>
+- <span data-ttu-id="bbf8d-176">Computadores Windows registrados como dispositivos: a cada 3 minutos por 30 minutos e a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-176">Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.</span></span>
+
+<span data-ttu-id="bbf8d-177">Os usuários também podem iniciar o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-177">Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.</span></span>
+
+### <span data-ttu-id="bbf8d-178">Que ações fazem com que o Intune envie imediatamente uma notificação para um dispositivo?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-178">What actions cause Intune to immediately send a notification to a device?</span></span>
+<a id="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device" class="xliff"></a>
+<span data-ttu-id="bbf8d-179">Os dispositivos fazem o check-in no Intune quando recebem uma notificação que os informa para fazer check-in ou durante o check-in agendado regularmente.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-179">Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.</span></span>  <span data-ttu-id="bbf8d-180">Quando você seleciona um dispositivo ou usuário especificamente com uma ação como apagamento, bloqueio, redefinição de senha, implantação de aplicativo, implantação do perfil (Wi-Fi, VPN, email, etc.) ou implantação de política, o Intune começa imediatamente a tentar notificar o dispositivo de que ele deve fazer check-in no serviço Intune para receber essas atualizações.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-180">When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.</span></span>
+
+<span data-ttu-id="bbf8d-181">Outras alterações, como revisar as informações de contato no portal da empresa, não causam uma notificação imediata para os dispositivos.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-181">Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.</span></span>
+
+### <span data-ttu-id="bbf8d-182">Se várias políticas forem implantadas para o mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-182">If multiple policies are deployed to the same user or device, how do I know which settings will get applied?</span></span>
+<a id="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied" class="xliff"></a>
+<span data-ttu-id="bbf8d-183">Quando duas ou mais políticas são implantadas para o mesmo usuário ou dispositivo, a avaliação de qual configuração é aplicada ocorre no nível da configuração individual:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-183">When two or more policies are deployed to the same user or device, the evaluation for which setting is applied happens at the individual setting level:</span></span>
+
+-   <span data-ttu-id="bbf8d-184">Configurações de política de conformidade sempre têm precedência sobre configurações da política.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-184">Compliance policy settings always have precedence over configuration policy settings.</span></span>
+
+-   <span data-ttu-id="bbf8d-185">A configuração de política de conformidade mais restritiva é aplicada se avaliada em relação à mesma configuração em uma política de conformidade diferente.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-185">The most restrictive compliance policy setting is applied if it is evaluated against the same setting in a different compliance policy.</span></span>
+
+-   <span data-ttu-id="bbf8d-186">Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-186">If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console.</span></span> <span data-ttu-id="bbf8d-187">Você deve resolver esses conflitos manualmente.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-187">You must manually resolve such conflicts.</span></span>
+
+### <span data-ttu-id="bbf8d-188">O que acontece quando as políticas de gerenciamento de aplicativo móvel entram em conflito entre si?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-188">What happens when mobile application management policies conflict with each other?</span></span> <span data-ttu-id="bbf8d-189">Qual delas será aplicada ao aplicativo?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-189">Which one will be applied to the app?</span></span>
+<a id="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app" class="xliff"></a>
+<span data-ttu-id="bbf8d-190">Os valores de conflito são as configurações mais restritivas disponíveis em uma política de MAM, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-190">Conflict values are the most restrictive settings available in a MAM policy, except for the number entry fields (like PIN attempts before reset).</span></span>  <span data-ttu-id="bbf8d-191">Os campos de entrada de número serão definidos com os mesmos valores, como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-191">The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.</span></span>
+
+<span data-ttu-id="bbf8d-192">Os conflitos ocorrem quando duas configurações de política são iguais.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-192">Conflicts occur when two policy settings are the same.</span></span>  <span data-ttu-id="bbf8d-193">Por exemplo, você configurou duas políticas MAM idênticas, exceto pela configuração de copiar/colar.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-193">For example, you configured two MAM policies that are identical except for the copy/paste setting.</span></span>  <span data-ttu-id="bbf8d-194">Nesse cenário, a configuração de copiar/colar será definida para o valor mais restritivo, mas o restante das configurações será aplicado como configurado.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-194">In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.</span></span>
+
+<span data-ttu-id="bbf8d-195">Se uma política for implantada para o aplicativo e entrar em vigor e então uma segunda for implantada, a primeira terá precedência e continuará em vigor, enquanto a segunda aparecerá como estando em conflito.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-195">If one policy is deployed to the app and takes effect, and then a second one is deployed, the first one will take precedence and stay applied, while the second shows in conflict.</span></span> <span data-ttu-id="bbf8d-196">Se as duas forem aplicadas ao mesmo tempo, o que significa que não há política anterior, as duas estarão em conflito.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-196">If they are both applied at the same time, meaning that there is no preceding policy, then they will both be in conflict.</span></span> <span data-ttu-id="bbf8d-197">Quaisquer configurações conflitantes serão definidas com os valores mais restritivos.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-197">Any conflicting settings will be set to the most restrictive values.</span></span>
+
+### <span data-ttu-id="bbf8d-198">O que acontece quando há conflito de políticas personalizadas de iOS?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-198">What happens when iOS custom policies conflict?</span></span>
+<a id="what-happens-when-ios-custom-policies-conflict" class="xliff"></a>
+<span data-ttu-id="bbf8d-199">O Intune não avalia o conteúdo dos arquivos de Configuração da Apple ou uma política personalizada de URI-OMA (Open Mobile Alliance Uniform Resource Identifier).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-199">Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) policy.</span></span> <span data-ttu-id="bbf8d-200">Ele simplesmente serve como o mecanismo de entrega.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-200">It merely serves as the delivery mechanism.</span></span>
+
+<span data-ttu-id="bbf8d-201">Quando você implantar uma política personalizada, garanta que as configurações definidas não entrem em conflito com as políticas de conformidade, configuração ou outras políticas personalizadas.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-201">When you deploy a custom policy, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies.</span></span> <span data-ttu-id="bbf8d-202">No caso de uma política personalizada com configurações entrar em conflitos, a ordem na qual as configurações são aplicadas é aleatória.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-202">In the case of a custom policy with settings conflicts, the order in which settings are applied is random.</span></span>
+
+### <span data-ttu-id="bbf8d-203">O que acontece quando uma política é excluída ou não é mais aplicável?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-203">What happens when a policy is deleted or no longer applicable?</span></span>
+<a id="what-happens-when-a-policy-is-deleted-or-no-longer-applicable" class="xliff"></a>
+<span data-ttu-id="bbf8d-204">Quando você exclui uma política ou remove um dispositivo de um grupo no qual uma política foi implantada, a política e as configurações são removidas do dispositivo de acordo com as listas a seguir.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-204">When you delete a policy, or you remove a device from a group to which a policy was deployed, the policy and settings will be removed from the device according to the following lists.</span></span>
+
+#### <span data-ttu-id="bbf8d-205">Dispositivos registrados</span><span class="sxs-lookup"><span data-stu-id="bbf8d-205">Enrolled devices</span></span>
+<a id="enrolled-devices" class="xliff"></a>
+
+- <span data-ttu-id="bbf8d-206">Perfis de email, certificado, VPN e Wi-Fi: esses perfis são removidos de todos os dispositivos registrados com suporte.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-206">Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.</span></span>
+- <span data-ttu-id="bbf8d-207">Todos os outros tipos de política:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-207">All other policy types:</span></span>
+    - <span data-ttu-id="bbf8d-208">**Dispositivos Android e Windows**: as configurações não são removidas do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-208">**Windows and Android devices**: Settings are not removed from the device.</span></span>
+    - <span data-ttu-id="bbf8d-209">**Dispositivos Windows Phone 8.1**: as configurações a seguir são removidas:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-209">**Windows Phone 8.1 devices**: The following settings are removed:</span></span>
+        - <span data-ttu-id="bbf8d-210">Exigir uma senha para desbloquear os dispositivos móveis</span><span class="sxs-lookup"><span data-stu-id="bbf8d-210">Require a password to unlock mobile devices</span></span>
+        - <span data-ttu-id="bbf8d-211">Permitir senha simples</span><span class="sxs-lookup"><span data-stu-id="bbf8d-211">Allow simple passwords</span></span>
+        - <span data-ttu-id="bbf8d-212">Comprimento mínimo da senha</span><span class="sxs-lookup"><span data-stu-id="bbf8d-212">Minimum password length</span></span>
+        - <span data-ttu-id="bbf8d-213">Tipo de senha necessária</span><span class="sxs-lookup"><span data-stu-id="bbf8d-213">Required password type</span></span>
+        - <span data-ttu-id="bbf8d-214">Expiração da senha (dias)</span><span class="sxs-lookup"><span data-stu-id="bbf8d-214">Password expiration (days)</span></span>
+        - <span data-ttu-id="bbf8d-215">Lembrar de histórico de senha</span><span class="sxs-lookup"><span data-stu-id="bbf8d-215">Remember password history</span></span>
+        - <span data-ttu-id="bbf8d-216">Número de falhas de logon repetidas permitido antes do dispositivo ser apagado</span><span class="sxs-lookup"><span data-stu-id="bbf8d-216">Number of repeated sign-in failures to allow before the device is wiped</span></span>
+        - <span data-ttu-id="bbf8d-217">Minutos de inatividade antes de a senha ser necessária</span><span class="sxs-lookup"><span data-stu-id="bbf8d-217">Minutes of inactivity before password is required</span></span>
+        - <span data-ttu-id="bbf8d-218">Tipo de senha necessária – o número mínimo de conjuntos de caracteres</span><span class="sxs-lookup"><span data-stu-id="bbf8d-218">Required password type – minimum number of character sets</span></span>
+        - <span data-ttu-id="bbf8d-219">Permitir câmera</span><span class="sxs-lookup"><span data-stu-id="bbf8d-219">Allow camera</span></span>
+        - <span data-ttu-id="bbf8d-220">Exigir criptografia no dispositivo móvel</span><span class="sxs-lookup"><span data-stu-id="bbf8d-220">Require encryption on mobile device</span></span>
+        - <span data-ttu-id="bbf8d-221">Permitir armazenamento removível</span><span class="sxs-lookup"><span data-stu-id="bbf8d-221">Allow removable storage</span></span>
+        - <span data-ttu-id="bbf8d-222">Permitir navegador da web</span><span class="sxs-lookup"><span data-stu-id="bbf8d-222">Allow web browser</span></span>
+        - <span data-ttu-id="bbf8d-223">Permitir loja de aplicativo</span><span class="sxs-lookup"><span data-stu-id="bbf8d-223">Allow application store</span></span>
+        - <span data-ttu-id="bbf8d-224">Permitir captura de tela</span><span class="sxs-lookup"><span data-stu-id="bbf8d-224">Allow screen capture</span></span>
+        - <span data-ttu-id="bbf8d-225">Permitir localização geográfica</span><span class="sxs-lookup"><span data-stu-id="bbf8d-225">Allow geolocation</span></span>
+        - <span data-ttu-id="bbf8d-226">Permitir conta da Microsoft</span><span class="sxs-lookup"><span data-stu-id="bbf8d-226">Allow Microsoft account</span></span>
+        - <span data-ttu-id="bbf8d-227">Permitir copiar e colar</span><span class="sxs-lookup"><span data-stu-id="bbf8d-227">Allow copy and paste</span></span>
+        - <span data-ttu-id="bbf8d-228">Permitir compartilhamento de Internet por Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="bbf8d-228">Allow Wi-Fi tethering</span></span>
+        - <span data-ttu-id="bbf8d-229">Permitir conexão automática para liberar pontos de acesso Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="bbf8d-229">Allow automatic connection to free Wi-Fi hotspots</span></span>
+        - <span data-ttu-id="bbf8d-230">Permitir relatórios de pontos de acesso Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="bbf8d-230">Allow Wi-Fi hotspot reporting</span></span>
+        - <span data-ttu-id="bbf8d-231">Permitir redefinição de fábrica</span><span class="sxs-lookup"><span data-stu-id="bbf8d-231">Allow factory reset</span></span>
+        - <span data-ttu-id="bbf8d-232">Permitir Bluetooth</span><span class="sxs-lookup"><span data-stu-id="bbf8d-232">Allow Bluetooth</span></span>
+        - <span data-ttu-id="bbf8d-233">Permitir NFC</span><span class="sxs-lookup"><span data-stu-id="bbf8d-233">Allow NFC</span></span>
+        - <span data-ttu-id="bbf8d-234">Permitir Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="bbf8d-234">Allow Wi-Fi</span></span>
+
+    - <span data-ttu-id="bbf8d-235">**iOS**: todas as configurações são removidas, exceto:</span><span class="sxs-lookup"><span data-stu-id="bbf8d-235">**iOS**: All settings are removed, except:</span></span>
+        - <span data-ttu-id="bbf8d-236">Permitir roaming de Voz</span><span class="sxs-lookup"><span data-stu-id="bbf8d-236">Allow voice roaming</span></span>
+        - <span data-ttu-id="bbf8d-237">Permitir roaming de Dados</span><span class="sxs-lookup"><span data-stu-id="bbf8d-237">Allow data roaming</span></span>
+        - <span data-ttu-id="bbf8d-238">Permitir sincronização automática durante roaming</span><span class="sxs-lookup"><span data-stu-id="bbf8d-238">Allow automatic synchronization while roaming</span></span>
+
+#### <span data-ttu-id="bbf8d-239">Computadores Windows que executam o software cliente do Intune</span><span class="sxs-lookup"><span data-stu-id="bbf8d-239">Windows PCs running the Intune client software</span></span>
+<a id="windows-pcs-running-the-intune-client-software" class="xliff"></a>
+
+- <span data-ttu-id="bbf8d-240">**Configurações do Endpoint Protection**: as configurações são restauradas para os valores recomendados.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-240">**Endpoint Protection settings**: Settings are restored to their recommended values.</span></span> <span data-ttu-id="bbf8d-241">A única exceção é a configuração **Ingressar no Microsoft Active Protection Service**, cujo valor padrão é **Não**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-241">The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**.</span></span> <span data-ttu-id="bbf8d-242">Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-242">For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).</span></span>
+- <span data-ttu-id="bbf8d-243">**Configurações de atualizações de software**: as configurações são redefinidas para o estado padrão do sistema operacional.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-243">**Software updates settings**: Settings are reset to the default state for the operating system.</span></span> <span data-ttu-id="bbf8d-244">Para obter detalhes, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter os computadores Windows atualizados com as atualizações de software no Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-244">For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).</span></span>
+- <span data-ttu-id="bbf8d-245">**Configurações do Microsoft Intune Center**: qualquer informação de contato para suporte configurada pela política é excluída dos computadores.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-245">**Microsoft Intune Center settings**: Any support contact information that was configured by the policy is deleted from computers.</span></span>
+- <span data-ttu-id="bbf8d-246">**Configurações do Firewall do Windows**: as configurações são redefinidas para o padrão do sistema operacional do computador.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-246">**Windows Firewall settings**: Settings are reset to the default for the computer operating system.</span></span> <span data-ttu-id="bbf8d-247">Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-247">For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).</span></span>
+
+
+### <span data-ttu-id="bbf8d-248">Como posso atualizar as políticas em um dispositivo para garantir que elas estejam atualizadas (aplica-se apenas aos computadores Windows que executam software cliente do Intune)?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-248">How can I refresh the policies on a device to ensure that they are current (applies to Windows PCs running the Intune client software only)?</span></span>
+<a id="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only" class="xliff"></a>
+
+1.  <span data-ttu-id="bbf8d-249">Em qualquer grupo de dispositivos selecione os dispositivos nos quais deseja atualizar as políticas e, em seguida, clique em **Tarefas Remotas** &gt; **Atualizar Políticas**.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-249">In any device group, select the devices on which you want to refresh the policies, and then choose **Remote Tasks** &gt; **Refresh Policies**.</span></span>
+2.  <span data-ttu-id="bbf8d-250">Selecione **Tarefas Remotas**, no canto inferior direito da janela do console de administração do Intune para verificar o status da tarefa.</span><span class="sxs-lookup"><span data-stu-id="bbf8d-250">Choose **Remote Tasks** in the lower-right corner of the Intune administration console to check the task status.</span></span>
+
+### <span data-ttu-id="bbf8d-251">Onde posso encontrar ajuda para solucionar problemas de políticas?</span><span class="sxs-lookup"><span data-stu-id="bbf8d-251">Where can I find help troubleshooting policies?</span></span>
+<a id="where-can-i-find-help-troubleshooting-policies" class="xliff"></a>
+
+<span data-ttu-id="bbf8d-252">Consulte [Troubleshoot policies in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune) (Políticas de solução de problemas no Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="bbf8d-252">See [Troubleshoot policies in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune).</span></span>

@@ -20,45 +20,48 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="whats-conditional-access"></a>O que é o acesso condicional?
+# <span data-ttu-id="5d3ba-103">O que é o acesso condicional?</span><span class="sxs-lookup"><span data-stu-id="5d3ba-103">What's conditional access?</span></span>
+<a id="whats-conditional-access" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Este tópico descreve o Acesso condicional, conforme ele se aplica ao EMS (Enterprise Mobility + Security) e apresenta, em seguida, cenários comuns do Acesso condicional ao usar o Intune.
+<span data-ttu-id="5d3ba-104">Este tópico descreve o Acesso condicional, conforme ele se aplica ao EMS (Enterprise Mobility + Security) e apresenta, em seguida, cenários comuns do Acesso condicional ao usar o Intune.</span><span class="sxs-lookup"><span data-stu-id="5d3ba-104">This topic describes Conditional access as it applies to Enterprise Mobility + Security (EMS), and follows that with Conditional access common scenarios when using Intune.</span></span>
 
-O Acesso Condicional do EMS (Enterprise Mobility + Security) não é um produto autônomo, mas uma solução que integra todos os serviços e produtos que fazem parte do EMS. Ele fornece controle de acesso granular para proteger os dados da empresa, ao mesmo tempo que oferece aos usuários uma experiência que lhes permite fazer o melhor trabalho em qualquer dispositivo e em qualquer localização.
+<span data-ttu-id="5d3ba-105">O Acesso Condicional do EMS (Enterprise Mobility + Security) não é um produto autônomo, mas uma solução que integra todos os serviços e produtos que fazem parte do EMS.</span><span class="sxs-lookup"><span data-stu-id="5d3ba-105">Enterprise Mobility + Security (EMS) Conditional Access is not a standalone product, it’s a solution that takes part on all services and products that are part of the EMS.</span></span> <span data-ttu-id="5d3ba-106">Ele fornece controle de acesso granular para proteger os dados da empresa, ao mesmo tempo que oferece aos usuários uma experiência que lhes permite fazer o melhor trabalho em qualquer dispositivo e em qualquer localização.</span><span class="sxs-lookup"><span data-stu-id="5d3ba-106">It provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.</span></span>
 
-Você pode definir condições que fornecem acesso aos dados corporativos com base na localização, no dispositivo, no estado do usuário e na sensibilidade do aplicativo.
+<span data-ttu-id="5d3ba-107">Você pode definir condições que fornecem acesso aos dados corporativos com base na localização, no dispositivo, no estado do usuário e na sensibilidade do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="5d3ba-107">You can define conditions that gate access to your corporate data based on location, device, user state, and application sensitivity.</span></span>
 
 > [!NOTE] 
-> O Acesso Condicional também estende suas funcionalidades aos [serviços do Office 365](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).
+> <span data-ttu-id="5d3ba-108">O Acesso Condicional também estende suas funcionalidades aos [serviços do Office 365](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).</span><span class="sxs-lookup"><span data-stu-id="5d3ba-108">Conditional Access also extends its capabilities to [Office 365 services](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).</span></span>
 
 ![Diagrama de arquitetura do acesso condicional](./media/ca-diagram-1.png)
 
-## <a name="conditional-access-with-intune"></a>Acesso condicional com o Intune
+## <span data-ttu-id="5d3ba-110">Acesso condicional com o Intune</span><span class="sxs-lookup"><span data-stu-id="5d3ba-110">Conditional access with Intune</span></span>
+<a id="conditional-access-with-intune" class="xliff"></a>
 
-O Intune adiciona funcionalidades de conformidade e gerenciamento de dispositivo móvel para dar suporte à solução Acesso Condicional do EMS.
+<span data-ttu-id="5d3ba-111">O Intune adiciona funcionalidades de conformidade e gerenciamento de dispositivo móvel para dar suporte à solução Acesso Condicional do EMS.</span><span class="sxs-lookup"><span data-stu-id="5d3ba-111">Intune adds mobile device compliance and mobile application management capabilities to support the EMS Conditional Access solution.</span></span>
 
 ![Intune e acesso condicional durante o uso do EMS](./media/intune-with-ca-1.png)
 
-Maneiras de usar o acesso condicional com o Intune:
+<span data-ttu-id="5d3ba-113">Maneiras de usar o acesso condicional com o Intune:</span><span class="sxs-lookup"><span data-stu-id="5d3ba-113">Ways to use conditional access with Intune:</span></span>
 
--   **Acesso condicional baseado no dispositivo**
+-   <span data-ttu-id="5d3ba-114">**Acesso condicional baseado no dispositivo**</span><span class="sxs-lookup"><span data-stu-id="5d3ba-114">**Device-based conditional access**</span></span>
 
-    -   Acesso condicional para o Exchange Local
+    -   <span data-ttu-id="5d3ba-115">Acesso condicional para o Exchange Local</span><span class="sxs-lookup"><span data-stu-id="5d3ba-115">Conditional access for Exchange on-premises</span></span>
 
-    -   Acesso condicional baseado em controle de acesso à rede
+    -   <span data-ttu-id="5d3ba-116">Acesso condicional baseado em controle de acesso à rede</span><span class="sxs-lookup"><span data-stu-id="5d3ba-116">Conditional access based on network access control</span></span>
 
-    -   Acesso condicional baseado nos riscos do dispositivo
+    -   <span data-ttu-id="5d3ba-117">Acesso condicional baseado nos riscos do dispositivo</span><span class="sxs-lookup"><span data-stu-id="5d3ba-117">Conditional access based on device risk</span></span>
 
-    -   Acesso condicional para computadores Windows
+    -   <span data-ttu-id="5d3ba-118">Acesso condicional para computadores Windows</span><span class="sxs-lookup"><span data-stu-id="5d3ba-118">Conditional access for Windows PCs</span></span>
 
-        -   De propriedade corporativa
+        -   <span data-ttu-id="5d3ba-119">De propriedade corporativa</span><span class="sxs-lookup"><span data-stu-id="5d3ba-119">Corporate-owned</span></span>
 
-        -   BYOD (Traga seu próprio dispositivo)
+        -   <span data-ttu-id="5d3ba-120">BYOD (Traga seu próprio dispositivo)</span><span class="sxs-lookup"><span data-stu-id="5d3ba-120">Bring your own device (BYOD)</span></span>
 
--   **Acesso condicional baseado no aplicativo**
+-   <span data-ttu-id="5d3ba-121">**Acesso condicional baseado no aplicativo**</span><span class="sxs-lookup"><span data-stu-id="5d3ba-121">**App-based conditional access**</span></span>
 
-## <a name="next-steps"></a>Próximas etapas
+## <span data-ttu-id="5d3ba-122">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="5d3ba-122">Next steps</span></span>
+<a id="next-steps" class="xliff"></a>
 
-[Maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md)
+[<span data-ttu-id="5d3ba-123">Maneiras comuns de usar o acesso condicional com o Intune</span><span class="sxs-lookup"><span data-stu-id="5d3ba-123">Common ways to use conditional access with Intune</span></span>](conditional-access-intune-common-ways-use.md)
