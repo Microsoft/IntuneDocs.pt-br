@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## <span data-ttu-id="74fa3-101">Habilitar o registro automático do Windows 10</span><span class="sxs-lookup"><span data-stu-id="74fa3-101">Enable Windows 10 automatic enrollment</span></span>
+=======
+## Habilitar o registro automático do Windows 10
+>>>>>>> live
 <a id="enable-windows-10-automatic-enrollment" class="xliff"></a>
 
 <span data-ttu-id="74fa3-102">O registro automático permite que os usuários registrem seus dispositivos com Windows 10 no Intune ao adicionar a conta de trabalho a seus dispositivos pessoais, ou ao ingressar seus dispositivos corporativos ao Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="74fa3-102">Automatic enrollment lets users enroll their Windows 10 devices in Intune when adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure Active Directory.</span></span> <span data-ttu-id="74fa3-103">Em segundo plano, o dispositivo do usuário registra-se e ingressa no Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="74fa3-103">In the background, the user's device registers and joins Azure Active Directory.</span></span> <span data-ttu-id="74fa3-104">Depois de registrado, o dispositivo é gerenciado com o Intune.</span><span class="sxs-lookup"><span data-stu-id="74fa3-104">Once registered, the device is managed with Intune.</span></span>
@@ -8,7 +12,11 @@
 - <span data-ttu-id="74fa3-107">Assinatura do Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="74fa3-107">Microsoft Intune subscription</span></span>
 
 
+<<<<<<< HEAD
 ### <span data-ttu-id="74fa3-108">Configurar o registro automático do MDM</span><span class="sxs-lookup"><span data-stu-id="74fa3-108">Configure automatic MDM enrollment</span></span>
+=======
+### Configurar o registro automático do MDM
+>>>>>>> live
 <a id="configure-automatic-mdm-enrollment" class="xliff"></a>
 
 1. <span data-ttu-id="74fa3-109">Entre no [Portal de Gerenciamento do Azure](https://portal.azure.com) (https://manage.windowsazure.com) e selecione **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="74fa3-109">Sign in to the [Azure management portal](https://portal.azure.com) (https://manage.windowsazure.com), and select **Azure Active Directory**.</span></span>
@@ -37,7 +45,13 @@
     - <span data-ttu-id="74fa3-125">**URL da Conformidade do MDM**</span><span class="sxs-lookup"><span data-stu-id="74fa3-125">**MDM Compliance URL**</span></span>
 
     > [!IMPORTANT]
+<<<<<<< HEAD
     > <span data-ttu-id="74fa3-126">Se um usuário for membro de um grupo que tem ambos o registro automático de MDM e MAM habilitados e o usuário tentar ingressar no local de trabalho de seu dispositivo pessoal, somente MAM será habilitado.</span><span class="sxs-lookup"><span data-stu-id="74fa3-126">If a user is a member of a group that has both automatic MDM enrollment and MAM enabled, and the user tries to workplace join their personal device, then only MAM is enabled.</span></span> 
+=======
+    > Se um usuário for membro de um grupo que tem ambos o registro automático de MDM e MAM habilitados e o usuário tentar ingressar no local de trabalho de seu dispositivo pessoal, somente MAM será habilitado. 
+
+6. Selecione **Salvar**.
+>>>>>>> live
 
 6. <span data-ttu-id="74fa3-127">Selecione **Salvar**.</span><span class="sxs-lookup"><span data-stu-id="74fa3-127">Select **Save**.</span></span>
 

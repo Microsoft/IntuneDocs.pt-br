@@ -20,7 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="b559f-103">Solucionar problemas de acesso condicional</span><span class="sxs-lookup"><span data-stu-id="b559f-103">Troubleshoot conditional access</span></span>
+=======
+# Solucionar problemas de acesso condicional
+>>>>>>> live
 <a id="troubleshoot-conditional-access" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -30,7 +34,11 @@ ms.lasthandoff: 07/01/2017
 <span data-ttu-id="b559f-106">Este tópico descreve o que fazer quando os usuários não obtêm acesso aos recursos por meio de acesso condicional do Intune.</span><span class="sxs-lookup"><span data-stu-id="b559f-106">This topic describes what to do when your users fail to get access to resources through Intune conditional access.</span></span>
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-107">Os conceitos básicos para o sucesso no acesso condicional</span><span class="sxs-lookup"><span data-stu-id="b559f-107">The basics for success in conditional access</span></span>
+=======
+## Os conceitos básicos para o sucesso no acesso condicional
+>>>>>>> live
 <a id="the-basics-for-success-in-conditional-access" class="xliff"></a>
 
 <span data-ttu-id="b559f-108">Para que o acesso condicional funcione, são necessárias as seguintes condições:</span><span class="sxs-lookup"><span data-stu-id="b559f-108">In order to conditional access to work, you need the following conditions:</span></span>
@@ -43,13 +51,21 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="b559f-118">Essas condições podem ser exibidas para cada dispositivo no Portal de gerenciamento do Azure e no relatório de inventário de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b559f-118">These conditions can be viewed for each device in the Azure Management Portal and in the device inventory report.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-119">Problemas de registro</span><span class="sxs-lookup"><span data-stu-id="b559f-119">Enrollment issues</span></span>
+=======
+## Problemas de registro
+>>>>>>> live
 <a id="enrollment-issues" class="xliff"></a>
 
  -  <span data-ttu-id="b559f-120">O dispositivo não está registrado, portanto o registro resolverá o problema.</span><span class="sxs-lookup"><span data-stu-id="b559f-120">The device isn't enrolled, so enrollment will resolve the issue.</span></span>
  -  <span data-ttu-id="b559f-121">O usuário registrou o dispositivo, mas houve falha no ingresso no local de trabalho.</span><span class="sxs-lookup"><span data-stu-id="b559f-121">The user enrolled the device, but the workplace join failed.</span></span> <span data-ttu-id="b559f-122">O usuário deve atualizar o registro por meio do portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="b559f-122">The user should update the enrollment from the company portal.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-123">Problemas de conformidade</span><span class="sxs-lookup"><span data-stu-id="b559f-123">Compliance issues</span></span>
+=======
+## Problemas de conformidade
+>>>>>>> live
 <a id="compliance-issues" class="xliff"></a>
 
  -  <span data-ttu-id="b559f-124">O dispositivo não é compatível com a política do Intune.</span><span class="sxs-lookup"><span data-stu-id="b559f-124">The device is not compliant with Intune policy.</span></span> <span data-ttu-id="b559f-125">Problemas comuns são requisitos de senha e criptografia.</span><span class="sxs-lookup"><span data-stu-id="b559f-125">Common issues are encryption and password requirements.</span></span> <span data-ttu-id="b559f-126">O usuário será redirecionado para o portal da empresa, em que ele pode configurar seu dispositivo para que seja compatível.</span><span class="sxs-lookup"><span data-stu-id="b559f-126">The user will be redirected to the company portal, where they can configure their device to be compliant.</span></span>
@@ -67,12 +83,17 @@ ms.lasthandoff: 07/01/2017
     
         -   <span data-ttu-id="b559f-146">Alguns fabricantes de dispositivos criptografam seus dispositivos usando um PIN padrão em vez do PIN secreto definido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="b559f-146">Some device manufacturers encrypt their devices using a default PIN instead of the secret PIN set by the user.</span></span> <span data-ttu-id="b559f-147">O Intune reconhece a criptografia usando o PIN padrão como inseguro, pois esse método de criptografia pode colocar os dados no dispositivo em risco, podendo ser acessados por usuários mal-intencionados com acesso físico ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b559f-147">Intune recognizes encryption using the default PIN as insecure because this method of encryption can put the data on the device at risk from malicious users with physical access to the device.</span></span> <span data-ttu-id="b559f-148">Se esse for o problema, considere o uso de [políticas de proteção do aplicativo](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).</span><span class="sxs-lookup"><span data-stu-id="b559f-148">If this is the issue, consider using [app protection policies](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-149">Problemas de política</span><span class="sxs-lookup"><span data-stu-id="b559f-149">Policy issues</span></span>
+=======
+## Problemas de política
+>>>>>>> live
 <a id="policy-issues" class="xliff"></a>
 
 <span data-ttu-id="b559f-150">Quando você cria uma política de conformidade e a vincula a uma política de email, ambas as políticas precisam ser implantadas para o mesmo usuário. Portanto, tenha cuidado ao planejar quais políticas são implantadas em quais grupos.</span><span class="sxs-lookup"><span data-stu-id="b559f-150">When you create a compliance policy and link it to an email policy, both policies have to be deployed to the same user, so be careful when planning which policies are deployed to which groups.</span></span> <span data-ttu-id="b559f-151">Os usuários que têm apenas uma política aplicada têm uma probabilidade de descobrir que seus dispositivos não são compatíveis.</span><span class="sxs-lookup"><span data-stu-id="b559f-151">Users that have only one policy applied are likely to find that their devices are not compliant.</span></span>
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-152">Problemas com o Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="b559f-152">Exchange ActiveSync issues</span></span>
 <a id="exchange-activesync-issues" class="xliff"></a>
 
@@ -89,6 +110,24 @@ ms.lasthandoff: 07/01/2017
 - <span data-ttu-id="b559f-162">Às vezes, o provisionamento da EASID (ID do Exchange ActiveSync) para o AAD é atrasado.</span><span class="sxs-lookup"><span data-stu-id="b559f-162">Sometimes, provision of the Exchange ActiveSync ID (EASID)  to AAD is delayed.</span></span> <span data-ttu-id="b559f-163">Uma causa comum desse problema é a limitação, então, aguarde alguns minutos e tente novamente.</span><span class="sxs-lookup"><span data-stu-id="b559f-163">A common cause of this issue is throttling, so wait a few minutes and try again.</span></span>
 
 ### <span data-ttu-id="b559f-164">Dispositivo bloqueado</span><span class="sxs-lookup"><span data-stu-id="b559f-164">Device blocked</span></span>
+=======
+## Problemas com o Exchange ActiveSync
+<a id="exchange-activesync-issues" class="xliff"></a>
+
+### Um dispositivo Android compatível recebe aviso de quarentena
+<a id="compliant-android-device-gets-quarantine-notice" class="xliff"></a>
+- Um dispositivo Android registrado e compatível ainda pode receber um aviso de quarentena ao tentar acessar recursos corporativos. Antes de escolher o link que diz **Começar**, o usuário deve verificar se o portal da empresa não estava aberto quando ele tentou acessar os recursos. Os usuários devem fechar o portal da empresa, tente novamente para acessar os recursos e, em seguida, escolher o link **Começar**.
+
+### Um dispositivo desativado continua tendo acesso.
+<a id="retired-device-continues-to-have-access" class="xliff"></a>
+- Durante a utilização do Exchange Online, um dispositivo desativado pode continuar tendo acesso por várias horas após a desativação. Isso ocorre porque o Exchange armazena em cache os direitos de acesso por 6 horas. Considere outros meios de proteção de dados em dispositivos desativados neste cenário.
+
+### O dispositivo é compatível e registrado com o AAD, mas ainda é bloqueado
+<a id="device-is-compliant-and-registered-with-aad-but-still-blocked" class="xliff"></a>
+- Às vezes, o provisionamento da EASID (ID do Exchange ActiveSync) para o AAD é atrasado. Uma causa comum desse problema é a limitação, então, aguarde alguns minutos e tente novamente.
+
+### Dispositivo bloqueado
+>>>>>>> live
 <a id="device-blocked" class="xliff"></a>
 
 <span data-ttu-id="b559f-165">Um dispositivo pode ser bloqueado do Acesso condicional sem receber um email de ativação.</span><span class="sxs-lookup"><span data-stu-id="b559f-165">A device may be blocked from Conditional Access without receiving an activation email.</span></span>
@@ -99,7 +138,11 @@ ms.lasthandoff: 07/01/2017
 - <span data-ttu-id="b559f-173">Verifique os logs do Exchange Connector quanto à atividade EnviarEmail e verifique se há erros.</span><span class="sxs-lookup"><span data-stu-id="b559f-173">Check the Exchange Connector logs for sendemail activity and check for errors.</span></span> <span data-ttu-id="b559f-174">Um exemplo de comando a ser procurado é EnviarEmail da conta de notificação para EmailUsuário.</span><span class="sxs-lookup"><span data-stu-id="b559f-174">An example of the command to search for is SendEmail from notification account to useremail.</span></span>
 - <span data-ttu-id="b559f-175">Antes de bloquear o dispositivo, o Exchange Connector envia o email de ativação.</span><span class="sxs-lookup"><span data-stu-id="b559f-175">Before the Exchange Connector blocks the device, it sends the activation email.</span></span> <span data-ttu-id="b559f-176">Se o dispositivo estiver offline, ele poderá não receber o email de ativação.</span><span class="sxs-lookup"><span data-stu-id="b559f-176">If the device is offline, it may not receive the activation email.</span></span> <span data-ttu-id="b559f-177">Verifique se o cliente de email do dispositivo tem recuperação de email usando Push em vez de Pull, pois isso também pode fazer com que o usuário perca o email.</span><span class="sxs-lookup"><span data-stu-id="b559f-177">Check if the device email client has email retrieval using Push instead of Poll as this could also cause the user to miss the email.</span></span> <span data-ttu-id="b559f-178">Mude para Pull e veja se o dispositivo recebe o email.</span><span class="sxs-lookup"><span data-stu-id="b559f-178">Switch to Poll and see if the device receives the email.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-179">Um dispositivo incompatível não é bloqueado</span><span class="sxs-lookup"><span data-stu-id="b559f-179">Non-compliant device not blocked</span></span>
+=======
+## Um dispositivo incompatível não é bloqueado
+>>>>>>> live
 <a id="non-compliant-device-not-blocked" class="xliff"></a>
 
 <span data-ttu-id="b559f-180">Se você encontrar um dispositivo que não é compatível, mas continua tendo acesso, execute as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="b559f-180">If you encounter a device that is not compliant but continues to have access, take the following steps.</span></span>
@@ -110,11 +153,19 @@ ms.lasthandoff: 07/01/2017
     - <span data-ttu-id="b559f-188">Use este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx".</span><span class="sxs-lookup"><span data-stu-id="b559f-188">Use this PowerShell cmdlet to get a list of all mobile devices for a mailbox: "Get-ActiveSyncDeviceStatistics -mailbox mbx'.</span></span> <span data-ttu-id="b559f-189">Caso o dispositivo não esteja listado, ele não está acessando o Exchange.</span><span class="sxs-lookup"><span data-stu-id="b559f-189">If the device isn’t listed then it isn’t accessing Exchange.</span></span>
     - <span data-ttu-id="b559f-190">Se o dispositivo estiver listado, use cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre seu estado de acesso e fornecer essas informações ao Suporte da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b559f-190">If the device is listed, use the Get-CASmailbox -identity:’upn’ | fl cmdlet to get detailed information about its access state, and provide that information to Microsoft Support.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b559f-191">Antes de abrir um tíquete de suporte</span><span class="sxs-lookup"><span data-stu-id="b559f-191">Before you open a support ticket</span></span>
 <a id="before-you-open-a-support-ticket" class="xliff"></a>
 <span data-ttu-id="b559f-192">Caso esses procedimentos de solução de problemas não resolvam o problema, há informações que o Suporte da Microsoft pode solicitar, como logs de caixa de correio do OWA ou logs do Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="b559f-192">If these troubleshooting procedures don't resolve your issue, there is information that you may be asked to provide to Microsoft Support, such as OWA mailbox logs or Exchange Connector logs.</span></span>
 
 ### <span data-ttu-id="b559f-193">Coletando logs de caixa de correio do OWA</span><span class="sxs-lookup"><span data-stu-id="b559f-193">Collecting OWA mailbox logs</span></span>
+=======
+## Antes de abrir um tíquete de suporte
+<a id="before-you-open-a-support-ticket" class="xliff"></a>
+Caso esses procedimentos de solução de problemas não resolvam o problema, há informações que o Suporte da Microsoft pode solicitar, como logs de caixa de correio do OWA ou logs do Exchange Connector.
+
+### Coletando logs de caixa de correio do OWA
+>>>>>>> live
 <a id="collecting-owa-mailbox-logs" class="xliff"></a>
 
 1. <span data-ttu-id="b559f-194">Faça logon por meio do OWA e escolha o símbolo de configurações (engrenagem) ao lado de seu nome no canto superior direito.</span><span class="sxs-lookup"><span data-stu-id="b559f-194">Log on through OWA and choose the settings (gear) symbol next to your name in the upper right corner.</span></span>
@@ -127,17 +178,30 @@ ms.lasthandoff: 07/01/2017
 8. <span data-ttu-id="b559f-201">Aguarde por 1 a 2 minutos e volte para a lista telefônica no OWA.</span><span class="sxs-lookup"><span data-stu-id="b559f-201">Wait 1-2 minutes then go back to the phone list in OWA.</span></span> <span data-ttu-id="b559f-202">Verifique se o seu telefone está selecionado na lista e, no menu superior, escolha **Recuperar Log**.</span><span class="sxs-lookup"><span data-stu-id="b559f-202">Make sure your phone is selected in the list, and then from the top menu choose **Retrieve Log**.</span></span>
 9. <span data-ttu-id="b559f-203">Você deve ter recebido um email de si mesmo com um anexo.</span><span class="sxs-lookup"><span data-stu-id="b559f-203">You should receive an email from yourself with an attachment.</span></span> <span data-ttu-id="b559f-204">Quando você abrir um tíquete de suporte, forneça o conteúdo do email ao Suporte da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b559f-204">When you open a support ticket, provide the contents of the email to Microsoft Support.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="b559f-205">Logs do Exchange Connector</span><span class="sxs-lookup"><span data-stu-id="b559f-205">Exchange Connector logs</span></span>
 <a id="exchange-connector-logs" class="xliff"></a>
 
 #### <span data-ttu-id="b559f-206">Informações gerais sobre logs</span><span class="sxs-lookup"><span data-stu-id="b559f-206">General log information</span></span>
 <a id="general-log-information" class="xliff"></a>
 <span data-ttu-id="b559f-207">Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx').</span><span class="sxs-lookup"><span data-stu-id="b559f-207">To view Exchange Connector logs use the [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx').</span></span> <span data-ttu-id="b559f-208">Essa ferramenta requer que você baixe o SDK do Windows Server.</span><span class="sxs-lookup"><span data-stu-id="b559f-208">This tool requires that you download the Windows Server SDK.</span></span>
+=======
+### Logs do Exchange Connector
+<a id="exchange-connector-logs" class="xliff"></a>
+
+#### Informações gerais sobre logs
+<a id="general-log-information" class="xliff"></a>
+Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Essa ferramenta requer que você baixe o SDK do Windows Server.
+>>>>>>> live
 
 >[!NOTE]
 ><span data-ttu-id="b559f-209">Os logs estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs.</span><span class="sxs-lookup"><span data-stu-id="b559f-209">The logs are located in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs.</span></span> <span data-ttu-id="b559f-210">Os logs estão contidos em uma série de 30 arquivos de log que começa com *Connector0.log* e para em *Connector29.log*.</span><span class="sxs-lookup"><span data-stu-id="b559f-210">The logs are contained in a series of 30 log files starting with *Connector0.log* and stopping at *Connector29.log*.</span></span> <span data-ttu-id="b559f-211">Os logs se sobrepõem uns aos outros após 10 MB de dados serem acumulados em um log.</span><span class="sxs-lookup"><span data-stu-id="b559f-211">Logs rollover from one to another after 10MB of data has accumulated in a log.</span></span> <span data-ttu-id="b559f-212">Depois de chegarem a Connector29, os logs recomeçam em Connector0, substituindo os arquivos de log anteriores.</span><span class="sxs-lookup"><span data-stu-id="b559f-212">Once the logs get to Connector29, they will start over at Connector0 again, overwriting previous log files.</span></span>
 
+<<<<<<< HEAD
 #### <span data-ttu-id="b559f-213">Localização de logs de sincronização</span><span class="sxs-lookup"><span data-stu-id="b559f-213">Locating sync logs</span></span>
+=======
+#### Localização de logs de sincronização
+>>>>>>> live
 <a id="locating-sync-logs" class="xliff"></a>
 
 -    <span data-ttu-id="b559f-214">Localize uma sincronização completa nos logs pesquisando **full sync**.</span><span class="sxs-lookup"><span data-stu-id="b559f-214">Locate a full sync in the logs by searching for **full sync**.</span></span> <span data-ttu-id="b559f-215">O início de uma sincronização completa será marcado por este texto:</span><span class="sxs-lookup"><span data-stu-id="b559f-215">The beginning of a full sync will be marked by this text:</span></span>
@@ -150,11 +214,19 @@ ms.lasthandoff: 07/01/2017
 
 -   <span data-ttu-id="b559f-220">Localize uma sincronização rápida (delta) nos logs pesquisando **quick sync**.</span><span class="sxs-lookup"><span data-stu-id="b559f-220">Locate a quick (delta) sync in the logs by searching for **quick sync**.</span></span>
 
+<<<<<<< HEAD
 ##### <span data-ttu-id="b559f-221">Exceções no comando Get next</span><span class="sxs-lookup"><span data-stu-id="b559f-221">Exceptions in Get next command</span></span>
 <a id="exceptions-in-get-next-command" class="xliff"></a>
 <span data-ttu-id="b559f-222">Verifique os logs do Exchange Connector quanto a exceções no comando **Get next** e forneça-as ao Suporte da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b559f-222">Check the Exchange Connector logs for exceptions in **Get next command**, and provide these to Microsoft Support.</span></span>
 
 #### <span data-ttu-id="b559f-223">Log detalhado</span><span class="sxs-lookup"><span data-stu-id="b559f-223">Verbose logging</span></span>
+=======
+##### Exceções no comando Get next
+<a id="exceptions-in-get-next-command" class="xliff"></a>
+Verifique os logs do Exchange Connector quanto a exceções no comando **Get next** e forneça-as ao Suporte da Microsoft.
+
+#### Log detalhado
+>>>>>>> live
 <a id="verbose-logging" class="xliff"></a>
 
 <span data-ttu-id="b559f-224">Para habilitar o log detalhado:</span><span class="sxs-lookup"><span data-stu-id="b559f-224">To enable verbose logging:</span></span>
@@ -163,6 +235,7 @@ ms.lasthandoff: 07/01/2017
 2.  <span data-ttu-id="b559f-227">Localize TraceSourceLine com a seguinte chave: OnPremisesExchangeConnectorService</span><span class="sxs-lookup"><span data-stu-id="b559f-227">Locate the TraceSourceLine with the following key: OnPremisesExchangeConnectorService</span></span>
 3.  <span data-ttu-id="b559f-228">Alterar o valor do nó **SourceLevel** de **Warning ActivityTracing** (o padrão) para **Verbose ActivityTracing**, conforme mostrado abaixo.</span><span class="sxs-lookup"><span data-stu-id="b559f-228">Change the **SourceLevel** node value from **Warning ActivityTracing** (the default) to **Verbose ActivityTracing**, as shown below.</span></span>
 
+<<<<<<< HEAD
     <span data-ttu-id="b559f-229"><TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
     </TraceSourceLine></span><span class="sxs-lookup"><span data-stu-id="b559f-229"><TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
     </TraceSourceLine></span></span>
@@ -172,3 +245,13 @@ ms.lasthandoff: 07/01/2017
 ### <span data-ttu-id="b559f-230">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="b559f-230">Next steps</span></span>
 <a id="next-steps" class="xliff"></a>
 <span data-ttu-id="b559f-231">Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="b559f-231">If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).</span></span>
+=======
+    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
+    </TraceSourceLine>
+
+
+
+### Próximas etapas
+<a id="next-steps" class="xliff"></a>
+Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
+>>>>>>> live

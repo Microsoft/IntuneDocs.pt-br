@@ -20,7 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="b96b2-103">Como criar e atribuir uma política de acesso condicional para o Exchange Local e o Exchange Online Dedicado herdado no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="b96b2-103">How to create and assign a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune</span></span>
+=======
+# Como criar e atribuir uma política de acesso condicional para o Exchange Local e o Exchange Online Dedicado herdado no Microsoft Intune
+>>>>>>> live
 <a id="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -29,7 +33,11 @@ ms.lasthandoff: 07/03/2017
 
 <span data-ttu-id="b96b2-105">Se você tiver um ambiente do Exchange Online Dedicado e precisar descobrir se ele está na configuração nova ou herdada, entre em contato com seu gerente de conta.</span><span class="sxs-lookup"><span data-stu-id="b96b2-105">If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.</span></span> <span data-ttu-id="b96b2-106">Para controlar o acesso ao email para Exchange local ou para seu ambiente herdado do Exchange Online dedicado, configure o acesso condicional ao Exchange local no Intune.</span><span class="sxs-lookup"><span data-stu-id="b96b2-106">To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure conditional access to Exchange on-premises in Intune.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b96b2-107">Antes de começar</span><span class="sxs-lookup"><span data-stu-id="b96b2-107">Before you begin</span></span>
+=======
+## Antes de começar
+>>>>>>> live
 <a id="before-you-begin" class="xliff"></a>
 
 <span data-ttu-id="b96b2-108">Antes de poder configurar o acesso condicional, verifique o seguinte:</span><span class="sxs-lookup"><span data-stu-id="b96b2-108">Before you can configure conditional access, verify the following:</span></span>
@@ -59,7 +67,11 @@ ms.lasthandoff: 07/03/2017
     - <span data-ttu-id="b96b2-128">Se o dispositivo não estiver registrado no Intune ou não estiver registrado no Azure Active Directory, será exibida uma mensagem com instruções sobre como instalar o aplicativo do Portal da Empresa, registrar o dispositivo e ativar o email.</span><span class="sxs-lookup"><span data-stu-id="b96b2-128">If the device is not enrolled with Intune, or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email.</span></span> <span data-ttu-id="b96b2-129">Esse processo também associa a ID do Exchange ActiveSync do dispositivo ao registro do dispositivo no Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="b96b2-129">This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.</span></span>
     - <span data-ttu-id="b96b2-130">Se o dispositivo não estiver em conformidade, será exibida uma mensagem que direcionará o usuário ao site do Portal da Empresa do Intune ou ao aplicativo Portal da Empresa, no qual ele poderá encontrar informações sobre o problema e como corrigi-lo.</span><span class="sxs-lookup"><span data-stu-id="b96b2-130">If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="b96b2-131">Suporte para dispositivos móveis</span><span class="sxs-lookup"><span data-stu-id="b96b2-131">Support for mobile devices</span></span>
+=======
+### Suporte para dispositivos móveis
+>>>>>>> live
 <a id="support-for-mobile-devices" class="xliff"></a>
 
 - <span data-ttu-id="b96b2-132">Windows Phone 8.1 e posterior</span><span class="sxs-lookup"><span data-stu-id="b96b2-132">Windows Phone 8.1 and later</span></span>
@@ -70,13 +82,21 @@ ms.lasthandoff: 07/03/2017
 > [!NOTE]
 > <span data-ttu-id="b96b2-137">Não há suporte para o aplicativo Microsoft Outlook no Android e iOS.</span><span class="sxs-lookup"><span data-stu-id="b96b2-137">Microsoft Outlook app for Android and iOS is not supported.</span></span> <span data-ttu-id="b96b2-138">O Android para Trabalho está em processo de distribuição entre os locatários do Intune e o processo continuará durante os próximos meses.</span><span class="sxs-lookup"><span data-stu-id="b96b2-138">Android for Work is currently being rolled out across Intune tenants over the next few months.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="b96b2-139">Suporte para computadores</span><span class="sxs-lookup"><span data-stu-id="b96b2-139">Support for PCs</span></span>
+=======
+### Suporte para computadores
+>>>>>>> live
 <a id="support-for-pcs" class="xliff"></a>
 
 <span data-ttu-id="b96b2-140">O aplicativo nativo de **Email** do Windows 8.1 e versões posteriores (quando registrado com Intune)</span><span class="sxs-lookup"><span data-stu-id="b96b2-140">The native **Mail** application on Windows 8.1 and later (when enrolled with Intune)</span></span>
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b96b2-141">Configurar o acesso local ao Exchange</span><span class="sxs-lookup"><span data-stu-id="b96b2-141">Configure Exchange on-premises access</span></span>
+=======
+## Configurar o acesso local ao Exchange
+>>>>>>> live
 <a id="configure-exchange-on-premises-access" class="xliff"></a>
 
 1. <span data-ttu-id="b96b2-142">Vá para o [Portal do Azure](https://portal.azure.com/) e entre com suas credenciais do Intune.</span><span class="sxs-lookup"><span data-stu-id="b96b2-142">Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.</span></span>
@@ -87,7 +107,11 @@ ms.lasthandoff: 07/03/2017
 
 4. <span data-ttu-id="b96b2-145">Escolha **Intune** e você verá o **Painel do Intune**.</span><span class="sxs-lookup"><span data-stu-id="b96b2-145">Choose **Intune**, you see the **Intune Dashboard**.</span></span>
 
+<<<<<<< HEAD
 5. <span data-ttu-id="b96b2-146">Escolha **Acesso Local** e</span><span class="sxs-lookup"><span data-stu-id="b96b2-146">Choose **On-Premise Access**, then choose</span></span>
+=======
+5. Escolha **Acesso Local** e
+>>>>>>> live
 
 6. <span data-ttu-id="b96b2-147">A folha **Local** mostra o status da política de acesso condicional e os dispositivos que são afetados por ele.</span><span class="sxs-lookup"><span data-stu-id="b96b2-147">The **On-premises** blade shows the status of the conditional access policy and the devices that are affected by it.</span></span>
 
@@ -96,7 +120,11 @@ ms.lasthandoff: 07/03/2017
 8. <span data-ttu-id="b96b2-149">Na folha **Acesso local do Exchange**, escolha **Sim** para habilitar o controle de acesso local do Exchange.</span><span class="sxs-lookup"><span data-stu-id="b96b2-149">On the **Exchange on-premises access** blade, choose **Yes** to enable Exchange on-premises access control.</span></span>
 
     > [!NOTE]
+<<<<<<< HEAD
     > <span data-ttu-id="b96b2-150">Se você não tiver configurado o conector local do Exchange Active Sync, essa opção estará desabilitada.</span><span class="sxs-lookup"><span data-stu-id="b96b2-150">If you have not configured the Exchange Active Sync on-premises connector, this option will be disabled.</span></span>  <span data-ttu-id="b96b2-151">Você primeiro deve instalar e configurar esse conector antes de habilitar o acesso condicional para o Exchange local.</span><span class="sxs-lookup"><span data-stu-id="b96b2-151">You must first install and configure this connector before enabling conditional access for Exchange on-premises.</span></span> <span data-ttu-id="b96b2-152">Para obter mais detalhes, consulte [Instalar o Intune On-premises Exchange Connector](exchange-connector-install.md)</span><span class="sxs-lookup"><span data-stu-id="b96b2-152">For more details, see [Install the Intune On-premises Exchange Connector](exchange-connector-install.md)</span></span>
+=======
+    > Se você não tiver configurado o conector local do Exchange Active Sync, essa opção estará desabilitada.  Você primeiro deve instalar e configurar esse conector antes de habilitar o acesso condicional para o Exchange local. Para obter mais detalhes, consulte [Instalar o Intune On-premises Exchange Connector](exchange-connector-install.md)
+>>>>>>> live
 
 9. <span data-ttu-id="b96b2-153">Em **Atribuição**, escolha **Grupos Incluídos**.</span><span class="sxs-lookup"><span data-stu-id="b96b2-153">Under **Assignment**, choose **Groups Included**.</span></span>  <span data-ttu-id="b96b2-154">Use o grupo de usuários de segurança que deve ter acesso condicional aplicado.</span><span class="sxs-lookup"><span data-stu-id="b96b2-154">Use the security user group that should have conditional access applied to it.</span></span> <span data-ttu-id="b96b2-155">Isso exigiria que os usuários registrem seus dispositivos no Intune e estejam em conformidade com os perfis de conformidade.</span><span class="sxs-lookup"><span data-stu-id="b96b2-155">This would require the users to enroll their devices in Intune and be compliant with the compliance profiles.</span></span>
 
@@ -116,6 +144,7 @@ ms.lasthandoff: 07/03/2017
 
 15. <span data-ttu-id="b96b2-172">Na folha **Local**, clique em **Salvar** para salvar a política de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="b96b2-172">On the **On-premises** blade, click **Save** to save the conditional access policy.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b96b2-173">Criar políticas de acesso condicional do Azure AD no Intune</span><span class="sxs-lookup"><span data-stu-id="b96b2-173">Create Azure AD Conditional access policies in Intune</span></span>
 <a id="create-azure-ad-conditional-access-policies-in-intune" class="xliff"></a>
 
@@ -125,6 +154,17 @@ ms.lasthandoff: 07/03/2017
 > <span data-ttu-id="b96b2-175">Você precisa ter uma licença Premium do Azure AD para criar políticas de acesso condicional do Azure AD no portal do Intune no Azure.</span><span class="sxs-lookup"><span data-stu-id="b96b2-175">You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.</span></span>
 
 ### <span data-ttu-id="b96b2-176">Para criar uma política de acesso condicional do Azure AD</span><span class="sxs-lookup"><span data-stu-id="b96b2-176">To create Azure AD conditional access policy</span></span>
+=======
+## Criar políticas de acesso condicional do Azure AD no Intune
+<a id="create-azure-ad-conditional-access-policies-in-intune" class="xliff"></a>
+
+A partir da versão 1704 do Intune, os administradores podem criar políticas de acesso condicional do Azure AD no portal do Intune no Azure, que oferece conveniência, de modo que você não precise alternar entre as cargas de trabalho do Azure e do Intune.
+
+> [!IMPORTANT]
+> Você precisa ter uma licença Premium do Azure AD para criar políticas de acesso condicional do Azure AD no portal do Intune no Azure.
+
+### Para criar uma política de acesso condicional do Azure AD
+>>>>>>> live
 <a id="to-create-azure-ad-conditional-access-policy" class="xliff"></a>
 
 1. <span data-ttu-id="b96b2-177">No **Painel do Intune**, escolha **Acesso condicional**.</span><span class="sxs-lookup"><span data-stu-id="b96b2-177">In the **Intune Dashboard**, choose **Conditional access**.</span></span>
@@ -135,7 +175,14 @@ ms.lasthandoff: 07/03/2017
 
     ![Políticas de acesso condicional do Azure AD](./media/Azure-AD-CA-Intune.png)
 
+<<<<<<< HEAD
 ## <span data-ttu-id="b96b2-181">Consulte também</span><span class="sxs-lookup"><span data-stu-id="b96b2-181">See also</span></span>
 <a id="see-also" class="xliff"></a>
 
 [<span data-ttu-id="b96b2-182">Acesso condicional no Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="b96b2-182">Conditional Access in Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
+=======
+## Consulte também
+<a id="see-also" class="xliff"></a>
+
+[Acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
+>>>>>>> live

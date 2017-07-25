@@ -21,11 +21,16 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="7678a-103">Definições de configuração de dispositivo compartilhado para exibir mensagens na tela de bloqueio do dispositivo iOS</span><span class="sxs-lookup"><span data-stu-id="7678a-103">Shared device configuration settings to display messages on the iOS device lock screen</span></span>
+=======
+# Definições de configuração de dispositivo compartilhado para exibir mensagens na tela de bloqueio do dispositivo iOS
+>>>>>>> live
 <a id="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
 <span data-ttu-id="7678a-104">As definições de configuração de dispositivo compartilhado permitem que você especifique um texto opcional que será exibido na janela de logon e na tela de bloqueio.</span><span class="sxs-lookup"><span data-stu-id="7678a-104">Shared device configuration settings let you specify optional text displayed on the login window and lock screen.</span></span> <span data-ttu-id="7678a-105">Por exemplo, uma mensagem “Se perdido, devolver a” e Informações de Etiqueta do Ativo.</span><span class="sxs-lookup"><span data-stu-id="7678a-105">For example, you can enter an "If Lost, Return to" message and Asset Tag Information.</span></span> 
 
 >[!IMPORTANT]
@@ -45,3 +50,24 @@ ms.lasthandoff: 07/05/2017
 <a id="next-steps" class="xliff"></a>
 
 <span data-ttu-id="7678a-116">Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos.</span><span class="sxs-lookup"><span data-stu-id="7678a-116">You can now assign the device profile to the groups you choose.</span></span> <span data-ttu-id="7678a-117">Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).</span><span class="sxs-lookup"><span data-stu-id="7678a-117">For details, see [How to assign device profiles](device-profile-assign.md).</span></span>
+=======
+As definições de configuração de dispositivo compartilhado permitem que você especifique um texto opcional que será exibido na janela de logon e na tela de bloqueio. Por exemplo, uma mensagem “Se perdido, devolver a” e Informações de Etiqueta do Ativo. 
+
+>[!IMPORTANT]
+> Esse recurso tem suporte em dispositivos supervisionados executando o iOS 9.3 e posterior.
+
+## Criar configurações de dispositivo compartilhado
+<a id="create-shared-device-settings" class="xliff"></a>
+
+1. Na folha **Recursos do dispositivo**, escolha **Configuração do dispositivo compartilhado (somente supervisionado)**.
+2. Na folha **Configuração de dispositivo compartilhado (somente supervisionado)**, defina as seguintes configurações:
+    - **Informações de marca do ativo** - insira informações sobre a marca do ativo do dispositivo. Por exemplo: **Pertencente a Contoso Corp**. As informações inseridas são aplicadas a todos os dispositivos aos quais você atribui esse perfil.
+    - **Nota de rodapé de tela de bloqueio** – Se o dispositivo for perdido ou roubado, insira uma observação que pode ajudar a reaver o dispositivo. Por exemplo: **Se encontrado, entre em contato com ‘número’**.
+3. Quando terminar, escolha **OK** em até voltar à folha **Criar Perfil**, depois escolha **Criar**. 
+
+
+## Próximas etapas
+<a id="next-steps" class="xliff"></a>
+
+Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
+>>>>>>> live

@@ -34,7 +34,13 @@ ms.lasthandoff: 07/13/2017
 
 <span data-ttu-id="71bf5-109">Os **aplicativos não gerenciados** podem ser gerenciados por meio de políticas e não foram encapsulados pelo Intune ou não incorporam o SDK do MAM do Intune.</span><span class="sxs-lookup"><span data-stu-id="71bf5-109">**Unmanaged apps** can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK.</span></span> <span data-ttu-id="71bf5-110">Políticas de aplicativo que não podem ser aplicadas a esses aplicativos.</span><span class="sxs-lookup"><span data-stu-id="71bf5-110">Application policies cannot be applied to these apps.</span></span>
 
+<<<<<<< HEAD
 ### <a name="see-also"></a><span data-ttu-id="71bf5-111">Consulte também</span><span class="sxs-lookup"><span data-stu-id="71bf5-111">See also</span></span>
 <span data-ttu-id="71bf5-112">[Como os usuários Android podem obtém aplicativos](end-user-apps-android.md)
 [Como os usuários iOS obtêm os aplicativos deles](end-user-apps-android.md)</span><span class="sxs-lookup"><span data-stu-id="71bf5-112">[How your Android users get their apps](end-user-apps-android.md)
 [How your iOS users get their apps](end-user-apps-android.md)</span></span>
+=======
+### <a name="see-also"></a>Consulte também
+[Como os usuários Android podem obtém aplicativos](end-user-apps-android.md)
+[Como os usuários iOS obtêm os aplicativos deles](end-user-apps-android.md)
+>>>>>>> live

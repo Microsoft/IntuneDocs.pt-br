@@ -20,14 +20,22 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="19348-103">Configurações de política do iOS no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="19348-103">iOS policy settings in Microsoft Intune</span></span>
+=======
+# Configurações de política do iOS no Microsoft Intune
+>>>>>>> live
 <a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 <span data-ttu-id="19348-104">O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos iOS.</span><span class="sxs-lookup"><span data-stu-id="19348-104">Intune supplies a range of built-in general settings that you can configure on iOS devices.</span></span> <span data-ttu-id="19348-105">Além disso, use a ferramenta Apple Configurator para criar configurações personalizadas que não estão disponíveis no Intune.</span><span class="sxs-lookup"><span data-stu-id="19348-105">Additionally, you can use the Apple Configurator tool to create custom settings that are not available from Intune.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="19348-106">Definições de política de configuração geral</span><span class="sxs-lookup"><span data-stu-id="19348-106">General configuration policy settings</span></span>
+=======
+## Definições de política de configuração geral
+>>>>>>> live
 <a id="general-configuration-policy-settings" class="xliff"></a>
 
 <span data-ttu-id="19348-107">Use a **Política de configuração geral do iOS** do Microsoft Intune para definir configurações para:</span><span class="sxs-lookup"><span data-stu-id="19348-107">Use the Microsoft Intune **iOS general configuration policy** to configure settings for:</span></span>
@@ -43,12 +51,19 @@ ms.lasthandoff: 07/12/2017
 
 <span data-ttu-id="19348-120">Se a configuração que você está procurando não aparecer nesse tópico, você poderá criá-la usando uma política personalizada do iOS que lhe permite importar configurações criadas usando a [Ferramenta configuradora da Apple](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).</span><span class="sxs-lookup"><span data-stu-id="19348-120">If the setting you are looking for does not appear in this topic, you might be able to create it by using an iOS custom policy that lets you import settings you created by using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).</span></span> <span data-ttu-id="19348-121">Para obter mais informações, consulte “Configurações de política personalizadas” mais adiante neste tópico.</span><span class="sxs-lookup"><span data-stu-id="19348-121">For more information, see "Custom policy settings" later in this topic.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-122">Configurações de segurança</span><span class="sxs-lookup"><span data-stu-id="19348-122">Security settings</span></span>
 <a id="security-settings" class="xliff"></a>
 <span data-ttu-id="19348-123">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-123">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de segurança
+<a id="security-settings" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-124">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-124">Setting name</span></span>|<span data-ttu-id="19348-125">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-125">Details</span></span>|
 |----------------|-------|
+<<<<<<< HEAD
 |<span data-ttu-id="19348-126">**Exigir uma senha para desbloquear os dispositivos móveis**</span><span class="sxs-lookup"><span data-stu-id="19348-126">**Require a password to unlock mobile devices**</span></span>|<span data-ttu-id="19348-127">Especificar se será solicitado ou não que o usuário insira uma senha para acessar seu dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19348-127">Specify whether the user is required to enter a password to access their device.</span></span>|
 |<span data-ttu-id="19348-128">**Tipo de senha necessária**</span><span class="sxs-lookup"><span data-stu-id="19348-128">**Required password type**</span></span>|<span data-ttu-id="19348-129">Especificar o tipo de senha necessária, como apenas numérica ou alfanumérica.</span><span class="sxs-lookup"><span data-stu-id="19348-129">Specify the type of password that will be required, such as numeric only or alphanumeric.</span></span>|
 |<span data-ttu-id="19348-130">**Número de caracteres complexos necessários na senha**</span><span class="sxs-lookup"><span data-stu-id="19348-130">**Number of complex characters required in password**</span></span>|<span data-ttu-id="19348-131">Especificar o número de caracteres de símbolo (como **#** ou **@**) que deve ser incluído na senha.</span><span class="sxs-lookup"><span data-stu-id="19348-131">Specify the number of symbol characters (like **#** or **@**) that must be included in the password.</span></span>|
@@ -110,6 +125,69 @@ ms.lasthandoff: 07/12/2017
 <span data-ttu-id="19348-210">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-210">All settings apply to iOS 8.0 and later.</span></span>
 
 |<span data-ttu-id="19348-211">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-211">Setting name</span></span>|<span data-ttu-id="19348-212">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-212">Details</span></span>|
+=======
+|**Exigir uma senha para desbloquear os dispositivos móveis**|Especificar se será solicitado ou não que o usuário insira uma senha para acessar seu dispositivo.|
+|**Tipo de senha necessária**|Especificar o tipo de senha necessária, como apenas numérica ou alfanumérica.|
+|**Número de caracteres complexos necessários na senha**|Especificar o número de caracteres de símbolo (como **#** ou **@**) que deve ser incluído na senha.|
+|**Comprimento mínimo da senha**|Especificar o número mínimo de caracteres na senha.|
+|**Permitir senha simples**|Permitir senhas simples como **0000** e **1234**.|
+|**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**|Especificar o número de tentativas de logon antes de essa configuração apagar o dispositivo.|
+|**Minutos de inatividade antes de a senha ser solicitada**<sup>1</sup>|Especificar quanto tempo o dispositivo pode permanecer ocioso antes que o usuário precise digitar novamente sua senha.|
+|**Expiração da senha (dias)**|Especificar o número de dias antes que a senha do dispositivo precise ser alterada.|
+|**Lembrar histórico de senha**|Especificar se o usuário pode usar senhas que tenha usado anteriormente.|
+|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especificar o número de senhas usadas anteriormente que são lembradas pelo dispositivo.|
+|**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Especifique o número de minutos antes de a tela do dispositivo ser desativada.|
+|**Permitir desbloqueio por impressão digital**|Permitir usar a impressão digital para desbloquear o dispositivo.|
+<sup>1</sup> Para dispositivos iOS, ao definir as configurações **Minutos de inatividade antes que a tela se apague** e **Minutos de inatividade antes de a senha ser solicitada**, elas são aplicadas em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
+
+### Configurações de sistema
+<a id="system-settings" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+
+|Nome da configuração|Detalhes|
+|----------------|-------|
+|**Permitir captura de tela**|Permitir ao usuário capturar os conteúdos da tela como uma imagem.|
+|**Permitir centro de controle na tela de bloqueio**|Permitir ao usuário acessar o aplicativo de senha quando o dispositivo estiver bloqueado.|
+|**Permitir exibição de notificação na tela de bloqueio**|Permitir ao usuário acessar a exibição de notificações sem desbloquear o dispositivo.|
+|**Permitir exibição atual na tela de bloqueio**|Permitir ao usuário exibir notificações quando o dispositivo estiver bloqueado.|
+|**Permitir certificados TLS não confiáveis**|Permitir certificados do protocolo TLS não confiáveis no dispositivo.|
+|**Permitir envio de dados de diagnóstico**|Permitir ou bloquear a habilidade do dispositivo enviar dados de diagnóstico para a Apple.|
+|**Permitir senha quando bloqueado**|Permitir ao usuário acessar o aplicativo de senha enquanto o dispositivo estiver bloqueado.|
+
+### Configurações de nuvem para documentos e dados
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+
+|Nome da configuração|Detalhes|
+|----------------|-------|
+|**Permitir backup no iCloud**|Permitir ao usuário fazer backup do dispositivo no iCloud.|
+|**Permitir sincronização de documento no iCloud**|Permitir a sincronização de documento e chave-valor para o espaço de armazenamento no iCloud.|
+|**Permitir sincronização do Fluxo de Fotos para o iCloud**|Permite que os usuários habilitem **Meu Fluxo de Fotos** em seus dispositivos, o que permite que as fotos sejam sincronizadas com o iCloud e fiquem disponíveis em todos os dispositivos dos usuários.|
+|**Exigir backup criptografado**|Exigir que quaisquer backups de dispositivo sejam criptografados.|
+|**Permitir que aplicativos gerenciados sincronizem dados no iCloud**|Permitir que os aplicativos que você gerencia com o Intune sincronizem dados com a conta do iCloud do usuário.|
+|**Permitir que a Entrega continue as atividades em outro dispositivo**|Permitir que o usuário continue, em outro dispositivo iOS ou Mac OS X, o trabalho iniciado em um dispositivo iOS.|
+|**Permitir compartilhamento de fotos do iCloud**|Defina como **Não** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo.|
+|**Permitir biblioteca de fotos do iCloud**|Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.   As fotos que não forem totalmente baixadas na biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção for definida como **Não**.|
+
+### Configurações de aplicativo do navegador
+<a id="application-settings-for-the-browser" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+
+|Nome da configuração|Detalhes|
+|----------------|-------|
+|**Permitir Safari**|Especifique se o navegador Safari pode ser usado no dispositivo.|
+|**Permitir preenchimento automático**|Permite que o usuário possa alterar as configurações de preenchimento automático no navegador.|
+|**Permitir bloqueador de pop-up**|Habilitar ou desabilitar o bloqueador de pop-up do navegador.|
+|**Permitir cookies**|Permitir que o navegador use cookies.|
+|**Permitir scripts Java**|Permitir a execução de scripts Java no navegador.|
+|**Permitir aviso de fraude**|Permitir avisos de fraude no navegador.|
+
+### Configurações de aplicativo para aplicativos
+<a id="application-settings-for-apps" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+
+|Nome da configuração|Detalhes|
+>>>>>>> live
 |----------------|-------|
 |<span data-ttu-id="19348-213">**Permitir instalação de aplicativos**</span><span class="sxs-lookup"><span data-stu-id="19348-213">**Allow installing apps**</span></span>|<span data-ttu-id="19348-214">Permitir que o dispositivo acesse a loja de aplicativos e instale aplicativos.</span><span class="sxs-lookup"><span data-stu-id="19348-214">Allow the device to access the app store and install apps.</span></span>|
 |<span data-ttu-id="19348-215">**Exigir uma senha para acessar o repositório de aplicativos**</span><span class="sxs-lookup"><span data-stu-id="19348-215">**Require a password to access application store**</span></span>|<span data-ttu-id="19348-216">Exigir que o usuário insira uma senha antes de poder visitar a loja de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="19348-216">Require the user to enter a password before they can visit the app store.</span></span>|
@@ -120,18 +198,30 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-228">**Permitir que o usuário confie em novos autores de aplicativos empresariais**</span><span class="sxs-lookup"><span data-stu-id="19348-228">**Allow the user to trust new enterprise app authors**</span></span>|<span data-ttu-id="19348-229">Permitir que o usuário opte por confiar em aplicativos que não foram baixados da loja de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="19348-229">Lets the user select to trust apps that were not downloaded from the app store.</span></span>|
 
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-230">Configurações de aplicativo para jogos</span><span class="sxs-lookup"><span data-stu-id="19348-230">Application settings for games</span></span>
 <a id="application-settings-for-games" class="xliff"></a>
 <span data-ttu-id="19348-231">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-231">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de aplicativo para jogos
+<a id="application-settings-for-games" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-232">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-232">Setting name</span></span>|<span data-ttu-id="19348-233">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-233">Details</span></span>|
 |----------------|-------|
 |<span data-ttu-id="19348-234">**Permitir adição de amigos no Game Center**</span><span class="sxs-lookup"><span data-stu-id="19348-234">**Allow adding Game Center friends**</span></span>|<span data-ttu-id="19348-235">Permitir que o usuário adicione amigos no Game Center.</span><span class="sxs-lookup"><span data-stu-id="19348-235">Allow the user to add friends in Game Center.</span></span>|
 |<span data-ttu-id="19348-236">**Permitir jogo para vários participantes**</span><span class="sxs-lookup"><span data-stu-id="19348-236">**Allow multiplayer gaming**</span></span>|<span data-ttu-id="19348-237">Permitir que o usuário execute jogos com vários participantes no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19348-237">Allow the user to play multiplayer games on the device.</span></span>|
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-238">Configurações de aplicativo para conteúdo de mídia</span><span class="sxs-lookup"><span data-stu-id="19348-238">Application settings for media content</span></span>
 <a id="application-settings-for-media-content" class="xliff"></a>
 <span data-ttu-id="19348-239">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-239">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de aplicativo para conteúdo de mídia
+<a id="application-settings-for-media-content" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-240">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-240">Setting name</span></span>|<span data-ttu-id="19348-241">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-241">Details</span></span>|
 |----------------|-------|
@@ -140,9 +230,15 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-246">**Permitir que o usuário baixe o conteúdo da iBook Store sinalizado como 'Erotismo'**</span><span class="sxs-lookup"><span data-stu-id="19348-246">**Allow the user to download content from the iBook store flagged as 'Erotica'**</span></span>|<span data-ttu-id="19348-247">Permitir que o usuário baixe livros da categoria “Erotismo”.</span><span class="sxs-lookup"><span data-stu-id="19348-247">Allow the user to download books with the "Erotica" category.</span></span>|
 
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-248">Configurações de recursos do dispositivo para hardware</span><span class="sxs-lookup"><span data-stu-id="19348-248">Device capabilities settings for hardware</span></span>
 <a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 <span data-ttu-id="19348-249">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-249">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de recursos do dispositivo para hardware
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-250">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-250">Setting name</span></span>|<span data-ttu-id="19348-251">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-251">Details</span></span>|
 |----------------|-------|
@@ -150,9 +246,15 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-254">**Forçar Apple Watches emparelhados a usar a detecção de pulso**</span><span class="sxs-lookup"><span data-stu-id="19348-254">**Force paired Apple Watches to use wrist detection**</span></span>|<span data-ttu-id="19348-255">Quando habilitado, o Apple Watch não exibirá notificações quando não estiver sendo usado.</span><span class="sxs-lookup"><span data-stu-id="19348-255">When enabled, the Apple Watch won't display notifications when it is not being worn.</span></span>|
 |<span data-ttu-id="19348-256">**Exigir uma senha de emparelhamento para solicitações de saída do AirPlay**</span><span class="sxs-lookup"><span data-stu-id="19348-256">**Require a pairing password for outgoing AirPlay requests**</span></span>|<span data-ttu-id="19348-257">Exigir uma senha emparelhamento quando o usuário usar AirPlay para transmitir o conteúdo para outros dispositivos da Apple.</span><span class="sxs-lookup"><span data-stu-id="19348-257">Require a pairing password when the user uses AirPlay to stream content to other Apple devices.</span></span>|
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-258">Configurações de recursos do dispositivo para celular</span><span class="sxs-lookup"><span data-stu-id="19348-258">Device capabilities settings for cellular</span></span>
 <a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 <span data-ttu-id="19348-259">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-259">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de recursos do dispositivo para celular
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-260">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-260">Setting name</span></span>|<span data-ttu-id="19348-261">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-261">Details</span></span>|
 |----------------|-------|
@@ -160,9 +262,15 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-264">**Permitir roaming de dados**</span><span class="sxs-lookup"><span data-stu-id="19348-264">**Allow data roaming**</span></span>|<span data-ttu-id="19348-265">Permitir roaming de dados quando o dispositivo estiver em uma rede de celular.</span><span class="sxs-lookup"><span data-stu-id="19348-265">Allow data roaming when the device is on a cellular network.</span></span>|
 |<span data-ttu-id="19348-266">**Permitir busca em segundo plano global durante roaming**</span><span class="sxs-lookup"><span data-stu-id="19348-266">**Allow global background fetch while roaming**</span></span>|<span data-ttu-id="19348-267">Permitir ao dispositivo buscar dados, como emails, durante roaming na rede celular.</span><span class="sxs-lookup"><span data-stu-id="19348-267">Allow the device to fetch data such as email while it is roaming on a cellular network.</span></span>|
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-268">Configurações de recursos do dispositivo para recursos</span><span class="sxs-lookup"><span data-stu-id="19348-268">Device capabilities settings for features</span></span>
 <a id="device-capabilities-settings-for-features" class="xliff"></a>
 <span data-ttu-id="19348-269">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-269">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de recursos do dispositivo para recursos
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-270">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-270">Setting name</span></span>|<span data-ttu-id="19348-271">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-271">Details</span></span>|
 |----------------|-------|
@@ -172,9 +280,15 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-278">**Não permitir Airdrop de aplicativos gerenciados**</span><span class="sxs-lookup"><span data-stu-id="19348-278">**Do not allow Airdrop from managed apps**</span></span>|<span data-ttu-id="19348-279">Impedir que aplicativos gerenciados sejam capazes de enviar dados por meio do</span><span class="sxs-lookup"><span data-stu-id="19348-279">Stops managed apps from being able to send data via.</span></span> <span data-ttu-id="19348-280">Airdrop.</span><span class="sxs-lookup"><span data-stu-id="19348-280">Airdrop.</span></span>|
 
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-281">Configurações para aplicativos compatíveis e não compatíveis</span><span class="sxs-lookup"><span data-stu-id="19348-281">Settings for compliant and noncompliant apps</span></span>
 <a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 <span data-ttu-id="19348-282">Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma lista de aplicativos compatíveis ou incompatíveis usando as informações a seguir.</span><span class="sxs-lookup"><span data-stu-id="19348-282">In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps by using the following information.</span></span>
+=======
+### Configurações para aplicativos compatíveis e não compatíveis
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
+Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma lista de aplicativos compatíveis ou incompatíveis usando as informações a seguir.
+>>>>>>> live
 
 > [!NOTE]
 > <span data-ttu-id="19348-283">Uma única política só pode conter somente uma lista de aplicativos compatíveis ou de aplicativos incompatíveis.</span><span class="sxs-lookup"><span data-stu-id="19348-283">A single policy can contain only a list of compliant apps or a list of noncompliant apps.</span></span> <span data-ttu-id="19348-284">Não é possível especificar ambos na mesma política.</span><span class="sxs-lookup"><span data-stu-id="19348-284">You cannot specify both in the same policy.</span></span>
@@ -190,7 +304,11 @@ ms.lasthandoff: 07/12/2017
 
 <span data-ttu-id="19348-304">As políticas que contêm configurações de aplicativo que estão em conformidade e fora de conformidade devem ser implantadas em grupos de usuários.</span><span class="sxs-lookup"><span data-stu-id="19348-304">Policies containing compliant and noncompliant app settings must be deployed to groups of users.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-305">Configurações do modo de quiosque</span><span class="sxs-lookup"><span data-stu-id="19348-305">Kiosk mode settings</span></span>
+=======
+### Configurações do modo de quiosque
+>>>>>>> live
 <a id="kiosk-mode-settings" class="xliff"></a>
 
 |<span data-ttu-id="19348-306">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-306">Setting name</span></span>|<span data-ttu-id="19348-307">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-307">Details</span></span>|
@@ -218,21 +336,35 @@ ms.lasthandoff: 07/12/2017
 > -   <span data-ttu-id="19348-345">Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o [Programa de Registro do Dispositivo Apple](ios-device-enrollment-program-in-microsoft-intune.md) para colocar o dispositivo no modo supervisionado.</span><span class="sxs-lookup"><span data-stu-id="19348-345">Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md) to put the device into supervised mode.</span></span> <span data-ttu-id="19348-346">Para obter mais informações sobre a ferramenta Apple Configurator, consulte sua documentação da Apple.</span><span class="sxs-lookup"><span data-stu-id="19348-346">For more information about the Apple Configurator tool, see your Apple documentation.</span></span>
 > -   <span data-ttu-id="19348-347">Se o aplicativo iOS que você especificar for instalado depois de implantar a política de configuração, ele não entrará no modo de quiosque até depois de ser reiniciado.</span><span class="sxs-lookup"><span data-stu-id="19348-347">If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-348">Informações de referência para aplicativos compatíveis e não compatíveis</span><span class="sxs-lookup"><span data-stu-id="19348-348">Reference information for compliant and noncompliant apps</span></span>
+=======
+### Informações de referência para aplicativos compatíveis e não compatíveis
+>>>>>>> live
 <a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 <span data-ttu-id="19348-349">Use o **Relatório de aplicativos incompatíveis** para exibir a compatibilidade de aplicativos permitidos e bloqueados.</span><span class="sxs-lookup"><span data-stu-id="19348-349">Use the **Noncompliant Apps Report** to view the compliance of allowed and blocked apps.</span></span>
 
+<<<<<<< HEAD
 ##### <span data-ttu-id="19348-350">Executar o relatório de aplicativos incompatíveis</span><span class="sxs-lookup"><span data-stu-id="19348-350">To run the Noncompliant Apps Report</span></span>
+=======
+##### Executar o relatório de aplicativos incompatíveis
+>>>>>>> live
 <a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  <span data-ttu-id="19348-351">No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicativos Incompatíveis**.</span><span class="sxs-lookup"><span data-stu-id="19348-351">In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Reports** &gt; **Noncompliant Apps Report**.</span></span>
 
 2.  <span data-ttu-id="19348-352">Selecione os grupos de dispositivos que você deseja verificar, se deseja verificar se há aplicativos compatíveis, aplicativos incompatíveis ou ambos e então escolha **Exibir Relatório**.</span><span class="sxs-lookup"><span data-stu-id="19348-352">Select the device groups that you want to check, select whether you want to check for compliant apps, noncompliant apps, or both, and then choose **View Report**.</span></span>
 
+<<<<<<< HEAD
 #### <span data-ttu-id="19348-353">Como especificar URLs para lojas de aplicativos</span><span class="sxs-lookup"><span data-stu-id="19348-353">How to specify URLs to app stores</span></span>
 <a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 <span data-ttu-id="19348-354">Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e não compatíveis, ou na opção **Selecionar um aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque** (somente iOS), use um dos seguintes formatos:</span><span class="sxs-lookup"><span data-stu-id="19348-354">To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:</span></span>
+=======
+#### Como especificar URLs para lojas de aplicativos
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
+Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e não compatíveis, ou na opção **Selecionar um aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque** (somente iOS), use um dos seguintes formatos:
+>>>>>>> live
 
 1. <span data-ttu-id="19348-355">Usando um mecanismo de pesquisa, encontre o aplicativo que você deseja usar na iTunes App Store e abra a página do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="19348-355">Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.</span></span>
 
@@ -243,23 +375,38 @@ ms.lasthandoff: 07/12/2017
 > [!NOTE]
 > <span data-ttu-id="19348-359">Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="19348-359">You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-360">Configurações de registro</span><span class="sxs-lookup"><span data-stu-id="19348-360">Enrollment settings</span></span>
 <a id="enrollment-settings" class="xliff"></a>
 <span data-ttu-id="19348-361">Todas as configurações se aplicam ao iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="19348-361">All settings apply to iOS 8.0 and later.</span></span>
+=======
+### Configurações de registro
+<a id="enrollment-settings" class="xliff"></a>
+Todas as configurações se aplicam ao iOS 8.0 e posterior.
+>>>>>>> live
 
 |<span data-ttu-id="19348-362">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-362">Setting name</span></span>|<span data-ttu-id="19348-363">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-363">Details</span></span>|
 |----------------|--------------------|
 |<span data-ttu-id="19348-364">**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**</span><span class="sxs-lookup"><span data-stu-id="19348-364">**Allow Activation Lock when the device is in supervised mode**</span></span>|<span data-ttu-id="19348-365">Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.</span><span class="sxs-lookup"><span data-stu-id="19348-365">Enable Activation Lock on supervised iOS devices.</span></span>|
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-366">Configurações do modo supervisionado</span><span class="sxs-lookup"><span data-stu-id="19348-366">Supervised mode settings</span></span>
 <a id="supervised-mode-settings" class="xliff"></a>
 <span data-ttu-id="19348-367">As configurações a seguir podem ser feitas em dispositivos com iOS 8.0 e posterior que estão no modo supervisionado.</span><span class="sxs-lookup"><span data-stu-id="19348-367">You can configure the following settings on devices running iOS 8.0 and later that are in supervised mode.</span></span>
 
 ### <span data-ttu-id="19348-368">Configurações do modo supervisionado para restrições de dispositivo</span><span class="sxs-lookup"><span data-stu-id="19348-368">Supervised mode settings for device restrictions</span></span>
+=======
+### Configurações do modo supervisionado
+<a id="supervised-mode-settings" class="xliff"></a>
+As configurações a seguir podem ser feitas em dispositivos com iOS 8.0 e posterior que estão no modo supervisionado.
+
+### Configurações do modo supervisionado para restrições de dispositivo
+>>>>>>> live
 <a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |<span data-ttu-id="19348-369">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-369">Setting name</span></span>|<span data-ttu-id="19348-370">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-370">Details</span></span>|
 |----------------|--------------------|
+<<<<<<< HEAD
 |<span data-ttu-id="19348-371">**Permitir modificação da conta**</span><span class="sxs-lookup"><span data-stu-id="19348-371">**Allow account modification**</span></span>|<span data-ttu-id="19348-372">Permitir que o usuário altere as configurações de conta, como configurações de email.</span><span class="sxs-lookup"><span data-stu-id="19348-372">Allow the user to change account settings such as email configurations.</span></span>|
 |<span data-ttu-id="19348-373">**Permitir alterações nas configurações de uso de dados para celular do aplicativo**</span><span class="sxs-lookup"><span data-stu-id="19348-373">**Allow changes to app cellular data usage settings**</span></span>|<span data-ttu-id="19348-374">Permitir ao usuário controlar quais aplicativos podem usar dados de celular.</span><span class="sxs-lookup"><span data-stu-id="19348-374">Allow the user to control which apps are allowed to use cellular data.</span></span>|
 |<span data-ttu-id="19348-375">**Permitir o uso da opção Apagar todo o conteúdo e as configurações do dispositivo**</span><span class="sxs-lookup"><span data-stu-id="19348-375">**Allow the use of the erase all content and settings option on the device**</span></span>|<span data-ttu-id="19348-376">Permitir que o usuário use a opção de apagar todo o conteúdo e as configurações no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19348-376">Allow the user to use the option of erasing all content and settings on the device.</span></span>|
@@ -291,6 +438,39 @@ ms.lasthandoff: 07/12/2017
 <a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |<span data-ttu-id="19348-415">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-415">Setting name</span></span>|<span data-ttu-id="19348-416">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-416">Details</span></span>|
+=======
+|**Permitir modificação da conta**|Permitir que o usuário altere as configurações de conta, como configurações de email.|
+|**Permitir alterações nas configurações de uso de dados para celular do aplicativo**|Permitir ao usuário controlar quais aplicativos podem usar dados de celular.|
+|**Permitir o uso da opção Apagar todo o conteúdo e as configurações do dispositivo**|Permitir que o usuário use a opção de apagar todo o conteúdo e as configurações no dispositivo.|
+|**Permitir que o usuário habilite restrições nas configurações do dispositivo**|Permitir que o usuário configure restrições de dispositivo (controles dos pais) no dispositivo.|
+|**Permitir que o emparelhamento de host controle os dispositivos que podem ser emparelhados com um dispositivo iOS**|Permitir o emparelhamento de host para que administrador possa controlar os dispositivos com os quais um dispositivo iOS pode ser emparelhado.|
+|**Permitir que o usuário instale certificados e perfis de configuração**|Permitir que o usuário instale certificados e perfis de configuração.|
+|**Permitir a modificação do nome do dispositivo**|Permitir que o usuário altere o nome do dispositivo.|
+|**Permitir a modificação da senha**|Permitir que a senha do dispositivo seja adicionada, alterada ou removida.|
+|**Permitir emparelhamento do Apple Watch**|Permitir que o dispositivo seja emparelhado com um Apple Watch.|
+|**Permitir a modificação de configurações de notificação**|Permitir que o usuário altere as configurações de notificação do dispositivo.|
+|**Permitir a modificação do papel de parede**|Permitir que o usuário altere o papel de parede do dispositivo.|
+
+### Configurações do modo supervisionado para restrições de recursos
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
+
+|Nome da configuração|Detalhes|
+|----------------|--------------------|
+|**Permitir o AirDrop**|Permitir o uso do recurso AirDrop para trocar conteúdo com dispositivos próximos.|
+|**Permitir que o Siri consulte o conteúdo gerado por usuários da Internet**|Permitir que o Siri acesse sites para responder perguntas.|
+|**Usar filtro de profanidade da Siri**|Impede que a Siri dite ou use linguagem profana.|
+|**Permitir que a pesquisa do Spotlight retorne resultados da Internet**|Permitir que a pesquisa do Spotlight se conecte à Internet para fornecer mais resultados.|
+|**Permitir pesquisa de definição de palavra**|Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.|
+|**Permitir teclados preditivos**|Permitir o uso de teclados preditivos que sugerem palavras que o usuário pode querer.|
+|**Permitir correção automática**|Permite que o dispositivo corrija automaticamente palavras incorretas.|
+|**Permitir verificação ortográfica do teclado**|Permite o verificador de ortografia do dispositivo.|
+|**Permitir atalhos de teclado**|Permite o uso de atalhos de teclado.|
+
+### Configurações do modo supervisionado para restrições de aplicativo
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
+
+|Nome da configuração|Detalhes|
+>>>>>>> live
 |----------------|--------------------|
 |<span data-ttu-id="19348-417">**Permitir a modificação de configurações de confiança do aplicativo empresarial**</span><span class="sxs-lookup"><span data-stu-id="19348-417">**Allow enterprise app trust settings modification**</span></span>|<span data-ttu-id="19348-418">Permite que os usuários alterem as configurações de confiança para aplicativos empresariais.</span><span class="sxs-lookup"><span data-stu-id="19348-418">Lets users change the trust settings for enterprise apps.</span></span>|
 |<span data-ttu-id="19348-419">**Permitir a instalação de aplicativos usando apenas a configuração da Apple e o iTunes**</span><span class="sxs-lookup"><span data-stu-id="19348-419">**Allow installing apps using Apple Configuration and iTunes only**</span></span>|<span data-ttu-id="19348-420">Habilita ou desabilita a App Store da tela inicial do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19348-420">Enables or disables the App Store from the device home screen.</span></span> <span data-ttu-id="19348-421">Os usuários ainda podem usar o iTunes ou a ferramenta Apple Configurator para instalar e atualizar aplicativos.</span><span class="sxs-lookup"><span data-stu-id="19348-421">Users can still use iTunes, or the Apple Configurator tool to install and update apps.</span></span>|
@@ -305,7 +485,11 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-439">**Permitir o Game Center**</span><span class="sxs-lookup"><span data-stu-id="19348-439">**Allow Game Center**</span></span>|<span data-ttu-id="19348-440">Permitir o uso do aplicativo Game Center.</span><span class="sxs-lookup"><span data-stu-id="19348-440">Allow use of the Game Center app.</span></span>|
 
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-441">Mostrar ou ocultar aplicativos</span><span class="sxs-lookup"><span data-stu-id="19348-441">Show or Hide Apps</span></span>
+=======
+### Mostrar ou ocultar aplicativos
+>>>>>>> live
 <a id="show-or-hide-apps" class="xliff"></a>
 
 <span data-ttu-id="19348-442">Use a **Lista de aplicativos ocultos e mostrados** para controlar o seguinte em dispositivos supervisionados com iOS 9.3 ou posterior:</span><span class="sxs-lookup"><span data-stu-id="19348-442">Use the **Hidden and shown apps list** to control the following on supervised devices running iOS 9.3 or later:</span></span>
@@ -314,7 +498,11 @@ ms.lasthandoff: 07/12/2017
 - <span data-ttu-id="19348-445">Especifique uma lista de aplicativos que os usuários podem exibir e iniciar.</span><span class="sxs-lookup"><span data-stu-id="19348-445">Specify a list of apps that users can view and launch.</span></span> <span data-ttu-id="19348-446">Nenhum outro aplicativo pode ser exibido ou iniciado.</span><span class="sxs-lookup"><span data-stu-id="19348-446">No other apps can be viewed or launched.</span></span>
 
 
+<<<<<<< HEAD
 #### <span data-ttu-id="19348-447">Como criar uma lista de aplicativos ocultos ou mostrados</span><span class="sxs-lookup"><span data-stu-id="19348-447">How to create a hidden or shown app list</span></span>
+=======
+#### Como criar uma lista de aplicativos ocultos ou mostrados
+>>>>>>> live
 <a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 <span data-ttu-id="19348-448">Especifique as seguintes configurações:</span><span class="sxs-lookup"><span data-stu-id="19348-448">Specify the following settings:</span></span>
@@ -329,7 +517,11 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-467">**Editarar**</span><span class="sxs-lookup"><span data-stu-id="19348-467">**Edit**</span></span>|<span data-ttu-id="19348-468">Permite editar o nome, editor e a URL do aplicativo selecionado.</span><span class="sxs-lookup"><span data-stu-id="19348-468">Let’s you edit the name, publisher and URL of the selected app.</span></span>|
 |<span data-ttu-id="19348-469">**Excluir**</span><span class="sxs-lookup"><span data-stu-id="19348-469">**Delete**</span></span>|<span data-ttu-id="19348-470">Exclui o aplicativo selecionado da lista.</span><span class="sxs-lookup"><span data-stu-id="19348-470">Deletes the selected app from the list.</span></span>|
 
+<<<<<<< HEAD
 #### <span data-ttu-id="19348-471">Informações do aplicativo para aplicativos iOS internos</span><span class="sxs-lookup"><span data-stu-id="19348-471">App information for built-in iOS apps</span></span>
+=======
+#### Informações do aplicativo para aplicativos iOS internos
+>>>>>>> live
 <a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 <span data-ttu-id="19348-472">Use as informações nesta lista para identificar o nome, o editor e a ID do pacote dos aplicativos iOS internos que você pode mostrar ou ocultar.</span><span class="sxs-lookup"><span data-stu-id="19348-472">Use the information in this list to identify the name, publisher, and bundle ID of the built-in iOS apps that you might want to show or hide.</span></span> <span data-ttu-id="19348-473">Se deseja mostrar ou ocultar todos os aplicativos na lista, você pode copiar os dados abaixo em um arquivo de texto com a extensão **.csv** e usar a opção **Importar Aplicativos** para importar todos os aplicativos simultaneamente.</span><span class="sxs-lookup"><span data-stu-id="19348-473">If you want to show or hide all of the apps in the list, you can copy the data below into a text file with the extension **.csv**, then use the **Import Apps** option to import all of the apps simultaneously.</span></span>
@@ -380,21 +572,35 @@ ms.lasthandoff: 07/12/2017
 
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="19348-474">Configurações de política personalizada</span><span class="sxs-lookup"><span data-stu-id="19348-474">Custom policy settings</span></span>
+=======
+## Configurações de política personalizada
+>>>>>>> live
 <a id="custom-policy-settings" class="xliff"></a>
 
 <span data-ttu-id="19348-475">Use a **política personalizada do iOS** do Microsoft Intune para implantar configurações que você criou usando a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) em dispositivos iOS.</span><span class="sxs-lookup"><span data-stu-id="19348-475">Use the Microsoft Intune **iOS custom policy** to deploy settings that you created by using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) to iOS devices.</span></span> <span data-ttu-id="19348-476">Essa ferramenta permite que você crie várias configurações que controlam a operação desses dispositivos e as exporte para um perfil de configuração.</span><span class="sxs-lookup"><span data-stu-id="19348-476">This tool lets you create many settings that control the operation of these devices and export them to a configuration profile.</span></span> <span data-ttu-id="19348-477">Em seguida, você poderá importar este perfil de configuração para uma política personalizada do Intune iOS e implantar as configurações para usuários e dispositivos em sua organização.</span><span class="sxs-lookup"><span data-stu-id="19348-477">You can then import this configuration profile into an Intune iOS custom policy and deploy the settings to users and devices in your organization.</span></span>
 
 <span data-ttu-id="19348-478">Essa funcionalidade permite que você implante configurações do iOS que não possam ser configuradas com as políticas de configuração gerais do Intune.</span><span class="sxs-lookup"><span data-stu-id="19348-478">This capability allows you to deploy iOS settings that are not configurable with Intune general configuration policies.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-479">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="19348-479">Prerequisites</span></span>
 <a id="prerequisites" class="xliff"></a>
 <span data-ttu-id="19348-480">Antes de começar, você precisa ter instalado o Apple Configurator e criado um arquivo de configuração que contém as configurações que deseja implantar para usuários ou dispositivos.</span><span class="sxs-lookup"><span data-stu-id="19348-480">Before you start, you must have installed the Apple Configurator and created a configuration file that contains the settings that you want to deploy to users or devices.</span></span> <span data-ttu-id="19348-481">Você pode baixar o Apple Configurator e aprender sobre ele na [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).</span><span class="sxs-lookup"><span data-stu-id="19348-481">You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).</span></span>
+=======
+### Pré-requisitos
+<a id="prerequisites" class="xliff"></a>
+Antes de começar, você precisa ter instalado o Apple Configurator e criado um arquivo de configuração que contém as configurações que deseja implantar para usuários ou dispositivos. Você pode baixar o Apple Configurator e aprender sobre ele na [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
+>>>>>>> live
 
 > [!NOTE]
 > <span data-ttu-id="19348-482">O Intune não relata a conformidade de configurações individuais em uma política personalizada do iOS.</span><span class="sxs-lookup"><span data-stu-id="19348-482">Intune does not report the compliance of individual settings in an iOS custom policy.</span></span> <span data-ttu-id="19348-483">No entanto, a conformidade geral da política é informada.</span><span class="sxs-lookup"><span data-stu-id="19348-483">However, the overall compliance of the policy is reported.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-484">Configurações gerais</span><span class="sxs-lookup"><span data-stu-id="19348-484">General settings</span></span>
+=======
+### Configurações gerais
+>>>>>>> live
 <a id="general-settings" class="xliff"></a>
 
 |<span data-ttu-id="19348-485">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-485">Setting name</span></span>|<span data-ttu-id="19348-486">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-486">Details</span></span>|
@@ -402,7 +608,11 @@ ms.lasthandoff: 07/12/2017
     |<span data-ttu-id="19348-487">**Nome**</span><span class="sxs-lookup"><span data-stu-id="19348-487">**Name**</span></span>|<span data-ttu-id="19348-488">Insira um nome exclusivo para a política personalizada do iOS para ajudar a identificá-lo no console do Intune.</span><span class="sxs-lookup"><span data-stu-id="19348-488">Enter a unique name for the iOS custom policy to help you identify it in the Intune console.</span></span>|
     |<span data-ttu-id="19348-489">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="19348-489">**Description**</span></span>|<span data-ttu-id="19348-490">Forneça uma descrição que dê uma visão geral da política personalizada do iOS e outras informações relevantes que o ajudarão a localizá-la.</span><span class="sxs-lookup"><span data-stu-id="19348-490">Provide a description that gives an overview of the iOS custom policy and other relevant information that helps you to locate it.</span></span>|
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-491">Configurações Personalizadas</span><span class="sxs-lookup"><span data-stu-id="19348-491">Custom settings</span></span>
+=======
+### Configurações Personalizadas
+>>>>>>> live
 <a id="custom-settings" class="xliff"></a>
 
 |<span data-ttu-id="19348-492">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="19348-492">Setting name</span></span>|<span data-ttu-id="19348-493">Detalhes</span><span class="sxs-lookup"><span data-stu-id="19348-493">Details</span></span>|
@@ -411,6 +621,12 @@ ms.lasthandoff: 07/12/2017
 |<span data-ttu-id="19348-496">**Arquivo de configuração de perfil**</span><span class="sxs-lookup"><span data-stu-id="19348-496">**Configuration profile file**</span></span>|<span data-ttu-id="19348-497">Clique em **Importar** e então navegue até o perfil de configuração criado usando o Apple Configurador.</span><span class="sxs-lookup"><span data-stu-id="19348-497">Choose **Import**, and then browse to the configuration profile that you created by using the Apple Configurator.</span></span> <span data-ttu-id="19348-498">**Observação:** certifique-se de que as configurações que você exportar da ferramenta Apple Configurator sejam compatíveis com a versão do iOS nos dispositivos nos quais você implantar a política personalizada do iOS.</span><span class="sxs-lookup"><span data-stu-id="19348-498">**Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy.</span></span> <span data-ttu-id="19348-499">Para obter informações sobre como as incompatibilidades de configuração são resolvidas, pesquise a **Referência de Perfil de Configuração** e a **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).</span><span class="sxs-lookup"><span data-stu-id="19348-499">For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.</span></span>|
     |<span data-ttu-id="19348-500">**Detalhes do perfil de configuração**</span><span class="sxs-lookup"><span data-stu-id="19348-500">**Configuration profile details**</span></span>|<span data-ttu-id="19348-501">Exibir o código XML para o perfil de configuração que você importou.</span><span class="sxs-lookup"><span data-stu-id="19348-501">Display the XML code for the configuration profile that you imported.</span></span>|
 
+<<<<<<< HEAD
 ### <span data-ttu-id="19348-502">Consulte também</span><span class="sxs-lookup"><span data-stu-id="19348-502">See also</span></span>
 <a id="see-also" class="xliff"></a>
 [<span data-ttu-id="19348-503">Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="19348-503">Manage settings and features on your devices with Microsoft Intune policies</span></span>](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+=======
+### Consulte também
+<a id="see-also" class="xliff"></a>
+[Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+>>>>>>> live

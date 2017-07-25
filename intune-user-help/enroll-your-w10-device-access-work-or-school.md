@@ -22,7 +22,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/13/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="b4ba5-103">Registrar seu dispositivo Windows 10 no Intune</span><span class="sxs-lookup"><span data-stu-id="b4ba5-103">Enroll your Windows 10 device in Intune</span></span>
+=======
+# Registrar seu dispositivo Windows 10 no Intune
+>>>>>>> live
 <a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
 
 > [!NOTE]

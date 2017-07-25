@@ -21,6 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="b1b9a-103">Configurações do Intune AirPlay para dispositivos iOS</span><span class="sxs-lookup"><span data-stu-id="b1b9a-103">Intune AirPlay settings for iOS devices</span></span>
 <a id="intune-airplay-settings-for-ios-devices" class="xliff"></a>
 
@@ -40,19 +41,44 @@ ms.lasthandoff: 07/05/2017
 
 ## <span data-ttu-id="b1b9a-113">Configurar uma lista de dispositivos e senha</span><span class="sxs-lookup"><span data-stu-id="b1b9a-113">Configure a device and password list</span></span>
 <a id="configure-a-device-and-password-list" class="xliff"></a>
+=======
+# Configurações do Intune AirPlay para dispositivos iOS
+<a id="intune-airplay-settings-for-ios-devices" class="xliff"></a>
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Use essas configurações para ajudar a conectar os dispositivos iOS gerenciados a dispositivos compatíveis com AirPlay (como Apple TVs) em sua rede.
+Com esse recurso, você pode:
+
+- **Configurar uma lista de dispositivos e senhas** – permita que os usuários se conectem automaticamente aos dispositivos AirPlay que estão no alcance. Provisione-os com o nome e a senha dos dispositivos AirPlay, de forma que eles não precisem fornecê-los quando se conectarem.
+- **Configurar destinos permitidos** - configure uma lista de dispositivos AirPlay (por ID de dispositivo). Os usuários finais somente podem ver e se conectar aos dispositivos listados (apenas para dispositivos supervisionados).
+
+## Introdução
+<a id="get-started" class="xliff"></a>
+>>>>>>> live
 
 1. <span data-ttu-id="b1b9a-114">Na folha **Senhas**, insira o **Nome do Dispositivo** e a **Senha** de um dispositivo AirPlay, por exemplo, **Contoso Apple TV**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-114">On the **Passwords** blade, enter the **Device Name** and **Password** of an AirPlay device, for example **Contoso Apple TV**.</span></span>
 2. <span data-ttu-id="b1b9a-115">Depois de inserir os detalhes do dispositivo, clique em **Adicionar**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-115">After entering the device details, click **Add**.</span></span> <span data-ttu-id="b1b9a-116">O dispositivo é exibido na lista **Nome do Dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-116">The device appears in the **Device Name** list.</span></span>
 3. <span data-ttu-id="b1b9a-117">Continue adicionando itens.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-117">Continue to add devices.</span></span> <span data-ttu-id="b1b9a-118">Quando terminar, escolha **OK**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-118">When you are finished, choose **OK**.</span></span>
 
+<<<<<<< HEAD
 
 ## <span data-ttu-id="b1b9a-119">Configurar destinos permitidos</span><span class="sxs-lookup"><span data-stu-id="b1b9a-119">Configure allowed destinations</span></span>
 <a id="configure-allowed-destinations" class="xliff"></a>
+=======
+## Configurar uma lista de dispositivos e senha
+<a id="configure-a-device-and-password-list" class="xliff"></a>
+
+1. Na folha **Senhas**, insira o **Nome do Dispositivo** e a **Senha** de um dispositivo AirPlay, por exemplo, **Contoso Apple TV**.
+2. Depois de inserir os detalhes do dispositivo, clique em **Adicionar**. O dispositivo é exibido na lista **Nome do Dispositivo**.
+3. Continue adicionando itens. Quando terminar, escolha **OK**.
+>>>>>>> live
 
 1. <span data-ttu-id="b1b9a-120">Na folha **Destinos permitidos (somente supervisionados)**, insira a **ID do Dispositivo** de um dispositivo AirPlay, por exemplo, 52:46:CD:51:83:4C.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-120">On the **Allowed destinations (supervised only)** blade, enter the **Device ID** of an AirPlay device, for example 52:46:CD:51:83:4C.</span></span>
 2. <span data-ttu-id="b1b9a-121">Depois de inserir a ID do dispositivo, clique em **Adicionar**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-121">After entering the device ID, click **Add**.</span></span> <span data-ttu-id="b1b9a-122">A ID é exibida na lista **ID do Dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-122">The ID appears in the **Device ID** list.</span></span>
 3. <span data-ttu-id="b1b9a-123">Continue adicionando itens.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-123">Continue to add devices.</span></span> <span data-ttu-id="b1b9a-124">Quando terminar, escolha **OK**.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-124">When you are finished, choose **OK**.</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="b1b9a-125">Você também pode importar o dispositivo e as senhas, bem como os destinos permitidos, de um arquivo csv (valores separados por vírgula).</span><span class="sxs-lookup"><span data-stu-id="b1b9a-125">You can also import device and passwords, and allowed destinations from a comma-separated values (csv) file.</span></span>
 
 
@@ -60,4 +86,20 @@ ms.lasthandoff: 07/05/2017
 <a id="next-steps" class="xliff"></a>
 
 <span data-ttu-id="b1b9a-127">Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos.</span><span class="sxs-lookup"><span data-stu-id="b1b9a-127">You can now assign the device profile to the groups you choose.</span></span> <span data-ttu-id="b1b9a-128">Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).</span><span class="sxs-lookup"><span data-stu-id="b1b9a-128">For details, see [How to assign device profiles](device-profile-assign.md).</span></span>
+=======
+## Configurar destinos permitidos
+<a id="configure-allowed-destinations" class="xliff"></a>
+
+1. Na folha **Destinos permitidos (somente supervisionados)**, insira a **ID do Dispositivo** de um dispositivo AirPlay, por exemplo, 52:46:CD:51:83:4C.
+2. Depois de inserir a ID do dispositivo, clique em **Adicionar**. A ID é exibida na lista **ID do Dispositivo**.
+3. Continue adicionando itens. Quando terminar, escolha **OK**.
+
+Você também pode importar o dispositivo e as senhas, bem como os destinos permitidos, de um arquivo csv (valores separados por vírgula).
+
+
+## Próximas etapas
+<a id="next-steps" class="xliff"></a>
+
+Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
+>>>>>>> live
 

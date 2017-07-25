@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "<span data-ttu-id=\"dc788-101\">Opções de registro para o Intune</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc788-101\">Enrollment options for Intune</span></span>"
+=======
+title: "Opções de registro para o Intune"
+>>>>>>> live
 description: 
 keywords: 
 author: nathbarn
@@ -17,6 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
+<<<<<<< HEAD
 # <a name="enrollment-options-for-intune"></a><span data-ttu-id="dc788-102">Opções de registro para o Intune</span><span class="sxs-lookup"><span data-stu-id="dc788-102">Enrollment options for Intune</span></span>
 
 <span data-ttu-id="dc788-103">Como um administrador do Intune, você pode configurar o registro de dispositivo para ajudar os usuários e habilitar funcionalidades do Intune.</span><span class="sxs-lookup"><span data-stu-id="dc788-103">As an Intune admin, you can configure device enrollment to help users and enable Intune capabilities.</span></span>  <span data-ttu-id="dc788-104">O Intune inclui as seguintes opções de registro:</span><span class="sxs-lookup"><span data-stu-id="dc788-104">Intune includes the following enrollment options:</span></span>
@@ -48,3 +53,36 @@ ms.lasthandoff: 07/11/2017
 ## <a name="device-categories"></a><span data-ttu-id="dc788-126">Categorias de dispositivos</span><span class="sxs-lookup"><span data-stu-id="dc788-126">Device categories</span></span>
 
 <span data-ttu-id="dc788-127">Você pode usar as categorias de dispositivo para adicionar automaticamente os dispositivos a grupos com base em categorias definidas por você.</span><span class="sxs-lookup"><span data-stu-id="dc788-127">You can use device categories to automatically add devices to groups based on categories that you define.</span></span> <span data-ttu-id="dc788-128">Organizar dispositivos em grupos facilita a tarefa de gerenciar esses dispositivos.</span><span class="sxs-lookup"><span data-stu-id="dc788-128">Organizing devices into groups makes it easier for you to manage those devices.</span></span> <span data-ttu-id="dc788-129">Saiba mais sobre [categorias de dispositivo](device-group-mapping.md).</span><span class="sxs-lookup"><span data-stu-id="dc788-129">Learn more about [device categories](device-group-mapping.md).</span></span>
+=======
+# <a name="enrollment-options-for-intune"></a>Opções de registro para o Intune
+
+Como um administrador do Intune, você pode configurar o registro de dispositivo para ajudar os usuários e habilitar funcionalidades do Intune.  O Intune inclui as seguintes opções de registro:
+
+## <a name="terms-and-conditions"></a>Termos e condições
+
+Você pode exigir que os usuários aceitem os termos e condições de sua empresa antes de poderem usar o Portal da Empresa para registrar seus dispositivos e acessar recursos como aplicativos e email da empresa. A configuração dos termos e condições é opcional. Aprenda mais sobre os [termos e condições](terms-and-conditions-create.md).
+
+## <a name="enrollment-restrictions"></a>Restrições de registro
+
+Você pode optar por restringir o registro de dispositivo por:
+- Plataforma do dispositivo
+- Número de dispositivos por usuário
+- Bloquear dispositivos pessoais
+
+Saiba mais sobre [restrições de registro](enrollment-restrictions-set.md).
+
+## <a name="enable-apple-device-enrollment"></a>Habilitar registro de dispositivo da Apple
+
+Um certificado de Push MDM é necessário para registrar dispositivos iOS e macOS. Saiba mais sobre [MDM push certificates](apple-mdm-push-certificate-get.md).
+
+## <a name="corporate-identifiers"></a>Identificadores corporativos
+
+Você pode listar os números de IMEI (identificador de equipamento móvel internacional) e números de série para identificar dispositivos corporativos. Saiba mais sobre [identificadores corporativos](corporate-identifiers-add.md).
+
+## <a name="device-enrollment-manager"></a>Gerenciador de registro de dispositivos
+Você pode transformar usuários em gerenciadores de registros de dispositivos.  Usuários DEM podem registrar um grande número de dispositivos móveis com uma única conta de usuário. A conta do DEM (gerenciador de registros de dispositivos) pode registrar até 1.000 dispositivos. Saiba mais sobre [gerenciadores de registros de dispositivos](device-enrollment-manager-enroll.md).
+
+## <a name="device-categories"></a>Categorias de dispositivos
+
+Você pode usar as categorias de dispositivo para adicionar automaticamente os dispositivos a grupos com base em categorias definidas por você. Organizar dispositivos em grupos facilita a tarefa de gerenciar esses dispositivos. Saiba mais sobre [categorias de dispositivo](device-group-mapping.md).
+>>>>>>> live

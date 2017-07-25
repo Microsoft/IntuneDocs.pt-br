@@ -33,7 +33,13 @@ ms.lasthandoff: 07/13/2017
 
 <span data-ttu-id="61662-110">Esta série de downloads reduz o impacto sobre a largura de banda da rede e diminui o tempo necessário para registrar inicialmente o computador no Intune.</span><span class="sxs-lookup"><span data-stu-id="61662-110">This series of downloads reduces the impact on the network's bandwidth and minimizes the time required to initially enroll the PC in Intune.</span></span> <span data-ttu-id="61662-111">Ela também garante que o cliente tenha o software mais recente disponível após a conclusão do download do segundo.</span><span class="sxs-lookup"><span data-stu-id="61662-111">It also ensures that the client has the most recent software available after the second download has finished.</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="61662-112">Uma licença do Intune permite que a instalação do software cliente do Intune em até cinco computadores.</span><span class="sxs-lookup"><span data-stu-id="61662-112">One Intune license allows the installation of the Intune client software on up to five PCs.</span></span>
+=======
+Uma licença do Intune permite que a instalação do software cliente do Intune em até cinco computadores.
+
+## <a name="download-the-intune-client-software"></a>Baixe o software cliente do Intune
+>>>>>>> live
 
 ## <a name="download-the-intune-client-software"></a><span data-ttu-id="61662-113">Baixe o software cliente do Intune</span><span class="sxs-lookup"><span data-stu-id="61662-113">Download the Intune client software</span></span>
 

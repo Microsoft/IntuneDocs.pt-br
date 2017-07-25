@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: "<span data-ttu-id=\"47a3c-101\">Conexões VPN</span><span class=\"sxs-lookup\"><span data-stu-id=\"47a3c-101\">VPN connections</span></span>"
 description: "<span data-ttu-id=\"47a3c-102\">Use perfis de VPN para implantar as configurações de VPN para usuários e dispositivos na sua organização.</span><span class=\"sxs-lookup\"><span data-stu-id=\"47a3c-102\">Use VPN profiles to deploy VPN settings to users and devices in your organization.</span></span>"
+=======
+title: "Conexões VPN"
+description: "Use perfis de VPN para implantar as configurações de VPN para usuários e dispositivos na sua organização."
+>>>>>>> live
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -20,7 +25,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="47a3c-103">Conexões VPN no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="47a3c-103">VPN connections in Microsoft Intune</span></span>
+=======
+# Conexões VPN no Microsoft Intune
+>>>>>>> live
 <a id="vpn-connections-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -41,7 +50,11 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="47a3c-118">As opções de configuração do perfil VPN são diferentes dependendo do tipo de dispositivo selecionado.</span><span class="sxs-lookup"><span data-stu-id="47a3c-118">The VPN profile configuration options differ depending on the device type that you select.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="47a3c-119">Tipos de conexão VPN</span><span class="sxs-lookup"><span data-stu-id="47a3c-119">VPN connection types</span></span>
+=======
+## Tipos de conexão VPN
+>>>>>>> live
 <a id="vpn-connection-types" class="xliff"></a>
 
 <span data-ttu-id="47a3c-120">O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tipos de conexão:</span><span class="sxs-lookup"><span data-stu-id="47a3c-120">Intune supports creating VPN profiles that use the following connection types:</span></span>
@@ -69,24 +82,40 @@ ms.lasthandoff: 07/01/2017
 
  <span data-ttu-id="47a3c-215">Saiba como criar perfis de VPN personalizados usando configurações de URI em [Configurações personalizadas para perfis de VPN](create-custom-vpn-profiles.md).</span><span class="sxs-lookup"><span data-stu-id="47a3c-215">Learn how to  create custom VPN profiles by using URI settings in [Custom configurations for VPN profiles](create-custom-vpn-profiles.md).</span></span>     
 
+<<<<<<< HEAD
 ## <span data-ttu-id="47a3c-216">Métodos para proteger perfis de VPN</span><span class="sxs-lookup"><span data-stu-id="47a3c-216">Methods of securing VPN profiles</span></span>
+=======
+## Métodos para proteger perfis de VPN
+>>>>>>> live
 <a id="methods-of-securing-vpn-profiles" class="xliff"></a>
 
 <span data-ttu-id="47a3c-217">Perfis VPN podem usar uma série de tipos de conexão e protocolos diferentes, de fabricantes diferentes.</span><span class="sxs-lookup"><span data-stu-id="47a3c-217">VPN profiles can use a number of different connection types and protocols from different manufacturers.</span></span> <span data-ttu-id="47a3c-218">Essas conexões geralmente são protegidas usando um destes dois métodos.</span><span class="sxs-lookup"><span data-stu-id="47a3c-218">These connections are typically secured through one of two methods.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="47a3c-219">Certificados</span><span class="sxs-lookup"><span data-stu-id="47a3c-219">Certificates</span></span>
+=======
+### Certificados
+>>>>>>> live
 <a id="certificates" class="xliff"></a>
 
 <span data-ttu-id="47a3c-220">Ao criar o perfil de VPN, você escolhe um perfil de certificado SCEP ou .PFX criado anteriormente no Intune.</span><span class="sxs-lookup"><span data-stu-id="47a3c-220">When you create the VPN profile, you choose a SCEP or PFX certificate profile that you previously created in Intune.</span></span> <span data-ttu-id="47a3c-221">Isso é conhecido como certificado de identidade.</span><span class="sxs-lookup"><span data-stu-id="47a3c-221">This is known as the identity certificate.</span></span> <span data-ttu-id="47a3c-222">Ele é usado para autenticar um perfil de certificado confiável (ou *certificado raiz*) que você criou para estabelecer que o dispositivo do usuário tem permissão para se conectar.</span><span class="sxs-lookup"><span data-stu-id="47a3c-222">It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect.</span></span> <span data-ttu-id="47a3c-223">O certificado confiável é implantado no computador que autentica a conexão de VPN, em geral, o servidor VPN.</span><span class="sxs-lookup"><span data-stu-id="47a3c-223">The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.</span></span>
 
 <span data-ttu-id="47a3c-224">Para obter mais informações sobre como criar e usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado).</span><span class="sxs-lookup"><span data-stu-id="47a3c-224">For more information about how to create and use certificate profiles in Intune, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="47a3c-225">Nome e senha do usuário</span><span class="sxs-lookup"><span data-stu-id="47a3c-225">User name and password</span></span>
+=======
+### Nome e senha do usuário
+>>>>>>> live
 <a id="user-name-and-password" class="xliff"></a>
 
 <span data-ttu-id="47a3c-226">O usuário autentica no servidor VPN, fornecendo seu nome de usuário e senha.</span><span class="sxs-lookup"><span data-stu-id="47a3c-226">The user authenticates to the VPN server by providing a user name and password.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="47a3c-227">Criar um perfil VPN</span><span class="sxs-lookup"><span data-stu-id="47a3c-227">Create a VPN profile</span></span>
+=======
+## Criar um perfil VPN
+>>>>>>> live
 <a id="create-a-vpn-profile" class="xliff"></a>
 
 1. <span data-ttu-id="47a3c-228">No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.</span><span class="sxs-lookup"><span data-stu-id="47a3c-228">In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Add Policy**.</span></span>
@@ -157,6 +186,7 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="47a3c-354">A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.</span><span class="sxs-lookup"><span data-stu-id="47a3c-354">The new policy appears in the **Configuration Policies** node of the **Policy** workspace.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="47a3c-355">VPN sob demanda para dispositivos iOS</span><span class="sxs-lookup"><span data-stu-id="47a3c-355">On-demand VPN for iOS devices</span></span>
 <a id="on-demand-vpn-for-ios-devices" class="xliff"></a>
 <span data-ttu-id="47a3c-356">Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="47a3c-356">You can configure on-demand VPN for iOS 8.0 and later devices.</span></span>
@@ -173,6 +203,24 @@ ms.lasthandoff: 07/01/2017
 4. <span data-ttu-id="47a3c-370">Escolha uma destas ações:</span><span class="sxs-lookup"><span data-stu-id="47a3c-370">Choose one of these actions:</span></span>
   - <span data-ttu-id="47a3c-371">**Conectar**</span><span class="sxs-lookup"><span data-stu-id="47a3c-371">**Connect**</span></span>
   - <span data-ttu-id="47a3c-372">**Avaliar conexão**, que tem três configurações a.</span><span class="sxs-lookup"><span data-stu-id="47a3c-372">**Evaluate connection**, which has three settings a.</span></span> <span data-ttu-id="47a3c-373">**Ação de domínio** – escolha **Conectar se necessário** ou **Nunca conectar** b.</span><span class="sxs-lookup"><span data-stu-id="47a3c-373">**Domain action**  - choose **Connect if needed** or **Never connect** b.</span></span> <span data-ttu-id="47a3c-374">**Lista de domínios separados por vírgulas** – configure essa opção somente se você escolher uma **Ação de domínio** do tipo **Conectar se necessário** c.</span><span class="sxs-lookup"><span data-stu-id="47a3c-374">**Comma-separated list of domains** - you configure this only if you choose a **Domain action** of **Connect if needed** c.</span></span> <span data-ttu-id="47a3c-375">**Investigação de cadeia de caracteres de URL necessária** - uma URL HTTP ou HTTPS (preferencial) URL, como *https://vpntestprobe.contoso.com*.</span><span class="sxs-lookup"><span data-stu-id="47a3c-375">**Required URL string probe** - an HTTP or HTTPS (preferred) URL, such as *https://vpntestprobe.contoso.com*.</span></span> <span data-ttu-id="47a3c-376">A regra verificará se há uma resposta proveniente desse endereço.</span><span class="sxs-lookup"><span data-stu-id="47a3c-376">The rule will check to see if there's a response from this address.</span></span> <span data-ttu-id="47a3c-377">Se não houver, e a **Ação de domínio** for **Conectar se necessário**, a VPN será disparada.</span><span class="sxs-lookup"><span data-stu-id="47a3c-377">If not, and the **Domain action** is **Connect if needed**, the VPN will be triggered.</span></span>
+=======
+### VPN sob demanda para dispositivos iOS
+<a id="on-demand-vpn-for-ios-devices" class="xliff"></a>
+Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
+
+> [!NOTE]
+>  
+> É possível usar a VPN por aplicativo e a VPN sob demanda na mesma política.
+
+1. Na página de configuração da política, localize **Regras sob demanda para esta conexão VPN**. As colunas recebem o nome de **Correspondência**, que é a condição que as regras devem conferir, e **Ação**, a ação que a política disparará quando houver correspondência da condição.
+2. Escolha **Adicionar** para criar uma regra. Há dois tipos de correspondências que podem ser definidas na regra. Você só pode configurar um desses tipos por regra.
+  - **SSIDs**, que se refere a redes sem fio.
+  - **Domínios de pesquisa DNS** – Você pode usar nomes de domínio totalmente qualificados, como *team.corp.contoso.com*, ou usar domínios como *contoso.com*, que é o equivalente a usar * *.contoso.com*.
+3. Opcional: forneça uma investigação de cadeia de caracteres de URL, que é uma URL usada pela regra como um teste. Se o dispositivo no qual esse perfil está instalado for capaz de acessar essa URL sem redirecionamento, a VPN será estabelecida e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres de URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de se conectar a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
+4. Escolha uma destas ações:
+  - **Conectar**
+  - **Avaliar conexão**, que tem três configurações a. **Ação de domínio** – escolha **Conectar se necessário** ou **Nunca conectar** b. **Lista de domínios separados por vírgulas** – configure essa opção somente se você escolher uma **Ação de domínio** do tipo **Conectar se necessário** c. **Investigação de cadeia de caracteres de URL necessária** - uma URL HTTP ou HTTPS (preferencial) URL, como *https://vpntestprobe.contoso.com*. A regra verificará se há uma resposta proveniente desse endereço. Se não houver, e a **Ação de domínio** for **Conectar se necessário**, a VPN será disparada.
+>>>>>>> live
       
      > [!TIP]
      >
@@ -183,7 +231,11 @@ ms.lasthandoff: 07/01/2017
 <span data-ttu-id="47a3c-388">As regras específicas de domínio são avaliadas antes das regras de todos os domínios.</span><span class="sxs-lookup"><span data-stu-id="47a3c-388">Domain-specific rules are evaluated before all-domain rules.</span></span>
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="47a3c-389">Implantar a política</span><span class="sxs-lookup"><span data-stu-id="47a3c-389">Deploy the policy</span></span>
+=======
+## Implantar a política
+>>>>>>> live
 <a id="deploy-the-policy" class="xliff"></a>
 
 1.  <span data-ttu-id="47a3c-390">No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.</span><span class="sxs-lookup"><span data-stu-id="47a3c-390">In the **Policy** workspace, select the policy that you want to deploy, and then choose **Manage Deployment**.</span></span>
@@ -197,4 +249,8 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="47a3c-394">Após a implantação bem-sucedida, os usuários verão o nome da conexão VPN especificado na lista de conexões de VPN em seus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="47a3c-394">After successful deployment, users will see the VPN connection name that you specified in the list of VPN connections on their devices.</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="47a3c-395">Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção.</span><span class="sxs-lookup"><span data-stu-id="47a3c-395">A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention.</span></span> <span data-ttu-id="47a3c-396">Além disso, um resumo de status aparece no espaço de trabalho Painel.</span><span class="sxs-lookup"><span data-stu-id="47a3c-396">Additionally, a status summary appears in the Dashboard workspace.</span></span>
+=======
+Um resumo de status e alertas na página **Visão geral** do espaço de trabalho **Política** identifica problemas com a política que exigem atenção. Além disso, um resumo de status aparece no espaço de trabalho Painel.
+>>>>>>> live

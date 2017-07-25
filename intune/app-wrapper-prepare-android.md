@@ -71,7 +71,11 @@ ms.lasthandoff: 07/11/2017
 
 ## <a name="run-the-app-wrapping-tool"></a><span data-ttu-id="aa2e5-138">Executar a ferramenta de encapsulamento de aplicativos</span><span class="sxs-lookup"><span data-stu-id="aa2e5-138">Run the App Wrapping Tool</span></span>
 
+<<<<<<< HEAD
 1.  <span data-ttu-id="aa2e5-139">No computador Windows em que você instalou a Ferramenta de Encapsulamento de Aplicativos, abra uma janela do PowerShell.</span><span class="sxs-lookup"><span data-stu-id="aa2e5-139">On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window.</span></span>
+=======
+1.  No computador Windows em que você instalou a Ferramenta de Encapsulamento de Aplicativos, abra uma janela do PowerShell.
+>>>>>>> live
 
 2.  <span data-ttu-id="aa2e5-140">Da pasta em que instalou a ferramenta, importe o módulo do PowerShell da Ferramenta de Disposição do Aplicativo:</span><span class="sxs-lookup"><span data-stu-id="aa2e5-140">From the folder where you installed the tool, import the App Wrapping Tool PowerShell module:</span></span>
 

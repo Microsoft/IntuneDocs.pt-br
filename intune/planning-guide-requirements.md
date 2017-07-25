@@ -20,7 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="60607-103">Determinar os requisitos de cenários de caso de uso</span><span class="sxs-lookup"><span data-stu-id="60607-103">Determine use-case scenario requirements</span></span>
+=======
+# Determinar os requisitos de cenários de caso de uso
+>>>>>>> live
 <a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 <span data-ttu-id="60607-104">Nesta seção, você determina os requisitos para cada grupo organizacional em cada cenário de caso de uso.</span><span class="sxs-lookup"><span data-stu-id="60607-104">In this section, you determine the requirements for each organizational group within each use-case scenario.</span></span> <span data-ttu-id="60607-105">Esse processo ajuda você a se preparar para as outras áreas de planejamento de implantação do Intune, como arquitetura e design, integração e distribuição.</span><span class="sxs-lookup"><span data-stu-id="60607-105">This process helps you prepare for the other Intune deployment planning areas like architecture and design, onboarding, and rollout.</span></span> <span data-ttu-id="60607-106">Ele também pode ajudar a identificar possíveis falhas e os desafios relacionados ao seu projeto de implantação do Intune.</span><span class="sxs-lookup"><span data-stu-id="60607-106">It can also help identify potential gaps and challenges related to your Intune deployment project.</span></span>
@@ -42,7 +46,11 @@ ms.lasthandoff: 07/11/2017
 <span data-ttu-id="60607-144">[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir os requisitos de casos de uso e subcasos de uso de sua organização.</span><span class="sxs-lookup"><span data-stu-id="60607-144">You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to enter your organization’s use-case and sub-use-case requirements.</span></span>
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="60607-145">Exemplos de requisitos</span><span class="sxs-lookup"><span data-stu-id="60607-145">Examples of requirements</span></span>
+=======
+## Exemplos de requisitos
+>>>>>>> live
 <a id="examples-of-requirements" class="xliff"></a>
 
 <span data-ttu-id="60607-146">Estes são mais alguns exemplos que podem ser usados na coluna “Requisitos”:</span><span class="sxs-lookup"><span data-stu-id="60607-146">Here are a few more examples that can be used in the "Requirements" column:</span></span>
@@ -64,7 +72,11 @@ ms.lasthandoff: 07/11/2017
     - <span data-ttu-id="60607-158">Office 365 com políticas de proteção do aplicativo</span><span class="sxs-lookup"><span data-stu-id="60607-158">Office 365 with app protection policies</span></span>
     - <span data-ttu-id="60607-159">LOB (linha de negócios) com políticas de proteção do aplicativo</span><span class="sxs-lookup"><span data-stu-id="60607-159">Line of business (LOB) with app protection policies</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="60607-160">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="60607-160">Next steps</span></span>
+=======
+## Próximas etapas
+>>>>>>> live
 <a id="next-steps" class="xliff"></a>
 
 <span data-ttu-id="60607-161">A próxima seção fornece diretrizes sobre [como desenvolver um plano de distribuição do Intune](planning-guide-rollout-plan.md).</span><span class="sxs-lookup"><span data-stu-id="60607-161">The next section provides guidance on [how to develop an Intune rollout plan](planning-guide-rollout-plan.md).</span></span>

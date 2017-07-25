@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 title: "<span data-ttu-id=\"c06b1-101\">Como usar políticas de configuração de aplicativo do Intune para o iOS</span><span class=\"sxs-lookup\"><span data-stu-id=\"c06b1-101\">How to use Intune app configuration policies for iOS</span></span>"
 titleSuffix: Intune on Azure
 description: "<span data-ttu-id=\"c06b1-102\">Saiba como usar políticas de configuração de aplicativo para fornecer dados de configuração para um aplicativo iOS quando ele é executado.</span><span class=\"sxs-lookup\"><span data-stu-id=\"c06b1-102\">Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.\"</span></span>"
+=======
+title: "Como usar políticas de configuração de aplicativo do Intune para o iOS"
+titleSuffix: Intune on Azure
+description: "Saiba como usar políticas de configuração de aplicativo para fornecer dados de configuração para um aplicativo iOS quando ele é executado."
+>>>>>>> live
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -21,6 +27,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
+<<<<<<< HEAD
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a><span data-ttu-id="c06b1-103">Como usar as políticas de configuração de aplicativo do Microsoft Intune para o iOS</span><span class="sxs-lookup"><span data-stu-id="c06b1-103">How to use Microsoft Intune app configuration policies for iOS</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -70,10 +77,62 @@ ms.lasthandoff: 07/12/2017
 11. <span data-ttu-id="c06b1-142">Após terminar, volte para a folha **Adicionar Política de Configuração** e selecione **Criar**.</span><span class="sxs-lookup"><span data-stu-id="c06b1-142">When you're done, go back to the **Add Configuration Policy** blade, and hit **Create**.</span></span>
 
 <span data-ttu-id="c06b1-143">A política será criada e exibida na folha da lista de políticas.</span><span class="sxs-lookup"><span data-stu-id="c06b1-143">The policy is created and appears on the policies list blade.</span></span>
+=======
+# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Como usar as políticas de configuração de aplicativo do Microsoft Intune para o iOS
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Use políticas de configuração de aplicativo no Microsoft Intune para fornecer as configurações usadas quando os usuários executam um aplicativo iOS. Por exemplo, um aplicativo pode exigir que os usuários especifiquem:
+
+-   Um número da porta personalizado.
+
+-   Configurações de idioma.
+
+-   Configurações de segurança.
+
+-   Configurações de identidade visual, como um logotipo da empresa.
+
+Quando os usuários inserem essas configurações incorretamente, isso pode aumentar a carga do suporte técnico e reduzir a adoção de novos aplicativos.
+
+As políticas de configuração de aplicativo podem ajudar a eliminar esses problemas, permitindo que você atribua essas configurações para os usuários em uma política antes que eles executem o aplicativo. As configurações então são fornecidas automaticamente e os usuários não precisam executar nenhuma ação.
+
+Você não atribui essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e atribui o aplicativo. As configurações de política serão usadas sempre que o aplicativo verificá-las, normalmente na primeira vez em que é executado.
+
+> [!TIP]
+> No momento, este tipo de política está disponível somente para dispositivos que executam o iOS 8.0 e posterior. Ela dá suporte aos seguintes tipos de instalação de aplicativo:
+>
+> -   **Aplicativo iOS gerenciado da loja de aplicativos**
+> -   **Pacote do aplicativo do iOS**
+>
+> Para obter mais informações sobre os tipos de instalação do aplicativo, consulte [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md).
+
+## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração do aplicativo
+1.  Entre no portal do Azure.
+2.  Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3.  Na folha **Intune**, escolha **Aplicativos móveis**.
+4.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Políticas de Configuração de Aplicativos**.
+5.  Na folha da lista de políticas, escolha **Adicionar**.
+6.  Na folha **Adicionar Política de Configuração**, forneça um **Nome** e uma **Descrição** opcional para a política de configuração de aplicativo.
+7.  Para o **Tipo de Registro do Dispositivo**, escolha uma das seguintes opções:
+    - **Registrado com o Intune** – Para aplicativos que integraram o SDK do aplicativo do Intune e são gerenciados pelo Microsoft Intune.
+    - **Não registrado com o Intune** – Para aplicativos que integraram o SDK do aplicativo do Intune e não são gerenciados pelo Microsoft Intune ou são gerenciados por outra solução.
+8.  Para **Plataforma**, escolha **iOS** (apenas para dispositivos registrados com o Microsoft Intune)
+9.  Escolha **Aplicativo associado** e, na folha **Aplicativo associado**, escolha o aplicativo gerenciado para o qual você deseja aplicar a configuração.
+10. Na folha **Adicionar Política de Configuração**, escolha **Definições de configuração**
+11. Na folha **Definições de configuração**, escolha como deseja especificar os valores de XML que compõem o perfil de configuração em:
+    - **Inserir dados XML** (apenas para dispositivos registrados com o Microsoft Intune) – Digite ou cole uma lista de propriedades XML que contém as definições de configuração do aplicativo desejadas. O formato da lista de propriedades XML varia dependendo do aplicativo que você está configurando. Entre em contato com o fornecedor do aplicativo para obter detalhes sobre o formato exato a ser usado.
+O Intune verifica se o XML que você inseriu está em um formato válido. Ele não verifica se a lista de propriedades XML funcionará com o aplicativo ao qual está associada.
+Para obter mais informações sobre listas de propriedades XML, consulte [Compreender as listas de propriedades XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) na biblioteca do desenvolvedor do iOS.
+    - **Usar o Designer de Configuração** (dispositivos registrados ou não com o Microsoft Intune) – Permite especificar os pares de chave e valor XML diretamente no portal.
+11. Após terminar, volte para a folha **Adicionar Política de Configuração** e selecione **Criar**.
+
+A política será criada e exibida na folha da lista de políticas.
+>>>>>>> live
 
 
 
 >[!Note]
+<<<<<<< HEAD
 ><span data-ttu-id="c06b1-144">Use o [SDK do aplicativo do Intune](https://docs.microsoft.com/intune/app-sdk-ios) a fim de preparar aplicativos LOB para gerenciamento pelas políticas de proteção do aplicativo e pelas políticas de configuração de aplicativo do Microsoft Intune, para dispositivos registrados ou não por meio desta plataforma.</span><span class="sxs-lookup"><span data-stu-id="c06b1-144">You can use the [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) to prepare line-of-business apps to be managed by Intune app protection policies, and app configuration policies, whether the device is enrolled with Intune or not.</span></span> <span data-ttu-id="c06b1-145">Por exemplo, você pode usar uma política de configuração de aplicativo para configurar URLs bloqueadas e permitidas para o [Intune Managed Browser](app-configuration-managed-browser.md).</span><span class="sxs-lookup"><span data-stu-id="c06b1-145">For example, you can use an app configuration policy to configure allowed and blocked URLs for the [Intune Managed Browser](app-configuration-managed-browser.md).</span></span> <span data-ttu-id="c06b1-146">Quando um aplicativo é compatível com essas políticas, você pode configurá-lo usando uma política.</span><span class="sxs-lookup"><span data-stu-id="c06b1-146">Once an app is compatible with these policies, you can configure them using a policy.</span></span>
 
 
@@ -113,6 +172,47 @@ ms.lasthandoff: 07/12/2017
 ## <a name="example-format-for-an-app-configuration-xml-file"></a><span data-ttu-id="c06b1-171">Exemplo de formato de arquivo XML de configuração de aplicativo</span><span class="sxs-lookup"><span data-stu-id="c06b1-171">Example format for an app configuration XML file</span></span>
 
 <span data-ttu-id="c06b1-172">Quando você cria um arquivo de configuração de aplicativo, você pode especificar um ou mais dos seguintes valores usando este formato:</span><span class="sxs-lookup"><span data-stu-id="c06b1-172">When you create an app configuration file, you can specify one or more of the following values by using this format:</span></span>
+=======
+>Use o [SDK do aplicativo do Intune](https://docs.microsoft.com/intune/app-sdk-ios) a fim de preparar aplicativos LOB para gerenciamento pelas políticas de proteção do aplicativo e pelas políticas de configuração de aplicativo do Microsoft Intune, para dispositivos registrados ou não por meio desta plataforma. Por exemplo, você pode usar uma política de configuração de aplicativo para configurar URLs bloqueadas e permitidas para o [Intune Managed Browser](app-configuration-managed-browser.md). Quando um aplicativo é compatível com essas políticas, você pode configurá-lo usando uma política.
+
+
+Quando o aplicativo atribuído é executado em um dispositivo, ele é executado com as configurações definidas na política de configuração de aplicativo.
+Confira a documentação do aplicativo que você está configurando para saber mais sobre o que acontece quando uma ou mais políticas de configuração de aplicativo são conflitantes.
+
+>[!Tip]
+>Além disso, você pode usar a API do Graph para realizar essas tarefas. Para saber mais, confira [Configuração direcionada do MAM na referência da API do Graph](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+
+
+## <a name="information-about-the-xml-file-format"></a>Informações sobre o formato de arquivo XML
+
+O Intune dá suporte para os seguintes tipos de dados em uma lista de propriedades:
+
+- &lt;inteiro&gt;
+- &lt;real&gt;
+- &lt;cadeia de caracteres&gt;
+- &lt;matriz&gt;
+- &lt;dict&gt;
+- &lt;true /&gt; ou &lt;false /&gt;
+
+Para obter mais informações sobre tipos de dados, consulte o artigo [sobre listas de propriedades](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) na biblioteca do desenvolvedor do iOS.
+
+Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propriedades:
+- \{\{userprincipalname\}\} – (Exemplo: **John@contoso.com**)
+- \{\{mail\}\} – (Exemplo: **John@contoso.com**)
+- \{\{partialupn\}\} – (Exemplo: **Samuel**)
+- \{\{accountid\}\} – (Exemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} – (Exemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} – (Exemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} – (Exemplo: **Samuel Ferreira**)
+- \{\{serialnumber\}\} – (Exemplo: **F4KN99ZUG5V2**) para dispositivos iOS
+- \{\{serialnumberlast4digits\}\} – (Exemplo: **G5V2**) para dispositivos iOS
+
+Os caracteres \{\{ e \}\} são usados apenas por tipos de token e não devem ser usados para outras finalidades.
+
+## <a name="example-format-for-an-app-configuration-xml-file"></a>Exemplo de formato de arquivo XML de configuração de aplicativo
+
+Quando você cria um arquivo de configuração de aplicativo, você pode especificar um ou mais dos seguintes valores usando este formato:
+>>>>>>> live
 
 ```
 <dict>
@@ -140,6 +240,12 @@ ms.lasthandoff: 07/12/2017
 
 ```
 
+<<<<<<< HEAD
 ## <a name="next-steps"></a><span data-ttu-id="c06b1-173">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="c06b1-173">Next steps</span></span>
 
 <span data-ttu-id="c06b1-174">Continue a [atribuir](apps-deploy.md) e a [monitorar](apps-monitor.md) o aplicativo como de costume.</span><span class="sxs-lookup"><span data-stu-id="c06b1-174">Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.</span></span>
+=======
+## <a name="next-steps"></a>Próximas etapas
+
+Continue a [atribuir](apps-deploy.md) e a [monitorar](apps-monitor.md) o aplicativo como de costume.
+>>>>>>> live

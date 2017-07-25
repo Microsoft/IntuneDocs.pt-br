@@ -21,6 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/10/2017
 ---
+<<<<<<< HEAD
 # <a name="enable-mobile-threat-defense-in-intune"></a><span data-ttu-id="03e05-103">Habilitar a Defesa Contra Ameaças Móveis no Intune</span><span class="sxs-lookup"><span data-stu-id="03e05-103">Enable Mobile Threat Defense in Intune</span></span>
 
 > [!NOTE] 
@@ -69,3 +70,53 @@ ms.lasthandoff: 07/10/2017
 ## <a name="next-steps"></a><span data-ttu-id="03e05-129">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="03e05-129">Next steps</span></span>
 
 [<span data-ttu-id="03e05-130">Criar uma política de conformidade de dispositivo de Defesa contra Ameaças Móveis com o Intune</span><span class="sxs-lookup"><span data-stu-id="03e05-130">Create Mobile Threat Defense device compliance policy with Intune</span></span>](mtd-device-compliance-policy-create.md)
+=======
+# <a name="enable-mobile-threat-defense-in-intune"></a>Habilitar a Defesa Contra Ameaças Móveis no Intune
+
+> [!NOTE] 
+> Este tópico se aplica a todos os parceiros de Defesa contra Ameaças Móveis.
+
+Para habilitar a conexão MTD (Defesa contra Ameaças Móveis) no Intune, você já deve ter configurado o Conector do Intune no console da solução MTD.
+
+## <a name="to-enable-the-mtd-connector"></a>Para habilitar o conector MTD
+
+1. Vá para o [Portal do Azure](https://portal.azure.com) e entre com suas credenciais do Intune. Quando entrar com êxito, você verá o **Painel do Azure**.
+
+2. No **Painel do Azure**, escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+
+3. Escolha **Intune** e o **Painel do Intune** se abrirá.
+
+4. No **Painel do Intune**, escolha **Conformidade do dispositivo** e, depois, **Defesa contra Ameaças Móveis** na seção **Configuração**.
+
+5. Na folha **Defesa contra Ameaças Móveis**, escolha **Adicionar**.
+
+6. Escolha sua solução MTD como o **conector de Defesa contra Ameaças Móveis para configuração** na lista suspensa.
+
+    ![Configuração do MTD no Portal do Azure no Intune](./media/enable-mtd-connector-1.png)
+
+7. Habilite as opções de alternância de acordo com os requisitos de sua organização.
+
+## <a name="mtd-toggle-options"></a>Opções de alternância de MTD
+
+Decida quais opções de alternância do MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes:
+
+- **Conectar dispositivos Android 4.1 ou superior ao [nome do parceiro de MTD] for Work MTD**: ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 ou superior relatem os riscos de segurança para o Intune.
+    - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados sobre um dispositivo nesta plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
+<br></br>
+- **Conectar dispositivos iOS 8.0 ou superior ao [nome do parceiro de MTD] for Work MTD**: ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 ou superior relatem os riscos de segurança para o Intune.
+    - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados sobre um dispositivo nesta plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
+<br></br>
+- **Bloquear versões do sistema operacional sem suporte**: bloqueie se o dispositivo estiver executando um sistema operacional inferior à versão mínima com suporte.
+
+- **Número de dias até que o parceiro seja considerado sem resposta**: número de dias de inatividade antes que o Intune considere o parceiro sem resposta devido à perda da conexão. O Intune ignora o estado de conformidade de parceiros de MTD sem resposta.
+
+> [!IMPORTANT] 
+> Você deve adicionar e atribuir os aplicativos MTD antes de criar a conformidade do dispositivo e as regras de política de acesso condicional. Isso garante que o aplicativo MTD esteja pronto e disponível para os usuários finais instalarem antes que possam ter acesso a emails ou outros recursos da empresa.
+
+> [!TIP]
+> Veja o **Status da conexão** e o tempo da **Última sincronização** entre o Intune e o parceiro de MTD na folha Defesa contra Ameaças Móveis.
+
+## <a name="next-steps"></a>Próximas etapas
+
+[Criar uma política de conformidade de dispositivo de Defesa contra Ameaças Móveis com o Intune](mtd-device-compliance-policy-create.md)
+>>>>>>> live

@@ -20,22 +20,33 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="1d5e5-103">Uso de largura de banda de rede do Intune</span><span class="sxs-lookup"><span data-stu-id="1d5e5-103">Intune network bandwidth use</span></span>
+=======
+# Uso de largura de banda de rede do Intune
+>>>>>>> live
 <a id="intune-network-bandwidth-use" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 <span data-ttu-id="1d5e5-104">Este guia ajuda administradores do Intune a compreender os requisitos de rede para o serviço do Intune.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-104">This guidance helps Intune admins understand the network requirements for the Intune service.</span></span> <span data-ttu-id="1d5e5-105">Você pode usar essas informações para entender os requisitos de largura de banda e as configurações de porta e endereço IP necessárias para as configurações de proxy.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-105">You can use this information to understand bandwidth requirements and IP address and port settings needed for proxy settings.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="1d5e5-106">Tráfego médio da rede</span><span class="sxs-lookup"><span data-stu-id="1d5e5-106">Average network traffic</span></span>
 <a id="average-network-traffic" class="xliff"></a>
 <span data-ttu-id="1d5e5-107">A tabela relaciona o tamanho aproximado e a frequência em que o conteúdo comum viaja pela rede para cada cliente.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-107">This table lists the approximate size and frequency of common content that travels across the network for each client.</span></span>
+=======
+## Tráfego médio da rede
+<a id="average-network-traffic" class="xliff"></a>
+A tabela relaciona o tamanho aproximado e a frequência em que o conteúdo comum viaja pela rede para cada cliente.
+>>>>>>> live
 
 > [!NOTE]
 > <span data-ttu-id="1d5e5-108">Para garantir que computadores e dispositivos móveis recebam o conteúdo e as atualizações necessárias do serviço do Intune, eles devem ser conectados periodicamente à Internet.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-108">To ensure that computers and mobile devices receive the necessary updates and content from the Intune service, they must be periodically connected to the Internet.</span></span> <span data-ttu-id="1d5e5-109">O tempo necessário para receber atualizações ou conteúdo varia, mas como diretriz, eles devem permanecer conectados continuamente à Internet por pelo menos 1 hora por dia.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-109">The time taken to receive updates or content will vary, but as a guideline, they should remain continuously connected to the Internet for at least 1 hour each day.</span></span>
 
 |<span data-ttu-id="1d5e5-110">Tipo de conteúdo</span><span class="sxs-lookup"><span data-stu-id="1d5e5-110">Content type</span></span>|<span data-ttu-id="1d5e5-111">Tamanho aproximado</span><span class="sxs-lookup"><span data-stu-id="1d5e5-111">Approximate size</span></span>|<span data-ttu-id="1d5e5-112">Frequência e detalhes</span><span class="sxs-lookup"><span data-stu-id="1d5e5-112">Frequency and details</span></span>|
 |----------------|--------------------|-------------------------|
+<<<<<<< HEAD
 |<span data-ttu-id="1d5e5-113">Instalação do cliente do Intune</span><span class="sxs-lookup"><span data-stu-id="1d5e5-113">Intune client installation</span></span><br /><br /><span data-ttu-id="1d5e5-114">**Os requisitos a seguir são adicionais à instalação do cliente do Intune**</span><span class="sxs-lookup"><span data-stu-id="1d5e5-114">**The following requirements are in addition to the Intune client installation**</span></span>|<span data-ttu-id="1d5e5-115">126 MB</span><span class="sxs-lookup"><span data-stu-id="1d5e5-115">125 MB</span></span>|<span data-ttu-id="1d5e5-116">**Uma vez**</span><span class="sxs-lookup"><span data-stu-id="1d5e5-116">**One time**</span></span><br /><br /><span data-ttu-id="1d5e5-117">O tamanho do download do cliente varia dependendo do sistema operacional do computador cliente.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-117">The size of the client download varies depending on the operating system of the client computer.</span></span>|
 |<span data-ttu-id="1d5e5-118">Pacote de registro do cliente</span><span class="sxs-lookup"><span data-stu-id="1d5e5-118">Client enrollment package</span></span>|<span data-ttu-id="1d5e5-119">16 MB</span><span class="sxs-lookup"><span data-stu-id="1d5e5-119">15 MB</span></span>|<span data-ttu-id="1d5e5-120">**Uma vez**</span><span class="sxs-lookup"><span data-stu-id="1d5e5-120">**One time**</span></span><br /><br /><span data-ttu-id="1d5e5-121">Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-121">Additional downloads are possible when there are updates for this content type.</span></span>|
 |<span data-ttu-id="1d5e5-122">Agente do Endpoint Protection</span><span class="sxs-lookup"><span data-stu-id="1d5e5-122">Endpoint Protection agent</span></span>|<span data-ttu-id="1d5e5-123">66 MB</span><span class="sxs-lookup"><span data-stu-id="1d5e5-123">65 MB</span></span>|<span data-ttu-id="1d5e5-124">**Uma vez**</span><span class="sxs-lookup"><span data-stu-id="1d5e5-124">**One time**</span></span><br /><br /><span data-ttu-id="1d5e5-125">Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-125">Additional downloads are possible when there are updates for this content type.</span></span>|
@@ -62,21 +73,61 @@ ms.lasthandoff: 07/03/2017
 <span data-ttu-id="1d5e5-172">A seguir, são mostradas as configurações típicas para usar em um servidor proxy que armazena o conteúdo em cache para os clientes do Intune.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-172">The following are typical settings to use for a proxy server that caches content for Intune clients.</span></span>
 
 |<span data-ttu-id="1d5e5-173">Configuração</span><span class="sxs-lookup"><span data-stu-id="1d5e5-173">Setting</span></span>|<span data-ttu-id="1d5e5-174">Valor recomendado</span><span class="sxs-lookup"><span data-stu-id="1d5e5-174">Recommended value</span></span>|<span data-ttu-id="1d5e5-175">Detalhes</span><span class="sxs-lookup"><span data-stu-id="1d5e5-175">Details</span></span>|
+=======
+|Instalação do cliente do Intune<br /><br />**Os requisitos a seguir são adicionais à instalação do cliente do Intune**|126 MB|**Uma vez**<br /><br />O tamanho do download do cliente varia dependendo do sistema operacional do computador cliente.|
+|Pacote de registro do cliente|16 MB|**Uma vez**<br /><br />Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.|
+|Agente do Endpoint Protection|66 MB|**Uma vez**<br /><br />Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.|
+|Agente do Operations Manager|11 MB|**Uma vez**<br /><br />Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.|
+|Agente de política|3 MB|**Uma vez**<br /><br />Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.|
+|Assistência Remota via agente do Microsoft Easy Assist|6 MB|**Uma vez**<br /><br />Downloads adicionais são possíveis quando há atualizações para este tipo de conteúdo.|
+|Operações diárias do cliente|6 MB|**Diariamente**<br /><br />O cliente do Intune se comunica regularmente com o serviço do Intune para verificar se há atualizações e políticas e para informar o status do cliente ao serviço.|
+|Atualizações de definições de malware da Endpoint Protection|Varia<br /><br />Normalmente de 40 KB a 2 MB|**Diariamente**<br /><br />Até três vezes por dia.|
+|Atualização do mecanismo do Endpoint Protection|6 MB|**Mensalmente**|
+|Atualizações de software|Varia<br /><br />O tamanho depende das atualizações implantadas.|**Mensalmente**<br /><br />Normalmente, atualizações de software versão na segunda terça-feira de cada mês.<br /><br />Um computador recém-registrado ou implantado pode usar mais largura de banda da rede enquanto baixar o conjunto completo de atualizações liberadas anteriormente.|
+|Service packs|Varia<br /><br />O tamanho varia para cada implantação do service pack.|**Varia**<br /><br />Depende de quando você implanta os pacotes de serviço.|
+|Distribuição de software|Varia<br /><br />O tamanho depende do software implantado.|**Varia**<br /><br />Depende de quando você implanta o software.|
+
+## Maneiras de reduzir o uso de largura de banda de rede
+<a id="ways-to-reduce-network-bandwidth-use" class="xliff"></a>
+Você pode usar os métodos a seguir para reduzir o uso de largura de banda da rede para os clientes do Intune.
+
+### Usar um servidor proxy para armazenar solicitações de conteúdo em cache
+<a id="use-a-proxy-server-to-cache-content-requests" class="xliff"></a>
+Você pode usar um servidor proxy que armazene o conteúdo em cache para reduzir downloads duplicados e reduzir o uso da largura de banda da rede pelos clientes que solicitam conteúdo da Internet.
+
+Um servidor proxy de armazenamento em cache recebe solicitações de conteúdo dos computadores cliente na rede, recupera esse conteúdo da Internet e eles podem então armazenar tanto as respostas HTTP quanto os downloads binários em cache. O servidor usa as informações armazenadas em cache para responder às solicitações subsequentes dos computadores cliente do Intune.
+
+A seguir, são mostradas as configurações típicas para usar em um servidor proxy que armazena o conteúdo em cache para os clientes do Intune.
+
+|Configuração|Valor recomendado|Detalhes|
+>>>>>>> live
 |-----------|---------------------|-----------|
 |<span data-ttu-id="1d5e5-176">Tamanho do cache</span><span class="sxs-lookup"><span data-stu-id="1d5e5-176">Cache size</span></span>|<span data-ttu-id="1d5e5-177">de 5 GB a 30 GB</span><span class="sxs-lookup"><span data-stu-id="1d5e5-177">5 GB to 30 GB</span></span>|<span data-ttu-id="1d5e5-178">Esse valor varia de acordo com o número de computadores cliente na rede e as configurações usadas.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-178">The value varies based on the number of client computers in your network and the configurations you use.</span></span> <span data-ttu-id="1d5e5-179">Para impedir que arquivos sejam excluídos muito cedo, ajuste o tamanho do cache para o seu ambiente.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-179">To prevent files from being deleted too soon, adjust the size of the cache for your environment.</span></span>|
 |<span data-ttu-id="1d5e5-180">Tamanho do arquivo de cache individual</span><span class="sxs-lookup"><span data-stu-id="1d5e5-180">Individual cache file size</span></span>|<span data-ttu-id="1d5e5-181">950 MB</span><span class="sxs-lookup"><span data-stu-id="1d5e5-181">950 MB</span></span>|<span data-ttu-id="1d5e5-182">Essa configuração pode não estar disponível em todos os servidores proxy de cache.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-182">This setting might not be available in all caching proxy servers.</span></span>|
 |<span data-ttu-id="1d5e5-183">Tipos de objeto para armazenar em cache</span><span class="sxs-lookup"><span data-stu-id="1d5e5-183">Object types to cache</span></span>|<span data-ttu-id="1d5e5-184">HTTP</span><span class="sxs-lookup"><span data-stu-id="1d5e5-184">HTTP</span></span><br /><br /><span data-ttu-id="1d5e5-185">HTTPS</span><span class="sxs-lookup"><span data-stu-id="1d5e5-185">HTTPS</span></span><br /><br /><span data-ttu-id="1d5e5-186">BITS</span><span class="sxs-lookup"><span data-stu-id="1d5e5-186">BITS</span></span>|<span data-ttu-id="1d5e5-187">Os pacotes do Intune são arquivos CAB recuperados pelo download do Serviço de Transferência Inteligente em Segundo Plano (BITS) via HTTP.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-187">Intune packages are CAB files retrieved by Background Intelligent Transfer Service (BITS) download over HTTP.</span></span>|
 <span data-ttu-id="1d5e5-188">Para obter informações sobre o uso de um servidor proxy para armazenar conteúdo em cache, consulte a documentação da sua solução de servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-188">For information about using a proxy server to cache content, see the documentation for your proxy server solution.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="1d5e5-189">Usar o Serviço de Transferência Inteligente em Segundo Plano nos computadores</span><span class="sxs-lookup"><span data-stu-id="1d5e5-189">Use Background Intelligent Transfer Service on computers</span></span>
 <a id="use-background-intelligent-transfer-service-on-computers" class="xliff"></a>
 <span data-ttu-id="1d5e5-190">O Intune dá suporte ao Serviço de Transferência Inteligente em Segundo Plano (BITS) em um computador Windows para reduzir a largura de banda da rede usada durante as horas configuradas.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-190">Intune supports using Background Intelligent Transfer Service (BITS) on a Windows computer to reduce the network bandwidth that is used during the hours that you configure.</span></span> <span data-ttu-id="1d5e5-191">Você pode configurar a política para BITS na página **Largura de banda da rede** da política do Agente do Intune.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-191">You can configure policy for BITS on the **Network bandwidth** page of the Intune Agent policy.</span></span>
+=======
+### Usar o Serviço de Transferência Inteligente em Segundo Plano nos computadores
+<a id="use-background-intelligent-transfer-service-on-computers" class="xliff"></a>
+O Intune dá suporte ao Serviço de Transferência Inteligente em Segundo Plano (BITS) em um computador Windows para reduzir a largura de banda da rede usada durante as horas configuradas. Você pode configurar a política para BITS na página **Largura de banda da rede** da política do Agente do Intune.
+>>>>>>> live
 
 <span data-ttu-id="1d5e5-192">Para saber mais sobre o BITS e computadores Windows, consulte [Serviço de Transferência Inteligente em Segundo Plano](http://technet.microsoft.com/library/bb968799.aspx) na biblioteca do TechNet.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-192">To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="1d5e5-193">Usar BranchCache nos computadores</span><span class="sxs-lookup"><span data-stu-id="1d5e5-193">Use BranchCache on computers</span></span>
 <a id="use-branchcache-on-computers" class="xliff"></a>
 <span data-ttu-id="1d5e5-194">Os clientes do Intune podem usar o BranchCache para reduzir o tráfego de rede de longa distância (WAN).</span><span class="sxs-lookup"><span data-stu-id="1d5e5-194">Intune clients can use BranchCache to reduce wide area network (WAN) traffic.</span></span> <span data-ttu-id="1d5e5-195">Os seguintes sistemas operacionais que têm suporte como clientes também têm suporte para BranchCache:</span><span class="sxs-lookup"><span data-stu-id="1d5e5-195">The following operating systems that are supported as clients also support BranchCache:</span></span>
+=======
+### Usar BranchCache nos computadores
+<a id="use-branchcache-on-computers" class="xliff"></a>
+Os clientes do Intune podem usar o BranchCache para reduzir o tráfego de rede de longa distância (WAN). Os seguintes sistemas operacionais que têm suporte como clientes também têm suporte para BranchCache:
+>>>>>>> live
 
 - <span data-ttu-id="1d5e5-196">Windows 7</span><span class="sxs-lookup"><span data-stu-id="1d5e5-196">Windows 7</span></span>
 - <span data-ttu-id="1d5e5-197">Windows 8.0</span><span class="sxs-lookup"><span data-stu-id="1d5e5-197">Windows 8.0</span></span>
@@ -89,7 +140,11 @@ ms.lasthandoff: 07/03/2017
 
 <span data-ttu-id="1d5e5-203">Se usar o BranchCache, será preciso comunicar-se com outros administradores em sua organização que gerenciam a Política de Grupo e a política de firewall do Intune para garantir que não implantem políticas que desabilitem o BranchCache ou as exceções do Firewall.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-203">If you use BranchCache, you should communicate with other administrators in your organization who manage Group Policy and Intune Firewall policy to ensure they do not deploy policy that disables BranchCache or Firewall exceptions.</span></span> <span data-ttu-id="1d5e5-204">Para saber mais sobre o BranchCache, consulte [BranchCache Overview (Visão geral do BranchCache)](http://technet.microsoft.com/library/hh831696.aspx).</span><span class="sxs-lookup"><span data-stu-id="1d5e5-204">For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="1d5e5-205">Requisitos de comunicação de rede</span><span class="sxs-lookup"><span data-stu-id="1d5e5-205">Network communication requirements</span></span>
+=======
+## Requisitos de comunicação de rede
+>>>>>>> live
 <a id="network-communication-requirements" class="xliff"></a>
 
 <span data-ttu-id="1d5e5-206">Você deve habilitar as comunicações de rede entre os dispositivos que você gerencia e utiliza para gerenciar sua assinatura do Intune e os sites necessários para serviços baseados em nuvem.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-206">You must enable network communications between the devices you manage and use to manage your Intune subscription, and the websites required for cloud-based services.</span></span>
@@ -98,8 +153,13 @@ ms.lasthandoff: 07/03/2017
 
 <span data-ttu-id="1d5e5-208">Para gerenciar computadores com firewalls e servidores proxy, é preciso configurar firewalls e servidores proxy para permitir comunicações para o Intune.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-208">To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune.</span></span> <span data-ttu-id="1d5e5-209">Para gerenciar computadores que estão em um servidor proxy, considere o seguinte:</span><span class="sxs-lookup"><span data-stu-id="1d5e5-209">To manage computers that are behind a proxy server, be aware that:</span></span>
 
+<<<<<<< HEAD
 -   <span data-ttu-id="1d5e5-210">O servidor proxy deve dar suporte a **HTTP (80)** e a **HTTPS (443)**, porque os clientes do Intune usam os dois protocolos</span><span class="sxs-lookup"><span data-stu-id="1d5e5-210">The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols</span></span>
 -   <span data-ttu-id="1d5e5-211">O Intune exige acesso ao servidor proxy não autenticado para manage.microsoft.com para algumas operações como baixar software e atualizações</span><span class="sxs-lookup"><span data-stu-id="1d5e5-211">Intune requires unauthenticated proxy server access to manage.microsoft.com for some operations such as downloading software and updates</span></span>
+=======
+-   O servidor proxy deve dar suporte a **HTTP (80)** e a **HTTPS (443)**, porque os clientes do Intune usam os dois protocolos
+-   O Intune exige acesso ao servidor proxy não autenticado para manage.microsoft.com para algumas operações como baixar software e atualizações
+>>>>>>> live
 
 <span data-ttu-id="1d5e5-212">É possível modificar as configurações do servidor proxy em computadores cliente individuais ou usar as definições da Política de Grupo para alterar as configurações de todos os computadores cliente que estejam em um servidor proxy especificado.</span><span class="sxs-lookup"><span data-stu-id="1d5e5-212">You can modify proxy server settings on individual client computers, or you can use Group Policy settings to change settings for all client computers that are located behind a specified proxy server.</span></span>
 
@@ -109,6 +169,7 @@ ms.lasthandoff: 07/03/2017
 
 |<span data-ttu-id="1d5e5-215">**Domínios**</span><span class="sxs-lookup"><span data-stu-id="1d5e5-215">**Domains**</span></span>|<span data-ttu-id="1d5e5-216">**Endereço IP**</span><span class="sxs-lookup"><span data-stu-id="1d5e5-216">**IP address**</span></span>|
 |---------------------|-----------|
+<<<<<<< HEAD
 |<span data-ttu-id="1d5e5-217">portal.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-217">portal.manage.microsoft.com</span></span><br> <span data-ttu-id="1d5e5-218">m.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-218">m.manage.microsoft.com</span></span> |<span data-ttu-id="1d5e5-219">40.86.181.86</span><span class="sxs-lookup"><span data-stu-id="1d5e5-219">40.86.181.86</span></span><br><span data-ttu-id="1d5e5-220">13.82.59.78</span><span class="sxs-lookup"><span data-stu-id="1d5e5-220">13.82.59.78</span></span><br><span data-ttu-id="1d5e5-221">13.74.184.100</span><span class="sxs-lookup"><span data-stu-id="1d5e5-221">13.74.184.100</span></span><br><span data-ttu-id="1d5e5-222">40.68.188.2</span><span class="sxs-lookup"><span data-stu-id="1d5e5-222">40.68.188.2</span></span><br><span data-ttu-id="1d5e5-223">13.75.42.6</span><span class="sxs-lookup"><span data-stu-id="1d5e5-223">13.75.42.6</span></span><br><span data-ttu-id="1d5e5-224">52.230.25.184</span><span class="sxs-lookup"><span data-stu-id="1d5e5-224">52.230.25.184</span></span> |
 | <span data-ttu-id="1d5e5-225">sts.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-225">sts.manage.microsoft.com</span></span> | <span data-ttu-id="1d5e5-226">13.93.223.241</span><span class="sxs-lookup"><span data-stu-id="1d5e5-226">13.93.223.241</span></span> <br><span data-ttu-id="1d5e5-227">52.170.32.182</span><span class="sxs-lookup"><span data-stu-id="1d5e5-227">52.170.32.182</span></span> <br><span data-ttu-id="1d5e5-228">52.164.224.159</span><span class="sxs-lookup"><span data-stu-id="1d5e5-228">52.164.224.159</span></span> <br><span data-ttu-id="1d5e5-229">52.174.178.4</span><span class="sxs-lookup"><span data-stu-id="1d5e5-229">52.174.178.4</span></span> <br><span data-ttu-id="1d5e5-230">13.75.122.143</span><span class="sxs-lookup"><span data-stu-id="1d5e5-230">13.75.122.143</span></span> <br><span data-ttu-id="1d5e5-231">52.163.120.84</span><span class="sxs-lookup"><span data-stu-id="1d5e5-231">52.163.120.84</span></span>|
 |<span data-ttu-id="1d5e5-232">Manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-232">Manage.microsoft.com</span></span> <br><span data-ttu-id="1d5e5-233">i.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-233">i.manage.microsoft.com</span></span> <br><span data-ttu-id="1d5e5-234">r.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-234">r.manage.microsoft.com</span></span> <br><span data-ttu-id="1d5e5-235">a.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-235">a.manage.microsoft.com</span></span> <br><span data-ttu-id="1d5e5-236">p.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-236">p.manage.microsoft.com</span></span> <br><span data-ttu-id="1d5e5-237">EnterpriseEnrollment.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-237">EnterpriseEnrollment.manage.microsoft.com</span></span> <br><span data-ttu-id="1d5e5-238">EnterpriseEnrollment-s.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-238">EnterpriseEnrollment-s.manage.microsoft.com</span></span> | <span data-ttu-id="1d5e5-239">104.40.82.191</span><span class="sxs-lookup"><span data-stu-id="1d5e5-239">104.40.82.191</span></span> <br><span data-ttu-id="1d5e5-240">13.82.96.212</span><span class="sxs-lookup"><span data-stu-id="1d5e5-240">13.82.96.212</span></span> <br><span data-ttu-id="1d5e5-241">52.169.9.87</span><span class="sxs-lookup"><span data-stu-id="1d5e5-241">52.169.9.87</span></span> <br><span data-ttu-id="1d5e5-242">52.174.26.23</span><span class="sxs-lookup"><span data-stu-id="1d5e5-242">52.174.26.23</span></span> <br><span data-ttu-id="1d5e5-243">40.83.123.72</span><span class="sxs-lookup"><span data-stu-id="1d5e5-243">40.83.123.72</span></span> <br><span data-ttu-id="1d5e5-244">13.76.177.110</span><span class="sxs-lookup"><span data-stu-id="1d5e5-244">13.76.177.110</span></span> |
@@ -158,3 +219,54 @@ ms.lasthandoff: 07/03/2017
 |<span data-ttu-id="1d5e5-394">fef.msuc02.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-394">fef.msuc02.manage.microsoft.com</span></span>|<span data-ttu-id="1d5e5-395">23.98.66.118</span><span class="sxs-lookup"><span data-stu-id="1d5e5-395">23.98.66.118</span></span>|
 |<span data-ttu-id="1d5e5-396">fef.msuc03.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-396">fef.msuc03.manage.microsoft.com</span></span>|<span data-ttu-id="1d5e5-397">23.101.0.100</span><span class="sxs-lookup"><span data-stu-id="1d5e5-397">23.101.0.100</span></span>|
 |<span data-ttu-id="1d5e5-398">fef.msuc05.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1d5e5-398">fef.msuc05.manage.microsoft.com</span></span>|<span data-ttu-id="1d5e5-399">52.230.16.180</span><span class="sxs-lookup"><span data-stu-id="1d5e5-399">52.230.16.180</span></span>|
+=======
+|portal.manage.microsoft.com<br> m.manage.microsoft.com |40.86.181.86<br>13.82.59.78<br>13.74.184.100<br>40.68.188.2<br>13.75.42.6<br>52.230.25.184 |
+| sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
+|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 |
+|portal.fei.msua01.manage.microsoft.com<br>m.fei.msua01.manage.microsoft.com |13.64.196.170|
+|fei.msua01.manage.microsoft.com<br> portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com |40.71.34.120 |
+|fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com |13.64.198.190|
+|fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br> m.fei.msua02.manage.microsoft.com |  13.64.198.190|
+|fei.msua04.manage.microsoft.com<br> portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com |13.64.188.173|
+|fei.msua04.manage.microsoft.com<br> portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com |40.71.32.174|
+|fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com |13.64.197.181 |
+|fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com |40.71.38.205|
+|fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com |13.64.191.182 |
+|fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com |40.71.37.51 |
+|fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com |40.118.250.246 |
+|fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com |13.90.142.194 |
+|fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com |13.64.250.226 |
+|fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com |13.90.151.142 |
+|fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com |52.169.155.165 |
+|fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com |52.174.188.97 |
+|fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com |52.178.190.24 |
+|fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com |52.174.16.215 |
+|fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com |40.69.69.27 |
+|fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com |52.166.196.199 |
+|fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com |40.69.71.164 |
+|fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com |52.174.182.102 |
+|fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com |40.69.78.145 |
+|fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com |52.174.192.105 |
+|fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com |13.94.46.250|
+|fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com |52.163.119.15 |
+|fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com |13.75.124.145 |
+|fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com |52.163.119.5|
+|fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.175.35.226|
+|fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
+|fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
+|fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
+|fef.msua01.manage.microsoft.com|138.91.243.97|
+|fef.msua02.manage.microsoft.com|52.177.194.236|
+|fef.msua04.manage.microsoft.com|23.96.112.28|
+|fef.msua05.manage.microsoft.com|138.91.244.151|
+|fef.msua06.manage.microsoft.com|13.78.185.97|
+|fef.msua07.manage.microsoft.com|52.175.208.218|
+|fef.msub01.manage.microsoft.com|137.135.128.214|
+|fef.msub02.manage.microsoft.com|137.135.130.29|
+|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub05.manage.microsoft.com|23.97.166.52|
+|fef.msuc01.manage.microsoft.com|52.230.19.86|
+|fef.msuc02.manage.microsoft.com|23.98.66.118|
+|fef.msuc03.manage.microsoft.com|23.101.0.100|
+|fef.msuc05.manage.microsoft.com|52.230.16.180|
+>>>>>>> live

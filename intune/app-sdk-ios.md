@@ -20,7 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/10/2017
 ---
+<<<<<<< HEAD
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a><span data-ttu-id="1ad03-103">SDK de Aplicativo do Microsoft Intune para o Guia do Desenvolvedor do iOS</span><span class="sxs-lookup"><span data-stu-id="1ad03-103">Microsoft Intune App SDK for iOS developer guide</span></span>
+=======
+# <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>SDK de Aplicativo do Microsoft Intune para o Guia do Desenvolvedor do iOS
+>>>>>>> live
 
 > [!NOTE]
 > <span data-ttu-id="1ad03-104">Primeiro, leia o artigo [Guia de Introdução ao SDK de Aplicativo do Intune](app-sdk-get-started.md), que explica como se preparar para a integração em cada plataforma com suporte.</span><span class="sxs-lookup"><span data-stu-id="1ad03-104">You might want to first read the [Get Started with Intune App SDK Guide](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.</span></span>
@@ -49,6 +53,7 @@ ms.lasthandoff: 07/10/2017
 
 * <span data-ttu-id="1ad03-126">**IntuneMAMResources.bundle**: um pacote de recursos que contém recursos dos quais o SDK depende.</span><span class="sxs-lookup"><span data-stu-id="1ad03-126">**IntuneMAMResources.bundle**: A resource bundle that has resources that the SDK relies on.</span></span>
 
+<<<<<<< HEAD
 * <span data-ttu-id="1ad03-127">**Cabeçalhos**: expõe as APIs do SDK do Intune App.</span><span class="sxs-lookup"><span data-stu-id="1ad03-127">**Headers**: Exposes the Intune App SDK APIs.</span></span> <span data-ttu-id="1ad03-128">Se você usar uma API, precisará incluir o arquivo de cabeçalho que contém a API.</span><span class="sxs-lookup"><span data-stu-id="1ad03-128">If you use an API, you will need to include the header file that contains the API.</span></span> <span data-ttu-id="1ad03-129">Os Arquivos de Cabeçalho a seguir incluem APIs, tipos de dados e protocolos que o SDK do aplicativo do Intune disponibiliza para desenvolvedores:</span><span class="sxs-lookup"><span data-stu-id="1ad03-129">The following header files include the APIs, data types, and protocols which the Intune App SDK makes available to developers:</span></span>
 
     * <span data-ttu-id="1ad03-130">IntuneMAMAppConfig.h</span><span class="sxs-lookup"><span data-stu-id="1ad03-130">IntuneMAMAppConfig.h</span></span>
@@ -68,6 +73,27 @@ ms.lasthandoff: 07/10/2017
     * <span data-ttu-id="1ad03-144">IntuneMAMVersionInfo.h</span><span class="sxs-lookup"><span data-stu-id="1ad03-144">IntuneMAMVersionInfo.h</span></span>
     
 <span data-ttu-id="1ad03-145">Para que os desenvolvedores possam disponibilizar o conteúdo de todos os cabeçalhos acima, basta apenas importar IntuneMAM.h</span><span class="sxs-lookup"><span data-stu-id="1ad03-145">Developers can make the contents of all the above headers available by just importing IntuneMAM.h</span></span>
+=======
+* **Cabeçalhos**: expõe as APIs do SDK do Intune App. Se você usar uma API, precisará incluir o arquivo de cabeçalho que contém a API. Os Arquivos de Cabeçalho a seguir incluem APIs, tipos de dados e protocolos que o SDK do aplicativo do Intune disponibiliza para desenvolvedores:
+
+    * IntuneMAMAppConfig.h
+    * IntuneMAMAppConfigManager.h
+    * IntuneMAMDataProtectionInfo.h
+    * IntuneMAMDataProtectionManager.h
+    * IntuneMAMDefs.h
+    * IntuneMAMEnrollmentDelegate.h
+    * IntuneMAMEnrollmentManager.h
+    * IntuneMAMEnrollmentStatus.h
+    * IntuneMAMFileProtectionInfo.h
+    * IntuneMAMFileProtectionManager.h
+    * IntuneMAMLogger.h
+    * IntuneMAMPolicy.h
+    * IntuneMAMPolicyDelegate.h
+    * IntuneMAMPolicyManager.h
+    * IntuneMAMVersionInfo.h
+    
+Para que os desenvolvedores possam disponibilizar o conteúdo de todos os cabeçalhos acima, basta apenas importar IntuneMAM.h
+>>>>>>> live
 
 
 ## <a name="how-the-intune-app-sdk-works"></a><span data-ttu-id="1ad03-146">Como o SDK de Aplicativos do Intune funciona</span><span class="sxs-lookup"><span data-stu-id="1ad03-146">How the Intune App SDK works</span></span>
@@ -156,11 +182,21 @@ ms.lasthandoff: 07/10/2017
 
 8. <span data-ttu-id="1ad03-205">Se o aplicativo definir esquemas de URL em seu arquivo info.plist, adicione outro esquema com um sufixo `-intunemam` a cada esquema de URL.</span><span class="sxs-lookup"><span data-stu-id="1ad03-205">If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.</span></span>
 
+<<<<<<< HEAD
 9. <span data-ttu-id="1ad03-206">Quando o aplicativo define Tipos de Documento no arquivo Info.plist para a matriz "UTIs do Tipo de Conteúdo de Documento" de cada item, adicione uma entrada duplicada para cada cadeia de caracteres com "com.microsoft.intune.mam".</span><span class="sxs-lookup"><span data-stu-id="1ad03-206">If the app defines Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam."</span></span> <span data-ttu-id="1ad03-207">Prefixo.</span><span class="sxs-lookup"><span data-stu-id="1ad03-207">prefix.</span></span>
 
 10. <span data-ttu-id="1ad03-208">Para aplicativos móveis desenvolvidos no iOS 9 e posterior, inclua todos os protocolos que o aplicativo passar para `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do arquivo Info.plist do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1ad03-208">For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file.</span></span> <span data-ttu-id="1ad03-209">Além disso, para cada protocolo listado, adicione um novo protocolo e acrescente `-intunemam` a ele.</span><span class="sxs-lookup"><span data-stu-id="1ad03-209">Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`.</span></span> <span data-ttu-id="1ad03-210">Você também deve incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.</span><span class="sxs-lookup"><span data-stu-id="1ad03-210">You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.</span></span>
 
 11. <span data-ttu-id="1ad03-211">Se o aplicativo tiver grupos de aplicativo definidos em seus direitos, adicione esses grupos ao dicionário **IntuneMAMSettings** sob a chave `AppGroupIdentifiers` como uma matriz de cadeias de caracteres.</span><span class="sxs-lookup"><span data-stu-id="1ad03-211">If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.</span></span>
+=======
+8. Se o aplicativo definir esquemas de URL em seu arquivo info.plist, adicione outro esquema com um sufixo `-intunemam` a cada esquema de URL.
+
+9. Quando o aplicativo define Tipos de Documento no arquivo Info.plist para a matriz "UTIs do Tipo de Conteúdo de Documento" de cada item, adicione uma entrada duplicada para cada cadeia de caracteres com "com.microsoft.intune.mam". Prefixo.
+
+10. Para aplicativos móveis desenvolvidos no iOS 9 e posterior, inclua todos os protocolos que o aplicativo passar para `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do arquivo Info.plist do aplicativo. Além disso, para cada protocolo listado, adicione um novo protocolo e acrescente `-intunemam` a ele. Você também deve incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
+
+11. Se o aplicativo tiver grupos de aplicativo definidos em seus direitos, adicione esses grupos ao dicionário **IntuneMAMSettings** sob a chave `AppGroupIdentifiers` como uma matriz de cadeias de caracteres.
+>>>>>>> live
 
 
 
@@ -480,7 +516,22 @@ ms.lasthandoff: 07/10/2017
 
 <span data-ttu-id="1ad03-488">Para obter mais informações sobre como criar uma política de configuração de aplicativo voltada para MAM no iOS, consulte a seção sobre configuração de aplicativo voltada para MAM em [Como usar políticas de configuração de aplicativo do Microsoft Intune para iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).</span><span class="sxs-lookup"><span data-stu-id="1ad03-488">For more information about how to create a MAM targeted app configuration policy in iOS, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).</span></span>
 
+<<<<<<< HEAD
 ## <a name="telemetry"></a><span data-ttu-id="1ad03-489">Telemetria</span><span class="sxs-lookup"><span data-stu-id="1ad03-489">Telemetry</span></span>
+=======
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Habilitar a configuração voltada para MAM para seus aplicativos iOS
+A configuração voltada para MAM permite que um aplicativo receba dados de configuração por meio do SDK do aplicativo do Intune. O formato e as variantes desses dados devem ser definidos e comunicados aos clientes do Intune pelo proprietário/desenvolvedor do aplicativo. Os administradores do Intune podem direcionar e implantar dados de configuração por meio do console do Intune Azure. A partir do SDK do Intune App para iOS (v 7.0.1), aplicativos que participam da configuração voltada para MAM podem receber dados de configuração de MAM direcionada por meio do serviço de MAM. Os dados de configuração de aplicativo são enviados por push por meio de nosso Serviço MAM diretamente para o aplicativo em vez de pelo canal MDM. O SDK do aplicativo do Intune fornece uma classe para acessar os dados recuperados desses consoles. Considere os seguintes pré-requisitos: <br>
+* O aplicativo precisa ser registrado em MAM-WE para poder acessar a interface do usuário de configuração voltada para MAM. Para obter mais informações sobre MAM-WE, consulte [Política de proteção de aplicativo sem registro de dispositivo no guia do SDK do aplicativo do Intune](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* Inclua ```IntuneMAMAppConfigManager.h``` no arquivo de origem do aplicativo.
+* Chame ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` para obter o objeto de configuração do aplicativo.
+* Chame o seletor apropriado no objeto ```IntuneMAMAppConfig```. Por exemplo, se a chave do seu aplicativo é uma cadeia de caracteres, use ```stringValueForKey``` ou ```allStringsForKey```. O arquivo ```IntuneMAMAppConfig.h header``` aborda as condições de erro/valores retornados.
+
+Para obter mais informações sobre as funcionalidades da API do Graph em relação aos valores de configuração voltada para MAM, consulte [Referência da API do Graph para a configuração voltada para MAM](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Para obter mais informações sobre como criar uma política de configuração de aplicativo voltada para MAM no iOS, consulte a seção sobre configuração de aplicativo voltada para MAM em [Como usar políticas de configuração de aplicativo do Microsoft Intune para iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+
+## <a name="telemetry"></a>Telemetria
+>>>>>>> live
 
 <span data-ttu-id="1ad03-490">Por padrão, o SDK do Aplicativo do Intune para iOS registra dados de telemetria nos eventos de uso a seguir.</span><span class="sxs-lookup"><span data-stu-id="1ad03-490">By default, the Intune App SDK for iOS logs telemetry data on the following usage events.</span></span> <span data-ttu-id="1ad03-491">Esses dados são enviados para o Microsoft Intune.</span><span class="sxs-lookup"><span data-stu-id="1ad03-491">This data is sent to Microsoft Intune.</span></span>
 
@@ -675,4 +726,8 @@ ms.lasthandoff: 07/10/2017
     ```bash
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
+<<<<<<< HEAD
     <span data-ttu-id="1ad03-654">O primeiro comando remove as arquiteturas de simulador do arquivo DYLIB da estrutura.</span><span class="sxs-lookup"><span data-stu-id="1ad03-654">The first command strips the simulator architectures from the framework's DYLIB file.</span></span> <span data-ttu-id="1ad03-655">O segundo comando copia o arquivo DYLIB somente para dispositivos de volta para o diretório da estrutura.</span><span class="sxs-lookup"><span data-stu-id="1ad03-655">The second command copies the device-only DYLIB file back into the framework directory.</span></span>
+=======
+    O primeiro comando remove as arquiteturas de simulador do arquivo DYLIB da estrutura. O segundo comando copia o arquivo DYLIB somente para dispositivos de volta para o diretório da estrutura.
+>>>>>>> live

@@ -29,14 +29,25 @@ ms.lasthandoff: 07/13/2017
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
+<<<<<<< HEAD
 > <span data-ttu-id="6aefd-107">Se você estiver tentando registrar um dispositivo macOS como um MacBook Pro ou iMac, [experimente em vez disso usar estas instruções](enroll-your-device-in-intune-macos.md).</span><span class="sxs-lookup"><span data-stu-id="6aefd-107">If you're trying to enroll a macOS device, such as a MacBook Pro or iMac, [try these instructions instead](enroll-your-device-in-intune-macos.md).</span></span>
+=======
+> Se você estiver tentando registrar um dispositivo macOS como um MacBook Pro ou iMac, [experimente em vez disso usar estas instruções](enroll-your-device-in-intune-macos.md).
+>>>>>>> live
 
 <span data-ttu-id="6aefd-108">**Antes de começar:**</span><span class="sxs-lookup"><span data-stu-id="6aefd-108">**Before you start:**</span></span>
 
+<<<<<<< HEAD
 - <span data-ttu-id="6aefd-109">Verifique se o registro foi concluído após o início das etapas.</span><span class="sxs-lookup"><span data-stu-id="6aefd-109">Make sure that you finish enrolling after you start the steps.</span></span> <span data-ttu-id="6aefd-110">Pausa por mais de alguns minutos geralmente interrompe o processo e exige reinicialização.</span><span class="sxs-lookup"><span data-stu-id="6aefd-110">Pausing for more than a few minutes usually stops the process, and  requires you to restart.</span></span>
 - <span data-ttu-id="6aefd-111">Se o registro falhar por algum motivo, você precisará retornar para o aplicativo de Portal da Empresa para tentar novamente.</span><span class="sxs-lookup"><span data-stu-id="6aefd-111">If your enrollment fails for any reason, you need to return to the Company Portal app to try again.</span></span>
 - <span data-ttu-id="6aefd-112">Verifique se o Wi-Fi está funcionando.</span><span class="sxs-lookup"><span data-stu-id="6aefd-112">Make sure that your Wi-Fi is working.</span></span> <span data-ttu-id="6aefd-113">Caso contrário, o registro falhará.</span><span class="sxs-lookup"><span data-stu-id="6aefd-113">Otherwise, enrollment fails.</span></span>
 - <span data-ttu-id="6aefd-114">Se você bloqueou o Safari no dispositivo, desbloqueie-o.</span><span class="sxs-lookup"><span data-stu-id="6aefd-114">If you blocked Safari on your device, unblock it.</span></span> <span data-ttu-id="6aefd-115">O Safari é usado como parte do processo de registro do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="6aefd-115">Safari is used as part the device enrollment process.</span></span>
+=======
+- Verifique se o registro foi concluído após o início das etapas. Pausa por mais de alguns minutos geralmente interrompe o processo e exige reinicialização.
+- Se o registro falhar por algum motivo, você precisará retornar para o aplicativo de Portal da Empresa para tentar novamente.
+- Verifique se o Wi-Fi está funcionando. Caso contrário, o registro falhará.
+- Se você bloqueou o Safari no dispositivo, desbloqueie-o. O Safari é usado como parte do processo de registro do dispositivo.
+>>>>>>> live
 
 
 <span data-ttu-id="6aefd-116">**Para registrar seu dispositivo iOS:**</span><span class="sxs-lookup"><span data-stu-id="6aefd-116">**To enroll your iOS device:**</span></span>
@@ -52,7 +63,11 @@ ms.lasthandoff: 07/13/2017
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
   > [!NOTE]
+<<<<<<< HEAD
   > <span data-ttu-id="6aefd-122">Os triângulos amarelos não significam que você já tem um erro.</span><span class="sxs-lookup"><span data-stu-id="6aefd-122">The yellow triangles don't mean you've already got an error.</span></span> <span data-ttu-id="6aefd-123">Esses ícones indicam que ainda há etapas a serem concluídas no processo de registro.</span><span class="sxs-lookup"><span data-stu-id="6aefd-123">Those icons indicate that there are still steps to be completed in the enrollment process.</span></span>
+=======
+  > Os triângulos amarelos não significam que você já tem um erro. Esses ícones indicam que ainda há etapas a serem concluídas no processo de registro.
+>>>>>>> live
 
 4. <span data-ttu-id="6aefd-124">Examine uma lista do que o administrador de TI pode ou não pode ver no dispositivo registrado e toque em **Continuar**.</span><span class="sxs-lookup"><span data-stu-id="6aefd-124">Review a list of what your IT admin can and can’t see on your enrolled device, and then tap **Continue**.</span></span>
 
@@ -88,7 +103,11 @@ ms.lasthandoff: 07/13/2017
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
+<<<<<<< HEAD
 12. <span data-ttu-id="6aefd-141">Na tela **Configuração de Acesso da Empresa**, toque em **Continuar**.</span><span class="sxs-lookup"><span data-stu-id="6aefd-141">On the **Company Access Setup** screen, tap **Continue**.</span></span> <span data-ttu-id="6aefd-142">Esta tela mostra quais outros requisitos você talvez precise fazer para que o dispositivo esteja em conformidade, por exemplo, definir uma senha.</span><span class="sxs-lookup"><span data-stu-id="6aefd-142">This screen shows you what other requirements you may have to do to make your device compliant, like setting a password.</span></span> <span data-ttu-id="6aefd-143">Siga as instruções na tela até que você atenda a todos os requisitos de conformidade.</span><span class="sxs-lookup"><span data-stu-id="6aefd-143">Follow the on-screen instructions until you meet all the compliance requirements.</span></span> <span data-ttu-id="6aefd-144">Depois de concluir, você retornará para a tela Configuração de Acesso da Empresa.</span><span class="sxs-lookup"><span data-stu-id="6aefd-144">Once you finish, you are returned to the Company Access Setup screen.</span></span> <span data-ttu-id="6aefd-145">Toque em **Continuar**.</span><span class="sxs-lookup"><span data-stu-id="6aefd-145">Tap **Continue**.</span></span>
+=======
+12. Na tela **Configuração de Acesso da Empresa**, toque em **Continuar**. Esta tela mostra quais outros requisitos você talvez precise fazer para que o dispositivo esteja em conformidade, por exemplo, definir uma senha. Siga as instruções na tela até que você atenda a todos os requisitos de conformidade. Depois de concluir, você retornará para a tela Configuração de Acesso da Empresa. Toque em **Continuar**.
+>>>>>>> live
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +118,10 @@ ms.lasthandoff: 07/13/2017
 <span data-ttu-id="6aefd-149">O dispositivo agora está registrado no Intune, e você é levado de volta ao aplicativo Portal da Empresa.</span><span class="sxs-lookup"><span data-stu-id="6aefd-149">Your device is now enrolled in Intune, and you are taken back to the Company Portal app.</span></span>
 
 > [!Note]
+<<<<<<< HEAD
 > <span data-ttu-id="6aefd-150">Você tem mais algumas etapas para concluir antes que o dispositivo esteja totalmente inscrito.</span><span class="sxs-lookup"><span data-stu-id="6aefd-150">You have a few more steps to complete before your device is fully enrolled.</span></span> <span data-ttu-id="6aefd-151">Saiba mais sobre como [registrar seu dispositivo usando o gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md).</span><span class="sxs-lookup"><span data-stu-id="6aefd-151">Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md).</span></span> <span data-ttu-id="6aefd-152">Se sua organização estiver usando o Programa de registro de dispositivos da Apple, descubra mais [aqui](enroll-your-device-dep-ios.md).</span><span class="sxs-lookup"><span data-stu-id="6aefd-152">If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).</span></span>
+=======
+> Você tem mais algumas etapas para concluir antes que o dispositivo esteja totalmente inscrito. Saiba mais sobre como [registrar seu dispositivo usando o gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se sua organização estiver usando o Programa de registro de dispositivos da Apple, descubra mais [aqui](enroll-your-device-dep-ios.md).
+>>>>>>> live
 
 <span data-ttu-id="6aefd-153">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="6aefd-153">Still need help?</span></span> <span data-ttu-id="6aefd-154">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="6aefd-154">Contact your IT admin.</span></span> <span data-ttu-id="6aefd-155">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="6aefd-155">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>

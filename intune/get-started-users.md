@@ -21,11 +21,16 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="4f496-102">Introdução aos usuários</span><span class="sxs-lookup"><span data-stu-id="4f496-102">Get started with users</span></span>
+=======
+# Introdução aos usuários
+>>>>>>> live
 <a id="get-started-with-users" class="xliff"></a>
 
 ![Um usuário genérico no Azure](/intune/media/generic-intune-user.png)
 
+<<<<<<< HEAD
 <span data-ttu-id="4f496-104">O Azure AD gerencia os grupos de objetos – como dispositivos e aplicativos – da sua organização.</span><span class="sxs-lookup"><span data-stu-id="4f496-104">Azure AD manages your organization’s groups of objects – like devices and apps – and also groups of users.</span></span> <span data-ttu-id="4f496-105">Você pode agrupar usuários ou dispositivos em vez de precisar gerenciar cada dispositivo individualmente.</span><span class="sxs-lookup"><span data-stu-id="4f496-105">You can group users or devices together instead of having to manage each device individually.</span></span> <span data-ttu-id="4f496-106">Isso permite atribuir facilmente aplicativos e configurações para um grande número de usuários e dispositivos.</span><span class="sxs-lookup"><span data-stu-id="4f496-106">This lets you easily assign apps and settings to large numbers of users and devices.</span></span>
 
 ## <span data-ttu-id="4f496-107">Como eu crio um usuário?</span><span class="sxs-lookup"><span data-stu-id="4f496-107">How do I create a user?</span></span>
@@ -53,3 +58,32 @@ ms.lasthandoff: 07/03/2017
  > <span data-ttu-id="4f496-125">Isso usa uma das suas licenças para este usuário.</span><span class="sxs-lookup"><span data-stu-id="4f496-125">This uses one of your licenses for this user.</span></span> <span data-ttu-id="4f496-126">Se você estiver usando o ambiente em tempo real, poderá desligar o uso dessa licença mais tarde para reatribuí-la a um usuário real.</span><span class="sxs-lookup"><span data-stu-id="4f496-126">If you are using your live environment, you can turn off using this license later to reassign it to a real user.</span></span>
 
 5. <span data-ttu-id="4f496-127">Selecione **Salvar**.</span><span class="sxs-lookup"><span data-stu-id="4f496-127">Select **Save**.</span></span>
+=======
+O Azure AD gerencia os grupos de objetos – como dispositivos e aplicativos – da sua organização. Você pode agrupar usuários ou dispositivos em vez de precisar gerenciar cada dispositivo individualmente. Isso permite atribuir facilmente aplicativos e configurações para um grande número de usuários e dispositivos.
+
+## Como eu crio um usuário?
+<a id="how-do-i-create-a-user" class="xliff"></a>
+
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Usando **Pesquisar recursos**, pesquise **Usuários e grupos**.
+3. Depois de abrir a folha **Usuários e grupos**, selecione **Todos os usuários** e **+ Novo usuário**.
+4. Insira os detalhes do usuário, como **Nome** e **Nome de usuário**. A parte do nome de domínio do nome de usuário deve ser o nome de domínio inicial padrão “contoso.onmicrosoft.com” ou um nome de domínio não federado verificado como “contoso.com”.
+5. Em **Grupos**, escolha o grupo de teste ao qual o usuário será adicionado.
+6. Salve a senha do usuário gerada automaticamente para que você possa usá-la para fazer logon em um dispositivo de teste. Você deve fornecer essa senha para usuários para que eles podem alterá-la para uma senha normal que pode ser lembrada.
+7. Na folha **Usuário**, selecione **Criar**.
+
+## Atribuir licenças a usuários
+<a id="assigning-licenses-to-users" class="xliff"></a>
+
+Depois de criar um usuário, será necessário usar o [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a esse usuário. Sem atribuir uma licença, não será possível registrar seus dispositivos no gerenciamento.
+
+1. Entre no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as mesmas credenciais que você usou para entrar no Intune.
+2. Selecione **Usuários** > **Usuários Ativos** e selecione o usuário que você criou anteriormente.
+3. Pode ser necessário aguardar um pouco para que todas as informações do usuário sejam carregadas. Depois de carregadas, selecione **Editar** nas **Licenças de produto** do usuário.
+4. Atribua um **Local** ao usuário e mude o Intune para **ativado**.
+
+ > [!NOTE]
+ > Isso usa uma das suas licenças para este usuário. Se você estiver usando o ambiente em tempo real, poderá desligar o uso dessa licença mais tarde para reatribuí-la a um usuário real.
+
+5. Selecione **Salvar**.
+>>>>>>> live

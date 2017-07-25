@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 title: "<span data-ttu-id=\"53929-101\">Exibir o inventário de dispositivo do Intune</span><span class=\"sxs-lookup\"><span data-stu-id=\"53929-101\">View Intune device inventory</span></span>"
 titleSuffix: Intune on Azure
 description: <span data-ttu-id="53929-102">Saiba como exibir os dispositivos gerenciados com o Intune e entender seu hardware e seus aplicativos instalados.</span><span class="sxs-lookup"><span data-stu-id="53929-102">Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."</span></span>
+=======
+title: "Exibir o inventário de dispositivo do Intune"
+titleSuffix: Intune on Azure
+description: Saiba como exibir os dispositivos gerenciados com o Intune e entender seu hardware e seus aplicativos instalados.
+>>>>>>> live
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -20,11 +26,16 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
+<<<<<<< HEAD
 # <a name="how-to-view-intune-device-inventory"></a><span data-ttu-id="53929-103">Como exibir o inventário de dispositivo do Intune</span><span class="sxs-lookup"><span data-stu-id="53929-103">How to view Intune device inventory</span></span>
+=======
+# <a name="how-to-view-intune-device-inventory"></a>Como exibir o inventário de dispositivo do Intune
+>>>>>>> live
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
 <span data-ttu-id="53929-104">A carga de trabalho **Dispositivos** fornece informações sobre os dispositivos gerenciados, incluindo suas funcionalidades de hardware e os aplicativos instalados neles.</span><span class="sxs-lookup"><span data-stu-id="53929-104">The **Devices** workload gives you insights into the devices you manage, including their hardware capabilities, and the apps installed on them.</span></span> 
 
 <span data-ttu-id="53929-105">Para exibir o inventário de dispositivo:</span><span class="sxs-lookup"><span data-stu-id="53929-105">To view device inventory:</span></span>
@@ -54,3 +65,34 @@ ms.lasthandoff: 07/12/2017
 
 >[!NOTE]
 > <span data-ttu-id="53929-124">O Intune coleta o inventário de aplicativos apenas em dispositivos de propriedade da empresa.</span><span class="sxs-lookup"><span data-stu-id="53929-124">Intune collects app inventory only on corporate-owned devices.</span></span> <span data-ttu-id="53929-125">Os aplicativos não são inventariados nos dispositivos pessoais.</span><span class="sxs-lookup"><span data-stu-id="53929-125">Apps are not inventoried on personal devices.</span></span> <span data-ttu-id="53929-126">No caso de PCs com Windows 10, o Intune coleta apenas um inventário de aplicativos modernos em dispositivos de propriedade da empresa.</span><span class="sxs-lookup"><span data-stu-id="53929-126">For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices.</span></span> <span data-ttu-id="53929-127">O Intune não coleta informações sobre aplicativos Win32 no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="53929-127">Intune does not collect information about Win32 apps on the device.</span></span>
+=======
+A carga de trabalho **Dispositivos** fornece informações sobre os dispositivos gerenciados, incluindo suas funcionalidades de hardware e os aplicativos instalados neles. 
+
+Para exibir o inventário de dispositivo:
+
+1. Entre no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3. Na folha **Intune**, escolha **Dispositivos**.
+
+Agora, selecione uma das seguintes opções:
+
+- **Visão geral** Obtenha informações sobre os dispositivos registrados e os sistemas operacionais que cada dispositivo executado.
+- **Gerenciar** – Escolha **Todos os Dispositivos** para ver uma lista de todos os dispositivos gerenciados.
+    Selecione um desses dispositivos na lista para abrir a folha <*nome do dispositivo*> **Visão geral** na qual você pode selecionar um destes:
+    - **Visão geral** – Veja informações gerais sobre o dispositivo, incluindo seu nome, proprietário, se ele é um dispositivo BYOD, quando foi seu último check-in e muito mais.
+    ![Visão geral do dispositivo](./media/device-overview.png)
+    - **Hardware** – Consulte informações mais detalhadas sobre o dispositivo, inclusive o espaço de armazenamento livre, modelo e fabricante, entre outros.
+    ![Inventário de hardware de dispositivo gerenciado](./media/hardware-inventory.png)
+    - **Aplicativos descobertos** – Exibe uma lista de todos os aplicativos que o Intune encontrou instalados no dispositivo.
+    ![Nó Aplicativos descobertos](./media/detected-applications.png)
+    
+
+
+    - **Conformidade do dispositivo** – Exibe o estado de conformidade de todas as políticas de conformidade que foram atribuídas ao dispositivo.
+    - **Configuração do dispositivo** – Exibe o estado de conformidade de todas as políticas de configuração do dispositivo que foram atribuídas a ele.
+- **Monitorar** Escolha **Ações de Dispositivo** para ver uma lista de ações de dispositivo que foram realizadas em dispositivos gerenciados por você, bem como o estado atual dessas ações.
+- **Instalação** > **Conector do TeamViewer** – Permite configurar a administração remota em dispositivos que usam o software do TeamViewer. Para ver mais detalhes, consulte [Fornecer assistência remota para dispositivos Android gerenciados pelo Intune](/intune/device-profile-android-teamviewer).
+
+>[!NOTE]
+> O Intune coleta o inventário de aplicativos apenas em dispositivos de propriedade da empresa. Os aplicativos não são inventariados nos dispositivos pessoais. No caso de PCs com Windows 10, o Intune coleta apenas um inventário de aplicativos modernos em dispositivos de propriedade da empresa. O Intune não coleta informações sobre aplicativos Win32 no dispositivo.
+>>>>>>> live

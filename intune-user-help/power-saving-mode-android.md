@@ -22,6 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/10/2017
 ---
+<<<<<<< HEAD
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a><span data-ttu-id="85f36-103">O Outlook não sincroniza email gerenciado quando a otimização da bateria para Android está ativada</span><span class="sxs-lookup"><span data-stu-id="85f36-103">Outlook won't sync managed email when battery optimization for Android is turned on</span></span>
 
 > [!IMPORTANT]
@@ -67,10 +68,61 @@ ms.lasthandoff: 07/10/2017
 3. <span data-ttu-id="85f36-144">Digite **otimização da bateria** na pesquisa, selecione a opção **Otimização da Bateria** na tela **Configurações** que é exibida.</span><span class="sxs-lookup"><span data-stu-id="85f36-144">Type **battery optimization** into search, then select the **Battery Optimization** option on the **Settings** screen that appears.</span></span> 
 4. <span data-ttu-id="85f36-145">Toque em **Bateria** > **Otimização da bateria**.</span><span class="sxs-lookup"><span data-stu-id="85f36-145">Tap **Battery** > **Battery optimization**.</span></span>
 5. <span data-ttu-id="85f36-146">Selecione os aplicativos do Portal da Empresa e do Outlook e toque em **Não otimizar**.</span><span class="sxs-lookup"><span data-stu-id="85f36-146">Select the Company Portal and Outlook apps, then select **Don't optimize**.</span></span> <span data-ttu-id="85f36-147">Toque em **Concluído**.</span><span class="sxs-lookup"><span data-stu-id="85f36-147">Tap **Done**.</span></span>
+=======
+# <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>O Outlook não sincroniza email gerenciado quando a otimização da bateria para Android está ativada
+
+> [!IMPORTANT]
+> Esse problema é documentado aqui porque temos recebido um maior número de relatórios de cliente sobre ele. Se depois de executar essas etapas você continuar a experimentar esse problema, entre em contato com [seu administrador de TI](https://portal.manage.microsoft.com) para obter ajuda adicional.
+
+Registrar seu dispositivo no Intune permite que você obtenha acesso aos recursos da empresa. Um dos recursos mais comuns é o acesso a email. Um problema que vimos no acesso a email por meio do Outlook para dispositivos Android foi a quando a otimização da bateria é ativada. A otimização da bateria pode ser ativada automaticamente para tentar ajudar o seu dispositivo a permanecer ligado pelo máximo de tempo possível. A otimização da bateria é parcialmente capaz de ajudá-lo desse modo, porque ela tenta interromper downloads de email automáticos.
+
+A equipe do Microsoft Intune está trabalhando ativamente em uma solução para esse problema. Uma maneira de impedir que o dispositivo entre no modo de baixa energia é assegurar que a bateria mantenha uma carga maior que 30%. Para impedir que o problema ocorra quando você entra no modo de baixa energia, você deve remover o Portal da Empresa e o Outlook da lista de aplicativos que são afetados pelas configurações de economia de energia e de otimização da bateria.
+
+Há muitos dispositivos Android, os quais são feitos por vários fabricantes. Não é possível documentar as etapas exatas necessárias para cada dispositivo. Talvez seja necessário executar esta ação apenas em suas configurações de sistema ou também em determinadas configurações específicas do fabricante. Fornecemos alguns exemplos comuns de como você pode resolver esse problema em dispositivos Android.
+
+## <a name="unmodified-android-devices"></a>Dispositivos Android não modificados
+
+Muitos fabricantes adicionam modificações em seus dispositivos Android. Isso pode alterar determinadas maneiras em que você interage com o dispositivo, assim como os temas e notificações. A Google geralmente não faz esses tipos de modificações nos telefones deles. Por exemplo, em um dispositivo Google Pixel com Android 7.0 ou superior, você seguiria estas etapas para remover esses aplicativos de otimização da bateria:
+
+1. Abra **Configurações**.
+2. Toque em **Bateria** > **Mais** > **Otimização da bateria**.
+3. Toque na seta para baixo e, em seguida, em **Não otimizada**.
+4. Selecione os aplicativos do Portal da Empresa e do Outlook e desligue a otimização da bateria.
+
+## <a name="samsung-devices"></a>Dispositivos Samsung
+
+Para outros tipos de dispositivos Android, como dispositivos Samsung com Android 7.0 ou superior, você teria que seguir etapas diferentes para que os aplicativos do Portal da Empresa e do Outlook sejam removidos da otimização da bateria.
+
+1. Abra **Configurações**.
+2. Toque em **Menu (...)** > **Acesso especial** > **Otimizar o uso da bateria**.
+3. Selecione **Todos os aplicativos** na lista suspensa.
+4. **Desligue** a tecla de alternância ao lado dos aplicativos do Portal da Empresa e do Outlook para desligar a otimização da bateria.
+
+Além disso, se você estiver usando um dispositivo Samsung que tem uma versão inferior do Android, você precisará seguir estas etapas para remover esses aplicativos do modo de economia de energia.
+
+1. Abra **Configurações**.
+2. Toque em **Manutenção do dispositivo** > **Bateria** > **Aplicativos sem monitoramento**.
+3. Toque em **Adicionar aplicativos**.
+4. Selecione os aplicativos do Portal da Empresa e do Outlook e toque em **Concluído**.
+
+## <a name="oneplus-devices"></a>Dispositivos OnePlus
+
+Outro exemplo de maneira diferente de localizar essas configurações é por meio de pesquisa nas configurações do sistema. Por exemplo, em um OnePlus 3 com Android 7.1.1, siga estas etapas: 
+
+1. Abra **Configurações do Sistema**. 
+2. Toque no botão **Pesquisa**. Isso parece uma lente de aumento na parte superior direita da tela. 
+3. Digite **otimização da bateria** na pesquisa, selecione a opção **Otimização da Bateria** na tela **Configurações** que é exibida. 
+4. Toque em **Bateria** > **Otimização da bateria**.
+5. Selecione os aplicativos do Portal da Empresa e do Outlook e toque em **Não otimizar**. Toque em **Concluído**.
+>>>>>>> live
 
 <!--On a OnePlus 5 device with Android 7.1.1, you would follow these steps to remove these apps from battery optimization:
 1. Open **Settings**.
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
+<<<<<<< HEAD
 <span data-ttu-id="85f36-148">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="85f36-148">Still need help?</span></span> <span data-ttu-id="85f36-149">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="85f36-149">Contact your IT admin.</span></span> <span data-ttu-id="85f36-150">Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="85f36-150">For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+=======
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+>>>>>>> live

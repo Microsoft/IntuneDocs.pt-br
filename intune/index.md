@@ -73,8 +73,13 @@ ms.lasthandoff: 07/04/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
+<<<<<<< HEAD
                                             <h3><span data-ttu-id="904e4-112">O que é o Intune para Educação?</span><span class="sxs-lookup"><span data-stu-id="904e4-112">What is Intune for Education?</span></span></h3>
                                             <p><span data-ttu-id="904e4-113">Saiba como realizar tarefas diárias com dispositivos em salas de aula.</span><span class="sxs-lookup"><span data-stu-id="904e4-113">Learn how to accomplish everyday things you need to do with devices in classrooms.</span></span></p>
+=======
+                                            <h3>O que é o Intune para Educação?</h3>
+                                            <p>Saiba como realizar tarefas diárias com dispositivos em salas de aula.</p>
+>>>>>>> live
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +97,13 @@ ms.lasthandoff: 07/04/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
+<<<<<<< HEAD
                                             <h3><span data-ttu-id="904e4-114">Introdução ao Intune</span><span class="sxs-lookup"><span data-stu-id="904e4-114">Get started with Intune</span></span></h3>
                                             <p><span data-ttu-id="904e4-115">Aprenda as noções básicas para criar um grupo e um usuário.</span><span class="sxs-lookup"><span data-stu-id="904e4-115">Learn the basics: Create a group and user.</span></span> <span data-ttu-id="904e4-116">Registre dispositivos.</span><span class="sxs-lookup"><span data-stu-id="904e4-116">Enroll devices.</span></span> <span data-ttu-id="904e4-117">Atribua políticas e aplicativos.</span><span class="sxs-lookup"><span data-stu-id="904e4-117">Assign policies and apps.</span></span></p>
+=======
+                                            <h3>Introdução ao Intune</h3>
+                                            <p>Aprenda as noções básicas para criar um grupo e um usuário. Registre dispositivos. Atribua políticas e aplicativos.</p>
+>>>>>>> live
                                         </div>
                                     </div>
                                 </div>

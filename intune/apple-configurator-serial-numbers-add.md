@@ -21,7 +21,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="da596-103">Adicionar números de série do Apple Configurator</span><span class="sxs-lookup"><span data-stu-id="da596-103">Add Apple Configurator serial numbers</span></span>
+=======
+# Adicionar números de série do Apple Configurator
+>>>>>>> live
 <a id="add-apple-configurator-serial-numbers" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -49,7 +53,11 @@ ms.lasthandoff: 07/01/2017
 
 7. <span data-ttu-id="da596-122">Navegue até o arquivo .csv de números de série e selecione **Adicionar**.</span><span class="sxs-lookup"><span data-stu-id="da596-122">Navigate to the .csv file of serial numbers, and select **Add**.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="da596-123">Atribuir um perfil números de série específicos</span><span class="sxs-lookup"><span data-stu-id="da596-123">Assign a profile to specific serial numbers</span></span>
+=======
+## Atribuir um perfil números de série específicos
+>>>>>>> live
 <a id="assign-a-profile-to-specific-serial-numbers" class="xliff"></a>
 
 <span data-ttu-id="da596-124">O Intune permite atribuir perfis de dois locais diferentes no Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="da596-124">Intune lets you assign profiles from two different places in the Azure portal.</span></span> <span data-ttu-id="da596-125">Você pode usar as etapas a seguir ou pode atribuir perfis na folha Perfis de Registro do Apple Configurator, na qual você cria o perfil (consulte [Registrar dispositivos iOS com Apple Configurator usando o Assistente de configuração](apple-configurator-setup-assistant-enroll-ios.md).</span><span class="sxs-lookup"><span data-stu-id="da596-125">You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade, which is where you create the profile (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md).</span></span> <span data-ttu-id="da596-126">Use as etapas a seguir para atribuir o perfil somente se você já o criou.</span><span class="sxs-lookup"><span data-stu-id="da596-126">You can use the steps below to assign the profile only if you have already created the profile.</span></span>
@@ -62,6 +70,7 @@ ms.lasthandoff: 07/01/2017
 
 4. <span data-ttu-id="da596-130">Na folha **Atribuir Perfil**, selecione o perfil que você deseja atribuir e selecione **Atribuir**.</span><span class="sxs-lookup"><span data-stu-id="da596-130">On the **Assign Profile** blade, select the profile you want to assign, and then select **Assign**.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="da596-131">Excluir números de série</span><span class="sxs-lookup"><span data-stu-id="da596-131">Delete serial numbers</span></span>
 <a id="delete-serial-numbers" class="xliff"></a>
 <span data-ttu-id="da596-132">Você pode excluir os números de série importados anteriormente.</span><span class="sxs-lookup"><span data-stu-id="da596-132">You can delete serial numbers that you imported previously.</span></span> <span data-ttu-id="da596-133">Você poderá excluir os números de série apenas se o registro do dispositivo for cancelado primeiro.</span><span class="sxs-lookup"><span data-stu-id="da596-133">You can delete serial numbers only if the device is unenrolled first.</span></span> <span data-ttu-id="da596-134">Quando você remove um número de série, não é possível usar o Apple Configurator por meio do Assistente de configuração, a menos que você adicione novamente o número de série.</span><span class="sxs-lookup"><span data-stu-id="da596-134">Once you remove a serial number, you can’t use Apple Configurator via Setup Assistant unless you re-add the serial number.</span></span>
@@ -69,6 +78,15 @@ ms.lasthandoff: 07/01/2017
 ## <span data-ttu-id="da596-135">Exibir o estado de um dispositivo</span><span class="sxs-lookup"><span data-stu-id="da596-135">View the state of a device</span></span>
 <a id="view-the-state-of-a-device" class="xliff"></a>
 <span data-ttu-id="da596-136">Os números de série do dispositivo pode ter um dos dois estados:</span><span class="sxs-lookup"><span data-stu-id="da596-136">The device serial numbers can have one of two states:</span></span>
+=======
+## Excluir números de série
+<a id="delete-serial-numbers" class="xliff"></a>
+Você pode excluir os números de série importados anteriormente. Você poderá excluir os números de série apenas se o registro do dispositivo for cancelado primeiro. Quando você remove um número de série, não é possível usar o Apple Configurator por meio do Assistente de configuração, a menos que você adicione novamente o número de série.
+
+## Exibir o estado de um dispositivo
+<a id="view-the-state-of-a-device" class="xliff"></a>
+Os números de série do dispositivo pode ter um dos dois estados:
+>>>>>>> live
 
 - <span data-ttu-id="da596-137">Registrado – o dispositivo é registrado e se conectou ao serviço do Intune</span><span class="sxs-lookup"><span data-stu-id="da596-137">Enrolled - the device is enrolled, and it has connected to the Intune service</span></span>
 - <span data-ttu-id="da596-138">Não Contatado – o dispositivo nunca se conectou ao serviço Intune.</span><span class="sxs-lookup"><span data-stu-id="da596-138">Not Contacted - the device has never connected to the Intune service.</span></span>
@@ -76,4 +94,8 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="da596-141">**Para exibir o estado de um número de série**</span><span class="sxs-lookup"><span data-stu-id="da596-141">**To view the state of a serial number**</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="da596-142">Na folha **Números de Série do Apple Configurator**, selecione o número de série cujo estado você deseja ver e procure o item **Estado**.</span><span class="sxs-lookup"><span data-stu-id="da596-142">On the **Apple Configurator Serial Numbers** blade, select the serial number whose state you want to see, and look under the **State** item.</span></span>
+=======
+Na folha **Números de Série do Apple Configurator**, selecione o número de série cujo estado você deseja ver e procure o item **Estado**.
+>>>>>>> live

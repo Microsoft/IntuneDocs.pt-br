@@ -21,6 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="678ee-103">Configurações de restrição de dispositivo macOS no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="678ee-103">macOS device restriction settings in Microsoft Intune</span></span>
 <a id="macos-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
@@ -47,6 +48,29 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="678ee-119">Uma lista de **Aplicativos proibidos** – Listar os aplicativos (não gerenciados pelo Intune) que os usuários não têm permissão para instalar e executar.</span><span class="sxs-lookup"><span data-stu-id="678ee-119">A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.</span></span>
 <span data-ttu-id="678ee-120">Uma lista de **Aplicativos aprovados** – Listar os aplicativos que os usuários têm permissão para instalar.</span><span class="sxs-lookup"><span data-stu-id="678ee-120">An **Approved apps** list - List the apps that users are allowed to install.</span></span> <span data-ttu-id="678ee-121">Para permanecer compatível, os usuários não devem instalar aplicativos que não estão listados.</span><span class="sxs-lookup"><span data-stu-id="678ee-121">To remain compliant, users must not install apps that are not listed.</span></span> <span data-ttu-id="678ee-122">Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.</span><span class="sxs-lookup"><span data-stu-id="678ee-122">Apps that are managed by Intune are automatically allowed.</span></span>
+=======
+# Configurações de restrição de dispositivo macOS no Microsoft Intune
+<a id="macos-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Use essas configurações para gerenciar dispositivos macOS em um perfil de restrição de dispositivo.
+
+## Senha
+<a id="password" class="xliff"></a>
+-   **Senha obrigatória** – Exigir que o usuário final insira uma senha para acessar o dispositivo.
+    -   **Tipo de senha necessária** – Especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números). Essa configuração só tem suporte no Mac OS X versão 10.10.3 e posterior.
+    -   **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caractere complexo é um símbolo, como **?**
+    -   **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
+    -   **Senhas simples** – Permita o uso de senhas simples como **0000** ou **1234**.
+    -   **Máximo de minutos após o bloqueio de tela antes da senha ser exigida** – Especifique quanto tempo o computador deverá ficar inativo antes da senha ser necessária para desbloqueá-lo.
+    -   **Máximo de minutos de inatividade para o bloqueio de tela** – Especifique o período que um computador deve permanecer ocioso antes da tela ser bloqueada.
+    -   **Expiração de senha (dias)** – Especifique o número de dias que precisam transcorrer antes que o usuário precise alterar a senha (de **1** a **255** dias).
+    -   **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que não podem ser reutilizadas (de **1** a **24**).
+
+## Aplicativos restritos
+<a id="restricted-apps" class="xliff"></a>
+>>>>>>> live
 
 <span data-ttu-id="678ee-123">Para configurar a lista, clique em **Adicionar**, especifique um nome de sua preferência, o editor do aplicativo (opcional) e a ID do pacote do aplicativo (por exemplo *com.apple.calculator*).</span><span class="sxs-lookup"><span data-stu-id="678ee-123">To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the bundle ID of the app (for example *com.apple.calculator*).</span></span>
 
@@ -56,5 +80,15 @@ ms.lasthandoff: 07/01/2017
 ### <span data-ttu-id="678ee-125">Domínios de email desmarcados</span><span class="sxs-lookup"><span data-stu-id="678ee-125">Unmarked email domains</span></span>
 <a id="unmarked-email-domains" class="xliff"></a>
 
+<<<<<<< HEAD
 <span data-ttu-id="678ee-126">No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista.</span><span class="sxs-lookup"><span data-stu-id="678ee-126">In the **Email Domain URL** field, add one or more URLs to the list.</span></span> <span data-ttu-id="678ee-127">Quando os usuários finais receberem um email de um domínio diferente daqueles configurados por você, o email será marcado como não confiável no aplicativo Mail do iOS.</span><span class="sxs-lookup"><span data-stu-id="678ee-127">When end users receive an email from a domain other than one you configured, the email is marked as untrusted in the iOS Mail app.</span></span>
+=======
+## Domínios
+<a id="domains" class="xliff"></a>
+
+### Domínios de email desmarcados
+<a id="unmarked-email-domains" class="xliff"></a>
+
+No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente daqueles configurados por você, o email será marcado como não confiável no aplicativo Mail do iOS.
+>>>>>>> live
 

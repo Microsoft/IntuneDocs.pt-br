@@ -20,22 +20,40 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="fd306-103">Registrar os dispositivos Windows</span><span class="sxs-lookup"><span data-stu-id="fd306-103">Enroll Windows devices</span></span>
+=======
+# Registrar os dispositivos Windows
+>>>>>>> live
 <a id="enroll-windows-devices" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
 <span data-ttu-id="fd306-104">Este tópico ajuda os administradores de TI a simplificar o registro do Windows para os seus usuários.</span><span class="sxs-lookup"><span data-stu-id="fd306-104">This topic helps IT administrators simplify Windows enrollment for their users.</span></span> <span data-ttu-id="fd306-105">Depois que você [configurar o Intune](setup-steps.md), os usuários registram os dispositivos Windows [entrando](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) com sua conta corporativa ou de estudante.</span><span class="sxs-lookup"><span data-stu-id="fd306-105">Once you've [set up Intune](setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.</span></span>  
 
 <span data-ttu-id="fd306-106">Como um administrador do Intune, você pode simplificar o registro das seguintes maneiras:</span><span class="sxs-lookup"><span data-stu-id="fd306-106">As an Intune admin, you can simplify  enrollment in the following ways:</span></span>
 - <span data-ttu-id="fd306-107">Habilitar o registro automático (Azure AD premium necessário)</span><span class="sxs-lookup"><span data-stu-id="fd306-107">Enable automatic enrollment (Azure AD premium required)</span></span>
 - <span data-ttu-id="fd306-108">Registro de CNAME</span><span class="sxs-lookup"><span data-stu-id="fd306-108">CNAME registration</span></span>
 - <span data-ttu-id="fd306-109">Habilitar o registro em massa (Azure AD premium e Designer de Configuração do Windows necessários)</span><span class="sxs-lookup"><span data-stu-id="fd306-109">Enable bulk enrollment  (Azure AD premium and Windows Configuration Designer required)</span></span>
+=======
+Este tópico ajuda os administradores de TI a simplificar o registro do Windows para os seus usuários. Depois que você [configurar o Intune](setup-steps.md), os usuários registram os dispositivos Windows [entrando](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) com sua conta corporativa ou de estudante.  
+
+Como um administrador do Intune, você pode simplificar o registro das seguintes maneiras:
+- Habilitar o registro automático (Azure AD premium necessário)
+- Registro de CNAME
+- Habilitar o registro em massa (Azure AD premium e Designer de Configuração do Windows necessários)
+>>>>>>> live
 
 <span data-ttu-id="fd306-110">Dois fatores determinam como você pode simplificar o registro de dispositivos do Windows:</span><span class="sxs-lookup"><span data-stu-id="fd306-110">Two factors determine how you can simplify Windows device enrollment:</span></span>
 
+<<<<<<< HEAD
 - <span data-ttu-id="fd306-111">**Você usa o Azure Active Directory Premium?**</span><span class="sxs-lookup"><span data-stu-id="fd306-111">**Do you use Azure Active Directory Premium?**</span></span> <br><span data-ttu-id="fd306-112">[O Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído no Enterprise Mobility + Security e outros planos de licenciamento.</span><span class="sxs-lookup"><span data-stu-id="fd306-112">[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) is included with Enterprise Mobility + Security and other licensing plans.</span></span>
 - <span data-ttu-id="fd306-113">**Quais versões de clientes Windows os usuários registrarão?**</span><span class="sxs-lookup"><span data-stu-id="fd306-113">**What versions of Windows clients will users enroll?**</span></span> <br><span data-ttu-id="fd306-114">Dispositivos Windows 10 podem registrar automaticamente adicionando uma conta corporativa ou escolar.</span><span class="sxs-lookup"><span data-stu-id="fd306-114">Windows 10 devices can automatically enroll by adding a work or school account.</span></span> <span data-ttu-id="fd306-115">Versões anteriores devem ser registrados usando o aplicativo de Portal da Empresa.</span><span class="sxs-lookup"><span data-stu-id="fd306-115">Earlier versions must enroll using the Company Portal app.</span></span>
+=======
+- **Você usa o Azure Active Directory Premium?** <br>[O Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído no Enterprise Mobility + Security e outros planos de licenciamento.
+- **Quais versões de clientes Windows os usuários registrarão?** <br>Dispositivos Windows 10 podem registrar automaticamente adicionando uma conta corporativa ou escolar. Versões anteriores devem ser registrados usando o aplicativo de Portal da Empresa.
+>>>>>>> live
 
 ||<span data-ttu-id="fd306-116">**Azure AD Premium**</span><span class="sxs-lookup"><span data-stu-id="fd306-116">**Azure AD Premium**</span></span>|<span data-ttu-id="fd306-117">**Outro AD**</span><span class="sxs-lookup"><span data-stu-id="fd306-117">**Other AD**</span></span>|
 |----------|---------------|---------------|  
@@ -47,11 +65,22 @@ ms.lasthandoff: 07/03/2017
 <span data-ttu-id="fd306-125">**Suporte a vários usuários**</span><span class="sxs-lookup"><span data-stu-id="fd306-125">**Multi-user support**</span></span><br>
 <span data-ttu-id="fd306-126">Os dispositivos que executam a Atualização do Windows 10 para Criadores, e que estão ingressados no domínio do Azure Active Directory, agora têm suporte para o gerenciamento de vários usuários do Intune.</span><span class="sxs-lookup"><span data-stu-id="fd306-126">Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune.</span></span> <span data-ttu-id="fd306-127">Quando os usuários padrão fizerem logon com suas credenciais do Azure AD, eles receberão aplicativos e políticas atribuídas ao nome de usuário deles.</span><span class="sxs-lookup"><span data-stu-id="fd306-127">When standard users log on with their Azure AD credentials, they receive apps and policies assigned to their user name.</span></span> <span data-ttu-id="fd306-128">No momento, os usuários não podem usar o Portal da Empresa para cenários de autoatendimento, como a instalação de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="fd306-128">Users cannot currently use the Company Portal for self-service scenarios like installing apps.</span></span>
 
+As organizações que podem usar o registro automático também podem configurar [dispositivos de registro em massa](windows-bulk-enroll.md) usando o aplicativo de Designer de Configuração do Windows.
+
+**Suporte a vários usuários**<br>
+Os dispositivos que executam a Atualização do Windows 10 para Criadores, e que estão ingressados no domínio do Azure Active Directory, agora têm suporte para o gerenciamento de vários usuários do Intune. Quando os usuários padrão fizerem logon com suas credenciais do Azure AD, eles receberão aplicativos e políticas atribuídas ao nome de usuário deles. No momento, os usuários não podem usar o Portal da Empresa para cenários de autoatendimento, como a instalação de aplicativos.
+
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
+<<<<<<< HEAD
 ## <span data-ttu-id="fd306-129">Habilitar o registro do Windows sem o Azure AD Premium</span><span class="sxs-lookup"><span data-stu-id="fd306-129">Enable Windows enrollment without Azure AD Premium</span></span>
 <a id="enable-windows-enrollment-without-azure-ad-premium" class="xliff"></a>
 <span data-ttu-id="fd306-130">É possível simplificar o registro para os usuários criando um alias DNS (tipo de registro CNAME) que redireciona automaticamente as solicitações de registro para os servidores do Intune.</span><span class="sxs-lookup"><span data-stu-id="fd306-130">You can simplify enrollment for your users by creating a DNS alias (CNAME record type) that automatically redirects enrollment requests to Intune servers.</span></span> <span data-ttu-id="fd306-131">Se você não criar um registro de recurso DNS CNAME, os usuários que tentarem se conectar ao Intune deverão inserir o nome do servidor Intune durante o registro.</span><span class="sxs-lookup"><span data-stu-id="fd306-131">If you don't create a DNS CNAME resource record, users attempting to connect to Intune must enter the Intune server name during enrollment.</span></span>
+=======
+## Habilitar o registro do Windows sem o Azure AD Premium
+<a id="enable-windows-enrollment-without-azure-ad-premium" class="xliff"></a>
+É possível simplificar o registro para os usuários criando um alias DNS (tipo de registro CNAME) que redireciona automaticamente as solicitações de registro para os servidores do Intune. Se você não criar um registro de recurso DNS CNAME, os usuários que tentarem se conectar ao Intune deverão inserir o nome do servidor Intune durante o registro.
+>>>>>>> live
 
 <span data-ttu-id="fd306-132">**Etapa 1: Criar um CNAME** (opcional)</span><span class="sxs-lookup"><span data-stu-id="fd306-132">**Step 1: Create CNAME** (optional)</span></span><br>
 <span data-ttu-id="fd306-133">Criar registros de recurso DNS CNAME para o domínio da sua empresa.</span><span class="sxs-lookup"><span data-stu-id="fd306-133">Create CNAME DNS resource records for your company’s domain.</span></span> <span data-ttu-id="fd306-134">Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="fd306-134">For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.</span></span>
@@ -62,7 +91,11 @@ ms.lasthandoff: 07/03/2017
 |----------|---------------|---------------|---|
 |<span data-ttu-id="fd306-141">CNAME</span><span class="sxs-lookup"><span data-stu-id="fd306-141">CNAME</span></span>|<span data-ttu-id="fd306-142">EnterpriseEnrollment.company_domain.com</span><span class="sxs-lookup"><span data-stu-id="fd306-142">EnterpriseEnrollment.company_domain.com</span></span>|<span data-ttu-id="fd306-143">EnterpriseEnrollment-s.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="fd306-143">EnterpriseEnrollment-s.manage.microsoft.com</span></span>| <span data-ttu-id="fd306-144">1 hora</span><span class="sxs-lookup"><span data-stu-id="fd306-144">1 hour</span></span>|
 
+<<<<<<< HEAD
 <span data-ttu-id="fd306-145">Se você tiver mais de um sufixo UPN, você precisará criar um CNAME para cada nome de domínio e apontar cada um para EnterpriseEnrollment-s.manage.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="fd306-145">If you have more than one UPN suffix, you need to create one CNAME for each domain name and point each one to EnterpriseEnrollment-s.manage.microsoft.com.</span></span> <span data-ttu-id="fd306-146">Se os usuários da Contoso usarem name@contoso.com, mas também usarem name@us.contoso.com e name@eu.constoso.com como seu email/UPN, o administrador de DNS da Contoso deverá criar os seguintes CNAMEs:</span><span class="sxs-lookup"><span data-stu-id="fd306-146">If users at Contoso use name@contoso.com, but also use name@us.contoso.com, and name@eu.constoso.com as their email/UPN, the Contoso DNS admin should create the following CNAMEs:</span></span>
+=======
+Se você tiver mais de um sufixo UPN, você precisará criar um CNAME para cada nome de domínio e apontar cada um para EnterpriseEnrollment-s.manage.microsoft.com. Se os usuários da Contoso usarem name@contoso.com, mas também usarem name@us.contoso.com e name@eu.constoso.com como seu email/UPN, o administrador de DNS da Contoso deverá criar os seguintes CNAMEs:
+>>>>>>> live
 
 |<span data-ttu-id="fd306-147">Tipo</span><span class="sxs-lookup"><span data-stu-id="fd306-147">Type</span></span>|<span data-ttu-id="fd306-148">Nome do host</span><span class="sxs-lookup"><span data-stu-id="fd306-148">Host name</span></span>|<span data-ttu-id="fd306-149">Aponta para</span><span class="sxs-lookup"><span data-stu-id="fd306-149">Points to</span></span>|<span data-ttu-id="fd306-150">TTL</span><span class="sxs-lookup"><span data-stu-id="fd306-150">TTL</span></span>|  
 |----------|---------------|---------------|---|
@@ -74,6 +107,7 @@ ms.lasthandoff: 07/03/2017
 
 <span data-ttu-id="fd306-164">Alterações em registros DNS podem levar até 72 horas para serem propagadas.</span><span class="sxs-lookup"><span data-stu-id="fd306-164">Changes to DNS records might take up to 72 hours to propagate.</span></span> <span data-ttu-id="fd306-165">Você não pode verificar a alteração do DNS no Intune até que o registro DNS seja propagado.</span><span class="sxs-lookup"><span data-stu-id="fd306-165">You cannot verify the DNS change in Intune until the DNS record propagates.</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="fd306-166">**Etapa 2: Verifique o CNAME** (opcional)</span><span class="sxs-lookup"><span data-stu-id="fd306-166">**Step 2: Verify CNAME** (optional)</span></span><br>
 <span data-ttu-id="fd306-167">No portal do Azure Intune, selecione **Mais serviços** > **Monitoramento + Gerenciamento** > **Intune**.</span><span class="sxs-lookup"><span data-stu-id="fd306-167">In the Azure Intune portal, choose **More Services** > **Monitoring + Management** > **Intune**.</span></span> <span data-ttu-id="fd306-168">Na folha do Intune, escolha **Registrar dispositivos** > **Registro do Windows**.</span><span class="sxs-lookup"><span data-stu-id="fd306-168">On the Intune blade, choose **Enroll devices** > **Windows Enrollment**.</span></span> <span data-ttu-id="fd306-169">Digite a URL do site da empresa na caixa **Especificar um nome de domínio verificado** e escolha **Testar Detecção Automática**.</span><span class="sxs-lookup"><span data-stu-id="fd306-169">Enter the company website URL in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.</span></span>
 
@@ -82,3 +116,13 @@ ms.lasthandoff: 07/03/2017
 <span data-ttu-id="fd306-171">Informe aos usuários como registrar seus dispositivos Windows e o que esperar quando eles forem incluídos no gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="fd306-171">Tell your users how to enroll their Windows devices and what to expect after they're brought into management.</span></span> <span data-ttu-id="fd306-172">Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).</span><span class="sxs-lookup"><span data-stu-id="fd306-172">For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).</span></span> <span data-ttu-id="fd306-173">Você também pode pedir para os usuários lerem [O que meu administrador de TI poderá ver em meu dispositivo](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).</span><span class="sxs-lookup"><span data-stu-id="fd306-173">You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).</span></span>
 
 <span data-ttu-id="fd306-174">Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](end-user-educate.md).</span><span class="sxs-lookup"><span data-stu-id="fd306-174">For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](end-user-educate.md).</span></span>
+=======
+**Etapa 2: Verifique o CNAME** (opcional)<br>
+No portal do Azure Intune, selecione **Mais serviços** > **Monitoramento + Gerenciamento** > **Intune**. Na folha do Intune, escolha **Registrar dispositivos** > **Registro do Windows**. Digite a URL do site da empresa na caixa **Especificar um nome de domínio verificado** e escolha **Testar Detecção Automática**.
+
+## Informe aos usuários como registrar dispositivos Windows
+<a id="tell-users-how-to-enroll-windows-devices" class="xliff"></a>
+Informe aos usuários como registrar seus dispositivos Windows e o que esperar quando eles forem incluídos no gerenciamento. Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Você também pode pedir para os usuários lerem [O que meu administrador de TI poderá ver em meu dispositivo](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+
+Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](end-user-educate.md).
+>>>>>>> live

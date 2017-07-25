@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: <span data-ttu-id="85dea-101">Registre seu dispositivo iOS com o Programa de registro de dispositivos | Microsoft Docs</span><span class="sxs-lookup"><span data-stu-id="85dea-101">Enroll your iOS device with Device Enrollment Program | Microsoft Docs</span></span>
 description: <span data-ttu-id="85dea-102">Descreve como registrar um dispositivo iOS no Intune com o DEP</span><span class="sxs-lookup"><span data-stu-id="85dea-102">Describes how to enroll an iOS device in Intune with DEP</span></span>
+=======
+title: Registre seu dispositivo iOS com o Programa de registro de dispositivos | Microsoft Docs
+description: Descreve como registrar um dispositivo iOS no Intune com o DEP
+>>>>>>> live
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -22,6 +27,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
+<<<<<<< HEAD
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a><span data-ttu-id="85dea-103">Registre seu dispositivo iOS no Intune com o Programa de registro de dispositivos</span><span class="sxs-lookup"><span data-stu-id="85dea-103">Enroll your iOS device in Intune with the Device Enrollment Program</span></span>
 
 <span data-ttu-id="85dea-104">O Programa de registro de dispositivos é oferecido pela Apple para empresas e organizações que desejam facilitar imediatamente a experiência do usuário para fins de gerenciamento de dispositivos iOS.</span><span class="sxs-lookup"><span data-stu-id="85dea-104">The Device Enrollment Program is offered by Apple to companies and organizations that want to make the user experience easier out of the box for managing iOS devices.</span></span> <span data-ttu-id="85dea-105">Se sua empresa permitiu que você trouxesse seu próprio dispositivo, você simplesmente seguirá as [etapas normais de registro do iOS](enroll-your-device-in-intune-ios.md) em vez das etapas nesta página.</span><span class="sxs-lookup"><span data-stu-id="85dea-105">If your company allowed you to bring your own device, you will simply follow the [regular iOS enrollment steps](enroll-your-device-in-intune-ios.md) rather than the steps on this page.</span></span> <span data-ttu-id="85dea-106">Continue lendo se sua empresa tiver fornecido um dispositivo iOS a você e lhe dito que tal dispositivo era parte do Programa de registro de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="85dea-106">Read on if your company provided you with an iOS device and told you that it was part of the Device Enrollment Program.</span></span>
@@ -34,3 +40,17 @@ ms.lasthandoff: 07/11/2017
 6.  <span data-ttu-id="85dea-113">Depois de concluir o registro, o dispositivo pode solicitar que você realize mais ações.</span><span class="sxs-lookup"><span data-stu-id="85dea-113">Once you complete your enrollment, your device may prompt you to take more actions.</span></span> <span data-ttu-id="85dea-114">Algumas delas podem ser inserir sua senha para acesso ao email, configurar uma senha, concordar com instalações de aplicativos, tudo com base no que foi configurado pelo administrador do Intune da empresa.</span><span class="sxs-lookup"><span data-stu-id="85dea-114">Some of these might be entering your password for email access, setup a passcode, agree to application installations all based on what has been setup by your company’s Intune administrator.</span></span>
 
 <span data-ttu-id="85dea-115">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="85dea-115">Still need help?</span></span> <span data-ttu-id="85dea-116">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="85dea-116">Contact your IT admin.</span></span> <span data-ttu-id="85dea-117">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="85dea-117">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+=======
+# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registre seu dispositivo iOS no Intune com o Programa de registro de dispositivos
+
+O Programa de registro de dispositivos é oferecido pela Apple para empresas e organizações que desejam facilitar imediatamente a experiência do usuário para fins de gerenciamento de dispositivos iOS. Se sua empresa permitiu que você trouxesse seu próprio dispositivo, você simplesmente seguirá as [etapas normais de registro do iOS](enroll-your-device-in-intune-ios.md) em vez das etapas nesta página. Continue lendo se sua empresa tiver fornecido um dispositivo iOS a você e lhe dito que tal dispositivo era parte do Programa de registro de dispositivos.
+
+1.  Ative seu iPad e prossiga com as duas primeiras telas de instalação.
+2.  Depois de selecionar o **Idioma**, conecte o dispositivo ao Wi-Fi.
+3.  Depois de você ter se conectado ao Wi-Fi, a tela **Configuração** será exibida. Isso informará que **[Sua empresa] configurará automaticamente seu [iPad/iPhone].**
+4.  Faça logon com o **Nome de usuário** e **Senha** de sua empresa.
+5.  Concorde com os **termos e condições** e decida se deseja enviar informações de diagnóstico para a Apple.
+6.  Depois de concluir o registro, o dispositivo pode solicitar que você realize mais ações. Algumas delas podem ser inserir sua senha para acesso ao email, configurar uma senha, concordar com instalações de aplicativos, tudo com base no que foi configurado pelo administrador do Intune da empresa.
+
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+>>>>>>> live

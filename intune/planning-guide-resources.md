@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="c62ff-103">Recursos adicionais para planejar a implantação do Intune</span><span class="sxs-lookup"><span data-stu-id="c62ff-103">Additional resources for planning your Intune deployment</span></span>
 <a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
 
@@ -26,6 +27,13 @@ ms.lasthandoff: 07/11/2017
 <a id="templates" class="xliff"></a>
 
 <span data-ttu-id="c62ff-105">Os modelos do Microsoft Excel para as tabelas usadas no guia de planejamento estão disponíveis para [download](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).</span><span class="sxs-lookup"><span data-stu-id="c62ff-105">Microsoft Excel templates for the tables used in the planning guide are available for [download](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).</span></span>
+=======
+# Recursos adicionais para planejar a implantação do Intune
+<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+
+## Modelos
+<a id="templates" class="xliff"></a>
+>>>>>>> live
 
 <span data-ttu-id="c62ff-106">Esta é uma lista de modelos de tabela para cada seção.</span><span class="sxs-lookup"><span data-stu-id="c62ff-106">Here's a list of table templates for each section.</span></span>
 
@@ -44,7 +52,11 @@ ms.lasthandoff: 07/11/2017
 | | <span data-ttu-id="c62ff-130">Política de acesso condicional</span><span class="sxs-lookup"><span data-stu-id="c62ff-130">Conditional access policy</span></span>|-|
 
 
+<<<<<<< HEAD
 ## <span data-ttu-id="c62ff-131">Leituras adicionais</span><span class="sxs-lookup"><span data-stu-id="c62ff-131">Further reading</span></span>
+=======
+## Leituras adicionais
+>>>>>>> live
 <a id="further-reading" class="xliff"></a>
 
 <span data-ttu-id="c62ff-132">Confira estes recursos para obter mais informações que podem ser úteis durante o processo de planejamento da implantação, design e implementação do Intune.</span><span class="sxs-lookup"><span data-stu-id="c62ff-132">Check out these resources for additional information that may be helpful during the Intune deployment planning, design, and implementation process.</span></span>

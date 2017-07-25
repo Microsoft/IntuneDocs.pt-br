@@ -37,13 +37,20 @@ ms.lasthandoff: 07/13/2017
 
 ## <a name="step-2---configure-the-app-package-file"></a><span data-ttu-id="65afb-111">Etapa 2 - configurar o arquivo de pacote de aplicativos</span><span class="sxs-lookup"><span data-stu-id="65afb-111">Step 2 - Configure the app package file</span></span>
 
+<<<<<<< HEAD
 1. <span data-ttu-id="65afb-112">Na folha **Adicionar Aplicativo**, escolha o arquivo **Adicionar pacote**.</span><span class="sxs-lookup"><span data-stu-id="65afb-112">On the **Add app** blade, choose **App package** file.</span></span>
 2. <span data-ttu-id="65afb-113">Na folha do arquivo **Pacote do aplicativo**, escolha o botão Procurar e selecione um arquivo de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**.</span><span class="sxs-lookup"><span data-stu-id="65afb-113">On the **App package** file blade, choose the browse button, and select a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**.</span></span>
 3. <span data-ttu-id="65afb-114">Quando terminar, escolha **OK**.</span><span class="sxs-lookup"><span data-stu-id="65afb-114">When you are finished, choose **OK**.</span></span>
+=======
+1. Na folha **Adicionar Aplicativo**, escolha o arquivo **Adicionar pacote**.
+2. Na folha do arquivo **Pacote do aplicativo**, escolha o botão Procurar e selecione um arquivo de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**.
+3. Quando terminar, escolha **OK**.
+>>>>>>> live
 
 
 ## <a name="step-3---configure-app-information"></a><span data-ttu-id="65afb-115">Etapa 3 - configurar informações do aplicativo</span><span class="sxs-lookup"><span data-stu-id="65afb-115">Step 3 - Configure app information</span></span>
 
+<<<<<<< HEAD
 1. <span data-ttu-id="65afb-116">Na folha **Adicionar Aplicativo**, escolha o arquivo **Adicionar pacote**.</span><span class="sxs-lookup"><span data-stu-id="65afb-116">On the **Add app** blade, choose **App package** file.</span></span>
 2. <span data-ttu-id="65afb-117">Na folha **Informações do aplicativo**, configure as informações a seguir (alguns dos valores nessa folha podem ser preenchidos automaticamente):</span><span class="sxs-lookup"><span data-stu-id="65afb-117">On the **App information** blade, configure the following information (some of the values in this blade might be automatically filled-in):</span></span>
     - <span data-ttu-id="65afb-118">**Nome** – insira o nome do aplicativo como ele é exibido no portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="65afb-118">**Name** - Enter the name of the app as it is displayed in the company portal.</span></span> <span data-ttu-id="65afb-119">Certifique-se de que todos os nomes de aplicativo usados são exclusivos.</span><span class="sxs-lookup"><span data-stu-id="65afb-119">Make sure all app names that you use are unique.</span></span> <span data-ttu-id="65afb-120">Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="65afb-120">If the same app name exists twice, only one of the apps is displayed to users in the company portal.</span></span>
@@ -61,10 +68,36 @@ ms.lasthandoff: 07/13/2017
 3. <span data-ttu-id="65afb-137">Quando terminar, escolha **OK**.</span><span class="sxs-lookup"><span data-stu-id="65afb-137">When you are finished, choose **OK**.</span></span>
 
 ## <a name="step-4---finish-up"></a><span data-ttu-id="65afb-138">Etapa 4 - conclusão</span><span class="sxs-lookup"><span data-stu-id="65afb-138">Step 4 - Finish up</span></span>
+=======
+1. Na folha **Adicionar Aplicativo**, escolha o arquivo **Adicionar pacote**.
+2. Na folha **Informações do aplicativo**, configure as informações a seguir (alguns dos valores nessa folha podem ser preenchidos automaticamente):
+    - **Nome** – insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
+    - **Descrição**: insira uma descrição para o aplicativo. A descrição é exibida para usuários no portal da empresa.
+    - **Editor**: insira o nome do editor do aplicativo.
+    - **Categoria** - selecione uma ou mais das categorias de aplicativo interno, ou uma categoria criada por você. Categorizar os aplicativos facilita a localização do aplicativo pelos usuários quando eles navegam pelo portal da empresa.
+    - **Exibir isso como um aplicativo em destaque no portal da empresa** – Exiba o aplicativo de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
+    - **URL de Informações** – Opcionalmente, insira a URL de um site que contém informações sobre o aplicativo. A URL é exibida para os usuários no portal da empresa.
+    - **URL de Privacidade** – Opcionalmente, insira a URL para um site que contém informações de privacidade do aplicativo. A URL é exibida para os usuários no portal da empresa.
+    - **Argumentos de linha de comando** – opcionalmente, insira os argumentos de linha de comando que você deseja aplicar ao arquivo .msi quando ele for executado, tais como **/q**.
+    - **Desenvolvedor** – Opcionalmente, insira o nome do desenvolvedor do aplicativo.
+    - **Proprietário** – Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, **Departamento de RH**.
+    - **Observações** – Digite as observações que você deseja associar a este aplicativo.
+    - **Logotipo** – carregue um ícone que será associado ao aplicativo. Esse é o ícone que será exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
+3. Quando terminar, escolha **OK**.
+>>>>>>> live
 
 1. <span data-ttu-id="65afb-139">Na folha **Adicionar aplicativo**, verifique se você configurou as informações do aplicativo corretamente.</span><span class="sxs-lookup"><span data-stu-id="65afb-139">On the **Add app** blade, verify you configured the app information correctly.</span></span>
 2. <span data-ttu-id="65afb-140">Escolha **Adicionar** para carregar o aplicativo no Intune.</span><span class="sxs-lookup"><span data-stu-id="65afb-140">Choose **Add**, to upload the app to Intune.</span></span>
 
+<<<<<<< HEAD
 ## <a name="next-steps"></a><span data-ttu-id="65afb-141">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="65afb-141">Next steps</span></span>
 
 <span data-ttu-id="65afb-142">O aplicativo que você criou é exibido na lista de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="65afb-142">The app you have created is displayed in the apps list.</span></span> <span data-ttu-id="65afb-143">Agora você pode atribuí-lo aos grupos que você escolher.</span><span class="sxs-lookup"><span data-stu-id="65afb-143">You can now assign it to the groups you choose.</span></span> <span data-ttu-id="65afb-144">Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](apps-deploy.md).</span><span class="sxs-lookup"><span data-stu-id="65afb-144">For help, see [How to assign apps to groups](apps-deploy.md).</span></span>
+=======
+1. Na folha **Adicionar aplicativo**, verifique se você configurou as informações do aplicativo corretamente.
+2. Escolha **Adicionar** para carregar o aplicativo no Intune.
+
+## <a name="next-steps"></a>Próximas etapas
+
+O aplicativo que você criou é exibido na lista de aplicativos. Agora você pode atribuí-lo aos grupos que você escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](apps-deploy.md).
+>>>>>>> live

@@ -25,6 +25,7 @@ ms.lasthandoff: 07/13/2017
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
 - <span data-ttu-id="629b2-104">**Ativar tela quando alguém estiver no recinto** – Permite que o dispositivo seja ativado automaticamente quando o sensor detectar a alguém na sala.</span><span class="sxs-lookup"><span data-stu-id="629b2-104">**Wake screen when someone in room** - Allows the device to wake automatically when its sensor detects someone in the room.</span></span>
 - <span data-ttu-id="629b2-105">**PIN para projeção sem fio** – Especifica se você deve inserir um PIN antes de poder usar os recursos de projeção sem fio do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="629b2-105">**PIN for wireless projection** - Specifies whether you must enter a PIN before you can use the wireless projection capabilities of the device.</span></span>
 - <span data-ttu-id="629b2-106">**Projeção sem fio Miracast** – selecione essa opção se você quiser permitir que o dispositivo Windows 10 Team use dispositivos habilitados do Miracast para o projeto.</span><span class="sxs-lookup"><span data-stu-id="629b2-106">**Miracast wireless projection** - If you want to let the Windows 10 Team device use Miracast enabled devices to project, select this option.</span></span>
@@ -38,3 +39,18 @@ ms.lasthandoff: 07/13/2017
 ## <a name="next-steps"></a><span data-ttu-id="629b2-117">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="629b2-117">Next steps</span></span>
 
 <span data-ttu-id="629b2-118">Use as informações em [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.</span><span class="sxs-lookup"><span data-stu-id="629b2-118">Use the information in [How to configure device restriction settings](device-restrictions-configure.md) to save, and assign the profile to users and devices.</span></span>
+=======
+- **Ativar tela quando alguém estiver no recinto** – Permite que o dispositivo seja ativado automaticamente quando o sensor detectar a alguém na sala.
+- **PIN para projeção sem fio** – Especifica se você deve inserir um PIN antes de poder usar os recursos de projeção sem fio do dispositivo.
+- **Projeção sem fio Miracast** – selecione essa opção se você quiser permitir que o dispositivo Windows 10 Team use dispositivos habilitados do Miracast para o projeto.
+- **Informações de reunião exibidas na tela de Boas-Vindas** – habilite essa opção para escolher as informações que serão exibidas no bloco Reuniões da tela de Boas-Vindas. Você pode:
+    - **Mostrar somente organizador e hora**
+    - **Mostrar organizador, hora e assunto (o assunto é oculto para reuniões privadas)**
+- **URL da imagem de fundo da tela de Boas-Vindas** – Habilite essa configuração para exibir uma tela de fundo personalizada na tela de **Boas-Vindas** dos dispositivos com Windows 10 Team da URL especificada.<br>A imagem deve estar no formato PNG e a URL deve começar com **https://**.
+- **Janela de manutenção para atualizações** – Configura a o intervalo em que atualizações podem ocorrer no dispositivo. Você pode configurar a hora de início do intervalo e sua duração (de 1 a 5 horas).
+- **Insights Operacionais do Azure** – O Insights Operacionais do Azure, que faz parte do pacote do Microsoft Operations Manager, coleta, armazena e analisa os dados de arquivo de log de dispositivos Windows 10 Team.<br>Para se conectar aos Insights Operacionais do Azure, você deve especificar uma **ID do Espaço de Trabalho** e uma **Chave do Espaço de Trabalho**.
+
+## <a name="next-steps"></a>Próximas etapas
+
+Use as informações em [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.
+>>>>>>> live

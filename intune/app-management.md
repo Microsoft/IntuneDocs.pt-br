@@ -21,7 +21,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="2bf6f-103">O que é o gerenciamento de aplicativo do Microsoft Intune?</span><span class="sxs-lookup"><span data-stu-id="2bf6f-103">What is Microsoft Intune app management?</span></span>
+=======
+# O que é o gerenciamento de aplicativo do Microsoft Intune?
+>>>>>>> live
 <a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
@@ -37,11 +41,16 @@ ms.lasthandoff: 07/12/2017
 
 <span data-ttu-id="2bf6f-110">O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja.</span><span class="sxs-lookup"><span data-stu-id="2bf6f-110">Intune offers a range of capabilities to help you get the apps you need, on the devices you want.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="2bf6f-111">Recursos de gerenciamento de aplicativo por plataforma</span><span class="sxs-lookup"><span data-stu-id="2bf6f-111">App management capabilities by platform</span></span>
+=======
+## Recursos de gerenciamento de aplicativo por plataforma
+>>>>>>> live
 <a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
+<<<<<<< HEAD
 |&nbsp; |<span data-ttu-id="2bf6f-112">Android</span><span class="sxs-lookup"><span data-stu-id="2bf6f-112">Android</span></span>|<span data-ttu-id="2bf6f-113">iOS</span><span class="sxs-lookup"><span data-stu-id="2bf6f-113">iOS</span></span>|<span data-ttu-id="2bf6f-114">Windows Phone 8.1</span><span class="sxs-lookup"><span data-stu-id="2bf6f-114">Windows Phone 8.1</span></span>|<span data-ttu-id="2bf6f-115">Windows 10</span><span class="sxs-lookup"><span data-stu-id="2bf6f-115">Windows 10</span></span>|
 |<span data-ttu-id="2bf6f-116">Adicionar e atribuir aplicativos a dispositivos e usuários</span><span class="sxs-lookup"><span data-stu-id="2bf6f-116">Add and assign apps to devices and users</span></span>|<span data-ttu-id="2bf6f-117">Sim</span><span class="sxs-lookup"><span data-stu-id="2bf6f-117">Yes</span></span>|<span data-ttu-id="2bf6f-118">Sim</span><span class="sxs-lookup"><span data-stu-id="2bf6f-118">Yes</span></span>|<span data-ttu-id="2bf6f-119">Sim</span><span class="sxs-lookup"><span data-stu-id="2bf6f-119">Yes</span></span>|<span data-ttu-id="2bf6f-120">Sim</span><span class="sxs-lookup"><span data-stu-id="2bf6f-120">Yes</span></span>|
 |<span data-ttu-id="2bf6f-121">Atribuir aplicativos a dispositivos não registrados com o Intune</span><span class="sxs-lookup"><span data-stu-id="2bf6f-121">Assign apps to devices not enrolled with Intune</span></span>|<span data-ttu-id="2bf6f-122">Sim</span><span class="sxs-lookup"><span data-stu-id="2bf6f-122">Yes</span></span>|<span data-ttu-id="2bf6f-123">Sim</span><span class="sxs-lookup"><span data-stu-id="2bf6f-123">Yes</span></span>|<span data-ttu-id="2bf6f-124">Não</span><span class="sxs-lookup"><span data-stu-id="2bf6f-124">No</span></span>|<span data-ttu-id="2bf6f-125">Não</span><span class="sxs-lookup"><span data-stu-id="2bf6f-125">No</span></span>|
@@ -100,6 +109,66 @@ ms.lasthandoff: 07/12/2017
 <span data-ttu-id="2bf6f-217">Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)</span><span class="sxs-lookup"><span data-stu-id="2bf6f-217">For details, see [Monitor apps](apps-monitor.md)</span></span>
 
 ### <span data-ttu-id="2bf6f-218">Setup</span><span class="sxs-lookup"><span data-stu-id="2bf6f-218">Setup</span></span>
+=======
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+|Adicionar e atribuir aplicativos a dispositivos e usuários|Sim|Sim|Sim|Sim|
+|Atribuir aplicativos a dispositivos não registrados com o Intune|Sim|Sim|Não|Não|
+|Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos|Não|Sim|Não|Não|
+|Usar políticas de provisionamento de aplicativo móvel para renovar aplicativos expirados|Não|Sim|Não|Não|
+|Proteger os dados corporativos em aplicativos com as políticas de proteção de aplicativo|Sim|Sim|Não|Não<sup>1</sup>|
+|Remover apenas dados corporativos de um aplicativo instalado (apagamento seletivo do aplicativo)|Sim|Sim|Sim|Sim|
+|Monitorar as atribuições de aplicativo|Sim|Sim|Sim|Sim|
+|Atribuir e controlar aplicativos adquiridos por volume de uma loja de aplicativos|Não|Não|Não|Sim|
+|Instalação obrigatória de aplicativos nos dispositivos (Obrigatório)<sup>2</sup>|Sim|Sim|Sim|Sim|
+|Instalação opcional em dispositivos do Portal da Empresa (instalação disponível)|Sim|Sim|Sim|Sim|
+|Instalar o atalho a um aplicativo na Web (clipe da Web)|Sim|Sim|Sim|Sim|
+|Aplicativos na empresa (linha de negócios)|Sim|Sim|Não|Não|
+|Aplicativos de uma loja|Sim|Sim|Sim|Sim|
+|Atualizar aplicativos|Sim|Sim|Sim|Sim|
+
+<sup>1</sup> Considere usar a [Proteção de Informações do Windows](windows-information-protection-configure.md) para proteger aplicativos em dispositivos que executam o Windows 10.
+
+<sup>2</sup>Aplica-se apenas a dispositivos gerenciados pelo Intune.
+
+## Como começar
+<a id="how-to-get-started" class="xliff"></a>
+
+Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho **Aplicativos Móveis**, que pode ser acessada da seguinte maneira:
+
+1. Entre no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3. Na folha **Intune**, escolha **Aplicativos móveis**.
+
+    ![A carga de trabalho de Aplicativos Móveis](./media/apps-workload.png)
+
+### Gerenciar
+<a id="manage" class="xliff"></a>
+- **Aplicativos** – esse nó é o local em que você adiciona, atribui e monitora a maioria de seus aplicativos.
+    - [Adicionar aplicativos](apps-add.md)
+    - [Atribuir aplicativos](apps-deploy.md)
+    - [Monitorar aplicativos](apps-monitor.md)
+- **Políticas de configuração de aplicativo** – as políticas de configuração de aplicativo permitem que você forneça as configurações que podem ser necessárias quando um usuário executa um aplicativo.
+    - [Políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md)
+    - [Políticas de configuração de aplicativo do Android](app-configuration-policies-use-android.md)
+- **Políticas de proteção de aplicativo** – permite associar as configurações de um aplicativo para ajudar a proteger os dados da empresa que ele usa. Por exemplo, você pode restringir os recursos de um aplicativo em se comunicar com outros aplicativos ou exigir que o usuário insira um PIN para acessar um aplicativo da empresa.
+    - [Políticas de proteção de aplicativo](app-protection-policies.md)
+- **Apagamento seletivo do aplicativo** – remover apenas os dados corporativos de um dispositivo de usuários que você selecionar.
+    - [Apagamento seletivo de aplicativos](apps-selective-wipe.md)
+- **Perfis de provisionamento de iOS** – os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração.
+    - [Perfis de provisionamento de aplicativo iOS](app-provisioning-profile-ios.md)
+
+### Monitor
+<a id="monitor" class="xliff"></a>
+- **Aplicativos Licenciados** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos.
+    - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
+- **Aplicativos descobertos** – Mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.
+- **Status de instalação do aplicativo** – Mostra o status de uma atribuição de aplicativo que você criou.
+- **Status de proteção do aplicativo** – mostra o status de uma política de proteção de aplicativo para um usuário selecionado.
+
+Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)
+
+### Setup
+>>>>>>> live
 <a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->

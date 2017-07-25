@@ -20,7 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="83b0b-103">Registro em massa para dispositivos Windows</span><span class="sxs-lookup"><span data-stu-id="83b0b-103">Bulk enrollment for Windows devices</span></span>
+=======
+# Registro em massa para dispositivos Windows
+>>>>>>> live
 <a id="bulk-enrollment-for-windows-devices" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -29,7 +33,11 @@ ms.lasthandoff: 07/01/2017
 
 <span data-ttu-id="83b0b-108">Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas do Intune atribuídas e os aplicativos necessários.</span><span class="sxs-lookup"><span data-stu-id="83b0b-108">Azure AD users are standard users on these devices and receive assigned Intune policies and required apps.</span></span> <span data-ttu-id="83b0b-109">Não há suporte no momento para cenários de autoatendimento e de Portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="83b0b-109">Self-service and Company Portal scenarios are not supported at this time.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="83b0b-110">Pré-requisitos para registro em massa de dispositivos Windows</span><span class="sxs-lookup"><span data-stu-id="83b0b-110">Prerequisites for Windows devices bulk enrollment</span></span>
+=======
+## Pré-requisitos para registro em massa de dispositivos Windows
+>>>>>>> live
 <a id="prerequisites-for-windows-devices-bulk-enrollment" class="xliff"></a>
 
 <span data-ttu-id="83b0b-111">O registro em massa para dispositivos Windows exige o seguinte:</span><span class="sxs-lookup"><span data-stu-id="83b0b-111">Bulk enrollment for Window devices requires the following:</span></span>
@@ -37,7 +45,11 @@ ms.lasthandoff: 07/01/2017
 - <span data-ttu-id="83b0b-112">Dispositivos com Atualização do Windows 10 para Criadores ou posteriores</span><span class="sxs-lookup"><span data-stu-id="83b0b-112">Devices running Windows 10 Creator update or later</span></span>
 - [<span data-ttu-id="83b0b-113">Registro automático do Windows</span><span class="sxs-lookup"><span data-stu-id="83b0b-113">Windows automatic enrollment</span></span>](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 
+<<<<<<< HEAD
 ## <span data-ttu-id="83b0b-114">Criar um pacote de provisionamento</span><span class="sxs-lookup"><span data-stu-id="83b0b-114">Create a provisioning package</span></span>
+=======
+## Criar um pacote de provisionamento
+>>>>>>> live
 <a id="create-a-provisioning-package" class="xliff"></a>
 
 1. <span data-ttu-id="83b0b-115">Baixe o [WCD (Windows Configuration Designer)](https://www.microsoft.com/store/apps/9nblggh4tx22) da Windows Store.</span><span class="sxs-lookup"><span data-stu-id="83b0b-115">Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Windows Store.</span></span>
@@ -51,6 +63,7 @@ ms.lasthandoff: 07/01/2017
   - <span data-ttu-id="83b0b-121">**Pasta do projeto** - onde seu novo projeto será salvo</span><span class="sxs-lookup"><span data-stu-id="83b0b-121">**Project folder** - Where your project will be saved</span></span>
   - <span data-ttu-id="83b0b-122">**Descrição** - uma descrição opcional do projeto ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-name.png)</span><span class="sxs-lookup"><span data-stu-id="83b0b-122">**Description** - An optional description of the project ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)</span></span>
 
+<<<<<<< HEAD
 4.  <span data-ttu-id="83b0b-123">Insira um nome exclusivo para seus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="83b0b-123">Enter a unique name for your devices.</span></span> <span data-ttu-id="83b0b-124">Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto aleatório de caracteres.</span><span class="sxs-lookup"><span data-stu-id="83b0b-124">Names can include a serial number (%%SERIAL%%) or a random set of characters.</span></span> <span data-ttu-id="83b0b-125">Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.</span><span class="sxs-lookup"><span data-stu-id="83b0b-125">Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.</span></span>
 <span data-ttu-id="83b0b-126">![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)</span><span class="sxs-lookup"><span data-stu-id="83b0b-126">![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-device.png)</span></span>
 
@@ -59,18 +72,36 @@ ms.lasthandoff: 07/01/2017
 
 6.  <span data-ttu-id="83b0b-130">Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa** .</span><span class="sxs-lookup"><span data-stu-id="83b0b-130">Select **Enroll in Azure AD**, enter a **Bulk Token Expiry** date, and then select **Get Bulk Token**.</span></span>
 <span data-ttu-id="83b0b-131">![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-account.png)</span><span class="sxs-lookup"><span data-stu-id="83b0b-131">![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-account.png)</span></span>
+=======
+4.  Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
+![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
+
+5.  Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se isso não estiver configurado, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
+![Captura de tela da habilitação de Wi-Fi, incluindo as opções de SSID da Rede e o Tipo da rede, no aplicativo Windows Configuration Designer](media/bulk-enroll-network.png)
+
+6.  Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa** .
+![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-account.png)
+>>>>>>> live
 
 7. <span data-ttu-id="83b0b-132">Forneça suas credenciais do Azure AD para obter um token em massa.</span><span class="sxs-lookup"><span data-stu-id="83b0b-132">Provide your Azure AD credentials to get a bulk token.</span></span>
 <span data-ttu-id="83b0b-133">![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-cred.png)</span><span class="sxs-lookup"><span data-stu-id="83b0b-133">![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-cred.png)</span></span>
 
+<<<<<<< HEAD
 8.  <span data-ttu-id="83b0b-134">Clique em **Avançar** quando o **Token em Massa** for obtido com êxito.</span><span class="sxs-lookup"><span data-stu-id="83b0b-134">Click **Next** when **Bulk Token** is fetched successfully.</span></span>
+=======
+8.  Clique em **Avançar** quando o **Token em Massa** for obtido com êxito.
+>>>>>>> live
 
 9. <span data-ttu-id="83b0b-135">Como opção, você pode **Adicionar aplicativos** e **Adicionar certificados**.</span><span class="sxs-lookup"><span data-stu-id="83b0b-135">Optionally, you can **Add applications** and **Add certificates**.</span></span> <span data-ttu-id="83b0b-136">Esses aplicativos e certificados são provisionados no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="83b0b-136">These apps and certificates are provisioned on the device.</span></span>
 
 10. <span data-ttu-id="83b0b-137">Como opção, você pode proteger com senha seu pacote de provisionamento.</span><span class="sxs-lookup"><span data-stu-id="83b0b-137">Optionally, you can password protect your provisioning package.</span></span>  <span data-ttu-id="83b0b-138">Clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="83b0b-138">Click **Create**.</span></span>
 <span data-ttu-id="83b0b-139">![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-create.png)</span><span class="sxs-lookup"><span data-stu-id="83b0b-139">![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-create.png)</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="83b0b-140">Provisionar dispositivos</span><span class="sxs-lookup"><span data-stu-id="83b0b-140">Provision devices</span></span>
+=======
+## Provisionar dispositivos
+>>>>>>> live
 <a id="provision-devices" class="xliff"></a>
 
 1. <span data-ttu-id="83b0b-141">Acesse o pacote de provisionamento no local especificado, na **Pasta do projeto** especificada no aplicativo.</span><span class="sxs-lookup"><span data-stu-id="83b0b-141">Access the provisioning package in the location specified in **Project folder** specified in the app.</span></span>
@@ -86,6 +117,7 @@ ms.lasthandoff: 07/01/2017
 
 4. <span data-ttu-id="83b0b-149">Quando o dispositivo for reiniciado, ele se conectará ao Azure Active Directory e registrará no Microsoft Intune.</span><span class="sxs-lookup"><span data-stu-id="83b0b-149">When the device restarts, it connects to the Azure Active Directory and enrolls in Microsoft Intune.</span></span>
 
+<<<<<<< HEAD
 ## <span data-ttu-id="83b0b-150">Solução de problemas de registro em massa do Windows</span><span class="sxs-lookup"><span data-stu-id="83b0b-150">Troubleshooting Windows bulk enrollment</span></span>
 <a id="troubleshooting-windows-bulk-enrollment" class="xliff"></a>
 
@@ -103,3 +135,22 @@ ms.lasthandoff: 07/01/2017
 ### <span data-ttu-id="83b0b-161">Acesso condicional</span><span class="sxs-lookup"><span data-stu-id="83b0b-161">Conditional access</span></span>
 <a id="conditional-access" class="xliff"></a>
 <span data-ttu-id="83b0b-162">O acesso condicional não está disponível para dispositivos Windows registrados em massa.</span><span class="sxs-lookup"><span data-stu-id="83b0b-162">Conditional access is not available for Windows devices enrolled using bulk enrollment.</span></span>
+=======
+## Solução de problemas de registro em massa do Windows
+<a id="troubleshooting-windows-bulk-enrollment" class="xliff"></a>
+
+### Problemas de provisionamento
+<a id="provisioning-issues" class="xliff"></a>
+O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de provisionamento podem exigir a redefinição de fábrica do dispositivo ou a recuperação do dispositivo a partir de uma imagem de inicialização. Estes exemplos descrevem alguns dos motivos para falhas de provisionamento:
+
+- Um pacote de provisionamento que tenta ingressar em um domínio do Active Directory ou locatário do Azure Active Directory que não cria uma conta local poderia tornar o dispositivo inacessível se o processo de ingresso no domínio falhar devido à falta de conectividade de rede.
+- Os scripts executados pelo pacote de provisionamento são executados no contexto do sistema e podem fazer alterações aleatórias no sistema de arquivos e configurações do dispositivo. Um script mal-intencionado ou incorreto pode colocar o dispositivo em um estado que só pode ser recuperado refazendo a imagem ou redefinindo o dispositivo para as configurações de fábrica.
+
+### Problemas com o Portal da Empresa e registro em massa
+<a id="problems-with-bulk-enrollment-and-company-portal" class="xliff"></a>
+Se um usuário tenta registrar um dispositivo previamente registrado em massa usando o Portal da Empresa, eles receberão um aviso de que seu dispositivo precisa de outras ações, seja instalação ou registro. O dispositivo é registrado, mas o registro não é reconhecido pelo aplicativo de Portal da Empresa ou site.
+
+### Acesso condicional
+<a id="conditional-access" class="xliff"></a>
+O acesso condicional não está disponível para dispositivos Windows registrados em massa.
+>>>>>>> live

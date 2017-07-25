@@ -21,13 +21,18 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="e4499-102">Introdução aos grupos</span><span class="sxs-lookup"><span data-stu-id="e4499-102">Get started with groups</span></span>
+=======
+# Introdução aos grupos
+>>>>>>> live
 <a id="get-started-with-groups" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 [](./media/generic-users-groups.png)
 
+<<<<<<< HEAD
 <span data-ttu-id="e4499-103">O Microsoft Intune usa o Azure AD (Azure Active Directory) para [gerenciar o acesso aos recursos da empresa](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).</span><span class="sxs-lookup"><span data-stu-id="e4499-103">Microsoft Intune uses Azure Active Directory (Azure AD) to [manage access to company resources](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).</span></span> <span data-ttu-id="e4499-104">Esse acesso é controlado usando as funções no diretório.</span><span class="sxs-lookup"><span data-stu-id="e4499-104">This access is controlled using roles in the directory.</span></span> <span data-ttu-id="e4499-105">O Intune gerencia então esse acesso para dispositivos móveis, que permite que os membros desse grupo acessem os recursos.</span><span class="sxs-lookup"><span data-stu-id="e4499-105">Intune then manages this access for mobile devices, which allows members of that group to access resources.</span></span>
 
 <span data-ttu-id="e4499-106">__Como eu crio um grupo?__</span><span class="sxs-lookup"><span data-stu-id="e4499-106">__How do I create a group?__</span></span>
@@ -41,3 +46,18 @@ ms.lasthandoff: 07/03/2017
 7. <span data-ttu-id="e4499-114">Clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="e4499-114">Click **Create**.</span></span>
 
 <span data-ttu-id="e4499-115">Se um grupo foi criado com êxito, ele deverá aparecer na lista de **Todos os grupos**.</span><span class="sxs-lookup"><span data-stu-id="e4499-115">If you've successfully created a group, it should appear in the list of **All groups**.</span></span> <span data-ttu-id="e4499-116">Se ele não aparecer, tente criar um outro grupo.</span><span class="sxs-lookup"><span data-stu-id="e4499-116">If it doesn't appear there, try to create another group.</span></span>
+=======
+O Microsoft Intune usa o Azure AD (Azure Active Directory) para [gerenciar o acesso aos recursos da empresa](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups). Esse acesso é controlado usando as funções no diretório. O Intune gerencia então esse acesso para dispositivos móveis, que permite que os membros desse grupo acessem os recursos.
+
+__Como eu crio um grupo?__
+
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Usando **Pesquisar recursos**, pesquise **Usuários e grupos**.
+3. Depois de abrir a folha **Usuários e grupos**, selecione **Todos os grupos**.
+4. Na folha **Usuários e grupos – Todos os Grupos**, selecione o comando **Novo grupo**.
+5. Na folha **Grupo**, adicione um **Nome** e uma **Descrição** para o grupo.
+6. Defina o **Tipo de associação** como **Atribuído**. Não **Habilite os recursos do Office** para o grupo de teste.
+7. Clique em **Criar**.
+
+Se um grupo foi criado com êxito, ele deverá aparecer na lista de **Todos os grupos**. Se ele não aparecer, tente criar um outro grupo.
+>>>>>>> live

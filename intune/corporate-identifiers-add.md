@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 title: <span data-ttu-id="de457-101">Adicionar identificadores IMEI ao Intune</span><span class="sxs-lookup"><span data-stu-id="de457-101">Add IMEI identifiers to Intune</span></span>
 titleSuffix: Intune on Azure
 description: "<span data-ttu-id=\"de457-102\">Saiba como adicionar identificadores corporativos (números IMEI) ao Microsoft Intune.</span><span class=\"sxs-lookup\"><span data-stu-id=\"de457-102\">Learn how to add corporate identifiers (IMEI numbers) to Microsoft Intune.</span></span> <span data-ttu-id=\"de457-103\">\"</span><span class=\"sxs-lookup\"><span data-stu-id=\"de457-103\">\"</span></span>"
+=======
+title: Adicionar identificadores IMEI ao Intune
+titleSuffix: Intune on Azure
+description: "Saiba como adicionar identificadores corporativos (números IMEI) ao Microsoft Intune. \""
+>>>>>>> live
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -21,6 +27,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
+<<<<<<< HEAD
 # <a name="add-corporate-identifiers"></a><span data-ttu-id="de457-104">Adicionar identificadores corporativos</span><span class="sxs-lookup"><span data-stu-id="de457-104">Add corporate identifiers</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -42,6 +49,28 @@ ms.lasthandoff: 07/12/2017
 |-|-|
 |<span data-ttu-id="de457-120">&lt;ID nº 1&gt;</span><span class="sxs-lookup"><span data-stu-id="de457-120">&lt;ID #1&gt;</span></span>|<span data-ttu-id="de457-121">&lt;Detalhes do dispositivo nº 1&gt;</span><span class="sxs-lookup"><span data-stu-id="de457-121">&lt;Device #1 Details&gt;</span></span>|
 |<span data-ttu-id="de457-122">&lt;ID nº 2&gt;</span><span class="sxs-lookup"><span data-stu-id="de457-122">&lt;ID #2&gt;</span></span>|<span data-ttu-id="de457-123">&lt;Detalhes do dispositivo nº 2&gt;</span><span class="sxs-lookup"><span data-stu-id="de457-123">&lt;Device #2 Details&gt;</span></span>|
+=======
+# <a name="add-corporate-identifiers"></a>Adicionar identificadores corporativos
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Como administrador do Intune, você pode criar e importar um arquivo de valores separados por vírgulas (.csv) que relaciona números IMEI (International Mobile Equipment Identifier) ou números de série. O Intune usa esses identificadores para especificar a propriedade dos dispositivos como corporativos. Você pode declarar apenas números IMEI em todas as plataformas com suporte. Somente é possível declarar o número de série para dispositivos iOS e Android. Cada número IMEI ou de série pode ter detalhes especificados na lista para fins administrativos.
+
+<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
+
+[Saiba como localizar o número de série de um dispositivo Apple](https://support.apple.com/HT204308).<br>
+[Saiba como localizar o número de série do dispositivo Android](https://support.google.com/store/answer/3333000).
+
+## <a name="add-corporate-identifiers"></a>Adicionar identificadores corporativos
+Para criar a lista, crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione os números de série ou IMEI à coluna esquerda e os detalhes à coluna direita. Apenas um tipo de ID, IMEI ou número de série, pode ser importado para o mesmo arquivo .csv. Os detalhes limitam-se a 128 caracteres e são exclusivamente para uso administrativo. O dispositivo não exibe detalhes. O limite atual é de 500 linhas por arquivo .csv.
+
+**Carregar um arquivo .csv contendo números de série** – crie uma lista de valores separados por vírgula (.csv) de duas colunas, sem cabeçalho, e limite a lista a 5.000 dispositivos ou 5 MB por arquivo .csv.
+
+|||
+|-|-|
+|&lt;ID nº 1&gt;|&lt;Detalhes do dispositivo nº 1&gt;|
+|&lt;ID nº 2&gt;|&lt;Detalhes do dispositivo nº 2&gt;|
+>>>>>>> live
 
 <span data-ttu-id="de457-124">Quando visualizado em um editor de texto, esse arquivo .csv aparece como:</span><span class="sxs-lookup"><span data-stu-id="de457-124">This .csv file when viewed in a text editor appears as:</span></span>
 
@@ -51,6 +80,7 @@ ms.lasthandoff: 07/12/2017
 ```
 
 > [!IMPORTANT]
+<<<<<<< HEAD
 > <span data-ttu-id="de457-125">Alguns dispositivos com Android possuem vários números IMEI.</span><span class="sxs-lookup"><span data-stu-id="de457-125">Some Android devices have multiple IMEI numbers.</span></span> <span data-ttu-id="de457-126">O Intune lê somente um número IMEI por dispositivo registrado.</span><span class="sxs-lookup"><span data-stu-id="de457-126">Intune only reads one IMEI number per enrolled device.</span></span> <span data-ttu-id="de457-127">Quando você importa um número IMEI, mas ele não está inventariado pelo Intune, o dispositivo é classificado como pessoal em vez de um dispositivo de propriedade da empresa.</span><span class="sxs-lookup"><span data-stu-id="de457-127">If you import an IMEI number but it is not the IMEI inventoried by Intune, the device is classified as a personal device instead of a company-owned device.</span></span> <span data-ttu-id="de457-128">Se importar vários números IMEI para um dispositivo, os números não inventariados exibirão **Desconhecido** como status do registro.</span><span class="sxs-lookup"><span data-stu-id="de457-128">If you import multiple IMEI numbers for a device, uninventoried numbers display **Unknown** for enrollment status.</span></span><br>
 ><span data-ttu-id="de457-129">Observe também: não há garantia de que os números de série para Android sejam exclusivos ou estejam presentes.</span><span class="sxs-lookup"><span data-stu-id="de457-129">Also note: Android Serial numbers are not guaranteed to be unique or present.</span></span> <span data-ttu-id="de457-130">Verifique junto ao fornecedor do dispositivo para saber se o número de série é uma ID de dispositivo confiável.</span><span class="sxs-lookup"><span data-stu-id="de457-130">Check with your device supplier to understand if serial number is a reliable device ID.</span></span>
 ><span data-ttu-id="de457-131">Os números de série informados pelo dispositivo no Intune podem não corresponder à ID exibida nos menus Configurações ou Sobre do dispositivo Android.</span><span class="sxs-lookup"><span data-stu-id="de457-131">Serial numbers reported by the device to Intune might not match the displayed ID in the Android Settings/About menus on the device.</span></span> <span data-ttu-id="de457-132">Verifique o tipo de número de série informado pelo fabricante do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="de457-132">Verify the type of serial number reported by the device manufacturer.</span></span>
@@ -71,8 +101,35 @@ ms.lasthandoff: 07/12/2017
 ## <a name="delete-corporate-identifiers"></a><span data-ttu-id="de457-144">Excluir identificadores corporativos</span><span class="sxs-lookup"><span data-stu-id="de457-144">Delete corporate identifiers</span></span>
 
 1. <span data-ttu-id="de457-145">No portal do Intune, escolha **Registro de dispositivo** > **Restrições de Registro**, escolha **Identificadores de Dispositivo Corporativo** e escolha **Excluir**.</span><span class="sxs-lookup"><span data-stu-id="de457-145">In the Intune portal, choose **Device enrollment** > **Enrollment Restrictions**, choose **Corporate Device Identifiers**, and choose **Delete**.</span></span>
+=======
+> Alguns dispositivos com Android possuem vários números IMEI. O Intune lê somente um número IMEI por dispositivo registrado. Quando você importa um número IMEI, mas ele não está inventariado pelo Intune, o dispositivo é classificado como pessoal em vez de um dispositivo de propriedade da empresa. Se importar vários números IMEI para um dispositivo, os números não inventariados exibirão **Desconhecido** como status do registro.<br>
+>Observe também: não há garantia de que os números de série para Android sejam exclusivos ou estejam presentes. Verifique junto ao fornecedor do dispositivo para saber se o número de série é uma ID de dispositivo confiável.
+>Os números de série informados pelo dispositivo no Intune podem não corresponder à ID exibida nos menus Configurações ou Sobre do dispositivo Android. Verifique o tipo de número de série informado pelo fabricante do dispositivo.
+
+
+**Para adicionar uma lista .csv de identificadores corporativos**
+
+1. No portal do Intune, escolha **Registro de dispositivo** > **Restrições de Registro**, escolha **Identificadores de Dispositivo Corporativo** e, em seguida, clique em **Adicionar**.
+
+ ![Captura de tela de espaço de trabalho do identificador de dispositivo corporativo com o botão Adicionar realçado.](./media/add-corp-id.png)
+
+2. Na folha **Adicionar identificadores**, especifique o tipo de identificador: **IMEI** ou **Número de série**. Você pode especificar se números importados anteriormente devem **substituir os detalhes para os identificadores existentes**.
+
+3. Clique no ícone de pasta e especifique o caminho para a lista que quer importar. Navegue para o arquivo .csv e selecione **Adicionar**. Clique em **Atualizar** para ver os novos identificadores de dispositivo.
+
+Os dispositivos importados não são necessariamente registrados. Os dispositivos podem apresentar o estado de **Registrado** ou **Não contatado**. **Não contatado** significa que o dispositivo nunca se comunicou com o serviço do Intune.
+
+## <a name="delete-corporate-identifiers"></a>Excluir identificadores corporativos
+
+1. No portal do Intune, escolha **Registro de dispositivo** > **Restrições de Registro**, escolha **Identificadores de Dispositivo Corporativo** e escolha **Excluir**.
+>>>>>>> live
 
 3. <span data-ttu-id="de457-146">Na folha **Excluir Identificadores**, navegue para o arquivo .csv de IDs de dispositivo para excluir e, em seguida, clique em **Excluir**.</span><span class="sxs-lookup"><span data-stu-id="de457-146">In the **Delete Identifiers** blade, brows to the .csv file of device IDs to delete, and then click **Delete**.</span></span>
 
+<<<<<<< HEAD
 ## <a name="imei-specifications"></a><span data-ttu-id="de457-147">Especificações do IMEI</span><span class="sxs-lookup"><span data-stu-id="de457-147">IMEI specifications</span></span>
 <span data-ttu-id="de457-148">Para obter especificações detalhadas sobre Identificadores de equipamentos móveis internacionais, veja [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).</span><span class="sxs-lookup"><span data-stu-id="de457-148">For detailed specifications about International Mobile Equipment Identifiers, see [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).</span></span>
+=======
+## <a name="imei-specifications"></a>Especificações do IMEI
+Para obter especificações detalhadas sobre Identificadores de equipamentos móveis internacionais, veja [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
+>>>>>>> live

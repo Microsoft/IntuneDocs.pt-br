@@ -25,7 +25,14 @@ ms.lasthandoff: 07/12/2017
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
 <span data-ttu-id="cc8d9-104">Use as informações neste tópico para ajudá-lo a adicionar aplicativos da linha de negócios do iOS ao Intune.</span><span class="sxs-lookup"><span data-stu-id="cc8d9-104">Use the information in this topic to help you add iOS line-of-business apps to Intune.</span></span>
+=======
+Use as informações neste tópico para ajudá-lo a adicionar aplicativos da linha de negócios do iOS ao Intune.
+
+>[!NOTE]
+>Embora os usuários de dispositivos iOS possam remover alguns dos aplicativos iOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários finais excluírem esses aplicativos, eles deverão ir para a loja de aplicativos e reinstalá-los manualmente.
+>>>>>>> live
 
 >[!NOTE]
 ><span data-ttu-id="cc8d9-105">Embora os usuários de dispositivos iOS possam remover alguns dos aplicativos iOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos.</span><span class="sxs-lookup"><span data-stu-id="cc8d9-105">While users of iOS devices can remove some of the built-in iOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps.</span></span> <span data-ttu-id="cc8d9-106">Se os usuários finais excluírem esses aplicativos, eles deverão ir para a loja de aplicativos e reinstalá-los manualmente.</span><span class="sxs-lookup"><span data-stu-id="cc8d9-106">If end users delete these apps, they must go to the app store, and manually re install them.</span></span>

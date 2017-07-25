@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: "<span data-ttu-id=\"3eb8d-101\">Configuração básica do Intune</span><span class=\"sxs-lookup\"><span data-stu-id=\"3eb8d-101\">Intune basic setup</span></span>"
 description: "<span data-ttu-id=\"3eb8d-102\">Este artigo fornece as etapas necessárias para configurar o Microsoft Intune.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3eb8d-102\">This article provides the necessary steps to set up Microsoft Intune.</span></span>"
+=======
+title: "Configuração básica do Intune"
+description: "Este artigo fornece as etapas necessárias para configurar o Microsoft Intune."
+>>>>>>> live
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -21,14 +26,19 @@ ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a><span data-ttu-id="3eb8d-103">Configuração básica</span><span class="sxs-lookup"><span data-stu-id="3eb8d-103">Basic setup</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="3eb8d-104">Depois de avaliar seu ambiente, é hora de configurar o Intune.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-104">After you assess your environment, it’s time to set up Intune.</span></span>
 
 ## <a name="external-dependencies-for-an-intune-deployment"></a><span data-ttu-id="3eb8d-105">Dependências externas para uma implantação do Intune</span><span class="sxs-lookup"><span data-stu-id="3eb8d-105">External dependencies for an Intune deployment</span></span>
+=======
+Depois de avaliar seu ambiente, é hora de configurar o Intune.
+>>>>>>> live
 
 ### <a name="identity"></a><span data-ttu-id="3eb8d-106">Identidade</span><span class="sxs-lookup"><span data-stu-id="3eb8d-106">Identity</span></span>
 
 <span data-ttu-id="3eb8d-107">O Intune exige o AAD (Azure Active Directory) como o provedor de identidade e agrupamento de usuário.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-107">Intune requires Azure Active Directory (AAD) as the identity and user grouping provider.</span></span> <span data-ttu-id="3eb8d-108">Saiba mais sobre:</span><span class="sxs-lookup"><span data-stu-id="3eb8d-108">Learn more about:</span></span>
 
+<<<<<<< HEAD
 -  [<span data-ttu-id="3eb8d-109">Requisitos de identidade</span><span class="sxs-lookup"><span data-stu-id="3eb8d-109">Identity requirements</span></span>](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
 -   [<span data-ttu-id="3eb8d-110">Requisitos de sincronização de diretórios</span><span class="sxs-lookup"><span data-stu-id="3eb8d-110">Directory synchronization requirements</span></span>](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
@@ -42,13 +52,34 @@ ms.lasthandoff: 07/12/2017
 <span data-ttu-id="3eb8d-114">Se sua organização já estiver usando o Office 365, o Intune deverá usar o mesmo ambiente do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-114">If your organization is already using Office 365, Intune must use the same Azure Active Directory environment.</span></span>
 
 ### <a name="pki-optional"></a><span data-ttu-id="3eb8d-115">PKI (opcional)</span><span class="sxs-lookup"><span data-stu-id="3eb8d-115">PKI (optional)</span></span>
+=======
+O Intune exige o AAD (Azure Active Directory) como o provedor de identidade e agrupamento de usuário. Saiba mais sobre:
+
+-  [Requisitos de identidade](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+
+-   [Requisitos de sincronização de diretórios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+
+-   [Requisitos de MFA (autenticação multifator)](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+
+-   [Planejar seus grupos de dispositivos e de usuários](users-add.md)
+
+-   [Como criar grupos de dispositivos e de usuários](groups-get-started.md)
+
+Se sua organização já estiver usando o Office 365, o Intune deverá usar o mesmo ambiente do Azure Active Directory.
+>>>>>>> live
 
 <span data-ttu-id="3eb8d-116">Se você estiver planejando usar a autenticação com base em certificados para perfis de VPN, Wi-Fi ou email com o Intune, verifique se você tem uma [infraestrutura de PKI em vigor](certificates-configure.md) com suporte, pronta para criar e implantar perfis de certificado.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-116">If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-mail profiles with Intune, you’ll need to make sure that you have a supported [PKI infrastructure in place](certificates-configure.md), ready to create and deploy certificate profiles.</span></span> <span data-ttu-id="3eb8d-117">Saiba mais sobre como configurar certificados no Intune:</span><span class="sxs-lookup"><span data-stu-id="3eb8d-117">Learn more about configuring certificates in Intune:</span></span>
 
+<<<<<<< HEAD
 -   [<span data-ttu-id="3eb8d-118">Como configurar a infraestrutura de certificado para SCEP</span><span class="sxs-lookup"><span data-stu-id="3eb8d-118">How to configure the certificate infrastructure for SCEP</span></span>](/intune/certificates-scep-configure)
 
 -   <span data-ttu-id="3eb8d-119">[Configurar a infraestrutura de certificado](/intune/certficates-pfx-configure).</span><span class="sxs-lookup"><span data-stu-id="3eb8d-119">[How to configure the certificate infrastructure for PFX](/intune/certficates-pfx-configure).</span></span>
 
+=======
+Se você estiver planejando usar a autenticação com base em certificados para perfis de VPN, Wi-Fi ou email com o Intune, verifique se você tem uma [infraestrutura de PKI em vigor](certificates-configure.md) com suporte, pronta para criar e implantar perfis de certificado. Saiba mais sobre como configurar certificados no Intune:
+
+-   [Como configurar a infraestrutura de certificado para SCEP](/intune/certificates-scep-configure)
+>>>>>>> live
 
 ## <a name="task-list-for-an-intune-setup"></a><span data-ttu-id="3eb8d-120">Lista de tarefas para uma configuração do Intune</span><span class="sxs-lookup"><span data-stu-id="3eb8d-120">Task list for an Intune setup</span></span>
 
@@ -72,13 +103,29 @@ ms.lasthandoff: 07/12/2017
 
 <span data-ttu-id="3eb8d-130">O Intune pode ser gerenciado por meio do portal do Azure ou do console do Branch Atual do Configuration Manager.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-130">Intune can be managed through the Azure portal or the Configuration Manager Current Branch console.</span></span> <span data-ttu-id="3eb8d-131">A menos que você precise integrar o Intune a uma implantação do Branch Atual do Configuration Manager, recomendamos que você gerencie o Intune do [Portal do Azure](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="3eb8d-131">Unless you need to integrate Intune with a Configuration Manager Current Branch deployment, we recommend that you manage Intune from the [Azure portal](https://portal.azure.com).</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="3eb8d-132">Defina sua autoridade de MDM como **Intune** para habilitar o Portal do Azure no Intune.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-132">Set your MDM authority to **Intune** to enable the Intune Azure portal.</span></span> <span data-ttu-id="3eb8d-133">O uso de uma autoridade de MDM diferente permite que o Intune transfira o gerenciamento do MDM para consoles de gerenciamento alternativos da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-133">Using a different MDM authority allows Intune to transfer MDM management to alternate Microsoft management consoles.</span></span> <span data-ttu-id="3eb8d-134">Esses casos são incomuns.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-134">These cases are uncommon.</span></span>
+=======
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir sua autoridade de MDM para o Intune
+
+O Intune pode ser gerenciado por meio do portal do Azure ou do console do Branch Atual do Configuration Manager. A menos que você precise integrar o Intune a uma implantação do Branch Atual do Configuration Manager, recomendamos que você gerencie o Intune do [Portal do Azure](https://portal.azure.com).
+
+Defina sua autoridade de MDM como **Intune** para habilitar o Portal do Azure no Intune. O uso de uma autoridade de MDM diferente permite que o Intune transfira o gerenciamento do MDM para consoles de gerenciamento alternativos da Microsoft. Esses casos são incomuns.
+>>>>>>> live
 
 > [!IMPORTANT]
 > <span data-ttu-id="3eb8d-135">Se você estiver transferindo seu gerenciamento de dispositivos móvel para o Intune pela primeira vez, defina a autoridade de MDM como Intune.</span><span class="sxs-lookup"><span data-stu-id="3eb8d-135">If you are transferring your mobile device management to Intune for the first time, you should set the MDM authority to Intune.</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="3eb8d-136">Saiba [como definir a autoridade de gerenciamento móvel](mdm-authority-set.md).</span><span class="sxs-lookup"><span data-stu-id="3eb8d-136">Learn [how to set the mobile management authority](mdm-authority-set.md).</span></span>
+=======
+Saiba [como definir a autoridade de gerenciamento móvel](mdm-authority-set.md).
+>>>>>>> live
 
 ## <a name="next-step"></a><span data-ttu-id="3eb8d-137">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="3eb8d-137">Next step</span></span>
 
+<<<<<<< HEAD
 <span data-ttu-id="3eb8d-138">Configure [políticas de gerenciamento de dispositivos e aplicativos](migration-guide-configure-policies.md).</span><span class="sxs-lookup"><span data-stu-id="3eb8d-138">Configure [device and app management policies](migration-guide-configure-policies.md).</span></span>
+=======
+Configure [políticas de gerenciamento de dispositivos e aplicativos](migration-guide-configure-policies.md).
+>>>>>>> live

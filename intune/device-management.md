@@ -20,12 +20,17 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="f817a-103">O que é o gerenciamento de dispositivo do Microsoft Intune?</span><span class="sxs-lookup"><span data-stu-id="f817a-103">What is Microsoft Intune device management?</span></span>
+=======
+# O que é o gerenciamento de dispositivo do Microsoft Intune?
+>>>>>>> live
 <a id="what-is-microsoft-intune-device-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
 <span data-ttu-id="f817a-104">A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenciados e permite que você execute tarefas remotas neles.</span><span class="sxs-lookup"><span data-stu-id="f817a-104">The **Devices** workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices.</span></span> <span data-ttu-id="f817a-105">Para acessar a carga de trabalho:</span><span class="sxs-lookup"><span data-stu-id="f817a-105">To access the workload:</span></span>
 
 1. <span data-ttu-id="f817a-106">Entre no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="f817a-106">Sign into the Azure portal.</span></span>
@@ -77,3 +82,56 @@ ms.lasthandoff: 07/06/2017
 
 - <span data-ttu-id="f817a-216">Escolha **Ações do Dispositivo** para ver o status das ações executadas nos dispositivos gerenciados.</span><span class="sxs-lookup"><span data-stu-id="f817a-216">Choose **Device Actions** to see the status of actions taken on devices you manage.</span></span> 
 <span data-ttu-id="f817a-217">![Monitorar ações do dispositivo](./media/monitor-device-actions.png)</span><span class="sxs-lookup"><span data-stu-id="f817a-217">![Monitor device actions](./media/monitor-device-actions.png)</span></span>
+=======
+A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenciados e permite que você execute tarefas remotas neles. Para acessar a carga de trabalho:
+
+1. Entre no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3. Na folha **Intune**, escolha **Dispositivos**.
+
+Agora é possível realizar as seguintes ações:
+
+- [Exibir inventário de dispositivo](device-inventory.md)
+- Executar ações remotas de dispositivo:
+    - [Remover os dados da empresa](device-company-data-remove.md) 
+    - [Redefinição de fábrica](device-factory-reset.md)
+    - [Bloqueio remoto](device-remote-lock.md)
+    - [Redefinir senha](device-passcode-reset.md)
+    - [Bypass de Bloqueio de Ativação](device-activation-lock-bypass.md)
+    - [Começar do zero](device-fresh-start.md)
+    - [Modo perdido](device-lost-mode.md)
+    - [Localizar dispositivo](device-locate.md)
+    - [Reiniciar](device-restart.md)
+    - [Redefinir o PIN do Windows 10](device-windows-pin-reset.md)
+    - [Controle remoto para Android](device-profile-android-teamviewer.md)
+
+
+## Suporte para cada ação de dispositivo
+<a id="support-for-each-device-action" class="xliff"></a>
+
+Use a tabela a seguir para entender as plataformas de dispositivo com suporte em cada ação.
+
+|||||||
+|-|-|-|-|-|-|
+|Ação do dispositivo|Windows|Windows Phone|iOS|macOS|Android|
+|**Remover os dados da empresa**|Sim|Sim|Sim|Sim|Sim|
+|**Redefinição de fábrica**|Windows 8.1 e posterior (dispositivos não gerenciados por EAS)|Sim|Sim|Não|Não há suporte para o Android for Work|
+|**Excluir**|Sim|Sim|Sim|Sim|Sim|
+|**Bloqueio remoto**|Não|Windows Phone 8.1 e posterior|Sim|Não|Sim|
+|**Redefinir senha**|Não|Windows Phone 8.1 para atualização do Windows 10 para Criadores não ingressado no Azure AD, Atualização do Windows 10 para Criadores e posterior – todos|Sim|Não|Anteriores ao Android 7, sem suporte para o Android for Work|
+|**Nova senha** (para dispositivos Windows 10)|Não|Atualização do Windows 10 para Criadores e posterior (ingressado no Azure AD)|Não|Não|Não há suporte para o Android for Work|
+|**Bypass de Bloqueio de Ativação**|Não|Não|Somente dispositivos corporativos|Não|Não|
+|**Modo perdido**|Não|Não|iOS 9.3 e posterior, supervisionado e corporativo|Não|Não|
+|**Localizar dispositivo**|Não|Não|Modo perdido do iOS 9.3 e posterior, supervisionado e corporativo|Não|Não|
+|**Fazer logoff do usuário atual**|Não|Não|iOS 9.3 e posterior (somente dispositivos iPad compartilhados)|Não|Não|
+|**Reiniciar**|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|Não|Não|Não|
+|**Começar do zero**|Atualização do Windows 10 para Criadores e posterior|Não|Não|Não|Não|
+|**Nova sessão de Assistência Remota**|Não|Não|Não|Não|Sim|
+|**Remover usuário**|Não|Não|iOS 9.3 e posterior (somente dispositivos iPad compartilhados)|Não|Não|
+
+## Próximas etapas
+<a id="next-steps" class="xliff"></a>
+
+- Escolha **Ações do Dispositivo** para ver o status das ações executadas nos dispositivos gerenciados. 
+![Monitorar ações do dispositivo](./media/monitor-device-actions.png)
+>>>>>>> live

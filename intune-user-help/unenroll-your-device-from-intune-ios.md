@@ -22,7 +22,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/13/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="5a245-103">Cancelar o registro do dispositivo iOS do Intune</span><span class="sxs-lookup"><span data-stu-id="5a245-103">Unenroll your iOS device from Intune</span></span>
+=======
+# Cancelar o registro do dispositivo iOS do Intune
+>>>>>>> live
 <a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
 
 <span data-ttu-id="5a245-104">Quando você cancelar o registro do seu dispositivo iOS no Intune, seu dispositivo não poderá mais acessar recursos da empresa e não será mais gerenciado pelo Intune.</span><span class="sxs-lookup"><span data-stu-id="5a245-104">When you unenroll your iOS device from Intune, your device will no longer be able to access company resources and will no longer be managed by Intune.</span></span>

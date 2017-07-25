@@ -40,6 +40,7 @@ ms.lasthandoff: 07/12/2017
 
     <span data-ttu-id="fc34e-133">O estado de concessão das permissões pode ser definido de forma mais detalhada para aplicativos específicos, com a definição de uma política de Configuração de Aplicativo para um aplicativo individual (em **Aplicativos Móveis** > **Políticas de configuração de aplicativo**).</span><span class="sxs-lookup"><span data-stu-id="fc34e-133">The grant state for permissions can be further defined for specific apps by defining an App Configuration policy for an individual app (under **Mobile Apps** > **App configuration policies**).</span></span>
 
+<<<<<<< HEAD
 ### <a name="work-profile-password"></a><span data-ttu-id="fc34e-134">Senha do perfil de trabalho</span><span class="sxs-lookup"><span data-stu-id="fc34e-134">Work profile password</span></span>
 - <span data-ttu-id="fc34e-135">**Exigir Senha de Perfil de Trabalho** – (Android 7.0 e posterior com o perfil de trabalho habilitado) Defina uma política de senha que se aplica apenas aos aplicativos no perfil de trabalho.</span><span class="sxs-lookup"><span data-stu-id="fc34e-135">**Require Work Profile Password** - (Android 7.0 and above with work profile enabled) Define a passcode policy that applies just to the apps in the work profile.</span></span> <span data-ttu-id="fc34e-136">Por padrão, o usuário final tem a opção de usar os dois PINs definidos separadamente ou optar por combinar os dois PINs definidos no mais forte dos dois.</span><span class="sxs-lookup"><span data-stu-id="fc34e-136">By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the stronger of the two.</span></span>
 - <span data-ttu-id="fc34e-137">**Tamanho mínimo da senha** – insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**16**)</span><span class="sxs-lookup"><span data-stu-id="fc34e-137">**Minimum password length** - Enter the minimum number of characters the user's password must contain (from **4**-**16**)</span></span>
@@ -58,9 +59,30 @@ ms.lasthandoff: 07/12/2017
 - <span data-ttu-id="fc34e-152">**Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).</span><span class="sxs-lookup"><span data-stu-id="fc34e-152">**Prevent reuse of previous passwords** - Enter the number of new passwords that must have been used before an old one can be reused (from **1**-**24**).</span></span>
 - <span data-ttu-id="fc34e-153">**Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.</span><span class="sxs-lookup"><span data-stu-id="fc34e-153">**Fingerprint unlock** - Blocks an end user from using the device fingerprint scanner to unlock it.</span></span>
 - <span data-ttu-id="fc34e-154">**Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis.</span><span class="sxs-lookup"><span data-stu-id="fc34e-154">**Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible devices.</span></span> <span data-ttu-id="fc34e-155">Essa funcionalidade do telefone, às vezes conhecida como agente de confiança, permite desabilitar ou ignorar a senha do perfil de trabalho se o dispositivo está em uma localização confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está próximo a uma marcação NFC). Use essa configuração para impedir que os usuários configurem o Smart Lock.</span><span class="sxs-lookup"><span data-stu-id="fc34e-155">This phone capability, sometimes known as a trust agent, lets you disable or bypass the work profile password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag) You can use this setting to prevent users from configuring Smart Lock.</span></span>
+=======
+### <a name="work-profile-password"></a>Senha do perfil de trabalho
+- **Exigir Senha de Perfil de Trabalho** – (Android 7.0 e posterior com o perfil de trabalho habilitado) Defina uma política de senha que se aplica apenas aos aplicativos no perfil de trabalho. Por padrão, o usuário final tem a opção de usar os dois PINs definidos separadamente ou optar por combinar os dois PINs definidos no mais forte dos dois.
+- **Tamanho mínimo da senha** – insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**16**)
+- **Máximo de minutos de inatividade até a tela ser bloqueada** – selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
+- **Número de falhas de entrada antes de apagar o dispositivo** – insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
+- **Expiração da senha (dias)** – insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
+- **Tipo de senha necessária** - selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
+    - **Padrão do dispositivo**
+    - **Biométrico de segurança baixa**
+    - **Necessária**
+    - **Pelo menos, numérico**
+    - **Numérico complexo** - (números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos)
+    - **Pelo menos, alfabético**
+    - **Pelo menos, alfanumérico**
+    - **Pelo menos alfanumérico com símbolos**
+- **Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
+- **Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.
+- **Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis. Essa funcionalidade do telefone, às vezes conhecida como agente de confiança, permite desabilitar ou ignorar a senha do perfil de trabalho se o dispositivo está em uma localização confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está próximo a uma marcação NFC). Use essa configuração para impedir que os usuários configurem o Smart Lock.
+>>>>>>> live
 
 ## <a name="password"></a><span data-ttu-id="fc34e-156">Senha</span><span class="sxs-lookup"><span data-stu-id="fc34e-156">Password</span></span>
 
+<<<<<<< HEAD
 - <span data-ttu-id="fc34e-157">**Tamanho mínimo da senha** - insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**14**)</span><span class="sxs-lookup"><span data-stu-id="fc34e-157">**Minimum password length** - Enter the minimum number of characters the users password must contain (from **4**-**14**)</span></span>
 - <span data-ttu-id="fc34e-158">**Máximo de minutos de inatividade até a tela ser bloqueada** - selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="fc34e-158">**Maximum minutes of inactivity until screen locks** - Select the amount of time before an inactive device automatically locks.</span></span>
 - <span data-ttu-id="fc34e-159">**Número de falhas de entrada antes de apagar o dispositivo** – Insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados.</span><span class="sxs-lookup"><span data-stu-id="fc34e-159">**Number of sign-in failures before wiping device** - Enter the number of times an incorrect password can be entered before all data is wiped from the device.</span></span>
@@ -81,3 +103,25 @@ ms.lasthandoff: 07/12/2017
 ## <a name="next-steps"></a><span data-ttu-id="fc34e-175">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="fc34e-175">Next steps</span></span>
 
 <span data-ttu-id="fc34e-176">Use as informações no tópico [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.</span><span class="sxs-lookup"><span data-stu-id="fc34e-176">Use the information in the topic, [How to configure device restriction settings](device-restrictions-configure.md) to save, and assign the profile to users and devices.</span></span>
+=======
+- **Tamanho mínimo da senha** - insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**14**)
+- **Máximo de minutos de inatividade até a tela ser bloqueada** - selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente.
+- **Número de falhas de entrada antes de apagar o dispositivo** – Insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados.
+- **Expiração da senha (dias)** – insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
+- **Tipo de senha necessária** - selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
+    - **Padrão do dispositivo**
+    - **Biométrico de segurança baixa**
+    - **Necessária**
+    - **Pelo menos, numérico**
+    - **Numérico complexo** - (números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos)
+    - **Pelo menos, alfabético**
+    - **Pelo menos, alfanumérico**
+    - **Pelo menos alfanumérico com símbolos**
+- **Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
+- **Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.
+- **Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis. Essa capacidade do telefone, às vezes conhecida como agente de confiança, permitirá desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está perto de uma marca NFC). Use essa configuração para impedir que os usuários configurem o Smart Lock.
+
+## <a name="next-steps"></a>Próximas etapas
+
+Use as informações no tópico [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.
+>>>>>>> live

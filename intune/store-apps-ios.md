@@ -25,6 +25,16 @@ ms.lasthandoff: 07/12/2017
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+<<<<<<< HEAD
+=======
+
+Use as informações neste tópico para ajudá-lo a adicionar aplicativos da iOS store ao Intune.
+
+>[!NOTE]
+>Embora os usuários de dispositivos iOS possam remover alguns dos aplicativos iOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários finais excluírem esses aplicativos, eles deverão ir para a loja de aplicativos e reinstalá-los manualmente.
+
+## <a name="before-you-start"></a>Antes de começar
+>>>>>>> live
 
 <span data-ttu-id="e8469-104">Use as informações neste tópico para ajudá-lo a adicionar aplicativos da iOS store ao Intune.</span><span class="sxs-lookup"><span data-stu-id="e8469-104">Use the information in this topic to help you add iOS store apps to Intune.</span></span>
 

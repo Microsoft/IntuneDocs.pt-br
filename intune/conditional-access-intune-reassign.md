@@ -21,6 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="7a20e-103">Reatribuir políticas de acesso condicional no Portal Clássico do Intune para o novo Portal do Azure</span><span class="sxs-lookup"><span data-stu-id="7a20e-103">Reassign conditional access policies from Intune classic portal to the new Azure portal</span></span>
 <a id="reassign-conditional-access-policies-from-intune-classic-portal-to-the-new-azure-portal" class="xliff"></a>
 
@@ -83,10 +84,75 @@ ms.lasthandoff: 07/06/2017
 3. <span data-ttu-id="7a20e-139">Forneça um nome para a política.</span><span class="sxs-lookup"><span data-stu-id="7a20e-139">Provide a name for the policy.</span></span>
 
 4. <span data-ttu-id="7a20e-140">Escolha **Usuários e grupos** na seção **Atribuições** direcionada para a nova política de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="7a20e-140">Choose **Users and groups** under the **Assignments** section to target the new conditional access policy.</span></span>
+=======
+# Reatribuir políticas de acesso condicional no Portal Clássico do Intune para o novo Portal do Azure
+<a id="reassign-conditional-access-policies-from-intune-classic-portal-to-the-new-azure-portal" class="xliff"></a>
+
+A partir do novo Portal do Azure, o acesso condicional dará suporte para várias políticas por aplicativo juntamente com maior capacidade de personalização.
+
+## Antes de começar
+<a id="before-you-begin" class="xliff"></a>
+
+Se você estiver pronto para mover para o novo Portal do Azure, siga as etapas abaixo para reatribuir as políticas de acesso condicional criadas anteriormente no portal clássico do Intune:
+
+- Colete as políticas de acesso condicional criadas anteriormente no portal clássico do Intune para saber quais configurações você precisará reatribuir mais tarde.
+
+- Siga as etapas deste tópico para recriar essas políticas no novo Portal do Azure.
+
+- Desabilite as políticas condicionais no console clássico do Intune depois de verificar se as novas políticas estão funcionando conforme o esperado no novo Portal do Azure.
+<br /><br />
+    - **Antes de desabilitar** as políticas de acesso condicional no portal clássico do Intune, planeje como você moverá os usuários para a nova política. Há duas abordagens:
+<br /><br />
+        - **Usar o mesmo grupo de inclusão para aplicar as políticas criadas no novo Portal do Azure e criar um novo grupo de isenção para ser usado com as políticas aplicadas pelo portal clássico do Intune**.
+            - Mova gradualmente alguns usuários para o grupo de isolamento especificado no portal clássico.  Isso impede que as políticas direcionadas pelo portal clássico do Intune sejam aplicadas. As políticas criadas e direcionadas para o mesmo grupo de usuários no novo Portal do Azure são aplicadas além daquelas aplicadas no portal clássico do Intune. 
+<br /><br />
+        - **Crie um novo grupo para direcionar as políticas de acesso condicional no novo Portal do Azure**. Se você escolher essa abordagem, precisará fazer o seguinte:
+            - Remova gradualmente os usuários dos grupos de segurança que têm políticas de acesso condicional direcionadas para o portal clássico do Intune.
+            - Depois de confirmar que a nova política está funcionando para esses usuários, você poderá desabilitar a política no portal clássico do Intune. 
+<br /><br />
+- Se as configurações de política de acesso condicional forem configuradas para usar o EAS (Exchange Active Sync) no portal clássico do Intune, consulte as [instruções neste tópico](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) para **reatribuir as configurações de política de acesso condicional EAS no novo Portal do Azure**.
+
+### Verificar as políticas de acesso condicional com base em dispositivo no portal clássico do Intune
+<a id="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal" class="xliff"></a>
+
+1.  Acesse o [Portal Clássico do Intune](https://manage.microsoft.com) e entre com suas credenciais.
+
+2.  Escolha **Política** no menu à esquerda.
+
+3.  Escolha **Acesso condicional** e selecione o serviço de nuvem da Microsoft (Exchange Online, SharePoint Online, etc.) para o qual você criou uma política de acesso condicional.
+
+4.  Anote as configurações de acesso condicional e use essas notas como referência para criar as mesmas políticas de acesso condicional no novo Portal do Azure.
+
+### Políticas de acesso condicional baseado em aplicativo e dispositivo funcionando juntas
+<a id="app-and-device-based-conditional-access-policies-working-together" class="xliff"></a>
+
+A folha **Proteção de Aplicativo do Intune** no novo Portal do Azure permite que os administradores definam as regras condicionais baseado em aplicativo para que somente os aplicativos que dão suporte às políticas de proteção de aplicativo do Intune tenham permissão de acesso aos recursos corporativos. Você pode optar por sobrepor essas políticas de acesso condicional baseado em aplicativo usando políticas de acesso condicional baseado em dispositivo. Dependendo se você deseja combinar as políticas condicionais baseadas em aplicativo e em dispositivo (AND lógico) ou fornecer uma opção (OR lógico). Se seus requisitos de política de acesso condicional são:
+
+- Exigir dispositivo em conformidade **AND** usar o aplicativo aprovado.
+    - Você deve definir sua política de acesso condicional usando a [folha de acesso condicional do Azure AD](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e a [folha de Proteção de Aplicativo do Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+<br /><br />
+- Exigir dispositivo em conformidade **OR** usar o aplicativo aprovado.
+    - Você deve definir sua política de acesso condicional usando as folhas de [Portal Clássico do Intune](https://manage.microsoft.com) e [Proteção de Aplicativo do Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+
+> [!TIP] 
+> Este tópico fornece capturas de tela que comparam a experiência do usuário no portal clássico do Intune com o novo Portal do Azure.
+
+## Reatribuir as políticas de acesso condicional baseado em dispositivo do Intune
+<a id="to-re-assign-intune-device-based-conditional-access-policies" class="xliff"></a>
+
+1. Vá para [Acesso condicional no novo Portal do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e entre com suas credenciais.
+
+2. Escolha **Nova política**.
+
+3. Forneça um nome para a política.
+
+4. Escolha **Usuários e grupos** na seção **Atribuições** direcionada para a nova política de acesso condicional.
+>>>>>>> live
     
     ![Comparação da interface do usuário do grupo de usuários entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
+<<<<<<< HEAD
     > <span data-ttu-id="7a20e-142">Se todos os usuários forem selecionados no Portal Clássico do Intune, inclua Todos os Usuários.</span><span class="sxs-lookup"><span data-stu-id="7a20e-142">If you have all users selected in the Intune classic portal, include All users.</span></span> <span data-ttu-id="7a20e-143">O mesmo se aplica a grupos. Se você tiver grupos selecionados, será necessário escolher **selecionar usuários e grupos individuais** para incluir esses grupos.</span><span class="sxs-lookup"><span data-stu-id="7a20e-143">The same applies for groups, if you have groups selected, you need to choose **select individual users and groups** to include those groups.</span></span> <span data-ttu-id="7a20e-144">Além disso, se você tiver escolhido a opção **Isentar grupos** no Portal Clássico do Intune, será necessário excluir os grupos selecionados no novo Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="7a20e-144">Additionally, if you’ve have chosen the **Exempt groups** option in the Intune classic portal, you need to exclude those select groups in the new Azure portal.</span></span>
 
 5. <span data-ttu-id="7a20e-145">Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-145">After you chose your group, click **Select**, then **Done**.</span></span>
@@ -98,10 +164,24 @@ ms.lasthandoff: 07/06/2017
 8. <span data-ttu-id="7a20e-148">Escolha o aplicativo para o qual você deseja aplicar a nova política de acesso condicional e clique em **Selecionar**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-148">Choose the app you want to apply the new conditional access policy to, click **Select**.</span></span>
 
 9. <span data-ttu-id="7a20e-149">Clique em **Concluído**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-149">Click **Done**.</span></span>
+=======
+    > Se todos os usuários forem selecionados no Portal Clássico do Intune, inclua Todos os Usuários. O mesmo se aplica a grupos. Se você tiver grupos selecionados, será necessário escolher **selecionar usuários e grupos individuais** para incluir esses grupos. Além disso, se você tiver escolhido a opção **Isentar grupos** no Portal Clássico do Intune, será necessário excluir os grupos selecionados no novo Portal do Azure.
+
+5. Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.
+
+6. Escolha **Aplicativos de nuvem** na seção **Atribuições**.
+
+7. Na folha **Aplicativos de nuvem**, escolha **Selecionar aplicativos**.
+
+8. Escolha o aplicativo para o qual você deseja aplicar a nova política de acesso condicional e clique em **Selecionar**.
+
+9. Clique em **Concluído**.
+>>>>>>> live
 
     ![Comparação da interface do usuário do aplicativo de nuvem entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-3.png)
 
     > [!TIP] 
+<<<<<<< HEAD
     > <span data-ttu-id="7a20e-151">Se você tiver vários aplicativos com a mesma política, considere consolidá-las em uma única política no novo Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="7a20e-151">If you have multiple apps with the same policy, you can consider consolidating them into a single policy in the new Azure portal.</span></span>
 
 10. <span data-ttu-id="7a20e-152">Escolha **Condições** na seção **Atribuições**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-152">Choose **Conditions** under the **Assignments** section.</span></span>
@@ -109,10 +189,20 @@ ms.lasthandoff: 07/06/2017
 11. <span data-ttu-id="7a20e-153">Na folha **Condições**, escolha **Plataformas de Dispositivo** e escolha as plataformas de dispositivo aplicáveis.</span><span class="sxs-lookup"><span data-stu-id="7a20e-153">On the **Conditions** blade, choose **Device platforms**, then choose the applicable device platforms.</span></span>
 
 12. <span data-ttu-id="7a20e-154">Quando você terminar de escolher as plataformas de dispositivo, clique em **Concluído** duas vezes.</span><span class="sxs-lookup"><span data-stu-id="7a20e-154">Once you finished choosing the device platforms, click **Done** twice.</span></span>
+=======
+    > Se você tiver vários aplicativos com a mesma política, considere consolidá-las em uma única política no novo Portal do Azure.
+
+10. Escolha **Condições** na seção **Atribuições**.
+
+11. Na folha **Condições**, escolha **Plataformas de Dispositivo** e escolha as plataformas de dispositivo aplicáveis.
+
+12. Quando você terminar de escolher as plataformas de dispositivo, clique em **Concluído** duas vezes.
+>>>>>>> live
 
     ![Comparação da interface do usuário da plataforma de dispositivos entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-4.png)
 
     > [!TIP] 
+<<<<<<< HEAD
     > <span data-ttu-id="7a20e-156">Se você tiver escolhido plataformas individuais no portal clássico do Intune, escolha as plataformas individuais no novo Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="7a20e-156">If you have chosen individual platforms in the Intune classic portal, choose the individual platforms in the new Azure portal.</span></span>
 
     > [!NOTE] 
@@ -152,10 +242,52 @@ ms.lasthandoff: 07/06/2017
 3. <span data-ttu-id="7a20e-174">Forneça um nome para a política.</span><span class="sxs-lookup"><span data-stu-id="7a20e-174">Provide a name for the policy.</span></span>
 
 4. <span data-ttu-id="7a20e-175">Escolha **Usuários e grupos** na seção **Atribuições** direcionada para a nova política de acesso condicional.</span><span class="sxs-lookup"><span data-stu-id="7a20e-175">Choose **Users and groups** under the **Assignments** section to target the new conditional access policy.</span></span>
+=======
+    > Se você tiver escolhido plataformas individuais no portal clássico do Intune, escolha as plataformas individuais no novo Portal do Azure.
+
+    > [!NOTE] 
+    > Você pode especificar as opções de ingresso no domínio ou conformidade para o Windows posteriormente.
+
+13. Escolha **Condições** na seção **Atribuições**.
+
+14. Na folha **Condições**, escolha **Aplicativos cliente** e escolha o aplicativo cliente aplicável.
+
+15. Quando você terminar de escolher o aplicativo cliente, clique em **Concluído** duas vezes.
+
+    ![Comparação da interface do usuário de aplicativos cliente entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-6.png)
+
+16. Se você tiver escolhido as configurações do navegador no portal clássico do Intune, selecione ambos **Navegador** e **Aplicativos móveis e clientes de desktop** no novo Portal do Azure. Caso você não tenha escolhido as configurações do navegador no portal clássico do Intune, escolha apenas **Aplicativos móveis e clientes de área de trabalho**. 
+
+17. Escolha **Conceder** na seção **Controles de acesso**.
+
+18. Escolha **Exigir que o dispositivo esteja marcado como em conformidade** em **Conceder controles de acesso** e clique em **Selecionar**.
+
+19. Se você tiver uma política para exigir que os dispositivos sejam ingressados no Windows e também permitir dispositivos registrado no Intune e em conformidade com o Windows, escolha **Exigir dispositivo ingressado no domínio** e **Exigir que o dispositivo esteja marcado como em conformidade** junto com **Exigir um dos controles selecionados**.
+
+20. Se você não permitir que dispositivos registrados no Intune e em conformidade com o Windows, isente a política do Windows da política atual e crie um política separada com as **Plataformas de dispositivo** definido como **Windows**, inclua as outras condições conforme definido acima e escolha **Exigir dispositivo ingressado no domínio** em **Conceder controles de acesso**.
+
+21. Ative o botão de alternância **Habilitar política** na folha da política de acesso condicional **Novo** e clique em **Criar**.
+
+    ![Habilitar a comparação da interface do usuário da política de AC entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-11.png)
+
+## Reatribuir as políticas de acesso condicional baseado em dispositivo do Intune para clientes EAS
+<a id="to-reassign-intune-device-based-conditional-access-policies-for-eas-clients" class="xliff"></a>
+
+Se você tiver definido as configurações do EAS (Exchange Active Sync) como parte de uma política do Exchange Online no portal clássico do Intune, será necessário criar uma segunda política de acesso condicional no novo Portal do Azure.
+
+1. Vá para [Acesso condicional no novo Portal do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e entre com suas credenciais.
+
+2. Escolha **Nova política**.
+
+3. Forneça um nome para a política.
+
+4. Escolha **Usuários e grupos** na seção **Atribuições** direcionada para a nova política de acesso condicional.
+>>>>>>> live
 
     ![Comparação da interface do usuário do grupo de usuários entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
+<<<<<<< HEAD
     > <span data-ttu-id="7a20e-177">Se todos os usuários forem selecionados no Portal Clássico do Intune, inclua Todos os Usuários.</span><span class="sxs-lookup"><span data-stu-id="7a20e-177">If you have all users selected in the Intune classic portal, include All users.</span></span> <span data-ttu-id="7a20e-178">O mesmo se aplica a grupos. Se você tiver grupos selecionados, será necessário escolher **selecionar usuários e grupos individuais** para incluir esses grupos.</span><span class="sxs-lookup"><span data-stu-id="7a20e-178">The same applies for groups, If you have groups selected, you need to choose **select individual users and groups** to include those groups.</span></span> <span data-ttu-id="7a20e-179">Além disso, se você tiver escolhido a opção **Isentar grupos** no Portal Clássico do Intune, será necessário excluir os grupos selecionados no novo Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="7a20e-179">Additionally, if you’ve have chosen the **Exempt groups** option in the Intune classic portal, you need to exclude those select groups in the new Azure portal.</span></span>
 
 5. <span data-ttu-id="7a20e-180">Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-180">After you chose your group, click **Select**, then **Done**.</span></span>
@@ -163,10 +295,20 @@ ms.lasthandoff: 07/06/2017
 6. <span data-ttu-id="7a20e-181">Escolha **Aplicativos de nuvem** na seção **Atribuições**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-181">Choose **Cloud apps** under the **Assignments** section.</span></span>
 
 7. <span data-ttu-id="7a20e-182">Na folha **Aplicativos de nuvem**, clique em **Aplicativos selecionados**, escolha **Exchange Online**, clique em **Selecionar** e em **Concluído**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-182">On the **Cloud apps** blade, click **Selected apps**, choose **Exchange Online**, click **Select**, then click **Done**.</span></span>
+=======
+    > Se todos os usuários forem selecionados no Portal Clássico do Intune, inclua Todos os Usuários. O mesmo se aplica a grupos. Se você tiver grupos selecionados, será necessário escolher **selecionar usuários e grupos individuais** para incluir esses grupos. Além disso, se você tiver escolhido a opção **Isentar grupos** no Portal Clássico do Intune, será necessário excluir os grupos selecionados no novo Portal do Azure.
+
+5. Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.
+
+6. Escolha **Aplicativos de nuvem** na seção **Atribuições**.
+
+7. Na folha **Aplicativos de nuvem**, clique em **Aplicativos selecionados**, escolha **Exchange Online**, clique em **Selecionar** e em **Concluído**.
+>>>>>>> live
 
     ![Comparação da interface do usuário de aplicativos de nuvem entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
+<<<<<<< HEAD
     > <span data-ttu-id="7a20e-184">Políticas de acesso condicional para clientes EAS não podem incluir nenhum outro aplicativo de nuvem.</span><span class="sxs-lookup"><span data-stu-id="7a20e-184">Conditional Access policies for EAS clients cannot include any other cloud app.</span></span>
 
 8. <span data-ttu-id="7a20e-185">Na folha **Condições**, escolha **Aplicativos cliente** e escolha o aplicativo cliente aplicável.</span><span class="sxs-lookup"><span data-stu-id="7a20e-185">On the **Conditions** blade, choose **Client apps**, then choose the applicable client app.</span></span> <span data-ttu-id="7a20e-186">Se você tiver optado por bloquear os clientes sem suporte no Intune, use a opção **Aplicar política somente a plataformas com suporte**.</span><span class="sxs-lookup"><span data-stu-id="7a20e-186">If you have chosen to block clients that aren’t supported by Intune, use the **Apply policy only to supported platforms** option.</span></span>
@@ -213,3 +355,51 @@ ms.lasthandoff: 07/06/2017
 - [<span data-ttu-id="7a20e-206">Maneiras comuns de usar o acesso condicional com o Intune</span><span class="sxs-lookup"><span data-stu-id="7a20e-206">Common ways to use conditional access with Intune</span></span>](conditional-access-intune-common-ways-use.md)
 - [<span data-ttu-id="7a20e-207">Acesso condicional baseado no aplicativo com o Intune</span><span class="sxs-lookup"><span data-stu-id="7a20e-207">App-based conditional access with Intune</span></span>](app-based-conditional-access-intune.md)
 - [<span data-ttu-id="7a20e-208">Acesso condicional no Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="7a20e-208">Conditional access in Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+=======
+    > Políticas de acesso condicional para clientes EAS não podem incluir nenhum outro aplicativo de nuvem.
+
+8. Na folha **Condições**, escolha **Aplicativos cliente** e escolha o aplicativo cliente aplicável. Se você tiver optado por bloquear os clientes sem suporte no Intune, use a opção **Aplicar política somente a plataformas com suporte**.
+
+    ![Comparação da interface do usuário de aplicativos cliente entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-15.png)
+
+9. Quando você terminar de escolher o aplicativo cliente, clique em **Concluído** duas vezes.
+
+10. Escolha **Conceder** na seção **Controles de acesso**.
+
+11. Escolha **Exigir que o dispositivo esteja marcado como em conformidade** em **Conceder controles de acesso** e clique em **Selecionar**.
+
+    ![Comparação da interface do usuário de Conceder acesso entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-16.png)
+
+12. Ative o botão de alternância **Habilitar política** na folha da política de acesso condicional **Novo** e clique em **Criar**.
+
+    ![Habilitar a comparação da interface do usuário da política de AC entre o Intune clássico e o novo Portal do Azure](./media/reassign-ca-17.png)
+
+## Desabilitar as políticas de acesso condicional no Portal Clássico do Intune
+<a id="disable-conditional-access-policies-in-the-intune-classic-portal" class="xliff"></a>
+### Antes de começar
+<a id="before-you-start" class="xliff"></a>
+
+Depois que tiver reatribuído suas políticas de acesso condicional no novo Portal do Azure, é importante desabilitar gradualmente as políticas de acesso condicional criadas anteriormente no portal clássico do Intune. Além disso, pode ser necessário usar o mesmo grupo de segurança para aplicar as políticas de acesso condicional criadas no novo Portal do Azure
+
+- Consulte a seção [antes de começar](#before-you-begin) no início deste tópico antes de desabilitar as políticas de acesso condicional no portal clássico do Intune.
+
+### Desabilitar as políticas de acesso condicional
+<a id="to-disable-the-conditional-access-policies" class="xliff"></a>
+
+1.  Acesse o [Portal Clássico do Intune](https://manage.microsoft.com) e entre com suas credenciais.
+
+2.  Escolha **Política** no menu à esquerda.
+
+3.  Escolha **Acesso condicional** e selecione o serviço de nuvem da Microsoft (Exchange Online, SharePoint Online, etc.) para o qual você criou uma política de acesso condicional.
+
+4.  Desmarque a opção **Habilitar política de acesso condicional** e clique em **Salvar**.
+
+    ![Desabilitar as políticas de acesso condicional no Portal Clássico do Intune](./media/reassign-ca-18.png)
+
+## Consulte também
+<a id="see-also" class="xliff"></a>
+
+- [Maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md)
+- [Acesso condicional baseado no aplicativo com o Intune](app-based-conditional-access-intune.md)
+- [Acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+>>>>>>> live

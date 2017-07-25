@@ -20,7 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/13/2017
 ---
+<<<<<<< HEAD
 # <span data-ttu-id="527f1-104">O que é o Intune para Educação?</span><span class="sxs-lookup"><span data-stu-id="527f1-104">What is Intune for Education?</span></span>
+=======
+# O que é o Intune para Educação?
+>>>>>>> live
 <a id="what-is-intune-for-education" class="xliff"></a>
 
 <span data-ttu-id="527f1-105">O Intune para Educação foi projetado para permitir a produtividade de professores e alunos, mas mantendo os dados da escola protegidos.</span><span class="sxs-lookup"><span data-stu-id="527f1-105">Intune for Education is designed to enable your teachers and students to be productive while keeping school data protected.</span></span> <span data-ttu-id="527f1-106">O Intune é um serviço EMM (gerenciamento de mobilidade empresarial) baseado em nuvem e é o alicerce para o Intune para Educação.</span><span class="sxs-lookup"><span data-stu-id="527f1-106">Intune is a cloud-based enterprise mobility management (EMM) service that is the foundation for Intune for Education.</span></span>
@@ -39,8 +43,16 @@ ms.lasthandoff: 07/13/2017
 * <span data-ttu-id="527f1-115">Proteger as informações da empresa, ajudando a controlar a forma como seus usuários as acessam e compartilham.</span><span class="sxs-lookup"><span data-stu-id="527f1-115">Protect your organizational information by helping to control the way your users access and share it.</span></span>
 * <span data-ttu-id="527f1-116">Garantir que dispositivos e aplicativos sejam compatíveis com os requisitos de segurança.</span><span class="sxs-lookup"><span data-stu-id="527f1-116">Ensure devices and apps are compliant with security requirements.</span></span>
 
+<<<<<<< HEAD
 ### <span data-ttu-id="527f1-117">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="527f1-117">Next steps</span></span>
 <a id="next-steps" class="xliff"></a>
 * <span data-ttu-id="527f1-118">Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).</span><span class="sxs-lookup"><span data-stu-id="527f1-118">Get familiar with the product [with a 30-day trial of Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).</span></span>
 * <span data-ttu-id="527f1-119">Leia sobre a maneira mais rápida de [começar a usar o Intune para Educação](/intune-education/what-is-express-configuration).</span><span class="sxs-lookup"><span data-stu-id="527f1-119">Read about the quickest way to [start using Intune for Education](/intune-education/what-is-express-configuration).</span></span>
 * <span data-ttu-id="527f1-120">Aprofunde-se nas [funcionalidades e requisitos técnicos](/intune/supported-devices-browsers) do Intune.</span><span class="sxs-lookup"><span data-stu-id="527f1-120">Dive into the [technical requirements and capabilities](/intune/supported-devices-browsers) of Intune.</span></span>
+=======
+### Próximas etapas
+<a id="next-steps" class="xliff"></a>
+* Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
+* Leia sobre a maneira mais rápida de [começar a usar o Intune para Educação](/intune-education/what-is-express-configuration).
+* Aprofunde-se nas [funcionalidades e requisitos técnicos](/intune/supported-devices-browsers) do Intune.
+>>>>>>> live

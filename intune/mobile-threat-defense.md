@@ -49,6 +49,12 @@ ms.lasthandoff: 07/11/2017
 
 <span data-ttu-id="8dfc2-122">Saiba como proteger o acesso a recursos da empresa com base em riscos de dispositivo, rede e aplicativo com:</span><span class="sxs-lookup"><span data-stu-id="8dfc2-122">Learn how to protect access to company resource based on device, network, and application risk with:</span></span>
 
+<<<<<<< HEAD
 - [<span data-ttu-id="8dfc2-123">Lookout</span><span class="sxs-lookup"><span data-stu-id="8dfc2-123">Lookout</span></span>](lookout-mobile-threat-defense-connector.md)
 - [<span data-ttu-id="8dfc2-124">Skycure</span><span class="sxs-lookup"><span data-stu-id="8dfc2-124">Skycure</span></span>](skycure-mobile-threat-defense-connector.md)
 - [<span data-ttu-id="8dfc2-125">Check Point SandBlast Mobile</span><span class="sxs-lookup"><span data-stu-id="8dfc2-125">Check Point SandBlast Mobile</span></span>](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+=======
+- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Skycure](skycure-mobile-threat-defense-connector.md)
+- [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+>>>>>>> live
