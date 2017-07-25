@@ -20,18 +20,17 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="fe123-103">Reiniciar dispositivos remotamente com o Intune</span><span class="sxs-lookup"><span data-stu-id="fe123-103">Remotely restart devices with Intune</span></span>
-<a id="remotely-restart-devices-with-intune" class="xliff"></a>
+# <a name="remotely-restart-devices-with-intune"></a>Reiniciar dispositivos remotamente com o Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-<span data-ttu-id="fe123-104">A ação de dispositivo **Reiniciar** faz com que o dispositivo escolhido seja reiniciado.</span><span class="sxs-lookup"><span data-stu-id="fe123-104">The **Restart** device action causes the device you choose to be restarted.</span></span> <span data-ttu-id="fe123-105">O proprietário do dispositivo não será notificado automaticamente sobre a reinicialização, portanto ele pode perder trabalho.</span><span class="sxs-lookup"><span data-stu-id="fe123-105">The device owner is not automatically notified of the restart, therefore might lose work.</span></span>
+A ação de dispositivo **Reiniciar** faz com que o dispositivo escolhido seja reiniciado. O proprietário do dispositivo não será notificado automaticamente sobre a reinicialização, portanto ele pode perder trabalho.
 
-1. <span data-ttu-id="fe123-106">Entre no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="fe123-106">Sign into the Azure portal.</span></span>
-2. <span data-ttu-id="fe123-107">Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.</span><span class="sxs-lookup"><span data-stu-id="fe123-107">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
-3. <span data-ttu-id="fe123-108">Na folha **Intune**, escolha **Dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="fe123-108">On the **Intune** blade, choose **Devices**.</span></span>
-4. <span data-ttu-id="fe123-109">na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.</span><span class="sxs-lookup"><span data-stu-id="fe123-109">on the **Devices and groups** blade, choose **All devices**.</span></span>
-5. <span data-ttu-id="fe123-110">Na lista de dispositivos gerenciados, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivo **Reiniciar**.</span><span class="sxs-lookup"><span data-stu-id="fe123-110">From the list of devices you manage, choose a device, and then choose the **Restart** device remote action.</span></span>
+1. Entre no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3. Na folha **Intune**, escolha **Dispositivos**.
+4. na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+5. Na lista de dispositivos gerenciados, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivo **Reiniciar**.
 
-<span data-ttu-id="fe123-111">Para ver o status da ação que você acabou de realizar, na folha **Dispositivos e grupos**, escolha **Ações de Dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="fe123-111">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>
+Para ver o status da ação que você acabou de realizar, na folha **Dispositivos e grupos**, escolha **Ações de Dispositivo**.

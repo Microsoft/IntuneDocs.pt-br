@@ -22,11 +22,10 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="d66f1-102">Seu dispositivo iOS não tem a versão de sistema operacional mínima exigida</span><span class="sxs-lookup"><span data-stu-id="d66f1-102">Your iOS device doesn't have the required minimum operating system version</span></span>
-<a id="your-ios-device-doesnt-have-the-required-minimum-operating-system-version" class="xliff"></a>
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Seu dispositivo iOS não tem a versão de sistema operacional mínima exigida
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-<span data-ttu-id="d66f1-103">Atualize seu dispositivo iOS tocando em **Configurações** > **Geral** > **Atualização de Software**.</span><span class="sxs-lookup"><span data-stu-id="d66f1-103">Update your iOS device by tapping **Settings** > **General** > **Software Update**.</span></span>
+Atualize seu dispositivo iOS tocando em **Configurações** > **Geral** > **Atualização de Software**.
 
-<span data-ttu-id="d66f1-104">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="d66f1-104">Still need help?</span></span> <span data-ttu-id="d66f1-105">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="d66f1-105">Contact your IT admin.</span></span> <span data-ttu-id="d66f1-106">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="d66f1-106">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

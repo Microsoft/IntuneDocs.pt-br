@@ -1,1 +1,1 @@
-<span data-ttu-id="09262-101">Para obter mais informações</span><span class="sxs-lookup"><span data-stu-id="09262-101">For More Information</span></span>
+Para obter mais informações

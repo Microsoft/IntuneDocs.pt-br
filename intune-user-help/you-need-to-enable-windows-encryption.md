@@ -22,11 +22,10 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="c64f1-102">É necessário habilitar a criptografia</span><span class="sxs-lookup"><span data-stu-id="c64f1-102">You need to enable encryption</span></span>
-<a id="you-need-to-enable-encryption" class="xliff"></a>
+# <a name="you-need-to-enable-encryption"></a>É necessário habilitar a criptografia
 
-<span data-ttu-id="c64f1-103">Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas.</span><span class="sxs-lookup"><span data-stu-id="c64f1-103">When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it.</span></span> <span data-ttu-id="c64f1-104">Como uma etapa para garantir que as informações estão protegidas, sua organização exige que você habilite o BitLocker.</span><span class="sxs-lookup"><span data-stu-id="c64f1-104">As a step towards making sure your information is secured, your organization is requiring you to you enable BitLocker.</span></span>
+Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que as informações estão protegidas, sua organização exige que você habilite o BitLocker.
 
-<span data-ttu-id="c64f1-105">O BitLocker é um software que criptografa a unidade e ajuda a proteger seus dados.</span><span class="sxs-lookup"><span data-stu-id="c64f1-105">BitLocker is software that encrypts your drive and helps to protect your data.</span></span> <span data-ttu-id="c64f1-106">Siga [estas instruções](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) sobre como habilitar o BitLocker em dispositivos Windows 10.</span><span class="sxs-lookup"><span data-stu-id="c64f1-106">Follow [these instructions](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) on how to enable BitLocker on Windows 10 devices.</span></span>
+O BitLocker é um software que criptografa a unidade e ajuda a proteger seus dados. Siga [estas instruções](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) sobre como habilitar o BitLocker em dispositivos Windows 10.
 
-<span data-ttu-id="c64f1-107">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="c64f1-107">Still need help?</span></span> <span data-ttu-id="c64f1-108">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="c64f1-108">Contact your IT admin.</span></span> <span data-ttu-id="c64f1-109">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="c64f1-109">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

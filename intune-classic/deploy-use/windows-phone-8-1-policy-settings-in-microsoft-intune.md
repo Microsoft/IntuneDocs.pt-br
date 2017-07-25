@@ -20,173 +20,154 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="58b39-104">Configurações de política do Windows Phone 8.1 no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="58b39-104">Windows Phone 8.1 policy settings in Microsoft Intune</span></span>
-<a id="windows-phone-81-policy-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Configurações de política do Windows Phone 8.1 no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="58b39-105">O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Windows Phone 8.1.</span><span class="sxs-lookup"><span data-stu-id="58b39-105">Intune supplies a range of built-in general settings that you can configure on Windows Phone 8.1 devices.</span></span> <span data-ttu-id="58b39-106">Além disso, você pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar configurações personalizadas que não estão disponíveis no Intune.</span><span class="sxs-lookup"><span data-stu-id="58b39-106">Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.</span></span>
+O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Windows Phone 8.1. Além disso, você pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar configurações personalizadas que não estão disponíveis no Intune.
 
-## <span data-ttu-id="58b39-107">Definições de configuração geral</span><span class="sxs-lookup"><span data-stu-id="58b39-107">General configuration settings</span></span>
-<a id="general-configuration-settings" class="xliff"></a>
+## <a name="general-configuration-settings"></a>Definições de configuração geral
 
-<span data-ttu-id="58b39-108">Use a **Política de configuração geral do Windows Phone (Windows Phone 8.1 e posterior)** do Microsoft Intune para definir as seguintes configurações para dispositivos Windows Phone 8.1:</span><span class="sxs-lookup"><span data-stu-id="58b39-108">Use the Microsoft Intune **Windows Phone general configuration policy (Windows Phone 8.1 and later)** to configure the following settings for Windows Phone 8.1 devices:</span></span>
+Use a **Política de configuração geral do Windows Phone (Windows Phone 8.1 e posterior)** do Microsoft Intune para definir as seguintes configurações para dispositivos Windows Phone 8.1:
 
--   <span data-ttu-id="58b39-109">**Configurações de segurança de dispositivo móvel** – Escolha em uma lista de configurações predefinidas que permitem controlar uma variedade de recursos e funcionalidade do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-109">**Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.</span></span>
+-   **Configurações de segurança de dispositivo móvel** – Escolha em uma lista de configurações predefinidas que permitem controlar uma variedade de recursos e funcionalidade do dispositivo.
 
--   <span data-ttu-id="58b39-110">**Aplicativos compatíveis e não compatíveis** – Especifique uma lista de aplicativos compatíveis ou não com sua empresa.</span><span class="sxs-lookup"><span data-stu-id="58b39-110">**Compliant and noncompliant apps** - Specify a list of apps that are compliant or not compliant in your company.</span></span> <span data-ttu-id="58b39-111">Dispositivos Windows Phone podem bloquear ou permitir a instalação desses aplicativos.</span><span class="sxs-lookup"><span data-stu-id="58b39-111">Windows Phone devices can block or allow installation of these apps.</span></span>
+-   **Aplicativos compatíveis e não compatíveis** – Especifique uma lista de aplicativos compatíveis ou não com sua empresa. Dispositivos Windows Phone podem bloquear ou permitir a instalação desses aplicativos.
 
-### <span data-ttu-id="58b39-112">Configurações de aplicabilidade</span><span class="sxs-lookup"><span data-stu-id="58b39-112">Applicability settings</span></span>
-<a id="applicability-settings" class="xliff"></a>
+### <a name="applicability-settings"></a>Configurações de aplicabilidade
 
-|<span data-ttu-id="58b39-113">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-113">Setting name</span></span>|<span data-ttu-id="58b39-114">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-114">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|----------------------------------|
-|<span data-ttu-id="58b39-115">**Aplicar todas as configurações ao Windows 10**</span><span class="sxs-lookup"><span data-stu-id="58b39-115">**Apply all configurations to Windows 10**</span></span>|<span data-ttu-id="58b39-116">Permite que as configurações desta política sejam aplicadas a dispositivos Windows 10 Mobile e dispositivos Windows Phone 8.1.</span><span class="sxs-lookup"><span data-stu-id="58b39-116">Enables settings in this policy to be applied to Windows 10 Mobile devices in addition to Windows Phone 8.1 devices.</span></span>|
+|**Aplicar todas as configurações ao Windows 10**|Permite que as configurações desta política sejam aplicadas a dispositivos Windows 10 Mobile e dispositivos Windows Phone 8.1.|
 
-### <span data-ttu-id="58b39-117">Configurações de senha</span><span class="sxs-lookup"><span data-stu-id="58b39-117">Password settings</span></span>
-<a id="password-settings" class="xliff"></a>
+### <a name="password-settings"></a>Configurações de senha
 
-|<span data-ttu-id="58b39-118">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-118">Setting name</span></span>|<span data-ttu-id="58b39-119">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-119">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|------|
-|<span data-ttu-id="58b39-120">**Exigir uma senha para desbloquear os dispositivos móveis**</span><span class="sxs-lookup"><span data-stu-id="58b39-120">**Require a password to unlock mobile devices**</span></span>|<span data-ttu-id="58b39-121">Especifica se os usuários devem inserir uma senha para acessar os dispositivos.</span><span class="sxs-lookup"><span data-stu-id="58b39-121">Specifies whether users must enter a password to access their devices.</span></span>|
-|<span data-ttu-id="58b39-122">**Tipo de senha necessária**</span><span class="sxs-lookup"><span data-stu-id="58b39-122">**Required password type**</span></span>|<span data-ttu-id="58b39-123">Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.</span><span class="sxs-lookup"><span data-stu-id="58b39-123">Specifies the type of password that will be required, such as alphanumeric or numeric only.</span></span>|
-|<span data-ttu-id="58b39-124">**Tipo de senha necessária – número mínimo de conjuntos de caracteres**</span><span class="sxs-lookup"><span data-stu-id="58b39-124">**Required password type – Minimum number of character sets**</span></span>|<span data-ttu-id="58b39-125">Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha.</span><span class="sxs-lookup"><span data-stu-id="58b39-125">Specifies how many different character sets must be included in the password.</span></span> <span data-ttu-id="58b39-126">Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números.</span><span class="sxs-lookup"><span data-stu-id="58b39-126">There are four character sets: lowercase letters, uppercase letters, numbers, and symbols.</span></span> <span data-ttu-id="58b39-127">No entanto, para dispositivos iOS, isso especifica que o número de símbolos que devem ser incluídos na senha.</span><span class="sxs-lookup"><span data-stu-id="58b39-127">However, for iOS devices, this specifies the number of symbols that must be included in the password.</span></span>|
-|<span data-ttu-id="58b39-128">**Comprimento mínimo da senha**</span><span class="sxs-lookup"><span data-stu-id="58b39-128">**Minimum password length**</span></span>|<span data-ttu-id="58b39-129">Especifica o número mínimo de caracteres necessários na senha.</span><span class="sxs-lookup"><span data-stu-id="58b39-129">Specifies the minimum number of characters that are required in the password.</span></span>|
-|<span data-ttu-id="58b39-130">**Permitir senha simples**</span><span class="sxs-lookup"><span data-stu-id="58b39-130">**Allow simple passwords**</span></span>|<span data-ttu-id="58b39-131">Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.</span><span class="sxs-lookup"><span data-stu-id="58b39-131">Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.</span></span>|
-|<span data-ttu-id="58b39-132">**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**</span><span class="sxs-lookup"><span data-stu-id="58b39-132">**Number of repeated sign-in failures to allow before the device is wiped**</span></span>|<span data-ttu-id="58b39-133">Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.</span><span class="sxs-lookup"><span data-stu-id="58b39-133">Specifies the number of times an incorrect password can be entered before the device is wiped.</span></span>|
-|<span data-ttu-id="58b39-134">**Minutos de inatividade antes que a tela seja desligada**</span><span class="sxs-lookup"><span data-stu-id="58b39-134">**Minutes of inactivity before the screen turns off**</span></span>|<span data-ttu-id="58b39-135">Especifica a quantidade de tempo que um dispositivo deve permanecer ocioso antes que a tela seja bloqueada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="58b39-135">Specifies the amount of time a device must remain idle before the screen is automatically locked.</span></span>|
-|<span data-ttu-id="58b39-136">**Expiração da senha (dias)**</span><span class="sxs-lookup"><span data-stu-id="58b39-136">**Password expiration (days)**</span></span>|<span data-ttu-id="58b39-137">Especifica o número de dias antes que a senha do dispositivo precise ser alterada.</span><span class="sxs-lookup"><span data-stu-id="58b39-137">Specifies the number of days before the device password must be changed.</span></span>|<span data-ttu-id="58b39-138">Sim</span><span class="sxs-lookup"><span data-stu-id="58b39-138">Yes</span></span>|<span data-ttu-id="58b39-139">Sim</span><span class="sxs-lookup"><span data-stu-id="58b39-139">Yes</span></span>|
-|<span data-ttu-id="58b39-140">**Lembrar histórico de senha**</span><span class="sxs-lookup"><span data-stu-id="58b39-140">**Remember password history**</span></span>|<span data-ttu-id="58b39-141">Especifica se as senhas usadas anteriormente devem ser lembradas para impedir o usuário de usá-las novamente.</span><span class="sxs-lookup"><span data-stu-id="58b39-141">Specifies whether previously used passwords are remembered to prevent the user from using them again.</span></span>|
-|<span data-ttu-id="58b39-142">**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**</span><span class="sxs-lookup"><span data-stu-id="58b39-142">**Remember password history** – **Prevent reuse of previous passwords**</span></span>|<span data-ttu-id="58b39-143">Especifica quantas senhas usadas anteriormente devem ser lembradas.</span><span class="sxs-lookup"><span data-stu-id="58b39-143">Specifies how many previously used passwords are remembered.</span></span>|
+|**Exigir uma senha para desbloquear os dispositivos móveis**|Especifica se os usuários devem inserir uma senha para acessar os dispositivos.|
+|**Tipo de senha necessária**|Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.|
+|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. No entanto, para dispositivos iOS, isso especifica que o número de símbolos que devem ser incluídos na senha.|
+|**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres necessários na senha.|
+|**Permitir senha simples**|Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.|
+|**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**|Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.|
+|**Minutos de inatividade antes que a tela seja desligada**|Especifica a quantidade de tempo que um dispositivo deve permanecer ocioso antes que a tela seja bloqueada automaticamente.|
+|**Expiração da senha (dias)**|Especifica o número de dias antes que a senha do dispositivo precise ser alterada.|Sim|Sim|
+|**Lembrar histórico de senha**|Especifica se as senhas usadas anteriormente devem ser lembradas para impedir o usuário de usá-las novamente.|
+|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especifica quantas senhas usadas anteriormente devem ser lembradas.|
 
-### <span data-ttu-id="58b39-144">Configurações de criptografia</span><span class="sxs-lookup"><span data-stu-id="58b39-144">Encryption settings</span></span>
-<a id="encryption-settings" class="xliff"></a>
+### <a name="encryption-settings"></a>Configurações de criptografia
 
-|<span data-ttu-id="58b39-145">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-145">Setting name</span></span>|<span data-ttu-id="58b39-146">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-146">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|------|
-|<span data-ttu-id="58b39-147">**Exigir criptografia no dispositivo móvel**</span><span class="sxs-lookup"><span data-stu-id="58b39-147">**Require encryption on mobile device**</span></span>|<span data-ttu-id="58b39-148">Exige que os dados em dispositivos móveis com suporte sejam criptografados.</span><span class="sxs-lookup"><span data-stu-id="58b39-148">Requires that the data on supported mobile devices be encrypted.</span></span>|
+|**Exigir criptografia no dispositivo móvel**|Exige que os dados em dispositivos móveis com suporte sejam criptografados.|
 
-### <span data-ttu-id="58b39-149">Configurações de sistema</span><span class="sxs-lookup"><span data-stu-id="58b39-149">System settings</span></span>
-<a id="system-settings" class="xliff"></a>
+### <a name="system-settings"></a>Configurações de sistema
 
-|<span data-ttu-id="58b39-150">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-150">Setting name</span></span>|<span data-ttu-id="58b39-151">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-151">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|-----|
-|<span data-ttu-id="58b39-152">**Permitir captura de tela**</span><span class="sxs-lookup"><span data-stu-id="58b39-152">**Allow screen capture**</span></span>|<span data-ttu-id="58b39-153">Permite que o usuário capture o conteúdo da tela como um arquivo de imagem.</span><span class="sxs-lookup"><span data-stu-id="58b39-153">Lets the user capture the contents of the screen as an image file.</span></span>|
-|<span data-ttu-id="58b39-154">**Permitir envio de dados de diagnóstico**</span><span class="sxs-lookup"><span data-stu-id="58b39-154">**Allow diagnostic data submission**</span></span>|<span data-ttu-id="58b39-155">Permite que o dispositivo envie informações de diagnóstico à Microsoft.</span><span class="sxs-lookup"><span data-stu-id="58b39-155">Enables the device to submit diagnostic information to Microsoft.</span></span>|
+|**Permitir captura de tela**|Permite que o usuário capture o conteúdo da tela como um arquivo de imagem.|
+|**Permitir envio de dados de diagnóstico**|Permite que o dispositivo envie informações de diagnóstico à Microsoft.|
 
-### <span data-ttu-id="58b39-156">Configurações de nuvem – contas e sincronização</span><span class="sxs-lookup"><span data-stu-id="58b39-156">Cloud settings – accounts and synchronization</span></span>
-<a id="cloud-settings--accounts-and-synchronization" class="xliff"></a>
+### <a name="cloud-settings--accounts-and-synchronization"></a>Configurações de nuvem – contas e sincronização
 
-|<span data-ttu-id="58b39-157">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-157">Setting name</span></span>|<span data-ttu-id="58b39-158">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-158">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|------|
-|<span data-ttu-id="58b39-159">**Permitir conta da Microsoft**</span><span class="sxs-lookup"><span data-stu-id="58b39-159">**Allow Microsoft account**</span></span>|<span data-ttu-id="58b39-160">Permite que uma conta da Microsoft seja vinculada ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-160">Enables a Microsoft account to be linked to the device.</span></span>|
+|**Permitir conta da Microsoft**|Permite que uma conta da Microsoft seja vinculada ao dispositivo.|
 
-### <span data-ttu-id="58b39-161">Configurações de email</span><span class="sxs-lookup"><span data-stu-id="58b39-161">Email settings</span></span>
-<a id="email-settings" class="xliff"></a>
+### <a name="email-settings"></a>Configurações de email
 
-|<span data-ttu-id="58b39-162">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-162">Setting name</span></span>|<span data-ttu-id="58b39-163">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-163">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|-----|
-|<span data-ttu-id="58b39-164">**Permitir contas de email personalizadas**</span><span class="sxs-lookup"><span data-stu-id="58b39-164">**Allow custom email accounts**</span></span>|<span data-ttu-id="58b39-165">Permite que o dispositivo se conecte a contas de email não Microsoft.</span><span class="sxs-lookup"><span data-stu-id="58b39-165">Enables the device to connect to non-Microsoft email accounts.</span></span>|
+|**Permitir contas de email personalizadas**|Permite que o dispositivo se conecte a contas de email não Microsoft.|
 
-### <span data-ttu-id="58b39-166">Configurações de aplicativo - navegador</span><span class="sxs-lookup"><span data-stu-id="58b39-166">Application settings - browser</span></span>
-<a id="application-settings---browser" class="xliff"></a>
+### <a name="application-settings---browser"></a>Configurações de aplicativo - navegador
 
-|<span data-ttu-id="58b39-167">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-167">Setting name</span></span>|<span data-ttu-id="58b39-168">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-168">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|-----|
-|<span data-ttu-id="58b39-169">**Permitir o navegador da Web**</span><span class="sxs-lookup"><span data-stu-id="58b39-169">**Allow web browser**</span></span>|<span data-ttu-id="58b39-170">Permite ou bloqueia o navegador da Web interno em dispositivos.</span><span class="sxs-lookup"><span data-stu-id="58b39-170">Enables or blocks the built-in web browser on devices.</span></span>|
+|**Permitir o navegador da Web**|Permite ou bloqueia o navegador da Web interno em dispositivos.|
 
-### <span data-ttu-id="58b39-171">Configurações de aplicativo - aplicativos</span><span class="sxs-lookup"><span data-stu-id="58b39-171">Application settings - apps</span></span>
-<a id="application-settings---apps" class="xliff"></a>
+### <a name="application-settings---apps"></a>Configurações de aplicativo - aplicativos
 
-|<span data-ttu-id="58b39-172">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-172">Setting name</span></span>|<span data-ttu-id="58b39-173">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-173">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|-----|
-|<span data-ttu-id="58b39-174">**Permitir repositório de aplicativos**</span><span class="sxs-lookup"><span data-stu-id="58b39-174">**Allow application store**</span></span>|<span data-ttu-id="58b39-175">Permite que os usuários se conectem à loja de aplicativos do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-175">Lets users connect to the app store from the device.</span></span>|
+|**Permitir repositório de aplicativos**|Permite que os usuários se conectem à loja de aplicativos do dispositivo.|
 
-### <span data-ttu-id="58b39-176">Configurações de recursos do dispositivo - hardware</span><span class="sxs-lookup"><span data-stu-id="58b39-176">Device capabilities settings - hardware</span></span>
-<a id="device-capabilities-settings---hardware" class="xliff"></a>
+### <a name="device-capabilities-settings---hardware"></a>Configurações de recursos do dispositivo - hardware
 
-|<span data-ttu-id="58b39-177">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-177">Setting name</span></span>|<span data-ttu-id="58b39-178">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-178">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|-----|
-|<span data-ttu-id="58b39-179">**Permitir câmera**</span><span class="sxs-lookup"><span data-stu-id="58b39-179">**Allow camera**</span></span>|<span data-ttu-id="58b39-180">Permite ou bloqueia a câmera do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-180">Enables or blocks the device's camera.</span></span>|
-|<span data-ttu-id="58b39-181">**Permitir armazenamento removível**</span><span class="sxs-lookup"><span data-stu-id="58b39-181">**Allow removable storage**</span></span>|<span data-ttu-id="58b39-182">Permite que o dispositivo use armazenamento removível, como cartões SD.</span><span class="sxs-lookup"><span data-stu-id="58b39-182">Lets the device use removable storage such as SD cards.</span></span>|
-|<span data-ttu-id="58b39-183">**Permitir Wi-Fi**</span><span class="sxs-lookup"><span data-stu-id="58b39-183">**Allow Wi-Fi**</span></span>|<span data-ttu-id="58b39-184">Habilita ou desabilita a funcionalidade Wi-Fi do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-184">Enables or disables the Wi-Fi functionality of the device.</span></span>|
-|<span data-ttu-id="58b39-185">**Permitir compartilhamento de internet por Wi-Fi**</span><span class="sxs-lookup"><span data-stu-id="58b39-185">**Allow Wi-Fi tethering**</span></span>|<span data-ttu-id="58b39-186">Permite o uso de compartilhamento de Internet por Wi-Fi no dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-186">Enables the use of Wi-Fi tethering on the device.</span></span>|
-|<span data-ttu-id="58b39-187">**Permitir conexão automática para pontos de acesso Wi-Fi gratuitos**</span><span class="sxs-lookup"><span data-stu-id="58b39-187">**Allow automatic connection to free Wi-Fi hotspots**</span></span>|<span data-ttu-id="58b39-188">Permite que o dispositivo se conecte automaticamente a hotspots Wi-Fi gratuitos e aceite automaticamente os termos de uso.</span><span class="sxs-lookup"><span data-stu-id="58b39-188">Enables the device to automatically connect to free Wi-Fi hotspots and automatically accept any terms of use.</span></span>|
-|<span data-ttu-id="58b39-189">**Permitir relatório de ponto de acesso Wi-Fi**</span><span class="sxs-lookup"><span data-stu-id="58b39-189">**Allow Wi-Fi hotspot reporting**</span></span>|<span data-ttu-id="58b39-190">Envia informações sobre conexões Wi-Fi para ajudar o usuário a descobrir conexões próximas.</span><span class="sxs-lookup"><span data-stu-id="58b39-190">Sends information about Wi-Fi connections to help the user discover nearby connections.</span></span>|
-|<span data-ttu-id="58b39-191">**Permitir localização geográfica**</span><span class="sxs-lookup"><span data-stu-id="58b39-191">**Allow geolocation**</span></span>|<span data-ttu-id="58b39-192">Permite que o dispositivo utilize informações de localização.</span><span class="sxs-lookup"><span data-stu-id="58b39-192">Enables the device to utilize location information.</span></span>|
-|<span data-ttu-id="58b39-193">**Permitir NFC**</span><span class="sxs-lookup"><span data-stu-id="58b39-193">**Allow NFC**</span></span>|<span data-ttu-id="58b39-194">Permite operações que usam comunicação a curta distância.</span><span class="sxs-lookup"><span data-stu-id="58b39-194">Enables operations that use near field communication.</span></span>|
-|<span data-ttu-id="58b39-195">**Permitir Bluetooth**</span><span class="sxs-lookup"><span data-stu-id="58b39-195">**Allow Bluetooth**</span></span>|<span data-ttu-id="58b39-196">Habilita ou desabilita a funcionalidade Bluetooth do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-196">Enables or disables the Bluetooth functionality of the device.</span></span>|
+|**Permitir câmera**|Permite ou bloqueia a câmera do dispositivo.|
+|**Permitir armazenamento removível**|Permite que o dispositivo use armazenamento removível, como cartões SD.|
+|**Permitir Wi-Fi**|Habilita ou desabilita a funcionalidade Wi-Fi do dispositivo.|
+|**Permitir compartilhamento de internet por Wi-Fi**|Permite o uso de compartilhamento de Internet por Wi-Fi no dispositivo.|
+|**Permitir conexão automática para pontos de acesso Wi-Fi gratuitos**|Permite que o dispositivo se conecte automaticamente a hotspots Wi-Fi gratuitos e aceite automaticamente os termos de uso.|
+|**Permitir relatório de ponto de acesso Wi-Fi**|Envia informações sobre conexões Wi-Fi para ajudar o usuário a descobrir conexões próximas.|
+|**Permitir localização geográfica**|Permite que o dispositivo utilize informações de localização.|
+|**Permitir NFC**|Permite operações que usam comunicação a curta distância.|
+|**Permitir Bluetooth**|Habilita ou desabilita a funcionalidade Bluetooth do dispositivo.|
 
-### <span data-ttu-id="58b39-197">Configurações de recursos do dispositivo - recursos</span><span class="sxs-lookup"><span data-stu-id="58b39-197">Device capabilities settings - features</span></span>
-<a id="device-capabilities-settings---features" class="xliff"></a>
+### <a name="device-capabilities-settings---features"></a>Configurações de recursos do dispositivo - recursos
 
-|<span data-ttu-id="58b39-198">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-198">Setting name</span></span>|<span data-ttu-id="58b39-199">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-199">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|----|
-|<span data-ttu-id="58b39-200">**Permitir copiar e colar**</span><span class="sxs-lookup"><span data-stu-id="58b39-200">**Allow copy and paste**</span></span>|<span data-ttu-id="58b39-201">Permitir a funcionalidade copiar e colar nos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="58b39-201">Enables copy and paste functionality on devices.</span></span>|
+|**Permitir copiar e colar**|Permitir a funcionalidade copiar e colar nos dispositivos.|
 
-### <span data-ttu-id="58b39-202">Configurações para URLs permitidas e bloqueadas</span><span class="sxs-lookup"><span data-stu-id="58b39-202">Settings for allowed and blocked apps</span></span>
-<a id="settings-for-allowed-and-blocked-apps" class="xliff"></a>
-<span data-ttu-id="58b39-203">Na lista de **Aplicativos permitidos e bloqueados**, especifique uma lista de aplicativos que você deseja permitir ou bloquear usando as seguintes informações:</span><span class="sxs-lookup"><span data-stu-id="58b39-203">In the **Allowed and blocked apps** list, specify a list of apps that you want to allow or block by using the following information:</span></span>
+### <a name="settings-for-allowed-and-blocked-apps"></a>Configurações para URLs permitidas e bloqueadas
+Na lista de **Aplicativos permitidos e bloqueados**, especifique uma lista de aplicativos que você deseja permitir ou bloquear usando as seguintes informações:
 
 > [!NOTE]
-> <span data-ttu-id="58b39-204">Uma única política só pode conter uma lista de aplicativos permitidos ou bloqueados.</span><span class="sxs-lookup"><span data-stu-id="58b39-204">A single policy can only contain a list of allowed or blocked apps.</span></span> <span data-ttu-id="58b39-205">Não é possível especificar ambos na mesma política.</span><span class="sxs-lookup"><span data-stu-id="58b39-205">You cannot specify both in the same policy.</span></span>
+> Uma única política só pode conter uma lista de aplicativos permitidos ou bloqueados. Não é possível especificar ambos na mesma política.
 
-|<span data-ttu-id="58b39-206">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-206">Setting name</span></span>|<span data-ttu-id="58b39-207">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-207">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|--------------------|
-|<span data-ttu-id="58b39-208">**Impedir que os dispositivos abram os aplicativos listados**</span><span class="sxs-lookup"><span data-stu-id="58b39-208">**Block devices from opening the listed apps**</span></span>|<span data-ttu-id="58b39-209">Lista os aplicativos que não são gerenciados pelo Intune, os quais os usuários não têm permissão para instalar e executar.</span><span class="sxs-lookup"><span data-stu-id="58b39-209">Lists the apps that are not managed by Intune, and which users are not allowed to install and run.</span></span>|
-|<span data-ttu-id="58b39-210">**Permitir que os dispositivos instalem apenas os aplicativos listados**</span><span class="sxs-lookup"><span data-stu-id="58b39-210">**Allow devices to install only the listed apps**</span></span>|<span data-ttu-id="58b39-211">Lista os aplicativos que os usuários têm permissão para instalar.</span><span class="sxs-lookup"><span data-stu-id="58b39-211">Lists the apps that users are allowed to install.</span></span> <span data-ttu-id="58b39-212">Os usuários não podem instalar nenhum outro aplicativo.</span><span class="sxs-lookup"><span data-stu-id="58b39-212">Users cannot install any other apps.</span></span> <span data-ttu-id="58b39-213">Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.</span><span class="sxs-lookup"><span data-stu-id="58b39-213">Apps that are managed by Intune are automatically allowed.</span></span>|
-|<span data-ttu-id="58b39-214">**Adicionar**</span><span class="sxs-lookup"><span data-stu-id="58b39-214">**Add**</span></span>|<span data-ttu-id="58b39-215">Adiciona um aplicativo à lista selecionada.</span><span class="sxs-lookup"><span data-stu-id="58b39-215">Adds an app to the selected list.</span></span> <span data-ttu-id="58b39-216">Especifique um nome da sua preferência, a URL para o aplicativo na loja de aplicativos e o editor do aplicativo (opcional).</span><span class="sxs-lookup"><span data-stu-id="58b39-216">Specify a name of your choice, the URL to the app in the app store, and the app publisher (optional).</span></span> <span data-ttu-id="58b39-217">Para obter mais ajuda, consulte “Como especificar URLs para lojas de aplicativos” mais adiante neste tópico.</span><span class="sxs-lookup"><span data-stu-id="58b39-217">For more help, see How to specify URLs to app stores later in this topic.</span></span>
-|<span data-ttu-id="58b39-218">**Importar aplicativos**</span><span class="sxs-lookup"><span data-stu-id="58b39-218">**Import Apps**</span></span>|<span data-ttu-id="58b39-219">Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas.</span><span class="sxs-lookup"><span data-stu-id="58b39-219">Imports a list of apps that you have specified in a comma-separated values file.</span></span> <span data-ttu-id="58b39-220">Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.</span><span class="sxs-lookup"><span data-stu-id="58b39-220">Use the format, application name, publisher, and app URL in the file.</span></span>|
-|<span data-ttu-id="58b39-221">**Editarar**</span><span class="sxs-lookup"><span data-stu-id="58b39-221">**Edit**</span></span>|<span data-ttu-id="58b39-222">Permite editar o nome, editor e a URL do aplicativo selecionado.</span><span class="sxs-lookup"><span data-stu-id="58b39-222">Lets you edit the name, publisher, and URL of the selected app.</span></span>|
-|<span data-ttu-id="58b39-223">**Excluir**</span><span class="sxs-lookup"><span data-stu-id="58b39-223">**Delete**</span></span>|<span data-ttu-id="58b39-224">Exclui o aplicativo selecionado da lista.</span><span class="sxs-lookup"><span data-stu-id="58b39-224">Deletes the selected app from the list.</span></span>|
+|**Impedir que os dispositivos abram os aplicativos listados**|Lista os aplicativos que não são gerenciados pelo Intune, os quais os usuários não têm permissão para instalar e executar.|
+|**Permitir que os dispositivos instalem apenas os aplicativos listados**|Lista os aplicativos que os usuários têm permissão para instalar. Os usuários não podem instalar nenhum outro aplicativo. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
+|**Adicionar**|Adiciona um aplicativo à lista selecionada. Especifique um nome da sua preferência, a URL para o aplicativo na loja de aplicativos e o editor do aplicativo (opcional). Para obter mais ajuda, consulte “Como especificar URLs para lojas de aplicativos” mais adiante neste tópico.
+|**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.|
+|**Editarar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
+|**Excluir**|Exclui o aplicativo selecionado da lista.|
 > [!IMPORTANT]
-> <span data-ttu-id="58b39-225">Se especificar uma lista de aplicativos permitidos para dispositivos Windows Phone 8.1, você deverá adicionar o aplicativo Portal da Empresa a essa lista, caso contrário, ele será bloqueado.</span><span class="sxs-lookup"><span data-stu-id="58b39-225">If you specify a list of allowed apps for Windows Phone 8.1 devices, you must add the Company Portal app to this list or it will be blocked.</span></span>
+> Se especificar uma lista de aplicativos permitidos para dispositivos Windows Phone 8.1, você deverá adicionar o aplicativo Portal da Empresa a essa lista, caso contrário, ele será bloqueado.
 
 
-### <span data-ttu-id="58b39-226">Informações de referência para aplicativos permitidos e bloqueados</span><span class="sxs-lookup"><span data-stu-id="58b39-226">Reference information for allowed and blocked apps</span></span>
-<a id="reference-information-for-allowed-and-blocked-apps" class="xliff"></a>
+### <a name="reference-information-for-allowed-and-blocked-apps"></a>Informações de referência para aplicativos permitidos e bloqueados
 
-#### <span data-ttu-id="58b39-227">Como especificar URLs para lojas de aplicativos</span><span class="sxs-lookup"><span data-stu-id="58b39-227">How to specify URLs to app stores</span></span>
-<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
-<span data-ttu-id="58b39-228">Para especificar uma URL de aplicativo na lista de aplicativos permitidos e bloqueados, use o seguinte formato:</span><span class="sxs-lookup"><span data-stu-id="58b39-228">To specify an app URL in the allowed and blocked apps list, use the following format:</span></span>
+#### <a name="how-to-specify-urls-to-app-stores"></a>Como especificar URLs para lojas de aplicativos
+Para especificar uma URL de aplicativo na lista de aplicativos permitidos e bloqueados, use o seguinte formato:
 
-<span data-ttu-id="58b39-229">Na [página Aplicativos+Jogos do Windows Phone](http://www.windowsphone.com/store/overview), procure o aplicativo que você deseja usar.</span><span class="sxs-lookup"><span data-stu-id="58b39-229">From the [Windows Phone Apps+Games](http://www.windowsphone.com/store/overview) page, search for the app that you want to use.</span></span>
+Na [página Aplicativos+Jogos do Windows Phone](http://www.windowsphone.com/store/overview), procure o aplicativo que você deseja usar.
 
-<span data-ttu-id="58b39-230">Abra a página do aplicativo e copie a URL para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="58b39-230">Open the app’s page, and copy the URL to the clipboard.</span></span> <span data-ttu-id="58b39-231">Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.</span><span class="sxs-lookup"><span data-stu-id="58b39-231">You can now use this as the URL in either the allowed or blocked apps list.</span></span>
+Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.
 
-<span data-ttu-id="58b39-232">**Exemplo:** Procure o aplicativo Skype na loja.</span><span class="sxs-lookup"><span data-stu-id="58b39-232">**Example:** Search the store for the Skype app.</span></span> <span data-ttu-id="58b39-233">A URL usada será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.</span><span class="sxs-lookup"><span data-stu-id="58b39-233">The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.</span></span>
+**Exemplo:** Procure o aplicativo Skype na loja. A URL usada será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
-## <span data-ttu-id="58b39-234">Configurações de política personalizada</span><span class="sxs-lookup"><span data-stu-id="58b39-234">Custom policy settings</span></span>
-<a id="custom-policy-settings" class="xliff"></a>
-<span data-ttu-id="58b39-235">Use a **Política de configuração personalizada do Windows Phone** do Microsoft Intune para implantar configurações OMA-URI, que podem ser usadas para controlar funcionalidades em **dispositivos com Windows Phone 8.1**.</span><span class="sxs-lookup"><span data-stu-id="58b39-235">Use the Microsoft Intune **Windows Phone custom configuration policy** to deploy OMA-URI settings that can be used to control features on **Windows Phone 8.1 devices**.</span></span> <span data-ttu-id="58b39-236">Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.</span><span class="sxs-lookup"><span data-stu-id="58b39-236">These are standard settings that many mobile device manufacturers use to control device features.</span></span>
+## <a name="custom-policy-settings"></a>Configurações de política personalizada
+Use a **Política de configuração personalizada do Windows Phone** do Microsoft Intune para implantar configurações OMA-URI, que podem ser usadas para controlar funcionalidades em **dispositivos com Windows Phone 8.1**. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
-<span data-ttu-id="58b39-237">Essa funcionalidade possibilita que você implante configurações do Windows Phone que não podem ser configuradas com a política de configuração geral do Intune.</span><span class="sxs-lookup"><span data-stu-id="58b39-237">This capability enables you to deploy Windows Phone settings that are not configurable with an Intune general configuration policy.</span></span> <span data-ttu-id="58b39-238">Para obter informações sobre as configurações que você pode definir com essas políticas, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e recursos em seus dispositivos com as políticas do Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="58b39-238">For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).</span></span>
+Essa funcionalidade possibilita que você implante configurações do Windows Phone que não podem ser configuradas com a política de configuração geral do Intune. Para obter informações sobre as configurações que você pode definir com essas políticas, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gerenciar configurações e recursos em seus dispositivos com as políticas do Microsoft Intune).
 
-<span data-ttu-id="58b39-239">Para obter ajuda para criar configurações de OMA-URI para dispositivos Windows Phone, consulte [Documentação do protocolo MDM do Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).</span><span class="sxs-lookup"><span data-stu-id="58b39-239">For help creating OMA-URI settings for Windows Phone devices, see [Windows Phone 8.1 MDM protocol documentation](http://technet.microsoft.com/library/dn499787.aspx).</span></span>
+Para obter ajuda para criar configurações de OMA-URI para dispositivos Windows Phone, consulte [Documentação do protocolo MDM do Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).
 
-### <span data-ttu-id="58b39-240">Configurações gerais</span><span class="sxs-lookup"><span data-stu-id="58b39-240">General settings</span></span>
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>Configurações gerais
 
-|<span data-ttu-id="58b39-241">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-241">Setting name</span></span>|<span data-ttu-id="58b39-242">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-242">Details</span></span>|
+|Nome da configuração|Detalhes|
 |----------------|--------------------|
-|<span data-ttu-id="58b39-243">**Nome**</span><span class="sxs-lookup"><span data-stu-id="58b39-243">**Name**</span></span>|<span data-ttu-id="58b39-244">Insira um nome exclusivo para a política para ajudar a identificá-la no console do Intune.</span><span class="sxs-lookup"><span data-stu-id="58b39-244">Enter a unique name for the policy to help you identify it in the Intune console.</span></span>|
-|<span data-ttu-id="58b39-245">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="58b39-245">**Description**</span></span>|<span data-ttu-id="58b39-246">Forneça uma descrição que proporciona uma visão geral da política e outras informações relevantes que o ajudarão a localizá-la.</span><span class="sxs-lookup"><span data-stu-id="58b39-246">Provide a description that gives an overview of the policy and other relevant information that helps you to locate it.</span></span>|
+|**Nome**|Insira um nome exclusivo para a política para ajudar a identificá-la no console do Intune.|
+|**Descrição**|Forneça uma descrição que proporciona uma visão geral da política e outras informações relevantes que o ajudarão a localizá-la.|
 
-### <span data-ttu-id="58b39-247">Configurações de OMA-URI</span><span class="sxs-lookup"><span data-stu-id="58b39-247">OMA-URI settings</span></span>
-<a id="oma-uri-settings" class="xliff"></a>
+### <a name="oma-uri-settings"></a>Configurações de OMA-URI
 
-<span data-ttu-id="58b39-248">Na seção de **Configurações de OMA-URI**, clique em **Adicionar** para adicionar uma configuração.</span><span class="sxs-lookup"><span data-stu-id="58b39-248">In the **OMA-URI Settings** section, click **Add** to add a setting.</span></span> <span data-ttu-id="58b39-249">Você também pode editar ou excluir uma configuração existente.</span><span class="sxs-lookup"><span data-stu-id="58b39-249">You can also edit or delete an existing setting.</span></span>
+Na seção de **Configurações de OMA-URI**, clique em **Adicionar** para adicionar uma configuração. Você também pode editar ou excluir uma configuração existente.
 
-<span data-ttu-id="58b39-250">Na caixa de diálogo **Adicionar ou Editar Configuração de OMA-URI**, especifique as seguintes informações:</span><span class="sxs-lookup"><span data-stu-id="58b39-250">In the **Add or Edit OMA-URI Setting** dialog box, specify the following information:</span></span>
+Na caixa de diálogo **Adicionar ou Editar Configuração de OMA-URI**, especifique as seguintes informações:
 
-|<span data-ttu-id="58b39-251">Nome da configuração</span><span class="sxs-lookup"><span data-stu-id="58b39-251">Setting name</span></span>|<span data-ttu-id="58b39-252">Detalhes</span><span class="sxs-lookup"><span data-stu-id="58b39-252">Details</span></span>|
+|Nome da configuração|Detalhes|
     |--------|--------------------|
-    |<span data-ttu-id="58b39-253">**Nome da configuração**</span><span class="sxs-lookup"><span data-stu-id="58b39-253">**Setting name**</span></span>|<span data-ttu-id="58b39-254">Insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.</span><span class="sxs-lookup"><span data-stu-id="58b39-254">Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.</span></span>|
-    |<span data-ttu-id="58b39-255">**Descrição da configuração**</span><span class="sxs-lookup"><span data-stu-id="58b39-255">**Setting description**</span></span>|<span data-ttu-id="58b39-256">Forneça uma descrição que proporciona uma visão geral da configuração e outras informações relevantes que o ajudarão a localizá-la.</span><span class="sxs-lookup"><span data-stu-id="58b39-256">Provide a description that gives an overview of the setting and other relevant information to help you locate it.</span></span>|
-    |<span data-ttu-id="58b39-257">**Tipo de dados**</span><span class="sxs-lookup"><span data-stu-id="58b39-257">**Data type**</span></span>|<span data-ttu-id="58b39-258">Selecione o tipo de dados em que você especificará essa configuração de OMA-URI.</span><span class="sxs-lookup"><span data-stu-id="58b39-258">Select the data type in which you will specify this OMA-URI setting.</span></span> <span data-ttu-id="58b39-259">Escolha:</span><span class="sxs-lookup"><span data-stu-id="58b39-259">Choose from:</span></span><br /><br /><span data-ttu-id="58b39-260">-   **Cadeia de caracteres**</span><span class="sxs-lookup"><span data-stu-id="58b39-260">-   **String**</span></span><br /><span data-ttu-id="58b39-261">-   **Cadeia de caracteres (XML)**</span><span class="sxs-lookup"><span data-stu-id="58b39-261">-   **String (XML)**</span></span><br /><span data-ttu-id="58b39-262">-   **Data e hora**</span><span class="sxs-lookup"><span data-stu-id="58b39-262">-   **Date and time**</span></span><br /><span data-ttu-id="58b39-263">-   **Inteiro**</span><span class="sxs-lookup"><span data-stu-id="58b39-263">-   **Integer**</span></span><br /><span data-ttu-id="58b39-264">-   **Ponto flutuante**</span><span class="sxs-lookup"><span data-stu-id="58b39-264">-   **Floating point**</span></span><br /><span data-ttu-id="58b39-265">-   **Booliano**</span><span class="sxs-lookup"><span data-stu-id="58b39-265">-   **Boolean**</span></span>|
-    |<span data-ttu-id="58b39-266">**OMA-URI (diferencia maiúsculas de minúsculas)**</span><span class="sxs-lookup"><span data-stu-id="58b39-266">**OMA-URI (case sensitive)**</span></span>|<span data-ttu-id="58b39-267">Especifique o OMA-URI para o qual você deseja fornecer uma configuração.</span><span class="sxs-lookup"><span data-stu-id="58b39-267">Specify the OMA-URI for which you want to supply a setting.</span></span>|
-    |<span data-ttu-id="58b39-268">**Valor**</span><span class="sxs-lookup"><span data-stu-id="58b39-268">**Value**</span></span>|<span data-ttu-id="58b39-269">Especifique o valor a ser associado ao OMA-URI especificado anteriormente.</span><span class="sxs-lookup"><span data-stu-id="58b39-269">Specify the value to associate with the OMA-URI that you specified previously.</span></span>|
+    |**Nome da configuração**|Insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.|
+    |**Descrição da configuração**|Forneça uma descrição que proporciona uma visão geral da configuração e outras informações relevantes que o ajudarão a localizá-la.|
+    |**Tipo de dados**|Selecione o tipo de dados em que você especificará essa configuração de OMA-URI. Escolha:<br /><br />-   **Cadeia de caracteres**<br />-   **Cadeia de caracteres (XML)**<br />-   **Data e hora**<br />-   **Inteiro**<br />-   **Ponto flutuante**<br />-   **Booliano**|
+    |**OMA-URI (diferencia maiúsculas de minúsculas)**|Especifique o OMA-URI para o qual você deseja fornecer uma configuração.|
+    |**Valor**|Especifique o valor a ser associado ao OMA-URI especificado anteriormente.|
 
-### <span data-ttu-id="58b39-270">Consulte também</span><span class="sxs-lookup"><span data-stu-id="58b39-270">See also</span></span>
-<a id="see-also" class="xliff"></a>
-[<span data-ttu-id="58b39-271">Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="58b39-271">Manage settings and features on your devices with Microsoft Intune policies</span></span>](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Consulte também
+[Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
