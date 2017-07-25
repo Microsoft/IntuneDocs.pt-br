@@ -22,9 +22,8 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="ca716-102">Como reconectar um dispositivo iOS comprometido</span><span class="sxs-lookup"><span data-stu-id="ca716-102">How to reconnect a compromised iOS device</span></span>
-<a id="how-to-reconnect-a-compromised-ios-device" class="xliff"></a>
+# <a name="how-to-reconnect-a-compromised-ios-device"></a>Como reconectar um dispositivo iOS comprometido
 
-<span data-ttu-id="ca716-103">Seu administrador de TI detectou que você está usando um dispositivo com jailbreak.</span><span class="sxs-lookup"><span data-stu-id="ca716-103">Your IT admin detected that you are using a jailbroken device.</span></span> <span data-ttu-id="ca716-104">Desbloqueado com “jailbreak” significa que o dispositivo foi alterado para habilitar acesso irrestrito a alguns arquivos críticos, o que pode comprometer a segurança e ser uma ameaça para os recursos da empresa.</span><span class="sxs-lookup"><span data-stu-id="ca716-104">"Jailbroken" means that the device has been changed to enable unrestricted access to certain critical files, which can compromise security and might be a threat to your company resources.</span></span>
+Seu administrador de TI detectou que você está usando um dispositivo com jailbreak. Desbloqueado com “jailbreak” significa que o dispositivo foi alterado para habilitar acesso irrestrito a alguns arquivos críticos, o que pode comprometer a segurança e ser uma ameaça para os recursos da empresa.
 
-<span data-ttu-id="ca716-105">Quando isso acontece, o dispositivo não pode mais acessar os recursos da empresa e é necessário contatar seu administrador de TI para obter ajuda.</span><span class="sxs-lookup"><span data-stu-id="ca716-105">When this happens, your device can no longer access company resources and you must contact your IT admin for help.</span></span> <span data-ttu-id="ca716-106">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="ca716-106">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+Quando isso acontece, o dispositivo não pode mais acessar os recursos da empresa e é necessário contatar seu administrador de TI para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

@@ -22,57 +22,54 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="80e6e-102">Usar aplicativos gerenciados no seu dispositivo Android</span><span class="sxs-lookup"><span data-stu-id="80e6e-102">Use managed apps on your Android device</span></span>
-<a id="use-managed-apps-on-your-android-device" class="xliff"></a>
+# <a name="use-managed-apps-on-your-android-device"></a>Usar aplicativos gerenciados no seu dispositivo Android
 
-<span data-ttu-id="80e6e-103">Aplicativos gerenciados são aplicativos que o administrador de TI pode configurar para ajudar a proteger os dados da empresa que você pode acessar nesse aplicativo.</span><span class="sxs-lookup"><span data-stu-id="80e6e-103">Managed apps are apps that your IT admin can set up to help protect company data that you can access in that app.</span></span> <span data-ttu-id="80e6e-104">Ao acessar dados da empresa em um aplicativo gerenciado no seu dispositivo Android, você pode perceber que o aplicativo funciona um pouco diferente do que o esperado.</span><span class="sxs-lookup"><span data-stu-id="80e6e-104">When you access company data in a managed app on your Android device, you may notice that the app works a little differently than what you expect.</span></span> <span data-ttu-id="80e6e-105">Por exemplo, não é possível copiar e colar os dados da empresa protegidos, ou você pode não conseguir salvar esses dados em determinados locais.</span><span class="sxs-lookup"><span data-stu-id="80e6e-105">For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.</span></span>
+Aplicativos gerenciados são aplicativos que o administrador de TI pode configurar para ajudar a proteger os dados da empresa que você pode acessar nesse aplicativo. Ao acessar dados da empresa em um aplicativo gerenciado no seu dispositivo Android, você pode perceber que o aplicativo funciona um pouco diferente do que o esperado. Por exemplo, não é possível copiar e colar os dados da empresa protegidos, ou você pode não conseguir salvar esses dados em determinados locais.
 
-<span data-ttu-id="80e6e-106">Diferentes aplicativos gerenciados também podem trabalhar juntos no seu dispositivo para permitir que você possa fazer as tarefas diárias mantendo dados corporativos protegidos.</span><span class="sxs-lookup"><span data-stu-id="80e6e-106">Different managed apps can also work together on your device to allow you to do your daily tasks, while keeping corporate data protected.</span></span> <span data-ttu-id="80e6e-107">Por exemplo, se você abre um arquivo da empresa em um aplicativo gerenciado, e o outro aplicativo gerenciado é necessário para exibir o arquivo, o aplicativo gerenciado que permite que você exiba o arquivo é aberto automaticamente.</span><span class="sxs-lookup"><span data-stu-id="80e6e-107">For example, if you open a company file in one managed app, and another managed app is required to view that file, the managed app that allows you to view the file opens automatically.</span></span> <span data-ttu-id="80e6e-108">Se um aplicativo necessário não estiver disponível, determinadas ações, como abrir um documento ou acessar um link da Web de dentro de um documento gerenciado, poderão não estar disponíveis.</span><span class="sxs-lookup"><span data-stu-id="80e6e-108">If a required app is not available, certain actions, like opening a document or accessing a web link from within a managed document, might not be available.</span></span>
+Diferentes aplicativos gerenciados também podem trabalhar juntos no seu dispositivo para permitir que você possa fazer as tarefas diárias mantendo dados corporativos protegidos. Por exemplo, se você abre um arquivo da empresa em um aplicativo gerenciado, e o outro aplicativo gerenciado é necessário para exibir o arquivo, o aplicativo gerenciado que permite que você exiba o arquivo é aberto automaticamente. Se um aplicativo necessário não estiver disponível, determinadas ações, como abrir um documento ou acessar um link da Web de dentro de um documento gerenciado, poderão não estar disponíveis.
 
-<span data-ttu-id="80e6e-109">Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensagem como a mostrada abaixo, que permite que você saiba que o aplicativo que você está abrindo é gerenciado.</span><span class="sxs-lookup"><span data-stu-id="80e6e-109">When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.</span></span>
+Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensagem como a mostrada abaixo, que permite que você saiba que o aplicativo que você está abrindo é gerenciado.
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
-## <span data-ttu-id="80e6e-111">Como obtenho os aplicativos gerenciados?</span><span class="sxs-lookup"><span data-stu-id="80e6e-111">How do I get managed apps?</span></span>
-<a id="how-do-i-get-managed-apps" class="xliff"></a>
-<span data-ttu-id="80e6e-112">Você pode obter aplicativos gerenciados de duas maneiras diferentes:</span><span class="sxs-lookup"><span data-stu-id="80e6e-112">You get managed apps in a couple of different ways:</span></span>
+## <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?
+Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
--   <span data-ttu-id="80e6e-113">Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo.</span><span class="sxs-lookup"><span data-stu-id="80e6e-113">When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device.</span></span> <span data-ttu-id="80e6e-114">Para saber mais sobre como se registrar, confira [Enroll your device in Intune](enroll-your-device-in-Intune-android.md) (Registrar seu dispositivo no Intune).</span><span class="sxs-lookup"><span data-stu-id="80e6e-114">To learn about enrolling, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).</span></span>
+-   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre como se registrar, confira [Enroll your device in Intune](enroll-your-device-in-Intune-android.md) (Registrar seu dispositivo no Intune).
 
--   <span data-ttu-id="80e6e-115">Instale um aplicativo da Play Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.</span><span class="sxs-lookup"><span data-stu-id="80e6e-115">You install an app from the Play Store, and then sign in with your corporate user account that is managed by Intune.</span></span>
+-   Instale um aplicativo da Play Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
 
-## <span data-ttu-id="80e6e-116">O que meu administrador de TI pode gerenciar em um aplicativo?</span><span class="sxs-lookup"><span data-stu-id="80e6e-116">What can my IT admin manage in an app?</span></span>
-<a id="what-can-my-it-admin-manage-in-an-app" class="xliff"></a>
-<span data-ttu-id="80e6e-117">Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:</span><span class="sxs-lookup"><span data-stu-id="80e6e-117">Here are some examples of options that your IT admin can manage in an app, and that can affect your interactions with company data on your device:</span></span>
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>O que meu administrador de TI pode gerenciar em um aplicativo?
+Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
 
--   <span data-ttu-id="80e6e-118">Acesso a sites específicos</span><span class="sxs-lookup"><span data-stu-id="80e6e-118">Access to specific websites</span></span>
+-   Acesso a sites específicos
 
--   <span data-ttu-id="80e6e-119">Transferências de dados entre aplicativos</span><span class="sxs-lookup"><span data-stu-id="80e6e-119">Transfers of data between apps</span></span>
+-   Transferências de dados entre aplicativos
 
--   <span data-ttu-id="80e6e-120">Salvando arquivos</span><span class="sxs-lookup"><span data-stu-id="80e6e-120">Saving files</span></span>
+-   Salvando arquivos
 
--   <span data-ttu-id="80e6e-121">Operações de copiar e colar</span><span class="sxs-lookup"><span data-stu-id="80e6e-121">Copy and paste operations</span></span>
+-   Operações de copiar e colar
 
--   <span data-ttu-id="80e6e-122">Requisitos de acesso do PIN</span><span class="sxs-lookup"><span data-stu-id="80e6e-122">PIN access requirements</span></span>
+-   Requisitos de acesso do PIN
 
--   <span data-ttu-id="80e6e-123">Suas credenciais, usando as credenciais da empresa</span><span class="sxs-lookup"><span data-stu-id="80e6e-123">Your sign in, using company credentials</span></span>
+-   Suas credenciais, usando as credenciais da empresa
 
--   <span data-ttu-id="80e6e-124">Capacidade de fazer backup para a nuvem</span><span class="sxs-lookup"><span data-stu-id="80e6e-124">Ability to back up to the cloud</span></span>
+-   Capacidade de fazer backup para a nuvem
 
--   <span data-ttu-id="80e6e-125">Capacidade de fazer capturas de tela</span><span class="sxs-lookup"><span data-stu-id="80e6e-125">Ability to take screenshots</span></span>
+-   Capacidade de fazer capturas de tela
 
--   <span data-ttu-id="80e6e-126">Requisitos de criptografia de dados</span><span class="sxs-lookup"><span data-stu-id="80e6e-126">Data encryption requirements</span></span>
+-   Requisitos de criptografia de dados
 
-<span data-ttu-id="80e6e-127">Estes são aplicativos comuns que o departamento de TI pode gerenciar:</span><span class="sxs-lookup"><span data-stu-id="80e6e-127">Some common apps that your IT department might manage are:</span></span>
+Estes são aplicativos comuns que o departamento de TI pode gerenciar:
 
--   <span data-ttu-id="80e6e-128">Intune Managed Browser</span><span class="sxs-lookup"><span data-stu-id="80e6e-128">Intune Managed Browser</span></span>
+-   Intune Managed Browser
 
--   <span data-ttu-id="80e6e-129">Visualizador de imagem do Intune</span><span class="sxs-lookup"><span data-stu-id="80e6e-129">Intune image Viewer</span></span>
+-   Visualizador de imagem do Intune
 
--   <span data-ttu-id="80e6e-130">Visualizador de PDF do Intune</span><span class="sxs-lookup"><span data-stu-id="80e6e-130">Intune PDF Viewer</span></span>
+-   Visualizador de PDF do Intune
 
--   <span data-ttu-id="80e6e-131">AV Player do Intune</span><span class="sxs-lookup"><span data-stu-id="80e6e-131">Intune AV player</span></span>
+-   AV Player do Intune
 
--   <span data-ttu-id="80e6e-132">Microsoft Word, Excel e PowerPoint</span><span class="sxs-lookup"><span data-stu-id="80e6e-132">Microsoft Word, Excel, and PowerPoint</span></span>
+-   Microsoft Word, Excel e PowerPoint
 
-<span data-ttu-id="80e6e-133">Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI.</span><span class="sxs-lookup"><span data-stu-id="80e6e-133">Contact your IT admin for more information about the managed apps on your device.</span></span> <span data-ttu-id="80e6e-134">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="80e6e-134">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

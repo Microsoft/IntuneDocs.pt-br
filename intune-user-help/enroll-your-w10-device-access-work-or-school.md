@@ -22,45 +22,41 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/13/2017
 ---
-<<<<<<< HEAD
-# <span data-ttu-id="b4ba5-103">Registrar seu dispositivo Windows 10 no Intune</span><span class="sxs-lookup"><span data-stu-id="b4ba5-103">Enroll your Windows 10 device in Intune</span></span>
-=======
 # Registrar seu dispositivo Windows 10 no Intune
->>>>>>> live
 <a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
 
 > [!NOTE]
-> <span data-ttu-id="b4ba5-104">O Windows 10 opera em todos os tipos de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-104">Windows 10 works across all types of devices.</span></span> <span data-ttu-id="b4ba5-105">Esteja você usando uma área de trabalho, um telefone ou tablet, as etapas a seguir serão as mesmas – mesmo se elas parecerem um pouco diferentes das imagens nesta página.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-105">Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.</span></span>
+> O Windows 10 opera em todos os tipos de dispositivos. Esteja você usando uma área de trabalho, um telefone ou tablet, as etapas a seguir serão as mesmas – mesmo se elas parecerem um pouco diferentes das imagens nesta página.
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]
 
-1. <span data-ttu-id="b4ba5-106">Vá até **Iniciar**.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-106">Go to **Start**.</span></span>
+1. Vá até **Iniciar**.
 
-  - <span data-ttu-id="b4ba5-107">Se você estiver usando um dispositivo **Windows 10 Desktop**, acesse o **Menu Iniciar**.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-107">If you are on a **Windows 10 desktop** device, go to the **Start menu**.</span></span>
-  - <span data-ttu-id="b4ba5-108">Se você estiver usando um dispositivo **Windows 10 Mobile**, acesse a **Tela inicial** e, em seguida, passe para a lista **Todos os aplicativos**.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-108">If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.</span></span>
+  - Se você estiver usando um dispositivo **Windows 10 Desktop**, acesse o **Menu Iniciar**.
+  - Se você estiver usando um dispositivo **Windows 10 Mobile**, acesse a **Tela inicial** e, em seguida, passe para a lista **Todos os aplicativos**.
 
-2.  <span data-ttu-id="b4ba5-109">Abra o aplicativo **Configurações** do Windows, pesquisando por "configurações" na barra de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-109">Open the Windows **Settings** app by searching for "settings" in the search bar.</span></span>
+2.  Abra o aplicativo **Configurações** do Windows, pesquisando por "configurações" na barra de pesquisa.
 
-3. <span data-ttu-id="b4ba5-110">Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-110">Select **Accounts** > **Access work or school** > **Connect**.</span></span>
+3. Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.
 
     ![Selecione Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-3.  <span data-ttu-id="b4ba5-112">Insira seu endereço de email corporativo ou de estudante e selecione **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-112">Enter your work or school email address, and then select **Next**.</span></span>
+3.  Insira seu endereço de email corporativo ou de estudante e selecione **Avançar**.
 
     ![Insira sua conta corporativa ou de estudante](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-4. <span data-ttu-id="b4ba5-114">Entre no Intune com sua conta corporativa ou de estudante.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-114">Sign in to Intune with your work or school account.</span></span>
+4. Entre no Intune com sua conta corporativa ou de estudante.
 
     ![Adicionar uma conta corporativa ou de estudante](./media/w10-enroll-rs1-enter-your-credentials.png)
 
-    <span data-ttu-id="b4ba5-116">Você verá uma mensagem que indica que sua empresa ou escola está registrando o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-116">You’ll see a message indicating that your company or school is registering your device.</span></span>
+    Você verá uma mensagem que indica que sua empresa ou escola está registrando o dispositivo.
 
-5. <span data-ttu-id="b4ba5-117">Quando você vir a página **Tudo pronto!**,</span><span class="sxs-lookup"><span data-stu-id="b4ba5-117">When you see the **You’re all set!**</span></span> <span data-ttu-id="b4ba5-118">selecione **Fechar**.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-118">screen, select **Close**.</span></span> <span data-ttu-id="b4ba5-119">Você terminou.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-119">You’re done.</span></span>
+5. Quando você vir a página **Tudo pronto!**, selecione **Fechar**. Você terminou.
 
-  ![Selecione Fechar na tela “Você está pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Selecione Fechar na tela “Você está pronto!” “Tudo pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
 
-6. <span data-ttu-id="b4ba5-122">Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.</span><span class="sxs-lookup"><span data-stu-id="b4ba5-122">If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.</span></span>
+6. Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.
 
     ![Valide se a conexão foi configurada corretamente](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-<span data-ttu-id="b4ba5-124">Se você seguiu as etapas anteriores, mas ainda não consegue acessar sua conta de email e seus arquivos corporativos ou de estudante, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).</span><span class="sxs-lookup"><span data-stu-id="b4ba5-124">If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).</span></span>
+Se você seguiu as etapas anteriores, mas ainda não consegue acessar sua conta de email e seus arquivos corporativos ou de estudante, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).

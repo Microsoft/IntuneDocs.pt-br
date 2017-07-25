@@ -22,13 +22,12 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="dafb8-102">Verificar a conformidade em seu dispositivo Android</span><span class="sxs-lookup"><span data-stu-id="dafb8-102">Check compliance on your Android device</span></span>
-<a id="check-compliance-on-your-android-device" class="xliff"></a>
+# <a name="check-compliance-on-your-android-device"></a>Verificar a conformidade em seu dispositivo Android
 
-<span data-ttu-id="dafb8-103">Se o seu dispositivo não tiver feito check-in no Intune há algum tempo, talvez você não consiga acessar os recursos de sua empresa ou escola.</span><span class="sxs-lookup"><span data-stu-id="dafb8-103">If your device hasn't checked in with Intune in a while, you might not be able to access your company or school resources.</span></span> <span data-ttu-id="dafb8-104">Para obter acesso novamente, tente o seguinte:</span><span class="sxs-lookup"><span data-stu-id="dafb8-104">To regain access, try the following:</span></span>
+Se o seu dispositivo não tiver feito check-in no Intune há algum tempo, talvez você não consiga acessar os recursos de sua empresa ou escola. Para obter acesso novamente, tente o seguinte:
 
-1. <span data-ttu-id="dafb8-105">Abra o aplicativo do Portal da Empresa do Android no seu dispositivo.</span><span class="sxs-lookup"><span data-stu-id="dafb8-105">Open the Android Company Portal app on your device.</span></span>
+1. Abra o aplicativo do Portal da Empresa do Android no seu dispositivo.
 
-2. <span data-ttu-id="dafb8-106">Toque em **Verificar Conformidade**.</span><span class="sxs-lookup"><span data-stu-id="dafb8-106">Tap **Check Compliance**.</span></span>
+2. Toque em **Verificar Conformidade**.
 
-<span data-ttu-id="dafb8-107">Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você.</span><span class="sxs-lookup"><span data-stu-id="dafb8-107">If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you.</span></span> <span data-ttu-id="dafb8-108">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="dafb8-108">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+Se não for possível redefinir o dispositivo perdido ou roubado, peça ao seu administrador de TI para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

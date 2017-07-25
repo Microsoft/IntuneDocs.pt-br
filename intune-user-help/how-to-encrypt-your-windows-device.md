@@ -22,15 +22,14 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="dccbe-102">Como criptografar um dispositivo Windows</span><span class="sxs-lookup"><span data-stu-id="dccbe-102">How to encrypt your Windows device</span></span>
-<a id="how-to-encrypt-your-windows-device" class="xliff"></a>
+# <a name="how-to-encrypt-your-windows-device"></a>Como criptografar um dispositivo Windows
 
-<span data-ttu-id="dccbe-103">Para proteger seus dados corporativos ou de estudante, o administrador de TI pode exigir que você criptografe o dispositivo Windows.</span><span class="sxs-lookup"><span data-stu-id="dccbe-103">To protect your company or school data, your IT administrator might require you to encrypt your Windows device.</span></span> <span data-ttu-id="dccbe-104">Se você tiver um Windows Phone que você registrou, seu dispositivo será criptografado automaticamente se a criptografia for necessária.</span><span class="sxs-lookup"><span data-stu-id="dccbe-104">If you have a Windows Phone, and you have enrolled it, your device will be encrypted automatically if encryption is required.</span></span>
+Para proteger seus dados corporativos ou de estudante, o administrador de TI pode exigir que você criptografe o dispositivo Windows. Se você tiver um Windows Phone que você registrou, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
 
-<span data-ttu-id="dccbe-105">Se você tiver um dispositivo de desktop, siga as instruções abaixo para criptografá-lo.</span><span class="sxs-lookup"><span data-stu-id="dccbe-105">If you have a desktop device, follow the instructions below to encrypt it.</span></span>
+Se você tiver um dispositivo de desktop, siga as instruções abaixo para criptografá-lo.
 
-1.  <span data-ttu-id="dccbe-106">Pesquise e inicie o aplicativo **Gerenciar o BitLocker**.</span><span class="sxs-lookup"><span data-stu-id="dccbe-106">Search for, and then start, the **Manage BitLocker** app.</span></span>
+1.  Pesquise e inicie o aplicativo **Gerenciar o BitLocker**.
 
-2.  <span data-ttu-id="dccbe-107">Clique em **Ativar o BitLocker** e siga as instruções mostradas para criptografar cada uma das unidades.</span><span class="sxs-lookup"><span data-stu-id="dccbe-107">Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.</span></span>
+2.  Clique em **Ativar o BitLocker** e siga as instruções mostradas para criptografar cada uma das unidades.
 
-<span data-ttu-id="dccbe-108">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="dccbe-108">Still need help?</span></span> <span data-ttu-id="dccbe-109">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="dccbe-109">Contact your IT admin.</span></span> <span data-ttu-id="dccbe-110">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="dccbe-110">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
