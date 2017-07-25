@@ -1,1 +1,1 @@
-<span data-ttu-id="30a71-101">Número de telefone nos Estados Unidos: (800) 221-4792</span><span class="sxs-lookup"><span data-stu-id="30a71-101">Telephone number from within the United States: (800) 221-4792</span></span>
+Número de telefone nos Estados Unidos: (800) 221-4792

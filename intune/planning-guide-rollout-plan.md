@@ -20,41 +20,24 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
-<<<<<<< HEAD
-# <span data-ttu-id="02e72-103">Desenvolver um plano de distribuição</span><span class="sxs-lookup"><span data-stu-id="02e72-103">Develop a rollout plan</span></span>
-=======
 # Desenvolver um plano de distribuição
->>>>>>> live
 <a id="develop-a-rollout-plan" class="xliff"></a>
 
-<span data-ttu-id="02e72-104">Seu plano de distribuição identifica os grupos organizacionais que você deseja direcionar para a distribuição do Intune, o cronograma de distribuição para cada grupo e as abordagens de registro que você usará.</span><span class="sxs-lookup"><span data-stu-id="02e72-104">Your rollout plan identifies the organizational groups you want to target for your Intune rollout, the rollout timeframe for each group, and the enrollment approaches you will use.</span></span>
+Seu plano de distribuição identifica os grupos organizacionais que você deseja direcionar para a distribuição do Intune, o cronograma de distribuição para cada grupo e as abordagens de registro que você usará.
 
-<<<<<<< HEAD
-## <span data-ttu-id="02e72-105">Grupos direcionados e cronogramas</span><span class="sxs-lookup"><span data-stu-id="02e72-105">Targeted groups and timeframes</span></span>
-=======
 ## Grupos direcionados e cronogramas
->>>>>>> live
 <a id="targeted-groups-and-timeframes" class="xliff"></a>
 
-<span data-ttu-id="02e72-106">Primeiro, examine os grupos que são direcionados com a distribuição do Intune e que você identificou nos [cenários de casos de uso](planning-guide-scenarios.md).</span><span class="sxs-lookup"><span data-stu-id="02e72-106">First, review the groups that are targeted with your Intune rollout and that you identified in your [use-case scenarios](planning-guide-scenarios.md).</span></span>
+Primeiro, examine os grupos que são direcionados com a distribuição do Intune e que você identificou nos [cenários de casos de uso](planning-guide-scenarios.md).
 
-<span data-ttu-id="02e72-107">Em segundo lugar, determine o cronograma para cada grupo direcionado.</span><span class="sxs-lookup"><span data-stu-id="02e72-107">Second, determine the time frame for each targeted group.</span></span> <span data-ttu-id="02e72-108">Normalmente, essa tarefa exige uma conversa entre a equipe de implantação do Intune e os grupos direcionados, para determinar o cronograma de distribuição mais apropriado para cada grupo.</span><span class="sxs-lookup"><span data-stu-id="02e72-108">This task typically requires a discussion between the Intune deployment team and the targeted groups to determine the most appropriate rollout time frame for each group.</span></span> <span data-ttu-id="02e72-109">Os pontos a serem abordados em uma discussão desse tipo incluem:</span><span class="sxs-lookup"><span data-stu-id="02e72-109">Points to cover in such a discussion include:</span></span>
-* <span data-ttu-id="02e72-110">A disposição do grupo para mudanças</span><span class="sxs-lookup"><span data-stu-id="02e72-110">The group’s willingness for change</span></span>
-* <span data-ttu-id="02e72-111">O número de usuários e dispositivos</span><span class="sxs-lookup"><span data-stu-id="02e72-111">The number of users and devices</span></span>
-* <span data-ttu-id="02e72-112">Tipos de plataformas de dispositivo</span><span class="sxs-lookup"><span data-stu-id="02e72-112">Types of device platforms</span></span>
-* <span data-ttu-id="02e72-113">Requisitos</span><span class="sxs-lookup"><span data-stu-id="02e72-113">Requirements</span></span>
-* <span data-ttu-id="02e72-114">Localização geográfica</span><span class="sxs-lookup"><span data-stu-id="02e72-114">Geographic location</span></span>
-* <span data-ttu-id="02e72-115">Risco para os negócios</span><span class="sxs-lookup"><span data-stu-id="02e72-115">Business risk</span></span>
+Em segundo lugar, determine o cronograma para cada grupo direcionado. Normalmente, essa tarefa exige uma conversa entre a equipe de implantação do Intune e os grupos direcionados, para determinar o cronograma de distribuição mais apropriado para cada grupo. Os pontos a serem abordados em uma discussão desse tipo incluem:
+* A disposição do grupo para mudanças
+* O número de usuários e dispositivos
+* Tipos de plataformas de dispositivo
+* Requisitos
+* Localização geográfica
+* Risco para os negócios
 
-<<<<<<< HEAD
-## <span data-ttu-id="02e72-116">Fases de distribuição</span><span class="sxs-lookup"><span data-stu-id="02e72-116">Rollout phases</span></span>
-<a id="rollout-phases" class="xliff"></a>
-<span data-ttu-id="02e72-117">Em geral, as organizações optam por iniciar a distribuição do Intune com um piloto inicial, visando um pequeno grupo de usuários no departamento de TI.</span><span class="sxs-lookup"><span data-stu-id="02e72-117">Organizations commonly choose to start the Intune rollout with an initial pilot, targeting a small group of users in the IT department.</span></span> <span data-ttu-id="02e72-118">O piloto pode ser expandido para incluir um conjunto mais amplo de usuários de TI e pode incluir a participação de outros grupos organizacionais.</span><span class="sxs-lookup"><span data-stu-id="02e72-118">The pilot can be expanded to include a broader set of IT users and may include participation from other organizational groups.</span></span>
-
-### <span data-ttu-id="02e72-119">Piloto</span><span class="sxs-lookup"><span data-stu-id="02e72-119">Pilot</span></span>
-<a id="pilot" class="xliff"></a>
-<span data-ttu-id="02e72-120">A primeira fase a ser distribuída deve ser para usuários pilotos.</span><span class="sxs-lookup"><span data-stu-id="02e72-120">The first phase to rollout should be to pilot users.</span></span> <span data-ttu-id="02e72-121">Os usuários pilotos devem entender que eles são os primeiros usuários de uma nova solução.</span><span class="sxs-lookup"><span data-stu-id="02e72-121">The pilot users should understand they are the first users in a new solution.</span></span> <span data-ttu-id="02e72-122">Eles devem estar dispostos a fornecer comentários para ajudar a melhorar a configuração, a documentação, as notificações e facilitar o caminho de todos os outros usuários nas fases de distribuição posteriores.</span><span class="sxs-lookup"><span data-stu-id="02e72-122">They must be willing to provide feedback to help improve configuration, documentation, notifications, and ease the way for all other users in later rollout phases.</span></span> <span data-ttu-id="02e72-123">Esses usuários não devem ser executivos nem VIPs.</span><span class="sxs-lookup"><span data-stu-id="02e72-123">These users should not be executives or VIPs.</span></span>
-=======
 ## Fases de distribuição
 <a id="rollout-phases" class="xliff"></a>
 Em geral, as organizações optam por iniciar a distribuição do Intune com um piloto inicial, visando um pequeno grupo de usuários no departamento de TI. O piloto pode ser expandido para incluir um conjunto mais amplo de usuários de TI e pode incluir a participação de outros grupos organizacionais.
@@ -62,102 +45,59 @@ Em geral, as organizações optam por iniciar a distribuição do Intune com um 
 ### Piloto
 <a id="pilot" class="xliff"></a>
 A primeira fase a ser distribuída deve ser para usuários pilotos. Os usuários pilotos devem entender que eles são os primeiros usuários de uma nova solução. Eles devem estar dispostos a fornecer comentários para ajudar a melhorar a configuração, a documentação, as notificações e facilitar o caminho de todos os outros usuários nas fases de distribuição posteriores. Esses usuários não devem ser executivos nem VIPs.
->>>>>>> live
 
-<span data-ttu-id="02e72-124">O piloto é uma boa oportunidade de testar os [desafios](planning-guide-deployment-goals.md) e refinar os [requisitos](planning-guide-requirements.md) coletados anteriormente.</span><span class="sxs-lookup"><span data-stu-id="02e72-124">The pilot is a good opportunity for you to test the [challenges](planning-guide-deployment-goals.md) and refine [requirements](planning-guide-requirements.md) you gathered earlier.</span></span>
+O piloto é uma boa oportunidade de testar os [desafios](planning-guide-deployment-goals.md) e refinar os [requisitos](planning-guide-requirements.md) coletados anteriormente.
 
-<span data-ttu-id="02e72-125">Inclua o plano de [comunicação](planning-guide-communication-plan.md), o plano de [suporte](planning-guide-support-plan.md) e o [teste e validação](planning-guide-test-validation.md) para solucionar problemas quando o impacto para os usuários ainda é pequeno.</span><span class="sxs-lookup"><span data-stu-id="02e72-125">Include your [communication](planning-guide-communication-plan.md) plan, [support](planning-guide-support-plan.md) plan, and [testing and validation](planning-guide-test-validation.md) to work out any problems while the impact to users is still small.</span></span>
+Inclua o plano de [comunicação](planning-guide-communication-plan.md), o plano de [suporte](planning-guide-support-plan.md) e o [teste e validação](planning-guide-test-validation.md) para solucionar problemas quando o impacto para os usuários ainda é pequeno.
 
-<<<<<<< HEAD
-### <span data-ttu-id="02e72-126">Distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-126">Production rollout</span></span>
-<a id="production-rollout" class="xliff"></a>
-<span data-ttu-id="02e72-127">Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição de produção completa, direcionando o restante dos grupos de sua organização.</span><span class="sxs-lookup"><span data-stu-id="02e72-127">After a successful pilot, you're ready to start a full production rollout, targeting the rest of your organization’s groups.</span></span> <span data-ttu-id="02e72-128">Alguns exemplos de grupos de distribuição diferentes e fases são:</span><span class="sxs-lookup"><span data-stu-id="02e72-128">Some examples of different rollout groups and phases are:</span></span>
-=======
 ### Distribuição de produção
 <a id="production-rollout" class="xliff"></a>
 Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição de produção completa, direcionando o restante dos grupos de sua organização. Alguns exemplos de grupos de distribuição diferentes e fases são:
->>>>>>> live
 
--   <span data-ttu-id="02e72-129">**Departamentos**</span><span class="sxs-lookup"><span data-stu-id="02e72-129">**Departments**</span></span> <br/><span data-ttu-id="02e72-130">Cada departamento pode ser uma fase de distribuição.</span><span class="sxs-lookup"><span data-stu-id="02e72-130">Each department can be a rollout phase.</span></span> <span data-ttu-id="02e72-131">Você pode direcionar todo o departamento de uma só vez.</span><span class="sxs-lookup"><span data-stu-id="02e72-131">You target an entire department at a time.</span></span> <span data-ttu-id="02e72-132">Nesse tipo de distribuição, os usuários de cada departamento tendem a usar o dispositivo móvel da mesma maneira e acessar os mesmos aplicativos.</span><span class="sxs-lookup"><span data-stu-id="02e72-132">In this type of rollout, users in each department tend to use the mobile device in the same way and access the same applications.</span></span> <span data-ttu-id="02e72-133">Os usuários provavelmente terão os mesmos tipos de políticas.</span><span class="sxs-lookup"><span data-stu-id="02e72-133">Users will likely have the same types of policies.</span></span>
+-   **Departamentos** <br/>Cada departamento pode ser uma fase de distribuição. Você pode direcionar todo o departamento de uma só vez. Nesse tipo de distribuição, os usuários de cada departamento tendem a usar o dispositivo móvel da mesma maneira e acessar os mesmos aplicativos. Os usuários provavelmente terão os mesmos tipos de políticas.
 
--   <span data-ttu-id="02e72-134">**Geografia**</span><span class="sxs-lookup"><span data-stu-id="02e72-134">**Geography**</span></span> <br/><span data-ttu-id="02e72-135">Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país, região ou o edifício da mesma empresa.</span><span class="sxs-lookup"><span data-stu-id="02e72-135">In this approach, you deploy to all users in a specific geography whether it’s the same continent, country, region, or same company’s building.</span></span> <span data-ttu-id="02e72-136">Esse tipo de implantação em fases permite focalizar a localização específica de usuários.</span><span class="sxs-lookup"><span data-stu-id="02e72-136">This type of phased deployment lets you focus on the specific location of users.</span></span> <span data-ttu-id="02e72-137">Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido.</span><span class="sxs-lookup"><span data-stu-id="02e72-137">This could let you provide more of a  [white glove](#user-assisted-enrollment) approach because the number of locations deploying Intune at the same time is reduced.</span></span> <span data-ttu-id="02e72-138">Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.</span><span class="sxs-lookup"><span data-stu-id="02e72-138">Because there are chances of different departments or use cases being at the same location, different use cases might be deployed at the same time.</span></span>
+-   **Geografia** <br/>Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país, região ou o edifício da mesma empresa. Esse tipo de implantação em fases permite focalizar a localização específica de usuários. Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido. Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.
 
--   <span data-ttu-id="02e72-139">**Plataforma**</span><span class="sxs-lookup"><span data-stu-id="02e72-139">**Platform**</span></span> <br/><span data-ttu-id="02e72-140">Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="02e72-140">This type of deployment consists of deploying similar platforms at the same time.</span></span> <span data-ttu-id="02e72-141">Um exemplo pode ser todos os dispositivos iOS no primeiro mês, seguido pelo Android e, depois, pelo Windows.</span><span class="sxs-lookup"><span data-stu-id="02e72-141">An example might be all iOS devices the first month, followed by Android, followed by Windows.</span></span> <span data-ttu-id="02e72-142">Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.</span><span class="sxs-lookup"><span data-stu-id="02e72-142">This type of phased deployment helps simplify helpdesk support because helpdesk would only have to support a single platform at a time.</span></span>
+-   **Plataforma** <br/>Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo. Um exemplo pode ser todos os dispositivos iOS no primeiro mês, seguido pelo Android e, depois, pelo Windows. Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.
 
-<span data-ttu-id="02e72-143">Este é um exemplo de um plano de distribuição do Intune que inclui grupos de destino e linhas do tempo:</span><span class="sxs-lookup"><span data-stu-id="02e72-143">Here’s an example of an Intune rollout plan that includes targeted groups and timelines:</span></span>
+Este é um exemplo de um plano de distribuição do Intune que inclui grupos de destino e linhas do tempo:
 
-| <span data-ttu-id="02e72-144">**Fase de distribuição**</span><span class="sxs-lookup"><span data-stu-id="02e72-144">**Rollout phase**</span></span> | <span data-ttu-id="02e72-145">**Julho**</span><span class="sxs-lookup"><span data-stu-id="02e72-145">**July**</span></span> | <span data-ttu-id="02e72-146">**Agosto**</span><span class="sxs-lookup"><span data-stu-id="02e72-146">**August**</span></span> | <span data-ttu-id="02e72-147">**Setembro**</span><span class="sxs-lookup"><span data-stu-id="02e72-147">**September**</span></span> | <span data-ttu-id="02e72-148">**Outubro**</span><span class="sxs-lookup"><span data-stu-id="02e72-148">**October**</span></span> |
+| **Fase de distribuição** | **Julho** | **Agosto** | **Setembro** | **Outubro** |
 |:---:|:---:|:---:|:---:|:---:|
-| <span data-ttu-id="02e72-149">Piloto Limitado</span><span class="sxs-lookup"><span data-stu-id="02e72-149">Limited Pilot</span></span> | <span data-ttu-id="02e72-150">TI (50 usuários)</span><span class="sxs-lookup"><span data-stu-id="02e72-150">IT (50 users)</span></span> |  |  |  |                                                         
-| <span data-ttu-id="02e72-151">Piloto Expandido</span><span class="sxs-lookup"><span data-stu-id="02e72-151">Expanded Pilot</span></span> | <span data-ttu-id="02e72-152">TI (200 usuários), Executivos de TI (10 usuários)</span><span class="sxs-lookup"><span data-stu-id="02e72-152">IT (200 users), IT Executives (10 users)</span></span> |  |  |  |                                                         
-| <span data-ttu-id="02e72-153">Fase 1 da distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-153">Production rollout phase 1</span></span> |  | <span data-ttu-id="02e72-154">Vendas e Marketing (2.000 usuários)</span><span class="sxs-lookup"><span data-stu-id="02e72-154">Sales and Marketing (2000 users)</span></span> |  |  |
-| <span data-ttu-id="02e72-155">Fase 2 da distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-155">Production rollout phase 2</span></span> |  |  | <span data-ttu-id="02e72-156">Varejo (1.000 usuários)</span><span class="sxs-lookup"><span data-stu-id="02e72-156">Retail (1000 users)</span></span> |  |
-| <span data-ttu-id="02e72-157">Fase 3 da distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-157">Production rollout phase 3</span></span> |  |  |  | <span data-ttu-id="02e72-158">RH (50 usuários), Finanças (40 usuários), Executivos (30 usuários)</span><span class="sxs-lookup"><span data-stu-id="02e72-158">HR (50 users), Finance (40 users), Executives (30 users)</span></span> |
+| Piloto Limitado | TI (50 usuários) |  |  |  |                                                         
+| Piloto Expandido | TI (200 usuários), Executivos de TI (10 usuários) |  |  |  |                                                         
+| Fase 1 da distribuição de produção |  | Vendas e Marketing (2.000 usuários) |  |  |
+| Fase 2 da distribuição de produção |  |  | Varejo (1.000 usuários) |  |
+| Fase 3 da distribuição de produção |  |  |  | RH (50 usuários), Finanças (40 usuários), Executivos (30 usuários) |
 
-<<<<<<< HEAD
-<span data-ttu-id="02e72-159">[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir as fases de distribuição de sua organização.</span><span class="sxs-lookup"><span data-stu-id="02e72-159">You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to enter your organization’s rollout phases.</span></span>
-## <span data-ttu-id="02e72-160">Fazer a correspondência entre grupos de distribuição e abordagens de registro</span><span class="sxs-lookup"><span data-stu-id="02e72-160">Match rollout groups to enrollment approaches</span></span>
-=======
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir as fases de distribuição de sua organização.
 ## Fazer a correspondência entre grupos de distribuição e abordagens de registro
->>>>>>> live
 <a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
 
-<span data-ttu-id="02e72-161">Agora que você determinou os grupos direcionados e os cronogramas para a distribuição do Intune, a próxima etapa é escolher a abordagem de registro do Intune mais apropriada para cada grupo.</span><span class="sxs-lookup"><span data-stu-id="02e72-161">Now that you have determined the targeted groups and time frames for your Intune rollout, the next step is to choose the most appropriate Intune enrollment approach for each group.</span></span> <span data-ttu-id="02e72-162">Há diferentes métodos de registro que podem ser usados, incluindo:</span><span class="sxs-lookup"><span data-stu-id="02e72-162">There are different enrollment approaches you can use including:</span></span>
-* <span data-ttu-id="02e72-163">Autoatendimento do usuário</span><span class="sxs-lookup"><span data-stu-id="02e72-163">User self-service</span></span>
-* <span data-ttu-id="02e72-164">Registro assistido do usuário</span><span class="sxs-lookup"><span data-stu-id="02e72-164">User assisted-enrollment</span></span>
-* <span data-ttu-id="02e72-165">Feira de tecnologia de TI</span><span class="sxs-lookup"><span data-stu-id="02e72-165">IT tech fair</span></span>
+Agora que você determinou os grupos direcionados e os cronogramas para a distribuição do Intune, a próxima etapa é escolher a abordagem de registro do Intune mais apropriada para cada grupo. Há diferentes métodos de registro que podem ser usados, incluindo:
+* Autoatendimento do usuário
+* Registro assistido do usuário
+* Feira de tecnologia de TI
 
-<<<<<<< HEAD
-### <span data-ttu-id="02e72-166">Autoatendimento do usuário</span><span class="sxs-lookup"><span data-stu-id="02e72-166">User self-service</span></span>
-=======
 ### Autoatendimento do usuário
->>>>>>> live
 <a id="user-self-service" class="xliff"></a>
 
-<span data-ttu-id="02e72-167">Nesse caso, o usuário é responsável pelo registro de seu próprio dispositivo, geralmente, seguindo as instruções de registro fornecidas por sua organização de TI.</span><span class="sxs-lookup"><span data-stu-id="02e72-167">In this case, the user is responsible for enrolling their own device, usually following enrollment instructions provided by their IT organization.</span></span> <span data-ttu-id="02e72-168">Essa abordagem é mais usada nas organizações e é mais escalonável que o registro assistido do usuário.</span><span class="sxs-lookup"><span data-stu-id="02e72-168">This approach is most commonly used in organizations and is more scalable than user-assisted enrollment.</span></span>
+Nesse caso, o usuário é responsável pelo registro de seu próprio dispositivo, geralmente, seguindo as instruções de registro fornecidas por sua organização de TI. Essa abordagem é mais usada nas organizações e é mais escalonável que o registro assistido do usuário.
 
-<<<<<<< HEAD
-### <span data-ttu-id="02e72-169">Registro assistido do usuário</span><span class="sxs-lookup"><span data-stu-id="02e72-169">User-assisted enrollment</span></span>
-=======
 ### Registro assistido do usuário
->>>>>>> live
 <a id="user-assisted-enrollment" class="xliff"></a>
 
-<span data-ttu-id="02e72-170">Isso é conhecido como uma abordagem “diferenciada”.</span><span class="sxs-lookup"><span data-stu-id="02e72-170">This is known as a "white glove" approach.</span></span> <span data-ttu-id="02e72-171">Um membro da equipe de TI ajuda o usuário pelo processo de registro, pessoalmente ou com o Skype.</span><span class="sxs-lookup"><span data-stu-id="02e72-171">An IT team member helps the user through the enrollment process, in person or with Skype.</span></span> <span data-ttu-id="02e72-172">Essa abordagem geralmente é usada com a equipe executiva e com outros grupos que podem precisar de mais assistência durante o processo de registro.</span><span class="sxs-lookup"><span data-stu-id="02e72-172">This approach is commonly used with executive staff and other groups that might need more assistance during the enrollment process.</span></span>
+Isso é conhecido como uma abordagem “diferenciada”. Um membro da equipe de TI ajuda o usuário pelo processo de registro, pessoalmente ou com o Skype. Essa abordagem geralmente é usada com a equipe executiva e com outros grupos que podem precisar de mais assistência durante o processo de registro.
 
-<<<<<<< HEAD
-### <span data-ttu-id="02e72-173">Feira de tecnologia de TI</span><span class="sxs-lookup"><span data-stu-id="02e72-173">IT tech fair</span></span>
-=======
 ### Feira de tecnologia de TI
->>>>>>> live
 <a id="it-tech-fair" class="xliff"></a>
 
-<span data-ttu-id="02e72-174">Outra opção para o registro de usuário do Intune é realizar uma feira técnica de TI.</span><span class="sxs-lookup"><span data-stu-id="02e72-174">Another option for Intune user enrollment is to have an IT technical fair.</span></span> <span data-ttu-id="02e72-175">Nesse evento, o grupo de TI monta uma cabine de assistência de registro do Intune, na qual os usuários poderão receber informações sobre o registro do Intune, fazer perguntas e obter assistência com o processo de registro.</span><span class="sxs-lookup"><span data-stu-id="02e72-175">At this event, the IT group sets up an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions, and receive assistance with the enrollment process.</span></span> <span data-ttu-id="02e72-176">Essa opção pode ser útil para o grupo de TI e os usuários, especialmente durante as fases iniciais da distribuição do Intune.</span><span class="sxs-lookup"><span data-stu-id="02e72-176">This option can be beneficial for both the IT group and users, especially during early phases of Intune rollout.</span></span>
+Outra opção para o registro de usuário do Intune é realizar uma feira técnica de TI. Nesse evento, o grupo de TI monta uma cabine de assistência de registro do Intune, na qual os usuários poderão receber informações sobre o registro do Intune, fazer perguntas e obter assistência com o processo de registro. Essa opção pode ser útil para o grupo de TI e os usuários, especialmente durante as fases iniciais da distribuição do Intune.
 
-<span data-ttu-id="02e72-177">Este é um exemplo atualizado do plano de distribuição do Intune acima para incluir as abordagens de registro:</span><span class="sxs-lookup"><span data-stu-id="02e72-177">Here’s an updated example of the above Intune rollout plan to include enrollment approaches:</span></span>
+Este é um exemplo atualizado do plano de distribuição do Intune acima para incluir as abordagens de registro:
 
-| <span data-ttu-id="02e72-178">**Fase de distribuição**</span><span class="sxs-lookup"><span data-stu-id="02e72-178">**Rollout phase**</span></span> | <span data-ttu-id="02e72-179">**Julho**</span><span class="sxs-lookup"><span data-stu-id="02e72-179">**July**</span></span> | <span data-ttu-id="02e72-180">**Agosto**</span><span class="sxs-lookup"><span data-stu-id="02e72-180">**August**</span></span> | <span data-ttu-id="02e72-181">**Setembro**</span><span class="sxs-lookup"><span data-stu-id="02e72-181">**September**</span></span> | <span data-ttu-id="02e72-182">**Outubro**</span><span class="sxs-lookup"><span data-stu-id="02e72-182">**October**</span></span> |
+| **Fase de distribuição** | **Julho** | **Agosto** | **Setembro** | **Outubro** |
 |:---:|:---:|:---:|:---:|:---:|
-<<<<<<< HEAD
-| <span data-ttu-id="02e72-183">Piloto Limitado</span><span class="sxs-lookup"><span data-stu-id="02e72-183">Limited Pilot</span></span> |  |  |  |  |                                                         
-| <span data-ttu-id="02e72-184">Autoatendimento</span><span class="sxs-lookup"><span data-stu-id="02e72-184">Self-service</span></span> | <span data-ttu-id="02e72-185">TI</span><span class="sxs-lookup"><span data-stu-id="02e72-185">IT</span></span> |  |  |  |
-| <span data-ttu-id="02e72-186">Piloto Expandido</span><span class="sxs-lookup"><span data-stu-id="02e72-186">Expanded Pilot</span></span> |  |  |  |  |                                                         
-| <span data-ttu-id="02e72-187">Autoatendimento</span><span class="sxs-lookup"><span data-stu-id="02e72-187">Self-service</span></span> | <span data-ttu-id="02e72-188">TI</span><span class="sxs-lookup"><span data-stu-id="02e72-188">IT</span></span> |  |  |  |
-| <span data-ttu-id="02e72-189">Diferenciado</span><span class="sxs-lookup"><span data-stu-id="02e72-189">White glove</span></span> | <span data-ttu-id="02e72-190">Executivos de TI</span><span class="sxs-lookup"><span data-stu-id="02e72-190">IT Executives</span></span> |  |  |  |
-| <span data-ttu-id="02e72-191">Fase 1 da distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-191">Production rollout phase 1</span></span> |  | <span data-ttu-id="02e72-192">Vendas, Marketing</span><span class="sxs-lookup"><span data-stu-id="02e72-192">Sales, Marketing</span></span> |  |  |
-| <span data-ttu-id="02e72-193">Autoatendimento</span><span class="sxs-lookup"><span data-stu-id="02e72-193">Self-service</span></span> |  | <span data-ttu-id="02e72-194">Vendas e marketing</span><span class="sxs-lookup"><span data-stu-id="02e72-194">Sales and Marketing</span></span> |  |  |
-| <span data-ttu-id="02e72-195">Fase 2 da distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-195">Production rollout phase 2</span></span> |  |  | <span data-ttu-id="02e72-196">Varejo</span><span class="sxs-lookup"><span data-stu-id="02e72-196">Retail</span></span> |  |
-| <span data-ttu-id="02e72-197">Autoatendimento</span><span class="sxs-lookup"><span data-stu-id="02e72-197">Self-service</span></span> |  |  |  |  |
-| <span data-ttu-id="02e72-198">Fase 3 da distribuição de produção</span><span class="sxs-lookup"><span data-stu-id="02e72-198">Production rollout phase 3</span></span> |  |  | <span data-ttu-id="02e72-199">Varejo</span><span class="sxs-lookup"><span data-stu-id="02e72-199">Retail</span></span> |  |
-| <span data-ttu-id="02e72-200">Autoatendimento</span><span class="sxs-lookup"><span data-stu-id="02e72-200">Self-service</span></span> |  |  |  | <span data-ttu-id="02e72-201">RH, Finanças</span><span class="sxs-lookup"><span data-stu-id="02e72-201">HR, Finance</span></span> |
-| <span data-ttu-id="02e72-202">Diferenciado</span><span class="sxs-lookup"><span data-stu-id="02e72-202">White glove</span></span> |  |  |  | <span data-ttu-id="02e72-203">Executivos</span><span class="sxs-lookup"><span data-stu-id="02e72-203">Executives</span></span> |
-
-## <span data-ttu-id="02e72-204">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="02e72-204">Next steps</span></span>
-<a id="next-steps" class="xliff"></a>
-
-<span data-ttu-id="02e72-205">A próxima seção fornece diretrizes sobre como [desenvolver um plano de comunicação para a distribuição do Intune](planning-guide-communication-plan.md).</span><span class="sxs-lookup"><span data-stu-id="02e72-205">The next section provides guidance on [developing an Intune rollout communication plan](planning-guide-communication-plan.md).</span></span>
-=======
 | Piloto Limitado |  |  |  |  |                                                         
 | Autoatendimento | TI |  |  |  |
 | Piloto Expandido |  |  |  |  |                                                         
@@ -175,4 +115,3 @@ Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição
 <a id="next-steps" class="xliff"></a>
 
 A próxima seção fornece diretrizes sobre como [desenvolver um plano de comunicação para a distribuição do Intune](planning-guide-communication-plan.md).
->>>>>>> live

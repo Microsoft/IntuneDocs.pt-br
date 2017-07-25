@@ -1,1 +1,1 @@
-<span data-ttu-id="fe770-101">Recursos de acessibilidade do Windows</span><span class="sxs-lookup"><span data-stu-id="fe770-101">Accessibility Features of Windows</span></span>
+Recursos de acessibilidade do Windows

@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="6e7fd-103">Produtos e serviços de acessibilidade da Microsoft</span><span class="sxs-lookup"><span data-stu-id="6e7fd-103">Accessibility Products and Services from Microsoft</span></span>
-<a id="accessibility-products-and-services-from-microsoft" class="xliff"></a>
+# <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 
 -   [!INCLUDE[accessibility2](./includes/accessibility2_md.md)]
@@ -35,20 +34,16 @@ ms.lasthandoff: 07/01/2017
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## <span data-ttu-id="6e7fd-104">Recursos de acessibilidade do Windows</span><span class="sxs-lookup"><span data-stu-id="6e7fd-104">Accessibility features of Windows</span></span>
-<a id="accessibility-features-of-windows" class="xliff"></a>
+## <a name="accessibility-features-of-windows"></a>Recursos de acessibilidade do Windows
 [!INCLUDE[accessibility7](./includes/accessibility7_md.md)]
 
-### <span data-ttu-id="6e7fd-105">Tutoriais passo a passo gratuitos</span><span class="sxs-lookup"><span data-stu-id="6e7fd-105">Free step-by-step tutorials</span></span>
-<a id="free-step-by-step-tutorials" class="xliff"></a>
+### <a name="free-step-by-step-tutorials"></a>Tutoriais passo a passo gratuitos
 [!INCLUDE[accessibility8](./includes/accessibility8_md.md)]
 
-### <span data-ttu-id="6e7fd-106">Produtos de tecnologia assistencial para Windows</span><span class="sxs-lookup"><span data-stu-id="6e7fd-106">Assistive technology products for Windows</span></span>
-<a id="assistive-technology-products-for-windows" class="xliff"></a>
+### <a name="assistive-technology-products-for-windows"></a>Produtos de tecnologia assistencial para Windows
 [!INCLUDE[accessibility9](./includes/accessibility9_md.md)]
 
-## <span data-ttu-id="6e7fd-107">Documentação em formatos alternativos</span><span class="sxs-lookup"><span data-stu-id="6e7fd-107">Documentation in alternative formats</span></span>
-<a id="documentation-in-alternative-formats" class="xliff"></a>
+## <a name="documentation-in-alternative-formats"></a>Documentação em formatos alternativos
 [!INCLUDE[accessibility10](./includes/accessibility10_md.md)]
 
 [!INCLUDE[accessibility11](./includes/accessibility11_md.md)]
@@ -61,8 +56,7 @@ ms.lasthandoff: 07/01/2017
 
 [!INCLUDE[accessibility12](./includes/accessibility12_md.md)]
 
-## <span data-ttu-id="6e7fd-108">Atendimento ao Cliente para pessoas com deficiências auditivas</span><span class="sxs-lookup"><span data-stu-id="6e7fd-108">Customer Service for people with hearing impairments</span></span>
-<a id="customer-service-for-people-with-hearing-impairments" class="xliff"></a>
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Atendimento ao Cliente para pessoas com deficiências auditivas
 [!INCLUDE[accessibility13](./includes/accessibility13_md.md)]
 
 -   [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
@@ -71,6 +65,5 @@ ms.lasthandoff: 07/01/2017
 
 [!INCLUDE[accessibility16](./includes/accessibility16_md.md)]
 
-## <span data-ttu-id="6e7fd-109">Para obter mais informações</span><span class="sxs-lookup"><span data-stu-id="6e7fd-109">For more information</span></span>
-<a id="for-more-information" class="xliff"></a>
+## <a name="for-more-information"></a>Para obter mais informações
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]

@@ -21,7 +21,7 @@
       "docset_name": "InTuneDocs",
       "build_source_folder": "intune-classic",
       "build_output_subfolder": "intune-classic",
-    "locale": "pt-br",
+      "locale": "pt-br",
       "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {

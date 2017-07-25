@@ -1,1 +1,1 @@
-<span data-ttu-id="dcc65-101">Atendimento ao Cliente para pessoas com deficiências auditivas</span><span class="sxs-lookup"><span data-stu-id="dcc65-101">Customer Service for People with Hearing Impairments</span></span>
+Atendimento ao Cliente para pessoas com deficiências auditivas

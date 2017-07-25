@@ -1,7 +1,7 @@
 ---
-title: "<span data-ttu-id=\"d6ac5-101\">Solução de problemas de perfis de dispositivo no Microsoft Intune</span><span class=\"sxs-lookup\"><span data-stu-id=\"d6ac5-101\">Troubleshooting device profiles in Microsoft Intune</span></span>"
+title: "Solução de problemas de perfis de dispositivo no Microsoft Intune"
 titleSuffix: Intune on Azure
-description: "<span data-ttu-id=\"d6ac5-102\">Se estiver tendo dificuldades, use este tópico para ajudar a solucionar problemas com perfis de dispositivo do Intune.</span><span class=\"sxs-lookup\"><span data-stu-id=\"d6ac5-102\">If you're stuck, use this topic to help you solve problems with Intune device profiles.\"</span></span>"
+description: "Se estiver tendo dificuldades, use este tópico para ajudar a solucionar problemas com perfis de dispositivo do Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -21,114 +21,105 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="d6ac5-103">Solução de problemas de perfis de dispositivo no Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="d6ac5-103">Troubleshooting device profiles in Microsoft Intune</span></span>
-<a id="troubleshooting-device-profiles-in-microsoft-intune" class="xliff"></a>
+# <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Solução de problemas de perfis de dispositivo no Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-<span data-ttu-id="d6ac5-104">As informações neste tópico podem ser usadas para ajudar a solucionar problemas comuns relacionados a perfis de dispositivo do Intune.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-104">The information in this topic can be used to help you troubleshoot common issues around Intune device profiles.</span></span>
+As informações neste tópico podem ser usadas para ajudar a solucionar problemas comuns relacionados a perfis de dispositivo do Intune.
 
-## <span data-ttu-id="d6ac5-105">Quanto tempo leva para dispositivos móveis obterem uma política ou os aplicativos depois de terem sido atribuídos?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-105">How long does it take for mobile devices to get a policy or apps after they have been assigned?</span></span>
-<a id="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned" class="xliff"></a>
-<span data-ttu-id="d6ac5-106">Quando uma política ou um aplicativo é atribuído, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer o check-in com o serviço do Intune.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-106">When a policy or an app is assigned, Intune immediately begins attempting to notify the device that it should check in with the Intune service.</span></span> <span data-ttu-id="d6ac5-107">Em geral, isso leva menos de cinco minutos.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-107">This typically takes less than five minutes.</span></span>
+## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Quanto tempo leva para dispositivos móveis obterem uma política ou os aplicativos depois de terem sido atribuídos?
+Quando uma política ou um aplicativo é atribuído, o Intune imediatamente começa a tentar notificar o dispositivo de que ele deve fazer o check-in com o serviço do Intune. Em geral, isso leva menos de cinco minutos.
 
-<span data-ttu-id="d6ac5-108">Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-108">If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.</span></span>  <span data-ttu-id="d6ac5-109">Se o dispositivo estiver offline (por exemplo, desativado ou desconectado da rede), ele poderá não receber as notificações.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-109">If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications.</span></span> <span data-ttu-id="d6ac5-110">Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="d6ac5-110">In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:</span></span>
+Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas.  Se o dispositivo estiver offline (por exemplo, desativado ou desconectado da rede), ele poderá não receber as notificações. Nesse caso, o dispositivo receberá a política no próximo check-in agendado com o serviço do Intune da seguinte maneira:
 
-- <span data-ttu-id="d6ac5-111">iOS e macOS: a cada 6 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-111">iOS and macOS: Every 6 hours.</span></span>
-- <span data-ttu-id="d6ac5-112">Android: a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-112">Android: Every 8 hours.</span></span>
-- <span data-ttu-id="d6ac5-113">Windows Phone: a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-113">Windows Phone: Every 8 hours.</span></span>
-- <span data-ttu-id="d6ac5-114">Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-114">Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.</span></span>
+- iOS e macOS: a cada 6 horas.
+- Android: a cada 8 horas.
+- Windows Phone: a cada 8 horas.
+- Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada 8 horas.
 
-<span data-ttu-id="d6ac5-115">Se o dispositivo tiver sido registrado recentemente, a frequência de check-in será maior, da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="d6ac5-115">If the device has just enrolled, the check-in frequency will be more frequent, as follows:</span></span>
+Se o dispositivo tiver sido registrado recentemente, a frequência de check-in será maior, da seguinte maneira:
 
-- <span data-ttu-id="d6ac5-116">iOS e macOS: a cada 15 minutos por 6 horas, e depois a cada 6 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-116">iOS and macOS: Every 15 minutes for 6 hours, and then every 6 hours.</span></span>
-- <span data-ttu-id="d6ac5-117">Android: a cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-117">Android: Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.</span></span>
-- <span data-ttu-id="d6ac5-118">Windows Phone: a cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-118">Windows Phone: Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.</span></span>
-- <span data-ttu-id="d6ac5-119">Computadores Windows registrados como dispositivos: a cada 3 minutos por 30 minutos e a cada 8 horas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-119">Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.</span></span>
+- iOS e macOS: a cada 15 minutos por 6 horas, e depois a cada 6 horas.
+- Android: a cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.
+- Windows Phone: a cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e então a cada 8 horas.
+- Computadores Windows registrados como dispositivos: a cada 3 minutos por 30 minutos e a cada 8 horas.
 
-<span data-ttu-id="d6ac5-120">Os usuários também podem iniciar o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-120">Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.</span></span>
+Os usuários também podem iniciar o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer momento.
 
-## <span data-ttu-id="d6ac5-121">Que ações fazem com que o Intune envie imediatamente uma notificação para um dispositivo?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-121">What actions cause Intune to immediately send a notification to a device?</span></span>
-<a id="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device" class="xliff"></a>
-<span data-ttu-id="d6ac5-122">Os dispositivos fazem o check-in no Intune quando recebem uma notificação que os informa para fazer check-in ou durante o check-in agendado regularmente.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-122">Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.</span></span>  <span data-ttu-id="d6ac5-123">Quando você seleciona um dispositivo ou usuário especificamente com uma ação como apagamento, bloqueio, redefinição de senha, atribuição de aplicativo, atribuição do perfil (Wi-Fi, VPN, email etc.) ou atribuição de política, o Intune começa imediatamente a tentar notificar o dispositivo de que ele deve fazer check-in no serviço Intune para receber essas atualizações.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-123">When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app assignment, profile assignment (Wi-Fi, VPN, email, etc.), or policy assignment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.</span></span>
+## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem com que o Intune envie imediatamente uma notificação para um dispositivo?
+Os dispositivos fazem o check-in no Intune quando recebem uma notificação que os informa para fazer check-in ou durante o check-in agendado regularmente.  Quando você seleciona um dispositivo ou usuário especificamente com uma ação como apagamento, bloqueio, redefinição de senha, atribuição de aplicativo, atribuição do perfil (Wi-Fi, VPN, email etc.) ou atribuição de política, o Intune começa imediatamente a tentar notificar o dispositivo de que ele deve fazer check-in no serviço Intune para receber essas atualizações.
 
-<span data-ttu-id="d6ac5-124">Outras alterações, como revisar as informações de contato no portal da empresa, não causam uma notificação imediata para os dispositivos.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-124">Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.</span></span>
+Outras alterações, como revisar as informações de contato no portal da empresa, não causam uma notificação imediata para os dispositivos.
 
-## <span data-ttu-id="d6ac5-125">Se várias políticas forem atribuídas ao mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-125">If multiple policies are assigned to the same user or device, how do I know which settings will get applied?</span></span>
-<a id="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied" class="xliff"></a>
-<span data-ttu-id="d6ac5-126">Quando duas ou mais políticas são atribuídas ao mesmo usuário ou dispositivo, a avaliação de qual configuração é aplicada ocorre no nível da configuração individual:</span><span class="sxs-lookup"><span data-stu-id="d6ac5-126">When two or more policies are assigned to the same user or device, the evaluation for which setting is applied happens at the individual setting level:</span></span>
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Se várias políticas forem atribuídas ao mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?
+Quando duas ou mais políticas são atribuídas ao mesmo usuário ou dispositivo, a avaliação de qual configuração é aplicada ocorre no nível da configuração individual:
 
--   <span data-ttu-id="d6ac5-127">Configurações de política de conformidade sempre têm precedência sobre configurações da política.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-127">Compliance policy settings always have precedence over configuration policy settings.</span></span>
+-   Configurações de política de conformidade sempre têm precedência sobre configurações da política.
 
--   <span data-ttu-id="d6ac5-128">A configuração de política de conformidade mais restritiva é aplicada se avaliada em relação à mesma configuração em uma política de conformidade diferente.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-128">The most restrictive compliance policy setting is applied if it is evaluated against the same setting in a different compliance policy.</span></span>
+-   A configuração de política de conformidade mais restritiva é aplicada se avaliada em relação à mesma configuração em uma política de conformidade diferente.
 
--   <span data-ttu-id="d6ac5-129">Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-129">If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console.</span></span> <span data-ttu-id="d6ac5-130">Você deve resolver esses conflitos manualmente.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-130">You must manually resolve such conflicts.</span></span>
+-   Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune. Você deve resolver esses conflitos manualmente.
 
-## <span data-ttu-id="d6ac5-131">O que acontece quando as políticas de proteção de aplicativo entram em conflito umas com as outras?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-131">What happens when app protection policies conflict with each other?</span></span> <span data-ttu-id="d6ac5-132">Qual delas será aplicada ao aplicativo?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-132">Which one will be applied to the app?</span></span>
-<a id="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app" class="xliff"></a>
-<span data-ttu-id="d6ac5-133">Os valores de conflito são as configurações mais restritivas disponíveis em uma política de proteção de aplicativo, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).</span><span class="sxs-lookup"><span data-stu-id="d6ac5-133">Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset).</span></span>  <span data-ttu-id="d6ac5-134">Os campos de entrada de número serão definidos com os mesmos valores, como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-134">The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.</span></span>
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicativo entram em conflito umas com as outras? Qual delas será aplicada ao aplicativo?
+Os valores de conflito são as configurações mais restritivas disponíveis em uma política de proteção de aplicativo, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).  Os campos de entrada de número serão definidos com os mesmos valores, como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.
 
-<span data-ttu-id="d6ac5-135">Os conflitos ocorrem quando duas configurações de perfil são iguais.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-135">Conflicts occur when two profile settings are the same.</span></span>  <span data-ttu-id="d6ac5-136">Por exemplo, você configurou duas políticas MAM idênticas, exceto pela configuração de copiar/colar.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-136">For example, you configured two MAM policies that are identical except for the copy/paste setting.</span></span>  <span data-ttu-id="d6ac5-137">Nesse cenário, a configuração de copiar/colar será definida para o valor mais restritivo, mas o restante das configurações será aplicado como configurado.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-137">In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.</span></span>
+Os conflitos ocorrem quando duas configurações de perfil são iguais.  Por exemplo, você configurou duas políticas MAM idênticas, exceto pela configuração de copiar/colar.  Nesse cenário, a configuração de copiar/colar será definida para o valor mais restritivo, mas o restante das configurações será aplicado como configurado.
 
-<span data-ttu-id="d6ac5-138">Se uma política for atribuída ao aplicativo e entrar em vigor, e então uma segunda for atribuída, a primeira terá precedência e continuará em vigor, enquanto a segunda aparecerá como estando em conflito.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-138">If one profile is assignedd to the app and takes effect, and then a second one is assigned, the first one will take precedence and stay applied, while the second shows in conflict.</span></span> <span data-ttu-id="d6ac5-139">Se as duas forem aplicadas ao mesmo tempo, o que significa que não há perfil anterior, as duas estarão em conflito.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-139">If they are both applied at the same time, meaning that there is no preceding profile, then they will both be in conflict.</span></span> <span data-ttu-id="d6ac5-140">Quaisquer configurações conflitantes serão definidas com os valores mais restritivos.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-140">Any conflicting settings will be set to the most restrictive values.</span></span>
+Se uma política for atribuída ao aplicativo e entrar em vigor, e então uma segunda for atribuída, a primeira terá precedência e continuará em vigor, enquanto a segunda aparecerá como estando em conflito. Se as duas forem aplicadas ao mesmo tempo, o que significa que não há perfil anterior, as duas estarão em conflito. Quaisquer configurações conflitantes serão definidas com os valores mais restritivos.
 
-## <span data-ttu-id="d6ac5-141">O que acontece quando há conflito de políticas personalizadas de iOS?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-141">What happens when iOS custom policies conflict?</span></span>
-<a id="what-happens-when-ios-custom-policies-conflict" class="xliff"></a>
-<span data-ttu-id="d6ac5-142">O Intune não avalia o conteúdo dos arquivos de Configuração da Apple ou um perfil personalizado de URI-OMA (Open Mobile Alliance Uniform Resource Identifier).</span><span class="sxs-lookup"><span data-stu-id="d6ac5-142">Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) profile.</span></span> <span data-ttu-id="d6ac5-143">Ele simplesmente serve como o mecanismo de entrega.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-143">It merely serves as the delivery mechanism.</span></span>
+## <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando há conflito de políticas personalizadas de iOS?
+O Intune não avalia o conteúdo dos arquivos de Configuração da Apple ou um perfil personalizado de URI-OMA (Open Mobile Alliance Uniform Resource Identifier). Ele simplesmente serve como o mecanismo de entrega.
 
-<span data-ttu-id="d6ac5-144">Quando você atribui um perfil personalizado, garanta que as configurações definidas não entrem em conflito com as políticas de conformidade, configuração ou outras políticas personalizadas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-144">When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies.</span></span> <span data-ttu-id="d6ac5-145">No caso de um perfil personalizado com configurações entrar em conflitos, a ordem na qual as configurações são aplicadas é aleatória.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-145">In the case of a custom profile with settings conflicts, the order in which settings are applied is random.</span></span>
+Quando você atribui um perfil personalizado, garanta que as configurações definidas não entrem em conflito com as políticas de conformidade, configuração ou outras políticas personalizadas. No caso de um perfil personalizado com configurações entrar em conflitos, a ordem na qual as configurações são aplicadas é aleatória.
 
-## <span data-ttu-id="d6ac5-146">O que acontece quando um perfil é excluído ou não é mais aplicável?</span><span class="sxs-lookup"><span data-stu-id="d6ac5-146">What happens when a profile is deleted or no longer applicable?</span></span>
-<a id="what-happens-when-a-profile-is-deleted-or-no-longer-applicable" class="xliff"></a>
-<span data-ttu-id="d6ac5-147">Quando você exclui um perfil ou remove um dispositivo de um grupo no qual um perfil foi atribuído, o perfil e as configurações são removidos do dispositivo de acordo com as listas a seguir.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-147">When you delete a profile, or you remove a device from a group to which a profile was assigned, the profile and settings will be removed from the device according to the following lists.</span></span>
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>O que acontece quando um perfil é excluído ou não é mais aplicável?
+Quando você exclui um perfil ou remove um dispositivo de um grupo no qual um perfil foi atribuído, o perfil e as configurações são removidos do dispositivo de acordo com as listas a seguir.
 
-### <span data-ttu-id="d6ac5-148">Dispositivos registrados</span><span class="sxs-lookup"><span data-stu-id="d6ac5-148">Enrolled devices</span></span>
-<a id="enrolled-devices" class="xliff"></a>
+### <a name="enrolled-devices"></a>Dispositivos registrados
 
-- <span data-ttu-id="d6ac5-149">Perfis de email, certificado, VPN e Wi-Fi: esses perfis são removidos de todos os dispositivos registrados com suporte.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-149">Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.</span></span>
-- <span data-ttu-id="d6ac5-150">Todos os outros tipos de perfil:</span><span class="sxs-lookup"><span data-stu-id="d6ac5-150">All other profile types:</span></span>
-    - <span data-ttu-id="d6ac5-151">**Dispositivos Android e Windows**: as configurações não são removidas do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-151">**Windows and Android devices**: Settings are not removed from the device.</span></span>
-    - <span data-ttu-id="d6ac5-152">**Dispositivos Windows Phone 8.1**: as configurações a seguir são removidas:</span><span class="sxs-lookup"><span data-stu-id="d6ac5-152">**Windows Phone 8.1 devices**: The following settings are removed:</span></span>
-        - <span data-ttu-id="d6ac5-153">Exigir uma senha para desbloquear os dispositivos móveis</span><span class="sxs-lookup"><span data-stu-id="d6ac5-153">Require a password to unlock mobile devices</span></span>
-        - <span data-ttu-id="d6ac5-154">Permitir senha simples</span><span class="sxs-lookup"><span data-stu-id="d6ac5-154">Allow simple passwords</span></span>
-        - <span data-ttu-id="d6ac5-155">Comprimento mínimo da senha</span><span class="sxs-lookup"><span data-stu-id="d6ac5-155">Minimum password length</span></span>
-        - <span data-ttu-id="d6ac5-156">Tipo de senha necessária</span><span class="sxs-lookup"><span data-stu-id="d6ac5-156">Required password type</span></span>
-        - <span data-ttu-id="d6ac5-157">Expiração da senha (dias)</span><span class="sxs-lookup"><span data-stu-id="d6ac5-157">Password expiration (days)</span></span>
-        - <span data-ttu-id="d6ac5-158">Lembrar de histórico de senha</span><span class="sxs-lookup"><span data-stu-id="d6ac5-158">Remember password history</span></span>
-        - <span data-ttu-id="d6ac5-159">Número de falhas de logon repetidas permitido antes do dispositivo ser apagado</span><span class="sxs-lookup"><span data-stu-id="d6ac5-159">Number of repeated sign-in failures to allow before the device is wiped</span></span>
-        - <span data-ttu-id="d6ac5-160">Minutos de inatividade antes de a senha ser necessária</span><span class="sxs-lookup"><span data-stu-id="d6ac5-160">Minutes of inactivity before password is required</span></span>
-        - <span data-ttu-id="d6ac5-161">Tipo de senha necessária – o número mínimo de conjuntos de caracteres</span><span class="sxs-lookup"><span data-stu-id="d6ac5-161">Required password type – minimum number of character sets</span></span>
-        - <span data-ttu-id="d6ac5-162">Permitir câmera</span><span class="sxs-lookup"><span data-stu-id="d6ac5-162">Allow camera</span></span>
-        - <span data-ttu-id="d6ac5-163">Exigir criptografia no dispositivo móvel</span><span class="sxs-lookup"><span data-stu-id="d6ac5-163">Require encryption on mobile device</span></span>
-        - <span data-ttu-id="d6ac5-164">Permitir armazenamento removível</span><span class="sxs-lookup"><span data-stu-id="d6ac5-164">Allow removable storage</span></span>
-        - <span data-ttu-id="d6ac5-165">Permitir navegador da web</span><span class="sxs-lookup"><span data-stu-id="d6ac5-165">Allow web browser</span></span>
-        - <span data-ttu-id="d6ac5-166">Permitir loja de aplicativo</span><span class="sxs-lookup"><span data-stu-id="d6ac5-166">Allow application store</span></span>
-        - <span data-ttu-id="d6ac5-167">Permitir captura de tela</span><span class="sxs-lookup"><span data-stu-id="d6ac5-167">Allow screen capture</span></span>
-        - <span data-ttu-id="d6ac5-168">Permitir localização geográfica</span><span class="sxs-lookup"><span data-stu-id="d6ac5-168">Allow geolocation</span></span>
-        - <span data-ttu-id="d6ac5-169">Permitir conta da Microsoft</span><span class="sxs-lookup"><span data-stu-id="d6ac5-169">Allow Microsoft account</span></span>
-        - <span data-ttu-id="d6ac5-170">Permitir copiar e colar</span><span class="sxs-lookup"><span data-stu-id="d6ac5-170">Allow copy and paste</span></span>
-        - <span data-ttu-id="d6ac5-171">Permitir compartilhamento de Internet por Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="d6ac5-171">Allow Wi-Fi tethering</span></span>
-        - <span data-ttu-id="d6ac5-172">Permitir conexão automática para liberar pontos de acesso Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="d6ac5-172">Allow automatic connection to free Wi-Fi hotspots</span></span>
-        - <span data-ttu-id="d6ac5-173">Permitir relatórios de pontos de acesso Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="d6ac5-173">Allow Wi-Fi hotspot reporting</span></span>
-        - <span data-ttu-id="d6ac5-174">Permitir redefinição de fábrica</span><span class="sxs-lookup"><span data-stu-id="d6ac5-174">Allow factory reset</span></span>
-        - <span data-ttu-id="d6ac5-175">Permitir Bluetooth</span><span class="sxs-lookup"><span data-stu-id="d6ac5-175">Allow Bluetooth</span></span>
-        - <span data-ttu-id="d6ac5-176">Permitir NFC</span><span class="sxs-lookup"><span data-stu-id="d6ac5-176">Allow NFC</span></span>
-        - <span data-ttu-id="d6ac5-177">Permitir Wi-Fi</span><span class="sxs-lookup"><span data-stu-id="d6ac5-177">Allow Wi-Fi</span></span>
+- Perfis de email, certificado, VPN e Wi-Fi: esses perfis são removidos de todos os dispositivos registrados com suporte.
+- Todos os outros tipos de perfil:
+    - **Dispositivos Android e Windows**: as configurações não são removidas do dispositivo.
+    - **Dispositivos Windows Phone 8.1**: as configurações a seguir são removidas:
+        - Exigir uma senha para desbloquear os dispositivos móveis
+        - Permitir senha simples
+        - Comprimento mínimo da senha
+        - Tipo de senha necessária
+        - Expiração da senha (dias)
+        - Lembrar de histórico de senha
+        - Número de falhas de logon repetidas permitido antes do dispositivo ser apagado
+        - Minutos de inatividade antes de a senha ser necessária
+        - Tipo de senha necessária – o número mínimo de conjuntos de caracteres
+        - Permitir câmera
+        - Exigir criptografia no dispositivo móvel
+        - Permitir armazenamento removível
+        - Permitir navegador da web
+        - Permitir loja de aplicativo
+        - Permitir captura de tela
+        - Permitir localização geográfica
+        - Permitir conta da Microsoft
+        - Permitir copiar e colar
+        - Permitir compartilhamento de Internet por Wi-Fi
+        - Permitir conexão automática para liberar pontos de acesso Wi-Fi
+        - Permitir relatórios de pontos de acesso Wi-Fi
+        - Permitir redefinição de fábrica
+        - Permitir Bluetooth
+        - Permitir NFC
+        - Permitir Wi-Fi
 
-    - <span data-ttu-id="d6ac5-178">**iOS**: todas as configurações são removidas, exceto:</span><span class="sxs-lookup"><span data-stu-id="d6ac5-178">**iOS**: All settings are removed, except:</span></span>
-        - <span data-ttu-id="d6ac5-179">Permitir roaming de Voz</span><span class="sxs-lookup"><span data-stu-id="d6ac5-179">Allow voice roaming</span></span>
-        - <span data-ttu-id="d6ac5-180">Permitir roaming de Dados</span><span class="sxs-lookup"><span data-stu-id="d6ac5-180">Allow data roaming</span></span>
-        - <span data-ttu-id="d6ac5-181">Permitir sincronização automática durante roaming</span><span class="sxs-lookup"><span data-stu-id="d6ac5-181">Allow automatic synchronization while roaming</span></span>
+    - **iOS**: todas as configurações são removidas, exceto:
+        - Permitir roaming de Voz
+        - Permitir roaming de Dados
+        - Permitir sincronização automática durante roaming
 
-## <span data-ttu-id="d6ac5-182">Alterei um perfil de restrição de dispositivo, mas as alterações não entraram em vigor</span><span class="sxs-lookup"><span data-stu-id="d6ac5-182">I changed a device restriction profile, but the changes haven't taken effect</span></span>
-<a id="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect" class="xliff"></a>
-<span data-ttu-id="d6ac5-183">Dispositivos Windows Phone não permitem que políticas de segurança definidas por meio do MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-183">Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them.</span></span> <span data-ttu-id="d6ac5-184">Por exemplo, você define um **Número mínimo de caracteres de senha** para 8 e tenta reduzi-lo a 4.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-184">For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4.</span></span> <span data-ttu-id="d6ac5-185">O perfil mais restritivo já foi aplicado ao dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-185">The more restrictive profile has already been applied to the device.</span></span>
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivo, mas as alterações não entraram em vigor
+Dispositivos Windows Phone não permitem que políticas de segurança definidas por meio do MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define um **Número mínimo de caracteres de senha** para 8 e tenta reduzi-lo a 4. O perfil mais restritivo já foi aplicado ao dispositivo.
 
-<span data-ttu-id="d6ac5-186">Dependendo da plataforma do dispositivo, se você quiser alterar o perfil para um valor menos seguro, pode ser necessário redefinir as políticas de segurança.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-186">Depending on the device platform, if you want to change the profile to a less secure value you may need to reset security policies.</span></span>
-<span data-ttu-id="d6ac5-187">Por exemplo, no Windows, na área de trabalho, passe o dedo da direita para a esquerda para abrir a barra **Botões** e escolha **Configurações** &gt; **Painel de Controle**.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-187">For example, in Windows,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**.</span></span>  <span data-ttu-id="d6ac5-188">Selecione o miniaplicativo **Contas de Usuário**.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-188">Select the **User Accounts** applet.</span></span>
-<span data-ttu-id="d6ac5-189">No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** na parte inferior.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-189">In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom.</span></span> <span data-ttu-id="d6ac5-190">Escolha-o e clique no botão **Redefinir Políticas**.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-190">Choose it and then choose the **Reset Policies** button.</span></span>
-<span data-ttu-id="d6ac5-191">Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior e iOS, precisarão ser desativados e registrados novamente no serviço para que você possa aplicar um perfil menos restritivo.</span><span class="sxs-lookup"><span data-stu-id="d6ac5-191">Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a less restrictive profile.</span></span>
+Dependendo da plataforma do dispositivo, se você quiser alterar o perfil para um valor menos seguro, pode ser necessário redefinir as políticas de segurança.
+Por exemplo, no Windows, na área de trabalho, passe o dedo da direita para a esquerda para abrir a barra **Botões** e escolha **Configurações** &gt; **Painel de Controle**.  Selecione o miniaplicativo **Contas de Usuário**.
+No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** na parte inferior. Escolha-o e clique no botão **Redefinir Políticas**.
+Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior e iOS, precisarão ser desativados e registrados novamente no serviço para que você possa aplicar um perfil menos restritivo.
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -474,6 +465,5 @@ ms.lasthandoff: 07/01/2017
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.| 
 --->
 
-### <span data-ttu-id="d6ac5-192">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="d6ac5-192">Next steps</span></span>
-<a id="next-steps" class="xliff"></a>
-<span data-ttu-id="d6ac5-193">Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](get-support.md) (Como obter suporte para o Microsoft Intune).</span><span class="sxs-lookup"><span data-stu-id="d6ac5-193">If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](get-support.md).</span></span>
+### <a name="next-steps"></a>Próximas etapas
+Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](get-support.md) (Como obter suporte para o Microsoft Intune).

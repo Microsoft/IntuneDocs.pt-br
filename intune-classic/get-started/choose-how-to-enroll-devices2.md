@@ -20,28 +20,23 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <span data-ttu-id="759af-103">Escolher como registrar dispositivos móveis</span><span class="sxs-lookup"><span data-stu-id="759af-103">Choose how to enroll mobile devices</span></span>
-<a id="choose-how-to-enroll-mobile-devices" class="xliff"></a>
+# <a name="choose-how-to-enroll-mobile-devices"></a>Escolher como registrar dispositivos móveis
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="759af-104">As respostas para esta série de perguntas ajudarão a determinar o melhor método de registro para os dispositivos gerenciados.</span><span class="sxs-lookup"><span data-stu-id="759af-104">Your answers to this series of questions will help determine the best enrollment method for the devices you manage.</span></span>
+As respostas para esta série de perguntas ajudarão a determinar o melhor método de registro para os dispositivos gerenciados.
 
-## <span data-ttu-id="759af-105">**Que plataforma de BYOD você deseja habilitar?**</span><span class="sxs-lookup"><span data-stu-id="759af-105">**Which BYOD platform do you want to enable?**</span></span>
-<a id="which-byod-platform-do-you-want-to-enable" class="xliff"></a>
+## <a name="which-byod-platform-do-you-want-to-enable"></a>**Que plataforma de BYOD você deseja habilitar?**
 
 > [!div  class="button"]
-<span data-ttu-id="759af-106">[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
-> [!div class="button"]</span><span class="sxs-lookup"><span data-stu-id="759af-106">[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
-[!div class="button"]</span></span>
-> <span data-ttu-id="759af-107">[iOS e Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-[!div class="button"]</span><span class="sxs-lookup"><span data-stu-id="759af-107">[iOS and Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-> [!div class="button"]</span></span>
-<span data-ttu-id="759af-108">[Computadores Windows >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-[!div class="button"]</span><span class="sxs-lookup"><span data-stu-id="759af-108">[Windows PCs >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-[!div class="button"]</span></span>
-[<span data-ttu-id="759af-109">Windows 10 Mobile e Windows Phone ></span><span class="sxs-lookup"><span data-stu-id="759af-109">Windows 10 Mobile & Windows Phone ></span></span>](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
+> [!div class="button"]
+[iOS e Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+> [!div class="button"]
+[Computadores Windows >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+> [!div class="button"]
+[Windows 10 Mobile e Windows Phone >](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 
 
 > [!div class="button"]
-[<span data-ttu-id="759af-110">< Voltar</span><span class="sxs-lookup"><span data-stu-id="759af-110">< Back</span></span>](choose-how-to-enroll-devices1.md)
+[< Voltar](choose-how-to-enroll-devices1.md)

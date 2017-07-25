@@ -1,1 +1,1 @@
-<span data-ttu-id="6167d-101">Os Serviços de Suporte da Microsoft estão sujeitos a preços e condições vigentes no momento em que o serviço é usado.</span><span class="sxs-lookup"><span data-stu-id="6167d-101">Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used.</span></span>
+Os Serviços de Suporte da Microsoft estão sujeitos a preços e condições vigentes no momento em que o serviço é usado.
