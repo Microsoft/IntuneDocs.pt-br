@@ -22,27 +22,28 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="using-the-intune-company-portal-website"></a>Usando o Portal da Empresa do Intune
-O [site do Portal da Empresa](https://portal.manage.microsoft.com) é uma página da Web que os usuários podem usar para gerenciar computadores e dispositivos que eles registraram no Intune.
+# <span data-ttu-id="9206d-103">Usando o Portal da Empresa do Intune</span><span class="sxs-lookup"><span data-stu-id="9206d-103">Using the Intune Company Portal website</span></span>
+<a id="using-the-intune-company-portal-website" class="xliff"></a>
+<span data-ttu-id="9206d-104">O [site do Portal da Empresa](https://portal.manage.microsoft.com) é uma página da Web que os usuários podem usar para gerenciar computadores e dispositivos que eles registraram no Intune.</span><span class="sxs-lookup"><span data-stu-id="9206d-104">The [Company Portal website](https://portal.manage.microsoft.com) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.</span></span>
 
-Os usuários podem realizar as seguintes tarefas no site do Portal da Empresa:
+<span data-ttu-id="9206d-105">Os usuários podem realizar as seguintes tarefas no site do Portal da Empresa:</span><span class="sxs-lookup"><span data-stu-id="9206d-105">Users can do the following tasks from the Company Portal website:</span></span>
 
--   [Renomear o dispositivo](rename-your-device-cpwebsite.md)
+-   [<span data-ttu-id="9206d-106">Renomear o dispositivo</span><span class="sxs-lookup"><span data-stu-id="9206d-106">Rename your device</span></span>](rename-your-device-cpwebsite.md)
 
--   [Remover o dispositivo](remove-your-device-cpwebsite.md)
+-   [<span data-ttu-id="9206d-107">Remover o dispositivo</span><span class="sxs-lookup"><span data-stu-id="9206d-107">Remove your device</span></span>](remove-your-device-cpwebsite.md)
 
--   [Redefinir (apagar) seu dispositivo](reset-erase-your-device-cpwebsite.md)
+-   [<span data-ttu-id="9206d-108">Redefinir (apagar) seu dispositivo</span><span class="sxs-lookup"><span data-stu-id="9206d-108">Reset (erase) your device</span></span>](reset-erase-your-device-cpwebsite.md)
 
--   [Redefinir a senha do dispositivo](reset-your-passcode-cpwebsite.md)
+-   [<span data-ttu-id="9206d-109">Redefinir a senha do dispositivo</span><span class="sxs-lookup"><span data-stu-id="9206d-109">Reset your device passcode</span></span>](reset-your-passcode-cpwebsite.md)
 
--   [Bloquear um dispositivo remotamente](remote-lock-your-device-cpwebsite.md)
+-   [<span data-ttu-id="9206d-110">Bloquear um dispositivo remotamente</span><span class="sxs-lookup"><span data-stu-id="9206d-110">Remotely lock a device</span></span>](remote-lock-your-device-cpwebsite.md)
 
--   [Sincronize seu dispositivo manualmente para obter a instalação mais rápida dos aplicativos](sync-your-device-manually-cpwebsite.md)
+-   [<span data-ttu-id="9206d-111">Sincronize seu dispositivo manualmente para obter a instalação mais rápida dos aplicativos</span><span class="sxs-lookup"><span data-stu-id="9206d-111">Sync your device manually to get apps to install more quickly</span></span>](sync-your-device-manually-cpwebsite.md)
 
--   Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas
+-   <span data-ttu-id="9206d-112">Encontrar as informações de contato do administrador de TI, se tiverem sido configuradas</span><span class="sxs-lookup"><span data-stu-id="9206d-112">Find the IT admin's contact information, if you configured it</span></span>
 
--   Ver detalhes sobre seu dispositivo, incluindo se ele é compatível com as políticas da empresa ou da escola
+-   <span data-ttu-id="9206d-113">Ver detalhes sobre seu dispositivo, incluindo se ele é compatível com as políticas da empresa ou da escola</span><span class="sxs-lookup"><span data-stu-id="9206d-113">See details about their device, including whether it is compliant with your company's or school's policies</span></span>
 
--   Gerenciar remotamente seu PC (funciona apenas em PCs)
+-   <span data-ttu-id="9206d-114">Gerenciar remotamente seu PC (funciona apenas em PCs)</span><span class="sxs-lookup"><span data-stu-id="9206d-114">Remotely manage their PC (works only for PCs)</span></span>
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+<span data-ttu-id="9206d-115">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="9206d-115">Still need help?</span></span> <span data-ttu-id="9206d-116">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="9206d-116">Contact your IT admin.</span></span> <span data-ttu-id="9206d-117">Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="9206d-117">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).</span></span>

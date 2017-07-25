@@ -1,1 +1,1 @@
-Os endereços Web podem mudar; portanto, você talvez não consiga se conectar ao(s) site(s) mencionado(s) aqui.
+<span data-ttu-id="3b3f4-101">Os endereços Web podem mudar; portanto, você talvez não consiga se conectar ao(s) site(s) mencionado(s) aqui.</span><span class="sxs-lookup"><span data-stu-id="3b3f4-101">Web addresses can change, so you might be unable to connect to the website or sites mentioned here.</span></span>

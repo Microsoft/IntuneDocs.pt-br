@@ -22,8 +22,9 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Ainda não há suporte para a versão do sistema operacional de seu dispositivo Windows
+# <span data-ttu-id="66e7f-102">Ainda não há suporte para a versão do sistema operacional de seu dispositivo Windows</span><span class="sxs-lookup"><span data-stu-id="66e7f-102">Your Windows device's operating system version isn't yet supported</span></span>
+<a id="your-windows-devices-operating-system-version-isnt-yet-supported" class="xliff"></a>
 
-Com o ritmo acelerado do desenvolvimento da tecnologia, às vezes, seu dispositivo pode estar à frente do que o seu administrador de TI teve a oportunidade de testar. É possível que a versão mais nova do Windows não funcione com algumas ferramentas de sua empresa.
+<span data-ttu-id="66e7f-103">Com o ritmo acelerado do desenvolvimento da tecnologia, às vezes, seu dispositivo pode estar à frente do que o seu administrador de TI teve a oportunidade de testar.</span><span class="sxs-lookup"><span data-stu-id="66e7f-103">With the rapid pace of development of technology, sometimes your device could actually be ahead of what your IT admin has had the opportunity to test.</span></span> <span data-ttu-id="66e7f-104">É possível que a versão mais nova do Windows não funcione com algumas ferramentas de sua empresa.</span><span class="sxs-lookup"><span data-stu-id="66e7f-104">It's possible that being on the newest version of Windows may not work with some of your company's other tools.</span></span>
 
-Será necessário entrar em contato com o administrador de TI para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+<span data-ttu-id="66e7f-105">Será necessário entrar em contato com o administrador de TI para resolver esse problema.</span><span class="sxs-lookup"><span data-stu-id="66e7f-105">You will need to contact your IT admin to resolve this issue.</span></span> <span data-ttu-id="66e7f-106">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="66e7f-106">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>

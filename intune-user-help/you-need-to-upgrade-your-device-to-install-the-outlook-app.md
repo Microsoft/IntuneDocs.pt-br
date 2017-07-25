@@ -22,16 +22,19 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Você precisa atualizar seu dispositivo para instalar o aplicativo Outlook
+# <span data-ttu-id="dbcfe-102">Você precisa atualizar seu dispositivo para instalar o aplicativo Outlook</span><span class="sxs-lookup"><span data-stu-id="dbcfe-102">You need to upgrade your device to install the Outlook app</span></span>
+<a id="you-need-to-upgrade-your-device-to-install-the-outlook-app" class="xliff"></a>
 
-O aplicativo Outlook ajuda milhões de usuários a se conectarem a todas as suas contas de email, calendários e arquivos em um único local conveniente para dispositivos [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook).
+<span data-ttu-id="dbcfe-103">O aplicativo Outlook ajuda milhões de usuários a se conectarem a todas as suas contas de email, calendários e arquivos em um único local conveniente para dispositivos [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook).</span><span class="sxs-lookup"><span data-stu-id="dbcfe-103">The Outlook app helps millions of users connect all their email accounts, calendars and files in one convenient spot for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices.</span></span>
 
-Se você estiver tentando baixar o Outlook e, em vez da instalação, uma mensagem for exibida no dispositivo informando que o sistema operacional do dispositivo não é atual o suficiente. Você precisará atualizar seu dispositivo para instalar o Outlook.
+<span data-ttu-id="dbcfe-104">Se você estiver tentando baixar o Outlook e, em vez da instalação, uma mensagem for exibida no dispositivo informando que o sistema operacional do dispositivo não é atual o suficiente.</span><span class="sxs-lookup"><span data-stu-id="dbcfe-104">If you're trying to download Outlook and, instead of installing, a message pops up on your device that says that your device's operating system isn't current enough.</span></span> <span data-ttu-id="dbcfe-105">Você precisará atualizar seu dispositivo para instalar o Outlook.</span><span class="sxs-lookup"><span data-stu-id="dbcfe-105">You'll need to upgrade your device to install Outlook.</span></span>
 
-## <a name="if-you-have-an-android-device"></a>Se você tiver um dispositivo Android
-Vá para **Configurações** e, em seguida, use a opção **Atualizar** ou **Atualização do sistema**.
+## <span data-ttu-id="dbcfe-106">Se você tiver um dispositivo Android</span><span class="sxs-lookup"><span data-stu-id="dbcfe-106">If you have an Android device</span></span>
+<a id="if-you-have-an-android-device" class="xliff"></a>
+<span data-ttu-id="dbcfe-107">Vá para **Configurações** e, em seguida, use a opção **Atualizar** ou **Atualização do sistema**.</span><span class="sxs-lookup"><span data-stu-id="dbcfe-107">Go to **Settings**, and then use the **update** or **system update** option.</span></span>
 
-## <a name="if-you-have-an-ios-device"></a>Se você tem um dispositivo iOS
-Toque em **Configurações** > **Geral** > **Atualização de Software**.
+## <span data-ttu-id="dbcfe-108">Se você tem um dispositivo iOS</span><span class="sxs-lookup"><span data-stu-id="dbcfe-108">If you have an iOS device</span></span>
+<a id="if-you-have-an-ios-device" class="xliff"></a>
+<span data-ttu-id="dbcfe-109">Toque em **Configurações** > **Geral** > **Atualização de Software**.</span><span class="sxs-lookup"><span data-stu-id="dbcfe-109">Tap **Settings** > **General** > **Software Update**.</span></span>
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+<span data-ttu-id="dbcfe-110">Ainda precisa de ajuda?</span><span class="sxs-lookup"><span data-stu-id="dbcfe-110">Still need help?</span></span> <span data-ttu-id="dbcfe-111">Entre em contato com o administrador de TI.</span><span class="sxs-lookup"><span data-stu-id="dbcfe-111">Contact your IT admin.</span></span> <span data-ttu-id="dbcfe-112">Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="dbcfe-112">For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).</span></span>

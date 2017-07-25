@@ -1,1 +1,1 @@
-Número de telefone fora dos Estados Unidos e do Canadá: (609) 452-0606
+<span data-ttu-id="480bd-101">Número de telefone fora dos Estados Unidos e do Canadá: (609) 452-0606</span><span class="sxs-lookup"><span data-stu-id="480bd-101">Telephone number from outside the United States and Canada: (609) 452-0606</span></span>

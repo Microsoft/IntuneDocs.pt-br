@@ -1,1 +1,1 @@
-[Site da Learning Ally](http://go.microsoft.com/fwlink/?LinkID=239)
+[<span data-ttu-id="f30c9-101">Site da Learning Ally</span><span class="sxs-lookup"><span data-stu-id="f30c9-101">Learning Ally website</span></span>](http://go.microsoft.com/fwlink/?LinkID=239)

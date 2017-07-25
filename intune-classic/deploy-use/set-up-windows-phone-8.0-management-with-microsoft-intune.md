@@ -19,8 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-#  <a name="windows-phone-80-company-portal-app-deprecated"></a>Aplicativo do Portal da Empresa do Windows Phone 8.0 preterido
+#  <span data-ttu-id="b52fd-103">Aplicativo do Portal da Empresa do Windows Phone 8.0 preterido</span><span class="sxs-lookup"><span data-stu-id="b52fd-103">Windows Phone 8.0 Company Portal app deprecated</span></span>
+<a id="windows-phone-80-company-portal-app-deprecated" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Desde setembro de 2016, o aplicativo de Portal da Empresa do Windows 8.0 foi preterido. Os dispositivos registrados com Windows 8.0 permanecerão no gerenciamento, mas nenhum dispositivo novo poderá ser registrado.
+<span data-ttu-id="b52fd-104">Desde setembro de 2016, o aplicativo de Portal da Empresa do Windows 8.0 foi preterido.</span><span class="sxs-lookup"><span data-stu-id="b52fd-104">As of September 2016, the Windows 8.0 Company Portal app has been deprecated.</span></span> <span data-ttu-id="b52fd-105">Os dispositivos registrados com Windows 8.0 permanecerão no gerenciamento, mas nenhum dispositivo novo poderá ser registrado.</span><span class="sxs-lookup"><span data-stu-id="b52fd-105">Enrolled Window 8.0 devices will remain in management but no new devices can be enrolled.</span></span>
