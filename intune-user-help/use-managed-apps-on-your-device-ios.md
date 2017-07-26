@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicativos gerenciados no seu dispositivo iOS
 
@@ -38,6 +38,8 @@ Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 -   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Registrar o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instale um aplicativo da Windows Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
+
+Às vezes, o administrador de TI pode comprar várias licenças para um aplicativo que você instala. Caso veja uma mensagem para aceitar o contrato do Apple Volume Purchase Program, isso é normal e você pode aceitá-lo. Caso não o aceite, você não poderá instalar o aplicativo.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>O que meu administrador de TI pode gerenciar em um aplicativo?
 Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
