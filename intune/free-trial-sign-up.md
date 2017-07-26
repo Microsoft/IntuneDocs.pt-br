@@ -1,7 +1,7 @@
 ---
-title: "Inscrever-se para uma avaliação gratuita de 30 dias"
-titleSuffix: Intune on Azure
-description: Como se inscrever no Intune no Azure.
+title: "Inscrever-se para obter uma avaliação gratuita de 30 dias do Microsoft Intune"
+titleSuffix: 
+description: "\"Como se inscrever para obter uma avaliação gratuita de 30 dias do Intune.\""
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,23 +13,22 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7dafdb974dd975eaa7f3268119de6c047c50f858
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
-# Inscreva-se para obter uma avaliação gratuita do Microsoft Intune para o portal do Azure
-<a id="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal" class="xliff"></a>
+# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Inscrever-se para uma avaliação gratuita do Microsoft Intune
 
 
 Este artigo explica como se inscrever para obter uma avaliação do Intune autônomo para o portal do Azure.
 
 1. Visite a página [Inscrição do Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) e preencha o formulário para se inscrever para uma assinatura de avaliação.
-account-sign-up.md
+* Se você tiver uma conta corporativa ou de estudante e quiser usá-la para sua avaliação do Intune, execute [estas instruções de conexão](/intune/account-sign-up).
 
-  Se a maioria de suas operações de TI e os usuários estiverem em uma localidade diferente que você, poderá ser útil selecionar essa localidade em **Onde sua empresa está localizada?**.
+* Se a maioria de suas operações de TI e os usuários estiverem em uma localidade diferente que você, poderá ser útil selecionar essa localidade em **Onde sua empresa está localizada?**.
 
 2. No final do processo de inscrição, você receberá uma mensagem com os dados na sua nova conta. <br/> ![Imagem das informações de conta](./media/2-end-of-sign-up-process.png) <br/>Neste ponto, se você clicar em **Você estará pronto para começar**, será levado para o Centro de Administração do Office 365, no qual poderá adicionar usuários ao seu ambiente de teste. <br/><br/>No entanto, se você desejar acessar o portal do Intune no Azure diretamente, abra uma nova janela do navegador e insira **https://portal.azure.com** na barra de endereços. Você será levado para a página de entrada do Azure, na qual as credenciais fornecidas poderão ser usadas para entrar. Use esse endereço sempre que você desejar entrar em sua avaliação do Intune. <br/> ![Imagem da página de entrada do Portal do Azure](./media/azure-portal-signin.png)
 
@@ -42,8 +41,7 @@ Caso se inscreva para uma avaliação, você receberá uma mensagem de email com
 
 
 
-## Mantendo as experiências do administrador objetivas
-<a id="keeping-the-admin-experiences-straight" class="xliff"></a>
+## <a name="keeping-the-admin-experiences-straight"></a>Mantendo as experiências do administrador objetivas
 
 
 Há três portais que são usados para o Portal do Azure no Intune:
@@ -68,18 +66,12 @@ Para ir do Centro de administração do Office 365 para o painel do Intune, insi
 
 Para voltar do Intune ao Centro de administração do Office 365, insira https://portal.office.com na barra de endereços do navegador. Se você já estiver conectado ao Intune, será levado diretamente para o Centro de administração do Office 365.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
-### Intune no Azure
-<a id="intune-on-azure" class="xliff"></a>
+### <a name="intune-on-azure"></a>Intune no Azure
 Saiba mais sobre o [Intune no portal do Azure](what-is-intune.md)
-### Intune clássico
-<a id="classic-intune" class="xliff"></a>
-Cenário de avaliação: [Avaliar o gerenciamento de dispositivo móvel no Microsoft Intune](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
-### Integração com outros produtos
-<a id="integration-with-other-products" class="xliff"></a>
+### <a name="integration-with-other-products"></a>Integração com outros produtos
 Saiba mais sobre como usar as contas de usuário do Azure Active Directory com o Intune:
 - [Requisitos de identidade](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 - [Requisitos de sincronização de diretórios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
