@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Configurar políticas de acesso condicional baseado em aplicativo
-<a id="set-up-app-based-conditional-access-policies" class="xliff"></a>
+# <a name="set-up-app-based-conditional-access-policies"></a>Configurar políticas de acesso condicional baseado em aplicativo
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,8 +29,7 @@ Este tópico fornece instruções sobre como configurar políticas de acesso con
 > [!IMPORTANT]
 > Este tópico descreve as etapas para adicionar uma política de acesso condicional baseado em aplicativo usando o Exchange Online, mas é possível usar as mesmas etapas ao adicionar outros aplicativos como o SharePoint Online, Microsoft Teams, etc. na lista de aplicativos aprovados.
 
-## Para criar uma política de acesso condicional baseado no aplicativo
-<a id="to-create-an-app-based-conditional-access-policy" class="xliff"></a>
+## <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de acesso condicional baseado no aplicativo
 1.  Acesse o [Portal do Azure](https://portal.azure.com) e entre com suas credenciais.
 
 2.  Escolha **Mais serviços** e digite "Intune".
@@ -55,18 +53,15 @@ Este tópico fornece instruções sobre como configurar políticas de acesso con
 
 8. Você pode desejar que alguns usuários no grupo de usuários que você selecionou na etapa anterior não sejam afetados por essa política. Nesses casos, adicione o grupo de usuários à lista de grupos de usuários isentos. Na folha **Exchange Online**, escolha **Grupos de usuários isentos**. Escolha **Adicionar grupo de usuário** para abrir a lista de grupos de usuários. Selecione os grupos que você deseja isentar dessa política.
 
-## Para modificar ou excluir grupos de usuários de uma política de autoridade de certificação baseada em aplicativo existente
-<a id="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy" class="xliff"></a>
+## <a name="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy"></a>Para modificar ou excluir grupos de usuários de uma política de autoridade de certificação baseada em aplicativo existente
 
 1. Abra a folha **Grupos de usuários restritos**, em seguida, realce o grupo de usuário que você deseja excluir.
 2. Clique nas reticências para ver as opções de exclusão.
 3. Escolha **Excluir** para remover o grupo de usuários da lista.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 [Bloquear aplicativos que não têm autenticação moderna](app-modern-authentication-block.md)
 
-### Consulte também
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a>Consulte também
 
 [Proteger dados de aplicativo com as políticas de proteção de aplicativo](app-protection-policies.md)

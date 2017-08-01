@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Definir restrições de registro
-<a id="set-enrollment-restrictions" class="xliff"></a>
+# <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -39,8 +38,7 @@ Como um administrador do Intune, você pode determinar quais dispositivos podem 
 >[!NOTE]
 >Restrições de registro não são um recurso de segurança. Dispositivos comprometidos podem falsificar a identidade. Tais restrições são uma barreira de melhor esforço para usuários que não são mal-intencionados.
 
-## Definir restrições de tipo de dispositivo
-<a id="set-device-type-restrictions" class="xliff"></a>
+## <a name="set-device-type-restrictions"></a>Definir restrições de tipo de dispositivo
 As restrições de registro padrão se aplicam a todos os usuários que não receberam restrições de registro de prioridade mais altas.  
 1. No Portal do Intune, escolha **Registro de dispositivo** e **Restrições de registro**.
 ![Captura de tela do espaço de trabalho de restrições de dispositivo com as restrições de tipo de dispositivo padrão e restrições de limite de dispositivo.](media/device-restrictions-set-default.png)
@@ -60,8 +58,7 @@ As restrições de registro padrão se aplicam a todos os usuários que não rec
 >[!NOTE]
 >Se você impedir o registro de dispositivos pessoais Android, dispositivos Android for Work ainda poderão ser registrados.
 
-## Definir restrições de limite de dispositivos
-<a id="set-device-limit-restrictions" class="xliff"></a>
+## <a name="set-device-limit-restrictions"></a>Definir restrições de limite de dispositivos
 As restrições de registro padrão se aplicam a todos os usuários que não receberam restrições de registro de prioridade mais altas.  
 1. No Portal do Intune, escolha **Registro de dispositivo** e **Restrições de registro**.
 2. Escolha **Restrições de registro** > **Restrições de limite de dispositivo**.

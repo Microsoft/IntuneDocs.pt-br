@@ -20,15 +20,13 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Atribuir licenças do Intune a suas contas de usuário
-<a id="assign-intune-licenses-to-your-user-accounts" class="xliff"></a>
+# <a name="assign-intune-licenses-to-your-user-accounts"></a>Atribuir licenças do Intune a suas contas de usuário
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Se você adicionar usuários manualmente ou sincronizar a partir de seu Active Directory local, primeiro atribua a cada usuário uma licença do Intune para que eles possam registrar seus dispositivos no Intune.
 
-## Atribuir uma licença do Intune no Centro de administração do Office 365
-<a id="assign-an-intune-license-in-the-office-365-admin-center" class="xliff"></a>
+## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Atribuir uma licença do Intune no Centro de administração do Office 365
 
 Use o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
 
@@ -45,8 +43,7 @@ Use o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) pa
 > [!NOTE]
 > Os usuários serão exibidos no console de Administração somente após o registro de um dispositivo. Além disso, você pode selecionar um grupo de usuários para editar simultaneamente, selecionando adicionar ou substituir uma licença para todos os usuários selecionados.
 
-## Use o School Data Sync para atribuir licenças a usuários no Intune para Educação
-<a id="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education" class="xliff"></a>
+## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Use o School Data Sync para atribuir licenças a usuários no Intune para Educação
 Se você for uma organização educativa, poderá usar o SDS (School Data Sync) para atribuir licenças do Intune para Educação para os usuários sincronizados. Basta escolher a caixa de seleção do Intune para Educação quando você estiver configurando seu perfil de SDS.  
 
 ![Imagem da configuração de perfil do SDS](./media/i4e-sds-profile-setup-setting.png)
@@ -57,14 +54,12 @@ Quando você atribui uma licença do Intune para Educação, certifique-se de qu
 
 Veja esta [visão geral do School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US) para saber mais sobre o SDS.
 
-## Como as licenças de usuário e dispositivo afetam o acesso a serviços
-<a id="how-user-and-device-licenses-affect-access-to-services" class="xliff"></a>
+## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Como as licenças de usuário e dispositivo afetam o acesso a serviços
 * Cada **usuário** ao qual você atribui uma licença de software de usuário pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para gerenciar aplicativos e até 15 dispositivos.
 * Cada **dispositivo** ao qual você atribui uma licença de software de dispositivo pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para uso por qualquer número de usuários.
 * Se um dispositivo for usado por mais de um usuário, cada um deles precisará de uma licença de software de dispositivo ou todos os usuários precisarão de uma licença de software de usuário.
 
-## Usar o PowerShell para gerenciar seletivamente licenças de usuário do EMS
-<a id="use-powershell-to-selectively-manage-ems-user-licenses" class="xliff"></a>
+## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Usar o PowerShell para gerenciar seletivamente licenças de usuário do EMS
 As organizações que usam o Microsoft Enterprise Mobility + Security (conhecido anteriormente como Enterprise Mobility Suite) podem ter usuários que precisam apenas do Azure Active Directory Premium ou dos serviços do Intune no pacote do EMS. Você pode atribuir um serviço ou um subconjunto de serviços usando os [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Para atribuir seletivamente licenças de usuário para serviços do EMS, abra o PowerShell como administrador em um computador com o [Módulo do Azure Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) instalado. Você pode instalar o PowerShell em um computador local ou em um servidor do ADFS.

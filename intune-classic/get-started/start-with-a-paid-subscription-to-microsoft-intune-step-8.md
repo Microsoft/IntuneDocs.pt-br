@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Habilitar registro para dispositivos móveis
-<a id="enable-enrollment-for-mobile-devices" class="xliff"></a>
+# <a name="enable-enrollment-for-mobile-devices"></a>Habilitar registro para dispositivos móveis
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -29,8 +28,7 @@ Este tópico descreve como um administrador do Intune pode habilitar o registro 
 
 Para configurar o gerenciamento de dispositivo móvel com o Intune, você deve primeiro definir a *autoridade de gerenciamento de dispositivo móvel*, que identifica o serviço que pode gerenciar dispositivos associados à sua conta. Estas diretrizes presumem que você usará o serviço do Intune em vez do System Center Configuration Manager. Depois que a autoridade MDM estiver configurada, você poderá habilitar o gerenciamento de plataformas de dispositivo e registrar seus dispositivos com o aplicativo de Portal da Empresa.
 
-## Habilitar registro de dispositivo
-<a id="enable-device-enrollment" class="xliff"></a>
+## <a name="enable-device-enrollment"></a>Habilitar registro de dispositivo
 
 1. **Torne o Intune sua autoridade de gerenciamento de dispositivo móvel** [No console de administração do Intune](https://manage.microsoft.com/), escolha **Admin** > **Gerenciamento de Dispositivo Móvel** e clique em **Definir Autoridade de MDM** em **Tarefas**.  
 
@@ -38,15 +36,13 @@ Para configurar o gerenciamento de dispositivo móvel com o Intune, você deve p
 
     ![Console de administração. Defina mdm como Intune](../media/intune-mdm-authority.png)
 
-## Escolha como registrar dispositivos
-<a id="choose-how-to-enroll-devices" class="xliff"></a>
+## <a name="choose-how-to-enroll-devices"></a>Escolha como registrar dispositivos
 
 O Intune pode gerenciar dispositivos de várias maneiras, dependendo dos requisitos da sua empresa. "Traga seu próprio dispositivo" (BYOD), dispositivos de propriedade corporativa, "escolha seu próprio dispositivo" (CYOD) e os dispositivos de modo de quiosque são apenas alguns cenários de registro disponíveis.
 
 Siga estas etapas para [Escolher como registrar dispositivos](choose-how-to-enroll-devices1.md).
 
-## Habilitar o MDM para sua plataforma de dispositivo
-<a id="enable-mdm-for-your-device-platform" class="xliff"></a>
+## <a name="enable-mdm-for-your-device-platform"></a>Habilitar o MDM para sua plataforma de dispositivo
 O registro deve ser habilitado para iOS, Mac e Android para dispositivos de Trabalho estabelecendo uma relação entre o provedor de plataforma e o seu locatário do Intune. Dispositivos Android e Windows não exigem etapas adicionais, mas em dispositivos Windows, você pode simplificar o registro do dispositivo para seus usuários ao criar uma entrada de Registro DNS especial.
 
 Habilite o registro de dispositivo para a plataforma de dispositivo que deseja gerenciar. Dependendo de sua plataforma, são necessários requisitos diferentes:
@@ -58,16 +54,14 @@ Habilite o registro de dispositivo para a plataforma de dispositivo que deseja g
 
 Quando o registro estiver habilitado, os usuários poderão baixar o aplicativo de Portal da Empresa em seu dispositivo e concluir o processo de registro do dispositivo.
 
-### Habilitar o registro de dispositivo da empresa
-<a id="enable-company-owned-device-enrollment" class="xliff"></a>
+### <a name="enable-company-owned-device-enrollment"></a>Habilitar o registro de dispositivo da empresa
 Você também pode habilitar uma variedade de situações de [registro de dispositivo da empresa](/intune-classic/deploy-use/manage-corporate-owned-devices), incluindo:
 - [Programa de Registro do Dispositivo da Apple](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Registro do Assistente de Configuração do Apple Configurator](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 - [Registro direto do Apple Configurator](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Gerenciador de Registro de Dispositivos](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-### Próximas etapas
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>Próximas etapas
 Parabéns! Você acabou de concluir a última etapa do *Guia de início rápido do Intune*. Agora que sua configuração inicial foi concluída, você pode considerar habilitar funcionalidades adicionais do MDM.
 
 >[!div class="step-by-step"]

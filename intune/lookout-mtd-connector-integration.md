@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Configurar a integração da Defesa contra Ameaças Móveis do Lookout com o Intune
-<a id="set-up-your-lookout-mobile-threat-defense-integration-with-intune" class="xliff"></a>
+# <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a integração da Defesa contra Ameaças Móveis do Lookout com o Intune
 
 As etapas a seguir são necessárias para configurar a assinatura da Defesa contra Ameaças Móveis do Lookout:
 
@@ -41,8 +40,7 @@ As etapas a seguir são necessárias para configurar a assinatura da Defesa cont
 > [!IMPORTANT]
 > Um locatário existente do Lookout Mobile Endpoint Security que não está associado ao seu locatário do Azure AD não pode ser usado para a integração com o Azure AD e o Intune. Contate o suporte do Lookout para criar um novo locatário do Lookout Mobile Endpoint Security. Use o novo locatário para carregar os usuários do Azure AD.
 
-## Coletar informações do Azure AD
-<a id="collect-azure-ad-information" class="xliff"></a>
+## <a name="collect-azure-ad-information"></a>Coletar informações do Azure AD
 O locatário do Lookout Mobility Endpoint Security será associado à sua assinatura do Azure AD para integrar o Lookout com o Intune. Para habilitar sua assinatura do serviço de Defesa contra Ameaças Móveis do Lookout, o suporte do Lookout (enterprisesupport@lookout.com) precisa das seguintes informações:
 
 * **ID do locatário do Azure AD**
@@ -67,8 +65,7 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 
 4. Depois de obter essas informações, contate o suporte do Lookout (email: enterprisesupport@lookout.com). O suporte do Lookout trabalhará com seu contato principal para integrar sua assinatura e criar a conta do Lookout Enterprise, usando as informações coletadas.
 
-## Configurar sua assinatura
-<a id="configure-your-subscription" class="xliff"></a>
+## <a name="configure-your-subscription"></a>Configurar sua assinatura
 
 1. Depois que o suporte do Lookout criar sua conta Lookout Enterprise, um email do Lookout será enviado para o contato principal de sua empresa com um link para a URL de logon: https://aad.lookout.com/les?action=consent.
 
@@ -85,8 +82,7 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 
     ![captura de tela da guia Configurações de conexão mostrando a frequência de pulsação configurada](./media/lookout-mtp-connection-settings.png)
 
-## Configurar grupos de registro
-<a id="configure-enrollment-groups" class="xliff"></a>
+## <a name="configure-enrollment-groups"></a>Configurar grupos de registro
 1. Como prática recomendada, crie um grupo de segurança do Azure AD no [Portal de Gerenciamento do Azure AD](https://manage.windowsazure.com) que contém um pequeno número de usuários para testar a integração do Lookout.
 
     > [OBSERVAÇÃO] Todos os dispositivos de usuários com suporte no Lookout e registrados pelo Intune em um grupo de registro no Azure AD identificados e com suporte são registrados e qualificados para ativação no console do Lookout MTD.
@@ -106,30 +102,25 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 
 4.  Quando estiver satisfeito com os resultados, estenda o registro para grupos de usuários adicionais.
 
-## Configurar a sincronização de estado
-<a id="configure-state-sync" class="xliff"></a>
+## <a name="configure-state-sync"></a>Configurar a sincronização de estado
 Na opção **Sincronização de Estado**, especifique o tipo de dados que deve ser enviado ao Intune.  O status do dispositivo e o status da ameaça são necessários para que a integração do Lookout com o Intune funcione corretamente. Essas configurações são habilitadas por padrão.
 
-## Configurar informações do destinatário do email de relatório de erros
-<a id="configure-error-report-email-recipient-information" class="xliff"></a>
+## <a name="configure-error-report-email-recipient-information"></a>Configurar informações do destinatário do email de relatório de erros
 Na opção **Gerenciamento de Erros**, insira o endereço de email que deve receber os relatórios de erros.
 
 ![captura de tela da página de gerenciamento de erros do conector do Intune](./media/lookout-mtp-connector-error-notifications.png)
 
-## Definir configurações de registro
-<a id="configure-enrollment-settings" class="xliff"></a>
+## <a name="configure-enrollment-settings"></a>Definir configurações de registro
 No módulo **Sistema**, na página **Conectores**, especifique o número de dias antes que um dispositivo seja considerado desconectado.  Dispositivos desconectados são considerados não compatíveis e serão impedidos de acessar seus aplicativos da empresa com base nas políticas de acesso condicional do Intune. Você pode especificar valores entre 1 e 90 dias.
 
 ![Configurações de registro do Lookout](./media/lookout-console-enrollment-settings.png)
 
-## Configurar notificações por email
-<a id="configure-email-notifications" class="xliff"></a>
+## <a name="configure-email-notifications"></a>Configurar notificações por email
 Se desejar receber alertas de ameaças por email, conecte-se ao [console do Lookout](https://aad.lookout.com) com a conta de usuário que deverá receber as notificações. Na guia **Preferências** do módulo **Sistema**, escolha os níveis de ameaças que devem emitir notificações e defina-os como **ATIVADO**. Salve as alterações.
 
 ![captura de tela da página Preferências com a conta de usuário exibida](./media/lookout-mtp-email-notifications.png) Se não quiser receber notificações por email, defina as notificações como **DESATIVADO** e salve as alterações.
 
-### Configurar a classificação de ameaças
-<a id="configure-threat-classification" class="xliff"></a>
+### <a name="configure-threat-classification"></a>Configurar a classificação de ameaças
 A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/articles/114094130693) têm níveis de risco padrão associados a elas. Elas podem ser alteradas a qualquer momento de acordo com os requisitos de sua empresa.
 
 ![captura de tela da página de política mostrando ameaças e classificações](./media/lookout-mtp-threat-classification.png)
@@ -137,9 +128,7 @@ A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vári
 >[!IMPORTANT]
 > Os níveis de risco são um aspecto importante da Defesa contra Ameaças Móveis, porque a integração com o Intune calcula a conformidade do dispositivo de acordo com esses níveis de risco em tempo de execução. O administrador do Intune define uma regra na política para identificar um dispositivo que não está em conformidade se ele tem uma ameaça ativa com um nível mínimo de **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na Defesa contra Ameaças Móveis do Lookout alimenta diretamente o cálculo de conformidade no Intune.
 
-## Verificar o registro
-<a id="watching-enrollment" class="xliff"></a>
+## <a name="watching-enrollment"></a>Verificar o registro
 Quando a instalação estiver concluída, a Defesa contra Ameaças Móveis do Lookout começa a sondar o Azure AD em busca de dispositivos que correspondem aos grupos de registro especificados.  Você pode encontrar informações sobre os dispositivos registrados no módulo Dispositivos.  O status inicial dos dispositivos é mostrado como pendente.  O status do dispositivo será alterado quando o aplicativo Lookout for Work estiver instalado, aberto e ativado no dispositivo.  Para ver detalhes sobre como fazer o aplicativo Lookout for Work ser enviado por push para o dispositivo, consulte o tópico [Adicionar aplicativos Lookout for Work com o Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 [Habilitar conexão do Lookout MTD no Intune](mtd-connector-enable.md)

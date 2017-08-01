@@ -21,11 +21,9 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2017
 ---
-# Como atribuir perfis de dispositivo do Microsoft Intune
-<a id="how-to-assign-microsoft-intune-device-profiles" class="xliff"></a>
+# <a name="how-to-assign-microsoft-intune-device-profiles"></a>Como atribuir perfis de dispositivo do Microsoft Intune
 
-## Atribuir um perfil de dispositivo
-<a id="assign-a-device-profile" class="xliff"></a>
+## <a name="assign-a-device-profile"></a>Atribuir um perfil de dispositivo
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -39,8 +37,7 @@ ms.lasthandoff: 07/06/2017
 
 
 
-## Como excluir grupos de uma atribuição de perfil de dispositivo
-<a id="how-to-exclude-groups-from-a-device-profile-assignment" class="xliff"></a>
+## <a name="how-to-exclude-groups-from-a-device-profile-assignment"></a>Como excluir grupos de uma atribuição de perfil de dispositivo
 
 Os perfis de configuração de dispositivo do Intune permitem que você exclua grupos da atribuição de política. Por exemplo, você pode atribuir um perfil de dispositivo para o grupo **Todos os usuários corporativos**, mas excluir os membros do grupo **Equipe de Gerenciamento Sênior**.
 
@@ -58,6 +55,5 @@ Se você incluir **Todos os Dispositivos**, mas excluir **Todos os Usuários**, 
 >Exclusões não estão disponíveis no momento para políticas de conformidade ou atribuição de aplicativo. Para excluir membros de uma atribuição, você pode usar as intenções de atribuição Disponível e Não aplicável. Por exemplo, você pode atribuir um aplicativo **Todos os usuários corporativos** com a intenção **Disponível** e **Equipe de Gerenciamento Sênior** com a intenção **Não aplicável**. o aplicativo é atribuído a todos os usuários, *exceto* aos usuários do grupo **Equipe de Gerenciamento Sênior**. Se você atribuir o aplicativo a **Todos os usuários corporativos** com a intenção **Necessário**, os usuários do grupo **Equipe de Gerenciamento Sênior** não serão excluídos.
  
     
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 Consulte [Como monitorar perfis de dispositivo](device-profile-monitor.md) para obter informações para ajudar a monitorar as atribuições de perfil de dispositivo.

@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Configurações de layout da Tela inicial do Intune para dispositivos iOS
-<a id="intune-home-screen-layout-settings-for-ios-devices" class="xliff"></a>
+# <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Configurações de layout da Tela inicial do Intune para dispositivos iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -33,8 +32,7 @@ Os dispositivos iOS para os quais você atribui o perfil devem estar no modo sup
 1. Na folha **Recursos do dispositivo**, escolha **Layout da Tela inicial (somente supervisionado)**.
 2. Na folha **Layout da Tela inicial (somente supervisionado)**, escolha se quer configurar os layouts do **Dock**, ou das **Páginas**.
 
-## Adicionar itens ao dock
-<a id="add-items-to-the-dock" class="xliff"></a>
+## <a name="add-items-to-the-dock"></a>Adicionar itens ao dock
 
 Na folha **Dock**, você pode adicionar até seis itens ou pastas ao dock na tela do iOS. No entanto, muitos dispositivos dão suporte a uma quantidade menor de itens, por exemplo, dispositivos iPhone dão suporte a até quatro itens. Nesse caso, somente os primeiros quatro itens configurados aparecerão no dispositivo.
 
@@ -46,8 +44,7 @@ Na folha **Dock**, você pode adicionar até seis itens ou pastas ao dock na tel
 >[!TIP]
 > Você pode arrastar e soltar itens em quaisquer lista de Tela inicial e páginas para reordená-las. 
 
-### Exemplo
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Exemplo
 
 Neste exemplo, você configurou a tela do dock para mostrar apenas os aplicativos Safari, Mail e Bolsa. Na imagem a seguir, o aplicativo Mail está selecionado para ilustrar suas propriedades:
 
@@ -57,8 +54,7 @@ Quando você atribuir a política a um iPhone, o resultado será um dock semelha
 
 ![Exemplo de layout do dock do iOS no iPhone](http://i.imgur.com/bAgCe8F.png)
 
-## Adicionar páginas de Tela inicial
-<a id="add-home-screen-pages" class="xliff"></a>
+## <a name="add-home-screen-pages"></a>Adicionar páginas de Tela inicial
 
 Adicione as páginas que você deseja exibir na Tela inicial e os aplicativos que aparecerão em cada página. Os aplicativos adicionados a uma página são dispostos da esquerda para a direita, na ordem especificada na lista. Se você adicionar mais aplicativos que uma página comporta, eles serão movidos para uma página subsequente.
 
@@ -68,8 +64,7 @@ Adicione as páginas que você deseja exibir na Tela inicial e os aplicativos qu
 3. Escolha **Adicionar**, depois escolha se você quer adicionar um **Aplicativo** ou uma **Pasta** à página.
 4. Usando as informações deste tópico, configure os aplicativos e as pastas que você deseja que apareça na página.
 
-### Exemplo
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Exemplo
 
 Neste exemplo, você configurou uma nova página chamada **Contoso**. A página mostra apenas os aplicativos Buscar Amigos e Ajustes. Na imagem a seguir, o aplicativo Ajustes está selecionado para ilustrar suas propriedades:
 
@@ -79,16 +74,14 @@ Quando você atribuir a política a um iPhone, o resultado será uma página sem
 
 ![Dispositivo iOS com Tela inicial modificada](http://i.imgur.com/Bd37PHa.png)
 
-## Como adicionar um aplicativo à lista
-<a id="how-to-add-an-app-to-the-list" class="xliff"></a>
+## <a name="how-to-add-an-app-to-the-list"></a>Como adicionar um aplicativo à lista
 
 1. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Intune e *não é exibido* no dispositivo iOS.
 2. Insira **ID de Pacote de Aplicativos** do aplicativo que você deseja exibir. Consulte **Referência da ID de Pacote para aplicativos iOS internos** mais adiante neste tópico para obter ajuda.
 3. Clique em **OK**, depois continue a adicionar itens, até um máximo de **6** para o dock do dispositivo, e **60** para uma página de dispositivo.
 4. Ao terminar, clique em **OK**.
 
-## Como adicionar uma pasta à lista
-<a id="how-to-add-a-folder-to-the-list" class="xliff"></a>
+## <a name="how-to-add-a-folder-to-the-list"></a>Como adicionar uma pasta à lista
 
 Os aplicativos adicionados a uma página em uma pasta são dispostos da esquerda para a direita, na ordem especificada na lista. Se você adicionar mais aplicativos que uma página comporta, eles serão movidos para uma página subsequente.
 
@@ -101,8 +94,7 @@ Os aplicativos adicionados a uma página em uma pasta são dispostos da esquerda
 4. Ao terminar, clique em **OK**.
 
 
-## Referência de ID de Pacote para aplicativos iOS internos
-<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID de Pacote para aplicativos iOS internos
 
 Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software. 
 
@@ -149,7 +141,6 @@ Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para
 |Clima|com.apple.weather|
 
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

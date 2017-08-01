@@ -21,15 +21,13 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Introdução aos usuários
-<a id="get-started-with-users" class="xliff"></a>
+# <a name="get-started-with-users"></a>Introdução aos usuários
 
 ![Um usuário genérico no Azure](/intune/media/generic-intune-user.png)
 
 O Azure AD gerencia os grupos de objetos – como dispositivos e aplicativos – da sua organização. Você pode agrupar usuários ou dispositivos em vez de precisar gerenciar cada dispositivo individualmente. Isso permite atribuir facilmente aplicativos e configurações para um grande número de usuários e dispositivos.
 
-## Como eu crio um usuário?
-<a id="how-do-i-create-a-user" class="xliff"></a>
+## <a name="how-do-i-create-a-user"></a>Como eu crio um usuário?
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Usando **Pesquisar recursos**, pesquise **Usuários e grupos**.
@@ -39,8 +37,7 @@ O Azure AD gerencia os grupos de objetos – como dispositivos e aplicativos –
 6. Salve a senha do usuário gerada automaticamente para que você possa usá-la para fazer logon em um dispositivo de teste. Você deve fornecer essa senha para usuários para que eles podem alterá-la para uma senha normal que pode ser lembrada.
 7. Na folha **Usuário**, selecione **Criar**.
 
-## Atribuir licenças a usuários
-<a id="assigning-licenses-to-users" class="xliff"></a>
+## <a name="assigning-licenses-to-users"></a>Atribuir licenças a usuários
 
 Depois de criar um usuário, será necessário usar o [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a esse usuário. Sem atribuir uma licença, não será possível registrar seus dispositivos no gerenciamento.
 

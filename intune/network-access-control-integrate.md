@@ -21,30 +21,25 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Integração de NAC (controle de acesso de rede) com o Intune
-<a id="network-access-control-nac-integration-with-intune" class="xliff"></a>
+# <a name="network-access-control-nac-integration-with-intune"></a>Integração de NAC (controle de acesso de rede) com o Intune
 
 O Intune se integra com os parceiros de controle de acesso de rede para ajudar as organizações a proteger dados corporativos quando os dispositivos tentam acessar os recursos locais.
 
-## Como soluções do Intune e de NAC ajudam a proteger os recursos de sua organização?
-<a id="how-do-intune-and-nac-solutions-help-protect-your-organization-resources" class="xliff"></a>
+## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Como soluções do Intune e de NAC ajudam a proteger os recursos de sua organização?
 
 Soluções NAC serão responsáveis por verificar o estado de conformidade e de registro do dispositivo com o Intune para tomar decisões de controle de acesso. Se o dispositivo não estiver registrado ou se estiver registrado e não for compatível com políticas de conformidade do dispositivo do Intune, o dispositivo deve ser redirecionado para o Intune para registro e/ou verificação de conformidade do dispositivo.
 
-### Exemplo
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Exemplo
 
 Se o dispositivo for registrado e estiver em conformidade com o Intune, a solução NAC deverá permitir que o dispositivo acesse os recursos corporativos. Por exemplo, o acesso dos usuários pode ser permitido ou negado ao tentar acessar os recursos de VPN ou Wi-Fi corporativo.
 
-## NAC e acesso condicional
-<a id="nac-and-conditional-access" class="xliff"></a>
+## <a name="nac-and-conditional-access"></a>NAC e acesso condicional
 
 O NAC trabalha junto com o acesso condicional para fornecer as decisões de controle de acesso.
 
 - Consulte [maneiras de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md) para obter mais detalhes.
 
-## Como funciona a integração de NAC
-<a id="how-the-nac-integration-works" class="xliff"></a>
+## <a name="how-the-nac-integration-works"></a>Como funciona a integração de NAC
 
 Veja essa visão geral de como a integração de NAC funciona quando integrado com o Intune, as três primeiras etapas explicam o processo de integração. Depois que a solução de NAC é integrada com o Intune, as etapas 4 a 9 descrevem a operação em andamento.
 
@@ -68,8 +63,7 @@ Veja essa visão geral de como a integração de NAC funciona quando integrado c
 
 9.  A conexão é estabelecida com êxito, permitindo que o dispositivo acesse os recursos corporativos.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 -   [Integrar o Cisco ISE com o Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 

@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# O que é o Microsoft Intune?
-<a id="what-is-microsoft-intune" class="xliff"></a>
+# <a name="what-is-microsoft-intune"></a>O que é o Microsoft Intune?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,8 +31,7 @@ O Microsoft Intune é um dos serviços mais novos do Azure. Ele oferece ferramen
 
 ![A folha de ajuda e suporte, disponível na parte inferior da lista de ações na barra lateral esquerda do Intune.](./media/intune-azure-help-support-closeup.png)
 
-## O que o Intune no Portal do Azure oferece?
-<a id="what-does-intune-in-the-azure-portal-provide" class="xliff"></a>
+## <a name="what-does-intune-in-the-azure-portal-provide"></a>O que o Intune no Portal do Azure oferece?
 
 O Intune no Portal do Azure fornece:
 
@@ -42,8 +40,7 @@ O Intune no Portal do Azure fornece:
 * [Grupos do Azure Active Directory](groups-get-started.md) para fornecer compatibilidade entre todos os aplicativos do Azure
 * Automação por meio da [API do Microsoft Graph](intune-graph-apis.md)
 
-## Pré-requisitos
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Pré-requisitos
 
 Antes de começar, você deve ter uma conta de administrador e de locatário do Intune ativadas. Você pode se inscrever para essas contas [aqui](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Os assinantes atuais também podem executar essas atividades em seu locatário dinâmico. Verifique se que você está trabalhando somente em dispositivos de teste!
 

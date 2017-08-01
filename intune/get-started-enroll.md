@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Introdução ao registro de dispositivos
-<a id="getting-started-enrolling-devices" class="xliff"></a>
+# <a name="getting-started-enrolling-devices"></a>Introdução ao registro de dispositivos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,8 +29,7 @@ ms.lasthandoff: 07/03/2017
 
 O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositivos móveis, ao mesmo tempo que mantém seus dados corporativos protegidos. Como os usuários finais interagem com o Intune em seus dispositivos, em vez de no console do administrador, você deve estar familiarizado com a experiência de registro. Dessa forma, você pode combinar as políticas de conformidade bem elaboradas com sua experiência para demonstrar empatia pelos usuários. Isso é especialmente importante porque os usuários saberão exatamente quais informações que você pode ver como um administrador:
 
-## O que a equipe de TI não pode ver
-<a id="what-it-cannot-see" class="xliff"></a>
+## <a name="what-it-cannot-see"></a>O que a equipe de TI não pode ver
 * Histórico de chamadas e de navegação na Web
 * Local
 * Email pessoal
@@ -41,8 +39,7 @@ O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositiv
 * Eventos do calendário
 * Imagens, incluindo o conteúdo do aplicativo de fotos ou as imagens da câmera
 
-## O que a equipe de TI pode ver
-<a id="what-it-can-see" class="xliff"></a>
+## <a name="what-it-can-see"></a>O que a equipe de TI pode ver
 * Modelo
 * Número de série
 * Versão do sistema operacional
@@ -52,8 +49,7 @@ O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositiv
 * Fabricante (para dispositivos não fabricados pela Apple)
 * Número de telefone (para dispositivos corporativos, o número completo. Para dispositivos pessoais, apenas os últimos quatro dígitos.)
 
-## Como registro um dispositivo?
-<a id="how-do-i-enroll-a-device" class="xliff"></a>
+## <a name="how-do-i-enroll-a-device"></a>Como registro um dispositivo?
 
 Registrar um dispositivo é a primeira experiência que muitos usuários finais terão ao acessar recursos corporativos. [Entender essa experiência](end-user-educate.md) pode ajudar a tornar uma experiência possivelmente desagradável em uma melhor.
 

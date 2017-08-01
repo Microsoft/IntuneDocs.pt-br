@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Introdução aos grupos
-<a id="get-started-with-groups" class="xliff"></a>
+# <a name="get-started-with-groups"></a>Introdução aos grupos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

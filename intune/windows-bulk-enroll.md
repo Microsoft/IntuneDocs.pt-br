@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Registro em massa para dispositivos Windows
-<a id="bulk-enrollment-for-windows-devices" class="xliff"></a>
+# <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,16 +28,14 @@ Como administrador, você pode ingressar muitos dispositivos novos com Windows a
 
 Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas do Intune atribuídas e os aplicativos necessários. Não há suporte no momento para cenários de autoatendimento e de Portal da empresa.
 
-## Pré-requisitos para registro em massa de dispositivos Windows
-<a id="prerequisites-for-windows-devices-bulk-enrollment" class="xliff"></a>
+## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para registro em massa de dispositivos Windows
 
 O registro em massa para dispositivos Windows exige o seguinte:
 
 - Dispositivos com Atualização do Windows 10 para Criadores ou posteriores
 - [Registro automático do Windows](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 
-## Criar um pacote de provisionamento
-<a id="create-a-provisioning-package" class="xliff"></a>
+## <a name="create-a-provisioning-package"></a>Criar um pacote de provisionamento
 
 1. Baixe o [WCD (Windows Configuration Designer)](https://www.microsoft.com/store/apps/9nblggh4tx22) da Windows Store.
 ![Capturas de tela e descrição do Windows Configuration Designer](media/bulk-enroll-store.png)
@@ -70,8 +67,7 @@ O registro em massa para dispositivos Windows exige o seguinte:
 10. Como opção, você pode proteger com senha seu pacote de provisionamento.  Clique em **Criar**.
 ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-create.png)
 
-## Provisionar dispositivos
-<a id="provision-devices" class="xliff"></a>
+## <a name="provision-devices"></a>Provisionar dispositivos
 
 1. Acesse o pacote de provisionamento no local especificado, na **Pasta do projeto** especificada no aplicativo.
 
@@ -86,20 +82,16 @@ O registro em massa para dispositivos Windows exige o seguinte:
 
 4. Quando o dispositivo for reiniciado, ele se conectará ao Azure Active Directory e registrará no Microsoft Intune.
 
-## Solução de problemas de registro em massa do Windows
-<a id="troubleshooting-windows-bulk-enrollment" class="xliff"></a>
+## <a name="troubleshooting-windows-bulk-enrollment"></a>Solução de problemas de registro em massa do Windows
 
-### Problemas de provisionamento
-<a id="provisioning-issues" class="xliff"></a>
+### <a name="provisioning-issues"></a>Problemas de provisionamento
 O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de provisionamento podem exigir a redefinição de fábrica do dispositivo ou a recuperação do dispositivo a partir de uma imagem de inicialização. Estes exemplos descrevem alguns dos motivos para falhas de provisionamento:
 
 - Um pacote de provisionamento que tenta ingressar em um domínio do Active Directory ou locatário do Azure Active Directory que não cria uma conta local poderia tornar o dispositivo inacessível se o processo de ingresso no domínio falhar devido à falta de conectividade de rede.
 - Os scripts executados pelo pacote de provisionamento são executados no contexto do sistema e podem fazer alterações aleatórias no sistema de arquivos e configurações do dispositivo. Um script mal-intencionado ou incorreto pode colocar o dispositivo em um estado que só pode ser recuperado refazendo a imagem ou redefinindo o dispositivo para as configurações de fábrica.
 
-### Problemas com o Portal da Empresa e registro em massa
-<a id="problems-with-bulk-enrollment-and-company-portal" class="xliff"></a>
+### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com o Portal da Empresa e registro em massa
 Se um usuário tenta registrar um dispositivo previamente registrado em massa usando o Portal da Empresa, eles receberão um aviso de que seu dispositivo precisa de outras ações, seja instalação ou registro. O dispositivo é registrado, mas o registro não é reconhecido pelo aplicativo de Portal da Empresa ou site.
 
-### Acesso condicional
-<a id="conditional-access" class="xliff"></a>
+### <a name="conditional-access"></a>Acesso condicional
 O acesso condicional não está disponível para dispositivos Windows registrados em massa.

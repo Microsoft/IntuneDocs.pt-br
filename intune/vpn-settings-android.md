@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Configurações de VPN para dispositivos Android no Microsoft Intune
-<a id="vpn-settings-for-android-devices-in-microsoft-intune" class="xliff"></a>
+# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Configurações de VPN para dispositivos Android no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -33,8 +32,7 @@ Como administrador do Intune, você pode definir as configurações de VPN para 
 
 Dependendo das configurações escolhidas, nem todos os valores listados abaixo serão configuráveis.
 
-## Configurações de VPN no Android
-<a id="android-vpn-settings" class="xliff"></a>
+## <a name="android-vpn-settings"></a>Configurações de VPN no Android
 **Nome da conexão** – Insira um nome para esta conexão. Usuários finais verão esse nome quando navegarem pela lista de conexões VPN disponíveis em seus dispositivos.
 - **Endereço IP ou FQDN** – Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectarão. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
 - **Método de autenticação** – Escolha como os dispositivos se autenticarão do servidor VPN:
@@ -51,8 +49,7 @@ Dependendo das configurações escolhidas, nem todos os valores listados abaixo 
 - **Impressão digital** (somente Check Point Capsule VPN) – Especifique uma cadeia de caracteres, (por exemplo "Código de impressões digitais da Contoso") que será usado para verificar se o servidor VPN é confiável. Uma impressão digital pode ser enviada ao cliente para que ele saiba que pode confiar em qualquer servidor que apresentar essa impressão digital durante a conexão. Se o dispositivo ainda não tiver a impressão digital, ele solicitará ao usuário que confie no servidor VPN ao qual ele está se conectando enquanto mostra a impressão digital (o usuário verifica a impressão digital manualmente e clica em confiar para se conectar).
 - **Insira os pares chave-valor para os atributos de VPN Citrix** (somente Citrix) – Insira os pares chave-valor fornecidos pela Citrix para configurar as propriedades de conexão de VPN.
 
-## Configurações de VPN do Android for Work
-<a id="android-for-work-vpn-settings" class="xliff"></a>
+## <a name="android-for-work-vpn-settings"></a>Configurações de VPN do Android for Work
 
 **Nome da conexão** – Insira um nome para esta conexão. Usuários finais verão esse nome quando navegarem pela lista de conexões VPN disponíveis em seus dispositivos.
 - **Endereço IP ou FQDN** – Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectarão. Exemplos: **192.168.1.1**, **vpn.contoso.com**.

@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
-# O que é o gerenciamento de aplicativo do Microsoft Intune?
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ Além disso, pode ser útil atribuir e gerenciar aplicativos em dispositivos que
 
 O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja.
 
-## Recursos de gerenciamento de aplicativo por plataforma
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>Recursos de gerenciamento de aplicativo por plataforma
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 
 <sup>2</sup>Aplica-se apenas a dispositivos gerenciados pelo Intune.
 
-## Como começar
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Como começar
 
 Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho **Aplicativos Móveis**, que pode ser acessada da seguinte maneira:
 
@@ -73,8 +70,7 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 
     ![A carga de trabalho de Aplicativos Móveis](./media/apps-workload.png)
 
-### Gerenciar
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>Gerenciar
 - **Aplicativos** – esse nó é o local em que você adiciona, atribui e monitora a maioria de seus aplicativos.
     - [Adicionar aplicativos](apps-add.md)
     - [Atribuir aplicativos](apps-deploy.md)
@@ -89,8 +85,7 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 - **Perfis de provisionamento de iOS** – os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração.
     - [Perfis de provisionamento de aplicativo iOS](app-provisioning-profile-ios.md)
 
-### Monitor
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Monitor
 - **Aplicativos Licenciados** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos.
     - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
 - **Aplicativos descobertos** – Mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.
@@ -99,8 +94,7 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 
 Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store para Empresas** – configure a integração com a Windows Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças.

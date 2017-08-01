@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Configurações do Intune AirPlay para dispositivos iOS
-<a id="intune-airplay-settings-for-ios-devices" class="xliff"></a>
+# <a name="intune-airplay-settings-for-ios-devices"></a>Configurações do Intune AirPlay para dispositivos iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,22 +31,19 @@ Com esse recurso, você pode:
 - **Configurar uma lista de dispositivos e senhas** – permita que os usuários se conectem automaticamente aos dispositivos AirPlay que estão no alcance. Provisione-os com o nome e a senha dos dispositivos AirPlay, de forma que eles não precisem fornecê-los quando se conectarem.
 - **Configurar destinos permitidos** - configure uma lista de dispositivos AirPlay (por ID de dispositivo). Os usuários finais somente podem ver e se conectar aos dispositivos listados (apenas para dispositivos supervisionados).
 
-## Introdução
-<a id="get-started" class="xliff"></a>
+## <a name="get-started"></a>Introdução
 
 1. Na folha **Recursos do dispositivo**, escolha **AirPlay**.
 2. Na folha **AirPlay**, escolha uma ou ambas as seguintes ações:
 
-## Configurar uma lista de dispositivos e senha
-<a id="configure-a-device-and-password-list" class="xliff"></a>
+## <a name="configure-a-device-and-password-list"></a>Configurar uma lista de dispositivos e senha
 
 1. Na folha **Senhas**, insira o **Nome do Dispositivo** e a **Senha** de um dispositivo AirPlay, por exemplo, **Contoso Apple TV**.
 2. Depois de inserir os detalhes do dispositivo, clique em **Adicionar**. O dispositivo é exibido na lista **Nome do Dispositivo**.
 3. Continue adicionando itens. Quando terminar, escolha **OK**.
 
 
-## Configurar destinos permitidos
-<a id="configure-allowed-destinations" class="xliff"></a>
+## <a name="configure-allowed-destinations"></a>Configurar destinos permitidos
 
 1. Na folha **Destinos permitidos (somente supervisionados)**, insira a **ID do Dispositivo** de um dispositivo AirPlay, por exemplo, 52:46:CD:51:83:4C.
 2. Depois de inserir a ID do dispositivo, clique em **Adicionar**. A ID é exibida na lista **ID do Dispositivo**.
@@ -56,8 +52,7 @@ Com esse recurso, você pode:
 Você também pode importar o dispositivo e as senhas, bem como os destinos permitidos, de um arquivo csv (valores separados por vírgula).
 
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 

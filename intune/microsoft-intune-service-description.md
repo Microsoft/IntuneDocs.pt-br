@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Descrição do serviço do Microsoft Intune
-<a id="microsoft-intune-service-description" class="xliff"></a>
+# <a name="microsoft-intune-service-description"></a>Descrição do serviço do Microsoft Intune
 
 O Intune é um serviço de EMM (gerenciamento de mobilidade empresarial) baseado em nuvem que ajuda a habilitar sua força de trabalho a ser produtiva enquanto mantém dados corporativos protegidos. Com o Intune, você pode:
 * gerenciar os dispositivos móveis que sua força de trabalho usa para acessar dados da empresa.
@@ -33,8 +32,7 @@ O Intune se integra estreitamente ao Azure AD (Azure Active Directory) para o co
 
 Para saber mais sobre como gerenciar dispositivos, aplicativos e proteger dados corporativos com o Intune, consulte a [Documentação do Intune](https://docs.microsoft.com/intune/).
 
-## Avaliação gratuita por 30 dias
-<a id="30-day-free-trial" class="xliff"></a>
+## <a name="30-day-free-trial"></a>Avaliação gratuita por 30 dias
 É possível começar a usar o Intune com uma versão de avaliação gratuita por 30 dias, que inclui 100 licenças para usuários. Para iniciar sua avaliação gratuita, vá até a [página de inscrição do Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Se a sua empresa tiver um contrato corporativo ou um contrato de licenciamento por volume equivalente, entre em contato com o seu representante da Microsoft para configurar sua avaliação gratuita.
 
 > [!NOTE]
@@ -47,13 +45,11 @@ Para saber mais sobre como gerenciar dispositivos, aplicativos e proteger dados 
 -   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
 For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
-## Benefício do Intune Onboarding
-<a id="intune-onboarding-benefit" class="xliff"></a>
+## <a name="intune-onboarding-benefit"></a>Benefício do Intune Onboarding
 A Microsoft oferece o benefício do Intune Onboarding para serviços qualificados em planos qualificados. O benefício do Onboarding permite que você trabalhe remotamente com especialistas da Microsoft para deixar seu ambiente do Intune pronto para uso. Para obter mais informações sobre o benefício de Integração, consulte [Descrição do Benefício de Integração do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=619281).
 
 
-## Saiba como as atualizações de serviço do Intune afetam você
-<a id="learn-how-intune-service-updates-affect-you" class="xliff"></a>
+## <a name="learn-how-intune-service-updates-affect-you"></a>Saiba como as atualizações de serviço do Intune afetam você
 
 Como o ecossistema de gerenciamento de dispositivo móvel muda frequentemente com atualizações do sistema operacional e as versões do aplicativo móvel, a Microsoft atualiza o Intune regularmente. Há três maneiras de saber mais sobre as alterações no serviço do Intune:
 
@@ -80,8 +76,7 @@ Como o ecossistema de gerenciamento de dispositivo móvel muda frequentemente co
 >[!Note]
 >Você pode monitorar a integridade do serviço Intune no [Portal de gerenciamento do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Integridade do Serviço** no painel esquerdo. Use também o [aplicativo móvel de Administração do Office 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) para exibir a integridade do serviço.
 
-## Tipos de avisos que a Microsoft fornece sobre o serviço do Intune
-<a id="types-of-notices-microsoft-provides-about-the-intune-service" class="xliff"></a>
+## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Tipos de avisos que a Microsoft fornece sobre o serviço do Intune
 
 Para ajudar você a planejar as alterações do serviço, notificaremos você com um prazo mínimo de 7 a 90 dias antes da alteração do serviço, dependendo do impacto da alteração. Essas alterações podem incluir um dos seguintes tipos de alteração:
 
@@ -103,8 +98,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
-## Suporte ao idioma
-<a id="language-support" class="xliff"></a>
+## <a name="language-support"></a>Suporte ao idioma
 O Intune é executado no Portal do Azure, que dá suporte aos seguintes idiomas: chinês (simplificado), chinês (tradicional), tcheco, holandês, inglês, alemão, húngaro, italiano, japonês, português (Brasil), português (Portugal), russo, espanhol, inglês, francês, coreano, polonês, sueco e turco.
 
 O Console de Administração do Intune e as experiências móveis do usuário têm suporte nos idiomas dinamarquês, grego, finlandês, norueguês e romeno, além de todos os idiomas com suporte no Portal do Azure.

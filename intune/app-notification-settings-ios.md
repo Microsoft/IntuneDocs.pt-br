@@ -21,15 +21,13 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Configurações de notificação de aplicativo do Intune para dispositivos iOS
-<a id="intune-app-notifications-settings-for-ios-devices" class="xliff"></a>
+# <a name="intune-app-notifications-settings-for-ios-devices"></a>Configurações de notificação de aplicativo do Intune para dispositivos iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Permite a configuração de como os aplicativos instalados em um dispositivo enviam notificações. Essa configuração dá suporte a dispositivos supervisionados que executam o iOS 9.3 e posterior.
 
-## Definir configurações
-<a id="configure-settings" class="xliff"></a>
+## <a name="configure-settings"></a>Definir configurações
 
 1. Na folha Recursos do dispositivo escolha **Notificações de Aplicativo (somente supervisionado)**.
 2. Na folha **Notificações do Aplicativo**, escolha **Adicionar** e configure os seguintes valores:
@@ -49,8 +47,7 @@ Permite a configuração de como os aplicativos instalados em um dispositivo env
 4. Escolha **OK** em até voltar à folha **Criar Perfil**, depois escolha **Criar**. 
 
 
-## Referência de ID de Pacote para aplicativos iOS internos
-<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID de Pacote para aplicativos iOS internos
 
 Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software. 
 
@@ -96,7 +93,6 @@ Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para
 |Assistir|com.apple.Bridge|
 |Clima|com.apple.weather|
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

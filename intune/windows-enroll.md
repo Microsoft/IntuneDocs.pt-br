@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Registrar os dispositivos Windows
-<a id="enroll-windows-devices" class="xliff"></a>
+# <a name="enroll-windows-devices"></a>Registrar os dispositivos Windows
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -49,8 +48,7 @@ Os dispositivos que executam a Atualização do Windows 10 para Criadores, e que
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## Habilitar o registro do Windows sem o Azure AD Premium
-<a id="enable-windows-enrollment-without-azure-ad-premium" class="xliff"></a>
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Habilitar o registro do Windows sem o Azure AD Premium
 É possível simplificar o registro para os usuários criando um alias DNS (tipo de registro CNAME) que redireciona automaticamente as solicitações de registro para os servidores do Intune. Se você não criar um registro de recurso DNS CNAME, os usuários que tentarem se conectar ao Intune deverão inserir o nome do servidor Intune durante o registro.
 
 **Etapa 1: Criar um CNAME** (opcional)<br>
@@ -77,8 +75,7 @@ Alterações em registros DNS podem levar até 72 horas para serem propagadas. V
 **Etapa 2: Verifique o CNAME** (opcional)<br>
 No portal do Azure Intune, selecione **Mais serviços** > **Monitoramento + Gerenciamento** > **Intune**. Na folha do Intune, escolha **Registrar dispositivos** > **Registro do Windows**. Digite a URL do site da empresa na caixa **Especificar um nome de domínio verificado** e escolha **Testar Detecção Automática**.
 
-## Informe aos usuários como registrar dispositivos Windows
-<a id="tell-users-how-to-enroll-windows-devices" class="xliff"></a>
+## <a name="tell-users-how-to-enroll-windows-devices"></a>Informe aos usuários como registrar dispositivos Windows
 Informe aos usuários como registrar seus dispositivos Windows e o que esperar quando eles forem incluídos no gerenciamento. Para obter instruções de registro de usuário final, consulte [Registrar seu dispositivo com Windows no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Você também pode pedir para os usuários lerem [O que meu administrador de TI poderá ver em meu dispositivo](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](end-user-educate.md).

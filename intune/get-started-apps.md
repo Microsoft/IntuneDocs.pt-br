@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Introdução aos aplicativos
-<a id="getting-started-with-apps" class="xliff"></a>
+# <a name="getting-started-with-apps"></a>Introdução aos aplicativos
 
 ![Uma imagem da adição do aplicativo Microsoft Word.](/intune/media/generic-add-apps.png)
 
