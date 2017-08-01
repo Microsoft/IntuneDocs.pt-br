@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
-# Desenvolver um plano de distribuição
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Desenvolver um plano de distribuição
 
 Seu plano de distribuição identifica os grupos organizacionais que você deseja direcionar para a distribuição do Intune, o cronograma de distribuição para cada grupo e as abordagens de registro que você usará.
 
-## Grupos direcionados e cronogramas
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Grupos direcionados e cronogramas
 
 Primeiro, examine os grupos que são direcionados com a distribuição do Intune e que você identificou nos [cenários de casos de uso](planning-guide-scenarios.md).
 
@@ -38,20 +36,17 @@ Em segundo lugar, determine o cronograma para cada grupo direcionado. Normalment
 * Localização geográfica
 * Risco para os negócios
 
-## Fases de distribuição
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Fases de distribuição
 Em geral, as organizações optam por iniciar a distribuição do Intune com um piloto inicial, visando um pequeno grupo de usuários no departamento de TI. O piloto pode ser expandido para incluir um conjunto mais amplo de usuários de TI e pode incluir a participação de outros grupos organizacionais.
 
-### Piloto
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Piloto
 A primeira fase a ser distribuída deve ser para usuários pilotos. Os usuários pilotos devem entender que eles são os primeiros usuários de uma nova solução. Eles devem estar dispostos a fornecer comentários para ajudar a melhorar a configuração, a documentação, as notificações e facilitar o caminho de todos os outros usuários nas fases de distribuição posteriores. Esses usuários não devem ser executivos nem VIPs.
 
 O piloto é uma boa oportunidade de testar os [desafios](planning-guide-deployment-goals.md) e refinar os [requisitos](planning-guide-requirements.md) coletados anteriormente.
 
 Inclua o plano de [comunicação](planning-guide-communication-plan.md), o plano de [suporte](planning-guide-support-plan.md) e o [teste e validação](planning-guide-test-validation.md) para solucionar problemas quando o impacto para os usuários ainda é pequeno.
 
-### Distribuição de produção
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Distribuição de produção
 Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição de produção completa, direcionando o restante dos grupos de sua organização. Alguns exemplos de grupos de distribuição diferentes e fases são:
 
 -   **Departamentos** <br/>Cada departamento pode ser uma fase de distribuição. Você pode direcionar todo o departamento de uma só vez. Nesse tipo de distribuição, os usuários de cada departamento tendem a usar o dispositivo móvel da mesma maneira e acessar os mesmos aplicativos. Os usuários provavelmente terão os mesmos tipos de políticas.
@@ -71,26 +66,22 @@ Este é um exemplo de um plano de distribuição do Intune que inclui grupos de 
 | Fase 3 da distribuição de produção |  |  |  | RH (50 usuários), Finanças (40 usuários), Executivos (30 usuários) |
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir as fases de distribuição de sua organização.
-## Fazer a correspondência entre grupos de distribuição e abordagens de registro
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Fazer a correspondência entre grupos de distribuição e abordagens de registro
 
 Agora que você determinou os grupos direcionados e os cronogramas para a distribuição do Intune, a próxima etapa é escolher a abordagem de registro do Intune mais apropriada para cada grupo. Há diferentes métodos de registro que podem ser usados, incluindo:
 * Autoatendimento do usuário
 * Registro assistido do usuário
 * Feira de tecnologia de TI
 
-### Autoatendimento do usuário
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Autoatendimento do usuário
 
 Nesse caso, o usuário é responsável pelo registro de seu próprio dispositivo, geralmente, seguindo as instruções de registro fornecidas por sua organização de TI. Essa abordagem é mais usada nas organizações e é mais escalonável que o registro assistido do usuário.
 
-### Registro assistido do usuário
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Registro assistido do usuário
 
 Isso é conhecido como uma abordagem “diferenciada”. Um membro da equipe de TI ajuda o usuário pelo processo de registro, pessoalmente ou com o Skype. Essa abordagem geralmente é usada com a equipe executiva e com outros grupos que podem precisar de mais assistência durante o processo de registro.
 
-### Feira de tecnologia de TI
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>Feira de tecnologia de TI
 
 Outra opção para o registro de usuário do Intune é realizar uma feira técnica de TI. Nesse evento, o grupo de TI monta uma cabine de assistência de registro do Intune, na qual os usuários poderão receber informações sobre o registro do Intune, fazer perguntas e obter assistência com o processo de registro. Essa opção pode ser útil para o grupo de TI e os usuários, especialmente durante as fases iniciais da distribuição do Intune.
 
@@ -111,7 +102,6 @@ Este é um exemplo atualizado do plano de distribuição do Intune acima para in
 | Autoatendimento |  |  |  | RH, Finanças |
 | Diferenciado |  |  |  | Executivos |
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 A próxima seção fornece diretrizes sobre como [desenvolver um plano de comunicação para a distribuição do Intune](planning-guide-communication-plan.md).

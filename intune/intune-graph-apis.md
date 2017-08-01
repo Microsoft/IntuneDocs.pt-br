@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Como usar o Azure AD para acessar a API do Graph no Intune
-<a id="how-to-use-azure-ad-to-access-the-intune-graph-api" class="xliff"></a>
+# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Como usar o Azure AD para acessar a API do Graph no Intune
 
 A [API do Microsoft Graph](https://developer.microsoft.com/graph/) agora dá suporte ao Microsoft Intune com APIs e funções de permissão específicas.  A API do Graph usa o Azure AD (Azure Active Directory) para autenticação e controle de acesso.  
 O acesso à API do Graph no Intune exige:
@@ -54,8 +53,7 @@ Para obter mais informações, consulte:
 - [Integrando aplicativos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Entender o OAuth 2.0](https://oauth.net/2/)
 
-## Registrar aplicativos para usar a API do Graph
-<a id="register-apps-to-use-graph-api" class="xliff"></a>
+## <a name="register-apps-to-use-graph-api"></a>Registrar aplicativos para usar a API do Graph
 
 Para registrar um aplicativo para usar a API do Graph:
 
@@ -127,8 +125,7 @@ Neste ponto, você também poderá:
 
     3. Salve as alterações.
 
-## Escopos de permissões do Intune
-<a id="intune-permission-scopes" class="xliff"></a>
+## <a name="intune-permission-scopes"></a>Escopos de permissões do Intune
 
 O Azure AD e a API do Graph usam escopos de permissões para controlar o acesso a recursos corporativos.  
 
@@ -294,8 +291,7 @@ No momento, todos os escopos de permissões do Intune exigem o acesso de adminis
     - Identidade Visual
     - Defesa contra Ameaças Móveis
 
-## Exemplos de autenticação do Azure AD
-<a id="azure-ad-authentication-examples" class="xliff"></a>
+## <a name="azure-ad-authentication-examples"></a>Exemplos de autenticação do Azure AD
 
 Esta seção mostra como incorporar o Azure AD em seus projetos do C# e PowerShell.
 
@@ -330,8 +326,7 @@ Se isso acontecer, verifique se:
 - O código é semelhante às amostras exibidas.
 
 
-### Autenticar o Azure AD no C\#
-<a id="authenticate-azure-ad-in-c" class="xliff"></a>
+### <a name="authenticate-azure-ad-in-c"></a>Autenticar o Azure AD no C\#
 
 Este exemplo mostra como usar o C# para recuperar uma lista de dispositivos associados à sua conta do Intune.
 
@@ -437,8 +432,7 @@ namespace IntuneGraphExample
 }
 ```
 
-### Autenticar o Azure AD (PowerShell)
-<a id="authenticate-azure-ad-powershell" class="xliff"></a>
+### <a name="authenticate-azure-ad-powershell"></a>Autenticar o Azure AD (PowerShell)
 
 O script do PowerShell a seguir usa o módulo Azure AD PowerShell para autenticação.  Para saber mais, consulte [Azure Active Directory PowerShell Versão 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) e os [exemplos do Intune PowerShell](https://github.com/microsoftgraph/powershell-intune-samples).
 
@@ -549,8 +543,7 @@ catch {
 }
 ```
 
-## Dar suporte a vários locatários e parceiros
-<a id="support-multiple-tenants-and-partners" class="xliff"></a>
+## <a name="support-multiple-tenants-and-partners"></a>Dar suporte a vários locatários e parceiros
 
 Caso sua organização dê suporte a organizações com seus próprios locatários do Azure AD, é recomendável permitir que os clientes usem seu aplicativo com os respectivos locatários deles.
 

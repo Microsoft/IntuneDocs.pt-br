@@ -20,19 +20,16 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2017
 ---
-# Redefinir a senha em dispositivos Windows integrado com o Serviço de Redefinição de PIN da Microsoft usando o Intune
-<a id="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune" class="xliff"></a>
+# <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Redefinir a senha em dispositivos Windows integrado com o Serviço de Redefinição de PIN da Microsoft usando o Intune
 
 A capacidade de redefinição de senha para dispositivos Windows integra-se com o Serviço de Redefinição de PIN da Microsoft para permitir que você gere uma nova senha para dispositivos que executam o Windows 10 Mobile. Os dispositivos devem executar a Atualização do Windows 10 para Criadores ou posterior.
 
 
-## Antes de começar
-<a id="before-you-start" class="xliff"></a>
+## <a name="before-you-start"></a>Antes de começar
 
 Antes de redefinir remotamente a senha em dispositivos Windows que você pode gerenciar, integre o serviço de redefinição do PIN para seu locatário do Intune e configure os dispositivos gerenciados. Siga estas instruções para fazer isso:
 
-### Conecte o Intune ao serviço de redefinição de PIN
-<a id="connect-intune-with-the-pin-reset-service" class="xliff"></a>
+### <a name="connect-intune-with-the-pin-reset-service"></a>Conecte o Intune ao serviço de redefinição de PIN
 
 1. Visite o [site de integração do Serviço de Redefinição de PIN da Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e entre usando a conta de administrador de locatário que você usa para gerenciar seu locatário do Intune.
 2. Após fazer logon, clique em **Aceitar** para dar consentimento para o serviço de redefinição de PIN acessar sua conta.<br>
@@ -41,8 +38,7 @@ Antes de redefinir remotamente a senha em dispositivos Windows que você pode ge
 ![Aplicativo do serviço de redefinição de PIN no Azure](./media/pin-reset-service-home-screen.png)
 4. Faça logon [neste site](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) usando as credenciais de administrador de locatário do Intune e escolha **Aceitar** novamente para dar consentimento para o serviço acessar sua conta.
 
-### Configurar os dispositivos do Windows para usar a redefinição de PIN
-<a id="configure-windows-devices-to-use-pin-reset" class="xliff"></a>
+### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar os dispositivos do Windows para usar a redefinição de PIN
 
 Para configurar a redefinição de PIN nos dispositivos Windows que você gerencia, use uma [política de dispositivo personalizado do Intune Windows 10](custom-settings-windows-10.md) para habilitar o recurso. Configure a política usando os seguintes CSPs (provedores de serviços de configuração) de política do Windows:
 
@@ -52,8 +48,7 @@ Para configurar a redefinição de PIN nos dispositivos Windows que você gerenc
 
 Ambos os valores para esses CSPs devem ser definidos como **True**.
 
-## Etapas para redefinir a senha
-<a id="steps-to-reset-the-passcode" class="xliff"></a>
+## <a name="steps-to-reset-the-passcode"></a>Etapas para redefinir a senha
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -62,8 +57,7 @@ Ambos os valores para esses CSPs devem ser definidos como **True**.
 5. Selecione o dispositivo para o qual você deseja redefinir a senha e, na folha de propriedades do dispositivo, escolha **Nova senha**.
 6. Na confirmação que aparece, escolha **Sim**. A senha é gerada e exibida no portal pelos próximos sete dias.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Se a redefinição de senha falhar, é fornecido um link no portal para obter mais informações.
 

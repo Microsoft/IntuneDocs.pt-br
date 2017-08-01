@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/03/2017
 ---
-# Introdução às políticas
-<a id="getting-started-with-policies" class="xliff"></a>
+# <a name="getting-started-with-policies"></a>Introdução às políticas
 
 Uma das principais metas do guia de introdução do Intune é registrar dispositivos para verificar se eles estão em conformidade com as políticas corporativas. Políticas de conformidade não apenas ajudam a gerenciar os tipos de dispositivos especializados, como quiosques corporativos, mas também dispositivos pessoais (Traga seu próprio), tablets e dispositivos sem usuário.
 

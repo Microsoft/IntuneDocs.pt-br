@@ -21,15 +21,13 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Configurações do AirPrint para dispositivos iOS e macOS
-<a id="airprint-settings-for-ios-and-macos-devices" class="xliff"></a>
+# <a name="airprint-settings-for-ios-and-macos-devices"></a>Configurações do AirPrint para dispositivos iOS e macOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use essas configurações para configurar os dispositivos iOS ou macOS para se conectarem automaticamente a impressoras compatíveis com AirPrint em sua rede. Você precisará do endereço IP e do caminho de recursos de suas impressoras para continuar.
 
-## Encontrar informações da impressora AirPrint
-<a id="find-airprint-printer-information" class="xliff"></a>
+## <a name="find-airprint-printer-information"></a>Encontrar informações da impressora AirPrint
 
 Use este procedimento para adicionar informações do AirPrint à carga do AirPrint, para que os usuários de dispositivos iOS possam imprimir em impressoras do AirPrint conhecidas.
 
@@ -40,8 +38,7 @@ Use este procedimento para adicionar informações do AirPrint à carga do AirPr
 5. Anote as informações de endereço IP retornadas pelo comando, por exemplo, **myprinter.local de PING (10.50.25.21)**.
 6. Por fim, use o caminho de recursos e o endereço IP nas configurações de carga do AirPrint. Um exemplo de endereço IP pode ser **10.50.25.21**, e um exemplo de caminho de recurso pode ser **/ipp port1**.
 
-## Configurar um perfil de AirPrint
-<a id="configure-an-airprint-profile" class="xliff"></a>
+## <a name="configure-an-airprint-profile"></a>Configurar um perfil de AirPrint
 
 1. Na folha **Recursos do dispositivo**, escolha **AirPrint**.
 2. Na folha **AirPrint**, para adicionar um destino de AirPrint, insira seu **Endereço IP** e **caminho do recurso**e depois clique em **Adicionar**.
@@ -50,7 +47,6 @@ Use este procedimento para adicionar informações do AirPrint à carga do AirPr
 Você também pode importar uma lista de impressoras de um arquivo de valores separados por vírgulas (.csv) ou exportar a lista.
 
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

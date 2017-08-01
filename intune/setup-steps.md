@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
-# Configurar Intune
-<a id="set-up-intune" class="xliff"></a>
+# <a name="set-up-intune"></a>Configurar Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 

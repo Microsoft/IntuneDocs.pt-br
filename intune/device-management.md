@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2017
 ---
-# O que é o gerenciamento de dispositivo do Microsoft Intune?
-<a id="what-is-microsoft-intune-device-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -49,8 +48,7 @@ Agora é possível realizar as seguintes ações:
     - [Controle remoto para Android](device-profile-android-teamviewer.md)
 
 
-## Suporte para cada ação de dispositivo
-<a id="support-for-each-device-action" class="xliff"></a>
+## <a name="support-for-each-device-action"></a>Suporte para cada ação de dispositivo
 
 Use a tabela a seguir para entender as plataformas de dispositivo com suporte em cada ação.
 
@@ -72,8 +70,7 @@ Use a tabela a seguir para entender as plataformas de dispositivo com suporte em
 |**Nova sessão de Assistência Remota**|Não|Não|Não|Não|Sim|
 |**Remover usuário**|Não|Não|iOS 9.3 e posterior (somente dispositivos iPad compartilhados)|Não|Não|
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 - Escolha **Ações do Dispositivo** para ver o status das ações executadas nos dispositivos gerenciados. 
 ![Monitorar ações do dispositivo](./media/monitor-device-actions.png)

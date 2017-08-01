@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Configurações de filtro de conteúdo da Web para dispositivos iOS
-<a id="web-content-filter-settings-for-ios-devices" class="xliff"></a>
+# <a name="web-content-filter-settings-for-ios-devices"></a>Configurações de filtro de conteúdo da Web para dispositivos iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,8 +34,7 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 
 
 
-## Introdução
-<a id="get-started" class="xliff"></a>
+## <a name="get-started"></a>Introdução
 
 1. Na folha Recursos do dispositivo escolha **Filtro de Conteúdo da Web (somente supervisionado)**.
 2. Na folha **Filtro de Conteúdo da Web**, escolha o **Tipo de filtro** que você deseja configurar:
@@ -46,8 +44,7 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 3. Em seguida, dependendo do tipo de filtro que você estiver usando, siga um destes procedimentos:
 
 
-## Configurar URLs
-<a id="configure-urls" class="xliff"></a>
+## <a name="configure-urls"></a>Configurar URLs
 
 1. Na folha **Filtro de Conteúdo da Web**, escolha uma das configurações a seguir, conforme necessário:
     - **URLs Permitidas** - na folha **URLs Permitidas**, insira as URLs que você deseja permitir (ignorando o Filtro da Web da Apple) e escolha enter após cada uma.
@@ -55,8 +52,7 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 2. Ao terminar, clique em **OK**.
 
 
-## Somente sites específicos
-<a id="specific-websites-only" class="xliff"></a>
+## <a name="specific-websites-only"></a>Somente sites específicos
 
 1. Na folha **Filtro de Conteúdo da Web**, para cada site da Web que você deseja permitir, defina as seguintes configurações:
     - **URL** - insira a URL do site que você deseja permitir, por exemplo, **http://www.contoso.com**.
@@ -71,12 +67,10 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 > - www.microsoft.net
 > - www.apple.com
 
-## Concluir
-<a id="finish-up" class="xliff"></a>
+## <a name="finish-up"></a>Concluir
 
 Escolha **OK** para retornar à folha **Criar Perfil** e, em seguida, escolha **Criar**.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

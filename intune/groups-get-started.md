@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Grupos clássicos do Intune no Portal do Azure
-<a id="intune-classic-groups-in-the-azure-portal" class="xliff"></a>
+# <a name="intune-classic-groups-in-the-azure-portal"></a>Grupos clássicos do Intune no Portal do Azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,8 +30,7 @@ A vantagem é que você usará a mesma experiência de grupos em todos os seus a
 
 Os grupos de segurança do Azure AD dão suporte a todos os tipos de implantações do Intune em usuários e dispositivos. Além disso, é possível usar os grupos dinâmicos do Azure AD que são atualizados automaticamente de acordo com os atributos fornecidos. Por exemplo, você poderá criar um grupo de dispositivos que executa o iOS 9. Sempre que um dispositivo com iOS 9 é registrado, ele é exibido automaticamente no grupo dinâmico.
 
-## O que não está disponível?
-<a id="what-is-not-available" class="xliff"></a>
+## <a name="what-is-not-available"></a>O que não está disponível?
 
 Alguns dos recursos de grupos do Intune que você talvez pode ter usado anteriormente não estão disponíveis no Azure AD:
 
@@ -42,8 +40,7 @@ Alguns dos recursos de grupos do Intune que você talvez pode ter usado anterior
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
 - O grupo **Todos os Dispositivos Gerenciados pelo Exchange ActiveSync** no console do Intune não foi migrado para o Azure AD. No entanto, você ainda poderá acessar informações sobre dispositivos gerenciados pelo EAS no Portal do Azure.
 
-## Como começar?
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Como começar?
 
 - Leia os tópicos a seguir para saber mais sobre grupos de segurança do Azure AD e como eles funcionam:
     -  [Gerenciando o acesso a recursos com grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
@@ -53,8 +50,7 @@ Alguns dos recursos de grupos do Intune que você talvez pode ter usado anterior
 -  Se os grupos do Intune usaram a opção **Excluir membros específicos**, decida se você pode recriar esses grupos sem exclusões ou se precisa de regras avançadas para atender às necessidades corporativas.
 
 
-## O que aconteceu com os grupos do Intune?
-<a id="what-happened-to-intune-groups" class="xliff"></a>
+## <a name="what-happened-to-intune-groups"></a>O que aconteceu com os grupos do Intune?
 Quando os grupos são migrados do portal clássico do Intune para o portal do Azure, as seguintes regras são aplicadas:
 
 | Grupos no Intune clássico|Grupos no Azure AD|
@@ -67,13 +63,11 @@ Quando os grupos são migrados do portal clássico do Intune para o portal do Az
 |Um grupo com uma condição de exclusão|Não migrado|
 |Grupos internos:<br>- **Todos os usuários**<br>- **Usuários desagrupados**<br>- **Todos os dispositivos**<br>- **Dispositivos desagrupados**<br>- **Todos os computadores**<br>- **Todos os dispositivos móveis**<br>- **Todos os dispositivos gerenciados do MDM**<br>- **Todos os dispositivos gerenciados do EAS**|Grupos de segurança do Azure AD|
 
-## Hierarquia de grupos
-<a id="group-hierarchy" class="xliff"></a>
+## <a name="group-hierarchy"></a>Hierarquia de grupos
 
 No console clássico do Intune, todos os grupos tinham um grupo pai. Os grupos podem conter apenas membros do grupo pai. No Azure AD, os grupos filhos podem conter membros que não fazem parte do grupo pai.
 
-## Atributos do grupo
-<a id="group-attributes" class="xliff"></a>
+## <a name="group-attributes"></a>Atributos do grupo
 Os atributos são propriedades do dispositivo que podem ser usados na definição de grupos. Esta tabela descreve como esses critérios são migrados para grupos de segurança do Azure AD.
 
 | Atributo no Intune|Atributo no Azure AD|
@@ -88,7 +82,6 @@ Os atributos são propriedades do dispositivo que podem ser usados na definiçã
 |Grupos aninhados dentro de grupos estáticos |Grupos aninhados dentro de grupos estáticos|
 |Grupos aninhados dentro de grupos dinâmicos|Grupo dinâmico com um nível de aninhamento|
 
-## O que acontece com as políticas e os aplicativos já implantados?
-<a id="what-happens-to-policies-and-apps-you-previously-deployed" class="xliff"></a>
+## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>O que acontece com as políticas e os aplicativos já implantados?
 
 As políticas e os aplicativos continuam sendo implantados em grupos, exatamente como antes. No entanto, agora você gerenciará esses grupos no Portal do Azure, em vez de no console do Intune clássico.

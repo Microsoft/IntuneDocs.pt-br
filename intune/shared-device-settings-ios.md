@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Definições de configuração de dispositivo compartilhado para exibir mensagens na tela de bloqueio do dispositivo iOS
-<a id="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen" class="xliff"></a>
+# <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Definições de configuração de dispositivo compartilhado para exibir mensagens na tela de bloqueio do dispositivo iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,8 +30,7 @@ As definições de configuração de dispositivo compartilhado permitem que voc�
 >[!IMPORTANT]
 > Esse recurso tem suporte em dispositivos supervisionados executando o iOS 9.3 e posterior.
 
-## Criar configurações de dispositivo compartilhado
-<a id="create-shared-device-settings" class="xliff"></a>
+## <a name="create-shared-device-settings"></a>Criar configurações de dispositivo compartilhado
 
 1. Na folha **Recursos do dispositivo**, escolha **Configuração do dispositivo compartilhado (somente supervisionado)**.
 2. Na folha **Configuração de dispositivo compartilhado (somente supervisionado)**, defina as seguintes configurações:
@@ -41,7 +39,6 @@ As definições de configuração de dispositivo compartilhado permitem que voc�
 3. Quando terminar, escolha **OK** em até voltar à folha **Criar Perfil**, depois escolha **Criar**. 
 
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir o perfil de dispositivo aos grupos escolhidos. Para ver mais detalhes, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

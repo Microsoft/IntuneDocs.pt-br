@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2017
 ---
-# Gerenciar o acesso à Internet usando políticas do Managed Browser com o Microsoft Intune
-<a id="manage-internet-access-using-managed-browser-policies-with-microsoft-intune" class="xliff"></a>
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerenciar o acesso à Internet usando políticas do Managed Browser com o Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -53,8 +52,7 @@ Você pode criar políticas do Managed Browser para os seguintes tipos de dispos
 
 O Intune Managed Browser dá suporte à abertura de conteúdo da Web de [parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
-## Criar uma configuração de aplicativo do Managed Browser
-<a id="create-a-managed-browser-app-configuration" class="xliff"></a>
+## <a name="create-a-managed-browser-app-configuration"></a>Criar uma configuração de aplicativo do Managed Browser
 
 1.  Entre no portal do Azure.
 2.  Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -72,8 +70,7 @@ O Intune Managed Browser dá suporte à abertura de conteúdo da Web de [parceir
 >[!IMPORTANT]
 >No momento, o Managed Browser depende de registro automático. Para configurações de aplicativo a serem aplicados, outro aplicativo no dispositivo já deve ser gerenciado pelas políticas de Proteção de Aplicativo do Intune.
 
-## Atribuir as definições de configuração criadas
-<a id="assign-the-configuration-settings-you-created" class="xliff"></a>
+## <a name="assign-the-configuration-settings-you-created"></a>Atribuir as definições de configuração criadas
 
 Atribua as configurações a grupos de usuários do Azure AD. Se esse usuário tiver o aplicativo Managed Browser instalado, o aplicativo será gerenciado pelas configurações especificadas.
 
@@ -83,8 +80,7 @@ Atribua as configurações a grupos de usuários do Azure AD. Se esse usuário t
 4. Na folha **Grupos de usuários**, selecione o grupo do Azure AD ao qual você deseja atribuir a configuração de aplicativo e, em seguida, escolha **OK**.
 
 
-## Como definir as configurações de Proxy de Aplicativo para o Managed Browser
-<a id="how-to-configure-application-proxy-settings-for-the-managed-browser" class="xliff"></a>
+## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Como definir as configurações de Proxy de Aplicativo para o Managed Browser
 
 O Intune Managed Browser e o [Proxy de Aplicativo do Azure AD]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) podem ser usados juntos para dar suporte aos seguintes cenários para os usuários de dispositivos iOS e Android:
 
@@ -94,8 +90,7 @@ O Managed Browser reconhece que este site de intranet foi exposto ao usuário po
 - Um usuário remoto abre o aplicativo Managed Browser e navega para um site da intranet usando a URL interna. O Managed Browser reconhece que este site de intranet foi exposto ao usuário por meio do Proxy de Aplicativo. O usuário será roteado automaticamente por meio do Proxy de Aplicativo para autenticação com qualquer autenticação multifator aplicável e acesso condicional antes de alcançar o site de intranet.
 Este site, que anteriormente não pôde ser encontrado enquanto o usuário estava remoto, agora está acessível.  
 
-### Antes de começar
-<a id="before-you-start" class="xliff"></a>
+### <a name="before-you-start"></a>Antes de começar
 
 - Verifique se seus aplicativos internos foram publicados pelo Proxy de Aplicativo do Azure AD.
 - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
@@ -103,12 +98,10 @@ Este site, que anteriormente não pôde ser encontrado enquanto o usuário estav
 - Usuários do aplicativo Managed Browser tem uma [política de Proteção do Aplicativo Intune]( app-protection-policy.md) atribuída ao aplicativo.
 - A só poderá ver o redirecionamento automático para aplicativos de proxy de aplicativo que foram atribuídos a ele.
 
-#### Etapa 1: habilitar o redirecionamento automático para do Outlook para o Managed Browser
-<a id="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook" class="xliff"></a>
+#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Etapa 1: habilitar o redirecionamento automático para do Outlook para o Managed Browser
 O Outlook deve ser configurado com uma política de proteção do aplicativo que habilita a configuração para **Restringir conteúdo da Web para exibição no Managed Browser**.
 
-#### Etapa 2: atribua uma política de configuração de aplicativo atribuída para o Managed Browser.
-<a id="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser" class="xliff"></a>
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Etapa 2: atribua uma política de configuração de aplicativo atribuída para o Managed Browser.
 Este procedimento configura o aplicativo Managed Browser para usar o redirecionamento de proxy de aplicativo. Usando o procedimento para criar uma configuração do aplicativo Managed Browser, forneça o seguinte par de chave e valor:
 
 |||
@@ -117,8 +110,7 @@ Este procedimento configura o aplicativo Managed Browser para usar o redireciona
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
 
-## Como configurar a página inicial para o Managed Browser
-<a id="how-to-configure-the-homepage-for-the-managed-browser" class="xliff"></a>
+## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Como configurar a página inicial para o Managed Browser
 
 Essa definição permite configurar a página inicial que os usuários veem ao iniciar o Managed Browser ou criar uma nova guia. Usando o procedimento para criar uma configuração do aplicativo Managed Browser, forneça o seguinte par de chave e valor:
 
@@ -128,8 +120,7 @@ Essa definição permite configurar a página inicial que os usuários veem ao i
 |**com.microsoft.intune.mam.managedbrowser.homepage**|Especifique uma URL válida. URLs incorretas são bloqueadas como medida de segurança.<br>Exemplo: **https://www.bing.com**|
 
 
-## Como configurar indicadores para o Managed Browser
-<a id="how-to-configure-bookmarks-for-the-managed-browser" class="xliff"></a>
+## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Como configurar indicadores para o Managed Browser
 
 Essa definição permite que você configure um conjunto de indicadores disponível para os usuários do Managed Browser.
 
@@ -143,8 +134,7 @@ Usando o procedimento para criar uma configuração do aplicativo Managed Browse
 |Chave|Valor|
 |**com.microsoft.intune.mam.managedbrowser.bookmarks**|O valor dessa configuração é uma lista de indicadores. Cada indicador consiste no título e na URL do indicador. Separe o título e a URL com o caractere **&#124;**.<br><br>Exemplo: **Microsoft Bing&#124;https://www.bing.com**<br><br>Para configurar vários indicadores, separe cada par com caractere duplo, **&#124;&#124;**<br><br>Exemplo: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
 
-## Como especificar URLs permitidas e bloqueadas para o Managed Browser
-<a id="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser" class="xliff"></a>
+## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Como especificar URLs permitidas e bloqueadas para o Managed Browser
 
 Usando o procedimento para criar uma configuração do aplicativo Managed Browser, forneça o seguinte par de chave e valor:
 
@@ -157,8 +147,7 @@ Usando o procedimento para criar uma configuração do aplicativo Managed Browse
 >Não especifique as duas chaves. Se as duas chaves forem direcionadas para o mesmo usuário, a chave de permissão será usada, pois é a opção mais restritiva.
 >Além disso, lembre-se de não bloquear páginas importantes como os sites de sua empresa.
 
-### Formato de URL para URLs permitidas e bloqueadas
-<a id="url-format-for-allowed-and-blocked-urls" class="xliff"></a>
+### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato de URL para URLs permitidas e bloqueadas
 Use as informações a seguir para saber mais sobre os formatos permitidos e caracteres curinga que você pode usar ao especificar URLs para as listas de permitidas e bloqueadas:
 
 -   Você pode usar o símbolo de caractere curinga (**&#42;**) de acordo com as regras na lista de padrões permitidos a seguir:
@@ -208,8 +197,7 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
 
     -   http://www.contoso.com: /&#42;
 
-## Segurança e privacidade do Managed Browser
-<a id="security-and-privacy-for-the-managed-browser" class="xliff"></a>
+## <a name="security-and-privacy-for-the-managed-browser"></a>Segurança e privacidade do Managed Browser
 
 -   Em dispositivos iOS, sites visitados por usuários que têm um certificado expirado ou não confiável não pode ser abertos.
 
@@ -221,8 +209,7 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
 
 -   Para permitir a autenticação e acessar a documentação do Intune, **&#42;.microsoft.com** é isento das configurações da lista de permissão ou de bloqueio. Ela é sempre permitida.
 
-### Desligar os dados de uso
-<a id="turn-off-usage-data" class="xliff"></a>
+### <a name="turn-off-usage-data"></a>Desligar os dados de uso
 A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do Managed Browser para melhorar os produtos e serviços Microsoft. Os usuários podem desligar a coleta de dados usando a configuração **Dados de Uso** em seus dispositivos. Você não tem controle sobre a coleta desses dados.
 
 

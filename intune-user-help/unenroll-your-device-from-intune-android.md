@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Como cancelar o registro do dispositivo Android do Intune
-<a id="how-to-unenroll-your-android-device-from-intune" class="xliff"></a>
+# <a name="how-to-unenroll-your-android-device-from-intune"></a>Como cancelar o registro do dispositivo Android do Intune
 
 Ao cancelar o registro do dispositivo Android do Intune, você não poderá mais acessar os recursos da empresa.  Para obter mais informações sobre o que acontece quando você cancela o registro, confira [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md) (O que acontece quando você cancela o registro do seu dispositivo do Intune?)
 

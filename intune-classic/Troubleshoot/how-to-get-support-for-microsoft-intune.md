@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Como obter suporte para o Microsoft Intune
-<a id="how-to-get-support-for-microsoft-intune" class="xliff"></a>
+# <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -30,8 +29,7 @@ A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinat
 >[!IMPORTANT]
 > Para obter suporte técnico de produtos que funcionam com o Intune, mas que não são produzidos pela Microsoft, como por exemplo SaaSwedo, Cisco ou Lookout, contate o fornecedor do produto primeiro. Antes de abrir uma solicitação de suporte do Intune, verifique se você configurou o outro produto corretamente.
 
-## Criar um tíquete de suporte online
-<a id="create-an-online-support-ticket" class="xliff"></a>
+## <a name="create-an-online-support-ticket"></a>Criar um tíquete de suporte online
 
 Como um administrador de TI, é possível emitir um tíquete de suporte do Portal do Azure usando as seguintes etapas:
 
@@ -73,8 +71,7 @@ Como um administrador de TI, é possível emitir um tíquete de suporte do Porta
 >[!IMPORTANT]
 >Se tiver uma dúvida referente à cobrança ou à assinatura, você poderá abrir uma ocorrência para obter suporte por meio do [Centro de Administração do Office](https://portal.office.com/Support/SupportEntry.aspx).
 
-## Recursos adicionais
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Recursos adicionais
 - [Contatar o suporte telefônico assistido do Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md)
 - [Centro de Serviços de Licenciamento por Volume](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Suporte de cobrança e gerenciamento de assinaturas](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US)

@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
-# Desenvolver um plano de comunicação para distribuição
-<a id="develop-a-rollout-communication-plan" class="xliff"></a>
+# <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação para distribuição
 
 Um bom gerenciamento de alterações depende de comunicações claras e úteis sobre as alterações futuras. Para facilitar a implantação do Intune, seu plano de comunicação de distribuição deve incluir quatro áreas:
 
@@ -35,8 +34,7 @@ Um bom gerenciamento de alterações depende de comunicações claras e úteis s
 
 Vamos examinar cada área mais detalhadamente.
 
-## O que precisa ser comunicado?
-<a id="what-needs-to-be-communicated" class="xliff"></a>
+## <a name="what-needs-to-be-communicated"></a>O que precisa ser comunicado?
 
 Determinar quais informações devem ser comunicadas dependerá da fase do processo de distribuição do Intune que está sendo comunicada. Você pode optar pela comunicação em etapas para seus grupos e usuários da organização, começando com o início da distribuição do Intune, seguido pelo pré-registro e pós-registro. Vamos abordar sobre o tipo de informações que pode ser comunicado em cada onda.
 
@@ -50,8 +48,7 @@ Determinar quais informações devem ser comunicadas dependerá da fase do proce
 
 Este [guia de registro do usuário final](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) pode ser útil. Você pode usá-lo ou modificá-lo para sua organização.
 
-## Métodos de entrega de comunicação
-<a id="communication-delivery-methods" class="xliff"></a>
+## <a name="communication-delivery-methods"></a>Métodos de entrega de comunicação
 
 Há vários métodos de entrega que podem ser utilizados para comunicar informações sobre a distribuição do Intune aos grupos organizacionais e usuários de destino. A lista a seguir mostra alguns exemplos e a etapa na qual o método pode ser usado:
 
@@ -63,8 +60,7 @@ Há vários métodos de entrega que podem ser utilizados para comunicar informa�
 
 -   Yammer, cartazes e folhetos usados para as ondas de início e de pré-registro
 
-## Linha do tempo da comunicação
-<a id="communications-timeline" class="xliff"></a>
+## <a name="communications-timeline"></a>Linha do tempo da comunicação
 
 Depois de determinar o que você precisa comunicar e o método usado, a próxima etapa é determinar a linha do tempo para a comunicação, que inclui quando e quem deverá recebê-la.
 
@@ -85,7 +81,6 @@ Por exemplo, a comunicação inicial do projeto do Intune pode visar toda a orga
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para desenvolver o seu plano de comunicação.
 
-## Próxima etapa
-<a id="next-step" class="xliff"></a>
+## <a name="next-step"></a>Próxima etapa
 
 A próxima seção fornece diretrizes sobre como [desenvolver um plano de suporte](planning-guide-support-plan.md).

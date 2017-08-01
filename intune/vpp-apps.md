@@ -21,20 +21,17 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/05/2017
 ---
-# Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune
-<a id="manage-volume-purchased-apps-and-books-with-microsoft-intune" class="xliff"></a>
+# <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## Introdução
-<a id="introduction" class="xliff"></a>
+## <a name="introduction"></a>Introdução
 
 Algumas lojas de aplicativos oferecem a possibilidade de comprar várias licenças para um aplicativo ou livro que você deseja usar na empresa. Comprar licenças em massa pode ajudar você a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos e livros.
 
 O Microsoft Intune ajuda você a gerenciar aplicativos e livros comprados por meio de um programa como esse. Importe as informações de licença da loja e acompanhe quantas licenças você utilizou. Esse processo ajuda a garantir que você não instalará mais cópias do aplicativo ou do livro do que você possui.
 
-## Que tipos de aplicativos e livros podem ser gerenciados?
-<a id="which-types-of-apps-and-books-can-you-manage" class="xliff"></a>
+## <a name="which-types-of-apps-and-books-can-you-manage"></a>Que tipos de aplicativos e livros podem ser gerenciados?
 
 Com o Intune, é possível gerenciar aplicativos e livros comprados por volume na loja do iOS e gerenciar aplicativos comprados na Windows Store para Empresas. Para descobrir como gerenciar aplicativos licenciados de cada loja, escolha um dos seguintes tópicos:
 

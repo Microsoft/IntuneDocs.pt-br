@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Como redefinir a senha do dispositivo pelo site do Portal da Empresa
-<a id="how-to-reset-your-device-passcode-from-the-company-portal-website" class="xliff"></a>
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
 Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para redefini-la. Você pode usar o site do Portal da Empresa para gerenciar computadores e dispositivos que você registrou no Intune e para realizar a maioria das mesmas tarefas que você pode fazer quando usa o aplicativo de Portal da Empresa.
 

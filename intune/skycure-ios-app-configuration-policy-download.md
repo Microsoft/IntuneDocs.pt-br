@@ -21,19 +21,16 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Baixar política de configuração de aplicativo iOS do Skycure
-<a id="download-skycure-ios-app-configuration-policy" class="xliff"></a>
+# <a name="download-skycure-ios-app-configuration-policy"></a>Baixar política de configuração de aplicativo iOS do Skycure
 
-## Antes de começar
-<a id="before-you-begin" class="xliff"></a>
+## <a name="before-you-begin"></a>Antes de começar
 
 Você precisa fazer logon no Console de Gerenciamento do Skycure para executar as próximas etapas.
 
 > [!TIP] 
 > Se estiver usando o Microsoft Internet Explorer 11 ou o Edge, talvez seja necessário abrir o Console de gerenciamento do Skycure usando o modo privado.
 
-## Para baixar a política de configuração de aplicativo do iOS
-<a id="to-download-the-ios-app-configuration-policy" class="xliff"></a>
+## <a name="to-download-the-ios-app-configuration-policy"></a>Para baixar a política de configuração de aplicativo do iOS
 
 1.  Acesse o [Console de Gerenciamento do Skycure](https://aad.skycure.com).
 
@@ -50,7 +47,6 @@ Você precisa fazer logon no Console de Gerenciamento do Skycure para executar a
 
 ![Arquivos de configuração de integração do Skycure](./media/skycure-ios-app-2.png)
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 [Adicionar e atribuir aplicativos Skycure, o aplicativo Microsoft Authenticator e a política de configuração do iOS](mtd-apps-ios-app-configuration-policy-add-assign.md)
