@@ -11,21 +11,19 @@ ms.service:
 ms.technology: 
 ms.assetid: GET ONE FROM guidgenerator.com
 ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# Modelo de markdown e de metadados
-<a id="metadata-and-markdown-template" class="xliff"></a>
+# <a name="metadata-and-markdown-template"></a>Modelo de markdown e de metadados
 
 Esse modelo docs.ms contém exemplos de sintaxe de redução e orientações sobre como definir os metadados. Ele está disponível no diretório raiz de cada repositório EM piloto (por exemplo, ~/Azure-RMSDocs-pr /template.md) e deve ser lido como um arquivo de redução, embora você possa consultar [a versão publicada](https://stage.docs.microsoft.com/en-us/rights-management/template) para ver como os exemplos de redução foram processados.
 
 Ao criar uma um arquivo de markdown, copie o modelo em um novo arquivo, preencha metadados conforme especificado abaixo, defina o cabeçalho H1 acima como o título do artigo e exclua o conteúdo. 
 
 
-## Metadados
-<a id="metadata" class="xliff"></a> 
+## <a name="metadata"></a>Metadados 
 
 O bloco de metadados completo está acima, dividido nos campos necessários e opcionais. Consulte as [anotações de referência de metadados OPS](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data) para obter mais detalhes. Algumas observações importantes:
 
@@ -37,16 +35,14 @@ O bloco de metadados completo está acima, dividido nos campos necessários e op
 - **ms.assetid**: esse é o GUID do artigo do CAPS. Ao criar um novo arquivo de markdown, obtenha um GUID em [https://www.guidgenerator.com](https://www.guidgenerator.com). 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: os valores possíveis para esses elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
-## GFM e markdown básico
-<a id="basic-markdown-and-gfm" class="xliff"></a>
+## <a name="basic-markdown-and-gfm"></a>GFM e markdown básico
 
 Todos os markdowns básicos e GFM têm suporte. Para saber mais sobre estas configurações, confira:
 
 - [Sintaxe de markdown de linha de base](https://daringfireball.net/projects/markdown/syntax)
 - [Documentação GFM (Github-flavored markdown)](https://guides.github.com/features/mastering-markdown)
 
-## Títulos
-<a id="headings" class="xliff"></a>
+## <a name="headings"></a>Títulos
 
 Acima, temos exemplos de cabeçalhos de primeiro e segundo nível. 
 
@@ -54,17 +50,12 @@ Somente um cabeçalho de primeiro nível **pode** existir no seu tópico, que se
 
 Títulos de segundo nível irão gerar o Sumário na página que aparece na seção "Neste artigo" embaixo do título da página.
 
-### Cabeçalho de terceiro nível
-<a id="third-level-heading" class="xliff"></a>
-#### Cabeçalho de quarto nível
-<a id="fourth-level-heading" class="xliff"></a>
-##### Cabeçalho de quinto nível
-<a id="fifth-level-heading" class="xliff"></a>
-###### Cabeçalho de sexto nível
-<a id="sixth-level-heading" class="xliff"></a>
+### <a name="third-level-heading"></a>Cabeçalho de terceiro nível
+#### <a name="fourth-level-heading"></a>Cabeçalho de quarto nível
+##### <a name="fifth-level-heading"></a>Cabeçalho de quinto nível
+###### <a name="sixth-level-heading"></a>Cabeçalho de sexto nível
 
-## Estilo do texto
-<a id="text-styling" class="xliff"></a>
+## <a name="text-styling"></a>Estilo do texto
 
 *Itálico* 
 
@@ -74,8 +65,7 @@ Títulos de segundo nível irão gerar o Sumário na página que aparece na seç
 
 
 
-## Links
-<a id="links" class="xliff"></a>
+## <a name="links"></a>Links
 
 Para vincular a um arquivo de markdown no mesmo repositório, use [links relativos](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
 
@@ -97,11 +87,9 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 
 - Exemplo: http://www.github.com
 
-## Listas
-<a id="lists" class="xliff"></a>
+## <a name="lists"></a>Listas
 
-### Listas ordenadas
-<a id="ordered-lists" class="xliff"></a>
+### <a name="ordered-lists"></a>Listas ordenadas
 
 1. Isso 
 1. É
@@ -110,8 +98,7 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 1. Lista  
 
 
-#### Lista ordenada com uma lista incorporada
-<a id="ordered-list-with-an-embedded-list" class="xliff"></a>
+#### <a name="ordered-list-with-an-embedded-list"></a>Lista ordenada com uma lista incorporada
 
 1. Aqui
 1. vem
@@ -123,8 +110,7 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 1. lista
 
 
-### Listas não ordenadas
-<a id="unordered-lists" class="xliff"></a>
+### <a name="unordered-lists"></a>Listas não ordenadas
 
 - Isso
 - é
@@ -133,8 +119,7 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 - lista
 
 
-##### Lista não ordenada com uma lista incorporada
-<a id="unordered-list-with-an-embedded-lists" class="xliff"></a>
+##### <a name="unordered-list-with-an-embedded-lists"></a>Lista não ordenada com uma lista incorporada
 
 - Isso 
 - com marcadores 
@@ -148,13 +133,11 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 - listas
 
 
-## Régua horizontal
-<a id="horizontal-rule" class="xliff"></a>
+## <a name="horizontal-rule"></a>Régua horizontal
 
 ---
 
-## Tabelas
-<a id="tables" class="xliff"></a>
+## <a name="tables"></a>Tabelas
 
 | Tabelas        | São           | Legais  |
 | ------------- |:-------------:| -----:|
@@ -163,11 +146,9 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 | a coluna 1 é, por padrão, | alinhada à esquerda     |    R$ 1 |
 
 
-## Código
-<a id="code" class="xliff"></a>
+## <a name="code"></a>Código
 
-### Codeblock
-<a id="codeblock" class="xliff"></a>
+### <a name="codeblock"></a>Codeblock
 
     function fancyAlert(arg) {
       if(arg) {
@@ -175,93 +156,75 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
       }
     }
 
-### Código em linha
-<a id="in-line-code" class="xliff"></a>
+### <a name="in-line-code"></a>Código em linha
 
 Este é um exemplo de `in-line code`.
 
-## Blockquotes
-<a id="blockquotes" class="xliff"></a>
+## <a name="blockquotes"></a>Blockquotes
 
 > A seca já durava dez milhões de anos, e o reino dos terríveis lagartos havia terminado há tempos. Aqui no Equador, no continente que um dia seria conhecido como África, a batalha pela sobrevivência atingiu um novo clímax de ferocidade, e o vencedor ainda não era conhecido. Nesta terra estéril e desértica, apenas os pequenos, os velozes ou os selvagens poderiam prosperar, ou mesmo ter esperança de sobreviver.
 
-## Imagens
-<a id="images" class="xliff"></a>
+## <a name="images"></a>Imagens
 
-### Imagem Estática
-<a id="static-image" class="xliff"></a>
+### <a name="static-image"></a>Imagem Estática
 
 ![este é o texto alternativo](./media/AzRMS_elements.png)
 
-### Imagem Vinculada
-<a id="linked-image" class="xliff"></a>
+### <a name="linked-image"></a>Imagem Vinculada
 
 [![texto alternativo para imagem vinculada](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
-### Gif animado
-<a id="animated-gif" class="xliff"></a>
+### <a name="animated-gif"></a>Gif animado
 
 ![gif animado](./media/hololens.gif)
 
-## Alertas
-<a id="alerts" class="xliff"></a>
+## <a name="alerts"></a>Alertas
 
-### Observação
-<a id="note" class="xliff"></a>
+### <a name="note"></a>Observação
 
 > [!NOTE]
 > Isso é uma OBSERVAÇÃO
 
-### Aviso
-<a id="warning" class="xliff"></a>
+### <a name="warning"></a>Aviso
 
 > [!WARNING]
 > Isso é um AVISO
 
-### Dica
-<a id="tip" class="xliff"></a>
+### <a name="tip"></a>Dica
 
 > [!TIP]
 > Isso é uma DICA
 
-### Importante
-<a id="important" class="xliff"></a>
+### <a name="important"></a>Importante
 
 > [!IMPORTANT]
 > Isso é IMPORTANTE
 
-## Vídeos
-<a id="videos" class="xliff"></a>
+## <a name="videos"></a>Vídeos
 
-### Channel 9
-<a id="channel-9" class="xliff"></a>
+### <a name="channel-9"></a>Channel 9
 
 <iframe src="http://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-Active-Directory-Connect-Express-Settings/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 
-### Youtube
-<a id="youtube" class="xliff"></a>
+### <a name="youtube"></a>Youtube
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## docs.ms extentions
-<a id="docsms-extentions" class="xliff"></a>
+## <a name="docsms-extentions"></a>docs.ms extentions
 
-### Botão
-<a id="button" class="xliff"></a>
+### <a name="button"></a>Botão
 
 > [!div class="button"]
 [links de botão](/rights-management)
 
-### Seletor
-<a id="selector" class="xliff"></a>
+### <a name="selector"></a>Seletor
 
 > [!div class="op_single_selector"]
 - [foo](/rights-management/template.md)
 - [barra](/rights-management/scratch.md)
 
-### Passo a passo
-<a id="step-by-step" class="xliff"></a>
+### <a name="step-by-step"></a>Passo a passo
 
 >[!div class="step-by-step"]
 [Pré](https://www.example.com)
