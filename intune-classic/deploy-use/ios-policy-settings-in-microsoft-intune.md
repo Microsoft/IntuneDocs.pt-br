@@ -20,15 +20,13 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2017
 ---
-# Configurações de política do iOS no Microsoft Intune
-<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-policy-settings-in-microsoft-intune"></a>Configurações de política do iOS no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos iOS. Além disso, use a ferramenta Apple Configurator para criar configurações personalizadas que não estão disponíveis no Intune.
 
-## Definições de política de configuração geral
-<a id="general-configuration-policy-settings" class="xliff"></a>
+## <a name="general-configuration-policy-settings"></a>Definições de política de configuração geral
 
 Use a **Política de configuração geral do iOS** do Microsoft Intune para definir configurações para:
 
@@ -43,8 +41,7 @@ Use a **Política de configuração geral do iOS** do Microsoft Intune para defi
 
 Se a configuração que você está procurando não aparecer nesse tópico, você poderá criá-la usando uma política personalizada do iOS que lhe permite importar configurações criadas usando a [Ferramenta configuradora da Apple](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para obter mais informações, consulte “Configurações de política personalizadas” mais adiante neste tópico.
 
-### Configurações de segurança
-<a id="security-settings" class="xliff"></a>
+### <a name="security-settings"></a>Configurações de segurança
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -63,8 +60,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir desbloqueio por impressão digital**|Permitir usar a impressão digital para desbloquear o dispositivo.|
 <sup>1</sup> Para dispositivos iOS, ao definir as configurações **Minutos de inatividade antes que a tela se apague** e **Minutos de inatividade antes de a senha ser solicitada**, elas são aplicadas em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
 
-### Configurações de sistema
-<a id="system-settings" class="xliff"></a>
+### <a name="system-settings"></a>Configurações de sistema
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -77,8 +73,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir envio de dados de diagnóstico**|Permitir ou bloquear a habilidade do dispositivo enviar dados de diagnóstico para a Apple.|
 |**Permitir senha quando bloqueado**|Permitir ao usuário acessar o aplicativo de senha enquanto o dispositivo estiver bloqueado.|
 
-### Configurações de nuvem para documentos e dados
-<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
+### <a name="cloud-settings-for-documents-and-data"></a>Configurações de nuvem para documentos e dados
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -92,8 +87,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir compartilhamento de fotos do iCloud**|Defina como **Não** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo.|
 |**Permitir biblioteca de fotos do iCloud**|Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.   As fotos que não forem totalmente baixadas na biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção for definida como **Não**.|
 
-### Configurações de aplicativo do navegador
-<a id="application-settings-for-the-browser" class="xliff"></a>
+### <a name="application-settings-for-the-browser"></a>Configurações de aplicativo do navegador
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -105,8 +99,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir scripts Java**|Permitir a execução de scripts Java no navegador.|
 |**Permitir aviso de fraude**|Permitir avisos de fraude no navegador.|
 
-### Configurações de aplicativo para aplicativos
-<a id="application-settings-for-apps" class="xliff"></a>
+### <a name="application-settings-for-apps"></a>Configurações de aplicativo para aplicativos
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -120,8 +113,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir que o usuário confie em novos autores de aplicativos empresariais**|Permitir que o usuário opte por confiar em aplicativos que não foram baixados da loja de aplicativos.|
 
 
-### Configurações de aplicativo para jogos
-<a id="application-settings-for-games" class="xliff"></a>
+### <a name="application-settings-for-games"></a>Configurações de aplicativo para jogos
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -129,8 +121,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir adição de amigos no Game Center**|Permitir que o usuário adicione amigos no Game Center.|
 |**Permitir jogo para vários participantes**|Permitir que o usuário execute jogos com vários participantes no dispositivo.|
 
-### Configurações de aplicativo para conteúdo de mídia
-<a id="application-settings-for-media-content" class="xliff"></a>
+### <a name="application-settings-for-media-content"></a>Configurações de aplicativo para conteúdo de mídia
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -140,8 +131,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir que o usuário baixe o conteúdo da iBook Store sinalizado como 'Erotismo'**|Permitir que o usuário baixe livros da categoria “Erotismo”.|
 
 
-### Configurações de recursos do dispositivo para hardware
-<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
+### <a name="device-capabilities-settings-for-hardware"></a>Configurações de recursos do dispositivo para hardware
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -150,8 +140,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Forçar Apple Watches emparelhados a usar a detecção de pulso**|Quando habilitado, o Apple Watch não exibirá notificações quando não estiver sendo usado.|
 |**Exigir uma senha de emparelhamento para solicitações de saída do AirPlay**|Exigir uma senha emparelhamento quando o usuário usar AirPlay para transmitir o conteúdo para outros dispositivos da Apple.|
 
-### Configurações de recursos do dispositivo para celular
-<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
+### <a name="device-capabilities-settings-for-cellular"></a>Configurações de recursos do dispositivo para celular
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -160,8 +149,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Permitir roaming de dados**|Permitir roaming de dados quando o dispositivo estiver em uma rede de celular.|
 |**Permitir busca em segundo plano global durante roaming**|Permitir ao dispositivo buscar dados, como emails, durante roaming na rede celular.|
 
-### Configurações de recursos do dispositivo para recursos
-<a id="device-capabilities-settings-for-features" class="xliff"></a>
+### <a name="device-capabilities-settings-for-features"></a>Configurações de recursos do dispositivo para recursos
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
@@ -172,8 +160,7 @@ Todas as configurações se aplicam ao iOS 8.0 e posterior.
 |**Não permitir Airdrop de aplicativos gerenciados**|Impedir que aplicativos gerenciados sejam capazes de enviar dados por meio do Airdrop.|
 
 
-### Configurações para aplicativos compatíveis e não compatíveis
-<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Configurações para aplicativos compatíveis e não compatíveis
 Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma lista de aplicativos compatíveis ou incompatíveis usando as informações a seguir.
 
 > [!NOTE]
@@ -190,8 +177,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 
 As políticas que contêm configurações de aplicativo que estão em conformidade e fora de conformidade devem ser implantadas em grupos de usuários.
 
-### Configurações do modo de quiosque
-<a id="kiosk-mode-settings" class="xliff"></a>
+### <a name="kiosk-mode-settings"></a>Configurações do modo de quiosque
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
@@ -218,20 +204,17 @@ As políticas que contêm configurações de aplicativo que estão em conformida
 > -   Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o [Programa de Registro do Dispositivo Apple](ios-device-enrollment-program-in-microsoft-intune.md) para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a ferramenta Apple Configurator, consulte sua documentação da Apple.
 > -   Se o aplicativo iOS que você especificar for instalado depois de implantar a política de configuração, ele não entrará no modo de quiosque até depois de ser reiniciado.
 
-### Informações de referência para aplicativos compatíveis e não compatíveis
-<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informações de referência para aplicativos compatíveis e não compatíveis
 
 Use o **Relatório de aplicativos incompatíveis** para exibir a compatibilidade de aplicativos permitidos e bloqueados.
 
-##### Executar o relatório de aplicativos incompatíveis
-<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
+##### <a name="to-run-the-noncompliant-apps-report"></a>Executar o relatório de aplicativos incompatíveis
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicativos Incompatíveis**.
 
 2.  Selecione os grupos de dispositivos que você deseja verificar, se deseja verificar se há aplicativos compatíveis, aplicativos incompatíveis ou ambos e então escolha **Exibir Relatório**.
 
-#### Como especificar URLs para lojas de aplicativos
-<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
+#### <a name="how-to-specify-urls-to-app-stores"></a>Como especificar URLs para lojas de aplicativos
 Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e não compatíveis, ou na opção **Selecionar um aplicativo gerenciado que poderá ser executado quando o dispositivo estiver no modo de quiosque** (somente iOS), use um dos seguintes formatos:
 
 1. Usando um mecanismo de pesquisa, encontre o aplicativo que você deseja usar na iTunes App Store e abra a página do aplicativo.
@@ -243,20 +226,17 @@ Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e n�
 > [!NOTE]
 > Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
 
-### Configurações de registro
-<a id="enrollment-settings" class="xliff"></a>
+### <a name="enrollment-settings"></a>Configurações de registro
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
 |**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**|Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.|
 
-### Configurações do modo supervisionado
-<a id="supervised-mode-settings" class="xliff"></a>
+### <a name="supervised-mode-settings"></a>Configurações do modo supervisionado
 As configurações a seguir podem ser feitas em dispositivos com iOS 8.0 e posterior que estão no modo supervisionado.
 
-### Configurações do modo supervisionado para restrições de dispositivo
-<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-device-restrictions"></a>Configurações do modo supervisionado para restrições de dispositivo
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
@@ -272,8 +252,7 @@ As configurações a seguir podem ser feitas em dispositivos com iOS 8.0 e poste
 |**Permitir a modificação de configurações de notificação**|Permitir que o usuário altere as configurações de notificação do dispositivo.|
 |**Permitir a modificação do papel de parede**|Permitir que o usuário altere o papel de parede do dispositivo.|
 
-### Configurações do modo supervisionado para restrições de recursos
-<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-feature-restrictions"></a>Configurações do modo supervisionado para restrições de recursos
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
@@ -287,8 +266,7 @@ As configurações a seguir podem ser feitas em dispositivos com iOS 8.0 e poste
 |**Permitir verificação ortográfica do teclado**|Permite o verificador de ortografia do dispositivo.|
 |**Permitir atalhos de teclado**|Permite o uso de atalhos de teclado.|
 
-### Configurações do modo supervisionado para restrições de aplicativo
-<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-app-restrictions"></a>Configurações do modo supervisionado para restrições de aplicativo
 
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
@@ -305,8 +283,7 @@ As configurações a seguir podem ser feitas em dispositivos com iOS 8.0 e poste
 |**Permitir o Game Center**|Permitir o uso do aplicativo Game Center.|
 
 
-### Mostrar ou ocultar aplicativos
-<a id="show-or-hide-apps" class="xliff"></a>
+### <a name="show-or-hide-apps"></a>Mostrar ou ocultar aplicativos
 
 Use a **Lista de aplicativos ocultos e mostrados** para controlar o seguinte em dispositivos supervisionados com iOS 9.3 ou posterior:
 
@@ -314,8 +291,7 @@ Use a **Lista de aplicativos ocultos e mostrados** para controlar o seguinte em 
 - Especifique uma lista de aplicativos que os usuários podem exibir e iniciar. Nenhum outro aplicativo pode ser exibido ou iniciado.
 
 
-#### Como criar uma lista de aplicativos ocultos ou mostrados
-<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
+#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Como criar uma lista de aplicativos ocultos ou mostrados
 
 Especifique as seguintes configurações:
 
@@ -329,8 +305,7 @@ Especifique as seguintes configurações:
 |**Editarar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
 |**Excluir**|Exclui o aplicativo selecionado da lista.|
 
-#### Informações do aplicativo para aplicativos iOS internos
-<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
+#### <a name="app-information-for-built-in-ios-apps"></a>Informações do aplicativo para aplicativos iOS internos
 
 Use as informações nesta lista para identificar o nome, o editor e a ID do pacote dos aplicativos iOS internos que você pode mostrar ou ocultar. Se deseja mostrar ou ocultar todos os aplicativos na lista, você pode copiar os dados abaixo em um arquivo de texto com a extensão **.csv** e usar a opção **Importar Aplicativos** para importar todos os aplicativos simultaneamente.
 
@@ -380,30 +355,26 @@ Use as informações nesta lista para identificar o nome, o editor e a ID do pac
 
 
 
-## Configurações de política personalizada
-<a id="custom-policy-settings" class="xliff"></a>
+## <a name="custom-policy-settings"></a>Configurações de política personalizada
 
 Use a **política personalizada do iOS** do Microsoft Intune para implantar configurações que você criou usando a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) em dispositivos iOS. Essa ferramenta permite que você crie várias configurações que controlam a operação desses dispositivos e as exporte para um perfil de configuração. Em seguida, você poderá importar este perfil de configuração para uma política personalizada do Intune iOS e implantar as configurações para usuários e dispositivos em sua organização.
 
 Essa funcionalidade permite que você implante configurações do iOS que não possam ser configuradas com as políticas de configuração gerais do Intune.
 
-### Pré-requisitos
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Pré-requisitos
 Antes de começar, você precisa ter instalado o Apple Configurator e criado um arquivo de configuração que contém as configurações que deseja implantar para usuários ou dispositivos. Você pode baixar o Apple Configurator e aprender sobre ele na [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
 > O Intune não relata a conformidade de configurações individuais em uma política personalizada do iOS. No entanto, a conformidade geral da política é informada.
 
-### Configurações gerais
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>Configurações gerais
 
 |Nome da configuração|Detalhes|
     |----------------|--------------------|
     |**Nome**|Insira um nome exclusivo para a política personalizada do iOS para ajudar a identificá-lo no console do Intune.|
     |**Descrição**|Forneça uma descrição que dê uma visão geral da política personalizada do iOS e outras informações relevantes que o ajudarão a localizá-la.|
 
-### Configurações Personalizadas
-<a id="custom-settings" class="xliff"></a>
+### <a name="custom-settings"></a>Configurações Personalizadas
 
 |Nome da configuração|Detalhes|
     |----------------|--------------------|
@@ -411,6 +382,5 @@ Antes de começar, você precisa ter instalado o Apple Configurator e criado um 
 |**Arquivo de configuração de perfil**|Clique em **Importar** e então navegue até o perfil de configuração criado usando o Apple Configurador. **Observação:** certifique-se de que as configurações que você exportar da ferramenta Apple Configurator sejam compatíveis com a versão do iOS nos dispositivos nos quais você implantar a política personalizada do iOS. Para obter informações sobre como as incompatibilidades de configuração são resolvidas, pesquise a **Referência de Perfil de Configuração** e a **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).|
     |**Detalhes do perfil de configuração**|Exibir o código XML para o perfil de configuração que você importou.|
 
-### Consulte também
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a>Consulte também
 [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

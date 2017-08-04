@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 036899c5e438355cc10da8ab2bd47ec0830c9946
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ajude a proteger os dados com apagamento completo ou seletivo usando o Microsoft Intune
 
@@ -99,8 +99,8 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|
 |Agente de gerenciamento|O perfil de gerenciamento é removido.|
-|Email|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído. Se o Microsoft Exchange estiver hospedado localmente, os perfis de email e emails armazenados em cache não serão removidos.|
-|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
+|Email|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
+|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.|
 |Sair do Active Directory do Azure (AAD)|O registro no AAD é removido.|
 |Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
@@ -118,7 +118,7 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Configurações do perfil de certificado|Certificados revogados, mas não removidos.|Certificados removidos e revogados.|
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
 |Email|N/A. Consulte o item do Outlook.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
-|Outlook|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.</br>Exceção: se o Exchange estiver hospedado localmente, o email não será removido.|
+|Outlook|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.|
 |Sair do Active Directory do Azure (AAD)|Registro no AAD removido.|Registro no AAD removido.|
 |Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
@@ -134,7 +134,7 @@ Executar a limpeza seletiva em um dispositivo Android para Trabalho remove todos
 |Configurações|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|Não há suporte.|Removidos.|
 |Configurações do perfil de certificado|Certificados removidos e revogados.|Certificados removidos e revogados.|Não há suporte.|Certificados removidos e revogados.|
-|Email|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows.|Não há suporte.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows. Remove contas de email que foram provisionadas pelo Intune.</br>**Exceção**: se o Microsoft Exchange estiver hospedado localmente, as contas de email não serão removidas.|
+|Email|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows.|Não há suporte.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows. Remove contas de email que foram provisionadas pelo Intune.|
 |Sair do Active Directory do Azure (AAD)|Não.|Não.|Registro no AAD removido.|Não aplicável. O Windows 10 não dá suporte ao apagamento seletivo de dispositivos associados ao Azure Active Directory.|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Apagar conteúdo habilitado para EFS (sistema de arquivos com criptografia)

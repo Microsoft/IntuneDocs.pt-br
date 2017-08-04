@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
-# Determinar os requisitos de cenários de caso de uso
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de caso de uso
 
 Nesta seção, você determina os requisitos para cada grupo organizacional em cada cenário de caso de uso. Esse processo ajuda você a se preparar para as outras áreas de planejamento de implantação do Intune, como arquitetura e design, integração e distribuição. Ele também pode ajudar a identificar possíveis falhas e os desafios relacionados ao seu projeto de implantação do Intune.
 
@@ -42,8 +41,7 @@ Estes são alguns exemplos de requisitos de casos de uso de uma organização, m
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir os requisitos de casos de uso e subcasos de uso de sua organização.
 
 
-## Exemplos de requisitos
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>Exemplos de requisitos
 
 Estes são mais alguns exemplos que podem ser usados na coluna “Requisitos”:
 
@@ -64,7 +62,6 @@ Estes são mais alguns exemplos que podem ser usados na coluna “Requisitos”:
     - Office 365 com políticas de proteção do aplicativo
     - LOB (linha de negócios) com políticas de proteção do aplicativo
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 A próxima seção fornece diretrizes sobre [como desenvolver um plano de distribuição do Intune](planning-guide-rollout-plan.md).

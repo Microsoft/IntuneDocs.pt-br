@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Adicionar números de série do Apple Configurator
-<a id="add-apple-configurator-serial-numbers" class="xliff"></a>
+# <a name="add-apple-configurator-serial-numbers"></a>Adicionar números de série do Apple Configurator
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -49,8 +48,7 @@ Outros métodos de registrar dispositivos iOS são descritos em [Escolher como r
 
 7. Navegue até o arquivo .csv de números de série e selecione **Adicionar**.
 
-## Atribuir um perfil números de série específicos
-<a id="assign-a-profile-to-specific-serial-numbers" class="xliff"></a>
+## <a name="assign-a-profile-to-specific-serial-numbers"></a>Atribuir um perfil números de série específicos
 
 O Intune permite atribuir perfis de dois locais diferentes no Portal do Azure. Você pode usar as etapas a seguir ou pode atribuir perfis na folha Perfis de Registro do Apple Configurator, na qual você cria o perfil (consulte [Registrar dispositivos iOS com Apple Configurator usando o Assistente de configuração](apple-configurator-setup-assistant-enroll-ios.md). Use as etapas a seguir para atribuir o perfil somente se você já o criou.
 
@@ -62,12 +60,10 @@ O Intune permite atribuir perfis de dois locais diferentes no Portal do Azure. V
 
 4. Na folha **Atribuir Perfil**, selecione o perfil que você deseja atribuir e selecione **Atribuir**.
 
-## Excluir números de série
-<a id="delete-serial-numbers" class="xliff"></a>
+## <a name="delete-serial-numbers"></a>Excluir números de série
 Você pode excluir os números de série importados anteriormente. Você poderá excluir os números de série apenas se o registro do dispositivo for cancelado primeiro. Quando você remove um número de série, não é possível usar o Apple Configurator por meio do Assistente de configuração, a menos que você adicione novamente o número de série.
 
-## Exibir o estado de um dispositivo
-<a id="view-the-state-of-a-device" class="xliff"></a>
+## <a name="view-the-state-of-a-device"></a>Exibir o estado de um dispositivo
 Os números de série do dispositivo pode ter um dos dois estados:
 
 - Registrado – o dispositivo é registrado e se conectou ao serviço do Intune

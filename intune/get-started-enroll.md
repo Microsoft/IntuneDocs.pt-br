@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36e658cebdfd23547e3c376124289046f81acc1f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-enrolling-devices"></a>Introdução ao registro de dispositivos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![Dispositivo iOS mostrando o aplicativo de portal da empresa. a primeira tela apresentada ao usuário para o processo de registro é mostrada.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositivos móveis, ao mesmo tempo que mantém seus dados corporativos protegidos. Como os usuários finais interagem com o Intune em seus dispositivos, em vez de no console do administrador, você deve estar familiarizado com a experiência de registro. Dessa forma, você pode combinar as políticas de conformidade bem elaboradas com sua experiência para demonstrar empatia pelos usuários. Isso é especialmente importante porque os usuários saberão exatamente quais informações que você pode ver como um administrador:
 

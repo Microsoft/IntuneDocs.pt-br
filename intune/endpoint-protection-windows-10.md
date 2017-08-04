@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Configurações do Endpoint Protection para o Windows 10 e posterior no Microsoft Intune
-<a id="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune" class="xliff"></a>
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Configurações do Endpoint Protection para o Windows 10 e posterior no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,8 +29,7 @@ O perfil do Endpoint Protection permite controlar os recursos de segurança em d
 
 Use as informações neste tópico para saber como criar perfis do Endpoint Protection.
 
-## Criar um perfil de Endpoint Protection
-<a id="create-an-endpoint-protection-profile" class="xliff"></a>
+## <a name="create-an-endpoint-protection-profile"></a>Criar um perfil de Endpoint Protection
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -46,18 +44,15 @@ Use as informações neste tópico para saber como criar perfis do Endpoint Prot
 
 O perfil é criado e exibido na folha da lista de perfis.
 
-## Referência de configurações de perfil do Endpoint Protection
-<a id="endpoint-protection-profile-settings-reference" class="xliff"></a>
+## <a name="endpoint-protection-profile-settings-reference"></a>Referência de configurações de perfil do Endpoint Protection
 
-### Configurações do Windows
-<a id="windows-settings" class="xliff"></a>
+### <a name="windows-settings"></a>Configurações do Windows
 
 - **Exigir que os dispositivos sejam criptografados (somente no Desktop)** – Se habilitado, é solicitado que os usuários habilitem a criptografia de dispositivo. Além disso, é solicitado que eles confirmem que a criptografia de outro provedor não foi habilitada. Se a criptografia do Windows for ativada enquanto outro método de criptografia está ativo, o dispositivo pode se tornar instável.
 - **Exigir que o cartão de memória seja criptografado (somente em dispositivos móveis)** – Habilite essa configuração para criptografar os cartões de memória removíveis usados pelo dispositivo.
 
 
-### Configurações base do BitLocker
-<a id="bitlocker-base-settings" class="xliff"></a>
+### <a name="bitlocker-base-settings"></a>Configurações base do BitLocker
 
 - **Configurar métodos de criptografia** – Habilite essa configuração para definir os algoritmos de criptografia para o sistema operacional, dados e unidades removíveis.
     - **Criptografia para unidades do sistema operacional** – Escolha o método de criptografia para unidades do sistema operacional. Recomendamos que você use o algoritmo XTS-AES.
@@ -65,8 +60,7 @@ O perfil é criado e exibido na folha da lista de perfis.
     - **Criptografia para unidades de dados removíveis** – Escolha o método de criptografia para unidades de dados removíveis. Se a unidade removível for usada com dispositivos que não executam o Windows 10, é recomendável usar o algoritmo AES-CBC.
 
 
-### Configurações de unidade do sistema operacional do BitLocker
-<a id="bitlocker-os-drive-settings" class="xliff"></a>
+### <a name="bitlocker-os-drive-settings"></a>Configurações de unidade do sistema operacional do BitLocker
 
 - **Exigir autenticação adicional na inicialização** - 
     - **Bloquear o BitLocker em dispositivos sem um chip TPM compatível** - 
@@ -94,8 +88,7 @@ O perfil é criado e exibido na folha da lista de perfis.
         - **Usar URL de recuperação personalizada**
 
 
-### Configurações de unidades de dados fixas do BitLocker
-<a id="bitlocker-fixed-data-drive-settings" class="xliff"></a>
+### <a name="bitlocker-fixed-data-drive-settings"></a>Configurações de unidades de dados fixas do BitLocker
 
 - **Negar acesso de gravação a unidades de dados fixas não protegidas pelo BitLocker** – Se habilitado, a proteção do BitLocker deve ser habilitada em todas as unidades de dados fixas ou internas para que seja possível efetuar gravações nelas.
 - **Habilitar a recuperação de unidades fixas** – Habilite essa configuração para controlar como as unidades fixas protegidas pelo BitLocker são recuperadas quando as informações de inicialização necessária não estão disponíveis.
@@ -110,16 +103,14 @@ O perfil é criado e exibido na folha da lista de perfis.
     - **Exigir que informações de recuperação sejam armazenadas no AD DS antes de habilitar o BitLocker** – Habilite essa configuração para impedir que os usuários ativem o BitLocker, a menos que o dispositivo esteja ingressado no domínio e as informações de recuperação do BitLocker tenham sido armazenadas com êxito no Active Directory.
 
 
-### Configurações de unidade de dados removíveis do BitLocker
-<a id="bitlocker-removable-data-drive-settings" class="xliff"></a>
+### <a name="bitlocker-removable-data-drive-settings"></a>Configurações de unidade de dados removíveis do BitLocker
 
 - **Negar acesso de gravação para unidades de dados removíveis não protegidas pelo BitLocker** – Especifique se a criptografia do BitLocker é necessária para unidades de armazenamento removível.
     - **Bloquear o acesso de gravação para dispositivos configurados em outra organização** – Especifique se as unidades de dados removíveis que pertencem a outra organização podem ser gravadas.
 
 
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 

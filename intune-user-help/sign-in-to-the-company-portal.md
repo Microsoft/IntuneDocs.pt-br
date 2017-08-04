@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2e27bdcb6af7d81ed87aa113b11affbff695b808
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
-# Como faço para entrar no aplicativo do Portal da Empresa? <!--User Story 1132123-->
-<a id="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--" class="xliff"></a>
-
-> [!IMPORTANT]
-> Este recurso está em processo de distribuição. Sua experiência pode ser diferente. Removeremos este aviso quando a distribuição for concluída.
+# <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Como faço para entrar no aplicativo do Portal da Empresa? <!--User Story 1132123-->
 
 Use o aplicativo do Portal da Empresa para acessar os recursos da empresa, como email e aplicativos de negócios. Há duas maneiras principais de entrar no Portal da Empresa:
 
@@ -35,8 +31,7 @@ Use o aplicativo do Portal da Empresa para acessar os recursos da empresa, como 
 
 Mesmo que as imagens a seguir destinem-se ao iOS, o processo é praticamente idêntico para dispositivos Android e Windows.
 
-## Entrar com seu endereço de email e senha
-<a id="signing-in-with-your-email-address-and-password" class="xliff"></a>
+## <a name="signing-in-with-your-email-address-and-password"></a>Entrar com seu endereço de email e senha
 
 1. Abra o aplicativo do Portal da Empresa no seu dispositivo e toque em **Entrar**.
 
@@ -56,8 +51,7 @@ Mesmo que as imagens a seguir destinem-se ao iOS, o processo é praticamente id�
 
   ![Depois de concluir o processo de autenticação, o aplicativo Portal da Empresa inicia a sessão, mostrando isso por meio de uma barra de carregamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## Entrar de outro dispositivo
-<a id="signing-in-from-another-device" class="xliff"></a>
+## <a name="signing-in-from-another-device"></a>Entrar de outro dispositivo
 
 Se você não usar uma senha para entrar nos recursos da empresa, poderá usar outro dispositivo como a forma de confirmar que você é a pessoa certa com os níveis de acesso corretos. Se sua empresa usar cartões inteligentes para acessar os computadores, é provável que você precise entrar usando outro dispositivo.
 

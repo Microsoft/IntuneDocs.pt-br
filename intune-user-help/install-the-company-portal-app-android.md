@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Instalar o aplicativo Portal da Empresa para Android
-<a id="install-the-company-portal-app-for-android" class="xliff"></a>
+# <a name="install-the-company-portal-app-for-android"></a>Instalar o aplicativo Portal da Empresa para Android
 
 O Portal da Empresa é um aplicativo que fornece acesso aos aplicativos e ao email de sua empresa ou escola, bem como conexões com a Internet. Esse aplicativo ajuda você a manter ambas as informações de sua organização seguras mantendo seu dispositivo seguro – por exemplo, mantendo os aplicativos da empresa atualizados ou garantindo o bloqueio automático do dispositivo após determinado período. O aplicativo Portal da Empresa pode fazer isso ajudando você a [registrar seu dispositivo no Microsoft Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 

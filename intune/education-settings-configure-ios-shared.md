@@ -21,16 +21,14 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Como definir as configurações de educação do Intune para dispositivos iPad compartilhados
-<a id="how-to-configure-intune-education-settings-for-shared-ipad-devices" class="xliff"></a>
+# <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Como definir as configurações de educação do Intune para dispositivos iPad compartilhados
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A introdução do Intune dá suporte ao aplicativo Classroom iOS que ajuda os professores a orientar o aprendizado e controlar os dispositivos dos alunos na sala de aula. Além disso, para o aplicativo Classroom, a Apple dá suporte à capacidade dos dispositivos iPad dos alunos serem configurados de modo que vários alunos podem compartilhar um único dispositivo. Este documento orienta a alcançar essa meta com o Intune.
 Para obter informações sobre como configurar dispositivos iPad dedicados (1:1) para usar o aplicativo Classroom, consulte [Como definir as configurações do Intune para o aplicativo Classroom iOS](education-settings-configure-ios.md).
 
-## Antes de começar
-<a id="before-you-start" class="xliff"></a> 
+## <a name="before-you-start"></a>Antes de começar 
 
 Os pré-requisitos para usar os recursos do iPad compartilhado são: 
 
@@ -38,14 +36,12 @@ Os pré-requisitos para usar os recursos do iPad compartilhado são:
 - Como parte da instalação do Apple School Manager, configure as [IDs da Apple gerenciadas](http://help.apple.com/schoolmanager/#/tes78b477c81) para os alunos. [Saiba mais sobre as IDs da Apple gerenciadas](https://support.apple.com/en-us/HT205918). 
 - Crie um perfil de registro para os números de série de dispositivo sincronizados do Apple School Manager. 
 
-## Etapa 1 - Importar os dados da escola para o Azure Active Directory
-<a id="step-1---import-your-school-data-into-azure-active-directory" class="xliff"></a>
+## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Etapa 1 - Importar os dados da escola para o Azure Active Directory
 
 Use o SDS (School Data Sync) da Microsoft para importar registros escolares de um SIS (Sistema de Informações do Aluno) para o Azure Active Directory (Azure AD).
 O SDS sincroniza as informações de seu SIS e as armazena no Azure AD. O Azure AD é um sistema de gerenciamento da Microsoft que ajuda você a organizar usuários e dispositivos. Depois, use esses dados para ajudar com o gerenciamento de seus alunos e salas de aula. [Saiba mais sobre como implantar o SDS](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
-### Como importar dados usando o SDS
-<a id="how-to-import-data-using-sds" class="xliff"></a>
+### <a name="how-to-import-data-using-sds"></a>Como importar dados usando o SDS
 
 Importe as informações no SDS usando um dos seguintes métodos:
 
@@ -54,19 +50,16 @@ Importe as informações no SDS usando um dos seguintes métodos:
 - [API Inteligente](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - uma solução de gerenciamento de identidade sincronizada diretamente com o Azure AD
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - um formato CSV que você pode exportar e converter para sincronizar com o Azure AD
 
-### Saiba mais
-<a id="find-out-more" class="xliff"></a>
+### <a name="find-out-more"></a>Saiba mais
 
 - [Saiba mais sobre a experiência completa de sincronizar dados de escola locais com o Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 - [Saiba mais sobre a sincronização do Microsoft School Data](https://sds.microsoft.com/)
 - [Saiba mais sobre licenciamento no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## Etapa 2 - Criar e atribuir um perfil de Educação do iOS no Intune
-<a id="step-2---create-and-assign-an-ios-education-profile-in-intune" class="xliff"></a> 
+## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Etapa 2 - Criar e atribuir um perfil de Educação do iOS no Intune 
 
-### Definir as configurações gerais
-<a id="configure-general-settings" class="xliff"></a> 
+### <a name="configure-general-settings"></a>Definir as configurações gerais 
 
 1. Entre no portal do Azure. 
 2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
@@ -87,18 +80,15 @@ Perfis de educação iOS dão suporte somente a certificados PFX. Não há supor
 
 Os certificados que você cria devem oferecer suporte à autenticação de servidor, além da autenticação de usuário. 
 
-### Configurar certificados de professor
-<a id="configure-teacher-certificates" class="xliff"></a> 
+### <a name="configure-teacher-certificates"></a>Configurar certificados de professor 
 
 Na folha **Educação**, escolha **Certificados de professor**. 
 
-#### Configurar o certificado raiz do professor
-<a id="configure-teacher-root-certificate" class="xliff"></a> 
+#### <a name="configure-teacher-root-certificate"></a>Configurar o certificado raiz do professor 
 
 Em **Certificado raiz do professor**, escolha o botão Procurar para selecionar o certificado raiz de professor com a extensão .cer (DER ou codificado em Base64), ou .P7B (com ou sem cadeia completa). 
 
-#### Configurar o certificado PKCS#12 de professor
-<a id="configure-teacher-pkcs12-certificate" class="xliff"></a> 
+#### <a name="configure-teacher-pkcs12-certificate"></a>Configurar o certificado PKCS#12 de professor 
 
 Em **Certificado PKCS#12 de professor**, configure os seguintes valores: 
 
@@ -111,19 +101,16 @@ Em **Certificado PKCS#12 de professor**, configure os seguintes valores:
 
 Quando você terminar de configurar os certificados de professor, clique em **OK**. 
 
-### Configurar certificados de aluno
-<a id="configure-student-certificates" class="xliff"></a> 
+### <a name="configure-student-certificates"></a>Configurar certificados de aluno 
 
 1. Na **folha Educação**, escolha **Certificados de aluno**. 
 2. Na folha **Certificados de aluno**, na lista **Tipos de certificados de dispositivo de aluno**, escolha **iPad compartilhado**. 
 
-#### Configurar certificados raiz de aluno
-<a id="configure-student-root-certificate" class="xliff"></a> 
+#### <a name="configure-student-root-certificate"></a>Configurar certificados raiz de aluno 
 
 Em **Certificado raiz do dispositivo**, escolha o botão Procurar para selecionar o certificado raiz de aluno com a extensão .cer (DER ou codificado em Base64) ou .P7B (com ou sem cadeia completa). 
 
-#### Configurar certificado de dispositivo PKCS#12
-<a id="configure-device-pkcs12-certificate" class="xliff"></a> 
+#### <a name="configure-device-pkcs12-certificate"></a>Configurar certificado de dispositivo PKCS#12 
 
 Em **Certificado PKCS#12 de aluno**, configure os seguintes valores: 
 
@@ -136,16 +123,14 @@ Em **Certificado PKCS#12 de aluno**, configure os seguintes valores:
 
 Ao terminar de configurar os certificados, clique em **OK**. 
 
-### Concluir a instalação do certificado
-<a id="complete-certificate-setup" class="xliff"></a> 
+### <a name="complete-certificate-setup"></a>Concluir a instalação do certificado 
 
 1. Na folha **Educação**, escolha **OK**. 
 2. Na folha **Criar Perfil**, escolha **Criar**. 
 
 O perfil é criado e exibido na folha da lista de perfis. 
 
-## Etapa 3 – Criar uma categoria de dispositivo
-<a id="step-3---create-a-device-category" class="xliff"></a> 
+## <a name="step-3---create-a-device-category"></a>Etapa 3 – Criar uma categoria de dispositivo 
 
 1. Entre no portal do Azure. 
 2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
@@ -157,8 +142,7 @@ O perfil é criado e exibido na folha da lista de perfis.
 
 A categoria do dispositivo é criada na folha **Registro – Categorias de dispositivo**. 
 
-## Etapa 4 – Criar um grupo dinâmico
-<a id="step-4--create-a-dynamic-group" class="xliff"></a> 
+## <a name="step-4--create-a-dynamic-group"></a>Etapa 4 – Criar um grupo dinâmico 
 
 1. Entre no portal do Azure. 
 2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
@@ -176,8 +160,7 @@ A categoria do dispositivo é criada na folha **Registro – Categorias de dispo
 
 O grupo dinâmico é criado na folha **Usuários e Grupos – Todos os Grupos**. 
 
-## Etapa 5 – Atribuir um dispositivo a uma categoria (Carrinhos)
-<a id="step-5--assign-a-device-to-a-category-carts" class="xliff"></a> 
+## <a name="step-5--assign-a-device-to-a-category-carts"></a>Etapa 5 – Atribuir um dispositivo a uma categoria (Carrinhos) 
 
 1. Entre no portal do Azure. 
 2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
@@ -190,8 +173,7 @@ O grupo dinâmico é criado na folha **Usuários e Grupos – Todos os Grupos**.
 
 O dispositivo agora está associado à categoria de dispositivo. Repita esse processo para todos os dispositivos que você deseja associar à categoria de dispositivo que você criou. 
 
-## Etapa 6 – Criar perfis de sala de aula
-<a id="step-6--create-classroom-profiles" class="xliff"></a> 
+## <a name="step-6--create-classroom-profiles"></a>Etapa 6 – Criar perfis de sala de aula 
 
 1. Entre no portal do Azure. 
 2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
@@ -207,8 +189,7 @@ O dispositivo agora está associado à categoria de dispositivo. Repita esse pro
 
 O perfil é criado e exibido na folha da lista de perfis. 
 
-## Etapa 7 – Atribuir o Perfil do Carrinho às Classes
-<a id="step-7---assign-the-cart-profile-to-classes" class="xliff"></a> 
+## <a name="step-7---assign-the-cart-profile-to-classes"></a>Etapa 7 – Atribuir o Perfil do Carrinho às Classes 
 
 1. Entre no portal do Azure. 
 2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
@@ -221,7 +202,6 @@ O perfil é criado e exibido na folha da lista de perfis.
 
 A atribuição é concluída e o Intune implanta o perfil do Classroom para os dispositivos de destino com base na atribuição de sala de aula. 
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a> 
+## <a name="next-steps"></a>Próximas etapas 
 
 Agora os alunos podem compartilhar dispositivos entre si, escolher qualquer iPad em uma sala de aula, fazer logon com um PIN e personalizá-lo com seu conteúdo. Para obter mais informações sobre iPads compartilhados, consulte o [Site da Apple](https://www.apple.com/education/it/). 

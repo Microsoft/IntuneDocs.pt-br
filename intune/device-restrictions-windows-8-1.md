@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 8.1 e posterior no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
--   **Aplicar todas as configurações ao Windows 10** – Permite que as configurações desta política sejam aplicadas a dispositivos Windows 10 além de dispositivos Windows 8.1.
+
 -   **Envio de dados de diagnóstico** – Permite que o dispositivo envie informações de diagnóstico à Microsoft.
 -   **Firewall** – Exige que o Firewall do Windows esteja ativado.
 -   **Controle de Conta de Usuário** – Exige o uso de UAC (Controle de Conta de Usuário) nos dispositivos.
+
 ## <a name="password"></a>Senha
 -   **Tipo de senha exigida** – Exigir que o usuário final insira uma senha para acessar o dispositivo.
 -   **Tamanho mínimo de senha** – Define o tamanho mínimo necessário (em caracteres) para a senha.
@@ -62,8 +63,10 @@ Quando você impõe a criptografia em um dispositivo, a chave de recuperação f
 -   **Acesso ao menu no modo Empresarial** – Permite aos usuários acessar as opções de menu do modo Empresarial do Internet Explorer.
 Se selecionar essa configuração, você também poderá especificar um **Local de relatório de log**, que contém uma URL para um relatório que mostra os sites para os quais os usuários ativaram o acesso do modo Empresarial.
 -   **Local da lista de site do modo Empresarial** – Especifica o local da lista de sites que usarão o modo Empresarial quando ele estiver ativo.
+
 ## <a name="cellular"></a>Celular
 -   **Roaming de dados** – Habilita o roaming de dados quando o dispositivo estiver em uma rede de celular.
+
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 -   **URL de pastas de trabalho** – Define a URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.
 -   **Acesso ao aplicativo Windows Mail sem uma conta da Microsoft** – Habilita o acesso ao aplicativo Windows Mail sem uma conta da Microsoft.    
