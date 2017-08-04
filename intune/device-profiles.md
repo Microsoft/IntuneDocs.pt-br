@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# O que são perfis de dispositivo do Microsoft Intune?
-<a id="what-are-microsoft-intune-device-profiles" class="xliff"></a>
+# <a name="what-are-microsoft-intune-device-profiles"></a>O que são perfis de dispositivo do Microsoft Intune?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -34,70 +33,57 @@ Quando você abrir essa carga de trabalho, verá as seguintes opções:
 - **Gerenciar Perfis** – Esta é a seção que você acessará para criar perfis de configuração de dispositivo. você pode encontrar uma lista de todos os tipos de perfil que você pode criar posteriormente neste tópico.
 - **Configurar a autoridade de certificação** – Este fluxo de trabalho guia você pelas as etapas necessárias para configurar perfis de certificados do Intune.
 
-## Introdução
-<a id="getting-started" class="xliff"></a>
+## <a name="getting-started"></a>Introdução
 
 O fluxo de trabalho para a criação de perfis de dispositivo é semelhante para todos os perfis. Leia [Como criar perfis de configuração de dispositivo do Microsoft Intune](device-profile-create.md) para obter informações. Depois, continue lendo para obter informações específicas sobre a criação de configurações para cada tipo de perfil.
 
 É possível gerenciar os seguintes recursos em seus dispositivos:
 
-## Recursos de dispositivo
-<a id="device-features" class="xliff"></a>
+## <a name="device-features"></a>Recursos de dispositivo
 
 Os recursos de dispositivo permitem que você controle os recursos em dispositivos iOS e macOS, como AirPrint, notificações e configurações compartilhadas do dispositivo.
 Para saber mais, veja [Como definir as configurações de recursos do dispositivo](device-features-configure.md) Oferece suporte a: iOS e macOS.
 
-## Restrições de dispositivo
-<a id="device-restrictions" class="xliff"></a>
+## <a name="device-restrictions"></a>Restrições de dispositivo
 Restrições de dispositivo permitem controlar muitas configurações em dispositivos gerenciados, incluindo configurações de segurança, hardware e compartilhamento de dados. Por exemplo, você pode criar um perfil de restrição de dispositivo que impede que os usuários de dispositivos iOS acessem a câmera do dispositivo.
 Para obter mais informações, consulte [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) Há suporte para: Android, iOS, macOS, Windows 10 e Windows 10 Team.
 
-## Email
-<a id="email" class="xliff"></a>
+## <a name="email"></a>Email
 Os perfis de email ajudam a criar, atribuir e monitorar configurações de email do Exchange ActiveSync nos dispositivos que você gerencia. Os perfis de email ajudam a garante a consistência, reduzem chamadas de suporte e permitem que os usuários finais tenham acesso ao email da empresa em seus dispositivos pessoais sem qualquer configuração necessária da parte deles.
 Para obter mais informações, consulte [Como definir as configurações de email](email-settings-configure.md) Há suporte para: Android, iOS, Windows Phone 8.1 e Windows 10.
 
-## Wi-Fi
-<a id="wi-fi" class="xliff"></a>
+## <a name="wi-fi"></a>Wi-Fi
 Use os perfis de Wi-Fi para atribuir configurações de rede sem fio para usuários e dispositivos em sua organização. Quando você atribuir um perfil de Wi-Fi, os usuários terão acesso ao Wi-Fi de sua empresa sem precisar configurá-lo por conta própria.
 Para obter mais informações, consulte [Como definir configurações de Wi-Fi](wi-fi-settings-configure.md) Há suporte para: Android, iOS, macOS e Windows 8.1 (somente importação).
 
-## VPN
-<a id="vpn" class="xliff"></a>
+## <a name="vpn"></a>VPN
 Redes virtuais privadas (VPN) oferecem aos usuários acesso remoto seguro à rede da empresa. Dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o servidor VPN. Atribua perfis VPN aos usuários e dispositivos na sua organização para que eles possam se conectar à rede de forma fácil e segura.
 Para obter mais informações, consulte [Como definir as configurações de VPN](vpn-settings-configure.md).
 Há suporte para: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 e Windows 10.
 
-## Educação
-<a id="education" class="xliff"></a>
+## <a name="education"></a>Educação
 Permite configurar opções o aplicativo Windows Take a Test. Quando você configura essas opções, nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.
 Para saber mais, veja [Como definir as configurações de educação](education-settings-configure.md)
 
-## Certificados
-<a id="certificates" class="xliff"></a>
+## <a name="certificates"></a>Certificados
 Esse tipo de perfil permite que você configure certificados SCEP e PKCS confiáveis que podem ser atribuídos aos dispositivos e usados para autenticar o Wi-Fi, VPN e perfis de email.
 Para obter mais informações, consulte [Como configurar certificados](certificates-configure.md) Há suporte para: Android, iOS, Windows Phone 8.1, Windows 8.1 e Windows 10.
 
-## Atualização de edição
-<a id="edition-upgrade" class="xliff"></a>
+## <a name="edition-upgrade"></a>Atualização de edição
 Este tipo de perfil permite atualizar automaticamente dos dispositivos que executam algumas versões do Windows 10 para uma edição mais recente.
 Para obter mais informações, consulte [Como configurar upgrades da edição do Windows 10](edition-upgrade-configure-windows-10.md) Há suporte para: somente Windows 10.
 
-## Endpoint Protection
-<a id="endpoint-protection" class="xliff"></a>
+## <a name="endpoint-protection"></a>Endpoint Protection
 Este tipo de perfil permite definir as configurações do BitLocker para dispositivos Windows 10.
 Para obter mais informações, consulte [Configurações do Endpoint Protection para Windows 10](endpoint-protection-windows-10.md) Há suporte para: somente Windows 10.
 
-## Windows Information Protection
-<a id="windows-information-protection" class="xliff"></a>
+## <a name="windows-information-protection"></a>Windows Information Protection
 A Proteção de Informações do Windows ajuda a proteger contra esses possíveis vazamentos de dados sem interferir na experiência do funcionário. Ele também ajuda a proteger dados e aplicativos corporativos e contra vazamentos de dados acidentais em dispositivos pessoais e de funcionários que os funcionários trazem para o trabalho sem a necessidade de alterações em seu ambiente ou outros aplicativos.
 Para obter mais informações, consulte [Como configurar a Proteção de Informações do Windows](windows-information-protection-configure.md) Há suporte para: somente Windows 10.
 
-## Personalizado
-<a id="custom" class="xliff"></a>
+## <a name="custom"></a>Personalizado
 Configurações personalizadas permitem atribuir configurações de dispositivo que não são internos ao Intune. Por exemplo, em dispositivos Android, você pode especificar valores de OMA-URI que configuram o dispositivo. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator.
 Para obter mais informações, consulte [Como definir configurações personalizadas](custom-settings-configure.md) Há suporte para: Android, iOS, macOS e Windows Phone 8.1.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 Escolha um dos tipos de perfil na lista para começar a configurar os dispositivos.

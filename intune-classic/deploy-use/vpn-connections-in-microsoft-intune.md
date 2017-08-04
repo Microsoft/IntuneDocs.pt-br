@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Conexões VPN no Microsoft Intune
-<a id="vpn-connections-in-microsoft-intune" class="xliff"></a>
+# <a name="vpn-connections-in-microsoft-intune"></a>Conexões VPN no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -41,8 +40,7 @@ Você pode configurar os seguintes tipos de dispositivo usando perfis VPN:
 
 As opções de configuração do perfil VPN são diferentes dependendo do tipo de dispositivo selecionado.
 
-## Tipos de conexão VPN
-<a id="vpn-connection-types" class="xliff"></a>
+## <a name="vpn-connection-types"></a>Tipos de conexão VPN
 
 O Intune dá suporte para a criação de perfis de VPN que usam os seguintes tipos de conexão:
 
@@ -69,25 +67,21 @@ L2TP|Perfil personalizado do iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
 
  Saiba como criar perfis de VPN personalizados usando configurações de URI em [Configurações personalizadas para perfis de VPN](create-custom-vpn-profiles.md).     
 
-## Métodos para proteger perfis de VPN
-<a id="methods-of-securing-vpn-profiles" class="xliff"></a>
+## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
 
 Perfis VPN podem usar uma série de tipos de conexão e protocolos diferentes, de fabricantes diferentes. Essas conexões geralmente são protegidas usando um destes dois métodos.
 
-### Certificados
-<a id="certificates" class="xliff"></a>
+### <a name="certificates"></a>Certificados
 
 Ao criar o perfil de VPN, você escolhe um perfil de certificado SCEP ou .PFX criado anteriormente no Intune. Isso é conhecido como certificado de identidade. Ele é usado para autenticar um perfil de certificado confiável (ou *certificado raiz*) que você criou para estabelecer que o dispositivo do usuário tem permissão para se conectar. O certificado confiável é implantado no computador que autentica a conexão de VPN, em geral, o servidor VPN.
 
 Para obter mais informações sobre como criar e usar perfis de certificado no Intune, consulte [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger o acesso a recursos com perfis de certificado).
 
-### Nome e senha do usuário
-<a id="user-name-and-password" class="xliff"></a>
+### <a name="user-name-and-password"></a>Nome e senha do usuário
 
 O usuário autentica no servidor VPN, fornecendo seu nome de usuário e senha.
 
-## Criar um perfil VPN
-<a id="create-a-vpn-profile" class="xliff"></a>
+## <a name="create-a-vpn-profile"></a>Criar um perfil VPN
 
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e escolha o perfil VPN para o dispositivo:
@@ -157,8 +151,7 @@ Você pode restringir o uso de VPN para dispositivos Windows 10 a aplicativos es
 
 A nova política aparece no nó **Políticas de configuração** do espaço de trabalho **Política**.
 
-### VPN sob demanda para dispositivos iOS
-<a id="on-demand-vpn-for-ios-devices" class="xliff"></a>
+### <a name="on-demand-vpn-for-ios-devices"></a>VPN sob demanda para dispositivos iOS
 Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 
 > [!NOTE]
@@ -183,8 +176,7 @@ Você pode configurar a VPN sob demanda para dispositivos iOS 8.0 e posterior.
 As regras específicas de domínio são avaliadas antes das regras de todos os domínios.
 
 
-## Implantar a política
-<a id="deploy-the-policy" class="xliff"></a>
+## <a name="deploy-the-policy"></a>Implantar a política
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 

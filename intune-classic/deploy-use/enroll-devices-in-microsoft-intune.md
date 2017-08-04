@@ -14,11 +14,11 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2e08a228c19e934e92ed2db1de407859e20559f7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para gerenciamento no Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 Você pode registrar dispositivos, incluindo computadores Windows, para habilitar o MDM (gerenciamento de dispositivo móvel) com o Microsoft Intune. Este tópico descreve diferentes maneiras de registrar dispositivos móveis no gerenciamento do Intune. A maneira como você registra seus dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. O registro de BYOD (Traga seu próprio dispositivo) permite que os usuários registrem seus telefones, tablets ou computadores pessoais. O registro de CODs (dispositivos de propriedade corporativa) permite cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados.
 
-Caso utilize o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), hospedado na nuvem ou local, você pode habilitar o gerenciamento simples do Intune sem registro. Computadores Windows também podem ser gerenciados usando o [software cliente do Intune](#manage-windows-pcs-with-intune).
+Caso utilize o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), hospedado na nuvem ou local, você pode habilitar o gerenciamento simples do Intune sem registro. Computadores Windows também podem ser gerenciados usando o [software cliente do Intune](#windows-pc-management-with-intune).
 
 Por padrão, dispositivos para todas as plataformas têm permissão para se registrarem no Intune. Para bloquear o registro de dispositivos, entre no [Portal de administração do Microsoft Intune](https://manage.microsoft.com) com suas credenciais de administrador. Escolha **Admin** > **Gerenciamento de Dispositivo Móvel** > **Regras de Registro** e desmarque as caixas de seleção aplicáveis para as plataformas que deseja bloquear.
 

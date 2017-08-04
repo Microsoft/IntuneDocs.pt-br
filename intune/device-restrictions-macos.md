@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,20 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 716ca0a2041bdd2ecfadd180999a09f80373cb2a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 76d532745ad3b8761a88aaf0772053f0629e050a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
-# Configurações de restrição de dispositivo macOS no Microsoft Intune
-<a id="macos-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo macOS no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use essas configurações para gerenciar dispositivos macOS em um perfil de restrição de dispositivo.
 
-## Senha
-<a id="password" class="xliff"></a>
--   **Senha obrigatória** – Exigir que o usuário final insira uma senha para acessar o dispositivo.
+## <a name="password"></a>Senha
+-   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
     -   **Tipo de senha necessária** – Especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números). Essa configuração só tem suporte no Mac OS X versão 10.10.3 e posterior.
     -   **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caractere complexo é um símbolo, como **?**
     -   **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
@@ -40,8 +38,7 @@ Use essas configurações para gerenciar dispositivos macOS em um perfil de rest
     -   **Expiração de senha (dias)** – Especifique o número de dias que precisam transcorrer antes que o usuário precise alterar a senha (de **1** a **255** dias).
     -   **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que não podem ser reutilizadas (de **1** a **24**).
 
-## Aplicativos restritos
-<a id="restricted-apps" class="xliff"></a>
+## <a name="restricted-apps"></a>Aplicativos restritos
 
 Na lista de aplicativos restritos, você pode configurar uma das seguintes listas:
 
@@ -50,11 +47,9 @@ Uma lista de **Aplicativos aprovados** – Listar os aplicativos que os usuário
 
 Para configurar a lista, clique em **Adicionar**, especifique um nome de sua preferência, o editor do aplicativo (opcional) e a ID do pacote do aplicativo (por exemplo *com.apple.calculator*).
 
-## Domínios
-<a id="domains" class="xliff"></a>
+## <a name="domains"></a>Domínios
 
-### Domínios de email desmarcados
-<a id="unmarked-email-domains" class="xliff"></a>
+### <a name="unmarked-email-domains"></a>Domínios de email desmarcados
 
 No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente daqueles configurados por você, o email será marcado como não confiável no aplicativo Mail do iOS.
 

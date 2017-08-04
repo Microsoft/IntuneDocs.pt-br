@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Escolha como registrar dispositivos iOS e macOS
-<a id="choose-how-to-enroll-ios-and-macos-devices" class="xliff"></a>
+# <a name="choose-how-to-enroll-ios-and-macos-devices"></a>Escolha como registrar dispositivos iOS e macOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,25 +31,21 @@ Use as seguintes informações para decidir qual método usar para registro de d
 
 **Pré-requisito:** um[certificado do Apple Push Notification Service](apple-mdm-push-certificate-get.md) é obrigatório.
 
-## BYOD (Dispositivos iOS de propriedade do usuário)
-<a id="user-owned-ios-devices-byod" class="xliff"></a>
+## <a name="user-owned-ios-devices-byod"></a>BYOD (Dispositivos iOS de propriedade do usuário)
 
 Se os usuários desejarem registrar seus dispositivos pessoais BYOD (traga seu próprio dispositivo), eles poderão baixar o aplicativo do Portal da Empresa para iOS na Loja de Aplicativos e seguir as instruções de registro no aplicativo. Depois de registrado, os usuários podem se conectar à rede da empresa, ingressar no domínio ou no Azure Active Directory e obter acesso aos recursos corporativos. Para habilitar o cenário BYOD, o único requisito é ter um [certificado Apple Push Notification Service](apple-mdm-push-certificate-get.md). Você também pode bloquear o registro de dispositivos iOS pessoais. Consulte [Definir restrições de tipo de dispositivo](enrollment-restrictions-set.md) para obter instruções.
 
-## Dispositivos macOS de propriedade do usuário (BYOD)
-<a id="user-owned-macos-devices-byod" class="xliff"></a>
+## <a name="user-owned-macos-devices-byod"></a>Dispositivos macOS de propriedade do usuário (BYOD)
 
 Você pode habilitar o registro de dispositivo macOS. Para habilitar o registro do macOS, o único requisito é ter um [certificado Apple Push Notification Service](apple-mdm-push-certificate-get.md). Para obter mais informações, consulte [Registrar dispositivos macOS](./macos-enroll.md)
 
-## Programa de registro com a Apple
-<a id="enrollment-program-with-apple" class="xliff"></a>
+## <a name="enrollment-program-with-apple"></a>Programa de registro com a Apple
 A Apple oferece programas de compra de dispositivo que incluem o registro de dispositivo e a infraestrutura de gerenciamento. O dispositivo comprado por meio de um desses programas pode ser registrado em massa em um registro “sem fio” com a atribuição de números de série do dispositivo ao gerenciamento do Intune.
 
 - **DEP (Programa de registro de dispositivos)** – programa de registro de dispositivos da Apple para organizações e empresas. Para obter mais informações, consulte [Registrar dispositivos iOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md).
 - **Apple School Manager** – programa de registro de dispositivos da Apple para escolas. Para obter mais informações, consulte [Habilitar o registro de dispositivo iOS com o Apple School Manager](apple-school-manager-set-up-ios.md)
 
-## Apple Configurator
-<a id="apple-configurator" class="xliff"></a>
+## <a name="apple-configurator"></a>Apple Configurator
 
 Você pode registrar dispositivos iOS exportando um perfil de Registro Corporativo e, em seguida, conectando esses dispositivos móveis a um Mac que esteja executando o Apple Configurator. O Apple Configurator dá suporte a duas formas de registro:
 
@@ -58,11 +53,9 @@ Você pode registrar dispositivos iOS exportando um perfil de Registro Corporati
 
 - **Registro direto**: cria um arquivo compatível com Apple Configurator para uso durante a preparação do dispositivo. O dispositivo registrado não é redefinido para os padrões de fábrica nem fica associado a nenhum usuário. Para registrar dispositivos, o administrador precisa conectar o dispositivo iOS por meio de USB em um computador Mac executando o Apple Configurator. Para saber mais, confira [Registrar dispositivos iOS usando o Apple Configurator Device Enrollment](apple-configurator-direct-enroll-ios.md).
 
-## Usar o DEP (Device Enrollment Program)
-<a id="use-the-device-enrollment-program-dep" class="xliff"></a>
+## <a name="use-the-device-enrollment-program-dep"></a>Usar o DEP (Device Enrollment Program)
 
 O DEP implanta um perfil de registro "over the air" em dispositivos que são adquiridos por meio do DEP. Quando o usuário executa o Assistente de Configuração no dispositivo na primeira inicialização, o dispositivo é registrado no Intune. Para obter mais informações, consulte [Registrar dispositivos iOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md).
 
-## Usar o DEM (Gerenciador de Registro de Dispositivos)
-<a id="use-the-device-enrollment-manager-dem" class="xliff"></a>
+## <a name="use-the-device-enrollment-manager-dem"></a>Usar o DEM (Gerenciador de Registro de Dispositivos)
 O gerenciador de registros de dispositivo é uma conta de usuário genérica que pode registrar e gerenciar até 1.000 dispositivos. Os dispositivos gerenciados pelo DEM não podem ter afinidade de usuário e, portanto, o dispositivo nunca tem um proprietário. Conceda permissões DEM a um usuário do Intune para proporciona essas funcionalidades. Cada dispositivo que o usuário DEM registra usa uma licença do Intune. Para obter mais informações, consulte [Registrar dispositivos usando o Gerenciador de registro de dispositivo](device-enrollment-manager-enroll.md).

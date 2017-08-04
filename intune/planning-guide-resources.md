@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/11/2017
 ---
-# Recursos adicionais para planejar a implantação do Intune
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionais para planejar a implantação do Intune
 
-## Modelos
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>Modelos
 
 Os modelos do Microsoft Excel para as tabelas usadas no guia de planejamento estão disponíveis para [download](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -44,8 +42,7 @@ Esta é uma lista de modelos de tabela para cada seção.
 | | Política de acesso condicional|-|
 
 
-## Leituras adicionais
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>Leituras adicionais
 
 Confira estes recursos para obter mais informações que podem ser úteis durante o processo de planejamento da implantação, design e implementação do Intune.
 

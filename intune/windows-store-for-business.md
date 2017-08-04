@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Como gerenciar aplicativos adquiridos na Windows Store para Empresas com o Microsoft Intune
-<a id="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune" class="xliff"></a>
+# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos adquiridos na Windows Store para Empresas com o Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -33,8 +32,7 @@ O [Windows Store para a Empresa](https://www.microsoft.com/business-store) forne
 * Você pode controlar quantas licenças estão disponíveis e quantas estão sendo usadas no console de administração do Intune.
 * O Intune bloqueará a atribuição e a instalação de aplicativos caso haja um número insuficiente de licenças disponíveis.
 
-## Antes de começar
-<a id="before-you-start" class="xliff"></a>
+## <a name="before-you-start"></a>Antes de começar
 
 Examine as seguintes informações antes de iniciar a sincronização e a atribuição de aplicativos da Windows Store for Business:
 
@@ -47,8 +45,7 @@ Examine as seguintes informações antes de iniciar a sincronização e a atribu
 - Para usar essa funcionalidade, os dispositivos devem estar ingressados no Active Directory Domain Services ou em um local de trabalho.
 - Dispositivos registrados devem estar usando a versão 1511 do Windows 10 ou posterior.
 
-## Associe sua conta da Windows Store for Business ao Intune
-<a id="associate-your-windows-store-for-business-account-with-intune" class="xliff"></a>
+## <a name="associate-your-windows-store-for-business-account-with-intune"></a>Associe sua conta da Windows Store for Business ao Intune
 Antes de habilitar a sincronização no console do Intune, você deve configurar sua conta de repositório para usar o Intune como uma ferramenta de gerenciamento:
 1. Certifique-se de entrar no repositório de negócios usando a mesma conta de locatário usada para entrar no Intune.
 2. Na Business Store, escolha **Configurações** > **Ferramentas de gerenciamento**.
@@ -59,8 +56,7 @@ Antes de habilitar a sincronização no console do Intune, você deve configurar
 
 Agora você pode continuar e configurar a sincronização no console do Intune.
 
-## Configurar sincronização
-<a id="configure-synchronization" class="xliff"></a>
+## <a name="configure-synchronization"></a>Configurar sincronização
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -71,14 +67,12 @@ Agora você pode continuar e configurar a sincronização no console do Intune.
 5. Na lista suspensa **Idioma**, escolha o idioma em que os aplicativos da Windows Store para Empresas serão exibidos no Portal do Intune. Independentemente do idioma em que eles são exibidos, eles serão instalados no idioma do usuário final quando disponível.
 6. Clique em **Sincronizar** para obter os aplicativos que você adquiriu da Windows Store no Intune.
 
-## Sincronizar aplicativos
-<a id="synchronize-apps" class="xliff"></a>
+## <a name="synchronize-apps"></a>Sincronizar aplicativos
 
 1. Na carga de trabalho **Aplicativos móveis**, escolha **Instalação** > **Windows Store para Empresas**.
 2. Clique em **Sincronizar** para obter os aplicativos que você adquiriu da Windows Store no Intune.
 
-## Atribuir aplicativos
-<a id="assign-apps" class="xliff"></a>
+## <a name="assign-apps"></a>Atribuir aplicativos
 
 Atribua aplicativos da loja da mesma maneira que você atribui qualquer aplicativo do Intune. Para obter mais informações, consulte [Como atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md). No entanto, em vez de atribuir aplicativos da página **Todos os aplicativos**, atribua-os na página **Aplicativos licenciados**.
 

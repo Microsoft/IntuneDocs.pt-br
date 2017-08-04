@@ -21,13 +21,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Como definir as configurações do Intune para o aplicativo Sala de Aula para iOS
-<a id="how-to-configure-intune-settings-for-the-ios-classroom-app" class="xliff"></a>
+# <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como definir as configurações do Intune para o aplicativo Sala de Aula para iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## Introdução
-<a id="introduction" class="xliff"></a>
+## <a name="introduction"></a>Introdução
 [Sala de aula](https://itunes.apple.com/app/id1085319084) é um aplicativo que ajuda os professores a orientar o aprendizado e controlar os dispositivos dos alunos na sala de aula. Por exemplo, com o aplicativo, um professor pode:
 
 - Abrir aplicativos nos dispositivos de alunos
@@ -38,8 +36,7 @@ ms.lasthandoff: 07/01/2017
 
 Use o perfil de dispositivo **Educação** do Intune iOS e as informações neste tópico para ajudar a configurar o aplicativo Classroom, bem como os dispositivos nos quais você vai usá-lo.
 
-## Antes de começar
-<a id="before-you-start" class="xliff"></a>
+## <a name="before-you-start"></a>Antes de começar
 
 Considere o seguinte antes de começar as configurações:
 
@@ -51,14 +48,12 @@ Considere o seguinte antes de começar as configurações:
 - Nesta versão, o Intune dá suporte ao gerenciamento de um cenário 1:1 em que cada aluno tem seu próprio iPad dedicado
 
 
-## Etapa 1 - Importar os dados da escola para o Azure Active Directory
-<a id="step-1---import-your-school-data-into-azure-active-directory" class="xliff"></a>
+## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Etapa 1 - Importar os dados da escola para o Azure Active Directory
 
 Use o SDS (School Data Sync) da Microsoft para importar registros escolares de um SIS (Sistema de Informações do Aluno) para o Azure Active Directory (Azure AD).
 O SDS sincroniza as informações de seu SIS e as armazena no Azure AD. O Azure AD é um sistema de gerenciamento da Microsoft que ajuda você a organizar usuários e dispositivos. Depois, use esses dados para ajudar com o gerenciamento de seus alunos e salas de aula. [Saiba mais sobre como implantar o SDS](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
-### Como importar dados usando o SDS
-<a id="how-to-import-data-using-sds" class="xliff"></a>
+### <a name="how-to-import-data-using-sds"></a>Como importar dados usando o SDS
 
 Importe as informações no SDS usando um dos seguintes métodos:
 
@@ -67,18 +62,15 @@ Importe as informações no SDS usando um dos seguintes métodos:
 - [API Inteligente](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - uma solução de gerenciamento de identidade sincronizada diretamente com o Azure AD
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - um formato CSV que você pode exportar e converter para sincronizar com o Azure AD
 
-### Saiba mais
-<a id="find-out-more" class="xliff"></a>
+### <a name="find-out-more"></a>Saiba mais
 
 - [Saiba mais sobre a experiência completa de sincronizar dados de escola locais com o Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 - [Saiba mais sobre a sincronização do Microsoft School Data](https://sds.microsoft.com/)
 - [Saiba mais sobre licenciamento no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## Etapa 2 - Criar e atribuir um perfil de Educação do iOS no Intune
-<a id="step-2---create-and-assign-an-ios-education-profile-in-intune" class="xliff"></a>
+## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Etapa 2 - Criar e atribuir um perfil de Educação do iOS no Intune
 
-### Definir as configurações gerais
-<a id="configure-general-settings" class="xliff"></a>
+### <a name="configure-general-settings"></a>Definir as configurações gerais
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -100,18 +92,15 @@ Perfis de educação iOS dão suporte somente a certificados PFX. Não há supor
 
 Os certificados que você cria devem oferecer suporte à autenticação de servidor, além da autenticação de usuário.
 
-### Configurar certificados de professor
-<a id="configure-teacher-certificates" class="xliff"></a>
+### <a name="configure-teacher-certificates"></a>Configurar certificados de professor
 
 Na folha **Educação**, escolha **Certificados de professor**.
 
-#### Configurar o certificado raiz do professor
-<a id="configure-teacher-root-certificate" class="xliff"></a>
+#### <a name="configure-teacher-root-certificate"></a>Configurar o certificado raiz do professor
 
 Em **Certificado raiz do professor**, escolha o botão Procurar para selecionar o certificado raiz de professor com a extensão .cer (DER ou codificado em Base64), ou .P7B (com ou sem cadeia completa).
 
-#### Configurar o certificado PKCS#12 de professor
-<a id="configure-teacher-pkcs12-certificate" class="xliff"></a>
+#### <a name="configure-teacher-pkcs12-certificate"></a>Configurar o certificado PKCS#12 de professor
 
 Em **Certificado PKCS#12 de professor**, configure os seguintes valores:
 
@@ -125,19 +114,16 @@ Você pode especificar um valor inferior ao período de validade do modelo de ce
 
 Quando você terminar de configurar os certificados, clique em **OK**.
 
-### Configurar certificados de aluno
-<a id="configure-student-certificates" class="xliff"></a>
+### <a name="configure-student-certificates"></a>Configurar certificados de aluno
 
 1.  Na folha **Educação**, escolha **Certificados de aluno**.
 2.  Na folha **Certificados de aluno**, na lista de tipos **Certificados de dispositivo do aluno**, escolha **1:1**.
 
-#### Configurar certificados raiz de aluno
-<a id="configure-student-root-certificate" class="xliff"></a>
+#### <a name="configure-student-root-certificate"></a>Configurar certificados raiz de aluno
 
 Em **Certificado raiz de aluno**, escolha o botão Procurar para selecionar o certificado raiz de aluno com a extensão .cer (DER ou codificado em Base64), ou .P7B (com ou sem cadeia completa).
 
-#### Configurar certificado PKCS#12 de aluno
-<a id="configure-student-pkcs12-certificate" class="xliff"></a>
+#### <a name="configure-student-pkcs12-certificate"></a>Configurar certificado PKCS#12 de aluno
 
 Em **Certificado PKCS#12 de aluno**, configure os seguintes valores:
 
@@ -151,8 +137,7 @@ Você pode especificar um valor inferior ao período de validade do modelo de ce
 
 Ao terminar de configurar os certificados, clique em **OK**.
 
-## Concluir
-<a id="finish-up" class="xliff"></a>
+## <a name="finish-up"></a>Concluir
 
 1.  Na folha **Educação**, escolha OK.
 2.  Na folha **Criar Perfil**, escolha **Criar**.
@@ -161,8 +146,7 @@ O perfil é criado e exibido na folha da lista de perfis.
 
 Atribua o perfil aos dispositivos dos alunos, nos grupos de sala de aula criados durante a sincronização dos dados de estudante com o Microsoft Azure AD (confira [Como atribuir perfis do dispositivo](device-profile-assign.md)).
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Agora, quando um professor usar o aplicativo Sala de Aula, ele terá controle total sobre os dispositivos dos alunos.
 

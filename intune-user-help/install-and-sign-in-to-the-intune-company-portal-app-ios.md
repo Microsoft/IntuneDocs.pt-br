@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Instalar e entrar no aplicativo Portal da Empresa
-<a id="install-and-sign-in-to-the-company-portal-app" class="xliff"></a>
+# <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e entrar no aplicativo Portal da Empresa
 
 O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS para ter acesso a aplicativos, email e rede da empresa ou escola.  Antes de poder obter acesso, você deve instalar o aplicativo de Portal da Empresa e, em seguida, usar o aplicativo para registrar seu dispositivo no Microsoft Intune. Para obter mais informações, consulte [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando você instala o aplicativo de Portal da empresa e registra seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 

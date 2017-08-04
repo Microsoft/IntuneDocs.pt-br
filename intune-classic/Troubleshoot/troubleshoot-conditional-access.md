@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2017
 ---
-# Solucionar problemas de acesso condicional
-<a id="troubleshoot-conditional-access" class="xliff"></a>
+# <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acesso condicional
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -30,8 +29,7 @@ Normalmente, um usuário está tentando acessar o email ou o SharePoint e recebe
 Este tópico descreve o que fazer quando os usuários não obtêm acesso aos recursos por meio de acesso condicional do Intune.
 
 
-## Os conceitos básicos para o sucesso no acesso condicional
-<a id="the-basics-for-success-in-conditional-access" class="xliff"></a>
+## <a name="the-basics-for-success-in-conditional-access"></a>Os conceitos básicos para o sucesso no acesso condicional
 
 Para que o acesso condicional funcione, são necessárias as seguintes condições:
 
@@ -43,14 +41,12 @@ Para que o acesso condicional funcione, são necessárias as seguintes condiçõ
 
 Essas condições podem ser exibidas para cada dispositivo no Portal de gerenciamento do Azure e no relatório de inventário de dispositivo.
 
-## Problemas de registro
-<a id="enrollment-issues" class="xliff"></a>
+## <a name="enrollment-issues"></a>Problemas de registro
 
  -  O dispositivo não está registrado, portanto o registro resolverá o problema.
  -  O usuário registrou o dispositivo, mas houve falha no ingresso no local de trabalho. O usuário deve atualizar o registro por meio do portal da empresa.
 
-## Problemas de conformidade
-<a id="compliance-issues" class="xliff"></a>
+## <a name="compliance-issues"></a>Problemas de conformidade
 
  -  O dispositivo não é compatível com a política do Intune. Problemas comuns são requisitos de senha e criptografia. O usuário será redirecionado para o portal da empresa, em que ele pode configurar seu dispositivo para que seja compatível.
  -  Pode levar algum tempo para que as informações de conformidade sejam registradas para um dispositivo. Aguarde alguns minutos e tente novamente.
@@ -67,29 +63,23 @@ Essas condições podem ser exibidas para cada dispositivo no Portal de gerencia
     
         -   Alguns fabricantes de dispositivos criptografam seus dispositivos usando um PIN padrão em vez do PIN secreto definido pelo usuário. O Intune reconhece a criptografia usando o PIN padrão como inseguro, pois esse método de criptografia pode colocar os dados no dispositivo em risco, podendo ser acessados por usuários mal-intencionados com acesso físico ao dispositivo. Se esse for o problema, considere o uso de [políticas de proteção do aplicativo](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
-## Problemas de política
-<a id="policy-issues" class="xliff"></a>
+## <a name="policy-issues"></a>Problemas de política
 
 Quando você cria uma política de conformidade e a vincula a uma política de email, ambas as políticas precisam ser implantadas para o mesmo usuário. Portanto, tenha cuidado ao planejar quais políticas são implantadas em quais grupos. Os usuários que têm apenas uma política aplicada têm uma probabilidade de descobrir que seus dispositivos não são compatíveis.
 
 
-## Problemas com o Exchange ActiveSync
-<a id="exchange-activesync-issues" class="xliff"></a>
+## <a name="exchange-activesync-issues"></a>Problemas com o Exchange ActiveSync
 
-### Um dispositivo Android compatível recebe aviso de quarentena
-<a id="compliant-android-device-gets-quarantine-notice" class="xliff"></a>
+### <a name="compliant-android-device-gets-quarantine-notice"></a>Um dispositivo Android compatível recebe aviso de quarentena
 - Um dispositivo Android registrado e compatível ainda pode receber um aviso de quarentena ao tentar acessar recursos corporativos. Antes de escolher o link que diz **Começar**, o usuário deve verificar se o portal da empresa não estava aberto quando ele tentou acessar os recursos. Os usuários devem fechar o portal da empresa, tente novamente para acessar os recursos e, em seguida, escolher o link **Começar**.
 
-### Um dispositivo desativado continua tendo acesso.
-<a id="retired-device-continues-to-have-access" class="xliff"></a>
+### <a name="retired-device-continues-to-have-access"></a>Um dispositivo desativado continua tendo acesso.
 - Durante a utilização do Exchange Online, um dispositivo desativado pode continuar tendo acesso por várias horas após a desativação. Isso ocorre porque o Exchange armazena em cache os direitos de acesso por 6 horas. Considere outros meios de proteção de dados em dispositivos desativados neste cenário.
 
-### O dispositivo é compatível e registrado com o AAD, mas ainda é bloqueado
-<a id="device-is-compliant-and-registered-with-aad-but-still-blocked" class="xliff"></a>
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>O dispositivo é compatível e registrado com o AAD, mas ainda é bloqueado
 - Às vezes, o provisionamento da EASID (ID do Exchange ActiveSync) para o AAD é atrasado. Uma causa comum desse problema é a limitação, então, aguarde alguns minutos e tente novamente.
 
-### Dispositivo bloqueado
-<a id="device-blocked" class="xliff"></a>
+### <a name="device-blocked"></a>Dispositivo bloqueado
 
 Um dispositivo pode ser bloqueado do Acesso condicional sem receber um email de ativação.
 
@@ -99,8 +89,7 @@ Um dispositivo pode ser bloqueado do Acesso condicional sem receber um email de 
 - Verifique os logs do Exchange Connector quanto à atividade EnviarEmail e verifique se há erros. Um exemplo de comando a ser procurado é EnviarEmail da conta de notificação para EmailUsuário.
 - Antes de bloquear o dispositivo, o Exchange Connector envia o email de ativação. Se o dispositivo estiver offline, ele poderá não receber o email de ativação. Verifique se o cliente de email do dispositivo tem recuperação de email usando Push em vez de Pull, pois isso também pode fazer com que o usuário perca o email. Mude para Pull e veja se o dispositivo recebe o email.
 
-## Um dispositivo incompatível não é bloqueado
-<a id="non-compliant-device-not-blocked" class="xliff"></a>
+## <a name="non-compliant-device-not-blocked"></a>Um dispositivo incompatível não é bloqueado
 
 Se você encontrar um dispositivo que não é compatível, mas continua tendo acesso, execute as etapas a seguir.
 
@@ -110,12 +99,10 @@ Se você encontrar um dispositivo que não é compatível, mas continua tendo ac
     - Use este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Caso o dispositivo não esteja listado, ele não está acessando o Exchange.
     - Se o dispositivo estiver listado, use cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre seu estado de acesso e fornecer essas informações ao Suporte da Microsoft.
 
-## Antes de abrir um tíquete de suporte
-<a id="before-you-open-a-support-ticket" class="xliff"></a>
+## <a name="before-you-open-a-support-ticket"></a>Antes de abrir um tíquete de suporte
 Caso esses procedimentos de solução de problemas não resolvam o problema, há informações que o Suporte da Microsoft pode solicitar, como logs de caixa de correio do OWA ou logs do Exchange Connector.
 
-### Coletando logs de caixa de correio do OWA
-<a id="collecting-owa-mailbox-logs" class="xliff"></a>
+### <a name="collecting-owa-mailbox-logs"></a>Coletando logs de caixa de correio do OWA
 
 1. Faça logon por meio do OWA e escolha o símbolo de configurações (engrenagem) ao lado de seu nome no canto superior direito.
 2. Escolha **Opções**
@@ -127,18 +114,15 @@ Caso esses procedimentos de solução de problemas não resolvam o problema, há
 8. Aguarde por 1 a 2 minutos e volte para a lista telefônica no OWA. Verifique se o seu telefone está selecionado na lista e, no menu superior, escolha **Recuperar Log**.
 9. Você deve ter recebido um email de si mesmo com um anexo. Quando você abrir um tíquete de suporte, forneça o conteúdo do email ao Suporte da Microsoft.
 
-### Logs do Exchange Connector
-<a id="exchange-connector-logs" class="xliff"></a>
+### <a name="exchange-connector-logs"></a>Logs do Exchange Connector
 
-#### Informações gerais sobre logs
-<a id="general-log-information" class="xliff"></a>
+#### <a name="general-log-information"></a>Informações gerais sobre logs
 Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Essa ferramenta requer que você baixe o SDK do Windows Server.
 
 >[!NOTE]
 >Os logs estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os logs estão contidos em uma série de 30 arquivos de log que começa com *Connector0.log* e para em *Connector29.log*. Os logs se sobrepõem uns aos outros após 10 MB de dados serem acumulados em um log. Depois de chegarem a Connector29, os logs recomeçam em Connector0, substituindo os arquivos de log anteriores.
 
-#### Localização de logs de sincronização
-<a id="locating-sync-logs" class="xliff"></a>
+#### <a name="locating-sync-logs"></a>Localização de logs de sincronização
 
 -    Localize uma sincronização completa nos logs pesquisando **full sync**. O início de uma sincronização completa será marcado por este texto:
 
@@ -150,12 +134,10 @@ Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Ras
 
 -   Localize uma sincronização rápida (delta) nos logs pesquisando **quick sync**.
 
-##### Exceções no comando Get next
-<a id="exceptions-in-get-next-command" class="xliff"></a>
+##### <a name="exceptions-in-get-next-command"></a>Exceções no comando Get next
 Verifique os logs do Exchange Connector quanto a exceções no comando **Get next** e forneça-as ao Suporte da Microsoft.
 
-#### Log detalhado
-<a id="verbose-logging" class="xliff"></a>
+#### <a name="verbose-logging"></a>Log detalhado
 
 Para habilitar o log detalhado:
 
@@ -168,6 +150,5 @@ Para habilitar o log detalhado:
 
 
 
-### Próximas etapas
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>Próximas etapas
 Se essas informações para solução de problemas não ajudarem, entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune).
