@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Como usar as políticas de configuração de aplicativo do Microsoft Intune para o iOS
 
@@ -37,7 +37,7 @@ Use políticas de configuração de aplicativo no Microsoft Intune para fornecer
 
 Quando os usuários inserem essas configurações incorretamente, isso pode aumentar a carga do suporte técnico e reduzir a adoção de novos aplicativos.
 
-As políticas de configuração de aplicativo podem ajudar a eliminar esses problemas, permitindo que você atribua essas configurações para os usuários em uma política antes que eles executem o aplicativo. As configurações então são fornecidas automaticamente e os usuários não precisam executar nenhuma ação.
+As políticas de configuração de aplicativo podem ajudar a eliminar esses problemas, permitindo que você atribua essas configurações para os usuários em uma política antes que eles executem o aplicativo. As configurações então são fornecidas automaticamente e os usuários não precisam executar nenhuma ação. Os aplicativos devem ter sido escritos para dar suporte ao uso de configurações de aplicativo. Consulte o fornecedor do aplicativo para obter mais informações.
 
 Você não atribui essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e atribui o aplicativo. As configurações de política serão usadas sempre que o aplicativo verificá-las, normalmente na primeira vez em que é executado.
 
@@ -57,8 +57,8 @@ Você não atribui essas políticas diretamente para usuários e dispositivos. E
 5.  Na folha da lista de políticas, escolha **Adicionar**.
 6.  Na folha **Adicionar Política de Configuração**, forneça um **Nome** e uma **Descrição** opcional para a política de configuração de aplicativo.
 7.  Para o **Tipo de Registro do Dispositivo**, escolha uma das seguintes opções:
-    - **Registrado com o Intune** – Para aplicativos que integraram o SDK do aplicativo do Intune e são gerenciados pelo Microsoft Intune.
-    - **Não registrado com o Intune** – Para aplicativos que integraram o SDK do aplicativo do Intune e não são gerenciados pelo Microsoft Intune ou são gerenciados por outra solução.
+    - **Registrado com o Intune** – para aplicativos que são gerenciados pelo Intune.
+    - **Não registrado com o Intune** – para aplicativos que não são gerenciados pelo Intune ou são gerenciados por outra solução.
 8.  Para **Plataforma**, escolha **iOS** (apenas para dispositivos registrados com o Microsoft Intune)
 9.  Escolha **Aplicativo associado** e, na folha **Aplicativo associado**, escolha o aplicativo gerenciado para o qual você deseja aplicar a configuração.
 10. Na folha **Adicionar Política de Configuração**, escolha **Definições de configuração**

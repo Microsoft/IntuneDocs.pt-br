@@ -5,7 +5,7 @@ keywords: "o que é o Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>O que é o Intune?
 
@@ -37,7 +37,7 @@ Juntos, o Office 365 e o EMS possibilitam que sua força de trabalho seja produt
 ## <a name="how-does-intune-work"></a>Como o Intune funciona?
 O Intune fornece MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel). Os recursos de MDM e MAM do Intune, por sua vez, contribuem para os cenários de conformidade e proteção de dados do pacote EMS.  
 
-A forma como você usará os recursos de MDM/MAM do Intune e a proteção de dados do EMS depende do [problema de negócios que está tentando resolver](#common-business-problems-that-intune-helps-solve). Por exemplo:
+A forma como você usa os recursos de MDM/MAM do Intune e a proteção de dados do EMS depende do [problema de negócios que está tentando resolver](#common-business-problems-that-intune-helps-solve). Por exemplo:
 * Você usará o MDM intensamente se estiver criando um pool de dispositivos de uso único para serem compartilhados por funcionários em turnos em uma loja de varejo.
 * Você aproveitará o MAM e a proteção de dados se permitir que sua força de trabalho use seus dispositivos pessoais para acessar dados corporativos (BYOD).  
 * Se for emitir telefones corporativos para funcionários que trabalham com informações, você usará intensamente todas as tecnologias.
@@ -72,10 +72,10 @@ Quando usa o Intune com outros serviços no EMS, você pode fornecer à sua orga
 
 * [Logon único](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Autenticação multifator](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Acesso condicional do aplicativo – permita o acesso se o aplicativo móvel contiver dados corporativos](app-based-conditional-access-intune.md) ([console Clássico](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [Isolar dados corporativos de dados pessoais dentro do mesmo aplicativo](app-protection-policy.md) ([console Clássico](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Política de proteção de aplicativo (PIN, criptografia, salvar como, área de transferência, etc.)](app-protection-policies.md) ([console Clássico](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Apagamento de dados corporativos de um aplicativo móvel](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [Acesso condicional do aplicativo – permitir acesso se o aplicativo móvel contiver dados corporativos](app-based-conditional-access-intune.md)
+* [Isolar dados corporativos de dados pessoais dentro do mesmo aplicativo](app-protection-policy.md)
+* [Política de proteção de aplicativo (PIN, criptografia, salvar como, área de transferência etc.)](app-protection-policies.md)
+* [Apagamento de dados corporativos de um aplicativo móvel](apps-selective-wipe.md)
 * [Suporte do Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Imagem que mostra os níveis de segurança de dados do gerenciamento de aplicativo](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ A lista a seguir de problemas de negócios leva a informações mais detalhadas 
 * [Emitir tablets compartilhados de uso limitado para seus funcionários](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>Próximas etapas
-* Leia mais sobre algumas das [maneiras comuns de usar o Intune](common-scenarios.md) ([console Clássico](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](free-trial-sign-up.md) ([console Clássico](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Aprofunde-se nas [funcionalidades e nos requisitos técnicos](supported-devices-browsers.md) ([console Clássico](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) do Intune.
+* Leia sobre algumas das [formas comuns para usar o Intune](common-scenarios.md).
+* Familiarize-se com o produto [com uma avaliação de 30 dias do Intune](free-trial-sign-up.md).
+* Aprofunde-se nas [funcionalidades e requisitos técnicos](supported-devices-browsers.md) do Intune.

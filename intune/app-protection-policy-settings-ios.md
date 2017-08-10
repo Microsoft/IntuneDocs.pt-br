@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: f9274daf30a89f75c5c664a17a5f890540e9f562
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -69,7 +69,7 @@ Há algumas isenções de aplicativos e serviços de plataforma em que a políti
 | **Exigir credenciais corporativas para acesso** | Escolha **Sim** para exigir que o usuário se conecte com sua conta corporativa ou de estudante em vez de inserir um PIN para acesso ao aplicativo. Se você definir como **Sim**, ele substituirá os requisitos de PIN ou da ID de Toque.  | Não |
 | **Impedir que aplicativos gerenciados sejam executados em dispositivos com jailbreak ou root** |  Escolha **Sim** para impedir que esse aplicativo seja executado em dispositivos com jailbreak ou root. O usuário continuará podendo usar esse aplicativo para tarefas pessoais, mas precisará usar um dispositivo diferente para acessar dados corporativos ou de estudante nesse aplicativo. | Sim |
 | **Verificar novamente os requisitos de acesso após (minutos)** | Defina as seguintes configurações: <ul><li>**Tempo limite**: esse é o número de minutos antes que os requisitos de acesso (definidos anteriormente na política) sejam verificados novamente. Por exemplo, um administrador ativa o PIN na política, um usuário abre um aplicativo MAM e deve inserir um pin. Ao usar essa configuração, o usuário não precisa inserir um PIN em qualquer aplicativo MAM por mais **30 minutos** (valor padrão).</li><li>**Período de carência offline**: esse é o número de minutos em que os aplicativos MAM podem ser executados offline. Especifique o período (em minutos) antes que os requisitos de acesso do aplicativo sejam verificados novamente. Valor padrão = **720** minutos (12 horas). Após esse período expirar, o aplicativo exigirá a autenticação do usuário para o AAD para que o aplicativo possa continuar a ser executado.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
-| **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo fará um apagamento seletivo. Essa limpeza seletiva é a mesma limpeza que a que pode ser iniciada pelo administrador no fluxo de trabalho de apagamento MAM. <br><br> | 90 dias |
+| **Intervalo offline antes que os dados do aplicativo sejam apagados (dias)** | Após este número de dias (definido pelo administrador) de execução offline, o aplicativo exigirá que o usuário se conecte à rede e realize a autenticação novamente. Se o usuário for autenticado com êxito, ele poderá continuar a acessar seus dados e o intervalo offline será redefinido.  Se a autenticação do usuário falhar, o aplicativo realizará um apagamento seletivo dos dados e da conta do usuário.  Consulte [Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obter mais informações sobre quais dados são removidos com um apagamento seletivo. <br><br> | 90 dias |
 | **Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado** | Escolha **Sim** para desabilitar o PIN do aplicativo quando um bloqueio de dispositivo for detectado em um dispositivo registrado. | Não |
 | **Exigir o sistema operacional iOS mínimo** | Escolha **Sim** para exigir um sistema operacional iOS mínimo para usar este aplicativo. O usuário não poderá acessar se a versão do iOS no dispositivo não atender ao requisito. Esta política dá suporte a um único ponto decimal, por exemplo, iOS 10.3. | Não |
 | **Exigir o sistema operacional iOS mínimo (Somente aviso)** | Escolha **Sim** para exigir um sistema operacional iOS mínimo para usar este aplicativo. O usuário verá uma notificação se a versão do iOS no dispositivo não atender ao requisito. Essa notificação pode ser descartada. Esta política dá suporte a um único ponto decimal, por exemplo, iOS 10.3. | Não |

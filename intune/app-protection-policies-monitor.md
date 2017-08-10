@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Há três locais diferentes para monitorar o status de conformidade:
 
 ![Bloco de Resumo da folha de gerenciamento de aplicativos móveis do Intune](./media/app-protection-user-status-summary.png)
 
--   **Usuários**: o número total de usuários da sua empresa que usam os aplicativos que estão associados à política.
+-   **Usuários**: o número total de usuários da sua empresa que usam um aplicativo associado à política em um contexto de trabalho.
 
--   **GERENCIADO PELA POLÍTICA**: este é o número de usuários que usaram pelo menos um dos aplicativos no contexto de trabalho.
+-   **GERENCIADO POR POLÍTICA**: o número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho.
 
--   **SEM POLÍTICA**: o número de usuários que estão usando os aplicativos associados à política, mas que não são afetados pela política. Você pode considerar adicionar esses usuários à política.
+-   **Nenhuma política**: o número de usuários que estão usando um aplicativo que não é afetado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
+    > [!NOTE]
+    > Se você tiver várias políticas por plataforma, um usuário será considerado gerenciado por política quando ele tiver pelo menos uma política atribuída a ele.
 
 - **Usuários sinalizados**: o número de usuários que estão tendo problemas. Atualmente, apenas usuários com dispositivos com jailbreak são relatados em **Usuários sinalizados**.
 

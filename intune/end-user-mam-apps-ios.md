@@ -14,21 +14,19 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e66042e5198b76ec484fe0218127acb653394cce
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 9e1b11f9bf644b2e92dad0d0281bf11febae622b
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/03/2017
 ---
-# O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
-<a id="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies" class="xliff"></a>
+# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
  Este tópico descreve a experiência do usuário ao usar aplicativos com políticas de proteção de aplicativo aplicadas. As políticas do aplicativo são aplicadas somente quando aplicativos são usados no contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no OneDrive para Empresas.
 
-##  Acessar aplicativos
-<a id="access-apps" class="xliff"></a>
+##  <a name="access-apps"></a>Acessar aplicativos
 
 Se o dispositivo **não estiver registrado no Intune**, o usuário será solicitado a reiniciar o aplicativo ao usá-lo pela primeira vez. Uma reinicialização é necessária para que essas políticas de proteção de aplicativo possam ser aplicadas ao aplicativo.
 
@@ -39,19 +37,17 @@ Se o dispositivo **não estiver registrado no Intune**, o usuário será solicit
 
 Em dispositivos **registrados para gerenciamento no Intune**, o usuário verá uma mensagem informando que seu aplicativo agora é gerenciado.
 
-##  Usar aplicativos com suporte a várias identidades
-<a id="use-apps-with-multi-identity-support" class="xliff"></a>
+##  <a name="use-apps-with-multi-identity-support"></a>Usar aplicativos com suporte a várias identidades
 
 Aplicativos que dão suporte a várias identidades permitem usar contas diferentes (pessoal e corporativa) para acessar os mesmos aplicativos quando políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho.  
 
 Por exemplo, o usuário receberá uma solicitação para fornecer o PIN ao acessar dados de trabalho. No **aplicativo Outlook**, o usuário será solicitado a fornecer um PIN ao iniciar o aplicativo. No **aplicativo OneDrive**, o usuário será solicitado a fornecer um PIN ao digitar a conta corporativa.  No Microsoft **Word**, **PowerPoint** e **Excel**, o usuário será solicitado a fornecer um PIN ao acessar os documentos armazenados no local do OneDrive for Business da empresa.
 
-- Saiba mais sobre os aplicativos que oferecem suporte a [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
+- Saiba mais sobre os aplicativos que dão suporte à [proteção de aplicativo e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
 As políticas de proteção do aplicativo são aplicadas apenas em contextos corporativos. Desse modo, o aplicativo pode se comportar de forma diferente, de acordo com o contexto – de trabalho ou pessoal.
 
-##  Gerenciar contas de usuário no dispositivo
-<a id="manage-user-accounts-on-the-device" class="xliff"></a>
+##  <a name="manage-user-accounts-on-the-device"></a>Gerenciar contas de usuário no dispositivo
 
 O Intune só dá suporte à implantação de políticas de proteção do aplicativo a uma conta de usuário por dispositivo.
 
@@ -67,11 +63,9 @@ Leia o cenário de exemplo a seguir para entender melhor como várias contas de 
 
 O usuário A trabalha para duas empresas – **Empresa X** e **Empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de proteção de aplicativo. A **Empresa X** implanta políticas de proteção de aplicativo **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção do aplicativo, mas não a conta associada à Empresa Y. Se você quiser que a conta de usuário associada à Empresa Y seja gerenciada pelas políticas de proteção do aplicativo, será necessário remover a conta de usuário associada à Empresa X.
 
-### Adicionar uma segunda conta
-<a id="add-a-second-account" class="xliff"></a>
+### <a name="add-a-second-account"></a>Adicionar uma segunda conta
 
 Se estiver usando um dispositivo iOS, ao tentar adicionar uma segunda conta corporativa ao mesmo dispositivo, você poderá ver uma mensagem de bloqueio. As contas serão exibidas e você poderá escolher a conta que deseja remover.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](end-user-mam-apps-android.md)

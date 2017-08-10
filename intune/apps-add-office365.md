@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
-Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus 2016 aos dispositivos gerenciados que executam o Windows 10. Além disso, você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar aparecerão como um aplicativo na lista de aplicativos no console do Intune.
+Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus 2016 aos dispositivos gerenciados que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar aparecerão como um aplicativo na lista de aplicativos no console do Intune.
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -34,11 +34,8 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 Pro
 - Os dispositivos nos quais você implanta esses aplicativos deverão estar em execução no Windows 10 Creators Update ou posterior.
 - O Intune somente dá suporte a aplicativos do Office do pacote do Office 365 ProPlus 2016.
 - Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, os usuários finais poderão perder dados de arquivos não salvos.
-- Caso instale o Office em um dispositivo que já tenha o Office instalado, leia as seguintes considerações:
-    - Independentemente da versão do Office que você usa, não é possível instalar os produtos do Office de 32 bits e de 64 bits no mesmo dispositivo.
-    - Você não pode instalar a mesma versão do Clique para Executar e versões do MSI do Office no mesmo dispositivo, mas pode instalar versões principais diferentes.
-    - Se você já tiver uma versão anterior do Office instalada com o Clique para Executar, será preciso remover todos os aplicativos que você deseja substituir pela versão mais recente. Por exemplo, se você tiver uma versão mais antiga do Word no dispositivo e desejar atribuir a versão mais recente, será preciso remover primeiro a versão antiga.
-    - Se um dispositivo já tiver o Office 365 instalado, atribuir o pacote do Office 365 ProPlus 2016 ao dispositivo poderá significar que você precisará alterar o nível da assinatura do Office.
+- Não há suporte para esse método de instalação em dispositivos do Windows 10S.
+- Se você atribuir esse tipo de aplicativo como Disponível e tiver como destino vários usuários com as diferentes atribuições, eles verão apenas a atribuição direcionada mais recentemente.
 
 
 ## <a name="get-started"></a>Introdução
