@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,13 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
-# Como atribuir aplicativos a grupos com o Microsoft Intune
-<a id="how-to-assign-apps-to-groups-with-microsoft-intune" class="xliff"></a>
+# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicativos a grupos com o Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -45,8 +44,7 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
 > [!NOTE]
 > No momento, é possível atribuir aplicativos iOS e Android (tanto linha de negócios quanto comprados na loja) a dispositivos que não são registrados com o Intune.
 
-## Como atribuir um aplicativo
-<a id="how-to-assign-an-app" class="xliff"></a>
+## <a name="how-to-assign-an-app"></a>Como atribuir um aplicativo
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -61,12 +59,12 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
     - **Obrigatório** – O aplicativo é instalado nos dispositivos dos grupos selecionados.
     - **Desinstalar** – O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
     - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune.
+6. **Apenas para aplicativos iOS** – se você tiver criado perfil da VPN do iOS que contém configurações de VPN por aplicativo, você poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](vpn-settings-ios.md).
 6. Quando terminar, escolha **Salvar**.
 
 Agora o aplicativo foi atribuído ao grupo selecionado.
 
-## Como são resolvidos os conflitos entre as intenções de aplicativo
-<a id="how-conflicts-between-app-intents-are-resolved" class="xliff"></a>
+## <a name="how-conflicts-between-app-intents-are-resolved"></a>Como são resolvidos os conflitos entre as intenções de aplicativo
 
 Às vezes, o mesmo aplicativo é atribuído a vários grupos, mas com intenções diferentes. Nesses casos, use essa tabela para entender a intenção resultante.
 
@@ -103,12 +101,11 @@ Agora o aplicativo foi atribuído ao grupo selecionado.
 |Disponível para o usuário sem registro|Disponível para o usuário|Disponível|
 |Disponível para o usuário sem registro|Necessário para o dispositivo|Necessário e Disponível sem registro|
 |Disponível para o usuário sem registro|Não disponível para o dispositivo|Disponível sem registro|
-|Disponível para o usuário sem registro|Desinstalação do dispositivo|Desinstalação e Disponível sem registro.<br>Se o usuário não instalou o aplicativo do portal da empresa, a desinstalação será cumprida.<br>Se o usuário instalar o aplicativo do portal da empresa, a instalação terá prioridade sobre a desinstalação.|
+|Disponível para o usuário sem registro|Desinstalação do dispositivo|Desinstalação e Disponível sem registro.<br>Se o usuário não instalou o aplicativo do portal da empresa, a desinstalação é cumprida.<br>Se o usuário instalar o aplicativo do portal da empresa, a instalação terá prioridade sobre a desinstalação.|
 
 >[!NOTE]
 >Apenas para aplicativos da loja do iOS gerenciados, quando você os adiciona ao Intune e os atribui como Necessários, eles são criados automaticamente com as intenções Necessária e Disponível.
 
-## Próximas etapas
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Próximas etapas
 
 Consulte [Como monitorar aplicativos](apps-monitor.md) para obter informações para ajudá-lo a monitorar as atribuições de aplicativo.

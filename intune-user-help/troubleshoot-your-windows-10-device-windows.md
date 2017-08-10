@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solucionar problemas de registro de dispositivo do Windows 10
 Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de área de trabalho do Windows 10 no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não consegue acessar seu email ou arquivos corporativos ou de estudante, tente estas etapas de solução de problemas.
@@ -35,7 +35,7 @@ Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de 
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>As etapas de solução de problemas a serem seguidas se você vir Acessar conta corporativa ou de estudante
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Etapas de solução de problemas a serem seguidas se você vir “Acessar conta corporativa ou de estudante”
 
 1.  Se você seguiu as etapas acima, mas ainda não consegue acessar seus emails e arquivos corporativos ou de estudante, vá para **Acessar conta corporativa ou de estudante**.
 
@@ -47,12 +47,16 @@ Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de 
 
     - Se você não vir as informações de conexão mostradas acima ou se as vir, mas não algumas das opções estiverem ausentes, toque em **Conectar** e entre com suas credenciais corporativas ou de estudante. Agora você deve estar conectado.
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Etapas de solução de problemas a serem seguidas se você vir Sua conta
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Etapas de solução de problemas a serem seguidas se você vir “Sua conta”
 
 Se tiver seguido as etapas acima, mas não conseguir acessar seu email corporativo ou de estudante, arquivos e outros dados, volte para **Contas** e toque em **Acesso corporativo**.
 
 - Se você vir seu trabalho ou conta da escola, parabéns. Você está conectado.
 
 - Se você não ver a sua conta do trabalho ou de estudante, toque em **Conectar** e entre com as suas credenciais corporativas ou de estudante.
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Etapas de solução de problemas a serem seguidas se você vir “Configurar uma conta corporativa ou de estudante”
+
+Se você vir uma mensagem que diz __Não foi possível descobrir automaticamente um ponto de extremidade de gerenciamento correspondente ao nome de usuário inserido. Verifique seu nome de usuário e tente novamente. Se você souber a URL do ponto de extremidade de gerenciamento, insira-o.__, deverá tentar inserir seu nome de usuário e senha novamente. Se ainda não funcionar, verifique com seu administrador de TI para obter o site que você precisa fornecer na caixa de texto **Ponto de extremidade de gerenciamento**. Este é um site que provavelmente é semelhante a **www.yourcompany.onmicrosoft.com**. 
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).

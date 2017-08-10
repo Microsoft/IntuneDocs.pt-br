@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Implementar seu plano do Intune
 
@@ -32,7 +32,7 @@ Os principais requisitos independentes do Intune são:
 
 -   EMS (Enterprise Mobility + Security)/assinatura do Intune
 
--   Assinatura do Office 365 (para aplicativos do Office e aplicativos gerenciados por política de MAM)
+-   Assinatura do Office 365 (para aplicativos do Office e aplicativos gerenciados por política de proteção do aplicativo)
 
 -   Certificado Apple APNs (para habilitar o gerenciamento de plataforma de dispositivo iOS)
 
@@ -109,7 +109,7 @@ O Intune dá suporte a perfis de Email, de Wi-Fi e de VPN. Adicione esses perfis
 
 ### <a name="task-10-add-and-deploy-apps"></a>Tarefa 10: Adicionar e implantar aplicativos
 
-O Intune dá suporte à implantação de aplicativos Web, LOB e de repositório público. Você também pode gerenciar aplicativos que integraram o SDK do Intune, associando-os a políticas de MAM. Adicione aplicativos conforme apropriado e implante-os em grupos de destino de acordo com seus requisitos e casos de uso de implantação do Intune.
+O Intune dá suporte à implantação de aplicativos Web, LOB e de repositório público. Você também pode gerenciar aplicativos que integraram o SDK do Intune, associando-os a políticas de proteção do aplicativo. Adicione aplicativos conforme apropriado e implante-os em grupos de destino de acordo com seus requisitos e casos de uso de implantação do Intune.
 
 -   Saiba mais sobre [adição e implantação de aplicativos](app-management.md).
 

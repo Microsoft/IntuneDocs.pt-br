@@ -1,37 +1,35 @@
 ---
 title: "Glossário do Intune"
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: Saiba mais sobre a terminologia usada no Microsoft Intune
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Glossário do Microsoft Intune
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |Atribuição de aplicativo|Permite aos usuários [encontrar, baixar e instalar](/intune/app-management) os aplicativos de que precisam. Isso era conhecido como *implantação de aplicativo*.|
-|Perfil de configuração do aplicativo|Define um aplicativo [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) com configurações específicas antes que ele seja executado.|
+|Perfil de configuração do aplicativo <br/><br/>Política de configuração de aplicativo|Disponível para aplicativos móveis com configurações específicas de fornecedor. Define um aplicativo [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) com configurações específicas antes que ele seja executado.|
 |Monitoramento de aplicativo|Permite [examinar o status e as atividades recentes](/intune/apps-monitor) relacionados à atribuição de aplicativo.|
 |Tarefa de remoção de dados da proteção de aplicativo|[Remove os dados do aplicativo](/intune/app-protection-policies) do dispositivo do usuário.|
-|Política de proteção de aplicativo|Garante que os aplicativos do usuário estão em conformidade com as [políticas de proteção de dados da empresa](/intune/app-protection-policies).|
+|Política de proteção de aplicativo|Disponível para aplicativos móveis que se integram às tecnologias EMS (Enterprise Mobility + Security). Garante que os aplicativos do usuário estão em conformidade com as [políticas de proteção de dados da empresa](/intune/app-protection-policies).|
 |SDK do Aplicativo|O [SDK do Aplicativo do Microsoft Intune](/intune/app-sdk) possibilita que você adicione funcionalidade a seus aplicativos internamente escritos, o que permite que sejam gerenciados pelas políticas de Proteção de Aplicativo do Intune.|
 |Ação de desinstalação de aplicativo|Permite [desinstalar aplicativos](/intune/apps-deploy) dos dispositivos do usuário.|
 |Ferramenta de Encapsulamento de Aplicativo|Um [aplicativo de linha de comando](/intune/apps-prepare-mobile-application-management) que cria um wrapper em torno de um aplicativo de linha de negócios, permitindo que ele seja gerenciado por uma política de Proteção de Aplicativo do Intune.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|Um [aplicativo de navegação na Web](/intune/app-configuration-managed-browser) que você pode atribuir em sua organização usando o Intune. Uma política de navegador gerenciado configura uma lista de permitidos ou uma lista de contatos bloqueados que restringe os sites que podem ser visitados pelos usuários do navegador gerenciado.|
 |Autoridade MDM|A [autoridade de MDM](/intune/mdm-authority-set) define o serviço de gerenciamento que tem permissão para gerenciar um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune e o Configuration Manager com Intune.|
-|Políticas de configuração de aplicativo móvel|Uma política do [iOS](/intune/app-configuration-policies-use-ios) ou do [Android](/intune/app-configuration-policies-use-android) usada para fornecer configurações para aplicativos em conformidade quando executados, por exemplo, um nome de empresa ou endereço do servidor.|
+|Políticas de configuração de aplicativo móvel|Disponível para aplicativos móveis com configurações específicas de fornecedor. Por exemplo, uma política do [iOS](/intune/app-configuration-policies-use-ios) ou do [Android](/intune/app-configuration-policies-use-android) usada para fornecer configurações para aplicativos em conformidade quando executados, por exemplo, um nome de empresa ou endereço do servidor.|
 |Política de provisionamento de aplicativo móvel|Uma política do iOS que ajuda você a garantir que os [perfis de provisionamento](/intune/app-provisioning-profile-ios) para os aplicativos iOS atribuídos não expiram.|
 |Gerenciamento de aplicativos móveis|[Gerenciamento de aplicativo móvel (MAM)](/intune/app-lifecycle) permite publicar, enviar por push, configurar, proteger, monitorar e atualizar aplicativos móveis para usuários.
 |Gerenciamento de dispositivos móveis|O [MDM (Gerenciamento de Dispositivo Móvel)](/intune/device-lifecycle) permite registrar dispositivos no Intune, de forma que você possa provisionar, configurar, monitorar e gerenciar esses dispositivos.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Apagamento seletivo|O [apagamento seletivo](/intune/device-company-data-remove) remove somente os dados da empresa, incluindo dados de gerenciamento de aplicativo móvel (MAM), quando aplicável, configurações e perfis de email do dispositivo. O apagamento seletivo deixa os dados pessoais do usuário no dispositivo.|
+|Apagamento seletivo|O [apagamento seletivo](/intune/device-company-data-remove) remove somente os dados da empresa protegidos pela política de proteção de aplicativo, incluindo perfis de email e configurações de um dispositivo. O apagamento seletivo deixa os dados pessoais do usuário no dispositivo.|
 |Sideload|A ação de instalação de um aplicativo de linha de negócios sem acessá-los em uma loja de aplicativos.|
 |Assinatura|O contrato em que você toma parte e que lhe fornece acesso como locatário do Intune.|
 

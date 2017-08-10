@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7da261fcb59b8ac90ea412155d093dd09bf41d46
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Como configurar as atualizações de edição do Windows 10 no Microsoft Intune
 
@@ -41,10 +41,10 @@ Há suporte para os seguintes caminhos de atualização:
 
 
 ## <a name="before-you-start"></a>Antes de começar
-Antes de começar a atualizar os dispositivos para a versão mais recente, será necessário o seguinte:
+Antes de começar a atualizar os dispositivos para a versão mais recente, você precisa de:
 
-- Uma chave do produto (Product Key) que é válida para instalar a nova versão do Windows em todos os dispositivos de destino com a política (para edições do Windows 10 Desktop). Você pode usar chaves MAK (Chaves de Ativação Múltipla) ou KMS (Servidor de Gerenciamento de Chaves). ou Um arquivo de licença da Microsoft que contém as informações de licenciamento para instalar a nova versão do Windows em todos os dispositivos de destino da política (para as edições Windows 10 Mobile e Windows 10 Holographic).
-- Os dispositivos Windows 10 de destino devem ser registrados no Microsoft Intune. Você não pode usar a política de atualização de edição com computadores que executam o software cliente do Intune PC.
+- Uma chave do produto (Product Key) que é válida para instalar a nova versão do Windows em todos os dispositivos de destino com a política (para edições do Windows 10 Desktop). Você pode usar chaves MAK (Chaves de Ativação Múltipla) ou KMS (Servidor de Gerenciamento de Chaves) ou Um arquivo de licença da Microsoft que contém as informações de licenciamento para instalar a nova versão do Windows em todos os dispositivos de destino da política (para as edições Windows 10 Mobile e Windows 10 Holographic).
+- Os dispositivos Windows 10 aos quais você atribuir a política devem ser registrados no Microsoft Intune. Você não pode usar a política de atualização de edição com computadores que executam o software cliente do Intune PC.
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Criar um perfil de dispositivo que contém as configurações de restrição de dispositivo
 
@@ -56,13 +56,19 @@ Antes de começar a atualizar os dispositivos para a versão mais recente, será
 4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de atualização de edição.
 5. Na lista suspensa **Plataforma**, escolha **Windows 10 e posterior**.
 6. Na lista suspensa **Tipo de perfil**, escolha **Atualização de edição**.
-7. Na folha **Atualização de edição**, configure o seguinte:
+7. Na folha **Atualização de Edição**, configure o seguinte:
     - **Edição de partida da atualização** – Na lista suspensa, selecione a versão do Windows 10 que você deseja atualizar nos dispositivos.
     - **Edição de destino da atualização** – Na lista suspensa, selecione a versão do Windows 10 Desktop, Windows 10 Holographic ou Windows 10 Mobile para a qual você deseja atualizar os dispositivos.
     - **Chave do Produto (Product Key)** – Especifique a chave do produto (Product Key) que você obteve da Microsoft, a qual pode ser usada para atualizar todos os dispositivos de destino do Windows 10 Desktop.<br>Depois de criar uma política que contém uma chave do produto (Product Key), não será possível editar essa chave mais tarde. Isso ocorre porque a chave é obscurecida por motivos de segurança. Para alterar a chave do produto (Product Key), você deve inserir a chave inteira novamente.
     - **Arquivo de Licença** – Escolha **Navegar** para selecionar o arquivo de licença que você obteve da Microsoft com as informações de licença para a edição do Windows Holographic ou Windows 10 Mobile para a qual você deseja atualizar os dispositivos de destino.
 8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
 
-O perfil será criado e aparecerá na folha da lista de perfis.
+O perfil é criado e exibido na folha da lista de perfis.
+
+## <a name="next-steps"></a>Próximas etapas
+
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
+
+>[!NOTE]
+>Se posteriormente você remover a atribuição de política, a versão do Windows no dispositivo não será revertida e continuará a funcionar normalmente.
 

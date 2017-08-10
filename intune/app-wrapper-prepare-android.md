@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para o gerenciamento de aplicativos móveis com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -50,16 +50,7 @@ Antes de executar a ferramenta, consulte [Considerações de segurança para exe
     > [!NOTE]
     > Em alguns casos, a versão de 32 bits do Java pode resultar em problemas de memória. É recomendável instalar a versão de 64 bits.
 
-- O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Use a ferramenta de chave do Java para gerar as credenciais necessárias para assinar o aplicativo de saída encapsulado. Por exemplo, o comando a seguir usa o executável Java keytool.exe para gerar chaves que podem ser usadas pela Ferramenta de Disposição do Dispositivo para assinar o aplicativo de saída encapsulado.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    Este exemplo gera um par de chaves (uma chave pública e uma chave privada associada de 2.048 bits) usando o algoritmo RSA. Em seguida, ele encapsula a chave pública em um certificado autoassinado x.509 v3, que é armazenado como uma cadeia de certificados de elemento único. Esta cadeia de certificados e a chave privada são armazenadas em uma nova entrada do repositório de chaves chamada "mykeystorefile" e identificadas pelo alias "mykeyalias". A entrada no repositório de chaves é válida por 50.000 dias.
-
-    O comando solicitará que você forneça as senhas do repositório de chaves e da chave. Use senhas seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
-
-    Para obter a documentação detalhada, leia mais sobre o Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) e Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) no site de documentação do Oracle.
+- O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Para a **reutilização** de certificados existentes e orientações do certificado de autenticação geral, consulte [Reutilizando certificados de autenticação e encapsulando aplicativos](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). O executável Java keytool.exe é usado para gerar **novas** credenciais necessárias para assinar o aplicativo de saída encapsulado. Todas as senhas definidas devem ser seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
 
@@ -95,7 +86,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquiv
 |**-KeyStorePassword**&lt;SecureString&gt;|Senha usada para descriptografar o armazenamento de chave. O Android requer que todos os pacotes de aplicativos (.apk) sejam assinados. Use o Java keytool para gerar o KeyStorePassword. Leia mais sobre o Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) aqui.| |
 |**-KeyAlias**&lt;String&gt;|Nome da chave a ser usada para assinatura.| |
 |**-KeyPassword**&lt;SecureString&gt;|Senha usada para descriptografar a chave privada que será usada para a assinatura.| |
-|**-SigAlg**&lt;SecureString&gt;| (Opcional) Nome do algoritmo de assinatura a ser usado para assinatura. O algoritmo deve ser compatível com a chave privada.|Exemplos: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Opcional) Nome do algoritmo de assinatura a ser usado para assinatura. O algoritmo deve ser compatível com a chave privada.|Exemplos: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Opcional) O comando dá suporte a parâmetros comuns do PowerShell, como verbose, debug etc. |
 
 

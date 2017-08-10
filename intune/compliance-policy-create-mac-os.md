@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>Criar uma política de conformidade do dispositivo para dispositivos macOS (versão prévia) com o Intune
 
@@ -103,6 +103,9 @@ Você tem categorias diferentes com configurações diferentes para escolher ao 
 - **Expiração da senha (dias)**: selecione o número de dias (entre 1 e 250) antes que a senha expire e seja preciso criar uma nova.
 
 - **Número de senhas anteriores para evitar a reutilização**: especifique o número de senhas usadas anteriormente que não podem ser reutilizadas.
+
+    > [!IMPORTANT]
+    > Quando o requisito de senha é alterado em um dispositivo macOS, ele não tem efeito até a próxima vez que o usuário alterar sua senha. Por exemplo, se você definir a restrição de comprimento de senha para oito dígitos e o dispositivo macOS atualmente tiver uma senha de seis dígitos, o dispositivo permanecerá em conformidade até a próxima vez que o usuário atualizar sua senha no dispositivo.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
 

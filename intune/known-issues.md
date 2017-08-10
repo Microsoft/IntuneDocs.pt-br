@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -37,7 +37,7 @@ Caso você deseje solicitar um novo recurso para o Intune, considere enviar um r
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Os grupos criados pelo Intune durante a migração podem afetar a funcionalidade de outros produtos da Microsoft
 
-Ao migrar do Intune clássico para o Azure, você poderá ver um novo grupo chamado **Todos os Usuários – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Esse grupo contém todos os usuários em seu Azure Active Directory, não apenas os usuários licenciados do Intune. Esse uso pode causar problemas com outros produtos da Microsoft, caso você espere que alguns usuários novos ou existentes não sejam membros de nenhum grupo.
+Ao migrar do Intune clássico para o Portal do Azure, você poderá ver um novo grupo chamado **Todos os Usuários –b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Esse grupo contém todos os usuários em seu Azure Active Directory, não apenas os usuários licenciados do Intune. Esse uso pode causar problemas com outros produtos da Microsoft, caso você espere que alguns usuários novos ou existentes não sejam membros de nenhum grupo.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Migração secundária necessária para funcionalidades selecionadas
 
@@ -51,12 +51,12 @@ As contas do Intune criadas antes de janeiro de 2017 devem ser migradas antes qu
 
 Como essas funcionalidades não podem ser gerenciadas nos consoles clássicos do Silverlight e do Azure, a migração:
 - Desabilita-as no console clássico
-- Habilita-as no console do Azure.  
+- Habilita-as no console do Azure  
 
 Se você gerenciar essas funcionalidades do Intune no Portal do Azure agora, lembre-se dos seguintes pontos:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Remove os perfis de Registro de Dispositivo Corporativo no Apple DEP
-O Portal do Azure não dá suporte ao perfil de Registro de Dispositivo Corporativo padrão em dispositivos Apple DEP (Programa de Registro de dispositivos). Essa funcionalidade, disponível no console clássico do Intune no Silverlight, foi descontinuada para impedir a atribuição acidental de perfis. Quando os números de série DEP são sincronizados no Portal do Azure, nenhum perfil de Registro de Dispositivo Corporativo é atribuído. Um perfil de registro deve ser atribuído antes do uso do dispositivo.
+O portal do Azure não dá suporte ao perfil de Registro de Dispositivo Corporativo padrão em dispositivos Apple DEP (Programa de registro de dispositivos). Essa funcionalidade, disponível no console clássico do Intune no Silverlight, foi descontinuada para impedir a atribuição acidental de perfis. Quando os números de série DEP são sincronizados no portal do Azure, nenhum perfil de Registro de Dispositivo Corporativo é atribuído. Um perfil de registro deve ser atribuído antes do uso do dispositivo.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Token de DEP da Apple restaurado com a migração
 
@@ -64,13 +64,12 @@ Se você excluir um token do Programa de registro de dispositivos da Apple no Po
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>As folhas de status das políticas migradas não funcionam
 
-Não é possível exibir informações de status de políticas que foram migradas do portal clássico no portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no portal Clássico.
-Para exibir informações de status das políticas de configuração migradas, recrie-as no portal do Azure.
+Não é possível exibir informações de status de políticas que foram migradas do portal clássico no portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no Portal Clássico. Para exibir informações de status das políticas de configuração migradas, recrie-as no portal do Azure.
 
 ## <a name="apps"></a>Aplicativos
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Aplicativos iOS adquiridos por volume disponíveis somente no idioma padrão do locatário do Intune
-Aplicativos do iOS adquiridos por volume são exibidos e podem ser atribuídos apenas para o mesmo código de país que sua conta do Intune. O Intune somente sincroniza aplicativos da mesma localidade do iTunes do código de país de conta de locatário do Intune. Por exemplo, se você comprar um aplicativo que está disponível apenas na loja dos EUA, mas sua conta do Intune é da Alemanha, o Intune não mostrará o aplicativo.
+Aplicativos do iOS adquiridos por volume são exibidos e podem ser atribuídos apenas para o mesmo código de país que sua conta do Intune. O Intune somente sincroniza aplicativos da mesma localidade do iTunes do código de país de conta de locatário do Intune. Por exemplo, se você comprar um aplicativo que está disponível apenas na loja dos EUA, mas sua conta do Intune for da Alemanha, o Intune não mostrará o aplicativo.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Várias cópias do mesmo programa iOS de compra por volume serão carregadas
 Não clique no botão **Carregar** várias vezes para o mesmo token VPP. Isso resultará no carregamento de tokens VPP duplicados e na sincronização do aplicativo diversas vezes para o mesmo token VPP. 
@@ -111,7 +110,7 @@ Para saber mais, veja [O que é a conformidade do dispositivo](device-compliance
 
 ### <a name="ios-app-protection-policies"></a>Políticas de proteção de aplicativo iOS
 
-Você pode definir as [Políticas de proteção de aplicativo para iOS](app-protection-policy-settings-ios.md) disponíveis para usuários em dispositivos gerenciados por meio do MAM sem registro. Devido a um erro temporário, você só pode definir essas políticas para versões do iOS com uma versão de ponto decimal único em vez de vários pontos decimais. Em vez de configurar uma versão mínima do iOS 10.3.1, defina-a como iOS 10.3. Isso será resolvido em uma atualização a ser disponibilizada em breve para o SDK do iOS.
+Você pode definir as [políticas de proteção de aplicativo para iOS](app-protection-policy-settings-ios.md) disponíveis para usuários em dispositivos gerenciados por meio do MAM (gerenciamento de aplicativo móvel) sem registro. Devido a um erro temporário, você só pode definir essas políticas para versões do iOS com uma versão de ponto decimal único em vez de vários pontos decimais. Em vez de configurar uma versão mínima do iOS 10.3.1, defina-a como iOS 10.3. Isso será resolvido em uma atualização a ser disponibilizada em breve para o SDK do iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administração e contas
