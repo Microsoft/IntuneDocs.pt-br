@@ -3,8 +3,8 @@ title: "Configurações de política de proteção de aplicativo Android"
 titleSuffix: Intune on Azure
 description: "Este tópico descreve as configurações de política de proteção de aplicativo para dispositivos Android."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 06/06/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aeb3742f9ea232b5e277b92be40f44c3d2becd96
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a0da2e96e6e80672f666b8bbca160a1fc1515d1c
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo Android
 As configurações de política descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -35,7 +35,7 @@ Há duas categorias de configurações de política: configurações de realoca�
 | **Impedir “Salvar Como”** | Escolha **Sim** para desabilitar o uso da opção Salvar Como nesse aplicativo. Escolha **Não** se quiser permitir o uso de Salvar Como. <p><br>**Selecione em que serviços de armazenamento os dados empresariais podem ser guardados** <br>Os usuários são capazes de salvar os serviços selecionados (OneDrive for Busines, SharePoint e Armazenamento local). Todos os outros serviços serão bloqueados.</p> | Não <br><br> 0 selecionado |
 | **Restringir recortar, copiar e colar com outros aplicativos** | Especifique quando as ações recortar, copiar e colar podem ser usadas com esse aplicativo. Escolha: <ul><li>**Bloqueado**: não permita ações recortar, copiar e colar entre esse aplicativo e outros aplicativos.</li><li>**Aplicativos gerenciados por política**: permita ações recortar, copiar e colar entre esse aplicativo e outros aplicativos gerenciados por política.</li><li>**Aplicativos gerenciados por política com Colar Em**: permita o recorte ou a cópia entre esse aplicativo e outros aplicativos gerenciados por política. Permita que dados de qualquer aplicativo sejam colados nesse aplicativo.</li><li>**Qualquer aplicativo**: sem restrições para recortar, copiar e colar para e desse aplicativo. | Qualquer aplicativo |
 |**Restringir a exibição de conteúdo da Web no Managed Browser** | Escolha **Sim** para impor que os links da Web no aplicativo sejam abertos no aplicativo Managed Browser. <br><br> Para dispositivos não registrados no Intune, os links da Web em aplicativos gerenciados por política podem ser abertos apenas no aplicativo Managed Browser. <br><br> Se estiver usando o Intune para gerenciar seus dispositivos, consulte [Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune](app-configuration-managed-browser.md). | Não |
-| **Criptografar dados do aplicativo** | Escolha **Sim** para habilitar a criptografia de dados corporativos ou de estudante nesse aplicativo. O Intune usa um esquema de criptografia do AES de 128 bits OpenSSL, juntamente com o sistema de Repositório de Chaves do Android, para criptografar os dados do aplicativo com segurança. Os dados são criptografados de forma síncrona durante tarefas de E/S de arquivo. O conteúdo no armazenamento do dispositivo é Always Encrypted. <br><br> O método de criptografia **não** tem certificação FIPS 140-2.  | Sim |
+| **Criptografar dados do aplicativo** | Escolha **Sim** para habilitar a criptografia de dados corporativos ou de estudante nesse aplicativo. O Intune usa um esquema de criptografia do AES de 128 bits OpenSSL, juntamente com o sistema de Repositório de Chaves do Android, para criptografar os dados do aplicativo com segurança. Os dados são criptografados de forma síncrona durante tarefas de E/S de arquivo. O conteúdo no armazenamento do dispositivo sempre é criptografado. <br><br> O método de criptografia **não** tem certificação FIPS 140-2.  | Sim |
 | **Desabilitar a sincronização de contatos** | Escolha **Sim** para impedir que o aplicativo salve dados no aplicativo de Contatos nativo do dispositivo. Se você escolher **Não**, o aplicativo poderá salvar dados no aplicativo de Contatos nativo do dispositivo. <br><br>Ao realizar um apagamento seletivo para remover dados corporativos ou de estudante do aplicativo, os contatos sincronizados diretamente do aplicativo para o aplicativo de Contatos nativo são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso se aplica somente ao aplicativo Microsoft Outlook. | Não |
 | **Desabilitar a impressão** | Escolha **Sim** para impedir que o aplicativo imprima dados corporativos ou de estudante. | Não |
 
