@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,16 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 3f08f110163159c1219492539107cc6b33c8012d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.custom: 
+ms.openlocfilehash: 73e9a634e579b85ac5acabebf38c8a08bc1af86c
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-a-design"></a>Criar um design
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-A seção do guia deve ser usada em paralelo com outros tópicos da Seção 2. Esse design se baseia nas informações coletadas e nas decisões tomadas ao concluir as seções anteriores deste guia. Nesta seção sobre design, temos como foco o Intune autônomo, que é um serviço baseado em nuvem da Microsoft.
-
-Embora haja requisitos mínimos de infraestrutura local, trabalhe em um plano de design para garantir que você tem a solução de gerenciamento de dispositivo móvel certa que atende a suas metas, seus objetivos e requisitos.
-
-Além disso, é comum haver alterações de design durante as fases de implementação e teste. Portanto, lembre-se de documentar essas alterações e o motivo, conforme elas ocorrerem. O design inclui as seguintes áreas:
+O design do Intune se baseia nas informações coletadas e nas decisões tomadas ao concluir as outras [seções deste guia](planning-guide.md). Ele ajuda você a reunir:
 
 -   O ambiente atual
 
@@ -40,45 +34,48 @@ Além disso, é comum haver alterações de design durante as fases de implement
 
 -   Requisitos para entrega  
 
+Embora haja requisitos mínimos de infraestrutura local, um plano de design ainda é útil para garantir que você tem a solução de gerenciamento de dispositivo móvel correta, que atende a suas metas, seus objetivos e requisitos.
+
 Vamos examinar cada uma dessas áreas mais detalhadamente. 
 
-## <a name="record-your-environment"></a>Registrar o ambiente
+## <a name="record-your-current-environment"></a>Registrar o ambiente atual
+Além disso, é comum haver alterações de design durante as fases de teste e implementação. Use o plano de design para documentar essas alterações e o raciocínio por trás delas conforme elas ocorrem.
 
-A primeira etapa antes de criar o design é registrar o ambiente atual. O ambiente atual podem influenciar as decisões de design e deve ser documentado e referenciado ao tomar outras decisões de design do Intune. Veja abaixo alguns exemplos de como registrar o ambiente atual:
+O ambiente atual pode influenciar as decisões de design e deve ser documentado e referenciado ao tomar outras decisões de design do Intune. Veja abaixo alguns exemplos de como registrar o ambiente atual:
 
 -   **Identidade na nuvem**
 
     -   Você usa o DirSync ou o Azure AD (Azure Active Directory) Connect?
 
-    -   Seu ambiente é Federado?
+    -   Seu ambiente é federado?
 
-    -   A autenticação multifator está habilitada?
+    -   A MFA (autenticação multifator) está habilitada?
 
 -   **Ambiente de email**
 
-    -   O Exchange está sendo usado? A versão local ou na nuvem?
+    -   Você usa o Exchange? Ele está local ou na nuvem?
 
     -   Você está no meio de um projeto de migração do Exchange para a nuvem?
 
--   **Solução atual de MDM**
+-   **Solução de MDM (gerenciamento de dispositivo móvel) atual**
 
     -   Você está usando outras soluções de MDM?
 
     -   Quais soluções de MDM estão sendo usadas para os cenários de caso de uso corporativo e BYOD?
 
-    -   Quais funcionalidades estão sendo usadas (por exemplo, configurações de dispositivo de aplicativo, configurações de Wi-Fi, etc.)?
+    -   Quais funcionalidades estão sendo usadas (por exemplo, configurações do dispositivo do aplicativo, configurações de Wi-Fi etc.)?
 
     -   Há suporte para quais plataformas de dispositivo?
 
     -   Quais grupos e quantos usuários estão usando a solução de MDM?
 
--   **Solução de Certificado**
+-   **Solução de certificado**
 
     -   Você implementou uma solução de certificado?
 
     -   Quais tipo de certificados são usados?
 
--   **Gerenciamento de Sistemas**
+-   **Gerenciamento de sistemas**
 
     -   Como o ambiente de computador e servidor está sendo gerenciado?
 
@@ -90,10 +87,10 @@ A primeira etapa antes de criar o design é registrar o ambiente atual. O ambien
 
     -   Ela é usada para cenários de caso de uso corporativo e BYOD?
 
-Lembre-se de observar os projetos ou outros planos em vigor para poder fazer alterações no ambiente ao registrar o ambiente atual de MDM. Veja abaixo um exemplo de uma maneira de registrar o ambiente atual para ajudar a criar o design do Intune:
+Lembre-se de observar os projetos ou outros planos em vigor que podem afetar o ambiente ao registrar o ambiente atual de MDM. Veja abaixo um exemplo de uma maneira de registrar o ambiente atual ao criar o design do Intune:
 
 | **Área de solução** | **Ambiente atual** | **Comentários** |
-|:---:|:---:|:---:|
+|---|---|---|
 | **Identidade** | Azure AD, Azure AD Connect, não federado, sem MFA | Projeto em vigor para habilitar o MFA até o final do ano |                 
 | **Ambiente de email** | Exchange no Local, Exchange Online | Atualmente migrando do Exchange no Local para o Exchange Online. 75% de caixas de correio migradas. Os últimos 25% serão migrados antes do início do Piloto do Intune. |                
 | **SharePoint** | SharePoint local | Não há planos de migração para o SharePoint Online |  
@@ -102,11 +99,12 @@ Lembre-se de observar os projetos ou outros planos em vigor para poder fazer alt
 | **Gerenciamento do Sistema** | System Center Configuration Manager CB 1606 | Gostaria de investigar a solução híbrida do Intune? |
 | **Solução de VPN** | Cisco AnyConnect |  |
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para desenvolver um plano de design do Intune.
+
 ## <a name="choose-an-intune-deployment-option"></a>Escolher uma opção de implantação do Intune
 
-O Intune oferece duas opções de implantação: independente e híbrida. Decida qual delas atende aos seus requisitos de negócios. Independente refere-se ao serviço Intune em execução na nuvem, enquanto híbrido refere-se à integração do Intune com o System Center Configuration Manager.
-
-- Saiba mais sobre como [escolher entre o gerenciamento de dispositivo móvel independente e híbrido do Microsoft Intune com o System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
+O Intune oferece duas opções de implantação: independente e híbrida. Independente refere-se ao serviço Intune em execução na nuvem, enquanto híbrido refere-se à integração do Intune com o System Center Configuration Manager. O objetivo principal deste guia é o uso da opção autônoma. [Decida qual opção atende aos seus requisitos de negócios](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 ## <a name="intune-tenant-location"></a>Local do locatário do Intune
 
@@ -123,59 +121,61 @@ Caso sua organização tenha uma presença global, lembre-se de planejar o local
 
 ## <a name="external-dependencies"></a>Dependências externas
 
-Dependências externas são serviços e produtos separados do Intune, mas que são um requisito do Intune ou que podem ser integradas com o Intune. É importante identificar os requisitos para dependências externas e como elas serão configuradas. Veja abaixo uma lista de alguns exemplos de dependências externas comuns.
+Dependências externas são serviços e produtos separados do Intune, mas que são um requisito do Intune ou que podem ser integradas com o Intune. É importante identificar os requisitos de dependências externas e como configurá-las. Alguns exemplos de dependências externas comuns são:
 
 -   Identidade
 
 -   Grupos de usuários e de dispositivos
 
--   PKI
+-   PKI (infraestrutura de chave pública)
 
 Vamos explorar mais detalhadamente essas dependências externas comuns abaixo
 
 ### <a name="identity"></a>Identidade
 
-Identidade é como identificamos nossos usuários que estão abaixo de sua organização e que estão registrando um dispositivo. O Intune exige o Azure AD (Azure Active Directory) como o provedor de identidade do usuário. Se você já usa esse serviço, pode aproveitar sua identidade já existente na nuvem. Além disso, o Azure AD Connect é a ferramenta recomendada para sincronizar as identidades de usuários locais com os serviços em nuvem da Microsoft. Caso sua organização já esteja usando o Office 365, é importante que o Intune use o mesmo ambiente do Azure Active Directory.
+Identidade é como identificamos nossos usuários que estão abaixo de sua organização e que estão registrando um dispositivo. O Intune exige o Azure AD (Azure Active Directory) como o provedor de identidade do usuário. Se você já usa esse serviço, pode aproveitar sua identidade existente na nuvem. Além disso, o Azure AD Connect é a ferramenta recomendada para sincronizar as identidades de usuários locais com os serviços em nuvem da Microsoft. Caso sua organização já esteja usando o Office 365, é importante que o Intune use o mesmo ambiente do Azure AD.
 
-Encontre mais informações sobre os requisitos de identidade do Intune abaixo.
+Saiba mais sobre os seguintes requisitos de identidade do Intune:
 
--   Saiba mais sobre os [requisitos de identidade](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+- [Requisitos de identidade](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
 
--   Saiba mais sobre os [requisitos de sincronização de diretório](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+- [Requisitos de sincronização de diretório](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
 
--   Saiba mais sobre os [requisitos de autenticação multifator](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+- [Requisitos da autenticação multifator](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Grupos de usuários e de dispositivos
 
-Os grupos de usuários e de dispositivos determinam o destino de uma implantação. Isso pode incluir uma implantação que tem políticas, aplicativos e perfis como destino. O serviço de nuvem do Intune dá suporte apenas a grupos de usuários e de dispositivos. Você precisará determinar quais grupos de usuários e de dispositivos serão necessários. É recomendável criar todos os grupos no Active Directory local e sincronizá-los com o Azure Active Directory. Encontre mais informações sobre o planejamento e a criação de grupos de usuários e de dispositivos abaixo.
+Grupos de usuários e de dispositivos determinam o destino de uma implantação, incluindo políticas, aplicativos e perfis. É necessário determinar quais grupos de usuários e de dispositivos serão necessários.
 
--   Saiba mais sobre como [planejar os grupos de usuários e de dispositivos](/intune-classic/deploy-use/plan-your-user-and-device-groups).
+Recomenda-se que todos os grupos sejam criados no Active Directory local e, em seguida, sincronizados com o Azure AD. Saiba mais sobre como planejar e criar os grupos de usuários e de dispositivos:
 
--   Saiba [como criar grupos de usuários e de dispositivos](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   [Planejar grupos de usuários e de dispositivos](users-add.md).
 
-### <a name="public-key-infrastructure-pki"></a>PKI (Infraestrutura de Chave Pública)
+-   [Criar grupos de usuários e de dispositivos](groups-add.md).
 
-A Infraestrutura de Chave Pública fornece certificados para dispositivos ou usuários para uma autenticação segura em um serviço. O Intune dá suporte a uma infraestrutura de PKI da Microsoft. Certificados de usuários e de dispositivos podem ser emitidos para um dispositivo móvel, a fim de atender aos requisitos da autenticação baseada em certificado. Antes de implementar certificados, você precisa determinar se os certificados são necessários, se a infraestrutura de rede pode dar suporte à autenticação baseada em certificado e se os certificados são atualmente usados no ambiente existente.
+### <a name="public-key-infrastructure-pki"></a>PKI (infraestrutura de chave pública)
+A infraestrutura de chave pública fornece certificados para dispositivos ou usuários a fim de autenticar um serviço de forma segura. O Intune dá suporte a uma infraestrutura de PKI da Microsoft. Certificados de usuários e de dispositivos podem ser emitidos para um dispositivo móvel, a fim de atender aos requisitos da autenticação baseada em certificado. Antes de usar certificados, é preciso determinar se eles são necessários, se a infraestrutura de rede pode dar suporte à autenticação baseada em certificado e se os certificados são usados atualmente no ambiente existente.
 
-Se você estiver planejando usar certificados com perfis de VPN, Wi-Fi ou email com o Intune, verifique se você tem uma [infraestrutura de PKI em vigor](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) com suporte, pronta para criar e implantar perfis de certificado.
+Caso esteja planejando usar certificados com perfis de VPN, Wi-Fi ou email com o Intune, verifique se você tem uma [infraestrutura de PKI em vigor](certificates-configure.md) com suporte, pronta para criar e implantar perfis de certificado.
 
-Além disso, se certificados SCEP forem emitidos, você precisará determinar qual servidor hospedará o recurso NDES (Serviço de Registro de Dispositivo de Rede) e como ocorrerá a comunicação.
+Além disso, se certificados SCEP forem emitidos, será necessário determinar qual servidor hospedará o recurso NDES (Serviço de Registro de Dispositivo de Rede) e como ocorrerá a comunicação.
 
-Mais informações sobre como configurar certificados no Intune:
+Saiba mais sobre:
 
--   [Configurar a infraestrutura de certificado para SCEP](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep).
+-   [Como configurar perfis de certificado do Intune](certificates-configure.md)
 
--   [Configurar a infraestrutura de certificado](/intune-classic/deploy-use/configure-certificate-infrastructure-for-pfx).
+-   [Como configurar a infraestrutura de certificado para SCEP](certificates-scep-configure.md)
 
--   [Configurar perfis de certificado do Intune](/intune-classic/deploy-use/configure-intune-certificate-profiles).
+-   [Como configurar a infraestrutura de certificado para PFX](certficates-pfx-configure.md)
 
--   [Como configurar políticas de acesso a recursos](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
+
+
 
 ## <a name="device-platform-considerations"></a>Considerações sobre plataformas de dispositivo
 
-É necessário examinar os dispositivos atentamente para entender como configurá-los corretamente.
+Analise os seguintes aspectos dos dispositivos para entender como gerenciá-los corretamente.
 
--   Determinar as plataformas de dispositivo com suporte
+-   Plataformas de dispositivos com suporte
 
 -   Dispositivos
 
@@ -189,13 +189,11 @@ Vamos examinar essas áreas mais detalhadamente.
 
 Você precisa saber quais dispositivos estarão no ambiente e verificar se eles têm suporte ou não no Intune ao criar o projeto. O Intune dá suporte às plataformas iOS, Android e Windows.
 
--   Saiba mais sobre os [Dispositivos com suporte no Intune](/intune/supported-devices-browsers).
+[Lista completa dos dispositivos com suporte do Intune](supported-devices-browsers.md).
 
 ### <a name="devices"></a>Dispositivos
 
-O Intune gerencia dispositivos móveis para proteger dados corporativos e permitir que os usuários finais trabalhem em mais locais. O Intune dá suporte a várias plataformas de dispositivo; portanto é recomendável documentar os dispositivos e as plataformas do sistema operacional que terão suporte no design de sua organização. Isso será expandido para os dispositivos e para as plataformas criadas na seção (requisitos de caso de uso).
-
-Também recomendamos saber as versões para fazer referência à lista durante a verificação de funcionalidades do dispositivo por versão e plataforma do sistema operacional. Aqui está um exemplo:
+O Intune gerencia dispositivos móveis para proteger dados corporativos e permitir que os usuários finais trabalhem em mais locais. O Intune oferece suporte a várias plataformas de dispositivo; portanto, é recomendável documentar os dispositivos, as plataformas do sistema operacional e as versões que terão suporte no design da sua organização. Por exemplo:
 
 | **Plataforma de dispositivo** | **Versões do sistema operacional** |
 |:---:|:---:|
@@ -204,23 +202,23 @@ Também recomendamos saber as versões para fazer referência à lista durante a
 | Android – Samsung Knox Standard | 4.0+ |
 | Tablet Windows 10 | 10+ |
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para desenvolver uma lista de dispositivos.
 ### <a name="device-ownership"></a>Propriedade do dispositivo
 
-O Intune dá suporte à propriedade corporativa e à propriedade BYOD. Um dispositivo será considerado de propriedade corporativa se for registrado por um gerenciador de registro do dispositivo ou pelo programa de registro de dispositivos. Como exemplo, um dispositivo pode ser registrado por meio do Apple DEP, marcado como corporativo e colocado em um grupo de dispositivos que recebe políticas e aplicativos corporativos de destino.
+O Intune oferece suporte a dispositivos corporativos e dispositivos pessoais. Um dispositivo será considerado corporativo se for registrado por um gerenciador de registros do dispositivo ou pelo programa de registro de dispositivos. Por exemplo, um dispositivo foi registrado por meio do DEP (Programa de Registro de Dispositivos) da Apple, marcado como corporativo e colocado em um grupo de dispositivos que recebe políticas e aplicativos corporativos direcionados.
 
-Consulte a [Seção 3: Determinar os requisitos de cenários de caso de uso](planning-guide-requirements.md) para obter mais informações sobre casos de uso Corporativo e BYOD.
+Consulte a [Seção 3: Determinar os requisitos de cenários de caso de uso](planning-guide-requirements.md) para obter mais informações sobre casos de uso corporativo e BYOD.
 
 ### <a name="bulk-enrollment"></a>Registro em massa
 
-Há várias opções de registro disponíveis para registrar um dispositivo no Intune, a fim de complementar o registro por autoatendimento por meio do portal da empresa. O registro em massa pode ser realizado de diferentes maneiras conforme a plataforma. Se o registro em massa for necessário, primeiro determine o método de registro em massa e incorpore-o no design. Obtenha mais informações sobre os diferentes métodos de registro em massa abaixo.
-
--   Saiba mais sobre o [registro em massa](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
+ É possível realizar o registro em massa dos dispositivos de diferentes maneiras, de acordo com a plataforma. Se o registro em massa for necessário, primeiro [determine o método de registro em massa](device-enrollment.md) e incorpore-o ao design.
 
 ## <a name="feature-requirements"></a>Requisitos de recursos
 
-Nesta seção, examinaremos os seguintes recursos e funcionalidades que estão alinhados aos requisitos de cenários de caso de uso:
+Nestas seções, examinaremos os seguintes recursos e funcionalidades que estão alinhados aos requisitos de cenários de caso de uso:
 
--   Políticas de Termos e Condições
+-   Políticas de Termos e condições
 
 -   Políticas de configuração
 
@@ -228,28 +226,31 @@ Nesta seção, examinaremos os seguintes recursos e funcionalidades que estão a
 
 -   Aplicativos
 
--   Política de Conformidade
+-   Política de conformidade
 
 -   Acesso condicional
 
 Vamos examinar cada uma dessas áreas mais detalhadamente.
 
-### <a name="terms-and-conditions-policies"></a>Políticas de Termos e Condições
+### <a name="terms-and-conditions-policies"></a>Políticas de Termos e condições
 
-Termos e Condições podem ser usados para explicar as políticas ou condições que um usuário final deverá aceitar antes do registro. O Intune dá suporte à capacidade de adicionar e implantar várias políticas de termos e condições em grupos de usuários. Você precisa determinar se as políticas de termos e condições são necessárias. Nesse caso, quem será responsável por fornecer essas informações na organização?
+Os [Termos e condições](terms-and-conditions-create.md) podem ser usados para explicar as políticas ou condições que um usuário final deverá aceitar antes de registrar o dispositivo. O Intune dá suporte à capacidade de adicionar e implantar várias políticas de termos e condições em grupos de usuários.
 
--   Saiba [como criar políticas de termos e condições](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) no Intune. Veja abaixo um exemplo de como documentar a política de termos e condições.
+Você precisa determinar se as políticas de termos e condições são necessárias. Nesse caso, quem será responsável por fornecer essas informações na organização? Veja abaixo um exemplo de como documentar a política de termos e condições.
 
 | **Nome de Termos e Condições** | **Caso de uso** | **Grupo de destino** |
 |:---:|:---:|:---:|
 | Termos e Condições corporativos | Corporativo | Usuários corporativos |                 
 | Termos e Condições da política BYOD | BYOD | Usuários BYOD |                
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para mapear os termos e condições dos seus grupos de usuários.
+
 ### <a name="configuration-policies"></a>Políticas de configuração
 
-As políticas de configuração são usadas para gerenciar as configurações e os recursos de segurança em um dispositivo. Ao criar as políticas de configuração, consulte a seção sobre requisitos de caso de uso para determinar as configurações necessárias para os dispositivos do Intune. Documente quais configurações e como elas devem ser definidas, bem como qual usuário ou quais grupos de dispositivos serão afetados.
+As políticas de configuração são usadas para gerenciar as configurações e os recursos de segurança de um dispositivo. Ao criar as políticas de configuração, consulte a seção sobre requisitos de caso de uso para determinar as configurações necessárias para os dispositivos do Intune. Documente as configurações e como elas devem ser configuradas. Documente também para quais grupos de usuários ou de dispositivos elas serão direcionadas.
 
-É necessário criar, pelo menos, uma Política de Configuração por plataforma. Se necessário, é possível criar várias Políticas de Configuração por plataforma. Veja abaixo um exemplo de como criar quatro políticas de configuração diferentes para diferentes plataformas e cenários de caso de uso.
+É necessário criar pelo menos uma política de configuração por plataforma. Se necessário, é possível criar várias políticas de configuração por plataforma. Veja abaixo um exemplo de como criar quatro políticas de configuração distintas para diferentes plataformas e cenários de caso de uso.
 
 | **Nome da política** | **Plataforma de dispositivo** | **Configurações** | **Grupo de destino** |   
 |:---:|:---:|:---:|:---:|
@@ -258,9 +259,12 @@ As políticas de configuração são usadas para gerenciar as configurações e 
 | BYOD – iOS  | iOS | PIN obrigatório; tamanho: 4 | Dispositivos BYOD |
 | BYOD – Android  | Android | PIN obrigatório; tamanho: 4 | Dispositivos BYOD |
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de configuração.
+
 ### <a name="profiles"></a>Perfis
 
-Perfis são usados para ajudar o usuário final a se conectar aos dados da empresa. O Intune dá suporte a vários tipos de perfis. Consulte os casos de uso e os requisitos para determinar quando os [perfis](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune) serão configurados. Todos os perfis de dispositivo são categorizados por tipo de plataforma e devem ser incluídos na documentação do design.
+Os perfis são usados para ajudar o usuário final a se conectar aos dados da empresa. O Intune dá suporte a vários tipos de perfis. Consulte os casos de uso e os requisitos para determinar quando os perfis serão configurados. Todos os perfis de dispositivo são categorizados por tipo de plataforma e devem ser incluídos na documentação do design.
 
 -   Perfis de certificado
 
@@ -272,7 +276,7 @@ Perfis são usados para ajudar o usuário final a se conectar aos dados da empre
 
 Vamos examinar cada tipo de perfil mais detalhadamente.
 
-##### <a name="certificate-profiles"></a>Perfis de certificado
+#### <a name="certificate-profiles"></a>Perfis de certificado
 
 Os perfis de certificado permitem que o Intune emita um certificado para um usuário ou dispositivo. O Intune dá suporte ao seguinte:
 
@@ -294,11 +298,12 @@ Este é um exemplo de como é possível documentar os certificados durante o des
 | AC Raiz | AC Raiz Corporativa | Android, iOS, Windows Mobile | Corporativo, BYOD  |                                                           
 | SCEP | Certificado de Usuário | Android, iOS, Windows Mobile | Corporativo, BYOD |                                                           
 
-##### <a name="wi-fi-profile"></a>Perfil de Wi-Fi
 
-Perfis de Wi-Fi são usados para conectar automaticamente um dispositivo móvel a uma rede sem fio. O Intune dá suporte à implantação de perfis de Wi-Fi em todas as plataformas com suporte.
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de certificado.
 
--   Saiba mais sobre [como o Intune dá suporte a perfis de Wi-Fi.](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
+#### <a name="wi-fi-profile"></a>Perfil de Wi-Fi
+
+Os perfis de Wi-Fi são usados para conectar automaticamente um dispositivo móvel a uma rede sem fio. O Intune dá suporte à implantação de perfis de Wi-Fi em todas as plataformas com suporte. Saiba mais sobre [como o Intune dá suporte a perfis de Wi-Fi.](wi-fi-settings-configure.md)
 
 Veja abaixo um exemplo de um design para um perfil de Wi-Fi:
 
@@ -307,11 +312,12 @@ Veja abaixo um exemplo de um design para um perfil de Wi-Fi:
 | Wi-Fi | Perfil de Wi-Fi da Ásia | Android | Corporativo, BYOD na região da Ásia|                                                           
 | Wi-Fi | Perfil de Wi-Fi na América do Norte | Android, iOS, Windows 10 Mobile | Corporativo, BYOD na região da América do Norte |                                                           
 
-##### <a name="vpn-profile"></a>Perfil da VPN
 
-Perfis de VPN permitem que os usuários acessem a rede de locais remotos. O Intune dá suporte a perfis de VPN de conexões de VPN móveis nativas e de fornecedores de terceiros.
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de Wi-Fi.
 
--   Saiba mais sobre os [perfis de VPN e os fornecedores com suporte no Intune](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune).
+#### <a name="vpn-profile"></a>Perfil da VPN
+
+Perfis de VPN permitem que os usuários acessem a rede de locais remotos. O Intune dá suporte a perfis de VPN de conexões de VPN móveis nativas e de fornecedores terceirizados. Saiba mais sobre os [perfis de VPN e os fornecedores com suporte no Intune](vpn-settings-configure.md).
 
 Veja abaixo um exemplo de como documentar o design de um perfil VPN.
 
@@ -320,11 +326,11 @@ Veja abaixo um exemplo de como documentar o design de um perfil VPN.
 | VPN | Qualquer perfil de conexão VPN Cisco | Android, iOS, Windows 10 Mobile | Corporativo, BYOD na América do Norte e Alemanha|                                                           
 | VPN | Pulse Secure | Android | Corporativo, BYOD na região da Ásia |                                                           
 
-##### <a name="email-profile"></a>Perfil de email
 
-Os perfis de email permitem que um cliente de email seja configurado automaticamente com informações de conexão e a configuração de email. O Intune dá suporte a perfis de email em alguns dispositivos.
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de VPN.
+#### <a name="email-profile"></a>Perfil de email
 
--   Saiba mais sobre os [perfis de email](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) e quais plataformas têm suporte.
+Os perfis de email permitem que um cliente de email seja configurado automaticamente com as informações de conexão e a configuração de email. O Intune dá suporte a perfis de email em alguns dispositivos. Saiba mais sobre os [perfis de email e quais plataformas têm suporte](email-settings-configure.md).
 
 Veja abaixo um exemplo de como documentar o design de perfis de email:
 
@@ -333,15 +339,17 @@ Veja abaixo um exemplo de como documentar o design de perfis de email:
 | Perfil de email | Perfil de email do iOS | iOS | Corporativo – BYOD para profissional da informação |                                                           
 | Perfil de email | Perfil de email do Android Knox | Android Knox | BYOD |
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de email.
 ### <a name="apps"></a>Aplicativos
 
-O Intune dá suporte à entrega de aplicativos aos usuários ou dispositivos de várias maneiras. O tipo de aplicativo entregue pode ser aplicativos do instalador de software, aplicativos de uma loja pública de aplicativos, links externos ou aplicativos iOS gerenciados. Além das implantações de aplicativo individuais, os aplicativos adquiridos por volume podem ser gerenciados e implantados por meio de programas de compra por volume para iOS e Windows. Veja abaixo mais informações sobre como o Intune dá suporte a aplicativos e sobre os programas de compra por volume.
+É possível usar o Intune para fornecer aplicativos aos usuários ou dispositivos de diversas maneiras. Os tipos de aplicativos incluem aplicativos do instalador do software, aplicativos de uma loja pública de aplicativos, links externos ou aplicativos iOS gerenciados. Além das implantações de aplicativo individuais, os aplicativos adquiridos por volume podem ser gerenciados e implantados por meio de programas de compra por volume para iOS e Windows. Saiba mais sobre:
 
--   Saiba mais sobre os [tipos de aplicativos](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+-   [Os tipos de aplicativos podem ser fornecidos](app-management.md)
 
--   Saiba mais sobre o [iOS VPP (Volume Purchase Program) for Business](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune).
+-   [iOS VPP (Volume Purchase Program) for Business](vpp-apps-ios.md)
 
--   Saiba mais sobre a [Windows Store para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+-   [Aplicativos da Windows Store para Empresas](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Requisitos de tipo de aplicativo
 
@@ -353,28 +361,29 @@ Como os aplicativos podem ser implantados em usuários e dispositivos, é recome
 
 -   Quais são as opções de implantação disponíveis para esses aplicativos?
 
--   Sua empresa precisa fornecer acesso a dados de aplicativos SaaS (software como serviço) para seus parceiros?
+-   A empresa precisa fornecer acesso a dados de aplicativos SaaS (software como serviço) para seus parceiros?
 
 -   Os aplicativos exigem acesso à Internet por meio dos dispositivos do usuário?
 
--   Os aplicativos estão disponíveis publicamente em uma loja de aplicativos ou são Aplicativos de Linha de Negócios personalizados?
+-   Os aplicativos estão disponíveis publicamente em uma loja de aplicativos ou são aplicativos LOB (de linha de negócios) personalizados?
 
-
->[!TIP]
-> Confira os [diferentes tipos de aplicativos com suporte no Intune](/intune-classic/deploy-use/add-apps).
 
 #### <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
 
-As políticas de proteção do aplicativo minimizam a perda de dados, definindo como o aplicativo gerencia os dados corporativos. O Intune dá suporte a políticas de proteção do aplicativo para qualquer aplicativo criado para funcionar com o gerenciamento de aplicativo móvel. Ao criar a política de proteção do aplicativo, é necessário determinar quais restrições você colocará aos dados corporativos em determinado aplicativo. É recomendável examinar o funcionamento das [políticas de proteção do aplicativo](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune). Veja abaixo um exemplo de como documentar os aplicativos existentes e qual proteção é necessária.
+As políticas de proteção do aplicativo minimizam a perda de dados, definindo como o aplicativo gerencia os dados corporativos. O Intune dá suporte a políticas de proteção do aplicativo para qualquer aplicativo criado para funcionar com o gerenciamento de aplicativo móvel. Ao criar a política de proteção do aplicativo, é necessário decidir quais restrições serão colocadas nos dados corporativos de um determinado aplicativo. É recomendável examinar o funcionamento das [políticas de proteção do aplicativo](app-protection-policy.md). Veja abaixo um exemplo de como documentar os aplicativos existentes e qual proteção é necessária.
 
 | **Aplicativo** | **Finalidade** | **Plataformas** | **Caso de uso** | **Política de proteção do aplicativo** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponível | iOS | Corporativo – Executivos | Sem risco de jailbreak, arquivos criptografados |                                                         
 | Word | Disponível | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Corporativo, BYOD | Sem risco de jailbreak, arquivos criptografados |                                                         
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de proteção do aplicativo.
 #### <a name="compliance-policies"></a>Políticas de conformidade
 
-As políticas de conformidade determinam se um dispositivo está em conformidade com requisitos específicos. O Intune usa políticas de conformidade para determinar se um dispositivo é considerado em conformidade ou não. Em seguida, o status de conformidade pode ser usado para restringir o acesso aos recursos da empresa. Se o acesso condicional é necessário, é recomendável criar uma [política de conformidade do dispositivo](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune). Consulte os requisitos e casos de uso para determinar quantas políticas de conformidade do dispositivo são necessárias e quais grupos de usuários são os grupos de usuários de destino. Além disso, é necessário determinar quanto tempo um dispositivo pode ficar offline sem fazer check-in antes de ser considerado fora de conformidade.
+As políticas de conformidade determinam se um dispositivo está em conformidade com requisitos específicos. O Intune usa políticas de conformidade para determinar se um dispositivo é considerado em conformidade ou não. Em seguida, o status de conformidade pode ser usado para restringir o acesso aos recursos da empresa. Se o acesso condicional for necessário, recomenda-se criar uma [política de conformidade do dispositivo](device-compliance.md).
+
+Consulte os requisitos e casos de uso para determinar quantas políticas de conformidade do dispositivo são necessárias e quais grupos de usuários são os grupos de usuários de destino. Além disso, é necessário determinar por quanto tempo um dispositivo pode ficar offline sem fazer check-in antes de ser considerado fora de conformidade.
 
 Veja abaixo um exemplo de como criar uma política de conformidade:
 
@@ -382,21 +391,17 @@ Veja abaixo um exemplo de como criar uma política de conformidade:
 |:---:|:---:|:---:|:---:|
 | Política de conformidade | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | PIN – obrigatório, sem risco de jailbreak | Corporativo, BYOD |
 
+
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de conformidade.
 #### <a name="conditional-access-policies"></a>Políticas de acesso condicional
 
-O Acesso Condicional é usado para permitir que apenas os dispositivos em conformidade acessem os recursos da empresa. O Intune funciona com todo o EMS (Enterprise Mobility + Security) para controlar o acesso aos recursos da empresa. Você precisará determinar se o acesso condicional será necessário e o que deverá ser protegido.
+O acesso condicional é usado para permitir que apenas os dispositivos em conformidade acessem o email e outros recursos da empresa. O Intune funciona com o EMS (Enterprise Mobility + Security) para controlar o acesso aos recursos da empresa. É necessário decidir se o acesso condicional será necessário e o que deverá ser protegido. Saiba mais sobre o [acesso condicional](conditional-access.md).
 
--   Saiba mais sobre o [Acesso Condicional](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
-
-Para o acesso online, determine quais plataformas e grupos de usuários serão o destino das políticas de acesso condicional.
-
-Além disso, você precisa determinar se é necessário instalar/configurar o conector serviço a serviço do Intune para o Exchange Online ou Exchange no Local.
-
-Saiba mais como instalar e configurar conectores serviço a serviço do Intune:
+Para o acesso online, defina quais plataformas e grupos de usuários serão o destino das políticas de acesso condicional. Além disso, determine se é necessário instalar ou configurar o conector serviço a serviço do Intune para o Exchange Online ou para o Exchange local. Saiba mais como instalar e configurar conectores serviço a serviço do Intune: <!---these links are correct--->
 
 -   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
 
--   [Exchange Local](/intune-classic/deploy-use/intune-on-premises-exchange-connector)
+-   [Exchange local](exchange-connector-install.md)
 
 Este é um exemplo de como documentar as políticas de acesso condicional:
 
@@ -405,6 +410,8 @@ Este é um exemplo de como documentar as políticas de acesso condicional:
 | Exchange Online | iOS, Android | Bloquear dispositivos que não estão em conformidade em plataformas com suporte no Intune | Corporativo, BYOD |
 | SharePoint Online | iOS, Android |  | Corporativo, BYOD |
 
-## <a name="next-section"></a>Próxima seção
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso.
+
+## <a name="next-steps"></a>Próximas etapas
 
 A próxima seção fornece diretrizes sobre o [processo de implementação do Intune](planning-guide-onboarding.md).

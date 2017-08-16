@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Android e Samsung KNOX Standard no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use essas configurações com uma política de restrição de dispositivo do Android para configurar dispositivos em sua organização.
+
+>[!TIP]
+>Se as configurações que você deseja não estiverem disponíveis, é possível configurar os dispositivos usando um [perfil personalizado](custom-settings-android.md). 
 
 ## <a name="general"></a>Geral
 
@@ -132,3 +135,8 @@ As configurações de quiosque se aplicam apenas a dispositivos Samsung KNOX Sta
     - **Adicionar aplicativos gerenciados**.
 - **Botão de suspensão da tela** – Habilita ou desabilita o botão de suspensão e ativação da tela no dispositivo.
 - **Botões de volume** – habilita ou desabilita o uso dos botões de volume no dispositivo.
+
+
+## <a name="next-steps"></a>Próximas etapas
+
+Continue usando as instruções em [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para criar e, em seguida, atribuir o perfil de restrição do dispositivo.

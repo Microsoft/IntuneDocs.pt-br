@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Solucionar problemas de implantação de aplicativo no Microsoft Intune
 
@@ -36,9 +36,9 @@ Se você estiver tendo problemas ao implantar e gerenciar aplicativos com o Intu
 |0x80073CFB|O pacote fornecido já foi instalado e sua reinstalação está bloqueada|Talvez você receba esse erro se estiver instalando um pacote que não é idêntico ao pacote já instalado. Confirme se a assinatura digital também faz parte do pacote. Quando um pacote é recriado ou assinado novamente, ele não é mais idêntico bit a bit ao pacote instalado anteriormente. Duas opções possíveis para corrigir esse erro são as seguintes:<br /><br />-   Aumente o número de versão do aplicativo e recrie e assine novamente o pacote.<br />-   Remova o pacote antigo para cada usuário no sistema antes de instalar o novo pacote.|
 |0x87D1041C|Êxito na instalação do aplicativo, mas o aplicativo não foi detectado.|– O aplicativo foi implantado com êxito pelo Intune e, depois, foi desinstalado (possivelmente pelo usuário final). Instrua o usuário a reinstalar o aplicativo do portal da empresa. Os aplicativos necessários serão reinstalados automaticamente na próxima vez em que o dispositivo fizer check-in.|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>Solucionando problemas de aplicativos da Windows Store
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Solução de problemas dos aplicativos da Microsoft Store
 
-As informações no tópico [Solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) ajudam a solucionar problemas comuns que podem ocorrer ao instalar aplicativos da Windows Store, usando o Intune ou por outros meios.
+As informações no tópico [Solução de problemas de empacotamento, implantação e consulta de aplicativos da Microsoft Store](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) ajudam a solucionar problemas comuns que podem ocorrer ao instalar aplicativos da Microsoft Store, usando o Intune ou por outros meios.
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Solucionando problemas de implantação de aplicativo em PCs gerenciados pelo cliente de software do Intune
 Para ajudá-lo a solucionar problemas de implantação de aplicativos em PCs gerenciados pelo cliente de software do Intune, você pode analisar os dois seguintes arquivos de log:

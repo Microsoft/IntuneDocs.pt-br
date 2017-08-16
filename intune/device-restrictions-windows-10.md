@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
 
@@ -72,7 +72,7 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
 ## <a name="privacy"></a>Privacidade
 
--   **Personalização de entrada** – Não permite o uso de serviços de voz baseados em nuvem para aplicativos da Windows Store, ditado ou Cortana. Se você permitir esses serviços, a Microsoft poderá coletar dados de voz para melhorar o serviço.
+-   **Personalização de entrada** – Não permite o uso de serviços de voz baseados em nuvem para aplicativos da Microsoft Store, ditado ou Cortana. Se você permitir esses serviços, a Microsoft poderá coletar dados de voz para melhorar o serviço.
 -   **Aceitação automática de solicitações de consentimento do usuário para privacidade e emparelhamento** – Permitir que o Windows aceite automaticamente mensagens de consentimento de emparelhamento e privacidade ao executar aplicativos.
 
 
@@ -91,12 +91,12 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 ## <a name="app-store"></a>Loja de aplicativos
 
 -   **Loja de aplicativos (somente dispositivo móvel)** – Habilitar ou bloquear o uso da loja de aplicativos em dispositivos Windows 10 Mobile.
--   **Atualizar aplicativos automaticamente a partir da Store** - permite que os aplicativos instalados a partir da Windows Store sejam atualizados automaticamente.
+-   **Atualizar aplicativos automaticamente da loja** – Permite que os aplicativos instalados da Microsoft Store sejam atualizados automaticamente.
 -   **Instalação de aplicativo confiável** - permite que os aplicativos assinados com um certificado de confiança sejam carregados por sideload.
 -   **Desbloqueio do desenvolvedor** - permite que configurações de desenvolvedor do Windows, como a permissão de sideload de aplicativos, sejam modificadas pelo usuário final.
 -   **Dados de aplicativo do usuário compartilhados** - permite que os aplicativos compartilhem dados entre usuários diferentes no mesmo dispositivo.
 -   **Usar somente armazenamento privado** - habilite esta opção para permitir que somente os usuários finais possam baixar aplicativos de seu armazenamento privado.
--   **Inicialização de aplicativo originado na Store** - usada para desabilitar todos os aplicativos que foram previamente instalados no dispositivo ou baixados da Windows Store.
+-   **Inicialização de aplicativo originado na Store** – Usada para desabilitar todos os aplicativos previamente instalados no dispositivo ou baixados da Microsoft Store.
 -   **Instalar dados do aplicativo no volume do sistema** - impede que os aplicativos armazenem dados no volume do sistema do dispositivo.
 -   **Instalar aplicativos na unidade do sistema** - impede que os aplicativos armazenem dados na unidade do sistema do dispositivo.
 -   **DVR de Jogos (somente desktop)** - Define se é permitido registrar e transmitir jogos.

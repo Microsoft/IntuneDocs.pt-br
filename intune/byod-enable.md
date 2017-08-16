@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Habilitar BYOD (Traga seu próprio dispositivo) com o Intune
 
@@ -75,14 +75,14 @@ Com o Intune, é fácil:
 * [Entregar aplicativos da loja para dispositivos gerenciados](apps-deploy.md)
 * Direcionar aplicativos para dispositivos não gerenciados usando o site do Portal da Empresa
 
-O Intune também permite que você gerencie e implante aplicativos adquiridos com base em volume na loja de aplicativos iOS e na Windows Store para Empresas. Isso ajuda a reduzir a sobrecarga administrativa no acompanhamento de aplicativos comprados com base no volume.
+O Intune também permite gerenciar e implantar aplicativos adquiridos com base em volume na loja de aplicativos iOS e na Microsoft Store para Empresas. Isso ajuda a reduzir a sobrecarga administrativa no acompanhamento de aplicativos comprados com base no volume.
 
 > [!TIP]
 > Você pode [configurar logon único (SSO) com o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). O SSO permite que os usuários entrem em aplicativos com o nome de usuário de domínio e a senha que eles usam localmente. Além disso, você pode [fornecer acesso baseado na Internet para aplicativos Web hospedados localmente](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) usando o Proxy de Aplicativo do Azure Active Directory.
 
 -   [Gerenciar aplicativos comprados com base no volume para dispositivos iOS](vpp-apps-ios.md). Você compra várias licenças para aplicativos iOS por meio do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). Você precisa configurar uma conta do Apple VPP no site da Apple e carregar o token do Apple VPP no Intune. Você pode sincronizar suas informações de compra por volume com o Intune e controlar o uso do aplicativo adquirido por volume.
 
--   [Gerencie aplicativos comprados na Windows Store para Empresas](windows-store-for-business.md). O [Windows Store para Empresas](https://www.microsoft.com/business-store) fornece um local para encontrar e comprar aplicativos para sua organização, individualmente ou por volume. Conectando-se à loja ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no portal do Intune.
+-   [Gerenciar aplicativos comprados na Microsoft Store para Empresas](windows-store-for-business.md). A [Microsoft Store para Empresas](https://www.microsoft.com/business-store) é um local para encontrar e comprar aplicativos para organizações, uso individual ou com base em volume. Conectando-se à loja ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no portal do Intune.
 
 ## <a name="protect-company-data"></a>Proteger os dados da empresa
 
@@ -105,10 +105,10 @@ Você pode usar as [políticas de proteção de aplicativo do Intune](app-protec
 
 Use as [políticas de WIP (Proteção de Informações do Windows)](app-protection-policies-configure-windows-10.md) para fazer o mesmo com dispositivos Windows 10 gerenciados. Essas políticas funcionam sem interferir com a experiência do funcionário. Eles não exigem alterações em seu ambiente de rede nem em outros aplicativos.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Apagar os dados da empresa deixando os dados pessoais intactos
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Remover os dados da empresa deixando os dados pessoais intactos
 
-Quando um dispositivo deixa de ser necessário para o trabalho, tem sua função redefinida ou acabou de desaparecer, você pode remover dados e aplicativos da empresa dele. Para isso, você pode usar as funcionalidades de apagamento completo e apagamento seletivo do Intune. Se os dispositivos de propriedade pessoal dos seus usuários tiverem sido registrados no Intune, esses usuários poderão apagar remotamente esses dispositivos do Portal da Empresa do Intune.
+Quando um dispositivo deixa de ser necessário para o trabalho, tem sua função redefinida ou acabou de desaparecer, você pode remover dados e aplicativos da empresa dele. Para fazer isso, é possível usar os recursos de remoção de dados da empresa e de redefinição de fábrica do Intune. Se os dispositivos de propriedade pessoal dos seus usuários tiverem sido registrados no Intune, esses usuários poderão redefini-los remotamente do Portal da Empresa do Intune.
 
-Um [apagamento completo](devices-wipe.md) restaura um dispositivo para suas configurações padrão de fábrica e remove todas as configurações e os dados do usuário. Um [apagamento seletivo](devices-wipe.md#selective-wipe) remove apenas os dados da empresa do dispositivo, mas deixa os dados pessoais dos usuários intactos.
+Uma [redefinição de fábrica](devices-wipe.md) restaura um dispositivo para suas configurações padrão de fábrica e remove o dispositivo do gerenciamento do Intune. A [Remoção dos dados da empresa](devices-wipe.md#remove-company-data) remove apenas os dados da empresa do dispositivo, mas deixa os dados pessoais dos usuários intactos.
 
-Depois de iniciado, o dispositivo inicia imediatamente o processo de apagamento seletivo para ser removido do gerenciamento. Quando o processo for concluído, todos os dados da empresa serão excluídos e o nome do dispositivo será removido do portal do Intune. Isso conclui o ciclo de vida de gerenciamento de dispositivo.
+Uma vez iniciada, o dispositivo começa imediatamente o processo de redefinição. Quando o processo for concluído, todos os dados da empresa serão excluídos e o nome do dispositivo será removido do Intune. Isso conclui o ciclo de vida de gerenciamento de dispositivo.

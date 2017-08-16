@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A partir da versão 1704 do Intune, você poderá usar políticas de proteção de aplicativo com o Windows 10 no MAM (gerenciamento de aplicativo móvel) sem o cenário de registro.
+A partir da versão 1704 do Intune, é possível usar políticas de proteção de aplicativo com o Windows 10 para proteger aplicativos sem a necessidade de registrar dispositivos.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -39,17 +39,15 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 
 ### <a name="types-of-apps"></a>Tipos de aplicativos
 
--   **Aplicativos recomendados:** uma lista pré-populada de aplicativos (principalmente do Microsoft Office) que permite que os administradores importem facilmente para a política.
+-   **Aplicativos recomendados:** uma lista pré-populada de aplicativos (principalmente do Microsoft Office) que permite importar facilmente para a política. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Aplicativos da loja:** O administrador pode adicionar qualquer aplicativo da Windows Store à política.
+-   **Aplicativos da loja:** é possível adicionar qualquer aplicativo da Windows Store à política.
 
--   **Aplicativos da área de trabalho do Windows:** O administrador pode adicionar qualquer aplicativo tradicional de área de trabalho do Windows à política (por exemplo, exe, dll, etc.)
+-   **Aplicativos da área de trabalho do Windows:** é possível adicionar qualquer aplicativo tradicional de área de trabalho do Windows à política (por exemplo, .exe, .dll etc.)
 
 ## <a name="pre-requisites"></a>Pré-requisitos
 
-Você precisa configurar o provedor MAM antes de criar uma política de proteção de aplicativo WIP.
-
--   Saiba mais sobre [como configurar seu provedor MAM com o Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Você precisa configurar o provedor MAM antes de criar uma política de proteção de aplicativo WIP. Saiba mais sobre [como configurar seu provedor MAM com o Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Além disso, você precisará ter o seguintes:
 
@@ -58,12 +56,13 @@ Além disso, você precisará ter o seguintes:
 
 > [!IMPORTANT]
 > O WIP não oferece suporte a várias identidades. Pode haver apenas uma identidade gerenciada de cada vez.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>Para adicionar uma política WIP
 
-Depois de configurar o Intune em sua organização, você poderá criar uma política específica WIP por meio do [Portal do Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+Depois de configurar o Intune em sua organização, você poderá criar uma política específica WIP por meio do [Portal do Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Vá para o **painel de gerenciamento de aplicativos móveis do Intune**, escolha **Todas as Configurações** e, em seguida, escolha **Política de aplicativo**.
+1.  Vá para o **painel de gerenciamento de aplicativos móveis do Intune**, escolha **Todas as configurações**, > **Política de aplicativo**.
 
 2.  Na folha **Política de aplicativo**, escolha **Adicionar uma política**, em seguida, insira os seguintes valores:
 
@@ -77,7 +76,7 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 
 3.  Escolha **Criar**. A política é criada e aparece na tabela na folha **Política de Aplicativo**.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Para adicionar aplicativos recomendados à sua lista de aplicativos permitidos
+## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Adicionar aplicativos recomendados à lista de aplicativos permitidos
 
 1.  Na folha **Política de aplicativo**, escolha o nome da política e escolha **Aplicativos permitidos** na folha **Adicionar uma política**. A folha **Aplicativos permitidos** é aberta, mostrando todos os aplicativos que já estão incluídos na lista para esta política de proteção do aplicativo.
 
@@ -85,7 +84,7 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 
 3.  Selecione cada aplicativo que você deseja que acesse seus dados corporativos e escolha **OK**. A folha **Aplicativos permitidos** é atualizada, mostrando todos os aplicativos selecionados.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da Store à sua lista de aplicativos permitidos
+## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da Store à lista de aplicativos permitidos
 
 **Para adicionar um aplicativo da Store**
 
@@ -105,9 +104,9 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 > [!NOTE]
 > Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...)**  no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da Área de Trabalho à sua lista de aplicativos permitidos
+## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da área de trabalho à lista de aplicativos permitidos
 
-**Para adicionar um aplicativo da Área de Trabalho**
+**Adicionar um aplicativo da área de trabalho**
 
 1.  Na folha **Política de aplicativo**, escolha o nome da política e escolha **Aplicativos permitidos.** A folha **Aplicativos permitidos** é aberta, mostrando todos os aplicativos que já estão incluídos na lista para esta política de proteção do aplicativo.
 
@@ -118,67 +117,66 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 4.  Depois de inserir as informações nos campos, escolha **OK** para adicionar o aplicativo a sua lista de **Aplicativos permitidos**.
 
 > [!NOTE]
-> Para adicionar vários **aplicativos da Área de Trabalho** ao mesmo tempo, clique no menu **(…)** no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
+> Para adicionar vários **aplicativos da área de trabalho** ao mesmo tempo, clique no menu **(…)** no final da linha de aplicativo e, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
 
-## <a name="windows-information-protection-wip-learning"></a>Aprendizado de WIP (Proteção de Informações do Windows)
-
+## <a name="wip-learning"></a>Aprendizado de WIP
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Depois de adicionar os aplicativos que deseja proteger com WIP, você precisará aplicar um modo de proteção por meio de **Aprendizado de WIP**.
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-O aprendizado de WIP (Proteção de Informações do Windows) é um relatório que permite que os administradores monitorem seus aplicativos desconhecidos de WIP. Os aplicativos desconhecidos são aqueles que não são implantados pelo departamento de TI da sua organização. O administrador pode exportar esses aplicativos do relatório e adicioná-los a suas políticas de WIP para evitar a interrupção de produtividade antes de imporem o WIP no modo "Ocultar Substituições".
+O Aprendizado de WIP é um relatório que permite monitorar aplicativos com WIP desconhecido. Os aplicativos desconhecidos são aqueles que não são implantados pelo departamento de TI da sua organização. É possível exportar esses aplicativos do relatório e adicioná-los às políticas de WIP para evitar a interrupção de produtividade antes que eles imponham o WIP no modo "Ocultar Substituições".
 
 Recomendamos que você inicie com **Silencioso** ou **Permitir Substituições** durante a verificação com um pequeno grupo que você tenha os aplicativos certos em sua lista de aplicativos permitidos. Depois de terminar, você poderá alterar sua política de imposição final, **Ocultar Substituições**.
 
-#### <a name="what-the-protection-modes-are"></a>Quais são os modos de proteção?
+### <a name="what-are-the-protection-modes"></a>Quais são os modos de proteção?
 
-- **Ocultar Substituições:**
-    - O WIP procura práticas inadequadas de compartilhamento de dados e impede que o usuário conclua a ação.
-    - Isso pode incluir compartilhar informações entre aplicativos protegidos não corporativos e compartilhar dados corporativos entre outras pessoas e dispositivos fora da sua organização.
-<br></br>
+#### <a name="hide-overrides"></a>Ocultar Substituições
+O WIP procura práticas inadequadas de compartilhamento de dados e impede que o usuário conclua a ação. Isso pode incluir compartilhar informações entre aplicativos protegidos não corporativos e compartilhar dados corporativos entre outras pessoas e dispositivos fora da sua organização.
 
-- **Permitir Substituições:**
-    - O WIP procura compartilhamento inadequado de dados, avisando os usuários se eles fizerem algo considerado potencialmente não seguro.
-    - No entanto, esse modo permite que o usuário substitua a política e compartilhe os dados, registrando a ação no log de auditoria.
-<br></br>
-- **Silencioso:**
-    - O WIP é executado silenciosamente, registrando em log o compartilhamento inadequado de dados, sem bloquear nada que tenha solicitado a interação do funcionário enquanto estava no modo Permitir Substituições.
-    - As ações não permitidas, como aplicativos tentando acessar indevidamente um recurso de rede ou dados protegidos por WIP, ainda são interrompidas.
-<br></br>
-- **Desligado (não recomendado):**
-    - O WIP é desativado e não ajuda a proteger ou auditar seus dados.
-    - Depois de desativar o WIP, é feita uma tentativa de descriptografar arquivos marcados por WIP nas unidades conectadas localmente. Lembre-se de que suas informações anteriores de política e a descriptografia não serão reaplicadas automaticamente se você ativar novamente a proteção de WIP.
+#### <a name="allow-overrides"></a>Permitir Substituições
+O WIP procura compartilhamento inadequado de dados, avisando os usuários se eles fizerem algo considerado potencialmente não seguro. No entanto, esse modo permite que o usuário substitua a política e compartilhe os dados, registrando a ação no log de auditoria.
 
-### <a name="to-add-a-protection-mode"></a>Para adicionar um modo de proteção
+#### <a name="silent"></a>Silencioso
+O WIP é executado silenciosamente, registrando em log o compartilhamento inadequado de dados, sem bloquear nada que tenha solicitado a interação do funcionário enquanto estava no modo Permitir Substituições. As ações não permitidas, como aplicativos tentando acessar indevidamente um recurso de rede ou dados protegidos por WIP, ainda são interrompidas.
 
-1.  Na folha **Política de aplicativo**, escolha o nome da política e clique em **Configurações necessárias** na folha **Adicionar Política**.
+#### <a name="off-not-recommended"></a>Desligado (não recomendado)
+O WIP é desativado e não ajuda a proteger ou auditar seus dados.
+
+Depois de desativar o WIP, é feita uma tentativa de descriptografar arquivos marcados por WIP nas unidades conectadas localmente. Lembre-se de que suas informações anteriores de política e a descriptografia não serão reaplicadas automaticamente se você ativar novamente a proteção de WIP.
+
+### <a name="add-a-protection-mode"></a>Adicionar um modo de proteção
+
+1.  Na folha **Política de aplicativo**, escolha o nome da política e, em seguida, escolha **Configurações necessárias**.
 
     ![Captura de tela do modo de aprendizado](./media/learning-mode-sc1.png)
 
-1.  Selecione **Salvar**.
+1.  Escolha **Salvar**.
 
-### <a name="to-use-wip-learning"></a>Para usar o aprendizado de WIP
+### <a name="use-wip-learning"></a>Usar o aprendizado de WIP
 
-1. Vá até o painel do Azure.
+1. Vá até o painel do Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
 3. Escolha **Intune**, o **painel do Intune** é aberto, escolha **Aplicativos Móveis**.
 
-4. Escolha **Aprendizado de WIP** na seção **Monitor**. Você verá os aplicativos desconhecidos registrados pelo Aprendizado de WIP.
+4. Escolha **Aprendizado de WIP** em **Monitor**. Você verá os aplicativos desconhecidos registrados pelo Aprendizado de WIP.
 
 > [!IMPORTANT]
 > Quando os aplicativos estiverem aparecendo no relatório de log do Aprendizado de WIP, você poderá inseri-los em suas políticas de proteção do aplicativo.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>Para implantar sua política de proteção de aplicativo WIP
+## <a name="deploy-your-wip-app-protection-policy"></a>Implantar uma política de proteção de aplicativo WIP
 
 > [!IMPORTANT]
-> Isso se aplica a WIP com gerenciamento de aplicativos móveis (MAM) sem o cenário de registro.
+> Aplica-se ao WIP sem registro de dispositivo.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 Depois que você tiver criado a política de proteção de aplicativo WIP, precisará implantá-la em sua organização usando MAM.
 
-1.  Na folha **Política de aplicativo**, escolha a política de proteção de aplicativo recém-criada, escolha **Grupos de usuários**, em seguida, escolha **Adicionar grupo de usuários**.
+1.  Na folha **Política de aplicativo**, escolha a política de proteção de aplicativo recém-criada e escolha **Grupos de usuários** > **Adicionar grupo de usuários**.
 
     Uma lista de grupos de usuários é aberta, composta por todos os grupos de segurança no Azure Active Directory, na folha **Adicionar grupo de usuários**.
 
-1.  Escolha o grupo ao qual você quer que sua política se aplique e clique em **Selecionar** para implantar a política.
+1.  Escolha o grupo ao qual será aplicada a política e escolha **Selecionar** para implantá-la.

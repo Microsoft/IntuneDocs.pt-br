@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicativos da linha de negócios para que possam ser implantados em dispositivos Windows com o Intune
 
@@ -45,7 +45,7 @@ As etapas a seguir o ajudarão a obter os certificados necessários e assinar os
     ![Localize o certificado do Symantec](./media/wit.gif)
 
 5. **Exportar um certificado de assinatura**<br>
-    Após ter verificado se os certificados estão presentes, você pode exportar o arquivo .pfx para assinar o portal da empresa. Selecione o certificado do Symantec com a “assinatura por código” de **Finalidade**. Clique com o botão direito do mouse no certificado de assinatura por código e selecione **Exportar**.
+    Após ter verificado se os certificados estão presentes, você pode exportar o arquivo .pfx para assinar o portal da empresa. Selecione o certificado do Symantec com a “assinatura por código” de **Finalidade** . Clique com o botão direito do mouse no certificado de assinatura por código e selecione **Exportar**.
 
     ![Exporte o certificado de assinatura](./media/wit-walk-cert2.gif)
 
@@ -64,7 +64,7 @@ As etapas a seguir o ajudarão a obter os certificados necessários e assinar os
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemplo: baixar, assinar e implantar o aplicativo do Portal da Empresa em dispositivos Windows
 
-Você pode implantar o aplicativo do Portal da Empresa em dispositivos Windows, incluindo dispositivos Windows Phone e Windows 10 Mobile, com Intune em vez de instalar da Windows Store. Você deve baixar o aplicativo de Portal da Empresa e assiná-lo com seu certificado.  Isso só é necessário se os usuários não usam o Armazenamento da Empresa e você deseja implantar o Portal da Empresa em dispositivos Windows Phone 8.1.
+É possível implantar o aplicativo do Portal da Empresa em dispositivos Windows (incluindo dispositivos Windows Phone e Windows 10 Mobile) com o Intune em vez de instalar da Microsoft Store. Você deve baixar o aplicativo de Portal da Empresa e assiná-lo com seu certificado.  Isso só é necessário se os usuários não usam o Armazenamento da Empresa e você deseja implantar o Portal da Empresa em dispositivos Windows Phone 8.1.
 
 
 1.  **Baixe o aplicativo do Portal da Empresa**
@@ -75,7 +75,7 @@ Você pode implantar o aplicativo do Portal da Empresa em dispositivos Windows, 
 
     -   WinPhoneCompanyPortal.ps1 – Um script do PowerShell que você pode usar para assinar o arquivo do aplicativo do Portal da Empresa para que ele pode ser implantado em dispositivos Windows Phone 8.1
 
-    Como alternativa, você pode baixar o Portal da Empresa do Windows Phone 8.1 (pacote licenciado offline) ou o Portal da Empresa do Windows 10 (pacote licenciado offline) da [Windows Store para Empresas](http://businessstore.microsoft.com/). O aplicativo de Portal da Empresa precisará ser adquirido com uma licença offline e o pacote apropriado baixado para uso offline. As listagens de plataforma Windows 8 e Windows Phone 8 na seleção fazem referência às suas contrapartes 8.1. Para obter detalhes sobre como fazer isso com o Intune, consulte [Gerenciar aplicativos adquiridos na Windows Store para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Como alternativa, é possível baixar o Portal da Empresa para Windows Phone 8.1 (pacote licenciado offline) ou o Portal da Empresa para Windows 10 (pacote licenciado offline) da [Microsoft Store para Empresas](http://businessstore.microsoft.com/). O aplicativo de Portal da Empresa precisará ser adquirido com uma licença offline e o pacote apropriado baixado para uso offline. As listagens de plataforma Windows 8 e Windows Phone 8 na seleção fazem referência às suas contrapartes 8.1. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Gerenciar aplicativos adquiridos na Microsoft Store para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Baixar o SDK do Windows Phone** Baixe o SDK do Windows Phone 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) e instale o SDK em seu computador. O SDK é necessário para gerar um token de registro do aplicativo.
 
@@ -144,12 +144,12 @@ O certificado da Symantec usado para implantar aplicativos móveis do Windows e 
 5.  Assine todos aplicativos de linha de negócios de empresa novos e atualizados usando o novo certificado. Os aplicativos existentes não precisam ser assinados e reimplantados.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Implantar manualmente o aplicativo Portal da Empresa para Windows 10
-Você pode implantar manualmente o aplicativo Portal da Empresa para Windows 10 diretamente do Intune, mesmo que ainda não tenha integrado o Intune com a Windows Store para Empresas.
+É possível pode implantar manualmente o aplicativo Portal da Empresa para Windows 10 diretamente do Intune, mesmo que ele ainda não esteja integrado com a Microsoft Store para Empresas.
 
  > [!NOTE]
  > Essa opção exigirá a implantação manual das atualizações sempre que uma atualização do aplicativo for lançada.
 
-1. Faça logon em sua conta na [Windows Store para Empresas](https://www.microsoft.com/business-store) e adquira a versão da **licença offline** do aplicativo Portal da Empresa.  
+1. Faça logon na sua conta da [Microsoft Store para Empresas](https://www.microsoft.com/business-store) e adquira a versão do aplicativo Portal da Empresa com **licença offline**.  
 2. Assim que o aplicativo for adquirido, selecione-o na página **Inventário**.  
 3. Selecione **Todos os dispositivos do Windows 10** como a **Plataforma**, em seguida, a devida **Arquitetura** e baixe. Um arquivo de licença do aplicativo não é necessário para este aplicativo.
 ![Imagem de todos os dispositivos do Windows 10 e detalhes do Pacote de Arquitetura do X86 para Download](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Se o aplicativo Portal da Empresa para Windows 10 for assinado e implantado dess
 Aqui está como assinar e implantar o aplicativo desta forma:
 
 1. Baixe o Aplicativo Portal da Empresa para Windows 10 do Microsoft Intune Assinando o Script em [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Esse script requer o SDK do Windows para o Windows 10 ser instalado no computador host. Para baixar o SDK do Windows para o Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Baixe o aplicativo Portal da Empresa para Windows 10 na Windows Store para Empresas, como descrito acima.  
+2. Baixe o aplicativo Portal da Empresa para Windows 10 na Microsoft Store para Empresas, como descrito acima.  
 3. Execute o script com os parâmetros de entrada detalhados no cabeçalho do script para assinar o aplicativo Portal da Empresa para Windows 10 (extraído abaixo). As dependências não precisam ser passada para o script. Só são necessárias quando o aplicativo está sendo carregado para o Console de Administração do Intune.
 
 |Parâmetro | Descrição|

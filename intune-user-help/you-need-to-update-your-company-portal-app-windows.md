@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7bf3c9bce6d29467ad44f5c1adaa213616cc602e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dd28f96d7664d1b1daee9a0f99fa5800f05a30b5
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Seu aplicativo do Portal da Empresa para Windows está desatualizado
 
-É necessário atualizar o aplicativo do Portal da Empresa para continuar a acessar o email corporativo, os contatos e os documentos. Para corrigir isso, abra a **Windows Store** e instale a nova versão do aplicativo do **Portal da Empresa**.
+É necessário atualizar o aplicativo do Portal da Empresa para continuar a acessar o email corporativo, os contatos e os documentos. Para corrigir isso, abra a **Microsoft Store** e instale a nova versão do aplicativo do **Portal da Empresa**.
 
 Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
