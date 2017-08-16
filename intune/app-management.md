@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -87,17 +87,17 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 
 ### <a name="monitor"></a>Monitor
 - **Aplicativos Licenciados** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos.
-    - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
+    - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md)
 - **Aplicativos descobertos** – Mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.
 - **Status de instalação do aplicativo** – Mostra o status de uma atribuição de aplicativo que você criou.
 - **Status de proteção do aplicativo** – mostra o status de uma política de proteção de aplicativo para um usuário selecionado.
 
 Para obter detalhes, consulte [Monitorar aplicativos](apps-monitor.md)
 
-### <a name="setup"></a>Setup
+### <a name="setup"></a>Configuração
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store para Empresas** – configure a integração com a Windows Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças.
-    - [Aplicativos da Windows Store para Empresas comprados por volume](windows-store-for-business.md)
+- **Microsoft Store para Empresas** – Configure a integração com a Microsoft Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças.
+    - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md)
 - **Identidade visual do Portal da Empresa** – personalize o Portal da Empresa para dar a identidade visual de sua empresa.
     - [Configuração do Portal da Empresa](company-portal-app.md)

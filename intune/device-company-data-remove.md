@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,35 @@ ms.technology:
 ms.assetid: f021e95f-157f-4e8a-9253-1cff03d6ee3e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39acd12333e9685f94d23416fb1a61ce93f45476
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b0cc7d62770057ff9df5a36e6e5df58b29430534
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="remove-company-data-from-intune-managed-devices"></a>Remover dados da empresa de dispositivos gerenciados pelo Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A opção **Remover dados da empresa** remove somente os dados da empresa de dispositivos gerenciados pelo Intune. Não remove dados pessoais do dispositivo. O dispositivo não será mais gerenciado pelo Intune e não será capaz de acessar recursos corporativos (sem suporte para dispositivos Windows que fazem parte do Azure Active Directory).
+A ação de dispositivo **Remover dados da empresa** remove somente os dados da empresa de dispositivos gerenciados pelo Intune. A ação não remove dados pessoais do dispositivo. Após a remoção, o dispositivo não será gerenciado pelo Intune e não poderá mais acessar os recursos corporativos.
+
+## <a name="supported-platforms"></a>Plataformas com Suporte
+
+- Windows – Com suporte (sem suporte para dispositivos Windows associados ao Azure Active Directory)
+- Windows Phone – Com suporte
+- iOS – Com suporte
+- macOS – Com suporte
+- Android – Com suporte
+
+## <a name="how-to-remove-company-data"></a>Como remover os dados da empresa
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Dispositivos**.
 4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
 5. Na lista de dispositivos gerenciados, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivo **Remover dados da empresa**.
+
+## <a name="next-steps"></a>Próximas etapas
 
 Para ver o status da ação que você acabou de realizar, na folha **Dispositivos e grupos**, escolha **Ações de Dispositivo**.

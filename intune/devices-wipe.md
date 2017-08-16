@@ -1,12 +1,12 @@
 ---
-title: Apagamento completo ou seletivo em dispositivos usando o Intune
+title: "Redefinição de fábrica ou remoção dos dados da empresa em dispositivos que usam o Intune"
 titleSuffix: Intune on Azure
-description: "Saiba como fazer um apagamento seletivo dos dados da empresa em um dispositivo ou um apagamento completo para redefinir o dispositivo para as configurações de fábrica."
+description: "Saiba como remover os dados da empresa de um dispositivo ou redefini-lo para as configurações de fábrica."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,64 +14,40 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="use-full-or-selective-wipe"></a>Usar o apagamento completo ou seletivo
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remova dispositivos por meio da redefinição de fábrica ou remova os dados da empresa
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Você pode apagar os aplicativos e dados de dispositivos gerenciados pelo Intune que não são mais necessários, que estão sendo realocados ou estão ausentes. Para isso, o Intune fornece funcionalidades de apagamento completo e apagamento seletivo. Os usuários também podem emitir um comando de apagamento remoto de dados no dispositivo do aplicativo de Portal da Empresa do Intune em dispositivos privados registrados no Intune.
+É possível remover dispositivos do Intune que não são mais necessários, que estão sendo realocados ou estão ausentes. Para isso, emita um comando **remover os dados da empresa** ou **redefinição de fábrica**. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos de propriedade pessoal registrados no Intune.
 
-  > [!NOTE]
-  > Este tópico trata apenas do apagamento de dispositivos gerenciados pelo gerenciamento de dispositivo móvel do Intune. Você também pode usar o [portal do Azure](https://portal.azure.com) para [apagar dados da empresa dos aplicativos](https://docs.microsoft.com/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune). Você também pode [desativar computadores gerenciados com o software cliente do Intune](https://docs.microsoft.com/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune).
+> [!NOTE]
+> Antes de remover um usuário do Azure Active Directory, emita um comando de **Redefinição de fábrica** ou **Remover os dados da empresa** para todos os dispositivos associados a esse usuário. Caso os usuários com dispositivos gerenciados sejam removidos do Azure Active Directory, o Intune não poderá emitir os comandos de redefinição de fábrica ou remoção dos dados da empresa para esses dispositivos.
 
-## <a name="full-wipe"></a>Apagamento completo
+## <a name="factory-reset"></a>Redefinição de fábrica
 
-O **Apagamento Completo** restaura um dispositivo para suas configurações padrão de fábrica, removendo todas as configurações e os dados da empresa e do usuário. O dispositivo é removido do Intune. O apagamento completo é útil para redefinir um dispositivo antes de fornecê-lo a um novo usuário ou quando o dispositivo é roubado ou perdido.  **Tenha cuidado ao selecionar o apagamento completo. Os dados no dispositivo não podem ser recuperados**.
+A **Redefinição de fábrica** restaura um dispositivo para suas configurações padrão de fábrica, removendo todas as configurações e os dados da empresa e do usuário. O dispositivo é removido do gerenciamento do Intune. A redefinição de fábrica é útil para redefinir um dispositivo antes de cedê-lo a um novo usuário ou quando o dispositivo é roubado ou perdido. Tenha cuidado ao selecionar a redefinição de fábrica. Os dados no dispositivo não podem ser recuperados.
 
+### <a name="to-factory-reset-a-device"></a>Restaurar configurações de fábrica do dispositivo
 
-> [!Warning]
-> Dispositivos Windows 10 RTM (dispositivos anteriores ao Windows 10 versão 1511) com menos de 4 GB de RAM podem se tornar inacessíveis se forem apagados. Para acessar um dispositivo Windows 10 que parou de responder, você pode inicializar o dispositivo de uma unidade USB.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+4. Escolha o nome do dispositivo que você deseja redefinir para as configurações de fábrica.
+5. Na folha que mostra o nome do dispositivo, escolha **Redefinição de fábrica** e selecione **Sim** para confirmá-la.
 
+Se o dispositivo estiver ligado e conectado, um comando de redefinição de fábrica levará menos de 15 minutos para ser propagado para todos os tipos de dispositivo.
 
-**Para realizar uma apagamento completo (redefinição de fábrica) de um dispositivo**:
+## <a name="remove-company-data"></a>Remover os dados da empresa
 
-1.  Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+O comando **remover os dados da empresa** remove os dados de aplicativos gerenciados (quando for o caso), configurações e perfis de email atribuídos pelo Intune. O comando remover os dados da empresa deixa os dados pessoais do usuário no dispositivo. O dispositivo é removido do gerenciamento do Intune. As tabelas a seguir descrevem quais dados são removidos e o efeito nos dados que permaneceram no dispositivo após a remoção dos dados da empresa.
 
-2.  Escolha o nome do dispositivo que você deseja apagar.
-
-3.  Na folha que mostra o nome do dispositivo, escolha **Redefinição de fábrica** e selecione **Sim** para confirmar o apagamento.
-
-Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
-
-### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para excluir dispositivos no portal do Active Directory do Azure
-
-1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou clique em **Administrador** &gt; **Azure AD** de [https://portal.office.com](https://portal.office.com).
-
-2.  Faça logon com sua ID da organização usando o link no lado esquerdo da página.
-
-3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
-
-4.  Selecione **Active Directory** e selecione sua organização.
-
-5.  Selecione a guia **Usuários** .
-
-6.  Selecione o usuário cujos dispositivos que deseja excluir.
-
-7.  Escolha **Dispositivos**.
-
-8.  Remova os dispositivos conforme apropriado, como aqueles que não estão mais em uso, ou aqueles que têm definições imprecisas.
-
-
-## <a name="selective-wipe"></a>Apagamento seletivo
-
-O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (gerenciamento de aplicativo móvel), quando aplicável, configurações e perfis de email do dispositivo. O apagamento seletivo deixa os dados pessoais do usuário no dispositivo. O dispositivo é removido do Intune. As tabelas a seguir descrevem quais dados são removidos e o efeito nos dados que permaneceram no dispositivo após o apagamento seletivo. (As tabelas são organizadas por plataforma).
-
-**iOS**
+### <a name="ios"></a>iOS
 
 |Tipo de dados|iOS|
 |-------------|-------|
@@ -82,10 +58,10 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Agente de gerenciamento|O perfil de gerenciamento é removido.|
 |Email|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
 |Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.|
-|Sair do Active Directory do Azure (AAD)|O registro no AAD é removido.|
-|Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
+|Sair do Azure Active Directory (AAD)|O registro no Azure AD é removido.|
+|Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
-**Android**
+### <a name="android"></a>Android
 
 |Tipo de dados|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -100,30 +76,42 @@ O **apagamento seletivo** remove os dados da empresa, incluindo dados de MAM (ge
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
 |Email|N/D (não há suporte para perfis de email em dispositivos Android)|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
 |Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|
-|Sair do Active Directory do Azure (AAD)|Registro no AAD removido.|Registro no AAD removido.|
-|Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
+|Sair do Azure Active Directory (AAD)|Registro do Azure AD removido.|Registro do Azure AD removido.|
+|Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
-**Android for Work**
+### <a name="android-for-work"></a>Android for Work
 
-Executar a limpeza seletiva em um dispositivo Android para Trabalho remove todos os dados, os aplicativos e as configurações no perfil de trabalho nesse dispositivo. Isso desativa o dispositivo de gerenciamento com o Intune. Não há suporte para o apagamento completo no Android para Trabalho.
+Executar a remoção dos dados da empresa em um dispositivo Android for Work remove todos os dados, aplicativos e as configurações no perfil de trabalho nesse dispositivo. Isso desativa o dispositivo de gerenciamento com o Intune. Não há suporte para a redefinição de fábrica no Android for Work.
 
-**Windows**
+### <a name="windows"></a>Windows
 
 |Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicativos da empresa e dados associados instalados pelo Intune|Arquivos protegidos por EFS terão sua chave revogada e o usuário não conseguirá abrir os arquivos.|Não removerão aplicativos da empresa.|Aplicativos instalados originalmente por meio do portal da empresa são desinstalados. Dados de aplicativo da empresa são removidos.|Os aplicativos são desinstalados e a chaves de sideload são removidas.|
+|Aplicativos da empresa e dados associados instalados pelo Intune|Arquivos protegidos por EFS terão sua chave revogada e o usuário não conseguirá abrir os arquivos.|Não removerão aplicativos da empresa.|Aplicativos instalados originalmente por meio do portal da empresa são desinstalados. Dados de aplicativo da empresa são removidos.|Os aplicativos são desinstalados e a chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criadores) e em versões posteriores, os aplicativos do Office 365 ProPlus não serão removidos.|
 |Configurações|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|As configurações definidas pela política do Intune deixam de ser impostas e os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|Não há suporte.|Removidos.|
 |Configurações do perfil de certificado|Certificados removidos e revogados.|Certificados removidos e revogados.|Não há suporte.|Certificados removidos e revogados.|
 |Email|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows.|Não há suporte.|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS, que inclui o aplicativo Mail para emails e anexos do Windows. Remove contas de email que foram provisionadas pelo Intune.|
-|Sair do Active Directory do Azure (AAD)|Não.|Não.|Registro no AAD removido.|Não aplicável. O Windows 10 não dá suporte ao apagamento seletivo de dispositivos associados ao Azure Active Directory.|
+|Sair do Azure Active Directory (AAD)|Não.|Não.|Registro do Azure AD removido.|Não aplicável. O Windows 10 não oferece suporte à remoção de dados da empresa em dispositivos associados ao Azure Active Directory.|
 
-**Para realizar um apagamento seletivo**:
+### <a name="to-remove-company-data"></a>Remover os dados da empresa
 
-1.  Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+3. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+4. Escolha o nome do dispositivo do qual você deseja remover os dados da empresa.
+5. Na folha que mostra o nome do dispositivo, escolha **Remover os dados da empresa** e, em seguida, escolha **Sim** para confirmar a remoção.
 
-2.  Escolha o nome do dispositivo que você deseja apagar.
+Se o dispositivo estiver ligado e conectado, um comando de remoção de dados levará menos de 15 minutos para ser propagado para todos os tipos de dispositivo.
 
-3.  Na folha que mostra o nome do dispositivo, escolha **Remover dados da emp...** (significa Remover dados da empresa) e escolha **Sim** para confirmar o apagamento.
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Excluir dispositivos do portal do Azure Active Directory
 
-Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
+Por conta de problemas de comunicação ou dispositivos ausentes, pode ser necessário excluir dispositivos do Azure Active Directory (AAD). O comando de exclusão não remove um dispositivo do gerenciamento, mas é possível usar **Excluir** para remover registros de dispositivo do console do Azure que você sabe que estão inacessíveis e provavelmente não se comunicarão com o Azure novamente.
+
+1.  Entre no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com suas credenciais de administrador. Também é possível entrar no [portal do Office 365](https://portal.office.com) e, em seguida, escolher **Administrador** &gt; **Azure AD** usando o link no lado esquerdo da página.
+3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
+4.  Selecione **Active Directory** e selecione sua organização.
+5.  Selecione a guia **Usuários** .
+6.  Selecione o usuário cujos dispositivos que deseja excluir.
+7.  Escolha **Dispositivos**.
+8.  Remova os dispositivos conforme apropriado, como aqueles que não estão mais em uso, ou aqueles que têm definições imprecisas.

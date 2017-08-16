@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Conectar-se ao Data Warehouse com o Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos, gerados dinamicamente para seu locatário do Intune. O arquivo do Data Warehouse Power BI (pbix) contém as configurações de conexão para seu locatário e os seguintes exemplos de relatórios e gráficos: 
+Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos, gerados dinamicamente para seu locatário do Intune. O arquivo do Data Warehouse Power BI (pbix) contém as configurações de conexão para seu locatário e os seguintes exemplos de relatórios e gráficos:  
 
   -  Dispositivos
   -  Registro
@@ -46,8 +46,11 @@ Instale a última versão do Power BI Desktop. Você pode baixar o Power BI Desk
 
 O arquivo do Power BI (pbix) contém informações de conexão para seu locatário e um conjunto de relatórios predefinidos com base no modelo de dados do Data Warehouse. Abra o arquivo no Power BI Desktop e entre no Azure AD. O relatório carrega os dados de seu locatário do Intune.
 
+> [!Important]  
+> Cada arquivo do Power BI (pbix) pode ser diferente, dependendo do local do locatário. Se você estiver gerenciando vários locatários do Intune, certifique-se de usar o arquivo baixado do portal do Azure enquanto estiver conectado a esse locatário.  
+
 1.  Entre no portal do Azure e selecione **Monitoring + Management** > **Intune**. Também é possível pesquisar recursos para o **Intune**.  
-2.  Abra a folha **API Microsoft Intune Data Aarehouse (Visualização)**.
+2.  Abra a folha **API Microsoft Intune Data Warehouse (Versão Prévia)**.
 3.  Clique em **Baixar arquivo do PowerBI**. O arquivo com uma extensão (pbix) é baixado no local especificado.
 4.  Abra o arquivo com o Power BI. O *Intune Data Warehouse Reports* é carregado, mas pode levar alguns segundos para obter os dados de seu locatário.
 5.  Clique em **Atualizar** para carregar os dados de locatário e examinar os relatórios.

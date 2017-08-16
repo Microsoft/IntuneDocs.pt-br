@@ -2,8 +2,8 @@
 title: "Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune"
 description: "Criar e implantar a política de proteção do aplicativo WIP com o Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7aa879307ef3b72660d1ba7b3c3c2f99fc82dc97
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 78352c995311f5b097954ce86098165408d5d810
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -35,6 +35,13 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 -   **Aplicativos permitidos**: estes são os aplicativos que precisam atender a esta política.
 
 -   **Aplicativos isentos**: estes aplicativos são isentos desta política e podem acessar dados corporativos sem restrições.
+
+> [!IMPORTANT]  
+> O Intune recomenda adicionar o aplicativo do Portal da Empresa à lista de aplicativos isentos, a fim de permitir que ele funcione corretamente. Para fazer isso, adicione o seguinte **aplicativo da Store** à lista de **aplicativos isentos**:  
+>   - Nome: Portal da Empresa  
+>   - Publicador: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
+>   - Nome do produto: Microsoft.CompanyPortal”  
+
 
 ### <a name="types-of-apps"></a>Tipos de aplicativos
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Redefinir a senha em dispositivos Windows integrado com o Serviço de Redefinição de PIN da Microsoft usando o Intune
 
 A capacidade de redefinição de senha para dispositivos Windows integra-se com o Serviço de Redefinição de PIN da Microsoft para permitir que você gere uma nova senha para dispositivos que executam o Windows 10 Mobile. Os dispositivos devem executar a Atualização do Windows 10 para Criadores ou posterior.
+
+## <a name="supported-platforms"></a>Plataformas com Suporte
+
+- Windows – Com suporte na Atualização do Windows 10 para Criadores e versões posteriores (ingressado no Azure AD)
+- Windows Phone – Sem suporte
+- iOS – Sem suporte
+- macOS – Sem suporte
+- Android – Sem suporte
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -40,13 +48,14 @@ Antes de redefinir remotamente a senha em dispositivos Windows que você pode ge
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar os dispositivos do Windows para usar a redefinição de PIN
 
-Para configurar a redefinição de PIN nos dispositivos Windows que você gerencia, use uma [política de dispositivo personalizado do Intune Windows 10](custom-settings-windows-10.md) para habilitar o recurso. Configure a política usando os seguintes CSPs (provedores de serviços de configuração) de política do Windows:
+Para configurar a redefinição de PIN nos dispositivos Windows que você gerencia, use uma [política de dispositivo personalizado do Intune Windows 10](custom-settings-windows-10.md) para habilitar o recurso. Configure a política usando os seguintes CSPs (provedores de serviços de configuração de política) do Windows:
 
 
-- **Para usuários** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery**
 
-Ambos os valores para esses CSPs devem ser definidos como **True**.
+*ID do locatário* refere-se à ID de Diretório do Azure Active Directory que pode ser obtida na página **Propriedades** do Azure Active Directory.
+
+Defina o valor dessa CSP como **True**.
 
 ## <a name="steps-to-reset-the-passcode"></a>Etapas para redefinir a senha
 

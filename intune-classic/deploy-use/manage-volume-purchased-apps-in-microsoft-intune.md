@@ -14,11 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4527f7ccf1125992841b8f317024cc64837484ab
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Gerenciar aplicativos adquiridos por volume que usam o Microsoft Intune
 
@@ -30,8 +30,8 @@ O Microsoft Intune ajuda a gerenciar aplicativos adquiridos por meio de um progr
 
 ## <a name="which-types-of-apps-can-you-manage"></a>Que tipos de aplicativos você pode gerenciar?
 
-Com o Intune, é possível gerenciar aplicativos adquiridos com base em volume na loja de aplicativos iOS e na Windows Store para Empresas.
+Com o Intune, é possível gerenciar aplicativos adquiridos por volume na loja de aplicativos do iOS e na Microsoft Store para Empresas.
 Para descobrir como gerenciar aplicativos licenciados de cada loja, escolha um dos tópicos a seguir:
 
 - [Gerenciar aplicativos adquiridos por volume do iOS](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-- [Gerenciar aplicativos adquiridos por volume da Windows Store para Empresas](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
+- [Gerenciar aplicativos adquiridos por volume da Microsoft Store para Empresas](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
