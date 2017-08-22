@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -35,7 +35,6 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 Pro
 - O Intune somente dá suporte a aplicativos do Office do pacote do Office 365 ProPlus 2016.
 - Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, os usuários finais poderão perder dados de arquivos não salvos.
 - Não há suporte para esse método de instalação em dispositivos do Windows 10S.
-- Se você atribuir esse tipo de aplicativo como Disponível e tiver como destino vários usuários com as diferentes atribuições, eles verão apenas a atribuição direcionada mais recentemente.
 - O Intune não oferece suporte à instalação de aplicativos da área de trabalho do Office 365 da Windows Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
 
 
