@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Conectar-se ao Data Warehouse com o Power BI
 
@@ -60,18 +60,20 @@ O arquivo do Power BI (pbix) contém informações de conexão para seu locatár
 
 Com um cliente autenticado no Azure AD, o URL do OData se conecta ao ponto de extremidade RESTful na API do Data Warehouse que expõe o modelo de dados para o cliente de relatório. Siga estas instruções para usar o Power BI Desktop para se conectar e criar seus próprios relatórios. Você não está limitado ao Power BI Desktop, mas pode usar sua ferramenta favorita de análise com a URL do OData, desde que o cliente dê suporte à autenticação OAuth 2.0 e ao padrão de v 4.0 OData.
 
-1.  Recupere o **URL do OData** da folha de relatório, por exemplo, `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
-2.  Abra o **Power BI Desktop**.
-3.  Selecione **Início** > **Obter dados**. Selecione **feed de OData**.
-4.  Escolha **básica**.
-5.  Digite ou cole a **URL do OData** na caixa de URL.
-6.  Clique em **OK**.
-7.  Se você não tiver se autenticado no Azure AD para seu locatário por meio do cliente do Power BI Desktop, digite suas credenciais.  
-    a.  Selecione **Conta organizacional**.  
-    b.  Digite seu nome de usuário e senha.  
-    c.  Clique em **Entrar.**  
-    d.  Clique em **Conectar**.  
-8.  Clique em **Carregar**.
+1.  Entre no portal do Azure e selecione **Monitoring + Management** > **Intune**. Também é possível pesquisar recursos para o **Intune**.  
+2.  Abra a folha **API Microsoft Intune Data Warehouse (Versão Prévia)**.
+3. Recupere a URL do feed personalizado da folha de relatório, por exemplo, `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+4. Abra o **Power BI Desktop**.
+5. Selecione **Início** > **Obter dados**. Selecione **feed de OData**.
+6. Escolha **básica**.
+7. Digite ou cole a **URL do OData** na caixa de URL.
+8. Clique em **OK**.
+9. Se você não tiver se autenticado no Azure AD para seu locatário por meio do cliente do Power BI Desktop, digite suas credenciais.  
+    1.  Selecione **Conta organizacional**.  
+    2.  Digite seu nome de usuário e senha.  
+    3.  Clique em **Entrar.**  
+    4.  Clique em **Conectar**.  
+10. Clique em **Carregar**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -79,4 +81,4 @@ Você pode encontrar as respostas para perguntas sobre seu ambiente, como o núm
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Os dados de locatário são organizados para ajudar a extrair informações de seus dados. Para obter mais informações sobre como os dados são organizados, consulte [Modelo de dados do Data Warehouse](reports-ref-data-model.md). 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  Você também pode acessar os dados de uma interface RESTful e incorporá-los no seu próprio aplicativo. Para obter mais informações, consulte [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) (Obter dados de API do Data Warehouse com um cliente REST).

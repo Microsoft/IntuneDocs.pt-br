@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Opções de registro para o Intune
 
@@ -41,6 +41,9 @@ Um certificado de Push MDM é necessário para registrar dispositivos iOS e macO
 ## <a name="corporate-identifiers"></a>Identificadores corporativos
 
 Você pode listar os números de IMEI (identificador de equipamento móvel internacional) e números de série para identificar dispositivos corporativos. Saiba mais sobre [identificadores corporativos](corporate-identifiers-add.md).
+## <a name="multi-factor-authentication"></a>Autenticação Multifator
+
+Você pode exigir que os usuários usem um método de verificação adicional, como um telefone, um PIN ou dados biométricos, ao registrar um dispositivo. Saiba mais sobre a [autenticação multifator](multi-factor-authentication.md).
 
 ## <a name="device-enrollment-manager"></a>Gerenciador de registro de dispositivos
 Você pode transformar usuários em gerenciadores de registros de dispositivos.  Usuários DEM podem registrar um grande número de dispositivos móveis com uma única conta de usuário. A conta do DEM (gerenciador de registros de dispositivos) pode registrar até 1.000 dispositivos. Saiba mais sobre [gerenciadores de registros de dispositivos](device-enrollment-manager-enroll.md).

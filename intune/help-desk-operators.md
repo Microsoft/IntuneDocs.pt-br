@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Usar o portal de solução de problemas para ajudar os usuários
 
@@ -41,7 +41,7 @@ Como um administrador do Intune, você pode atribuir a função de Operador de s
 Para adicionar usuários do suporte técnico:
 1. [Adicione usuários ao Intune](users-add.md), se necessário.
 2. [Crie um grupo de suporte técnico](groups-add.md) e adicione usuários ao grupo.
-3. [Atribua a função Operador de Suporte Técnico do RBAC](role-based-access-control.md#built-in-roles)
+3. [Atribua a função Operador de Suporte Técnico do RBAC](role-based-access-control.md#built-in-roles).
 
   ![Captura de tela do portal do Intune mostrando as funções do Intune realçadas e uma lista de funções internas, incluindo Operados de Suporte Técnico](./media/help-desk-user-add.png) Também é possível [criar uma função personalizada](role-based-access-control.md#custom-roles), que pode ser modificada futuramente para conceder acesso a operadores de suporte técnico.  Os operadores de suporte técnico precisam das seguintes permissões para ajudar a solucionar os problemas do usuário:
     - MobileApps: leitura
@@ -61,8 +61,6 @@ A equipe de suporte técnico e os administradores do Intune podem acessar o port
 - Entre no Portal do Azure, escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune** e vá até **Ajuda e Suporte** > **Solucionar Problemas**.
 
 Clique em **Selecionar usuário** para exibir um usuário e os detalhes dele.
-
-![Captura de tela da carga de trabalho de solução de problemas do Microsoft Intune com o link Selecionar Usuário](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Usar o portal de solução de problemas
 

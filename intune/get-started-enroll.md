@@ -1,12 +1,12 @@
 ---
 title: "Introdução ao registro de dispositivos"
 titleSuffix: Intune on Azure
-description: 
+description: "Aprenda a experiência de registro passando por uma experiência completa de registro de um dispositivo iOS."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Introdução ao registro de dispositivos
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Comece a registrar dispositivos
 
 O Microsoft Intune ajuda você a capacitar sua força de trabalho com dispositivos móveis, ao mesmo tempo que mantém seus dados corporativos protegidos. Como os usuários finais interagem com o Intune em seus dispositivos, em vez de no console do administrador, você deve estar familiarizado com a experiência de registro. Dessa forma, você pode combinar as políticas de conformidade bem elaboradas com sua experiência para demonstrar empatia pelos usuários. Isso é especialmente importante porque os usuários saberão exatamente quais informações que você pode ver como um administrador:
 
-## <a name="what-it-cannot-see"></a>O que a equipe de TI não pode ver
-* Histórico de chamadas e de navegação na Web
-* Local
-* Email pessoal
-* Mensagens de texto
-* Contatos
-* Senhas de suas contas pessoais
-* Eventos do calendário
-* Imagens, incluindo o conteúdo do aplicativo de fotos ou as imagens da câmera
-
-## <a name="what-it-can-see"></a>O que a equipe de TI pode ver
-* Modelo
-* Número de série
-* Versão do sistema operacional
-* Nomes de aplicativo
-* Proprietário
-* Nome do dispositivo
-* Fabricante (para dispositivos não fabricados pela Apple)
-* Número de telefone (para dispositivos corporativos, o número completo. Para dispositivos pessoais, apenas os últimos quatro dígitos.)
+| O que a equipe de TI não pode ver | O que a equipe de TI pode ver |
+|---|---|
+| Histórico de chamadas e de navegação na Web | Modelo |
+| Local | Número de série |
+| Email pessoal | Versão do sistema operacional |
+| Mensagens de texto | Nomes de aplicativo |
+| Contatos | Proprietário |
+| Senhas de suas contas pessoais | Nome do dispositivo |
+| Eventos do calendário | Fabricante (para dispositivos não fabricados pela Apple) |
+| Imagens, incluindo o conteúdo do aplicativo de fotos ou as imagens da câmera | Número de telefone (para dispositivos corporativos, o número completo. Para dispositivos pessoais, apenas os últimos quatro dígitos.) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Como registro um dispositivo?
 
@@ -67,3 +56,13 @@ Registrar um dispositivo é a primeira experiência que muitos usuários finais 
 14. Quando a tela for alterada para mostrar que o perfil terminou de instalar, toque em **Concluído**.
 15. Uma mensagem de “Registrando dispositivo” é mostrada na tela e, em seguida, mostra que o dispositivo foi registrado com êxito. Um pop-up será exibido perguntando se a página deve ser aberta no Portal da Empresa. Toque em **Abrir**.
 16. Você voltará para a tela **Configuração de Acesso da Empresa**. Se você não tiver nenhuma política de teste configurada, então o dispositivo deverá aparecer em conformidade. Se você tiver alguma política de teste, tocar em **Conformidade do Dispositivo** mostrará que há coisas que precisam ser feitas para proteger o dispositivo.
+
+## <a name="next-steps"></a>Próximas etapas
+
+[Introdução à adição de aplicativos](get-started-apps.md) – localize e adicione aplicativos em dispositivos para permitir que os funcionários realizem seus trabalhos.
+
+## <a name="learn-more"></a>Saiba mais
+
+* [Opções de registro para o Intune](enrollment-options.md)
+* [Habilitar “Traga seu próprio dispositivo” com o Intune](byod-enable.md)
+* [Ensinando os usuários finais sobre registro e gerenciamento de dispositivo](end-user-educate.md)

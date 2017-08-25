@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar livros eletrônicos do iOS comprados por meio de um programa de compra por volume com o Microsoft Intune
 
@@ -44,7 +44,6 @@ Antes de começar, obtenha um token VPP da Apple e carregue-o em sua conta do In
 * Por padrão, o Intune é sincronizado com o serviço VPP da Apple duas vezes por dia. É possível iniciar uma sincronização manual a qualquer momento.
 * Depois de importar o token do VPP no Intune, não importe o mesmo token em outra solução de gerenciamento de dispositivo. Isso pode resultar na perda de registros de usuário e atribuição de licença.
 * Antes de começar a usar os livros do iOS com o Intune, remova todas as contas de usuário do VPP existentes criadas com outros fornecedores de MDM (gerenciamento de dispositivo móvel). O Intune não sincroniza essas contas de usuário no Intune como uma medida de segurança. O Intune sincroniza somente os dados do serviço Apple VPP criados pelo Intune.
-* No momento, só é possível atribuir livros como uma instalação **Obrigatória**. Quando você atribui o livro como uma instalação **Obrigatória**, cada usuário que instala o livro usa uma licença.
 * Quando você atribui um livro a um dispositivo, esse dispositivo deve ter o aplicativo interno iBooks instalado. Caso contrário, o usuário final deverá reinstalar o aplicativo antes de poder ler o livro. No momento, não é possível usar o Intune para restaurar aplicativos internos removidos.
 * Você pode atribuir somente livros do site do Apple Volume Purchase Program. Não é possível carregar nem, em seguida, atribuir livros que você criou internamente.
 * Atualmente, não é possível atribuir livros a categorias de usuário final da mesma maneira que os aplicativos.
@@ -72,10 +71,10 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir um aplicativo comprado por volume
 
 1. Na carga de trabalho **Livros Eletrônicos**, escolha **Gerenciar** > **Todos os Livros Eletrônicos**.
-2. Na folha da lista de livros, escolha o livro que você deseja atribuir e, depois, selecione “**...**” > **Atribuir Grupos**.
+2. Na folha de lista de livros, escolha o catálogo que deseja atribuir e, em seguida, escolha '**...** ' > **Atribuir Grupos**.
 3. Na folha <*nome do livro*> – **Grupos Atribuídos**, escolha **Gerenciar** > **Grupos Atribuídos**.
 4. Escolha **Atribuir Grupos** e, na folha **Selecionar grupos**, escolha os grupos de usuários do Azure AD aos quais você deseja atribuir o livro. No momento, não há suporte para grupos de dispositivos.
-Escolha a ação de atribuição **Obrigatório**. 
+Escolha uma ação de atribuição **Disponível** ou **Obrigatória**. 
 5. Quando terminar, escolha **Salvar**.
 
 ## <a name="next-steps"></a>Próximas etapas
