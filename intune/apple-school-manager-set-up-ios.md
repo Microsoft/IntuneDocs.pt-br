@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
 
@@ -103,18 +103,16 @@ Um perfil de registro de dispositivo define as configurações aplicadas a um gr
 
     - **Supervisionado** – Um modo de gerenciamento que habilita mais opções de gerenciamento e desabilitou o Bloqueio de Ativação por padrão. Se você deixar a caixa de seleção, terá recursos de gerenciamento limitados.
 
-    - **Registro bloqueado** – (Requer o Modo de Gerenciamento = Supervisionado) Desabilita as configurações de iOS que podem permitir a remoção do perfil de gerenciamento. Se você deixar a caixa de seleção em branco, permitirá que o perfil de gerenciamento seja removido do menu Configurações.
+     - **Registro bloqueado** – (Requer o Modo de Gerenciamento = Supervisionado) Desabilita as configurações de iOS que podem permitir a remoção do perfil de gerenciamento. Se você deixar a caixa de seleção em branco, permitirá que o perfil de gerenciamento seja removido do menu Configurações.
+   - **iPad Compartilhado** – (exige os modos **Registro sem Afinidade de Usuário** e **Supervisionado**.) Permite que vários usuários façam logon em iPads registrados usando uma ID da Apple gerenciada. As IDs da Apple gerenciadas são criadas no portal do Apple School Manager. Saiba mais sobre [iPad compartilhado](education-settings-configure-ios-shared.md).
+   >[!NOTE]
+   >Se **Afinidade do Usuário** estiver definida como **Com afinidade do usuário** ou o modo **Supervisionado** estiver definido como **Desativado**, o modo iPad compartilhado será desabilitada para o perfil de registro.
 
-  - **iPad Compartilhado** – (exige os modos **Registro sem Afinidade de Usuário** e **Supervisionado**.) Permite que vários usuários façam logon em iPads registrados usando uma ID da Apple gerenciada. As IDs da Apple gerenciadas são criadas no portal do Apple School Manager.
-
-  >[!NOTE]
-  >Se **Afinidade do Usuário** estiver definida como **Com afinidade do usuário** ou o modo **Supervisionado** estiver definido como **Desativado**, o modo iPad compartilhado será desabilitada para o perfil de registro.
-
-  - **Máximo de Usuários Armazenados em Cache** – (exige **iPad Compartilhado** = **Sim**) cria uma partição no dispositivo para cada usuário. O valor recomendado é o número de alunos que provavelmente usarão o dispositivo durante um período. Por exemplo, se seis alunos usarem o dispositivo regularmente durante a semana, defina esse número como seis.  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **Permitir Emparelhamento** – Especifica se os dispositivos iOS podem sincronizar com computadores. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em **Certificados do Apple Configurator**.
 
-    - **Certificados do Apple Configurator** – Se que você escolheu **Permitir Apple Configurator por certificado** em **Permitir Emparelhamento**, escolha um Certificado do Apple Configurator para ser importado.
+      - **Certificados do Apple Configurator** – Se que você escolheu **Permitir Apple Configurator por certificado** em **Permitir Emparelhamento**, escolha um Certificado do Apple Configurator para ser importado.
 
 7. Escolha as **Configurações de Assistente de Instalação**, defina as seguintes configurações de perfil e, em seguida, escolha **Salvar**:
 

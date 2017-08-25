@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Como os usuários Android podem obter aplicativos
 
@@ -32,6 +32,14 @@ Use estas informações para entender como e onde os usuários finais do Android
 | ------------- |-------------| -----|
 | Aplicativos disponíveis      | Os usuários tocam em **instalar** no Portal da Empresa. É exibida uma notificação, que os usuários tocam para iniciar a instalação. Após a instalação ser bem-sucedida, a notificação desaparece. | Os usuários tocam no aplicativo no Portal da Empresa e são levados para uma página do aplicativo na Play Store, em que podem iniciar a instalação.|
 | Required apps      | Os usuários veem uma notificação, que não podem ignorar, indicando que eles precisam instalar um aplicativo. Os usuários tocam a notificação para iniciar a instalação. Após a instalação ser bem-sucedida, a notificação desaparece.    | Os usuários veem uma notificação, que não podem ignorar, indicando que eles precisam instalar um aplicativo. Os usuários tocam na notificação e são levados para uma página do aplicativo na Play Store, em que podem iniciar a instalação. Após a instalação ser bem-sucedida, a notificação desaparece. |
+
+Os usuários finais precisam permitir a instalação de fontes desconhecidas para instalar [Aplicativos LOB](lob-apps-android.md). Normalmente, essa opção encontra-se em dois locais diferentes:
+
+* **Android 7.1.2 e inferior**: **Configurações** > **Segurança** > **Fontes desconhecidas**
+* **Android 8.0 e posterior**: **Configurações** > **Aplicativos e notificações** > **Acesso a aplicativo especial** > **Instalar aplicativos desconhecidos** > **Portal da Empresa** > **Permitir desta fonte**
+
+Se isso ocorrer, o aplicativo Portal da Empresa informará e orientará o usuário final diretamente para a configuração apropriada. 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Dispositivos Samsung Knox Standard Android
 
