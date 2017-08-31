@@ -4,7 +4,7 @@ description: "O SDK do Intune App está disponível para as plataformas Android 
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Visão geral do SDK do Aplicativo do Intune
 O SDK do Aplicativo do Intune, disponível para iOS e Android, habilita o aplicativo para as políticas de proteção do aplicativo do Intune. Ele se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Você descobrirá que é possível habilitar a maioria dos recursos do SDK sem alterar o comportamento do seu aplicativo. Para o usuário final avançado e a experiência do administrador de TI, você pode usar nossas APIs para personalizar o comportamento do seu aplicativo para recursos que exigem a participação do seu aplicativo.
@@ -62,8 +62,7 @@ O recurso de várias identidades ajuda a resolver o problema de proteção de da
 ### <a name="app-protection-without-device-enrollment"></a>Proteção do aplicativo sem registro de dispositivo
 
 >[!IMPORTANT]
->A proteção do aplicativo do Intune sem registro de dispositivo ainda não está disponível no SDK do Aplicativo do Intune para Android. Ela está disponível nas Ferramentas de Disposição do Aplicativo do Intune, no SDK para iOS, Componente do Xamarin no SDK e Plug-in do Cordova no SDK.
-
+>A proteção de aplicativos do Intune sem registro de dispositivo está disponível com as Ferramentas de Encapsulamento de Aplicativos do Intune, o SDK de Aplicativo do Intune para Android, o SDK de Aplicativo do Intune para iOS, o componente Xamarin do SDK e o plug-in Cordova do SDK.
 
 Muitos usuários com dispositivos pessoais desejam acessar dados corporativos sem registrar seus dispositivos pessoais em um provedor de MDM (gerenciamento de dispositivo móvel). Como o registro de MDM exige o controle global do dispositivo, os usuários costumam hesitar em fornecer o controle de seus dispositivos pessoais à empresa.
 
