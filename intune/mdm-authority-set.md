@@ -6,20 +6,20 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 4eb211fdeb8c51b67edc08f956c99c2af8319679
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Defina a autoridade de gerenciamento de dispositivo móvel
 
@@ -41,13 +41,13 @@ No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão
 ## <a name="set-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
 
 1. No [Portal do Azure](https://portal.azure.com), escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-2. Na folha Intune, escolha **Registro de dispositivo** e escolha **Visão Geral**.
-![Captura da tela de definição de autoridade de gerenciamento de dispositivo móvel do Intune](media/set-mdm-auth.png)
-
+2. Selecione a faixa laranja para abrir a configuração **Autoridade de Gerenciamento de Dispositivo Móvel**.
 3. Em **Autoridade de Gerenciamento de Dispositivo Móvel**, escolha sua autoridade de MDM entre as seguintes opções:
   - **Autoridade de MDM do Intune**
   - **Autoridade de MDM do Configuration Manager**
   - **Nenhum**
+
+  ![Captura da tela da definição de autoridade de gerenciamento de dispositivo móvel do Intune](media/set-mdm-auth.png)
 
   Uma mensagem indica que você configurou com êxito sua autoridade MDM Intune.
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 Saiba quais atualizações foram feitas na interface do usuário para os aplicativos que os usuários finais vão encontrar nesta versão do Microsoft Intune. Isso pode ajudá-lo nas comunicações com usuários e na atualização da documentação personalizada que você criou para dar suporte à sua implantação. Isso também pode ajudá-lo a entender como solucionar melhor os problemas enfrentados caso seja necessário ligar para a assistência técnica para obter suporte usando o Portal da Empresa.
 
+## <a name="week-of-august-21-2017"></a>Semana de 21 de agosto de 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>As caixas de diálogo de MAM (gerenciamento de aplicativo móvel) do Intune móvel terão uma interface moderna <!-- 1199015 -->
+
+As caixas de diálogo de MAM (gerenciamento de aplicativo móvel) do Intune serão atualizadas com uma aparência moderna. As caixas de diálogo funcionarão da mesma maneira que no estilo anterior.
+
+**Experiência anterior**
+
+![interface antiga](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Experiência moderna**
+
+![interface moderna](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Semana de 14 de agosto de 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Atualizações da página "Detalhes do Dispositivo" no aplicativo Portal da Empresa para Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Atualizações da página "Detalhes do Dispositivo" no aplicativo Portal da Empresa para Windows 10 <!---1287448--->
 
 O aplicativo Portal da Empresa para Windows 10 está movendo a marca __Categoria__, que ficava abaixo do título, para que ela seja exibida como uma propriedade na página __Detalhes do Dispositivo__.
 
 ![A tela "Detalhes do Dispositivo" do aplicativo Portal da Empresa para Windows, que agora mostra o campo "Categorias" como uma propriedade em vez de diretamente abaixo do título dessa tela.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Semana de 31 de julho de 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>As páginas de detalhes de aplicativos exibirão novas informações para dispositivos Android <!--1287476-->
+
+A página de detalhes de aplicativos do aplicativo Portal da Empresa para Android agora exibirá as categorias de aplicativos que o administrador de TI tiver definido para esse aplicativo.
+
+![A nova página de detalhes de aplicativos](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Experiência de início de sessão aprimorada em aplicativos Portal da Empresa para todas as plataformas <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ De acordo com os comentários dos usuários, o aplicativo do Portal da Empresa p
 
 ## <a name="week-of-june-5-2017"></a>Semana de 5 de junho de 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Melhorias nos blocos do aplicativo no aplicativo do Portal da Empresa para iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Melhorias nos blocos de aplicativo no aplicativo Portal da Empresa para iOS <!--1230777-->
 Atualizamos o design dos blocos do aplicativo na home page para refletir a cor da identidade visual definida para o Portal da Empresa.
 
 **Antes**
