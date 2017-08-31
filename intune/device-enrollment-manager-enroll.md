@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrar dispositivos usando o gerenciador de registro de dispositivo
 
@@ -40,15 +40,15 @@ Somente os usuários no console do Intune podem gerenciadores de registro de dis
 
 O usuário do DEM pode:
 
--   Registrar até 1000 dispositivos no Intune.
--   Entre no Portal de Empresa para obter aplicativos corporativos.
--   Configurar o acesso aos dados da empresa implantando aplicativos específicos da função nos tablets.
+-   Registrar até 1000 dispositivos no Intune
+-   Entre no Portal da Empresa para obter aplicativos da empresa
+-   Configurar o acesso aos dados da empresa implantando aplicativos específicos da função nos tablets
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitações de dispositivos registrados com uma conta do DEM
 
 Dispositivos registrados com uma conta de gerenciador de registro de dispositivos têm as seguintes limitações:
 
-  - Sem acesso por usuário. Como os dispositivos não têm um usuário atribuído, o dispositivo não tem nenhum email ou acesso a dados da empresa. As configurações de VPN, por exemplo, ainda poderão ser usadas para fornecer aos aplicativos de dispositivo o acesso a dados.
+  - Sem acesso por usuário. Como os dispositivos não têm um usuário atribuído, o dispositivo não tem nenhum acesso a email ou a dados da empresa. As configurações de VPN, por exemplo, ainda poderão ser usadas para fornecer aos aplicativos de dispositivo o acesso a dados.
   - Sem acesso condicional, pois esses cenários são por usuário.
   - O usuário do DEM não pode cancelar o registro de dispositivos registrados pelo DEM no próprio dispositivo usando o Portal da Empresa. A administração do Intune pode fazer isso, ao contrário do usuário DEM.
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.

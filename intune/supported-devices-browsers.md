@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df9c4c0a0a23740bf9df4c13e34b8752838aa99a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Dispositivos e navegadores com suporte
 
@@ -65,7 +65,7 @@ Há suporte para os seguintes navegadores nesses portais:
 
 ### <a name="intune-classic-portal"></a>Portal clássico do Intune
 
-Os recursos somente clássicos do Intune, como cliente de software de computador do Intune e integração com parceiros de Defesa contra Ameaças Móveis, estão disponíveis somente no portal clássico do Intune (https://manage.microsoft.com). O console clássico do Intune exige suporte ao navegador Silverlight.
+Os recursos somente clássicos do Intune, como o cliente de software de computador do Intune e a integração com parceiros de Defesa contra Ameaças Móveis, estão disponíveis somente no portal clássico do Intune (https://manage.microsoft.com). O portal clássico do Intune requer suporte do navegador Silverlight.
 
 Os seguintes navegadores Silverlight dão suporte ao console clássico do Intune:
 - Internet Explorer 10 ou posterior
@@ -74,6 +74,5 @@ Os seguintes navegadores Silverlight dão suporte ao console clássico do Intune
 
 > [!Note]
 > Não há suporte para o Microsoft Edge nem para navegadores móveis no console clássico do Intune, pois eles não dão suporte ao [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
-
 
 Apenas usuários com permissões de administrador de serviços ou administradores de locatários com a função de administrador global podem entrar nesse portal. Para acessar o console de administração, sua conta deve ter uma licença para usar o Intune e um status de entrada de **Permitido**.

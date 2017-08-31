@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Configurar políticas de acesso condicional baseado em aplicativo
 
@@ -59,9 +59,30 @@ Este tópico fornece instruções sobre como configurar políticas de acesso con
 2. Clique nas reticências para ver as opções de exclusão.
 3. Escolha **Excluir** para remover o grupo de usuários da lista.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Criar políticas de acesso condicional baseadas em aplicativo em cargas de trabalho do Azure AD
+
+A partir da versão 1708 do Intune, os administradores de TI podem criar políticas de acesso condicional baseadas em aplicativo da carga de trabalho do Azure AD. Esse recurso traz facilidade, pois você não precisa alternar entre as cargas de trabalho do Azure e do Intune.
+
+> [!IMPORTANT]
+> Você precisa ter uma licença Premium do Azure AD para criar políticas de acesso condicional do Azure AD no portal do Intune no Azure.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de acesso condicional baseado no aplicativo
+
+> [!IMPORTANT]
+> Você precisa ter [políticas de proteção de aplicativo do Intune](app-protection-policies.md) aplicadas aos seus aplicativos antes de usar políticas de acesso condicional baseadas em aplicativo.
+
+1. No **Painel do Intune**, escolha **Acesso condicional**.
+
+2. Na folha **Políticas**, escolha **Nova política** para criar a nova política de acesso condicional baseada em aplicativo.
+
+4. Depois de inserir um nome para a política e definir as configurações disponíveis na seção **Atribuições**, escolha **Conceder** na seção **Controles de acesso**.
+
+5. Escolha **Requer aplicativo cliente aprovado**, escolha **Selecionar**, em seguida, escolha **OK** para salvar a nova política.
+
 ## <a name="next-steps"></a>Próximas etapas
 [Bloquear aplicativos que não têm autenticação moderna](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Consulte também
 
-[Proteger dados de aplicativo com as políticas de proteção de aplicativo](app-protection-policies.md)
+[Proteger dados de aplicativo com políticas de proteção de aplicativo](app-protection-policies.md)
+[Acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
