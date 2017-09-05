@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77f433037e4e576b29cf5800e9666008300ce568
-ms.sourcegitcommit: 3d1ec7a68977e6f5727821366ffd25657b459818
+ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
+ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -62,9 +62,15 @@ Além disso, você pode usar o painel de filtro para pesquisar dispositivos por 
  
 Para obter mais detalhes sobre o inventário de dispositivos, consulte [Como exibir o inventário de dispositivo do Intune](device-inventory.md).
 
-#### <a name="conditional-access-support-for-mac-devices"></a>Suporte a acesso condicional para dispositivos Mac 
+#### <a name="conditional-access-support-for-macos-devices"></a>Suporte a acesso condicional para dispositivos macOS 
 <!-- 720172 -->
 Agora você pode definir uma política de acesso condicional que requer que os dispositivos Mac sejam registrados no Intune e estejam em conformidade com as políticas de conformidade de dispositivo. Por exemplo, os usuários podem baixar o aplicativo de Portal da Empresa Intune para macOS e registrar seus dispositivos Mac no Intune. O Intune avaliar se o dispositivo Mac está em conformidade ou não com requisitos como PIN, criptografia, versão do sistema operacional e integridade do sistema.
+
+- Saiba mais sobre [suporte a acesso condicional para dispositivos macOS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+
+#### <a name="company-portal-app-for-macos-is-in-public-preview----1484796---"></a>O aplicativo Portal da Empresa para macOS está em visualização pública <!---1484796--->
+O aplicativo Portal da Empresa para macOS agora está disponível como parte da visualização pública para acesso condicional no Enterprise Mobility + Security. Essa versão é compatível com macOS 10.11 e superior. Obtenha-a em [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
+
 
 #### <a name="new-device-restriction-settings-for-windows-10"></a>Novas configurações de restrição de dispositivo para Windows 10    
 <!--1063965, 1308850  -->
@@ -87,12 +93,29 @@ Para obter mais informações, consulte [Configurações do Endpoint Protection 
 #### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Nova experiência conectada para usuários do Portal da Empresa para Android e para usuários da Política de Proteção de Aplicativo <!-- 621669 -->
 Agora, os usuários finais podem procurar aplicativos, gerenciar dispositivos e exibir informações de contato de TI usando o aplicativo Portal da Empresa para Android sem registrar seus dispositivos Android. Além disso, se um usuário final já usa um aplicativo protegido pelas Políticas de Proteção de Aplicativo do Intune, ele não recebe mais uma solicitação para registrar o dispositivo ao iniciar o Portal da Empresa para Android.
 
+### <a name="new-setting-in-the-android-company-portal-app-to-toggle-battery-optimization---1405990--"></a>Nova configuração no aplicativo Portal da Empresa para Android para ativar/desativar a otimização de bateria <!--1405990-->
+A página **Configurações** no aplicativo Portal da Empresa para Android tem uma nova configuração que permite que os usuários desliguem facilmente a otimização da bateria para os aplicativos Portal da Empresa e Microsoft Authenticator. O nome do aplicativo mostrado na configuração variará dependendo de qual aplicativo gerencia a conta de trabalho. É recomendável que os usuários desliguem a otimização da bateria para melhorar o desempenho dos aplicativos de trabalho que sincronizam dados e emails. 
+
 #### <a name="multi-identity-support-for-onenote-for-ios---------1234281---"></a>Suporte a várias identidades do OneNote para iOS <!-- 1234281 -->
 Os usuários finais agora podem usar contas diferentes (trabalho e pessoal) com o Microsoft OneNote para iOS. As políticas de proteção de aplicativo podem ser aplicadas aos dados corporativos em blocos de anotações de trabalho sem afetar os blocos de anotações pessoais. Por exemplo, uma política pode permitir que um usuário localize informações em blocos de anotações de trabalho, mas impedirá que o usuário copie e cole dados corporativos do bloco de anotações de trabalho para um bloco de anotações pessoal.
  
 - Saiba mais sobre os aplicativos que dão suporte à [proteção de aplicativo e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
+#### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Novas configurações para permitir e bloquear aplicativos em dispositivos Samsung KNOX Standard
+<!-- 1305423 -->  
+Nessa versão, estamos adicionando novas [configurações de restrições de dispositivo](device-restrictions-android.md) que permitem especificar as seguintes listas de aplicativo:
+ 
+- Aplicativos que os usuários têm permissão para instalar
+- Aplicativos que os usuários são impedidos de executar
+- Aplicativos que ficam ocultados do usuário no dispositivo
+ 
+Você pode especificar o aplicativo por URL, nome de pacote ou na lista de aplicativos gerenciados.
 
+#### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Link da nova interface do usuário da política de acesso condicional com base no aplicativo do Azure AD no Intune
+
+Agora os administradores de TI podem definir políticas condicionais com base no aplicativo por meio da nova interface do usuário de política de acesso condicional na carga de trabalho do Azure AD. O acesso condicional com base no aplicativo na seção Proteção de Aplicativo do Intune no Portal do Azure por enquanto continuará lá e a implementação será feita em conjunto. Também há um link de conveniência para a nova interface do usuário da política de acesso condicional na carga de trabalho do Intune.
+
+- Saiba mais sobre o [acesso condicional com base no aplicativo no Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
 
 ## <a name="notices"></a>Avisos
@@ -112,6 +135,9 @@ As funções de administração de MAM (gerenciamento de aplicativo móvel) exis
 
 
 ## <a name="whats-coming"></a>O que está por vir
+
+#### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>O aplicativo Mail do iOS 11 dará suporte ao OAuth <!---1196951--->
+O acesso condicional com o Intune dá suporte a uma autenticação mais segura em dispositivos iOS com o OAuth. Para dar suporte a ela, agora haverá um fluxo diferente no aplicativo Portal da Empresa para iOS, a fim de possibilitar uma autenticação mais segura. Quando os usuários finais tentarem entrar em uma nova conta do Exchange no aplicativo Mail, eles verão um prompt de exibição da Web. Após o registro no Intune, os usuários verão um aviso para permitir que o aplicativo Mail nativo acesse um certificado. A maioria dos usuários finais não verá mais nenhum email em quarentena. As contas de email existentes continuarão usando o protocolo de autenticação básica. Portanto, esses usuários ainda receberão emails em quarentena. Essa experiência de entrada para usuários finais é semelhante à de aplicativos móveis do Office.
 
 ### <a name="end-of-support-for-ios-80----1164477---"></a>Fim do suporte para iOS 8.0 <!---1164477--->
 Aplicativos gerenciados e o aplicativo de Portal da Empresa para iOS exigirão o iOS 9.0 e superior para acessar os recursos da empresa. Dispositivos que não forem atualizados antes de setembro não poderão acessar o Portal da Empresa ou esses aplicativos. 
