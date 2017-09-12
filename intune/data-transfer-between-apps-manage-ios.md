@@ -1,6 +1,6 @@
 ---
 title: "Gerenciar a transferência de dados entre aplicativos iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Use este tópico para entender como você pode usar o recurso “Open-in” do iOS e as políticas de gerenciamento de aplicativo móvel para gerenciar transferências de dados entre aplicativos."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Como gerenciar a transferência de dados entre aplicativos iOS
 ## <a name="manage-ios-apps"></a>Gerenciar aplicativos iOS
