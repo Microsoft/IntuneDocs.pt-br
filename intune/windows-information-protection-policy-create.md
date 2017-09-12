@@ -1,6 +1,6 @@
 ---
 title: "Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Criar e implantar a política de proteção do aplicativo WIP com o Intune"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
-ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
+ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -102,7 +102,7 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 5.  Depois de inserir as informações nos campos, escolha **OK** para adicionar o aplicativo a sua lista de **Aplicativos permitidos**.
 
 > [!NOTE]
-> Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...)**  no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
+> Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...) ** no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da área de trabalho à lista de aplicativos permitidos
 
