@@ -1,6 +1,6 @@
 ---
 title: Como usar categorias de dispositivo no Intune
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Saiba como usar as categorias de dispositivos entre as quais os usuários podem escolher quando registram seus dispositivos no Intune."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 00becba338f9a64e341b0b6d220b1a4ace3b40a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="map-device-groups"></a>Mapear grupos de dispositivos
 
@@ -56,7 +56,7 @@ Nesta etapa, você criará grupos dinâmicos no portal do Azure com base na cate
 
 Para continuar, consulte o tópico [Usar atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) na documentação do Azure Active Directory. 
 
-Use as informações dessa seção para criar um grupo de dispositivos com uma regra avançada usando o atributo **deviceCategory**. Por exemplo (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*")
+Use as informações dessa seção para criar um grupo de dispositivos com uma regra avançada usando o atributo **deviceCategory**. Por exemplo (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
 Após configurar os grupos de dispositivos e quando os usuários registrarem seus dispositivos, eles verão uma lista de categorias que você configurou. Depois que escolherem uma categoria e concluírem o registro, o dispositivo será adicionado ao grupo de segurança do Active Directory que corresponde à categoria escolhida.
 

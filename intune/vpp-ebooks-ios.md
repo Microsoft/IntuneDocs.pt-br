@@ -1,6 +1,6 @@
 ---
 title: "Gerenciar livros eletrônicos do iOS comprados por volume"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba como você pode sincronizar no Intune os livros comprados por volume na loja do iOS e, depois, gerenciar e acompanhar seu uso."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
-ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
+ms.openlocfilehash: fa249105521d5369f7da656d37d3a32b5e411fe6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar livros eletrônicos do iOS comprados por meio de um programa de compra por volume com o Microsoft Intune
 
@@ -71,7 +71,7 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir um aplicativo comprado por volume
 
 1. Na carga de trabalho **Livros Eletrônicos**, escolha **Gerenciar** > **Todos os Livros Eletrônicos**.
-2. Na folha de lista de livros, escolha o catálogo que deseja atribuir e, em seguida, escolha '**...** ' > **Atribuir Grupos**.
+2. Na folha de lista de livros, escolha o catálogo que deseja atribuir e, em seguida, escolha '**... **' > **Atribuir Grupos**.
 3. Na folha <*nome do livro*> – **Grupos Atribuídos**, escolha **Gerenciar** > **Grupos Atribuídos**.
 4. Escolha **Atribuir Grupos** e, na folha **Selecionar grupos**, escolha os grupos de usuários do Azure AD aos quais você deseja atribuir o livro. No momento, não há suporte para grupos de dispositivos.
 Escolha uma ação de atribuição **Disponível** ou **Obrigatória**. 

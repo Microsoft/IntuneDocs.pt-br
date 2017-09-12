@@ -1,6 +1,6 @@
 ---
 title: "Configurações de restrições de dispositivo do Intune para iOS"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos iOS."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eec078fa0ddc0414b2912e3df841841d96b2e79e
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 10b27d6fc806ab2565631353761ed1c31795610d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo iOS no Microsoft Intune
 
@@ -185,7 +185,7 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 -   **Pesquisa por definição de palavra (somente supervisionado)** – Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.
 -   **Teclados preditivos (somente supervisionado)** – Permitir o uso de teclados preditivos que sugerem palavras que o usuário pode querer.
 -   **Correção automática (somente supervisionado)** – Permite que o dispositivo corrija automaticamente palavras incorretas.
--   **Verificação ortográfica do teclado (somente supervisionada)**  – Permite usar o verificador de ortografia do dispositivo.
+-   **Verificação ortográfica do teclado (somente supervisionada) ** – Permite usar o verificador de ortografia do dispositivo.
 -   **Atalhos de teclado (somente supervisionado)** – Permite o uso de atalhos de teclado.
 -   **Ditado (somente supervisionado)** – Impede que o usuário use entrada de voz para inserir texto.
 

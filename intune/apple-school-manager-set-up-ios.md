@@ -1,6 +1,6 @@
 ---
 title: Configurar o registro do Programa do Apple School Manager em dispositivos iOS
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Saiba como configurar o registro do programa do Apple School Manager em dispositivos iOS de propriedade corporativa com o Intune
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
 
@@ -67,7 +67,7 @@ Antes de poder registrar dispositivos iOS de propriedade corporativa com o Apple
 3.  Insira o **Nome do Servidor MDM**. O nome do servidor é para sua referência para identificar o servidor MDM (gerenciamento de dispositivo móvel). Não é o nome ou URL do servidor Microsoft Intune.
    ![Captura de tela do portal do Apple School Manager com opção de Número de Série selecionada](./media/asm-server-assignment.png)
 
-4.  Escolha **Carregar Arquivo...**  no portal da Apple, procure o arquivo .pem e escolha **Salvar Servidor MDM** (canto inferior direito).
+4.  Escolha **Carregar Arquivo... ** no portal da Apple, procure o arquivo .pem e escolha **Salvar Servidor MDM** (canto inferior direito).
 5.  Escolha **Obter Token** e, em seguida, baixe o arquivo de token (.p7m) do servidor no computador.
 6. Acesse **Atribuições de Dispositivo** e **Escolher Dispositivo** com a entrada manual dos **Números de Série**, do **Número do Pedido** ou **Carregar Arquivo CSV**.
      ![Captura de tela do portal do Apple School Manager com opção de Número de Série selecionada](./media/asm-device-assignment.png)
