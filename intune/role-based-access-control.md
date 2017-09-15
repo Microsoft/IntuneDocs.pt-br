@@ -1,6 +1,6 @@
 ---
 title: RBAC com o Intune
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Versão prévia do Intune Azure: saiba como o RBAC permite controlar quem pode executar ações e fazer alterações."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>RBAC (controle de administração baseada em funções) com o Intune
 
@@ -32,7 +32,7 @@ O RBAC ajuda você a controlar quem pode realizar as várias tarefas do Intune e
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
 
-Começando no novo portal do Intune, o **Azure AD (Azure Active Directory)** fornece duas Funções do Diretório que podem ser usadas com o Intune. Essas funções recebem permissão total para realizar todas as atividades no Intune:
+Começando no novo Portal do Azure, o **Azure AD (Azure Active Directory)** fornece duas Funções do Diretório que podem ser usadas com o Intune. Essas funções recebem permissão total para realizar todas as atividades no Intune:
 
 - **Administrador Global:** os usuários com essa função têm acesso a todos os recursos administrativos do Azure AD, bem como a serviços federados ao Azure AD, como o Exchange Online, SharePoint Online e Skype for Business Online. A pessoa que se inscreve no locatário do Azure AD se torna um administrador global. Somente os administradores globais podem atribuir outras funções de administrador do Azure AD. Pode haver mais de um administrador global na sua organização. Os administradores globais podem redefinir a senha de qualquer usuário e de todos os outros administradores.
 
@@ -46,12 +46,12 @@ Começando no novo portal do Intune, o **Azure AD (Azure Active Directory)** for
     > [!TIP]
     > O Intune também mostra três extensões do Azure AD: **Usuários**, **Grupos** e **Acesso condicional**, que são controlados com o uso do RBAC do Azure AD. Além disso, o **Administrador de Contas de Usuário** apenas realiza as atividades do usuário/grupo do AAD e não tem permissões totais para realizar todas as atividades no Intune. Consulte [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) para obter mais detalhes.
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Funções criadas no console clássico do Intune
+## <a name="roles-created-in-the-intune-classic-portal"></a>Funções criadas no Portal Clássico do Intune
 
-Somente os usuários **Administradores de Serviços** do Intune com permissões “Totais” são migrados do console clássico do Intune para o Intune no Azure. Você precisa reatribuir o acesso “Somente Leitura” ou “Assistência técnica” aos usuários **Administradores de Serviços** do Intune nas funções do Intune no portal do Azure e removê-los do portal clássico.
+Somente os usuários **Administradores de Serviços** do Intune com permissões "Totais" são migrados do Portal Clássico do Intune para o Portal do Azure. Você precisa reatribuir o acesso “Somente Leitura” ou “Assistência técnica” aos usuários **Administradores de Serviços** do Intune nas funções do Intune no portal do Azure e removê-los do portal clássico.
 
 > [!IMPORTANT]
-> Talvez seja necessário manter o acesso de Administrador de Serviços do Intune no console clássico, caso os administradores ainda precisem ter acesso para gerenciar computadores usando o Intune.
+> Talvez seja necessário manter o acesso de Administrador de Serviços do Intune no Portal Clássico, caso os administradores ainda precisem ter acesso para gerenciar computadores usando o Intune.
 
 ## <a name="built-in-roles"></a>Funções internas
 

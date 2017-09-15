@@ -1,6 +1,6 @@
 ---
 title: "Migrar políticas de acesso condicional no portal clássico do Intune para o Portal do Azure"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Migrar políticas de acesso condicional no portal clássico do Intune para o novo Portal do Azure."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional no portal clássico do Intune para o Portal do Azure
 
@@ -33,7 +33,7 @@ Se você estiver pronto para mudar para o Portal do Azure, siga as etapas neste 
 
 - Siga as etapas deste tópico para recriar essas políticas no Portal do Azure.
 
-- Desabilite as políticas condicionais no console clássico do Intune depois de verificar se as novas políticas estão funcionando conforme o esperado no novo Portal do Azure.
+- Desabilite as políticas condicionais no Portal Clássico do Intune depois de verificar se as novas políticas estão funcionando conforme o esperado no novo Portal do Azure.
 <br /><br />
     - **Antes de desabilitar** as políticas de acesso condicional no portal clássico do Intune, planeje como você moverá os usuários para a nova política. Há duas abordagens:
 <br /><br />
@@ -82,7 +82,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
     ![Comparação da interface do usuário de grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o portal do Intune. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
+    > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o Portal do Azure. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
 
 5. Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.
 
@@ -150,7 +150,7 @@ Se você tiver definido as configurações do Exchange Active Sync como parte de
     ![Comparação da interface do usuário de grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o portal do Intune. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
+    > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o Portal do Azure. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
 
 5. Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.
 

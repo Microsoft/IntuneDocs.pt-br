@@ -1,6 +1,6 @@
 ---
 title: "Configurações de layout da Tela inicial do Intune para dispositivos iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conheça as configurações que você pode usar para personalizar a tela inicial e o encaixe em dispositivos iOS."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Configurações de layout da Tela inicial do Intune para dispositivos iOS
 
@@ -60,7 +60,7 @@ Adicione as páginas que você deseja exibir na Tela inicial e os aplicativos qu
 
 
 1. Na folha **Páginas**, escolha **Adicionar**.
-2. Na folha **Adicionar Linha**, insira um **Nome de página**. Esse nome é usado para sua referência no Portal do Intune e *não é exibido* no dispositivo iOS.
+2. Na folha **Adicionar Linha**, insira um **Nome de página**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 3. Escolha **Adicionar**, depois escolha se você quer adicionar um **Aplicativo** ou uma **Pasta** à página.
 4. Usando as informações deste tópico, configure os aplicativos e as pastas que você deseja que apareça na página.
 
@@ -76,7 +76,7 @@ Quando você atribuir a política a um iPhone, o resultado será uma página sem
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Como adicionar um aplicativo à lista
 
-1. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Intune e *não é exibido* no dispositivo iOS.
+1. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 2. Insira **ID de Pacote de Aplicativos** do aplicativo que você deseja exibir. Consulte **Referência da ID de Pacote para aplicativos iOS internos** mais adiante neste tópico para obter ajuda.
 3. Clique em **OK**, depois continue a adicionar itens, até um máximo de **6** para o dock do dispositivo, e **60** para uma página de dispositivo.
 4. Ao terminar, clique em **OK**.
@@ -87,8 +87,8 @@ Os aplicativos adicionados a uma página em uma pasta são dispostos da esquerda
 
 1. Insira **Nome da pasta**. Esse nome será exibido aos usuários no dispositivo.
 2. Escolha **Adicionar** para criar uma página na pasta. Você pode adicionar até 20 páginas.
-3. Na folha **Adicionar Linha**, insira um nome para a página. Esse nome é usado para sua referência no Portal do Intune e *não é exibido* no dispositivo iOS.
-3. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Intune e *não é exibido* no dispositivo iOS.
+3. Na folha **Adicionar Linha**, insira um nome para a página. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
+3. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 2. Insira **ID de Pacote de Aplicativos** do aplicativo que você deseja exibir. Confira **Como adicionar um aplicativo à lista**.
 3. Escolha **Adicionar**. Você pode adicionar até 60 itens.
 4. Ao terminar, clique em **OK**.

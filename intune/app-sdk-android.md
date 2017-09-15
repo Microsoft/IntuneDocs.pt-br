@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
@@ -456,8 +456,9 @@ Veja seguir as maneiras comuns de um aplicativo ser configurado com a ADAL. Loca
     |--|--|
     | Autoridade | Ambiente desejado no qual as contas do AAD foram configuradas |
     | ClientID | O ClientID do aplicativo (gerado pelo AD do Azure, quando o aplicativo é registrado) |
-    | NonBrokerRedirectURI | Um URI de redirecionamento válido para o aplicativo ou `urn:ietf:wg:oauth:2.0:oob` por padrão. <br><br> Configure o valor como um URI de redirecionamento aceitável para o ClientID do seu aplicativo.
-    | SkipBroker | Falso |
+    | NonBrokerRedirectURI | Um URI de redirecionamento válido para o aplicativo ou `urn:ietf:wg:oauth:2.0:oob` 
+    . <br><br> Configure o valor como um URI de redirecionamento aceitável para o ClientID do seu aplicativo.
+   | SkipBroker | False |
 
 
 3. **O aplicativo integra-se ao ADAL, mas não oferece suporte a autenticação/SSO orientada para todo o dispositivo:**
@@ -665,7 +666,7 @@ android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackup
     ```
 
 
-2. **[Opcional]**  Se você tiver implementado um BackupAgent personalizado opcional, precisará usar MAMBackupAgent ou MAMBackupAgentHelper. Confira as seções a seguir. Use o **MAMDefaultFullBackupAgent** do Intune (descrito na etapa 1), que fornece backup fácil no Android M e superior.
+2. **[Opcional] ** Se você tiver implementado um BackupAgent personalizado opcional, precisará usar MAMBackupAgent ou MAMBackupAgentHelper. Confira as seções a seguir. Use o **MAMDefaultFullBackupAgent** do Intune (descrito na etapa 1), que fornece backup fácil no Android M e superior.
 
 3. Quando decidir qual tipo de backup completo seu aplicativo deve receber (filtrado, não filtrado ou nenhum), você precisará definir o atributo `android:fullBackupContent` como true, false ou um recurso XML em seu aplicativo.
 
@@ -1355,7 +1356,7 @@ O SDK do Intune mantém o contrato fornecido pela API do Android, embora condiç
 
 ## <a name="telemetry"></a>Telemetria
 
-O SDK de Aplicativo do Intune para Android não controla a coleta de dados do aplicativo. Por padrão, o aplicativo Portal da Empresa registra dados de telemetria dos eventos de uso a seguir. Esses dados são enviados para o Microsoft Intune. De acordo com a Microsoft Policy, nós não coletamos PII (informações de identificação pessoal).
+O SDK de Aplicativo do Intune para Android não controla a coleta de dados do aplicativo. Por padrão, o aplicativo Portal da Empresa registra em log os dados de telemetria. Esses dados são enviados para o Microsoft Intune. De acordo com a Microsoft Policy, nós não coletamos PII (informações de identificação pessoal).
 
 > [!NOTE]
 > Se os usuários finais optarem por não enviar esses dados, eles deverão desligar a telemetria em Configurações no aplicativo Portal da Empresa. Para obter mais informações, consulte [Como desligar a coleta de dados de uso da Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

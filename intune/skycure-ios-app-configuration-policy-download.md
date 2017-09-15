@@ -1,6 +1,6 @@
 ---
 title: "Baixar a política de configuração de aplicativo do iOS para Skycure a ser usada com o Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Baixe a política de configuração de aplicativo do iOS para Skycure a ser usada com o Intune."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Baixar política de configuração de aplicativo iOS do Skycure
 
@@ -43,7 +43,7 @@ Você precisa fazer logon no Console de Gerenciamento do Skycure para executar a
 
 3.  Acesse **Configurações** &gt; **Integrações de Gerenciamento de Dispositivo** &gt; **Seleção de Integração EMM**, escolha **Microsoft Intune** e salve sua seleção.
 
-4.  Clique no link **Arquivos de configuração da integração** e salve o arquivo \*.zip gerado. O arquivo .zip contém o arquivo **skycure\_configuration.plist**, que será usado para criar a política de configuração de aplicativo do iOS no console clássico do Intune.
+4.  Clique no link **Arquivos de configuração da integração** e salve o arquivo \*.zip gerado. O arquivo .zip contém o arquivo **skycure\_configuration.plist**, que será usado para criar a política de configuração de aplicativo do iOS no Portal Clássico do Intune.
 
 ![Arquivos de configuração de integração do Skycure](./media/skycure-ios-app-2.png)
 

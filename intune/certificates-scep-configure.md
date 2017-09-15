@@ -1,6 +1,6 @@
 ---
 title: Configurar e gerenciar certificados SCEP com o Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Saiba como configurar sua infraestrutura e, depois, criar e atribuir perfis de certificado SCEP do Intune.
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurar e gerenciar certificados SCEP com o Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +36,7 @@ Este tópico mostra como configurar sua infraestrutura e depois criar e atribuir
 -  **Servidor NDES**: em um servidor que executa o Windows Server 2012 R2 ou posterior, você deve configurar o NDES (Serviço de Registro de Dispositivo de Rede). O Intune não dá suporte ao uso do NDES quando ele é executado em um servidor que também executa a AC Corporativa. Consulte [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) (Diretrizes de Serviço de Registro de Dispositivo de Rede) para obter instruções sobre como configurar o Windows Server 2012 R2 para hospedar o Serviço de Registro de Dispositivo de Rede.
 O servidor NDES deve ter ingressado no domínio que hospeda a AC e não estar no mesmo servidor que a AC. Para obter mais informações sobre como implantar o servidor NDES em uma floresta separada, rede isolada ou domínio interno podem ser encontradas em [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx) (Usando um módulo de política com o Serviço de Registro de Dispositivo de Rede).
 
--  **Conector de Certificado do Microsoft Intune**: use o portal do Intune para baixar o instalador do **Conector de Certificado** (**ndesconnectorssetup.exe**). Em seguida, você pode executar **ndesconnectorssetup.exe** no computador em que deseja instalar o Conector de Certificado. 
+-  **Microsoft Intune Certificate Connector**: use o Portal do Azure para baixar o instalador do **Conector de Certificado** (**ndesconnectorssetup.exe**). Em seguida, você pode executar **ndesconnectorssetup.exe** no computador em que deseja instalar o Conector de Certificado. 
 -  **Servidor Proxy de Aplicativos Web** (opcional): use um servidor que executa o Windows Server 2012 R2 ou posterior como servidor WAP (Proxy de Aplicativo Web). Essa configuração:
     -  Permite que os dispositivos recebam certificados usando uma conexão com a Internet.
     -  Trata-se de uma recomendação de segurança quando os dispositivos se conectam pela Internet para receber e renovar certificados.

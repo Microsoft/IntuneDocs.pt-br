@@ -1,7 +1,7 @@
 ---
 title: "Inscrever-se para obter uma avaliação gratuita de 30 dias do Microsoft Intune"
-titleSuffix: 
-description: "\"Como se inscrever para obter uma avaliação gratuita de 30 dias do Intune.\""
+titleSuffix: Azure portal
+description: "Como se inscrever para obter uma avaliação gratuita de 30 dias do Intune.\""
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Inscrever-se para uma avaliação gratuita do Microsoft Intune
 
@@ -47,11 +47,11 @@ Caso se inscreva para uma avaliação, você receberá uma mensagem de email com
 Há três portais que são usados para o Portal do Azure no Intune:
 - O painel do Intune no Azure ([portal.azure.com](https://portal.azure.com)), no qual você pode explorar o [recursos do Intune no Portal do Azure](what-is-intune.md).
 - O Centro de administração do Office 365 ([portal.office.com](https://portal.office.com)), no qual você poderá adicionar e gerenciar usuários se não estiver usando o Azure Active Directory para isso. Você também pode gerenciar outros aspectos da sua conta, incluindo cobrança e suporte.
-- O console de administração do Intune clássico ([manage.microsoft.com](https://manage.microsoft.com)), no qual você pode explorar os recursos que ainda não foram adicionados ao Azure.
+- O console de administração do Intune ([manage.microsoft.com](https://manage.microsoft.com)), no qual você pode explorar os recursos que ainda não foram adicionados ao Azure.
 
 Normalmente, você fará seu trabalho no painel do Intune, mostrado abaixo. Esse é o site no qual você pode configurar e gerenciar grupos, políticas, dispositivos e aplicativos.
 
-É possível acessar o console de administração clássico do Intune por meio do painel escolhendo **Portal Clássico** na parte superior do seu painel.
+É possível acessar o console de administração do Intune por meio do painel escolhendo **Portal Clássico** na parte superior do seu painel.
 
 Para retornar ao portal do Intune no Azure, insira https://portal.azure.com na barra de endereços do navegador e escolha **Intune** novamente na lista de serviços.
 
@@ -68,7 +68,7 @@ Para voltar do Intune ao Centro de administração do Office 365, insira https:/
 
 ## <a name="next-steps"></a>Próximas etapas
 
-### <a name="intune-on-azure"></a>Intune no Azure
+### <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
 Saiba mais sobre o [Intune no portal do Azure](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integração com outros produtos

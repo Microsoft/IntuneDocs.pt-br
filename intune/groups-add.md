@@ -1,6 +1,6 @@
 ---
 title: "Definir restrições de registro no Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Restrinja o registro pela plataforma e defina um limite de registro de dispositivo no Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Adicionar grupos no Intune
 O Intune usa grupos do AD (Azure Active Directory) para gerenciar dispositivos e usuários. Como administrador do Intune, você pode configurar grupos para atender às necessidades da sua organização. Crie grupos para organizar usuários ou dispositivos por localização geográfica, departamento ou características de hardware. Use grupos para gerenciar tarefas em grande escala. Por exemplo, você pode definir políticas para vários usuários ou implantar aplicativos em um conjunto de dispositivos.
@@ -33,8 +33,8 @@ Você pode adicionar os seguintes tipos de grupos:
 ## <a name="add-a-new-group"></a>Adicionar um novo grupo
 
 Use as etapas a seguir para criar um novo grupo.
-1. No Portal do Intune, acesse **Grupos** e escolha **Novo grupo** na folha **Todos os grupos**.
-  ![Captura de tela do Portal do Intune com o novo grupo selecionado](./media/groups-add-new.png)
+1. No Portal do Azure, acesse **Grupos** e escolha **Novo grupo** na folha **Todos os grupos**.
+  ![Captura de tela do Portal do Azure com o novo grupo selecionado](./media/groups-add-new.png)
 2. Especifique o **Nome** e a **Descrição** do novo grupo. Essas propriedades só aparecem no portal de gerenciamento e não são exibidas para os usuários.
 
 3. Escolha o **Tipo de associação**:

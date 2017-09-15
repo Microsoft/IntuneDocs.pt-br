@@ -1,6 +1,6 @@
 ---
 title: "Configurações de VPN do Intune para dispositivos Windows 8.1"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Conheça as configurações do Intune que você pode usar para configurar as conexões VPN em dispositivos Windows 8.1."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: de811d4a41aa8bdf9fd016b6ee439e1ed2ef2a92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Configurações VPN para dispositivos Windows 8.1 no Microsoft Intune
 
@@ -30,7 +30,7 @@ Dependendo das configurações escolhidas, nem todos os valores na lista abaixo 
 ## <a name="base-vpn-settings"></a>Configurações de VPN de base
 
 
-- **Aplicar todas as configurações somente ao Windows 8.1** – Essa é uma configuração de pode ser definida no Portal Clássico do Intune. Não é possível alterar essa configuração no Portal do Azure. Se definido como **Configurado**, as configurações serão aplicadas somente aos dispositivos com Windows 8.1. Se definido como **Não Configurado**, essas configurações também serão aplicadas aos dispositivos com Windows 10.
+- **Aplicar todas as configurações somente ao Windows 8.1** – Essa é uma configuração que pode ser definida no Portal Clássico do Intune. Não é possível alterar essa configuração no Portal do Azure. Se definido como **Configurado**, as configurações serão aplicadas somente aos dispositivos com Windows 8.1. Se definido como **Não Configurado**, essas configurações também serão aplicadas aos dispositivos com Windows 10.
 - **Nome da conexão** – Insira um nome para esta conexão. Usuários finais verão esse nome quando navegarem pela lista de conexões VPN disponíveis em seus dispositivos.
 - **Servidores** – Adicionar um ou mais servidores VPN aos quais os dispositivos se conectarão.
     - **Adicionar** – Abre a folha **Adicionar linha**, na qual você pode especificar as seguintes informações:

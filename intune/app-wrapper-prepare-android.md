@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8707253139ee5a12a48d38a333ae49fbb4d3ead
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: b82c0832fc102e4ae30268a6cd08ed0e14e1c931
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -122,14 +122,14 @@ Se possível, as informações de autenticação já usadas durante o processo d
 
 Se o certificado de autenticação anterior não puder ser usado ou se o aplicativo ainda não tiver sido implantado, você poderá criar um novo certificado de autenticação seguindo as instruções do [Guia do desenvolvedor do Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
-Se o aplicativo tiver sido implantado anteriormente com um certificado de autenticação diferente, o aplicativo não poderá ser carregado no console do Intune após a atualização. Os cenários de atualização do aplicativo serão interrompidos se ele for autenticado com um certificado diferente daquele usado na compilação do aplicativo. Dessa forma, todos os novos certificados de autenticação deverão ser mantidos para as atualizações do aplicativo. 
+Se o aplicativo tiver sido implantado anteriormente com um certificado de autenticação diferente, o aplicativo não poderá ser carregado no Intune após a atualização. Os cenários de atualização do aplicativo serão interrompidos se ele for autenticado com um certificado diferente daquele usado na compilação do aplicativo. Dessa forma, todos os novos certificados de autenticação deverão ser mantidos para as atualizações do aplicativo. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Considerações de segurança para executar a Ferramenta de Disposição do Aplicativo
 Para evitar potenciais falsificações, divulgações de informações e aumento de ataques de privilégio:
 
 -   Certifique-se de que o aplicativo de LOB (linha de negócios) de entrada, o aplicativo de saída e o Java KeyStore estejam no mesmo computador Windows em que a Ferramenta de Disposição do Aplicativo está sendo executada.
 
--   Importe o aplicativo de saída para o console do Intune no mesmo computador em que a ferramenta está sendo executada. Consulte [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para saber mais sobre o Java keytool.
+-   Importe o aplicativo de saída para o Intune no mesmo computador em que a ferramenta está sendo executada. Consulte [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para saber mais sobre o Java keytool.
 
 -   Se o aplicativo de saída e a ferramenta estiverem em um caminho UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](http://wikipedia.org/wiki/IPsec) ou [Assinatura do Protocolo SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
 

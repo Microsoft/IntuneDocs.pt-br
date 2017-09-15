@@ -1,6 +1,6 @@
 ---
 title: Instalar aplicativos do Office 365 ProPlus para em dispositivos Windows 10 usando o Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba como você pode usar o Intune para facilitar a instalação dos aplicativos do Office 365 em dispositivos Windows 10."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -60,7 +60,7 @@ Nesta etapa, escolha os aplicativos do Office que você deseja atribuir aos disp
 
 ## <a name="configure-app-information"></a>Configurar informações do aplicativo
 
-Nesta etapa, forneça informações sobre o pacote de aplicativos. Essas informações ajudam a identificá-lo no console do Intune, além de ajudar os usuários finais a encontrá-lo no aplicativo Portal da Empresa.
+Nesta etapa, forneça informações sobre o pacote de aplicativos. Essas informações ajudam a identificá-lo no Intune, além de ajudar os usuários a encontrá-lo no aplicativo Portal da Empresa.
 
 1.  Na folha **Adicionar Aplicativo**, escolha **Informações do Pacote de Aplicativos**.
 2.  Na folha **Informações do Pacote de Aplicativos**, especifique as seguintes informações: 
