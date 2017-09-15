@@ -1,6 +1,6 @@
 ---
 title: "Registrar dispositivos – gerenciador de registro de dispositivos"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Use a conta do gerenciador de registros de dispositivo para registrar dispositivos no Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrar dispositivos usando o gerenciador de registro de dispositivo
 
@@ -36,7 +36,7 @@ Os usuários devem existir no Portal do Azure para serem adicionados como gerenc
 
 Um restaurante quer fornecer 50 tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma conta de gerenciador de registro de dispositivos e adiciona um supervisor do restaurante à conta DEM, na verdade concedendo recursos de DEM a esse supervisor. O supervisor agora pode registrar os 50 dispositivos de tablets usando as credenciais do DEM.
 
-Somente os usuários no console do Intune podem gerenciadores de registro de dispositivos. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
+Somente os usuários no Portal do Azure podem gerenciadores de registro de dispositivos. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
 
 O usuário do DEM pode:
 
@@ -95,5 +95,5 @@ Remover um gerenciador de registro de dispositivos não afeta os dispositivos re
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Exibir as propriedades de um gerenciador de registro de dispositivo
 
-1. No portal do Intune, escolha **Registro de dispositivo** e, depois, **Gerentes de Registro de Dispositivo**.
+1. No Portal do Azure, escolha **Registro de dispositivo** e, depois, **Gerentes de Registro de Dispositivo**.
 2. Na folha **Gerenciadores de Registro de Dispositivo**, clique com o botão direito do mouse no usuário DEM e selecione **Propriedades**.

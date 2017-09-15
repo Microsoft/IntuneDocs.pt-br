@@ -1,7 +1,7 @@
 ---
 title: Configurar o Exchange Connector para o EAS local com o Intune
-titleSuffix: Intune Azure
-description: "Intune no Azure: Exchange ActiveSync MDM – Use a ferramenta Connector para habilitar a comunicação entre o Intune e o Exchange Server local"
+titleSuffix: Azure portal
+description: "Use a ferramenta Connector para habilitar a comunicação entre o Intune e o Exchange Server local"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: f9dc93cf0a24032eba051f770af1b35f9932acc9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune no Azure
 
@@ -30,7 +30,7 @@ Os ambientes do Exchange Server local podem usar o conector do Exchange local do
 
 Para configurar uma conexão que habilita o Microsoft Intune a se comunicar com o Exchange Server local, você precisa seguir as etapas abaixo:
 
-1.  Baixar o Exchange Connector local do Intune no portal do Intune.
+1.  Baixar o Exchange Connector local do Intune no Portal do Azure.
 2.  Instalar e configurar o Exchange Connector local do Intune.
 3.  Validar a conexão do Exchange.
 

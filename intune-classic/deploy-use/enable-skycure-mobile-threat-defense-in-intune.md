@@ -1,6 +1,6 @@
 ---
 title: "Habilitar a Defesa contra Ameaças Móveis do Skycure no Intune"
-description: "Habilite a Defesa contra Ameaças Móveis do Skycure no console clássico do Intune."
+description: "Habilite a Defesa contra Ameaças Móveis do Skycure no Portal Clássico do Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Habilitar a Defesa contra Ameaças Móveis do Skycure no Intune
 
@@ -28,11 +28,11 @@ Para habilitar a defesa contra ameaças móveis do Skycure, você deve já ter c
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Para habilitar a conexão do Skycure MTD no Intune
 
-1.  Acesse o [console clássico Intune](https://manage.microsoft.com/) e insira suas credenciais.
+1.  Acesse o [Portal Clássico do Intune](https://manage.microsoft.com/) e insira suas credenciais.
 
 2.  Escolha **Administrador** &gt; **Integração de Serviços de Terceiros**, escolha **Status do Skycure** e habilite **Sincronização com MTD** usando o botão de alternância.
 
-    ![Habilitar alternância do Skycure no console clássico do Intune](../media/mtp/enable-skycure-1.png)
+    ![Habilitar a alternância do Skycure no Portal Clássico do Intune](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > Você precisa configurar os aplicativos do Skycure antes de criar regras de política de conformidade e configurar o acesso condicional. Isso garante que o aplicativo esteja pronto e disponível para os usuários finais instalarem antes que possam ter acesso a emails ou outros recursos da empresa.

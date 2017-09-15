@@ -1,6 +1,6 @@
 ---
 title: "Grupos clássicos do Intune no Portal do Azure"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Conheça as novidades dos grupos no portal do Intune no Azure"
 keywords: 
 author: nathbarn
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: c51c3102cc78cf095e27da4ff199cb3fb5ae14a6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Grupos clássicos do Intune no Portal do Azure
 
@@ -38,7 +38,7 @@ Alguns dos recursos de grupos do Intune que você talvez pode ter usado anterior
 - A opção para **Excluir membros específicos** de um grupo atualmente não existe no Portal do Azure. No entanto, você poderá usar um grupo de segurança do Azure AD com regras avançadas para replicar esse comportamento. Por exemplo, é possível criar uma regra avançada que inclui todas as pessoas do seu departamento de vendas em um grupo de segurança e exclui os grupos que têm a palavra “Assistente” em seu título, com essa regra avançada:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
-- O grupo **Todos os Dispositivos Gerenciados pelo Exchange ActiveSync** no console do Intune não foi migrado para o Azure AD. No entanto, você ainda poderá acessar informações sobre dispositivos gerenciados pelo EAS no Portal do Azure.
+- O grupo **Todos os Dispositivos Gerenciados pelo Exchange ActiveSync** no console clássico do Intune não foi migrado para o Azure AD. No entanto, você ainda poderá acessar informações sobre dispositivos gerenciados pelo EAS no Portal do Azure.
 
 ## <a name="how-to-get-started"></a>Como começar?
 
@@ -51,9 +51,9 @@ Alguns dos recursos de grupos do Intune que você talvez pode ter usado anterior
 
 
 ## <a name="what-happened-to-intune-groups"></a>O que aconteceu com os grupos do Intune?
-Quando os grupos são migrados do portal clássico do Intune para o portal do Azure, as seguintes regras são aplicadas:
+Quando os grupos são migrados do Portal Clássico do Intune para o Portal do Azure, as seguintes regras são aplicadas:
 
-| Grupos no Intune clássico|Grupos no Azure AD|
+| Grupos no Intune|Grupos no Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Grupo de usuários estático|Grupo de segurança estático do Azure AD|
 |Grupo de usuários dinâmico|Grupos de segurança estáticos do Azure AD com uma hierarquia de grupos de segurança do Azure AD|
@@ -65,7 +65,7 @@ Quando os grupos são migrados do portal clássico do Intune para o portal do Az
 
 ## <a name="group-hierarchy"></a>Hierarquia de grupos
 
-No console clássico do Intune, todos os grupos tinham um grupo pai. Os grupos podem conter apenas membros do grupo pai. No Azure AD, os grupos filhos podem conter membros que não fazem parte do grupo pai.
+No console do Intune, todos os grupos tinham um grupo pai. Os grupos podem conter apenas membros do grupo pai. No Azure AD, os grupos filhos podem conter membros que não fazem parte do grupo pai.
 
 ## <a name="group-attributes"></a>Atributos do grupo
 Os atributos são propriedades do dispositivo que podem ser usados na definição de grupos. Esta tabela descreve como esses critérios são migrados para grupos de segurança do Azure AD.
@@ -84,4 +84,4 @@ Os atributos são propriedades do dispositivo que podem ser usados na definiçã
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>O que acontece com as políticas e os aplicativos já implantados?
 
-As políticas e os aplicativos continuam sendo implantados em grupos, exatamente como antes. No entanto, agora você gerenciará esses grupos no Portal do Azure, em vez de no console do Intune clássico.
+As políticas e os aplicativos continuam sendo implantados em grupos, exatamente como antes. No entanto, agora você gerenciará esses grupos no Portal do Azure, em vez de no console do Intune.

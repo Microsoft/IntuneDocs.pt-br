@@ -1,6 +1,6 @@
 ---
 title: "Solução de problemas de perfis de dispositivo no Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Se estiver tendo dificuldades, use este tópico para ajudar a solucionar problemas com perfis de dispositivo do Intune."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Solução de problemas de perfis de dispositivo no Microsoft Intune
 
@@ -59,7 +59,7 @@ Quando duas ou mais políticas são atribuídas ao mesmo usuário ou dispositivo
 
 -   A configuração de política de conformidade mais restritiva é aplicada se avaliada em relação à mesma configuração em uma política de conformidade diferente.
 
--   Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no console do Intune. Você deve resolver esses conflitos manualmente.
+-   Se a definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no Portal do Azure. Você deve resolver esses conflitos manualmente.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicativo entram em conflito umas com as outras? Qual delas será aplicada ao aplicativo?
 Os valores de conflito são as configurações mais restritivas disponíveis em uma política de proteção de aplicativo, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir).  Os campos de entrada de número serão definidos com os mesmos valores, como se você criasse uma política de MAM no console usando a opção de configurações recomendadas.

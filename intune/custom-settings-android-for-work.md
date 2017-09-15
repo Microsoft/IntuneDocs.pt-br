@@ -1,6 +1,6 @@
 ---
 title: "Configurações de perfil personalizadas do Intune para Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba como criar configurações de perfil personalizado do Intune para dispositivos Android for Work."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Criar configurações de perfil personalizadas do Intune para dispositivos com Android for Work
 
@@ -32,7 +32,7 @@ Essa funcionalidade destina-se a permitir que você atribua configurações do A
 1. Use as instruções em [Como definir configurações personalizadas do dispositivo](custom-settings-configure.md) para começar.
 2. Na folha **Configurações personalizadas do OMA-URI**, escolha **Adicionar** para adicionar uma nova configuração.
 3. Na folha **Adicionar Linha**, configure o seguinte:
-    - **Nome** - insira um nome exclusivo para as configurações personalizadas do Android for Work para ajudar a identificá-las no portal do Intune.
+    - **Nome** - insira um nome exclusivo para as configurações personalizadas do Android for Work para ajudar a identificá-las no Portal do Azure.
     - **Descrição** - forneça uma descrição que dê uma visão geral da política personalizada do Android e outras informações relevantes que o ajudarão a localizá-la.
     - **OMA-URI** - insira o OMA-URI para o qual você deseja fornecer uma configuração.
     - **Tipo de dados** – Selecione o tipo de dados em que você especificará essa configuração de OMA-URI. Escolha entre **Cadeia de caracteres**, **Cadeia de caracteres (arquivo XML)**, **Data e hora**, **Inteiro**, **Ponto flutuante**, **Booliano** ou **Base64 (arquivo)**.

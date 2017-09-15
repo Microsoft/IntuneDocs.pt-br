@@ -23,9 +23,12 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
 
 4. Configure **Escopo de Usuário MDM**. Especifique quais dispositivos dos usuários devem ser gerenciados pelo Microsoft Intune. Esses dispositivos Windows 10 podem ser registrados automaticamente para gerenciamento com o Microsoft Intune.
 
-  - **Nenhum**
-  - **Alguns**
-  - **Todos**
+  - **Nenhum** - registro automático do MDM desabilitado
+  - **Alguns** - selecione os **Grupos** que podem inscrever seus dispositivos com Windows 10 automaticamente
+  - **Todos** - todos os usuários podem inscrever seus dispositivos com Windows 10 automaticamente
+
+      > [!IMPORTANT]
+      > Se **Escopo de usuário do MAM** e registro automático do MDM (**Escopo de usuário do MDM**) estiverem habilitados para um grupo, apenas o MAM será habilitado. Apenas o MAM é adicionado para usuários nesse grupo quando eles ingressam o dispositivo pessoal no local de trabalho. Os dispositivos não são automaticamente registrados no MDM.
 
    ![Captura de tela do portal do Azure](../media/auto-enroll-scope.png)
 
@@ -33,9 +36,6 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
     - **URL dos Termos de uso do MDM**
     - **URL de Descoberta do MDM**
     - **URL da Conformidade do MDM**
-
-    > [!IMPORTANT]
-    > Se **Escopo de usuário do MAM** e registro automático do MDM (**Escopo de usuário do MDM**) estiverem habilitados para um grupo, apenas o MAM será habilitado. Apenas o MAM é adicionado para usuários nesse grupo quando eles ingressam o dispositivo pessoal no local de trabalho. Os dispositivos não são automaticamente registrados no MDM.
 
 6. Selecione **Salvar**.
 

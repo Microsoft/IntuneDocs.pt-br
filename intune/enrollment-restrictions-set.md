@@ -1,6 +1,6 @@
 ---
 title: "Definir restrições de registro no Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Restrinja o registro pela plataforma e defina um limite de registro de dispositivo no Intune. "
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Como um administrador do Intune, você pode determinar quais dispositivos podem ser registrados para gerenciamento com o Intune. Use o Portal do Intune para definir as seguintes restrições para o registro de dispositivo:
+Como um administrador do Intune, você pode determinar quais dispositivos podem ser registrados para gerenciamento com o Intune. Use o Portal do Azure para definir as seguintes restrições para o registro de dispositivo:
 
 - Número máximo de dispositivos registrados
 - Plataformas de dispositivo que podem ser registradas:
@@ -68,7 +68,7 @@ As restrições de registro padrão se aplicam a todos os usuários.
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Escolha **Registro de dispositivos** > **Restrições de registro**.
-4. No Portal do Intune, escolha **Registro de dispositivo** e **Restrições de registro**.
+4. No Portal do Azure, escolha **Registro de dispositivo** e **Restrições de registro**.
 5. Escolha **Restrições de registro** > **Restrições de limite de dispositivo**.
 6. Em **Todos os Usuários**, selecione **Limite de Dispositivo**. Especifique o número máximo de dispositivos registrados por usuário.  
 ![Captura de tela da folha de restrições de limite de dispositivo com as restrições de limite de dispositivo.](./media/device-restrictions-limit.png)
