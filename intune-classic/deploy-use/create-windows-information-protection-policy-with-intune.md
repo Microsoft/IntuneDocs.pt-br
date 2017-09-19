@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 9/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -35,13 +35,6 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 -   **Aplicativos permitidos**: estes são os aplicativos que precisam atender a esta política.
 
 -   **Aplicativos isentos**: estes aplicativos são isentos desta política e podem acessar dados corporativos sem restrições.
-
-> [!IMPORTANT]  
-> O Intune recomenda adicionar o aplicativo do Portal da Empresa à lista de aplicativos isentos, a fim de permitir que ele funcione corretamente. Para fazer isso, adicione o seguinte **aplicativo da Store** à lista de **aplicativos isentos**:  
->   - Nome: Portal da Empresa  
->   - Publicador: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - Nome do produto: Microsoft.CompanyPortal  
-
 
 ### <a name="types-of-apps"></a>Tipos de aplicativos
 
@@ -109,7 +102,7 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 5.  Depois de inserir as informações nos campos, escolha **OK** para adicionar o aplicativo a sua lista de **Aplicativos permitidos**.
 
 > [!NOTE]
-> Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...)**  no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
+> Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...) ** no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da Área de Trabalho à sua lista de aplicativos permitidos
 
