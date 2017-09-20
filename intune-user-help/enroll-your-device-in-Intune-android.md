@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrar seu dispositivo Android no Intune
 
@@ -54,14 +54,14 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 
 6.  Na tela **Configuração de Acesso da Empresa**, toque em **Iniciar**.
 
-    ![Tela Configuração de acesso da empresa](./media/and-enroll-4a-comp-access-setup.png)
+    ![Tela Configuração de acesso da empresa](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > Os triângulos amarelos não significam que você já tem um erro. Esses ícones indicam que ainda há etapas a serem concluídas no processo de registro.
 
-7. Na tela **Por que registrar seu dispositivo?** leia sobre o que você pode fazer ao registrar o dispositivo e, em seguida, toque em **CONTINUAR**.
+7. Na tela **Benefícios do gerenciamento de dispositivos**, leia sobre o que você pode fazer ao registrar o dispositivo e, em seguida, toque em **CONTINUAR**.
 
-    ![Tela Por que registrar seu dispositivo](./media/and-enroll-4b-why-enroll.png)
+    ![Benefícios da tela de gerenciamento de dispositivos](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Examine uma lista do que o administrador de TI pode e não pode ver em seu dispositivo e toque em **CONTINUAR**.
 
@@ -114,13 +114,13 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 
 14. Quando a tela **Configuração de Acesso da Empresa** for exibida, toque em **CONTINUAR**. Se uma mensagem indicar que o dispositivo está fora de conformidade, siga as instruções para corrigir o problema e, em seguida, toque em **CONTINUAR**.
 
-    ![O dispositivo não é compatível, mas está registrado](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![O dispositivo não é compatível, mas está registrado](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Problemas de conformidade do dispositivo aparecem nessa resolução](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Problemas de conformidade do dispositivo aparecem nessa resolução](/intune/media/android_cp_enroll_03_post_1709.png)
 
     Você pode encontrar mais informações sobre os problemas tocando neles.
 
-    ![Problemas de conformidade do dispositivo expandidos](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problemas de conformidade do dispositivo expandidos](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Tela Configuração de acesso da empresa](./media/and-enroll-9d-comp-access-setup.png)  
 

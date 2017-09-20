@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Assim, criamos este guia de referência para aqueles que estão totalmente familiarizados com o Intune no Portal Clássico e querem saber como fazer algo no Intune no Portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
 ## <a name="quick-reference-guide"></a>Guia de referência rápida
 |Recurso |Caminho no Portal Clássico|Caminho no Intune no Portal do Azure|
 |------------|---------------|---------------|
-|DEP (Programa de registro de dispositivo) |Administração > Gerenciamento de dispositivo móvel > iOS e Mac OS X > Programa de registro de dispositivos|[Registro de dispositivo > Registro da Apple > Token do Programa de Registro](#where-did-apple-dep-go) |
-|DEP (Programa de registro de dispositivo)| Administração > Gerenciamento de dispositivo móvel > iOS e Mac OS X > Programa de registro de dispositivos |[Registro de dispositivo > Registro da Apple > Números de Série do Programa de Registro](#where-did-apple-dep-go) |
+|DEP (Programa de registro de dispositivos) [somente iOS]|Administração > Gerenciamento de Dispositivo Móvel > iOS > Programa de Registro de Dispositivos|[Registro de dispositivo > Registro da Apple > Token do Programa de Registro](#where-did-apple-dep-go) |
+|DEP (Programa de registro de dispositivos) [somente iOS]| Administração > Gerenciamento de dispositivo móvel > iOS e Mac OS X > Programa de registro de dispositivos |[Registro de dispositivo > Registro da Apple > Números de Série do Programa de Registro](#where-did-apple-dep-go) |
 |Regras de Registro |Administração > Gerenciamento de dispositivo móvel > Regras de Registro|[Registro de dispositivo > Restrições de Registro](#where-did-enrollment-rules-go) |
 |Grupos pelo número de série do iOS |Grupos > Todos os Dispositivos > Dispositivos corporativos pré-registrados > Por Número de Série do iOS|[Registro de dispositivo > Registro da Apple > Números de Série do Programa de Registro](#where-did-corporate-pre-enrolled-devices-go) |
 |Grupos pelo número de série do iOS |Grupos > Todos os Dispositivos > Dispositivos corporativos pré-registrados > Por Número de Série do iOS| [Registro de dispositivo > Registro da Apple > Números de série de CA](#where-did-corporate-pre-enrolled-devices-go)|

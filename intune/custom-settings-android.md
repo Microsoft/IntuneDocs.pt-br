@@ -3,10 +3,10 @@ title: "Configurações personalizadas do Intune para dispositivos Android"
 titleSuffix: Azure portal
 description: "Conheça as configurações que você pode usar em um perfil personalizado do Android."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92014eb9fd5564c0527b8cbf68732a51cf83bc96
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 433e79ae1518f86aeb7206d5213fc38a38de5218
+ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Configurações personalizadas para dispositivos Android no Microsoft Intune
 
@@ -27,7 +27,14 @@ ms.lasthandoff: 09/09/2017
 
 Use o perfil **Personalizado** do Android do Microsoft Intune para atribuir configurações OMA-URI, que podem ser usadas para controlar recursos em dispositivos Android. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
-Essa funcionalidade destina-se a permitir que você atribua configurações do Android que não são configuráveis com as políticas do Intune.
+Essa funcionalidade destina-se a permitir que você atribua as configurações do Android a seguir, que não são configuráveis com as políticas do Intune:
+
+- [Usar um perfil de dispositivo personalizado do Microsoft Intune para criar um perfil de Wi-Fi com uma chave pré-compartilhada](/intune/wi-fi-profile-shared-key)
+- [Usar um perfil personalizado do Microsoft Intune para criar um perfil de VPN por aplicativo para dispositivos Android](/intune/android-pulse-secure-per-app-vpn)
+- [Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard no Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+
+>[!IMPORTANT]
+>Somente as configurações listadas acima podem ser configuradas no momento por esse tipo de perfil. Dispositivos Android não expõem uma lista completa das configurações OMA-URI que você pode configurar. Se você quiser ver mais configurações adicionadas, solicite-as no [site Intune Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Configurações de perfil personalizadas para dispositivos Android
 
@@ -45,8 +52,6 @@ Essa funcionalidade destina-se a permitir que você atribua configurações do A
 
 Ao concluir as configurações, o perfil será criado e aparecerá na folha da lista de perfis. Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
-Para obter alguns exemplos de configurações personalizadas que podem ser utilizadas, consulte:
 
-- [Usar um perfil de dispositivo personalizado do Microsoft Intune para criar um perfil de Wi-Fi com uma chave pré-compartilhada](/intune/wi-fi-profile-shared-key)
-- [Usar um perfil personalizado do Microsoft Intune para criar um perfil de VPN por aplicativo para dispositivos Android](/intune/android-pulse-secure-per-app-vpn)
-- [Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard no Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+
+

@@ -1,6 +1,6 @@
 ---
 title: Gerenciar dispositivos com o Intune
-titlesuffix: Azure portal
+titleSuffix: Intune on Azure
 description: "Saiba como ver os dispositivos gerenciados com o Intune e executar várias operações neles."
 keywords: 
 author: nathbarn
@@ -14,23 +14,33 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca40eee8a53fa3e8b2610ce414f0037180d4beaf
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0686b3ece3a929cb06a29f4e58046872b70ec926
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Como um administrador de TI, você deve garantir que os dispositivos gerenciados estejam fornecendo os recursos de que os usuários finais precisam para fazer seu trabalho, protegendo simultaneamente esses dados de riscos.
+
 A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenciados e permite que você execute tarefas remotas neles. Para acessar a carga de trabalho:
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Dispositivos**.
-4. Você pode exibir informações sobre dispositivos e executar as ações de dispositivo remoto listadas.
+3. Em **Intune**, escolha **Dispositivos**.
+4. Você pode exibir informações sobre dispositivos e executar as ações de dispositivo remoto conforme demonstrado a seguir:
+    - **Visão geral** – um instantâneo dos dispositivos registrados que você pode gerenciar.
+    - **Todos os dispositivos** – uma lista dos dispositivos registrados que você gerencia. Escolha **Filtro** ou **Colunas** para refinar as informações exibidas. Selecione um dispositivo para [exibir o inventário de dispositivo](device-inventory.md).
+    - **Dispositivos do Azure AD** – uma lista de dispositivos registrados ou associados com o Azure AD (Active Directory). Saiba mais sobre o [gerenciamento de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+    - **Ações de dispositivo** – um histórico das ações remotas executadas em dispositivos, incluindo a ação, o status dela, quem iniciou a ação e o horário.
+
+    ![Monitorar ações do dispositivo](./media/monitor-device-actions.png)
+
+    - **TeamViewer** – o serviço do TeamViewer permite que usuários de dispositivos Android gerenciados pelo Intune obtenham assistência remota de seu administrador de TI. Saiba mais sobre o [TeamViewer](device-profile-android-teamviewer.md).
 
 ## <a name="available-device-actions"></a>Ações do dispositivo disponíveis
 As ações disponíveis dependem da plataforma e da configuração do dispositivo.
@@ -54,4 +64,3 @@ As ações disponíveis dependem da plataforma e da configuração do dispositiv
 ## <a name="next-steps"></a>Próximas etapas
 
 - Escolha **Ações do Dispositivo** para ver o status das ações executadas nos dispositivos gerenciados.
-![Monitorar ações do dispositivo](./media/monitor-device-actions.png)
