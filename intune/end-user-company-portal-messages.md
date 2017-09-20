@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar usuários finais a compreender as mensagens do aplicativo do Portal da Empresa
 
@@ -95,6 +95,17 @@ Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após n
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar isso aos seus usuários
 Peça aos usuários para [enviarem logs para o administrador de TI por email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). Você também pode pedir que eles [enviem logs para o administrador de TI por cabo](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) se quiser permitir que eles comparem os dois métodos.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>O suporte da sua empresa precisa lhe conceder acesso aos recursos da empresa
+
+### <a name="where-it-appears"></a>Onde ele aparece
+Se você não tiver adicionado o aplicativo de Portal da Empresa à lista de **Aplicativos permitidos** ou de **Aplicativos isentos** e um usuário tentar entrar, a entrada falhará. A mensagem a seguir é exibida:
+
+> **O suporte da sua empresa precisa lhe conceder acesso aos recursos da empresa**  
+> Sua empresa está usando as políticas de Proteção de Informações do Windows para proteger seu dispositivo. O suporte da empresa precisará certificar-se de que eles permitem que o Portal da Empresa acesse essas informações.
+
+### <a name="what-it-means"></a>O que significa
+
+Adicione o Portal da Empresa à lista de **Aplicativos permitidos** ou de **Aplicativos isentos** na política de proteção do aplicativo WIP (Proteção de Informações do Windows). Para obter mais informações, consulte [Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Consulte também
 [O que dizer a seus usuários finais sobre como usar o Intune](end-user-educate.md)

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
 
@@ -370,7 +370,14 @@ Em breve, adicionaremos exemplos sobre o que procurar nesses arquivos de log.
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de registro do iOS
 Uma lista de erros de registro do iOS é fornecida em nossa documentação de usuário do dispositivo em [You see errors while trying to enroll your device in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) (Erros ao tentar registrar seu dispositivo no Intune).
 
-## <a name="pc--issues"></a>Problemas do computador
+## <a name="pc-issues"></a>Problemas do computador
+
+
+|Mensagem de erro|Problema|Resolução|
+|---|---|---|
+|**O administrador de TI precisa atribuir uma licença para o acesso**<br>Seu administrador de TI não forneceu a você o acesso para usar este aplicativo. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|Não é possível registrar o dispositivo porque a conta do usuário não tem a licença necessária.|Antes de registrarem os dispositivos, a licença necessária deverá ser atribuída aos usuários. Esta mensagem indica que eles têm o tipo de licença errado para a autoridade de gerenciamento de dispositivo móvel designado. Por exemplo, se o Intune tiver sido designado como a autoridade de gerenciamento de dispositivo móvel e eles estiverem usando uma licença do System Center 2012 R2 Configuration Manager, eles receberão esse erro.<br>Veja informações sobre [como atribuir licenças do Intune às contas de usuário](https://docs.microsoft.com/intune/licenses-assign).|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está registrado - erro hr 0x8007064c
 **Problema:** o registro falha com o erro **O computador já está registrado**. O log de registro mostra o erro **hr 0x8007064c**.
