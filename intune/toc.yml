@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Guias de implantação de cenário
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Proteger o Exchange Online
           href: exchange-online-protect.md
         - name: Reduzir os custos de suporte técnico
           href: password-reset.md
+        - name: Impedir o acesso não autorizado
+          href: data-outside-protect.md
+        - name: Impedir perdas de dados em dispositivos não gerenciados
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Guia de migração
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Integração entre o Check Point e o Intune
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: Adicionar aplicativos MTD
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: Habilitar MTD no Intune
-              href: mtd-connector-enable.md
-            - name: Criar uma política de conformidade de dispositivo MTD
-              href: mtd-device-compliance-policy-create.md
+            - name: Configurar o Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Integração entre o Zimperium e o Intune
+                  href: zimperium-mtd-connector-integration.md
+            - name: Configurar o Intune para MTD
+              items:
+                - name: Adicionar aplicativos MTD
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Criar uma política de conformidade de dispositivo MTD
+                  href: mtd-device-compliance-policy-create.md
+                - name: Habilitar MTD no Intune
+                  href: mtd-connector-enable.md
         - name: Controle de acesso à rede
           href: network-access-control-integrate.md
         - name: Configurar o Windows Hello

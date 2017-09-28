@@ -15,18 +15,18 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Habilitar a Defesa Contra Ameaças Móveis no Intune
 
 > [!NOTE] 
 > Este tópico se aplica a todos os parceiros de Defesa contra Ameaças Móveis.
 
-Para habilitar a conexão MTD (Defesa contra Ameaças Móveis) no Intune, você já deve ter configurado o Conector do Intune no console da solução MTD.
+Para habilitar a conexão de MTD (Defesa contra Ameaças Móveis) no Intune, você já deve ter configurado o Conector do Intune no console do parceiro de MTD.
 
 ## <a name="to-enable-the-mtd-connector"></a>Para habilitar o conector MTD
 
@@ -65,7 +65,3 @@ Decida quais opções de alternância do MTD você precisa habilitar de acordo c
 
 > [!TIP]
 > Veja o **Status da conexão** e o tempo da **Última sincronização** entre o Intune e o parceiro de MTD na folha Defesa contra Ameaças Móveis.
-
-## <a name="next-steps"></a>Próximas etapas
-
-[Criar uma política de conformidade de dispositivo de Defesa contra Ameaças Móveis com o Intune](mtd-device-compliance-policy-create.md)
