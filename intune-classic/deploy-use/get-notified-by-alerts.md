@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Usar alertas para ser notificado pelo Microsoft Intune
 
@@ -61,6 +61,8 @@ No [console de administração do Microsoft Intune](https://manage.microsoft.com
 
 ## <a name="working-with-alerts"></a>Trabalhando com alertas
 
+Para exibir alertas no [console do administrador do Microsoft Intune](https://manage.microsoft.com), escolha **Alertas** e, em seguida, o tipo de alerta a ser exibido.
+
 Use as opções a seguir para ajudá-lo a trabalhar com alertas no console de administração do Intune.
 
 |Opção|Descrição|
@@ -70,11 +72,12 @@ Use as opções a seguir para ajudá-lo a trabalhar com alertas no console de ad
 |**Fechar um alerta**|Na lista de alertas, escolha o alerta para fechar e clique em **Fechar Alerta**.<br /><br />Alertas fechados são excluídos permanentemente após 90 dias.|
 |**Reativar um alerta fechado**|Na lista de alertas, defina o menu suspenso **Filtros** como **Fechado**.<br /><br />Na lista de alertas fechados, selecione o alerta que deseja reativar e escolha **Reativar Alerta**.|
 
-Os alertas do Intune permanecem ativos até que:
+Os alertas do Intune permanecem ativos por 30 dias ou até que:
 
-- O problema que causou o alerta seja solucionado
-- Você feche o alerta manualmente
-- 45 dias passaram desde que o alerta foi gerado
+- O problema que causou o alerta seja corrigido.
+- O alerta é fechado manualmente.
+
+Alertas fechados podem ser reativadas por 30 dias após o fechamento. Após 30 dias, os alertas fechados e inativos são removidos do Intune.
 
 > [!TIP]
 > Se o mesmo alerta for gerado por dispositivos em execução em sistemas operacionais diferentes, você poderá ver várias versões do mesmo alerta na lista de alertas.
