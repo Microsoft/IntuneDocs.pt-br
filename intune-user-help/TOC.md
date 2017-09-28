@@ -27,7 +27,7 @@
 ### [Corrigindo problemas comuns com o Android](troubleshoot-your-device-android.md)
 #### [Verificar a conformidade do dispositivo](check-compliance-on-your-device-android.md)
 
-#### [Usar logs para corrigir problemas]
+#### Usar logs para corrigir problemas
 ##### [Ativar o log detalhado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Enviar logs usando o email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Enviar logs usando um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
