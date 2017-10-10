@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1753545450d684f366ef4e323104d92ff0a55cbb
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 02d955e5f5f15264df8aba3ea380b7f7e6c4d87b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>Cancelar o registro do dispositivo iOS do Intune
 
@@ -53,4 +53,4 @@ Quando você cancela o registro de dispositivo do Intune, o seguinte acontece:
 
 -   Dispositivos que são configurados somente para email não aparecerão mais no site ou no aplicativo do portal da empresa.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

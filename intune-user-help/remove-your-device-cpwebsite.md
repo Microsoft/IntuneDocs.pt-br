@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4293e05d3668c7f6d6d6b9986e006061df5afe80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b490148a932339d4fb4366d28e020416782ceee
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Remova o dispositivo do Portal da Empresa
 
-Se você decidir que não deseja mais que seu dispositivo seja gerenciado por sua empresa ou organização, poderá removê-lo do Portal da Empresa usando o [site do Portal da Empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no gerenciamento pelo departamento de TI. Se você remover seu dispositivo, ele não será mais listado no Portal da Empresa e você também poderá perder o acesso a email, aplicativos ou dados da escola e da empresa.
+Se você decidir que não deseja mais que seu dispositivo seja gerenciado por sua empresa ou organização, poderá removê-lo do Portal da Empresa usando o [site do Portal da Empresa](https://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no gerenciamento pelo departamento de TI. Se você remover seu dispositivo, ele não será mais listado no Portal da Empresa e você também poderá perder o acesso a email, aplicativos ou dados da escola e da empresa.
 
 Para remover seu dispositivo:
 
-1.  No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
+1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
 
   ![Uma imagem do site do Portal da Empresa com um menu lateral expandido no lado esquerdo da tela, com os botões Início, Todos os Aplicativos, Meus Dispositivos, Assistência Técnica e Saída.](/media/iwp-expanded-sidebar.png)
 
@@ -42,4 +42,4 @@ Para remover seu dispositivo:
 
 4. Leia a mensagem de aviso e toque em **Remover** para remover o dispositivo do Portal da Empresa.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
