@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>O que acontece quando você cria um perfil de trabalho
 
@@ -28,9 +28,9 @@ Você configura um perfil de trabalho no seu dispositivo para manter seus emails
 
 Quando você cria um perfil de trabalho:
 
-- O administrador de TI pode gerenciar apenas emails, aplicativos, preferências e dados relacionados ao trabalho no seu dispositivo e não aplicativos ou dados pessoais.
+- O suporte de sua empresa pode gerenciar apenas emails, aplicativos, preferências e dados relacionados ao trabalho no seu dispositivo e não aplicativos ou dados pessoais.
 
-- Aplicativos de trabalho podem ser obtidos na Play Store for Work. Para obter aplicativos pessoais, acesse a Google Play Store. O administrador de TI não pode ver ou gerenciar seus aplicativos pessoais.
+- Aplicativos de trabalho podem ser obtidos na Play Store for Work. Para obter aplicativos pessoais, acesse a Google Play Store. O suporte de sua empresa não pode ver ou gerenciar seus aplicativos pessoais.
 
 - Aplicativos de trabalho são separados dos seus aplicativos pessoais, mas ambos podem aparecer na sua tela inicial ao mesmo tempo. Veja um exemplo de como a sua tela pode ficar abaixo. Sua tela pode parecer um pouco diferente.
 
@@ -38,9 +38,9 @@ Quando você cria um perfil de trabalho:
 
     ![Play Store for Work do Android](./media/afw-google-play-store-for-work.png)
 
-- Sua empresa ou escola é dona do seu perfil de trabalho, assim, o administrador de TI pode instalar ou remover aplicativos de trabalho ou o seu perfil, mas não seus aplicativos ou dados pessoais.
-- O administrador de TI não pode redefinir ou apagar o seu dispositivo.
+- Sua empresa ou escola é dona do seu perfil de trabalho, assim, o suporte de sua empresa pode instalar ou remover aplicativos de trabalho ou o seu perfil, mas não seus aplicativos ou dados pessoais.
+- O suporte de sua empresa não pode redefinir nem apagar o seu dispositivo.
 
 Para saber mais sobre as etapas para criar um perfil de trabalho, consulte [Criar um perfil de trabalho e registrar o dispositivo](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

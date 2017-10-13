@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrar seu dispositivo Android no Intune
 
@@ -30,21 +30,19 @@ Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispos
 
 Essas instruções de registro destinam-se a dispositivos Samsung KNOX Android e nativos. O Samsung KNOX é um tipo de segurança que certos dispositivos Samsung usam para proporcionar proteção adicional além da fornecida pelo Android de maneira nativa. Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** > **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
 
-Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O administrador de TI usa essa categoria para ajudar a verificar os aplicativos aos quais você tem acesso.
-
-Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar erros de registro ao administrador de TI](send-enrollment-errors-to-your-it-admin-android.md).
+Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O suporte de sua empresa usa essa categoria para ajudar a verificar os aplicativos aos quais você tem acesso.
 
 **Para registrar seu dispositivo Android:**
 
 1.  Instale o aplicativo gratuito Portal da Empresa do Intune do [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Abra o aplicativo Portal da Empresa do Microsoft Intune.
+2.  Abra o aplicativo do Portal da Empresa.
 
 3.  Na tela de **Boas-vindas** do Portal da Empresa, toque em **Entrar** e entre com sua conta corporativa ou de estudante.
 
     ![O aplicativo do Portal da Empresa para a tela de boas-vindas do Android, que pede ao usuário para entrar com sua conta corporativa ou de estudante necessária. Ele também contêm as contas da Microsoft e outras contas pessoais que não são aceitas.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Se o seu administrador de TI tiver configurado termos e condições da empresa, toque em **ACEITAR** para aceitar os termos. Esta tela pode ser um pouco diferente da imagem abaixo com base na versão do Android que você está usando no momento.
+4.  Se o suporte de sua empresa tiver configurado termos e condições da empresa, toque em **ACEITAR** para aceitar os termos. Esta tela pode ser um pouco diferente da imagem abaixo com base na versão do Android que você está usando no momento.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -52,28 +50,24 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  Na tela **Configuração de Acesso da Empresa**, toque em **Iniciar**.
+6.  Na tela **Configuração de Acesso da Empresa**, toque em **CONTINUAR**.
 
-    ![Tela Configuração de acesso da empresa](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Tela Configuração de acesso da empresa](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > Os triângulos amarelos não significam que você já tem um erro. Esses ícones indicam que ainda há etapas a serem concluídas no processo de registro.
 
-7. Na tela **Benefícios do gerenciamento de dispositivos**, leia sobre o que você pode fazer ao registrar o dispositivo e, em seguida, toque em **CONTINUAR**.
+7.  Examine uma lista do que o suporte de sua empresa pode e não pode ver em seu dispositivo e, em seguida, toque em **CONTINUAR**.
 
-    ![Benefícios da tela de gerenciamento de dispositivos](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Configurações de privacidade](/intune/media/android_cp_enroll_02_after_1710.png)
 
-8.  Examine uma lista do que o administrador de TI pode e não pode ver em seu dispositivo e toque em **CONTINUAR**.
+9.  Na tela **Novidades**, leia sobre o que acontece durante o registro e, em seguida, toque em **REGISTRAR**.
 
-    ![Configurações de privacidade](./media/and-enroll-4c-we-care-privacy.png)
-
-9.  Na tela **O que vem em seguida**, leia sobre o que acontece durante o registro e, em seguida, toque em **REGISTRAR**.
-
-    ![Tela O que vem em seguida](./media/and-enroll-4d-what-comes-next.png)
+    ![Tela O que vem em seguida](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  Se você estiver usando o Android 6.0 ou posterior, execute esta etapa. Caso contrário, vá para a próxima etapa.
 
-    Se o administrador de TI tiver configurado algumas políticas, você poderá ver as seguintes mensagens:
+    Se o suporte de sua empresa tiver configurado algumas políticas, você poderá ver as seguintes mensagens:
     -   **Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
@@ -96,9 +90,9 @@ Se houver erro ao tentar registrar o dispositivo no Intune, você pode [enviar e
 
     A função de administrador do dispositivo é aquela que o Portal da Empresa precisa para gerenciar o dispositivo. Ela permite que seu administrador veja determinadas coisas - como quantas vezes você tentou desbloquear sua tela - e tome algumas atitudes.
 
-    O importante a lembrar é que são ações realizadas em nome da segurança. Seu administrador de TI não está tentando violar sua privacidade ou apagar suas informações sem qualquer motivo, mas quer ter certeza de que os dados corporativos são mantidos seguros.
+    O importante a lembrar é que são ações realizadas em nome da segurança. O suporte de sua empresa não está tentando violar sua privacidade ou apagar suas informações sem qualquer motivo, mas quer ter certeza de que os dados corporativos são mantidos seguros.
 
-    A Microsoft não controla essa mensagem, e sabemos que seu conteúdo pode parecer um pouco drástico. Não há uma maneira para o Portal da Empresa exibir apenas as restrições e acessos que são relevantes para sua organização. Todos são concedidos de uma vez nesta tela. Entre em contato com o administrador de TI para saber mais sobre como usar as informações de contato no [site do Portal da Empresa](http://portal.manage.microsoft.com) se você tiver dúvidas específicas ao uso individual de sua organização.
+    A Microsoft não controla essa mensagem, e sabemos que seu conteúdo pode parecer um pouco drástico. Não há uma maneira para o Portal da Empresa exibir apenas as restrições e acessos que são relevantes para sua organização. Todos são concedidos de uma vez nesta tela. Entre em contato com o suporte de sua empresa para saber mais sobre como usar as informações de contato no [site do Portal da Empresa](https://portal.manage.microsoft.com) se você tiver dúvidas específicas quanto ao uso individual de sua organização.
 
 12.  Siga os prompts para inserir um PIN ou senha. Se já tiver configurado um PIN ou senha neste dispositivo, você não verá esta tela ou será solicitado a inserir um novo PIN ou senha.
 
@@ -133,4 +127,6 @@ Antes de tentar instalar aplicativos corporativos, acesse **Configurações** &g
 > [!Note]
 > Se sua organização estiver usando software de gerenciamento de despesas de telecomunicações, você terá algumas etapas adicionais para concluir antes de o dispositivo estar totalmente inscrito. Saiba mais [aqui](enroll-your-device-with-telecom-expense-management-android.md).
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.
+Se houver erro ao tentar registrar o dispositivo no Intune, você poderá [enviar erros de registro ao suporte de sua empresa](send-enrollment-errors-to-your-it-admin-android.md).
+
+Ainda precisa de ajuda? Entre em contato com o suporte de sua empresa (consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.

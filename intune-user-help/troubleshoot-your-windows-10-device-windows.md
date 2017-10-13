@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solucionar problemas de registro de dispositivo do Windows 10
 Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de área de trabalho do Windows 10 no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não consegue acessar seu email ou arquivos corporativos ou de estudante, tente estas etapas de solução de problemas.
@@ -57,6 +57,6 @@ Se tiver seguido as etapas acima, mas não conseguir acessar seu email corporati
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Etapas de solução de problemas a serem seguidas se você vir “Configurar uma conta corporativa ou de estudante”
 
-Se você vir uma mensagem que diz __Não foi possível descobrir automaticamente um ponto de extremidade de gerenciamento correspondente ao nome de usuário inserido. Verifique seu nome de usuário e tente novamente. Se você souber a URL do ponto de extremidade de gerenciamento, insira-o.__, deverá tentar inserir seu nome de usuário e senha novamente. Se ainda não funcionar, verifique com seu administrador de TI para obter o site que você precisa fornecer na caixa de texto **Ponto de extremidade de gerenciamento**. Este é um site que provavelmente é semelhante a **www.yourcompany.onmicrosoft.com**. 
+Se você vir uma mensagem que diz __Não foi possível descobrir automaticamente um ponto de extremidade de gerenciamento correspondente ao nome de usuário inserido. Verifique seu nome de usuário e tente novamente. Se você souber a URL do ponto de extremidade de gerenciamento, insira-o.__, deverá tentar inserir seu nome de usuário e senha novamente. Se ainda não funcionar, verifique com o suporte de sua empresa para obter o site que você precisa fornecer na caixa de texto **Ponto de extremidade de gerenciamento**. Este é um site que provavelmente é semelhante a **www.yourcompany.onmicrosoft.com**. 
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

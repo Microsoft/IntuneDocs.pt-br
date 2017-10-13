@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
 
@@ -48,4 +48,4 @@ Obter acesso a aplicativos, dados e recursos da sua organização facilita o seu
 
 8. O Mac começará a ser registrado no gerenciamento. Poderá ser solicitado que você forneça informações de logon do computador durante esse tempo. Esse processo de registro pode levar alguns minutos. Durante esse tempo, você pode fazer outras coisas em seu computador. Uma mensagem será exibida quando a Instalação do Acesso da Empresa for concluída para informá-lo que ela já terminou.
 
-Ainda precisa de ajuda? Faça o check-in com o administrador de TI. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://portal.manage.microsoft.com).

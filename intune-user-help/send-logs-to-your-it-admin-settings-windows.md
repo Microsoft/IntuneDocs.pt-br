@@ -1,5 +1,5 @@
 ---
-title: Enviar logs para o administrador de TI de dispositivos Windows 10 | Microsoft Docs
+title: Enviar logs para o suporte de sua empresa de dispositivos Windows 10 | Microsoft Docs
 description: Registrar um dispositivo Windows 10 1511 no Intune
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be9976f03bf749222ca372040d4d936e6a8fd26b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1e84bd13a58359f281ebfca3901d643dfc012d90
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-from-the-settings-app-for-windows-10"></a>Enviar logs para o administrador de TI no aplicativo de Configurações do Windows 10
+# <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Enviar logs para o suporte de sua empresa no aplicativo de Configurações para Windows 10
 
-Se você receber um erro enquanto estiver usando o dispositivo Windows 10 gerenciado por sua empresa, poderá ajudar o administrador de TI a solucionar o problema enviando informações a ele por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+Se você receber um erro enquanto estiver usando o dispositivo Windows 10 gerenciado por sua empresa, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
 
 1.  Abra o aplicativo **Configurações** do Windows acessando o **menu Iniciar** e selecionando o botão **Configurações**. Também é possível pesquisar “configurações” na barra de pesquisa.
 2.  Acesse **Contas** > **Acessar conta corporativa ou de estudante**.
@@ -34,6 +34,6 @@ Se você receber um erro enquanto estiver usando o dispositivo Windows 10 gerenc
 
 4. Os logs serão salvos em **C:\Users\Public\Public Documents\MDMDiagnostics**. Dois arquivos serão criados: um é o log em si e o outro é um documento especial que permite ao administrador examinar os logs em programas diferentes, como o Microsoft Excel. Anexe ambos os arquivos a um email e envie o email para o administrador. Se você fizer isso mais de uma vez, basta escolher os arquivos do dia em que os logs foram criados. 
 
-Talvez você também precise enviar os [logs do aplicativo do Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md) para fornecer ao administrador de TI mais ajuda ao tentar solucionar os problemas encontrados. 
+Talvez você também precise enviar os [logs do aplicativo do Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md) para fornecer ao suporte de sua empresa mais ajuda ao tentar solucionar os problemas que eles podem encontrar. 
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Corrigir problemas comuns com o seu dispositivo iOS
 
-Às vezes, poderão ocorrer problemas com seu dispositivo iOS, que poderão ser corrigido pela solução de problemas. Alguns dos problemas comuns que já vimos e que você pode primeiro tentar corrigir sozinho estão listados abaixo. Para os problemas mais complexos, é recomendável contatar seu administrador de TI por meio de suas informações de contato no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Às vezes, poderão ocorrer problemas com seu dispositivo iOS, que poderão ser corrigido pela solução de problemas. Alguns dos problemas comuns que já vimos e que você pode primeiro tentar corrigir sozinho estão listados abaixo. Para os problemas mais complexos, é recomendável contatar o suporte de sua empresa por meio de suas informações de contato no [site do Portal da Empresa](https://portal.manage.microsoft.com).
 
 - [Preciso reconectar um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device.md)
-- [Preciso enviar erros para o administrador de TI](send-errors-to-your-it-admin-ios.md)
+- [Preciso enviar erros para o suporte de minha empresa](send-errors-to-your-it-admin-ios.md)
 - [Preciso enviar erros para a Microsoft](send-logs-to-microsoft-ios.md)
 - [Recebi um erro ao usar o aplicativo do Portal da Empresa](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Preciso identificar meu dispositivo para registrá-lo](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

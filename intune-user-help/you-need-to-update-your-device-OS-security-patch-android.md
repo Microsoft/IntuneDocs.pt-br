@@ -14,15 +14,15 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5ee77c0889228080d4ea9dcd5c27fe8225865a6a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>É necessário atualizar o sistema operacional de seu dispositivo Android
 
-Se você ver uma mensagem “O nível mínimo do patch de segurança do Android não está configurado”, será necessário instalar uma atualização para garantir que o dispositivo permanece seguro. O _patch_ é liberado para manter o software, a fim de manter seu funcionamento ideal e atualizado. O administrador de TI exige que você instale esse patch para garantir que os dados corporativos são mantidos os mais protegidos possíveis em seu dispositivo. O local do patch de segurança necessário poderá variar, dependendo se você tiver um tipo específico de dispositivo Samsung.
+Se você ver uma mensagem “O nível mínimo do patch de segurança do Android não está configurado”, será necessário instalar uma atualização para garantir que o dispositivo permanece seguro. O _patch_ é liberado para manter o software, a fim de manter seu funcionamento ideal e atualizado. O suporte de sua empresa exige que você instale esse patch para garantir que os dados corporativos são mantidos os mais protegidos possíveis em seu dispositivo. O local do patch de segurança necessário poderá variar, dependendo se você tiver um tipo específico de dispositivo Samsung.
 
 Caso você tenha um dispositivo Samsung, acesse **Configurações** > **Sobre o telefone** e verifique se a palavra “KNOX” é exibida em algum lugar da tela. Nesse caso, siga as instruções do Samsung KNOX abaixo.
 
@@ -38,4 +38,4 @@ Acesse **Configurações** > **Atualizações do sistema** > **Verificar se há 
 
 
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

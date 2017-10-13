@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrar seu dispositivo Windows 10 no Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Entrar](./media/W10-enroll-4-sign-in.png)
 
-Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Tente corrigir o acesso [solucionando problemas com sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se ainda não funcionar, você precisará entrar em contato com o administrador de TI para obter ajuda adicional.
+Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Tente corrigir o acesso [solucionando problemas com sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se ainda não funcionar, você precisará entrar em contato com o suporte de sua empresa para obter ajuda adicional.
 
-Uma maneira fácil de obter ajuda de seu administrador de TI é por meio das informações de contato disponíveis no aplicativo Portal da Empresa, que também permite localizar e baixar aplicativos recomendados e necessários para seu trabalho diário. É possível que você já tenha o aplicativo Portal da Empresa instalado no dispositivo. Uma maneira rápida de verificar é procurar o __Portal da Empresa__ em sua lista de __Todos os aplicativos__.
+Uma maneira fácil de obter ajuda do suporte de sua empresa é por meio das informações de contato disponíveis no aplicativo Portal da Empresa, que também permite localizar e baixar aplicativos recomendados e necessários para seu trabalho diário. É possível que você já tenha o aplicativo Portal da Empresa instalado no dispositivo. Uma maneira rápida de verificar é procurar o __Portal da Empresa__ em sua lista de __Todos os aplicativos__.
 
 Se você não vir o Portal da Empresa na sua lista de aplicativos, siga essas etapas para instalá-lo.
 

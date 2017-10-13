@@ -1,6 +1,6 @@
 ---
-title: Ajude o administrador de TI a corrigir problemas do dispositivo com registro detalhado | Microsoft Docs
-description: Ajude o administrador de TI a corrigir problemas do dispositivo usando o log detalhado
+title: Ajude o suporte de sua empresa a corrigir problemas do dispositivo com registro detalhado | Microsoft Docs
+description: Use o log detalhado para ajudar o suporte de sua empresa a corrigir problemas do dispositivo
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1756f05fed15bf50c5bb8981e62f87789f14daab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Ajude o administrador de TI a corrigir problemas do dispositivo com registro detalhado
+# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Use o log detalhado para ajudar o suporte de sua empresa a corrigir problemas do dispositivo
 
-Quando o dispositivo Android está registrado no Intune, você pode usar o *log detalhado* para que o aplicativo do Portal da Empresa e os aplicativos gerenciados pelo Intune gravem logs detalhados sobre o que está acontecendo no dispositivo. Esses logs ajudam seu administrador de TI a corrigir quaisquer problemas que você possa ter quando estiver usando o Portal da Empresa ou um aplicativo que é gerenciado pelo Intune. O log detalhado é habilitado no dispositivo por padrão e os logs que são enviados ao administrador de TI incluem o seu endereço de email.
+Quando o dispositivo Android está registrado no Intune, você pode usar o *log detalhado* para que o aplicativo do Portal da Empresa e os aplicativos gerenciados pelo Intune gravem logs detalhados sobre o que está acontecendo no dispositivo. Esses logs ajudam o suporte de sua empresa a corrigir quaisquer problemas que você possa ter quando estiver usando o Portal da Empresa ou um aplicativo que é gerenciado pelo Intune. O log detalhado é habilitado no dispositivo por padrão e os logs que são enviados ao suporte de sua empresa incluem o seu endereço de email.
 
 Para ativar ou desativar o log detalhado, entre no aplicativo do Portal da Empresa usando suas credenciais corporativas ou de estudante, toque em **Configurações** e toque no botão de ativar/desativar perto de **Log Detalhado**.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

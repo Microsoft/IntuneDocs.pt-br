@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows 10 no Intune?
 
@@ -34,22 +34,22 @@ Quando instala o aplicativo de Portal da Empresa e usa o aplicativo para registr
 
 -   redefinir seu telefone para as configurações de fábrica, caso ele seja perdido ou roubado.
 
-Para encontrar as etapas para registrar, consulte [Registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Para saber mais sobre o que seu administrador de TI pode ver no seu dispositivo, consulte [Quais informações meu administrador de TI poderá ver quando eu registrar meu dispositivo no Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+Para encontrar as etapas para registrar, consulte [Registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Para saber mais sobre o que o suporte de sua empresa pode ver no seu dispositivo, consulte [Quais informações o suporte de minha empresa poderá ver quando eu registrar meu dispositivo no Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 Quando você adicionar um computador:
 
--   Um software será instalado no computador para permitir que o administrador de TI gerencie o computador e que você acesse os recursos da empresa, como aplicativos e informações de suporte. O administrador de TI pode atualizar esse software automaticamente.
+-   Um software será instalado no computador para permitir que o suporte de sua empresa gerencie o computador e que você acesse os recursos da empresa, como aplicativos e informações de suporte. O suporte de sua empresa pode atualizar esse software automaticamente.
 
 -   O Intune Endpoint Protection pode ser instalado no computador. Este software verifica a existência de vírus e malwares.
 
--   O administrador de TI pode obter um inventário de todo software instalado no computador, inclusive o software que você instalou pessoalmente.
+-   O suporte de sua empresa pode obter um inventário de todo software instalado no computador, inclusive o software que você instalou pessoalmente.
 
 -   Pode ser obrigatório que você aceite os termos e condições.
 
--   O administrador de TI pode coletar ou excluir os dados do disco rígido do seu computador. O administrador de TI também pode excluir o disco rígido inteiro.
+-   O suporte de sua empresa pode coletar ou excluir os dados do disco rígido do seu computador. O suporte de sua empresa também pode excluir o disco rígido inteiro.
 
--   O administrador de TI pode instalar aplicativos e atualizações no seu computador.
+-   O suporte de sua empresa pode instalar aplicativos e atualizações no seu computador.
 
--   O administrador de TI pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. O administrador de TI também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo ou excluir todos os dados do disco rígido se você tentar muitas vezes.
+-   O suporte de sua empresa pode aplicar políticas no computador. Por exemplo, talvez você precise definir uma senha ou PIN no computador. O suporte de sua empresa também pode limitar quantas vezes você pode inserir uma senha incorreta e pode travá-lo no dispositivo ou excluir todos os dados do disco rígido se você tentar muitas vezes.
 
-Se tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

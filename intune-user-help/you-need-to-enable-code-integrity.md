@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>É necessário habilitar a Integridade de Código
 
@@ -29,8 +29,8 @@ Manter as informações organizacionais exige diferentes tipos de segurança par
 A Integridade de Código é ativada automaticamente quando o sistema usa a Inicialização Segura de forma ativa.
 
 > [!Tip]
-> Habilitar a Inicialização Segura é uma tarefa avançada. Recomendamos que você contate seu administrador de TI para obter assistência com essa tarefa.
+> Habilitar a Inicialização Segura é uma tarefa avançada. Recomendamos que você contate o suporte de sua empresa para obter assistência com essa tarefa.
 
 Se estiver à vontade para avançar, leia a seção “Para reabilitar a Inicialização Segura” na página [Desabilitar Inicialização Segura](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tentar habilitar a Inicialização Segura por conta própria.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
