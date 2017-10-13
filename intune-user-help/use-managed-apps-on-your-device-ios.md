@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
-ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
+ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicativos gerenciados no seu dispositivo iOS
 
-Aplicativos gerenciados são aplicativos que o administrador de TI pode configurar para ajudar a proteger os dados da empresa que você pode acessar nesse aplicativo. Ao acessar dados da empresa em um aplicativo gerenciado no seu dispositivo iOS, você pode perceber que o aplicativo funciona um pouco diferente do esperado. Por exemplo, não é possível copiar e colar os dados da empresa protegidos, ou você pode não conseguir salvar esses dados em determinados locais.
+Aplicativos gerenciados são aplicativos que o suporte de sua empresa pode configurar para ajudar a proteger os dados da empresa que você pode acessar nesse aplicativo. Ao acessar dados da empresa em um aplicativo gerenciado no seu dispositivo iOS, você pode perceber que o aplicativo funciona um pouco diferente do esperado. Por exemplo, não é possível copiar e colar os dados da empresa protegidos, ou você pode não conseguir salvar esses dados em determinados locais.
 
 Diferentes aplicativos gerenciados também podem trabalhar juntos no seu dispositivo para permitir que você possa fazer as tarefas diárias mantendo dados corporativos protegidos. Por exemplo, se você abre um arquivo da empresa em um aplicativo gerenciado, e o outro aplicativo gerenciado é necessário para exibir o arquivo, o aplicativo gerenciado que permite que você exiba o arquivo é aberto automaticamente. Se um aplicativo necessário não estiver disponível, determinadas ações, como abrir um documento ou acessar um link da Web de dentro de um documento gerenciado, poderão não estar disponíveis.
 
@@ -35,14 +35,14 @@ Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensage
 ### <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?
 Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
--   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou seu administrador de TI pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Registrar o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
+-   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou o suporte de sua empresa pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Registrar o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instale um aplicativo da Windows Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
 
-Às vezes, o administrador de TI pode comprar várias licenças para um aplicativo que você instala. Caso veja uma mensagem para aceitar o contrato do Apple Volume Purchase Program, isso é normal e você pode aceitá-lo. Caso não o aceite, você não poderá instalar o aplicativo.
+Às vezes, o suporte de sua empresa pode comprar várias licenças para um aplicativo que você instala. Caso veja uma mensagem para aceitar o contrato do Apple Volume Purchase Program, isso é normal e você pode aceitá-lo. Caso não o aceite, você não poderá instalar o aplicativo.
 
-### <a name="what-can-my-it-admin-manage-in-an-app"></a>O que meu administrador de TI pode gerenciar em um aplicativo?
-Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
+### <a name="what-can-my-company-support-manage-in-an-app"></a>O que o suporte da minha empresa pode gerenciar em um aplicativo?
+Aqui estão alguns exemplos de opções que o suporte de sua empresa pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
 
 -   Acesso a sites específicos
 
@@ -62,4 +62,4 @@ Aqui estão alguns exemplos de opções que seu administrador de TI pode gerenci
 
 -   Requisitos de criptografia de dados
 
-Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com seu departamento de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

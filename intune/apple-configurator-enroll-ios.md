@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrar dispositivos iOS com o Apple Configurador
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O Intune dá suporte ao registro de dispositivos iOS por meio do [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) em execução em um computador Mac. O registro com o Apple Configurator exige que você conecte por USB cada dispositivo iOS a um computador Mac para configurar o registro corporativo. Você pode registrar dispositivos no Intune com o Apple Configurator de duas maneiras:
+O Intune dá suporte ao registro de dispositivos iOS por meio do [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) em execução em um computador Mac. O registro com o Apple Configurator exige que você conecte por USB cada dispositivo iOS a um computador Mac para configurar o registro corporativo. Você pode registrar dispositivos no Intune com o Apple Configurator de duas maneiras:
 - **Registro pelo Assistente de Configuração** – redefine o dispositivo para os padrões de fábrica e o prepara para o registro pelo Assistente de Configuração.
 - **Registro direto** – não redefine o dispositivo para as configurações de fábrica e registra o dispositivo por meio das configurações do iOS. Apenas dispositivos **sem afinidade de usuário** têm suporte nesse método.
 
@@ -38,7 +38,7 @@ Os métodos de registro do Apple Configurator não podem ser utilizados com o [g
 - [Um Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - Números de série do dispositivo (somente para registro pelo Assistente de Configuração)
 - Cabos de conexão USB
-- Computador Mac com o [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
+- Computador macOS com o [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Criar um perfil do Apple Configurator para dispositivos
 
@@ -69,7 +69,7 @@ Um perfil de registro do dispositivo define as configurações aplicadas durante
 
 **Para adicionar números de série do Apple Configurator ao Intune**
 
-1. Crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione os números de série na coluna esquerda e os detalhes na coluna direita. O máximo atual para a lista é de 500 linhas. Em um editor de texto, a lista .csv é semelhante a isto:
+1. Crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione os números de série na coluna esquerda e os detalhes na coluna direita. O máximo atual para a lista é de 5.000 linhas. Em um editor de texto, a lista .csv é semelhante a isto:
 
     F7TLWCLBX196, detalhes do dispositivo</br>
     DLXQPCWVGHMJ, detalhes do dispositivo

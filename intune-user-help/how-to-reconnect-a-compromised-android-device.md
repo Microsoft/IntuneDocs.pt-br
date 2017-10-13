@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1d1447887f63edf9671fc954dbc69bfd7766ca73
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Como reconectar um dispositivo Android comprometido
 
-Seu administrador de TI detectou que você está usando um dispositivo de raiz. "Raiz" significa que o dispositivo foi alterado para permitir o acesso ao sistema operacional, o que pode comprometer a segurança e ser uma ameaça para os recursos da empresa. Quando isso acontece, o dispositivo não poderá mais acessar os recursos da empresa.
+O suporte de sua empresa detectou que você está usando um dispositivo de raiz. "Raiz" significa que o dispositivo foi alterado para permitir o acesso ao sistema operacional, o que pode comprometer a segurança e ser uma ameaça para os recursos da empresa. Quando isso acontece, o dispositivo não poderá mais acessar os recursos da empresa.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.
+Ainda precisa de ajuda? Entre em contato com o suporte de sua empresa (consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.

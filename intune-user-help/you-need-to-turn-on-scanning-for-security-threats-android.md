@@ -14,16 +14,16 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 668f105b65f5bdd8d05600a935aba3c0d46314d5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Você precisa tornar seu dispositivo capaz de verificar se há ameaças de segurança
 
-Seu dispositivo Android é capaz de baixar e instalar aplicativos que podem realizar uma grande variedade de tarefas. No entanto, nem todos os aplicativos são iguais, e alguns podem causar problemas. Uma recomendação geral é baixar aplicativos somente de fontes verificadas, como a Google Play Store. Uma maneira escolhida por seu administrador de TI para proteger os dados em seu dispositivo é fazer o Google verificar os aplicativos que você está instalando para ter certeza de que são seguros.
+Seu dispositivo Android é capaz de baixar e instalar aplicativos que podem realizar uma grande variedade de tarefas. No entanto, nem todos os aplicativos são iguais, e alguns podem causar problemas. Uma recomendação geral é baixar aplicativos somente de fontes verificadas, como a Google Play Store. Uma maneira escolhida pelo suporte de sua empresa para proteger os dados em seu dispositivo é fazer o Google verificar os aplicativos que você está instalando para ter certeza de que são seguros.
 
 Ative essa verificação acessando **Configurações** > **Google** > **Segurança** e ativar **Verificar dispositivo contra ameaças à segurança**.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android usando criptografia
 
 Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que suas informações estejam protegidas, sua organização está exigindo que você criptografe seu dispositivo Android antes de poder acessar os dados, email ou arquivos da empresa.
 
 > [!Note]
-> Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o administrador de TI exigir.
+> Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o suporte de sua empresa exigir.
 
 Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
@@ -52,7 +52,7 @@ Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
 - Verifique se o dispositivo está carregado e conectado.
 - Verifique se você definiu um PIN ou uma senha no dispositivo.
-- Se você já tiver definido um PIN ou uma senha no dispositivo, tente as etapas a seguir, que o administrador de TI pode exigir para tornar seu dispositivo mais seguro. Os nomes dos menus que você vê podem ser ligeiramente diferentes daqueles mostrados nas etapas, dependendo do tipo de dispositivo Android que você tem.
+- Se você já tiver definido um PIN ou uma senha no dispositivo, tente as etapas a seguir, que o suporte de sua empresa pode exigir para tornar seu dispositivo mais seguro. Os nomes dos menus que você vê podem ser ligeiramente diferentes daqueles mostrados nas etapas, dependendo do tipo de dispositivo Android que você tem.
 
     1. Acesse **Configurações** > **Tela de Bloqueio e Segurança** > **Bloqueio de Tela**. Confirme seu PIN ou sua senha atual.
 
@@ -66,4 +66,4 @@ Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
     6. Abra o aplicativo do Portal da Empresa, selecione seu dispositivo e toque em **Verificar Conformidade**.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI (consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.
+Ainda precisa de ajuda? Entre em contato com o suporte de sua empresa (consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.

@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d94e3a79af1951debc4dd04413efff8f4c716545
-ms.sourcegitcommit: d2a4f4477b3bf90aac6a9db77d41747e64ad7df4
+ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>O Outlook não sincroniza email gerenciado quando a otimização da bateria para Android está ativada
 
 > [!IMPORTANT]
-> Esse problema é documentado aqui porque temos recebido um maior número de relatórios de cliente sobre ele. Se depois de executar essas etapas você continuar a experimentar esse problema, entre em contato com [seu administrador de TI](https://portal.manage.microsoft.com) para obter ajuda adicional.
+> Esse problema é documentado aqui porque temos recebido um maior número de relatórios de cliente sobre ele. Se depois de executar essas etapas você continuar a experimentar esse problema, entre em contato com [o suporte de sua empresa](https://portal.manage.microsoft.com) para obter ajuda adicional.
 
 Registrar seu dispositivo no Intune permite que você obtenha acesso aos recursos da empresa. Um dos recursos mais comuns é o acesso a email. Um problema que vimos no acesso a email por meio do Outlook para dispositivos Android foi a quando a otimização da bateria é ativada. A otimização da bateria pode ser ativada automaticamente para tentar ajudar o seu dispositivo a permanecer ligado pelo máximo de tempo possível. A otimização da bateria é parcialmente capaz de ajudá-lo desse modo, porque ela tenta interromper downloads de email automáticos.
 
@@ -73,4 +73,4 @@ Outro exemplo de maneira diferente de localizar essas configurações é por mei
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter suas informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter suas informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

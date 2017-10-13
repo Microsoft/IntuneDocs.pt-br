@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf3c9d121f2e2578219137161a972d5d58255058
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo iOS usando o Portal da Empresa?
 
 Quando você usar o Portal da Empresa para redefinir seu iPhone ou iPad, alguns aplicativos e configurações no seu dispositivo poderão ser excluídos, inclusive alguns dados pessoais. O que acontece em cada dispositivo depende de como você está usando o dispositivo, conforme descrito nas listas a seguir.
 
-**Seu administrador de TI gerencia seu dispositivo móvel**
+**O suporte da sua empresa gerencia seu dispositivo móvel**
 
 -   Seu dispositivo não aparecerá mais no portal da empresa.
 
@@ -38,4 +38,4 @@ Quando você usar o Portal da Empresa para redefinir seu iPhone ou iPad, alguns 
 
 -   Sua conta de email da empresa será excluída e os emails que não foram salvos serão excluídos.
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

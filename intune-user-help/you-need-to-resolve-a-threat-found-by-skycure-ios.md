@@ -1,11 +1,11 @@
 ---
-title: "Resolução de ameaças encontradas pelo Skycure no iOS | Microsoft Docs"
-description: 
+title: "Resolução de ameaças encontradas pelo Symantec Endpoint Protection Mobile para iOS | Microsoft Docs"
+description: "Saiba como corrigir ameaças encontradas em seu dispositivo iOS."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cdb0106da1d81843f7dd07d0986d597b94a77c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>Você precisa resolver uma ameaça encontrada pelo Skycure
+# <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça encontrada pelo Symantec Endpoint Protection Mobile
 
-O Skycure encontrou uma ameaça em potencial em seu dispositivo e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email corporativos ou de estudante. A mensagem que aparecerá para você pode ser parecida com esta:
+O Symantec Endpoint Protection Mobile encontrou uma ameaça em potencial em seu dispositivo e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email da empresa ou escola. A mensagem que aparecerá para você pode ser parecida com esta:
 
-![Mensagem de falta de conformidade do Lookout for Work](./media/ios-skycure-noncompliant-in-ssp.png)
+![Mensagem de não conformidade do Symantec Endpoint Protection Mobile](./media/ios-skycure-noncompliant-in-ssp.png)
 
-Para resolver o problema, abra o aplicativo Skycure e siga as instruções mostradas no aplicativo.
+Para resolver o problema, abra o aplicativo Symantec Endpoint Protection Mobile e siga as instruções mostradas no aplicativo.
 
 ## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>O que você pode ver se o seu dispositivo registrado for impedido de acessar email ou arquivos
 
@@ -34,14 +34,15 @@ Se houver um vírus ou outra ameaça de segurança em seu dispositivo registrado
 
 ![Mensagem de erro do Skycure com um link para o site do Portal da Empresa](./media/mtd-go-to-device-management-portal-android.png)
 
-Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](http://portal.manage.microsoft.com), no qual você verá instruções sobre como corrigir o problema.
+Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](https://portal.manage.microsoft.com), no qual você verá instruções sobre como corrigir o problema.
 
-## <a name="example-of-an-app-that-skycure-sees-as-a-threat"></a>Exemplo de um aplicativo visto pelo Skycure como uma ameaça
+## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Exemplo de um aplicativo que o Symantec Endpoint Protection Mobile considera como uma ameaça
 
-Se você instalou um aplicativo que o Skycure considera uma ameaça, ele notificará você no aplicativo.
+Se você tiver instalado um aplicativo que o Symantec Endpoint Protection Mobile considera uma ameaça, o Symantec Endpoint Protection Mobile o notificará no aplicativo.
 
 Toque no nome do aplicativo exibido na parte superior da tela e siga as instruções para remover a ameaça.
 
 Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e a outros dados corporativos ou de estudante imediatamente. Se ignorar a solicitação para desinstalar o aplicativo, você perderá acesso ao email e aos dados da empresa até que desinstale o aplicativo.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+

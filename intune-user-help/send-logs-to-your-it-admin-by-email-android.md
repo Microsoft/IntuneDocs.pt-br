@@ -1,5 +1,5 @@
 ---
-title: Enviar logs para o administrador de TI por email | Microsoft Docs
+title: Enviar logs para o suporte de sua empresa por email | Microsoft Docs
 description: Enviar logs de dados usando o email em um dispositivo Android
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Enviar logs ao administrador de TI usando o email
+# <a name="send-logs-to-your-company-support-using-email"></a>Enviar logs para o suporte de sua empresa usando o email
 
-Se você receber um erro enquanto estiver usando o aplicativo Portal da Empresa em seu dispositivo Android, será possível ajudar o administrador de TI a solucionar o problema enviando informações a ele por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empresa em seu dispositivo Android, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
 
 > [!Note]
-> Para facilitar para o administrador de TI descobrir o problema, você deverá ativar o _log detalhado_. O log detalhado inclui todos os detalhes relevantes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para facilitar para o suporte de sua empresa descobrir o problema, você deverá ativar o _log detalhado_. O log detalhado inclui todos os detalhes relevantes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Para enviar logs ao seu administrador de TI usando o email:
+Para enviar logs para o suporte de sua empresa usando o email:
 
 1.  Abra o aplicativo do Portal da Empresa.
 
@@ -40,4 +40,4 @@ Para enviar logs ao seu administrador de TI usando o email:
 
 3.  Em **Ajuda**, toque em **Obter Ajuda**.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).

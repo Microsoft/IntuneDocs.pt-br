@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos gerenciados para realizar o trabalho
 O Microsoft Intune é um software que permite às organizações gerenciar dispositivos (como smartphones, tablets e computadores), aplicativos e outros recursos corporativos como email. Isso concede aos funcionários acesso às suas informações de trabalho de praticamente qualquer lugar em quase qualquer dispositivo, ajudando a proteger informações corporativas.
@@ -33,8 +33,8 @@ O departamento de TI de sua empresa pode ver informações relevantes ao trabalh
 ## <a name="how-do-i-get-the-company-portal"></a>Como fazer para obter o Portal da Empresa?
 Você pode obter o Portal da Empresa de duas diferentes maneiras:
 
-- Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o administrador de TI também pode instalá-lo para você.
-- Acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com) que o administrador de TI configurou.
+- Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o suporte de sua empresa também pode instalá-lo para você.
+- Acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com) que o suporte da empresa configurou.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre o aplicativo e o site?
 Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. Algumas tarefas que você pode fazer são:
@@ -54,9 +54,9 @@ Para ver o que você pode fazer usando o site do Portal da Empresa versus o que 
 - [Usando o site do Portal da Empresa](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>O que acontece quando você adiciona um computador ou dispositivo ao Portal da Empresa?
-Quando você adiciona um computador ou dispositivo ao Portal da Empresa, um software pode ser instalado ou um aplicativo baixado (dependendo do dispositivo). Você também está concedendo permissão ao seu administrador de TI para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
+Quando você adiciona um computador ou dispositivo ao Portal da Empresa, um software pode ser instalado ou um aplicativo baixado (dependendo do dispositivo). Você também está concedendo permissão ao suporte de sua empresa para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
 
-Para saber mais sobre o que o administrador de TI pode e não pode ver no seu dispositivo, use o link que corresponde ao tipo de dispositivo que você está usando:
+Para saber mais sobre o que o suporte de sua empresa pode e não pode ver no seu dispositivo, use o link que corresponde ao tipo de dispositivo que você está usando:
 
 - [Instalando o aplicativo Portal da Empresa para Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Instalando o aplicativo do Portal da Empresa para iOS e macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ A Microsoft recomenda que você tente primeiro ver se consegue corrigir o proble
 - [Corrigir problemas comuns com o dispositivo iOS](troubleshoot-your-device-ios.md)
 - [Corrigir problemas comuns com o dispositivo Windows](troubleshoot-your-device-windows.md)
 
-É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar seu administrador de TI para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar o suporte de sua empresa para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).

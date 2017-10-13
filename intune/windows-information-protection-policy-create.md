@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -102,7 +102,7 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 5.  Depois de inserir as informações nos campos, escolha **OK** para adicionar o aplicativo a sua lista de **Aplicativos permitidos**.
 
 > [!NOTE]
-> Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...) ** no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
+> Para adicionar vários aplicativos da Store ao mesmo tempo, clique no menu **(...)**  no final da linha de aplicativo, em seguida, continue a adicionar mais aplicativos. Quando terminar, selecione **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Adicionar um aplicativo da área de trabalho à lista de aplicativos permitidos
 
@@ -143,7 +143,7 @@ O WIP é executado silenciosamente, registrando em log o compartilhamento inadeq
 #### <a name="off-not-recommended"></a>Desligado (não recomendado)
 O WIP é desativado e não ajuda a proteger ou auditar seus dados.
 
-Depois de desativar o WIP, é feita uma tentativa de descriptografar arquivos marcados por WIP nas unidades conectadas localmente. Lembre-se de que suas informações anteriores de política e a descriptografia não serão reaplicadas automaticamente se você ativar novamente a proteção de WIP.
+Depois de desativar o WIP, é feita uma tentativa de descriptografar arquivos marcados por WIP nas unidades conectadas localmente. Lembre-se de que as informações anteriores de política e a descriptografia não serão reaplicadas automaticamente se você ativar novamente a proteção de WIP.
 
 ### <a name="add-a-protection-mode"></a>Adicionar um modo de proteção
 
@@ -155,16 +155,13 @@ Depois de desativar o WIP, é feita uma tentativa de descriptografar arquivos ma
 
 ### <a name="use-wip-learning"></a>Usar o aprendizado de WIP
 
-1. Vá até o painel do Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Abra o portal do Azure. Selecione **Mais serviços**. Digite **Intune** no filtro de caixa de texto.
 
-2. Escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+3. Escolha **Intune** > **Aplicativos móveis**.
 
-3. Escolha **Intune**, o **painel do Intune** é aberto, escolha **Aplicativos Móveis**.
-
-4. Escolha **Aprendizado de WIP** em **Monitor**. Você verá os aplicativos desconhecidos registrados pelo Aprendizado de WIP.
-
-> [!IMPORTANT]
-> Quando os aplicativos estiverem aparecendo no relatório de log do Aprendizado de WIP, você poderá inseri-los em suas políticas de proteção do aplicativo.
+4. Escolha **Status de proteção do aplicativo** > **Relatórios** > **aprendizado do Windows Information Protection**.  
+ 
+    Quando os aplicativos estiverem aparecendo no relatório de log do Aprendizado de WIP, você poderá adicioná-los em suas políticas de proteção do aplicativo.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Implantar uma política de proteção de aplicativo WIP
 

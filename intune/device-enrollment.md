@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Caso use o Exchange ActiveSync, hospedado na nuvem ou local, você pode habilita
 ## <a name="overview-of-device-enrollment-methods"></a>Visão geral dos métodos de registro do dispositivo
 
 A tabela a seguir fornece uma visão geral dos métodos de registro do Intune com suas funcionalidades e seus requisitos descritos abaixo.
+
 **Legenda**
 
 - **Redefinição necessária** – o dispositivo é redefinido para as configurações de fábrica durante o registro.
@@ -79,14 +80,55 @@ Veja abaixo os cenários de registro COD (dispositivos de propriedade corporativ
 O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Esse método dá suporte ao modo **Supervisionado do iOS**, que, por sua vez, habilita a seguinte funcionalidade:
+O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Esse método dá suporte ao modo supervisionado do iOS, que permite que um dispositivo seja configurado com a seguinte funcionalidade:
 
-  - Registro bloqueado
-  - Modo de quiosque e outras restrições e configurações avançadas
+- Bloqueio de aplicativo (modo de aplicativo único) 
+- Proxy HTTP global 
+- Ignorar Bloqueio de ativação 
+- Modo autônomo de aplicativo único 
+- Filtro de conteúdo da Web 
+- Definir tela de fundo e tela de bloqueio 
+- Push de aplicativo silencioso 
+- VPN sempre ativado 
+- Permitir instalação de aplicativo gerenciada exclusivamente 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- Emparelhamento de host 
+- Sincronização de nuvem 
+- Pesquisa do Spotlight 
+- Entrega 
+- Apagar dispositivo 
+- Interface do usuário de restrições 
+- Instalação de perfis de configuração pela interface do usuário 
+- News 
+- Atalhos de teclado 
+- Modificações de senha 
+- Alterações do nome do dispositivo 
+- Alterações de papel de parede 
+- Downloads de aplicativo automáticos 
+- Alterações na confiança de aplicativo da empresa 
+- Apple Music 
+- Recebimento de email 
+- Emparelhar com Apple Watch 
+
+> [!NOTE]
+> A Apple confirmou que certas configurações mudarão para somente supervisionado em 2018. É recomendável levar isso em consideração ao usar estas configurações em vez de esperar a Apple migrá-las para somente supervisionado:
+> - Instalação de aplicativo
+> - Remoção de aplicativo
+> - FaceTime
+> - Safari
+> - iTunes
+> - Conteúdo explícito
+> - Documentos e dados do iCloud
+> - Jogo para vários participantes
+> - Adicionar amigos no Game Center
 
 Saiba mais sobre o registro DEP do iOS:
 
-- [Escolha como registrar dispositivos iOS](enrollment-method-choose-ios.md)
+- [Escolha como registrar dispositivos iOS](ios-enroll.md)
 - [Registrar dispositivos iOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA

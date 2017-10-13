@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa?
 
@@ -28,8 +28,8 @@ Quando você usa o Portal da Empresa para redefinir seu dispositivo Android, tod
 
 Se tiver um dispositivo Samsung KNOX, você poderá realizar um "apagamento seletivo" escolhendo a opção **remover dispositivo** do Portal da Empresa. O apagamento seletivo remove somente:
 
-- aplicativos de negócios que seu administrador de TI disponibiliza para você.
+- aplicativos de negócios que o suporte de sua empresa disponibiliza para você.
 - email, VPN e Wi-Fi.
-- a capacidade de seu administrador de TI de impor certas configurações.
+- a capacidade do suporte de sua empresa de impor certas configurações.
 
-Se você tiver dúvidas, entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
