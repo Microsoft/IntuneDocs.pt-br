@@ -87,7 +87,7 @@
           href: password-reset.md
         - name: Impedir o acesso não autorizado
           href: data-outside-protect.md
-        - name: Impedir perdas de dados em dispositivos não gerenciados
+        - name: Impedir vazamento de dados em dispositivos não gerenciados
           href: data-leak-prevention.md
         - name: BYOD
           href: byod-enable.md
@@ -316,6 +316,8 @@
               href: vpn-settings-android.md
             - name: iOS
               href: vpn-settings-ios.md
+            - name: Configurar a VPN por aplicativo em dispositivos iOS
+              href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
             - name: Windows 8.1
