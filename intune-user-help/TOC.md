@@ -62,6 +62,7 @@
 ### [Registrar seu dispositivo iOS](enroll-your-device-in-intune-ios.md)
 ### [Registrar seu dispositivo macOS](enroll-your-device-in-intune-macos.md)
 ### [Registrar seu dispositivo macOS com o Portal da Empresa](enroll-your-device-in-intune-macos-cp.md)
+### [Este dispositivo é um pouco diferente](device-little-different-jamf.md)
 
 ### [Usar aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Definir ou alterar sua senha](set-or-change-your-passcode-ios.md)
