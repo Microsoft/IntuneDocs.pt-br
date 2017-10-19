@@ -536,6 +536,8 @@
       items:
         - name: Conectar-se ao Data Warehouse com o Power BI
           href: reports-proc-get-a-link-powerbi.md
+        - name: Criar um relatório do feed OData com o Power BI
+          href: reports-proc-create-with-odata.md
 - name: Automatizar e personalizar
   items:
     - name: Definir configurações personalizadas do dispositivo
