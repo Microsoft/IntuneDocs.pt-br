@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Seu dispositivo Android parece estar criptografado, mas o Portal da Empresa informa o contrário
 
@@ -39,6 +39,15 @@ Alguns dispositivos Android exigirão que você crie um PIN de inicialização p
 ### <a name="downgrade-your-version-of-android"></a>Fazer o downgrade de sua versão do Android
 
 Se o dispositivo oferecer a opção para fazer downgrade para o Android 6.0 e posterior, faça isso. Haverá um risco de perda de dados se você tentar fazer downgrade de seu dispositivo. Caso contrário, recomendamos contatar o suporte de sua empresa para resolver esse problema. É possível obter informações de contato do suporte de sua empresa no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+
+### <a name="encrypt-the-entire-device"></a>Criptografar todo o dispositivo
+
+Alguns dispositivos terão a opção de criptografar todo o dispositivo ou somente o espaço usado. Escolha a opção para criptografar todo o dispositivo em vez de "somente o espaço usado". Se você já tiver criptografado somente o espaço usado:
+
+1. [Remova o dispositivo do Portal da Empresa](unenroll-your-device-from-intune-android.md)
+2. Descriptografar o espaço usado
+3. Criptografar todo o dispositivo
+4. Registrar o dispositivo novamente
 
 ## <a name="specific-manufacturer-issues"></a>Problemas de fabricante específicos
 
