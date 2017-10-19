@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddb9b939b695f8612c02a2a25f4670e28c556c44
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
+ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -44,4 +44,4 @@ Em seguida, execute uma das ações a seguir para saber mais sobre seus aplicati
 ## <a name="monitor"></a>Monitor
 
 - **Status de instalação do dispositivo** - fornece informações detalhadas para cada dispositivo ao qual você atribuiu o aplicativo selecionado para incluir o nome do dispositivo, o sistema operacional, quando o dispositivo fez check-in por último no Intune e o status da instalação do aplicativo.
-- **Status de instalação do usuário** - fornece informações detalhadas para o usuário ao qual você atribuiu o aplicativo selecionado para incluir o número de instalações do aplicativo que o usuário tem em todos os dispositivos e as informações sobre as falhas de instalação.
+- **Status de instalação do usuário** – Fornece informações detalhadas para o usuário ao qual você atribuiu o aplicativo selecionado, incluindo o número de instalações do aplicativo que o usuário tem em todos os dispositivos e as informações sobre as falhas de instalação.
