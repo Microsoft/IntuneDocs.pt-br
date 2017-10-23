@@ -461,6 +461,8 @@
           href: windows-hello.md
     - name: Gerenciar funções
       href: role-based-access-control.md
+    - name: Gerenciar versões do sistema operacional
+      href: manage-os-versions.md
     - name: Gerenciar atualizações de software
       href: windows-update-for-business-configure.md
     - name: Gerenciar computadores com o agente de software
