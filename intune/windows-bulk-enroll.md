@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 372cc50fb4ac36ec875d84a71f3d3437917a2d1a
+ms.sourcegitcommit: 93c8c7e5abe433e35d88cb3b8d3d1e7216d7fe9b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -54,7 +54,7 @@ O registro em massa para dispositivos Windows exige o seguinte:
 5.  Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se isso não estiver configurado, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
 ![Captura de tela da habilitação de Wi-Fi, incluindo as opções de SSID da Rede e o Tipo da rede, no aplicativo Windows Configuration Designer](media/bulk-enroll-network.png)
 
-6.  Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa **.
+6.  Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa** .
 ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-account.png)
 
 7. Forneça suas credenciais do Azure AD para obter um token em massa.
@@ -92,6 +92,10 @@ O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com o Portal da Empresa e registro em massa
 Se um usuário tenta registrar um dispositivo previamente registrado em massa usando o Portal da Empresa, eles receberão um aviso de que seu dispositivo precisa de outras ações, seja instalação ou registro. O dispositivo é registrado, mas o registro não é reconhecido pelo aplicativo de Portal da Empresa ou site.
+
+### <a name="bulk-enrollment-with-wi-fi"></a>Registro em massa com Wi-Fi 
+
+Dispositivos registrados em massa não podem usar os certificados destinados ao usuário e a implantação de Wi-Fi. É necessário usar [certificados no nível do dispositivo](certificates-configure.md) para gerenciar essas conexões. 
 
 ### <a name="conditional-access"></a>Acesso condicional
 O acesso condicional não está disponível para dispositivos Windows registrados em massa.
