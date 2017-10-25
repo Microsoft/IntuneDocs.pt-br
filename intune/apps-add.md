@@ -74,7 +74,7 @@ Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a c
 4. Na carga de trabalho **Aplicativos móveis**, escolha **Configurar** > **Categorias de aplicativos**.
 5. Na folha **Categorias de aplicativos**, é mostrada uma lista de categorias atuais. Escolha uma das seguintes ações:
     - **Criar uma categoria de** – Na folha **Criar categoria**, insira um nome para a nova categoria. Os nomes podem ser inseridos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
-    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**... **“. Na folha **Propriedades**, você pode inserir um novo nome para a categoria ou excluí-la.
+    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...** “. Na folha **Propriedades**, você pode inserir um novo nome para a categoria ou excluí-la.
 
 
 ## <a name="apps-added-automatically-by-intune"></a>Aplicativos adicionados automaticamente pelo Intune
