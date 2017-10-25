@@ -187,7 +187,7 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 -   **Pesquisa por definição de palavra (somente supervisionado)** – Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.
 -   **Teclados preditivos (somente supervisionado)** – Permitir o uso de teclados preditivos que sugerem palavras que o usuário pode querer.
 -   **Correção automática (somente supervisionado)** – Permite que o dispositivo corrija automaticamente palavras incorretas.
--   **Verificação ortográfica do teclado (somente supervisionada) ** – Permite usar o verificador de ortografia do dispositivo.
+-   **Verificação ortográfica do teclado (somente supervisionada)**  – Permite usar o verificador de ortografia do dispositivo.
 -   **Atalhos de teclado (somente supervisionado)** – Permite o uso de atalhos de teclado.
 -   **Ditado (somente supervisionado)** – Impede que o usuário use entrada de voz para inserir texto.
 
