@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/04/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: 04b6d24d5174e49dd6e3f86b534bc59b94344002
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quais informações minha empresa poderá ver quando eu registrar meu dispositivo?
 
@@ -46,5 +46,6 @@ Ao registrar um dispositivo no gerenciamento, você estará concedendo permissã
 
 **O que sua empresa pode ser capaz de ver**
 
--  Número de telefone: para dispositivos de propriedade **corporativa**, o número de telefone completo pode ser visto. Para dispositivos de propriedade **Pessoal**, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua empresa. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página **Detalhes do Dispositivo** desse dispositivo. 
+-  Número de telefone: para dispositivos de propriedade **corporativa**, o número de telefone completo pode ser visto. Para dispositivos de propriedade **Pessoal**, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua empresa. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página **Detalhes do Dispositivo** desse dispositivo.
 -  Local: sua empresa nunca verá o local de seu dispositivo, exceto se você tiver um dispositivo iOS supervisionado e que foi perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Inventário de aplicativo: se sua empresa usa a Defesa contra Ameaças Móveis, ela pode exibir mais detalhes sobre os aplicativos que estão em seu dispositivo. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md).

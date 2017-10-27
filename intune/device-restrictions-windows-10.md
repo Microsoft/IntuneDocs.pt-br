@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
 
@@ -64,7 +64,7 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
     -   **Impedir a reutilização de senhas anteriores** – Especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.
     -   **Exigir senha quando o dispositivo retorna do estado inativo (somente dispositivos móveis)** – Especifica que o usuário deverá inserir uma senha para desbloquear o dispositivo (somente Windows 10 Mobile).
     -   **Senhas simples** – Permita o uso de senhas simples como 1111 ou 1234. Essa configuração também permite ou bloqueia o uso de senhas de imagem do Windows.
--   **Criptografia** – Habilitar a criptografia em dispositivos de destino (somente Windows 10 Mobile).
+-   **Criptografia** – habilitar a criptografia nos dispositivos de destino.
 
 ## <a name="personalization"></a>Personalização
 
