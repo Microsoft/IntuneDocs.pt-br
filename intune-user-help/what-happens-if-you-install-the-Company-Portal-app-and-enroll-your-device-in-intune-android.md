@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/30/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 053f6449ebe3a4ad375c51d7bbc4ccc9709fdcf7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune?
 
@@ -44,7 +44,7 @@ Ao registrar seu dispositivo Android, você permite que o suporte de sua empresa
 
 -   Exige que você aceite os termos e condições.
 
--   Desabilitar a câmera (apenas dispositivos Samsung KNOX, e não para dispositivos Nexus) para impedir que você tire fotos de material de trabalho confidencial que não deve ser compartilhado.
+-   Desabilite a câmera para impedir que você tire fotos de material de trabalho confidencial que não deve ser compartilhado.
 
 -   Requerer que todos os dados no dispositivo sejam criptografados, o que ajuda a proteger os dados caso o dispositivo seja perdido ou roubado.
 

@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados da API do Data Warehouse do Intune com um cliente REST
 
@@ -58,7 +58,7 @@ Crie um aplicativo nativo no Azure. Este aplicativo nativo é o aplicativo clien
 
 Agora você tem um aplicativo definido no Azure. Conceda acesso do aplicativo nativo à API do Microsoft Intune.
 
-1.  Clique no aplicativo nativo. Você nomeou o aplicativo como algo semelhante a Cliente do Data Warehouse do Intune.
+1.  Clique no aplicativo nativo. Você nomeou o aplicativo como algo semelhante a **Cliente do Data Warehouse do Intune**.
 2.  Clique em **Permissões necessárias** na folha **Configurações**
 3.  Clique em **Adicionar** na folha **Permissões necessárias**.
 4.  Clique em **Selecionar uma API**.
@@ -152,14 +152,14 @@ O exemplo a seguir contém um cliente REST simples. O código usa a classe **htt
 1.  Abra o **Microsoft Visual Studio**.
 2.  Escolha **Arquivo** > **Novo Projeto**. Expanda **Visual C#** e escolha **Aplicativo de Console (.Net Framework)**. 
 3.  Nomeie o projeto como ` IntuneDataWarehouseSamples`, navegue até onde deseja salvar o projeto e, em seguida, clique em **OK**.
-3.  Clique com o botão direito do mouse no nomes da solução no Gerenciador de Soluções e, em seguida, selecione **Gerenciar Pacotes NuGet para a Solução**. Clique em **Procurar** e, em seguida, digite 'Microsoft.IdentityModel.Clients.ActiveDirectory' na caixa de pesquisa.
-4. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Gerenciar Pacotes da Sua Solução e, em seguida, clique em **Instalar**. 
-5. Clique em **Eu Aceito** para aceitar a licença do pacote NuGet.
-6. Abra `Program.cs` no Gerenciador de Soluções.
+4.  Clique com o botão direito do mouse no nomes da solução no Gerenciador de Soluções e, em seguida, selecione **Gerenciar Pacotes NuGet para a Solução**. Clique em **Procurar** e, em seguida, digite `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
+5. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Gerenciar Pacotes da Sua Solução e, em seguida, clique em **Instalar**. 
+6. Clique em **Eu Aceito** para aceitar a licença do pacote NuGet.
+7. Abra `Program.cs` no Gerenciador de Soluções.
 
     ![Projeto no Visual Studio](media\reports-get_rest_data_in.png)
 
-7.  Substitua o código em Program.cs pelo código a seguir:  
+8.  Substitua o código em Program.cs pelo código a seguir:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Atualize os `TODO`s no exemplo de código.
-9.  Pressione **Ctrl + F5** para compilar e executar o cliente Intune.DataWarehouseAPIClient no modo de depuração.
+9.  Atualize os `TODO`s no exemplo de código.
+10.  Pressione **Ctrl + F5** para compilar e executar o cliente Intune.DataWarehouseAPIClient no modo de depuração.
 
     ![Entidade de data recuperada no formato JSON.](media\reports-get_rest_data_output.png)
 
-10.  Examine a saída do console. A saída contém dados no formato JSON extraídos da entidade **datas** em seu locatário do Intune.
+11.  Examine a saída do console. A saída contém dados no formato JSON extraídos da entidade **datas** em seu locatário do Intune.
 
 ## <a name="next-steps"></a>Próximas etapas
 

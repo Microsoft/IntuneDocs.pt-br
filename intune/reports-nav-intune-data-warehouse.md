@@ -14,15 +14,15 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>API Intune Data Warehouse
 
-A API Intune Data Warehouse permite acessar os dados do Intune em um formato legível para o computador para uso em sua ferramenta favorita de análise. Use a API para criar relatórios que fornecem informações sobre seu ambiente móvel da empresa. A API usa o protocolo OData, que segue os padrões para:
+A API do Data Warehouse do Intune permite acessar os dados do Intune em um formato legível para o computador para que eles sejam usados em sua ferramenta de análise favorita. Use a API para criar relatórios que fornecem informações sobre seu ambiente móvel da empresa. A API usa o protocolo OData, que segue os padrões para:
 
   -   Cabeçalhos de solicitação e resposta
   -   Códigos de status
@@ -41,9 +41,12 @@ Esta seção de referência fornece uma visão geral dos pontos de extremidade, 
 
 ## <a name="odata-custom-client"></a>Cliente personalizado do OData
 
-Você pode acessar o modelo de dados do Data Warehouse do Intune por meio de pontos de extremidade RESTful. Para obter acesso aos seus dados, seu cliente deve ser autorizado no Microsoft Azure Active Directory (Azure AD) usando OAuth 2.0. Primeiro você configura um aplicativo Web e um aplicativo cliente no Azure e concede permissões para o cliente. Seu cliente local obterá a autorização e, assim, poderá se comunicar com os pontos de extremidade do Data Warehouse.
+Você pode acessar o modelo de dados do Data Warehouse do Intune por meio de pontos de extremidade RESTful. Para obter acesso aos seus dados, seu cliente deve ser autorizado no Azure AD (Azure Active Directory) usando OAuth 2.0. Primeiro você configura um aplicativo Web e um aplicativo cliente no Azure e concede permissões para o cliente. Seu cliente local obterá a autorização e, assim, poderá se comunicar com os pontos de extremidade do Data Warehouse.
 
 Para obter mais informações, consulte [Obter dados da API do Data Warehouse com um cliente REST](reports-proc-data-rest.md)
+
+> [!Note]  
+> Você pode acessar o [repositório do Data Warehouse do Intune do GitHub](https://github.com/Microsoft/Intune-Data-Warehouse) no Github para obter exemplos de código.
 
 ## <a name="interacting-with-the-api"></a>Interação com a API
 
@@ -58,6 +61,8 @@ OData define um modelo de dados abstrato e um protocolo que permite que qualquer
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Cenários de autenticação para o Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[Versão 4.0 do OData](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Saiba mais sobre como trabalhar com o Azure AD lendo os [Cenários de autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+
+Localize recursos do OData em [odata.org](http://www.odata.org).
+  
+Examine o padrão do OData Versão 4.0 em [OData Versão 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
