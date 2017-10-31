@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>A edição antecipada do Microsoft Intune – Outubro de 2017
 
@@ -151,19 +151,6 @@ Com o lançamento do Android Oreo, o Google apresenta um conjunto de recursos de
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Suporte para política de atualização de edição do Windows 10 <!-- 903672(archived), 1119689 -->  
 Você poderá criar uma política de atualização de edição do Windows 10 que atualiza dispositivos Windows 10 para Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education e Windows 10 Professional Education N. Para obter detalhes sobre atualizações de edição do Windows 10, veja [Como configurar atualizações de edição do Windows 10](edition-upgrade-configure-windows-10.md).
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>MAM do Intune e suplementos do Outlook para Android  <!-- 1450688 -->
-Em algumas semanas, a equipe do Office anunciará suplementos para o Outlook no Android. O conjunto de recursos desse suplemento já existe no Outlook no Windows, iOS, Web e Mac. Como os suplementos são gerenciados pelo Exchange, os usuários poderão copiar e compartilhar dados e mensagens entre o Outlook e aplicativos de suplementos não gerenciados, a menos que o acesso aos suplementos seja desativado pelo administrador do Exchange. 
-
-Para gerenciar permissões de acesso do usuário aos suplementos, trabalhe com o administrador do Exchange para garantir que as políticas de proteção de dados de MAM se aplicam aos suplementos.
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Se as políticas do Exchange já estiverem definidas para impedir o sideload ou a instalação de suplementos, não haverá a necessidade de continuar a leitura. Suas políticas de MAM serão aplicadas conforme o esperado. Se, no entanto, você tiver configurado as políticas de MAM para restringir operações de recortar, copiar e colar no Outlook no Android, e não tiver definido sua política de suplemento do Exchange, saiba que, por padrão, os usuários poderão instalar suplementos para o Outlook. Esses suplementos podem acessar o corpo e o assunto da mensagem, além de outras propriedades da mensagem. É possível desligar a capacidade do usuário de instalar suplementos fazendo com que o Administrador do Exchange remova as funções "Meus Aplicativos do Marketplace" e "Meus Aplicativos Personalizados".
-
-A alteração da configuração no Exchange será aplicada no Outlook no Windows, iOS, Web, Mac e móvel. 
-
-#### <a name="what-do-i-need-to-do"></a>O que eu preciso fazer?
-Revise hoje suas políticas do Exchange. Informe sua equipe de TI e de suporte técnico. Entre em contato com nossa equipe de suporte se tiver perguntas ou dúvidas específicas. 
 
 
 
