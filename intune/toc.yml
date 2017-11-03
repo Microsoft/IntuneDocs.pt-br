@@ -545,6 +545,8 @@
     - name: Usar o Intune Data Warehouse
       href: reports-nav-create-intune-reports.md
       items:
+        - name: Log de alterações para o data warehouse
+          href: reports-changelog.md
         - name: Conectar-se ao Data Warehouse com o Power BI
           href: reports-proc-get-a-link-powerbi.md
         - name: Criar um relatório do feed OData com o Power BI
@@ -602,18 +604,20 @@
         - name: Modelo de dados do Data Warehouse
           href: reports-ref-data-model.md
           items:
-            - name: Referência para a entidade de Data
-              href: reports-ref-date.md
-            - name: Referência para entidade de usuário
-              href: reports-ref-user.md
-            - name: Referência para entidades de MAM (gerenciamento de aplicativo móvel)
-              href: reports-ref-mobile-app-management.md
-            - name: Referência para entidades de dispositivos
-              href: reports-ref-devices.md
             - name: Referência para entidades de aplicativo
               href: reports-ref-application.md
-            - name: Referência para entidades de associações de dispositivo de usuário
-              href: reports-ref-userdeviceassociations.md
+            - name: Referência para a entidade de data
+              href: reports-ref-date.md
+            - name: Referência para entidades de dispositivos
+              href: reports-ref-devices.md
+            - name: Referência para entidades de MAM (gerenciamento de aplicativo móvel)
+              href: reports-ref-mobile-app-management.md
+            - name: Referência para entidades de política
+              href: reports-ref-policy.md
+            - name: Referência de Associação de dispositivo de usuário
+              href: reports-ref-user-device.md
+            - name: Referência para entidade de usuário
+              href: reports-ref-user.md
     - name: Sideload de aplicativos do Windows
       href: intune-graph-apis.md
       items:
