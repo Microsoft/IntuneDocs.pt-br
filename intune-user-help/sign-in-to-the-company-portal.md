@@ -1,11 +1,11 @@
 ---
 title: Como entrar no aplicativo do Portal da Empresa | Microsoft Docs
-description: 
+description: "Veja como entrar no aplicativo Portal da Empresa em várias plataformas."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Como faço para entrar no aplicativo do Portal da Empresa? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Mesmo que as imagens a seguir destinem-se ao iOS, o processo é praticamente id�
 4. Depois que o Portal da Empresa aceitar seu logon, você entrará e poderá começar a acessar os recursos da empresa.   
 
   ![Depois de concluir o processo de autenticação, o aplicativo Portal da Empresa inicia a sessão, mostrando isso por meio de uma barra de carregamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Entrando com autenticação baseada em certificado
+
+1.  Abra o aplicativo Portal da Empresa no dispositivo.
+
+2.  Insira sua **Conta corporativa ou de estudante**.
+
+3.  Toque no link **Entrar com um certificado digital**.
+
+4.  Toque em **Continuar** para usar o certificado.
 
 ## <a name="signing-in-from-another-device"></a>Entrar de outro dispositivo
 
