@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo iOS no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
-    
+
 -   **Envio de dados de diagnóstico** – Permitir ou bloquear a habilidade do dispositivo enviar dados de diagnóstico para a Apple.
 -   **Captura de tela** – Permitir ao usuário capturar os conteúdos da tela como uma imagem.
     - **Observação de tela remota pelo aplicativo Classroom (somente supervisionado)** – Permitir ou bloquear que o aplicativo Classroom da Apple exiba a tela de dispositivos iOS.
@@ -44,6 +44,54 @@ Isso também se aplica às configurações acessadas no aplicativo de configura�
 - **Alterações de perfil de configuração** – Permitir que o usuário instale perfis de configuração.
 - **Bloqueio de Ativação (somente supervisionado)** – Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.
 
+## <a name="configurations-requiring-supervision"></a>Configurações que exigem supervisão
+
+O modo supervisionado do iOS só pode ser habilitado durante a instalação inicial do dispositivo por meio do Programa de Registro de Dispositivos da Apple ou usando o Apple Configurator. Após habilitar o modo supervisionado, o Intune pode configurar um dispositivo com a seguinte funcionalidade:
+
+- Bloqueio de aplicativo (modo de aplicativo único) 
+- Proxy HTTP global 
+- Ignorar Bloqueio de ativação 
+- Modo autônomo de aplicativo único 
+- Filtro de conteúdo da Web 
+- Definir tela de fundo e tela de bloqueio 
+- Push de aplicativo silencioso 
+- VPN sempre ativado 
+- Permitir instalação de aplicativo gerenciada exclusivamente 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- Emparelhamento de host 
+- Sincronização de nuvem 
+- Pesquisa do Spotlight 
+- Entrega 
+- Apagar dispositivo 
+- Interface do usuário de restrições 
+- Instalação de perfis de configuração pela interface do usuário 
+- News 
+- Atalhos de teclado 
+- Modificações de senha 
+- Alterações do nome do dispositivo 
+- Alterações de papel de parede 
+- Downloads de aplicativo automáticos 
+- Alterações na confiança de aplicativo da empresa 
+- Apple Music 
+- Recebimento de email 
+- Emparelhar com Apple Watch 
+
+> [!NOTE]
+> A Apple confirmou que certas configurações mudarão para somente supervisionado em 2018. É recomendável levar isso em consideração ao usar estas configurações em vez de esperar a Apple migrá-las para somente supervisionado:
+> - Instalação do aplicativo pelos usuários finais
+> - Remoção de aplicativo
+> - FaceTime
+> - Safari
+> - iTunes
+> - Conteúdo explícito
+> - Documentos e dados do iCloud
+> - Jogo para vários participantes
+> - Adicionar amigos no Game Center
+
 ## <a name="password"></a>Senha
 -   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
     -   **Senhas simples** – Permitir senhas simples como 0000 e 1234.
@@ -56,7 +104,7 @@ Isso também se aplica às configurações acessadas no aplicativo de configura�
     -   **Expiração da senha (dias)** – Especifique o número de dias antes que a senha do dispositivo precise ser alterada.
     -   **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que o dispositivo lembra.
     -   **Desbloqueio por impressão digital** – Permite usar uma impressão digital para desbloquear dispositivos compatíveis.
-- **Modificação da senha (somente supervisionada)** – Impede que a senha seja alterada, adicionada ou removida. 
+- **Modificação da senha (somente supervisionada)** – Impede que a senha seja alterada, adicionada ou removida.
     - **Modificação de impressão digital (somente supervisionada)** – Impede que o usuário altere, adicione ou remova configurações de TouchID.
 
 <sup>1</sup>Quando você configura as definições **Máximo de minutos inatividade até o bloqueio de tela** e **Máximo de minutos após o bloqueio de tela antes da senha ser necessária**, eles são aplicados em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
@@ -89,7 +137,7 @@ Isso também se aplica às configurações acessadas no aplicativo de configura�
 
 ## <a name="built-in-apps"></a>Aplicativos internos
 
--   **Câmera** – Especifica se a câmera no dispositivo pode ser usada. 
+-   **Câmera** – Especifica se a câmera no dispositivo pode ser usada.
     -   **FaceTime** – Permitir que o aplicativo FaceTime seja usado no dispositivo.
 -   **Siri** – Permitir o uso da assistente de voz Siri no dispositivo.
     -   **Siri quando o dispositivo estiver bloqueado** – Permitir o uso da Assistente de voz Siri no dispositivo enquanto ele estiver bloqueado.
@@ -124,9 +172,7 @@ Os perfis de dispositivo que contêm configurações de aplicativo restrito deve
 Exemplo: pesquisar por Microsoft Word para iPad. A URL que você usará será https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
-
-
+> Você também pode usar o iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
 
 ### <a name="additional-options"></a>Opções adicionais
 
@@ -247,7 +293,7 @@ Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quand
 No campo **URL do Domínio da Web**, adicione uma ou mais URLs à lista. Quando os documentos forem baixados dos domínios especificados, eles serão considerados gerenciados. Essa configuração só se aplica a documentos baixados usando o navegador Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domínios de preenchimento automático de senha do Safari
+### <a name="safari-password-autofill-domains"></a>Domínios de preenchimento automático de senha do Safari
 
 No campo **URL do Domínio**, adicione uma ou mais URLs à lista. Os usuários só podem salvar senhas da Web das URLs nesta lista. Essa configuração se aplica somente ao navegador Safari e aos dispositivos com iOS 9.3 e posteriores no modo supervisionado. Se você não especificar URLs, será possível salvar senhas de todos os sites.

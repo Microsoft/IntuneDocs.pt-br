@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional no portal clássico do Intune para o Portal do Azure
 
@@ -82,7 +82,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
     ![Comparação da interface do usuário de grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o Portal do Azure. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
+    > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o Portal Clássico. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
 
 5. Depois de escolher o grupo, clique em **Selecionar** e **Concluído**.
 
