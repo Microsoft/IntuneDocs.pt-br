@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Redefinir a senha em dispositivos gerenciados pelo Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A ação **Redefinir senha** gera uma nova senha para o dispositivo, que será exibida na folha <*nome do dispositivo*> **Visão Geral**.
+A ação **Remover senha** gera uma nova senha para o dispositivo, que será exibida na folha <*nome do dispositivo*> **Visão Geral**.
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
@@ -41,7 +41,7 @@ A ação **Redefinir senha** gera uma nova senha para o dispositivo, que será e
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Intune**, escolha **Dispositivos**.
 4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
-5. Na lista de dispositivos gerenciados, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivo **Redefinir senha**.
+5. Na lista de dispositivos gerenciados, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivo **Remover senha**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ Veja abaixo os cenários de registro COD (dispositivos de propriedade corporativ
 O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Esse método dá suporte ao modo supervisionado do iOS, que permite que um dispositivo seja configurado com a seguinte funcionalidade:
-
-- Bloqueio de aplicativo (modo de aplicativo único) 
-- Proxy HTTP global 
-- Ignorar Bloqueio de ativação 
-- Modo autônomo de aplicativo único 
-- Filtro de conteúdo da Web 
-- Definir tela de fundo e tela de bloqueio 
-- Push de aplicativo silencioso 
-- VPN sempre ativado 
-- Permitir instalação de aplicativo gerenciada exclusivamente 
-- iBookstore 
-- iMessages 
-- Game Center 
-- AirDrop 
-- AirPlay 
-- Emparelhamento de host 
-- Sincronização de nuvem 
-- Pesquisa do Spotlight 
-- Entrega 
-- Apagar dispositivo 
-- Interface do usuário de restrições 
-- Instalação de perfis de configuração pela interface do usuário 
-- News 
-- Atalhos de teclado 
-- Modificações de senha 
-- Alterações do nome do dispositivo 
-- Alterações de papel de parede 
-- Downloads de aplicativo automáticos 
-- Alterações na confiança de aplicativo da empresa 
-- Apple Music 
-- Recebimento de email 
-- Emparelhar com Apple Watch 
-
-> [!NOTE]
-> A Apple confirmou que certas configurações mudarão para somente supervisionado em 2018. É recomendável levar isso em consideração ao usar estas configurações em vez de esperar a Apple migrá-las para somente supervisionado:
-> - Instalação de aplicativo
-> - Remoção de aplicativo
-> - FaceTime
-> - Safari
-> - iTunes
-> - Conteúdo explícito
-> - Documentos e dados do iCloud
-> - Jogo para vários participantes
-> - Adicionar amigos no Game Center
+O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Esse método dá suporte ao modo supervisionado do iOS, que permite que um dispositivo seja configurado com uma funcionalidade específica.
 
 Saiba mais sobre o registro DEP do iOS:
 
 - [Escolha como registrar dispositivos iOS](ios-enroll.md)
-- [Registrar dispositivos iOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md)
+- [Registrar dispositivos iOS usando o Programa de registro de dispositivos](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI usam o Apple Configurator, por USB, para preparar manualmente todos os dispositivos de propriedade corporativa para o registro usando o Assistente de Configuração. O administrador de TI cria um perfil de registro e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, eles devem executar o Assistente de Instalação para registrá-los. Esse método dá suporte ao modo **Supervisionado do iOS**, que, por sua vez, habilita os seguintes recursos:

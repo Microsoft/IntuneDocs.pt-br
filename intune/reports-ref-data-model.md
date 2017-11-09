@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Data Warehouse
 
@@ -38,14 +38,10 @@ O warehouse expõe dados nas seguintes categorias de alto nível:
 
 Conjuntos de entidades são conhecidos como coleções de entidades no modelo de dados. Esses conjuntos contêm entidades que definem os dados coletados no modelo. Cada conjunto de entidades fornece um ponto de acesso para o modelo de dados do Data Warehouse. Encontre detalhes sobre as seguintes categorias de entidades:
 
-  -  [Data](reports-ref-date.md)
-  -  [Usuário](reports-ref-user.md)
-  -  [Gerenciamento de aplicativo móvel (MAM)](reports-ref-mobile-app-management.md)
-  -  [Dispositivos](reports-ref-devices.md)
   -  [Aplicativo](reports-ref-application.md)
+  -  [Data](reports-ref-date.md)
+  -  [Dispositivos](reports-ref-devices.md)
   -  [Política](reports-ref-policy.md)
-  -  [Associação de dispositivo de usuário](reports-ref-userdeviceassociations.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
+  -  [Gerenciamento de aplicativo móvel (MAM)](reports-ref-mobile-app-management.md)
+  -  [Usuário](reports-ref-user.md)
+  -  [Associações de Dispositivo de Usuário](reports-ref-user-device.md)

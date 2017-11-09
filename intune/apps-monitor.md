@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 O Intune fornece várias maneiras nas quais você pode monitorar as propriedades dos aplicativos que gerencia, além de seu status de atribuição.
 
-1. Na carga de trabalho **Aplicativos Móveis**, escolha **Gerenciar** > **Aplicativos**.
-2. Na lista da folha de aplicativos, escolha o aplicativo para o qual deseja ver informações. Em seguida, você verá a folha <*nome do aplicativo*> **Status de instalação do dispositivo**: ![folha de status de instalação do aplicativo.](./media/monitor-apps.png)
+1. Entre no Portal do Azure.
+2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
+3. Na carga de trabalho **Aplicativos Móveis**, escolha **Aplicativos** no grupo **Gerenciar**.
+     
+    ![Folha de status de instalação do aplicativo.](./media/monitor-apps.png)
+5. Na folha de lista de aplicativos, selecione um aplicativo para você. Você verá a folha <*nome do aplicativo*> **Status de instalação do dispositivo**.
+
+O relatório de status de instalação do dispositivo contém as seguintes colunas:
+
+1.  **Nome do Dispositivo** O nome do tipo de dispositivo.
+2.  **Nome de Usuário** O nome do usuário.
+3.   **Plataforma** O sistema operacional instalado no dispositivo.
+4.  **Versão** O número de versão do aplicativo.
+5.   **Status** Os possíveis status para os aplicativos são: **Instalado**, **Não Instalado**, **Instalação Pendente** e **Erro**.
+6. **Detalhes do Status** Uma descrição legível do status do aplicativo no dispositivo.
+7. **Último Check-In** quando o dispositivo fez check-in pela última vez no Intune.
 
 Em seguida, execute uma das ações a seguir para saber mais sobre seus aplicativos e suas atribuições.
 

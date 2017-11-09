@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
-ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
+ms.openlocfilehash: d485f0d53ac57a2f159ebd56b6b3823a8a49d5ad
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Usar o Intune Data Warehouse
 
@@ -35,8 +35,12 @@ O Data Warehouse fornece acesso a mais informações sobre seu ambiente móvel d
   -  Dados atualizados em um ritmo diário
   -  Um modelo de dados usando o padrão OData
 
+> [!Note]
+> Se você estiver usando o gerenciamento de dispositivo móvel (MDM) híbrido com o System Center Configuration Manager e o Microsoft Intune, desejará recuperar seus dados do SCCM. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um dashboard do SCCM Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)." e "[Criar um dashboard e relatório do Power BI](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)."
+
+
 > [!Important]  
-> Você pode testar a funcionalidade mais recente do Data Warehouse usando a versão beta. Para usar a versão beta, a URL deve conter o parâmetro de consulta `api-version=beta`. A versão beta oferece recursos antes que eles estejam disponíveis como um serviço com suporte. Como o Intune adiciona novos recursos, a versão beta pode ter dados e o comportamento diferentes dos contratos. Qualquer código personalizado ou quaiquer ferramentas de relatório dependentes da versão beta de relatório podem ser corrompidas com atualizações contínuas. <!-- If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
+> Você pode testar a funcionalidade mais recente do Data Warehouse usando a versão beta. Para usar a versão beta, a URL deve conter o parâmetro de consulta `api-version=beta`. A versão beta oferece recursos antes que eles estejam disponíveis como um serviço com suporte. Como o Intune adiciona novos recursos, a versão beta pode ter dados e o comportamento diferentes dos contratos. Qualquer código personalizado ou quaiquer ferramentas de relatório dependentes da versão beta de relatório podem ser corrompidas com atualizações contínuas.
 
 **Próximas etapas**
 
