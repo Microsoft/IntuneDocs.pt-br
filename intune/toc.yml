@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
+            - name: Tela de status do registro
+              href: windows-enrollment-status.md
         - name: Configurar registro do Android
           href: android-enroll.md
         - name: Configurar o registro do iOS
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Definir configurações da Proteção de Informações do Windows
           href: windows-information-protection-configure.md
+        - name: Gerenciar scripts do PowerShell
+          href: intune-management-extension.md
         - name: Monitorar despesas de telecomunicações
           href: telecom-expenses-monitor.md
         - name: Atribuir perfis
@@ -556,11 +560,11 @@
     - name: Definir configurações personalizadas do dispositivo
       href: custom-settings-configure.md
       items:
+        - name: Perfil de Wi-Fi com uma chave pré-compartilhada
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Perfil de Wi-Fi com uma chave pré-compartilhada
-              href: wi-fi-profile-shared-key.md
             - name: Perfil VPN por aplicativo
               href: android-pulse-secure-per-app-vpn.md
             - name: Permitir/bloquear aplicativos para o Samsung KNOX Standard
