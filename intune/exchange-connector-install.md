@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune no Azure
 
@@ -134,13 +134,18 @@ Após o Exchange Connector configurar a conexão, os dispositivos móveis associ
 > [!NOTE]
 > Se você tiver instalado o Exchange Connector Local e se em algum momento a conexão com o Exchange for excluída, você deverá desinstalar o Exchange Connector Local do computador em que ele foi instalado.
 
-## <a name="validate-the-exchange-connection"></a>Validar a conexão do Exchange
+## <a name="monitor-the-exchange-connector-activity"></a>Monitorar a atividade de conector do Exchange
 
 Após configurar o Exchange Connector com êxito, você pode exibir o status da conexão e a última tentativa de sincronização bem-sucedida. Para validar a conexão do Exchange Connector:
 
-- No Painel do Intune, escolha **Acesso local**. Em **Gerenciar**, selecione **Acesso ao Exchange Local** para verificar o status da conexão.
+1. No Painel do Intune, escolha **Acesso local**.
+2. Em **Gerenciar**, selecione **Acesso ao Exchange Local** para verificar o status da conexão.
 
 Você também pode verificar a hora e data da última tentativa de sincronização bem-sucedida.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>Pacote de gerenciamento do SCOM (System Center Operations Manager)
+
+A partir do Intune versão 1710, é possível usar o [pacote de gerenciamento do SCOM para o conector do Exchange e Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Isso oferecerá diferentes maneiras de monitorar o conector do Exchange quando for necessário solucionar problemas.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar uma política de acesso condicional para o Exchange local](conditional-access-exchange-create.md)

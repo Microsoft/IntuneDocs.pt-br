@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2383d41c52618710a1d42f0b2236d41d117b42be
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo Android
 As configurações de política descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -90,3 +90,5 @@ Há duas categorias de configurações de política: configurações de realoca�
 | **Exigir sistema operacional mínimo do Android (somente Aviso)** | Escolha **Sim** para exigir um sistema operacional Android mínimo para usar este aplicativo. O usuário verá uma notificação se a versão do Android no dispositivo não atender ao requisito. Essa notificação pode ser descartada. | Não |
 | **Exigir versão mínima do aplicativo** | Escolha **Sim** para exigir uma versão mínima do aplicativo para poder usá-lo. O usuário não poderá acessar se a versão do aplicativo no dispositivo não atender ao requisito.<br><br>Ao selecionar os aplicativos desejados, observe eles geralmente têm esquemas de controle de versão diferentes entre eles.<br><br> | Não | 
 | **Exigir versão mínima do aplicativo (somente Aviso)** | Escolha **Sim** para recomendar uma versão mínima de aplicativo para usar esse aplicativo. O usuário verá uma notificação se a versão do aplicativo no dispositivo não atender ao requisito. Essa notificação pode ser descartada.<br><br>Ao selecionar os aplicativos desejados, observe eles geralmente têm esquemas de controle de versão diferentes entre eles.<br><br> | Não | 
+| **Exigir versão de patch mínimo do Android** | Escolha **Sim** para exigir um patch mínimo de segurança do Android lançado pelo Google. O usuário não poderá acessar se o patch de segurança do Android no dispositivo não atender ao requisito. | Não |
+| **Exigir versão de patch mínimo de Android (Somente aviso)** | Escolha **Sim** para exigir um patch mínimo de segurança do Android lançado pelo Google. O usuário verá uma notificação se o patch de segurança do Android no dispositivo não atender ao requisito. Essa notificação pode ser descartada. | Não |
