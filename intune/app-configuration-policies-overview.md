@@ -1,7 +1,7 @@
 ---
 title: "Políticas de configuração de aplicativo do Intune | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Saiba como usar políticas de configuração de aplicativo para o Intune."
+description: "Saiba como usar políticas de configuração do aplicativo para o Intune."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Políticas de configuração de aplicativo para o Intune
 
 Forneça configurações quando os usuários executarem um aplicativo iOS ou Android com as políticas de configuração de aplicativo no Microsoft Intune. Por exemplo, um aplicativo pode exigir que os usuários especifiquem:
 
-- Um número de porta personalizado
-- Configurações de idioma
-- Configurações de segurança
-- Configurações de identidade visual, como um logotipo da empresa
+- Um número da porta personalizado.
+- Configurações de idioma.
+- Configurações de segurança.
+- Configurações de identidade visual, como um logotipo da empresa.
 
 Quando os usuários inserem essas configurações incorretamente, isso pode aumentar a carga do suporte técnico e reduzir a adoção de novos aplicativos.
 
@@ -38,7 +38,7 @@ Você não atribui essas políticas diretamente para usuários e dispositivos. E
 
 Você tem duas opções de como usar as configurações do aplicativo com o Intune:
  - **Dispositivos gerenciados**  
-   O dispositivo é gerenciado pelo Intune como o provedor de MDM.
+   O dispositivo é gerenciado pelo Intune como o provedor de MDM (Gerenciamento de Dispositivo Móvel).
  - **Aplicativos gerenciados**  
    Um aplicativo é gerenciado sem registro de dispositivo.
 
@@ -46,7 +46,7 @@ Você tem duas opções de como usar as configurações do aplicativo com o Intu
 
 Você pode usar políticas de configuração de aplicativo para aplicativos que dão suporte a elas. Para dar suporte à configuração de aplicativo no Intune, os aplicativos devem ter sido escritos para dar suporte ao uso de configurações de aplicativo. Consulte o fornecedor do aplicativo para obter mais detalhes.
 
-Você pode preparar seus aplicativos de linha de negócios incorporando o SDK de Aplicativo do Intune no aplicativo ou encapsulando o aplicativo após ele ter sido desenvolvido. O SDK do Aplicativo do Intune, disponível para iOS e Android, habilita o aplicativo para as políticas de proteção do aplicativo do Intune. Ele se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Para obter mais informações, consulte a [Visão geral do SDK de Aplicativo do Intune](app-sdk.md).
+É possível preparar seus aplicativos de linha de negócios incorporando o SDK de Aplicativo do Intune no aplicativo ou encapsulando o aplicativo ele ser desenvolvido. O SDK do Aplicativo do Intune, disponível para iOS e Android, habilita o aplicativo para as políticas de proteção do aplicativo do Intune. Ele se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Para obter mais informações, consulte a [Visão geral do SDK de Aplicativo do Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Suporte de API do Graph para configuração de aplicativo
 

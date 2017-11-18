@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 Saiba quais atualizações foram feitas na interface do usuário para os aplicativos que os usuários finais vão encontrar nesta versão do Microsoft Intune. Isso pode ajudá-lo nas comunicações com usuários e na atualização da documentação personalizada que você criou para dar suporte à sua implantação. Isso também pode ajudá-lo a entender como solucionar melhor os problemas enfrentados caso seja necessário ligar para a assistência técnica para obter suporte usando o Portal da Empresa.
+
+
+## <a name="week-of-november-6-2017"></a>Semana de 6 de novembro de 2017
+
+### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Pesquisar melhorias nos aplicativos e no site do Portal da Empresa <!--1418189-->
+Agora os aplicativos do Portal da Empresa pesquisa entre categorias, nomes e descrições de aplicativos. Os resultados são classificados em ordem decrescente de relevância. Essas atualizações também estão disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+
+Ainda estamos ajustando maneira como a relevância é controlada, portanto, informe-nos como ele está funcionando usando o link "Comentários" na parte inferior do site do Portal da Empresa.
+
+
 
 ## <a name="week-of-october-16-2017"></a>Semana de 16 de outubro de 2017
 

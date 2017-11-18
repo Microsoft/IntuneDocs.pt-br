@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
@@ -60,16 +60,16 @@ Instale a última versão do Power BI Desktop. Você pode baixar o Power BI Desk
 
     ![Feed OData](media/reports-create-01-odatafeed.png)
 
-9. Clique em **OK**.
+9. Selecione **OK**.
 10. Selecione **Conta da organização** e entre com suas credenciais do Intune. 
 
     ![Credenciais de conta organizacional](media/reports-create-02-org-account.png)
 
-11. Clique em **Conectar**. O navegador será aberto e mostrará a lista de tabelas no Data Warehouse do Intune. 
+11. Selecione **Conectar**. O navegador será aberto e mostrará a lista de tabelas no Data Warehouse do Intune. 
 
     ![O navegador](media/reports-create-02-loadentities.png)
 
-12. Selecione as tabelas **Dispositivos** e **ownerTypes**.  Clique em **Carregar**. O Power BI carrega os dados no modelo.
+12. Selecione as tabelas **Dispositivos** e **ownerTypes**.  Selecione **Carregar**. O Power BI carrega os dados no modelo.
 
 ## <a name="create-a-relationship"></a>Criar uma relação 
 
@@ -77,8 +77,8 @@ Você pode importar várias tabelas para analisar não apenas os dados em uma ú
 
 ![Gerenciar relações](media/reports-create-03-managerelationships.png)
 
-1. Clique em **Gerenciar Relações**.
-2. Clique em **Detecção automática...** se o PowerBI ainda não tiver detectado as relações.  
+1. Selecione **Gerenciar Relações**.
+2. Selecione **Detectar automaticamente...** se o Power BI ainda não tiver detectado as relações.  
 A relação é exibida em uma coluna De para uma coluna Para. Neste exemplo, o campo de dados **ownerTypeKey** na tabela **Dispositivos** é vinculado ao campo de dados **ownerTypeKey** na tabela **ownerTypes**. Use a relação para pesquisar um nome simples do código de tipo de dispositivo na tabela **Dispositivos**.
 
 ## <a name="create-a-treemap-visualization"></a>Criar uma visualização de mapa de árvore
@@ -100,7 +100,7 @@ Agora você tem um visual que mostra a distribuição dos fabricantes de disposi
 
 Você pode adicionar um filtro no mapa de árvore para poder responder perguntas adicionais usando o aplicativo. 
 
-1. Clique na tela de relatório e, em seguida, clique no **ícone Segmentação** (![Mapa de árvore com os dados](media/reports-create-slicer.png)) em **Visualizações** para adicionar um filtro.
+1. Selecione a tela de relatório e, em seguida, o **ícone Segmentação** (![Mapa de árvore com os dados](media/reports-create-slicer.png)) em **Visualizações** para adicionar um filtro.
 2. Localize a tabela **ownerTypes** e arraste o campo de dados **ownerTypeName** na seção **Filtros** no painel **visualizações**.  
    Na tabela Dispositivos, há um campo de dados chamado **OwnerTypeKey** que contém um código que indica se o dispositivo é de propriedade pessoal ou da empresa. Como você deseja mostrar nomes amigáveis nesse filtro, procure a tabela **ownerTypes** e arraste o **ownerTypeName**. Este é um exemplo de como o modelo de dados dá suporte para relações entre tabelas.
 
@@ -108,8 +108,8 @@ Você pode adicionar um filtro no mapa de árvore para poder responder perguntas
 
 Agora você tem um filtro interativo que pode ser usado para alternar entre dispositivos de propriedade da empresa e de propriedade pessoal para ver como a distribuição é alterada.
 
-1. Clique em **Empresa** para ver a distribuição de dispositivos de propriedade da empresa.
-2. Clique em **Pessoal** para ver os dispositivos de propriedade pessoal.
+1. Selecione **Empresa** para ver a distribuição de dispositivos de propriedade da empresa.
+2. Selecione **Pessoal** para ver os dispositivos de propriedade pessoal.
 
 ## <a name="next-steps"></a>Próximas etapas
 

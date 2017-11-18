@@ -1,7 +1,7 @@
 ---
 title: "Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Saiba como usar políticas de configuração de aplicativo para fornecer dados de configuração para um aplicativo Android for Work quando ele é executado."
+description: "Saiba como usar políticas de configuração do aplicativo para fornecer dados de configuração para um aplicativo Android for Work quando ele é executado."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
@@ -15,17 +15,17 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e56aff30b353a2c98eb7effbec3e02bde066804f
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: f3fcc589010e9a153ee105aaf4b161ebcbcbfbb4
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use as políticas de configuração de aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo Android for Work. Você não atribui essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e atribui o aplicativo. As configurações de política são usadas quando o aplicativo as verifica, normalmente, na primeira vez em que ele é executado.
+Use as políticas de configuração do aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo Android for Work. Você não atribui essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e atribui o aplicativo. As configurações de política são usadas quando o aplicativo as verifica, normalmente, na primeira vez em que ele é executado.
 
 > [!Note]  
 > Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se ele criou o aplicativo para dar suporte a políticas de configuração de aplicativo.
@@ -33,7 +33,7 @@ Use as políticas de configuração de aplicativo no Microsoft Intune para forne
 1. Entre no Portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
 3. Selecione a carga de trabalho de **Aplicativos móveis**.
-4. Clique em **Políticas de configuração de aplicativo**, no grupo **Gerenciar** e, em seguida, clique em **Adicionar**.
+4. Escolha **Políticas de configuração do aplicativo** no grupo **Gerenciar** e escolha **Adicionar**.
 5. Defina os seguintes detalhes:
     - **Nome**  
       O nome do perfil que será exibido no Portal do Azure.
@@ -41,57 +41,57 @@ Use as políticas de configuração de aplicativo no Microsoft Intune para forne
       A descrição do perfil que será exibida no Portal do Azure.
     - **Tipo de registro de dispositivo**  
       Selecione **Dispositivos gerenciados**.
-6. Selecione **Android** para a **Plataforma**.
-7. Selecione **Aplicativo Associado** para escolher o aplicativo para o qual você deseja definir uma política de configuração de aplicativo.  Selecione na lista de aplicativos Android for Work que foram aprovados e sincronizados com o Intune.
-8. Selecione **Definições de configuração**. Você pode definir as configurações usando:
-    - [O designer de configuração](#Use-the-configuration-designer)
-    - [Inserir editor de JSON](#Use-the-JSON-editor)
-9. Clique em **OK** e em **Adicionar**.
+6. Selecione **Android** para **Plataforma**.
+7. Selecione **Aplicativo Associado** para escolher o aplicativo para o qual você deseja definir uma política de configuração de aplicativo. Selecione na lista de aplicativos Android for Work que foram aprovados e sincronizados com o Intune.
+8. Selecione **Definições de configuração**. É possível definir configurações usando:
+    - [Designer de configuração](#Use-the-configuration-designer)
+    - [Editor de JSON](#Enter-the-JSON-editor)
+9. Escolha **OK** e, em seguida, **Adicionar**.
 
 ## <a name="use-the-configuration-designer"></a>Usar o designer de configuração
 
-Você pode usar o designer de configuração para aplicativos em dispositivos que são registrados ou não registrados no Intune. O designer permite que você configure valores e chaves de configuração específicos. Você também deve especificar o tipo de dados para cada valor.
+Você pode usar o designer de configuração para aplicativos em dispositivos que são registrados ou não registrados no Intune. O designer permite que você configure chaves e valores de configuração específicos. Você também deve especificar o tipo de dados para cada valor.
 
 Para cada chave e valor na configuração, defina:
 
   - **Chave de configuração**  
-     Isso é usado para identificar exclusivamente a configuração específica.
-  - **Tipo de Valor**  
+     A chave que identifica exclusivamente a configuração específica.
+  - **Tipo de valor**  
     O tipo de dados do valor de configuração. Os tipos incluem Inteiro, Real, Cadeia de caracteres ou Booliano.
   - **Valor da configuração**  
     O valor para a configuração. 
 
 ## <a name="enter-the-json-editor"></a>Inserir o editor de JSON
 
-Algumas definições de configuração em aplicativos (como aquelas com os tipos Pacote) não podem ser configuradas com o designer de configuração.  Você precisa usar o editor de JSON para esses valores. As configurações são fornecidas para os aplicativos automaticamente quando o aplicativo é instalado.
+Algumas definições de configuração em aplicativos (como aquelas com os tipos Pacote) não podem ser configuradas com o designer de configuração. É necessário usar o editor de JSON para esses valores. As configurações são fornecidas para os aplicativos automaticamente quando o aplicativo é instalado.
 
 1. Em **Formato de definições de configuração**, selecione **Inserir editor de JSON**.
 2. No editor, é possível definir os valores JSON para as definições de configuração. Escolha **Baixar modelo de JSON** para baixar um arquivo de exemplo que, em seguida, pode ser configurado.
-3. Quando terminar, escolha **OK** e, em seguida, clique em **Adicionar**.
+3. Escolha **OK** e, em seguida, **Adicionar**.
 
 A política será criada e exibida na folha da lista de políticas.
 
 Quando o aplicativo atribuído é executado em um dispositivo, ele é executado com as configurações definidas na política de configuração de aplicativo.
 
-## <a name="preconfigure-permissions-grant-state-for-apps"></a>Pré-configurar o estado de concessão de permissões para aplicativos
+## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>Pré-configurar o estado de concessão de permissões para aplicativos
 
-Você também pode pré-configurar a permissão para que os aplicativos acessem os recursos do dispositivo Android. Por padrão, os aplicativos Android que exigem permissões de dispositivo como o acesso à localização ou à câmera do dispositivo solicitam que os usuários aceite ou negue as permissões. Por exemplo, se um aplicativo usar o microfone do dispositivo, o usuário final deverá conceder a permissão de aplicativo para usar o microfone.
+Você também pode pré-configurar a permissão para que os aplicativos acessem os recursos do dispositivo Android. Por padrão, os aplicativos Android que exigem permissões de dispositivo – como o acesso à localização ou à câmera do dispositivo – solicitam que os usuários aceitem ou neguem as permissões. Por exemplo, se um aplicativo usar o microfone do dispositivo, o usuário final deverá conceder ao aplicativo permissão para usar o microfone.
 
 1. Entre no Portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
-3. Escolha **Aplicativos móveis**. Em **Gerenciar**, escolha Políticas de configuração de aplicativo e, em seguida, clique em **Adicionar**.
+3. Escolha **Aplicativos móveis**. Em **Gerenciar**, escolha **Políticas de configuração do aplicativo** e, em seguida, clique em **Adicionar**.
 4. Defina os seguintes detalhes:
-    - **Nome** – O nome do perfil que será exibido no Portal do Azure
-    - **Descrição** – a descrição do perfil que será exibida no Portal do Azure
-    - **Plataforma** – selecione **Android**
-    - A opção **Tipo de registro de dispositivo** - *Dispositivos gerenciados** é pré-selecionada para você.
-5. Selecione **Aplicativo Associado** para escolher o aplicativo para o qual você deseja definir uma política de configuração.  Selecione na lista de aplicativos Android for Work que foram aprovados e sincronizados com o Intune.
+    - **Nome**. O nome do perfil que será exibido no Portal do Azure.
+    - **Descrição**. A descrição do perfil que será exibida no Portal do Azure.
+    - **Plataforma**. Selecione **Android**.
+    - **Tipo de registro de dispositivo**. **Dispositivos gerenciados** está pré-selecionado para você.
+5. Selecione **Aplicativo Associado** para escolher o aplicativo para o qual você deseja definir uma política de configuração. Selecione na lista de aplicativos Android for Work que foram aprovados e sincronizados com o Intune.
 6. Selecione **Permissões** e, em seguida, escolha **Adicionar**.
 7. Selecione na lista de permissões de aplicativo disponíveis e, em seguida, escolha **OK**.
 8. Selecione uma opção para cada permissão a ser concedida com esta política:
-    - **Prompt** – solicite que o usuário aceite ou negue.
-    - **Concessão automática** – aprove automaticamente sem notificar o usuário.
-    - **Negação automática** – negue automaticamente sem notificar o usuário.
+    - **Aviso**. Avise o usuário para aceitar ou recusar.
+    - **Concessão automática**. Aprovar automaticamente sem notificar o usuário.
+    - **Negação automática**. Negar automaticamente sem notificar o usuário.
 9. Para atribuir a política de configuração de aplicativo, selecione a política de configuração de aplicativo, selecione **Atribuição** e, em seguida, selecione **Selecionar grupos**.
 10. Selecione os grupos de usuários a serem atribuídos e, em seguida, escolha **Selecionar**.
 11. Escolha **Salvar** para atribuir a política.

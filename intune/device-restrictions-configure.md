@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8beabb21df8b122b7a1dd18a698a8075604046b5
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b61ad1c0a114c8a66c174fa34c4520e2f6c6244a
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Como definir as configurações de restrição de dispositivo no Microsoft Intune
 
@@ -29,7 +29,7 @@ Restrições de dispositivo permitem controlar uma grande variedade de configura
 
 Use as informações neste tópico para aprender as noções básicas sobre a configuração de perfis de restrição de dispositivo e leia mais tópicos para cada plataforma para saber mais sobre as especificações de dispositivo.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Criar um perfil de dispositivo que contém as configurações de restrição de dispositivo
+Para criar um perfil de dispositivo que contém as configurações de restrição de dispositivo:
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
@@ -59,9 +59,12 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 O perfil será criado e aparecerá na folha da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
-## <a name="example-of-device-restriction-settings"></a>Exemplo de configurações de restrição de dispositivo
+<!--  Removing image as part of design review; retaining source until we known the disposition.
 
-Neste exemplo de alto nível, você criará uma política de restrição de dispositivo que bloqueia o uso do aplicativo de câmera interna em dispositivos Android.
+## Example of device restriction settings
 
-![Como desabilitar a câmera em dispositivos Android](./media/disable-android-camera.png)
+In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
 
+![How to disable the camera on Android devices](./media/disable-android-camera.png)
+
+-->

@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Cancelamento de registro manual** – Permite que o usuário exclua manualmente a conta de trabalho do dispositivo.
 -   **Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
 -   **Envio de dados de diagnóstico** – Os valores possíveis são:
-    -       **Nenhum** Nenhum dado é enviado para a Microsoft
-    -       **Básico** Informações limitadas são enviadas para a Microsoft
-    -       **Avançado** Dados de diagnóstico avançados são enviados para a Microsoft
-    -       **Completo** Envia os mesmos dados que Avançado, além de dados adicionais sobre o estado do dispositivo
+    - **Nenhum** – Nenhum dado é enviado para a Microsoft
+    - **Básico** – Informações limitadas são enviadas à Microsoft
+    - **Avançado** – Dados de diagnóstico avançados são enviados para a Microsoft
+    - **Completo** Envia os mesmos dados que Avançado, além de dados adicionais sobre o estado do dispositivo
 -   **Câmera** – Permite ou bloqueia o uso da câmera do dispositivo.
 -   **Sincronização de arquivos do OneDrive** - bloqueia a sincronização de arquivos do dispositivo com o OneDrive.
 -   **Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como cartões SD, no dispositivo.
@@ -105,6 +105,7 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
 
 ## <a name="edge-browser"></a>Navegador Edge
+
 -   **Navegador Microsoft Edge (somente dispositivo móvel)** – Permitir o uso do navegador da Web Edge no dispositivo.
 -   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Edge e os serviços da Microsoft.
 -   **Sincronizar favoritos entre navegadores da Microsoft (somente no desktop)** – Permite que o Windows sincronize os favoritos entre o Internet Explorer e o Edge.
@@ -180,6 +181,44 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
     -   **Facilidade de Acesso** - bloqueia o acesso à área de facilidade de acesso do aplicativo de configurações.
     -   **Privacidade** - bloqueia o acesso à área de privacidade do aplicativo de configurações.
     -   **Atualização e Segurança** – bloqueia o acesso à área de atualizações e segurança do aplicativo de configurações.
+
+## <a name="kiosk"></a>Quiosque
+
+-   **Modo de quiosque** – Identifica o tipo de [modo de quiosque](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) compatível com a política.  As opções incluem:
+
+      - **Não configurado** (padrão) – A política não habilita um modo de quiosque. 
+      - **Quiosque de aplicativo único** – O perfil habilita o dispositivo como um quiosque de aplicativo único.
+      - **Quiosque de vários aplicativos** – O perfil habilita o dispositivo como um quiosque de vários aplicativos.
+
+    Os quiosques de aplicativo único exigem as seguintes configurações:
+
+      - **Conta de usuário** – Especifica a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque.  Para contas ingressadas em domínios do Azure AD, especifique a conta na forma de `domain\\username@tenant.org`.
+
+         Para dispositivos em ambientes públicos, use contas com privilégios mínimos para impedir atividades autorizadas.  
+
+      - **AUMID (ID do modelo de usuário do aplicativo)** – Especifica a AUMID do aplicativo de quiosque.  Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
+
+    Os quiosques de vários aplicativos exigem uma configuração de quiosque.  Use o botão **Adicionar** para criar uma configuração de quiosque ou selecionar uma existente.
+
+    As configurações de quiosque de vários aplicativos incluem as seguintes configurações:
+
+    - **Nome da configuração de quiosque** – Um nome amigável usado para identificar uma determinada configuração.
+
+    - Um ou mais **aplicativos de quiosque** que consistem em:
+
+        - **Tipo de aplicativo** que especifica o tipo do aplicativo de quiosque.  Os valores suportados incluem:   
+
+            - **Aplicativo Win32** – Um aplicativo da área de trabalho tradicional.  (Você precisará do nome do caminho totalmente qualificado do executável, com relação ao dispositivo.)
+
+            - **Aplicativo UWP** – Um aplicativo universal do Windows.  Você precisará da [AUMID para o aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **Identificador do aplicativo** – Especifique o nome do caminho totalmente qualificado do arquivo executável (aplicativos Win32) ou a [AUMID do aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos UWP).
+
+    - **Barra de tarefas** indica se a barra de tarefas é exibida (**Habilitado**) ou se está oculta (**Não configurado**) no quiosque.
+
+    - **Layout do menu Iniciar** – Especifica um arquivo XML que descreve como os aplicativos [são exibidos no menu Iniciar](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Usuários atribuídos** – especifica uma ou mais contas de usuário associadas à configuração de quiosque.  A conta pode ser local para o dispositivo ou para um logon de conta do Azure AD associado ao aplicativo de quiosque.  Especifique contas ingressadas em domínio na forma de `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

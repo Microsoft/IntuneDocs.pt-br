@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Conectar-se ao Data Warehouse com o Power BI
 
@@ -53,9 +53,9 @@ O arquivo do Power BI (pbix) contém informações de conexão para seu locatár
 
 1.  Entre no portal do Azure e selecione **Monitoring + Management** > **Intune**. Também é possível pesquisar recursos para o **Intune**.  
 2.  Abra a folha **API Microsoft Intune Data Warehouse (Versão Prévia)**.
-3.  Clique em **Baixar arquivo do PowerBI**. O arquivo com uma extensão (pbix) é baixado no local especificado.
+3.  Selecione **Baixar arquivo do PowerBI**. O arquivo com uma extensão (pbix) é baixado no local especificado.
 4.  Abra o arquivo com o Power BI. Os *Relatórios do Data Warehouse do Intune* são carregados, mas pode levar alguns segundos para obter os dados de locatário.
-5.  Clique em **Atualizar** para carregar os dados de locatário e examinar os relatórios.
+5.  Selecione **Atualizar** para carregar os dados de locatário e examinar os relatórios.
 6.  Se o Power BI não tiver autenticado com suas credenciais do Azure Active Directory, o Power BI solicitará que você forneça suas credenciais. Ao selecionar suas credenciais, escolha **Conta organizacional** como seu método de autenticação.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Carregue os dados no Power BI usando o link OData
@@ -69,13 +69,13 @@ Com um cliente autenticado no Azure AD, o URL do OData se conecta ao ponto de ex
 5. Selecione **Início** > **Obter dados**. Selecione **feed de OData**.
 6. Escolha **básica**.
 7. Digite ou cole a **URL do OData** na caixa de URL.
-8. Clique em **OK**.
+8. Selecione **OK**.
 9. Se você não tiver se autenticado no Azure AD para seu locatário por meio do cliente do Power BI Desktop, digite suas credenciais. Para obter acesso aos seus dados, você deve ser autorizado no Azure AD (Azure Active Directory) usando OAuth 2.0.  
     1.  Selecione **Conta organizacional**.  
     2.  Digite seu nome de usuário e senha.  
-    3.  Clique em **Entrar.**  
-    4.  Clique em **Conectar**.  
-10. Clique em **Carregar**.
+    3.  Selecione **Entrar.**  
+    4.  Selecione **Conectar**.  
+10. Selecione **Carregar**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
