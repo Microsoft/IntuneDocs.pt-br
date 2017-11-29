@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,35 +15,37 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS adquiridos por meio de um programa de aquisição com base em volume com o Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A loja de aplicativos iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias de um aplicativo ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias de aplicativos comprados.
+A loja de aplicativos iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa.
 
-O Microsoft Intune ajuda você a gerenciar aplicativos comprados por meio desse programa ao:
+O Microsoft Intune ajuda você a gerenciar várias cópias de aplicativos comprados por meio desse programa:
 
-- Relatar informações de licença da loja de aplicativos
-- Acompanhar quantas licenças você usou
-- Ajudar você a não instalar mais cópias do aplicativo além das que já possui
+- Informações sobre licença de relatórios da app store.
+- Acompanhamento de quantas licenças você usou.
+- Como ajudar você a não instalar mais cópias do aplicativo além das que já possui.
 
 Há dois métodos que você pode usar para atribuir aplicativos comprados por volume:
 
 ### <a name="device-licensing"></a>Licenciamento de dispositivo
 
-Quando você atribui um aplicativo a dispositivos, uma licença do aplicativo é usada e permanece associada ao dispositivo ao qual você a atribuiu.
+Quando você atribui um aplicativo a dispositivos, uma licença do aplicativo é usada e permanece associada ao dispositivo ao qual você a atribuiu. 
+
 Quando você atribuir aplicativos adquiridos por volume em um dispositivo, o usuário final do dispositivo não precisa fornecer uma ID Apple para acessar o armazenamento. 
 
 ### <a name="user-licensing"></a>Licenciamento do usuário
 
 Quando você atribui um aplicativo a um usuário, uma licença de aplicativo é usada e associada ao usuário. O aplicativo pode ser executado em vários dispositivos de propriedade do usuário (com um limite controlado pela Apple).
+
 Quando você atribui um aplicativo comprado por volume aos usuários, cada usuário final deve ter uma ID da Apple válida e exclusiva para acessar a loja de aplicativos.
 
 Além disso, você pode sincronizar, gerenciar e atribuir livros adquiridos na loja do VPP (Apple Volume Purchase Program) com o Intune. Para obter mais informações, consulte [Como gerenciar livros eletrônicos do iOS comprados por meio de um programa de compra por volume](vpp-ebooks-ios.md).
@@ -81,7 +83,7 @@ Use a ID da Apple exclusiva ou o endereço de email do usuário ao configurar m 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 1.  Na folha **Intune**, escolha **Aplicativos móveis** > **Tokens do VPP do iOS** em **Instalação**.
-2.  Na folha de lista de tokens VPP, clique em **Criar**.
+2.  Na folha com a lista de tokens VPP, selecione **Criar**.
 4. Na folha **Criar token VPP**, especifique as seguintes informações:
     - **Arquivo de token do VPP** – Se ainda não tiver feito isso, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Depois de se inscrever, baixe o token do Apple VPP em sua conta e selecione-o aqui.
     - **ID da Apple** – Insira a ID da Apple da conta associada ao programa de compra por volume.
@@ -91,14 +93,11 @@ Use a ID da Apple exclusiva ou o endereço de email do usuário ao configurar m 
 
     - **Tipo de conta do VPP** – Escolha **Comercial** ou **Educação**.
     - **Atualizações automáticas do aplicativo** -Alterne de **Ligado** para **Desligado** para habilitar as atualizações automáticas. Quando habilitado, o Intune atualiza todos os aplicativos adquiridos para o token especificado por meio do serviço Intune quando o dispositivo fizer check-in. detecta as atualizações do aplicativo VPP dentro da loja de aplicativos e as enviará por push automaticamente ao dispositivo quando o dispositivo fizer check-in.
-4. Quando terminar, clique em **Carregar**.
+4. Quando terminar, selecione **Carregar**.
 
 O token é exibido na lista da folha de tokens.
 
 Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer momento selecionando **Sincronizar agora**.
-
-> [!NOTE]
-> O Microsoft Intune sincroniza apenas as informações de aplicativos que estão disponíveis publicamente por meio da iTunes Store. Ainda não há suporte para **aplicativos B2B personalizados para iOS**. Se seu cenário for voltado para esses aplicativos, as informações de aplicativo não serão sincronizadas.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir um aplicativo comprado por volume
 
@@ -134,7 +133,7 @@ O usuário final receberá avisos durante a instalação do aplicativo do VPP em
 
 ## <a name="further-information"></a>Informações adicionais
 
-Para recuperar uma licença, você deve alterar a ação de atribuição para Desinstalar. A licença será recuperada após a desinstalação do aplicativo. Se você remover um aplicativo que foi atribuído a um usuário, o Intune tentará recuperar todas as licenças de aplicativo associadas a esse usuário.
+Para recuperar uma licença, você deve alterar a ação de atribuição para **Desinstalar**. A licença será recuperada após a desinstalação do aplicativo. Se você remover um aplicativo que foi atribuído a um usuário, o Intune tentará recuperar todas as licenças de aplicativo associadas a esse usuário.
 
 Quando um usuário com um dispositivo qualificado tentar instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. É necessário ingressar para continuar a instalação do aplicativo. O convite para ingressar no Apple Volume Purchase Program exige que o usuário possa usar o aplicativo do iTunes no dispositivo iOS. Se você tiver definido uma política para desabilitar o aplicativo da iTunes Store, o licenciamento baseado em usuário para aplicativos VPP não funcionará. A solução é permitir o aplicativo do iTunes removendo a política ou usar o licenciamento baseado em dispositivo.
 

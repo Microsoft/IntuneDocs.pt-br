@@ -5,7 +5,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,26 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Data Warehouse
 
-O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente móvel em constante mudança.
+O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente de dispositivos móveis em constante mudança. O modo de exibição é composto de itens relacionados no tempo.
 
-Os dados extraídos de seu locatário são adicionados a um data warehouse. O warehouse é um conjunto de entidades e relações que são significativas para o tipo de perguntas que você deseja fazer. Por exemplo, é possível examinar o número de instalações de um aplicativo do Android desenvolvido internamente por dia durante a última semana para avaliar se há uma tendência crescente de instalações. A estrutura do data warehouse permite que você se aprofunde no seu ambiente móvel. Por sua vez, as ferramentas analíticas, como o Microsoft Power BI, podem usar o modelo de dados de Data Warehouse para criar visualizações e dashboards dinâmicos.
+## <a name="things-entity-sets"></a>Coisas: Conjuntos de entidades
 
-A estrutura do Intune Data Warehouse usa um modelo de esquema em estrela. Um esquema em estrela organiza fatos na dimensão de tempo. Um *fatos* no contexto do modelo é uma medida quantitativa, como o número de dispositivos, o número de aplicativos ou a hora do registro. Uma *dimensão* no contexto do modelo é um conjunto de categorias e suas relações hierárquicas. Por exemplo, os dias são agrupados em meses e os meses são agrupados em anos. Um modelo de esquema em estrela é otimizado para análise de dados e flexibilidade para que você possa criar os relatórios necessários para entender seu ambiente móvel em evolução.
+O warehouse expõe dados nas seguintes áreas de alto nível:
 
-O warehouse expõe dados nas seguintes categorias de alto nível:
   -  Uso e aplicativos habilitados pela proteção do aplicativo
   -  Inventário, propriedades e dispositivos registrados
   -  Inventário de aplicativos e software
   -  Políticas de conformidade e configuração do dispositivo
 
-**Conjuntos de entidades do modelo de dados**
-
-Conjuntos de entidades são conhecidos como coleções de entidades no modelo de dados. Esses conjuntos contêm entidades que definem os dados coletados no modelo. Cada conjunto de entidades fornece um ponto de acesso para o modelo de dados do Data Warehouse. Encontre detalhes sobre as seguintes categorias de entidades:
+Essas áreas contêm entidades, ou coisas, que são significativas para o ambiente do Intune. Encontre detalhes sobre os conjuntos de entidade nos tópicos a seguir:
 
   -  [Aplicativo](reports-ref-application.md)
   -  [Data](reports-ref-date.md)
@@ -45,4 +42,23 @@ Conjuntos de entidades são conhecidos como coleções de entidades no modelo de
   -  [Política](reports-ref-policy.md)
   -  [Gerenciamento de aplicativo móvel (MAM)](reports-ref-mobile-app-management.md)
   -  [Usuário](reports-ref-user.md)
+  -  [Usuário Atual](reports-ref-current-user.md)
   -  [Associações de Dispositivo de Usuário](reports-ref-user-device.md)
+
+## <a name="relationships-star-schema-model"></a>Relações: modelo de esquema em estrela
+
+O warehouse organiza as entidades em relações que são significativas para o tipo de perguntas que você deseja fazer. Por exemplo, você pode examinar o número de instalações de um aplicativo do Android desenvolvido internamente. A estrutura do data warehouse permite que você se aprofunde no seu ambiente móvel. Por sua vez, as ferramentas analíticas, como o Microsoft Power BI, podem usar o modelo de dados de Data Warehouse para criar visualizações e dashboards dinâmicos.
+
+As entidades e relações usam um modelo de esquema em estrela. Um esquema em estrela correlaciona fatos na dimensão de tempo. Um *fatos* no contexto do modelo é uma medida quantitativa, como o número de dispositivos, o número de aplicativos ou a hora do registro. Tabelas de fatos armazenam muitos dados. Elas podem ficar muito grandes e, portanto, normalmente limitam informações a 30 dias. Um *dimensão* fornece um contexto para os fatos. Onde o fato mede o que aconteceu, as dimensões indicam para quem isso aconteceu. As tabelas de dimensão, por exemplo, a tabela **Usuário**, são menores e podem reter dados por períodos mais longos do que as tabelas de fatos. 
+
+Um modelo de esquema em estrela é otimizado para análise de dados e flexibilidade para que você possa criar os relatórios necessários para entender seu ambiente móvel em evolução.
+
+## <a name="time-daily-snapshots"></a>Tempo: Instantâneos diários
+
+O warehouse segue o downstream, partindo dos seus dados no Intune. O Intune tira um instantâneo diário à meia-noite UTC, e armazena o instantâneo no warehouse. A duração dos instantâneos mantidos varia de acordo com a tabela de fatos. Algumas podem manter por sete dias, outras por 30 dias e algumas por períodos até mais longos.
+
+## <a name="next-steps"></a>Próximas etapas
+
+ - Para saber mais sobre como o data warehouse controla o tempo de vida de um usuário no Intune, veja [Representação de tempo de vida do usuário no Intune Data Warehouse](reports-ref-user-timeline.md).
+ - Saiba mais sobre como trabalhar com os data warehouses em [Criar data warehouse de primeiros dados](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+ - Saiba mais sobre como trabalhar com o Power BI e um data warehouse em [Criar um novo relatório do Power BI importando um conjunto de dados](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
