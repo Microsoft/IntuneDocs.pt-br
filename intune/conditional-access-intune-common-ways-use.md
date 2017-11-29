@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Maneiras comuns de usar o acesso condicional com o Intune
 
@@ -90,7 +90,7 @@ O Intune avalia e gerencia o estado do dispositivo.
 
 O servidor Exchange fornece a API e a infraestrutura para mover os dispositivos para sua quarentena.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Lembre-se de que o usuário que está usando o dispositivo deve ter um perfil de conformidade atribuído a ele para que o dispositivo seja avaliado quanto à conformidade. Se nenhuma política de conformidade for implantada para o usuário, o dispositivo será tratado como em conformidade e nenhuma restrição de acesso será aplicada.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Acesso condicional baseado em controle de acesso à rede
@@ -105,9 +105,9 @@ Os usuários podem ter o acesso permitido ou negado ao tentar acessar os recurso
 
 O Intune em parceria com fornecedores de Defesa contra Ameaças Móveis, que fornece uma solução de segurança para detectar malwares, cavalos de Troia e outras ameaças em dispositivos móveis.
 
-#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Como funciona a integração entre o Intune e a defesa contra ameaças móveis
+#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Como funciona a integração entre o Intune e a Defesa contra Ameaças Móveis
 
-Quando os dispositivos móveis têm o agente de defesa contra ameaças móveis instalado, o agente pode enviar mensagens sobre o estado de conformidade novamente para o Intune, relatando se uma ameaça foi encontrada no próprio dispositivo móvel.
+Quando os dispositivos móveis têm o agente de Defesa contra Ameaças Móveis instalado, o agente pode enviar mensagens sobre o estado de conformidade novamente para o Intune, relatando se uma ameaça foi encontrada no próprio dispositivo móvel.
 
 A integração entre o Intune e a defesa contra ameaças móveis desempenha um fator importante nas decisões sobre o acesso condicional baseadas nos riscos do dispositivo.
 

@@ -5,7 +5,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,30 +14,36 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8088127f5968c0b4f07f83b1dad02ba90f4e6b9a
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2d81d17bc9489900f9d17101db1f1496ba8d55e9
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reference-for-user-entity"></a>Referência para entidade de usuário
 
 A categoria **Usuário** contém a entidade de **Usuário** que define as propriedades de usuário e agente no modelo de dados.
 
-**Usuário**
+## <a name="user"></a>User
 
 A entidade **Usuário** lista todos os usuários do Azure Active Directory (Azure AD) com licenças atribuídas em sua empresa.
+
+A coleção de entidades **Usuário** contém dados do último mês. Esses registros incluem estados do usuário durante o período de coleta de dados, mesmo se o usuário tiver sido removido. Por exemplo, um usuário pode ter sido adicionado ao Intune e, em seguida, removido durante o último mês. Embora esse usuário não esteja presente no momento do relatório, o usuário e o estado estão presentes nos dados do mês anterior. Você pode criar um relatório que mostra a duração da presença histórica do usuário em seus dados.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | UserKey |Identificador exclusivo do usuário no data warehouse – chave alternativa. |123 |
 | UserId |Identificador exclusivo do usuário – semelhante à UserKey, mas é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Endereço de email do usuário. |John@constoso.com |
+| UPN | Nome principal de usuário do usuário. | John@constoso.com |
 | DisplayName |Nome de exibição do usuário. |John |
 | IntuneLicensed |Especifica se este usuário é Intune licenciado ou não. |Verdadeiro/Falso |
-| IsDeleted |Indica se este registro de usuário foi atualizado.  Verdadeiro – esse usuário tem um novo registro com campos atualizados nesta tabela. Falso – o registro mais recente para este usuário. |Verdadeiro/Falso |
-| StartDateInclusiveUTC |Data e hora em UTC em que esse usuário foi criado no data warehouse. |23/11/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Data e hora em UTC em que IsDeleted foi alterado para True. |23/11/2016 12:00:00 AM |
-| IsCurrent |Indica se este registro de usuário é atual ou não no data warehouse. |Verdadeiro/Falso |
-| RowLastModifiedDateTimeUTC |Data e hora em UTC em que esse usuário foi modificado pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
+| IsDeleted | Indica se todas as licenças do usuário expiraram e se o usuário foi, portanto, removido do Intune. Para um único registro, esse sinalizador não é alterado. Em vez disso, um novo registro é criado para um novo estado do usuário. |Verdadeiro/Falso |
+| StartDateInclusiveUTC |Se IsDeleted = FALSE, DateTime em UTC de quando o usuário recebeu uma licença e começou a ter presença no Intune. Se IsDeleted = verdadeiro, DateTime em UTC de quando as licenças do usuário expiraram e foram removidas do Intune. |23/11/2016 12:00:00 AM |
+| EndDateExclusiveUTC |Se IsDeleted = FALSE, DateTime em UTC de quando a licença do usuário expirou e foi removida do Intune. A licença expirou em algum momento durante o dia anterior. Se IsDeleted = TRUE, DateTime em UTC de quando o usuário recuperou uma nova licença e foi recriado no Intune.  |23/11/2016 12:00:00 AM |
+| IsCurrent |Indica se este registro representa o estado mais recente do usuário. Podem existir vários registros para um único usuário, mas somente um deles representa o estado atual.  |Verdadeiro/Falso |
+| RowLastModifiedDateTimeUTC |Data e hora em UTC de quando o registro foi modificado pela última vez no data warehouse  |23/11/2016 12:00:00 AM |
 
+## <a name="next-steps"></a>Próximas etapas
+ - Use a coleção de entidades **Usuário Atual** para limitar os dados de usuário para usuários que estão ativos no momento. Para saber mais, veja [Referência para entidade de usuário atual](reports-ref-current-user.md). 
+ - Para saber mais sobre como o data warehouse controla o tempo de vida de um usuário no Intune, veja [Representação de tempo de vida do usuário no Intune Data Warehouse](reports-ref-user-timeline.md).

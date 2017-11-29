@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android usando criptografia
 
 Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que suas informações estejam protegidas, sua organização está exigindo que você criptografe seu dispositivo Android antes de poder acessar os dados, email ou arquivos da empresa.
 
 > [!Note]
-> Pode ser solicitado que você defina um PIN ou senha antes de criptografar se o suporte de sua empresa exigir.
+> Determinados dispositivos Android, incluindo alguns feitos pela Huawei, e outros pela Vivo e OPPO, não podem ser criptografados. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 Se você cancelar o registro do seu telefone, ele continuará criptografado.
 
@@ -37,9 +37,6 @@ Se você cancelar o registro do seu telefone, ele continuará criptografado.
     (Em alguns telefones, você precisará escolher **Armazenamento** > **Criptografia de armazenamento** ou **Armazenamento** > **Tela de bloqueio e segurança** > **Outras configurações de segurança** para encontrar a opção "Criptografar").
 
 3.  Siga as instruções na tela. Durante a criptografia, seu dispositivo pode ser reiniciado várias vezes.
-
-> [!Note]
-> Alguns dispositivos Android não podem ser criptografados. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>O que fazer se você tiver problemas
 **Problema**: seu dispositivo já foi criptografado, mas um dos seguintes cenários ocorre:

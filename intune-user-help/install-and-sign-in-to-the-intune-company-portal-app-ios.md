@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3036485eef5d7a2b633b51229015d2f53d3fa7
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e entrar no aplicativo Portal da Empresa
 
@@ -34,6 +34,6 @@ O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS pa
 
 3.  Abra o aplicativo Portal da Empresa, digite seu endereço de email e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
 
-    Se você está entrando no aplicativo de Portal da Empresa pela primeira vez e sua empresa ou escola está usando o Intune, você será solicitado a registrar seu dispositivo no Intune. Para registrar-se, siga as etapas em [Registrar seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar seu dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md). Você também pode [entrar usando outro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device). 
+    Se você está entrando no aplicativo de Portal da Empresa pela primeira vez e sua empresa ou escola está usando o Intune, você será solicitado a registrar seu dispositivo no Intune. Para registrar, execute as etapas em [Registrar seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md). Você também pode [entrar usando outro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
