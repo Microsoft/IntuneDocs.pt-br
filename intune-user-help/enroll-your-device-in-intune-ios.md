@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurar o acesso aos recursos de sua empresa
 
@@ -48,7 +48,7 @@ Sua empresa tem muitas informações proprietárias, de email, a arquivos, redes
 |![Solicitação de senha do Azure AD.](./media/ios-0b-cp-enroll-1711.png)|Insira sua senha e toque em **Entrar**.|
 |![Tela inicial do carregamento de recursos da empresa.](./media/ios-1-cp-enroll-1711.png)|Aguarde carregar.|
 |![Termos e Condições.](./media/ios-2-cp-enroll-1711.png)|Leia e **Aceite tudo** dos Termos e Condições.|
-|![Tela Configurar acesso da empresa. Tanto o gerenciamento quanto as configurações necessitam de resolução no momento.](./media/ios-3-cp-enroll-1711.png)|Toque em **Torne o seu dispositivo gerenciado** para iniciar o processo que permitirá ao seu dispositivo acessar os recursos da empresa. Se você não puder fazer isso agora, poderá **Adiar** o processo, mas você não poderá obter emails, documentos e muito mais.|
+|![Tela Configurar acesso da empresa. Tanto o gerenciamento quanto as configurações necessitam de resolução no momento.](./media/ios-3-cp-enroll-1711.png)|Toque em **Iniciar** para iniciar o processo que permitirá ao seu dispositivo acessar os recursos da empresa. Se você não puder fazer isso agora, poderá **Adiar** o processo, mas você não poderá obter emails, documentos e muito mais.|
 |![Tela O que minha empresa pode ver.](./media/ios-4-cp-enroll-1711.png)|**Saiba mais** sobre o que sua empresa pode ver tocando no link na parte inferior. Se não quiser, toque em **Continuar**.|
 |![Tela O que vem a seguir.](./media/ios-5-cp-enroll-1711.png)|Esta tela explica o que está acontecendo na configuração. Você vai passar um tempo no Safari, no aplicativo Ajustes e no aplicativo Portal da Empresa para concluir esse processo. Toque em **Próximo**.|
 |![Carregando a tela após tocar em Próximo em O que vem a seguir.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ Sua empresa tem muitas informações proprietárias, de email, a arquivos, redes
 |![Tela Carregando recursos da empresa.](./media/ios-18-cp-enroll-1711.png)|Aguarde carregar.|
 |![Selecione a categoria de dispositivo no aplicativo portal da empresa.](./media/ios-19-cp-enroll-1711.png)|Escolha a melhor categoria para seu dispositivo. Geralmente, isso tem a ver com quem é proprietário do dispositivo, ou sua localização frequente.|
 |![Categoria selecionada.](./media/ios-20-cp-enroll-1711.png)||
-|![Gerenciamento de dispositivo bem-sucedido; agora é necessário atualizar as configurações.](./media/ios-21-cp-enroll-1711.png)|Seu dispositivo está sendo gerenciado. Provavelmente, ainda há configurações que sua empresa precisa atualizar, como o tamanho da senha. Toque em **Atualizar configurações do dispositivo** para continuar.|
+|![Gerenciamento de dispositivo bem-sucedido; agora é necessário atualizar as configurações.](./media/ios-21-cp-enroll-1711.png)|Seu dispositivo está sendo gerenciado. Provavelmente, ainda há configurações que sua empresa precisa atualizar, como o tamanho da senha. Clique em **Continuar** para prosseguir.|
 |![Confirmação das configurações do dispositivo.](./media/ios-22-cp-enroll-1711.png)|O Portal da Empresa verificará se as configurações precisam ser atualizadas.|
 |![Verificação das configurações concluída, com uma versão incorreta do sistema operacional](./media/ios-23-cp-enroll-1711.png)|O Portal da Empresa fornecerá instruções sobre como você pode corrigir quaisquer problemas com as configurações. Ao terminar de corrigir os problemas, toque em **Verificar Configurações**.|
 |![Tela de carregamento Confirmação das configurações do dispositivo](./media/ios-24-cp-enroll-1711.png)|O dispositivo verificará se as configurações estão seguras o suficiente para acessar os recursos da empresa.|

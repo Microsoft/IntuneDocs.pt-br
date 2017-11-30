@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Android for Work no Microsoft Intune
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
 - **Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.
 - **Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis. Essa capacidade do telefone, às vezes conhecida como agente de confiança, permitirá desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está perto de uma marca NFC). Você pode usar essa configuração para impedir que os usuários configurem o Smart Lock.
+
+## <a name="system-security"></a>Segurança do sistema
+
+ - **Verificação de ameaças em aplicativos**: garanta que a configuração **Verificar Aplicativos** esteja habilitada para perfis pessoais e corporativos.
+
+   > [!Note]  
+   > Essa configuração só funcionará para dispositivos Android O e superior. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
