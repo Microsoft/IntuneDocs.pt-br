@@ -1,5 +1,5 @@
 ---
-title: SDK de Aplicativo do Microsoft Intune para o Guia do Desenvolvedor do iOS
+title: Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 description: "O SDK de Aplicativo do Microsoft Intune para iOS permite incorporar políticas de proteção de aplicativo do Intune – na forma de MAM (gerenciamento de aplicativo móvel) – em seu aplicativo iOS."
 keywords: 
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -95,6 +95,10 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
         > [!NOTE]
         > Para encontrar `PATH_TO_LIB`, selecione o arquivo `libIntuneMAM.a` e escolha **Obter Informações** no menu **Arquivo**. Copie e cole as informações **Onde** (o caminho) na seção **Geral** da janela **Informações**.
 
+    Adicione o pacote de recursos `IntuneMAMResources.bundle` ao projeto arrastando-o para **Copiar Recursos do Pacote** em **Fases de Build**.
+
+    ![SDK de Aplicativos do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. Adicione as seguintes estruturas de iOS ao projeto:
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. Adicione o pacote de recursos `IntuneMAMResources.bundle` ao projeto arrastando-o para **Copiar Recursos do Pacote** em **Fases de Build**.
-
-    ![SDK de Aplicativos do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. Se seu aplicativo móvel definir um nib ou storyboard principal em seu arquivo Info.plist, recorte os campos **Storyboard Principal** ou **Nib Principal**. Em Info.plist, cole esses campos e seus valores correspondentes em um novo dicionário chamado **IntuneMAMSettings** com os seguintes nomes de chave, conforme aplicável:
+4. Se seu aplicativo móvel definir um nib ou storyboard principal em seu arquivo Info.plist, recorte os campos **Storyboard Principal** ou **Nib Principal**. Em Info.plist, cole esses campos e seus valores correspondentes em um novo dicionário chamado **IntuneMAMSettings** com os seguintes nomes de chave, conforme aplicável:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
 
     Você pode exibir o Info.plist em formato bruto (para ver os nomes de chave) clicando com o botão direito do mouse em qualquer lugar do corpo do documento e alterando o tipo de exibição para **Mostrar Chaves/Valores Brutos**.
 
-6. Habilite o compartilhamento de conjunto de chaves (se já não estiver habilitado) escolhendo em **Funcionalidades** em cada destino do projeto e habilitando a opção **Compartilhamento de Conjunto de Chaves**. O compartilhamento de conjunto de chaves é necessário para que você prossiga para a próxima etapa.
+5. Habilite o compartilhamento de conjunto de chaves (se já não estiver habilitado) escolhendo em **Funcionalidades** em cada destino do projeto e habilitando a opção **Compartilhamento de Conjunto de Chaves**. O compartilhamento de conjunto de chaves é necessário para que você prossiga para a próxima etapa.
 
   > [!NOTE]
     > O perfil de provisionamento precisa dar suporte aos novos valores de compartilhamento de conjunto de chaves. Os grupos de acesso do conjunto de chaves devem dar suporte a um caractere curinga. Você pode verificar isso abrindo o arquivo .mobileprovision em um editor de texto, pesquisando por **keychain-access-groups** e garantindo que há um curinga. Por exemplo:
@@ -132,32 +131,31 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
     </array>
     ```
 
-7. Depois que você habilitar o compartilhamento de conjunto de chaves, siga estas etapas para criar um grupo de acesso separado no qual o SDK de Aplicativos do Intune armazenará seus dados. Você pode criar um grupo de acesso do conjunto de chaves usando a interface do usuário ou o arquivo de direitos. Se você estiver usando a interface do usuário para criar o grupo de acesso do conjunto de chaves, certifique-se de seguir as etapas abaixo:
+6. Depois que você habilitar o compartilhamento de conjunto de chaves, siga estas etapas para criar um grupo de acesso separado no qual o SDK de Aplicativos do Intune armazenará seus dados. Você pode criar um grupo de acesso do conjunto de chaves usando a interface do usuário ou o arquivo de direitos. Se você estiver usando a interface do usuário para criar o grupo de acesso do conjunto de chaves, certifique-se de seguir as etapas abaixo:
 
     1. Se seu aplicativo móvel não tiver grupos de acesso do conjunto de chaves definidos, adicione a ID do pacote do aplicativo como o primeiro grupo.
 
     2. Adicione o grupo de conjunto de chaves compartilhado `com.microsoft.intune.mam` aos grupos de acesso existentes. O SDK de Aplicativos do Intune usa esse grupo de acesso para armazenar dados.
 
-    3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
+    3. Adicione `com.microsoft.adalcache` a seus grupos de acesso existentes.
 
-        4. Adicione `com.microsoft.workplacejoin` aos grupos de acesso existentes.
-            ![SDK de Aplicativos do Intune para iOS: compartilhamento de conjunto de chaves](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![SDK de Aplicativo do Intune para iOS: compartilhamento de conjunto de chaves](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. Se você estiver usando o arquivo de direitos para criar o grupo de acesso do conjunto de chaves, precisará acrescentar `$(AppIdentifierPrefix)` no início do arquivo de direito do grupo de acesso de conjunto de chaves. Por exemplo:
+    4. Se você estiver editando o arquivo de direitos diretamente, em vez de usar a interface do usuário do Xcode exibida acima para criar os grupos de acesso do conjunto de chaves, preceda os grupos de acesso do conjunto de chaves com `$(AppIdentifierPrefix)` (o Xcode gerenciará isso automaticamente). Por exemplo:
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > Um arquivo de direitos é um arquivo XML exclusivo para seu aplicativo móvel. Ele é usado para especificar funcionalidades e permissões especiais em seu aplicativo iOS.
+    > Um arquivo de direitos é um arquivo XML exclusivo para seu aplicativo móvel. Ele é usado para especificar funcionalidades e permissões especiais em seu aplicativo iOS. Se o seu aplicativo não tinha um arquivo de direitos anteriormente, habilitar o compartilhamento do conjunto de chaves (etapa 6) deve fazer o Xcode gerar um para seu aplicativo.
 
-8. Se o aplicativo definir esquemas de URL em seu arquivo info.plist, adicione outro esquema com um sufixo `-intunemam` a cada esquema de URL.
+7. Se o aplicativo definir esquemas de URL em seu arquivo info.plist, adicione outro esquema com um sufixo `-intunemam` a cada esquema de URL.
 
-9. Quando o aplicativo define Tipos de Documento no arquivo Info.plist para a matriz "UTIs do Tipo de Conteúdo de Documento" de cada item, adicione uma entrada duplicada para cada cadeia de caracteres com "com.microsoft.intune.mam". Prefixo.
+8. Quando o aplicativo define Tipos de Documento no arquivo Info.plist para a matriz "UTIs do Tipo de Conteúdo de Documento" de cada item, adicione uma entrada duplicada para cada cadeia de caracteres com "com.microsoft.intune.mam". Prefixo.
 
-10. Para aplicativos móveis desenvolvidos no iOS 9 e posterior, inclua todos os protocolos que o aplicativo passar para `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do arquivo Info.plist do aplicativo. Além disso, para cada protocolo listado, adicione um novo protocolo e acrescente `-intunemam` a ele. Você também deve incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
+9. Para aplicativos móveis desenvolvidos no iOS 9 e posterior, inclua todos os protocolos que o aplicativo passar para `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do arquivo Info.plist do aplicativo. Além disso, para cada protocolo listado, adicione um novo protocolo e acrescente `-intunemam` a ele. Você também deve incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
 
-11. Se o aplicativo tiver grupos de aplicativos definidos em seus direitos, adicione esses grupos ao dicionário **IntuneMAMSettings** na chave `AppGroupIdentifiers` como uma matriz de cadeias de caracteres.
+10. Se o aplicativo tiver grupos de aplicativos definidos em seus direitos, adicione esses grupos ao dicionário **IntuneMAMSettings** na chave `AppGroupIdentifiers` como uma matriz de cadeias de caracteres.
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Usando o Intune MAM Configurator Tool
 
