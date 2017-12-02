@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
-            - name: Tela de status do registro
-              href: windows-enrollment-status.md
         - name: Configurar registro do Android
           href: android-enroll.md
         - name: Configurar o registro do iOS
@@ -429,7 +427,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: Configurações do iOS
                   href: app-protection-policy-settings-ios.md
-                - name: Examine os logs de proteção de aplicativo no Navegador Gerenciado
+                - name: Examine os logs de proteção de aplicativo no Managed Browser
                   href: app-protection-policy-settings-log.md
             - name: Validar políticas de proteção do aplicativo
               href: app-protection-policies-validate.md
