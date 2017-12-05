@@ -2,10 +2,10 @@
 title: "Edição antecipada"
 description: 
 keywords: 
-author: brenduns
-ms.author: brenduns
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
-ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
+ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>A edição antecipada do Microsoft Intune – dezembro de 2017
 
@@ -141,42 +141,14 @@ O tipo de aplicativo **integrado** tornará mais fácil para você criar e atrib
 ### <a name="single-sign-on-support-for-ios----1333645---"></a>Suporte para logon único para iOS <!-- 1333645 -->  
 Você poderá usar o Logon Único para usuários do iOS. Os aplicativos iOS que são codificados para exigir credenciais do usuário no conteúdo do Logon Único são compatíveis com essa atualização de configuração de conteúdo. Você também pode usar o UPN e a ID de Dispositivo do Intune para configurar o Nome da entidade e o Realm.
 
-### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>API do inventário de aplicativos iOS 11 para detecção de ameaças móveis <!-- 1391759 -->
-O Intune coleta informações do inventário de aplicativos em dispositivos pessoais e corporativos e as disponibiliza para provedores de Detecção de Ameaça Móvel (MTD) para efetuar o fetch, como Lookout for Work. Você poderá coletar o inventário de aplicativos dos usuários de dispositivos iOS 11+.
-
-**Inventário de aplicativos**  
-Inventários de dispositivos pessoais e corporativos iOS 11+ são enviados para o provedor de serviços de MTD. Os dados de inventário de aplicativos incluem:
-
- - ID do aplicativo
- - Versão de Aplicativo
- - Versão Curta do Aplicativo
- - Nome do Aplicativo
- - Tamanho do Pacote do Aplicativo
- - Tamanho Dinâmico do Aplicativo
- - O Aplicativo é validado ou não
- - O Aplicativo é gerenciado ou não
-
-### <a name="audit-updates----1412961---"></a>Atualizações de auditoria <!-- 1412961 -->  
-A auditoria do Intune fornece um registro das operações de alteração relacionadas ao Intune.  Todas as operações de criação, atualização, exclusão e de tarefa remota são capturadas e mantidas por um ano.  O portal do Azure fornece uma exibição dos últimos 30 dias de dados de auditoria em cada carga de trabalho e pode ser filtrado.  Uma API do Graph correspondente permite a recuperação dos dados de auditoria armazenados para o último ano. 
-
-A auditoria é encontrada no grupo **MONITOR**. Há um item de menu de **Logs de Auditoria** para cada carga de trabalho.   
-
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>Protocolo de texto permitido em Aplicativos gerenciados <!-- 1414050  -->
 Aplicativos gerenciados pelo SDK do Aplicativo do Intune poderão enviar mensagens SMS.
-
-### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>Reiniciar remotamente o dispositivo iOS (somente supervisionado) <!-- 1424595 -->
-Você poderá disparar um dispositivo iOS 10.3+ supervisionado para reiniciar usando uma ação do dispositivo. Para obter mais informações sobre como usar a ação de reinício de dispositivo, consulte [Reiniciar remotamente dispositivos com o Intune](device-restart.md).
-
-> [!Note]  
-> Este comando requer um dispositivo supervisionado e o direito de acesso de **Bloqueio de Dispositivo**. O dispositivo é reiniciado imediatamente. Dispositivos iOS protegidos por senha não serão reconectados a uma rede Wi-Fi após a reinicialização; Após a reinicialização, é possível que eles não se comuniquem com o servidor.
 
 ### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>Bloquear dispositivos macOS gerenciados remotamente com o Intune <!-- 1437691 -->
 Você poderá bloquear um dispositivo macOS perdido e definir um PIN de recuperação de 6 dígitos. Quando bloqueados, a folha de **Visão geral do dispositivo** exibe o PIN até que outra ação do dispositivo seja enviada.
 
 Para obter mais informações, consulte [Bloquear dispositivos gerenciados remotamente com o Intune](device-remote-lock.md).
 
-### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings------1455974-----"></a>Configurações de frequência do relatório da Proteção Avançada contra Ameaças do Windows Defender <!--- 1455974  --->
-O serviço de Proteção Avançada contra Ameaças (WDATP) do Windows Defender permite que os administradores gerenciem a frequência dos relatórios para dispositivos gerenciados. Com a nova opção de **Agilizar a frequência de relatórios de telemetria**, o WDATP coleta dados e avalia os riscos com mais frequência. O padrão para relatórios otimiza a velocidade e o desempenho. Aumentar a frequência de emissão de relatórios pode ser importante para dispositivos de alto risco. Essa configuração pode ser encontrada no perfil **Windows Defender ATP** nas **Configurações do dispositivo**.
 
 ### <a name="assignment-conflict-resolution-has-changed-for-ios-store-apps----1480316---"></a>A resolução de conflitos de atribuição foi alterada para aplicativos da iOS store <!-- 1480316 -->
 Os usuários finais podem perceber alguma alteração na disponibilidade de aplicativos iOS store. No momento, um aplicativo que foi atribuído a dois grupos com um conflito entre **Necessário e Disponível** e **Não Aplicável**, é resolvido para **Necessário e Disponível**. Com a alteração, um aplicativo com este conflito é resolvido para **Não Aplicável**.
@@ -208,7 +180,7 @@ A plataforma Android for Work está bloqueada nas restrições de Tipo de Dispos
 #### <a name="if-you-have-onboarded-android-for-work-enrollment"></a>Se você tiver integrado o registro de Android for Work
 Se você já tiver integrado antes, sua situação dependerá da configuração que escolher:
 
-| Setting | Status de Android for Work na Restrição de Tipo de Dispositivo padrão | Anotações |
+| Configuração | Status de Android for Work na Restrição de Tipo de Dispositivo padrão | Anotações |
 | --- | --- | --- |
 | **Gerenciar todos os dispositivos como Android** | Bloqueado | Todos os dispositivos Android devem se registrar sem o Android for Work. |
 | **Gerenciar dispositivos com suporte como Android for Work** | Permitido | Todos os dispositivos que oferecem suporte ao Android for Work devem ser registrados com Android for Work. |
@@ -218,75 +190,17 @@ Em todos os casos, a norma pretendida é preservada. Nenhuma ação é necessár
 
 Essas alterações começarão a distribuição com a atualização de novembro, mas podem levar tempo para serem executadas em sua conta. Você receberá uma notificação de confirmação no portal do Office 365 quando essas alterações entrarem em vigor para a sua conta.
 
-### <a name="support-for-multiple-network-device-enrollment-service-ndes-connectors----1528104---"></a>Suporte para vários conectores do Serviço de Registro de Dispositivo de Rede (NDES) <!-- 1528104 -->
-O NDES permite a execução de dispositivos móveis sem credenciais de domínio para obter certificados baseados no protocolo SCEP. Com essa atualização, vários conectores NDES terão suporte.
-
-### <a name="new-scep-profile-details-supported----1559808---"></a>Novos detalhes do perfil de SCEP com suporte <!-- 1559808 -->
-Os administradores poderão definir configurações adicionais ao criar um perfil de SCEP em plataformas Android, Windows, iOS e macOS.  Os administradores podem definir o IMEI, o número ou o nome comum incluindo email no formato de nome do assunto.
 
 ### <a name="configure-an-ios-app-pin----1586774---"></a>Configurar um PIN de aplicativo iOS <!-- 1586774 -->
 Em breve, você poderá exigir um PIN para aplicativos iOS determinados. Você pode configurar o requisito e a data de vencimento do PIN em dias por meio do portal do Azure. Quando necessário, um usuário deverá definir e usar um novo PIN antes de receber o acesso a um aplicativo iOS. Apenas os aplicativos iOS que têm a proteção de aplicativo habilitada com o SDK de Aplicativo do Intune oferecerão suporte a esse recurso.
 
-### <a name="retain-data-during-a-factory-reset-----1588489---"></a>Manter dados durante uma redefinição de fábrica <!-- 1588489 -->
-Estamos adicionando o suporte a uma nova funcionalidade de redefinição de Fábrica do Windows. Agora, os administradores puderem especificar se o registro de dispositivo e outros dados fornecidos serão mantidos em um dispositivo após uma redefinição de fábrica. 
- 
-Os seguintes dados são mantidos após a redefinição de fábrica:
-- Contas do usuário associadas ao dispositivo
-- Estado do computador (ingresso no domínio, AADJ)
-- Registro do MDM
-- Aplicativos instalados pelo OEM (aplicativos do Win32 e da loja)
-- Perfil de usuário
-- Dados do usuário de fora do perfil do usuário
-- Logon automático do usuário
- 
-Os dados a seguir não são preservados:
-- Arquivos do usuário
-- Aplicativos instalados pelo usuário (aplicativos do Win32 e da loja)
-- Configurações do dispositivo não padrão 
-
-### <a name="app-install-status-report-now-a-bar-chart----1249446---"></a>O status de instalação do aplicativo agora informa um gráfico de barras <!-- 1249446 -->  
-O relatório de **Status de instalação do aplicativo** acessível para cada aplicativo por meio da lista de **Aplicativos** na carga de trabalho de **Aplicativos móveis** em breve serão renderizados como um gráfico de barras.
-
 ### <a name="add-find-my-iphone-for-personal-devices---1427287--"></a>Adicionar "Encontrar meu iPhone" para dispositivos pessoais <!--1427287-->
 Você poderá exibir se os dispositivos iOS têm o Bloqueio de Ativação ativado. Esse recurso podia ser encontrado anteriormente no portal clássico do Intune.
-
-### <a name="group-assigned-enrollment-restrictions----747598---"></a>Restrições de registro atribuídas pelo grupo <!-- 747598 -->
-Como um administrador do Intune, você poderá criar restrições personalizadas de registro de Tipo de Dispositivo e de Limite do Dispositivo para grupos de usuários.
- 
-O Portal do Azure do Intune permite criar até 25 instâncias de cada tipo de restrição que podem ser atribuídas a grupos de usuários. Restrições atribuídas a grupos substituem as restrições padrão.
- 
-Todas as instâncias de um tipo de restrição são mantidas em uma lista estritamente ordenada. Essa ordem define um valor de prioridade para resolução de conflitos. Um usuário afetado por mais de uma instância de restrição é restringido apenas pela instância com o valor de prioridade mais elevado. Você pode alterar a prioridade de uma determinada instância arrastando-a para uma posição diferente na lista. 
- 
-Essa funcionalidade será lançada com a migração das configurações de Android for Work no menu de registro do Android for Work para o menu de Restrições de Registro. Como esta migração pode levar vários dias, sua conta pode ser atualizada para outras partes do lançamento de novembro antes que você veja uma atribuição de grupo habilitada para Restrições de Registro.
-
-### <a name="windows-10-update-ring-assignments-are-displayed----1621837---"></a>Atribuições de anel de atualização do Windows 10 são exibidas <!-- 1621837 -->
-Quando estiver **solucionando problemas,** para o usuário que estiver sendo exibido, você poderá ver todas as atribuições de anéis de atualização do Windows 10.  
-
-
 
 <!-- the following are present prior to 1711 -->
 
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Os sites da Web do Azure Active Directory podem exibir o Aplicativo Intune Managed Browser e oferecer suporte ao Logon Único para o Managed Browser (Visualização Pública) <!-- 710595 -->   
 Usando o Azure Active Directory (Azure AD), você poderá restringir o acesso a sites da Web em dispositivos móveis para o aplicativo Intune Managed Browser. No Managed Browser, os dados do site da Web permanecerão seguros e separados dos dados pessoais do usuário final. Além disso, o Managed Browser oferecerá suporte a recursos de Logon Único para sites protegidos pelo Azure AD. Entrar no Managed Browser ou usar o Managed Browser em um dispositivo com outro aplicativo gerenciado pelo Intune, permite que o Managed Browser acesse sites corporativos protegidos pelo Azure AD sem que o usuário precise inserir suas credenciais. Essa funcionalidade se aplica a sites como o Outlook Web Access (OWA) e o SharePoint Online, bem como a outros sites corporativos, como os recursos da intranet acessados por meio do Proxy do Aplicativo Azure.
-
-### <a name="troubleshoot-enrollment-issues------746324----"></a>Solucionar problemas de registro  <!--- 746324 --->  
-O espaço de trabalho da Solução de Problemas mostrará problemas de registro do usuário. Os detalhes sobre o problema e as etapas de correção sugeridas podem ajudar os administradores e os operadores de suporte técnico a solucionar problemas. Determinados problemas de registro não são capturados e alguns erros podem não ter as sugestões de correção.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- the following are present prior to 1710 -->
@@ -333,7 +247,7 @@ O aplicativo de Portal da Empresa para Android está adicionando instruções pa
 
 
 ### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Nova ação “Resolver” disponível para dispositivos Android <!---1583480--->
-O aplicativo do Portal da Empresa para Android está apresentando uma ação de “Resolver” na página _Atualizar configurações do dispositivo_. Selecionar essa opção levará o usuário final diretamente para a configuração que está causando a não conformidade do seu dispositivo. O aplicativo do Portal da Empresa para Android atualmente dá suporte a essa ação para as configurações de [senha do dispositivo](/intune-user-help/set-your-pin-or-password-android), [criptografia do dispositivo](/intune-user-help/encrypt-your-device-android), [depuração de USB](/intune-user-help/you-need-to-turn-off-usb-debugging-android) e [Fontes Desconhecidas](/intune-user-help/you-need-to-turn-off-unknown-sources-android). 
+O aplicativo do Portal da Empresa para Android está apresentando uma ação de “Resolver” na página _Atualizar configurações do dispositivo_. Selecionar essa opção levará o usuário final diretamente para a configuração que está causando a não conformidade do seu dispositivo. O aplicativo do Portal da Empresa para Android oferece suporte atualmente a essa ação para as configurações de [senha do dispositivo](/intune-user-help/set-your-pin-or-password-android), [criptografia do dispositivo](/intune-user-help/encrypt-your-device-android), [depuração de USB](/intune-user-help/you-need-to-turn-off-usb-debugging-android), e [Fontes Desconhecidas](/intune-user-help/you-need-to-turn-off-unknown-sources-android). 
 
 
 
