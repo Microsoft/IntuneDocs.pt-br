@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Usar o portal de solução de problemas para ajudar os usuários
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 O portal de solução de problemas permite que os operadores de suporte técnico e os administradores do Intune exibam informações do usuário para atender às solicitações de ajuda do usuário. As organizações que incluem um suporte técnico podem atribuir o **Operador de suporte técnico** a um grupo de usuários. A função de operador de suporte técnico pode usar a folha **Solucionar problemas**.
+
+A folha **Solução de problemas** também mostra problemas de registro do usuário. Os detalhes sobre o problema e as etapas de correção sugeridas podem ajudar os administradores e os operadores de suporte técnico a solucionar problemas. Determinados problemas de registro não são capturados e alguns erros podem não ter as sugestões de correção. 
 
 Para obter etapas de como adicionar uma função de operador de suporte técnico, consulte [RBAC (controle de administração baseado em funções) com o Intune](/intune/role-based-access-control)
 
@@ -33,7 +35,7 @@ Quando um usuário contata o suporte com um problema técnico com o Intune, o op
 - Status do usuário
 - Atribuições
 - Problemas de conformidade
-- O dispositivo não está respondendo
+- Dispositivo não
 - O dispositivo não consegue obter configurações de VPN ou Wi-Fi
 - Falha na instalação do aplicativo
 
@@ -75,7 +77,7 @@ As propriedades dos aplicativos móveis.
 | Propriedade      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nome          | O nome do aplicativo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| SO            | O sistema operacional instalado no dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Sistema operacional            | O sistema operacional instalado no dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Tipo          | Você pode escolher um tipo de atribuição para cada aplicativo.  <br> **Disponível** – Os usuários instalam o aplicativo no site ou aplicativo do Portal da Empresa.  <br> **Não Aplicável** – O aplicativo não é instalado nem é mostrado no Portal da Empresa. <br> **Desinstalar** – O aplicativo é desinstalado dos dispositivos nos grupos selecionados.  <br> **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune. |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
@@ -91,7 +93,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
+| Sistema operacional                 | O sistema operacional instalado no dispositivo.                                                                                       |
 | Versão do SO         | O número de versão do sistema operacional do dispositivo.                                                                                  |
 | Último check-in      | O nome do tipo de dispositivo.                                                                                                     |
 
@@ -130,14 +132,14 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 
 | Propriedade           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nome do Dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
+| Nome do dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
 | Gerenciados por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 | Tipo de ingresso no Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
+| Sistema operacional                 | O sistema operacional instalado no dispositivo.                                                                                       |
 | Versão do SO         | O número de versão do sistema operacional do dispositivo.                                                                                  |
 | Último Check-in      | O nome do tipo de dispositivo.                                                                                                     |
 
@@ -153,7 +155,7 @@ As propriedades das políticas de conformidade.
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atribuição    | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Nome          | O nome do aplicativo.                                                                                                        |
-| SO            | O sistema operacional instalado no dispositivo.                                                                                       |
+| Sistema operacional            | O sistema operacional instalado no dispositivo.                                                                                       |
 | Tipo de política   | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                     |
 
@@ -169,7 +171,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
+| Sistema operacional                 | O sistema operacional instalado no dispositivo.                                                                                       |
 | Versão do SO         | O número de versão do sistema operacional do dispositivo.                                                                                  |
 | Último check-in      | O nome do tipo de dispositivo.                                                                                                     |
 
@@ -198,7 +200,7 @@ As propriedades das políticas de configuração.
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atribuição    | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Nome          | O nome do aplicativo.                                                                                                        |
-| SO            | O sistema operacional instalado no dispositivo.                                                                                       |
+| Sistema operacional            | O sistema operacional instalado no dispositivo.                                                                                       |
 | Tipo de política   | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                     |
 
@@ -214,7 +216,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
+| Sistema operacional                 | O sistema operacional instalado no dispositivo.                                                                                       |
 | Versão do SO         | O número de versão do sistema operacional do dispositivo.                                                                                  |
 | Último check-in      | O nome do tipo de dispositivo.                                                                                                     |
 

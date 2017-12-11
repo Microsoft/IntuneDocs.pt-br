@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -42,7 +42,7 @@ Use essas configurações com uma política de restrição de dispositivo do And
 - **Captura de tela (somente Samsung KNOX)** – Permite que o usuário capture o conteúdo da tela como uma imagem.
 - **Assistente de voz (somente Samsung KNOX)** – Permite usar o software de assistente de voz no dispositivo.
 - **YouTube (somente Samsung KNOX)** – Permite usar o aplicativo do YouTube no dispositivo.
-- **Dispositivos compartilhados** – Configure um dispositivo Samsung KNOX Standard gerenciado como compartilhado. Nesse modo, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.<br>Quando os usuários finais entram, eles têm acesso a aplicativos e, além disso, obtêm todas as políticas aplicadas a eles. Quando os usuários saem, todos os dados do aplicativo são removidos.
+- **Dispositivos compartilhados (apenas Samsung KNOX)** – Configure um dispositivo Samsung KNOX Standard gerenciado como compartilhado. Nesse modo, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.<br>Quando usado juntamente com um perfil de certificado SCEP, esse recurso permite aos usuários finais compartilhar um dispositivo com o mesmo conjunto de aplicativos para todos os usuários, mas com seu próprio certificado de usuário SCEP.  Quando os usuários saem, todos os dados do aplicativo são removidos.  Esse recurso está limitado a aplicativos LOB apenas.
 
 ## <a name="password"></a>Senha
 
