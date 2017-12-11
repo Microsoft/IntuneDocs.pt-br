@@ -1,5 +1,5 @@
 ---
-title: Instalar aplicativos do Office 365 ProPlus para em dispositivos Windows 10 usando o Intune
+title: "Instalar aplicativos do Office 365 em dispositivos móveis usando o Intune"
 titlesuffix: Azure portal
 description: "Saiba como você pode usar o Intune para facilitar a instalação dos aplicativos do Office 365 em dispositivos Windows 10."
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
-Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus 2016 aos dispositivos gerenciados que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar aparecerão como um aplicativo na lista de aplicativos no console do Intune.
+Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus 2016 aos dispositivos gerenciados que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar serão exibidos como uma entrada única na lista de aplicativos no console do Intune.
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -137,7 +137,3 @@ A tabela a seguir lista os códigos de erro comuns que você pode encontrar e se
 ## <a name="next-steps"></a>Próximas etapas
 
 Agora você pode atribuir os aplicativos aos grupos que você escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
-
-             
-
-

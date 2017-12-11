@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -30,32 +30,74 @@ O Intune fornece várias maneiras nas quais você pode monitorar as propriedades
 1. Entre no Portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
 3. Na carga de trabalho **Aplicativos Móveis**, escolha **Aplicativos** no grupo **Gerenciar**.
-     
-    ![Folha de status de instalação do aplicativo.](./media/monitor-apps.png)
-5. Na folha de lista de aplicativos, selecione um aplicativo para você. Você verá a folha <*nome do aplicativo*> **Status de instalação do dispositivo**.
+5. Na folha de lista de aplicativos, escolha um aplicativo. Você verá a folha <*nome do aplicativo*> **Status de instalação do dispositivo**.
 
-O relatório de status de instalação do dispositivo contém as seguintes colunas:
+## <a name="app-overview-blade"></a>Folha de visão geral de aplicativos
 
-1.  **Nome do Dispositivo** O nome do tipo de dispositivo.
-2.  **Nome de Usuário** O nome do usuário.
-3.   **Plataforma** O sistema operacional instalado no dispositivo.
-4.  **Versão** O número de versão do aplicativo.
-5.   **Status** Os possíveis status para os aplicativos são: **Instalado**, **Não Instalado**, **Instalação Pendente** e **Erro**.
-6. **Detalhes do Status** Uma descrição legível do status do aplicativo no dispositivo.
-7. **Último Check-In** quando o dispositivo fez check-in pela última vez no Intune.
+É possível usar a folha <*nome do aplicativo*> **Status de instalação do dispositivo** para examinar os detalhes sobre o status de um aplicativo em seu ambiente.
 
-Em seguida, execute uma das ações a seguir para saber mais sobre seus aplicativos e suas atribuições.
+### <a name="essentials"></a>Essentials
 
-## <a name="general"></a>Geral
+A seção **Fundamentos** contém as seguintes informações sobre o aplicativo:
 
-- **Visão geral** - fornece uma visão geral básica do aplicativo e informações sobre o status de qualquer atribuição para o aplicativo. Você pode escolher um dos gráficos para abrir as folhas **Status de instalação do dispositivo** ou **Status de instalação do usuário** para obter informações mais detalhadas.
+ - **Editor**  
+Editor do aplicativo.
+ - **Sistema operacional**  
+O sistema operacional do aplicativo (Windows, iOS, Android, etc.)
+ - **Criar**  
+A hora em que esta revisão foi criada.
+ - **Atribuído**  
+**Sim** ou **Não** se o aplicativo tiver sido atribuído.
 
-## <a name="manage"></a>Gerenciar
+### <a name="status"></a>Status
+Cada gráfico mostra as contagens para o seguintes status:
 
-- **Propriedades** - permite exibir e alterar informações sobre o aplicativo selecionado. Para saber mais sobre as propriedades do aplicativo, veja [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md).
-- **Atribuições** - fornece informações sobre as atribuições para esse aplicativo. Para obter mais informações, consulte [Como atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
+ - **Instalado**  
+O número de aplicativos instalados.
+ - **Não instalados**  
+O número de aplicativos não instalados.
+ - **Instalação pendente**  
+O número de aplicativos no processo de instalação.
+ - **Falha**  
+O número de instalações com falha.
+ - **Desconhecida**  
+O número de aplicativos com um status desconhecido.
 
-## <a name="monitor"></a>Monitor
+### <a name="device-status"></a>Status do dispositivo
 
-- **Status de instalação do dispositivo** - fornece informações detalhadas para cada dispositivo ao qual você atribuiu o aplicativo selecionado para incluir o nome do dispositivo, o sistema operacional, quando o dispositivo fez check-in por último no Intune e o status da instalação do aplicativo.
-- **Status de instalação do usuário** – Fornece informações detalhadas para o usuário ao qual você atribuiu o aplicativo selecionado, incluindo o número de instalações do aplicativo que o usuário tem em todos os dispositivos e as informações sobre as falhas de instalação.
+Status do dispositivo. Um gráfico de rosca que exibe o status de instalação do aplicativo em dispositivos. Clique no gráfico para abrir uma lista de detalhes sobre o status do dispositivo. A tabela de detalhes inclui as seguintes colunas:
+
+ - **Nome do dispositivo**  
+Nome do dispositivo em plataformas que permitem a nomeação de um dispositivo. Em outras plataformas, o Intune cria um nome de outras propriedades. Esse atributo pode não estar disponível para todos os dispositivos.
+ - **Nome de usuário**  
+O nome do usuário.
+ - **Plataforma**  
+O sistema operacional do dispositivo (Windows, iOS, Android, etc.)
+ - **Versão**  
+O número de versão do aplicativo. Para aplicativos de linha de negócios, é exibido o número de versão completo do aplicativo. O número de versão completo identifica uma versão específica do aplicativo. O número é exibido como _Versão_(_Build_). Por exemplo, 2.2(2.2.17560800)
+ - **Status**  
+O status do aplicativo.
+ - **Detalhes do status**  
+Os detalhes do status.
+ - **Último check-in**  
+Data da última sincronização do dispositivo com o Intune.
+
+
+### <a name="user-status"></a>Status do usuário
+
+Status do usuário. Um gráfico de rosca que exibe o status de instalação do aplicativo para usuários. Clique no gráfico para abrir uma lista de detalhes sobre o status do dispositivo. A tabela de detalhes inclui as seguintes colunas:
+ - **Nome**  
+O nome do usuário no Azure AD.
+ - **Nome de usuário**  
+O nome exclusivo do usuário.
+ - **Instalações**  
+Número de instalações de aplicativos usadas pelo usuário.
+ - **Falhas**  
+Número de instalação com falha pelo usuário.
+ - **Não instalados**  
+Número de aplicativos não instalados pelo usuário.
+
+
+## <a name="next-steps"></a>Próximas etapas
+
+Para saber mais sobre como trabalhar com os dados do Intune, consulte [Usar o Intune Data Warehouse](reports-nav-create-intune-reports.md).

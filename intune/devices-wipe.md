@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remova dispositivos por meio da redefinição de fábrica ou remova os dados da empresa
 
@@ -39,7 +39,21 @@ A **Redefinição de fábrica** restaura um dispositivo para suas configuraçõe
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 3. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
 4. Escolha o nome do dispositivo que você deseja redefinir para as configurações de fábrica.
-5. Na folha que mostra o nome do dispositivo, escolha **Redefinição de fábrica** e selecione **Sim** para confirmá-la.
+5. Na folha que mostra o nome do dispositivo, escolha **Redefinição de fábrica**
+6. Para o Windows 10 versão 1709 ou superior, há uma opção adicional para "Manter o estado do registro e a conta de usuário". 
+    
+    |Mantido por meio de uma redefinição de fábrica|Não mantido|
+    | -------------|------------|
+    |Contas do usuário associadas ao dispositivo|Arquivos do usuário|
+    |Estado do computador \(ingresso no domínio, ingressado no Azure Active Directory)| Aplicativos instalados pelo usuário \(aplicativos do Win32 e da loja)|
+    |Registro do MDM|Configurações do dispositivo não padrão|
+    |Aplicativos instalados pelo OEM \(aplicativos do Win32 e da loja)||
+    |Perfil de usuário||
+    |Dados do usuário de fora do perfil do usuário||
+    |Logon automático do usuário|| 
+    
+         
+7. Escolha **Sim** para confirmar a redefinição de fábrica.
 
 Se o dispositivo estiver ligado e conectado, um comando de redefinição de fábrica levará menos de 15 minutos para ser propagado para todos os tipos de dispositivo.
 

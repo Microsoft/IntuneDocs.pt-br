@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,19 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a2c16483efe2779260275fdadc3182b578da8a2a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 31eb47cbd17b52cc2d338ef5faf461173f7acb96
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-your-windows-device-in-intune"></a>Registrar seu dispositivo Windows no Intune
 
 Se sua empresa ou escola usar o Microsoft Intune, você poderá registrar seu dispositivo Windows para obter acesso a email, arquivos e outros recursos corporativos. Quando você registra os dispositivos, a sua organização pode manter os dados corporativos protegidos. Para saber mais sobre registro, consulte [O que acontece quando você instala o aplicativo do Portal da Empresa e registra seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [O que o suporte da sua empresa pode ver ou não no seu dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+
+> [!NOTE]
+> É necessário acessar o site do Portal da Empresa pelo Microsoft Edge para exibir aplicativos do Windows. Outros navegadores, incluindo o Google Chrome, Mozilla Firefox e Internet Explorer, não são compatíveis com esse tipo de filtragem.
+
 
 Para se registrar, use o link que corresponde ao dispositivo que você está usando:
 
