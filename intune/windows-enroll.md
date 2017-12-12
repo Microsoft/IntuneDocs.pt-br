@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c4c245829a7819c9427a8ebe8ad9e166b58da97
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bf9ae5f05e21fa2ca7be4af08dace5b96315cec3
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-windows-devices"></a>Registrar os dispositivos Windows
 
@@ -32,7 +32,7 @@ Como administrador do Intune, é possível simplificar o registro das seguintes 
 - [Habilitar o registro em massa](windows-bulk-enroll.md) (Azure AD Premium e Designer de Configuração do Windows necessários)
 - [Adicione uma mensagem personalizada](windows-enrollment-status.md) para saudar seus usuários quando eles se registrarem e exibirem o andamento das configurações de política assim que forem aplicadas
 
-Dois fatores determinam como você pode simplificar o registro do dispositivo do Windows:
+Dois fatores determinam como você pode simplificar o registro de dispositivos do Windows:
 
 - **Você usa o Azure Active Directory Premium?** <br>[O Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído no Enterprise Mobility + Security e outros planos de licenciamento.
 - **Quais versões de clientes Windows os usuários registrarão?** <br>Dispositivos Windows 10 podem registrar automaticamente adicionando uma conta corporativa ou escolar. Versões anteriores devem ser registrados usando o aplicativo de Portal da Empresa.
@@ -53,9 +53,9 @@ Os dispositivos que executam a Atualização do Windows 10 para Criadores, e que
 É possível simplificar o registro para os usuários criando um alias DNS (servidor de nomes de domínio) (tipo de registro CNAME) que redireciona automaticamente as solicitações de registro para os servidores do Intune. Se você não criar um registro de recurso DNS CNAME, os usuários que tentarem se conectar ao Intune deverão inserir o nome do servidor Intune durante o registro.
 
 **Etapa 1: Criar um CNAME** (opcional)<br>
-Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site da empresa fosse contoso.com, você criaria um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
+Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-Embora a criação de entradas de DNS de CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME no registro, os usuários deverão inserir manualmente o nome do servidor MDM enrollment.manage.microsoft.com.
+Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME no registro, os usuários deverão inserir manualmente o nome do servidor MDM: enrollment.manage.microsoft.com.
 
 |Tipo|Nome do host|Aponta para|TTL|
 |----------|---------------|---------------|---|
@@ -70,9 +70,9 @@ Se você tiver mais de um sufixo UPN, você precisará criar um CNAME para cada 
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 
-`EnterpriseEnrollment-s.manage.microsoft.com` – Dá suporte ao redirecionamento para o serviço Intune com o reconhecimento de domínio a partir do nome de domínio do email
+`EnterpriseEnrollment-s.manage.microsoft.com` – dá suporte ao redirecionamento para o serviço Intune com reconhecimento de domínio por meio do nome de domínio do email
 
-As alterações nos registros DNS podem levar até 72 horas para serem propagadas. Você não pode verificar a alteração do DNS no Intune até que o registro DNS seja propagado.
+Alterações em registros DNS podem levar até 72 horas para serem propagadas. Você não pode verificar a alteração do DNS no Intune até que o registro DNS seja propagado.
 
 **Etapa 2: Verifique o CNAME** (opcional)<br>
 No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**. Na folha do Intune, escolha **Registrar dispositivos** > **Registro do Windows**. Digite a URL do site da empresa na caixa **Especificar um nome de domínio verificado** e escolha **Testar Detecção Automática**.
@@ -89,4 +89,4 @@ Para obter mais informações sobre as tarefas do usuário final, consulte [Recu
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Considerações ao gerenciar dispositivos Windows usando o Intune no Azure](/intune-classic/deploy-use/intune-on-azure.md).
+- [Considerações ao gerenciar dispositivos Windows usando o Intune no Azure](/intune-classic/deploy-use/intune-on-azure).

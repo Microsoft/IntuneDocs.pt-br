@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cdcad8e7265c72312663ce45056e1d42b7379699
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a64a8c6f0f616b0e236cf063b396eae3106ca445
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Ainda não há suporte para a versão do sistema operacional de seu dispositivo Windows
 
 Com o ritmo acelerado do desenvolvimento da tecnologia, às vezes, seu dispositivo pode estar à frente do que o suporte de sua empresa teve a oportunidade de testar. É possível que a versão mais nova do Windows não funcione com algumas ferramentas de sua empresa. 
 
-Será necessário entrar em contato com o suporte de sua empresa para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Será necessário entrar em contato com o suporte de sua empresa para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

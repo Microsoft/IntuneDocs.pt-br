@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Redefinir seu dispositivo pelo site do Portal da Empresa
 
-Se o dispositivo for perdido ou roubado, talvez seja necessário redefini-lo para suas configurações padrão de fábrica para evitar acesso não autorizado aos seus dados. Também é possível redefinir seu dispositivo remotamente usando o [site do Portal da Empresa](https://portal.manage.microsoft.com). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no Intune. Você pode usar esse site para fazer a maioria das mesmas tarefas que faz usando o aplicativo de Portal da Empresa.
+Se o dispositivo for perdido ou roubado, talvez seja necessário redefini-lo para suas configurações padrão de fábrica para evitar acesso não autorizado aos seus dados. Também é possível redefinir seu dispositivo remotamente usando o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no Intune. Você pode usar esse site para fazer a maioria das mesmas tarefas que faz usando o aplicativo de Portal da Empresa.
 
 Se você redefinir este dispositivo, ele não será mais listado no Portal da Empresa e será redefinido para as configurações padrão de fábrica.
 
@@ -33,7 +33,7 @@ Se você redefinir este dispositivo, ele não será mais listado no Portal da Em
 
 Para redefinir o dispositivo:
 
-1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com), toque no botão __Menu__ e, em seguida, selecione __Meus dispositivos__.
+1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __Menu__ e, em seguida, selecione __Meus dispositivos__.
 
 2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja renomear.
 
@@ -47,4 +47,4 @@ Para redefinir o dispositivo:
 
 O dispositivo foi redefinido.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
