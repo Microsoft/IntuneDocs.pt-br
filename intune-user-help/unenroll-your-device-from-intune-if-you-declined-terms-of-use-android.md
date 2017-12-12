@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d96619693c879d7e3041b6554363bea58f6792a5
-ms.sourcegitcommit: 659fe1b08eb7f02bc7eaed6b9e21a95fa1ef45b0
+ms.openlocfilehash: fda300649da30dc7f41469804bc60eb5ca1703ae
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Cancelar o registro do dispositivo se você tiver recusado os “Termos de Uso”
 
@@ -40,4 +40,4 @@ Para cancelar o registro do seu dispositivo do Intune e desinstalar o aplicativo
 
     Agora você pode desinstalar o aplicativo Portal da Empresa.
 
-Ainda precisa de ajuda? Entre em contato com o suporte de sua empresa (consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.
+Ainda precisa de ajuda? Entre em contato com o suporte de sua empresa (consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.

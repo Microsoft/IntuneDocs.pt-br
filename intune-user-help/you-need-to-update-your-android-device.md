@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5ee663c6fe5e2f90bd1a92ef32ad747d72515f13
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 3d16c46305ce373f30254c69cb10de08382c98b2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-update-your-android-device"></a>É necessário atualizar seu dispositivo Android
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 09/28/2017
 
 Atualize seu dispositivo Android tocando em **Configurações** > **Sobre o telefone**. Na seção __Configurações__, toque em __Verificar Atualizações__ e instale a atualização disponível.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
