@@ -14,11 +14,11 @@ ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 288feedffe36794ab6e1727165cbac2c5e2a9fe8
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1bff6a17a74de310833b9d19afd471afd0afc504
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Resolver uma ameaça encontrada por um aplicativo de Defesa contra ameaças móveis
 
@@ -37,5 +37,5 @@ Se você instalou um aplicativo que a Defesa contra Ameaças Móveis considera u
 
 Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e a outros dados corporativos ou de estudante imediatamente. Se ignorar a solicitação para desinstalar o aplicativo, você perderá acesso ao email e aos dados da empresa até que desinstale o aplicativo.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 

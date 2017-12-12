@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a91b167911d203cd3bd1e7645e5cacbc2eb6534
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6859bb6f8fd93259ebbae63484bf0c53602592ea
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Seu dispositivo Android tem raiz e você não pode se conectar
 
@@ -32,6 +32,6 @@ Há algumas maneiras comuns pelas quais o dispositivo pode ter se tornado com ra
 
 - Talvez você tenha instalado um aplicativo em seu dispositivo que o software de detecção de raiz considera um risco à segurança. Se você vir essa mensagem imediatamente após instalar um aplicativo, tente desinstalá-lo.
 
-- O fabricante do dispositivo instalou um software no seu dispositivo que o software de detecção de raiz considera um risco à segurança. Nesse caso, é necessário entrar em contato com o suporte de sua empresa para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+- O fabricante do dispositivo instalou um software no seu dispositivo que o software de detecção de raiz considera um risco à segurança. Nesse caso, é necessário entrar em contato com o suporte de sua empresa para obter ajuda. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 Se você mesmo tiver colocado raiz no dispositivo, será necessário reverter o processo e restaurar o estado sem raiz do dispositivo.

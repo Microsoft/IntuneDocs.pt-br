@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
 
@@ -29,7 +29,7 @@ Obter acesso a aplicativos, dados e recursos da sua organização facilita o seu
 > [!NOTE]
 > É possível encontrar instruções para registrar dispositivos macOS em versões anteriores do macOS [aqui](enroll-your-device-in-intune-macos-legacy.md).
 
-1. Em seu __Encaixe__, localize __Safari__ e abra uma nova janela, em seguida abra o [site de Portal da Empresa](https://portal.manage.microsoft.com).
+1. Em seu __Encaixe__, localize __Safari__ e abra uma nova janela, em seguida abra o [site de Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 2. Faça logon no Portal da Empresa com sua conta corporativa ou de estudante.
 
@@ -62,4 +62,4 @@ Obter acesso a aplicativos, dados e recursos da sua organização facilita o seu
 
 11. O Mac começará a ser registrado no gerenciamento. Poderá ser solicitado que você forneça informações de logon do computador durante esse tempo. Esse processo de registro pode levar alguns minutos. Durante esse tempo, você pode fazer outras coisas em seu computador. Uma mensagem será exibida quando a Instalação do Acesso da Empresa for concluída para informá-lo que ela já terminou.
 
-Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
