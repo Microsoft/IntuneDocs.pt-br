@@ -2,9 +2,9 @@
 title: SDK de Aplicativo do Microsoft Intune para o Guia do Desenvolvedor do iOS
 description: "O SDK de Aplicativo do Microsoft Intune para iOS permite incorporar políticas de proteção de aplicativo do Intune – na forma de MAM (gerenciamento de aplicativo móvel) – em seu aplicativo iOS."
 keywords: 
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikre
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d7b22c871ed1e62bfdc148f30fb832786baf294
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 6ff0e98c710676c257822c14661e6908849ae053
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -149,7 +149,7 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
     > [!NOTE]
     > Um arquivo de direitos é um arquivo XML exclusivo para seu aplicativo móvel. Ele é usado para especificar funcionalidades e permissões especiais em seu aplicativo iOS. Se o seu aplicativo não tinha um arquivo de direitos anteriormente, habilitar o compartilhamento do conjunto de chaves (etapa 6) deve fazer o Xcode gerar um para seu aplicativo.
 
-7. Se o aplicativo definir esquemas de URL em seu arquivo Info.plist, adicione outro esquema com um sufixo `-intunemam` a cada esquema de URL.
+7. Se o aplicativo definir esquemas de URL em seu arquivo info.plist, adicione outro esquema com um sufixo `-intunemam` a cada esquema de URL.
 
 8. Quando o aplicativo define Tipos de Documento no arquivo Info.plist para a matriz "UTIs do Tipo de Conteúdo de Documento" de cada item, adicione uma entrada duplicada para cada cadeia de caracteres com "com.microsoft.intune.mam". Prefixo.
 

@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0103eb02cd169a224624d46d93645861f7bbbd47
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 43460cb18681c47e14c89c8dbeb70a4ae006eb7d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
-Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](https://portal.manage.microsoft.com) para redefini-la. Você pode usar o site do Portal da Empresa para gerenciar computadores e dispositivos que você registrou no Intune e para realizar a maioria das mesmas tarefas que você pode fazer quando usa o aplicativo de Portal da Empresa.
+Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para redefini-la. Você pode usar o site do Portal da Empresa para gerenciar computadores e dispositivos que você registrou no Intune e para realizar a maioria das mesmas tarefas que você pode fazer quando usa o aplicativo de Portal da Empresa.
 
 > [!NOTE]
 > É possível que você não veja o botão Redefinir Senha no site do Portal da Empresa se utilizar um dispositivo corporativo registrado. Se não ver, será necessário entrar em contato com suporte de sua empresa para redefinir a senha para você.
 
 Para redefinir sua senha:
 
-1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/intune/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
+1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/intune/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
 
 2. Na página __Meus Dispositivos__, selecione o nome do dispositivo cuja senha você deseja redefinir.
 
@@ -68,4 +68,4 @@ Para redefinir sua senha:
 
 Para ver uma notificação confirmando que sua senha foi redefinida com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -14,11 +14,11 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 6cfc144b188b1701a2e5e599af43d12c98d48496
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver uma ameaça encontrada pelo Lookout for Work
 
@@ -34,7 +34,7 @@ Se houver um vírus ou outra ameaça de segurança em seu dispositivo registrado
 
 ![Mensagem de erro do Lookout for Work com um link para o site do Portal da Empresa](./media/mtd-go-to-device-management-portal-android.png)
 
-Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](https://portal.manage.microsoft.com), no qual você verá instruções sobre como corrigir o problema.
+Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), no qual você verá instruções sobre como corrigir o problema.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Exemplo de um aplicativo visto pelo Lookout for Work como uma ameaça
 
@@ -46,5 +46,5 @@ Se vir algo assim, toque no nome do aplicativo exibido na parte superior da tela
 
 Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e a outros dados corporativos ou de estudante imediatamente. Se ignorar a solicitação para desinstalar o aplicativo, você perderá acesso ao email e aos dados da empresa até que desinstale o aplicativo.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 

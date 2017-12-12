@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6444c129869db467b582593677b20cd4de8f319d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar logs para o suporte de sua empresa usando um cabo USB
 
 Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empresa em seu dispositivo Android, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
 
 > [!Note]
-> Antes de começar, verifique se você tem o endereço de email do suporte de sua empresa. Encontre-o no [site do Portal da Empresa](https://portal.manage.microsoft.com) ou no aplicativo Portal da Empresa.
+> Antes de começar, verifique se você tem o endereço de email do suporte de sua empresa. Encontre-o no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) ou no aplicativo Portal da Empresa.
 
 1.  Na tela do erro, toque em **Enviar Informações**. Quando vir uma mensagem perguntando qual método você deseja usar para enviar os logs, escolha a opção que salvará os arquivos em seu dispositivo.
 
@@ -37,4 +37,4 @@ Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empre
 
 4.  Selecione os arquivos e anexe-os a um email. Envie este email para o suporte de sua empresa.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

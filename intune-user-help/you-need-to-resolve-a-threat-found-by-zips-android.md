@@ -14,11 +14,11 @@ ms.assetid: 9ffbb656-93cd-4e0b-96c0-c5038cd2cf31
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 62bcd106b4a75609436ef3a472262a6970daf1b8
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 95d6e4d52349e3e6527027fa8074cc92e54b0ca7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Você precisa resolver uma ameaça encontrada pelo Zimperium zIPS
 
@@ -30,7 +30,7 @@ Para corrigir o problema, abra o aplicativo Zimperium zIPS e siga as instruçõe
 
 Se houver um vírus ou outra ameaça à segurança em seu dispositivo registrado e você tentar acessar o email ou os arquivos da empresa, uma mensagem do Zimperium zIPS o alertará para realizar uma ação.
 
-Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](https://portal.manage.microsoft.com), onde você poderá seguir as instruções sobre como corrigir o problema.
+Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), onde você poderá seguir as instruções sobre como corrigir o problema.
 
 ## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Exemplo de um aplicativo visto pelo Zimperium zIPS como uma ameaça
 
@@ -38,4 +38,4 @@ Se você tiver instalado um aplicativo que o Zimperium zIPS considera uma ameaç
 
 Quando isso acontecer, desinstale o aplicativo para acessar o email e dados da empresa imediatamente. Se não desinstalar o aplicativo, você perderá o acesso ao email e aos dados até que desinstale o aplicativo.
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

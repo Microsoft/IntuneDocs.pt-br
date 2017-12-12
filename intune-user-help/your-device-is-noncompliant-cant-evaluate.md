@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d61887174830c9892c854d7b067fafe6fc50da59
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 31e491384b4605f6a5e5ce9a04b258f3cef93671
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-device-is-noncompliant"></a>Seu dispositivo está fora de conformidade
 
@@ -28,4 +28,4 @@ Seu dispositivo não está em conformidade com, pelo menos, uma das políticas d
 
 No aplicativo Portal da Empresa, toque em **Verificar Conformidade**. O aplicativo Portal da Empresa informará a você o que está causando a não conformidade do dispositivo.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4034e3848f49b13fc675f44c44ca1e80cf1e3568
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
 
@@ -32,4 +32,4 @@ Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empre
 |Seu dispositivo pode acessar somente o email da empresa|**Windows Phone 8.1**<br />Seu dispositivo não aparecerá mais no Portal da Empresa, sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.<br /><br />**Windows 7 ou Windows Vista**<br />Você não poderá redefinir um computador que esteja executando o Windows 7 ou anterior e seja usado somente para email.<br /><br />**Windows 8.1 e Windows 8**<br />Seu dispositivo não aparecerá mais no Portal da Empresa, sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.|
 |PCs e laptops|**Windows 8.1 e Windows 8**<br />Você não pode redefinir um computador que esteja executando o Windows 8 ou o Windows 8.1, a menos que ele seja usado somente para email.<br /><br />**Windows 7 ou Windows Vista**<br />Não será possível redefinir um computador que esteja executando o Windows 7 ou anterior.|
 
-Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
