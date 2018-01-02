@@ -3,8 +3,8 @@ title: "Configurações de restrições de dispositivo do Intune para iOS"
 titleSuffix: Azure portal
 description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos iOS."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo iOS no Microsoft Intune
 
@@ -41,7 +41,7 @@ Isso também se aplica às configurações acessadas no aplicativo de configura�
 - **Modificação das configurações de notificação (somente supervisionado)** – Permitir que o usuário altere as configurações de notificação do dispositivo.
 - **Modificação do papel de parede (somente supervisionado)** – Permitir que o usuário altere o papel de parede do dispositivo.
 - **Modificação das configurações de aplicativo de confiança da empresa** – Permitir que o usuário opte por confiar em aplicativos que não foram baixados da loja de aplicativos.
-- **Alterações de perfil de configuração** – Permitir que o usuário instale perfis de configuração.
+- **Alterações de perfil de configuração (somente supervisionado)** – permitem que o usuário instale perfis de configuração.
 - **Bloqueio de Ativação (somente supervisionado)** – Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.
 
 ## <a name="configurations-requiring-supervision"></a>Configurações que exigem supervisão

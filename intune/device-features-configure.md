@@ -3,10 +3,10 @@ title: "Definir as configurações de recurso de dispositivo do Intune"
 titleSuffix: Azure portal
 description: Saiba como usar o Intune para configurar recursos nos dispositivos gerenciados.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2723bfc0adecd9b6265b4af43e6fe185882b5e
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Como definir as configurações de recurso de dispositivo no Microsoft Intune
 
@@ -40,18 +40,19 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações. No momento, é possível escolher uma das seguintes plataformas para os recursos do dispositivo:
     - **iOS**
     - **macOS**
-6. Na lista suspensa do **Tipo de perfil**, escolha **Recursos do dispositivo**. 
+6. Na lista suspensa **Tipo de perfil**, escolha **Recursos do dispositivo**. 
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do AirPrint para iOS e MacOS](air-print-settings-ios-macos.md)
     - [Configurações do AirPlay para iOS](airplay-settings-ios.md)
     - [Configurações do layout da Tela inicial para iOS](home-screen-settings-ios.md)
     - [Configurações de notificação de aplicativos para iOS](app-notification-settings-ios.md)
     - [Definições de configuração de dispositivo compartilhado para iOS](shared-device-settings-ios.md)
+    - [Configure o Intune para Logon Único de dispositivo iOS](sso-ios.md)
     - [Configurações de filtro de conteúdo da Web para iOS](web-content-filter-settings-ios.md)
 
-8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
+8. Quando terminar, volte para a folha **Criar Perfil** e clique em **Criar**.
 
-O perfil será criado e aparecerá na folha da lista de perfis.
+O perfil é criado e exibido na folha da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
 

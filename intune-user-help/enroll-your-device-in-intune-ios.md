@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurar o acesso aos recursos de sua empresa
 
@@ -57,7 +57,7 @@ Sua empresa tem muitas informações proprietárias, de email, a arquivos, redes
 |![O Perfil é aberto em Ajustes.](./media/ios-9-cp-enroll-1711.png)|Toque em **Instalar**.|
 |![Instalando a caixa de diálogo modal do perfil na parte inferior da tela.](./media/ios-10-cp-enroll-1711.png)|Toque em **Instalar**.|
 |![Tela de carregamento O perfil está sendo instalado.](./media/ios-11-cp-enroll-1711.png)|Aguarde carregar.|
-|![Tela de aviso de gerenciamento de perfil.](./media/ios-12-cp-enroll-1711.png)|Este aviso, escrito pela Apple, fala mais sobre os tipos de ações que podem ser realizadas em um dispositivo sob gerenciamento. Saiba mais sobre [quais informações sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![Tela de aviso de gerenciamento de perfil.](./media/ios-12-cp-enroll-1711.png)|Este aviso, escrito pela Apple, fala mais sobre os tipos de ações que podem ser realizadas em um dispositivo sob gerenciamento. Saiba mais sobre [quais informações sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
 |![Solicitação do sistema sobre a confiança no gerenciamento remoto.](./media/ios-13-cp-enroll-1711.png)|Toque em **Confiar** para permitir que sua empresa gerencie informações corporativas e configurações em seu dispositivo.|
 |![Tela de carregamento Concluindo a instalação do perfil.](./media/ios-14-cp-enroll-1711.png)|Aguarde carregar.|
 |![Tela Perfil instalado.](./media/ios-15-cp-enroll-1711.png)|Seu perfil está instalado, e as informações corporativas e configurações do seu dispositivo estão muito próximas de serem gerenciadas.|
@@ -75,4 +75,4 @@ Sua empresa tem muitas informações proprietárias, de email, a arquivos, redes
 > [!Note]
 > Talvez ainda haja mais algumas etapas para concluir antes que o dispositivo esteja totalmente gerenciado. Saiba mais sobre como [registrar seu dispositivo usando o gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se sua organização estiver usando o Programa de registro de dispositivos da Apple, descubra mais [aqui](enroll-your-device-dep-ios.md).
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
