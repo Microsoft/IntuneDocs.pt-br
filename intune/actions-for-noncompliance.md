@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>Automatizar ações para falta de conformidade
 
@@ -27,7 +27,7 @@ As **ações para falta de conformidade** permitem que você configure uma sequ�
 
 Existem dois tipos de ações:
 
--   **Notificar usuários finais por email**: você pode personalizar a notificação por email antes de enviá-la ao usuário final. O Intune oferece a personalização do assunto, do corpo da mensagem, incluindo o logotipo da empresa, das informações de contato e de destinatários adicionais.
+-   **Notificar usuários finais por email**: você pode personalizar a notificação por email antes de enviá-la ao usuário final. O Intune oferece a personalização do assunto, do corpo da mensagem, incluindo o logotipo da empresa e das informações de contato.
 
 -   **Marcar dispositivos como fora de conformidade**: você pode determinar um agendamento do número de dias para que o dispositivo seja marcado como fora de conformidade. Pode ser imediatamente, mas você também pode fornecer ao usuário um período de cortesia para que ele fique em conformidade com as políticas de conformidade do dispositivo.
 
