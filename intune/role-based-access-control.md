@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>RBAC (controle de administração baseada em funções) com o Intune
 
@@ -36,7 +36,7 @@ Começando no novo Portal do Azure, o **Azure AD (Azure Active Directory)** forn
 
 - **Administrador Global:** os usuários com essa função têm acesso a todos os recursos administrativos do Azure AD, bem como a serviços federados ao Azure AD, como o Exchange Online, SharePoint Online e Skype for Business Online. A pessoa que se inscreve no locatário do Azure AD se torna um administrador global. Somente os administradores globais podem atribuir outras funções de administrador do Azure AD. Pode haver mais de um administrador global na sua organização. Os administradores globais podem redefinir a senha de qualquer usuário e de todos os outros administradores.
 
-- **Administrador de Serviços do Intune:** os usuários com essa função têm permissões globais no Intune quando o serviço está presente. Além disso, essa função fornece a capacidade de gerenciar usuários, dispositivos e criar e gerenciar grupos.
+- **Administrador de Serviços do Intune:** os usuários com essa função têm permissões globais no Intune quando o serviço está presente. Ainda, além de quaisquer restrições substitutas do Azure, essa função permite de gerenciar usuários, dispositivos e criar e gerenciar grupos do Intune.
 
 - **Administrador de Acesso Condicional:** os usuários com essa função só têm permissões para exibir, criar, modificar e excluir as políticas de acesso condicional.
 

@@ -3,10 +3,10 @@ title: "Introdução aos aplicativos"
 titlesuffix: Azure portal
 description: "Localize e adicione aplicativos em dispositivos para permitir que os funcionários realizem seus trabalhos."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5c12c988f1181887c10f6ed14353365546e743b
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: bb02c362f056c454f4d141ce7ae20b9c3ca8035d
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="get-started-with-adding-apps"></a>Introdução à adição de aplicativos
 
@@ -36,11 +36,12 @@ Acompanhe um dos métodos de implantação de aplicativos mais rápidos existent
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Usando **Pesquisar recursos**, pesquise **Intune**.
 3. Selecione **Aplicativos Móveis** e selecione **Aplicativos**.
-4. Selecione **Adicionar** e **Aplicativo da loja iOS** como o **Tipo de aplicativo**.
-5. Na caixa de texto, pesquise um aplicativo para atribuir ao dispositivo. Escolha o aplicativo e selecione **OK**.
-6. Na folha **Adicionar aplicativo**, selecione **Informações do aplicativo** e verifique se todas as informações do aplicativo foram populadas. Você pode adicionar outros detalhes opcionais para ajudar a organizar este aplicativo, como **Proprietário**, **Notas**, **Desenvolvedor** e uma **URL de Privacidade** para a política de privacidade da sua empresa.
-7. Verifique se você selecionou Sim para Exibir este aplicativo em destaque no Portal da Empresa e selecione OK.
-8. Selecione **Adicionar** para adicionar o aplicativo. Isso levará você para a **Visão geral** do aplicativo. Escolha **Atribuições** e clique em **Selecionar grupos** atribuí-lo ao seu grupo de teste. Deixe o aplicativo **Disponível** para download. O aplicativo deverá aparecer como uma **Aplicativo em Destaque** no seu dispositivo de teste.
+4. Selecione **Adicionar** e, em seguida, selecione **iOS** no **aplicativo Store** como o **Tipo de aplicativo**.
+5. Escolha **Selecionar aplicativo** para exibir a folha **Pesquisar App Store**.
+6. Na caixa de texto, pesquise um aplicativo para atribuir ao dispositivo. Escolha o aplicativo e, em seguida, clique em **Selecionar**.
+7. Na folha **Adicionar aplicativo**, selecione **Informações do aplicativo** e verifique se todas as informações do aplicativo foram populadas. Você pode adicionar outros detalhes opcionais para ajudar a organizar este aplicativo, como **Proprietário**, **Notas**, **Desenvolvedor** e uma **URL de Privacidade** para a política de privacidade da sua empresa.
+8. Verifique se você selecionou **Sim** para **Exibir este aplicativo em destaque no Portal da Empresa** e selecione **OK**.
+9. Selecione **Adicionar** na folha **Adicionar aplicativo** para adicionar o aplicativo. Isso levará você para a **Visão geral** do aplicativo. Escolha **Atribuições** e clique em **Selecionar grupos** atribuí-lo ao seu grupo de teste. Deixe o aplicativo **Disponível** para download. O aplicativo deverá aparecer como uma **Aplicativo em Destaque** no seu dispositivo de teste.
 
 ## <a name="learn-more"></a>Saiba mais
 

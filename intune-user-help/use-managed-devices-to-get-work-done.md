@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos gerenciados para realizar o trabalho
 O Microsoft Intune é um software que permite às organizações gerenciar dispositivos (como smartphones, tablets e computadores), aplicativos e outros recursos corporativos como email. Isso concede aos funcionários acesso às suas informações de trabalho de praticamente qualquer lugar em quase qualquer dispositivo, ajudando a proteger informações corporativas.
@@ -34,7 +34,7 @@ O suporte da sua empresa pode ver informações relevantes ao trabalho, mas não
 Você pode obter o Portal da Empresa de duas diferentes maneiras:
 
 - Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o suporte de sua empresa também pode instalá-lo para você.
-- Acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com) que o suporte da empresa configurou.
+- Acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) que o suporte da empresa configurou.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre o aplicativo e o site?
 Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. Algumas tarefas que você pode fazer são:
@@ -60,8 +60,9 @@ Quando você adiciona um computador ou dispositivo ao Portal da Empresa, um soft
 Para saber mais sobre o que o suporte de sua empresa pode e não pode ver no seu dispositivo, use o link que corresponde ao tipo de dispositivo que você está usando:
 
 - [Instalando o aplicativo Portal da Empresa para Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Instalando o aplicativo do Portal da Empresa para iOS e macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Instalando o aplicativo Portal da Empresa para Windows](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Instalação do aplicativo Portal da Empresa para iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Instalação do aplicativo Portal da Empresa para macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Instalando o aplicativo Portal da Empresa para Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Que tipo de computadores ou dispositivos você pode adicionar ao Portal da Empresa?
 -   Dispositivos da Apple usando macOS (como MacBook e iMac) e usando iOS (como iPhone e iPad)
@@ -78,7 +79,8 @@ Você pode remover ou redefinir um computador ou dispositivo do Portal da Empres
 Quando você *remove* um computador ou dispositivo do Portal da Empresa, você está cancelando o registro de seu dispositivo do Intune. Uma vez que o registro for cancelado, você não poderá acessar o Portal da Empresa por meio desse dispositivo e alguns dados da empresa podem ser removidos do seu dispositivo. Para ver como remover seu dispositivo do Portal da Empresa, escolha um dos seguintes links:
 
 - [Cancelando o registro do seu dispositivo Android](unenroll-your-device-from-intune-android.md)
-- [Cancelando o registro do seu dispositivo iOS ou macOS](unenroll-your-device-from-intune-ios.md)
+- [Cancelando o registro do dispositivo iOS](unenroll-your-device-from-intune-ios.md)
+- [Cancelar o registro do seu dispositivo macOS](unenroll-your-device-from-intune-macos.md)
 - [Cancelando o registro do seu dispositivo Windows](unenroll-your-device-from-intune-windows.md)
 
 Quando você *redefine* um computador ou dispositivo, o Portal da Empresa tenta redefinir seu computador ou dispositivo para as configurações padrão do fabricante. Redefinir o dispositivo remove todos os dados pessoais e corporativos do dispositivo! Se você perdeu seu dispositivo, você poderá redefini-lo remotamente pelo site do Portal da Empresa.
@@ -95,6 +97,7 @@ A Microsoft recomenda que você tente primeiro ver se consegue corrigir o proble
 
 - [Corrigir problemas comuns com o dispositivo Android](troubleshoot-your-device-android.md)
 - [Corrigir problemas comuns com o dispositivo iOS](troubleshoot-your-device-ios.md)
+- [Corrigir problemas comuns com o dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Corrigir problemas comuns com o dispositivo Windows](troubleshoot-your-device-windows.md)
 
-É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar o suporte de sua empresa para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar o suporte de sua empresa para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
