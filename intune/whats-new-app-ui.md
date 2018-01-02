@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 Saiba quais atualizações foram feitas na interface do usuário para os aplicativos que os usuários finais vão encontrar nesta versão do Microsoft Intune. Isso pode ajudá-lo nas comunicações com usuários e na atualização da documentação personalizada que você criou para dar suporte à sua implantação. Isso também pode ajudá-lo a entender como solucionar melhor os problemas enfrentados caso seja necessário ligar para a assistência técnica para obter suporte usando o Portal da Empresa.
+
+## <a name="week-of-november-27-2017"></a>Semana de 27 de novembro de 2017
+
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Nova etapa "Categorias de Dispositivo" na configuração interativa do aplicativo Portal da Empresa para Windows 10 <!---1335292--->
+
+Se você tiver habilitado o [mapeamento do grupo de dispositivos](device-group-mapping.md), o aplicativo Portal da Empresa para Windows 10 orientará os usuários pela seleção de uma categoria de dispositivo depois de registrar seu dispositivo.
+
+![Categoria de mapeamento do grupo de dispositivos](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## <a name="week-of-november-13-2017"></a>Semana de 13 de novembro de 2017
 
