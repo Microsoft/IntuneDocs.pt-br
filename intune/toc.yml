@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: Remover usuário
           href: device-remove-user.md
-        - name: Controle remoto para Android
+        - name: Dispositivos móveis com controle remoto
           href: device-profile-android-teamviewer.md
         - name: Redefinir o PIN do Windows 10
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: Aplicativos do Office 365 para Windows 10
               href: apps-add-office365.md
+            - name: Aplicativos do Office 365 para macOS
+              href: apps-add-office365-macos.md
         - name: Atribuir aplicativos
           href: apps-deploy.md
         - name: Monitorar aplicativos
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: Monitorar a conformidade de acesso condicional
           href: conditional-access-exchange-monitor.md
+        - name: Integrar o Jamf Pro ao Intune para fins de conformidade
+          href: conditional-access-integrate-jamf.md
+        - name: Impor a conformidade em Macs gerenciados com Jamf Pro
+          href: conditional-access-assign-jamf.md
     - name: Proteger os dados do aplicativo e do dispositivo
       items:
         - name: Usar políticas de proteção de aplicativo
@@ -552,6 +558,8 @@
   items:
     - name: Ajudar os usuários a solucionar problemas
       href: help-desk-operators.md
+    - name: Logs de auditoria de atividades do Intune
+      href: monitor-audit-logs.md
     - name: Usar o Intune Data Warehouse
       href: reports-nav-create-intune-reports.md
       items:
