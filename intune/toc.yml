@@ -581,7 +581,7 @@
           items:
             - name: Perfil VPN por aplicativo
               href: android-pulse-secure-per-app-vpn.md
-            - name: Permitir/bloquear aplicativos para o Samsung KNOX Standard
+            - name: Permitir/bloquear aplicativos para o Samsung Knox Standard
               href: samsung-knox-apps-allow-block.md
         - name: iOS
           href: custom-settings-ios.md
