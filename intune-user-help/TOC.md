@@ -27,12 +27,14 @@
 ### [Corrigindo problemas comuns com o Android](troubleshoot-your-device-android.md)
 #### [Verificar a conformidade do dispositivo](check-compliance-on-your-device-android.md)
 #### [Sincronização de email do Outlook com o modo de economia de bateria](power-saving-mode-android.md)
+#### [Corrigindo problemas comuns com o Samsung Knox](samsung-knox-errors-android.md)
 
 #### Usar logs para corrigir problemas
 ##### [Ativar o log detalhado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Enviar logs usando o email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Enviar logs usando um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Enviar erros de registro](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Enviar erros para a Microsoft](send-logs-to-microsoft-android.md)
 
 ### Perguntas do sistema operacional
 #### [Atualizar seu dispositivo](you-need-to-update-your-android-device.md)
@@ -74,6 +76,7 @@
 #### [Reconectar um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device.md)
 #### [Enviar erros para a sua empresa](send-errors-to-your-it-admin-ios.md)
 #### [Enviar erros para a Microsoft](send-logs-to-microsoft-ios.md)
+#### [Uma conta de email da empresa existente foi encontrada](existing-company-email-account-found.md)
 #### [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Ocorreu um erro](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Identificar seu dispositivo](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [Identificar seu dispositivo](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Usando seu dispositivo Windows](using-your-windows-device-with-intune.md)
-### [Registro de dispositivos Windows 10](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Registro de outras versões do Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [O que acontece quando você registra um dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [O que acontece quando você registrar outras versões do Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Registrar seu dispositivo Windows](enroll-your-device-in-intune-windows.md)
-### [O que acontece quando você instala o aplicativo do Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Registrar seu dispositivo Windows 10](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Registre seu dispositivo Windows 8.1 ou Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
+#### [Registrar seu dispositivo Windows Phone 8.1](enroll-your-wp81-windows.md)
 ### [Redefinir o dispositivo](reset-erase-your-device-cpwebsite.md)
-
 ### [Criptografar seu dispositivo](encrypt-your-device-windows.md)
 ### [Definir ou alterar sua senha](set-or-change-your-password-windows.md)
 ### [Cancelar o registro do dispositivo no Intune](unenroll-your-device-from-intune-windows.md)
