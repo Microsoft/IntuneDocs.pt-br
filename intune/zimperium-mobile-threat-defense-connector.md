@@ -3,10 +3,10 @@ title: Conector do Zimperium MTD ao Intune
 titleSuffix: Intune on Azure
 description: "Integração do conector do Zimperium ao Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78214293a66784d4bc05e441c2c1cdbf718b0a9a
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 22fbdb95a0fe0c064f07dea2dca50c516b995b8d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector do Zimperium Mobile Threat Defense ao Intune
 
@@ -51,7 +51,7 @@ Quando aplicativos mal-intencionados, como malwares, são detectados nos disposi
 
 ![Aplicativos mal-intencionados detectados](./media/Maliciousapps_blocked_Zimperium.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido a aplicativos mal-intencionados detectado](./media/maliciousapps_unblocked_Zimperium.png)
 
@@ -63,7 +63,7 @@ Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes W
 
 ![Bloquear o acesso à rede por meio de Wi-Fi](./media/network_wifi_blocked_Zimperium.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido após a correção](./media/network_wifi_unblocked_Zimperium.png)
 
@@ -75,11 +75,11 @@ Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização 
 
 ![Bloquear o SharePoint Online quando ameaças à rede forem detectadas](./media/network_spo_blocked_Zimperium.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido após correção para exemplo do Sharepoint](./media/network_spo_unblocked_Zimperium.png)
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas com Suporte
 
 -   **Android 4.1 e posterior**
 

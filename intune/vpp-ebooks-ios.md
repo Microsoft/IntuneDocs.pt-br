@@ -3,8 +3,8 @@ title: "Gerenciar livros eletrônicos do iOS comprados por volume"
 titlesuffix: Azure portal
 description: "Saiba como você pode sincronizar no Intune os livros comprados por volume na loja do iOS e, depois, gerenciar e acompanhar seu uso."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 08/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16f1e720e94ac8c6b35158477b41bfaeac9dc0a8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 78f4ce4b8b37e519e8cb377030a7b119b6a64d92
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar livros eletrônicos do iOS comprados por meio de um programa de compra por volume com o Microsoft Intune
 
@@ -71,7 +71,7 @@ Você pode sincronizar os dados mantidos pela Apple com o Intune a qualquer mome
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir um aplicativo comprado por volume
 
 1. Na carga de trabalho **Livros Eletrônicos**, escolha **Gerenciar** > **Todos os Livros Eletrônicos**.
-2. Na folha de lista de livros, escolha o catálogo que deseja atribuir e, em seguida, escolha '**... **' > **Atribuir Grupos**.
+2. Na folha de lista de livros, escolha o catálogo que deseja atribuir e, em seguida, escolha '**...** ' > **Atribuir Grupos**.
 3. Na folha <*nome do livro*> – **Grupos Atribuídos**, escolha **Gerenciar** > **Grupos Atribuídos**.
 4. Escolha **Atribuir Grupos** e, na folha **Selecionar grupos**, escolha os grupos de usuários do Azure AD aos quais você deseja atribuir o livro. No momento, não há suporte para grupos de dispositivos.
 Escolha uma ação de atribuição **Disponível** ou **Obrigatória**. 

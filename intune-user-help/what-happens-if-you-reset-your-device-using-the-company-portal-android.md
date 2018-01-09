@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa?
 
 Quando você usa o Portal da Empresa para redefinir seu dispositivo Android, todos os aplicativos, configurações e dados pessoais em seu dispositivo são excluídos. Isso redefine o dispositivo para as configurações padrão de fábrica.
 
-Se tiver um dispositivo Samsung KNOX, você poderá realizar um "apagamento seletivo" escolhendo a opção **remover dispositivo** do Portal da Empresa. O apagamento seletivo remove somente:
+Se tiver um dispositivo Samsung Knox, você poderá realizar um "apagamento seletivo" escolhendo a opção **remover dispositivo** do Portal da Empresa. O apagamento seletivo remove somente:
 
 - aplicativos de negócios que o suporte de sua empresa disponibiliza para você.
 - email, VPN e Wi-Fi.
