@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro ao Intune para fins de conformidade
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |Procurando uma documentação sobre o Intune no portal clássico? [Clique aqui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Atualmente em versão prévia privada|
-|--|
-|No momento, os recursos descritos neste tópico só estão disponíveis para clientes em versão prévia privada. Essa mensagem será removida quando eles forem lançados para todos os clientes.|
-| |
-
 Se sua organização usar o [Jamf Pro](https://www.jamf.com) para gerenciar os Macs de seus usuários finais, use as políticas de conformidade do Microsoft Intune com acesso condicional do Azure Active Directory para garantir que os dispositivos em sua organização estejam em conformidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Você precisa do seguinte para configurar o acesso condicional com o Jamf Pro:
 
-- Acesso à Versão prévia privada do Intune para acesso condicional no macOS
 - Jamf Pro 10.1.0 ou mais recente
 - [Aplicativo Portal da Empresa para macOS](https://aka.ms/macoscompanyportal)
 - Dispositivos macOS com OS X 10.11 Yosemite ou mais recente
@@ -60,7 +54,7 @@ Você pode conectar o Intune ao Jamf Pro:
 4. Selecione **Aplicativo Web/API**.
 5. Especifique o **URL de logon** usando sua URL de instância Jamf Pro.
 6. Clique em **Criar aplicativo**.
-7. Salve a **ID do aplicativo** recém-criado e, em seguida, abra **Configurações** e navegue até **Acesso à API** > **Chaves** para criar uma nova Chave de Aplicativo. Insira um **Descrição**, quanto tempo aguardar antes que ela **Expire** e salve a Chave do Aplicativo. 
+7. Salve a **ID do aplicativo** recém-criado e, em seguida, abra **Configurações** e navegue até **Acesso à API** > **Chaves** para criar uma nova Chave de Aplicativo. Insira um **Descrição**, quanto tempo aguardar antes que ela **Expire** e salve a Chave do Aplicativo.
 
   > [!IMPORTANT]
   > A Chave de Aplicativo é mostrada apenas uma vez durante esse processo. Salve-a em algum lugar onde é possível recuperá-la facilmente.
@@ -118,7 +112,7 @@ O Jamf Pro captura informações de inventário sobre os dispositivos macOS gere
 * ROM de inicialização
 * Velocidade do barramento
 * Tamanho do cache
-* Nome do dispositivo
+* Nome do Dispositivo
 * Junção de Domínios
 * ID do Jamf
 * Endereço MAC
@@ -128,7 +122,7 @@ O Jamf Pro captura informações de inventário sobre os dispositivos macOS gere
 * Velocidade do NIC
 * Número de núcleos
 * Número de Processadores
-* Sistema operacional
+* SO
 * Plataforma
 * Velocidade do Processador
 * Tipo de Processador

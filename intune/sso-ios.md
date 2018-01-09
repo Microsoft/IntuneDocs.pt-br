@@ -89,7 +89,7 @@ Os padrões `http://.com` e `https://.com` correspondem a todas as URLs HTTP e H
 
 Indique quais aplicativos no dispositivo do usuário final podem usar o Logon Único no conteúdo.
 
-A matriz `AppIdentifierMatches` deve conter cadeias de caracteres que correspondam a IDs de pacote de aplicativo. Essas cadeias de caracteres podem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou especificar uma correspondência de prefixo na ID de pacote usando o caractere curinga *. O caractere curinga deve aparecer após um caractere de ponto (.) e pode aparecer apenas uma vez, no final da cadeia de caracteres (por exemplo: `com.contoso.*`). Quando um caractere curinga for incluído, qualquer aplicativo cuja ID do pacote comece com o prefixo receberá acesso à conta.
+A matriz `AppIdentifierMatches` deve conter cadeias de caracteres que correspondam a IDs de pacote de aplicativo. Essas cadeias de caracteres podem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou especificar uma correspondência de prefixo na ID de pacote usando o caractere curinga \*. O caractere curinga deve aparecer após um caractere de ponto (.) e pode aparecer apenas uma vez, no final da cadeia de caracteres (por exemplo: `com.contoso.*`). Quando um caractere curinga for incluído, qualquer aplicativo cuja ID do pacote comece com o prefixo receberá acesso à conta.
 
 O campo **Nome do Aplicativo** é usado para adicionar um nome amigável para ajudá-lo a identificar a ID do pacote.
 

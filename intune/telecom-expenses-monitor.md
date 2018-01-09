@@ -3,8 +3,8 @@ title: "Configurar um serviço de gestão de despesas de telecomunicações"
 titleSuffix: Azure portal
 description: "Configure o serviço de gerenciamento de despesas de telecomunicações da Saaswedo para integração com o Intune."
 keywords: Saaswedo
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3f97cebe411b191f2bf0b13fb756c705613c46a
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 9712dd7847195976682f87df556b4552df34900f
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ O diagrama a seguir mostra como o Intune se integra ao Datalert.
 
 Antes de usar o serviço de Datalert com o Intune, você precisa definir as configurações no console de Datalert e no Intune. A conexão deve estar ativada para o serviço Datalert e para o Intune. Se o lado do Datalert da conexão estiver habilitado, mas não o lado do Intune, o Intune receberá a comunicação, mas a ignorará.
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas com Suporte
 
 - Samsung Knox
 - iOS 8.0 e posterior

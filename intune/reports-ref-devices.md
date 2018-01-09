@@ -2,8 +2,8 @@
 title: "Dispositivos – Intune Data Warehouse | Microsoft Docs"
 description: "Tópico de referência para a categoria de Dispositivos de coleções de entidade na API Intune Data Warehouse."
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referência para entidades de dispositivos
 
@@ -66,7 +66,7 @@ A entidade **DeviceTypes** representa o tipo de dispositivo referenciado por out
 | 17 |AndroidForWork |Dispositivo Android gerenciado usando o Android para o proprietário do perfil de trabalho |
 | 100 |BlackBerry |Dispositivo Blackberry |
 | 101 |Palm |Dispositivo Palm |
-| 255 |Desconhecido |Tipo de dispositivo desconhecido |
+| 255 |Unknown |Tipo de dispositivo desconhecido |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
@@ -90,7 +90,7 @@ A entidade **ClientRegistrationStateTypes** representa o tipo de registro refere
 | 5 |ApprovalPending |Aprovação pendente |
 | 6 |ResetCert |Redefinir certificado |
 | 7 |NotRegisteredPendingEnrollment |Inscrição pendente não registrada |
-| 8 |Desconhecido |Estado desconhecido |
+| 8 |Unknown |Estado desconhecido |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
@@ -106,7 +106,7 @@ A entidade **EnrollmentTypes** indica cmo um dispositivo foi inscrito. O tipo de
 
 | enrollmentTypeID  | Nome | Descrição |
 |---------|------------|--------|
-| 0 |Desconhecido |O tipo de registro não foi coletado |
+| 0 |Unknown |O tipo de registro não foi coletado |
 | 1 |UserEnrollment |Registro iniciado pelo usuário |
 | 2 |DeviceEnrollment |Registro de dispositivo com o perfil sem usuário |
 | 3 |DeviceEnrollmentWithUDA |Registro de dispositivo com o perfil UDA. |
@@ -141,7 +141,7 @@ A entidade **MdmStatuses** indica o estado de conformidade do dispositivo.
 
 | MdmStatusID  | ComplianceStatus | Descrição |
 |---------|------------|--------|
-| 0 |Desconhecido |O estado de conformidade do dispositivo é desconhecido. |
+| 0 |Unknown |O estado de conformidade do dispositivo é desconhecido. |
 | 1 |Compatível |O dispositivo está em conformidade. |
 | 2 |Fora de Conformidade |O dispositivo não está em conformidade. |
 | 3 |Conflito |A conformidade do dispositivo resultou em um conflito. |
@@ -189,7 +189,7 @@ A entidade **WorkPlaceJoinStateTypes** representa o estado de ingresso no local 
 
 | workPlaceJoinStateID  | Nome | Descrição |
 |---------|------------|--------|
-| 0 |Desconhecido |Se um dispositivo não estiver ingressado no local de trabalho, ele estará em estado Desconhecido |
+| 0 |Unknown |Se um dispositivo não estiver ingressado no local de trabalho, ele estará em estado Desconhecido |
 | 1 |Bem-sucedido |Ingresso de local de trabalho bem-sucedido |
 | 2 |FailureToGetScepMetadata |Falha ao obter metadados de protocolo SCEP |
 | 3 |FailureToGetScepChallenge |Falha ao obter o desafio de protocolo SCEP |
@@ -219,7 +219,7 @@ A entidade **ManagementAgentTypes** representa os agentes usados para gerenciar 
 | 4 |IntuneClient | O dispositivo é gerenciado pelo agente do PC Intune |
 | 5 |EasIntuneClient | O dispositivo é gerenciado pelo Exchange ActiveSync e pelo PC Intune |
 | 8 |ConfigManagerClient | O dispositivo é gerenciado pelo agente do System Center Configuration Manager |
-| 16 |Desconhecido | Tipo de agente de gerenciamento desconhecido |
+| 16 |Unknown | Tipo de agente de gerenciamento desconhecido |
 
 ## <a name="devices"></a>Dispositivos
 

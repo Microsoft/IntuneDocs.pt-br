@@ -3,10 +3,10 @@ title: Gerenciar aplicativos adquiridos por volume para iOS | Microsoft Docs
 titlesuffix: Azure portal
 description: "Saiba como você pode sincronizar no Intune os aplicativos comprados por volume na loja do iOS e, depois, gerenciar e acompanhar seu uso."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS adquiridos por meio de um programa de aquisição com base em volume com o Microsoft Intune
 
@@ -38,9 +38,9 @@ Há dois métodos que você pode usar para atribuir aplicativos comprados por vo
 
 ### <a name="device-licensing"></a>Licenciamento de dispositivo
 
-Quando você atribui um aplicativo a dispositivos, uma licença do aplicativo é usada e permanece associada ao dispositivo ao qual você a atribuiu. 
+Quando você atribui um aplicativo a dispositivos, uma licença do aplicativo é usada e permanece associada ao dispositivo ao qual você a atribuiu.
 
-Quando você atribuir aplicativos adquiridos por volume em um dispositivo, o usuário final do dispositivo não precisa fornecer uma ID Apple para acessar o armazenamento. 
+Quando você atribuir aplicativos adquiridos por volume em um dispositivo, o usuário final do dispositivo não precisa fornecer uma ID Apple para acessar o armazenamento.
 
 ### <a name="user-licensing"></a>Licenciamento do usuário
 
@@ -92,7 +92,8 @@ Use a ID da Apple exclusiva ou o endereço de email do usuário ao configurar m 
         > Alterar o país atualizará os metadados de aplicativos e a URL da loja na próxima sincronização com o serviço da Apple para aplicativos criados com esse token. O aplicativo não será atualizado se ele não existir na loja do novo país.
 
     - **Tipo de conta do VPP** – Escolha **Comercial** ou **Educação**.
-    - **Atualizações automáticas do aplicativo** -Alterne de **Ligado** para **Desligado** para habilitar as atualizações automáticas. Quando habilitado, o Intune atualiza todos os aplicativos adquiridos para o token especificado por meio do serviço Intune quando o dispositivo fizer check-in. detecta as atualizações do aplicativo VPP dentro da loja de aplicativos e as enviará por push automaticamente ao dispositivo quando o dispositivo fizer check-in.
+    - **Atualizações automáticas do aplicativo** -Alterne de **Ligado** para **Desligado** para habilitar as atualizações automáticas. Quando habilitado, o Intune atualiza todos os aplicativos adquiridos para o token especificado por meio do serviço Intune quando o dispositivo fizer check-in.
+detecta as atualizações do aplicativo VPP dentro da loja de aplicativos e as enviará por push automaticamente ao dispositivo quando o dispositivo fizer check-in.
 4. Quando terminar, selecione **Carregar**.
 
 O token é exibido na lista da folha de tokens.
@@ -119,8 +120,8 @@ O usuário final receberá avisos durante a instalação do aplicativo do VPP em
 
 | # | Cenário                                | Convidar para o programa Apple VPP                              | Aviso de instalação de aplicativo | Solicitar ID da Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – usuário licenciado                             | Y                                                                                               | S                                           | Y                                 |
-| 2 | Corp – usuário licenciado (dispositivo não supervisionado)     | Y                                                                                               | S                                           | Y                                 |
+| 1 | BYOD – usuário licenciado                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp – usuário licenciado (dispositivo não supervisionado)     | Y                                                                                               | Y                                           | Y                                 |
 | 3 | Corp – usuário licenciado (dispositivo supervisionado)         | Y                                                                                               | N                                           | Y                                 |
 | 4 | BYOD – dispositivo licenciado                           | N                                                                                               | Y                                           | N                                 |
 | 5 | CORP – dispositivo licenciado (dispositivo não supervisionado)                           | N                                                                                               | Y                                           | N                                 |
@@ -134,6 +135,8 @@ O usuário final receberá avisos durante a instalação do aplicativo do VPP em
 ## <a name="further-information"></a>Informações adicionais
 
 Para recuperar uma licença, você deve alterar a ação de atribuição para **Desinstalar**. A licença será recuperada após a desinstalação do aplicativo. Se você remover um aplicativo que foi atribuído a um usuário, o Intune tentará recuperar todas as licenças de aplicativo associadas a esse usuário.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Quando um usuário com um dispositivo qualificado tentar instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. É necessário ingressar para continuar a instalação do aplicativo. O convite para ingressar no Apple Volume Purchase Program exige que o usuário possa usar o aplicativo do iTunes no dispositivo iOS. Se você tiver definido uma política para desabilitar o aplicativo da iTunes Store, o licenciamento baseado em usuário para aplicativos VPP não funcionará. A solução é permitir o aplicativo do iTunes removendo a política ou usar o licenciamento baseado em dispositivo.
 
