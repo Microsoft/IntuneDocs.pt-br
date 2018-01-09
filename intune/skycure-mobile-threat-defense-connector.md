@@ -3,10 +3,10 @@ title: Conector do Skycure com o Intune
 titlesuffix: Azure portal
 description: "Integração do conector do Skycure com o Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47df2c4a909c397ac5a6c0f736d11344de44736e
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 555c8fa7960a080e3c845053a4893d16a082088d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Conector de Defesa contra Ameaças Móveis do Skycure
 
@@ -67,7 +67,7 @@ Quando aplicativos mal-intencionados, como malwares, são detectados nos disposi
 
 ![Aplicativos mal-intencionados detectados](./media/skycure-arch-1.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido a aplicativos mal-intencionados detectado](./media/skycure-arch-2.png)
 
@@ -79,7 +79,7 @@ Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes W
 
 ![Bloquear o acesso à rede por meio de Wi-Fi](./media/skycure-arch-3.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido após a correção](./media/skycure-arch-4.png)
 
@@ -91,11 +91,11 @@ Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização 
 
 ![Bloquear o SharePoint Online quando ameaças à rede forem detectadas](./media/skycure-arch-5.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido após correção para exemplo do Sharepoint](./media/skycure-arch-6.png)
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas com Suporte
 
 -   **Android 4.1 e posterior**
 
