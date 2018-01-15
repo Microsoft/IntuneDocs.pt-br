@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Referência para entidade de usuário
               href: reports-ref-user.md
-    - name: Sideload de aplicativos do Windows
+    - name: API do Graph do Intune
       href: intune-graph-apis.md
       items:
         - name: APIs do Graph para referência do Intune
