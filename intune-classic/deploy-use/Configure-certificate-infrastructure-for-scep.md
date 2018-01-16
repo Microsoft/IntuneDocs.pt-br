@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar a infraestrutura de certificado para SCEP
 
@@ -203,7 +203,7 @@ Nesta tarefa, você vai:
 
 -   Associar o certificado de autenticação do servidor (SSL) no IIS
 
--   Configurar a Filtragem de Solicitações no IIS
+-   Configurar a filtragem de solicitações no IIS
 
 ##### <a name="to-configure-ndes-for-use-with-intune"></a>Para configurar o NDES para uso com o Intune
 
@@ -338,6 +338,9 @@ Baixar, instalar e configurar o Conector de Certificado no Servidor NDES.
 5.  Na interface do usuário do **Conector de Certificado** :
 
     Clique em **Entrar** e insira suas credenciais de administrador de serviços do Intune ou as credenciais de um administrador de locatários com permissão de administração global.
+
+    > [!NOTE]
+    > Se você receber um erro **Nome de usuário não reconhecido** ao entrar no NDESConnectorUI.exe, isso normalmente significa que você usou uma conta que não tem uma licença válida do Intune. Atribua a conta de uma licença do Intune ou EMS e repita a operação.
 
     Se sua organização usa um servidor proxy e o proxy é necessário para o servidor NDES acessar a Internet, clique em **Usar servidor proxy** e informe o nome do servidor proxy, a porta e as credenciais de conta usadas para a conexão.
 

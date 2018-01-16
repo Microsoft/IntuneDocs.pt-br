@@ -15,13 +15,13 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 8eb231a225a642e4ccdd538f307442921633ddaf
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="review-app-protection-logs-in-the-managed-browser"></a>Examine os logs de proteção de aplicativo no Managed Browser
+# <a name="review-client-app-protection-logs"></a>Examine os logs de proteção do aplicativo de cliente
 
 Você pode acessar os logs habilitando o Modo de Diagnóstico do Intune para um aplicativo em um cliente móvel. A tabela a seguir mostra o nome e uma explicação das configurações registradas no log.
 
