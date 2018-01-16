@@ -1,7 +1,7 @@
 ---
-title: "Política do Intune para permitir/bloquear aplicativos para o Samsung KNOX"
+title: "Política do Intune para permitir/bloquear aplicativos para o Samsung Knox"
 titlesuffix: Azure portal
-description: Criar um perfil personalizado para permitir e bloquear aplicativos em dispositivos Samsung KNOX Standard.
+description: Criar um perfil personalizado para permitir e bloquear aplicativos em dispositivos Samsung Knox Standard."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,22 +15,22 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard no Microsoft Intune
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung Knox Standard no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use os procedimentos neste tópico para criar uma política personalizada do Microsoft Intune que cria um destes procedimentos:
 
 - Uma lista de aplicativos cuja execução no dispositivo é bloqueada. Aplicativos nesta lista serão impedidos de serem executados, mesmo se já tiverem sido instalados quando a política foi aplicada.
-- Uma lista de aplicativos que os usuários do dispositivo podem instalar da loja Google Play. Apenas os aplicativos listados podem ser instalados. Nenhum outro aplicativo pode ser instalado da loja.
+- Uma lista de aplicativos que os usuários do dispositivo podem instalar da loja Google Play. Apenas os aplicativos listados podem ser instalados. Nenhum outro aplicativo pode ser instalado por meio da Store.
 
-Essas configurações podem ser usadas apenas por dispositivos que executam o Samsung KNOX Standard.
+Essas configurações podem ser usadas apenas por dispositivos que executam o Samsung Knox Standard.
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Criar uma lista de aplicativos permitidos ou bloqueados
 

@@ -5,7 +5,7 @@
   - Mac OS X 10.9 e posterior
 
 ### <a name="google"></a>Google
-  - Android 4.4 e posterior (incluindo Samsung KNOX Standard 4.4 e superior) *
+  - Android 4.4 e posterior (incluindo Samsung Knox Standard 4.4 e superior) *
   - Android for Work ([requisitos](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 ### <a name="microsoft"></a>Microsoft
@@ -18,6 +18,6 @@
 
 Os clientes com o EMS (Enterprise Management + Security) também podem [usar o Azure AD (Azure Active Directory) para registrar dispositivos Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
-* Uma lista completa de dispositivos Samsung KNOX Standard verificados está disponível nas [configurações de política do Android e Samsung KNOX Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+* Uma lista completa de dispositivos Samsung Knox Standard verificados está disponível nas [Configurações de política do Android e Samsung Knox Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
 
 Para obter uma lista completa de dispositivos e métodos de gerenciamento, consulte [Dispositivos com suporte pelo Intune](/intune/supported-devices-browsers#intune-supported-devices).

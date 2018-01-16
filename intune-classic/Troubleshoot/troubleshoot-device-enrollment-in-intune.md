@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
 
@@ -37,6 +37,12 @@ Antes de iniciar a solução de problemas, verifique se você configurou o Intun
 -   [Configurar o gerenciamento de dispositivo Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Configurar o gerenciamento de dispositivo do Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - Não há etapas adicionais necessárias
 -   [Configurar o gerenciamento de dispositivo do Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
+
+Você também pode verificar se a data e hora no dispositivo do usuário estão definidas corretamente:
+
+1. Reinicie o dispositivo.
+2. Verifique se a data e hora estão definidas próximas aos padrões GMT (+ ou - 12 horas) em relação ao fuso horário do usuário final.
+3. Desinstale e reinstale o Portal da Empresa do Intune (se for aplicável).
 
 Seus usuários de dispositivo gerenciado podem coletar logs de registro e diagnóstico para você examinar. As instruções para o usuário coletar logs são fornecidas em:
 
@@ -229,27 +235,29 @@ Se a Resolução nº2 não funcionar, oriente os usuários a seguir estas etapas
 
 **Resolução 1**:
 
-Solicite aos usuários que sigam as instruções em [Falta ao dispositivo um certificado necessário](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro persistir após os usuários seguirem essas instruções, tente a Resolução 2.
+Talvez o usuário consiga recuperar o certificado ausente seguindo as instruções em [Seu dispositivo não tem um certificado necessário](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro persistir, tente a Resolução 2.
 
 **Resolução 2**:
 
-Se os usuários ainda virem o erro de ausência de certificado após inserir suas credenciais corporativas e serem redirecionados à experiência de logon federado, um certificado intermediário pode estar faltando no seu servidor de Serviços de Federação do Active Directory (AD FS).
+Se os usuários ainda virem o erro de ausência de certificado após inserir suas credenciais corporativas e serem redirecionados ao logon federado, um certificado intermediário pode estar faltando no seu servidor de Serviços de Federação do Active Directory (AD FS).
 
-O erro de certificado ocorre porque dispositivos Android exigem que certificados intermediários sejam incluídos em uma [saudação do servidor SSL](https://technet.microsoft.com/library/cc783349.aspx), mas, no momento, um servidor padrão do AD FS ou a instalação do servidor proxy do AD FS envia apenas o certificado SSL do serviço de AD FS na saudação de resposta do servidor SSL à uma saudação do cliente SSL.
+O erro de certificado ocorre porque os dispositivos com Android exigem a inclusão de certificados intermediários em uma [Saudação do Servidor SSL](https://technet.microsoft.com/library/cc783349.aspx). No momento, um servidor AD FS padrão ou instalação de servidor WAP – AD FS Proxy envia somente o certificado SSL do serviço AD FS na resposta de saudação de servidor SSL para uma saudação de cliente SSL.
 
 Para corrigir o problema, importe os certificados para os Certificados Pessoais do Computador no servidor do AD FS ou proxies da seguinte maneira:
 
-1.  Nos servidores AD FS e proxy, inicie o console de Gerenciamento de Certificados do computador local clicando com o botão direito do mouse em **Iniciar**, escolhendo **Executar** e digitando **certlm.msc**.
-2.  Expanda **Pessoal** e selecione **Certificados**.
+1.  No ADFS e nos servidores proxy, clique com botão direito em **Iniciar** > **Executar** > **certlm.msc**. Isso inicia o Console de Gerenciamento de Certificados de Máquina Local.
+2.  Expanda **Pessoal** e escolha **Certificados**.
 3.  Localize o certificado da comunicação de serviço do AD FS (certificado assinado publicamente) e clique duas vezes para exibir suas propriedades.
-4.  Selecione a guia **Caminho de Certificação** para ver o(s) certificado(s) pai do certificado.
-5.  Em cada certificado pai, selecione **Exibir Certificado**.
-6.  Selecione a guia **Detalhes** e escolha **Copiar para arquivo...**.
-7.  Siga as solicitações do assistente para exportar ou salvar a chave pública do certificado para o local de arquivo desejado.
-8.  Importe os certificados pai que foram exportados na Etapa 3 para Computador Local\Pessoal\Certificados clicando com o botão direito do mouse em **Certificados**, selecionado **Todas Tarefas** > **Importar** e seguindo as solicitações do assistente para importar o(s) certificado(s).
-9.  Reinicie os servidores AD FS.
-10. Repita as etapas acima em todos os servidores AD FS e proxy.
-Agora, o usuário deve ser capaz de entrar no Portal da Empresa no dispositivo Android.
+4.  Escolha a guia **Caminho de Certificação** para ver o(s) certificado(s) pai do certificado.
+5.  Em cada certificado pai, escolha **Exibir Certificado**.
+6.  Escolha a guia **Detalhes** > **Copiar para arquivo....**.
+7.  Siga as solicitações do assistente para exportar ou salvar a chave pública do certificado pai para o local de arquivo desejado.
+8.  Clique com botão direito em **Certificados** > **Todas as Tarefas** > **Importar**.
+9.  Siga as solicitações do assistente para importar os certificados pai para **Computador Local\Pessoal\Certificados**.
+10. Reinicie os servidores AD FS.
+11. Repita as etapas acima em todos os servidores AD FS e proxy.
+
+Para verificar uma instalação de certificado apropriada, use a ferramenta de diagnóstico disponível em [https://www.digicert.com/help/](https://www.digicert.com/help/). Na caixa **Endereço do Servidor**, insira o FQDN de seu servidor do AD FS (ou seja: sts.contso.com) e clique em **Verificar Servidor**.
 
 **Para validar a instalação correta do certificado**:
 
@@ -299,7 +307,7 @@ Se a sincronização não for bem-sucedida, os usuários verão uma notificaçã
 
 Para corrigir o problema, os usuários devem selecionar o botão **Configurar**, que está à direita da notificação **Não é possível sincronizar**. O botão Configurar leva os usuários para a tela de fluxo Configuração do Acesso da Empresa, em que eles podem seguir os prompts para registrar seu dispositivo.
 
-  ![Tela de Configuração de Acesso da Empresa](./media/ios_cp_app_company_access_setup.png)
+  ![Tela Configuração de Acesso da Empresa](./media/ios_cp_app_company_access_setup.png)
 
 Depois de registrado, os dispositivos retornam ao estado íntegro e recuperam o acesso aos recursos da empresa.
 
@@ -310,9 +318,9 @@ O registro de dispositivos do Programa de Registro de Dispositivo com afinidade 
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
-Para saber mais, veja a [documentação do Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+Para saber mais, confira a [documentação do Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
-Para saber mais, veja as [Práticas recomendadas para proteção dos Serviços de Federação do Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se você precisar de mais assistência para determinar se o Nome de Usuário/Misto do WS-Trust 1.3 está habilitado em seu provedor de federação de identidade, entre em contato com o Suporte da Microsoft se você usar o AD FS, ou com o fornecedor de identidade de terceiro.
+Para saber mais, confira [Práticas recomendadas para proteção dos Serviços de Federação do Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se você precisar de mais assistência para determinar se o Nome de Usuário/Misto do WS-Trust 1.3 está habilitado em seu provedor de federação de identidade, entre em contato com o Suporte da Microsoft se você usar o AD FS, ou com o fornecedor de identidade de terceiro.
 
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil

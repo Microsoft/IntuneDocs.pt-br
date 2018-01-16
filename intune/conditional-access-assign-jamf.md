@@ -1,12 +1,12 @@
 ---
-title: "Aplicar políticas de conformidade aos dispositivos gerenciados por Jamf"
+title: "Impor políticas de conformidade aos dispositivos gerenciados por Jamf"
 titlesuffix: Azure portal
 description: Use a conformidade para ajudar a proteger dispositivos gerenciados pelo Jamf.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs gerenciados com Jamf Pro
 
 |Aplica-se a: Intune no Portal do Azure |
 |--|
 |Procurando uma documentação sobre o Intune no portal clássico? [Clique aqui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Atualmente em versão prévia privada|
-|--|
-|No momento, os recursos descritos neste tópico só estão disponíveis para clientes em versão prévia privada. Essa mensagem será removida quando eles forem lançados para todos os clientes.|
 | |
 
 Você pode usar o Azure Active Directory e as políticas de acesso condicional do Microsoft Intune para garantir que os usuários finais estejam em conformidade com os requisitos organizacionais. Você pode aplicar essas políticas aos Macs [gerenciados com Jamf Pro](conditional-access-integrate-jamf.md). Isso exige acesso aos consoles do Intune e do Jamf Pro.
@@ -48,7 +43,7 @@ Você deve implantar o aplicativo de Portal da Empresa para macOS no Jamf Pro co
 2. Abra o Jamf Pro, depois navegue até **Gerenciamento do computador** > **Pacotes**.
 3. Crie um novo pacote com o aplicativo Portal da Empresa para macOS, depois clique em **Salvar**.
 4. Abra **Computadores** > **Políticas**, depois selecione **Novo**.
-5. Use o conteúdo **Geral** para definir configurações para a política. Essas configurações devem ser: 
+5. Use o conteúdo **Geral** para definir configurações para a política. Essas configurações devem ser:
    - Gatilho: selecione **Registro concluído** e **Check-in recorrente**
    - Frequência de execução: selecione **Uma vez por computador**
 6. Selecione a carga **Pacotes** e clique em **Configurar**.
