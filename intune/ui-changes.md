@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Assim, criamos este guia de referência para aqueles que estão totalmente familiarizados com o Intune no Portal Clássico e querem saber como fazer algo no Intune no Portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
@@ -36,6 +36,7 @@ Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à m
 | Perfil de Registro de Dispositivo Corporativo | Política> Registro de Dispositivo Corporativo | [Registro de dispositivo > Registro da Apple > Perfis de CA](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | Administração > Gerenciamento de Dispositivo Móvel > Android for Work | Registro de dispositivo > Registro do Android for Work |
 | Termos e condições | Política > Termos e Condições | Registro de dispositivo > Termos e Condições |
+Configurações do Portal da Empresa|Administrador > Portal da Empresa|**Gerenciar** > Aplicativos móveis<br> **Configurar** > Identidade visual do Portal da Empresa
 
 
 ## <a name="where-do-i-manage-groups"></a>Onde gerencio grupos?
@@ -62,7 +63,7 @@ A capacidade de permitir ou bloquear dispositivos de propriedade pessoal agora �
 
 ![Imagem das configurações de bloqueio de dispositivo pessoal do Azure](./media/05-azure-personal-block.png)
 
-Novos recursos de restrição serão adicionados ao Portal do Azure apenas.
+Novos recursos de restrição são adicionados ao Portal do Azure apenas.
 
 ## <a name="where-did-apple-dep-go"></a>Para onde foi o Apple DEP?
 No Portal Clássico, você podia configurar o Intune para integrar o Programa de registro de dispositivos da Apple e solicitar manualmente a sincronização com o serviço da Apple:
@@ -73,7 +74,7 @@ No portal do Azure, você configura o programa de registro de dispositivo Apple 
 
 ![Imagem de token de DEP do Azure](./media/07-azure-dep-token.png)
 
-No entanto, a opção de **sincronização** no Portal Clássico foi movida para o fluxo de trabalho de gerenciamento do número de série, pois os resultados de uma sincronização manual aparecerão lá:
+No entanto, a opção de **sincronização** no Portal Clássico foi movida para o fluxo de trabalho de gerenciamento do número de série, pois os resultados de uma sincronização manual aparecem lá:
 
 ![Imagem da sincronização de DEP do Azure](./media/08-azure-dep-sync.png)
 
@@ -97,7 +98,7 @@ No Portal Clássico, você pode listar previamente os números IMEI de dispositi
 
 ![Imagem da lista clássica de números IMEI](./media/12-classic-corp-imei.png)
 
-No Portal do Azure, você deve carregar o mesmo IMEI à lista de identificadores de dispositivo corporativo com um arquivo contendo valores separados por vírgulas (CSV). O novo portal não oferecerá suporte à entrada manual de números IMEI:
+No Portal do Azure, você deve carregar o mesmo IMEI à lista de identificadores de dispositivo corporativo com um arquivo contendo valores separados por vírgulas (CSV). O novo portal não oferece suporte à entrada manual de números IMEI:
 
 ![Imagem da lista de números IMEI do Azure](./media/13-azure-corp-imei.png)
 

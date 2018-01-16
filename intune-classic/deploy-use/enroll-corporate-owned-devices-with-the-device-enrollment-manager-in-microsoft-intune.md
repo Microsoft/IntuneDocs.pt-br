@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b37cf4c93d3eb7e56be3716de6b1b5ffb373673
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrar dispositivos corporativos com o Gerenciador de registro de dispositivo no Microsoft Intune
 
@@ -30,7 +30,7 @@ As organizações podem usar o Intune para gerenciar um grande número de dispos
 Os usuários devem existir no Portal do Azure para serem adicionados como gerenciadores de registro do dispositivo. Para uma melhor segurança, o usuário do DEM não deve ser um administrador do Intune também.
 
 >[!NOTE]
->O método de registro DEM não pode ser usado com o [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou [registro direto](ios-direct-enrollment-in-microsoft-intune.md) ou com o [método de registro de DEP](ios-device-enrollment-program-in-microsoft-intune.md).
+>O método de registro DEM não pode ser usado com o [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou [registro direto](ios-direct-enrollment-in-microsoft-intune.md), registro do macOS e o [método de registro de DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gerenciador de registro de dispositivos
 

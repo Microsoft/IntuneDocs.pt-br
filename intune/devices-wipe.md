@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remova dispositivos por meio da redefinição de fábrica ou remova os dados da empresa
 
@@ -73,11 +73,11 @@ O comando **remover os dados da empresa** remove os dados de aplicativos gerenci
 |Email|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
 |Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.|
 |Sair do Azure Active Directory (AAD)|O registro no Azure AD é removido.|
-|Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
+|Contacts | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
 ### <a name="android"></a>Android
 
-|Tipo de dados|Android|Android Samsung KNOX Standard|
+|Tipo de dados|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Links da Web|Removidos.|Removidos.|
 |Aplicativos Google Play não gerenciados|Aplicativos e dados permanecem instalados.|Aplicativos e dados permanecem instalados.|
@@ -89,9 +89,9 @@ O comando **remover os dados da empresa** remove os dados de aplicativos gerenci
 |Configurações do perfil de certificado|Certificados revogados, mas não removidos.|Certificados removidos e revogados.|
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
 |Email|N/D (não há suporte para perfis de email em dispositivos Android)|Os perfis de email provisionados usando o Intune são removidos e o email armazenado em cache no dispositivo é excluído.|
-|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para Android são removidas.|
+|Outlook|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.|Emails recebidos pelo aplicativo do Microsoft Outlook para Android serão removidos, mas somente se o Outlook estiver protegido pelas políticas MAM. Caso contrário, o Outlook não será apagado ao cancelar o registro.|
 |Sair do Azure Active Directory (AAD)|Registro do Azure AD removido.|Registro do Azure AD removido.|
-|Contatos | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
+|Contacts | Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.|Contatos sincronizados diretamente do aplicativo para o catálogo de endereços nativos são removidos.  Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />Atualmente, há suporte somente para aplicativo do Outlook.
 
 ### <a name="android-for-work"></a>Android for Work
 

@@ -3,8 +3,8 @@ title: Registrar dispositivos macOS no Intune
 titlesuffix: Azure portal
 description: Saiba como registrar dispositivos macOS no Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 nmanager: angrobe
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a18aa5091c8be2095e2ac95717c2b8294b845cd5
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 3d1382e85b9ce58cd65380a799ca8eb4da98b84c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>Registrar dispositivos macOS no Intune
 
@@ -46,7 +46,7 @@ Para bloquear o registro de dispositivos macOS, consulte [Definir restrições d
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Informe aos usuários como registrar seus dispositivos para acessar os recursos da empresa
 
-Você precisará pedir aos usuários finais que acessem o [site do Portal da Empresa](http://portal.manage.microsoft.com) e sigam os prompts para registrar seus dispositivos. Você também pode enviar a eles um link com as etapas do registro online: [Registrar seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Peça aos usuários finais que acessem o [site do Portal da Empresa](http://portal.manage.microsoft.com) e sigam os prompts para registrar seus dispositivos. Você também pode enviar a eles um link com as etapas do registro online: [Registrar seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
 

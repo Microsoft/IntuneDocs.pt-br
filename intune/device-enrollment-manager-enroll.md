@@ -3,10 +3,10 @@ title: "Registrar dispositivos – gerenciador de registro de dispositivos"
 titlesuffix: Azure portal
 description: Use a conta do gerenciador de registros de dispositivo para registrar dispositivos no Intune. "
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrar dispositivos usando o gerenciador de registro de dispositivo
 
@@ -30,7 +30,7 @@ As organizações podem usar o Intune para gerenciar um grande número de dispos
 Os usuários devem existir no Portal do Azure para serem adicionados como gerenciadores de registro do dispositivo. Para uma melhor segurança, o usuário do DEM não deve ser um administrador do Intune também.
 
 >[!NOTE]
->O método de registro DEM não pode ser usado com estes outros métodos de registro: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com registro direto](apple-configurator-direct-enroll-ios.md), [ASM (Apple School Manager)](apple-school-manager-set-up-ios.md) ou [DEP (Programa de registro de dispositivos)](device-enrollment-program-enroll-ios.md).
+>O método de registro DEM não pode ser usado com estes outros métodos de registro: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com registro direto](apple-configurator-direct-enroll-ios.md), [ASM (Apple School Manager)](apple-school-manager-set-up-ios.md) ou [DEP (Programa de registro de dispositivos)](device-enrollment-program-enroll-ios.md). Também não pode ser usado para registrar dispositivos com macOS. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gerenciador de registro de dispositivos
 

@@ -3,10 +3,10 @@ title: "O que é o registro do dispositivo do Microsoft Intune"
 titlesuffix: Azure portal
 description: Saiba mais sobre o registro de dispositivos iOS, Android e Windows.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -29,7 +29,7 @@ Os dispositivos são registrados no Intune, para que você possa gerenciá-los. 
 
 A maneira como você registra seus dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. O registro de BYOD (Traga seu próprio dispositivo) permite que os usuários registrem seus telefones, tablets ou computadores pessoais. O registro de CODs (dispositivos de propriedade corporativa) permite cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados.
 
-Caso use o Exchange ActiveSync, hospedado na nuvem ou local, você pode habilitar o gerenciamento simples do Intune sem registro (mais informações em breve). Você pode gerenciar computadores Windows como dispositivos móveis, que é o método recomendado descrito abaixo.
+Caso utilize o Exchange ActiveSync, hospedado na nuvem ou no local, você pode habilitar o gerenciamento simples do Intune sem registro. Você pode gerenciar computadores Windows como dispositivos móveis, que é o método recomendado descrito abaixo.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Visão geral dos métodos de registro do dispositivo
@@ -39,7 +39,7 @@ A tabela a seguir fornece uma visão geral dos métodos de registro do Intune co
 **Legenda**
 
 - **Redefinição necessária** – o dispositivo é redefinido para as configurações de fábrica durante o registro.
-- **Afinidade de usuário** – associa dispositivos a usuários. Para obter mais informações, consulte [Afinidade do usuário](device-enrollment-program-enroll-ios.md).
+- **Afinidade de usuário** – associa dispositivos a usuários. Para saber mais, confira [Afinidade do usuário](device-enrollment-program-enroll-ios.md).
 - **Bloqueado** – impede que os usuários cancelem o registro de dispositivos.
 
 **Métodos de registro do iOS**
@@ -66,7 +66,7 @@ A tabela a seguir fornece uma visão geral dos métodos de registro do Intune co
 | **Método** |  **Redefinição Necessária** |    **Afinidade do usuário**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](./android-enroll.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Não | Sim | Não| [Mais informações](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 

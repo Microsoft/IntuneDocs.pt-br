@@ -2,10 +2,10 @@
 title: Aplicativo | Microsoft Docs
 description: "Tópico de referência para a categoria de Aplicativo de coleções de entidade na API Intune Data Warehouse."
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Referência para entidades de aplicativo
 
@@ -62,7 +62,7 @@ A entidade **AppTypes** lista a origem da instalação de um aplicativo.
 | AppTypeKey |Chave substituta para a chave |
 | AppTypeName |Tipo de aplicativo |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | AppTypeID  | Nome | Descrição |
 |---------|------------|--------|
@@ -91,7 +91,7 @@ A entidade **VppProgramTypes** lista os possíveis tipos de programa VPP para um
 | VppProgramTypeKey | Chave alternativa para a chave. |
 | VppProgramTypeName | Tipo de programa do VPP. |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | VppProgramID  | Nome | Descrição |
 |---------|------------|--------|
@@ -112,3 +112,26 @@ A entidade **ApplicationInventory** lista os aplicativos encontrados no disposit
 | ApplicationName | Nome do aplicativo. |
 | ApplicationVersion | Versão do aplicativo. |
 | BundleSize | O tamanho do aplicativo em bytes. |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+A entidade **MobileAppInstallState** representa o estado de instalação de um aplicativo móvel após sua atribuição a um grupo que contém dispositivos, usuários ou ambos.
+
+| Propriedade | Descrição |
+|---|---|
+| AppInstallStateKey | A ID exclusiva do estado de instalação do aplicativo para sua conta. |
+| AppInstallState | Valor de enumeração do estado de instalação do aplicativo. |
+| AppInstallStateName | Nome do estado de instalação do aplicativo. |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+O **MobileAppDeviceUserInstallStatus** representa um status de instalação de aplicativo móvel para um determinado dispositivo e usuário.
+
+| Propriedade | Descrição |
+|---|---|
+| DateKey | Chave da data quando o status de instalação do aplicativo foi registrado. |
+| AppKey | Chave do aplicativo móvel usado para identificar uma instância de AppRevision. |
+| DeviceKey | Chave de um dispositivo direcionado usado para identificar uma instância do Dispositivo. |
+| UserKey | Chave de um usuários direcionado usado para identificar uma instância do Usuário. |
+|AppInstallStateKey | Chave do estado de instalação do aplicativo usada para identificar uma instância de MobileAppInstallState. |
+| Código de Erro | O código de erro retornado pelo instalador do aplicativo, a plataforma móvel ou o serviço referente à instalação do aplicativo. |

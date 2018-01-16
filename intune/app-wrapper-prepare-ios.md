@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -215,7 +215,7 @@ Uma maneira fácil de executar a ferramenta de disposição de aplicativo é col
 
 Na pasta IntuneMAMPackager/Conteúdo/MacOS, abra `Parameters.plist` (um modelo plist em branco) com um editor de texto ou Xcode. Insira seus argumentos para as chaves a seguir:
 
-| Chave plist |  Valor padrão| Observações |
+| Chave plist |  Valor padrão| Anotações |
 |------------------|--------------|-----|
 | Caminho do pacote de aplicativos de entrada  |vazio| Mesmo que -i|
 | Caminho do pacote de aplicativos de saída |vazio| Mesmo que -o|
@@ -392,6 +392,18 @@ Use as seguintes melhores práticas de segurança e privacidade ao usar a Ferram
 -   Aplicativos iOS que incluem uma caixa de diálogo de upload de arquivos podem permitir que os usuários contornem restrições de recortar, copiar e colar aplicadas a eles. Por exemplo, um usuário poderia usar a caixa de diálogo de carregamento de arquivo para carregar uma captura de tela dos dados do aplicativo.
 
 -   Quando monitora a pasta de documentos em seu dispositivo de dentro de um aplicativo encapsulado, você pode ver uma pasta chamada .msftintuneapplauncher. Alterar ou excluir essa pasta pode afetar o funcionamento correto de aplicativos restritos.
+
+## <a name="getting-logs-for-your-wrapped-applications"></a>Obter logs para seus aplicativos encapsulados
+Use as etapas a seguir para obter logs para seus aplicativos encapsulados durante a solução de problemas.
+
+1. Vá até o aplicativo de Ajustes do iOS em seu dispositivo e selecione seu aplicativo LOB.
+2. Alterne o **Console de Diagnósticos** para **Ligado**.
+3. Inicie o aplicativo LOB.
+4. Clique no link "Introdução".
+5. Agora você pode compartilhar logs por email ou copiá-los em um local do OneDrive.
+
+>[!NOTE]
+A funcionalidade de registro em log está habilitada para aplicativos encapsulados com a Ferramenta de Encapsulamento de Aplicativo do Intune versão 7.1.13 ou superior.
 
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

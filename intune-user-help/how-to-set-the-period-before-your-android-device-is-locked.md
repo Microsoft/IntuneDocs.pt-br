@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Como definir o período de tempo antes do seu dispositivo Android bloquear a tela
 
 Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha no seu dispositivo seguindo as etapas para o tipo de dispositivo.
 
-## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (não Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Dispositivo (não Samsung Knox) nativo
 
 1.  Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Automatically Lock (Bloqueio Automático)** (isso é exibido como **Lock phone after (Bloquear telefone após)** em alguns dispositivos).
 
@@ -34,7 +34,7 @@ Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha
 
 2.  Selecione o valor de tempo limite da senha.
 
-## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivo Samsung Knox
 
 1.  Em **Configurações** no seu dispositivo, toque em **Lock screen and security (Tela de bloqueio e segurança)** &gt; **Lock automatically (Bloquear automaticamente)**.
 

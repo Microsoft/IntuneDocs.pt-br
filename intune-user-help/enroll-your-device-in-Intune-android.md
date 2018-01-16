@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrar seu dispositivo Android no Intune
 
@@ -28,7 +28,7 @@ Se sua empresa ou escola usa o Microsoft Intune, você pode registrar seu dispos
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-Essas instruções de registro destinam-se a dispositivos Samsung KNOX Android e nativos. O Samsung KNOX é um tipo de segurança que certos dispositivos Samsung usam para proporcionar proteção adicional além da fornecida pelo Android de maneira nativa. Para verificar se você tem um dispositivo Samsung KNOX, vá para **Configurações** > **Sobre o dispositivo**. Se você não vê a “versão do KNOX” listada, tem um dispositivo Android nativo.
+Essas instruções de registro destinam-se a dispositivos Samsung Knox Android e nativos. O Samsung Knox é um tipo de segurança que certos dispositivos Samsung usam para proporcionar proteção adicional além da fornecida pelo Android de maneira nativa. Para verificar se você tem um dispositivo Samsung Knox, vá para **Configurações** > **Sobre o dispositivo**. Se você não vê a “versão do Knox” listada, tem um dispositivo Android nativo.
 
 Antes ou após o registro, você poderá ser solicitado a escolher uma categoria que melhor descreva como você usa o dispositivo. O suporte de sua empresa usa essa categoria para ajudar a verificar os aplicativos aos quais você tem acesso.
 
@@ -52,7 +52,7 @@ Antes ou após o registro, você poderá ser solicitado a escolher uma categoria
 
 6.  Na tela **Configuração de Acesso da Empresa**, toque em **CONTINUAR**.
 
-    ![Tela Configuração de acesso da empresa](/intune/media/android_cp_enroll_01_1709_new.png)
+    ![Tela Configuração de Acesso da Empresa](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > Os triângulos amarelos não significam que você já tem um erro. Esses ícones indicam que ainda há etapas a serem concluídas no processo de registro.
@@ -98,9 +98,9 @@ Antes ou após o registro, você poderá ser solicitado a escolher uma categoria
 
     ![Inserir o PIN ou a senha](./media/and-enroll-6-PIN-native.png)
 
-13.  Se você estiver usando um dispositivo Samsung KNOX, toque em **Confirmar** e você verá uma mensagem informando que seu dispositivo está sendo registrado. Se você estiver usando um dispositivo Android nativo, basta observar a tela abaixo mostrando que o dispositivo está sendo registrado.
+13.  Se você estiver usando um dispositivo Samsung Knox, toque em **Confirmar** e você verá uma mensagem informando que seu dispositivo está sendo registrado. Se você estiver usando um dispositivo Android nativo, basta observar a tela abaixo mostrando que o dispositivo está sendo registrado.
 
-    ![Política de privacidade do Samsung KNOX](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Política de privacidade do Samsung Knox](./media/and-enroll-7-knox-privacy-policy.png)
 
     Esta tela mostra que seu dispositivo está sendo registrado.
 
@@ -116,11 +116,11 @@ Antes ou após o registro, você poderá ser solicitado a escolher uma categoria
 
     ![Problemas de conformidade do dispositivo expandidos](/intune/media/android_cp_enroll_04_post_1709.png)
 
-    ![Tela Configuração de acesso da empresa](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Tela Configuração de Acesso da Empresa](./media/and-enroll-9d-comp-access-setup.png)  
 
 15. Na tela **Configuração de Acesso da Empresa completa**, toque em **CONCLUÍDO**. Agora, seu dispositivo está registrado.
 
-    ![Tela Configuração de acesso da empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
+    ![Tela Configuração de Acesso da Empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
 
 Antes de tentar instalar aplicativos corporativos, acesse **Configurações** &gt; **Segurança** e ative **Fontes desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem: “Instalação bloqueada”. Por motivos de segurança, seu dispositivo está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes desconhecidas**.
 
