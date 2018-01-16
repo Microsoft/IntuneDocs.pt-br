@@ -6,7 +6,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/12/2016
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f543996bf573aef9dd606ae403185da65a3599d2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 59bbc6d9a4170b504e3a5bb3dfe688332a0063f2
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Recursos de gerenciamento de dispositivos registrados do Microsoft Intune
 
@@ -46,7 +46,7 @@ Gerenciamento, inventário, implantação de aplicativos, provisionamento e desa
 |Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
 |Gerenciamento e implantação de aplicativos|Fornece uma série de ferramentas para ajudá-lo a gerenciar aplicativos móveis ao longo de seu ciclo de vida, incluindo a implantação por meio de arquivos de instalação e lojas de aplicativos, monitoramento detalhado do status de aplicativos e remoção de aplicativos.|[Implantar aplicativos no Microsoft Intune](/intune-classic/deploy-use/deploy-apps)|
-|Aplicativos compatíveis e incompatíveis|Permite especificar listas de aplicativos compatíveis (que os usuários podem instalar) e aplicativos incompatíveis (que os usuários não podem instalar).|[Configurações da política do iOS no Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
+|Aplicativos compatíveis e incompatíveis|Permite especificar listas de aplicativos em conformidade (que os usuários podem instalar) e aplicativos sem conformidade (que os usuários não podem instalar).|[Configurações da política do iOS no Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Gerenciamento de aplicativos móveis|Configura restrições para aplicativos usando o gerenciamento de aplicativos móveis para todos os dispositivos, gerenciados ou não com o Intune. Isso ajuda você a aumentar a segurança dos dados de sua empresa, restringindo operações como copiar e colar, backup externo de dados e transferência de dados entre aplicativos.|[Configurar e implantar políticas de gerenciamento de aplicativo móvel no console do Microsoft Intune](/intune/app-wrapper-prepare-android)|
 |Configuração do aplicativo móvel iOS|Usa políticas de configuração de aplicativo móvel para fornecer configurações para aplicativos iOS que podem ser necessárias quando o usuário executar o aplicativo. Por exemplo, um aplicativo pode exigir que o usuário especifique o número da porta ou informações de logon. Isso pode ajudar a simplificar a configuração do aplicativo e reduzir o número de chamadas de suporte.|[Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Perfis de provisionamento de aplicativo móvel do iOS|Ajuda a implantar perfis de provisionamento para aplicativos iOS que estão se aproximando da expiração. |[Usar políticas de perfil de provisionamento móvel do iOS para impedir que os aplicativos expirem](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)|
