@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
--   **Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.
--   **Copiar e colar (somente dispositivo móvel)** – Permitir utilizar ações de copiar e colar entre os aplicativos do dispositivo.
--   **Cancelamento de registro manual** – Permite que o usuário exclua manualmente a conta de trabalho do dispositivo.
--   **Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
--   **Envio de dados de diagnóstico** – Os valores possíveis são:
+- **Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.
+- **Copiar e colar (somente dispositivo móvel)** – Permitir utilizar ações de copiar e colar entre os aplicativos do dispositivo.
+- **Cancelamento de registro manual** – Permite que o usuário exclua manualmente a conta de trabalho do dispositivo.
+- **Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
+- **Envio de dados de diagnóstico** – Os valores possíveis são:
     - **Nenhum** – Nenhum dado é enviado para a Microsoft
     - **Básico** – Informações limitadas são enviadas à Microsoft
     - **Avançado** – Dados de diagnóstico avançados são enviados para a Microsoft
     - **Completo** Envia os mesmos dados que Avançado, além de dados adicionais sobre o estado do dispositivo
--   **Câmera** – Permite ou bloqueia o uso da câmera do dispositivo.
--   **Sincronização de arquivos do OneDrive** - bloqueia a sincronização de arquivos do dispositivo com o OneDrive.
--   **Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como cartões SD, no dispositivo.
--   **Geolocalização** – Especifica se o dispositivo pode usar informações de serviços de localização.
--   **Compartilhamento da Internet** – Permite o uso do compartilhamento de conexão com a Internet no dispositivo.
--   **Redefinição do telefone** – Controla se o usuário pode realizar uma redefinição de fábrica em seu dispositivo.
--   **Conexão USB (somente dispositivos móveis)** – controla se os dispositivos podem acessar dispositivos de armazenamento externo por meio de uma conexão USB.
--   **Modo AntiTheft (somente dispositivos móveis)** – configure se o modo AntiTheft do Windows está habilitado.
--   **Cortana** – Habilitar ou desabilitar a assistente de voz Cortana.
--   **Gravação de voz (somente dispositivos móveis)** – Permitir ou bloquear o uso do gravador de voz do dispositivo.
--   **Modificação do nome do dispositivo** – impede que o usuário final altere o nome do dispositivo (Windows 10 Mobile apenas)
--   **Adicionar pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que instala os pacotes de provisionamento.
--   **Remover pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que remove os pacotes de provisionamento.
--   **Descoberta de dispositivos** - bloqueia a descoberta de um dispositivo por outros dispositivos.
--   **Alternador de tarefas (somente dispositivos móveis)** - bloqueia o alternador de tarefas no dispositivo.
--   **Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
+- **Câmera** – Permite ou bloqueia o uso da câmera do dispositivo.
+- **Sincronização de arquivos do OneDrive** - bloqueia a sincronização de arquivos do dispositivo com o OneDrive.
+- **Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como cartões SD, no dispositivo.
+- **Geolocalização** – Especifica se o dispositivo pode usar informações de serviços de localização.
+- **Compartilhamento da Internet** – Permite o uso do compartilhamento de conexão com a Internet no dispositivo.
+- **Redefinição do telefone** – Controla se o usuário pode realizar uma redefinição de fábrica em seu dispositivo.
+- **Conexão USB (somente dispositivos móveis)** – controla se os dispositivos podem acessar dispositivos de armazenamento externo por meio de uma conexão USB.
+- **Modo AntiTheft (somente dispositivos móveis)** – configure se o modo AntiTheft do Windows está habilitado.
+- **Cortana** – Habilitar ou desabilitar a assistente de voz Cortana.
+- **Gravação de voz (somente dispositivos móveis)** – Permitir ou bloquear o uso do gravador de voz do dispositivo.
+- **Modificação do nome do dispositivo** – impede que o usuário final altere o nome do dispositivo (Windows 10 Mobile apenas)
+- **Adicionar pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que instala os pacotes de provisionamento.
+- **Remover pacotes de provisionamento** - bloqueia o agente de configuração de tempo de execução que remove os pacotes de provisionamento.
+- **Descoberta de dispositivos** - bloqueia a descoberta de um dispositivo por outros dispositivos.
+- **Alternador de tarefas (somente dispositivos móveis)** - bloqueia o alternador de tarefas no dispositivo.
+- **Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
+- **Reimplantação automática** – permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
 
 
 ## <a name="password"></a>Senha
@@ -68,19 +68,68 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
 ## <a name="personalization"></a>Personalização
 
--   **URL de imagem da tela de fundo da área de trabalho (somente desktop)** – Especifique a URL para uma imagem no formato PNG, JPG ou JPEG que você deseja usar como o papel de parede da área de trabalho do Windows. Os usuários não poderão alterar isso.
+- **URL de imagem da tela de fundo da área de trabalho (somente desktop)** – Especifique a URL para uma imagem no formato PNG, JPG ou JPEG que você deseja usar como o papel de parede da área de trabalho do Windows. Os usuários não podem mudar isso.
 
 ## <a name="privacy"></a>Privacidade
 
 -   **Personalização de entrada** – Não permite o uso de serviços de voz baseados em nuvem para aplicativos da Microsoft Store, ditado ou Cortana. Se você permitir esses serviços, a Microsoft poderá coletar dados de voz para melhorar o serviço.
 -   **Aceitação automática de solicitações de consentimento do usuário para privacidade e emparelhamento** – Permitir que o Windows aceite automaticamente mensagens de consentimento de emparelhamento e privacidade ao executar aplicativos.
 
+Você pode definir as informações que todos os aplicativos no dispositivo podem acessar. Você pode definir exceções de acordo com o aplicativo que usa **Exceções de privacidade por aplicativo**.
+
+### <a name="exceptions"></a>Exceções
+
+- **Informações de conta** – defina se este aplicativo pode acessar o nome de usuário, imagem e outras informações de contato.
+- **Aplicativos em segundo plano** – defina se este aplicativo pode ser executado em segundo plano.
+- **Calendário** – defina se este aplicativo pode acessar o calendário.
+- **Histórico de chamadas** – defina se este aplicativo pode acessar meu histórico de chamadas.
+- **Câmera** – defina se este aplicativo pode acessar a câmera.
+- **Contatos** – defina se este aplicativo pode acessar os contatos.
+- **Email** – defina se este aplicativo pode acessar e enviar emails.
+- **Local** – defina se este aplicativo pode acessar informações de localização.
+- **Mensagens** – defina se este aplicativo pode ler ou enviar mensagens de texto ou MMS.
+- **Microfone** – defina se este aplicativo pode usar o microfone.
+- **Movimento** – defina se este aplicativo pode acessar informações de movimentação do dispositivo.
+- **Notificações** – defina se este aplicativo pode acessar as notificações.
+- **Telefone** – defina se este aplicativo pode acessar o telefone.
+- **Rádios** – alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados, e precisam ativar ou desativar essas rádios. Defina se este aplicativo pode controlar essas rádios.
+- **Tarefas** – defina se este aplicativo pode acessar suas tarefas.
+- **Dispositivos confiáveis** – defina se este aplicativo pode usar dispositivos confiáveis (hardware que você já conectou ou que acompanha este PC, tablet ou telefone). Por exemplo: TVs, projetores etc.
+- **Comentários e diagnóstico** – defina se este aplicativo pode acessar informações de diagnóstico.
+- **Sincronização com dispositivos** – defina se este aplicativo pode compartilhar e sincronizar automaticamente informações com dispositivos sem fio que não emparelham explicitamente com este computador, tablet ou telefone.
+
+## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicativo
+
+Você pode adicionar aplicativos que devem ter um comportamento de privacidade diferente do definido em "Privacidade padrão".
+
+- **Nome do Pacote** – nome de família do pacote de aplicativos.
+- **Nome do Aplicativo** – o nome do aplicativo.
+
+### <a name="exceptions"></a>Exceções
+
+- **Informações de conta** – defina se este aplicativo pode acessar o nome de usuário, imagem e outras informações de contato.
+- **Aplicativos em segundo plano** – defina se este aplicativo pode ser executado em segundo plano.
+- **Calendário** – defina se este aplicativo pode acessar o calendário.
+- **Histórico de chamadas** – defina se este aplicativo pode acessar meu histórico de chamadas.
+- **Câmera** – defina se este aplicativo pode acessar a câmera.
+- **Contatos** – defina se este aplicativo pode acessar os contatos.
+- **Email** – defina se este aplicativo pode acessar e enviar emails.
+- **Local** – defina se este aplicativo pode acessar informações de localização.
+- **Mensagens** – defina se este aplicativo pode ler ou enviar mensagens de texto ou MMS.
+- **Microfone** – defina se este aplicativo pode usar o microfone.
+- **Movimento** – defina se este aplicativo pode acessar informações de movimentação do dispositivo.
+- **Notificações** – defina se este aplicativo pode acessar as notificações.
+- **Telefone** – defina se este aplicativo pode acessar o telefone.
+- **Rádios** – alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados, e precisam ativar ou desativar essas rádios. Defina se este aplicativo pode controlar essas rádios.
+- **Tarefas** – defina se este aplicativo pode acessar suas tarefas.
+- **Dispositivos confiáveis** – defina se este aplicativo pode usar dispositivos confiáveis (hardware que você já conectou ou que acompanha este PC, tablet ou telefone). Por exemplo: TVs, projetores etc.
+- **Comentários e diagnóstico** – defina se este aplicativo pode acessar informações de diagnóstico.
+- **Sincronização com dispositivos** – defina se este aplicativo pode compartilhar e sincronizar automaticamente informações com dispositivos sem fio que não emparelham explicitamente com este computador, tablet ou telefone.
 
 ## <a name="locked-screen-experience"></a>Experiência na tela bloqueada
 
-
--   **Notificações da central de ações (somente dispositivos móveis)** – Permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
--   **URL de imagem da tela bloqueada (somente desktop)** - especifique a URL para uma imagem no formato PNG, JPG ou JPEG que será usada como o papel de parede de tela bloqueada do Windows. Os usuários não poderão alterar isso.
+- **Notificações da central de ações (somente dispositivos móveis)** – Permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
+- **URL de imagem da tela bloqueada (somente desktop)** - especifique a URL para uma imagem no formato PNG, JPG ou JPEG que será usada como o papel de parede de tela bloqueada do Windows. Os usuários não podem mudar isso.
 -   **Tempo limite configurável de tela do usuário (somente em dispositivos móveis)** – Permite que usuários configurem o período 
 -   **Cortana na tela bloqueada (somente no desktop)** – Não permitir que o usuário interaja com a Cortana quando o dispositivo estiver na tela de bloqueio (somente Windows 10 desktop).
 -   **Notificações do sistema na tela bloqueada** – Impede que mensagens de alerta sejam exibidas na tela de bloqueio do dispositivo.
@@ -125,17 +174,17 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
     -   **URL da primeira execução** – Especifica a URL da página que é exibida na primeira vez que um usuário executa o Edge (somente Windows 10 Mobile).
 -   **Páginas iniciais** – Adicione uma lista de sites que você deseja usar como as páginas iniciais no navegador Edge (somente desktop).
 -   **Alterações na página inicial** – Permite aos usuários alterar as páginas iniciais exibidas quando o Edge é aberto. Use a configuração Página inicial para criar a página ou uma lista de páginas que é aberta quando o Edge é iniciado.
--   **Bloquear acesso aos about:flags** - impede que o usuário final acesse a página about:flags no Edge que contém configurações experimentais e de desenvolvedor.
+-   **Bloquear acesso aos about:flags** – impeça que o usuário final acesse a página about:flags no Edge que contém configurações experimentais e de desenvolvedor.
 -   **Endereço IP do localhost WebRtc** - bloqueia a exibição do endereço IP do localhost de usuários ao fazer chamadas telefônicas usando a protocolo RTC da web.
 -   **Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado. Os usuários finais podem alterar esse valor a qualquer momento.
 -   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Edge.
 -   **Coleta de dados de Blocos Dinâmico** – Impede que o Windows colete informações de Blocos Dinâmicos quando o usuários fixa um site no menu Iniciar do Edge.
 
-## <a name="edge-browser-smartscreen"></a>SmartScreen do navegador Edge
+## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
--   **SmartScreen** – Habilita ou desabilita o SmartScreen, que bloqueia sites fraudulentos.
--   **Substituição do prompt de SmartScreen** - permite ao usuário final ignorar os avisos do filtro do SmartScreen sobre sites possivelmente mal-intencionados.
--   **Substituição do prompt de SmartScreen para arquivos** - permite ao usuário final ignorar os avisos do filtro do SmartScreen sobre o download de arquivos possivelmente mal-intencionados.
+- **SmartScreen para Microsoft Edge** – habilite o SmartScreen do Edge para acessar downloads do site e de arquivos.
+- **Acesso a sites mal-intencionados** – impeça os usuários de ignorar os avisos de Filtro do Windows Defender SmartScreen, e impeça-os de visitar o site.
+- **Download de arquivo não verificado** – impeça os usuários de ignorar os avisos de Filtro do Windows Defender SmartScreen, e impeça-os de fazer o download de arquivos não verificados.
 
 ## <a name="search"></a>Pesquisar
 - **Pesquisa segura (somente dispositivos móveis)** - controla como o Cortana filtra o conteúdo adulto nos resultados da pesquisa. Você pode selecionar **Estrito**, **Moderado** ou permitir que o usuário final escolha suas próprias configurações.
@@ -182,9 +231,30 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
     -   **Privacidade** - bloqueia o acesso à área de privacidade do aplicativo de configurações.
     -   **Atualização e Segurança** – bloqueia o acesso à área de atualizações e segurança do aplicativo de configurações.
 
-## <a name="kiosk"></a>Quiosque
+## <a name="start"></a>Inicie o
 
--   **Modo de quiosque** – Identifica o tipo de [modo de quiosque](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) compatível com a política.  As opções incluem:
+- **Desafixar aplicativos da barra de tarefas** - impede o usuário de desafixar aplicativos no menu Iniciar.
+- **Documentos em Iniciar** - oculta ou mostra a pasta Documentos no menu Iniciar do Windows.
+- **Downloads em Iniciar** - oculta ou mostra a pasta Downloads no menu Iniciar do Windows.
+- **Explorador de Arquivos em Iniciar** - oculta ou mostra o aplicativo Explorador de Arquivos no menu Iniciar do Windows.
+- **Grupo Doméstico em Iniciar** - oculta ou mostra a pasta Grupo Doméstico no menu Iniciar do Windows.
+- **Música em Iniciar** - oculta ou mostra a pasta Música no menu Iniciar do Windows.
+- **Rede em Iniciar** - oculta ou mostra a pasta Rede no menu Iniciar do Windows.
+- **Pasta Pessoal em Iniciar** - oculta ou mostra a pasta Pessoal no menu Iniciar do Windows.
+- **Imagens em Iniciar** - oculta ou mostra a pasta de imagens no menu Iniciar do Windows.
+- **Configurações em Iniciar** - oculta ou mostra o aplicativo Configurações no menu Iniciar do Windows.
+- **Vídeos em Iniciar** - oculta ou mostra a pasta de vídeos no menu Iniciar do Windows.
+
+## <a name="display"></a>Vídeo
+
+- **Ligar o ajuste de GDI para aplicativos**
+- **Desligar o ajuste de GDI para aplicativos**
+
+  O Ajuste de DPI do GDI permite que aplicativos sem reconhecimento de DPI fiquem com reconhecimento de DPI por monitor. especifica os aplicativos herdados que têm o Ajuste de DPI do GDI ativado. Com o Ajuste de DPI do GDI configurado para ser ativado e desativado em um aplicativo, o ajuste é desativado para o aplicativo.
+
+## <a name="kiosk-preview"></a>Quiosque (Versão prévia)
+
+-   **Modo de quiosque** – Identifica o tipo de [modo de quiosque](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) compatível com a política. As opções incluem:
 
       - **Não configurado** (padrão) – A política não habilita um modo de quiosque. 
       - **Quiosque de aplicativo único** – O perfil habilita o dispositivo como um quiosque de aplicativo único.
@@ -192,13 +262,13 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
     Os quiosques de aplicativo único exigem as seguintes configurações:
 
-      - **Conta de usuário** – Especifica a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque.  Para contas ingressadas em domínios do Azure AD, especifique a conta na forma de `domain\\username@tenant.org`.
+      - **Conta de usuário** – Especifica a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque. Para contas ingressadas em domínios do Azure AD, especifique a conta na forma de `domain\\username@tenant.org`.
 
          Para dispositivos em ambientes públicos, use contas com privilégios mínimos para impedir atividades autorizadas.  
 
-      - **AUMID (ID do modelo de usuário do aplicativo)** – Especifica a AUMID do aplicativo de quiosque.  Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
+      - **AUMID (ID do modelo de usuário do aplicativo)** – Especifica a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
 
-    Os quiosques de vários aplicativos exigem uma configuração de quiosque.  Use o botão **Adicionar** para criar uma configuração de quiosque ou selecionar uma existente.
+    Os quiosques de vários aplicativos exigem uma configuração de quiosque. Use o botão **Adicionar** para criar uma configuração de quiosque ou selecionar uma existente.
 
     As configurações de quiosque de vários aplicativos incluem as seguintes configurações:
 
@@ -206,11 +276,11 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
     - Um ou mais **aplicativos de quiosque** que consistem em:
 
-        - **Tipo de aplicativo** que especifica o tipo do aplicativo de quiosque.  Os valores suportados incluem:   
+        - **Tipo de aplicativo**, que especifica o tipo do aplicativo de quiosque.  Os valores suportados incluem:   
 
-            - **Aplicativo Win32** – Um aplicativo da área de trabalho tradicional.  (Você precisará do nome do caminho totalmente qualificado do executável, com relação ao dispositivo.)
+            - **Aplicativo Win32** – Um aplicativo da área de trabalho tradicional. (Você precisa do nome do caminho totalmente qualificado do executável, com relação ao dispositivo.)
 
-            - **Aplicativo UWP** – Um aplicativo universal do Windows.  Você precisará da [AUMID para o aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Aplicativo UWP** – Um aplicativo universal do Windows. Você precisa do [AUMID do aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
         - **Identificador do aplicativo** – Especifique o nome do caminho totalmente qualificado do arquivo executável (aplicativos Win32) ou a [AUMID do aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos UWP).
 
@@ -218,9 +288,9 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
     - **Layout do menu Iniciar** – Especifica um arquivo XML que descreve como os aplicativos [são exibidos no menu Iniciar](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Usuários atribuídos** – especifica uma ou mais contas de usuário associadas à configuração de quiosque.  A conta pode ser local para o dispositivo ou para um logon de conta do Azure AD associado ao aplicativo de quiosque.  Especifique contas ingressadas em domínio na forma de `domain\\username@tenant.org`.
+    - **Usuários atribuídos** – especifica uma ou mais contas de usuário associadas à configuração de quiosque. A conta pode ser local para o dispositivo ou para um logon de conta do Azure AD associado ao aplicativo de quiosque. Especifique contas ingressadas em domínio na forma de `domain\\username@tenant.org`.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender Antivírus
 
 -   **Monitoramento em tempo real** – Habilita a verificação em tempo real de malware, de spyware e de outros tipos de software indesejados.
 -   **Monitoramento de comportamento** – Permite que o Defender verifique se há certos padrões de atividade suspeita nos dispositivos.
@@ -256,7 +326,7 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
 
 
 
-## <a name="defender-exclusions"></a>Exclusões do Defender
+### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Windows Defender Antivírus
 
 -   **Arquivos e pastas a serem excluídas da verificação e proteção em tempo real** – Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Esses arquivos e pastas não serão incluídos em verificações em tempo real ou programadas.
 -   **Extensões de arquivos a serem excluídas de verificações e proteção em tempo real** – Adicione uma ou mais extensões de arquivo como **jpg** ou **txt** à lista de exclusões. Qualquer arquivo com essas extensões não serão incluídos em verificações em tempo real ou programadas.
@@ -272,7 +342,7 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
     -   **Endereço** - insira o nome ou o endereço IP do servidor proxy.
     -   **Número da porta** – insira o número de porta de seu servidor proxy.
     -   **Exceções de proxy** - insira todas as URLs que não devem usar o servidor proxy. Use um ponto e vírgula para separar cada item.
-    -   **Ignorar servidor proxy para endereços locais** – Habilite esta opção se você não quiser usar o servidor proxy para endereços locais na intranet.
+    -   **Ignorar servidor proxy para endereços locais** – habilite esta opção se você não quiser usar o servidor proxy para endereços locais na intranet.
 
 
 ## <a name="windows-spotlight"></a>Destaque do Windows
@@ -294,16 +364,41 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
 - **Projeção neste PC** - impede que outros dispositivos descubram o PC para projeção.
 - **Exigir PIN para emparelhamento** - exige um PIN durante a conexão com um dispositivo de projeção.
 
-## <a name="start"></a>Inicie o
+## <a name="cloud-printer"></a>Impressora de Nuvem
 
-- **Desafixar aplicativos da barra de tarefas** - impede o usuário de desafixar aplicativos no menu Iniciar.
-- **Documentos em Iniciar** - oculta ou mostra a pasta Documentos no menu Iniciar do Windows.
-- **Downloads em Iniciar** - oculta ou mostra a pasta Downloads no menu Iniciar do Windows.
-- **Explorador de Arquivos em Iniciar** - oculta ou mostra o aplicativo Explorador de Arquivos no menu Iniciar do Windows.
-- **Grupo Doméstico em Iniciar** - oculta ou mostra a pasta Grupo Doméstico no menu Iniciar do Windows.
-- **Música em Iniciar** - oculta ou mostra a pasta Música no menu Iniciar do Windows.
-- **Rede em Iniciar** - oculta ou mostra a pasta Rede no menu Iniciar do Windows.
-- **Pasta Pessoal em Iniciar** - oculta ou mostra a pasta Pessoal no menu Iniciar do Windows.
-- **Imagens em Iniciar** - oculta ou mostra a pasta de imagens no menu Iniciar do Windows.
-- **Configurações em Iniciar** - oculta ou mostra o aplicativo Configurações no menu Iniciar do Windows.
-- **Vídeos em Iniciar** - oculta ou mostra a pasta de vídeos no menu Iniciar do Windows.
+- **URL de descoberta da impressora** – ponto de extremidade para descoberta de impressoras de nuvem.
+- **URL de autoridade de acesso da impressora** – ponto de extremidade de autenticação para adquirir tokens OAuth.
+- **GUID de aplicativo cliente nativo do Azure** – GUID de um aplicativo cliente autorizado para recuperar tokens OAuth do OAuthAuthority.
+- **URI de recurso de serviço de impressão** – URI de recurso OAuth para serviço de impressão conforme configurado no Portal do Azure.
+- **Máximo de impressoras para consulta (Somente móvel)** – número máximo de impressoras que devem ser consultadas de um ponto de extremidade de descoberta.
+- **URI de recurso de serviço de descoberta de impressora** – URI de recurso do OAuth para serviço de descoberta de impressora, conforme configurado no Portal do Azure.
+
+## <a name="reporting-and-telemetry"></a>Relatório e telemetria
+
+- **Compartilhar dados de uso** – selecione o nível de envio de dados de diagnóstico.
+- **Servidor de proxy de telemetria**
+
+  Especifique o FQDN (Nome de domínio totalmente qualificado) ou o endereço IP de um servidor proxy para encaminhar solicitações de Experiências do Usuário Conectado e Telemetria usando uma conexão SSL (Secure Sockets Layer). O formato para essa configuração é *servidor*:*porta*. Se o proxy nomeado falhar, ou se não houver um proxy especificado na habilitação dessa política, os dados de Experiências do Usuário Conectado e Telemetria não serão transmitidos e permanecerão no dispositivo local.
+
+   Formatos de exemplo:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>Sistema de mensagens
+
+- **Sincronização de mensagem (somente móvel)** – desabilite Mensagens em qualquer lugar e backup e restauração de mensagem de texto.
+- **MMS (somente móvel)** – desabilite a funcionalidade de envio/recebimento de MMS no dispositivo.
+- **RCS (somente móvel)** – desabilite a funcionalidade de envio/recebimento dos Serviços de Comunicação no dispositivo.
+
+
+
+
+
+
+
+
+
+
+
+
