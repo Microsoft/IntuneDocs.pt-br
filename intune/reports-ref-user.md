@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 917c9585ffe17f9d090c519f716d284aa1b932b8
-ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
+ms.openlocfilehash: 1f213cb735ab4dcad20c97b5924fef98774192ce
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="reference-for-user-entity"></a>Referência para entidade de usuário
 
@@ -45,5 +45,5 @@ A coleção de entidades **Usuário** contém dados do usuário. Esses registros
 | RowLastModifiedDateTimeUTC |Data e hora em UTC de quando o registro foi modificado pela última vez no data warehouse  |23/11/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Próximas etapas
- - Use a coleção de entidades **Usuário Atual** para limitar os dados de usuário para usuários que estão ativos no momento. Para saber mais, confira [Referência para entidade de usuário atual](reports-ref-current-user.md).
+ - Use a coleção de entidades **Usuário Atual** para limitar os dados de usuário para usuários que estão ativos no momento. Para saber mais, veja [Referência para entidade de usuário atual](reports-ref-current-user.md).
  - Para saber mais sobre como o data warehouse controla o tempo de vida de um usuário no Intune, veja [Representação de tempo de vida do usuário no Intune Data Warehouse](reports-ref-user-timeline.md).
