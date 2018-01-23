@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cabf39f603ac93a0716594c44174908e7c999e5c
-ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
+ms.openlocfilehash: 895855befe31e84b3dc472216afdf52d636bc27a
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="reference-for-current-user-entity"></a>Referência da entidade de usuário atual
 
@@ -41,5 +41,5 @@ A entidade **Usuário Atual** lista todos os usuários do Azure AD (Azure Active
 | RowLastModifiedDateTimeUTC |Data e hora em UTC em que esse usuário foi modificado pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Próximas etapas
- - Use a coleção de entidades **Usuários** para expandir os dados de usuário para usuários que não estão ativos no momento. Para saber mais, confira [Referência para entidade de usuário](reports-ref-user.md).
+ - Use a coleção de entidades **Usuários** para expandir os dados de usuário para usuários que não estão ativos no momento. Para saber mais, veja [Referência para entidade de usuário](reports-ref-user.md).
  - Saiba mais sobre como o data warehouse controla o tempo de vida de um usuário no Intune, veja [Representação de tempo de vida do usuário no Intune Data Warehouse](reports-ref-user-timeline.md).
