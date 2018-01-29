@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
 > [!NOTE]
 > Leia primeiro a [Visão geral do SDK de Aplicativo do Intune](app-sdk.md), que explica os recursos atuais do SDK e descreve como preparar a integração em cada plataforma com suporte.
 
-O SDK do Aplicativo do Microsoft Intune para Android permite incorporar políticas de proteção do aplicativo do Intune (também conhecidas como políticas **APP** ou MAM) em seu aplicativo Android nativo. Um aplicativo orientado para Intune é aquele que está integrado ao SDK de Aplicativo do Intune. Os administradores do Intune podem facilmente implantar políticas de proteção do aplicativo em seu aplicativo orientado para Intune quando o Intune gerencia o aplicativo de forma ativa.
+O SDK do Aplicativo do Microsoft Intune para Android permite incorporar políticas de proteção do aplicativo do Intune (também conhecidas como políticas **APP** ou MAM) em seu aplicativo Android nativo. Um aplicativo gerenciado pelo Intune é aquele que é integrado ao SDK do aplicativo do Intune. Os administradores do Intune podem implantar facilmente políticas de proteção do aplicativo em um aplicativo gerenciado pelo Intune quando o Intune gerencia ativamente o aplicativo.
 
 
 ## <a name="whats-in-the-sdk"></a>O que está contido no SDK
@@ -55,7 +55,7 @@ O SDK de Aplicativos do Intune é um projeto Android compilado. Como resultado, 
 O SDK de Aplicativo do Intune para Android depende da presença do aplicativo do [Portal da Empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) no dispositivo para habilitar as políticas de proteção do aplicativo. O Portal da Empresa recupera as políticas de proteção de aplicativo do serviço Intune. Quando o aplicativo é inicializado, ele carrega a política e o código para impor essa política do Portal da Empresa.
 
 > [!NOTE]
-> Quando o aplicativo do Portal da Empresa não está no dispositivo, um aplicativo orientado para Intune comporta-se como um aplicativo normal que não oferece suporte a políticas de proteção de aplicativo do Intune.
+> Quando o aplicativo Portal da Empresa não está no dispositivo, um aplicativo gerenciado pelo Intune comporta-se como um aplicativo normal que não é compatível com as políticas de proteção de aplicativo do Intune.
 
 Para a proteção do aplicativo sem registro de dispositivo, o usuário _**não**_ precisa registrar o dispositivo usando o aplicativo do Portal da Empresa.
 
@@ -485,7 +485,7 @@ Veja seguir as maneiras comuns de um aplicativo ser configurado com a ADAL. Loca
     | NonBrokerRedirectURI | Um URI de redirecionamento válido para o aplicativo ou `urn:ietf:wg:oauth:2.0:oob` por padrão. <br><br> Configure o valor como um URI de redirecionamento aceitável para o ClientID do seu aplicativo.
     | SkipBroker | **True** |
 
-## <a name="app-protection-policy-without-device-enrollment"></a>Política de proteção do aplicativo sem registro de dispositivo
+## <a name="app-protection-policy-without-device-enrollment"></a>Política de proteção de aplicativo sem registro de dispositivo
 
 ### <a name="overview"></a>Visão geral
 Política de proteção de aplicativo do Intune sem registro do dispositivo, também conhecido como APP-WE ou MAM-WE, permite que os aplicativos sejam gerenciados pelo Intune sem a necessidade de o dispositivo ser registrado no MDM do Intune. O aplicativo-funciona com ou sem registro do dispositivo. O Portal da Empresa ainda é necessário para ser instalado no dispositivo, mas o usuário não precisa entrar no Portal da Empresa e registrar o dispositivo.
@@ -875,7 +875,7 @@ Você também pode substituir um método no `MAMActivity` se quiser que o aplica
 
 ### <a name="implicit-identity-changes"></a>Alterações de identidade implícitas
 
-Além da capacidade do aplicativo de definir a identidade, um thread ou a identidade de um contexto pode mudar com base na entrada de dados de outro aplicativo orientado para Intune que tenha política de proteção de aplicativo.
+Além da capacidade do aplicativo de definir a identidade, um thread ou uma identidade de contexto pode ser alterada com base na entrada de dados de um outro aplicativo gerenciado pelo Intune que tenha uma política de proteção de aplicativo.
 
 #### <a name="examples"></a>Exemplos
 
@@ -1353,6 +1353,32 @@ Veja abaixo uma lista completa de atributos de estilo permitidos, os elementos d
 | Cor de ênfase | Borda da caixa de PIN quando realçada <br> Hiperlinks |accent_color | Cor |
 | Logotipo do aplicativo | Ícone grande que aparece na tela de PIN do aplicativo do Intune | logo_image | Desenhável |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Exigindo prompt de logon de usuário para um registro de serviço APP-WE automático, exigindo políticas de proteção de aplicativo do Intune para usar o aplicativo de LOB Android integrado ao SDK e habilitando o SSO da ADAL (opcional)
+
+Este é um guia para exigir o prompt do usuário na inicialização do aplicativo para um registro de serviço de APP-WE automático, (chamado de **registro padrão**, nesta seção), exigindo políticas de proteção de aplicativo do Intune para permitir que apenas usuários protegidos pelo Intune usem seu aplicativo de LOB Android integrado ao SDK. Ele também aborda como habilitar o SSO para o aplicativo de LOB Android integrado ao SDK. Esse procedimento **não** é compatível com aplicativos da Store que podem ser usados por usuários que não são do Intune.
+
+> [!NOTE] 
+> Os benefícios do **registro padrão** incluem um método simplificado de obter a política de serviço do APP-WE para um aplicativo no dispositivo.
+
+### <a name="general-requirements"></a>Requisitos gerais
+* A equipe do SDK do Intune exigirá a ID do aplicativo. Uma maneira de localizar isso é pelo [Portal do Azure](https://portal.azure.com/), em **Todos os Aplicativos**, na coluna **ID do Aplicativo**. Uma boa maneira de contatar a equipe do SDK do Intune é enviando um email para msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Trabalhando com o SDK do Intune
+Essas instruções são específicas para todos os aplicativos Android e Xamarin que devem exigir políticas de proteção de aplicativo do Intune para serem usados em um dispositivo de usuário final.
+
+1. Configure a ADAL usando as etapas definidas no [Guia do SDK do Intune para Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> O termo "ID do cliente" vinculado ao aplicativo é o mesmo que o termo "ID do aplicativo" do Portal do Azure. 
+* Para habilitar o SSO, é necessária a "Configuração da ADAL comum" nº2.
+
+2. Habilite o registro padrão, colocando o seguinte valor no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Essa deve ser a única integração de MAM-WE no aplicativo. Se houver outras tentativas de chamar APIs MAMEnrollmentManager, poderão ocorrer conflitos.
+
+3. Habilite a política de MAM necessária colocando o seguinte valor no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Isso força o usuário a baixar o Portal da Empresa no dispositivo e concluir o fluxo de registro padrão antes de usar.
+
 ## <a name="limitations"></a>Limitações
 
 ### <a name="file-size-limitations"></a>Limitações de tamanho do arquivo
@@ -1380,7 +1406,7 @@ Para grandes bases de código que são executadas sem o [ProGuard](http://progua
     
 ### <a name="exported-services"></a>Serviços exportados
 
- O arquivo AndroidManifest.xml incluído no SDK de Aplicativos do Intune contém **MAMNotificationReceiverService**, que deve ser um serviço exportado para permitir que o Portal da Empresa envie notificações para um aplicativo esclarecido. O serviço verifica o chamador para garantir que apenas o Portal da Empresa tenha permissão para enviar notificações.
+ O arquivo AndroidManifest.xml incluído no SDK de Aplicativo do Intune contém o **MAMNotificationReceiverService**, que deve ser um serviço exportado para permitir que o Portal da Empresa envie notificações para um aplicativo gerenciado. O serviço verifica o chamador para garantir que apenas o Portal da Empresa tenha permissão para enviar notificações.
 
 ### <a name="reflection-limitations"></a>Limitações de reflexão
 Algumas classes base do MAM (por exemplo, MAMActivity, MAMDocumentsProvider) contêm métodos (com base em suas classes base originais do Android) que usam tipos de parâmetro ou de retorno presentes apenas acima de certos níveis de API. Por esse motivo, talvez nem sempre seja possível usar reflexão para enumerar todos os métodos de componentes de aplicativos. Essa restrição não está limitada ao MAM; é a mesma restrição que se aplicaria se o aplicativo em si implementasse esses métodos de classes base do Android.
