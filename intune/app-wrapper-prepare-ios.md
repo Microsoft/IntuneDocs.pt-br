@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -53,7 +53,6 @@ Antes de executar a Ferramenta de Disposição do Aplicativo, é necessário ate
   * O aplicativo de entrada deve ter os direitos definidos antes de ser processado pela Ferramenta de Disposição do Aplicativo do Intune. Os [direitos](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) concedem permissões adicionais ao aplicativo, bem como funcionalidades além daquelas normalmente concedidas. Consulte [Configurando direitos de aplicativo](#setting-app-entitlements) para obter instruções.
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Pré-requisitos do Desenvolvedor da Apple para a Ferramenta de Disposição do Aplicativo
-
 
 Para distribuir aplicativos encapsulados exclusivamente para os usuários de sua organização, você precisa de uma conta no [Programa Corporativo do Desenvolvedor da Apple](https://developer.apple.com/programs/enterprise/) e várias entidades para autenticação do aplicativo vinculadas à sua conta de Desenvolvedor da Apple.
 
@@ -204,8 +203,8 @@ Você pode usar os seguintes parâmetros de linha de comando com a Ferramenta de
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Exibe informações de uso detalhadas das propriedades de linha de comando disponíveis para a Ferramenta de Disposição do Aplicativo.|
 |**-v**|(Opcional) Produz mensagens detalhadas no console. Recomendamos o uso desse sinalizador para depurar quaisquer erros.|
-|**-e**| (Opcional) Use esse sinalizador para que a Ferramenta de Disposição do Aplicativo remova direitos ausentes conforme processa o aplicativo. Consulte Configurando direitos de aplicativo para obter detalhes.|
-|**-xe**| (Opcional) Imprime informações sobre as extensões do iOS no aplicativo e quais direitos são necessários para usá-las. Consulte Configurando direitos de aplicativo para obter detalhes. |
+|**-e**| (Opcional) Use esse sinalizador para que a Ferramenta de Disposição do Aplicativo remova direitos ausentes conforme processa o aplicativo. Consulte [Definindo direitos de aplicativo](#setting-app-entitlements) para obter mais detalhes.|
+|**-xe**| (Opcional) Imprime informações sobre as extensões do iOS no aplicativo e quais direitos são necessários para usá-las. Consulte [Definindo direitos de aplicativo](#setting-app-entitlements) para obter mais detalhes. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Use esta opção se seu aplicativo precisar de perfis de provisionamento de extensão.|
 |**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use este sinalizador na frente do arquivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se você optar por usar o modelo plist para especificar o restante das propriedades IntuneMAMPackager, como -i, -o e -p. Consulte Usar um plist para argumentos de entrada. |
 |**-b**|(Opcional) Use -b sem um argumento se você quiser que o aplicativo de saída encapsulado tenha a mesma versão do pacote que o aplicativo de entrada (não recomendado). <br/><br/> Use `-b <custom bundle version>` se você quiser que o aplicativo encapsulado tenha um CFBundleVersion personalizado. Se você optar por especificar um CFBundleVersion personalizado, recomendamos incrementar o CFBundleVersion do aplicativo nativo pelo componente menos significativo, como 1.0.0 -> 1.0.1. |
@@ -244,6 +243,16 @@ O aplicativo encapsulado é salvo na pasta de saída especificada anteriormente.
 > Ao carregar um aplicativo encapsulado, você poderá tentar atualizar uma versão mais antiga do aplicativo se uma versão mais antiga (encapsulada ou nativa) já tiver sido implantada no Intune. Se houver um erro, carregue o aplicativo como um novo aplicativo e exclua a versão mais antiga.
 
 Agora você pode implantar o aplicativo em seus grupos de usuários e as políticas de proteção de aplicativo de destino no aplicativo. O aplicativo será executado no dispositivo usando as políticas de proteção de aplicativo que você especificar.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Com que frequência devo reencapsular meu aplicativo iOS com a ferramenta de encapsulamento de aplicativo do Intune?
+Os cenários principais em que você precisa reencapsular os aplicativos são da seguinte maneira:
+* O próprio aplicativo lançou uma nova versão. A versão anterior do aplicativo foi encapsulada e carregada no console do Intune.
+* A ferramenta de encapsulamento de aplicativo do Intune para iOS lançou uma nova versão que permite a correção dos principais bugs, além de recursos novos e específicos da política de proteção de aplicativo do Intune. Isso ocorre após seis a oito semanas por meio do repositório GitHub da [Ferramenta de encapsulamento de aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+
+Para iOS, embora seja possível encapsular com um perfil de cert/provisionamento diferente do original usado para assinar o aplicativo, se os direitos especificados no aplicativo não forem incluídos no novo perfil de provisionamento, o encapsulamento falhará. Usar a opção de linha de comando "-e", que remove todos os direitos ausentes do aplicativo, para forçar o encapsulamento a não falhar nesse cenário pode causar a quebra da funcionalidade no aplicativo.
+
+Algumas práticas recomendadas para reencapsulamento incluem:
+* Garantir que um perfil de provisionamento diferente tenha todos os direitos necessários como qualquer perfil de provisionamento anterior. 
 
 ## <a name="error-messages-and-log-files"></a>Mensagens de erro e arquivos de log
 Use as seguintes informações para solucionar problemas com a ferramenta de encapsulamento de aplicativo.

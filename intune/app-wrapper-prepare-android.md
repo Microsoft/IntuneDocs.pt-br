@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 1673fa1e9c580c1554537530341f87b1580e79eb
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -81,7 +81,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquiv
 |Propriedade|Informações do|Exemplo|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Caminho do aplicativo Android de origem (.apk).| |
-|**-OutputPath**&lt;String&gt;|Caminho para o aplicativo Android de saída. Se esse for o mesmo caminho do diretório que InputPath, o pacote falhará.| |
+ |**-OutputPath**&lt;String&gt;|Caminho para o aplicativo Android de saída. Se esse for o mesmo caminho do diretório que InputPath, o pacote falhará.| |
 |**-KeyStorePath**&lt;String&gt;|Caminho para o arquivo de repositório de chaves que contém o par de chaves pública/privada para a assinatura.|Por padrão, os arquivos do repositório de chaves são armazenados em "C:\Arquivos de Programas (x86)\Java\jreX.X.X_XX\bin." |
 |**-KeyStorePassword**&lt;SecureString&gt;|Senha usada para descriptografar o armazenamento de chave. O Android requer que todos os pacotes de aplicativos (.apk) sejam assinados. Use o Java keytool para gerar o KeyStorePassword. Leia mais sobre o Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) aqui.| |
 |**-KeyAlias**&lt;String&gt;|Nome da chave a ser usada para assinatura.| |
@@ -115,7 +115,7 @@ O aplicativo encapsulado e um arquivo de log são gerados e salvos no caminho de
 
 ## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>Com que frequência eu devo reencapsular o meu aplicativo Android com a ferramenta de encapsulamento de aplicativos do Intune?
 Os cenários principais em que você precisa reencapsular os aplicativos são da seguinte maneira:
-* O próprio aplicativo lançou uma nova versão.
+* O próprio aplicativo lançou uma nova versão. A versão anterior do aplicativo foi encapsulada e carregada no console do Intune.
 * A ferramenta de encapsulamento de aplicativo Intune para Android lançou uma nova versão que permite que correções de bugs chave ou recursos novos e específicos de política de proteção de aplicativo Intune. Isso ocorre a cada 6 a 8 semanas por meio do repositório GitHub para a [Ferramenta de Encapsulamento de Aplicativo do Microsoft Intune App](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Algumas práticas recomendadas para reencapsulamento incluem: 
@@ -144,6 +144,32 @@ Para evitar potenciais falsificações, divulgações de informações e aumento
 -   Certifique-se de que o aplicativo é proveniente de uma fonte confiável.
 
 -   Proteja o diretório de saída que contém o aplicativo encapsulado. Considere usar um diretório de nível de usuário para a saída.
+
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Exigindo prompt de logon de usuário para um registro de serviço APP-WE automático, exigindo políticas de proteção de aplicativo do Intune para usar o aplicativo de LOB Android encapsulado e habilitando o SSO da ADAL (opcional)
+
+Este é um guia para exigir o prompt do usuário na inicialização do aplicativo para um registro de serviço de APP-WE automático, (chamado de **registro padrão**, nesta seção), exigindo políticas de proteção de aplicativo do Intune para permitir que apenas usuários protegidos pelo Intune usem seu aplicativo de LOB Android encapsulado. Ele também aborda como habilitar o SSO para o aplicativo de LOB Android encapsulado. 
+
+> [!NOTE] 
+> Os benefícios do **registro padrão** incluem um método simplificado de obter a política de serviço do APP-WE para um aplicativo no dispositivo.
+
+### <a name="general-requirements"></a>Requisitos gerais
+* A equipe do SDK do Intune exigirá a ID do aplicativo. Uma maneira de localizar isso é pelo [Portal do Azure](https://portal.azure.com/), em **Todos os Aplicativos**, na coluna **ID do Aplicativo**. Uma boa maneira de contatar a equipe do SDK do Intune é enviando um email para msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Trabalhando com o SDK do Intune
+Essas instruções são específicas para todos os aplicativos Android e Xamarin que devem exigir políticas de proteção de aplicativo do Intune para serem usados em um dispositivo de usuário final.
+
+1. Configure a ADAL usando as etapas definidas no [Guia do SDK do Intune para Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> O termo "ID do cliente" vinculado ao aplicativo é o mesmo que o termo "ID do aplicativo" do Portal do Azure vinculado ao aplicativo. 
+* Para habilitar o SSO, é necessária a "Configuração da ADAL comum" nº2.
+
+2. Habilite o registro padrão, colocando o seguinte valor no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Essa deve ser a única integração de MAM-WE no aplicativo. Se houver outras tentativas de chamar APIs MAMEnrollmentManager, poderão ocorrer conflitos.
+
+3. Habilite a política de MAM necessária colocando o seguinte valor no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Isso força o usuário a baixar o Portal da Empresa no dispositivo e concluir o fluxo de registro padrão antes de usar.
 
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)

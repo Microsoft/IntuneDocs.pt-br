@@ -1,6 +1,6 @@
 ---
-title: Como usar o Azure AD para acessar a API do Graph no Intune
-description: "Descreve as etapas necessárias para que os aplicativos usem o Azure AD para acessar a API do Graph no Intune"
+title: Como usar o Azure AD para acessar APIs do Intune no Microsoft Graph
+description: "Descreve as etapas necessárias para que os aplicativos usem o Azure AD para acessar as APIs do Intune no Microsoft Graph."
 keywords: "funções de permissão PowerShell C# Intune API do Graph"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Como usar o Azure AD para acessar a API do Graph no Intune
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como usar o Azure AD para acessar as APIs do Intune no Microsoft Graph
 
-A [API do Microsoft Graph](https://developer.microsoft.com/graph/) agora dá suporte ao Microsoft Intune com APIs e funções de permissão específicas.  A API do Graph usa o Azure AD (Azure Active Directory) para autenticação e controle de acesso.  
-O acesso à API do Graph no Intune exige:
+A [API do Microsoft Graph](https://developer.microsoft.com/graph/) agora dá suporte ao Microsoft Intune com APIs e funções de permissão específicas.  A API do Microsoft Graph usa o Azure Active Directory (Azure AD) para autenticação e controle de acesso.  
+O acesso às APIs do Intune no Microsoft Graph requer:
 
 - Uma ID de aplicativo com:
 
-    - Permissão para chamar o Azure AD e as APIs do Graph.
+    - Permissão para chamar o Azure AD e as APIs do Microsoft Graph.
     - Escopos de permissões relevantes para as tarefas de aplicativo específicas.
 
 - Credenciais do usuário com:
@@ -38,11 +38,11 @@ O acesso à API do Graph no Intune exige:
 
 Este artigo:
 
-- Mostra como registrar um aplicativo com acesso à API do Graph e a funções de permissão relevantes.
+- Mostra como registrar um aplicativo com acesso à API do Microsoft Graph e às funções de permissão relevantes.
 
-- Descreve as funções de permissão da API do Graph no Intune.
+- Descreve as funções de permissão da API do Intune.
 
-- Fornece exemplos de autenticação da API do Graph no Intune para C# e PowerShell.
+- Fornece exemplos de autenticação da API do Intune para C# e PowerShell.
 
 - Descreve como dar suporte a vários locatários
 
@@ -53,9 +53,9 @@ Para obter mais informações, consulte:
 - [Integrando aplicativos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Entender o OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Registrar aplicativos para usar a API do Graph
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Registrar aplicativos para usar a API do Microsoft Graph
 
-Para registrar um aplicativo para usar a API do Graph:
+Para registrar um aplicativo para usar a API do Microsoft Graph:
 
 1.  Entre no [portal do Azure](https://portal.azure.com) usando credenciais administrativas.
 
@@ -127,15 +127,15 @@ Neste ponto, você também poderá:
 
 ## <a name="intune-permission-scopes"></a>Escopos de permissões do Intune
 
-O Azure AD e a API do Graph usam escopos de permissões para controlar o acesso a recursos corporativos.  
+O Azure AD e o Microsoft Graph usam escopos de permissão para controlar o acesso aos recursos corporativos.  
 
-Os escopos de permissões (também chamados de _escopos do OAuth_) controlam o acesso a entidades específicas do Intune e suas propriedades. Esta seção resume os escopos de permissões para os recursos da API do Graph no Intune.
+Os escopos de permissões (também chamados de _escopos do OAuth_) controlam o acesso a entidades específicas do Intune e suas propriedades. Esta seção resume os escopos de permissão para os recursos da API do Intune.
 
 Para saber mais:
 - [Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Escopos de permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Ao conceder permissão para a API do Graph, você pode especificar os seguintes escopos para controlar o acesso aos recursos do Intune: a tabela a seguir resume os escopos de permissões da API do Graph no Intune.  A primeira coluna mostra o nome do recurso, conforme exibido no portal do Azure e a segunda coluna fornece o nome do escopo de permissão.
+Ao conceder permissão para o Microsoft Graph, você pode especificar os seguintes escopos para controlar o acesso aos recursos do Intune: a tabela a seguir resume os escopos de permissões da API do Intune.  A primeira coluna mostra o nome do recurso, conforme exibido no portal do Azure e a segunda coluna fornece o nome do escopo de permissão.
 
 Configuração _Habilitar o Acesso_ | Nome do escopo
 :--|:--
@@ -153,7 +153,7 @@ __Ler a configuração do Microsoft Intune__ | [DeviceManagementServiceConfig.Re
 
 A tabela lista as configurações na ordem em que são exibidas no Portal do Azure. As próximas seções descrevem os escopos em ordem alfabética.
 
-No momento, todos os escopos de permissões do Intune exigem o acesso de administrador.  Isso significa que você precisa ter credenciais correspondentes ao executar aplicativos ou scripts que acessam os recursos da API do Graph no Intune.
+No momento, todos os escopos de permissões do Intune exigem o acesso de administrador.  Isso significa que você precisa de credenciais correspondentes para executar aplicativos ou scripts que acessam recursos da API do Intune.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Ao testar um dos exemplos, você poderá receber erros de status HTTP 403 (Proib
 
 Se isso acontecer, verifique se:
 
-- Você atualizou a ID do aplicativo para uma autorizada a usar a API do Graph e o escopo de permissão `DeviceManagementManagedDevices.Read.All`.
+- Você atualizou a ID do aplicativo para uma ID autorizada a usar a API do Microsoft Graph e o escopo de permissão `DeviceManagementManagedDevices.Read.All`.
 
 - Suas credenciais de locatário dão suporte a funções administrativas.
 

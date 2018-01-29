@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configurações de filtro de conteúdo da Web para dispositivos iOS
 
@@ -47,8 +46,11 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 ## <a name="configure-urls"></a>Configurar URLs
 
 1. Na folha **Filtro de Conteúdo da Web**, escolha uma das configurações a seguir, conforme necessário:
-    - **URLs Permitidas** - na folha **URLs Permitidas**, insira as URLs que você deseja permitir (ignorando o Filtro da Web da Apple) e escolha enter após cada uma.
-    - **URLs Bloqueadas** - na folha **URLs Bloqueadas**, insira as URLs que você deseja bloquear (independentemente das configurações do Filtro da Web da Apple) e escolha enter após cada uma.
+   - **URLs Permitidas** - na folha **URLs Permitidas**, insira as URLs que você deseja permitir (ignorando o Filtro da Web da Apple) e escolha enter após cada uma.
+     > [!NOTE]
+     > As URLs especificadas aqui são aquelas que você não deseja submeter ao filtro da Web da Apple. Essas URLs não representam uma lista com os únicos sites permitidos. Se for isso o que você deseja, use **Somente sites específicos**.
+
+   - **URLs Bloqueadas** - na folha **URLs Bloqueadas**, insira as URLs que você deseja bloquear (independentemente das configurações do Filtro da Web da Apple) e escolha enter após cada uma.
 2. Ao terminar, clique em **OK**.
 
 

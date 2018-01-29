@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>RBAC (controle de administração baseada em funções) com o Intune
 
@@ -61,6 +61,18 @@ As seguintes funções são internas do Intune e você pode atribuí-las a grupo
 - **Gerente de Política e Perfil**: gerencia a política de conformidade, os perfis de configuração, o registro da Apple e os identificadores de dispositivo corporativo.
 - **Operador Somente Leitura**: exibe informações de usuário, dispositivo, registro, configuração e aplicativo. Não é possível fazer alterações no Intune.
 - **Gerente de Aplicativo**: gerencia aplicativos móveis e gerenciados e pode ler informações do dispositivo.
+- **Administrador de Escola**: gerencia dispositivos Windows 10 no [Intune para Educação](introduction-intune-education.md) e pode executar as seguintes ações: 
+
+|Permissão|Operação|
+|---|---|
+|Dados de Auditoria|Ler|
+|DeviceConfigurations|Atribuir, criar, excluir, ler, atualizar|
+|Gerenciadores de Registro de Dispositivos|Ler, atualizar|
+|Dispositivos Gerenciados|Ler, atualizar<!--, Delete [To be added in 1803]-->|
+|Aplicativos móveis|Atribuir, criar, excluir, ler, atualizar|
+|Relatórios|Ler|
+|Ações remotas|Limpar computador, reinicializar, bloqueio remoto, desativar, sincronizar dispositivos, apagar|
+|Organização|Ler|
 
 ### <a name="to-assign-a-built-in-role"></a>Para atribuir uma função interna
 
