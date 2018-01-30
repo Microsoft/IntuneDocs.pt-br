@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d8dc077c3da1c9bfe302b4808142f8b7a1a60cf
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: bd594b22c3e14211261c487da2f3dbcb5243cf98
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Windows 10 no Intune?
 
@@ -32,7 +33,7 @@ Quando instala o aplicativo de Portal da Empresa e usa o aplicativo para registr
 
 -   configurar automaticamente sua conta de email da empresa.
 
--   redefinir seu telefone para as configurações de fábrica, caso ele seja perdido ou roubado.
+-   Redefinir seu telefone para as configurações de fábrica, caso ele seja perdido ou roubado.
 
 Para encontrar as etapas para registrar, consulte [Registrar seu dispositivo Windows 10 Mobile ou Windows 10 Desktop no Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Para saber mais sobre o que o suporte de sua empresa pode ver no seu dispositivo, consulte [Quais informações o suporte de minha empresa poderá ver quando eu registrar meu dispositivo no Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 

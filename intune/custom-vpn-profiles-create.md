@@ -5,7 +5,7 @@ description: "Use configurações personalizadas para criar perfis de VPN no Int
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc1374c3ccb60ed5a3dc57449f5c772963b8efc7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 70af9ce41efa7f52987e1103b89493b4cf200091
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Como criar perfis de VPN personalizados no Microsoft Intune
 
 ## <a name="create-a-custom-configuration"></a>Criar uma configuração personalizada
 É possível usar políticas de configuração personalizada do Intune para criar perfis VPN para:
 
-* Dispositivos que executam o Android 4 e posterior
+* Dispositivos que executam o Android 4 e posterior.
 * Dispositivos registrados que executam o Windows 8.1 e versões posteriores
 * Dispositivos que executam o Windows Phone 8.1 e versões posteriores
 * Dispositivos registrados que executam o Windows 10 Desktop 

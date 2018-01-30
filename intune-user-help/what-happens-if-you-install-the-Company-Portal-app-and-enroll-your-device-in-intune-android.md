@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 49ddadb00be035d052f83fd8f21cbdb17e3401dc
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 25a5b58928b796efd78ed35128f4a62db8f983b6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>O que acontece quando você instala o aplicativo Portal da Empresa e registra o dispositivo Android no Intune?
 
@@ -32,7 +33,7 @@ Depois de instalar o aplicativo Portal da Empresa e registrar o dispositivo Andr
 
 -   configurar automaticamente sua conta de email da empresa.
 
--   redefinir seu telefone para as configurações de fábrica, caso ele seja perdido ou roubado.
+-   Redefinir seu telefone para as configurações de fábrica, caso ele seja perdido ou roubado.
 
 Ao registrar seu dispositivo Android, você permite que o suporte de sua empresa acesse o dispositivo. Ele pode fazer o seguinte:
 
