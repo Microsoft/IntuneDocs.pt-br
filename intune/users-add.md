@@ -4,7 +4,7 @@ description: "Sincronizar usuários locais com o Azure AD e conceder permissões
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4efc8be824acc3db869529d39617f376327b3193
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Adicionar usuários e conceder permissão administrativa para o Intune
 
@@ -82,7 +82,7 @@ Depois de acrescentar usuários à sua assinatura do Intune, é recomendável co
   ![Captura de tela de atribuição de funções no Office 365](./media/office-assign-roles-open.png)
 5. Escolha a permissão de administrador a ser concedida na lista de funções disponíveis.
 ![Imagem da atribuição de funções no portal do Office 365.](./media/office-assign-roles.png)
-6. Escolha **Salvar**.
+6. Selecione **Salvar**.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Conceder permissões de administrador no Portal do Azure
 1. Entre no [Portal do Azure](https://www.office.com/signin) com uma conta de administrador global.

@@ -4,7 +4,7 @@ description: "Este artigo ajuda você a determinar os requisitos de cenários de
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de caso de uso
 
@@ -30,7 +30,7 @@ Você também pode ter grupos organizacionais para o cenário de caso de uso cor
 
 Estes são alguns exemplos de requisitos de casos de uso de uma organização, mostrando diferentes conjuntos de requisitos para cada cenário de caso de uso e subcaso de uso, grupo organizacional e plataforma de dispositivo móvel. Também é possível usar a seguinte tabela para inserir os requisitos de caso de uso de sua organização:
 
-| **Casos de uso** | **Subcasos de uso** | **Grupos** | **Plataformas de dispositivos** | **Requirements** |
+| **Casos de uso** | **Subcasos de uso** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
 |:---:|:---:|:---:|:---:|:---:|
 | Corporativo | Operador de informações | RH, Finanças | iOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                          
 | Corporativo | Executivos | RH, Finanças | iOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                         
