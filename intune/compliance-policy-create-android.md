@@ -5,7 +5,7 @@ description: "Saiba como criar uma política de conformidade para dispositivos A
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android no Intune
 
@@ -114,10 +114,10 @@ A tabela abaixo descreve como as configurações não compatíveis são gerencia
 | **Configuração de senha ou PIN** |  Em Quarentena |
 | **Criptografia de dispositivo** | Em Quarentena |
 | **Dispositivo desbloqueado ou com raiz** | Em Quarentena (não é uma configuração) |
-| **perfil de email** | Não aplicável |
+| **perfil de email** | Não Aplicável |
 | **Versão mínima do SO** | Em Quarentena |
 | **Versão máxima do SO** |   Em Quarentena |
-| **Atestado de integridade do Windows** | Não aplicável |
+| **Atestado de integridade do Windows** | Não Aplicável |
 
 --------------------------
 

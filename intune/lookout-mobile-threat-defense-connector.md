@@ -5,7 +5,7 @@ description: "Configure o conector da Defesa Contra Ameaças Móveis do Lookout 
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c13aa920358526deddcdb912833217c88f27371
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças Móveis do Lookout com o Intune
 
@@ -37,7 +37,7 @@ A política de conformidade no Intune inclui uma regra para a Defesa contra Amea
 
 Se o dispositivo for considerado fora de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online poderá ser bloqueado. Os usuários nos dispositivos bloqueados recebem etapas para resolver o problema e obter o acesso novamente. As diretrizes são iniciadas por meio do aplicativo Lookout for Work.
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas com Suporte
 Há suporte para as seguintes plataformas no Lookout quando registradas no Intune:
 * **Android 4.1 e posterior**
 * **iOS 8 e posterior** Para obter mais informações sobre o suporte a plataformas e idiomas, visite o [site do Lookout](https://personal.support.lookout.com/hc/articles/114094140253).
@@ -63,7 +63,7 @@ Quando aplicativos mal-intencionados, como malware, são detectados nos disposit
 
 ![Diagrama que mostra a política de acesso condicional bloqueando o acesso quando for determinado que o dispositivo não está em conformidade, devido a aplicativos mal-intencionados no dispositivo](./media/malicious-apps-blocked.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![diagrama mostrando a política de acesso condicional concedendo acesso quando é determinado que o dispositivo é compatível após a correção](./media/malicious-apps-unblocked.png)
 
