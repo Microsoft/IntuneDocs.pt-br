@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear remotamente seu dispositivo do site do Portal da Empresa
 
@@ -33,14 +34,13 @@ Para ficar seguro, você pode bloqueá-lo usando a opção de Bloqueio Remoto no
 * Android
 * iOS
 * macOS
+* Windows 10
 * Windows 10 Mobile (se o dispositivo já tinha uma senha definida)
 * Windows Phone 8.1 (se o dispositivo já tinha uma senha definida)
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar o Bloqueio Remoto para bloquear seu dispositivo
 
-1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
-
-  ![Uma imagem do site do Portal da Empresa com um menu lateral expandido no lado esquerdo da tela, com os botões Início, Todos os Aplicativos, Meus Dispositivos, Assistência Técnica e Saída.](/media/iwp-expanded-sidebar.png)
+1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __Menu__ e, em seguida, selecione __Meus dispositivos__.
 
 2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja bloquear.
 

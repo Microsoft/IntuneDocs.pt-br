@@ -4,23 +4,24 @@ description: Descreve como registrar um dispositivo Android no Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 89262f4fecba6aa8d76efd7fd5bbe415d9048204
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrar seu dispositivo Android no Intune
 
@@ -52,7 +53,7 @@ Antes ou após o registro, você poderá ser solicitado a escolher uma categoria
 
 6.  Na tela **Configuração de Acesso da Empresa**, toque em **CONTINUAR**.
 
-    ![Tela Configuração de Acesso da Empresa](/intune/media/android_cp_enroll_01_1709_new.png)
+    ![Tela Configuração de acesso da empresa](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > Os triângulos amarelos não significam que você já tem um erro. Esses ícones indicam que ainda há etapas a serem concluídas no processo de registro.
@@ -116,11 +117,11 @@ Antes ou após o registro, você poderá ser solicitado a escolher uma categoria
 
     ![Problemas de conformidade do dispositivo expandidos](/intune/media/android_cp_enroll_04_post_1709.png)
 
-    ![Tela Configuração de Acesso da Empresa](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Tela Configuração de acesso da empresa](./media/and-enroll-9d-comp-access-setup.png)  
 
 15. Na tela **Configuração de Acesso da Empresa completa**, toque em **CONCLUÍDO**. Agora, seu dispositivo está registrado.
 
-    ![Tela Configuração de Acesso da Empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
+    ![Tela Configuração de acesso da empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
 
 Antes de tentar instalar aplicativos corporativos, acesse **Configurações** &gt; **Segurança** e ative **Fontes desconhecidas**. Se não ativar essa opção antes de tentar instalar os aplicativos, você verá a mensagem: “Instalação bloqueada”. Por motivos de segurança, seu dispositivo está definido para bloquear as instalações de aplicativos obtidos de fontes desconhecidas." Você pode tocar em **Configurações** na caixa de diálogo de erro para ir para a opção **Fontes desconhecidas**.
 
