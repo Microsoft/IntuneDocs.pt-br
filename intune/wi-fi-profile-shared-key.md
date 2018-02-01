@@ -5,7 +5,7 @@ description: "Use um perfil personalizado do Intune para criar um perfil de Wi-F
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Use um perfil de dispositivo personalizado para criar um perfil de Wi-Fi com uma chave pré-compartilhada
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ Você também pode criar o arquivo XML de uma conexão Wi-Fi existente:
 Antes de implantar um perfil de Wi-Fi com PSK, verifique se o dispositivo pode se conectar ao ponto de extremidade diretamente.
 
 Ao rotear chaves (senhas ou frases secretas), espere o tempo de inatividade e as implantações de plano adequadamente. Considere enviar por push novos perfis de Wi-Fi durante horário não comercial. Além disso, avise os usuários que a conectividade pode ser afetada.
- 
-Para garantir uma experiência de transição suave e para fornecer atualizações de política oportunas, os dispositivos devem manter pelo menos um canal de comunicação aberto com o Intune. Para fazer isso, use a conectividade do celular ou forneça acesso Wi-Fi para convidado que conecte usuários apenas a pontos de extremidade do Intune.
 
-
+Para garantir uma experiência de transição suave, verifique se o dispositivo do usuário final tem uma conexão alternativa com a Internet. Por exemplo, o usuário final deve ser capaz de voltar para a WiFi de convidado (ou alguma outra rede WiFi) ou ter conectividade de celular para se comunicar com o Intune. Isso permite que o usuário continue recebendo atualizações de política quando o perfil de WiFi corporativo for atualizado no dispositivo.

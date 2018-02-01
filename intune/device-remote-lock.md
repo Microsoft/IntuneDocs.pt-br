@@ -5,8 +5,8 @@ description: Saiba como usar o Intune para bloquear os dispositivos gerenciados 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 11/21/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d27b709ba8d4ff1d8fb4417a217ad008c19c36
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>Bloquear dispositivos gerenciados remotamente com o Intune
 
@@ -29,14 +29,19 @@ O dispositivo **Bloqueio remoto** bloqueia o dispositivo selecionado. O propriet
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
-- Windows – Sem suporte
-- Windows Phone – Com suporte no Windows 8.1 e versões posteriores
-- iOS – Com suporte
-- macOS – Com suporte
+O bloqueio remoto é compatível com as seguintes plataformas:
 
-    > [!Note]  
-    > Defina um PIN de recuperação de 6 dígitos. Quando bloqueados, a folha de **Visão geral do dispositivo** exibe o PIN até que outra ação do dispositivo seja enviada.
-- Android – Com suporte
+|Plataforma|Status de suporte|
+|---|---|
+|Android|Sim|
+|iOS|Sim|
+|macOS|Sim|
+|Windows 10|Sim|
+|Windows 10 Mobile|Sim|
+|Windows Phone|Sim, para Windows Phone 8.1 e posterior|
+
+> [!NOTE]  
+> Para dispositivos macOS, você define um PIN de recuperação de 6 dígitos. Quando bloqueados, a folha de **Visão geral do dispositivo** exibe o PIN até que outra ação do dispositivo seja enviada.
 
 ## <a name="how-to-remote-lock-a-device"></a>Como bloquear um dispositivo remotamente
 

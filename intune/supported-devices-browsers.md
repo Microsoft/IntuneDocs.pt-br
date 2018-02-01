@@ -4,7 +4,7 @@ description: Lista as plataformas de dispositivo e navegadores com suporte para 
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>Dispositivos e navegadores com suporte
+# <a name="supported-operating-systems-and-browsers"></a>Navegadores e sistemas operacionais compatíveis
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Este artigo é voltado para os administradores de sistema responsáveis pelo gerenciamento de dispositivo na empresa. Para obter ajuda sobre como instalar o Intune em seu telefone, consulte [usando dispositivos gerenciados para realizar seu trabalho](/intune-user-help/company-portal-frequently-asked-questions).
+Este artigo é voltado para os administradores de sistema responsáveis pelo gerenciamento de dispositivo na empresa. Para obter ajuda para instalar o Intune em seu dispositivo, consulte [Usando dispositivos gerenciados para realizar o trabalho](/intune-user-help/company-portal-frequently-asked-questions).
 
 Antes de iniciar a configuração do Microsoft Intune, examine os requisitos a seguir:
 
-- [Dispositivos e computadores com suporte](#intune-supported-devices)
+- [Sistemas operacionais com suporte](#intune-supported-operating-systems)
 - [Lista de navegadores da Web com suporte para o Intune](#intune-supported-web-browsers)
 
 Familiarize-se também com o [uso de largura de banda da rede do Intune](network-bandwidth-use.md) ([Portal Clássico](/intune-classic/get-started/network-bandwidth-use)).
 
-## <a name="intune-supported-devices"></a>Dispositivos com suporte do Intune
+## <a name="intune-supported-operating-systems"></a>Sistemas operacionais compatíveis com o Intune
 
-É possível gerenciar os seguintes dispositivos com o gerenciamento de dispositivo móvel do Intune:
+É possível gerenciar dispositivos que executam os seguintes sistemas operacionais:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ A seguinte lista contém modelos de dispositivos Samsung que não oferecem supor
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-O Intune não pode ser usado para gerenciar sistemas operacionais Windows Server.
 
 ### <a name="windows-pc-software-client"></a>Cliente de software de computadores Windows
 

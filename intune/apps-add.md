@@ -5,8 +5,8 @@ description: "Estes procedimentos ajudam você a deixar seus aplicativos no Intu
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 07/17/2017
+manager: dougeby
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,39 +15,90 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b33e15e8bd6597464bfe54a5152a872889d08e15
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar um aplicativo no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Antes de gerenciar e atribuir aplicativos aos seus usuários, você deve adicioná-los ao Intune. O Intune dá suporte a uma ampla variedade de tipos diferentes de aplicativos e as opções podem ser diferentes para cada tipo.
+Antes que possa atribuir, monitorar, configurar ou proteger aplicativos, você precisa adicioná-los ao Intune. O Intune é compatível com uma ampla variedade de tipos de aplicativos diferentes. As opções disponíveis são diferentes para cada tipo de aplicativo.
 
 O Intune permite que você adicione e atribua esses tipos de aplicativo:
+| Tipo de aplicativo                                  | Instalação                                                                  | Updates                       |
+|------------------------------------------ |----------------------------------------------------------------------------   |---------------------------    |
+| Aplicativos na Web                           | O Intune cria um atalho para o aplicativo Web na tela inicial do dispositivo          | As atualizações de aplicativo são automáticas     |
+| Aplicativos escritos internamente (linha de negócios)  | O Intune instala o aplicativo no dispositivo (você fornece o arquivo de instalação)    | É necessário atualizar o aplicativo       |
+| Aplicativos da loja                       | O Intune instala o aplicativo no dispositivo                                       | As atualizações de aplicativo são automáticas     |
 
-![Tipos de aplicativo com suporte no Intune](./media/app-types.png)
 
-Há suporte para as seguintes plataformas.
-
-- Aplicativos da Android Store
-- Aplicativos LOB para Android
-- Aplicativos da iOS Store
-- Aplicativos LOB para iOS
-- Aplicativos Web
-- Aplicativos da Windows Phone 8.1 Store
-- Aplicativos de linha de negócios para Windows Phone (arquivos .xap)
-- Aplicativos da Windows Store
-- Aplicativos de linha de negócios para Windows (apenas arquivos .msi)
+Além de aplicativos Web, o Intune é compatível com as seguintes plataformas específicas para aplicativos da loja e aplicativos de LOB:
+- Aplicativos da loja
+    - Aplicativos da Android Store
+    - Aplicativos da iOS Store
+    - Aplicativos da Windows Phone 8.1 Store
+    - Aplicativos da Windows Store
+    - Aplicativos Android for Work
+    - Aplicativos do Office 365 para Windows
+    - Aplicativos do Office 365 para macOS
+- Crie seu aplicativo – LOB (linha de negócios)
+    - Aplicativos LOB para Android
+    - Aplicativos LOB para iOS
+    - Aplicativos de LOB (linha de negócios) para Windows Phone (arquivos .xap)
+    - Aplicativos de LOB (linha de negócios) para Windows (apenas arquivos .msi)
 
 >[!TIP]
-> Um aplicativo LOB (ou de linha de negócios) é aquele que você instala do arquivo de instalação, em vez de instalar de uma loja de aplicativos. Por exemplo, para instalar um aplicativo LOB para iOS, adicione o respectivo arquivo morto cuja extensão seja .ipa. Normalmente, são aplicativos que você tem gravados internamente.
+> Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo de LOB do iOS, adicione o aplicativo escolhendo **Aplicativo de linha de negócios** como o **Tipo de aplicativo** na folha **Adicionar aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
+
+## <a name="assess-application-requirements"></a>Avaliar os requisitos do aplicativo 
+Como um administrador de TI, você precisa não apenas determinar quais aplicativos seu grupo deve usar, mas precisa determinar também as funcionalidades necessárias para cada grupo e subgrupo. Para cada aplicativo, você precisa determinar as plataformas necessárias, os grupos de usuários que precisam do aplicativo, as políticas de configuração a serem aplicadas a esses grupos e as políticas de proteção a serem aplicadas.  
+
+Além disso, você precisa determinar se é necessário se concentrar no MDM (gerenciamento de dispositivo móvel) ou somente no MAM (gerenciamento de aplicativo móvel). Usar o Intune para gerenciar o dispositivo (gerenciamento de dispositivo móvel) é útil quando:
+- Os usuários precisam um perfil de conectividade corporativo por VPN ou WiFi para serem produtivos.
+- Os usuários precisam que um conjunto de aplicativos seja enviado por push para seus dispositivos.
+- Sua organização precisa manter a conformidade com políticas regulatórias ou outras políticas que chamam controles específicos de MDM (gerenciamento de dispositivo móvel), como segurança ou criptografia.
+
+Usar o Intune para gerenciar aplicativos (gerenciamento de aplicativo móvel) sem gerenciar o dispositivo é útil quando:
+- Você quer permitir que os usuários usem seus próprios dispositivos (BYOD).
+- Você quer fornecer um pop-up único para que os usuários saibam que as proteções de MAM estão em vigor, em vez de notificações contínuas no nível do dispositivo.
+- Você quer estar em conformidade com políticas que exigem menos recursos de gerenciamento de dispositivos pessoais. Por exemplo, você quer gerenciar os dados corporativos para os aplicativos, em vez de gerenciar os dados corporativos para todo o dispositivo.
+
+Para obter mais informações, consulte [Comparar MDM e MAM](byod-technology-decisions.md).
+
+### <a name="determine-who-will-use-the-app"></a>Determinar quem usará o aplicativo
+Após adicionar um aplicativo ao Intune, você pode atribuir um grupo de usuários que podem usar o aplicativo. Primeiro, você precisa determinar o grupo apropriado que deve ter acesso ao aplicativo com base na confidencialidade dos dados que o aplicativo contém. Você precisa incluir ou excluir determinados tipos de funções na sua organização. Por exemplo, somente determinados aplicativos de LOB podem ser necessários para seu grupo de vendas, enquanto pessoas concentradas em engenharia, finanças, RH, ou jurídico podem não precisar usar os aplicativos de LOB. Além disso, seu grupo de vendas pode precisar de proteção de dados adicional e de acesso a serviços corporativos internos em seus dispositivos móveis. Você precisa determinar como esse grupo se conectará aos recursos usando o aplicativo. Os dados que o aplicativo acessa ficarão hospedados na nuvem ou localmente? Além disso, como os usuários se conectarão aos recursos usando o aplicativo? O Intune também dá suporte à habilitação do acesso a aplicativos móveis que precisam de acesso seguro aos dados locais, como servidores de aplicativos de linha de negócios. Normalmente, esse tipo de acesso é feito usando [certificados gerenciados pelo Intune](certificates-configure.md) para controle de acesso, em conjunto com um Gateway de VPN padrão ou proxy no perímetro, como o Proxy de Aplicativo do Microsoft Azure Active Directory. A [Ferramenta de Disposição do Aplicativo e o SDK do Aplicativo](apps-prepare-mobile-application-management.md) do Intune podem ajudar a conter os dados acessados no aplicativo de linha de negócios, de modo que ele não possa passar dados corporativos para serviços ou aplicativos de consumidor.
+
+Use o [Guia de planejamento de implantação, design e implementação do Intune](planning-guide.md) para ajudar a determinar como você identifica os grupos organizacionais associados a cada cenário de caso de uso e caso de subuso do aplicativo. Para obter detalhes de como atribuir aplicativos a grupos, consulte [Como atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md). 
+
+### <a name="determine-the-type-of-app-for-your-solution"></a>Determinar o tipo de aplicativo para sua solução
+Você pode escolher entre os seguintes tipos de aplicativo:
+- **Aplicativos na Web** – um aplicativo Web é um aplicativo cliente-servidor. O servidor fornece o aplicativo Web, que inclui a interface do usuário, o conteúdo e a funcionalidade. Além disso, plataformas modernas de hospedagem na Web geralmente oferecem segurança, balanceamento de carga e outros benefícios. Este tipo de aplicativo é mantido separadamente na Web. Você usa o Intune para apontar para esse tipo de aplicativo. Além disso, você atribui quais grupos de usuários podem acessar o aplicativo. Observe que Android não dá suporte a aplicativos Web.
+- **Aplicativos escritos internamente (linha de negócios)** – aplicativos criados internamente são aplicativos de LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Intune, como Windows, iOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune. 
+- **Aplicativos da loja** – um aplicativo da loja é um aplicativo que foi carregado na Windows Store, na iOS Store ou na Android Store. O provedor do aplicativo da loja mantém e fornece atualizações do aplicativo. Selecione o aplicativo na lista da loja e adicione-o usando o Intune como um aplicativo disponível para seus usuários.
+
+Ao determinar os aplicativos necessários para sua organização, considere como esses aplicativos são integrados a serviços de nuvem, quais dados os aplicativos acessam, se os aplicativos estão disponíveis para os usuários de BYOD e se os aplicativos exigem acesso à Internet.
+
+Para obter mais informações sobre como determinar o tipo de aplicativo de que sua organização precisa, consulte **Aplicativos** na seção **Requisitos de recursos** de [Criar um design](planning-guide-design.md#feature-requirements).
+
+### <a name="understanding-app-management-and-protection-policies"></a>Entendendo as políticas de proteção e gerenciamento de aplicativos
+O Intune permite modificar a funcionalidade dos aplicativos que você implanta para ajudar a alinhá-los às políticas de conformidade e segurança da empresa. Esse controle permite determinar como os dados da empresa são protegidos. Aplicativos gerenciados pelo Intune têm um amplo conjunto de políticas de proteção de aplicativos móveis habilitadas, como:
+
+- Restringir as funções de copiar e colar e de salvar
+- Configurar links da Web para abrir no aplicativo Intune Managed Browser
+- Habilitar o uso de várias identidades e o acesso condicional no nível do aplicativo
+
+Aplicativos gerenciados pelo Intune também podem habilitar a proteção do aplicativo sem a necessidade de registro, oferecendo a opção de aplicar políticas de prevenção contra perda de dados sem gerenciar o dispositivo do usuário. Além disso, você pode incorporar o gerenciamento de aplicativos móveis em seus aplicativos móveis e de linha de negócios usando o kit de desenvolvimento de software do Aplicativo do Intune e a ferramenta de disposição do aplicativo. Para obter mais informações sobre essas ferramentas, consulte [Visão geral do SDK do Aplicativo do Intune](app-sdk.md).
+
+### <a name="understanding-licensed-apps"></a>Noções básicas sobre aplicativos licenciados
+Além dos aplicativos Web, aplicativos da loja e aplicativos de LOB, você também deve estar ciente da distinção entre aplicativos de programas de compra por volume e aplicativos licenciados, como:     
+- **Programa de Compra por Volume da Apple para Empresas (iOS e macOS)** – a App Store do iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
+- **Android for Work (Android)** – a maneira como os aplicativos são atribuídos em dispositivos Android for Work e em dispositivos Android padrão é diferente. Todos os aplicativos instalados no Android for Work são obtidos na loja do Google Play for Work. Faça logon na loja, procure os aplicativos desejados e aprove-os. Então, o aplicativo aparecerá no nó Aplicativos licenciados do Portal do Azure. A partir desse momento, é possível gerenciar a atribuição do aplicativo do mesmo modo que você atribui qualquer outro aplicativo.
+- **Windows Store para Empresas (Windows 10)** – o Microsoft Store para Empresas é um local para encontrar e comprar aplicativos para organizações, uso individual ou com base em volume. Conectando a loja ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md). 
 
 ## <a name="before-you-start"></a>Antes de começar
-
 Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativos.
 
 - Quando você adiciona e atribui um aplicativo de uma loja, os usuários finais devem ter uma conta nessa loja para poder instalar o aplicativo.
@@ -73,14 +124,13 @@ Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a c
 3. Na folha **Intune**, escolha **Aplicativos móveis**.
 4. Na carga de trabalho **Aplicativos móveis**, escolha **Configurar** > **Categorias de aplicativos**.
 5. Na folha **Categorias de aplicativos**, é mostrada uma lista de categorias atuais. Escolha uma das seguintes ações:
-    - **Criar uma categoria de** – Na folha **Criar categoria**, insira um nome para a nova categoria. Os nomes podem ser inseridos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
-    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...** “. Na folha **Propriedades**, você pode inserir um novo nome para a categoria ou excluí-la.
-
+    - **Criar uma categoria** – selecione **Adicionar** para exibir a folha **Criar categoria** e, em seguida, adicione um nome para a nova categoria. Os nomes podem ser inseridos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
+    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...** “. Essa opção exibe um menu pop-up que permite **Fixar no painel** ou **Excluir** a categoria.
 
 ## <a name="apps-added-automatically-by-intune"></a>Aplicativos adicionados automaticamente pelo Intune
 
-Antes, o Intune incluía vários aplicativos internos que você podia atribuir rapidamente. Com base em seus comentários, removemos esta lista e você não precisa mais conferir os aplicativos internos.
-No entanto, se você já atribuiu aplicativos internos, eles ainda estarão visíveis na lista de aplicativos. Você pode continuar a atribuir esses aplicativos conforme necessário.
+Antes, o Intune incluía vários aplicativos internos que você podia atribuir rapidamente. Com base em seus comentários, essa lista foi removida e você não precisa mais ver os aplicativos internos.
+No entanto, se você já tiver atribuído aplicativos internos, eles ainda estarão visíveis na lista de aplicativos. Você pode continuar a atribuir esses aplicativos conforme necessário.
 Planejamos adicionar em um lançamento posterior, um método mais fácil para selecionar e atribuir aplicativos internos no Portal do Azure.
 
 ## <a name="next-steps"></a>Próximas etapas

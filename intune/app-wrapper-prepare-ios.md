@@ -4,7 +4,7 @@ description: "Use as informações neste tópico para aprender a encapsular seus
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -172,6 +172,9 @@ Você precisará do seguinte para distribuir aplicativos encapsulados pelo Intun
 3. Escolha **Concordo** para aceitar o EULA, que monta o pacote em seu computador.
 
 4.  Abra a pasta **IntuneMAMPackager** e salve seu conteúdo em seu computador macOS. Agora, você está pronto para executar a Ferramenta de Disposição do Aplicativo.
+
+> [!NOTE]
+> O Empacotador de MAM do Intune pode ser montado separadamente em seu computador macOS e pode gerar em um erro de "arquivo não encontrado" ao executar os comandos de disposição. Dessa forma, mover o conteúdo da pasta IntuneMAMPackager permitirá que o caminho para o empacotador seja encontrado durante o encapsulamento.
 
 ## <a name="run-the-app-wrapping-tool"></a>Executar a ferramenta de encapsulamento de aplicativos
 
