@@ -5,7 +5,7 @@ description: "Saiba como usar o Intune para redefinir a senha em dispositivos do
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 144313b63c1a6349a59220c901072dbf9d4c6f43
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Redefinir a senha em dispositivos Windows integrado com o Serviço de Redefinição de PIN da Microsoft usando o Intune
 
@@ -51,7 +51,7 @@ Antes de redefinir remotamente a senha em dispositivos Windows que você pode ge
 Para configurar a redefinição de PIN nos dispositivos Windows que você gerencia, use uma [política de dispositivo personalizado do Intune Windows 10](custom-settings-windows-10.md) para habilitar o recurso. Configure a política usando os seguintes CSPs (provedores de serviços de configuração de política) do Windows:
 
 
-- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery**
+- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/*ID do locatário*/Policies/EnablePinRecovery**
 
 *ID do locatário* refere-se à ID de Diretório do Azure Active Directory que pode ser obtida na página **Propriedades** do Azure Active Directory.
 

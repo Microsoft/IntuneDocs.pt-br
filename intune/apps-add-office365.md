@@ -5,7 +5,7 @@ description: "Saiba como você pode usar o Intune para facilitar a instalação 
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -35,7 +35,7 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 Pro
 - O Intune somente dá suporte a aplicativos do Office do pacote do Office 365 ProPlus 2016.
 - Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, os usuários finais poderão perder dados de arquivos não salvos.
 - Não há suporte para esse método de instalação em dispositivos do Windows 10S.
-- O Intune não oferece suporte à instalação de aplicativos da área de trabalho do Office 365 da Windows Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
+- O Intune não dá suporte à instalação de aplicativos de área de trabalho do Office 365 da Microsoft Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
 
 
 ## <a name="get-started"></a>Introdução
@@ -63,7 +63,7 @@ Nesta etapa, escolha os aplicativos do Office que você deseja atribuir aos disp
 Nesta etapa, forneça informações sobre o pacote de aplicativos. Essas informações ajudam a identificá-lo no Intune, além de ajudar os usuários a encontrá-lo no aplicativo Portal da Empresa.
 
 1.  Na folha **Adicionar Aplicativo**, escolha **Informações do Pacote de Aplicativos**.
-2.  Na folha **Informações do Pacote de Aplicativos**, especifique as seguintes informações: 
+2.  Na folha **Informações do Pacote de Aplicativos**, especifique as seguintes informações:
     - **Nome do Pacote** – insira o nome do pacote de aplicativos como ele é exibido no Portal da Empresa. Verifique se todos os nomes de pacotes de aplicativos usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
     - **Descrição do Pacote** – insira uma descrição para o pacote de aplicativos. Por exemplo, você pode listar os aplicativos que você selecionou para serem incluídos.
     - **Editor**: insira o nome do editor do aplicativo.
@@ -82,9 +82,9 @@ Nesta etapa, forneça informações sobre o pacote de aplicativos. Essas informa
 Nesta etapa, configure as opções de instalação do pacote de aplicativos. As configurações aplicam-se a todos os aplicativos adicionados ao pacote.
 
 1.  Na folha **Adicionar Aplicativo**, escolha **Configurações do Pacote de Aplicativos**.
-2.  Na folha **Configurações do Pacote de Aplicativos**, especifique as seguintes informações: 
+2.  Na folha **Configurações do Pacote de Aplicativos**, especifique as seguintes informações:
     - **Versão do Office** – escolha se deseja atribuir a versão de 32 bits ou de 64 bits do Office. Você pode instalar a versão de 32 bits em dispositivos de 32 bits e de 64 bits, mas só é possível instalar a versão de 64 bits em dispositivos de 64 bits.
-    - **Canal de Atualização** – escolha como o Office é atualizado nos dispositivos. Para obter informações sobre os diferentes canais de atualização, consulte Visão geral dos canais de atualização para Office 365 ProPlus. Escolha: 
+    - **Canal de Atualização** – escolha como o Office é atualizado nos dispositivos. Para obter informações sobre os diferentes canais de atualização, consulte Visão geral dos canais de atualização para Office 365 ProPlus. Escolha:
         - **Atual**
         - **Adiado**
         - **Primeira Versão Atual**
@@ -104,19 +104,19 @@ Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**. O aplicati
 
 A tabela a seguir lista os códigos de erro comuns que você pode encontrar e seus significados.
 
-### <a name="status-for-office-csp"></a>Status do CSP do Office: 
+### <a name="status-for-office-csp"></a>Status do CSP do Office:
 
 ||||
 |-|-|-|
 |Status|Fase|Descrição|
 |1460 (ERROR_TIMEOUT)|Baixar|Falha ao baixar a Ferramenta de Implantação do Office|    
-|13 (ERROR_INVALID_DATA)|-|Não é possível verificar a assinatura da Ferramenta de Implantação do Office baixada| 
+|13 (ERROR_INVALID_DATA)|-|Não é possível verificar a assinatura da Ferramenta de Implantação do Office baixada|
 |Código de erro de CertVerifyCertificateChainPolicy|-|Falha na verificação de certificação da Ferramenta de Implantação do Office baixada|    
-|997|WIP|Instalando| 
+|997|WIP|Instalando|
 |0|Após a instalação|Instalação bem-sucedida|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Falha em qualquer verificação de pré-requisito, como:<br>– SxS (tentativa de instalação quando o 2016 MSI está instalado)<br>– incompatibilidade de versão<br>– etc.|     
 |0x8000ffff (E_UNEXPECTED)|-|Tentativa de desinstalação quando não há nenhum Clique para Executar do Office no computador.|    
-|17002|-|Falha ao concluir o cenário (instalar). Motivos possíveis:<br>– Instalação cancelada pelo usuário<br>– Instalação cancelada por outra instalação<br>– Espaço em disco esgotado durante a instalação<br>– ID de idioma desconhecida| 
+|17002|-|Falha ao concluir o cenário (instalar). Motivos possíveis:<br>– Instalação cancelada pelo usuário<br>– Instalação cancelada por outra instalação<br>– Espaço em disco esgotado durante a instalação<br>– ID de idioma desconhecida|
 |17004|-|SKUs desconhecidos|   
 
 
@@ -124,15 +124,15 @@ A tabela a seguir lista os códigos de erro comuns que você pode encontrar e se
 
 |||||
 |-|-|-|-|
-|Cenário|Código de retorno|Interface do usuário|Observação| 
-|Esforço de desinstalação quando não há nenhuma instalação Clique para Executar ativa|– 2147418113, 0x8000ffff ou 2147549183|Código do erro: 30088-1008<br>Código do erro: 30125-1011 (404)|Ferramenta de Implantação do Office| 
-|Instalação quando há uma versão do MSI instalada|1603|-|Ferramenta de Implantação do Office| 
-|Instalação cancelada pelo usuário ou por outra instalação|17002|-|Clique para Executar| 
-|Tentativa de instalar 64 bits em um dispositivo com 32 bits instalados.|1603|-|Código de retorno da Ferramenta de Implantação do Office| 
-|Tentativa de instalar um SKU desconhecido (não é um caso de uso legítimo para o CSP do Office, já que devemos apenas passar em SKUs válidos)|17004|-|Clique para Executar| 
-|Falta de espaço|17002|-|Clique para Executar| 
-|Falha ao iniciar o cliente Clique para Executar (inesperada)|17000|-|Clique para Executar| 
-|Falha ao colocar na fila o cenário do cliente Clique para Executar (inesperada)|17001|-|Clique para Executar| 
+|Cenário|Código de retorno|Interface do usuário|Observação|
+|Esforço de desinstalação quando não há nenhuma instalação Clique para Executar ativa|– 2147418113, 0x8000ffff ou 2147549183|Código do erro: 30088-1008<br>Código do erro: 30125-1011 (404)|Ferramenta de Implantação do Office|
+|Instalação quando há uma versão do MSI instalada|1603|-|Ferramenta de Implantação do Office|
+|Instalação cancelada pelo usuário ou por outra instalação|17002|-|Clique para Executar|
+|Tentativa de instalar 64 bits em um dispositivo com 32 bits instalados.|1603|-|Código de retorno da Ferramenta de Implantação do Office|
+|Tentativa de instalar um SKU desconhecido (não é um caso de uso legítimo para o CSP do Office, já que devemos apenas passar em SKUs válidos)|17004|-|Clique para Executar|
+|Falta de espaço|17002|-|Clique para Executar|
+|Falha ao iniciar o cliente Clique para Executar (inesperada)|17000|-|Clique para Executar|
+|Falha ao colocar na fila o cenário do cliente Clique para Executar (inesperada)|17001|-|Clique para Executar|
 
 ## <a name="next-steps"></a>Próximas etapas
 

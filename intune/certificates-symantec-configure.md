@@ -5,7 +5,7 @@ description: "Instalar e configurar o Intune Certificate Connector para emitir C
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configurar o Intune Certificate Connector para o Serviço Web Symantec PKI Manager
 
@@ -183,7 +183,7 @@ O Intune Certificate Connector é instalado em `%ProgramFiles%\Microsoft Intune`
 
 1. Abra o arquivo %ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config no Bloco de Notas.
 
-    a. Atualize o valor da chave RACertThumbprint com o valor de impressão digital do certificado que você copiou na seção anterior.  Veja um exemplo a seguir:
+    a. Atualize o valor da chave RACertThumbprint com o valor de impressão digital do certificado que você copiou na seção anterior.  Veja este exemplo:
 
    ```
    <add key="RACertThumbprint"
@@ -292,9 +292,9 @@ Depois de concluir as etapas anteriores, o Intune Certificate Connector emitirá
 
 ### <a name="pkcs-certificate-profile-supported-attributes"></a>Atributos com suporte de Perfil de Certificado PKCS
 
-|Atributo | Formatos com suporte do Intune | Formatos com suporte da AC da Symantec Cloud | Resultado |
+|Atributo | Formatos com suporte do Intune | Formatos com suporte da AC da Symantec Cloud | Result |
 | --- | --- | --- | --- |
-| Nome do assunto |O Intune dá suporte ao nome da entidade apenas nos três formatos a seguir: <br><br> 1. Nome comum <br> 2. Nome Comum inclui email <br> 3. Nome comum como email <br><br> Veja um exemplo a seguir: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | A AC da Symantec dá suporte a atributos adicionais.  Se você quiser selecionar atributos adicionais, eles deverão ser definidos com valores fixos no modelo de Perfil de Certificado da Symantec.| Usamos o Nome Comum ou email da solicitação de Certificado PKCS. <br><br> Qualquer incompatibilidade na seleção de atributos entre o Perfil de Certificado do Intune e do modelo de Perfil de Certificado da Symantec resulta na não emissão de qualquer certificado da AC da Symantec.|
+| Nome do assunto |O Intune dá suporte ao nome da entidade apenas nos três formatos a seguir: <br><br> 1. Nome comum <br> 2. Nome Comum inclui email <br> 3. Nome comum como email <br><br> Veja este exemplo: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | A AC da Symantec dá suporte a atributos adicionais.  Se você quiser selecionar atributos adicionais, eles deverão ser definidos com valores fixos no modelo de Perfil de Certificado da Symantec.| Usamos o Nome Comum ou email da solicitação de Certificado PKCS. <br><br> Qualquer incompatibilidade na seleção de atributos entre o Perfil de Certificado do Intune e do modelo de Perfil de Certificado da Symantec resulta na não emissão de qualquer certificado da AC da Symantec.|
 | SAN | O Intune dá suporte apenas aos seguintes valores de campo de SAN: <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (valor codificado) | A AC da Symantec Cloud também dá suporte a esses parâmetros. Se você quiser selecionar atributos adicionais, eles deverão ser definidos com valores fixos no modelo de Perfil de Certificado da Symantec. <br><br> AltNameTypeEmail: se esse tipo não for encontrado no SAN, ele usará o valor de AltNameTypeUpn.  Se AltNameTypeUpn também não for encontrado no SAN, ele usará o valor do Nome da Entidade se estiver no formato de email.  Se ainda não for encontrado, o Intune Certificate Connector não emitirá os certificados. <br><br> Por exemplo: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: se esse tipo não for encontrado no SAN, ele usará o valor de AltNameTypeEmail. Se AltNameTypeEmail também não for encontrado no SAN, ele usará o valor do Nome da Entidade se estiver no formato de email.  Se ainda não for encontrado, o Intune Certificate Connector não emitirá os certificados.  <br><br> Por exemplo: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: se esse tipo não for encontrado no SAN, o Intune Certificate Connector não emitirá os certificados. <br><br> Por exemplo: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **Observação importante:** o valor desse campo só tem suporte da AC da Symantec no formato codificado (valor hexadecimal). Portanto, para qualquer valor nesse campo, o Intune Certificate Connector o converte em codificado em base 64 antes de enviar a solicitação de certificado. **O Intune Certificate Connector não valida se este valor já está codificado ou não.** | Nenhum |
 
 ## <a name="troubleshooting"></a>Solução de problemas

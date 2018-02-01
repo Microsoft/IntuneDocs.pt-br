@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 
@@ -48,7 +48,7 @@ Há duas categorias de configurações de política: configurações de realoca�
 
   ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 
-  Há algumas isenções de aplicativos e serviços de plataforma em que a política de proteção de aplicativo do Intune pode permitir a transferência de dados de/para eles. Por exemplo, todos os aplicativos orientados pelo Intune no Android devem ser capazes de transferir dados de e para a conversão de texto em fala do Google, para que o texto da tela do seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete os serviços e os aplicativos considerados úteis para produtividade segura.
+  Há algumas isenções de aplicativos e serviços de plataforma em que a política de proteção de aplicativo do Intune pode permitir a transferência de dados de/para eles. Por exemplo, todos os aplicativos gerenciados pelo Intune no Android devem ser capazes de transferir dados de e para a conversão de texto em fala do Google, para que o texto da tela de seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete os serviços e os aplicativos considerados úteis para produtividade segura.
 
   ### <a name="full-exemptions"></a>Isenções completas
 

@@ -5,7 +5,7 @@ description: Saiba como adicionar aplicativos da loja do iOS ao Intune.
 keywords: Intune
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Como adicionar aplicativos da iOS Store ao Microsoft Intune
 
@@ -35,6 +35,8 @@ Use as informações neste tópico para ajudá-lo a adicionar aplicativos da iOS
 
 Você só poderá atribuir aplicativos usando este método se eles forem gratuitos na App Store. Se você quiser atribuir aplicativos pagos usando o Intune, considere o uso do [programa de compra por volume do iOS](vpp-apps-ios.md).
 
+>[!NOTE]
+>O Chrome e o Edge são os navegadores recomendados para trabalhar com o Microsoft Intune.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Etapa 1 – Pesquise o aplicativo na loja
 
@@ -63,9 +65,9 @@ Você só poderá atribuir aplicativos usando este método se eles forem gratuit
 - **Exibir como um aplicativo em destaque no Portal da Empresa** – exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
 - **URL de informações** – opcionalmente, digite a URL de um site que contenha informações sobre este aplicativo. A URL é exibida para os usuários no portal da empresa.
 - **URL de Privacidade** – opcionalmente, digite a URL de um site que contenha as informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
-- **Desenvolvedor** – opcionalmente, digite o nome do desenvolvedor do aplicativo. Esse campo só é visível para um administrador e não será visível para os usuários finais.
-- **Proprietário** – Opcionalmente, digite um nome para o proprietário desse aplicativo, por exemplo, **Departamento de RH**.  Esse campo só é visível para um administrador e não será visível para os usuários finais.
-- **Observações** – digite as observações que você deseja associar a este aplicativo. Esse campo só é visível para um administrador e não será visível para os usuários finais.
+- **Desenvolvedor** – opcionalmente, digite o nome do desenvolvedor do aplicativo. Esse campo só é visível para administradores, e não para usuários finais.
+- **Proprietário** – Opcionalmente, digite um nome para o proprietário desse aplicativo, por exemplo, **Departamento de RH**.  Esse campo só é visível para administradores, e não para usuários finais.
+- **Observações** – digite as observações que você deseja associar a este aplicativo. Esse campo só é visível para administradores, e não para usuários finais.
 - **Logotipo** – carregue um ícone que será associado ao aplicativo. Esse é o ícone que será exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
 3. Quando você terminar, na folha **Adicionar Aplicativo**, escolha **OK**.
 

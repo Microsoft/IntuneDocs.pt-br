@@ -5,27 +5,25 @@ description: "Conheça as configurações do Intune que você pode usar para con
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 10/20/2017
+manager: dougeby
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54ff681c96dc01587cd9a2770dacc5bb9a54d134
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Configurações de VPN para dispositivos Windows 10 no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dependendo das configurações escolhidas, nem todos os valores na lista abaixo serão configuráveis.
+Dependendo das configurações que você escolher, nem todos os valores da lista a seguir serão configuráveis.
 
 
 ## <a name="base-vpn-settings"></a>Configurações de VPN de base
@@ -81,6 +79,8 @@ Dependendo das configurações escolhidas, nem todos os valores na lista abaixo 
 ```
 
 Consulte a documentação do VPN de cada fabricante para obter mais informações sobre como escrever comandos XML personalizados.
+
+Para obter mais informações sobre como criar XML EAP personalizado, consulte [Configuração de EAP](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
 
 **Túnel dividido** - **Habilitar** ou **Desabilitar** essa opção que permite que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usará a conexão VPN para acessar arquivos de trabalho, porém usará a rede padrão do hotel para navegação regular na Web.
 - **Rotas de túnel dividido para essa conexão VPN** – Adicionar rotas opcionais para provedores VPN de terceiros. Especifique um prefixo de destino e um tamanho de prefixo para cada um.

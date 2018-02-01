@@ -1,23 +1,32 @@
 
 
 ### <a name="apple"></a>Apple
-  - Apple iOS 9.0 e posterior
-  - Mac OS X 10.9 e posterior
+- Apple iOS 9.0 e posterior
+- Mac OS X 10.9 e posterior
 
 ### <a name="google"></a>Google
-  - Android 4.4 e posterior (incluindo Samsung Knox Standard 4.4 e superior) *
-  - Android for Work ([requisitos](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
+- Android 4.4 e posterior (incluindo Samsung Knox Standard 4.4 e superior)
+
+  Uma lista completa de dispositivos Samsung Knox Standard verificados está disponível nas [Configurações de política do Android e Samsung Knox Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+
+
+- Android for Work [(requisitos)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
 
 ### <a name="microsoft"></a>Microsoft
-  - Windows 10 (versões Home, S, Pro, Education e Enterprise)
-  - Windows 10 Mobile
-  - Dispositivos que executam o Windows 10 IoT Enterprise (x86, x64)
-  - Dispositivos que executam o Windows 10 IoT Mobile Enterprise
-  - Windows Holographic e Windows Holographic Enterprise
-  - Windows Phone 8.1, Windows 8.1 RT e computadores executando o Windows 8.1 (Modo de manutenção)
+
+- Windows 10 (versões Home, S, Pro, Education e Enterprise)
+- Windows 10 Mobile
+- Windows 10 IoT Enterprise (x86, x64)
+- Windows 10 IoT Mobile Enterprise
+- Windows Holographic e Windows Holographic Enterprise
+
+  Para obter informações sobre como gerenciar dispositivos Microsoft HoloLens, consulte [Registrar HoloLens no MDM](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
+
+- Windows Phone 8.1, Windows 8.1 RT e computadores executando o Windows 8.1 (Modo de manutenção)
+
+> [!NOTE]
+> O Intune não pode ser usado para gerenciar sistemas operacionais Windows Server.
 
 Os clientes com o EMS (Enterprise Management + Security) também podem [usar o Azure AD (Azure Active Directory) para registrar dispositivos Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
-* Uma lista completa de dispositivos Samsung Knox Standard verificados está disponível nas [Configurações de política do Android e Samsung Knox Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
 
-Para obter uma lista completa de dispositivos e métodos de gerenciamento, consulte [Dispositivos com suporte pelo Intune](/intune/supported-devices-browsers#intune-supported-devices).
