@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
 
@@ -254,7 +254,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
 ## <a name="kiosk-preview"></a>Quiosque (Versão prévia)
 
--   **Modo de quiosque** – Identifica o tipo de [modo de quiosque](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) compatível com a política. As opções incluem:
+-   **Modo de quiosque** – Identifica o tipo de [modo de quiosque](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) compatível com a política. As opções incluem:
 
       - **Não configurado** (padrão) – A política não habilita um modo de quiosque. 
       - **Quiosque de aplicativo único** – O perfil habilita o dispositivo como um quiosque de aplicativo único.
@@ -266,7 +266,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
          Para dispositivos em ambientes públicos, use contas com privilégios mínimos para impedir atividades autorizadas.  
 
-      - **AUMID (ID do modelo de usuário do aplicativo)** – Especifica a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
+      - **AUMID (ID do modelo de usuário do aplicativo)** – Especifica a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
 
     Os quiosques de vários aplicativos exigem uma configuração de quiosque. Use o botão **Adicionar** para criar uma configuração de quiosque ou selecionar uma existente.
 
@@ -280,13 +280,13 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
             - **Aplicativo Win32** – Um aplicativo da área de trabalho tradicional. (Você precisa do nome do caminho totalmente qualificado do executável, com relação ao dispositivo.)
 
-            - **Aplicativo UWP** – Um aplicativo universal do Windows. Você precisa do [AUMID do aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Aplicativo UWP** – Um aplicativo universal do Windows. Você precisa do [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-        - **Identificador do aplicativo** – Especifique o nome do caminho totalmente qualificado do arquivo executável (aplicativos Win32) ou a [AUMID do aplicativo](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos UWP).
+        - **Identificador do aplicativo** – Especifique o nome do caminho totalmente qualificado do arquivo executável (aplicativos Win32) ou a [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos UWP).
 
     - **Barra de tarefas** indica se a barra de tarefas é exibida (**Habilitado**) ou se está oculta (**Não configurado**) no quiosque.
 
-    - **Layout do menu Iniciar** – Especifica um arquivo XML que descreve como os aplicativos [são exibidos no menu Iniciar](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Layout do menu Iniciar** – Especifica um arquivo XML que descreve como os aplicativos [são exibidos no menu Iniciar](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Usuários atribuídos** – especifica uma ou mais contas de usuário associadas à configuração de quiosque. A conta pode ser local para o dispositivo ou para um logon de conta do Azure AD associado ao aplicativo de quiosque. Especifique contas ingressadas em domínio na forma de `domain\\username@tenant.org`.
 
