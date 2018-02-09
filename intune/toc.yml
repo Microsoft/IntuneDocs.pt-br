@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Cenários comuns
       href: common-scenarios.md
+    - name: PERGUNTAS FREQUENTES DO MAM
+      href: mam-faq.md
 - name: Planejar a implantação
   items:
     - name: Guia de Planejamento
