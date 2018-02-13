@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 56d585c52d3704e64c658cedb48cad7270ceeccf
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d1276818b6c35602f768a7c10074aa6388b01547
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrar dispositivos Windows usando o programa Windows AutoPilot Deployment
-O programa Windows AutoPilot Deployment simplifica o provisionamento de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o AutoPilot, você pode dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Ao usar o Intune para gerenciar dispositivos do AutoPilot, você pode gerenciar políticas, perfis, aplicativos e etc., nos dispositivos depois que eles são registrados. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) (Visão geral do Windows AutoPilot).
+O programa Windows AutoPilot Deployment simplifica o provisionamento de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o AutoPilot, você pode dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Ao usar o Intune para gerenciar dispositivos do AutoPilot, você pode gerenciar políticas, perfis, aplicativos e etc., nos dispositivos depois que eles são registrados. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Visão geral do Windows AutoPilot).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Os dispositivos devem ser registrados na sua organização](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
