@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -47,7 +47,7 @@ Como um administrador de TI, é possível emitir um tíquete de suporte do Porta
     - **Plano de suporte**: **Suporte técnico –  incluído** (O suporte é gratuito para problemas técnicos do Intune.)
 
     >[!IMPORTANT]
-    >O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Para examinar os detalhes da oferta de Suporte Premier, consulte a documentação [Descrição dos Serviços](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx), seção 5.3.3 “Serviços de Consultoria”.
+    >O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Para examinar os detalhes da oferta de Suporte Premier, consulte a documentação [Descrição dos Serviços](https://www.microsoft.com/microsoftservices/services-list.aspx), seção 5.3.3 “Serviços de Consultoria”.
 
     Escolha **Avançar** para continuar.
 4. Na folha **Problema**, para garantir que a solicitação seja tratada pelo especialista no assunto certo para o seu problema, selecione as seguintes opções:
