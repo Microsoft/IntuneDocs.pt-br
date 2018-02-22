@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Conector de Defesa contra Ameaças Móveis do Skycure
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 10/10/2017
 
 -   Defesa de vulnerabilidades
 
-Você pode configurar políticas de acesso condicional com base na avaliação de risco do Skycure habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos incompatíveis a recursos corporativos com base em ameaças detectadas.
+Você pode configurar políticas de acesso condicional com base na avaliação de risco do Skycure, habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos incompatíveis a recursos corporativos, com base nas ameaças detectadas.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Como o Intune e o Skycure ajudam a proteger os recursos da empresa?
 
@@ -43,7 +43,7 @@ O aplicativo móvel do Skycure para Android e iOS captura o sistema de arquivos,
 
 A política de conformidade do dispositivo do Intune inclui uma regra para defesa contra ameaças móveis do Skycure, que tem base na avaliação de risco do Skycure. Quando essa regra é habilitada, o Intune avalia a conformidade do dispositivo com a política habilitada.
 
-Se o dispositivo for considerado fora de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online serão bloqueados. Os usuários com dispositivos bloqueados recebem orientação do aplicativo móvel do Skycure para resolver o problema e recuperar o acesso aos recursos corporativos.
+Se o dispositivo for considerado não compatível, o acesso a recursos como o Exchange Online e o SharePoint Online será bloqueado. Os usuários com dispositivos bloqueados recebem orientação do aplicativo móvel do Skycure para resolver o problema e recuperar o acesso aos recursos corporativos.
 
 O Intune dá suporte a dois modos de integração com o Skycure:
 
@@ -69,7 +69,7 @@ Quando aplicativos mal-intencionados, como malwares, são detectados nos disposi
 
 ![Aplicativos mal-intencionados detectados](../media/mtp/skycure-arch-1.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido a aplicativos mal-intencionados detectado](../media/mtp/skycure-arch-2.png)
 
@@ -81,7 +81,7 @@ Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes W
 
 ![Bloquear o acesso à rede por meio de Wi-Fi](../media/mtp/skycure-arch-3.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido após a correção](../media/mtp/skycure-arch-4.png)
 
@@ -93,11 +93,11 @@ Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização 
 
 ![Bloquear o SharePoint Online quando ameaças à rede forem detectadas](../media/mtp/skycure-arch-5.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![Acesso concedido após correção para exemplo do Sharepoint](../media/mtp/skycure-arch-6.png)
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas com Suporte
 
 -   **Android 4.1 e posterior**
 
@@ -119,7 +119,7 @@ Estas são as etapas que precisam ser concluídas para integrar o Intune ao Skyc
 
 1.  [Configurar o Skycure para usar o SS (Logon Único) do Azure Active Directory](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
-2.  [Baixar a política de configuração de aplicativo iOS do Skycure](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
+2.  [Baixar política de configuração de aplicativo iOS do Skycure](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 
 3.  [Adicionar os aplicativos Skycure, o Microsoft Authenticator e a política de configuração do iOS](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
 

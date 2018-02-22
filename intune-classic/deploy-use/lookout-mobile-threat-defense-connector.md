@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças Móveis do Lookout com o Intune
 
@@ -61,9 +61,9 @@ Quando aplicativos mal-intencionados, como malware, são detectados nos disposit
 * Acessar aplicativos da empresa
 
 **Bloquear quando aplicativos mal-intencionados forem detectados:**
-![diagrama que mostra a política de acesso condicional bloqueando o acesso quando for determinado que o dispositivo não está em conformidade devido à presença de aplicativos mal-intencionados no dispositivo](../media/mtp/malicious-apps-blocked.png)
+![diagrama que mostra a política de acesso condicional bloqueando o acesso quando for determinado que o dispositivo não está compatível devido à presença de aplicativos mal-intencionados](../media/mtp/malicious-apps-blocked.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![diagrama mostrando a política de acesso condicional concedendo acesso quando é determinado que o dispositivo é compatível após a correção](../media/mtp/malicious-apps-unblocked.png)
 
@@ -73,7 +73,7 @@ Detecta ameaças à sua rede, como ataques do tipo man-in-the-middle e protege o
 **Bloquear o acesso à rede por meio de WiFi:**
 ![diagrama que mostra o acesso condicional bloqueando o acesso WiFi com base nas ameaças à rede](../media/mtp/network-wifi-blocked.png)
 
-**Acesso concedido após a correção:**
+**Concessão do acesso após a correção:**
 
 ![diagrama mostrando o acesso condicional permitindo o acesso após a correção da ameaça](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede

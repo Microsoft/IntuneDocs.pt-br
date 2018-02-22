@@ -15,11 +15,11 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0db27bb8f83c7183b411705b16bbb9ad4d357e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: beaf027334ce4929e4ca824b2b7e199cea22a832
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Configurar a integração do Skycure com o Intune
 
@@ -37,7 +37,7 @@ O Skycure dá suporte a dois modos de integração com o Intune:
 
 -   **Integração somente leitura (configuração Básica):** Somente faz o inventário de dispositivos do Azure Active Directory e os preenche no console do Skycure.
 <br>
-    -   Se as caixas **Relatar a integridade e o risco de dispositivos ao Intune** e **Relatar também incidentes de segurança ao Intune** não estiverem marcadas no Console de Gerenciamento do Skycure, a integração será somente leitura e, portanto, nunca alterará o estado de um dispositivo (compatível ou incompatível) no Intune.
+    -   Se as caixas **Relatar a integridade e o risco de dispositivos ao Intune** e **Relatar também incidentes de segurança ao Intune** não estiverem marcadas no Console de Gerenciamento do Skycure, a integração será somente leitura e, portanto, nunca alterará o estado de um dispositivo (compatível ou não compatível) no Intune.
 <br></br>
 -   **Integração total:** permite que o Skycure reporte dispositivos com detalhes de incidente de risco e segurança ao Intune, que cria uma comunicação bidirecional entre os dois serviços em nuvem.
 

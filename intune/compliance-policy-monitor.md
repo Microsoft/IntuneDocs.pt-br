@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -62,7 +62,7 @@ Você também pode exibir as políticas específicas de conformidade e as config
 
 -   **Período de cortesia:** o dispositivo foi direcionado pelo administrador com uma ou mais configurações da política de conformidade do dispositivo, mas o usuário não aplicou as políticas ainda, significando que o dispositivo é incompatível, mas ele está no período de cortesia definido pelo administrador.
 
-    -   Saiba mais sobre as Ações dos dispositivos incompatíveis.
+    -   Saiba mais sobre Ações para dispositivos incompatíveis.
 
 -   **Dispositivo não sincronizado:** o dispositivo falhou ao relatar seu status da política de conformidade do dispositivo por um dos seguintes motivos:
 
@@ -143,7 +143,7 @@ Quando você clicar no bloco de Conformidade da política, então, clicar em uma
 
 ### <a name="per-setting-device-compliance-report"></a>Relatório de conformidade do dispositivo por configuração
 
-Este relatório permite exibir - a configuração por conformidade - o número total de dispositivos em cada estado de conformidade. O título **Conformidade das configurações** está disponível no **painel de Conformidade do dispositivo** e mostra todas as configurações da política de conformidade do dispositivo a partir de todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as configurações da política foram aplicadas e o número de dispositivos incompatíveis.
+Este relatório permite exibir - a configuração por conformidade - o número total de dispositivos em cada estado de conformidade. O título **Conformidade das configurações** está disponível no **Painel de conformidade do dispositivo** e mostra todas as configurações da política de conformidade do dispositivo com base em todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as configurações da política foram aplicadas e o número de dispositivos incompatíveis.
 
 ![Relatório de conformidade do dispositivo por configuração](./media/idc-10.png)
 

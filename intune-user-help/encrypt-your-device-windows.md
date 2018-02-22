@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,18 +17,21 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0cd9107462348e92c9b1a3122c19591bcab6a00e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ed8475956a13e2f35d37b57f0d404f916c239998
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Como proteger o seu dispositivo Windows usando criptografia
 
-Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que suas informações estejam protegidas, sua organização está exigindo que você criptografe seu dispositivo Windows para proteger dados da empresa ou de estudante.
+Ao criptografar um dispositivo, as informações são encapsuladas nele em uma camada de código protetor que impede o acesso de pessoas não autorizadas. Como uma etapa para garantir que suas informações estejam protegidas, sua organização está exigindo que você criptografe seu dispositivo Windows para proteger dados da empresa ou de estudante. 
+
+Se você tiver um Windows Phone registrado, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
 
 > [!Note]
-> Se você tiver um Windows Phone registrado, seu dispositivo será criptografado automaticamente se a criptografia for necessária.
+> Não há suporte para criptografia no Windows 10 Home. Saiba como atualizar do [Windows 10 Home para Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro).
+
 
 Se você tiver um dispositivo de área de trabalho, as instruções abaixo descrevem como criptografá-lo.
 

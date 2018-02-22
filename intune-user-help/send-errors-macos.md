@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9859e13d8d1b39975d53bab159b204ef27560365
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0490f32629fb4ecbb6d66589c71cecce5172536
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Enviar erros para as pessoas certas para seu dispositivo gerenciado macOS
 
@@ -41,6 +41,6 @@ Se receber erros enquanto estiver usando o dispositivo macOS ao usar o aplicativ
 
 Às vezes, o aplicativo do Portal da Empresa pode agir inesperadamente. Esses problemas são aqueles sobre os quais os desenvolvedores de aplicativo desejam saber, pois podem ajudá-los a fazer o aplicativo funcionar melhor e prevenir que esse comportamento estranho ocorra no futuro. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _relatório de diagnóstico_.
 
-Se você precisar enviar relatórios de diagnóstico à equipe da Microsoft que desenvolve o aplicativo Portal da Empresa, você precisará fornecer algumas informações para tentar diagnosticar a causa raiz. Em vez de enviá-los para a sua equipe de suporte da empresa, use <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">este modelo de email</a> para enviá-los à Microsoft.
+Se você precisa enviar relatórios de diagnóstico à equipe da Microsoft que desenvolve o aplicativo Portal da Empresa, é necessário fornecer algumas informações para testar e diagnosticar a causa raiz. Em vez de enviá-los para a sua equipe de suporte da empresa, use <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">este modelo de email</a> para enviá-los à Microsoft.
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

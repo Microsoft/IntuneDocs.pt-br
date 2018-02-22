@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ee11809349999a795aca0a373724ce18eedbe65
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Criar política de conformidade de dispositivo do Lookout no Intune
 
@@ -39,14 +39,14 @@ Como parte da configuração da Defesa contra Ameaças Móveis do Lookout, no [c
   ![captura de tela que mostra a definição da regra de proteção contra ameaças ao dispositivo no ](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Selecione o **Nível máximo de ameaça permitido**:
-  * **Nenhum (Seguro)**: este é o mais seguro.  O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa.  Se nenhuma ameaça for encontrada, o dispositivo será avaliado como fora de conformidade.  
+  * **Nenhum (Seguro)**: este é o mais seguro.  O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa.  Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível.  
   * **Baixo**: o dispositivo estará em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   * **Médio**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
   * **Alto**: esta é a opção menos segura. Isso permite todos os níveis de ameaça e usa o Lookout Mobile Threat Protection apenas para fins de relatório.
 
 ![captura de tela mostrando a opção de nível de ameaça para a configuração de regra de proteção contra ameaças do dispositivo](../media/mtp/mtp-compliance-policy-setting.png)
 
-Se você criar políticas de acesso condicional para o Office 365 ou outros serviços, essa avaliação de conformidade será avaliada e os dispositivos que não estiverem em conformidade serão impedidos de acessar esses serviços até que a ameaça seja resolvida.
+Se você criar políticas de acesso condicional para o Office 365 ou outros serviços, essa avaliação de conformidade será avaliada e os dispositivos não compatíveis serão impedidos de acessar esses serviços até que a ameaça seja resolvida.
 
 ## <a name="monitor-device-threats"></a>Monitorar ameaças ao dispositivo
 Para ver o estado de conformidade de um dispositivo, acesse o [console do administrador do Intune](https://manage.microsoft.com) e exiba **Todos os Dispositivos**.

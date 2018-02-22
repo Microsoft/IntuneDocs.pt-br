@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 942f855937152e0791a662cc5d697f62384d83a2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 09d147b3f952b60bf24f2a1bc8441e5909a93090
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Ligar o Windows Defender para acessar recursos da empresa
 
@@ -47,6 +47,6 @@ Certifique-se de que a Proteção em tempo real está ativada acessando **Inicia
 
 ## <a name="update-your-antivirus-definitions"></a>Atualizar suas definições de antivírus
 
-Certifique-se de que suas definições de antivírus estão atualizadas acessando **Iniciar** e pesquisando **Central de Segurança do Windows Defender**. Selecione **Atualizações de proteção** e **Verificar se há atualizações** para certificar-se de que seu dispositivo tem proteção atual contra vírus. Se essa opção não for exibida, siga as etapas em [Ativar a proteção em tempo real](turn-on-defender-windows.md#turn-on-real-time-protection)
+Acesse **Iniciar** e pesquisando **Central de Segurança do Windows Defender** para verificar se suas definições de antivírus estão atualizadas . Selecione **Atualizações de proteção** e **Verificar se há atualizações** para certificar-se de que seu dispositivo tem proteção atual contra vírus. Se essa opção não for exibida, siga as etapas em [Ativar a proteção em tempo real](turn-on-defender-windows.md#turn-on-real-time-protection)
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter suas informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

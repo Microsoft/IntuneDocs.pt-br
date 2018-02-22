@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9cd5b0cddedc70c001ed8c50ecfbbc3334462f9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 040076248629faa40745b16f90b694331c60a9b1
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Maneiras comuns de usar o Intune
 
@@ -44,7 +44,7 @@ O Intune e o Microsoft EMS (Enterprise Mobility + Security) fornecem uma [soluç
 
 O Intune também dá suporte à habilitação do acesso a aplicativos móveis que precisam de acesso seguro aos dados locais, como servidores de aplicativos de linha de negócios. Isso normalmente é feito usando [certificados gerenciados pelo Intune](certificates-configure.md) ([portal Clássico](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) para o controle de acesso, combinado com um gateway de VPN padrão ou proxy no perímetro, como o Proxy de Aplicativo do Microsoft Azure Active Directory. 
 
-Nesses casos, a única maneira de acessar os dados corporativos é registrar o dispositivo no gerenciamento. Após os dispositivos serem registrados, o sistema de gerenciamento garante que eles sejam compatíveis com suas políticas antes que possam acessar dados corporativos. Além disso, a [Ferramenta de Disposição do Aplicativo e o SKD do Aplicativo](apps-prepare-mobile-application-management.md) do Intune podem ajudar a conter os dados acessados dentro de seu aplicativo de linha de negócios, de modo que ele não possa passar dados corporativos para serviços ou aplicativos de consumidor.
+Nesses casos, a única maneira de acessar os dados corporativos é registrar o dispositivo no gerenciamento. Após os dispositivos serem registrados, o sistema de gerenciamento garante que eles sejam compatíveis com suas políticas antes que possam acessar dados corporativos. Além disso, a [Ferramenta de Disposição do Aplicativo e o SKD do Aplicativo](apps-prepare-mobile-application-management.md) do Intune podem ajudar a conter os dados acessados dentro de seu aplicativo de linha de negócios, de modo que ele não possa transmitir dados corporativos para serviços ou aplicativos de consumidor.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 

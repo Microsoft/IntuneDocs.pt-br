@@ -17,15 +17,15 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 36b5332737ce6fc1c7e0ca8f31a4b6936aec4ec1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 71cb70926f02023eae82885b8f525a18c8382e79
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="update-your-windows-10-device"></a>Atualizar seu dispositivo Windows 10
 
-Seu trabalho ou escola deseja garantir que os dispositivos que acessam seus recursos estão protegidos. Uma maneira escolhida para garantir que seu dispositivo está configurado para acessar esses recursos é certificar-se de que seus dispositivos estão atualizados. Em seu dispositivo, isso é chamado "Build do sistema operacional". Veja como é possível atualizar seu dispositivo Windows 10:
+Seu trabalho ou escola deseja garantir que os dispositivos que acessam seus recursos estão protegidos. Uma maneira escolhida para garantir que seu dispositivo esteja configurado para acessar esses recursos é certificar-se de que seus dispositivos estejam atualizados. Em seu dispositivo, isso é chamado "Build do sistema operacional". Veja como é possível atualizar seu dispositivo Windows 10:
 
 1. Em **Iniciar**, abra **Configurações**.
 2. Vá para **Configurações** > **Sistema** > **Sobre** > **Build do sistema operacional**.

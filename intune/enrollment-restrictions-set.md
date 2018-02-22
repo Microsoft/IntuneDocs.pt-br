@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -31,7 +31,7 @@ Como administrador do Intune, é possível criar e gerenciar as restrições de 
 >Restrições de registro não são um recurso de segurança. Dispositivos comprometidos podem falsificar a identidade. Tais restrições são uma barreira de melhor esforço para usuários que não são mal-intencionados.
 
 >[!NOTE]
->A funcionalidade de restrição e a prioridade do registro de grupo atribuído mencionada a seguir está no processo de ser distribuída em toda a base de clientes do Intune. Até essa implantação estar concluída, talvez você não tenha acesso aos recursos do grupo e prioridade. 
+>A funcionalidade de restrição e a prioridade do registro de grupo atribuído mencionada a seguir está no processo de ser distribuída em toda a base de clientes do Intune. Até essa implantação estar concluída, talvez você não tenha acesso aos recursos do grupo e prioridade.
 
 As restrições de registro específicas que você pode criar incluem:
 
@@ -80,7 +80,7 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
   - O Android e o Android for Work são compatíveis com major.minor.rev.build.
   - O iOS é compatível com o major.minor.rev.
   - O Windows é compatível com minor.rev.build somente para Windows 10.
-  As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator. 
+  As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator.
 8. Especifique se deseja **Permitir** ou **Bloquear** dispositivos **de propriedade pessoal** para cada plataforma listada.
 
     ![Captura de tela de espaço de trabalho de restrições de dispositivo com as configurações de plataforma de dispositivo padrão mostrando as configurações de propriedade pessoal definidas.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
     ![Captura de tela da folha de restrições de limite de dispositivo com as restrições de limite de dispositivo.](./media/device-restrictions-limit.png)
 6. Clique em **Salvar**.
 
+O usuário final verá uma notificação informando quando ele atingiu o limite de dispositivos registrados. Por exemplo, no iOS, ela teria esta aparência:
+
+![Captura de tela da notificação do limite de dispositivos do iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>Alterar a prioridade de restrição de registro
 
-A prioridade será usada quando um usuário existir em vários grupos que recebem restrições. Os usuários estão sujeitos apenas à restrição de prioridade mais alta atribuída a um grupo em que eles estão. Por exemplo, Joe está em um grupo A atribuído a restrições de prioridade 5 e um grupo B atribuído a restrições de prioridade 2. Joe está sujeito apenas às restrições de prioridade 2. 
+A prioridade será usada quando um usuário existir em vários grupos que recebem restrições. Os usuários estão sujeitos apenas à restrição de prioridade mais alta atribuída a um grupo em que eles estão. Por exemplo, Joe está em um grupo A atribuído a restrições de prioridade 5 e um grupo B atribuído a restrições de prioridade 2. Joe está sujeito apenas às restrições de prioridade 2.
 
 Quando você cria uma restrição, ela é adicionada à lista acima da padrão.
 
-O registro de dispositivo inclui restrições padrão para restrições de limite de dispositivos e de tipo de dispositivo. Essas duas restrições aplicam-se a todos os usuários, a menos que sejam substituídas por restrições de prioridade mais alta. 
+O registro de dispositivo inclui restrições padrão para restrições de limite de dispositivos e de tipo de dispositivo. Essas duas restrições aplicam-se a todos os usuários, a menos que sejam substituídas por restrições de prioridade mais alta.
 
-É possível alterar a prioridade de qualquer restrição não padrão. 
+É possível alterar a prioridade de qualquer restrição não padrão.
 
 **Para alterar a prioridade de restrição**
 
@@ -120,8 +124,3 @@ O registro de dispositivo inclui restrições padrão para restrições de limit
 3. Escolha **Registro de dispositivos** > **Restrições de registro**.
 4. Passe o mouse sobre a restrição na lista de prioridades.
 5. Usando os três pontos verticais, arraste a prioridade para a posição desejada na lista.
-
-
-
-
-

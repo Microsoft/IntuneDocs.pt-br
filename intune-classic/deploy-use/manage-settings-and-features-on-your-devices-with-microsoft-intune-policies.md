@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune
 
@@ -198,7 +198,7 @@ Quando você exclui uma política ou remove um dispositivo de um grupo no qual u
 #### <a name="windows-pcs-running-the-intune-client-software"></a>Computadores Windows que executam o software cliente do Intune
 
 - **Configurações do Endpoint Protection**: as configurações são restauradas para os valores recomendados. A única exceção é a configuração **Ingressar no Microsoft Active Protection Service**, cujo valor padrão é **Não**. Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
-- **Configurações de atualizações de software**: as configurações são redefinidas para o estado padrão do sistema operacional. Para obter detalhes, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Manter os computadores Windows atualizados com as atualizações de software no Microsoft Intune).
+- **Configurações de atualizações de software**: as configurações são redefinidas para o estado padrão do sistema operacional. Para obter detalhes, consulte [Manter os computadores Windows atualizados com as atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Configurações do Microsoft Intune Center**: qualquer informação de contato para suporte configurada pela política é excluída dos computadores.
 - **Configurações do Firewall do Windows**: as configurações são redefinidas para o padrão do sistema operacional do computador. Para obter detalhes, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ajude a proteger computadores Windows com o Endpoint Protection para Microsoft Intune).
 

@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df60b45ede53190660733d3879ab6c020e5448b1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c8be5d271bfff84ec440b25724ca2101ec7f224d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Conector de Defesa contra Ameaças Móveis do Skycure
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/25/2018
 
 -   Defesa de vulnerabilidades
 
-Você pode configurar políticas de acesso condicional com base na avaliação de risco do Skycure habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos incompatíveis a recursos corporativos com base em ameaças detectadas.
+Você pode configurar políticas de acesso condicional com base na avaliação de risco do Skycure, habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos incompatíveis a recursos corporativos, com base nas ameaças detectadas.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Como o Intune e o Skycure ajudam a proteger os recursos da empresa?
 
@@ -41,7 +41,7 @@ O aplicativo móvel do Skycure para Android e iOS captura o sistema de arquivos,
 
 A política de conformidade do dispositivo do Intune inclui uma regra para a Defesa contra Ameaças Móveis do Skycure, que se baseia na avaliação de risco do Skycure. Quando essa regra é habilitada, o Intune avalia a conformidade do dispositivo com a política habilitada.
 
-Se o dispositivo for considerado fora de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online serão bloqueados. Os usuários com dispositivos bloqueados recebem orientação do aplicativo móvel do Skycure para resolver o problema e recuperar o acesso aos recursos corporativos.
+Se o dispositivo for considerado não compatível, o acesso a recursos como o Exchange Online e o SharePoint Online será bloqueado. Os usuários com dispositivos bloqueados recebem orientação do aplicativo móvel do Skycure para resolver o problema e recuperar o acesso aos recursos corporativos.
 
 O Intune dá suporte a dois modos de integração com o Skycure:
 

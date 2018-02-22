@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas do gerenciamento de aplicativos móveis
 
@@ -105,7 +105,7 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 **Nenhum Aplicativo Encontrado**: não há nenhum aplicativo com permissão da organização para abrir este conteúdo neste dispositivo. Entre em contato com seu administrador de TI para obter ajuda. | O usuário tentou abrir dados corporativos ou de estudante com outro aplicativo, mas o Intune não consegue encontrar outros aplicativos gerenciados que têm permissão para abrir os dados. | Verifique se uma política de proteção de aplicativo Android está implantada para a segurança do usuário e se ela se destina a pelo menos um outro aplicativo habilitado para MAM com permissão para abrir os dados em questão.
 **Falha ao entrar**: tente entrar novamente. Se o problema persistir, entre em contato com o administrador de TI para obter ajuda. | Falha ao autenticar a conta com a qual o usuário tentou entrar. | Certifique-se de que o usuário entre com a conta corporativa ou de estudante registrada com o serviço de MAM do Intune (a primeira conta corporativa ou de estudante a entrar com êxito no aplicativo). <br><br> Limpe os dados do aplicativo. <br><br> Verifique se a versão do aplicativo está atualizada. <br><br> Verifique se a versão do Portal da Empresa está atualizada.
 **Conexão à Internet necessária**: é necessário estar conectado à Internet para verificar se você pode usar este aplicativo. | Este dispositivo não está conectado à Internet. | Conecte o dispositivo a uma rede WiFi ou de Dados.
-**Dispositivo Não Compatível**: este aplicativo não pode ser utilizado porque você está usando um dispositivo com raiz. Entre em contato com seu administrador de TI para obter ajuda. | O Intune detectou que o usuário está usando um dispositivo com raiz. | Redefina o dispositivo para as configurações padrão de fábrica.
+**Dispositivo não compatível**: este aplicativo não pode ser utilizado porque você está usando um dispositivo desbloqueado por rooting. Entre em contato com seu administrador de TI para obter ajuda. | O Intune detectou que o usuário está usando um dispositivo com raiz. | Redefina o dispositivo para as configurações padrão de fábrica.
 **Conta Não Configurada**: o aplicativo deve ser gerenciado pelo Microsoft Intune, mas sua conta não foi configurada. Entre em contato com seu administrador de TI para obter ajuda. | A conta de usuário não tem uma licença do Intune A Direct. | Verifique se a conta do usuário tem uma licença do Intune atribuída no [Portal do Office](http://portal.office.com).
 **Não é possível registrar o aplicativo**: o aplicativo deve ser gerenciado pelo Microsoft Intune, mas não foi possível registrá-lo agora. Entre em contato com seu administrador de TI para obter ajuda. | Falha ao registrar automaticamente o aplicativo com o serviço MAM quando a política de proteção de aplicativo é solicitada. | Limpe os dados do aplicativo. <br><br> Envie os logs ao Intune por meio do aplicativo do Portal da Empresa ou emita um tíquete de suporte [aqui](how-to-get-support-for-microsoft-intune.md).
 

@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Prepare-se para configurar as políticas de proteção do aplicativo para Windows 10
 
@@ -50,7 +50,7 @@ Habilite o MAM (gerenciamento de aplicativo móvel) para Windows 10 configurando
     A URL do ponto de extremidade de registro do serviço MAM. O ponto de extremidade de registro é usado para registrar dispositivos de gerenciamento com o serviço MAM.
 
     **URL de Conformidade do MAM**  
-      A URL do ponto de extremidade compatível do serviço MAM. Quando um usuário tiver acesso negado a um recurso de um dispositivo não compatível, será exibido um link para a URL de conformidade. Os usuários podem navegar nesta URL hospedada pelo serviço MAM para entender por que o dispositivo é considerado incompatível. Os usuários também podem iniciar a correção de autoatendimento para que os dispositivos deles se tornem compatíveis e possam continuar a acessar recursos.
+      A URL do ponto de extremidade compatível do serviço MAM. Quando um usuário tem o acesso negado a um recurso de um dispositivo não compatível, é exibido um link para a URL de conformidade. Os usuários podem navegar até essa URL hospedada pelo serviço MAM para entender por que o dispositivo foi considerado incompatível. Os usuários também podem iniciar a correção de autoatendimento para que os dispositivos deles se tornem compatíveis e possam continuar a acessar recursos.
 
 5.  Clique em **Salvar**.
 

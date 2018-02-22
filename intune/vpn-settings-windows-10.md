@@ -13,29 +13,32 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d126853051bb4a6c2f1ea6fbd54195ae06254b51
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Configurações de VPN para dispositivos Windows 10 no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dependendo das configurações que você escolher, nem todos os valores da lista a seguir serão configuráveis.
+Dependendo das configurações que você escolher, nem todos os valores na lista a seguir serão configuráveis.
+
+> [!NOTE]
+> Essas configurações também se aplicam a dispositivos que executam o Windows Holographic for Business.
 
 
 ## <a name="base-vpn-settings"></a>Configurações de VPN de base
 
 
-- **Nome da conexão** – Insira um nome para esta conexão. Usuários finais verão esse nome quando navegarem pela lista de conexões VPN disponíveis em seus dispositivos.
-- **Servidores** – Adicionar um ou mais servidores VPN aos quais os dispositivos se conectarão.
+- **Nome da conexão** – Insira um nome para esta conexão. Os usuários finais verão esse nome quando navegarem na lista de conexões VPN disponíveis no dispositivo.
+- **Servidores** – Adicionar um ou mais servidores VPN aos quais os dispositivos se conectam.
     - **Adicionar** – Abre a folha **Adicionar linha**, na qual você pode especificar as seguintes informações:
         - **Descrição** – Especifique um nome descritivo para o servidor como **Servidor VPN Contoso**.
-        - **Endereço IP ou FQDN** – Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectarão. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
-        - **Servidor padrão** – Habilita esse servidor como o servidor padrão que os dispositivos usarão para estabelecer a conexão. Verifique se você definiu apenas um servidor como padrão.
-    - **Importar** – Navegue até um arquivo que contém uma lista separada por vírgulas de servidores no formato descrição, endereço IP ou FQDN, servidor padrão. Escolha **OK** para importá-los para a lista **Servidores**.
+        - **Endereço IP ou FQDN** – forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectarão. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
+        - **Servidor padrão** – Habilita esse servidor como o servidor padrão que os dispositivos usam para estabelecer a conexão. Verifique se você definiu apenas um servidor como padrão.
+    - **Importar** – Navegue até um arquivo que contém uma lista separada por vírgulas de servidores no formato: descrição, endereço IP ou FQDN, servidor padrão. Escolha **OK** para importá-los para a lista **Servidores**.
     - **Exportar** – Exporta a lista de servidores para um arquivo de valores separados por vírgula (csv).
 
 **Tipo de Conexão** – Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
@@ -78,9 +81,9 @@ Dependendo das configurações que você escolher, nem todos os valores da lista
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-Consulte a documentação do VPN de cada fabricante para obter mais informações sobre como escrever comandos XML personalizados.
+Para obter mais informações sobre como escrever comandos XML personalizados, consulte a documentação de VPN de cada fabricante.
 
-Para obter mais informações sobre como criar XML EAP personalizado, consulte [Configuração de EAP](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
+Para obter mais informações sobre como criar XML EAP personalizado, consulte [Configuração de EAP](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
 **Túnel dividido** - **Habilitar** ou **Desabilitar** essa opção que permite que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usará a conexão VPN para acessar arquivos de trabalho, porém usará a rede padrão do hotel para navegação regular na Web.
 - **Rotas de túnel dividido para essa conexão VPN** – Adicionar rotas opcionais para provedores VPN de terceiros. Especifique um prefixo de destino e um tamanho de prefixo para cada um.
@@ -88,17 +91,17 @@ Para obter mais informações sobre como criar XML EAP personalizado, consulte [
 ## <a name="apps-and-traffic-rules"></a>Regras de Aplicativos e Tráfego
 
 **Restringir a conexão VPN para esses aplicativos** – Habilite esta opção se você quiser apenas que os aplicativos que você especificar usem a conexão VPN.
-**Aplicativos associados** – Forneça uma lista de aplicativos que usarão automaticamente a conexão VPN. O tipo de aplicativo determinará o identificador do aplicativo. Para um aplicativo universal, forneça o nome da família de pacotes. Para um aplicativo da área de trabalho, forneça o caminho do arquivo do aplicativo.
+**Aplicativos associados** – Forneça uma lista de aplicativos que usam automaticamente a conexão VPN. O tipo de aplicativo determina o identificador do aplicativo. Para um aplicativo universal, forneça o nome da família de pacotes. Para um aplicativo da área de trabalho, forneça o caminho do arquivo do aplicativo.
 
 >[!IMPORTANT]
->É recomendável que você proteja todas as listas de aplicativos compiladas para uso na configuração de VPN por aplicativo. Se um usuário não autorizado modificar sua lista e você o importar para a lista de aplicativo VPN por aplicativo, você potencialmente autorizará o acesso VPN para aplicativos que não deveriam ter acesso. É uma maneira de proteger as listas de aplicativo usando uma ACL (lista de controle de acesso).
+>É recomendável que você proteja todas as listas de aplicativos compiladas para uso na configuração de VPN por aplicativo. Se um usuário não autorizado modificar sua lista e você o importar para a lista de aplicativo VPN por aplicativo, você potencialmente autorizará o acesso VPN a aplicativos que não deveriam ter acesso. É uma maneira de proteger as listas de aplicativo usando uma ACL (lista de controle de acesso).
 
 **Regras de tráfego de rede para esta conexão VPN** – Selecione quais protocolos e quais intervalos de endereços e de portas locais e remotas serão habilitados para a conexão VPN. Se você não criar uma regra de tráfego de rede, todos os protocolos, portas e intervalos de endereços serão habilitados. Após você criar uma regra, a conexão VPN usará somente os protocolos, portas e intervalos de endereços que você especificar na regra.
 
 
 ## <a name="conditional-access"></a>Acesso condicional
 
-**Acesso condicional para esta conexão VPN** – habilita o fluxo de conformidade do dispositivo do cliente. Quando habilitada, o cliente da VPN tentará se comunicar com o Azure Active Directory para obter um certificado a ser usado para autenticação. A VPN deve ser configurada para usar a autenticação de certificado e o servidor VPN deve confiar no servidor retornado pelo Azure Active Directory.
+**Acesso condicional para esta conexão VPN** – habilita o fluxo de conformidade do dispositivo do cliente. Quando habilitada, o cliente da VPN tenta se comunicar com o Azure Active Directory para obter um certificado para usar na autenticação. A VPN deve ser configurada para usar a autenticação de certificado e o servidor VPN deve confiar no servidor retornado pelo Azure Active Directory.
 
 **SSO (logon único) com certificado alternativo** – para conformidade do dispositivo, use um certificado diferente do certificado de autenticação da VPN para a autenticação Kerberos. Especifique o certificado com as seguintes configurações: 
 
@@ -117,7 +120,7 @@ Para cada servidor. especifique:
 ## <a name="proxy-settings"></a>Configurações de proxy
 
 - **Detectar automaticamente as configurações de proxy** – Se o servidor VPN exigir um servidor proxy para a conexão, especifique se deseja que os dispositivos detectem automaticamente as configurações de conexão. Para obter mais informações, consulte a documentação do Windows Server.
-- **Automático** – Use um arquivo de configuração para definir o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com**) que contém o arquivo de configuração.
+- **Automático** – Use um arquivo de configuração para definir o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com) que contém o arquivo de configuração.
 - **Usar servidor proxy** – Habilite essa opção se você quiser inserir manualmente as configurações do servidor proxy.
     - **Endereço** – Insira o endereço do servidor proxy (como um endereço IP).
     - **Número da porta** – Insira o número de porta associado ao servidor proxy.

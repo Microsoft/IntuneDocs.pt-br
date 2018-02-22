@@ -6,32 +6,32 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Como definir configurações de Wi-Fi no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use os perfis de Wi-Fi do Microsoft Intune para atribuir configurações de rede sem fio para usuários e dispositivos na organização. Quando você atribui um perfil de Wi-Fi, os usuários terão acesso à rede Wi-Fi corporativa sem precisar configurá-lo por conta própria.
+Use os perfis de Wi-Fi do Microsoft Intune para atribuir configurações de rede sem fio para usuários e dispositivos na organização. Quando você atribui um perfil de Wi-Fi, os usuários têm acesso à rede Wi-Fi corporativa sem precisar configurá-lo por conta própria.
 
 Por exemplo, você pode instalar uma nova rede Wi-Fi chamada Contoso Wi-Fi e configurar todos os dispositivos iOS para se conectarem a essa rede. Este é o processo:
 
 1. Crie um perfil de Wi-Fi contendo as configurações necessárias para conectar à rede sem fio Contoso Wi-Fi.
 2. Atribua o perfil a um grupo que contém todos os usuários de dispositivos iOS.
 3. Os usuários encontram a nova rede Contoso Wi-Fi na lista de redes sem fio em seus dispositivos e podem facilmente se conectar a ela.
+
+## <a name="supported-device-platforms"></a>Plataformas de dispositivos com suporte
 
 Perfis de Wi-Fi dão suporte às seguintes plataformas de dispositivo:
 
@@ -40,7 +40,7 @@ Perfis de Wi-Fi dão suporte às seguintes plataformas de dispositivo:
 - iOS 8.0 e posterior
 - macOS (Mac OS X 10.9 e posterior)
 
-Para dispositivos que executam o Windows 8.1, Windows 10 e Windows Mobile 10, você pode importar uma configuração de Wi-Fi previamente exportada de outro dispositivo.
+Para dispositivos que executam o Windows 8.1, Windows 10, Windows Mobile 10 e Windows Holographic for Business você pode importar uma configuração de Wi-Fi previamente exportada de outro dispositivo.
 
 Use as informações neste tópico para aprender as noções básicas sobre a configuração de um perfil de Wi-Fi e leia mais tópicos para cada plataforma para saber mais sobre as especificações de dispositivo.
 
@@ -58,13 +58,22 @@ Use as informações neste tópico para aprender as noções básicas sobre a co
     - **iOS**
     - **macOS**
     - **Windows 8.1 e posterior (importar um perfil)**
-6. Na lista suspensa de tipos de **Perfil**, escolha **Wi-Fi básico** ou **Wi-Fi empresarial**. É possível usar o **Wi-Fi básico** para fornecer recursos básicos como nome de rede e SSID. **Wi-Fi corporativa** permite que você forneça informações mais avançadas, como o protocolo EAP (Extensible Authentication Protocol) se sua rede Wi-Fi o utilizar. **Importação de Wi-Fi** (para Windows 8.1 e Windows 10) permite que você importe as configurações de Wi-Fi como um arquivo XML previamente exportado de um dispositivo diferente.
-7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
+
+   > [!IMPORTANT]
+   > Se estiver criando um perfil para dispositivos que executam o Windows 10, incluindo o Windows Holographic for Business, você deve escolher a plataforma **Windows 8.1 e posterior**. A plataforma **Windows 10 e posterior** não inclui um tipo de perfil de Wi-Fi. 
+
+6. Para dispositivos Android ou Apple, na lista suspensa **Tipo de WiFi**, escolha **Básica** ou **Corporativa**. Você pode usar a **Básica** para fornecer recursos básicos como o nome da rede e o SSID. A **Corporativa** permite que você forneça informações mais avançadas, como o EAP (Protocolo de Autenticação Extensível), caso sua rede Wi-Fi o utilize. 
+
+   O perfil de **Importação de Wi-Fi** (para Windows 8.1 e posterior) permite que você importe as configurações de Wi-Fi como um arquivo XML previamente exportado de um dispositivo diferente.
+1. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do Android e do Android for Work](wi-fi-settings-android.md)
     - [Configurações do iOS](wi-fi-settings-ios.md)
     - [Configurações do macOS](wi-fi-settings-macos.md)
-    - [Configurações do Windows Phone 8.1](wi-fi-settings-import-windows-8-1.md)
-8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
+    - [Configurações do Windows 8.1 e posterior](wi-fi-settings-import-windows-8-1.md) (incluindo o Windows Holographic for Business)
+1. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
 
-O perfil será criado e aparecerá na folha da lista de perfis.
+O perfil é criado e exibido na folha da lista de perfis.
+
+## <a name="next-steps"></a>Próximas etapas
+
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
