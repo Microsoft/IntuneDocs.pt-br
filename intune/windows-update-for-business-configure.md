@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Gerenciar atualizações de software
 
@@ -45,8 +44,9 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 - O Windows Update oferece suporte às seguintes versões do Windows 10:
     - Windows 10
     - Windows 10 Team (para dispositivos Surface Hub)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Não há suporte para os dispositivos que executam o Windows Mobile 10 e o Windows 10 Holographic.
+ Dispositivos que executam o Windows 10 Mobile não são compatíveis.
 
 - Nos dispositivos do Windows, **Comentários e diagnóstico** > **Dados de diagnóstico e uso** devem ser definidos para pelo menos o **Básico**.
 
@@ -89,8 +89,7 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 
     As Atualizações do Recurso são geralmente novos recursos para o Windows. Depois de definir a configuração **Canal de manutenção** (Canal Semestral (direcionado) ou Canal Semestral), será possível definir se, e por quanto tempo, você deseja adiar o recebimento das Atualizações do Recurso após sua disponibilidade no Windows Update pela Microsoft.
 
-    Por exemplo:  
-    **Se o Canal de manutenção estiver definido como Canal Semestral (direcionado) e o período de adiamento for 30 dias**: vamos supor que a Atualização do Recurso X está publicamente disponível no Windows Update como um Canal Semestral (direcionado) em janeiro. O dispositivo não receberá a atualização até fevereiro - 30 dias depois.
+    Por exemplo: **se o Canal de manutenção estiver definido como Canal Semestral (direcionado) e o período de adiamento for 30 dias**: vamos supor que a Atualização do Recurso X está publicamente disponível no Windows Update como um Canal Semestral (direcionado) em janeiro. O dispositivo não receberá a atualização até fevereiro - 30 dias depois.
 
     **Se o Canal de manutenção estiver definido como Canal Semestral e o período de adiamento for 30 dias**: vamos supor que a Atualização do Recurso X está publicamente disponível no Windows Update como um Canal Semestral (direcionado) em janeiro. Quatro meses depois, em abril, a Atualização do Recurso X será lançada para o Canal Semestral. O dispositivo receberá a Atualização do Recurso 30 dias depois do lançamento do Canal Semestral e será atualizado em maio.
 
@@ -154,3 +153,11 @@ Você pode pausar o recebimento pelo dispositivo das Atualizações do Recurso o
 > [!IMPORTANT]
 > Ao emitir um comando para pausar, os dispositivos receberão esse comando quando eles verificarem o serviço na próxima vez. É possível que antes de verificarem, eles possam instalar uma atualização agendada.
 > Além disso, se um dispositivo de destino estiver desativado quando você emitir o comando para pausar, quando você o ativar, ele poderá baixar e instalar as atualizações agendadas antes de verificar com o Intune.
+
+## <a name="windows-holographic-for-business-support"></a>Compatibilidade do Windows Holographic for Business
+
+O Windows Holographic for Business é compatível com as seguintes configurações:
+
+- **Comportamento de atualização automática**
+- **Atualizações de produto da Microsoft**
+- **Canal de manutenção**

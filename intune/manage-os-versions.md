@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78abef01e968b59b81a74dcd6b67df31dbf29def
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerenciar versões do sistema operacional com o Intune
 Em plataformas móveis e de área de trabalho modernas, atualizações, patches e novas versões principais são liberadas em um ritmo acelerado. Você tem controles para gerenciar totalmente as atualizações e patches no Windows, mas outras plataformas como iOS e Android exigem que os usuários finais participem do processo.  O Microsoft Intune tem os recursos para ajudá-lo a estruturar o gerenciamento de versão do sistema operacional em diferentes plataformas.
@@ -35,13 +35,13 @@ As organizações estão usando restrições de tipo de dispositivo para control
 1. Use a versão mínima do sistema operacional para manter os usuários finais em plataformas com suporte e atuais em sua organização. 
 2. Deixe o sistema operacional máximo não especificado (sem limite) ou defina-o como a última versão validada em sua organização para que haja tempo para os testes internos das novas versões do sistema operacional.
 
-Para obter detalhes, consulte [Definir restrições de registro no Intune](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions).
+Para obter detalhes, consulte [Definir restrições de registro no Intune](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions).
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Relatório de versão do sistema operacional e conformidade com as políticas de conformidade de dispositivo do MDM do Intune
 As políticas de conformidade de dispositivo do MDM do Intune fornecem as seguintes ferramentas: 
 - Especificar regras de conformidade
 - Exibir o status de conformidade por meio de relatórios
-- Executar ações quando há falta de conformidade por meio de quarentena de dispositivo e acesso condicional
+- Executar ações quando há não conformidade por meio de quarentena de dispositivo e acesso condicional
 
 Como as restrições de registro, as políticas de conformidade do dispositivo incluem as versões mínima e máxima do sistema operacional. As políticas também têm um prazo para conformidade que oferece aos usuários um período de cortesia para obter a conformidade. As políticas de conformidade do dispositivo mantém seus dispositivos de usuário final registrados em conformidade com a política organizacional.
 
@@ -50,7 +50,7 @@ Como as restrições de registro, as políticas de conformidade do dispositivo i
 ### <a name="in-practice"></a>Na prática
 As organizações estão usando políticas de conformidade de dispositivo para os mesmos cenários que as restrições de registro. Essas políticas mantêm os usuários nas versões do sistema operacional atuais e validadas em sua organização. Quando os dispositivos de usuários finais ficam fora de conformidade, o acesso aos recursos organizacionais pode ser bloqueado por meio de acesso condicional até que os usuários finais fiquem dentro do intervalo de sistema operacional com suporte para a sua organização. Os usuários finais são notificados que estão fora de conformidade e recebem as etapas para recuperar o acesso.   
 
-Para obter detalhes, consulte [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/en-us/intune/device-compliance-get-started).
+Para obter detalhes, consulte [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/intune/device-compliance-get-started).
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Controles de versão do sistema operacional usando políticas de proteção de aplicativo do Intune    
 As configurações de acesso a políticas de proteção de aplicativo do Intune e do MAM (gerenciamento de aplicativos móveis) permitem que você especifique a versão mínima do sistema operacional na camada do aplicativo. Isso permite informar e incentivar ou exigir que os usuários finais atualizem o sistema operacional para uma versão mínima especificada.
@@ -72,7 +72,7 @@ Para obter detalhes, consulte [Como criar e implantar políticas de proteção d
 Você pode usar os recursos do Intune descritos neste artigo para ajudar a passar a sua organização para uma nova versão de sistema operacional dentro do prazo que você definir. As seguintes etapas fornecem um exemplo de modelo de implantação para passar os usuários do sistema operacional v1 para o sistema operacional v2 em sete dias.
 - **Etapa 1**: Usar restrições de registro para exigir o sistema operacional v2 como a versão mínima para registrar o dispositivo. Isso garante que novos dispositivos de usuários finais estejam em conformidade no momento do registro.
 - **Etapa 2a**: Usar as políticas de proteção de aplicativo do Intune para avisar os usuários que é necessário ter o sistema operacional v2 quando o aplicativo for aberto ou retomado.
-- **Etapa 2b**. Usar políticas de conformidade de dispositivo para exigir o sistema operacional v2 como a versão mínima para que um dispositivo esteja em conformidade. Use **Ações** de falta de conformidade para permitir um período de cortesia de sete dias e enviar aos usuários finais uma notificação por email com o prazo e os requisitos.
+- **Etapa 2b**. Usar políticas de conformidade de dispositivo para exigir o sistema operacional v2 como a versão mínima para que um dispositivo esteja em conformidade. Use **Ações** em caso de não conformidade para conceder um período de cortesia de sete dias e enviar aos usuários finais uma notificação por email com o prazo e os requisitos.
   -  Essas políticas informarão aos usuários finais que os dispositivos existentes precisam ser atualizados por email, pelo Portal da Empresa do Intune e quando o aplicativo for aberto para aplicativos habilitados com uma política de proteção do aplicativo.
   - Você pode executar um relatório de conformidade para identificar os usuários que estão fora de conformidade. 
 - **Etapa 3a**: Usar as políticas de proteção de aplicativo do Intune para bloquear os usuários quando um aplicativo for aberto ou retomado se o dispositivo não estiver executando o sistema operacional v2.
@@ -82,6 +82,6 @@ Você pode usar os recursos do Intune descritos neste artigo para ajudar a passa
 ## <a name="next-steps"></a>Próximas etapas
 Use os seguintes recursos para gerenciar versões de sistema operacional em sua organização: 
 
-- [Definir restrições de tipo de dispositivo](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Introdução à conformidade do dispositivo](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [Definir restrições de tipo de dispositivo](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Introdução à conformidade do dispositivo](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [Como criar e atribuir as políticas de proteção de aplicativo](https://docs.microsoft.com/intune/app-protection-policies)

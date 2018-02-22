@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/13/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 666ce43e3bd87db5a8245694d22401819c369951
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Diferenças de interface de usuário temporárias
+>
+>As interfaces de usuário para os recursos descritos nesta página estão em processo de atualização. Essas atualizações estão sendo implementadas em todas as contas de usuário até o final de abril.
+>
+>Se a sua página de **Registro de dispositivo** for semelhante à imagem abaixo, sua conta ainda não foi atualizada para a nova interface do usuário e você pode usar esta página de ajuda.
+>
+>![Antiga interface do usuário](./media/appleenroll-oldui.png)
+>
+>Se a sua página de **Registro de dispositivo** for semelhante à imagem abaixo, as suas interfaces de usuário estão atualizadas.  Vá para [esta página de ajuda](apple-school-manager-set-up-ios-newui.md).
+>
+>![Nova interface do usuário](./media/appleenroll-newui.png)
 
 Este tópico o ajuda a habilitar o registro de dispositivo iOS em dispositivos comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
 

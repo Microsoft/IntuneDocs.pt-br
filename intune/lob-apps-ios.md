@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 091ce174c9840a47abc1088f11b72fe92e7d7898
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 684237a894c2bb2171be65fb86c82342a7f42ac1
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicativos de linha de negócios (LOB) do iOS para o Microsoft Intune
 
@@ -73,7 +73,8 @@ O aplicativo que você criou aparece na lista de aplicativos, na qual você pode
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Etapa 5 – Atualizar um aplicativo de linha de negócios
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]Observação: para que o serviço do Intune implante com êxito um novo arquivo IPA para o dispositivo, incremente a cadeia de caracteres CFBundleVersion no arquivo Info.plist em seu pacote de IPA.
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]  
+Observação: para que o serviço do Intune implante com êxito um novo arquivo IPA para o dispositivo, incremente a cadeia de caracteres CFBundleVersion no arquivo Info.plist em seu pacote de IPA.
 
 ## <a name="next-steps"></a>Próximas etapas
 

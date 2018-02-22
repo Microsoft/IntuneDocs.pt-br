@@ -7,7 +7,7 @@
 ### <a name="google"></a>Google
 - Android 4.4 e posterior (incluindo Samsung Knox Standard 4.4 e superior)
 
-  Uma lista completa de dispositivos Samsung Knox Standard verificados está disponível nas [Configurações de política do Android e Samsung Knox Standard](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+  Uma lista completa de dispositivos Samsung Knox Standard verificados está disponível nas [Configurações de política do Android e Samsung Knox Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
 
 
 - Android for Work [(requisitos)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
@@ -18,9 +18,9 @@
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
-- Windows Holographic e Windows Holographic Enterprise
+- Windows Holographic for Business
 
-  Para obter informações sobre como gerenciar dispositivos Microsoft HoloLens, consulte [Registrar HoloLens no MDM](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
+  Para obter mais informações sobre o gerenciamento de dispositivos que executam o Windows Holographic for Business, consulte [Suporte do Window Holographic for Business](../windows-holographic-for-business.md).
 
 - Windows Phone 8.1, Windows 8.1 RT e computadores executando o Windows 8.1 (Modo de manutenção)
 

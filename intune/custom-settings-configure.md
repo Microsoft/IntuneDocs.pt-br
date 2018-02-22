@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Como definir configurações personalizadas do dispositivo no Microsoft Intune
 
@@ -47,14 +45,15 @@ Use as informações neste tópico para aprender as noções básicas sobre a de
     - **Windows Phone 8.1**
     - **Windows 10 e posterior**
 6. Na lista suspensa de tipos de **Perfil**, escolha **Personalizado**.
-7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
+7. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do Android](custom-settings-android.md)
     - [Configurações do iOS](custom-settings-ios.md)
     - [Configurações do macOS](custom-settings-macos.md)
     - [Configurações do Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Configurações do Windows 10](custom-settings-windows-10.md)
+    - [Configurações do Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Configurações do Android for Work](custom-settings-android-for-work.md)
 8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
 
-O perfil será criado e aparecerá na folha da lista de perfis.
+O perfil é criado e exibido na folha da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

@@ -6,29 +6,27 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Windows no Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As políticas de conformidade são criadas para cada plataforma.  Você pode criar uma política de conformidade no Portal do Azure. Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+As políticas de conformidade são criadas para cada plataforma. Você pode criar uma política de conformidade no Portal do Azure. Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
-A tabela abaixo descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
+A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
 
 ---------------------------
 
@@ -46,7 +44,7 @@ A tabela abaixo descreve como as configurações não compatíveis são gerencia
 
 **Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)+
 
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:+
+**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando o dispositivo não é compatível, ocorrem as seguintes ações:
 
 - O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
 - O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
@@ -55,7 +53,7 @@ A tabela abaixo descreve como as configurações não compatíveis são gerencia
 
 1. Na folha **Intune**, escolha **Definir conformidade do dispositivo**. Em **Gerenciar**, escolha **Todas as políticas de conformidade de dispositivo** e selecione **Criar**.
 2. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
-3. Escolha **Requisitos de conformidade** para abrir a folha de requisitos de conformidade.  Você pode especificar as configurações de **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo** aqui. Quando terminar, escolha **OK**.
+3. Escolha **Requisitos de conformidade** para abrir a folha de requisitos de conformidade.  Você pode especificar as configurações de **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo** aqui; quando terminar, escolha **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -71,7 +69,7 @@ Para atribuir uma política de conformidade aos usuários, escolha uma política
 1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. Isso abrirá a folha na qual é possível selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
 2. Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD.  Escolher **Selecionar** implanta a política para os usuários.
 
-Você aplicou a política para os usuários.  A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
+Você aplicou a política para os usuários. A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
 
 <!---## Compliance policy settings--->
 
@@ -84,7 +82,7 @@ Você aplicou a política para os usuários.  A conformidade dos dispositivos us
 - **Tamanho mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
 - **Tipo de senha exigido:** especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
 
-Para dispositivos que executam o Windows e são acessados com uma Conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
+Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 
 - **Número mínimo de conjuntos de caracteres:** se o **Tipo de senha necessário** for definido como **Alfanumérico**, essa configuração especificará o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
   - Letras minúsculas
@@ -92,9 +90,9 @@ Para dispositivos que executam o Windows e são acessados com uma Conta da Micro
   - Símbolos
   - Números
 
-Definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas. Para dispositivos que executam o Windows e são acessados com uma Conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
+Definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 
-- **Minutos de inatividade antes da senha ser necessária:** especifica o tempo ocioso antes que o usuário precise digitar novamente a senha.
+- **Minutos de inatividade antes que a senha seja requerida:** especifica o tempo ocioso antes que o usuário tenha que digitar novamente a senha.
 - **Expiração da senha (dias):** selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
 - **Lembrar o histórico da senha:** use essa configuração em conjunto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
 - **Evitar a reutilização de senhas anteriores:** se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
@@ -132,19 +130,19 @@ Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Es
 
 Especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
 
-Para dispositivos acessados com uma Conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
+Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
 
 - **Tipo de senha necessária** – Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1
 
 Especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
 
-- **Número mínimo de conjuntos de caracteres** – Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1. Se **Tipo de senha necessário** for definido como **Alfanumérico**, essa configuração especificará o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
+- **Número mínimo de conjuntos de caracteres** – Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1. Se **Tipo de Senha Necessário** é definido como **Alfanumérico**, essa configuração especifica o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
   - Letras minúsculas
   - Letras maiúsculas
   - Símbolos
-  - Números: definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas.
+  - Números: a definição de um número maior para essa configuração exige que os usuários criem senhas mais complexas.
 
-Para dispositivos acessados com uma Conta da Microsoft, a política de conformidade não é avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
+Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
 
 - **Minutos de inatividade antes da senha ser necessária:** - Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1
 
@@ -160,7 +158,7 @@ Use essa configuração em conjunto com **Evitar a reutilização de senhas ante
 
 - **Evitar a reutilização de senhas anteriores:** - Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Se a opção **Lembrar Histórico de Senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
+Se a opção **Lembrar histórico de senha:** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 
 
 ## <a name="device-health-settings"></a>Configurações de integridade do dispositivo
@@ -179,16 +177,24 @@ Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Es
 
 Especifique o número de major.minor.build aqui. O número de versão deve corresponder à versão retornada pelo comando ```winver```.
 
-Quando um dispositivo tiver uma versão mais antiga que a versão de sistema operacional especificada, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
+Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
 - **Sistema operacional máximo permitido:** - Com suporte no Windows 8.1 e no Windows 10.
 
 Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
-Para localizar a versão do sistema operacional que deve ser usada para as configurações **Sistema operacional mínimo necessário** e **Versão máxima do sistema operacional permitida**, execute o comando **winver** no prompt de comando. O comando winver retorna a versão relatada do sistema operacional.+
+Para localizar a versão do sistema operacional que deve ser usada para as configurações **Sistema operacional mínimo necessário** e **Versão de sistema operacional máxima permitida**, execute o comando **winver** no prompt de comando. O comando winver retorna a versão relatada do sistema operacional.+
 
 - Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do sistema operacional for definida como Windows 8.1 para Windows, então o dispositivo será relatado como não compatível mesmo que o dispositivo tenha o Windows 8.1.
 - Em computadores que executam o Windows 10, a versão deve ser definida como &quot;10.0&quot;+ o número de build do sistema operacional retornado pelo comando winver.
+
+## <a name="windows-holographic-for-business-support"></a>Compatibilidade do Windows Holographic for Business
+
+O Windows Holographic for Business é compatível com a seguinte configuração:
+
+- Segurança do Sistema/Criptografia
+
+  **Criptografia de armazenamento de dados no dispositivo**.
 
 <!--- ## Next steps
 

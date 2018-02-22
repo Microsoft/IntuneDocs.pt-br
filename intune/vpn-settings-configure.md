@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Como definir configurações de VPN no Microsoft Intune
 
@@ -71,16 +69,16 @@ Saiba como criar perfis de VPN personalizados usando configurações de URI em [
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
 6. Na lista suspensa de tipos de **Perfil**, escolha **VPN**.
-7. Dependendo da plataforma escolhida, as configurações que podem ser definidas serão diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
+7. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
     - [Configurações do Android e do Android for Work](vpn-settings-android.md)
     - [Configurações do iOS](vpn-settings-ios.md)
     - [Configurações do macOS](vpn-settings-macos.md)
     - [Configurações do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
     - [Configurações do Windows 8.1](vpn-settings-windows-8-1.md)
-    - [Configurações do Windows 10](vpn-settings-windows-10.md)
+    - [Configurações do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
 8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
 
-O perfil será criado e aparecerá na folha da lista de perfis.
+O perfil é criado e exibido na folha da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
 

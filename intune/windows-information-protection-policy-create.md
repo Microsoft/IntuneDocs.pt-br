@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -125,9 +125,11 @@ Depois de adicionar os aplicativos que deseja proteger com WIP, você precisará
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-O Aprendizado de WIP é um relatório que permite monitorar aplicativos com WIP desconhecido. Os aplicativos desconhecidos são aqueles que não são implantados pelo departamento de TI da sua organização. É possível exportar esses aplicativos do relatório e adicioná-los às políticas de WIP para evitar a interrupção de produtividade antes que eles imponham o WIP no modo "Bloquear".
+O Aprendizado da WIP é um relatório que permite monitorar aplicativos habilitados para WIP e desconhecidos da WIP. Os aplicativos desconhecidos são aqueles que não são implantados pelo departamento de TI da sua organização. É possível exportar esses aplicativos do relatório e adicioná-los às políticas de WIP para evitar a interrupção de produtividade antes que eles imponham o WIP no modo "Bloquear".
 
-Recomendamos que você inicie com **Silencioso** ou **Permitir Substituições** durante a verificação com um pequeno grupo que você tenha os aplicativos certos em sua lista de aplicativos permitidos. Depois de terminar, você poderá alterar sua política de imposição final, **Bloquear**.
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+Ao trabalhar com aplicativos habilitados para a WIP e aplicativos desconhecidos da WIP, recomendamos que você inicie com **Silencioso** ou **Permitir Substituições** durante a verificação com um pequeno grupo que você tenha os aplicativos certos em sua lista de aplicativos permitidos. Depois de terminar, você poderá alterar sua política de imposição final, **Bloquear**.
 
 ### <a name="what-are-the-protection-modes"></a>Quais são os modos de proteção?
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f77e6c0e473e2e713186b927485d4dcda1b0f5e1
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e6649962402dd8c8d11ea7357b48edee268b0f05
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acesso ao recurso da empresa com o Microsoft Intune
 
@@ -38,7 +38,7 @@ Se essas informações não resolverem seu problema, confira [How to get support
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Recuperando conteúdo|Causa provável: o status de trabalho 30 indica que o download de um aplicativo por um usuário falhou.<br /><br />As causas prováveis disso podem ser:<br /><br />O dispositivo perdeu a conectividade com a Internet enquanto o download estava em andamento.<br /><br />O certificado emitido para o dispositivo no momento do registro pode ter expirado.<br /><br />Mitigação:<br /><br />Inicie o aplicativo Company Apps no Painel de Controle do dispositivo para verificar se o certificado do dispositivo não expirou. Em caso afirmativo, você precisará registrar o dispositivo novamente.<br /><br />Confirme se o dispositivo está conectado à Internet e tente solicitar o aplicativo novamente.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Download do conteúdo concluído||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Instalação em andamento||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Ocorreu um erro de instalação|A instalação do aplicativo falhou após o download.<br /><br />O certificado de assinatura de código com o qual o aplicativo foi assinado não está presente no dispositivo.<br /><br />Uma dependência de estrutura da qual o aplicativo depende não está instalada no dispositivo.<br /><br />Verifique se o certificado de assinatura de código com o qual seu aplicativo foi assinado está presente no dispositivo e confirme com o administrador que esse certificado foi direcionado para todos os dispositivos Windows RT registrados da empresa.<br /><br />Caso a falha de instalação se deva à ausência de uma dependência de estrutura, o administrador precisará publicar novamente o aplicativo, empacotando a estrutura no pacote de aplicativos.<br /><br />O pacote de aplicativos baixado não é um pacote válido, pode ter sido corrompido ou pode não ser compatível com a versão do sistema operacional no dispositivo.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Ocorreu um erro de instalação|A instalação do aplicativo falhou após o download.<br /><br />O certificado de assinatura de código com o qual o aplicativo foi assinado não está presente no dispositivo.<br /><br />Uma dependência de estrutura da qual o aplicativo depende não está instalada no dispositivo.<br /><br />Verifique se o certificado de assinatura de código com o qual seu aplicativo foi assinado está presente no dispositivo e confirme com o administrador que esse certificado foi direcionado para todos os dispositivos Windows RT registrados da empresa.<br /><br />Caso a falha de instalação se deva à ausência de uma dependência de estrutura, o administrador precisará publicar novamente o aplicativo, empacotando a estrutura no pacote do aplicativo.<br /><br />O pacote de aplicativos baixado não é um pacote válido, pode ter sido corrompido ou pode não ser compatível com a versão do sistema operacional no dispositivo.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Instalação bem-sucedida||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Desinstalação em andamento||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Ocorreu um erro de desinstalação||

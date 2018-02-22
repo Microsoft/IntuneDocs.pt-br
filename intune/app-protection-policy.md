@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
@@ -72,6 +72,7 @@ Não há suporte para dispositivos Windows. No entanto, quando registra disposit
 ![Imagem que mostra que os dados pode ser movidos livremente entre aplicativos quando não há nenhuma política de proteção de aplicativo em vigor](./media/apps-without-protection-policies.png)
 
 Quando os aplicativos são usados sem restrições, os dados corporativos e pessoais podem se misturar.  Os dados corporativos poderiam acabar em locais como um armazenamento pessoal ou transferidos para aplicativos fora do seu alcance, resultando na perda de dados. As setas no diagrama mostram a movimentação de dados irrestrita entre aplicativos (corporativos e pessoais) e locais de armazenamento.
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>Proteção de dados com as políticas de proteção de aplicativo
 
@@ -134,3 +135,6 @@ Por exemplo, quando o usuário inicia o aplicativo OneDrive usando sua conta de 
 ##  <a name="next-steps"></a>Próximas etapas
 
 [Como criar e implantar as políticas de proteção de aplicativo com o Microsoft Intune](app-protection-policies.md)
+
+## <a name="see-also"></a>Consulte também
+Os aplicativos de terceiros, como o aplicativo móvel Salesforce, funcionam com o Intune de maneiras específicas para proteger dados corporativos. Para saber mais sobre como o aplicativo Salesforce em particular funciona com o Intune (incluindo as definições das configurações do aplicativo MDM), confira [Aplicativo Salesforce e Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

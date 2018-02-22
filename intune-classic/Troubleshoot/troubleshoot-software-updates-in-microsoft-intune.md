@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a3f5d94d5b9b902c4b07939e822076215c01d7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 66cca236d2779fb9a7a01ad6aa10a57edf8ab657
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Solucionar problemas de atualização de software no Microsoft Intune
 
@@ -251,7 +251,7 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 - Eles observam alta utilização da CPU.
 - Os aplicativos são instalados lentamente quando a instalação ocorre por meio do portal do Intune.
 - O Microsoft Intune Center dispara o seguinte erro: *Ocorreu um erro ao atualizar seu computador. Erro encontrado: código 0x800705b4*.
-- O campo de status no Console de administração do Intune > Grupos > Todos os Dispositivos exibe: *Um ou mais agentes que estão instalados neste computador têm erros. As informações deste computador podem não ser precisas ou atualizadas*.
+- O campo de status no Console de administração do Intune > Grupos > Todos os Dispositivos exibe: *Um ou mais agentes que estão instalados neste computador têm erros. As informações deste computador podem estar imprecisas ou desatualizadas*.
 
 Esse problema poderá ocorrer se as atualizações substituídas (que foram trocadas por outra atualização) não forem recusadas por um longo período. Durante determinados processos, como a instalação de um aplicativo, o Windows verifica todas as atualizações substituídas em sequência, para que as atualizações e suas sucessoras possam ser mapeadas corretamente. Se a lista de atualizações substituídas ficar muito grande, essa tarefa de verificação poderá causar alta utilização da CPU devido à carga de processamento e ao tempo necessário. Esse problema afeta principalmente os clientes que estão executando o Windows 7 devido ao grande número de atualizações substituídas que estão disponíveis para o Windows 7. O Windows 8 e os sistemas operacionais posteriores não têm tantas atualizações substituídas disponíveis e, portanto, não são tão suscetíveis a esse problema.
 

@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Usar o Windows Hello para Empresas
 
@@ -43,7 +41,7 @@ O Intune é integrado ao Hello para Empresas de duas maneiras:
 
 >Na Atualização de Aniversário, esses dois PINs foram mesclados em um único PIN do dispositivo.
 Qualquer política de configuração do Intune definida para controlar o PIN do dispositivo e, além disso, qualquer política do Windows Hello para Empresas configurada; agora ambas definem esse novo valor do PIN.
-Se você tiver definido os dois tipos de política para controlar o PIN, a política do Windows Hello para Empresas será aplicada nos dispositivos Windows 10 Desktop e Mobile.
+Se você definiu os dois tipos de política para controlar o PIN, a política do Windows Hello para Empresas será aplicada nos dispositivos de área de trabalho e dispositivos móveis do Windows 10.
 Para garantir que os conflitos de política sejam resolvidos e que a política de PIN seja aplicada corretamente, atualize sua Política do Windows Hello para Empresas para que corresponda às configurações em sua política de configuração e solicite aos usuários que sincronizem seus dispositivos no aplicativo Portal da Empresa.
 
 
@@ -62,7 +60,7 @@ Para garantir que os conflitos de política sejam resolvidos e que a política d
 
     - **Desabilitada**. Se você não quiser usar o Windows Hello para Empresas, selecione esta configuração. Todas as outras configurações na tela ficam indisponíveis.
     - **Habilitada**. Selecione essa configuração se você quiser configurar o Windows Hello para Empresas.
-    - **Não configurado**. Selecione essa configuração se você não quiser usar o Intune para controlar as configurações do Windows Hello para Empresas. Qualquer configuração existente do Windows Hello para Empresas em dispositivos com Windows 10 não será alterada. Todas as outras configurações na folha não estão disponíveis.
+    - **Não configurado**. Selecione essa configuração se você não quiser usar o Intune para controlar as configurações do Windows Hello para Empresas. As configurações existentes do Windows Hello para Empresas em dispositivos com Windows 10 não são alteradas. Todas as outras configurações na folha não estão disponíveis.
 
 6.  Se você selecionou **Habilitado** na etapa anterior, defina as configurações necessárias que serão aplicadas a todos os dispositivos Windows 10 e Windows 10 Mobile registrados.
 
@@ -94,6 +92,18 @@ Para garantir que os conflitos de política sejam resolvidos e que a política d
 
  - **Usar a função entrar com o telefone**. Se essa opção for definida como **Sim**, os usuários poderão usar um passaporte remoto para servir como um dispositivo portátil complementar para autenticação de computador desktop. O computador desktop deve ter ingressado no Azure Active Directory e o dispositivo complementar deve ser configurado com um PIN do Windows Hello para Empresas.
 
+## <a name="windows-holographic-for-business-support"></a>Compatibilidade do Windows Holographic for Business
+
+O Windows Holographic for Business é compatível com as seguintes configurações do Windows Hello para Empresas:
+
+- Usar o Trusted Platform Module (TPM)
+- Tamanho mínimo do PIN
+- Tamanho máximo do PIN
+- Letras minúsculas no PIN
+- Letras maiúsculas no PIN
+- Caracteres especiais no PIN
+- Término do PIN (dias)
+- Lembrar do histórico do PIN
 
 ## <a name="further-information"></a>Informações adicionais
 Para obter mais informações sobre o Microsoft Passport, consulte [o guia](https://technet.microsoft.com/library/mt589441.aspx) na documentação do Windows 10.

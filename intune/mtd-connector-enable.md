@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 50136397091bd3275fa1481e6a983dcf49d93f55
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0d5e90cb91032a88830e7dc9af1d66d854ab4963
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Habilitar a Defesa Contra Ameaças Móveis no Intune
 
@@ -51,10 +51,10 @@ Para habilitar a conexão de MTD (Defesa contra Ameaças Móveis) no Intune, voc
 Decida quais opções de alternância do MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes:
 
 - **Conectar dispositivos Android 4.1 ou superior ao [nome do parceiro de MTD] for Work MTD**: ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 ou superior relatem os riscos de segurança para o Intune.
-    - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados sobre um dispositivo nesta plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
+    - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados do parceiro de MTD sobre um dispositivo nesta plataforma, considerar o dispositivo não compatível.
 <br></br>
 - **Conectar dispositivos iOS 8.0 ou superior ao [nome do parceiro de MTD] for Work MTD**: ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 ou superior relatem os riscos de segurança para o Intune.
-    - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados sobre um dispositivo nesta plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
+    - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados do parceiro de MTD sobre um dispositivo nesta plataforma, considerar o dispositivo não compatível.
 <br></br>
 - **Bloquear versões do sistema operacional sem suporte**: bloqueie se o dispositivo estiver executando um sistema operacional inferior à versão mínima com suporte.
 

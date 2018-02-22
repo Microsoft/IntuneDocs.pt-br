@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: d3c176b84a8555de245a1f4014c39885e50ab21d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 009759aa826872fc2c608c6786749d6706cd2f93
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="configure-app-protection-policies-optional"></a>Configurar políticas de proteção de aplicativo (opcional)
 
@@ -33,7 +33,7 @@ As políticas de proteção de aplicativo aplicam a segurança no nível do apli
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Políticas de proteção de aplicativo com aplicativos LOB
 
-Também é possível estender as políticas de proteção de aplicativo móvel aos seus aplicativos LOB (linha de negócios) usando o [SDK de Aplicativo do Microsoft Intune](app-sdk-get-started.md) ou a Microsoft Intune App Wrapping Tool para as plataformas [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) e [Android](https://www.microsoft.com/download/details.aspx?id=47267).
+Também é possível estender as políticas de proteção de aplicativo móvel aos seus aplicativos LOB (linha de negócios) usando o [SDK de Aplicativo do Microsoft Intune](app-sdk-get-started.md) ou a Microsoft Intune App Wrapping Tool para as plataformas iOS e Android. Para saber mais, confira [Ferramenta de Disposição do Aplicativo para iOS](app-wrapper-prepare-ios.md) e [Ferramenta de Disposição do Aplicativo para Android](app-wrapper-prepare-android.md). Além disso, confira [Preparar os aplicativos LOB para a proteção de aplicativo](apps-prepare-mobile-application-management.md).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Como as políticas de proteção de aplicativo ajudam durante a migração?
 

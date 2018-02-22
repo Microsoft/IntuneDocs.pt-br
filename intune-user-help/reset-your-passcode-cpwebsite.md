@@ -17,18 +17,18 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 111cbc1aa2dd9c537a7f5581d0dd6f2e75d8c7f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1d9321838cdf7721410a1ba204dd02bd868dcd72
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
 Se você perder a senha ou o PIN do seu dispositivo para um dispositivo que você registrou no Intune, você poderá usar o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para redefini-la. Você pode usar o site do Portal da Empresa para gerenciar computadores e dispositivos que você registrou no Intune e para realizar a maioria das mesmas tarefas que você pode fazer quando usa o aplicativo de Portal da Empresa.
 
 > [!NOTE]
-> É possível que você não veja o botão Redefinir Senha no site do Portal da Empresa se utilizar um dispositivo corporativo registrado. Se não ver, será necessário entrar em contato com suporte de sua empresa para redefinir a senha para você.
+> É possível que você não veja o botão Redefinir Senha no site do Portal da Empresa se utilizar um dispositivo corporativo registrado. Se não vir, será necessário entrar em contato com suporte de sua empresa para redefinir a senha para você.
 
 Para redefinir sua senha:
 
@@ -57,7 +57,7 @@ Para redefinir sua senha:
   > [!NOTE]
   > Não é possível redefinir a senha para dispositivos com Android 7.0 e posterior. Será necessário redefinir esses dispositivos para as configurações de fábrica se você esquecer sua senha.
 
-  **iOS**: remove a senha existente e não cria uma senha temporária. Se você estiver usando o scanner de impressão digital de ID de Toque para abrir o dispositivo ou fazer compras, será necessário configurá-lo novamente.
+  **iOS**: remove a senha existente e não cria uma senha temporária. Se você está usando o scanner de impressão digital Touch ID para abrir o dispositivo ou fazer compras, é necessário configurá-lo novamente.
 
   **Windows 10 Mobile**: remove a senha existente e cria uma senha temporária com letras e números. Se você estiver usando o reconhecimento do rosto do Windows Hello para fazer logon, ele ainda terá suporte.
     

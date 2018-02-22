@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Adicionar usuários e conceder permissão administrativa para o Intune
 
@@ -102,7 +102,7 @@ Atribua uma ou mais permissões de administrador aos usuários. Essas permissõe
 - **Administrador de usuários** – (Office 365 e Intune) Redefine senhas, monitora a integridade do serviço, adiciona e exclui contas de usuário e gerencia solicitações de serviço. O administrador de gerenciamento de usuários não pode excluir um administrador global, criar outras funções de administrador ou redefinir senhas para outros administradores.
 - **Administrador de Serviços do Intune** – Todas as permissões de Administrador global do Intune, exceto a permissão para criar administradores com opções **Função do Diretório**.
 
-A conta usada para criar sua assinatura do Microsoft Intune é de um administrador global. Como prática recomendada, não use o administrador global para tarefas de gerenciamento cotidianas. Um administrador não precisa de uma licença do Intune para acessar o Portal do Azure. 
+A conta usada para criar sua assinatura do Microsoft Intune é de um administrador global. Como prática recomendada, não use o administrador global para tarefas de gerenciamento cotidianas. Embora um administrador não necessite de uma licença do Intune para acessar o Intune no Portal do Azure, é necessário ter uma licença do Intune para executar algumas tarefas de gerenciamento, como configurar o conector do serviço do Exchange. 
 
 Para acessar o Portal do Office 365, sua conta deve ter um status de **Entrada permitida** definido. No Portal do Azure, em **Perfil**, defina **Bloquear entrada** para **Não** para permitir o acesso. Esse status é diferente de ter uma licença para a assinatura. Por padrão, todas as contas de usuário são **Permitidas**. Usuários sem permissões de administrador podem usar o portal do Office 365 para redefinir as senhas do Intune.
 

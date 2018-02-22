@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f601253c6ea905e86a2a417cfd37bdb03b1df48b
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Criar a política de conformidade da Defesa contra Ameaças Móveis do Skycure
 
@@ -47,7 +47,7 @@ Como parte da configuração da Defesa contra Ameaças Móveis do Skycure, no co
 
 4.  Selecione o **Nível máximo de ameaça permitido**:
 
-    a.  **Nenhum (Seguro)**: este é o mais seguro. O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como fora de conformidade.
+    a.  **Nenhum (Seguro)**: este é o mais seguro. O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível.
 
     b.  **Baixo**: o dispositivo estará em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
 
@@ -56,7 +56,7 @@ Como parte da configuração da Defesa contra Ameaças Móveis do Skycure, no co
     d.  **Alto**: esta é a opção menos segura. Isso permite todos os níveis de ameaça e usa a Defesa contra Ameaças Móveis do Skycure apenas para fins de relatório.
 
 > [!IMPORTANT]
-> Se você criar políticas de acesso condicional para o Office 365 ou outros serviços, essa avaliação de conformidade será avaliada e os dispositivos que não estiverem em conformidade serão impedidos de acessar esses serviços até que a ameaça seja resolvida.
+> Se você criar políticas de acesso condicional para o Office 365 ou outros serviços, essa avaliação de conformidade será avaliada e os dispositivos não compatíveis serão impedidos de acessar esses serviços até que a ameaça seja resolvida.
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Próximas etapas
 

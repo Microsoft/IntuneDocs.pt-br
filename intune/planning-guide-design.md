@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b24b7615c6070614bb19aac0f4edb7d12ddc65c5
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -137,11 +137,11 @@ Identidade é como identificamos nossos usuários que estão abaixo de sua organ
 
 Saiba mais sobre os seguintes requisitos de identidade do Intune:
 
-- [Requisitos de identidade](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
+- [Requisitos de identidade](https://docs.microsoft.com/azure/active-directory/understand-azure-identity-solutions).
 
-- [Requisitos de sincronização de diretório](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
+- [Requisitos de sincronização de diretório](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
-- [Requisitos da autenticação multifator](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+- [Requisitos da autenticação multifator](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Grupos de usuários e de dispositivos
 
@@ -381,9 +381,9 @@ As políticas de proteção do aplicativo minimizam a perda de dados, definindo 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de proteção do aplicativo.
 #### <a name="compliance-policies"></a>Políticas de conformidade
 
-As políticas de conformidade determinam se um dispositivo está em conformidade com requisitos específicos. O Intune usa políticas de conformidade para determinar se um dispositivo é considerado em conformidade ou não. Em seguida, o status de conformidade pode ser usado para restringir o acesso aos recursos da empresa. Se o acesso condicional for necessário, recomenda-se criar uma [política de conformidade do dispositivo](device-compliance.md).
+As políticas de conformidade determinam se um dispositivo está em conformidade com requisitos específicos. O Intune usa políticas de conformidade para determinar se um dispositivo é considerado compatível ou não compatível. Em seguida, o status de conformidade pode ser usado para restringir o acesso aos recursos da empresa. Se o acesso condicional for necessário, recomenda-se criar uma [política de conformidade do dispositivo](device-compliance.md).
 
-Consulte os requisitos e casos de uso para determinar quantas políticas de conformidade do dispositivo são necessárias e quais grupos de usuários são os grupos de usuários de destino. Além disso, é necessário determinar por quanto tempo um dispositivo pode ficar offline sem fazer check-in antes de ser considerado fora de conformidade.
+Consulte os requisitos e casos de uso para determinar quantas políticas de conformidade do dispositivo são necessárias e quais grupos de usuários são os grupos de usuários de destino. Além disso, é necessário determinar por quanto tempo um dispositivo pode ficar offline sem fazer check-in antes de ser considerado não compatível.
 
 Veja abaixo um exemplo de como criar uma política de conformidade:
 
@@ -407,7 +407,7 @@ Este é um exemplo de como documentar as políticas de acesso condicional:
 
 | **Serviço** | **Plataformas para Autenticação Moderna** | **Autenticação básica** | **Casos de uso** |   
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Bloquear dispositivos que não estão em conformidade em plataformas com suporte no Intune | Corporativo, BYOD |
+| Exchange Online | iOS, Android | Bloquear dispositivos não compatíveis em plataformas compatíveis com o Intune | Corporativo, BYOD |
 | SharePoint Online | iOS, Android |  | Corporativo, BYOD |
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso.

@@ -3,10 +3,10 @@ title: Como adicionar aplicativos ao Microsoft Intune
 titlesuffix: Azure portal
 description: "Estes procedimentos ajudam você a deixar seus aplicativos no Intune prontos para serem atribuídos a usuários e dispositivos. \""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar um aplicativo no Microsoft Intune
 
@@ -33,6 +33,7 @@ O Intune permite que você adicione e atribua esses tipos de aplicativo:
 | Aplicativos na Web                           | O Intune cria um atalho para o aplicativo Web na tela inicial do dispositivo          | As atualizações de aplicativo são automáticas     |
 | Aplicativos escritos internamente (linha de negócios)  | O Intune instala o aplicativo no dispositivo (você fornece o arquivo de instalação)    | É necessário atualizar o aplicativo       |
 | Aplicativos da loja                       | O Intune instala o aplicativo no dispositivo                                       | As atualizações de aplicativo são automáticas     |
+| Aplicativos que são internos                        | O Intune instala o aplicativo no dispositivo                                       | As atualizações de aplicativo são automáticas     |
 
 
 Além de aplicativos Web, o Intune é compatível com as seguintes plataformas específicas para aplicativos da loja e aplicativos de LOB:
@@ -49,6 +50,7 @@ Além de aplicativos Web, o Intune é compatível com as seguintes plataformas e
     - Aplicativos LOB para iOS
     - Aplicativos de LOB (linha de negócios) para Windows Phone (arquivos .xap)
     - Aplicativos de LOB (linha de negócios) para Windows (apenas arquivos .msi)
+- Aplicativos internos    
 
 >[!TIP]
 > Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo de LOB do iOS, adicione o aplicativo escolhendo **Aplicativo de linha de negócios** como o **Tipo de aplicativo** na folha **Adicionar aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
@@ -147,4 +149,5 @@ Escolha um dos tópicos a seguir para saber como adicionar aplicativos para cada
 - [Aplicativos da Windows Store](store-apps-windows.md)
 - [Aplicativos LOB para Windows](lob-apps-windows.md)
 - [Aplicativos do Office 365 para Windows 10](apps-add-office365.md)
+- [Aplicativos internos](apps-add-built-in.md)
 

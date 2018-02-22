@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acesso condicional
 
@@ -72,7 +72,7 @@ Quando você cria uma política de conformidade e a vincula a uma política de e
 ## <a name="exchange-activesync-issues"></a>Problemas com o Exchange ActiveSync
 
 ### <a name="compliant-android-device-gets-quarantine-notice"></a>Um dispositivo Android compatível recebe aviso de quarentena
-- Um dispositivo Android registrado e compatível ainda pode receber um aviso de quarentena ao tentar acessar recursos corporativos. Antes de escolher o link que diz **Começar**, o usuário deve verificar se o portal da empresa não estava aberto quando ele tentou acessar os recursos. Os usuários devem fechar o portal da empresa, tente novamente para acessar os recursos e, em seguida, escolher o link **Começar**.
+- Um dispositivo Android registrado e em conformidade ainda pode receber um aviso de quarentena ao tentar acessar recursos corporativos. Antes de escolher o link que diz **Começar**, o usuário deve verificar se o portal da empresa não estava aberto quando ele tentou acessar os recursos. Os usuários devem fechar o portal da empresa, tente novamente para acessar os recursos e, em seguida, escolher o link **Começar**.
 
 ### <a name="retired-device-continues-to-have-access"></a>Um dispositivo desativado continua tendo acesso.
 - Durante a utilização do Exchange Online, um dispositivo desativado pode continuar tendo acesso por várias horas após a desativação. Isso ocorre porque o Exchange armazena em cache os direitos de acesso por 6 horas. Considere outros meios de proteção de dados em dispositivos desativados neste cenário.
@@ -90,7 +90,7 @@ Um dispositivo pode ser bloqueado do Acesso condicional sem receber um email de 
 - Verifique os logs do Exchange Connector quanto à atividade EnviarEmail e verifique se há erros. Um exemplo de comando a ser procurado é EnviarEmail da conta de notificação para EmailUsuário.
 - Antes de bloquear o dispositivo, o Exchange Connector envia o email de ativação. Se o dispositivo estiver offline, ele poderá não receber o email de ativação. Verifique se o cliente de email do dispositivo tem recuperação de email usando Push em vez de Pull, pois isso também pode fazer com que o usuário perca o email. Mude para Pull e veja se o dispositivo recebe o email.
 
-## <a name="non-compliant-device-not-blocked"></a>Um dispositivo incompatível não é bloqueado
+## <a name="noncompliant-device-not-blocked"></a>Dispositivo incompatível não bloqueado
 
 Se você encontrar um dispositivo que não é compatível, mas continua tendo acesso, execute as etapas a seguir.
 

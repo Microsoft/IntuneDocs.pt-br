@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: af181ce63900257699e88343b2de2ac4a28685de
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4386f38fc1311bcb01e03de8b889a82056795ce3
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades do Portal Clássico do Intune – meses anteriores
 
@@ -139,7 +139,7 @@ Agora, é possível controlar o acesso de dispositivos móveis a recursos corpor
 - Defesa do aplicativo
 - Defesa de vulnerabilidades
 
-É possível configurar políticas de acesso condicional de EMS com base na avaliação de risco do Skycure habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos incompatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector de Defesa contra Ameaças Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+É possível configurar políticas de acesso condicional de EMS com base na avaliação de risco do Skycure habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos não compatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector de Defesa contra Ameaças Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência do usuário para o aplicativo Portal da Empresa para Android <!--621622-->
 

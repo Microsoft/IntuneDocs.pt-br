@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eda4ad57f1365a7fe27d58ad8f40399b1582b4b6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrar dispositivos usando o gerenciador de registro de dispositivo
 
@@ -30,7 +30,7 @@ As organizações podem usar o Intune para gerenciar um grande número de dispos
 Os usuários devem existir no Portal do Azure para serem adicionados como gerenciadores de registro do dispositivo. Para uma melhor segurança, o usuário do DEM não deve ser um administrador do Intune também.
 
 >[!NOTE]
->O método de registro DEM não pode ser usado com estes outros métodos de registro: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com registro direto](apple-configurator-direct-enroll-ios.md), [ASM (Apple School Manager)](apple-school-manager-set-up-ios.md) ou [DEP (Programa de registro de dispositivos)](device-enrollment-program-enroll-ios.md). Também não pode ser usado para registrar dispositivos com macOS. 
+>O método de registro DEM não pode ser usado com estes outros métodos de registro: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com registro direto](apple-configurator-direct-enroll-ios.md), [ASM (Apple School Manager)](apple-school-manager-set-up-ios.md) ou [DEP (Programa de registro de dispositivos)](device-enrollment-program-enroll-ios.md). Também não pode ser usado para registrar dispositivos com macOS.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gerenciador de registro de dispositivos
 
@@ -65,13 +65,11 @@ Dispositivos registrados com uma conta de gerenciador de registro de dispositivo
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gerenciador de registro de dispositivo
 
-1.  No portal do Azure, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1.  No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Gerenciadores de registro de dispositivo**.
 
-2.  Na folha Intune, escolha **Registrar dispositivos** e selecione **Gerenciadores de Registro de Dispositivo**.
+2.  Selecione **Adicionar**.
 
-3.  Selecione **Adicionar**.
-
-4.  Na folha **Adicionar Usuário**, insira um nome UPN para o usuário DEM e selecione **Adicionar**. O usuário DEM é adicionado à lista de usuários DEM.
+3.  Na folha **Adicionar Usuário**, insira um nome UPN para o usuário DEM e selecione **Adicionar**. O usuário DEM é adicionado à lista de usuários DEM.
 
 ## <a name="permissions-for-dem"></a>Permissões para o DEM
 

@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f658784ae2dc462594c4ad99bc82b200b3544cb4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrar seu dispositivo Windows 10 no Intune
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/25/2018
 
     ![Entrar](./media/W10-enroll-4-sign-in.png)
 
-Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Tente corrigir o acesso [solucionando problemas com sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se ainda não funcionar, você precisará entrar em contato com o suporte de sua empresa para obter ajuda adicional.
+Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Tente corrigir o acesso [solucionando problemas com sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se ainda não funcionar, você deverá entrar em contato com o suporte da sua empresa para obter ajuda.
 
 Uma maneira fácil de obter ajuda do suporte de sua empresa é por meio das informações de contato disponíveis no aplicativo Portal da Empresa, que também permite localizar e baixar aplicativos recomendados e necessários para seu trabalho diário. É possível que você já tenha o aplicativo Portal da Empresa instalado no dispositivo. Uma maneira rápida de verificar é procurar o __Portal da Empresa__ em sua lista de __Todos os aplicativos__.
 
