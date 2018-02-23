@@ -5,26 +5,27 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/06/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
-ms.reviewer: andcerat
+ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2889a0a32e58a677f825800bfa50dea64839d663
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. As políticas do aplicativo são aplicadas somente quando aplicativos são usados em um contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive de uma empresa.
+Este artigo descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. As políticas de proteção do aplicativo são aplicadas somente quando aplicativos são usados em um contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no local do OneDrive for Business.
+
 ##  <a name="access-apps"></a>Acessar aplicativos
 
 O aplicativo Portal da Empresa é necessário para todos os aplicativos que estão associados a políticas de proteção de aplicativo em dispositivos Android.
@@ -42,21 +43,15 @@ Por exemplo, o usuário receberá uma solicitação para fornecer o PIN ao acess
 
 ##  <a name="manage-user-accounts-on-the-device"></a>Gerenciar contas de usuário no dispositivo
 
-O Intune só dá suporte à implantação de políticas de proteção do aplicativo a uma conta de usuário por dispositivo.
+Aplicativos de várias identidades permitem aos usuários adicionar várias contas.  O aplicativo do Intune permite apenas uma conta de gerenciamento.  Aplicativo do Intune não limita o número de contas não gerenciados.
 
-* Dependendo do aplicativo que você estiver usando, o segundo usuário poderá ser bloqueado no dispositivo. No entanto, em todos os casos, somente o primeiro usuário que obtiver as políticas de proteção de aplicativo será afetado pela política.
-
-  * **Microsoft Word**, **Excel** e **PowerPoint** não bloqueiam uma segunda conta de usuário, porém a segunda conta de usuário não é afetada pelas políticas de proteção de aplicativo.
-
-  * Nos **aplicativos OneDrive** e **Outlook**, é possível usar somente uma conta corporativa.  Não é possível adicionar várias contas corporativas a esses aplicativos.  É possível remover um usuário e adicionar um usuário diferente ao dispositivo.
-
-
-* Se um dispositivo existente tiver várias contas de usuário antes das políticas de proteção de aplicativo serem implantadas, a conta em que as políticas de proteção de aplicativo forem implantadas primeiro será gerenciada pelas políticas de proteção de aplicativo do Intune.
-
+Quando há uma conta gerenciada em um aplicativo:
+*   Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+*   Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
 
 Leia o cenário de exemplo a seguir para entender melhor como várias contas de usuário são tratadas.
 
-O usuário A trabalha para duas empresas – **Empresa X** e **Empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de proteção de aplicativo. A **Empresa X** implanta políticas de proteção de aplicativo **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção do aplicativo, mas não a conta associada à Empresa Y. Se você quiser que a conta de usuário associada à Empresa Y seja gerenciada pelas políticas de proteção do aplicativo, será necessário remover a conta de usuário associada à Empresa X.
+O usuário A trabalha para duas empresas – **Empresa X** e **Empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de proteção de aplicativo. A **Empresa X** implanta políticas de proteção de aplicativo **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção do aplicativo, mas não a conta associada à Empresa Y. Se você quiser que a conta de usuário associada à Empresa Y seja gerenciada pelas políticas de proteção do aplicativo, será necessário remover a conta de usuário associada à Empresa X e adicionar a conta associada à Empresa X.
 ### <a name="add-a-second-account"></a>Adicionar uma segunda conta
 ####  <a name="android"></a>Android
 Se estiver usando um dispositivo Android, você poderá ver uma mensagem de bloqueio com instruções para remover a conta existente e adicionar uma nova.  Para remover a conta existente, vá para **Configurações &gt;Geral &gt; Gerenciador de Aplicativos &gt;Portal da Empresa**. Então, escolha **Limpar Dados**.

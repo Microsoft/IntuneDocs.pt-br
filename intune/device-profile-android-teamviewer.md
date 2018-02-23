@@ -1,25 +1,24 @@
 ---
 title: Como administrar dispositivos remotamente usando o TeamViewer
 titlesuffix: Azure portal
-description: Saiba como administrar dispositivos remotamente usando o TeamViewer."
+description: Saiba como administrar dispositivos remotamente usando o TeamViewer.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 476480ce3957ef2d411b37a0a078707c721fd2e6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Fornecer assistência remota para dispositivos gerenciados pelo Intune
 
@@ -32,7 +31,7 @@ O Intune pode usar o software [TeamViewer](https://www.teamviewer.com), comprado
 Os dispositivos Android e Windows gerenciados pelo Intune dão suporte à administração remota.
 
 >[!NOTE]
->O Windows Holographic (HoloLens), o Windows Team (Surface Hub) e o Windows 10 S são compatíveis com o software TeamViewer. Você ainda precisa gerenciar dispositivos usando o [PC cliente](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) no Portal Clássico do Intune.
+>O Windows Holographic (HoloLens), o Windows Team (Surface Hub) e o Windows 10 S são compatíveis com o software TeamViewer.
 
 
 
@@ -76,4 +75,4 @@ Quando tiver concluído, feche a janela do TeamViewer.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Um usuário final verá um sinalizador de notificação no ícone do aplicativo do Portal da Empresa no dispositivo e também verá uma notificação quando o aplicativo for aberto. Em seguida, ele poderá aceitar a solicitação de assistência remota.
+Um usuário final vê um sinalizador de notificação no ícone do aplicativo do Portal da Empresa no dispositivo e também vê uma notificação quando o aplicativo for aberto. Em seguida, ele poderá aceitar a solicitação de assistência remota.

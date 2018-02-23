@@ -1,25 +1,24 @@
 ---
 title: "Como criar uma política de conformidade para o macOS"
 titleSuffix: Azure portal
-description: "Saiba como criar uma política de conformidade para dispositivos macOS.\""
+description: "Saiba como criar uma política de conformidade para dispositivos macOS."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Criar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
 
@@ -35,25 +34,21 @@ Antes de criar e atribuir uma política de conformidade do dispositivo, examine 
 > [!IMPORTANT]
 > Você precisa criar políticas de conformidade do dispositivo para cada plataforma. As configurações da política de conformidade do dispositivo do Intune dependem das funcionalidades de plataforma, que são configurações expostas por meio do protocolo MDM.
 
-A tabela abaixo descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
-
--------------------------------
+A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional:
 
 
-| **Configuração de política** | **macOS 10.11 e posterior** |
+| Configuração de política | macOS 10.11 e posterior |
 | --- | --- |
 | **Configuração de senha ou PIN** | Corrigida |   
 | **Criptografia de dispositivo** | Corrigida (pela definição do PIN) |
 | **Perfil de email** | Em Quarentena |
 |**Versão mínima do SO** | Em Quarentena |
 | **Versão máxima do SO** | Em Quarentena |  
-| **Atestado de integridade do Windows** | Não Aplicável |  
-----------------------------
 
 
 **Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)
 
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:
+**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando o dispositivo não é compatível, ocorrem as seguintes ações:
 
 - O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
 - O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
@@ -70,27 +65,27 @@ Você tem categorias diferentes com configurações diferentes para escolher ao 
 
 ### <a name="device-health"></a>Integridade do Dispositivo
 
-- **Exigir uma proteção de integridade do sistema**: defina isso como **Exigir** para verificar se os dispositivos macOS têm a proteção de integridade do sistema habilitada.
+- **Exigir uma proteção de integridade do sistema** – defina como **Exigir** para verificar se os dispositivos macOS têm a proteção de integridade do sistema habilitada.
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Versão do sistema operacional mínima**: quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar o dispositivo. Depois disso, ele pode acessar recursos da empresa.
+- **Versão do sistema operacional mínima** – quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar o dispositivo. Depois disso, ele pode acessar recursos da empresa.
 
-- **Versão do sistema operacional máxima**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e será solicitado que o usuário contate o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+- **Versão do sistema operacional máxima** – quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e será solicitado que o usuário contate o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
 ### <a name="system-security-settings"></a>Configurações de segurança do sistema
 
 #### <a name="password"></a>Senha
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: defina essa opção como **Exigir** para que os usuários insiram uma senha antes de poder acessar o dispositivo.
+- **Exigir uma senha para desbloquear dispositivos móveis** – defina como **Exigir** para que os usuários insiram uma senha antes de poder acessar o dispositivo.
 
-- **Senhas simples**: defina isso como **Bloquear** para que o usuário não possa criar uma senha simples como **1234** ou **1111**.
+- **Senhas simples** – defina como **Bloquear** para que o usuário não possa criar uma senha simples como **1234** ou **1111**.
 
-- **Tamanho mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.
+- **Tamanho mínimo da senha** – especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.
 
-- **Tipo de senha**: especifique se o usuário deve criar uma senha **Alfanumérica** ou **Numérica**.
+- **Tipo de senha** – especifique se o usuário deve criar uma senha **Alfanumérica** ou **Numérica**.
 
-- **Número de caracteres não alfanuméricos na senha:** se você definir **Tipo de senha necessária** como **Alfanumérica**, use essa configuração para especificar o número mínimo de conjuntos de caracteres que a senha deve conter. 
+- **Número de caracteres não alfanuméricos na senha** – se você definir **Tipo de senha necessária** como **Alfanumérica**, use essa configuração para especificar o número mínimo de conjuntos de caracteres que a senha deve conter. 
 
     > [!NOTE]
     > Definir um número mais alto exige que o usuário crie uma senha mais complexa.
@@ -98,14 +93,14 @@ Você tem categorias diferentes com configurações diferentes para escolher ao 
     > [!IMPORTANT]
     > Para dispositivos macOS, essa configuração refere-se ao número de caracteres especiais (por exemplo, **!** , **#**, **&amp;**) que devem ser incluídos na senha.
 
-- **Máximo de minutos de inatividade antes que a senha seja exigida**: especifique o tempo ocioso antes que o usuário precise digitar novamente a senha.
+- **Máximo de minutos de inatividade antes que a senha seja exigida** – especifique o tempo ocioso antes que o usuário precise digitar novamente a senha.
 
-- **Expiração da senha (dias)**: selecione o número de dias (entre 1 e 250) antes que a senha expire e seja preciso criar uma nova.
+- **Expiração da senha (dias)** – selecione o número de dias (entre 1 e 250) antes que a senha expire e seja preciso criar uma nova.
 
-- **Número de senhas anteriores para evitar a reutilização**: especifique o número de senhas usadas anteriormente que não podem ser reutilizadas.
+- **Número de senhas anteriores para evitar a reutilização** – especifique o número de senhas usadas anteriormente que não podem ser reutilizadas.
 
     > [!IMPORTANT]
-    > Quando o requisito de senha é alterado em um dispositivo macOS, ele não tem efeito até a próxima vez que o usuário alterar sua senha. Por exemplo, se você definir a restrição de comprimento de senha para oito dígitos e o dispositivo macOS atualmente tiver uma senha de seis dígitos, o dispositivo permanecerá em conformidade até a próxima vez que o usuário atualizar sua senha no dispositivo.
+    > Quando o requisito de senha é alterado em um dispositivo macOS, ele não tem efeito até a próxima vez que o usuário alterar sua senha. Por exemplo, se você definir a restrição de comprimento de senha para oito dígitos e o dispositivo macOS atualmente tiver uma senha de seis dígitos, o dispositivo permanecerá em conformidade até a próxima vez que o usuário atualizar a senha no dispositivo.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
 

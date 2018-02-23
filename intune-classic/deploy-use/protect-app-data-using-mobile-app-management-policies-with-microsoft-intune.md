@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger dados de aplicativo usando políticas de proteção de aplicativo com o Microsoft Intune
 
@@ -57,9 +57,7 @@ Há benefícios adicionais em usar MDM com políticas de proteção de aplicativ
 - **Políticas de proteção de aplicativo garantem que as proteções de camada de aplicativo estejam em vigor.** Por exemplo, é possível ter uma política que exige um PIN para abrir um aplicativo em um contexto corporativo, impedir dados de serem compartilhados entre aplicativos e impedir que os dados de aplicativo da empresa sejam salvos em um local de armazenamento pessoal.
 
 ## <a name="devices-that-support-mam"></a>Dispositivos em que há suporte para MAM
-Atualmente, há suporte para políticas de proteção de aplicativo em:
--   iOS 8.1 ou posterior
--   Android 4 ou posterior
+O suporte da plataforma de políticas de proteção de aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo do Office. Para obter detalhes, consulte [Requisitos do sistema Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Os dispositivos Windows não são compatíveis com o MAM sem um cenário de registro. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

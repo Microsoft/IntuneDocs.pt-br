@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,38 +15,44 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eed5bc9fe478582a25284f4d3ea3ba0e7e0a1c7f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cdf00d8adc5a854f90b59c6066d6f0ab7c6ae94a
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Como adicionar aplicativos Android Store ao Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Antes de atribuir um aplicativo em um dispositivo ou um grupo de usuários, você deve primeiro adicionar o aplicativo ao Microsoft Intune. As etapas a seguir permitem que você adicione um aplicativo da Android Store ao Intune do Portal do Azure.
 
-1. Entre no portal do Azure.
+1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha do Intune, escolha **Gerenciar aplicativos**.
-4. Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Aplicativos**.
+3. Na folha **Microsoft Intune**, escolha **Aplicativos móveis**.
+4. Na carga de trabalho **Aplicativos móveis**, escolha **Aplicativos** na seção **Gerenciar**.
 5. Acima da lista de aplicativos, escolha **Adicionar**.
-6. Na folha **Adicionar Aplicativo**, escolha **Informações do Aplicativo**.
-7. Na folha **Editar Aplicativo**, configure as seguintes informações. Ao terminar, clique em **Adicionar**. Dependendo do aplicativo escolhido, alguns dos valores nessa folha podem ter sido preenchidos automaticamente:
-    - **Nome do Aplicativo** – Insira o nome do aplicativo como ele será exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
-    - **Descrição do Aplicativo** – Insira uma descrição para o aplicativo. Isso será exibido para os usuários no portal da empresa.
+6. Na folha **Adicionar Aplicativo**, selecione **Android** nos tipos de **Aplicativo da loja** disponíveis.
+7. Selecione **Configurar** para configurar as seguintes informações do aplicativo: dependendo do aplicativo escolhido, alguns dos valores nesta folha podem ter sido preenchidos automaticamente:
+    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
+    - **Descrição**: insira uma descrição para o aplicativo. Essa descrição será exibida para os usuários no portal da empresa.
     - **Editor**: insira o nome do editor do aplicativo.
-    - **URL da loja de aplicativos** – Insira a URL da loja de aplicativos do aplicativo que você deseja criar.
-    - **Sistema Operacional Mínimo** – Na lista, escolha a versão mínima do sistema operacional no qual o aplicativo pode ser instalado. Se você atribuir o aplicativo a um dispositivo com um sistema operacional mais antigo, ele não será instalado.
-    - **Categoria (opcional)** – Selecione uma das categorias de aplicativo internas ou uma categoria criada por você. Isso facilitará a localização do aplicativo quando os usuários navegarem pelo portal da empresa.
+    - **URL da loja de aplicativos** – insira a URL da loja de aplicativos do aplicativo que você deseja criar.
+    - **Sistema operacional mínimo** – na lista, escolha a versão mínima do sistema operacional em que o aplicativo pode ser instalado. Se você atribuir o aplicativo a um dispositivo com um sistema operacional mais antigo, ele não será instalado.
+    - **Categoria** (opcional) – Selecione uma das categorias de aplicativo internas ou uma categoria criada por você. Isso facilitará a localização do aplicativo quando os usuários navegarem pelo portal da empresa.
 
     - **Exibir isso como um aplicativo em destaque no portal da empresa** – Exiba o aplicativo de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
-    - **URL de Informações** – Opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida para os usuários no portal da empresa.
-    - **URL de Privacidade** – Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida para os usuários no portal da empresa.
-    - **Desenvolvedor** – Opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário** – Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, **Departamento de RH**.
-    - **Observações** – Digite as observações que você deseja associar a este aplicativo.
-    - **Carregar Ícone** – Carregue um ícone que será associado ao aplicativo. Esse é o ícone que será exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
-8. Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**.
+    - **URL de Informações** (opcional) – insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida para os usuários no portal da empresa.
+    - **URL privada** (opcional) – insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida para os usuários no portal da empresa.
+    - **Desenvolvedor** (opcional) – insira o nome do desenvolvedor do aplicativo.
+    - **Proprietário** (opcional) – insira um nome para o proprietário desse aplicativo, por exemplo, **Departamento de RH**.
+    - **Observações** (opcional) – insira as observações que você deseja associar a este aplicativo.
+    - **Logotipo** (opcional) – carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+8. Clique em **OK** quando concluir a configuração de informações do aplicativo.
+9. Clique em **Adicionar** para adicionar o aplicativo.
 
-O aplicativo que criado será exibido na lista de aplicativos, na qual você poderá atribuí-lo para os grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](apps-deploy.md).
+O aplicativo que você criou é exibido na lista de aplicativos, na qual poderá atribuí-lo aos grupos que escolher. 
+
+##<a name="next-steps"></a>Próximas etapas
+
+- [Como atribuir aplicativos aos grupos](apps-deploy.md)
