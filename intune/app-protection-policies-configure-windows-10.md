@@ -3,10 +3,10 @@ title: "Prepare-se para configurar as políticas de proteção do aplicativo par
 titlesuffix: Azure portal
 description: "Provedor de instalação do gerenciamento de aplicativos móveis (MAM) no Azure AD"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Prepare-se para configurar as políticas de proteção do aplicativo para Windows 10
 
@@ -40,17 +40,17 @@ Habilite o MAM (gerenciamento de aplicativo móvel) para Windows 10 configurando
 
 4. Defina as configurações no grupo **Restaurar as URLs padrão do MAM**, na folha **Configurar**.
 
-    **Escopo de usuário do MAM**  
-      Use o registro automático do MAM para gerenciar dados empresariais nos dispositivos Windows dos funcionários. O registro automático do MAM será configurado para cenários Traga seu próprio dispositivo.<ul><li>**Nenhum**<br>Determine se todos os funcionários podem se registrar no MAM.</li><li>**Alguns**<br>Escolha os grupos do Microsoft Azure AD cujos usuários serão registrados no MAM.</li><li>**Todos**<br>Determine se todos os funcionários podem se registrar no MAM.</li></ul>
+   **Escopo de usuário do MAM**  
+   Use o registro automático do MAM para gerenciar dados empresariais nos dispositivos Windows dos funcionários. O registro automático do MAM será configurado para cenários Traga seu próprio dispositivo.<ul><li>**Nenhum**<br>Determine se todos os funcionários podem se registrar no MAM.</li><li>**Alguns**<br>Escolha os grupos do Microsoft Azure AD cujos usuários serão registrados no MAM.</li><li>**Todos**<br>Determine se todos os funcionários podem se registrar no MAM.</li></ul>
 
-    **URL de Termos de uso do MAM**  
-     A URL do ponto de extremidade dos termos de uso do serviço MAM. O ponto de extremidade dos termos de uso é usado para exibir os termos de serviço para usuários finais antes de registrar os dispositivos deles para gerenciamento. O texto dos termos de uso informa os usuários sobre as políticas que serão impostas no dispositivo móvel.
+   **URL de Termos de uso do MAM**  
+   A URL de termos de uso do MAM não é compatível com o Microsoft Intune. Essa caixa de entrada deve ser deixada em branco para que as políticas de proteção sejam aplicadas.
 
-    **URL de Descoberta do MAM**  
-    A URL do ponto de extremidade de registro do serviço MAM. O ponto de extremidade de registro é usado para registrar dispositivos de gerenciamento com o serviço MAM.
+   **URL de Descoberta do MAM**  
+   A URL do ponto de extremidade de registro do serviço MAM. O ponto de extremidade de registro é usado para registrar dispositivos de gerenciamento com o serviço MAM.
 
-    **URL de Conformidade do MAM**  
-      A URL do ponto de extremidade compatível do serviço MAM. Quando um usuário tem o acesso negado a um recurso de um dispositivo não compatível, é exibido um link para a URL de conformidade. Os usuários podem navegar até essa URL hospedada pelo serviço MAM para entender por que o dispositivo foi considerado incompatível. Os usuários também podem iniciar a correção de autoatendimento para que os dispositivos deles se tornem compatíveis e possam continuar a acessar recursos.
+   **URL de Conformidade do MAM**  
+   A URL de conformidade do MAM não é compatível com o Microsoft Intune. Essa caixa de entrada deve ser deixada em branco para que as políticas de proteção sejam aplicadas. 
 
 5.  Clique em **Salvar**.
 

@@ -3,23 +3,21 @@ title: "Políticas de conformidade do dispositivo no Intune"
 titleSuffix: Azure portal
 description: "Use este tópico para saber mais sobre a conformidade do dispositivo no Microsoft Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 07/18/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Introdução às políticas de conformidade do dispositivo no Intune
 
@@ -99,9 +97,63 @@ Você precisa ter as seguintes assinaturas para usar as políticas de conformida
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Como as políticas de conformidade do dispositivo no Intune funcionam com o Azure AD
 
-Quando um dispositivo é registrado no Intune, ocorre o processo de registro no Azure AD, que atualiza os atributos do dispositivo com mais informações no Azure AD. Uma das principais informações do dispositivo é o status de conformidade do dispositivo, que é usado pelas políticas de acesso condicional para bloquear ou permitir o acesso ao email e a outros recursos corporativos.
+Quando um dispositivo é registrado no Intune, ocorre o processo de registro no Azure AD, que atualiza os atributos do dispositivo com mais informações no Azure AD. Uma informação importante é o status de conformidade do dispositivo, que é usado pelas políticas de acesso condicional para bloquear ou permitir o acesso ao email e a outros recursos corporativos.
 
-- Saiba mais sobre [processo de registro do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
+- Saiba mais sobre [processo de registro do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+
+### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Atribuindo um status resultante do perfil de configuração do dispositivo
+
+Se um dispositivo tiver vários perfis de configuração atribuídos a ele, além de ter status de conformidade diferentes para dois ou mais dos perfis de configuração atribuídos, um único status de conformidade resultante deverá ser atribuído. Essa atribuição é baseada em um nível de gravidade conceitual atribuído a cada status de conformidade. Cada status de conformidade tem o seguinte nível de gravidade:
+
+
+|Status  |Severidade  |
+|---------|---------|
+|Pending (Pendente)     |1|
+|Bem-sucedido     |2|
+|Failed (Falha)     |3|
+|Erro do     |4|
+
+Um status resultante de dois ou mais perfis de configuração será atribuído por meio da seleção do nível de gravidade mais alto dentre os perfis atribuídos a um dispositivo.
+
+Por exemplo, digamos que um dispositivo tenha três perfis atribuídos a ele: um status Pendente (gravidade = 1), um status de Êxito (gravidade = 2) e um status de Erro (gravidade = 4). Como o status de Erro tem o nível de gravidade mais alto, ele será atribuído como o status de conformidade resultante de todos os três perfis.
+
+### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>Atribuindo um status InGracePeriod para uma política de conformidade atribuída
+
+O status InGracePeriod de uma política de conformidade é um valor determinado levando em consideração a combinação do período de cortesia de um dispositivo e o seu status real em relação à política de conformidade atribuída. 
+
+Especificamente, se um dispositivo tem um status NonCompliant para uma política de conformidade atribuída, e:
+
+- o dispositivo não tem nenhum período de cortesia atribuído a ele, então o valor atribuído à política de conformidade é NonCompliant.
+- o dispositivo tem nenhum período de cortesia que expirou, então o valor atribuído à política de conformidade é NonCompliant.
+- o dispositivo tem nenhum período de cortesia a vencer, então o valor atribuído à política de conformidade é InGracePeriod.
+
+A tabela a seguir resume os pontos anteriores:
+
+
+|Status de conformidade real|Valor do período de carência atribuído|Status de conformidade efetiva|
+|---------|---------|---------|
+|NonCompliant |Nenhum período de carência atribuído |NonCompliant |
+|NonCompliant |Data no passado|NonCompliant|
+|NonCompliant |Data no futuro|InGracePeriod|
+
+Para obter mais informações sobre como monitorar políticas de conformidade de dispositivo, consulte [Monitorar políticas de conformidade de dispositivo do Intune](compliance-policy-monitor.md).
+
+### <a name="assigning-a-resulting-compliance-policy-status"></a>Atribuindo um status de política de conformidade resultante
+
+Se um dispositivo tiver várias políticas de conformidade atribuídas a ele e tiver status de conformidade diferentes para duas ou mais das políticas de conformidade atribuídas, um único status de conformidade resultante deverá ser atribuído. Essa atribuição é baseada em um nível de gravidade conceitual atribuído a cada status de conformidade. Cada status de conformidade tem o seguinte nível de gravidade: 
+
+|Status  |Severidade  |
+|---------|---------|
+|Unknown     |1|
+|NotApplicable     |2|
+|Compatível|3|
+|InGracePeriod|4|
+|NonCompliant|5|
+|Erro do|6|
+
+Um status resultante de duas ou mais políticas de conformidade será determinado por meio da seleção do nível de gravidade mais alto dentre as políticas atribuídas a um dispositivo.
+ 
+Por exemplo, digamos que um dispositivo tem três políticas de conformidade atribuídas a ele: um status Desconhecido (gravidade = 1), um status de Compatível (gravidade = 3) e um status de InGracePeriod (gravidade = 4). Como o status de InGracePeriod tem o nível de gravidade mais alto, ele será atribuído como o status de conformidade resultante de todos os três perfis.  
 
 ##  <a name="ways-to-use-device-compliance-policies"></a>Maneiras de usar as políticas de conformidade do dispositivo
 
@@ -112,6 +164,10 @@ Você pode usar uma política de conformidade com acesso condicional para permit
 Você também pode usar as políticas de conformidade do dispositivo independentemente do acesso condicional. Quando você usa as políticas de conformidade de forma independente, os dispositivos de destino são avaliados e relatados com o status de conformidade. Por exemplo, você pode obter um relatório do número de dispositivos que não estão criptografados ou quais dispositivos estão desbloqueados ou com raiz. No entanto, quando você usa as políticas de conformidade de forma independente, não há restrições de acesso aos recursos da empresa em vigor.
 
 Você pode implantar uma política de conformidade para usuários. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade. Para saber quanto tempo leva para que dispositivos móveis obtenham uma política depois que ela é implantada, consulte [Solução de problemas de perfis de dispositivo no Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
+#### <a name="actions-for-non-compliance"></a>Ações de não conformidade
+
+As ações de não conformidade permitem que você configure uma sequência de ações organizadas por tempo que são aplicadas a dispositivos que não atendem aos critérios da política de conformidade. Para obter mais informações, consulte [Automatizar ações de não conformidade](actions-for-noncompliance.md).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Usando políticas de conformidade do dispositivo no portal clássico do Intune versus Portal do Azure
 
@@ -126,16 +182,18 @@ Observe as principais diferenças para ajudar você na transição para o novo f
 
 ##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Migrar as políticas de conformidade do dispositivo do portal clássico do Intune para o Portal do Azure
 
-As políticas de conformidade do dispositivo criadas no [portal clássico do Intune](https://manage.microsoft.com) não aparecerão no novo [Portal do Azure no Intune](https://portal.azure.com). No entanto, elas ainda serão destinadas aos usuários e poderão ser gerenciadas por meio do portal clássico do Intune.
+As políticas de conformidade do dispositivo criadas no [portal clássico do Intune](https://manage.microsoft.com) não aparecem no novo [Portal do Azure do Intune](https://portal.azure.com). No entanto, elas ainda serão destinadas aos usuários e poderão ser gerenciadas por meio do portal clássico do Intune.
 
 Se desejar aproveitar os novos recursos relacionados à conformidade do dispositivo no Portal do Azure, você precisará criar novas políticas de conformidade do dispositivo no próprio Portal do Azure. Se você atribuir uma nova política de conformidade do dispositivo no Portal do Azure a um usuário ao qual uma política de conformidade do dispositivo também foi atribuída no portal clássico do Intune, as políticas de conformidade do dispositivo do Portal do Azure no Intune terão precedência em relação às criadas no portal clássico do Intune.
 
 ##  <a name="next-steps"></a>Próximas etapas
 
-Crie uma política de conformidade do dispositivo para as seguintes plataformas:
+- Crie uma política de conformidade do dispositivo para as seguintes plataformas:
 
-- [Android](compliance-policy-create-android.md)
-- [Android for Work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for Work](compliance-policy-create-android-for-work.md)
+   - [iOS](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- Para obter informações sobre as entidades de política do Intune Data Warehouse, consulte [Referência para entidades de política](reports-ref-policy.md).

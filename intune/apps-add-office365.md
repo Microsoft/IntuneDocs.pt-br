@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus a dispositivos Windows 10 com o Microsoft Intune
 
-Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus 2016 aos dispositivos gerenciados que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar serão exibidos como uma entrada única na lista de aplicativos no console do Intune.
+Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus aos dispositivos gerenciados que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar serão exibidos como uma entrada única na lista de aplicativos no console do Intune.
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -32,10 +32,11 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 Pro
 >Somente haverá suporte para este método de instalação do Office se nenhuma outra versão do Microsoft Office estiver instalada no dispositivo.
 
 - Os dispositivos nos quais você implanta esses aplicativos deverão estar em execução no Windows 10 Creators Update ou posterior.
-- O Intune somente dá suporte a aplicativos do Office do pacote do Office 365 ProPlus 2016.
-- Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, os usuários finais poderão perder dados de arquivos não salvos.
-- Não há suporte para esse método de instalação em dispositivos do Windows 10S.
+- O Intune é compatível somente com aplicativos do Office do pacote Office 365 ProPlus.
+- Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, a instalação poderá falhar e os usuários finais poderão perder dados de arquivos não salvos.
+- Esse método de instalação não é compatível com dispositivos Windows 10S, Windows Home, Windows Team, Windows Holographic e Windows Holographic for Business.
 - O Intune não dá suporte à instalação de aplicativos de área de trabalho do Office 365 da Microsoft Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
+- Várias atribuições de aplicativo requeridas ou disponíveis não são aditivas. Uma atribuição de aplicativo posterior substituirá as atribuições de aplicativo pré-instaladas. Por exemplo, se o primeiro conjunto de aplicativos do Office contém o Word e o seguinte não, o Word será desinstalado. Isso não se aplica a nenhum aplicativo do Visio ou Project.
 
 
 ## <a name="get-started"></a>Introdução
