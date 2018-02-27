@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8434d522423d8c99ce1318b600a63d2b1b4b3aea
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 5058428dca9212d8b20364f58ac463939a699221
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/03/2018
 Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sobre [as próximas alterações](#whats-coming), [avisos importantes](#notices) sobre o serviço e informações sobre [versões anteriores](whats-new-archive.md).
 
 > [!Note]
-> Para obter informações sobre a nova funcionalidade no MDM (Gerenciamento de Dispositivo Móvel) híbrido, confira nossa [página Novidades híbrida](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+> Para obter informações sobre a nova funcionalidade no MDM (gerenciamento de dispositivo móvel) híbrido, confira a [página de Novidades sobre o MDM híbrido](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
 <!-- Common categories:  
@@ -42,6 +42,34 @@ Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sob
 
 -->   
 
+## <a name="week-of-february-5-2018"></a>Semana de 5 de fevereiro de 2018
+
+### <a name="device-enrollment"></a>Registro de dispositivo
+
+#### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625-eeready---"></a>Nova opção de autenticação de usuário para registro em massa da Apple <!-- 747625 eeready -->
+
+> [!NOTE]
+> Os novos locatários veem essa opção imediatamente. Para locatários existentes, esse recurso será distribuído durante o mês de abril. Até essa implantação estar concluída, talvez você não tenha acesso aos novos recursos.
+
+Agora o Intune oferece a opção para autenticar dispositivos usando o aplicativo Portal da Empresa para os seguintes métodos de registro:
+
+- Programa de Registro do Dispositivo da Apple
+- Apple School Manager
+- Registro do Apple Configurator
+
+Com a opção do Portal da Empresa, a autenticação multifator do Azure Active Directory pode ser imposta sem bloquear esses métodos de registro.
+
+Com a opção do Portal da Empresa, o Intune ignora a autenticação do usuário no Assistente de Configuração do iOS para registro de afinidade de usuário. Isso significa que o dispositivo é registrado inicialmente como um dispositivo sem usuário e, portanto, não recebe as configurações ou políticas de grupos de usuários. Ele recebe apenas as configurações e políticas de grupos de dispositivos. No entanto, o Intune instalará automaticamente o aplicativo do Portal da Empresa no dispositivo. O primeiro usuário a iniciar e entrar no aplicativo do Portal da Empresa será associado ao dispositivo no Intune. Nesse momento, o usuário receberá as configurações e políticas de seus grupos de usuários. A associação do usuário não pode ser alterada sem um novo registro.
+
+#### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685-eeready---"></a>Suporte do Intune para várias contas do Programa de registro de dispositivos da Apple/Apple School Manager<!-- 747685 eeready -->
+
+Agora o Intune é compatível com o registro de dispositivos de até 100 contas diferentes do DEP (Programa de registro de dispositivos) da Apple ou do Apple School Manager. Cada token carregado pode ser gerenciado separadamente para o registro de perfis e dispositivos. Um perfil de registro diferente pode ser atribuído automaticamente por token do DEP/School Manager carregado. Se vários tokens do School Manager forem carregados, será possível compartilhar apenas um por vez com o Microsoft School Data Sync.
+
+Após a migração, as APIs do Graph beta e os scripts publicados para gerenciamento do DEP da Apple ou do ASM no Graph deixarão de funcionar. Há novas APIs do Graph beta em desenvolvimento que serão lançadas após a migração.
+
+### <a name="remote-printing-over-a-secure-network----1709994----"></a>Impressão remota em uma rede segura <!-- 1709994  -->
+As soluções de impressão móvel sem fio do PrinterOn permitirão aos usuários imprimir remotamente de qualquer lugar, e a qualquer momento, em uma rede segura. O PrinterOn será integrado ao SDK do Aplicativo do Intune para iOS e Android. Você poderá direcionar políticas de proteção de aplicativo para esse aplicativo por meio da folha **Políticas de proteção do aplicativo** do Intune no console do administrador. Os usuários finais poderão baixar o aplicativo "PrinterOn para Microsoft" através da Play Store ou iTunes para uso no ecossistema do Intune.
+
 ## <a name="week-of-january-29-2018"></a>Semana de 29 de janeiro de 2018
 
 ### <a name="device-enrollment"></a>Registro de dispositivo
@@ -51,9 +79,9 @@ A página de visão geral agora mostra alertas para tokens expirados e tokens qu
 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 
-#### <a name="remote-erase-command-support----1438084---"></a>Suporte ao comando "Erase" remoto <!-- 1438084 -->
+#### <a name="remote-erase-command-support-for-macos-devices----1438084---"></a>Suporte ao comando "Erase" remoto para dispositivos macOS <!-- 1438084 -->
 
-Os administradores podem emitir um comando Erase remotamente.
+Os administradores podem emitir um comando Erase remotamente para dispositivos macOS.
 
 > [!IMPORTANT]
 > O comando erase não pode ser revertido e deve ser usado com cuidado.
@@ -168,7 +196,7 @@ Agora, você pode desligar os dispositivos supervisionados com o iOS 10.3. Essa 
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Não permitir alterações de data/hora para dispositivos Samsung Knox<!-- 1468103 -->
 
-Adicionamos um novo recurso que permite o bloqueio de alterações de data e hora em dispositivos Samsung Knox. Encontre isso nos **Perfis de configuração do dispositivo** > **Restrições de dispositivo (Android)** > **Geral**.
+Agora você pode bloquear as alterações de data e hora em dispositivos Samsung Knox. Encontre esse recurso nos **Perfis de configuração do dispositivo** > **Restrições de dispositivo (Android)** > **Geral**.
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>Conta de recurso do Surface Hub com suporte <!-- 1566442  -->
 
@@ -213,7 +241,7 @@ Veja a seguir as configurações que os administradores podem definir:
      Especifica se a sincronização de calendário, e outros serviços de servidor do Exchange, está habilitada. Por exemplo: sincronização de reunião.
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>Instalar aplicativos do Office em dispositivos macOS <!-- 1494311 -->
-Agora, você pode instalar aplicativos do Office em dispositivos macOS. Esse novo tipo de aplicativo permitirá que você instale o Word, Excel, PowerPoint, Outlook e OneNote. Esses aplicativos também são fornecidos com o MAU (Microsoft AutoUpdate), para ajudar a manter seus aplicativos seguros e atualizados.
+Agora, você pode instalar aplicativos do Office em dispositivos macOS. Esse novo tipo de aplicativo permite que você instale o Word, Excel, PowerPoint, Outlook e OneNote. Esses aplicativos também são fornecidos com o MAU (Microsoft AutoUpdate), para ajudar a manter seus aplicativos seguros e atualizados.
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -239,7 +267,7 @@ Em contraste, a nova coleção de entidade **Usuário Atual** contém apenas os 
 
 ### <a name="updated-graph-apis----1736360---"></a>APIs do Graph atualizadas <!-- 1736360 -->
 
-Nesta versão, atualizamos algumas das APIs do Graph para Intune que estão na versão beta. Confira o [log de alterações mensal da API do Graph](https://developer.microsoft.com/graph/docs/concepts/changelog) para saber mais.
+Atualizamos algumas das APIs do Graph para Intune que estão na versão beta. Confira o [log de mudanças mensal da API do Graph](https://developer.microsoft.com/graph/docs/concepts/changelog) para obter mais informações.
 
 
 ## <a name="week-of-december-4-2017"></a>Semana de 4 de dezembro de 2017
@@ -283,7 +311,7 @@ Por padrão, as configurações de dispositivos Android for Work são as mesmas 
 
 Se você bloquear o registro pessoal de Android for Work, somente dispositivos Android corporativos poderão se registrar como Android for Work.
 
-Ao trabalhar com as novas configurações, considere o seguinte:
+Ao trabalhar com as novas configurações, considere os seguintes pontos:
 
 ##### <a name="if-you-have-never-previously-onboarded-android-for-work-enrollment"></a>Se você nunca integrou o registro de Android for Work antes
 
@@ -305,7 +333,7 @@ Em todos os casos, a norma pretendida é preservada. Nenhuma ação é necessár
 
 #### <a name="app-install-report-updated-to-include-install-pending-status----1249446---"></a>Relatório de instalação de aplicativos atualizado para incluir o status de Instalação pendente<!-- 1249446 -->  
 
-O relatório **Status de instalação do aplicativo** acessível para cada aplicativo por meio da lista **Aplicativo** na carga de trabalho **Aplicativos móveis** agora contém uma contagem **Instalação pendente** para Usuários e Dispositivos.
+O relatório **Status da instalação do aplicativo**, acessível para cada aplicativo por meio da lista **Aplicativo** na carga de trabalho **Aplicativos móveis**, agora contém uma contagem de **Instalação pendente** de Usuários e Dispositivos.
 
 #### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>API do inventário de aplicativos iOS 11 para detecção de ameaças móveis <!-- 1391759 -->
 
@@ -327,7 +355,7 @@ Inventários de dispositivos pessoais e corporativos iOS 11+ são enviados para 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 
 #### <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone----1463747-wnready---"></a>Migrar usuários e dispositivos do MDM híbrido para o <!-- 1463747 wnready --> autônomo do Intune
-Temos um novo processo e ferramentas para mover os usuários e seus dispositivos do MDM híbrido para o Intune no portal do Azure, o que permite que você faça o seguinte:
+Novos processos e ferramentas já estão disponíveis para mover os usuários e seus dispositivos do MDM híbrido para o Intune no Portal do Azure, permitindo que você realize as seguintes tarefas:
 - Copiar perfis e políticas do console do Configuration Manager para o Intune no portal do Azure
 - Mover um subconjunto de usuários ao Intune no portal do Azure enquanto mantém o restante no MDM híbrido
 - Migrar os dispositivos para o Intune no portal do Azure sem necessidade de registrá-los novamente
@@ -335,7 +363,7 @@ Temos um novo processo e ferramentas para mover os usuários e seus dispositivos
 Consulte os detalhes em [Migrar usuários e dispositivos do MDM híbrido para o Intune autônomo](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 #### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>Suporte de alta disponibilidade do Exchange Connector local  <!-- 676614 -->
-Após o Exchange Connector criar uma conexão com o Exchange usando o CAS especificado, o conector terá a capacidade de descobrir outros CASs. Se o CAS principal ficar desabilitado, o conector realizará o failover para outro CAS, se houver um disponível, até que o CAS principal fique disponível. Para obter detalhes, confira [Suporte de alta disponibilidade do Exchange Connector local](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
+Após o Exchange Connector criar uma conexão com o Exchange usando o CAS especificado, o conector terá a capacidade de descobrir outros CASs. Se o CAS primário ficar não disponível, o conector realizará o failover em outro CAS, se houver um disponível, até que o CAS primário fique disponível. Para obter detalhes, confira [Suporte de alta disponibilidade do Exchange Connector local](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
 
 #### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>Reiniciar remotamente o dispositivo iOS (somente supervisionado) <!-- 1424595 -->
 
@@ -403,8 +431,8 @@ A auditoria é encontrada no grupo **MONITOR**. Há um item de menu de **Logs de
 
 #### <a name="google-play-protect-support-on-android----908720---"></a>Suporte para Google Play Protect no Android <!-- 908720 -->
 
-Com o lançamento do Android Oreo, o Google apresenta um conjunto de recursos de segurança chamado Google Play Protect, que permitem aos usuários e organizações a execução de aplicativos seguros e a proteção de imagens do Android. O Intune oferecerá suporte aos recursos do Google Play Protect, incluindo atestado remoto do SafetyNet. Os administradores podem definir requisitos de política de conformidade que exigem a configuração e a integridade do Google Play Protect.
-A configuração **Atestado do dispositivo SafetyNet** exige que o dispositivo se conecte a um serviço do Google para verificar se o dispositivo está íntegro e não comprometido. Os administradores também podem definir um perfil de configuração para o Android for Work a fim de exigir que os aplicativos instalados sejam verificados pelos serviços do Google Play. O acesso condicional pode impedir que os usuários acessem recursos corporativos, se um dispositivo não for compatível com os requisitos do Google Play Protect.
+Com o lançamento do Android Oreo, o Google apresenta um conjunto de recursos de segurança chamado Google Play Protect, que permitem aos usuários e organizações a execução de aplicativos seguros e a proteção de imagens do Android. Agora o Intune é compatível com os recursos do Google Play Protect, incluindo atestado remoto do SafetyNet. Os administradores podem definir requisitos de política de conformidade que exigem que o Google Play Protect esteja configurado e íntegro.
+A configuração **Atestado do dispositivo SafetyNet** exige que o dispositivo se conecte a um serviço do Google para verificar se o dispositivo está íntegro e não comprometido. Os administradores também podem definir um perfil de configuração para o Android for Work a fim de exigir que os aplicativos instalados sejam verificados pelos serviços do Google Play. Se um dispositivo não for compatível com os requisitos do Google Play Protect, o acesso condicional poderá impedir que os usuários acessem recursos corporativos.
 
 - Saiba [Como criar uma política de conformidade do dispositivo para habilitar o Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
 
@@ -427,7 +455,7 @@ Agora, os administradores podem remover os requisitos de acordo com a VPN do apl
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorar e solucionar problemas
 #### <a name="support-for-system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>Suporte para o pacote de gerenciamento do System Center Operations Manager para o conector do Exchange <!-- 885457 -->
-O pacote de gerenciamento do SCOM (System Center Operations Manager) para o conector do Exchange está disponível para ajudar você a analisar os logs do conector do Exchange. Com isso, você tem diferentes maneiras de monitorar o serviço quando for necessário solucionar problemas.
+O pacote de gerenciamento do SCOM (System Center Operations Manager) para o conector do Exchange está disponível para ajudar você a analisar os logs do conector do Exchange. Com esse recurso, você terá diferentes maneiras de monitorar o serviço quando houver necessidade de solucionar problemas.
 
 ## <a name="week-of-november-6-2017"></a>Semana de 6 de novembro de 2017
 
@@ -449,10 +477,10 @@ Um novo alerta está disponível para dispositivos não atribuídos do Windows A
 Como a Lista de dispositivos não é atualizada automaticamente, é possível usar o novo botão Atualizar para atualizar os dispositivos exibidos na lista.
 
 #### <a name="support-for-symantec-cloud-certification-authority-ca-----1333638---"></a>Suporte para AC (Autoridade de Certificação) da Nuvem Symantec  <!-- 1333638 -->    
-O Intune agora dá suporte à AC da Nuvem Symantec, que permite que o Conector de Certificado do Intune emita os certificados PKCS da AC da Nuvem Symantec para dispositivos gerenciados pelo Intune. Se você já estiver usando o Conector de Certificado do Intune com a AC (Autoridade de Certificação) da Microsoft, será possível aproveitar a configuração do Conector de Certificado do Intune existente para adicionar o suporte de AC da Symantec.
+O Intune agora é compatível com a AC da Nuvem Symantec, que permite que o Conector de Certificado do Intune emita certificados PKCS da AC da Nuvem Symantec para dispositivos gerenciados pelo Intune. Se você já está usando o Conector de Certificado do Intune com a AC (Autoridade de Certificação) da Microsoft, é possível usar a configuração do Conector de Certificado do Intune existente para adicionar a compatibilidade com a AC da Symantec.
 
 #### <a name="new-items-added-to-device-inventory-----1404455---"></a>Novos itens adicionados ao inventário de aplicativos   <!--1404455 -->
-Nesta versão, adicionamos os seguintes itens novos ao [inventário usado por dispositivos registrados](device-inventory.md):
+Os novos itens a seguir já estão disponíveis para o [inventário realizado por dispositivos registrados](device-inventory.md):
 
 - Endereço MAC Wi-Fi
 - Espaço de armazenamento total
@@ -480,14 +508,14 @@ Com esta versão, o relatório de status de instalação do dispositivo exibe o 
 Os administradores podem ativar o firewall para dispositivos e também configurar vários protocolos para redes públicas, privadas e de domínio.  Essas configurações de firewall podem ser encontradas no perfil "Endpoint Protection".
 
 #### <a name="windows-defender-application-guard-helps-protect-devices-from-untrusted-websites-as-defined-by-your-organization----958257---"></a>O Windows Defender Application Guard ajuda a proteger dispositivos contra sites não confiáveis, conforme definido pela sua organização <!-- 958257 -->   
-Os administradores podem definir sites como "confiáveis" ou "corporativos" usando um fluxo de trabalho da Proteção de Informações do Windows ou o novo perfil "Limite de rede" nas configurações do dispositivo. Os sites que não estão listados no limite de rede confiável de um dispositivo Windows 10 de 64 bits, caso sejam exibidos com o Microsoft Edge, serão abertos em um navegador com um computador virtual do Hyper-V.
+Os administradores podem definir sites como "confiáveis" ou "corporativos" usando um fluxo de trabalho da Proteção de Informações do Windows ou o novo perfil "Limite de rede" nas configurações do dispositivo. Caso sejam exibidos com o Microsoft Edge, os sites que não estão listados no limite de rede confiável de um dispositivo Windows 10 de 64 bits serão abertos em um navegador de um computador virtual do Hyper-V.
 
 O Application Guard pode ser encontrado nos perfis de configuração do dispositivo, no perfil "Endpoint Protection". A partir daí, os administradores podem configurar a interação entre o navegador virtualizado e o computador host, sites não confiáveis e sites confiáveis e dados de armazenamento gerados no navegador virtualizado. Para usar o Application Guard em um dispositivo, um limite de rede deve estar configurado primeiro. É importante definir somente um limite de rede para um dispositivo.  
 
 #### <a name="windows-defender-application-control-on-windows-10-enterprise-provides-mode-to-trust-only-authorized-apps----1031096---"></a>O Windows Defender Application Control no Windows 10 Enterprise fornece modo para confiar somente em aplicativos autorizados <!-- 1031096 -->    
 Com milhares de novos arquivos mal-intencionados criados diariamente, usar a detecção baseada em assinatura de antivírus para combater o malware poderá deixar de fornecer uma defesa adequada contra novos ataques. Ao usar o Windows Defender Application Control no Windows 10 Enterprise, é possível alterar a configuração do dispositivo de um modo no qual os aplicativos sejam confiáveis, a menos que sejam bloqueados por um antivírus ou outra solução de segurança, para um modo no qual o sistema operacional confie somente em aplicativos autorizados por sua empresa. Atribua confiança a aplicativos no Windows Defender Application Control.
 
-Com o Intune, é possível configurar políticas de controle de aplicativo no modo "somente auditoria" ou no modo de imposição. Os aplicativos não serão bloqueados durante a execução no modo "somente auditoria". O modo "somente auditoria" registra todos os eventos em logs do cliente local. Também é possível configurar se somente componentes do Windows e aplicativos da Microsoft Store podem ser executados ou se aplicativos adicionais com boa reputação, conforme definido pelo Intelligent Security Graph, podem ser executados.
+Com o Intune, é possível configurar políticas de controle de aplicativo no modo "somente auditoria" ou no modo de imposição. Os aplicativos não são bloqueados durante a execução no modo “somente auditoria”. O modo "somente auditoria" registra todos os eventos em logs do cliente local. Também é possível configurar se somente componentes do Windows e aplicativos da Microsoft Store podem ser executados ou se aplicativos adicionais com boa reputação, conforme definido pelo Intelligent Security Graph, podem ser executados.
 
 #### <a name="window-defender-exploit-guard-is-a-new-set-of-intrusion-prevention-capabilities-for-windows-10----1063615---"></a>O Windows Defender Exploit Guard é um novo conjunto de recursos de prevenção contra intrusões para o Windows 10 <!-- 1063615 -->   
 O Windows Defender Exploit Guard inclui regras personalizadas para reduzir a capacidade de exploração de aplicativos, impede ameaças à macro e ao script, bloqueia automaticamente conexões de rede para endereços IP de baixa reputação e pode proteger dados do ransomware e ameaças desconhecidas. O Windows Defender Exploit Guard consiste nos seguintes componentes:
@@ -519,7 +547,7 @@ O modo de quiosque requer:
 - O dispositivo deve ser [adequadamente provisionado](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions).
 
 #### <a name="new-device-configuration-profile-for-creating-network-boundaries----1311967---"></a>Novo perfil de configuração do dispositivo para criar limites de rede <!-- 1311967 -->   
-Criamos um perfil de configuração de dispositivo chamado **Limite de rede** que pode ser encontrado com seus outros perfis de configuração de dispositivo. Use esse perfil para definir os recursos online que você deseja que sejam considerados corporativos e confiáveis. Você deve definir um limite de rede para um dispositivo *antes* que os recursos, como o Windows Defender Application Guard e a Proteção de Informações do Windows, possam ser usados no dispositivo. É importante definir somente um limite de rede para cada dispositivo.
+Um novo perfil de configuração de dispositivo chamado **Limite de rede** pode ser encontrado com seus outros perfis de configuração de dispositivo. Use esse perfil para definir os recursos online que você deseja que sejam considerados corporativos e confiáveis. Você deve definir um limite de rede para um dispositivo *antes* que os recursos, como o Windows Defender Application Guard e a Proteção de Informações do Windows, possam ser usados no dispositivo. É importante definir somente um limite de rede para cada dispositivo.
 
 Você pode definir recursos de nuvem da empresa, intervalos de endereços IP e servidores proxy internos que você deseja que sejam considerados confiáveis. Depois de definido, um limite de rede pode ser consumido por outros recursos, como o Windows Defender Application Guard e a Proteção de Informações do Windows.
 
@@ -536,7 +564,7 @@ Você pode definir recursos de nuvem da empresa, intervalos de endereços IP e s
 Embora seja pouco provável, configurar como **Alto** pode fazer com que alguns arquivos legítimos sejam detectados.
 É recomendável definir o nível de bloqueio do Arquivo para padrão, **Não configurado**.
 
-**Extensão de tempo limite para verificação do arquivo pela nuvem**  
+**Extensão de tempo limite para verificação de arquivo pela nuvem**  
 
 | | |
 |--|--|
@@ -562,7 +590,7 @@ Saiba como habilitar o modo de solução de problemas no Managed Browser em um d
 
 #### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Aprimoramentos no fluxo de trabalho de configuração de dispositivo no Portal da Empresa para iOS na versão 2.9.0 <!-- 1417174 -->
 
-Melhoramos o fluxo de trabalho de configuração de dispositivo no aplicativo do Portal da Empresa para iOS. A linguagem é mais fácil de usar e combinamos as telas sempre que possível. Também tornamos a linguagem mais específica à sua empresa usando o nome da empresa em todo o texto de configuração. Veja esse fluxo de trabalho atualizado na  [página de novidades da interface do usuário do aplicativo](whats-new-app-ui.md).
+O fluxo de trabalho de configuração de dispositivo foi melhorado no aplicativo Portal da Empresa para iOS. A linguagem é mais fácil de usar e combinamos as telas sempre que possível. A linguagem é mais específica à sua empresa ao usar o nome da empresa em todo o texto de configuração. Veja esse fluxo de trabalho atualizado na  [página de novidades da interface do usuário do aplicativo](whats-new-app-ui.md).
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorar e solucionar problemas
 
@@ -572,12 +600,50 @@ A primeira versão do modelo de dados do Intune Data Warehouse continha somente 
 
 ## <a name="notices"></a>Avisos
 
+### <a name="plan-for-change-update-where-you-configure-your-app-protection-policies"></a>Plano para Alteração: atualização do local em que você configura as Políticas de proteção do aplicativo
+
+A partir de março de 2018, você será temporariamente direcionado da folha de serviço Proteção de Aplicativo do Intune do Portal do Azure para a folha Aplicativo Móvel do Intune no Portal do Azure. Observe que todas as suas políticas de proteção de aplicativo já estão na folha de Aplicativo Móvel do Intune, em configuração do aplicativo. Em vez de acessar a Proteção de Aplicativo do Intune, basta acessar o Intune. Em abril, o redirecionamento será interrompido e a folha de serviço da Proteção de Aplicativo do Intune será completamente removida; duplicando novamente o que agora é interno no Intune. 
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Essa alteração afeta os clientes do Intune autônomo e os clientes do híbrido (Intune com o Configuration Manager). Essa integração ajudará a simplificar a administração do gerenciamento da nuvem. Agora, você terá apenas uma folha para acessar no Azure – a folha do Intune – a fim de gerenciar grupos, políticas, aplicativos e qualquer outro gerenciamento de dispositivo móvel.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+Marque o Intune como um favorito em vez da folha de serviço da Proteção de Aplicativo do Intune e familiarize-se com o fluxo de trabalho da Política de proteção de aplicativo, na folha Aplicativo Móvel do Intune. Você será redirecionado por um breve período de tempo e, em seguida, a folha da Proteção de Aplicativo será removida. Lembre-se que todas as políticas de proteção do aplicativo já estão no Intune e você pode modificar qualquer uma das políticas de acesso condicional seguindo a documentação aqui: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
+
+**Informações adicionais**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
+
+### <a name="updated-new-security-enhancements-in-the-intune-service-----1637539---"></a>Atualizado: novos aprimoramentos de segurança no serviço do Intune <!-- 1637539 -->   
+
+Estamos implementando aprimoramentos de segurança no serviço do Intune. Como parte dessa alteração, com a atualização de março para o serviço do Intune, você terá um botão de alternância no Intune, no console do Azure, para ativar ou desativar esse recurso de segurança. Quando o recurso estiver ativado, os dispositivos sem política de conformidade atribuída serão marcados como "não compatíveis".
+
+**Clientes híbridos**: não introduziremos essa alteração para clientes híbridos no momento. Você não precisa realizar nenhuma ação. No entanto, é altamente recomendável que os seus dispositivos tenham pelo menos uma política de conformidade atribuída a eles.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+
+Com o início da implantação dessa alteração na atualização de março, esse recurso poderá lhe afetar de maneiras diferentes, dependendo se você já tem ou não políticas de conformidade atribuídas.
+
+- Se você for um locatário novo ou existente e não tiver nenhuma política de conformidade atribuída aos seus dispositivos, a alternância será automaticamente definida como **Compatível**. O recurso permanecerá desativado como uma configuração padrão no console. Não haverá nenhum impacto ao usuário final.
+- Se você for um locatário existente e tiver algum dispositivo com uma política de conformidade atribuída, a alternância será definida automaticamente como "não compatível". O recurso será ativado como uma configuração padrão, quando a atualização de março for distribuída. 
+
+Se você usar políticas de conformidade com AC (Acesso Condicional) e o recurso estiver ativado, os dispositivos que não tiverem pelo menos uma política de conformidade atribuída serão bloqueados pelo AC. Os usuários finais associados a esses dispositivos, que anteriormente tinham permissão de acesso ao email, perderão o acesso, a menos que você atribua pelo menos uma política de conformidade a todos os dispositivos.   
+ 
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?  
+
+Se você usa o Acesso Condicional, recomendamos que você ative esse recurso e deixe a alternância definida como **Não compatível**. Para evitar que os usuários finais percam o acesso ao email, atribua pelo menos uma política de conformidade a todos os seus dispositivos. Veja algumas mudanças que estamos fazendo para ajudá-lo com isso:   
+
+- Introduzimos um relatório chamado **Dispositivos sem política de conformidade** no portal do Intune, que pode ser usado para identificar todos os dispositivos que não têm uma política de conformidade atribuída em seu ambiente. 
+- Há uma opção **Todos os Usuários** para facilitar a atribuição de uma política de conformidade a todos os usuários.
+
+Se optar por deixar a alternância desativada, você não precisará fazer mais nenhuma ação.
+
+**Informações adicionais**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
+
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Plano para Alteração: alterações no suporte para o SDK de Aplicativo do Microsoft Intune para o plug-in do Cordova
 O Intune terminará o suporte para o [Plug-in do Cordova do SDK de Aplicativo do Microsoft Intune](app-sdk-cordova.md) em 1 de maio de 2018. Em vez desse plug-in, é recomendável que você use a Ferramenta de Disposição do Aplicativo do Intune para preparar seus aplicativos com base em Cordova para gerenciamento e disponibilidade do Intune. Quando essa alteração entrar em vigor, o SDK de Aplicativo do Microsoft Intune para o plug-in do Cordova não será mais mantido nem receberá atualizações. Os desenvolvedores de aplicativos não poderão usar esse plug-in. O Intune planeja continuar a dar suporte a aplicativos criados com o Cordova. No entanto, todos os aplicativos criados com o SDK de Aplicativo do Microsoft Intune para o plug-in do Cordova terá funcionalidade reduzida no Intune. Depois de encapsular com a Ferramenta de Disposição do Aplicativo do Intune, os aplicativos poderão ser implantados para usuários finais conforme de costume. Para aplicativos Android baseados no Cordova que são lançados na Google Play Store:
 - As credenciais dos usuários finais serão solicitadas a fim de receberem a política do Intune na primeira inicialização.
 - Os aplicativos devem ser liberados na loja de aplicativos destinada a usuários do Intune, por exemplo "Aplicativo Contoso para Intune". 
 
-Para obter mais informações sobre a Ferramenta de Disposição do Aplicativo, consulte [Ferramenta de Disposição do Aplicativo para iOS](app-wrapper-prepare-ios.md) e [Ferramenta de Disposição do Aplicativo para Android](app-wrapper-prepare-android.md). Para perguntas ou dúvidas, entre em contato com [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com). 
+Para obter mais informações sobre a Ferramenta de Disposição do Aplicativo, consulte [Ferramenta de Disposição do Aplicativo para iOS](app-wrapper-prepare-ios.md) e [Ferramenta de Disposição do Aplicativo para Android](app-wrapper-prepare-android.md). Em caso de problemas ou de dúvidas, contate [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com). 
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Planeje a mudança: use o Intune no Azure agora para o gerenciamento MDM<!-- 1227338 -->
 Há mais de um ano, foi anunciada [a visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, após seis meses, a [Disponibilidade geral da nova experiência de administração](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. No dia 2 de abril de 2018, o MDM (gerenciamento de dispositivos móveis) será desativado no console do Silverlight clássico para os clientes que usam o Intune autônomo. Nesse caso, você poderá usar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para atender às suas necessidades de MDM. Se você ainda estiver usando o console clássico do MDM, deixe de usá-lo e familiarize-se com o Intune no Azure. Não esperamos que haja nenhum impacto para o usuário final com essa alteração. O gerenciamento de computador clássico permanecerá no Silverlight. Saiba mais sobre essa alteração e como ela o afetará clicando [aqui](https://aka.ms/Intune_on_Azure_mdm).
@@ -595,7 +661,7 @@ Por padrão, as configurações de dispositivos Android for Work serão as mesma
 
 Se você bloquear o registro pessoal de Android for Work, somente dispositivos Android corporativos poderão se registrar como Android for Work.
 
-Ao trabalhar com as novas configurações, considere o seguinte:
+Ao trabalhar com as novas configurações, considere os seguintes pontos:
 
 #### <a name="if-you-have-never-previously-onboarded-android-for-work-enrollment"></a>Se você nunca integrou o registro de Android for Work antes
 
@@ -614,10 +680,10 @@ Se você já tiver integrado antes, sua situação dependerá da configuração 
 Em todos os casos, a norma pretendida é preservada. Nenhuma ação é necessária de sua parte para manter a permissão global ou por grupo do Android for Work em seu ambiente.
 
 ### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>Substituindo o suporte para OS X Mavericks 10.10 e versões anteriores do macOS <!--1489263, plan for change for 1802-->
-Estamos anunciando que começaremos a desativar a inscrição de dispositivos com OS X Yosemite 10.10 e versões anteriores do macOS em fevereiro de 2018. O Intune é compatível com o OS X El Capitan 10.11 e versões mais recentes.
+O preterimento do registro de dispositivos com OS X Yosemite 10.10 e versões anteriores do macOS começará em fevereiro de 2018. O Intune é compatível com o OS X El Capitan 10.11 e versões mais recentes.
 
 ### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Novo caminho para dispositivos gerenciados na API do Graph <!-- 1586728 -->
-Estamos fazendo uma alteração no caminho usado para acessar os dispositivos gerenciados na versão beta da API do Graph. 
+O caminho usado para acessar dispositivos gerenciados na versão beta da API do Graph está sendo alterado. 
 
 | | |
 |--|--|
@@ -628,7 +694,7 @@ Os dois caminhos funcionam durante o mês de outubro. Após o lançamento do ser
 
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acesso direto aos cenários de registro da Apple <!--951869-->
-Para contas do Intune criadas após janeiro de 2017, o Intune habilitou o acesso direto aos cenários de registro da Apple usando a carga de trabalho Registrar Dispositivos no portal do Azure. Anteriormente, a visualização de registro da Apple só estava acessível a partir de links no Portal Clássico do Intune. As contas do Intune criadas antes de janeiro de 2017 precisam de uma migração única antes que esses recursos estejam disponíveis no Azure. A agenda de migração ainda não foi anunciada, mas os detalhes serão disponibilizados assim que possível. É altamente recomendável criar uma conta de avaliação para testar a nova experiência, caso sua conta existente não possa acessar o portal do Azure.
+Para contas do Intune criadas após janeiro de 2017, o Intune habilitou o acesso direto aos cenários de registro da Apple usando a carga de trabalho Registrar Dispositivos no portal do Azure. Anteriormente, a visualização de registro da Apple só estava acessível a partir de links no Portal Clássico do Intune. As contas do Intune criadas antes de janeiro de 2017 precisam de uma migração única antes que esses recursos estejam disponíveis no Azure. A agenda de migração ainda não foi anunciada, mas os detalhes serão disponibilizados assim que possível. Caso sua conta existente não possa acessar o Portal do Azure, é altamente recomendável criar uma conta de avaliação para testar a nova experiência.
 
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Funções de administração que estão sendo substituídas no Portal do Azure
 As funções de administração de MAM (gerenciamento de aplicativo móvel) existentes (Colaborador, Proprietário e Somente leitura) usadas no Portal Clássico (Silverlight) estão sendo substituídas por um conjunto completo de novos RBAC (Controles de administração baseados em função) no Portal do Intune no Azure. Após a migração para o portal do Azure, você precisará reatribuir essas novas funções de administração aos administradores. Para saber mais sobre RBAC e as novas funções, consulte [Controle de acesso baseado em função do Microsoft Intune](/intune/role-based-access-control).
@@ -648,7 +714,7 @@ Estamos simplificando o local em que você configura e gerencia o acesso condici
 A partir do início 2018, a Jamf enviará informações de estado do dispositivo macOS ao Intune, que, em seguida, avaliará a conformidade com as políticas definidas no console do Intune. Com base no estado de conformidade do dispositivo, bem como em outras condições (como local, risco de usuário etc.), o acesso condicional imporá a conformidade para dispositivos macOS que estão acessando aplicativos de nuvem e locais conectados com o Azure AD, incluindo o Office 365.
 
 ### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Alterações no suporte para o aplicativo do Portal da Empresa iOS do Intune  <!-- 1164474  -->
-Em breve, haverá uma nova versão do aplicativo do Portal da Empresa do Microsoft Intune para iOS que dará suporte somente a dispositivos que executam o iOS 9.0 ou posterior. A versão do Portal da Empresa que dá suporte ao iOS 8 ainda estará disponível por um breve período. No entanto, nós também damos suporte ao iOS 9.0 e posterior, portanto, se você também usa aplicativos iOS habilitados para MAM, faça com que seus usuários finais atualizem para o sistema operacional mais recente. 
+Em breve, haverá uma nova versão do aplicativo do Portal da Empresa do Microsoft Intune para iOS que dará suporte somente a dispositivos que executam o iOS 9.0 ou posterior. A versão do Portal da Empresa que é compatível com o iOS 8 permanecerá disponível por um breve período. No entanto, também há compatibilidade para o iOS 9.0 e posterior, portanto, se você também usar aplicativos iOS habilitados para MAM, faça com que seus usuários finais atualizem para o sistema operacional mais recente. 
 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
 Estamos informando isso com antecedência, mesmo que não tenhamos datas específicas, para que você tenha tempo de planejar. Verifique se seus usuários atualizaram para o iOS 9 ou superior e, quando o aplicativo do Portal da Empresa for lançado, solicite que eles atualizem esse aplicativo.

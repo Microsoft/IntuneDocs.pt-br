@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>A edição antecipada do Microsoft Intune – fevereiro de 2018
 
@@ -40,6 +40,10 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Novo gráfico de tendência de falha de registro e tabela de motivos de falhas<!-- 1471783 -->
+
+Na página Visão geral do registro, você poderá exibir a tendência de falhas de registro e as cinco principais causas de falhas. Ao clicar no gráfico ou na tabela, você poderá analisar os detalhes para encontrar dicas de solução de problemas e sugestões de correção.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedir que os usuários finais adicionem ou removam contas no perfil de trabalho <!-- 1728700 -->    
 Ao implantar o aplicativo Gmail em um perfil Android for Work, você poderá impedir que usuários finais adicionem ou removam contas no perfil de trabalho, usando a configuração **Adicionar e remover contas** no perfil de restrições de dispositivo do Android for Work.
@@ -76,9 +80,6 @@ Por exemplo, é possível adicionar o pacote do Webex como uma exceção à pol�
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>Personalize os temas do Portal da Empresa com códigos hexadecimais <!--1049561 eeready-->
 
 Você poderá personalizar a cor do tema nos aplicativos do Portal da Empresa usando códigos hexadecimais. Ao inserir o código hexadecimal, o Intune determinará a cor do texto que fornece o maior nível de contraste entre a cor do texto e a cor da tela de fundo segundo os [padrões WCAG 2.0](http://www.w3.org/TR/WCAG20). É possível visualizar a cor do texto e o logotipo da empresa em relação à cor em **Aplicativos móveis** > **Portal da Empresa**. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selecione as categorias de dispositivo usando as configurações de Acesso Corporativo ou de Estudante <!-- 1058963 --> 
-Se você tiver habilitado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/intune/device-group-mapping), os usuários no Windows 10 receberão uma solicitação para selecionar uma categoria de dispositivo após o registro por meio do botão **Conectar** em **Configurações** > **Contas** > **Acesso corporativo ou de estudante** ou durante a configuração inicial pelo usuário.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Novas configurações do Windows Defender Credential Guard adicionadas às configurações do Endpoint Protection <!--1102252 --> 
 

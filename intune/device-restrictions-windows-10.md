@@ -1,24 +1,23 @@
 ---
 title: "Configurações de restrição de dispositivo do Intune para Windows 10"
 titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos Windows 10."
+description: "Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades em dispositivos Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.
 - **Copiar e colar (somente dispositivo móvel)** – Permitir utilizar ações de copiar e colar entre os aplicativos do dispositivo.
 - **Cancelamento de registro manual** – Permite que o usuário exclua manualmente a conta de trabalho do dispositivo.
+   - Essa configuração de política não será aplicada se o computador estiver ingressado no Azure Active Directory e o registro automático estiver habilitado. 
+   - Essa configuração de política não se aplica a computadores que executam o Windows 10 Home.
 - **Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
 - **Envio de dados de diagnóstico** – Os valores possíveis são:
     - **Nenhum** – Nenhum dado é enviado para a Microsoft
@@ -68,7 +69,7 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
 ## <a name="personalization"></a>Personalização
 
-- **URL de imagem da tela de fundo da área de trabalho (somente desktop)** – Especifique a URL para uma imagem no formato PNG, JPG ou JPEG que você deseja usar como o papel de parede da área de trabalho do Windows. Os usuários não podem mudar isso.
+- **URL da imagem de tela de fundo da área de trabalho (somente Desktop)** – Especifique a URL para uma imagem no formato JPEG que você deseja usar como o papel de parede da área de trabalho do Windows. Os usuários não podem mudar isso.
 
 ## <a name="privacy"></a>Privacidade
 
