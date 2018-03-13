@@ -236,6 +236,9 @@
                   href: store-apps-windows-phone-8-1.md
                 - name: Aplicativos da Microsoft Store
                   href: store-apps-windows.md
+                  items:
+                    - name: Adicionar manualmente o aplicativo Portal da Empresa
+                      href: store-apps-company-portal-app.md
                 - name: Aplicativos Android for Work
                   href: apps-add-android-for-work.md
                 - name: Aplicativos do Office 365 para Windows 10
@@ -441,6 +444,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Criar uma política do Windows
           href: compliance-policy-create-windows.md
+        - name: Avaliar política
+          href: policy-evaluate.md
         - name: Ações de não conformidade
           href: actions-for-noncompliance.md
         - name: Monitorar a conformidade do dispositivo
