@@ -1,7 +1,7 @@
 ---
 title: Configurar o registro do Programa do Apple School Manager em dispositivos iOS
-titlesuffix: Azure portal
-description: Saiba como configurar o registro do programa do Apple School Manager em dispositivos iOS de propriedade corporativa com o Intune
+titlesuffix: Microsoft Intune
+description: Saiba como configurar o registro do programa do Apple School Manager em dispositivos iOS de propriedade corporativa com o Intune.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +15,13 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurar o registro de dispositivo iOS com o Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 02/09/2018
 >
 >Se a sua página de **Registro de dispositivo** for semelhante à imagem abaixo, sua conta ainda não foi atualizada para a nova interface do usuário e você pode usar esta página de ajuda.
 >
->![Antiga interface do usuário](./media/appleenroll-oldui.png)
+>![Antiga interface do usuário do Intune](./media/appleenroll-oldui.png)
 >
 >Se a sua página de **Registro de dispositivo** for semelhante à imagem abaixo, as suas interfaces de usuário estão atualizadas.  Vá para [esta página de ajuda](apple-school-manager-set-up-ios-newui.md).
 >
->![Nova interface do usuário](./media/appleenroll-newui.png)
+>![Nova interface do usuário do Intune](./media/appleenroll-newui.png)
 
-Este tópico o ajuda a habilitar o registro de dispositivo iOS em dispositivos comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
+Este tópico o ajuda a configurar o registro de dispositivo iOS em dispositivos comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
 
 Para habilitar o registro do Apple School Manager, é necessário usar os portais do Intune e do Apple School Manager. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
 
@@ -61,7 +61,7 @@ Antes de poder registrar dispositivos iOS de propriedade corporativa com o Apple
 **Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token Apple.**<br>
 1. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** e, em seguida, escolha **Token do programa de registro**.
 
-  ![Captura de tela do painel do Token de Programa de Registro no espaço de trabalho de Certificados da Apple para baixar a chave pública.](./media/enrollment-program-token-download.png)
+  ![Painel do Token de Programa de Registro no espaço de trabalho de Certificados da Apple para baixar a chave pública](./media/enrollment-program-token-download.png)
 
 2. Na folha **Token do programa de registro**, escolha **Baixar a chave pública** para baixar e salvar o arquivo de chave de criptografia (.pem) localmente. O arquivo .pem é usado para solicitar um certificado de relação de confiança do portal do Apple School Manager.
 
@@ -69,19 +69,19 @@ Antes de poder registrar dispositivos iOS de propriedade corporativa com o Apple
 1. Escolha **Criar um token por meio do Apple School Manager** e entre com sua ID corporativa da Apple. Use essa ID da Apple para renovar o token Apple School Manager.
 2.  No [portal do Apple School Manager](https://school.apple.com), acesse **Servidores MDM** e, em seguida, escolha **Adicionar Servidor MDM** (canto superior direito).
 3.  Insira o **Nome do Servidor MDM**. O nome do servidor é para sua referência para identificar o servidor MDM (gerenciamento de dispositivo móvel). Não é o nome ou URL do servidor Microsoft Intune.
-   ![Captura de tela do portal do Apple School Manager com opção de Número de Série selecionada](./media/asm-server-assignment.png)
+   ![Portal do Apple School Manager com a opção de Número de Série selecionada](./media/asm-server-assignment.png)
 
 4.  Escolha **Carregar Arquivo...**  no portal da Apple, procure o arquivo .pem e escolha **Salvar Servidor MDM** (canto inferior direito).
 5.  Escolha **Obter Token** e, em seguida, baixe o arquivo de token (.p7m) do servidor no computador.
 6. Acesse **Atribuições de Dispositivo** e **Escolher Dispositivo** com a entrada manual dos **Números de Série**, do **Número do Pedido** ou **Carregar Arquivo CSV**.
-     ![Captura de tela do portal do Apple School Manager com opção de Número de Série selecionada](./media/asm-device-assignment.png)
+     ![Portal do Apple School Manager com a opção de Número de Série selecionada](./media/asm-device-assignment.png)
 7.  Escolha a ação **Atribuir ao Servidor** e escolha o **Servidor MDM** criado.
 8. Especifique como **Escolher Dispositivos** e forneça detalhes e informações do dispositivo.
 9. Escolha **Atribuir ao Servidor**, escolha o &lt;ServerName&gt; especificado para o Microsoft Intune e escolha **OK**.
 
 **Etapa 3. Inserir a ID da Apple usada para criar o token Apple School Manager.**<br>Essa ID deve ser usada para renovar o token Apple School Manager e é armazenada para referência futura.
 
-![Captura de tela mostrando a especificação do ID Apple usado para criar o Token do Programa de Registro e a navegação para este recurso.](./media/enrollment-program-token-apple-id.png)
+![Especificação da ID Apple usada para criar o token do programa de registro e a navegação até o token](./media/enrollment-program-token-apple-id.png)
 
 **Etapa 4. Localizar e carregar o token.**<br>
 Acesse o arquivo de certificado (.p7m), escolha **Abrir** e, depois, **Carregar**. O Intune sincroniza automaticamente os dispositivos Apple School Manager da Apple.
@@ -103,7 +103,7 @@ Um perfil de registro de dispositivo define as configurações aplicadas a um gr
 
 6. Escolha **Configurações de Gerenciamento de Dispositivos**. Esses itens são definidos durante a ativação e exigem uma redefinição para as configurações de fábrica para serem alterados. Defina as seguintes configurações de perfil e, em seguida, escolha **Salvar**:
 
-  ![Captura de tela mostrando a escolha do Modo de Gerenciamento. O dispositivo apresenta as seguintes configurações: supervisionado, registro bloqueado e permitir emparelhamento definido como negar todos. O recurso Certificados do Apple Configurator está desabilitado para um novo perfil do Programa de Registro.](./media/enrollment-program-profile-mode.png)
+  ![Escolha do modo de gerenciamento](./media/enrollment-program-profile-mode.png)
 
     - **Supervisionado** – Um modo de gerenciamento que habilita mais opções de gerenciamento e desabilitou o Bloqueio de Ativação por padrão. Se você deixar a caixa de seleção, terá recursos de gerenciamento limitados.
 
@@ -151,10 +151,10 @@ Agora que o Intune recebeu permissão para gerenciar seus dispositivos Apple Sch
 
 1. No Intune, no Portal do Azure, escolha **Registro de Dispositivo** > **Registro da Apple** > **Dispositivos do Programa de Registro** > **Sincronizar**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
 
-  ![Captura de tela mostrando o nó Dispositivos do Programa de Registro selecionado e o Link de Sincronização escolhido.](./media/enrollment-program-device-sync.png)
+  ![Nó Dispositivos do Programa de Registro selecionado e o link de Sincronização sendo escolhido](./media/enrollment-program-device-sync.png)
 2. Na folha **Sincronizar**, escolha **Solicitar Sincronização**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
 
-  ![Captura de tela mostrando a folha Sincronização com o link Solicitar sincronização escolhido.](./media/enrollment-program-device-request-sync.png)
+  ![Folha Sincronização com o link Solicitar sincronização sendo escolhido](./media/enrollment-program-device-request-sync.png)
 
   Para estar em conformidade com os termos da Apple em relação ao tráfego aceitável, o Intune impõe as seguintes restrições:
    -    Uma sincronização completa pode ser executada, no máximo, uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza cada número de série que a Apple atribuiu ao Intune, tenha o número de série sido sincronizado anteriormente ou não. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
@@ -169,7 +169,7 @@ Os dispositivos Apple School Manager gerenciados pelo Intune devem receber um pe
 1. No Intune no portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** e, em seguida, escolha **Perfis do Programa de Registro**.
 2. Na lista de **Perfis do Programa de Registro**, escolha o perfil que será atribuído aos dispositivos e, em seguida, escolha **Atribuir dispositivos**
 
- ![Captura de tela de Atribuições de Dispositivo com Atribuir sendo selecionado.](./media/enrollment-program-device-assign.png)
+ ![Atribuições de dispositivo com Atribuir selecionado.](./media/enrollment-program-device-assign.png)
 
 3. Escolha **Atribuir** e, em seguida, selecione os dispositivos Apple School Manager que serão atribuídos a esse perfil. Filtre para exibir os dispositivos disponíveis:
   - **não atribuído**
@@ -177,7 +177,7 @@ Os dispositivos Apple School Manager gerenciados pelo Intune devem receber um pe
   - **&lt;nome do perfil&gt;**
 4. Escolha os dispositivos que deseja atribuir. A caixa de seleção acima da coluna seleciona até 1.000 dispositivos listados. Clique em **Atribuir**. Para registrar mais de 1000 dispositivos, repita as etapas de atribuição até que todos os dispositivos sejam atribuídos a um perfil de registro.
 
-  ![Captura de tela do botão Atribuir para atribuir o perfil do programa de registro no Intune](media/dep-profile-assignment.png)
+  ![Botão Atribuir para atribuir o perfil do programa de registro no Intune](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>Distribuir dispositivos para usuários
 

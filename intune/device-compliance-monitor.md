@@ -1,10 +1,10 @@
 ---
-title: Como monitorar a conformidade do dispositivo
-titlesuffix: Azure portal
+title: Monitorar a conformidade do dispositivo
+titlesuffix: Microsoft Intune
 description: Saiba como monitorar a conformidade do dispositivo.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,26 +15,26 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd8bb0486164dd9dfe020261da9079ea5a68633
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-monitor-device-compliance-in-intune"></a>Como monitorar a conformidade do dispositivo no Intune
+# <a name="monitor-device-compliance-in-intune"></a>Monitorar a conformidade do dispositivo no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Você pode exibir o resumo do status dos seus **perfis de conformidade** na folha **Visão geral**.
-Você pode clicar em interativamente nos gráficos para analisar os detalhes. Se você tiver vários perfis de conformidade configurados, também será possível exibir o status de cada política indo até a folha de política e escolhendo **Relatórios** na seção **Gerenciar**.  Os detalhes dos relatórios disponíveis são listados abaixo.
+Você pode clicar em interativamente nos gráficos para analisar os detalhes. Se você tem vários perfis de conformidade configurados, você pode exibir o status da política na folha de política em **Gerenciar** > **Relatórios**.
 
 ##  <a name="device-compliance"></a>Conformidade do dispositivo
 
-A exibição resumida do relatório de conformidade do dispositivo começa mostrando as informações agregadas sobre o número de dispositivos que estão se comunicando como um dos seguintes:
+A exibição resumida do relatório de conformidade do dispositivo lista as informações agregadas sobre o número de dispositivos que estão enviando relatórios, de acordo com um dos seguintes estados:
 
-- **Em conformidade**: o dispositivo foi avaliado quanto à conformidade recentemente e foi considerado em conformidade com as configurações do perfil de conformidade especificado.
+- **Em conformidade**: o dispositivo foi avaliado recentemente e está de acordo com as configurações de perfil de conformidade especificadas.
 - **Fora de conformidade**: o dispositivo foi avaliado e determinado como fora de conformidade.  Se havia um período de cortesia especificado no perfil, ele expirou e deixou o dispositivo fora de conformidade.
-- **Período de cortesia**: o dispositivo foi avaliado e determinado como fora de conformidade. No entanto, o período de cortesia ainda se aplica antes de o dispositivo ser efetivamente marcado como fora de conformidade.
+- **Período de cortesia**: o dispositivo foi avaliado e determinado como fora de conformidade. No entanto, o período de cortesia ainda se aplica antes de o dispositivo ser marcado como fora de conformidade.
 
 Você pode fazer uma busca detalhada em cada seção para ver mais detalhes sobre os usuários e dispositivos individuais.
 

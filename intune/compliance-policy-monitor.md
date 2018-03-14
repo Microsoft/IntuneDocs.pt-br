@@ -1,33 +1,31 @@
 ---
 title: "Monitorar as políticas de conformidade do dispositivo do Intune"
 titlesuffix: Azure portal
-description: "Saiba como monitorar políticas de conformidade do dispositivo."
+description: "Saiba como monitorar políticas de conformidade do dispositivo"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 03/10/2017
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
+ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
-Os relatórios de conformidade ajudam os administradores a analisarem as condições de conformidade dos dispositivos em sua organização e solucionarem rapidamente os problemas relacionados à conformidade encontrados pelos usuários em sua organização. Você pode exibir informações sobre o estado de conformidade geral dos dispositivos, estado de conformidade de uma configuração individual, estado de conformidade de uma política individual e fazer uma busca detalhada nos dispositivos individuais para exibir as configurações específicas e políticas que afetam o dispositivo.
+Os relatórios de conformidade ajudam os administradores a analisar as condições de conformidade dos dispositivos na organização e solucionar rapidamente os problemas relacionados à conformidade encontrados pelos usuários da organização. Você pode exibir informações sobre o estado de conformidade geral dos dispositivos, estado de conformidade de uma configuração individual, estado de conformidade de uma política individual e fazer uma busca detalhada nos dispositivos individuais para exibir as configurações específicas e políticas que afetam o dispositivo.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Siga as etapas abaixo para encontrar o **painel de conformidade do Dispositivo do Intune** no portal do Azure:
+Use as etapas a seguir para encontrar o **Painel de conformidade de Dispositivo do Intune** no Portal do Azure:
 
 1.  Vá para o [Portal do Azure](https://portal.azure.com) e entre com suas credenciais do Intune.
 
@@ -40,7 +38,7 @@ Siga as etapas abaixo para encontrar o **painel de conformidade do Dispositivo d
 
 ## <a name="device-compliance-dashboard"></a>Painel de conformidade do dispositivo
 
-No **Painel de conformidade do dispositivo**, você pode monitorar os estados da política de conformidade do Dispositivo, que fornecem relatórios diferentes em blocos diferentes que dão a condição de conformidade dos dispositivos em sua organização. Você pode exibir os seguintes relatórios:
+No **Painel de conformidade de dispositivo**, você pode monitorar os estados da política de Conformidade do dispositivo, que fornecem vários relatórios em blocos diferentes, demonstrando a condição de conformidade dos dispositivos em sua organização. Você pode exibir os seguintes relatórios:
 
 -   Conformidade geral do dispositivo agregada
 
@@ -64,20 +62,20 @@ Você também pode exibir as políticas específicas de conformidade e as config
 
     -   Saiba mais sobre Ações para dispositivos incompatíveis.
 
--   **Dispositivo não sincronizado:** o dispositivo falhou ao relatar seu status da política de conformidade do dispositivo por um dos seguintes motivos:
+-   **Dispositivo não sincronizado:** o dispositivo falhou ao relatar seu status da política de conformidade do dispositivo por causa de um desses motivos:
 
     -   **Desconhecido**: o dispositivo está offline ou falhou ao se comunicar com o Intune ou o Azure AD por outras razões.
 
     -   **Erro**: o dispositivo falhou ao se comunicar com o Intune e o Azure AD, e recebeu uma mensagem de erro com o motivo.
 
 > [!IMPORTANT] 
-> Os dispositivos registrados no Intune, mas não direcionados por quaisquer políticas de conformidade do dispositivo, serão incluídos neste relatório no bloco **Compatível**.
+> Os dispositivos registrados no Intune, mas não direcionados por nenhuma política de conformidade do dispositivo, são incluídos neste relatório no bucket **Compatível**.
 
 #### <a name="drill-down-option"></a>Opção de detalhamento
 
 No **Painel de conformidade do dispositivo**, se você clicar no bloco Conformidade do dispositivo, poderá fazer uma busca detalhada em um determinado **status de conformidade**, **alias de email do usuário**, **modelo de dispositivo** e **local** para cada dispositivo que foi direcionado pelas políticas de conformidade do dispositivo.
 
-![Busca detalhada do painel de conformidade do dispositivo](./media/idc-2.png)
+![Busca detalhada do painel de Conformidade do dispositivo](./media/idc-2.png)
 
 Se você precisar de mais detalhes sobre um usuário específico, poderá filtrar o relatório do Gráfico de conformidade do dispositivo digitando o alias de email do usuário.
 
@@ -131,22 +129,33 @@ Quando você clica na própria configuração da política do dispositivo, pode 
 
 ![Nome da configuração da conformidade do dispositivo](./media/idc-7.png)
 
-### <a name="per-policy-device-compliance-report"></a>Relatório de conformidade do dispositivo por política
+## <a name="policy-compliance-report"></a>Relatório de conformidade com a política
 
 Este relatório fornece uma exibição da política por conformidade e o número total de dispositivos em cada estado de conformidade. O título **Conformidade da política** está disponível no **Painel de conformidade do dispositivo** e mostra todas as políticas criadas anteriormente pelo administrador, as plataformas nas quais a política é aplicada e o número de dispositivos compatíveis e incompatíveis.
 
 ![Relatório de conformidade do dispositivo por política](./media/idc-8.png)
 
-Quando você clicar no bloco de Conformidade da política, então, clicar em uma das políticas de conformidade do dispositivo, poderá ver o **status de conformidade**, **alias de email do usuário**, **modelo do dispositivo** e **local** de cada dispositivo que foi direcionado por essa política de conformidade do dispositivo.
+Ao clicar no bloco de Conformidade da política e, em seguida, clicar em uma das políticas de conformidade do dispositivo, você poderá ver o **status de conformidade**, o **alias de email do usuário**, o **modelo do dispositivo** e o **local** de cada dispositivo que foi direcionado por essa política de conformidade do dispositivo.
 
 ![Bloco de conformidade da política](./media/idc-9.png)
 
-### <a name="per-setting-device-compliance-report"></a>Relatório de conformidade do dispositivo por configuração
+## <a name="setting-compliance-report"></a>Relatório de conformidade de configuração
 
-Este relatório permite exibir - a configuração por conformidade - o número total de dispositivos em cada estado de conformidade. O título **Conformidade das configurações** está disponível no **Painel de conformidade do dispositivo** e mostra todas as configurações da política de conformidade do dispositivo com base em todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as configurações da política foram aplicadas e o número de dispositivos incompatíveis.
+Este relatório permite exibir - a configuração por conformidade - o número total de dispositivos em cada estado de conformidade. O bloco **Conformidade das configurações** está disponível no **Painel de conformidade do dispositivo** e mostra todas as configurações de política de conformidade do dispositivo com base em todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas às quais as configurações da política são aplicadas e o número de dispositivos incompatíveis.
 
 ![Relatório de conformidade do dispositivo por configuração](./media/idc-10.png)
 
-Quando você clicar no bloco de Conformidade da configuração, então, clicar em uma das configurações da política de conformidade do dispositivo, conseguirá ver o **status de conformidade**, **alias de email do usuário**, **modelo do dispositivo** e **local** de cada dispositivo que foi direcionado por essa configuração da política de conformidade do dispositivo.
+Ao clicar no bloco de Conformidade da configuração e, em seguida, clicar em uma das configurações da política de conformidade do dispositivo, você poderá ver o **status de conformidade**, o **alias de email do usuário**, o **modelo do dispositivo** e o **local** de cada dispositivo que foi direcionado por essa configuração de política de conformidade do dispositivo.
 
 ![Bloco de conformidade da configuração](./media/idc-11.png)
+
+## <a name="threat-agent-status-report"></a>Relatório de status do agente de ameaça
+
+Este relatório permite exibir o status e a integridade do agente do Windows Defender. Usando um relatório cumulativo de status na **Conformidade do Dispositivo**, você pode ver os dispositivos que precisam das seguintes ações:
+- Atualização de assinatura
+- Reiniciar
+- Intervenção manual
+- Verificação completa
+- Outros estados de agente que requerem intervenção
+
+Um relatório de análise para cada categoria de status lista os computadores individuais que precisam de atenção e os computadores relatados como **Limpos**.

@@ -1,31 +1,30 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para Android"
-titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos Android."
+title: "Configurações de restrição de dispositivo do Microsoft Intune para Android"
+titlesuffix: 
+description: "Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades de dispositivo nos dispositivos que executam o Android."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
-ms.reviewer: heenamac
+ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Android e Samsung Knox Standard no Microsoft Intune
+# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Configurações de restrição de dispositivo Android e Samsung Knox Standard do Microsoft Intune 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use essas configurações com uma política de restrição de dispositivo do Android para configurar dispositivos em sua organização.
+Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Android.
 
 >[!TIP]
 >Se as configurações que você deseja não estiverem disponíveis, é possível configurar os dispositivos usando um [perfil personalizado](custom-settings-android.md).
@@ -111,7 +110,7 @@ Você também pode clicar em **Importar** para obter a lista de um arquivo csv. 
 ## <a name="allow-or-block-apps"></a>Permitir ou bloquear aplicativos
 
 Essas configurações podem ser usadas para especificar os aplicativos que podem ser instalados ou iniciados em dispositivos que executam somente o Samsung Knox Standard.
-Além disso, você também pode especificar os aplicativos instalados que serão ocultados do usuário do dispositivo. Os usuários não podem executar esses aplicativos.
+Além disso, você também pode especificar os aplicativos instalados que são ocultados do usuário do dispositivo. Os usuários não podem executar esses aplicativos.
 
 - **Aplicativos com permissão de instalação (Somente Samsung Knox Standard)**
 - **Aplicativos impedidos de iniciar (Somente Samsung Knox Standard)**

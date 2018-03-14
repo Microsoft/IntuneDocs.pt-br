@@ -1,12 +1,12 @@
 ---
-title: "Adicionar políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo | Microsoft Docs"
-titlesuffix: Azure portal
-description: "Saiba como usar as políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo."
+title: "Políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo"
+titlesuffix: Microsoft Intune
+description: "Saiba como configurar políticas para aplicativos gerenciados sem registro de dispositivo."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/05/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: b61f98669651dd63dc27379c6eba0c6cd5f8a531
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 02/09/2018
 
 É possível usar políticas de configuração do aplicativo com aplicativos gerenciados que dão suporte ao SDK de Aplicativo do Intune, mesmo em dispositivos que não estão registrados. 
 
-1. Entre no Portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Selecione a carga de trabalho de **Aplicativos móveis**.
 4. Escolha **Políticas de configuração do aplicativo** no grupo **Gerenciar** e escolha **Adicionar**.
 5. Defina os seguintes detalhes:

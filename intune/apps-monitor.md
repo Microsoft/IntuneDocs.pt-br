@@ -1,12 +1,12 @@
 ---
 title: "Como monitorar informações e atribuições de aplicativo"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Depois de atribuir um aplicativo a usuários ou dispositivos, use essas informações para ajudar a monitorar seu status."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b88530ef790dd181e81e420c158867d29d1d0d58
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 O Intune fornece várias maneiras nas quais você pode monitorar as propriedades dos aplicativos que gerencia, além de seu status de atribuição.
 
-1. Entre no Portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
-3. Na carga de trabalho **Aplicativos Móveis**, escolha **Aplicativos** no grupo **Gerenciar**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. Escolha **Aplicativos móveis** e, em seguida, escolha **Aplicativos** no grupo **Gerenciar**.
 5. Na folha de lista de aplicativos, escolha um aplicativo. Você verá a folha <*nome do aplicativo*> **Status de instalação do dispositivo**.
 
 ## <a name="app-overview-blade"></a>Folha de visão geral de aplicativos

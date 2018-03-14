@@ -1,11 +1,11 @@
 ---
 title: Componente Xamarin do SDK de Aplicativo do Microsoft Intune
-description: 
+description: "O componente do Intune App SDK Xamarin habilita a política de proteção de aplicativo do Intune em aplicativos Android e iOS criados com o Xamarin."
 keywords: sdk, Xamarin, intune
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 02/08/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,16 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9fa0d471f91eeeebd0058417aa437e5469f48e09
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Componente Xamarin do SDK de Aplicativo do Microsoft Intune
 
 > [!NOTE]
 > Primeiro, leia o artigo [Introdução ao SDK de Aplicativo do Intune](app-sdk-get-started.md), que explica como se preparar para a integração em cada plataforma com suporte.
-
-
 
 ## <a name="overview"></a>Visão geral
 O [componente do Microsoft Intune App SDK Xamarin](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) habilita a [política de proteção de aplicativo do Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) em aplicativos Android e iOS criados com o Xamarin. O componente permite que os desenvolvedores incorporem facilmente recursos de proteção de aplicativo do Intune em seus aplicativos baseados em Xamarin.

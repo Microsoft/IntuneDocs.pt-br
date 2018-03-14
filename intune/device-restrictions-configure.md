@@ -1,25 +1,23 @@
 ---
-title: "Definir configurações de restrição de dispositivo do Intune"
-titleSuffix: Azure portal
-description: "Saiba como usar o Intune para definir configurações e recursos nos dispositivos gerenciados."
+title: "Definir configurações de restrição de dispositivo do Microsoft Intune"
+titleSuffix: 
+description: "Saiba como usar o Microsoft Intune para definir configurações e recursos nos dispositivos que você gerencia."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Como definir as configurações de restrição de dispositivo no Microsoft Intune
 
@@ -33,16 +31,16 @@ As restrições de dispositivo permitem controlar uma grande variedade de config
 
 Por exemplo, você pode criar um perfil de restrição de dispositivo que impede que os usuários de dispositivos iOS acessem a câmera do dispositivo.
 
-Use as informações neste tópico para aprender as noções básicas sobre a configuração de perfis de restrição de dispositivo e leia mais tópicos para cada plataforma para saber mais sobre as especificações de dispositivo.
+Aprenda as noções básicas sobre perfil de restrição de dispositivo e, em seguida, leia mais artigos de cada plataforma para saber mais sobre as particularidades dos dispositivos.
 
-Para criar um perfil de dispositivo que contém as configurações de restrição de dispositivo:
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Criar um perfil de dispositivo que contém as configurações de restrição de dispositivo
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
-2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
-3. Na folha de perfis, escolha **Criar Perfil**.
-4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de restrição do dispositivo.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. Na página **Intune**, escolha **Configuração do dispositivo**.
+2. Na página **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
+3. Na página **Perfis**, escolha **Criar perfil**.
+4. Na página **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de restrição do dispositivo.
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações personalizadas. No momento, é possível escolher uma das seguintes plataformas para as configurações de restrição de dispositivo:
     - **Android**
     - **iOS**
@@ -61,9 +59,9 @@ Para criar um perfil de dispositivo que contém as configurações de restriçã
     - [Configurações do Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Configurações do Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Configurações do Android for Work](device-restrictions-android-for-work.md)
-8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
+8. Quando terminar, volte para a página **Criar Perfil** e clique em **Criar**.
 
-O perfil é criado e exibido na folha da lista de perfis.
+O perfil é criado e exibido na página da lista de perfis.
 Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

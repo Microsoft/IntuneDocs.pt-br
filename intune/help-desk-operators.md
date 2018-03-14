@@ -1,12 +1,12 @@
 ---
-title: "Portal de solução de problemas do suporte técnico | Microsoft Docs"
-titlesuffix: Azure portal
-description: "A equipe de suporte técnico usa o portal de solução de problemas para resolver problemas técnicos dos usuários"
+title: "Portal de solução de problemas de suporte técnico"
+titlesuffix: Microsoft Intune
+description: "A equipe de suporte técnico usa o portal de solução de problemas para resolver problemas técnicos dos usuários."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Usar o portal de solução de problemas para ajudar os usuários
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usar o portal de solução de problemas para ajudar os usuários na sua empresa
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -63,7 +63,7 @@ Você pode usar a folha **Solucionar problemas** para examinar as informações 
 | 1.   | Status da conta  | Mostra o status do locatário do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção de usuários  | O nome do usuário selecionado no momento. Clique em **Alterar usuário** para escolher um novo usuário.       |
 | 3.   | Status do usuário  | Exibe o status da licença do Intune do usuário, o número de dispositivos, a conformidade de cada dispositivo, o número de aplicativos e a conformidade dos aplicativos.       |
-| 4.   | Informações do usuário  | Use a lista para selecionar os detalhes a serem examinados na folha. <br>Você pode selecionar: <ul><li>Aplicativos móveis<li>Políticas de proteção do aplicativo<li>Políticas de conformidade<li> Políticas de configuração</ul>      |
+| 4.   | Informações do usuário  | Use a lista para selecionar os detalhes a serem examinados na folha. <br>Você pode selecionar: <ul><li>Aplicativos móveis<li>Políticas de proteção do aplicativo<li>Políticas de conformidade<li> Políticas de configuração<li> Restrições de registro</ul>      |
 | 5.   | Associação de grupo  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Referência de aplicativos móveis

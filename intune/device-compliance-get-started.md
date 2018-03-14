@@ -1,31 +1,30 @@
 ---
-title: "Políticas de conformidade do dispositivo no Intune"
-titleSuffix: Azure portal
-description: "Use este tópico para saber mais sobre a conformidade do dispositivo no Microsoft Intune"
+title: "Políticas de conformidade do dispositivo do Microsoft Intune"
+titleSuffix: 
+description: Saiba mais sobre a conformidade do dispositivo no Microsoft Intune
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Introdução às políticas de conformidade do dispositivo no Intune
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Introdução às políticas de conformidade de dispositivo no Microsoft Intune
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>O que é a conformidade do dispositivo no Intune?
-
-As políticas de conformidade do dispositivo no Intune definem as regras e as configurações às quais um dispositivo deve satisfazer para ser considerado em conformidade pelo Intune.
+As políticas de conformidade de dispositivo no Intune definem as regras e as configurações às quais um dispositivo deve satisfazer para ser considerado em conformidade pelo Intune.
 
 Essas regras incluem o seguinte:
 
@@ -43,7 +42,7 @@ Essas regras incluem o seguinte:
 
 Você também pode usar políticas de conformidade do dispositivo para monitorar o status de conformidade dos seus dispositivos.
 
-### <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
+## <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
 
 Requisitos de conformidade são essencialmente regras como exigir um PIN do dispositivo ou especificar o que é necessário ou não para uma política de conformidade de criptografia.
 

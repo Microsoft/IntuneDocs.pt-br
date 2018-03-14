@@ -1,12 +1,12 @@
 ---
-title: Como atribuir aplicativos aos grupos
-titlesuffix: Azure portal
-description: "Depois de adicionar um aplicativo ao Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
+title: Como atribuir aplicativos a grupos no Microsoft Intune
+titlesuffix: 
+description: "Depois de adicionar um aplicativo ao Microsoft Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -38,29 +38,30 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
 |Atribuir aplicativos conforme a disponibilidade|Sim|Sim|
 |Atribuir aplicativos conforme necessário|Sim|Não|
 |Desinstalar aplicativos|Sim|Não|
+|Receber atualizações de aplicativos do Intune|Sim|Não|
 |Os usuários finais instalam aplicativos disponíveis do aplicativo de Portal da Empresa|Sim|Não|
 |Os usuários finais instalam aplicativos disponíveis do Portal da Empresa baseado na Web|Sim|Sim|
 
 > [!NOTE]
-> No momento, é possível atribuir aplicativos iOS e Android (tanto linha de negócios quanto comprados na loja) a dispositivos que não são registrados com o Intune.
+> No momento, é possível atribuir aplicativos iOS e Android (tanto linha de negócios quanto comprados na loja) a dispositivos que não são registrados com o Intune.<br></br><br></br>
+> Para receber atualizações de aplicativo em dispositivos que não estão registrados com o Intune, os usuários de dispositivos devem navegar até o portal da empresa e instalar manualmente as atualizações de aplicativo.
 
 ## <a name="how-to-assign-an-app"></a>Como atribuir um aplicativo
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Aplicativos móveis**.
 1. Na carga de trabalho **Aplicativos Móveis**, escolha **Gerenciar** > **Aplicativos**.
 2. Na folha da lista de aplicativos, escolha o aplicativo que você deseja atribuir.
-3. Na folha <*nome do aplicativo*> – **Visão Geral**, escolha **Gerenciar** > **Atribuições**.
-4. Escolha **Selecionar Grupos** e, na folha **Selecionar grupos**, escolha os grupos do Azure AD aos quais você deseja atribuir o aplicativo.
+3. Na folha **Visão Geral**, escolha **Gerenciar** > **Atribuições**.
+4. Escolha **Adicionar Grupo** e, em seguida, na folha **Adicionar grupo**, selecione os grupos do Azure AD para incluir ou excluir da atribuição de aplicativo.
 5. Para cada aplicativo que você escolher, selecione um **tipo de atribuição** para o aplicativo dentre:
-    - **Disponível** – Os usuários instalam o aplicativo no site ou aplicativo do Portal da Empresa.
-    - **Não Aplicável** – O aplicativo não é instalado nem é mostrado no Portal da Empresa.
+    - **Disponível para dispositivos registrados** – Os usuários instalam o aplicativo no site ou aplicativo Portal da Empresa.
+    - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune.
     - **Obrigatório** – O aplicativo é instalado nos dispositivos dos grupos selecionados.
     - **Desinstalar** – O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
-    - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune.
 6. **Apenas para aplicativos iOS** – se você tiver criado perfil da VPN do iOS que contém configurações de VPN por aplicativo, você poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](vpn-settings-ios.md).
-6. Quando terminar, escolha **Salvar**.
+6. Quando terminar, escolha **OK** e, em seguida, escolha **Salvar**.
 
 Agora o aplicativo foi atribuído ao grupo selecionado.
 

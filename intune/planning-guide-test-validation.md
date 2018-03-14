@@ -1,9 +1,10 @@
 ---
 title: "Teste e validação do Intune"
-description: "Os detalhes que você precisa considerar quando você está testando e validando uma solução somente em nuvem do Intune em seu ambiente."
+titlesuffix: Microsoft Intune
+description: "Como testar e validar a solução específica para nuvem do Intune em seu ambiente."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
-A fase de teste ocorre durante e após a fase de implementação. Você precisa testar contas, grupos e dispositivos para testar todos os cenários de TI (administrador) e de usuário final (caso de uso) exigidos que você identificou anteriormente.
+Ao testar a implementação do Microsoft Intune, considere a validação funcional e a validação de caso de uso. A validação funcional consiste em testar cada componente e configuração para determinar se estão funcionando corretamente. A validação de caso de uso envolve testes para verificar se os cenários com uma série de tarefas funcionam como o esperado. 
 
 Recomendamos que você incorpore a equipe de suporte de TI e de assistência técnica na fase de teste para que a documentação de suporte seja criada e a equipe de suporte de TI e de assistência técnica fique satisfeita de dar suporte ao produto. Se um componente ou cenário não funcionar de acordo com os casos de uso, lembre-se de documentar as alterações necessárias e incluir o motivo da alteração.
 

@@ -1,7 +1,7 @@
 ---
 title: Adicionar identificadores empresariais ao Intune
-titlesuffix: Azure portal
-description: "Saiba como adicionar identificadores empresariais (método de registro, IMEI e número de série) ao Microsoft Intune. \""
+titlesuffix: Microsoft Intune
+description: "Saiba como adicionar identificadores empresariais (método de registro, IMEI e número de série) ao Microsoft Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -72,7 +72,7 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
 1. No Intune no portal do Azure, escolha **Registro de dispositivo** > **Identificadores de Dispositivos Corporativos** e, em seguida, clique em **Adicionar**.
 
- ![Captura de tela de espaço de trabalho do identificador de dispositivo corporativo com o botão Adicionar realçado.](./media/add-corp-id.png)
+ ![Espaço de trabalho do identificador de dispositivo corporativo com o botão Adicionar realçado](./media/add-corp-id.png)
 
 2. Na folha **Adicionar identificadores**, especifique o tipo de identificador: **IMEI** ou **Número de série**. Você pode especificar se números importados anteriormente devem **substituir os detalhes para os identificadores existentes**.
 
@@ -100,4 +100,4 @@ As propriedades do dispositivo exibem **Propriedade** para o registro de cada di
 3. Escolha **Propriedades**.
 4. Especifique a **Propriedade do dispositivo** como **Pessoal** ou **Corporativo**.
 
-  ![Captura de tela das propriedades do dispositivo mostrando as opções de Propriedade do dispositivo e de Categoria do dispositivo.](./media/device-properties.png)
+  ![Propriedades do dispositivo mostrando as opções Propriedade do dispositivo e Categoria do dispositivo](./media/device-properties.png)

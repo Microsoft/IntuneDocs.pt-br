@@ -1,45 +1,43 @@
 ---
-title: "Configurações de layout da Tela inicial do Intune para dispositivos iOS"
+title: "Configurações de layout da tela inicial do Microsoft Intune para dispositivos que executam iOS"
 titlesuffix: Azure portal
-description: "Conheça as configurações que você pode usar para personalizar a tela inicial e o encaixe em dispositivos iOS."
+description: "Conheça as configurações que você pode usar para personalizar a tela inicial e o encaixe em dispositivos que executam iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e4de4f4b1235136d7391c8d9efdc1405043e4da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Configurações de layout da Tela inicial do Intune para dispositivos iOS
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configurações de layout da tela inicial do Microsoft Intune para dispositivos que executam iOS 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use essas configurações para definir o layout dos aplicativos e das pastas no Dock e na tela de início do iOS.
+Use essas configurações para definir o layout do aplicativo e as pastas no encaixe e na tela inicial de dispositivos que executam iOS.
 
-Os dispositivos iOS para os quais você atribui o perfil devem estar no modo supervisionado e executando o iOS 9.3 ou posterior.
+Dispositivos que executam o iOS com um perfil atribuído devem estar no modo supervisionado e executar o iOS 9.3 ou posterior.
 
-1. Na folha **Recursos do dispositivo**, escolha **Layout da Tela inicial (somente supervisionado)**.
-2. Na folha **Layout da Tela inicial (somente supervisionado)**, escolha se quer configurar os layouts do **Dock**, ou das **Páginas**.
+1. Na página **Configuração do dispositivo**, **Criar perfil**, **Recursos de dispositivo**, escolha **Layout da Tela Inicial (apenas no modo supervisionado)**.
+2. Na folha **Layout da Tela Inicial (apenas no modo supervisionado)**, escolha se quer configurar os layouts de **Encaixe** ou das **Páginas**.
 
 ## <a name="add-items-to-the-dock"></a>Adicionar itens ao dock
 
-Na folha **Dock**, você pode adicionar até seis itens ou pastas ao dock na tela do iOS. No entanto, muitos dispositivos dão suporte a uma quantidade menor de itens, por exemplo, dispositivos iPhone dão suporte a até quatro itens. Nesse caso, somente os primeiros quatro itens configurados aparecerão no dispositivo.
+Na página **Encaixe**, você pode adicionar até seis itens ou pastas ao encaixe na tela do iOS. No entanto, muitos dispositivos dão suporte a uma quantidade menor de itens, por exemplo, dispositivos iPhone dão suporte a até quatro itens. Nesse caso, somente os primeiros quatro itens configurados aparecerão no dispositivo.
 
 1. Escolha **Adicionar** para adicionar um item ao dock.
-2. Na folha **Adicionar Linha**, escolha se você quer adicionar um **Aplicativo** ou uma **Pasta**.
+2. Na página **Adicionar Linha**, escolha se você quer adicionar um **Aplicativo** ou uma **Pasta**.
 3. Usando as informações deste tópico, configure os aplicativos e as pastas que você deseja que apareça no dock.
-4. Continue adicionando itens. Quando terminar, clique em **OK** em cada folha até voltar à folha **Criar Perfil**. Escolha **Criar**.
+4. Continue adicionando itens. Quando terminar, clique em **OK** em cada página até voltar à página **Criar Perfil**. Escolha **Criar**.
 
 >[!TIP]
 > Você pode arrastar e soltar itens em quaisquer lista de Tela inicial e páginas para reordená-las. 
@@ -48,19 +46,19 @@ Na folha **Dock**, você pode adicionar até seis itens ou pastas ao dock na tel
 
 Neste exemplo, você configurou a tela do dock para mostrar apenas os aplicativos Safari, Mail e Bolsa. Na imagem a seguir, o aplicativo Mail está selecionado para ilustrar suas propriedades:
 
-![Exemplo de configurações do dock do iOS](http://i.imgur.com/FfFiUcP.png)
+![Exemplo de configurações do dock do iOS](./media/FfFiUcP.png)
 
 Quando você atribuir a política a um iPhone, o resultado será um dock semelhante a esta captura de tela:
 
-![Exemplo de layout do dock do iOS no iPhone](http://i.imgur.com/bAgCe8F.png)
+![Exemplo de layout do dock do iOS no iPhone](./media/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>Adicionar páginas de Tela inicial
 
 Adicione as páginas que você deseja exibir na Tela inicial e os aplicativos que aparecerão em cada página. Os aplicativos adicionados a uma página são dispostos da esquerda para a direita, na ordem especificada na lista. Se você adicionar mais aplicativos que uma página comporta, eles serão movidos para uma página subsequente.
 
 
-1. Na folha **Páginas**, escolha **Adicionar**.
-2. Na folha **Adicionar Linha**, insira um **Nome de página**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
+1. Em **Páginas**, escolha **Adicionar**.
+2. Na página **Adicionar Linha**, insira um **Nome de página**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 3. Escolha **Adicionar**, depois escolha se você quer adicionar um **Aplicativo** ou uma **Pasta** à página.
 4. Usando as informações deste tópico, configure os aplicativos e as pastas que você deseja que apareça na página.
 
@@ -68,11 +66,11 @@ Adicione as páginas que você deseja exibir na Tela inicial e os aplicativos qu
 
 Neste exemplo, você configurou uma nova página chamada **Contoso**. A página mostra apenas os aplicativos Buscar Amigos e Ajustes. Na imagem a seguir, o aplicativo Ajustes está selecionado para ilustrar suas propriedades:
 
-![Exemplo de ajustes na Tela inicial do iOS](http://i.imgur.com/Jc2OxyX.png)
+![Exemplo de ajustes na Tela inicial do iOS](./media/Jc2OxyX.png)
 
 Quando você atribuir a política a um iPhone, o resultado será uma página semelhante a esta captura de tela:
 
-![Dispositivo iOS com Tela inicial modificada](http://i.imgur.com/Bd37PHa.png)
+![Dispositivo iOS com Tela inicial modificada](./media/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Como adicionar um aplicativo à lista
 
@@ -87,7 +85,7 @@ Os aplicativos adicionados a uma página em uma pasta são dispostos da esquerda
 
 1. Insira **Nome da pasta**. Esse nome será exibido aos usuários no dispositivo.
 2. Escolha **Adicionar** para criar uma página na pasta. Você pode adicionar até 20 páginas.
-3. Na folha **Adicionar Linha**, insira um nome para a página. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
+3. Na página **Adicionar Linha**, insira um nome para a página. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 3. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 2. Insira **ID de Pacote de Aplicativos** do aplicativo que você deseja exibir. Confira **Como adicionar um aplicativo à lista**.
 3. Escolha **Adicionar**. Você pode adicionar até 60 itens.

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronize dispositivos com o Intune para obter as políticas e ações mais recentes
 
@@ -37,17 +37,17 @@ A ação de dispositivo **Sincronizar** força o dispositivo selecionado a fazer
 
 ## <a name="how-to-sync-a-device"></a>Como sincronizar um dispositivo
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Dispositivos**.
-4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
-5. Na lista de dispositivos gerenciados, escolha um dispositivo e, em seguida, escolha a ação remota **Sincronizar**.
+4. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
+5. Na lista de dispositivos gerenciados, escolha um dispositivo, escolha **...Mais** e, em seguida, escolha a ação remota **Sincronizar**.
 7. Escolha **Sim** para confirmar a ação.
 
 
 ## <a name="retriable-error-codes"></a>Códigos de erro passíveis de repetição
 
-Quando um administrador executar a ação **Sincronizar** dispositivo, os aplicativos iOS e Android que falharem mas gerarem um código de erro passível de repetição ficarão disponíveis para o dispositivo. No entanto, os aplicativos que gerarem um código de erro não passível de repetição deverão esperar sete dias para que possam ficar disponíveis para o dispositivo.
+Quando um administrador executa a ação **Sincronizar** dispositivo, os aplicativos iOS e Android que falharam mas geraram um código de erro passível de repetição ficarão disponíveis para o dispositivo. No entanto, os aplicativos que gerarem um código de erro não passível de repetição deverão esperar sete dias para que possam ficar disponíveis para o dispositivo.
 
 
 | Código de erro  | Descrição sugerida                                                                                                                  | Passível de repetição |
@@ -66,4 +66,4 @@ Quando um administrador executar a ação **Sincronizar** dispositivo, os aplica
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Escolha **Ações de Dispositivo** para ver o status da ação de sincronização. 
+Escolha **Ações do dispositivo** para ver o status da ação de sincronização. 

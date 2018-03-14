@@ -1,27 +1,25 @@
 ---
-title: "Configurações de email do Intune para dispositivos Android e Android for Work"
-titleSuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para configurar as conexões de email em dispositivos Android."
+title: "Configurações de email do Microsoft Intune para dispositivos que executam o Android e Android for Work"
+titleSuffix: 
+description: "Saiba mais sobre as configurações do Microsoft Intune que você pode usar para definir configurações de email em dispositivos que executam o Android e o Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Configurações de perfil de email para dispositivos Android no Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configurações de perfil de email no Microsoft Intune para dispositivos que executam o Android e Android for Work
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -59,7 +57,7 @@ Como administrador do Intune, você pode criar e atribuir configurações de ema
 
 - **Aplicativo de email** – selecione **Gmail** ou **Nine Work**
 - **Servidor de email** – O nome do host do seu servidor Exchange.
-- **Atributo de nome de usuário do AAD** – esse nome é o atributo no AD (Active Directory) ou no Azure AD que será usado para gerar o nome de usuário para esse perfil de email. Selecione o **Endereço SMTP Primário**, como o user1@contoso.com ou **Nome UPN**, como user1 ou user1@contoso.com.
+- **Atributo de nome de usuário do AAD** – esse nome é o atributo no AD (Active Directory) ou no Azure AD que é usado para gerar o nome de usuário para esse perfil de email. Selecione o **Endereço SMTP Primário**, como o user1@contoso.com ou **Nome UPN**, como user1 ou user1@contoso.com.
 - **Atributo de endereço de email do AAD** – Como o endereço de email do usuário em cada dispositivo cliente será gerado. Selecione **nome UPN** para usar o nome da entidade completo como o endereço de email ou **Nome de usuário**.
 - **Método de autenticação** – Selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.
     - Se você selecionou **Certificado**, escolha um perfil de certificado SCEP ou PKCS do cliente criado anteriormente para autenticar a conexão do Exchange.

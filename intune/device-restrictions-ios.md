@@ -1,27 +1,26 @@
 ---
-title: "Configurações de restrições de dispositivo do Intune para iOS"
-titleSuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos iOS."
+title: "Configurações de restrições de dispositivo do Microsoft Intune para iOS"
+titleSuffix: 
+description: "Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades de dispositivo nos dispositivos que executam o iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo iOS no Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
+Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -99,7 +98,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
     -   **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres de símbolo (como **#** ou **@**) que devem ser incluídos na senha.
     -   **Tamanho mínimo de senha** – Especificar o número mínimo de caracteres na senha.
     -   **Número de falhas de entrada antes de apagar o dispositivo** – Especificar o número de tentativas de logon antes de essa configuração apagar o dispositivo.
-    -   **Máximo de minutos após o bloqueio de tela antes da senha ser necessária**<sup>1</sup> – Especifique quanto tempo o dispositivo pode permanecer ocioso antes que o usuário precise digitar novamente sua senha.
+    -   **Máximo de minutos após o bloqueio de tela antes que a senha seja necessária**<sup>1</sup> – Especificar quanto tempo o dispositivo poderá permanecer ocioso antes que o usuário tenha que digitar novamente a senha.
     -   **Máximo de minutos de inatividade até o bloqueio de tela**<sup>1</sup> – Especifique o número de minutos antes que a tela do dispositivo seja desativada.
     -   **Expiração da senha (dias)** – Especifique o número de dias antes que a senha do dispositivo precise ser alterada.
     -   **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que o dispositivo lembra.
@@ -107,7 +106,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 - **Modificação da senha (somente supervisionada)** – Impede que a senha seja alterada, adicionada ou removida.
     - **Modificação de impressão digital (somente supervisionada)** – Impede que o usuário altere, adicione ou remova configurações de TouchID.
 
-<sup>1</sup>Quando você configura as definições **Máximo de minutos inatividade até o bloqueio de tela** e **Máximo de minutos após o bloqueio de tela antes da senha ser necessária**, eles são aplicados em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
+<sup>1</sup>Quando você configura as definições **Máximo de minutos inatividade até o bloqueio de tela** e **Máximo de minutos após o bloqueio de tela antes da senha ser necessária**, eles são aplicados em sequência. Por exemplo, se você definir o valor das duas configurações como **5** minutos, a tela desligará automaticamente após cinco minutos e o dispositivo será bloqueado após outros cinco minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo será bloqueado cinco minutos depois que o usuário desligar a tela.
 
 ## <a name="locked-screen-experience"></a>Experiência de tela bloqueada
 
@@ -133,7 +132,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 -   **Game Center (somente supervisionado)** – Bloquear ou habilitar o uso do aplicativo Game Center.
 -   **Jogos multijogador (somente supervisionado)** – Permitir que o usuário execute jogos com vários participantes no dispositivo.
 -   **Região das classificações** – Escolha a região de classificações para o qual você deseja configurar os downloads permitidos, e escolha as classificações permitidas para **Filmes** e **Programas de TV**.
--   **Aplicativos** – Escolha a classificação de idade dos aplicativos que os usuários poderão baixar, ou então escolha **Permitir todos os aplicativos**.
+-   **Aplicativos** – Escolha a classificação de idade dos aplicativos que os usuários podem baixar ou então escolha **Permitir todos os aplicativos**.
 
 ## <a name="built-in-apps"></a>Aplicativos internos
 
@@ -156,8 +155,8 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 
 Na lista de aplicativos restritos, você pode configurar uma das seguintes listas:
 
-- Uma lista de **Aplicativos proibidos** – Listar os aplicativos (não gerenciados pelo Intune) que os usuários não têm permissão para instalar e executar. Os usuários não serão impedidos de instalar um aplicativo proibido, mas caso o façam, você será notificado.
-- Uma lista de **Aplicativos aprovados** – Listar os aplicativos que os usuários têm permissão para instalar. Os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente. Os usuários não serão impedidos de instalar um aplicativo que não esteja na lista de aprovados, mas caso o façam, você será notificado.
+- Uma lista de **Aplicativos proibidos** – Listar os aplicativos (não gerenciados pelo Intune) que os usuários não têm permissão para instalar e executar. Os usuários não estão impedidos de instalar um aplicativo proibido, mas caso o façam, você será notificado.
+- Uma lista de **Aplicativos aprovados** – Listar os aplicativos que os usuários têm permissão para instalar. Os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente. Os usuários não estão impedidos de instalar um aplicativo que não esteja na lista aprovada, mas caso o façam, você será notificado.
 
 Para configurar a lista, clique em **Adicionar**, especifique um nome de sua preferência, o editor do aplicativo (opcional) e a URL para o aplicativo na loja de aplicativos.
 
@@ -169,7 +168,7 @@ Usando um mecanismo de pesquisa, encontre o aplicativo que você deseja usar na 
 Copie a URL da página e use-a como a URL para configurar a lista de aplicativos permitidos ou proibidos ou o aplicativo que você deseja executar no modo de quiosque.
 Os perfis de dispositivo que contêm configurações de aplicativo restrito devem ser atribuídos para grupos de usuários.
 
-Exemplo: pesquisar por Microsoft Word para iPad. A URL que você usará será https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: pesquisar por Microsoft Word para iPad. A URL a ser usada é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Você também pode usar o iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
@@ -182,7 +181,7 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 
 Na lista de aplicativos Mostrar ou ocultar, você pode configurar uma destas listas (requer dispositivos supervisionados com iOS 9.3 ou posterior).
 
-Uma lista de **Aplicativos ocultos** – Especifique uma lista de aplicativos que serão ocultados dos usuários. Os usuários não podem exibir nem iniciar esses aplicativos.
+Uma lista de **Aplicativos ocultos** – Especifique uma lista de aplicativos que ficam ocultados dos usuários. Os usuários não podem exibir nem iniciar esses aplicativos.
 Uma lista de **Aplicativos visíveis** – Especifique uma lista de aplicativos que os usuários podem exibir e iniciar. Nenhum outro aplicativo pode ser exibido ou iniciado.
 
 Para configurar a lista, clique em **Adicionar**, especifique um nome de sua preferência, o editor do aplicativo (opcional) e a URL para o aplicativo na loja de aplicativos.
@@ -194,7 +193,7 @@ Para especificar uma URL de aplicativo na lista de aplicativos, use o seguinte f
 Usando um mecanismo de pesquisa, encontre o aplicativo que você deseja usar na iTunes App Store e abra a página do aplicativo.
 Copie a URL da página e use-a como a URL para configurar a lista de aplicativos permitidos ou proibidos ou o aplicativo que você deseja executar no modo de quiosque.
 
-Exemplo: pesquisar por Microsoft Word para iPad. A URL que você usará será https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: pesquisar por Microsoft Word para iPad. A URL a ser usada é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
@@ -228,7 +227,7 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 
 ## <a name="keyboard-and-dictionary"></a>Teclado e dicionário
 
--   **Pesquisa por definição de palavra (somente supervisionado)** – Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.
+-   **Pesquisa de definição de palavra (somente no modo supervisionado)** – Permitir o recurso do iOS que permite realçar uma palavra e pesquisar sua definição.
 -   **Teclados preditivos (somente supervisionado)** – Permitir o uso de teclados preditivos que sugerem palavras que o usuário pode querer.
 -   **Correção automática (somente supervisionado)** – Permite que o dispositivo corrija automaticamente palavras incorretas.
 -   **Verificação ortográfica do teclado (somente supervisionada)**  – Permite usar o verificador de ortografia do dispositivo.
@@ -238,9 +237,9 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 -   **Backup para iCloud** – Permitir ao usuário fazer backup do dispositivo no iCloud.
 -   **Sincronização de documentos para iCloud (somente supervisado)** – Permitir a sincronização de documento e chave-valor para o espaço de armazenamento no iCloud.
--   **Sincronização de fluxo de fotografias para iCloud** – Permite que os usuários habilitem o **Meu Fluxo de Fotos** em seus dispositivos, o que permite que as fotos sejam sincronizadas com o iCloud e fiquem disponíveis em todos os dispositivos dos usuários.
+-   **Sincronização de fluxo de fotografias com iCloud** – Permite que os usuários habilitem o **Meu Fluxo de Fotos** em seus dispositivos, o que possibilita que as fotos sejam sincronizadas com o iCloud e fiquem disponíveis em todos os dispositivos dos usuários.
 -   **Backup criptografado** – Exigir que quaisquer backups de dispositivo sejam criptografados.
--   **Biblioteca de Fotos do iCloud** – Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.    As fotos que não forem totalmente baixadas na biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção for definida como **Não**.
+-   **Biblioteca de Fotos do iCloud** – Se for definido como **Não**, desabilitará o uso da biblioteca de fotos do iCloud, o que permite aos usuários armazenar fotos e vídeos na nuvem.   As fotos que não forem totalmente baixadas da biblioteca de fotos do iCloud para o dispositivo serão removidas do dispositivo se essa opção estiver definida como **Não**.
 -   **Sincronizar aplicativos gerenciados com a nuvem** – Permitir que os aplicativos que você gerencia com o Intune sincronizem dados com a conta do iCloud do usuário.
 -   **Fluxo de fotos compartilhado** – Defina como **Não** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo.
 -   **Continuação da atividade** – Permitir que o usuário continue, em outro dispositivo iOS ou macOS, o trabalho iniciado em um dispositivo iOS (Handoff).
@@ -251,7 +250,7 @@ Use estas configurações para configurar dispositivos iOS para executar aplicat
 
 ### <a name="settings"></a>Configurações
 
-- **Nome do aplicativo** - insira o nome do aplicativo como ele aparecerá na lista de aplicativos desta folha.
+- **Nome do aplicativo** – insira o nome do aplicativo que aparece na lista de aplicativos nesta folha.
 - **ID do Pacote de Aplicativos** - insira a ID do pacote de aplicativos do aplicativo. Para obter ajuda, veja **Referência da ID de Pacote para aplicativos iOS internos** neste tópico.
 
 Depois de especificar o nome de cada aplicativo e a ID de pacote, escolha **Adicionar** para acrescentá-los à lista.
@@ -308,7 +307,7 @@ Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para
 
 
 ## <a name="kiosk-supervised-only"></a>Quiosque (somente supervisionado)
--   **Aplicativo que é executado no modo de quiosque** – Escolha **Aplicativo Gerenciado** para selecionar um aplicativo que você adicionou ao Intune, ou **Aplicativo da Loja** para especificar a URL para um aplicativo na loja. Nenhum outro aplicativo poderá ser executado no dispositivo. Para obter mais ajuda, consulte "How to specify URLs to app stores" (Como especificar URLs para lojas de aplicativos) mais adiante neste tópico.
+-   **Aplicativo que é executado no modo de quiosque** – Escolha **Aplicativo Gerenciado** para selecionar um aplicativo que você adicionou ao Intune, ou **Aplicativo da Loja** para especificar a URL para um aplicativo na loja. Nenhum outro aplicativo pode ser executado no dispositivo. Para obter mais ajuda, consulte "How to specify URLs to app stores" (Como especificar URLs para lojas de aplicativos) mais adiante neste tópico.
     -   **Toque auxiliar** – Habilitar ou desabilitar a configuração de acessibilidade **Toque auxiliar**, que ajuda o usuário a executar gestos na tela que podem ser difíceis de executar.
     -   **Inverter cores** – Habilitar ou desabilitar a configuração de acessibilidade Inverter Cores que ajusta a exibição para ajudar os usuários com deficiências visuais.
     -   **Áudio mono** – Habilitar ou desabilitar a configuração de acessibilidade Áudio mono.
@@ -348,7 +347,7 @@ No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quand
 
 ### <a name="managed-web-domains"></a>Domínios da web gerenciados
 
-No campo **URL do Domínio da Web**, adicione uma ou mais URLs à lista. Quando os documentos forem baixados dos domínios especificados, eles serão considerados gerenciados. Essa configuração só se aplica a documentos baixados usando o navegador Safari.
+No campo **URL do Domínio da Web**, adicione uma ou mais URLs à lista. Quando os documentos são baixados dos domínios especificados, eles são considerados gerenciados. Essa configuração só se aplica a documentos baixados usando o navegador Safari.
 
 
 ### <a name="safari-password-autofill-domains"></a>Domínios de preenchimento automático de senha do Safari

@@ -1,10 +1,10 @@
 ---
 title: Como obter suporte para o Microsoft Intune
-titlesuffix: Azure portal
-description: "O suporte está disponível online e por telefone para assinaturas de avaliação e pagas."
+titlesuffix: Microsoft Intune
+description: "Conecte-se e ligue para o suporte das assinaturas de avaliação e paga do Microsoft Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Intune. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível apenas em inglês e japonês. O suporte via telefone e o suporte de cobrança online estão disponíveis em outros idiomas.
 
 >[!IMPORTANT]
-> Para obter suporte técnico de produtos que funcionam com o Intune, mas que não são produzidos pela Microsoft, como por exemplo Saaswedo, Cisco ou Lookout, contate o fornecedor do produto primeiro. Antes de abrir uma solicitação de suporte do Intune, verifique se você configurou o outro produto corretamente.
+> Para obter suporte técnico de produtos de terceiros que funcionam com o Intune (como, Saaswedo, Cisco ou Lookout) entre em contato primeiro com o fornecedor do produto. Antes de abrir uma solicitação de suporte do Intune, verifique se você configurou o outro produto corretamente.
 
 ## <a name="create-an-online-support-ticket"></a>Criar um tíquete de suporte online
 
@@ -41,16 +41,20 @@ Como um administrador de TI, é possível emitir um tíquete de suporte do Porta
 2. Na página Ajuda e suporte do Azure, selecione **Nova solicitação de suporte**.
 
     ![Captura de tela da página de ajuda e suporte do Portal do Azure com o link Nova solicitação de suporte realçado](./media/azure-support-ticket-link.png)
+
 3. Na folha **Noções básicas**, escolha as seguintes opções para a maioria dos problemas de suporte técnico do Intune:
     - **Tipo de problema**: **Técnico**
     - **Serviço**: **Microsoft Intune**
-    - **Plano de suporte**: **Suporte técnico –  incluído** (O suporte é gratuito para problemas técnicos do Intune.)
-
+    - **Plano de suporte**: **Suporte técnico – incluído** (o suporte é gratuito para problemas técnicos do Intune) ou **Premier**
+    
     >[!IMPORTANT]
-    >O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Para examinar os detalhes da oferta de Suporte Premier, consulte a documentação [Descrição dos Serviços](https://www.microsoft.com/microsoftservices/services-list.aspx), seção 5.3.3 “Serviços de Consultoria”.
+    >- Se você é um **cliente Premier** e não vir o **Plano de suporte: Premier**, entre em contato com seu Gerente de conta técnico para obter ajuda para vincular seu contrato com o locatário.
+    >- O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Para examinar os detalhes da oferta de Suporte Premier, consulte a documentação [Descrição dos Serviços](https://enterprise.microsoft.com/en-us/services/services-list/), seção 5.3.3 “Serviços de Consultoria”.
 
     Escolha **Avançar** para continuar.
-4. Na folha **Problema**, para garantir que a solicitação seja tratada pelo especialista no assunto certo para o seu problema, selecione as seguintes opções:
+
+4. Na folha **Problema**, para verificar se a sua solicitação está sendo tratada pelo especialista certo para o seu problema, selecione as seguintes opções:
+
     - **Gravidade**
     - **Tipo de Problema**
     - **Categoria**
@@ -59,13 +63,15 @@ Como um administrador de TI, é possível emitir um tíquete de suporte do Porta
 
     ![Captura de tela da página de ajuda e suporte do Portal do Azure com os Itens do problema preenchidos e exibindo soluções com base no problema](./media/support-need-solutions.png)
 
-    Forneça as informações abaixo para nos ajudar a pesquisar e resolver o problema:
-    -   **Detalhes**
+    Forneça as informações abaixo para ajudar equipe de suporte a pesquisar e resolver o problema:
+    
+    - **Detalhes**
     - **Data**
     - **Hora**
-    - Dados complementares
+    - **Dados complementares**
 
     Escolha **Avançar**.
+
 5. Forneça as **Informações de contato** para esta solicitação de suporte. O suporte da Microsoft usará essas informações para entrar em contato com você.
 6. Escolha **Criar** para enviar sua solicitação de suporte.
 
@@ -74,6 +80,5 @@ Como um administrador de TI, é possível emitir um tíquete de suporte do Porta
 
 ## <a name="additional-resources"></a>Recursos adicionais
 - [Contatar o suporte telefônico assistido do Microsoft Intune](phone-support-contact.md)
-- [Centro de Serviços de Licenciamento por Volume](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Suporte de cobrança e gerenciamento de assinaturas](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Licenciamento por volume](http://go.microsoft.com/fwlink/p/?LinkID=282015)

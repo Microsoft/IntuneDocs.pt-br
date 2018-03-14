@@ -1,6 +1,7 @@
 ---
-title: "Mensagens do Portal da Empresa que os usuários podem ver no Android"
-description: "Descreve as mensagens do aplicativo Portal da Empresa que os usuários finais do Intune podem ver."
+title: "Mensagens do Portal da Empresa que os usuários podem ver nos dispositivos"
+titlesuffix: Microsoft Intune
+description: "Entenda as diferentes mensagens que usuários finais podem ver no Portal da Empresa."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -13,11 +14,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 58468a81d0ec3e7bfc051a6edc6a09ef1c5e62a2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar usuários finais a compreender as mensagens do aplicativo do Portal da Empresa
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 > As informações a seguir aplicam-se somente aos dispositivos com Android 6.0 e posteriores.
 
-Em pontos diferentes no processo de registro, os usuários finais verão duas mensagens diferentes que podem ser motivo de preocupação.
+Entenda as diferentes mensagens de aplicativo que os usuários finais podem ver no Portal da Empresa. Essas mensagens de aplicativo normalmente são exibidas em diferentes momentos no processo de registro. Saiba o local em que as mensagens são exibidas, o que significam e o que acontece se os usuários negarem acesso. Além disso, saiba como melhor explicar as mensagens aos usuários.
 
 - __Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?__
 - __Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?__
@@ -42,12 +43,12 @@ Ao aceitar este aviso, os usuários permitirão que o IMEI e o número de telefo
 > [!NOTE]
 > **O aplicativo de Portal da Empresa nunca faz ou gerencia chamadas telefônicas!** O texto da mensagem é controlado pelo Google e não pode ser alterado.
 
-Para ver a página **Hardware**, vá para **Grupos** > **Todos os dispositivos móveis** > **Dispositivos**. Selecione o dispositivo do usuário e vá para **Exibir Propriedades** > **Hardware**.
+Para ver a página **Hardware**, é necessário acessar **Grupos** > **Todos os dispositivos móveis** > **Dispositivos**. Selecione o dispositivo do usuário e vá para **Exibir Propriedades** > **Hardware**.
 
 ### <a name="what-happens-if-users-deny-access"></a>O que acontece se os usuários negarem o acesso
-Se os usuários negarem acesso, eles poderão continuar a usar o aplicativo de Portal da Empresa e registrar o dispositivo. No entanto, o IMEI e o número de telefone do dispositivo estarão em branco na página __Hardware__ no console do administrador. Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após negarem acesso, a mensagem exibe uma caixa de seleção **Nunca Perguntar Novamente** que os usuários podem selecionar para interromper o prompt.
+Se os usuários negarem acesso, eles poderão continuar a usar o aplicativo de Portal da Empresa e registrar o dispositivo. No entanto, o IMEI e o número de telefone do dispositivo estarão em branco na página __Hardware__ no console do administrador. Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após negarem acesso, a mensagem exibirá uma caixa de seleção **Nunca Perguntar Novamente**, que os usuários podem selecionar, interrompendo o aviso.
 
-Se os usuários permitem, mas posteriormente negam o acesso, a mensagem é exibida na próxima vez que os usuários entrarem no aplicativo do Portal da Empresa após o registro.
+Se os usuários permitirem, mas posteriormente negarem o acesso, a mensagem será exibida na próxima vez que os usuários entrarem no aplicativo Portal da Empresa após o registro.
 
 Se os usuários decidirem posteriormente permitir o acesso, eles poderão acessar **Configurações** > **Aplicativos** > **Portal da Empresa** > **Permissões** > **Telefone** e ativar a permissão.
 
@@ -66,7 +67,7 @@ Ao aceitar este prompt, os usuários permitem que o Intune crie sua conta de tra
 > **A Microsoft nunca acessa seus contatos!** O texto da mensagem é controlado pelo Google e não pode ser alterado.
 
 ### <a name="what-happens-if-users-deny-access"></a>O que acontece se os usuários negarem o acesso
-Se os usuários negarem o acesso, seu dispositivo não será registrado no Intune e não poderá ser gerenciado. Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após negarem acesso, a mensagem exibe uma caixa de seleção **Nunca Perguntar Novamente** que os usuários podem selecionar para interromper o prompt.
+Se os usuários negarem o acesso, o dispositivo não será registrado no Intune e não poderá ser gerenciado. Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após negarem acesso, a mensagem exibe uma caixa de seleção **Nunca Perguntar Novamente** que os usuários podem selecionar para interromper o prompt.
 
 Se os usuários permitem, mas posteriormente negam o acesso, a mensagem é exibida na próxima vez que os usuários entrarem no aplicativo do Portal da Empresa após o registro.
 
@@ -81,7 +82,7 @@ Peça para os usuários [registrarem seu dispositivo Android no Intune](/intune-
 A mensagem **Permitir que o Portal da Empresa acesse fotos, mídia e arquivos em seu dispositivo?** é exibida quando os usuários tocam em **Enviar dados** para enviar logs ao administrador de TI.
 
 ### <a name="what-it-means"></a>O que significa
-Ao aceitar este prompt, os usuários permitem que seu dispositivo grave logs de dados no cartão SD do dispositivo e que habilite esses logs a serem movidos usando um cabo USB.   
+Ao aceitar este prompt, os usuários permitem que seus dispositivos gravem logs de dados no cartão SD do dispositivo. Isso também permite que os logs sejam movidos usando um cabo USB.   
 
 > [!NOTE]
 > **O aplicativo do Portal da Empresa nunca acessa fotos, mídia e arquivos dos usuários!** O texto da mensagem é controlado pelo Google e não pode ser alterado.
@@ -89,7 +90,7 @@ Ao aceitar este prompt, os usuários permitem que seu dispositivo grave logs de 
 ### <a name="what-happens-if-users-deny-access"></a>O que acontece se os usuários negarem o acesso
 Se os usuários negarem o acesso, eles ainda podem enviar logs de dados por email, mas os logs não serão copiados para o cartão SD do dispositivo.
 
-Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após negarem acesso, a mensagem exibe uma caixa de seleção **Nunca Perguntar Novamente** que os usuários podem selecionar para que a mensagem nunca seja exibida novamente. Se os usuários permitirem, mas posteriormente negarem o acesso, a mensagem será exibida na próxima vez que os usuários tentarem enviar logs. Se os usuários decidirem posteriormente permitir o acesso, eles poderão acessar **Configurações** > **Aplicativos** > **Portal da Empresa** > **Permissões** > **Armazenamento** e ativar a permissão.
+Na segunda vez que os usuários entrarem no aplicativo Portal da Empresa após negarem acesso, a mensagem exibe uma caixa de seleção **Nunca Perguntar Novamente** que os usuários podem selecionar para que a mensagem nunca seja exibida novamente. Se os usuários permitirem, mas posteriormente negarem o acesso, a mensagem será exibida na próxima vez que os usuários tentarem enviar logs. Entretanto, se os usuários decidirem posteriormente permitir o acesso, eles poderão acessar **Configurações** > **Aplicativos** > **Portal da Empresa** > **Permissões** > **Armazenamento** e ativar a permissão.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar isso aos seus usuários
@@ -98,10 +99,10 @@ Peça aos usuários para [enviarem logs para o administrador de TI por email](/i
 ## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>O suporte da sua empresa precisa lhe conceder acesso aos recursos da empresa
 
 ### <a name="where-it-appears"></a>Onde ele aparece
-Se você não tiver adicionado o aplicativo de Portal da Empresa à lista de **Aplicativos permitidos** ou de **Aplicativos isentos** e um usuário tentar entrar, a entrada falhará. A mensagem a seguir é exibida:
+Se você não tiver adicionado o aplicativo Portal da Empresa à lista de **Aplicativos permitidos** ou de **Aplicativos isentos** e um usuário tentar entrar, a entrada falhará. A mensagem a seguir é exibida:
 
 > **O suporte da sua empresa precisa lhe conceder acesso aos recursos da empresa**  
-> Sua empresa está usando as políticas de Proteção de Informações do Windows para proteger seu dispositivo. O suporte da empresa precisará certificar-se de que eles permitem que o Portal da Empresa acesse essas informações.
+> Sua empresa está usando as políticas de Proteção de Informações do Windows para proteger seu dispositivo. O suporte da empresa deverá permitir que o Portal da Empresa acesse esses recursos.
 
 ### <a name="what-it-means"></a>O que significa
 

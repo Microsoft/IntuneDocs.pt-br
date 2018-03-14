@@ -3,10 +3,10 @@ title: Acesso condicional com o Intune
 titlesuffix: Azure portal
 description: Maneiras comuns de usar o acesso condicional com o Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Maneiras comuns de usar o acesso condicional com o Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Você precisa configurar a política de conformidade do dispositivo móvel do Intune e as funcionalidades de MAM (gerenciamento de aplicativo móvel) do Intune para impor a conformidade do acesso condicional em sua organização. Vamos falar sobre as maneiras comuns de usar o acesso condicional com o Intune.
+Há dois tipos principais de acesso condicional com o Intune. O primeiro tipo é acesso condicional baseado no dispositivo. O segundo tipo é acesso condicional baseado no aplicativo. Você precisa configurar as políticas de conformidade relacionadas para orientar a conformidade de acesso condicional em sua organização.
+
+As informações abaixo ajudam a entender como usar os recursos de conformidade de *dispositivo* móvel do Intune e os recursos de MAM (gerenciamento de *aplicativo* móvel) do Intune. 
 
 ## <a name="device-based-conditional-access"></a>Acesso condicional baseado no dispositivo
 
@@ -32,11 +34,11 @@ O Intune e o Azure Active Directory trabalham juntos para garantir que somente d
 
 O Intune fornece funcionalidades de política de conformidade do dispositivo que avaliam o status de conformidade dos dispositivos. O status da conformidade é relatado ao Azure Active Directory, que usa isso para impor a política de acesso condicional criada no Azure Active Directory quando o usuário tenta acessar os recursos da empresa.
 
-Começando no [novo portal do Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune), as políticas de acesso condicional baseado no dispositivo para o Exchange Online e outros produtos do Office 365 são configuradas por meio do portal do Azure.
+As políticas de acesso condicional baseado no dispositivo para o Exchange Online e outros produtos do Office 365 são configuradas por meio do [Portal do Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 -   Saiba mais sobre o [acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
--   Saiba mais sobre [o que é a conformidade do dispositivo do Intune](device-compliance.md).
+-   Saiba mais sobre [Conformidade de dispositivo do Intune](device-compliance.md).
 
 -   Saiba mais sobre a [proteção de email, o Office 365 e outros serviços usando o acesso condicional com o Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 

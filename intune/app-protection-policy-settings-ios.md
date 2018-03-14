@@ -1,12 +1,12 @@
 ---
 title: "Configurações de política de proteção de aplicativo iOS"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Este tópico descreve as configurações de política de proteção de aplicativo para dispositivos iOS."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As configurações de política descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
+As configurações de política descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Adicionar uma Política** > **Configurações** no Portal do Azure.
 
 Há duas categorias de configurações de política: configurações de realocação de dados e configurações de acesso. Neste tópico, o termo ***aplicativos gerenciados por política*** refere-se a aplicativos configurados com políticas de proteção de aplicativo.
 
@@ -32,8 +32,8 @@ Há duas categorias de configurações de política: configurações de realoca�
 
 | Setting | Como usar | Valor padrão |
 |------|------|------|
-| **Impedir backups do iTunes e iCloud** | Escolha **Sim** para desabilitar o backup de todos os arquivos gerenciados do iTunes e iCloud. Escolha **Não** para permitir que esse aplicativo faça backup de arquivos gerenciados do iTunes e iCloud.| Sim |
-| **Permitir que o aplicativo transfira dados para outros aplicativos** | Especifique quais aplicativos podem receber dados desse aplicativo: <ul><li> **Aplicativos gerenciados por política**: permita a transferência apenas para outros aplicativos gerenciados por política.</li> <li>**Todos os aplicativos**: permitir a transferência para qualquer aplicativo. </li> <li>**Nenhum**: não permitir a transferência de dados para nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> Além disso, se você definir essa opção como **Aplicativos gerenciados pela política** ou **Nenhum**, o recurso do iOS 9 que permite que a Busca do Spotlight pesquise dados em aplicativos será bloqueado. <br><br> Há algumas isenções de aplicativos e serviços para os quais o Intune pode permitir transferência de dados. Confira [Isenções de transferência de dados](#data-transfer-exemptions) para obter uma lista completa dos aplicativos e serviços. | Todos os aplicativos |
+| **Impedir backups do iTunes e iCloud** | Escolha **Sim** para impedir que esse aplicativo faça backup de dados corporativos ou de estudante no iTunes e iCloud. Escolha **Não** para permitir que esse aplicativo faça backup de dados corporativos ou de estudante no iTunes e iCloud.| Sim |
+| **Permitir que o aplicativo transfira dados para outros aplicativos** | Especifique quais aplicativos podem receber dados desse aplicativo: <ul><li> **Aplicativos gerenciados por política**: permita a transferência apenas para outros aplicativos gerenciados por política.</li> <li>**Todos os aplicativos**: permitir a transferência para qualquer aplicativo. </li> <li>**Nenhum**: não permitir a transferência de dados para nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> Além disso, se você definir essa opção como **Aplicativos gerenciados pela política** ou **Nenhum**, o recurso do iOS 9 que permite que a Busca do Spotlight pesquise dados em aplicativos será bloqueado. <br><br> Há algumas isenções de aplicativos e serviços para os quais o Intune pode permitir transferência de dados por padrão. Além disso, você poderá criar suas próprias isenções se tiver que permitir que os dados sejam transferidos para um aplicativo que não seja compatível com a APP do Intune. Consulte [isenções de transferência de dados](#data-transfer-exemptions) para obter mais informações. | Todos os aplicativos |
 | **Permitir que o aplicativo receba dados de outros aplicativos** | Especifique quais aplicativos podem transferir dados para esse aplicativo: <ul><li>**Aplicativos gerenciados por política**: permita a transferência apenas de outros aplicativos gerenciados por política.</li><li>**Todos os aplicativos**: permitir a transferência de dados de qualquer aplicativo.</li><li>**Nenhum**: não permita a transferência de dados de nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> Há algumas isenções de aplicativos e serviços dos quais o Intune pode permitir transferência de dados. Confira [Isenções de transferência de dados](#data-transfer-exemptions) para obter uma lista completa dos aplicativos e serviços. Aplicativos de várias identidades habilitados para MAM em dispositivos iOS não registrados ignoram essa política e permitem todos os dados de entrada. | Todos os aplicativos |
 | **Impedir “Salvar Como”** | Escolha **Sim** para desabilitar o uso da opção Salvar Como nesse aplicativo. Escolha **Não** se quiser permitir o uso de Salvar Como. | Não |
 | **Restringir recortar, copiar e colar com outros aplicativos** | Especifique quando as ações recortar, copiar e colar podem ser usadas com esse aplicativo. Escolha: <ul><li>**Bloqueado**: não permita ações recortar, copiar e colar entre esse aplicativo e outros aplicativos.</li><li>**Aplicativos gerenciados por política**: permita ações recortar, copiar e colar entre esse aplicativo e outros aplicativos gerenciados por política.</li><li>**Aplicativos gerenciados por política com Colar Em**: permita o recorte ou a cópia entre esse aplicativo e outros aplicativos gerenciados por política. Permita que dados de qualquer aplicativo sejam colados nesse aplicativo.</li><li>**Qualquer aplicativo**: sem restrições para recortar, copiar e colar para e desse aplicativo. | Qualquer aplicativo |
@@ -53,13 +53,12 @@ Há algumas isenções de aplicativos e serviços de plataforma em que a políti
 | Nomes do aplicativo/serviço | Descrição |
 | ---- | --- |
 |<code>tel; telprompt</code> | Aplicativo de telefone nativo |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Configurações do dispositivo |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Loja de aplicativos |
-| <code>calshow</code> | Calendário nativo |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Configurações do dispositivo |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Loja de aplicativos |
+|<code>calshow</code> | Calendário nativo |
 
-
-
+Para obter mais informações, consulte [Exceções à política transferência de dados para aplicativos](app-protection-policies-exception.md). 
 
 ## <a name="access-settings"></a>Configurações de acesso
 

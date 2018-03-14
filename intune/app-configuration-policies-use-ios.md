@@ -1,12 +1,12 @@
 ---
-title: "Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados | Microsoft Docs"
-titlesuffix: Azure portal
+title: "Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados"
+titlesuffix: Microsoft Intune
 description: "Saiba como usar políticas de configuração de aplicativo para fornecer dados de configuração para um aplicativo iOS quando ele é executado."
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: ee17ceae0af131f683341f2346f92ad5ef03ed16
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/03/2018
 
 Use políticas de configuração de aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo iOS. Você não atribui essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e atribui o aplicativo. As configurações de política são usadas quando o aplicativo as verifica, normalmente, na primeira vez em que ele é executado.
 
-Você pode atribuir uma política de configuração de aplicativo a um grupo de usuários e dispositivos usando uma combinação de atribuições de inclusão e exclusão. Depois de adicionar uma política de configuração de aplicativo, você pode definir as atribuições para política de configuração de aplicativo. Ao definir as atribuições para a política, você pode optar por incluir ou excluir os grupos de usuários para os quais a política será aplicada. Ao optar por incluir um ou mais grupos, você pode optar por selecionar grupos específicos para incluir ou selecionar grupos internos. Os grupos internos incluem **Todos os Usuários**, **Todos os Dispositivos** e **Todos os Usuários + Todos os Dispositivos**. 
+Você pode atribuir uma política de configuração de aplicativo a um grupo de usuários e dispositivos usando uma combinação de atribuições de inclusão e exclusão. Depois de adicionar uma política de configuração de aplicativo, você pode definir as atribuições para política de configuração de aplicativo. Ao definir as atribuições para a política, você pode optar por incluir ou excluir os grupos de usuários para os quais a política se aplica. Ao optar por incluir um ou mais grupos, você pode optar por selecionar grupos específicos para incluir ou selecionar grupos internos. Os grupos internos incluem **Todos os Usuários**, **Todos os Dispositivos** e **Todos os Usuários + Todos os Dispositivos**. 
 
 >[!NOTE]
 >O Intune fornece os grupos **Todos os Usuários** e **Todos os Dispositivos** pré-criados no console, com otimizações internas para sua conveniência. É altamente recomendável usar esses grupos para destinar a todos os usuários e todos os dispositivos em vez de usar outros grupos "Todos os usuários" e "Todos os dispositivos" que você mesmo tenha criado.
@@ -44,38 +44,38 @@ Depois de selecionar os grupos incluídos para sua política de configuração d
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração do aplicativo
 
-1. Entre no Portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** + **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Selecione a carga de trabalho de **Aplicativos móveis**.
 4. Escolha **Políticas de configuração do aplicativo** no grupo **Gerenciar** e escolha **Adicionar**.
 5. Defina os seguintes detalhes:
     - **Nome**<br>
-      O nome do perfil que será exibido no Portal do Azure.
+      O nome do perfil que é exibido no Portal do Azure.
     - **Descrição**<br>
-      A descrição do perfil que será exibida no Portal do Azure.
+      A descrição do perfil que é exibido no Portal do Azure.
     - **Tipo de registro de dispositivo**<br>
       Selecione **Dispositivos gerenciados**.
 6. Selecione **iOS** para **Plataforma**.
-7.  Escolha **Aplicativo Associado**. Em seguida, na folha **Aplicativo Associado**, escolha o aplicativo gerenciado para o qual você deseja aplicar a configuração.
-8.  Na folha **Adicionar Política de Configuração**, escolha **Definições de configuração**.
+7.  Escolha **Aplicativo associado**. Em seguida, no painel **Aplicativo associado**, escolha o aplicativo gerenciado para o qual você deseja aplicar a configuração e selecione **OK**.
+8.  No painel **Adicionar política de configuração**, escolha **Definições de configuração**.
 9. Selecione **Formato de definições de configuração**. Selecione uma das seguintes opções:
     - **[Usar o designer de configuração](#use-configuration-designer)**
     - **[Inserir dados XML](#enter-xml-data)**
-10. Depois de adicionar suas informações de XML, escolha **OK** e, em seguida, escolha **Adicionar** para adicionar a política de configuração. A folha de visão geral da política de configuração será exibida.
+10. Depois de adicionar suas informações de XML, escolha **OK** e, em seguida, escolha **Adicionar** para adicionar a política de configuração. O painel de visão geral da política de configuração é exibido.
 11. Selecione **Atribuições** para exibir as opções de inclusão e exclusão. 
 
-    ![Atribuições de política](./media/app-config-policy01.png)
+    ![Captura de tela da guia Incluir de Atribuições de política](./media/app-config-policy01.png)
 12. Selecione **Todos os Usuários** na guia **Inclusão**.
 
-    ![Atribuições de política – Todos os Usuários](./media/app-config-policy02.png)
+    ![Captura de tela de Atribuições de política – opção de lista suspensa Todos os usuários](./media/app-config-policy02.png)
 13. Selecione a guia **Excluir**. 
-14. Clique em **Selecionar grupos para excluir** para exibir a folha relacionada.
+14. Clique em **Selecionar grupos para excluir** para exibir o painel relacionado.
 
-    ![Atribuições de política – Selecionar grupos para excluir](./media/app-config-policy03.png)
+    ![Captura de tela Atribuições de política – folha Selecionar grupos para excluir](./media/app-config-policy03.png)
 15. Escolha os grupos que você deseja excluir e, em seguida, clique em **Selecionar**.
 
     >[!NOTE]
-    >Ao adicionar um grupo, se nenhum outro grupo ainda tenha sido incluído para um determinado tipo de atribuição, ele será pré-selecionado e ficará inalterável para outros tipos de atribuição de inclusão. Assim, esse grupo que foi usado, não poderá ser usado como um grupo excluído.
+    >Ao adicionar um grupo, se nenhum outro grupo ainda tiver sido incluído para um determinado tipo de atribuição, ele será pré-selecionado e ficará inalterável para outros tipos de atribuição de inclusão. Assim, esse grupo que foi usado, não poderá ser usado como um grupo excluído.
 16. Clique em **Salvar**.
 
 ## <a name="use-configuration-designer"></a>Usar o designer de configuração
@@ -104,7 +104,7 @@ Os caracteres \{\{ e \}\} são usados apenas por tipos de token e não devem ser
 
 É possível digitar ou colar uma lista de propriedades XML que contém as definições de configuração do aplicativo para dispositivos registrados no Intune. O formato da lista de propriedades XML varia dependendo do aplicativo que você está configurando. Para obter detalhes sobre o formato exato a ser usado, contate o fornecedor do aplicativo.
 
-O Intune valida o formato XML. No entanto, o Intune não verifica se a PList (lista de propriedades) XML funcionará com o aplicativo de destino.
+O Intune valida o formato XML. No entanto, o Intune não verifica se a PList (lista de propriedades) XML funciona com o aplicativo de destino.
 
 Para saber mais sobre listas de propriedades XML:
 
