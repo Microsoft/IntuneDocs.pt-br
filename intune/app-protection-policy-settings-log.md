@@ -1,7 +1,7 @@
 ---
-title: "Logs da política de proteção do aplicativo"
-titlesuffix: Azure portal
-description: "Este tópico descreve o registro das configurações da política de proteção de aplicativo armazenadas nos logs de aplicativo."
+title: "Examinar logs da política de proteção do aplicativo"
+titlesuffix: Microsoft Intune
+description: "Saiba mais sobre as configurações que você pode examinar nos logs de proteção do aplicativo."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Examine os logs de proteção do aplicativo de cliente
 
-Você pode acessar os logs habilitando o Modo de Diagnóstico do Intune para um aplicativo em um cliente móvel. A tabela a seguir mostra o nome e uma explicação das configurações registradas no log.
+Saiba mais sobre as configurações que você pode examinar nos logs de proteção do aplicativo. Acesse logs habilitando o Modo de Diagnóstico do Intune para um aplicativo em um cliente móvel. A tabela a seguir mostra o nome e uma explicação das configurações registradas no log.
 
 ## <a name="app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo
 

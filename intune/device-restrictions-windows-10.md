@@ -1,25 +1,26 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para Windows 10"
-titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades em dispositivos Windows 10."
+title: "Configurações de restrição de dispositivo do Microsoft Intune para Windows 10"
+titlesuffix: 
+description: "Conheça as configurações do Microsoft Intune que você pode usar para controlar as configurações e as funcionalidades de dispositivos que executam o Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 10 e posterior no Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Configurações de restrição de dispositivo do Windows 10 e posterior do Microsoft Intune
+Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Essa configuração de política não será aplicada se o computador estiver ingressado no Azure Active Directory e o registro automático estiver habilitado. 
    - Essa configuração de política não se aplica a computadores que executam o Windows 10 Home.
 - **Instalação manual do certificado raiz (somente dispositivo móvel)** - impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
-- **Envio de dados de diagnóstico** – Os valores possíveis são:
-    - **Nenhum** – Nenhum dado é enviado para a Microsoft
-    - **Básico** – Informações limitadas são enviadas à Microsoft
-    - **Avançado** – Dados de diagnóstico avançados são enviados para a Microsoft
-    - **Completo** Envia os mesmos dados que Avançado, além de dados adicionais sobre o estado do dispositivo
+
 - **Câmera** – Permite ou bloqueia o uso da câmera do dispositivo.
 - **Sincronização de arquivos do OneDrive** - bloqueia a sincronização de arquivos do dispositivo com o OneDrive.
 - **Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como cartões SD, no dispositivo.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Descoberta de dispositivos** - bloqueia a descoberta de um dispositivo por outros dispositivos.
 - **Alternador de tarefas (somente dispositivos móveis)** - bloqueia o alternador de tarefas no dispositivo.
 - **Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
+- **Espaço de trabalho do Ink** – impedir que usuários acessem o espaço de trabalho do Ink. Quando essa configuração não está configurada, o espaço de trabalho do Ink fica habilitado (o recurso é ativado) e o usuário tem permissão para usá-lo sobre a tela de bloqueio.
 - **Reimplantação automática** – permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
 
 
@@ -75,6 +73,9 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 
 -   **Personalização de entrada** – Não permite o uso de serviços de voz baseados em nuvem para aplicativos da Microsoft Store, ditado ou Cortana. Se você permitir esses serviços, a Microsoft poderá coletar dados de voz para melhorar o serviço.
 -   **Aceitação automática de solicitações de consentimento do usuário para privacidade e emparelhamento** – Permitir que o Windows aceite automaticamente mensagens de consentimento de emparelhamento e privacidade ao executar aplicativos.
+- **Publicar as atividades do usuário**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas.
+- **Apenas atividades locais**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas com base somente em atividades locais.
+
 
 Você pode definir as informações que todos os aplicativos no dispositivo podem acessar. Você pode definir exceções de acordo com o aplicativo que usa **Exceções de privacidade por aplicativo**.
 
@@ -130,7 +131,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 ## <a name="locked-screen-experience"></a>Experiência na tela bloqueada
 
 - **Notificações da central de ações (somente dispositivos móveis)** – Permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
-- **URL de imagem da tela bloqueada (somente desktop)** - especifique a URL para uma imagem no formato PNG, JPG ou JPEG que será usada como o papel de parede de tela bloqueada do Windows. Os usuários não podem mudar isso.
+- **URL de imagem da tela bloqueada (somente desktop)** – especifique a URL para uma imagem no formato JPEG que será usada como o papel de parede de tela bloqueada do Windows. Os usuários não podem mudar isso.
 -   **Tempo limite configurável de tela do usuário (somente em dispositivos móveis)** – Permite que usuários configurem o período 
 -   **Cortana na tela bloqueada (somente no desktop)** – Não permitir que o usuário interaja com a Cortana quando o dispositivo estiver na tela de bloqueio (somente Windows 10 desktop).
 -   **Notificações do sistema na tela bloqueada** – Impede que mensagens de alerta sejam exibidas na tela de bloqueio do dispositivo.
@@ -180,6 +181,8 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 -   **Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado. Os usuários finais podem alterar esse valor a qualquer momento.
 -   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Edge.
 -   **Coleta de dados de Blocos Dinâmico** – Impede que o Windows colete informações de Blocos Dinâmicos quando o usuários fixa um site no menu Iniciar do Edge.
+-  **Lista de favoritos** – define o caminho para o arquivo de favoritos. Por exemplo, http://contoso.com/favorites.html.
+-  **Restringir alterações aos Favoritos** – defina como **Bloquear** para impedir que os usuários adicionem, importem, classifiquem ou editem a lista de Favoritos. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 

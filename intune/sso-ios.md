@@ -1,25 +1,25 @@
 ---
-title: "Configure o Intune para dispositivos iOS de logon único"
-titlesuffix: Azure portal
-description: "Saiba como configurar o Intune para logon único do dispositivo iOS."
+title: "Configurar o Microsoft Intune para logon único de dispositivo iOS"
+titlesuffix: 
+description: "Saiba como configurar o Microsoft Intune para logon único de dispositivo iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Configure o Intune para dispositivos iOS de logon único
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para logon único de dispositivo iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Para aproveitar o Logon Único do dispositivo iOS, você deve ter as seguintes c
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configurações do Dispositivo**, escolha **Perfis**.
-3. Na folha de perfis, escolha **Criar Perfil**, forneça um nome e uma descrição e defina as seguintes configurações:
+3. Na página **Intune**, escolha **Configuração do dispositivo**.
+2. Na pagina **Configuração do dispositivo**, escolha **Perfis**.
+3. Na página de perfis, escolha **Criar Perfil**, forneça um nome e uma descrição e defina as seguintes configurações:
    - **Plataforma**: escolha **iOS**. 
    - **Tipo de perfil**: escolha **recursos de dispositivo**.
-4. Na folha **Recursos de dispositivo**, escolha **Logon Único**.
+4. Na página **Recursos do dispositivo**, escolha **Logon Único**.
 
-   ![Folha de logon único](./media/sso-blade.png)
+   ![Página de logon único](./media/sso-blade.png)
 
-2. Use a seguinte tabela de resumo para ajudá-lo a preencher os campos na folha **Logon Único**. Para obter detalhes, consulte as seções após a tabela.
+2. Use a seguinte tabela de resumo para ajudá-lo a preencher os campos na página **Logon Único**. Para obter detalhes, consulte as seções após a tabela.
    
    |Campo  |Anotações|
    |---------|---------|
@@ -82,7 +82,7 @@ Por exemplo, quando um usuário se conecta a qualquer um desses sites, o disposi
 > [!NOTE]
 > Essas URLs devem ter FQDN corretamente formatado. A Apple exige que estejam no formato `http://<yourURL.domain>`
 
-Os padrões de correspondência de URL devem começar com um `http://` ou `https://`. Uma correspondência de cadeia de caracteres simples é executada, de modo que o prefixo URL `http://www.contoso.com/` não corresponde a `http://www.contoso.com:80/`. Com o iOS 9.0 ou posterior, no entanto, um único curinga * pode ser usado para especificar todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde tanto a `http://store.contoso.com/` quanto a `http://www.contoso.com`.
+Os padrões de correspondência de URL devem começar com um `http://` ou `https://`. Uma correspondência de cadeia de caracteres simples é executada, de modo que o prefixo URL `http://www.contoso.com/` não corresponde a `http://www.contoso.com:80/`. Com o iOS 9.0 ou posterior, no entanto, um único curinga \* pode ser usado para especificar todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde tanto a `http://store.contoso.com/` quanto a `http://www.contoso.com`.
 Os padrões `http://.com` e `https://.com` correspondem a todas as URLs HTTP e HTTPS, respectivamente.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Os aplicativos que usarão o Logon Único

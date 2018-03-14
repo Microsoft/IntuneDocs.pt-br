@@ -1,10 +1,10 @@
 ---
 title: "Ignorar o Bloqueio de Ativação do iOS com o Intune"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Saiba como usar o Intune para ignorar o Bloqueio de Ativação do iOS para acessar dispositivos bloqueados."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de ativação em dispositivos iOS supervisionados com o Intune
 
@@ -69,11 +69,11 @@ Antes de usar o bypass de Bloqueio de Ativação nos dispositivos, é necessári
 
 A ação remota de dispositivo **Ignorar Bloqueio de Ativação** do Intune remove o bloqueio de ativação de um dispositivo iOS sem a ID da Apple e a senha do usuário. Depois de fazer o bypass do bloqueio de ativação, o dispositivo ativa-o novamente quando inicia o aplicativo o Localizar Meu iPhone. Faça bypass do bloqueio de ativação apenas se você tiver acesso físico ao dispositivo.
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Dispositivos**.
-4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
-5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS supervisionado e, em seguida, escolha a ação remota de dispositivo **Ignorar Bloqueio de Ativação**.
+4. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
+5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS supervisionado, escolha **...Mais** e, em seguida, escolha a ação remota de dispositivo **Bypass de Bloqueio de Ativação**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,10 +1,11 @@
 ---
-title: "Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune"
-description: "As informações neste tópico ajudam você a decidir quando deve usar a Ferramenta de Disposição do Aplicativo e o SDK do Aplicativo para permitir que seus aplicativos de linha de negócios personalizados usem políticas de gerenciamento de aplicativos móveis."
+title: "Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos"
+titlesuffix: Microsoft Intune
+description: "Use a Ferramenta de disposição do aplicativo e o SDK de aplicativos para permitir que seus aplicativos de linha de negócios personalizados usem as políticas de proteção de aplicativo no Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -102,6 +103,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Configuração de aplicativo direcionado |X||
 |Suporte para múltiplas identidades|X||
 |Estilo Personalizável |X|||
+
 ## <a name="next-steps"></a>Próximas etapas
 
 Para saber mais sobre as políticas de proteção de aplicativos e o Intune, consulte os tópicos a seguir:

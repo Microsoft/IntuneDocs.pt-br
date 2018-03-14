@@ -1,12 +1,12 @@
 ---
-title: "Remover um usuário de um dispositivo iOS com o Intune"
-titlesuffix: Azure portal
-description: "Saiba como remover um usuário de um dispositivo iOS compartilhado com o Intune.”"
+title: "Remover um usuário de um dispositivo iOS com o Microsoft Intune"
+titlesuffix: 
+description: "Saiba como remover um usuário de um dispositivo iOS compartilhado com o Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 979614aaa450493ea0b5cc2a1baaccc10a6dd028
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ce1b6b439c287b67a7c9e776edf136e78e5ecf5b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Remover um usuário de um dispositivo iOS compartilhado com o Intune
+# <a name="remove-a-user-from-a-shared-ios-device"></a>Remover um usuário de um dispositivo iOS compartilhado
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +37,8 @@ A ação **Remover Usuário** exclui um usuário escolhido do cache local em um 
 
 ## <a name="how-to-remove-a-user"></a>Como remover um usuário
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Dispositivos**.
 4. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
 5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS.
@@ -47,4 +47,4 @@ A ação **Remover Usuário** exclui um usuário escolhido do cache local em um 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para ver o status da ação que você acabou de realizar, na folha **Dispositivos e grupos**, escolha **Ações de Dispositivo**.
+Para ver o status da ação que você acabou de realizar, na folha **Dispositivos**, escolha **Ações do dispositivo**.

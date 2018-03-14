@@ -1,11 +1,12 @@
 ---
-title: Conectar-se ao Data Warehouse com o Power BI | Microsoft Docs
-description: "Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos, gerados dinamicamente para seu locatário do Intune."
+title: Conectar-se ao Data Warehouse com o Power BI
+titlesuffix: Microsoft Intune
+description: "Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos gerados dinamicamente no locatário do Microsoft Intune."
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa7c578cd8dba84910bae9b9f204c8057c76bf6b
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 1266fa4cc5ef958e369e58b0a6619e2bab3dd3eb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Conectar-se ao Data Warehouse com o Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos, gerados dinamicamente para seu locatário do Intune. O arquivo do Data Warehouse Power BI (pbix) contém as configurações de conexão para seu locatário e os seguintes exemplos de relatórios e gráficos:  
+Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos, gerados dinamicamente para seu locatário do Intune. O arquivo do Power BI (pbix) do Data Warehouse contém as configurações de conexão para seu locatário e os seguintes exemplos de relatórios e gráficos:  
 
   -  Dispositivos
   -  Registro

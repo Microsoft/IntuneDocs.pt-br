@@ -1,37 +1,37 @@
 ---
-title: "Configurações personalizadas do Intune para dispositivos Windows 10"
-titlesuffix: Azure portal
-description: "Conheça as configurações que você pode usar em um perfil personalizado do Windows 10."
+title: "Configurações personalizadas do Microsoft Intune para dispositivos que executam o Windows 10"
+titlesuffix: 
+description: "Conheça as configurações personalizadas que você pode definir em um perfil personalizado do Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/09/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7101c489c0418b98be3224888a8473a77192ce0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 156d37874529b4ae5a8176d7e9a8873cf440c32c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Configurações personalizadas do dispositivo para dispositivos Windows 10 no Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Configurações personalizadas de dispositivo do Microsoft Intune para dispositivos que executam o Windows 10 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
- Use o perfil **personalizado** do Microsoft Intune para Windows 10 e Windows 10 Mobile para implantar configurações de OMA-URI (Open Mobile Alliance Uniform Resource Identifier), que podem ser usadas para controlar recursos em dispositivos. O Windows 10 disponibiliza várias configurações de CSP, por exemplo o [CSP de Política (Provedor de Serviço de Configuração de Política)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+ Use o perfil **personalizado** do Microsoft Intune para Windows 10 e Windows 10 Mobile para implantar configurações de OMA-URI (Open Mobile Alliance Uniform Resource Identifier), que podem ser usadas para controlar recursos em dispositivos. O Windows 10 disponibiliza várias definições de CSP (Provedor de Serviço de Configuração), por exemplo o [CSP de Política (Provedor de Serviço de Configuração de Política)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Se você estiver procurando uma determinada configuração, lembre-se de que o [perfil de restrição de dispositivo do Windows 10](device-restrictions-windows-10.md) contém várias configurações que são integradas ao Intune e não exigem que você especifique valores personalizados.
 
+## <a name="configure-custom-settings"></a>Definir configurações personalizadas
+
 1. Use as instruções em [Como definir configurações personalizadas do dispositivo no Microsoft Intune](custom-settings-configure.md) para começar.
-2. Na folha **Criar Perfil**, escolha **Configurações** para adicionar uma ou mais configurações OMA-URI.
-3. Na folha **Configurações personalizadas do OMA-URI**, clique em **Adicionar** para adicionar um novo valor. Você também pode clicar em **Exportar** para criar uma lista de todos os valores configurados em um arquivo de valores separados por vírgulas (.csv).
-4. Para cada configuração de OMA-URI que você desejar adicionar, insira as informações a seguir. Use a lista neste tópico para saber mais sobre as configurações que você pode usar:
+2. Na página **Criar Perfil**, escolha **Configurações** para adicionar uma ou mais configurações OMA-URI.
+3. Na página **Configurações personalizadas de OMA-URI**, clique em **Adicionar** para adicionar um novo valor. Você também pode clicar em **Exportar** para criar uma lista de todos os valores configurados em um arquivo de valores separados por vírgulas (.csv).
+4. Para cada configuração de OMA-URI que você desejar adicionar, insira as informações a seguir. Veja a lista deste artigo para saber mais sobre as configurações que você pode usar:
     - **Nome da configuração** - insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.
     - **Descrição da configuração** - opcionalmente, insira uma descrição para a configuração.
     - **Tipo de dados** - escolha dentre:
@@ -43,8 +43,8 @@ Se você estiver procurando uma determinada configuração, lembre-se de que o [
         - **Booliano**
     - **OMA-URI (com distinção entre maiúsculas e minúsculas)** - especifique o OMA-URI para o qual você deseja fornecer uma configuração.
     - **Valor** - especifique o valor para associar ao OMA-URI que você inseriu.
-5. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
-O perfil será criado e aparecerá na folha da lista de perfis.
+5. Após terminar, volte para a página **Criar Perfil** e selecione **Criar**.
+O perfil é criado e exibido na página da lista de perfis.
 
 ## <a name="example"></a>Exemplo
 Na captura de tela abaixo, a configuração **Connectivity/AllowVPNOverCellular** foi habilitada. Isso permite que um dispositivo Windows 10 abra uma conexão VPN quando estiver em uma rede de celular.
@@ -56,8 +56,8 @@ Na captura de tela abaixo, a configuração **Connectivity/AllowVPNOverCellular*
 
 Você encontrará uma lista completa de todos os provedores de serviço de configuração (CSP) a que o Windows 10 dá suporte na [Referência do provedor do serviço de configuração](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) na biblioteca de documentação do Windows.
 
-Nem todas as configurações são compatíveis com todas as versões do Windows 10. A tabela no tópico do Windows informa quais versões têm suporte para cada CSP.
+Nem todas as configurações são compatíveis com todas as versões do Windows 10. A tabela no artigo do Windows informa quais versões são compatíveis com cada CSP.
 
-Além disso, o Intune não dá suporte a todas as configurações listadas no tópico. Para saber se o Intune oferece suporte à configuração desejada, abra o tópico para essa configuração. Cada página de configuração mostra a operação de suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar** ou **Substituir**.
+Além disso, o Intune não dá suporte a todas as configurações listadas no artigo. Para saber se o Intune é compatível com a configuração desejada, abra o artigo dessa configuração. Cada página de configuração mostra a operação de suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar** ou **Substituir**.
 
 

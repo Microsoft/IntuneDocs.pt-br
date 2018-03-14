@@ -1,7 +1,7 @@
 ---
 title: "Aplicativos iOS com políticas de proteção de aplicativo"
-titlesuffix: Azure portal
-description: "Este tópico descreve o que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo."
+titlesuffix: Microsoft Intune
+description: "Saiba o que esperar de um aplicativo iOS que tenha políticas de proteção."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,48 +15,48 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44edf1efd070c0f82c8edf3727992039e0ee4d69
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Este tópico descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. Políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho, como acessar aplicativos usando sua conta corporativa ou acessar arquivos armazenados no local de negócios do OneDrive na sua empresa.
+Saiba mais sobre a experiência do usuário para aplicativos iOS com políticas de proteção de aplicativo. As políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho. Por exemplo, quando você acessa um aplicativo com uma conta corporativa ou quando você acessa arquivos armazenados no OneDrive da sua empresa.
 ##  <a name="accessing-apps"></a>Acessando aplicativos
 
-Se o dispositivo **não estiver registrado no Intune**, o usuário final será solicitado a reiniciar o aplicativo quando usar o aplicativo pela primeira vez.  Uma reinicialização é necessária para que as políticas de proteção de aplicativo possam ser aplicadas ao aplicativo. A captura de tela a seguir ilustra isso usando o aplicativo Skype:
+Se o dispositivo **não estiver registrado no Intune**, o usuário será solicitado a reiniciar o aplicativo ao usá-lo pela primeira vez.  Uma reinicialização é necessária para que as políticas de proteção de aplicativo possam ser aplicadas ao aplicativo. A captura de tela a seguir ilustra isso usando o aplicativo Skype:
 
 
 ![captura de tela do dispositivo iOS mostrando a solicitação do PIN](./media/ios-pin-prompt.png)
 
-Para dispositivos que estão **registrados para gerenciamento no Intune**, o usuário final verá uma mensagem informando que seu aplicativo agora é gerenciado:
+Para dispositivos que estão **registrados para gerenciamento no Intune**, o usuário verá uma mensagem informando que seu aplicativo agora é gerenciado:
 
 ![captura de tela do dispositivo iOS mostrando a mensagem de que ele é gerenciado pela empresa com a solicitação do PIN](./media/ios-managed-devices-pin-prompt.png)
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Usando aplicativos com suporte a várias identidades
 
-As políticas de proteção de aplicativo são aplicadas apenas no contexto de trabalho ao usar o aplicativo, de modo que você pode ver diferentes comportamentos de aplicativo dependendo do contexto: trabalho ou pessoal.  
+As políticas de proteção de aplicativo somente entram em vigor quando um usuário tenta acessar dados relacionados ao trabalho.  Você verá comportamentos diferentes caso o usuário acesse o aplicativo para uso pessoal. 
 
-Para aplicativos que dão suporte a várias identidades, o Intune aplica as políticas de proteção de aplicativo somente quando o usuário final estiver usando o aplicativo no contexto de trabalho.  Por exemplo, o usuário final receberá um prompt para fornecer o PIN ao acessar dados de trabalho.  Para o **aplicativo Outlook**, o usuário final será solicitado a fornecer um PIN ao iniciar o aplicativo. Para o **aplicativo OneDrive**, isso acontece quando o usuário final insere a conta de trabalho.  Para o Microsoft **Word**, **PowerPoint**, e **Excel**, isso ocorre quando o usuário final acessa os documentos armazenados no local do OneDrive for Business da empresa.
+Para aplicativos compatíveis com várias identidades, o Intune aplica as políticas de proteção de aplicativo somente se o usuário acessa dados de trabalho.  Por exemplo, um usuário pode receber uma solicitação de PIN.  No **aplicativo Outlook**, a solicitação ocorre quando o usuário inicia o aplicativo. No **aplicativo OneDrive**, a solicitação ocorre quando o usuário insere a conta corporativa.  No Microsoft **Word**, **PowerPoint** e **Excel**, a solicitação ocorre quando um usuário acessa documentos no OneDrive da empresa.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gerenciando contas de usuário no dispositivo
 
 O Intune dá suporte somente a políticas de proteção de aplicativo para apenas uma conta de usuário por dispositivo.
 
 * Dependendo do aplicativo que você estiver usando, o segundo usuário poderá ou não ser bloqueado no dispositivo. No entanto, em todos os casos, somente o primeiro usuário que obtiver as políticas de proteção de aplicativo será afetado pela política.
-  * **Microsoft Word**, **Excel** e **PowerPoint** não bloqueiam uma segunda conta de usuário, porém a segunda conta de usuário não é afetada pelas políticas de proteção de aplicativo.  
+  * O **Microsoft Word**, **Excel** e **PowerPoint** não bloquearão o acesso a uma conta de usuário adicional. No entanto, a conta de usuário não será afetada pelas políticas de proteção de aplicativo.
 
-  * Para os **aplicativos OneDrive e Outlook**, só pode ser usada uma conta corporativa.  A adição de várias contas corporativas é bloqueada nesses aplicativos.  É possível remover um usuário e adicionar um usuário diferente ao dispositivo.
+  * Para os **aplicativos OneDrive e Outlook**, só pode ser usada uma conta corporativa.  A adição de várias contas corporativas é bloqueada nesses aplicativos.  No entanto, você pode remover um usuário de um dispositivo e, em seguida, adicionar um usuário diferente ao dispositivo.
 
-* Se um dispositivo existente tiver várias contas de usuário antes das políticas de proteção de aplicativo serem implantadas, a conta em que as políticas de proteção de aplicativo forem implantadas primeiro será gerenciada pelas políticas de proteção de aplicativo do Intune.
+* Um dispositivo pode ter várias contas de usuário existente antes que as políticas de proteção de aplicativo sejam implantadas. Nesse caso, a primeira conta na qual as políticas de proteção de aplicativo são implantadas será gerenciada por essas políticas de proteção de aplicativo do Intune.
 
 
-Leia o cenário de exemplo abaixo para obter uma compreensão mais profunda de como várias contas de usuário são tratadas.
+Leia o cenário de exemplo a seguir para saber como o Intune lida com várias contas de usuário.
 
-O usuário A trabalha para duas empresas - **empresa X**, e **empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de proteção de aplicativo. A **Empresa X** implanta políticas de proteção de aplicativo **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção de aplicativo, mas a conta associada à Empresa Y não a obterá. Se você quiser que a conta de usuário associada à Empresa Y seja gerenciada pelas políticas de proteção de aplicativo, será necessário remover a conta de usuário associada à Empresa X.
+O usuário A trabalha para duas empresas: **Empresa X** e **Empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de proteção de aplicativo. A **Empresa X** implanta políticas de proteção de aplicativo **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção de aplicativo, mas a conta associada à Empresa Y não. Para fazer com que a conta de usuário da Empresa Y seja gerenciada pelas políticas de proteção de aplicativo, o Usuário A deve remover a conta de usuário da Empresa X.
 ### <a name="adding-a-second-account"></a>Adicionando uma segunda conta
 
 Se estiver usando um dispositivo iOS, ao tentar adicionar uma segunda conta corporativa ao mesmo dispositivo, você poderá ver uma mensagem de bloqueio.  As contas serão exibidas e você pode escolher a conta que deseja remover.

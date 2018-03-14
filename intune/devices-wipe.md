@@ -1,6 +1,6 @@
 ---
-title: "Redefinição de fábrica ou remoção dos dados da empresa em dispositivos que usam o Intune"
-titlesuffix: Azure portal
+title: "Usar redefinição de fábrica ou remoção dos dados da empresa em dispositivos que usam o Microsoft Intune"
+titlesuffix: 
 description: "Saiba como remover os dados da empresa de um dispositivo ou redefini-lo para as configurações de fábrica."
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remova dispositivos por meio da redefinição de fábrica ou remova os dados da empresa
 
@@ -35,11 +35,11 @@ A **Redefinição de fábrica** restaura um dispositivo para suas configuraçõe
 
 ### <a name="to-factory-reset-a-device"></a>Restaurar configurações de fábrica do dispositivo
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
 4. Escolha o nome do dispositivo que você deseja redefinir para as configurações de fábrica.
-5. Na folha que mostra o nome do dispositivo, escolha **Redefinição de fábrica**
+5. Na folha que mostra o nome do dispositivo, escolha **Redefinição de fábrica**.
 6. Para o Windows 10 versão 1709 ou superior, há uma opção adicional para "Manter o estado do registro e a conta de usuário". 
     
     |Mantido por meio de uma redefinição de fábrica|Não mantido|
@@ -122,9 +122,9 @@ Executar a remoção dos dados da empresa em um dispositivo Android for Work rem
 
 ### <a name="to-remove-company-data"></a>Remover os dados da empresa
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
 4. Escolha o nome do dispositivo do qual você deseja remover os dados da empresa.
 5. Na folha que mostra o nome do dispositivo, escolha **Remover os dados da empresa** e, em seguida, escolha **Sim** para confirmar a remoção.
 
@@ -134,9 +134,9 @@ Se o dispositivo estiver ligado e conectado, um comando de remoção de dados le
 
 Por conta de problemas de comunicação ou dispositivos ausentes, pode ser necessário excluir dispositivos do Azure Active Directory (AAD). O comando de exclusão não remove um dispositivo do gerenciamento, mas é possível usar **Excluir** para remover registros de dispositivo do Portal do Azure que você sabe que estão inacessíveis e provavelmente não se comunicarão com o Azure novamente.
 
-1.  Entre no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com suas credenciais de administrador. Também é possível entrar no [portal do Office 365](https://portal.office.com) e, em seguida, escolher **Administrador** &gt; **Azure AD** usando o link no lado esquerdo da página.
+1.  Entre no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com suas credenciais de administrador. Também é possível entrar no [Portal do Office 365](https://portal.office.com) e, em seguida, escolher **Centros de administração** &gt; **Azure AD** usando o link no lado esquerdo da página.
 3.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (clique no link de assinatura **Register your free Azure Active Directory** [Registrar seu Azure Active Directory gratuito]).
-4.  Selecione **Active Directory** e selecione sua organização.
+4.  Selecione **Azure Active Directory** e, em seguida, selecione sua organização.
 5.  Selecione a guia **Usuários** .
 6.  Selecione o usuário cujos dispositivos que deseja excluir.
 7.  Escolha **Dispositivos**.

@@ -1,8 +1,8 @@
 ---
 title: Encapsular aplicativos Android com a Ferramenta de Encapsulamento do Aplicativo Intune
-description: "Use as informações neste artigo para aprender a encapsular seus aplicativos Android sem alterar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
+description: "Saiba como encapsular os aplicativos Android sem alterar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/05/2018
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 

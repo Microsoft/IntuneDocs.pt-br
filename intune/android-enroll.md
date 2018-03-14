@@ -1,6 +1,6 @@
 ---
-title: Registrar dispositivos Android no Intune | Microsoft Docs
-titlesuffix: Azure portal
+title: Registrar dispositivos Android no Intune
+titlesuffix: Microsoft Intune
 description: Saiba como registrar dispositivos Android no Intune.
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Registrar dispositivos Android
 
@@ -43,7 +43,7 @@ Para habilitar o gerenciamento de dispositivos, os usuários devem registrá-los
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>Habilite o registro de dispositivos Android for Work
 
-Para habilitar o gerenciamento do perfil de trabalho em dispositivos que dão [suporte a Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), você deverá adicionar uma associação do Android for Work no Intune. Para registrar dispositivos que dão suporte ao Android for Work registrados anteriormente como dispositivos Android regulares, é necessário cancelar os registros dos dispositivos e registrá-los novamente depois.
+Para habilitar o gerenciamento do perfil de trabalho em dispositivos que dão [suporte a Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), você deverá adicionar uma associação do Android for Work no Intune. Se você deseja registrar dispositivos no Android for Work, que já foram registrados anteriormente como dispositivos Android regulares, é necessário cancelar os registros dos dispositivos e registrá-los novamente.
 
 Se você estiver registrando dispositivos Android for Work usando uma conta do [Gerenciador de Registros do Dispositivo](device-enrollment-manager-enroll.md), haverá um limite de 10 dispositivos que podem ser registrados por conta.
 
@@ -58,7 +58,7 @@ Se você ainda não o fez, prepare-se para o gerenciamento de dispositivo móvel
     Como administrador do Intune, no Portal do Azure, escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 
    a. Na folha **Intune**, escolha **Registro de Dispositivo** > **Registro do Android for Work** e escolha **Configurar** para abrir o site do Android for Work no Google Play. O site é aberto em uma nova guia em seu navegador.
-   ![Captura de tela mostrando o link para configurar a associação do Android for Work](./media/android-work-bind.png)
+   ![Tela de registro do Android for Work](./media/android-work-bind.png)
 
    b. **Entrar no Google**<br>
    Na página de entrada do Google, entre com a conta do Google que será associada a todas as tarefas de gerenciamento do Android for Work para o locatário. Esta é a conta do Google que os administradores de TI da sua empresa compartilham para gerenciar e publicar aplicativos no console do Play for Work. Você pode usar uma conta do Google existente ou criar uma nova.  A conta escolhida não deve estar associada a um domínio G Suite.
@@ -73,13 +73,13 @@ O Android for Work é compatível em determinados dispositivos Android. Consulte
 - **Permitir**: todos os dispositivos compatíveis com Android for Work serão registrados como dispositivos Android for Work. Os dispositivos Android que não dão suporte ao Android for Work são registrados como dispositivos Android convencionais.
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Aprovar o aplicativo Portal da Empresa na Google Play Store gerenciada
-Você precisa aprovar o aplicativo de Portal da Empresa para Android na Google Play Store gerenciada garantir que ele receba atualizações automáticas do aplicativo. Se você não aprová-lo, o Portal da Empresa acabará ficando desatualizado e não poderá receber a correções de bugs importantes ou novos recursos quando lançados pela Microsoft.
+Você deve aprovar o aplicativo Portal da Empresa para o Android na Google Play Store gerenciada a fim de garantir que ele receba atualizações automáticas de aplicativo. Se você não aprová-lo, o Portal da Empresa acabará ficando desatualizado e não poderá receber a correções de bugs importantes ou novos recursos quando lançados pela Microsoft.
 
 Siga estas etapas para aprovar o Portal da Empresa do Intune:
 
 1.  Navegue para o aplicativo do Portal da Empresa na [Google Play Store gerenciada](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Entre na Google Play Store gerenciada com a mesma conta do Google que você usou para configurar a associação para o Android for Work.
-3.  Clique em **Aprovar**.  Isso abrirá uma nova caixa de diálogo.
+3.  Clique em **Aprovar** e uma nova caixa de diálogo será aberta.
 4.  Examine as permissões nessa caixa de diálogo e clique em **Aprovar**. É necessário aceitar essas permissões para que o aplicativo Portal da Empresa gerencie o perfil de trabalho no dispositivo.
 5.  Selecione **Manter aprovada quando o aplicativo solicitar novas permissões** e clique em **Salvar.**
 

@@ -1,46 +1,46 @@
 ---
-title: "Configurar políticas de atualização do iOS"
-titlesuffix: Azure portal
+title: "Configurar políticas de atualização do iOS no Microsoft Intune"
+titlesuffix: 
 description: "Configure políticas de atualização do iOS para forçar dispositivos iOS supervisionados a instalarem automaticamente a atualização de software mais recente disponível."
 keywords: 
-author: dougeby
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 08/02/2017
+ms.date: 3/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: 199760a60ee2290560ebdf933192de0eaf569e9e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 2062f9cd551ec6d7f42449041e6c8de837221631
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-ios-update-policies"></a>Configurar políticas de atualização do iOS
+# <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurar políticas de atualização do iOS no Microsoft Intune
 Políticas de atualização do iOS permitem forçar os dispositivos iOS supervisionados a instalarem automaticamente a atualização de software mais recente disponível. Existe a opção de configurar os dias e horários em que não deseja que os dispositivos instalem a atualização.
 
 ## <a name="configure-the-ios-update-policy"></a>Configurar a política de atualização do iOS
-1. Vá para a folha do Intune no portal do Azure.
-2. Na folha **Intune**, escolha **Atualizações do Software** > **Políticas de Atualização do iOS**.
-4. Na folha de políticas, escolha **criar**e, em seguida, insira um nome e uma descrição para a política.
+1. Acesse a página do Intune no Portal do Azure.
+2. Na página **Intune**, escolha **Atualizações de software** > **Políticas de Atualização do iOS**.
+4. Na página de políticas, escolha **Criar** e, em seguida, insira um nome e uma descrição para a política.
 5. Selecione **Configurações** > **Configurar** e insira os detalhes de quando os dispositivos iOS não serão forçados a instalar a atualização mais recente.
-6. Escolha **OK** para salvar esta configuração. Agora, você retornou à folha **Criar uma política de atualização**. Escolha **Criar** para criar a política e salvar suas configurações.
+6. Escolha **OK** para salvar esta configuração. Agora você retornou à página **Criar política de atualização**. Escolha **Criar** para criar a política e salvar suas configurações.
 
-O perfil é criado e exibido na folha da lista de políticas de atualização do iOS.
+O perfil é criado e exibido na página da lista de políticas de atualização do iOS.
 
 ## <a name="assign-an-ios-update-policy-to-users"></a>Atribuir uma política de atualização do iOS a usuários
-Para atribuir uma política de atualização do iOS a usuários, escolha uma política que você configurou. As políticas existentes são encontradas na folha **Atualizações de Software** > **Políticas de Atualização do iOS**.
-1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. É aberta a folha na qual você pode selecionar grupos de segurança do Azure Active Directory e atribuí-los à política.
-2. Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD. Escolha **Selecionar** para implantar a política para usuários.
+Para atribuir uma política de atualização do iOS a usuários, escolha uma política que você configurou. As políticas existentes são encontradas na página **Atualizações de software** > **Políticas de Atualização do iOS**.
+1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. É aberta a página na qual você pode selecionar grupos de segurança do Azure Active Directory e atribuí-los à política.
+2. Escolha **Selecionar grupos** para abrir a página que exibe os grupos de segurança do Azure AD. Escolha **Selecionar** para implantar a política para usuários.
 
 Você aplicou a política para os usuários. Os dispositivos usados pelos usuários que são afetados pela política são avaliados quanto à conformidade de atualizações.
 
 ## <a name="change-the-restricted-days-for-the-policy"></a>Alterar os dias restritos da política
-1. Na folha **Atualizações do Software**, escolha **Políticas de Atualização do iOS**.
+1. Na página **Atualizações do software**, escolha **Políticas de Atualização do iOS**.
 2. Selecione a política de atualização do iOS que deseja atualizar.
 3. Selecione **Propriedades** e atualize as informações de dias restritos.
 
 ## <a name="monitor-ios-devices-with-older-ios-versions"></a>Monitorar dispositivos iOS com versões anteriores do iOS 
 <!-- 1352223 -->
-O relatório **Dispositivos iOS desatualizados** está disponível na folha **Atualizações de software** > **Políticas de Atualização do iOS**. No relatório, você pode exibir uma lista de dispositivos iOS supervisionados que foram afetados por uma política de atualização do iOS e não puderam ser atualizados. Para cada dispositivo, você pode exibir um status de por que o dispositivo não foi atualizado automaticamente.
+O relatório **Dispositivos iOS desatualizados** está disponível na página **Atualizações de software** > **Políticas de Atualização do iOS**. No relatório, você pode exibir uma lista de dispositivos iOS supervisionados que foram afetados por uma política de atualização do iOS e não puderam ser atualizados. Para cada dispositivo, você pode exibir um status de por que o dispositivo não foi atualizado automaticamente.

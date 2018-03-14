@@ -1,7 +1,7 @@
 ---
 title: "Como monitorar as políticas de proteção de aplicativo"
-titleSuffix: Azure portal
-description: "Veja quantos usuários têm a política e faça uma busca detalhada para encontrar mais detalhes."
+titleSuffix: Microsoft Intune
+description: "Monitore o status de conformidade das políticas de gerenciamento de aplicativo móvel no Intune."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Se você não estiver no Portal do Azure**, este tópico explicará [como criar políticas de proteção de aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) no Portal Clássico do Intune.
 
 
-É possível monitorar o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários na folha de proteção do aplicativo do Intune no [Portal do Azure](https://portal.azure.com). Você poderá encontrar informações sobre os usuários afetados pelas políticas de MAM, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.
+Monitore o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários no painel de proteção de aplicativo do Intune no [Portal do Azure](https://portal.azure.com). Encontre informações sobre os usuários afetados pelas políticas de MAM, os status de conformidade e quaisquer problemas que os eles possam encontrar.
 
 Há três locais diferentes para monitorar o status de conformidade:
 
@@ -39,12 +39,12 @@ Há três locais diferentes para monitorar o status de conformidade:
 
 ## <a name="summary-view"></a>Exibição de Resumo
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Aplicativos móveis**.
-4. Na carga de trabalho **Aplicativos móveis**, escolha **Monitorar** > **Status do usuário da proteção de aplicativo**, para ver a exibição de resumo:
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Aplicativos móveis**.
+4. Na carga de trabalho **Aplicativos móveis**, escolha **Monitorar** > **Status da proteção do aplicativo**, para ver a exibição resumida:
 
-![Bloco de Resumo da folha de gerenciamento de aplicativos móveis do Intune](./media/app-protection-user-status-summary.png)
+![Bloco de Resumo do painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-user-status-summary.png)
 
 -   **Usuários**: o número total de usuários da sua empresa que usam um aplicativo associado à política em um contexto de trabalho.
 
@@ -52,7 +52,7 @@ Há três locais diferentes para monitorar o status de conformidade:
 
 -   **Nenhuma política**: o número de usuários que estão usando um aplicativo que não é afetado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
     > [!NOTE]
-    > Se você tiver várias políticas por plataforma, um usuário será considerado gerenciado por política quando ele tiver pelo menos uma política atribuída a ele.
+    > Se você tem várias políticas por plataforma, um usuário é considerado gerenciado por política quando tem pelo menos uma política atribuída a ele.
 
 - **Usuários sinalizados**: o número de usuários que estão tendo problemas. Atualmente, apenas usuários com dispositivos com jailbreak são relatados em **Usuários sinalizados**.
 
@@ -61,7 +61,7 @@ Há três locais diferentes para monitorar o status de conformidade:
 Você pode obter a exibição detalhada do resumo escolhendo os blocos **Status do usuário** (com base na plataforma do sistema operacional) e **Usuários sinalizados**.
 
 ### <a name="user-status"></a>Status do usuário
-Você pode pesquisar por um único usuário e verificar o status de conformidade dele. A folha **Relatório de aplicativo** exibe as seguintes informações para um usuário selecionado:
+Você pode pesquisar por um único usuário e verificar o status de conformidade dele. O painel **Relatório de aplicativo** mostra as seguintes informações de um usuário selecionado:
 - Dispositivos que estão associados à conta de usuário
 
 - Aplicativos com política de MAM no dispositivo
@@ -73,19 +73,19 @@ Você pode pesquisar por um único usuário e verificar o status de conformidade
   - **Check-in não realizado**: a política foi implantada para o usuário, mas o aplicativo ainda não foi usado no contexto de trabalho.
 
 >[!NOTE]
-> Se os usuários pesquisados não tiverem a política de MAM implantada neles, você verá uma mensagem informando que o usuário não é alvo de nenhuma política de MAM.
+> Se os usuários pesquisados não tiverem a política de MAM implantada, você verá uma mensagem informando que o usuário não é direcionado por nenhuma política de MAM.
 
 Para ver o relatório para um usuário, siga estas etapas:
 
 1.  Para selecionar um usuário, escolha o bloco **Resumo**.
 
-    ![Captura de tela 3](./media/MAM-reporting-6.png)
+    ![Captura de tela realçando o bloco Resumo na folha de Configurações do gerenciamento de aplicativos móveis do Intune](./media/MAM-reporting-6.png)
 
-2. Na folha **Relatório de aplicativo** que é aberta, escolha **Selecionar usuário** para pesquisar por um usuário do Azure Active Directory.
+2. No painel **Relatório de aplicativo** que é aberto, escolha **Selecionar usuário** para pesquisar um usuário do Azure Active Directory.
 
-    ![Selecione a opção de usuário na folha Relatório de aplicativo](./media/MAM-reporting-2.png)
+    ![Captura de tela realçando a opção Selecionar usuário no painel Relatório de aplicativo](./media/MAM-reporting-2.png)
 
-3. Selecione um usuário da lista. Você verá os detalhes do status de conformidade para esse usuário.
+3. Selecione um usuário da lista. Você pode ver os detalhes do status de conformidade desse usuário.
 
 ### <a name="flagged-users"></a>Usuários sinalizados
 A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora.
@@ -94,7 +94,7 @@ A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado 
 
 Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios adicionais para ajudá-lo com o status de conformidade de política de MAM:
 
-![Captura de tela 4](./media/MAM-reporting-7.png)
+![Captura de tela realçando dois relatórios disponíveis no painel Configurações](./media/MAM-reporting-7.png)
 
 -   **App protection user report (Relatório de usuário da proteção do aplicativo):** descreve as mesmas informações que podem ser encontradas no relatório **Status do usuário** na exibição detalhada acima.
 
@@ -110,7 +110,7 @@ Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios
 
         -   Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de MAM.
 
-![Captura de tela 2](./media/MAM-reporting-4.png)
+![Captura de tela mostrando uma folha Relatório de aplicativo de um usuário, com uma tabela de detalhes de três aplicativos registrados](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupamento de tabela
 
@@ -125,13 +125,13 @@ Você pode exportar todas as atividades de política de proteção de aplicativo
 
 Siga estas etapas para gerar o relatório de proteção do aplicativo:
 
-1. Na folha Gerenciamento de aplicativo móvel do Intune, escolha Relatório de proteção de aplicativo.
+1. No painel Gerenciamento de aplicativo móvel do Intune, escolha **Relatório de proteção de aplicativo**.
 
-    ![Captura de tela-6](./media/app-protection-report-csv-2.png)
+    ![Captura de tela realçando o link de download da Proteção de aplicativo no painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-report-csv-2.png)
 
 2. Escolha Sim para salvar o relatório, escolha Salvar como e selecione a pasta na qual você deseja salvar o relatório.
 
-    ![Captura de tela-7](./media/app-protection-report-csv-1.png)
+    ![Captura de tela da caixa de confirmação Salvar relatório](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Consulte também
 [Gerenciar a transferência de dados entre aplicativos iOS](data-transfer-between-apps-manage-ios.md)

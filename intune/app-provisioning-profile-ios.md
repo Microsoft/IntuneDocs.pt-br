@@ -1,12 +1,12 @@
 ---
-title: Perfis de provisionamento de aplicativo
-titlesuffix: Azure portal
+title: Perfis de provisionamento de aplicativo iOS no Microsoft Intune
+titlesuffix: 
 description: "O Intune fornece as ferramentas para atribuir de forma proativa um novo perfil de provisionamento a dispositivos que têm aplicativos que estão se aproximando da expiração."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usar os perfis de provisionamento móvel do iOS para impedir que os aplicativos expirem
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Usar perfis de provisionamento móvel do iOS no Intune para impedir que os aplicativos expirem
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/30/2018
 
 Os aplicativos de linha de negócios do iOS da Apple atribuídos a iPhones e iPads são criados com um perfil de provisionamento incluído e código assinado com um certificado. Quando o aplicativo é executado, o iOS confirma a integridade do aplicativo iOS e impõe políticas definidas pelo perfil de provisionamento. As validações a seguir ocorrem:
 
-- **Integridade do arquivo de instalação** – o iOS compara os detalhes de aplicativos com a chave pública do certificado de assinatura de empresa. Se eles forem diferentes, o conteúdo dos aplicativos poderá ter sido alterado e ele não poderá ser executado.
+- **Integridade do arquivo de instalação** – o iOS compara os detalhes de aplicativos com a chave pública do certificado de assinatura de empresa. Se eles forem diferentes, o conteúdo dos aplicativos poderá ter sido alterado e ele não terá permissão para se executado.
 - **Imposição de funcionalidades** – o iOS tenta aplicar as funcionalidades do aplicativo do perfil de provisionamento corporativo (não perfis de provisionamento de desenvolvedor individuais) contidas no arquivo de instalação (.ipa) do aplicativo.
 
 
@@ -39,12 +39,12 @@ Depois que o certificado expirar, você deverá assinar o aplicativo novamente c
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Como criar um perfil de provisionamento de aplicativo móvel iOS
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Aplicativos móveis**.
-1.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Perfis de provisionamento iOS**.
-2.  Na folha da lista de perfis, escolha **Criar Perfil**.
-3. Na folha **Criar perfil**, configure os valores a seguir:
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Aplicativos móveis**.
+1.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Perfis de provisionamento de aplicativo iOS**.
+2.  No painel da lista de perfis, escolha **Criar perfil**.
+3. No painel **Criar perfil**, configure os valores a seguir:
     - **Nome** – forneça um nome para essa política de perfil de provisionamento móvel.
     - **Descrição** – de maneira opcional, forneça uma descrição para a política.
     - **Carregar arquivo de perfil** – escolha **Importar** e escolha um arquivo de Perfil de Configuração Móvel da Apple (com a extensão **.mobileprovision**) que você baixou do site do Desenvolvedor da Apple.

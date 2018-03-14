@@ -1,12 +1,12 @@
 ---
-title: "O que é o gerenciamento de aplicativo"
-titlesuffix: Azure portal
-description: "Use este tópico para conhecer os conceitos básicos sobre o gerenciamento de aplicativos com o Microsoft Intune"
+title: "O que é gerenciamento de aplicativo no Microsoft Intune"
+titlesuffix: 
+description: "Conheça os fundamentos do gerenciamento de aplicativos com o Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Como administrador de TI, você é responsável por garantir que os usuários finais têm acesso aos aplicativos de que precisam para realizar seu trabalho. Isso pode ser um desafio porque:
+Microsoft Intune permite que você, administrador de TI, gerencie os aplicativos móveis que os colaboradores da sua empresa usam. Essa funcionalidade está além do gerenciamento de dispositivos e proteção de dados. Como parte dessa funcionalidade, uma das prioridades é certificar-se de que os usuários finais tenham acesso aos aplicativos que precisam para realizar o trabalho. Isso pode ser um desafio porque:
 - Há uma ampla variedade de plataformas de dispositivo e tipos de aplicativos.
 - Talvez você precise gerenciar aplicativos nos dispositivos da empresa e nos dispositivos dos próprios usuários.
 - É necessário garantir que a rede e os dados permaneçam seguros.
 
 Além disso, pode ser útil atribuir e gerenciar aplicativos em dispositivos que não estão registrados com o Intune.
 
-O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja.
+O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja. A tabela a seguir fornece um resumo dos recursos de gerenciamento de aplicativo. A tabela abaixo é um ponto de partida para entender o Microsoft Intune no Portal do Azure. 
 
 ## <a name="app-management-capabilities-by-platform"></a>Recursos de gerenciamento de aplicativo por plataforma
 
@@ -64,8 +64,8 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 
 Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho **Aplicativos Móveis**, que pode ser acessada da seguinte maneira:
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Aplicativos móveis**.
 
     ![A carga de trabalho de Aplicativos Móveis](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Para obter mais detalhes, consulte [Monitorar aplicativos](apps-monitor.md).
 ### <a name="help-and-support"></a>Ajuda e Suporte
 - **Ajuda e suporte** – solucione problemas, solicite suporte ou exiba o status do Intune.
     - [Solucionar problemas](help-desk-operators.md)
+    
+## <a name="next-steps"></a>Próximas etapas
+
+- [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md)

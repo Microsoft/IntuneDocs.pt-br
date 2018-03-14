@@ -1,30 +1,34 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para Android for Work"
-titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos Android for Work."
+title: "Configurações de restrição de dispositivo do Microsoft Intune para Android for Work"
+titlesuffix: 
+description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades em dispositivos que executam o Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Android for Work no Microsoft Intune
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Configurações de restrição de dispositivo Android for Work do Microsoft Intune
+
+Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Configurações de perfil de trabalho
+
+### <a name="general-settings"></a>Configurações Gerais
+
 -   **Copiar e colar entre os perfis de trabalho e pessoal** – controla as ações de copiar e colar entre aplicativos pessoais e de trabalho. Escolha **Bloquear** para habilitar o bloqueio. Escolha **Não configurado** para desabilitar o bloqueio.
 - **Compartilhamento de dados entre perfis de trabalho e pessoais** – use essa configuração para controlar se os aplicativos no perfil de trabalho podem ser compartilhados com aplicativos no perfil pessoal. Essa configuração controla as ações de compartilhamento em aplicativos (por exemplo, a opção **Compartilhar...** no aplicativo de navegador Chrome) e não se aplica ao comportamento da área de transferência copiar/colar. Ao contrário das [configurações de política de proteção do aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as configurações de restrição de dispositivo são gerenciadas no portal do Intune e usam a partição de perfil de trabalho do Android for Work para isolar os aplicativos gerenciados. Escolha:
     - **Restrições de compartilhamento padrão** – essa configuração é o comportamento de compartilhamento padrão do dispositivo que varia dependendo da versão do Android em execução. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. O Google não oferece uma maneira de bloquear o compartilhamento do perfil pessoal com o perfil de trabalho em dispositivos que executam versões 6.0 e posterior.   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **Negação automática**
 
     O estado de concessão das permissões pode ser definido de forma mais detalhada para aplicativos específicos, com a definição de uma política de Configuração de Aplicativo para um aplicativo individual (em **Aplicativos Móveis** > **Políticas de configuração de aplicativo**).
+
+- **Adicionar e remover contas**
+
+   Impede que os usuários finais adicionem ou removam contas no perfil de trabalho.
+
+   Por exemplo, quando você implanta o aplicativo Gmail em um perfil do Android for Work, é possível impedir que usuários finais adicionem ou removam contas neste perfil de trabalho.
 
 ### <a name="work-profile-password"></a>Senha do perfil de trabalho
 - **Exigir Senha de Perfil de Trabalho** – (Android 7.0 e posterior com o perfil de trabalho habilitado) Defina uma política de senha que se aplica apenas aos aplicativos no perfil de trabalho. Por padrão, o usuário final tem a opção de usar os dois PINs definidos separadamente ou optar por combiná-los no mais forte dos dois.
@@ -83,8 +93,8 @@ ms.lasthandoff: 01/25/2018
  - **Verificação de ameaças em aplicativos**: garanta que a configuração **Verificar Aplicativos** esteja habilitada para perfis pessoais e corporativos.
 
    > [!Note]  
-   > Essa configuração só funcionará para dispositivos Android O e superior. 
+   > Essa configuração só funciona para dispositivos Android O e superior. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Use as informações no tópico [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.
+Use as informações em [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.

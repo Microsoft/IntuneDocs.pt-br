@@ -1,12 +1,12 @@
 ---
-title: Escolha como registrar dispositivos Windows no Intune
-titlesuffix: Azure portal
-description: Saiba como configurar o registro de dispositivos Windows no Microsoft Intune."
+title: Escolha como registrar dispositivos iOS no Intune
+titlesuffix: Microsoft Intune
+description: Configurar o registro de dispositivos iOS no Microsoft Intune.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f36e579282f7aeaec74c3e80d866e52dfa508d3d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e79122c1bea970525faaf443f9bf4271d050abe2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrar dispositivos iOS no Intune
 
@@ -34,7 +34,7 @@ Antes de habilitar dispositivos iOS, conclua as seguintes etapas:
 
 ## <a name="user-owned-ios-devices-byod"></a>BYOD (Dispositivos iOS de propriedade do usuário)
 
-É possível permitir que os usuários registrem seus dispositivos pessoais para o gerenciamento do Intune, conhecidos como "traga seu próprio dispositivo" ou BYOD. Depois de concluir os pré-requisitos e receber licenças de usuários, eles poderão baixar o aplicativo Portal da Empresa do iOS na App Store e seguir as instruções de registro no aplicativo.
+É possível permitir que os usuários registrem seus dispositivos pessoais para o gerenciamento do Intune, conhecidos como "traga seu próprio dispositivo" ou BYOD. Depois de concluir os pré-requisitos e atribuir licenças de usuários, eles poderão baixar o aplicativo Portal da Empresa do Intune na App Store e seguir as instruções de registro no aplicativo.
 
 ## <a name="company-owned-ios-devices"></a>Dispositivos iOS de propriedade da empresa
 Para organizações que adquirem dispositivos para seus usuários, o Intune dá suporte aos seguintes métodos de registro de dispositivos iOS de propriedade da empresa:

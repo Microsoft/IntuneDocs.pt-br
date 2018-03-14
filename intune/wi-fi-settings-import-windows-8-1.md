@@ -1,25 +1,25 @@
 ---
 title: "Importar configurações de Wi-Fi para Windows 8.1 e posterior"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "Como importar configurações de Wi-Fi do Windows para um perfil de Wi-Fi do Intune."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0113703cbdc58172edc9552146c7634aa1058e3b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Como importar configurações de Wi-Fi para dispositivos Windows 8.1 e posteriores no Microsoft Intune
+# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Importar configurações de Wi-Fi para dispositivos Windows 8.1 e posteriores no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,20 +37,20 @@ No Windows, você pode usar o utilitário **netsh wlan** para exportar um perfil
 
 1. Entre no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
-3. Na folha de perfis, clique em **Criar Perfil**.
-4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de restrição do dispositivo.
+3. Na página **Intune**, escolha **Configuração do dispositivo**.
+2. Na página **Configuração do dispositivo**, escolha **Gerenciar** > **Perfis**.
+3. Na página de perfis, clique em **Criar Perfil**.
+4. Na página **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de restrição do dispositivo.
 
    > [!WARNING]
    > O nome **deve** ser o mesmo que o atributo name no XML do perfil de Wi-Fi, caso contrário ocorrerá falha.
 
 5. Na lista suspensa **Plataforma**, escolha **Windows 8.1 e posterior**.
 6. Na lista suspensa de tipos de **Perfil**, escolha **Importar Wi-Fi**.
-7. Na folha **Wi-Fi Básico**, defina as seguintes configurações:
+7. Na página **Wi-Fi Básico**, defina as seguintes configurações:
     - **Nome da Conexão** insira o nome da conexão de Wi-Fi. Esse nome é exibido aos usuários finais ao procurarem por redes Wi-Fi disponíveis.
     - **Perfil XML** Clique no botão Procurar para selecionar o arquivo XML que contém as configurações de perfil de Wi-Fi que você deseja importar para o Intune.
     - **Conteúdo do arquivo** Exibe o código XML para o perfil de configuração selecionado.
-8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
+8. Após terminar, volte para a página **Criar Perfil** e selecione **Criar**.
 
-O perfil é criado e exibido na folha da lista de perfis.
+O perfil é criado e exibido na página da lista de perfis.

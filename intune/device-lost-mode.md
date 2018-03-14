@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>Ativar modo perdido em dispositivos iOS
 
@@ -37,11 +37,11 @@ A ação de dispositivo **Modo perdido** ajuda você a habilitar o modo perdido 
 
 ## <a name="how-to-activate-lost-mode"></a>Como ativar o modo perdido
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Dispositivos**.
-4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
-5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS e, em seguida, escolha a ação remota **Modo perdido**.
+4. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
+5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS, escolha **...Mais** e, em seguida, escolha a ação remota **Modo perdido**.
 6. Na folha **Modo perdido**, habilite o modo perdido. Em seguida, insira a mensagem a ser exibida e, como alternativa, um número de telefone de contato.
 7. Clique em **OK**.
 
@@ -57,5 +57,5 @@ Para utilizar o modo perdido, é necessário um dispositivo iOS corporativo no m
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para ver o status da ação que você acabou de realizar, na folha **Dispositivos e grupos**, escolha **Ações de Dispositivo**.
+Para ver o status da ação que você acabou de realizar, na folha **Dispositivos**, escolha **Ações do dispositivo**.
 
