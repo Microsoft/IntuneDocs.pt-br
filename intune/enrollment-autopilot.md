@@ -1,6 +1,7 @@
 ---
-title: Registrar dispositivos Windows usando o programa Windows AutoPilot Deployment
-description: Saiba como registrar novos dispositivos Windows 10 usando o programa Windows AutoPilot Deployment.
+title: Registrar dispositivos usando o programa Windows AutoPilot Deployment
+titleSuffix: Microsoft Intune
+description: Saiba como registrar dispositivos Windows 10 usando o programa Windows AutoPilot Deployment.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: d1276818b6c35602f768a7c10074aa6388b01547
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: dfdc712f3cf1b9ce928574ee9e9078c80bd696bb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrar dispositivos Windows usando o programa Windows AutoPilot Deployment
+# <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Registrar dispositivos Windows com o uso do programa Windows AutoPilot Deployment
 O programa Windows AutoPilot Deployment simplifica o provisionamento de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o AutoPilot, você pode dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Ao usar o Intune para gerenciar dispositivos do AutoPilot, você pode gerenciar políticas, perfis, aplicativos e etc., nos dispositivos depois que eles são registrados. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Visão geral do Windows AutoPilot).
 
 ## <a name="prerequisites"></a>Pré-requisitos
