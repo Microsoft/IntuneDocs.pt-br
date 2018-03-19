@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo Android
 Este tópico descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -73,7 +73,7 @@ Há duas categorias de configurações de política: configurações de realoca�
   | com.android.providers.media | Provedor de conteúdo de mídia do Android | O provedor de conteúdo de mídia é permitido somente para a ação de seleção de toque. |
   | com.google.android.gms; com.google.android.gsf | Pacotes do Google Play Services | Esses pacotes são permitidos para ações do Google Cloud Messaging, como notificações por push. |
 
-Para obter mais informações, consulte [Exceções à política transferência de dados para aplicativos](app-protection-policies-exception.md). 
+Para obter mais informações, consulte [Exceções à política transferência de dados para aplicativos](app-protection-policies-exception.md).
 
 ##  <a name="access-settings"></a>Configurações de acesso
 
@@ -88,7 +88,10 @@ Para obter mais informações, consulte [Exceções à política transferência 
 | **Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado** | Escolha **Sim** para desabilitar o PIN do aplicativo quando um bloqueio de dispositivo for detectado em um dispositivo registrado. | Não |
 | **Exigir sistema operacional mínimo do Android** | Escolha **Sim** para exigir um sistema operacional Android mínimo para usar este aplicativo. O usuário não poderá acessar se a versão do Android no dispositivo não atender ao requisito.<br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision.| Não |
 | **Exigir sistema operacional mínimo do Android (somente Aviso)** | Escolha **Sim** para exigir um sistema operacional Android mínimo para usar este aplicativo. O usuário verá uma notificação se a versão do Android no dispositivo não atender ao requisito. Essa notificação pode ser descartada.<br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision. | Não |
-| **Exigir versão mínima do aplicativo** | Escolha **Sim** para exigir uma versão mínima do aplicativo para poder usá-lo. O usuário não poderá acessar se a versão do aplicativo no dispositivo não atender ao requisito.<br><br>Como os aplicativos geralmente têm esquemas de controle de versão diferentes entre si, crie uma política com uma versão mínima de aplicativo que direciona um aplicativo (por exemplo, “política de versão do Outlook”). <br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision.| Não | 
-| **Exigir versão mínima do aplicativo (somente Aviso)** | Escolha **Sim** para recomendar uma versão mínima de aplicativo para usar esse aplicativo. O usuário verá uma notificação se a versão do aplicativo no dispositivo não atender ao requisito. Essa notificação pode ser descartada.<br><br>Como os aplicativos geralmente têm esquemas de controle de versão diferentes entre si, crie uma política com uma versão mínima de aplicativo que direciona um aplicativo (por exemplo, “política de versão do Outlook”). <br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision.| Não | 
+| **Exigir versão mínima do aplicativo** | Escolha **Sim** para exigir uma versão mínima do aplicativo para poder usá-lo. O usuário não poderá acessar se a versão do aplicativo no dispositivo não atender ao requisito.<br><br>Como os aplicativos geralmente têm esquemas de controle de versão diferentes entre si, crie uma política com uma versão mínima de aplicativo que direciona um aplicativo (por exemplo, “política de versão do Outlook”). <br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision.| Não |
+| **Exigir versão mínima do aplicativo (somente Aviso)** | Escolha **Sim** para recomendar uma versão mínima de aplicativo para usar esse aplicativo. O usuário verá uma notificação se a versão do aplicativo no dispositivo não atender ao requisito. Essa notificação pode ser descartada.<br><br>Como os aplicativos geralmente têm esquemas de controle de versão diferentes entre si, crie uma política com uma versão mínima de aplicativo que direciona um aplicativo (por exemplo, “política de versão do Outlook”). <br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision.| Não |
 | **Exigir versão de patch mínimo do Android** | Escolha **Sim** para exigir um patch mínimo de segurança do Android lançado pelo Google. O usuário não poderá acessar se o patch de segurança do Android no dispositivo não atender ao requisito.<br><br> Esse formato de configuração de política dá suporte ao formato de data de AAAA-MM-DD. | Não |
 | **Exigir versão de patch mínimo de Android (Somente aviso)** | Escolha **Sim** para exigir um patch mínimo de segurança do Android lançado pelo Google. O usuário verá uma notificação se o patch de segurança do Android no dispositivo não atender ao requisito. Essa notificação pode ser descartada.<br><br> Esse formato de configuração de política dá suporte ao formato de data de AAAA-MM-DD. | Não |
+
+> [!NOTE]
+> Para saber mais sobre como diversas configurações de proteção de aplicativo do Intune configuradas na seção Acesso para o mesmo conjunto de usuários e aplicativos funcionam no Android, confira [Perguntas frequentes sobre o MAM e a proteção do aplicativo](mam-faq.md).

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d07b025881ea78299d617205ce5ba39bb92a1231
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>Categorizar os dispositivos em grupos para um gerenciamento mais fácil
 
@@ -41,12 +41,11 @@ Você pode criar as categorias de dispositivo que desejar, por exemplo:
 ## <a name="how-to-configure-device-categories"></a>Como definir categorias de dispositivo
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Etapa 1 – Criar categorias de dispositivo na folha do Intune no Portal do Azure
-1. No [Portal do Azure](https://portal.azure.com), escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Na folha **Intune**, escolha **Registro de dispositivo**.
-3. Na folha **Registro de dispositivo**, escolha **Categorias de dispositivo**.
-4. Na página **Categorias de dispositivo**, escolha **Criar** para adicionar uma nova categoria.
-5. Na folha **Criar categoria de dispositivo**, insira um **Nome** para a nova categoria e uma **Descrição** opcional.
-6. Quando terminar, clique em **Criar**. Você pode ver a nova categoria na lista de categorias.
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo**.
+2. Na folha **Registro de dispositivo**, escolha **Categorias de dispositivo**.
+3. Na página **Categorias de dispositivo**, escolha **Criar** para adicionar uma nova categoria.
+4. Na folha **Criar categoria de dispositivo**, insira um **Nome** para a nova categoria e uma **Descrição** opcional.
+5. Quando terminar, clique em **Criar**. Você pode ver a nova categoria na lista de categorias.
 
 Você usará o nome da categoria do dispositivo quando criar grupos de segurança do Azure Active Directory na etapa 2.
 
@@ -61,23 +60,20 @@ Após configurar os grupos de dispositivos e quando os usuários registrarem seu
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Como exibir as categorias dos dispositivos que você gerencia
 
-1.  No [Portal do Azure](https://portal.azure.com), escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+1.  No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos**.
 
-2. Na folha do Intune do Portal do Azure, escolha **Dispositivos**.
+2.  Em **Gerenciar**, clique em **Todos os dispositivos**.
 
-3.  Em **Gerenciar**, clique em **Todos os dispositivos**.
-
-4.  Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
+3.  Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
 
 Se a coluna **Categoria de dispositivo** não for exibida, clique em **Colunas**, escolha **Categoria de dispositivo** na lista e, em seguida, clique em **Aplicar**.
 
 ### <a name="to-change-the-category-of-a-device"></a>Para alterar a categoria de um dispositivo
 
-1. No [Portal do Azure](https://portal.azure.com), escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Na folha **Intune**, escolha **Dispositivos**.
-4. Na folha **Dispositivos**, na seção **Gerenciar**, escolha **Todos os dispositivos**.
-5. Na lista de dispositivos, selecione o dispositivo desejado e, em seguida, na folha de propriedades do dispositivo, na seção **Gerenciar**, escolha **Propriedades**.
-6. Na próxima folha, você pode alterar a **Categoria de dispositivo** do dispositivo selecionado para qualquer um dos nomes das categorias que você configurou anteriormente.
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos**.
+2. Na folha **Dispositivos**, na seção **Gerenciar**, escolha **Todos os dispositivos**.
+3. Na lista de dispositivos, selecione o dispositivo desejado e, em seguida, na folha de propriedades do dispositivo, na seção **Gerenciar**, escolha **Propriedades**.
+4. Na próxima folha, você pode alterar a **Categoria de dispositivo** do dispositivo selecionado para qualquer um dos nomes das categorias que você configurou anteriormente.
 
 ## <a name="after-you-configure-device-groups"></a>Depois de configurar os grupos de dispositivos
 

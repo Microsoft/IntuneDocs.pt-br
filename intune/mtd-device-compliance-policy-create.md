@@ -1,12 +1,12 @@
 ---
-title: "Criar uma política de conformidade de dispositivo de Defesa contra Ameaças Móveis com o Intune"
-titlesuffix: Azure portal
-description: "Criar uma política de conformidade de dispositivo de Defesa contra Ameaças Móveis no Intune"
+title: "Criar política de conformidade de dispositivo de MTD com o Microsoft Intune"
+titlesuffix: 
+description: "Crie uma política de conformidade de dispositivo do Intune que usa os níveis de ameaça do parceiro de MTD para determinar se um dispositivo móvel pode acessar recursos da empresa."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar uma política de conformidade de dispositivo de MTD (Defesa contra Ameaças Móveis) com o Intune
 
@@ -40,7 +40,7 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 
 1.  Vá para o [Portal do Azure](https://portal.azure.com/) e entre com suas credenciais do Intune.
 
-2.  No **Painel do Azure**, escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+2.  No **Painel do Azure**, escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
 3.  Escolha **Intune** e o **Painel do Intune** se abrirá.
 
@@ -48,9 +48,9 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 
 5.  Escolha **Criar política**, insira o **Nome** e a **Descrição** da conformidade do dispositivo, selecione a **Plataforma**, escolha **Configurar** na seção **Configurações**.
 
-6.  Na folha **política de conformidade**, escolha **Integridade do Dispositivo**.
+6.  No painel **política de conformidade**, escolha **Integridade do Dispositivo**.
 
-7.  Na folha **Integridade do Dispositivo**, escolha o Nível de Ameaça Móvel na lista suspensa abaixo de **Exigir que o dispositivo esteja no Nível de Defesa contra Ameaças Móveis ou abaixo dele**.
+7.  No painel **Integridade do Dispositivo**, escolha o Nível de Ameaça Móvel na lista suspensa abaixo de **Exigir que o dispositivo esteja no Nível de Ameaças do Dispositivo ou abaixo**.
 
     a.  **Protegido**: este é o nível mais seguro. O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível.
 
@@ -67,11 +67,11 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Atribuir uma política de conformidade de dispositivo MTD
 
-Para atribuir uma política de conformidade de dispositivo aos usuários, escolha uma política previamente configurada por você. As políticas existentes podem ser encontradas na folha **Políticas de conformidade de dispositivo**.
+Para atribuir uma política de conformidade de dispositivo aos usuários, escolha uma política previamente configurada por você. As políticas existentes podem ser encontradas no painel **Conformidade do dispositivo – políticas**.
 
-1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. Essa ação abre a folha na qual é possível selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. Essa ação abre o painel para selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
 
-2. Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD.  Escolher **Selecionar** implanta a política para os usuários.
+2. Escolha **Selecionar grupos a serem incluídos** para abrir o painel que exibe os grupos de segurança do Azure AD.  Escolher **Selecionar** implanta a política para os usuários.
 
     > [!NOTE] 
     > Você aplicou a política para os usuários. Os dispositivos usados pelos usuários que são direcionados pela política são avaliados quanto à conformidade.

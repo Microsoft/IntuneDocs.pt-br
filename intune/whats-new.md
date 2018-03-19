@@ -1,6 +1,6 @@
 ---
 title: Novidades do Microsoft Intune
-titlesuffix: Azure portal
+titlesuffix: 
 description: "Conheça as novidades do portal do Intune no Azure"
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 513164a1f734fddb6ac66fcaffdc2fb885a4659a
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -762,11 +762,8 @@ O Intune terminará o suporte para o [Plug-in do Cordova do SDK de Aplicativo do
 Para obter mais informações sobre a Ferramenta de Disposição do Aplicativo, consulte [Ferramenta de Disposição do Aplicativo para iOS](app-wrapper-prepare-ios.md) e [Ferramenta de Disposição do Aplicativo para Android](app-wrapper-prepare-android.md). Em caso de problemas ou de dúvidas, contate [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com). 
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Planeje a mudança: use o Intune no Azure agora para o gerenciamento MDM<!-- 1227338 -->
-Há mais de um ano, foi anunciada [a visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, após seis meses, a [Disponibilidade geral da nova experiência de administração](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. No dia 2 de abril de 2018, o MDM (gerenciamento de dispositivos móveis) será desativado no console do Silverlight clássico para os clientes que usam o Intune autônomo. Nesse caso, você poderá usar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para atender às suas necessidades de MDM. Se você ainda estiver usando o console clássico do MDM, deixe de usá-lo e familiarize-se com o Intune no Azure. Não esperamos que haja nenhum impacto para o usuário final com essa alteração. O gerenciamento de computador clássico permanecerá no Silverlight. Saiba mais sobre essa alteração e como ela o afetará clicando [aqui](https://aka.ms/Intune_on_Azure_mdm).
+Há mais de um ano, foi anunciada [a visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, após seis meses, a [Disponibilidade geral da nova experiência de administração](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. No dia 31 de agosto de 2018, o MDM (gerenciamento de dispositivo móvel) será desabilitado no console do Silverlight clássico para os clientes que usam o Intune autônomo. Nesse caso, você poderá usar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para atender às suas necessidades de MDM. Se você ainda estiver usando o console clássico do MDM, deixe de usá-lo e familiarize-se com o Intune no Azure. Não esperamos que haja nenhum impacto para o usuário final com essa alteração. O gerenciamento de computador clássico permanecerá no Silverlight. Saiba mais sobre essa alteração e como ela o afetará clicando [aqui](https://aka.ms/Intune_on_Azure_mdm).
 
-
-### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Planeje-se para a mudança: fim da vida útil do Easy Assist<!-- 1556480 -->
-O Intune usa o Microsoft Easy Assist para assistência remota de gerenciamento de PC. Talvez você não saiba que o Microsoft Easy Assist é um componente do Office Live Meeting, um serviço desativado em 31 de dezembro de 2017. Portanto, a oferta do Easy Assist do Intune também chegou ao fim da vida útil em 31 de dezembro de 2017.
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Gerenciar dispositivos Android for Work independentemente dos dispositivos Android <!-- 1490731 EEready-->    
 **Observação**: as alterações a seguir começarão a serem distribuídas com a atualização de novembro, mas podem demorar para serem executadas em sua conta. Você receberá uma notificação de confirmação no portal do Office 365 quando essas alterações entrarem em vigor para a sua conta. Após a distribuição, você terá opções de capacidade de gerenciamento adicionais. Não haverá nenhuma alteração na experiência do usuário final durante a distribuição.
@@ -795,25 +792,8 @@ Se você já tiver integrado antes, sua situação dependerá da configuração 
 
 Em todos os casos, a norma pretendida é preservada. Nenhuma ação é necessária de sua parte para manter a permissão global ou por grupo do Android for Work em seu ambiente.
 
-### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>Substituindo o suporte para OS X Mavericks 10.10 e versões anteriores do macOS <!--1489263, plan for change for 1802-->
-O preterimento do registro de dispositivos com OS X Yosemite 10.10 e versões anteriores do macOS começará em fevereiro de 2018. O Intune é compatível com o OS X El Capitan 10.11 e versões mais recentes.
-
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Novo caminho para dispositivos gerenciados na API do Graph <!-- 1586728 -->
-O caminho usado para acessar dispositivos gerenciados na versão beta da API do Graph está sendo alterado. 
-
-| | |
-|--|--|
-| Caminho atual |  https://graph.microsoft.com/beta/managedDevices |
-| Novo caminho | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-Os dois caminhos funcionam durante o mês de outubro. Após o lançamento do serviço de outubro, somente o novo caminho funcionará.  Se você estiver usando a API do Graph para acessar os dispositivos gerenciados, atualize e verifique seus scripts e aplicativos com o novo caminho. Para obter outras alterações, verifique o [log mensal de alterações da API do Graph](https://developer.microsoft.com/graph/docs/concepts/changelog).
-
-
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acesso direto aos cenários de registro da Apple <!--951869-->
 Para contas do Intune criadas após janeiro de 2017, o Intune habilitou o acesso direto aos cenários de registro da Apple usando a carga de trabalho Registrar Dispositivos no portal do Azure. Anteriormente, a visualização de registro da Apple só estava acessível a partir de links no Portal Clássico do Intune. As contas do Intune criadas antes de janeiro de 2017 precisam de uma migração única antes que esses recursos estejam disponíveis no Azure. A agenda de migração ainda não foi anunciada, mas os detalhes serão disponibilizados assim que possível. Caso sua conta existente não possa acessar o Portal do Azure, é altamente recomendável criar uma conta de avaliação para testar a nova experiência.
-
-### <a name="administration-roles-being-replaced-in-azure-portal"></a>Funções de administração que estão sendo substituídas no Portal do Azure
-As funções de administração de MAM (gerenciamento de aplicativo móvel) existentes (Colaborador, Proprietário e Somente leitura) usadas no Portal Clássico (Silverlight) estão sendo substituídas por um conjunto completo de novos RBAC (Controles de administração baseados em função) no Portal do Intune no Azure. Após a migração para o portal do Azure, você precisará reatribuir essas novas funções de administração aos administradores. Para saber mais sobre RBAC e as novas funções, consulte [Controle de acesso baseado em função do Microsoft Intune](/intune/role-based-access-control).
 
 ## <a name="whats-coming"></a>O que está por vir
 
@@ -822,24 +802,6 @@ As funções de administração de MAM (gerenciamento de aplicativo móvel) exis
 Será lançada uma atualização principal da experiência do usuário para o aplicativo Portal da Empresa para iOS. A atualização apresentará uma reformulação visual completa, incluindo uma aparência modernizada com melhorias de acessibilidade e usabilidade. Todas as funcionalidades atuais do Portal da Empresa para iOS serão mantidas.
 
 Estamos oferecendo uma versão de pré-lançamento do aplicativo Portal da Empresa para iOS atualizado por meio do programa Apple TestFlight para que você use e forneça comentários. Inscreva-se em https://aka.ms/intune_ios_cp_testflight para obter acesso ao TestFlight.
-
-### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Políticas de Acesso Condicional para o Intune só estarão disponíveis no portal do Azure <!-- 1737088 -->
-Estamos simplificando o local em que você configura e gerencia o acesso condicional. No momento, você pode gerenciar o acesso condicional na folha MAM (Proteção de Aplicativo do Intune) e por meio da experiência clássica do Azure AD no [Portal do Microsoft Azure](https://manage.windowsazure.com). A partir de janeiro, você só poderá configurar e gerenciar suas políticas no [portal do Azure](https://portal.azure.com) usando **Azure Active Directory** > **Acesso Condicional**. Para sua conveniência, você também pode acessar essa folha do Intune no portal do Azure em **Intune** > **Acesso Condicional**.
-
-### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine---1592747--"></a>Gerenciar dispositivos macOS inscritos em Jamf com o mecanismo de conformidade do dispositivo do Intune <!--1592747-->
-A partir do início 2018, a Jamf enviará informações de estado do dispositivo macOS ao Intune, que, em seguida, avaliará a conformidade com as políticas definidas no console do Intune. Com base no estado de conformidade do dispositivo, bem como em outras condições (como local, risco de usuário etc.), o acesso condicional imporá a conformidade para dispositivos macOS que estão acessando aplicativos de nuvem e locais conectados com o Azure AD, incluindo o Office 365.
-
-### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Alterações no suporte para o aplicativo do Portal da Empresa iOS do Intune  <!-- 1164474  -->
-Em breve, haverá uma nova versão do aplicativo do Portal da Empresa do Microsoft Intune para iOS que dará suporte somente a dispositivos que executam o iOS 9.0 ou posterior. A versão do Portal da Empresa que é compatível com o iOS 8 permanecerá disponível por um breve período. No entanto, também há compatibilidade para o iOS 9.0 e posterior, portanto, se você também usar aplicativos iOS habilitados para MAM, faça com que seus usuários finais atualizem para o sistema operacional mais recente. 
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Estamos informando isso com antecedência, mesmo que não tenhamos datas específicas, para que você tenha tempo de planejar. Verifique se seus usuários atualizaram para o iOS 9 ou superior e, quando o aplicativo do Portal da Empresa for lançado, solicite que eles atualizem esse aplicativo.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
-Recomendamos que os usuários atualizem para o iOS 9.0 ou posterior para que eles aproveitem os novos recursos do Intune.  Incentive os usuários a instalarem a nova versão do Portal da Empresa e aproveitar os novos recursos que ele oferece.
-
-Acesse o Intune no Portal do Azure e exiba Dispositivos > Todos os Dispositivos e filtre por versão do iOS para ver os dispositivos atuais com os sistemas operacionais anteriores ao iOS 9.
-
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple para exigir atualizações para Segurança de Transporte do aplicativo <!--748318-->
 A Apple anunciou que pretende impor requisitos específicos para ATS (Segurança de Transporte de Aplicativo). O ATS é usado para impor a segurança mais rígida em todas as comunicações de aplicativo via HTTPS. Essa alteração afeta os clientes do Intune que usam os aplicativos de Portal da Empresa do iOS.

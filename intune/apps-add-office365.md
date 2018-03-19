@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 ProPlus a dispositivos Windows 10 com o Microsoft Intune
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
-Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 ProPlus aos dispositivos gerenciados que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar serão exibidos como uma entrada única na lista de aplicativos no console do Intune.
+Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 para os dispositivos que você gerencia e que executam o Windows 10. Você também poderá instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você desejar serão exibidos como uma entrada única na lista de aplicativos no console do Intune.
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -32,7 +32,7 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 Pro
 >Somente haverá suporte para este método de instalação do Office se nenhuma outra versão do Microsoft Office estiver instalada no dispositivo.
 
 - Os dispositivos nos quais você implanta esses aplicativos deverão estar em execução no Windows 10 Creators Update ou posterior.
-- O Intune é compatível somente com aplicativos do Office do pacote Office 365 ProPlus.
+- O Intune somente permite a adição de aplicativos do Office do pacote do Office 365.
 - Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, a instalação poderá falhar e os usuários finais poderão perder dados de arquivos não salvos.
 - Esse método de instalação não é compatível com dispositivos Windows 10S, Windows Home, Windows Team, Windows Holographic e Windows Holographic for Business.
 - O Intune não dá suporte à instalação de aplicativos de área de trabalho do Office 365 da Microsoft Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
@@ -41,12 +41,13 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 Pro
 
 ## <a name="get-started"></a>Introdução
 
-1.  Entre no portal do Azure.
-2.  Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1.  Entre no [portal do Azure](https://portal.azure.com).
+2.  Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3.  Na folha **Intune**, escolha **Aplicativos móveis**.
-4.  Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Aplicativos**.
+4.  Na carga de trabalho **Aplicativos móveis**, escolha **Aplicativos** na seção **Gerenciar**.
 5.  Acima da lista de aplicativos, escolha **Adicionar**.
-6.  Na folha **Adicionar Aplicativo**, escolha **Office 365 ProPlus Suite (Windows 10)**.
+6.  Na lista **Tipo de aplicativo** na folha **Adicionar aplicativos**, selecione **Windows 10** no **Pacote do Office 365**.
+    Agora você pode configurar o pacote do aplicativo.
 
 ## <a name="configure-the-app-suite"></a>Configurar o pacote de aplicativos
 
@@ -61,7 +62,7 @@ Nesta etapa, escolha os aplicativos do Office que você deseja atribuir aos disp
 
 ## <a name="configure-app-information"></a>Configurar informações do aplicativo
 
-Nesta etapa, forneça informações sobre o pacote de aplicativos. Essas informações ajudam a identificá-lo no Intune, além de ajudar os usuários a encontrá-lo no aplicativo Portal da Empresa.
+Nesta etapa, você precisa fornecer informações sobre o pacote do aplicativo. Essas informações ajudam a identificar o pacote do aplicativo no Intune e também ajudam os usuários a encontrá-lo no aplicativo Portal da Empresa.
 
 1.  Na folha **Adicionar Aplicativo**, escolha **Informações do Pacote de Aplicativos**.
 2.  Na folha **Informações do Pacote de Aplicativos**, especifique as seguintes informações:
@@ -75,7 +76,7 @@ Nesta etapa, forneça informações sobre o pacote de aplicativos. Essas informa
     - **Desenvolvedor** – Opcionalmente, insira o nome do desenvolvedor do aplicativo.
     - **Proprietário** – Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, **Departamento de RH**.
     - **Observações** – Digite as observações que você deseja associar a este aplicativo.
-    - **Carregar Ícone** – carregue um ícone que será exibido com o aplicativo quando os usuários navegarem pelo Portal da Empresa.
+    - **Logotipo** – carregue um ícone que será exibido com o aplicativo quando os usuários procurarem no portal da empresa.
 3.  Quando terminar, clique em **OK**.
 
 ## <a name="configure-app-settings"></a>Definir configurações do aplicativo
@@ -84,14 +85,14 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
 
 1.  Na folha **Adicionar Aplicativo**, escolha **Configurações do Pacote de Aplicativos**.
 2.  Na folha **Configurações do Pacote de Aplicativos**, especifique as seguintes informações:
-    - **Versão do Office** – escolha se deseja atribuir a versão de 32 bits ou de 64 bits do Office. Você pode instalar a versão de 32 bits em dispositivos de 32 bits e de 64 bits, mas só é possível instalar a versão de 64 bits em dispositivos de 64 bits.
+    - **Versão do Office** – escolha se deseja atribuir a versão de 32 bits ou de 64 bits do Office. Você pode instalar a versão de 32 bits em dispositivos de 32 bits e 64 bits, mas você só pode instalar a versão de 64 bits em dispositivos de 64 bits.
     - **Canal de Atualização** – escolha como o Office é atualizado nos dispositivos. Para obter informações sobre os diferentes canais de atualização, consulte [Visão geral dos canais de atualização para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Escolha:
         - **Mensalmente**
         - **Mensal (Direcionada)**
         - **Semestral**
         - **Semestral (Direcionada)**
     - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo** – selecione essa opção se você não exigir que os usuários finais aceitem o contrato de licença. Com isso, o Intune aceitará automaticamente o contrato.
-    - **Usar ativação do computador compartilhado** – a ativação do computador compartilhado é usada quando vários usuários compartilham um computador. Para obter mais informações, consulte Visão geral da ativação de computador compartilhado do Office 365 ProPlus.
+    - **Usar ativação do computador compartilhado** – a ativação do computador compartilhado é usada quando vários usuários compartilham um computador. Para obter mais informações, confira Visão geral da ativação de computador compartilhado no Office 365.
     - **Idiomas** – o Office é instalado automaticamente em qualquer idioma com suporte instalado com o Windows no dispositivo dos usuários finais. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
 
 ## <a name="finish-up"></a>Concluir
 
-Após terminar, escolha **Salvar** na folha **Adicionar Aplicativo**. O aplicativo que você criou é exibido na lista de aplicativos.
+Quando você terminar, na folha **Adicionar aplicativo**, escolha **Adicionar**. O aplicativo que você criou é exibido na lista de aplicativos.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Códigos de erro ao instalar o pacote de aplicativos
 
@@ -137,4 +138,4 @@ A tabela a seguir lista os códigos de erro comuns que você pode encontrar e se
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Agora você pode atribuir os aplicativos aos grupos que você escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](/intune-azure/manage-apps/deploy-apps).
+- Agora você pode atribuir os aplicativos aos grupos escolhidos, confira [Como atribuir aplicativos a grupos](/intune-azure/manage-apps/deploy-apps).

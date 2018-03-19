@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 913ff1c0ae7ab968ae1195425c7cbe4044591c6b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune
 
@@ -39,23 +39,21 @@ Para remover seletivamente os dados de aplicativo da empresa, crie uma solicita�
 
 1.  Entre no [Portal do Azure](https://portal.azure.com).
 
-2.  Escolha **Mais Serviços**, digite **Intune** na caixa de texto de filtro e selecione **Intune**. A folha do Intune é aberta. Selecione **Aplicativos móveis**.
+2.  Escolha **Todos os serviços**, digite **Intune** na caixa de texto de filtro e selecione **Intune**. O painel do Intune é aberto. Escolha o painel **Aplicativos móveis**.
 
-    ![Captura de tela da folha do Microsoft Intune](./media/apps-selective-wipe01.png)
+    ![Captura de tela do painel do Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  Na **folha de aplicativos Móveis**, escolha **Apagamento seletivo do aplicativo**.
+3.  No **painel Aplicativos móveis**, escolha **Apagamento seletivo de aplicativo**.
 
 4.  Escolha **Nova solicitação de apagamento**. O painel **Nova solicitação para apagar** é aberto.
 
     ![Captura de tela do painel Nova solicitação para apagar](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  Escolha **Usuário** para abrir a folha **Usuário** e selecione o usuário cujos dados de aplicativo você deseja apagar.
+5.  Escolha um usuário e, em seguida, escolha **Selecionar** para selecionar o usuário cujos dados de aplicativo você deseja apagar.
 
-6.  Em seguida, escolha **Dispositivo** na folha **Nova solicitação de apagamento**. Essa ação abre a folha **Selecionar dispositivo**. Isso lista todos os dispositivos associados com o usuário selecionado. Além disso, este painel fornece o nome do dispositivo, que é um nome amigável definido pelo usuário e o tipo de dispositivo, que especifica a plataforma do dispositivo. 
+6.  Em seguida, escolha **Dispositivo** no painel **Nova solicitação de apagamento**. Isso abre o painel **Selecionar Dispositivo** que lista todos os dispositivos associados ao usuário selecionado e também fornece duas colunas, o nome do dispositivo, que é um nome amigável definido pelo usuário, e o tipo de dispositivo, ou seja, a plataforma do dispositivo. Selecione o dispositivo que deseja apagar.
 
-7. Na lista, selecione o dispositivo que deseja apagar.
-
-8.  Você está de volta na folha **Nova solicitação para apagar**. Escolha **OK** para fazer uma solicitação de apagamento.
+7.  Você retornará ao painel **Nova solicitação de apagamento**. Escolha **OK** para fazer uma solicitação de apagamento.
 
 O serviço cria e controla uma solicitação de apagamento separada para cada aplicativo protegido no dispositivo e o usuário associado à solicitação de apagamento.
 
@@ -63,7 +61,7 @@ O serviço cria e controla uma solicitação de apagamento separada para cada ap
 
 É possível obter um relatório resumido que mostra o status geral da solicitação de apagamento e inclui o número de falhas e solicitações pendentes. Para obter mais detalhes, siga estas etapas:
 
-1.  Na folha **Aplicativos Móveis – apagamento seletivo de aplicativo**, você pode ver a lista de suas solicitações agrupadas por usuários. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
+1.  No painel **Aplicativos Móveis – apagamento seletivo de aplicativo**, você pode ver a lista de suas solicitações agrupadas por usuários. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
 
     ![Captura de tela do status da solicitação de apagamento no painel Limpeza seletiva de aplicativo](./media/wipe-request-status-1.png)
 
@@ -76,7 +74,7 @@ Além disso, você pode ver o nome e o tipo de dispositivo, o que pode ser útil
 
 Apagamentos com status pendente são exibidos até serem excluídos manualmente. Para excluir uma solicitação de apagamento manualmente:
 
-1.  Abra a folha **Aplicativos Móveis – Limpeza seletiva de aplicativo**.
+1.  No painel **Aplicativos Móveis – apagamento seletivo de aplicativo**.
 
 2.  Na lista, clique com o botão direito do mouse na solicitação de apagamento que você deseja excluir e escolha **Excluir solicitação de apagamento**.
 

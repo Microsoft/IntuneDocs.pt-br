@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
-Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o iOS.
+
 ## <a name="general"></a>Geral
 
+-   **Compartilhar dados de uso** – permita ou impeça que o dispositivo envie dados de telemetria de diagnóstico e de uso para a Apple.
 -   **Envio de dados de diagnóstico** – Permitir ou bloquear a habilidade do dispositivo enviar dados de diagnóstico para a Apple.
 -   **Captura de tela** – Permitir ao usuário capturar os conteúdos da tela como uma imagem.
     - **Observação de tela remota pelo aplicativo Classroom (somente supervisionado)** – Permitir ou bloquear que o aplicativo Classroom da Apple exiba a tela de dispositivos iOS.
@@ -213,8 +215,8 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 -   **Ingressar em redes Wi-Fi usando apenas perfis de configuração (apenas supervisionado)** – Permitir apenas que o dispositivo ingresse em redes Wi-Fi que foram configuradas com um perfil de Wi-Fi do Intune.
 
 - **Regras de uso de celular (somente aplicativos gerenciados)** – permite que você defina os tipos de dados que os aplicativos gerenciados podem usar quando estão em redes celulares. Escolha:
-    - **Bloquear uso de dados da rede celular**
-    - **Bloquear o uso de dados da rede celular quando em roaming**
+    - **Bloquear o uso de dados do celular** – você pode bloquear o uso de dados do celular para **todos os aplicativos gerenciados** ou **Escolher aplicativos específicos**.
+    - **Bloquear o uso de dados do celular quando em roaming** – você pode bloquear o uso de dados do celular quando estiver em roaming para **todos os aplicativos gerenciados** ou **Escolher aplicativos específicos**.
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 

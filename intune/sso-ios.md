@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para logon único de dispositivo iOS
 
@@ -34,18 +34,19 @@ Para aproveitar o Logon Único do dispositivo iOS, você deve ter as seguintes c
 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na página **Intune**, escolha **Configuração do dispositivo**.
-2. Na pagina **Configuração do dispositivo**, escolha **Perfis**.
-3. Na página de perfis, escolha **Criar Perfil**, forneça um nome e uma descrição e defina as seguintes configurações:
-   - **Plataforma**: escolha **iOS**. 
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+4. No painel **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
+5. No painel de perfis, escolha **Criar perfil**.
+6. Forneça um nome e uma descrição e defina as seguintes configurações:
+   - **Plataforma**: escolha **iOS**.
    - **Tipo de perfil**: escolha **recursos de dispositivo**.
-4. Na página **Recursos do dispositivo**, escolha **Logon Único**.
+7. No painel **Recursos do dispositivo**, escolha **Logon Único**.
 
-   ![Página de logon único](./media/sso-blade.png)
+   ![Painel de logon único](./media/sso-blade.png)
 
-2. Use a seguinte tabela de resumo para ajudá-lo a preencher os campos na página **Logon Único**. Para obter detalhes, consulte as seções após a tabela.
-   
+8. Use a seguinte tabela de resumo para ajudá-lo a preencher os campos no painel **Logon Único**. Para obter detalhes, consulte as seções após a tabela.
+
    |Campo  |Anotações|
    |---------|---------|
    |**Atributo de nome de usuário do AAD**|O atributo que o Intune procura para cada usuário no AAD e preenche o respectivo campo (como o UPN) antes de gerar a carga XML que é instalada no dispositivo.|
@@ -95,7 +96,7 @@ O campo **Nome do Aplicativo** é usado para adicionar um nome amigável para aj
 
 ### <a name="credential-renewal-certificate"></a>Certificado de renovação de credencial
 
-Se você autenticar seus usuários finais com certificados (não senhas), use este campo para selecionar o certificado do SCEP ou PFX que é implantado para o usuário como o certificado de autenticação. Normalmente, é o mesmo certificado implantado para o usuário para outros perfis, como VPN, Wi-Fi ou Email.
+Se você autenticar seus usuários finais com certificados (não senhas), use este campo para selecionar o certificado do SCEP ou PFX que é implantado para o usuário como o certificado de autenticação. Normalmente, esse é o mesmo certificado implantado para o usuário para outros perfis, como VPN, Wi-Fi ou Email.
 
 ## <a name="next-steps"></a>Próximas etapas
 

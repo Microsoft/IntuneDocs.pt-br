@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurar o registro de dispositivo iOS com o Apple School Manager
 
@@ -89,7 +89,7 @@ Acesse o arquivo de certificado (.p7m), escolha **Abrir** e, depois, **Carregar*
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de registro da Apple
 Um perfil de registro de dispositivo define as configurações aplicadas a um grupo de dispositivos durante o registro.
 
-1. No Intune no Portal do Azure, escolha **Registro de dispositivo** e, em seguida, escolha **Registro da Apple**.
+1. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** e, em seguida, selecione **Registro da Apple**.
 2. Em **Programa de Registro**, escolha **Perfis do Programa de Registro**.
 3. Na folha **Perfis do Programa de Registro**, escolha **Criar**.
 4. Na folha **Criar Perfil de Registro**, insira um **Nome** e uma **Descrição** para o perfil exibido no Intune.
@@ -149,7 +149,7 @@ Um perfil de registro de dispositivo define as configurações aplicadas a um gr
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos gerenciados
 Agora que o Intune recebeu permissão para gerenciar seus dispositivos Apple School Manager, é possível sincronizar o Intune com o serviço da Apple para ver os dispositivos gerenciados no Intune.
 
-1. No Intune, no Portal do Azure, escolha **Registro de Dispositivo** > **Registro da Apple** > **Dispositivos do Programa de Registro** > **Sincronizar**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
+1. No [Intune, no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Dispositivos do Programa de Registro** > **Sincronizar**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
 
   ![Nó Dispositivos do Programa de Registro selecionado e o link de Sincronização sendo escolhido](./media/enrollment-program-device-sync.png)
 2. Na folha **Sincronizar**, escolha **Solicitar Sincronização**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
@@ -166,7 +166,7 @@ Agora que o Intune recebeu permissão para gerenciar seus dispositivos Apple Sch
 ## <a name="assign-a-profile-to-devices"></a>Atribuir um perfil a dispositivos
 Os dispositivos Apple School Manager gerenciados pelo Intune devem receber um perfil de registro antes de serem registrados.
 
-1. No Intune no portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** e, em seguida, escolha **Perfis do Programa de Registro**.
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** e, em seguida, escolha **Perfis do Programa de Registro**.
 2. Na lista de **Perfis do Programa de Registro**, escolha o perfil que será atribuído aos dispositivos e, em seguida, escolha **Atribuir dispositivos**
 
  ![Atribuições de dispositivo com Atribuir selecionado.](./media/enrollment-program-device-assign.png)
