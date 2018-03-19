@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Configurações de restrição de dispositivo Android e Samsung Knox Standard do Microsoft Intune 
 
@@ -144,7 +144,7 @@ Para cada configuração, configure uma lista de aplicativos usando um destes pr
 
 As configurações de quiosque se aplicam somente a dispositivos Samsung Knox Standard, e apenas a aplicativos gerenciados usando o Intune.
 
-- **Selecionar um aplicativo gerenciado** – Escolha uma das opções a seguir para adicionar um ou mais aplicativos gerenciados que poderão ser executados quando o dispositivo estiver no modo de quiosque. Nenhum outro aplicativo pode ser executado no dispositivo.
+- **Selecionar um aplicativo gerenciado** – Escolha uma das opções a seguir para adicionar um ou mais aplicativos gerenciados que poderão ser executados quando o dispositivo estiver no modo de quiosque. Nenhum outro aplicativo pode ser executado no dispositivo. Os navegadores pré-instalados não podem ser definidos como aplicativos que podem ser executados enquanto o dispositivo está no modo de quiosque. Se um navegador for necessário, use o [Managed Browser](app-configuration-managed-browser.md).
     - **Adicionar aplicativos pelo nome do pacote**
     - **Adicionar aplicativos pela URL**
     - **Adicionar aplicativos gerenciados**.

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Criar um grupo para gerenciar usuários e acesso a dados
 
@@ -30,11 +30,13 @@ O Microsoft Intune usa o Azure AD (Azure Active Directory) para gerenciar o aces
 ## <a name="how-do-i-create-a-group"></a>Como fazer para criar um grupo?
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Usando **Pesquisar recursos**, pesquise **Intune**.
-3. Depois de abrir a folha **Microsoft Intune**, selecione **Grupos**.
-4. Na folha **Usuários e grupos – Todos os Grupos**, selecione o comando **Novo grupo**.
-5. Na folha **Grupo**, adicione um **Nome** e uma **Descrição** para o grupo.
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. Depois de abrir o painel **Microsoft Intune**, selecione **Grupos**.
+4. No painel **Usuários e grupos – Todos os grupos**, selecione o comando **Novo grupo**.
+5. No painel **Grupo**, escolha um **Tipo de grupo**.
+5. Adicione um **Nome** e uma **Descrição** para o grupo.
 6. Defina o **Tipo de associação** como **Atribuído**. Não **Habilite os recursos do Office** para o grupo de teste.
+7. Selecione **Membros** para o grupo.
 7. Clique em **Criar**.
 
 Se um grupo foi criado com êxito, ele deverá aparecer na lista de **Todos os grupos**. Se ele não aparecer, tente criar um outro grupo.

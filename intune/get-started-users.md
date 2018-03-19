@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>Introdução ao gerenciamento de usuários
 
@@ -27,13 +27,13 @@ Pense em todas as diferentes pessoas em sua organização. Cada uma delas que us
 
 ## <a name="how-do-i-create-a-user"></a>Como eu crio um usuário?
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Usando **Pesquisar recursos**, pesquise **Intune**.
-3. Depois que você abrir a folha **Microsoft Intune**, selecione **Usuários**. Na página **Todos os Usuários**, selecione **+ Novo usuário**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. Depois de abrir o painel **Microsoft Intune**, selecione **Usuários**. Na página **Todos os Usuários**, selecione **+ Novo usuário**.
 4. Insira os detalhes do usuário, como **Nome** e **Nome de usuário**. A parte do nome de domínio do nome de usuário deve ser o nome de domínio inicial padrão “contoso.onmicrosoft.com” ou um nome de domínio não federado verificado como “contoso.com”.
 5. Em **Grupos**, escolha o grupo de teste ao qual o usuário será adicionado.
 6. Salve a senha do usuário gerada automaticamente para que você possa usá-la para fazer logon em um dispositivo de teste. Você deve fornecer essa senha para usuários para que eles podem alterá-la para uma senha normal que pode ser lembrada.
-7. Na folha **Usuário**, selecione **Criar**.
+7. No painel **Usuário**, selecione **Criar**.
 
 ## <a name="assigning-licenses-to-users"></a>Atribuir licenças a usuários
 

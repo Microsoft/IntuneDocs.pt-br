@@ -1,7 +1,7 @@
 ---
-title: "Defesa contra Ameaças Móveis com o Intune"
-titleSuffix: Azure portal
-description: Proteger o acesso a recursos da empresa com base nos riscos do dispositivo
+title: "Defesa contra Ameaças Móveis com o Microsoft Intune"
+titleSuffix: 
+description: "Use a MTD (Defesa contra Ameaças Móveis) do Intune com seu parceiro de Defesa contra Ameaças Móveis para proteger o acesso aos recursos da empresa com base no risco do dispositivo."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>Integração da Defesa contra Ameaças Móveis com o Intune
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa contra Ameaças Móveis com o Intune?
 
 
 Os conectores de Defesa Contra Ameaças Móveis do Intune permitem que você utilize o fornecedor de Defesa Contra Ameaças Móveis escolhido como uma fonte de informações para suas políticas de conformidade e regras de acesso condicional. Isso permite que os administradores de TI adicionem uma camada de proteção aos seus recursos corporativos como Exchange e Sharepoint, especificamente de dispositivos móveis comprometidos.
@@ -32,7 +32,7 @@ As empresas precisam proteger dados confidenciais contra ameaças emergentes, in
 
 Historicamente, as empresas têm sido proativas ao proteger computadores contra ataques, enquanto os dispositivos móveis ficam sem monitoramento e proteção. Plataformas móveis têm proteção interna, como isolamento de aplicativo e lojas de aplicativos de consumidor verificadas, mas permanecerão vulneráveis a ataques sofisticados. Hoje, um número maior de funcionários usa dispositivos para o trabalho e precisam ter acesso a informações confidenciais. Os dispositivos devem ser protegidos contra ataques cada vez mais sofisticados.
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Como os conectores de Defesa Contra Ameaças Móveis do Intune funciona?
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Como funcionam os conectores da Defesa contra Ameaças Móveis do Intune?
 
 O conector protege os recursos da empresa criando um canal de comunicação entre o Intune e seu fornecedor de Defesa Contra Ameaças Móveis escolhido. Os parceiros de Defesa Contra Ameaças Móveis do Intune oferecem aplicativos intuitivos e fáceis de implantar para dispositivos móveis, que examinam e analisam ativamente as informações sobre ameaças para compartilhar com o Intune, para fins de relatório ou imposição. 
 
@@ -58,11 +58,11 @@ Inventários de dispositivos pessoais e corporativos iOS 11+ são enviados para 
 
 Quando um dispositivo é considerado infectado pela solução de Defesa Contra Ameaças Móveis:
 
-![Dispositivo infectado na Defesa contra Ameaças Móveis](./media/MTD-image-1.png)
+![Imagem mostrando um dispositivo infectado da Defesa contra Ameaças Móveis](./media/MTD-image-1.png)
 
 O acesso é concedido quando o dispositivo é corrigido:
 
-![Acesso concedido na Defesa contra Ameaças Móveis](./media/MTD-image-2.png)
+![Imagem mostrando um acesso concedido da Defesa contra Ameaças Móveis](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > O uso de vários fornecedores de Defesa contra ameaças de móveis com o Intune não tem suporte. Ter diversas ferramentas de MTD habilitadas fará com que todos os aplicativos MTD sejam instalados e verifiquem os dispositivos em busca de ameaças.

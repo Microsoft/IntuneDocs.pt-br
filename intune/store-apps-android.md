@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Como adicionar aplicativos Android Store ao Microsoft Intune
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 Antes de atribuir um aplicativo em um dispositivo ou um grupo de usuários, você deve primeiro adicionar o aplicativo ao Microsoft Intune. As etapas a seguir permitem que você adicione um aplicativo da Android Store ao Intune do Portal do Azure.
 
 1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Microsoft Intune**, escolha **Aplicativos móveis**.
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Aplicativos móveis**.
 4. Na carga de trabalho **Aplicativos móveis**, escolha **Aplicativos** na seção **Gerenciar**.
 5. Acima da lista de aplicativos, escolha **Adicionar**.
-6. Na folha **Adicionar Aplicativo**, selecione **Android** nos tipos de **Aplicativo da loja** disponíveis.
-7. Selecione **Configurar** para configurar as seguintes informações do aplicativo: dependendo do aplicativo escolhido, alguns dos valores nesta folha podem ter sido preenchidos automaticamente:
+6. No painel **Adicionar Aplicativo**, selecione **Android** nos tipos de **Aplicativo da loja** disponíveis.
+7. Selecione **Configurar** para definir as seguintes informações do aplicativo: dependendo do aplicativo escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
     - **Descrição**: insira uma descrição para o aplicativo. Essa descrição será exibida para os usuários no portal da empresa.
     - **Editor**: insira o nome do editor do aplicativo.

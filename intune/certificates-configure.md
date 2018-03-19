@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para seus dispositivos no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi ou perfis de email, você pode autenticar essas conexões usando certificados. Ao usar certificados, não é necessário inserir nomes de usuário e senhas para autenticar conexões 
+Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi ou perfis de email, você pode autenticar essas conexões usando certificados. Ao usar certificados, não é necessário inserir nomes de usuário e senhas para autenticar conexões
 
 Use o Intune para atribuir esses certificados aos dispositivos gerenciados. O Intune é compatível com a atribuição e o gerenciamento dos seguintes tipos de certificados:
 
@@ -85,10 +85,13 @@ Este certificado é importando quando você configura um perfil de certificado c
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Etapa 3: criar perfis de certificado confiável
 Crie um perfil de certificado confiável antes de criar um perfil de certificado SCEP ou PKCS. É necessário um perfil de certificado confiável e um perfil SCEP ou PKCS para cada plataforma de dispositivo. As etapas para criar certificados confiáveis são semelhantes para cada plataforma de dispositivo.
 
-1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços** e pesquise o **Microsoft Intune**.
-2. No **Microsoft Intune**, selecione **Configuração do dispositivo**, selecione **Perfis**. e, em seguida, selecione **Criar Perfil**.
-3. Insira um **Nome** e uma **Descrição** para o perfil de certificado confiável.
-4. Em **Plataforma**, selecione a plataforma de dispositivo para esse certificado confiável: 
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, escolha **Gerenciar** > **Perfis**.
+3. No painel de perfis, escolha **Criar perfil**.
+4. No painel **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de certificado confiável.
+5. Na lista suspensa **Plataforma**, selecione a plataforma de dispositivo para esse certificado confiável. No momento, é possível escolher uma das seguintes plataformas para as configurações de certificado:
 
     - **Android**
     - **Android for Work**
@@ -98,15 +101,13 @@ Crie um perfil de certificado confiável antes de criar um perfil de certificado
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
 
-5. Para o **Tipo de perfil**, escolha **Certificado confiável**. Navegue até o certificado (*CertificateName*.cer) que você salvou anteriormente (etapa 2).
-
-    Somente para dispositivos Windows 8.1 e Windows 10, selecione o **Repositório de Destino** para o certificado confiável de:  
-
+6. Na lista suspensa **Tipo de perfil**, escolha **Certificado confiável**.
+7. Navegue até o certificado salvo na tarefa 1 e clique em **OK**.
+8. Somente para dispositivos Windows 8.1 e Windows 10, selecione o **Repositório de Destino** para o certificado confiável de:
     - **Repositório de certificados do computador – Raiz**
     - **Repositório de certificados do computador – Intermediário**
     - **Repositório de certificados do usuário – Intermediário**
-
-6. Selecione **OK** salvar suas alterações e, em seguida, selecione **Criar** para salvar o novo perfil.
+8. Quando terminar, selecione **OK**, volte para o painel **Criar perfil** e escolha **Criar**.
 
 O perfil será criado e aparecerá na lista. Para atribuir esse perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).
 

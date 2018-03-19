@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos por meio do uso de uma conta do gerenciador de registros de dispositivo
 
@@ -34,7 +34,7 @@ Os usuários devem existir no [Portal do Azure](https://portal.azure.com) para s
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gerenciador de registro de dispositivos
 
-Um restaurante quer fornecer 50 tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma conta de gerenciador de registro de dispositivos e adiciona um supervisor do restaurante à conta DEM, na verdade concedendo recursos de DEM a esse supervisor. O supervisor agora pode registrar os 50 dispositivos de tablets usando as credenciais do DEM.
+Um restaurante quer fornecer 50 tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma conta de gerente de registros de dispositivos e adiciona um supervisor do restaurante à conta do DEM. O supervisor agora tem recursos do DEM. O supervisor agora pode registrar os 50 dispositivos de tablets usando as credenciais do DEM.
 
 Somente os usuários do [Portal do Azure](https://portal.azure.com) podem gerenciadores de registro de dispositivos. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
 
@@ -50,16 +50,16 @@ Dispositivos registrados com uma conta de gerenciador de registro de dispositivo
 
   - Sem acesso por usuário. Como os dispositivos não têm um usuário atribuído, o dispositivo não tem nenhum acesso a email ou a dados da empresa. As configurações de VPN, por exemplo, ainda poderão ser usadas para fornecer aos aplicativos de dispositivo o acesso a dados.
   - Sem acesso condicional, pois esses cenários são por usuário.
-  - O usuário do DEM não pode cancelar o registro de dispositivos registrados pelo DEM no próprio dispositivo usando o Portal da Empresa. A administração do Intune pode fazer isso, ao contrário do usuário DEM.
+  - O usuário do DEM não pode cancelar o registro de dispositivos registrados pelo DEM no próprio dispositivo usando o Portal da Empresa. O administrador do Intune pode cancelar o registro.
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
   - Os usuários não podem usar aplicativos VPP (Apple Volume Purchase Program) devido aos requisitos de ID da Apple por usuário para o gerenciamento de aplicativo.
   - (Somente iOS) Se você usar o DEM para registrar dispositivos iOS, não poderá usar o Apple Configurator, o Apple DEP (Programa de registro de dispositivos) nem o ASM (Apple School Manager) para registrar dispositivos.
-  - (Somente Android) Há um limite para a quantidade de dispositivos Android for Work que podem ser registrados com uma conta DEM única. Podem ser registrados, no máximo, dez dispositivos de perfil de trabalho do Android por conta do DEM. Essa limitação não se aplica ao registro do Android herdado.
+  - (Somente Android) Há um limite para o número de dispositivos Android for Work que podem ser registrados com uma única conta do DEM. No máximo 10 dispositivos de perfil de trabalho do Android podem ser registrados por conta do DEM. Essa limitação não se aplica ao registro do Android herdado.
   - Cada dispositivo exige uma licença de dispositivo. Saiba mais sobre [licenças de usuário e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]
-> Para implantar aplicativos da empresa em dispositivos gerenciados pelo gerenciador de registro do dispositivo, implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** para a conta de usuário do gerenciador de registro do dispositivo.
+> Você pode implantar aplicativos da empresa para dispositivos gerenciados pelo gerente de registros de dispositivo. Implante o aplicativo Portal da Empresa como uma **Instalação Obrigatória** na conta de usuário do gerente de registros de dispositivo.
 > Para melhorar o desempenho, exibir o aplicativo de Portal da Empresa em um dispositivo DEM mostra somente os dispositivos locais. Gerenciamento remoto de outros dispositivos DEM só pode ser feito no console do administrador do Intune.
 
 
@@ -75,7 +75,7 @@ Dispositivos registrados com uma conta de gerenciador de registro de dispositivo
 
 As funções do Azure AD Administrador Global ou de Serviços do Intune são necessárias para realizar tarefas de registro do DEM. Essas funções também são necessárias para ver todos os usuários DEM, apesar de as permissões RBAC serem listadas e estarem disponíveis na função de Usuário personalizada. Um usuário sem uma função Administrador global ou Administrador de serviços do Intune atribuída, mas que tem permissões de leitura para a função Gerentes de Registro de Dispositivo, pode ver somente os usuários do DEM criados por ele. O suporte à função RBAC para esses recursos será anunciada no futuro.
 
-Se um usuário não tiver a função Administrador global ou Administrador de serviços do Intune atribuída a ele, mas tiver permissões de leitura habilitadas para a função Gerentes de Registro do Dispositivo atribuída a ele, poderá ver apenas os usuários do DEM criados por ele.
+Se um usuário não tiver a função Administrador Global ou Administrador de Serviços do Intune atribuída, mas tiver permissões de leitura habilitadas para a função Gerente de Registro de Dispositivo atribuída a ele, ele apenas poderá ver os usuários do DEM criados por ele.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Remover um gerenciador de registro de dispositivo
 
@@ -88,9 +88,8 @@ Remover um gerenciador de registro de dispositivos não afeta os dispositivos re
 
 **Para remover um gerenciador de registro de dispositivo**
 
-1. No [Portal do Azure](https://portal.azure.com), escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-2. Na folha do Intune, escolha **Registro de dispositivo** e, em seguida, escolha **Gerenciadores de registro de dispositivo**.
-3. Na folha **Gerenciadores de registro de dispositivo**, selecione o usuário DEM e selecione **Excluir**.
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** e, em seguida, selecione **Gerentes de registro de dispositivo**.
+2. Na folha **Gerenciadores de registro de dispositivo**, selecione o usuário DEM e selecione **Excluir**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Exibir as propriedades de um gerenciador de registro de dispositivo
 

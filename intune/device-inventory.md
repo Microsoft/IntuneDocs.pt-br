@@ -1,12 +1,11 @@
 ---
-title: "Exibir o inventário de dispositivo do Intune"
-titlesuffix: Azure portal
-description: Saiba como exibir os dispositivos gerenciados com o Intune e entender seu hardware e seus aplicativos instalados.
+title: "Exibir seus dispositivos com o Microsoft Intune – Azure | Microsoft Docs"
+description: "Exiba os detalhes do dispositivo, incluindo sistemas operacionais, espaço de armazenamento, fabricante, modelo e muito mais. Obtenha uma lista de aplicativos instalados, verifique as políticas de conformidade, defina o TeamViewer e muito mais com o Microsoft Intune no Azure. Semelhante à exibição de inventário dos dispositivos que você gerencia."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/10/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +13,38 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 934ba0853f8bee851f7027580c276a9fff911b7f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-view-intune-device-inventory"></a>Como exibir o inventário de dispositivo do Intune
-
+# <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A carga de trabalho **Dispositivos** fornece informações sobre os dispositivos gerenciados, incluindo suas funcionalidades de hardware e os aplicativos instalados neles. 
+O recurso **Dispositivos** fornece detalhes adicionais sobre os dispositivos que você gerencia, incluindo o hardware e os aplicativos instalados. 
 
-Para exibir o inventário de dispositivo:
+Este artigo mostra como exibir todos os dispositivos e suas propriedades no portal do Azure.
+
+## <a name="view-your-device-details"></a>Exibir os detalhes do dispositivo
 
 1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Na folha **Intune**, escolha **Dispositivos**.
+2. Selecione **Todos os serviços**, filtre pelo **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Dispositivos**. Em Dispositivos, há várias opções:
 
-Agora, selecione uma das seguintes opções:
+  - **Visão geral** Obtenha informações sobre os dispositivos registrados e os sistemas operacionais que cada dispositivo executado.
+  - **Gerenciar** – para ver uma lista de todos os dispositivos que você gerencia, escolha **Todos os dispositivos** ou **Dispositivos do Azure AD**.
+    Selecione um dos dispositivos na lista. Esta etapa abre a **Visão Geral do**<*nome do dispositivo*> , na qual você pode selecionar o seguinte:
+    - **Visão geral** – exibe o nome do dispositivo, o proprietário, se ele é um dispositivo BYOD (Traga seu próprio dispositivo), quando foi feito seu check-in e outros detalhes
+    - **Hardware** – consulte o espaço livre de armazenamento, o modelo, o fabricante e outros detalhes sobre o dispositivo
+    - **Aplicativos descobertos** – lista todos os aplicativos que Intune encontrou instalados no dispositivo
+    - **Conformidade do dispositivo** – exibe o estado de todas as políticas de conformidade que foram atribuídas ao dispositivo
+    - **Configuração do dispositivo** – exibe o estado de conformidade de todas as políticas de configuração de dispositivo atribuídas ao dispositivo
+- **Monitor** – escolha **Ações de dispositivo** para ver uma lista das ações realizadas nos dispositivos que você gerencia e seus estados atuais. **Logs de auditoria** – mostram o status de diferentes tarefas.
+- **Instalação** > **Conector do TeamViewer** – configure a administração remota nos dispositivos usando o software TeamViewer. Para ver mais detalhes, consulte [Fornecer assistência remota para dispositivos Android gerenciados pelo Intune](device-profile-android-teamviewer.md).
 
-- **Visão geral** Obtenha informações sobre os dispositivos registrados e os sistemas operacionais que cada dispositivo executado.
-- **Gerenciar** – Escolha **Todos os dispositivos** para ver uma lista de todos os dispositivos que você gerencia.
-    Selecione um desses dispositivos na lista para abrir a folha <*nome do dispositivo*> **Visão geral** na qual você pode selecionar um destes:
-    - **Visão geral** – Veja informações gerais sobre o dispositivo, incluindo seu nome, proprietário, se ele é um dispositivo BYOD, quando foi seu último check-in e muito mais.
-    - **Hardware** – Consulte informações mais detalhadas sobre o dispositivo, inclusive o espaço de armazenamento livre, modelo e fabricante, entre outros.
-    - **Aplicativos descobertos** – Exibe uma lista de todos os aplicativos que o Intune encontrou instalados no dispositivo.
-    - **Conformidade do dispositivo** – Exibe o estado de conformidade de todas as políticas de conformidade que foram atribuídas ao dispositivo.
-    - **Configuração do dispositivo** – Exibe o estado de conformidade de todas as políticas de configuração do dispositivo que foram atribuídas a ele.
-- **Monitorar** Escolha **Ações do dispositivo** para ver uma lista de ações do dispositivo que foram realizadas em dispositivos gerenciados por você, bem como o estado atual dessas ações.
-- **Instalação** > **Conector do TeamViewer** – Permite configurar a administração remota em dispositivos que usam o software do TeamViewer. Para ver mais detalhes, consulte [Fornecer assistência remota para dispositivos Android gerenciados pelo Intune](/intune/device-profile-android-teamviewer).
+O Intune coleta uma lista de aplicativos que estão somente em dispositivos corporativos. Os aplicativos não são verificados em dispositivos pessoais. Em computadores Windows 10, são listados apenas os aplicativos modernos para dispositivos corporativos. O Intune não coleta informações sobre aplicativos Win32 no dispositivo. Dependendo do uso que o dispositivo faz da operadora, é possível que não sejam coletados todos os aplicativos.
 
-O Intune coleta o inventário de aplicativos apenas em dispositivos de propriedade da empresa. Os aplicativos não são inventariados nos dispositivos pessoais. No caso de PCs com Windows 10, o Intune coleta apenas um inventário de aplicativos modernos em dispositivos de propriedade da empresa. O Intune não coleta informações sobre aplicativos Win32 no dispositivo. Dependendo da operadora que você usa com dispositivos, nem todos os itens de inventário podem ser coletados.
+## <a name="next-steps"></a>Próximas etapas
+Veja o que mais você pode fazer para [gerenciar seus dispositivos](device-management.md) com o Intune.

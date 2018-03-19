@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configurações de layout da tela inicial do Microsoft Intune para dispositivos que executam iOS 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configurações de layout da tela inicial do Microsoft Intune para dispositivos que executam iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ Use essas configurações para definir o layout do aplicativo e as pastas no enc
 
 Dispositivos que executam o iOS com um perfil atribuído devem estar no modo supervisionado e executar o iOS 9.3 ou posterior.
 
-1. Na página **Configuração do dispositivo**, **Criar perfil**, **Recursos de dispositivo**, escolha **Layout da Tela Inicial (apenas no modo supervisionado)**.
-2. Na folha **Layout da Tela Inicial (apenas no modo supervisionado)**, escolha se quer configurar os layouts de **Encaixe** ou das **Páginas**.
+1. Do [Intune no Portal do Azure](https://portal.azure.com), navegue até os [**Recursos do dispositivo** na área de configuração do dispositivo](device-features-configure.md).
+2. No painel **Recursos do dispositivo** escolha **Layout da Tela inicial (somente supervisionado)**.
+3. No painel **Layout da Tela Inicial (apenas supervisionado)**, escolha se deseja configurar o layout de **Encaixe** ou de **Páginas**.
 
 ## <a name="add-items-to-the-dock"></a>Adicionar itens ao dock
 
-Na página **Encaixe**, você pode adicionar até seis itens ou pastas ao encaixe na tela do iOS. No entanto, muitos dispositivos dão suporte a uma quantidade menor de itens, por exemplo, dispositivos iPhone dão suporte a até quatro itens. Nesse caso, somente os primeiros quatro itens configurados aparecerão no dispositivo.
+No painel **Encaixe**, você pode adicionar até seis itens ou pastas ao encaixe na tela do iOS. No entanto, muitos dispositivos dão suporte a uma quantidade menor de itens, por exemplo, dispositivos iPhone dão suporte a até quatro itens. Nesse caso, somente os primeiros quatro itens configurados aparecerão no dispositivo.
 
 1. Escolha **Adicionar** para adicionar um item ao dock.
-2. Na página **Adicionar Linha**, escolha se você quer adicionar um **Aplicativo** ou uma **Pasta**.
+2. No painel **Adicionar Linha**, escolha se deseja adicionar um **Aplicativo** ou uma **Pasta**.
 3. Usando as informações deste tópico, configure os aplicativos e as pastas que você deseja que apareça no dock.
-4. Continue adicionando itens. Quando terminar, clique em **OK** em cada página até voltar à página **Criar Perfil**. Escolha **Criar**.
+4. Continue adicionando itens. Quando terminar, clique em **OK** em cada painel até voltar ao painel **Criar Perfil**. Escolha **Criar**.
 
 >[!TIP]
-> Você pode arrastar e soltar itens em quaisquer lista de Tela inicial e páginas para reordená-las. 
+> Você pode arrastar e soltar itens em quaisquer lista de Tela inicial e páginas para reordená-las.
 
 ### <a name="example"></a>Exemplo
 
@@ -56,9 +57,8 @@ Quando você atribuir a política a um iPhone, o resultado será um dock semelha
 
 Adicione as páginas que você deseja exibir na Tela inicial e os aplicativos que aparecerão em cada página. Os aplicativos adicionados a uma página são dispostos da esquerda para a direita, na ordem especificada na lista. Se você adicionar mais aplicativos que uma página comporta, eles serão movidos para uma página subsequente.
 
-
-1. Em **Páginas**, escolha **Adicionar**.
-2. Na página **Adicionar Linha**, insira um **Nome de página**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
+1. No painel **Páginas**, escolha **Adicionar**.
+2. No painel **Adicionar Linha**, insira um **Nome da página**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 3. Escolha **Adicionar**, depois escolha se você quer adicionar um **Aplicativo** ou uma **Pasta** à página.
 4. Usando as informações deste tópico, configure os aplicativos e as pastas que você deseja que apareça na página.
 
@@ -85,7 +85,7 @@ Os aplicativos adicionados a uma página em uma pasta são dispostos da esquerda
 
 1. Insira **Nome da pasta**. Esse nome será exibido aos usuários no dispositivo.
 2. Escolha **Adicionar** para criar uma página na pasta. Você pode adicionar até 20 páginas.
-3. Na página **Adicionar Linha**, insira um nome para a página. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
+3. No painel **Adicionar Linha**, insira um nome para a página. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 3. Insira o **Nome do Aplicativo**. Esse nome é usado para sua referência no Portal do Azure e *não é exibido* no dispositivo iOS.
 2. Insira **ID de Pacote de Aplicativos** do aplicativo que você deseja exibir. Confira **Como adicionar um aplicativo à lista**.
 3. Escolha **Adicionar**. Você pode adicionar até 60 itens.
@@ -94,7 +94,7 @@ Os aplicativos adicionados a uma página em uma pasta são dispostos da esquerda
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID de Pacote para aplicativos iOS internos
 
-Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software. 
+Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software.
 
 |||
 |-|-|

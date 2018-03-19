@@ -13,13 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 156d37874529b4ae5a8176d7e9a8873cf440c32c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Configurações personalizadas de dispositivo do Microsoft Intune para dispositivos que executam o Windows 10 
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Configurações personalizadas de dispositivo do Microsoft Intune para dispositivos que executam o Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,11 +29,11 @@ Se você estiver procurando uma determinada configuração, lembre-se de que o [
 ## <a name="configure-custom-settings"></a>Definir configurações personalizadas
 
 1. Use as instruções em [Como definir configurações personalizadas do dispositivo no Microsoft Intune](custom-settings-configure.md) para começar.
-2. Na página **Criar Perfil**, escolha **Configurações** para adicionar uma ou mais configurações OMA-URI.
-3. Na página **Configurações personalizadas de OMA-URI**, clique em **Adicionar** para adicionar um novo valor. Você também pode clicar em **Exportar** para criar uma lista de todos os valores configurados em um arquivo de valores separados por vírgulas (.csv).
-4. Para cada configuração de OMA-URI que você desejar adicionar, insira as informações a seguir. Veja a lista deste artigo para saber mais sobre as configurações que você pode usar:
-    - **Nome da configuração** - insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.
-    - **Descrição da configuração** - opcionalmente, insira uma descrição para a configuração.
+1. No painel **Configurações personalizadas de OMA-URI**, clique em **Adicionar** para adicionar um novo valor. Você também pode clicar em **Exportar** para criar uma lista de todos os valores configurados em um arquivo de valores separados por vírgulas (.csv).
+1. Para cada configuração de OMA-URI que você desejar adicionar, insira as informações a seguir. Veja a lista deste artigo para saber mais sobre as configurações que você pode usar:
+    - **Nome** – Insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.
+    - **Descrição** – opcionalmente, insira uma descrição para a configuração.
+    - **OMA-URI (com distinção entre maiúsculas e minúsculas)** - especifique o OMA-URI para o qual você deseja fornecer uma configuração.
     - **Tipo de dados** - escolha dentre:
         - **Cadeia de caracteres**
         - **Cadeia de caracteres (XML)**
@@ -41,10 +41,10 @@ Se você estiver procurando uma determinada configuração, lembre-se de que o [
         - **Inteiro**
         - **Ponto flutuante**
         - **Booliano**
-    - **OMA-URI (com distinção entre maiúsculas e minúsculas)** - especifique o OMA-URI para o qual você deseja fornecer uma configuração.
-    - **Valor** - especifique o valor para associar ao OMA-URI que você inseriu.
-5. Após terminar, volte para a página **Criar Perfil** e selecione **Criar**.
-O perfil é criado e exibido na página da lista de perfis.
+        - **Base64**
+    - **Valor** – especifique o valor ou o arquivo a ser associado ao OMA-URI que você inseriu.
+1. Quando terminar, selecione **OK**, volte para o painel **Criar perfil** e selecione **Criar**.
+O perfil é criado e aparece no painel da lista de perfis.
 
 ## <a name="example"></a>Exemplo
 Na captura de tela abaixo, a configuração **Connectivity/AllowVPNOverCellular** foi habilitada. Isso permite que um dispositivo Windows 10 abra uma conexão VPN quando estiver em uma rede de celular.
@@ -59,5 +59,3 @@ Você encontrará uma lista completa de todos os provedores de serviço de confi
 Nem todas as configurações são compatíveis com todas as versões do Windows 10. A tabela no artigo do Windows informa quais versões são compatíveis com cada CSP.
 
 Além disso, o Intune não dá suporte a todas as configurações listadas no artigo. Para saber se o Intune é compatível com a configuração desejada, abra o artigo dessa configuração. Cada página de configuração mostra a operação de suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar** ou **Substituir**.
-
-
