@@ -1,10 +1,10 @@
 ---
-title: "Migrar políticas de acesso condicional no portal clássico do Intune para o Portal do Azure"
-titlesuffix: Azure portal
-description: "Migrar políticas de acesso condicional no portal clássico do Intune para o novo Portal do Azure."
+title: Migrar o acesso condicional para o Portal do Azure
+titlesuffix: Microsoft Intune
+description: "Reatribua as políticas de acesso condicional criadas anteriormente no Portal Clássico do Intune para o Portal do Azure."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional no portal clássico do Intune para o Portal do Azure
 
-A partir do novo Portal do Azure, o acesso condicional dará suporte para várias políticas por aplicativo juntamente com maior capacidade de personalização.
+A partir do novo Portal do Azure, o acesso condicional dará suporte para várias políticas por aplicativo juntamente com maior capacidade de personalização. Se já tiver criado anteriormente as políticas de acesso condicional no Portal Clássico do Intune, você poderá migrá-las para o Portal do Azure. 
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -79,7 +79,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
 
 4. Na seção **Atribuições**, escolha **Usuários e grupos** para direcionara a nova política de acesso condicional.
     
-    ![Comparação da interface do usuário de grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-1.png)
+    ![Imagem mostrando uma comparação da interface do usuário do grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o Portal Clássico. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
@@ -94,7 +94,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
 
 9. Clique em **Concluído**.
 
-    ![Comparação da interface do usuário do aplicativo de nuvem entre os Portais do Intune e do Azure](./media/reassign-ca-3.png)
+    ![Imagem mostrando uma comparação da interface do usuário do aplicativo de nuvem entre os Portais do Intune e do Azure](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Se você tiver vários aplicativos com a mesma política, considere consolidá-las em uma única política no Portal do Azure.
@@ -105,7 +105,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
 
 12. Quando você terminar de escolher as plataformas de dispositivo, clique em **Concluído** duas vezes.
 
-    ![Comparação da interface do usuário da plataforma do dispositivo entre os Portais do Intune e do Azure](./media/reassign-ca-4.png)
+    ![Imagem mostrando uma comparação da interface do usuário da plataforma do dispositivo entre os Portais do Intune e do Azure](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Se você tiver escolhido plataformas individuais no portal clássico do Intune, escolha as plataformas individuais no Portal do Azure.
@@ -119,7 +119,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
 
 15. Quando você terminar de escolher o aplicativo cliente, clique em **Concluído** duas vezes.
 
-    ![Comparação da interface do usuário do aplicativo cliente entre os Portais do Intune e do Azure](./media/reassign-ca-6.png)
+    ![Imagem mostrando uma comparação da interface do usuário do aplicativo cliente entre os Portais do Intune e do Azure](./media/reassign-ca-6.png)
 
 16. Se você tiver escolhido as configurações do navegador no portal clássico do Intune, selecione ambos **Navegador** e **Aplicativos móveis e cliente de área de trabalho** no Portal do Azure. Caso você não tenha escolhido as configurações do navegador no portal clássico do Intune, escolha apenas **Aplicativos móveis e cliente de área de trabalho**. 
 
@@ -133,7 +133,7 @@ A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os
 
 21. Na folha de política de acesso condicional **Novo**, ative o botão de alternância **Habilitar política** e clique em **Criar**.
 
-    ![Habilitar a comparação de interface do usuário da política de acesso condicional entre os Portais do Intune e do Azure](./media/reassign-ca-11.png)
+    ![Imagem mostrando como habilitar a comparação de interface do usuário da política de acesso condicional entre os Portais do Intune e do Azure](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Reatribuir as políticas de acesso condicional baseado em dispositivo do Intune para clientes EAS
 
@@ -147,7 +147,7 @@ Se você tiver definido as configurações do Exchange Active Sync como parte de
 
 4. Na seção **Atribuições**, escolha **Usuários e grupos** para direcionara a nova política de acesso condicional.
 
-    ![Comparação da interface do usuário de grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-12.png)
+    ![Imagem mostrando uma comparação da interface do usuário do grupo de usuários entre os Portais do Intune e do Azure](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > A seleção feita para o Portal do Azure deve corresponder à seleção feita para o Portal do Azure. Por exemplo, se todos os usuários forem selecionados no portal clássico do Intune, selecione **Todos os usuários** no Portal do Azure. Além disso, se você tiver escolhido a opção **Isentar grupos** no portal clássico do Intune, exclua também os grupos selecionados no Portal do Azure.
@@ -158,14 +158,14 @@ Se você tiver definido as configurações do Exchange Active Sync como parte de
 
 7. Na folha **Aplicativos de nuvem**, clique em **Selecionar aplicativos** e escolha **Exchange Online**. Em seguida, clique em **Selecione** e **Concluído**.
 
-    ![Comparação da interface do usuário dos aplicativos de nuvem entre os Portais do Intune e do Azure](./media/reassign-ca-14.png)
+    ![Imagem mostrando uma comparação da interface do usuário do aplicativo de nuvem entre os Portais do Intune e do Azure](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > As políticas de acesso condicional para clientes EAS não podem incluir nenhum outro aplicativo de nuvem.
 
 8. Na folha **Condições**, escolha **Aplicativos cliente** e escolha o aplicativo cliente aplicável. Se você tiver optado por bloquear os clientes sem suporte no Intune, use a opção **Aplicar política somente a plataformas com suporte**.
 
-    ![Comparação da interface do usuário do aplicativo cliente entre os Portais do Intune e do Azure](./media/reassign-ca-15.png)
+    ![Imagem mostrando uma comparação da interface do usuário do aplicativo cliente entre os Portais do Intune e do Azure](./media/reassign-ca-15.png)
 
 9. Quando você terminar de escolher o aplicativo cliente, clique em **Concluído** duas vezes.
 
@@ -173,11 +173,11 @@ Se você tiver definido as configurações do Exchange Active Sync como parte de
 
 11. Em **Conceder Controles de Acesso**, escolha **Exigir que o dispositivo seja marcado como em conformidade** e clique em **Selecionar**.
 
-    ![Comparação da interface do usuário de conceder acesso entre os Portais do Intune e do Azure](./media/reassign-ca-16.png)
+    ![Imagem mostrando uma comparação da interface do usuário de concessão de acesso entre os Portais do Intune e do Azure](./media/reassign-ca-16.png)
 
 12. Na folha de política de acesso condicional **Novo**, ative o botão de alternância **Habilitar política** e clique em **Criar**.
 
-    ![Habilitar a comparação de interface do usuário da política de acesso condicional entre os Portais do Intune e do Azure](./media/reassign-ca-17.png)
+    ![Imagem mostrando Habilitar a comparação de interface do usuário da política de acesso condicional entre os Portais do Intune e do Azure](./media/reassign-ca-17.png)
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Desabilitar as políticas de acesso condicional no Portal Clássico do Intune
 
@@ -196,7 +196,7 @@ Depois que tiver reatribuído suas políticas de acesso condicional no Portal do
 
 4.  Desmarque a opção **Habilitar política de acesso condicional** e clique em **Salvar**.
 
-    ![Desabilitar as políticas de acesso condicional no Portal Clássico do Intune](./media/reassign-ca-18.png)
+    ![Imagem mostrando Desabilitar políticas de acesso condicional no Portal Clássico do Intune](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>Consulte também
 

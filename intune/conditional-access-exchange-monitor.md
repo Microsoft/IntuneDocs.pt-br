@@ -1,12 +1,12 @@
 ---
-title: Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online
-titlesuffix: Azure portal
-description: Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online por meio do Portal do Azure no Intune
+title: Monitorar o acesso condicional do Exchange no Microsoft Intune
+titlesuffix: 
+description: Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online por meio do Portal do Azure no Intune.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorar a conformidade de acesso condicional do Exchange Local e do Exchange Online no Intune
 
@@ -36,25 +36,25 @@ A partir da versão 1704 do Intune, os administradores podem ver informações d
 
 2.  Quando entrar com êxito, você verá o **Painel do Azure**.
 
-3.  Escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+3.  Escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
 4.  Escolha **Intune** e você verá o **Painel do Intune**.
 
-5.  Escolha **Acesso Condicional**, em seguida, escolha **Visão Geral**.
+5.  Escolha **Acesso condicional** e, em seguida, escolha **Visão Geral**.
 
-6.  Escolha uma das três áreas (**Bloqueado**, **Quarentena** ou **Permitido**) no gráfico para exibir o relatório de conformidade de acesso condicional.
+6.  Escolha uma das três áreas (**Permitido**, **Bloqueado** ou **Quarentena**) no gráfico para exibir o relatório de conformidade de acesso condicional.
 
-    ![Painel de acesso condicional](./media/CA-reporting-intune-1.png)
+    ![Imagem do Painel de acesso condicional](./media/CA-reporting-intune-1.png)
 
-Depois de escolher uma das três áreas, você poderá ver mais detalhes sobre os dispositivos que estão sendo permitidos, bloqueados ou colocados em quarentena.
+Depois de escolher uma das três áreas, você poderá ver mais detalhes sobre os dispositivos que foram permitidos, bloqueados ou colocados em quarentena.
 
-Você também poderá analisar em dispositivos específicos para ver mais detalhes. Por exemplo, o dispositivo escolhido na imagem abaixo está bloqueado. O Intune dá a opção de remover dados corporativos da folha de relatórios de conformidade de acesso condicional.
+Você também poderá analisar em dispositivos específicos para ver mais detalhes. Por exemplo, o dispositivo escolhido na imagem a seguir está bloqueado. O Intune dá a opção de remover dados corporativos do painel de relatórios de conformidade de acesso condicional.
 
-![Relatório de detalhes do dispositivo de acesso condicional](./media/CA-reporting-intune-3.png)
+![Imagem do Relatório de detalhes do dispositivo de acesso condicional](./media/CA-reporting-intune-3.png)
 
-Na folha detalhes do dispositivo, você pode ver mais informações:
+No painel de detalhes do dispositivo, é possível ver mais informações:
 
--   **Visão geral:** você pode ver as propriedades do dispositivo como: versão do sistema operacional, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e última vez que o dispositivo fez check-in.
+-   **Visão geral:** é possível ver as propriedades do dispositivo como: versão do sistema operacional, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e última vez que o dispositivo fez check-in.
 
 -   **Propriedades:** você pode definir a propriedade do dispositivo (pessoal ou corporativa).
 

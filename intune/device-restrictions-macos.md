@@ -1,29 +1,29 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para macOS"
-titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos macOS."
+title: "Configurações de restrição de dispositivo do Microsoft Intune para macOS"
+titlesuffix: 
+description: "Conheça as definições do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo nos dispositivos que executam o macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo macOS no Microsoft Intune
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Configurações de restrição de dispositivo macOS do Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use essas configurações para gerenciar dispositivos macOS em um perfil de restrição de dispositivo.
+Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o macOS.
 
 ## <a name="password"></a>Senha
 -   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
@@ -49,5 +49,5 @@ Para configurar a lista, clique em **Adicionar**, especifique um nome de sua pre
 
 ### <a name="unmarked-email-domains"></a>Domínios de email desmarcados
 
-No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente daqueles configurados por você, o email será marcado como não confiável no aplicativo Mail do iOS.
+No campo **URL do Domínio de Email**, adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente daquele configurado por você, o email será marcado como não confiável no aplicativo Email do iOS.
 

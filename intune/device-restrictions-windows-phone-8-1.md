@@ -1,29 +1,30 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos Windows Phone 8.1."
+title: "Configurações de restrição de dispositivo do Microsoft Intune para Windows 8.1"
+titleSuffix: 
+description: "Conheça as definições do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo nos dispositivos que executam o Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Windows Phone 8.1 no Microsoft Intune
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Configurações de restrição de dispositivo Windows Phone 8.1 no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que podem ser definidas para dispositivos que executam o Windows Phone 8.1.
+
 
 ## <a name="general"></a>Geral
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="password"></a>Senha
 
 -   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
-    -   **Tipo de senha exigida** – Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.
+    -   **Tipo de senha exigida** – Especifica o tipo de senha que será necessária, como apenas caracteres numéricos ou alfanuméricos.
     -   **Tamanho mínimo da senha** – Especifica o número mínimo de caracteres necessários na senha.
     -   **Senhas simples** – Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.
     -   **Número de falhas de entrada antes de apagar o dispositivo** – Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.
@@ -69,13 +70,13 @@ Na página da [Windows Phone Store](https://www.microsoft.com/store/apps/windows
 
 Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.
 
-Exemplo: pesquisar o aplicativo Skype na loja. A URL usada será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Exemplo: pesquisar o aplicativo Skype na loja. A URL usada é **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 
 ### <a name="additional-options"></a>Opções adicionais
 
-Você também pode clicar em **Importar** para popular a lista de um arquivo csv no formato <*url do aplicativo*>, <*nome do aplicativo*>, <*editor do aplicativo*>, ou clique em **Exportar** para criar um arquivo csv que inclui o conteúdo da lista de aplicativos restritos no mesmo formato.
+Você também pode clicar em **Importar** para popular a lista de um arquivo csv no formato <*url do aplicativo*>, <*nome do aplicativo*>, <app publisher> ou clicar em **Exportar** para criar um arquivo csv que inclui o conteúdo da lista de aplicativos restritos no mesmo formato.
 
 
 ## <a name="browser"></a>Navegador

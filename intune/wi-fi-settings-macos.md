@@ -1,40 +1,40 @@
 ---
-title: "Configurações de Wi-Fi do Intune para dispositivos macOS"
-titleSuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para configurar as conexões Wi-Fi em dispositivos macOS."
+title: "Configurações de Wi-Fi do Microsoft Intune para dispositivos que executam o macOS"
+titleSuffix: 
+description: "Conheça as definições do Intune que você pode usar para configurar as conexões Wi-Fi em dispositivos que executam macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a48671d738a2697202b98073502433ed0888316
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25cc8cd550567d6edc63f1cab416bdb7d978eb52
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Configurações de Wi-Fi para dispositivos macOS no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Este artigo mostra as configurações de Wi-Fi que você pode definir no Microsoft Intune para dispositivos que executam macOS.
+
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Configurações Wi-Fi para perfis básico e empresarial
 
-- **Nome da rede** – Insira um nome para esta conexão Wi-Fi. Esse é o nome que os usuários verão ao navegarem pela lista de conexões disponíveis no seu dispositivo.
-- **SSID** – Abreviação de identificador de conjunto de serviço (service set identifier em inglês). Esse é o nome real da rede sem fio à qual os dispositivos se conectarão. No entanto, os usuários veem apenas o nome de rede criado anteriormente ao escolher a conexão.
+- **Nome da rede** – Insira um nome para esta conexão Wi-Fi. Esse é o nome que os usuários verão ao navegarem pela lista de conexões disponíveis no dispositivo.
+- **SSID** – Abreviação de identificador de conjunto de serviço (service set identifier em inglês). Esse é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o nome de rede configurado ao escolher a conexão.
 - **Conectar-se automaticamente** – Faz com que o dispositivo se conecte sempre que estiver no intervalo da rede.
 - **Rede oculta** – Impede que essa rede seja exibida na lista de redes disponíveis no dispositivo.
 - **Configurações de proxy** – Escolha dentre:
-    - **Nenhum** – Nenhuma configuração de proxy será definida.
+    - **Nenhum** – Nenhuma configuração de proxy é definida.
     - **Manual** – Insira o **Endereço do servidor proxy** (como um endereço IP) e seu **Número da porta** associado.
-    - **Automático** – Use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com**) que contém o arquivo de configuração.
+    - **Automático** – Use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com) que contém o arquivo de configuração.
 
 ## <a name="wi-fi-settings-for-basic-profiles-only"></a>Configurações Wi-Fi apenas para perfis básicos
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/25/2018
 
 |Nome da configuração|Mais informações|Usar quando|
 |--------------|-------------|----------|
-|**Nomes de servidor de certificados**|Especifique um ou mais nomes comuns usados nos certificados emitidos pela sua AC (autoridade de certificação) confiável. Se você fornecer essas informações, poderá fazer o bypass da caixa de diálogo de confiança dinâmica que é exibida em dispositivos de usuários finais quando eles se conectam à rede Wi-Fi.|O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**.|
+|**Nomes de servidor de certificados**|Especifique um ou mais nomes comuns usados nos certificados emitidos pela sua AC (autoridade de certificação) confiável. Se você fornecer essas informações, poderá fazer o bypass da caixa de diálogo de confiança dinâmica que é exibida em dispositivos de usuários quando eles se conectam à rede Wi-Fi.|O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**.|
 |**Certificado raiz para validação do servidor**|Escolha o perfil de certificado raiz confiável usado para autenticar a conexão. |O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
 |**Privacidade de identidade (identidade externa)**|Especifique o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.|O tipo de EAP é **PEAP**|
 

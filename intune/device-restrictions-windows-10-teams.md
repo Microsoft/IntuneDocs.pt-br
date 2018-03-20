@@ -1,29 +1,29 @@
 ---
-title: "Restrições de dispositivo do Intune para Windows 10 Team"
-titlesuffix: Azure portal
-description: "Saiba mais sobre as restrições de dispositivo disponíveis para dispositivos Windows 10 Team."
+title: "Restrições de dispositivo do Microsoft Intune para Windows 10 Team"
+titlesuffix: 
+description: "Saiba mais sobre as restrições de dispositivo disponíveis para dispositivos que executam o Windows 10 Team."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3648f8b273f666d1898226f3da8580e55a6bc6f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo Windows 10 Team no Microsoft Intune
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Configurações de restrição de dispositivo do Windows 10 Team no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que podem ser definidas para dispositivos que executam o Windows 10 Team.
 
 
 ## <a name="apps-and-experience"></a>Aplicativos e experiência
@@ -47,7 +47,7 @@ Para se conectar aos Insights Operacionais do Azure, você deve especificar uma 
 
 - **PIN para projeção sem fio** – Especifica se você deve inserir um PIN antes de poder usar os recursos de projeção sem fio do dispositivo.
 - **Projeção sem fio Miracast** – selecione essa opção se você quiser permitir que o dispositivo Windows 10 Team use dispositivos habilitados do Miracast para o projeto.
-- **Canal de projeção sem fio Miracast** – escolha o canal Miracast que será usado para estabelecer a conexão.
+- **Canal de projeção sem fio Miracast** – Escolha o canal Miracast que será usado para estabelecer a conexão.
 
 
 ## <a name="next-steps"></a>Próximas etapas

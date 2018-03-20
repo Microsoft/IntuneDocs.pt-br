@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46555f776ff93207f4672dc5d97abbaa2323b234
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2a207f15e7c5b678368eeb54e8452638ff5a01ef
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Use um perfil personalizado do Microsoft Intune para criar um perfil de VPN por aplicativo para dispositivos Android
 
@@ -37,12 +37,12 @@ Depois que você atribuir a política para os grupos de usuários ou o dispositi
 ## <a name="step-1-create-a-vpn-profile"></a>Etapa 1: Criar um perfil de VPN
 
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
-2. Na folha da lista de perfis, escolha **Criar Perfil**.
-3. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** opcional para o perfil VPN.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
+2. No painel da lista de perfis, escolha **Criar perfil**.
+3. No painel **Criar perfil**, insira um **Nome** e uma **Descrição** opcional para o perfil de VPN.
 4. Na lista suspensa **Plataforma**, escolha **Android**.
 5. Na lista suspensa **Tipo de perfil**, escolha **VPN**.
 3. Escolha **Configurações** > **Definir** e defina o perfil VPN de acordo com as configurações em [Como definir as configurações de VPN](vpn-settings-configure.md) e [Configurações VPN do Intune para dispositivos Android](vpn-settings-android.md).
@@ -51,19 +51,19 @@ Anote o valor de **Nome da Conexão** que você especificou ao criar o perfil de
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Etapa 2: Criar uma política de configuração personalizada
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
-3. Na folha de perfis, clique em **Criar Perfil**.
-4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil personalizado.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
+3. No painel de perfis, clique em **Criar perfil**.
+4. No painel **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil personalizado.
 5. Na lista suspensa **Plataforma**, escolha **Android**.
 6. Na lista suspensa **Tipo de perfil**, escolha **Personalizado**.
 7. Escolha **Configurações** > **Definir**.
-3. Na folha **Configurações personalizadas de OMA-URI**, escolha **Adicionar**.
+3. No painel **Configurações personalizadas de OMA-URI**, escolha **Adicionar**.
     - Insira um nome para a configuração.
-    - Para **Tipo de dados**, especifique **Cadeia de caracteres**.
     - Para **OMA-URI**, especifique esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/PackageList**, em que *Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Nesse exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - Para **Tipo de dados**, especifique **Cadeia de caracteres**.
     - Em **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a serem associados ao perfil. Por exemplo, se desejar que o Excel e o navegador Google Chrome usem a conexão VPN, digite: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicativo Android](./media/android_per_app_vpn_oma_uri.png)
@@ -71,10 +71,10 @@ Anote o valor de **Nome da Conexão** que você especificou ao criar o perfil de
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Definir sua lista de aplicativos como lista de bloqueios ou lista de permissões (opcional)
   Você pode especificar uma lista de aplicativos que *não podem* usar a conexão VPN usando o valor **BLACKLIST**. Todos os outros aplicativos se conectam por meio da VPN.
 Como alternativa, você pode usar o valor **WHITELIST** para especificar uma lista de aplicativos que *podem* usar a conexão VPN. Os aplicativos que não estão na lista não se conectam por meio da VPN.
-  1.    Na folha **Configurações personalizadas de OMA-URI**, escolha **Adicionar**.
+  1.    No painel **Configurações personalizadas de OMA-URI**, escolha **Adicionar**.
   2.    Insira um nome para a configuração.
-  3.    Para **Tipo de dados**, especifique **Cadeia de caracteres**.
-  4.    Para **OMA-URI**, use esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Em nosso exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  3.    Para **OMA-URI**, use esta cadeia de caracteres: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil de VPN que você anotou na Etapa 1. Em nosso exemplo, a cadeia de caracteres seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Para **Tipo de dados**, especifique **Cadeia de caracteres**.
   5.    Em **Valor**, digite **BLACKLIST** ou **WHITELIST**.
 
 

@@ -1,12 +1,12 @@
 ---
-title: Configurar o Exchange Connector para o EAS local com o Intune
-titleSuffix: Azure portal
-description: "Use a ferramenta Connector para habilitar a comunicação entre o Intune e o Exchange Server local"
+title: Configurar o conector do Exchange local do Microsoft Intune
+titleSuffix: 
+description: "Use o conector do Exchange local para gerenciar o acesso de dispositivo às caixas de correio do Exchange com base no registro do Intune e no EAS (Exchange Active Sync)."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune no Azure
 
-Os ambientes do Exchange Server local podem usar o conector do Exchange local do Intune para gerenciar o acesso de dispositivos a caixas de correio do Exchange local, levando em conta se os dispositivos estão registrados no Intune e em conformidade com as políticas de conformidade do dispositivo do Intune. O Exchange Connector local também é responsável pela descoberta de dispositivos móveis que se conectam a Exchange Servers locais, com a sincronização do registro existente do EAS (Exchange Active Sync) com o Intune.
+Os ambientes do Exchange Server local podem usar o conector do Exchange local do Intune para gerenciar o acesso de dispositivos a caixas de correio do Exchange local, dependendo se os dispositivos estão registrados no Intune e em conformidade com as políticas de conformidade do dispositivo do Intune ou não. O Exchange Connector local também é responsável pela descoberta de dispositivos móveis que se conectam a Exchange Servers locais, com a sincronização do registro existente do EAS (Exchange Active Sync) com o Intune.
 
 > [!IMPORTANT]
 > O Intune dá suporte apenas a uma conexão do Exchange Connector local de qualquer tipo por assinatura.
@@ -70,11 +70,11 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 
 1. Em um sistema operacional Windows Server com suporte para o Exchange Connector Local, abra o [portal do Azure](http://portal.azure.com) e entre com uma conta de usuário que é um administrador no servidor Exchange local e que tem uma licença para usar o Exchange Server.
 
-2. Escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+2. Escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
 3. Escolha **Intune**. O Painel do Intune é aberto. Escolha **Acesso local**.
 
-4. Na folha **Acesso local – Conector do Exchange ActiveSync**, na seção **Configuração**, escolha **Baixar o conector local**.
+4. Escolha **Conector do Exchange ActiveSync** e **Baixar o conector local**.
 
 5.  O Exchange Connector Local vem em uma pasta compactada (.zip) que pode ser aberta ou salva. Na caixa de diálogo **Download de Arquivos**, clique em **Salvar** para armazenar a pasta compactada em um local seguro.
 
@@ -93,7 +93,7 @@ Execute as seguintes etapas para instalar o Exchange Connector Local do Intune. 
 
 3.  Na caixa de diálogo **Microsoft Intune Exchange Connector**, selecione **Microsoft Exchange Server Local** ou **Microsoft Exchange Server Hospedado**.
 
-  ![Escolha o tipo de Exchange Server](./media/intune-sa-exchange-connector-config.png)
+  ![Imagem mostrando onde escolher o tipo de Exchange Server](./media/intune-sa-exchange-connector-config.png)
 
   Para um Exchange Server Local, forneça o nome do servidor ou um nome de domínio totalmente qualificado do Exchange Server que hospeda a função de **Servidor de Acesso para Cliente**.
 
@@ -116,7 +116,7 @@ Execute as seguintes etapas para instalar o Exchange Connector Local do Intune. 
 
     5. Nos campos **Usuário (Domínio\usuário)** e **Senha**, insira as credenciais necessárias para se conectar ao Exchange Server.
 
-    6.  Forneça as credenciais administrativas necessárias para enviar notificações para a caixa de entrada do Exchange Server do usuário. Você pode configurar essas notificações com políticas de Acesso Condicional no Intune.
+    6.  Forneça as credenciais necessárias para enviar notificações para a caixa de entrada do Exchange Server do usuário. Este usuário pode ser dedicado a apenas notificações. O usuário das notificações precisa de uma caixa de correio do Exchange para poder enviar notificações por email. Você pode configurar essas notificações com políticas de acesso condicional no Intune.  
 
         Verifique se o serviço Descoberta Automática e os Serviços Web do Exchange estão configurados no Servidor de Acesso para Cliente do Exchange. Para obter mais informações, consulte [Servidor de Acesso para Cliente](https://technet.microsoft.com/library/dd298114.aspx).
 
