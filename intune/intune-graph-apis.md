@@ -5,7 +5,7 @@ keywords: "funções de permissão PowerShell C# Intune API do Graph"
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como usar o Azure AD para acessar as APIs do Intune no Microsoft Graph
 
@@ -44,7 +44,7 @@ Este artigo:
 
 - Fornece exemplos de autenticação da API do Intune para C# e PowerShell.
 
-- Descreve como dar suporte a vários locatários
+- Descreve como dar suporte a vários locatários.
 
 Para obter mais informações, consulte:
 
@@ -97,7 +97,7 @@ Para registrar um aplicativo para usar a API do Microsoft Graph:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Escolha as funções necessárias para o aplicativo colocando uma marca de seleção à esquerda dos nomes de relevantes.  Para saber mais sobre escopos de permissões específicos do Intune, consulte [Escopos de permissões do Intune](#user-content-intune-permission-scopes).  Para saber mais sobre outros escopos de permissões da API do Graph, consulte [Referência de permissões do Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    Escolha as funções necessárias para o aplicativo colocando uma marca de seleção à esquerda dos nomes de relevantes.  Para saber mais sobre escopos de permissões específicos do Intune, consulte [Escopos de permissões do Intune](#intune-permission-scopes).  Para saber mais sobre outros escopos de permissões da API do Graph, consulte [Referência de permissões do Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     Para obter melhores resultados, escolha o menor número de funções necessárias para implementar o aplicativo.
 
@@ -139,7 +139,7 @@ Ao conceder permissão para o Microsoft Graph, você pode especificar os seguint
 
 Configuração _Habilitar o Acesso_ | Nome do escopo
 :--|:--
-__Executar ações remotas que afetam o usuário em dispositivos Microsoft Intune__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Executar ações remotas que afetam o usuário em dispositivos Microsoft Intune__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Ler e gravar dispositivos Microsoft Intune__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Ler dispositivos Microsoft Intune__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Ler e gravar configurações de RBAC do Microsoft Intune__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ Lembre-se de adicionar o usuário a outras funções, conforme necessário. Por 
 
 Também:
 
-- Use http://portal.office.com para atribuir uma licença do Intune à sua conta de usuário.
+- Use https://portal.office.com para atribuir uma licença do Intune à sua conta de usuário.
 
 - Atualize o código do aplicativo para autenticação no domínio de locatário do Azure AD do cliente, em vez de em seu próprio.
 

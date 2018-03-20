@@ -1,11 +1,12 @@
 ---
-title: Modelo de dados do Data Warehouse | Microsoft Docs
-description: "O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente móvel em constante mudança."
+title: Modelo de dados do Data Warehouse
+titlesuffix: Microsoft Intune
+description: "O Microsoft Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente móvel em constante mudança."
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Data Warehouse
 
-O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente de dispositivos móveis em constante mudança. O modo de exibição é composto de itens relacionados no tempo.
+O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente de dispositivos móveis em constante mudança. A exibição é composta por entidades relacionadas no tempo.
 
-## <a name="things-entity-sets"></a>Coisas: Conjuntos de entidades
+## <a name="entities-entity-sets"></a>Entidade: conjuntos de entidades
 
 O warehouse expõe dados nas seguintes áreas de alto nível:
 
@@ -33,7 +34,7 @@ O warehouse expõe dados nas seguintes áreas de alto nível:
   -  Inventário de aplicativos e software
   -  Políticas de conformidade e configuração do dispositivo
 
-Essas áreas contêm entidades, ou coisas, que são significativas para o ambiente do Intune. Encontre detalhes sobre os conjuntos de entidade nos tópicos a seguir:
+Essas áreas contêm entidades que são significativas para seu ambiente do Intune. Encontre detalhes sobre os conjuntos de entidade nos tópicos a seguir:
 
   -  [Aplicativo](reports-ref-application.md)
   -  [Data](reports-ref-date.md)

@@ -1,29 +1,29 @@
 ---
-title: "Configurações de VPN do Intune para dispositivos iOS"
-titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para configurar as conexões VPN em dispositivos iOS."
+title: "Configurações de VPN do Microsoft Intune para dispositivos que executam o iOS"
+titlesuffix: 
+description: "Conheça as definições do Intune que você pode usar para configurar as conexões VPN em dispositivos que executam o iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Configurações de VPN para dispositivos iOS no Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra as configurações do Intune que você pode usar para configurar conexões VPN em dispositivos que executam iOS.
 
 Dependendo das configurações que você escolher, nem todos os valores na lista a seguir serão configuráveis.
 
@@ -38,7 +38,7 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 - **Tipo de Conexão** – Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPsec)**
@@ -62,7 +62,7 @@ Se você selecionou **VPN Personalizada**, como o tipo de conexão, defina essas
 - **Regras de sob demanda** – Isso permite configurar regras condicionais que controlam quando a conexão VPN é iniciada. Por exemplo, você pode criar uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma das redes Wi-Fi da empresa. Como alternativa, você poderia criar uma condição em que, se um dispositivo não puder acessar um domínio de pesquisa DNS especificado, a conexão VPN não será iniciada.
 
     - **Domínios de pesquisa de DNS ou SSIDs** – selecione se essa condição usará a rede sem fio **SSIDs** ou os **domínios de pesquisa de DNS**. Escolha Adicionar para configurar um ou mais SSIDs ou pesquisar domínios.
-    - **Teste de cadeia de caracteres de URL** – opcionalmente, forneça uma URL que usa a regra como um teste. Se o dispositivo no qual esse perfil está instalado puder acessar essa URL sem redirecionamento, a conexão VPN será iniciada e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres de URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
+    - **Teste de cadeia de caracteres de URL** – opcionalmente, forneça uma URL que usa a regra como um teste. Se o dispositivo no qual esse perfil está instalado puder acessar essa URL sem redirecionamento, a conexão VPN será iniciada e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
     - **Ação de domínio** – escolha uma das seguintes opções:
         - Conectar se necessário – 
         - Nunca conectar – 

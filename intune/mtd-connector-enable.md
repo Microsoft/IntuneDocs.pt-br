@@ -1,12 +1,12 @@
 ---
-title: "Habilitar o conector de Defesa Contra Ameaças Móveis com o Intune"
+title: "Habilitar o conector do Defesa contra Ameaças Móveis no Microsoft Intune"
 titlesuffix: Azure portal
-description: "Habilite o conector de Defesa Contra Ameaças Móveis no Intune."
+description: "Habilite o conector entre o parceiro de MTD (Defesa contra Ameaças Móveis) e o Microsoft Intune."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,30 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 28233965fb68ef1b83b07d14d39568b5bd997c89
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>Habilitar a Defesa Contra Ameaças Móveis no Intune
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Habilitar o conector do Defesa contra Ameaças Móveis no Intune
 
 > [!NOTE] 
 > Este tópico se aplica a todos os parceiros de Defesa contra Ameaças Móveis.
 
-Para habilitar a conexão de MTD (Defesa contra Ameaças Móveis) no Intune, você já deve ter configurado o Conector do Intune no console do parceiro de MTD.
+Durante a instalação do MTD (Defesa contra Ameaças Móveis), você configurou uma política para classificar ameaças em seu console de parceiro do MTD e criou a política de conformidade de dispositivo no Intune. Se já tiver configurado o conector do Intune no console do parceiro de MTD, agora você poderá habilitar a conexão do MTD no Intune.
 
 ## <a name="to-enable-the-mtd-connector"></a>Para habilitar o conector MTD
 
 1. Vá para o [Portal do Azure](https://portal.azure.com) e entre com suas credenciais do Intune. Quando entrar com êxito, você verá o **Painel do Azure**.
 
-2. No **Painel do Azure**, escolha **Mais serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+2. No **Painel do Azure**, escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
 3. Escolha **Intune** e o **Painel do Intune** se abrirá.
 
 4. No **Painel do Intune**, escolha **Conformidade do dispositivo** e, depois, **Defesa contra Ameaças Móveis** na seção **Configuração**.
 
-5. Na folha **Defesa contra Ameaças Móveis**, escolha **Adicionar**.
+5. No painel **Defesa contra Ameaças Móveis**, escolha **Adicionar**.
 
 6. Escolha sua solução MTD como o **conector de Defesa contra Ameaças Móveis para configuração** na lista suspensa.
 
@@ -48,7 +48,7 @@ Para habilitar a conexão de MTD (Defesa contra Ameaças Móveis) no Intune, voc
 
 ## <a name="mtd-toggle-options"></a>Opções de alternância de MTD
 
-Decida quais opções de alternância do MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes:
+Decida quais opções de alternância do MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes abaixo:
 
 - **Conectar dispositivos Android 4.1 ou superior ao [nome do parceiro de MTD] for Work MTD**: ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 ou superior relatem os riscos de segurança para o Intune.
     - **Marcar como fora de conformidade se nenhum dado for recebido**: se o Intune não receber dados do parceiro de MTD sobre um dispositivo nesta plataforma, considerar o dispositivo não compatível.
@@ -64,4 +64,4 @@ Decida quais opções de alternância do MTD você precisa habilitar de acordo c
 > Você deve adicionar e atribuir os aplicativos MTD antes de criar a conformidade do dispositivo e as regras de política de acesso condicional. Isso garante que o aplicativo MTD esteja pronto e disponível para os usuários finais instalarem antes que possam ter acesso a emails ou outros recursos da empresa.
 
 > [!TIP]
-> Veja o **Status da conexão** e o tempo da **Última sincronização** entre o Intune e o parceiro de MTD na folha Defesa contra Ameaças Móveis.
+> Veja o **Status da conexão** e o tempo da **Última sincronização** entre o Intune e o parceiro de MTD no painel de Defesa contra Ameaças Móveis.

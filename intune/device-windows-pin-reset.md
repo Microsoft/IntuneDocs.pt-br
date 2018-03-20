@@ -1,12 +1,11 @@
 ---
-title: Redefinir senha em dispositivos Windows com o Intune
-titlesuffix: Azure portal
-description: "Saiba como usar o Intune para redefinir a senha em dispositivos do Windows integrados com o Serviço de Redefinição do PIN da Microsoft.”"
+title: "Redefinir a senha de dispositivos Windows com o Microsoft Intune – Azure | Microsoft Docs"
+description: "Para redefinir a senha em dispositivos Windows, instale o Serviço de Redefinição de Pin da Microsoft e o Cliente de Redefinição de Pin da Microsoft, crie uma política de dispositivo usando sua ID de diretório do Azure Active Directory e, em seguida, redefina a senha no Portal do Azure usando o Microsoft Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,60 +13,59 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Redefinir a senha em dispositivos Windows integrado com o Serviço de Redefinição de PIN da Microsoft usando o Intune
+# <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Redefinir senha em dispositivos Windows usando o Intune
 
-A capacidade de redefinição de senha para dispositivos Windows integra-se com o Serviço de Redefinição de PIN da Microsoft para permitir que você gere uma nova senha para dispositivos que executam o Windows 10 Mobile. Os dispositivos devem executar a Atualização do Windows 10 para Criadores ou posterior.
+Você pode redefinir a senha para dispositivos Windows. O recurso de redefinição de senha usa o Serviço de Redefinição de PIN da Microsoft para gerar uma nova senha para dispositivos que executam o Windows 10 Mobile. 
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
-- Windows – Com suporte na Atualização do Windows 10 para Criadores e versões posteriores (ingressado no Azure AD)
-- Windows Phone – Sem suporte
-- iOS – Sem suporte
-- macOS – Sem suporte
-- Android – Sem suporte
+- Atualização do Windows 10 para Criadores e posterior (ingressado no Azure AD)
 
+**Não** há suporte para as seguintes plataformas:
+- Windows Phone
+- iOS
+- macOS
+- Android
 
-## <a name="before-you-start"></a>Antes de começar
+## <a name="authorize-the-pin-reset-services"></a>Autorizar os serviços de redefinição de PIN
 
-Antes de redefinir remotamente a senha em dispositivos Windows que você pode gerenciar, integre o serviço de redefinição do PIN para seu locatário do Intune e configure os dispositivos gerenciados. Siga estas instruções para fazer isso:
+Para redefinir a senha em dispositivos Windows, integre o serviço de redefinição de senha no seu locatário do Intune.
 
-### <a name="connect-intune-with-the-pin-reset-service"></a>Conecte o Intune ao serviço de redefinição de PIN
+1. Acesse [Produção do serviço de redefinição de PIN da Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e entre usando a conta de administrador do locatário.
+2. **Aceite** o consentimento para o serviço de redefinição de PIN acessar sua conta: ![Aceitar a solicitação do Servidor de Redefinição de PIN para permissões](./media/pin-reset-service-home-screen.png)
+3. Acesse [Produção do cliente de redefinição de PIN da Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) e entre usando a conta de administrador do locatário. **Aceite** o consentimento para o cliente de redefinição de PIN acessar sua conta.
+4. No [Portal do Azure](https://portal.azure.com), confirme se os serviços de redefinição do PIN estão listados nos Aplicativos empresariais (Todos os aplicativos): ![Página de permissões do serviço de redefinição de PIN](./media/pin-reset-service-application.png)
 
-1. Visite o [site de integração do Serviço de Redefinição de PIN da Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e entre usando a conta de administrador de locatário que você usa para gerenciar seu locatário do Intune.
-2. Após fazer logon, clique em **Aceitar** para dar consentimento para o serviço de redefinição de PIN acessar sua conta.<br>
-![Página de permissões do serviço de redefinição de PIN](./media/pin-reset-service-application.png)
-3. No Portal do Azure, você pode verificar se o Intune e o serviço de redefinição de PIN foram integrados dos aplicativos Enterprise – Todas as folhas de aplicativos conforme mostrado na seguinte captura de tela:<br>
-![Aplicativo do serviço de redefinição de PIN no Azure](./media/pin-reset-service-home-screen.png)
-4. Faça logon [neste site](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) usando as credenciais de administrador de locatário do Intune e escolha **Aceitar** novamente para dar consentimento para o serviço acessar sua conta.
+> [!NOTE]
+> Depois de aceitar as solicitações de redefinição do PIN, você poderá receber uma mensagem `Page not found` ou pode parecer que nada aconteceu. Esse comportamento é normal. Confirme se os dois aplicativos de Redefinição de PIN estão listados para seu locatário.
 
-### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar os dispositivos do Windows para usar a redefinição de PIN
+## <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar os dispositivos do Windows para usar a redefinição de PIN
 
-Para configurar a redefinição de PIN nos dispositivos Windows que você gerencia, use uma [política de dispositivo personalizado do Intune Windows 10](custom-settings-windows-10.md) para habilitar o recurso. Configure a política usando os seguintes CSPs (provedores de serviços de configuração de política) do Windows:
+Para configurar a redefinição de PIN nos dispositivos Windows que você gerencia, use uma [política de dispositivo personalizado do Intune Windows 10](custom-settings-windows-10.md). Configure a política usando os seguintes CSPs (provedores de serviços de configuração de política) do Windows:
 
+**Usar a política de dispositivo móvel** - `./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery`
 
-- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/*ID do locatário*/Policies/EnablePinRecovery**
-
-*ID do locatário* refere-se à ID de Diretório do Azure Active Directory que pode ser obtida na página **Propriedades** do Azure Active Directory.
+Substitua *ID do locatário* pela sua ID de diretório do Microsoft Azure AD, que é listada nas **Propriedades** do Azure Active Directory no [Portal do Azure](https://portal.azure.com).
 
 Defina o valor dessa CSP como **True**.
 
-## <a name="steps-to-reset-the-passcode"></a>Etapas para redefinir a senha
+> [!TIP]
+> Depois de criar a política, atribua-a (ou implante-a) em um grupo. A política pode ser atribuída aos grupos de usuário ou de dispositivos. Se ela for atribuída a um grupo de usuários, este poderá incluir os usuários que têm outros dispositivos, como IOS. Tecnicamente, a política não se aplica, mas esses dispositivos ainda são incluídos nos detalhes do status.
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Dispositivos**.
-4. Na folha **Dispositivos**, escolha **Gerenciar** > **Todos os dispositivos**.
-5. Selecione o dispositivo para o qual você deseja redefinir a senha e, na folha de propriedades do dispositivo, escolha **Nova senha**.
-6. Na confirmação que aparece, escolha **Sim**. A senha é gerada e exibida no portal pelos próximos sete dias.
+## <a name="reset-the-passcode"></a>Redefinir a senha
 
-## <a name="next-steps"></a>Próximas etapas
+1. Entre no [Portal do Azure](https://portal.azure.com). 
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
+4. Selecione o dispositivo para o qual você deseja redefinir a senha. Nas propriedades do dispositivo, selecione **Nova senha**.
+5. Selecione **Sim** para confirmar. A senha é gerada e exibida no portal pelos próximos sete dias.
 
-Se a redefinição de senha falhar, é fornecido um link no portal para obter mais informações.
+## <a name="next-step"></a>Próxima etapa
 
-
+Se a redefinição de senha falhar, um link com mais detalhes será fornecido no portal.

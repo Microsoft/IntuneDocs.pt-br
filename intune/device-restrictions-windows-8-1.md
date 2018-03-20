@@ -1,29 +1,30 @@
 ---
-title: "Configurações de restrição de dispositivo do Intune para Windows 8.1"
-titleSuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo em dispositivos Windows 8.1."
+title: "Configurações de restrição de dispositivo do Microsoft Intune para dispositivos que executam o Windows 8.1"
+titleSuffix: 
+description: "Conheça as definições do Intune que você pode usar para controlar configurações e as funcionalidades do dispositivo nos dispositivos que executam o Windows 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Configurações de restrição de dispositivo do Windows 8.1 e posterior no Microsoft Intune
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Configurações de restrição de dispositivo Windows 8.1 e posterior do Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que podem ser definidas para dispositivos que executam o Windows 8.1 e posterior.
+
 
 ## <a name="general"></a>Geral
 
@@ -62,7 +63,7 @@ Quando você impõe a criptografia em um dispositivo, a chave de recuperação f
 -   **Segurança alta para sites restritos** – Configura o nível de segurança para a zona de sites restritos.
 -   **Acesso ao menu no modo Empresarial** – Permite aos usuários acessar as opções de menu do modo Empresarial do Internet Explorer.
 Se selecionar essa configuração, você também poderá especificar um **Local de relatório de log**, que contém uma URL para um relatório que mostra os sites para os quais os usuários ativaram o acesso do modo Empresarial.
--   **Local da lista de site do modo Empresarial** – Especifica o local da lista de sites que usarão o modo Empresarial quando ele estiver ativo.
+-   **Local da lista de site do modo empresarial** – Especifica o local da lista de sites que usam o Modo empresarial quando ele estiver ativo.
 
 ## <a name="cellular"></a>Celular
 -   **Roaming de dados** – Habilita o roaming de dados quando o dispositivo estiver em uma rede de celular.

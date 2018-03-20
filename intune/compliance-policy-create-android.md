@@ -1,12 +1,12 @@
 ---
-title: "Como criar uma política de conformidade para o Android"
-titleSuffix: Azure portal
-description: "Saiba como criar uma política de conformidade para dispositivos Android."
+title: "Criar uma política de conformidade de dispositivo Android no Microsoft Intune"
+titleSuffix: 
+description: "Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos Android, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6da4e6ffb473cee73f3946e5af3d97ddd5bb6b7b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android no Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Políticas de conformidade do dispositivo são criadas para cada formulário de plataforma no portal do Intune no Azure. 
-
-- Para saber mais sobre políticas de conformidade, consulte [O que é uma conformidade de dispositivo](device-compliance.md).
-- Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos do Intune para Android especifica as regras e configurações que dispositivos do Android precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, bem como obter relatórios de dispositivos e executar ações em caso de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e os pré-requisitos que você precisa cumprir antes de criá-las, consulte [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 ## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
 
-1. Na folha **Intune**, escolha **Definir conformidade do dispositivo**. Em **Gerenciar**, escolha **Todas as políticas de conformidade de dispositivo** e selecione **Criar**.
-2. Digite um nome, uma descrição e escolha a plataforma à qual você deseja que essa política se aplique.
-3. Escolha **Requisitos de conformidade** para especificar as configurações de **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo**. Quando terminar, escolha **OK**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+1. No painel **Intune**, escolha **Conformidade do dispositivo**. Em **Gerenciar**, escolha **Políticas** e **Criar política**.
+3. Escolha **Definir configurações** para especificar as configurações de **Segurança do Sistema**, **Integridade do Dispositivo** e **Propriedades do Dispositivo** aqui. Quando terminar, escolha **OK**.
 
-<!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
+9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.--->
 
 ## <a name="to-assign-user-groups"></a>Para atribuir grupos de usuários
 
-Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas na folha **Conformidade – Políticas**.
+Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas no painel **Conformidade do dispositivo – Políticas**.
 
-1. Escolha a política e as **Atribuições**. Você pode selecionar **Grupos de segurança do Azure Active Directory** e atribuir os grupos à política.
-2. Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD. Aqui você pode encontrar os grupos de segurança no seu Azure Active Directory.  Você pode selecionar os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Selecionar**. Escolher **Selecionar** implanta a política para os usuários.
+1. Escolha a política e as **Atribuições**. Isso abrirá o painel no qual é possível selecionar os **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+2. Escolha **Grupos selecionados** para abrir o painel que exibe os grupos de segurança do Microsoft Azure AD. Aqui você pode encontrar os grupos de segurança no seu Azure Active Directory.  Você pode selecionar os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
 
 Você aplicou a política para os usuários.  A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
 
@@ -68,16 +66,18 @@ Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** e
 - **Exigir que os dispositivos tenham habilitado “Examinar dispositivo contra ameaças à segurança” (Android 4.4 4.2)**: essa configuração especifica se o recurso **Verificar aplicativos** está habilitado no dispositivo.
 - **Nível mínimo do patch de segurança do Android (Android 6.0 ou posterior)**: use essa configuração para especificar o nível mínimo de patch de Android. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser especificada no formato: AAAA-MM-DD.
 - **Requer proteção contra ameaças de dispositivo a ser habilitado**: use esta configuração para fazer a avaliação de risco da solução Consulta MTP como uma condição para conformidade. Escolha o nível máximo de ameaça permitido, que é um dos seguintes:
-  - **Nenhum (protegido)**: esse nível de ameaça é o mais seguro. Ele significa que o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
+  - **Nenhum (Seguro)**: este é o mais seguro. Isso significa que o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
   - **Baixo**: o dispositivo será avaliado como compatível se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio**: o dispositivo será avaliado como compatível se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.
-  - **Alto**: esse nível de ameaça é o menos seguro. Essencialmente, isso permite todos os níveis de ameaça. Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.
+  - **Alto**: esta é a opção menos segura. Essencialmente, isso permite todos os níveis de ameaça. Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.
+
+Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Configurações de segurança do sistema
 
 ### <a name="password"></a>Senha
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: selecione **Sim** para exigir que os usuários insiram uma senha antes de acessar o dispositivo.
+- **Exigir uma senha para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que possam acessar o dispositivo.
 - **Tamanho mínimo da senha**: especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.
 - **Qualidade da senha**: essa configuração detecta se os requisitos de senha especificados por você estão configurados no dispositivo. Habilite essa configuração para exigir que os usuários atendam certos requisitos de senha para dispositivos Android. Escolha:
   - **Biométrico de segurança baixa**
@@ -89,12 +89,12 @@ Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** e
 - **Minutos de inatividade antes que a senha seja exigida**: especifique o tempo ocioso antes que o usuário precise digitar novamente sua senha.
 - **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
 - **Lembrar o histórico da senha**: use essa configuração em conjunto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
-- **Evitar a reutilização de senhas anteriores**: se você selecionar **Lembrar histórico de senha**, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
+- **Evitar a reutilização de senhas anteriores**: se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** use essa configuração em conjunto com **Minutos de inatividade antes da senha ser necessária**. O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
 ### <a name="encryption"></a>Criptografia
 
-- **Exigir criptografia no dispositivo móvel**: selecione **Sim** para exigir que os dispositivos sejam criptografados para se conectarem aos recursos. Os dispositivos serão criptografados quando você escolher a configuração **Exigir uma senha para desbloquear dispositivos móveis**.
+- **Exigir criptografia no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam criptografados para conectarem-se aos recursos. Os dispositivos serão criptografados quando você escolher a configuração **Exigir uma senha para desbloquear dispositivos móveis**.
 
 ## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 
@@ -119,9 +119,9 @@ A tabela abaixo descreve como as configurações não compatíveis são gerencia
 
 --------------------------
 
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)+
+**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)
 
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando os dispositivos não são compatíveis, ocorrem as seguintes ações:+
+**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando o dispositivo não é compatível, ocorrem as seguintes ações:
 
 - O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
 - O portal da empresa notificará o usuário sobre qualquer problema de conformidade.

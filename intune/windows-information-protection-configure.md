@@ -1,10 +1,10 @@
 ---
-title: "Configurar a Proteção de Informações do Windows – Intune"
-titleSuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para gerenciar a Proteção de Informações do Windows."
+title: "Configurações da Proteção de Informações do Windows no Microsoft Intune"
+titleSuffix: 
+description: "Conheça as configurações do Microsoft Intune que você pode usar para gerenciar a Proteção de Informações do Windows."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e33fa9b22687f7f8c4d301c6cd82ecd787c23246
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f2e5090eada373b83c3f8c390b7df6b31f6d1723
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Como configurar a proteção de informações do Windows no Microsoft Intune
 

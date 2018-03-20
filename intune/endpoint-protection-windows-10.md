@@ -1,12 +1,12 @@
 ---
-title: "Configurações do Intune Endpoint Protection para Windows 10"
-titlesuffix: Azure portal
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações do Endpoint Protection, como o BitLocker, em dispositivos Windows 10.”"
+title: "Configurações do Endpoint Protection do Microsoft Intune para Windows 10"
+titlesuffix: 
+description: "Conheça as definições do Intune que você pode usar para controlar as configurações do Endpoint Protection, como o BitLocker, em dispositivos Windows 10."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Configurações do Endpoint Protection para o Windows 10 e posterior no Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Criar configurações do Endpoint Protection para o Windows 10 e posterior no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O perfil do Endpoint Protection permite controlar os recursos de segurança em dispositivos Windows 10, como BitLocker e Windows Defender.
+O perfil do Endpoint Protection permite controlar os recursos de segurança em dispositivos Windows 10, como o BitLocker e o Windows Defender.
 
-Use as informações neste tópico para saber como criar perfis do Endpoint Protection.
+Use as informações neste artigo para saber como criar perfis do Endpoint Protection.
 
 > [!Note]
 > Essas configurações não têm suporte nas edições Professional e Home do Windows 10.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Criar um perfil de Endpoint Protection
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
+2. Na folha **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
 3. Na folha de perfis, escolha **Criar perfil**.
 4. Na folha **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de recursos do dispositivo.
 5. Na lista suspensa **Plataforma**, escolha **Windows 10 e posterior**.
 6. Na lista suspensa de tipos de **Tipo de perfil**, escolha **Endpoint Protection**.
-7. Defina as configurações que você deseja. Use os detalhes neste tópico para ajudar a entender o que cada configuração faz. Quando terminar, escolha **OK**.
+7. Defina as configurações que você deseja. Use os detalhes neste artigo para ajudar a entender o que cada configuração faz. Quando terminar, escolha **OK**.
 8. Volte para a folha **Criar perfil** e escolha **Criar**.
 
 O perfil é criado e exibido na folha da lista de perfis.
@@ -57,6 +57,7 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
 - **Impressão do navegador virtual** – permita que impressoras de PDF, XPS e/ou de rede local imprimam o conteúdo do navegador virtual.
 - **Coletar logs** – colete logs de eventos que ocorrem dentro de uma sessão de navegação do Application Guard.
 - **Manter dados do navegador gerados pelo usuário** – permita que os dados de usuário (como senhas, favoritos e cookies) que são criados durante uma sessão de navegação virtual do Application Guard sejam salvos.
+- **Aceleração gráfica** – Carrega sites com elementos gráficos densos mais rapidamente ao trabalhar dentro da sessão de navegação do Application Guard, permitindo o acesso a uma unidade de processamento gráfico virtual.
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
@@ -66,7 +67,7 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
 Essas configurações são aplicáveis a todos os tipos de rede.
 
 - **Protocolo FTP** – bloqueie FTP com estado.
-- **Tempo ocioso da associação de segurança antes da exclusão** – as associações de segurança serão excluídas quando não for detectado nenhum tráfego de rede durante *n* segundos.
+- **Tempo ocioso da associação de segurança antes da exclusão** – As associações de segurança são excluídas quando não for detectado nenhum tráfego de rede por *n* segundos.
 - **Codificação de chave pré-compartilhada** – codifique chaves pré-compartilhadas usando UTF-8.
 - **Isenções de IPsec** – configure um tráfego específico como isento do IPsec, incluindo **Códigos de tipo ICMP de IPv6 de descoberta de vizinho**, **ICMP**, **Códigos de tipo ICMP de IPv6 de descoberta de roteador** e **Tráfegos de rede DHCP de IPv4 e IPv6**.
 - **Verificação da lista de certificados revogados** – defina um valor para indicar como a verificação da lista de certificados revogados será imposta, incluindo **Desabilitar a verificação de CRL**, **Falhar verificação de CRL somente para certificado revogado** e **Falhar verificação de CRL para qualquer erro encontrado**.

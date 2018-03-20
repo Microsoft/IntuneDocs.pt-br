@@ -1,6 +1,6 @@
 ---
 title: Registro em massa no Windows 10
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: Criar um pacote de registro em massa para o Microsoft Intune
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -36,7 +36,7 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
 ## <a name="create-a-provisioning-package"></a>Criar um pacote de provisionamento
 
 1. Baixe o [WCD (Windows Configuration Designer)](https://www.microsoft.com/store/apps/9nblggh4tx22) na Microsoft Store.
-![Capturas de tela e descrição do Windows Configuration Designer](media/bulk-enroll-store.png)
+![Captura de tela da Store do aplicativo Windows Configuration Designer](media/bulk-enroll-store.png)
 
 2. Abra o aplicativo **Windows Configuration Designer** e selecione **Provisionar dispositivos de área de trabalho**.
 ![Captura de tela da seleção de Provisionar dispositivos de área de trabalho no aplicativo Windows Configuration Designer](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
   - **Descrição** - uma descrição opcional do projeto ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4.  Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
-![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
+
+    ![Captura de tela da especificação do nome e da chave do produto (Product Key) no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5.  Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se os dispositivos de rede não estiverem configurados, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
 ![Captura de tela da habilitação de Wi-Fi, incluindo as opções de SSID da Rede e o Tipo da rede, no aplicativo Windows Configuration Designer](media/bulk-enroll-network.png)
 
 6.  Selecione **Registrar no Azure AD**, insira uma data de **Expiração do Token em Massa** e selecione **Obter Token em Massa** .
-![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-account.png)
+![Captura de tela do gerenciamento de conta no aplicativo Windows Configuration Designer](media/bulk-enroll-account.png)
 
 7. Forneça suas credenciais do Azure AD para obter um token em massa.
-![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-cred.png)
+![Captura de tela da entrada no aplicativo Windows Configuration Designer](media/bulk-enroll-cred.png)
 
 8.  Clique em **Avançar** quando o **Token em Massa** for obtido com êxito.
 
 9. Como opção, você pode **Adicionar aplicativos** e **Adicionar certificados**. Esses aplicativos e certificados são provisionados no dispositivo.
 
 10. Como opção, você pode proteger com senha seu pacote de provisionamento.  Clique em **Criar**.
-![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-create.png)
+![Captura de tela da proteção de pacote no aplicativo Windows Configuration Designer](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Provisionar dispositivos
 

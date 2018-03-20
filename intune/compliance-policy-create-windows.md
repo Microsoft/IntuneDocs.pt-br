@@ -1,30 +1,30 @@
 ---
-title: "Como criar uma política de conformidade para o Windows"
-titleSuffix: Azure portal
-description: "Saiba como criar uma política de conformidade para dispositivos Windows."
+title: "Criar uma política de conformidade para dispositivo Windows no Microsoft Intune"
+titleSuffix: 
+description: "Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos Windows, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Windows no Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As políticas de conformidade são criadas para cada plataforma. Você pode criar uma política de conformidade no Portal do Azure. Para saber mais sobre o que é a política de conformidade, consulte o tópico [O que é conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que você precisa cumprir antes de criar uma política de conformidade, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos do Intune para Windows especifica as regras e configurações que dispositivos Windows precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, bem como obter relatórios de dispositivos e executar ações em caso de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e os pré-requisitos que você precisa cumprir antes de criá-las, consulte [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
 
@@ -42,7 +42,7 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 -------------------------------
 
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)+
+**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)
 
 **Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando o dispositivo não é compatível, ocorrem as seguintes ações:
 
@@ -51,12 +51,14 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Criar uma política de conformidade no Portal do Azure
 
-1. Na folha **Intune**, escolha **Definir conformidade do dispositivo**. Em **Gerenciar**, escolha **Todas as políticas de conformidade de dispositivo** e selecione **Criar**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+1. No painel **Intune**, escolha **Conformidade do dispositivo**. Em **Gerenciar**, escolha **Políticas** e **Criar política**.
 2. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
-3. Escolha **Requisitos de conformidade** para abrir a folha de requisitos de conformidade.  Você pode especificar as configurações de **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo** aqui; quando terminar, escolha **OK**.
+3. Escolha **Definir configurações** para especificar as configurações de **Segurança do Sistema**, **Integridade do Dispositivo** e **Propriedades do Dispositivo** aqui. Quando terminar, escolha **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 
-Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas na folha **Conformidade – Políticas**.
+Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas no painel **Conformidade do dispositivo – Políticas**.
 
-1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. Isso abrirá a folha na qual é possível selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
-2. Escolha **Selecionar grupos** para abrir a folha que exibe os grupos de segurança do Azure AD.  Escolher **Selecionar** implanta a política para os usuários.
+1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. Isso abrirá o painel no qual é possível selecionar os **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+2. Escolha **Grupos selecionados** para abrir o painel que exibe os grupos de segurança do Microsoft Azure AD.  Escolher **Salvar** implanta a política para os usuários.
 
 Você aplicou a política para os usuários. A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
 
@@ -78,8 +80,8 @@ Você aplicou a política para os usuários. A conformidade dos dispositivos usa
 ### <a name="password"></a>Senha
 
 - **Exigir uma senha para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que eles possam acessar o dispositivo.
-- **Permitir senhas simples:** defina como **Sim** para permitir que os usuários criem senhas simples, como &#39; “**1234**” ou “**1111**”.
-- **Tamanho mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
+- **Permitir senhas simples:** defina isso como **Sim** para permitir que os usuários criem senhas simples, como “**1234**” ou “**1111**”.
+- **Tamanho mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário precisa conter.
 - **Tipo de senha exigido:** especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
 
 Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
@@ -93,7 +95,7 @@ Para dispositivos que executam o Windows e são acessados com uma conta da Micro
 Definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 
 - **Minutos de inatividade antes que a senha seja requerida:** especifica o tempo ocioso antes que o usuário tenha que digitar novamente a senha.
-- **Expiração da senha (dias):** selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
+- **Expiração da senha (dias)**: selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
 - **Lembrar o histórico da senha:** use essa configuração em conjunto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
 - **Evitar a reutilização de senhas anteriores:** se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** essa configuração deve ser usada junto com **Minutos de inatividade antes da senha ser necessária**. Os usuários finais serão solicitados a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
@@ -128,7 +130,7 @@ Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Es
 
 - **Comprimento mínimo da senha:** - Com suporte no Windows 8.1.
 
-Especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve conter.
+Especifique o número mínimo de dígitos ou caracteres mínimo que a senha do usuário precisa conter.
 
 Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
 
@@ -183,10 +185,10 @@ Quando um dispositivo tem uma versão mais antiga que a versão de sistema opera
 
 Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
-Para localizar a versão do sistema operacional que deve ser usada para as configurações **Sistema operacional mínimo necessário** e **Versão de sistema operacional máxima permitida**, execute o comando **winver** no prompt de comando. O comando winver retorna a versão relatada do sistema operacional.+
+Para localizar a versão do sistema operacional que deve ser usada para as configurações **Sistema operacional mínimo necessário** e **Versão de sistema operacional máxima permitida**, execute o comando **winver** no prompt de comando. O comando winver retorna a versão relatada do sistema operacional.
 
 - Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do sistema operacional for definida como Windows 8.1 para Windows, então o dispositivo será relatado como não compatível mesmo que o dispositivo tenha o Windows 8.1.
-- Em computadores que executam o Windows 10, a versão deve ser definida como &quot;10.0&quot;+ o número de build do sistema operacional retornado pelo comando winver.
+- Em computadores que executam o Windows 10, a versão deve ser definida como “10.0” + o número de build do sistema operacional retornado pelo comando winver.
 
 ## <a name="windows-holographic-for-business-support"></a>Compatibilidade do Windows Holographic for Business
 

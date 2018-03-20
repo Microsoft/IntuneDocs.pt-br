@@ -1,36 +1,36 @@
 ---
-title: "Configurações de Wi-Fi do Intune para dispositivos Android"
-titleSuffix: Azure portal
-description: "Saiba mais sobre como o Intune define as configurações de conexão Wi-Fi em dispositivos Android e Android for Work."
+title: "Definir as configurações de Wi-Fi do Microsoft Intune para dispositivos que executam o Android"
+titleSuffix: 
+description: "Conheça as definições de configuração de Wi-Fi do Intune em dispositivos que executam o Android e Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a20ebf026850f28888cd63eb43396a12430bb3cd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Configurações de Wi-Fi para dispositivos Android e Android for Work no Microsoft Intune
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Definir as configurações de Wi-Fi no Microsoft Intune para dispositivos que executam o Android e o Android for Work  
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra as configurações de Wi-Fi que você pode definir no Microsoft Intune para dispositivos que executam Android e Android for Work.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Configurações Wi-Fi para perfis básico e empresarial
 
 As seguintes configurações de Wi-Fi estão disponíveis para dispositivos Android e Android for Work:
 
-- **Nome da rede** – Insira um nome para esta conexão Wi-Fi. Esse é o nome que os usuários verão ao navegarem pela lista de conexões disponíveis no seu dispositivo.
-- **SSID** – Abreviação de identificador de conjunto de serviço (service set identifier em inglês). Esse é o nome real da rede sem fio à qual os dispositivos se conectarão. No entanto, os usuários veem apenas o nome de rede criado anteriormente ao escolher a conexão.
+- **Nome da rede** – Insira um nome para esta conexão Wi-Fi. Esse é o nome que os usuários verão ao navegarem pela lista de conexões disponíveis no dispositivo.
+- **SSID** – Abreviação de identificador de conjunto de serviço (service set identifier em inglês). Esse é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o nome de rede configurado ao escolher a conexão.
 - **Conectar-se automaticamente** – Faz com que o dispositivo se conecte sempre que estiver no intervalo da rede.
 - **Rede oculta** – Impede que essa rede seja exibida na lista de redes disponíveis no dispositivo.
 
@@ -50,7 +50,7 @@ As seguintes configurações de Wi-Fi estão disponíveis para dispositivos Andr
 
 |Nome da configuração|Mais informações|Usar quando|
 |-------------|---------------|-----------|
-|**Nomes de servidor de certificados**|Especifique um ou mais nomes comuns usados nos certificados emitidos pela sua AC (autoridade de certificação) confiável. Se você fornecer essas informações, poderá fazer o bypass da caixa de diálogo de confiança dinâmica que é exibida em dispositivos de usuários finais quando eles se conectam à rede Wi-Fi.|O tipo EAP é **EAP-TLS** ou **EAP-TTLS**|
+|**Nomes de servidor de certificados**|Especifique um ou mais nomes comuns usados nos certificados emitidos pela sua AC (autoridade de certificação) confiável. Se você fornecer essas informações, poderá fazer o bypass da caixa de diálogo de confiança dinâmica que é exibida em dispositivos de usuários quando eles se conectam à rede Wi-Fi.|O tipo EAP é **EAP-TLS** ou **EAP-TTLS**|
 |**Certificado raiz para validação do servidor**|Escolha o perfil de certificado raiz confiável usado para autenticar a conexão. |O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
 |**Privacidade de identidade (identidade externa)**|Especifique o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.|O tipo de EAP é **PEAP**|
 

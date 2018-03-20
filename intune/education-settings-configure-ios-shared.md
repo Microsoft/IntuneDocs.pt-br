@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Como definir as configurações de educação do Intune para dispositivos iPad compartilhados
 
@@ -62,12 +62,12 @@ Importe as informações no SDS usando um dos seguintes métodos:
 
 ### <a name="configure-general-settings"></a>Definir as configurações gerais
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
-4. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
-5. Na folha de perfis, escolha **Criar Perfil**.
-6. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de educação do iOS.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
+5. No painel de perfis, escolha **Criar perfil**.
+6. No painel **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de educação do iOS.
 7. Na lista suspensa **Plataforma**, escolha **iOS**.
 8. Na lista suspensa **Tipos de perfil**, escolha **Educação**.
 9. Escolha **Configurações** > **Definir**.
@@ -83,7 +83,7 @@ Os certificados que você cria devem oferecer suporte à autenticação de servi
 
 ### <a name="configure-teacher-certificates"></a>Configurar certificados de professor
 
-Na folha **Educação**, escolha **Certificados de professor**.
+No painel **Educação**, escolha **Certificados de professor**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configurar o certificado raiz do professor
 
@@ -104,8 +104,8 @@ Quando você terminar de configurar os certificados de professor, clique em **OK
 
 ### <a name="configure-student-certificates"></a>Configurar certificados de aluno
 
-1. Na **folha Educação**, escolha **Certificados de aluno**.
-2. Na folha **Certificados de aluno**, na lista **Tipos de certificados de dispositivo de aluno**, escolha **iPad compartilhado**.
+1. No **painel Educação**, escolha **Certificados de aluno**.
+2. No painel **Certificados de aluno**, na lista **Tipos de certificados de dispositivo de aluno**, escolha **iPad compartilhado**.
 
 #### <a name="configure-student-root-certificate"></a>Configurar certificados raiz de aluno
 
@@ -126,78 +126,78 @@ Ao terminar de configurar os certificados, clique em **OK**.
 
 ### <a name="complete-certificate-setup"></a>Concluir a instalação do certificado
 
-1. Na folha **Educação**, escolha **OK**.
-2. Na folha **Criar Perfil**, escolha **Criar**.
+1. No painel **Educação**, escolha **OK**.
+2. No painel **Criar perfil**, escolha **Criar**.
 
-O perfil é criado e exibido na folha da lista de perfis.
+O perfil é criado e aparece no painel da lista de perfis.
 
 ## <a name="step-3---create-a-device-category"></a>Etapa 3 – Criar uma categoria de dispositivo
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Registro de dispositivo**.
-4. Na folha **Registro – Visão Geral**, escolha **Categorias de Dispositivo**.
-5. Na folha **Registro – Categorias de Dispositivo**, escolha **Criar**.
-6. Na folha **Criar categoria de dispositivo**, insira um **Nome** e uma **Descrição** para a categoria.
-7. Na folha **Criar categoria de dispositivo**, escolha **Criar**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Registro de dispositivos**.
+4. No painel **Registro de dispositivo – Visão geral**, escolha **Categorias de dispositivo**.
+5. No painel **Registro de dispositivo – Categorias de Dispositivo**, escolha **Criar**.
+6. No painel **Criar categoria de dispositivo**, insira um **Nome** e uma **Descrição** para a categoria.
+7. No painel **Criar categoria de dispositivo**, escolha **Criar**.
 
-A categoria do dispositivo é criada na folha **Registro – Categorias de dispositivo**.
+A categoria do dispositivo é criada no painel **Registro – Categorias de dispositivo**.
 
 ## <a name="step-4--create-a-dynamic-group"></a>Etapa 4 – Criar um grupo dinâmico
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Grupos**.
-4. Na folha **Usuários e Grupos – Todos os Grupos**, escolha **Novo Grupo**.
-5. Na folha **Grupo**, insira um **Nome** e uma **Descrição** para o grupo.
-6. Na lista suspensa **Tipo de Associação**, escolha **Dispositivo Dinâmico**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Grupos**.
+4. No painel **Usuários e Grupos – Todos os Grupos**, escolha **Novo grupo**.
+5. No painel **Grupo**, escolha um **Tipo de grupo** e insira um **Nome** e uma **Descrição** para o grupo.
+6. Na lista suspensa **Tipo de associação**, escolha **Dispositivo Dinâmico**.
 7. Escolha **Membros de dispositivo dinâmico** para criar as regras de associação.
-8. Na folha **Regras de associação dinâmica**:
+8. No painel **Regras de associação dinâmica**:
 1. Selecione **deviceCategory** na lista suspensa **Onde adicionar dispositivos**.
-2. Escolha **É igual a**
-3. Insira a categoria do dispositivo que você criou na caixa de texto em branco
-9. Na folha **Regras de associação dinâmica**, escolha **Adicionar consulta**.
-10. Na folha **Grupo**, escolha **Criar**.
+2. Escolha **É igual a**.
+3. Insira a categoria do dispositivo que você criou na caixa de texto em branco.
+9. No painel **Regras de associação dinâmica**, escolha **Adicionar consulta**.
+10. No painel **Grupo**, escolha **Criar**.
 
-O grupo dinâmico é criado na folha **Usuários e Grupos – Todos os Grupos**.
+O grupo dinâmico é criado no painel **Usuários e Grupos – Todos os Grupos**.
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Etapa 5 – Atribuir um dispositivo a uma categoria (Carrinhos)
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Dispositivos**.
-4. Na folha **Dispositivos**, escolha **Todos os dispositivos**.
-5. Na folha **Dispositivos – Todos os dispositivos**, escolha um dispositivo.
-6. Na folha do dispositivo, escolha **Propriedades**.
-7. Na folha de propriedades do dispositivo, digite a categoria do dispositivo na caixa de texto **Categoria de dispositivo**.
-8. Na folha do dispositivo, escolha **Salvar**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Dispositivos**.
+4. No painel **Dispositivos**, escolha **Todos os dispositivos**.
+5. No painel **Dispositivos – Todos os dispositivos**, escolha um dispositivo.
+6. No painel do dispositivo, escolha **Propriedades**.
+7. No painel de propriedades do dispositivo, digite a categoria do dispositivo na caixa de texto **Categoria do dispositivo**.
+8. No painel do dispositivo, escolha **Salvar**.
 
 O dispositivo agora está associado à categoria de dispositivo. Repita esse processo para todos os dispositivos que você deseja associar à categoria de dispositivo que você criou.
 
 ## <a name="step-6--create-classroom-profiles"></a>Etapa 6 – Criar perfis de sala de aula
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
-4. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis de Carrinho**.
-5. Na folha de perfis, escolha **Criar Perfil**.
-6. Na folha **Criar Associação**, insira um **Nome** e **Descrição**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+4. No painel **Configuração do dispositivo**, escolha **Gerenciar** > **Perfis de Carrinho**.
+5. No painel de perfis, escolha **Criar Perfil**.
+6. No painel **Criar Associação**, insira um **Nome** e uma **Descrição**.
 7. Escolha **Selecionar Classes** > **Configurar** para associar grupos ao Perfil do Carrinho.
 8. Escolha as classes a serem incluídas no Perfil do Carrinho e escolha **Selecionar**. 
 9. Escolha **Selecionar Carrinhos** > **Configurar** para associar grupos ao Perfil do Carrinho.
 10. Escolha os grupos que devem ser incluídos no Perfil do Carrinho e escolha **Selecionar**.
-11. Na folha **Criar Associação**, escolha **Salvar** para salvar o Perfil do Carrinho.
+11. No painel **Criar Associação**, escolha **Salvar** para salvar o Perfil do Carrinho.
 
-O perfil é criado e exibido na folha da lista de perfis.
+O perfil é criado e aparece no painel da lista de perfis.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Etapa 7 – Atribuir o Perfil do Carrinho às Classes
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. Na folha **Intune**, escolha **Configurar dispositivos**.
-4. Na folha **Configurações do Dispositivo**, escolha **Monitorar** > **Status de atribuição**.
-5. Na folha **Status de atribuição**, selecione o **Perfil do Carrinho** que você criou.
-6. Na folha **Perfil do Carrinho**, escolha **Atribuições** e, em seguida, em **Incluir**, escolha **Selecionar grupos a serem incluídos**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+4. No painel **Configuração do Dispositivo**, escolha **Monitorar** > **Status de atribuição**.
+5. No painel **Status de atribuição**, selecione o **Perfil do Carrinho** que você criou.
+6. No painel **Perfil do Carrinho**, escolha **Atribuições** e, em seguida, em **Incluir**, escolha **Selecionar grupos a serem incluídos**.
 7. Selecione as classes para as quais você deseja direcionar o perfil do carrinho (não selecione um grupo) e escolha **Selecionar**. 
 8. Quando você terminar, escolha **Salvar**.
 

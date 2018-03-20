@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 09/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50c35dc805d033bd905105c22c4ec287dfaa1b7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18987c65c7ad0443c8bf3dc268284306cf64080d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Como definir configurações de educação do Windows 10 no Microsoft Intune
 
@@ -31,22 +31,23 @@ Para obter detalhes sobre o aplicativo Fazer um Teste, consulte [Fazer testes no
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Criar um perfil de dispositivo que contém as configurações do perfil de educação
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configurações do Dispositivo**, escolha **Gerenciar** > **Perfis**.
-3. Na folha de perfis, escolha **Criar Perfil**.
-4. Na folha **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de restrição do dispositivo.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
+3. No painel de perfis, escolha **Criar perfil**.
+4. No painel **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil de restrição do dispositivo.
 5. Na lista suspensa **Plataforma**, escolha **Windows 10 e posterior**.
 6. Na lista suspensa **Tipos de perfil**, escolha **Perfil de educação**. 
-7. Escolha Configurações > Configurar, em seguida, na folha **Take a Test**, configure o seguinte:
+7. Escolha **Configurações > Configurar** e, em seguida, no painel **Take a Test**, configure o seguinte:
+    - **Tipo de conta** – Selecione um tipo de conta no campo de lista suspensa.
     - **Nome da conta de usuário** - Insira o nome de usuário da conta usada com Take a Test. Pode ser uma conta de domínio, uma conta do Azure Active Directory (AAD) ou uma conta de computador local.
     - **URL de avaliação** - Forneça a URL do teste o qual você deseja que os usuários realizem. Para saber mais, veja a documentação do Take a Test.
     - **Monitoramento de tela** - Especifique se você deseja ser capaz de monitorar a atividade da tela enquanto os usuários realizam um teste.
     - **Sugestão de texto** - Permita ou bloqueie sugestões de texto enquanto os usuários realizam um teste.
-8. Após terminar, volte para a folha **Criar Perfil** e selecione **Criar**.
+8. Quando terminar, volte para o painel **Criar perfil** e pressione **Criar**.
 
-O perfil será criado e aparecerá na folha da lista de perfis.
+O perfil será criado e aparecerá no painel da lista de perfis.
 
 ## <a name="next-steps"></a>Próximas etapas
 

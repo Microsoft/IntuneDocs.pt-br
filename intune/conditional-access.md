@@ -1,12 +1,12 @@
 ---
-title: Acesso condicional com o Intune
-titlesuffix: Azure portal
-description: "Saiba como definir as condições que os usuários e dispositivos devem atender para acessar os recursos da empresa no Microsoft Intune."
+title: Acesso condicional com o Microsoft Intune
+titlesuffix: 
+description: "Saiba como definir as condições que os usuários, dispositivos e aplicativos devem atender para acessar os recursos da empresa no Microsoft Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>O que é o acesso condicional?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Este tópico descreve o Acesso condicional, conforme ele se aplica ao EMS (Enterprise Mobility + Security) e apresenta, em seguida, cenários comuns do Acesso condicional ao usar o Intune.
+Acesso condicional significa às formas de controlar os dispositivos e aplicativos que têm permissão para se conectar ao email e aos recursos da empresa. Neste tópico, saiba mais sobre acesso condicional baseado em dispositivo e em aplicativo, e veja cenários comuns para usar o acesso condicional com o Intune.
 
 O Acesso Condicional do EMS (Enterprise Mobility + Security) não é um produto autônomo, mas uma solução que integra todos os serviços e produtos que fazem parte do EMS. Ele fornece controle de acesso granular para proteger os dados da empresa, ao mesmo tempo que oferece aos usuários uma experiência que lhes permite fazer o melhor trabalho em qualquer dispositivo e em qualquer localização.
 

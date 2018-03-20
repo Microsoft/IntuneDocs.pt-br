@@ -1,7 +1,7 @@
 ---
-title: "Configurar a integração do Skycure com o Intune"
-titlesuffix: Azure portal
-description: "Configure a integração do Skycure com o Microsoft Intune."
+title: "Configure a integração do Skycure com o Microsoft Intune"
+titlesuffix: 
+description: "Como configurar a solução de MTD (Defesa contra Ameaças Móveis) Skycure com o Microsoft Intune para controlar o acesso de dispositivos móveis aos seus recursos corporativos."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Configurar a integração do Skycure com o Intune
 
-Você precisa adicionar os aplicativos Skycure ao Azure AD com a funcionalidade de Logon único.
+Execute as etapas a seguir para integrar a solução Skycure Mobile Threat Defense ao Intune. Você precisa adicionar os aplicativos Skycure ao Azure AD com a funcionalidade de Logon único.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -62,15 +62,15 @@ O Skycure dá suporte a dois modos de integração com o Intune:
 
 4.  No rótulo **Aplicativo iOS**, clique em **Adicionar ao Active Directory**.
 
-    ![Aplicativo iOS no Console de Gerenciamento do Skycure](./media/skycure-setup-1.png)
+    ![Imagem do aplicativo iOS no Console de Gerenciamento do Skycure](./media/skycure-setup-1.png)
 
 5.  Na página de logon aberta, insira suas credenciais do Intune e clique em **Aceitar**.
 
-    ![Aviso de logon do Intune no aplicativo iOS](./media/skycure-setup-2.png)
+    ![Imagem do prompt de logon do Intune do aplicativo iOS](./media/skycure-setup-2.png)
 
 6.  Após a adição do aplicativo ao Azure AD, você pode ver uma indicação de que o aplicativo foi adicionado com êxito ao Azure AD no Console de Gerenciamento do Skycure.
 
-    ![tela de conclusão de aplicativo do iOS](./media/skycure-setup-3.png)
+    ![Imagem da tela de conclusão do aplicativo iOS](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > Repita o mesmo processo para os aplicativos **Skycure Android** e **Gerenciamento**.
@@ -79,13 +79,13 @@ O Skycure dá suporte a dois modos de integração com o Intune:
 
 Você precisa adicionar um grupo de segurança do Azure AD que contém todos os dispositivos que executam o Skycure.
 
-1.  Insira e selecione todos os grupos de segurança de dispositivos que estão executando o Skycure e clique em **Aplicar alterações**.
+-  Insira e selecione todos os grupos de segurança de dispositivos que estão executando o Skycure e clique em **Aplicar alterações**.
 
-    ![Configurar o Console de Gerenciamento do Skycure no grupo de segurança](./media/skycure-setup-4.png)
+    ![Imagem mostrando onde Configurar o Console de Gerenciamento do Skycure no grupo de segurança](./media/skycure-setup-4.png)
 
 O Skycure sincroniza os dispositivos que executam seu serviço de Defesa contra Ameaças Móveis com os grupos de segurança do Azure AD.
 
-![Configuração do grupo de segurança concluída no Console de Gerenciamento do Skycure](./media/skycure-setup-5.png)
+![Imagem mostrando Configuração do grupo de segurança concluída no console de gerenciamento do Skycure](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Configurar a integração total entre o Intune e o Skycure
 
@@ -103,7 +103,7 @@ O Skycure sincroniza os dispositivos que executam seu serviço de Defesa contra 
 
 5.  Clique em **Aplicar Alterações**.
 
-    ![Integração completa do Skycure concluída](./media/skycure-setup-6.png)
+    ![Imagem mostrando Integração completa do Skycure concluída](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 

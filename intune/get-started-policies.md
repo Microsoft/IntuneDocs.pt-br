@@ -1,12 +1,12 @@
 ---
-title: "Introdução às políticas"
-titlesuffix: Azure portal
-description: "Crie políticas para impedir que os usuários executem ações não autorizadas com seus dispositivos."
+title: "Introdução a políticas no Microsoft Intune"
+titlesuffix: 
+description: "Crie políticas para ajudar a proteger dados corporativos e gerenciar os dispositivos que os usuários finais usam para acessar os recursos da empresa."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,22 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="get-started-with-policies"></a>Introdução às políticas
+# <a name="get-started-with-creating-policies"></a>Introdução à criação de políticas
 
-Uma das principais metas do guia de introdução do Intune é registrar dispositivos para verificar se eles estão em conformidade com as políticas corporativas. Políticas de conformidade não apenas ajudam a gerenciar os tipos de dispositivos especializados, como quiosques corporativos, mas também dispositivos pessoais (Traga seu próprio), tablets e dispositivos sem usuário.
+Uma das principais metas ao começar a usar o Intune é registrar dispositivos para garantir que eles estejam em conformidade com as políticas corporativas. Políticas de conformidade não apenas ajudam a gerenciar os tipos de dispositivos especializados, como quiosques corporativos, mas também dispositivos pessoais (Traga seu próprio), tablets e dispositivos sem usuário.
 
-![Painel de conformidade com pouquíssimos dados](/intune/media/generic-compliance-dashboard.png)
+![Painel de conformidade com poucos dados](/intune/media/generic-compliance-dashboard.png)
 
-As políticas de conformidade oferecem os seguintes recursos de gerenciamento para dispositivos móveis:
+Gerencie dispositivos móveis nas áreas a seguir usando as políticas de conformidade:
 
 * Regule os números de dispositivos que cada usuário registra
-* Gerenciar configurações de dispositivos (como por exemplo criptografia no nível do dispositivo, tamanho da senha e uso de câmera)
+* Gerenciar configurações de dispositivos (por exemplo, criptografia no nível do dispositivo, tamanho da senha e uso de câmera)
 * Entrega de aplicativos, perfis de email, perfis de VPN etc.
 * Avaliar critérios no nível do dispositivo para as políticas de conformidade de segurança
 
@@ -45,13 +45,14 @@ Crie políticas de conformidade para cada plataforma separadamente. Para este ex
 
 __Como crio uma política?__
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. **Pesquisar recursos**, pesquise por **Intune**.
+1. Entre no [portal do Azure](https://portal.azure.com).
+2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Selecione **Conformidade do dispositivo**.
-4. Na folha **Conformidade do dispositivo**, selecione **Políticas**.
-5. Selecione **Criar Política** e preencha os detalhes como **Nome** e **Descrição**. Escolha **iOS** como a **Plataforma**.
+4. No painel **Conformidade do dispositivo**, selecione **Políticas**.
+5. Selecione **Criar Política** e preencha os detalhes como **Nome** e **Descrição**. 
+6. Escolha **iOS** como a **Plataforma**.
 6. Em **Configurações**, selecione **Segurança do Sistema** e alterne **Exigir uma senha para desbloquear os dispositivos móveis** para **Exigir**. Também é possível definir outras regras, como **Tamanho mínimo da senha**, **Tipo de senha exigido** e **Número de caracteres não alfanuméricos na senha**. Após terminar de configurar a política, selecione **OK**.
-7. Volte para a folha **Criar política** e selecione **Criar**.
+7. Volte para o painel **Criar política** e selecione **Criar**.
 8. Depois de criar a política, selecione **Atribuições** para atribuí-la ao seu grupo de teste. Selecione o grupo de teste – que deve conter seu usuário de teste – e atribua a política a esse grupo clicando em **Salvar**.
 9. Aguarde alguns minutos e seu dispositivo registrado deverá solicitar uma senha atualizada para permanecer em conformidade com as políticas corporativas. Você pode verificar manualmente isso no **aplicativo de Portal da Empresa para iOS** tocando no nome do dispositivo e no botão **Sincronizar**.
 
