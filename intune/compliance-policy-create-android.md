@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android no Intune
 
@@ -47,7 +47,7 @@ Uma política de conformidade de dispositivos do Intune para Android especifica 
 Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas no painel **Conformidade do dispositivo – Políticas**.
 
 1. Escolha a política e as **Atribuições**. Isso abrirá o painel no qual é possível selecionar os **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
-2. Escolha **Grupos selecionados** para abrir o painel que exibe os grupos de segurança do Microsoft Azure AD. Aqui você pode encontrar os grupos de segurança no seu Azure Active Directory.  Você pode selecionar os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
+2. Escolha **Grupos selecionados** para abrir o painel que exibe os grupos de segurança do Azure AD. Aqui você pode encontrar os grupos de segurança no seu Azure Active Directory.  Você pode selecionar os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
 
 Você aplicou a política para os usuários.  A conformidade dos dispositivos usados pelos usuários de destino da política será avaliada.
 
@@ -70,8 +70,6 @@ Aplicativos de sideload requerem que a configuração **Fontes desconhecidas** e
   - **Baixo**: o dispositivo será avaliado como compatível se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio**: o dispositivo será avaliado como compatível se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.
   - **Alto**: esta é a opção menos segura. Essencialmente, isso permite todos os níveis de ameaça. Poderá ser útil se você estiver usando esta solução apenas para fins de relatório.
-
-Para obter mais detalhes, consulte [Habilitar regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Configurações de segurança do sistema
 

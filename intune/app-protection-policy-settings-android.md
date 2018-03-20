@@ -15,13 +15,13 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 26f81d8e6ba0fb433d714a5deeaadce9dd619c3f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="android-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo Android
+# <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 Este tópico descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
 Há duas categorias de configurações de política: configurações de realocação de dados e configurações de acesso. Neste tópico, o termo *aplicativos gerenciados por política* refere-se a aplicativos configurados com políticas de proteção de aplicativo.
 

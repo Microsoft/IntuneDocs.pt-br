@@ -1,5 +1,6 @@
 ---
-title: "Política | Microsoft Docs"
+title: "Política"
+titlesuffix: Microsoft Intune
 description: "Tópico de referência para a categoria de Política de coleções de entidade na API Intune Data Warehouse."
 keywords: Intune Data Warehouse
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Referência para entidades de política
 
@@ -107,7 +108,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 |NotApplicable      |Número de dispositivos em que as políticas de conformidade do dispositivo direcionadas pelo administrador não são aplicáveis.|201 |
 |Compatível      |Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador. |4083 |
 |InGracePeriod      |Número de dispositivos que não estão em conformidade, mas estão em um período de carência definido pelo administrador. |57|
-|NonCompliant      |Número de dispositivos que falharam ao aplicar uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador ou cujo usuário não está em conformidade com as políticas direcionadas pelo administrador.|43 |
+|NonCompliant      |Número de dispositivos que falharam ao aplicar uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador ou em que o usuário não está em conformidade com as políticas direcionadas pelo administrador.|43 |
 |Erro do      |Número de dispositivos que falharam ao se comunicar com o Intune ou com o Azure AD e retornaram uma mensagem de erro. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
