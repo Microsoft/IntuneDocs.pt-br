@@ -1,27 +1,26 @@
 ---
-title: RBAC com o Intune
-titleSuffix: Azure portal
-description: "Versão prévia do Intune Azure: saiba como o RBAC permite controlar quem pode executar ações e fazer alterações."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: RBAC com o Microsoft Intune
+description: Saiba como o RBAC (Controle de Acesso Baseado em Função) permite controlar quem executa ações e faz alterações no Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>RBAC (controle de administração baseada em funções) com o Intune
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>RBAC (Controle de administração baseada em funções) com o Microsoft Intune
 
 O RBAC ajuda você a controlar quem pode realizar as várias tarefas do Intune em sua organização e a quem essas tarefas se aplicam. Você pode usar as funções internas que abordam alguns cenários comuns do Intune ou pode criar suas próprias funções. Uma função é definida por:
 

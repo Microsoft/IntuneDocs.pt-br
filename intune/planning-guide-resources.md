@@ -1,23 +1,24 @@
 ---
-title: "Modelos e recursos para planejar e projetar a implantação do Intune"
-description: "Links para modelos de planejamento e mais informações sobre o Intune que podem ser úteis durante o processo de planejamento e implementação da implantação do Intune."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Modelos e recursos para planejar e projetar a implantação do Intune
+titlesuffix: Microsoft Intune
+description: Links para modelos de planejamento e mais informações sobre o Intune que podem ser úteis durante o processo de planejamento e implementação da implantação do Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionais para planejar a implantação do Intune
 
@@ -50,7 +51,7 @@ Confira estes recursos para obter mais informações que podem ser úteis durant
 
 -   [Blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/) – postagens para ajudá-lo a entender como o Intune se adapta ao panorama mais amplo do Enterprise Mobility.
 
--   [Central de Confiabilidade da Microsoft](http://www.microsoft.com/TrustCenter/default.aspx) – saiba mais sobre a abordagem da Microsoft em relação à segurança, privacidade, conformidade e transparência em todos os produtos e serviços de nuvem da Microsoft.
+-   [Central de Confiabilidade da Microsoft](http://www.microsoft.com/TrustCenter) – saiba mais sobre a abordagem da Microsoft em relação à segurança, privacidade, conformidade e transparência em todos os produtos e serviços de nuvem da Microsoft.
 
 -   [UserVoice do Intune](http://microsoftintune.uservoice.com/) – deseja solicitar um recurso ou votar em recursos com outros clientes? Forneça comentários sobre o Intune por meio do UserVoice. Estamos aqui para ouvi-lo.
 

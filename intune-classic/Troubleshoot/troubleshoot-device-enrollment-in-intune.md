@@ -1,25 +1,25 @@
 ---
 title: Solucionar problemas de registro de dispositivo
-description: "Sugestões para solução de problemas de registro de dispositivo."
-keywords: 
+description: Sugestões para solução de problemas de registro de dispositivo.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
 
@@ -70,7 +70,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para excluir dispositivos no portal do Active Directory do Azure
 
-1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou clique em **Administrador** &gt; **Azure AD** de [https://portal.office.com](https://portal.office.com).
+1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou selecione **Administrador** &gt; **Azure AD** em [https://portal.office.com](https://portal.office.com).
 
 2.  Faça logon com sua ID da organização usando o link no lado esquerdo da página.
 
@@ -99,7 +99,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 
 1.  Remova o aplicativo de Portal da Empresa do Intune do dispositivo.
 
-2.  No dispositivo, abra o navegador, navegue até [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), e tente algum logon de usuário.
+2.  No dispositivo, abra o navegador, vá até [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e tente algum logon de usuário.
 
 3.  Se o usuário não conseguir efetuar logon, faça-o tentar outra rede.
 
@@ -165,8 +165,8 @@ A tabela a seguir lista os erros que os usuários finais podem encontrar durante
 
 |Mensagem de erro|Problema|Resolução|
 |---|---|---|
-|**O administrador de TI precisa atribuir uma licença para o acesso**<br>Seu administrador de TI não forneceu a você o acesso para usar este aplicativo. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|Não é possível registrar o dispositivo porque a conta do usuário não tem a licença necessária.|Antes de registrarem os dispositivos, a licença necessária deverá ser atribuída aos usuários. Esta mensagem indica que eles têm o tipo de licença errado para a autoridade de gerenciamento de dispositivo móvel designado. Por exemplo, se o Intune tiver sido designado como a autoridade de gerenciamento de dispositivo móvel e eles estiverem usando uma licença do System Center 2012 R2 Configuration Manager, eles receberão esse erro.<br><br>Veja informações sobre como [atribuir licenças do Intune às contas de usuário](/intune/licenses-assign.md).
-|**O administrador de TI precisa configurar uma autoridade de MDM**<br>Parece que seu administrador de TI não configurou uma autoridade de MDM. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|A autoridade de gerenciamento de dispositivo móvel não foi definida.|A autoridade de gerenciamento de dispositivo móvel não foi designada no Intune. Veja informações sobre como [definir a autoridade de gerenciamento de dispositivo móvel](/intune/mdm-authority-set.md).|
+|**O administrador de TI precisa atribuir uma licença para o acesso**<br>Seu administrador de TI não forneceu a você o acesso para usar este aplicativo. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|Não é possível registrar o dispositivo porque a conta do usuário não tem a licença necessária.|Antes de registrarem os dispositivos, a licença necessária deverá ser atribuída aos usuários. Esta mensagem indica que eles têm o tipo de licença errado para a autoridade de gerenciamento de dispositivo móvel designado. Por exemplo, se o Intune tiver sido designado como a autoridade de gerenciamento de dispositivo móvel e eles estiverem usando uma licença do System Center 2012 R2 Configuration Manager, eles receberão esse erro.<br><br>Veja informações sobre como [atribuir licenças do Intune às contas de usuário](/intune/licenses-assign).
+|**O administrador de TI precisa configurar uma autoridade de MDM**<br>Parece que seu administrador de TI não configurou uma autoridade de MDM. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|A autoridade de gerenciamento de dispositivo móvel não foi definida.|A autoridade de gerenciamento de dispositivo móvel não foi designada no Intune. Veja informações sobre como [definir a autoridade de gerenciamento de dispositivo móvel](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Os dispositivos apresentaram falha no check-in com o serviço do Intune e são exibidos como "Não íntegro" no console de administração do Intune
@@ -307,7 +307,7 @@ Se a sincronização não for bem-sucedida, os usuários verão uma notificaçã
 
 Para corrigir o problema, os usuários devem selecionar o botão **Configurar**, que está à direita da notificação **Não é possível sincronizar**. O botão Configurar leva os usuários para a tela de fluxo Configuração do Acesso da Empresa, em que eles podem seguir os prompts para registrar seu dispositivo.
 
-  ![Tela Configuração de Acesso da Empresa](./media/ios_cp_app_company_access_setup.png)
+  ![Tela de Configuração de Acesso da Empresa](./media/ios_cp_app_company_access_setup.png)
 
 Depois de registrado, os dispositivos retornam ao estado íntegro e recuperam o acesso aos recursos da empresa.
 
@@ -318,9 +318,9 @@ O registro de dispositivos do Programa de Registro de Dispositivo com afinidade 
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
-Para saber mais, confira a [documentação do Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+Para saber mais, veja a [documentação do Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
-Para saber mais, confira [Práticas recomendadas para proteção dos Serviços de Federação do Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se você precisar de mais assistência para determinar se o Nome de Usuário/Misto do WS-Trust 1.3 está habilitado em seu provedor de federação de identidade, entre em contato com o Suporte da Microsoft se você usar o AD FS, ou com o fornecedor de identidade de terceiro.
+Para saber mais, veja as [Práticas recomendadas para proteção dos Serviços de Federação do Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se você precisar de mais assistência para determinar se o Nome de Usuário/Misto do WS-Trust 1.3 está habilitado em seu provedor de federação de identidade, entre em contato com o Suporte da Microsoft se você usar o AD FS, ou com o fornecedor de identidade de terceiro.
 
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
@@ -377,7 +377,7 @@ Em breve, adicionaremos exemplos sobre o que procurar nesses arquivos de log.
 
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de registro do iOS
-Uma lista de erros de registro do iOS é fornecida em nossa documentação de usuário do dispositivo em [You see errors while trying to enroll your device in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) (Erros ao tentar registrar seu dispositivo no Intune).
+Uma lista de erros de registro do iOS é fornecida em nossa documentação em [Solucionando problemas de registro de dispositivo iOS no Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune).
 
 ## <a name="pc-issues"></a>Problemas do computador
 

@@ -1,20 +1,21 @@
 ---
-title: Logs de auditoria de atividades do Intune
-description: Saiba como examinar os logs de auditoria que registram as atividades do Intune
-keywords: 
+title: Logs de auditoria de atividades do Microsoft Intune
+description: Saiba como examinar os logs de auditoria que registram as atividades do Microsoft Intune.
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Logs de auditoria de atividades do Intune
 Os logs de auditoria fornecem um registro das atividades que geram uma alteração no Microsoft Intune. As ações Criar, Atualizar (editar), Excluir e Atribuir, ou as tarefas remotas, geram eventos de auditoria que você pode examinar. Você pode examinar os logs de auditoria da maioria das cargas de trabalho do Intune. A auditoria está habilitada por padrão para todos os clientes e não pode ser desabilitada. Os eventos de auditoria começaram a ser gravados na data de lançamento do recurso, em dezembro de 2017; os eventos anteriores não estão disponíveis.

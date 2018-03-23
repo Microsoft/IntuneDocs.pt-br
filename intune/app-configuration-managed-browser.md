@@ -1,25 +1,25 @@
 ---
 title: Gerenciar o acesso via Web com o aplicativo Managed Browser
 titlesuffix: Microsoft Intune
-description: "Implante o aplicativo Managed Browser para restringir a navegação na Web e a transferência de dados da Web para outros aplicativos."
-keywords: 
-author: erikre
+description: Implante o aplicativo Managed Browser para restringir a navegação na Web e a transferência de dados da Web para outros aplicativos.
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerenciar o acesso à Internet usando políticas do Managed Browser com o Microsoft Intune
 
@@ -35,7 +35,7 @@ Como esse aplicativo tem integração com o SDK do Intune, você também poderá
 - Impedir capturas de tela
 - Garantir que os links para conteúdo que os usuários selecionam sejam abertos somente em outros aplicativos gerenciados.
 
-Para ver mais detalhes, consulte [O que são políticas de proteção de aplicativo?](/intune/app-protection-policy)
+Para ver mais detalhes, consulte [O que são políticas de proteção de aplicativo?](/intune/app-protection-policy.md)
 
 Você pode aplicar estas configurações a:
 
@@ -59,7 +59,47 @@ Você pode criar políticas do Managed Browser para os seguintes tipos de dispos
 >Versões anteriores do Android e do iOS poderão continuar usando o Managed Browser, mas não será possível instalar novas versões do aplicativo e acessar todos os recursos do aplicativo. Atualize esses dispositivos para uma versão de sistema operacional com suporte.
 
 
-O Intune Managed Browser dá suporte à abertura de conteúdo da Web de [parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
+O Intune Managed Browser dá suporte à abertura de conteúdo da Web de [parceiros de aplicativos do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Acesso condicional para o Intune Managed Browser
+
+Agora o Managed Browser é um aplicativo cliente aprovado para acesso condicional. Isso significa que você pode restringir o acesso do navegador móvel a aplicativos Web conectados ao Azure AD, em que os usuários só podem usar o Managed Browser bloqueando o acesso de outros navegadores desprotegidos como Safari ou Chrome. Essa proteção pode ser aplicada aos recursos do Azure como o Exchange Online e o SharePoint Online, o portal do Office e até mesmo sites locais que você tenha exposto a usuários externos por meio do [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+
+Para restringir os aplicativos Web conectados ao Azure AD para usarem o Intune Managed Browser em plataformas móveis, é possível criar uma política de Acesso Condicional do Azure AD que requer aplicativos cliente aprovados. 
+
+1. No Portal do Azure, selecione **Azure Active Directory** > **Aplicativos empresariais** > **Acesso condicional** > **Nova política**. 
+2. Em seguida, selecione **Conceder** na seção **Controles de acesso** da folha. 
+3. Clique em **Exigir aplicativo cliente aprovado**. 
+4. Clique em **Selecionar** na folha **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
+
+    ![Azure AD – Política de acesso condicional do Managed Browser](./media/managed-browser-conditional-access-01.png)
+
+5. Na seção **Atribuições**, selecione **Condições** > **Aplicativos cliente**. A folha **Aplicativos cliente** é exibida.
+6. Clique em **Sim** em **Configurar** para aplicar a política a aplicativos cliente específicos.
+7. Verifique se o **Navegador** está selecionado como um aplicativo cliente.
+
+    ![Azure AD – Managed Browser – Selecionar aplicativos cliente](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > Se desejar restringir quais aplicativos nativos (aplicativos que não são navegadores) poderão acessar esses aplicativos de nuvem, também será possível selecionar **Aplicativos móveis e clientes de desktop**.
+
+8. Na seção **Atribuições**, selecione **Usuários e grupos** e, em seguida, escolha os usuários ou grupos aos quais você deseja atribuir essa política. 
+
+    > [!NOTE]
+    > Os usuários também devem ser afetados pela política de Proteção de Aplicativo do Intune. Para obter mais informações sobre como criar políticas de Proteção de Aplicativo do Intune, consulte [O que são políticas de proteção do aplicativo](app-protection-policy.md).
+
+9. Na seção **Atribuições**, selecione **Aplicativos de nuvem** para escolher quais aplicativos proteger com esta política.
+
+Depois que a política acima estiver configurada, os usuários serão forçados a usar o Intune Managed Browser para acessar os aplicativos Web conectados ao Azure AD que você protegeu com esta política. Se os usuários tentarem usar um navegador não gerenciado neste cenário, eles verão um aviso de que o Intune Managed Browser deverá ser usado.
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Logon único para aplicativos Web conectados ao Azure AD no Intune Managed Browser
+
+Agora o aplicativo Intune Managed Browser no iOS e no Android pode usufruir do SSO para todos os aplicativos Web (SaaS e locais) conectados ao Azure AD. Quando o aplicativo Microsoft Authenticator está presente no iOS ou o aplicativo Portal da Empresa do Intune no Android, os usuários do Intune Managed Browser poderão acessar os aplicativos Web conectados ao Azure AD sem precisar inserir suas credenciais novamente.
+
+O SSO no Intune Managed Browser requer que seu dispositivo seja registrado pelo aplicativo Microsoft Authenticator no iOS ou pelo Portal da Empresa do Intune no Android. Se o dispositivo dos usuários com o aplicativo Authenticator ou o Portal da Empresa do Intune ainda não tiver sido registrado por outro aplicativo, eles deverão registrá-lo quando navegarem até o aplicativo Web conectado ao Azure AD no Intune Managed Browser. Depois que o dispositivo for registrado com a conta gerenciada pelo Intune, essa conta terá o SSO habilitado para aplicativos Web conectados ao Azure AD. 
+
+> [!NOTE]
+> O registro do dispositivo é um simples check-in com o serviço do Azure AD. Ele não requer o registro de dispositivo completo e não dá à TI nenhum privilégio adicional no dispositivo.
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Criar uma configuração de aplicativo do Managed Browser
 
@@ -102,7 +142,10 @@ O Intune Managed Browser e o [Proxy de Aplicativo do Azure AD]( https://docs.mic
     - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - Você deve estar usando pelo menos a versão mínima 1.2.0 do aplicativo Managed Browser.
 - Usuários do aplicativo Managed Browser tem uma [política de Proteção do Aplicativo Intune]( app-protection-policy.md) atribuída ao aplicativo.
-Observação: os dados de redirecionamento do Proxy de Aplicativo Atualizado podem levar até 24 horas para entrarem em vigor no Managed Browser.
+
+    > [!NOTE]
+    > Os dados de redirecionamento do Proxy de Aplicativo Atualizado podem levar até 24 horas para entrarem em vigor no Managed Browser.
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Etapa 1: habilitar o redirecionamento automático para do Outlook para o Managed Browser
 O Outlook deve ser configurado com uma política de proteção do aplicativo que habilita a configuração para **Restringir conteúdo da Web para exibição no Managed Browser**.
@@ -115,6 +158,7 @@ Este procedimento configura o aplicativo Managed Browser para usar o redireciona
 |Chave|Valor|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+Para obter mais informações sobre como o Managed Browser e o Proxy de Aplicativo do Azure AD podem ser usados em conjunto para obter um acesso contínuo (e protegido) a aplicativos Web locais, consulte a postagem no blog Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Melhor juntos: o Intune e o Azure Active Directory se unem para melhorar o acesso do usuário).
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Como configurar a página inicial para o Managed Browser
 
@@ -247,3 +291,7 @@ A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do
 
 ### <a name="turn-off-usage-data"></a>Desligar os dados de uso
 A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do Managed Browser para melhorar os produtos e serviços Microsoft. Os usuários podem desligar a coleta de dados usando a configuração **Dados de Uso** em seus dispositivos. Você não tem controle sobre a coleta desses dados.
+
+## <a name="next-steps"></a>Próximas etapas
+
+- [O que são políticas de proteção do aplicativo?](app-protection-policy.md)

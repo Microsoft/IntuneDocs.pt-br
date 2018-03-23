@@ -1,24 +1,24 @@
 ---
-title: "Inscrever-se para obter uma avaliação gratuita de 30 dias do Microsoft Intune"
-titleSuffix: Azure portal
-description: "Como se inscrever para obter uma avaliação gratuita de 30 dias do Intune.\""
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Inscrever-se para obter uma avaliação gratuita de 30 dias do Microsoft Intune
+titleSuffix: Microsoft Intune
+description: Saiba como inscrever-se para obter uma avaliação gratuita de 30 dias do Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Inscrever-se para uma avaliação gratuita do Microsoft Intune
 
@@ -30,11 +30,15 @@ Este artigo explica como se inscrever para obter uma avaliação do Intune autô
 
 * Se a maioria de suas operações de TI e os usuários estiverem em uma localidade diferente que você, poderá ser útil selecionar essa localidade em **Onde sua empresa está localizada?**.
 
-2. No final do processo de inscrição, você receberá uma mensagem com os dados na sua nova conta. <br/> ![Imagem das informações de conta](./media/2-end-of-sign-up-process.png) <br/>Neste ponto, se você clicar em **Você estará pronto para começar**, será levado para o Centro de Administração do Office 365, no qual poderá adicionar usuários ao seu ambiente de teste. <br/><br/>No entanto, se você desejar acessar o portal do Intune no Azure diretamente, abra uma nova janela do navegador e insira **https://portal.azure.com** na barra de endereços. Você será levado para a página de entrada do Azure, na qual as credenciais fornecidas poderão ser usadas para entrar. Use esse endereço sempre que você desejar entrar em sua avaliação do Intune. <br/> ![Imagem da página de entrada do Portal do Azure](./media/azure-portal-signin.png)
+2. No final do processo de inscrição, você receberá uma mensagem com os dados na sua nova conta. <br/> 
+
+![Imagem das suas informações de conta](./media/2-end-of-sign-up-process.png) <br/>
+
+Neste ponto, se você clicar em **Você estará pronto para começar**, será levado para o Centro de Administração do Office 365, no qual poderá adicionar usuários ao seu ambiente de teste. <br/><br/>No entanto, se você desejar acessar o portal do Intune no Azure diretamente, abra uma nova janela do navegador e insira **https://portal.azure.com** na barra de endereços. Você será levado para a página de entrada do Azure, na qual as credenciais fornecidas poderão ser usadas para entrar. Use esse endereço sempre que você desejar entrar em sua avaliação do Intune. <br/> ![Imagem da página de credenciais do Portal do Azure](./media/azure-portal-signin.png)
 
 Na primeira vez que você entrar no [Portal do Intune](https://portal.azure.com) no Azure, talvez você não encontre o Intune no Painel do Azure. Para adicionar o serviço Intune ao painel do Azure:
 1. Escolha **Todos os serviços >** na lista de serviços do Azure à esquerda do painel e digite **Intune** na caixa de pesquisa.
-2. Escolha **Intune** na lista e selecione a estrela para adicionar o serviço à lista de serviços.<br/> ![Imagem da seleção do Intune na lista de serviços](./media/azure-add-intune1.png)
+2. Escolha **Intune** na lista e selecione a estrela para adicionar o serviço à lista de serviços.<br/> ![Imagem de selecionar o Microsoft Intune no portal do Azure](./media/azure-add-intune1.png)
 3. Escolha **Intune** na lista de serviços para abrir o painel do Intune.
 
 Caso se inscreva para uma avaliação, você receberá uma mensagem de email com seus dados da conta no endereço de email fornecido durante o processo de inscrição. Isso confirma que sua avaliação está ativa.

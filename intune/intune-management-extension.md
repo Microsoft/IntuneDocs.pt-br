@@ -1,24 +1,25 @@
 ---
-title: Gerenciar scripts do PowerShell no Intune para dispositivos Windows 10
-titlesuffix: Azure portal
-description: Aprenda a carregar scripts do PowerShell no Intune para executar em dispositivos Windows 10.
-keywords: 
+title: Gerenciar scripts do PowerShell no Microsoft Intune para dispositivos Windows 10
+titlesuffix: ''
+description: Aprenda a carregar scripts do PowerShell no Microsoft Intune para executar em dispositivos Windows 10.
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerenciar scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gerenciamento do Intune permite que você carregue scripts do PowerShell no Intune para serem executados em dispositivos Windows 10. A extensão de gerenciamento complementa os recursos de gerenciamento de dispositivo móvel (MDM) do Windows 10 e facilita a mudança para o gerenciamento moderno.

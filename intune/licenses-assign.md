@@ -1,24 +1,24 @@
 ---
-title: "Atribuir licenças do Microsoft Intune"
-description: "Atribuir licenças aos usuários para que possam se registrar no Intune"
-keywords: 
+title: Atribuir licenças do Microsoft Intune
+description: Atribuir licenças aos usuários para que possam se registrar no Intune
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos usuários para que possam registrar dispositivos no Intune
 
@@ -58,6 +58,17 @@ Veja esta [visão geral do School Data Sync](https://support.office.com/article/
 * Cada **usuário** ao qual você atribui uma licença de software de usuário pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para gerenciar aplicativos e até 15 dispositivos.
 * Cada **dispositivo** ao qual você atribui uma licença de software de dispositivo pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para uso por qualquer número de usuários.
 * Se um dispositivo for usado por mais de um usuário, cada um deles precisará de uma licença de software de dispositivo ou todos os usuários precisarão de uma licença de software de usuário.
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Noções básicas sobre o tipo de licenças adquiridas
+
+A maneira como você adquiriu o Intune determina as informações de assinatura:
+
+- Se você adquirir o Intune por meio de um Contrato Enterprise, as informações de assinatura estarão disponíveis no portal de licença de Volume em **Assinaturas**.
+- Se você adquiriu o Intune por meio de um Provedor de soluções de nuvem, verifique com seu revendedor.
+- Se você adquiriu o Intune com um CC# ou fatura, então suas licenças serão baseadas no usuário.
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Usar o PowerShell para gerenciar seletivamente licenças de usuário do EMS
 As organizações que usam o Microsoft Enterprise Mobility + Security (conhecido anteriormente como Enterprise Mobility Suite) podem ter usuários que precisam apenas do Azure Active Directory Premium ou dos serviços do Intune no pacote do EMS. Você pode atribuir um serviço ou um subconjunto de serviços usando os [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).

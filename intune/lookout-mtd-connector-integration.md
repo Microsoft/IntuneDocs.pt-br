@@ -1,25 +1,25 @@
 ---
-title: "Configurar a integração de bloqueio com o Microsoft Intune"
-titlesuffix: 
-description: "Saiba como integrar o Intune com a Defesa contra Ameaças Móveis do Lookout para controlar o acesso de dispositivos móveis aos recursos corporativos."
-keywords: 
+title: Configurar a integração de bloqueio com o Microsoft Intune
+titlesuffix: ''
+description: Saiba como integrar o Intune com a Defesa contra Ameaças Móveis do Lookout para controlar o acesso de dispositivos móveis aos recursos corporativos.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a integração da Defesa contra Ameaças Móveis do Lookout com o Intune
 
@@ -72,8 +72,6 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 2.  O primeiro logon no console do Lookout deve ser feito com uma conta de usuário com a função Administrador Global do Azure AD para registrar seu locatário do Azure AD. Mais tarde, a conexão não exigirá esse nível de privilégio do Azure AD. Uma página de consentimento será exibida. Escolha **Aceitar** para concluir o registro. Depois de aceita e consentir, você será redirecionado para o Console do Lookout.
 
     ![captura de tela da página de primeiro logon do console do Lookout](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Consulte [Solucionar problemas de integração do Lookout](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) para obter ajuda com problemas de logon.
 
 3.  No [Console do Lookout](https://aad.lookout.com), no módulo **Sistema**, escolha a guia **Conectores** e selecione **Intune**.
 

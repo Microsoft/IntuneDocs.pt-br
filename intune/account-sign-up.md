@@ -1,26 +1,26 @@
 ---
-title: Inscrever-se ou entrar no Intune
-description: Como se inscrever para uma assinatura do Intune ou como entrar para iniciar sua assinatura
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Inscrever-se ou entrar no Microsoft Intune
+description: Como se inscrever para uma assinatura do Microsoft Intune ou como entrar para iniciar sua assinatura.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d794837b88b0c0b3dbf4888e50714f06b94c8d53
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 8858768586398d3dbb341c9963727df5faf9da15
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="sign-up-or-sign-in-to-intune"></a>Inscrever-se ou entrar no Intune
+# <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Inscrever-se ou entrar no Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -37,7 +37,7 @@ Se você já tem uma conta corporativa ou de estudante, **entre** com essa conta
 
 1.  Visite a [Página de inscrição do Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Captura de tela da página de inscrição de conta de avaliação do Microsoft Intune](./media/account-sign-up-site.png)
+  ![Captura de tela da página da Web de inscrição de conta de avaliação do Microsoft Intune](./media/account-sign-up-site.png)
 
 2.  Na página de Inscrição, entre ou inscreva-se para gerenciar uma nova assinatura do Intune.
 

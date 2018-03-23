@@ -1,25 +1,25 @@
 ---
-title: "Edição antecipada"
-description: 
-keywords: 
+title: Edição antecipada
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>A edição antecipada do Microsoft Intune – Março de 2018
 
@@ -147,6 +147,33 @@ Você poderá criar categorias de livros eletrônicos personalizada e atribuir l
 
 Estamos atualizando o aplicativo Portal da Empresa para Android para seguir as diretrizes do [Design de Material](https://material.io/) do Android. Publicaremos as imagens dos novos ícones para o artigo [Novidades na interface do usuário do aplicativo](whats-new-app-ui.md) quando o aplicativo for lançado. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Suporte móvel do Edge para políticas de proteção de aplicativo do Intune <!-- 1817882 -->
+
+O navegador Microsoft Edge para dispositivos móveis dará suporte a políticas de proteção de aplicativo definidas no Intune.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Use o nome totalmente diferenciado como assunto para o certificado SCEP <!--2221763 eeready-->
+Quando você cria um perfil de certificado SCEP, você inserir o Nome do assunto. Será possível usar o nome totalmente diferenciado como o assunto. Para **Nome do assunto**, selecione **Personalizado** e, em seguida, digite `CN={{OnPrem_Distinguished_Name}}`. Para usar a variável `{{OnPrem_Distinguished_Name}}`, sincronize o atributo de usuário `onpremisesdistingishedname` usando o [Azure AD (Active Directory) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com seu Azure AD. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Os dispositivos iOS solicitam um PIN a cada 15 minutos <!--1550837 eeready-->
+Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS, os usuários deverão definir um PIN a cada 15 minutos. Os usuários serão notificados continuamente até que um PIN seja definido.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Habilitar compartilhamento de contatos por Bluetooth – Android for Work <!--1098983 eeready-->
+Por padrão, o Android impede que contatos no perfil de trabalho sejam sincronizados com dispositivos Bluetooth. Como resultado, os contatos do perfil de trabalho não são exibidos nas informações sobre a chamada para dispositivos Bluetooth.
+
+Haverá uma nova configuração em **Android for Work** > **Restrições de dispositivo** > **Configurações do perfil de trabalho**:
+- Compartilhamento de contatos por Bluetooth
+
+O administrador do Intune pode configurar essas configurações para habilitar o compartilhamento. Isso é útil ao emparelhar um dispositivo com um dispositivo Bluetooth baseado em carro que exibe as informações sobre a chamada para uso não assistido. Quando habilitados, os contatos de perfil de trabalho são exibidos. Quando não habilitados, os contatos de perfil de trabalho não serão exibidos.
+
+Aplica-se a: dispositivos Android de perfil de trabalho no sistema operacional Android v6.0 e mais recentes.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Agendar suas atualizações automáticas <!--1805514 -->
+
+Com o Intune, você controla como instalar atualizações automáticas usando as [configurações do Grupo de Atualização do Windows](windows-update-for-business-configure.md). Você poderá agendar atualizações recorrentes, incluindo a semana, o dia e a hora. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Desabilitar verificações na reinicialização do dispositivo <!--1805490 -->
+
+Com o Intune, você tem controle para [gerenciar atualizações de software](windows-update-for-business-configure.md). A propriedade **Verificações de reinicialização** será adicionada e habilitada por padrão. Para ignorar as verificações típicas que ocorrem quando você reinicia um dispositivo (como usuários ativos, níveis de bateria e assim por diante), selecione **Ignorar**. 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Você poderá personalizar a cor do tema nos aplicativos do Portal da Empresa us
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Novas configurações do Windows Defender Credential Guard adicionadas às configurações do Endpoint Protection <!--1102252 --> 
 
-Novas configurações do [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] serão adicionadas à **Configuração do dispositivo** > **Perfis** > **Endpoint Protection**. As configurações a seguir serão adicionadas: 
+As novas configurações do [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] serão adicionadas à **Configuração do dispositivo** > **Perfis** > **Endpoint Protection**. As configurações a seguir serão adicionadas: 
 
 - Nível de Segurança da Plataforma: especifique se o Nível de Segurança da Plataforma está habilitado na próxima reinicialização. A segurança baseada em virtualização requer a Inicialização Segura. A segurança baseada em virtualização pode, opcionalmente, ser habilitada com o uso de proteções de DMA (acesso direto à memória). Proteções de DMA exigem suporte de hardware e serão habilitadas somente em dispositivos configurados corretamente.
 - Segurança baseada em virtualização: especifique se a segurança baseada em virtualização será habilitada na próxima reinicialização. 
@@ -185,29 +212,6 @@ Para perfis de educação, novas configurações estarão disponíveis na catego
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Configuração de provisionamento de aplicativos iOS <!-- 1581650 -->
 Você poderá atribuir perfis de provisionamento de aplicativos iOS para impedir que os aplicativos expirem incluindo ou excluindo grupos de segurança.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Novas configurações do Windows Defender Exploit Guard <!-- 631893 -->
-
-Seis novas configurações de **Redução da Superfície de Ataque** e funcionalidades expandidas de **Acesso controlado a pastas: Proteção de pasta** estarão disponíveis. Essas configurações podem ser encontradas em: Configuração do dispositivo\Perfis\
-Criar perfil\Endpoint Protection\Windows Defender Exploit Guard.
-
-#### <a name="attack-surface-reduction"></a>Redução da superfície de ataque
-
-|Nome da configuração  |Opções de configuração  |Descrição  |
-|---------|---------|---------|
-|Proteção avançada contra ransomware|Habilitado, Auditoria, Não configurado|Usar proteção agressiva contra ransomware.|
-|Sinalizar roubo de credencial do subsistema da autoridade de segurança local do Windows|Habilitado, Auditoria, Não configurado|Sinalizar roubo de credencial do subsistema da autoridade de segurança local do Windows (lsass.exe).|
-|Criação de processo de comandos WMI e PSExec|Bloquear, Auditoria, Não configurado|Bloquear criações de processo provenientes de comandos PSExec e WMI.|
-|Processos não assinados e não confiáveis executados de um USB|Bloquear, Auditoria, Não configurado|Bloquear processos não assinados e não confiáveis executados de um USB.|
-|Arquivos executáveis que não atendem um critério de prevalência, idade ou lista confiável|Bloquear, Auditoria, Não configurado|Bloquear a execução de arquivos executáveis a menos que eles atendam a um critério de prevalência, de idade ou de lista confiável.|
-
-#### <a name="controlled-folder-access"></a>Acesso controlado à pasta
-
-|Nome da configuração  |Opções de configuração  |Descrição  |
-|---------|---------|---------|
-|Proteção de pasta (já implementada)|Não configurado, Habilitar, Somente auditoria (já implementado)<br><br> **Novo**<br>Bloquear modificação de disco, Auditar modificação de disco|
-Proteger arquivos e pastas contra alterações não autorizadas por aplicativos não amigáveis.<br><br>**Habilitar**: impedir que aplicativos não confiáveis modifiquem ou excluam arquivos em pastas protegidas e gravem em setores do disco.<br><br>
-**Bloquear modificação de disco somente**:<br>Impedir que aplicativos não confiáveis gravem em setores do disco. Aplicativos não confiáveis ainda podem modificar ou excluir arquivos em pastas protegidas.|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Novas configurações do Windows Defender Application Guard <!-- 1631890 -->
 

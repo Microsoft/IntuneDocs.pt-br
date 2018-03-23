@@ -1,24 +1,24 @@
 ---
 title: Encapsular aplicativos Android com a Ferramenta de Encapsulamento do Aplicativo Intune
-description: "Saiba como encapsular os aplicativos Android sem alterar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel."
-keywords: 
+description: Saiba como encapsular os aplicativos Android sem alterar o código do aplicativo em si. Prepare os aplicativos para que você possa aplicar políticas de gerenciamento de aplicativo móvel.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -30,8 +30,6 @@ A ferramenta é um aplicativo de linha de comando do Windows que é executado no
 
 
 Antes de executar a ferramenta, consulte [Considerações de segurança para executar a Ferramenta de Disposição do Aplicativo](#security-considerations-for-running-the-app-wrapping-tool). Para baixar a ferramenta, acesse [Ferramenta de Disposição do Aplicativo do Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) no GitHub.
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Cumprir os pré-requisitos para usar a Ferramenta de Disposição do Aplicativo
 
@@ -51,6 +49,8 @@ Antes de executar a ferramenta, consulte [Considerações de segurança para exe
     > Em alguns casos, a versão de 32 bits do Java pode resultar em problemas de memória. É recomendável instalar a versão de 64 bits.
 
 - O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Para a **reutilização** de certificados existentes e orientações do certificado de autenticação geral, consulte [Reutilizando certificados de autenticação e encapsulando aplicativos](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). O executável Java keytool.exe é usado para gerar **novas** credenciais necessárias para assinar o aplicativo de saída encapsulado. Todas as senhas definidas devem ser seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
+
+- (Opcional) Habilitar Multidex dentro do aplicativo de entrada. Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. Nesse cenário, a melhor prática seria habilitar Multidex dentro do próprio aplicativo. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo). 
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
 
@@ -159,6 +159,7 @@ Este é um guia para exigir o prompt do usuário na inicialização do aplicativ
 Essas instruções são específicas para todos os aplicativos Android e Xamarin que devem exigir políticas de proteção de aplicativo do Intune para serem usados em um dispositivo de usuário final.
 
 1. Configure a ADAL usando as etapas definidas no [Guia do SDK do Intune para Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+
 > [!NOTE] 
 > O termo "ID do cliente" vinculado ao aplicativo é o mesmo que o termo "ID do aplicativo" do Portal do Azure vinculado ao aplicativo. 
 * Para habilitar o SSO, é necessária a "Configuração da ADAL comum" nº2.

@@ -1,24 +1,24 @@
 ---
 title: Plug-in Cordova do SDK de Aplicativo do Microsoft Intune
-description: 
+description: O Plug-in Cordova do SDK de Aplicativo do Intune permite que os desenvolvedores integrem os recursos de proteção de dados e aplicativos do Intune em seu aplicativo baseado no Cordova.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova do SDK de Aplicativo do Microsoft Intune
 
@@ -64,7 +64,7 @@ Os aplicativos Cordova criados com o Plug-in Cordova do SDK de Aplicativo do Int
 * A versão 0.8.0+ do [plug-in da ADAL (Biblioteca de Autenticação do Azure Active Directory) para Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) é necessária.
 
 > [!NOTE]
-> Devido a um bug do Apache Cordova registrado [aqui](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), os aplicativos que já têm a dependência do plug-in não atualizarão automaticamente o plug-in para a versão solicitada.
+> Devido a um bug do Apache Cordova registrado [aqui](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), os aplicativos que já têm a dependência do plug-in não farão upgrade automático do plug-in para a versão solicitada.
 
 
 
@@ -96,7 +96,7 @@ Essa configuração dá suporte a um único destino e executará a configuraçã
 
 1. Importe esse plug-in com as ferramentas mais recentes do Cordova. Automaticamente, o plug-in será invocado como uma etapa `after_compile`.
 
-2. O plug-in criará uma versão habilitada para Intune de um APK interno (Android API 14+) no final do processo de build. A saída do build conterá um `[Project]-intunewrapped-[Build_Configuration].apk` (por exemplo, `helloWorld-intunewrapped-debug.apk`).
+2. O plug-in criará uma versão habilitada para Intune de um APK criado (API do Android 14+) no final do processo de build. A saída do build conterá um `[Project]-intunewrapped-[Build_Configuration].apk` (por exemplo, `helloWorld-intunewrapped-debug.apk`).
 
 > [!NOTE]
 > O plug-in somente dá suporte a compilações Gradle.
@@ -118,7 +118,7 @@ O plug-in reconhece automaticamente as informações de assinatura fornecidas pa
 
 Veja as [informações de assinatura gradle do Cordova](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) para saber mais sobre o formato esperado.
 
-No momento, não há suporte para a capacidade de fornecer informações de assinatura em `build.json` ou em locais aleatórios fornecidos via parâmetros à compilação do Cordova.
+No momento, o Intune não dá suporte para a capacidade de fornecer informações de assinatura em `build.json` ou em locais aleatórios fornecidos via parâmetros à compilação do Cordova.
 
 ## <a name="debugging-from-visual-studio"></a>Depuração do Visual Studio
 
@@ -129,8 +129,8 @@ Após iniciar o aplicativo pela primeira vez, você verá uma caixa de diálogo 
 ### <a name="android"></a>Android
 
 * Suporte incompleto para MultiDex.
-* O aplicativo deve ter um `minSdkVersion` de 14 e um `targetSdkVersion` de 24 ou abaixo. No momento, não há suporte para aplicativos destinados à API 25
-* Não podemos assinar novamente aplicativos assinados com o Esquema de assinatura V2. Quando aplicativos assinados por V2 são agrupados com o plug-in, a saída .apk agrupada não é assinada.
+* O aplicativo deve ter um `minSdkVersion` de 14 e um `targetSdkVersion` de 24 ou abaixo. No momento, o Intune não é compatível com aplicativos destinados à API 25
+* O Intune não pode assinar novamente aplicativos assinados com o Esquema de assinatura V2. Quando aplicativos assinados por V2 são agrupados com o plug-in, a saída .apk agrupada não é assinada.
 *
   * Desabilite a Assinatura V2 padrão do Cordova adicionando o seguinte ao seu arquivo `build-extras.gradle`:
 
@@ -157,6 +157,6 @@ Após iniciar o aplicativo pela primeira vez, você verá uma caixa de diálogo 
 
 ### <a name="ios"></a>iOS
 
-* Sempre que modificar a lista de UTI no nó **CFBundleDocumentTypes** do arquivo **Info.plist**, você deve limpar o UTI do Intune na seção de UTIs Importados do mesmo arquivo plist (nó **UTImportedTypeDeclarations**) antes de compilar novamente. Todos os UTIs do Intune começarão com o prefixo `com.microsoft.intune.mam`.
+* Sempre que modificar a lista de UTIs no nó **CFBundleDocumentTypes** do arquivo **Info.plist**, será necessário limpar os UTIs do Intune na seção de UTIs Importados do mesmo arquivo plist (nó **UTImportedTypeDeclarations**) antes de compilar novamente. Todos os UTIs do Intune começarão com o prefixo `com.microsoft.intune.mam`.
 
 * Se quiser remover o plug-in SDK de Aplicativo do Intune para Cordova de seu projeto Cordova, você também deverá remover a plataforma iOS e adicioná-la novamente para desfazer parte da configuração do Intune nos arquivos .xcodeproj e .plist.

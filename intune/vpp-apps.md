@@ -1,25 +1,25 @@
 ---
-title: Gerenciar aplicativos e livros comprados por volume com o Intune
-titlesuffix: Azure portal
-description: "Saiba como você pode usar o Intune para gerenciar e monitorar o uso de aplicativos e livros comprados por volume em lojas."
-keywords: 
-author: erikre
+title: Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune
+titlesuffix: ''
+description: Saiba como usar o Microsoft Intune para gerenciar e monitorar o uso de aplicativos e livros comprados por volume em lojas."
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edd39502ae61991c9c596d859c667b65b6e0d3c1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b33a129954fbd5bbf5ce3907810ceb7e42849737
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune
 

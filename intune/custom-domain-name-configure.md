@@ -1,30 +1,31 @@
 ---
-title: "Configurar um nome de domínio personalizado"
-description: "Adicionar um nome de domínio personalizado para sua assinatura do Intune"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Configurar um nome de domínio personalizado
+titlesuffix: Microsoft Intune
+description: Adicionar um nome de domínio personalizado para sua assinatura do Microsoft Intune
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Configurar um nome de domínio personalizado
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Este tópico informa os administradores como eles podem criar um DNS CNAME para simplificar e personalizar sua experiência de logon.
+Este tópico informa os administradores como eles podem criar um DNS CNAME para simplificar e personalizar sua experiência de logon usando o Microsoft Intune.
 
 Quando sua empresa se inscreve em um serviço baseado em nuvem da Microsoft como o Intune, você recebe um nome de domínio inicial hospedado no Azure Active Directory (AD), que é semelhante a **seudomínio.onmicrosoft.com**. Nesse exemplo, **seudomínio** é o nome de domínio que você escolheu ao se inscrever. **onmicrosoft.com** é o sufixo atribuído às contas que você adiciona à sua assinatura. Você pode configurar o domínio personalizado da organização para acessar o Intune, em vez de usar o nome de domínio fornecido com a sua assinatura.
 

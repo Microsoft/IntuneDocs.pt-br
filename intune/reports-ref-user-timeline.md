@@ -1,34 +1,35 @@
 ---
-title: "Linha do tempo da entidade Usuário do Data Warehouse | Microsoft Docs"
-description: "O Intune Data Warehouse representa Usuários em uma linha do tempo."
+title: Linha do tempo da entidade Usuário do Data Warehouse
+titlesuffix: Microsoft Intune
+description: Saiba como o Intune Data Warehouse representa Usuários em uma linha do tempo.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Representação do tempo de vida do usuário no Intune Data Warehouse
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representação do tempo de vida do usuário no Microsoft Intune Data Warehouse
 
 Você pode usar o mês de instantâneos de dados armazenados no Intune Data Warehouse para responder perguntas sobre tendências com base em tempo. Por exemplo, você pode examinar o número de usuários adicionados durante um mês. Você também pode perguntar sobre o número de usuários que foram removidos do sistema.
 
-Para fornecer essa informação, o data warehouse armazena informações de histórico. Isso significa que ele pode rastrear o tempo de vida de uma entidade. O warehouse registra quando uma entidade foi criada, quando o estado da entidade é alterado e quando uma entidade é excluída. Com o histórico capturado com instantâneos diários de medidas quantitativas, você pode comparar um dia com o dia anterior etc.
+Para fornecer esse insight de tipo, o data warehouse armazena informações de histórico. O data warehouse pode controlar o tempo de vida de uma entidade. O warehouse registra quando uma entidade foi criada, quando o estado da entidade é alterado e quando uma entidade é excluída. Com o histórico capturado com instantâneos diários de medidas quantitativas, você pode comparar um dia com o dia anterior etc.
 
 Trabalhar com tempos de vida de entidade pode ser confuso, pois suas entidades mudam de estado. Isso significa que se você olhar para um instantâneo no dia 30, talvez não exista um registro de usuário em um estado ativo nos dados. No dia 29-28 o registro da entidade pode existir como ativo. E, então, antes do dia 28, o usuário nem existia.
 
-Isso pode ficar mais claro se percorrermos o tempo de vida de uma entidade.
+Este cenário poderá ficar mais claro se você percorrer o tempo de vida de uma entidade.
 
 Vamos supor que um usuário, **Diogo Martins**, recebe uma licença em 01/06/2017, a tabela **Usuário** teria a seguinte entrada: 
  
@@ -75,5 +76,5 @@ Qualquer pessoa que queira ver apenas as entidades de dimensão que existem atua
 
 ## <a name="next-steps"></a>Próximas etapas
 
- - Para saber mais sobre a entidade **Usuário Atual**, veja [Referência para a entidade de usuário atual](reports-ref-current-user.md).
- - Para saber mais sobre a entidade **Usuário**, veja [Referência para a entidade de usuário](reports-ref-user.md).
+ - Para saber mais sobre a entidade **Usuário atual**, consulte [Reference for current user entity](reports-ref-current-user.md) (Referência para a entidade de usuário atual).
+ - Para saber mais sobre a entidade **Usuário**, consulte [Reference for user entity](reports-ref-user.md) (Referência para a entidade de usuário).
