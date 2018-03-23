@@ -1,26 +1,26 @@
 ---
-title: Maneiras comuns de usar o Intune
-description: Lista seis das tarefas mais comuns nas quais o Intune ajuda
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Maneiras comuns de usar o Microsoft Intune
+description: Saiba mais sobre as seis tarefas mais comuns que o Microsoft Intune pode ajudá-lo a gerenciar.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 040076248629faa40745b16f90b694331c60a9b1
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b3010695c6562bab845d271775693f23daf99184
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="common-ways-to-use-intune"></a>Maneiras comuns de usar o Intune
+# <a name="common-ways-to-use-microsoft-intune"></a>Maneiras comuns de usar o Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 

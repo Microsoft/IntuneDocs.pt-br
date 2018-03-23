@@ -1,23 +1,23 @@
 ---
-title: "Definir as configurações do Windows Update for Business no Intune"
-titleSuffix: Azure portal
-description: "Saiba como definir as configurações do Windows Update for Business no Intune para controlar as atualizações em dispositivos Windows 10."
-keywords: 
+title: Configurar configurações do Windows Update para Empresas no Microsoft Intune
+titleSuffix: ''
+description: Saiba como definir as configurações do Windows Update para Empresas no Microsoft Intune para controlar as atualizações em dispositivos Windows 10.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Gerenciar atualizações de software
 
@@ -140,7 +140,7 @@ Por exemplo, você pode usar os seguintes valores em **Adicionar ou editar a con
 - **Tipo de Dados**: cadeia de caracteres
 - **Valor**: *use o GUID mostrado na guia Telemetria do Windows em seu espaço de trabalho OMS*>
 
-![Configuração do Windows para dados de diagnóstico e uso](./media/commID.png)
+![Configuração OMA-URI – Adicionar linha](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Como pausar as atualizações
 Você pode pausar o recebimento pelo dispositivo das Atualizações do Recurso ou Atualizações de Qualidade por um período de até 35 dias a partir da pausa das atualizações. Depois do máximo de dias transcorrido, a funcionalidade de pausa irá expirar automaticamente e o dispositivo verificará as Atualizações do Windows em relação às atualizações aplicáveis. Após essa verificação, você pode pausar as atualizações novamente.

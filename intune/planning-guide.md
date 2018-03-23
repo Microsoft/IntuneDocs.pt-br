@@ -1,30 +1,31 @@
 ---
-title: "Introdução ao planejamento e design do Intune"
-description: "Este artigo é uma introdução a todas as seções de planejamento, design e implementação do Intune. Ferramentas para ajudá-lo a determinar as metas, os cenários de casos de uso e requisitos, criar planos de distribuição e comunicação, bem como planos de suporte, teste e validação."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Introdução ao planejamento e design do Intune
+titlesuffix: Microsoft Intune
+description: Este artigo é uma introdução a todas as seções de planejamento, design e implementação do Microsoft Intune. Ferramentas para ajudá-lo a determinar as metas, os cenários de casos de uso e requisitos, criar planos de distribuição e comunicação, bem como planos de suporte, teste e validação.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guia de planejamento de implantação, design e implementação do Intune
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-Uma implantação bem-sucedida do Intune começa com um bom plano e design. A finalidade deste guia é orientá-lo durante o processo de desenvolvimento de um plano de implantação, criação de um design, integração do Intune e realização de uma distribuição de produção.
+Uma implantação bem-sucedida do Microsoft Intune começa com um bom plano e design. A finalidade deste guia é orientá-lo durante o processo de desenvolvimento de um plano de implantação, criação de um design, integração do Intune e realização de uma distribuição de produção.
 
 ## <a name="whats-included-in-this-guide"></a>O que está incluído neste guia?
 

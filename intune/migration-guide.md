@@ -1,29 +1,30 @@
 ---
-title: "Guia de migração de gerenciamento de dispositivo móvel do Intune"
-description: "Este guia orienta você passo a passo sobre os diversos detalhes envolvidos na migração de um provedor MDM de terceiros para o Microsoft Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Guia de migração de gerenciamento de dispositivo móvel do Intune
+titlesuffix: Microsoft Intune
+description: Este guia orienta você passo a passo sobre os diversos detalhes envolvidos na migração de um provedor MDM de terceiros para o Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
-![Arte do guia de migração de MDM do Intune](./media/MDM-migration-guide-art.PNG)
+![Arte do guia de migração de MDM do Microsoft Intune](./media/MDM-migration-guide-art.PNG)
 
-Uma migração bem-sucedida para o Intune começa com um plano sólido que considera o ambiente atual de MDM (gerenciamento de dispositivo móvel), as metas de negócios e os requisitos técnicos. Além disso, você precisa contar com as principais partes interessadas que oferecerão suporte e colaborarão com seu plano de migração.
+Uma migração bem-sucedida para o Microsoft Intune começa com um plano sólido que considera o ambiente atual de MDM (gerenciamento de dispositivo móvel), as metas de negócios e os requisitos técnicos. Além disso, é necessário incluir os principais stakeholders que darão suporte ao seu plano de migração e colaborarão com ele.
 
 Este guia orienta você passo a passo sobre os diversos detalhes envolvidos na migração de um provedor MDM de terceiros para o Intune.
 
