@@ -1,24 +1,24 @@
 ---
-title: "Políticas de firewall para computadores Windows"
-description: "O Intune pode ajudá-lo a proteger seus computadores gerenciados com o cliente do Intune, incluindo ajuda para definir as configurações do Firewall do Windows."
-keywords: 
+title: Políticas de firewall para computadores Windows
+description: O Intune pode ajudá-lo a proteger seus computadores gerenciados com o cliente do Intune, incluindo ajuda para definir as configurações do Firewall do Windows.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 61ff44a9c2c6271ae72b618c7c09697837f4a516
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3be77c1042d695ed0bed6ee7cbbc442342e91d8b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 
@@ -70,7 +70,7 @@ O valor padrão para cada uma dessas configurações é **Sim**, que é o valor 
 ### <a name="block-all-incoming-connections-including-those-in-the-list-of-allowed-programs"></a>Bloquear todas as conexões de entrada, incluindo aquelas na lista de programas permitidos
 
 Essas configurações de política configuram Firewall do Windows para bloquear o tráfego de entrada de rede em computadores gerenciados que estão:
-- Conectados a um domínio (por exemplo, no local de trabalho)
+- Conectado a um domínio (por exemplo, no local de trabalho)
 - Conectado a uma rede privada (confiável) (como uma rede doméstica)
 - Conectados a uma rede pública não confiável (como uma cafeteria)
 

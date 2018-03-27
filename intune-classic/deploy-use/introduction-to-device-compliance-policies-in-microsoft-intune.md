@@ -1,25 +1,25 @@
 ---
-title: "Políticas de conformidade do dispositivo"
-description: "Este tópico explica o que são políticas de conformidade do dispositivo e como elas funcionam."
-keywords: 
+title: Políticas de conformidade do dispositivo
+description: Este tópico explica o que são políticas de conformidade do dispositivo e como elas funcionam.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bcdad361dba7ee006bf2e2cffac7f1024c5e6dc6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ce8375a1b946a7ba5286637b1958539fd5015d8a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Políticas de conformidade do dispositivo no Microsoft Intune
 
@@ -44,11 +44,11 @@ A tabela a seguir lista os tipos de dispositivos que têm suporte das políticas
 |-----|----|----|----|----|
 |**Configuração de senha ou PIN** |Corrigida|Corrigida|Corrigida|Em Quarentena|
 |**Criptografia de dispositivo**|Não aplicável|Corrigida|Corrigida (pela definição do PIN)|Em Quarentena|
-|**Dispositivo desbloqueado ou com raiz**|Não aplicável|Não aplicável|Em Quarentena (não é uma configuração)|Em Quarentena (não é uma configuração)|
-|**Perfil de email**|Não aplicável|Não aplicável|Em Quarentena|Não aplicável|
+|**Dispositivo desbloqueado ou com raiz**|Não Aplicável|Não Aplicável|Em Quarentena (não é uma configuração)|Em Quarentena (não é uma configuração)|
+|**Perfil de email**|Não Aplicável|Não Aplicável|Em Quarentena|Não Aplicável|
 |**Versão mínima do SO**|Em Quarentena|Em Quarentena|Em Quarentena|Em Quarentena|
 |**Versão máxima do SO**|Em Quarentena|Em Quarentena|Em Quarentena|Em Quarentena|
-|**Atestado de integridade do Windows**|Em quarentena: Windows 10 e Windows 10 Mobile<br /><br />Não aplicável: Windows 8.1|Não aplicável|Não aplicável|Não aplicável|
+|**Atestado de integridade do Windows**|Em quarentena: Windows 10 e Windows 10 Mobile<br /><br />Não aplicável: Windows 8.1|Não Aplicável|Não Aplicável|Não Aplicável|
 
 ------------------------------
 
