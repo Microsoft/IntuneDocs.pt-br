@@ -1,25 +1,25 @@
 ---
-title: "Pré-requisitos para políticas de MAM"
-description: "Este tópico descreve os pré-requisitos para a configuração de usuários antes de criar políticas de gerenciamento de aplicativo móvel."
-keywords: 
+title: Pré-requisitos para políticas de MAM
+description: Este tópico descreve os pré-requisitos para a configuração de usuários antes de criar políticas de gerenciamento de aplicativo móvel.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9dbaaf5b540d79a51cef3b7f98a16a5a1f200648
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Prepare-se para configurar as políticas de proteção do aplicativo no portal do Azure
 
@@ -54,7 +54,7 @@ Se você for novo no portal do Azure, leia o tópico [Portal do Azure para polí
 Para obter instruções sobre como criar uma política de aplicativo no console de administração do Intune, consulte [Configurar e implantar políticas de proteção de aplicativo no console do Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 
-##  <a name="supported-platforms"></a>Plataformas com suporte
+##  <a name="supported-platforms"></a>Plataformas com Suporte
 - iOS 8.1 ou posterior
 - Android 4 ou posterior
 - Windows 10

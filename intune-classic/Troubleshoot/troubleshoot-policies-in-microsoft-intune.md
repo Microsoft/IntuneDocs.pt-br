@@ -1,25 +1,25 @@
 ---
-title: "Solucionar problemas de políticas"
-description: "Solucione problemas de configuração de política."
-keywords: 
+title: Solucionar problemas de políticas
+description: Solucione problemas de configuração de política.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e97c47dc2d1744f539f569de4c20ee994d05ffd
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7f9632a8b769fae5c3ae0fdf7041b968a9707d24
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Solução de problemas com políticas no Microsoft Intune
 
@@ -42,7 +42,7 @@ No console de administração do Intune, cada dispositivo tem uma guia de polít
 
 Na captura de tela abaixo, você pode ver dois exemplos claros:
 
--   **Permitir senhas simples** é definido como **Sim**, conforme mostrado na coluna **Valor Pretendido**, mas o **Status** é **Não aplicável**. Isso ocorre porque senhas simples não têm suporte para dispositivos Android.
+-   **Permitir senhas simples** é definido como **Sim**, conforme mostrado na coluna **Valor Pretendido** , mas o **Status** é **Não aplicável**. Isso ocorre porque senhas simples não têm suporte para dispositivos Android.
 
 -   Da mesma forma, o item de política expandido **Configurações de email para dispositivos iOS** não é aplicado a esse dispositivo, pois se trata de um dispositivo Android.
 

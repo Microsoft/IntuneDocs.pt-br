@@ -1,25 +1,25 @@
 ---
 title: Habilitar o acesso aos recursos da empresa
-description: "Os perfis de Wi-Fi, VPN e email funcionam em conjunto para ajudar seus usuários a obter acesso aos arquivos e recursos necessários."
-keywords: 
+description: Os perfis de Wi-Fi, VPN e email funcionam em conjunto para ajudar seus usuários a obter acesso aos arquivos e recursos necessários.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3d1b8cff396f6a78d635d96b936a1bb155ca198
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Habilitar o acesso aos recursos da empresa com o Microsoft Intune
 
@@ -30,7 +30,7 @@ Os perfis de Wi-Fi, VPN e email do Microsoft Intune funcionam em conjunto para a
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Perfis de Wi-Fi](wi-fi-connections-in-microsoft-intune.md) e plataformas com suporte
 
 Implante configurações de rede sem fio aos seus usuários. Essas configurações facilitam para os usuários se conectar à rede corporativa.
-#### <a name="supported-platforms"></a>Plataformas com suporte
+#### <a name="supported-platforms"></a>Plataformas com Suporte
 
 |Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|

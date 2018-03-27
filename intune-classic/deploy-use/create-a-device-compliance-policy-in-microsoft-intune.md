@@ -1,25 +1,25 @@
 ---
-title: "Criar uma política de conformidade do dispositivo"
-description: "Crie uma política de conformidade para ajudar a proteger os computadores e dispositivos móveis usados para acessar os dados de sua empresa."
-keywords: 
+title: Criar uma política de conformidade do dispositivo
+description: Crie uma política de conformidade para ajudar a proteger os computadores e dispositivos móveis usados para acessar os dados de sua empresa.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade do dispositivo no Microsoft Intune
 
@@ -69,7 +69,7 @@ A tabela a seguir lista as configurações de política de conformidade e as pla
 |Lembrar de histórico de senha|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
 |Evitar a reutilização de senhas anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
 |Exigir senha quando o dispositivo retorna de um estado ocioso| Não disponível| Não disponível|Windows 10 Mobile|
-|Exigir criptografia no dispositivo móvel|Não aplicável|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br> Windows 8.1|
+|Exigir criptografia no dispositivo móvel|Não Aplicável|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Windows Phone 8.1 e posterior<br> Windows 8.1|
 |Exigir que os dispositivos sejam relatados como íntegros| Não disponível| Não disponível|Windows <br>Windows 10 Mobile|
 |O dispositivo não deve estar desbloqueado nem pode ter raiz|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX padrão 4.0 e posterior|Não disponível|
 |A conta de email deve ser gerenciada pelo Intune|iOS 6 e posterior|Não disponível| Não disponível|

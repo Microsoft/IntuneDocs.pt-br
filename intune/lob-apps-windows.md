@@ -1,25 +1,25 @@
 ---
-title: "Como adicionar aplicativos de linha de negócios do Windows ao Microsoft Intune"
-titlesuffix: 
-description: "Saiba como adicionar aplicativos de linha de negócios (LOB) do Windows ao Microsoft Intune."
-keywords: 
+title: Como adicionar aplicativos de linha de negócios do Windows ao Microsoft Intune
+titlesuffix: ''
+description: Saiba como adicionar aplicativos de linha de negócios (LOB) do Windows ao Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f975f2018d2ce1d7affded3c3386c479e6877388
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicativos de linha de negócios (LOB) do Windows para o Microsoft Intune
 
@@ -38,19 +38,19 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
 
 ## <a name="step-2---configure-the-app-package-file"></a>Etapa 2 - configurar o arquivo de pacote de aplicativos
 
-1. No painel **Adicionar aplicativo**, escolha o arquivo **Pacote do aplicativo**.
+1. No painel **Adicionar aplicativo**, escolha o **Arquivo do pacote do aplicativo**.
 2. No painel do arquivo **Pacote do aplicativo**, escolha o botão Procurar e selecione um arquivo de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**.
 3. Quando terminar, escolha **OK**.
 
 
 ## <a name="step-3---configure-app-information"></a>Etapa 3 - configurar informações do aplicativo
 
-1. No painel **Adicionar aplicativo**, escolha o arquivo **Pacote do aplicativo**.
+1. No painel **Adicionar aplicativo**, escolha o **Arquivo do pacote do aplicativo**.
 2. No painel **Informações do aplicativo**, configure as informações a seguir (alguns dos valores nesse painel podem ser preenchidos automaticamente):
     - **Nome** – insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
     - **Descrição**: insira uma descrição para o aplicativo. A descrição é exibida para usuários no portal da empresa.
     - **Editor**: insira o nome do editor do aplicativo.
-    - **Ignorar versão do aplicativo** – definido como **Sim** se o aplicativo for atualizado automaticamente pelo desenvolvedor do aplicativo.
+    - **Ignorar versão do aplicativo** – Defina como **Sim** se o aplicativo for atualizado automaticamente pelo desenvolvedor do aplicativo.
     - **Categoria** - selecione uma ou mais das categorias de aplicativo interno, ou uma categoria criada por você. Categorizar os aplicativos facilita a localização do aplicativo pelos usuários quando eles navegam pelo portal da empresa.
     - **Exibir isso como um aplicativo em destaque no portal da empresa** – Exiba o aplicativo de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
     - **URL de Informações** – Opcionalmente, insira a URL de um site que contém informações sobre o aplicativo. A URL é exibida para os usuários no portal da empresa.

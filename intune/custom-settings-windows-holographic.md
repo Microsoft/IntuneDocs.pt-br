@@ -1,23 +1,23 @@
 ---
-title: "Configurações personalizadas do Microsoft Intune para dispositivos Windows Holographic for Business"
-titlesuffix: 
-description: "Saiba mais sobre as configurações que você pode usar em um perfil personalizado do Windows Holographic for Business."
-keywords: 
+title: Configurações personalizadas do Microsoft Intune para dispositivos Windows Holographic for Business
+titlesuffix: ''
+description: Saiba mais sobre as configurações que você pode usar em um perfil personalizado do Windows Holographic for Business.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Configurações de dispositivo personalizadas do Microsoft Intune para dispositivos que executam o Windows Holographic for Business
 
@@ -58,7 +58,7 @@ As configurações a seguir são úteis para dispositivos que executam o Windows
 |[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Cadeia de caracteres<br>URL – o dispositivo verifica atualizações no servidor do WSUS na URL especificada.<br>Não configurado – o dispositivo verifica se há atualizações no Microsoft Update.|
 |[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Inteiro<br>0 – não configurado. O dispositivo instala todas as atualizações aplicáveis.<br>1 – o dispositivo instala somente as atualizações que são aplicáveis e que estão na lista de Atualizações Aprovadas. Defina essa política como 1 se o TI deseja controlar a implantação de atualizações em dispositivos, como quando há necessidade de testes antes da implantação.|
 |[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Importante**<br>Você deve ler e aceitar os Termos de Licença atualizados em nome dos usuários finais. Se não fizer isso, ocasionará uma violação de obrigações contratuais ou legais.|Nó para aprovações de atualização e aceitação de Termos de Licença em nome do usuário final.|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Importante**<br>O artigo AppLocker CSP usa exemplos com XML de escape. Para definir as configurações com perfis personalizados do Intune, você deve usar XML sem formatação.|Cadeia de caracteres<br>Para obter mais informações, consulte o artigo [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp). 
+[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Importante**<br>O artigo AppLocker CSP usa exemplos com XML de escape. Para definir as configurações com perfis personalizados do Intune, você deve usar XML sem formatação.|Cadeia de caracteres<br>Para obter mais informações, consulte o artigo [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
 
 ## <a name="how-to-find-the-policies-you-can-configure"></a>Como localizar as políticas que você pode configurar
 
