@@ -1,25 +1,25 @@
 ---
 title: Como configurar o aplicativo do Portal da Empresa
 titleSuffix: Microsoft Intune
-description: "Saiba como você pode aplicar a identidade visual específica à empresa ao aplicativo do Portal da Empresa do Intune."
-keywords: 
+description: Saiba como você pode aplicar a identidade visual específica à empresa ao aplicativo do Portal da Empresa do Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -41,9 +41,9 @@ O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e 
 |**Nome da empresa**|40|Este é o nome exibido como título do Portal da Empresa.|        
 |**Nome do contato do departamento de TI**|40|Esse nome é exibido na página **Contatar TI**.|      
 |**Telefone do departamento de TI**|20|Este número de contato é exibido na página **Contatar TI**.|        
-|Endereço de email do departamento de TI|40|Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato **alias@domainname.com**.|     
+|**Endereço de email do departamento de TI**|40|Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato **alias@domainname.com**.|     
 |**Informações adicionais**|120|Exibido na página **Contatar TI**.|      
-|**URL da política de privacidade da empresa**|79|Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. Você deve digitar uma URL válida no formato **https://www.contoso.com**.|        
+|**URL da política de privacidade da empresa**|79|Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. É necessário inserir uma URL válida no formato **https://www.contoso.com**.|        
 
 ## <a name="support-contacts"></a>Contatos de suporte     
 O site de suporte é exibido para os usuários no Portal da Empresa para que eles possam acessar o suporte online.        

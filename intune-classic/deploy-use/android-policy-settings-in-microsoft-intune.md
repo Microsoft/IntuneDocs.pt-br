@@ -1,25 +1,25 @@
 ---
-title: "Configurações de política do Android e do Samsung KNOX"
-description: "Crie políticas que controlam as configurações e os recursos nos dispositivos Android que você gerencia com o Intune."
-keywords: 
+title: Configurações de política do Android e do Samsung KNOX
+description: Crie políticas que controlam as configurações e os recursos nos dispositivos Android que você gerencia com o Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Configurações de política do Android e do Samsung KNOX Standard no Microsoft Intune
 
@@ -140,7 +140,7 @@ Na lista **Aplicativos Compatíveis &amp; Incompatíveis**, especifique uma list
 |Nome da configuração|Detalhes|
 |----------------|--------------------|
 |**Relatar não conformidade quando os usuários instalarem os aplicativos listados**|Lista os aplicativos que não são gerenciados pelo Intune e os que você não deseja que os usuários instalem e executem. Se os usuários instalarem um desses aplicativos, ele será listado no relatório de aplicativos não compatíveis.|
-|**Não relatar não conformidade quando os usuários instalarem os aplicativos listados**|Lista os aplicativos que você deseja permitir. Para permanecer compatível, os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
+|**Não relatar não conformidade quando os usuários instalarem os aplicativos listados**|Lista os aplicativos que você deseja permitir. Para permanecer em conformidade, os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
 |**Adicionar**|Adiciona um aplicativo à lista selecionada. Especifique o nome do aplicativo, o editor do aplicativo (opcional) e a URL para o aplicativo na loja de aplicativos.<br /><br />Para obter mais informações, consulte [Especificar URLs para lojas de aplicativos](#specify-urls-to-app-stores) mais adiante neste tópico.|
 |**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.|
 |**Editarar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
@@ -157,9 +157,9 @@ Especifique as configurações a seguir para **dispositivos Samsung KNOX Standar
 |**Permitir botões de volume**|Habilita ou desabilita o uso dos botões de volume no dispositivo.|
 |**Permitir botão para ligar tela em modo de suspensão**|Habilita ou desabilita o botão de ativação e suspensão da tela no dispositivo.|
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informações de referência para aplicativos compatíveis e não compatíveis
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informações de referência para aplicativos em conformidade e sem conformidade
 
-#### <a name="monitor-compliant-and-noncompliant-apps"></a>Monitore aplicativos compatíveis e não compatíveis
+#### <a name="monitor-compliant-and-noncompliant-apps"></a>Monitore aplicativos em conformidade e sem conformidade
 Use o **Relatório de aplicativos incompatíveis** para exibir a compatibilidade de aplicativos permitidos e bloqueados.
 
 ###### <a name="to-run-the-noncompliant-apps-report"></a>Executar o relatório de aplicativos incompatíveis
@@ -173,7 +173,7 @@ Para especificar uma URL de aplicativo na lista de aplicativos compatíveis e in
 
 Na [seção Aplicativos do Google Play](https://play.google.com/store/apps), pesquise o aplicativo que você deseja usar.
 
-Abra a página de instalação do aplicativo e copie a URL para a área de transferência. Agora você pode usar essa URL na lista de aplicativos compatíveis ou incompatíveis.
+Abra a página de instalação do aplicativo e copie a URL para a área de transferência. Agora você pode usar essa URL na lista de aplicativos em conformidade ou sem conformidade.
 
 Exemplo: pesquise Google Play para Microsoft Office Mobile. A URL usada será **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 

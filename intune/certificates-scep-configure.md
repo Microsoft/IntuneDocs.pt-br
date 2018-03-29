@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: df77b63cbf953df030e5d0e597c0940f083ffb79
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Configurar e gerenciar certificados SCEP com o Microsoft Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -153,7 +153,13 @@ Para configurar a AC para permitir que o solicitante especifique o período de v
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Etapa 3 - Configurar pré-requisitos no servidor NDES
 Nesta tarefa, você vai:
 
+<<<<<<< HEAD
+
+- Adicionar o NDES a um Windows Server e configurar o IIS para dar suporte ao NDES
+- Adicionar a conta de serviço de NDES ao grupo IIS_IUSR
+- Definir o SPN da conta de serviço de NDES =======
 -   Adicionar o NDES a um Windows Server e configurar o IIS para dar suporte ao NDES
+>>>>>>> pai de 3365d47d4... Mesclar ramificação 'release-intune-1803' no mestre
 
 -   Adicionar a conta de serviço de NDES ao grupo IIS_IUSR
 

@@ -1,25 +1,25 @@
 ---
-title: "Sincronizar dispositivos com o Microsoft Intune – Azure | Micrososft Docs"
-description: "Sincronize dispositivos registrados ou gerenciados com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui as etapas para sincronizar usando o portal do Azure e lista os códigos de erro que permitem tentar novamente."
-keywords: 
+title: Sincronizar dispositivos com o Microsoft Intune – Azure | Micrososft Docs
+description: Sincronize dispositivos registrados ou gerenciados com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui as etapas a serem sincronizadas usando o portal do Azure e lista os códigos de erro que permitem tentar novamente.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes – Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,19 +36,19 @@ A ação de dispositivo **Sincronizar** força o dispositivo selecionado a fazer
 
 ## <a name="sync-a-device"></a>Sincronizar um dispositivo
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtrar pelo **Intune** e escolha **Microsoft Intune**. 
-3. Em **Intune**, selecione **Dispositivos** e escolha **Todos os dispositivos**.
-4. Na lista de dispositivos que você gerencia, escolha um dispositivo, escolha **Mais** e, em seguida, selecione a ação **Sincronizar**.
-5. Selecione **Sim** para confirmar.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços**, filtre **Intune** e, em seguida, selecione **Microsoft Intune**. 
+3. Em **Intune**, selecione **Dispositivos** > **Todos os dispositivos**.
+4. Na lista de dispositivos gerenciados, selecione um dispositivo, **Mais** e, em seguida, **Sincronizar**.
+5. Para confirmar, selecione **Sim**.
 
 
 ## <a name="retryable-error-codes"></a>Códigos de erro que permitem tentar novamente
 
-Quando um administrador executar a ação do dispositivo **Sincronizar**, os aplicativos iOS e Android que tiverem falhado e gerado um código de erro que permite tentar novamente ainda estarão disponíveis para o dispositivo. No entanto, os aplicativos que tiverem gerado um código de erro que não permite tentar novamente deverão esperar sete dias para ficar novamente disponíveis para o dispositivo.
+Quando um administrador executa a ação do dispositivo **Sincronizar**, os aplicativos iOS e Android que tiverem falhado e gerado um código de erro que permite tentar novamente ainda estarão disponíveis para o dispositivo. No entanto, os aplicativos que tiverem gerado um código de erro que não permite tentar novamente deverão esperar sete dias para ficar novamente disponíveis para o dispositivo.
 
 
-| Código de erro  | Descrição sugerida | Permite tentar novamente |
+| Código do erro  | Descrição sugerida | Permite tentar novamente |
 |---|---|---|
 | 2016330898 | Ocorreu um erro desconhecido. | Não |
 | 2016330897 | Sua conexão com o Intune atingiu o tempo limite. Reinicie a conexão. | Sim |
@@ -62,6 +62,6 @@ Quando um administrador executar a ação do dispositivo **Sincronizar**, os apl
 | 2016330889 | Falha da conexão segura. Reinicie a conexão. | Sim|
 | 2016330888 | Falha da avaliação de confiança do servidor. | Não|
 
-## <a name="next-step"></a>Próxima etapa
+## <a name="next-steps"></a>Próximas etapas
 
-Escolha **Ações do dispositivo** para ver o status da ação de sincronização. 
+- Para ver o status da ação sincronizar, selecione **Ações do dispositivo**. 

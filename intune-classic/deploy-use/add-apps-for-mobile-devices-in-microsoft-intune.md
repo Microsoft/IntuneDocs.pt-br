@@ -1,25 +1,25 @@
 ---
 title: Adicionar aplicativos para dispositivos registrados
-description: "Antes de implantar um aplicativo, você deve adicioná-lo ao Intune. Em seguida, ele está disponível no console do Intune, em que você pode implantá-lo e gerenciá-lo."
-keywords: 
+description: Antes de implantar um aplicativo, você deve adicioná-lo ao Intune. Em seguida, ele está disponível no console do Intune, em que você pode implantá-lo e gerenciá-lo.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Adicionar aplicativos para dispositivos registrados ao Intune
 
@@ -48,14 +48,14 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
   -   **Link externo**, para aplicativos que você deseja criar, especificando um link para uma loja de aplicativos:
 
         - **Especifique a URL**. Especifique a URL de um dos seguintes:
-            - A URL da loja de aplicativos do aplicativo que você deseja implantar. Por exemplo, se você quiser implantar o aplicativo Microsoft Remote Desktop para o Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar a URL do aplicativo, use um mecanismo de pesquisa para localizar a página da loja de aplicativos que contém o aplicativo. Por exemplo, para localizar o aplicativo Área de Trabalho Remota, você pode pesquisar **Área de Trabalho Remota da Microsoft para Android**.
+            - A URL da loja de aplicativos do aplicativo que você deseja implantar. Por exemplo, se você desejar implantar o aplicativo de Área de Trabalho Remota da Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar a URL do aplicativo, use um mecanismo de pesquisa para localizar a página da loja de aplicativos que contém o aplicativo. Por exemplo, para localizar o aplicativo Área de Trabalho Remota, você pode pesquisar **Área de Trabalho Remota da Microsoft para Android**.
             - Um site. O Intune implantará um ícone de atalho para o site no dispositivo (conhecido como um clipe da web).
             - Um aplicativo na web. O Intune implantará um ícone de atalho para o aplicativo no dispositivo.
         - **É necessário um managed browser para abrir este link (somente Android e iOS)**. Quando você implanta um link para um site ou aplicativo Web aos usuários, eles só poderão abri-lo no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.<br>Para mais detalhes sobre o navegador gerenciado, consulte [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) (Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune).<br>Esse tipo de instalação não usa porção nenhuma do seu espaço de armazenamento em nuvem.
 
   -   **Aplicativo iOS gerenciado da loja de aplicativos**, para aplicativos gratuitos da iTunes Store que você deseja gerenciar com políticas de MAM (gerenciamento de aplicativos móveis):
 
-        - **Especifique a URL**. Insira a URL da loja de aplicativos do aplicativo que você deseja implantar. Por exemplo, se você deseja implantar o aplicativo Pastas de Trabalho da Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Esse tipo de instalação não usa porção nenhuma do seu espaço de armazenamento em nuvem.
+        - **Especifique a URL**. Insira a URL da loja de aplicativos do aplicativo que você deseja implantar. Por exemplo, se você desejar implantar o aplicativo de Pastas de Trabalho da Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Esse tipo de instalação não usa porção nenhuma do seu espaço de armazenamento em nuvem.
 
         Por exemplo, se você quiser implantar o aplicativo do Microsoft Word da iTunes Store para os dispositivos, a página terá esta aparência:
 

@@ -1,27 +1,26 @@
 ---
-title: "Configurações de restrição de dispositivo do Microsoft Intune para Android for Work"
-titlesuffix: 
-description: "Conheça as configurações do Intune que você pode usar para controlar as configurações e as funcionalidades em dispositivos que executam o Android for Work."
-keywords: 
+title: Restrições de dispositivos para Android for Work no Microsoft Intune – Azure | Microsoft Docs
+description: Em dispositivos que executam o Android for Work, é possível restringir algumas configurações no dispositivo, incluindo ações de copiar e colar, de mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho da senha, falhas de entrada, uso de impressão digital para desbloquear, reutilização de senhas e habilitação de compartilhamento de bluetooth para contatos de trabalho.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 3/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Configurações de restrição de dispositivo Android for Work do Microsoft Intune
+# <a name="work-device-restriction-settings-in-intune"></a>Configurações de restrição de dispositivo de trabalho no Intune
 
-Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Android for Work.
+Este artigo lista as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,20 +28,20 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 
 ### <a name="general-settings"></a>Configurações Gerais
 
--   **Copiar e colar entre os perfis de trabalho e pessoal** – controla as ações de copiar e colar entre aplicativos pessoais e de trabalho. Escolha **Bloquear** para habilitar o bloqueio. Escolha **Não configurado** para desabilitar o bloqueio.
-- **Compartilhamento de dados entre perfis de trabalho e pessoais** – use essa configuração para controlar se os aplicativos no perfil de trabalho podem ser compartilhados com aplicativos no perfil pessoal. Essa configuração controla as ações de compartilhamento em aplicativos (por exemplo, a opção **Compartilhar...** no aplicativo de navegador Chrome) e não se aplica ao comportamento da área de transferência copiar/colar. Ao contrário das [configurações de política de proteção do aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as configurações de restrição de dispositivo são gerenciadas no portal do Intune e usam a partição de perfil de trabalho do Android for Work para isolar os aplicativos gerenciados. Escolha:
-    - **Restrições de compartilhamento padrão** – essa configuração é o comportamento de compartilhamento padrão do dispositivo que varia dependendo da versão do Android em execução. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. O Google não oferece uma maneira de bloquear o compartilhamento do perfil pessoal com o perfil de trabalho em dispositivos que executam versões 6.0 e posterior.   
-    - **Os aplicativos no perfil de trabalho podem lidar com solicitações de compartilhamento do perfil pessoal** - use esta opção para habilitar o recurso interno do Android que permite o compartilhamento do perfil pessoal para o perfil de trabalho. Quando habilitada, uma solicitação de compartilhamento de um aplicativo no perfil pessoal pode ser compartilhada com aplicativos no perfil de trabalho. Essa configuração é o comportamento padrão para dispositivos Android executando versões anteriores à 6.0.
-    - **Permitir compartilhamento entre limites** – o habilita compartilhamento no limite do perfil de trabalho em ambas as orientações. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Use essa configuração com cuidado, pois isso permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo.
+- **Copiar e colar entre os perfis de trabalho e pessoais**: controla as ações de copiar e colar entre aplicativos pessoais e de trabalho. Escolha **Bloquear** para habilitar o bloqueio. Escolha **Não configurado** para desabilitar o bloqueio.
+- **Compartilhamento de dados entre perfis de trabalho e pessoais**: controle se os aplicativos no perfil de trabalho podem ser compartilhados com aplicativos no perfil pessoal. Essa configuração controla as ações de compartilhamento em aplicativos (por exemplo, a opção **Compartilhar...** no aplicativo de navegador Chrome) e não se aplica ao comportamento da área de transferência copiar/colar. Ao contrário das [configurações de política de proteção do aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as configurações de restrição de dispositivos são gerenciadas no portal do Intune e usam a partição de perfil de trabalho do Android for Work para isolar os aplicativos gerenciados. Escolha:
+  - **Restrições de compartilhamento padrão**: o comportamento de compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. O Google não oferece uma maneira de bloquear o compartilhamento do perfil pessoal com o perfil de trabalho em dispositivos que executam versões 6.0 e posterior.
+  - **Os aplicativos no perfil de trabalho podem lidar com solicitações de compartilhamento do perfil pessoal**: habilita o recurso interno do Android que permite o compartilhamento do perfil pessoal para o perfil de trabalho. Quando habilitada, uma solicitação de compartilhamento de um aplicativo no perfil pessoal pode ser compartilhada com aplicativos no perfil de trabalho. Essa configuração é o comportamento padrão para dispositivos Android executando versões anteriores à 6.0.
+  - **Permitir compartilhamento entre limites**: habilita o compartilhamento no limite do perfil de trabalho em ambas as orientações. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Use essa configuração com cuidado, pois isso permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo.
 
--   **Notificações de perfil de trabalho enquanto o dispositivo estiver bloqueado** – controla se os aplicativos no perfil de trabalho podem exibir dados em notificações quando o dispositivo está bloqueado.
--   **Permissões de aplicativo padrão** - Define a política de permissão padrão para todos os aplicativos no perfil de trabalho. A partir do Android 6, o usuário deve conceder determinadas permissões necessárias por aplicativos quando o aplicativo é iniciado. Essa configuração de política permite que você decida se os usuários deverão conceder permissões para todos os aplicativos no perfil de trabalho. Por exemplo, você atribui um aplicativo ao perfil de trabalho que exige o acesso à localização. Normalmente, esse aplicativo solicita que o usuário aprove ou negue o acesso à localização para o aplicativo. Essa política permite que você decida se todas as permissões devem ser concedidas automaticamente sem aviso, negadas automaticamente sem aviso ou permitir que o usuário final decida. Escolha:
-    -   **Padrão do dispositivo**
-    -   **Prompt**
-    -   **Concessão automática**
-    -   **Negação automática**
+- **Notificações de perfil de trabalho enquanto o dispositivo estiver bloqueado**: controla se os aplicativos no perfil de trabalho podem exibir dados em notificações quando o dispositivo está bloqueado.
+- **Permissões de aplicativo padrão**: define a política de permissão padrão para todos os aplicativos no perfil de trabalho. A partir do Android 6, o usuário deve conceder determinadas permissões necessárias por aplicativos quando o aplicativo é iniciado. Essa configuração de política permite que você decida se os usuários deverão conceder permissões para todos os aplicativos no perfil de trabalho. Por exemplo, você atribui um aplicativo ao perfil de trabalho que exige o acesso à localização. Normalmente, esse aplicativo solicita que o usuário aprove ou negue o acesso à localização para o aplicativo. Essa política permite que você decida se todas as permissões devem ser concedidas automaticamente sem aviso, negadas automaticamente sem aviso ou permitir que o usuário final decida. Escolha:
+  - **Padrão do dispositivo**
+  - **Prompt**
+  - **Concessão automática**
+  - **Negação automática**
 
-    O estado de concessão das permissões pode ser definido de forma mais detalhada para aplicativos específicos, com a definição de uma política de Configuração de Aplicativo para um aplicativo individual (em **Aplicativos Móveis** > **Políticas de configuração de aplicativo**).
+    O estado de concessão das permissões pode ser definido de forma mais detalhada para aplicativos específicos usando uma política de Configuração de Aplicativo para um aplicativo individual (em **Aplicativos Móveis** > **Políticas de configuração de aplicativo**).
 
 - **Adicionar e remover contas**
 
@@ -51,50 +50,51 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
    Por exemplo, quando você implanta o aplicativo Gmail em um perfil do Android for Work, é possível impedir que usuários finais adicionem ou removam contas neste perfil de trabalho.
 
 ### <a name="work-profile-password"></a>Senha do perfil de trabalho
-- **Exigir Senha de Perfil de Trabalho** – (Android 7.0 e posterior com o perfil de trabalho habilitado) Defina uma política de senha que se aplica apenas aos aplicativos no perfil de trabalho. Por padrão, o usuário final tem a opção de usar os dois PINs definidos separadamente ou optar por combiná-los no mais forte dos dois.
-- **Tamanho mínimo da senha** – insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**16**)
-- **Máximo de minutos de inatividade até o bloqueio do perfil de trabalho** – selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
-- **Número de falhas de entrada antes de apagar o dispositivo** – insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
-- **Expiração da senha (dias)** – insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
-- **Tipo de senha necessária** - selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
-    - **Padrão do dispositivo**
-    - **Biométrico de segurança baixa**
-    - **Necessária**
-    - **Pelo menos, numérico**
-    - **Numérico complexo** - (números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos)
-    - **Pelo menos, alfabético**
-    - **Pelo menos, alfanumérico**
-    - **Pelo menos alfanumérico com símbolos**
-- **Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
-- **Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.
-- **Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis. Essa capacidade do telefone, às vezes conhecida como agente de confiança, permitirá desabilitar ou ignorar a senha do perfil de trabalho se o dispositivo estiver em um local confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está perto de uma marca NFC). Você pode usar essa configuração para impedir que os usuários configurem o Smart Lock.
+
+- **Exigir senha de perfil de trabalho**: aplica-se ao Android 7.0 e posterior com o perfil de trabalho habilitado. Defina uma política de senha que se aplica somente aos aplicativos no perfil de trabalho. Por padrão, o usuário final pode usar os dois PINs definidos separadamente ou os usuários podem optar por combinar os PINs no mais forte entre eles.
+- **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**16**)
+- **Máximo de minutos de inatividade até o bloqueio do perfil de trabalho**: selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
+- **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
+- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
+- **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
+  - **Padrão do dispositivo**
+  - **Biométrico de segurança baixa**
+  - **Necessária**
+  - **Pelo menos, numérico**
+  - **Numérico complexo**: números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos
+  - **Pelo menos, alfabético**
+  - **Pelo menos, alfanumérico**
+  - **Pelo menos alfanumérico com símbolos**
+- **Evitar a reutilização de senhas anteriores**: insira o número de novas senhas que devem ser usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
+- **Desbloqueio por impressão digital**: impede que usuários finais usem o scanner de impressão digital do dispositivo para desbloqueá-lo
+- **Smart Lock e outros agentes de confiança**: controle o recurso Smart Lock em dispositivos compatíveis. Essa funcionalidade do telefone, às vezes conhecida como agente de confiança, permite desabilitar ou ignorar a senha do perfil de trabalho tela de bloqueio do dispositivo quando o dispositivo está em uma localização confiável. Por exemplo, quando está conectado a um dispositivo Bluetooth específico ou quando está próximo a uma marcação NFC. Use essa configuração para impedir que os usuários configurem o Smart Lock.
 
 ## <a name="device-password"></a>Senha do dispositivo
 
-- **Tamanho mínimo da senha** - insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**14**)
-- **Máximo de minutos de inatividade até a tela ser bloqueada** - selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente.
-- **Número de falhas de entrada antes de apagar o dispositivo** – Insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados.
-- **Expiração da senha (dias)** – insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
-- **Tipo de senha necessária** - selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
-    - **Padrão do dispositivo**
-    - **Biométrico de segurança baixa**
-    - **Necessária**
-    - **Pelo menos, numérico**
-    - **Numérico complexo** - (números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos)
-    - **Pelo menos, alfabético**
-    - **Pelo menos, alfanumérico**
-    - **Pelo menos alfanumérico com símbolos**
-- **Evitar a reutilização de senhas anteriores** - insira o número de novas senhas que devem ter sido usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
-- **Desbloqueio por impressão digital** - impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo.
-- **Smart Lock e outros agentes de confiança** – permite que você controle o recurso Smart Lock em dispositivos compatíveis. Essa capacidade do telefone, às vezes conhecida como agente de confiança, permitirá desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável (por exemplo, quando ele está conectado a um dispositivo Bluetooth específico ou quando está perto de uma marca NFC). Você pode usar essa configuração para impedir que os usuários configurem o Smart Lock.
+- **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve conter (de **4**-**14**)
+- **Máximo de minutos de inatividade até a tela ser bloqueada**: selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente
+- **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados
+- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
+- **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
+  - **Padrão do dispositivo**
+  - **Biométrico de segurança baixa**
+  - **Necessária**
+  - **Pelo menos, numérico**
+  - **Numérico complexo**: números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos
+  - **Pelo menos, alfabético**
+  - **Pelo menos, alfanumérico**
+  - **Pelo menos alfanumérico com símbolos**
+- **Evitar a reutilização de senhas anteriores**: insira o número de novas senhas que devem ser usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
+- **Desbloqueio por impressão digital**: impede que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo
+- **Smart Lock e outros agentes de confiança**: controle o recurso Smart Lock em dispositivos compatíveis. Essa funcionalidade do telefone, às vezes conhecida como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo está em uma localização confiável. Por exemplo, quando está conectado a um dispositivo Bluetooth específico ou quando está próximo a uma marcação NFC. Use essa configuração para impedir que os usuários configurem o Smart Lock.
 
 ## <a name="system-security"></a>Segurança do sistema
 
- - **Verificação de ameaças em aplicativos**: garanta que a configuração **Verificar Aplicativos** esteja habilitada para perfis pessoais e corporativos.
+- **Verificação de ameaças em aplicativos**: garanta que a configuração **Verificar aplicativos** esteja habilitada para perfis pessoais e de trabalho.
 
-   > [!Note]  
-   > Essa configuração só funciona para dispositivos Android O e superior. 
+   > [!Note]
+   > Essa configuração só funciona para dispositivos Android O e superior.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-step"></a>Próxima etapa
 
-Use as informações em [Como definir as configurações de restrição de dispositivo](device-restrictions-configure.md) para salvar e atribuir o perfil a usuários e dispositivos.
+Para salvar e atribuir o perfil a usuários e dispositivos, consulte [Configure device restriction settings](device-restrictions-configure.md) (Definir configurações de restrição de dispositivos).

@@ -1,23 +1,23 @@
 ---
-title: "Configurações de restrições de dispositivo do Microsoft Intune para iOS"
-titleSuffix: 
-description: "Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades de dispositivo nos dispositivos que executam o iOS."
-keywords: 
+title: Configurações de restrições de dispositivo do Microsoft Intune para iOS
+titleSuffix: ''
+description: Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades de dispositivo nos dispositivos que executam o iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
 
@@ -40,7 +40,6 @@ Isso também se aplica às configurações acessadas no aplicativo de configura�
 - **Usar o apagamento total do conteúdo e das opções de configurações no dispositivo (somente supervisionado)** – Permitir que o usuário utilize a opção de apagar todo o conteúdo e as configurações no dispositivo.
 - **Modificação do nome de dispositivo (somente supervisionado)** – Permitir que o usuário altere o nome do dispositivo.
 - **Modificação das configurações de notificação (somente supervisionado)** – Permitir que o usuário altere as configurações de notificação do dispositivo.
-- **Modificação do papel de parede (somente supervisionado)** – Permitir que o usuário altere o papel de parede do dispositivo.
 - **Modificação das configurações de aplicativo de confiança da empresa** – Permitir que o usuário opte por confiar em aplicativos que não foram baixados da loja de aplicativos.
 - **Alterações de perfil de configuração (somente supervisionado)** – permitem que o usuário instale perfis de configuração.
 - **Bloqueio de Ativação (somente supervisionado)** – Habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados.
@@ -74,7 +73,6 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 - Atalhos de teclado 
 - Modificações de senha 
 - Alterações do nome do dispositivo 
-- Alterações de papel de parede 
 - Downloads de aplicativo automáticos 
 - Alterações na confiança de aplicativo da empresa 
 - Apple Music 
@@ -170,7 +168,7 @@ Usando um mecanismo de pesquisa, encontre o aplicativo que você deseja usar na 
 Copie a URL da página e use-a como a URL para configurar a lista de aplicativos permitidos ou proibidos ou o aplicativo que você deseja executar no modo de quiosque.
 Os perfis de dispositivo que contêm configurações de aplicativo restrito devem ser atribuídos para grupos de usuários.
 
-Exemplo: pesquisar por Microsoft Word para iPad. A URL a ser usada é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: pesquisar por Microsoft Word para iPad. A URL usada é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Você também pode usar o iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.
@@ -195,7 +193,7 @@ Para especificar uma URL de aplicativo na lista de aplicativos, use o seguinte f
 Usando um mecanismo de pesquisa, encontre o aplicativo que você deseja usar na iTunes App Store e abra a página do aplicativo.
 Copie a URL da página e use-a como a URL para configurar a lista de aplicativos permitidos ou proibidos ou o aplicativo que você deseja executar no modo de quiosque.
 
-Exemplo: pesquisar por Microsoft Word para iPad. A URL a ser usada é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: pesquisar por Microsoft Word para iPad. A URL usada é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Você também pode usar o software iTunes para encontrar o aplicativo e usar o comando **Copiar Link** para obter a URL do aplicativo.

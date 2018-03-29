@@ -1,23 +1,22 @@
 ---
-title: "Criar uma política de conformidade para dispositivo Windows no Microsoft Intune"
-titleSuffix: 
-description: "Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos Windows, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade."
-keywords: 
+title: Criar política de conformidade para dispositivo Windows no Microsoft Intune – Azure | Microsoft Docs
+description: Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos Windows, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Windows no Intune
 
@@ -177,7 +176,7 @@ Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Es
 
 - **Sistema operacional mínimo necessário:** - Com suporte no Windows 8.1 e no Windows 10.
 
-Especifique o número de major.minor.build aqui. O número de versão deve corresponder à versão retornada pelo comando ```winver```.
+Especifique o número de major.minor.build.CU aqui. O número de versão deve corresponder à versão retornada pelo comando ```winver```.
 
 Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
