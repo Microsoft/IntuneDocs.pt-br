@@ -1,25 +1,25 @@
 ---
 title: Exchange Connector para o EAS local
-description: "Use a ferramenta do Connector para habilitar a comunicação entre o console de administração do Intune e o Exchange Server Local para MDM do Exchange ActiveSync."
-keywords: 
+description: Use a ferramenta do Connector para habilitar a comunicação entre o console de administração do Intune e o Exchange Server Local para MDM do Exchange ActiveSync.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Instalar o Exchange Connector Local do Intune
 
@@ -62,7 +62,7 @@ A tabela a seguir lista os requisitos para o computador no qual o Exchange Conne
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Baixe o pacote de instalação de software do Exchange Connector Local
 
-1. Em um sistema operacional Windows Server com suporte para o Exchange Connector Local, abra o [console de administração do Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com) com uma conta de usuário que seja um administrador no locatário do Exchange e que tenha uma licença para usar o Exchange Server.
+1. Em um sistema operacional Windows Server compatível para o Exchange Connector Local, abra o [console de administração do Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com) com uma conta de usuário que seja um administrador no locatário do Exchange e que tenha uma licença para usar o Exchange Server.
 ![Abra a configuração da Conexão com o Exchange](../media/ExchangeConnector.gif)
 
 2.  No painel de atalhos do espaço de trabalho, escolha **Admin**>**Gerenciamento de Dispositivo Móvel** > **Microsoft Exchange**>**Configurar Conexão com o Exchange**.

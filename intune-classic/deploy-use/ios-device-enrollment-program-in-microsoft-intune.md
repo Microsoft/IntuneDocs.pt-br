@@ -1,25 +1,25 @@
 ---
 title: Gerenciamento do Apple DEP para dispositivos iOS
 description: Implante um perfil de registro que registre os dispositivos iOS comprados por meio do DEP (Programa de registro de dispositivos) do iOS "pelo ar" para gerenciar dispositivos Apple.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrar dispositivos iOS do Programa de Registro de Dispositivos corporativos
 
@@ -29,13 +29,14 @@ O Microsoft Intune pode implantar um perfil de registro que registra os disposit
 
 >[!NOTE]
 >O registro DEP não pode ser usado com o método de [gerenciador de registro de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Além disso, se os usuários registrarem seus dispositivos iOS (por exemplo, usando o aplicativo de Portal da empresa) e os números de série desses dispositivos forem importados e receberem um perfil DEP, o registro do dispositivo no Intune será cancelado.
+>Além disso, se os usuários registrarem seus dispositivos iOS (por exemplo, usando o aplicativo de Portal da Empresa) e os números de série desses dispositivos forem importados e receberem um perfil DEP, o registro do dispositivo no Intune será cancelado.
+> Além disso, no momento, o DEP não é compatível com o macOS.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Pré-requisitos para registro de dispositivos iOS usando o gerenciamento de DEP da Apple
 
 - [Instalar um certificado APNs](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- Sua organização deve ingressar no DEP da Apple e obter dispositivos por meio desse programa. Mais detalhes desse processo estão disponíveis em:  [https://deploy.apple.com](https://deploy.apple.com). As vantagens do programa incluem a instalação não assistida de dispositivos sem usar um cabo USB para conectar cada dispositivo a um computador.
+- Sua organização deve ingressar no DEP da Apple e obter dispositivos por meio desse programa. Detalhes desse processo estão disponíveis em: [https://deploy.apple.com](https://deploy.apple.com). As vantagens do programa incluem a instalação não assistida de dispositivos sem usar um cabo USB para conectar cada dispositivo a um computador.
 
 - Antes que possa registrar dispositivos iOS da empresa com o DEP, você precisa de m token do DEP da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos de sua empresa que fazem parte do DEP. Ele também permite que o Intune realize carregamentos de Perfis de registro para a Apple e atribua dispositivos para esses perfis.
 
@@ -53,7 +54,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 ### <a name="get-a-device-enrollment-program-token"></a>Obter um token de programa de registro do dispositivo
 
-1. Vá até o [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID Apple corporativa. Essa ID da Apple deve ser usada posteriormente para renovar seu token do DEP.
+1. Acesse o [Portal do Programa de Registro de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID da Apple corporativa. Essa ID da Apple deve ser usada posteriormente para renovar seu token do DEP.
 
 2.  No Portal do Programa de Registro do Dispositivo, vá até **Programa de Registro de Dispositivo** &gt; **Gerenciar Servidores** e escolha **Adicionar Servidor MDM**.
 
@@ -130,7 +131,7 @@ As etapas a seguir explicam como registrar dispositivos iOS no "dia 0" usando o 
 
 ### <a name="assign-dep-devices-for-management"></a>Atribuir dispositivos DEP para gerenciamento
 
-1. Vá até o [Portal do Programa de Registro do Dispositivo](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID Apple corporativa.
+1. Acesse o [Portal do Programa de Registro de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e entre com sua ID da Apple corporativa.
 
 2. Vá para **Programa de Implantação** &gt; **Programa de Registro de Dispositivo** &gt; **Gerenciar Dispositivos**.
 

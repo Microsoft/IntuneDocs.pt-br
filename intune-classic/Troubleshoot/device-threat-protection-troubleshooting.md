@@ -1,25 +1,25 @@
 ---
-title: "Solucionar problemas de integração do Lookout"
-description: "Este tópico descreve a solução de problemas que costumam ocorrer com a integração do Lookout"
-keywords: 
+title: Solucionar problemas de integração do Lookout
+description: Este tópico descreve a solução de problemas que costumam ocorrer com a integração do Lookout
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Solucionar problemas de integração do Lookout com o Intune
 
@@ -43,7 +43,7 @@ Você vê o erro a seguir quando o usuário administrador global do Azure AD nã
 
 ![captura de tela da tela de logon do Lookout mostrando erro ao entrar](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Para resolver esse problema, o usuário administrador global deve entrar em https://aad.lookout.com/les?action=consent e aceitar a solicitação para iniciar a instalação. Informações mais detalhadas podem ser encontradas no tópico [Set up your subscription with Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md) (Configurar sua assinatura com a Consulta MTP)
+Para resolver esse problema, o usuário administrador global deve fazer logon no https://aad.lookout.com/les?action=consent e aceitar a solicitação para iniciar a instalação. Informações mais detalhadas podem ser encontradas no tópico [Set up your subscription with Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md) (Configurar sua assinatura com a Consulta MTP)
 
 **Problemas de status do dispositivo**
 
@@ -82,7 +82,7 @@ Se o novo usuário estiver em um grupo de registro do Lookout MTP, o dispositivo
 
 ## <a name="compliance-remediation-workflows"></a>Fluxos de trabalho de correção de conformidade
 - [Você é solicitado a instalar o Lookout for Work em seu dispositivo Android]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-- [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo Android](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [Você precisa resolver uma ameaça encontrada pelo Lookout for Work no dispositivo Android](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [Você precisa resolver uma ameaça que o Lookout for Work encontrou em seu dispositivo iOS](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 

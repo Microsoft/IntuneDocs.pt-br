@@ -1,23 +1,23 @@
 ---
-title: "Configurar o Microsoft Intune para logon único de dispositivo iOS"
-titlesuffix: 
-description: "Saiba como configurar o Microsoft Intune para logon único de dispositivo iOS."
-keywords: 
+title: Configurar o Microsoft Intune para logon único de dispositivo iOS
+titlesuffix: ''
+description: Saiba como configurar o Microsoft Intune para logon único de dispositivo iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para logon único de dispositivo iOS
 
@@ -90,7 +90,7 @@ Os padrões `http://.com` e `https://.com` correspondem a todas as URLs HTTP e H
 
 Indique quais aplicativos no dispositivo do usuário final podem usar o Logon Único no conteúdo.
 
-A matriz `AppIdentifierMatches` deve conter cadeias de caracteres que correspondam a IDs de pacote de aplicativo. Essas cadeias de caracteres podem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou podem especificar uma correspondência de prefixo na ID de pacote usando o caractere curinga *\. O caractere curinga deve aparecer após um caractere de ponto (.) e pode aparecer apenas uma vez, no final da cadeia de caracteres (por exemplo: `com.contoso.*`). Quando um caractere curinga for incluído, qualquer aplicativo cuja ID do pacote comece com o prefixo receberá acesso à conta.
+A matriz `AppIdentifierMatches` deve conter cadeias de caracteres que correspondam a IDs de pacote de aplicativo. Essas cadeias de caracteres podem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou podem especificar uma correspondência de prefixo na ID de pacote usando o caractere curinga \*. O caractere curinga deve aparecer após um caractere de ponto (.) e pode aparecer apenas uma vez, no final da cadeia de caracteres (por exemplo: `com.contoso.*`). Quando um caractere curinga for incluído, qualquer aplicativo cuja ID do pacote comece com o prefixo receberá acesso à conta.
 
 O campo **Nome do Aplicativo** é usado para adicionar um nome amigável para ajudá-lo a identificar a ID do pacote.
 

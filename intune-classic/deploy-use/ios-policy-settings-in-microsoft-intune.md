@@ -1,25 +1,25 @@
 ---
-title: "Configurações de política do iOS"
-description: "Crie políticas que controlam as configurações e os recursos nos dispositivos iOS que você gerencia com o Intune."
-keywords: 
+title: Configurações de política do iOS
+description: Crie políticas que controlam as configurações e os recursos nos dispositivos iOS que você gerencia com o Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Configurações de política do iOS no Microsoft Intune
 
@@ -205,7 +205,7 @@ As políticas que contêm configurações de aplicativo que estão em conformida
 > -   Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o [Programa de Registro do Dispositivo Apple](ios-device-enrollment-program-in-microsoft-intune.md) para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a ferramenta Apple Configurator, consulte sua documentação da Apple.
 > -   Se o aplicativo iOS que você especificar for instalado depois de implantar a política de configuração, ele não entrará no modo de quiosque até depois de ser reiniciado.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informações de referência para aplicativos compatíveis e não compatíveis
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informações de referência para aplicativos em conformidade e sem conformidade
 
 Use o **Relatório de aplicativos incompatíveis** para exibir a compatibilidade de aplicativos permitidos e bloqueados.
 

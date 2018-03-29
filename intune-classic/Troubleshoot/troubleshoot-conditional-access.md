@@ -1,25 +1,25 @@
 ---
 title: Solucionar problemas de acesso condicional
-description: "O que fazer quando os usuários não obtêm acesso aos recursos por meio de acesso condicional do Intune."
-keywords: 
+description: O que fazer quando os usuários não obtêm acesso aos recursos por meio de acesso condicional do Intune.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acesso condicional
 
@@ -118,7 +118,7 @@ Caso esses procedimentos de solução de problemas não resolvam o problema, há
 ### <a name="exchange-connector-logs"></a>Logs do Exchange Connector
 
 #### <a name="general-log-information"></a>Informações gerais sobre logs
-Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Essa ferramenta requer que você baixe o SDK do Windows Server.
+Para exibir logs do Exchange Connector, use a [Ferramenta do Visualizador de Rastreamento do Servidor] (ferramenta do visualizador de rastreamento do servidor) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Essa ferramenta requer que você baixe o SDK do Windows Server.
 
 >[!NOTE]
 >Os logs estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os logs estão contidos em uma série de 30 arquivos de log que começa com *Connector0.log* e para em *Connector29.log*. Os logs se sobrepõem uns aos outros após 10 MB de dados serem acumulados em um log. Depois de chegarem a Connector29, os logs recomeçam em Connector0, substituindo os arquivos de log anteriores.

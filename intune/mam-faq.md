@@ -1,19 +1,25 @@
---
-# <a name="required-metadata"></a>metadados necessários
-
-título: Perguntas frequentes sobre MAM e proteção de aplicativo descrição: Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune MAM (gerenciamento de aplicativo móvel) e a Proteção de Aplicativo do Intune.
-palavras-chave: autor: Erikre ms.author: erikre gerente: angrobe ms.date: 28/02/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-
-# <a name="optional-metadata"></a>metadados opcionais
-
-#<a name="audience"></a>audiência:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: erikre ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: Perguntas frequentes sobre o MAM e a proteção do aplicativo
+description: Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune MAM (gerenciamento de aplicativo móvel) e a proteção do aplicativo do Intune.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 02/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: erikre
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2018
+---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
 Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune MAM (gerenciamento de aplicativo móvel) e a proteção do aplicativo do Intune.
@@ -26,7 +32,7 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 **Quais são os benefícios da proteção do aplicativo do MAM?** O MAM protege os dados de uma organização em um aplicativo. Com o MAM sem registro (MAM-WE), um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase todos os dispositivos, incluindo dispositivos pessoais em cenários de BYOD (traga seu próprio dispositivo). Vários aplicativos de produtividade, como os aplicativos do Microsoft Office, podem ser gerenciados pelo Intune MAM. Consulte a lista oficial de [aplicativos gerenciados pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para uso público.
 
 **Quais configurações de dispositivo têm suporte no MAM?** O Intune MAM dá suporte a duas configurações:
-- **Intune MDM + MAM**: os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console do Intune no Portal do Azure em https://portal.azure.com.
+- **Intune MDM + MAM**: os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console do Intune no portal do Azure em https://portal.azure.com.
 
 - **MAM sem registro de dispositivo**: o MAM sem registro de dispositivo, ou MAM-WE, permite que os administradores de TI gerenciem aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos não registrados no Intune MDM. Isso significa que os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados em provedores de EMM de terceiros. Para gerenciar aplicativos usando o MAM-WE, os clientes devem usar o console do Intune no portal do Azure em http://portal.azure.com. Além disso, os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados com provedores de Gerenciamento de Mobilidade Empresarial (EMM) de terceiros ou não registrados com um MDM.
 

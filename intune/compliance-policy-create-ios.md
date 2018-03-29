@@ -1,49 +1,42 @@
 ---
-title: "Criar uma política de conformidade do dispositivo iOS no Microsoft Intune"
-titleSuffix: 
-description: "Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos iOS, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade."
-keywords: 
-author: msmimart
-ms.author: mimart
+title: Criar política de conformidade para dispositivo iOS no Microsoft Intune – Azure | Microsoft Docs
+description: Crie uma política de conformidade de dispositivos do Microsoft Intune para os dispositivos iOS entrarem em uma conta de email, verificarem dispositivos com jailbreak, verificarem o sistema operacional mínimo e máximo e definirem restrições de senha, incluindo tamanho da senha e inatividade do dispositivo.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos iOS no Intune
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos para dispositivos iOS no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Uma política de conformidade de dispositivos do Intune para iOS especifica as regras e configurações que dispositivos iOS precisam cumprir para serem considerados em conformidade. Quando você usa as políticas de conformidade de dispositivo, é possível permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. As políticas de conformidade de dispositivo de cada plataforma podem ser criadas no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e os pré-requisitos que você precisa cumprir antes de criá-las, consulte o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos iOS do Intune determina as regras e configurações que os dispositivos iOS precisam cumprir para estarem em conformidade. Quando você usa as políticas de conformidade de dispositivo, é possível permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. As políticas de conformidade de dispositivo de cada plataforma podem ser criadas no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e os pré-requisitos de que você precisa antes de criá-las, consulte [Get started with device compliance](device-compliance-get-started.md) (Introdução à conformidade do dispositivo).
 
 A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
 
--------------------------------
-
-
 | **Configuração de política** | **iOS 8.0 e posterior** |
 | --- | --- |
-| **Configuração de senha ou PIN** | Corrigida |   
+| **Configuração de senha ou PIN** | Corrigida |
 | **Criptografia de dispositivo** | Corrigida (pela definição do PIN) |
 | **Dispositivo desbloqueado ou com raiz** | Em Quarentena (não é uma configuração)
 | **Perfil de email** | Em Quarentena |
 |**Versão mínima do SO** | Em Quarentena |
-| **Versão máxima do SO** | Em Quarentena |  
-| **Atestado de integridade do Windows** | Não Aplicável |  
-----------------------------
-
+| **Versão máxima do SO** | Em Quarentena |
+| **Atestado de integridade do Windows** | Não Aplicável |
 
 **Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)
 
@@ -54,11 +47,11 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Criar uma política de conformidade no Portal do Azure
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-1. No painel **Intune**, escolha **Conformidade do dispositivo**. Em **Gerenciar**, escolha **Políticas** e **Criar Política**.
-2. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
-3. Escolha **Requisitos de conformidade** para especificar as configurações de **Segurança do sistema**, **Integridade do dispositivo** e **Propriedades do dispositivo** aqui. Quando terminar, escolha **OK**.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
+4. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
+5. Escolha **Configurações** para inserir as configurações de **Email**, de **Integridade do dispositivo**, de **Propriedades do dispositivo** e de **Segurança do sistema**. Quando terminar, escolha **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ Você aplicou a política para os usuários.  Os dispositivos usados pelos usuá
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Configurações de segurança do sistema
-
-### <a name="password"></a>Senha
-
-- **Exigir uma senha para desbloquear dispositivos móveis**: defina essa opção como **Sim** para exigir que o usuário insira uma senha para poder acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
-- **Permitir senhas simples**: defina isso como **Sim** para permitir que o usuário crie uma senha simples como **1234** ou **1111**.
-- **Tamanho mínimo da senha**: especifique o número mínimo de dígitos ou caracteres que a senha do usuário precisa ter.
-- **Tipo de senha necessária:** especifique se o usuário deve criar uma senha **Alfanumérica** ou **Numérica**.
-- **Número mínimo de conjuntos de caracteres:** se você definir **Tipo de senha necessária** como **Alfanumérica**, use essa configuração para especificar o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
-  - Letras minúsculas
-  - Letras maiúsculas
-  - Símbolos
-  - Números
-
-Definir um número mais alto exige que o usuário crie uma senha mais complexa.
-
-Para dispositivos iOS, essa configuração se refere ao número de caracteres especiais (por exemplo, **!** , **#**, **&amp;**) que devem ser incluídos na senha.
-
-- **Minutos de inatividade antes que a senha seja exigida**: especifique o tempo ocioso antes que o usuário precise digitar novamente sua senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
-- **Lembrar histórico de senha:** use essa configuração em conjunto com **Evitar reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
-- **Evitar a reutilização de senhas anteriores**: se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
-- **Exigir uma senha quando o dispositivo retorna do estado ocioso:** use essa configuração em conjunto com **Minutos de inatividade antes da senha ser necessária**. O usuário é solicitado a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
-
-### <a name="email-profile"></a>Perfil de email
+## <a name="email"></a>Email
 
 - **A conta de email deve ser gerenciada pelo Intune** : quando essa opção é definida como **Sim**, o dispositivo deve usar o perfil de email implantado no dispositivo. O dispositivo é considerado incompatível nas seguintes situações:
   - O perfil de email é implantado em um grupo de usuários diferente do grupo de usuários que é destino da política de conformidade.
@@ -111,14 +80,34 @@ Para dispositivos iOS, essa configuração se refere ao número de caracteres es
 
 Para obter detalhes sobre o perfil de email, consulte [Configurar o acesso ao email corporativo usando perfis de email com o Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health-settings"></a>Configurações de integridade do dispositivo
+## <a name="device-health"></a>Device health
 
-- **O dispositivo não pode estar com jailbreak ou com raiz**: se você habilitar essa configuração, os dispositivos com jailbreak não serão compatíveis.
+- **Dispositivos com jailbreak**: se você habilitar essa configuração, os dispositivos com jailbreak não estarão em conformidade.
+- **Exigir que o dispositivo esteja no nível de ameaça do dispositivo ou abaixo dele**: escolha o nível máximo de ameaça para marcar dispositivos como não estando em conformidade. Por exemplo, se você definir o nível de ameaça como **Médio**, então os dispositivos com médio, baixo ou protegidos estarão em conformidade. Dispositivos com um nível de ameaça alto não estão em conformidade.
 
 ## <a name="device-properties"></a>Propriedades do dispositivo
 
 - **SO mínimo exigido**: quando um dispositivo não atender ao requisito mínimo de versão do SO, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar o dispositivo. Depois disso, ele pode acessar recursos da empresa.
-- **Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+- **Versão do sistema operacional máxima permitida**: quando um dispositivo usar uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado. O usuário, então, deverá contatar seu administrador de TI. Até que haja uma alteração na regra para permitir a versão do sistema operacional, este dispositivo não poderá acessar os recursos da empresa.
+
+## <a name="system-security"></a>Segurança do sistema
+
+### <a name="password"></a>Senha
+
+> [!NOTE]
+> Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS, os usuários deverão definir uma senha a cada 15 minutos. Os usuários serão notificados continuamente até que uma senha seja definida.
+
+- **Exigir uma senha para desbloquear dispositivos móveis**: defina essa opção como **Sim** para exigir que o usuário insira uma senha para poder acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
+- **Senhas simples**: defina isso como **Sim** para permitir que o usuário crie uma senha como **1234** ou **1111**.
+- **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
+- **Tipo de senha necessária**: insira se o usuário deve criar uma senha **Alfanumérica** ou **Numérica**.
+- **Número de caracteres não alfanuméricos na senha**: Insira o número mínimo de caracteres especiais (&, #, %, ! e assim por diante) que devem ser incluídos na senha.
+
+    Definir um número mais alto exige que o usuário crie uma senha mais complexa.
+
+- **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
+- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
 
 <!--- ## Next steps
 

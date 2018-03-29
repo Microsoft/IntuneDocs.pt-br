@@ -2,24 +2,24 @@
 title: Registrar dispositivos iOS usando o Programa de registro de dispositivos
 titlesuffix: Microsoft Intune
 description: Saiba como registrar dispositivos iOS de propriedade corporativa usando o Programa de registro de dispositivos.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS usando o Programa de registro de dispositivos da Apple
 
@@ -42,10 +42,10 @@ Este tópico ajuda você a habilitar o registro de dispositivos iOS comprados po
 
 Para habilitar o registro de DEP, você pode usar ambos os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
 
-A propósito, o registro de DEP não funciona com o [gerenciador de registros de dispositivos](device-enrollment-manager-enroll.md).
+O registro de DEP não funciona com o [gerenciador de registros de dispositivos](device-enrollment-manager-enroll.md). Além disso, no momento, o DEP não é compatível com o macOS.
 
 ## <a name="what-is-supervised-mode"></a>O que é o modo supervisionado?
-A Apple apresentou o modo supervisionado no iOS 5. Um dispositivo iOS no modo supervisionado pode ser gerenciado com mais controles. Assim, é especialmente útil para dispositivos corporativos. O Intune dá suporte ao configurar dispositivos para o modo supervisionado como parte do Programa de registro de dispositivos (DEP) da Apple. 
+A Apple apresentou o modo supervisionado no iOS 5. Um dispositivo iOS no modo supervisionado pode ser gerenciado com mais controles. Assim, é especialmente útil para dispositivos corporativos. O Intune dá suporte ao configurar dispositivos para o modo supervisionado como parte do Programa de registro de dispositivos (DEP) da Apple.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -172,7 +172,7 @@ Agora que o Intune tem permissão para gerenciar seus dispositivos, você pode s
 1. No [Intune, no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Dispositivos do Programa de Registro** > **Sincronizar**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
 
   ![Nó Dispositivos do Programa de Registro selecionado e o link de Sincronização sendo escolhido](./media/enrollment-program-device-sync.png)
-  
+
 2. Na folha **Sincronizar**, escolha **Solicitar Sincronização**. A barra de progresso mostra a quantidade de tempo que você deve aguardar antes de solicitar a Sincronização novamente.
 
    ![Folha de sincronização com o link Solicitação de sincronização selecionado](./media/enrollment-program-device-request-sync.png)
@@ -206,6 +206,4 @@ Atribua um perfil do Programa de Registro aos dispositivos antes de registrá-lo
 ## <a name="distribute-devices"></a>Distribuir dispositivos
 Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos de DEP. Agora você pode distribuir dispositivos para os usuários. Os dispositivos com afinidade de usuário requerem que cada usuário receba uma licença do Intune. Os dispositivos sem afinidade de usuário requerem uma licença de dispositivo. Um dispositivo ativado só pode ser aplicado a um perfil de registro após restaurar as respectivas configurações de fábrica.
 
-Consulte [Registre seu dispositivo iOS no Intune com o Programa de registro de dispositivos](/intune-user-help/enroll-your-device-dep-ios). 
-
-
+Consulte [Registre seu dispositivo iOS no Intune com o Programa de registro de dispositivos](/intune-user-help/enroll-your-device-dep-ios).

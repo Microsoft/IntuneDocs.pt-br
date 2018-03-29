@@ -1,25 +1,25 @@
 ---
 title: Implantar aplicativos em dispositivos Android for Work
-description: "Use este tópico para sincronizar e implantar aplicativos em dispositivos Android for Work da Google Play for Work Store."
-keywords: 
+description: Use este tópico para sincronizar e implantar aplicativos em dispositivos Android for Work da Google Play for Work Store.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22b842f2745073f0476162278c8b209a3e251f9f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Como implantar aplicativos em dispositivos Android for Work com o Intune
 
@@ -82,7 +82,7 @@ Quando um desenvolvedor de aplicativo publica uma nova versão do aplicativo com
 
 Periodicamente, acesse o console gerenciado do Google Play para verificar se há novas permissões. Você pode configurar o Google Play para enviar um email a você ou a outras pessoas quando novas permissões forem necessárias para um aplicativo aprovado. Se você atribuir um aplicativo e observar que ele não está instalado nos dispositivos, verifique se há novas permissões com as seguintes etapas:
 
-1. Visite http://play.google.com/work
+1. Acesse http://play.google.com/work
 2. Entre com a conta do Google usada para publicar e aprovar os aplicativos.
 3. Visite a guia **Atualizações** para ver se algum aplicativo precisa de atualização.  Os aplicativos listados exigem novas permissões e só são atribuídos quando elas são aplicadas.  
 
