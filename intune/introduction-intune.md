@@ -1,28 +1,28 @@
 ---
-title: "O que é o Microsoft Intune"
-description: "Saiba por que o Intune é o componente de MDM (gerenciamento de dispositivo móvel) e de MAM (gerenciamento de aplicativo móvel) da solução Enterprise Mobility + Security e como ele ajuda a proteger os dados da sua empresa."
-keywords: "o que é o Intune"
+title: O que é o Microsoft Intune
+description: Saiba por que o Intune é o componente de MDM (gerenciamento de dispositivo móvel) e de MAM (gerenciamento de aplicativo móvel) da solução Enterprise Mobility + Security e como ele ajuda a proteger os dados da sua empresa.
+keywords: o que é o Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 25bb5ec1610eb3d3cac02244a43ead6e63d441e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-intune"></a>O que é o Intune?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 O Intune é um serviço baseado em nuvem no espaço de EMM (gerenciamento de mobilidade empresarial) que colabora para permitir que sua a força de trabalho fique produtiva e ainda mantém os dados corporativos protegidos. Com o Intune, você pode:
 * gerenciar os dispositivos móveis que sua força de trabalho usa para acessar dados da empresa.

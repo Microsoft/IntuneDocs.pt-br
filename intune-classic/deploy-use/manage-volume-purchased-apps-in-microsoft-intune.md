@@ -1,29 +1,29 @@
 ---
 title: Gerenciar aplicativos adquiridos por volume
 description: Saiba como usar o Intune para gerenciar aplicativos adquiridos no volume de uma loja de aplicativos.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f82ba373d45c0238f7de62953b4527680daa79f8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9b23100e1b609574733cbba3d9c8b25d61ad15ec
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Gerenciar aplicativos adquiridos por volume que usam o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Algumas lojas de aplicativos oferecem a possibilidade de comprar várias licenças para um aplicativo que você deseja executar na empresa. Isso ajuda a reduzir a sobrecarga administrativa de acompanhar várias cópias adquiridas de aplicativos.
 

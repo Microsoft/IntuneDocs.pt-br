@@ -15,15 +15,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar o registro para dispositivos Windows
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este tópico ajuda os administradores de TI a simplificar o registro do Windows para os seus usuários. Depois que você [configurar o Intune](setup-steps.md), os usuários registram os dispositivos Windows [entrando](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) com sua conta corporativa ou de estudante.  
 
@@ -48,7 +48,7 @@ As organizações que podem usar o registro automático também podem configurar
 **Suporte a vários usuários**<br>
 Os dispositivos que executam a Atualização do Windows 10 para Criadores, e que estão ingressados no domínio do Azure Active Directory, agora têm suporte para o gerenciamento de vários usuários do Intune. Quando os usuários padrão fizerem logon com suas credenciais do Azure AD, eles receberão aplicativos e políticas atribuídas ao nome de usuário deles. No momento, os usuários não podem usar o Portal da Empresa para cenários de autoatendimento, como a instalação de aplicativos.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplificar a inscrição do Windows sem o Azure AD Premium
 É possível simplificar o registro para os usuários criando um alias DNS (servidor de nomes de domínio) (tipo de registro CNAME) que redireciona automaticamente as solicitações de registro para os servidores do Intune. Se você não criar um registro de recurso DNS CNAME, os usuários que tentarem se conectar ao Intune deverão inserir o nome do servidor Intune durante o registro.

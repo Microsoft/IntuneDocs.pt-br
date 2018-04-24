@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Solução de problemas com o Exchange Connector
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico descreve como solucionar problemas que podem estar relacionados com o Intune Exchange Connector.
 
@@ -36,8 +36,8 @@ Verifique a configuração do Exchange Connector e veja se o problema foi resolv
 - Ao configurar o Exchange Connector, especifique um CAS (Servidor de Acesso para Cliente) que seja o mais próximo possível do servidor que hospeda o Exchange Connector. A latência de comunicação entre o CAS e o Exchange Connector pode resultar em atrasos de descoberta de dispositivo, especialmente ao usar o O365 dedicado.
 - Lembre-se de que há uma latência de tempo entre as sincronizações do Exchange Connector com o CAS do Exchange. Uma sincronização completa ocorre uma vez por dia e uma sincronização de delta (rápida) ocorre a cada duas horas. Há a probabilidade que usuários com um dispositivo registrado recentemente sofram atraso na obtenção de acesso.
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>O dispositivo do Exchange ActiveSync não é descoberto no Exchange
-Verifique se o Exchange Connector está sincronizando com o Exchange Server. Para fazer isso, localize os logs para uma sincronização completa ou delta. Consulte Logs do Exchange Connector. Se uma sincronização completa ou delta tiver sido concluída com êxito desde que o dispositivo foi associado, você eliminou isso como origem do problema. Se nenhuma sincronização tiver sido feita, colete os logs de sincronização e anexe-os a sua solicitação de suporte.
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>O dispositivo do Exchange ActiveSync não é descoberto no Exchange
+  Verifique se o Exchange Connector está sincronizando com o Exchange Server. Para fazer isso, localize os logs para uma sincronização completa ou delta. Consulte Logs do Exchange Connector. Se uma sincronização completa ou delta tiver sido concluída com êxito desde que o dispositivo foi associado, você eliminou isso como origem do problema. Se nenhuma sincronização tiver sido feita, colete os logs de sincronização e anexe-os a sua solicitação de suporte.
 
 - Se um usuário não tiver uma licença do Intune, o Exchange Connector não descobrirá seus dispositivos.
 - Se o endereço SMTP primário de um usuário for diferente de seus UPN no AAD, o Exchange Connector não descobrirá os dispositivos desse usuário do Intune/AAD. Corrija o endereço SMTP primário.

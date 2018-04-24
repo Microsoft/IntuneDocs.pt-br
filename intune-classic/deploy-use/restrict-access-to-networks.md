@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Usando o Cisco ISE com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A integração do Intune com o Cisco ISE (Mecanismo de serviços de identidade) permite criar políticas de rede em seu ambiente de ISE usando o estado de conformidade e de registro do dispositivo do Intune. Você pode usar essas políticas para garantir que o acesso à rede da empresa seja restrito aos dispositivos gerenciados pelo Intune e em conformidade com as políticas do Intune.
 
@@ -70,13 +70,13 @@ b. Escolha o ícone de cadeado &gt;  **Mais informações**.
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>Obtenha um certificado autoassinado do ISE 
 
-1.  No console do ISE, vá para **Administração** > **Certificados** > **Certificados do Sistema** > **Gerar certificado Autoassinado**.  
-2.       Exporte o certificado autoassinado.
+1. No console do ISE, vá para **Administração** > **Certificados** > **Certificados do Sistema** > **Gerar certificado Autoassinado**.  
+2. Exporte o certificado autoassinado.
 3. Em um editor de texto, edite o certificado exportado:
 
- - Excluir  **-----INICIAR CERTIFICADO-----**
- - Excluir  **-----CONCLUIR CERTIFICADO-----**
- 
+   - Excluir  **-----INICIAR CERTIFICADO-----**
+   - Excluir  **-----CONCLUIR CERTIFICADO-----**
+
 Verifique se todo o texto está em uma única linha
 
 
@@ -88,13 +88,13 @@ Verifique se todo o texto está em uma única linha
 5. Salve o arquivo sem alterar seu nome.
 6. Forneça a seu aplicativo permissões para o Microsoft Graph e a API do Microsoft Intune.
 
- a. Para o Microsoft Graph, escolha o seguinte:
+   a. Para o Microsoft Graph, escolha o seguinte:
     - **Permissões do aplicativo**: ler dados do diretório
     - **Permissões delegadas**:
         - Acessar dados do usuário a qualquer momento
         - Conectar usuários
 
- b. Para a API do Microsoft Intune, em **Permissões do aplicativo**, escolha **Obter estado do dispositivo e conformidade do Intune**.
+   b. Para a API do Microsoft Intune, em **Permissões do aplicativo**, escolha **Obter estado do dispositivo e conformidade do Intune**.
 
 7. Escolha **Exibir pontos de extremidade** e copie os seguintes valores para uso nas configurações do ISE:
 
@@ -105,23 +105,40 @@ Verifique se todo o texto está em uma única linha
 |Atualizar seu código com sua ID de cliente|ID do Cliente|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Etapa 4: Carregar o certificado autoassinado do ISE no aplicativo do ISE criado no Azure AD
-1.     Obtenha o valor do certificado codificado em base64 e a impressão digital de um arquivo de certificado público .cer X509. Este exemplo usa o PowerShell:
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    Armazene os valores de $base64Thumbprint, $base64Value e $keyid que serão usados na próxima etapa.
-2.       Carregue o certificado por meio do arquivo de manifesto. Faça logon no [Portal de Gerenciamento do Azure](https://manage.windowsazure.com)
-2.      No snap-in do Azure AD, encontre o aplicativo que deseja configurar com um certificado x.509.
-3.      Baixe o arquivo de manifesto de aplicativo. 
-5.      Substitua a propriedade vazia “KeyCredentials”: [] pelo JSON a seguir.  O tipo complexo KeyCredentials é documentado na [Referência de entidades e tipos complexos](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
+1. Obtenha o valor do certificado codificado em base64 e a impressão digital de um arquivo de certificado público .cer X509. Este exemplo usa o PowerShell:
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. Carregue o certificado por meio do arquivo de manifesto. Faça logon no [Portal de Gerenciamento do Azure](https://manage.windowsazure.com)
+3. No snap-in do Azure AD, encontre o aplicativo que deseja configurar com um certificado x.509.
+4. Baixe o arquivo de manifesto de aplicativo. 
+5. Substitua a propriedade vazia “KeyCredentials”: [] pelo JSON a seguir.  O tipo complexo KeyCredentials é documentado na [Referência de entidades e tipos complexos](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 Por exemplo:
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ Por exemplo:
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      Salve a alteração no arquivo de manifesto de aplicativo.
-7.      Carregue o arquivo de manifesto do aplicativo editado por meio do portal de gerenciamento do Azure.
-8.      Opcional: baixe o manifesto novamente para verificar se o certificado x.509 está presente no aplicativo.
+
+6. Salve a alteração no arquivo de manifesto de aplicativo.
+7. Carregue o arquivo de manifesto do aplicativo editado por meio do portal de gerenciamento do Azure.
+8. Opcional: baixe o manifesto novamente para verificar se o certificado x.509 está presente no aplicativo.
 
 >[!NOTE]
 >

@@ -1,30 +1,29 @@
 ---
 title: Gerenciar aplicativos da Microsoft Store para Empresas
 titlesuffix: Microsoft Intune
-description: "Saiba como é possível sincronizar os aplicativos da Microsoft Store para Empresas com o Intune e, em seguida, atribuir e controlar esses aplicativos."
-keywords: 
+description: Saiba como é possível sincronizar os aplicativos da Microsoft Store para Empresas com o Intune e, em seguida, atribuir e controlar esses aplicativos.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa5e3b5559c5c17ea726b26f1c1f56ef37cfe0ae
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 512fab5a8ed70af989d6057308b48185cd697d8f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos adquiridos na Microsoft Store para Empresas com o Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O [Microsoft Store para Empresas](https://www.microsoft.com/business-store) é um local para encontrar e comprar aplicativos para organizações, uso individual ou com base em volume. Conectando a loja ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Por exemplo:
 * Você pode sincronizar a lista de aplicativos que você adquiriu do armazenamento com o Intune.

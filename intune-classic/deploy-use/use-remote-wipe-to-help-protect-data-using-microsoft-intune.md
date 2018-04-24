@@ -1,29 +1,29 @@
 ---
 title: Usar o apagamento remoto para ajudar a proteger dados
 description: O Intune fornece recursos de apagamento completo e apagamento seletivo para remover dados corporativos confidenciais e remover o acesso a muitos recursos corporativos.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ajude a proteger os dados com apagamento completo ou seletivo usando o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Você pode apagar os aplicativos e dados de dispositivos gerenciados pelo Intune que não são mais necessários, que estão sendo realocados ou estão ausentes. Para isso, o Intune fornece funcionalidades de apagamento completo e apagamento seletivo. Os usuários também podem emitir um comando de apagamento remoto de dados no dispositivo do aplicativo de Portal da Empresa do Intune em dispositivos privados registrados no Intune.
 
@@ -40,37 +40,37 @@ O **Apagamento Completo** restaura um dispositivo para suas configurações padr
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Apague um dispositivo remotamente usando o Console Administração do Intune
 
-1.  Selecione os dispositivos a serem apagados. Você pode encontrá-los por usuário ou por dispositivo.
+1. Selecione os dispositivos a serem apagados. Você pode encontrá-los por usuário ou por dispositivo.
 
-    -   **Por usuário:**
+   - **Por usuário:**
 
-        1.  No [Console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Usuários**.
+     1.  No [Console de administração do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Usuários**.
 
-        2.  Escolha o nome do usuário cujo dispositivo móvel deseja apagar. Escolha **Exibir Propriedades**.
+     2.  Escolha o nome do usuário cujo dispositivo móvel deseja apagar. Escolha **Exibir Propriedades**.
 
-        3.  Na página **Propriedades** do usuário, escolha **Dispositivos** e selecione o nome do dispositivo móvel que deseja apagar. Para selecionar vários dispositivos, use Ctrl + clique.
+     3.  Na página **Propriedades** do usuário, escolha **Dispositivos** e selecione o nome do dispositivo móvel que deseja apagar. Para selecionar vários dispositivos, use Ctrl + clique.
 
-    -   **Por dispositivo:**
+   - **Por dispositivo:**
 
-        1.  No [Console do administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos Móveis**.
+     1. No [Console do administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos Móveis**.
 
-         ![Iniciando uma operação de desativação ou apagamento](../media/dev-sa-wipe.png)
+        ![Iniciando uma operação de desativação ou apagamento](../media/dev-sa-wipe.png)
 
-        2.  Clique em **Dispositivos** e escolha o nome do dispositivo móvel que deseja apagar. Para selecionar vários dispositivos, use Ctrl + clique.
+     2. Clique em **Dispositivos** e escolha o nome do dispositivo móvel que deseja apagar. Para selecionar vários dispositivos, use Ctrl + clique.
 
-2.  Escolher **Desativar/Apagar**.
+2. Escolher **Desativar/Apagar**.
 
-3.  É exibida uma mensagem de confirmação, perguntando se você deseja desativar o dispositivo.
+3. É exibida uma mensagem de confirmação, perguntando se você deseja desativar o dispositivo.
 
-    -   Para realizar um **Apagamento seletivo**, que remove somente aplicativos e dados da empresa, escolha **Sim**.
+   -   Para realizar um **Apagamento seletivo**, que remove somente aplicativos e dados da empresa, escolha **Sim**.
 
-    -   Para executar um **Apagamento completo**, que apaga todos os aplicativos e dados e retorna o dispositivo para as configurações padrão de fábrica, escolha **Apague o dispositivo antes de desativá-lo**. Essa ação se aplica a todas as plataformas, exceto Windows 8.1. **Não é possível recuperar dados removidos por um apagamento completo**.
+   -   Para executar um **Apagamento completo**, que apaga todos os aplicativos e dados e retorna o dispositivo para as configurações padrão de fábrica, escolha **Apague o dispositivo antes de desativá-lo**. Essa ação se aplica a todas as plataformas, exceto Windows 8.1. **Não é possível recuperar dados removidos por um apagamento completo**.
 
 Se o dispositivo estiver ligado e conectado, leva menos de 15 minutos para que um comando de apagamento seja propagado para todos os tipos de dispositivo.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para excluir dispositivos no portal do Active Directory do Azure
 
-1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou clique em **Administrador** &gt; **Azure AD** de [https://portal.office.com](https://portal.office.com).
+1.  Navegue até [http://aka.ms/accessaad](http://aka.ms/accessaad) ou selecione **Administrador** &gt; **Azure AD** em [https://portal.office.com](https://portal.office.com).
 
 2.  Faça logon com sua ID da organização usando o link no lado esquerdo da página.
 

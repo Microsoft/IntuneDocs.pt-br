@@ -1,27 +1,27 @@
 ---
 title: Registrar seu dispositivo Windows 10 no Intune | Microsoft Docs
 description: Registrar um dispositivo Windows 10 1607 ou superior no Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2183f17b2797229f6af156349029e8061658c51b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fee90ed055a0d132a4f6304d7b33f67005caf0fc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrar seu dispositivo Windows 10 no Intune
 
@@ -32,30 +32,30 @@ ms.lasthandoff: 01/25/2018
 
 1. Vá até **Iniciar**.
 
-  - Se você estiver usando um dispositivo **Windows 10 Desktop**, acesse o **Menu Iniciar**.
-  - Se você estiver usando um dispositivo **Windows 10 Mobile**, acesse a **Tela inicial** e, em seguida, passe para a lista **Todos os aplicativos**.
+   - Se você estiver usando um dispositivo **Windows 10 Desktop**, acesse o **Menu Iniciar**.
+   - Se você estiver usando um dispositivo **Windows 10 Mobile**, acesse a **Tela inicial** e, em seguida, passe para a lista **Todos os aplicativos**.
 
-2.  Abra o aplicativo **Configurações** do Windows, pesquisando por "configurações" na barra de pesquisa.
+2. Abra o aplicativo **Configurações** do Windows, pesquisando por "configurações" na barra de pesquisa.
 
 3. Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.
 
     ![Selecione Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-3.  Insira seu endereço de email corporativo ou de estudante e selecione **Avançar**.
+4. Insira seu endereço de email corporativo ou de estudante e selecione **Avançar**.
 
-    ![Insira sua conta corporativa ou de estudante](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+   ![Insira sua conta corporativa ou de estudante](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-4. Entre no Intune com sua conta corporativa ou de estudante.
+5. Entre no Intune com sua conta corporativa ou de estudante.
 
     ![Adicionar uma conta corporativa ou de estudante](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     Você verá uma mensagem que indica que sua empresa ou escola está registrando o dispositivo.
 
-5. Quando você vir a página **Tudo pronto!**, selecione **Fechar**. Você terminou.
+6. Quando você vir a página **Tudo pronto!**, selecione **Fechar**. Você terminou.
 
-  ![Selecione Fechar na tela “Você está pronto!” “Tudo pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
+   ![Selecione Fechar na tela “Você está pronto!” “Tudo pronto!”](./media/w10-enroll-rs1-youre-all-set.png)
 
-6. Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.
+7. Se você quiser verificar que a conexão tenha a aparência correta, vá até **Configurações**, onde você deve ver agora sua conta corporativa ou de estudante listada.
 
     ![Valide se a conexão foi configurada corretamente](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 

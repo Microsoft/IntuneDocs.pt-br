@@ -1,27 +1,30 @@
 ---
-title: "Monitorar as políticas de conformidade de dispositivo do Microsoft Intune"
-titlesuffix: 
-description: "Use o painel de conformidade de dispositivos para monitorar a conformidade geral dos dispositivos, exibir relatórios e exibir a conformidade dos dispositivos por política e por configuração."
-keywords: 
+title: Monitorar as políticas de conformidade de dispositivo do Microsoft Intune
+titlesuffix: ''
+description: Use o painel de conformidade de dispositivos para monitorar a conformidade geral dos dispositivos, exibir relatórios e exibir a conformidade dos dispositivos por política e por configuração.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
 Os relatórios de conformidade ajudam os administradores a analisar as condições de conformidade dos dispositivos na organização e solucionar rapidamente os problemas relacionados à conformidade encontrados pelos usuários da organização. Você pode exibir informações sobre o estado de conformidade geral dos dispositivos, estado de conformidade de uma configuração individual, estado de conformidade de uma política individual e fazer uma busca detalhada nos dispositivos individuais para exibir as configurações específicas e políticas que afetam o dispositivo.
+
+> [!NOTE]
+> Em março, incluímos alguns aprimoramentos de segurança no serviço do Intune com base em seus comentários. Dependendo de como as políticas de conformidade estão configuradas, talvez seja necessário tomar medidas para evitar a perda de acesso ao email para os usuários finais. Para obter detalhes, veja [Futuros aprimoramentos de segurança](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -124,6 +127,19 @@ Se você clicar no **botão Atualizar**, o menu suspenso deverá fechar e os res
 Clicar em um dispositivo abre o **Painel de Dispositivos** com o dispositivo selecionado, que fornece mais detalhes sobre a configuração da política de conformidade de dispositivo aplicada a esse dispositivo.
 
 Quando você clica na própria configuração da política do dispositivo, pode ver que o nome da política de conformidade do dispositivo originou essa configuração de conformidade do dispositivo direcionada pelo administrador.
+
+### <a name="devices-without-compliance-policy"></a>Dispositivos sem política de conformidade
+Esse relatório identifica dispositivos que não têm políticas de conformidade atribuídas a eles. Com a introdução da configuração de segurança que marca todos os dispositivos sem políticas de conformidade, como "não está em conformidade", é importante poder identificar esses dispositivos. Em seguida, poderá atribuir pelo menos uma política de conformidade a eles.
+
+> [!NOTE]
+> A nova configuração de segurança pode ser definida no portal do Intune. Selecione **Conformidade do dispositivo** e, em **Instalação**, escolha **Configurações da política de conformidade**. Então use a alternância para definir **Marcar dispositivos sem política de conformidade atribuída como** como **Em conformidade** ou **Não em conformidade**. Leia mais sobre esse [aprimoramento de segurança no serviço do Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Imagem mostrando Dispositivos sem relatório de política de conformidade](./media/idc-12.png)
+
+O bloco **Dispositivos sem política de conformidade** está disponível no painel de Conformidade do dispositivo, e mostra todos os dispositivos sem uma política de conformidade, o usuário do dispositivo, o status de conformidade e o modelo do dispositivo.
+
+> [!NOTE]
+> Os usuários que recebem uma política de conformidade de qualquer tipo não aparecerão no relatório, independentemente da plataforma do dispositivo. Por exemplo, se você acidentalmente atribuir uma política de conformidade do Windows para um usuário com um dispositivo Android, o dispositivo não aparecerá no relatório. No entanto, o Intune considerará que o dispositivo Android não está em conformidade. Para evitar problemas, recomendamos criar políticas para cada plataforma de dispositivo e implantá-las para todos os usuários.
 
 ### <a name="per-policy-device-compliance-report"></a>Relatório de conformidade do dispositivo por política
 

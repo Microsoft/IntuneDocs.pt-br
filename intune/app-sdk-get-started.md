@@ -1,24 +1,24 @@
 ---
-title: "Introdução ao SDK de Aplicativos do Microsoft Intune"
-description: "Habilite rapidamente seu aplicativo móvel para MAM (gerenciamento de aplicativo móvel) com o Microsoft Intune."
-keywords: 
+title: Introdução ao SDK de Aplicativos do Microsoft Intune
+description: Habilite rapidamente seu aplicativo móvel para MAM (gerenciamento de aplicativo móvel) com o Microsoft Intune.
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5827c82d84be45020aa2bdec16c92e0296431cf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -69,7 +69,7 @@ Os SDKs do Aplicativo do Intune para iOS e Android nativo são hospedados em uma
 
 Caso o aplicativo seja um aplicativo Xamarin ou Cordova, use essas variantes do SDK:
 
-* [Componente Xamarin do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Associações do Xamarin do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Plug-in Cordova do SDK de Aplicativo do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Convém criar uma conta do GitHub que você possa usar para bifurcar e efetuar pull de nosso repositórios. O GitHub permite que os desenvolvedores se comuniquem com nossa equipe de produto, abram questões e recebam respostas rápidas, exibam notas de versão e forneçam comentários à Microsoft. Em caso de dúvidas sobre o GitHub do SDK do Aplicativo do Intune, contate msintuneappsdk@microsoft.com.
@@ -84,7 +84,7 @@ Você precisará de um dos seguintes guias do desenvolvedor para ajudá-lo a int
 
 * **[Guia do plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Cordova para as políticas de proteção do aplicativo do Intune.
 
-* **[Guia do Componente Xamarin do SDK do Aplicativo do Intune](app-sdk-xamarin.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Cordova para as políticas de proteção do aplicativo do Intune.
+* **[Guia de Associações do Xamarin de SDK do Aplicativo do Intune](app-sdk-xamarin.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Xamarin para as políticas de Proteção de Aplicativo do Intune.
 
 
 
@@ -142,7 +142,7 @@ Número da versão|CFBundleVersion|PackageVersionCode |Esse número é usado par
 
 - **CFBundleShortVersionString**  
     Especifica o número de versão do evento do pacote. Esse número identifica uma versão lançada do aplicativo. O número é usado pelos usuários finais para referenciar o aplicativo.
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     A versão de build do pacote, que identifica uma iteração do pacote. O número pode identificar um pacote lançado ou não lançado. O número é usado para detecção de aplicativo.
 
 #### <a name="android"></a>Android

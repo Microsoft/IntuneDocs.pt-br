@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0b0fbfce086729551b211dd4bc4b83348aa4787
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1f9446da0f553dca29bbfd96b99711c895cd8533
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Permitir que apenas aplicativos móveis que dão suporte às políticas de proteção de aplicativo do Intune acessem os serviços do Office 365
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As [Políticas de proteção de aplicativo do Intune](protect-apps-and-data-with-microsoft-intune.md) ajudam a proteger os dados de sua empresa nos dispositivos registrados para gerenciamento no Intune. É possível usar as políticas de proteção de aplicativo em **dispositivos do funcionário que não estão registrados para gerenciamento no Intune**.  Nesse caso, mesmo que você não gerencie o dispositivo, ainda é necessário se certificar de que os dados e recursos da empresa estão protegidos. Usando o acesso condicional baseado em aplicativo com MAM, você pode criar uma política que permite que apenas aplicativos móveis que dão suporte às políticas de proteção de aplicativo do Intune acessem os serviços do O365, como o Exchange Online.
 

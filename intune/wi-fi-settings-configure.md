@@ -1,27 +1,27 @@
 ---
-title: "Como definir configurações de Wi-Fi do Intune"
+title: Como definir configurações de Wi-Fi do Intune
 titleSuffix: Microsoft Intune
-description: "Saiba como usar o Microsoft Intune para configurar conexões Wi-Fi nos dispositivos que você gerencia."
-keywords: 
+description: Saiba como usar o Microsoft Intune para configurar conexões Wi-Fi nos dispositivos que você gerencia.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Como definir configurações de Wi-Fi no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use os perfis de Wi-Fi do Microsoft Intune para atribuir configurações de rede sem fio para usuários e dispositivos na organização. Quando você atribui um perfil de Wi-Fi, os usuários têm acesso à rede Wi-Fi corporativa sem precisar configurá-lo por conta própria.
 

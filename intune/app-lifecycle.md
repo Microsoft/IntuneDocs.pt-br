@@ -1,28 +1,28 @@
 ---
-title: "Visão geral do ciclo de vida do aplicativo para Microsoft Intune"
+title: Visão geral do ciclo de vida do aplicativo para Microsoft Intune
 description: Saiba mais sobre o ciclo de vida de aplicativos gerenciados no Microsoft Intune. O ciclo de vida do aplicativo inclui adicionar, implantar, configurar, proteger e desativar aplicativos.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
-ms.openlocfilehash: 732323d1d882a256128ae731cab68656126583b2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 853873480beb5e95a195e04e251cea9975ce03b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Visão geral do ciclo de vida do aplicativo no Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 O ciclo de vida de aplicativo do Microsoft Intune começa quando um aplicativo é adicionado e passa por outras fases até ele ser removido. Compreendendo essas fases, você terá os detalhes necessários para iniciar o gerenciamento de aplicativos no Intune.
 

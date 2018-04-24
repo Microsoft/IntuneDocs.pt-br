@@ -1,29 +1,29 @@
 ---
-title: "Aplicativos Android com políticas de proteção do aplicativo"
+title: Aplicativos Android com políticas de proteção do aplicativo
 titlesuffix: Microsoft Intune
-description: "Saiba o que esperar de um aplicativo Android que tenha políticas de proteção."
-keywords: 
+description: Saiba o que esperar de um aplicativo Android que tenha políticas de proteção.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Saiba o que esperar de aplicativos Android com políticas de proteção de aplicativo. As políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho. Por exemplo, quando você acessa um aplicativo com uma conta corporativa ou quando você acessa arquivos armazenados no OneDrive da sua empresa.
 ##  <a name="accessing-apps"></a>Acessando aplicativos
@@ -75,9 +75,11 @@ Os tipos de arquivo a seguir têm suporte:
 * **Documentos:** PDF, PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|O pfile é um formato genérico de "wrapper" para arquivos protegidos. Ele encapsula o conteúdo criptografado e as licenças da Proteção de Informações do Azure. Ele pode ser usado para proteger qualquer tipo de arquivo.|Arquivos de texto, inclusive XML, CSV etc. podem ser abertos para visualização no aplicativo, mesmo quando eles são protegidos. Tipos de arquivo: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| O pfile é um formato genérico de "wrapper" para arquivos protegidos. Ele encapsula o conteúdo criptografado e as licenças da Proteção de Informações do Azure. Ele pode ser usado para proteger qualquer tipo de arquivo. | Arquivos de texto, inclusive XML, CSV etc. podem ser abertos para visualização no aplicativo, mesmo quando eles são protegidos. Tipos de arquivo: txt, ptxt, csv, pcsv, log, plog, xml, pxml. |
+
 ---------------
 ## <a name="next-steps"></a>Próximas etapas
 [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](app-protection-enabled-apps-ios.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Portal do Azure para as políticas de proteção do aplicativo Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Portal do Azure é usado para criar e gerenciar políticas de proteção de aplicativo para:
 
@@ -32,9 +32,9 @@ O Portal do Azure é usado para criar e gerenciar políticas de proteção de ap
 - Aplicativos que são executados em dispositivos que **não são registrados** em nenhuma solução de MDM.
 - Aplicativos executados em dispositivos que são **registrados em uma solução de MDM de terceiros**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > O Portal do Azure é o novo console de administração para criar políticas de proteção de aplicativo, mas você também pode criar uma política de proteção de aplicativo que dá suporte a aplicativos para dispositivos registrados no Intune usando o [console do administrador do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) para cenários de MDM.
-
+> 
 > Você poderá não ver todas as configurações de política de proteção de aplicativo disponíveis no console de administrador do Intune. Além disso, se você criar políticas de proteção de aplicativo no console do administrador do Intune e no portal do Azure, as políticas criadas no Portal do Azure substituirão aquelas criadas no console do administrador do Intune. Nesse cenário, as políticas de proteção de aplicativo do Portal do Azure serão aplicadas aos aplicativos e implantadas para os usuários.
 
 

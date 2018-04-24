@@ -11,28 +11,28 @@ O registro automático permite que os usuários registrem seus dispositivos com 
 
 1. Entre no [Portal de Gerenciamento do Azure](https://portal.azure.com) (https://manage.windowsazure.com) e selecione **Azure Active Directory**.
 
-  ![Captura de tela do portal do Azure](../media/auto-enroll-azure-main.png)
+   ![Captura de tela do portal do Azure](../media/auto-enroll-azure-main.png)
 
 2. Selecione **Mobilidade (MDM e MAM)**.
 
-  ![Captura de tela do portal do Azure](../media/auto-enroll-mdm.png)
+   ![Captura de tela do portal do Azure](../media/auto-enroll-mdm.png)
 
 3. Selecione **Microsoft Intune**.
 
-  ![Captura de tela do portal do Azure](../media/auto-enroll-intune.png)
+   ![Captura de tela do portal do Azure](../media/auto-enroll-intune.png)
 
 4. Configure **Escopo de Usuário MDM**. Especifique quais dispositivos dos usuários devem ser gerenciados pelo Microsoft Intune. Os dispositivos do Windows 10 desses usuários serão automaticamente registrados para gerenciamento com o Microsoft Intune.
 
-  - **Nenhum**
-  - **Alguns**
-  - **Todos**
+   - **Nenhum**
+   - **Alguns**
+   - **Todos**
 
- ![Captura de tela do portal do Azure](../media/auto-enroll-scope.png)
+   ![Captura de tela do portal do Azure](../media/auto-enroll-scope.png)
 
 5. Use os valores padrão para as seguintes URLs:
-  - **URL dos Termos de uso do MDM**
-  - **URL de Descoberta do MDM**
-  - **URL da Conformidade do MDM**
+   - **URL dos Termos de uso do MDM**
+   - **URL de Descoberta do MDM**
+   - **URL da Conformidade do MDM**
 
 6. Selecione **Salvar**.
 

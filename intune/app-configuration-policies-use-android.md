@@ -1,31 +1,31 @@
 ---
-title: "Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados"
+title: Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 titlesuffix: Microsoft Intune
-description: "Use as políticas de configuração do aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo Android for Work."
-keywords: 
+description: Use as políticas de configuração do aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo Android for Work.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use as políticas de configuração do aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo Android for Work. Você não atribui essas políticas diretamente para usuários e dispositivos. Em vez disso, você associa uma política a um aplicativo e atribui o aplicativo. As configurações de política são usadas quando o aplicativo as verifica, normalmente, na primeira vez em que ele é executado.
+Use as políticas de configuração do aplicativo no Microsoft Intune para fornecer as configurações para aplicativos Android for Work. O desenvolvedor do aplicativo deve expor as definições de configuração de aplicativo gerenciado Android para especificar as definições de configuração para o aplicativo. Atribua a política de configuração do aplicativo ao grupo de usuários ao qual você deseja que as configurações sejam aplicadas.  As configurações de política são usadas quando o aplicativo as verifica, normalmente, na primeira vez em que ele é executado.
 
 > [!Note]  
 > Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se ele criou o aplicativo para dar suporte a políticas de configuração de aplicativo.
@@ -50,16 +50,27 @@ Use as políticas de configuração do aplicativo no Microsoft Intune para forne
 
 ## <a name="use-the-configuration-designer"></a>Usar o designer de configuração
 
-Você pode usar o designer de configuração para aplicativos em dispositivos que são registrados ou não registrados no Intune. O designer permite que você configure chaves e valores de configuração específicos. Você também deve especificar o tipo de dados para cada valor.
+Você pode usar o designer de configuração para aplicativos Android que dão suporte à configuração. A configuração será aplicada a dispositivos registrados no Intune. O designer permite definir valores de configuração específicos para as configurações que um aplicativo expõe.
 
+Selecione **Adicionar** para selecionar a lista de definições de configuração que você deseja especificar para o aplicativo.  
 Para cada chave e valor na configuração, defina:
 
-  - **Chave de configuração**  
-     A chave que identifica exclusivamente a configuração específica.
   - **Tipo de valor**  
-    O tipo de dados do valor de configuração. Os tipos incluem Inteiro, Real, Cadeia de caracteres ou Booliano.
+    O tipo de dados do valor de configuração. Para tipos de valor de cadeia de caracteres, opcionalmente, você pode escolher um perfil de certificado ou variável como o tipo de valor.
   - **Valor da configuração**  
-    O valor para a configuração. 
+    O valor para a configuração. Se você selecionar a variável ou o certificado para o tipo de valor, poderá escolher em uma lista de variáveis ou perfis de certificado na lista suspensa de valor de configuração.  Se você escolher um certificado, o alias de certificado do certificado implantado no dispositivo será preenchido no tempo de execução.
+    
+### <a name="supported-variables-for-configuration-values"></a>Variáveis compatíveis para valores de configuração
+
+Você poderá escolher as seguintes opções se escolher variável como o tipo de valor:
+- Nome UPN – por exemplo, **John@contoso.com**
+- Email – por exemplo, **John@contoso.com**
+- UPN parcial – por exemplo, **John**
+- ID da Conta – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- ID do dispositivo – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- ID de usuário – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Nome de usuário – por exemplo, **John Doe**
+
 
 ## <a name="enter-the-json-editor"></a>Inserir o editor de JSON
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Configurações de política do iOS no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos iOS. Além disso, use a ferramenta Apple Configurator para criar configurações personalizadas que não estão disponíveis no Intune.
 
@@ -45,20 +45,22 @@ Se a configuração que você está procurando não aparecer nesse tópico, voc�
 ### <a name="security-settings"></a>Configurações de segurança
 Todas as configurações se aplicam ao iOS 8.0 e posterior.
 
-|Nome da configuração|Detalhes|
-|----------------|-------|
-|**Exigir uma senha para desbloquear os dispositivos móveis**|Especificar se será solicitado ou não que o usuário insira uma senha para acessar seu dispositivo.|
-|**Tipo de senha necessária**|Especificar o tipo de senha necessária, como apenas numérica ou alfanumérica.|
-|**Número de caracteres complexos necessários na senha**|Especificar o número de caracteres de símbolo (como **#** ou **@**) que deve ser incluído na senha.|
-|**Comprimento mínimo da senha**|Especificar o número mínimo de caracteres na senha.|
-|**Permitir senha simples**|Permitir senhas simples como **0000** e **1234**.|
-|**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**|Especificar o número de tentativas de logon antes de essa configuração apagar o dispositivo.|
-|**Minutos de inatividade antes de a senha ser solicitada**<sup>1</sup>|Especificar quanto tempo o dispositivo pode permanecer ocioso antes que o usuário precise digitar novamente sua senha.|
-|**Expiração da senha (dias)**|Especificar o número de dias antes que a senha do dispositivo precise ser alterada.|
-|**Lembrar histórico de senha**|Especificar se o usuário pode usar senhas que tenha usado anteriormente.|
-|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especificar o número de senhas usadas anteriormente que são lembradas pelo dispositivo.|
-|**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Especifique o número de minutos antes de a tela do dispositivo ser desativada.|
-|**Permitir desbloqueio por impressão digital**|Permitir usar a impressão digital para desbloquear o dispositivo.|
+
+|                                           Nome da configuração                                            |                                                            Detalhes                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Exigir uma senha para desbloquear os dispositivos móveis</strong>                    |                        Especificar se será solicitado ou não que o usuário insira uma senha para acessar seu dispositivo.                        |
+|                              <strong>Tipo de senha necessária</strong>                              |                   Especificar o tipo de senha necessária, como apenas numérica ou alfanumérica.                    |
+|                <strong>Número de caracteres complexos necessários na senha</strong>                 | Especificar o número de caracteres de símbolo (como <strong>#</strong> ou <strong>@</strong>) que deve ser incluído na senha. |
+|                             <strong>Comprimento mínimo da senha</strong>                              |                                   Especificar o número mínimo de caracteres na senha.                                    |
+|                              <strong>Permitir senha simples</strong>                              |                          Permitir senhas simples como <strong>0000</strong> e <strong>1234</strong>.                          |
+|     <strong>Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado</strong>      |                       Especificar o número de tentativas de logon antes de essa configuração apagar o dispositivo.                        |
+|          <strong>Minutos de inatividade antes de a senha ser solicitada</strong><sup>1</sup>           |                   Especificar quanto tempo o dispositivo pode permanecer ocioso antes que o usuário precise digitar novamente sua senha.                    |
+|                            <strong>Expiração da senha (dias)</strong>                            |                             Especificar o número de dias antes que a senha do dispositivo precise ser alterada.                             |
+|                            <strong>Lembrar histórico de senha</strong>                             |                           Especificar se o usuário pode usar senhas que tenha usado anteriormente.                           |
+| <strong>Lembrar histórico de senha</strong> – <strong>Evitar a reutilização de senhas anteriores</strong> |                           Especificar o número de senhas usadas anteriormente que são lembradas pelo dispositivo.                           |
+|            <strong>Minutos de inatividade antes que a tela se apague</strong><sup>1</sup>             |                             Especifique o número de minutos antes de a tela do dispositivo ser desativada.                             |
+|                             <strong>Permitir desbloqueio por impressão digital</strong>                             |                                        Permitir usar a impressão digital para desbloquear o dispositivo.                                         |
+
 <sup>1</sup> Para dispositivos iOS, ao definir as configurações **Minutos de inatividade antes que a tela se apague** e **Minutos de inatividade antes de a senha ser solicitada**, elas são aplicadas em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
 
 ### <a name="system-settings"></a>Configurações de sistema
@@ -180,25 +182,26 @@ As políticas que contêm configurações de aplicativo que estão em conformida
 
 ### <a name="kiosk-mode-settings"></a>Configurações do modo de quiosque
 
-|Nome da configuração|Detalhes|
-|----------------|--------------------|
-|**Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque**|Escolha **Procurar** e especifique o aplicativo gerenciado ou o aplicativo de uma loja que poderá ser executado quando o dispositivo estiver no modo de quiosque. Nenhum outro aplicativo poderá ser executado no dispositivo. Para obter mais ajuda, consulte "How to specify URLs to app stores" (Como especificar URLs para lojas de aplicativos) mais adiante neste tópico.|
-|**Permitir toque**|Habilitar ou desabilitar a tela touch no dispositivo.|
-|**Permitir rotação da tela**|Habilitar ou desabilitar a alteração da orientação da tela quando o usuário gira o dispositivo.|
-|**Permitir botões de volume**|Habilitar ou desabilitar o uso dos botões de volume no dispositivo.|
-|**Permitir alternador de toque**|Habilitar ou desabilitar a opção de mudar toque (mudo) no dispositivo.|
-|**Permitir botão para ligar tela em modo de suspensão**|Habilitar ou desabilitar o botão de ativação e suspensão da tela no dispositivo.|
-|**Permitir bloqueio automático**|Habilitar ou desabilitar o bloqueio automático do dispositivo.|
-|**Habilitar o áudio mono**|Habilitar ou desabilitar a configuração de acessibilidade **Áudio mono**.|
-|**Habilitar narração**|Habilitar ou desabilitar a configuração de acessibilidade **Narração**, que lê em voz alta o texto na tela do dispositivo.|
-|**Habilitar ajustes de narração**|Habilitar ou desabilitar os ajustes de narração que permitem que o usuário ajuste a função Narração (por exemplo, a rapidez que o texto na tela é lido em voz alta).|
-|**Habilitar o zoom**|Habilitar ou desabilitar a configuração de acessibilidade de **Zoom** que permite ao usuário utilizar o toque para ampliar a tela do dispositivo de acessibilidade.|
-|**Habilitar ajustes de zoom**|Habilitar ou desabilitar os ajustes de zoom que permitem ao usuário ajustar a função de zoom.|
-|**Habilitar inverter cores**|Habilitar ou desabilitar a configuração de acessibilidade **Inverter Cores** que ajusta a exibição para ajudar os usuários com deficiências visuais.|
-|**Habilitar ajustes de inverter cores**|Habilitar ou desabilitar ajustes de inverter ajustes que permite ao usuário ajustar a função inverter cores.|
-|**Habilitar toque auxiliar**|Habilitar ou desabilitar a configuração de acessibilidade **Toque auxiliar**, que ajuda o usuário a executar gestos na tela que podem ser difíceis de executar.|
-|**Habilitar ajustes de toque auxiliar**|Habilitar ou desabilitar os ajustes de toque auxiliar que permitem ao usuário ajustar a função de toque auxiliar.|
-|**Habilitar a seleção de fala**|Habilitar ou desabilitar as configurações de acessibilidade **Seleção de fala** que podem ler em voz alta o texto que o usuário selecionar.|
+|                                            Nome da configuração                                            |                                                                                                                                      Detalhes                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Selecione um aplicativo gerenciado que terá permissão para ser executado quando o dispositivo estiver em modo de quiosque</strong> | Escolha <strong>Procurar</strong> e especifique o aplicativo gerenciado ou o aplicativo de uma loja que poderá ser executado quando o dispositivo estiver no modo de quiosque. Nenhum outro aplicativo poderá ser executado no dispositivo. Para obter mais ajuda, consulte "How to specify URLs to app stores" (Como especificar URLs para lojas de aplicativos) mais adiante neste tópico. |
+|                                    <strong>Permitir toque</strong>                                    |                                                                                                                  Habilitar ou desabilitar a tela touch no dispositivo.                                                                                                                  |
+|                               <strong>Permitir rotação da tela</strong>                               |                                                                                                Habilitar ou desabilitar a alteração da orientação da tela quando o usuário gira o dispositivo.                                                                                                 |
+|                               <strong>Permitir botões de volume</strong>                                |                                                                                                           Habilitar ou desabilitar o uso dos botões de volume no dispositivo.                                                                                                           |
+|                                <strong>Permitir alternador de toque</strong>                                |                                                                                                             Habilitar ou desabilitar a opção de mudar toque (mudo) no dispositivo.                                                                                                              |
+|                          <strong>Permitir botão para ligar tela em modo de suspensão</strong>                           |                                                                                                           Habilitar ou desabilitar o botão de ativação e suspensão da tela no dispositivo.                                                                                                            |
+|                                  <strong>Permitir bloqueio automático</strong>                                  |                                                                                                                 Habilitar ou desabilitar o bloqueio automático do dispositivo.                                                                                                                 |
+|                                 <strong>Habilitar o áudio mono</strong>                                 |                                                                                                      Habilitar ou desabilitar a configuração de acessibilidade <strong>Áudio mono</strong>.                                                                                                      |
+|                                 <strong>Habilitar narração</strong>                                 |                                                                               Habilitar ou desabilitar a configuração de acessibilidade <strong>Narração</strong>, que lê em voz alta o texto na tela do dispositivo.                                                                                |
+|                           <strong>Habilitar ajustes de narração</strong>                           |                                                                  Habilitar ou desabilitar os ajustes de narração que permitem que o usuário ajuste a função Narração (por exemplo, a rapidez que o texto na tela é lido em voz alta).                                                                   |
+|                                    <strong>Habilitar o zoom</strong>                                    |                                                                         Habilitar ou desabilitar a configuração de acessibilidade de <strong>Zoom</strong> que permite ao usuário utilizar o toque para ampliar a tela do dispositivo de acessibilidade.                                                                         |
+|                              <strong>Habilitar ajustes de zoom</strong>                              |                                                                                                  Habilitar ou desabilitar os ajustes de zoom que permitem ao usuário ajustar a função de zoom.                                                                                                  |
+|                               <strong>Habilitar inverter cores</strong>                                |                                                                    Habilitar ou desabilitar a configuração de acessibilidade <strong>Inverter Cores</strong> que ajusta a exibição para ajudar os usuários com deficiências visuais.                                                                    |
+|                         <strong>Habilitar ajustes de inverter cores</strong>                          |                                                                                         Habilitar ou desabilitar ajustes de inverter ajustes que permite ao usuário ajustar a função inverter cores.                                                                                         |
+|                              <strong>Habilitar toque auxiliar</strong>                               |                                                     Habilitar ou desabilitar a configuração de acessibilidade <strong>Toque auxiliar</strong>, que ajuda o usuário a executar gestos na tela que podem ser difíceis de executar.                                                     |
+|                        <strong>Habilitar ajustes de toque auxiliar</strong>                         |                                                                                       Habilitar ou desabilitar os ajustes de toque auxiliar que permitem ao usuário ajustar a função de toque auxiliar.                                                                                       |
+|                              <strong>Habilitar a seleção de fala</strong>                              |                                                                        Habilitar ou desabilitar as configurações de acessibilidade <strong>Seleção de fala</strong> que podem ler em voz alta o texto que o usuário selecionar.                                                                         |
+
 > [!NOTE]
 > As observações a seguir aplicam-se às configurações do modo de quiosque para dispositivos iOS:
 >
@@ -349,8 +352,6 @@ Use as informações nesta lista para identificar o nome, o editor e a ID do pac
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

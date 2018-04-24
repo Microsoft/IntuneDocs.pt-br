@@ -1,28 +1,28 @@
 ---
-title: "Solucionar problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs"
-description: "Problemas comuns com perfis de dispositivo, incluindo alterações de perfil não aplicadas a alguns usuários ou dispositivos, o tempo que leva para que uma nova política seja enviada por push para dispositivos, quais configurações são aplicadas quando há várias políticas, o que acontece quando um perfil é excluído ou removido e muito mais, com o Microsoft Intune no Portal do Azure"
-keywords: 
+title: Solucionar problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
+description: Problemas comuns com perfis de dispositivo, incluindo alterações de perfil não aplicadas a alguns usuários ou dispositivos, o tempo que leva para que uma nova política seja enviada por push para dispositivos, quais configurações são aplicadas quando há várias políticas, o que acontece quando um perfil é excluído ou removido e muito mais, com o Microsoft Intune no Portal do Azure
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comuns e resoluções com perfis de dispositivo no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Solucionar problemas comuns usando perfis de dispositivo do Intune.
 

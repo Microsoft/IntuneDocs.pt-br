@@ -1,27 +1,27 @@
 ---
-title: "Configurações de Wi-Fi do Microsoft Intune para dispositivos que executam o macOS"
-titleSuffix: 
-description: "Conheça as definições do Intune que você pode usar para configurar as conexões Wi-Fi em dispositivos que executam macOS."
-keywords: 
+title: Configurações de Wi-Fi do Microsoft Intune para dispositivos que executam o macOS
+titleSuffix: ''
+description: Conheça as definições do Intune que você pode usar para configurar as conexões Wi-Fi em dispositivos que executam macOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25cc8cd550567d6edc63f1cab416bdb7d978eb52
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6f0feb00949375cf65428d061af81813cfcd5249
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Configurações de Wi-Fi para dispositivos macOS no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações de Wi-Fi que você pode definir no Microsoft Intune para dispositivos que executam macOS.
 
@@ -34,7 +34,7 @@ Este artigo mostra as configurações de Wi-Fi que você pode definir no Microso
 - **Configurações de proxy** – Escolha dentre:
     - **Nenhum** – Nenhuma configuração de proxy é definida.
     - **Manual** – Insira o **Endereço do servidor proxy** (como um endereço IP) e seu **Número da porta** associado.
-    - **Automático** – Use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com) que contém o arquivo de configuração.
+    - **Automático** – Use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com**) que contém o arquivo de configuração.
 
 ## <a name="wi-fi-settings-for-basic-profiles-only"></a>Configurações Wi-Fi apenas para perfis básicos
 
@@ -73,7 +73,8 @@ Este artigo mostra as configurações de Wi-Fi que você pode definir no Microso
 #### <a name="client-authentication"></a>Autenticação do Cliente
 
 
-|Nome da configuração|Mais informações|Usar quando|
-|--------------|-------------|----------|
-|**Certificado de cliente para autenticação de cliente (Certificado de identidade)**|Escolha o perfil de certificado SCEP ou PKCS usado para autenticar a conexão.|O tipo de EAP é **EAP-TLS**|
-|**Método de autenticação**|Selecione o método de autenticação para a conexão:<br>- **Certificados** para selecionar o certificado cliente SCEP ou PKCS que é o certificado de identidade apresentado ao servidor.<br><br>- **Nome de Usuário e Senha** para especificar um método de autenticação diferente. <br><br>Se você selecionou **Nome de Usuário e Senha**, configure:<br><br>-  **Método não EAP (identidade interna)**, em seguida, selecione como você autenticará a conexão de:<br>- **Nenhum**<br>- **Senha não criptografada (PAP)**<br>- **Protocolo CHAP**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Versão 2 (MS-CHAP v2)**<br>As opções disponíveis dependem do tipo de EAP selecionado.<br><br>**e**<br><br>- **Privacidade de identidade (identidade externa)** – Especifique o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.|O tipo de EAP é **EAP-TTLS** ou **PEAP**|
+|                                     Nome da configuração                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Mais informações                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            Usar quando                            |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <strong>Certificado de cliente para autenticação de cliente (Certificado de identidade)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Escolha o perfil de certificado SCEP ou PKCS usado para autenticar a conexão.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              O tipo de EAP é <strong>EAP-TLS</strong>              |
+|                        <strong>Método de autenticação</strong>                        | Selecione o método de autenticação para a conexão:<br>- <strong>Certificados</strong> para selecionar o certificado cliente SCEP ou PKCS que é o certificado de identidade apresentado ao servidor.<br><br>- <strong>Nome de Usuário e Senha</strong> para especificar um método de autenticação diferente. <br><br>Se você selecionou <strong>Nome de Usuário e Senha</strong>, configure:<br><br>-  <strong>Método não EAP (identidade interna)</strong>, em seguida, selecione como você autenticará a conexão de:<br>- <strong>Nenhum</strong><br>- <strong>Senha não criptografada (PAP)</strong><br>- <strong>Protocolo CHAP</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP Versão 2 (MS-CHAP v2)</strong><br>As opções disponíveis dependem do tipo de EAP selecionado.<br><br><strong>e</strong><br><br>- <strong>Privacidade de identidade (identidade externa)</strong> – Especifique o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro. | O tipo de EAP é <strong>EAP-TTLS</strong> ou <strong>PEAP</strong> |
+

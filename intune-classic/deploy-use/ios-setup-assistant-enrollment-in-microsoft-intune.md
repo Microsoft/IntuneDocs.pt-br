@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Registrar dispositivos iOS com o Apple Configurator usando o Assistente de Configuração
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune dá suporte ao registro de dispositivos iOS corporativos usando o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução em um computador Mac. Esse processo redefine o dispositivo para as configurações de fábrica e o prepara para executar o Assistente de Configuração instalando as políticas da empresa para o novo usuário do dispositivo.
 
@@ -59,7 +59,7 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
 1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), acesse **Política** &gt; **Registro do Dispositivo Corporativo** e selecione **Adicionar**.
 
-  ![Criar perfil de registro do dispositivo](../media/pol-sa-corp-enroll.png)
+   ![Criar perfil de registro do dispositivo](../media/pol-sa-corp-enroll.png)
 
 2. Insira os detalhes para os perfis de dispositivo:
 
@@ -80,7 +80,7 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
    -  **Programa de Registro de Dispositivo**&mdash;O DEP (Programa de Registro de Dispositivo) da Apple não pode ser usado com o registro do Assistente de Configuração. Verifique se a alternância está definida como **desligado**.
 
-3.  Clique em **Salvar Perfil** para adicionar o perfil.
+3. Clique em **Salvar Perfil** para adicionar o perfil.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Adicionar dispositivos iOS para registro com o Assistente de Configuração
 
@@ -90,29 +90,29 @@ Um perfil de registro de dispositivos define as configurações aplicadas a um g
 
    ![Caixa de diálogo Adicionar dispositivos](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Carregar um arquivo CSV contendo números de série**&mdash;Crie uma lista de valores separados por vírgula (.csv) de duas colunas, sem cabeçalho, com limite de 5.000 dispositivos ou 5 MB por arquivo csv.
+   - **Carregar um arquivo CSV contendo números de série**&mdash;Crie uma lista de valores separados por vírgula (.csv) de duas colunas, sem cabeçalho, com limite de 5.000 dispositivos ou 5 MB por arquivo csv.
 
-    |||
-    |-|-|
-    |&lt;Nº de série 1&gt;|&lt;Detalhes do dispositivo nº 1&gt;|
-    |&lt;Nº de série 2&gt;|&lt;Detalhes do dispositivo nº 2&gt;|
+     |||
+     |-|-|
+     |&lt;Nº de série 1&gt;|&lt;Detalhes do dispositivo nº 1&gt;|
+     |&lt;Nº de série 2&gt;|&lt;Detalhes do dispositivo nº 2&gt;|
 
-  Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
+   Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Adicionar manualmente os detalhes do dispositivo**&mdash;Insira o número de série e quaisquer observações ou detalhes de até 15 dispositivos.
+   -  **Adicionar manualmente os detalhes do dispositivo**&mdash;Insira o número de série e quaisquer observações ou detalhes de até 15 dispositivos.
 
-  No painel **Examinar Dispositivos**, você pode confirmar os números de série. Você também pode decidir se deseja substituir os **Detalhes** para números de série que estão sendo importados novamente ou você pode desmarcar a caixa **Substituir** para preservar os detalhes atuais.
+   No painel **Examinar Dispositivos**, você pode confirmar os números de série. Você também pode decidir se deseja substituir os **Detalhes** para números de série que estão sendo importados novamente ou você pode desmarcar a caixa **Substituir** para preservar os detalhes atuais.
 
-  > [!NOTE]
-  > No console do administrador do Intune existente, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes para números de série individuais. No novo Portal do Azure, você só poderá substituir os detalhes de todos os números de série ou ignorar os novos detalhes para todos os números de série.
+   > [!NOTE]
+   > No console do administrador do Intune existente, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes para números de série individuais. No novo Portal do Azure, você só poderá substituir os detalhes de todos os números de série ou ignorar os novos detalhes para todos os números de série.
 
-  > [!NOTE]
-  > Se, posteriormente, você desejar remover dispositivos corporativos do gerenciamento do Intune, será necessário ir até **Por número de série do iOS** em **Dispositivos corporativos pré-registrados** e remover o número de série do dispositivo do Intune para desabilitar o registro do dispositivo. Se o Intune executar um procedimento de recuperação de desastre quando ou próximo à época em que você remover os números de série, você precisará confirmar que apenas os números de série de dispositivos ativos estão presentes nesse grupo.
+   > [!NOTE]
+   > Se, posteriormente, você desejar remover dispositivos corporativos do gerenciamento do Intune, será necessário ir até **Por número de série do iOS** em **Dispositivos corporativos pré-registrados** e remover o número de série do dispositivo do Intune para desabilitar o registro do dispositivo. Se o Intune executar um procedimento de recuperação de desastre quando ou próximo à época em que você remover os números de série, você precisará confirmar que apenas os números de série de dispositivos ativos estão presentes nesse grupo.
 
 2. Escolha **Avançar**.
 
@@ -137,7 +137,7 @@ Especifique o perfil para atribuir a dispositivos adicionados na lista de perfis
 
 Dispositivos iOS são conectados ao computador Mac e registrados para o gerenciamento de dispositivo móvel.
 
-1.  Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
+1. Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
 
    > [!WARNING]
    > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você conectar o dispositivo.
@@ -148,12 +148,12 @@ Dispositivos iOS são conectados ao computador Mac e registrados para o gerencia
 
    Você pode desconsiderar com segurança um aviso indicando "URL do servidor não verificada". Para continuar, clique em **Avançar** até que o assistente seja concluído.
 
-4.  Conecte os dispositivos móveis iOS ao computador Mac com um adaptador USB.
+4. Conecte os dispositivos móveis iOS ao computador Mac com um adaptador USB.
 
-    > [!WARNING]
-    > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você iniciar o Assistente de Configuração.
+   > [!WARNING]
+   > Os dispositivos serão redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você iniciar o Assistente de Configuração.
 
-5.  Selecione **Preparar**. No painel Preparar o Dispositivo iOS, selecione **Manual** e escolha **Avançar**.
+5. Selecione **Preparar**. No painel Preparar o Dispositivo iOS, selecione **Manual** e escolha **Avançar**.
 
 6. No painel Registrar no Servidor MDM, selecione o nome do servidor que você criou e escolha **Avançar**.
 

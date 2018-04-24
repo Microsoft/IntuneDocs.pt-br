@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01928439f3a4d9280036b2e1a9576175ef425050
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: 67a5f60e0877ebc8994ed7d3191a81f51d19c40a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Remover um usuário de um dispositivo iOS compartilhado
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A ação **Remover usuário** exclui um usuário escolhido do cache local em um dispositivo iPad compartilhado. O dispositivo iPad deve ser configurado para gerenciar o aplicativo Sala de aula do iOS usando um [perfil de educação iOS](education-settings-configure-ios.md). 
 

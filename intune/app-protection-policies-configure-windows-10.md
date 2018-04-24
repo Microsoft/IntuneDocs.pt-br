@@ -15,15 +15,15 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a394b3b218613459d993b84fcb0ea7a37d4ac4dd
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 16c579bb4eb475bc92260e55f2e47335efc73e03
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Prepare-se para configurar as políticas de proteção do aplicativo para Windows 10 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Habilite o MAM (gerenciamento de aplicativo móvel) para Windows 10 configurando o provedor de MAM no Microsoft Azure AD. Essa configuração permite definir o estado do registro ao criar uma nova política de WIP (Proteção de Informações do Windows) com o Intune. O estado do registro pode ser MAM ou MDM (gerenciamento de dispositivo móvel).
 

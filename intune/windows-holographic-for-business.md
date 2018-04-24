@@ -1,55 +1,91 @@
 ---
-title: Gerenciar o Windows Holographic com o Microsoft Intune
-titleSuffix: ''
-description: Saiba como o Microsoft Intune é compatível com dispositivos que executam o Windows Holographic for Business.
+title: Gerenciar dispositivos do Windows Holographic com o Microsoft Intune – Azure | Microsoft Docs
+description: Usando o Microsoft Intune, você pode concluir diferentes tarefas em dispositivos que executam o Windows Holographic for Business, incluindo configurar o Portal da Empresa, crie uma política de conformidade, personalizar as configurações do OMA-URI, implantar aplicativos, categorizar dispositivos em grupos, criar perfis, restringir dispositivos, habilitar atualizações de software, definir termos e condições, definir configurações de VPN e Wi-Fi e usar o Hello para Empresas.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 2/1/2018
+ms.date: 4/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd39b0a9a03d77a54ac71c47c5df67e9beacd9d
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="manage-devices-running-windows-holographic-with-microsoft-intune"></a>Gerenciar dispositivos que executam o Windows Holographic com o Microsoft Intune
-
+# <a name="customize-devices-running-windows-holographic-with-intune"></a>Personalizar os dispositivos que executam o Windows Holographic com o Intune
 
 O Microsoft Intune é compatível com dispositivos que executam o Windows Holographic for Business, como o [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
 
-Para gerenciar dispositivos que executam o Windows Holographic com o Microsoft Intune, você deve criar um perfil de Atualização de Edição para atualizar os dispositivos do Windows Holographic para o Windows Holographic for Business. Para o Microsoft HoloLens, você pode adquirir o Commercial Suite para obter a licença necessária para a atualização.
+Para gerenciar dispositivos que executam o Windows Holographic com o Microsoft Intune, você deve criar um perfil de Atualização da Edição. Este perfil de atualização realiza o upgrade de dispositivos do Windows Holographic para o Windows Holographic for Business. Para o Microsoft HoloLens, você pode adquirir o Commercial Suite para obter a licença necessária para a atualização. Para obter mais informações, consulte [Atualizar dispositivos que executam o Windows Holographic para o Windows Holographic for Business](holographic-upgrade.md).
 
-Para obter mais informações, consulte [Atualizar dispositivos que executam o Windows Holographic para o Windows Holographic for Business](holographic-upgrade.md).
+Para ajudar a gerenciar e personalizar seus dispositivos que executam o Windows Holographic for Business, você pode usar as tarefas neste artigo. Por exemplo, você pode gerenciar atualizações de software, definir as configurações de VPN e muito mais.
 
-Para obter informações sobre a compatibilidade do Microsoft Intune com o Windows Holographic for Business, consulte os seguintes tópicos:
+## <a name="company-portal"></a>Portal da Empresa
+**[Configurar o aplicativo do Portal da Empresa](company-portal-app.md)**
 
-## <a name="device-restrictions"></a>Restrições de dispositivo
-- [Configurações de restrição de dispositivo do Windows Holographic for Business no Microsoft Intune](device-restrictions-windows-holographic.md)
-
-## <a name="custom-settings"></a>Configurações Personalizadas
-- [Configurações de dispositivo personalizadas para dispositivos do Windows Holographic for Business no Microsoft Intune](custom-settings-windows-holographic.md)
+O Intune inclui o Portal da Empresa, que é o ponto do qual os usuários acessam dados da empresa, registram dispositivos, instalam aplicativos, entram em contato com o departamento de TI e muito mais. Você pode personalizar o aplicativo Portal da Empresa para seus dispositivos que executam o Windows Holographic for Business.
 
 ## <a name="compliance-policy"></a>Política de conformidade
-- [Como criar uma política de conformidade de dispositivo para dispositivos Windows no Intune](compliance-policy-create-windows.md)
+**[Criar uma política de conformidade do dispositivo](compliance-policy-create-windows.md)**
+
+Políticas de conformidade são regras e configurações que os dispositivos devem cumprir para serem compatíveis. Você pode usar essas políticas com acesso condicional para bloquear o acesso aos recursos da empresa para dispositivos não em conformidade. No Intune, você pode criar políticas de conformidade para permitir ou bloquear o acesso para dispositivos que executam o Windows Holographic for Business. Por exemplo, você pode criar uma política que exige que o BitLocker seja habilitado.
+
+Consulte também **[Introdução às políticas de conformidade](device-compliance-get-started.md)**.
+
+## <a name="deploy-apps"></a>Implantar aplicativos
+**[Adicionar aplicativos ao Intune](apps-add.md)**
+
+Usando o Intune, você pode adicionar aplicativos a dispositivos que executam o Windows Holographic for Business. Há várias maneiras de implantar aplicativos, incluindo:
+
+- [Adicionar aplicativos da Microsoft Store](store-apps-windows.md)
+- [Adicionar aplicativos que você criar](lob-apps-windows.md)
+- [Atribuir aplicativos a grupos](apps-deploy.md)
+
+## <a name="device-categories-and-groups"></a>Grupos e categorias de dispositivo
+**[Categorizar os dispositivos em grupos](device-group-mapping.md)**
+
+Usando o Intune, você pode criar categorias de dispositivo para adicionar automaticamente os dispositivos a grupos com base em categorias que você criar, como Vendas, Contabilidade, Recursos Humanos e assim por diante. A ideia é tornar mais fácil gerenciar seus dispositivos que executam o Windows Holographic for Business.
+
+## <a name="device-configuration-profiles"></a>Perfis de configuração do dispositivo 
+**[Introdução aos perfis de configuração](device-profiles.md), e [criar seu próprio perfil](device-profile-create.md)**
+
+O Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos na sua organização. Essas configurações e recursos são gerenciados com o uso de perfis. Por exemplo, você pode criar um perfil que habilite a Cortana, ou usar a Tela Inteligente do Windows Defender em seus dispositivos que executam o Windows Holographic for Business.
+
+Em seus perfis, você pode usar o OMA-URI para personalizar algumas configurações, criar restrições de dispositivo e configurar uma VPN (rede virtual privada) e Wi-Fi.
+
+#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Configurações de dispositivo personalizadas](custom-settings-windows-holographic.md)
+
+Para definir configurações do OMA-URI (Open Mobile Alliance Uniform Resource Identifier), você pode criar um perfil personalizado do Intune. Use as configurações de OMA-URI para controlar recursos diferentes em seus dispositivos Windows Holographic for Business, como habilitação de VPN ou verificar se há atualizações no Microsoft Update.
+
+#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Restrições de dispositivo](device-restrictions-windows-holographic.md)
+
+Restrições de dispositivo permitem controlar diferentes configurações e recursos em seus dispositivos, incluindo exigir uma senha, instalar aplicativos da [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), habilitar Bluetooth e muito mais. Essas restrições são criadas em um perfil do Intune. Esse perfil pode ser aplicado a vários dispositivos que executam o Windows Holographic for Business.
+
+#### <a name="configure-vpnvpn-settings-configuremd"></a>[Configurar VPN](vpn-settings-configure.md)
+
+Redes virtuais privadas (VPN) oferecem aos usuários acesso remoto seguro à rede da empresa. No Intune, é possível criar um perfil de VPN que inclua configurações específicas para seus dispositivos que executam o Windows Holographic for Business. Por exemplo, você pode criar um perfil VPN para que todos os dispositivos do Windows Holographic for Business usem o Citrix VPN como o tipo de conexão.
+
+#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Configurar Wi-Fi](wi-fi-settings-configure.md)
+
+Você também pode criar um perfil do Wi-Fi no Intune para atribuir configurações de rede sem fio aos seus dispositivos do Windows Holographic for Business. Quando você atribui um perfil de Wi-Fi, seus usuários finais obtêm acesso à rede corporativa sem qualquer configuração de rede. Por exemplo, você pode criar uma rede Wi-Fi dedicada apenas aos seus dispositivos do Windows Holographic for Business.
 
 ## <a name="software-updates"></a>Atualizações de software
-- [Gerenciar atualizações de software](windows-update-for-business-configure.md)
+**[Gerenciar atualizações de software](windows-update-for-business-configure.md)**
+
+O Intune inclui um recurso chamado anéis de atualização para dispositivos Windows 10. Esses anéis de atualização incluem um grupo de configurações que determinam como as atualizações são instaladas. Por exemplo, você pode criar uma janela de manutenção para instalar as atualizações ou optar por reiniciar depois que as atualizações forem instaladas. Um anel de atualização pode ser aplicado a vários dispositivos que executam o Windows Holographic for Business.
+
+## <a name="terms-and-conditions"></a>Termos e condições
+**[Gerenciar os termos e condições da sua empresa para acesso do usuário](terms-and-conditions-create.md)**
+
+Antes de os usuários poderem registrar dispositivos e acessar os aplicativos da empresa, incluindo email, você pode exigir que eles aceitem os termos e condições da sua empresa. No Intune, você pode definir como os termos e condições são mostrados no Portal da Empresa e também atribuir estes termos e condições a dispositivos que executam o Windows Holographic for Business.
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para Empresas
-- [Usar Windows Hello para Empresas](windows-hello.md)
+**[Usar o Windows Hello para Empresas](windows-hello.md)**
 
-## <a name="vpn-settings"></a>Configurações de VPN
-- [Como definir configurações de VPN no Microsoft Intune](vpn-settings-configure.md)
-
-## <a name="wi-fi-settings"></a>Configurações de Wi-Fi
-- [Como definir configurações de Wi-Fi no Microsoft Intune](wi-fi-settings-configure.md) 
- 
-
-
+O Hello para Empresas é um método de conexão alternativo que usa uma conta do Azure Active Directory para substituir uma senha, um cartão inteligente ou um cartão inteligente virtual. Com o Hello para Empresas, os dispositivos Windows Holographic for Business podem entrar com um PIN com um tamanho mínimo definido por você.

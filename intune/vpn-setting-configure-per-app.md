@@ -1,25 +1,25 @@
 ---
 title: Configurar a VPN por aplicativo no Microsoft Intune para dispositivos iOS
-titleSuffix: 
-description: "Especifique quais aplicativos gerenciados poderão usar a VPN (rede virtual privada) em dispositivos iOS gerenciados pelo Intune."
-keywords: 
+titleSuffix: ''
+description: Especifique quais aplicativos gerenciados poderão usar a VPN (rede virtual privada) em dispositivos iOS gerenciados pelo Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar VPN (rede virtual privada) por aplicativo no Intune para dispositivos iOS
 
@@ -67,7 +67,7 @@ Importe o certificado raiz do servidor da VPN emitido pela AC em um perfil criad
 4. Clique no ícone de pasta e navegue até seu certificado da VPN (arquivo .cer) que você exportou do console de administração da VPN. Clique em **OK**.
 5. Clique em **Criar**.
 
-    ![Criar um perfil de certificado confiável](media\vpn-per-app-create-trusted-cert.png)
+    ![Criar um perfil de certificado confiável](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>Criar um perfil de certificado SCEP
 
@@ -94,7 +94,7 @@ O perfil de certificado raiz confiável permite que o iOS confie automaticamente
 14. Clique em **OK**.
 15. Clique em **Criar**.
 
-    ![Criar um perfil de certificado SCEP](media\vpn-per-app-create-scep-cert.png)
+    ![Criar um perfil de certificado SCEP](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Criar um perfil de VPN por Aplicativo
 
@@ -123,7 +123,7 @@ O perfil da VPN contém o certificado SCEP que leva as credenciais do cliente, a
 6. Clique em **OK**.
 7. Clique em **Criar**.
 
-    ![Criar um perfil de VPN por Aplicativo](media\vpn-per-app-create-vpn-profile.png)
+    ![Criar um perfil de VPN por Aplicativo](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Associar um aplicativo ao perfil da VPN
@@ -146,7 +146,7 @@ Depois de adicionar o perfil da VPN, associe o aplicativo e o grupo do Microsoft
 
 9. Clique em **OK** e em **Salvar**.
 
-    ![Associar um aplicativo à VPN](media\vpn-per-app-app-to-vpn.png)
+    ![Associar um aplicativo à VPN](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>Verifique a conexão no dispositivo iOS
 

@@ -1,31 +1,30 @@
 ---
-title: "O que é gerenciamento de aplicativo no Microsoft Intune"
-titlesuffix: 
-description: "Conheça os fundamentos do gerenciamento de aplicativos com o Microsoft Intune."
-keywords: 
+title: O que é gerenciamento de aplicativo no Microsoft Intune
+titlesuffix: ''
+description: Conheça os fundamentos do gerenciamento de aplicativos com o Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune permite que você, administrador de TI, gerencie os aplicativos móveis que os colaboradores da sua empresa usam. Essa funcionalidade está além do gerenciamento de dispositivos e proteção de dados. Como parte dessa funcionalidade, uma das prioridades é certificar-se de que os usuários finais tenham acesso aos aplicativos que precisam para realizar o trabalho. Isso pode ser um desafio porque:
 - Há uma ampla variedade de plataformas de dispositivo e tipos de aplicativos.
@@ -73,11 +72,11 @@ Encontre a maioria das tarefas relacionadas ao aplicativo na carga de trabalho *
 As informações abaixo correspondem às opções disponíveis na folha **Aplicativos móveis**.
 
 ### <a name="manage"></a>Gerenciar
-- **Aplicativos** – selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos que sua força de trabalho usa. Para obter mais informações, consulte os artigos a seguir.
+- **Aplicativos** – selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos que sua força de trabalho usa. Para obter mais informações, consulte os seguintes artigos:
     - [Adicionar aplicativos](apps-add.md)
     - [Atribuir aplicativos](apps-deploy.md)
     - [Monitorar aplicativos](apps-monitor.md)
-- **Políticas de configuração de aplicativo** – as políticas de configuração de aplicativo permitem que você forneça configurações que podem ser necessárias quando um usuário executa um aplicativo. Para obter mais informações, consulte os artigos a seguir.
+- **Políticas de configuração de aplicativo** – as políticas de configuração de aplicativo permitem que você forneça configurações que podem ser necessárias quando um usuário executa um aplicativo. Para obter mais informações, consulte os seguintes artigos:
     - [Políticas de configuração de aplicativo para o Intune](app-configuration-policies-overview.md)
         - [Políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md)
         - [Políticas de configuração de aplicativo do Android](app-configuration-policies-use-android.md)
@@ -91,7 +90,7 @@ As informações abaixo correspondem às opções disponíveis na folha **Aplica
 Para obter mais detalhes, consulte [Gerenciar aplicativos](app-management.md).
 
 ### <a name="monitor"></a>Monitor
-- **Licenças de aplicativo** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte os artigos a seguir.
+- **Licenças de aplicativo** – exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte os seguintes artigos:
     - [Aplicativos do VPP (Volume Purchase Program) do iOS](vpp-apps-ios.md)
     - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md)
 - **Aplicativos Descobertos** – mostra todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.

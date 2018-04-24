@@ -1,27 +1,27 @@
 ---
 title: Usando seu dispositivo Android com o Intune | Microsoft Docs
-description: "Lista de links para tarefas que os usuários finais podem realizar em seu dispositivo móvel Android quando o dispositivo é registrado no Intune"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Lista de links para tarefas que os usuários finais podem realizar em seu dispositivo móvel Android quando o dispositivo é registrado no Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 09992912c439e639f7410ea93a95f0c52ed9a22d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-android-device-with-intune"></a>Usando seu dispositivo Android com o Intune
 
@@ -44,11 +44,11 @@ Atualmente, o Intune dá suporte ao Android 4.4 e posterior. Isso inclui Samsung
 - [Definir o PIN ou senha](set-your-pin-or-password-android.md)
 - [Instalar a VPN (rede privada virtual) da sua empresa](install-your-companys-virtual-private-network-VPN-android.md)
 - [Definir o período antes que seu dispositivo seja bloqueado](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Redefinir (apagar) um dispositivo perdido ou roubado](reset-erase-your-device-cpwebsite.md)
 - [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Cancelar o registro do dispositivo no Intune](unenroll-your-device-from-intune-android.md)
 - [Cancelar o registro do dispositivo se você tiver recusado os Termos de Uso](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [O que acontece quando você cancela o registro do dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [O que acontece quando você redefine o dispositivo Android usando o aplicativo de Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

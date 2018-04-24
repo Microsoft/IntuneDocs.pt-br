@@ -1,29 +1,28 @@
 ---
-title: "Solicitar e fornecer assistência remota para computadores Windows"
-description: "Descreve as etapas administrativas do usuário final e do administrador de TI para fornecer assistência remota para áreas de trabalho do Windows gerenciadas como computadores e iniciar um computador remotamente."
-keywords: 
+title: Solicitar e fornecer assistência remota para computadores Windows
+description: Descreve as etapas administrativas do usuário final e do administrador de TI para fornecer assistência remota para áreas de trabalho do Windows gerenciadas como computadores e iniciar um computador remotamente.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar e fornecer assistência remota para computadores Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune.
 
@@ -60,7 +59,7 @@ Antes de começar a estabelecer e responder às solicitações de assistência r
 ## <a name="respond-to-a-remote-assistance-request"></a>Responder a uma solicitação de assistência remota
 
 1. Quando um usuário envia uma solicitação de assistência remota, você poderá exibi-la no espaço de trabalho **Alertas**, em **Monitoramento** > **Assistência Remota**. Por exemplo:
-> ![Captura de tela de uma solicitação de assistência remota](./media/team-viewer.png)
+   > ![Captura de tela de uma solicitação de assistência remota](./media/team-viewer.png)
 
 <br>Se uma solicitação não for atendida por mais de 4 horas, ela será removida.
 2. Para aceitar a solicitação, escolha **Aprovar solicitação e iniciar Assistência Remota**.

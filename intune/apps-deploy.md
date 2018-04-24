@@ -1,29 +1,29 @@
 ---
 title: Como atribuir aplicativos a grupos no Microsoft Intune
-titlesuffix: 
-description: "Depois de adicionar um aplicativo ao Microsoft Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos."
-keywords: 
+titlesuffix: ''
+description: Depois de adicionar um aplicativo ao Microsoft Intune, ele deverá ser atribuído a grupos de usuários ou dispositivos.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicativos a grupos com o Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Depois de adicionar um aplicativo no Microsoft Intune, é possível atribuí-lo a usuários e dispositivos.
 
@@ -51,26 +51,26 @@ Aplicativos podem ser atribuídos aos dispositivos sejam eles gerenciados pelo I
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Na folha **Intune**, escolha **Aplicativos móveis**.
-1. Na carga de trabalho **Aplicativos móveis**, escolha **Aplicativos** na seção **Gerenciar**.
-2. Na folha da lista de aplicativos, escolha o aplicativo que você deseja atribuir.
-3. Na folha **Visão geral** específica do aplicativo, escolha **Atribuições** na seção **Gerenciar**.
-4. Escolha **Adicionar Grupo** para exibir a folha **Adicionar grupo** relacionada ao aplicativo.
-5. Para o aplicativo específico, escolha um **tipo de atribuição** para o aplicativo como:
-    - **Disponível para dispositivos registrados** – Os usuários instalam o aplicativo no site ou aplicativo Portal da Empresa.
-    - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune. Observe que o tipo **Aplicativo Android for Work** não é compatível com essa opção. 
-    - **Obrigatório** – O aplicativo é instalado nos dispositivos dos grupos selecionados.
-    - **Desinstalar** – O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
+4. Na carga de trabalho **Aplicativos móveis**, escolha **Aplicativos** na seção **Gerenciar**.
+5. Na folha da lista de aplicativos, escolha o aplicativo que você deseja atribuir.
+6. Na folha **Visão geral** específica do aplicativo, escolha **Atribuições** na seção **Gerenciar**.
+7. Escolha **Adicionar Grupo** para exibir a folha **Adicionar grupo** relacionada ao aplicativo.
+8. Para o aplicativo específico, escolha um **tipo de atribuição** para o aplicativo como:
+   - **Disponível para dispositivos registrados** – Os usuários instalam o aplicativo no site ou aplicativo Portal da Empresa.
+   - **Disponível com ou sem registro** – Atribua este aplicativo a grupos de usuários cujos dispositivos não são registrados com o Intune. Observe que o tipo **Aplicativo Android for Work** não é compatível com essa opção. 
+   - **Obrigatório** – O aplicativo é instalado nos dispositivos dos grupos selecionados.
+   - **Desinstalar** – O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
 
-    > [!NOTE]
-    > **Apenas para aplicativos iOS** – se você tiver criado perfil da VPN do iOS que contém configurações de VPN por aplicativo, você poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](vpn-settings-ios.md).
+     > [!NOTE]
+     > **Apenas para aplicativos iOS** – se você tiver criado perfil da VPN do iOS que contém configurações de VPN por aplicativo, você poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](vpn-settings-ios.md).
 
-6. Selecione **Grupos Incluídos** para escolher os grupos de usuários que serão afetados por esta atribuição de aplicativo.
-7. Clique em **Selecionar** depois de selecionar um ou mais grupos a serem incluídos.
-8. Clique em **OK** na folha **Atribuir** para concluir a seleção do grupo incluído.
-9. Clique em **Excluir Grupos** se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo.
-10. Se você optar por excluir algum grupo, clique em **Selecionar** na folha **Selecionar grupos**.
-11. Clique em **OK** na folha **Adicionar grupo**.
-12. Clique em **Salvar** na folha **Atribuições** de aplicativo para salvar suas atribuições.
+9. Selecione **Grupos Incluídos** para escolher os grupos de usuários que serão afetados por esta atribuição de aplicativo.
+10. Clique em **Selecionar** depois de selecionar um ou mais grupos a serem incluídos.
+11. Clique em **OK** na folha **Atribuir** para concluir a seleção do grupo incluído.
+12. Clique em **Excluir Grupos** se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo.
+13. Se você optar por excluir algum grupo, clique em **Selecionar** na folha **Selecionar grupos**.
+14. Clique em **OK** na folha **Adicionar grupo**.
+15. Clique em **Salvar** na folha **Atribuições** de aplicativo para salvar suas atribuições.
 
 Agora o aplicativo foi atribuído ao grupo selecionado. Para obter mais informações de como incluir e excluir atribuições de aplicativo, confira [Incluir e excluir atribuições de aplicativo](apps-inc-exl-assignments.md).
 

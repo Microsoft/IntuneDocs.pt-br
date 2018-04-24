@@ -1,27 +1,27 @@
 ---
 title: Como entrar no aplicativo do Portal da Empresa | Microsoft Docs
-description: "Veja como entrar no aplicativo Portal da Empresa em várias plataformas."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Veja como entrar no aplicativo Portal da Empresa em várias plataformas.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c4ae7373627c914b89629464c53240c8b07a28df
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 84f8e70d8321ca27d689d13472b69007a1d6c186
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Como faço para entrar no aplicativo do Portal da Empresa? <!--User Story 1132123-->
 
@@ -36,21 +36,21 @@ Mesmo que as imagens a seguir destinem-se ao iOS, o processo é praticamente id�
 
 1. Abra o aplicativo do Portal da Empresa no seu dispositivo e toque em **Entrar**.
 
-  ![A página de entrada do Portal da Empresa, com um ícone de uma pessoa na frente de uma representação gráfica de um site. Abaixo está o botão "Entrar". Um link na parte inferior leva às informações de Privacidade e Cookies da Microsoft.](/intune/media/cp_ios_aad_signin_after_1704_001.png)
+   ![A página de entrada do Portal da Empresa, com um ícone de uma pessoa na frente de uma representação gráfica de um site. Abaixo está o texto "Obter acesso aos recursos da empresa e mantê-los seguros" e o botão "Entrar". Um link na parte inferior leva às informações de Privacidade e Cookies da Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
-  Não tem o aplicativo do Portal da Empresa? Saiba como instalá-lo e baixá-lo para [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) ou [Android](install-the-company-portal-app-android.md).
+   Não tem o aplicativo do Portal da Empresa? Saiba como instalá-lo e baixá-lo para [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) ou [Android](install-the-company-portal-app-android.md).
 
-2. Insira sua **Conta corporativa ou de estudante**.
+2. Insira sua **Conta corporativa ou de estudante** e toque em **Avançar**.
 
-  ![O usuário é solicitado a fornecer somente o endereço de email em vez do email e da senha na mesma tela.](/intune/media/cp_ios_aad_signin_after_1704_002.png)
+   ![O usuário é solicitado a fornecer somente o endereço de email em vez do email e da senha na mesma tela.](/intune-user-help/media/cp_ios_aad_signin_after_1804_002.png)
 
-3. Aguarde um momento para que seu endereço de email seja aceito e insira a senha.
+3. Insira sua senha e toque em **Entrar**.
 
-  ![É solicitada a senha do usuário, depois que seu endereço de email é aceito.](/intune/media/cp_ios_aad_signin_after_1704_003.png)
+   ![É solicitada a senha do usuário, depois que seu endereço de email é aceito.](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
 4. Depois que o Portal da Empresa aceitar seu logon, você entrará e poderá começar a acessar os recursos da empresa.   
 
-  ![Depois de concluir o processo de autenticação, o aplicativo Portal da Empresa inicia a sessão, mostrando isso por meio de uma barra de carregamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+   ![Depois de concluir o processo de autenticação, o aplicativo Portal da Empresa inicia a sessão, mostrando isso por meio de uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="signing-in-with-certificate-based-authentication"></a>Entrando com autenticação baseada em certificado
 
@@ -68,26 +68,26 @@ Se você não usar uma senha para entrar nos recursos da empresa, poderá usar o
 
 1. Em vez de inserir seu endereço de email, selecione o link **Entrar de outro dispositivo** abaixo da caixa de texto do email.
 
-  ![A página de entrada do Portal da Empresa, com um ícone de uma pessoa na frente de uma representação gráfica de um site. Abaixo está o botão "Entrar". Um link na parte inferior leva às informações de Privacidade e Cookies da Microsoft.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+   ![A página de entrada do Portal da Empresa solicita o endereço de email do usuário.  Abaixo está o botão "Avançar" e um link para "Entrar de outro dispositivo". Também inclui um link para "Não consegue acessar sua conta?" Um link na parte inferior leva às informações de Privacidade e Cookies da Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. Você receberá um código avulso exclusivo para entrar no Portal da Empresa.
 
-  ![São fornecidas instruções para acessar a página aka.ms/devicelogin com uma senha exclusiva do seu computador de trabalho e, em seguida, usar o código para entrar.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+   ![São fornecidas instruções para acessar a página https://microsoft.com/devicelogin com uma senha exclusiva do seu computador de trabalho e, em seguida, para usar o código para entrar.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. No seu dispositivo, abra o navegador e acesse [https://aka.ms/devicelogin](https://aka.ms/devicelogin) para inserir o código.
+3. No seu outro dispositivo, abra o navegador e vá para [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) para inserir o código.
 
-  ![Uma imagem do navegador do usuário em seu computador de trabalho em vez de seu aplicativo Portal da Empresa. A página de "Logon do dispositivo" que é exibida, solicita aos usuários o código que receberam no aplicativo Portal da Empresa.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+   ![Uma imagem do navegador do usuário em seu computador de trabalho em vez de seu aplicativo Portal da Empresa. A página de "Logon do dispositivo" que é exibida, solicita aos usuários o código que receberam no aplicativo Portal da Empresa.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
 4. Depois que a página **Logon de Dispositivo** verificar o código, selecione __Continuar__ para permitir que o Portal da Empresa conecte-se ao outro dispositivo.
 
-  ![O usuário inseriu o código exclusivo no campo, e o site de "Logon do dispositivo" pediu uma confirmação de que o Portal da Empresa do Intune era o aplicativo correto a receber autorização para entrar.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+   ![O usuário inseriu o código exclusivo no campo, e o site de "Logon do dispositivo" pediu uma confirmação de que o Portal da Empresa do Intune era o aplicativo correto a receber autorização para entrar.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
 5. Depois que o código for verificado, você poderá fechar a janela.
 
-  ![Uma página de confirmação, informando que o usuário entrou no aplicativo Portal da Empresa em seu dispositivo, e que essa página poderá ser fechada.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+   ![Uma página de confirmação, informando que o usuário entrou no aplicativo Portal da Empresa em seu dispositivo, e que essa página poderá ser fechada.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
 6. No dispositivo original, você começará a entrar no aplicativo do Portal da Empresa.
 
-  ![Depois de concluir o processo de autenticação, o aplicativo do Portal da Empresa se conecta, indicando esse processo por meio de uma barra de carregamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+   ![Depois de concluir o processo de autenticação, o aplicativo do Portal da Empresa se conecta, indicando esse processo por meio de uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

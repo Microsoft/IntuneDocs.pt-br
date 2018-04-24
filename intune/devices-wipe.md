@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remova dispositivos por meio da redefinição de fábrica ou remova os dados da empresa
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 É possível remover dispositivos do Intune que não sejam mais necessários, que estejam sendo realocados ou que estejam ausentes. Faça isso usando as ações **Remover dados da empresa** ou **Restaurar configurações de fábrica**. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos de propriedade pessoal registrados no Intune.
 
@@ -72,7 +72,7 @@ As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|
 |Agente de gerenciamento|O perfil de gerenciamento é removido.|
 |Email|Os perfis de email provisionados por meio do Intune são removidos. O email armazenado em cache no dispositivo é excluído.|
-|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas.|
+|Outlook|Mensagens de email recebidas pelo aplicativo Microsoft Outlook para iOS são removidas. Isso requer que o aplicativo móvel do Outlook seja implantado como um aplicativo Obrigatório para usuários do iOS primeiro.|
 |Cancelamento de ingresso no Azure AD|O registro do Azure AD é removido.|
 |Contacts |Os contatos sincronizados diretamente do aplicativo com o catálogo de endereços nativos são removidos. Quaisquer contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser removidos. <br /> <br />No momento, apenas o aplicativo do Outlook é compatível.
 

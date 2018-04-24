@@ -1,27 +1,27 @@
 ---
-title: "Como definir as configurações de email do Microsoft Intune"
-titleSuffix: 
-description: "Saiba como configurar o Microsoft Intune para criar conexões com o email corporativo nos dispositivos gerenciados."
-keywords: 
+title: Como definir as configurações de email do Microsoft Intune
+titleSuffix: ''
+description: Saiba como configurar o Microsoft Intune para criar conexões com o email corporativo nos dispositivos gerenciados.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Como definir configurações de email no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Os perfis de email podem ser usados para configurar dispositivos gerenciados com as definições necessárias para se conectar e sincronizar com o email corporativo. Isso pode ajudar a garantir que as configurações sejam padronizadas em todos os seus dispositivos, bem como ajudar a reduzir as chamadas de suporte dos usuários finais que não conhecem as configurações de email corretas.
 

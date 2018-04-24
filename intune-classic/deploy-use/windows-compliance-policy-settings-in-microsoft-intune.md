@@ -1,37 +1,37 @@
 ---
-title: "Configurações da política de conformidade para dispositivos Windows"
-description: "Este tópico descreve as regras e configurações que você pode definir para uma política de conformidade para dispositivos Windows."
-keywords: 
+title: Configurações da política de conformidade para dispositivos Windows
+description: Este tópico descreve as regras e configurações que você pode definir para uma política de conformidade para dispositivos Windows.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Configurações de política de conformidade para dispositivos Windows no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As configurações de política descritas neste tópico se aplicam a dispositivos que executam o sistema operacional Windows. As seções a seguir descrevem as versões do Windows com suporte.
 
 Se estiver procurando informações sobre outras plataformas, selecione uma das seguintes opções:
 > [!div class="op_single_selector"]
-- [Configurações da política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Configurações da política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Configurações da política de conformidade para o Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Configurações da política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Configurações da política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Configurações da política de conformidade para o Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Configurações da política de conformidade para dispositivos Windows Phone
 As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e posterior.
@@ -80,7 +80,7 @@ As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e po
   > Os dispositivos Windows não dão suporte a software **ELAM** (Antimalware de Início Antecipado) de terceiros instalados como parte do Atestado de integridade do dispositivo.
 
   Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
+  ###  <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 - **SO mínimo exigido**: quando um dispositivo não atender ao requisito mínimo de versão do SO, ele será relatado como não compatível.
     É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar seu dispositivo e, depois disso, poderá acessar os recursos da empresa.
 
@@ -153,4 +153,4 @@ Para localizar a versão do SO que deve ser usada para as configurações **SO m
 - Computadores com Windows 8.1 retornam a versão **6.3**. Se a regra de versão do sistema operacional for definida como Windows 8.1 para Windows, então o dispositivo será relatado como não compatível mesmo que o dispositivo tenha o Windows 8.1.
 
 - Para computadores que executam o Windows 10, a versão deve ser definida como **10.0** mais o número de build do sistema operacional retornado pelo comando **winver**. Por exemplo, poderia ser algo como 10.0.10586.
-> ![Versão do build do SO realçada na caixa de diálogo "Sobre o Windows"](./media/ca_win10-os-version.png)
+  > ![Versão do build do SO realçada na caixa de diálogo "Sobre o Windows"](./media/ca_win10-os-version.png)

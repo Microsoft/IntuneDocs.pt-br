@@ -1,27 +1,27 @@
 ---
-title: "Configurações de VPN do Microsoft Intune para dispositivos Windows Phone 8.1"
-titleSuffix: 
-description: "Conheça as definições do Intune que você pode usar para configurar as conexões VPN em dispositivos que executam o Windows Phone 8.1."
-keywords: 
+title: Configurações de VPN do Microsoft Intune para dispositivos Windows Phone 8.1
+titleSuffix: ''
+description: Conheça as definições do Intune que você pode usar para configurar as conexões VPN em dispositivos que executam o Windows Phone 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 458586a2d507e913eb702c0ee2e3c0531350f1b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o Windows Phone 8.1
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações do Intune que você pode usar para configurar conexões VPN em dispositivos que executam Windows Phone 8.1.
 
@@ -56,7 +56,7 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 - **Função** (somente Pulse Secure) – Especifique o nome da função do usuário que tem acesso a essa conexão. Uma função de usuário define configurações e opções pessoais e habilita ou desabilita determinados recursos de acesso.
 - **Realm** (somente Pulse Secure) – Especifique o nome do realm de autenticação que você deseja usar. Um realm de autenticação é um agrupamento de recursos de autenticação usado pelo tipo de conexão Pulse Secure.
 
-- **Lista de pesquisa de sufixos DNS** - **Adicionar** um ou mais sufixos de DNS. Cada sufixo DNS que você especificar é pesquisado durante a conexão com um site usando um nome curto. Por exemplo, especifique os sufixos DNS **domain1.contoso.com** e **domain2.contoso.com**, acesse a URL **http://mywebsite** e as URLs **http://mywebsite.domain1.contoso.com** e **http://mywebsite.domain2.contoso.com** serão pesquisadas.
+- **Lista de pesquisa de sufixos DNS** - **Adicionar** um ou mais sufixos de DNS. Cada sufixo DNS que você especificar é pesquisado durante a conexão com um site usando um nome curto. Por exemplo, especifique os sufixos DNS **domain1.contoso.com** e **domain2.contoso.com**, acesse a URL **http://mywebsite** e as URLs **http://mywebsite.domain1.contoso.com** e **http://mywebsite.domain2.contoso.com será pesquisada**.
 
 - **XML Personalizado** – Especifique os comandos XML personalizados para configurar a conexão VPN.
 
@@ -64,7 +64,6 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **Exemplo do CheckPoint Mobile VPN:**
@@ -76,13 +75,11 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 **Exemplo do SonicWall Mobile Connect:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **Exemplo do F5 Edge Client:**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 Consulte a documentação do VPN de cada fabricante para obter mais informações sobre como escrever comandos XML personalizados.

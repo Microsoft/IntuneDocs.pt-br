@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Windows no Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos do Intune para Windows especifica as regras e configurações que dispositivos Windows precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, bem como obter relatórios de dispositivos e executar ações em caso de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e os pré-requisitos que você precisa cumprir antes de criá-las, consulte [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -74,24 +74,27 @@ Você aplicou a política para os usuários. A conformidade dos dispositivos usa
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Configurações de segurança do sistema
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Configurações da política de conformidade para dispositivos Windows Phone
 
-### <a name="password"></a>Senha
+As configurações listadas nesta seção têm suporte no Windows Phone 8.1 e posterior.
+### <a name="system-security-settings"></a>Configurações de segurança do sistema
+
+#### <a name="password"></a>Senha
 
 - **Exigir uma senha para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que os usuários insiram uma senha antes que eles possam acessar o dispositivo.
 - **Permitir senhas simples:** defina isso como **Sim** para permitir que os usuários criem senhas simples, como “**1234**” ou “**1111**”.
 - **Tamanho mínimo da senha:** especifique o número mínimo de dígitos ou caracteres que a senha do usuário precisa conter.
+
+  Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 - **Tipo de senha exigido:** especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
-
-Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
-
+  
 - **Número mínimo de conjuntos de caracteres:** se o **Tipo de senha necessário** for definido como **Alfanumérico**, essa configuração especificará o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
   - Letras minúsculas
   - Letras maiúsculas
   - Símbolos
   - Números
 
-Definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
+  Definir um número mais alto para essa configuração exigirá que os usuários criem senhas mais complexas. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
 
 - **Minutos de inatividade antes que a senha seja requerida:** especifica o tempo ocioso antes que o usuário tenha que digitar novamente a senha.
 - **Expiração da senha (dias)**: selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
@@ -99,15 +102,16 @@ Definir um número mais alto para essa configuração exigirá que os usuários 
 - **Evitar a reutilização de senhas anteriores:** se a opção **Lembrar o histórico de senha** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 - **Exigir uma senha quando o dispositivo retorna do estado ocioso:** essa configuração deve ser usada junto com **Minutos de inatividade antes da senha ser necessária**. Os usuários finais serão solicitados a inserir uma senha para acessar um dispositivo que está inativo durante o tempo especificado na configuração **Minutos de inatividade antes da senha ser necessária**.
 
-**Essa configuração só se aplica a dispositivos Windows 10 Mobile.**
+> [!NOTE]
+> Essa configuração só se aplica a dispositivos Windows 10 Mobile.
 
-### <a name="encryption"></a>Criptografia
+#### <a name="encryption"></a>Criptografia
 
 - **Exigir criptografia no dispositivo móvel:** defina esta opção como **Sim** para exigir que o dispositivo seja criptografado para conectar-se aos recursos.
 
 
 
-## <a name="device-health-settings"></a>Configurações de integridade do dispositivo
+### <a name="device-health-settings"></a>Configurações de integridade do dispositivo
 
 - **Exigir que os dispositivos sejam relatados como íntegros:** você pode definir uma regra para exigir que os dispositivos **Windows 10 Mobile** sejam relatados como íntegros nas Políticas de Conformidade novas ou existentes. Se essa configuração estiver habilitada, dispositivos Windows 10 serão avaliados por meio do HAS (Serviço de Atestado de Integridade) para os seguintes pontos de dados:
   - **BitLocker habilitado**: quando o Bitlocker está ativado, o dispositivo é capaz de proteger os dados armazenados na unidade do acesso não autorizado quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados de usuário e ajuda a garantir que um computador não foi violado, mesmo se tiver sido deixado sem supervisão, tiver sido perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Consequentemente, as chaves não poderão ser acessadas até que o TPM verifique o estado do computador
@@ -116,53 +120,56 @@ Definir um número mais alto para essa configuração exigirá que os usuários 
 
 Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
+### <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 
 - **Sistema operacional mínimo exigido:** quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 - **Versão do sistema operacional máxima permitida:** quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
 <!---## Compliance policy settings for Windows PCs--->
 
-## <a name="system-security-settings"></a>Configurações de segurança do sistema
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Configurações da política de conformidade para computadores Windows
 
-### <a name="password"></a>Senha
+As configurações listadas nesta seção têm suporte em computadores Windows.
+### <a name="system-security-settings"></a>Configurações de segurança do sistema
+
+#### <a name="password"></a>Senha
 
 - **Comprimento mínimo da senha:** - Com suporte no Windows 8.1.
 
-Especifique o número mínimo de dígitos ou caracteres mínimo que a senha do usuário precisa conter.
+  Especifique o número mínimo de dígitos ou caracteres mínimo que a senha do usuário precisa conter.
 
-Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
+  Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
 
 - **Tipo de senha necessária** – Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
+  Especifique se os usuários devem criar uma senha **Alfanumérica** ou **Numérica**.
 
 - **Número mínimo de conjuntos de caracteres** – Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1. Se **Tipo de Senha Necessário** é definido como **Alfanumérico**, essa configuração especifica o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
   - Letras minúsculas
   - Letras maiúsculas
   - Símbolos
-  - Números: a definição de um número maior para essa configuração exige que os usuários criem senhas mais complexas.
+  - Números 
 
-Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
+    Definir um número maior para essa configuração requer que os usuários criem senhas mais complexas. Para dispositivos acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o **Comprimento mínimo da senha** tiver mais de oito caracteres ou se o **Número mínimo de conjuntos de caracteres** for maior do que dois.
 
 - **Minutos de inatividade antes da senha ser necessária:** - Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Especifique o tempo ocioso antes que o usuário precise inserir novamente sua senha.
+  Especifique o tempo ocioso antes que o usuário precise inserir novamente sua senha.
 
 - **Expiração de senha (dias)** – Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1.
 
-Selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
+  Selecione o número de dias antes que a senha do usuário expire e seja preciso criar uma nova.
 
 - **Lembrar histórico de senha:** - Com suporte no Windows RT, Windows RT e Windows 8.1.
 
-Use essa configuração em conjunto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
+  Use essa configuração em conjunto com **Evitar a reutilização de senhas anteriores** para impedir que o usuário crie senhas usadas anteriormente.
 
 - **Evitar a reutilização de senhas anteriores:** - Com suporte no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Se a opção **Lembrar histórico de senha:** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
+  Se a opção **Lembrar histórico de senha:** estiver selecionada, especifique o número de senhas usadas anteriormente que não poderão ser reutilizadas.
 
 
-## <a name="device-health-settings"></a>Configurações de integridade do dispositivo
+### <a name="device-health-settings"></a>Configurações de integridade do dispositivo
 
 - **Exigir que os dispositivos sejam relatados como íntegros:** - Com suporte em dispositivos Windows 10. Você pode definir uma regra para exigir que os dispositivos Windows 10 sejam relatados como íntegros nas Políticas de Conformidade novas ou existentes. Se essa configuração estiver habilitada, dispositivos Windows 10 serão avaliados por meio do HAS (Serviço de Atestado de Integridade) para os seguintes pontos de dados:
   - **BitLocker habilitado**: quando o Bitlocker está ativado, o dispositivo é capaz de proteger os dados armazenados na unidade do acesso não autorizado quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados de usuário e ajuda a garantir que um computador não foi violado, mesmo se tiver sido deixado sem supervisão, tiver sido perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Consequentemente, as chaves não poderão ser acessadas até que o TPM verifique o estado do computador
@@ -172,17 +179,17 @@ Se a opção **Lembrar histórico de senha:** estiver selecionada, especifique o
 
 Para obter informações sobre como funciona o serviço HAS, consulte [CSP do Estado de Integridade](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
+### <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 
 - **Sistema operacional mínimo necessário:** - Com suporte no Windows 8.1 e no Windows 10.
 
-Especifique o número de major.minor.build.CU aqui. O número de versão deve corresponder à versão retornada pelo comando ```winver```.
+  Especifique o número de major.minor.build.CU aqui. O número de build.CU deve corresponder à versão retornada pelo comando ```winver```.
 
-Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
+  Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
 - **Sistema operacional máximo permitido:** - Com suporte no Windows 8.1 e no Windows 10.
 
-Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+  Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
 Para localizar a versão do sistema operacional que deve ser usada para as configurações **Sistema operacional mínimo necessário** e **Versão de sistema operacional máxima permitida**, execute o comando **winver** no prompt de comando. O comando winver retorna a versão relatada do sistema operacional.
 

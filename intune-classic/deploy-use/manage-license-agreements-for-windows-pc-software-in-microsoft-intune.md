@@ -14,15 +14,15 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f1d4eb8ea128ba453e555836289fb7d1ce8b34c4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerenciar contratos de licença para software de PC com Windows no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune permite adicionar e gerenciar informações de contrato de licença para software adquirido por meio de contratos de Licenciamento por Volume da Microsoft. Também é possível fazer isso para software da Microsoft e não Microsoft adquirido por outros meios. Você pode organizar essas informações em grupos lógicos.
 
@@ -174,10 +174,12 @@ O modo de exibição de lista **Todos os Contratos** é exibido.
 ## <a name="manage-license-agreements"></a>Gerenciar contratos de licença
 Os contratos de licenciamento de software podem ser adicionados aos grupos de licenças. Você pode usar grupos de licenças para organizar seus contratos de licença em unidades que são lógicas para a sua organização. Além disso, você pode excluir contratos de licença criados anteriormente.
 
-|||
-|-|-|
-|Tarefa|Detalhes|
-|Criar um grupo de licenças|Na página **Visão Geral** do espaço de trabalho **Licenças**, escolha **Criar Grupo de Licenças** no menu **Tarefas**. **Observação:** é possível criar um total máximo de 500 grupos de licenças.|
-|Renomear um grupo de licenças|No espaço de trabalho **Licenças**, escolha um grupo de licenças e **Editar Grupo de Licenças** no menu **Tarefas**.|
-|Excluir um grupo de licenças|No espaço de trabalho **Licenças**, escolha um grupo de licenças e, após, escolha **Excluir Grupo de Licenças** no menu **Tarefas**. **Dica:** Todas as licenças no grupo excluído são movidas para o grupo **Contratos não atribuídos**.|
-|Excluir um contrato de licença|No espaço de trabalho **Licenças**, escolha um contrato e, após, escolha **Excluir**. **Dica:** depois de excluir contratos de Licenciamento por Volume, para atualizar as informações de licença, escolha **Atualizar Agora** na página **Visão Geral de Licenças** ou na guia **Geral** de um grupo de licenças específico.|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            Tarefa            |                                                                                                                                                                                 Detalhes                                                                                                                                                                                  |
+|   Criar um grupo de licenças   |                                                            Na página <strong>Visão Geral</strong> do espaço de trabalho <strong>Licenças</strong>, escolha <strong>Criar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Observação:</strong> é possível criar um total máximo de 500 grupos de licenças.                                                             |
+|   Renomear um grupo de licenças   |                                                                                                      No espaço de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e <strong>Editar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>.                                                                                                       |
+|   Excluir um grupo de licenças   |                                 No espaço de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e, após, escolha <strong>Excluir Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Dica:</strong> Todas as licenças no grupo excluído são movidas para o grupo <strong>Contratos não atribuídos</strong>.                                 |
+| Excluir um contrato de licença | No espaço de trabalho <strong>Licenças</strong>, escolha um contrato e, após, escolha <strong>Excluir</strong>. <strong>Dica:</strong> depois de excluir contratos de Licenciamento por Volume, para atualizar as informações de licença, escolha <strong>Atualizar Agora</strong> na página <strong>Visão Geral de Licenças</strong> ou na guia <strong>Geral</strong> de um grupo de licenças específico. |
+

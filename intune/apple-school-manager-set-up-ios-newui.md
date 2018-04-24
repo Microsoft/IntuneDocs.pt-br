@@ -15,15 +15,15 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 7d9a51cb4e76f5aa0f89f9160af6f5fe62f0bbbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Diferenças de interface de usuário temporárias
@@ -59,7 +59,7 @@ Antes de poder registrar dispositivos iOS de propriedade corporativa com o Apple
 
 1. No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > **Adicionar**.
 
-  ![Obtenha um token do programa de registro.](./media/device-enrollment-program-enroll-ios/image01.png)
+   ![Obtenha um token do programa de registro.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Na folha **Token do programa de registro**, escolha **Baixar a chave pública** para baixar e salvar o arquivo de chave de criptografia (.pem) localmente. O arquivo .pem é usado para solicitar um certificado de relação de confiança do portal do Apple School Manager.
      ![Folha Token do Programa de registro.](./media/device-enrollment-program-enroll-ios/image02.png)
@@ -94,7 +94,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
 3. Em **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil para fins administrativos. Os usuários não veem esses detalhes. Você pode usar esse campo **Nome** para criar um grupo dinâmico no Azure Active Directory. Use o nome do perfil para definir o parâmetro enrollmentProfileName para atribuir dispositivos com este perfil de registro. Saiba mais sobre os [grupos dinâmicos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
     ![Nome e descrição do perfil.](./media/device-enrollment-program-enroll-ios/image05.png)
-    
+
 4. Em **Afinidade de Usuário**, escolha se os dispositivos com esse perfil devem ser registrados com ou sem um usuário atribuído.
     - **Registrar com afinidade do usuário** – escolha esta opção para dispositivos que pertencem a usuários e que desejam usar o portal da empresa para serviços como a instalação de aplicativos. Esta opção também permite que os usuários façam a autenticação de seus dispositivos usando o portal da empresa. A afinidade de usuário requer [ponto de extremidade nome do usuário/misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   O modo iPad Compartilhado do Apple School Manager exige o registro do usuário sem a afinidade de usuário.
 
@@ -112,8 +112,8 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
     Os usuários são notificados de que seus dispositivos são supervisionados de duas maneiras:
 
-    - A tela de bloqueio diz: "Este iPhone é gerenciado pela Contoso".
-    - A tela **Configurações** > **Geral** > **Sobre** diz: "Este iPhone é supervisionado. A Contoso pode monitorar o tráfego de Internet e localizar este dispositivo."
+   - A tela de bloqueio diz: "Este iPhone é gerenciado pela Contoso".
+   - A tela **Configurações** > **Geral** > **Sobre** diz: "Este iPhone é supervisionado. A Contoso pode monitorar o tráfego de Internet e localizar este dispositivo."
 
      > [!NOTE]
      > Um dispositivo registrado sem supervisão só pode ser redefinido para supervisionado usando o Apple Configurator. A redefinição do dispositivo dessa maneira requer conectar um dispositivo iOS a um Mac com um cabo USB. Saiba mais sobre isso nos [documentos do Apple Configurator](http://help.apple.com/configurator/mac/2.3).
@@ -124,31 +124,33 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 9. Escolha se deseja ou não que os dispositivos usando este perfil possam **Sincronizar com computadores**. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em **Certificados do Apple Configurator**.
 
-9. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em Certificados do Apple Configurator para importar.
+10. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em Certificados do Apple Configurator para importar.
 
-10. Selecione **OK**.
+11. Selecione **OK**.
 
-11. Escolha as **Configurações do Assistente de Configuração** para definir as seguintes configurações de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+12. Escolha as **Configurações do Assistente de Configuração** para definir as seguintes configurações de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-    | Setting | Descrição |
-    | --- | --- |
-    | **Nome do Departamento** | Aparece quando os usuários tocam em **Sobre a Configuração** durante a ativação. |
-    | **Telefone do Departamento** | Aparece quando o usuário clica no botão **Precisa de Ajuda** durante a ativação. |
-    | **Opções do Assistente de Instalação** | As configurações opcionais a seguir podem ser configuradas posteriormente no menu **Configurações** do iOS. |
-    | **Senha** | Solicitar senha durante a ativação. Sempre exija uma senha, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de alguma outra maneira (ou seja, o modo de quiosque que restringe o dispositivo a um aplicativo). |
-    | **Serviços de Localização** | Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação. |
-    | **Restaurar** | Se habilitado, o Assistente de Instalação solicitará o backup do iCloud durante a ativação. |
-    | **iCloud e ID da Apple** | Se habilitado, o Assistente de Configuração solicita ao usuário que insira uma ID da Apple e a tela Aplicativos e Dados permitirá que o dispositivo seja restaurado a partir do backup do iCloud. |
-    | **Termos e Condições** | Se habilitado, o Assistente de Instalação solicitará que os usuários aceitem os termos e as condições da Apple durante a ativação. |
-    | **ID de Toque** | Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação. |
-    | **Apple Pay** | Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação. |
-    | **Zoom** | Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação. |
-    | **Siri** | Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação. |
-    | **Dados de diagnóstico** | Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação. |
 
-12. Selecione **OK**.
+    |                 Setting                  |                                                                                               Descrição                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>Nome do Departamento</strong>     |                                                             Aparece quando os usuários tocam em <strong>Sobre a Configuração</strong> durante a ativação.                                                              |
+    |    <strong>Telefone do Departamento</strong>     |                                                          Aparece quando o usuário clica no botão <strong>Precisa de Ajuda</strong> durante a ativação.                                                          |
+    | <strong>Opções do Assistente de Instalação</strong> |                                                     As configurações opcionais a seguir podem ser configuradas posteriormente no menu <strong>Configurações</strong> do iOS.                                                      |
+    |        <strong>Senha</strong>         | Solicitar senha durante a ativação. Sempre exija uma senha, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de alguma outra maneira (ou seja, o modo de quiosque que restringe o dispositivo a um aplicativo). |
+    |    <strong>Serviços de Localização</strong>    |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                  |
+    |         <strong>Restaurar</strong>         |                                                                Se habilitado, o Assistente de Instalação solicitará o backup do iCloud durante a ativação.                                                                 |
+    |   <strong>iCloud e ID da Apple</strong>   |                         Se habilitado, o Assistente de Configuração solicita ao usuário que insira uma ID da Apple e a tela Aplicativos e Dados permitirá que o dispositivo seja restaurado a partir do backup do iCloud.                         |
+    |  <strong>Termos e Condições</strong>   |                                                   Se habilitado, o Assistente de Instalação solicitará que os usuários aceitem os termos e as condições da Apple durante a ativação.                                                   |
+    |        <strong>ID de Toque</strong>         |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                 |
+    |          <strong>Zoom</strong>           |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                 |
+    |          <strong>Siri</strong>           |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                 |
+    |     <strong>Dados de diagnóstico</strong>     |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                 |
 
-13. Para salvar o perfil, escolha **Criar**.
+
+13. Selecione **OK**.
+
+14. Para salvar o perfil, escolha **Criar**.
 
 ## <a name="connect-school-data-sync"></a>Conectar o School Data Sync
 (Opcional) O Apple School Manager dá suporte à sincronização de dados da lista de classes com o Azure AD (Active Directory) usando o Microsoft SDS (School Data Sync). Só é possível sincronizar um token com o SDS. Se você configurar outro token com o School Data Sync, o SDS será removido do token que o tinha anteriormente. Uma nova conexão substituirá o token atual. Conclua as etapas a seguir para usar o SDS para sincronizar dados de estudante.
@@ -164,7 +166,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 Agora que o Intune recebeu permissão para gerenciar seus dispositivos Apple School Manager, é possível sincronizar o Intune com o serviço da Apple para ver os dispositivos gerenciados no Intune.
 
 No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista > **Dispositivos** > **Sincronizar**. ![Captura de tela do nó Dispositivos de Programa de Registro selecionado com o link de Sincronização escolhido.](./media/device-enrollment-program-enroll-ios/image06.png)
-  
+
   Para estar em conformidade com os termos da Apple em relação ao tráfego aceitável do programa de registro, o Intune impõe as seguintes restrições:
   - Uma sincronização completa pode ser executada, no máximo, uma vez a cada sete dias. Durante uma sincronização completa, o Microsoft Intune atualiza todos os números de série da Apple atribuídos à nossa plataforma. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
   - Qualquer solicitação de sincronização tem 15 minutos para ser concluída. Durante esse tempo ou até a solicitação ser bem-sucedida, o botão de **Sincronizar** fica desabilitado.

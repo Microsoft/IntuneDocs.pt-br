@@ -1,27 +1,27 @@
 ---
-title: "Definições de configuração de dispositivo compartilhado do Microsoft Intune para iOS"
-titlesuffix: 
-description: "Conheça as configurações do Microsoft Intune que você pode usar para exibir informações na tela de bloqueio de dispositivos iOS."
-keywords: 
+title: Definições de configuração de dispositivo compartilhado do Microsoft Intune para iOS
+titlesuffix: ''
+description: Conheça as configurações do Microsoft Intune que você pode usar para exibir informações na tela de bloqueio de dispositivos iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9147eaff2bd366dbfd86c6422e0f7a29f685db62
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 73c4f96e3057227bc601175c4e8f42802eb322bc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Definições de configuração de dispositivo compartilhado para exibir mensagens na tela de bloqueio do dispositivo iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações do Microsoft Intune que você pode usar para exibir informações na tela de bloqueio de dispositivos iOS.
 
@@ -32,7 +32,7 @@ As definições de configuração de dispositivo compartilhado permitem que voc�
 
 ## <a name="create-shared-device-settings"></a>Criar configurações de dispositivo compartilhado
 
-1. Do [Intune no Portal do Azure](https://portal.azure.com), navegue até os [**Recursos do dispositivo** na área de configuração de dispositivo](device-features-configure.md). 
+1. Do [Intune no Portal do Azure](https://portal.azure.com), navegue até os [**Recursos do dispositivo** na área de configuração do dispositivo](device-features-configure.md). 
 1. No painel **Recursos do dispositivo**, escolha **Configuração do dispositivo compartilhado (somente supervisionado)**.
 2. No painel **Configuração de dispositivo compartilhado (somente supervisionado)**, defina as seguintes configurações:
     - **Informações de marca do ativo** - insira informações sobre a marca do ativo do dispositivo. Por exemplo: **Pertencente a Contoso Corp**. As informações inseridas são aplicadas a todos os dispositivos aos quais você atribui esse perfil.

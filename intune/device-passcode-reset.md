@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,30 +13,30 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cca5922f036711093469e71489e267af53f05a9
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 19b30315fa26dd53b5e383bc9e4bef5c65b89962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Para criar uma nova senha para um dispositivo, use a ação **Remover senha**.
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
-- Windows Phone 8.1 (não ingressado no Azure Active Directory), incluindo versões até a Atualização do Windows 10 para Criadores
-- Atualização do Windows 10 para Criadores e posterior
-- iOS
-- Versões do Android anteriores ao Android 7
+- Dispositivos Android registrados com um perfil de Trabalho, versão 7.0 e posteriores
+- Dispositivos Android na versão 6.0 ou anterior
+- iOS 
+     
+## <a name="unsupported-platforms"></a>Plataformas sem suporte
 
-Esse recurso não é compatível com os seguintes sistemas:
-
-- Windows
+- Dispositivos Android registrados com um perfil de Trabalho, versão 6.0 e anteriores
+- Dispositivos Android na versão 7.0 ou posterior
 - macOS
-- Android for Work
+- Windows
 
 ## <a name="reset-a-passcode"></a>Redefinir uma senha
 
@@ -44,6 +44,14 @@ Esse recurso não é compatível com os seguintes sistemas:
 2. Selecione **Todos os serviços**, filtre pelo **Intune** e, em seguida, selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
 4. Na lista de dispositivos que você gerencia, selecione um dispositivo e escolha **...Mais**. Em seguida, escolha a ação remota de dispositivo **Remover senha**.
+
+## <a name="resetting-android-for-work-passcodes"></a>Redefinindo senhas do Android for Work
+
+Dispositivos Android for Work compatíveis recebem uma nova senha de desbloqueio de dispositivo ou um desafio de perfil gerenciado para o usuário final. Para dispositivos no Android 7.0 ou posterior com perfis de Trabalho, os usuários finais recebem notificações para ativar o token de redefinição de senha imediatamente após o registro ser concluído. A notificação será exibida se a senha de um perfil de trabalho for obrigatória e estiver definida. Depois que a senha for inserida, a notificação será descartada.
+
+## <a name="resetting-ios-passcodes"></a>Redefinir senhas do iOS
+
+Senhas são removidas dos dispositivos iOS. Se houver uma política de conformidade de senha definida, o dispositivo solicitará que o usuário defina uma nova senha nas Configurações. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

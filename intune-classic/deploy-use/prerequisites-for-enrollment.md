@@ -1,29 +1,29 @@
 ---
-title: "Pré-requisitos para registro de dispositivos móveis"
-description: "Configure os pré-requisitos de MDM (gerenciamento de dispositivo móvel) e prepare-se para registrar diferentes sistemas operacionais."
-keywords: 
+title: Pré-requisitos para registro de dispositivos móveis
+description: Configure os pré-requisitos de MDM (gerenciamento de dispositivo móvel) e prepare-se para registrar diferentes sistemas operacionais.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Pré-requisitos para gerenciamento de dispositivo móvel no Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Permitir que os funcionários registrem seus dispositivos móveis com o Intune exige as seguintes etapas. Essas mesmas etapas são necessárias para gerenciar dispositivos da empresa.
 
@@ -39,7 +39,7 @@ Permitir que os funcionários registrem seus dispositivos móveis com o Intune e
 
 Procurando o Intune com o Configuration Manager?
 > [!div class="button"]
-[Exibir documentos do SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [Exibir documentos do SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Etapa 1: Habilitar conexões
 
@@ -80,14 +80,15 @@ Personalizar o Portal da Empresa ajuda a fornecer uma experiência familiar e ú
 
 O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e as informações de contato são exibidos para os usuários na tela Contatar TI do Portal da Empresa. A política de privacidade é exibida quando um usuário clica no link de privacidade.
 
-|Nome do campo|Comprimento máx.|Mais informações|
-    |----------|------------------------|----------------|
-    |Nome da empresa|40|Este é o nome exibido como título do Portal da Empresa. **Observação**: apenas caracteres alfanuméricos. Este campo não dá suporte a caracteres especiais.|
-    |Nome do contato do departamento de TI|40|Esse nome é exibido na página **Contatar TI**.|
-    |Telefone do departamento de TI|20|Este número de contato é exibido na página **Contatar TI**.|
-    |Endereço de email do departamento de TI|40|Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato **alias@domainname.com**.|
-    |Informações adicionais|120|Estas informações são exibidas na página **Contatar TI**.|
-    |URL de política de privacidade de empresa|79|Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. Você deve digitar uma URL válida no formato https://www.contoso.com.|
+
+|          Nome do campo           | Comprimento máx. |                                                                                       Mais informações                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Nome da empresa          |     40     |                Este é o nome exibido como título do Portal da Empresa. <strong>Observação</strong>: apenas caracteres alfanuméricos. Este campo não dá suporte a caracteres especiais.                |
+|  Nome do contato do departamento de TI   |     40     |                                                                Esse nome é exibido na página <strong>Contatar TI</strong>.                                                                |
+|  Telefone do departamento de TI   |     20     |                                                           Este número de contato é exibido na página <strong>Contatar TI</strong>.                                                           |
+|  Endereço de email do departamento de TI  |     40     |             Este endereço de contato é exibido na página <strong>Contatar TI</strong>. Você deve inserir um endereço de email válido no formato <strong>alias@domainname.com</strong>.              |
+|    Informações adicionais     |    120     |                                                            Estas informações são exibidas na página <strong>Contatar TI</strong>.                                                             |
+| URL de política de privacidade de empresa |     79     | Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. Você deve inserir uma URL válida no formato https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contatos de suporte
 O site de suporte é exibido para os usuários no Portal da Empresa para que eles possam acessar o suporte online.
@@ -199,7 +200,7 @@ Conclua estas etapas antes de contatar o Suporte da Microsoft para redefinir sua
 
 #### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Redefinir a autoridade de MDM do Office 365 para o Configuration Manager
 
-1. Navegue até [https://protection.office.com](https://protection.office.com).
+1. Vá até [https://protection.office.com](https://protection.office.com).
 2. Selecione a guia **Políticas de Segurança** e selecione **Gerenciamento de Dispositivo**.
 3. Desative todos os dispositivos escolhendo **Apagamento Seletivo**. Não tente desativar um dispositivo no próprio dispositivo. Se o apagamento seletivo estiver desabilitado, nenhuma ação adicional será necessária.
 4. Selecione a guia **Políticas de Segurança** e selecione **Políticas de Segurança do Dispositivo**.

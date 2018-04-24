@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurar e implantar políticas de gerenciamento de aplicativos móveis no console do Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As políticas de MAM (gerenciamento de aplicativos móveis) no Microsoft Intune permitem que você modifique a funcionalidade dos aplicativos implantados para ajudar a alinhá-los às políticas de segurança e conformidade de sua empresa. Por exemplo, você pode restringir as operações de recortar, copiar e colar em um aplicativo gerenciado ou configurar um aplicativo para abrir todos os links da Web dentro do navegador gerenciado.
 
@@ -180,7 +180,7 @@ Após ter criado e implantado um aplicativo associado a uma política de gerenci
 
 4.  Selecione a política de gerenciamento de aplicativo móvel cujo status você deseja exibir. Você pode ver detalhes da política no painel inferior e expandir o nó para exibir as configurações.
 
-5.  Na coluna **Status** de cada uma das políticas de gerenciamento de aplicativo móvel, **Compatível**, **Compatível (Pendente)**ou **Erro** aparecerá. Se a política selecionada tiver uma ou mais configurações conflitantes, **Erro** aparecerá nesse campo.
+5.  Na coluna **Status** de cada uma das políticas de gerenciamento de aplicativo móvel, **Compatível**, **Compatível (Pendente)** ou **Erro** aparecerá. Se a política selecionada tiver uma ou mais configurações conflitantes, **Erro** aparecerá nesse campo.
 
 6.  Após ter identificado um conflito, você pode revisar as configurações de política conflitantes para usar a mesma configuração ou pode implantar apenas uma política para o aplicativo e o usuário.
 

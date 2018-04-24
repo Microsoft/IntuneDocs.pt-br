@@ -1,27 +1,27 @@
 ---
-title: "Configurações de restrição de dispositivo do Microsoft Intune para Windows 8.1"
-titleSuffix: 
-description: "Conheça as definições do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo nos dispositivos que executam o Windows Phone 8.1."
-keywords: 
+title: Configurações de restrição de dispositivo do Microsoft Intune para Windows 8.1
+titleSuffix: ''
+description: Conheça as definições do Intune que você pode usar para controlar as configurações e as funcionalidades do dispositivo nos dispositivos que executam o Windows Phone 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1bebb5915a7adeb13fd95b73587bca0171bebd83
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Configurações de restrição de dispositivo Windows Phone 8.1 no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que podem ser definidas para dispositivos que executam o Windows Phone 8.1.
 
@@ -70,7 +70,7 @@ Na página da [Windows Phone Store](https://www.microsoft.com/store/apps/windows
 
 Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.
 
-Exemplo: pesquisar o aplicativo Skype na loja. A URL usada é **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Exemplo: pesquisar o aplicativo Skype na loja. A URL usada será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Perfil VPN por aplicativo para Android – Pulse Secure
+title: Perfil de VPN por aplicativo personalizado para Android
 titlesuffix: Microsoft Intune
 description: Saiba como criar um perfil VPN por aplicativo para dispositivos Android gerenciados pelo Microsoft Intune.
 keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +15,23 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc87363169cd2d967b2fea9683926970c18c5e97
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 96d164c0f4274a6d1fc81a0c7f9d86cccfec1fb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Use um perfil personalizado do Microsoft Intune para criar um perfil de VPN por aplicativo para dispositivos Android
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Você pode criar um perfil de VPN por aplicativo para dispositivos Android 5.0 e posterior gerenciados pelo Intune. Primeiro, crie um perfil de VPN que usa o tipo de conexão Pulse Secure. Em seguida, crie uma política de configuração personalizada que associa o perfil de VPN com aplicativos específicos.
+Você pode criar um perfil de VPN por aplicativo para dispositivos Android 5.0 e posterior gerenciados pelo Intune. Primeiro, crie um perfil de VPN que use o tipo de conexão Pulse Secure ou Citrix. Em seguida, crie uma política de configuração personalizada que associa o perfil de VPN com aplicativos específicos.
 
-Depois que você atribuir a política para os grupos de usuários ou o dispositivo Android, os usuários deverão iniciar o PulseSecure VPN. Em seguida, o PulseSecure permite que somente o tráfego dos aplicativos especificados use a conexão VPN aberta.
+Após atribuir a política aos grupos de usuários ou de dispositivos Android, os usuários deverão iniciar o cliente de VPN Citrix ou Pulse Secure. O cliente VPN então permite somente que tráfego dos aplicativos especificados use a conexão VPN aberta.
 
 > [!NOTE]
 >
-> Para este perfil, há suporte apenas para o tipo de conexão Pulse Secure.
+> Para este perfil, há suporte apenas para o tipo de conexão Pulse Secure e Citrix.
 
 
 ## <a name="step-1-create-a-vpn-profile"></a>Etapa 1: Criar um perfil de VPN

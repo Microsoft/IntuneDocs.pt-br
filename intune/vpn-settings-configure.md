@@ -1,31 +1,39 @@
 ---
-title: "Como definir configurações de VPN no Microsoft Intune"
-titleSuffix: 
-description: "Saiba como usar o Microsoft Intune para configurar as conexões VPN (rede virtual privada) nos dispositivos que você gerencia."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Criar perfil de dispositivo VPN no Microsoft Intune – Azure | Microsoft Docs
+description: Para dispositivos iOS, exiba os tipos de conexão de VPN (rede virtual privada), crie um perfil de dispositivo VPN no Portal do Azure e veja suas opções para proteger o perfil VPN com certificados, ou o nome de usuário e a senha no Microsoft Intune.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 04/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Como definir configurações de VPN no Microsoft Intune
+# <a name="create-vpn-profiles-in-intune"></a>Criar perfis de VPN no Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Redes virtuais privadas (VPN) oferecem aos usuários acesso remoto seguro à rede da empresa. Dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o servidor VPN. Use **perfis de VPN** no Microsoft Intune para atribuir configurações de VPN para usuários e dispositivos na organização, para que eles possam se conectar à rede de forma fácil e segura.
 
-Por exemplo, suponha que você deseje provisionar todos os dispositivos iOS com as configurações necessárias para conectar a um compartilhamento de arquivos na rede corporativa. Você cria um perfil de VPN que contém as configurações necessárias para conectar à rede corporativa e atribui esse perfil a todos os usuários com dispositivos iOS. Os usuários veem a conexão VPN na lista de redes disponíveis e podem se conectar com esforço mínimo.
+Por exemplo, suponha que você deseje provisionar todos os dispositivos iOS com as configurações necessárias para conectar a um compartilhamento de arquivos na rede corporativa. Você cria um perfil VPN que contém as configurações para se conectar à rede corporativa. Em seguida, você atribui esse perfil a todos os usuários que têm dispositivos iOS. Os usuários veem a conexão VPN na lista de redes disponíveis e podem se conectar com esforço mínimo.
+
+É possível usar as políticas de configuração personalizada do Intune para criar perfis VPN para as seguintes plataformas:
+
+* Android 4 e posterior
+* Dispositivos registrados que executam o Windows 8.1 e versões posteriores
+* Windows Phone 8.1 e posterior
+* Dispositivos registrados que executam o Windows 10 Desktop
+* Windows 10 Mobile
+* Windows Holographic for Business
 
 ## <a name="vpn-connection-types"></a>Tipos de conexão VPN
 
@@ -46,41 +54,36 @@ Você pode criar perfis VPN usando os seguintes tipos de conexão:
 |PPTP|Não|Não|Não|Não|Não|Sim|
 |Personalizado|Não|Sim|Sim|Não|Não|Não|
 
-
 > [!IMPORTANT]
 > Antes de poder usar perfis VPN atribuídos em um dispositivo, você deve instalar o aplicativo VPN aplicável para o perfil. Você pode usar as informações no artigo [O que é gerenciamento de aplicativos no Microsoft Intune?](app-management.md) para ajudá-lo a atribuir o aplicativo usando o Intune.  
 
-Saiba como criar perfis de VPN personalizados usando configurações de URI em [Criar perfis de VPN personalizados](custom-vpn-profiles-create.md).     
+Aprenda a criar perfis de VPN personalizados usando configurações de URI em [Criar um perfil com configurações personalizadas](custom-settings-configure.md).
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Criar um perfil de dispositivo que contém configurações de VPN
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, escolha **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo**, escolha **Gerenciar** > **Perfis**.
-3. No painel de perfis, escolha **Criar perfil**.
-4. No painel **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de VPN.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+4. Insira um **Nome** e uma **Descrição** para o perfil VPN.
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações de VPN. No momento, é possível escolher uma das seguintes plataformas para as configurações de dispositivo VPN:
-    - **Android**
-    - **Android for Work**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 e posterior**
-    - **Windows 10 e posterior**
+  - **Android**
+  - **Android for Work**
+  - **iOS**
+  - **macOS**
+  - **Windows Phone 8.1**
+  - **Windows 8.1 e posterior**
+  - **Windows 10 e posterior**
 6. Na lista suspensa de tipos de **Perfil**, escolha **VPN**.
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
-    - [Configurações do Android e do Android for Work](vpn-settings-android.md)
-    - [Configurações do iOS](vpn-settings-ios.md)
-    - [Configurações do macOS](vpn-settings-macos.md)
-    - [Configurações do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
-    - [Configurações do Windows 8.1](vpn-settings-windows-8-1.md)
-    - [Configurações do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
-8. Quando terminar, volte para o painel **Criar perfil** e selecione **Criar**.
+  - [Configurações do Android e do Android for Work](vpn-settings-android.md)
+  - [Configurações do iOS](vpn-settings-ios.md)
+  - [Configurações do macOS](vpn-settings-macos.md)
+  - [Configurações do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
+  - [Configurações do Windows 8.1](vpn-settings-windows-8-1.md)
+  - [Configurações do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
+8. Ao terminar, escolha **Criar** seu perfil
 
-O perfil é criado e aparece no painel da lista de perfis.
-Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
-
+O perfil é criado e exibido na lista de perfis. Para atribuir esse perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
 
@@ -88,7 +91,7 @@ Perfis VPN podem usar uma série de tipos de conexão e protocolos diferentes, d
 
 ### <a name="certificates"></a>Certificados
 
-Ao criar o perfil de VPN, escolha um perfil de certificado SCEP ou PKCS criado anteriormente no Intune. Esse perfil é conhecido como certificado de identidade. Ele é usado para autenticar um perfil de certificado confiável (ou *certificado raiz*) que você criou para estabelecer que o dispositivo do usuário tem permissão para se conectar. O certificado confiável é atribuído no computador que autentica a conexão de VPN, em geral, o servidor VPN.
+Ao criar o perfil de VPN, escolha um perfil de certificado SCEP ou PKCS criado anteriormente no Intune. Esse perfil é conhecido como certificado de identidade. Ele é usado para autenticar um perfil de certificado confiável (ou *certificado raiz*) que você criou para permitir que o dispositivo do usuário consiga se conectar. O certificado confiável é atribuído no computador que autentica a conexão de VPN, em geral, o servidor VPN.
 
 Para obter mais informações sobre como criar e usar perfis de certificado no Intune, consulte [Como configurar certificados com o Microsoft Intune](certificates-configure.md).
 

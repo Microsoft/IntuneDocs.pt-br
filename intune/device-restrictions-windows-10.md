@@ -1,28 +1,27 @@
 ---
-title: "Configurações de restrição de dispositivo do Microsoft Intune para Windows 10"
-titlesuffix: 
-description: "Conheça as configurações do Microsoft Intune que você pode usar para controlar as configurações e as funcionalidades de dispositivos que executam o Windows 10."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Configurações de restrições de dispositivo para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
+description: Conheça as configurações do Microsoft Intune que você pode usar para controlar as configurações e as funcionalidades de dispositivos que executam o Windows 10.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Configurações de restrição de dispositivo do Windows 10 e posterior do Microsoft Intune
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrição de dispositivo para configurações do Windows 10 (e mais recentes) no Intune
 Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
 - **Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.
@@ -51,7 +50,6 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Espaço de trabalho do Ink** – impedir que usuários acessem o espaço de trabalho do Ink. Quando essa configuração não está configurada, o espaço de trabalho do Ink fica habilitado (o recurso é ativado) e o usuário tem permissão para usá-lo sobre a tela de bloqueio.
 - **Reimplantação automática** – permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
 
-
 ## <a name="password"></a>Senha
 -   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
     -   **Tipo de senha exigida** – Especifica se a senha deve ser apenas numérica ou alfanumérica.
@@ -75,7 +73,6 @@ Para dispositivos que executam o Windows Mobile 10: depois que a entrada falhar 
 -   **Aceitação automática de solicitações de consentimento do usuário para privacidade e emparelhamento** – Permitir que o Windows aceite automaticamente mensagens de consentimento de emparelhamento e privacidade ao executar aplicativos.
 - **Publicar as atividades do usuário**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas.
 - **Apenas atividades locais**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas com base somente em atividades locais.
-
 
 Você pode definir as informações que todos os aplicativos no dispositivo podem acessar. Você pode definir exceções de acordo com o aplicativo que usa **Exceções de privacidade por aplicativo**.
 
@@ -137,8 +134,6 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 -   **Notificações do sistema na tela bloqueada** – Impede que mensagens de alerta sejam exibidas na tela de bloqueio do dispositivo.
 -   **Tempo limite da tela (somente dispositivos móveis)** – Especifica o tempo em segundos, depois do bloqueio da tela, em que ela será desligada.
 
-
-
 ## <a name="app-store"></a>Loja de aplicativos
 
 -   **Loja de aplicativos (somente dispositivo móvel)** – Habilitar ou bloquear o uso da loja de aplicativos em dispositivos Windows 10 Mobile.
@@ -152,8 +147,6 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 -   **Instalar aplicativos na unidade do sistema** - impede que os aplicativos armazenem dados na unidade do sistema do dispositivo.
 -   **DVR de Jogos (somente desktop)** - Define se é permitido registrar e transmitir jogos.
 -   **Apenas aplicativos da loja** – define se os usuários podem instalar aplicativos de locais que não sejam a loja de aplicativos.
-
-
 
 ## <a name="edge-browser"></a>Navegador Edge
 
@@ -192,6 +185,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
 ## <a name="search"></a>Pesquisar
 - **Pesquisa segura (somente dispositivos móveis)** - controla como o Cortana filtra o conteúdo adulto nos resultados da pesquisa. Você pode selecionar **Estrito**, **Moderado** ou permitir que o usuário final escolha suas próprias configurações.
+- **Exibir resultados da Web na pesquisa** – bloquear ou permitir que os resultados da Web sejam exibidos em pesquisas feitas no dispositivo.
 
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 -   **Conta da Microsoft** – Permite que o usuário associe uma conta da Microsoft ao dispositivo.
@@ -215,7 +209,6 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 -   **Configuração manual de Wi-Fi** – Controla se o usuário pode configurar suas próprias conexões Wi-Fi ou se pode usar somente as conexões configuradas por um perfil Wi-Fi (somente Windows 10 Mobile).
 -   **Intervalo de verificação de Wi-Fi** – Especifique com que frequência os dispositivos procuram redes Wi-Fi. Especifique um valor de 1 (mais frequentes) a 500 (menos frequente).
 -   **Serviços Bluetooth permitidos** – Especifique uma lista de serviços e perfis e permitidos de Bluetooth como cadeias de caracteres hexadecimais.
-
 
 ## <a name="control-panel-and-settings"></a>Painel de controle e configurações
 
@@ -258,41 +251,48 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
 ## <a name="kiosk-preview"></a>Quiosque (Versão prévia)
 
--   **Modo de quiosque** – Identifica o tipo de [modo de quiosque](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) compatível com a política. As opções incluem:
+Um dispositivo de quiosque geralmente executa um aplicativo ou um conjunto específico de aplicativos. Os usuários são impedidos de acessar quaisquer recursos ou funções no dispositivo fora de qualquer aplicativo de quiosque.
 
-      - **Não configurado** (padrão) – A política não habilita um modo de quiosque. 
-      - **Quiosque de aplicativo único** – O perfil habilita o dispositivo como um quiosque de aplicativo único.
-      - **Quiosque de vários aplicativos** – O perfil habilita o dispositivo como um quiosque de vários aplicativos.
+- **Modo de quiosque** – identifica o tipo de modo de quiosque compatível com a política. As opções incluem:
 
-    Os quiosques de aplicativo único exigem as seguintes configurações:
+  - **Não configurado** (padrão) – A política não habilita um modo de quiosque. 
+  - **Quiosque de aplicativo único** – o perfil habilita o dispositivo a executar somente um aplicativo. Quando o usuário faz logon, um aplicativo específico inicia. Esse modo também impede que o usuário abrir novos aplicativos ou alterar o aplicativo em execução.
+  - **Quiosque de vários aplicativos** – o perfil permite que o dispositivo execute vários aplicativos. Somente os aplicativos que você adicionar estão disponíveis ao usuário. O benefício de um quiosque de vários aplicativos ou de um dispositivo com finalidade fixa é proporcionar uma experiência fácil para as pessoas entenderem apenas acessando os aplicativos de que precisam e removendo da exibição os aplicativos desnecessários.
 
-      - **Conta de usuário** – Especifica a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque. Para contas ingressadas em domínios do Azure AD, especifique a conta na forma de `domain\\username@tenant.org`.
+#### <a name="single-app-kiosks"></a>Quiosques de aplicativo único
+Insira as seguintes configurações:
 
-         Para dispositivos em ambientes públicos, use contas com privilégios mínimos para impedir atividades não autorizadas.  
+- **Conta de usuário** – insira a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque. Para contas ingressadas em domínios do Azure AD, especifique a conta usando o formato `domain\username@tenant.org`. 
 
-      - **AUMID (ID do modelo de usuário do aplicativo)** – Especifica a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
+    Para quiosques em ambientes de público com logon automático habilitado, um tipo de usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Para configurar uma conta do Azure AD (Active Directory) para o modo de quiosque, use o formato `AzureAD\user@contoso.com`.
 
-    Os [quiosques de vários aplicativos](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) exigem uma configuração de quiosque. Use o botão **Adicionar** para criar uma configuração de quiosque ou selecionar uma existente.
+- **AUMID (ID do modelo de usuário do aplicativo)** – insira a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
 
-    As configurações de quiosque de vários aplicativos incluem as seguintes configurações:
+#### <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
+[Quiosques de vários aplicativos](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) usam uma configuração de quiosque que lista os aplicativos permitidos e outras configurações. 
 
-    - **Nome da configuração de quiosque** – Um nome amigável usado para identificar uma determinada configuração.
+Use o botão **Adicionar** para criar uma configuração de quiosque (ou selecionar uma configuração existente). Então, insira as seguintes configurações:
 
-    - Um ou mais **aplicativos de quiosque** que consistem em:
+- **Nome da configuração de quiosque** – insira um nome amigável usado para identificar a configuração.
 
-        - **Tipo de aplicativo**, que especifica o tipo do aplicativo de quiosque.  Os valores suportados incluem:   
+- **Aplicativos de quiosque** – insira os aplicativos disponíveis no menu Iniciar. Os aplicativos que você adicionar são os únicos aplicativos que o usuário pode abrir.
 
-            - **Aplicativo Win32** – Um aplicativo da área de trabalho tradicional. (Você precisa do nome do caminho totalmente qualificado do executável, com relação ao dispositivo.)
+  - **Tipo de aplicativo** – escolha o tipo de aplicativo de quiosque:
+    - **Aplicativo Win32** – Um aplicativo da área de trabalho tradicional. Você precisa do nome do caminho totalmente qualificado do executável com relação ao dispositivo.
+    - **Aplicativo UWP** – Um aplicativo universal do Windows. Você precisa do [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **Aplicativo UWP** – Um aplicativo universal do Windows. Você precisa do [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Identificador** – insira o nome do caminho totalmente qualificado do arquivo executável (aplicativos Win32) ou a [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos UWP).
 
-        - **Identificador do aplicativo** – Especifique o nome do caminho totalmente qualificado do arquivo executável (aplicativos Win32) ou a [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos UWP).
+- **Barra de tarefas**: escolha **Habilitar** (mostrar) na barra de tarefas ou mantenha-a como **Não configurada** (oculta) no quiosque.
 
-    - **Barra de tarefas** indica se a barra de tarefas é exibida (**Habilitado**) ou se está oculta (**Não configurado**) no quiosque.
+- **Layout do menu Iniciar** – insira um arquivo XML que descreva como os aplicativos aparecem no menu Iniciar. [Personalizar e exportar o layout inicial](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas diretrizes e XML de exemplo.
 
-    - **Layout do menu Iniciar** – Especifica um arquivo XML que descreve como os aplicativos [são exibidos no menu Iniciar](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Usuários atribuídos** – especifica uma ou mais contas de usuário associadas à configuração de quiosque. A conta pode ser local para o dispositivo ou para um logon de conta do Azure AD associado ao aplicativo de quiosque. Especifique contas ingressadas em domínio na forma de `domain\\username@tenant.org`.
+  [Criar um quiosque Windows 10 que executa vários aplicativos](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) fornece mais detalhes sobre como usar e criar arquivos XML.
+
+- **Usuários atribuídos** – adicione uma ou mais contas de usuário que podem usar os aplicativos que você adicionar. Quando a conta se conecta, apenas os aplicativos definidos na configuração estão disponíveis. A conta pode ser local para o dispositivo ou para um logon de conta do Azure AD associado ao aplicativo de quiosque.
+
+    Para quiosques em ambientes de público com logon automático habilitado, um tipo de usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Para configurar uma conta do Azure AD (Active Directory) para o modo de quiosque, use o formato `domain\user@tenant.com`.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender Antivírus
 
@@ -328,14 +328,11 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
     -   **Definido pelo usuário**
     -   **Bloquear**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Windows Defender Antivírus
 
 -   **Arquivos e pastas a serem excluídas da verificação e proteção em tempo real** – Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Esses arquivos e pastas não serão incluídos em verificações em tempo real ou programadas.
 -   **Extensões de arquivos a serem excluídas de verificações e proteção em tempo real** – Adicione uma ou mais extensões de arquivo como **jpg** ou **txt** à lista de exclusões. Qualquer arquivo com essas extensões não serão incluídos em verificações em tempo real ou programadas.
 -   **Processos a serem excluídos de verificações e proteção em tempo real** – Adicionar um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Esses processos não serão incluídos em verificações em tempo real ou programadas.
-
 
 ## <a name="network-proxy"></a>Proxy de rede
 
@@ -348,9 +345,7 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
     -   **Exceções de proxy** - insira todas as URLs que não devem usar o servidor proxy. Use um ponto e vírgula para separar cada item.
     -   **Ignorar servidor proxy para endereços locais** – habilite esta opção se você não quiser usar o servidor proxy para endereços locais na intranet.
 
-
 ## <a name="windows-spotlight"></a>Destaque do Windows
-
 
 - **Destaque do Windows** – Use essa configuração para bloquear todas as funcionalidades de Destaque do Windows em dispositivos Windows 10. Se você bloquear essa configuração, as configurações a seguir não estarão disponíveis.
     - **Destaque do Windows na tela de bloqueio** – Impedir que o Destaque do Windows exiba informações na tela de bloqueio do dispositivo.
@@ -360,7 +355,6 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
     - **Destaque do Windows na Central de Ações** – Impedir que as sugestões de Destaque do Windows como um novo aplicativo ou conteúdo de segurança apareça no Windows Action Center.
     - **Personalização do Windows Spotlight** – Impede que o Destaque do Windows personalize os resultados com base no uso de um dispositivo.
     - **Experiência de boas-vindas do Windows** – Bloqueia a experiência de boas-vinda do Windows, que mostra as informações do usuário sobre os recursos atualizados ou atualizados.
-
 
 ## <a name="projection"></a>Projeção
 
@@ -394,15 +388,3 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
 - **Sincronização de mensagem (somente móvel)** – desabilite Mensagens em qualquer lugar e backup e restauração de mensagem de texto.
 - **MMS (somente móvel)** – desabilite a funcionalidade de envio/recebimento de MMS no dispositivo.
 - **RCS (somente móvel)** – desabilite a funcionalidade de envio/recebimento dos Serviços de Comunicação no dispositivo.
-
-
-
-
-
-
-
-
-
-
-
-

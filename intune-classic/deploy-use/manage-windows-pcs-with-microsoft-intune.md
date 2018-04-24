@@ -1,28 +1,28 @@
 ---
 title: Gerenciar computadores com o software cliente
 description: Gerenciar computadores Windows instalando o software cliente do Intune.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 8790863f4cfb3b0b8fdcf4f7aedbfc338ae64667
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerenciar computadores Windows como computadores por meio do cliente de software do Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune fornece às organizações uma solução abrangente para gerenciar dispositivos móveis. O Intune pode gerenciar computadores Windows como dispositivos móveis usando os recursos modernos de gerenciamento de dispositivo integrados ao sistema operacional Windows 10. Para atender às necessidades de gerenciamento de sua organização, o Intune também pode gerenciar computadores Windows como computadores com o cliente de software do Intune. Esse método de gerenciamento usa recursos tradicionais de gerenciamento de computador no sistema operacional Windows herdado.
 

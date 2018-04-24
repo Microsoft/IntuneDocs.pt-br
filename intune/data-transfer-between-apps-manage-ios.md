@@ -1,25 +1,25 @@
 ---
-title: "Gerenciar a transferência de dados entre aplicativos iOS"
+title: Gerenciar a transferência de dados entre aplicativos iOS
 titlesuffix: Microsoft Intune
-description: "Entenda como usar políticas de gerenciamento de aplicativo móvel no Microsoft Intune para gerenciar transferências de dados entre aplicativos."
-keywords: 
+description: Entenda como usar políticas de gerenciamento de aplicativo móvel no Microsoft Intune para gerenciar transferências de dados entre aplicativos.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gerenciar aplicativos iOS
@@ -63,9 +63,9 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 
 2. Na seção Configuração do Aplicativo, insira a seguinte configuração:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  A sintaxe exata do par chave/valor pode diferir com base no provedor de MDM de terceiros. A tabela a seguir mostra exemplos de provedores de MDM de terceiros e os valores exatos que você deve digitar para o par chave/valor.
+   A sintaxe exata do par chave/valor pode diferir com base no provedor de MDM de terceiros. A tabela a seguir mostra exemplos de provedores de MDM de terceiros e os valores exatos que você deve digitar para o par chave/valor.
 
 |Provedor de MDM de terceiros| Chave de Configuração | Tipo de valor | Valor da Configuração|
 | ------- | ---- | ---- | ---- |

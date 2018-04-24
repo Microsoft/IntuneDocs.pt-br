@@ -331,6 +331,6 @@ __Agora, o componente Xamarin do SDK de Aplicativo dá suporte ao MAM sem regist
 
 __O certificado de autenticação da Symantec não exige mais um Portal da Empresa assinado do Windows Phone 8 para upload__ O upload do certificado de autenticação da Symantec não exigirá mais um aplicativo de Portal da Empresa assinado do Windows Phone 8. O certificado pode ser carregado de forma independente.
 
-###<a name="deprecations"></a>Desativações
+### <a name="deprecations"></a>Desativações
 
 __Suporte para o Portal da Empresa do Windows Phone 8__ O suporte para o Portal da Empresa do Windows Phone 8 será preterido. O suporte para as plataformas Windows Phone 8 e WinRT foi preterido em outubro de 2016. O suporte para o Portal da Empresa do Windows 8 também foi preterido em outubro de 2016.

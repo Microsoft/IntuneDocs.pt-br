@@ -1,27 +1,27 @@
 ---
-title: "Configurações de restrição de dispositivo do Microsoft Intune para dispositivos que executam o Windows 8.1"
-titleSuffix: 
-description: "Conheça as definições do Intune que você pode usar para controlar configurações e as funcionalidades do dispositivo nos dispositivos que executam o Windows 8.1."
-keywords: 
+title: Configurações de restrição de dispositivo do Microsoft Intune para dispositivos que executam o Windows 8.1
+titleSuffix: ''
+description: Conheça as definições do Intune que você pode usar para controlar configurações e as funcionalidades do dispositivo nos dispositivos que executam o Windows 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d0203a8bea8a058d71130b16706269cb9a462cb3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Configurações de restrição de dispositivo Windows 8.1 e posterior do Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que podem ser definidas para dispositivos que executam o Windows 8.1 e posterior.
 

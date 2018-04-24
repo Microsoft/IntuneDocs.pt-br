@@ -1,31 +1,29 @@
 ---
-title: "Resolução de ameaças encontradas pelo Symantec Endpoint Protection Mobile para iOS | Microsoft Docs"
-description: "Saiba como corrigir ameaças encontradas em seu dispositivo iOS."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Resolução de ameaças encontradas pelo Symantec Endpoint Protection Mobile para iOS | Microsoft Docs
+description: Saiba como corrigir ameaças encontradas em seu dispositivo iOS.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d85fd82d4af0c35c6bd6cd9bf329c5d981b6693b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça encontrada pelo Symantec Endpoint Protection Mobile
 
-O Symantec Endpoint Protection Mobile encontrou uma ameaça em potencial em seu dispositivo e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email da empresa ou escola. A mensagem que aparecerá para você pode ser parecida com esta:
-
-![Mensagem de não conformidade do Symantec Endpoint Protection Mobile](./media/ios-skycure-noncompliant-in-ssp.png)
+O Symantec Endpoint Protection Mobile encontrou uma ameaça em potencial em seu dispositivo e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email da empresa ou escola. 
 
 Para resolver o problema, abra o aplicativo Symantec Endpoint Protection Mobile e siga as instruções mostradas no aplicativo.
 

@@ -1,29 +1,29 @@
 ---
-title: "Referência de política de configuração"
-description: "Use as informações neste tópico para ajudar na decisão sobre qual política do Microsoft Intune você precisa usar para gerenciar seus dispositivos."
-keywords: 
+title: Referência de política de configuração
+description: Use as informações neste tópico para ajudar na decisão sobre qual política do Microsoft Intune você precisa usar para gerenciar seus dispositivos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referência da política de configuração do Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use as informações neste tópico para ajudar na decisão sobre qual política de configuração do Microsoft Intune você precisa usar para gerenciar seus dispositivos.
 
@@ -102,12 +102,13 @@ Aplica-se somente ao Windows Phone e a dispositivos Windows registrados.
 
 ## <a name="common-mobile-device-settings"></a>Configurações comuns de dispositivo móvel
 
-|Nome da política|Use quando desejar|
-|---------------|------------------------|
-|**Política do Exchange ActiveSync**|Configure a segurança do dispositivo móvel e configurações funcionais para dispositivos que são gerenciados pelo Exchange ActiveSync.<br /><br />Para detalhes, consulte [Exchange ActiveSync policy settings in Microsoft Intune (Configurações de política do Exchange ActiveSync no Microsoft Intune)](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Política de segurança de dispositivo móvel**|<ul><li>Configura as configurações para dispositivos móveis (todas as plataformas), incluindo:<br /><br /><ul><li>Segurança </li><li>Criptografia</li><li>Sistema</li><li>Email</li><li>Aplicativos</li></ul></li></ul>
+|                  Nome da política                   |                                                                                                                       Use quando desejar                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Política do Exchange ActiveSync</strong>   | Configure a segurança do dispositivo móvel e configurações funcionais para dispositivos que são gerenciados pelo Exchange ActiveSync.<br /><br />Para detalhes, consulte [Exchange ActiveSync policy settings in Microsoft Intune (Configurações de política do Exchange ActiveSync no Microsoft Intune)](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Política de segurança de dispositivo móvel</strong> |                                  <ul><li>Configura as configurações para dispositivos móveis (todas as plataformas), incluindo:<br /><br /><ul><li>Segurança </li><li>Criptografia</li><li>Sistema</li><li>Email</li><li>Aplicativos</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-O Microsoft Intune agora traz **políticas de configuração** separadas para cada plataforma de dispositivo e essas políticas contêm as configurações mais recentes que você pode usar. Você pode continuar a usar a política de segurança de dispositivo móvel e todas as implantações existentes continuarão funcionando, mas você deve planejar a migração para as novas políticas de configuração assim que possível.<br />Para detalhes, consulte [Mobile device security policy settings in Microsoft Intune (Configurações de política de segurança de dispositivo móvel no Microsoft Intune)](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> O Microsoft Intune agora traz **políticas de configuração** separadas para cada plataforma de dispositivo e essas políticas contêm as configurações mais recentes que você pode usar. Você pode continuar a usar a política de segurança de dispositivo móvel e todas as implantações existentes continuarão funcionando, mas você deve planejar a migração para as novas políticas de configuração assim que possível.<br />Para detalhes, consulte [Mobile device security policy settings in Microsoft Intune (Configurações de política de segurança de dispositivo móvel no Microsoft Intune)](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Políticas para computadores Windows gerenciados pelo cliente de software do Intune
 

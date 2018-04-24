@@ -1,29 +1,29 @@
 ---
-title: "Proteger dados de aplicativos usando políticas de MAM"
-description: "Este tópico explica como as políticas de gerenciamento de aplicativo móvel podem ajudar a proteger os dados da empresa, evitar perda de dados e manter as informações pessoais e de trabalho separadas."
-keywords: 
+title: Proteger dados de aplicativos usando políticas de MAM
+description: Este tópico explica como as políticas de gerenciamento de aplicativo móvel podem ajudar a proteger os dados da empresa, evitar perda de dados e manter as informações pessoais e de trabalho separadas.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: dcdee874e42aa9511c09fda43a8cc662afaea38a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger dados de aplicativo usando políticas de proteção de aplicativo com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Como proteger os dados do aplicativo
 Os funcionários usam dispositivos móveis para tarefas de pessoais e corporativas. Embora seja necessário verificar se seus funcionários estão produtivos, você também deseja evitar a perda de dados, intencional ou acidental.  Além disso, você deseja ter a capacidade de proteger os dados corporativos que os funcionários acessam usando dispositivos não gerenciados.
@@ -57,7 +57,7 @@ Há benefícios adicionais em usar MDM com políticas de proteção de aplicativ
 - **Políticas de proteção de aplicativo garantem que as proteções de camada de aplicativo estejam em vigor.** Por exemplo, é possível ter uma política que exige um PIN para abrir um aplicativo em um contexto corporativo, impedir dados de serem compartilhados entre aplicativos e impedir que os dados de aplicativo da empresa sejam salvos em um local de armazenamento pessoal.
 
 ## <a name="devices-that-support-mam"></a>Dispositivos em que há suporte para MAM
-O suporte da plataforma de políticas de proteção de aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo do Office. Para obter detalhes, consulte [Requisitos do sistema Office](https://products.office.com/en-US/office-system-requirements).
+O suporte da plataforma de políticas de Proteção de Aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo do Office. Para obter detalhes, consulte [Requisitos do sistema para o Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Os dispositivos Windows não são compatíveis com o MAM sem um cenário de registro. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

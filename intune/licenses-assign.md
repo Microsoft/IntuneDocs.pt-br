@@ -14,15 +14,15 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: decb2dee8d2029c70f7f08df507f42211e0f21bb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos usuários para que possam registrar dispositivos no Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Se você adicionar usuários manualmente ou sincronizar a partir de seu Active Directory local, primeiro atribua a cada usuário uma licença do Intune para que eles possam registrar seus dispositivos no Intune. Para obter uma lista das licenças, consulte [Licenças que incluem o Intune](licenses.md).
 
@@ -30,13 +30,13 @@ Se você adicionar usuários manualmente ou sincronizar a partir de seu Active D
 
 Use o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
 
-1.  Entre no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatário e escolha **Usuários** > **Usuários Ativos**.
+1. Entre no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatário e escolha **Usuários** > **Usuários Ativos**.
 
-2.  Selecione a conta de usuário a qual você deseja atribuir uma licença de usuário do Intune e escolha **Licenças de produto** > **Editar**.
+2. Selecione a conta de usuário a qual você deseja atribuir uma licença de usuário do Intune e escolha **Licenças de produto** > **Editar**.
 
-3.  Mude **Intune** ou **Enterprise Mobility + Security** para **Ativado** e escolha **Salvar**.
+3. Mude **Intune** ou **Enterprise Mobility + Security** para **Ativado** e escolha **Salvar**.
 
-  ![Captura de tela do portal do Office 365, seção Licenças de produto.](./media/office-assign-license.png)
+   ![Captura de tela do portal do Office 365, seção Licenças de produto.](./media/office-assign-license.png)
 
 4. Agora, a conta de usuário tem as permissões necessárias para usar o serviço e registrar os dispositivos no gerenciamento.
 

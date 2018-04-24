@@ -1,29 +1,29 @@
 ---
 title: Proteger o SharePoint Online
 description: Proteja e controle o acesso aos dados da empresa no SharePoint Online usando o acesso condicional.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Proteger o acesso ao SharePoint Online com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use o acesso condicional do Microsoft Intune para controlar o acesso a arquivos localizados no SharePoint Online.
 O acesso condicional tem dois componentes:
@@ -81,16 +81,16 @@ Há suporte para os recursos a seguir:
 Há suporte para os recursos a seguir:
 - Windows 8.1 e posterior (quando os computadores são registrado com o Intune)
 - Windows 7.0, Windows 8.1 ou Windows 10 (quando os computadores estão ingressados no domínio),
-> [!NOTE]
->Para usar o acesso condicional em PCs com Windows 10, você deve atualizar esses PCs com a Atualização de Aniversário do Windows 10.
+  > [!NOTE]
+  >Para usar o acesso condicional em PCs com Windows 10, você deve atualizar esses PCs com a Atualização de Aniversário do Windows 10.
 
   - Computadores ingressados no domínio devem ser configurados para [se registrarem automaticamente](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) no Azure Active Directory. O Registro de Dispositivos do Azure AD será ativado automaticamente para clientes do Intune e do Office 365. Clientes que já tiverem implantado o Serviço de Registro de Dispositivos do ADFS não verão dispositivos registrados no seu Active Directory local.
 
   - Se a política estiver definida para exigir o ingresso no domínio e o computador não estiver ingressado no domínio, uma mensagem será exibida para que o usuário entre em contato com o administrador de TI.
 
   - Se a política estiver definida para exigir ingresso no domínio ou conformidade e o computador não atender a nenhum dos dois requisitos, será exibida uma mensagem com instruções sobre como instalar o aplicativo do Portal da Empresa e realizar o registro.
-  >[!NOTE]
-  >Não há suporte ao acesso condicional em computadores que executam o cliente de computador Intune.
+    >[!NOTE]
+    >Não há suporte ao acesso condicional em computadores que executam o cliente de computador Intune.
 
 [A autenticação moderna do Office 365 deve estar habilitada](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
 
@@ -124,7 +124,7 @@ Para obter detalhes sobre como configurar a política de conformidade, consulte 
 Quando estiver pronto, continue na **Etapa 3**.
 
 ### <a name="step-3-configure-the-sharepoint-online-policy"></a>Etapa 3: Configurar a política do SharePoint Online
-Em seguida, configure a política para exigir que somente dispositivos gerenciados e compatíveis possam acessar o SharePoint Online. Essa política será armazenada no Azure Active Directory.
+Em seguida, configure a política para exigir que somente dispositivos gerenciados e em conformidade possam acessar o SharePoint Online. Essa política será armazenada no Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
 
@@ -132,24 +132,24 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
 > Também é possível criar uma política de acesso condicional para dispositivos do Intune no console de gerenciamento do Azure AD (a política é conhecida como o **política de acesso condicional com base no dispositivo** no Azure AD). Além disso, é possível criar outras políticas de acesso condicional, como a autenticação multifator. Também é possível definir políticas de acesso condicional para aplicativos empresariais de terceiros com suporte do Azure AD, como Salesforce e Box. Para obter mais detalhes, consulte [Como definir a política de acesso condicional com base no dispositivo do Azure Active Directory para controle de acesso dos aplicativos conectados do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do SharePoint Online**.
-![Captura de tela da página de Política do SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do SharePoint Online**.
+   ![Captura de tela da página de Política do SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  Selecione **Habilitar política de acesso condicional para o SharePoint Online**.
+2. Selecione **Habilitar política de acesso condicional para o SharePoint Online**.
 
-3.  Em **Acesso ao aplicativo**, é possível optar por aplicar a política de acesso condicional a:
+3. Em **Acesso ao aplicativo**, é possível optar por aplicar a política de acesso condicional a:
 
-    -   **Todas as plataformas**
+   - **Todas as plataformas**
 
-        Isso requer que qualquer dispositivo usado para acessar o **SharePoint Online** seja registrado no Intune e esteja compatível com as políticas. Qualquer aplicativo cliente que use a **autenticação moderna** está sujeito à política de acesso condicional. Se a plataforma não tiver suporte do Intune, o acesso ao **SharePoint Online** será bloqueado.
+     Isso requer que qualquer dispositivo usado para acessar o **SharePoint Online** seja registrado no Intune e esteja compatível com as políticas. Qualquer aplicativo cliente que use a **autenticação moderna** está sujeito à política de acesso condicional. Se a plataforma não tiver suporte do Intune, o acesso ao **SharePoint Online** será bloqueado.
 
-        Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente. Todas as plataformas precisarão ser registradas e se tornarem compatíveis, exceto:
-        *   Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
-        * Plataformas sem suporte, como Mac. No entanto, os aplicativos que usam autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
+     Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplicará essa política a todas as solicitações de autenticação, independentemente da plataforma relatada pelo aplicativo cliente. Todas as plataformas precisarão ser registradas e se tornarem compatíveis, exceto:
+     *   Dispositivos Windows, que precisarão ser registrados e compatíveis, ingressados no domínio com o Active Directory local ou ambas as opções.
+     * Plataformas sem suporte, como Mac. No entanto, os aplicativos que usam autenticação moderna provenientes dessas plataformas ainda estarão bloqueados.
 
-    -   **Plataformas específicas**
+   - **Plataformas específicas**
 
-         A política de acesso condicional se aplicará a qualquer aplicativo cliente que usar a autenticação moderna nas plataformas que você especificar.
+      A política de acesso condicional se aplicará a qualquer aplicativo cliente que usar a autenticação moderna nas plataformas que você especificar.
 
      Para computadores Windows, este deve estar ingressado no domínio ou então ser registrado no Intune e ser compatível. Você pode definir os seguintes requisitos:
 
@@ -157,28 +157,28 @@ Em seguida, configure a política para exigir que somente dispositivos gerenciad
 
      -   **Os dispositivos devem ser compatíveis.** Escolha essa opção para exigir que os computadores sejam compatíveis e estejam registrados no Intune. Se um computador não estiver registrado, será exibida uma mensagem com instruções sobre como registrá-lo.
 
-4.   Em **Acesso do navegador** ao SharePoint Online e OneDrive for Business, é possível optar por permitir o acesso ao Exchange Online somente por meio de navegadores com suporte: Safari (iOS) e Chrome (Android). O acesso de outros navegadores será bloqueado. As mesmas restrições de plataforma que você selecionou para acesso de aplicativo para o OneDrive também se aplicam aqui.
+4. Em **Acesso do navegador** ao SharePoint Online e OneDrive for Business, é possível optar por permitir o acesso ao Exchange Online somente por meio de navegadores com suporte: Safari (iOS) e Chrome (Android). O acesso de outros navegadores será bloqueado. As mesmas restrições de plataforma que você selecionou para acesso de aplicativo para o OneDrive também se aplicam aqui.
 
-  Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador. Para isso, o usuário deve habilitar a opção **Habilitar Acesso do Navegador** no dispositivo registrado da seguinte maneira:
-  1.    Abra o aplicativo do **Portal da Empresa**.
-  2.    Vá para a página **Configurações** por meio das reticências (...) ou do botão de menu do hardware.
-  3.    Pressione o botão **Habilitar Acesso do Navegador**.
-  4.    No navegador Chrome, saia do Office 365 e reinicie o Chrome.
+   Em dispositivos **Android**, os usuários devem habilitar o acesso do navegador. Para isso, o usuário deve habilitar a opção **Habilitar Acesso do Navegador** no dispositivo registrado da seguinte maneira:
+   1.    Abra o aplicativo do **Portal da Empresa**.
+   2.    Vá para a página **Configurações** por meio das reticências (...) ou do botão de menu do hardware.
+   3.    Pressione o botão **Habilitar Acesso do Navegador**.
+   4.    No navegador Chrome, saia do Office 365 e reinicie o Chrome.
 
-  Em plataformas **iOS** e **Android**, para identificar o dispositivo usado para acessar o serviço, o Azure Active Directory emite um certificado de protocolo TLS para o dispositivo. O dispositivo exibe o certificado com uma solicitação ao usuário final para selecionar o certificado, conforme mostrado nas capturas de tela a seguir. O usuário deve selecionar esse certificado antes que seja possível usar o navegador.
+   Em plataformas **iOS** e **Android**, para identificar o dispositivo usado para acessar o serviço, o Azure Active Directory emite um certificado de protocolo TLS para o dispositivo. O dispositivo exibe o certificado com uma solicitação ao usuário final para selecionar o certificado, conforme mostrado nas capturas de tela a seguir. O usuário deve selecionar esse certificado antes que seja possível usar o navegador.
 
-  **iOS**
+   **iOS**
 
-  ![Captura de tela da solicitação de certificado em um iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![Captura de tela da solicitação de certificado em um iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Android**
 
-  ![Captura de tela da solicitação de certificado em um dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política se aplica. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
+   ![Captura de tela da solicitação de certificado em um dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
+5. Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política se aplica. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
 
-6.  Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
+6. Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
 
-7.  Quando terminar, selecione **Salvar**.
+7. Quando terminar, selecione **Salvar**.
 
 Não é necessário implantar a política de acesso condicional, ela entra em vigor imediatamente.
 

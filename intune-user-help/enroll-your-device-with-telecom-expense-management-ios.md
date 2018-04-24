@@ -1,27 +1,27 @@
 ---
-title: "Registrar seu dispositivo iOS no gerenciamento de despesas de telecomunicações com o Intune"
-description: "Saiba como registrar um dispositivo iOS no gerenciamento de despesas de telecomunicações."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Registrar seu dispositivo iOS no gerenciamento de despesas de telecomunicações com o Intune
+description: Saiba como registrar um dispositivo iOS no gerenciamento de despesas de telecomunicações.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Registrar seu dispositivo iOS no gerenciamento de despesas de telecomunicações
 
@@ -40,11 +40,11 @@ Selecione a opção apropriada, e você receberá uma notificação para instala
 
 1. Selecione __Registrar-se com a conta da Microsoft__.
 
-  ![Uma imagem de tela Configurações do aplicativo Datalert, que oferece um campo de número de telefone para registrar um dispositivo na metade superior da tela e "registrar com a conta da Microsoft" na parte inferior, desde que você tenha uma conta do Microsoft Office 365 e uma assinatura do Intune.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![Uma imagem de tela Configurações do aplicativo Datalert, que oferece um campo de número de telefone para registrar um dispositivo na metade superior da tela e "registrar com a conta da Microsoft" na parte inferior, desde que você tenha uma conta do Microsoft Office 365 e uma assinatura do Intune.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. Você receberá uma notificação de que o __"Datalert" deseja abrir o "Autenticador"__. Selecione __Abrir__.
 
-  ![Uma imagem da janela pop-up solicitando que o usuário abra o aplicativo Authenticator mediante solicitação do aplicativo Datalert.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+   ![Uma imagem da janela pop-up solicitando que o usuário abra o aplicativo Authenticator mediante solicitação do aplicativo Datalert.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
 3. Entre com sua __conta corporativa ou de estudante da Microsoft__. A instalação do Datalert ocorrerá por alguns instantes até ser concluída. Toque em __Concluir__ após a conclusão.
 
@@ -52,15 +52,15 @@ Selecione a opção apropriada, e você receberá uma notificação para instala
 
 1. Forneça o número de telefone do dispositivo.
 
-  ![Uma captura de tela do aplicativo Datalert solicitando um número de telefone.](./media/ios-enroll-12-tem-datalert-phone-number.png)
+   ![Uma captura de tela do aplicativo Datalert solicitando um número de telefone.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
 2. Você receberá um código de verificação por meio de uma mensagem SMS. Forneça o código e toque em __OK__.
 
-  ![Uma captura de tela do aplicativo Datalert solicitando o código de verificação SMS.](./media/ios-enroll-13-tem-datalert-sms.png)
+   ![Uma captura de tela do aplicativo Datalert solicitando o código de verificação SMS.](./media/ios-enroll-13-tem-datalert-sms.png)
 
 3. Se você tiver fornecido o código de verificação, a instalação de Datalert estará concluída. Toque em __Concluir__ e você será capaz de monitorar os dados do aplicativo Datalert.
 
-  ![Uma captura de tela do aplicativo Datalert monitorando o uso de dados de hoje.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
+   ![Uma captura de tela do aplicativo Datalert monitorando o uso de dados de hoje.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
 Depois de ter registrado, você começará a ver o seu uso de dados no aplicativo Datalert.
 

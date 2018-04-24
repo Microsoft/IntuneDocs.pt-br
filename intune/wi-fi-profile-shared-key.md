@@ -1,29 +1,33 @@
 ---
-title: "Criar perfil de WiFi com chave pré-compartilhada – Microsoft Intune – Azure | Micrososft Docs"
-description: "Use um perfil personalizado para criar um perfil de Wi-Fi com uma chave pré-compartilhada e obtenha um exemplo de código XML para perfis de Wi-Fi baseados em EAP, Android e Windows no Microsoft Intune"
-keywords: 
+title: Criar perfil de WiFi com chave pré-compartilhada – Microsoft Intune – Azure | Micrososft Docs
+description: Use um perfil personalizado para criar um perfil de Wi-Fi com uma chave pré-compartilhada e obtenha um exemplo de código XML para perfis de Wi-Fi baseados em EAP, Android e Windows no Microsoft Intune
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Use um perfil de dispositivo personalizado para criar um perfil de WiFi com uma chave pré-compartilhada – Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As PSK (chaves pré-compartilhadas) normalmente são usadas para autenticar usuários em redes WiFi ou em LANs sem fio. Com o Intune, é possível criar um perfil de WiFi usando uma chave pré-compartilhada. Para criar o perfil, use o recurso **Perfis de dispositivo personalizados** no Intune. Este artigo também inclui alguns exemplos de como criar um perfil de Wi-Fi baseado em EAP.
+
+> [!IMPORTANT]
+>- Usar uma chave pré-compartilhada com Windows 10 faz com que um erro de correção apareça no Intune. Quando isso acontece, o perfil de Wi-Fi é adequadamente atribuído ao dispositivo, e o perfil funciona conforme o esperado.
+>- Se você exportar um perfil de Wi-Fi que inclua uma chave pré-compartilhada, o arquivo deverá estar protegido. A chave está em texto sem formatação, portanto, é sua responsabilidade protegê-la.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -46,15 +50,15 @@ As PSK (chaves pré-compartilhadas) normalmente são usadas para autenticar usu�
 
    d. **OMA-URI**:
 
-    - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Lembre-se de incluir o caractere de ponto no início.
+     > [!NOTE]
+     > Lembre-se de incluir o caractere de ponto no início.
 
-    SSID é o SSID para o qual você está criando a política. Por exemplo, insira `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID é o SSID para o qual você está criando a política. Por exemplo, insira `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Campo de Valor** é onde você cola o código XML. Confira os exemplos neste artigo. Atualize cada valor de acordo com as suas configurações de rede. A seção de comentários do código inclui alguns ponteiros.
+   e. **Campo de Valor** é onde você cola o código XML. Confira os exemplos neste artigo. Atualize cada valor de acordo com as suas configurações de rede. A seção de comentários do código inclui alguns ponteiros.
 3. Selecione **OK**, salvar e, em seguida, atribua a política.
 
     > [!NOTE]
@@ -203,7 +207,7 @@ Você também pode criar um arquivo XML de uma conexão Wi-Fi existente usando a
 
 1. Em um computador que esteja conectado ou que tenha sido conectado à rede sem fio, abra a pasta `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
 
-  É melhor usar um computador que não tenha sido conectado a muitas redes sem fio. Caso contrário, você precisará pesquisar cada perfil para encontrar o correto.
+   É melhor usar um computador que não tenha sido conectado a muitas redes sem fio. Caso contrário, você precisará pesquisar cada perfil para encontrar o correto.
 
 2. Pesquise os arquivos XML para localizar o arquivo com o nome correto.
 3. Depois de localizar o arquivo XML correto, copie e cole o código XML no campo **Dados** da página de configurações de OMA-URI.

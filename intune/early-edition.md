@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: b6ca8108924c6c062da0d0ef56ab5b68635dd9ca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-early-edition-for-microsoft-intune---march-2018"></a>A edição antecipada do Microsoft Intune – Março de 2018
+# <a name="the-early-edition-for-microsoft-intune---april-2018"></a>A Edição Antecipada do Microsoft Intune – abril de 2018
 
 A **edição antecipada** fornece uma lista de recursos que estarão disponíveis em versões futuras do Microsoft Intune. Essas informações são fornecidas de forma limitada e estão sujeitas a alterações. Não compartilhe essas informações fora da empresa. Alguns recursos listados aqui correm o risco de não estarem prontos na data de fechamento e serem atrasados até uma versão futura. Outros recursos estão sendo testados em um piloto (liberação de versões de pré-lançamento) para garantir que fiquem prontos para o cliente. Fale com seu contato do grupo de produtos da Microsoft em caso de perguntas ou dúvidas.
 
@@ -35,8 +35,113 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 ## What's coming to Intune apps
 ## Notices
 -->
-
+ 
 ## <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
+
+<!-- 1804 start -->
+
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802--"></a>Novas configurações do Windows Defender Credential Guard adicionadas às configurações de proteção de ponto de extremidade <!--1102252 --><!--from 1802-->
+
+As novas configurações do [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) serão adicionadas à **Configuração do dispositivo** > **Perfis** > **Proteção de ponto de extremidade**. As configurações a seguir serão adicionadas:
+
+- Nível de Segurança da Plataforma: especifique se o Nível de Segurança da Plataforma está habilitado na próxima reinicialização. A segurança baseada em virtualização requer a Inicialização Segura. A segurança baseada em virtualização pode, opcionalmente, ser habilitada com o uso de proteções de DMA (acesso direto à memória). Proteções de DMA exigem suporte de hardware e serão habilitadas somente em dispositivos configurados corretamente.
+- Segurança baseada em virtualização: especifique se a segurança baseada em virtualização será habilitada na próxima reinicialização.
+- Windows Defender Credential Guard: ative o Credential Guard com a segurança baseada em virtualização para ajudar a proteger as credenciais na próxima reinicialização quando o Nível de Segurança de Plataforma com Inicialização Segura e a Segurança Baseada em Virtualização estiverem habilitadas. As opções disponíveis incluem **Desabilitada**, **Habilitada com o bloqueio UEFI**, **Habilitada sem bloqueio** e **Não configurada**.
+  - A opção "Desabilitada" desativará o Credential Guard remotamente se ele estiver habilitado com a opção "Habilitada sem bloqueio".
+
+  - A opção "Habilitada com o bloqueio UEFI" garante que o Credential Guard não possa ser desabilitado com a chave do Registro ou usando a Política de Grupo. Para desabilitar o Credential Guard após usar essa configuração, você precisa definir a Política de Grupo como "Desabilitada" e remover a funcionalidade de segurança em cada computador, com um usuário presente fisicamente, para limpar a configuração persistente na UEFI. Enquanto a configuração da UEFI persistir, o Credential Guard estará habilitado.
+
+  - A opção "Habilitada sem bloqueio" permite que o Credential Guard seja desabilitado remotamente usando a Política de Grupo. Os dispositivos que usam essa configuração devem estar executando, pelo menos, o Windows 10 (versão 1511).
+
+  - A opção "Não configurada" deixa a configuração de política indefinida. A Política de Grupo não grava a configuração de política no Registro e, por isso, não tem impacto sobre computadores ou usuários. Se houver uma configuração atual no registro, ela não será modificada.
+
+### <a name="passcode-support-for-mam-pin-on-android---1438086---"></a>Suporte de senha para o PIN de MAM no Android<!-- 1438086 -->
+
+Os administradores do Intune poderão definir um requisito de inicialização do aplicativo para impor uma senha, em vez de um PIN numérico de MAM. Se configurado, o usuário será obrigado a definir e usar uma senha quando solicitado antes de obter acesso a aplicativos habilitados para MAM. Uma senha é definida como um PIN numérico com pelo menos um caractere especial ou letras maiúsculas/minúsculas. O Intune é compatível com senha de maneira semelhante ao PIN numérico existente, sendo capaz de definir um tamanho mínimo, permitindo caracteres e sequências repetidos por meio do console do administrador. Este recurso requer a versão mais recente do Portal da Empresa no Android. Esse recurso já está disponível para iOS.
+
+###  <a name="block-camera-and-screen-captures-on-android-for-work----1098977-eeready--"></a>Bloquear capturas de tela e a câmera no Android for Work <!-- 1098977 eeready-->
+Duas novas propriedades estarão disponíveis para bloqueio quando você configurar as restrições de dispositivo para dispositivos Android: 
+- Câmera: bloqueia o acesso a todas as câmeras no dispositivo
+- Captura de tela: bloqueia a captura de tela e também impede que o conteúdo seja mostrado em dispositivos de exibição que não tenham uma saída de vídeo segura
+
+Aplica-se a Android for Work.
+
+### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>Suporte para aplicativo de LOB (linha de negócios) do macOS <!-- 1473977 -->
+O Microsoft Intune oferecerá a capacidade de instalar aplicativos de LOB macOS do Portal do Azure. Você poderá adicionar um aplicativo de LOB macOS ao Intune depois de ele ter sido previamente processado pela ferramenta disponível no GitHub. No Portal do Azure, escolha **Aplicativos móveis** na folha **Intune**. Na folha **Aplicativos móveis**, escolha **Aplicativos** > **Adicionar**. Na folha **Adicionar Aplicativo**, selecione **Aplicativo de linha de negócios**. 
+
+### <a name="support-for-user-less-devices----1637553---"></a>Suporte para dispositivos sem usuário <!-- 1637553 -->
+O Intune será compatível com a capacidade de avaliar a conformidade em um dispositivo sem usuário, como o Microsoft Surface Hub. A política de conformidade pode ter como destino dispositivos específicos. Assim, a conformidade (e a não conformidade) pode ser determinada para dispositivos que não tenham um usuário associado.
+
+### <a name="additions-to-local-device-security-options-settings----1403702---"></a>Adições às configurações das opções de segurança do dispositivo local <!-- 1403702 -->
+Você poderá definir as configurações adicionais de Opções de Segurança de Dispositivo Local para dispositivos Windows 10. Configurações adicionais estarão disponíveis nas áreas de Cliente de Rede da Microsoft, Servidor de Rede Microsoft, Acesso e segurança de rede e Logon interativo. Encontre essas configurações na categoria Endpoint Protection quando você cria uma política de configuração de dispositivo com Windows 10.
+
+### <a name="require-installation-of-policies-apps-certificate-and-network-profiles----1553555---"></a>Requer a instalação de perfis de políticas, aplicativos, certificado e rede <!-- 1553555 -->
+Os administradores poderão impedir que usuários finais acessem a área de trabalho do Windows 10 RS4 até que o Intune instale políticas, aplicativos e perfis de certificado e de rede durante o provisionamento de dispositivos AutoPilot.
+
+### <a name="rules-for-removing-devices----1609459---"></a>Regras para remover dispositivos <!-- 1609459 -->
+Estarão disponíveis novas regras que permitem remover automaticamente dispositivos que não fizeram check-in por um número de dias que você definir. Para ver a nova regra, vá para o painel **Intune**, selecione **Dispositivos** e selecione **Regras de remoção de dispositivo**.
+
+### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Impedir aplicativos e experiências de consumidor em dispositivos Windows 10 Enterprise RS4 AutoPilot<!-- 1621980 -->
+Você poderá impedir a instalação de aplicativos e experiências de consumidor nos seus dispositivos Windows 10 Enterprise RS4 AutoPilot. Para ver esse recurso, vá para **Intune** > **Registro de dispositivo** > **Registro do Windows** > **Perfis do Windows AutoPilot** > **Criar Novo** > **Configurações de registro**. 
+
+### <a name="advanced-threat-protection-integrated-with-intune----1629303---"></a>A Proteção Avançada contra Ameaças é integrada ao Intune <!-- 1629303 -->
+[ATP (Proteção Avançada contra Ameaças)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) mostra o nível de risco de dispositivos Windows 10. Quando o Intune avalia dispositivos Windows 10 para fins de conformidade, a pontuação de risco ATP é incluída nessa avaliação. Você pode usar ATP com acesso condicional para ajudar a proteger a sua rede.
+
+### <a name="new-enrollment-steps-for-users-on-devices-with-macos-high-sierra-10132---1734567---"></a>Novas etapas de registro para usuários em dispositivos com macOS High Sierra 10.13.2+ <!--1734567 -->
+O macOS High Sierra 10.13.2 introduziu o conceito de registro do MDM "Aprovado pelo Usuário". No futuro, inscrições aprovadas permitirão que o Intune gerencie algumas configurações sensíveis de segurança. Para obter mais informações, consulte a documentação de suporte da Apple aqui: https://support.apple.com/HT208019.
+
+Dispositivos registrados usando o Portal da Empresa macOS serão considerados "Não Aprovados pelo Usuário", a menos que o usuário final abra as Preferências do Sistema e dê manualmente sua aprovação. Para esse fim, o Portal da Empresa macOS agora direciona os usuários em macOS 10.13.2 e acima e aprovar manualmente o registro no final do processo de registro. O console do administrador do Intune relatará se um dispositivo registrado for aprovado pelo usuário.
+
+### <a name="delete-autopilot-devices----1713650---"></a>Excluir dispositivos AutoPilot <!-- 1713650 -->
+Os administradores do Intune poderão excluir dispositivos AutoPilot.
+
+### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>Grupos Todos os Usuários e Todos os Dispositivos internos para atribuição de aplicativo AFW (Android for Work) <!-- 1813073 -->
+Você poderá aproveitar os grupos **Todos os Usuários** e **Todos os Dispositivos** internos para uma atribuição de aplicativo AFW. Para obter mais informações, consulte [Incluir e excluir atribuições de aplicativo no Microsoft Intune](apps-inc-exl-assignments.md).
+
+### <a name="improved-device-deletion-experience---1832333---"></a>Experiência de exclusão do dispositivo aprimorada <!--1832333 -->
+Você não precisará mais remover dados da empresa nem fazer uma redefinição de fábrica do dispositivo antes de excluir um dispositivo do Intune.
+
+Para ver a nova experiência, entre no Intune e selecione **Dispositivos** > **Todos os Dispositivos** > nome do dispositivo > **Excluir**.
+
+ Se você ainda quiser apagar/desativar a confirmação, poderá usar a rota de ciclo de vida do dispositivo padrão emitindo **Remover dados da empresa** e **Redefinição de Fábrica** antes de **Excluir**. 
+
+### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>Perfis do AutoPilot passando para grupo direcionado a <!-- 1877935 -->
+No momento, perfis de implantação do AutoPilot podem ser atribuídos a dispositivos selecionados. Até o final de abril, é assim que você atribuirá estes perfis:
+- Criar grupos (Azure AD) contendo dispositivos AutoPilot
+- Atribua os perfis desejados a um grupo do Azure AD. O perfil AutoPilot agora será atribuído a dispositivos AutoPilot naquele grupo.
+
+### <a name="play-sounds-on-ios-when-in-lost-mode----1629303---"></a>Tocar sons no iOS quando no modo Perdido <!-- 1629303 -->
+Quando dispositivos iOS supervisionados estiverem no [modo Perdido](device-lost-mode.md) do MDM (gerenciamento de dispositivo móvel), você poderá tocar um som (**Dispositivos** > **Todos os dispositivos** > selecione um dispositivo iOS > **Visão geral** > **Mais**). O som continua sendo reproduzido até o dispositivo ser removido do modo perdido ou um usuário desabilitar o som no dispositivo. Aplica-se a dispositivos iOS 9.3 e mais recentes.
+
+### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Use um nome de entidade personalizado no certificado SCEP <!-- 2064190 -->
+Você poderá usar o nome comum **OnPremisesSamAccountName** em uma entidade personalizada em um perfil de certificado SCEP. Por exemplo, você pode usar `CN={OnPremisesSamAccountName})`.
+
+### <a name="send-diagnostic-reports-in-company-portal-app-for-macos----2216677---"></a>Enviar relatórios de diagnóstico no aplicativo de Portal da Empresa para macOS <!-- 2216677 -->
+O aplicativo Portal da Empresa para dispositivos macOS será atualizado para melhorar a como os usuários relatam erros relacionados ao Intune. No aplicativo Portal da Empresa, seus funcionários poderão:
+- Carregue relatórios de diagnóstico diretamente para a equipe de desenvolvedores Microsoft.
+- Envie por email uma ID de incidente à equipe de suporte de TI da sua empresa.
+
+### <a name="always-on-vpn-for-windows-10---1333666---"></a>VPN Always On para Windows 10 <!--1333666 -->
+
+No momento, [Always On](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-auto-trigger-profile#always-on) pode ser usado em dispositivos Windows 10 usando um perfil de VPN (rede virtual privada) personalizado criado usando o OMA-URI.
+
+Com essa atualização, os administradores poderão habilitar Always On para perfis de VPN do Windows 10 diretamente no Intune no Portal do Azure. Perfis de VPN Always On conectam-se automaticamente quando:
+
+- Os usuários fazem logon em seus dispositivos
+- A rede no dispositivo muda
+- A tela do dispositivo é ativada novamente depois de ser desligada
+
+### <a name="improved-error-messaging-for-apple-mdm-push-certificate-upload-failure----2172331---"></a>Mensagens de erro aprimoradas para falha no upload do Apple MDM Push Certificate <!-- 2172331 -->
+
+A mensagem de erro explicará que a mesma ID da Apple deve ser usada durante a renovação de um certificado existente do MDM.
+
+###  <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153-eeready---"></a>A lista de status e gráfico de perfil do dispositivo mostra todos os dispositivos em um grupo <!-- 1449153 eeready -->
+Quando você configura um perfil de dispositivo (**Configuração do dispositivo** > **Perfis**), escolha o perfil do dispositivo, como iOS. Você pode atribuir esse perfil a um grupo que inclua dispositivos iOS e dispositivos não iOS. A contagem de gráfico mostra que o perfil é aplicado a dispositivos iOS *e* não iOS (**Configuração do dispositivo** > **Perfis** > selecione um perfil existente > **Visão geral**). Quando você seleciona o gráfico na guia **Visão geral**, o **Status do dispositivo** lista todos os dispositivos no grupo, em vez de apenas os dispositivos iOS. 
+
+Com essa atualização, o gráfico (**Configuração do dispositivo** > **Perfis** > selecione um perfil existente > **Visão geral**) mostrará apenas a contagem para o perfil de dispositivo específico. Por exemplo, se o perfil do dispositivo de configuração se aplicar a dispositivos iOS, o gráfico listará somente a contagem de dispositivos iOS. Selecionar o gráfico e abrir o **Status do dispositivo** lista apenas os dispositivos iOS.
+
+Enquanto essa atualização está sendo feita, o gráfico do usuário é removido temporariamente. 
+
 
 <!-- 1803 start -->
 
@@ -59,201 +164,32 @@ Você precisa criar um novo perfil de VPN do Cisco AnyConnect do iOS para dar su
 
 Integração de NAC (Controle de Acesso à Rede) não funcionará para o novo cliente AnyConnect na versão inicial. Estamos trabalhando com a Cisco para fornecer integração a NAC em uma futura versão do Intune.
 
-### <a name="enhanced-jailbreak-detection----846515---"></a>Detecção de jailbreak avançada <!-- 846515 -->
-
-A detecção de jailbreak avançada é uma nova configuração de conformidade que melhorará a maneira como o Intune avalia os dispositivos desbloqueados por jailbreak. A configuração fará com que o dispositivo faça check-in com o Intune com mais frequência, o que usará os serviços de localização do dispositivo e afetará o uso da bateria.
-
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Capacidade de implantar aplicativos LOB (aplicativo de linha de negócios) necessários para Todos os usuários em dispositivos do Windows 10 Desktop <!-- 1627835 RS4 -->
 Os clientes poderão implantar os aplicativos de linha de negócios do Windows 10 necessários que deverão ser instalados em contextos de dispositivo. Isso permitirá que esses aplicativos estejam disponíveis para todos os usuários no dispositivo. Isso se aplica somente a dispositivos Windows 10 Desktop.
 
-### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>Expiração de aplicativos de LOB (linha de negócios) para o Microsoft Intune <!-- 748789 -->
-No Portal do Azure, o Intune alertará sobre aplicativos de linha de negócios que estão prestes a expirar. Após carregar uma nova versão do aplicativo de linha de negócios, o Intune removerá a notificação de expiração da lista de aplicativos.
-
 ### <a name="company-portal-enrollment-improved----1874230--"></a>Registro do Portal da Empresa melhorado <!-- 1874230-->
 Os usuários que registrarem um dispositivo usando o Portal da Empresa no Windows 10 build 1703 e superior poderão concluir a primeira etapa de registro sem sair do aplicativo.
-
-### <a name="new-management-name-column----1333586---"></a>Coluna Novo nome de gerenciamento <!-- 1333586 -->
-Uma nova coluna chamada **Nome de gerenciamento** será adicionada à folha de dispositivos. Este é um nome não editável gerado automaticamente atribuído por dispositivo, com base na seguinte fórmula:
-- Nome padrão para todos os dispositivos: <username>_<devicetype>_<enrollmenttimestamp>
-- Para dispositivos adicionados em massa: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
-
-Esta é uma coluna opcional na folha de dispositivos. Ele não estará disponível por padrão e só será possível acessá-lo por meio do seletor de colunas. O nome do dispositivo não é afetado por essa nova coluna.
-
-### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>Novas definições do perfil de configuração de dispositivo de notificações da Central de Segurança do Windows Defender <!-- 1631906 -->
-
-Três novas definições serão adicionadas ao perfil de configuração de dispositivo de notificações do WDSC (Central de Segurança do Windows Defender).
-
-Os administradores poderão:
-
-- Ocultar o pilar de Identidade
-- Ocultar o pilar de Hardware e suas subconfigurações
-- Ocultar o pilar de Ransomware (restauração de arquivo do Onedrive for Business)
-
-Quando você ocultar essas colunas do aplicativo WDSC, os usuários finais não poderão definir essas configurações e todas as notificações associadas aos componentes ocultos deixarão de ser geradas.
-
-### <a name="mam-policies-targeted-based-on-management-state----1665993---"></a>Políticas de MAM afetadas com base no estado de gerenciamento <!-- 1665993 -->
-
-Você poderá afetar políticas de MAM com base no estado de gerenciamento do dispositivo:
-
-- **Dispositivos iOS** – Você poderá afetar dispositivos não gerenciados (somente MAM) ou dispositivos gerenciados pelo Intune.
-- **Dispositivos Android** – Você poderá afetar dispositivos não gerenciados, dispositivos gerenciados pelo Intune e Perfis Empresariais Android gerenciados pelo Intune (anteriormente Android for Work).
-
-### <a name="configure-gatekeeper-to-control-macos-app-download-source----1690459--"></a>Configurar o Gatekeeper para controlar a origem do download do aplicativo macOS <!-- 1690459-->
-
-Você poderá configurar o Gatekeeper para proteger os dispositivos de aplicativos, controlando de onde os aplicativos podem ser baixados. Você poderá configurar as seguintes fontes de download: **Mac App Store**, **Mac App Store e desenvolvedores identificados** ou **De qualquer lugar**. Você também poderá configurar se os usuários podem instalar um aplicativo usando CTRL + clique para substituir esses controles do Gatekeeper.
-
-Essas configurações podem ser encontradas em **Configuração do dispositivo** -> **Criar perfil** -> **macOS** -> **Endpoint Protection**.
-
-### <a name="configure-the-mac-application-firewall----1690461---"></a>Configurar o firewall do aplicativo Mac <!-- 1690461 -->
-
-Você poderá configurar o firewall de aplicativo Mac. Você pode usar isso para controlar as conexões por aplicativo, em vez de por porta. Isso facilita obter os benefícios da proteção de firewall e ajuda a impedir que aplicativos indesejáveis assumam o controle de portas de rede abertas para aplicativos legítimos.
-
-Esse recurso pode ser encontrado em **Configuração do dispositivo** -> **Criar perfil** -> **macOS** -> **Endpoint Protection**.
-
-Depois de habilitar a configuração de Firewall, você pode configurar o firewall usando duas estratégias:
-
-- Bloquear todas as conexões de entrada
-
-   É possível bloquear todas as conexões de entrada para os dispositivos de destino. Se você optar por fazer isso, as conexões de entrada serão bloqueadas para todos os aplicativos.
-
-- Permitir ou bloquear aplicativos específicos
-
-   Você pode permitir ou bloquear que aplicativos específicos recebam conexões de entrada. Você também pode habilitar o modo furtivo para impedir respostas para as solicitações de sondagem.
-
-#### <a name="more-information"></a>Mais informações
-
-- Bloquear todas as conexões de entrada
-
-   Isso impede que todos os serviços de compartilhamento (como Compartilhamento de arquivos e Compartilhamento de tela) recebam conexões de entrada. Os serviços do sistema que ainda têm permissão para receber conexões de entrada são:
-   - configd – implementa DHCP e outros serviços de configuração de rede
-   - mDNSResponder – implementa o Bonjour
-   - racoon – implementa IPsec
-
-   Para usar os serviços de compartilhamento, verifique se **Conexões de entrada** está definido como **Não configurado** (não **Bloqueado**).
-
-- Modo furtivo
-
-   Habilite esta opção para impedir que o computador responda às solicitações de sondagem. O computador ainda responde a solicitações de entrada para aplicativos autorizados. Solicitações inesperadas, como o ICMP (ping), são ignoradas.
-
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Atualizando a experiência de Ajuda e Comentários no aplicativo Portal da Empresa para Android <!--1631531 -->
 
 Atualizaremos a experiência de Ajuda e de Comentários no aplicativo Portal da Empresa para Android a fim de alinhá-lo com as práticas recomendadas para aplicativos Android. Estaremos atualizando o aplicativo Portal da Empresa para Android nos próximos meses para dividir o item de menu **Ajuda e Comentários** nos itens **Ajuda** e **Enviar comentários** separados. A página **Ajuda** conterá com uma seção de **Perguntas Frequentes** e um botão **Suporte por Email** para instruir os usuários finais a carregar logs para a Microsoft e enviar email para o suporte da empresa descrevendo o problema. **Enviar Comentários** guiará o usuário por um envio de comentários padrão da Microsoft, que solicitará ao usuário escolher entre “Gosto de algo”, “ Não gosto de algo” ou “Tenho uma ideia”.
 
-### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Categorias personalizadas de livros para livros eletrônicos do VPP (Volume Purchase Program) <!-- 1488911 -->
-Você poderá criar categorias de livros eletrônicos personalizada e atribuir livros eletrônicos do VPP para essas categorias personalizadas. Os usuários finais poderão ver as categorias de livro eletrônico recém-criadas e os livros atribuídos às categorias.
-
-### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>Agora o HoloLens e o Surface Hub são exibidos nas listas de dispositivos <!--1725868-->
-
-Estamos adicionado suporte para mostrar dispositivos HoloLens e Surface Hub registrados no Intune no aplicativo Portal da empresa para Android.
-
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Suporte móvel do Edge para políticas de proteção de aplicativo do Intune <!-- 1817882 -->
-
-O navegador Microsoft Edge para dispositivos móveis dará suporte a políticas de proteção de aplicativo definidas no Intune.
-
-### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Use o nome totalmente diferenciado como assunto para o certificado SCEP <!--2221763 eeready-->
-Quando você cria um perfil de certificado SCEP, você inserir o Nome do assunto. Será possível usar o nome totalmente diferenciado como o assunto. Para **Nome do assunto**, selecione **Personalizado** e, em seguida, digite `CN={{OnPrem_Distinguished_Name}}`. Para usar a variável `{{OnPrem_Distinguished_Name}}`, sincronize o atributo de usuário `onpremisesdistingishedname` usando o [Azure AD (Active Directory) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com seu Azure AD.
-
-### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Os dispositivos iOS solicitam um PIN a cada 15 minutos <!--1550837 eeready-->
-Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS, os usuários deverão definir um PIN a cada 15 minutos. Os usuários serão notificados continuamente até que um PIN seja definido.
-
-### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Habilitar compartilhamento de contatos por Bluetooth – Android for Work <!--1098983 eeready-->
-Por padrão, o Android impede que contatos no perfil de trabalho sejam sincronizados com dispositivos Bluetooth. Como resultado, os contatos do perfil de trabalho não são exibidos nas informações sobre a chamada para dispositivos Bluetooth.
-
-Haverá uma nova configuração em **Android for Work** > **Restrições de dispositivo** > **Configurações do perfil de trabalho**:
-- Compartilhamento de contatos por Bluetooth
-
-O administrador do Intune pode configurar essas configurações para habilitar o compartilhamento. Isso é útil ao emparelhar um dispositivo com um dispositivo Bluetooth baseado em carro que exibe as informações sobre a chamada para uso não assistido. Quando habilitados, os contatos de perfil de trabalho são exibidos. Quando não habilitados, os contatos de perfil de trabalho não serão exibidos.
-
-Aplica-se a: dispositivos Android de perfil de trabalho no sistema operacional Android v6.0 e mais recentes.
-
-### <a name="schedule-your-automatic-updates---1805514---"></a>Agendar suas atualizações automáticas <!--1805514 -->
-
-Com o Intune, você controla como instalar atualizações automáticas usando as [configurações do Grupo de Atualização do Windows](windows-update-for-business-configure.md). Você poderá agendar atualizações recorrentes, incluindo a semana, o dia e a hora.
-
-### <a name="disable-checks-on-device-restart---1805490---"></a>Desabilitar verificações na reinicialização do dispositivo <!--1805490 -->
-
-Com o Intune, você tem controle para [gerenciar atualizações de software](windows-update-for-business-configure.md). A propriedade **Verificações de reinicialização** será adicionada e habilitada por padrão. Para ignorar as verificações típicas que ocorrem quando você reinicia um dispositivo (como usuários ativos, níveis de bateria e assim por diante), selecione **Ignorar**.
-
 <!-- 1802 start -->
-
-### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Novo gráfico de tendência de falha de registro e tabela de motivos de falhas<!-- 1471783 -->
-
-Na página Visão geral do registro, você poderá exibir a tendência de falhas de registro e as cinco principais causas de falhas. Ao clicar no gráfico ou na tabela, você poderá analisar os detalhes para encontrar dicas de solução de problemas e sugestões de correção.
-
-### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>Personalize os temas do Portal da Empresa com códigos hexadecimais <!--1049561 -->
-
-Você poderá personalizar a cor do tema nos aplicativos do Portal da Empresa usando códigos hexadecimais. Ao inserir o código hexadecimal, o Intune determinará a cor do texto que fornece o maior nível de contraste entre a cor do texto e a cor da tela de fundo segundo os [padrões WCAG 2.0](http://www.w3.org/TR/WCAG20). É possível visualizar a cor do texto e o logotipo da empresa em relação à cor em **Aplicativos móveis** > **Portal da Empresa**.
-
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Novas configurações do Windows Defender Credential Guard adicionadas às configurações do Endpoint Protection <!--1102252 -->
-
-As novas configurações do [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] serão adicionadas à **Configuração do dispositivo** > **Perfis** > **Endpoint Protection**. As configurações a seguir serão adicionadas:
-
-- Nível de Segurança da Plataforma: especifique se o Nível de Segurança da Plataforma está habilitado na próxima reinicialização. A segurança baseada em virtualização requer a Inicialização Segura. A segurança baseada em virtualização pode, opcionalmente, ser habilitada com o uso de proteções de DMA (acesso direto à memória). Proteções de DMA exigem suporte de hardware e serão habilitadas somente em dispositivos configurados corretamente.
-- Segurança baseada em virtualização: especifique se a segurança baseada em virtualização será habilitada na próxima reinicialização.
-- Windows Defender Credential Guard: ative o Credential Guard com a segurança baseada em virtualização para ajudar a proteger as credenciais na próxima reinicialização quando o Nível de Segurança de Plataforma com Inicialização Segura e a Segurança Baseada em Virtualização estiverem habilitadas. As opções disponíveis incluem **Desabilitada**, **Habilitada com o bloqueio UEFI**, **Habilitada sem bloqueio** e **Não configurada**.
-  - A opção "Desabilitada" desativará o Credential Guard remotamente se ele estiver habilitado com a opção "Habilitada sem bloqueio".
-
-  - A opção "Habilitada com o bloqueio UEFI" garante que o Credential Guard não possa ser desabilitado com a chave do Registro ou usando a Política de Grupo. Para desabilitar o Credential Guard após usar essa configuração, você precisa definir a Política de Grupo como "Desabilitada" e remover a funcionalidade de segurança em cada computador, com um usuário presente fisicamente, para limpar a configuração persistente na UEFI. Enquanto a configuração da UEFI persistir, o Credential Guard estará habilitado.
-
-  - A opção "Habilitada sem bloqueio" permite que o Credential Guard seja desabilitado remotamente usando a Política de Grupo. Os dispositivos que usam essa configuração devem estar executando, pelo menos, o Windows 10 (versão 1511).
-
-  - A opção "Não configurada" deixa a configuração de política indefinida. A Política de Grupo não grava a configuração de política no Registro e, por isso, não tem impacto sobre computadores ou usuários. Se houver uma configuração atual no registro, ela não será modificada.
-
-### <a name="reset-passwords-for-android-o-devices----1238299---"></a>Redefina senhas de dispositivos Android O <!-- 1238299 -->
-Você poderá redefinir as senhas de dispositivos Android O registrados. Quando você envia uma solicitação de "Redefinir senha" a um dispositivo Android O, ele define uma nova senha de desbloqueio de dispositivo ou um desafio de perfil gerenciado para o usuário atual. A senha ou o desafio é enviado, dependendo de o dispositivo ter um proprietário do perfil ou um proprietário do dispositivo, e entra em vigor imediatamente.
-
-### <a name="local-device-security-option-settings----1251887---"></a>Configurações de opção de segurança do dispositivo local <!-- 1251887 -->
-Você poderá habilitar configurações de segurança em dispositivos Windows 10 usando as novas configurações de Opção de segurança do dispositivo Local. Encontre essas configurações na categoria Endpoint Protection quando você cria uma política de configuração de dispositivo com Windows 10.
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Novas configurações de impressora para perfis de educação <!-- 1308900 -->
 
 Para perfis de educação, novas configurações estarão disponíveis na categoria **Impressoras**: **Impressoras**, **Impressora padrão**, **Adicionar novas impressoras**.
-
-### <a name="ios-app-provisioning-configuration----1581650---"></a>Configuração de provisionamento de aplicativos iOS <!-- 1581650 -->
-Você poderá atribuir perfis de provisionamento de aplicativos iOS para impedir que os aplicativos expirem incluindo ou excluindo grupos de segurança.
-
-### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Novas configurações do Windows Defender Application Guard <!-- 1631890 -->
-
-- **Habilitar aceleração de elementos gráficos**
-
-Os administradores poderão habilitar um processador de gráficos virtual para o Windows Defender Application Guard. Essa configuração permite que a CPU descarregue a renderização de gráficos no vGPU. Isso pode melhorar o desempenho ao trabalhar com sites com uso intenso de gráficos ou ao assistir a vídeos dentro do contêiner.
-
-- **SaveFilestoHost**
-
-Os administradores poderão permitir que arquivos sejam passados do Microsoft Edge em execução no contêiner para o sistema de arquivos do host. Ativar essa configuração permitirá que os usuários baixem arquivos do Microsoft Edge no contêiner para o sistema de arquivos do host.
-
-### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>Inclusão e exclusão da atribuição de aplicativo com base em grupos para Android Enterprise <!-- 1813081 -->
-Durante a atribuição de aplicativo e após selecionar um tipo de atribuição, o Android Enterprise (anteriormente conhecido como Android for Work) dará suporte à funcionalidade de exclusão.
-
-<!-- the following are present prior to 1802 -->
-
-### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Direcionamento de políticas de conformidade para dispositivos em grupos de dispositivo <!--1307012 -->
-
-Você poderá direcionar políticas de conformidade para usuários em grupos de usuários. Você poderá direcionar políticas de conformidade para dispositivos em grupos de dispositivos.
 
 <!-- the following are present prior to 1801 -->
 
 ### <a name="app-protection-policies-----679615---"></a>Políticas de Proteção de Aplicativo <!-- 679615 -->
 As Políticas de Proteção de Aplicativo do Intune oferecem a capacidade de criar políticas globais e padrão para habilitar rapidamente a proteção em todos os usuários no locatário inteiro.
 
-### <a name="configure-an-ios-app-pin----1586774---"></a>Configurar um PIN de aplicativo iOS <!-- 1586774 -->
-Em breve, você poderá exigir um PIN para aplicativos iOS determinados. Você pode configurar o requisito e a data de vencimento do PIN em dias por meio do portal do Azure. Quando necessário, um usuário deverá definir e usar um novo PIN antes de receber o acesso a um aplicativo iOS. Apenas os aplicativos iOS que têm a proteção de aplicativo habilitada com o SDK de Aplicativo do Intune oferecerão suporte a esse recurso.
-
 <!-- the following are present prior to 1711 -->
 
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Os sites da Web do Azure Active Directory podem exibir o Aplicativo Intune Managed Browser e oferecer suporte ao Logon Único para o Managed Browser (Visualização Pública) <!-- 710595 -->   
 Usando o Azure Active Directory (Azure AD), você poderá restringir o acesso a sites da Web em dispositivos móveis para o aplicativo Intune Managed Browser. No Managed Browser, os dados do site da Web permanecerão seguros e separados dos dados pessoais do usuário final. Além disso, o Managed Browser oferecerá suporte a recursos de Logon Único para sites protegidos pelo Azure AD. Entrar no Managed Browser ou usar o Managed Browser em um dispositivo com outro aplicativo gerenciado pelo Intune, permite que o Managed Browser acesse sites corporativos protegidos pelo Azure AD sem que o usuário precise inserir suas credenciais. Essa funcionalidade se aplica a sites como o Outlook Web Access (OWA) e o SharePoint Online, bem como a outros sites corporativos, como os recursos da intranet acessados por meio do Proxy do Aplicativo Azure.
 
-<!-- the following are present prior to 1711 -->
-
-### <a name="redirecting-macos-users-to-the-new-company-portal-app---1380728--"></a>Redirecionando usuários do macOS para o novo aplicativo Portal da Empresa <!--1380728-->   
-Quando um usuário final fizer o logon no site do Portal da Empresa para registrar seu dispositivo macOS, ele será direcionado a baixar o novo aplicativo do Portal da Empresa para macOS a fim de concluir o processo. Isso ocorre em dispositivos macOS usando OS X El Capitan 10.11 ou superior. 
-
-<!-- the following are present prior to 1709 -->
-
-### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>Mensagem de erro melhorada para quando um usuário atinge o número máximo de dispositivos que podem ser registrados <!-- 1270370 -->
-Em vez de uma mensagem de erro genérica, os usuários finais com dispositivos Android recebem uma mensagem de erro amigável e acionável: "Você registrou o número máximo de dispositivos permitidos por seu administrador de TI. Remova um dispositivo registrado ou obtenha ajuda do administrador de TI."
 
 
 
@@ -262,6 +198,7 @@ Em vez de uma mensagem de erro genérica, os usuários finais com dispositivos A
 Não há nenhum avisos ativo no momento.
 
 
-
 ### <a name="see-also"></a>Consulte também
 Veja [Novidades do Microsoft Intune](whats-new.md) para saber detalhes sobre os desenvolvimentos mais recentes.
+
+

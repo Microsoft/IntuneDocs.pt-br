@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurar aplicativos iOS com as políticas de configuração de aplicativo móvel no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use políticas de configuração de aplicativo móvel no Microsoft Intune para fornecer as configurações que podem ser necessárias quando os usuários executam um aplicativo. Por exemplo, um aplicativo pode exigir que os usuários especifiquem:
 
@@ -77,14 +77,14 @@ A nova política é exibida no nó **Políticas de Configuração** .
 ## <a name="information-about-the-xml-file-format"></a>Informações sobre o formato de arquivo XML
 
 O Intune dá suporte para os seguintes tipos de dados em uma lista de propriedades:
-    
+
 - &lt;inteiro&gt;
 - &lt;real&gt;
 - &lt;cadeia de caracteres&gt;
 - &lt;matriz&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; ou &lt;false /&gt;
-     
+
 Para obter mais informações sobre tipos de dados, consulte o artigo [sobre listas de propriedades](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) na biblioteca do desenvolvedor do iOS.
 
 Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propriedades:
@@ -97,7 +97,7 @@ Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propr
 - \{\{username\}\} – (Exemplo: **Samuel Ferreira**)
 - \{\{serialnumber\}\} – (Exemplo: **F4KN99ZUG5V2**) para dispositivos iOS
 - \{\{serialnumberlast4digits\}\} – (Exemplo: **G5V2**) para dispositivos iOS
-    
+
 Os caracteres \{\{ e \}\} são usados apenas por tipos de token e não devem ser usados para outras finalidades.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Associar uma política de configuração de aplicativo móvel a um aplicativo
@@ -139,5 +139,4 @@ Quando você cria um arquivo de configuração de aplicativo móvel, você pode 
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

@@ -1,27 +1,27 @@
 ---
-title: "Registrar seu dispositivo Android no gerenciamento de despesas de telecomunicações com o Intune"
-description: "Saiba como registrar um dispositivo Android no gerenciamento de despesas de telecomunicações."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Registrar seu dispositivo Android no gerenciamento de despesas de telecomunicações com o Intune
+description: Saiba como registrar um dispositivo Android no gerenciamento de despesas de telecomunicações.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrar seu dispositivo Android no gerenciamento de despesas de telecomunicações
 
@@ -39,11 +39,11 @@ Toque na seta __Avançar__ no canto superior direito da tela para continuar. O s
 
 1. Selecione __Registrar-se com a conta da Microsoft__.
 
-  ![Uma imagem de tela Configurações do aplicativo Datalert, que oferece um campo de número de telefone para registrar um dispositivo na metade superior da tela e "registrar com a conta da Microsoft" na parte inferior, desde que você tenha uma conta do Microsoft Office 365 e uma assinatura do Intune.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Uma imagem de tela Configurações do aplicativo Datalert, que oferece um campo de número de telefone para registrar um dispositivo na metade superior da tela e "registrar com a conta da Microsoft" na parte inferior, desde que você tenha uma conta do Microsoft Office 365 e uma assinatura do Intune.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. Escolha sua conta corporativa ou de estudante nas contas disponíveis. Se sua conta não estiver listada, você poderá entrar usando o botão **Adicionar conta**.
 
-  ![Uma captura da tela "Escolha a conta", mostrando uma conta de exemplo e o botão Adicionar conta.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![Uma captura da tela "Escolha a conta", mostrando uma conta de exemplo e o botão Adicionar conta.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. A instalação do Datalert ocorrerá por alguns instantes até ser concluída. Toque em __Concluir__ após a conclusão.
 
@@ -51,15 +51,15 @@ Toque na seta __Avançar__ no canto superior direito da tela para continuar. O s
 
 1. Forneça o número de telefone do dispositivo.
 
-  ![Uma captura de tela do aplicativo Datalert solicitando um número de telefone.](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![Uma captura de tela do aplicativo Datalert solicitando um número de telefone.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. Você receberá um código de verificação por meio de uma mensagem SMS. Forneça o código e toque em __OK__.
 
-  ![Uma captura de tela do aplicativo Datalert solicitando o código de verificação SMS.](./media/and-enroll-14-tem-datalert-sms.png)
+   ![Uma captura de tela do aplicativo Datalert solicitando o código de verificação SMS.](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. Se você tiver fornecido o código de verificação, a instalação de Datalert estará concluída. Toque em __Concluir__ e você será capaz de monitorar os dados do aplicativo Datalert.
 
-  ![Uma captura de tela do aplicativo Datalert monitorando o uso de dados de hoje.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![Uma captura de tela do aplicativo Datalert monitorando o uso de dados de hoje.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 Depois de ter registrado, você começará a ver o seu uso de dados no aplicativo Datalert.
 

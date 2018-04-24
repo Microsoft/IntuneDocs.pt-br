@@ -1,27 +1,27 @@
 ---
-title: "O que é o registro do dispositivo do Microsoft Intune"
+title: O que é o registro do dispositivo do Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Saiba mais sobre o registro de dispositivos iOS, Android e Windows.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Intune permite gerenciar os dispositivos e os aplicativos da sua força de trabalho e como ela acessa os dados da empresa. Para usar esse gerenciamento de dispositivo móvel (MDM), os dispositivos devem primeiro ser registrados no serviço do Intune. Quando um dispositivo é registrado, ele recebe um certificado de MDM. Esse certificado é usado para se comunicar com o serviço do Intune.
 

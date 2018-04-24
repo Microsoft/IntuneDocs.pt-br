@@ -1,35 +1,35 @@
 ---
-title: "Conexões Wi-Fi"
-description: "Use perfis de Wi-Fi para ajudar os usuários a se conectar a redes Wi-Fi."
-keywords: 
+title: Conexões Wi-Fi
+description: Use perfis de Wi-Fi para ajudar os usuários a se conectar a redes Wi-Fi.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configure dispositivos para se conectar às redes Wi-Fi corporativas
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use os perfis de Wi-Fi do Microsoft Intune para implantar configurações de rede sem fio para usuários e dispositivos na organização. Quando você implantar um perfil de Wi-Fi, os usuários terão acesso ao Wi-Fi de sua empresa sem precisar configurá-lo por conta própria.
 
 Por exemplo, você pode instalar uma nova rede Wi-Fi chamada **Wi-Fi Contoso** e configurar todos os dispositivos iOS para se conectarem a essa rede. Este é o processo:
 
-![Resumo do processo de perfil de Wi-Fi](..\media\wi-fi-process-diagram.png)
+![Resumo do processo de perfil de Wi-Fi](../media/wi-fi-process-diagram.png)
 
 1.   Crie um perfil de Wi-Fi que contém as configurações necessárias para se conectar à rede sim fio **Wi-Fi Contoso**.
 
@@ -67,23 +67,25 @@ Para dispositivos que executam os sistemas operacionais Windows 8.1 ou Windows 1
 
 Não há nenhuma configuração recomendada para este tipo de política. Você deve criar uma política personalizada.
 
-3.  Forneça o nome e a descrição do perfil.
+3. Forneça o nome e a descrição do perfil.
 
 4. Especifique os valores de **Conexões de Rede**.
- - **SSID (Identificador do Conjunto de Serviço)**: selecione esta opção se desejar que os usuários vejam o nome da rede e não o SSID.
- - **Conectar quando a rede não estiver transmitindo seu nome (SSID)**|Selecione esta opção para permitir que dispositivos se conectem à rede quando ela não estiver visível na lista de redes (porque esteja oculta e não esteja transmitindo seu nome).
+   - **SSID (Identificador do Conjunto de Serviço)**: selecione esta opção se desejar que os usuários vejam o nome da rede e não o SSID.
+   - **Conectar quando a rede não estiver transmitindo seu nome (SSID)**|Selecione esta opção para permitir que dispositivos se conectem à rede quando ela não estiver visível na lista de redes (porque esteja oculta e não esteja transmitindo seu nome).
 
 5. Defina as **Configurações de Segurança** para a plataforma selecionada. As configurações disponíveis dependem do tipos de segurança que você selecionar. Eles estão descritos em [Configurações de segurança](#security-settings).
 
 6. Definir **Configurações de Proxy** (somente iOS e MAC OS X).
 
-    |Nome da configuração|Mais informações|Quando usar|
-    |----------------|-------------------|-------------|
-    |**Configurações do proxy para esta conexão Wi-Fi**|Escolha o tipo de configurações de proxy:<br /><br />-   **Nenhum** (padrão)<br />-   **Manual** – especifique manualmente a URL e o número da porta do servidor proxy.<br />-   **Automático** – use um arquivo de configuração para configurar o servidor proxy.|Sempre|
-    |**Endereço do servidor proxy** e **Número da porta**|Especifique a URL e o número da porta do servidor proxy.|Se **Configurações de proxy para esta conexão Wi-Fi** estiverem definidas como **Manual**|
-    |**URL do Servidor Proxy**|Especifique a URL do arquivo que contém as configurações do servidor proxy.|Se as **Configurações de proxy para esta conexão Wi-Fi** estiverem definidas como **Automáticas**|
 
-7.  Salvar o perfil de Wi-Fi
+   |                              Nome da configuração                              |                                                                                                                                Mais informações                                                                                                                                 |                                            Quando usar                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>Configurações do proxy para esta conexão Wi-Fi</strong>        | Escolha o tipo de configurações de proxy:<br /><br />-   <strong>Nenhum</strong> (padrão)<br />-   <strong>Manual</strong> – especifique manualmente a URL e o número da porta do servidor proxy.<br />-   <strong>Automático</strong> – use um arquivo de configuração para configurar o servidor proxy. |                                              Sempre                                               |
+   | <strong>Endereço do servidor proxy</strong> e <strong>Número da porta</strong> |                                                                                                              Especifique a URL e o número da porta do servidor proxy.                                                                                                               |  Se <strong>Configurações de proxy para esta conexão Wi-Fi</strong> estiverem definidas como <strong>Manual</strong>   |
+   |                   <strong>URL do Servidor Proxy</strong>                    |                                                                                                      Especifique a URL do arquivo que contém as configurações do servidor proxy.                                                                                                       | Se as <strong>Configurações de proxy para esta conexão Wi-Fi</strong> estiverem definidas como <strong>Automáticas</strong> |
+
+
+7. Salvar o perfil de Wi-Fi
 
 A nova política é exibida no nó **Políticas de Configuração** do espaço de trabalho **Política**. Consulte **Próximas etapas** para obter informações sobre como implantar o perfil.
 
@@ -139,7 +141,7 @@ Como um perfil é um tipo de política, use o espaço de trabalho **Política** 
 
 1.  No espaço de trabalho **Política**, selecione a política que deseja implantar e selecione **Gerenciar Implantação**.
 
-2.  Na caixa de diálogo **Gerenciar implantação** :
+2.  Na caixa de diálogo **Gerenciar implantação**:
 
     -   **Para implantar a política**: selecione um ou mais grupos nos quais deseja implantar a política. Em seguida, escolha **Adicionar** &gt; **OK**.
 

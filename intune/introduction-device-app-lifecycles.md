@@ -1,29 +1,29 @@
 ---
-title: "Visão geral dos ciclos de vida do dispositivo e do aplicativo"
+title: Visão geral dos ciclos de vida do dispositivo e do aplicativo
 titleSuffix: Microsoft Intune
-description: "Visão geral dos ciclos de vida do dispositivo e do aplicativo com o Microsoft Intune."
-keywords: 
+description: Visão geral dos ciclos de vida do dispositivo e do aplicativo com o Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Visão geral dos ciclos de vida do dispositivo e do aplicativo
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Embora as necessidades de cada organização sejam ser diferentes, existem algumas etapas comuns que todas as empresas precisam realizar continuamente para gerenciar os dispositivos móveis e aplicativos móveis. Eles podem ser agrupadas em duas categorias principais, conhecidas como **ciclos de vida**. O ciclo de vida de implantação que você seguir dependerá do cenário que você está tentando habilitar. Por exemplo, talvez seja necessário apenas o ciclo de vida do dispositivo, o ciclo de vida do aplicativo ou você poderá precisar de ambos.
 

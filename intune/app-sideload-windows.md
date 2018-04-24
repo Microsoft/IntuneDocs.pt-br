@@ -1,26 +1,26 @@
 ---
 title: Aplicativos de sideload do Windows e do Windows Phone para o Intune
-description: "Saiba como assinar aplicativos de linha de negócios para que você possa usar o Intune para implantá-los."
-keywords: 
+description: Saiba como assinar aplicativos de linha de negócios para que você possa usar o Intune para implantá-los.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicativos da linha de negócios para que possam ser implantados em dispositivos Windows com o Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Como administrador do Intune, é possível implantar aplicativos da linha de negócios (LOB) em dispositivos Windows e Windows 10 Mobile, incluindo o aplicativo de Portal da Empresa. Para implantar aplicativos .appx ou. xap em dispositivos Windows 10 Mobile e Windows 10 ou implantar qualquer aplicativo LOB em dispositivos Windows Phone 8.1 ou Windows 8.1, você deve obter um **Certificado de Assinatura de Código Móvel Empresarial da Symantec**. Somente o certificado da Symantec é confiável para esses aplicativos para os respectivos dispositivos Windows. Você pode usar sua própria autoridade de certificação para aplicativos do Windows 10 e "universal". Esse certificado é necessário para:
 
@@ -78,11 +78,11 @@ As etapas a seguir o ajudarão a obter os certificados necessários e assinar os
 
     Como alternativa, é possível baixar o Portal da Empresa para Windows Phone 8.1 (pacote licenciado offline) ou o Portal da Empresa para Windows 10 (pacote licenciado offline) da [Microsoft Store para Empresas](http://businessstore.microsoft.com/). O aplicativo de Portal da Empresa precisará ser adquirido com uma licença offline e o pacote apropriado baixado para uso offline. As listagens de plataforma Windows 8 e Windows Phone 8 na seleção fazem referência às suas contrapartes 8.1. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Gerenciar aplicativos adquiridos na Microsoft Store para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
-2.  **Baixar o SDK do Windows Phone** Baixe o SDK do Windows Phone 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) e instale o SDK em seu computador. O SDK é necessário para gerar um token de registro do aplicativo.
+2.  **Baixar o SDK do Windows Phone** Baixe o SDK do Windows Phone 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) e instale o SDK no seu computador. O SDK é necessário para gerar um token de registro do aplicativo.
 
 3.  **Gerar um arquivo AETX** Gere um arquivo de token de registro do aplicativo (.aetx) por meio do arquivo Symantec PFX usando o AETGenerator.exe, parte do SDK do Windows Phone 8.0. Para obter instruções de como criar um arquivo AETX, consulte [Como gerar um token de registro de aplicativo para o Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
-4.  **Baixar o SDK do Windows para Windows 8.1** Baixe e instale o [SDK do Windows Phone](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Observe que o script do PowerShell incluído com o aplicativo do Portal da Empresa usa o local de instalação padrão, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se instalar em outro lugar, você deve incluir o local em um parâmetro de cmdlet.
+4.  **Baixar o SDK do Windows para o Windows 8.1** Baixe e instale o [SDK do Windows Phone](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Observe que o script do PowerShell incluído com o aplicativo do Portal da Empresa usa o local de instalação padrão, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se instalar em outro lugar, você deve incluir o local em um parâmetro de cmdlet.
 
 5.  **Assinar código do aplicativo usando o PowerShell** Como administrador, abra o **Windows PowerShell** no computador host instalado com o SDK do Windows, o Symantec Enterprise Mobile Code Signing Certificate, navegue até o arquivo Sign-WinPhoneCompanyPortal.ps1 e execute o script.
 
@@ -128,7 +128,7 @@ O certificado da Symantec usado para implantar aplicativos móveis do Windows e 
 
     Para obter informações adicionais sobre certificados Symantec, visite [www.symantec.com](http://www.symantec.com) ou ligue para 1-877-438-8776 ou 1-650-426-3400.
 
-2.  Vá até o site (exemplo: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e faça logon com a ID do Editor da Symantec e o email endereçado associado ao certificado. Lembre-se de usar o mesmo computador para iniciar a renovação que você usará para baixar o certificado.
+2.  Vá para o site (exemplo: [ https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do ](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e faça logon com a ID do Publicador Symantec e email endereçado associado ao certificado. Lembre-se de usar o mesmo computador para iniciar a renovação que você usará para baixar o certificado.
 
 3.  Após a renovação ser aprovada e paga, baixe o certificado.
 
@@ -158,11 +158,11 @@ O certificado da Symantec usado para implantar aplicativos móveis do Windows e 
 
 ![Imagem dos arquivos de dependência para Download ](./media/Win10CP-dependent-files.png)
 5. Antes de carregar o aplicativo Portal da Empresa no Intune, crie uma pasta (por exemplo, C:&#92;Portal da Empresa) com os pacotes estruturados da seguinte maneira:
-  1. Coloque o pacote Portal da Empresa em C:\Portal da Empresa. Crie uma subpasta Dependências nesse local também.  
-  ![Imagem da pasta Dependências salva com o arquivo APPXBUN](./media/Win10CP-Dependencies-save.png)
-  2. Coloque os nove pacotes de dependências na pasta Dependências.  
-  Se as dependências não forem colocadas nesse formato, o Intune não conseguirá reconhecê-las e carregá-las durante o carregamento do pacote, fazendo com que o carregamento falhe com o seguinte erro.  
-  ![A dependência de aplicativo do Windows para este instalador do software não foi encontrada na pasta do aplicativo. Você pode continuar a criar e implantar esse aplicativo, mas ele não será executado até que a dependência ausente do aplicativo do Windows seja fornecida.](./media/Win10CP-error-message.png)
+   1. Coloque o pacote Portal da Empresa em C:\Portal da Empresa. Crie uma subpasta Dependências nesse local também.  
+   ![Imagem da pasta Dependências salva com o arquivo APPXBUN](./media/Win10CP-Dependencies-save.png)
+   2. Coloque os nove pacotes de dependências na pasta Dependências.  
+   Se as dependências não forem colocadas nesse formato, o Intune não conseguirá reconhecê-las e carregá-las durante o carregamento do pacote, fazendo com que o carregamento falhe com o seguinte erro.  
+   ![A dependência de aplicativo do Windows para este instalador do software não foi encontrada na pasta do aplicativo. Você pode continuar a criar e implantar esse aplicativo, mas ele não será executado até que a dependência ausente do aplicativo do Windows seja fornecida.](./media/Win10CP-error-message.png)
 6. Retorne ao Intune, em seguida, carregue o aplicativo Portal da Empresa como um novo aplicativo. Implante-o como um aplicativo necessário para o conjunto de usuários de destino desejado.  
 
 Consulte [Implantando um appxbundle com dependências via MDM do Microsoft Intune ](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) para obter mais informações sobre como o Intune lida com as dependências para os aplicativos Universal.  
@@ -186,17 +186,18 @@ Se o aplicativo Portal da Empresa para Windows 10 for assinado e implantado dess
 
 Aqui está como assinar e implantar o aplicativo desta forma:
 
-1. Baixe o Aplicativo Portal da Empresa para Windows 10 do Microsoft Intune Assinando o Script em [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Esse script requer o SDK do Windows para o Windows 10 ser instalado no computador host. Para baixar o SDK do Windows para o Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
+1. Baixe o aplicativo Portal da Empresa para Windows 10 do Microsoft Intune assinando o script em [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Esse script requer o SDK do Windows para o Windows 10 ser instalado no computador host. Para baixar o SDK do Windows para Windows 10, acesse [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
 2. Baixe o aplicativo Portal da Empresa para Windows 10 na Microsoft Store para Empresas, como descrito acima.  
 3. Execute o script com os parâmetros de entrada detalhados no cabeçalho do script para assinar o aplicativo Portal da Empresa para Windows 10 (extraído abaixo). As dependências não precisam ser passada para o script. Só são necessárias quando o aplicativo está sendo carregado para o Console de Administração do Intune.
 
-|Parâmetro | Descrição|
-| ------------- | ------------- |
-|InputWin10AppxBundle |O caminho para onde está localizado o arquivo appxbundle de origem. |
-|OutputWin10AppxBundle |O caminho de saída para o arquivo assinado appxbundle. |
-|Win81Appx | O caminho para onde o arquivo do Portal da Empresa para Windows 8.1 ou Windows Phone 8.1 (.APPX) está localizado.|
-|PfxFilePath |O caminho para o arquivo do Certificado de Autenticação do Código do Symantec Enterprise Mobile (.PFX). |
-|PfxPassword| A senha do Certificado de Autenticação do Código do Symantec Enterprise Mobile. |
-|PublisherId |A ID do Editor da empresa. Se ausente, o campo 'Assunto' da Symantec Enterprise Mobile Code Signing Certificate será usado.|
-|SdkPath | O caminho para a pasta-raiz do SDK do Windows para o Windows 10. Esse argumento é opcional e o padrão é ${env:ProgramFiles(x86)}\Windows Kits\10|
+|       Parâmetro       |                                                                    Descrição                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             O caminho para onde está localizado o arquivo appxbundle de origem.                                              |
+| OutputWin10AppxBundle |                                                  O caminho de saída para o arquivo assinado appxbundle.                                                  |
+|       Win81Appx       |                          O caminho para onde o arquivo do Portal da Empresa para Windows 8.1 ou Windows Phone 8.1 (.APPX) está localizado.                           |
+|      PfxFilePath      |                                   O caminho para o arquivo do Certificado de Autenticação do Código do Symantec Enterprise Mobile (.PFX).                                    |
+|      PfxPassword      |                                     A senha do Certificado de Autenticação do Código do Symantec Enterprise Mobile.                                      |
+|      PublisherId      |      A ID do Editor da empresa. Se ausente, o campo 'Assunto' da Symantec Enterprise Mobile Code Signing Certificate será usado.       |
+|        SdkPath        | O caminho para a pasta-raiz do SDK do Windows para o Windows 10. Esse argumento é opcional e o padrão é ${env:ProgramFiles(x86)}\Windows Kits\10 |
+
 O script produzirá a versão assinada do aplicativo Portal da Empresa para Windows 10 quando terminar a execução. Você pode implantar a versão assinada do aplicativo como um aplicativo LOB via Intune, que atualizará as versões atualmente implantadas para esse novo aplicativo.  
