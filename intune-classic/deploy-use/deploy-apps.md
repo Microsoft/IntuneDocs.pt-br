@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Implantar aplicativos com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico explica alguns dos conceitos que você precisa compreender antes de iniciar a implantação de aplicativos com o Microsoft Intune.
 
@@ -46,18 +46,19 @@ Quando você implanta aplicativos, pode escolher uma das seguintes ações de im
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Entender quais ações de implantação estão disponíveis para cada tipo de instalador
 
-|Tipo de instalador|Instalação requerida|Instalação disponível|Desinstalar|Não Aplicável|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Pacote de aplicativos do Windows (implantado em um grupo de usuários)|Sim|Sim|Sim|Sim|
-|Pacote do aplicativo do Windows (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
-|Pacote de aplicativos para dispositivos móveis (implantado em um grupo de usuários)|Sim|Sim|Sim|Sim|
-|Pacote de aplicativos para dispositivos móveis (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
-|Windows Installer (implantado em um grupo de usuários)|Não|Sim|Não|Sim|
-|Windows Installer (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
-|Link externo (implantado em um grupo de usuários)|Não|Sim|Não|Sim|
-|Link externo (implantado em um grupo de dispositivos)|Não|Não|Não|Não|
-|Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de usuários)|Sim|Sim|Sim|Sim|
-|Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de dispositivos)|Sim|Não|Sim|Sim|
+|                         Tipo de instalador                          | Instalação requerida | Instalação disponível | Desinstalar | Não Aplicável |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Pacote de aplicativos do Windows (implantado em um grupo de usuários)          |       Sim        |        Sim        |    Sim    |      Sim       |
+|        Pacote do aplicativo do Windows (implantado em um grupo de dispositivos)         |       Sim        |        Não         |    Sim    |      Sim       |
+|    Pacote de aplicativos para dispositivos móveis (implantado em um grupo de usuários)    |       Sim        |        Sim        |    Sim    |      Sim       |
+|   Pacote de aplicativos para dispositivos móveis (implantado em um grupo de dispositivos)   |       Sim        |        Não         |    Sim    |      Sim       |
+|          Windows Installer (implantado em um grupo de usuários)           |        Não        |        Sim        |    Não     |      Sim       |
+|         Windows Installer (implantado em um grupo de dispositivos)          |       Sim        |        Não         |    Sim    |      Sim       |
+|            Link externo (implantado em um grupo de usuários)             |        Não        |        Sim        |    Não     |      Sim       |
+|           Link externo (implantado em um grupo de dispositivos)            |        Não        |        Não         |    Não     |       Não       |
+|  Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de usuários)  |       Sim        |        Sim        |    Sim    |      Sim       |
+| Aplicativo iOS gerenciado da loja de aplicativos (implantado em um grupo de dispositivos) |       Sim        |        Não         |    Sim    |      Sim       |
+
 > [!TIP]
 > Ao implantar aplicativos, se você selecionar usuários e grupos de dispositivos, poderá implantar o aplicativo apenas como uma **Instalação disponível**.
 

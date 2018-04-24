@@ -5,12 +5,12 @@
   - Mac OS X 10.9 e posterior
 
 ### <a name="windows"></a>Windows
-  - Computadores que executam o Windows 10 (versões Home, Pro, Education e Enterprise)
-  - Windows 10 Mobile
-  - Dispositivos que executam o Windows 10 IoT Enterprise (x86, x64)
-  - Dispositivos que executam o Windows 10 IoT Mobile Enterprise
-  - Windows Holographic e Windows Holographic Enterprise
-  - Windows Phone 8.1, Windows 8.1 RT e computadores executando o Windows 8.1 (Modo de manutenção)
+- Computadores que executam o Windows 10 (versões Home, Pro, Education e Enterprise)
+- Windows 10 Mobile
+- Dispositivos que executam o Windows 10 IoT Enterprise (x86, x64)
+- Dispositivos que executam o Windows 10 IoT Mobile Enterprise
+- Windows Holographic e Windows Holographic Enterprise
+- Windows Phone 8.1, Windows 8.1 RT e computadores executando o Windows 8.1 (Modo de manutenção)
 
   Os clientes com o EMS (Enterprise Management + Security) também podem [usar o AAD (Azure Active Directory) para registrar dispositivos Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 

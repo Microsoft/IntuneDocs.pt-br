@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93dece592ce5280b1650303484bd24169814465c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Regras de acesso do Exchange para dispositivos móveis
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As regras de acesso do Exchange para dispositivos móveis determinam o nível de acesso que esses dispositivos têm ao Exchange ActiveSync. Essas configurações afetam todos os dispositivos móveis, incluindo aqueles não registrados no Microsoft Intune. Você pode começar definindo uma **Regra Padrão** que se aplica a qualquer dispositivo móvel que não tenha uma regra personalizada aplicada a ele.
 
@@ -37,11 +37,13 @@ A tabela a seguir contém os níveis de acesso gerenciados pelo Exchange ActiveS
 
 Uma estratégia de acesso é uma combinação de uma **Regra Padrão** e **Exceções de Plataforma** que se aplicam a todos os dispositivos móveis conectados ao Exchange. A tabela a seguir lista alguns exemplos de estratégia de acesso.
 
-|Estratégia de acesso|Descrição|
-|-------------------|---------------|
-|Lista de permissões|Você pode usar uma *lista de permissões* para conceder acesso a uma lista de dispositivos conhecidos e restringir o acesso a todos os outros dispositivos. Para fazer isso, você deve criar regras personalizadas para as plataformas de dispositivos com permissão para acessar as caixas de correio dos usuários. Assim que criar essa regra, você deverá definir a regra de acesso padrão, para bloquear ou colocar em quarentena todos os outros dispositivos. Para adicionar um novo dispositivo à lista de permissões, crie uma nova regra personalizada.|
-|Lista de bloqueios|Você pode usar uma *lista de contatos bloqueados* para conceder acesso a todos os dispositivos por padrão, mas bloquear o acesso de um conjunto de dispositivos que você não deseja que acessem a organização. Crie uma lista de contatos bloqueados pela criação de regras personalizadas para bloquear as plataformas de dispositivos que você não deseja sincronizar com caixas de correio da organização. Recomendamos a configuração da regra padrão para permitir acesso a todos os dispositivos que não estejam explicitamente bloqueados pelas regras existentes. Para adicionar um novo dispositivo ou conjunto de dispositivos à lista de bloqueios, crie uma nova regra personalizada.|
-|Listas mistas de permissões e bloqueios|Além de criar listas de permissões e bloqueios, você pode colocar em quarentena novos dispositivos móveis à medida que eles são inseridos na organização, enquanto são avaliados. Por exemplo, se você tem uma lista de bloqueio para dispositivos móveis que não são permitidos dentro de sua organização, e uma lista de permissões para os dispositivos móveis que são permitidos dentro da organização, você pode definir a regra padrão para a quarentena. Todos os outros dispositivos são colocados automaticamente em quarentena. Isso permite que você descubra novos dispositivos à medida que são introduzidos na organização e decida se quer adicioná-los à lista de permissões ou de bloqueio.|
+
+|    Estratégia de acesso    |                                                                                                                                                                                                                                                                                       Descrição                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Lista de permissões       |                                                                                  Você pode usar uma <em>lista de permissões</em> para conceder acesso a uma lista de dispositivos conhecidos e restringir o acesso a todos os outros dispositivos. Para fazer isso, você deve criar regras personalizadas para as plataformas de dispositivos com permissão para acessar as caixas de correio dos usuários. Assim que criar essa regra, você deverá definir a regra de acesso padrão, para bloquear ou colocar em quarentena todos os outros dispositivos. Para adicionar um novo dispositivo à lista de permissões, crie uma nova regra personalizada.                                                                                  |
+|      Lista de bloqueios       |                              Você pode usar uma <em>lista de contatos bloqueados</em> para conceder acesso a todos os dispositivos por padrão, mas bloquear o acesso de um conjunto de dispositivos que você não deseja que acessem a organização. Crie uma lista de contatos bloqueados pela criação de regras personalizadas para bloquear as plataformas de dispositivos que você não deseja sincronizar com caixas de correio da organização. Recomendamos a configuração da regra padrão para permitir acesso a todos os dispositivos que não estejam explicitamente bloqueados pelas regras existentes. Para adicionar um novo dispositivo ou conjunto de dispositivos à lista de bloqueios, crie uma nova regra personalizada.                               |
+| Listas mistas de permissões e bloqueios | Além de criar listas de permissões e bloqueios, você pode colocar em quarentena novos dispositivos móveis à medida que eles são inseridos na organização, enquanto são avaliados. Por exemplo, se você tem uma lista de bloqueio para dispositivos móveis que não são permitidos dentro de sua organização, e uma lista de permissões para os dispositivos móveis que são permitidos dentro da organização, você pode definir a regra padrão para a quarentena. Todos os outros dispositivos são colocados automaticamente em quarentena. Isso permite que você descubra novos dispositivos à medida que são introduzidos na organização e decida se quer adicioná-los à lista de permissões ou de bloqueio. |
+
 O procedimento a seguir descreve como criar uma regra personalizada.
 
 ## <a name="create-a-default-access-rule"></a>Criar uma regra de acesso padrão

@@ -2,24 +2,24 @@
 title: Escolha como registrar dispositivos iOS no Intune
 titlesuffix: Microsoft Intune
 description: Configurar o registro de dispositivos iOS no Microsoft Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e79122c1bea970525faaf443f9bf4271d050abe2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrar dispositivos iOS no Intune
 
@@ -79,11 +79,11 @@ Afinidade de usuário é necessária para dar suporte ao seguinte:
 
 5. Após o logon, o usuário recebe uma solicitação para registrar seu dispositivo. A primeira etapa é identificar o dispositivo. O aplicativo apresenta uma lista de dispositivos iOS que já foram registrados pela empresa e atribuídos à conta do Intune do usuário. O usuário deve escolher o dispositivo correspondente.
 
-  Se o dispositivo ainda não tiver sido registrado pela empresa, ele deverá escolher **novo dispositivo** para continuar com o fluxo de registro padrão.
+   Se o dispositivo ainda não tiver sido registrado pela empresa, ele deverá escolher **novo dispositivo** para continuar com o fluxo de registro padrão.
 
 6. Na próxima tela, o usuário deverá confirmar o número de série do novo dispositivo. O usuário pode tocar no link **confirmar o Número de Série**, o que iniciará as instruções para usar o aplicativo de Configurações a fim de verificar o número de série. Em seguida, o usuário deve inserir os quatro últimos caracteres do número de série no aplicativo Portal da Empresa.
 
-  Essa etapa verifica se o dispositivo é o dispositivo corporativo registrado no Intune. Se o número de série no dispositivo não corresponder, o dispositivo incorreto terá sido selecionado. O usuário deve voltar à tela anterior e selecionar um dispositivo diferente.
+   Essa etapa verifica se o dispositivo é o dispositivo corporativo registrado no Intune. Se o número de série no dispositivo não corresponder, o dispositivo incorreto terá sido selecionado. O usuário deve voltar à tela anterior e selecionar um dispositivo diferente.
 
 7. Após a verificação do número de série, o aplicativo Portal da Empresa redirecionará para o site do Portal da Empresa a fim de finalizar o registro. Em seguida, o site solicita que o usuário retorne ao aplicativo.
 

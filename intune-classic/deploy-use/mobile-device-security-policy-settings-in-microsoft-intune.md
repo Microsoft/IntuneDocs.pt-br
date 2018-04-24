@@ -1,29 +1,29 @@
 ---
-title: "Configurações de política de segurança para dispositivos móveis"
-description: "Use o Intune para definir uma ampla variedade de configurações que você pode implantar em dispositivos gerenciados na sua organização."
-keywords: 
+title: Configurações de política de segurança para dispositivos móveis
+description: Use o Intune para definir uma ampla variedade de configurações que você pode implantar em dispositivos gerenciados na sua organização.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Configurações de política de segurança de dispositivo móvel no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > Agora, o Microsoft Intune apresenta políticas de configuração separadas para cada plataforma de dispositivo. Essas políticas contêm as configurações mais atualizadas que você pode usar. Você pode continuar usando a política de segurança de dispositivo móvel e todas as implantações existentes ainda funcionarão. No entanto, você deve planejar a migração para as novas políticas de configuração assim que possível, pois a política de segurança de dispositivo móvel será removida no futuro.
@@ -48,32 +48,34 @@ Você pode criar e implantar políticas de segurança de dispositivo móvel para
 
 ## <a name="security-settings"></a>Configurações de segurança
 
-|Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exigir uma senha para desbloquear os dispositivos móveis**|Não|Não|Sim|Sim|Sim|
-|**Tipo de senha necessária**<br /><br />Esta configuração especifica o tipo de senha que será necessário, apenas com caracteres numéricos ou alfanuméricos.|Sim|Sim|Sim|Sim|Não|
-|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**<br /><br />Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. Essa configuração especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. No entanto, para dispositivos iOS, ela especifica o número de caracteres de símbolo que devem ser incluídos na senha.|Sim|Sim|Sim|Sim|Não|
-|**Comprimento mínimo da senha**|Sim|Sim|Sim|Sim|Sim|
-|**Permitir senha simples**<br /><br />Senhas simples incluem “0000” e “1234”.|Não|Não|Sim|Sim|Não|
-|**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**|Sim|Sim|Sim|Sim|Sim|
-|**Minutos de inatividade antes que a tela se apague**<sup>1</sup>|Sim|Sim|Sim|Sim|Sim|
-|**Expiração da senha (dias)**|Sim|Sim|Sim|Sim|Sim|
-|**Lembrar histórico de senha**|Sim|Sim|Sim|Sim|Sim|
-|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Sim|Sim|Sim|Sim|Sim|
-|**Qualidade da senha**|Não|Não|Não|Não|Sim|
-|**Permitir senha de imagem e PIN**|Sim|Sim|Não|Não|Não|
-|**Minutos de inatividade antes de a senha ser necessária**|Não|Não|Não|Sim|Não|
-|**Permitir desbloqueio por impressão digital**|Não|Não|Não|iOS 7 e posterior|Não|
+|                                                                                                                                                                                        Nome da configuração                                                                                                                                                                                         | Windows 8.1 e Windows RT 8.1 | Windows RT | Windows Phone 8 e Windows Phone 8.1 |       iOS       | Android e Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Exigir uma senha para desbloquear os dispositivos móveis</strong>                                                                                                                                                                 |               Não               |     Não     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                 <strong>Tipo de senha necessária</strong><br /><br />Esta configuração especifica o tipo de senha que será necessário, apenas com caracteres numéricos ou alfanuméricos.                                                                                                                 |              Sim               |    Sim     |                  Sim                  |       Sim       |                Não                 |
+| <strong>Tipo de senha necessária – número mínimo de conjuntos de caracteres</strong><br /><br />Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. Essa configuração especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. No entanto, para dispositivos iOS, ela especifica o número de caracteres de símbolo que devem ser incluídos na senha. |              Sim               |    Sim     |                  Sim                  |       Sim       |                Não                 |
+|                                                                                                                                                                          <strong>Comprimento mínimo da senha</strong>                                                                                                                                                                           |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                               <strong>Permitir senha simples</strong><br /><br />Senhas simples incluem “0000” e “1234”.                                                                                                                                                |               Não               |     Não     |                  Sim                  |       Sim       |                Não                 |
+|                                                                                                                                                  <strong>Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado</strong>                                                                                                                                                   |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                         <strong>Minutos de inatividade antes que a tela se apague</strong><sup>1</sup>                                                                                                                                                          |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                                         <strong>Expiração da senha (dias)</strong>                                                                                                                                                                         |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                                         <strong>Lembrar histórico de senha</strong>                                                                                                                                                                          |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                              <strong>Lembrar histórico de senha</strong> – <strong>Evitar a reutilização de senhas anteriores</strong>                                                                                                                                              |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                                              <strong>Qualidade da senha</strong>                                                                                                                                                                              |               Não               |     Não     |                  Não                   |       Não        |                Sim                |
+|                                                                                                                                                                       <strong>Permitir senha de imagem e PIN</strong>                                                                                                                                                                       |              Sim               |    Sim     |                  Não                   |       Não        |                Não                 |
+|                                                                                                                                                             <strong>Minutos de inatividade antes de a senha ser necessária</strong>                                                                                                                                                              |               Não               |     Não     |                  Não                   |       Sim       |                Não                 |
+|                                                                                                                                                                          <strong>Permitir desbloqueio por impressão digital</strong>                                                                                                                                                                          |               Não               |     Não     |                  Não                   | iOS 7 e posterior |                Não                 |
+
 <sup>1</sup>Para dispositivos iOS, ao definir as configurações **Minutos de inatividade antes que a tela seja desligada** e **Minutos de inatividade antes que a senha seja solicitada**, elas serão aplicadas em sequência. Por exemplo, se você define o valor de ambas as configurações para **5** minutos, a tela desliga automaticamente após 5 minutos e o dispositivo é bloqueado após outros 5 minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo é bloqueado 5 minutos depois de o usuário desligar a tela.
 
 Quando você implantar uma política de tamanho da senha em dispositivos que executam o Windows RT, os usuários serão forçados a redefinir sua senha, mesmo que a senha atual esteja em conformidade com os requisitos da política.
 
 ## <a name="encryption-settings"></a>Configurações de criptografia
 
-|Nome da configuração|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exigir criptografia no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir senha para desbloquear dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
-|**Exigir criptografia em cartões de armazenamento**<br /><br />Esta configuração se aplica também a dispositivos gerenciados pelo Exchange ActiveSync.|N/D|N/D|N/D <br />Aplicativos e dados associados são criptografados automaticamente.|N/D|Sim|
+|                                                                                                                                     Nome da configuração                                                                                                                                     | Windows 8.1 e Windows RT 8.1 | Windows RT |              Windows Phone 8 e Windows Phone 8.1              | iOS | Android e Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Exigir criptografia no dispositivo móvel</strong><sup>1</sup><br /><br />Para dispositivos Windows Phone 8, defina como <strong>Sim</strong>.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração <strong>Exigir senha para desbloquear dispositivos móveis</strong>. |              Sim               |     Não     |                               Sim                               | Não  |                Sim                |
+|                                                                    <strong>Exigir criptografia em cartões de armazenamento</strong><br /><br />Esta configuração se aplica também a dispositivos gerenciados pelo Exchange ActiveSync.                                                                     |              N/D               |    N/D     | N/D <br />Aplicativos e dados associados são criptografados automaticamente. | N/D |                Sim                |
+
 <sup>1</sup>Consulte mais informações sobre dispositivos que executam o Windows 8.1:
 
 -   Para impor a criptografia em dispositivos que executam o Windows 8.1, você deve instalar a [Atualização do cliente do MDM de dezembro de 2014 para Windows](http://support.microsoft.com/kb/3013816) em cada dispositivo.

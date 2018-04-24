@@ -1,28 +1,28 @@
 ---
 title: Configurar o gerenciamento do dispositivo Windows com o Microsoft Intune
-description: "Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows com o Microsoft Intune."
-keywords: 
+description: Habilite o MDM (gerenciamento de dispositivo móvel) para dispositivos Windows com o Microsoft Intune.
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Configurar o gerenciamento do dispositivo Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico ajuda os administradores de TI a simplificar o registro do Windows para os seus usuários.  Dispositivos do Windows podem ser registrados sem etapas adicionais, mas você pode facilitar o registro para os usuários.
 
@@ -35,15 +35,15 @@ Dois fatores determinam como você pode simplificar o registro de dispositivos d
 |**Windows 10**|[Registro automático](#enable-windows-10-automatic-enrollment) |[Registro de usuário](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Versões anteriores do Windows**|[Registro de usuário](#enable-windows-enrollment-without-automatic-enrollment)|[Registro de usuário](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Habilite o registro do Windows sem registro automático
-Você pode permitir aos usuários o registro de seus dispositivos sem registro automático do Azure AD Premium. Depois de atribuir licenças, os usuários podem registrar depois de adicionar sua conta corporativa aos seus dispositivos pessoais ou ingressar seus dispositivos corporativos ao Azure AD. Criar um alias DNS (tipo de registro CNAME) facilita para os usuários registrarem seus dispositivos. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem precisar inserir um nome do servidor Intune.
+Você pode permitir aos usuários o registro de seus dispositivos sem registro automático do Azure AD Premium. Depois de atribuir licenças, os usuários podem registrar depois de adicionar sua conta corporativa aos seus dispositivos pessoais ou ingressar seus dispositivos corporativos ao Azure AD. Criar um alias DNS (tipo de registro CNAME) facilita que os usuários registrem seus dispositivos. Se você criar registros de recursos de DNS CNAME, os usuários se conectam e se registram no Intune sem precisar inserir um nome do servidor Intune.
 
 **Etapa 1: Criar CNAMEs** (opcional)<br>
-Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site de sua empresa for contoso.com, você precisará criar um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
+Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site da empresa fosse contoso.com, você criaria um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum CNAME de registro, os usuários deverão inserir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
+Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME no registro, os usuários deverão inserir manualmente o nome do servidor MDM: enrollment.manage.microsoft.com.
 
 Se houver mais de um domínio verificado, crie um registro CNAME para cada domínio. Os registros de recursos de CNAME deve conter as seguintes informações:
 

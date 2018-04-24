@@ -1,30 +1,30 @@
 ---
-title: "Criar uma política de conformidade de dispositivo Android no Microsoft Intune"
-titleSuffix: 
-description: "Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos Android, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade."
-keywords: 
+title: Criar uma política de conformidade de dispositivo Android no Microsoft Intune
+titleSuffix: ''
+description: Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos Android, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade do dispositivo para dispositivos Android no Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos do Intune para Android especifica as regras e configurações que dispositivos do Android precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, bem como obter relatórios de dispositivos e executar ações em caso de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e os pré-requisitos que você precisa cumprir antes de criá-las, consulte [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 

@@ -14,26 +14,26 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: fd09126b8226828ccb60f30e0daa6135643303e2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b730aae4e3e8f576824ac61811018293cc07e080
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Escolher como registrar dispositivos móveis
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As respostas para esta série de perguntas ajudarão a determinar o melhor método de registro para os dispositivos gerenciados.
 
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**Como você gerenciará dispositivos dedicados corporativos?**
 
-  > [!div class="button"]
-[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Assistente de Configuração do iOS >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Marcar com IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [Assistente de Configuração do iOS >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+> [Marcar com IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Você pode registrar dispositivos da empresa com usuários dedicados das seguintes maneiras:
 
@@ -44,4 +44,4 @@ As respostas para esta série de perguntas ajudarão a determinar o melhor méto
   - **Marcar com número IMEI** - Importando os números do IMEI (identidade internacional de equipamentos móveis) dos dispositivos da empresa, você poderá marcá-los como dispositivos da empresa no Intune. Essa é a única maneira de identificar dispositivos Windows e Android dedicados ("de usuário único") como corporativos. Os dispositivos iOS que não serão registrados no programa de registro de dispositivos da Apple ou no Apple Configurator também podem ser marcados com um número IMEI. Após declarar previamente o dispositivo para que ele seja marcado como "corporativo", você pode distribuir dispositivos aos usuários. Os usuários podem registrar seus dispositivos como dispositivos dedicados instalando o Portal da Empresa para acessar recursos da empresa como email, aplicativos e dados.
 
 > [!div class="button"]
-[< Voltar](choose-how-to-enroll-devices3.md)
+> [< Voltar](choose-how-to-enroll-devices3.md)

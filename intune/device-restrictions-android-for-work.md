@@ -2,8 +2,8 @@
 title: Restrições de dispositivos para Android for Work no Microsoft Intune – Azure | Microsoft Docs
 description: Em dispositivos que executam o Android for Work, é possível restringir algumas configurações no dispositivo, incluindo ações de copiar e colar, de mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho da senha, falhas de entrada, uso de impressão digital para desbloquear, reutilização de senhas e habilitação de compartilhamento de bluetooth para contatos de trabalho.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Configurações de restrição de dispositivo de trabalho no Intune
 
 Este artigo lista as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Android for Work.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Configurações de perfil de trabalho
 
@@ -48,6 +48,8 @@ Este artigo lista as configurações de restrições de dispositivo do Microsoft
    Impede que os usuários finais adicionem ou removam contas no perfil de trabalho.
 
    Por exemplo, quando você implanta o aplicativo Gmail em um perfil do Android for Work, é possível impedir que usuários finais adicionem ou removam contas neste perfil de trabalho.
+
+- **Contato com compartilhamento via Bluetooth**: permite o acesso a contatos de trabalho de outro dispositivo, como um carro, emparelhado usando Bluetooth. Por padrão, essa configuração não está configurada e os contatos de perfil de trabalho não são mostrados. Selecione **Habilitar** para permitir esse compartilhamento e mostrar contatos de perfil de trabalho. Essa configuração aplica-se a dispositivos de perfil de trabalho Android no sistema operacional Android v6.0 e mais recentes.
 
 ### <a name="work-profile-password"></a>Senha do perfil de trabalho
 

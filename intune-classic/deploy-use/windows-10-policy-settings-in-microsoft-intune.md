@@ -1,29 +1,29 @@
 ---
-title: "Configurações de política do Windows 10"
-description: "Use as configurações de política listadas neste tópico para ajudá-lo a definir configurações internas e personalizadas para dispositivos Windows 10 Mobile e Windows 10 Desktop registrados."
-keywords: 
+title: Configurações de política do Windows 10
+description: Use as configurações de política listadas neste tópico para ajudá-lo a definir configurações internas e personalizadas para dispositivos Windows 10 Mobile e Windows 10 Desktop registrados.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Configurações de política do Intune para dispositivos Windows 10 no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico contém informações para ajudá-lo a entender as configurações de política do Intune que você pode usar para gerenciar dispositivos Windows 10. Leia este tópico junto com os procedimentos em [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -192,7 +192,7 @@ Todas as configurações são somente para Windows 10 Desktop.
 |**Verificar arquivos mortos**|Permite que o Defender examine Verificar arquivamentos, como arquivos .zip ou .cab.|
 |**Verificar mensagens de email**|Permite que o Defender examine mensagens de email assim que elas chegarem ao dispositivo|
 |**Verificar unidades removíveis**|Permite que o Defender examine unidades removíveis, como cartões USB|
-|**Verificar unidades de rede mapeadas**|Permite que o Defender examine arquivos em unidades de rede mapeadas.<br>Se os arquivos na unidade forem somente leitura, o Defender não poderá o remover nenhum malware encontrado neles.|
+|**Verificar unidades de rede mapeadas**|Permite que o Defender examine arquivos em unidades de rede mapeadas.<br>Se os arquivos na unidade forem somente leitura, o Defender não poderá remover qualquer malware encontrado neles.|
 |**Verificar arquivos abertos de pastas compartilhadas na rede**|Permite que o Defender examine arquivos em unidades de rede compartilhadas (por exemplo, aqueles acessados de um caminho UNC).<br>Se os arquivos na unidade forem somente leitura, o Defender não poderá o remover nenhum malware encontrado neles.|
 |**Intervalo de atualização de assinatura**|Especifica o intervalo no qual o Defender verifica novos arquivos de assinatura.|
 |**Permitir proteção de nuvem**|Permite ou bloqueia o Microsoft Active Protection Service de receber informações sobre a atividade de malware de dispositivos gerenciados. Essas informações são usadas para aprimorar o serviço futuramente.|

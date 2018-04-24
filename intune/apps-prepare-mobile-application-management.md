@@ -1,29 +1,29 @@
 ---
-title: "Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos"
+title: Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 titlesuffix: Microsoft Intune
-description: "Use a Ferramenta de disposição do aplicativo e o SDK de aplicativos para permitir que seus aplicativos de linha de negócios personalizados usem as políticas de proteção de aplicativo no Microsoft Intune."
-keywords: 
+description: Use a Ferramenta de disposição do aplicativo e o SDK de aplicativos para permitir que seus aplicativos de linha de negócios personalizados usem as políticas de proteção de aplicativo no Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Você pode habilitar seus aplicativos para usar políticas de proteção usando a Ferramenta de Encapsulamento de Aplicativos do Intune ou o SDK de Aplicativos do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
 
@@ -70,8 +70,8 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começa
 
 |**SDK do Aplicativo do Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sim – usar o [Componente Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
-|**Android**| Sim – usar o [Componente Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
+|**iOS**|Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
+|**Android**| Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Comparação de recursos
 Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
@@ -79,30 +79,30 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 > [!NOTE]
 > A Ferramenta de Disposição de Aplicativo só pode ser usada quando você estiver usando o Intune autônomo ou o Intune com o Configuration Manager.
 
-|Recurso|SDK do Aplicativo|Ferramenta de Encapsulamento de Aplicativo|
-|-----------|---------------------|-----------|
-|Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo|X|X|
-|Impedir backups do Android, iTunes ou iCloud|X|X|
-|Permitir que o aplicativo transfira dados para outros aplicativos|X|X|
-|Permitir que o aplicativo receba dados de outros aplicativos|X|X|
-|Restringir recortar, copiar e colar com outros aplicativos|X|X|
-|Solicitar PIN simples para acesso|X|X|
-|Substituir o PIN do aplicativo interno pelo PIN do Intune|X||
-|Especificar o número de tentativas antes da redefinição do PIN|X|X|
-|Permitir a impressão digital em vez do PIN |X|X|
-|Exigir credenciais corporativas para acesso|X|X|
-|Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root|X|X|
-|Criptografar dados do aplicativo|X|X|
-|Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos|X|X|
-|Especificar o período de cortesia offline|X|X|
-|Bloquear captura de tela (somente para Android)|X|X|
-|Suporte para MAM sem registro de dispositivo|X|X|
-|Apagamento completo|X|X|
-|Apagamento seletivo <br></br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
-|Impedir "Salvar como" |X||
-|Configuração de aplicativo direcionado |X||
-|Suporte para múltiplas identidades|X||
-|Estilo Personalizável |X|||
+|                                                         Recurso                                                          | SDK do Aplicativo | Ferramenta de Encapsulamento de Aplicativo |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo                              |    X    |         X         |
+|                                        Impedir backups do Android, iTunes ou iCloud                                        |    X    |         X         |
+|                                         Permitir que o aplicativo transfira dados para outros aplicativos                                         |    X    |         X         |
+|                                        Permitir que o aplicativo receba dados de outros aplicativos                                         |    X    |         X         |
+|                                      Restringir recortar, copiar e colar com outros aplicativos                                       |    X    |         X         |
+|                                              Solicitar PIN simples para acesso                                               |    X    |         X         |
+|                                         Substituir o PIN do aplicativo interno pelo PIN do Intune                                         |    X    |                   |
+|                                     Especificar o número de tentativas antes da redefinição do PIN                                      |    X    |         X         |
+|                                             Permitir a impressão digital em vez do PIN                                             |    X    |         X         |
+|                                         Exigir credenciais corporativas para acesso                                         |    X    |         X         |
+|                             Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root                              |    X    |         X         |
+|                                                     Criptografar dados do aplicativo                                                     |    X    |         X         |
+|                           Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos                            |    X    |         X         |
+|                                             Especificar o período de cortesia offline                                             |    X    |         X         |
+|                                           Bloquear captura de tela (somente para Android)                                            |    X    |         X         |
+|                                        Suporte para MAM sem registro de dispositivo                                         |    X    |         X         |
+|                                                        Apagamento completo                                                         |    X    |         X         |
+| Apagamento seletivo <br></br><strong>Observação:</strong> para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido. |    X    |                   |
+|                                                    Impedir "Salvar como"                                                     |    X    |                   |
+|                                            Configuração de aplicativo direcionado                                            |    X    |                   |
+|                                                Suporte para múltiplas identidades                                                |    X    |                   |
+|                                                    Estilo Personalizável                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Próximas etapas
 

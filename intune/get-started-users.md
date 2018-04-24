@@ -1,25 +1,25 @@
 ---
-title: "Introdução ao gerenciamento de usuários"
+title: Introdução ao gerenciamento de usuários
 titlesuffix: Microsoft Intune
-description: "Adicionar um usuário ao Intune e atribuir uma licença para que ele acesse recursos da empresa em dispositivos móveis."
-keywords: 
+description: Adicionar um usuário ao Intune e atribuir uma licença para que ele acesse recursos da empresa em dispositivos móveis.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-managing-users"></a>Introdução ao gerenciamento de usuários
 
@@ -44,8 +44,8 @@ Depois de criar um usuário, será necessário usar o [Portal do Office 365](htt
 3. Pode ser necessário aguardar um pouco para que todas as informações do usuário sejam carregadas. Depois de carregadas, selecione **Editar** nas **Licenças de produto** do usuário.
 4. Atribua um **Local** ao usuário e mude o Intune para **ativado**.
 
- > [!NOTE]
- > Isso usa uma das suas licenças para este usuário. Se você estiver usando o ambiente em tempo real, poderá desligar o uso dessa licença mais tarde para reatribuí-la a um usuário real.
+   > [!NOTE]
+   > Isso usa uma das suas licenças para este usuário. Se você estiver usando o ambiente em tempo real, poderá desligar o uso dessa licença mais tarde para reatribuí-la a um usuário real.
 
 5. Selecione **Salvar**.
 

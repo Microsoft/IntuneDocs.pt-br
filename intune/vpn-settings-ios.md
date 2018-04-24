@@ -1,27 +1,26 @@
 ---
-title: "Configurações de VPN do Microsoft Intune para dispositivos que executam o iOS"
-titlesuffix: 
-description: "Conheça as definições do Intune que você pode usar para configurar as conexões VPN em dispositivos que executam o iOS."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Configurações VPN para dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
+description: Exiba as definições de configuração de VPN (rede virtual privada) disponíveis, incluindo detalhes de conexão, métodos de autenticação e túnel dividido nas configurações de base; as configurações personalizadas de VPN com o identificador e os pares de chave e valor; as configurações de VPN por aplicativo que incluem URLs Safari e VPNs sob demanda com domínios de pesquisa SSIDs ou DNS; e as configurações de proxy para incluir um script de configuração, endereço IP ou FQDN e porta TCP no Microsoft Intune em dispositivos que executam o iOS.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações do Intune que você pode usar para configurar conexões VPN em dispositivos que executam iOS.
 
@@ -29,52 +28,50 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 
 ## <a name="base-vpn-settings"></a>Configurações de VPN de base
 
+- **Nome da conexão**: insira um nome para esta conexão. Os usuários finais verão esse nome quando navegarem no dispositivo para uma lista de conexões VPN disponíveis.
+- **Endereço IP ou FQDN**: insira o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN ao qual os dispositivos se conectam. Por exemplo, insira **192.168.1.1** ou **vpn.contoso.com**.
+- **Método de autenticação**: escolha como os dispositivos autenticam-se no servidor VPN:
+  - **Certificados**: em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS existente para autenticar a conexão. [Configurar certificados](certificates-configure.md) apresenta algumas diretrizes sobre perfis de certificado.
+  - **Nome de usuário e senha**: os usuários finais deverão fornecer um nome de usuário e uma senha para entrar no servidor VPN.
+- **Tipo de conexão**: selecione o tipo de conexão VPN na lista de fornecedores a seguir:
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+  - **Cisco (IPsec)**
+  - **Citrix**
+  - **VPN personalizado**
 
-**Nome da conexão** – Insira um nome para esta conexão. Os usuários finais verão esse nome quando navegarem na lista de conexões VPN disponíveis no dispositivo.
-- **Endereço IP ou FQDN** – forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectarão. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
-- **Método de autenticação** – Escolha como os dispositivos se autenticarão no servidor VPN:
-    - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS criado anteriormente para autenticar a conexão. Para obter mais informações sobre os perfis de certificado, consulte [Como configurar certificados](certificates-configure.md).
-    - **Nome de usuário e senha** – os usuários finais deverão fornecer um nome de usuário e uma senha para fazer logon no servidor VPN.
-- **Tipo de Conexão** – Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
-    - **Cisco (IPsec)**
-    - **Citrix**
-    - **VPN personalizado**
-- **Túnel dividido** - **Habilite** ou **Desabilite** essa opção que permite que os dispositivos decidam qual conexão usarão dependendo do tráfego. Por exemplo, um usuário em um hotel usará a conexão VPN para acessar arquivos de trabalho, mas usará a rede padrão do hotel para navegação regular na Web.
-
+- **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usará a conexão VPN para acessar arquivos de trabalho, mas usará a rede padrão do hotel para navegação regular na Web.
 
 ## <a name="custom-vpn-settings"></a>Configurações de VPN personalizado
 
-Se você selecionou **VPN Personalizada**, como o tipo de conexão, defina essas configurações adicionais:
+Se você tiver selecionado **VPN Personalizada** como o tipo de conexão, defina também as seguintes configurações:
 
-- **Identificador de VPN** Este é um identificador para o aplicativo VPN que você está usando e é fornecido pelo seu provedor VPN.
-- **Digite os pares de chave-valor para os atributos personalizados de VPN** Adicione ou importe as **Chaves** e os **Valores** que personalizam sua conexão VPN. Novamente, esses valores geralmente são fornecidos pelo seu provedor de VPN.
+- **Identificador de VPN**: um identificador para o aplicativo VPN que você está usando, fornecido pelo seu provedor de VPN.
+- **Digitar os pares chave-valor para os atributos personalizados de VPN**: adicione ou importe as **Chaves** e os **Valores** que personalizam sua conexão VPN. Novamente, esses valores geralmente são fornecidos pelo seu provedor de VPN.
 
 ## <a name="apps-per-app-vpn-settings"></a>Configurações de aplicativos (VPN por aplicativo)
 
-- **VPN por aplicativo** – habilite essa opção se desejar que as URLs habilitem a conexão VPN quando forem acessadas de um navegador Safari. Para configurar isso, você deve selecionar **Certificados** como o método de autenticação nas configurações de VPN de base.
-- **URLs que habilitam a conexão VPN ao usar o navegador Safari** – clique em Adicionar para adicionar uma ou mais URLs de site. Quando essas URLs forem visitadas, a conexão VPN será habilitada.
+- **VPN por aplicativo**: habilite essa opção para usar URLs que habilitem a conexão VPN quando elas forem acessadas de um navegador Safari. Para configurar a VPN por aplicativo, você deve selecionar **Certificados** como o método de autenticação nas configurações de VPN de base.
+  - **URLs do Safari que dispararão esta VPN**: selecione para adicionar uma ou mais URLs de site. Quando essas URLs forem visitadas, a conexão VPN será habilitada.
 
-- **Regras de sob demanda** – Isso permite configurar regras condicionais que controlam quando a conexão VPN é iniciada. Por exemplo, você pode criar uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma das redes Wi-Fi da empresa. Como alternativa, você poderia criar uma condição em que, se um dispositivo não puder acessar um domínio de pesquisa DNS especificado, a conexão VPN não será iniciada.
+- **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição em que, se um dispositivo não puder acessar um domínio de pesquisa DNS especificado, a conexão VPN não será iniciada.
 
-    - **Domínios de pesquisa de DNS ou SSIDs** – selecione se essa condição usará a rede sem fio **SSIDs** ou os **domínios de pesquisa de DNS**. Escolha Adicionar para configurar um ou mais SSIDs ou pesquisar domínios.
-    - **Teste de cadeia de caracteres de URL** – opcionalmente, forneça uma URL que usa a regra como um teste. Se o dispositivo no qual esse perfil está instalado puder acessar essa URL sem redirecionamento, a conexão VPN será iniciada e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
-    - **Ação de domínio** – escolha uma das seguintes opções:
-        - Conectar se necessário – 
-        - Nunca conectar – 
-    - **Ação** – escolha uma das seguintes opções:
-        - Conectar – 
-        - Avaliar conexão – 
-        - Ignorar – 
-        - Desconectar – 
-
+  - **Domínios de pesquisa de DNS ou SSIDs**: selecione se essa condição usa **SSIDs** de rede sem fio ou **domínios de pesquisa de DNS**. Escolha **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
+  - **Investigação de cadeia de caracteres de URL**: opcional. Insira uma URL que a regra use como teste. Se o dispositivo no qual o perfil estiver instalado puder acessar essa URL sem redirecionamento, a conexão VPN será iniciada e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
+  - **Ação de domínio**: escolha um dos seguintes itens:
+    - Conectar se necessário
+    - Nunca conectar
+  - **Ação**: escolha um dos seguintes itens:
+    - Connect
+    - Avaliar a conexão
+    - Ignorar
+    - Desconectar
 
 ## <a name="proxy-settings"></a>Configurações de proxy
 
-- **Automático** – Use um arquivo de configuração para definir o servidor proxy. Digite a **URL do servidor proxy** (por exemplo **http://proxy.contoso.com**) que contém o arquivo de configuração.
-- **Endereço** – Insira o endereço do servidor proxy (como um endereço IP).
-- **Número da porta** – Insira o número de porta associado ao servidor proxy.
+- **Script de configuração automática**: use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o arquivo de configuração.
+- **Endereço**: insira o endereço IP do nome do host totalmente qualificado do servidor proxy.
+- **Número da porta**: insira o número da porta associada ao servidor proxy.

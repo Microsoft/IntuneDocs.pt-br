@@ -15,15 +15,15 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerenciar o acesso à Internet usando políticas do Managed Browser com o Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Managed Browser é um aplicativo de navegação na Web que pode ser baixado em lojas públicas de aplicativos para uso em sua organização. Quando configurado com o Intune, o Managed Browser gerenciado pode ser:
 - Usado para acessar sites corporativos e aplicativos SaaS com o Logon Único por meio do serviço MyApps, ao mesmo tempo que mantém os dados da Web protegidos.
@@ -91,6 +91,8 @@ Para restringir os aplicativos Web conectados ao Azure AD para usarem o Intune M
 9. Na seção **Atribuições**, selecione **Aplicativos de nuvem** para escolher quais aplicativos proteger com esta política.
 
 Depois que a política acima estiver configurada, os usuários serão forçados a usar o Intune Managed Browser para acessar os aplicativos Web conectados ao Azure AD que você protegeu com esta política. Se os usuários tentarem usar um navegador não gerenciado neste cenário, eles verão um aviso de que o Intune Managed Browser deverá ser usado.
+
+O Navegador Gerenciado não é compatível com políticas de Acesso Condicional clássicas. Para obter mais informações, consulte [Migrar políticas clássicas no Portal do Azure](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
 ##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Logon único para aplicativos Web conectados ao Azure AD no Intune Managed Browser
 
@@ -164,11 +166,11 @@ Para obter mais informações sobre como o Managed Browser e o Proxy de Aplicati
 
 Essa definição permite configurar a página inicial que os usuários veem ao iniciar o Managed Browser ou criar uma nova guia. Usando o procedimento para criar uma configuração do aplicativo Managed Browser, forneça o seguinte par de chave e valor:
 
-|||
-|-|-|
-|Chave|Valor|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Especifique uma URL válida. URLs incorretas são bloqueadas como medida de segurança.<br>Exemplo: **https://www.bing.com**|
 
+|                                                                   |                                                                                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|                                Chave                                |                                                           Valor                                                            |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Especifique uma URL válida. URLs incorretas são bloqueadas como medida de segurança.<br>Exemplo: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Como configurar indicadores para o Managed Browser
 
@@ -180,19 +182,21 @@ Essa definição permite que você configure um conjunto de indicadores disponí
 
 Usando o procedimento para criar uma configuração do aplicativo Managed Browser, forneça o seguinte par de chave e valor:
 
-|||
-|-|-|
-|Chave|Valor|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|O valor dessa configuração é uma lista de indicadores. Cada indicador consiste no título e na URL do indicador. Separe o título e a URL com o caractere **&#124;**.<br><br>Exemplo: **Microsoft Bing&#124;https://www.bing.com**<br><br>Para configurar vários indicadores, separe cada par com caractere duplo, **&#124;&#124;**<br><br>Exemplo: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                Chave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | O valor dessa configuração é uma lista de indicadores. Cada indicador consiste no título e na URL do indicador. Separe o título e a URL com o caractere <strong>&#124;</strong>.<br><br>Exemplo: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Para configurar vários indicadores, separe cada par com caractere duplo, <strong>&#124;&#124;</strong><br><br>Exemplo: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Como especificar URLs permitidas e bloqueadas para o Managed Browser
 
 Usando o procedimento para criar uma configuração do aplicativo Managed Browser, forneça o seguinte par de chave e valor:
 
-|||
-|-|-|
-|Chave|Valor|
-|Escolha:<br><br>Especificar as URLs permitidas (apenas essas URLs são permitidas; nenhum outro site pode ser acessado): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Especifique as URLs bloqueadas (todos os outros sites podem ser acessados): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|O valor correspondente para a chave é uma lista de URLs. Insira todas as URLs que você deseja permitir ou bloquear como um único valor, separado por um caractere de barra vertical **&#124;**.<br><br>Exemplos:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+
+|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                               Chave                                                                                                                                                                |                                                                                                                                                                                    Valor                                                                                                                                                                                    |
+| Escolha:<br><br>Especificar as URLs permitidas (apenas essas URLs são permitidas; nenhum outro site pode ser acessado): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Especifique as URLs bloqueadas (todos os outros sites podem ser acessados): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | O valor correspondente para a chave é uma lista de URLs. Insira todas as URLs que você deseja permitir ou bloquear como um único valor, separado por um caractere de barra vertical <strong>&#124;</strong>.<br><br>Exemplos:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
 
 >[!IMPORTANT]
 >Não especifique as duas chaves. Se as duas chaves forem direcionadas para o mesmo usuário, a chave de permissão será usada, pois é a opção mais restritiva.
@@ -201,52 +205,52 @@ Usando o procedimento para criar uma configuração do aplicativo Managed Browse
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato de URL para URLs permitidas e bloqueadas
 Use as informações a seguir para saber mais sobre os formatos permitidos e caracteres curinga que você pode usar ao especificar URLs para as listas de permitidas e bloqueadas:
 
--   Você pode usar o símbolo de caractere curinga (**&#42;**) de acordo com as regras na lista de padrões permitidos a seguir:
+- Você pode usar o símbolo de caractere curinga (**&#42;**) de acordo com as regras na lista de padrões permitidos a seguir:
 
--   Certifique-se de prefixar todas as URLs com **http** ou **https** ao inseri-las na lista.
+- Certifique-se de prefixar todas as URLs com **http** ou **https** ao inseri-las na lista.
 
--   Você pode especificar os números de porta no endereço. Se você não especificar um número da porta, os valores usados serão:
+- Você pode especificar os números de porta no endereço. Se você não especificar um número da porta, os valores usados serão:
 
-    -   Porta 80 para https
+  -   Porta 80 para https
 
-    -   Porta 443 para https
+  -   Porta 443 para https
 
-    Não há suporte para o uso de caracteres curinga no número da porta. Por exemplo, não há compatibilidade com o uso de **http&colon;//www&period;contoso&period;com:*;** nem de **http&colon;//www&period;contoso&period;com: /*;**.
+  Não há suporte para o uso de caracteres curinga no número da porta. Por exemplo, <strong>http&colon;//www&period;contoso&period;com:*;</strong> e <strong>http&colon;//www&period;contoso&period;com: /*;</strong> não são compatíveis.
 
--   Use a tabela a seguir para aprender sobre os padrões permitidos que você pode usar para especificar URLs:
+- Use a tabela a seguir para aprender sobre os padrões permitidos que você pode usar para especificar URLs:
 
-|URL|Detalhes|Corresponde a|Não corresponde a|
-|-------|---------------|-----------|------------------|
-|http://www.contoso.com|Corresponde a uma única página|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|Corresponde a uma única página|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|Corresponde a todas as URLs iniciadas por www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|Corresponde a todos os subdomínios em contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|Corresponde a uma única pasta|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|Corresponde a uma única página, usando um número da porta|http://www.contoso.com:80|
-|https://www.contoso.com|Corresponde a uma única página segura|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|Corresponde a uma única pasta e todas as subpastas|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Detalhes                      |                                                Corresponde a                                                |                                Não corresponde a                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Corresponde a uma única página               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Corresponde a uma única página               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | Corresponde a todas as URLs iniciadas por www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     Corresponde a todos os subdomínios em contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Corresponde a uma única pasta              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Corresponde a uma única página, usando um número da porta   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Corresponde a uma única página segura           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Corresponde a uma única pasta e todas as subpastas    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   A seguir, exemplos de algumas das entradas que você não pode especificar:
+- A seguir, exemplos de algumas das entradas que você não pode especificar:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   Endereços IP
+  - Endereços IP
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Como acessar logs de aplicativos gerenciados usando o Managed Browser no iOS
 

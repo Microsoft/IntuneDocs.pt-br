@@ -1,27 +1,27 @@
 ---
 title: Redefinir seu dispositivo pelo site do Portal da Empresa | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 181c3df521e9cf213367becf00e4a53469ad69a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Redefinir seu dispositivo pelo site do Portal da Empresa
 
@@ -34,17 +34,17 @@ Se você redefinir este dispositivo, ele não será mais listado no Portal da Em
 
 Para redefinir o dispositivo:
 
-1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __Menu__ e, em seguida, selecione __Meus dispositivos__.
+1. No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __Menu__ e, em seguida, selecione __Meus dispositivos__.
 
 2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja renomear.
 
-  ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  O dispositivo será aberto em uma janela pop-up. Toque no botão **Redefinir**.
+3. O dispositivo será aberto em uma janela pop-up. Toque no botão **Redefinir**.
 
-    ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+   ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
 
-4.  Será exibida uma mensagem de aviso informando que você está prestes a apagar todo o conteúdo do dispositivo redefinindo-o com as configurações padrão de fábrica. Toque em **Redefinir** para confirmar se isso é o que você deseja fazer.
+4. Será exibida uma mensagem de aviso informando que você está prestes a apagar todo o conteúdo do dispositivo redefinindo-o com as configurações padrão de fábrica. Toque em **Redefinir** para confirmar se isso é o que você deseja fazer.
 
 O dispositivo foi redefinido.
 

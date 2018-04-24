@@ -1,29 +1,29 @@
 ---
-title: "Criar uma política de conformidade do dispositivo macOS no Microsoft Intune"
-titleSuffix: 
-description: "Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos macOS, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade."
-keywords: 
+title: Criar uma política de conformidade do dispositivo macOS no Microsoft Intune
+titleSuffix: ''
+description: Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos macOS, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Criar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos do Intune para macOS especifica as regras e configurações que dispositivos macOS precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, bem como obter relatórios de dispositivos e executar ações em caso de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune.
 

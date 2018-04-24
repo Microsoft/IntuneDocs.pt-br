@@ -1,28 +1,28 @@
 ---
-title: "Novidades no arquivo do portal clássico do Microsoft Intune"
+title: Novidades no arquivo do portal clássico do Microsoft Intune
 description: Arquivado de comunicados de novidades do Microsoft Intune
-keywords: 
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades do Portal Clássico do Intune – meses anteriores
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Esta página lista os novos recursos e avisos já anunciados na [página de novidades](whats-new.md) do Portal Clássico do Intune.
 
@@ -359,7 +359,7 @@ __Agora, o componente Xamarin do SDK de Aplicativo dá suporte ao MAM sem regist
 
 __O certificado de autenticação da Symantec não exige mais um Portal da Empresa assinado do Windows Phone 8 para upload__ O upload do certificado de autenticação da Symantec não exigirá mais um aplicativo de Portal da Empresa assinado do Windows Phone 8. O certificado pode ser carregado de forma independente.
 
-###<a name="deprecations"></a>Desativações
+### <a name="deprecations"></a>Desativações
 
 __Suporte para o Portal da Empresa do Windows Phone 8__ O suporte para o Portal da Empresa do Windows Phone 8 será preterido. O suporte para as plataformas Windows Phone 8 e WinRT foi preterido em outubro de 2016. O suporte para o Portal da Empresa do Windows 8 também foi preterido em outubro de 2016.
 

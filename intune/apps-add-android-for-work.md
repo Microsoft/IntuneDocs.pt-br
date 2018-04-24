@@ -2,28 +2,28 @@
 title: Atribuir aplicativos a dispositivos Android for Work
 titlesuffix: Microsoft Intune
 description: Saiba como sincronizar e atribuir aplicativos a dispositivos Android for Work na loja Google Play for Work.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Como atribuir aplicativos em dispositivos Android for Work com o Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Android for Work é um programa para dispositivos Android. Todos os aplicativos instalados em dispositivos Android for Work são obtidos na loja Google Play for Work. A maneira pela qual aplicativos são atribuídos em dispositivos Android for Work e dispositivos Android padrão é diferente. Faça logon na loja, procure os aplicativos desejados e aprove-os. Então, o aplicativo aparecerá no nó **Aplicativos licenciados** do Portal do Azure. A partir desse momento, é possível gerenciar a atribuição do aplicativo do mesmo modo que você atribui qualquer outro aplicativo.
 
@@ -43,7 +43,7 @@ Verifique se você configurou o Intune e o Android for Work para trabalharem jun
 
     ![Exemplo – aprovar o aplicativo na loja Google Play for Work](media/approve.png)</br>
     
-  Uma janela do aplicativo se abrirá solicitando que você conceda permissões para o aplicativo executar várias operações. 
+   Uma janela do aplicativo se abrirá solicitando que você conceda permissões para o aplicativo executar várias operações. 
 
 4. Selecione **Aprovar** para aceitar as permissões do aplicativo e continuar.</br>
 
@@ -79,7 +79,7 @@ Quando um desenvolvedor de aplicativo publica uma nova versão do aplicativo com
 
 Periodicamente, acesse o console gerenciado do Google Play para verificar se há novas permissões. Você pode configurar o Google Play para enviar um email a você ou a outras pessoas quando novas permissões forem necessárias para um aplicativo aprovado. Se você atribuir um aplicativo e observar que ele não está instalado nos dispositivos, verifique se há novas permissões com as seguintes etapas:
 
-1. Visite http://play.google.com/work
+1. Acesse http://play.google.com/work
 2. Entre com a conta do Google usada para publicar e aprovar os aplicativos.
 3. Visite a guia **Atualizações** para ver se algum aplicativo precisa de atualização.  Os aplicativos listados exigem novas permissões e só são atribuídos quando elas são aplicadas.  
 

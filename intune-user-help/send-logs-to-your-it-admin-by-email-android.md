@@ -1,44 +1,47 @@
 ---
 title: Enviar logs para o suporte de sua empresa por email | Microsoft Docs
 description: Enviar logs de dados usando o email em um dispositivo Android
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ddd0c1113b7cce6f461b627a3d346806df3bbc8c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>Enviar logs para o suporte de sua empresa usando o email
+# <a name="email-logs-to-your-company-support"></a>Enviar logs por email ao suporte da sua empresa
 
-Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empresa em seu dispositivo Android, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+Às vezes, pode ocorrer um erro durante o uso do aplicativo Portal da Empresa em seu dispositivo Android. Quando isso ocorrer, você pode enviar por email detalhes sobre o erro para o profissional de suporte da sua empresa. Esses detalhes darão o contexto necessário para solucionar o problema para você.  
+
+Os detalhes do erro são mantidos no seu dispositivo em um documento especial chamado _log de diagnóstico_. Quando você carrega os logs para o aplicativo de Portal da Empresa, eles primeiro são enviados aos desenvolvedores da Microsoft que trabalham no aplicativo. Eles usam os logs para melhorar a funcionalidade do aplicativo e evitar erros futuros. Uma ID de incidente para o erro específico é então fornecida a você para compartilhar com o responsável pelo suporte na sua empresa.  
 
 > [!Note]
-> Para facilitar para o suporte de sua empresa descobrir o problema, você deverá ativar o _log detalhado_. O log detalhado inclui todos os detalhes relevantes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para facilitar para o suporte de sua empresa para descobrir a causa do problema, ative o _log detalhado_. O log detalhado registra todos os detalhes sobre um erro e inclui esses detalhes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  
 
-Para enviar logs para o suporte de sua empresa usando o email:
+Para enviar logs por email ao suporte da sua empresa:
 
 1.  Abra o aplicativo do Portal da Empresa.
 
-2.  Toque em **Menu** >  **Ajuda e Comentários**.
+2.  Toque em **Menu** > **Ajuda** > **Suporte por Email**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou de hardware, dependendo do dispositivo Android.
 
-3.  Em **Ajuda**, toque em **Obter Ajuda**.
+3.  Toque em **Enviar Email e Carregar Logs**.
+4.  Após o upload ter sido concluído, toque em seu aplicativo de email. Uma mensagem de email será aberta com a ID do incidente preenchida no campo de assunto. No corpo do email, descreva o problema que você encontrou.  
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

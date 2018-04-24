@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico fornece sugestões para solução de problemas de registro do dispositivo. Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
 
@@ -87,9 +87,9 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 8.  Remova os dispositivos conforme apropriado, como aqueles que não estão mais em uso, ou aqueles que têm definições imprecisas.
 
 > [!NOTE]
-
+> 
 > Você pode evitar o limite de registro de dispositivo usando a conta do Gerenciador de Registro do Dispositivo, conforme descrito em [Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivos no Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
->
+> 
 > Uma conta de usuário que é adicionada à conta de Gerenciadores de Registro de Dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Portal da empresa temporariamente indisponível
@@ -154,7 +154,7 @@ Os administradores podem excluir dispositivos no portal do Azure Active Director
 **Problema:** quando você adiciona um segundo domínio verificado ao seu ADFS, os usuários com o sufixo de nome UPN do segundo domínio não poderão fazer logon nos portais ou registrar dispositivos.
 
 
-**Resolução:** os clientes do Microsoft Office 365 que usam o SSO (logon único) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo. Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
+<strong>Resolução:</strong> os clientes do Microsoft Office 365 que usam o SSO (logon único) por meio do AD FS 2.0 e tiverem vários domínios de nível superior para sufixos UPN de usuários em sua organização (por exemplo, @contoso.com ou @fabrikam.com) deverão implantar uma instância separada do Serviço de Federação AD FS 2.0 em cada sufixo. Agora, há um [pacote cumulativo de atualizações para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador <strong>SupportMultipleDomain</strong> para habilitar o servidor AD FS, para dar suporte a esse cenário sem a necessidade de exigir servidores AD FS 2.0 adicionais. Confira [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
 
 ## <a name="android-issues"></a>Problemas de Android
@@ -195,27 +195,27 @@ Se a Resolução nº2 não funcionar, oriente os usuários a seguir estas etapas
 
 1. Inicie o aplicativo Gerenciador Inteligente no dispositivo.
 
-  ![Selecione o ícone do Gerenciador Inteligente no dispositivo](./media/smart-manager-app-icon.png)
+   ![Selecione o ícone do Gerenciador Inteligente no dispositivo](./media/smart-manager-app-icon.png)
 
 2. Escolha o bloco **Bateria**.
 
-  ![Selecione o bloco Bateria](./media/smart-manager-battery-tile.png)
+   ![Selecione o bloco Bateria](./media/smart-manager-battery-tile.png)
 
 3. Em **Economia de energia do aplicativo** ou em **Otimização do aplicativo**, selecione **Detalhes**.
 
-  ![Selecione Detalhes em Economia de energia do aplicativo ou em Otimização de aplicativo](./media/smart-manager-app-power-saving-detail.png)
+   ![Selecione Detalhes em Economia de energia do aplicativo ou em Otimização de aplicativo](./media/smart-manager-app-power-saving-detail.png)
 
 4. Escolha **Portal da Empresa** na lista de aplicativos.
 
-  ![Selecione o Portal da Empresa na lista de aplicativos](./media/smart-manager-company-portal.png)
+   ![Selecione o Portal da Empresa na lista de aplicativos](./media/smart-manager-company-portal.png)
 
 5. Escolha **Desativado**.
 
-  ![Selecione Desativado na caixa de diálogo Otimização de aplicativo](./media/smart-manager-app-optimization-turned-off.png)
+   ![Selecione Desativado na caixa de diálogo Otimização de aplicativo](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Em **Economia de energia do aplicativo** ou em **Otimização do aplicativo**, confirme se o Portal da Empresa está desativado.
 
-  ![Verifique se o Portal da Empresa está desativado](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Verifique se o Portal da Empresa está desativado](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil

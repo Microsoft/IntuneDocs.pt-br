@@ -1,27 +1,27 @@
 ---
-title: "Configurações de VPN do Microsoft Intune para dispositivos Windows 8.1"
-titleSuffix: 
-description: "Conheça as definições do Intune que você pode usar para configurar as conexões VPN em dispositivos que executam o Windows 8.1."
-keywords: 
+title: Configurações de VPN do Microsoft Intune para dispositivos Windows 8.1
+titleSuffix: ''
+description: Conheça as definições do Intune que você pode usar para configurar as conexões VPN em dispositivos que executam o Windows 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: cbcc3be31a6d9de7ce87ea5b25b8c1a2c42b47cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o Windows 8.1
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações do Intune que você pode usar para configurar conexões VPN em dispositivos que executam Windows 8.1.
 
@@ -61,26 +61,22 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **Exemplo do CheckPoint Mobile VPN:**
 ```
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-
 ```
 
 **Exemplo do SonicWall Mobile Connect:**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **Exemplo do F5 Edge Client:**
 
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 Para obter mais informações, consulte a documentação do VPN de cada fabricante sobre como gravar comandos XML personalizados.

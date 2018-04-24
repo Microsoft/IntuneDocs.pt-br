@@ -1,27 +1,27 @@
 ---
 title: Sincronizar o dispositivo Windows manualmente | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o dispositivo Windows manualmente
 
@@ -65,10 +65,10 @@ Há mais de uma versão do Windows 10, portanto, há dois conjuntos de etapas. P
 
 2. Escolha sua conta corporativa ou de estudante. Dependendo de como o suporte de sua empresa tiver configurado as coisas, você poderá ver duas contas semelhantes ao exemplo a seguir. Ao lado de uma conta, há uma pasta, ao lado da outra há um logotipo da Microsoft.
 
-    - Se vir a conta com a pasta, selecione-a e procure um botão de **Informações** abaixo dela.
-    - Se vir apenas a conta com o logotipo da Microsoft, selecione a conta e procure um botão de **Informações** abaixo dela.
+   - Se vir a conta com a pasta, selecione-a e procure um botão de **Informações** abaixo dela.
+   - Se vir apenas a conta com o logotipo da Microsoft, selecione a conta e procure um botão de **Informações** abaixo dela.
 
-    ![Escolha o nome da sua conta ao lado da pasta ou do logotipo da Microsoft](./media/win10pc-rs1-sync-info-button.png)
+     ![Escolha o nome da sua conta ao lado da pasta ou do logotipo da Microsoft](./media/win10pc-rs1-sync-info-button.png)
 
 3. Escolha o botão de **Informações**. É aberta uma caixa de diálogo semelhante ao exemplo a seguir.
 

@@ -1,29 +1,29 @@
 ---
 title: Desativar dispositivos
-description: "O Intune dá suporte ao apagamento seletivo e ao apagamento completo para remover o dispositivo do gerenciamento do Intune removendo suas políticas e o portal da empresa."
-keywords: 
+description: O Intune dá suporte ao apagamento seletivo e ao apagamento completo para remover o dispositivo do gerenciamento do Intune removendo suas políticas e o portal da empresa.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Desativar dispositivos do gerenciamento do Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Quer os dispositivos sejam pessoais ou corporativos, chega o momento em que um dispositivo gerenciado precisa ser removido do gerenciamento do Intune.
 
@@ -50,7 +50,7 @@ Quando você remover uma licença de usuário, os dispositivos registrados do us
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para excluir dispositivos no portal do Active Directory do Azure
 
-1.  Entre com suas credenciais da organização em [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com) e escolha **Centros de Administração** &gt; **Azure AD**.
+1.  Entre com as credenciais da sua organização para [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com)e, em seguida, escolha **Centros de administração** &gt; **Azure AD**.
 
 2.  Se não tiver uma, crie uma assinatura do Azure. Isso não deve exigir um cartão de crédito ou pagamento se você tiver uma conta paga. Escolha o link de assinatura **Registrar seu Azure Active Directory gratuito**.
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Configurações de política do Exchange ActiveSync no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use a política do **Exchange ActiveSync** do Microsoft Intune para definir configurações que controlam diversos recursos e funcionalidades em dispositivos que são gerenciados pelo Exchange ActiveSync.
 
@@ -44,10 +44,11 @@ Use a política do **Exchange ActiveSync** do Microsoft Intune para definir conf
 
 ## <a name="encryption-settings"></a>Configurações de criptografia
 
-|Nome da configuração|Detalhes|
-|----------------|---|
-|**Exigir criptografia no dispositivo móvel**<sup>1</sup>|Requer que os dados em um dispositivo sejam criptografados quando tiverem suporte.<br><br>Para dispositivos Windows Phone 8, defina como **Sim**.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração **Exigir uma senha para desbloquear dispositivos móveis**.|
-|**Exigir criptografia em cartões de armazenamento**|Exige que os dados armazenados externamente, como em um cartão SD, sejam criptografados (em dispositivos com suporte).
+|                           Nome da configuração                           |                                                                                                                                    Detalhes                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Exigir criptografia no dispositivo móvel</strong><sup>1</sup> | Requer que os dados em um dispositivo sejam criptografados quando tiverem suporte.<br><br>Para dispositivos Windows Phone 8, defina como <strong>Sim</strong>.<br /><br />Para habilitar a criptografia em dispositivos iOS, habilite a configuração <strong>Exigir uma senha para desbloquear dispositivos móveis</strong>. |
+|       <strong>Exigir criptografia em cartões de armazenamento</strong>       |                                                                                  Exige que os dados armazenados externamente, como em um cartão SD, sejam criptografados (em dispositivos com suporte).                                                                                  |
+
 <sup>1</sup> Mais informações sobre dispositivos que executam o Windows 8.1
 
 -   Se deseja impor a criptografia em dispositivos que executam o Windows 8.1, você deve instalar a [Atualização do cliente do MDM de dezembro de 2014 para Windows](https://support.microsoft.com/kb/3013816) em cada dispositivo.

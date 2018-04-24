@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: aed2bec6e6fea40fdbd78bc487896d167d036f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Portal da Empresa do Microsoft Intune é o local em que os usuários acessam os dados da empresa e podem fazer tarefas comuns, como o registro de dispositivos, a instalação de aplicativos e a localização de informações de assistência do departamento de TI.        
 
@@ -36,14 +36,14 @@ Personalizar o Portal da Empresa ajuda a fornecer uma experiência familiar e ú
 O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e as informações de contato são exibidos para os usuários na tela **Contatar TI** do Portal da Empresa. A política de privacidade é exibida quando um usuário clica no link de privacidade.        
 
 
-|Nome do campo|Comprimento máx.|Mais informações|        
-|-|-|-|     
-|**Nome da empresa**|40|Este é o nome exibido como título do Portal da Empresa.|        
-|**Nome do contato do departamento de TI**|40|Esse nome é exibido na página **Contatar TI**.|      
-|**Telefone do departamento de TI**|20|Este número de contato é exibido na página **Contatar TI**.|        
-|**Endereço de email do departamento de TI**|40|Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato **alias@domainname.com**.|     
-|**Informações adicionais**|120|Exibido na página **Contatar TI**.|      
-|**URL da política de privacidade da empresa**|79|Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. É necessário inserir uma URL válida no formato **https://www.contoso.com**.|        
+|                   Nome do campo                   | Comprimento máx. |                                                                                                 Mais informações                                                                                                 |
+|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>Nome da empresa</strong>          |     40     |                                                                            Este é o nome exibido como título do Portal da Empresa.                                                                            |
+|  <strong>Nome do contato do departamento de TI</strong>   |     40     |                                                                         Esse nome é exibido na página <strong>Contatar TI</strong>.                                                                          |
+|  <strong>Telefone do departamento de TI</strong>   |     20     |                                                                    Este número de contato é exibido na página <strong>Contatar TI</strong>.                                                                     |
+|  <strong>Endereço de email do departamento de TI</strong>  |     40     |                       Este endereço de contato é exibido na página <strong>Contatar TI</strong>. Você deve inserir um endereço de email válido no formato <strong>alias@domainname.com</strong>.                       |
+|    <strong>Informações adicionais</strong>     |    120     |                                                                                Exibido na página <strong>Contatar TI</strong>.                                                                                |
+| <strong>URL da política de privacidade da empresa</strong> |     79     | Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. É necessário inserir uma URL válida no formato <strong><https://www.contoso.com></strong>. |
 
 ## <a name="support-contacts"></a>Contatos de suporte     
 O site de suporte é exibido para os usuários no Portal da Empresa para que eles possam acessar o suporte online.        
@@ -62,7 +62,7 @@ Você pode personalizar o Portal da Empresa com o logotipo e o nome da empresa, 
 
 |Nome do campo|Mais informações|       
 |-|-|       
-|**Cor de tema**|Selecione uma cor de tema para aplicar ao Portal da Empresa.|      
+|**Cor de tema**|Selecione uma cor de tema para aplicar ao Portal da Empresa. Você pode escolher entre o seletor de cor ou inserir um código hexadecimal específico.|      
 |**Mostrar logotipo da empresa**|Ao habilitar esta opção, você pode carregar o logotipo da empresa para ser exibido no Portal da Empresa. Você pode carregar dois logotipos: um que será exibido quando o segundo plano do Portal da Empresa for branco e outro que será exibido quando o segundo plano estiver usando a sua cor de tema selecionada. Cada logotipo deve ser um tipo de arquivo .png ou .jpg e ter uma resolução máxima de 400 x 100 pixels e ter 750 KB ou menos em tamanho.<br>Também é possível mostrar o nome da empresa que você inseriu ao lado do logotipo carregado.|      
 
 Depois de salvar suas alterações, você pode escolher **Visualizar as configurações no Portal da Web Intune** para ver a aparência de suas configurações.

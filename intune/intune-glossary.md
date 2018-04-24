@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossário do Microsoft Intune
 Entenda as definições dos termos comuns usados no Microsoft Intune.
@@ -39,11 +39,13 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Portal do Azure|O novo console do Intune [Leia mais](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Traga seu próprio dispositivo](/intune/device-enrollment). Os usuários podem instalar o aplicativo do Portal da Empresa do Intune em seu dispositivo e registrá-lo, obtendo acesso a recursos da empresa como email, aplicativos da empresa, dados da empresa e suporte.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Perfil de certificado|Use esse tipo de política para [proteger o acesso a recursos corporativos](/intune/certificates-configure) com certificados ao usar perfis de Wi-Fi, email ou VPN.|
@@ -55,6 +57,7 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Política personalizada|Você [utiliza essas políticas](/intune/custom-settings-configure) quando uma política de configuração geral não tiver uma configuração interna que atenda às suas necessidades. É possível usar uma política personalizada para criar uma configuração por outros meios, como o Apple Configurator ou OMA-URI.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Implantação|O ato de enviar um aplicativo ou uma política para um dispositivo ou usuário que você gerencia. Essa ação agora é conhecida como *atribuir*.|
@@ -62,6 +65,7 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Perfis de dispositivo|[Esses perfis](/intune/device-profile-create) permitem que você configure uma ampla variedade de configurações de segurança, recursos e acesso nos dispositivos gerenciados.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |Perfil de email|Essa política pode ser usada para definir [configurações de acesso a email](/intune/email-settings-configure) em dispositivos móveis, minimizando a quantidade de configuração que o usuário final deve fazer.|
@@ -70,21 +74,25 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Registrar|O Microsoft Intune usa o [registro](/intune/device-enrollment) para trazer dispositivos para o gerenciamento e permitir acesso aos recursos.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|Um [serviço Microsoft](https://technet.microsoft.com/library/mt228265.aspx) para usuários do Intune com mais de 150 licenças em um plano qualificado. Ao usar esse serviço, os especialistas da Microsoft podem trabalhar com você para colocar o Intune em funcionamento.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Grupos|Os grupos permitem [logicamente juntar os usuários ou dispositivos](/intune/groups-get-started). Por exemplo, você pode criar um grupo de todos os computadores Windows. Em seguida, você pode atribuir aplicativos e perfis a esses grupos.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Híbrida|Uma configuração na qual é possível gerenciar dispositivos registrados com o Intune por meio do console do System Center Configuration Manager.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Portal do Azure|O portal do Azure usado para a maioria das operações de gerenciamento do Intune.|
@@ -93,11 +101,13 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Inventário|Use para exibir o [hardware e o software instalado](/intune/device-inventory) em dispositivos gerenciados.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Modo de quiosque|Configurado como parte de um [perfil de restrição de dispositivo](/intune/device-restrictions-configure), esse modo permite o bloqueio de dispositivos. Por exemplo, você poderá configurar um dispositivo de varejo para permitir a execução de apenas alguns aplicativos.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Um [aplicativo de navegação na Web](/intune/app-configuration-managed-browser) que você pode atribuir em sua organização usando o Intune. Uma política de navegador gerenciado configura uma lista de permitidos ou uma lista de contatos bloqueados que restringe os sites que podem ser visitados pelos usuários do navegador gerenciado.|
@@ -110,17 +120,20 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Um protocolo de gerenciamento de dispositivo padrão do setor usado por muitos fabricantes de hardware para permitir o controle dos recursos de PCs e dispositivos móveis.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Esses itens identificam as configurações de dispositivo individuais que estão em conformidade com o padrão OMA-DM. As configurações podem ser usadas em [perfis personalizados do Intune](/intune/custom-settings-configure) quando não há nenhuma configuração interna para atender às suas necessidades.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Redefinição de senha|Um recurso do Intune que permite forçar o usuário final a [redefinir a senha](/intune/device-passcode-reset) em dispositivos com suporte.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Bloqueio remoto|Um recurso do Intune que permite o [bloqueio de dispositivos com suporte](/intune/device-remote-lock), mesmo se você não estiver em posse do dispositivo.|
@@ -128,6 +141,7 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Apagamento seletivo|O [apagamento seletivo](/intune/device-company-data-remove) remove somente os dados da empresa protegidos pela política de proteção de aplicativo, incluindo perfis de email e configurações de um dispositivo. O apagamento seletivo deixa os dados pessoais do usuário no dispositivo.|
@@ -135,6 +149,7 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Assinatura|O contrato em que você toma parte e que lhe fornece acesso como locatário do Intune.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Um aplicativo de terceiros que funciona com o Intune para fornecer [funcionalidades de assistência remota](/intune/device-profile-android-teamviewer) para um dispositivo Android gerenciado com o Intune.|
@@ -142,12 +157,15 @@ Entenda as definições dos termos comuns usados no Microsoft Intune.
 |Termos e condições|Um tipo de política atribuída para usuários que contém informações que devem ser [lidas e aceitas](/intune/terms-and-conditions-create) antes de usar o Portal da Empresa para registrar e acessar seu trabalho.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Aplicativos e livros comprados por volume|Algumas lojas de aplicativos oferecem a possibilidade de comprar várias licenças para um aplicativo ou livro que você deseja usar na empresa. O Intune ajuda você a gerenciar aplicativos e livros [comprados por meio de um programa como esse](/intune/vpp-apps). Importe as informações de licença da loja de aplicativos, acompanhe quantas licenças você utilizou e evite a instalação de mais cópias do aplicativo do que você possui.|
 |Perfil da VPN|Uma política que atribui [configurações de VPN](/intune/vpn-settings-configure) a dispositivos gerenciados, minimizando a configuração necessária para os usuários finais.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Perfil de Wi-Fi|Uma política que atribui [configurações de rede sem fio](/intune/wi-fi-settings-configure) a dispositivos para permitir que os usuários se conectem à rede da empresa sem precisar saber ou definir as configurações.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Perfil de Wi-Fi | Uma política que atribui [configurações de rede sem fio](/intune/wi-fi-settings-configure) a dispositivos para permitir que os usuários se conectem à rede da empresa sem precisar saber ou definir as configurações. |
+

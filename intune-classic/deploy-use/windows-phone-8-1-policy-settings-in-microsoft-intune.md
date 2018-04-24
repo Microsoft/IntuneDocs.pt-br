@@ -1,29 +1,29 @@
 ---
-title: "Configurações de política do Windows Phone 8.1"
-description: "O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Windows Phone 8.1. Além disso, você pode especificar valores de OMA-URI para criar configurações personalizadas que não estão disponíveis no Intune."
-keywords: 
+title: Configurações de política do Windows Phone 8.1
+description: O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Windows Phone 8.1. Além disso, você pode especificar valores de OMA-URI para criar configurações personalizadas que não estão disponíveis no Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Configurações de política do Windows Phone 8.1 no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune fornece uma variedade de configurações gerais internas que você pode definir em dispositivos Windows Phone 8.1. Além disso, você pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar configurações personalizadas que não estão disponíveis no Intune.
 
@@ -43,18 +43,18 @@ Use a **Política de configuração geral do Windows Phone (Windows Phone 8.1 e 
 
 ### <a name="password-settings"></a>Configurações de senha
 
-|Nome da configuração|Detalhes|
-|----------------|------|
-|**Exigir uma senha para desbloquear os dispositivos móveis**|Especifica se os usuários devem inserir uma senha para acessar os dispositivos.|
-|**Tipo de senha necessária**|Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.|
-|**Tipo de senha necessária – número mínimo de conjuntos de caracteres**|Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. No entanto, para dispositivos iOS, isso especifica que o número de símbolos que devem ser incluídos na senha.|
-|**Comprimento mínimo da senha**|Especifica o número mínimo de caracteres necessários na senha.|
-|**Permitir senha simples**|Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.|
-|**Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado**|Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.|
-|**Minutos de inatividade antes que a tela seja desligada**|Especifica a quantidade de tempo que um dispositivo deve permanecer ocioso antes que a tela seja bloqueada automaticamente.|
-|**Expiração da senha (dias)**|Especifica o número de dias antes que a senha do dispositivo precise ser alterada.|Sim|Sim|
-|**Lembrar histórico de senha**|Especifica se as senhas usadas anteriormente devem ser lembradas para impedir o usuário de usá-las novamente.|
-|**Lembrar histórico de senha** – **Evitar a reutilização de senhas anteriores**|Especifica quantas senhas usadas anteriormente devem ser lembradas.|
+|                                           Nome da configuração                                            |                                                                                                                                    Detalhes                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Exigir uma senha para desbloquear os dispositivos móveis</strong>                    |                                                                                                     Especifica se os usuários devem inserir uma senha para acessar os dispositivos.                                                                                                     |
+|                              <strong>Tipo de senha necessária</strong>                              |                                                                                          Especifica o tipo de senha que será necessário, como apenas com caracteres numéricos ou alfanuméricos.                                                                                           |
+|            <strong>Tipo de senha necessária – número mínimo de conjuntos de caracteres</strong>             | Especifica quantos conjuntos de caracteres diferentes devem ser incluídos na senha. Há quatro conjuntos de caracteres: letras minúsculas, letras maiúsculas, símbolos e números. No entanto, para dispositivos iOS, isso especifica que o número de símbolos que devem ser incluídos na senha. |
+|                             <strong>Comprimento mínimo da senha</strong>                              |                                                                                                 Especifica o número mínimo de caracteres necessários na senha.                                                                                                  |
+|                              <strong>Permitir senha simples</strong>                              |                                                                                                     Especifica que senhas simples, como “0000” e “1234”, podem ser usadas.                                                                                                     |
+|     <strong>Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado</strong>      |                                                                                         Especifica o número de vezes que uma senha incorreta pode ser inserida antes que o dispositivo seja apagado.                                                                                         |
+|                <strong>Minutos de inatividade antes que a tela seja desligada</strong>                 |                                                                                       Especifica a quantidade de tempo que um dispositivo deve permanecer ocioso antes que a tela seja bloqueada automaticamente.                                                                                        |
+|                            <strong>Expiração da senha (dias)</strong>                            |                                                                                                    Especifica o número de dias antes que a senha do dispositivo precise ser alterada.                                                                                                    |
+|                            <strong>Lembrar histórico de senha</strong>                             |                                                                                     Especifica se as senhas usadas anteriormente devem ser lembradas para impedir o usuário de usá-las novamente.                                                                                      |
+| <strong>Lembrar histórico de senha</strong> – <strong>Evitar a reutilização de senhas anteriores</strong> |                                                                                                          Especifica quantas senhas usadas anteriormente devem ser lembradas.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Configurações de criptografia
 
@@ -119,14 +119,15 @@ Na lista de **Aplicativos permitidos e bloqueados**, especifique uma lista de ap
 > [!NOTE]
 > Uma única política só pode conter uma lista de aplicativos permitidos ou bloqueados. Não é possível especificar ambos na mesma política.
 
-|Nome da configuração|Detalhes|
-|----------------|--------------------|
-|**Impedir que os dispositivos abram os aplicativos listados**|Lista os aplicativos que não são gerenciados pelo Intune, os quais os usuários não têm permissão para instalar e executar.|
-|**Permitir que os dispositivos instalem apenas os aplicativos listados**|Lista os aplicativos que os usuários têm permissão para instalar. Os usuários não podem instalar nenhum outro aplicativo. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.|
-|**Adicionar**|Adiciona um aplicativo à lista selecionada. Especifique um nome da sua preferência, a URL para o aplicativo na loja de aplicativos e o editor do aplicativo (opcional). Para obter mais ajuda, consulte “Como especificar URLs para lojas de aplicativos” mais adiante neste tópico.
-|**Importar aplicativos**|Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.|
-|**Editarar**|Permite editar o nome, editor e a URL do aplicativo selecionado.|
-|**Excluir**|Exclui o aplicativo selecionado da lista.|
+|                          Nome da configuração                          |                                                                                                      Detalhes                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Impedir que os dispositivos abram os aplicativos listados</strong>   |                                                        Lista os aplicativos que não são gerenciados pelo Intune, os quais os usuários não têm permissão para instalar e executar.                                                         |
+| <strong>Permitir que os dispositivos instalem apenas os aplicativos listados</strong> |                                 Lista os aplicativos que os usuários têm permissão para instalar. Os usuários não podem instalar nenhum outro aplicativo. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente.                                 |
+|                      <strong>Adicionar</strong>                      | Adiciona um aplicativo à lista selecionada. Especifique um nome da sua preferência, a URL para o aplicativo na loja de aplicativos e o editor do aplicativo (opcional). Para obter mais ajuda, consulte “Como especificar URLs para lojas de aplicativos” mais adiante neste tópico. |
+|                  <strong>Importar aplicativos</strong>                  |                              Importa uma lista dos aplicativos que você especificou em um arquivo de valores separados por vírgulas. Use o formato, nome do aplicativo, editor e a URL do aplicativo no arquivo.                               |
+|                     <strong>Editarar</strong>                      |                                                                          Permite editar o nome, editor e a URL do aplicativo selecionado.                                                                          |
+|                    <strong>Excluir</strong>                     |                                                                                      Exclui o aplicativo selecionado da lista.                                                                                      |
+
 > [!IMPORTANT]
 > Se especificar uma lista de aplicativos permitidos para dispositivos Windows Phone 8.1, você deverá adicionar o aplicativo Portal da Empresa a essa lista, caso contrário, ele será bloqueado.
 

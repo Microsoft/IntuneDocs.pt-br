@@ -1,28 +1,28 @@
 ---
-title: "Comparar as opções de gerenciamento de computadores Windows"
+title: Comparar as opções de gerenciamento de computadores Windows
 description: Registro de dispositivos iOS corporativos usando o DEP (Programa de Registro de Dispositivo) da Apple ou o Apple Configurator
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f6de91724db10ef64e2c1fd6eee6101c6eac79a
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: c760f9c76e54c0b5f9eb037414870ab1c8943803
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As organizações podem usar o Microsoft Intune para gerenciar computadores Windows como dispositivos móveis com o MDM (gerenciamento de dispositivo móvel) ou como computadores com o cliente de software do Intune.  A Microsoft recomenda que os clientes usem a solução de gerenciamento MDM sempre que possível. No entanto, para ajudá-lo a compreender melhor as diferenças entre essas opções, o gráfico a seguir compara as duas opções de gerenciamento.
 

@@ -1,29 +1,29 @@
 ---
 title: Usar aplicativos com AC de MAM
-description: "Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365."
-keywords: 
+description: Entenda como o AC para MAM pode ajudar a controlar os aplicativos que têm acesso aos serviços do O365.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>O que esperar ao usar um aplicativo com AC baseado em aplicativo
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O AC baseado em aplicativo verifica a identidade do aplicativo aprovado por meio de um aplicativo agente, que deve estar presente no dispositivo:
 *  No **iOS**, o **aplicativo Microsoft Authenticator** é o aplicativo agente.
@@ -40,8 +40,8 @@ A seguir, temos uma lista de propriedades que são derivadas diretamente do disp
 
 > [!NOTE]
 > Em dispositivos Android:
-  * É necessário que o aplicativo Portal da Empresa esteja instalado no dispositivo, mas o usuário final não precisa fazer logon no aplicativo.
-  * O registro do dispositivo deve ser feito por meio do aplicativo OneDrive ou Outlook.
+>   * É necessário que o aplicativo Portal da Empresa esteja instalado no dispositivo, mas o usuário final não precisa fazer logon no aplicativo.
+>   * O registro do dispositivo deve ser feito por meio do aplicativo OneDrive ou Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Para remover um dispositivo do registro no Azure AD.
 É possível remover o registro do dispositivo usando o console de administração do Azure AD, o que normalmente é feito pelo administrador de TI.  Isso também pode ser feito pelo usuário final no próprio dispositivo.
@@ -52,7 +52,7 @@ A seguir, temos uma lista de propriedades que são derivadas diretamente do disp
 
 ## <a name="app-based-ca-with-device-based-ca"></a>AC baseada em aplicativo com AC baseada em dispositivo  
 
-Você pode configurar o [Acesso condicional baseado na conformidade do dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**AC do Dispositivo**) no [console do administrador do Intune](https://manage.microsoft.com) ou no [console de gerenciamento do Azure AD Premium] (https://manage.windowsazure.com). O AC do dispositivo exige que os usuários se conectem ao Exchange Online somente por meio de dispositivos gerenciados pelo Intune que estejam em conformidade com a política de conformidade do dispositivo do Intune ou computadores de domínio associado.  Se um usuário pertencer a um ou mais grupos de segurança destinados a políticas de AC baseado em aplicativo e de AC do dispositivo, o usuário deverá atender a um dos dois requisitos:
+Você pode configurar o [Acesso condicional baseado na conformidade do dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>CA do Dispositivo</strong>) no [Console do administrador do Intune](https://manage.microsoft.com) ou no [Console de gerenciamento do Azure AD Premium](https://manage.windowsazure.com). O AC do dispositivo exige que os usuários se conectem ao Exchange Online somente por meio de dispositivos gerenciados pelo Intune que estejam em conformidade com a política de conformidade do dispositivo do Intune ou computadores de domínio associado.  Se um usuário pertencer a um ou mais grupos de segurança destinados a políticas de AC baseado em aplicativo e de AC do dispositivo, o usuário deverá atender a um dos dois requisitos:
 * O aplicativo usado para acessar o serviço é um aplicativo móvel com suporte 
 * e o dispositivo no qual o aplicativo está sendo executado tem um **Autenticador iOS (para dispositivos iOS)** ou o **aplicativo do Portal da Empresa (para dispositivos Android)** instalado.
 * O dispositivo utilizado para acessar o serviço é **compatível e gerenciado pelo Intune** com a política de conformidade do dispositivo do Intune ou é um **computador de domínio associado**.  Aqui estão alguns exemplos para ajudar a ilustrar essa situação:

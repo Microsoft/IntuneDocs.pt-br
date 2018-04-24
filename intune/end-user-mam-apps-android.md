@@ -1,28 +1,28 @@
 ---
-title: "Aplicativos Android com políticas de proteção do aplicativo"
-description: "Este tópico descreve o que esperar quando seu aplicativo é gerenciado por políticas de proteção de aplicativo."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Aplicativos Android com políticas de proteção do aplicativo
+description: Este tópico descreve o que esperar quando seu aplicativo é gerenciado por políticas de proteção de aplicativo.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Este artigo descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. As políticas de proteção do aplicativo são aplicadas somente quando aplicativos são usados em um contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no local do OneDrive for Business.
 

@@ -1,26 +1,26 @@
 ---
-title: "Visão geral do ciclo de vida de MDM do Microsoft Intune"
-description: "Saiba como o Intune ajuda a gerenciar dispositivos durante o ciclo de vida – desde o registro à configuração, até a desativação eventual."
-keywords: 
+title: Visão geral do ciclo de vida de MDM do Microsoft Intune
+description: Saiba como o Intune ajuda a gerenciar dispositivos durante o ciclo de vida – desde o registro à configuração, até a desativação eventual.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 1f1ac48340c09c57ed398b7fe6cb75fa68899c63
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Visão geral sobre o ciclo de vida de MDM (gerenciamento de dispositivo móvel) do Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Todos os dispositivos que você gerencia têm um *ciclo de vida*. O Intune pode ajudá-lo a gerenciar esse ciclo de vida: desde o registro, à configuração e proteção até a desativação do dispositivo quando ele não for mais necessário.
 

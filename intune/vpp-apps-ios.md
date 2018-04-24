@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS adquiridos por meio de um programa de aquisição com base em volume com o Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A loja de aplicativos iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa.
 
@@ -152,6 +152,17 @@ Para revogar a licença de todos os aplicativos VPP de um token VPP determinado,
 ## <a name="further-information"></a>Informações adicionais
 
 Quando um usuário com um dispositivo qualificado tentar instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. É necessário ingressar para continuar a instalação do aplicativo. O convite para ingressar no Apple Volume Purchase Program exige que o usuário possa usar o aplicativo do iTunes no dispositivo iOS. Se você tiver definido uma política para desabilitar o aplicativo da iTunes Store, o licenciamento baseado em usuário para aplicativos VPP não funcionará. A solução é permitir o aplicativo do iTunes removendo a política ou usar o licenciamento baseado em dispositivo.
+
+## <a name="frequently-asked-questions"></a>Perguntas frequentes
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Quanto tempo o portal leva para atualizar a contagem de licenças depois que um aplicativo estiver instalado ou tiver sido removido do dispositivo?
+A licença deve ser atualizada em algumas horas depois de instalar ou desinstalar um aplicativo. Observe que, se o usuário final remover o aplicativo do dispositivo, a licença ainda será atribuída a esse usuário ou dispositivo.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>É possível substituir um aplicativo e, em caso afirmativo, em que circunstância?
+Sim. O administrador do Intune pode substituir um aplicativo. Por exemplo, se o administrador comprar 100 licenças para o aplicativo XYZ e, em seguida, direcionar o aplicativo a um grupo com 500 membros. Os 100 primeiros membros (usuários ou dispositivos) obterão a licença atribuída a eles; o restante dos membros falharão na atribuição de licença.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Entendo que o Intune sincroniza automaticamente licenças de aplicativo a cada dia com a Apple, isso está correto?
+O Intune sincroniza licenças de aplicativo a cada 15 horas com a Apple.
 
 ## <a name="next-steps"></a>Próximas etapas
 

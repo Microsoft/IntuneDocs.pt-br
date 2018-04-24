@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d29cd4ae545bfa684eea6c679c2f69957651402a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: bac3bc13f302dc9c89c9f84b7e65610e92f5ccf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-manage-devices"></a>Escolha como gerenciar dispositivos
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Para tirar proveito dos muitos recursos que o Intune oferece, como a implantação de aplicativo e o controle de configurações de dispositivo, os dispositivos devem ser *gerenciados*. A maneira como você gerencia os dispositivos depende dos recursos do Intune que deseja usar. Este tópico ajuda a escolher um método que atenda às suas necessidades.
 

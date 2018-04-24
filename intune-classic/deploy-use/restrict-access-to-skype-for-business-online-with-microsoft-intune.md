@@ -1,29 +1,29 @@
 ---
 title: Proteger o Skype for Business Online
 description: Proteja e controle o acesso ao Skype for Business Online usando o acesso condicional.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteger o acesso ao Skype for Business Online com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use a política de acesso condicional para controlar o acesso ao **Skype for Business Online**.
 O acesso condicional tem dois componentes:
@@ -87,23 +87,23 @@ Quando estiver pronto, continue na **Etapa 3**.
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>Etapa 3: Configurar a política do Skype for Business Online
 Em seguida, configure a política para exigir que somente dispositivos gerenciados e compatíveis possam acessar o Skype for Business Online. Essa política será armazenada no Azure Active Directory.
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do Skype for Business Online**.
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do Skype for Business Online**.
 
-  ![Captura de tela da página de política de acesso condicional do Skype for Business Online](./media/conditional_access_SFBPolicy.png)
+   ![Captura de tela da página de política de acesso condicional do Skype for Business Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Selecione **Habilitar política de acesso condicional**.
+2. Selecione **Habilitar política de acesso condicional**.
 
-3.  Em **Acesso ao aplicativo**, você pode optar por aplicar a política de acesso condicional a:
+3. Em **Acesso ao aplicativo**, você pode optar por aplicar a política de acesso condicional a:
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
+4. Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
 
-5.  Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
+5. Opcionalmente, em **Grupos Isentos**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
 
-6.  Quando terminar, selecione **Salvar**.
+6. Quando terminar, selecione **Salvar**.
 
 Você configurou o acesso condicional ao Skype for Business Online. Não é necessário implantar a política de acesso condicional, ela entra em vigor imediatamente.
 

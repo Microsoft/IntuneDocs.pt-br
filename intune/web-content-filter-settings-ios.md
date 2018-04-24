@@ -1,28 +1,28 @@
 ---
-title: "Configurações de filtro de conteúdo da Web do Microsoft Intune para dispositivos iOS"
-titlesuffix: 
-description: "Conheça as configurações do Microsoft Intune que você pode usar para permitir e bloquear o acesso aos sites de dispositivos que executam iOS."
-keywords: 
+title: Configurações de filtro de conteúdo da Web do Microsoft Intune para dispositivos iOS
+titlesuffix: ''
+description: Conheça as configurações do Microsoft Intune que você pode usar para permitir e bloquear o acesso aos sites de dispositivos que executam iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configurações de filtro de conteúdo da Web para dispositivos iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra as configurações do Microsoft Intune que você pode usar para controlar o acesso de URL do navegador de dispositivos que executam o iOS.
 
@@ -57,13 +57,13 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 ## <a name="specific-websites-only"></a>Somente sites específicos
 
 1. No painel **Filtro de Conteúdo da Web**, para cada site da Web que você deseja permitir, defina as seguintes configurações:
-    - **URL** - insira a URL do site que você deseja permitir, por exemplo, **http://www.contoso.com**.
+    - **URL** – insira a URL do site que você deseja permitir, por exemplo, **http://www.contoso.com**.
     - **Caminho do Favorito** - insira o caminho até o local onde você deseja armazenar o favorito por exemplo **/Contoso/Aplicativos de Empresa**. Se você não adicionar um indicador, ele será adicionado à pasta de indicadores padrão no dispositivo.
     - **Título** - insira um título descritivo para o favorito.
 2. Clique em **Adicionar** depois de inserir as informações para cada site.
 3. Ao terminar, clique em **OK**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > As URLs a seguir têm permissão automática do Intune.
 > - www.microsoft.com
 > - www.microsoft.net

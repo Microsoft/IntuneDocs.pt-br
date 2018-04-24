@@ -2,8 +2,8 @@
 title: Versões anteriores
 description: ''
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 57b2ab83f356eac27f668908a9a14b4f9310da19
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previous-intune-releases"></a>Versões anteriores do Intune
 
 Esta página é uma lista dos anúncios feitos em [Novidades do Microsoft Intune](whats-new-in-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>Julho de 2016
 
@@ -94,12 +94,12 @@ As informações de integridade do serviço do Intune foram movidas para uma loc
     * Deve ser gerenciado pelo Intune
     * Devem ser compatíveis com qualquer política de conformidade do Intune implantada
 
- Os usuários finais de dispositivos não compatíveis serão solicitados a registrar e corrigir quaisquer problemas de conformidade para obter acesso.
+  Os usuários finais de dispositivos não compatíveis serão solicitados a registrar e corrigir quaisquer problemas de conformidade para obter acesso.
 - **Acesso condicional para navegador.** Você pode definir uma política de acesso condicional para o [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) para que eles somente possam ser acessados por navegadores da Web com suporte em dispositivos Android e iOS gerenciados e em conformidade. Os usuários finais que tentarem entrar nos sites OWA (Outlook Web Access) e SharePoint com dispositivos iOS e Android deverão registrar o dispositivo no Intune e corrigir quaisquer problemas de não conformidade para que possam entrar.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **O Dynamics CRM Online dá suporte ao acesso condicional.** Você pode definir uma política de acesso condicional para o [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) para que ele somente possa ser acessado por dispositivos iOS e Android gerenciados e em conformidade. Os usuários finais que tentarem entrar no aplicativo móvel Dynamics CRM no iOS e no Android deverão se registrar no Intune e corrigir quaisquer problemas de não conformidade para poder entrar.
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Atualizações do Portal da Empresa do Intune
 
@@ -180,19 +180,19 @@ Todos esses recursos também têm suporte para clientes híbridos (Configuration
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 - **Conformidade de usuário do MAM.**
-Agora você pode exibir o [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) de suas políticas de gerenciamento de aplicativo para os usuários em seu locatário do AAD (Azure Active Directory). Isso inclui:
-   - Dispositivos
-   - Aplicativos no dispositivo
+  Agora você pode exibir o [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) de suas políticas de gerenciamento de aplicativo para os usuários em seu locatário do AAD (Azure Active Directory). Isso inclui:
+  - Dispositivos
+  - Aplicativos no dispositivo
 
-   Valores de status:
+    Valores de status:
 
-   **Check in feito**: indica que a política foi implantada para o usuário, e o aplicativo foi usado no contexto de trabalho e recebeu a política com êxito.
+    **Check in feito**: indica que a política foi implantada para o usuário, e o aplicativo foi usado no contexto de trabalho e recebeu a política com êxito.
 
     **Check in não feito**: indica que a política foi implantada para o usuário, mas o aplicativo ainda não foi usado no contexto de trabalho.
 
 
 - **Controles de MAM para impedir a sincronização de contatos do Outlook (Android).**
-Uma nova configuração está disponível para [gerenciamento de aplicativos móveis](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), os contatos que já foram salvos no catálogo de endereços nativos serão removidos. Essa nova configuração tem suporte desde o início usando o aplicativo Outlook em dispositivos Android.
+  Uma nova configuração está disponível para [gerenciamento de aplicativos móveis](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), os contatos que já foram salvos no catálogo de endereços nativos serão removidos. Essa nova configuração tem suporte desde o início usando o aplicativo Outlook em dispositivos Android.
 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 - **Identificação de número de telefone para dispositivos de propriedade da empresa.** Os telefones categorizadas como "Empresariais" agora são identificados com o número de telefone completo quando, por exemplo, você executa um relatório de inventário de dispositivo móvel. Os números de telefone BYOD (Traga seu próprio dispositivo) continuam a ser mascarados com ****, somente com os quatro últimos dígitos exibidos.
@@ -212,6 +212,6 @@ Uma nova configuração está disponível para [gerenciamento de aplicativos mó
 
 Antes desses status serem adicionados, os usuários ficavam confusos quando a instalação de um aplicativo demorava muito, pois eles viam apenas o status "Instalando", que podia permanecer na tela por horas. A adição dos novos status significa que, em vez de ligar para o suporte, agora os usuários podem tocar no link "Esperando o dispositivo sincronizar" e seguir as instruções para forçar o processo de sincronização a continuar.
 
->[!div class="step-by-step"]
-
->[&larr; **Novidades do Intune**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **Novidades do Intune**](whats-new-in-microsoft-intune.md)    

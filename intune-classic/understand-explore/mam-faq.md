@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune MAM (gerenciamento de aplicativo móvel) e a proteção do aplicativo do Intune.
 
@@ -61,23 +61,23 @@ Este artigo fornece respostas para algumas perguntas frequentes sobre o Intune M
 
 **Quais são os requisitos adicionais para usar o [aplicativo móvel do Outlook](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. O usuário final deve ter o aplicativo móvel do Outlook instalado em seu dispositivo.
+1. O usuário final deve ter o aplicativo móvel do Outlook instalado em seu dispositivo.
 
-  2. O usuário final deve ter uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) e uma licença vinculada à sua conta do Azure Active Directory.
+2. O usuário final deve ter uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) e uma licença vinculada à sua conta do Azure Active Directory.
 
-  >[!NOTE]
-  > No momento, o aplicativo móvel do Outlook dá suporte apenas ao Microsoft Exchange Online e não dá suporte ao Exchange no Local nem ao Exchange no Office 365 Dedicated.
+   >[!NOTE]
+   > No momento, o aplicativo móvel do Outlook dá suporte apenas ao Microsoft Exchange Online e não dá suporte ao Exchange no Local nem ao Exchange no Office 365 Dedicated.
 
 **Quais são os requisitos adicionais para usar os [aplicativos Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-  1. O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+1. O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. O usuário final deve configurar um local gerenciado usando o salvamento granular como funcionalidade, na configuração "Impedir Salvar como" da política de proteção do aplicativo. Por exemplo, se o local gerenciado for o OneDrive, será necessário configurar o aplicativo [OneDrive](https://onedrive.live.com/about/) no aplicativo Word, Excel ou PowerPoint do usuário final.
+2. O usuário final deve configurar um local gerenciado usando o salvamento granular como funcionalidade, na configuração "Impedir Salvar como" da política de proteção do aplicativo. Por exemplo, se o local gerenciado for o OneDrive, será necessário configurar o aplicativo [OneDrive](https://onedrive.live.com/about/) no aplicativo Word, Excel ou PowerPoint do usuário final.
 
-  3. Se o local gerenciado for o OneDrive, será necessário direcionar o aplicativo de acordo com a política de proteção do aplicativo implantada para o usuário final.
+3. Se o local gerenciado for o OneDrive, será necessário direcionar o aplicativo de acordo com a política de proteção do aplicativo implantada para o usuário final.
 
-  >[!NOTE]
-  > No momento, os aplicativos móveis do Office dão suporte apenas ao SharePoint Online e não ao SharePoint local.
+   >[!NOTE]
+   > No momento, os aplicativos móveis do Office dão suporte apenas ao SharePoint Online e não ao SharePoint local.
 
 **Por que o local gerenciado (por exemplo, o OneDrive) é necessário para o Office?** O Intune marca todos os dados no aplicativo como “corporativos” ou “pessoais”. Os dados são considerados “corporativos” quando tem como origem um local da empresa. Para os aplicativos do Office, o Intune considera o seguinte como locais da empresa: email (Exchange) ou armazenamento em nuvem (aplicativo OneDrive com uma conta do OneDrive para Empresas).
 
@@ -124,15 +124,15 @@ Atualmente, o MAM (no iOS) permite o PIN no nível de aplicativo com caracteres 
 
 **Como o Intune apaga os dados remotamente?** O Intune pode apagar os dados do aplicativo de três maneiras diferentes: apagamento completo do dispositivo, apagamento seletivo para MDM e apagamento seletivo de MAM. Para saber mais sobre o apagamento remoto para MDM, confira [Ajudar a proteger os dados com apagamento completo ou seletivo usando o Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Para saber mais sobre o apagamento seletivo usando MAM, confira [Apagar dados gerenciados de aplicativo de empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **O que é o apagamento completo?** O [apagamento completo](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) remove todos os dados e configurações do usuário **do dispositivo** restaurando o dispositivo para as configurações padrão de fábrica. O dispositivo é removido do Intune.
-  >[!NOTE]
-  > O apagamento completo pode ser realizado apenas em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel).
+1. **O que é o apagamento completo?** O [apagamento completo](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) remove todos os dados e configurações do usuário **do dispositivo** restaurando o dispositivo para as configurações padrão de fábrica. O dispositivo é removido do Intune.
+   >[!NOTE]
+   > O apagamento completo pode ser realizado apenas em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel).
 
-  2. **O que é o apagamento seletivo para MDM?** Consulte [Ajudar a proteger os dados com apagamento completo ou seletivo usando o Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para ler sobre o apagamento seletivo.
+2. **O que é o apagamento seletivo para MDM?** Consulte [Ajudar a proteger os dados com apagamento completo ou seletivo usando o Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para ler sobre o apagamento seletivo.
 
-  3. **O que é o apagamento seletivo para MAM?** O apagamento seletivo para MAM simplesmente remove dados de aplicativo da empresa de um aplicativo. A solicitação é iniciada usando o portal do Azure no Intune. Para saber como iniciar uma solicitação de apagamento, confira [Apagar dados gerenciados de aplicativo da empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+3. **O que é o apagamento seletivo para MAM?** O apagamento seletivo para MAM simplesmente remove dados de aplicativo da empresa de um aplicativo. A solicitação é iniciada usando o portal do Azure no Intune. Para saber como iniciar uma solicitação de apagamento, confira [Apagar dados gerenciados de aplicativo da empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  4. **Com que rapidez o apagamento seletivo para MAM ocorre?** Se o usuário estiver usando o aplicativo quando o apagamento seletivo for iniciado, o SDK do Aplicativo do Intune verificará a cada 30 minutos uma solicitação de apagamento seletivo do serviço Intune MAM. Ele também verifica o apagamento seletivo quando o usuário inicia o aplicativo pela primeira vez e se conecta com sua conta corporativa ou de estudante.
+4. **Com que rapidez o apagamento seletivo para MAM ocorre?** Se o usuário estiver usando o aplicativo quando o apagamento seletivo for iniciado, o SDK do Aplicativo do Intune verificará a cada 30 minutos uma solicitação de apagamento seletivo do serviço Intune MAM. Ele também verifica o apagamento seletivo quando o usuário inicia o aplicativo pela primeira vez e se conecta com sua conta corporativa ou de estudante.
 
 **Por que os serviços Locais não funcionam com os aplicativos protegidos do Intune?** A proteção do aplicativo do Intune depende da consistência da identidade do usuário entre o aplicativo e o SDK do Aplicativo do Intune. A única maneira de assegurar isso é por meio da autenticação moderna. Existem cenários nos quais os aplicativos podem funcionar com uma configuração local, mas eles não são consistentes nem têm garantia.
 

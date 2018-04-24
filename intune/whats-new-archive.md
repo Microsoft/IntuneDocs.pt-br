@@ -1,5 +1,5 @@
 ---
-title: Novidades do Microsoft Intune nos meses anteriores
+title: O que há de novo m meses anteriores no Microsoft Intune – Azure | Microsoft Docs
 titlesuffix: ''
 description: Veja comunicados mais antigos da página de novidades do Intune
 keywords: ''
@@ -16,15 +16,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: d87cf0a56a6b114a210242691d0441882c186964
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="october-2017"></a>Outubro de 2017
 
@@ -570,7 +570,7 @@ Para obter mais informações, consulte [Configurações de restrição de dispo
 Adicionamos novas [configurações de restrição de dispositivos Windows](device-restrictions-windows-10.md) que controlam recursos como vídeos sem fio, descoberta de dispositivo, alternância de tarefas e mensagens de erro do cartão SIM.
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>Atualizações da configuração de certificado <!-- 918991 and 823198 -->
-Ao criar um perfil de certificado SCEP, em **Formato do nome da entidade**, a opção **Personalizado** está disponível para dispositivos iOS, Android e Windows. Antes dessa atualização, o campo **Personalizado** estava disponível apenas para dispositivos iOS. Para obter mais informações, consulte [Como criar um perfil de certificado SCEP] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
+Ao criar um perfil de certificado SCEP, em <strong>Formato do nome da entidade</strong>, a opção <strong>Personalizado</strong> está disponível para dispositivos iOS, Android e Windows. Antes dessa atualização, o campo <strong>Personalizado</strong> estava disponível apenas para dispositivos iOS. Para obter mais informações, consulte [Criar perfil de certificado SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile).
 
 Ao criar um perfil de certificado PKCS, em **Nome alternativo da entidade**, o **Atributo personalizado do Azure AD** está disponível. A opção **Departamento** fica disponível quando você seleciona **Atributo personalizado do Azure AD**. Para saber mais, veja [Como criar um perfil de certificado PKCS](certficates-pfx-configure.md#create-a-device-configuration-profile).
 

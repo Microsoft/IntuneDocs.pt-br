@@ -1,29 +1,29 @@
 ---
 title: Proteger o Dynamics CRM Online
 description: Proteja e controle o acesso ao Dynamics CRM Online com acesso condicional.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteger o acesso ao Dynamics CRM Online com o Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 É possível controlar o acesso ao Microsoft Dynamics CRM Online de dispositivos iOS e Android usando acesso condicional do Microsoft Intune.  Acesso condicional do Intune tem dois componentes:
 * Uma [política de conformidade do dispositivo](introduction-to-device-compliance-policies-in-microsoft-intune.md), com a qual o dispositivo deve estar em conformidade para ser considerado compatível.
@@ -52,7 +52,7 @@ Se uma condição não for atendida, o usuário receberá uma das seguintes mens
 ## <a name="configure-conditional-access-for-dynamics-crm-online"></a>Configurar acesso condicional para o Dynamics CRM Online  
 ### <a name="step-1-configure-active-directory-security-groups"></a>Etapa 1: Configurar grupos de segurança do Active Directory
 
-Antes de começar, configure os grupos de segurança do Active Directory do Azure para a política de acesso condicional. Você pode configurar esses grupos no **Centro de administração do Office 365**. Use esses grupos para afetar ou isentar os usuários da política. Quando um usuário é afetado por uma política, cada dispositivo que ele usa deve ser compatível para que possa acessar os recursos.
+Antes de começar, configure os grupos de segurança do Active Directory do Azure para a política de acesso condicional. Você pode configurar esses grupos no **Centro de administração do Office 365**. Use esses grupos para afetar ou isentar os usuários da política. Quando um usuário é afetado por uma política, cada dispositivo que ele usa deve estar em conformidade para que possa acessar os recursos.
 
 Você pode especificar dois tipos de grupos para usar com a política do Dynamics CRM:
 * **Grupos de destino**. Contém grupos de usuários aos quais a política se aplica.
@@ -67,23 +67,23 @@ Se um usuário estiver nos dois grupos, ele ficará isento da política.
 > Enquanto as políticas de conformidade são implantadas em grupos do Intune, as políticas de acesso condicional são destinadas a grupos de segurança do Azure Active Directory.
 
 > [!IMPORTANT]
-> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como compatíveis.
+> Se você não tiver implantado uma política de conformidade, os dispositivos serão tratados como em conformidade.
 
 Quando estiver pronto, continue na Etapa 3.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>Etapa 3: Configurar a política do Dynamics CRM
 Em seguida, configure a política para exigir que somente dispositivos gerenciados e compatíveis possam acessar o Dynamics CRM. Essa política será armazenada no Azure Active Directory.
 
-1.  No console de administração do Intune, escolha **Política > Acesso Condicional > Política do Dynamics CRM Online**.
+1. No console de administração do Intune, escolha **Política > Acesso Condicional > Política do Dynamics CRM Online**.
 
-  ![Captura de tela da página de política de acesso condicional do Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Captura de tela da página de política de acesso condicional do Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Escolha **Habilitar política de acesso condicional**.
-3.  Em **Acesso ao aplicativo**, você pode optar por aplicar a política de acesso condicional a:
-  * **iOS**
-  * **Android**
-4.  Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
-5.  Opcionalmente, em **Grupos Isentos**, escolha em **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
-6.  Quando terminar, escolha **Salvar**.
+2. Escolha **Habilitar política de acesso condicional**.
+3. Em **Acesso ao aplicativo**, você pode optar por aplicar a política de acesso condicional a:
+   * **iOS**
+   * **Android**
+4. Em **Grupos de Destino**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais a política será aplicada. Você pode optar por aplicá-la a todos os usuários ou apenas a um grupos seleto de usuários.
+5. Opcionalmente, em **Grupos Isentos**, escolha em **Modificar** para selecionar os grupos de segurança do Azure Active Directory que são isentos dessa política.
+6. Quando terminar, escolha **Salvar**.
 
 Você configurou o acesso condicional ao Dynamics CRM. Não é necessário implantar a política de acesso condicional, ela entra em vigor imediatamente.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorar a conformidade e políticas de acesso condicional

@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>RBAC (Controle de administração baseada em funções) com o Microsoft Intune
 
@@ -26,7 +26,7 @@ O RBAC ajuda você a controlar quem pode realizar as várias tarefas do Intune e
 
 - **Definição de função**: o nome de uma função, os recursos gerenciados por ela e as permissões concedidas a cada recurso.
 - **Membros**: os grupos de usuários que recebem as permissões.
-- **Escopo**: os grupos de usuários ou dispositivos que podem ser gerenciados pelos membros.
+- **Escopo**: os grupos de usuário ou dispositivo que os membros podem ter como destino para a implantação de aplicativo ou política ou executar tarefas remotas.
 - **Atribuição**: após a configuração da definição, dos membros e do escopo, a função é atribuída.
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)

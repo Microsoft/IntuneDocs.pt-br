@@ -1,29 +1,28 @@
 ---
-title: "Configurações do Endpoint Protection do Microsoft Intune para Windows 10"
-titlesuffix: 
-description: "Conheça as definições do Intune que você pode usar para controlar as configurações do Endpoint Protection, como o BitLocker, em dispositivos Windows 10."
-keywords: 
+title: Adicionar proteção de ponto de extremidade no Windows 10 no Microsoft Intune – Azure | Microsoft Docs
+description: Em dispositivos Windows 10, use ou defina as configurações de proteção de ponto de extremidade para habilitar inclusões do recurso Windows Defender, Application Guard, Firewall, SmartScreen, criptografia e bitLocker, Exploit Guard, Controle de Aplicativos, Central de Segurança e segurança em dispositivos locais no Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Criar configurações do Endpoint Protection para o Windows 10 e posterior no Microsoft Intune
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Configurações do Endpoint Protection para o Windows 10 (e posteriores) no Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O perfil do Endpoint Protection permite controlar os recursos de segurança em dispositivos Windows 10, como o BitLocker e o Windows Defender.
 
@@ -31,21 +30,6 @@ Use as informações neste artigo para saber como criar perfis do Endpoint Prote
 
 > [!Note]
 > Essas configurações não têm suporte nas edições Professional e Home do Windows 10.
-
-## <a name="create-an-endpoint-protection-profile"></a>Criar um perfil de Endpoint Protection
-
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Na folha **Intune**, escolha **Configuração do dispositivo**.
-2. Na folha **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
-3. Na folha de perfis, escolha **Criar perfil**.
-4. Na folha **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de recursos do dispositivo.
-5. Na lista suspensa **Plataforma**, escolha **Windows 10 e posterior**.
-6. Na lista suspensa de tipos de **Tipo de perfil**, escolha **Endpoint Protection**.
-7. Defina as configurações que você deseja. Use os detalhes neste artigo para ajudar a entender o que cada configuração faz. Quando terminar, escolha **OK**.
-8. Volte para a folha **Criar perfil** e escolha **Criar**.
-
-O perfil é criado e exibido na folha da lista de perfis.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
@@ -56,9 +40,9 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
 - **Conteúdo externo em sites corporativos** – bloqueie o carregamento do conteúdo de sites não aprovados.
 - **Impressão do navegador virtual** – permita que impressoras de PDF, XPS e/ou de rede local imprimam o conteúdo do navegador virtual.
 - **Coletar logs** – colete logs de eventos que ocorrem dentro de uma sessão de navegação do Application Guard.
-- **Manter dados do navegador gerados pelo usuário** – permita que os dados de usuário (como senhas, favoritos e cookies) que são criados durante uma sessão de navegação virtual do Application Guard sejam salvos.
-- **Aceleração gráfica** – Carrega sites com elementos gráficos densos mais rapidamente ao trabalhar dentro da sessão de navegação do Application Guard, permitindo o acesso a uma unidade de processamento gráfico virtual.
-
+- **Manter dados de navegador gerados pelo usuário** – salve dados do usuário (como senhas, favoritos e cookies) criados durante uma sessão de navegação virtual do Application Guard.
+- **Aceleração gráfica** – carregue mais rapidamente sites que fazem uso intenso de elementos gráficos ao trabalhar na sessão de navegação virtual do Application Guard. Os sites são carregados mais rapidamente habilitando acesso a uma unidade de processamento de gráficos virtuais.
+- **Baixar arquivos para o sistema de arquivos de host** – permite que os usuários baixem os arquivos do navegador virtualizado no sistema operacional do host.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
 
@@ -72,7 +56,7 @@ Essas configurações são aplicáveis a todos os tipos de rede.
 - **Isenções de IPsec** – configure um tráfego específico como isento do IPsec, incluindo **Códigos de tipo ICMP de IPv6 de descoberta de vizinho**, **ICMP**, **Códigos de tipo ICMP de IPv6 de descoberta de roteador** e **Tráfegos de rede DHCP de IPv4 e IPv6**.
 - **Verificação da lista de certificados revogados** – defina um valor para indicar como a verificação da lista de certificados revogados será imposta, incluindo **Desabilitar a verificação de CRL**, **Falhar verificação de CRL somente para certificado revogado** e **Falhar verificação de CRL para qualquer erro encontrado**.
 - **Corresponder conjunto de autenticação por módulo de chave de forma oportuna** – defina os módulos de chaves para ignorar o conjunto de autenticação inteiro caso não sejam compatíveis com todos os pacotes de autenticação nesse conjunto.
-- **Enfileiramento de pacotes** – especifique como o dimensionamento de software no lado do recebimento será habilitado para o recebimento criptografado e o encaminhamento de texto não criptografado para o cenário de gateway de túnel do IPsec. Isso garante que a ordem de pacotes seja preservada.
+- **Enfileiramento de pacotes** – especifique como o dimensionamento de software no lado do recebimento será habilitado para o recebimento criptografado e o encaminhamento de texto não criptografado para o cenário de gateway de túnel do IPsec. Essa configuração garante que a ordem de pacotes seja preservada.
 
 ### <a name="network-settings"></a>Configurações da rede
 
@@ -81,8 +65,8 @@ Essas configurações aplicam-se a tipos de rede específicos, incluindo **Rede 
 #### <a name="general-settings"></a>Configurações gerais
 
 - **Windows Defender Firewall** – habilite essa configuração para bloquear o tráfego de rede.
-- **Modo furtivo** – bloqueie a operação do firewall em modo furtivo. Esse bloqueio permite que você bloqueie a **Isenção de pacote protegido por IPsec**.
-- **Blindado** – habilitar essa opção e a configuração de firewall bloqueará todo o tráfego de entrada.
+- **Modo furtivo** – bloqueie a operação do firewall em modo furtivo. O bloqueio do modo furtivo permite bloquear também a **Isenção de pacote protegido por IPsec**.
+- **Blindado** – habilitar essa configuração e a configuração de firewall bloqueará todo o tráfego de entrada.
 - **Respostas unicast para transmissões multicast** – bloqueie respostas unicast para transmissões multicast. Normalmente, não é interessante receber respostas unicast para mensagens multicast ou de transmissão, pois essas respostas podem indicar um ataque de negação de serviço ou um invasor tentando investigar um computador ativo conhecido.
 - **Notificações de entrada** – bloqueie a exibição de notificações para os usuários quando a escuta de um aplicativo estiver bloqueada em uma porta.
 - **Ação padrão para conexões de entrada** – bloqueie a ação padrão que o firewall executa nas conexões de entrada.
@@ -115,53 +99,52 @@ As configurações básicas são as configurações universais do BitLocker para
 
 - **Aviso para outra criptografia de disco** – desabilite a mensagem de aviso para outra criptografia de disco nos computadores dos usuários finais.
 - **Configurar métodos de criptografia** – Habilite essa configuração para definir os algoritmos de criptografia para o sistema operacional, dados e unidades removíveis.
-    - **Criptografia para unidades do sistema operacional** – Escolha o método de criptografia para unidades do sistema operacional. Recomendamos que você use o algoritmo XTS-AES.
-    - **Criptografia para unidades de dados fixas** – Escolha o método de criptografia para unidades de dados fixas (internas). Recomendamos que você use o algoritmo XTS-AES.
-    - **Criptografia para unidades de dados removíveis** – Escolha o método de criptografia para unidades de dados removíveis. Se a unidade removível for usada com dispositivos que não executam o Windows 10, é recomendável usar o algoritmo AES-CBC.
+  - **Criptografia para unidades do sistema operacional** – Escolha o método de criptografia para unidades do sistema operacional. Recomendamos que você use o algoritmo XTS-AES.
+  - **Criptografia para unidades de dados fixas** – Escolha o método de criptografia para unidades de dados fixas (internas). Recomendamos que você use o algoritmo XTS-AES.
+  - **Criptografia para unidades de dados removíveis** – Escolha o método de criptografia para unidades de dados removíveis. Se a unidade removível for usada com dispositivos que não executam o Windows 10, é recomendável usar o algoritmo AES-CBC.
 
 ### <a name="bitlocker-os-drive-settings"></a>Configurações de unidade do sistema operacional do BitLocker
 
 Essas configurações aplicam-se especificamente às unidades de dados do sistema operacional.
 
 - **Autenticação adicional na inicialização** – configure os requisitos da autenticação de inicialização do computador, incluindo o uso do TPM (Trusted Platform Module).
-    - **BitLocker com chip do TPM não compatível**
-    - **Inicialização do TPM compatível** – configure se o chip do TPM é permitido, não permitido ou necessário.
-    - **PIN de inicialização do TPM compatível** – configure se usar um PIN de inicialização com o chip do TPM é permitido, não permitido ou necessário.
-    - **Chave de inicialização do TPM compatível** – configure se usar uma chave de inicialização com o chip do TPM é permitido, não permitido ou necessário.
-    - **Chave e PIN de inicialização do TPM compatível** – configure se usar uma chave e um PIN de inicialização com o chip do TPM é permitido, não permitido ou necessário.
+  - **BitLocker com chip do TPM não compatível**
+  - **Inicialização do TPM compatível** – configure se o chip do TPM é permitido, não permitido ou necessário.
+  - **PIN de inicialização do TPM compatível** – configure se usar um PIN de inicialização com o chip do TPM é permitido, não permitido ou necessário.
+  - **Chave de inicialização do TPM compatível** – configure se usar uma chave de inicialização com o chip do TPM é permitido, não permitido ou necessário.
+  - **Chave e PIN de inicialização do TPM compatível** – configure se usar uma chave e um PIN de inicialização com o chip do TPM é permitido, não permitido ou necessário.
 - **Tamanho mínimo do PIN** – Habilite essa configuração para configurar um tamanho mínimo para o PIN de inicialização de TPM.
-    - **Número mínimo de caracteres** – Insira o número de caracteres necessário para o PIN de inicialização variando de **4**-**20**.
+  - **Número mínimo de caracteres** – Insira o número de caracteres necessário para o PIN de inicialização variando de **4**-**20**.
 - **Recuperação de unidade do sistema operacional** – habilite essa configuração para controlar como as unidades do sistema operacional protegidas pelo BitLocker são recuperadas quando as informações de inicialização necessária não estão disponíveis.
-    - **Agente de recuperação de dados baseada em certificado** – habilite essa configuração se quiser que os agentes de recuperação de dados possam ser usados com as unidades do sistema operacional protegidas pelo BitLocker.
-    - **Criação de senha de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma senha de recuperação de 48 dígitos.
-    - **Criação de chave de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma chave de recuperação de 256 bits.
-    - **Opções de recuperação no assistente de instalação do BitLocker** – habilite essa configuração para impedir que os usuários vejam ou alterem as opções de recuperação ao ativarem o BitLocker.
-    - **Salvar informações de recuperação do BitLocker no AD DS** – Habilita o armazenamento de informações de recuperação do BitLocker no Active Directory.
-    - **Informações de recuperação do BitLocker armazenadas no AD DS** – configure quais partes das informações de recuperação do BitLocker são armazenadas no Active Directory. Escolha:
-        - **Fazer backup de pacotes de chaves e senhas de recuperação**
-        - **Fazer backup somente de senhas de recuperação**
-    - **Armazenar informações de recuperação no AD DS antes de habilitar o BitLocker** – habilite essa configuração para impedir que os usuários ativem o BitLocker, a menos que o dispositivo esteja ingressado no domínio e que as informações de recuperação do BitLocker tenham sido armazenadas com êxito no Active Directory.
+  - **Agente de recuperação de dados baseada em certificado** – habilite essa configuração se quiser que os agentes de recuperação de dados possam ser usados com as unidades do sistema operacional protegidas pelo BitLocker.
+  - **Criação de senha de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma senha de recuperação de 48 dígitos.
+  - **Criação de chave de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma chave de recuperação de 256 bits.
+  - **Opções de recuperação no assistente de instalação do BitLocker** – habilite essa configuração para impedir que os usuários vejam ou alterem as opções de recuperação ao ativarem o BitLocker.
+  - **Salvar informações de recuperação do BitLocker no AD DS** – Habilita o armazenamento de informações de recuperação do BitLocker no Active Directory.
+  - **Informações de recuperação do BitLocker armazenadas no AD DS** – configure quais partes das informações de recuperação do BitLocker são armazenadas no Active Directory. Escolha:
+    - **Fazer backup de pacotes de chaves e senhas de recuperação**
+    - **Fazer backup somente de senhas de recuperação**
+  - **Armazenar informações de recuperação no AD DS antes de habilitar o BitLocker** – habilite essa configuração para impedir que os usuários ativem o BitLocker, a menos que o dispositivo esteja ingressado no domínio e que as informações de recuperação do BitLocker tenham sido armazenadas com êxito no Active Directory.
 - **Mensagem e URL de recuperação de pré-inicialização** – habilite essa configuração para definir a mensagem e a URL que serão exibidas na tela de recuperação de chave de pré-inicialização.
-    - **Mensagem de recuperação pré-inicialização** – Configure como a mensagem de recuperação pré-inicialização é exibida para os usuários. Escolha:
-        - **Usar mensagem e URL de recuperação padrão**
-        - **Usar mensagem e URL de recuperação vazia**
-        - **Usar mensagem de recuperação personalizada**
-        - **Usar URL de recuperação personalizada**
-
+  - **Mensagem de recuperação pré-inicialização** – Configure como a mensagem de recuperação pré-inicialização é exibida para os usuários. Escolha:
+    - **Usar mensagem e URL de recuperação padrão**
+    - **Usar mensagem e URL de recuperação vazia**
+    - **Usar mensagem de recuperação personalizada**
+    - **Usar URL de recuperação personalizada**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Configurações de unidades de dados fixas do BitLocker
 
 - **Acesso de gravação para unidades de dados fixas não protegidas pelo BitLocker** – se habilitado, a proteção do BitLocker deverá ser habilitada em todas as unidades de dados fixas ou internas para que seja possível gravar nelas.
 - **Recuperação de unidade fixa** – habilite essa configuração para controlar como as unidades fixas protegidas pelo BitLocker serão recuperadas quando as informações de inicialização necessárias não estiverem disponíveis.
-    - **Agente de recuperação de dados** – habilite essa configuração se quiser que os agentes de recuperação de dados possam ser usados com as unidades fixas protegidas pelo BitLocker.
-    - **Criação de senha de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma senha de recuperação de 48 dígitos.  
-    - **Criação de chave de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma chave de recuperação de 256 bits.
-    - **Opções de recuperação no assistente de instalação do BitLocker** – habilite essa configuração para impedir que os usuários vejam ou alterem as opções de recuperação ao ativarem o BitLocker.
-    - **Salvar informações de recuperação do BitLocker no AD DS** – Habilita o armazenamento de informações de recuperação do BitLocker no Active Directory.
-    - **Informações de recuperação do BitLocker no AD DS** – configure quais partes das informações de recuperação do BitLocker são armazenadas no Active Directory. Escolha:
-        - **Fazer backup de pacotes de chaves e senhas de recuperação**
-        - **Fazer backup somente de senhas de recuperação**
-    - **Armazenar informações de recuperação no AD DS antes de habilitar o BitLocker** – habilite essa configuração para impedir que os usuários ativem o BitLocker, a menos que o dispositivo esteja ingressado no domínio e que as informações de recuperação do BitLocker tenham sido armazenadas com êxito no Active Directory.
+  - **Agente de recuperação de dados** – habilite essa configuração se quiser que os agentes de recuperação de dados possam ser usados com as unidades fixas protegidas pelo BitLocker.
+  - **Criação de senha de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma senha de recuperação de 48 dígitos.  
+  - **Criação de chave de recuperação pelo usuário** – Configure se é permitido, necessário ou não permitido que os usuários gerem uma chave de recuperação de 256 bits.
+  - **Opções de recuperação no assistente de instalação do BitLocker** – habilite essa configuração para impedir que os usuários vejam ou alterem as opções de recuperação ao ativarem o BitLocker.
+  - **Salvar informações de recuperação do BitLocker no AD DS** – Habilita o armazenamento de informações de recuperação do BitLocker no Active Directory.
+  - **Informações de recuperação do BitLocker no AD DS** – configure quais partes das informações de recuperação do BitLocker são armazenadas no Active Directory. Escolha:
+    - **Fazer backup de pacotes de chaves e senhas de recuperação**
+    - **Fazer backup somente de senhas de recuperação**
+  - **Armazenar informações de recuperação no AD DS antes de habilitar o BitLocker** – habilite essa configuração para impedir que os usuários ativem o BitLocker, a menos que o dispositivo esteja ingressado no domínio e que as informações de recuperação do BitLocker tenham sido armazenadas com êxito no Active Directory.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Configurações de unidade de dados removíveis do BitLocker
 
@@ -173,6 +156,8 @@ Essas configurações aplicam-se especificamente às unidades de dados do sistem
 Use o [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) para gerenciar e reduzir a superfície de ataque de aplicativos usados pelos seus funcionários.
 
 ### <a name="attack-surface-reduction"></a>Redução da superfície de ataque
+
+- **Sinalizar roubo de credencial do subsistema da autoridade de segurança local do Windows**
 
 Ajude a [impedir que aplicativos e ações](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard), que normalmente são usados por malwares em busca de exploração, infectem computadores.
 
@@ -187,16 +172,25 @@ Impeça que os aplicativos do Office executem as seguintes ações:
 
 #### <a name="rules-to-prevent-script-threats"></a>Regras para impedir ameaças de script
 
-Bloqueie os itens a seguir para ajudar a evitar ameaças de script:
+Bloqueie o seguinte para ajudar a prevenir ameaças de script:
 
 - **Código de js/vbs/ps/macro ofuscado**
 - **Execução de conteúdo baixado da Internet pelo js/vbs (sem exceções)**
+- **Criação de processo usando comandos WMI e PSExec**
+- **Processos não assinados e não confiáveis executados de um USB**
+- **Executáveis que não atendem um critério de prevalência, idade ou lista confiável**
 
 #### <a name="rules-to-prevent-email-threats"></a>Regras para impedir ameaças de email
 
-Bloqueie os itens a seguir para ajudar a evitar ameaças de email:
+Bloqueie o seguinte para ajudar a prevenir ameaças por email:
 
 - **Execução de conteúdo executável (exe, dll, ps, js, vbs, etc.) proveniente do email (cliente de webmail/email) (sem exceções)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>Regras para proteger-se contra ransomware
+- **Proteção avançada contra ransomware**
+
+> [!TIP]
+> [Reduzir superfícies de ataque com o Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) fornece mais detalhes sobre essas regras.
 
 #### <a name="attack-surface-reduction-exceptions"></a>Exceções de redução da superfície de ataque
 
@@ -236,7 +230,7 @@ O aplicativo Central de Segurança do Windows Defender opera como um aplicativo 
 
 #### <a name="windows-defender-security-center-app-and-notifications"></a>Aplicativo Central de Segurança do Windows Defender e notificações
 
-Bloqueie o acesso de usuário final a várias áreas do aplicativo Central de Segurança do Windows Defender. Ocultar uma seção também bloqueará as notificações relacionadas.
+Bloqueie o acesso de usuário final às várias áreas do aplicativo da Central de Segurança do Windows Defender. Ocultar uma seção também bloqueará as notificações relacionadas.
 
 - **Proteção contra vírus e ameaças**
 - **Integridade e desempenho do dispositivo**
@@ -247,7 +241,7 @@ Bloqueie o acesso de usuário final a várias áreas do aplicativo Central de Se
 
 #### <a name="it-contact-information"></a>Informações de contato de TI
 
-Forneça as informações de contato de TI que aparecem no aplicativo Central de Segurança do Windows Defender e as notificações do aplicativo. Você pode escolher **Exibir no aplicativo e em notificações**, **Exibir somente no aplicativo**, **Exibir somente em notificações** ou **Não exibir**. Você deve definir o **nome da organização de TI** e pelo menos uma das seguintes opções de contato:
+Forneça as informações de contato de TI que aparecem no aplicativo da Central de Segurança do Windows Defender e as notificações do aplicativo. Você pode escolher **Exibir no aplicativo e em notificações**, **Exibir somente no aplicativo**, **Exibir somente em notificações** ou **Não exibir**. Você deve definir o **nome da organização de TI** e pelo menos uma das seguintes opções de contato:
 
 - **Número de telefone ou ID do Skype do departamento de TI**
 - **Endereço de email do departamento de TI**
@@ -255,4 +249,4 @@ Forneça as informações de contato de TI que aparecem no aplicativo Central de
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
+Para atribuir esse perfil a grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).

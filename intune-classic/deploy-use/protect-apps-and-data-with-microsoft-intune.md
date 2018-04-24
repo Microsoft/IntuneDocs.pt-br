@@ -1,29 +1,29 @@
 ---
 title: Proteger os aplicativos e os dados
-description: "Este tópico descreve os vários recursos e funcionalidades do Intune que estão disponíveis para ajudar a proteger os dados e aplicativos da sua empresa."
-keywords: 
+description: Este tópico descreve os vários recursos e funcionalidades do Intune que estão disponíveis para ajudar a proteger os dados e aplicativos da sua empresa.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteger aplicativos e dados com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune protege os dados da empresa por meio de várias camadas de tecnologia. Na camada de identidade, o acesso condicional protege o acesso aos serviços, permitindo o acesso somente de dispositivos gerenciados e compatíveis. Na camada de aplicativo do cliente, o MAM (Gerenciamento de aplicativos Móveis) protege contra a perda de dados impedindo que os dados sejam movidos para aplicativos ou locais de armazenamento não protegidos e apagando os dados quando um dispositivo é perdido ou roubado. Recomendamos usar essas duas camadas de proteção juntas para ajudar a proteger os dados, mantendo sua força de trabalho móvel produtiva.
 
@@ -34,7 +34,7 @@ O [acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft
   - PINs e senhas: é possível criar regras para exigir senhas para desbloquear um dispositivo, seus requisitos de complexidade e outras definições de senha.
   - Criptografia: você pode restringir o acesso a dispositivos criptografados.
   - Quando um dispositivo não está desbloqueado ou enraizado: o Intune pode detectar se um dispositivo registrado está desbloqueado. É possível definir a política para bloquear o acesso a tais dispositivos.
-- Configure [políticas de acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) para um serviço específico como o Exchange Online ou no SharePoint Online. Para cada serviço, você pode definir a quais grupos de usuários essas políticas devem ser aplicadas. Por exemplo, você pode garantir que todos no departamento financeiro possam acessar apenas email de dispositivos registrados e compatíveis.
+- Configure [políticas de acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) para um serviço específico como o Exchange Online ou no SharePoint Online. Para cada serviço, você pode definir a quais grupos de usuários essas políticas devem ser aplicadas. Por exemplo, você pode garantir que todos no departamento financeiro possam acessar apenas email de dispositivos registrados e em conformidade.
 
 Proteger o acesso aos recursos da empresa é apenas o primeiro passo para proteger os dados da empresa. Você ainda precisa ser capaz de proteger os dados depois que eles tiverem sido acessados no dispositivo. O conteúdo agora pode ser copiado, movido, salvo em um local diferente ou compartilhado. O Intune resolve esse problema fornecendo a capacidade de restringir a movimentação dos dados, criando um conjunto de regras como:
 - Bloquear a ação de copiar e colar ou impedir a transferência de dados fora do contexto de trabalho.

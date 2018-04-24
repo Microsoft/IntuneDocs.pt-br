@@ -1,29 +1,29 @@
 ---
 title: Registrar dispositivos iOS usando o Apple Configurator
 titlesuffix: Microsoft Intune
-description: "Saiba como usar o Apple Configurator para registrar dispositivos iOS de propriedade corporativa com o Assistente de Configuração."
-keywords: 
+description: Saiba como usar o Apple Configurator para registrar dispositivos iOS de propriedade corporativa com o Assistente de Configuração.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ecdd79a029bc3d434ebb0d8ba62ea0e65215f9e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrar dispositivos iOS com o Apple Configurador
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Diferenças de interface de usuário temporárias
@@ -85,8 +85,8 @@ Um perfil de registro do dispositivo define as configurações aplicadas durante
 
 1. Crie uma lista de duas colunas de valores separados por vírgula (.csv) sem um cabeçalho. Adicione os números de série na coluna esquerda e os detalhes na coluna direita. O máximo atual para a lista é de 5.000 linhas. Em um editor de texto, a lista .csv é semelhante a isto:
 
-  F7TLWCLBX196, detalhes do dispositivo</br>
-  DLXQPCWVGHMJ, detalhes do dispositivo
+   F7TLWCLBX196, detalhes do dispositivo</br>
+   DLXQPCWVGHMJ, detalhes do dispositivo
 
    Saiba [como localizar o número de série de um dispositivo iOS](https://support.apple.com/HT204073).
 2. No Intune no [Portal do Azure](https://portal.azure.com), escolha **Registro de dispositivo** e, em seguida, selecione **Registro da Apple**.
@@ -119,23 +119,23 @@ Depois de criar o perfil e atribuir números de série, é necessário exportar 
 1. No Intune no [portal do Azure](https://portal.azure.com), escolha **Registro de dispositivo** > **Registro da Apple** > **Perfis do AC** e, em seguida, escolha o perfil a ser exportado.
 2. No perfil, selecione **Exportar Perfil**.
 
-  ![Perfil de exportação para Registro do assistente de instalação com a URL do perfil realçada](./media/ios-apple-configurator-expor-sat.png)
+   ![Perfil de exportação para Registro do assistente de instalação com a URL do perfil realçada](./media/ios-apple-configurator-expor-sat.png)
 3. Copie a URL do perfil. Então, será possível adicioná-la ao Apple Configurator posteriormente para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
-  Depois, esse perfil será importado para o Apple Configurator no próximo procedimento, a fim de definir o perfil do Intune usado pelos dispositivos iOS.
+   Depois, esse perfil será importado para o Apple Configurator no próximo procedimento, a fim de definir o perfil do Intune usado pelos dispositivos iOS.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>Registrar dispositivos com o Assistente de Configuração
 
-1.  Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
-  > [!WARNING]
-  > Os dispositivos são redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você conectar o dispositivo.
+1. Em um computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e clique em **Preferências**.
+   > [!WARNING]
+   > Os dispositivos são redefinidos para as configurações de fábrica durante o processo de registro. Como melhor prática, redefina o dispositivo e ligue-o. Os dispositivos devem estar na tela **Olá** quando você conectar o dispositivo.
 
 2. No painel de **preferências**, selecione **Servidores** e escolha o símbolo de mais (+) para inicializar o assistente do Servidor MDM. Escolha **Avançar**.
 3. Insira o **Nome de Host ou a URL** e a **URL do Registro** para o servidor MDM em Registro do Assistente de Configuração para dispositivos iOS com o Microsoft Intune. Para URL de Registro, insira a URL do perfil de registro exportada do Intune. Escolha **Avançar**.  
 
-  Você pode desconsiderar com segurança um aviso indicando "URL do servidor não verificada". Para continuar, clique em **Avançar** até que o assistente seja concluído.
-4.  Conecte os dispositivos móveis iOS ao computador Mac com um adaptador USB.
-5.  Selecione os dispositivos iOS que deseja gerenciar e escolha **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e, em seguida, selecione **Avançar**.
+   Você pode desconsiderar com segurança um aviso indicando "URL do servidor não verificada". Para continuar, clique em **Avançar** até que o assistente seja concluído.
+4. Conecte os dispositivos móveis iOS ao computador Mac com um adaptador USB.
+5. Selecione os dispositivos iOS que deseja gerenciar e escolha **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e, em seguida, selecione **Avançar**.
 6. No painel **Registrar no Servidor MDM**, selecione o nome do servidor que você criou e escolha **Avançar**.
 7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Avançar**.
 8. No painel **Criar uma Organização**, escolha **Organização** ou crie uma nova organização e escolha **Avançar**.
@@ -162,13 +162,14 @@ Aplicativos que exigem afiliação do usuário (inclusive o aplicativo do Portal
 
 2. Transferir o arquivo para um computador Mac executando [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para enviar por push diretamente como um perfil de gerenciamento para dispositivos iOS.
 3. Prepare o dispositivo com o Apple Configurator usando as etapas a seguir.
-  1. Em um computador Mac, abra o Apple Configurator 2.0.
-  2. Conecte o dispositivo iOS ao computador Mac com um cabo USB. Feche as Fotos, iTunes e outros aplicativos que são abertos com o dispositivo quando ele é detectado.
-  3. No Apple Configurator, escolha o dispositivo iOS conectado e selecione o botão **Adicionar**. As opções que podem ser adicionadas ao dispositivo aparecem na lista suspensa. Escolha **Perfis**.
+   1. Em um computador Mac, abra o Apple Configurator 2.0.
+   2. Conecte o dispositivo iOS ao computador Mac com um cabo USB. Feche as Fotos, iTunes e outros aplicativos que são abertos com o dispositivo quando ele é detectado.
+   3. No Apple Configurator, escolha o dispositivo iOS conectado e selecione o botão **Adicionar**. As opções que podem ser adicionadas ao dispositivo aparecem na lista suspensa. Escolha **Perfis**.
 
-    ![Perfil de exportação para Registro do assistente de instalação com a URL do perfil realçada](./media/ios-apple-configurator-add-profile.png)
+      ![Perfil de exportação para Registro do assistente de instalação com a URL do perfil realçada](./media/ios-apple-configurator-add-profile.png)
 
-  4. Use o seletor de arquivos para selecionar o arquivo .mobileconfig exportado do Intune e escolha **Adicionar**. O perfil é adicionado ao dispositivo. Se o dispositivo for Sem supervisão, a instalação necessitará da aceitação no dispositivo.
+   4. Use o seletor de arquivos para selecionar o arquivo .mobileconfig exportado do Intune e escolha **Adicionar**. O perfil é adicionado ao dispositivo. Se o dispositivo for Sem supervisão, a instalação necessitará da aceitação no dispositivo.
+
 4. Use as etapas a seguir para instalar o perfil no dispositivo iOS. O dispositivo já deve ter concluído o Assistente de Configuração e está pronto para uso. Se o registro envolve as implantações de aplicativo, o dispositivo deve ter uma ID da Apple configurada, pois a implantação de aplicativo exige que você tenha uma ID da Apple conectada na App Store.
    1. Desbloquear o dispositivo iOS.
    2. Na caixa de diálogo **Instalar perfil** para o **Perfil de gerenciamento**, escolha **Instalar**.

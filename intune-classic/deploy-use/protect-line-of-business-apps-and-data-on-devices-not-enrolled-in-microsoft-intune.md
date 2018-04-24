@@ -1,29 +1,29 @@
 ---
-title: "Proteger aplicativos LOB em dispositivos não registrados"
-description: "Este tópico descreve como preparar seus aplicativos de linha de negócios personalizados para que você possa aplicar políticas de gerenciamento de aplicativo móvel que podem ajudar a evitar a perda de dados."
-keywords: 
+title: Proteger aplicativos LOB em dispositivos não registrados
+description: Este tópico descreve como preparar seus aplicativos de linha de negócios personalizados para que você possa aplicar políticas de gerenciamento de aplicativo móvel que podem ajudar a evitar a perda de dados.
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteger aplicativos de linha de negócios e dados em dispositivos não registrados no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Políticas de gerenciamento de aplicativos móveis (MAM) ajudam a proteger dados da empresa, restringindo ações que poderiam vazar dados da empresa e impor requisitos de acesso de dados, como o PIN do aplicativo. Para aplicar políticas de MAM nos aplicativos de linha de negócios iOS e Android, você deve primeiro encapsular o aplicativo com a Ferramenta de Encapsulamento de Aplicativo do Microsoft Intune. O encapsulamento de aplicativo é o processo de aplicação de uma camada de gerenciamento a um aplicativo móvel sem exigir nenhuma alteração nele e de sua distribuição aos usuários.  
 
@@ -42,16 +42,16 @@ Para associar seu aplicativo de linha de negócios com as políticas de MAM, é 
 
 1. No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações** e escolha **Aplicativos de linha de negócios**.
 
-  ![Captura de tela da folha de configurações com a opção linha de negócios](../media/mam-azure-portal-lob-on-settings.png)
+   ![Captura de tela da folha de configurações com a opção linha de negócios](../media/mam-azure-portal-lob-on-settings.png)
 
 2. Na folha **Aplicativos da linha de negócios**, escolha **Adicionar um aplicativo personalizado**.
 
-  ![Captura de tela da folha de aplicativos da linha de negócios com o botão Adicionar aplicativo personalizado na parte superior](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Nomeie o aplicativo, o identificador de pacote em um campo Identificador de aplicativo e a plataforma (iOS ou Android).
+   ![Captura de tela da folha de aplicativos da linha de negócios com o botão Adicionar aplicativo personalizado na parte superior](../media/mam-azure-portal-add-lob-app-action.png)
+3. Nomeie o aplicativo, o identificador de pacote em um campo Identificador de aplicativo e a plataforma (iOS ou Android).
 
-  ![Captura de tela da folha Adicionar um aplicativo personalizado](../media/mam-azure-portal-add-app-details.png)
+   ![Captura de tela da folha Adicionar um aplicativo personalizado](../media/mam-azure-portal-add-app-details.png)
 
-  Esta etapa ajuda a criar uma lista exclusiva de seu aplicativo. O aplicativo também será exibido na lista de aplicativos de destino de uma política de MAM do seu locatário, conforme descrito na próxima etapa.
+   Esta etapa ajuda a criar uma lista exclusiva de seu aplicativo. O aplicativo também será exibido na lista de aplicativos de destino de uma política de MAM do seu locatário, conforme descrito na próxima etapa.
 
 ## <a name="step-3-apply-mam-policies"></a>Etapa 3: aplicar políticas MAM
 Depois dos metadados do aplicativo serem carregados para o serviço, o aplicativo aparecerá na lista de aplicativos. Agora, é possível [criar uma nova política ou usar uma política existente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) e aplicá-la ao aplicativo de linha de negócios adicionado na etapa 2.
@@ -72,12 +72,12 @@ Se você precisar alterar os detalhes do aplicativo, como o nome do aplicativo o
 ##  <a name="remove-apps"></a>Remover aplicativos
 É possível remover um aplicativo de linha de negócios da lista de aplicativos. Isso removerá o aplicativo da lista e removerá a associação com políticas de MAM, mas não removerá ou desinstalará o aplicativo do dispositivo do usuário.  
 
-1.  No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações**. Na folha **Configurações**, escolha **Linha de negócios** para abrir a lista de aplicativos existentes.  
-2.  Escolha o aplicativo que você deseja remover e escolha o menu **(…) contexto**.
+1. No [portal do Azure](https://portal.azure.com/), vá para **Gerenciamento de aplicativos móveis do Intune** > **Configurações**. Na folha **Configurações**, escolha **Linha de negócios** para abrir a lista de aplicativos existentes.  
+2. Escolha o aplicativo que você deseja remover e escolha o menu **(…) contexto**.
 
-  ![Captura de tela da folha de aplicativos da linha de negócios com reticências](../media/mam-azure-portal-lob-context-menu.png)
-3.  Escolha **Excluir Aplicativo** para excluir o aplicativo.
+   ![Captura de tela da folha de aplicativos da linha de negócios com reticências](../media/mam-azure-portal-lob-context-menu.png)
+3. Escolha **Excluir Aplicativo** para excluir o aplicativo.
 
-  ![Captura de tela da folha linha de negócios com a opção de exclusão do aplicativo](../media/mam-azure-portal-delete-app.png)
+   ![Captura de tela da folha linha de negócios com a opção de exclusão do aplicativo](../media/mam-azure-portal-delete-app.png)
 
-  Isso removerá os aplicativos da lista de aplicativos da linha de negócios e da lista de destino de aplicativos na política de MAM.
+   Isso removerá os aplicativos da lista de aplicativos da linha de negócios e da lista de destino de aplicativos na política de MAM.

@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 473a0b265a9483cbd6f6ffb15074fad85e03e264
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: bc3d46800087b33c6cebcbb50f7c16eb4a056c18
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localizar dispositivos iOS perdidos ou roubados com o Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Para obter a localização de um dispositivo iOS perdido ou roubado em um mapa, use a ação **Localizar dispositivo**. O dispositivo precisa ser um dispositivo iOS corporativo, registrado por meio do programa de registro de dispositivos e estar no modo supervisionado. Antes de usar essa ação, verifique se o dispositivo está no [modo perdido](device-lost-mode.md).
 

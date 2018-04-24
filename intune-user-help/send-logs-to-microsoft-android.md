@@ -1,48 +1,48 @@
 ---
 title: Enviar logs do Android para desenvolvedores da Microsoft | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 06767d1c-a012-4288-9921-f9dd2eb4eb8d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b03ac31cc51d69e1872954fa4afbce55add8479f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Enviar logs para os desenvolvedores do Portal da Empresa para dispositivos com Android
 
-Às vezes, o aplicativo do Portal da Empresa pode fechar inesperadamente. Este é um problema sobre o qual os desenvolvedores de aplicativo desejam saber, pois isso pode nos ajudar a fazê-lo funcionar melhor para você e prevenir esse tipo de coisa no futuro. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+Às vezes, o aplicativo do Portal da Empresa pode fechar inesperadamente. Os desenvolvedores de aplicativo desejam ser informados por você quando ocorrer um comportamento inesperado para que eles possam encontrar a causa raiz e evitar ocorrências futuras. Esses erros são detalhados no seu dispositivo em um documento especial chamado de _log de diagnóstico_. A equipe do Portal da Empresa precisa dos logs específicos do Portal da Empresa para diagnosticar o problema.
 
 > [!Note]
-> Para facilitar para o suporte de sua empresa descobrir o problema, você deverá ativar o _log detalhado_. O log detalhado inclui todos os detalhes relevantes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para facilitar para o suporte de sua empresa para descobrir a causa do problema, ative o _log detalhado_. O log detalhado registra todos os detalhes sobre um erro e inclui esses detalhes no relatório. Descubra como [ativar o log detalhado aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md). 
 
-Se isso estiver acontecendo com você, a equipe do Portal da Empresa precisará dos logs do Portal da Empresa para tentar diagnosticar a causa raiz. Para enviar os logs para a Microsoft:
+Para enviar os logs para a Microsoft:
 
 1.  Abra o aplicativo do Portal da Empresa.
 
-2.  Toque em **Menu** >  **Ajuda e Comentários**.
+2.  Toque em **Menu** > **Ajuda** > **Suporte por Email**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou de hardware, dependendo do dispositivo Android.
 
-3.  Em **Comentários**, toque em **Fornecer Comentários**.
+3.  Toque em **Carregar Apenas Logs**.
 
-4.  Descreva resumidamente o problema que você está enfrentando no email e toque em **Enviar**.
+4.  Após a conclusão do upload, você receberá uma ID de incidente. Salve a ID para seus registros.
 
-Você também pode enviar um email diretamente para a equipe do Portal da Empresa para Android no <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
+Para contatar diretamente a equipe do Portal da Empresa para Android, envie um email para <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

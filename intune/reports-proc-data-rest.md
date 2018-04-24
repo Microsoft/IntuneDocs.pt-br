@@ -2,24 +2,24 @@
 title: Obter dados da API do Data Warehouse com um cliente REST
 titlesuffix: Microsoft Intune
 description: Recupere dados do Data Warehouse do Intune usando uma API RESTful.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados da API do Data Warehouse do Intune com um cliente REST
 
@@ -45,7 +45,7 @@ Crie um aplicativo nativo no Azure. Este aplicativo nativo é o aplicativo clien
     3.  Digite uma URL em **URL de logon**. A URL de logon dependerá do cenário específico, no entanto, se você planeja usar o Postman, digite `https://www.getpostman.com/oauth2/callback`. Você usará o retorno de chamada para a etapa de autenticação do cliente ao autenticar no Azure AD.
 4.  Selecione **Criar**.
 
-     ![API Intune Data Warehouse](media\reports-get_rest_data_client_overview.png)
+     ![API Intune Data Warehouse](./media/reports-get_rest_data_client_overview.png)
 
 5. Anote a **ID do aplicativo** desse aplicativo. Você usará a ID na próxima seção.
 
@@ -62,7 +62,7 @@ Agora você tem um aplicativo definido no Azure. Conceda acesso do aplicativo na
 7.  Selecione **Selecionar**.
 8.  Marque a caixa **Permissões Delegadas** para adicionar **Obter informações do data warehouse do Microsoft Intune**.
 
-    ![Habilitar o acesso – API do Microsot Intune](media\reports-get_rest_data_client_access.png)
+    ![Habilitar o acesso – API do Microsot Intune](./media/reports-get_rest_data_client_access.png)
 
 9.  Selecione **Selecionar**.
 10.  Selecione **Concluído**.
@@ -132,7 +132,7 @@ Para obter um novo token de acesso do Postman, você deve adicionar a URL de aut
 
 12. Selecione **Solicitar token**.
 
-    ![Informações para o token](media\reports-postman_getnewtoken.png)
+    ![Informações para o token](./media/reports-postman_getnewtoken.png)
 
 13. Digite as credenciais na página de autorização do AD ativo. Agora a lista de tokens no Postman contém o token chamado `Bearer`.
 14. Selecione **Usar token**. A lista de cabeçalhos contém o novo valor da chave de Autorização e o valor `Bearer <your-authorization-token>`.
@@ -142,7 +142,7 @@ Para obter um novo token de acesso do Postman, você deve adicionar a URL de aut
 1.  Selecione **Enviar**.
 2.  Os dados de retorno são exibidos no corpo da resposta do Postman.
 
-    ![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Criar um cliente REST (C#) para obter dados do Data Warehouse do Intune
 
@@ -151,45 +151,45 @@ O exemplo a seguir contém um cliente REST simples. O código usa a classe **htt
 > [!Note]  
 > Você pode acessar o exemplo de código a seguir [no GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Consulte o repositório do GitHub para obter as alterações e atualizações mais recentes para o exemplo.
 
-1.  Abra o **Microsoft Visual Studio**.
-2.  Escolha **Arquivo** > **Novo Projeto**. Expanda **Visual C#** e escolha **Aplicativo de Console (.Net Framework)**.
-3.  Nomeie o projeto como ` IntuneDataWarehouseSamples`, navegue até onde deseja salvar o projeto e, em seguida, selecione **OK**.
-4.  Clique com o botão direito do mouse no nomes da solução no Gerenciador de Soluções e, em seguida, selecione **Gerenciar Pacotes NuGet para a Solução**. Selecione **Procurar** e, em seguida, digite `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
+1. Abra o **Microsoft Visual Studio**.
+2. Escolha **Arquivo** > **Novo Projeto**. Expanda **Visual C#** e escolha **Aplicativo de Console (.Net Framework)**.
+3. Nomeie o projeto como ` IntuneDataWarehouseSamples`, navegue até onde deseja salvar o projeto e, em seguida, selecione **OK**.
+4. Clique com o botão direito do mouse no nomes da solução no Gerenciador de Soluções e, em seguida, selecione **Gerenciar Pacotes NuGet para a Solução**. Selecione **Procurar** e, em seguida, digite `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
 5. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Gerenciar Pacotes da sua Solução e, em seguida, selecione **Instalar**.
 6. Selecione **Eu Aceito** para aceitar a licença do pacote NuGet.
 7. Abra `Program.cs` no Gerenciador de Soluções.
 
-    ![Projeto no Visual Studio](media\reports-get_rest_data_in.png)
+    ![Projeto no Visual Studio](./media/reports-get_rest_data_in.png)
 
-8.  Substitua o código em Program.cs pelo código a seguir:  
-    ```csharp
-namespace IntuneDataWarehouseSamples
-{
-    using System;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+8. Substitua o código em Program.cs pelo código a seguir:  
+   ```csharp
+   namespace IntuneDataWarehouseSamples
+   {
+   using System;
+   using System.Net.Http;
+   using System.Net.Http.Headers;
+   using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    class Program
-    {
-     static void Main(string[] args)
-  {
+   class Program
+   {
+    static void Main(string[] args)
+   {
    /**
-    * TODO: Replace the below values with your own.
-    * emailAddress - The email address of the user that you will authenticate as.
-    *
-    * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not
-    *    recommend storing passwords in plaintext.
-    *
-    * applicationId - The application ID of the native app that was created in AAD.
-    *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
-    *      the Azure portal.
-    *
-    * collectionName - The name of the warehouse entity collection you would like to
-    *      access.
-    */
+   * TODO: Replace the below values with your own.
+   * emailAddress - The email address of the user that you will authenticate as.
+   *
+   * password  - The password for the above email address.
+   *    This is inline only for simplicity in this sample. We do not
+   *    recommend storing passwords in plaintext.
+   *
+   * applicationId - The application ID of the native app that was created in AAD.
+   *
+   * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
+   *      the Azure portal.
+   *
+   * collectionName - The name of the warehouse entity collection you would like to
+   *      access.
+   */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
@@ -198,9 +198,9 @@ namespace IntuneDataWarehouseSamples
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
    AuthenticationResult authResult = adalContext.AcquireTokenAsync(
-    resource: "https://api.manage.microsoft.com/",
-    clientId: applicationId,
-    userCredential: new UserPasswordCredential(emailAddress, password)).Result;
+   resource: "https://api.manage.microsoft.com/",
+   clientId: applicationId,
+   userCredential: new UserPasswordCredential(emailAddress, password)).Result;
 
    var httpClient = new HttpClient();
    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
@@ -212,16 +212,16 @@ namespace IntuneDataWarehouseSamples
 
    Console.Write(response.Content.ReadAsStringAsync().Result);
    Console.ReadKey();
-  }
-    }
-    ```
+   }
+   }
+   ```
 
-9.  Atualize os `TODO`s no exemplo de código.
-10.  Pressione **Ctrl + F5** para compilar e executar o cliente Intune.DataWarehouseAPIClient no modo de depuração.
+9. Atualize os `TODO`s no exemplo de código.
+10. Pressione **Ctrl + F5** para compilar e executar o cliente Intune.DataWarehouseAPIClient no modo de depuração.
 
-    ![Entidade de data recuperada no formato JSON.](media\reports-get_rest_data_output.png)
+    ![Entidade de data recuperada no formato JSON.](./media/reports-get_rest_data_output.png)
 
-11.  Examine a saída do console. A saída contém dados no formato JSON extraídos da entidade **datas** em seu locatário do Intune.
+11. Examine a saída do console. A saída contém dados no formato JSON extraídos da entidade **datas** em seu locatário do Intune.
 
 ## <a name="next-steps"></a>Próximas etapas
 

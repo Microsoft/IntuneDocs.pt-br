@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 63532456edbaf3579b9b6da8c0f376e7f4409c88
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b841bcf97ecb213f75575508362de0234bc8a2b9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-windows-hello-for-business-settings-on-devices-with-microsoft-intune"></a>Controlar as configurações do Windows Hello para Empresas em dispositivos com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune se integra com o Windows Hello para Empresas (antigo Microsoft Passport for Work), um método de entrada alternativo que usa o Active Directory ou uma conta do Azure Active Directory para substituir uma senha, cartão inteligente ou cartão inteligente virtual.
 
@@ -37,13 +37,13 @@ O Intune é integrado ao Hello para Empresas de duas maneiras:
 
 > [!IMPORTANT]
 > Nas versões do Windows 10 Desktop e Mobile anteriores à Atualização de Aniversário, você podia configurar dois PINs diferentes que poderiam ser usados para se autenticar nos recursos:
-- O **PIN do dispositivo** poderia ser usado para desbloquear o dispositivo e conectar-se aos recursos de nuvem.
-- O **PIN de trabalho** foi usado para acessar recursos do Azure AD em dispositivos pessoais do usuário (BYOD).
-
->Na Atualização de Aniversário, esses dois PINs foram mesclados em um único PIN do dispositivo.
-Qualquer política de configuração do Intune definida para controlar o PIN do dispositivo e, além disso, qualquer política do Windows Hello para Empresas configurada; agora ambas definem esse novo valor do PIN.
-Se você tiver definido os dois tipos de política para controlar o PIN, a política do Windows Hello para Empresas será aplicada nos dispositivos Windows 10 Desktop e Mobile.
-Para garantir que os conflitos de política sejam resolvidos e que a política de PIN seja aplicada corretamente, atualize sua Política do Windows Hello para Empresas para que corresponda às configurações em sua política de configuração e solicite aos usuários que sincronizem seus dispositivos no aplicativo Portal da Empresa.
+> - O **PIN do dispositivo** poderia ser usado para desbloquear o dispositivo e conectar-se aos recursos de nuvem.
+> - O **PIN de trabalho** foi usado para acessar recursos do Azure AD em dispositivos pessoais do usuário (BYOD).
+> 
+> Na Atualização de Aniversário, esses dois PINs foram mesclados em um único PIN do dispositivo.
+> Qualquer política de configuração do Intune definida para controlar o PIN do dispositivo e, além disso, qualquer política do Windows Hello para Empresas configurada; agora ambas definem esse novo valor do PIN.
+> Se você tiver definido os dois tipos de política para controlar o PIN, a política do Windows Hello para Empresas será aplicada nos dispositivos Windows 10 Desktop e Mobile.
+> Para garantir que os conflitos de política sejam resolvidos e que a política de PIN seja aplicada corretamente, atualize sua Política do Windows Hello para Empresas para que corresponda às configurações em sua política de configuração e solicite aos usuários que sincronizem seus dispositivos no aplicativo Portal da Empresa.
 
 
 

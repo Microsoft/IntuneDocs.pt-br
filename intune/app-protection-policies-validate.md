@@ -1,30 +1,29 @@
 ---
-title: "Validar sua configuração de política de proteção de aplicativo"
+title: Validar sua configuração de política de proteção de aplicativo
 titleSuffix: Microsoft Intune
-description: "Saiba como testar se a política de proteção de aplicativo está configurada e funcionando corretamente."
-keywords: 
+description: Saiba como testar se a política de proteção de aplicativo está configurada e funcionando corretamente.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 980773eb59553c492ac338808476cfb55f2ddfb8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ddafe6037cce73c1eca82f2bc78c6197aff9acad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Como validar sua configuração de política de proteção de aplicativo
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Verifique se a política de proteção de aplicativo está funcionando e configurada corretamente. Estas diretrizes se aplicam às políticas de proteção de aplicativo no portal do Azure.
 

@@ -1,36 +1,36 @@
 ---
-title: "Introdução ao Intune no Portal do Azure"
-titlesuffix: 
-description: "O Microsoft Intune está disponível no portal do Azure. Obtenha as noções básicas sobre o Intune no Portal do Azure."
-keywords: 
+title: Introdução ao Intune no Portal do Azure
+titlesuffix: ''
+description: O Microsoft Intune está disponível no portal do Azure. Obtenha as noções básicas sobre o Intune no Portal do Azure.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introdução ao Microsoft Intune no portal do Azure
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Semelhante a outros serviços do Azure, o Microsoft Intune está disponível no Portal do Azure. Ao selecionar **Intune** no Portal do Azure, você pode gerenciar os dispositivos móveis, computadores e aplicativos da sua organização.
 
->[!NOTE] 
+> [!NOTE]
 > Se você usar uma versão anterior do Microsoft Intune, as informações a seguir poderão ser úteis:
-    * [Para onde foram os meus recursos no Azure? ](ui-changes.md) é uma referência para mostrar as interfaces do usuário e os fluxos de trabalho específicos alterados com a mudança para o Azure.
-    * [Grupos clássicos do Intune no Portal do Azure](groups-get-started.md) explica as implicações da mudança nos grupos de segurança do Azure Active Directory para o gerenciamento de grupos.
+>     * [Para onde foram os meus recursos no Azure? ](ui-changes.md) é uma referência para mostrar as interfaces do usuário e os fluxos de trabalho específicos alterados com a mudança para o Azure.
+>     * [Grupos clássicos do Intune no Portal do Azure](groups-get-started.md) explica as implicações da mudança nos grupos de segurança do Azure Active Directory para o gerenciamento de grupos.
 
 Destaques da experiência do Microsoft Intune no Portal do Azure incluem:
 

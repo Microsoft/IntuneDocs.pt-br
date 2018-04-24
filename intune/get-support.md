@@ -1,29 +1,29 @@
 ---
 title: Como obter suporte para o Microsoft Intune
 titlesuffix: Microsoft Intune
-description: "Conecte-se e ligue para o suporte das assinaturas de avaliação e paga do Microsoft Intune."
-keywords: 
+description: Conecte-se e ligue para o suporte das assinaturas de avaliação e paga do Microsoft Intune.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/note-for-both-portals.md)]
+[!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
 
 A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Intune. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível apenas em inglês e japonês. O suporte via telefone e o suporte de cobrança online estão disponíveis em outros idiomas.
 
@@ -34,7 +34,7 @@ A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinat
 
 Como um administrador de TI, é possível emitir um tíquete de suporte do Portal do Azure usando as seguintes etapas:
 
-1. Entre no Portal do Azure (https://portal.azure.com) com suas credenciais de administrador do Intune, escolha o ícone **?** no canto superior direito do portal e selecione **Ajuda + suporte** para ir para a página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank).
+1. Faça logon no Portal do Azure (<https://portal.azure.com>) com suas credenciais de administrador do Intune, escolha o <strong>?</strong> no canto superior direito do portal e selecione <strong>Ajuda + suporte</strong> para ir para a página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
     ![Captura de tela do link de ponto de interrogação da ajuda e suporte do Portal do Azure com o link de suporte Ajuda + suporte realçado](./media/azure-get-support.png)
 
@@ -43,34 +43,34 @@ Como um administrador de TI, é possível emitir um tíquete de suporte do Porta
     ![Captura de tela da página de ajuda e suporte do Portal do Azure com o link Nova solicitação de suporte realçado](./media/azure-support-ticket-link.png)
 
 3. Na folha **Noções básicas**, escolha as seguintes opções para a maioria dos problemas de suporte técnico do Intune:
-    - **Tipo de problema**: **Técnico**
-    - **Serviço**: **Microsoft Intune**
-    - **Plano de suporte**: **Suporte técnico – incluído** (o suporte é gratuito para problemas técnicos do Intune) ou **Premier**
+   - **Tipo de problema**: **Técnico**
+   - **Serviço**: **Microsoft Intune**
+   - **Plano de suporte**: **Suporte técnico – incluído** (o suporte é gratuito para problemas técnicos do Intune) ou **Premier**
     
-    >[!IMPORTANT]
-    >- Se você é um **cliente Premier** e não vir o **Plano de suporte: Premier**, entre em contato com seu Gerente de conta técnico para obter ajuda para vincular seu contrato com o locatário.
-    >- O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Para examinar os detalhes da oferta de Suporte Premier, consulte a documentação [Descrição dos Serviços](https://enterprise.microsoft.com/en-us/services/services-list/), seção 5.3.3 “Serviços de Consultoria”.
+     >[!IMPORTANT]
+     >- Se você é um **cliente Premier** e não vir o **Plano de suporte: Premier**, entre em contato com seu Gerente de conta técnico para obter ajuda para vincular seu contrato com o locatário.
+     >- O suporte para Intune, e para Intune quando usado com o Configuration Manager, é gratuito. Para examinar os detalhes da oferta de Suporte Premier, consulte a documentação [Descrição dos Serviços](https://enterprise.microsoft.com/en-us/services/services-list/), seção 5.3.3 “Serviços de Consultoria”.
 
-    Escolha **Avançar** para continuar.
+     Escolha **Avançar** para continuar.
 
 4. Na folha **Problema**, para verificar se a sua solicitação está sendo tratada pelo especialista certo para o seu problema, selecione as seguintes opções:
 
-    - **Gravidade**
-    - **Tipo de Problema**
-    - **Categoria**
+   - **Gravidade**
+   - **Tipo de Problema**
+   - **Categoria**
 
-    Esses detalhes também nos permitem fornecer **Ajuda relacionada** que pode resolver o problema sem precisar abrir um tíquete.
+     Esses detalhes também nos permitem fornecer **Ajuda relacionada** que pode resolver o problema sem precisar abrir um tíquete.
 
-    ![Captura de tela da página de ajuda e suporte do Portal do Azure com os Itens do problema preenchidos e exibindo soluções com base no problema](./media/support-need-solutions.png)
+     ![Captura de tela da página de ajuda e suporte do Portal do Azure com os Itens do problema preenchidos e exibindo soluções com base no problema](./media/support-need-solutions.png)
 
-    Forneça as informações abaixo para ajudar equipe de suporte a pesquisar e resolver o problema:
+     Forneça as informações abaixo para ajudar equipe de suporte a pesquisar e resolver o problema:
     
-    - **Detalhes**
-    - **Data**
-    - **Hora**
-    - **Dados complementares**
+   - **Detalhes**
+   - **Data**
+   - **Hora**
+   - **Dados complementares**
 
-    Escolha **Avançar**.
+     Escolha **Avançar**.
 
 5. Forneça as **Informações de contato** para esta solicitação de suporte. O suporte da Microsoft usará essas informações para entrar em contato com você.
 6. Escolha **Criar** para enviar sua solicitação de suporte.

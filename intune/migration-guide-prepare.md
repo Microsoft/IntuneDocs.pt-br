@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Microsoft Intune para o MDM (gerenciamento de dispositivo móvel)
 
@@ -55,23 +55,23 @@ Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requ
 
 ### <a name="what-is-your-device-security-policy"></a>Qual é sua política de segurança de dispositivo?
 
--   Você precisa de criptografia no nível do dispositivo?
+- Você precisa de criptografia no nível do dispositivo?
 
--   Quais são seus comprimentos de código PIN/senha do dispositivo atuais?
+- Quais são seus comprimentos de código PIN/senha do dispositivo atuais?
 
--   Você precisa desativar recursos do dispositivo, ou restringir determinados comportamentos do dispositivo? Você pode controlar várias configurações específicas à plataforma com perfis de configuração do dispositivo, por exemplo:
-      - Desabilitar a câmera
-      - Bloqueio para o modo de aplicativo único<br/>
+- Você precisa desativar recursos do dispositivo, ou restringir determinados comportamentos do dispositivo? Você pode controlar várias configurações específicas à plataforma com perfis de configuração do dispositivo, por exemplo:
+    - Desabilitar a câmera
+    - Bloqueio para o modo de aplicativo único<br/>
 
--   Para quais tipos de autenticação você precisa dar suportar? Se você precisar da autenticação baseada em certificado, quais são os tipos de certificados que devem ser provisionados?
+- Para quais tipos de autenticação você precisa dar suportar? Se você precisar da autenticação baseada em certificado, quais são os tipos de certificados que devem ser provisionados?
   - O Intune pode provisionar certificados com os perfis de acesso aos recursos dos dispositivos registrados.
-    -   Para qual tipo de infraestrutura de PKI (Infraestrutura de chave pública) você precisa oferecer suporte?
-<br></br>
--   Você precisa oferecer suporte à VPN (Rede virtual privada) no nível do aplicativo ou dispositivo?
+  -   Para qual tipo de infraestrutura de PKI (Infraestrutura de chave pública) você precisa oferecer suporte?
+  <br></br>
+- Você precisa oferecer suporte à VPN (Rede virtual privada) no nível do aplicativo ou dispositivo?
 
-    -   O Intune pode provisionar as configurações de VPN para provedores de VPN de terceiros.
-<br/><br/>
--   É possível fazer exceções temporárias para certos requisitos a fim de evitar o tempo de inatividade? Ou os dispositivos com acesso sempre devem atender a todos os requisitos de segurança?
+  -   O Intune pode provisionar as configurações de VPN para provedores de VPN de terceiros.
+  <br/><br/>
+- É possível fazer exceções temporárias para certos requisitos a fim de evitar o tempo de inatividade? Ou os dispositivos com acesso sempre devem atender a todos os requisitos de segurança?
 
 ## <a name="next-steps"></a>Próximas etapas
 Leia estes [estudos de caso](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores diferentes da indústria para ver como as organizações avaliaram seus requisitos de gerenciamento de dispositivo móvel.

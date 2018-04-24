@@ -1,29 +1,29 @@
 ---
 title: Perfis de provisionamento de aplicativo iOS no Microsoft Intune
-titlesuffix: 
-description: "O Intune fornece as ferramentas para atribuir de forma proativa um novo perfil de provisionamento a dispositivos que têm aplicativos que estão se aproximando da expiração."
-keywords: 
+titlesuffix: ''
+description: O Intune fornece as ferramentas para atribuir de forma proativa um novo perfil de provisionamento a dispositivos que têm aplicativos que estão se aproximando da expiração.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d6394af9affd5087aaf26489be4b49e84568d6e1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Usar perfis de provisionamento móvel do iOS no Intune para impedir que os aplicativos expirem
+# <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usar os perfis de provisionamento de aplicativo iOS para impedir que os aplicativos expirem
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introdução
 
@@ -36,6 +36,7 @@ Os aplicativos de linha de negócios do iOS da Apple atribuídos a iPhones e iPa
 A empresa de assinatura de certificado usada para assinar aplicativos normalmente tem duração de três anos. No entanto, o perfil de provisionamento expira após um ano. Enquanto o certificado ainda for válido, o Intune fornecerá as ferramentas para atribuir proativamente um novo perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração.
 Depois que o certificado expirar, você deverá assinar o aplicativo novamente com um novo certificado e inserir um novo perfil de provisionamento com a chave do novo certificado.
 
+Como administrador, você pode incluir e excluir grupos de segurança para atribuir a configuração de provisionamento de aplicativo do iOS. Por exemplo, você pode atribuir uma configuração de provisionamento de aplicativo iOS a Todos os Usuários, mas excluir um grupo executivo.
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Como criar um perfil de provisionamento de aplicativo móvel iOS
 

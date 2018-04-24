@@ -1,28 +1,28 @@
 ---
-title: "Criar perfil de certificados no Microsoft Intune – Azure | Microsoft Docs"
-description: "Para seus dispositivos, adicionar ou criar um perfil de certificado por meio da configuração do ambiente de certificado SCEP ou PKCS, exportar o certificado público, criar o perfil no Portal do Azure e, em seguida, atribuir SCEP ou PKCS aos perfis de certificado no Microsoft Intune no Portal do Azure"
-keywords: 
+title: Criar perfil de certificados no Microsoft Intune – Azure | Microsoft Docs
+description: Para seus dispositivos, adicionar ou criar um perfil de certificado por meio da configuração do ambiente de certificado SCEP ou PKCS, exportar o certificado público, criar o perfil no Portal do Azure e, em seguida, atribuir SCEP ou PKCS aos perfis de certificado no Microsoft Intune no Portal do Azure
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para seus dispositivos no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Ao conceder aos usuários acesso a recursos corporativos por meio de VPN, Wi-Fi ou perfis de email, você pode autenticar essas conexões usando certificados. Ao usar certificados, não é necessário inserir nomes de usuário e senhas para autenticar conexões
 
