@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Leia sobre as configurações de VPN no Intune
 
@@ -93,6 +93,7 @@ Para obter mais informações sobre como criar XML EAP personalizado, consulte [
 ## <a name="apps-and-traffic-rules"></a>Regras de Aplicativos e Tráfego
 
 **Restringir a conexão VPN a esses aplicativos**: habilite esta configuração se você quiser que apenas alguns aplicativos usem a conexão VPN.
+
 **Aplicativos associados**: insira uma lista de aplicativos que usam a conexão VPN automaticamente. O tipo de aplicativo determina o identificador do aplicativo. Para um aplicativo universal, insira o nome da família de pacotes. Para um aplicativo da área de trabalho, insira o caminho do arquivo do aplicativo.
 
 >[!IMPORTANT]

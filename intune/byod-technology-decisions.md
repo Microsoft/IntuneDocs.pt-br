@@ -3,7 +3,7 @@ title: Decisões de tecnologia para BYOD com EMS
 description: Principais decisões de tecnologia para habilitar BYOD e proteger dados corporativos com o Microsoft Enterprise Mobility + Security.
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisões de tecnologia para habilitar BYOD com Microsoft Enterprise Mobility + Security (EMS)
 
@@ -78,6 +78,6 @@ Ainda assim, muitas organizações costumam ter riscos específicos com os quais
 |Compartilhamento ou salvamento acidental de dados em locais não protegidos | Desabilitar a impressão | N/D|
 
 ## <a name="next-steps"></a>Próximas etapas
-Agora é hora de decidir se você pretende habilitar BYOD em sua organização focando em gerenciamento de dispositivos, gerenciamento de aplicativo ou uma combinação dos dois. A opção de implementação é sua e você pode ter certeza de que os recursos de identidade e de segurança disponíveis com o Azure AD ficarão disponíveis não importa qual você escolher.
+Agora é hora de decidir se você pretende habilitar BYOD em sua organização focando em gerenciamento de dispositivos, gerenciamento de aplicativo ou uma combinação dos dois. A opção de implementação é sua e você pode ter certeza de que os recursos de identidade e de segurança disponíveis com o Azure AD ficarão disponíveis não importa qual você escolher.  
 
 Use o [Guia de Planejamento](planning-guide.md) do Intune para mapear ao próximo nível de planejamento.

@@ -3,8 +3,8 @@ title: Criar e implantar a política de proteção do aplicativo da WIP (Proteç
 titlesuffix: Microsoft Intune
 description: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) com o Microsoft Intune
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: doubeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 821ce2c9992d32195b95e766f96bea7322ec2e7e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 

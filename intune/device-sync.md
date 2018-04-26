@@ -2,8 +2,8 @@
 title: Sincronizar dispositivos com o Microsoft Intune – Azure | Micrososft Docs
 description: Sincronize dispositivos registrados ou gerenciados com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui as etapas a serem sincronizadas usando o portal do Azure e lista os códigos de erro que permitem tentar novamente.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c098c3d7f71a45830f45877f5ce794d9e112b5e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
 
