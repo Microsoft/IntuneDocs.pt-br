@@ -3,10 +3,10 @@ title: Exceções da política de transferência de dados para aplicativos
 titleSuffix: Microsoft Intune
 description: Crie exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune
 
@@ -47,9 +47,18 @@ Para uma política destinada ao Android, você pode configurar as exceções de 
 ### <a name="example"></a>Exemplo
 Ao adicionar o pacote **Webex** como uma exceção à política de transferência de dados de MAM, os links do Webex, em uma mensagem de email do Outlook gerenciada, terão permissão para abrir diretamente no aplicativo Webex. A transferência de dados permanecerá restrita em outros aplicativos não gerenciados.
 
-- Exemplo do **Webex** do iOS: para isentar o aplicativo **Webex** e permitir que ele seja invocado por aplicativos gerenciados do Intune, você deve adicionar uma exceção de transferência de dados à cadeia de caracteres a seguir: <code>wbx</code>.
+- Exemplo do **Webex** do iOS: para isentar o aplicativo **Webex** e permitir que ele seja invocado por aplicativos gerenciados do Intune, você deve adicionar uma exceção de transferência de dados à cadeia de caracteres a seguir: <code>wbx</code>
+    
+ - Exemplo do **Maps** do iOS: para isentar o aplicativo nativo do **Maps** e permitir que ele seja invocado por aplicativos gerenciados do Intune, você deve adicionar uma exceção de transferência de dados à cadeia de caracteres a seguir: <code>maps</code>
 
-- Exemplo do **Webex** do Android: para isentar o aplicativo **Webex** e permitir que ele seja invocado por aplicativos gerenciados do Intune, você deve adicionar uma exceção de transferência de dados à cadeia de caracteres a seguir: <code>com.cisco.webex.meetings</code>. 
+- Exemplo do **Webex** do Android: para isentar o aplicativo **Webex** e permitir que ele seja invocado por aplicativos gerenciados do Intune, você deve adicionar uma exceção de transferência de dados à cadeia de caracteres a seguir: <code>com.cisco.webex.meetings</code>
+    
+- Exemplo de **SMS** do Android: para isentar o aplicativo nativo de **SMS** de modo que ele possa ser chamado por aplicativos gerenciados pelo Intune em dispositivos Android e aplicativos de mensagens diferentes, você deve adicionar exceções de transferência de dados para as seguintes cadeias de caracteres: 
+    <code>com.google.android.apps.messaging</code>
+    
+    <code>com.android.mms</code>
+    
+    <code>com.samsung.android.messaging</code>
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -3,8 +3,8 @@ title: Gerenciar scripts do PowerShell no Microsoft Intune para dispositivos Win
 titlesuffix: ''
 description: Aprenda a carregar scripts do PowerShell no Microsoft Intune para executar em dispositivos Windows 10.
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerenciar scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gerenciamento do Intune permite que você carregue scripts do PowerShell no Intune para serem executados em dispositivos Windows 10. A extensão de gerenciamento complementa os recursos de gerenciamento de dispositivo móvel (MDM) do Windows 10 e facilita a mudança para o gerenciamento moderno.
@@ -33,8 +33,8 @@ A extensão de gerenciamento do Intune complementa os recursos de MDM internos d
 
 ## <a name="prerequisites"></a>Pré-requisitos
 A extensão de gerenciamento do Intune tem os seguintes pré-requisitos:
-- Os dispositivos devem ser associados ao Azure AD
-- Os dispositivos devem executar o Windows 10 versão 1607 ou posterior
+- Os dispositivos devem ser associados ao Azure AD. Isso não inclui dispositivos ingressados no AD Híbrido.
+- Os dispositivos devem executar o Windows 10, versão 1607 ou posteriores.
 
 ## <a name="create-a-powershell-script-policy"></a>Criar uma política de script do PowerShell 
 1. Entre no [portal do Azure](https://portal.azure.com).
@@ -43,7 +43,7 @@ A extensão de gerenciamento do Intune tem os seguintes pré-requisitos:
 4. No painel **Configuração do Dispositivo**, escolha **Gerenciar** > **Scripts do PowerShell**.
 5. No painel **Scripts do PowerShell**, escolha **Adicionar**.
 6. No painel **Adicionar Script do PowerShell**, insira um **Nome** e uma **Descrição** para o script do PowerShell.
-7. Para **Local do script**, procure pelo script do PowerShell. O script deve ter menos de 10 KB (ASCII) ou 5 KB (Unicode).
+7. Para **Local do script**, procure pelo script do PowerShell. O script deve ter menos de 200 KB.
 8. Escolha **Configurar** e, em seguida, escolha se deseja executar o script com as credenciais do usuário no dispositivo (**Sim**) ou com o contexto de sistema (**Não**). Por padrão, o script é executado no contexto do sistema. Selecione **Sim**, a menos que seja necessário executar o script no contexto do sistema. 
   ![Adicionar painel de script do PowerShell](./media/mgmt-extension-add-script.png)
 9. Escolha se o script deve ser assinado por um distribuidor confiável (**Sim**). Por padrão, não há nenhum requisito para o script ser assinado. 

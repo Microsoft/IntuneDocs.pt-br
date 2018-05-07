@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aed2bec6e6fea40fdbd78bc487896d167d036f06
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5a7213608a8147178633ccd8129ab40eef5d4a15
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -33,36 +33,34 @@ O Portal da Empresa do Microsoft Intune é o local em que os usuários acessam o
 Personalizar o Portal da Empresa ajuda a fornecer uma experiência familiar e útil para os usuários finais. Para isso, na carga de trabalho **Aplicativos móveis**, escolha **Configurar** > **Identidade Visual do Portal de Empresa** e defina as configurações necessárias.      
 
 ## <a name="company-contact-information-and-privacy-statement"></a>Declaração de privacidade e informações de contato de empresa        
-O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e as informações de contato são exibidos para os usuários na tela **Contatar TI** do Portal da Empresa. A política de privacidade é exibida quando um usuário clica no link de privacidade.        
+O nome da empresa é exibido como o título do Portal da Empresa. Os detalhes e as informações de contato são exibidos para os usuários na tela **Contatar TI** do Portal da Empresa. A política de privacidade é exibida quando um usuário clica no link de privacidade.
+
+Os campos marcados com um asterisco (*) são obrigatórios.       
 
 
-|                   Nome do campo                   | Comprimento máx. |                                                                                                 Mais informações                                                                                                 |
-|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         <strong>Nome da empresa</strong>          |     40     |                                                                            Este é o nome exibido como título do Portal da Empresa.                                                                            |
-|  <strong>Nome do contato do departamento de TI</strong>   |     40     |                                                                         Esse nome é exibido na página <strong>Contatar TI</strong>.                                                                          |
-|  <strong>Telefone do departamento de TI</strong>   |     20     |                                                                    Este número de contato é exibido na página <strong>Contatar TI</strong>.                                                                     |
-|  <strong>Endereço de email do departamento de TI</strong>  |     40     |                       Este endereço de contato é exibido na página <strong>Contatar TI</strong>. Você deve inserir um endereço de email válido no formato <strong>alias@domainname.com</strong>.                       |
-|    <strong>Informações adicionais</strong>     |    120     |                                                                                Exibido na página <strong>Contatar TI</strong>.                                                                                |
-| <strong>URL da política de privacidade da empresa</strong> |     79     | Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. É necessário inserir uma URL válida no formato <strong><https://www.contoso.com></strong>. |
+| Nome do campo | Comprimento máx. | Mais informações |
+|---|---|---|
+|**Nome da empresa**| 40 | Este é o nome exibido como título do Portal da Empresa. |
+|**Nome do contato do departamento de TI** | 40 | Esse nome é exibido na página **Contatar TI**. |
+|**Telefone do departamento de TI** | 20 | Este número de contato é exibido na página **Contatar TI**. |
+|**Endereço de email do departamento de TI**| 40 | Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato `alias@domainname.com`. |
+| **Informações adicionais**|    120     | Exibido na página **Contatar TI**. |
+| **URL da política de privacidade da empresa** |     79     | Você pode especificar a política de privacidade de sua própria empresa que será exibida quando os usuários clicarem nos links de privacidade do Portal da Empresa. Você deve inserir uma URL válida no formato `<https://www.contoso.com>`. |
 
 ## <a name="support-contacts"></a>Contatos de suporte     
 O site de suporte é exibido para os usuários no Portal da Empresa para que eles possam acessar o suporte online.        
 
-
-
-|Nome do campo|Comprimento máx.|Mais informações|        
-|-|-|-|     
-|**URL do site de suporte**|150|Se tiver um site de suporte que queira que os usuários usem, especifique o URL aqui. A URL deve estar no formato **https://www.contoso.com**. Se você não especificar uma URL, nada será exibido no site de suporte da página **Contatar TI**, no Portal da Empresa.|        
-|**Nome do site de suporte**|40|Este é o nome amigável exibido para a URL do site de suporte. Se você especificar uma URL do site de suporte e nenhum nome amigável, Ir para o site da TI será exibido na página **Contatar IT** do Portal da Empresa.       
+|Nome do campo|Comprimento máx.|Mais informações|
+|---|---|---|
+|**URL do site de suporte**|150|Se tiver um site de suporte que queira que os usuários usem, especifique o URL aqui. A URL deve estar no formato **https://www.contoso.com**. Se você não especificar uma URL, nada será exibido no site de suporte da página **Contatar TI**, no Portal da Empresa.|
+|**Nome do site de suporte**|40|Este é o nome amigável exibido para a URL do site de suporte. Se você especificar uma URL do site de suporte e nenhum nome amigável, Ir para o site da TI será exibido na página **Contatar IT** do Portal da Empresa.
 
 ## <a name="company-branding-customization"></a>Personalização da identidade visual da empresa       
 Você pode personalizar o Portal da Empresa com o logotipo e o nome da empresa, uma cor de tema e um segundo plano.     
 
-
-
-|Nome do campo|Mais informações|       
-|-|-|       
-|**Cor de tema**|Selecione uma cor de tema para aplicar ao Portal da Empresa. Você pode escolher entre o seletor de cor ou inserir um código hexadecimal específico.|      
-|**Mostrar logotipo da empresa**|Ao habilitar esta opção, você pode carregar o logotipo da empresa para ser exibido no Portal da Empresa. Você pode carregar dois logotipos: um que será exibido quando o segundo plano do Portal da Empresa for branco e outro que será exibido quando o segundo plano estiver usando a sua cor de tema selecionada. Cada logotipo deve ser um tipo de arquivo .png ou .jpg e ter uma resolução máxima de 400 x 100 pixels e ter 750 KB ou menos em tamanho.<br>Também é possível mostrar o nome da empresa que você inseriu ao lado do logotipo carregado.|      
+|Nome do campo|Mais informações|
+|---|---|
+|**Cor de tema**|Selecione uma cor de tema para aplicar ao Portal da Empresa. Você pode escolher entre o seletor de cor ou inserir um código hexadecimal específico.|
+|**Mostrar logotipo da empresa**|Ao habilitar esta opção, você pode carregar o logotipo da empresa para ser exibido no Portal da Empresa. Você pode carregar dois logotipos: um que será exibido quando o segundo plano do Portal da Empresa for branco e outro que será exibido quando o segundo plano estiver usando a sua cor de tema selecionada. Cada logotipo deve ser um tipo de arquivo .png ou .jpg e ter uma resolução máxima de 400 x 100 pixels e ter 750 KB ou menos em tamanho.<br>Também é possível mostrar o nome da empresa que você inseriu ao lado do logotipo carregado.|
 
 Depois de salvar suas alterações, você pode escolher **Visualizar as configurações no Portal da Web Intune** para ver a aparência de suas configurações.

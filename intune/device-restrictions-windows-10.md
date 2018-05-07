@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrição de dispositivo para configurações do Windows 10 (e mais recentes) no Intune
 Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.
@@ -370,6 +370,11 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
 - **URI de recurso de serviço de impressão** – URI de recurso OAuth para serviço de impressão conforme configurado no Portal do Azure.
 - **Máximo de impressoras para consulta (Somente móvel)** – número máximo de impressoras que devem ser consultadas de um ponto de extremidade de descoberta.
 - **URI de recurso de serviço de descoberta de impressora** – URI de recurso do OAuth para serviço de descoberta de impressora, conforme configurado no Portal do Azure.
+
+## <a name="local-printer"></a>Impressora local
+- **Impressoras** – Lista de impressoras locais que foram adicionadas.
+- **Impressora padrão** – Defina a impressora padrão.
+- **Acesso de usuário à adição de novas impressoras** – Permita ou bloqueie o uso de impressoras locais.
 
 ## <a name="reporting-and-telemetry"></a>Relatório e telemetria
 
