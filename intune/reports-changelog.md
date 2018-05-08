@@ -15,17 +15,25 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11585adf570ba9155861f89688c33ac6cecbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1a44ac33542675457864eead5915a3150e592b1b
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manter-se atualizado sobre as atualizações para o Intune Data Warehouse.
+
+## <a name="1805"></a>1805
+_Lançamento: maio de 2018_
+
+### <a name="correction-to-device-count-in-devices-collection"></a>Correção da contagem de dispositivos na coleção **Dispositivos** 
+
+Fizemos uma correção na coleção de **Dispositivos** que pode diminuir a contagem total de dispositivos filtrados pelo atributo `isDeleted`. Essa lista é resultado da correção, e não um erro. Para saber mais sobre a coleção de **Dispositivos**, confira [Referência para entidades de dispositivo](reports-ref-devices.md). 
+
 
 ## <a name="1801"></a>1801
 _Lançado em janeiro de 2018_
@@ -66,7 +74,7 @@ _Lançado em outubro de 2017_
 
 Agora você pode criar relatórios e visualizações de dados usando as informações de associação de dispositivo de usuário que associam as coleções de entidades do usuário e do dispositivo. O modelo de dados pode ser acessado por meio do arquivo do Power BI (PBIX) recuperado da página do Intune Data Warehouse, por meio do ponto de extremidade OData ou desenvolvendo um cliente personalizado. Para saber mais, veja a [Associação de dispositivo de usuário](reports-ref-user-device.md).
 
-### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Novas entidades no modelo de dados de Data Warehouse <!-- 1479526 --><!-- -->
+### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Novas entidades no modelo de dados do Data Warehouse <!-- 1479526 --><!-- -->
 
  - A entidade, [**UserDeviceAssociation**](reports-ref-user-device.md), adicionada. **UserDeviceAssociation** contém associações de dispositivo de usuário em sua organização. Agora você pode criar relatórios e visualizações de dados usando as informações de associação de dispositivo de usuário que associam as coleções de entidades do usuário e do dispositivo.  
  - A entidade, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), adicionada. **IntuneManagementExtension** contém entidade para dispositivos móveis que acompanham informações como versão e status de instalação.

@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/26/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b349a61d61288f700294e04d029d825afba13445
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d1825d99243654c9fecac7729153a95234d435ff
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Configurações de dispositivo personalizadas para dispositivos que executam o Windows Holographic for Business no Intune
 
@@ -89,14 +89,14 @@ As configurações a seguir são úteis para dispositivos que executam o Windows
 ---
 |OMA-URI|Tipo de dados  |
 |---------|---------|
-|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Importante**<br>Você deve ler e aceitar os Termos de Licença atualizados em nome dos usuários finais. Se não fizer isso, ocasionará uma violação de obrigações contratuais ou legais.|Nó para aprovações de atualização e aceitação de Termos de Licença em nome do usuário final.|
+|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br><br>**Importante**<br>Você deve ler e aceitar os Termos de Licença atualizados em nome dos usuários finais. Se não fizer isso, ocasionará uma violação de obrigações contratuais ou legais.|Nó para aprovações de atualização e aceitação de Termos de Licença em nome do usuário final.<br/><br/>Para saber mais, confira [Atualizar CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp).|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
 ---
 |OMA-URI|Tipo de dados  |
 |---------|---------|
-|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Importante**<br>O artigo AppLocker CSP usa exemplos com XML de escape. Para definir as configurações com perfis personalizados do Intune, você deve usar XML sem formatação.|Cadeia de caracteres<br>Para obter mais informações, veja [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
+|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Importante**<br>O artigo AppLocker CSP usa exemplos com XML de escape. Para definir as configurações com perfis personalizados do Intune, você deve usar XML sem formatação.|Cadeia de caracteres<br>Para saber mais, confira [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
 
 ## <a name="find-the-policies-you-can-configure"></a>Localizar as políticas que você pode configurar
 

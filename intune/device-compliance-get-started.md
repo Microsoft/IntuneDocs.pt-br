@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade do dispositivo no Intune
 
@@ -80,6 +80,8 @@ Para usar políticas de conformidade do dispositivo, é necessário o seguinte:
   - Windows 10
 
 - Para relatar o próprio status de conformidade, os dispositivos devem estar registrados no Intune
+
+- Há suporte para dispositivos registrados para um usuário ou dispositivos sem usuário primário. Não há suporte para contextos de vários usuários.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Como as políticas de conformidade do dispositivo no Intune funcionam com o Azure AD
 
@@ -148,9 +150,9 @@ Para dispositivos que estão em conformidade com as regras da política, você p
 Você também pode usar políticas de conformidade do dispositivo sem qualquer acesso condicional. Quando você usa as políticas de conformidade de forma independente, os dispositivos de destino são avaliados e relatados com o status de conformidade. Por exemplo, você pode obter um relatório do número de dispositivos que não estão criptografados ou quais dispositivos estão desbloqueados ou com raiz. Quando você usa políticas de conformidade sem acesso condicional, não há nenhuma restrição de acesso aos recursos da empresa.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Maneiras de implantar políticas de conformidade do dispositivo
-Você pode implantar a política de conformidade para usuários em grupos de usuários ou dispositivos em grupos de dispositivo. Quando uma política de conformidade é implantada para um usuário, os dispositivos dos usuários são verificados quanto à conformidade.
+Você pode implantar a política de conformidade para usuários em grupos de usuários ou dispositivos em grupos de dispositivo. Quando uma política de conformidade é implantada para um usuário, a conformidade de todos os dispositivos do usuário é verificada.
 
-Para dispositivos nos grupos de dispositivo, as **Configurações de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incluem
+As **Configurações de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incluem:
 
 - **Marcar dispositivos sem nenhuma política de conformidade atribuída como**: essa propriedade tem dois valores:
 
@@ -159,7 +161,7 @@ Para dispositivos nos grupos de dispositivo, as **Configurações de política d
 
   Se um dispositivo não tiver uma política de conformidade atribuída, ele será considerado como não estando em conformidade. Por padrão, os dispositivos são marcados como **Não está em conformidade**. Se você usar acesso condicional, recomendamos deixar a configuração padrão como **Não está em conformidade**. Se um usuário final não estiver em conformidade porque uma política não está atribuída, o Portal da Empresa listará `No compliance policies have been assigned`.
 
-- **Detecção avançada de jailbreak**: quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
+- **Detecção avançada de jailbreak**: quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de localização do usuário não são armazenados pelo Intune.
 
   Habilitar essa configuração exige que os dispositivos:
   - Habilitem serviços de localização no nível do sistema operacional
