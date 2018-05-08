@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -70,8 +70,8 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começa
 
 |**SDK do Aplicativo do Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
-|**Android**| Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim – usar o [plug-in Cordova do SDK de Aplicativo do Intune](app-sdk-cordova.md).|
+|**iOS**|Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Não|
+|**Android**| Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Não|
 
 ## <a name="feature-comparison"></a>Comparação de recursos
 Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
