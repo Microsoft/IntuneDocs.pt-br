@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/19/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Configurações de restrição de dispositivo de trabalho no Intune
 
@@ -50,6 +50,12 @@ Este artigo lista as configurações de restrições de dispositivo do Microsoft
    Por exemplo, quando você implanta o aplicativo Gmail em um perfil do Android for Work, é possível impedir que usuários finais adicionem ou removam contas neste perfil de trabalho.
 
 - **Contato com compartilhamento via Bluetooth**: permite o acesso a contatos de trabalho de outro dispositivo, como um carro, emparelhado usando Bluetooth. Por padrão, essa configuração não está configurada e os contatos de perfil de trabalho não são mostrados. Selecione **Habilitar** para permitir esse compartilhamento e mostrar contatos de perfil de trabalho. Essa configuração aplica-se a dispositivos de perfil de trabalho Android no sistema operacional Android v6.0 e mais recentes. Habilitar essa opção pode permitir que determinados dispositivos Bluetooth armazene em cache os contatos do trabalho após a primeira conexão. Desabilitar essa política após um emparelhamento/uma sincronização inicial pode não remover os contatos de trabalho de um dispositivo Bluetooth.
+
+- **Captura de tela**: bloqueia a captura de tela do dispositivo no perfil de trabalho. Ela também impede que o conteúdo seja exibido em dispositivos de vídeo que não tenham uma saída de vídeo segura.
+
+- **Exibir ID do chamador do contato de trabalho no perfil pessoal**: quando esta opção está habilitada (não configurada), os detalhes de contato comercial do chamador são exibidos no perfil pessoal. Quando bloqueada, o número de contato comercial do chamador não é exibido no perfil pessoal. Aplicável ao sistema operacional Android v6.0 e às versões mais recentes.
+
+- **Câmera**: bloqueia a câmera do dispositivo no perfil de trabalho. A câmera no lado pessoal não é afetada pela configuração.
 
 ### <a name="work-profile-password"></a>Senha do perfil de trabalho
 
