@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 4/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o iOS
 
@@ -36,6 +36,7 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 - **Tipo de conexão**: selecione o tipo de conexão VPN na lista de fornecedores a seguir:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
+  - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Pulse Secure**
@@ -43,7 +44,11 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
   - **Citrix**
   - **VPN personalizado**
 
-- **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usará a conexão VPN para acessar arquivos de trabalho, mas usará a rede padrão do hotel para navegação regular na Web.
+    > [!NOTE]
+    > - Os perfis do **Cisco Legacy AnyConnect VPN** são para o aplicativo [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versão 4.0.5x e versões mais antigas
+    > - Os perfis do **Cisco AnyConnect VPN** são para o aplicativo [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versão 4.0.7x e versões mais recentes
+
+- **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.
 
 ## <a name="custom-vpn-settings"></a>Configurações de VPN personalizado
 
@@ -75,3 +80,6 @@ Se você tiver selecionado **VPN Personalizada** como o tipo de conexão, defina
 - **Script de configuração automática**: use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o arquivo de configuração.
 - **Endereço**: insira o endereço IP do nome do host totalmente qualificado do servidor proxy.
 - **Número da porta**: insira o número da porta associada ao servidor proxy.
+
+## <a name="next-step"></a>Próxima etapa
+[Criar perfis de VPN no Intune](vpn-settings-configure.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6ca8108924c6c062da0d0ef56ab5b68635dd9ca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b003fde011fd3a727c7c7a163fedb1dae6779425
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---april-2018"></a>A Edição Antecipada do Microsoft Intune – abril de 2018
 
@@ -39,6 +39,16 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 ## <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
 
 <!-- 1804 start -->
+
+### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>Mostrar a identificação do chamador no perfil pessoal - Android for Work <!--1098984 -->
+Ao usar um perfil particular em um dispositivo, os usuários finais não poderão ver os detalhes da identificação do chamador de um contato de trabalho. 
+
+Com essa atualização, há uma nova configuração em **Android for Work** > **Restrições de dispositivo** > **Configurações do perfil de trabalho**:
+- Exibir a identificação do chamador do contato de trabalho no perfil pessoal
+
+Quando habilitado (não configurado), os detalhes de contato comercial do chamador são exibidos no perfil pessoal. Quando bloqueado, o número de contato comercial do chamador é exibido no perfil pessoal. 
+
+Aplica-se a: dispositivos Android de perfil de trabalho no sistema operacional Android v6.0 e mais recentes
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802--"></a>Novas configurações do Windows Defender Credential Guard adicionadas às configurações de proteção de ponto de extremidade <!--1102252 --><!--from 1802-->
 
@@ -112,6 +122,9 @@ No momento, perfis de implantação do AutoPilot podem ser atribuídos a disposi
 
 ### <a name="play-sounds-on-ios-when-in-lost-mode----1629303---"></a>Tocar sons no iOS quando no modo Perdido <!-- 1629303 -->
 Quando dispositivos iOS supervisionados estiverem no [modo Perdido](device-lost-mode.md) do MDM (gerenciamento de dispositivo móvel), você poderá tocar um som (**Dispositivos** > **Todos os dispositivos** > selecione um dispositivo iOS > **Visão geral** > **Mais**). O som continua sendo reproduzido até o dispositivo ser removido do modo perdido ou um usuário desabilitar o som no dispositivo. Aplica-se a dispositivos iOS 9.3 e mais recentes.
+
+### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune reinstalará os aplicativos necessários que são desinstalados por usuários <!-- 1947010 -->
+Se um usuário final desinstalar um aplicativo necessário, o Intune reinstalará automaticamente o aplicativo dentro de 24 horas em vez de aguardar o ciclo de reavaliação de 7 dias.
 
 ### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Use um nome de entidade personalizado no certificado SCEP <!-- 2064190 -->
 Você poderá usar o nome comum **OnPremisesSamAccountName** em uma entidade personalizada em um perfil de certificado SCEP. Por exemplo, você pode usar `CN={OnPremisesSamAccountName})`.

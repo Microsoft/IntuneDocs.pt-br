@@ -1,12 +1,11 @@
 ---
-title: Criar uma política de conformidade do dispositivo macOS no Microsoft Intune
-titleSuffix: ''
-description: Crie uma política de conformidade de dispositivo do Microsoft Intune para dispositivos macOS, para que você possa especificar os requisitos que um dispositivo precisa cumprir para estar em conformidade.
+title: Criar política de conformidade para dispositivo macOS no Microsoft Intune – Azure | Microsoft Docs
+description: Criar ou configurar uma política de conformidade de dispositivo do Microsoft Intune para dispositivos macOS para usar a Proteção de Integridade do Sistema, definir a versão mínima e máxima do sistema operacional, escolher seus requisitos de senha e criptografar o armazenamento de dados.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +13,21 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Criar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
-
+# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Uma política de conformidade de dispositivos do Intune para macOS especifica as regras e configurações que dispositivos macOS precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, bem como obter relatórios de dispositivos e executar ações em caso de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune.
-
-## <a name="before-you-begin"></a>Antes de começar
-
-Antes de criar e atribuir uma política de conformidade do dispositivo, examine os conceitos da política de conformidade do dispositivo do Intune.
-
-- Para saber mais sobre as políticas de conformidade do dispositivo, consulte a [introdução às políticas de conformidade do dispositivo](device-compliance.md).
-
-> [!IMPORTANT]
-> Você precisa criar políticas de conformidade do dispositivo para cada plataforma. As configurações da política de conformidade do dispositivo do Intune dependem das funcionalidades de plataforma, que são configurações expostas por meio do protocolo MDM.
+Uma política de conformidade de dispositivos macOS do Intune determina as regras e configurações que os dispositivos macOS precisam cumprir para estarem em conformidade. Quando você usa as políticas de conformidade de dispositivo, é possível permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. As políticas de conformidade de dispositivo de cada plataforma podem ser criadas no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
 A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional:
 
+---------------------------
 
 | Configuração de política | macOS 10.11 e posterior |
 | --- | --- |
@@ -45,102 +35,65 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 | **Criptografia de dispositivo** | Corrigida (pela definição do PIN) |
 | **Perfil de email** | Em Quarentena |
 |**Versão mínima do SO** | Em Quarentena |
-| **Versão máxima do SO** | Em Quarentena |  
+| **Versão máxima do SO** | Em Quarentena |
 
+---------------------------
 
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. (Por exemplo, o usuário é forçado a definir um PIN.)
+**Remediado** = o sistema operacional do dispositivo impõe a conformidade. Por exemplo, o usuário é forçado a definir um PIN.
 
 **Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando o dispositivo não é compatível, ocorrem as seguintes ações:
 
 - O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
 - O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
 
-## <a name="macos-compliance-policy-settings"></a>Configurações das políticas de conformidade do macOS
+## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade do dispositivo
 
-Você tem categorias diferentes com configurações diferentes para escolher ao criar uma nova conformidade do dispositivo com o Intune:
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Para **Plataforma**, selecione **macOS**. Escolha **Definição de Configurações** para inserir as configurações de **Integridade do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando terminar, selecione **OK** e **Criar**.
 
-- Integridade do Dispositivo
+## <a name="device-health"></a>Integridade do Dispositivo
 
-- Propriedades do Dispositivo
+- **Exigir uma proteção de integridade do sistema**: **Exigir** que os dispositivos macOS tenham a [Proteção de Integridade do Sistema](https://support.apple.com/HT204899) habilitada.
 
-- Segurança do Sistema
+## <a name="device-properties"></a>Propriedades do dispositivo
 
-### <a name="device-health"></a>Integridade do Dispositivo
+- **Sistema operacional mínimo**: quando um dispositivo não atender ao requisito mínimo da versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seu dispositivo e, depois disso, poderá ter acesso aos recursos da empresa.
+- **Versão do sistema operacional máxima**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado. O usuário deverá contatar seu administrador de TI. Até que haja uma alteração de regra para permitir a versão do sistema operacional, este dispositivo não poderá acessar os recursos da empresa.
 
-- **Exigir uma proteção de integridade do sistema** – defina como **Exigir** para verificar se os dispositivos macOS têm a proteção de integridade do sistema habilitada.
+## <a name="system-security-settings"></a>Configurações de segurança do sistema
 
-### <a name="device-properties"></a>Propriedades do dispositivo
+### <a name="password"></a>Senha
 
-- **Versão do sistema operacional mínima** – quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário pode optar por atualizar o dispositivo. Depois disso, ele pode acessar recursos da empresa.
+- **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo.
+- **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
+- **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
+- **Tipo de senha**: escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
+- **Número de caracteres não alfanuméricos na senha**: Insira o número mínimo de caracteres especiais (&, #, %, ! e assim por diante) que devem ser incluídos na senha.
 
-- **Versão do sistema operacional máxima** – quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e será solicitado que o usuário contate o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+    Definir um número mais alto exige que o usuário crie uma senha mais complexa.
 
-### <a name="system-security-settings"></a>Configurações de segurança do sistema
-
-#### <a name="password"></a>Senha
-
-- **Exigir uma senha para desbloquear dispositivos móveis** – defina como **Exigir** para que os usuários insiram uma senha antes de poder acessar o dispositivo.
-
-- **Senhas simples** – defina como **Bloquear** para que o usuário não possa criar uma senha simples como **1234** ou **1111**.
-
-- **Tamanho mínimo da senha** – especifique o número mínimo de dígitos ou caracteres que a senha do usuário deve ter.
-
-- **Tipo de senha** – especifique se o usuário deve criar uma senha **Alfanumérica** ou **Numérica**.
-
-- **Número de caracteres não alfanuméricos na senha** – se você definir **Tipo de senha necessária** como **Alfanumérica**, use essa configuração para especificar o número mínimo de conjuntos de caracteres que a senha deve conter. 
-
-    > [!NOTE]
-    > Definir um número mais alto exige que o usuário crie uma senha mais complexa.
-
-    > [!IMPORTANT]
-    > Para dispositivos macOS, essa configuração refere-se ao número de caracteres especiais (por exemplo, **!** , **#**, **&amp;**) que devem ser incluídos na senha.
-
-- **Máximo de minutos de inatividade antes que a senha seja exigida** – especifique o tempo ocioso antes que o usuário precise digitar novamente a senha.
-
-- **Expiração da senha (dias)** – selecione o número de dias (entre 1 e 250) antes que a senha expire e seja preciso criar uma nova.
-
-- **Número de senhas anteriores para evitar a reutilização** – especifique o número de senhas usadas anteriormente que não podem ser reutilizadas.
+- **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
+- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
 
     > [!IMPORTANT]
     > Quando o requisito de senha é alterado em um dispositivo macOS, ele não tem efeito até a próxima vez que o usuário alterar sua senha. Por exemplo, se você definir a restrição de comprimento de senha para oito dígitos e o dispositivo macOS atualmente tiver uma senha de seis dígitos, o dispositivo permanecerá em conformidade até a próxima vez que o usuário atualizar a senha no dispositivo.
 
-## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
+### <a name="encryption"></a>Criptografia
 
-1. Vá para o [Portal do Azure](https://portal.azure.com) e entre com suas credenciais do Intune.
-
-2. Quando entrar com êxito, você poderá ver o **Painel do Azure**.
-
-3. Escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
-
-4. Escolha **Intune** e você poderá ver o **Painel do Intune**.
-
-5. Escolha **Conformidade do dispositivo** e, em seguida, escolha **Políticas** em **Gerenciar**.
-
-6. Escolha **Criar política**.
-
-7. Digite um nome, descrição e escolha a plataforma à qual você deseja que essa política se aplique.
-
-8. O painel **Política de conformidade do Mac** é aberto, escolha as categorias de configuração de conformidade do dispositivo **Segurança**, **Integridade do dispositivo** e **Propriedade do dispositivo** para especificar as configurações.
-
-10. Ao acabar de escolher as configurações, escolha **OK** em cada categoria de configuração de conformidade do dispositivo.
-
-11. Escolha **OK** e, em seguida, escolha **Criar**.
+- **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 
-Para atribuir uma política de conformidade aos usuários, escolha uma política que você configurou. As políticas existentes podem ser encontradas no painel **Conformidade do dispositivo – Políticas**.
+1. Escolha uma política que você configurou. As políticas existentes estão em **Conformidade do dispositivo** > **Políticas**.
+2. Escolha a política e as **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
 
-1. Escolha a política de conformidade do dispositivo que você deseja atribuir aos usuários e escolha **Atribuições**. Isso abrirá o painel no qual é possível selecionar os **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+> [!TIP]
+> Por padrão, os dispositivos têm a conformidade verificada a cada oito horas. Mas os usuários podem forçar esse processo por meio do aplicativo de Portal da Empresa do Intune.
 
-2. Escolha **Grupos selecionados** para abrir o painel que exibe os grupos de segurança do Microsoft Azure AD.
-
-3. Escolha **Salvar** para atribuir a política de conformidade para os grupos de segurança do Microsoft Azure AD.
-
-4. Ao terminar de atribuir a política de conformidade do dispositivo aos grupos, você poderá fechar o painel **Atribuições**.
-
-    > [!TIP]
-    > Por padrão, os dispositivos verificam a conformidade a cada oito horas, mas os usuários podem forçar esse processo por meio do aplicativo Portal da Empresa do Intune.
+Você aplicou a política para os usuários. Os dispositivos usados pelos usuários que são direcionados pela política são avaliados quanto à conformidade.
 
 ## <a name="next-steps"></a>Próximas etapas
-
-[Saiba como monitorar políticas de conformidade do dispositivo](compliance-policy-monitor.md)
+[Automatizar email e adicionar ações para dispositivos não compatíveis](actions-for-noncompliance.md)  
+[Monitorar as políticas de conformidade do dispositivo do Intune](compliance-policy-monitor.md)

@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como definir as configurações do Intune para o aplicativo Sala de Aula para iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introdução
-[Sala de aula](https://itunes.apple.com/app/id1085319084) é um aplicativo que ajuda os professores a orientar o aprendizado e controlar os dispositivos dos alunos na sala de aula. Por exemplo, com o aplicativo, um professor pode:
+[Sala de aula](https://itunes.apple.com/app/id1085319084) é um aplicativo que ajuda os professores a orientar o aprendizado e controlar os dispositivos dos alunos na sala de aula. Por exemplo, o aplicativo permite aos professores:
 
 - Abrir aplicativos nos dispositivos de alunos
 - Bloquear e desbloquear a tela do iPad
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - Navegue os iPads dos alunos até um favorito ou capítulo de um livro
 - Exibir a tela do iPad de um aluno em uma Apple TV
 
-Use o perfil de dispositivo **Educação** do Intune iOS e as informações neste tópico para ajudar a configurar o aplicativo Classroom, bem como os dispositivos nos quais você vai usá-lo.
+Para configurar a sala de aula em seu dispositivo, você precisará criar e configurar um perfil de dispositivo de educação no Intune iOS.
 
 ## <a name="before-you-start"></a>Antes de começar
 
 Considere o seguinte antes de começar as configurações:
 
-- Os iPads de professores e alunos devem ser registrados no Intune
+- Os iPads de professores e alunos devem ser registrados no Intune.
 - Verifique se o aplicativo [Sala de Aula da Apple](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) está instalado no dispositivo do professor. Instale o aplicativo manualmente ou use o [Gerenciamento de aplicativo do Intune](app-management.md).
-- Você deve configurar certificados para autenticar conexões entre os dispositivos de professores e de alunos (consulte a Etapa 2)
-- Os iPads de professores e alunos devem estar na mesma rede Wi-Fi e ter o Bluetooth habilitado
-- O aplicativo Sala de Aula é executado em iPads supervisionados com o iOS 9.3 ou posterior
-- Nesta versão, o Intune dá suporte ao gerenciamento de um cenário 1:1 em que cada aluno tem seu próprio iPad dedicado
+- Você deve configurar certificados para autenticar conexões entre os dispositivos de professores e de alunos (veja a Etapa 2, Criar e atribuir um perfil de Educação do iOS no Intune).
+- Os iPads de professores e alunos devem estar na mesma rede Wi-Fi e ter o Bluetooth habilitado.
+- O aplicativo Sala de Aula é executado em iPads supervisionados com o iOS 9.3 ou posterior.
+- Nesta versão, o Intune dá suporte ao gerenciamento de um cenário 1:1 em que cada aluno tem seu próprio iPad dedicado.
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Etapa 1 - Importar os dados da escola para o Azure Active Directory
@@ -82,14 +82,14 @@ Importe as informações no SDS usando um dos seguintes métodos:
 9.  Escolha **Configurações** > **Definir**.
 
 
-Depois, você precisa de certificados para estabelecer uma relação de confiança entre os iPads de professores e alunos. Os certificados são usados para autenticar conexões perfeita e silenciosamente entre os dispositivos sem precisar inserir nomes de usuário e senhas.
+Na próxima seção, você criará certificados para estabelecer uma relação de confiança entre os iPads de professores e alunos. Os certificados são usados para autenticar conexões perfeita e silenciosamente entre os dispositivos sem precisar inserir nomes de usuário e senhas.
 
 >[!IMPORTANT]
 >Os certificados de professores e alunos que você usa devem ser emitidos por CAs (autoridades de certificação) diferentes. Você deve criar duas novas CAs subordinadas conectadas à sua infraestrutura de certificados; uma para professores e outra para alunos.
 
 Perfis de educação iOS dão suporte somente a certificados PFX. Não há suporte para certificados SCEP.
 
-Os certificados que você cria devem oferecer suporte à autenticação de servidor, além da autenticação de usuário.
+Os certificados criados devem oferecer suporte à autenticação de servidor e da autenticação de usuário.
 
 ### <a name="configure-teacher-certificates"></a>Configurar certificados de professor
 
@@ -97,13 +97,15 @@ No painel **Educação**, escolha **Certificados de professor**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configurar o certificado raiz do professor
 
-Em **Certificado raiz do professor**, escolha o botão Procurar para selecionar o certificado raiz de professor com a extensão .cer (DER ou codificado em Base64), ou .P7B (com ou sem cadeia completa).
+Em **Certificado raiz do professor**, escolha o botão Procurar. Selecione o certificado raiz com:
+- Extensão .cer (DER ou codificado na Base64) 
+- Extensão .P7B (com ou sem cadeia completa)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Configurar o certificado PKCS#12 de professor
 
 Em **Certificado PKCS#12 de professor**, configure os seguintes valores:
 
-- **Formato de nome da entidade** – o Intune prefixa automaticamente o nome comum de certificado com **leader**, para o certificado de professores, e **member**, para o certificado de alunos.
+- **Nome da entidade** - o Intune automaticamente inclui prefixos de nomes comuns para certificados de professor com **líder**. Os nomes comuns para certificados de aluno são prefixados com **membro**.
 - **Autoridade de certificação** - uma AC (Autoridade de Certificação) Corporativa que é executada em uma edição Enterprise do Windows Server 2008 R2 ou posterior. Não há suporte para ACs autônomas. 
 - **Nome da autoridade de certificação** - insira o nome do sua autoridade de certificação.
 - **Nome do modelo de certificado** – insira o nome de um modelo de certificado que foi adicionado a uma CA emissora. 
@@ -111,7 +113,7 @@ Em **Certificado PKCS#12 de professor**, configure os seguintes valores:
 - **Período de validade do certificado** – especifique a quantidade de tempo restante antes da expiração do certificado.
 Você pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado em um modelo de certificado for de dois anos, você pode especificar um valor de um ano, mas não de cinco anos. O valor também deve ser inferior ao período de validade restante do certificado da CA emissora.
 
-Quando você terminar de configurar os certificados, clique em **OK**.
+Ao terminar de configurar os certificados, clique em **OK**.
 
 ### <a name="configure-student-certificates"></a>Configurar certificados de aluno
 
@@ -120,13 +122,15 @@ Quando você terminar de configurar os certificados, clique em **OK**.
 
 #### <a name="configure-student-root-certificate"></a>Configurar certificados raiz de aluno
 
-Em **Certificado raiz de aluno**, escolha o botão Procurar para selecionar o certificado raiz de aluno com a extensão .cer (DER ou codificado em Base64), ou .P7B (com ou sem cadeia completa).
+Em **Certificado raiz de aluno**, escolha o botão Procurar. Selecione o certificado raiz com:
+- Extensão .cer (DER ou codificado na Base64) 
+- Extensão .P7B (com ou sem cadeia completa)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Configurar certificado PKCS#12 de aluno
 
 Em **Certificado PKCS#12 de aluno**, configure os seguintes valores:
 
-- **Formato de nome da entidade** – o Intune prefixa automaticamente o nome comum de certificado com **leader**, para o certificado de professores, e **member**, para o certificado de alunos.
+- **Nome da entidade** - o Intune automaticamente inclui prefixos de nomes comuns para certificados de professor com **líder**. Os nomes comuns para certificados de aluno são prefixados com **membro**.
 - **Autoridade de certificação** - uma AC (Autoridade de Certificação) Corporativa que é executada em uma edição Enterprise do Windows Server 2008 R2 ou posterior. Não há suporte para ACs autônomas. 
 - **Nome da autoridade de certificação** - insira o nome do sua autoridade de certificação.
 - **Nome do modelo de certificado** – insira o nome de um modelo de certificado que foi adicionado a uma CA emissora. 
