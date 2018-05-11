@@ -1,25 +1,25 @@
 ---
-title: "Criar política de conformidade de dispositivo de MTD com o Microsoft Intune"
-titlesuffix: 
-description: "Crie uma política de conformidade de dispositivo do Intune que usa os níveis de ameaça do parceiro de MTD para determinar se um dispositivo móvel pode acessar recursos da empresa."
-keywords: 
+title: Criar política de conformidade de dispositivo de MTD com o Microsoft Intune
+titlesuffix: ''
+description: Crie uma política de conformidade de dispositivo do Intune que usa os níveis de ameaça do parceiro de MTD para determinar se um dispositivo móvel pode acessar recursos da empresa.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar uma política de conformidade de dispositivo de MTD (Defesa contra Ameaças Móveis) com o Intune
 
@@ -36,7 +36,7 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 
 -   Configurar a integração do MTD com o Intune
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>Para criar uma política de conformidade de dispositivo MTD
+## <a name="to-create-an-mtd-device-compliance-policy"></a>Para criar uma política de conformidade de dispositivo MTD
 
 1.  Vá para o [Portal do Azure](https://portal.azure.com/) e entre com suas credenciais do Intune.
 
@@ -65,7 +65,7 @@ Pré-requisitos da política de conformidade do dispositivo com MTD:
 > [!IMPORTANT]
 > Se você criar políticas de acesso condicional para o Office 365 ou outros serviços, a avaliação de conformidade do dispositivo será avaliada e os dispositivos que não compatíveis serão impedidos de acessar os recursos corporativos até que a ameaça seja resolvida no dispositivo.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>Atribuir uma política de conformidade de dispositivo MTD
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>Para atribuir uma política de conformidade de dispositivo MTD
 
 Para atribuir uma política de conformidade de dispositivo aos usuários, escolha uma política previamente configurada por você. As políticas existentes podem ser encontradas no painel **Conformidade do dispositivo – políticas**.
 

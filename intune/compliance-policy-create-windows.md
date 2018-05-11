@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivo para dispositivos Windows no Intune
 
@@ -94,7 +94,7 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
     - Símbolos
     - Números
 
-    Definir um número mais alto exige que o usuário crie uma senha mais complexa. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não será avaliada corretamente se o comprimento mínimo da senha tiver mais de oito caracteres ou se o número mínimo de conjuntos de caracteres for maior que dois.
+    Definir um número mais alto exige que o usuário crie uma senha mais complexa. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não é avaliada corretamente quando o comprimento mínimo da senha tem mais de oito caracteres ou o número mínimo de conjuntos de caracteres é maior que dois.
 
 - **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
 - **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
@@ -121,23 +121,23 @@ Veja [CSP do Estado de Integridade](https://docs.microsoft.com/windows/client-ma
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Sistema operacional mínimo necessário**: insira o número de major.minor.build.CU. O número de build.CU deve corresponder à versão retornada pelo comando `ver` ou `winver`.
+- **Versão mínima do SO**: insira a versão mínima permitida no formato de número major.minor.build.revision. O número de build.revision deve corresponder à versão retornada pelo comando `ver` ou `winver`.
 
   Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
-- **Versão máxima do sistema operacional necessário**: insira o número de major.minor.build.CU. O número de build.CU deve corresponder à versão retornada pelo comando `ver` ou `winver`.
+- **Versão máxima do SO**: insira a versão máxima permitida no formato de número major.minor.build.revision. O número de build.revision deve corresponder à versão retornada pelo comando `ver` ou `winver`.
 
   Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
-- **Sistema operacional mínimo necessário para dispositivos móveis**: insira o número de major.minor.build.
+- **Sistema operacional mínimo necessário para dispositivos móveis**: insira a versão mínima permitida, no formato de número major.minor.build.
 
   Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
 
-- **Sistema operacional máximo necessário para dispositivos móveis**: insira o número de major.minor.build.
+- **Sistema operacional máximo necessário para dispositivos móveis**: insira a versão máxima permitida, no número major.minor.build.
 
   Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
-- **Versões de sistema operacional válidas**: insira um intervalo para as versões de sistemas de operacionais aceitáveis, incluindo uma mínima e uma máxima.
+- **Versões de sistema operacional válidas**: insira um intervalo para as versões de sistemas de operacionais aceitáveis, incluindo uma mínima e uma máxima. Também é possível **Exportar** uma lista de arquivos CSV (valores separados por vírgula) desses números de build de SO aceitáveis.
 
 ### <a name="system-security-settings"></a>Configurações de segurança do sistema
 

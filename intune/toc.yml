@@ -255,6 +255,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Aplicativos LOB para Windows
                   href: lob-apps-windows.md
+                - name: Aplicativos de LOB para macOS
+                  href: lob-apps-macos.md
             - name: Aplicativos Web
               href: web-app.md
             - name: Aplicativos internos
@@ -486,10 +488,10 @@
               items:
                 - name: Integração entre o Lookout e o Intune
                   href: lookout-mtd-connector-integration.md
-            - name: Configurar o Skycure
+            - name: Configurar o Symantec
               href: skycure-mobile-threat-defense-connector.md
               items:
-                - name: Integração entre o Skycure e o Intune
+                - name: Integração de Symantec e Intune
                   href: skycure-mtd-connector-integration.md
             - name: Configurar o Check Point
               href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
