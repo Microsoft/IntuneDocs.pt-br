@@ -2,29 +2,42 @@
 title: Registrar dispositivos usando o programa Windows AutoPilot Deployment
 titleSuffix: Microsoft Intune
 description: Saiba como registrar dispositivos Windows 10 usando o programa Windows AutoPilot Deployment.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Registrar dispositivos Windows com o uso do programa Windows AutoPilot Deployment
 O programa Windows AutoPilot Deployment simplifica o provisionamento de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o AutoPilot, você pode dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Ao usar o Intune para gerenciar dispositivos do AutoPilot, você pode gerenciar políticas, perfis, aplicativos e etc., nos dispositivos depois que eles são registrados. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Visão geral do Windows AutoPilot).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-- [Os dispositivos devem ser registrados na sua organização](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [Registro automático no Windows habilitado](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Assinatura do Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>Adicionar Dispositivos
+
+Você pode adicionar dispositivos Windows AutoPilot importando um arquivo CSV com as respectivas informações.
+
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos** > **Importar**.
+
+    ![Captura de tela de dispositivos Windows AutoPilot](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. Em **Adicionar dispositivos do Windows Autopilot**, navegue até um arquivo CSV contendo os números de série, as IDs de produto do Windows e os hashes de hardware dos dispositivos que você deseja adicionar.
+
+    ![Captura de tela de adição de dispositivos Windows AutoPilot](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. Escolha **Importar** para iniciar a importação de informações do dispositivo. Isso pode levar vários minutos.
 
 ## <a name="synchronize-devices"></a>Sincronizar dispositivos
 Sincronize seus dispositivos registrados no Intune para que você possa configurá-los.
@@ -108,6 +121,16 @@ Se você não tiver iteresse no gerenciamento de dispositivo móvel, poderá usa
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Em **Intune**, escolha **Registro de dispositivo**.
 4. Para ver o alerta, escolha **Visão geral**. Clique no alerta para ver uma lista de dispositivos AutoPilot.  
+
+## <a name="delete-autopilot-devices"></a>Excluir dispositivos AutoPilot
+
+Você pode excluir os dispositivos AutoPilot do Windows que não estão registrados. Você pode cancelar o registro de dispositivos e então excluí-los.
+
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos**.
+
+2. Em **Dispositivos do Windows AutoPilot**, escolha os dispositivos que você deseja excluir e, em seguida, escolha **Excluir**.
+
+3. Confirmar a exclusão escolhendo **Sim**. A exclusão pode levar alguns minutos.
 
 
 ## <a name="next-steps"></a>Próximas etapas
