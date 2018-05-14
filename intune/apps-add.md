@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -155,6 +155,16 @@ Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a c
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Aplicativos adicionados automaticamente pelo Intune
 
 Antes, o Intune incluía vários aplicativos internos que você podia atribuir rapidamente. Com base nos comentários do cliente do Intune, removemos essa lista e os aplicativos internos não são mais exibidos. No entanto, se você já atribuiu aplicativos internos, eles permanecerão visíveis na lista de aplicativos. Você pode continuar a atribuir os aplicativos conforme necessário.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Instalação, atualização ou remoção de aplicativos necessários
+
+O Intune reinstalará, atualizará ou removerá automaticamente o aplicativo necessário dentro de 24 horas em vez de aguardar o ciclo de reavaliação de sete dias.
+
+O Intune reinstalará, atualizará ou removerá automaticamente um aplicativo necessário com base nas seguintes condições:
+- Se um usuário final desinstalar um aplicativo que você exigiu que fosse instalado no dispositivo do usuário final, o Intune o reinstalará automaticamente quando esse agendamento expirar.
+- Se houver falha na instalação de um aplicativo necessário ou se o aplicativo não estiver presente no dispositivo, o Intune avaliará a conformidade e o reinstalará quando esse agendamento expirar.  
+- Um administrador tem como alvo um aplicativo como disponível para um grupo de usuários e um usuário final instala o aplicativo do portal da empresa no dispositivo. Posteriormente, o administrador atualiza o aplicativo da v1 para a v2. O Intune atualizará o aplicativo quando este agendamento expirar, desde que nenhuma versão anterior do aplicativo ainda esteja presente no dispositivo.
+- Se o administrador implantar a tentativa de desinstalar e o aplicativo estiver presente no dispositivo e tiver falhado na desinstalação, o Intune avaliará a conformidade e o desinstalará quando esse agendamento expirar.   
 
 ## <a name="next-steps"></a>Próximas etapas
 

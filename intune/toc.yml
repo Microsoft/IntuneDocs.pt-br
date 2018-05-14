@@ -173,7 +173,11 @@
             - name: Tela de status do registro
               href: windows-enrollment-status.md
         - name: Configurar registro do Android
-          href: android-enroll.md
+          items:
+            - name: Configurar registro do Android
+              href: android-enroll.md
+            - name: Registro no Samsung Knox Mobile
+              href: android-samsung-knox-mobile-enroll.md
         - name: Configurar o registro do iOS
           href: ios-enroll.md
           items:
@@ -462,6 +466,8 @@
           href: conditional-access-intune-common-ways-use.md
         - name: Instalar o conector local do Exchange
           href: exchange-connector-install.md
+        - name: Instalar o conector de serviço do Exchange
+          href: exchange-service-connector-configure.md
         - name: Criar e atribuir a política de acesso condicional
           href: conditional-access-exchange-create.md
         - name: Reatribuir políticas de acesso condicional no Portal Clássico do Intune
@@ -511,7 +517,7 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: Habilitar MTD no Intune
                   href: mtd-connector-enable.md
-        - name: Proteção Avançada contra Ameaças
+        - name: Windows Defender ATP
           href: advanced-threat-protection.md
         - name: Controle de acesso à rede
           href: network-access-control-integrate.md
@@ -655,8 +661,6 @@
           href: app-wrapper-prepare-android.md
         - name: SDK do Aplicativo do Intune para Android
           href: app-sdk-android.md
-        - name: Plug-in do Cordova para o SDK do Aplicativo do Intune
-          href: app-sdk-cordova.md
         - name: Componente do Xamarin para o SDK do Aplicativo do Intune
           href: app-sdk-xamarin.md
     - name: Usar o Intune Data Warehouse

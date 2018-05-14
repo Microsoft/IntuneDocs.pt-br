@@ -1,5 +1,5 @@
 ---
-title: Como adicionar aplicativos Web ao Microsoft Intune
+title: Adicionar aplicativos Web ao Microsoft Intune
 titleSuffix: ''
 description: Saiba como adicionar aplicativos Web ao Microsoft Intune.
 keywords: ''
@@ -15,47 +15,49 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45253e061039198aee4aa49b2bf879a1b9929e35
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 58d04de3c4f77a5599bc5a13f2fe1e382654bd73
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="how-to-add-web-apps-to-microsoft-intune"></a>Como adicionar aplicativos Web ao Microsoft Intune
+# <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Intune dá suporte a vários tipos de aplicativo, incluindo aplicativos Web. Um aplicativo Web é um aplicativo cliente-servidor. O servidor fornece o aplicativo Web, que inclui a interface do usuário, o conteúdo e a funcionalidade. Além disso, plataformas modernas de hospedagem na Web geralmente oferecem segurança, balanceamento de carga e outros benefícios. Este aplicativo Web é mantido separadamente na Web. Use o Microsoft Intune para apontar para esse tipo de aplicativo. Além disso, você atribui quais grupos de usuários podem acessar o aplicativo. 
+O Intune é compatível com vários tipos de aplicativos, incluindo aplicativos Web. Um aplicativo Web é um aplicativo cliente-servidor. O servidor fornece o aplicativo Web, que inclui a interface do usuário, o conteúdo e a funcionalidade. Além disso, plataformas modernas de hospedagem na Web geralmente oferecem segurança, balanceamento de carga e outros benefícios. Um aplicativo Web é mantido separadamente na Web. Use o Microsoft Intune para apontar para esse tipo de aplicativo. Você também atribui quais grupos de usuários podem acessar esse aplicativo. 
 
 Antes de gerenciar e atribuir um aplicativo para seus usuários, adicione-o ao Intune. O Intune cria um atalho para o aplicativo Web na tela inicial do dispositivo do usuário.
 
 > [!Note]
 > Não há suporte para aplicativos Web em dispositivos com Android for Work e macOS.
 
-Conclua as etapas a seguir para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web:
+## <a name="add-a-web-app-to-intune"></a>Adicionar um aplicativo Web ao Intune
+Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, faça o seguinte:
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Microsoft Intune**, selecione **Aplicativos móveis**.
-4. No painel **Aplicativos móveis**, selecione **Aplicativos**.
-5. Acima da lista de aplicativos, selecione **Adicionar**. O painel **Adicionar aplicativo** é exibido.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**.  
+    O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+3. No painel **Intune**, selecione **Aplicativos móveis**.
+4. No painel de carga de trabalho **Aplicativos móveis**, em **Gerenciar**, selecione **Aplicativos**.
+5. No painel **Aplicativos**, selecione **Adicionar**.
 6. No painel **Adicionar aplicativo**, selecione o tipo **Link da Web** na lista suspensa **Tipo de aplicativo**.
-7. Selecione a opção **Configurar** para exibir o painel **Informações do aplicativo**.
+7. Selecione **Configurar**.
 8. No painel **Informações do aplicativo**, adicione as seguintes informações:
-    - **Nome** – insira o nome do aplicativo como ele será exibido no portal da empresa.
-    - **Descrição**: insira uma descrição para o aplicativo. Isso será exibido para os usuários finais no portal da empresa.
-    - **Editor** – insira o nome do editor do aplicativo.
-    - **URL do aplicativo** – insira a URL do site da web que hospeda o aplicativo que você deseja atribuir.
-    - **Categoria (opcional)** – Selecione uma das categorias de aplicativo internas ou uma categoria criada por você. Essa seleção pode facilitar a localização do aplicativo quando os usuários navegarem pelo portal da empresa.
-    - **Exibir isso como um aplicativo em destaque no portal da empresa** – Exiba o aplicativo de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
-    - **Requer um navegador gerenciado para abrir esse link** – quando você atribui um link para um site ou aplicativo Web aos usuários, eles podem abri-lo no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.
-    - **Logotipo** – carregue um logotipo que será associado ao aplicativo. Esse é o logotipo exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
-9. Após terminar, no painel **Adicionar informações**, selecione **Ok**.
-10. Em seguida, no painel **Adicionar aplicativo**, selecione **Adicionar**.
+    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa.
+    - **Descrição**: insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
+    - **Editor**: insira o nome do editor desse aplicativo.
+    - **URL do aplicativo**: insira a URL do site da web que hospeda o aplicativo que você deseja atribuir.
+    - **Categoria**: como opção, selecione uma ou mais das categorias de aplicativo internas ou uma categoria criada por você. Isso facilita a localização do aplicativo pelos usuários quando navegam pelo portal da empresa.
+    - **Exibir como um aplicativo em destaque no Portal da Empresa**: selecione esta opção para exibir o pacote de aplicativos de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
+    - **Requer um navegador gerenciado para abrir esse link**: selecione essa opção para atribuir a seus usuários um link para um site ou aplicativo Web que eles possam abrir no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.
+    - **Logotipo**: carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+9. Selecione **OK**.
+10. No painel **Adicionar aplicativo**, selecione **Adicionar**.
 
 > [!Note]
-> Os usuários precisam adicionar o widget do Intune à tela inicial para exibir os aplicativos Web que foram atribuídos aos dispositivos Android.
+> Os usuários devem adicionar o widget do Intune à tela inicial para exibir os aplicativos Web que foram atribuídos aos dispositivos Android.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- O aplicativo que você criou é exibido na lista de aplicativos, na qual você poderá atribuí-lo aos grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](apps-deploy.md).
+O aplicativo que você criou é exibido na lista de aplicativos, na qual você poderá atribuí-lo aos grupos que selecionar. Para obter ajuda, veja [Atribuir aplicativos aos grupos](apps-deploy.md). 

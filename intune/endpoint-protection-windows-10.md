@@ -14,11 +14,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22eceb7792aee714fb728d64d8bec2ae8db4167c
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Configurações do Endpoint Protection para o Windows 10 (e posteriores) no Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/28/2018
 
 O perfil do Endpoint Protection permite controlar os recursos de segurança em dispositivos Windows 10, como o BitLocker e o Windows Defender.
 
-Use as informações neste artigo para saber como criar perfis do Endpoint Protection.
+Use as informações neste artigo para criar perfis de Endpoint Protection. Para configurar o Windows Defender Antivírus, confira [Restrições de dispositivo no Windows 10](device-restrictions-windows-10.md#windows-defender-antivirus). 
 
 > [!NOTE]
 > Essas configurações não têm suporte nas edições Professional e Home do Windows 10.

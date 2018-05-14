@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-your-windows-device-from-intune"></a>Remova seu dispositivo Windows do Intune
 
@@ -61,7 +61,7 @@ Se o seu dispositivo estiver registrado com o Intune, mas você não quiser mais
 
 Há dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
--   **Logs de diagnóstico**: dados de atividade de aplicativos padrão que a Microsoft coleta, como há quanto tempo o aplicativo foi aberto ou se está em estado de falha, são automaticamente apagados quando você remove o dispositivo do Portal da Empresa.
+-   **Logs de diagnóstico**: dados de atividade de aplicativos padrão que a Microsoft coleta, como há quanto tempo o aplicativo foi aberto ou se está em estado de falha, são automaticamente apagados quando o aplicativo do Portal da Empresa é desinstalado.
 -   **Cache de aplicativo**: armazenamento de certos arquivos de suporte necessários para o aplicativo funcionar, como ícones e configurações.
 
 São necessárias algumas etapas para excluir completamente essas informações.

@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configurações de restrição de dispositivo para o Windows Holographic for Business no Intune
 
@@ -68,7 +68,7 @@ As seguintes configurações de restrição de dispositivo são compatíveis com
 
 - **Modificação do horário do sistema** - impede que o usuário final altere a data e hora do dispositivo.
 
-## <a name="kiosk-preview"></a>Quiosque (Versão prévia)
+## <a name="kiosk"></a>Quiosque
 
 Um dispositivo de quiosque normalmente executa um aplicativo específico. Os usuários são impedidos de acessar quaisquer recursos ou funções no dispositivo fora do aplicativo de quiosque.
 
@@ -76,6 +76,9 @@ Um dispositivo de quiosque normalmente executa um aplicativo específico. Os usu
 
   - **Não configurado** (padrão) – A política não habilita um modo de quiosque. 
   - **Quiosque de aplicativo único** – o perfil habilita o dispositivo a executar somente um aplicativo. Quando o usuário faz logon, um aplicativo específico inicia. Esse modo também impede que o usuário abrir novos aplicativos ou alterar o aplicativo em execução.
+  - **Quiosque de vários aplicativos** – o perfil permite que o dispositivo execute vários aplicativos. Somente os aplicativos que você adicionar estão disponíveis ao usuário. O benefício de um quiosque de vários aplicativos ou de um dispositivo com finalidade fixa é proporcionar uma experiência fácil para as pessoas entenderem apenas acessando os aplicativos de que precisam. E removendo os aplicativos que não precisam de sua exibição. 
+  
+    Ao adicionar aplicativos para uma experiência de quiosque de vários aplicativos, você também adiciona um arquivo de layout do menu Iniciar. [Iniciar o arquivo de layout do menu](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) inclui um exemplo de XML que pode ser usado no Intune. 
 
 #### <a name="single-app-kiosks"></a>Quiosques de aplicativo único
 Insira as seguintes configurações:
