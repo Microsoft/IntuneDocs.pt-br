@@ -64,7 +64,7 @@ O certificado push de MDM da Apple é válido por um ano e deve ser renovado anu
 
 O certificado está associado à ID da Apple usada para criá-lo. Renove o certificado push de MDM da Apple com a mesma ID da Apple usada para criá-lo.
 
-1. No [portal do Azure](https://portal.azure.com), escolha **Registro de dispositivo** > **Registro da Apple** e, em seguida, escolha o bloco **	Apple MDM Push Certificate** na área de detalhes.
+1. No [portal do Azure](https://portal.azure.com), escolha **Registro de dispositivo** > **Registro da Apple** e, em seguida, escolha o bloco **Apple MDM Push Certificate** na área de detalhes.
 2. Escolha **Baixar o CSR** para baixar e salvar o arquivo de solicitação localmente. O arquivo é usado para solicitar um certificado de relação de confiança do Portal Apple Push Certificates.
 3. Selecione **Criar o MDM Push Certificate** para ir para o Portal de Certificados Push da Apple. Localize o certificado que você deseja renovar e selecione **Renovar**.
 4. Na tela **Renovar Push Certificate**, forneça anotações para ajudá-lo a identificar o certificado no futuro, selecione **Escolher Arquivo** para navegar até o novo arquivo de solicitação baixado e escolha **Carregar**.
