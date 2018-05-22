@@ -15,11 +15,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar o registro para dispositivos Windows
 
@@ -31,7 +31,6 @@ Como administrador do Intune, é possível simplificar o registro das seguintes 
 - [Habilitar o registro automático](#enable-windows-10-automatic-enrollment) (Azure AD Premium necessário)
 - [Registro de CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Habilitar o registro em massa](windows-bulk-enroll.md) (Azure AD Premium e Designer de Configuração do Windows necessários)
-- [Adicione uma mensagem personalizada](windows-enrollment-status.md) para saudar seus usuários quando eles se registrarem e exibirem o andamento das configurações de política assim que forem aplicadas
 
 Dois fatores determinam como você pode simplificar o registro de dispositivos do Windows:
 

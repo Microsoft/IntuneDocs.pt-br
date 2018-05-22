@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da02a71d3801d0e00362617dd5d0cc76ffdd4722
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
 Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 para os dispositivos que você gerencia e que executam o Windows 10. Você também pode instalar aplicativos para o cliente de área de trabalho Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você deseja são exibidos como uma única entrada na lista de aplicativos no console do Intune.
 
 
-## <a name="before-you-start"></a>Antes de começar
+## <a name="before-you-start"></a>Antes de iniciar
 
 >[!IMPORTANT]
 >Esse método de instalar o Office terá suporte somente se nenhuma outra versão do Microsoft Office estiver instalada no dispositivo.

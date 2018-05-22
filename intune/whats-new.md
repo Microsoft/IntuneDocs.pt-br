@@ -1,12 +1,12 @@
 ---
 title: O que há de novo no Microsoft Intune – Azure | Microsoft Docs
 titlesuffix: ''
-description: Conheça as novidades do portal do Intune no Azure
+description: Conheça as novidades do Portal do Azure do Intune
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sob
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>Semana de 7 de maio de 2018
+
+### <a name="app-management"></a>Gerenciamento de aplicativos
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Suporte à inscrição no Samsung Knox Mobile <!--1112863-->
+
+Ao usar o Intune com a inscrição no Samsung Knox Mobile (KME), você pode inscrever vários dispositivos Android corporativos. Os usuários em redes de celular ou Wi-Fi podem inscrever seus dispositivos com apenas alguns toques ao o ligarem pela primeira vez. Ao usar o Aplicativo de Implantação do Knox, os dispositivos podem ser inscritos usando Bluetooth ou NFC. Para saber mais, confira [Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung](android-samsung-knox-mobile-enroll.md).
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Solicitar ajuda no Portal de Empresa para Windows 10 <!-- 1874137 -->
+
+Agora, o Portal da Empresa para Windows 10 envia logs de aplicativo diretamente à Microsoft quando o usuário inicia o fluxo de trabalho para obter ajuda com um problema. Isso facilitará a solução de problemas enviados para a Microsoft.
 
 ## <a name="week-of-april-23-2018"></a>Semana de 23 de abril de 2018
 
@@ -105,7 +117,7 @@ Com essa atualização, o [Windows Defender Credential Guard](https://docs.micro
 As seguintes tecnologias dependentes são habilitadas automaticamente ao configurar o Credential Guard: 
 
   - **Habilitar a VBS (segurança baseada em virtualização)**: ativa a VBS (segurança baseada em virtualização) na próxima reinicialização. A segurança baseada em virtualização usa o Hipervisor do Windows para fornecer suporte aos serviços de segurança e exige a Inicialização Segura.
-  - **Inicialização segura com DMS (Acesso direto à memória)**: ativa a VBS com inicialização segura e acesso direto à memória. As proteções de DMA exigem suporte de hardware e serão habilitadas somente em dispositivos configurados adequadamente. 
+  - **Inicialização segura com DMA (Acesso direto à memória)**: ativa a VBS com inicialização segura e acesso direto à memória. As proteções de DMA exigem suporte de hardware e serão habilitadas somente em dispositivos configurados adequadamente. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Use um nome de entidade personalizado no certificado SCEP <!-- 2064190 -->
 Você pode usar o nome comum **OnPremisesSamAccountName** em uma entidade personalizada em um perfil de certificado SCEP. Por exemplo, você pode usar `CN={OnPremisesSamAccountName})`.
@@ -173,9 +185,9 @@ Publicamos as orientações para ajudar os administradores de TI a testar o apli
 Os blocos foram atualizados para serem mais acessíveis aos usuários com visão subnormal e para apresentarem um desempenho melhorado nas ferramentas de leitura de tela.
 
 #### <a name="send-diagnostic-reports-in-company-portal-app-for-macos----2216677---"></a>Enviar relatórios de diagnóstico no aplicativo de Portal da Empresa para macOS <!-- 2216677 -->
-O aplicativo do Portal da Empresa para dispositivos macOS foi atualizado para melhorar o modo como os usuários relatam erros relacionados ao Intune. No aplicativo do Portal da Empresa, seus funcionários poderão:
+O aplicativo do Portal da Empresa para dispositivos macOS foi atualizado para melhorar o modo como os usuários relatam erros relacionados ao Intune. No aplicativo Portal da Empresa, seus funcionários podem:
 
-- Carregue relatórios de diagnóstico diretamente para a equipe de desenvolvedores Microsoft.
+- Carrega relatórios de diagnóstico diretamente para a equipe de desenvolvedores Microsoft.
 - Envie por email uma ID de incidente à equipe de suporte de TI da sua empresa.
 
 Para obter mais informações, consulte [Enviar erros para o macOS](/intune-user-help/send-errors-macos).
@@ -187,7 +199,7 @@ O aplicativo do Portal da Empresa do Intune para Windows 10 foi atualizado com a
 
 #### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>Usar o cliente do Cisco AnyConnect para iOS <!-- EEready 1333708 -->
 
-Quando você cria um novo perfil de VPN para iOS, agora há duas opções: **Cisco AnyConnect** e **Cisco Legacy AnyConnect**. Os perfis do Cisco AnyConnect 4.0.7x são compatíveis com o 4.0.7x e versões mais recentes. Os perfis existentes de VPN do Cisco AnyConnect do iOS são rotulados como **Cisco Legacy AnyConnect** e continuarão a funcionar com o Cisco AnyConnect 4.0.5x e versões anteriores, como fazem atualmente.
+Quando você cria um novo perfil de VPN para iOS, agora há duas opções: **Cisco AnyConnect** e **Cisco Legacy AnyConnect**. Os perfis do Cisco AnyConnect são compatíveis com o 4.0.7x e versões mais recentes. Os perfis existentes de VPN do Cisco AnyConnect do iOS são rotulados como **Cisco Legacy AnyConnect** e continuarão a funcionar com o Cisco AnyConnect 4.0.5x e versões anteriores, como fazem atualmente.
 
 > [!NOTE]
 > Essa alteração se aplica apenas ao iOS. Continuará existindo apenas uma opção do Cisco AnyConnect para plataformas do Android, Android for Work e macOS.
@@ -314,7 +326,7 @@ O administrador do Intune pode configurar essas configurações para habilitar o
 
 #### <a name="configure-gatekeeper-to-control-macos-app-download-source----1690459---"></a>Configurar o Gatekeeper para controlar a origem do download do aplicativo macOS <!-- 1690459 -->
 
-Você pode configurar o Gatekeeper para proteger os dispositivos de aplicativos, controlando de que local os aplicativos podem ser baixados. Você pode configurar as seguintes fontes de download: **Mac App Store**, **Mac App Store e desenvolvedores identificados** ou **De qualquer lugar**. Você também pode configurar se os usuários podem instalar um aplicativo usando CTRL + clique para substituir esses controles do Gatekeeper.
+Você pode configurar o Gatekeeper para proteger os dispositivos de aplicativos, controlando de que local os aplicativos podem ser baixados. Você pode configurar as seguintes fontes de download: **Mac App Store**, **Mac App Store e desenvolvedores identificados** ou **De qualquer lugar**. Você também pode configurar se os usuários podem instalar um aplicativo usando Ctrl+clique para substituir esses controles do Gatekeeper.
 
 Essas configurações podem ser encontradas em **Configuração do dispositivo** -> **Criar perfil** -> **macOS** -> **Endpoint Protection**.
 
@@ -354,7 +366,7 @@ Em sua configuração de dispositivo, há códigos de erro e mensagens de erro m
    Habilite esta opção para impedir que o computador responda às solicitações de sondagem. O computador ainda responde a solicitações de entrada para aplicativos autorizados. Solicitações inesperadas, como o ICMP (ping), são ignoradas.
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>Desabilitar verificações na reinicialização do dispositivo <!--1805490 -->
-O Intune fornece controle para [gerenciar atualizações de software]](windows-update-for-business-configure.md). Com essa atualização, a propriedade <strong>Reiniciar verificações</strong> está disponível e habilitada por padrão. Para ignorar as verificações típicas que ocorrem quando você reinicia um dispositivo (como usuários ativos, níveis de bateria e assim por diante), selecione <strong>Ignorar</strong>.
+O Intune fornece controle para [gerenciar atualizações de software](windows-update-for-business-configure.md). Com essa atualização, a propriedade <strong>Reiniciar verificações</strong> está disponível e habilitada por padrão. Para ignorar as verificações típicas que ocorrem quando você reinicia um dispositivo (como usuários ativos, níveis de bateria e assim por diante), selecione <strong>Ignorar</strong>.
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>Novos canais do Windows 10 Insider Preview disponíveis para anéis de implantação <!-- 1746293 -->
 Agora você tem a opção de selecionar os seguintes canais de serviço do Windows 10 Insider Preview ao criar um anel de implantação do Windows 10:
@@ -369,12 +381,21 @@ Para obter mais informações sobre como criar canais de implantação no Intune
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>Registro do Portal da Empresa melhorado <!-- 1874230 eeready-->
 Os usuários que registrarem um dispositivo usando o Portal da Empresa no Windows 10 build 1703 e superior agora podem concluir a primeira etapa de registro sem sair do aplicativo.
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>Agora o HoloLens e o Surface Hub são exibidos nas listas de dispositivos <!--1725868 -->
 Adicionamos suporte para mostrar dispositivos HoloLens e Surface Hub registrados no Intune no aplicativo Portal da Empresa para Android.
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>Categorias de livro personalizadas para livros eletrônicos do VPP (Volume Purchase Program) <!-- 1488911 -->
-Você pode criar categorias de livros eletrônicos personalizadas e atribuir livros eletrônicos do VPP a essas categorias personalizadas. Os usuários finais poderão ver as categorias de livro eletrônico recém-criadas e os livros atribuídos às categorias. Para obter mais informações, consulte [Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune](vpp-apps.md).
+Você pode criar categorias de livros eletrônicos personalizadas e atribuir livros eletrônicos do VPP a essas categorias personalizadas. Os usuários finais poderão ver as categorias de livro eletrônico recém-criadas e os livros atribuídos às categorias. Para obter mais informações, consulte [Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune](vpp-apps.md).  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Mudanças de suporte para a opção de comentários do aplicativo Portal da Empresa para Windows <!-- 2070166 -->
+A partir de 30 de abril de 2018, a opção **Enviar Comentários** no aplicativo Portal da Empresa para Windows funcionará apenas em dispositivos que executam a Atualização de Aniversário do Windows 10 (1607) e posterior. Não há mais suporte para a opção de enviar comentários ao usar o aplicativo Portal da Empresa para Windows com:  
+- Windows 10, versão 1507  
+- Windows 10, versão 1511  
+- Windows Phone 8.1 
+
+Se o seu dispositivo estiver executando no Windows 10 RS1 ou posterior, baixe a versão mais recente do aplicativo Portal da Empresa do Windows na Store. Se você estiver executando uma versão sem suporte, continue a enviar comentários por meio destes canais: 
+- Aplicativo Hub de Comentários no Windows 10
+- Email WinCPfeedback@microsoft.com  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Novas configurações do Windows Defender Application Guard <!-- 1631890 -->
 
@@ -416,7 +437,7 @@ Os usuários do Edge e do Chrome com > 30.000 dispositivos podem exportar com ê
 
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Os sites da Web do Azure Active Directory podem exibir o aplicativo Intune Managed Browser e dar suporte ao Logon Único para o Managed Browser (Visualização Pública) <!-- 710595 -->
 
-Usando o Azure AD (Azure Active Directory), agora você pode restringir o acesso a sites em dispositivos móveis para o aplicativo Intune Managed Browser. No Managed Browser, os dados do site permanecerão seguros e separados dos dados pessoais do usuário final. Além disso, o Managed Browser oferecerá suporte a recursos de Logon Único para sites protegidos pelo Azure AD. Entrar no Managed Browser ou usar o Managed Browser em um dispositivo com outro aplicativo gerenciado pelo Intune, permite que o Managed Browser acesse sites corporativos protegidos pelo Azure AD sem que o usuário precise inserir suas credenciais. Essa funcionalidade se aplica a sites como o Outlook Web Access (OWA) e o SharePoint Online, bem como a outros sites corporativos, como os recursos da intranet acessados por meio do Proxy do Aplicativo Azure.
+Usando o Azure AD (Azure Active Directory), agora você pode restringir o acesso a sites em dispositivos móveis para o aplicativo Intune Managed Browser. No Managed Browser, os dados do site da Web permanecerão seguros e separados dos dados pessoais do usuário final. Além disso, o Managed Browser oferecerá suporte a recursos de Logon Único para sites protegidos pelo Azure AD. Entrar no Managed Browser ou usar o Managed Browser em um dispositivo com outro aplicativo gerenciado pelo Intune, permite que o Managed Browser acesse sites corporativos protegidos pelo Azure AD sem que o usuário precise inserir suas credenciais. Essa funcionalidade se aplica a sites como o Outlook Web Access (OWA) e o SharePoint Online, bem como a outros sites corporativos, como os recursos da intranet acessados por meio do Proxy do Aplicativo Azure.
 
 #### <a name="company-portal-app-for-android-visual-updates---976944---"></a>Aplicativo Portal da empresa para atualizações visuais do Android <!--976944 -->
 
@@ -628,7 +649,7 @@ Você pode criar uma política de atualização de edição do Windows 10 que at
 
 #### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>As Políticas de Acesso Condicional para o Intune só estão disponíveis no Portal do Azure <!-- 1737088 1634311 -->
 
-Começando por esta versão, você deve configurar e gerenciar suas políticas de Acesso Condicional no [Portal do Azure](https://portal.azure.com), em **Azure Active Directory** > **Acesso Condicional** . Para sua conveniência, você também pode acessar essa folha do Intune no portal do Azure em **Intune** > **Acesso Condicional**.
+Começando por esta versão, você deve configurar e gerenciar suas políticas de Acesso Condicional no [Portal do Azure](https://portal.azure.com), em **Azure Active Directory** > **Acesso Condicional** . Para sua conveniência, você também pode acessar essa folha do Intune no Portal do Azure em **Intune** > **Acesso Condicional**.
 
 #### <a name="updates-to-compliance-emails---1637547---"></a>Atualizações nos emails de conformidade <!--1637547 -->
 
@@ -850,9 +871,9 @@ Inventários de dispositivos pessoais e corporativos iOS 11+ são enviados para 
 
 #### <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone----1463747-wnready---"></a>Migrar usuários e dispositivos do MDM híbrido para o <!-- 1463747 wnready --> autônomo do Intune
 Novos processos e ferramentas já estão disponíveis para mover os usuários e seus dispositivos do MDM híbrido para o Intune no Portal do Azure, permitindo que você realize as seguintes tarefas:
-- Copiar perfis e políticas do console do Configuration Manager para o Intune no portal do Azure
-- Mover um subconjunto de usuários ao Intune no portal do Azure enquanto mantém o restante no MDM híbrido
-- Migrar os dispositivos para o Intune no portal do Azure sem necessidade de registrá-los novamente
+- Copiar perfis e políticas do console do Configuration Manager para o Intune no Portal do Azure
+- Mover um subconjunto de usuários ao Intune no Portal do Azure enquanto mantém o restante no MDM híbrido
+- Migrar os dispositivos para o Intune no Portal do Azure sem necessidade de registrá-los novamente
 
 Consulte os detalhes em [Migrar usuários e dispositivos do MDM híbrido para o Intune autônomo](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
@@ -912,7 +933,7 @@ Quando estiver **solucionando problemas** para o usuário que estiver sendo exib
 O serviço de Proteção Avançada contra Ameaças (WDATP) do Windows Defender permite que os administradores gerenciem a frequência dos relatórios para dispositivos gerenciados. Com a nova opção de **Agilizar a frequência de relatórios de telemetria**, o WDATP coleta dados e avalia os riscos com mais frequência. O padrão para relatórios otimiza a velocidade e o desempenho. Aumentar a frequência de emissão de relatórios pode ser importante para dispositivos de alto risco. Essa configuração pode ser encontrada no perfil **Windows Defender ATP** nas **Configurações do dispositivo**.
 
 #### <a name="audit-updates----1412961---"></a>Atualizações de auditoria <!-- 1412961 -->  
-A auditoria do Intune fornece um registro das operações de alteração relacionadas ao Intune.  Todas as operações de criação, atualização, exclusão e de tarefa remota são capturadas e mantidas por um ano.  O portal do Azure fornece uma exibição dos últimos 30 dias de dados de auditoria em cada carga de trabalho e pode ser filtrado.  Uma API do Graph correspondente permite a recuperação dos dados de auditoria armazenados para o último ano.
+A auditoria do Intune fornece um registro das operações de alteração relacionadas ao Intune.  Todas as operações de criação, atualização, exclusão e de tarefa remota são capturadas e mantidas por um ano.  O Portal do Azure fornece uma exibição dos últimos 30 dias de dados de auditoria em cada carga de trabalho e pode ser filtrado.  Uma API do Graph correspondente permite a recuperação dos dados de auditoria armazenados para o último ano.
 
 A auditoria é encontrada no grupo **MONITOR**. Há um item de menu de **Logs de Auditoria** para cada carga de trabalho.
 
@@ -1111,23 +1132,6 @@ Marque o Intune como um favorito em vez da folha de serviço da Proteção de Ap
 
 **Informações adicionais**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>Plano para mudança: a opção Enviar Comentários do Portal da Empresa do Windows pode não funcionar mais  
-O aplicativo Portal da Empresa do Windows tem uma opção de **Enviar Comentários** que permite aos usuários enviar comentários sobre o aplicativo para a Microsoft. De 30 de abril de 2018 em diante, essa opção continua sendo compatível apenas no aplicativo do Portal da Empresa do Windows 10 em execução no Windows 10 1607 (Atualização de Aniversário) e versões posteriores.  
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?  
-Se você não tiver o aplicativo do Portal da Empresa do Windows instalado para usuários finais, desconsidere esta mensagem. Se qualquer um dos seus usuários finais tiver o aplicativo Portal da Empresa, observe que, a partir de 30 de abril, o botão **Enviar Comentários** não funcionará mais para o aplicativo nos seguintes cenários:  
-- Aplicativo Portal da Empresa do Windows 10 quando usado nas versões do Windows 10 1507 e 1511  
-- Aplicativo do Portal da Empresa do Windows Phone 8.1  
-
-Para dispositivos afetados, a opção **Enviar Comentários** falhará e não terá êxito mesmo ao tentar novamente. Para enviar comentários à Microsoft sobre experiências nessas plataformas, consulte os canais de comentários alternativo listados mais adiante.  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?  
-Informe aos usuários dessa alteração e atualize todas as diretrizes para usuários se necessário. Usando o Portal da Empresa, informe os usuários finais no Windows Phone 8.1, no Windows 10 1507 e no Windows 10 1511 de que eles têm dois canais alternativos de comentários disponíveis. Eles podem:  
-- Use o aplicativo Hub de Comentários no Windows 10
-- Enviar um email para WinCPfeedback@microsoft.com  
-
-Peça aos usuários finais no Windows 10 RS1 ou posterior para atualizarem para a versão mais recente do Portal da Empresa do Windows disponível na Store.
-
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Plano para Alteração: alterações no suporte para o SDK de Aplicativo do Microsoft Intune para o plug-in do Cordova
 O Intune terminará o suporte para o [Plug-in do Cordova do SDK de Aplicativo do Microsoft Intune](app-sdk-cordova.md) em 1 de maio de 2018. Em vez desse plug-in, é recomendável que você use a Ferramenta de Disposição do Aplicativo do Intune para preparar seus aplicativos com base em Cordova para gerenciamento e disponibilidade do Intune. Quando essa alteração entrar em vigor, o SDK de Aplicativo do Microsoft Intune para o plug-in do Cordova não será mais mantido nem receberá atualizações. Os desenvolvedores de aplicativos não poderão usar esse plug-in. O Intune planeja continuar a dar suporte a aplicativos criados com o Cordova. No entanto, todos os aplicativos criados com o SDK de Aplicativo do Microsoft Intune para o plug-in do Cordova terá funcionalidade reduzida no Intune. Depois de encapsular com a Ferramenta de Disposição do Aplicativo do Intune, os aplicativos poderão ser implantados para usuários finais conforme de costume. Para aplicativos Android baseados no Cordova que são lançados na Google Play Store:
 - As credenciais dos usuários finais serão solicitadas a fim de receberem a política do Intune na primeira inicialização.
@@ -1139,7 +1143,7 @@ Para obter mais informações sobre a Ferramenta de Disposição do Aplicativo, 
 Há mais de um ano, foi anunciada [a visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, após seis meses, a [Disponibilidade geral da nova experiência de administração](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. No dia 31 de agosto de 2018, o MDM (gerenciamento de dispositivo móvel) será desabilitado no console do Silverlight clássico para os clientes que usam o Intune autônomo. Nesse caso, você poderá usar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para atender às suas necessidades de MDM. Se você ainda estiver usando o console clássico do MDM, deixe de usá-lo e familiarize-se com o Intune no Azure. Não esperamos que haja nenhum impacto para o usuário final com essa alteração. O gerenciamento de computador clássico permanecerá no Silverlight. Saiba mais sobre essa alteração e como ela o afetará clicando [aqui](https://aka.ms/Intune_on_Azure_mdm).
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acesso direto aos cenários de registro da Apple <!--951869-->
-Para contas do Intune criadas após janeiro de 2017, o Intune habilitou o acesso direto aos cenários de registro da Apple usando a carga de trabalho Registrar Dispositivos no portal do Azure. Anteriormente, a visualização de registro da Apple só estava acessível a partir de links no Portal Clássico do Intune. As contas do Intune criadas antes de janeiro de 2017 precisam de uma migração única antes que esses recursos estejam disponíveis no Azure. A agenda de migração ainda não foi anunciada, mas os detalhes serão disponibilizados assim que possível. Caso sua conta existente não possa acessar o Portal do Azure, é altamente recomendável criar uma conta de avaliação para testar a nova experiência.
+Para contas do Intune criadas após janeiro de 2017, o Intune habilitou o acesso direto aos cenários de registro da Apple usando a carga de trabalho Registrar Dispositivos no Portal do Azure. Anteriormente, a visualização de registro da Apple só estava acessível a partir de links no Portal Clássico do Intune. As contas do Intune criadas antes de janeiro de 2017 precisam de uma migração única antes que esses recursos estejam disponíveis no Azure. A agenda de migração ainda não foi anunciada, mas os detalhes serão disponibilizados assim que possível. Caso sua conta existente não possa acessar o Portal do Azure, é altamente recomendável criar uma conta de avaliação para testar a nova experiência.
 
 ## <a name="whats-coming"></a>O que está por vir
 

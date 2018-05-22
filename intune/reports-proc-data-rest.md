@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0187555a087f6ca8ab391b839f2c905181c33cb6
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados da API do Data Warehouse do Intune com um cliente REST
 
@@ -83,7 +83,7 @@ Você precisa das seguintes informações para fazer uma chamada à REST usando 
 | Nome do Token       | Uma cadeia de caracteres usada para passar as credenciais para o aplicativo do Azure. O processo gera o token que permite fazer uma chamada à API do Data Warehouse.                          | Portador                                                                                        |
 | URL de Autenticação         | Esta é a URL usada para a autenticação. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/ |
 | URL do Token de Acesso | Esta é a URL usada para conceder o token.                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
-| ID do Cliente        | Você criou e anotou essa ID quando criou o aplicativo nativo no Azure.                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
+| ID de Cliente        | Você criou e anotou essa ID quando criou o aplicativo nativo no Azure.                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
 | Escopo (opcional) | Em Branco                                                                                                                                                                               | Você pode deixar o campo em branco.                                                                     |
 | Tipo de Concessão       | O token é um código de autorização.                                                                                                                                                  | Código de Autorização                                                                            |
 

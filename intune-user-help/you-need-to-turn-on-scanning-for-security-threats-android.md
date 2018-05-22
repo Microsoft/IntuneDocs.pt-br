@@ -1,6 +1,6 @@
 ---
-title: Você precisa ativar a verificação de ameaças de segurança | Microsoft Docs
-description: ''
+title: Você precisa ativar a verificação de ameaças à segurança
+description: Saiba como habilitar as verificações de ameaça à segurança em seu dispositivo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Você precisa tornar seu dispositivo capaz de verificar se há ameaças de segurança
+# <a name="enable-security-threat-scans-on-your-device"></a>Habilitar as verificações de ameaça à segurança em seu dispositivo 
+Se você inadvertidamente instalar um aplicativo não seguro, os dados do seu dispositivo poderão ficar expostos. Para proteger os dados em seu dispositivo, recomendamos que você: 
 
-Seu dispositivo Android é capaz de baixar e instalar aplicativos que podem realizar uma grande variedade de tarefas. No entanto, nem todos os aplicativos são iguais, e alguns podem causar problemas. Uma recomendação geral é baixar aplicativos somente de fontes verificadas, como a Google Play Store. Uma maneira escolhida pelo suporte de sua empresa para proteger os dados em seu dispositivo é fazer o Google verificar os aplicativos que você está instalando para ter certeza de que são seguros.
+* Baixe aplicativos somente de fontes verificadas, como da Google Play Store.  
+* Habilite as verificações de ameaças à segurança em seu dispositivo. Essas verificações são executadas pelo Google e verificam se é seguro instalar os aplicativos.  
 
-Ative essa verificação acessando **Configurações** > **Google** > **Segurança** e ativar **Verificar dispositivo contra ameaças à segurança**.
+Para habilitar as verificações em seu dispositivo, acesse **Configurações** > **Google** > **Segurança**. Ative **Verificar o dispositivo para detectar ameaças de segurança**.  
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Em alguns dispositivos Samsung, você pode encontrar a configuração em **Configurações** > **Google** > **Segurança** > **Google Play Protect**.
+
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). 

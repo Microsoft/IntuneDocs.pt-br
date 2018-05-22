@@ -14,11 +14,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos Android for Work no Intune
 
@@ -91,7 +91,7 @@ Se sua empresa usa perfis de trabalho do Android, você pode habilitar a **Verif
 
 - **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo.
 - **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha do usuário deve ter.
-- **Tipo de senha necessária**: escolha se uma senha deve ter apenas caracteres numéricos ou se deve haver uma combinação de números e outros caracteres. Escolha:
+- **Tipo de senha necessária**: escolha se uma senha deve ter apenas caracteres numéricos ou uma combinação de números e outros caracteres. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
   - **Pelo menos, numérico**

@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b03de8b2c5fca0f41a792e5004d74fe82e4a861d
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
@@ -54,7 +54,7 @@ Antes que possa registrar dispositivos iOS o DEP, você precisa de um arquivo de
 Você pode usar o portal de DEP da Apple para criar um token de DEP. Você também pode usar o portal de DEP para atribuir dispositivos ao Intune para gerenciamento.
 
 > [!NOTE]
-> Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no portal do Azure. Você pode excluir o token de DEP novamente no portal do Azure.
+> Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no Portal do Azure. Você pode excluir o token de DEP novamente no Portal do Azure.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token.
 
@@ -106,8 +106,11 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 1. No Intune no Portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro**.
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
+
     ![Crie uma captura de tela de perfil.](./media/device-enrollment-program-enroll-ios/image04.png)
+
 3. Em **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil para fins administrativos. Os usuários não veem esses detalhes. Você pode usar esse campo **Nome** para criar um grupo dinâmico no Azure Active Directory. Use o nome do perfil para definir o parâmetro enrollmentProfileName para atribuir dispositivos com este perfil de registro. Saiba mais sobre os [grupos dinâmicos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+
     ![Nome e descrição do perfil.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. Em **Afinidade de Usuário**, escolha se os dispositivos com esse perfil devem ser registrados com ou sem um usuário atribuído.
@@ -123,6 +126,9 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     > A MFA (autenticação multifator) não funcionará durante o registro de DEP se você tiver propriedades de perfil definidas como **Registrar com Afinidade do Usuário**. Após o registro, a MFA funciona conforme o esperado nos dispositivos. Os dispositivos não podem exibir uma solicitação aos usuários que precisam alterar sua senha quando entrarem pela primeira vez. Além disso, os usuários com senhas expiradas não receberão uma solicitação para redefinir a senha durante o registro. Os usuários devem usar um dispositivo diferente para redefinir a senha.
 
 6. Escolha **Configurações de Gerenciamento de Dispositivo** e selecione se deseja ou não que os dispositivos que utilizam esse perfil sejam supervisionados.
+
+    ![Captura de tela Configurações de Gerenciamento de Dispositivos.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+
     Os dispositivos **supervisionados** permitem mais opções de gerenciamento e desabilitam o Bloqueio de Ativação por padrão. A Microsoft recomenda usar o DEP como o mecanismo para habilitar o modo supervisionado, especialmente para as empresas que implantam grandes números de dispositivos iOS.
 
     Os usuários são notificados de que seus dispositivos são supervisionados de duas maneiras:
@@ -171,9 +177,9 @@ Agora que o Intune tem permissão para gerenciar seus dispositivos, você pode s
 1. No Intune no Portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista > **Dispositivos** > **Sincronizar**. ![Captura de tela do nó Dispositivos de Programa de Registro selecionado com o link de Sincronização escolhido.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    Para estar em conformidade com os termos da Apple em relação ao tráfego aceitável do programa de registro, o Intune impõe as seguintes restrições:
-   - Uma sincronização completa pode ser executada, no máximo, uma vez a cada sete dias. Durante uma sincronização completa, o Microsoft Intune atualiza todos os números de série da Apple atribuídos à nossa plataforma. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
-   - Qualquer solicitação de sincronização tem 15 minutos para ser concluída. Durante esse tempo ou até a solicitação ser bem-sucedida, o botão de **Sincronizar** fica desabilitado.
-   - O Intune sincroniza dispositivos novos e removidos com a Apple a cada 24 horas.
+   - Uma sincronização completa pode ser executada, no máximo, uma vez a cada sete dias. Durante uma sincronização completa, o Intune busca a lista atualizada completa de números de série atribuído ao servidor Apple MDM conectado ao Intune. Após a exclusão de um dispositivo do Programa de Registro do Portal do Intune, ele não poderá ser importado novamente até que a sincronização completa seja executada.   
+   - A sincronização é executada automaticamente a cada 24 horas. Você também pode sincronizar clicando no botão **Sincronizar** (não mais do que uma vez a cada 15 minutos). Todas as solicitações de sincronização têm 15 minutos para conclusão. O botão **Sincronizar** fica desativado até que a sincronização seja concluída. Essa sincronização atualizará o status do dispositivo existente e importará novos dispositivos atribuídos ao servidor MDM da Apple.   
+
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Atribuir um perfil de registro aos dispositivos
 Atribua um perfil do Programa de Registro aos dispositivos antes de registrá-los.
@@ -196,5 +202,17 @@ Você pode escolher um perfil padrão a ser aplicado a todos os dispositivos que
 Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos de DEP. Agora você pode distribuir dispositivos para os usuários. Os dispositivos com afinidade de usuário requerem que cada usuário receba uma licença do Intune. Os dispositivos sem afinidade de usuário requerem uma licença de dispositivo. Um dispositivo ativado só pode ser aplicado a um perfil de registro após restaurar as respectivas configurações de fábrica.
 
 Consulte [Registre seu dispositivo iOS no Intune com o Programa de registro de dispositivos](/intune-user-help/enroll-your-device-dep-ios).
+
+## <a name="renew-a-dep-token"></a>Renovar um token DEP  
+1. Acesse deploy.apple.com.  
+2. Em **Gerenciar Servidores**, escolha o servidor MDM associado ao arquivo de token que você deseja renovar.
+3. Escolha **Gerar Novo Token**.  
+4. Escolha **Token do Seu Servidor**.  
+5. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens do programa de registro**.  
+6. Escolha o token e, depois, escolha **Renovar token**.  
+7. Insira a ID da Apple usada para criar o token original.  
+8. Carregue o token recém-baixado.  
+9. Escolha **Renovar token**. Você verá a confirmação de renovação do token.   
+
 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 122f0b70392df65076622354722b6d546f4fe7b7
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS adquiridos por meio de um programa de aquisição com base em volume com o Microsoft Intune
 
@@ -60,7 +60,7 @@ Compre várias licenças para aplicativos iOS por meio do [Apple Volume Purchase
 
 Além disso, os desenvolvedores de terceiros também podem distribuir de maneira privativa aplicativos a membros autorizados do Volume Purchase Program for Business especificados no iTunes Connect. Esses membros do VPP for Business podem entrar na App Store do Volume Purchase Programa e adquirir seus aplicativos. Aplicativos do VPP for Business adquiridos pelo usuário final serão sincronizado com seus locatários do Intune.
 
-## <a name="before-you-start"></a>Antes de começar
+## <a name="before-you-start"></a>Antes de iniciar
 Antes de começar, você precisará obter um token do VPP da Apple e carregá-lo em sua conta do Intune. Além disso, você deve compreender os seguintes critérios:
 
 * Você pode associar vários tokens do VPP à sua conta do Intune.

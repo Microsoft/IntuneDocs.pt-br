@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9d39373bc01cecd38c2fdbc675ca26861eb968
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Android ao Microsoft Intune
 
@@ -30,7 +30,7 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
 > [!Note]
 > Para saber mais sobre aplicativos de LOB na Store do Google Play for Work, veja [Como trabalhar com um aplicativo de linha de negócios do Google Play for Work](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store). 
 
-## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: especificar o arquivo de instalação de software
+## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar os arquivos de instalação de software
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
@@ -46,7 +46,7 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
 3. Quando tiver terminado, selecione **OK**.
 
 
-## <a name="step-3-configure-app-information"></a>Etapa 3: configurar informações do aplicativo
+## <a name="step-3-configure-app-information"></a>Etapa 3: Configurar informações do aplicativo
 
 1. No painel **Adicionar aplicativo**, selecione **Informações do aplicativo**.
 2. No painel **Informações do aplicativo**, adicione os detalhes do seu aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ser preenchidos automaticamente.

@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -61,7 +61,7 @@ Se você estiver procurando uma lista de aplicativos com suporte no MAM, consult
 8. Escolha **OK** para salvar esta configuração. Agora você retornou à folha **Adicionar uma política**.
 9. Escolha **Criar** para criar a política e salvar suas configurações.
 
-Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuários. Para implantar uma política, consulte [Implantar uma política para usuários](app-protection-policies.md#deploy-a-policy-to-users).
+Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuário. Para implantar uma política, consulte [Implantar uma política para usuários](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implantar uma política para os usuários
 
@@ -127,7 +127,7 @@ Uma vez que as políticas de Proteção de Aplicativo do Intune são direcionada
 Para criar essas políticas, navegue até as políticas de **Aplicativos móveis** > **Proteção do aplicativo** no console do Intune e clique **Adicionar uma política**. Você também pode editar uma política de proteção do aplicativo existente. Se desejar que a política de proteção do aplicativo se aplique tanto a dispositivos gerenciados quanto não gerenciados, confirme que o **Destino para todos os tipos de aplicativo** esteja definido como **Sim**, o valor padrão. Se você quiser atribuir de maneira granular com base no estado de gerenciamento, defina a opção **Destino para todos os tipos de aplicativo** como **Não**. 
 
 > [!NOTE]
-> Para obter informações de suporte do iOS específicas sobre políticas de proteção do aplicativo com base no estado de gerenciamento de dispositivo, consulte [Políticas de proteção MAM direcionadas com base no estado de gerenciamento](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
+> Para obter informações de suporte do iOS específicas sobre políticas de proteção do aplicativo com base no estado de gerenciamento de dispositivo, consulte [Políticas de proteção MAM direcionadas com base no estado de gerenciamento](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>Configurações de política
 Para ver uma lista completa das configurações de política para iOS e Android, selecione um dos seguintes links:

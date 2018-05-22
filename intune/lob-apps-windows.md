@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac5c06bc1656f932379d634e341ad9db9bc66419
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f907272f74886612eba9b5b28118f298caa2f36d
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Windows ao Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 
 Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Esse tipo de aplicativo normalmente é escrito internamente. As etapas a seguir fornecem diretrizes para ajudá-lo a adicionar um aplicativo de LOB do Windows ao Microsoft Intune.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: especificar o arquivo de instalação de software
+## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar os arquivos de instalação de software
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
@@ -43,7 +43,7 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
 3. Quando tiver terminado, selecione **OK**.
 
 
-## <a name="step-3-configure-app-information"></a>Etapa 3: configurar informações do aplicativo
+## <a name="step-3-configure-app-information"></a>Etapa 3: Configurar informações do aplicativo
 
 1. No painel **Adicionar aplicativo**, selecione **Informações do aplicativo**.
 2. No painel **Informações do aplicativo**, configure as seguintes informações. Alguns dos valores neste painel podem ser sido preenchidos automaticamente.

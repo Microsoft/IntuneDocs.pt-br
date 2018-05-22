@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos Android no Intune
 
@@ -96,16 +96,16 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 - **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo.
 - **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha do usuário deve ter.
-- **Tipo de senha necessária**: escolha se uma senha deve ter apenas caracteres numéricos ou se deve haver uma combinação de números e outros caracteres. Escolha:
+- **Tipo de senha necessária**: selecione se uma senha deve ter apenas caracteres numéricos ou uma combinação de números e outros caracteres. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
   - **Pelo menos, numérico**
-  - **Complexo numérico**
+  - **Numérico complexo**: números repetidos ou consecutivos, (como "1111" ou "1234") não são permitidos.
   - **Pelo menos, alfabético**
   - **Pelo menos, alfanumérico**
   - **Pelo menos alfanumérico com símbolos**
 - **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e o usuário precise criar uma nova.
 - **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas recentes que não podem ser utilizadas. Use essa configuração para impedir que o usuário crie senhas usadas anteriormente.
 
 ### <a name="encryption"></a>Criptografia

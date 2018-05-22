@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o iOS
 
@@ -31,8 +31,12 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 - **Nome da conexão**: insira um nome para esta conexão. Os usuários finais verão esse nome quando navegarem no dispositivo para uma lista de conexões VPN disponíveis.
 - **Endereço IP ou FQDN**: insira o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN ao qual os dispositivos se conectam. Por exemplo, insira **192.168.1.1** ou **vpn.contoso.com**.
 - **Método de autenticação**: escolha como os dispositivos autenticam-se no servidor VPN:
-  - **Certificados**: em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS existente para autenticar a conexão. [Configurar certificados](certificates-configure.md) apresenta algumas diretrizes sobre perfis de certificado.
+  - **Certificados**: em **Certificado de autenticação**, selecione um perfil de certificado SCEP ou PKCS existente para autenticar a conexão. [Configurar certificados](certificates-configure.md) apresenta algumas diretrizes sobre perfis de certificado.
   - **Nome de usuário e senha**: os usuários finais deverão fornecer um nome de usuário e uma senha para entrar no servidor VPN.
+
+    > [!NOTE]
+    > Se o nome de usuário e senha forem usados como o método de autenticação para a VPN IPsec Cisco, eles deverão fornecer o SharedSecret por meio de um perfil personalizado do Apple Configurator.
+  
 - **Tipo de conexão**: selecione o tipo de conexão VPN na lista de fornecedores a seguir:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

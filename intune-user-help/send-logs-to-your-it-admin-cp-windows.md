@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Enviar logs para o suporte de sua empresa no aplicativo do Portal da Empresa para Windows 10
 
 Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empresa em seu dispositivo Windows 10, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+
+> [!Note]       
+> O Portal da Empresa para Windows 10 envia logs de aplicativo diretamente à Microsoft quando o usuário iniciar o fluxo de trabalho para obter ajuda com um problema. Isso facilitará a solução de problemas enviados para a Microsoft.
 
 1. Abra o aplicativo do **Portal da Empresa**.
 2. Selecione a engrenagem **Configurações** e, em seguida, **Enviar Logs**.

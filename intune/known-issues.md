@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -43,7 +43,7 @@ Ao migrar do Intune para o Portal do Azure, você poderá ver um novo grupo cham
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>As folhas de status das políticas migradas não funcionam
 
-Não é possível exibir informações de status de políticas que foram migradas do Portal Clássico do Azure no Portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no Portal Clássico. Para exibir informações de status das políticas de configuração migradas, recrie-as no portal do Azure.
+Não é possível exibir informações de status de políticas que foram migradas do Portal Clássico do Azure no Portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no Portal Clássico. Para exibir informações de status das políticas de configuração migradas, recrie-as no Portal do Azure.
 
 ## <a name="apps"></a>Aplicativos
 
@@ -61,6 +61,8 @@ Aplicativos do iOS adquiridos por volume são exibidos e podem ser atribuídos a
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Várias cópias do mesmo programa iOS de compra por volume serão carregadas
 Não clique no botão **Carregar** várias vezes para o mesmo token VPP. Isso resultará no carregamento de tokens VPP duplicados e na sincronização do aplicativo diversas vezes para o mesmo token VPP.
 
+### <a name="some-managed-browser-traffic-not-routed-through-azure-app-proxy----2463492---"></a>Parte do tráfego do Managed Browser não roteada por meio do Proxy de Aplicativo do Azure <!-- 2463492 -->
+Há um problema conhecido com a integração do Proxy de Aplicativo e do Managed Browser onde determinado tráfego terciário (como chamadas JavaScript ou AJAX) não são roteadas por meio do Proxy de Aplicativo do Azure. Esse é um problema conhecido na versão atual.  
 
 <!-- ## Groups -->
 
@@ -77,7 +79,7 @@ Em dispositivos iOS, a integração de Controle de Acesso à Rede (NAC) não fun
 
 [Criar perfis VPN no Intune](vpn-settings-ios.md) fornece mais detalhes sobre os clientes do Cisco AnyConnect e do Cisco Legacy AnyConnect.
 
-### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Usando o tipo de senha numérica com dispositivos macOS Serra
+### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Usando o tipo de senha numérica com dispositivos macOS Sierra
 
 Atualmente, se você selecionar o **Tipo de senha necessário** **Numérica** em um perfil de restrição de dispositivo em dispositivos macOS Sierra, ele será imposto como **Alfanumérica**. Se você desejar usar uma senha numérica com esses dispositivos, não defina essa configuração.
 Esse problema poderá ser corrigido em uma versão futura do macOS.
@@ -88,7 +90,7 @@ Para obter mais informações sobre essas configurações, consulte [Configuraç
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>As políticas de conformidade do Intune não são mostradas no novo console
 
-As políticas de conformidade criadas no portal clássico são migradas, mas não são exibidas no portal do Azure, devido às alterações de design no portal do Azure. As políticas de conformidade criadas no Portal Clássico do Intune ainda são impostas, mas você deve poder ler e editá-las no Portal Clássico.
+As políticas de conformidade criadas no portal clássico são migradas, mas não são exibidas no Portal do Azure, devido às alterações de design no Portal do Azure. As políticas de conformidade criadas no Portal Clássico do Intune ainda são impostas, mas você deve poder ler e editá-las no Portal Clássico.
 
 Além disso, novas políticas de conformidade criadas no Portal do Azure não estão visíveis no Portal Clássico.
 

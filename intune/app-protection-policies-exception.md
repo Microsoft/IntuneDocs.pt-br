@@ -15,24 +15,22 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Como um administrador, você pode criar exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune. Uma exceção permite que você escolha especificamente quais aplicativos não gerenciados podem transferir dados entre aplicativos gerenciados. Os aplicativos não gerenciados que são incluídos na lista de exceções devem ser considerados confiáveis pelo TI. 
+Como um administrador, você pode criar exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune. Uma exceção permite que você escolha especificamente quais aplicativos não gerenciados podem transferir dados entre aplicativos gerenciados. Os aplicativos não gerenciados que são incluídos na lista de exceções devem ser considerados confiáveis pelo departamento de TI. 
 
 >[!WARNING] 
 > Você é responsável por fazer alterações na política de exceção de transferência de dados. As adições a essa política permitem que aplicativos não gerenciados (aplicativos que não são gerenciados pelo Intune) acessem dados protegidos por aplicativos gerenciados. Esse acesso aos dados protegidos pode resultar em vazamentos de segurança de dados. Adicione exceções de transferência de dados somente a aplicativos que sua organização deve usar, mas que não sejam compatíveis com as APPs (políticas de proteção do aplicativo) do Intune. Além disso, adicione exceções somente para aplicativos que não representam riscos de vazamento de dados.
 
-Esse recurso se aplica quando você cria uma política de proteção de aplicativos do Intune com a transferência de dados definida como **Somente aplicativos gerenciados**. A não ser pelas exceções que você criar, quando a política de transferência de dados estiver definida como **Somente aplicativos gerenciados**, a transferência de dados permanecerá restrita a aplicativos que são gerenciados pelo Intune. É possível criar as restrições usando protocolos (iOS) ou pacotes (Android).
-
-Você pode configurar esse recurso para permitir exceções à política de proteção de aplicativo **restringir transferência de dados** de MAM do Intune. Essa política é necessária somente se você deseja permitir a transferência de dados para um aplicativo que não é compatível com a APP do Intune. Essa política permite que os aplicativos gerenciados pelo Intune, com configurações de transferência de dados definidas como **Somente aplicativos gerenciados**, invoquem aplicativos não gerenciados com base no protocolo de URL (iOS) ou no nome do pacote (Android). O Intune adiciona aplicativos vitais nativos à lista padrão de exceções. 
+Dentro de uma Política de Proteção de Aplicativos do Intune, a configuração de **Permitir que o aplicativo transfira dados para outros aplicativos** como **Aplicativos gerenciados por política** significa que o aplicativo pode transferir dados somente para aplicativos que são gerenciados pelo Intune. Se você precisar permitir a transferência de dados para aplicativos específicos que não dão suporte ao aplicativo do Intune, você pode criar exceções a essa política usando **Selecionar aplicativos para isenção**. As isenções permitem que os aplicativos gerenciados pelo Intune invoquem aplicativos não gerenciados com base no protocolo de URL (iOS) ou o nome do pacote (Android). Por padrão, o Intune adiciona aplicativos vitais nativos à lista de exceções. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Exceções de transferência de dados do iOS
 Para uma política destinada ao iOS, você pode configurar as exceções de transferência de dados por protocolo de URL. Para adicionar uma exceção, consulte a documentação fornecida pelo desenvolvedor do aplicativo para encontrar informações sobre os protocolos de URL compatíveis. Para obter mais informações sobre exceções de transferência de dados do iOS, consulte [Configurações de política de proteção de aplicativo iOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).

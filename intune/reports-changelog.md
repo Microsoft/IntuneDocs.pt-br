@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a44ac33542675457864eead5915a3150e592b1b
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: dd9fb36bb1b8c5e66d104f530690c5d236ea25e4
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
@@ -74,7 +74,7 @@ _Lançado em outubro de 2017_
 
 Agora você pode criar relatórios e visualizações de dados usando as informações de associação de dispositivo de usuário que associam as coleções de entidades do usuário e do dispositivo. O modelo de dados pode ser acessado por meio do arquivo do Power BI (PBIX) recuperado da página do Intune Data Warehouse, por meio do ponto de extremidade OData ou desenvolvendo um cliente personalizado. Para saber mais, veja a [Associação de dispositivo de usuário](reports-ref-user-device.md).
 
-### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Novas entidades no modelo de dados do Data Warehouse <!-- 1479526 --><!-- -->
+### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Novas entidades no modelo de dados de Data Warehouse <!-- 1479526 --><!-- -->
 
  - A entidade, [**UserDeviceAssociation**](reports-ref-user-device.md), adicionada. **UserDeviceAssociation** contém associações de dispositivo de usuário em sua organização. Agora você pode criar relatórios e visualizações de dados usando as informações de associação de dispositivo de usuário que associam as coleções de entidades do usuário e do dispositivo.  
  - A entidade, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), adicionada. **IntuneManagementExtension** contém entidade para dispositivos móveis que acompanham informações como versão e status de instalação.

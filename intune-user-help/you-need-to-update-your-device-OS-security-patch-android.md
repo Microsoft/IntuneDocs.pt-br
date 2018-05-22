@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f2622a173b33fd28c55a9a63321a9f2faa16a5d7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>É necessário atualizar o sistema operacional de seu dispositivo Android
 
-Se você ver uma mensagem “O nível mínimo do patch de segurança do Android não está configurado”, será necessário instalar uma atualização para garantir que o dispositivo permanece seguro. Um _patch_ é liberado para manter o software em funcionamento de forma suave e atualizada. O suporte de sua empresa exige que você instale esse patch para garantir que os dados corporativos são mantidos os mais protegidos possíveis em seu dispositivo. O local do patch de segurança que você precisa varia de acordo com o tipo de dispositivo Android que você tem.
+Se você ver uma mensagem de que o nível do patch de segurança do Android é muito baixo, será necessário instalar uma atualização para garantir que o dispositivo permanece seguro. Um _patch_ é liberado para manter o software em funcionamento de forma suave e atualizada. O suporte de sua empresa exige que você instale esse patch para garantir que os dados corporativos são mantidos os mais protegidos possíveis em seu dispositivo. O local do patch de segurança que você precisa varia de acordo com o tipo de dispositivo Android que você tem.
 
 Caso você tenha um dispositivo Samsung, acesse **Configurações** > **Sobre o telefone** e verifique se a palavra “Knox” é exibida em algum lugar da tela. Nesse caso, siga as instruções do Samsung Knox abaixo.
 
