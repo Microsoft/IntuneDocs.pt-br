@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
@@ -47,7 +47,7 @@ Para criar uma nova senha para um dispositivo, use a ação **Remover senha**.
 
 ## <a name="resetting-android-for-work-passcodes"></a>Redefinindo senhas do Android for Work
 
-Dispositivos Android for Work compatíveis recebem uma nova senha de desbloqueio de dispositivo ou um desafio de perfil gerenciado para o usuário final. Para dispositivos no Android 7.0 ou posterior com perfis de Trabalho, os usuários finais recebem notificações para ativar o token de redefinição de senha imediatamente após o registro ser concluído. A notificação será exibida se a senha de um perfil de trabalho for obrigatória e estiver definida. Depois que a senha for inserida, a notificação será descartada.
+Dispositivos Android for Work compatíveis recebem uma nova senha de desbloqueio de perfil gerenciado ou um desafio de perfil gerenciado para o usuário final. Para dispositivos no Android 7.0 ou posterior com perfis de Trabalho, os usuários finais recebem notificações para ativar o token de redefinição de senha imediatamente após o registro ser concluído. A notificação será exibida se a senha de um perfil de trabalho for obrigatória e estiver definida. Depois que a senha for inserida, a notificação será descartada.
 
 ## <a name="resetting-ios-passcodes"></a>Redefinir senhas do iOS
 

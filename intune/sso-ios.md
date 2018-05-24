@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para logon único de dispositivo iOS
 
@@ -59,13 +59,13 @@ As seções a seguir dão mais detalhes sobre cada um dos campos de logon único
 
 ### <a name="username-attribute-from-aad-and-realm"></a>Atributo de nome de usuário do AAD e do Realm
 
-- Se **Nome do Princípio do Usuário** estiver selecionado para esse campo, ele é analisada da seguinte maneira:
+- Se o **Nome UPN** estiver selecionado para esse campo, ele será analisado da seguinte maneira:
 
    ![Atributo de nome de usuário](media/User-name-attribute.png)
 
    Você também tem a opção de substituir o realm pelo texto digitado na caixa de texto **Realm**.
 
-   Por exemplo, Contoso pode ter várias sub-regiões, como América do Norte, Europa e Ásia. Ela talvez queira que os usuários na Ásia usem o conteúdo SSO e o aplicativo exige o UPN no formato *username@asia.contoso.com*. Nesse caso, se você selecionar **Nome do Princípio do Usuário**, por padrão, o realm para cada usuário será obtido do AAD, podendo ser apenas *contoso.com*. Especialmente para os usuários na Ásia, você pode criar esse conteúdo e substituir o realm pelo valor *asia.contoso.com*. Agora o UPN do usuário final se torna *username@asia.contoso.com* e não *username@contoso.com*.
+   Por exemplo, Contoso pode ter várias sub-regiões, como América do Norte, Europa e Ásia. Ela talvez queira que os usuários na Ásia usem o conteúdo SSO e o aplicativo exige o UPN no formato *username@asia.contoso.com*. Nesse caso, se você selecionar **Nome UPN**, por padrão, o realm para cada usuário será obtido do AAD, podendo ser apenas *contoso.com*. Especialmente para os usuários na Ásia, você pode criar esse conteúdo e substituir o realm pelo valor *asia.contoso.com*. Agora o UPN do usuário final se torna *username@asia.contoso.com* e não *username@contoso.com*.
 
 - Se você selecionar **ID do Dispositivo**, o Intune selecionará automaticamente a ID do Dispositivo Intune.
 

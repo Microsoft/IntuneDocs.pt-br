@@ -5,7 +5,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da6f351f4ce5cf6b0aeae977ffbef56dab5bd2df
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: c505e881fe06d6f4da217533d0507731ac22a29f
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar políticas de acesso condicional baseadas em aplicativo com o Intune
 
@@ -27,39 +27,11 @@ ms.lasthandoff: 04/26/2018
 Este artigo descreve como configurar políticas de acesso condicional baseadas em aplicativo para aplicativos que fazem parte da lista de aplicativos aprovados. A lista de aplicativos aprovados consiste em aplicativos que foram testados pela Microsoft.
 
 > [!IMPORTANT]
-> Este artigo descreve as etapas para adicionar uma política de acesso condicional baseada em aplicativo usando o Exchange Online, mas é possível usar as mesmas etapas ao adicionar outros aplicativos como o SharePoint Online, Microsoft Teams, etc. na lista de aplicativos aprovados.
-
-## <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de acesso condicional baseado no aplicativo
-1.  Acesse o [Portal do Azure](https://portal.azure.com) e entre com suas credenciais.
-
-2.  Escolha **Todos os serviços** e digite "Intune".
-
-3.  Escolha **Proteção de Aplicativo do Intune**.
-
-4.  Em **Proteção de Aplicativo do Intune**, na seção **Acesso condicional**, escolha **Exchange Online**.
-
-    ![Captura de tela do painel de configurações mostrando a seção acesso condicional com a opção Exchange Online em destaque](./media/MAM-conditional-access-1.png)
-
-6. No painel **Aplicativos permitidos**, escolha a opção **Permitir aplicativos compatíveis com as políticas de aplicativo do Intune** para permitir que somente aplicativos compatíveis com as políticas de proteção de aplicativo do Intune acessem o Exchange Online. Ao selecionar essa opção, a lista de aplicativos com suporte é exibida.
-
-    > [!NOTE]
-    > Todos os clientes de email do Exchange Active Sync, incluindo os clientes de email interno no iOS e no Android que se conectam ao Exchange Online, são impedidos de enviar ou receber emails. Em vez disso, os usuários receberão um único email informando que eles precisam usar o aplicativo de email do Outlook.
-
-7. Para aplicar essa política aos usuários, abra o painel **Grupos de usuários com restrições** e escolha **Adicionar grupo de usuários**. Selecione um ou mais grupos de usuários ao(s) qual(is) essa política deve ser aplicada.
-
-    ![Captura de tela do painel grupo de usuários com restrições com a opção adicionar grupo de usuários em destaque](./media/mam-ca-add-user-group.png)
-
-8. Você pode desejar que alguns usuários no grupo de usuários que você selecionou na etapa anterior não sejam afetados por essa política. Nesses casos, adicione o grupo de usuários à lista de grupos de usuários isentos. No painel **Exchange Online**, escolha **Grupos de usuários isentos**. Escolha **Adicionar grupo de usuário** para abrir a lista de grupos de usuários. Selecione os grupos que você deseja isentar dessa política.
-
-## <a name="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy"></a>Para modificar ou excluir grupos de usuários de uma política de autoridade de certificação baseada em aplicativo existente
-
-1. Abra o painel **Grupos de usuários com restrições** e, em seguida, realce o grupo de usuários que você deseja excluir.
-2. Clique nas reticências para ver as opções de exclusão.
-3. Escolha **Excluir** para remover o grupo de usuários da lista.
+> Este artigo explica as etapas para adicionar uma política de acesso condicional com base no aplicativo. Observe que você pode usar as mesmas etapas ao adicionar aplicativos como o SharePoint Online, Microsoft Teams e Microsoft Exchange Online da lista de aplicativos aprovados.
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Criar políticas de acesso condicional baseadas em aplicativo em cargas de trabalho do Azure AD
 
-A partir da versão 1708 do Intune, os administradores de TI podem criar políticas de acesso condicional baseadas em aplicativo da carga de trabalho do Azure AD. Esse recurso traz facilidade, pois você não precisa alternar entre as cargas de trabalho do Azure e do Intune.
+Os administradores de TI podem criar políticas de acesso condicional com base no aplicativo usando a carga de trabalho do Azure AD. Esse recurso traz facilidade, pois você não precisa alternar entre as cargas de trabalho do Azure e do Intune.
 
 > [!IMPORTANT]
 > Você precisa ter uma licença Premium do Azure AD para criar políticas de acesso condicional do Azure AD no portal do Intune no Azure.

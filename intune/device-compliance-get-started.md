@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade do dispositivo no Intune
 
@@ -159,9 +159,9 @@ As **Configurações de política de conformidade** (Portal do Azure > Conformid
   - **Em conformidade**: o recurso de segurança está desativado
   - **Não em conformidade** (padrão): recurso de segurança ligado
 
-  Se um dispositivo não tiver uma política de conformidade atribuída, ele será considerado como não estando em conformidade. Por padrão, os dispositivos são marcados como **Não está em conformidade**. Se você usar acesso condicional, recomendamos deixar a configuração padrão como **Não está em conformidade**. Se um usuário final não estiver em conformidade porque uma política não está atribuída, o Portal da Empresa listará `No compliance policies have been assigned`.
+  Se um dispositivo não tiver uma política de conformidade atribuída, ele será considerado como não estando em conformidade. Por padrão, os dispositivos são marcados como **Em conformidade**. Se você usa acesso condicional, recomendamos alterar a configuração para **Não em conformidade**. Se um usuário final não estiver em conformidade porque uma política não está atribuída, o Portal da Empresa listará `No compliance policies have been assigned`.
 
-- **Detecção avançada de jailbreak**: quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de localização do usuário não são armazenados pelo Intune.
+- **Detecção avançada de jailbreak**: quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
 
   Habilitar essa configuração exige que os dispositivos:
   - Habilitem serviços de localização no nível do sistema operacional

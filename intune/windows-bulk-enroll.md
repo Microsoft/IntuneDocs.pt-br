@@ -6,7 +6,7 @@ keywords: ''
 author: Erikje
 ms.author: erikje
 manager: dougeby
-ms.date: 10/23/2017
+ms.date: 5/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 4f7d9cbf4f67a1205189deb836d738a70e940125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
+ms.sourcegitcommit: d9211837ec4580dd33cc92502423e54f1f369eb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -30,7 +30,7 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para registro em massa de dispositivos Windows
 
-- Dispositivos com Atualização do Windows 10 para Criadores ou posteriores
+- Dispositivos que executam a atualização do Windows 10 Creator (build 1703) ou posteriores
 - [Registro automático do Windows](windows-enroll.md#enable-windows-10-automatic-enrollment)
 
 ## <a name="create-a-provisioning-package"></a>Criar um pacote de provisionamento

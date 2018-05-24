@@ -1,12 +1,11 @@
 ---
-title: Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
-titlesuffix: Microsoft Intune
-description: Use a Ferramenta de disposição do aplicativo e o SDK de aplicativos para permitir que seus aplicativos de linha de negócios personalizados usem as políticas de proteção de aplicativo no Microsoft Intune.
+title: Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune
+description: As informações neste tópico ajudam você a decidir quando deve usar a Ferramenta de Disposição do Aplicativo e o SDK do Aplicativo para permitir que seus aplicativos de linha de negócios personalizados usem políticas de gerenciamento de aplicativos móveis.
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Você pode habilitar seus aplicativos para usar políticas de proteção usando a Ferramenta de Encapsulamento de Aplicativos do Intune ou o SDK de Aplicativos do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
 
@@ -34,7 +33,6 @@ O código-fonte para usar a ferramenta não é necessário, mas você precisa de
 
 A Ferramenta de Disposição de Aplicativo **não** dá suporte a aplicativos da App Store da Apple ou da Google Play Store. Ele também não dá suporte a alguns recursos que exigem integração do desenvolvedor (consulte a tabela de comparação de recursos a seguir).
 
-
 Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativos para políticas de proteção de aplicativos em dispositivos que não estão registrados no Intune, consulte [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune) (Proteger aplicativos e dados de linha de negócios em dispositivos não registrados no Microsoft Intune).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para usar a Ferramenta de Encapsulamento de Aplicativos
@@ -44,7 +42,6 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativo
 * Você não tem acesso ao código-fonte do aplicativo
 * Você não desenvolveu o aplicativo
 * Seu aplicativo tem o mínimo de experiências de autenticação do usuário
-
 
 ### <a name="supported-app-development-platforms"></a>Plataformas de desenvolvimento de aplicativo com suporte
 
@@ -79,35 +76,43 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 > [!NOTE]
 > A Ferramenta de Disposição de Aplicativo só pode ser usada quando você estiver usando o Intune autônomo ou o Intune com o Configuration Manager.
 
-|                                                         Recurso                                                          | SDK do Aplicativo | Ferramenta de Encapsulamento de Aplicativo |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo                              |    X    |         X         |
-|                                        Impedir backups do Android, iTunes ou iCloud                                        |    X    |         X         |
-|                                         Permitir que o aplicativo transfira dados para outros aplicativos                                         |    X    |         X         |
-|                                        Permitir que o aplicativo receba dados de outros aplicativos                                         |    X    |         X         |
-|                                      Restringir recortar, copiar e colar com outros aplicativos                                       |    X    |         X         |
-|                                              Solicitar PIN simples para acesso                                               |    X    |         X         |
-|                                         Substituir o PIN do aplicativo interno pelo PIN do Intune                                         |    X    |                   |
-|                                     Especificar o número de tentativas antes da redefinição do PIN                                      |    X    |         X         |
-|                                             Permitir a impressão digital em vez do PIN                                             |    X    |         X         |
-|                                         Exigir credenciais corporativas para acesso                                         |    X    |         X         |
-|                             Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root                              |    X    |         X         |
-|                                                     Criptografar dados do aplicativo                                                     |    X    |         X         |
-|                           Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos                            |    X    |         X         |
-|                                             Especificar o período de cortesia offline                                             |    X    |         X         |
-|                                           Bloquear captura de tela (somente para Android)                                            |    X    |         X         |
-|                                        Suporte para MAM sem registro de dispositivo                                         |    X    |         X         |
-|                                                        Apagamento completo                                                         |    X    |         X         |
-| Apagamento seletivo <br></br><strong>Observação:</strong> para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido. |    X    |                   |
-|                                                    Impedir "Salvar como"                                                     |    X    |                   |
-|                                            Configuração de aplicativo direcionado                                            |    X    |                   |
-|                                                Suporte para múltiplas identidades                                                |    X    |                   |
-|                                                    Estilo Personalizável                                                    |    X    |                   |
+|Recurso|SDK do Aplicativo|Ferramenta de Encapsulamento de Aplicativo|
+|-----------|---------------------|-----------|
+|Restringir o conteúdo da web a ser exibido em um navegador gerenciado corporativo|X|X|
+|Impedir backups do Android, iTunes ou iCloud|X|X|
+|Permitir que o aplicativo transfira dados para outros aplicativos|X|X|
+|Permitir que o aplicativo receba dados de outros aplicativos|X|X|
+|Restringir recortar, copiar e colar com outros aplicativos|X|X|
+|Solicitar PIN simples para acesso|X|X|
+|Substituir o PIN do aplicativo interno pelo PIN do Intune|X||
+|Especificar o número de tentativas antes da redefinição do PIN|X|X|
+|Permitir a impressão digital em vez do PIN|X|X|
+|Permitir reconhecimento facial, em vez de PIN (somente iOS)|X|X|
+|Exigir credenciais corporativas para acesso|X|X|
+|Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root|X|X|
+|Criptografar dados do aplicativo|X|X|
+|Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos|X|X|
+|Especificar o período de cortesia offline|X|X|
+|Bloquear captura de tela (somente para Android)|X|X|
+|Suporte para MAM sem registro de dispositivo|X|X|
+|Apagamento completo|X|X|
+|Apagamento seletivo <br></br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
+|Impedir "Salvar como"|X||
+|Configuração de aplicativo direcionado|X||
+|Suporte para múltiplas identidades|X||
+|Estilo Personalizável |X|||
+|Conexões de VPN do aplicativo sob demanda com mVPN Citrix|X|X| 
+|Desabilitar a sincronização de contatos|X|X|
+|Desabilitar a impressão|X|X|
+|Exigir versão mínima do aplicativo|X|X|
+|Exigir sistema operacional mínimo (iOS e Android)|X|X|
+|Exibir versão mínima do patch de segurança do Android (somente Android)|X|X|
+|Exigir SDK mínimo do Intune para iOS (somente iOS)|X|X|
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Para saber mais sobre as políticas de proteção de aplicativos e o Intune, consulte os tópicos a seguir:
 
-  -  [Ferramenta de disposição do aplicativo Android](app-wrapper-prepare-android.md)</br>
+  - [Ferramenta de disposição do aplicativo Android](app-wrapper-prepare-android.md)</br>
   - [Ferramenta de encapsulamento de aplicativos do iOS](app-wrapper-prepare-ios.md)</br>
   - [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

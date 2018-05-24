@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Configurações de restrição de dispositivo Android e Samsung Knox Standard do Microsoft Intune 
 
@@ -47,6 +47,10 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 ## <a name="password"></a>Senha
 
 - **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.|Sim|Sim|
+
+    > [!NOTE]
+    > Os dispositivos Samsung Knox automaticamente exigem um PIN de quatro dígitos durante o registro do MDM. Dispositivos Android nativos podem automaticamente exigir que um PIN fique em conformidade com acesso condicional.
+
 - **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre 4 e 16 caracteres).
 - **Máximo de minutos de inatividade para bloqueio da tela** – Especifica o número de minutos de inatividade antes que a tela do dispositivo seja bloqueada automaticamente.
 - **Número de falhas de entrada antes de apagar o dispositivo** – Especifica o número de falhas de entrada repetidas permitidas antes do dispositivo ser apagado.
@@ -55,7 +59,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
     - **Padrão do dispositivo**
     - **Biométrico de segurança baixa**
     - **Pelo menos, numérico**
-    - **Numérico complexo** – Números repetidos ou consecutivos, como '1111' ou '1234' não são permitidos<sup>1</sup>
+    - **Numérico complexo** – números repetidos ou consecutivos (como "1111" ou "1234") não são permitidos.<sup>1</sup>
     - **Pelo menos, alfabético**
     - **Pelo menos, alfanumérico**
     - **Pelo menos alfanumérico com símbolos**
@@ -63,6 +67,9 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Desbloqueio por impressão digital (somente Samsung Knox)** – permite o uso de uma impressão digital para desbloquear os dispositivos com suporte.
 - **Smart Lock e outros agentes de confiança** – permite controlar o recurso de Smart Lock em dispositivos Android compatíveis (Samsung Knox Standard 5.0 e posterior). Essa funcionalidade do telefone, às vezes conhecida como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo está em uma localização confiável. Por exemplo, isso pode ser usado quando o dispositivo está conectado a um dispositivo Bluetooth específico ou quando está próximo a uma marcação NFC. Você pode usar essa configuração para impedir que os usuários configurem o Smart Lock.
 - **Criptografia** – Exige que os arquivos no dispositivo sejam criptografados.
+
+    > [!NOTE]
+    > Quando uma política de criptografia é imposta, os dispositivos Samsung Knox exigem que os usuários definam uma senha complexa de 6 caracteres como a senha do dispositivo.
 
 <sup>1</sup> Antes de atribuir essa configuração a dispositivos, lembre-se de atualizar o aplicativo do Portal da Empresa para a versão mais recente nesses dispositivos.
 

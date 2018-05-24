@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-android-devices"></a>Registrar dispositivos Android
 
@@ -58,7 +58,8 @@ Para obter mais informações, consulte [Dados que o Intune envia ao Google](dat
 Se você ainda não o fez, prepare-se para o gerenciamento de dispositivo móvel ao [configurar a autoridade de gerenciamento do dispositivo móvel](mdm-authority-set.md) como **Microsoft Intune**.
 2. **Configurar a associação do Android for Work**<br>
     
-   a. Entre no [Intune no Portal do Azure](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Android** > **Google Play Gerenciado**.
+   a. Entre no [Intune no Portal do Azure](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Android** > **Google Play Gerenciado**.  Se você estiver usando uma função de administrador do Intune personalizada, o acesso a isso exigirá permissões de Leitura e Atualização da Organização.
+   
    ![Tela de registro do Android for Work](./media/android-work-bind.png)
 
    b. Selecione **Eu concordo** para conceder à Microsoft permissão para [enviar informações de usuário e dispositivo para o Google](data-intune-sends-to-google.md). 

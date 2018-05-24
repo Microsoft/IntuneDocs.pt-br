@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Remover seu dispositivo Windows do gerenciamento do Intune
 
@@ -72,13 +72,13 @@ Execute as etapas a seguir para remover um dispositivo móvel com Windows 8.1 do
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Remoção de suas informações pessoais depois de remover o Portal da Empresa
 Há dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
--   **Logs de diagnóstico**: dados de atividade de aplicativos padrão que a Microsoft coleta são automaticamente apagados quando você remove o dispositivo do Portal da Empresa. Dados de atividade do aplicativo são, por exemplo, dados sobre quanto tempo o aplicativo ficou aberto ou se o aplicativo falhou.
+-   **Logs de diagnóstico**: dados de atividade de aplicativos padrão que a Microsoft coleta. Isso é apagado automaticamente quando você desinstala o aplicativo Portal da Empresa. Dados de atividade do aplicativo são, por exemplo, dados sobre quanto tempo o aplicativo ficou aberto ou se o aplicativo falhou.
 -   **Cache de aplicativo**: arquivos de suporte que são necessários para o aplicativo funcionar, como ícones e configurações.
 
-São necessárias algumas etapas para excluir completamente essas informações.
+Para excluir os logs armazenados e o cache, execute uma das seguintes etapas:
 
-1. Desinstale o Portal da Empresa. [Desinstalar o aplicativo do Portal da Empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) removerá os dados de aplicativo armazenados no seu dispositivo.  
+* [Desinstalar o aplicativo Portal da Empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Redefina o Portal da Empresa para redefinir os dados de aplicativo armazenados. Abra o aplicativo **Configurações** e selecione > **Aplicativos** > **Portal da Empresa** > **Opções avançadas** > **Redefinir**. 
+* Redefina o aplicativo Portal da Empresa. Abra o aplicativo **Configurações** e selecione > **Aplicativos** > **Portal da Empresa** > **Opções avançadas** > **Redefinir**. 
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

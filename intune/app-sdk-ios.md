@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
 > [!NOTE]
-> Primeiro, leia o artigo [Guia de Introdução ao SDK de Aplicativos do Intune](app-sdk-get-started.md), que explica como se preparar para a integração em cada plataforma com suporte.
+> Considere ler o artigo [Guia de Introdução ao SDK de Aplicativos do Intune](app-sdk-get-started.md), que explica como se preparar para a integração em cada plataforma compatível.
 
 O SDK de Aplicativos do Microsoft Intune para iOS permite incorporar políticas de proteção de aplicativo do Intune (também conhecidas como **políticas MAM** ou **APP**) ao seu aplicativo iOS nativo. Um aplicativo habilitado para MAM é um que esteja integrado ao SDK de Aplicativos do Intune. Os administradores de TI podem implantar políticas de proteção do aplicativo ao seu aplicativo móvel quando o Intune gerencia o aplicativo ativamente.
 
@@ -81,8 +81,8 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
 
 1. **Opção 1 (recomendado)**: vincule `IntuneMAM.framework` ao seu projeto. Arraste `IntuneMAM.framework` para a lista **Binários inseridos** do destino do projeto.
 
-    > [!NOTE]
-    > Se você usar a estrutura, precisará remover manualmente as arquiteturas de simulador da estrutura universal antes de enviar seu aplicativo à App Store. Confira [Enviar seu aplicativo à App Store](#Submit-your-app-to-the-App-Store) para obter mais detalhes.
+   > [!NOTE]
+   > Se você usar a estrutura, precisará remover manualmente as arquiteturas de simulador da estrutura universal antes de enviar seu aplicativo à App Store. Confira [Enviar seu aplicativo à App Store](#Submit-your-app-to-the-App-Store) para obter mais detalhes.
 
 2. **Opção 2**: link para a biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` na lista **Estruturas e Bibliotecas Vinculadas** do destino do projeto.
 
@@ -179,7 +179,7 @@ Siga as etapas abaixo para vincular seu aplicativo aos binários da ADAL:
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Compartilhar o cache de token da ADAL com outros aplicativos assinados com o mesmo perfil de provisionamento?**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Compartilhar o cache de token ADAL com outros aplicativos assinados com o mesmo perfil de provisionamento?
 
 Siga as instruções abaixo se você deseja compartilhar tokens da ADAL entre aplicativos assinados com o mesmo perfil de provisionamento:
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] A ferramenta IntuneMAMConfigurator pode ser usada para adicionar os tipos de Intune à regra de ativação. Se a regra de ativação existente usar as constantes de cadeia de caracteres predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText etc.), a sintaxe de predicado poderá ficar muito complexa. A ferramenta IntuneMAMConfigurator também pode ser usada para converter a regra de ativação das constantes de cadeia de caracteres em uma cadeia de caracteres de predicado enquanto se adicionam os tipos do Intune. O IntuneMAMConfigurator encontra-se em nosso repositório GitHub. 
+> [!NOTE]
+> A ferramenta IntuneMAMConfigurator pode ser usada para adicionar os tipos de Intune à regra de ativação. Se a regra de ativação existente usar as constantes de cadeia de caracteres predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText etc.), a sintaxe de predicado poderá ficar muito complexa. A ferramenta IntuneMAMConfigurator também pode ser usada para converter a regra de ativação das constantes de cadeia de caracteres em uma cadeia de caracteres de predicado enquanto se adicionam os tipos do Intune. O IntuneMAMConfigurator encontra-se em nosso repositório GitHub. 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Habilitar a configuração voltada para MAM para seus aplicativos iOS
