@@ -1,6 +1,6 @@
 ---
 title: Restrições de dispositivo para o Windows Holographic for Business no Microsoft Intune – Azure | Microsoft Docs
-description: Leia sobre e defina configurações de restrição de dispositivo no Microsoft Intune para o Windows Holographic for Business, incluindo cancelamento do registro, geolocalização, senhas, instalação de aplicativos da App Store, cookies e pop-ups no Edge, Windows Defender, pesquisa, armazenamento e nuvem, conectividade por Bluetooth, hora do sistema e dados de uso no Azure.
+description: Leia sobre e defina configurações de restrição de dispositivo no Microsoft Intune para o Windows Holographic for Business, incluindo cancelamento do registro, geolocalização, senhas, instalação de aplicativos da App Store, cookies e pop-ups no Microsoft Edge, Windows Defender, pesquisa, armazenamento e nuvem, conectividade por Bluetooth, hora do sistema e dados de uso no Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327867"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configurações de restrição de dispositivo para o Windows Holographic for Business no Intune
 
@@ -40,13 +41,13 @@ As seguintes configurações de restrição de dispositivo são compatíveis com
 -   **Instalação de aplicativo confiável** - permite que os aplicativos assinados com um certificado de confiança sejam carregados por sideload.
 -   **Desbloqueio do desenvolvedor** - permite que configurações de desenvolvedor do Windows, como a permissão de sideload de aplicativos, sejam modificadas pelo usuário final.
 
-## <a name="edge-browser"></a>Navegador Edge
+## <a name="edge-browser"></a>Navegador Microsoft Edge
 
 -   **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
 -   **Pop-ups** – Bloqueia janelas pop-up no navegador (aplica-se a somente ao Windows 10 Desktop).
 -   **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
--   **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Edge.
-- **Enviar cabeçalhos Do Not Track** – Configura o navegador Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
+-   **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Microsoft Edge.
+- **Enviar cabeçalhos Do Not Track** – Configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 

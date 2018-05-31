@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31836920"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
@@ -36,7 +37,7 @@ A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenc
    - **Visão geral** mostra um instantâneo visual dos dispositivos registrados e também quantos dispositivos estão usando diferentes plataformas, incluindo Android, iOS e muito mais.
    - **Todos os dispositivos** mostra uma lista dos dispositivos registrados que você gerencia.
 
-     Use o recurso **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Edge, Chrome).
+     Use o recurso **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Microsoft Edge, Chrome).
 
      Selecione qualquer dispositivo para [exibir detalhes adicionais sobre o dispositivo](device-inventory.md), incluindo detalhes de hardware, aplicativos instalados, status da política de conformidade e muito mais.
 

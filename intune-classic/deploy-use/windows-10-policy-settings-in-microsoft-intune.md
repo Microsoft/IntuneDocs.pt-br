@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31027639"
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Configurações de política do Intune para dispositivos Windows 10 no Microsoft Intune
 
@@ -121,11 +122,11 @@ Use a **política de configuração geral** do Microsoft Intune para Windows 10 
 |**Permitir tráfego intranet no Internet Explorer**|Permite que os usuários abram sites da intranet no Internet Explorer<br>(Somente Windows 10 Desktop)|
 |**Permitir Não Rastrear**|Configura o navegador Microsoft Edge para enviar cabeçalhos Não Rastrear para sites visitados pelos usuários|
 |**Habilitar SmartScreen**||
-|**Permitir scripts ativos**|Permite que scripts, como JavaScript, sejam executados no navegador Edge|
+|**Permitir scripts ativos**|Permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge|
 |**Permitir pop-ups**|Aplica-se somente à área de trabalho do Windows 10|
 |**Permitir cookies**||
 |**Permitir Preenchimento Automático**|Habilita os usuários a alterarem as configurações de preenchimento automático no navegador<br>(Somente Windows 10 Desktop)|
-|**Permitir Gerenciador de Senhas**|Habilita ou desabilita o recurso de Gerenciador de Senhas do Edge|
+|**Permitir Gerenciador de Senhas**|Habilita ou desabilita o recurso de Gerenciador de Senhas do Microsoft Edge|
 |**Local do Enterprise Mode Site List**|Especifica onde encontrar a lista de sites que será aberta no modo Enterprise. Os usuários não podem editar essa lista.<br>(Somente Windows 10 Desktop)|
 
 ### <a name="apps"></a>Aplicativos

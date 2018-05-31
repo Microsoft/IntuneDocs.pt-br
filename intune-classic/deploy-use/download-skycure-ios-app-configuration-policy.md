@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014190"
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Baixar política de configuração de aplicativo iOS do Skycure
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 Você precisa fazer logon no Console de Gerenciamento do Skycure para executar as próximas etapas.
 
 > [!TIP] 
-> Se estiver usando o Microsoft Internet Explorer 11 ou o Edge, talvez seja necessário abrir o Console de gerenciamento do Skycure usando o modo privado.
+> Se estiver usando o Microsoft Internet Explorer 11 ou o Microsoft Edge, talvez seja necessário abrir o Console de gerenciamento do Skycure usando o modo privado.
 
 ## <a name="to-download-the-ios-app-configuration-policy"></a>Para baixar a política de configuração de aplicativo do iOS
 
