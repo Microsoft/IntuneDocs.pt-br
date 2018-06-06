@@ -5,7 +5,7 @@ title: [ARTICLE TITLE | SERVICE NAME] description: keywords: author: [GITHUB USE
 # <a name="optional-metadata"></a>metadados opcionais
 
 #<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audiência:
+#<a name="audience"></a>audience:
 #<a name="msdevlang"></a>ms.devlang:
 #<a name="msreviewer-alias"></a>ms.reviewer: [ALIAS]
 #<a name="mssuite-ems"></a>ms.suite: ems

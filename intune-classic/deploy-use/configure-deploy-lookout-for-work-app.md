@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569384"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Configurar e implantar o aplicativo Lookout for Work
 
@@ -85,11 +86,11 @@ Este artigo explica como configurar e implantar o aplicativo Lookout for Work em
 
    Escolha a opção **Instalação Obrigatória** para exigir que o aplicativo Lookout seja instalado no dispositivo do usuário.
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>O que acontece quando o aplicativo implantado é aberto no dispositivo
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quando o usuário abre o Lookout for Work no dispositivo, é solicitado que ele ative o aplicativo e escolha a opção Entrar com o Azure Active Directory. Um passo a passo detalhado com o fluxo do usuário final pode ser encontrado nos tópicos a seguir:
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>O que acontece quando o aplicativo implantado é aberto no dispositivo 
+Quando o usuário abre o Lookout for Work no dispositivo, é solicitado que ele ative o aplicativo e escolha a opção Entrar com o Azure Active Directory. Um passo a passo detalhado com o fluxo do usuário final pode ser encontrado nos tópicos a seguir:
 
 * [Será solicitada a instalação do Lookout for Work em seu dispositivo Android](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [Você precisa resolver uma ameaça encontrada pelo Lookout for Work no dispositivo Android](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Próximas etapas

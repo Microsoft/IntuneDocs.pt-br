@@ -17,7 +17,6 @@
 ### [Organizar usuários e dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Implantar políticas e aplicativos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Personalizar o Portal da Empresa](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Registrar dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Tarefas pós-configuração](get-started/post-configuration-tasks.md)
 ## Próximas etapas
 ### [Impedir vazamentos de dados da empresa de aplicativos móveis do Office 365](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Restaurar dispositivos iOS gerenciados](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Configurações do Android e do Samsung KNOX](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Usar uma política personalizada para criar um perfil de Wi-Fi com uma chave pré-compartilhada](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Usar uma política personalizada para criar um perfil de VPN por aplicativo para dispositivos Android](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Usar políticas personalizadas para permitir e bloquear aplicativos para dispositivos Samsung KNOX](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Configurações do Android for Work](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Configurações do Windows 8 e do Windows 8.1](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Desativar dispositivos](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Adicionar aplicativos](deploy-use/add-apps.md)
-### [Adicionar aplicativos para dispositivos registrados](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Sideload de aplicativos do Windows](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Implantar aplicativos](deploy-use/deploy-apps.md)
-### [Implantar aplicativos em dispositivos e computadores](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Implantar aplicativos em dispositivos Android for Work](deploy-use/android-for-work-apps.md)
-### [Monitorar aplicativos](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Gerenciar aplicativos comprados por volume](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Gerenciar aplicativos iOS comprados por volume](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Gerenciar aplicativos Windows comprados por volume](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Configurar aplicativos
 ### [Atualizar aplicativos](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [Usar aplicativos com AC baseada em aplicativo](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [Bloquear aplicativos sem ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Proteger o acesso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Proteger o acesso com base no dispositivo, na rede e no risco do aplicativo](deploy-use/mobile-threat-defense.md)
 #### [Conector de Defesa contra Ameaças Móveis da Lookout](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [Validar políticas de proteção do aplicativo](deploy-use/validate-mobile-application-management.md)
 #### [Monitorar a conformidade com a política de proteção do aplicativo](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [Gerenciar a transferência de dados entre aplicativos iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [Console de administração do Intune para políticas de MAM](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Preparar aplicativos de linha de negócios para MAM](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## Desativar aplicativos e dados
 ### [Usar o apagamento completo ou seletivo](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Desativar aplicativos](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Apagar dados de aplicativos de empresa gerenciados](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Alterar sua autoridade de MDM](deploy-use/change-mdm-authority.md)
