@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 05/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b942f794136ce1a1d7851b0b04d6df70ea7174c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744747"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são perfis de dispositivo do Microsoft Intune?
 
@@ -29,7 +30,7 @@ O Microsoft Intune inclui configurações e recursos que você pode habilitar ou
 - Um perfil de Wi-Fi, que concede a diferentes dispositivos o acesso ao seu WiFi corporativo
 - Um perfil de VPN, que concede a diferentes dispositivos o acesso ao servidor de VPN na sua rede corporativa
 
-Este tópico oferece uma visão geral dos diferentes perfis que você pode criar para seus dispositivos. Use esses perfis para permitir e/ou impedir alguns recursos nos dispositivos.
+Este artigo apresenta uma visão geral dos diferentes perfis que você pode criar para seus dispositivos. Use esses perfis para permitir e/ou impedir alguns recursos nos dispositivos.
 
 ## <a name="before-you-begin"></a>Antes de começar
 Para ver os recursos disponíveis, abra o [Portal do Azure](https://portal.azure.com) e abra o recurso do Intune. 
@@ -45,18 +46,18 @@ A **Configuração do dispositivo** inclui as seguintes opções:
 
 [Criar perfis de dispositivo](device-profile-create.md) fornece diretrizes passo a passo para criar um perfil. 
 
-## <a name="device-features-profile"></a>Perfil de recursos de dispositivo
+## <a name="device-features---ios-and-macos"></a>Recursos do dispositivo – iOS e macOS
 
 Os [recursos de dispositivo](device-features-configure.md) controlam os recursos em dispositivos iOS e macOS, como AirPrint, notificações e configurações compartilhadas do dispositivo.
 
-Esse recurso é compatível com:  
+Esse recurso é compatível com:
 - iOS 
 - macOS
 
-## <a name="device-restrictions-profile"></a>Perfil de restrições de dispositivo
+## <a name="device-restrictions"></a>Restrições de dispositivo
 As [restrições de dispositivo](device-restrictions-configure.md) controlam a segurança, o hardware, o compartilhamento de dados e outras configurações nos dispositivos. Por exemplo, crie um perfil de restrição de dispositivo que impeça que os usuários de dispositivos iOS usem a câmera do dispositivo. 
 
-Esse recurso é compatível com: 
+Esse recurso é compatível com:
 
 - Android
 - iOS
@@ -64,7 +65,22 @@ Esse recurso é compatível com:
 - Windows 10
 - Windows 10 Team
 
-## <a name="email-profile"></a>Perfil de email
+## <a name="endpoint-protection"></a>Endpoint Protection
+As [configurações de proteção de ponto de extremidade do Windows 10](endpoint-protection-windows-10.md) definem as configurações do BitLocker e do Windows Defender para dispositivos Windows 10.
+
+Para integrar a WDATP (Proteção Avançada contra Ameaças do Windows Defender) ao Microsoft Intune, consulte [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (Configurar pontos de extremidade usando ferramentas de MDM (Gerenciamento de dispositivo móvel)).
+
+Esse recurso é compatível com:
+- Windows 10 e posterior
+
+## <a name="kiosk"></a>Quiosque
+
+O perfil de [Configurações de quiosque](kiosk-settings.md) configura um dispositivo para executar um aplicativo ou executar vários aplicativos. Você também pode personalizar outros recursos em um quiosque, incluindo um menu de início e um navegador da Web.
+
+Esse recurso é compatível com:
+- Windows 10 e posterior
+
+## <a name="email"></a>Email
 O perfil [configurações de email](email-settings-configure.md) cria, atribui e monitora as configurações de email do Exchange ActiveSync nos dispositivos. Os perfis de email ajudam a garantir consistência, reduzem chamadas de suporte e permitem que os usuários finais tenham acesso ao email da empresa em seus dispositivos pessoais sem que precisem fazer qualquer configuração. 
 
 Esse recurso é compatível com: 
@@ -74,20 +90,10 @@ Esse recurso é compatível com:
 - Windows Phone 8.1
 - Windows 10
 
-## <a name="wi-fi-profile"></a>Perfil de Wi-Fi
-As [configurações de Wi-Fi](wi-fi-settings-configure.md) atribuem configurações de rede sem fio para usuários e dispositivos. Quando você atribui um perfil de Wi-Fi, os usuários obtém acesso ao Wi-Fi de sua empresa sem precisar configurá-lo por conta própria. 
-
-Esse recurso é compatível com: 
-
-- Android
-- iOS
-- macOS
-- Windows 8.1 (somente importação)
-
-## <a name="vpn-profile"></a>Perfil da VPN
+## <a name="vpn"></a>VPN
 As [configurações de VPN](vpn-settings-configure.md) atribuem perfis de VPN para usuários e dispositivos na organização, para que eles possam se conectar à rede de forma fácil e segura. 
 
-As VPNs (redes virtuais privadas) oferecem aos usuários acesso remoto seguro à rede da empresa. Dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o servidor VPN. 
+As VPNs (redes virtuais privadas) oferecem aos usuários acesso remoto seguro à rede da empresa. Dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o seu servidor VPN. 
 
 Esse recurso é compatível com: 
 
@@ -98,10 +104,34 @@ Esse recurso é compatível com:
 - Windows 8.1
 - Windows 10
 
-## <a name="education-profile"></a>Perfil de educação
-As [configurações de educação](education-settings-configure.md) definem as opções do [aplicativo Windows Take a Test](https://education.microsoft.com/gettrained/win10takeatest). Quando você configura essas opções, nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.
+## <a name="wi-fi"></a>Wi-Fi
+As [configurações de Wi-Fi](wi-fi-settings-configure.md) atribuem configurações de rede sem fio para usuários e dispositivos. Quando você atribui um perfil de Wi-Fi, os usuários obtém acesso ao Wi-Fi de sua empresa sem precisar configurá-lo por conta própria. 
 
-## <a name="certificates-profile"></a>Perfil de certificados
+Esse recurso é compatível com: 
+
+- Android
+- iOS
+- macOS
+- Windows 8.1 (somente importação)
+
+## <a name="education"></a>Educação
+As [Configurações de educação – Windows 10](education-settings-configure.md) definem as opções para o [aplicativo Windows Take a Test](https://education.microsoft.com/gettrained/win10takeatest). Quando você configura essas opções, nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.
+
+As [Configurações de educação – iOS](education-settings-configure-ios-shared.md) usam o aplicativo iOS Classroom para conduzir a aprendizagem e controlar os dispositivos dos alunos na sala de aula. Você pode configurar dispositivos iPad para vários alunos poderem compartilhar um único dispositivo.
+
+## <a name="edition-upgrade"></a>Atualização de edição
+As [atualizações de edição do Windows 10](edition-upgrade-configure-windows-10.md) atualizam automaticamente os dispositivos que executam algumas versões do Windows 10 para uma edição mais recente.
+
+Esse recurso é compatível com: 
+- Windows 10 e posterior
+
+## <a name="update-policies"></a>Políticas de atualização
+As [Políticas de atualização do iOS](software-updates-ios.md) mostram como criar e atribuir políticas do iOS para instalar atualizações de software em seus dispositivos iOS. Você também pode examinar o status da instalação.
+
+Esse recurso é compatível com:
+- iOS
+
+## <a name="certificates"></a>Certificados
 Os [Certificados](certificates-configure.md) configuram certificados SCEP e PKCS confiáveis que podem ser atribuídos aos dispositivos e usados para autenticar o Wi-Fi, VPN e perfis de email.
 
 Esse recurso é compatível com: 
@@ -112,22 +142,11 @@ Esse recurso é compatível com:
 - Windows 8.1
 - Windows 10
 
-## <a name="edition-upgrade-profile"></a>Perfil de atualização de edição
-As [atualizações de edição do Windows 10](edition-upgrade-configure-windows-10.md) atualizam automaticamente os dispositivos que executam algumas versões do Windows 10 para uma edição mais recente.
-
-Esse recurso é compatível somente com o Windows 10
-
-## <a name="endpoint-protection-profile"></a>Perfil de proteção de ponto de extremidade
-As [configurações de proteção de ponto de extremidade do Windows 10](endpoint-protection-windows-10.md) definem as configurações do BitLocker e do Windows Defender para dispositivos Windows 10.
-
-Para integrar a WDATP (Proteção Avançada contra Ameaças do Windows Defender) ao Microsoft Intune, consulte [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (Configurar pontos de extremidade usando ferramentas de MDM (Gerenciamento de dispositivo móvel)).
-
-Esse recurso é compatível somente com o Windows 10
-
 ## <a name="windows-information-protection-profile"></a>Perfil de Proteção de Informações do Windows
 A [Proteção de Informações do Windows](windows-information-protection-configure.md) ajuda a proteger contra possíveis vazamentos de dados sem interferir na experiência do funcionário. Ela também ajuda a proteger dados e aplicativos corporativos contra vazamentos de dados acidentais em dispositivos corporativos e dispositivos pessoais que os funcionários usam no trabalho. Ela faz isso sem a necessidade de alterações em seu ambiente ou em outros aplicativos.
 
-Esse recurso é compatível somente com o Windows 10
+Esse recurso é compatível com:
+- Windows 10 e posterior
 
 ## <a name="custom-profile"></a>Perfil personalizado
 As [configurações personalizadas](custom-settings-configure.md) incluem a capacidade de atribuir configurações de dispositivo que não são internas do Intune. Por exemplo, em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator. 

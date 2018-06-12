@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744594"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Criar perfis de VPN no Intune
 
@@ -41,18 +42,19 @@ Você pode criar perfis VPN usando os seguintes tipos de conexão:
 
 |Tipo de conexão|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Sim|Sim|Sim|Sim|Sim|Sim|
-|Cisco (IPsec)|Não|Sim|Não|Não|Não|Não|
-|Citrix|Sim|Sim|Não|Não|Não|Sim|
-|F5 Microsoft Edge Client|Sim|Sim|Sim|Sim|Sim|Sim|
-|SonicWall Mobile Connect|Sim|Sim|Sim|Sim|Sim|Sim|
+|Automática|Não|Não|Não|Não|Não|Sim|
 |Check Point Capsule VPN|Sim|Sim|Sim|Sim|Sim|Sim|
 |Cisco AnyConnect|Sim|Sim|Sim|Não|Não|Não|
-|Automática|Não|Não|Não|Não|Não|Sim|
+|SonicWall Mobile Connect|Sim|Sim|Sim|Sim|Sim|Sim|
+|F5 Microsoft Edge Client|Sim|Sim|Sim|Sim|Sim|Sim|
+|Palo Alto Networks GlobalProtect|Não|Sim|Não|Não|Não|Sim|
+|Pulse Secure|Sim|Sim|Sim|Sim|Sim|Sim|
+|Cisco (IPsec)|Não|Sim|Não|Não|Não|Não|
+|Citrix|Sim (Somente Android)|Sim|Não|Não|Não|Sim|
 |IKEv2|Não|Não|Não|Não|Não|Sim|
 |L2TP|Não|Não|Não|Não|Não|Sim|
 |PPTP|Não|Não|Não|Não|Não|Sim|
-|Personalizado|Não|Sim|Sim|Não|Não|Não|
+|VPN personalizado|Não|Sim|Sim|Não|Não|Não|
 
 > [!IMPORTANT]
 > Antes de poder usar perfis VPN atribuídos em um dispositivo, você deve instalar o aplicativo VPN aplicável para o perfil. Você pode usar as informações no artigo [O que é gerenciamento de aplicativos no Microsoft Intune?](app-management.md) para ajudá-lo a atribuir o aplicativo usando o Intune.  

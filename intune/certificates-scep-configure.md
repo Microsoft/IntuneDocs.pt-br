@@ -1,11 +1,11 @@
 ---
 title: Usar certificados SCEP com o Microsoft Intune – Azure | Microsoft Docs
-description: Para usar certificados SCEP no Microsoft Intune, configure seu domínio do AD local, crie uma autoridade de certificação, configure o servidor NDES e instale o Conector de Certificado do Intune. Em seguida, crie um perfil de certificado SCEP e atribua esse perfil a grupos.
+description: Para usar certificados SCEP no Microsoft Intune, configure seu domínio do AD local, crie uma autoridade de certificação, configure o servidor NDES e instale o Conector de Certificado do Intune. Em seguida, crie um perfil de certificado SCEP e atribua esse perfil a grupos. Consulte também as IDs de eventos diferentes e suas descrições e os códigos de diagnósticos para o serviço do conector do Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745019"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -407,3 +408,54 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
     > Para iOS, espere ver várias cópias do certificado no perfil de gerenciamento se você implantar vários perfis de recursos que usem o mesmo perfil de certificado.
     
 Para saber mais sobre como atribuir perfis, confira [Como atribuir perfis de dispositivo](device-profile-assign.md).
+
+## <a name="intune-connector-events-and-diagnostic-codes"></a>Eventos e códigos de diagnósticos do Intune Connector
+
+Da versão 6.1803.x.x em diante, o Serviço do Intune Connector registra em log eventos no **Visualizador de Eventos** (**Logs de Aplicativos e Serviços** > **Microsoft Intune Connector**). Use esses eventos para ajudar a solucionar possíveis problemas na configuração do Intune Connector. Esses eventos registram em log êxitos e falhas de uma operação, e também contêm códigos de diagnósticos com mensagens para ajudar o administrador de TI a solucionar problemas.
+
+### <a name="event-ids-and-descriptions"></a>IDs e descrições de eventos
+
+> [!NOTE]
+> Para obter detalhes sobre os Códigos de Diagnóstico Relacionados para cada evento, use a tabela **Códigos de diagnósticos** (neste artigo).
+
+| ID do evento      | Nome do Evento    | Descrição do Evento | Códigos de Diagnósticos Relacionados |
+| ------------- | ------------- | -------------     | -------------            |
+| 10010 | StartedConnectorService  | Serviço do conector iniciado | 0x00000000, 0x0FFFFFFF |
+| 10020 | StoppedConnectorService  | Serviço do conector parado | 0x00000000, 0x0FFFFFFF |
+| 10100 | CertificateRenewal_Success  | Certificado de registro do conector renovado com êxito | 0x00000000, 0x0FFFFFFF |
+| 10102 | CertificateRenewal_Failure  | Falha na renovação do certificado de registro do conector. Reinstale o conector. | 0x00000000, 0x00000405, 0x0FFFFFFF |
+| 10302 | RetrieveCertificate_Error  | Falha ao recuperar o certificado de registro do conector do Registro. Examine os detalhes do evento para a impressão digital do certificado relacionada a esse evento. | 0x00000000, 0x00000404, 0x0FFFFFFF |
+| 10301 | RetrieveCertificate_Warning  | Verifique as informações de diagnóstico nos detalhes do evento. | 0x00000000, 0x00000403, 0x0FFFFFFF |
+| 20100 | PkcsCertIssue_Success  | Certificado PKCS emitido com êxito. Examine os detalhes do evento para obter a ID do dispositivo, a ID de usuário, o nome da Autoridade de Certificação, o nome do modelo de certificado e a impressão digital do certificado relacionados a esse evento. | 0x00000000, 0x0FFFFFFF |
+| 20102 | PkcsCertIssue_Failure  | Falha ao emitir um certificado PKCS. Examine os detalhes do evento para obter a ID do dispositivo, a ID de usuário, o nome da Autoridade de Certificação, o nome do modelo de certificado e a impressão digital do certificado relacionados a esse evento. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
+| 20200 | RevokeCert_Success  | Certificado revogado com êxito. Examine os detalhes do evento para obter a ID do dispositivo, a ID de usuário, o nome da Autoridade de Certificação e o número de série do certificado relacionado a esse evento. | 0x00000000, 0x0FFFFFFF |
+| 20202 | RevokeCert_Failure | Falha ao revogar o certificado. Examine os detalhes do evento para obter a ID do dispositivo, a ID de usuário, o nome da Autoridade de Certificação e o número de série do certificado relacionado a esse evento. Para obter mais informações, consulte os Logs de SVC do NDES.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
+| 20300 | Download_Success | Solicitação para assinar um certificado, baixar um certificado de cliente ou revogar um certificado baixada com sucesso. Examine os detalhes do evento para obter os detalhes do download.  | 0x00000000, 0x0FFFFFFF |
+| 20302 | Download_Failure | Falha ao baixar a solicitação para assinar um certificado, baixar certificado de cliente ou revogar um certificado. Examine os detalhes do evento para obter os detalhes do download. | 0x00000000, 0x0FFFFFFF |
+| 20400 | Upload_Success | Dados de revogação ou solicitação do certificado carregados com sucesso. Examine os detalhes do evento para obter os detalhes do upload. | 0x00000000, 0x0FFFFFFF |
+| 20402 | Upload_Failure | Falha ao carregar os dados de revogação ou solicitação do certificado. Examine os detalhes do evento > Estado de Upload para determinar o ponto de falha.| 0x00000000, 0x0FFFFFFF |
+| 20500 | CRPVerifyMetric_Success  | O Ponto de Registro de Certificado verificou com êxito um desafio do cliente | 0x00000000, 0x0FFFFFFF |
+| 20501 | CRPVerifyMetric_Warning  | O Ponto de Registro de Certificado foi concluído, mas rejeitou a solicitação. Veja o código e a mensagem de diagnóstico para obter mais detalhes. | 0x00000000, 0x00000411, 0x0FFFFFFF |
+| 20502 | CRPVerifyMetric_Failure  | O Ponto de Registro de Certificado falhou ao verificar um desafio de cliente. Veja o código e a mensagem de diagnóstico para obter mais detalhes. Veja os detalhes da mensagem de evento para a ID do Dispositivo correspondente ao desafio. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
+| 20600 | CRPNotifyMetric_Success  | O Ponto de Registro de Certificado concluiu com êxito o processo de notificação e enviou o certificado ao dispositivo cliente. | 0x00000000, 0x0FFFFFFF |
+| 20602 | CRPNotifyMetric_Failure  | O Ponto de Registro de Certificado falhou ao concluir o processo de notificação. Veja os detalhes da mensagem de evento para obter informações sobre a solicitação. Verifique a conexão entre o servidor NDES e a autoridade de certificação. | 0x00000000, 0x0FFFFFFF |
+
+### <a name="diagnostic-codes"></a>Códigos de diagnóstico
+
+| Código de Diagnóstico | Nome do Diagnóstico | Mensagem de Diagnóstico |
+| -------------   | -------------   | -------------      |
+| 0x00000000 | Êxito  | Êxito |
+| 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se que a autoridade de certificação está disponível e se o servidor pode se comunicar com ela. |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | O Certificado de Autenticação de Cliente da Symantec não foi encontrado no repositório de certificados local. Veja o artigo [Instalar o certificado autorização de registro da Symantec](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para obter mais informações.  |
+| 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado da autoridade de certificação. Veja o campo Nome da Autoridade de Certificação nos detalhes da mensagem do evento para determinar a autoridade de certificação emissora.  |
+| 0x00000403 | CertThumbprint_NotFound  | Não foi possível localizar um certificado correspondente à sua entrada. Registre o conector de certificado e tente novamente. |
+| 0x00000404 | Certificate_NotFound  | Não foi possível localizar um certificado correspondente à entrada fornecida. Registre o conector de certificado outra vez e tente novamente. |
+| 0x00000405 | Certificate_Expired  | Um certificado expirou. Registre o conector de certificado outra vez para renovar o certificado e tente novamente. |
+| 0x00000408 | CRPSCEPCert_NotFound  | Não foi possível localizar o certificado de criptografia de CRP. Verifique se que NDES e o Intune Connector estão configurados corretamente. |
+| 0x00000409 | CRPSCEPSigningCert_NotFound  | Não foi possível recuperar o certificado de assinatura. Verifique se o Serviço do Intune Connector está configurado corretamente e se o Serviço do Intune Connector está em execução. Verifique também se os eventos de download de certificado foram bem-sucedidos. |
+| 0x00000410 | CRPSCEPDeserialize_Failed  | Falha ao desserializar a solicitação de desafio do protocolo SCEP. Verifique se o NDES e o Intune Connector estão configurados corretamente. |
+| 0x00000411 | CRPSCEPChallenge_Expired  | Solicitação negada devido a desafio de certificado expirado. O dispositivo cliente pode tentar novamente depois de obter um novo desafio do servidor de gerenciamento. |
+| 0x0FFFFFFFF | Unknown_Error  | Não foi possível concluir sua solicitação porque ocorreu um erro no lado do servidor. Tente novamente. |
+
+## <a name="next-steps"></a>Próximas etapas
+[Usar certificados PKCS](certficates-pfx-configure.md) ou [emitir certificados PKCS de um serviço Web do gerenciador de PKI Symantec](certificates-symantec-configure.md).

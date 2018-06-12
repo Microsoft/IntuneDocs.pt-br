@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744985"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -153,6 +154,9 @@ Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a c
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Aplicativos adicionados automaticamente pelo Intune
 
 Antes, o Intune incluía vários aplicativos internos que você podia atribuir rapidamente. Com base nos comentários do cliente do Intune, removemos essa lista e os aplicativos internos não são mais exibidos. No entanto, se você já atribuiu aplicativos internos, eles permanecerão visíveis na lista de aplicativos. Você pode continuar a atribuir os aplicativos conforme necessário.
+
+> [!NOTE]
+> Para a instalação de um aplicativo não de linha de negócios necessário, o Intune tentará instalar o aplicativo enviando um comando de instalação sempre que o dispositivo fizer check-in, considerando que o aplicativo não é detectado e o estado de instalação do aplicativo não é *Instalação Pendente*.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>Instalação, atualização ou remoção de aplicativos necessários
 

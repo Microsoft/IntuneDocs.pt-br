@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744934"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Configurações do Endpoint Protection para o Windows 10 (e posteriores) no Intune
 
@@ -300,15 +301,21 @@ Use estas opções para definir as configurações de segurança locais em dispo
 
 - **Minutos de inatividade da tela de bloqueio até a proteção de tela ser ativada**: defina o máximo de minutos de inatividade na tela de logon da área de trabalho interativa até que a proteção de tela seja executada.
 - **Exigir CTRL+ALT+DEL para fazer logon**: exija que CTRL+ALT+DEL seja pressionado antes que um usuário possa fazer logon.
-- **Comportamento de remoção de cartão inteligente**: determina o que acontece quando o cartão inteligente para um usuário conectado é removido do leitor de cartão inteligente.
-[Opções de LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fornecem mais detalhes.
+- **Comportamento de remoção de cartão inteligente**: determina o que acontece quando o cartão inteligente para um usuário conectado é removido do leitor de cartão inteligente. Suas opções:
+
+  - **Bloquear Estação de Trabalho**: a estação de trabalho é bloqueada quando o cartão inteligente é removido. Essa opção permite que os usuários deixem a área, levem o cartão inteligente com eles e ainda mantenham uma sessão protegida.
+  - **Forçar o Logoff**: é feito o logoff do usuário automaticamente quando o cartão inteligente é removido.
+  - **Desconectar se uma sessão de Serviços de Área de Trabalho Remota**: a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Essa opção permite que o usuário insira o cartão inteligente e retome a sessão mais tarde, ou em outro computador equipado com o leitor de cartão inteligente, sem precisar entrar novamente. Se a sessão for local, essa política funcionará de modo idêntico a Bloquear a Estação de Trabalho.
+
+    [Opções de LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fornecem mais detalhes.
 
 #### <a name="display"></a>Vídeo
 
 - **Informações do usuário na tela de bloqueio**: configure as informações do usuário exibidas quando a sessão está bloqueada. Se não configurado, o nome de exibição do usuário, o domínio e o nome de usuário serão mostrados.
+  - **Não configurado**: nome de exibição do usuário, domínio e nome de usuário
+  - **Nome de exibição do usuário, nome de usuário e domínio**
   - **Somente nome de exibição do usuário**
   - **Não exibir informações do usuário**
-  - **Não configurado**: nome de exibição do usuário, domínio e nome de usuário
 - **Ocultar o último usuário conectado**: não exibir o nome de usuário da última pessoa que entrar neste dispositivo.
 - **Ocultar o nome de usuário na entrada**: não exiba o nome de usuário da pessoa que está entrando neste dispositivo depois que as credenciais forem inseridas e antes que a área de trabalho do dispositivo seja mostrada.
 - **Título da mensagem de logon**: defina o título da mensagem para usuários que estejam tentando fazer logon.
@@ -316,13 +323,13 @@ Use estas opções para definir as configurações de segurança locais em dispo
 
 ### <a name="network-access-and-security"></a>Acesso e segurança de rede
 
-- **Acesso anônimo a Compartilhamentos e Pipes Nomeados**: restringe o acesso anônimo a configurações de Compartilhamento e Pipe Nomeado. Aplica-se às configurações que podem ser acessadas anonimamente.
-- **Enumeração anônima de contas SAM**: permite que usuários anônimos enumerem as contas SAM. O Windows permite que usuários anônimos enumerem os nomes de contas de domínio e compartilhamentos de rede.
-- **Enumeração anônima de compartilhamentos e contas SAM**: pode bloquear a enumeração anônima de compartilhamentos e contas SAM. O Windows permite que usuários anônimos enumerem os nomes de contas de domínio e compartilhamentos de rede.
-- **Valor de hash do LAN Manager armazenado na alteração de senha**: na próxima alteração de senha, escolha se o valor de hash do LM (LAN Manager) para a nova senha é armazenado. Ele não é armazenado por padrão.
-- **Solicitações de autenticação PKU2U**: bloqueie solicitações de autenticação PKU2U para este dispositivo usar identidades online.
-- **Restringir conexões RPC remotas ao SAM**: edite a cadeia de caracteres da Linguagem de Definição do Descritor de Segurança padrão para permitir ou proibir que usuários e grupos façam chamadas remotas para o SAM.
-- **Descritor de segurança**
+- **Acesso anônimo a Compartilhamentos e Pipes Nomeados**: **Não configurado** (padrão) restringe o acesso anônimo a configurações de compartilhamento e Pipe Nomeado. Aplica-se às configurações que podem ser acessadas anonimamente.
+- **Enumeração anônima de contas SAM**: **Permitir** a usuários anônimos enumerar as contas SAM. O Windows permite que usuários anônimos enumerem os nomes de contas de domínio e compartilhamentos de rede.
+- **Enumeração anônima de contas e compartilhamentos SAM**: **Não configurado** (padrão) significa que os usuários anônimos podem enumerar os nomes de contas de domínio e compartilhamentos de rede. Para impedir a enumeração anônima de contas e compartilhamentos SAM, defina como **Bloquear**.
+- **Valor de hash do LAN Manager armazenado na alteração de senha**: na próxima alteração de senha, escolha **Permitir** ao LM (LAN Manager) armazenar o valor de hash para a nova senha. Quando definido como **Não configurado** (padrão), o valor de hash não é armazenado.
+- **Solicitações de autenticação PKU2U**: **Bloquear** solicitações de autenticação PKU2U para este dispositivo para usar identidades online. **Não configurado** (padrão) permite essas solicitações.
+- **Restringir conexões RPC remotas ao SAM**: **Permitir** a cadeia de caracteres da Linguagem de Definição do Descritor de Segurança padrão para proibir que usuários e grupos façam chamadas remotas para o SAM. **Não configurado** (padrão) a cadeia de caracteres de Linguagem de Definição do Descritor de Segurança padrão para permitir que os usuários e grupos façam chamadas remotas para o SAM.
+  - **Descritor de segurança**
 
 ### <a name="recovery-console-and-shutdown"></a>Console de recuperação e desligamento
 
@@ -359,13 +366,13 @@ Use estas opções para definir as configurações de segurança locais em dispo
 
 ### <a name="microsoft-network-client"></a>Cliente da Rede Microsoft
 
-- **Assinar comunicações digitalmente (se o servidor concordar)**: determina se o cliente SMB tenta negociar a assinatura do pacote SMB. Quando habilitado (padrão), o cliente de rede Microsoft solicita que o servidor execute assinatura de pacote SMB na configuração da sessão. Se a assinatura de pacote tiver sido habilitada no servidor, a assinatura de pacote será negociada. Se esta política estiver desabilitada, o cliente SMB nunca negociará a assinatura de pacote SMB.
+- **Assinar comunicações digitalmente (se o servidor concordar)**: determina se o cliente SMB tenta negociar a assinatura do pacote SMB. Quando habilitado (Não configurado), o cliente de rede Microsoft solicita que o servidor execute a assinatura de pacote SMB na configuração da sessão. Se a assinatura de pacote estiver habilitada no servidor, a assinatura de pacote será negociada. Se esta política estiver desabilitada, o cliente SMB nunca negociará a assinatura de pacote SMB.
 - **Enviar senha não criptografada para servidores SMB de terceiros**: quando habilitado, o redirecionador de protocolo SMB (bloco de mensagens de servidor) tem permissão para enviar senhas de texto sem formatação para servidores SMB não Microsoft que não dão suporte a criptografia de senha durante a autenticação.
 
 ### <a name="microsoft-network-server"></a>Microsoft Network Server
 
-- **Assinar comunicações digitalmente (se o cliente concordar)**: determina se o servidor SMB negocia a assinatura de pacote SMB com clientes que a solicitam. Quando habilitada, o servidor da rede Microsoft negocia a assinatura de pacote SMB conforme solicitado pelo cliente. Ou seja, se a assinatura de pacote estiver habilitada no cliente, a assinatura de pacote será negociada. Quando desabilitada (padrão), o cliente SMB nunca negocia a assinatura de pacote SMB.
-- **Assinar comunicações digitalmente (sempre)**: determina se a assinatura de pacote é exigida pelo componente do servidor SMB. Quando habilitado, o servidor da rede Microsoft não se comunicará com um cliente de rede da Microsoft, a menos que o cliente concorde em executar a assinatura de pacote SMB. Quando desabilitada (padrão), a assinatura de pacote SMB é negociada entre o cliente e servidor.
+- **Assinar comunicações digitalmente (se o cliente concordar)**: determina se o servidor SMB negocia a assinatura de pacote SMB com clientes que a solicitam. Quando habilitada, o servidor da rede Microsoft negocia a assinatura de pacote SMB conforme solicitado pelo cliente. Ou seja, se a assinatura de pacote estiver habilitada no cliente, a assinatura de pacote será negociada. Quando **Não configurada** ou desabilitada (padrão), o cliente SMB nunca negocia a assinatura de pacote SMB.
+- **Assinar comunicações digitalmente (sempre)**: determina se a assinatura de pacote é exigida pelo componente do servidor SMB. Quando habilitado, o servidor da rede Microsoft não se comunicará com um cliente de rede da Microsoft, a menos que o cliente concorde em executar a assinatura de pacote SMB. Quando **Não configurada** ou desabilitada (Padrão), a assinatura de pacote SMB é negociada entre o cliente e servidor.
 
 ## <a name="next-steps"></a>Próximas etapas
 

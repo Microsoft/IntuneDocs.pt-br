@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703274"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
 
@@ -39,7 +40,7 @@ Para dispositivos que estão **registrados para gerenciamento no Intune**, o usu
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Usando aplicativos com suporte a várias identidades
 
-As políticas de proteção de aplicativo somente entram em vigor quando um usuário tenta acessar dados relacionados ao trabalho.  Você verá comportamentos diferentes caso o usuário acesse o aplicativo para uso pessoal. 
+As políticas de proteção de aplicativo somente entram em vigor quando um usuário tenta acessar dados relacionados ao trabalho. Você poderá observar um comportamento diferente se o usuário tentar acessar o aplicativo para uso pessoal. As políticas também não se aplicam ao novo conteúdo que ainda não foi salvo. Novo conteúdo é considerado informação corporativa somente depois que ele é salvo em um local corporativo, como o SharePoint ou o OneDrive for Business.
 
 Para aplicativos compatíveis com várias identidades, o Intune aplica as políticas de proteção de aplicativo somente se o usuário acessa dados de trabalho.  Por exemplo, um usuário pode receber uma solicitação de PIN.  No **aplicativo Outlook**, a solicitação ocorre quando o usuário inicia o aplicativo. No **aplicativo OneDrive**, a solicitação ocorre quando o usuário insere a conta corporativa.  No Microsoft **Word**, **PowerPoint** e **Excel**, a solicitação ocorre quando um usuário acessa documentos no OneDrive da empresa.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gerenciando contas de usuário no dispositivo

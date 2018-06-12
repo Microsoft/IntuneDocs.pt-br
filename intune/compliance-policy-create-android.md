@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744696"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos Android no Intune
 
@@ -122,6 +123,17 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 - **Integridade de tempo de execução do aplicativo do portal da empresa**: verifica se o aplicativo de Portal da empresa tem o ambiente de tempo de execução padrão instalado, está assinado corretamente, não está no modo de depuração e é instalado de uma origem conhecida.
 - **Bloquear a depuração de USB no dispositivo** (Android 4.2 ou posterior): escolha impedir que os dispositivos usem o recurso de depuração de USB.
 - **Nível mínimo de patch de segurança** (Android 6.0 ou posterior): selecione o nível de patch de segurança mais antigo que um dispositivo pode ter. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser inserida no formato `YYYY-MM-DD`.
+
+## <a name="locations"></a>Locais
+
+Em sua política, escolha entre locais existentes. Ainda não tem um local? [Usar locais (limite de rede) no Intune](use-network-locations.md) fornece alguma orientação.
+
+1. Escolha **Selecionar locais**.
+2. Na lista, verifique seu local e escolha **Selecionar**.
+3. **Salve** a política.
+4. Selecione **Ações para não conformidade**. A ação padrão marca o dispositivo como em não conformidade imediatamente. Essa ação se aplica quando você seleciona pelo menos um local e se o dispositivo não está conectado aos locais selecionados.
+
+  Você pode alterar essa ação para atualizar a agenda quando o dispositivo está marcado como não em conformidade, como após um dia. Você também pode configurar uma segunda ação que envia um email ao usuário quando o dispositivo não está mais em conformidade com os seus locais.
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 

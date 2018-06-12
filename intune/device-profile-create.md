@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744645"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -46,16 +47,19 @@ ms.lasthandoff: 04/16/2018
    - **Tipo de perfil**: selecione o tipo que você deseja criar. A lista dependerá da plataforma que você escolher.
    - **Configurações**: os tópicos a seguir descrevem as configurações para cada tipo de perfil:
 
-       -  [Configurações de recurso do dispositivo](device-features-configure.md)
-       -  [Configurações de restrição de dispositivo](device-restrictions-configure.md)
-       -  [Configurações de email](email-settings-configure.md)
-       -  [Configurações de VPN](vpn-settings-configure.md)
-       -  [Configurações de Wi-Fi](wi-fi-settings-configure.md)
-       -  [Configurações de atualização da edição do Windows 10](edition-upgrade-configure-windows-10.md)
-       -  [Configurações do certificado](certificates-configure.md)
-       -  [Definir a Proteção de Informações do Windows](windows-information-protection-configure.md)
-       -  [Configurações de educação](education-settings-configure.md)
-       -  [Configurações personalizadas](custom-settings-configure.md)
+       -  [Recursos de dispositivo](device-features-configure.md)
+       -  [Restrições de dispositivo](device-restrictions-configure.md)
+       -  [Endpoint protection](endpoint-protection-configure.md)
+       -  [Quiosque](kiosk-settings.md)
+       -  [Email](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  Educação para [Windows 10](education-settings-configure.md) e [iOS](wi-fi-settings-ios.md)
+       -  [Atualização de edição do Windows 10](edition-upgrade-configure-windows-10.md)
+       -  [Políticas de atualização do iOS](software-updates-ios.md)
+       -  [Certificados](certificates-configure.md)
+       -  [Proteção de Informações do Windows](windows-information-protection-configure.md)
+       -  [Personalizado](custom-settings-configure.md)
 
      ![Captura de tela de criação de perfil](./media/create-device-profile.png)
 
@@ -63,6 +67,5 @@ ms.lasthandoff: 04/16/2018
 
 O perfil será criado e aparecerá na lista.
 
-
 ## <a name="next-steps"></a>Próximas etapas
-Para atribuir perfis de dispositivo, consulte [Como atribuir perfis de dispositivo com o Microsoft Intune](device-profile-assign.md).
+[Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
