@@ -534,10 +534,10 @@ Como parte dos nossos esforços para dar aos usuários finais mais controle sobr
 
 ## <a name="week-of-march-19-2018"></a>Semana de 19 de março de 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportar todos os dispositivos para arquivos CSV no IE, no Edge ou no Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportar todos os dispositivos para arquivos CSV no IE, no Microsoft Edge ou no Chrome <!-- 2258071 -->
 Em **Dispositivos** > **Todos os Dispositivos**, você pode **Exportar** os dispositivos para uma lista formatada em CSV. Os usuários do IE (Internet Explorer) com >10.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 10.000 dispositivos.
 
-Os usuários do Edge e do Chrome com > 30.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 30.000 dispositivos.
+Os usuários do Microsoft Edge e do Chrome com > 30.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 30.000 dispositivos.
 
 [Gerenciar dispositivos](device-management.md) fornece mais detalhes sobre o que você pode fazer com os dispositivos que gerencia.
 
@@ -606,7 +606,7 @@ Agora [duas novas configurações de privacidade](device-restrictions-windows-10
 - **Apenas atividades locais**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas com base somente em atividades locais.
 
 #### <a name="new-settings-for-the-edge-browser---1469166---"></a>Novas configurações para o navegador Microsoft Edge <!--1469166 -->
-Agora há [duas novas configurações](device-restrictions-windows-10.md#edge-browser) disponíveis para dispositivos com o navegador Edge: **Caminho para o arquivo de favoritos** e **Alterações aos Favoritos**.
+Agora há [duas novas configurações](device-restrictions-windows-10.md#edge-browser) disponíveis para dispositivos com o navegador Microsoft Edge: **Caminho para o arquivo de favoritos** e **Alterações aos Favoritos**.
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 #### <a name="protocol-exceptions-for-applications---1035509---"></a>Exceções de protocolo para aplicativos <!--1035509 -->

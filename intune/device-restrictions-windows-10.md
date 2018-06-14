@@ -156,7 +156,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 -   **Sincronizar favoritos entre navegadores da Microsoft (somente no desktop)** – Permite que o Windows sincronize os favoritos entre o Internet Explorer e o Microsoft Edge.
 -   **Enviar cabeçalhos Do Not Track** – Configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 -   **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
--   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Edge.
+-   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge.
 -   **Pop-ups** - bloqueia janelas pop-up no navegador (aplica-se a somente a desktops com Windows 10).
 -   **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
 -   **Enviar tráfego da intranet para o Internet Explorer** – permite aos usuários abrir sites de intranet no Internet Explorer (somente para desktops com Windows 10).
