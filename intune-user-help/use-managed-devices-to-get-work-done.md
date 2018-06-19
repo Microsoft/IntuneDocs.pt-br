@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755225"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos gerenciados para realizar o trabalho
 O Microsoft Intune é um software que permite às organizações gerenciar dispositivos (como smartphones, tablets e computadores), aplicativos e outros recursos corporativos como email. Isso concede aos funcionários acesso às suas informações de trabalho de praticamente qualquer lugar em quase qualquer dispositivo, ajudando a proteger informações corporativas.

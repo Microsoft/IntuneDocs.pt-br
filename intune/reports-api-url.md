@@ -20,6 +20,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/21/2018
+ms.locfileid: "34224221"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto de extremidade de API do Intune Data Warehouse
 

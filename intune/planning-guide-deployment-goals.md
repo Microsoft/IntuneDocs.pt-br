@@ -1,16 +1,16 @@
 ---
-title: "Determinar as metas, os objetivos e os desafios de implantação"
+title: Determinar as metas, os objetivos e os desafios de implantação
 titlesuffix: Microsoft Intune
-description: "Este artigo ajuda a determinar as metas, os objetivos e os desafios de implantação para uma implementação somente na nuvem do Microsoft Intune."
-keywords: 
+description: Este artigo ajuda a determinar as metas, os objetivos e os desafios de implantação para uma implementação somente na nuvem do Microsoft Intune.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29961452"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar as metas, os objetivos e os desafios de implantação
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915821"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Renomear o dispositivo no aplicativo Portal da Empresa para Windows
 Renomeie um dispositivo para facilitar o reconhecimento entre outros dispositivos. O aplicativo Portal da Empresa para Windows permite que você renomeie dispositivos com Windows, iOS e Android conectados. 

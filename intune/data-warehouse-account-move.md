@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223655"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover os dados da conta do Intune Data Warehouse 
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223570"
 ---
 # <a name="intune-app-sdk-overview"></a>Visão geral do SDK do Aplicativo do Intune
 O SDK do Aplicativo do Intune, disponível para iOS e Android, habilita o aplicativo para as políticas de proteção do aplicativo do Intune. Ele se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Você descobrirá que é possível habilitar a maioria dos recursos do SDK sem alterar o comportamento do seu aplicativo. Para o usuário final avançado e a experiência do administrador de TI, você pode usar as APIs para personalizar o comportamento do aplicativo para recursos que exigem a participação do seu aplicativo.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190632"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Use um perfil de dispositivo personalizado para criar um perfil de WiFi com uma chave pré-compartilhada – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
