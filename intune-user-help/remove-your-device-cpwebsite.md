@@ -22,6 +22,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34308850"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Remova o dispositivo do Portal da Empresa
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021500"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorar as políticas de proteção de aplicativo com o Microsoft Intune
 É possível monitorar o status de conformidade das políticas de proteção de aplicativo que você aplicou aos usuários. Você poderá encontrar informações sobre os usuários afetados pelas políticas de proteção de aplicativo, seu status de conformidade e quaisquer problemas que os usuários possam encontrar.

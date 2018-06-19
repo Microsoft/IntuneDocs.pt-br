@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834271"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 

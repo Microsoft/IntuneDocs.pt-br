@@ -19,6 +19,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834060"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de NAC (controle de acesso de rede) com o Intune
 

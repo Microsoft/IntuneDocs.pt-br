@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016910"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Exibir o inventário de software e hardware para computadores Windows
 

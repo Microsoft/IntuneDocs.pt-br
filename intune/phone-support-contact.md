@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030252"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contatar o suporte do fornecido por telefone assistido do Microsoft Intune
 

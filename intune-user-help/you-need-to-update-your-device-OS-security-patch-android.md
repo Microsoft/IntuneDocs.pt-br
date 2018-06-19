@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073779"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>É necessário atualizar o sistema operacional de seu dispositivo Android
 

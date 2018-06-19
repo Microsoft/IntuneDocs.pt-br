@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018168"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solucionar problemas de registro de dispositivo do Windows 10
 Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de área de trabalho do Windows 10 no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não consegue acessar seu email ou arquivos corporativos ou de estudante, tente estas etapas de solução de problemas.

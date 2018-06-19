@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019646"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Instalar o Symantec Endpoint Protection Mobile em seu dispositivo Android
 

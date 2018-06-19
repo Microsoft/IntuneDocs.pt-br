@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013051"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Recursos de Acessibilidade do Microsoft Intune
 Além dos recursos de acessibilidade e ferramentas do Microsoft Windows, os recursos a seguir tornam o Microsoft Intune mais acessível para pessoas com deficiências: usando atalhos de teclado

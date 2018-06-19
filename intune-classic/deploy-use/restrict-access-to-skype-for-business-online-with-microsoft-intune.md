@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022706"
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteger o acesso ao Skype for Business Online com o Microsoft Intune
 

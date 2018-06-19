@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019850"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>O dispositivo Android não tem um certificado exigido pelo suporte de sua empresa
 
