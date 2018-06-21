@@ -135,6 +135,7 @@
 ### [O que acontece se você redefinir seu dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sincronizar o dispositivo manualmente](sync-your-device-manually-windows.md)
+### [Bloquear remotamente dispositivos pelo seu dispositivo Windows 10](remote-lock-your-device-cp-app.md) 
 
 ### [Corrigindo problemas comuns com o Windows](troubleshoot-your-device-windows.md)
 ### [Resolver as restrições de ponto de acesso](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [É necessário habilitar o UAC](you-need-to-enable-uac-windows.md)
 #### [É necessário atualizar o Windows](you-need-to-update-os-build-version-windows.md)
 #### [É necessário ativar o Windows Defender](turn-on-defender-windows.md)
-## [Bloquear remotamente o dispositivo do aplicativo Portal da Empresa para Windows](remote-lock-your-device-cp-app.md) 
+
 ## [Usando o site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 ### [Bloquear o dispositivo remotamente](remote-lock-your-device-cpwebsite.md)
 ### [Renomear o dispositivo](rename-your-device-cpwebsite.md)
