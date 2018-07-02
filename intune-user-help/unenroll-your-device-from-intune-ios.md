@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547481"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Remover seu dispositivo iOS do Intune
 
@@ -59,6 +60,8 @@ Para remover seu dispositivo do Intune, use estas etapas ou assista a este víde
   -   Perfis de email da empresa são removidos do dispositivo.
 
   -   Dispositivos que são configurados somente para email não aparecerão mais no site ou no aplicativo do portal da empresa.
+  
+  -   Aplicativos são desinstalados. Dados de aplicativo da empresa são removidos.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Removendo os dados coletados pelo aplicativo Portal da Empresa
 

@@ -14,11 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d27648d4d5033f2c2e849b31d19403600692b4f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "35679437"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -124,9 +125,7 @@ Algumas práticas recomendadas para reencapsulamento incluem:
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilizando certificados de autenticação e encapsulando aplicativos
 O Android exige que todos os aplicativos sejam autenticados por um certificado válido para serem instalados em dispositivos Android.
 
-Os aplicativos encapsulados podem ser autenticados como parte do processo de encapsulamento ou *após* o encapsulamento usando ferramentas de autenticação existentes (toda informação de assinatura no aplicativo antes do encapsulamento é descartada).
- 
-Se possível, as informações de autenticação já usadas durante o processo de build devem ser usadas durante o encapsulamento. Em determinadas organizações, isso pode exigir trabalhar com quem tenha informações do repositório de chaves (isto é, a equipe do build do aplicativo). 
+Os aplicativos encapsulados podem ser autenticados como parte do processo de encapsulamento ou *após* o encapsulamento usando ferramentas de autenticação existentes (toda informação de assinatura no aplicativo antes do encapsulamento é descartada). Se possível, as informações de autenticação já usadas durante o processo de build devem ser usadas durante o encapsulamento. Em determinadas organizações, isso pode exigir trabalhar com quem tenha informações do repositório de chaves (isto é, a equipe do build do aplicativo). 
 
 Se o certificado de autenticação anterior não puder ser usado ou se o aplicativo ainda não tiver sido implantado, você poderá criar um novo certificado de autenticação seguindo as instruções do [Guia do desenvolvedor do Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
