@@ -1,1 +1,1 @@
-Atendimento ao Cliente para pessoas com deficiências auditivas
+Atendimento ao cliente para pessoas com deficiência auditiva
