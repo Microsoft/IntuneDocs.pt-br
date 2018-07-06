@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744985"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263397"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -56,8 +56,8 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativos do Office 365 para macOS | Aplicativo da Store (Office 365) | Selecione **macOS** no **Pacote do Office 365** como o **tipo de aplicativo** e, em seguida, selecione o pacote do aplicativo do Office 365. |
 | Aplicativos LOB para Android | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Android com a extensão **.apk**.  |
 | Aplicativos LOB para iOS | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS com a extensão **.ipa**.  |
-| Aplicativos LOB para Windows Phone | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS com a extensão **.xap**.  |
-| Aplicativos LOB para Windows | Aplicativos LOB | Selecione aplicativo **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS com a extensão **.msi**, **.appx** ou **.appxbundle**. |
+| Aplicativos LOB para Windows Phone | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows Phone com a extensão **.xap**.  |
+| Aplicativos LOB para Windows | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**. |
 | Aplicativo iOS interno  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativo interno Android  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativos Web  | Aplicativo Web  | Selecione **Link da Web** como o **tipo de aplicativo** e insira uma URL válida apontando para o aplicativo Web.  |

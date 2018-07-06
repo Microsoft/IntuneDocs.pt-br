@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
-ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
+ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
+ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37091720"
 ---
-# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remova dispositivos por meio da redefinição de fábrica ou remova os dados da empresa
+# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Remova dispositivos usando a restauração de fábrica, removendo dados da empresa ou cancelando o registro do dispositivo manualmente
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -136,7 +137,7 @@ Executar a remoção dos dados da empresa em um dispositivo Android for Work rem
 
 ### <a name="remove-company-data"></a>Remover os dados da empresa
 
-1. Entre no [Intune no Portal do Azure](https://aka.ms/intuneportal).
+1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 3. Selecione o nome do dispositivo do qual você deseja remover os dados da empresa.
 4. No painel que mostra o nome do dispositivo, selecione **Remover dados da empresa**. Para confirmar, selecione **Sim**.
@@ -147,10 +148,10 @@ Se o dispositivo estiver ligado e conectado, a ação **Remover dados da empresa
 
 Se você quiser remover dispositivos do portal do Intune, poderá excluí-los do painel específico do dispositivo. Na próxima vez que o dispositivo fizer check-in, quaisquer dados da empresa contidos nele serão removidos.
 
-1. Entre no [Intune no Portal do Azure](https://aka.ms/intuneportal).
+1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. Escolha **Dispositivos** > **Todos os dispositivos** > escolher dispositivos que você deseja excluir > **Excluir**.
 
-## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Excluir dispositivos do Portal do Azure Active Directory
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Excluir dispositivos do portal do Azure Active Directory
 
 Talvez seja necessário excluir dispositivos do Azure AD devido a problemas de comunicação ou a dispositivos ausentes. É possível usar a ação **Excluir** para remover registros de dispositivo do Portal do Azure para dispositivos que você sabe que estão inacessíveis e provavelmente não se comunicarão com o Azure novamente. A ação **Excluir** não remove um dispositivo do gerenciamento.
 

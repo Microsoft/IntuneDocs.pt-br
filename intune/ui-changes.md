@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032584"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232929"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
-Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Assim, criamos este guia de referência para aqueles que estão totalmente familiarizados com o Intune no Portal Clássico e querem saber como fazer algo no Intune no Portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
+Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Este guia de referência destina-se àqueles que estão totalmente familiarizados com o Intune no portal clássico e querem saber como fazer algo no Intune por meio do portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
 ## <a name="quick-reference-guide"></a>Guia de referência rápida
 
 |Recurso |Caminho no Portal Clássico|Caminho no Intune no Portal do Azure|
@@ -45,27 +45,37 @@ Configurações do Portal da Empresa|Administrador > Portal da Empresa|**Gerenci
 Intune no Portal do Azure usa o [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) para gerenciar grupos.
 
 ## <a name="where-did-enrollment-rules-go"></a>Para onde foram as regras de registro?
-No Portal Clássico, você pode definir regras que regem o registro de MDM de dispositivos móveis e modernos com Windows e macOS:
+No portal clássico, você pode definir as regras que regem o registro de MDM de dispositivos Windows e macOS modernos e móveis.
 
 ![Imagem de regras de registro de dispositivo móvel clássico](./media/01-classic-rules.png)
 
-Estas regras eram aplicadas a todos os usuários em sua conta do Intune, sem exceção. No portal Azure, estas regras agora são exibidas em dois diferentes tipos de políticas: restrições de tipo de dispositivo e restrições de limite do dispositivo:
+Estas regras eram aplicadas a todos os usuários em sua conta do Intune, sem exceção. No portal do Azure, estas regras agora são exibidas em dois tipos de políticas distintos: Restrições de Tipo de Dispositivo e Restrições de Limite de Dispositivos.
 
 ![Imagem das restrições de registro de dispositivo móvel do Azure](./media/02-azure-enroll-restrictions.png)
 
-A restrição de limite de dispositivo padrão corresponde ao limite de registro de dispositivo no Portal Clássico:
+A Restrição de Limite de Dispositivos padrão corresponde ao Limite de Registro de Dispositivos no portal clássico.
 
 ![Imagem das restrições de limite de dispositivo do Azure](./media/03-azure-device-limit.png)
 
-A restrição de tipo de dispositivo padrão corresponde às restrições de plataforma no Portal Clássico:
+A Restrição de Tipo de Dispositivo padrão corresponde às Restrições de Plataforma no portal clássico.
 
 ![Imagem das restrições de tipo de dispositivo do Azure](./media/04-azure-platform-restrictions.png)
 
-A capacidade de permitir ou bloquear dispositivos de propriedade pessoal agora é gerenciada nas Configurações de plataforma da restrição do tipo de dispositivo:
+A capacidade de permitir ou bloquear dispositivos de propriedade pessoal agora é gerenciada nas Configurações de Plataforma da Restrição de Tipo de Dispositivo.
 
 ![Imagem das configurações de bloqueio de dispositivo pessoal do Azure](./media/05-azure-personal-block.png)
 
 Novos recursos de restrição são adicionados ao Portal do Azure apenas.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>Para que local foram minhas políticas de acesso condicional?
+Depois que o locatário é migrado para o portal do Azure, as políticas de acesso condicional do locatário continuam sendo impostas. No entanto, não é possível exibir nem modificá-las por meio do Intune no portal do Azure.
+
+Se você desejar exibir e fazer alterações nas políticas de acesso condicional por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre como migrar as políticas de acesso condicional, confira [Migrar as políticas clássicas no portal do Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+
+## <a name="where-did-my-compliance-policies-go"></a>Para que local foram minhas políticas de conformidade?
+Depois que o locatário é migrado para o portal do Azure, as políticas de conformidade do locatário continuam sendo impostas. No entanto, não é possível exibir nem modificá-las por meio do Intune no portal do Azure.
+
+Se você desejar exibir e fazer alterações nas políticas de conformidade por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Para onde foi o Apple DEP?
 No Portal Clássico, você podia configurar o Intune para integrar o Programa de registro de dispositivos da Apple e solicitar manualmente a sincronização com o serviço da Apple:

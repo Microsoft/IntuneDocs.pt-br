@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178155"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305426"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -62,7 +62,7 @@ Se você estiver procurando uma lista de aplicativos com suporte no MAM, consult
 8. Escolha **OK** para salvar esta configuração. Agora você retornou à folha **Adicionar uma política**.
 9. Escolha **Criar** para criar a política e salvar suas configurações.
 
-Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuário. Para implantar uma política, consulte [Implantar uma política para usuários](app-protection-policies.md#deploy-a-policy-to-users).
+Ao terminar de criar uma política conforme descrito no procedimento anterior, ela não é implantada para nenhum usuários. Para implantar uma política, consulte [Implantar uma política para usuários](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implantar uma política para os usuários
 
@@ -126,6 +126,8 @@ Em muitas organizações é comum permitir que os usuários finais usem disposit
 Uma vez que as políticas de Proteção de Aplicativo do Intune são direcionadas para a identidade de um usuário, as configurações de proteção para um usuário tradicionalmente se aplicam a dispositivos registrados (gerenciados por MDM) e não registrados (sem MDM). Portanto, você pode ter como destino uma política de Proteção de Aplicativo do Intune para dispositivos Android e iOS registrados ou não registrados no Intune. Você pode ter uma política de proteção para dispositivos não gerenciados na qual controles DLP (prevenção contra perda de dados) rígidos estejam em vigor e uma política de proteção separada para dispositivos gerenciados MDM, em que os controles DLP podem ser um pouco mais flexíveis. 
 
 Para criar essas políticas, navegue até as políticas de **Aplicativos móveis** > **Proteção do aplicativo** no console do Intune e clique **Adicionar uma política**. Você também pode editar uma política de proteção do aplicativo existente. Se desejar que a política de proteção do aplicativo se aplique tanto a dispositivos gerenciados quanto não gerenciados, confirme que o **Destino para todos os tipos de aplicativo** esteja definido como **Sim**, o valor padrão. Se você quiser atribuir de maneira granular com base no estado de gerenciamento, defina a opção **Destino para todos os tipos de aplicativo** como **Não**. 
+
+Para que os aplicativos iOS sejam considerados "Gerenciados", a configuração da política de configuração de **IntuneMAMUPN** precisa ser implantada em cada aplicativo. Para obter mais informações, confira [Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
 > Para obter informações de suporte do iOS específicas sobre políticas de proteção do aplicativo com base no estado de gerenciamento de dispositivo, consulte [Políticas de proteção MAM direcionadas com base no estado de gerenciamento](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).

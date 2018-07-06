@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee162425d80a443976d00f9594673a35ce08be1
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2456970c4be7beab7523137df36aba23e49f2852
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291590"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Configurações de restrição de dispositivo Windows Phone 8.1 no Microsoft Intune
 
@@ -70,7 +71,7 @@ Na página da [Windows Phone Store](https://www.microsoft.com/store/apps/windows
 
 Abra a página do aplicativo e copie a URL para a área de transferência. Agora você pode usar isso como a URL em uma lista de aplicativos permitidos ou bloqueados.
 
-Exemplo: pesquisar o aplicativo Skype na loja. A URL usada será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Exemplo: pesquisar o aplicativo Skype na loja. A URL usada é `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 

@@ -1,12 +1,11 @@
 ---
-title: Introdução a políticas no Microsoft Intune
-titlesuffix: ''
-description: Crie políticas para ajudar a proteger dados corporativos e gerenciar os dispositivos que os usuários finais usam para acessar os recursos da empresa.
+title: Introdução às políticas no Microsoft Intune – Azure | Microsoft Docs
+description: Crie políticas para ajudar a proteger dados corporativos e gerenciar os dispositivos que os usuários finais usam para acessar os recursos da empresa. Em seguida, atribua as políticas a grupos.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +14,27 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8bffd0435988cc59c5c0e4d754b861729d466ae
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: d7fa1b596a1800971919cfc0ab3e94d2d16ec328
+ms.sourcegitcommit: afda8a0fc0f615e976b18ddddf81d56d7ae3566e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271517"
 ---
 # <a name="get-started-with-creating-policies"></a>Introdução à criação de políticas
 
-Uma das principais metas ao começar a usar o Intune é registrar dispositivos para garantir que eles estejam em conformidade com as políticas corporativas. Políticas de conformidade não apenas ajudam a gerenciar os tipos de dispositivos especializados, como quiosques corporativos, mas também dispositivos pessoais (Traga seu próprio), tablets e dispositivos sem usuário.
+As políticas do Intune são uma ótima maneira de registrar dispositivos e garantir que eles estão em conformidade com as políticas corporativas. As políticas de conformidade ajudam a gerenciar tipos de dispositivos especializados, como quiosques corporativos e dispositivos pessoais (Traga seu próprio), tablets e dispositivos sem usuário.
 
 ![Painel de conformidade com poucos dados](/intune/media/generic-compliance-dashboard.png)
 
-Gerencie dispositivos móveis nas áreas a seguir usando as políticas de conformidade:
+Os dispositivos móveis podem ser gerenciados com políticas de conformidade, incluindo:
 
-* Regule os números de dispositivos que cada usuário registra
-* Gerenciar configurações de dispositivos (por exemplo, criptografia no nível do dispositivo, tamanho da senha e uso de câmera)
-* Entrega de aplicativos, perfis de email, perfis de VPN etc.
+* Controlar o número de dispositivos que um usuário registra no Intune
+* Gerenciar as configurações do dispositivo, como criptografia no nível do dispositivo, tamanho da senha e uso da câmera
+* Entregar aplicativos, perfis de email, perfis de VPN e muito mais
 * Avaliar critérios no nível do dispositivo para as políticas de conformidade de segurança
 
-Crie políticas de conformidade para cada plataforma separadamente. Para este exercício, continuaremos com o iOS. As seguintes políticas estão disponíveis para dispositivos iOS:
+As políticas de conformidade são criadas para cada plataforma, como iOS, Android, Windows e muito mais. Para este exercício, use o iOS. As seguintes políticas estão disponíveis para dispositivos iOS:
 
 * Configuração de senha ou PIN
 * Criptografia de dispositivo
@@ -43,18 +43,30 @@ Crie políticas de conformidade para cada plataforma separadamente. Para este ex
 * Versão mínima do SO
 * Versão máxima do SO
 
-__Como crio uma política?__
+## <a name="create-a-policy"></a>Criar uma política
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Selecione **Conformidade do dispositivo**.
-4. No painel **Conformidade do dispositivo**, selecione **Políticas**.
-5. Selecione **Criar Política** e preencha os detalhes como **Nome** e **Descrição**. 
-6. Escolha **iOS** como a **Plataforma**.
-6. Em **Configurações**, selecione **Segurança do Sistema** e alterne **Exigir uma senha para desbloquear os dispositivos móveis** para **Exigir**. Também é possível definir outras regras, como **Tamanho mínimo da senha**, **Tipo de senha exigido** e **Número de caracteres não alfanuméricos na senha**. Após terminar de configurar a política, selecione **OK**.
-7. Volte para o painel **Criar política** e selecione **Criar**.
-8. Depois de criar a política, selecione **Atribuições** para atribuí-la ao seu grupo de teste. Selecione o grupo de teste – que deve conter seu usuário de teste – e atribua a política a esse grupo clicando em **Salvar**.
-9. Aguarde alguns minutos e seu dispositivo registrado deverá solicitar uma senha atualizada para permanecer em conformidade com as políticas corporativas. Você pode verificar manualmente isso no **aplicativo de Portal da Empresa para iOS** tocando no nome do dispositivo e no botão **Sincronizar**.
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
+4. Insira um **Nome** e uma **Descrição** de política. 
+5. Para a **Plataforma**, selecione **iOS**.
+6. Em **Configurações**, selecione **Segurança do Sistema** e, em seguida, defina **Exigir uma senha para desbloquear os dispositivos móveis** como **Exigir**. 
+
+    Defina também outras regras, como: 
+    - **Comprimento mínimo da senha**
+    - **Tipo de senha necessária**
+    - **Número de caracteres não alfanuméricos na senha**
+    
+    Depois de concluir a configuração da política, selecione **OK**.
+  
+7. Volte para **Criar política** e selecione **Criar**. Esta etapa cria a política e lista a política em **Conformidade do dispositivo** > **Políticas**.
+8. Selecione a nova política e escolha **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+Escolha Grupos selecionados para ver os grupos de segurança existentes do Azure AD. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
+
+Para estar em conformidade com a nova política corporativa, após alguns minutos, seu dispositivo registrado solicitará uma senha atualizada. Verifique manualmente a atualização no **aplicativo do Portal da Empresa para iOS**. Abra o aplicativo do Portal da Empresa, selecione o nome do dispositivo e, em seguida, selecione **Sincronizar**.
+
+> [!NOTE]
+> As novas políticas aplicadas a um grupo de dispositivos dinâmicos podem levar até oito horas para serem aplicadas a todos os dispositivos do grupo.
 
 ## <a name="next-steps"></a>Próximas etapas
 

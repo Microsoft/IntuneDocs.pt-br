@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308867"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232799"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quais informações minha empresa poderá ver quando eu registrar meu dispositivo?
 
-Ao registrar um dispositivo no gerenciamento, você estará concedendo permissão à sua empresa para exibir determinadas informações em seu dispositivo, a fim de ajudar a proteger os dados corporativos nele.
+Sua empresa não pode ver suas informações pessoais quando você registra um dispositivo no Microsoft Intune. Quando você registra um dispositivo, você concede sua permissão à empresa para exibir determinadas informações em seu dispositivo, como modelo do dispositivo e número de série. Sua empresa usa essas informações para ajudar a proteger os dados corporativos no dispositivo.
 
-**O que sua empresa nunca pode ver**
+**O que sua empresa nunca pode ver:**
 
 - Histórico de chamadas e de navegação na Web
 - Email e mensagens de texto
@@ -36,7 +36,7 @@ Ao registrar um dispositivo no gerenciamento, você estará concedendo permissã
 -   Senhas
 - Imagens, incluindo o conteúdo do aplicativo de fotos ou as imagens da câmera
 
-**O que sua empresa sempre pode ver**
+**O que sua empresa sempre pode ver:**
 
 - Modelo do dispositivo, como Google Pixel
 - Fabricante, como Microsoft
@@ -46,7 +46,7 @@ Ao registrar um dispositivo no gerenciamento, você estará concedendo permissã
 - Nome do dispositivo
 - Número de série
 
-**O que sua empresa pode ser capaz de ver**
+**O que sua empresa pode conseguir ver:**
 
 -  Número de telefone: para dispositivos de propriedade **corporativa**, o número de telefone completo pode ser visto. Para dispositivos de propriedade **Pessoal**, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua empresa. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página **Detalhes do Dispositivo** desse dispositivo.
 -  Local: sua empresa nunca verá o local de seu dispositivo, exceto se você tiver um dispositivo iOS supervisionado e que foi perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)

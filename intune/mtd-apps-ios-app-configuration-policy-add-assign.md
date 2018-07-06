@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,120 +15,127 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
+ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046374"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37066208"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicativos MTD (Defesa contra Ameaças Móveis) com o Intune
 
 > [!NOTE] 
 > Este tópico se aplica a todos os parceiros de Defesa contra Ameaças Móveis.
 
-Você pode usar o Intune para adicionar e implantar aplicativos MTD para que os usuários finais possam receber notificações quando uma ameaça for identificada em seus dispositivos móveis e para receber orientação para corrigir essas ameaças.
+Use o Intune para adicionar e implantar aplicativos MTD para que os usuários finais possam receber notificações quando uma ameaça for identificada em seus dispositivos móveis e para receber diretrizes para corrigir essas ameaças.
 
-Para dispositivos iOS, você precisará do [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) para que as identidades dos usuários possam ser verificados pelo Azure AD. Além disso, você precisará da política de configuração de aplicativo iOS que indica qual aplicativo MTD iOS deve ser usado com o Intune.
+
+## <a name="before-you-begin"></a>Antes de começar
+
+As etapas a seguir devem ser concluídas no [Portal do Azure](https://portal.azure.com/). Verifique se que você está familiarizado com o processo de:
+
+  -   [Adicionar um aplicativo no Intune](apps-add.md).
+  -   [Adicionar uma política de configuração de aplicativo do iOS no Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+  -   [Atribuindo um aplicativo com o Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+  -   [ Adicionando uma política de configuração de aplicativo iOS](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
 > O Portal da Empresa do Intune funciona como o agente em dispositivos Android para as identidades dos usuários possam ser verificadas pelo Azure AD.
 
-## <a name="before-you-begin"></a>Antes de começar
+## <a name="configure-microsoft-authenticator-for-ios"></a>Configurar o Microsoft Authenticator para iOS
+Para dispositivos iOS, você precisará do [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) para que as identidades dos usuários possam ser verificados pelo Azure AD. Além disso, você precisará da política de configuração de aplicativo iOS que indica qual aplicativo MTD iOS deve ser usado com o Intune.
 
--   As etapas a seguir devem ser concluídas no [Portal do Azure](https://portal.azure.com/).
+Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos do Microsoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) na **etapa 12** na seção **Configurar informações de aplicativo**.
 
--   Verifique se que você está familiarizado com o processo de:
+## <a name="configure-mtd-applications"></a>Configurar aplicativos MTD
 
-    -   [Adicionar um aplicativo no Intune](apps-add.md).
+Escolha a seção que corresponde ao seu provedor MTD:
 
-    -   [Adicionar uma política de configuração de aplicativo do iOS no Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+  - [Lookout for Work](#configure-lookout-for-work-apps)
+  - [SEP (Symantec Endpoint Protection) Mobile](#configure-symantec-endpoint-protection-mobile-apps)
+  - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
+  - [Zimperium](#configure-zimperium-apps)
+  - [Pradeo](#configure-pradeo-apps)
 
-    -   [Atribuindo um aplicativo com o Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+### <a name="configure-lookout-for-work-apps"></a>Configurar aplicativos do Lookout for Work
 
-    -   [ Adicionando uma política de configuração de aplicativo iOS](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+- **Android**
+  - Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da loja de aplicativos da Google do Lookout for Work](https://play.google.com/store/apps/details?id=com.lookout.enterprise) na **etapa 7**.
 
-## <a name="to-add-apps"></a>Adicionar aplicativos
+- **iOS**
 
-### <a name="all-mtd-partners"></a>Todos os parceiros de MTD
+  - Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos do Lookout for Work iOS](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) na **etapa 12** na seção **Configurar informações de aplicativo**.
 
-#### <a name="microsoft-authenticator-app-for-ios"></a>Aplicativo Microsoft Authenticator para iOS
+-   **Aplicativo Lookout for Work fora da Apple Store**
+    - Será necessário reassinar o aplicativo Lookout for Work iOS. O Lookout distribui o aplicativo iOS Lookout for Work fora da iOS App Store. Antes de distribuir o aplicativo, você deverá reassiná-lo com seu iOS Enterprise Developer Certificate.
+    - Para obter instruções detalhadas sobre como reassinar o aplicativo Lookout for Work iOS, consulte [Processo para reassinar o aplicativo Lookout for Work iOS](https://personal.support.lookout.com/hc/articles/114094038714) no site do Lookout.
 
-- Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos do Microsoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) na **etapa 12** na seção **Configurar informações de aplicativo**.
+    - **Habilitar a autenticação do Azure AD para usuários do aplicativo Lookout for Work para iOS.**
 
-### <a name="lookout"></a>Lookout
+        1. Acesse o [Portal do Azure](https://portal.azure.com), entre com suas credenciais e navegue para a página do aplicativo.
 
-#### <a name="android"></a>Android
-- Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da loja de aplicativos da Google do Lookout for Work](https://play.google.com/store/apps/details?id=com.lookout.enterprise) na **etapa 7**.
+        2. Adicione o **aplicativo Lookout for Work iOS** como um **aplicativo cliente nativo**.
 
-#### <a name="ios"></a>iOS
+        3. Substitua o **com.lookout.enterprise.yourcompanyname** pela ID do grupo do cliente que você selecionou quando assinou o IPA.
 
-- Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos do Lookout for Work iOS](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) na **etapa 12** na seção **Configurar informações de aplicativo**.
+        4.  Adicione o URI de redirecionamento adicional: **&lt;companyportal://code/>** seguido por uma versão codificada da URL do URI de redirecionamento original.
 
-#### <a name="lookout-for-work-app-outside-the-apple-store"></a>Aplicativo Lookout for Work fora da Apple store
+        5.  Adicione **Permissões delegadas** ao aplicativo.
 
-Será necessário reassinar o aplicativo Lookout for Work iOS. O Lookout distribui o aplicativo iOS Lookout for Work fora da iOS App Store. Antes de distribuir o aplicativo, você deverá reassiná-lo com seu iOS Enterprise Developer Certificate.
+        > [!NOTE] 
+        > Consulte [Configurar um aplicativo cliente nativo com o Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) para ver mais detalhes.
 
-Para obter instruções detalhadas sobre como reassinar o aplicativo Lookout for Work iOS, consulte [Processo para reassinar o aplicativo Lookout for Work iOS](https://personal.support.lookout.com/hc/articles/114094038714) no site do Lookout.
+     - **Adicionar o arquivo ipa do Lookout for Work.**
 
-##### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Habilitar a autenticação do Azure AD para o aplicativo Lookout for Work iOS
+        - Carregue o arquivo .ipa reassinado conforme descrito no tópico [Adicionar aplicativos iOS LOB com o Intune](lob-apps-ios.md). Também será necessário definir a versão mínima do sistema operacional para iOS 8.0 ou posterior.
 
-Habilite a autenticação do Azure Active Directory para os usuários do iOS fazendo o seguinte:
+### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Configurar aplicativos do Symantec Endpoint Protection Mobile
 
-1. Acesse o [Portal do Azure](https://portal.azure.com), entre com suas credenciais e navegue para a página do aplicativo.
+ - **Android**
 
-2. Adicione o **aplicativo Lookout for Work iOS** como um **aplicativo cliente nativo**.
+    - Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Na **etapa 7**, use esta [URL da loja de aplicativo SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure).  Para **sistema de operacional mínimo**, selecione **Android 4.0 (Ice Cream Sandwich)**.
 
-3. Substitua o **com.lookout.enterprise.yourcompanyname** pela ID do grupo do cliente que você selecionou quando assinou o IPA.
+ - **iOS**
 
-4.  Adicione o URI de redirecionamento adicional: **&lt;companyportal://code/>** seguido por uma versão codificada da URL do URI de redirecionamento original.
+    - Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Na **etapa 12**, use esta [URL da loja de aplicativos SEP Mobile](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) na seção **Configurar informações de aplicativo**.
 
-5.  Adicione **Permissões delegadas** ao aplicativo.
+### <a name="configure-check-point-sandblast-mobile-apps"></a>Configurar aplicativos do Check Point SandBlast Mobile
 
-    > [!NOTE] 
-    > Consulte [Configurar um aplicativo cliente nativo com o Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) para ver mais detalhes.
+ - **Android**
 
-##### <a name="add-the-lookout-for-work-ipa-file"></a>Adicionar o arquivo ipa do Lookout for Work
+    - Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da App Store para o SandBlast Mobile da Check Point](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) na **etapa 7**.
 
-- Carregue o arquivo .ipa reassinado conforme descrito no tópico [Adicionar aplicativos iOS LOB com o Intune](lob-apps-ios.md). Também será necessário definir a versão mínima do sistema operacional para iOS 8.0 ou posterior.
+ - **iOS**
 
-### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>SEP Mobile (Symantec Endpoint Protection Mobile)
+    - Contate o [SandBlast Mobile da Check Point](https://www.checkpoint.com/products/sandblast-mobile/) a fim de obter o aplicativo iOS. Confira instruções sobre [como adicionar aplicativos da iOS Store ao Microsoft Intune](store-apps-ios.md) e use a URL da Apple Store na **etapa 12**, na seção **Informações de configuração do aplicativo**.
 
-#### <a name="android"></a>Android
+### <a name="configure-zimperium-apps"></a>Configurar aplicativos do Zimperium
 
-- Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Na **etapa 7**, use esta [URL da loja de aplicativo SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure).  Para **sistema de operacional mínimo**, selecione **Android 4.0 (Ice Cream Sandwich)**.
+ - **Android**
 
-#### <a name="ios"></a>iOS
+    - Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da loja de aplicativos para o Zimperium](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) na **etapa 7**.
 
-- Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Na **etapa 12**, use esta [URL da loja de aplicativos SEP Mobile](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) na seção **Configurar informações de aplicativo**.
+ - **iOS**
 
-### <a name="check-point-sandblast-mobile"></a>SandBlast Mobile da Check Point
+    - Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos para o Zimperium](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) na **etapa 12** na seção **Configurar informações de aplicativo**.
 
-#### <a name="android"></a>Android
+### <a name="configure-pradeo-apps"></a>Configurar aplicativos do Pradeo
 
-- Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da App Store para o SandBlast Mobile da Check Point](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) na **etapa 7**.
+ - **Android**
 
-#### <a name="ios"></a>iOS
+    - Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da loja de aplicativos do Pradeo](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US) na **etapa 7**.
 
-- Contate o [SandBlast Mobile da Check Point](https://www.checkpoint.com/products/sandblast-mobile/) a fim de obter o aplicativo iOS. Confira instruções sobre [como adicionar aplicativos da iOS Store ao Microsoft Intune](store-apps-ios.md) e use a URL da Apple Store na **etapa 12**, na seção **Informações de configuração do aplicativo**.
+ - **iOS**
 
-### <a name="zimperium"></a>Zimperium
+    - Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos do Pradeo](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) na **etapa 12** na seção **Configurar informações do aplicativo**.
 
-#### <a name="android"></a>Android
+## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Configurar os aplicativos MTD com uma política de configuração de aplicativo do iOS
 
-- Consulte as instruções para [adicionar aplicativos da loja do Android ao Microsoft Intune](store-apps-android.md). Use esta [URL da loja de aplicativos para o Zimperium](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) na **etapa 7**.
-
-#### <a name="ios"></a>iOS
-
-- Consulte as instruções para [adicionar aplicativos da loja do iOS ao Microsoft Intune](store-apps-ios.md). Use esta [URL da loja de aplicativos para o Zimperium](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) na **etapa 12** na seção **Configurar informações de aplicativo**.
-
-## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>Associar o aplicativo MTD a uma política de configuração de aplicativo iOS
-
-### <a name="for-lookout"></a>Para Lookout
+### <a name="lookout-for-work-app-configuration-policy"></a>Política de configuração de aplicativo do Lookout for Work
 
 - Crie a política de configuração do aplicativo iOS conforme descrito no tópico [usando a política de configuração de aplicativo iOS](app-configuration-policies-use-ios.md).
 
-### <a name="for-sep-mobile"></a>Para SEP Mobile
+### <a name="sep-mobile-app-configuration-policy"></a>Política de configuração de aplicativo do SEP Mobile
 
 -   Use a conta do Azure AD configurada anteriormente no [Console de Gerenciamento do Symantec Endpoint Protection Management](https://aad.skycure.com), que deve ser a mesma conta usada para entrar no Portal Clássico do Intune.
 
@@ -146,7 +153,7 @@ Habilite a autenticação do Azure Active Directory para os usuários do iOS faz
 > [!NOTE]
 > Se não for possível recuperar os arquivos, entre em contato com o [Suporte ao Symantec Endpoint Protection Mobile Enterprise](https://support.symantec.com/en_US/contact-support.html).
 
-### <a name="for-check-point-sandblast-mobile"></a>Para o SandBlast Mobile da Check Point
+### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Política de configuração de aplicativo do Check Point SandBlast Mobile
 
 - Confira instruções sobre [como usar as políticas de configuração de aplicativo do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) a fim de adicionar a política de configuração de aplicativo do iOS para o SandBlast Mobile da Check Point.
     - Na **etapa 8**, use a opção **Inserir dados XML**, copie o conteúdo abaixo e cole-o no corpo da política de configuração.
@@ -155,7 +162,7 @@ Habilite a autenticação do Azure Active Directory para os usuários do iOS faz
 <dict><key>MDM</key><string>INTUNE</string></dict>
 ```
 
-### <a name="for-zimperium"></a>Para o Zimperium
+### <a name="zimperium-app-configuration-policy"></a>Política de configuração de aplicativo do Zimperium
 
 - Consulte as instruções sobre como [usar as políticas de configuração de aplicativo do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para adicionar a política de configuração do aplicativo iOS do Zimperium.
     - Na **etapa 8**, use a opção **Inserir dados XML**, copie o conteúdo abaixo e cole-o no corpo da política de configuração.
@@ -173,10 +180,10 @@ Habilite a autenticação do Azure Active Directory para os usuários do iOS faz
 </dict>
 ```
 
-## <a name="to-assign-apps-all-mtd-partners"></a>Para atribuir aplicativos (todos os parceiros de MTD)
+## <a name="assign-apps-to-groups"></a>Atribuir aplicativos a grupos
 
-- Confira instruções sobre [como atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
+- Esta etapa se aplica a todos os parceiros MTD. Confira instruções sobre [como atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Adicionar política de conformidade do dispositivo para MTD](mtd-device-compliance-policy-create.md)
+- [Configurar a política de conformidade do dispositivo para MTD](mtd-device-compliance-policy-create.md)

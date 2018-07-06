@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834414"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803832"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrição de dispositivo para configurações do Windows 10 (e mais recentes) no Intune
 Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.
@@ -152,28 +152,28 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 ## <a name="edge-browser"></a>Navegador Microsoft Edge
 
 -   **Navegador Microsoft Edge (somente dispositivo móvel)** – Permitir o uso do navegador da Web Edge no dispositivo.
--   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Microsoft Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Microsoft Edge e os serviços da Microsoft.
+-   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Microsoft Edge e os serviços da Microsoft.
 -   **Sincronizar favoritos entre navegadores da Microsoft (somente no desktop)** – Permite que o Windows sincronize os favoritos entre o Internet Explorer e o Microsoft Edge.
--   **Enviar cabeçalhos Do Not Track** – Configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
+-   **Enviar cabeçalhos Do Not Track** – Configura o navegador Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 -   **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
--   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge.
+-   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Edge.
 -   **Pop-ups** - bloqueia janelas pop-up no navegador (aplica-se a somente a desktops com Windows 10).
 -   **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
 -   **Enviar tráfego da intranet para o Internet Explorer** – permite aos usuários abrir sites de intranet no Internet Explorer (somente para desktops com Windows 10).
 -   **Preenchimento automático** – permite que os usuários alterem completamente as configurações de preenchimento automático no navegador (somente para desktop com Windows 10).
 -   **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Microsoft Edge.
 -   **Local da lista de sites do modo Empresarial** – Especifica onde encontrar a lista de sites que serão abertos no modo Empresarial. Os usuários não podem editar essa lista.<br>(Somente Windows 10 Desktop).
--   **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Microsoft Edge.
--   **Extensões** - permite ao usuário final instalar extensões do Microsoft Edge no dispositivo.
+-   **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Edge.
+-   **Extensões** - permite ao usuário final instalar extensões do Edge no dispositivo.
 -   **Navegação inPrivate** - impede que o usuário final abra sessões de navegação InPrivate.
--   **Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Microsoft Edge for executado.
+-   **Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Edge for executado.
     -   **URL da primeira execução** – Especifica a URL da página que é exibida na primeira vez que um usuário executa o Microsoft Edge (somente Windows 10 Mobile).
 -   **Páginas iniciais** – Adicione uma lista de sites que você deseja usar como as páginas iniciais no navegador Microsoft Edge (somente desktop).
 -   **Alterações na página inicial** – Permite aos usuários alterar as páginas iniciais exibidas quando o Microsoft Edge é aberto. Use a configuração Página inicial para criar a página ou uma lista de páginas que é aberta quando o Microsoft Edge é iniciado.
 -   **Bloquear acesso aos about:flags** – impeça que o usuário final acesse a página about:flags no Microsoft Edge que contém configurações experimentais e de desenvolvedor.
 -   **Endereço IP do localhost WebRtc** - bloqueia a exibição do endereço IP do localhost de usuários ao fazer chamadas telefônicas usando a protocolo RTC da web.
 -   **Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado. Os usuários finais podem alterar esse valor a qualquer momento.
--   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Microsoft Edge.
+-   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Edge.
 -   **Coleta de dados de Blocos Dinâmico** – Impede que o Windows colete informações de Blocos Dinâmicos quando o usuários fixa um site no menu Iniciar do Microsoft Edge.
 -  **Lista de favoritos** – define o caminho para o arquivo de favoritos. Por exemplo, http://contoso.com/favorites.html.
 -  **Restringir alterações aos Favoritos** – defina como **Bloquear** para impedir que os usuários adicionem, importem, classifiquem ou editem a lista de Favoritos. 
@@ -250,7 +250,9 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
   O Ajuste de DPI do GDI permite que aplicativos sem reconhecimento de DPI fiquem com reconhecimento de DPI por monitor. especifica os aplicativos herdados que têm o Ajuste de DPI do GDI ativado. Com o Ajuste de DPI do GDI configurado para ser ativado e desativado em um aplicativo, o ajuste é desativado para o aplicativo.
 
-## <a name="kiosk-preview"></a>Quiosque (Versão prévia)
+## <a name="kiosk-preview---obsolete"></a>Quiosque (versão prévia) – obsoleto
+
+Essas configurações estão sendo movidas e serão removidas em uma versão futura. Para usar as novas configurações, confira [Configurações de quiosque no Windows 10 e posterior](kiosk-settings.md).
 
 Um dispositivo de quiosque geralmente executa um aplicativo ou um conjunto específico de aplicativos. Os usuários são impedidos de acessar quaisquer recursos ou funções no dispositivo fora de qualquer aplicativo de quiosque.
 
@@ -263,9 +265,12 @@ Um dispositivo de quiosque geralmente executa um aplicativo ou um conjunto espec
 #### <a name="single-app-kiosks"></a>Quiosques de aplicativo único
 Insira as seguintes configurações:
 
-- **Conta de usuário** – insira a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque. Para contas ingressadas em domínios do Azure AD, especifique a conta usando o formato `domain\username@tenant.org`. 
+- **Conta de usuário** – insira a conta de usuário local (para o dispositivo), uma conta de domínio do AD ou um logon da conta do Azure AD associado ao aplicativo de quiosque.
+  - Conta local: insira como `devicename\accountname`, `.\accountname` ou `accountname`
+  - Conta de domínio: insira como `domain\accountname`
+  - Conta do Azure AD: insira como `AzureAD\emailaddress`. Insira "AzureAD", porque ele é um nome de domínio fixo. Em seguida, siga com o endereço de email do Azure AD. Por exemplo, insira `AzureAD\user@contoso.onmicrosoft.com`.
 
-    Para quiosques em ambientes de público com logon automático habilitado, um tipo de usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Para configurar uma conta do Azure AD (Active Directory) para o modo de quiosque, use o formato `AzureAD\user@contoso.com`.
+    Para quiosques em ambientes de público com logon automático habilitado, um tipo de usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Se estiver usando uma conta do Azure AD para o modo de quiosque, não se esqueça de inserir `AzureAD\user@yourorganization.com`.
 
 - **AUMID (ID do modelo de usuário do aplicativo)** – insira a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
 

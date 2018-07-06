@@ -3,10 +3,10 @@ title: Adicionar políticas de configuração de aplicativo para dispositivos An
 titlesuffix: Microsoft Intune
 description: Use as políticas de configuração do aplicativo no Microsoft Intune para fornecer as configurações quando os usuários executam um aplicativo Android for Work.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34470858"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
@@ -35,15 +36,12 @@ Use as políticas de configuração do aplicativo no Microsoft Intune para forne
 3. Selecione a carga de trabalho de **Aplicativos móveis**.
 4. Escolha **Políticas de configuração do aplicativo** no grupo **Gerenciar** e escolha **Adicionar**.
 5. Defina os seguintes detalhes:
-    - **Nome**  
-      O nome do perfil que será exibido no Portal do Azure.
-    - **Descrição**  
-      A descrição do perfil que será exibida no Portal do Azure.
-    - **Tipo de registro de dispositivo**  
-      Selecione **Dispositivos gerenciados**.
+    - **Nome** – o nome do perfil que será exibido no portal do Azure.
+    - **Descrição** – a descrição do perfil que será exibida no portal do Azure.
+    - **Tipo de registro de dispositivos** – escolha **Dispositivos gerenciados**.
 6. Selecione **Android for Work** em **Plataforma**.
 7. Selecione **Aplicativo Associado** para escolher o aplicativo para o qual você deseja definir uma política de configuração de aplicativo. Selecione na lista de aplicativos Android for Work que foram aprovados e sincronizados com o Intune.
-8. Selecione **Definições de configuração**. É possível definir configurações usando:
+8. Selecione **Permissões**. É possível definir configurações usando:
     - [Designer de configuração](#Use-the-configuration-designer)
     - [Editor de JSON](#Enter-the-JSON-editor)
 9. Escolha **OK** e, em seguida, **Adicionar**.

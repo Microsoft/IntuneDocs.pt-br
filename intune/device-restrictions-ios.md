@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803815"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
 
@@ -97,7 +98,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
     -   **Tipo de senha exigida** – Especificar o tipo de senha necessária, como apenas numérica ou alfanumérica.
     -   **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres de símbolo (como **#** ou **@**) que devem ser incluídos na senha.
     -   **Tamanho mínimo de senha** – Especificar o número mínimo de caracteres na senha.
-    -   **Número de falhas de entrada antes de apagar o dispositivo** – Especificar o número de tentativas de logon antes de essa configuração apagar o dispositivo.
+    -   **Número de falhas de entrada antes de apagar o dispositivo** – especifique o número de tentativas de senha inválida exclusiva antes de essa configuração apagar o dispositivo.
     -   **Máximo de minutos após o bloqueio de tela antes que a senha seja necessária**<sup>1</sup> – Especificar quanto tempo o dispositivo poderá permanecer ocioso antes que o usuário tenha que digitar novamente a senha.
     -   **Máximo de minutos de inatividade até o bloqueio de tela**<sup>1</sup> – Especifique o número de minutos antes que a tela do dispositivo seja desativada.
     -   **Expiração da senha (dias)** – Especifique o número de dias antes que a senha do dispositivo precise ser alterada.

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745104"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843116"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar Locais (limite de rede) no Intune
 
@@ -35,7 +35,7 @@ Em suas instalações de fabricação, alguns funcionários usam dispositivos An
 2. Crie uma política de conformidade que exija que esses dispositivos sejam conectados à sua rede corporativa e atribua essa política.
 3. Se o dispositivo sair da fábrica, ele será considerado como não estando em conformidade e não terá acesso a recursos corporativos.
 
-Usando políticas do Intune, você pode enviar uma notificação de não conformidade e também bloquear o dispositivo. Quando o dispositivo está de volta ao local, e no local de rede, o dispositivo pode ser desbloqueado e recuperar o acesso aos recursos corporativos.
+Além disso, você pode adicionar [ações de não conformidade](#configure-the-actions-for-noncompliance). Quando o dispositivo estiver de volta ao local e no local de rede, ele recuperará o acesso aos recursos corporativos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444907"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localizar dispositivos iOS perdidos ou roubados com o Intune
 
@@ -45,7 +46,7 @@ Esse recurso não é compatível com os seguintes sistemas:
     ![Captura de tela de Localizar dispositivo usando o Intune no Azure](./media/locate-device.png)
 
 >[!NOTE]
->Por motivos de privacidade, a distância de ampliação do zoom do mapa é limitada.
+>Por motivos de privacidade, a distância de aplicação de zoom no mapa é limitada a um raio de 300 metros.
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Ativar alerta sonoro de modo perdido em um dispositivo iOS
 
@@ -58,7 +59,7 @@ O som continuará a ser executado até que o usuário o desabilite no dispositiv
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Informações de segurança e privacidade para as ações de modo perdido e de localização do dispositivo
 - Nenhuma informação do local do dispositivo será enviada para o Intune até que essa ação seja ativada.
-- Quando você usa a ação do dispositivo localizar, as coordenadas da latitude e de longitude do dispositivo são enviadas para o Intune e mostradas no portal do Azure.
+- Quando você usa a ação de localização do dispositivo, as coordenadas de latitude e longitude do dispositivo podem ser recuperadas com a API do Graph.
 - Os dados são armazenados por 24 horas, então, removidos. Você não pode remover manualmente os dados de localização.
 - Os dados de localização são criptografados, enquanto estão armazenados e enquanto estão sendo transmitidos.
 - Ao configurar o modo perdido, é possível personalizar uma mensagem que aparecerá na tela de bloqueio. Para ajudar a pessoa que encontrar o dispositivo, inclua nessa mensagem detalhes específicos para que o dispositivo perdido seja devolvido.

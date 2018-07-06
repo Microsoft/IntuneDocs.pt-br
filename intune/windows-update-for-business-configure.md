@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744883"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822714"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
 
@@ -157,7 +157,7 @@ Por exemplo, você pode usar os seguintes valores em **Adicionar ou editar a con
 > Para obter mais informações sobre o MS DM Server, consulte [CSP (provedor de serviços de configuração) do DMClient](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
 ## <a name="pause-updates"></a>Pausar atualizações
-Você pode pausar o recebimento pelo dispositivo das Atualizações do Recurso ou Atualizações de Qualidade por um período de até 35 dias a partir da pausa das atualizações. Depois do máximo de dias transcorrido, a funcionalidade de pausa irá expirar automaticamente e o dispositivo verificará as Atualizações do Windows em relação às atualizações aplicáveis. Após essa verificação, você pode pausar as atualizações novamente.
+Você pode pausar o recebimento pelo dispositivo das Atualizações do Recurso ou Atualizações de Qualidade por um período de até 35 dias a partir da pausa das atualizações. Após o máximo de dias transcorrido, a funcionalidade de pausa expirará automaticamente e o dispositivo verificará se há atualizações aplicáveis nas Atualizações do Windows. Após essa verificação, você pode pausar as atualizações novamente.
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
@@ -169,10 +169,13 @@ Você pode pausar o recebimento pelo dispositivo das Atualizações do Recurso o
 > Além disso, se um dispositivo de destino estiver desativado quando você emitir o comando para pausar, quando você o ativar, ele poderá baixar e instalar as atualizações agendadas antes de verificar com o Intune.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Desinstale a versão mais recente das atualizações de software do Windows 10 
-Caso você descubra um problema de quebra em seus computadores Windows 10, poderá optar por desinstalar a atualização (reverter) a atualização de recurso mais recente ou a atualização de qualidade mais recente. Desinstalar uma atualização de recurso ou qualidade só está disponível para o canal de serviço que o dispositivo se encontra. Ao desinstalar, uma política é disparada para restaurar a atualização anterior em seus computadores Windows 10. Para atualizações de recursos, especificamente, você pode limitar o tempo entre 2 e 60 dias em que uma desinstalação da versão mais recente pode ser aplicada. Para definir opções de desinstalação de atualização de software, selecione **Atualizações de software** na folha do **Microsoft Intune** no portal do Azure. Em seguida, selecione **Anéis de Atualização do Windows 10** na folha **Atualizações de software**. Em seguida, você pode escolher a opção **Desinstalar** na seção **Visão Geral**.
+Caso você descubra um problema de quebra em seus computadores Windows 10, poderá optar por desinstalar a atualização (reverter) a atualização de recurso mais recente ou a atualização de qualidade mais recente. Desinstalar uma atualização de recurso ou qualidade só está disponível para o canal de serviço que o dispositivo se encontra. A desinstalação dispara uma política para restaurar a atualização anterior nos computadores Windows 10. Para atualizações de recursos, especificamente, você pode limitar o tempo entre 2 e 60 dias em que uma desinstalação da versão mais recente pode ser aplicada. Para definir as opções de desinstalação da atualização de software:
+
+1. No Intune, selecione **Atualizações de software**.
+2. Selecione **Anéis de atualização do Windows 10** > selecione um anel de atualização existente > **Desinstalar**.
 
 > [!NOTE]
-> Em computadores com Windows 10, após a atualização de qualidade ter sido revertida com sucesso, os usuários finais ainda poderão ver a atualização revertida com sucesso selecionando **Configurações do Windows** > **Atualizações** > **Atualizar Histórico**.
+> Em computadores Windows 10, após a reversão bem-sucedida da atualização de qualidade, os usuários finais continuam vendo a atualização listada em **Configurações do Windows** > **Atualizações** > **Histórico de Atualizações**.
 
 ## <a name="windows-holographic-for-business-support"></a>Compatibilidade do Windows Holographic for Business
 

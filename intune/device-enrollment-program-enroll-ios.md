@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474439"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
@@ -54,7 +55,7 @@ Antes que possa registrar dispositivos iOS o DEP, você precisa de um arquivo de
 Você pode usar o portal de DEP da Apple para criar um token de DEP. Você também pode usar o portal de DEP para atribuir dispositivos ao Intune para gerenciamento.
 
 > [!NOTE]
-> Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no Portal do Azure. Você pode excluir o token de DEP novamente no Portal do Azure.
+> Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no portal do Azure. Você pode excluir o token de DEP novamente no portal do Azure.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token.
 
@@ -206,13 +207,17 @@ Consulte [Registre seu dispositivo iOS no Intune com o Programa de registro de d
 ## <a name="renew-a-dep-token"></a>Renovar um token DEP  
 1. Acesse deploy.apple.com.  
 2. Em **Gerenciar Servidores**, escolha o servidor MDM associado ao arquivo de token que você deseja renovar.
-3. Escolha **Gerar Novo Token**.  
+3. Escolha **Gerar Novo Token**.
+
+    ![Captura de tela de geração de novo token.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. Escolha **Token do Seu Servidor**.  
-5. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens do programa de registro**.  
-6. Escolha o token e, depois, escolha **Renovar token**.  
-7. Insira a ID da Apple usada para criar o token original.  
+5. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token.
+    ![Captura de tela de tokens do programa de registro.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. Escolha **Renovar token** e insira a ID da Apple usada para criar o token original.  
+    ![Captura de tela de geração de novo token.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. Carregue o token recém-baixado.  
 9. Escolha **Renovar token**. Você verá a confirmação de renovação do token.   
-
-
-
+    ![Captura de tela de confirmação.](./media/device-enrollment-program-enroll-ios/confirmation.png)
