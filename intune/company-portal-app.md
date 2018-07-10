@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744577"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844973"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -56,7 +56,7 @@ Insira as informações de suporte da sua empresa para fornecer ao seu funcioná
 |**Número do telefone** | 20 | Esse número de contato é exibido na página **Contate a TI** para habilitar os funcionários a contatarem o suporte. |
 |**Endereço de email**| 40 | Este endereço de contato é exibido na página **Contatar TI**. Você deve inserir um endereço de email válido no formato `alias@domainname.com`. |
 |**Nome do site**| 40 | Este é o nome amigável exibido para a URL do site de suporte. Se você especificar uma URL do site de suporte e nenhum nome amigável, Ir para o site da TI será exibido na página **Contatar IT** do Portal da Empresa. |
-|**URL do Site**| 150 | Se tiver um site de suporte que queira que os usuários usem, especifique o URL aqui. A URL deve estar no formato **https://www.contoso.com**. Se você não especificar uma URL, nada será exibido no site de suporte da página **Contatar TI**, no Portal da Empresa. |
+|**URL do Site**| 150 | Se tiver um site de suporte que queira que os usuários usem, especifique o URL aqui. A URL deve estar no formato `https://www.contoso.com`. Se você não especificar uma URL, nada será exibido no site de suporte da página **Contatar TI**, no Portal da Empresa. |
 | **Informações adicionais**| 120 | Exibido na página **Contatar TI**. |
 
 
