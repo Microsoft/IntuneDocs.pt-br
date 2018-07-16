@@ -1,23 +1,23 @@
 ---
 title: Criar política de conformidade para dispositivo Windows no Microsoft Intune – Azure | Microsoft Docs
-description: Criar ou configurar uma política de conformidade de dispositivo do Microsoft Intune para Windows Phone 8.1, Windows 8.1 e posterior e dispositivos com Windows 10 e posteriores. Verifique a conformidade no sistema operacional mínimo e máximo, defina restrições e comprimento de senha, exija bitlocker, defina o nível de ameaça aceitável e habilite criptografia no armazenamento de dados, incluindo o Surface Hub e o Windows Holographic for Business.
+description: Criar ou configurar uma política de conformidade de dispositivo do Microsoft Intune para Windows Phone 8.1, Windows 8.1 e posterior e dispositivos com Windows 10 e posteriores. Verifique a conformidade com o sistema operacional mínimo e máximo, defina restrições e tamanho de senha, exija o BitLocker, verifique se há soluções antivírus de terceiros, defina o nível de ameaça aceitável e habilite a criptografia no armazenamento de dados, incluindo o Surface Hub e o Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744900"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909330"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivo para dispositivos Windows no Intune
 
@@ -113,7 +113,9 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
 - **Exigir que a Inicialização Segura seja habilitada no dispositivo:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
 - **Exigir integridade de código:** a integridade de código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade de código detecta quando um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Ou se um arquivo de sistema foi modificado por software mal-intencionado executado por uma conta de usuário com privilégios de administrador.
 
-Veja [CSP do Estado de Integridade](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) para ter detalhes de como funciona o serviço HAS.
+Confira [CSP do atestado de integridade](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) para obter detalhes de como funciona o serviço HAS.
+
+Para configurar o Windows Defender ATP (Proteção Avançada contra Ameaças) como seu serviço de defesa contra ameaças, veja [Habilitar o Windows Defender ATP com acesso condicional](advanced-threat-protection.md).
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
@@ -164,6 +166,11 @@ Veja [CSP do Estado de Integridade](https://docs.microsoft.com/windows/client-ma
 #### <a name="encryption"></a>Criptografia
 
 - **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
+
+#### <a name="device-security"></a>Segurança de dispositivo
+
+- **Antivírus**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções antivírus registradas na Central de Segurança do Windows, como Symantec e Windows Defender. Quando **Não configurado**, o Intune não verifica se há soluções antivírus instaladas no dispositivo.
+- **Software antispyware**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções de software antispyware registradas na Central de Segurança do Windows, como Symantec e Windows Defender. Quando **Não configurado**, o Intune não verifica se há alguma solução de software antispyware instalada no dispositivo.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832760"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844956"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisões de tecnologia para habilitar BYOD com Microsoft Enterprise Mobility + Security (EMS)
 
@@ -39,7 +39,7 @@ Você pode facilmente orientar os usuários a registrar seus dispositivos no ger
 **Conformidade** – algumas organizações precisam estar em conformidade políticas regulatórias ou outras que chamem controles MDM específicos. Por exemplo, você precisa do MDM para criptografar todo o dispositivo ou para produzir um relatório de todos os aplicativos no dispositivo.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Motivos comuns para gerenciar apenas os aplicativos (MAM)
-MAM sem MDM é muito popular para organizações que dão suporte a BYOD. Você pode orientar os usuários a acessar o email do Outlook Mobile (que é compatível com proteções MAM) ao implantar uma política de acesso condicional no Exchange Online. Aqui estão as razões pelas quais você talvez queira apenas gerenciar aplicativos em dispositivos pessoais:
+MAM sem MDM é muito popular para organizações que dão suporte a BYOD. Você pode orientar os usuários a acessar o email do Outlook Mobile (que dá suporte para proteções MAM) ao implantar uma política de acesso condicional no Exchange Online. Aqui estão as razões pelas quais você talvez queira apenas gerenciar aplicativos em dispositivos pessoais:
 
 **Experiência do usuário** – o registro de MDM inclui muitos avisos (impostos pela plataforma) que geralmente resultam em o usuário decidir que afinal preferiria não acessar seus emails no seu dispositivo pessoal. MAM é muito menos alarmante aos usuários, uma vez que eles simplesmente recebem um pop-up uma vez para serem informados de que as proteções MAM estão em vigor.
 

@@ -1,52 +1,61 @@
 ---
-title: Configurações de email do Microsoft Intune para dispositivos que executam o Windows 10
-titleSuffix: ''
-description: Saiba quais configurações do Microsoft Intune podem ser usadas para definir configurações de email em dispositivos que executam o Windows 10.
+title: Configurações de email para dispositivos Windows 10 no Microsoft Intune – Azure | Microsoft Docs
+description: Crie um perfil de email de configuração de dispositivo que usa os servidores Exchange e recupera atributos do Azure Active Directory. Você também pode habilitar o SSL e sincronizar o email e as agendas em dispositivos Windows 10 usando o Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 6/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a04f2267bd4a232fb687f7f77f66e439e6804099
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831151"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904961"
 ---
-# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Configurações de perfil de email no Microsoft Intune para dispositivos que executam o Windows 10
+# <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Configurações de perfil de email para dispositivos que executam o Windows 10 – Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Use as configurações de perfil de email para configurar os dispositivos que executam o Windows 10.
 
-Este artigo mostra as configurações de perfil de email que podem ser definidas para os dispositivos que executam o Windows 10.
+- **Servidor de email**: insira o nome do host do servidor Exchange.
+- **Nome da conta**: insira o nome de exibição da conta de email. Esse nome é exibido aos usuários em seus dispositivos.
+- **Atributo de nome de usuário do AAD**: esse nome é o atributo que o Intune obtém do AAD (Azure Active Directory). O Intune gera dinamicamente o nome de usuário que é usado por esse perfil. Suas opções:
+  - **Nome UPN**: obtém o nome, como `user1` ou `user1@contoso.com`
+  - **Endereço SMTP primário**: obtém o nome no formato de endereço de email, como `user1@contoso.com`
+  - **Nome da conta sAM**: requer o domínio, como `domain\user1`.
 
+    Insira também:  
+    - **Fonte do nome de domínio do usuário**: escolha **AAD** (Azure Active Directory) ou **Personalizado**.
 
-- **Servidor de email** – O nome do host do seu servidor Exchange.
-- **Nome da conta** – o nome de exibição da conta de email exibida aos usuários em seus dispositivos.
-- **Atributo de nome de usuário do AAD** – Esse é o atributo no AD (Active Directory) ou Azure AD, que é usado para gerar o nome de usuário para este perfil de email. Selecione o **Endereço SMTP Primário**, como o **user1@contoso.com** ou **Nome UPN**, como **user1** ou **user1@contoso.com**.
-- **Atributo de endereço de email do AAD** – Como o endereço de email do usuário em cada dispositivo cliente será gerado. Selecione **Endereço SMTP Primário** para usar o endereço SMTP primário para fazer logon no Exchange ou use **Nome UPN** para usar o nome da entidade completo como o endereço de email.
+      Ao escolher obter os atributos do **AAD**, insira:
+      - **Atributo de nome de domínio do usuário do AAD**: escolha obter o atributo **Nome de domínio completo** ou **Nome NetBIOS** do usuário
 
+      Ao escolher usar atributos **Personalizados**, insira:
+      - **Nome de domínio personalizado a ser usado**: insira um valor que o Intune usará para o nome de domínio, como `contoso.com` ou `contoso`
+
+- **Atributo de endereço de email do AAD**: escolha como o endereço de email para o usuário é gerado. Selecione **nome UPN** (`user1@contoso.com` ou `user1`) para usar o nome da entidade completo como o endereço de email, ou **Endereço SMTP primário** (`user1@contoso.com`) para usar o endereço SMTP primário para entrar no Exchange.
 
 ## <a name="security-settings"></a>Configurações de segurança
 
-- **SSL** – Use a comunicação por protocolo SSL ao enviar e receber emails e ao se comunicar com o servidor Exchange.
-
-
+- **SSL**: use a comunicação do protocolo SSL ao enviar e receber emails e ao se comunicar com o servidor Exchange.
 
 ## <a name="synchronization-settings"></a>Configurações de sincronização
 
-- **Quantidade de emails a ser sincronizada** – Escolha o número de dias de emails que você deseja sincronizar ou selecione **Ilimitado** para sincronizar todas as mensagens disponíveis.
-- **Sincronizar agendamento** – selecione o agendamento conforme o qual os dispositivos sincronizam os dados do servidor Exchange. Você também pode selecionar **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo deve iniciar a sincronização.
+- **Quantidade de emails a serem sincronizados**: escolha o número de dias de email que você deseja sincronizar. Ou selecione **Ilimitado** para sincronizar todos os emails disponíveis.
+- **Sincronizar agendamento**: selecione o agendamento para que os dispositivos sincronizem os dados do servidor Exchange. Também é possível selecionar a opção **Conforme as mensagens chegam**, que sincroniza os dados assim que eles chegam, ou **Manual**, em que o usuário do dispositivo precisa iniciar a sincronização.
 
 ## <a name="content-sync-settings"></a>Configurações de sincronização de conteúdo
 
-- **Tipo de conteúdo a ser sincronizado** – Selecione os tipos de conteúdo que você deseja sincronizar dos dispositivos:
-    - **Contatos**
-    - **Calendário**
-    - **Tarefas**
+- **Tipo de conteúdo a ser sincronizado**: selecione os tipos de conteúdo que você deseja sincronizar com os dispositivos de:
+  - **Contatos**
+  - **Calendário**
+  - **Tarefas**
+
+## <a name="next-steps"></a>Próximas etapas
+[Definir as configurações de email no Intune](email-settings-configure.md)

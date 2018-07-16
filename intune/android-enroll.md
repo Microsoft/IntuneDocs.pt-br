@@ -15,17 +15,20 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909177"
 ---
 # <a name="enroll-android-devices"></a>Registrar dispositivos Android
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Como administrador do Intune, é possível gerenciar dispositivos Android, incluindo dispositivos Samsung Knox Standard. Também é possível gerenciar o perfil de trabalho em [dispositivos Android for Work](#enable-enrollment-of-android-for-work-devices).
+Como administrador do Intune, você pode gerenciar os seguintes dispositivos Android:
+- Dispositivos Android, incluindo dispositivos Samsung KNOX Standard.
+- Dispositivos Android Enterprise, incluindo [dispositivos de perfil de trabalho Android](#enable-enrollment-of-android-for-work-devices) e dispositivos de quiosque Android.
 
 Dispositivos que executam o Samsung Knox Standard são compatíveis para o gerenciamento de vários usuários pelo Intune. Isso significa que os usuários finais podem entrar ou sair de um dispositivo com as credenciais do Azure AD. O dispositivo é gerenciado centralizadamente, independentemente de estar ou não em uso. Quando os usuários entram, eles têm acesso a aplicativos e, além disso, obtêm todas as políticas aplicadas a eles. Quando os usuários saem, todos os dados do aplicativo são removidos.
 
@@ -35,91 +38,29 @@ Para se preparar para gerenciar dispositivos móveis, é necessário definir a a
 
 ## <a name="set-up-android-enrollment"></a>Configurar registro do Android
 
-Por padrão, o Intune é configurado para permitir o registro de dispositivos Android e Samsung Knox Standard.
+Por padrão, o Intune é configurado para permitir o registro de dispositivos Android e Samsung Knox Standard. Depois de cumprir o pré-requisito, os administradores simplesmente precisam [informar aos usuários como eles devem registrar os dispositivos](/intune-user-help/enroll-your-device-in-intune-android.md).
 
-Para bloquear o registro de dispositivos Android ou para bloquear o registro somente de dispositivos Android de propriedade pessoal, consulte [Definir restrições de tipo de dispositivo](enrollment-restrictions-set.md).
-
-Para habilitar o gerenciamento de dispositivos, os usuários devem registrá-los baixando o aplicativo do Portal da Empresa do Intune (disponível na Google Play) e, em seguida, abrindo o aplicativo e seguindo as instruções. Depois que os dispositivos Android forem gerenciados, [atribua políticas de conformidade](compliance-policy-create-android.md), [gerencie aplicativos](app-management.md) e mais.
-
-## <a name="enable-enrollment-of-android-for-work-devices"></a>Habilite o registro de dispositivos Android for Work
-
-Para habilitar o gerenciamento do perfil de trabalho em dispositivos que dão [suporte a Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), você deverá adicionar uma associação do Android for Work no Intune. Se você deseja registrar dispositivos no Android for Work, que já foram registrados anteriormente como dispositivos Android regulares, é necessário cancelar os registros dos dispositivos e registrá-los novamente.
-
-Se você estiver registrando dispositivos Android for Work usando uma conta do [Gerenciador de Registros do Dispositivo](device-enrollment-manager-enroll.md), haverá um limite de 10 dispositivos que podem ser registrados por conta.
-
-Para obter mais informações, consulte [Dados que o Intune envia ao Google](data-intune-sends-to-google.md).
-
-## <a name="add-android-for-work-binding-for-intune"></a>Adicionar a associação do Android for Work para o Intune
-
-> [!NOTE]
-> Devido à interação entre domínios do Google e da Microsoft, esta etapa pode exigir que você ajuste as configurações do navegador para concluir com êxito.  Verifique se "portal.azure.com" e "play.google.com" estão na mesma zona de segurança em seu navegador.
-
-1. **Configurar o MDM do Intune**<br>
-Se você ainda não o fez, prepare-se para o gerenciamento de dispositivo móvel ao [configurar a autoridade de gerenciamento do dispositivo móvel](mdm-authority-set.md) como **Microsoft Intune**.
-2. **Configurar a associação do Android for Work**<br>
-    
-   a. Entre no [Intune no Portal do Azure](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Android** > **Google Play Gerenciado**.  Se você estiver usando uma função de administrador do Intune personalizada, o acesso a isso exigirá permissões de Leitura e Atualização da Organização.
-   
-   ![Tela de registro do Android for Work](./media/android-work-bind.png)
-
-   b. Selecione **Eu concordo** para conceder à Microsoft permissão para [enviar informações de usuário e dispositivo para o Google](data-intune-sends-to-google.md). 
-   
-   c. Selecione **Iniciar Google para conectar-se agora** para abrir o site Android for Work da Google Play. O site é aberto em uma nova guia em seu navegador.
-  
-   d. **Entrar no Google**<br>
-   Na página de entrada do Google, entre com a conta do Google que será associada a todas as tarefas de gerenciamento do Android for Work para o locatário. Esta é a conta do Google que os administradores de TI da sua empresa compartilham para gerenciar e publicar aplicativos no console do Play for Work. Você pode usar uma conta do Google existente ou criar uma nova.  A conta escolhida não deve estar associada a um domínio G Suite.
-
-   e. **Forneça os detalhes da organização**<br>
-   Forneça o nome da sua empresa para **Nome da organização**. O **Microsoft Intune** deverá ser exibido para o **Provedor EMM (Enterprise Mobility Management)**. Aceite o contrato do Android for Work e escolha **Confirmar**. Sua solicitação será processada.
-
-## <a name="specify-android-for-work-enrollment-settings"></a>Especificar as configurações de registro do Android for Work
-O Android for Work é compatível em determinados dispositivos Android. Consulte os [requisitos do Google para o Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Qualquer dispositivo compatível com o Android for Work também é compatível com o gerenciamento de Android convencional. O Intune permite que você especifique como os dispositivos compatíveis com Android for Work devem ser gerenciados nas [Restrições de Registro](enrollment-restrictions-set.md).
-
-- **Bloquear (definido por padrão)**: todos os dispositivos Android, incluindo dispositivos compatíveis com Android for Work, serão registrados como dispositivos Android convencionais.
-- **Permitir**: todos os dispositivos compatíveis com Android for Work serão registrados como dispositivos Android for Work. Os dispositivos Android que não dão suporte ao Android for Work são registrados como dispositivos Android convencionais.
-
-## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Aprovar o aplicativo Portal da Empresa na Google Play Store gerenciada
-Você deve aprovar o aplicativo Portal da Empresa para o Android na Google Play Store gerenciada a fim de garantir que ele receba atualizações automáticas de aplicativo. Se você não aprová-lo, o Portal da Empresa acabará ficando desatualizado e não poderá receber a correções de bugs importantes ou novos recursos quando lançados pela Microsoft.
-
-Siga estas etapas para aprovar o Portal da Empresa do Intune:
-
-1.  Navegue para o aplicativo do Portal da Empresa na [Google Play Store gerenciada](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
-2.  Entre na Google Play Store gerenciada com a mesma conta do Google que você usou para configurar a associação para o Android for Work.
-3.  Clique em **Aprovar** e uma nova caixa de diálogo será aberta.
-4.  Examine as permissões nessa caixa de diálogo e clique em **Aprovar**. É necessário aceitar essas permissões para que o aplicativo Portal da Empresa gerencie o perfil de trabalho no dispositivo.
-5.  Selecione **Manter aprovada quando o aplicativo solicitar novas permissões** e clique em **Salvar.**
-
-<!--  ## Next steps for Android for Work
-After configuring the Android for Work binding and settings, you can do the following:
-- [Deploy Android for Work apps](android-for-work-apps.md)
-- [Add Android for Work configuration policies](android-for-work-policy-settings-in-microsoft-intune.md)  -->
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Informe aos usuários como registrar seus dispositivos para acessar os recursos da empresa
-
-Peça aos usuários que acessem o Google Play para baixar o aplicativo do Portal da Empresa do Intune e, em seguida, que abram o aplicativo e sigam os avisos para registrar seus dispositivos. O aplicativo orienta os usuários pelo processo de registro, explicando o que os usuários podem esperar e o que os administradores de TI podem e não podem ver em seus dispositivos.
-
-Você também pode enviar a eles um link com as etapas do registro online: [Registrar seu dispositivo Android no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android).
+Depois que os usuários registrarem os dispositivos, você poderá começar a gerenciar esses dispositivos no Intune, por exemplo, [atribuindo políticas de conformidade](compliance-policy-create-android.md), [gerenciando aplicativos](app-management.md) e muito mais.
 
 Para obter informações sobre outras tarefas, consulte estes artigos:
 
 - [Recursos sobre a experiência do usuário final com o Microsoft Intune](end-user-educate.md)
 - [Usando seu dispositivo Android com o Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
-## <a name="unbind-your-android-for-work-administrative-account"></a>Desassociar sua conta administrativa do Android for Work
+Para bloquear o registro de dispositivos Android ou para bloquear o registro somente de dispositivos Android de propriedade pessoal, consulte [Definir restrições de tipo de dispositivo](enrollment-restrictions-set.md).
 
-É possível desligar o registro e o gerenciamento do Android for Work. Escolher **Desassociar** no console de administração do Intune remove todos os dispositivos Android for Work registrados do registro. Ele também remove a relação entre a conta do Android for Work e o Intune.
+## <a name="set-up-android-enterprise-enrollment"></a>Configurar o registro do Android Enterprise
 
-### <a name="to-unbind-an-android-for-work-account"></a>Para desassociar uma conta do Android for Work
+O Android Enterprise é um conjunto de recursos e serviços do dispositivo Android que separam aplicativos e dados pessoais de um perfil de trabalho que contém dados e aplicativos de trabalho. Os dispositivos Android Enterprise incluem dispositivos de perfil de trabalho e dispositivos de quiosque. 
 
-1. **Desassociar a associação do Android for Work**<br>
-    Como administrador do Intune, no [portal do Azure](https://portal.azure.com), escolha **Todos os Serviços** > **Monitoramento + Gerenciamento** > **Intune**.  No painel **Intune**, escolha **Registro de dispositivo**, > **Registro do Android for Work** e escolha **Desassociar**.
+Para configurar o registro de dispositivos Android Enterprise, primeiro você precisa [conectar o Android Enterprise ao Intune](connect-intune-android-enterprise.md). Depois de concluir essa etapa, você poderá:
 
-2. **Aceite a exclusão da associação do Android for Work**<br>
-  Escolha **Sim** para excluir a associação e cancelar o registro de todos os dispositivos Android for Work do Intune.
+[Configurar registros de perfil de trabalho Android](android-work-profile-enroll.md)
+[Configurar registros de quiosque do Android](android-kiosk-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Experiência do usuário final ao registrar um dispositivo Samsung Knox
 Há várias considerações ao registrar dispositivos Samsung Knox:
--   Mesmo que nenhuma política exija um PIN, o dispositivo deverá ter pelo menos de um a quatro dígitos PIN para registrar. Se o dispositivo não tiver um PIN, o usuário será solicitado a criar um.
+-   Mesmo se nenhuma política exigir um PIN, o dispositivo precisará ter pelo menos um PIN de um a quatro dígitos para o registro. Se o dispositivo não tiver um PIN, o usuário será solicitado a criar um.
 -   Não há interação do usuário para os WPJ (Certificados Workplace Join).
 -   O usuário é solicitado a dar informações de Registro do Serviço e sobre o que o aplicativo pode fazer.
 -   O usuário é solicitado a dar informações de Registro do Knox e sobre o que o Knox pode fazer.

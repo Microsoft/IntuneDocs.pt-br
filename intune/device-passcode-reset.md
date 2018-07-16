@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964718"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905148"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
@@ -30,6 +30,7 @@ Para criar uma nova senha para um dispositivo, use a ação **Remover senha**.
 
 - Dispositivos Android registrados com um perfil de Trabalho, versão 8.0 e posteriores
 - Dispositivos Android na versão 6.0 ou anterior
+- Dispositivos de quiosque Android Enterprise
 - iOS 
      
 ## <a name="unsupported-platforms"></a>Plataformas sem suporte
@@ -46,13 +47,13 @@ Para criar uma nova senha para um dispositivo, use a ação **Remover senha**.
 3. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
 4. Na lista de dispositivos que você gerencia, selecione um dispositivo e escolha **...Mais**. Em seguida, escolha a ação remota de dispositivo **Remover senha**.
 
-## <a name="resetting-android-for-work-passcodes"></a>Redefinindo senhas do Android for Work
+## <a name="resetting-android-work-profile-passcodes"></a>Redefinindo senhas de perfil de trabalho Android
 
-Dispositivos Android for Work compatíveis recebem uma nova senha de desbloqueio de perfil gerenciado ou um desafio de perfil gerenciado para o usuário final. Para dispositivos no Android 8.0 ou posterior com perfis de Trabalho, os usuários finais recebem notificações para ativar seu token de redefinição de senha imediatamente após a conclusão do registro. A notificação será exibida se a senha de um perfil de trabalho for obrigatória e estiver definida. Depois que a senha for inserida, a notificação será descartada.
+Os dispositivos de perfil de trabalho Android com suporte recebem uma nova senha de desbloqueio ou um novo desafio de perfil gerenciado para o usuário final. Para dispositivos de perfil de trabalho Android 8.0, os usuários finais são notificados para ativar a redefinição de senha logo após a conclusão do registro. A notificação será exibida se a senha de um perfil de trabalho for obrigatória e estiver definida. Depois que a senha for inserida, a notificação será descartada.
 
 ## <a name="resetting-ios-passcodes"></a>Redefinir senhas do iOS
 
-Senhas são removidas dos dispositivos iOS. Se houver uma política de conformidade de senha definida, o dispositivo solicitará que o usuário defina uma nova senha nas Configurações. 
+Senhas são removidas dos dispositivos iOS. Quando há um conjunto de políticas de conformidade de senha, o dispositivo solicita que o usuário defina uma nova senha em Configurações. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

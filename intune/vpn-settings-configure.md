@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744594"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905097"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Criar perfis de VPN no Intune
 
@@ -27,7 +27,7 @@ Redes virtuais privadas (VPN) oferecem aos usuários acesso remoto seguro à red
 
 Por exemplo, suponha que você deseje provisionar todos os dispositivos iOS com as configurações necessárias para conectar a um compartilhamento de arquivos na rede corporativa. Você cria um perfil VPN que contém as configurações para se conectar à rede corporativa. Em seguida, você atribui esse perfil a todos os usuários que têm dispositivos iOS. Os usuários veem a conexão VPN na lista de redes disponíveis e podem se conectar com esforço mínimo.
 
-É possível usar as políticas de configuração personalizada do Intune para criar perfis VPN para as seguintes plataformas:
+Você pode usar políticas de configuração personalizadas do Intune para criar perfis de VPN para as seguintes plataformas:
 
 * Android 4 e posterior
 * Dispositivos registrados que executam o Windows 8.1 e versões posteriores
@@ -40,7 +40,7 @@ Por exemplo, suponha que você deseje provisionar todos os dispositivos iOS com 
 
 Você pode criar perfis VPN usando os seguintes tipos de conexão:
 
-|Tipo de conexão|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Tipo de conexão|Android<br>Perfis de trabalho Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automática|Não|Não|Não|Não|Não|Sim|
 |Check Point Capsule VPN|Sim|Sim|Sim|Sim|Sim|Sim|
@@ -68,21 +68,21 @@ Aprenda a criar perfis de VPN personalizados usando configurações de URI em [C
 3. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 4. Insira um **Nome** e uma **Descrição** para o perfil VPN.
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações de VPN. No momento, é possível escolher uma das seguintes plataformas para as configurações de dispositivo VPN:
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 e posterior**
-  - **Windows 10 e posterior**
+   - **Android**
+   - **Android Enterprise**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 e posterior**
+   - **Windows 10 e posterior**
 6. Na lista suspensa de tipos de **Perfil**, escolha **VPN**.
 7. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
-  - [Configurações do Android e do Android for Work](vpn-settings-android.md)
-  - [Configurações do iOS](vpn-settings-ios.md)
-  - [Configurações do macOS](vpn-settings-macos.md)
-  - [Configurações do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
-  - [Configurações do Windows 8.1](vpn-settings-windows-8-1.md)
-  - [Configurações do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
+   - [Configurações do Android e do perfil de trabalho Android](vpn-settings-android.md)
+   - [Configurações do iOS](vpn-settings-ios.md)
+   - [Configurações do macOS](vpn-settings-macos.md)
+   - [Configurações do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
+   - [Configurações do Windows 8.1](vpn-settings-windows-8-1.md)
+   - [Configurações do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
 8. Ao terminar, escolha **Criar** seu perfil
 
 O perfil é criado e exibido na lista de perfis. Para atribuir esse perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).

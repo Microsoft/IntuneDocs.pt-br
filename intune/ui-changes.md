@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232929"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905369"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Este guia de referência destina-se àqueles que estão totalmente familiarizados com o Intune no portal clássico e querem saber como fazer algo no Intune por meio do portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
@@ -36,7 +36,7 @@ Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à m
 |Grupos por IMEI (todas as plataformas)| Grupos > Todos os Dispositivos > Dispositivos corporativos pré-registrados > Por IMEI (Todas as Plataformas) | [Registro de dispositivo > Identificadores de Dispositivos Corporativos](#by-imei-all-platforms)|
 | Perfil de Registro de Dispositivo Corporativo| Política> Registro de Dispositivo Corporativo | [Registro de dispositivo > Registro da Apple > Perfis do Programa de Registro](#where-did-corporate-pre-enrolled-devices-go) |
 | Perfil de Registro de Dispositivo Corporativo | Política> Registro de Dispositivo Corporativo | [Registro de dispositivo > Registro da Apple > Perfis de CA](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Administração > Gerenciamento de Dispositivo Móvel > Android for Work | Registro de dispositivo > Registro do Android for Work |
+| Android for Work | Administração > Gerenciamento de Dispositivo Móvel > Android for Work | Registro de dispositivo > Registro do Android |
 | Termos e condições | Política > Termos e Condições | Registro de dispositivo > Termos e Condições |
 Configurações do Portal da Empresa|Administrador > Portal da Empresa|**Gerenciar** > Aplicativos móveis<br> **Configurar** > Identidade visual do Portal da Empresa
 

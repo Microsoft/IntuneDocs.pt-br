@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026322"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905811"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -39,14 +39,14 @@ As restrições de registro específicas que você pode criar incluem:
 - Número máximo de dispositivos registrados.
 - Plataformas de dispositivo que podem ser registradas:
   - Android.
-  - Android for Work.
+  - Perfil de trabalho Android.
   - iOS.
   - macOS.
   - Windows.
-- Versão do sistema operacional de plataforma para iOS, Android, Android for Work e Windows. (Somente versões do Windows 10 podem ser usadas. Deixe em branco se Windows 8.1 for permitido.)
+- Versão do sistema operacional da plataforma para iOS, Android, perfil de trabalho Android e Windows. (Somente versões do Windows 10 podem ser usadas. Deixe em branco se Windows 8.1 for permitido.)
   - Versão mínima.
   - Versão máxima.
-- Restringir dispositivos pessoais (apenas iOS, Android, Android for Work e macOS).
+- Restringir dispositivos de propriedade pessoal (somente iOS, Android, perfil de trabalho Android e macOS).
 
 ## <a name="default-restrictions"></a>Restrições padrão
 
@@ -78,7 +78,7 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 5. No nome da restrição (**Todos os usuários** para a restrição padrão), selecione **Plataformas**. Escolha **Permitir** ou **Bloquear** para cada plataforma listada.
 6. Selecione **Salvar**.
 7. No nome da restrição (**Todos os usuários** para a restrição padrão), selecione **Configurações da plataforma**. Em seguida, selecione as **Versões** mínimas e máximas para as plataformas listadas. As versões compatíveis incluem:
-    - O Android e o Android for Work são compatíveis com major.minor.rev.build.
+    - O perfil de trabalho Android dá suporte para major.minor.rev.build.
     - O iOS é compatível com o major.minor.rev.
     - O Windows é compatível com minor.rev.build somente para Windows 10.
   As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator.
@@ -88,9 +88,9 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 
 
 >[!NOTE]
->- Se você impedir o registro de dispositivos pessoais Android, os dispositivos pessoais Android for Work ainda poderão ser registrados.
->- Por padrão, as configurações de dispositivos Android for Work são as mesmas que as configurações para dispositivos Android. Depois de alterar as configurações do Android for Work, esse não será mais o caso.
->- Se você bloquear o registro pessoal de Android for Work, somente dispositivos Android corporativos poderão se registrar como Android for Work.
+>- Se você impedir o registro de dispositivos Android de propriedade pessoal, os dispositivos de perfil de trabalho Android de propriedade pessoal ainda poderão ser registrados.
+>- Por padrão, as configurações de dispositivos do perfil de trabalho Android são as mesmas que as configurações de dispositivos Android. Depois que você alterar as configurações do perfil de trabalho Android, elas não serão mais as mesmas.
+>- Se você bloquear o registro do perfil de trabalho Android pessoal, somente os dispositivos Android corporativos poderão ser registrados como um perfil de trabalho Android.
 
 ## <a name="set-device-limit-restrictions"></a>Definir restrições de limite de dispositivos
 

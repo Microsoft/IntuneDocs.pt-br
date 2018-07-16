@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232911"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906032"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Defina a autoridade de gerenciamento de dispositivo móvel
 
@@ -41,9 +41,11 @@ As configurações possíveis são:
 
 ## <a name="set-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
 
+Se você ainda não tiver definido a autoridade de MDM, siga as etapas abaixo. Para alterar de uma autoridade de MDM para outra, confira a seção [alterar a autoridade de MDM](#prepare-to-change-the-mdm-authority-to-configuration-manager) abaixo.
+
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Selecione a faixa laranja para abrir a configuração **Autoridade de Gerenciamento de Dispositivo Móvel**.
+3. Selecione a faixa laranja para abrir a configuração **Autoridade de Gerenciamento de Dispositivo Móvel**. A faixa laranja somente será exibida se você ainda não tiver definido a autoridade de MDM.
 4. Em **Autoridade de Gerenciamento de Dispositivo Móvel**, escolha sua autoridade de MDM entre as seguintes opções:
    - **Autoridade de MDM do Intune**
    - **Autoridade de MDM do Configuration Manager**
@@ -54,10 +56,10 @@ As configurações possíveis são:
    Uma mensagem indica que você configurou com êxito sua autoridade MDM Intune.
 
 ### <a name="workflow-of-intune-administration-ui"></a>Fluxo de trabalho da interface do usuário da administração do Intune
-Quando o gerenciamento de dispositivo Android ou Apple está habilitado, o Intune envia informações do dispositivo e do usuário para integração com esses serviços de terceiros, a fim de que eles gerenciem seus respectivos dispositivos.
+Quando o gerenciamento de dispositivo Android ou Apple está habilitado, o Intune envia informações do dispositivo e do usuário a serem integradas com esses serviços de terceiros para que eles gerenciem seus respectivos dispositivos.
 
 Os cenários que adicionam um consentimento para compartilhar dados estão inclusos quando:
-- Você habilita o Android for Work.
+- Você habilita perfis de trabalho Android.
 - Você habilita e carrega Apple MDM Push Certificates.
 - Você habilita qualquer um dos serviços da Apple, como o Programa de registro de dispositivos, o School Manager ou o Volume Purchase Program.
 

@@ -1,7 +1,7 @@
 ---
-title: Configurações de perfil personalizadas do Intune para Android for Work
+title: Configurações de perfil personalizadas do Intune para perfis de trabalho Android
 titlesuffix: Microsoft Intune
-description: Saiba como criar configurações de perfil personalizado do Microsoft Intune para dispositivos Android for Work.
+description: Saiba como criar configurações de perfil personalizadas do Microsoft Intune para dispositivos de perfil de trabalho Android.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,25 +15,25 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1d7d1512514465b618435b8e699c581534384d2c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832942"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905284"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Criar configurações de perfil personalizadas do Intune para dispositivos com Android for Work
+# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Criar configurações de perfil personalizadas do Intune para dispositivos de perfil de trabalho Android
 
-Use a política de configuração personalizada do Android for Work do Intune para atribuir configurações OMA-URI, que podem ser usadas para controlar funcionalidades em dispositivos Android for Work. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
+Use a política de configuração personalizada do perfil de trabalho Android do Intune para atribuir configurações de OMA-URI que podem ser usadas para controlar recursos em dispositivos de perfil de trabalho Android. Essas são configurações padrão que muitos fabricantes de dispositivos móveis usam para controlar recursos dos dispositivos.
 
-Essa funcionalidade destina-se a permitir que você atribua configurações do Android que não são configuráveis com as políticas do Intune. No momento, o Intune dá suporte a um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para descobrir quais políticas podem ser configuradas.
+Essa funcionalidade destina-se a permitir que você atribua configurações do Android que não são configuráveis com as políticas do Intune. No momento, o Intune dá suporte a um número limitado de políticas personalizadas do Android. Confira os exemplos neste artigo para descobrir quais políticas você pode configurar.
 
 ## <a name="create-a-custom-profile"></a>Criar um perfil personalizado
 
-1. Use as instruções em [Como definir configurações personalizadas do dispositivo](custom-settings-configure.md) para começar.
+1. Use as instruções em [Como definir configurações personalizadas do dispositivo](custom-settings-configure.md) para começar. Para **Plataforma** escolha **Android Enterprise** e para **Tipo de perfil** escolha **Personalizado**.
 2. Na folha **Configurações personalizadas do OMA-URI**, escolha **Adicionar** para adicionar uma nova configuração.
 3. Na folha **Adicionar Linha**, configure o seguinte:
-    - **Nome** - insira um nome exclusivo para as configurações personalizadas do Android for Work para ajudar a identificá-las no Portal do Azure.
+    - **Nome** – insira um nome exclusivo para as configurações personalizadas do perfil de trabalho Android para ajudar a identificá-las no Portal do Azure.
     - **Descrição** - forneça uma descrição que dê uma visão geral da política personalizada do Android e outras informações relevantes que o ajudarão a localizá-la.
     - **OMA-URI** - insira o OMA-URI para o qual você deseja fornecer uma configuração.
     - **Tipo de dados** – Selecione o tipo de dados em que você especificará essa configuração de OMA-URI. Escolha entre **Cadeia de caracteres**, **Cadeia de caracteres (arquivo XML)**, **Data e hora**, **Inteiro**, **Ponto flutuante**, **Booliano** ou **Base64 (arquivo)**.
@@ -43,14 +43,14 @@ Essa funcionalidade destina-se a permitir que você atribua configurações do A
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, você criará um perfil personalizado que pode ser usado para restringir a permissão de ações de copiar e colar entre aplicativos pessoais e de trabalho em dispositivos gerenciados com Android for Work.
+Neste exemplo, você criará um perfil personalizado que pode ser usado para restringir a permissão das ações de copiar e colar entre aplicativos pessoais e de trabalho em dispositivos de perfil de trabalho Android.
 
-1. Use o procedimento neste tópico para criar um perfil personalizado do Android for Work usando os seguintes valores:
+1. Use o procedimento neste artigo para criar um perfil personalizado para dispositivos de perfil de trabalho Android usando os seguintes valores:
     - **Nome** - insira "Bloquear copiar e colar" ou o texto de sua escolha.
     - **Descrição** - insira "Bloqueia copiar/colar entre aplicativos pessoais e de trabalho" ou o texto de sua escolha.
     - **OMA-URI** - insira **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste**.
     - **Tipo de dados** - selecione **Booliano** para indicar se o valor para esse OMA-URI é **True** ou **False**.
     - **Valor** -selecione **True**.
 2. A configuração deve ficar semelhante a esta imagem.
-![Bloquear copiar e colar para Android for Work.](./media/custom-policy-afw-copy-paste.png)
-3. Agora, quando você atribui esse perfil personalizado aos dispositivos Android for Work que você gerencia, as ações de copiar e colar serão bloqueadas entre aplicativos nos perfis de trabalho e pessoais.
+![Bloquear ações de copiar e colar para o perfil de trabalho Android.](./media/custom-policy-afw-copy-paste.png)
+3. Agora, ao atribuir esse perfil personalizado aos dispositivos de perfil de trabalho Android que você gerencia, as ações de copiar e colar serão bloqueadas entre aplicativos nos perfis de trabalho e pessoais.

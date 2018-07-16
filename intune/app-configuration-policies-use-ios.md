@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232226"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905828"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
 
@@ -158,6 +158,9 @@ Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propr
 - \{\{username\}\}—por exemplo, **João Silva**
 - \{\{serialnumber\}\}—por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS)
 - \{\{serialnumberlast4digits\}\}— por exemplo, **G5V2** (para dispositivos iOS)
+
+## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorar o status da configuração do aplicativo iOS por dispositivo 
+Depois que uma política de configuração for atribuída, você poderá monitorar o status de configuração do aplicativo iOS de cada dispositivo gerenciado. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos gerenciados, selecione um dispositivo específico para exibir uma folha para o dispositivo. Na folha do dispositivo, selecione **Configuração de aplicativo**.  
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263397"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905981"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -51,7 +51,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativos da iOS Store  | Aplicativo da Store  | Selecione **iOS** como o **tipo de aplicativo**, procure o aplicativo e selecione o aplicativo no Intune. |
 | Aplicativos da Windows Phone 8.1 Store  | Aplicativo da Store  | Selecione **Windows Phone 8.1** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
 | Aplicativos da Microsoft Store  | Aplicativo da Store  | Selecione **Windows** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
-| Aplicativos Android for Work | Aplicativo da Store  | Localize e aprove o aplicativo Android for Work no Google Play for Work.  |
+| Aplicativos de trabalho Android | Aplicativo da Store  | Localize e aprove o aplicativo do perfil de trabalho Android na Google Play Store gerenciada.  |
 | Aplicativos do Office 365 para Windows 10  | Aplicativo da Store (Office 365) | Selecione **Windows 10** no **Pacote do Office 365** como o **tipo de aplicativo** e, em seguida, selecione o aplicativo do Office 365 que você deseja instalar.  |
 | Aplicativos do Office 365 para macOS | Aplicativo da Store (Office 365) | Selecione **macOS** no **Pacote do Office 365** como o **tipo de aplicativo** e, em seguida, selecione o pacote do aplicativo do Office 365. |
 | Aplicativos LOB para Android | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Android com a extensão **.apk**.  |
@@ -117,7 +117,7 @@ Os aplicativos gerenciados pelo Intune também podem habilitar a proteção do a
 ### <a name="understanding-licensed-apps"></a>Noções básicas sobre aplicativos licenciados
 Além de entender os aplicativos Web, os aplicativos da Store e os aplicativos LOB, você também deve saber qual é o destino dos aplicativos do programa de compra por volume e dos aplicativos licenciados, como: 
 - **Programa de Compra por Volume da Apple para Empresas (iOS e macOS)**: a App Store do iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
-- **Android for Work (Android)**: a maneira pela qual os aplicativos são atribuídos a dispositivos Android for Work e dispositivos Android padrão é diferente. Todos os aplicativos instalados no Android for Work são obtidos na loja do Google Play for Work. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
+- **Perfil de trabalho Android**: a maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Todos os aplicativos instalados nos perfis de trabalho Android vêm da Google Play Store gerenciada. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
 - **Microsoft Store para Empresas (Windows 10)**: a Microsoft Store para Empresas oferece um local para encontrar e comprar aplicativos para a sua organização, individualmente ou em volume. Conectando a Store ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Antes de adicionar aplicativos

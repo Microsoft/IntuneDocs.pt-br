@@ -1,6 +1,6 @@
 ---
-title: Restrições de dispositivos para Android for Work no Microsoft Intune – Azure | Microsoft Docs
-description: Em dispositivos que executam o Android for Work, é possível restringir algumas configurações no dispositivo, incluindo ações de copiar e colar, de mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho da senha, falhas de entrada, uso de impressão digital para desbloquear, reutilização de senhas e habilitação de compartilhamento de bluetooth para contatos de trabalho.
+title: Restrições do dispositivo para perfis de trabalho Android no Microsoft Intune – Azure | Microsoft Docs
+description: Nos dispositivos de perfil de trabalho Android, você pode restringir algumas configurações no dispositivo, como copiar e colar, mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho de senha, falhas de entrada, usar impressão digital para desbloquear, reutilizar senhas e habilitar o compartilhamento de contatos de trabalho por bluetooth.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046308"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905930"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Configurações de restrição de dispositivo de trabalho no Intune
 
-Este artigo lista as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Android for Work.
+Este artigo lista as configurações de restrições do dispositivo do Microsoft Intune que você pode definir para dispositivos de perfil de trabalho Android.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ Este artigo lista as configurações de restrições de dispositivo do Microsoft
 ### <a name="general-settings"></a>Configurações Gerais
 
 - **Copiar e colar entre os perfis de trabalho e pessoais**: controla as ações de copiar e colar entre aplicativos pessoais e de trabalho. Escolha **Bloquear** para habilitar o bloqueio. Escolha **Não configurado** para desabilitar o bloqueio.
-- **Compartilhamento de dados entre perfis de trabalho e pessoais**: controle se os aplicativos no perfil de trabalho podem ser compartilhados com aplicativos no perfil pessoal. Essa configuração controla as ações de compartilhamento em aplicativos (por exemplo, a opção **Compartilhar...** no aplicativo de navegador Chrome) e não se aplica ao comportamento da área de transferência copiar/colar. Ao contrário das [configurações de política de proteção do aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as configurações de restrição de dispositivos são gerenciadas no portal do Intune e usam a partição de perfil de trabalho do Android for Work para isolar os aplicativos gerenciados. Escolha:
+- **Compartilhamento de dados entre perfis de trabalho e pessoais**: controle se os aplicativos no perfil de trabalho podem ser compartilhados com aplicativos no perfil pessoal. Essa configuração controla as ações de compartilhamento em aplicativos (por exemplo, a opção **Compartilhar...** no aplicativo de navegador Chrome) e não se aplica ao comportamento da área de transferência copiar/colar. Ao contrário das [configurações da política de proteção do aplicativo](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as configurações de restrição de dispositivo são gerenciadas no portal do Intune e usam a partição do perfil de trabalho Android para isolar os aplicativos gerenciados. Escolha:
   - **Restrições de compartilhamento padrão**: o comportamento de compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. O Google não oferece uma maneira de bloquear o compartilhamento do perfil pessoal com o perfil de trabalho em dispositivos que executam versões 6.0 e posterior.
   - **Os aplicativos no perfil de trabalho podem lidar com solicitações de compartilhamento do perfil pessoal**: habilita o recurso interno do Android que permite o compartilhamento do perfil pessoal para o perfil de trabalho. Quando habilitada, uma solicitação de compartilhamento de um aplicativo no perfil pessoal pode ser compartilhada com aplicativos no perfil de trabalho. Essa configuração é o comportamento padrão para dispositivos Android executando versões anteriores à 6.0.
   - **Permitir compartilhamento entre limites**: habilita o compartilhamento no limite do perfil de trabalho em ambas as orientações. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Use essa configuração com cuidado, pois isso permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo.
@@ -48,7 +48,7 @@ Este artigo lista as configurações de restrições de dispositivo do Microsoft
 
    Impede que os usuários finais adicionem ou removam contas no perfil de trabalho.
 
-   Por exemplo, quando você implanta o aplicativo Gmail em um perfil do Android for Work, é possível impedir que usuários finais adicionem ou removam contas neste perfil de trabalho.
+   Por exemplo, ao implantar o aplicativo Gmail em um perfil de trabalho Android, é possível impedir que usuários finais adicionem ou removam contas nesse perfil de trabalho.
 
 - **Contato com compartilhamento via Bluetooth**: permite o acesso a contatos de trabalho de outro dispositivo, como um carro, emparelhado usando Bluetooth. Por padrão, essa configuração não está configurada e os contatos de perfil de trabalho não são mostrados. Selecione **Habilitar** para permitir esse compartilhamento e mostrar contatos de perfil de trabalho. Essa configuração aplica-se a dispositivos de perfil de trabalho Android no sistema operacional Android v6.0 e mais recentes. Habilitar essa opção pode permitir que determinados dispositivos Bluetooth armazene em cache os contatos do trabalho após a primeira conexão. Desabilitar essa política após um emparelhamento/uma sincronização inicial pode não remover os contatos de trabalho de um dispositivo Bluetooth.
 

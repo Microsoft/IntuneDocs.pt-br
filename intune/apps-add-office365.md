@@ -15,19 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223400"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869365"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
 Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 para os dispositivos que você gerencia e que executam o Windows 10. Você também pode instalar aplicativos para o cliente de área de trabalho Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você deseja são exibidos como uma única entrada na lista de aplicativos no console do Intune.
 
 
-## <a name="before-you-start"></a>Antes de iniciar
+## <a name="before-you-start"></a>Antes de começar
 
 >[!IMPORTANT]
 >Esse método de instalar o Office terá suporte somente se nenhuma outra versão do Microsoft Office estiver instalada no dispositivo.
@@ -47,7 +47,7 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 par
 3. No painel **Intune**, selecione **Aplicativos móveis**.
 4. No painel de carga de trabalho **Aplicativos móveis**, em **Gerenciar**, selecione **Aplicativos**.
 5. Selecione **Adicionar**.
-6. No painel **Adicionar Aplicativos**, na lista **Tipo de aplicativo**, em **Office 365 Office**, selecione **Windows 10**.
+6. No painel **Adicionar aplicativos**, na lista **Tipo de aplicativo**, em **Office 365 Office**, selecione **Windows 10**.
 
 Agora você pode configurar o pacote do aplicativo.
 
@@ -71,15 +71,15 @@ Nesta etapa, você fornece informações sobre o pacote de aplicativos. Essas in
 2. No painel **Informações do Pacote de Aplicativos**, faça o seguinte:
     - **Nome do Pacote**: insira o nome do pacote de aplicativos da forma como ele é exibido no portal da empresa. Verifique se todos os nomes de pacotes usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
     - **Descrição do Pacote**: insira uma descrição para o pacote de aplicativos. Por exemplo, você pode listar os aplicativos que você selecionou para serem incluídos.
-    - **Editor**: insira o nome do editor do aplicativo.
+    - **Editor**: a Microsoft aparece como o editor.
     - **Categoria**: como opção, selecione uma ou mais das categorias de aplicativo internas ou uma categoria criada por você. Essa configuração facilita para os usuários localizarem o pacote de aplicativos enquanto navegam pelo Portal da Empresa.
     - **Exibir como um aplicativo em destaque no Portal da Empresa**: selecione esta opção para exibir o pacote de aplicativos de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
     - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
     - **URL de Privacidade**: opcionalmente, insira a URL de um site que contém informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
-    - **Desenvolvedor**: opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário**: opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, *Departamento de RH*.
+    - **Desenvolvedor**: a Microsoft aparece como o desenvolvedor.
+    - **Proprietário**: a Microsoft aparece como o proprietário.
     - **Observações**: digite as observações que você deseja associar a esse aplicativo.
-    - **Logotipo**: carregue um ícone que será exibido com o aplicativo quando os usuários procurarem no portal da empresa.
+    - **Logotipo**: o logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3. Selecione **OK**.
 
 ## <a name="configure-app-settings"></a>Definir configurações do aplicativo

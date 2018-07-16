@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547396"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905964"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS adquiridos por meio de um programa de aquisição com base em volume com o Microsoft Intune
 
@@ -135,8 +135,7 @@ O usuário final receberá avisos durante a instalação do aplicativo do VPP em
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Revogando licenças de aplicativo e excluindo tokens 
 
-<!-- 820863 -->  
-Para um determinado dispositivo que tem um ou mais aplicativos do VPP (programa de compra por volume) do iOS, você revoga todas as licenças de aplicativo com base no dispositivo associadas a esse dispositivo. A revogação de uma licença de aplicativo não desinstala o aplicativo VPP relacionado do dispositivo. Para desinstalar um aplicativo VPP e recuperar uma licença, você deve alterar o tipo de atribuição do aplicativo VPP para **Desinstalar**. Se você remover um aplicativo que foi atribuído a um usuário, o Intune recuperará a licença do usuário ou do dispositivo e desinstalará o aplicativo do dispositivo.
+Você pode revogar todas as licenças de aplicativo do VPP (Volume Purchase Program) do iOS associadas, com base em um determinado dispositivo, usuário ou aplicativo. Você poderá notificar os usuários quando um aplicativo não estiver mais atribuído a eles. A revogação de uma licença de aplicativo não desinstala o aplicativo VPP relacionado do dispositivo. Para desinstalar um aplicativo do VPP e recuperar uma licença do aplicativo atribuída a um usuário ou dispositivo, você precisa alterar a ação de atribuição para **Desinstalar**. Quando você remove um aplicativo que foi atribuído a um usuário, o Intune recupera a licença do usuário ou do dispositivo e desinstala o aplicativo do dispositivo. A contagem de licenças recuperadas será refletida no nó **Aplicativos Licenciados** na carga de trabalho de **Aplicativo** do Intune. Depois que um aplicativo do VPP for desinstalado e a licença do aplicativo for recuperada, você poderá optar por atribuir a licença do aplicativo a outro usuário ou dispositivo. 
 
 >[!NOTE]
 >O Intune recuperará todas as licenças de aplicativos VPP do iOS licenciadas para usuários quando um funcionário sair da empresa e não fizer mais parte dos grupos do AAD.

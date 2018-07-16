@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033361"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434259"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Navegadores e sistemas operacionais compatíveis
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033361"
 
 Antes de configurar o Microsoft Intune, examine os sistemas operacionais e navegadores compatíveis.
 
-Para obter ajuda para instalar o Intune em seu dispositivo, consulte [Usando dispositivos gerenciados para realizar o trabalho](/intune-user-help/company-portal-frequently-asked-questions). Familiarize-se também com o [Uso de largura de banda da rede do Intune](network-bandwidth-use.md) ([Portal Clássico](/intune-classic/get-started/network-bandwidth-use)).
+Para obter ajuda de como instalar o Intune em seu dispositivo, confira [usando dispositivos gerenciados para realizar o trabalho](/intune-user-help/company-portal-frequently-asked-questions) e [o uso da largura de banda da rede do Intune](network-bandwidth-use.md) ([portal clássico](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operacionais compatíveis com o Intune
 
@@ -38,12 +38,12 @@ Para obter ajuda para instalar o Intune em seu dispositivo, consulte [Usando dis
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung Knox Standard com suporte
 
-O aplicativo de Portal da Empresa tenta ativação Samsung Knox somente durante o registro de MDM se o dispositivo aparecer na [lista de dispositivos Knox com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Isso ajuda a evitar erros de ativação de Knox que impedem o registro de MDM. Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que oferecem suporte a Knox, enquanto outros não. Verifique a compatibilidade com Knox com o revendedor do dispositivo antes de adquirir e implantar dispositivos Samsung.
+Para evitar erros de ativação do KNOX que impedem o registro do MDM, o aplicativo Portal da Empresa apenas tenta a ativação do Samsung KNOX durante o registro de MDM quando o dispositivo aparece na [lista de dispositivos KNOX com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que oferecem suporte a Knox, enquanto outros não. Verifique a compatibilidade com KNOX com o revendedor do dispositivo antes de comprar e implantar dispositivos Samsung.
 
 > [!NOTE]
 > O registro de dispositivos Samsung Knox pode exigir a [habilitação de acesso a servidores da Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-A seguinte lista contém modelos de dispositivos Samsung que não oferecem suporte a Knox e que são registrados como dispositivos Android nativos pelo aplicativo Portal da Empresa para Android:
+Os modelos de dispositivo Samsung na lista a seguir não dão suporte ao KNOX. Eles são registrados como dispositivos Android nativos pelo aplicativo Portal da Empresa para Android:
 
 | **Nome do Dispositivo** | **Números de Modelos de Dispositivo** |
 | --- | --- |
@@ -103,7 +103,7 @@ Há suporte para os seguintes navegadores nesses portais:
 - Microsoft Internet Explorer 11
 - Safari (última versão, somente Mac)
 - Chrome (última versão)
-- Mozilla Firefox com o Silverlight habilitado [Saiba mais (versões anteriores à versão 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (última versão)
 
 
 

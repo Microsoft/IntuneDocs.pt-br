@@ -1,11 +1,11 @@
 ---
 title: Ver perfis de dispositivo com o Microsoft Intune – Azure | Microsoft Docs
-description: Exiba e gerencie os detalhes de perfil de configuração de dispositivo no Microsoft Intune e veja um gráfico do número de dispositivos atribuídos a um perfil e quais dispositivos têm perfis atribuídos ou implantados.
+description: Exiba e gerencie os detalhes do perfil de configuração do dispositivo no Microsoft Intune, veja um gráfico do número de dispositivos atribuídos a um perfil e saiba quais dispositivos têm perfis atribuídos ou implantados. Também é possível solucionar problemas de perfis com conflitos de configuração.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744781"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905913"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorar perfis de dispositivo no Microsoft Intune
 
@@ -33,7 +33,7 @@ O Intune inclui alguns recursos no portal do Azure para ajudar a monitorar e ger
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Configuração do dispositivo** > **Perfis**.
 
-Todos os perfis existentes são listados e incluem detalhes como a plataforma e se o perfil é atribuído a todos os dispositivos.
+Todos os perfis existentes são listados, incluem detalhes, como a plataforma, e mostram se o perfil está atribuído a todos os dispositivos.
 
 ## <a name="view-details-on-a-profile"></a>Exibir detalhes sobre um perfil
 
@@ -68,6 +68,16 @@ Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses g
   - **Status do dispositivo**: são listados os dispositivos atribuídos ao perfil, e mostra se o perfil é implantado com êxito. Você pode selecionar um dispositivo específico para obter mais detalhes, incluindo os aplicativos instalados.
   - **Status do usuário**: lista os nomes de usuários com dispositivos afetados por esse perfil e se o perfil foi implantado com êxito. Você pode selecionar um usuário específico para obter ainda mais detalhes.
   - **Status por configuração**: filtra a saída mostrando as configurações individuais dentro do perfil e mostra se a configuração foi aplicada com êxito.
+
+## <a name="view-conflicts"></a>Exibir conflitos
+
+Em **Dispositivos** > **Todos os dispositivos**, você pode ver todas as configurações que estão causando conflitos. Quando houver um conflito, também serão mostrados todos os perfis de configuração que contêm essa configuração. Os administradores podem usar esse recurso para ajudar a solucionar problemas e a corrigir as discrepâncias em relação aos perfis.
+
+1. No Intune, selecione **Dispositivos** > **Todos os Dispositivos** > selecione um dispositivo existente na lista. O usuário final pode obter o nome do dispositivo no aplicativo Portal da Empresa.
+2. Selecione **Configuração do dispositivo**. São listadas todas as políticas de configuração que se aplicam ao dispositivo.
+3. Selecione a política. São exibidas todas as configurações nessa política que se aplicam ao dispositivo. Se algum dispositivo tiver um estado **Conflito**, selecione essa linha. Na nova janela, são exibidos todos os perfis e os nomes dos perfis cuja configuração está causando o conflito.
+
+Agora que você sabe qual é a configuração em conflito e quais são as políticas que incluem essa configuração, será mais fácil resolver o conflito. 
 
 ## <a name="next-steps"></a>Próximas etapas
 [Atribuir perfis de usuário e dispositivo](device-profile-assign.md)  

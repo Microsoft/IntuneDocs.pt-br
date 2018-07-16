@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223604"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869485"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 para dispositivos macOS com o Microsoft Intune
 
-O tipo de *Aplicativo da Store* facilita a atribuição de aplicativos do Office 365 para dispositivos macOS. Esse tipo de aplicativo permite que você instale o Word, Excel, PowerPoint, Outlook e OneNote. Para ajudar a manter os aplicativos seguros e atualizados, esses aplicativos são fornecidos com o MAU (Microsoft AutoUpdate). Os aplicativos que você quiser serão exibidos como um aplicativo na lista de aplicativos no console do Intune.
+Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 2016 para dispositivos macOS. Esse tipo de aplicativo permite que você instale o Word, Excel, PowerPoint, Outlook e OneNote. Para ajudar a manter os aplicativos seguros e atualizados, esses aplicativos são fornecidos com o MAU (Microsoft AutoUpdate). Os aplicativos que você quiser serão exibidos como um aplicativo na lista de aplicativos no console do Intune.
 
 
-## <a name="before-you-start"></a>Antes de iniciar
+## <a name="before-you-start"></a>Antes de começar
 
 Antes de começar a adicionar o Office 365 a dispositivos macOS, compreenda estes detalhes:
 
@@ -70,7 +70,7 @@ Nesta etapa, configure as atribuições do pacote de aplicativos.
 2. No painel do **Office 365**, selecione **Atribuições**.
 3. Para adicionar um grupo que usará o pacote de aplicativos, selecione **Adicionar grupo**.  
     O painel **Adicionar grupo** é exibido.
-4. Defina o **Tipo de atribuição** como **Obrigatório**.
+4. Defina o **Tipo de atribuição** como **Necessário** ou **Disponível**.
 5. Atribua o pacote aos grupos que você selecionar. Para saber mais, confira [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
 
     >[!Note]

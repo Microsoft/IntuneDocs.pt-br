@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456343"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921341"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configurações de filtro de conteúdo da Web para dispositivos iOS
 
@@ -58,7 +58,7 @@ Se você não especificar nenhuma URL, os usuários finais não poderão acessar
 ## <a name="specific-websites-only"></a>Somente sites específicos
 
 1. No painel **Filtro de Conteúdo da Web**, para cada site da Web que você deseja permitir, defina as seguintes configurações:
-    - **URL** – insira a URL do site que você deseja permitir, por exemplo, **http://www.contoso.com**.
+    - **URL** – insira a URL do site que você deseja permitir, por exemplo, `https://www.contoso.com`.
     - **Caminho do Favorito** - insira o caminho até o local onde você deseja armazenar o favorito por exemplo **/Contoso/Aplicativos de Empresa**. Se você não adicionar um indicador, ele será adicionado à pasta de indicadores padrão no dispositivo.
     - **Título** - insira um título descritivo para o favorito.
 2. Clique em **Adicionar** depois de inserir as informações para cada site.

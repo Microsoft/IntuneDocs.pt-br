@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717971"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905879"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -59,7 +59,7 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
 7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** relacionado ao aplicativo.
 8. Para o aplicativo específico, selecione um **tipo de atribuição**:
    - **Disponível para dispositivos inscritos**: os usuários instalam o aplicativo do site do aplicativo Portal da Empresa.
-   - **Disponível com ou sem registro**: atribua este aplicativo a grupos de usuários cujos dispositivos não estão registrados no Intune. O tipo **Aplicativo Android for Work** tipo não dá suporte a essa opção. 
+   - **Disponível com ou sem registro**: atribua este aplicativo a grupos de usuários cujos dispositivos não estão registrados no Intune. Os aplicativos do Google Play gerenciado e os aplicativos de LOB do macOS não dão suporte a essa opção. 
    - **Obrigatório**: o aplicativo é instalado nos dispositivos nos grupos selecionados.
    - **Desinstalar**: o aplicativo é desinstalado de dispositivos nos grupos selecionados.
 

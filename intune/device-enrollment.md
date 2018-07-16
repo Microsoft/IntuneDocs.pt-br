@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 06/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909194"
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -26,6 +27,8 @@ ms.lasthandoff: 04/16/2018
 O Intune permite gerenciar os dispositivos e os aplicativos da sua força de trabalho e como ela acessa os dados da empresa. Para usar esse gerenciamento de dispositivo móvel (MDM), os dispositivos devem primeiro ser registrados no serviço do Intune. Quando um dispositivo é registrado, ele recebe um certificado de MDM. Esse certificado é usado para se comunicar com o serviço do Intune.
 
 Como é possível ver nas tabelas a seguir, há vários métodos de registrar os dispositivos da sua força de trabalho. Cada método depende da propriedade do dispositivo (pessoal ou corporativo), tipo de dispositivo (iOS, Windows, Android) e requisitos de gerenciamento (redefinições, afinidade, bloqueio).
+
+Por padrão, dispositivos para todas as plataformas têm permissão para se registrarem no Intune. No entanto, você pode [restringir os dispositivos pela plataforma](enrollment-restrictions-set.md#set-device-type-restrictions).
 
 ## <a name="ios-enrollment-methods"></a>Métodos de registro do iOS
 
@@ -61,17 +64,17 @@ Como é possível ver nas tabelas a seguir, há vários métodos de registrar os
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Não|   Sim |   Não | [Mais informações](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não  |[Mais informações](./device-enrollment-manager-enroll.md)|
-|**Android for Work**| Não | Sim | Não| [Mais informações](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Perfis de trabalho Android**| Não | Sim | Não| [Mais informações](./android-work-profile-enroll.md) |
 
 
 ## <a name="bring-your-own-device"></a>Traga seu próprio dispositivo
 Traga seus próprios dispositivos (BYOD) inclui telefones pessoais, tablets e computadores. Os usuários instalam e executam o aplicativo do Portal da Empresa para registrar BYODs. Esse programa permite que os usuários acessem os recursos da empresa como email.
 
 ## <a name="corporate-owned-device"></a>Dispositivo corporativo
-Os dispositivos corporativos (COD) incluem telefones, tablets, e computadores pertencentes à organização e distribuídos para a força de trabalho. O registro de COD é compatível com cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados. Uma maneira comum de registrar CODs é um administrador ou gerente usar o gerenciador de registros de dispositivo (DEM). Os dispositivos iOS podem ser registrados diretamente por meio das ferramentas do Programa de Registro de Dispositivos (DEP) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa.
+[Os COD (dispositivos corporativos)](corporate-identifiers-add.md) incluem telefones, tablets e computadores que pertencem à organização e são distribuídos para a força de trabalho. O registro de COD é compatível com cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados. Uma maneira comum de registrar CODs é um administrador ou gerente usar o gerenciador de registros de dispositivo (DEM). Os dispositivos iOS podem ser registrados diretamente por meio das ferramentas do Programa de Registro de Dispositivos (DEP) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa.
 
 ### <a name="device-enrollment-manager"></a>Gerenciador de registro de dispositivos
-O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
+O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Esses tipos de dispositivos são bons, por exemplo, para aplicativos de ponto de venda ou utilitários, mas não para usuários que precisam acessar os recursos ou o email da empresa. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md). 
 
 ### <a name="apple-device-enrollment-program"></a>Programa de Registro do Dispositivo da Apple
 O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Esse método dá suporte ao modo supervisionado do iOS, que permite que um dispositivo seja configurado com uma funcionalidade específica.

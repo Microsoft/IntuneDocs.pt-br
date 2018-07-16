@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223774"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906100"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -114,8 +114,8 @@ Para saber mais sobre essa seção, veja [Monitorar aplicativos](apps-monitor.md
 - **Identidade visual do Portal da Empresa**: personalize o Portal da Empresa para dar a identidade visual de sua empresa. Para obter mais informações, consulte:
     - [Configuração do Portal da Empresa](company-portal-app.md).
 - **Categorias de aplicativo**: adicione, fixe e exclua os nomes de categoria de aplicativo.
-- **Android For Work**: aprove e sincronize os aplicativos que você aprovou para sua empresa. Para obter mais informações, consulte:
-    - [Aplicativos Android for Work](apps-add-android-for-work.md).
+- **Perfil de trabalho Android**: aprove e sincronize os aplicativos que você aprovou para sua empresa. Para obter mais informações, consulte:
+    - [Aplicativos do perfil de trabalho Android](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Ajuda e suporte
 - **Ajuda e Suporte**: Solucione problemas, solicite suporte ou exiba o status do Intune. Para obter mais informações, consulte:

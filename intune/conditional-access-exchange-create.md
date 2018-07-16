@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744762"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905522"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional para o Exchange local e o Exchange Online Dedicado herdado
 
@@ -44,7 +44,7 @@ Antes de poder configurar o acesso condicional, verifique o seguinte:
 
 - Esse conector dá suporte a **ambiente de CAS do Exchange**. Tecnicamente, você pode instalar o conector no servidor de CAS do Exchange diretamente se desejar, mas isso não é recomendável, pois ele aumenta a carga no servidor. Ao configurar o conector, você deve configurá-lo para que ele se comunique com um dos servidores de CAS do Exchange.
 
-- O **Exchange ActiveSync** deve ser configurado com autenticação baseada em certificado ou em entrada de credenciais de usuário.
+- O **Exchange ActiveSync** precisa ser configurado com autenticação baseada em certificado ou com entrada de credenciais de usuário.
 
 - Quando políticas de acesso condicionais são configuradas e direcionadas ao usuário, antes de um usuário se conectar ao email, o **dispositivo** usado deve:
     - Estar **registrado** no Intune ou em um computador ingressado no domínio.
@@ -54,7 +54,7 @@ Antes de poder configurar o acesso condicional, verifique o seguinte:
 
 - **Estar em conformidade** com qualquer política de conformidade do dispositivo implantada nesse dispositivo.
 
-- Se o dispositivo não atender às configurações de acesso condicional, uma das mensagens a seguir será apresentara ao usuário quando ele fizer logon:
+- Se o dispositivo não atender às configurações de acesso condicional, uma das mensagens a seguir será apresentada ao usuário quando ele entrar:
     - Se o dispositivo não estiver registrado no Intune ou não estiver registrado no Azure Active Directory, será exibida uma mensagem com instruções sobre como instalar o aplicativo do Portal da Empresa, registrar o dispositivo e ativar o email. Esse processo também associa a ID do Exchange ActiveSync do dispositivo ao registro do dispositivo no Azure Active Directory.
     - Se o dispositivo não estiver em conformidade, será exibida uma mensagem que direcionará o usuário ao site do Portal da Empresa do Intune ou ao aplicativo Portal da Empresa, no qual ele poderá encontrar informações sobre o problema e como corrigi-lo.
 
@@ -63,7 +63,7 @@ Antes de poder configurar o acesso condicional, verifique o seguinte:
 - Windows Phone 8.1 e posterior
 - Aplicativo de email nativo no iOS.
 - Clientes de email EAS, como Gmail no Android 4 ou versões posteriores.
-- Clientes de email EAS com **dispositivos Android for Work:** há suporte somente para os aplicativos **Gmail** e **Nine Work** do **perfil de trabalho** em dispositivos Android for Work. Para obter acesso condicional ao Android para Trabalho, é necessário implantar um perfil de email para os aplicativos Gmail ou Nine Work e implantá-los como uma instalação obrigatória.
+- **Dispositivos do perfil de trabalho Android** de clientes de email EAS: há suporte somente para os aplicativos **Gmail** e **Nine Work** no **perfil de trabalho** nos dispositivos de perfil de trabalho Android. Para obter acesso condicional para trabalhar com os perfis de trabalho Android, você precisa implantar um perfil de email para os aplicativos Gmail ou Nine Work e implantar esses aplicativos como uma instalação obrigatória.
 
 > [!NOTE]
 > Não há suporte para o aplicativo Microsoft Outlook no Android e iOS. 
