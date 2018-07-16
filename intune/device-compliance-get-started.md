@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190751"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905063"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade do dispositivo no Intune
 
@@ -140,7 +140,7 @@ Se um dispositivo tiver várias políticas de conformidade e diferentes status d
 
 Quando um dispositivo tem várias políticas de conformidade, o mais alto nível de gravidade de todas as políticas é atribuído a esse dispositivo.
 
-Por exemplo, digamos que um dispositivo tem três políticas de conformidade atribuídas a ele: um status Desconhecido (gravidade = 1), um status de Compatível (gravidade = 3) e um status de InGracePeriod (gravidade = 4). O status de InGracePeriod tem o mais alto nível de gravidade, portanto todas as três políticas têm o status de conformidade de InGracePeriod.
+Por exemplo, digamos que um dispositivo tenha três políticas de conformidade atribuídas a ele: um status Desconhecido (gravidade = 1), um status Em Conformidade (gravidade = 3) e um status InGracePeriod (gravidade = 4). O status de InGracePeriod tem o mais alto nível de gravidade, portanto todas as três políticas têm o status de conformidade de InGracePeriod.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Maneiras de usar as políticas de conformidade do dispositivo
 
@@ -195,14 +195,14 @@ A principal diferença ao usar políticas de conformidade do dispositivo no Port
 
 Políticas de conformidade do dispositivo criadas no [portal clássico](https://manage.microsoft.com) não aparecem no [Portal do Azure](https://portal.azure.com). No entanto, elas ainda serão destinadas aos usuários e poderão ser gerenciadas usando o portal clássico.
 
-Para usar os recursos relacionados à conformidade do dispositivo no Portal do Azure, você deve criar novas políticas de conformidade de dispositivo no Portal do Azure. Se você atribuir uma política de conformidade do dispositivo no Portal do Azure a um usuário ao qual também esteja atribuída uma política de conformidade do dispositivo do portal clássico, as políticas de conformidade do dispositivo do Portal do Azure terão precedência em relação às políticas criadas no portal clássico.
+Para usar os recursos relacionados à conformidade do dispositivo no Portal do Azure, você deve criar novas políticas de conformidade de dispositivo no Portal do Azure. Se você atribuir uma política de conformidade do dispositivo no Portal do Azure a um usuário que já tenha uma política de conformidade do dispositivo atribuída pelo portal clássico, as políticas de conformidade do dispositivo do Portal do Azure terão precedência em relação às criadas no portal clássico.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Crie uma política de conformidade do dispositivo para as seguintes plataformas:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Perfil de trabalho Android](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

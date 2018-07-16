@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216319"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905216"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos por meio do uso de uma conta do gerenciador de registros de dispositivo
 
@@ -35,7 +35,7 @@ Os usuários devem existir no [Portal do Azure](https://portal.azure.com) para s
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gerenciador de registro de dispositivos
 
-Um restaurante quer fornecer 50 tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma conta de gerente de registros de dispositivos e adiciona um supervisor do restaurante à conta do DEM. O supervisor agora tem recursos do DEM. O supervisor agora pode registrar os 50 dispositivos de tablets usando as credenciais do DEM.
+Um restaurante quer fornecer 50 tablets de ponto de venda para sua equipe e faz o pedido de monitores para sua equipe da cozinha. Os funcionários nunca precisam acessar os dados da empresa ou entrar como usuários. O administrador do Intune cria uma nova conta de gerente de registros de dispositivo para o supervisor do restaurante.  Essa conta é separada da conta principal do supervisor e é usada apenas para registrar dispositivos compartilhados no Intune. O supervisor agora pode registrar os 50 dispositivos de tablets usando as credenciais do DEM.
 
 Somente os usuários do [Portal do Azure](https://portal.azure.com) podem gerenciadores de registro de dispositivos. O usuário gerenciador de registro de dispositivos não pode ser um administrador do Intune.
 
@@ -54,7 +54,7 @@ Dispositivos registrados com uma conta de gerenciador de registro de dispositivo
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
   - Os usuários não podem usar aplicativos VPP (Apple Volume Purchase Program) com licenças de usuário devido aos requisitos de ID da Apple para gerenciamento de aplicativo.
   - (Somente iOS) Se você usar o DEM para registrar dispositivos iOS, não poderá usar o Apple Configurator, o Apple DEP (Programa de registro de dispositivos) nem o ASM (Apple School Manager) para registrar dispositivos.
-  - (Somente Android) Há um limite para o número de dispositivos Android for Work que podem ser registrados com uma única conta do DEM. No máximo 10 dispositivos de perfil de trabalho do Android podem ser registrados por conta do DEM. Essa limitação não se aplica ao registro do Android herdado.
+  - (Somente Android) Há um limite para o número de dispositivos de perfil de trabalho Android que podem ser registrados com uma única conta do DEM. No máximo 10 dispositivos de perfil de trabalho do Android podem ser registrados por conta do DEM. Essa limitação não se aplica ao registro do Android herdado.
   - Os dispositivos poderão instalar aplicativos se tiverem licenças de dispositivo.
   - Cada dispositivo exige uma licença de dispositivo. Saiba mais sobre [licenças de usuário e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
