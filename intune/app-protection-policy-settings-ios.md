@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882521"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028755"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ Há algumas isenções de aplicativos e serviços de plataforma em que a políti
 | **Exigir versão mínima do SDK de política de proteção de aplicativo do Intune** | Escolha **Sim** para exigir uma versão mínima do SDK de política de proteção de aplicativo do Intune no aplicativo. O usuário tem o acesso bloqueado se a versão do SDK da política de Proteção de Aplicativo do Intune do aplicativo não atende ao requisito. <br> <br> Para saber mais sobre o SDK de política de proteção de aplicativo do Intune, veja [Visão geral do SDK de aplicativo do Intune](app-sdk.md). <br><br> Esse formato de configuração de política oferece suporte major.minor, major.minor.build, major.minor.build.revision. <br><br> **Observação:** exige que o aplicativo tenha o SDK do Intune versão 7.0.1 ou superior. | Não |
 
 > [!NOTE]
-> Para saber mais sobre como diversas configurações de proteção de aplicativo do Intune configuradas na seção Acesso para o mesmo conjunto de usuários e aplicativos funcionam no iOS, confira [Perguntas frequentes sobre o MAM](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios).
+> Para saber mais sobre como diversas configurações de Proteção de Aplicativo do Intune configuradas na seção Acesso para o mesmo conjunto de usuários e aplicativos funcionam no iOS, confira [Perguntas frequentes sobre o MAM e a proteção do aplicativo](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) e [Apagar dados seletivamente usando ações de acesso da política de Proteção de Aplicativo no Intune](app-protection-policies-access-actions.md).
 
 ##  <a name="add-ins-for-outlook-app"></a>Suplementos do aplicativo do Outlook
 

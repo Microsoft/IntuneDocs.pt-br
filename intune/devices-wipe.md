@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906049"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028738"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Remova dispositivos usando a restauração de fábrica, removendo dados da empresa ou cancelando o registro do dispositivo manualmente
 
@@ -175,3 +175,24 @@ Talvez seja necessário excluir dispositivos do Azure AD devido a problemas de c
 5. Selecione o usuário associado ao dispositivo que você deseja excluir.
 6.  Selecione **Dispositivos**.
 7.  Remova os dispositivos conforme apropriado. Por exemplo, você pode remover dispositivos que não estão mais em uso ou dispositivos que têm definições imprecisas.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Desativar um dispositivo DEP da Apple do Intune
+
+Se você quiser remover completamente um dispositivo DEP da Apple do gerenciamento pelo Intune, siga estas etapas:
+
+1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
+2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo > **Remover os dados da empresa**.
+![Captura de tela para remover os dados da empresa](./media/devices-wipe/remove-company-data.png)
+3. Escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token > **Dispositivos** > escolha a caixa de seleção para o dispositivo > **Excluir** > **Sim**.
+![Captura de tela para excluir dispositivo](./media/devices-wipe/delete-device.png)
+4. Visite [deploy.apple.com](http://deploy.apple.com) e pesquise pelo dispositivo usando o respectivo número de série.
+5. No menu **Atribuído a**, escolha **Não atribuído**.
+
+6. Escolha **Reatribuir**.
+
+    ![Captura de tela para reatribuição da Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>Próximas etapas
+
+Se você quiser registrar novamente um dispositivo excluído, consulte [Opções de registro](enrollment-options.md).
+
