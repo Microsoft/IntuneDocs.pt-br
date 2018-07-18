@@ -387,7 +387,7 @@
               href: device-restrictions-windows-10-teams.md
             - name: Windows Holographic for Business
               href: device-restrictions-windows-holographic.md
-            - name: Perfil de trabalho do Android
+            - name: Perfil de trabalho Android
               href: device-restrictions-android-for-work.md
         - name: Configurar a proteção de ponto de extremidade
           href: endpoint-protection-configure.md
@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Solucionar problemas de acesso ao recurso da empresa
           href: troubleshoot-company-resource-access-problems.md
+        - name: Solucionar problemas de instalação do aplicativo
+          href: troubleshoot-app-install.md
         - name: Logs de auditoria de atividades do Intune
           href: monitor-audit-logs.md
         - name: Examine os logs de proteção do aplicativo
@@ -703,7 +705,7 @@
               href: custom-settings-windows-10.md
             - name: Windows Holographic for Business
               href: custom-settings-windows-holographic.md
-            - name: Perfil de trabalho do Android
+            - name: Perfil de trabalho Android
               href: custom-settings-android-for-work.md
 - name: Orientação ao desenvolvedor
   items:
