@@ -152,28 +152,28 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 ## <a name="edge-browser"></a>Navegador Microsoft Edge
 
 -   **Navegador Microsoft Edge (somente dispositivo móvel)** – Permitir o uso do navegador da Web Edge no dispositivo.
--   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Microsoft Edge e os serviços da Microsoft.
+-   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Microsoft Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Microsoft Edge e os serviços da Microsoft.
 -   **Sincronizar favoritos entre navegadores da Microsoft (somente no desktop)** – Permite que o Windows sincronize os favoritos entre o Internet Explorer e o Microsoft Edge.
--   **Enviar cabeçalhos Do Not Track** – Configura o navegador Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
+-   **Enviar cabeçalhos Do Not Track** – Configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 -   **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
--   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Edge.
+-   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge.
 -   **Pop-ups** - bloqueia janelas pop-up no navegador (aplica-se a somente a desktops com Windows 10).
 -   **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
 -   **Enviar tráfego da intranet para o Internet Explorer** – permite aos usuários abrir sites de intranet no Internet Explorer (somente para desktops com Windows 10).
 -   **Preenchimento automático** – permite que os usuários alterem completamente as configurações de preenchimento automático no navegador (somente para desktop com Windows 10).
 -   **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Microsoft Edge.
 -   **Local da lista de sites do modo Empresarial** – Especifica onde encontrar a lista de sites que serão abertos no modo Empresarial. Os usuários não podem editar essa lista.<br>(Somente Windows 10 Desktop).
--   **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Edge.
--   **Extensões** - permite ao usuário final instalar extensões do Edge no dispositivo.
+-   **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Microsoft Edge.
+-   **Extensões** - permite ao usuário final instalar extensões do Microsoft Edge no dispositivo.
 -   **Navegação inPrivate** - impede que o usuário final abra sessões de navegação InPrivate.
--   **Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Edge for executado.
+-   **Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Microsoft Edge for executado.
     -   **URL da primeira execução** – Especifica a URL da página que é exibida na primeira vez que um usuário executa o Microsoft Edge (somente Windows 10 Mobile).
 -   **Páginas iniciais** – Adicione uma lista de sites que você deseja usar como as páginas iniciais no navegador Microsoft Edge (somente desktop).
 -   **Alterações na página inicial** – Permite aos usuários alterar as páginas iniciais exibidas quando o Microsoft Edge é aberto. Use a configuração Página inicial para criar a página ou uma lista de páginas que é aberta quando o Microsoft Edge é iniciado.
 -   **Bloquear acesso aos about:flags** – impeça que o usuário final acesse a página about:flags no Microsoft Edge que contém configurações experimentais e de desenvolvedor.
 -   **Endereço IP do localhost WebRtc** - bloqueia a exibição do endereço IP do localhost de usuários ao fazer chamadas telefônicas usando a protocolo RTC da web.
 -   **Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado. Os usuários finais podem alterar esse valor a qualquer momento.
--   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Edge.
+-   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Microsoft Edge.
 -   **Coleta de dados de Blocos Dinâmico** – Impede que o Windows colete informações de Blocos Dinâmicos quando o usuários fixa um site no menu Iniciar do Microsoft Edge.
 -  **Lista de favoritos** – define o caminho para o arquivo de favoritos. Por exemplo, http://contoso.com/favorites.html.
 -  **Restringir alterações aos Favoritos** – defina como **Bloquear** para impedir que os usuários adicionem, importem, classifiquem ou editem a lista de Favoritos. 
