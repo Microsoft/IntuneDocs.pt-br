@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 07/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927022"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039413"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,22 @@ Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sob
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-9-2018"></a>Semana de 9 de julho de 2018
+
+### <a name="app-management"></a>Gerenciamento de aplicativos
+
+### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>Bloquear acesso do aplicativo com base em modelos e fornecedores de dispositivos não aprovados <!-- 1425689 ! -->
+O administrador de TI do Intune pode impor uma lista especificada de fabricantes Android e/ou modelos de iOS por meio das Políticas de Proteção de Aplicativo do Intune. O administrador de TI pode fornecer uma lista separada por ponto e vírgula de fabricantes para políticas do Android e de modelos de dispositivos para políticas do iOS. As Políticas de Proteção de Aplicativo do Intune servem apenas para Android e iOS. Há duas ações diferentes que podem ser executadas nessa lista especificada:
+- Um bloqueio de acesso do aplicativo em dispositivos que não estão especificados.
+- Ou uma limpeza seletiva de dados corporativos em dispositivos que não estão especificados. 
+
+O usuário não conseguirá acessar o aplicativo direcionado se os requisitos por meio da política não forem atendidos. Com base nas configurações, o usuário pode ser bloqueado ou passar por uma limpeza seletiva dos dados corporativos no aplicativo. Em dispositivos iOS, esse recurso exige a participação de aplicativos (tais como WXP, Outlook, Managed Browser, Yammer) para integrar o SDK de Aplicativo do Intune para que esse recurso seja imposto aos aplicativos de destino. Essa integração ocorre sem interrupção, e depende de equipes do aplicativo específico. No Android, esse recurso exige a versão mais recente do Portal da Empresa. 
+
+Em dispositivos de usuário final, o cliente do Intune executará uma ação com base em uma correspondência simples das cadeias de caracteres especificadas na folha do Intune para Políticas de Proteção de Aplicativo. Isso depende totalmente do valor informado pelo dispositivo. Por isso, o administrador de TI é incentivado a garantir que o comportamento desejado seja preciso. Isso pode ser feito testando essa configuração com base em vários fabricantes e modelos de dispositivo direcionados a um grupo de usuários pequeno. No Microsoft Intune, selecione **Aplicativos Móveis** > **Políticas de proteção de aplicativo** para exibir e adicionar as políticas de proteção de aplicativo. Para obter mais informações sobre as políticas de proteção de aplicativo, consulte [Quais são as políticas de proteção de aplicativo](app-protection-policy.md) e [Apagar dados seletivamente usando ações de acesso da política de Proteção de Aplicativo no Intune](app-protection-policies-access-actions.md).
+
+### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>Acesso ao build de pré-lançamento do Portal da Empresa do macOS <!-- 1734766 -->
+Usando o Microsoft AutoUpdate, você pode inscrever-se para receber os builds antecipadamente ao ingressar no Programa Insider. A inscrição permite que você use o Portal da Empresa atualizado antes que ele esteja disponível para seus usuários finais. Para obter mais informações, veja o [Blog do Microsoft Intune](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
+
 ## <a name="week-of-july-2-2018"></a>Semana de 2 de julho de 2018
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
@@ -68,9 +84,6 @@ Os seguintes textos anterior e posterior são um exemplo das melhorias no sistem
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>Revogar a licença de aplicativo VPP iOS <!-- 1863797 -->
 Como administrador, você pode recuperar uma licença de aplicativo de VPP iOS atribuída a um usuário ou dispositivo. Desinstalar um aplicativo VPP iOS também permitirá que você recupere a licença do aplicativo. Antes de desinstalar o aplicativo, o usuário ou o dispositivo precisa ser removido do grupo ao qual o aplicativo é direcionado. A remoção do usuário ou dispositivo do grupo evita a reinstalação do aplicativo. Depois de concluir essas etapas, você pode optar por atribuir a licença do aplicativo a outro usuário ou dispositivo. Para obter mais informações sobre licenças de aplicativo VPP iOS, consulte [Gerenciar aplicativos adquiridos por volume do iOS no Microsoft Intune](vpp-apps-ios.md).
-
-#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Suporte para aplicativo de LOB (linha de negócios) do macOS <!-- 1895847 -->
-O Microsoft Intune permite que aplicativos de LOB para macOS sejam implantados como **Obrigatório** ou **Disponível com registro**. Os usuários finais podem obter aplicativos implantados como **Disponível** usando o Portal da Empresa para macOS ou o [site do Portal da Empresa](https://portal.manage.microsoft.com).
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
@@ -100,7 +113,7 @@ Em **Conformidade do dispositivo** > **Políticas** > selecione uma política > 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>A conformidade do dispositivo é compatível com soluções de antivírus de terceiros <!-- 2325484 -->
 Quando você cria uma política de conformidade do dispositivo (**Conformidade do dispositivo** > **Políticas** > **Criar política** > **Plataforma: Windows 10 e posteriores** > **Configurações** > **Segurança do sistema**), há novas opções de **[Segurança do Dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
 - **Antivírus**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções antivírus registradas com a Central de Segurança do Windows, como Symantec e Windows Defender. 
-- **Software antispyware**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções de software antispyware registradas com a Central de Segurança do Windows, como Symantec e Windows Defender. 
+- **Software antispyware**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções de software antispyware registradas na Central de Segurança do Windows, como Symantec e Windows Defender. 
 
 Aplica-se ao Windows 10 e posteriores 
 
@@ -645,10 +658,10 @@ Como parte dos nossos esforços para dar aos usuários finais mais controle sobr
 
 ## <a name="week-of-march-19-2018"></a>Semana de 19 de março de 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportar todos os dispositivos para arquivos CSV no IE, no Edge ou no Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportar todos os dispositivos para arquivos CSV no IE, Microsoft Edge ou Chrome <!-- 2258071 -->
 Em **Dispositivos** > **Todos os Dispositivos**, você pode **Exportar** os dispositivos para uma lista formatada em CSV. Os usuários do IE (Internet Explorer) com >10.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 10.000 dispositivos.
 
-Os usuários do Edge e do Chrome com > 30.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 30.000 dispositivos.
+Os usuários do Microsoft Edge e do Chrome com > 30.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 30.000 dispositivos.
 
 [Gerenciar dispositivos](device-management.md) fornece mais detalhes sobre o que você pode fazer com os dispositivos que gerencia.
 
@@ -1086,7 +1099,7 @@ Você poderá habilitar configurações de segurança em dispositivos Windows 10
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>Nova atualização de experiência do usuário para o site do Portal da Empresa <!--2000968-->
 
-Estamos introduzindo uma nova experiência de site de Portal da Empresa em abril, com atualizações da interface do usuário, fluxos de trabalho simplificados e aprimoramentos de acessibilidade. Isso incluirá aprimoramentos voltados ao cliente como compartilhamento de aplicativos e melhor desempenho geral para levar a você uma experiência mais simples.
+Estamos introduzindo uma nova experiência de site de Portal da Empresa a partir de agosto, com atualizações da interface do usuário, fluxos de trabalho simplificados e aprimoramentos de acessibilidade. Isso incluirá aprimoramentos voltados ao cliente como compartilhamento de aplicativos e melhor desempenho geral para levar a você uma experiência mais simples.
 Adicionamos alguns recursos novos com base nos comentários de clientes como você, que aprimorarão significativamente a funcionalidade e a usabilidade existentes:
 
 * Aprimoramentos da interface do usuário em todo o site
