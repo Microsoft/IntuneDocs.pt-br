@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015601"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117847"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar logs para o suporte de sua empresa usando um cabo USB
 
@@ -35,7 +35,7 @@ Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empre
 
 2. Conecte seu dispositivo ao computador com o cabo USB. Geralmente, esse é o mesmo cabo usado para carregar seu dispositivo em uma tomada de parede.
 
-3. No computador, procure um diretório com o nome do seu dispositivo. Nesse diretório, encontre <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>.
+3. No computador, procure um diretório com o nome do seu dispositivo. Nesse diretório, encontre <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 
 4. Selecione os arquivos e anexe-os a um email. Envie este email para o suporte de sua empresa.
 

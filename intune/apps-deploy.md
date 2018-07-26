@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993744"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164562"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -89,21 +89,21 @@ Agora o aplicativo foi atribuído aos grupos selecionados. Para obter mais infor
 |Disponível para o usuário|Não Disponível para o Usuário|Não disponível|
 |Disponível para o usuário|Desinstalação do usuário|Desinstalar|
 |Não Disponível para o Usuário|Desinstalação do usuário|Desinstalar
-|Necessário para o usuário|Necessário para o dispositivo|Ambos existem, o Gateway trata como Obrigatório
-|Necessário para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Gateway resolve como Obrigatório
-|Disponível para o usuário|Necessário para o dispositivo|Ambos, mas o Gateway resolve como Obrigatório (Obrigatório e Disponível)
-|Disponível para o usuário|Desinstalação do dispositivo|Ambos existem, o Gateway resolve como Disponível.<br><br>O aplicativo aparece no Portal da Empresa.<br><br>Se o aplicativo já estiver instalado (como aplicativo obrigatório com intenção anterior), ele será desinstalado.<br><br>Se o usuário selecionar **Instalar do Portal da Empresa**, o aplicativo será instalado e a intenção de desinstalação não será cumprida.|
+|Necessário para o usuário|Necessário para o dispositivo|Ambos existem, mas o Intune trata como Obrigatório
+|Necessário para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Obrigatório
+|Disponível para o usuário|Necessário para o dispositivo|Ambos existem, mas o Intune resolve como Obrigatório (Obrigatório e Disponível)
+|Disponível para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Disponível.<br><br>O aplicativo aparece no Portal da Empresa.<br><br>Se o aplicativo já estiver instalado (como aplicativo obrigatório com intenção anterior), ele será desinstalado.<br><br>Se o usuário selecionar **Instalar do Portal da Empresa**, o aplicativo será instalado e a intenção de desinstalação não será cumprida.|
 |Não Disponível para o Usuário|Necessário para o dispositivo|Necessária|
 |Não Disponível para o Usuário|Desinstalação do dispositivo|Desinstalar|
-|Desinstalação do usuário|Necessário para o dispositivo|Ambos existem, mas o Gateway resolve como Obrigatório|
-|Desinstalação do usuário|Desinstalação do dispositivo|Ambos, mas o Gateway resolve como Desinstalação|
+|Desinstalação do usuário|Necessário para o dispositivo|Ambos existem, mas o Intune resolve como Obrigatório|
+|Desinstalação do usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Desinstalar|
 |Necessário para o dispositivo|Desinstalação do dispositivo|Necessária|
 |Necessário e disponível para o usuário|Disponível para o usuário|Necessária e Disponível|
 |Necessário e disponível para o usuário|Desinstalação do usuário|Necessária e Disponível|
 |Necessário e disponível para o usuário|Não Disponível para o Usuário|Necessária e Disponível|
 |Necessário e disponível para o usuário|Necessário para o dispositivo|Ambos existem, Obrigatório e Disponível
 |Necessário e disponível para o usuário|Não disponível para o dispositivo|Necessária e Disponível|
-|Necessário e disponível para o usuário|Desinstalação do dispositivo|Ambos, mas o Gateway resolve como Obrigatório (Obrigatório e Disponível)
+|Necessário e disponível para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Obrigatório (Obrigatório e Disponível)
 |Não Disponível para o Usuário|Não disponível para o dispositivo|Não disponível|
 |Disponível para o usuário|Não disponível para o dispositivo|Disponível|
 |Necessário para o usuário|Não disponível para o dispositivo|Necessária|

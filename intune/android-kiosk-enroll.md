@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909126"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212028"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro de dispositivos de quiosque Android Enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Android dá suporte a dispositivos no estilo quiosque com seu conjunto de solução COSU (corporativo, uso único). Esses dispositivos são usados para uma finalidade única, como sinalização digital, impressão de tíquete ou gerenciamento de inventário, para mencionar apenas alguns. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
+O Android dá suporte a dispositivos no estilo quiosque com seu conjunto de soluções de uso único de propriedade corporativa. Esses dispositivos são usados para uma finalidade única, como sinalização digital, impressão de tíquete ou gerenciamento de inventário, para mencionar apenas alguns. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
 
 O Intune ajuda você a implantar aplicativos e configurações em dispositivos de quiosque Android. Para obter detalhes específicos sobre o Android Enterprise, confira [Requisitos do Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 

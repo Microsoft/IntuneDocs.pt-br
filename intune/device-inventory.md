@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051599"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117915"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -34,7 +34,7 @@ Este artigo mostra como exibir todos os dispositivos e suas propriedades no port
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** > **Todos os dispositivos** > selecione um de seus dispositivos listados para abrir os detalhes:
 
-   - **Visão geral** mostra o nome do dispositivo e lista algumas das principais propriedades do dispositivo, incluindo se ele é um dispositivo BYOD (traga seu próprio dispositivo), quando foi feito seu check-in e muito mais. Selecione **Mais** para também:
+   - **Visão geral** mostra o nome do dispositivo e lista algumas das principais propriedades do dispositivo, incluindo se ele é um dispositivo BYOD (traga seu próprio dispositivo), quando foi feito seu check-in e muito mais. Selecione **Mais** para:
      - Remover os dados da empresa
      - Excluir o dispositivo
      - Bloquear o dispositivo remotamente
@@ -57,6 +57,49 @@ O Intune coleta uma lista de aplicativos que estão somente em dispositivos corp
 |iOS|Somente aplicativos gerenciados|Todos os aplicativos instalados no dispositivo|
 |macOS|Todos os aplicativos instalados no dispositivo|Todos os aplicativos instalados no dispositivo|  
 |Android|Somente aplicativos gerenciados|Todos os aplicativos instalados no dispositivo|  
+
+## <a name="hardware-device-details"></a>Detalhes do dispositivo de hardware
+
+### <a name="windows-and-ios-device-details"></a>Detalhes do dispositivo Windows e iOS:
+|Detalhes|Descrição|  
+|--------------|----------------------|  
+|Nome|O nome do dispositivo.|
+|Nome de gerenciamento|O nome do dispositivo usado somente no console. A alteração deste nome não muda o nome no dispositivo.|
+|UDID|A ID de Dispositivo Exclusiva do dispositivo.|
+|ID de Dispositivo do Intune|Um GUID (Identificador global exclusivo) que identifica com exclusividade o dispositivo.|
+|Número de série|O número de série do dispositivo atribuído pelo fabricante.|
+|Dispositivo compartilhado|Se **Sim**, o dispositivo é compartilhado por mais de um usuário.|
+|Registro aprovado pelo usuário|Se **Sim**, então o dispositivo tem um registro de usuário aprovado, que permite aos administradores gerenciar determinadas configurações de segurança no dispositivo.|
+|Sistema operacional|O sistema operacional usado no dispositivo.|
+|Versão do sistema operacional|Versão do sistema operacional do dispositivo.|
+|Idioma do sistema operacional|O idioma definido para o sistema operacional no dispositivo.|
+|Espaço de armazenamento total|O espaço de armazenamento total no dispositivo (em gigabytes).|
+|Espaço de armazenamento gratuito|O espaço de armazenamento não usado no dispositivo (em gigabytes).|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Detalhes do dispositivo Windows, iOS e macOS
+|Detalhes|Descrição|  
+|--------------|----------------------|  
+|IMEI|Identificação Internacional de Equipamento Móvel do dispositivo.|
+|MEID|O identificador de equipamento móvel do dispositivo.|
+|Fabricante|O fabricante do dispositivo.|
+|Modelo|O modelo do dispositivo.|
+|Número do telefone|O número do telefone atribuído ao dispositivo.|
+|Operadora da assinatura|A operadora sem fio do dispositivo.|
+|Tecnologia celular|O sistema de rádio usado pelo dispositivo.|
+|MAC Wi-Fi|O endereço MAC (Controle de Acesso à Mídia) do dispositivo.|
+|ICCID|Identificador de Cartão de Circuito Integrado, o número de identificação exclusivo de um cartão SIM.|
+|Data registrada|A data e hora em que o dispositivo foi registrado no Intune.|
+|Último contato|A data e hora em que o dispositivo se conectou pela última vez no Intune.|
+|Código de bypass do bloqueio de ativação|O código que pode ser usado para ignorar o bloqueio de ativação.|
+|Azure AD registrado|Se **Sim**, o dispositivo está registrado no diretório do Azure.|
+|Conformidade|O estado de conformidade do dispositivo.|
+|EAS ativado|Se **Sim**, então o dispositivo está sincronizado com uma caixa de correio do Exchange.|
+|ID de ativação de EAS|O identificador Exchange ActiveSync do dispositivo.|
+|Supervisionado|Se **Sim**, os administradores têm controle aprimorado sobre o dispositivo.|
+|Criptografado|Se **Sim**, os dados armazenados no dispositivo estão criptografados.|
+
+
 
 ## <a name="next-steps"></a>Próximas etapas
 Veja o que mais você pode fazer para [gerenciar seus dispositivos](device-management.md) com o Intune.

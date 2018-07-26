@@ -15,18 +15,18 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027111"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146689"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrar dispositivos iOS no Intune
 
 O Intune habilita o MDM (gerenciamento de dispositivo móvel) de iPads e de iPhones para permitir acesso ao email e aos aplicativos da empresa aos usuários.
 
-Como administrador do Intune, você pode habilitar o registro para dispositivos iOS. Você pode permitir que os usuários registrem seus dispositivos pessoais, conhecido como o registro BYOD (traga seu próprio dispositivo). Você também pode habilitar o registro de dispositivos de propriedade da empresa.
+Como administrador do Intune, você pode habilitar o registro para dispositivos iOS. Você pode permitir aos usuários registrar os dispositivos pessoais, conhecido como o registro BYOD (traga seu próprio dispositivo). Você também pode habilitar o registro de dispositivos de propriedade da empresa.
 
 ## <a name="prerequisites-for-ios-enrollment"></a>Pré-requisitos para registro de iOS
 Antes de habilitar dispositivos iOS, conclua as seguintes etapas:
@@ -38,7 +38,7 @@ Antes de habilitar dispositivos iOS, conclua as seguintes etapas:
 É possível permitir que os usuários registrem seus dispositivos pessoais para o gerenciamento do Intune, conhecidos como "traga seu próprio dispositivo" ou BYOD. Depois de concluir os pré-requisitos e atribuir licenças de usuários, eles poderão baixar o aplicativo Portal da Empresa do Intune na App Store e seguir as instruções de registro no aplicativo.
 
 ## <a name="company-owned-ios-devices"></a>Dispositivos iOS de propriedade da empresa
-Para organizações que adquirem dispositivos para seus usuários, o Intune dá suporte aos seguintes métodos de registro de dispositivos iOS de propriedade da empresa:
+Para organizações que adquirem dispositivos para os usuários, o Intune dá suporte aos seguintes métodos de registro de dispositivos iOS de propriedade da empresa:
 
 - DEP (Programa de registro de dispositivos) da Apple
 - Apple School Manager
@@ -56,7 +56,7 @@ O Apple School Manager é um programa de compra e de registro de dispositivo par
 ## <a name="apple-configurator"></a>Apple Configurator
 Você pode registrar dispositivos iOS com o Apple Configurator em execução em um computador Mac. Para preparar os dispositivos, conecte-os via USB e instale um perfil de registro. Você pode registrar dispositivos com o Apple Configurator de duas maneiras:
 - Registro do Assistente de Configuração – restaura o dispositivo para as configurações de fábrica, prepara-o para executar o Assistente de Configuração e instala as políticas da empresa para o novo usuário do dispositivo.
-- Registro direto – não redefine o dispositivo para as configurações de fábrica e registra o dispositivo com uma política predefinida. Esse método é destinado a dispositivos sem afinidade de usuário.
+- Registro direto – não redefine o dispositivo para as configurações de fábrica e o registra com uma política predefinida. Esse método é destinado a dispositivos sem afinidade de usuário.
 
 Saiba mais sobre o [registro do Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md).
 
@@ -70,29 +70,15 @@ Afinidade de usuário é necessária para dar suporte ao seguinte:
   - Aplicativo do Portal da Empresa
 
 **Como os usuários registram dispositivos iOS corporativos com afinidade do usuário**
-1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. Durante a configuração, os usuários receberão uma solicitação por suas credenciais. Eles devem usar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à assinatura do Intune.
-
-2. Durante a configuração, os usuários receberão uma solicitação por uma ID Apple. Eles precisam fornecer uma ID Apple para permitir que o dispositivo instale o Portal da Empresa. Também podem fornecer a ID pelo menu de ajustes do iOS após a conclusão da instalação.
-
-3. Após a conclusão da configuração, o dispositivo iOS deve instalar o aplicativo Portal da Empresa na App Store.
-
-4. Agora, o usuário pode entrar no Portal da Empresa usando o UPN usado durante a configuração do dispositivo.
-
-5. Após o logon, o usuário recebe uma solicitação para registrar seu dispositivo. A primeira etapa é identificar o dispositivo. O aplicativo apresenta uma lista de dispositivos iOS que já foram registrados pela empresa e atribuídos à conta do Intune do usuário. O usuário deve escolher o dispositivo correspondente.
-
-   Se o dispositivo ainda não tiver sido registrado pela empresa, ele deverá escolher **novo dispositivo** para continuar com o fluxo de registro padrão.
-
-6. Na próxima tela, o usuário deverá confirmar o número de série do novo dispositivo. O usuário pode tocar no link **confirmar o Número de Série**, o que iniciará as instruções para usar o aplicativo de Configurações a fim de verificar o número de série. Em seguida, o usuário deve inserir os quatro últimos caracteres do número de série no aplicativo Portal da Empresa.
-
-   Essa etapa verifica se o dispositivo é o dispositivo corporativo registrado no Intune. Se o número de série no dispositivo não corresponder, o dispositivo incorreto terá sido selecionado. O usuário deve voltar à tela anterior e selecionar um dispositivo diferente.
-
-7. Após a verificação do número de série, o aplicativo Portal da Empresa redirecionará para o site do Portal da Empresa a fim de finalizar o registro. Em seguida, o site solicita que o usuário retorne ao aplicativo.
-
-8. O registro está concluído. Agora o usuário pode usar este dispositivo com o conjunto completo de recursos.
+1. Quando os usuários ligam seus dispositivos, eles recebem uma solicitação para concluir o Assistente de Configuração. 
+2. Após a configuração, os usuários recebem uma solicitação para inserir uma ID da Apple. Eles precisam fornecer uma ID da Apple para permitir que o dispositivo instale o Portal da Empresa. 
+3. O dispositivo iOS instala automaticamente o aplicativo Portal da Empresa da App Store.
+4. Os usuários devem iniciar o aplicativo Portal da Empresa e entrar usando as credenciais (como o nome pessoal exclusivo ou UPN) associadas à respectiva assinatura do Intune. 
+5. Depois de fazer logon, o registro está concluído. Agora os usuários podem usar este dispositivo com o conjunto completo de recursos.
 
 ### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>Sobre dispositivos gerenciados de propriedade da empresa sem afinidade de usuário
 
-Os dispositivos configurados sem a afinidade de usuário não têm suporte no Portal da Empresa e não devem instalar o aplicativo. O Portal da Empresa se destina a usuários com credenciais corporativas e que precisam de acesso aos recursos corporativos personalizados (por exemplo, email). Os dispositivos registrados sem afinidade de usuário não devem ter uma entrada de usuário dedicada. O quiosque, o ponto de venda (PDV) ou os dispositivos de utilitário compartilhados são casos de uso comuns de dispositivos registrados sem afinidade de usuário.
+Os dispositivos configurados sem a afinidade de usuário não têm suporte no Portal da Empresa e não devem instalar o aplicativo. O Portal da Empresa se destina a usuários com credenciais corporativas e que precisam de acesso aos recursos corporativos personalizados (como email). Os dispositivos registrados sem afinidade de usuário não devem ter uma entrada de usuário dedicada. O quiosque, o ponto de venda (PDV) ou os dispositivos de utilitário compartilhados são casos de uso comuns de dispositivos registrados sem afinidade de usuário.
 
 Se a afinidade de usuário for necessária, certifique-se de que o perfil de registro do dispositivo tenha a opção **Afinidade de Usuário** selecionada antes de registrar o dispositivo. Para alterar o status de afinidade em um dispositivo, você deve desativar e registrar novamente o dispositivo.
 

@@ -15,18 +15,18 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225145"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164545"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este tópico o ajuda a habilitar o registro de dispositivo iOS em dispositivos comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
+Este artigo o ajuda a habilitar o registro de dispositivo iOS em dispositivos comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
 
 Para habilitar o registro do Apple School Manager, é necessário usar os portais do Intune e do Apple School Manager. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
 
@@ -36,7 +36,7 @@ O registro do Apple School Manager não pode ser usado com o [Programa de regist
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - [Autoridade MDM](mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
-- A afinidade de usuário requer [ponto de extremidade nome do usuário/misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+- Se estiver usando o ADFS, a afinidade de dispositivo de usuário exigirá o [ponto de extremidade Nome do Usuário/Misto do WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Dispositivos comprados no programa [Apple School Management](http://school.apple.com)
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Obter um token Apple e atribuir dispositivos
@@ -80,13 +80,15 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 1. No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro**.
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
+
 3. Em **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil para fins administrativos. Os usuários não veem esses detalhes. Você pode usar esse campo **Nome** para criar um grupo dinâmico no Azure Active Directory. Use o nome do perfil para definir o parâmetro enrollmentProfileName para atribuir dispositivos com este perfil de registro. Saiba mais sobre os [grupos dinâmicos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+
     ![Nome e descrição do perfil.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. Em **Afinidade de Usuário**, escolha se os dispositivos com esse perfil devem ser registrados com ou sem um usuário atribuído.
-    - **Registrar com afinidade do usuário** – escolha esta opção para dispositivos que pertencem a usuários e que desejam usar o portal da empresa para serviços como a instalação de aplicativos. Esta opção também permite que os usuários façam a autenticação de seus dispositivos usando o portal da empresa. A afinidade de usuário requer [ponto de extremidade nome do usuário/misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   O modo iPad Compartilhado do Apple School Manager exige o registro do usuário sem a afinidade de usuário.
+    - **Registrar com afinidade do usuário** – escolha esta opção para dispositivos que pertencem a usuários e que desejam usar o portal da empresa para serviços como a instalação de aplicativos. Esta opção também permite que os usuários façam a autenticação de seus dispositivos usando o portal da empresa. Se estiver usando o ADFS, a afinidade de dispositivo de usuário exigirá o [ponto de extremidade Nome do Usuário/Misto do WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   O modo iPad Compartilhado do Apple School Manager exige o registro do usuário sem a afinidade de usuário.
 
-    - **Registrar sem Afinidade do Usuário** – escolha esta opção para dispositivos não afiliados com um único usuário, como um dispositivo compartilhado. Use-a para dispositivos que executam tarefas sem acessar os dados de usuário local. Aplicativos como o aplicativo de Portal da Empresa não funcionam.
+    - **Registrar sem Afinidade do Usuário** – escolha esta opção para dispositivos não afiliados com um único usuário, como um dispositivo compartilhado. Use esta opção para os dispositivos que executam tarefas sem acessar os dados de usuário local. Aplicativos como o aplicativo de Portal da Empresa não funcionam.
 
 5. Se você tiver escolhido **Registrar com Afinidade do Usuário**, terá a opção de permitir que os usuários façam a autenticação com o Portal da Empresa em vez do Assistente de Configuração da Apple.
 
@@ -108,7 +110,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 7. Escolha se deseja ou não registro bloqueado para dispositivos que usam esse perfil. O **registro bloqueado** desabilita as configurações de iOS que permitem que o perfil de gerenciamento seja removido do menu **Configurações**. Depois de registrar o dispositivo, não é possível alterar esta configuração sem restaurar as configurações de fábrica. Esses dispositivos devem ter o Modo de Gerenciamento **Supervisionado** configurado como *Sim*. 
 
-8. Se você quiser permitir que múltiplos usuários registrem iPads usando uma ID da Apple gerenciada, escolha **Sim** em **iPad Compartilhado**. Isso requer que o modo **Registrar sem Afinidade do Usuário** e **Supervisionado** sejam configurados como **Sim**. As IDs da Apple gerenciadas são criadas no portal do Apple School Manager. Saiba mais sobre [iPad compartilhado](education-settings-configure-ios-shared.md). Você também deve examinar os [requisitos de iPad compartilhado da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+8. Se deseja permitir que vários usuários façam logon em iPads inscritos usando um Apple Id gerenciado, escolha **Sim** em **iPad Compartilhado** (essa opção requer os modos **Registro sem Afinidade de Usuário** e **Supervisionado** definidos como **Sim**.) As IDs da Apple gerenciadas são criadas no portal do Apple School Manager. Saiba mais sobre [iPad compartilhado](education-settings-configure-ios-shared.md) e [os requisitos de iPad compartilhado da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
 9. Escolha se deseja ou não que os dispositivos usando este perfil possam **Sincronizar com computadores**. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em **Certificados do Apple Configurator**.
 
@@ -151,7 +153,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos gerenciados
 
-Agora que o Intune recebeu permissão para gerenciar seus dispositivos Apple School Manager, é possível sincronizar o Intune com o serviço da Apple para ver os dispositivos gerenciados no Intune.
+Depois que o Intune tiver recebido permissão para gerenciar seus dispositivos Apple School Manager, sincronize o Intune com o serviço da Apple para ver os dispositivos gerenciados no Intune.
 
 No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista > **Dispositivos** > **Sincronizar**. ![Captura de tela do nó Dispositivos de Programa de Registro selecionado com o link de Sincronização escolhido.](./media/device-enrollment-program-enroll-ios/image06.png)
 
