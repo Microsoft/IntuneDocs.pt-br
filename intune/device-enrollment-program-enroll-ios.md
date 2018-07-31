@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfc42775424ac84737af6c713a04295e24859f79
-ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
+ms.openlocfilehash: 9271ec1297298f70ce84a9f16a146302bc10070f
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203247"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254511"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
@@ -55,7 +55,7 @@ Antes que possa registrar dispositivos iOS o DEP, você precisa de um arquivo de
 Você pode usar o portal de DEP da Apple para criar um token de DEP. Você também pode usar o portal de DEP para atribuir dispositivos ao Intune para gerenciamento.
 
 > [!NOTE]
-> Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no portal do Azure. Você pode excluir o token de DEP novamente no portal do Azure.
+> Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no portal do Azure.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token.
 
@@ -115,7 +115,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     ![Nome e descrição do perfil.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. Em **Afinidade de Usuário**, escolha se os dispositivos com esse perfil devem ser registrados com ou sem um usuário atribuído.
-    - **Registrar com afinidade do usuário** – escolha esta opção para dispositivos que pertencem a usuários e que desejam usar o portal da empresa para serviços como a instalação de aplicativos. Esta opção também permite que os usuários façam a autenticação de seus dispositivos usando o portal da empresa. Se estiver usando ADFS, a afinidade de dispositivo de usuário requer [ponto de extremidade nome do usuário/misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    - **Registrar com afinidade do usuário** – escolha esta opção para dispositivos que pertencem a usuários e que desejam usar o portal da empresa para serviços como a instalação de aplicativos. Esta opção também permite que os usuários façam a autenticação de seus dispositivos usando o portal da empresa. Se estiver usando o ADFS, a afinidade de dispositivo de usuário exigirá o [ponto de extremidade Nome do Usuário/Misto do WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **Registrar sem afinidade do usuário** – escolha esta opção para dispositivos não afiliados com um único usuário. Use-a para dispositivos que executam tarefas sem acessar os dados de usuário local. Aplicativos como o aplicativo de Portal da Empresa não funcionam.
 

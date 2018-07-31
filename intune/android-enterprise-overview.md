@@ -15,12 +15,12 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c3184ff01252d2f53b5bfcce286df3424da23c2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909160"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279399"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerenciar dispositivos de perfil de trabalho Android com o Intune
 
@@ -66,7 +66,7 @@ As políticas de proteção do aplicativo aplicadas são totalmente compatíveis
 
 O suporte a VPN é semelhante aos perfis VPN do Android. Os mesmos provedores VPN e opções de configuração básicas estão disponíveis para o gerenciamento do Android Enterprise com duas diferenças:
 
--  **VPN com escopo de perfil de trabalho** – as conexões VPN são limitadas apenas aos aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android Enterpise podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada. Para obter mais informações, confira [Configurações de VPN do Android Enterprise](vpn-settings-android.md#android-work-profile-device-vpn-settings).
+-  **VPN com escopo de perfil de trabalho** – as conexões VPN são limitadas apenas aos aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android Enterpise podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada. Para obter mais informações, confira [Configurações de VPN do Android Enterprise](vpn-settings-android.md#android-for-work-vpn-settings).
 
 -  **VPN específica do aplicativo** – a VPN específica do aplicativo pode ser configurada no Intune quando o provedor VPN dá suporte para:
     - configuração para VPN específica do aplicativo
