@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869365"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321468"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -60,9 +60,6 @@ Selecione os aplicativos do Office que você deseja atribuir a dispositivos.
     Além disso, você poderá instalar aplicativos para o cliente de área de trabalho Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles.
 3. Selecione **OK**.
 
->[!IMPORTANT]
-> Depois de criar o pacote de aplicativos, você não poderá editar as propriedades dele. Para configurar propriedades diferentes, exclua o pacote de aplicativos e crie um novo.
-
 ## <a name="configure-app-information"></a>Configurar informações do aplicativo
 
 Nesta etapa, você fornece informações sobre o pacote de aplicativos. Essas informações ajudam a identificar o pacote de aplicativos no Intune, e ajudam os usuários a encontrar o pacote de aplicativos no portal da empresa.
@@ -95,11 +92,8 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
         - **Semestral**
         - **Semestral (Direcionada)**
     - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo**: selecione essa opção se você não exigir que os usuários finais aceitem o contrato de licença. Com isso, o Intune aceitará automaticamente o contrato.
-    - **Usar ativação do computador compartilhado**: selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira Visão geral da ativação de computador compartilhado no Office 365.
+    - **Usar ativação do computador compartilhado**: selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: o Office é instalado automaticamente em qualquer idioma com suporte instalado com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos.
-
->[!IMPORTANT]
-> Depois de criar o pacote de aplicativos, você não poderá editar as propriedades dele. Para configurar propriedades diferentes, exclua o pacote de aplicativos e crie um novo.
 
 ## <a name="finish-up"></a>Concluir
 

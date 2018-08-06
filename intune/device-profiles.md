@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905182"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335819"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são perfis de dispositivo do Microsoft Intune?
 
@@ -113,6 +113,13 @@ Esse recurso é compatível com:
 - iOS
 - macOS
 - Windows 8.1 (somente importação)
+
+## <a name="esim-cellular---public-preview"></a>Celular eSIM – versão prévia pública
+
+Os [perfis de celular eSIM](esim-device-configuration.md) fornecem a capacidade de configurar planos de dados da rede celular nos dispositivos gerenciados para acesso à Internet e a dados.  Depois de obter os códigos de ativação da operadora móvel, use o Intune para importar esses códigos de ativação e, em seguida, atribui-los aos dispositivos compatíveis com eSIM.
+
+Esse recurso é compatível com:
+- Windows 10 Fall Creators Update e posterior
 
 ## <a name="education"></a>Educação
 As [Configurações de educação – Windows 10](education-settings-configure.md) definem as opções para o [aplicativo Windows Take a Test](https://education.microsoft.com/gettrained/win10takeatest). Quando você configura essas opções, nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.

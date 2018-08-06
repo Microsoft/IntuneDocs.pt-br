@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224928"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254528"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -339,7 +339,7 @@ Antes de encapsular seu aplicativo, você pode conceder *direitos* para conceder
 
     b.  Habilite as funcionalidades apropriadas. Para obter informações detalhadas sobre cada funcionalidade e como determinar os valores corretos, consulte [Adicionando Funcionalidades](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) na Biblioteca do Desenvolvedor iOS.
 
-    c.  Tome nota de quaisquer IDs que você criar durante o processo.
+    c.  Tome nota de quaisquer IDs que você criar durante o processo. Elas também podem ser chamadas de valores `AppIdentifierPrefix`.
 
     d.  Compile e assine seu aplicativo a ser encapsulado.
 
@@ -349,7 +349,7 @@ Antes de encapsular seu aplicativo, você pode conceder *direitos* para conceder
 
     b.  Crie um perfil de provisionamento para seu aplicativo. Para obter instruções, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Como obter os pré-requisitos para a Ferramenta de Disposição do Aplicativo do Intune para iOS).
 
-    c.  No seu perfil de provisionamento, habilite os mesmo direitos que você tem em seu aplicativo. Você precisará fornecer as mesmas IDs que especificou durante o desenvolvimento do seu aplicativo.
+    c.  No seu perfil de provisionamento, habilite os mesmo direitos que você tem em seu aplicativo. Você precisará fornecer as mesmas IDs (os valores `AppIdentifierPrefix`) especificadas durante o desenvolvimento do aplicativo. 
 
     d.  Conclua o assistente de perfil de provisionamento e baixe o arquivo.
 

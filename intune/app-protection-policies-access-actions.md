@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138689"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254477"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Apagar dados seletivamente usando ações de acesso da política de proteção de aplicativo no Intune
 
@@ -44,7 +44,7 @@ Você pode escolher explicitamente apagar os dados corporativos da empresa do di
 8. Selecione a **Ação** a ser executada se os usuários não atenderem aos seus requisitos. Em alguns casos, várias ações podem ser definidas para uma única configuração. Para obter mais informações, confira [Como criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
 
 >[!NOTE]
-> Para usar a configuração **Modelos de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo. 
+> Para usar a configuração **Modelos de dispositivo ou fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo. Evite usar espaços em listas de vários valores. Esses valores não diferenciam maiúsculas de minúsculas. 
 
 ## <a name="policy-settings"></a>Configurações de política 
 
@@ -83,7 +83,10 @@ Para o Android, você poderá configurar ações para as seguintes configuraçõ
 -  Fabricantes de dispositivo
 
 Para usar a configuração **Fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula de fabricantes Android. Você pode encontrar o fabricante Android de um dispositivo nas configurações do dispositivo.<br>
-Exemplo de entrada: *Fabricante A; Fabricante B; Google* 
+Entrada de exemplo: *Fabricante A; Fabricante B* 
+
+>[!NOTE]
+> Estes são alguns fabricantes comuns relatados por meio de dispositivos usando o Intune e que podem ser usados como entrada: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 Em dispositivos de usuário final, o cliente do Intune executaria uma ação com base em uma correspondência simples de cadeias de caracteres de modelo de dispositivo especificadas no Intune para Políticas de Proteção de Aplicativo. A correspondência depende totalmente do que é relatado pelo dispositivo. Você (o administrador de TI) é incentivado a garantir que o comportamento pretendido ocorra testando essa configuração com base em uma variedade de fabricantes e modelos de dispositivos e direcionando-o a um grupo de usuários pequeno. O valor padrão é **Não configurado**.<br>
 Defina uma das seguintes ações: 

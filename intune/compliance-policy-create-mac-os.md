@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442569"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321434"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
 
@@ -83,6 +83,13 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 ### <a name="encryption"></a>Criptografia
 
 - **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
+
+### <a name="device-security"></a>Segurança de dispositivo
+O firewall protege os dispositivos contra o acesso não autorizado à rede. Você pode usar o Firewall para controlar as conexões por aplicativo. 
+
+- **Firewall**: **habilite** para ajudar a proteger os dispositivos contra o acesso não autorizado. A habilitação desse recurso permite que você manipule as conexões de entrada com a Internet e use o modo furtivo. A opção **Não configurado** (padrão) deixa o firewall desativado e o tráfego de rede é permitido (não bloqueado).
+- **Conexões de entrada**: **bloqueie** todas as conexões de rede de entrada, exceto as conexões necessárias para serviços básicos da Internet, como DHCP, Bonjour e IPsec. Essa configuração também bloqueia todos os serviços de compartilhamento, incluindo compartilhamento de tela, acesso remoto, compartilhamento de música do iTunes e muito mais. A opção **Não configurado** (padrão) permite conexões de entrada e serviços de compartilhamento. 
+- **Modo Furtivo**: **habilite** o modo furtivo para impedir que o dispositivo responda a solicitações de investigação, que podem ser feitas por usuários mal-intencionados. Quando essa opção está habilitada, o dispositivo continua respondendo a solicitações de entrada de aplicativos autorizados. A opção **Não configurado** (padrão) deixa o modo furtivo desativado.
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 

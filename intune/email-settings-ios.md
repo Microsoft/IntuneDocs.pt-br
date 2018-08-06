@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905320"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321162"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Configurações de perfil de email para dispositivos iOS – Intune
 
@@ -44,13 +44,13 @@ Use as configurações de perfil de email para configurar os dispositivos que ex
 - **Atributo de endereço de email do AAD**: escolha como o endereço de email para o usuário é gerado. Selecione **nome UPN** (`user1@contoso.com` ou `user1`) para usar o nome da entidade completo como o endereço de email, ou **Endereço SMTP primário** (`user1@contoso.com`) para usar o endereço SMTP primário para entrar no Exchange.
 - **Método de autenticação**: selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email. Não há suporte para a autenticação multifator do Azure.
   - Se você selecionou **Certificado**, escolha um perfil de certificado SCEP ou PKCS de cliente criado anteriormente para ser usado para autenticar a conexão do Exchange.
-- **SSL**: use a comunicação do protocolo SSL ao enviar e receber emails e ao se comunicar com o servidor Exchange.
-- **S/MIME**: enviar emails de saída usando a assinatura S/MIME.
-  - Se você selecionou **Certificado**, selecione um perfil de certificado PKCS criado anteriormente para autenticar a conexão do Exchange.
+- **SSL**: **habilite** para usar a comunicação do protocolo SSL ao enviar e receber emails e ao se comunicar com o servidor Exchange.
+- **S/MIME**: **habilite o S/MIME** para enviar emails de saída usando a autenticação S/MIME. Quando essa opção está habilitada, você também pode criptografar o email para destinatários que podem receber emails criptografados e descriptografar as mensagens de email recebidas dos remetentes.
+  - Se você selecionou **Certificado**, selecione um perfil de certificado PKCS criado anteriormente para autenticar a conexão do Exchange e/ou criptografar trocas de email.
 - **Quantidade de emails a serem sincronizados**: escolha o número de dias de email que você deseja sincronizar. Ou selecione **Ilimitado** para sincronizar todos os emails disponíveis.
-- **Permitir que as mensagens sejam movidas para outras contas de email**: permite que os usuários movam mensagens de email entre contas diferentes que estão configuradas em seus dispositivos.
-- **Permitir o envio de email de aplicativos de terceiros**: permite que o usuário selecione esse perfil como a conta padrão para enviar email e permitir que aplicativos de terceiros abram o email no aplicativo de email nativo, por exemplo, para anexar arquivos ao email.
-- **Sincronizar endereços de email usados recentemente**: permite que os usuários sincronizem a lista de endereços de email usados recentemente no dispositivo com o servidor.
+- **Permitir que as mensagens sejam movidas para outras contas de email**: a opção **Habilitar** permite que os usuários movam mensagens de email entre contas diferentes configuradas em seus dispositivos.
+- **Permitir o envio de email em aplicativos de terceiros**: a opção **Habilitar** permite que o usuário selecione esse perfil como a conta padrão para envio de email e permita que aplicativos de terceiros abram o email no aplicativo de email nativo, por exemplo, para anexar arquivos ao email.
+- **Sincronizar endereços de email usados recentemente**: a opção **Habilitar** permite que os usuários sincronizem a lista de endereços de email usados recentemente no dispositivo com o servidor.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Definir as configurações de email no Intune](email-settings-configure.md)

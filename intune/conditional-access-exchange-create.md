@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905522"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323235"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional para o Exchange local e o Exchange Online Dedicado herdado
 
@@ -63,7 +63,7 @@ Antes de poder configurar o acesso condicional, verifique o seguinte:
 - Windows Phone 8.1 e posterior
 - Aplicativo de email nativo no iOS.
 - Clientes de email EAS, como Gmail no Android 4 ou versões posteriores.
-- **Dispositivos do perfil de trabalho Android** de clientes de email EAS: há suporte somente para os aplicativos **Gmail** e **Nine Work** no **perfil de trabalho** nos dispositivos de perfil de trabalho Android. Para obter acesso condicional para trabalhar com os perfis de trabalho Android, você precisa implantar um perfil de email para os aplicativos Gmail ou Nine Work e implantar esses aplicativos como uma instalação obrigatória.
+- **Dispositivos de perfil de trabalho do Android** de clientes de email EAS: há suporte apenas para os aplicativos **Gmail** e **Nine Work for Android Enterprise** no **perfil de trabalho** em dispositivos de perfil de trabalho do Android. Para obter acesso condicional para trabalhar com perfis de trabalho do Android, implante um perfil de email para os aplicativos Gmail ou Nine Work for Android Enterprise e implante esses aplicativos como uma instalação obrigatória.
 
 > [!NOTE]
 > Não há suporte para o aplicativo Microsoft Outlook no Android e iOS. 

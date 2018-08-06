@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028721"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321281"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -57,7 +57,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativos LOB para Android | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Android com a extensão **.apk**.  |
 | Aplicativos LOB para iOS | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS com a extensão **.ipa**.  |
 | Aplicativos LOB para Windows Phone | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows Phone com a extensão **.xap**.  |
-| Aplicativos LOB para Windows | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**. |
+| Aplicativos LOB para Windows | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows com a extensão **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**. |
 | Aplicativo iOS interno  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativo interno Android  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativos Web  | Aplicativo Web  | Selecione **Link da Web** como o **tipo de aplicativo** e insira uma URL válida apontando para o aplicativo Web.  |
@@ -119,6 +119,9 @@ Além de entender os aplicativos Web, os aplicativos da Store e os aplicativos L
 - **Programa de Compra por Volume da Apple para Empresas (iOS e macOS)**: a App Store do iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
 - **Perfil de trabalho Android**: a maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Todos os aplicativos instalados nos perfis de trabalho Android vêm da Google Play Store gerenciada. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
 - **Microsoft Store para Empresas (Windows 10)**: a Microsoft Store para Empresas oferece um local para encontrar e comprar aplicativos para a sua organização, individualmente ou em volume. Conectando a Store ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md).
+
+    > [!NOTE]
+    > As extensões de arquivo para aplicativos do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Antes de adicionar aplicativos
 Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativos:

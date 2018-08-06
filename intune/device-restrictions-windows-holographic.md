@@ -1,23 +1,23 @@
 ---
 title: Restrições de dispositivo para o Windows Holographic for Business no Microsoft Intune – Azure | Microsoft Docs
-description: Leia sobre e defina configurações de restrição de dispositivo no Microsoft Intune para o Windows Holographic for Business, incluindo cancelamento do registro, geolocalização, senhas, instalação de aplicativos da App Store, cookies e pop-ups no Microsoft Edge, Windows Defender, pesquisa, armazenamento e nuvem, conectividade por Bluetooth, hora do sistema e dados de uso no Azure.
+description: Leia sobre e defina configurações de restrição de dispositivo no Microsoft Intune para o Windows Holographic for Business, incluindo cancelamento do registro, geolocalização, senhas, instalação de aplicativos da App Store, cookies e pop-ups no Edge, Windows Defender, pesquisa, armazenamento e nuvem, conectividade por Bluetooth, hora do sistema e dados de uso no Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327867"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321593"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configurações de restrição de dispositivo para o Windows Holographic for Business no Intune
 
@@ -69,7 +69,9 @@ As seguintes configurações de restrição de dispositivo são compatíveis com
 
 - **Modificação do horário do sistema** - impede que o usuário final altere a data e hora do dispositivo.
 
-## <a name="kiosk"></a>Quiosque
+## <a name="kiosk---obsolete"></a>Quiosque – obsoleto
+
+Essas configurações são somente leitura e não podem ser alteradas. Para configurar o modo de quiosque, confira [Configurações de quiosque](kiosk-settings.md#windows-holographic-for-business).
 
 Um dispositivo de quiosque normalmente executa um aplicativo específico. Os usuários são impedidos de acessar quaisquer recursos ou funções no dispositivo fora do aplicativo de quiosque.
 

@@ -1,59 +1,68 @@
 ---
-title: Configurar políticas de atualização de software iOS no Microsoft Intune
-titlesuffix: ''
-description: Configure políticas de atualização do iOS para forçar dispositivos iOS supervisionados a instalarem automaticamente a atualização de software mais recente disponível.
+title: Configurar políticas de atualização de software do iOS no Microsoft Intune – Azure | Microsoft Docs
+description: No Microsoft Intune, crie ou adicione uma política de configuração para restringir quando as atualizações de software são instaladas automaticamente em dispositivos iOS gerenciados ou supervisionados pelo Intune. Você pode escolher a data e a hora em que as atualizações não são instaladas. Você também pode atribuir essa política a grupos, usuários ou dispositivos e verificar se há falhas de instalação.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1d4223ae4feb417f77909b320cd0295347b44461
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836581"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268831"
 ---
-# <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurar políticas de atualização do iOS no Microsoft Intune
+# <a name="configure-ios-update-policies-in-intune"></a>Configurar políticas de atualização do iOS no Intune
 
-As políticas de atualização de software permitem forçar dispositivos iOS supervisionados a executarem o iOS 10.3 e posterior para instalar automaticamente a atualização de sistema operacional disponível mais recente. Esse recurso só está disponível para dispositivos supervisionados. Existe a opção de configurar os dias e horários em que não deseja que os dispositivos instalem a atualização. 
+As políticas de atualização de software permitem que você force os dispositivos iOS supervisionados a instalar automaticamente a última atualização de sistema operacional disponível. Esse recurso só está disponível para dispositivos supervisionados. Ao configurar uma política, você pode adicionar os dias e as horas em que não deseja que os dispositivos instalem uma atualização. 
 
-Quando o dispositivo fizer check-in, a cada 8 horas, aproximadamente, se uma atualização estiver disponível e não for durante um horário restrito, o dispositivo tentará baixar e instalar a atualização mais recente do sistema operacional. Não há nenhuma interação do usuário necessária para atualizar o dispositivo. A política não impediria que um usuário atualizasse o sistema operacional.
+O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atualização está disponível e não está agendada para um horário restrito, o dispositivo baixa e instala a última atualização do sistema operacional. Não há nenhuma interação do usuário necessária para atualizar o dispositivo. A política não impede que um usuário atualize o sistema operacional manualmente.
 
-## <a name="configure-the-ios-update-policy"></a>Configurar a política de atualização do iOS
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, escolha **Atualizações de software** > **Políticas de Atualização do iOS**.
-4. No painel de políticas, escolha **Criar** e, em seguida, insira um nome e uma descrição para a política.
-5. Selecione **Configurações** > **Configurar** e insira os detalhes de quando os dispositivos iOS não serão forçados a instalar a atualização mais recente. É possível configurar os dias da semana, o fuso horário, a hora de início e a hora de término.
-6. Escolha **OK** para salvar esta configuração. Agora você retornou à página **Criar política de atualização**. Escolha **Criar** para criar a política e salvar suas configurações.
+Esse recurso dá suporte aos dispositivos que executam o iOS 10.3 e posterior.
 
-O perfil é criado e aparece no painel de lista de políticas de atualização do iOS. O Apple MDM não permite que a capacidade de impor que o dispositivo instale a atualização por um determinado tempo ou data. 
+## <a name="configure-the-policy"></a>Configurar a política
+1. Entre no [Portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Atualizações de software** > **Atualizar as políticas do iOS** > **Criar**.
+4. Insira um nome e uma descrição para a política.
+5. Selecione **Configurações**. 
+
+    Insira os detalhes de quando os dispositivos iOS não são forçados a instalar as últimas atualizações. Essas configurações criam um período de tempo restrito. É possível configurar os dias da semana, o fuso horário, a hora de início e a hora de término.
+
+6. Selecione **OK** para salvar suas alterações. Selecione **Criar** para criar a política.
+
+O perfil é criado e exibido na lista de políticas. O MDM da Apple não permite que você force um dispositivo a instalar atualizações em determinada hora ou data. 
 
 ## <a name="change-the-restricted-times-for-the-policy"></a>Alterar as horas restritas da política
 
-1.  Na folha **Atualizações do Software**, escolha **Políticas de Atualização do iOS**.
-2.  Selecione a política de atualização do iOS que deseja atualizar.
-3.  Selecione **Propriedades** e atualize as informações de horas restritas.
-4.  Escolher os dias da semana
-5.  Fuso horário no qual esta política será aplicada
-6.  Hora de início e de término para as horas não autorizadas
+1. Em **Atualizações de software**, selecione **Políticas de atualização do iOS**.
+2. Escolha uma política existente > **Propriedades**.
+3. Atualize o horário restrito:
 
-## <a name="assign-an-ios-update-policy-to-users"></a>Atribuir uma política de atualização do iOS a usuários
+    1. Escolher os dias da semana
+    2. Escolha o fuso horário ao qual essa política é aplicada
+    3. Inserir a hora de início e de término para as horas não permitidas
 
-Para atribuir uma política de atualização do iOS a usuários, escolha uma política que você configurou. As políticas existentes são encontradas no painel **Atualizações de software** > **Políticas de atualização do iOS**.
+    > [!NOTE]
+    > Se a **Hora de início** e a **Hora de término** são definidas como 00h, a verificação de horário de manutenção é desativada.
 
-1. Escolha a política que você deseja atribuir aos usuários e escolha **Atribuições**. É aberto o painel no qual você pode selecionar grupos de segurança do Azure Active Directory e atribuí-los à política.
-2. Escolha **Grupos selecionados** para abrir o painel que exibe os grupos de segurança do Azure AD. Determine quem tem acesso à política atribuindo os grupos a serem incluídos ou excluídos.
-3. Escolha **Salvar** para implantar a política para os usuários.
+## <a name="assign-the-policy-to-users"></a>Atribuir a política a usuários
 
-Você aplicou a política aos seus usuários ou dispositivos. Os dispositivos usados pelos usuários que são afetados pela política são avaliados quanto à conformidade de atualizações. Essa política também é compatível com dispositivos sem usuários.
+As políticas existentes são atribuídas a grupos, usuários ou dispositivos. Quando atribuída, a política é aplicada.
 
-## <a name="monitor-ios-device-installation-failures"></a>Monitorar falhas de instalação do dispositivo iOS
+1. Em **Atualizações de software**, selecione **Políticas de atualização do iOS**.
+2. Escolha uma política existente > **Atribuições**. 
+3. Selecione os grupos, os usuários ou os dispositivos do Azure Active Directory a serem incluídos ou excluídos dessa política.
+4. Escolha **Salvar** para implantar a política nos grupos.
+
+Os dispositivos usados pelos usuários afetados pela política são avaliados quanto à conformidade de atualizações. Essa política também é compatível com dispositivos sem usuários.
+
+## <a name="monitor-device-installation-failures"></a>Monitorar falhas de instalação do dispositivo
 <!-- 1352223 -->
-O relatório **Falhas de instalação para dispositivos iOS** está disponível no painel **Atualizações de software**. No relatório, é possível exibir uma lista de dispositivos iOS supervisionados que foram afetados por uma política de atualização do iOS, que tentaram realizar uma atualização e não puderam ser atualizados. Para cada dispositivo, você pode exibir um status de por que o dispositivo não foi atualizado automaticamente. Dispositivos íntegros e atualizados não aparecerão na lista. Definimos "atualizado" como a atualização mais recente a que o próprio dispositivo pode dar suporte.
+**Atualizações de software** > **Falhas de instalação em dispositivos iOS** mostra uma lista de dispositivos iOS supervisionados direcionados por uma política de atualização, para os quais houve a tentativa de uma atualização e que não puderam ser atualizados. Para cada dispositivo, você pode exibir o status do motivo pelo qual o dispositivo não foi atualizado automaticamente. Os dispositivos íntegros e atualizados não são mostrados na lista. Os dispositivos "atualizados" incluem a última atualização para a qual o dispositivo em si dá suporte.
 

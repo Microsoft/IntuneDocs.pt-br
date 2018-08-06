@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909075"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279416"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Conectar sua conta do Intune à sua conta do Android Enterprise
 
@@ -51,7 +51,7 @@ Para dar suporte a dispositivos de perfil de trabalho Android e a dispositivos d
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Desconectar sua conta administrativa do Android Enterprise
 
-É possível desabilitar o registro e o gerenciamento do Android Enterprise. Escolher **Desconectar** no console de administração do Intune remove todos os dispositivos de perfil de trabalho e de quiosque Android registrados do registro. Essa ação também remove a relação entre a conta do Android Enterprise e o Intune.
+É possível desabilitar o registro e o gerenciamento do Android Enterprise. Para fazer isso, primeiro desative os dispositivos registrados de perfil de trabalho do Android. Em seguida, escolha **Desconectar** no console de administração do Intune para remover do registro todos os dispositivos registrados de perfil de trabalho e de quiosque do Android. Isso também remove a relação entre a conta empresarial do Android e o Intune.
 
 1. Como administrador do Intune, no [portal do Azure](https://portal.azure.com), escolha **Todos os Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
 2. Escolha **Registro de dispositivo** > **Registro do Android** > **Google Play gerenciado** > **Desconectar**.

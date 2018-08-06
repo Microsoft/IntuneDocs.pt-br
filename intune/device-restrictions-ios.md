@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803815"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321485"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
 
@@ -182,8 +182,8 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 
 Na lista de aplicativos Mostrar ou ocultar, você pode configurar uma destas listas (requer dispositivos supervisionados com iOS 9.3 ou posterior).
 
-Uma lista de **Aplicativos ocultos** – Especifique uma lista de aplicativos que ficam ocultados dos usuários. Os usuários não podem exibir nem iniciar esses aplicativos.
-Uma lista de **Aplicativos visíveis** – Especifique uma lista de aplicativos que os usuários podem exibir e iniciar. Nenhum outro aplicativo pode ser exibido ou iniciado.
+- Uma lista de **Aplicativos ocultos** – Especifique uma lista de aplicativos que ficam ocultados dos usuários. Os usuários não podem exibir nem iniciar esses aplicativos.
+- Uma lista de **Aplicativos visíveis** – Especifique uma lista de aplicativos que os usuários podem exibir e iniciar. Nenhum outro aplicativo pode ser exibido ou iniciado.
 
 Para configurar a lista, clique em **Adicionar**, especifique um nome de sua preferência, o editor do aplicativo (opcional) e a URL para o aplicativo na loja de aplicativos.
 
@@ -259,54 +259,8 @@ Depois de especificar o nome de cada aplicativo e a ID de pacote, escolha **Adic
 - **Importar** - importe um arquivo .csv (valores separados por vírgulas) contendo uma lista de nomes de aplicativo e suas IDs de pacote associadas.
 - **Exportar** - exporte os nomes de aplicativo e as IDs de pacote associadas configuradas para um arquivo .csv (valores separados por vírgulas).
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID de Pacote para aplicativos iOS internos
-
-Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Quiosque (somente supervisionado)
--   **Aplicativo que é executado no modo de quiosque** – Escolha **Aplicativo Gerenciado** para selecionar um aplicativo que você adicionou ao Intune, ou **Aplicativo da Loja** para especificar a URL para um aplicativo na loja. Nenhum outro aplicativo pode ser executado no dispositivo. Para obter mais ajuda, consulte "How to specify URLs to app stores" (Como especificar URLs para lojas de aplicativos) mais adiante neste tópico.
+-   **Aplicativo que é executado no modo de quiosque** – escolha **Aplicativo Gerenciado** para selecionar um aplicativo que você adicionou ao Intune, **Aplicativo da Loja** para especificar a URL de um aplicativo na loja ou **Aplicativo Nativo** para especificar a ID do pacote do aplicativo nativo. Para obter mais informações, confira [Referência de ID do pacote para aplicativos iOS nativos](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) e [Como especificar a URL de um aplicativo na loja](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
     -   **Toque auxiliar** – Habilitar ou desabilitar a configuração de acessibilidade **Toque auxiliar**, que ajuda o usuário a executar gestos na tela que podem ser difíceis de executar.
     -   **Inverter cores** – Habilitar ou desabilitar a configuração de acessibilidade Inverter Cores que ajusta a exibição para ajudar os usuários com deficiências visuais.
     -   **Áudio mono** – Habilitar ou desabilitar a configuração de acessibilidade Áudio mono.
@@ -327,6 +281,51 @@ Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para
 >[!NOTE]
 > Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar a ferramenta Apple Configurator ou o Programa de registro de dispositivos da Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a ferramenta Apple Configurator, consulte sua documentação da Apple.
 >Se o aplicativo iOS que você especificar for instalado após a atribuição do perfil, o dispositivo só entrará no modo de quiosque depois de ser reiniciado.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID de Pacote para aplicativos iOS internos
+
+Esta lista mostra a ID de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software.
+
+| ID do Pacote                   | Nome do Aplicativo     | Editor |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | Loja de aplicativos    | Apple     |
+| com.apple.calculator        | Calculadora   | Apple     |
+| com.apple.mobilecal         | Calendário     | Apple     |
+| com.apple.camera            | Câmera       | Apple     |
+| com.apple.mobiletimer       | Relógio        | Apple     |
+| com.apple.compass           | Bússola      | Apple     |
+| com.apple.MobileAddressBook | Contacts     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Buscar Amigos | Apple     |
+| com.apple.mobileme.fmip1    | Buscar iPhone  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Integridade       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Email         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | Mensagens     | Apple     |
+| com.apple.Music             | Música        | Apple     |
+| com.apple.news              | News         | Apple     |
+| com.apple.mobilenotes       | Anotações        | Apple     |
+| com.apple.Numbers           | Números      | Apple     |
+| com.apple.Pages             | Páginas        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Fotos       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Lembretes    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Configurações     | Apple     |
+| com.apple.stocks            | Bolsa       | Apple     |
+| com.apple.tips              | Dicas         | Apple     |
+| com.apple.videos            | Vídeos       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Carteira       | Apple     |
+| com.apple.Bridge            | Assistir        | Apple     |
+| com.apple.weather           | Clima      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari (somente supervisado)** – Especifique se o navegador Safari pode ser usado no dispositivo.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048012"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236048"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o dispositivo Windows manualmente
 
@@ -40,7 +40,7 @@ Todos os dispositivos com Windows podem ser sincronizados a partir do aplicativo
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Sincronizar do aplicativo Portal da Empresa para Windows
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Sincronizar diretamente do aplicativo do Portal da Empresa para Windows
 Conclua estas etapas para sincronizar manualmente qualquer dispositivo com Windows 10 que esteja executando a Atualização do Criador (versão 1703) ou posterior.
 
 1.  Abra o aplicativo Portal da Empresa no dispositivo.
@@ -49,7 +49,7 @@ Conclua estas etapas para sincronizar manualmente qualquer dispositivo com Windo
 
     ![Captura de tela da home page do aplicativo Portal da Empresa, Configurações realçada](./media/RS1_homePage_settings_04.png)  
     
-    ![Captura de tela da página Configurações do aplicativo Portal da Empresa, botão Sincronização realçado](./media/RS1_settingspage_sync05.png)    
+    ![Captura de tela da página Configurações do aplicativo Portal da Empresa, botão Sincronização realçado](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>Sincronização no aplicativo Configurações 
 Conclua estas etapas para sincronizar manualmente seu Microsoft HoloLens, sua área de trabalho do Windows 10, Windows 10 Mobile ou dispositivos com Windows Phone 8.1 pelo aplicativo Configurações.

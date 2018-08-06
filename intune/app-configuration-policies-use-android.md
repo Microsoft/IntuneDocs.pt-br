@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905743"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268865"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
@@ -63,7 +63,7 @@ Para cada chave e valor na configuração, defina:
 Você poderá escolher as seguintes opções se escolher variável como o tipo de valor:
 - Nome UPN – por exemplo, **John@contoso.com**
 - Email – por exemplo, **John@contoso.com**
-- UPN parcial – por exemplo, **John**
+- UPN parcial – por exemplo, **Julio**
 - ID da Conta – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - ID do dispositivo – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
 - ID de usuário – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**

@@ -1,11 +1,11 @@
 ---
-title: Renomear seu dispositivo pelo site do Portal da Empresa | Microsoft Docs
-description: ''
+title: Remover o dispositivo do site do Portal da Empresa
+description: Saiba como renomear seu dispositivo no site do Portal da Empresa.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,29 +17,28 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bf111b6c95a61e0c244b8d3254abc08c1d85c598
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017131"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321366"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Remover o dispositivo do site do Portal da Empresa
 
-Você pode decidir que deseja renomear o dispositivo para torná-lo mais fácil de identificar. Você pode fazer isso do [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). O site do Portal da Empresa é uma página da Web que pode ser usada para gerenciar computadores e dispositivos registrados no gerenciamento pelo departamento de TI.
+Saiba como renomear seu dispositivo gerenciado registrado no site do Portal da Empresa. Renomeie um dispositivo alterando seu nome genérico ou de modelo padrão para um nome que ajudará você a identificá-lo rapidamente.  
 
-Para renomear o dispositivo:
+1. No [site do Portal da Empresa](https://portal.manage.microsoft.com/HelpDeskDialog), selecione o botão __Menu__ > __Meus Dispositivos__.
 
-1. No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão de __menu__ ![Uma imagem pequena do botão de menu, três barras horizontais empilhadas em paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Meus Dispositivos__.
+2. Selecione o dispositivo que deseja renomear.
 
-2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja renomear.
+![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)  
 
-   ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Selecione **Renomear**.  
 
-3. O dispositivo será aberto em uma janela pop-up. Toque no botão **Renomear**.
+   ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)  
+    
 
-   ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+4. Na caixa em que o nome do dispositivo é exibido, digite um novo nome para o dispositivo. Em seguida, toque no botão **Renomear**. O dispositivo agora é exibido com o novo nome.
 
-4. Na caixa em que aparece o nome do dispositivo, digite o novo nome para seu dispositivo e, em seguida, toque no botão **Renomear**. O dispositivo agora é exibido com o novo nome.
-
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com/HelpDeskDialog).
