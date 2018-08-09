@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321553"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362051"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1123,6 +1123,16 @@ Você pode especificar aplicativos negados no Intune. Se um aplicativo for negad
 
 
 ## <a name="notices"></a>Avisos
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Plano de alteração: opção Alterar Senha na Próxima Autenticação adicionada ao Intune<!-- 1873216 -->
+Na versão do serviço de setembro, o Intune planeja integrar a configuração recém-lançada da Apple **Alterar Senha na Próxima Autenticação** aos dispositivos que executam o macOS versões 10.13 e mais recentes. Antes dessa configuração, os provedores de MDM não podiam verificar se a senha do dispositivo foi alterada para ficar em conformidade. As políticas de configuração e conformidade do Intune somente validam que na próxima vez que a senha do dispositivo for alterada, ele será marcado como em conformidade. Quando esse novo recurso da Apple for adicionado, os usuários do macOS receberão uma solicitação para atualizar a senha, mesmo que ela esteja em conformidade.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Isso afeta ambientes que têm uma política de dispositivo macOS e que usam o Intune ou um MDM híbrido. Agora que a Apple tem essa configuração **Alterar Senha na Nova Autenticação**, o Intune pode forçar os usuários a atualizarem a senha quando uma política de senha é enviada por push. Se você bloquear os recursos da empresa até que o dispositivo seja marcado como em conformidade, os usuários finais poderão ser impedidos de acessar os recursos da empresa, como email ou sites do SharePoint, até que redefinam a senha. No futuro, todas as atualizações das políticas de senha de configuração e conformidade forçarão os usuários de destino a atualizarem suas senhas.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+Informe o Suporte Técnico. Caso você não queira impor essa política do dispositivo macOS, recomendamos que você cancele a atribuição ou exclua a política do macOS existente. Uma pesquisa com clientes sugere que a maioria deles não é afetada por essa alteração. A maioria dos usuários finais atualiza a senha depois de receber uma solicitação para registrar com uma senha ou redefine a senha para permanecer em conformidade.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Plano para mudança: Intune passa dar suporte ao iOS 10 e posteriores em setembro <!-- 2454656 -->
 Em setembro, espera-se que a Apple lance o iOS 12. Logo após o lançamento, mudaremos o registro do Intune, o Portal da Empresa e o navegador gerenciado para dar suporte ao iOS 10 e posteriores.  

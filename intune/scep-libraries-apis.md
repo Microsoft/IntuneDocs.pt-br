@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321591"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575042"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Usar APIs para adicionar ACs de terceiros para SCEP ao Intune
 
@@ -41,11 +41,18 @@ Usando o Intune, os administradores criam perfis do SCEP e, em seguida, atribuem
 - O Certificado Raiz Confiável da Autoridade de Certificação
 - Atributos de certificado e muito mais
 
-Os dispositivos que fazem check-in no Intune recebem o perfil do SCEP e são configurados com esses parâmetros. Uma senha do SCEP gerada dinamicamente é criada pelo Intune e, em seguida, é atribuída ao dispositivo.
+Os dispositivos que fazem check-in no Intune recebem o perfil do SCEP e são configurados com esses parâmetros. Uma senha de desafio do protocolo SCEP gerada dinamicamente é criada pelo Intune e, em seguida, atribuída ao dispositivo.
 
-Essa senha contém detalhes sobre os parâmetros esperados no CSR (certificado de autenticação de solicitação) que o dispositivo emite para o servidor do SCEP. A senha também inclui o tempo de expiração do desafio. O Intune criptografa as informações, assina o blob criptografado e, em seguida, empacota esses detalhes na senha do SCEP.
+Esse desafio contém:
 
-Em seguida, os dispositivos que contatam o servidor do SCEP para solicitar um certificado fornecem essa senha do SCEP. Essa senha precisa passar a validação para o servidor do SCEP emitir um certificado para o dispositivo. Quando uma senha do SCEP é validada, ocorrem as seguintes verificações:
+- A senha de desafio gerada dinamicamente
+- Os detalhes sobre os parâmetros esperados na CSR (solicitação de assinatura de certificado) que o dispositivo emite para o servidor SCEP
+- A hora da expiração do desafio
+
+O Intune criptografa essas informações, assina o blob criptografado e, em seguida, empacota esses detalhes como a senha de desafio do protocolo SCEP.
+
+Em seguida, os dispositivos que contatam o servidor SCEP para solicitar um certificado fornecem essa senha de desafio do SCEP. O servidor SCEP envia a CSR e a senha de desafio do SCEP criptografada para o Intune para validação.  Essa senha de desafio e a CSR precisam ser aprovadas na validação para que o servidor SCEP emita um certificado para o dispositivo. Quando um desafio do SCEP é validado, ocorrem as seguintes verificações:
+
 
 - Valida a assinatura de um blob criptografado
 - Valida se o desafio não expirou

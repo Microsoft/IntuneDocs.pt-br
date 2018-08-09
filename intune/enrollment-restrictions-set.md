@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905811"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501142"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -77,7 +77,7 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 4. Em **Restrições de tipo de dispositivo**, escolha a restrição que você deseja definir.
 5. No nome da restrição (**Todos os usuários** para a restrição padrão), selecione **Plataformas**. Escolha **Permitir** ou **Bloquear** para cada plataforma listada.
 6. Selecione **Salvar**.
-7. No nome da restrição (**Todos os usuários** para a restrição padrão), selecione **Configurações da plataforma**. Em seguida, selecione as **Versões** mínimas e máximas para as plataformas listadas. As versões compatíveis incluem:
+7. No nome da restrição (**Todos os usuários** para a restrição padrão), selecione **Configurações da plataforma**. Em seguida, selecione as **Versões** mínimas e máximas para as plataformas listadas. Os formatos de versão com suporte incluem:
     - O perfil de trabalho Android dá suporte para major.minor.rev.build.
     - O iOS é compatível com o major.minor.rev.
     - O Windows é compatível com minor.rev.build somente para Windows 10.

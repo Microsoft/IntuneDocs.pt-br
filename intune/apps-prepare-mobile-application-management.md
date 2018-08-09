@@ -4,8 +4,8 @@ description: As informações neste tópico ajudam você a decidir quando deve u
 keywords: ''
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 05/17/2018
+manager: dougeby
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
+ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225179"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39450783"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -48,8 +48,8 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativo
 
 |**Ferramenta de Disposição de Aplicativo** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Sim|Sim|
-|**Android**| Em versão prévia |Sim|
+|**iOS** |Não – usar as [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim|
+|**Android**|Não – usar as [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim|
 
 ## <a name="intune-app-sdk"></a>SDK do Aplicativo do Intune
 O SDK do Aplicativo é projetado principalmente para clientes que têm aplicativos na App Store da Apple e/ou na Google Play Store e desejam gerenciar os aplicativos com o Intune. No entanto, qualquer aplicativo pode tirar proveito da integração do SDK, até mesmo aplicativos de linha de negócios.
