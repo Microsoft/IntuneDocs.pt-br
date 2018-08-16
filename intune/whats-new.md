@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
-ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
+ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
+ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39362051"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39614506"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,6 +57,11 @@ Além dos Aplicativos da Loja e dos Aplicativos Gerenciados, agora você pode se
 
 #### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Editar suas implantações de aplicativo do Office 365 Pro Plus <!-- 2150145 -->
 Como administrador do Microsoft Intune, você tem maior capacidade para editar suas implantações de aplicativo do Office 365 Pro Plus. Além disso, não é mais necessário excluir as implantações para alterar uma das propriedades do pacote. No portal do Azure, selecione **Microsoft Intune** > **Aplicativos móveis** > **Aplicativos**. Na lista de aplicativos, selecione o Pacote Office 365 Pro Plus.  
+
+
+#### <a name="updated-intune-app-sdk-for-android-is-now-available----2744271--"></a>A atualização do SDK do Aplicativo do Intune para Android já está disponível <!-- 2744271-->
+
+Uma versão atualizada do SDK do Aplicativo do Intune está disponível para fornecer suporte aos lançamentos da plataforma Android. Se você é um desenvolvedor de aplicativos e usa o SDK do Intune para Android, instale a versão atualizada do SDK do Aplicativo do Intune para garantir que a funcionalidade do Intune nos aplicativos Android continue viável, como esperado nos dispositivos da plataforma Android. Esta versão do SDK do Aplicativo do Intune fornece um plug-in interno que executa as atualizações do SDK. Não é necessário reescrever códigos existentes que estejam integrados. Para saber mais, confira [SDK do Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android). Se estiver usando o estilo de notificação anterior do Intune, recomendamos usar o ícone de porta-arquivos. Para saber mais sobre identidade visual, confira [este repositório do GitHub](https://github.com/msintuneappsdk/intune-app-partner-badge).
 
 
 ### <a name="device-configuration"></a>Configuração do dispositivo

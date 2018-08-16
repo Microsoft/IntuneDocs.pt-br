@@ -1,12 +1,11 @@
 ---
-title: Configurações de restrição de dispositivo do Microsoft Intune para Android
-titlesuffix: ''
-description: Conheça as configurações do Intune que você pode usar para controlar configurações e funcionalidades de dispositivo nos dispositivos que executam o Android.
+title: Configurações de restrições de dispositivo para Android no Microsoft Intune – Azure | Microsoft Docs
+description: Veja uma lista de todas as configurações de dispositivo Android que você pode controlar e restringir no Microsoft Intune. Use essas configurações para controlar a senha, acessar o Google Play, permitir ou proibir aplicativos, controlar as configurações do navegador, bloquear aplicativos, fazer backup na nuvem do Google e controlar as opções de mensagem, voz, roaming de dados e conexões Wi-Fi e Bluetooth.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190649"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587016"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Configurações de restrição de dispositivo Android e Samsung Knox Standard do Microsoft Intune 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Configurações de restrições de dispositivo Android e Samsung KNOX Standard – Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
     > Os dispositivos Samsung Knox automaticamente exigem um PIN de quatro dígitos durante o registro do MDM. Dispositivos Android nativos podem automaticamente exigir que um PIN fique em conformidade com acesso condicional.
 
 - **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre 4 e 16 caracteres).
-- **Máximo de minutos de inatividade para bloqueio da tela** – Especifica o número de minutos de inatividade antes que a tela do dispositivo seja bloqueada automaticamente.
+- **Máximo de minutos de inatividade para bloqueio da tela** – Inserir o número máximo de minutos de inatividade permitido, antes que a tela do dispositivo seja bloqueada. O usuário final não pode definir um valor temporal superior ao tempo configurado no perfil do dispositivo. O usuário final pode definir um valor temporal inferior. Por exemplo, se o perfil estiver definido para 15 minutos, o usuário final poderá definir o valor para cinco minutos. Entretanto, ele não poderá definir o valor para 30 minutos. 
 - **Número de falhas de entrada antes de apagar o dispositivo** – Especifica o número de falhas de entrada repetidas permitidas antes do dispositivo ser apagado.
 - **Expiração da senha (dias)** – Especifica o número de dias antes que a senha do dispositivo precise ser alterada.
 -  **Tipo de senha exigida** – Especifica o nível de complexidade de senha exigido e se dispositivos biométricos podem ser usados. Escolha:
