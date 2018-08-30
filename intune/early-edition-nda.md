@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001903"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43093189"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>A edição antecipada do Microsoft Intune – agosto de 2018
 
@@ -172,7 +172,8 @@ Para ficar consistente com a API do Graph, os termos a seguir serão alterados n
 - **Remover os dados da empresa** será alterado para **desativar**
 - **Redefinição de fábrica** será alterado para **apagar**
 
-
+### <a name="delete-jamf-devices----2653306---"></a>Excluir dispositivos do Jamf <!-- 2653306 -->
+Para excluir os dispositivos gerenciados pelo JAMF, acesse **Dispositivos**, escolha o dispositivo Jamf e clique em **Excluir**.
 
 <!-- 1807 start -->
 
@@ -189,12 +190,6 @@ A página **Aplicativos** apresenta uma nova exibição **Instalados** que permi
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Melhoria na experiência do aplicativo Portal da Empresa para os usuários gerentes de registros de dispositivo <!-- 675800 -->
 Quando um DEM (gerente de registros de dispositivo) entra no aplicativo Portal da Empresa para Windows, o aplicativo lista apenas o dispositivo em execução atual do DEM. Essa melhoria reduz os tempos limite que ocorriam anteriormente quando o aplicativo tentava carregar todos os dispositivos registrados pelo DEM.  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Usar licenças de dispositivo VPP para pré-provisionar o Portal da Empresa durante o registro no DEP <!-- 1608345 -->
-Você poderá usar licenças de dispositivo do VPP (Volume Purchase Program) para pré-provisionar o Portal da Empresa durante os registros no DEP (Programa de registro de dispositivos). Para fazer isso, quando você criar ou editar um perfil de registro, especifique o token VPP que deseja usar para instalar o Portal da Empresa. Verifique se o token não expira e se você tem licenças suficientes para o aplicativo de Portal da Empresa. Caso o token for expirar ou for executado sem licenças, o Intune enviará por push o Portal da Empresa da App Store (uma ID da Apple será solicitada).
-
-###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Extensões de arquivo de aplicativos de LOB (linha de negócios) do Windows <!-- 1884873 -->
-As extensões de arquivo para aplicativos de LOB do Windows agora incluem *.msi*, *.appx*, *.appxbundle*, *.msix* e *.msixbundle*. Você pode adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos móveis** > **Aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** é exibido permitindo que você selecione o **Tipo de aplicativo**. Para aplicativos de LOB do Windows, selecione aplicativo de **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo de pacote do aplicativo** e, em seguida, insira um arquivo de instalação com a extensão apropriada.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Pacote de configuração do Windows Defender ATP adicionado automaticamente ao perfil de configuração <!-- 2144658 -->
 Ao usar dispositivos de [Proteção Avançada contra Ameaças e integração](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) no Intune, no momento, você baixa um pacote de configuração e adiciona-o ao perfil de configuração. Em uma atualização futura, o Intune obterá automaticamente o pacote da Central de Segurança do Windows Defender e o adicionará ao seu perfil.
