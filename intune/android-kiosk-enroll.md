@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212028"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903136"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro de dispositivos de quiosque Android Enterprise
 
@@ -56,7 +56,7 @@ Você precisa criar um perfil de registro para que seja possível registrar os d
 1. Acesse o [Portal do Intune](https://portal.azure.com) e escolha **Registro do dispositivo** > **Registro do Android** > **Registros de dispositivo de quiosque e de tarefa**.
 2. Escolha **Criar** e preencha os campos obrigatórios.
     - **Nome**: digite um nome que você usará ao atribuir o perfil ao grupo de dispositivos dinâmicos.
-    - **Data de expiração do token**: a data em que o token expira. O Google impõe o máximo de 30 dias.
+    - **Data de expiração do token**: a data em que o token expira. O Google impõe o máximo de 90 dias.
 3. Escolha **Criar** para salvar o perfil.
 
 ### <a name="create-a-device-group"></a>Criar um grupo de dispositivos
@@ -110,7 +110,7 @@ Para dispositivos Android 5.1 e posteriores compatíveis com NFC, você pode pro
 
 ### <a name="enroll-by-using-a-token"></a>Registrar usando um token
 
-Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo.
+Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de Código QR ao usar o método de registro **aft#setup**.
 
 1. Ligue o dispositivo de redefinição de fábrica.
 2. Na tela **Boas-vindas**, selecione seu idioma.
@@ -125,6 +125,9 @@ Para dispositivos Android 6 e posteriores, você pode usar o token para registra
 ### <a name="enroll-by-using-a-qr-code"></a>Registrar usando um código QR
 
 Nos dispositivos Android 7 e posteriores, você pode examinar o código QR do perfil de registro para registrar o dispositivo.
+
+> [!Note]
+> O zoom do navegador pode fazer com que os dispositivos não consigam digitalizar o código QR. Aumentar o zoom do navegador resolve o problema.
 
 1. Para iniciar uma leitura de QR no dispositivo Android, toque várias vezes na primeira tela que é exibida após uma redefinição de fábrica.
 2. Para dispositivos Android 7 e 8, será solicitado que você instale um leitor de QR. Os dispositivos Android 9 e versões posteriores já têm um leitor de QR instalado.
