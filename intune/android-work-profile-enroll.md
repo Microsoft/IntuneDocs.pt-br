@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909058"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255077"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configurar o registro de dispositivos de perfil de trabalho Android
 
@@ -34,7 +34,7 @@ Para configurar o gerenciamento do perfil de trabalho Android, siga estas etapas
 2. Especifique as configurações de registro de perfil de trabalho Android. Há suporte para os perfis de trabalho Android [somente em determinados dispositivos Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Todo dispositivo que dá suporte aos perfis de trabalho Android também dá suporte ao gerenciamento do Android convencional. O Intune permite que você especifique como os dispositivos que dão suporte para os perfis de trabalho Android devem ser gerenciados nas [Restrições de Registro](enrollment-restrictions-set.md).
     - **Bloquear (definido por padrão)**: todos os dispositivos Android, incluindo dispositivos que dão suporte a perfis de trabalho Android, serão registrados como dispositivos Android convencionais.
     - **Permitir**: todos os dispositivos que dão suporte a perfis de trabalho Android são registrados como dispositivos de perfil de trabalho Android. Os dispositivos Android que não dão suporte aos perfis de trabalho Android são registrados como dispositivos Android convencionais.
-3. [Informe aos usuários como registrar seus dispositivos](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Informe aos usuários como registrar seus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Se você deseja registrar perfis de trabalho Android em dispositivos que já foram registrados como dispositivos Android regulares, primeiro você deve cancelar o registro desses dispositivos e registrá-los novamente.
