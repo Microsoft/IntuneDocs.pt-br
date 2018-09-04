@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755225"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150659"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos gerenciados para realizar o trabalho
 O Microsoft Intune é um software que permite às organizações gerenciar dispositivos (como smartphones, tablets e computadores), aplicativos e outros recursos corporativos como email. Isso concede aos funcionários acesso às suas informações de trabalho de praticamente qualquer lugar em quase qualquer dispositivo, ajudando a proteger informações corporativas.
@@ -36,7 +36,7 @@ O suporte da sua empresa pode ver informações relevantes ao trabalho, mas não
 Você pode obter o Portal da Empresa de duas diferentes maneiras:
 
 - Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o suporte de sua empresa também pode instalá-lo para você.
-- Acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) que o suporte da empresa configurou.
+- Acessando o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) que o suporte da empresa configurou.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre o aplicativo e o site?
 Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. Algumas tarefas que você pode fazer são:
@@ -102,4 +102,4 @@ A Microsoft recomenda que você tente primeiro ver se consegue corrigir o proble
 - [Corrigir problemas comuns com o dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Corrigir problemas comuns com o dispositivo Windows](troubleshoot-your-device-windows.md)
 
-É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar o suporte de sua empresa para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+É possível postar um comentário abaixo para solicitar ajuda, mas cada organização tem requisitos diferentes e, portanto, nem sempre poderemos responder às suas perguntas. Contatar o suporte de sua empresa para obter ajuda provavelmente será a maneira que fornecerá a resposta mais rápida e mais relevante. As informações de contato dele devem estar disponíveis no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

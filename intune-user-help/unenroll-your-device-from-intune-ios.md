@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547481"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148790"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Remover seu dispositivo iOS do Intune
 
@@ -74,4 +74,4 @@ Há três locais em que o Portal da Empresa armazena dados locais no seu disposi
 -   **Conjunto de chaves**: o dispositivo armazena suas senhas e outras informações utilizadas para entrada no seu Conjunto de chaves. Os aplicativos da Microsoft compartilham as informações de conexão com todos os aplicativos desenvolvidos pela Microsoft que você tem em seu dispositivo, incluindo o Microsoft Outlook e o Microsoft Authenticator. Como a análise da Apple, essas informações podem ser removidas apenas redefinindo o dispositivo de volta às configurações de fábrica. Isso apagará todas as informações pessoais em seu dispositivo. Para fazer isso, abra **Configurações** > **Geral** > **Redefinir** > **Apagar todo o conteúdo e as configurações de**.
 
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

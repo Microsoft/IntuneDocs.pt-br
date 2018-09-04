@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481182"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148771"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Remover seu dispositivo Windows do gerenciamento do Intune
 
@@ -82,4 +82,4 @@ Para excluir os logs armazenados e o cache, execute uma das seguintes etapas:
 
 * Redefina o aplicativo Portal da Empresa. Abra o aplicativo **Configurações** e selecione > **Aplicativos** > **Portal da Empresa** > **Opções avançadas** > **Redefinir**. 
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

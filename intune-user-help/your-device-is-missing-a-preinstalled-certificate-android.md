@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50864d3af4383a95c037868a9f9b9a61e1eb8172
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d51b141b09090119f7c9711ffd56d6b382f6e3dc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019306"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147944"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Seu dispositivo Android não tem um certificado que normalmente vem instalado no telefone
 
@@ -44,9 +44,9 @@ Se o dispositivo não estiver registrado no Intune e não tiver um certificado q
 
 5. Feche o navegador e o aplicativo Portal da Empresa.
 
-6. Abra o aplicativo Portal da Empresa. Agora, você poderá entrar no aplicativo Portal da Empresa. Se você ainda não conseguir usar o aplicativo Portal da Empresa, contate o suporte de sua empresa usando as informações fornecidas no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obter mais instruções.
+6. Abra o aplicativo Portal da Empresa. Agora, você poderá entrar no aplicativo Portal da Empresa. Se você ainda não conseguir usar o aplicativo Portal da Empresa, contate o suporte de sua empresa usando as informações fornecidas no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obter mais instruções.
 
 >[!NOTE]
 > Se a instalação desse certificado não resolver o problema e você receber outra mensagem “Certificado ausente”, será necessário realizar etapas adicionais para [instalar o certificado ausente](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

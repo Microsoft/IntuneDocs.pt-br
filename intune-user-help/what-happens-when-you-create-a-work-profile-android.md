@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e3c5149ca9dd9b2e4f2df6b1512e488cb5d7bb9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5f063a9648c85c3d2734badf2994997803d12830
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016672"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148718"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>O que acontece quando você cria um perfil de trabalho
 
@@ -45,4 +45,4 @@ Quando você cria um perfil de trabalho:
 
 Para saber mais sobre as etapas para criar um perfil de trabalho, consulte [Criar um perfil de trabalho e registrar o dispositivo](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

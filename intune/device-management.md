@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836920"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313251"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
@@ -37,7 +37,7 @@ A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenc
    - **Visão geral** mostra um instantâneo visual dos dispositivos registrados e também quantos dispositivos estão usando diferentes plataformas, incluindo Android, iOS e muito mais.
    - **Todos os dispositivos** mostra uma lista dos dispositivos registrados que você gerencia.
 
-     Use o recurso **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Microsoft Edge, Chrome).
+     Use o recurso **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Edge, Chrome).
 
      Selecione qualquer dispositivo para [exibir detalhes adicionais sobre o dispositivo](device-inventory.md), incluindo detalhes de hardware, aplicativos instalados, status da política de conformidade e muito mais.
 
@@ -55,8 +55,8 @@ As ações disponíveis dependem da plataforma e da configuração do dispositiv
 
 - [Exibir inventário de dispositivo](device-inventory.md)
 - Execute as ações do dispositivo remoto:
-    - [Remover os dados da empresa](devices-wipe.md#remove-company-data)
-    - [Redefinição de fábrica](devices-wipe.md#factory-reset)
+    - [Desativar](devices-wipe.md#retire)
+    - [Apagamento](devices-wipe.md#wipe)
     - [Bloqueio remoto](device-remote-lock.md)
     - [Redefinir senha](device-passcode-reset.md)
     - [Bypass do bloqueio de ativação](device-activation-lock-bypass.md) (somente iOS)

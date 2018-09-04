@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8afec4c83e52693aa5789ba3e0ed89cb4d0eea38
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 4174844d3507ebd2c37034a1a4e7f54464f099e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308884"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148463"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>O que acontece quando você cancela o registro do dispositivo iOS ou macOS no Intune?
 
@@ -44,4 +44,4 @@ Ao cancelar o registro do dispositivo iOS ou macOS no Intune:
 
 Para obter instruções sobre como cancelar o registro, consulte [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md) (Cancelar o registro de dispositivo do Intune).
 
-Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

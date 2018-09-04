@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f4a8ddb904d1007680777b9358feec08ae2cd0eb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f340df3463bc94afbe83efb8873f3f5a31326c8e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015397"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147328"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Android usando o Portal da Empresa?
 
@@ -34,4 +34,4 @@ Se tiver um dispositivo Samsung Knox, você poderá realizar um "apagamento sele
 - email, VPN e Wi-Fi.
 - a capacidade do suporte de sua empresa de impor certas configurações.
 
-Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
