@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3e0ffd583d1709a9127dc346d0271578820a10e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 874007e161f4271fc4faed9d939046c17e52ac7b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014853"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147294"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Você obterá um erro ao usar o aplicativo Portal da Empresa
 
@@ -34,4 +34,4 @@ Se você receber um erro enquanto estiver usando o aplicativo Portal da Empresa 
 
 -   Agite o dispositivo enquanto estiver no aplicativo Portal da Empresa e toque em **Email** quando o alerta de diagnóstico for exibido. Se o alerta não for exibido quando você agitar o dispositivo, abra **Configurações** > **Portal da Empresa** e verifique se a opção **Gesto de Agitar** está ativada.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

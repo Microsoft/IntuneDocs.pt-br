@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755480"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149116"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece quando você redefine o dispositivo Windows usando o Portal da Empresa?
 
@@ -34,4 +34,4 @@ Quando você usa o aplicativo de Portal da Empresa ou o [site de Portal da Empre
 |Seu dispositivo pode acessar somente o email da empresa|**Windows Phone 8.1**<br />Seu dispositivo não aparecerá mais no Portal da Empresa, sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.<br /><br />**Windows 7 ou Windows Vista**<br />Você não poderá redefinir um computador que esteja executando o Windows 7 ou anterior e seja usado somente para email.<br /><br />**Windows 8.1 e Windows 8**<br />Seu dispositivo não aparecerá mais no Portal da Empresa, sua conta de email da empresa será excluída e emails que não foram salvos serão excluídos.|
 |PCs e laptops|**Windows 8.1 e Windows 8**<br />Você não pode redefinir um computador que esteja executando o Windows 8 ou o Windows 8.1, a menos que ele seja usado somente para email.<br /><br />**Windows 7 ou Windows Vista**<br />Não será possível redefinir um computador que esteja executando o Windows 7 ou anterior.|
 
-Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751740"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147070"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Executando ações em um dispositivo macOS gerenciado pelo Jamf
 
@@ -34,4 +34,4 @@ __O que fazer se você vir "AccountNotOnboarded" ou "O dispositivo já está reg
 
 Se você tiver aberto o aplicativo Portal da Empresa e for exibida uma mensagem dizendo "AccountNotOnboarded", será preciso fechar o aplicativo Portal da Empresa e ir para **Aplicativos** > **Autoatendimento**. Sua empresa terá uma política de registro de dispositivo que você precisa instalar. Clique na política para instalá-la e, em seguida, abra o Portal da Empresa novamente.
 
-Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117847"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150300"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar logs para o suporte de sua empresa usando um cabo USB
 
 Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empresa em seu dispositivo Android, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
 
 > [!Note]
-> Antes de começar, verifique se você tem o endereço de email do suporte de sua empresa. Encontre-o no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) ou no aplicativo Portal da Empresa.
+> Antes de começar, verifique se você tem o endereço de email do suporte de sua empresa. Encontre-o no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) ou no aplicativo Portal da Empresa.
 
 1. Na tela do erro, toque em **Enviar Informações**. Quando vir uma mensagem perguntando qual método você deseja usar para enviar os logs, escolha a opção que salvará os arquivos em seu dispositivo.
 
@@ -39,4 +39,4 @@ Se você receber um erro enquanto estiver usando o aplicativo do Portal da Empre
 
 4. Selecione os arquivos e anexe-os a um email. Envie este email para o suporte de sua empresa.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

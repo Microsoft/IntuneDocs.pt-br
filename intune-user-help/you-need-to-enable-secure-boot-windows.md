@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 99431a9720ab0f97f869ea12496912391cce2179
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 32a6ff69bc848bbd0a2174ab4b60de905498d6fa
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019714"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150063"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>É necessário habilitar a Inicialização Segura
 
@@ -32,4 +32,4 @@ Habilitar a Inicialização Segura é uma tarefa avançada. Se você estiver usa
 
 Se você estiver usando um PC, entre em contato com o suporte de sua empresa ou consulte a seção "Como reabilitar a Inicialização Segura" na página [Desabilitar Inicialização Segura](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tentar habilitar a Inicialização Segura por conta própria.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ed5acd3e5af2c26a8b13872d4663352886f4bc1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 202a7cc118a4eb8a2e15c1b0de32c27450d064db
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015975"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149422"
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>A versão do sistema operacional de seu dispositivo macOS ainda não é compatível
 
 Com o ritmo acelerado do desenvolvimento da tecnologia, às vezes, seu dispositivo pode estar à frente do que o suporte de sua empresa teve a oportunidade de testar. É possível que a versão mais recente do macOS não funcione com algumas ferramentas da empresa.
 
-Será necessário entrar em contato com o suporte de sua empresa para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Será necessário entrar em contato com o suporte de sua empresa para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

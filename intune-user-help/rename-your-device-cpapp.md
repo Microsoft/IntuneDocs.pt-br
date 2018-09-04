@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bc3b8231379b56d257c9c4994a554da3533fb07
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 9060c2e573003e480319dba6715cb14a2a13e906
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915821"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149999"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Renomear o dispositivo no aplicativo Portal da Empresa para Windows
 Renomeie um dispositivo para facilitar o reconhecimento entre outros dispositivos. O aplicativo Portal da Empresa para Windows permite que você renomeie dispositivos com Windows, iOS e Android conectados. 
@@ -33,4 +33,4 @@ Para renomear um dispositivo:
 3. No canto superior direito da página, selecione o ícone **Renomear**. 
 4. Digite um novo nome e clique em **Renomear**. Você verá a atualização imediata do nome do dispositivo no aplicativo. 
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

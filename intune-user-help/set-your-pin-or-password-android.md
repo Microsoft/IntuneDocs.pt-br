@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: daf25bab90ccc73f782ca93d84f67e06e12f043a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7ea0adbf6c64a6ec32469368c89c462d6b4ab13b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015091"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146801"
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou senha
 
@@ -36,4 +36,4 @@ Use as seguintes etapas para definir um PIN ou senha.
 
 Para determinados dispositivos, talvez seja necessário definir um PIN de inicialização além de sua senha de tela. Você pode tentar corrigir esse problema encontrando um local no aplicativo de configurações para habilitar essa opção. Por exemplo, no Samsung Galaxy S7, você habilita a Inicialização Segura acessando **Configurações** > **Tela de Bloqueio e Segurança** > **Inicialização Segura**. Saiba mais [aqui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

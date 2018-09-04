@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016298"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146732"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Enviar logs para o suporte de sua empresa no aplicativo de Configurações para Windows 10
 
@@ -38,4 +38,4 @@ Se você receber um erro enquanto estiver usando o dispositivo Windows 10 gerenc
 
 Talvez você também precise enviar os [logs do aplicativo do Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md) para fornecer ao suporte de sua empresa mais ajuda ao tentar solucionar os problemas que eles podem encontrar. 
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

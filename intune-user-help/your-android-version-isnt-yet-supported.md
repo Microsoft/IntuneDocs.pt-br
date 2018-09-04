@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4be9a33041e1717fec0b8a4e764798d719ff4499
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7172d165b8ee425a807a0926a193a7427862a526
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031216"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149089"
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Ainda não há suporte para a versão do sistema operacional de seu dispositivo Android
 
 Com o ritmo acelerado do desenvolvimento da tecnologia, às vezes, seu dispositivo pode estar à frente do que o suporte de sua empresa teve a oportunidade de testar. É possível que a versão mais nova do Android não funcione com algumas ferramentas de sua empresa.
 
-Será necessário entrar em contato com o suporte de sua empresa para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Será necessário entrar em contato com o suporte de sua empresa para resolver esse problema. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

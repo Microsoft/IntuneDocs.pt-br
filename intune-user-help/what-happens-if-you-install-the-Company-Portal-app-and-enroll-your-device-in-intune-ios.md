@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2342970765e909af1bfa21653e82bebd79fe5f7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 413c5e2b1201b5ead1af1cd112e5a1320262778e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030587"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150098"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>O que acontecerá se você instalar o aplicativo do Portal da Empresa e registrar seu dispositivo iOS no Intune?
 
@@ -64,4 +64,4 @@ Quando o dispositivo é registrado, o suporte de sua empresa pode:
 
 -   Habilitar ou desabilitar a sincronização automática de arquivos durante o modo de roaming no seu dispositivo. Se a sincronização automática de arquivos for permitida, taxas de roaming poderão ser cobradas.
 
-Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 071ed6ca2889788c607625478f4f9d3d20e19662
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015142"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146368"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e entrar no aplicativo Portal da Empresa
 
@@ -38,4 +38,4 @@ O Portal da Empresa é um aplicativo que você instala em seu dispositivo iOS pa
 
     Se você está entrando no aplicativo de Portal da Empresa pela primeira vez e sua empresa ou escola está usando o Intune, você será solicitado a registrar seu dispositivo no Intune. Para registrar, execute as etapas em [Registrar seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md). Você também pode [entrar usando outro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

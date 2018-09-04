@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c61b0d62ea2b12712e47e0e83b21cc40b7d1e9ef
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cc2cc35a29949e78e723026865c057fec548bc3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752947"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150725"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Cancelar o registro do dispositivo macOS do Intune
 
@@ -50,4 +50,4 @@ Quando você cancela o registro de dispositivo do Intune, o seguinte acontece:
 
 -   O acesso ao email corporativo pode ser removido do dispositivo.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

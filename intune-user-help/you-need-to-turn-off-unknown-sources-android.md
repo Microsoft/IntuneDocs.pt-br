@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fccc0e34f0aa4466359fef5ef0ef91326c5829
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016128"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150354"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Você precisa desativar as Fontes desconhecidas
 
@@ -30,4 +30,4 @@ Se você vir a mensagem "A instalação de fontes desconhecidas deve ser desabil
 
 Após você desligar **Fontes desconhecidas**, pode levar alguns minutos antes de continuar a usar seu dispositivo Android para acessar os dados da empresa ou escola.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

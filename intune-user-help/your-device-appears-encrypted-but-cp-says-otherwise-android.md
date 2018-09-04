@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c26a3bbb168904fe39c6c0ff7dd0698eece56596
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de8fb99a201590c9ea68e5a2ec6714de9ae0d0f4
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754919"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146870"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Seu dispositivo Android parece estar criptografado, mas o Portal da Empresa informa o contrário
 
@@ -49,7 +49,7 @@ Alguns dispositivos terão a opção de criptografar todo o dispositivo ou somen
 
 ### <a name="downgrade-your-version-of-android"></a>Fazer o downgrade de sua versão do Android
 
-Se o dispositivo oferecer a opção para fazer downgrade para o Android 6.0 e posterior, faça isso. Haverá um risco de perda de dados se você tentar fazer downgrade de seu dispositivo. Caso contrário, recomendamos contatar o suporte de sua empresa para resolver esse problema. É possível obter informações de contato do suporte de sua empresa no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se o dispositivo oferecer a opção para fazer downgrade para o Android 6.0 e posterior, faça isso. Haverá um risco de perda de dados se você tentar fazer downgrade de seu dispositivo. Caso contrário, recomendamos contatar o suporte de sua empresa para resolver esse problema. É possível obter informações de contato do suporte de sua empresa no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="specific-manufacturer-issues"></a>Problemas de fabricante específicos
 

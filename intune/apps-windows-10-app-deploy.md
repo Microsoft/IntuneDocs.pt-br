@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bffb0ab4003cc02ceddcd0199b951113ff1e4fd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321592"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347425"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
 Atualmente, o Microsoft Intune dá suporte a uma variedade de tipos de aplicativos e cenários de implantação em dispositivos Windows 10. Depois de adicionar um aplicativo ao Intune, você pode atribuí-lo a usuários e dispositivos. As informações a seguir fornecem mais detalhes relacionados aos cenários do Windows 10 compatíveis. Além disso, as informações a seguir fornecem detalhes importantes a serem observados ao implantar aplicativos no Windows. 
 
-Os aplicativos LOB (linha de negócios) e os aplicativos da Microsoft Store para Empresas são os tipos de aplicativo compatíveis com dispositivos Windows 10. As extensões de arquivo para aplicativos do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  
+Os aplicativos LOB (linha de negócios) e os aplicativos da Microsoft Store para Empresas são os tipos de aplicativo compatíveis com dispositivos Windows 10.
 
 > [!Note]
 > A atualização mínima necessária do Windows 10 para implantação de aplicativos no contexto de dispositivo é a de [23 de maio de 2018 – KB4100403 (Build do sistema operacional 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).

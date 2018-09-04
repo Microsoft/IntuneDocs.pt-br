@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018168"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150689"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solucionar problemas de registro de dispositivo do Windows 10
 Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de área de trabalho do Windows 10 no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não consegue acessar seu email ou arquivos corporativos ou de estudante, tente estas etapas de solução de problemas.
@@ -61,4 +61,4 @@ Se tiver seguido as etapas acima, mas não conseguir acessar seu email corporati
 
 Se você vir uma mensagem que diz <strong>Não foi possível descobrir automaticamente um ponto de extremidade de gerenciamento correspondente ao nome de usuário inserido. Verifique seu nome de usuário e tente novamente. Se você souber a URL do ponto de extremidade de gerenciamento, insira-o.</strong>, deverá tentar inserir seu nome de usuário e senha novamente. Se ainda não funcionar, verifique com o suporte de sua empresa para obter o site que você precisa fornecer na caixa de texto <strong>Ponto de extremidade de gerenciamento</strong>. Este é um site que provavelmente é semelhante a <strong>www.yourcompany.onmicrosoft.com</strong>.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f257064aec862c1a7fd7f085769c95c13499cdb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ab2642127b635e4830b6cf7f5e8cd820c61904ba
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016876"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149006"
 ---
 # <a name="you-need-to-enable-encryption"></a>É necessário habilitar a criptografia
 
@@ -30,4 +30,4 @@ Ao criptografar um dispositivo, as informações são encapsuladas nele em uma c
 
 O BitLocker é um software que criptografa a unidade e ajuda a proteger seus dados. Siga [estas instruções](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) sobre como habilitar o BitLocker em dispositivos Windows 10.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

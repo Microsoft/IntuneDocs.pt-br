@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff8a2650b0264662084a4bf3a8186808f5980faf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40cc6ec2daab92a226051e2d9bc11d7ac0fb105b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013969"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150456"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Você precisa atualizar seu dispositivo Android para instalar o aplicativo Outlook
 
@@ -36,4 +36,4 @@ O aplicativo Outlook ajuda milhões de usuários a conectar todas as suas contas
 
 Vá para **Configurações** e, em seguida, use a opção **Atualizar** ou **Atualização do sistema**.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

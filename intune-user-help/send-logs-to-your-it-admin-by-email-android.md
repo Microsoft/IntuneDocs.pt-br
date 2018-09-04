@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327680"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149593"
 ---
 # <a name="email-logs-to-your-company-support"></a>Enviar logs por email ao suporte da sua empresa
 
@@ -45,4 +45,4 @@ Para enviar logs por email ao suporte da sua empresa:
 3.  Toque em **Enviar Email e Carregar Logs**.
 4.  Após o upload ter sido concluído, toque em seu aplicativo de email. Uma mensagem de email será aberta com a ID do incidente preenchida no campo de assunto. No corpo do email, descreva o problema que você encontrou.  
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751672"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149639"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Corrigir problemas comuns com o dispositivo Windows
 
-Às vezes, podem ocorrer problemas com seu dispositivo Windows, que poderão ser corrigidos pela solução de problemas. Alguns dos problemas comuns que já vimos e que você pode primeiro tentar corrigir sozinho estão listados abaixo. Para os problemas mais complexos, é recomendável contatar o suporte de sua empresa por meio de suas informações de contato no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Às vezes, podem ocorrer problemas com seu dispositivo Windows, que poderão ser corrigidos pela solução de problemas. Alguns dos problemas comuns que já vimos e que você pode primeiro tentar corrigir sozinho estão listados abaixo. Para os problemas mais complexos, é recomendável contatar o suporte de sua empresa por meio de suas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Não consigo registrar meu dispositivo Windows 10](troubleshoot-your-windows-10-device-windows.md)
 - [Preciso atualizar meu dispositivo Windows](you-need-to-update-your-windows-device.md)

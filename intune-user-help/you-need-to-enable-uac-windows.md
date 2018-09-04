@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b433a20aaa2ca25f54d051e3bed58989ef9dec7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c9532cc58b392aecb821ae38e8e4d284d971b7d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017029"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146292"
 ---
 # <a name="how-to-enable-user-access-control"></a>Como habilitar o Controle de Acesso de Usuários
 
@@ -34,4 +34,4 @@ Veja como você pode alterar as configurações do Controle de Acesso de Usuári
 2. Abra **Segurança e Manutenção** > **Alterar configurações de Controle de Conta de Usuário**.
 3. Na página **Defina quando você deverá ser notificado a respeito de alterações no seu computador**, mova o controle deslizante para um dos dois cortes superiores mais próximos de **Sempre notificar**.
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

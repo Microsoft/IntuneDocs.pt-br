@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51ef4e1e89c54587535f3ede7e8f406f54763bc9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 88caf56a2483690f9130818191b04f412a7ed641
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015057"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146830"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Verificar a conformidade em seu dispositivo Android
 
@@ -32,4 +32,4 @@ Se o seu dispositivo não tiver feito check-in no Intune há algum tempo, talvez
 
 2. Toque em **Verificar Conformidade**.
 
-Se não for possível redefinir o dispositivo perdido ou roubado, peça ao suporte de sua empresa para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se não for possível redefinir o dispositivo perdido ou roubado, peça ao suporte de sua empresa para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
