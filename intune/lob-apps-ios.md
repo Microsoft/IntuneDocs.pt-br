@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e76e8940334e90f41fe5e5132f9210d69359f74a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224238"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252441"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do iOS ao Microsoft Intune
 
@@ -72,6 +72,9 @@ Use as informações deste artigo para ajudar a adicionar aplicativos de uma lin
 2. Selecione **Adicionar** para carregar o aplicativo no Intune.
 
 O aplicativo que você criou agora aparece na lista de aplicativos. Na lista, você pode atribuir o aplicativo aos grupos que escolher. Para obter ajuda, consulte [Como atribuir aplicativos aos grupos](apps-deploy.md).
+
+> [!NOTE]
+> Os perfis de provisionamento para aplicativos LOB do iOS têm um aviso de 30 dias antes de expirarem.
 
 ## <a name="step-5-update-a-line-of-business-app"></a>Etapa 5: atualizar um aplicativo de linha de negócios
 

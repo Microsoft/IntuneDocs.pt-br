@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224306"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40252733"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -62,6 +62,12 @@ Os gráficos mostram o número de aplicativos para o seguinte status:
 | **Instalação pendente**   | O número de aplicativos que estão no processo de instalação. |
 | **Não aplicável**           | O número de aplicativos para os quais o status não é aplicável.            |
 
+> [!NOTE]
+> O número de aplicativos descobertos pode não corresponder à contagem do status de instalação de aplicativos. Possibilidades de inconsistências incluem:
+>    - Uma alteração de direcionamento de um aplicativo gerenciado instalado pode fazer com que a contagem de instalações na folha de status diminua, mas continue a ser informada nos aplicativos detectados.
+>    - O direcionamento de várias instâncias do mesmo aplicativo em um locatário resultará em contagens diferentes devido à potencial sobreposição de usuários ou dispositivos. Cada instância do aplicativo contará usuários sobrepostos, mas os aplicativos detectados terão contagens duplicadas.
+>    - Os aplicativos detectados e status de aplicativos são coletados em intervalos de tempo diferentes, o que pode causar uma discrepância na contagem de aplicativos.
+ 
 ### <a name="device-install-status"></a>Status de instalação do dispositivo
 
 Uma lista de status do dispositivo é exibida quando você seleciona **Status de instalação do dispositivo** na seção **Monitorar** do menu. A tabela de detalhes inclui as seguintes colunas:

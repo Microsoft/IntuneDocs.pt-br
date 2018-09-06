@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329868"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251699"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usar o portal de solução de problemas para ajudar os usuários na sua empresa
 
@@ -65,7 +65,7 @@ Você pode usar o painel **Solucionar problemas** para examinar as informações
 | 2.   | Seleção de usuários  | O nome do usuário selecionado no momento. Clique em **Alterar usuário** para escolher um novo usuário.       |
 | 3.   | Status do usuário  | Exibe o status da licença do Intune do usuário, o número de dispositivos, a conformidade de cada dispositivo, o número de aplicativos e a conformidade dos aplicativos.       |
 | 4.   | Informações do usuário  | Use a lista para selecionar os detalhes a serem examinados no painel. <br>Você pode selecionar: <ul><li>Aplicativos móveis<li>Políticas de proteção do aplicativo<li>Políticas de conformidade<li> Políticas de configuração</ul>      |
-| 5.   | Associação de grupo  | Yadda       |
+| 5.   | Associação de grupo  | Mostra os grupos atuais dos quais o usuário selecionado é membro.       |
 
 ## <a name="mobile-apps-reference"></a>Referência de aplicativos móveis
 

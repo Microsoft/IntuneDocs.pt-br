@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822714"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255242"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
 
@@ -115,11 +115,10 @@ O novo anel de atualização será exibido na lista de anéis de atualização.
 3. Quando terminar, escolha **Selecionar** para concluir a atribuição.
 
 ## <a name="update-compliance-reporting"></a>Relatório de conformidade da atualização
-Você pode exibir a conformidade de atualizações no Intune ou usando uma solução gratuita no OMS (Operations Management Suite) chamada Conformidade de Atualizações.
+Você pode exibir a conformidade de atualizações no Intune ou usando uma solução gratuita denominada Conformidade de Atualizações.
 
 ### <a name="review-update-compliance-in-intune"></a>Examinar a conformidade de atualizações no Intune 
-<!-- 1352223 -->
-Examine um relatório de política para exibir o status da implantação dos grupos de atualização do Windows 10 que você configurou.
+<!-- 1352223 -->Examine um relatório de política para exibir o status da implantação dos grupos de atualização do Windows 10 que você configurou.
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços**, filtre pelo **Intune** e selecione **Microsoft Intune**.
@@ -137,7 +136,7 @@ Examine um relatório de política para exibir o status da implantação dos gru
       - **Status do usuário**
 
 ### <a name="review-update-compliance-using-oms"></a>Examinar conformidade de atualizações usando o OMS
-Você pode monitorar as distribuições de atualização do Windows 10 usando uma solução gratuita no Operations Management Suite (OMS) denominada Conformidade da Atualização. Para obter detalhes, consulte [Monitorar as Atualizações do Windows com a Conformidade da Atualização](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando você usa essa solução, pode implantar uma ID comercial para qualquer dispositivo do Windows 10 gerenciado pelo Intune para o qual deseja relatar a conformidade da atualização.
+Você pode monitorar as distribuições de atualização do Windows 10 usando uma solução gratuita denominada Conformidade de Atualizações. Para obter detalhes, consulte [Monitorar as Atualizações do Windows com a Conformidade da Atualização](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando você usa essa solução, pode implantar uma ID comercial para qualquer dispositivo do Windows 10 gerenciado pelo Intune para o qual deseja relatar a conformidade da atualização.
 
 No console do Intune, você pode usar as configurações OMA-URI de uma política personalizada para configurar a ID comercial. Para obter detalhes, consulte [Configurações da política do Intune para os dispositivos do Windows 10 no Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 

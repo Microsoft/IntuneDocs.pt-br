@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744662"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251799"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Habilitar o Windows Defender ATP com acesso condicional no Intune
 
@@ -44,7 +44,7 @@ Este artigo mostra como:
 
 Para usar ATP com o Intune, verifique se você tem a seguinte configuração e está pronto para usar:
 
-- Locatário licenciado para Enterprise Mobility + Security E5 e Windows E5 (ou Microsoft 365 Enterprise E5)
+- Locatário licenciado para Enterprise Mobility + Security E3 e Windows E5 (ou Microsoft 365 Enterprise E5)
 - Ambiente do Microsoft Intune, com dispositivos Windows 10 [gerenciados para Intune](windows-enroll.md) que também façam parte do Azure AD
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) e acesso à Central de Segurança do Windows Defender (portal ATP)
 

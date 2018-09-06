@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905233"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251513"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
@@ -45,7 +45,11 @@ Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, fa
 6. No painel **Adicionar aplicativo**, selecione o tipo **Link da Web** na lista suspensa **Tipo de aplicativo**.
 7. Selecione **Configurar**.
 8. No painel **Informações do aplicativo**, adicione as seguintes informações:
-    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa.
+    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa. 
+    
+        > [!NOTE]
+        > Se você alterar o nome do aplicativo por meio do portal do Azure do Intune depois de ter implantado e instalado o aplicativo, o aplicativo não poderá mais ser direcionado usando comandos.
+    
     - **Descrição**: insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
     - **Editor**: insira o nome do editor desse aplicativo.
     - **URL do aplicativo**: insira a URL do site da web que hospeda o aplicativo que você deseja atribuir.

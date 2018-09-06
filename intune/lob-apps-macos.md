@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993710"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255478"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicativos de LOB (linha de negócios) do macOS ao Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993710"
 
 Use as informações deste artigo para ajudar a adicionar aplicativos de linha de negócios do macOS ao Microsoft Intune. Você deve baixar uma ferramenta externa para pré-processar seus arquivos *.pkg* antes de carregar o arquivo de linha de negócios para o Microsoft Intune. O pré-processamento dos seus arquivos *.pkg* deve ser realizado em um dispositivo macOS.
 
->[!NOTE]
->Embora os usuários de dispositivos macOS possam remover alguns dos aplicativos macOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários finais excluírem esses aplicativos, eles deverão ir para a loja de aplicativos e reinstalá-los manualmente.
->
->Somente arquivos *.pkg* podem ser usados para carregar os aplicativos de LOB macOS para o Microsoft Intune. Não há suporte para a conversão de outros formatos, como *.dmg* para *.pkg*.
+> [!NOTE]
+> Embora os usuários de dispositivos macOS possam remover alguns dos aplicativos macOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários finais excluírem esses aplicativos, eles deverão ir para a loja de aplicativos e reinstalá-los manualmente.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>Etapa 1 – pré-processar seu arquivo de instalação de software
+## <a name="before-your-start"></a>Antes de começar
 
-Use a Ferramenta de Encapsulamento de Aplicativo Intune para Mac para permitir que aplicativos Mac sejam gerenciados pelo Microsoft Intune.
+Você deve baixar uma ferramenta externa para pré-processar seus arquivos *.pkg* antes de carregar o arquivo de linha de negócios para o Microsoft Intune. O pré-processamento dos seus arquivos *.pkg* deve ser realizado em um dispositivo macOS. Use a Ferramenta de Encapsulamento de Aplicativo Intune para Mac para permitir que aplicativos Mac sejam gerenciados pelo Microsoft Intune.
+
+> [!IMPORTANT]
+> Somente arquivos *.pkg* podem ser usados para carregar os aplicativos de LOB macOS para o Microsoft Intune. Não há suporte para a conversão de outros formatos, como *.dmg* para *.pkg*.
 
 1. Baixe e execute a [Ferramenta de Encapsulamento de Aplicativo Intune para Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
 
@@ -55,7 +56,7 @@ Use a Ferramenta de Encapsulamento de Aplicativo Intune para Mac para permitir q
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Este comando extrairá os parâmetros detectados e a versão para o arquivo *.intunemac* criado.
 
-## <a name="step-2---specify-the-software-setup-file"></a>Etapa 2 – Especificar os arquivos de instalação de software
+## <a name="step-1---specify-the-software-setup-file"></a>Etapa 1 – Especificar os arquivos de instalação de software
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
@@ -64,14 +65,14 @@ Use a Ferramenta de Encapsulamento de Aplicativo Intune para Mac para permitir q
 5. Acima da lista de aplicativos, escolha **Adicionar**.
 6. No painel **Adicionar aplicativo**, escolha **Aplicativo de linha de negócios**.
 
-## <a name="step-3---configure-the-app-package-file"></a>Etapa 3 – Configurar o arquivo de pacote do aplicativo
+## <a name="step-2---configure-the-app-package-file"></a>Etapa 2 - configurar o arquivo de pacote de aplicativos
 
 1. No painel **Adicionar aplicativo**, escolha o **Arquivo do pacote do aplicativo**.
 2. No painel **Arquivo do pacote do aplicativo**, escolha o botão procurar e selecione um arquivo de instalação do macOS com a extensão *.intunemac*.
 3. Quando terminar, escolha **OK**.
 
 
-## <a name="step-4---configure-app-information"></a>Etapa 4 – Configurar informações do aplicativo
+## <a name="step-3---configure-app-information"></a>Etapa 3 - configurar informações do aplicativo
 
 1. No painel **Adicionar aplicativo**, escolha **Informações do aplicativo**.
 2. No painel **Informações do aplicativo**, adicione os detalhes do seu aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
@@ -89,7 +90,7 @@ Use a Ferramenta de Encapsulamento de Aplicativo Intune para Mac para permitir q
     - **Logotipo** – carregue um ícone que será associado ao aplicativo. Esse é o ícone que é exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
 3. Quando terminar, escolha **OK**.
 
-## <a name="step-5---finish-up"></a>Etapa 5 – Concluir
+## <a name="step-4---finish-up"></a>Etapa 4 - conclusão
 
 1. No painel **Adicionar aplicativo**, confirme se os detalhes do seu aplicativo estão corretos.
 2. Escolha **Adicionar** para carregar o aplicativo no Intune.
@@ -99,7 +100,7 @@ O aplicativo que você criou aparece na lista de aplicativos, na qual você pode
 > [!NOTE]
 > Se o arquivo *.pkg* contiver vários aplicativos ou instaladores de aplicativos, o Microsoft Intune somente informará que o *aplicativo* foi instalado com êxito quando todos os aplicativos instalados forem detectados no dispositivo.
 
-## <a name="step-6---update-a-line-of-business-app"></a>Etapa 6 – Atualizar um aplicativo de linha de negócios
+## <a name="step-5---update-a-line-of-business-app"></a>Etapa 5 – Atualizar um aplicativo de linha de negócios
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

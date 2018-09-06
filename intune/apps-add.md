@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321281"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251679"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -129,6 +129,9 @@ Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativo
 - Quando você adiciona e atribui um aplicativo de uma Store, os usuários devem ter uma conta nessa Store para poderem instalar o aplicativo.
 - Alguns aplicativos ou itens que você atribui podem depender de aplicativos internos do iOS. Por exemplo, quando você atribui um livro na iOS Store, o aplicativo iBooks deve estar presente no dispositivo. Se você tiver removido o aplicativo interno iBooks, não será possível usar o Intune para reabilitá-lo.
 
+> [!IMPORTANT]
+> Se você alterar o nome do aplicativo por meio do portal do Azure do Intune depois de ter implantado e instalado o aplicativo, o aplicativo não poderá mais ser direcionado usando comandos.
+
 ## <a name="cloud-storage-space"></a>Espaço de armazenamento em nuvem
 Todos os aplicativos que você cria usando o tipo de instalação do instalador do software (por exemplo, um aplicativo LOB) são empacotados e carregados no armazenamento em nuvem do Microsoft Intune. Uma assinatura de avaliação do Intune inclui 2 GB de armazenamento baseado em nuvem que é usado para armazenar aplicativos gerenciados e atualizações. Uma assinatura completa não limita a quantidade total de espaço de armazenamento.
 
@@ -170,6 +173,10 @@ O Intune reinstalará, atualizará ou removerá automaticamente um aplicativo ne
 - Se houver falha na instalação de um aplicativo necessário ou se o aplicativo não estiver presente no dispositivo, o Intune avaliará a conformidade e o reinstalará quando esse agendamento expirar.  
 - Um administrador tem como alvo um aplicativo como disponível para um grupo de usuários e um usuário final instala o aplicativo do portal da empresa no dispositivo. Posteriormente, o administrador atualiza o aplicativo da v1 para a v2. O Intune atualizará o aplicativo quando este agendamento expirar, desde que nenhuma versão anterior do aplicativo ainda esteja presente no dispositivo.
 - Se o administrador implantar a tentativa de desinstalar e o aplicativo estiver presente no dispositivo e tiver falhado na desinstalação, o Intune avaliará a conformidade e o desinstalará quando esse agendamento expirar.   
+
+## <a name="app-installation-errors"></a>Erros de instalação de aplicativo
+
+Para obter detalhes sobre erros de instalação do aplicativo Intune, consulte [Erros de instalação de aplicativo](troubleshoot-app-install.md#app-installation-errors).
 
 ## <a name="next-steps"></a>Próximas etapas
 

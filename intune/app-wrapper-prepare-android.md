@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 3be9be3c290a6cbb2e68358a6810aa2dc1636065
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "35679437"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40253132"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -50,6 +50,9 @@ Antes de executar a ferramenta, consulte [Considerações de segurança para exe
     > Em alguns casos, a versão de 32 bits do Java pode resultar em problemas de memória. É recomendável instalar a versão de 64 bits.
 
 - O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Para a **reutilização** de certificados existentes e orientações do certificado de autenticação geral, consulte [Reutilizando certificados de autenticação e encapsulando aplicativos](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). O executável Java keytool.exe é usado para gerar **novas** credenciais necessárias para assinar o aplicativo de saída encapsulado. Todas as senhas definidas devem ser seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
+
+> [!NOTE]
+> A Ferramenta de Disposição do Aplicativo do Intune não oferece suporte aos esquemas de assinatura v2 e o futuro v3 para autenticação do aplicativo. Depois de ter disposto o arquivo .apk usando a Ferramenta de Disposição do Aplicativo do Intune, a recomendação é usar [a ferramenta Apksigner fornecida pelo Google]( https://developer.android.com/studio/command-line/apksigner). Isso garantirá que, assim que seu aplicativo chegar aos dispositivos dos usuários finais, ele possa ser iniciado corretamente pelos padrões do Android. 
 
 - (Opcional) Habilitar Multidex dentro do aplicativo de entrada. Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. Nesse cenário, a melhor prática seria habilitar Multidex dentro do próprio aplicativo. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo). 
 

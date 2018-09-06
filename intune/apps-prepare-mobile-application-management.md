@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450783"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251540"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450783"
 Você pode habilitar seus aplicativos para usar políticas de proteção usando a Ferramenta de Encapsulamento de Aplicativos do Intune ou o SDK de Aplicativos do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
 
 ## <a name="intune-app-wrapping-tool"></a>Ferramenta de Encapsulamento de Aplicativo do Intune
-A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos internos de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper envolvendo o aplicativo, que permite que o aplicativo seja gerenciado por uma política de proteção de aplicativo do Intune.
+A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos **internos** de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper envolvendo o aplicativo, que permite que o aplicativo seja gerenciado por uma política de proteção de aplicativo do Intune. Ao proteger um aplicativo fornecido por um fornecedor de software independente (ISV), é importante esclarecer se o ISV ainda oferecerá suporte ao aplicativo encapsulado.
 
 O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura. Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da Ferramenta de Disposição de Aplicativo, consulte [Ferramenta de Disposição do Aplicativo Android ](app-wrapper-prepare-android.md) e [Ferramenta de Disposição do Aplicativo iOS](app-wrapper-prepare-ios.md).
 
@@ -48,7 +48,7 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativo
 
 |**Ferramenta de Disposição de Aplicativo** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Não – usar as [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim|
+|**iOS** |Sim|Sim|
 |**Android**|Não – usar as [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim|
 
 ## <a name="intune-app-sdk"></a>SDK do Aplicativo do Intune

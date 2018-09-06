@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906100"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255374"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -38,23 +38,22 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 
 ## <a name="app-management-capabilities-by-platform"></a>Recursos de gerenciamento de aplicativo por plataforma
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|Adicionar e atribuir aplicativos a dispositivos e usuários|Sim|Sim|Sim|Sim|
-|Atribuir aplicativos a dispositivos não registrados com o Intune|Sim|Sim|Não|Não|
-|Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos|Não|Sim|Não|Não|
-|Usar políticas de provisionamento de aplicativo móvel para renovar aplicativos expirados|Não|Sim|Não|Não|
-|Proteger os dados corporativos em aplicativos com as políticas de proteção de aplicativo|Sim|Sim|Não|Não<sup>1</sup>|
-|Remover apenas dados corporativos de um aplicativo instalado (apagamento seletivo do aplicativo)|Sim|Sim|Sim|Sim|
-|Monitorar as atribuições de aplicativo|Sim|Sim|Sim|Sim|
-|Atribuir e controlar aplicativos adquiridos por volume de uma loja de aplicativos|Não|Não|Não|Sim|
-|Instalação obrigatória de aplicativos nos dispositivos (obrigatório)<sup>2</sup>|Sim|Sim|Sim|Sim|
-|Instalação opcional em dispositivos do Portal da Empresa (instalação disponível)|Sim|Sim|Sim|Sim|
-|Instalar atalho para um aplicativo na Web (link da Web)|Sim|Sim|Sim|Sim|
-|Aplicativos na empresa (linha de negócios)|Sim|Sim|Não|Sim|
-|Aplicativos de uma loja|Sim|Sim|Sim|Sim|
-|Atualizar aplicativos|Sim|Sim|Sim|Sim|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Adicionar e atribuir aplicativos a dispositivos e usuários | Sim | Sim | Sim | Sim | Sim |
+| Atribuir aplicativos a dispositivos não registrados com o Intune | Sim | Sim | Não | Não | Não |
+| Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos | Não | Sim | Não | Não | Não |
+| Usar políticas de provisionamento de aplicativo móvel para renovar aplicativos expirados | Não | Sim | Não | Não | Não |
+| Proteger os dados corporativos em aplicativos com as políticas de proteção de aplicativo | Sim | Sim | Não | Nº 1 | Não |
+| Remover apenas dados corporativos de um aplicativo instalado (apagamento seletivo do aplicativo) | Sim | Sim | Não | Sim | Sim |
+| Monitorar as atribuições de aplicativo | Sim | Sim | Sim | Sim | Sim |
+| Atribuir e controlar aplicativos adquiridos por volume de uma loja de aplicativos | Não | Não | Não | Sim | Não |
+| Instalação obrigatória de aplicativos nos dispositivos (obrigatório)2 | Sim | Sim | Sim | Sim | Sim |
+| Instalação opcional em dispositivos do Portal da Empresa (instalação disponível) | Sim | Sim | Sim | Sim | Sim |
+| Instalar atalho para um aplicativo na Web (link da Web) | Sim | Sim | Sim | Sim | Sim |
+| Aplicativos na empresa (linha de negócios) | Sim | Sim | Sim | Sim | Não |
+| Aplicativos de uma loja | Sim | Sim | Não | Sim | Sim |
+| Atualizar aplicativos | Sim | Sim | Não | Sim | Sim |
 
 <sup>1</sup> Considere usar a [Proteção de Informações do Windows](windows-information-protection-configure.md) para proteger aplicativos em dispositivos que executam o Windows 10.
 
@@ -95,8 +94,8 @@ Para saber mais sobre essa seção, veja [Gerenciar aplicativos](app-management.
 - **Licenças de aplicativo**: exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte:
     - [Aplicativos do VPP (volume-purchased program) do iOS](vpp-apps-ios.md).
     - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicativos Descobertos**: exibe todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo.
-- **Status de instalação do aplicativo**: exibe o status de uma atribuição de aplicativo que você criou.
+- **Aplicativos Descobertos**: exibe todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo. Para saber mais, confira [Como monitorar atribuições e informações de aplicativo com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **Status de instalação do aplicativo**: exibe o status de uma atribuição de aplicativo que você criou. Para saber mais, confira [Como monitorar atribuições e informações de aplicativo com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **Status de proteção do aplicativo**: exibe o status de uma política de proteção de aplicativo para um usuário selecionado.
 - **Logs de auditoria**: exibe a atividade relacionada ao aplicativo do Intune de todos os administradores de TI.
 

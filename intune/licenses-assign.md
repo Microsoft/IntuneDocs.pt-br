@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225401"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751643"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos usuários para que possam registrar dispositivos no Intune
 
@@ -61,7 +61,7 @@ Veja esta [visão geral do School Data Sync](https://support.office.com/article/
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Como as licenças de usuário e dispositivo afetam o acesso a serviços
 * Cada **usuário** ao qual você atribui uma licença de software de usuário pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para gerenciar aplicativos e até 15 dispositivos.
-* Cada **dispositivo** ao qual você atribui uma licença de software de dispositivo pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para uso por qualquer número de usuários.
+* Você pode comprar licenças para qualquer dispositivo separadamente das licenças de usuário. As licenças de dispositivos não precisam ser atribuídas aos dispositivos. Cada dispositivo que acessa e usa os serviços online e o software relacionado (incluindo o software System Center) deve ter uma licença de dispositivo.
 * Se um dispositivo for usado por mais de um usuário, cada um deles precisará de uma licença de software de dispositivo ou todos os usuários precisarão de uma licença de software de usuário.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Noções básicas sobre o tipo de licenças adquiridas

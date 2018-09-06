@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025905"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251725"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são maneiras comuns de usar o acesso condicional com o Intune?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025905"
 Há dois tipos de acesso condicional com o Intune: acesso condicional baseado em dispositivo e acesso condicional baseado em aplicativo. Você precisa configurar as políticas de conformidade relacionadas para orientar a conformidade de acesso condicional em sua organização. O acesso condicional geralmente é usado para realizar ações como permitir ou bloquear o acesso ao Exchange local, controlar o acesso à rede ou integrar a uma solução de Defesa contra Ameaças Móveis.
 
 As informações abaixo ajudam a entender como usar os recursos de conformidade de *dispositivo* móvel do Intune e os recursos de MAM (gerenciamento de *aplicativo* móvel) do Intune. 
+
+> [!NOTE]
+> O acesso condicional é um recurso do Azure Active Directory incluído com uma licença do Azure Active Directory Premium. O Intune aprimora esse recurso, adicionando a conformidade de dispositivo móvel e o gerenciamento de aplicativo móvel à solução.
 
 ## <a name="device-based-conditional-access"></a>Acesso condicional baseado no dispositivo
 
@@ -106,7 +109,7 @@ Os usuários podem ter o acesso permitido ou negado ao tentar acessar os recurso
 
 ### <a name="conditional-access-based-on-device-risk"></a>Acesso condicional baseado nos riscos do dispositivo
 
-O Intune em parceria com fornecedores de Defesa contra Ameaças Móveis, que fornece uma solução de segurança para detectar malwares, cavalos de Troia e outras ameaças em dispositivos móveis.
+O Intune firma uma parceria com fornecedores de Defesa contra Ameaças Móveis, que fornecem uma solução de segurança para detectar malware, cavalos de Troia e outras ameaças em dispositivos móveis.
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Como funciona a integração entre o Intune e a Defesa contra Ameaças Móveis
 
@@ -118,11 +121,11 @@ A integração entre o Intune e a defesa contra ameaças móveis desempenha um f
 
 ### <a name="conditional-access-for-windows-pcs"></a>Acesso condicional para computadores Windows
 
-O acesso condicional para computadores fornece funcionalidades semelhantes disponíveis para dispositivos móveis. Vamos falar sobre as maneiras pelas quais você pode usar o acesso condicional ao gerenciar computadores com o Intune.
+O acesso condicional para computadores fornece recursos semelhantes aos disponíveis para dispositivos móveis. Vamos falar sobre as maneiras pelas quais você pode usar o acesso condicional ao gerenciar computadores com o Intune.
 
 #### <a name="corporate-owned"></a>De propriedade corporativa
 
--   **Ingressado no domínio do AD local:** essa tem sido a opção mais comum de implantação de acesso condicional para organizações, que estão razoavelmente confiantes com o fato de que já estão gerenciando seus computadores por meio de políticas de grupo do AD e/ou com o System Center Configuration Manager.
+-   **Ingressado no domínio do AD local:** essa tem sido a opção mais comum para organizações que estão razoavelmente confiantes com o fato de que já estão gerenciando seus computadores por meio de políticas de grupo do AD e/ou com o System Center Configuration Manager.
 
 -   **Ingressado no domínio do Azure AD e gerenciamento do Intune:** esse cenário é normalmente voltado para cenários CYOD (Escolha seu próprio dispositivo) e cenários de laptops móveis em que esses dispositivos raramente são conectados à rede corporativa. O dispositivo é ingressado no Azure AD e registrado no Intune, o que remove qualquer dependência do AD local e dos controladores de domínio. Isso pode ser usado como um critério de acesso condicional ao acessar recursos corporativos.
 

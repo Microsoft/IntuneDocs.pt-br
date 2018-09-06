@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
+ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020989"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40252731"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Usar o Novo Início para redefinir dispositivos Windows 10 com o Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A ação do dispositivo **Novo Início** remove aplicativos instalados em um computador Windows 10 que está executando a Atualização para Criadores. Em seguida, ela atualiza o computador automaticamente para a versão mais recente do Windows.
+A ação do dispositivo **Novo Início** remove todos os aplicativos instalados em um PC executando o Windows 10, versão 1703 ou posterior. O Novo Início ajuda a remover os aplicativos (OEM) pré-instalados que normalmente são instalados em um computador novo.  
 
-Essa ação ajuda a remover os aplicativos (OEM) pré-instalados que normalmente são instalados em um computador novo. Para manter o conteúdo da pasta base do usuário e remover apenas os aplicativos e as configurações, use a configuração `if user data is retained`.
-
-> [!IMPORTANT]
-> Novo Início cancela o registro do dispositivo no Intune, mas o dispositivo ainda permanece ingressado no Azure Active Directory.
-
-## <a name="use-fresh-start"></a>Usar o Novo Início
-
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços**, filtre pelo **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-4. Na lista de dispositivos que você gerencia, escolha um dispositivo de desktop Windows 10 e, em seguida, selecione **Novo Início**.
-
-## <a name="next-steps"></a>Próximas etapas
-
-Para ver o status dessa ação, selecione **Ações do dispositivo** (**Microsoft Intune** > **Dispositivos**).
+1. Entre no [portal do Azure](https://portal.azure.com) e acesse > **Microsoft Intune** > **Dispositivos** > **Todos os Dispositivos**.
+2. Na lista de dispositivos que você gerencia, escolha um dispositivo de desktop Windows 10.
+3. Clique em **Novo Início**. 
+4. Selecione **manter os dados de usuário neste dispositivo** para:
+   * Manter o dispositivo do Azure AD conectado
+    * Manter o dispositivo inscrito no gerenciamento de dispositivos móveis 
+    * Manter o conteúdo da pasta base do usuário e remover aplicativos e configurações  
+  > [!IMPORTANT]
+ > Se você não mantiver os dados do usuário, o dispositivo será restaurado para seu estado inicial. Ele será retirado do Azure AD e do gerenciamento de dispositivos móveis. 
+ 
+5. Clique em **OK**.   
+6. Para ver o status dessa ação, volte para **Dispositivos** e clique em **Ações do dispositivo**.  
