@@ -3,9 +3,9 @@ title: Introdução ao SDK de Aplicativos do Microsoft Intune
 description: Habilite rapidamente seu aplicativo móvel para MAM (gerenciamento de aplicativo móvel) com o Microsoft Intune.
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
-ms.date: 05/15/2018
+manager: dougeby
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0df56da9fff72124bb44a2c73e63d88cb6542938
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
+ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223519"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44058941"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -133,7 +133,7 @@ Se você estiver desenvolvendo um aplicativo de linha de negócios para uso no I
 
 Intune|iOS|Android|Descrição|
 |---|---|---|---|
-Número de versão|CFBundleShortVersionString|PackageVersionName |Esse número indica uma versão específica do aplicativo para usuários finais.|
+Número da versão|CFBundleShortVersionString|PackageVersionName |Esse número indica uma versão específica do aplicativo para usuários finais.|
 Número da versão|CFBundleVersion|PackageVersionCode |Esse número é usado para indicar uma iteração no código do aplicativo.|
 
 #### <a name="ios"></a>iOS
