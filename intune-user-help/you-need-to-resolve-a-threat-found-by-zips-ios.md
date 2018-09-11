@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 1ee101fe31b32ccd3d5b1c7cfd361b881e232ae5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cb87541e45591ae8c4d1e8151fdb781ebd0b364
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754341"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148133"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Você precisa resolver uma ameaça encontrada pelo Zimperium zIPS
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>Resolver uma ameaça encontrada pelo Zimperium zIPS
 
-O Zimperium zIPS encontrou uma ameaça em potencial em seu dispositivo e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email corporativos ou de estudante. A mensagem que você verá depende do problema que o Zimperium zIPS encontrou no seu dispositivo.
+O Zimperium zIPS é um serviço Defensor contra Ameaças Móveis que identifica possíveis ameaças em seus dispositivos iOS. Essas ameaças são relatadas ao aplicativo Portal da Empresa, que as mostra como problemas de falta de conformidade não resolvidos. Se o dispositivo for identificado como fora de conformidade, talvez você não possa:
 
-Para corrigir o problema, abra o aplicativo Zimperium zIPS e siga as instruções mostradas no aplicativo.
+* Conectar-se ao email corporativo
+* Conectar-se ao Wi-Fi corporativo
+* Conectar-se ao SharePoint Online
+* Sincronizar arquivos corporativos com o OneDrive
+* Acessar aplicativos da empresa
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>O que você pode ver se o seu dispositivo registrado for impedido de acessar email ou arquivos
+Este artigo descreve como reconhecer alertas de ameaças do Zimperium zIPS e o que fazer para resolvê-los. 
 
-Se houver um vírus ou outra ameaça à segurança em seu dispositivo registrado e você tentar acessar o email ou os arquivos da empresa, uma mensagem do Zimperium zIPS o alertará para realizar uma ação.
+## <a name="troubleshoot-virus-or-security-threat"></a>Solucionar problemas de ameaça de vírus ou de segurança  
+Se uma ameaça de segurança ou de vírus for detectada, o Zimperium zIPS aplicará restrições de acordo com as políticas de acesso da sua organização. As políticas de acesso da empresa podem impedir o acesso ao email, aos aplicativos e à rede de trabalho por meio do dispositivo.  
 
-Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), onde você poderá seguir as instruções sobre como corrigir o problema.
+O Zimperium zIPS solicitará que você execute uma ação para recuperar o acesso perdido. Selecione a ameaça e siga as instruções dentro do aplicativo para resolvê-la.  
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Exemplo de um aplicativo visto pelo Zimperium zIPS como uma ameaça
+## <a name="resolve-an-app-threat"></a>Resolver uma ameaça de aplicativo
 
-Se você tiver instalado um aplicativo que o Zimperium zIPS considera uma ameaça, o aplicativo o alertará sobre um aplicativo não confiável instalado em seu dispositivo.
+Ao instalar um aplicativo identificado como uma ameaça ao dispositivo, você receberá uma notificação no aplicativo Zimperium zIPS. Enquanto o aplicativo afetado estiver no dispositivo, você não poderá acessar os recursos da empresa.  
 
-Quando isso acontecer, desinstale o aplicativo para acessar o email e dados da empresa imediatamente. Se não desinstalar o aplicativo, você perderá o acesso ao email e aos dados até que desinstale o aplicativo.
+Para resolver, selecione o aplicativo na lista de ameaças no Zimperium zIPS. Em seguida, siga as instruções na tela para remover e desinstalar o aplicativo.  
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 

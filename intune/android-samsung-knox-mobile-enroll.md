@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321179"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313057"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung
 
@@ -88,7 +88,7 @@ Para dispositivos inscritos no Intune usando KME, você pode configurar como um 
 
 > [!NOTE]
 >
->Quando a associação do usuário é definida, somente o usuário associado pode registrar o dispositivo usando KME. Isso é verdadeiro mesmo após uma redefinição de fábrica do dispositivo. Quando nenhuma associação de usuário for definida no Portal do Knox, qualquer usuário com uma licença válida do Intune poderá registrar o dispositivo usando KME.
+>Quando a associação do usuário é definida, somente o usuário associado pode registrar o dispositivo usando KME. Isso ocorre mesmo após uma redefinição de apagamento do dispositivo. Quando nenhuma associação de usuário for definida no Portal do Knox, qualquer usuário com uma licença válida do Intune poderá registrar o dispositivo usando KME.
 >
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos

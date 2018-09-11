@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321485"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329811"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
 
@@ -81,7 +81,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 - Emparelhar com Apple Watch 
 
 > [!NOTE]
-> A Apple confirmou que certas configurações mudarão para somente supervisionado em 2018. É recomendável levar isso em consideração ao usar estas configurações em vez de esperar a Apple migrá-las para somente supervisionado:
+> A Apple confirmou que certas configurações mudarão para “somente supervisionadas” em 2019. É recomendável levar isso em consideração ao usar estas configurações em vez de esperar a Apple migrá-las para somente supervisionado:
 > - Instalação do aplicativo pelos usuários finais
 > - Remoção de aplicativo
 > - FaceTime
@@ -91,6 +91,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 > - Documentos e dados do iCloud
 > - Jogo para vários participantes
 > - Adicionar amigos no Game Center
+> - Siri
 
 ## <a name="password"></a>Senha
 -   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.

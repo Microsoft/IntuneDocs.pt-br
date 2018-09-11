@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 3596d539319a5a91a1647555a89004683874aa06
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268865"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329454"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
@@ -33,7 +33,7 @@ Use as políticas de configuração de aplicativo no Microsoft Intune para forne
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Selecione a carga de trabalho de **Aplicativos móveis**.
+3. Selecione a carga de trabalho **Aplicativos clientes**.
 4. Escolha **Políticas de configuração do aplicativo** no grupo **Gerenciar** e escolha **Adicionar**.
 5. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil que será exibido no portal do Azure.
@@ -88,7 +88,7 @@ Você também pode pré-configurar a permissão para que os aplicativos acessem 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Escolha **Aplicativos móveis**.
+3. Escolha **Aplicativos clientes**.
 3. Em **Gerenciar**, escolha **Políticas de configuração do aplicativo** e, em seguida, clique em **Adicionar**.
 4. Defina os seguintes detalhes:
     - **Nome**. O nome do perfil que será exibido no Portal do Azure.

@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751710"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312673"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrar dispositivos iOS com o Apple Configurador
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Intune dá suporte ao registro de dispositivos iOS por meio do [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) em execução em um computador Mac. O registro com o Apple Configurator exige que você conecte por USB cada dispositivo iOS a um computador Mac para configurar o registro corporativo. Você pode registrar dispositivos no Intune com o Apple Configurator de duas maneiras:
-- **Registro pelo Assistente de Configuração** – redefine o dispositivo para os padrões de fábrica e o prepara para o registro pelo Assistente de Configuração.
-- **Registro direto** – não redefine o dispositivo para as configurações de fábrica e registra o dispositivo por meio das configurações do iOS. Apenas dispositivos **sem afinidade de usuário** têm suporte nesse método.
+- **Registro pelo Assistente de Configuração** – apaga o dispositivo e prepara-o para o registro durante a execução do Assistente de Configuração.
+- **Registro direto** – não apaga o dispositivo e registra-o por meio das configurações do iOS. Apenas dispositivos **sem afinidade de usuário** têm suporte nesse método.
 
 Os métodos de registro do Apple Configurator não podem ser utilizados com o [gerenciados de registros de dispositivos](device-enrollment-manager-enroll.md).
 
@@ -134,7 +134,7 @@ Os dispositivos agora estão prontos para registro corporativo. Desligue os disp
 Depois de receberem seus dispositivos, eles devem concluir o Assistente de Configuração. Os dispositivos configurados com a afinidade de usuário podem instalar e executar o aplicativo Portal da Empresa para baixar aplicativos e gerenciar dispositivos.
 
 ## <a name="direct-enrollment"></a>Registro direto
-Ao registrar dispositivos iOS diretamente com o Apple Configurator, é possível registrar um dispositivo sem adquirir o número de série do dispositivo. Você também pode nomear o dispositivo para fins de identificação antes de o Intune capturar o nome do dispositivo durante o registro. Não há suporte para o aplicativo de Portal da Empresa para dispositivos registrados diretamente. Esse método não faz uma redefinição de fábrica do dispositivo.
+Ao registrar dispositivos iOS diretamente com o Apple Configurator, é possível registrar um dispositivo sem adquirir o número de série do dispositivo. Você também pode nomear o dispositivo para fins de identificação antes de o Intune capturar o nome do dispositivo durante o registro. Não há suporte para o aplicativo de Portal da Empresa para dispositivos registrados diretamente. Esse método não apaga o dispositivo.
 
 Aplicativos que exigem afiliação do usuário (inclusive o aplicativo do Portal da Empresa usado para instalar aplicativos LOB) não podem ser instalados.
 

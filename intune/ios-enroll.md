@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146689"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313285"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrar dispositivos iOS no Intune
 
@@ -55,8 +55,8 @@ O Apple School Manager é um programa de compra e de registro de dispositivo par
 
 ## <a name="apple-configurator"></a>Apple Configurator
 Você pode registrar dispositivos iOS com o Apple Configurator em execução em um computador Mac. Para preparar os dispositivos, conecte-os via USB e instale um perfil de registro. Você pode registrar dispositivos com o Apple Configurator de duas maneiras:
-- Registro do Assistente de Configuração – restaura o dispositivo para as configurações de fábrica, prepara-o para executar o Assistente de Configuração e instala as políticas da empresa para o novo usuário do dispositivo.
-- Registro direto – não redefine o dispositivo para as configurações de fábrica e o registra com uma política predefinida. Esse método é destinado a dispositivos sem afinidade de usuário.
+- Registro do Assistente de Configuração – apaga o dispositivo, prepara-o para executar o Assistente de Configuração e instala as políticas da empresa para o novo usuário do dispositivo.
+- Registro direto – não apaga o dispositivo e registra-o com uma política predefinida. Esse método é destinado a dispositivos sem afinidade de usuário.
 
 Saiba mais sobre o [registro do Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md).
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321213"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313846"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrição de dispositivo para configurações do Windows 10 (e mais recentes) no Intune
 Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.
@@ -37,7 +37,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Armazenamento removível** – Especifica se é possível usar dispositivos de armazenamento externo, como cartões SD, no dispositivo.
 - **Geolocalização** – Especifica se o dispositivo pode usar informações de serviços de localização.
 - **Compartilhamento da Internet** – Permite o uso do compartilhamento de conexão com a Internet no dispositivo.
-- **Redefinição do telefone** – Controla se o usuário pode realizar uma redefinição de fábrica em seu dispositivo.
+- **Redefinição do telefone** – controla se o usuário pode realizar um apagamento no dispositivo.
 - **Conexão USB (somente dispositivos móveis)** – controla se os dispositivos podem acessar dispositivos de armazenamento externo por meio de uma conexão USB.
 - **Modo AntiTheft (somente dispositivos móveis)** – configure se o modo AntiTheft do Windows está habilitado.
 - **Cortana** – Habilitar ou desabilitar a assistente de voz Cortana.
@@ -50,6 +50,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
 - **Espaço de trabalho do Ink** – impedir que usuários acessem o espaço de trabalho do Ink. Quando essa configuração não está configurada, o espaço de trabalho do Ink fica habilitado (o recurso é ativado) e o usuário tem permissão para usá-lo sobre a tela de bloqueio.
 - **Reimplantação automática** – permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
+- **Exigir que os usuários se conectem à rede durante a instalação de dispositivo (somente Windows Insider)** – escolha **Exigir** para exigir que o dispositivo se conecte a uma rede antes de continuar, após da página Rede, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um Windows Insider build 1809 ou posterior é necessário para usar essa configuração.
 
 ## <a name="password"></a>Senha
 -   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
@@ -152,28 +153,28 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 ## <a name="edge-browser"></a>Navegador Microsoft Edge
 
 -   **Navegador Microsoft Edge (somente dispositivo móvel)** – Permitir o uso do navegador da Web Edge no dispositivo.
--   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Microsoft Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Microsoft Edge e os serviços da Microsoft.
+-   **Barra de endereço suspensa (somente no desktop)** – Use esta opção para impedir que o Edge exiba uma lista de sugestões em uma lista suspensa enquanto você digita. Isso ajuda a minimizar o uso de largura de banda da rede entre o Microsoft Edge e os serviços da Microsoft.
 -   **Sincronizar favoritos entre navegadores da Microsoft (somente no desktop)** – Permite que o Windows sincronize os favoritos entre o Internet Explorer e o Microsoft Edge.
--   **Enviar cabeçalhos Do Not Track** – Configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
+-   **Enviar cabeçalhos Do Not Track** – Configura o navegador Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 -   **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
--   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge.
+-   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no navegador Edge.
 -   **Pop-ups** - bloqueia janelas pop-up no navegador (aplica-se a somente a desktops com Windows 10).
 -   **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
 -   **Enviar tráfego da intranet para o Internet Explorer** – permite aos usuários abrir sites de intranet no Internet Explorer (somente para desktops com Windows 10).
 -   **Preenchimento automático** – permite que os usuários alterem completamente as configurações de preenchimento automático no navegador (somente para desktop com Windows 10).
 -   **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Microsoft Edge.
 -   **Local da lista de sites do modo Empresarial** – Especifica onde encontrar a lista de sites que serão abertos no modo Empresarial. Os usuários não podem editar essa lista.<br>(Somente Windows 10 Desktop).
--   **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Microsoft Edge.
--   **Extensões** - permite ao usuário final instalar extensões do Microsoft Edge no dispositivo.
+-   **Ferramentas de desenvolvedor** - impede que o usuário final abra as ferramentas de desenvolvedor do Edge.
+-   **Extensões** - permite ao usuário final instalar extensões do Edge no dispositivo.
 -   **Navegação inPrivate** - impede que o usuário final abra sessões de navegação InPrivate.
--   **Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Microsoft Edge for executado.
+-   **Mostrar página da primeira execução** – Impede que a página de introdução seja exibida na primeira vez que o Edge for executado.
     -   **URL da primeira execução** – Especifica a URL da página que é exibida na primeira vez que um usuário executa o Microsoft Edge (somente Windows 10 Mobile).
 -   **Páginas iniciais** – Adicione uma lista de sites que você deseja usar como as páginas iniciais no navegador Microsoft Edge (somente desktop).
 -   **Alterações na página inicial** – Permite aos usuários alterar as páginas iniciais exibidas quando o Microsoft Edge é aberto. Use a configuração Página inicial para criar a página ou uma lista de páginas que é aberta quando o Microsoft Edge é iniciado.
 -   **Bloquear acesso aos about:flags** – impeça que o usuário final acesse a página about:flags no Microsoft Edge que contém configurações experimentais e de desenvolvedor.
 -   **Endereço IP do localhost WebRtc** - bloqueia a exibição do endereço IP do localhost de usuários ao fazer chamadas telefônicas usando a protocolo RTC da web.
 -   **Mecanismo de pesquisa padrão** - especifica o mecanismo de pesquisa padrão a ser usado. Os usuários finais podem alterar esse valor a qualquer momento.
--   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Microsoft Edge.
+-   **Limpar dados de navegação ao sair** – Limpa o histórico e os dados de navegação quando o usuário sai do Edge.
 -   **Coleta de dados de Blocos Dinâmico** – Impede que o Windows colete informações de Blocos Dinâmicos quando o usuários fixa um site no menu Iniciar do Microsoft Edge.
 -  **Lista de favoritos** – define o caminho para o arquivo de favoritos. Por exemplo, http://contoso.com/favorites.html.
 -  **Restringir alterações aos Favoritos** – defina como **Bloquear** para impedir que os usuários adicionem, importem, classifiquem ou editem a lista de Favoritos. 

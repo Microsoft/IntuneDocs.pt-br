@@ -1,11 +1,11 @@
 ---
 title: Resolução de ameaças encontradas pelo SandBlast Mobile Protect no iOS | Microsoft Docs
-description: Saiba como corrigir uma ameaça encontrada pelo Mobile Protect no iOS.
+description: Saiba como corrigir uma ameaça encontrada pelo SandBlast Mobile Protect para iOS.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755960"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148024"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>Você precisa resolver uma ameaça encontrada pelo SandBlast Mobile Protect
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Resolver uma ameaça encontrada pelo SandBlast Mobile Protect
 
-O SandBlast Mobile Protect encontrou uma ameaça em potencial em seu dispositivo e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email da empresa ou escola. A mensagem que você verá depende do problema que o SandBlast Mobile Protect encontrou no seu dispositivo.
+O SandBlast Mobile Protect é um serviço Defensor contra Ameaças Móveis que identifica e avalia possíveis ameaças em seus dispositivos iOS. Ele relata ameaças que, em seguida, serão exibidas no aplicativo Portal da Empresa. As ameaças aparecem no aplicativo como problemas de falta de conformidade não resolvidos. Enquanto essas ameaças estiverem presentes, talvez você não possa:   
 
-Para corrigir o problema, abra o aplicativo SandBlast Mobile Protect e siga as instruções mostradas nele.
+* Conectar-se ao email corporativo
+* Conectar-se ao Wi-Fi corporativo
+* Conectar-se ao SharePoint Online
+* Sincronizar arquivos corporativos com o OneDrive
+* Acessar aplicativos da empresa
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>O que você pode ver se o seu dispositivo registrado for impedido de acessar email ou arquivos
+Este artigo descreve como reconhecer alertas de ameaças do Sandblast Mobile Protect e o que fazer para resolvê-los.  
 
-Se houver um vírus ou outra ameaça de segurança em seu dispositivo registrado e você tentar acessar o email ou os arquivos da empresa, uma mensagem do SandBlast Mobile Protect o alertará para realizar uma ação.
+## <a name="troubleshoot-virus-or-security-threat"></a>Solucionar problemas de ameaça de vírus ou de segurança  
+Se uma ameaça de segurança ou de vírus for detectada, o aplicativo SandBlast Mobile Protect agirá de acordo com as políticas de acesso da sua organização. As políticas de acesso podem impedir o acesso ao email, aos aplicativos e à rede de trabalho.  
 
-Toque no link do **portal de gerenciamento do dispositivo** para acessar o [site do Portal da Empresa](http://portal.manage.microsoft.com), onde você poderá seguir as instruções sobre como corrigir o problema.
+O SandBlast Mobile Protect solicitará que você execute uma ação para recuperar o acesso perdido. Selecione a ameaça e siga as instruções dentro do aplicativo para resolvê-la.  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Exemplo de um aplicativo que o SandBlast Mobile Protect vê como uma ameaça
+## <a name="troubleshoot-an-app-threat"></a>Solucionar problemas de uma ameaça de aplicativo  
 
-Se você tiver instalado um aplicativo que o SandBlast Mobile Protect considera uma ameaça, o aplicativo alertará sobre um aplicativo não confiável instalado em seu dispositivo.
+Ao instalar um aplicativo identificado como uma ameaça ao dispositivo, você receberá uma notificação no aplicativo SandBlast Mobile Protect. Enquanto o aplicativo afetado estiver no dispositivo, você não poderá acessar os recursos da empresa.  
 
-Quando isso acontecer, desinstale o aplicativo para acessar o email e dados da empresa imediatamente. Se não desinstalar o aplicativo, você perderá o acesso ao email e aos dados até que desinstale o aplicativo.
+Para resolver, selecione o aplicativo na lista de ameaças no SandBlast Mobile Protect. Em seguida, siga as instruções para remover e desinstalar o aplicativo.  
 
-Ainda precisa de ajuda? Entre em contato com o administrador de TI. Para obter as informações de contato, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter informações de contato, confira o [site Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)

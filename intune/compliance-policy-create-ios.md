@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442637"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313078"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos para dispositivos iOS no Intune
 
@@ -106,6 +106,11 @@ Para obter detalhes sobre o perfil de email, consulte [Configurar o acesso ao em
 - **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
 - **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
 - **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
+
+### <a name="restricted-applications"></a>Aplicativos restritos 
+Você pode restringir os aplicativos adicionando suas IDs do lote à política. Em seguida, se o aplicativo estiver instalado no dispositivo, o dispositivo será marcado como fora de conformidade. 
+- **Nome do aplicativo**: insira um nome amigável para ajudá-lo a identificar a ID do lote. 
+- **ID do lote de aplicativo**: insira o identificador do lote exclusivo atribuído pelo provedor do aplicativo. Para localizar a ID do lote, confira [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (Como localizar a ID do lote para um aplicativo iOS).  
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 

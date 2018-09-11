@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268831"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313489"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configurar políticas de atualização do iOS no Intune
 
@@ -32,7 +32,7 @@ Esse recurso dá suporte aos dispositivos que executam o iOS 10.3 e posterior.
 4. Insira um nome e uma descrição para a política.
 5. Selecione **Configurações**. 
 
-    Insira os detalhes de quando os dispositivos iOS não são forçados a instalar as últimas atualizações. Essas configurações criam um período de tempo restrito. É possível configurar os dias da semana, o fuso horário, a hora de início e a hora de término.
+    Insira os detalhes de quando os dispositivos iOS não são forçados a instalar as últimas atualizações. Essas configurações criam um período de tempo restrito. Você pode configurar os **Dias** da semana, o **Fuso horário**, a **Hora de início**, a **Hora de término** e se deseja **Atrasar a visibilidade do software de atualização (dias)** para inserir os usuários. Você pode selecionar um intervalo de atraso das atualizações de software de 1 a 90 dias. Para recusar a definição de um atraso de atualização de software, insira 0. Essas configurações de atualização serão aplicadas somente a dispositivos iOS supervisionados.
 
 6. Selecione **OK** para salvar suas alterações. Selecione **Criar** para criar a política.
 

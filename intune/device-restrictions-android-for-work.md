@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905930"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329762"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Configurações de restrição de dispositivo de trabalho no Intune
 
@@ -42,7 +42,7 @@ Este artigo lista as configurações de restrições do dispositivo do Microsoft
   - **Concessão automática**
   - **Negação automática**
 
-    O estado de concessão das permissões pode ser definido de forma mais detalhada para aplicativos específicos usando uma política de Configuração de Aplicativo para um aplicativo individual (em **Aplicativos Móveis** > **Políticas de configuração de aplicativo**).
+    O estado de concessão de permissões pode ser definido com mais detalhes para aplicativos específicos usando uma política de Configuração de Aplicativo para um aplicativo individual (em **Aplicativos Clientes** > **Políticas de configuração de aplicativo**).
 
 - **Adicionar e remover contas**
 

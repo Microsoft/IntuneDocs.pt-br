@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117915"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313171"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -34,11 +34,14 @@ Este artigo mostra como exibir todos os dispositivos e suas propriedades no port
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** > **Todos os dispositivos** > selecione um de seus dispositivos listados para abrir os detalhes:
 
-   - **Visão geral** mostra o nome do dispositivo e lista algumas das principais propriedades do dispositivo, incluindo se ele é um dispositivo BYOD (traga seu próprio dispositivo), quando foi feito seu check-in e muito mais. Selecione **Mais** para:
-     - Remover os dados da empresa
-     - Excluir o dispositivo
-     - Bloquear o dispositivo remotamente
-     - Apagar
+   - **Visão geral** mostra o nome do dispositivo e lista algumas das principais propriedades do dispositivo, incluindo se ele é um dispositivo BYOD (traga seu próprio dispositivo), quando foi feito seu check-in e muito mais. Você pode executar as seguintes ações no dispositivo:
+      - [Desativar](devices-wipe.md#retire)
+        - [Apagamento](devices-wipe.md#wipe)
+        - [Bloqueio remoto](device-remote-lock.md)
+        - [Sincronizar dispositivo](device-sync.md)
+        - [Redefinir senha](device-passcode-reset.md)
+        - [Reiniciar](device-restart.md) (somente Windows)
+        - [Novo Início](device-fresh-start.md) (somente Windows)
      - Iniciar uma sessão de assistência remota
    - Use **Propriedades** para atribuir uma [categoria de dispositivo que você criar](device-group-mapping.md) e altere a propriedade do dispositivo para um dispositivo pessoal ou um dispositivo corporativo.
    - **Hardware** inclui muitos detalhes sobre o dispositivo, incluindo a ID do dispositivo, o sistema operacional e a versão, o espaço de armazenamento, o modelo e o fabricante, as configurações de acesso condicional e mais detalhes.
@@ -64,7 +67,7 @@ O Intune coleta uma lista de aplicativos que estão somente em dispositivos corp
 |Detalhes|Descrição|  
 |--------------|----------------------|  
 |Nome|O nome do dispositivo.|
-|Nome de gerenciamento|O nome do dispositivo usado somente no console. A alteração deste nome não muda o nome no dispositivo.|
+|Nome de gerenciamento|O nome do dispositivo usado somente no console. Alterar esse nome não mudará o nome do dispositivo.|
 |UDID|A ID de Dispositivo Exclusiva do dispositivo.|
 |ID de Dispositivo do Intune|Um GUID (Identificador global exclusivo) que identifica com exclusividade o dispositivo.|
 |Número de série|O número de série do dispositivo atribuído pelo fabricante.|

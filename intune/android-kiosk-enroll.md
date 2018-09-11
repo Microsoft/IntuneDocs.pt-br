@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903136"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313454"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro de dispositivos de quiosque Android Enterprise
 
@@ -112,7 +112,7 @@ Para dispositivos Android 5.1 e posteriores compatíveis com NFC, você pode pro
 
 Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de Código QR ao usar o método de registro **aft#setup**.
 
-1. Ligue o dispositivo de redefinição de fábrica.
+1. Ligue o dispositivo apagado.
 2. Na tela **Boas-vindas**, selecione seu idioma.
 3. Conecte-se ao **Wi-Fi** e, em seguida, escolha **AVANÇAR**.
 4. Aceite os termos e condições do Google e, em seguida, escolha **AVANÇAR**.
@@ -129,7 +129,7 @@ Nos dispositivos Android 7 e posteriores, você pode examinar o código QR do pe
 > [!Note]
 > O zoom do navegador pode fazer com que os dispositivos não consigam digitalizar o código QR. Aumentar o zoom do navegador resolve o problema.
 
-1. Para iniciar uma leitura de QR no dispositivo Android, toque várias vezes na primeira tela que é exibida após uma redefinição de fábrica.
+1. Para iniciar uma leitura de QR no dispositivo Android, toque várias vezes na primeira tela que é exibida após um apagamento.
 2. Para dispositivos Android 7 e 8, será solicitado que você instale um leitor de QR. Os dispositivos Android 9 e versões posteriores já têm um leitor de QR instalado.
 3. Use o leitor de QR para examinar o código QR do perfil de registro e, em seguida, siga as instruções na tela para registrar.
 

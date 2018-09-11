@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444873"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313231"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -85,10 +85,10 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Solução de problemas de registro em massa do Windows
 
 ### <a name="provisioning-issues"></a>Problemas de provisionamento
-O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de provisionamento podem exigir a redefinição de fábrica do dispositivo ou a recuperação do dispositivo a partir de uma imagem de inicialização. Estes exemplos descrevem alguns dos motivos para falhas de provisionamento:
+O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de provisionamento podem exigir um apagamento do dispositivo ou a recuperação do dispositivo usando uma imagem de inicialização. Estes exemplos descrevem alguns dos motivos para falhas de provisionamento:
 
 - Um pacote de provisionamento que tenta ingressar em um domínio do Active Directory ou locatário do Azure Active Directory que não cria uma conta local poderia tornar o dispositivo inacessível se o processo de ingresso no domínio falhar devido à falta de conectividade de rede.
-- Scripts executados pelo pacote de provisionamento são executados no contexto do sistema. Os scripts são capazes de fazer alterações aleatórias no sistema de arquivos e nas configurações do dispositivo. Um script mal-intencionado ou incorreto pode colocar o dispositivo em um estado que só pode ser recuperado refazendo a imagem ou redefinindo o dispositivo para as configurações de fábrica.
+- Scripts executados pelo pacote de provisionamento são executados no contexto do sistema. Os scripts são capazes de fazer alterações aleatórias no sistema de arquivos e nas configurações do dispositivo. Um script mal-intencionado ou incorreto pode colocar o dispositivo em um estado que só pode ser recuperado refazendo a imagem ou apagando o dispositivo.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com o Portal da Empresa e registro em massa
 Se um usuário tenta registrar um dispositivo previamente registrado em massa usando o Portal da Empresa, eles receberão um aviso de que seu dispositivo precisa de outras ações, seja instalação ou registro. O dispositivo é registrado, mas o registro não é reconhecido pelo aplicativo de Portal da Empresa ou site.

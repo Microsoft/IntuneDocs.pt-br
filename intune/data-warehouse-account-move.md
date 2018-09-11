@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223655"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330289"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover os dados da conta do Intune Data Warehouse 
 
@@ -45,7 +45,7 @@ Alguns gráficos de tendências no modo de exibição no Portal do Azure serão 
 3. Salve o relatório localmente.
  
 ### <a name="app-protection-reports"></a>Relatórios de proteção do aplicativo  
-1. No Portal do Azure, navegue até **Microsoft Intune** -> **Aplicativos Móveis** -> **Status de proteção do aplicativo**.
+1. No Portal do Azure, navegue até **Microsoft Intune** -> **Aplicativos Clientes** -> **Status de proteção do aplicativo**.
 2. Clique no ícone de download (⤓) para salvar cada relatório.
 
 ### <a name="device-configuration-charts"></a>Gráficos de configuração do dispositivo 

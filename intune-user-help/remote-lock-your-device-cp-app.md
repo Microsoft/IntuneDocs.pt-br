@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676623"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148571"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Bloqueie seu dispositivo do aplicativo do Portal da Empresa para Windows 10
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Bloquear seu dispositivo por meio do aplicativo Portal da Empresa para Windows 10
 
-Bloquear remotamente um dispositivo perdido ou roubado do aplicativo do Portal da Empresa para Windows 10. Se for compatível com seu dispositivo, o aplicativo do Portal da Empresa bloqueará a tela do dispositivo, independentemente de onde ele estiver. Uma senha será necessária para desbloqueá-lo.
+Bloquear remotamente um dispositivo perdido ou roubado do aplicativo do Portal da Empresa para Windows 10. Se houver suporte no dispositivo, essa configuração bloqueará a tela do dispositivo, independentemente de onde ele estiver. Alguém precisa inserir a senha correta para que o dispositivo possa ser desbloqueado e usado novamente.
 
 O bloqueio remoto é compatível com dispositivos que executam:
 
@@ -43,4 +43,4 @@ O bloqueio remoto é compatível com dispositivos que executam:
    ![Captura de tela do aplicativo do Portal da Empresa, página de detalhes do dispositivo, solicitação de confirmação do bloqueio remoto.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. Ao encontrar seu dispositivo, insira sua senha para desbloqueá-lo.  
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

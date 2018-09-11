@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329919"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312791"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
@@ -112,10 +112,12 @@ O PIN (Número de Identificação Pessoal) é uma senha usada para verificar se 
 
     - **O PIN é compartilhado entre aplicativos do mesmo fornecedor para melhorar a usabilidade:** no iOS, um PIN de aplicativo é compartilhado entre todos os aplicativos **do mesmo fornecedor**. No Android, o PIN de um aplicativo é compartilhado com todos os aplicativos.
     - **O comportamento de 'Verificar novamente os requisitos de acesso após (minutos)' após uma reinicialização do dispositivo:** um 'temporizador do PIN' rastreia o número de minutos de inatividade que determina quando mostrar o PIN do aplicativo do Intune a seguir. No iOS, o temporizador do PIN não é afetado pela reinicialização do dispositivo. Portanto, a reinicialização do dispositivo não tem nenhum efeito sobre o número de minutos que o usuário esteve inativo em um aplicativo iOS com a política de PIN do Intune. No Android, o temporizador do PIN é redefinido na reinicialização do dispositivo. Portanto, os aplicativos Android com a política de PIN do Intune provavelmente solicitarão um PIN do aplicativo, seja qual for o valor da configuração 'Verificar novamente os requisitos de acesso após (minutos)' **após uma reinicialização do dispositivo**.  
-    - **A natureza constante do temporizador com o PIN:** uma vez que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o segundo plano (foco de entrada principal) no dispositivo, o temporizador do PIN é redefinido para esse PIN. Qualquer aplicativo (aplicativo B) que compartilhe esse PIN não solicitará ao usuário para inserir o PIN porque o temporizador foi redefinido. A solicitação será exibida novamente quando o valor "Verificar novamente os requisitos de acesso após (minutos)" for atendido novamente. 
+    - **A natureza constante do temporizador com o PIN:** uma vez que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o segundo plano (foco de entrada principal) no dispositivo, o temporizador do PIN é redefinido para esse PIN. Qualquer aplicativo (aplicativo B) que compartilhe esse PIN não solicitará ao usuário para inserir o PIN porque o temporizador foi redefinido. A solicitação será exibida novamente quando o valor "Verificar novamente os requisitos de acesso após (minutos)" for atendido novamente.
+
+Para dispositivos iOS, mesmo se o PIN for compartilhado entre aplicativos de diferentes fornecedores, a solicitação será exibida novamente quando o valor **Verificar novamente os requisitos de acesso após (minutos)** for atendido novamente para o aplicativo que não é o foco principal da entrada. Por exemplo, um usuário tem o aplicativo _A_ do fornecedor _X_ e o aplicativo _B_ do fornecedor _Y_, e esses dois aplicativos compartilham o mesmo PIN. O usuário está concentrado no aplicativo _A_ (primeiro plano), e o aplicativo _B_ está minimizado. Depois que o valor **Verificar novamente os requisitos de acesso após (minutos)** for atendido e o usuário alternar para o aplicativo _B_, o PIN será necessário.
 
       >[!NOTE] 
-      > Para verificar os requisitos de acesso do usuário com mais frequência (ou seja, solicitação do PIN), especialmente para um aplicativo usado com frequência, é recomendável reduzir o valor da configuração "Verificar novamente os requisitos de acesso após (minutos)". 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Como o PIN do Intune funciona com os PINs de aplicativo internos para o Outlook e o OneDrive?**<br></br>
 O PIN do Intune funciona de acordo com uma inatividade baseada em temporizador [também conhecida como o valor de 'Verificar novamente os requisitos de acesso após (minutos)']. Portanto, os prompts do PIN do Intune são mostrados independentemente dos prompts do PIN do aplicativo interno do Outlook e do OneDrive, que geralmente são vinculados à inicialização do aplicativo por padrão. Se o usuário recebe ambos os prompts de PIN ao mesmo tempo, o comportamento esperado deve ser a precedência do PIN do Intune. 
@@ -137,13 +139,13 @@ Os administradores de TI podem implantar uma política de proteção do aplicati
 - **O que é criptografado?**<br></br> Somente os dados marcados como “corporativos” são criptografados, de acordo com a política de proteção do aplicativo do administrador de TI. Os dados são considerados “corporativos” quando tem como origem um local da empresa. Para os aplicativos do Office, o Intune considera o seguinte como locais da empresa: email (Exchange) ou armazenamento em nuvem (aplicativo OneDrive com uma conta do OneDrive para Empresas). Para aplicativos de linha de negócios gerenciados pela Ferramenta de Disposição do Aplicativo do Intune, todos os dados do aplicativo são considerados "corporativos".
 
 **Como o Intune apaga os dados remotamente?**<br></br>
-O Intune pode apagar os dados do aplicativo de três maneiras diferentes: apagamento completo do dispositivo, apagamento seletivo para MDM e apagamento seletivo de MAM. Para saber mais sobre o apagamento remoto para o MDM, confira [Remover dispositivos usando a redefinição de fábrica ou remover dados da empresa ](devices-wipe.md#factory-reset). Para saber mais sobre o apagamento seletivo usando o MAM, confira [Remover dados da empresa](devices-wipe.md#remove-company-data) e [Como apagar apenas dados corporativos dos aplicativos](apps-selective-wipe.md).
+O Intune pode apagar os dados do aplicativo de três maneiras diferentes: apagamento completo do dispositivo, apagamento seletivo para MDM e apagamento seletivo de MAM. Para obter mais informações sobre o apagamento remoto para MDM, confira [Remover dispositivos usando o apagamento ou a desativação](devices-wipe.md). Para obter mais informações sobre o apagamento seletivo usando MAM, confira [A ação Desativar](devices-wipe.md#retire) e [Como apagar apenas dados corporativos dos aplicativos](apps-selective-wipe.md).
 
-- **O que é redefinição de fábrica?**<br></br> A [redefinição de fábrica](devices-wipe.md) remove todos os dados e configurações do usuário **do dispositivo** restaurando o dispositivo para as configurações padrão de fábrica. O dispositivo é removido do Intune.
+- **O que é o apagamento?**<br></br> O [apagamento](devices-wipe.md) remove todos os dados e as configurações do usuário do **dispositivo** restaurando-o para as configurações padrão de fábrica. O dispositivo é removido do Intune.
   >[!NOTE]
-  > A redefinição de fábrica pode ser realizada apenas em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel).
+  > O apagamento pode ser realizado apenas em dispositivos registrados no MDM (gerenciamento de dispositivo móvel) do Intune.
 
-- **O que é o apagamento seletivo para MDM?**<br></br> Confira [Remover dispositivos - Remover dados da empresa](devices-wipe.md#remove-company-data) para ler sobre a remoção de dados da empresa.
+- **O que é o apagamento seletivo para MDM?**<br></br> Confira [Remover dispositivos – desativar](devices-wipe.md#retire) para saber mais sobre a remoção de dados da empresa.
 
 - **O que é o apagamento seletivo para MAM?**<br></br> O apagamento seletivo para MAM simplesmente remove dados de aplicativo da empresa de um aplicativo. A solicitação é iniciada usando o portal do Azure no Intune. Para saber como iniciar uma solicitação de apagamento, confira [Como remover apenas dados corporativos dos aplicativos](apps-selective-wipe.md).
 

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321590"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329640"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Configurações de Wi-Fi para dispositivos Windows 10 e posterior no Intune
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Configurações de Wi-Fi para dispositivos Windows 10 e posterior no Intune
 
 As configurações de Wi-Fi são usadas em um perfil de configuração que se aplica a dispositivos que executam o Windows 10 e posterior. As opções são:
 
@@ -54,10 +55,10 @@ As configurações de Wi-Fi são usadas em um perfil de configuração que se ap
 
 ## <a name="settings-for-enterprise-profiles-only"></a>Configurações apenas para perfis empresariais
 
-- **SSO (logon único)**: permite que você configure o SSO (logon único), em que as credenciais são compartilhadas para a conexão do computador e da rede Wi-Fi. As opções são:
+- **SSO (logon único)**: permite que você configure o SSO (logon único), no qual as credenciais são compartilhadas para entrar no computador e na rede Wi-Fi. As opções são:
   - **Desabilitar**: desabilita o comportamento do SSO. O usuário precisa autenticar à rede separadamente.
-  - **Habilitar antes de o usuário se autenticar no dispositivo**: use o SSO para se autenticar à rede logo antes do processo de entrada do usuário.
-  - **Habilitar depois que o usuário entrar no dispositivo**: use o SSO para se autenticar à rede imediatamente após a conclusão do processo de entrada do usuário.
+  - **Habilitar antes que o usuário entre no dispositivo**: use o SSO para autenticar na rede antes do processo de entrada do usuário.
+  - **Habilitar depois que o usuário entrar no dispositivo**: use o SSO para autenticar na rede imediatamente após a conclusão do processo de entrada do usuário.
   - **Tempo máximo de autenticação antes do tempo limite**: insira o número máximo de segundos a aguardar antes da autenticação com a rede, de 1 a 120 segundos.
   - **Permitir que o Windows solicite ao usuário credenciais de autenticação adicionais**: a escolha da opção **Sim** permitirá que o sistema Windows solicite ao usuário credenciais adicionais se for exigido pelo método de autenticação. Escolha **Não** para ocultar esses prompts.
 
@@ -77,25 +78,36 @@ As configurações de Wi-Fi são usadas em um perfil de configuração que se ap
   - **EAP-TTLS**
   - **PEAP Protegido** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>Mais opções ao escolher o tipo de EAP
+    **Configurações adicionais de EAP-TLS, EAP-TTLS e PEAP**:
+    
+    > [!NOTE]
+    > Atualmente, apenas há suporte para perfis de certificado SCEP com o uso de um tipo de EAP. Não há suporte para perfis de certificado PKCS. Sempre que um usuário precisar inserir um certificado, lembre-se de escolher um certificado SCEP.
 
-> [!NOTE]
-> Atualmente, apenas há suporte para perfis de certificado SCEP com o uso de um tipo de EAP. Não há suporte para perfis de certificado PKCS. Sempre que um usuário precisar inserir um certificado, lembre-se de escolher um certificado SCEP.
+      - **Confiança do servidor**  
 
-#### <a name="server-trust"></a>Confiança do Servidor
+        **Nomes do servidor de certificado**: use com os tipos de EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Insira um ou mais nomes comuns usados nos certificados emitidos pela AC (autoridade de certificação) confiável. Se você inserir essas informações, poderá ignorar a caixa de diálogo de confiança dinâmica mostrada em dispositivos de usuário quando eles se conectam à rede Wi-Fi.  
 
-|Nome da configuração|Mais informações|Usar quando|
-|--------------|-------------|----------|
-|**Nomes de servidor de certificados**|Insira um ou mais nomes comuns usados nos certificados emitidos pela AC (autoridade de certificação) confiável. Se você inserir essas informações, poderá ignorar a caixa de diálogo de confiança dinâmica mostrada em dispositivos de usuário quando eles se conectam à rede Wi-Fi.|O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
-|**Certificado raiz para validação do servidor**|Escolha o perfil de certificado raiz confiável usado para autenticar a conexão. |O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
-|**Privacidade de identidade (identidade externa)**|Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.|O tipo de EAP é **PEAP**|
+        **Certificado raiz para validação do servidor**: use com os tipos de EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Escolha o perfil de certificado raiz confiável usado para autenticar a conexão.  
 
-#### <a name="client-authentication"></a>Autenticação do Cliente
+        **Privacidade de identidade (identidade externa)**: use com o tipo de EAP **PEAP**. Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.  
 
-| Nome da configuração | Mais informações | Usar quando |
-|---|---|---|
-| **Certificado de cliente para autenticação de cliente (Certificado de identidade)** |  Escolha o perfil de certificado SCEP usado para autenticar a conexão. | O tipo de EAP é **EAP-TLS** |
-| **Método de autenticação** | Selecione o método de autenticação para a conexão:<br><br>- **Certificados**: selecione o certificado do cliente SCEP que é o certificado de identidade apresentado ao servidor.<br><br>- **Nome de usuário e senha**: insira um **método não EAP (identidade interna)** de autenticação. Suas opções:<br><br>- **Senha não criptografada (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Versão 2 (MS-CHAP v2)**<br><br>- **Privacidade de identidade (identidade externa)**: insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro. | O tipo de EAP é **EAP-TTLS** |
+      - **Autenticação do Cliente**
+
+        **Certificado do cliente para autenticação do cliente (certificado de identidade)**: use com o tipo de EAP **EAP-TLS**. Escolha o perfil de certificado usado para autenticar a conexão.
+
+        **Método de autenticação**: use com o tipo de EAP **EAP-TTLS**. Selecione o método de autenticação para a conexão:  
+
+          - **Certificados**: selecione o certificado do cliente que é o certificado de identidade apresentado ao servidor.
+          - **Nome de usuário e senha**: insira um método de autenticação **que não seja de EAP (identidade interna)**. Suas opções:
+
+            - **Senha não criptografada (PAP)**
+            - **Protocolo CHAP**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP Versão 2 (MS-CHAP v2)**
+
+        **Privacidade de identidade (identidade externa)**: use com o tipo de EAP **EAP-TTLS**. Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
+
+- **Forçar o perfil de Wi-Fi a estar em conformidade com o padrão FIPS**: escolha **Sim** ao validar em relação ao padrão FIPS 140-2. Esse padrão é necessário para todas as agências do governo federal dos EUA que usam sistemas de segurança baseados em criptografia para proteger informações confidenciais, mas não classificadas, armazenadas digitalmente. Escolha **não** para não estar em conformidade com o FIPS.
 
 ## <a name="use-an-imported-settings-file"></a>Usar um arquivo de configurações importadas
 

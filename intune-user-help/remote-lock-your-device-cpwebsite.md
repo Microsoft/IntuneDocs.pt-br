@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,53 +17,51 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225367"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150062"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear remotamente seu dispositivo do site do Portal da Empresa
 
-Acidentes acontecem e, às vezes, dispositivos podem desaparecer. Se seu dispositivo tiver sido perdido ou roubado, a primeira preocupação que você terá é que as informações contidas nele poderiam ser acessadas por qualquer pessoa, onde quer que ele esteja.
+Bloqueie remotamente um dispositivo perdido ou roubado por meio do site Portal da Empresa. Se houver suporte no dispositivo, essa configuração bloqueará a tela do dispositivo, independentemente de onde ele estiver. Alguém precisa inserir a senha correta para que o dispositivo possa ser desbloqueado e usado novamente.   
 
-[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
-Para ficar seguro, você pode bloqueá-lo usando a opção de Bloqueio Remoto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). O Bloqueio Remoto funciona para:
+A configuração de bloqueio remoto funciona para:
 
 * Android
 * iOS
 * macOS
 * Windows 10
 * Windows 10 Mobile (se o dispositivo já tinha uma senha definida)
-* Windows Phone 8.1 (se o dispositivo já tinha uma senha definida)
+* Windows Phone 8.1 (se o dispositivo já tinha uma senha definida)  
 
-## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar o Bloqueio Remoto para bloquear seu dispositivo
+1. No [site Portal da Empresa](https://portal.manage.microsoft.com), selecione o botão __Menu__ > __Meus Dispositivos__.  
 
-1. No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __Menu__ e, em seguida, selecione __Meus dispositivos__.
+2. Selecione o dispositivo que você deseja bloquear.  
 
-2. Na página __Meus Dispositivos__, selecione o nome do dispositivo que você deseja bloquear.
+    ![Uma captura de tela da página Dispositivos, com dois blocos que mostram dispositivos não identificados, nomeados de maneira genérica. Uma faixa cinza é mostrada diretamente abaixo dos dispositivos e solicita que o usuário identifique o dispositivo que ele está usando ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
-   ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Selecione **Bloqueio remoto**. Se a opção de bloqueio não estiver visível na parte superior da página, selecione **Mais (…)** > **Bloqueio remoto**.  
 
-3. O dispositivo será aberto em uma janela pop-up. Toque no botão **Bloqueio Remoto**.
+   ![A página de detalhes do dispositivo de um dispositivo selecionado no site Portal da Empresa, com uma lista de links na parte superior mostrando Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/rename-reset-device-1808.png) 
 
-   ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+    ![Exibição ampliada do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)    
 
-4. Aparecerá um aviso informando que você está prestes a bloquear seu dispositivo. Toque em **Bloqueio Remoto** e o site do Portal da Empresa tentará bloquear seu dispositivo.
+4. Será exibida uma mensagem para avisar que você está prestes a bloquear seu dispositivo. Toque em **Bloqueio remoto** para confirmar.
 
-   Depois de selecionar **Bloqueio Remoto**, uma mensagem “Bloqueio remoto pendente” será exibida.  Quando o Bloqueio Remoto for bem-sucedido, o status é alterado para "Bloqueio remoto bem-sucedido."
+Após a confirmação, o Portal da Empresa tentará bloquear o dispositivo. Será exibida uma mensagem de "Bloqueio remoto pendente" durante esse tempo. Quando o dispositivo for bloqueado, o status será exibido como "Bloqueio remoto bem-sucedido".  
 
-   O status do Bloqueio Remoto aparece em três locais:
+O status do Bloqueio Remoto aparece em três locais:
 
    * A área de notificações do site.
    * A página **Detalhes** do dispositivo.
-   * O bloco que mostra o nome do dispositivo na seção **Meus Dispositivos** da página.
+   * O bloco que mostra o nome do dispositivo na seção **Dispositivos** da página.  
 
 > [!Note]
-> Se você receber uma notificação "Bloqueio Remoto com falha", aguarde alguns minutos e tente bloquear seu dispositivo novamente. Após começar a tentar novamente, o status será alterado para “Bloqueio remoto pendente”. Se a nova tentativa não funcionar, será necessário entrar em contato com suporte de sua empresa.
+> Se você receber uma notificação de que o bloqueio remoto falhou, espere alguns minutos. Em seguida, tente bloquear o dispositivo novamente. O status será alterado novamente para "Bloqueio remoto pendente". Se a nova tentativa não funcionar, contate o suporte da empresa para obter ajuda.
 
-Se você encontrar seu dispositivo e desejar desbloqueá-lo depois de usar o Bloqueio Remoto, basta inserir sua senha.
+Se você encontrar seu dispositivo e desejar desbloqueá-lo depois de usar o Bloqueio Remoto, basta inserir sua senha.  
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

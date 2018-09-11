@@ -1,11 +1,11 @@
 ---
-title: Remover dados da empresa em dispositivos que usam o Microsoft Intune – Azure | Microsoft Docs
-description: Remova dados da empresa em um dispositivo ou faça uma redefinição de fábrica em um dispositivo Android, de perfil de trabalho Android, iOS, macOS ou Windows usando o Microsoft Intune. Além disso, exclua um dispositivo do Azure Active Directory.
+title: Desativar ou apagar dispositivos usando o Microsoft Intune – Azure | Microsoft Docs
+description: Desative ou apague um dispositivo Android, de perfil de trabalho Android, iOS, macOS ou Windows usando o Microsoft Intune. Além disso, exclua um dispositivo do Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,47 +13,47 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028738"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312810"
 ---
-# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Remova dispositivos usando a restauração de fábrica, removendo dados da empresa ou cancelando o registro do dispositivo manualmente
+# <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ao usar as ações **Remover dados da empresa** ou **Redefinição de fábrica**, será possível remover dispositivos do Intune que não sejam mais necessários, que estejam sendo realocados ou que estejam ausentes. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos de propriedade pessoal registrados no Intune.
+Usando as ações **Desativar** ou **Apagar**, você pode remover dispositivos do Intune que não são mais necessários, que estão sendo realocados ou que estão ausentes. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos de propriedade pessoal registrados no Intune.
 
 > [!NOTE]
-> Antes de remover um usuário do Azure AD (Active Directory), use as ações **Restaurar configurações de fábrica** ou **Remover os dados da empresa** para todos os dispositivos associados a esse usuário. Se você remover os usuários que gerenciaram dispositivos do Azure AD, o Intune não poderá mais emitir uma redefinição de fábrica nem remover dados da empresa para esses dispositivos.
+> Antes de remover um usuário do Azure AD (Azure Active Directory), use as ações **Apagar** ou **Desativar** para todos os dispositivos associados a esse usuário. Se você remover usuários que tenham dispositivos gerenciados do Azure AD, o Intune não poderá apagar nem desativar esses dispositivos.
 
-## <a name="factory-reset"></a>Redefinição de fábrica
+## <a name="wipe"></a>Apagamento
 
-A ação **Restaurar configurações de fábrica** restaura um dispositivo para as configurações padrão de fábrica. Os dados do usuário serão mantidos se você marcar a caixa de seleção **Manter estado de registro e conta do usuário**. Caso contrário, a unidade será apagada com segurança.
+A ação **Apagar** restaura um dispositivo para as configurações padrão de fábrica. Os dados do usuário serão mantidos se você marcar a caixa de seleção **Manter estado de registro e conta do usuário**. Caso contrário, a unidade será apagada com segurança.
 
-|Ação de redefinição de fábrica|**Manter o estado do registro e a conta de usuário**|Removido do gerenciamento do Intune|Descrição|
+|Ação de apagamento|**Manter o estado do registro e a conta de usuário**|Removido do gerenciamento do Intune|Descrição|
 |:-------------:|:------------:|:------------:|------------|
-|**Redefinição de fábrica**| Não verificado | Sim | Apaga todas as contas de usuário, dados, políticas de MDM e configurações. Redefine o sistema operacional para seu estado e configurações padrão.|
-|**Redefinição de fábrica**| Verificado | Não | Apaga todas as políticas de MDM. Mantém as contas de usuário e dados. Redefine as configurações de usuário de volta ao padrão. Redefine o sistema operacional para seu estado e configurações padrão.|
+|**Apagamento**| Não verificado | Sim | Apaga todas as contas de usuário, dados, políticas de MDM e configurações. Redefine o sistema operacional para seu estado e configurações padrão.|
+|**Apagamento**| Verificado | Não | Apaga todas as políticas de MDM. Mantém as contas de usuário e dados. Redefine as configurações de usuário de volta ao padrão. Redefine o sistema operacional para seu estado e configurações padrão.|
 
 A opção **Reter estado de registro e conta do usuário** está disponível apenas para o Windows 10 versão 1709 ou posterior.
 
 As políticas de MDM serão reaplicadas na próxima vez que o dispositivo se conectar ao Intune.
 
-Uma redefinição de fábrica será útil para redefinir um dispositivo antes de dar a ele um novo usuário ou quando o dispositivo tiver sido perdido ou roubado. Tome cuidado ao selecionar **Restaurar configurações de fábrica**. Os dados no dispositivo não podem ser recuperados.
+Um apagamento é útil para redefinir um dispositivo antes de fornecê-lo a um novo usuário ou quando o dispositivo é perdido ou roubado. Tenha cuidado ao selecionar o **apagamento**. Os dados no dispositivo não podem ser recuperados.
 
-### <a name="factory-reset-a-device"></a>Restaurar configurações de fábrica de um dispositivo
+### <a name="wiping-a-device"></a>Apagando um dispositivo
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
-4. Selecione o nome do dispositivo cujas configurações você deseja restaurar.
-5. No painel que mostra o nome do dispositivo, selecione **Restaurar configurações de fábrica**.
+4. Selecione o nome do dispositivo que você deseja apagar.
+5. No painel que mostra o nome do dispositivo, selecione **Apagar**.
 6. Para o Windows 10 versão 1709 ou posterior, você também tem a opção **Reter estado de registro e conta do usuário**. 
     
-    |Retidos durante uma redefinição de fábrica|Não mantido|
+    |Retido durante um apagamento |Não mantido|
     | -------------|------------|
     |Contas do usuário associadas ao dispositivo|Arquivos do usuário|
     |Estado do computador \(ingresso no domínio, ingresso no Azure AD)| Aplicativos instalados pelo usuário \(aplicativos do Win32 e da loja)|
@@ -64,17 +64,17 @@ Uma redefinição de fábrica será útil para redefinir um dispositivo antes de
     |Logon automático do usuário|| 
     
          
-7. Para confirmar a redefinição de fábrica, selecione **Sim**.
+7. Para confirmar o apagamento, selecione **Sim**.
 
-Se o dispositivo estiver ligado e conectado, a ação **Restaurar configurações de fábrica** se propagará entre todos os tipos de dispositivo em menos de 15 minutos.
+Se o dispositivo estiver ligado e conectado, a ação **Apagar** será propagada para todos os tipos de dispositivos em menos de 15 minutos.
 
-## <a name="remove-company-data"></a>Remover os dados da empresa
+## <a name="retire"></a>Desativar
 
-A ação **Remover dados da empresa** remove dados do aplicativo gerenciado (quando for o caso), configurações e perfis de email que foram atribuídos usando o Intune. O dispositivo é removido do gerenciamento do Intune. Isso ocorre na próxima vez que o dispositivo realiza o check-in e recebe a ação remota **Remover dados da empresa**.
+A ação **Desativar** remove os dados do aplicativo gerenciado (quando é o caso), as configurações e os perfis de email que foram atribuídos usando o Intune. O dispositivo é removido do gerenciamento do Intune. Isso ocorrerá na próxima vez que o dispositivo fizer check-in e receber a ação remota **Desativar**.
 
-**Remover dados da empresa** deixa os dados pessoais do usuário no dispositivo.  
+**Desativar** deixa os dados pessoais do usuário no dispositivo.  
 
-As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **Remover dados da empresa** nos dados que permanecem no dispositivo depois da remoção dos dados da empresa.
+As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **Desativar** nos dados que permanecem no dispositivo após a remoção de dados da empresa.
 
 ### <a name="ios"></a>iOS
 
@@ -110,11 +110,11 @@ As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **
 
 ### <a name="android-work-profile"></a>Perfil de trabalho Android
 
-A remoção dos dados da empresa de um dispositivo de perfil de trabalho Android remove todos os dados, os aplicativos e as configurações do perfil de trabalho desse dispositivo. O dispositivo é desativado do gerenciamento com o Intune. Não há suporte para a redefinição de fábrica nos perfis de trabalho Android.
+A remoção dos dados da empresa de um dispositivo de perfil de trabalho Android remove todos os dados, os aplicativos e as configurações do perfil de trabalho desse dispositivo. O dispositivo é desativado do gerenciamento com o Intune. Não há suporte para apagamento nos perfis de trabalho do Android.
 
 ### <a name="android-enterprise-kiosk-devices"></a>Dispositivos de quiosque Android Enterprise
 
-Apenas nos dispositivos de quiosque Android é possível fazer a redefinição de fábrica. Você não pode remover dados da empresa dos dispositivos de quiosque Android.
+Você só pode apagar os dispositivos de quiosque. Você não pode desativar dispositivos de quiosque do Android.
 
 
 ### <a name="macos"></a>macOS
@@ -137,16 +137,16 @@ Apenas nos dispositivos de quiosque Android é possível fazer a redefinição d
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|Não há suporte.|Removidos.|
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|Certificados são removidos e revogados.|Não há suporte.|Certificados são removidos e revogados.|
 |Email|Remove o email habilitado para EFS. Isso inclui emails e anexos no aplicativo Mail para Windows.|Não há suporte.|Os perfis de email provisionados por meio do Intune são removidos. O email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS. Isso inclui emails e anexos no aplicativo Mail para Windows. Remove contas de email que foram provisionadas pelo Intune.|
-|Cancelamento de ingresso no Azure AD|Não.|Não.|O registro do Azure AD é removido.|Não aplicável. No Windows 10, não é possível remover dados da empresa para dispositivos ingressados no Azure AD.|
+|Cancelamento de ingresso no Azure AD|Não.|Não.|O registro do Azure AD é removido.|Não aplicável. No Windows 10, você não pode desativar dispositivos ingressados no Azure AD.|
 
-### <a name="remove-company-data"></a>Remover os dados da empresa
+### <a name="retire"></a>Desativar
 
 1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. No painel **Dispositivos**, selecione **Todos os dispositivos**.
-3. Selecione o nome do dispositivo do qual você deseja remover os dados da empresa.
-4. No painel que mostra o nome do dispositivo, selecione **Remover dados da empresa**. Para confirmar, selecione **Sim**.
+3. Selecione o nome do dispositivo que você deseja desativar.
+4. No painel que mostra o nome do dispositivo, selecione **Desativar**. Para confirmar, selecione **Sim**.
 
-Se o dispositivo estiver ligado e conectado, a ação **Remover dados da empresa** se propagará entre todos os tipos de dispositivo em menos de 15 minutos.
+Se o dispositivo estiver ligado e conectado, a ação **Desativar** será propagada para todos os tipos de dispositivos em menos de 15 minutos.
 
 ## <a name="delete-devices-from-the-intune-portal"></a>Excluir dispositivos do portal do Intune
 
@@ -181,8 +181,8 @@ Talvez seja necessário excluir dispositivos do Azure AD devido a problemas de c
 Se você quiser remover completamente um dispositivo DEP da Apple do gerenciamento pelo Intune, siga estas etapas:
 
 1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
-2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo > **Remover os dados da empresa**.
-![Captura de tela para remover os dados da empresa](./media/devices-wipe/remove-company-data.png)
+2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo > **Desativar**.
+![Captura de tela da desativação](./media/devices-wipe/retire.png)
 3. Escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token > **Dispositivos** > escolha a caixa de seleção para o dispositivo > **Excluir** > **Sim**.
 ![Captura de tela para excluir dispositivo](./media/devices-wipe/delete-device.png)
 4. Visite [deploy.apple.com](http://deploy.apple.com) e pesquise pelo dispositivo usando o respectivo número de série.

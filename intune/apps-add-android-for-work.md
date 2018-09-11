@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909279"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329863"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicativos a dispositivos de perfil de trabalho Android com o Intune
 
@@ -59,18 +59,18 @@ Verifique se você configurou o Intune e os perfis de trabalho Android para trab
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizar um aplicativo do Google Play gerenciado com o Intune
 
-Se você aprovou um aplicativo da loja e ainda não o encontrou no nó **Aplicativos licenciados** da carga de trabalho **Aplicativos móveis**, force uma sincronização imediata da seguinte maneira:
+Se você aprovou um aplicativo da loja e ainda não o encontrou no nó **Aplicativos licenciados** da carga de trabalho **Aplicativos clientes**, force uma sincronização imediata da seguinte maneira:
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, selecione **Aplicativos móveis**.
-4. No painel de carga de trabalho **Aplicativos móveis**, em **Instalação**, selecione **Google Play gerenciado**.
+3. No painel **Intune**, selecione **Aplicativos clientes**.
+4. No painel da carga de trabalho **Aplicativos clientes**, em **Instalação**, selecione **Google Play gerenciado**.
 5. No painel **Google Play gerenciado**, escolha **Atualizar**.  
     A página atualiza a hora e o status da última sincronização.
-6. No painel de carga de trabalho **Aplicativos móveis**, selecione **Aplicativos**.  
+6. No painel da carga de trabalho **Aplicativos clientes**, selecione **Aplicativos**.  
     O aplicativo que acabou de ficar disponível no Google Play gerenciado é exibido.
 
-Quando o aplicativo for exibido no nó **Aplicativos licenciados** do painel de carga de trabalho **Aplicativos móveis**, você poderá [atribuí-lo, assim como atribuiria qualquer outro aplicativo](/intune-azure/manage-apps/deploy-apps). O aplicativo pode ser atribuído somente em grupos de usuários.
+Quando o aplicativo for exibido no nó **Licenças de aplicativo** do painel da carga de trabalho **Aplicativos clientes**, você poderá [atribuí-lo, assim como atribuiria qualquer outro aplicativo](/intune-azure/manage-apps/deploy-apps). O aplicativo pode ser atribuído somente em grupos de usuários.
 
 Depois de atribuir o aplicativo, ele é instalado nos dispositivos de destino. A aprovação da instalação do dispositivo não é solicitada ao usuário.
 

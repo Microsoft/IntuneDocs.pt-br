@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164562"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329468"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -52,7 +52,7 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No menu do **Intune**, selecione **Aplicativos móveis**.
+3. No menu **Intune**, selecione **Aplicativos clientes**.
 4. Na seção **Gerenciar** do menu, selecione **Aplicativos**.
 5. No painel **Aplicativos**, selecione o aplicativo que você deseja atribuir.
 6. Na seção **Gerenciar** do menu, selecione **Atribuições**.

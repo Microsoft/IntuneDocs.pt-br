@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039328"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312889"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Configurações de quiosque Android Enterprise no Intune
 
@@ -33,14 +33,14 @@ Os perfis de quiosque do Android dão suporte às seguintes definições de conf
     - **Concessão automática**: as permissões são concedidas automaticamente.
     - **Negação automática**: as permissões serão negadas automaticamente.
 - **Alterações de volume**: escolha **Bloquear** para impedir que usuários alterem o volume do dispositivo.
-- **Redefinição de fábrica**: escolha **Bloquear** para impedir que os usuários redefinam o dispositivo para as configurações de fábrica.
+- **Apagar**: escolha **Bloquear** para impedir que os usuários apaguem o dispositivo.
 - **Inicialização segura**: escolha **Bloquear** para impedir que os usuários reiniciem o dispositivo no modo de segurança.
 - **Barra de status**: escolha **Bloquear** para impedir que os usuários acessem a barra de status, incluindo notificações e configurações rápidas.
 - **Alterações de configuração de Wi-Fi**: escolha **Bloquear** para impedir que os usuários alterem as configurações de Wi-Fi criadas pelo proprietário do dispositivo. Os usuários podem criar suas próprias configurações de Wi-Fi.
 - **Configuração de ponto de acesso de Wi-Fi**: escolha **Bloquear** para impedir que os usuários criem ou editem as configurações de Wi-Fi.
 - **Recursos de depuração**: escolha **Permitir** para que os usuários possam usar recursos de depuração.
 - **Ajuste de microfone**: escolha **Bloquear** para impedir que os usuários ajustem o volume ou ativem o mudo do microfone.
-- **Emails de proteção de redefinição de fábrica**: escolha **Endereços de email de conta do Google** para definir endereços de email (separados por ponto e vírgula) que podem desbloquear o dispositivo após a redefinição para as configurações de fábrica. Se não for especificado nenhum email, qualquer pessoa poderá desbloquear o dispositivo após uma redefinição de fábrica.
+- **Emails de proteção de apagamento**: escolha **Endereços de email de conta do Google** para definir endereços de email (separados por ponto e vírgula) que podem desbloquear o dispositivo após um apagamento. Se não for especificado nenhum email, qualquer pessoa poderá desbloquear o dispositivo após um apagamento.
 - **Hachura de escape de rede**: escolha **Habilitar** para permitir que o recurso de hachura de escape de rede seja habilitado. Se uma conexão de rede não puder ser feita no momento da inicialização, a hachura de escape solicitará que o usuário se conecte temporariamente a uma rede para atualizar a política do dispositivo. Depois de aplicar a política, a rede temporária será esquecida e o dispositivo continuará com a inicialização. Isso impede que não seja possível se conectar a uma rede quando não houver nenhuma rede adequada na última política e o dispositivo for inicializado em um aplicativo no modo de tarefa de bloqueio ou quando o usuário não conseguir chegar às configurações do dispositivo.
 - **Permitir instalação de fontes desconhecidas**: escolha **Permitir** para que os usuários possam instalar de fontes desconhecidas.
 - **Atualização do sistema**: escolha uma opção para definir como o dispositivo trata as atualizações over-the-air:

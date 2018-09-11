@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905403"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330238"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicativo no Microsoft Intune
 
@@ -44,8 +44,8 @@ O Intune não considera a associação de usuário a dispositivo ao excluir grup
 Para atribuir um aplicativo a grupos usando a atribuição de incluir e excluir:
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No menu do **Intune**, selecione **Aplicativos móveis**.
-4. No painel **Aplicativos móveis**, selecione **Aplicativos**. A lista de aplicativos adicionados é mostrada.
+3. No menu **Intune**, selecione **Aplicativos clientes**.
+4. No painel **Aplicativos clientes**, selecione **Aplicativos**. A lista de aplicativos adicionados é mostrada.
 5. Selecione o aplicativo que você deseja atribuir. Um painel exibe informações sobre o aplicativo. 
 6. Na seção **Gerenciar** do menu, selecione **Atribuições**. 
 

@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224153"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329488"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicativos nativos ao Microsoft Intune
 
@@ -36,8 +36,8 @@ As versões anteriores do console do Intune forneciam vários aplicativos padrã
 Para adicionar um aplicativo nativo a seus aplicativos disponíveis no Microsoft Intune, faça o seguinte:
 1. Entre no Portal do Azure.
 2. Para exibir o painel do Microsoft Intune, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. No painel **Intune**, selecione **Aplicativos móveis**.
-4. No painel **Aplicativos móveis**, em **Gerenciar**, selecione **Aplicativos**.
+3. No painel **Intune**, selecione **Aplicativos clientes**.
+4. No painel **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
 5. Selecione **Adicionar**.
 6. No painel do aplicativo **Adicionar**, na lista **Tipo de aplicativo**, selecione **Aplicativo interno**.
 7. Escolha **Selecionar aplicativo**.

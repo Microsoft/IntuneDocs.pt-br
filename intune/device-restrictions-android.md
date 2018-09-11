@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587016"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313692"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Configurações de restrições de dispositivo Android e Samsung KNOX Standard – Microsoft Intune
 
@@ -35,7 +35,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Copiar e colar (somente Samsung Knox)** – permite usar as funções de copiar e colar no dispositivo.
 - **Compartilhamento de área de transferência entre os aplicativos (somente Samsung Knox Standard)** – permite usar a área de transferência para copiar e colar entre aplicativos.
 - **Envio de dados de diagnóstico (somente Samsung Knox)** – Impede que o usuário envie dados de diagnóstico do dispositivo.
-- **Redefinição de fábrica (somente Samsung Knox)** – permite que o usuário execute uma redefinição de fábrica no dispositivo.
+- **Apagamento (somente Samsung KNOX)** – permite que o usuário execute um [apagamento](devices-wipe.md) no dispositivo.
 - **Geolocalização (somente Samsung Knox)** – permite que o dispositivo utilize informações de localização.
 - **Desligar (somente Samsung Knox)** – permite que o usuário desligue o dispositivo.<br>Se estiver desabilitada, a opção **Número de falhas de entrada antes de apagar dispositivo** não poderá ser definida.
 - **Captura de tela (somente Samsung Knox)** – permite que o usuário capture o conteúdo da tela como uma imagem.

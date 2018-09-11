@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea51227798e239bb74154e4d97e3efd6d55f807
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232260"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313591"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou excluir dados pessoais no Intune
 
@@ -64,8 +64,8 @@ A restauração para as configurações de fábrica restaura todas as configura�
 ### <a name="user-self-removal-from-intune-management"></a>Autorremoção de usuário do gerenciamento do Intune
 Os usuários podem remover seus dispositivos pessoais [Android, Apple ou Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) do gerenciamento do Intune sem a assistência do administrador.   
 
-### <a name="remove-company-data"></a>Remover os dados da empresa
-A remoção dos dados da empresa remove os dados provisionados pelo Intune como aplicativos da empresa, dados sobre aplicativos gerenciados pelo o Intune, configurações de política e perfis de email provisionados por meio do Intune. Essa ação deixa os dados pessoais do usuário no dispositivo.
+### <a name="retire"></a>Desativar
+A ação **Desativar** remove os dados provisionados pelo Intune, como aplicativos da empresa, dados sobre aplicativos gerenciados pelo Intune, configurações de política e perfis de email. Essa ação deixa os dados pessoais do usuário no dispositivo.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Excluir um locatário do Microsoft Intune
 

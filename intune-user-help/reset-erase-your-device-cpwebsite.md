@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 00b5c1ededa0b5dbc3df5786e583738fb2c2008e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321570"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147727"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Redefinir seu dispositivo pelo site do Portal da Empresa
 
@@ -33,16 +33,18 @@ Depois que você restaurar um dispositivo, ele deixará de ser exibido no Portal
 > [!Note]
 > Você também pode executar as etapas a seguir em outro dispositivo registrado. Abra o aplicativo do Portal da Empresa no dispositivo e percorra etapas semelhantes para concluir a restauração.  
 
-1. Abra o [site do Portal da Empresa](https://portal.manage.microsoft.com/#helpdeskDeskDialog) e selecione o botão __Menu__ > __Meus Dispositivos__.
+1. Abra o site Portal da Empresa e selecione o botão __Menu__ > __Dispositivos__.  
 
 2. Selecione o dispositivo que deseja restaurar.
 
-    ![Uma captura de tela da página Meus Dispositivos, com dois blocos que mostram dispositivos não identificados, nomeados de maneira genérica. Uma faixa cinza é mostrada diretamente abaixo dos dispositivos e solicita que o usuário identifique o dispositivo que ele está usando ou adicione um novo.](./media/macOS_enroll_002_tap_here_banner.png)
+    ![Uma captura de tela da página Dispositivos, com dois blocos que mostram dispositivos não identificados, nomeados de maneira genérica. Uma faixa cinza é mostrada diretamente abaixo dos dispositivos e solicita que o usuário identifique o dispositivo que ele está usando ou adicione um novo.](./media/rename-reset-device-step2-1808.png)  
 
-3. O dispositivo será aberto em uma janela pop-up. Selecione **Restaurar**.  
+3. Selecione **Restaurar**. Se a opção de redefinição não estiver visível na parte superior da página, selecione **Mais (…)** > **Redefinir**.  
 
- ![Uma captura de tela da página Meu Dispositivo, com alguns dispositivos não identificados acima do prompt da barra de notificação para registrar dispositivos não listados ou identificar aqueles não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+     ![A página de detalhes do dispositivo de um dispositivo selecionado no site Portal da Empresa, com uma lista de links na parte superior mostrando Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)  
+
+    ![Exibição ampliada do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
 
 4. Será exibida uma mensagem para avisá-lo de que você está prestes a apagar todo o conteúdo do dispositivo. Toque em **Restaurar** para confirmar.  
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com/#helpdeskDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

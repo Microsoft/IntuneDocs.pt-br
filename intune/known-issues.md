@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073828"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347790"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -34,6 +34,13 @@ Caso você queira solicitar um novo recurso para o Intune, considere registrar u
 
 ## <a name="migration"></a>Migração
 
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Exportar políticas de conformidade do Portal Clássico do Azure para recriar essas políticas no portal do Azure do Intune
+
+As políticas de conformidade criadas no Portal Clássico do Azure serão preteridas. Você pode examinar e excluir as políticas de conformidade existentes, no entanto, você não pode atualizá-las. Se você precisar migrar políticas de conformidade para o portal do Azure do Intune atual, exporte as políticas como um arquivo separado por vírgula (arquivo .csv). Em seguida, use os detalhes no arquivo para recriar essas políticas no portal do Azure do Intune.
+
+> [!IMPORTANT]
+> Quando o Portal Clássico do Azure for desativado, você não poderá mais acessar ou exibir suas políticas de conformidade. Portanto, exporte as políticas e recrie-as no portal do Azure antes que o Portal Clássico do Azure seja desativado.
+
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Os recursos herdados do PC cliente do Intune só estão disponíveis no console do Silverlight
 
 A capacidade de gerenciar o Windows 10 no Intune no Portal do Azure está disponível por meio do registro de MDM do Windows. Para obter mais informações, consulte [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure) (Intune no console do Azure e PC cliente herdado do Intune).
@@ -44,7 +51,7 @@ Ao migrar do Intune para o Portal do Azure, você poderá ver um novo grupo cham
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>As folhas de status das políticas migradas não funcionam
 
-Não é possível exibir informações de status de políticas que foram migradas do Portal Clássico do Azure no Portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no Portal Clássico. Para exibir informações de status das políticas de configuração migradas, recrie-as no Portal do Azure.
+Não é possível exibir informações de status de políticas que foram migradas do Portal Clássico do Azure no Portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no Portal Clássico. Para exibir informações de status das políticas de configuração migradas, recrie-as no portal do Azure.
 
 ## <a name="apps"></a>Aplicativos
 
@@ -52,7 +59,7 @@ Não é possível exibir informações de status de políticas que foram migrada
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Vários prompts de instalação de aplicativo para determinados aplicativos VPP
 Talvez você veja vários prompts de instalação de aplicativo para determinados aplicativos VPP já instalados nos dispositivos de usuário final. Esse problema ocorrerá se a opção **Atualizações automáticas do aplicativo** estiver definida como **Ativada** para o token de VPP que você carregou para o Portal do Azure do Intune.    
 
-Para solucionar esse problema, é possível desabilitar a opção **Atualizações automáticas do aplicativo** para o token de VPP. Para fazer isso, abra o Microsoft Intune no Portal do Azure. No Intune, selecione **Aplicativos móveis** > **Tokens de VPP do iOS**. Em seguida, selecione o Token de VPP que implantou o aplicativo afetado e selecione **Editar** > **Atualizações automáticas do aplicativo** > **Desativar** > **Salvar**. Como alternativa, é possível interromper a implantação do aplicativo afetado como um aplicativo VPP, que interromperá os prompts.    
+Para solucionar esse problema, é possível desabilitar a opção **Atualizações automáticas do aplicativo** para o token de VPP. Para fazer isso, abra o Microsoft Intune no Portal do Azure. No Intune, selecione **Aplicativos clientes** > **Tokens VPP do iOS**. Em seguida, selecione o Token de VPP que implantou o aplicativo afetado e selecione **Editar** > **Atualizações automáticas do aplicativo** > **Desativar** > **Salvar**. Como alternativa, é possível interromper a implantação do aplicativo afetado como um aplicativo VPP, que interromperá os prompts.    
 
 Esse é um problema conhecido na versão atual. Há uma correção futura que resolverá esse problema. Quando a correção for implementada, os usuários não verão mais vários prompts de instalação de aplicativos.
 
@@ -80,7 +87,7 @@ Em dispositivos iOS, a integração de Controle de Acesso à Rede (NAC) não fun
 
 [Criar perfis VPN no Intune](vpn-settings-ios.md) fornece mais detalhes sobre os clientes do Cisco AnyConnect e do Cisco Legacy AnyConnect.
 
-### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Usando o tipo de senha numérica com dispositivos macOS Sierra
+### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Usando o tipo de senha numérica com dispositivos macOS Serra
 
 Atualmente, se você selecionar o **Tipo de senha necessário** **Numérica** em um perfil de restrição de dispositivo em dispositivos macOS Sierra, ele será imposto como **Alfanumérica**. Se você desejar usar uma senha numérica com esses dispositivos, não defina essa configuração.
 Esse problema poderá ser corrigido em uma versão futura do macOS.
@@ -91,7 +98,7 @@ Para obter mais informações sobre essas configurações, consulte [Configuraç
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>As políticas de conformidade do Intune não são mostradas no novo console
 
-As políticas de conformidade criadas no portal clássico são migradas, mas não são exibidas no Portal do Azure, devido às alterações de design no Portal do Azure. As políticas de conformidade criadas no Portal Clássico do Intune ainda são impostas, mas você deve poder ler e editá-las no Portal Clássico.
+As políticas de conformidade criadas no portal clássico são migradas, mas não são exibidas no portal do Azure, devido às alterações de design no portal do Azure. As políticas de conformidade criadas no Portal Clássico do Intune ainda são impostas, mas você deve poder ler e editá-las no Portal Clássico.
 
 Além disso, novas políticas de conformidade criadas no Portal do Azure não estão visíveis no Portal Clássico.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,26 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fee3f31b4a475ed3def1ee96fcdad2f2a414ab3c
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752386"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150043"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Resolver uma ameaça encontrada por um aplicativo de Defesa contra ameaças móveis
 
-A Defesa contra Ameaças Móveis encontrou uma possível ameaça em seu dispositivo iOS, e você precisa corrigir o problema para recuperar o acesso a seus arquivos, aplicativos e email corporativo ou de estudante. Dependendo de como o suporte de sua empresa configurou a Defesa contra ameaças móveis, você usará um dos aplicativos a seguir para resolver esses tipos de problemas.
+Os aplicativos de Defesa contra Ameaças Móveis detectam e alertam sobre possíveis ameaças em seus dispositivos. Algumas organizações integram um serviço de Defesa contra Ameaças Móveis com um provedor de MDM, como o Intune. Quando integrado, o serviço de Defesa contra Ameaças Móveis relata as ameaças (como aplicativos suspeitos, redes e vulnerabilidades do sistema operacional) e emite uma notificação no aplicativo Portal da Empresa. Em seguida, você pode encontrar detalhes sobre a ameaça e as etapas de correção no aplicativo de Defesa contra Ameaças Móveis.  
+
+As ameaças aparecem no Portal da Empresa como problemas de falta de conformidade não resolvidos. Se as ameaças forem classificadas como suficientemente arriscadas, sua empresa revogará o acesso aos recursos corporativos. Enquanto essas ameaças estiverem presentes no dispositivo, talvez você não possa:  
+
+* Conectar-se ao email corporativo
+* Conectar-se ao Wi-Fi corporativo
+* Conectar-se ao SharePoint Online
+* Sincronizar arquivos corporativos com o OneDrive
+* Acessar aplicativos da empresa
+
+Abaixo estão os serviços de Defesa contra Ameaças Móveis específicos do iOS que sua organização pode ter configurado. Selecione um aplicativo para ler mais sobre seu comportamento. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
@@ -32,13 +42,5 @@ A Defesa contra Ameaças Móveis encontrou uma possível ameaça em seu disposit
 * [Proteção SandBlast Mobile](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-Para resolver o problema, abra o aplicativo Defesa contra Ameaças Móveis e siga as instruções mostradas no aplicativo.
-
-**Exemplo de um aplicativo que a Defesa contra ameaças móveis vê como uma ameaça**
-
-Se você instalou um aplicativo que a Defesa contra Ameaças Móveis considera uma ameaça, verá uma tela informando qual é o aplicativo perigoso. Se vir algo assim, toque no nome do aplicativo exibido na parte superior da tela e siga as instruções para remover a ameaça.
-
-Depois de desinstalar o aplicativo, você recuperará o acesso ao seu email e a outros dados corporativos ou de estudante imediatamente. Se ignorar a solicitação para desinstalar o aplicativo, você perderá acesso ao email e aos dados da empresa até que desinstale o aplicativo.
-
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
