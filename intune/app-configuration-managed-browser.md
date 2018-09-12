@@ -15,21 +15,21 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251489"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329745"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gerenciar o acesso à Internet usando políticas de navegador protegido com o Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Os navegadores protegidos incluem o Microsoft Edge e o Intune Managed Browser. O Edge e o Managed Browser são aplicativos de navegação na Web que podem ser baixado em lojas públicas de aplicativos para uso em sua organização. Quando configurados com o Intune, os navegadores protegidos podem ser:
-- Usados para acessar sites corporativos e aplicativos SaaS com o Logon Único por meio do serviço MyApps, ao mesmo tempo que mantém os dados da Web protegidos.
-- Pré-configurados com uma lista de URLs e domínios para restringir os sites que o usuário pode acessar no contexto corporativo.
-- Pré-configurados com uma página inicial e indicadores que você especificar.
+- Usado para acessar sites corporativos e aplicativos SaaS com o Logon Único por meio do serviço MyApps, ao mesmo tempo que mantém os dados da Web protegidos.
+- Pré-configurado com uma lista de URLs e domínios para restringir os sites que o usuário pode acessar no contexto corporativo.
+- Pré-configurado com uma página inicial e indicadores que você especificar.
 
 Como o Edge e o Managed Browser têm integração com o SDK do Intune, você também pode aplicar políticas de proteção de aplicativos a eles, incluindo:
 - Controlar o uso de recortar, copiar e colar
@@ -108,7 +108,7 @@ O SSO no Intune Managed Browser requer que seu dispositivo seja registrado pelo 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3.  Na folha **Aplicativos móveis** da lista Gerenciar, escolha **Políticas de configuração de aplicativo**.
+3.  Na folha **Aplicativos clientes** da lista Gerenciar, escolha **Políticas de configuração de aplicativo**.
 4.  Na folha **Políticas de configuração de aplicativo**, escolha **Adicionar**.
 5.  Na folha **Adicionar política configuração**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
 6.  Para o tipo **Registro de Dispositivo**, escolha **Aplicativos gerenciados**.
@@ -126,7 +126,7 @@ O SSO no Intune Managed Browser requer que seu dispositivo seja registrado pelo 
 
 Atribua as configurações a grupos de usuários do Azure AD. Se esse usuário tiver o aplicativo de navegador protegido direcionado instalado, o aplicativo será gerenciado pelas configurações especificadas.
 
-1. Na folha **Aplicativos móveis** do painel de gerenciamento de aplicativo móvel do Intune, escolha **Políticas de configuração de aplicativo**.
+1. Na folha **Aplicativos clientes** do painel de gerenciamento de aplicativo móvel do Intune, escolha **Políticas de configuração de aplicativo**.
 2. Na lista de configurações de aplicativo, selecione aquela que você deseja atribuir.
 3. Na próxima folha, escolha **Atribuições**.
 4. Na folha **Atribuições**, selecione o grupo do Azure AD ao qual você deseja atribuir a configuração de aplicativo e, em seguida, escolha **OK**.

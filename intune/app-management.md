@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255374"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330136"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -61,16 +61,16 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 
 ## <a name="get-started"></a>Introdução
 
-Você encontrará a maioria das informações relacionadas ao aplicativo na carga de trabalho de **Aplicativos Móveis**, que pode ser acessada fazendo o seguinte:
+Encontre a maioria das informações relacionadas a aplicativos na carga de trabalho **Aplicativos Clientes**, que pode ser acessada da seguinte forma:
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**.  
     O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Microsoft Intune**, selecione **Aplicativos móveis**.
+3. No painel **Microsoft Intune**, selecione **Aplicativos clientes**.
 
     ![O painel da carga de trabalho “Aplicativos Móveis”](./media/apps-workload.png)
 
-As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos móveis**.
+As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos clientes**.
 
 ### <a name="manage"></a>Gerenciar
 - **Aplicativos**: selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos que sua força de trabalho usa. Para obter mais informações, consulte:

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251680"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330221"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -38,14 +38,15 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 par
 - Esse método de instalação não é compatível com dispositivos Windows 10 S, Windows Home, Windows Team, Windows Holographic ou Windows Holographic for Business.
 - O Intune não dá suporte à instalação de aplicativos de área de trabalho do Office 365 da Microsoft Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
 - Várias atribuições de aplicativo requeridas ou disponíveis não são aditivas. Uma atribuição de aplicativo posterior substituirá as atribuições de aplicativo pré-instaladas. Por exemplo, se o primeiro conjunto de aplicativos Office contiver o Word e o último não, o Word será desinstalado. Isso não se aplica a nenhum aplicativo do Visio ou Project.
-
+- **Versão do Office** – escolha se deseja atribuir a versão de 32 bits ou de 64 bits do Office. Você pode instalar a versão de 32 bits em dispositivos de 32 bits e 64 bits, mas você só pode instalar a versão de 64 bits em dispositivos de 64 bits.
+- **Remover MSI de dispositivos de usuários finais** – escolha se deseja remover os aplicativos .MSI do Office já existentes dos dispositivos de usuários finais. A instalação não será bem-sucedida se já houver aplicativos .MSI existentes nos dispositivos de usuários finais. Os aplicativos a serem desinstalados não estão limitados aos aplicativos selecionados para instalação em **Configurar Pacote de Aplicativos**, pois essa ação removerá todos os aplicativos do Office (MSI) dos dispositivos de usuários finais. Para obter mais informações, confira [Remover versões de MSI existentes do Office ao atualizar para o Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version). 
 
 ## <a name="get-started"></a>Introdução
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os Serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, selecione **Aplicativos móveis**.
-4. No painel de carga de trabalho **Aplicativos móveis**, em **Gerenciar**, selecione **Aplicativos**.
+3. No painel **Intune**, selecione **Aplicativos clientes**.
+4. No painel da carga de trabalho **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
 5. Selecione **Adicionar**.
 6. No painel **Adicionar aplicativos**, na lista **Tipo de aplicativo**, em **Office 365 Office**, selecione **Windows 10**.
 
@@ -91,7 +92,16 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
         - **Mensal (Direcionada)**
         - **Semestral**
         - **Semestral (Direcionada)**
-    - **Remover outras versões do Office (MSI) dos dispositivos de usuário final**: esse recurso permitirá que você remova todos os Office (MSI) pré-existentes dos computadores dos usuários finais. Isso não se limita aos aplicativos selecionados para instalação em **Configurar Pacote de Aplicativos**, pois removerá todos os aplicativos do Office (MSI) do dispositivo do usuário final.
+
+        Depois de escolher um canal, opcionalmente, você poderá selecionar **Específica** para instalar uma versão específica do Office para o canal selecionado nos dispositivos de usuários finais. Em seguida, selecione a **Versão específica** do Office a ser usada.
+        
+        As versões disponíveis serão alteradas ao longo do tempo. Portanto, quando você cria uma nova implantação, as versões disponíveis podem ser mais recentes, e determinadas versões mais antigas podem não estar disponíveis. As implantações atuais continuarão a implantar a versão mais antiga, mas a lista de versões será atualizada continuamente por canal.
+        
+        Para dispositivos nos quais a versão fixa (ou outras propriedades) é atualizada e que são implantados como disponíveis, o status relatado aparece como Instalado se a versão anterior estiver instalada até que ocorra o check-in do dispositivo. Quando o check-in do dispositivo ocorrer, o status será alterado temporariamente para Desconhecido, no entanto, ele não será mostrado ao usuário. Quando o usuário iniciar a instalação da versão disponível mais recente, o usuário verá o status alterado para Instalado.
+        
+        Para mais informações, confira [Visão geral dos canais de atualização do Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
+
+    - **Remover MSI de dispositivos de usuários finais** – escolha se deseja remover os aplicativos .MSI do Office já existentes dos dispositivos de usuários finais. A instalação não será bem-sucedida se já houver aplicativos .MSI existentes nos dispositivos de usuários finais. Os aplicativos a serem desinstalados não estão limitados aos aplicativos selecionados para instalação em **Configurar Pacote de Aplicativos**, pois essa ação removerá todos os aplicativos do Office (MSI) dos dispositivos de usuários finais. Para obter mais informações, confira [Remover versões de MSI existentes do Office ao atualizar para o Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version). 
     - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo**: selecione essa opção se você não exigir que os usuários finais aceitem o contrato de licença. Com isso, o Intune aceitará automaticamente o contrato.
     - **Usar ativação do computador compartilhado**: selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: o Office é instalado automaticamente em qualquer idioma com suporte instalado com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos.

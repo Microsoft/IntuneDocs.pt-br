@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40251701"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347467"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar VPN (rede virtual privada) por aplicativo no Intune para dispositivos iOS
 
@@ -34,6 +34,7 @@ A VPN por aplicativo está disponível para os seguintes provedores:
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Pré-requisitos para a VPN por aplicativo
 
@@ -145,7 +146,7 @@ Depois de adicionar o perfil da VPN, associe o aplicativo e o grupo do Microsoft
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Escolha **Aplicativos móveis**.
+3. Escolha **Aplicativos clientes**.
 4. Clique em **Aplicativos**.
 5. Selecione o aplicativo na lista de aplicativos.
 6. Clique em **Atribuições**.
@@ -187,6 +188,10 @@ Com a VPN por aplicativo configurada e associada ao seu aplicativo, verifique se
     - Acesso por F5
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Aplicativo Zscaler
+
+    > [!NOTE]
+    > Se você estiver usando o aplicativo de VPN da Pulse Secure, haverá a opção de usar o túnel de camada de pacote ou de camada de aplicativo. Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Conectar-se usando a VPN por aplicativo
 

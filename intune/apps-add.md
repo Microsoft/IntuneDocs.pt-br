@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251679"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330153"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -62,7 +62,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativo interno Android  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativos Web  | Aplicativo Web  | Selecione **Link da Web** como o **tipo de aplicativo** e insira uma URL válida apontando para o aplicativo Web.  |
 
-Você pode adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos móveis** > **Aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** aparece e permite que você selecione o **Tipo de aplicativo**. 
+Você pode adicionar um aplicativo no Microsoft Intune, selecionando **Aplicativos clientes** > **Aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** aparece e permite que você selecione o **Tipo de aplicativo**. 
 
 >[!TIP]
 > Um aplicativo LOB é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo LOB do iOS, adicione o aplicativo selecionando **Aplicativo de linha de negócios** como o **Tipo de aplicativo** no painel **Adicionar aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
@@ -148,8 +148,8 @@ Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a c
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, selecione **Aplicativos móveis**.
-4. No painel de carga de trabalho **Aplicativos móveis**, em **Instalação**, selecione **Categorias de aplicativo**.  
+3. No painel **Intune**, selecione **Aplicativos clientes**.
+4. No painel de carga de trabalho **Aplicativos clientes**, em **Instalação**, selecione **Categorias de aplicativo**.  
     O painel **Categorias de aplicativo** exibe uma lista de categorias atuais. 
 5. Siga um destes procedimentos:
     - Para adicionar uma categoria no painel **Criar categoria**, selecione **Adicionar** e digite um nome para a categoria.  

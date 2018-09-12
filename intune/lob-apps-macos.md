@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: f907ddb631c974a9c7626483446600eae149a12c
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255478"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347389"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicativos de LOB (linha de negócios) do macOS ao Microsoft Intune
 
@@ -60,8 +60,8 @@ Você deve baixar uma ferramenta externa para pré-processar seus arquivos *.pkg
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, escolha **Aplicativos móveis**.
-4. Na carga de trabalho **Aplicativos móveis**, escolha **Gerenciar** > **Aplicativos**.
+3. No painel **Intune**, escolha **Aplicativos clientes**.
+4. Na carga de trabalho **Aplicativos clientes**, escolha **Gerenciar** > **Aplicativos**.
 5. Acima da lista de aplicativos, escolha **Adicionar**.
 6. No painel **Adicionar aplicativo**, escolha **Aplicativo de linha de negócios**.
 

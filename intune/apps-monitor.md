@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: a1cf7fbdee6e6dc0cb280c8f9473c48608485737
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40252733"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329897"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -30,7 +30,7 @@ O Intune fornece várias maneiras de monitorar as propriedades dos aplicativos q
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No menu do **Intune**, selecione **Aplicativos móveis**.
+3. No menu **Intune**, selecione **Aplicativos clientes**.
 4. Na seção **Gerenciar** do menu, selecione **Aplicativos**.
 5. Na lista de aplicativos, selecione um aplicativo para monitorar. Em seguida, você verá o painel de aplicativos com uma visão geral do status do dispositivo e do status do usuário.
 

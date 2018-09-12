@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751727"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313419"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos macOS com o Programa de registro de dispositivos da Apple
 
@@ -106,7 +106,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 1. No Intune no Portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro**.
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
 
-    ![Crie uma captura de tela de perfil.](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![Criar uma captura de tela de perfil.](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. Em **Criar Perfil**, insira um **Nome** e uma **Descrição** para o perfil para fins administrativos. Os usuários não veem esses detalhes. Você pode usar esse campo **Nome** para criar um grupo dinâmico no Azure Active Directory. Use o nome do perfil para definir o parâmetro enrollmentProfileName para atribuir dispositivos com este perfil de registro. Saiba mais sobre os [grupos dinâmicos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -119,7 +119,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
     - **Registrar sem afinidade do usuário** – escolha esta opção para dispositivos não afiliados com um único usuário. Use-a para dispositivos que executam tarefas sem acessar os dados de usuário local. Aplicativos como o aplicativo de Portal da Empresa não funcionam.
 
-6. Escolha **Configurações de Gerenciamento de Dispositivo** e selecione se deseja ou não o Registro Bloqueado para dispositivos que usam esse perfil. O **Registro Bloqueado** desabilita as configurações do macOS que permitem que o perfil de gerenciamento seja removido do menu **Preferências do Sistema** ou do **Terminal**. Depois de registrar o dispositivo, não é possível alterar esta configuração sem restaurar as configurações de fábrica.
+6. Escolha **Configurações de Gerenciamento de Dispositivo** e selecione se deseja ou não o Registro Bloqueado para dispositivos que usam esse perfil. O **Registro Bloqueado** desabilita as configurações do macOS que permitem que o perfil de gerenciamento seja removido do menu **Preferências do Sistema** ou do **Terminal**. Depois que o dispositivo é registrado, não é possível alterar essa configuração sem apagar o dispositivo.
 
     ![Captura de tela Configurações de Gerenciamento de Dispositivos.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -128,13 +128,14 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 8. Escolha as **Configurações do Assistente de Configuração** para definir as seguintes configurações de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Configurações de departamento | Descrição |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>Nome do Departamento</strong> | Aparece quando os usuários tocam em <strong>Sobre a Configuração</strong> durante a ativação. |
-    |    <strong>Telefone do Departamento</strong>     |                                                          Aparece quando o usuário clica no botão <strong>Precisa de Ajuda</strong> durante a ativação. |
+    | <strong>Telefone do Departamento</strong> | Aparece quando o usuário clica no botão <strong>Precisa de Ajuda</strong> durante a ativação. |
 
-    Você pode optar por mostrar ou ocultar uma variedade de telas do Assistente de Instalação no dispositivo quando o usuário o configura.
-    - Se você escolher **Ocultar**, a tela não será exibida durante a instalação. Depois de configurar o dispositivo, o usuário pode ainda entrar no menu **Configurações** para configurar o recurso.
-    - Se você escolher **Mostrar**, a tela será exibida durante a instalação. O usuário pode, às vezes, ignorar a tela sem executar uma ação. No entanto, é possível ir mais tarde para o menu **Configurações** do dispositivo para configurar o recurso. 
+  Você pode optar por mostrar ou ocultar uma variedade de telas do Assistente de Instalação no dispositivo quando o usuário o configura.
+  - Se você escolher **Ocultar**, a tela não será exibida durante a instalação. Depois de configurar o dispositivo, o usuário pode ainda entrar no menu **Configurações** para configurar o recurso.
+  - Se você escolher **Mostrar**, a tela será exibida durante a instalação. O usuário pode, às vezes, ignorar a tela sem executar uma ação. No entanto, é possível ir mais tarde para o menu **Configurações** do dispositivo para configurar o recurso. 
+
 
     | Configurações de tela do Assistente de Instalação | Se você escolher **Mostrar**, durante a instalação, o dispositivo... |
     |------------------------------------------|------------------------------------------|
@@ -152,6 +153,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     | <strong>Diagnóstico do iCloud</strong> | Dará ao usuário a opção de enviar dados de diagnóstico do iCloud para a Apple. |
     | <strong>Registro</strong>| Exigirá que o usuário registre o dispositivo. |
 
+   
 
 10. Selecione **OK**.
 
@@ -182,7 +184,7 @@ Você pode escolher um perfil padrão do macOS e do iOS a ser aplicado a todos o
 2. Escolha **Definir como Perfil Padrão**, selecione um perfil na lista suspensa e escolha **Salvar**. Este perfil será aplicado a todos os dispositivos registrados com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
-Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos de DEP. Agora você pode distribuir dispositivos para os usuários. Os dispositivos com afinidade de usuário requerem que cada usuário receba uma licença do Intune. Os dispositivos sem afinidade de usuário requerem uma licença de dispositivo. Um dispositivo ativado só pode ser aplicado a um perfil de registro após restaurar as respectivas configurações de fábrica.
+Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos de DEP. Agora você pode distribuir dispositivos para os usuários. Os dispositivos com afinidade de usuário requerem que cada usuário receba uma licença do Intune. Os dispositivos sem afinidade de usuário requerem uma licença de dispositivo. Um dispositivo ativado só poderá receber um perfil de registro depois que for apagado.
 
 ## <a name="renew-a-dep-token"></a>Renovar um token DEP  
 1. Acesse deploy.apple.com.  
@@ -204,4 +206,4 @@ Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e a
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Depois de registrar dispositivos macOS, você pode começar [gerenciá-los](device-management.md).
+Depois de registrar dispositivos macOS, você poderá começar a [gerenciá-los](device-management.md).
