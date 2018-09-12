@@ -1,0 +1,1 @@
+# <a name="welcome-to-device-mgmt"></a>Bem-vindo ao gerenciamento de dispositivo!
