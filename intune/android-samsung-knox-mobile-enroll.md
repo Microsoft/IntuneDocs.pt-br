@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313057"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028640"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung
 
@@ -84,7 +84,7 @@ Para dispositivos inscritos no Intune usando KME, você pode configurar como um 
 
 - **Sem associação de nome de usuário:** no Portal do Knox, em **Detalhes do dispositivo**, deixe os campos **ID de Usuário** e **Senha** em branco para os dispositivos adicionados. Isso exige que o usuário final insira o nome de usuário e a senha ao se inscrever no Intune.
 
-- **Com associação de nome de usuário:** no Portal do Knox em **Detalhes do dispositivo**, forneça uma **ID de Usuário** (como um nome de usuário para o usuário atribuído ou uma conta do [Gerenciador de Registro de Dispositivo](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)) para os dispositivos adicionados. Isso preenche previamente o nome de usuário e exige que o usuário final insira uma senha ao se inscrever no Intune.
+- **Com associação de nome de usuário:** no Portal do Knox em **Detalhes do dispositivo**, forneça uma **ID de Usuário** (como um nome de usuário para o usuário atribuído ou uma conta do [Gerenciador de Registro de Dispositivo](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)) para os dispositivos adicionados. Isso preenche previamente o nome de usuário e exige que o usuário final insira uma senha ao se inscrever no Intune.
 
 > [!NOTE]
 >

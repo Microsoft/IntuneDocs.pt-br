@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474625"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028572"
 ---
 # <a name="view-and-correct-personal-data"></a>Exibir e corrigir dados pessoais
 
@@ -33,7 +33,7 @@ Os administradores do Intune podem exibir alguns dados pessoais com base em suas
 Os administradores podem ver as informações pessoais do usuário final em várias folhas na interface do usuário do Intune. Os seguintes artigos explicam a quais informações os administradores têm e não têm acesso:
 - [Conferir os detalhes do dispositivo](device-inventory.md) no Intune explica como você pode examinar os detalhes sobre o dispositivo de um usuário final.
 - [Monitorar as informações e atribuições do aplicativo](apps-monitor.md) explica como ver detalhes sobre os aplicativos instalados no dispositivo de um usuário final.
-- O [artigo Quais informações minha empresa pode ver quando registro meu dispositivo?](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) oferece aos usuários finais uma lista de dados que suas empresas podem e não podem ver. É melhor informar os usuários com clareza sobre qual tipo de dados você está coletando e por quê. Este artigo pode ser a primeira etapa em direção à essa transparência.
+- O [artigo Quais informações minha empresa pode ver quando registro meu dispositivo?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) oferece aos usuários finais uma lista de dados que suas empresas podem e não podem ver. É melhor informar os usuários com clareza sobre qual tipo de dados você está coletando e por quê. Este artigo pode ser a primeira etapa em direção à essa transparência.
 
 ### <a name="who-can-view-the-data"></a>Quem pode exibir os dados?
 
