@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85632ffe74b3973f4e87c77933b17f522c991caf
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: a8e386e2d9b161debf65d3e639a90cb8de313ad2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223536"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602275"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticação somente no aplicativo Intune Data Warehouse
 
 Você pode configurar um aplicativo usando o Azure Active Directory (Azure AD) e autenticar para o Intune Data Warehouse. Este processo é útil para sites, aplicativos e processos em segundo plano em que o aplicativo não deve ter acesso às credenciais do usuário. Usando as etapas a seguir, você autoriza seu aplicativo com o Azure AD usando OAuth 2.0.
 
-## <a name="authorization"></a>Autorização
+## <a name="authorization"></a>Authorization
 
 O Azure Active Directory (Azure AD) usa OAuth 2.0 para que você possa autorizar o acesso a aplicativos Web e APIs Web em seu locatário do Azure AD. Este guia mostra como autenticar seu aplicativo usando C#. O fluxo de código de autorização OAuth 2.0 é descrito na seção 4.1 da especificação do OAuth 2.0. Para obter mais informações, consulte [Autorizar o acesso a aplicativos Web usando o OAuth 2.0 e o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
@@ -159,6 +159,6 @@ Usando o Visual Studio, crie um projeto de aplicativo do Console (.NET Framework
     >[!NOTE] 
     > Para ver o código de implementação adicional, confira [Exemplo de código Intune-Data-Warehouse](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximas etapas
 Saiba mais sobre o Azure Key Vault conferindo [O que é o Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
 
