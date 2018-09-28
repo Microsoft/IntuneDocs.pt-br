@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,30 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd9fb36bb1b8c5e66d104f530690c5d236ea25e4
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 08f5437141cc98161af740d7b8cad7c6cc1ff61c
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223689"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821181"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manter-se atualizado sobre as atualizações para o Intune Data Warehouse.
+
+## <a name="1808"></a>1808
+_Lançado em agosto de 2018_
+
+### <a name="v10-collections"></a>Coleções da v1.0  
+
+Agora é possível usar a versão v1.0 do Intune Data Warehouse, definindo o parâmetro de consulta `api-version=v1.0`. As atualizações em coleções no Data Warehouse são suplementares por natureza e não interrompem cenários existentes.
+
+### <a name="enrollment-failure-collection-released-to-beta"></a>Coleção Falha de Registro liberada para a versão Beta
+
+A nova coleção `Enrollment Failure` foi lançada como beta. Você pode usar essa coleção para entender a situação do seu registro, exibindo as falhas mais comuns. 
+
 
 ## <a name="1805"></a>1805
 _Lançamento: maio de 2018_

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255558"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141602"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos por meio do uso de uma conta do gerenciador de registros de dispositivo
 
@@ -53,7 +53,7 @@ Dispositivos registrados com uma conta de gerenciador de registro de dispositivo
   - O usuário do DEM não pode cancelar o registro de dispositivos registrados pelo DEM no próprio dispositivo usando o Portal da Empresa. O administrador do Intune pode cancelar o registro.
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
   - Os usuários não podem usar aplicativos VPP (Apple Volume Purchase Program) com licenças de usuário devido aos requisitos de ID da Apple para gerenciamento de aplicativo.
-  - (Somente iOS) Se você usar o DEM para registrar dispositivos iOS, não poderá usar o Apple Configurator, o Apple DEP (Programa de registro de dispositivos) nem o ASM (Apple School Manager) para registrar dispositivos.
+  - (Somente iOS) Se você usar o DEM para registrar dispositivos iOS, não poderá usar o Apple Configurator, o Apple DEP (Programa de registro de dispositivos) nem o ASM (Apple School Manager) para registrar dispositivos. Isso significa que não é possível colocar o dispositivo no modo supervisionado e, portanto, você não terá acesso a algumas opções de configuração.
   - (Somente Android) Há um limite para o número de dispositivos de perfil de trabalho Android que podem ser registrados com uma única conta do DEM. Até 10 dispositivos de perfil de trabalho do Android podem ser registrados por conta do DEM. Essa limitação não se aplica ao registro do Android herdado.
   - Os dispositivos poderão instalar aplicativos se tiverem licenças de dispositivo.
   - Uma licença de dispositivo do Intune não é necessária para usar o DEM. Saiba mais sobre [licenças de usuário e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).

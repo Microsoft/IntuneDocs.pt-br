@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330153"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141670"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -116,7 +116,7 @@ Os aplicativos gerenciados pelo Intune também podem habilitar a proteção do a
 
 ### <a name="understanding-licensed-apps"></a>Noções básicas sobre aplicativos licenciados
 Além de entender os aplicativos Web, os aplicativos da Store e os aplicativos LOB, você também deve saber qual é o destino dos aplicativos do programa de compra por volume e dos aplicativos licenciados, como: 
-- **Programa de Compra por Volume da Apple para Empresas (iOS e macOS)**: a App Store do iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
+- **Programa de Compra por Volume da Apple para Empresas (iOS)**: a App Store do iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
 - **Perfil de trabalho Android**: a maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Todos os aplicativos instalados nos perfis de trabalho Android vêm da Google Play Store gerenciada. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
 - **Microsoft Store para Empresas (Windows 10)**: a Microsoft Store para Empresas oferece um local para encontrar e comprar aplicativos para a sua organização, individualmente ou em volume. Conectando a Store ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md).
 
@@ -174,7 +174,7 @@ O Intune reinstalará, atualizará ou removerá automaticamente um aplicativo ne
 - Um administrador tem como alvo um aplicativo como disponível para um grupo de usuários e um usuário final instala o aplicativo do portal da empresa no dispositivo. Posteriormente, o administrador atualiza o aplicativo da v1 para a v2. O Intune atualizará o aplicativo quando este agendamento expirar, desde que nenhuma versão anterior do aplicativo ainda esteja presente no dispositivo.
 - Se o administrador implantar a tentativa de desinstalar e o aplicativo estiver presente no dispositivo e tiver falhado na desinstalação, o Intune avaliará a conformidade e o desinstalará quando esse agendamento expirar.   
 
-## <a name="app-installation-errors"></a>Erros de instalação de aplicativo
+## <a name="app-installation-errors"></a>Erros de instalação do aplicativo
 
 Para obter detalhes sobre erros de instalação do aplicativo Intune, consulte [Erros de instalação de aplicativo](troubleshoot-app-install.md#app-installation-errors).
 
