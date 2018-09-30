@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
-/ms.custom: intune-azure
-ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: e3049fe461553ad1ba2e714d2274e0d39d169852
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347280"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254081"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -90,7 +90,8 @@ Agora você pode habilitar o modo FIPS (padrão FIPS) para perfis de Wi-Fi da em
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Controlar o modo S em dispositivos Windows 10 e posteriores – versão prévia pública <!-- 1958649 -->
 Com essa atualização de recurso, você pode criar um perfil de configuração do dispositivo que tira um dispositivo Windows 10 do modo S ou impede que os usuários tirem o dispositivo do modo S. Esse recurso está no Intune > **Configuração do dispositivo** > **Perfis** >  **Windows 10 e posteriores** > **Atualização de edição e alternância de modo**.
 [Introducing Windows 10 in S mode](https://www.microsoft.com/windows/s-mode) (Introdução ao Windows 10 no modo S) fornece mais informações sobre o modo S.
-Aplica-se a: Windows 10 e posteriores (1809 e posteriores)
+Aplica-se a: o build mais recente do [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) (durante a versão prévia).
+
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Pacote de configuração do Windows Defender ATP adicionado automaticamente ao perfil de configuração <!-- 2144658 -->
 Ao usar a [Proteção Avançada contra Ameaças e integrar](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) dispositivos no Intune, você teve que baixar um pacote de configuração e adicioná-lo ao seu perfil de configuração. Com essa atualização, o Intune obtém automaticamente o pacote da Central de Segurança do Windows Defender e adiciona-o ao seu perfil.
@@ -98,6 +99,8 @@ Aplica-se ao Windows 10 e posteriores.
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>Exigir que os usuários se conectem durante a instalação do dispositivo <!--2311457-->
 Agora você pode definir perfis de dispositivo para exigir que o dispositivo se conecte a uma rede antes de continuar, após a página Rede, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um Windows Insider build 1809 ou posterior é necessário para usar essa configuração.
+Aplica-se a: o build mais recente do [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) (durante a versão prévia).
+
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>Restringir aplicativos e bloquear o acesso aos recursos da empresa em dispositivos iOS e Android Enterprise <!-- 2451462 -->
 Em **Conformidade de dispositivos** > **Políticas** > **Criar política** > **iOS** > **Segurança do Sistema**, há uma nova configuração **Aplicativos restritos**. Essa nova configuração usa uma política de conformidade para bloquear o acesso aos recursos da empresa quando determinados aplicativos estão instalados no dispositivo. O dispositivo é considerado não compatível até que os aplicativos restritos sejam removidos dele.
@@ -129,19 +132,24 @@ Caso você autentique um usuário por meio do Portal da Empresa e não pelo Assi
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Atribuir um usuário e nome amigável a um dispositivo do Autopilot <!--1346521 -->
 Agora você pode [atribuir um usuário a um único dispositivo do Autopilot](enrollment-autopilot.md). Os administradores também poderão atribuir nomes amigáveis para saudar o usuário durante a configuração do dispositivo com o Autopilot.
-Aplica-se a: Windows Insider 1809 ou builds posteriores (durante a versão prévia).
+Aplica-se a: o build mais recente do [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) (durante a versão prévia).
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Usar licenças de dispositivo VPP para pré-provisionar o Portal da Empresa durante o registro no DEP <!-- 1608345 -->
 Agora você pode usar licenças de dispositivo do VPP (Volume Purchase Program) para pré-provisionar o Portal da Empresa durante os registros no DEP (Programa de registro de dispositivos). Para fazer isso, quando você [criar ou editar um perfil de registro](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), especifique o token VPP que deseja usar para instalar o Portal da Empresa. Verifique se o token não expira e se você tem licenças suficientes para o aplicativo de Portal da Empresa. Caso o token for expirar ou for executado sem licenças, o Intune enviará por push o Portal da Empresa da App Store (uma ID da Apple será solicitada).
 
+### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>Confirmação necessária para excluir o token do VPP que está sendo usado para o pré-provisionamento do Portal da Empresa <!-- 2237634 -->
+Agora será necessária uma confirmação para excluir um token do VPP (Volume Purchase Program) se ele estiver sendo usado para pré-provisionar o Portal da Empresa durante o registro no DEP.
+
 #### <a name="block-windows-personal-device-enrollments----1849498---"></a>Bloquear registros de dispositivos Windows pessoais <!-- 1849498 -->
-Você pode [bloquear o registro de dispositivos pessoais do Windows](enrollment-restrictions-set.md#set-device-type-restrictions) no [gerenciamento de dispositivo móvel](windows-enroll.md) no Intune. Os dispositivos registrados com o [agente Intune PC](manage-windows-pcs-with-microsoft-intune.md) não podem ser bloqueados com esse recurso.
+Você pode [bloquear o registro de dispositivos pessoais do Windows](enrollment-restrictions-set.md#set-device-type-restrictions) no [gerenciamento de dispositivo móvel](windows-enroll.md) no Intune. Os dispositivos registrados com o [agente Intune PC](manage-windows-pcs-with-microsoft-intune.md) não podem ser bloqueados com esse recurso. Esse recurso será implantado nas próximas semanas, portanto, talvez você não o veja imediatamente na interface do usuário.
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Especificar os padrões de nome de computador em um perfil do Autopilot <!--1849855-->
-Você pode [especificar um modelo de nome do computador](enrollment-autopilot.md#create-an-autopilot-deployment-profile) para gerar e definir o [nome do computador](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) durante o registro do Autopilot.
+Você pode [especificar um modelo de nome do computador](enrollment-autopilot.md#create-an-autopilot-deployment-profile) para gerar e definir o [nome do computador](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) durante o registro do Autopilot. Aplica-se a: o build mais recente do [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) (durante a versão prévia).
+
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Ocultar as opções de alteração de conta na página de entrada e na página de erro de domínio da empresa <!--1901669 --> para os perfis do Windows Autopilot
-Há [novas opções de perfil do Windows Autopilot](enrollment-autopilot.md#create-an-autopilot-deployment-profile) para os administradores ocultarem as opções de alteração de conta nas páginas de entrada e de erro de domínio da empresa. Para ocultar essas opções, é necessário configurar uma Identidade Visual da Empresa no Azure Active Directory. Aplica-se a: Windows Insider 1809 ou builds posteriores (durante a versão prévia).
+Há [novas opções de perfil do Windows Autopilot](enrollment-autopilot.md#create-an-autopilot-deployment-profile) para os administradores ocultarem as opções de alteração de conta nas páginas de entrada e de erro de domínio da empresa. Para ocultar essas opções, é necessário configurar uma Identidade Visual da Empresa no Azure Active Directory. Aplica-se a: o build mais recente do [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) (durante a versão prévia).
+
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Usar licenças de dispositivo VPP para pré-provisionar o Portal da Empresa durante o registro no DEP <!-- 1608345 -->
 Agora você pode usar licenças de dispositivo do VPP (Volume Purchase Program) para pré-provisionar o Portal da Empresa durante os registros no DEP (Programa de registro de dispositivos). Para fazer isso, quando você [criar ou editar um perfil de registro](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), especifique o token VPP que deseja usar para instalar o Portal da Empresa. Verifique se o token não expira e se você tem licenças suficientes para o aplicativo de Portal da Empresa. Caso o token for expirar ou for executado sem licenças, o Intune enviará por push o Portal da Empresa da App Store (uma ID da Apple será solicitada).
@@ -1273,6 +1281,25 @@ Você pode especificar aplicativos negados no Intune. Se um aplicativo for negad
 
 
 ## <a name="notices"></a>Avisos
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Plano de mudança: experiência de suporte do Intune para clientes do Premier 
+Como um cliente do Premier da Microsoft, atualmente você pode usar o portal do Microsoft Premier Online (MPO) (premier.microsoft.com) e o Intune no Azure (portal.azure.com) para criar solicitações de suporte do Intune. A partir de 3 de dezembro de 2018, para continuar aprimorando a experiência de suporte do Premier, você poderá criar solicitações de suporte apenas no Intune no Azure.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Após 3 de dezembro, não será possível criar solicitações de suporte no MPO.  Ao tentar fazer isso, você verá um prompt que não poderá ignorar, para ser redirecionado ao Intune no Azure. Lá, é possível criar uma solicitação de suporte que será encaminhada ao Suporte da Microsoft dedicado ao Intune para diagnosticar e resolver o problema de maneira oportuna. As solicitações de suporte criadas no portal do MPO não podem ser exibidas no Portal do Azure, portanto, interrompa a criação de solicitações de suporte no MPO.  
+
+Se você usa o gerenciamento de dispositivo móvel híbrido (MDM híbrido) ou o cogerenciamento, pode continuar a usar o MPO para criar solicitações de suporte para o ConfigMgr, mas usar o Portal do Azure para criar solicitações de suporte do Intune. Como lembrete, o MDM híbrido é preterido, e você deve planejar a migração para o Intune no Azure assim que possível. Para saber mais, confira Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure.
+
+Somente usuários com funções de Administrador global, Administrador de serviços do Intune e Administrador de suporte ao serviço podem criar tíquetes de suporte no Portal do Azure.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
+- Pare de usar o MPO e use o Intune no Azure para criar e gerenciar todas as suas solicitações de suporte do Intune.  
+- Notifique a assistência técnica e atualize a documentação, se necessário.
+- Se houver usuários sem funções de Administrador global ou Administrador de serviços do Intune criando solicitações de suporte no MPO, atribua a eles a função de Administrador de suporte ao serviço no Azure Active Directory, para que eles possam continuar a criar tíquetes de suporte no Portal do Azure.
+- Para obter mais informações e links úteis, clique em Informações Adicionais.
+
+#### <a name="additional-information"></a>Informações adicionais
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Executar ação: atualize as configurações de senha de política de conformidade ou de restrição do dispositivo Android no Intune
 O Intune removerá o tipo de senha "dispositivo padrão" disponível para dispositivos Android 4.4 superiores. Devido às diferenças em plataformas Android e dispositivos padrão, essa política geralmente é tratada como opcional pelo dispositivo. Para esclarecer dúvidas sobre quando essa configuração é aplicada no Android, removeremos essa configuração da interface do usuário em uma versão futura. 
