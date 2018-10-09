@@ -3,8 +3,8 @@ title: Configurar a integração de bloqueio com o Microsoft Intune
 titlesuffix: ''
 description: Saiba como integrar o Intune com a Defesa contra Ameaças Móveis do Lookout para controlar o acesso de dispositivos móveis aos recursos corporativos.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029858"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232165"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a integração da Defesa contra Ameaças Móveis do Lookout com o Intune
 
@@ -93,7 +93,7 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
     ![captura de tela da página de registro do conector do Intune](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > O **Nome de Exibição** diferencia maiúsculas de minúsculas, conforme mostrado nas **Propriedades** do grupo de segurança no Portal do Azure. Conforme mostrado na imagem abaixo, o **Nome de Exibição** do grupo de segurança tem minúsculas concatenadas, enquanto o título tem todas as letras minúsculas. No console do Lookout, faça a correspondência de maiúsculas e minúsculas do **Nome de Exibição** do grupo de segurança.
+    > O **Nome de Exibição** diferencia maiúsculas de minúsculas, conforme mostrado nas **Propriedades** do grupo de segurança no Portal do Azure. Conforme é mostrado na imagem abaixo, o **Nome de Exibição** do grupo de segurança apresenta letras minúsculas concatenadas, enquanto o título apresenta todas as letras minúsculas. No console do Lookout, faça a correspondência de maiúsculas e minúsculas do **Nome de Exibição** do grupo de segurança.
     >![captura de tela do portal do Azure, serviço do Azure Active Directory, página de propriedades](./media/aad-group-display-name.png)
 
     >[!NOTE] 
