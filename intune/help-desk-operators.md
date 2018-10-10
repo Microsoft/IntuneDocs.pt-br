@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
+ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251699"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229068"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usar o portal de solução de problemas para ajudar os usuários na sua empresa
 
@@ -36,7 +36,7 @@ Quando um usuário contata o suporte com um problema técnico com o Intune, o op
 - Status do usuário
 - Atribuições
 - Problemas de conformidade
-- Dispositivo não
+- O dispositivo não está respondendo
 - O dispositivo não consegue obter configurações de VPN ou Wi-Fi
 - Falha na instalação do aplicativo
 
@@ -48,7 +48,7 @@ No painel de solução de problemas, escolha **Selecionar usuário** para exibir
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. No painel **Intune**, escolha **Solucionar problemas**.
 4. Clique em **Selecionar** para selecionar um usuário cujos problemas serão solucionados.
-5. Selecione um usuário digitando o nome ou o endereço de email. Clique em **Selecionar**. As informações de solução de problemas do usuário são mostradas no painel Solução de problemas. As tabelas a seguir explica as informações.
+5. Selecione um usuário digitando o nome ou o endereço de email. Clique em **Selecionar**. As informações de solução de problemas do usuário são mostradas no painel Solução de problemas. A tabela a seguir explica as informações.
 
 > [!Note]  
 > Você também pode acessar o painel **solução de problemas** apontando o navegador para: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -64,16 +64,18 @@ Você pode usar o painel **Solucionar problemas** para examinar as informações
 | 1.   | Status da conta  | Mostra o status do locatário do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção de usuários  | O nome do usuário selecionado no momento. Clique em **Alterar usuário** para escolher um novo usuário.       |
 | 3.   | Status do usuário  | Exibe o status da licença do Intune do usuário, o número de dispositivos, a conformidade de cada dispositivo, o número de aplicativos e a conformidade dos aplicativos.       |
-| 4.   | Informações do usuário  | Use a lista para selecionar os detalhes a serem examinados no painel. <br>Você pode selecionar: <ul><li>Aplicativos móveis<li>Políticas de proteção do aplicativo<li>Políticas de conformidade<li> Políticas de configuração</ul>      |
+| 4.   | Informações do usuário  | Use a lista para selecionar os detalhes a serem examinados no painel. <br>Você pode selecionar: <ul><li>Aplicativos cliente<li>Políticas de conformidade<li> Políticas de configuração<li>Políticas de proteção do aplicativo <li>Restrições de registro</ul>      |
 | 5.   | Associação de grupo  | Mostra os grupos atuais dos quais o usuário selecionado é membro.       |
 
-## <a name="mobile-apps-reference"></a>Referência de aplicativos móveis
+## <a name="client-apps-reference"></a>Referência de aplicativos cliente
 
-Os aplicativos que são executados nos dispositivos ou os dispositivos pertencentes aos usuários gerenciados pelo Intune e pelo AD (Azure Active Directory).
+Os aplicativos que são executados nos dispositivos
+- gerenciados pelo Intune e o AD (Azure Active Directory) 
+- pertencente aos usuários gerenciados pelo Intune e o AD (Azure Active Directory).
 
 ### <a name="properties"></a>Propriedades
 
-As propriedades dos aplicativos móveis.
+As propriedades dos aplicativos cliente.
 
 | Propriedade      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +93,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Nome do dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
 | Gerenciado por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 | Tipo de ingresso no Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
@@ -100,20 +102,20 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 
 ### <a name="app-protection-status"></a>Status de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS (Enterprise Mobility Solution). Isso fornece uma linha de base de proteção para os dados da empresa quando eles são baixados em aplicativos móveis, incluindo os aplicativos do Office Mobile. 
+Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS (Enterprise Mobility Solution). Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
+| Status      | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**). |
 | Nome do aplicativo    | O nome do aplicativo                                                           |
 | Nome do dispositivo | O nome do tipo de dispositivo.                                                       |
 | Tipo de dispositivo | O nome do tipo de dispositivo.                                                       |
-| Políticas    | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
+| Políticas    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**). |
 | Última sincronização   | O carimbo de data/hora da última vez em que o dispositivo foi sincronizado com o Intune.                   |
 
 ## <a name="app-protection-policies-reference"></a>Referência de políticas de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Isso fornece uma linha de base de proteção para os dados da empresa quando eles são baixados em aplicativos móveis, incluindo os aplicativos do Office Mobile. 
+Uma política de proteção de aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas oferecem uma linha de base de proteção para seus dados corporativos quando ele é baixado em aplicativos móveis, incluindo aplicativos móveis do Office. 
 
 ### <a name="properties"></a>Propriedades
 
@@ -123,7 +125,7 @@ A tabela resume o status das políticas de proteção do aplicativo para disposi
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nome        | O nome do aplicativo.                                                                                                        |
 | Implantado    | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| Plataforma    | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Plataforma    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Registro  | O nome do tipo de dispositivo.                                                                                                     |
 | Última atualização | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 
@@ -136,7 +138,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Nome do Dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
 | Gerenciados por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 | Tipo de ingresso no Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
@@ -157,7 +159,7 @@ As propriedades das políticas de conformidade.
 | Atribuição    | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Nome          | O nome do aplicativo.                                                                                                        |
 | SO            | O sistema operacional instalado no dispositivo.                                                                                       |
-| Tipo de política   | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Tipo de política   | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** e **Desconhecido**).                                               |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                     |
 
 ### <a name="devices"></a>Dispositivos
@@ -169,7 +171,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Nome do dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
 | Gerenciado por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 | Tipo de ingresso no Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** e **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
@@ -178,15 +180,15 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 
 ### <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Isso fornece uma linha de base de proteção para os dados da empresa quando eles são baixados em aplicativos móveis, incluindo os aplicativos do Office Mobile. 
+Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
+| Status      | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**). |
 | Nome do aplicativo    | O nome do aplicativo                                                           |
 | Nome do dispositivo | O nome do tipo de dispositivo.                                                       |
 | Tipo de dispositivo | O nome do tipo de dispositivo.                                                       |
-| Políticas    | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
+| Políticas    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**). |
 | Última sincronização   | O carimbo de data/hora da última vez em que o dispositivo foi sincronizado com o Intune.                   |
 
 ## <a name="configuration-policies-reference"></a>Referência de políticas de configuração
@@ -202,7 +204,7 @@ As propriedades das políticas de configuração.
 | Atribuição    | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | Nome          | O nome do aplicativo.                                                                                                        |
 | SO            | O sistema operacional instalado no dispositivo.                                                                                       |
-| Tipo de política   | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Tipo de política   | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                     |
 
 ### <a name="devices"></a>Dispositivos
@@ -214,7 +216,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Nome do dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
 | Gerenciado por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 | Tipo de ingresso no Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
-| Propriedade          | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
 | SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
@@ -224,16 +226,53 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 
 ### <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Isso fornece uma linha de base de proteção para os dados da empresa quando eles são baixados em aplicativos móveis, incluindo os aplicativos do Office Mobile. 
+Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
+| Status      | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**). |
 | Nome do aplicativo    | O nome do aplicativo                                                           |
 | Nome do dispositivo | O nome do tipo de dispositivo.                                                       |
 | Tipo de dispositivo | O nome do tipo de dispositivo.                                                       |
-| Políticas    | O tipo de propriedade do dispositivo. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
+| Políticas    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**). |
 | Última sincronização   | O carimbo de data/hora da última vez em que o dispositivo foi sincronizado com o Intune.                   |
+
+## <a name="enrollment-failure-reference"></a>Referência de falha de registro
+
+A tabela Falhas de Registro lista as tentativas de registro que falharam. Um dispositivo listado na tabela a seguir pode ter sido registrado com êxito posteriormente durante outra tentativa. Algumas tentativas com falha não podem ser listadas. As informações de mitigação não estão disponíveis para todas as falhas.
+
+| Coluna da tabela | Descrição |
+|-------------|----------|
+| Início do registro | A hora de início quando o usuário iniciou o registro. |
+| SO | O sistema operacional do dispositivo. |
+| Versão do SO | A versão do sistema operacional do dispositivo. |
+| Falha | O motivo da falha. |
+
+### <a name="failure-details"></a>Detalhes da falha
+
+Quando você escolhe uma linha de falha, mais detalhes são fornecidos.
+
+| Seção | Descrição |
+|-------------|----------|
+| Detalhes da falha | Uma explicação mais detalhada da falha. |
+| Possíveis correções | As etapas sugeridas para resolver o erro. Algumas falhas podem não ter correção. |
+| Recursos (opcional) | Links para leitura adicional ou áreas no portal para agir. |
+
+### <a name="enrollment-errors"></a>Erros de registro
+
+| Erro do | Detalhes |
+|-------------|----------|
+| Tempo limite excedido ou falha de iOS | O tempo limite foi excedido entre o dispositivo e o Intune porque o usuário demorou muito para concluir o registro. |
+| O usuário não foi encontrado nem licenciado | O usuário não tem uma licença ou foi removido do serviço. |
+| Dispositivo já registrado | Alguém tentou registrar um dispositivo usando o Portal da empresa em um dispositivo que ainda está registrado por outro usuário. |
+| Não integrado ao Intune | Ocorreu uma tentativa de registro quando a autoridade de MDM (gerenciamento de dispositivo móvel) do Intune não estava configurada. |
+| Falha de autorização de registro | Ocorreu uma tentativa de registro usando uma versão antiga do portal da empresa. |
+| Dispositivo incompatível | O dispositivo não cumpre os requisitos mínimos para registro no Intune. |
+| Restrições de registro não cumpridas | Esse registro foi bloqueado devido a uma restrição de registro configurada pelo administrador. |
+| Limite do dispositivo associado | Esse registro foi bloqueado devido a uma restrição de limite de registro configurada pelo administrador. |
+| Integração de Apple | Todos os dispositivos iOS foram impedidos de se registrar no momento devido à ausência ou expiração de um Apple MDM Push Certificate no Intune. |
+| Dispositivo não pré-registrado | O dispositivo não foi previamente registrado como corporativo e todos os registros pessoais foram bloqueados por um administrador. |
+| Recurso incompatível | O usuário provavelmente tentou fazer o registro por um método incompatível com a configuração do Intune. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Coletar dados disponíveis do dispositivo móvel
 

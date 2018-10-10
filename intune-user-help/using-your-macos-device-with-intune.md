@@ -1,11 +1,11 @@
 ---
-title: Usando o dispositivo iOS ou macOS com o Intune | Microsoft Docs
-description: Lista de links para tarefas que podem ser realizadas em dispositivos móveis iOS ou macOS quando o dispositivo está registrado no Intune
+title: Usar seu dispositivo macOS com o Intune | Microsoft Docs
+description: Encontre links para solucionar problemas ou gerenciar seu dispositivo móvel macOS no aplicativo do Portal da Empresa
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771849"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168906"
 ---
-# <a name="using-your-macos-device-with-intune"></a>Usando seu dispositivo macOS com o Intune
+# <a name="using-your-macos-device-with-intune-company-portal"></a>Usar seu dispositivo macOS com o Portal da Empresa do Intune
 
-Há várias coisas que você pode fazer com o Intune para facilitar sua vida profissional. Esta é uma lista das tarefas mais comuns que sua empresa pode exigir de você.
+Este artigo lista as tarefas e informações específicas para o Portal da Empresa para macOS. Use-o para ajudar a solucionar problemas e gerenciar seu dispositivo macOS. Clique em qualquer link para ver mais detalhes, etapas e capturas de tela. 
 
 ## <a name="supported-versions"></a>Versões com suporte
 
-No momento, o Intune é compatível com o OS X El Capitan 10.11 e posteriores nos dispositivos macOS.
+No momento, o Portal da Empresa para macOS é compatível com o OS X El Capitan 10.11 e versões posteriores nos dispositivos macOS.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrando no Intune e instalando o Portal da Empresa
 

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027461"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187828"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional no portal clássico do Intune para o Portal do Azure
 
@@ -179,6 +179,9 @@ Se você tiver definido as configurações do Exchange Active Sync como parte de
 12. Na folha de política de acesso condicional **Novo**, ative o botão de alternância **Habilitar política** e clique em **Criar**.
 
     ![Imagem mostrando Habilitar a comparação de interface do usuário da política de acesso condicional entre os Portais do Intune e do Azure](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> Se você definir **Plataformas de dispositivo**, ocorrerá uma falha ao salvar a política com o erro “Configuração de política incompatível”. O Exchange ActiveSync não poderá identificar a plataforma que está sendo usada pelo dispositivo que está se conectando. Portanto, não há suporte para a configuração de plataformas de dispositivo específicas ao criar uma política para dispositivos do Exchange ActiveSync.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Desabilitar as políticas de acesso condicional no Portal Clássico do Intune
 

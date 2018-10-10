@@ -5,8 +5,8 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 10/24/2016
-ms.topic: article
+ms.date: 09/25/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,140 +14,66 @@ ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ef3b442c5d2cdb731fc906bb865d280729b163a
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 61bc1141456294cf6d132ca5f3a682225f0207dd
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238139"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187896"
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acesso condicional
 
-Normalmente, um usuário está tentando acessar o email ou o SharePoint e recebe uma solicitação para registrar. Essa solicitação levará o usuário para o portal da empresa.
+É possível proteger o acesso a serviços do Office 365 como o Exchange Online, SharePoint Online, Skype for Business Online, Exchange no Local e a outros serviços usando o Intune e o acesso condicional. Essa funcionalidade permite que você garanta que o acesso aos recursos da empresa está restrito aos dispositivos que estão registrados no Intune e em conformidade com as regras de acesso condicional definidas no console de administração do Intune ou no Azure Active Directory. Este artigo descreve o que fazer quando os usuários não obtêm acesso aos recursos protegidos com acesso condicional, ou quando os usuários podem acessar os recursos protegidos que deveriam estar bloqueados.
 
-Este artigo descreve o que fazer quando os usuários não conseguem obter acesso aos recursos por meio do acesso condicional do Intune.
+## <a name="requirements-for-conditional-access"></a>Requisitos para acesso condicional
 
+Os seguintes requisitos precisam ser cumpridos para que o acesso condicional funcione:
 
-## <a name="the-basics-for-success-in-conditional-access"></a>Os conceitos básicos para o sucesso no acesso condicional
-
-Para que o acesso condicional funcione, são necessárias as seguintes condições:
-
--   O dispositivo deve ser gerenciado pelo Intune.
--   O dispositivo precisa estar registrado no AAD (Azure Active Directory). Em circunstâncias normais, esse registro ocorre automaticamente durante o registro do Intune
--   O dispositivo deve ser compatível com suas políticas de conformidade do Intune, tanto para o dispositivo quanto para o usuário do dispositivo.  Se não houver nenhuma política de conformidade, o registro do Intune será suficiente.
--   O Exchange ActiveSync deverá ser ativado no dispositivo se o usuário estiver recuperando mensagens por meio do cliente de email nativo do dispositivo em vez de por meio do Outlook. Isso ocorre automaticamente para dispositivos iOS, Windows Phone e Android/KNOX Standard.
--   O Intune Exchange Connector deve estar configurado corretamente. Consulte [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Solução de problemas do Exchange Connector no Microsoft Intune) para obter mais informações.
+- O dispositivo precisa ser registrado e gerenciado pelo Intune.
+- Tanto o usuário quanto o dispositivo precisam estar em conformidade com as políticas de conformidade atribuídas no Intune.
+- Por padrão, o usuário precisa receber uma política de conformidade de dispositivo. Isso pode depender de como a configuração **Marcar dispositivos sem política de conformidade atribuída como** está configurada em **Conformidade do dispositivo** > **Configurações de política de conformidade** no portal de administração do Intune.
+-   O Exchange ActiveSync precisará ser ativado no dispositivo se o usuário estiver usando o cliente de email nativo do dispositivo em vez do Outlook. Isso ocorre automaticamente para dispositivos iOS, Windows Phone e Android.
+-   O Intune Exchange Connector precisa estar devidamente configurado. Consulte [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Solução de problemas do Exchange Connector no Microsoft Intune) para obter mais informações.
 
 Exiba essas condições para cada dispositivo no portal do Azure e no relatório de inventário de dispositivo.
 
-## <a name="enrollment-issues"></a>Problemas de registro
+## <a name="devices-appear-compliant-but-users-are-still-blocked"></a>Os dispositivos aparecem em conformidade, mas os usuários ainda estão bloqueados
 
- -  O dispositivo não está registrado, portanto o registro resolverá o problema.
- -  O usuário registrou o dispositivo, mas houve falha no ingresso no local de trabalho. O usuário deve atualizar o registro por meio do portal da empresa.
+- Dispositivos Android que não são Knox não terão acesso até que o usuário clique no link **Comece agora mesmo** no email de quarentena que eles receberam. Isso se aplicará mesmo se o usuário já estiver registrado no Intune. Se o usuário não receber o email com o link no smartphone dele, ele poderá usar um computador para acessar o email e encaminhá-lo para uma conta de email no dispositivo.
+- Quando um dispositivo é registrado pela primeira vez, pode levar algum tempo para que as informações de conformidade sejam registradas para um dispositivo. Aguarde alguns minutos e tente novamente.
+- Para dispositivos iOS, um perfil de email existente pode bloquear a implantação de um perfil de email criado pelo administrador do Intune atribuído a esse usuário, tornando o dispositivo não compatível. Nesse cenário, o aplicativo do Portal da Empresa informará o usuário de que ele não está em conformidade devido ao perfil de email configurado manualmente, e solicitará que o usuário remova esse perfil. Depois que o usuário remover o perfil de email existente, o perfil de email do Intune será implantado com êxito. Para evitar esse problema, instrua os usuários a removerem quaisquer perfis de email existentes no dispositivo antes de se registrarem.
+- Um dispositivo pode ficar parado em um estado de verificação de conformidade, impedindo que o usuário inicie outro check-in. Se você tiver um dispositivo nesse estado, tente fazer o seguinte:
+  - Verifique se o dispositivo está usando a versão mais recente do aplicativo do Portal da empresa.
+  - Reinicie o dispositivo.
+  - Veja se o problema persiste em redes diferentes (por exemplo, celular, Wi-Fi, etc.).
 
-## <a name="compliance-issues"></a>Problemas de conformidade
+  Se o problema continuar, entre em contato com o Suporte da Microsoft, conforme descrito em [obter suporte para o Microsoft Intune](get-support.md).
+- Certos dispositivos Android podem parecer criptografados, mas o aplicativo do Portal da Empresa os reconhece como não criptografados, tornando-os incompatíveis. Nesse cenário, o usuário verá uma notificação no aplicativo do Portal da Empresa solicitando a definição de uma senha de inicialização para o dispositivo. Depois de tocar na notificação e confirmar o PIN ou a senha atual, escolha a opção **Exigir PIN para iniciar o dispositivo** na tela **Proteger inicialização** e, em seguida, toque no botão **Verificar conformidade** para o dispositivo no aplicativo do Portal da Empresa. Agora o dispositivo deve ser detectado como criptografado. 
+  > [!NOTE]
+  > Alguns fabricantes criptografam seus dispositivos usando um PIN padrão em vez daquele definido pelo usuário. A criptografia de exibições do Intune usando um PIN padrão é insegura e marcará tais dispositivos como incompatíveis até que o usuário crie uma nova senha, um PIN não padrão.
+- Um dispositivo Android registrado e em conformidade ainda pode ser bloqueado e receber um aviso de quarentena ao tentar acessar recursos corporativos pela primeira vez. Se isso ocorrer, verifique se o aplicativo do Portal da Empresa não está em execução e clique no link **Comece a usar agora mesmo** no email de quarentena para disparar a avaliação. Só será necessário fazer isso quando o acesso condicional é habilitado pela primeira vez.
 
-- O dispositivo não é compatível com a política do Intune. Problemas comuns são requisitos de senha e criptografia. O usuário será redirecionado para o portal da empresa, em que ele pode configurar seu dispositivo para que seja compatível.
-- Pode levar algum tempo para que as informações de conformidade sejam registradas para um dispositivo. Aguarde alguns minutos e tente novamente.
-- Para dispositivos iOS:
-  - Um perfil de email existente criado pelo usuário bloqueia a implantação de um perfil criado pelo administrador do Intune. Esse problema é comum, pois os usuários do iOS normalmente criarão um perfil de email e, em seguida, se registrarão. O Portal da Empresa informa o usuário de que ele não está em conformidade devido ao seu perfil de email configurado manualmente e solicita que o usuário remova esse perfil. O usuário deve remover seu perfil de email para que o perfil do Intune possa ser implantado. Para evitar esse problema, instrua os usuários a fazer o registro sem instalar um perfil de email e permitir que o Intune implante o perfil.
-  - Um dispositivo iOS pode ficar parado em um estado de verificação de conformidade, impedindo que o usuário inicie outro check-in. Reiniciar o portal da empresa pode corrigir isso, e o estado da conformidade refletirá o estado do dispositivo no Intune. Depois que todos os dados forem coletados de uma sincronização de dispositivo, a verificação de conformidade será rápida, levando em média menos da metade de uma segundo.
+## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Os dispositivos estão bloqueados e nenhum email de quarentena foi recebido
 
-    Normalmente, o motivo para os dispositivos permanecerem nesse estado é porque eles estão com problemas de conexão com o serviço ou a sincronização está levando muito tempo.  Se o problema persistir em diferentes configurações de rede (celular, Wi-Fi, VPN), após várias reinicializações do dispositivo e após a verificação de que o SSP está atualizado no dispositivo, contate o Suporte da Microsoft, conforme descrito em [Obter suporte para o Microsoft Intune](get-support.md).
+- Verifique se o dispositivo existe no console de administração do Intune como um dispositivo do Exchange ActiveSync. Se não, é provável que a descoberta de dispositivos esteja falhando, provavelmente devido a um problema do Exchange Connector. Consulte [Solucionar problemas do Intune Exchange Connector no Local](troubleshoot-exchange-connector.md) para obter mais informações.
+- Antes do Exchange Connector bloquear um dispositivo, ele envia um email de ativação (quarentena). Se o dispositivo estiver offline, ele poderá não receber o email de ativação. 
+- Verifique se o cliente de email no dispositivo está configurado para recuperar emails usando **Push** em vez de **Pull**. Nesse caso, isso poderia fazer com que o usuário perca o email. Mude para **Pull** e veja se o dispositivo recebe o email.
 
-- Para dispositivos Android:
-   - Certos dispositivos Android parecem ser criptografados, mas o aplicativo de Portal da Empresa reconhece esses dispositivos como não criptografados. 
-    
-       -   Os dispositivos nesse estado exigem que o usuário defina uma senha de inicialização segura. O usuário verá uma notificação do dispositivo no aplicativo Portal da Empresa solicitando uma senha de inicialização para o dispositivo. Depois de tocar na notificação do dispositivo e confirmar o PIN existente ou a senha, escolha a opção **Exigir PIN para iniciar o dispositivo** na tela **Proteger inicialização**. Em seguida, toque no botão **Verificar Conformidade** do dispositivo no aplicativo Portal da Empresa. Agora o dispositivo deve ser detectado como criptografado.
-    
-       -   Alguns fabricantes de dispositivos criptografam seus dispositivos usando um PIN padrão em vez do PIN secreto definido pelo usuário. O Intune reconhece a criptografia usando o PIN padrão como inseguro, pois esse método de criptografia pode colocar os dados no dispositivo em risco, podendo ser acessados por usuários mal-intencionados com acesso físico ao dispositivo. Se esse for o problema, considere o uso de [políticas de proteção do aplicativo](app-protection-policies.md).
+## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Os dispositivos são incompatíveis, mas os usuários não estão bloqueados
 
-## <a name="policy-issues"></a>Problemas de política
+- Para computadores Windows, o acesso condicional bloqueia somente o aplicativo de email nativo, o Office 2013 com autenticação moderna ou o Office 2016. O bloqueio de versões anteriores do Outlook ou de todos os aplicativos de email em computadores Windows exige o Registro de Dispositivo do Azure Active Directory e as configurações do AD FS (Serviços de Federação do Active Directory) de acordo com o artigo [Configurar o SharePoint Online e o Exchange Online para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
+- Se o dispositivo for seletivamente desativado ou apagado do Intune, ele poderá continuar a ter acesso por várias horas após a desativação. Isso ocorre porque o Exchange armazena em cache os direitos de acesso por 6 horas. Considere outros meios de proteção de dados em dispositivos desativados neste cenário.
+- Dispositivos do Surface Hub são compatíveis com o acesso condicional. É preciso implantar a política de conformidade para os grupos de dispositivos (não grupo de usuários) para avaliação correta.
+- Verifique as atribuições das suas políticas de conformidade e as políticas de acesso condicional. Se um usuário não estiver no grupo que recebe as políticas ou se estiver em um grupo que está sendo excluído, ele não será bloqueado. Somente a conformidade dos dispositivos de usuários em um grupo atribuído é verificada.
 
-Quando você cria uma política de conformidade e a vincula a uma política de email, ambas as políticas precisam ser implantadas para o mesmo usuário. Portanto, tenha cuidado ao planejar quais políticas são implantadas em quais grupos. Os usuários que têm apenas uma política aplicada têm uma probabilidade de descobrir que seus dispositivos não são compatíveis.
-
-
-## <a name="exchange-activesync-issues"></a>Problemas com o Exchange ActiveSync
-
-### <a name="compliant-android-device-gets-quarantine-notice"></a>Um dispositivo Android compatível recebe aviso de quarentena
-- Um dispositivo Android registrado e em conformidade ainda pode receber um aviso de quarentena ao tentar acessar recursos corporativos. Antes de escolher o link que diz **Começar**, o usuário deve verificar se o portal da empresa não estava aberto quando ele tentou acessar os recursos. Os usuários devem fechar o portal da empresa, tente novamente para acessar os recursos e, em seguida, escolher o link **Começar**.
-
-### <a name="retired-device-continues-to-have-access"></a>Um dispositivo desativado continua tendo acesso.
-- Durante a utilização do Exchange Online, um dispositivo desativado pode continuar tendo acesso por várias horas após a desativação. Isso ocorre porque o Exchange armazena em cache os direitos de acesso por 6 horas. Considere outros meios de proteção de dados em dispositivos desativados neste cenário.
-
-### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>O dispositivo é compatível e registrado com o AAD, mas ainda é bloqueado
-- Às vezes, o provisionamento da EASID (ID do Exchange ActiveSync) para o AAD é atrasado. Uma causa comum desse problema é a limitação, então, aguarde alguns minutos e tente novamente.
-
-### <a name="device-blocked"></a>Dispositivo bloqueado
-
-Um dispositivo pode ser bloqueado do Acesso condicional sem receber um email de ativação.
-
-- Há uma regra padrão do Exchange que coloca os dispositivos em quarentena ou os bloqueia? Se uma regra padrão bloquear ou colocar os dispositivos em quarentena, os dispositivos não poderão receber o email de ativação do Exchange Connector. Isso ocorre por design.
-- A conta de notificação está configurada corretamente conforme descrito na configuração básica?
-- O dispositivo está presente no console de administração do Intune como um dispositivo do Exchange ActiveSync? Se não, é provável que a descoberta do dispositivo esteja falhando, provavelmente devido a um problema de sincronização do Exchange Connector. Consulte O dispositivo do Exchange ActiveSync não é descoberto no Exchange.
-- Verifique os logs do Exchange Connector quanto à atividade de envio de email e verifique se há erros. Um exemplo de comando a ser procurado é EnviarEmail da conta de notificação para EmailUsuário.
-- Antes de bloquear o dispositivo, o Exchange Connector envia o email de ativação. Se o dispositivo estiver offline, ele poderá não receber o email de ativação. Verifique se o cliente de email do dispositivo tem recuperação de email usando Push em vez de Pull, pois isso também pode fazer com que o usuário perca o email. Mude para Pull e veja se o dispositivo recebe o email.
-
-## <a name="noncompliant-device-not-blocked"></a>Dispositivo incompatível não bloqueado
+## <a name="noncompliant-device-is-not-blocked"></a>Dispositivo incompatível não bloqueado
 
 Se você encontrar um dispositivo que não é compatível, mas continua tendo acesso, execute as etapas a seguir.
-
 - Analise os grupos de Destino e Exclusão. Se um usuário não estiver no grupo de destino correto ou estiver no grupo de exclusão, ele não será bloqueado. Somente os dispositivos de usuários em um grupo de Destino são verificados quanto à conformidade.
 - Certifique-se de que o dispositivo esteja sendo descoberto. O Exchange Connector está apontando para uma CAS do Exchange 2010 enquanto o usuário está em um servidor Exchange 2013? Nesse caso, se a regra padrão do Exchange for Permitir, mesmo se o usuário estiver no grupo de Destino, o Intune não poderá estar ciente da conexão do dispositivo com o Exchange.
 - Verifique a existência/estado de acesso do dispositivo no Exchange:
-    - Use este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Caso o dispositivo não esteja listado, isso indicará que ele não está acessando o Exchange.
-    - Se o dispositivo estiver listado, use cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre seu estado de acesso e fornecer essas informações ao Suporte da Microsoft.
+  - Use este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Caso o dispositivo não esteja listado, isso indicará que ele não está acessando o Exchange.
+  - Se o dispositivo estiver listado, use cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre seu estado de acesso e fornecer essas informações ao Suporte da Microsoft.
 
-## <a name="before-you-open-a-support-ticket"></a>Antes de abrir um tíquete de suporte
-Caso esses procedimentos de solução de problemas não resolvam o problema, há informações que o Suporte da Microsoft pode solicitar, como logs de caixa de correio do OWA ou logs do Exchange Connector.
-
-### <a name="collecting-owa-mailbox-logs"></a>Coletando logs de caixa de correio do OWA
-
-1. Faça logon por meio do OWA e escolha o símbolo de configurações (engrenagem) ao lado de seu nome no canto superior direito.
-2. Escolha **Opções**
-3. Escolha **Telefone** (talvez seja **Dispositivos Móveis**) na coluna à esquerda.
-4. No menu superior, escolha **Dispositivos Móveis**.
-5. Escolha seu dispositivo na lista e, em seguida, escolha **Iniciar Registro**.
-6. Quando solicitado, escolha **Sim** na caixa de diálogo pop-up.
-7. Execute a ação que causou o problema, para que você possa reproduzi-lo.
-8. Aguarde por 1 a 2 minutos e volte para a lista telefônica no OWA. Verifique se o seu telefone está selecionado na lista e, no menu superior, escolha **Recuperar Log**.
-9. Você deve ter recebido um email de si mesmo com um anexo. Quando você abrir um tíquete de suporte, forneça o conteúdo do email ao Suporte da Microsoft.
-
-### <a name="exchange-connector-logs"></a>Logs do Exchange Connector
-
-#### <a name="general-log-information"></a>Informações gerais sobre logs
-Para exibir os logs do Exchange Connector, use a [Ferramenta Visualizador de Rastreamento de Serviço](https://docs.microsoft.com/en-us/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe). Essa ferramenta requer que você baixe o SDK do Windows Server.
-
->[!NOTE]
->Os logs estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os logs estão contidos em uma série de 30 arquivos de log que começa com *Connector0.log* e para em *Connector29.log*. Os logs se sobrepõem uns aos outros após 10 MB de dados serem acumulados em um log. Depois de chegarem a Connector29, os logs recomeçam em Connector0, substituindo os arquivos de log anteriores.
-
-#### <a name="locating-sync-logs"></a>Localização de logs de sincronização
-
-- Localize uma sincronização completa nos logs pesquisando **full sync**. O início de uma sincronização completa será marcado por este texto:
-
-  “Handling command: Getting the mobile device list without a time filter (full sync) for <number> users”
-
-  O final do log de uma sincronização completa será semelhante a:
-
-  Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Detalhes: resultado do comando de inventário – Dispositivos sincronizados: 0 ID do Comando: commandIDGUID' Integridade do Exchange: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
-
-- Localize uma sincronização rápida (delta) nos logs pesquisando **quick sync**.
-
-##### <a name="exceptions-in-get-next-command"></a>Exceções no comando Get next
-Verifique os logs do Exchange Connector quanto a exceções no comando **Get next** e forneça-as ao Suporte da Microsoft.
-
-#### <a name="verbose-logging"></a>Log detalhado
-
-Para habilitar o log detalhado:
-
-1.  Abra o arquivo de configuração de rastreamento do Exchange Connector. O arquivo está localizado em: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Localize TraceSourceLine com a seguinte chave: OnPremisesExchangeConnectorService
-3.  Alterar o valor do nó **SourceLevel** de **Warning ActivityTracing** (o padrão) para **Verbose ActivityTracing**, conforme mostrado abaixo.
-
-    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
-    </TraceSourceLine>
-
-
-
-### <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 Caso essas informações não ajudem você, [obtenha também o suporte para o Microsoft Intune](get-support.md).

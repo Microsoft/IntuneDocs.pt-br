@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43675008"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864534"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gerenciar o acesso à Internet usando políticas de navegador protegido com o Microsoft Intune
 
@@ -53,10 +53,9 @@ Você pode criar políticas de navegador protegido para os seguintes tipos de di
 
 -   Dispositivos que executam o Android 4 e posterior
 
--   Dispositivos que executam o iOS 8.0 e posterior
+-   Dispositivos que executam o iOS 10.0 e posterior
 
 >[!IMPORTANT]
->A partir de outubro de 2017, o aplicativo do Intune Managed Browser no aplicativo do Android oferecerá suporte apenas a dispositivos que executam o Android 4.4 e versões posteriores. O aplicativo Intune Managed Browser no iOS oferecerá suporte apenas a dispositivos que executam o iOS 9.0 e versões posteriores.
 >Versões anteriores do Android e do iOS poderão continuar usando o Managed Browser, mas não será possível instalar novas versões do aplicativo e acessar todos os recursos do aplicativo. Atualize esses dispositivos para uma versão de sistema operacional com suporte.
 
 
