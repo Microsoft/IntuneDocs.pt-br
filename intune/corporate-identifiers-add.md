@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e46951be5048e0bcf2af5b2d4320744f6d6e47e8
+ms.sourcegitcommit: 3785e506ef5fbc474b3e09e87412d4b673bbdbb8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905862"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46541948"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -33,7 +33,7 @@ No momento do registro, o Intune atribui automaticamente status corporativos em 
 - O dispositivo foi registrado com uma conta do [gerenciador de registros de dispositivo](device-enrollment-manager-enroll.md) (todas as plataformas)
 - O dispositivo foi registrado com o [Programa de Registro de Dispositivos](device-enrollment-program-enroll-ios.md) da Apple, o [Apple School Manager](apple-school-manager-set-up-ios.md) ou o [Apple Configurator](apple-configurator-enroll-ios.md) (somente iOS)
 - [O dispositivo foi identificado como corporativo antes do registro](#identify-corporate-owned-devices-with-imei-or-serial-number) com um números IMEI (identificação internacional de equipamento móvel) (todas as plataformas com números IMEI) ou com um número de série (iOS e Android)
-- O dispositivo foi registrado no Azure Active Directory ou no Enterprise Mobility + Security como um dispositivo Windows 10 Enterprise
+- Adicionado ao Azure Active Directory como um dispositivo Windows 10 Enterprise
 - Configurados como Corporativo na [lista das propriedades do dispositivo](#change-device-ownership)
 
 Após o registro, você pode [alterar a configuração de propriedade](#change-device-ownership) entre **Pessoal** e **Corporativo**.

@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347467"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505760"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar VPN (rede virtual privada) por aplicativo no Intune para dispositivos iOS
 
@@ -167,11 +167,11 @@ Uma associação entre um aplicativo e um perfil será removida durante o próxi
 - Tanto o perfil quanto o aplicativo são direcionados para o mesmo grupo.
 - Você remove a configuração VPN por aplicativo da atribuição do aplicativo.
 
-Uma associação entre um aplicativo e um perfil ainda existirá até que o usuário final solicite uma reinstalação do portal da empresa, quando as seguintes condições existirem:
+Uma associação entre um aplicativo e um perfil persistirá até que o usuário final solicite uma reinstalação do portal da empresa, quando as seguintes condições existirem:
 - O aplicativo foi direcionado com a intenção de instalação disponível.
 - Tanto o perfil quanto o aplicativo são direcionados para o mesmo grupo.
 - O usuário final solicitou a instalação do aplicativo no portal da empresa, o que resulta na instalação do aplicativo e do perfil no dispositivo.
-- Você remove a configuração VPN por aplicativo da atribuição do aplicativo.
+- Você remover ou alterar a configuração de VPN por aplicativo da atribuição de aplicativo.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>Verifique a conexão no dispositivo iOS
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b4905e637f7ef709c88371a41ec9275115d571e1
+ms.sourcegitcommit: ddf90877d1ea9da70fd0ef228560f455625e35ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330221"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46563238"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
 Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 para os dispositivos que você gerencia e que executam o Windows 10. Você também pode instalar aplicativos para o cliente de área de trabalho Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você deseja são exibidos como uma única entrada na lista de aplicativos no console do Intune.
 
+> [!NOTE]
+> Você precisa usar as licenças do Office 365 ProPlus para ativar aplicativos do Office 365 ProPlus implantados por meio do Microsoft Intune. Atualmente, o Office 365 Business Edition não é compatível com o Intune.
 
 ## <a name="before-you-start"></a>Antes de começar
 

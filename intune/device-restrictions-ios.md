@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329811"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329990"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
 
@@ -114,7 +114,7 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 
 -   **Controlar acesso à central quando o dispositivo está bloqueado** – Permitir ao usuário acessar o aplicativo de Central de Controle quando o dispositivo estiver bloqueado.
 -   **Notificações enquanto o dispositivo está bloqueado** – Permitir ao usuário acessar a exibição de notificações sem desbloquear o dispositivo.
--   **Passbook enquanto o dispositivo está bloqueado** – Permitir ao usuário acessar o aplicativo Passbook enquanto o dispositivo estiver bloqueado.
+-   **Notificações da Carteira enquanto o dispositivo está bloqueado** – Permitir que o usuário acesse o aplicativo Carteira enquanto o dispositivo está bloqueado.
 -   **Exibição Hoje enquanto o dispositivo está bloqueado** – Permitir que o usuário veja o a exibição Hoje quando o dispositivo estiver bloqueado.
 
 ## <a name="app-store-doc-viewing-gaming"></a>Loja de Aplicativos, Exibição de Documentos, Jogos

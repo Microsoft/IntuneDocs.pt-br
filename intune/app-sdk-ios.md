@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031313"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466771"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -32,7 +32,7 @@ O SDK de Aplicativos do Microsoft Intune para iOS permite incorporar políticas 
 
 * Você precisará de um computador Mac OS que execute o OS X 10.8.5 ou posterior e tenha o Xcode 9 ou posterior instalado.
 
-* Seu aplicativo deve ser destinado ao iOS 9.3.5 ou superior.
+* Seu aplicativo precisa estar direcionado para o iOS 10 ou posterior.
 
 * Examinar os [Termos de Licença do SDK de Aplicativos do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Imprimir e guardar uma cópia dos termos de licença para seus registros. Ao baixar e usar o SDK de Aplicativos do Intune para iOS, você concorda com esses termos de licença.  Se você não os aceitar, não use o software.
 
@@ -40,13 +40,13 @@ O SDK de Aplicativos do Microsoft Intune para iOS permite incorporar políticas 
 
 ## <a name="whats-in-the-sdk"></a>Novidades no SDK
 
-O SDK de Aplicativos do Intune para iOS inclui uma biblioteca estática, arquivos de recursos, cabeçalhos de API, um arquivo .plist de configurações de depuração e uma ferramenta do configurador. Aplicativos móveis podem simplesmente incluir os arquivos de recursos e um link estático para as bibliotecas para a maioria das imposições de política. Os recursos avançados de APP do Intune são aplicados por meio de APIs.
+O SDK de Aplicativos do Intune para iOS inclui uma biblioteca estática, arquivos de recursos, cabeçalhos de API, um arquivo .plist de configurações de depuração e uma ferramenta do configurador. Os aplicativos cliente podem simplesmente incluir os arquivos de recursos e um link estático para as bibliotecas para a maioria das imposições de política. Os recursos avançados de APP do Intune são aplicados por meio de APIs.
 
 Este guia aborda o uso dos seguintes componentes do SDK de Aplicativos do Intune para iOS:
 
-* **libIntuneMAM.a**: a biblioteca estática do SDK de Aplicativos do Intune. Se o aplicativo não usar extensões, vincule essa biblioteca ao seu projeto para habilitar a aplicativo para o gerenciamento de aplicativo móvel do Intune.
+* **libIntuneMAM.a**: a biblioteca estática do SDK de Aplicativos do Intune. Se o aplicativo não usar extensões, vincule essa biblioteca ao seu projeto para habilitar o aplicativo para o gerenciamento de aplicativo de cliente do Intune.
 
-* **IntuneMAM.framework**: a estrutura do SDK de Aplicativos do Intune. Vincule essa estrutura ao projeto para habilitar o aplicativo para o gerenciamento de aplicativo móvel do Intune. Use a estrutura em vez da biblioteca estática se o aplicativo usar extensões, para que o projeto não crie várias cópias da biblioteca estática.
+* **IntuneMAM.framework**: a estrutura do SDK de Aplicativos do Intune. Vincule essa estrutura ao projeto para habilitar o aplicativo para o gerenciamento de aplicativo cliente do Intune. Use a estrutura em vez da biblioteca estática se o aplicativo usar extensões, para que o projeto não crie várias cópias da biblioteca estática.
 
 * **IntuneMAMResources.bundle**: um pacote de recursos que contém recursos dos quais o SDK depende.
 

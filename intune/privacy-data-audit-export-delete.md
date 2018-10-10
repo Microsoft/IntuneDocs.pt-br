@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313591"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028606"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou excluir dados pessoais no Intune
 
@@ -56,16 +56,16 @@ Há três maneiras de remover os dados pessoais do gerenciamento do Intune:
 
 ### <a name="delete-a-user-from-intune"></a>Excluir um usuário do Intune
 
-Para excluir os dados pessoais de um usuário final do Intune, um administrador precisa [excluir o usuário do AAD (Azure Active Directory)](https://docs.microsoft.com/en-us/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
+Para excluir os dados pessoais de um usuário final do Intune, um administrador precisa [excluir o usuário do AAD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
 
 ### <a name="reset-device-to-factory-settings"></a>Restaurar o dispositivo para as configurações de fábrica
 A restauração para as configurações de fábrica restaura todas as configurações de dados pessoais e corporativos para as configurações originais de fábrica. Ela é útil para fornecer um dispositivo para o próximo funcionário. Os arquivos de usuário, os aplicativos instalados pelo usuário e as configurações não padrão são removidas, e esses dados são excluídos do serviço Intune no prazo de até 30 dias após a ação de remoção.
 
 ### <a name="user-self-removal-from-intune-management"></a>Autorremoção de usuário do gerenciamento do Intune
-Os usuários podem remover seus dispositivos pessoais [Android, Apple ou Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) do gerenciamento do Intune sem a assistência do administrador.   
+Os usuários podem remover seus dispositivos pessoais [Android, Apple ou Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) do gerenciamento do Intune sem a assistência do administrador.   
 
 ### <a name="retire"></a>Desativar
-A ação **Desativar** remove os dados provisionados pelo Intune, como aplicativos da empresa, dados sobre aplicativos gerenciados pelo Intune, configurações de política e perfis de email. Essa ação deixa os dados pessoais do usuário no dispositivo.
+A ação **Desativar** remove os dados provisionados pelo Intune, como aplicativos da empresa, dados sobre aplicativos gerenciados pelo Intune, configurações de política e perfis de email que foram provisionados por meio do Intune. Essa ação deixa os dados pessoais do usuário no dispositivo.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Excluir um locatário do Microsoft Intune
 

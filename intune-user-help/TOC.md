@@ -16,7 +16,6 @@
 ### [Criptografar seu dispositivo](encrypt-your-device-android.md)
 ### [Definir o PIN ou senha](set-your-pin-or-password-android.md)
 ### [O que acontece quando eu faço a redefinição do dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-### [Redefinir o dispositivo](reset-erase-your-device-cpwebsite.md)
 ### [Definir tempo de bloqueio](set-the-amount-of-time-before-your-device-is-locked-android.md)
 ### [Instalar VPN (rede virtual privada)](install-your-companys-virtual-private-network-VPN-android.md)
 ### [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-android.md)
@@ -69,7 +68,6 @@
 ### [Usar aplicativos gerenciados no seu dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Definir ou alterar sua senha](set-or-change-your-passcode-ios.md)
 ### [O que acontece quando você redefine o dispositivo usando o Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-### [Redefinir o dispositivo](reset-erase-your-device-cpwebsite.md)
 ### [Não registrar seu dispositivo](unenroll-your-device-from-intune-ios.md)
 #### [O que acontece quando você cancela o registro do dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Sincronizar o dispositivo manualmente](sync-your-device-manually-ios.md)
@@ -123,17 +121,14 @@
 #### [Registrar seu dispositivo Windows 10 por meio de "Acessar trabalho ou escola"](enroll-your-w10-device-access-work-or-school.md)
 #### [Registre seu dispositivo Windows 8.1 ou Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
 #### [Registrar seu dispositivo Windows Phone 8.1](enroll-your-wp81-windows.md)
-### [Instalar aplicativos do aplicativo Portal da Empresa para Windows](install-apps-cpapp-windows.md)
-### [Redefinir o dispositivo](reset-erase-your-device-cpwebsite.md)
 ### [Criptografar seu dispositivo](encrypt-your-device-windows.md)
-### [Definir ou alterar sua senha](set-or-change-your-password-windows.md)
-### [Renomear o dispositivo no aplicativo Portal da Empresa](rename-your-device-cpapp.md)
+### [Definir ou alterar a senha do dispositivo](set-or-change-your-password-windows.md)
 ### [Remover seu dispositivo do Intune](unenroll-your-device-from-intune-windows.md)
 ### [O que acontece quando você cancela o registro do dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [O que acontece se você redefinir seu dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sincronizar o dispositivo manualmente](sync-your-device-manually-windows.md)
-### [Bloquear remotamente dispositivos pelo seu dispositivo Windows 10](remote-lock-your-device-cp-app.md) 
+
 
 ### [Corrigindo problemas comuns com o Windows](troubleshoot-your-device-windows.md)
 ### [Resolver as restrições de ponto de acesso](resolve-access-point-restrictions.md)
@@ -151,6 +146,11 @@
 #### [É necessário habilitar o UAC](you-need-to-enable-uac-windows.md)
 #### [É necessário atualizar o Windows](you-need-to-update-os-build-version-windows.md)
 #### [É necessário ativar o Windows Defender](turn-on-defender-windows.md)
+
+## Usar o aplicativo do Portal da Empresa do Intune para Windows
+### [Instalar aplicativos do Portal da Empresa](install-apps-cpapp-windows.md)
+### [Bloquear um dispositivo remotamente](remote-lock-your-device-cp-app.md)  
+### [Renomear o dispositivo](rename-your-device-cpapp.md)
 
 ## [Usando o site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 ### [Bloquear o dispositivo remotamente](remote-lock-your-device-cpwebsite.md)
