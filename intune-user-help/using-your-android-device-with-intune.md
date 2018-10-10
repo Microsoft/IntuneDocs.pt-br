@@ -1,11 +1,11 @@
 ---
 title: Usando seu dispositivo Android com o Intune | Microsoft Docs
-description: Lista de links para tarefas que os usuários finais podem realizar em seu dispositivo móvel Android quando o dispositivo é registrado no Intune
+description: Lista de links para solução de problemas e gerenciamento de dispositivos Android registrados no Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018661"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168940"
 ---
-# <a name="using-your-android-device-with-intune"></a>Usando seu dispositivo Android com o Intune
+# <a name="using-your-android-device-with-intune-company-portal"></a>Usar o dispositivo Android com o Portal da Empresa do Intune
 
-Há várias coisas que você pode fazer com o Intune para facilitar sua vida profissional. Esta é uma lista das tarefas mais comuns que sua empresa pode exigir de você.
+Este artigo lista as tarefas e informações específicas para o Portal da Empresa para Android. Use-o para ajudar a solucionar problemas e gerenciar seu dispositivo Android. Clique em qualquer link para ver mais detalhes, etapas e capturas de tela. 
 
 ## <a name="supported-versions"></a>Versões com suporte
 
-Atualmente, o Intune dá suporte ao Android 4.4 e posterior. Isso inclui Samsung Knox 4.4 e dispositivos posteriores.
+Atualmente, o Portal da Empresa é compatível com Android 4.4 e posterior. Samsung Knox 4.4 e dispositivos posteriores também são compatíveis.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrando no Intune e instalando o Portal da Empresa
 
@@ -51,5 +51,5 @@ Atualmente, o Intune dá suporte ao Android 4.4 e posterior. Isso inclui Samsung
 - [Cancelar o registro do dispositivo no Intune](unenroll-your-device-from-intune-android.md)
 - [Cancelar o registro do dispositivo se você tiver recusado os Termos de Uso](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [O que acontece quando você cancela o registro do dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
-- [O que acontece quando você redefine o dispositivo Android usando o aplicativo de Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+- [O que acontece quando você restaura o dispositivo Android usando o aplicativo do Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
   <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

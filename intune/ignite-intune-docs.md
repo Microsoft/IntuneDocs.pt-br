@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 9/21/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56c98f1cf310632e91845b5a3e852df1f1ca8366
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864448"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866313"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Documentação do Microsoft Intune &#40;edição especial do Ignite&#41;
 Bem-vindo ao Microsoft Ignite 2018. Estamos felizes que você tenha nos visitado. Enquanto está aqui no Microsoft Ignite 2018, confira alguns dos recursos do Intune que reunimos para você.
@@ -45,7 +45,7 @@ Atualizamos e criamos alguns tutoriais novos. Conclua os seguintes guias de iní
 
 ## <a name="contribute-to-docs"></a>Contribuir com os documentos
 - [Torne-se um colaborador de documentos do Intune](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [Principais colaboradores de documentos do Intune deste mês](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2018-10-31&type=c)  
+- [Principais colaboradores de documentos do Intune deste mês](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-11-30&type=c)  
 
 ## <a name="start-using-intune"></a>Comece a usar o Intune
 - [Licenças que incluem o Intune](licenses.md)
