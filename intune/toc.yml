@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: O que é o Intune para Educação?
     href: introduction-intune-education.md
-  - name: Recursos do Intune no Azure
-    href: ui-changes.md
-    items:
-    - name: Alterações nos grupos
-      href: groups-get-started.md
-    - name: Cliente para PC herdado do Intune
-      href: intune-legacy-pc-client.md
   - name: Inscreva-se para uma avaliação gratuita
     href: free-trial-sign-up.md
   - name: Novidades
@@ -20,10 +13,6 @@ items:
     items:
     - name: Novidades na interface do usuário do aplicativo
       href: whats-new-app-ui.md
-    - name: Arquivo de novidades (Portal do Azure)
-      href: whats-new-archive.md
-    - name: Arquivo de novidades (Portal Clássico)
-      href: whats-new-archive-classic.md
   - name: Descrição do serviço
     href: microsoft-intune-service-description.md
   - name: Problemas conhecidos
@@ -34,18 +23,20 @@ items:
 - name: Guias de início rápido
   href: get-started-evaluation.md
   items:
-  - name: Navegando pelo Portal do Azure
-    href: get-started-azure.md
+  - name: Experimente o Intune gratuitamente
+    href: free-trial-sign-up.md
   - name: Criar um usuário
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: Criar um grupo
-    href: get-started-groups.md
-  - name: Atribuir políticas
-    href: get-started-policies.md
-  - name: Registrar dispositivos
-    href: get-started-enroll.md
-  - name: Atribuir aplicativos
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: Criar uma política
+    href: quickstart-create-policy.md
+  - name: Configurar registro automático
+    href: quickstart-setup-auto-enrollment.md
+  - name: Criar e atribuir uma função personalizada
+    href: quickstart-create-custom-role.md
+  - name: Criar um perfil de dispositivo de email
+    href: quickstart-email-profile.md
 - name: Guias de implantação de cenário
   items:
   - name: Proteger o Exchange Online
@@ -60,6 +51,10 @@ items:
     href: byod-technology-decisions.md
 - name: Conceitos
   items:
+  - name: O que é o gerenciamento de dispositivo?
+    href: what-is-device-management.md
+  - name: Navegando pelo Portal do Azure
+    href: get-started-azure.md
   - name: Arquitetura de alto nível
     href: high-level-architecture.md
   - name: Ciclos de vida do dispositivo e do aplicativo
@@ -169,6 +164,8 @@ items:
         href: device-group-mapping.md
     - name: Configurar o registro do Windows
       items:
+      - name: Funcionalidades do método de registro
+        href: enrollment-method-capab.md
       - name: Registro do Windows
         href: windows-enroll.md
       - name: Registro em massa
@@ -780,6 +777,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Recursos
   items:
+  - name: Guia de documentação do Microsoft Intune
+    href: intune-documentation.md
   - name: Solucionar problemas
     items:
     - name: Ajudar os usuários a solucionar problemas
@@ -804,11 +803,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Solucionar problemas no Exchange Connector
       href: troubleshoot-exchange-connector.md
+  - name: Arquivo morto
+    items:
+    - name: Arquivo de novidades
+      items:
+      - name: Arquivo de novidades (Portal do Azure)
+        href: whats-new-archive.md
+      - name: Arquivo de novidades (Portal Clássico)
+        href: whats-new-archive-classic.md
+    - name: Recursos clássicos do Intune no Azure
+      href: ui-changes.md
+    - name: Grupos clássicos do Intune
+      href: groups-get-started.md
+    - name: Cliente para PC herdado do Intune
+      href: intune-legacy-pc-client.md
   - name: Glossário
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: 06d8a19c677bd9a63dccba4f2c0982840633cb3e
+ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821109"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581403"

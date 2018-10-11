@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 62a7f2f45ccd98612e56e253945974a8eb193f25
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058737"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562707"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicativos nativos ao Microsoft Intune
 
@@ -48,7 +48,7 @@ Para adicionar um aplicativo nativo a seus aplicativos disponíveis no Microsoft
 ## <a name="configure-app-information"></a>Configurar informações do aplicativo
 
 Você pode modificar as informações sobre o aplicativo nativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudar os usuários a encontrá-lo no aplicativo Portal da Empresa.
-1. No painel **Aplicativos móveis – Aplicativos**, selecione o aplicativo nativo que você deseja modificar.  
+1. No painel **Aplicativos Cliente – Aplicativos**, selecione o aplicativo nativo que você deseja modificar.  
     Será exibido um painel para o aplicativo nativo.
 2. Em **Gerenciar**, selecione a opção **Propriedades**.
 3. Para modificar as informações do aplicativo nativo, selecione a opção **Configurar**.

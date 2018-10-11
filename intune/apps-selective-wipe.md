@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329538"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562741"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune
 
@@ -44,7 +44,7 @@ Para remover seletivamente os dados de aplicativo da empresa, crie uma solicita�
 
     ![Captura de tela do painel do Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  No **painel Aplicativos móveis**, escolha **Apagamento seletivo de aplicativo**.
+3.  No **painel Aplicativos cliente**, escolha **Apagamento seletivo de aplicativo**.
 
 4.  Escolha **Nova solicitação de apagamento**. O painel **Nova solicitação para apagar** é aberto.
 
@@ -62,7 +62,7 @@ O serviço cria e controla uma solicitação de apagamento separada para cada ap
 
 É possível obter um relatório resumido que mostra o status geral da solicitação de apagamento e inclui o número de falhas e solicitações pendentes. Para obter mais detalhes, siga estas etapas:
 
-1.  No painel **Aplicativos Móveis – apagamento seletivo de aplicativo**, você pode ver a lista de suas solicitações agrupadas por usuários. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
+1.  No painel **Aplicativos Cliente – apagamento seletivo de aplicativo**, você pode ver a lista de suas solicitações agrupadas por usuários. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
 
     ![Captura de tela do status da solicitação de apagamento no painel Limpeza seletiva de aplicativo](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ Além disso, você pode ver o nome e o tipo de dispositivo, o que pode ser útil
 
 Apagamentos com status pendente são exibidos até serem excluídos manualmente. Para excluir uma solicitação de apagamento manualmente:
 
-1.  No painel **Aplicativos Móveis – apagamento seletivo de aplicativo**.
+1.  No painel **Aplicativos Cliente – apagamento seletivo do aplicativo**.
 
 2.  Na lista, clique com o botão direito do mouse na solicitação de apagamento que você deseja excluir e escolha **Excluir solicitação de apagamento**.
 

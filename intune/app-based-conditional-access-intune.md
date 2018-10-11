@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 317a1fa5fd83cbfe95afa51894466f93131bd278
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561966"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562758"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional baseado no aplicativo com o Intune
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561966"
 
 As [políticas de Proteção de Aplicativo do Intune](app-protection-policy.md) ajudam a proteger os dados da empresa nos dispositivos registrados no Intune. Use também as políticas de proteção de aplicativo em dispositivos dos funcionários que não estão registrados no gerenciamento do Intune. Nesse caso, mesmo que sua empresa não gerencie o dispositivo, ainda é necessário verificar se os dados e recursos da empresa estão protegidos.
 
-O acesso condicional baseado no aplicativo e o gerenciamento de aplicativo móvel adicionam uma camada de segurança, garantindo que apenas os aplicativos móveis que dão suporte às políticas de proteção de aplicativo do Intune podem acessar o Exchange Online e outros serviços do Office 365.
+O acesso condicional baseado no aplicativo e o gerenciamento de aplicativo cliente adicionam uma camada de segurança, garantindo que apenas os aplicativos cliente que dão suporte às políticas de Proteção de Aplicativo do Intune podem acessar o Exchange Online e outros serviços do Office 365.
 
 > [!NOTE]
 > Um aplicativo gerenciado é um aplicativo que tem políticas de proteção de aplicativo aplicadas e que pode ser gerenciado pelo Intune.

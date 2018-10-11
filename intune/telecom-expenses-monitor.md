@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347807"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562894"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -129,7 +129,7 @@ Siga estas etapas para criar o aplicativo Datalert no Intune para cada plataform
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Atribuir o aplicativo Datalert ao grupo de dispositivos corporativos
 
-1. No painel **Aplicativos móveis – Aplicativos**, selecione o aplicativo Datalert para iOS que você criou na etapa anterior.
+1. No painel **Aplicativos Cliente – Aplicativos**, selecione o aplicativo Datalert para iOS que você criou na etapa anterior.
 
 2. No painel **Aplicativos**, escolha **Gerenciar** > **Atribuições**.
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/21/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909330"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602309"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivo para dispositivos Windows no Intune
 
@@ -111,6 +111,10 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
 
 - **Exigir BitLocker**: quando o BitLocker está ativado, o dispositivo pode proteger os dados armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados do usuário. Ele também ajuda a garantir que um computador não seja violado, mesmo se ficar aberto, se for perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Como resultado, as chaves não podem ser acessadas até que o TPM tenha verificado o estado do computador.
 - **Exigir que a Inicialização Segura seja habilitada no dispositivo:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
+
+  > [!NOTE]
+  > A configuração **Requer que Inicialização Segura esteja habilitada no dispositivo** é compatível com dispositivos TPM 1.2 e 2.0. Para dispositivos que não dão suporte a TPM 2.0 ou posterior, o status da política do Intune aparece como **Não em Conformidade**. Essa é uma limitação do serviço [Atestado de Integridade do Dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) no Windows 10.
+
 - **Exigir integridade de código:** a integridade de código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade de código detecta quando um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Ou se um arquivo de sistema foi modificado por software mal-intencionado executado por uma conta de usuário com privilégios de administrador.
 
 Confira [CSP do atestado de integridade](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) para obter detalhes de como funciona o serviço HAS.

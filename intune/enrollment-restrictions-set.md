@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313710"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602139"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -83,29 +83,31 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 8. Escolha se deseja **Permitir** ou **Bloquear** dispositivos de **Propriedade pessoal** para cada plataforma listada.
 9. Selecione **OK**.
 
-### <a name="android-device-type-restrictions"></a>Restrições de tipo de dispositivo Android
+### <a name="blocking-personal-android-devices"></a>Bloqueio de dispositivos Android pessoais
 - Se você impedir o registro de dispositivos Android de propriedade pessoal, os dispositivos de perfil de trabalho Android de propriedade pessoal ainda poderão ser registrados.
 - Por padrão, as configurações de dispositivos do perfil de trabalho Android são as mesmas que as configurações de dispositivos Android. Depois que você alterar as configurações do perfil de trabalho Android, elas não serão mais as mesmas.
 - Se você bloquear o registro do perfil de trabalho Android pessoal, somente os dispositivos Android corporativos poderão ser registrados como um perfil de trabalho Android.
 
-### <a name="windows-device-type-restrictions"></a>Restrições de tipo de dispositivo Windows
-Depois que a restrição de tipo de dispositivo da plataforma Windows for definida como **Bloquear**, o Intune verificará se cada nova solicitação de registro do Windows foi autorizada como um registro corporativo. Os registros não autorizados serão bloqueados.
+### <a name="blocking-personal-windows-devices"></a>Bloqueio de dispositivos Windows pessoais
+Se você bloquear o registro de dispositivos Windows de propriedade pessoal, o Intune verificará para ter certeza de que cada nova solicitação de registro do Windows foi autorizada como um registro corporativo. Os registros não autorizados serão bloqueados.
 
 Os métodos a seguir se qualificam como autorizados como um registro corporativo do Windows:
  - O usuário do registro está usando uma [conta de gerenciador de registros de dispositivos]( device-enrollment-manager-enroll.md).
 - O dispositivo está sendo registrado por meio do [Windows Autopilot](enrollment-autopilot.md).
+- O dispositivo está registrado com o Windows Autopilot, mas não é a única opção de registro do MDM das configurações do Windows.
 - O número IMEI do dispositivo está listado em **Registro de dispositivos** > **[Identificadores de dispositivo corporativo](corporate-identifiers-add.md)**. (Não há suporte no Windows Phone 8.1.)
 - O dispositivo está sendo registrado por meio de um [pacote de provisionamento em massa](windows-bulk-enroll.md).
 - O dispositivo está sendo registrado por meio do [registro automático do SCCM para o cogerenciamento](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 Os seguintes registros são marcados como corporativos pelo Intune, mas como eles não oferecem o controle por dispositivo do administrador do Intune, eles serão bloqueados:
- - [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory durante a instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
-- [Registro automático no MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory na instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ - [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory durante a instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
+- [Registro automático no MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory na instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
  
 Os seguintes métodos de registro pessoais também serão bloqueados:
-- [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [Adicionar Conta Corporativa nas Configurações do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [Adicionar Conta Corporativa nas Configurações do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
 - A opção [Somente registro do MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) nas Configurações do Windows.
 
+\* Eles não serão bloqueados se registrados com o Autopilot.
 
 ## <a name="set-device-limit-restrictions"></a>Definir restrições de limite de dispositivos
 

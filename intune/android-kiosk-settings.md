@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329376"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602173"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Configurações de quiosque para dispositivos Android no Intune
 
@@ -25,9 +25,9 @@ Você pode configurar um dispositivo no modo de quiosque de aplicativo único ou
 
 ## <a name="restrict-an-android-kiosk-device-to-a-single-app"></a>Restringir o um dispositivo de quiosque Android a um único aplicativo
 
-Quando o perfil de restrição de um dispositivo de quiosque está definido como **Modo de quiosque** = **quiosque de um único aplicativo**, os usuários só podem acessar um único aplicativo. Quando um dispositivo configurado nesse modo é iniciado, o aplicativo específico também é iniciado. Os usuários são impedidos de abrir novos aplicativos e de alterar o aplicativo em execução.
+Quando o perfil de restrição de um dispositivo de quiosque está definido como **Modo de quiosque** = **quiosque de um único aplicativo**, os usuários só podem acessar um único aplicativo. Quando um dispositivo configurado nesse modo é iniciado, o aplicativo específico também é iniciado. Os usuários são impedidos de abrir novos aplicativos e alterar o aplicativo em execução.
 
-1. Assegure-se de que o aplicativo que você deseja usar no quiosque tenha sido [implantado no dispositivo](apps-deploy.md) e que você tenha atribuído o aplicativo ao grupo de dispositivos criado para os dispositivos de quiosque.
+1. Verifique se o aplicativo que você deseja usar no dispositivo do quiosque foi [implantado no dispositivo](apps-deploy.md) e se você atribui o aplicativo ao grupo de dispositivos criado para os dispositivos de quiosque.
 2. Acesse o [portal do Intune](https://portal.azure.com) e escolha **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Na folha **Criar perfil**, especifique os campos a seguir:
      - **Nome**
@@ -51,7 +51,7 @@ Para definir um dispositivo de quiosque Android para vários aplicativos, siga e
 2. [Adicionar e atribuir aplicativos que podem ser usados no modo de quiosque](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Opcional) [Adicionar links da Web que podem ser usados no modo de quiosque](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>Importar e implantar o aplicativo Tela Inicial Gerenciada
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>Importar e implantar o aplicativo Tela Inicial Gerenciada
 
 1. Navegue até a [página da Tela Inicial Gerenciada no Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) e entre com a mesma conta usada para outros aplicativos do Google Play.
 2. Escolha **Aprovar**.
@@ -59,6 +59,9 @@ Para definir um dispositivo de quiosque Android para vários aplicativos, siga e
 4. Escolha **Aplicativos** > **Tela Inicial Gerenciada** > **Atribuições** > **Adicionar grupo**.
 5. Em **Tipo de atribuição**, escolha **Obrigatória**.
 6. Escolher **Grupos Incluídos** > **Selecionar grupos a serem incluídos** > escolha o grupo de dispositivos que você criou para seus dispositivos de quiosque > **Selecionar** > **OK** > **OK** > **Salvar**.
+
+> [!NOTE]
+> Quando você adicionar o aplicativo Tela Inicial Gerenciada ao perfil de quiosque de vários aplicativos, um ícone será adicionado. Porém, nada acontece quando você seleciona o ícone. Como resultado, você não precisa adicionar o aplicativo Tela Inicial Gerenciada ao perfil de quiosque de vários aplicativos.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>Adicionar e atribuir aplicativos que podem ser usados no modo de quiosque
 
@@ -76,7 +79,7 @@ Para cada aplicativo que você deseja disponibilizar nos dispositivos de quiosqu
 3. Escolha **Configurar** e forneça as informações necessárias. Você não precisa adicionar uma imagem de logotipo porque ela será recuperada automaticamente do favicon.ico do site.
 4. Escolha **OK** > **Adicionar**.
 
-Você deve ter implantado um aplicativo de navegador da Web para os dispositivos de quiosque usando [Aplicativos Móveis](apps-add.md).
+Verifique se você implantou um aplicativo Web aos dispositivos de quiosque. Para obter mais informações, veja [Adicionar aplicativos Web para o Microsoft Intune](web-app.md).
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>Criar um perfil de quiosque de vários aplicativos
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/4/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: beee1462c1b6e683287b4d304df386ce525be820
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0f6447f4a5cfb2638278a59414e83f744adb8c81
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141621"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978256"
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2018"></a>A edição antecipada do Microsoft Intune – setembro de 2018
 
@@ -57,6 +57,9 @@ A configuração de VPN Always-on estará em **Configuração do dispositivo** >
 ### <a name="outlook-for-ios-and-android-app-configuration-policy---1828527---"></a>Política de configuração de aplicativo do Outlook para iOS e Android <!--1828527 -->
 Você poderá criar para o iOS uma política de configuração do aplicativo Outlook para iOS e Android. Outras definições de configuração serão adicionadas à medida que forem habilitadas no Outlook para iOS e Android.
 
+###  <a name="windows-line-of-business-lob-app-file-extensions----1884873---"></a>Extensões de arquivo de aplicativos de LOB (linha de negócios) do Windows <!-- 1884873 -->
+As extensões de arquivo para aplicativos de LOB do Windows incluem *.msi*, *.appx*, *.appxbundle*, *.msix* e *.msixbundle*. Você poderá adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos clientes** > **Aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** será exibido, permitindo que você selecione o **Tipo de aplicativo**. Para aplicativos de LOB do Windows, selecione aplicativo de **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo de pacote do aplicativo** e, em seguida, insira um arquivo de instalação com a extensão apropriada.
+
 ### <a name="remotely-lock-noncompliant-devices----2064495---"></a>Bloquear remotamente dispositivos não compatíveis <!-- 2064495 -->
 Quando um dispositivo não for compatível, você poderá criar uma ação na política de conformidade que bloqueia o dispositivo remotamente. Em Intune > **Conformidade do dispositivo**, crie uma nova política ou selecione uma política de conformidade existente. Selecione **Ações em caso de não conformidade** > **Adicionar** e opte por bloquear remotamente o dispositivo.
 Com suporte em: 
@@ -72,6 +75,9 @@ Você poderá separar o controle de configurações de transferência de dados d
 ### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>Usar uma chave pré-compartilhada em um perfil de Wi-Fi do Windows 10 <!-- 2662938 -->
 Você poderá usar uma chave pré-compartilhada (PSK) com o protocolo de segurança WPA/WPA2-Personal para autenticar um perfil de configuração de Wi-Fi no Windows 10.
 No momento, é preciso importar um perfil de Wi-Fi ou criar um perfil personalizado para usar uma chave pré-compartilhada. [Configurações de Wi-Fi no Windows 10](wi-fi-settings-windows.md) lista as configurações atuais. 
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995-eeready---"></a>Configurações de APP (Política de Proteção de Aplicativo) do aplicativo para dados Web <!-- 2662995 eeready -->
+Configurações de política de aplicativo para conteúdo Web em dispositivos Android e iOS serão atualizadas para lidar melhor com links Web http e https, bem como transferência de dados por meio de Links Universais do iOS e Links de Aplicativo do Android.  
 
 ### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>A frequência de sincronização de dispositivos Autopilot passa a ser a cada 12 horas <!-- 2753673 -->
 Os dispositivos Autopilot serão sincronizados a cada 12 horas, não mais a cada 24 horas.

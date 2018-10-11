@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9529560fca1fcd30fc479c0eac8bd7bc967fa952
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253744"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562843"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Como administrador de TI, você pode usar o Microsoft Intune para gerenciar os aplicativos móveis que os colaboradores da sua empresa usam. Essa funcionalidade está além do gerenciamento de dispositivos e proteção de dados. Uma das prioridades do administrador é garantir que os usuários finais tenham acesso aos aplicativos necessários para realizar seu trabalho. Essa meta pode ser um desafio porque:
+Como administrador de TI, você pode usar o Microsoft Intune para gerenciar os aplicativos cliente que os colaboradores da sua empresa usam. Essa funcionalidade está além do gerenciamento de dispositivos e proteção de dados. Uma das prioridades do administrador é garantir que os usuários finais tenham acesso aos aplicativos necessários para realizar seu trabalho. Essa meta pode ser um desafio porque:
 - Há uma ampla variedade de plataformas de dispositivo e tipos de aplicativos.
 - Talvez você precise gerenciar aplicativos nos dispositivos da empresa e nos dispositivos pessoais dos usuários.
 - É necessário garantir que a rede e os dados permaneçam seguros.
@@ -68,7 +68,7 @@ Encontre a maioria das informações relacionadas a aplicativos na carga de trab
     O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. No painel **Microsoft Intune**, selecione **Aplicativos clientes**.
 
-    ![O painel da carga de trabalho “Aplicativos Móveis”](./media/apps-workload.png)
+    ![O painel de carga de trabalho "Aplicativos cliente"](./media/apps-workload.png)
 
 As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos clientes**.
 

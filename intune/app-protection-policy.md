@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253673"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727570"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
@@ -103,7 +103,7 @@ A solução MDM:
 
 -   Ajudar a proteger os dados da empresa contra vazamento de serviços e aplicativos de consumidor
 
--   Aplicar restrições (salvar como, área de transferência, PIN, etc.) aos aplicativos móveis
+-   Aplicar restrições (salvar como, área de transferência, PIN, etc.) aos aplicativos cliente
 
 -   Apagar os dados da empresa dos aplicativos sem remover esses aplicativos do dispositivo
 
@@ -122,6 +122,18 @@ Contudo, existem algumas limitações a serem consideradas, como:
 -   Não é possível provisionar perfis de certificado nesses dispositivos.
 
 -   Não é possível provisionar as configurações de Wi-Fi e VPN da empresa nesses dispositivos.
+
+## <a name="app-protection-global-policy"></a>Política Global de proteção de aplicativo
+
+Se um administrador do OneDrive navegar até **admin.office.com** e selecionar o acesso a **Dispositivo**, ele poderá definir os controles de **Gerenciamento de aplicativo móvel** para os aplicativos de cliente do OneDrive e do SharePoint. 
+
+As configurações, disponibilizadas para o console de administração do OneDrive, configuram uma política de proteção especial de aplicativo do Intune chamada de política **Global**. Essa política global é aplicável a todos os usuários em seu locatário e não tem como controlar o direcionamento de política. 
+
+Uma vez habilitada, os aplicativos OneDrive e SharePoint para iOS e Android serão protegidos com as configurações selecionadas por padrão. Um Profissional de TI pode editar essa política no console do Intune depois de criada e adicionar mais aplicativos direcionados e modificar qualquer configuração de política. 
+
+Por padrão, só pode haver uma política **Global** por locatário. No entanto, as [APIs do Graph do Intune](intune-graph-apis.md) podem ser usadas para criar políticas extras globais por locatário, mas isso não é recomendado. Criar políticas extras globais não é recomendado porque a solução de problemas da implementação dessa política pode se tornar complicada.
+
+Embora a política **Global** se aplique a todos os usuários em seu locatário, qualquer política de Proteção de Aplicativo do Intune padrão substituirá essas configurações.
 
 
 ## <a name="multi-identity"></a>Várias identidades
