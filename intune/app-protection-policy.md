@@ -3,8 +3,8 @@ title: O que são políticas de proteção do aplicativo
 titleSuffix: Microsoft Intune
 description: Saiba como as políticas de proteção de aplicativo do Microsoft Intune ajudam a proteger os dados da sua empresa e evitar a perda de dados.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/14/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 64e58ef4d27d2f967eff8c503842345879799168
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727570"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232198"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
