@@ -3,10 +3,10 @@ title: Criar e implantar a política de proteção do aplicativo da WIP (Proteç
 titlesuffix: Microsoft Intune
 description: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) com o Microsoft Intune
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347300"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799618"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -46,19 +46,27 @@ Você precisa compreender alguns conceitos ao adicionar uma política de WIP:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Você precisa configurar o provedor MAM antes de criar uma política de proteção de aplicativo WIP. Saiba mais sobre [como configurar seu provedor MAM com o Intune](app-protection-policies-configure-windows-10.md).
+Você precisa configurar o provedor MAM antes de criar uma política de proteção de aplicativo WIP. Saiba mais sobre [como configurar seu provedor MAM com o Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> O WIP não oferece suporte a várias identidades. Pode haver apenas uma identidade gerenciada de cada vez.
 
 Além disso, você precisa ter a licença e a atualização a seguir:
 
 -   Licença do [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
 -   [Atualização do Windows para Criadores](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> O WIP não oferece suporte a várias identidades. Pode haver apenas uma identidade gerenciada de cada vez.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>Para adicionar uma política de proteção de aplicativo de WIP
 
 Depois de configurar o Intune em sua organização, você poderá criar uma política específica de WIP.
+
+> [!TIP]  
+> Para obter informações relacionadas sobre a criação de políticas WIP para Intune, incluindo configurações disponíveis e como configurá-las, confira [Criar uma política WIP (Proteção de Informações do Windows) com o MAM usando o portal do Azure para Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) na biblioteca de documentação do Segurança do Windows. 
+
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**.
@@ -92,7 +100,7 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 4. Escolha **Aplicativos protegidos** na folha **Proteção de Aplicativo do Intune**. A folha **Aplicativos protegidos** é aberta, mostrando todos os aplicativos que já estão incluídos na lista desta política de proteção de aplicativo.
 5. Selecione **Adicionar aplicativos**. A informação **Adicionar aplicativos** mostra uma lista filtrada de aplicativos. A lista na parte superior da folha permite que você altere o filtro da lista.
 6. Na lista, selecione **Aplicativos da loja**.
-7. Insira valores para **Nome**, **Editor**, **Nome do Produto** e **Ação**. Defina o valor de **Ação** como **Permitir**, para que o aplicativo tenha acesso aos dados corporativos.
+7. Insira valores para **Nome**, **Editor**, **Nome do produto** e **Ação**. Defina o valor de **Ação** como **Permitir**, para que o aplicativo tenha acesso aos dados corporativos.
 9. Clique em **OK**. A folha **Aplicativos protegidos** é atualizada, mostrando todos os aplicativos selecionados.
 10. Clique em **Salvar**.
 
@@ -123,7 +131,7 @@ Ao trabalhar com aplicativos habilitados para a WIP e aplicativos desconhecidos 
 ### <a name="what-are-the-protection-modes"></a>Quais são os modos de proteção?
 
 #### <a name="block"></a>Bloquear
-O WIP procura práticas inadequadas de compartilhamento de dados e impede que o usuário conclua a ação. Isso pode incluir compartilhar informações entre aplicativos protegidos não corporativos e compartilhar dados corporativos entre outras pessoas e dispositivos fora da sua organização.
+O WIP procura práticas inadequadas de compartilhamento de dados e impede que o usuário conclua a ação. As ações bloqueadas podem incluir o compartilhamento de informações entre aplicativos protegidos não corporativos e o compartilhamento de dados corporativos entre outras pessoas e dispositivos fora da sua organização.
 
 #### <a name="allow-overrides"></a>Permitir Substituições
 O WIP procura compartilhamento inadequado de dados, avisando os usuários quando eles fizerem algo considerado potencialmente não seguro. No entanto, esse modo permite que o usuário substitua a política e compartilhe os dados, registrando a ação no log de auditoria.

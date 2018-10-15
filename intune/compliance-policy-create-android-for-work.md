@@ -2,10 +2,10 @@
 title: Criar uma política de conformidade do perfil de trabalho Android no Microsoft Intune – Azure | Microsoft Docs
 description: Criar ou configurar uma política de conformidade de dispositivo do Microsoft Intune para dispositivos de perfil de trabalho Android. Escolha para desbloquear dispositivos, defina o nível de ameaça aceitável, verifique o Google Play, insira a versão mínima e máxima de versão do sistema operacional, escolha seus requisitos de senha e permita sideload dos aplicativos.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905080"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828152"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos de perfil de trabalho Android no Intune
 
@@ -113,7 +113,11 @@ Se sua empresa usa perfis de trabalho do Android, você pode habilitar a **Verif
 - **Bloquear aplicativos de fontes desconhecidas**: você não precisa definir essa configuração porque os dispositivos de perfil de trabalho Android sempre restringem a instalação de fontes desconhecidas.
 - **Integridade de tempo de execução do aplicativo do portal da empresa**: verifica se o aplicativo de Portal da empresa tem o ambiente de tempo de execução padrão instalado, está assinado corretamente, não está no modo de depuração e é instalado de uma origem conhecida.
 - **Bloquear depuração de USB no dispositivo**: você não precisa definir essa configuração porque a depuração de USB já está desabilitada em dispositivos de perfil de trabalho Android.
-- **Nível mínimo de patch de segurança**: selecione o nível de patch de segurança mais antigo que um dispositivo pode ter. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser inserida no formato `YYYY-MM-DD`.
+- **Nível mínimo de patch de segurança**: selecione o nível de patch de segurança mais antigo que um dispositivo pode ter. Dispositivos com níveis de patch mais antigos são incompatíveis. A data deve ser inserida no formato *AAAA-MM-DD*.
+- **Aplicativos restritos**: é possível restringir aplicativos adicionando suas IDs de lote à política. Em seguida, se o aplicativo estiver instalado no dispositivo, o dispositivo será marcado como fora de conformidade. 
+   - **Nome do aplicativo**: insira um nome amigável para ajudá-lo a identificar a ID do lote. 
+   - **ID do Lote de Aplicativo**: insira o identificador do lote exclusivo para o provedor do aplicativo. Para o Android, a ID do lote de aplicativo é obtida da URL do armazenamento do aplicativo. Por exemplo, se a URL para o aplicativo no armazenamento for *https://play.google.com/store/apps/details?id=com.Slack*, a ID do Lote de Aplicativo será igual a *com.Slack*.
+
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 

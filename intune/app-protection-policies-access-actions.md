@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329403"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863171"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Apagar dados seletivamente usando ações de acesso da política de proteção de aplicativo no Intune
 
@@ -61,7 +61,7 @@ Para iOS, você poderá configurar ações para as seguintes configurações usa
 -  Modelos de dispositivo
 
 Para usar a configuração **Modelos de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo iOS. Você pode encontrar um identificador de modelo iOS na coluna Tipo de Dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
-Exemplo de entrada: *iPhone5,2; iPhone5,3*
+Exemplo de entrada: *iPhone5,2;iPhone5,3*
 
 Em dispositivos de usuário final, o cliente do Intune executaria uma ação com base em uma correspondência simples de cadeias de caracteres de modelo de dispositivo especificadas no Intune para Políticas de Proteção de Aplicativo. A correspondência depende totalmente do que é relatado pelo dispositivo. Você (o administrador de TI) é incentivado a garantir que o comportamento pretendido ocorra testando essa configuração com base em uma variedade de fabricantes e modelos de dispositivos e direcionando-o a um grupo de usuários pequeno. O valor padrão é **Não configurado**.<br>
 Defina uma das seguintes ações: 
@@ -69,7 +69,7 @@ Defina uma das seguintes ações:
 - Permitir especificado (Apagar não especificado)
 
 **O que acontece se o administrador de TI insere uma lista diferente de identificadores de modelo iOS entre políticas direcionadas aos mesmos aplicativos para o mesmo usuário do Intune?**<br>
-Quando ocorrem conflitos entre duas políticas de proteção de aplicativo para os valores configurados, o Intune normalmente usa a abordagem mais restritiva. Dessa forma, a política resultante enviada para o aplicativo de destino que está sendo aberto pelo usuário do Intune direcionado seria uma interseção dos identificadores de modelo iOS listados na *Política A* e *Política B* voltadas para o mesma combinação de usuário/aplicativo. Por exemplo, *Política A* especifica "iPhone5,2; iPhone5,3", enquanto *Política B* especifica"iPhone5,3", a política resultante direcionada pelo usuário do Intune com ambas *Política A* e *Política B* é "iPhone5,3". 
+Quando ocorrem conflitos entre duas políticas de proteção de aplicativo para os valores configurados, o Intune normalmente usa a abordagem mais restritiva. Dessa forma, a política resultante enviada para o aplicativo de destino que está sendo aberto pelo usuário do Intune direcionado seria uma interseção dos identificadores de modelo iOS listados na *Política A* e *Política B* voltadas para o mesma combinação de usuário/aplicativo. Por exemplo, a *Política A* especifica "iPhone5,2; iPhone5,3", enquanto a *Política B* especifica"iPhone5,3", a política resultante direcionada pelo usuário do Intune com ambas *Política A* e *Política B* será "iPhone5,3". 
 
 ### <a name="android-policy-settings"></a>Configurações da política do Android
 
@@ -86,7 +86,7 @@ Para usar a configuração **Fabricantes de dispositivo**, insira uma lista sepa
 Entrada de exemplo: *Fabricante A; Fabricante B* 
 
 >[!NOTE]
-> Estes são alguns fabricantes comuns relatados por meio de dispositivos usando o Intune e que podem ser usados como entrada: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> Estes são alguns fabricantes comuns relatados por meio de dispositivos que usam o Intune e que podem ser usados como entrada: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 Em dispositivos de usuário final, o cliente do Intune executaria uma ação com base em uma correspondência simples de cadeias de caracteres de modelo de dispositivo especificadas no Intune para Políticas de Proteção de Aplicativo. A correspondência depende totalmente do que é relatado pelo dispositivo. Você (o administrador de TI) é incentivado a garantir que o comportamento pretendido ocorra testando essa configuração com base em uma variedade de fabricantes e modelos de dispositivos e direcionando-o a um grupo de usuários pequeno. O valor padrão é **Não configurado**.<br>
 Defina uma das seguintes ações: 
@@ -94,7 +94,7 @@ Defina uma das seguintes ações:
 - Permitir especificado (Apagar em não especificado)
 
 **O que acontece se o administrador de TI insere uma lista diferente de fabricantes Android entre políticas direcionadas aos mesmos aplicativos para o mesmo usuário do Intune?**<br>
-Quando ocorrem conflitos entre duas políticas de proteção de aplicativo para os valores configurados, o Intune normalmente usa a abordagem mais restritiva. Dessa forma, a política resultante enviada para o aplicativo de destino que está sendo aberto pelo usuário do Intune direcionado seria uma interseção dos fabricantes Android listados na *Política A* e *Política B* voltadas para o mesma combinação de usuário/aplicativo. Por exemplo, a *Política A* especifica "Google; Samsung" e a *Política B* especifica "Google"; a política resultante que o usuário do Intune direcionou pela *Política A* e pela *Política B* será "Google". 
+Quando ocorrem conflitos entre duas políticas de proteção de aplicativo para os valores configurados, o Intune normalmente usa a abordagem mais restritiva. Dessa forma, a política resultante enviada para o aplicativo de destino que está sendo aberto pelo usuário do Intune direcionado seria uma interseção dos fabricantes Android listados na *Política A* e *Política B* voltadas para o mesma combinação de usuário/aplicativo. Por exemplo, a *Política A* especifica "Google;Samsung" e a *Política B* especifica "Google"; a política resultante que o usuário do Intune direcionou pela *Política A* e pela *Política B* será "Google". 
 
 ### <a name="additional-settings-and-actions"></a>Ações e configurações adicionais 
 
@@ -119,5 +119,3 @@ Para obter mais informações sobre as políticas de proteção de aplicativo do
 - [Como criar e atribuir as políticas de proteção de aplicativo](app-protection-policies.md)
 - [Configurações da política de proteção de aplicativo do iOS](app-protection-policy-settings-ios.md)
 - [Configurações da política de proteção de aplicativo do Android no Microsoft Intune](app-protection-policy-settings-android.md) 
-
-

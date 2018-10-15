@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4905e637f7ef709c88371a41ec9275115d571e1
-ms.sourcegitcommit: ddf90877d1ea9da70fd0ef228560f455625e35ba
+ms.openlocfilehash: 95c9e2282336e565ddd5bd3cc4484776aa45a6eb
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46563238"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828390"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -106,7 +106,8 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
     - **Remover MSI de dispositivos de usuários finais** – escolha se deseja remover os aplicativos .MSI do Office já existentes dos dispositivos de usuários finais. A instalação não será bem-sucedida se já houver aplicativos .MSI existentes nos dispositivos de usuários finais. Os aplicativos a serem desinstalados não estão limitados aos aplicativos selecionados para instalação em **Configurar Pacote de Aplicativos**, pois essa ação removerá todos os aplicativos do Office (MSI) dos dispositivos de usuários finais. Para obter mais informações, confira [Remover versões de MSI existentes do Office ao atualizar para o Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version). 
     - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo**: selecione essa opção se você não exigir que os usuários finais aceitem o contrato de licença. Com isso, o Intune aceitará automaticamente o contrato.
     - **Usar ativação do computador compartilhado**: selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
-    - **Idiomas**: o Office é instalado automaticamente em qualquer idioma com suporte instalado com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos.
+    - **Idiomas**: o Office é instalado automaticamente em qualquer um dos idiomas com suporte instalados com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos. <p></p>
+    É possível implantar idiomas adicionais para aplicativos do Office 365 Pro Plus gerenciados por meio do Intune. A lista de idiomas disponíveis inclui o **Tipo** de pacote de idiomas (núcleo, parcial e revisão de texto). No portal do Azure, selecione **Microsoft Intune** > **Aplicativos clientes** > **Aplicativos** > **Adicionar**. Na lista **Tipo de aplicativo** da folha **Adicionar aplicativo**, selecione **Windows 10** em **Pacote do Office 365**. Selecione **Idiomas** na folha **Configurações do Pacote de Aplicativos**. Para obter mais informações, confira [Visão geral da implantação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="finish-up"></a>Concluir
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 452ee2b386130a4c7ca6dc5026d3e2489c5ea33a
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147036"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863035"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Como atualizar o aplicativo Portal da Empresa
 
 Este artigo descreve como atualizar sua versão do aplicativo Portal da Empresa quando:  
-* Há uma versão mais recente do aplicativo Portal da Empresa disponível.
-* Não há mais suporte para sua versão do aplicativo Portal da Empresa.
+* Há uma versão mais recente do Portal da Empresa disponível.
+* Não há mais suporte para a versão do Portal da Empresa.
 
-Estas etapas descrevem como atualizar o aplicativo em dispositivos iOS, Android e Windows.    
+Essas etapas descrevem como atualizar ou obter a versão mais recente do aplicativo em dispositivos Android, iOS e Windows.    
 
-## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Atualize o aplicativo do Portal da Empresa do Intune no seu dispositivo Android
+## <a name="update-the-company-portal-app-on-your-android-device"></a>Atualizar o aplicativo Portal da Empresa em seu dispositivo Android  
 
-A Play Store o alertará quando uma nova versão do Portal da Empresa estiver disponível. Você não verá um prompt no aplicativo do Portal da Empresa. Selecione o alerta e siga as instruções para atualizar seu dispositivo.  
+A Google Play Store o alertará quando uma nova versão do Portal da Empresa estiver disponível. Você não verá um prompt no aplicativo do Portal da Empresa. Selecione o alerta do armazenamento e siga suas instruções para atualizar o aplicativo. 
 
-## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>Atualize o aplicativo do Portal da Empresa do Intune no seu dispositivo iOS
+## <a name="update-the-company-portal-app-on-your-ios-device"></a>Atualizar o aplicativo Portal da Empresa em seu dispositivo iOS  
 
-Quando uma nova versão estiver disponível, a opção “atualizar” aparecerá quando você conferir o aplicativo na lista de aplicativos instalados.  
+Quando uma nova versão estiver disponível, uma opção **Atualizar** será exibida em sua lista de aplicativos instalados, ao lado do aplicativo Portal da Empresa.  
 
-1. Abra a App Store e pesquise por **Intune**.
+1. Abra a App Store e pesquise **Intune**.  
+2. Quando você localizar o aplicativo, toque em **Atualizar**.  
 
-2. Quando você localizar o aplicativo, toque em **Atualizar**.
+## <a name="update-the-company-portal-app-on-your-windows-device"></a>Atualizar o aplicativo Portal da Empresa em seu dispositivo Windows
+Para receber atualizações automaticamente à medida que elas se tornarem disponíveis, abra a Microsoft Store e acesse **Configurações**. Em seguida, ative **Atualizações do aplicativo**. Para exibir atualizações recentes e os aplicativos aguardando na fila de download, acesse **Downloads e atualizações**.  
 
-## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Atualize o aplicativo do Portal da Empresa do Intune no seu dispositivo Windows
-
-1.  Navegue até a Microsoft Store e pesquise o **portal da empresa do Intune**.
-
-2.  Siga as etapas de instalação.
-
-    > [!NOTE]
-    > Se não for possível acessar a Microsoft Store, entre em contato com o suporte de sua empresa.
+Conclua as etapas a seguir se preferir atualizar manualmente o aplicativo ou se as **Atualizações do Aplicativo** estiverem desabilitadas por sua empresa.  
+1. Abra a Microsoft Store.
+2. Na caixa de pesquisa, digite **Portal da Empresa**.
+3. Clique no aplicativo para instalar a versão mais recente em seu dispositivo. 
 
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

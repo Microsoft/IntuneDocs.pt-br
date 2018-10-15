@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
-ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
+ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46466771"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866415"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -207,7 +207,7 @@ Além disso, os aplicativos podem substituir essas configurações do Azure AD n
 
 ### <a name="if-your-app-does-not-use-adal"></a>Se seu aplicativo não usar a ADAL
 
-Se seu aplicativo não usar a ADAL, o SDK de Aplicativos do Intune fornecerá valores padrão para parâmetros da ADAL e lidará com a autenticação no Azure AD. Você não precisa especificar quaisquer valores para as configurações de ADAL listadas acima.
+Conforme mencionado acima, o SDK de Aplicativos do Intune usa a [Biblioteca de Autenticação do Azure Active Directory](https://github.com/AzureAD/azure-activedirectory-library-for-objc) para seus cenários de inicialização condicional e autenticação. Ele também se baseia na ADAL para registrar a identidade do usuário no serviço de MAM para gerenciamento sem cenários de registro de dispositivo. Se **o aplicativo não usar a ADAL para seu próprio mecanismo de autenticação**, o SDK de Aplicativos do Intune fornecerá os valores padrão para os parâmetros da ADAL e lidará com a autenticação no Azure AD. Você não precisa especificar quaisquer valores para as configurações de ADAL listadas acima. Qualquer mecanismo de autenticação, se existir, usado pelo seu aplicativo será mostrado na parte superior dos prompts da ADAL. 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Definir as configurações para o SDK de Aplicativos do Intune
 

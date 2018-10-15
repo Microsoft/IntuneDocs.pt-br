@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028725"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828288"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra como configurar sua infraestrutura e depois criar e atribuir perfis de certificado de protocolo SCEP (Simple Certificate Enrollment Protocol) com o Intune.
 
@@ -168,7 +166,7 @@ Nesta etapa:
 
    6. **Ferramentas de Gerenciamento** > **Compatibilidade com Gerenciamento do IIS 6** > **Compatibilidade com Metabase do IIS 6**
 
-   7. **Ferramentas de Gerenciamento** > **Compatibilidade com Gerenciamento do IIS 6** > **Compatibilidade com WMI do IIS 6**
+   7. **Ferramentas de Gerenciamento** > **Compatibilidade de Gerenciamento do IIS 6** > **Compatibilidade de WMI do IIS 6**
 
    8. No servidor, adicione a conta de serviço de NDES como membro do grupo **IIS_IUSR**.
 
@@ -350,6 +348,113 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
 5. Na lista suspensa de tipos de **Perfil**, selecione **Certificado SCEP**.
 6. No painel **Certificado SCEP**, defina as seguintes configurações:
 
+   - **Tipo de certificado**: escolha **Usuário** para ver certificados de usuário. Escolha **Dispositivo** para dispositivos sem usuário, como quiosques. Os certificados do **dispositivo** estão disponíveis para as seguintes plataformas:  
+     - iOS
+     - Windows 8.1 e posterior
+     - Windows 10 e posterior
+
+   - **Formato de nome da entidade**: selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções serão alteradas se você escolher um tipo de certificado de **usuário** ou um tipo de certificado de **dispositivo**. 
+
+        **Tipo de certificado de usuário**  
+
+        É possível incluir o endereço de email do usuário no nome da entidade. Escolha:
+
+        - **Não configurado**
+        - **Nome comum**
+        - **Nome comum incluindo email**
+        - **Nome comum como email**
+        - **IMEI (Identificação Internacional de Equipamento Móvel)**
+        - **Número de série**
+        - **Personalizado**: quando você seleciona essa opção, uma caixa de texto **Personalizado** também é exibida. Use esse campo para inserir um formato de nome de entidade personalizado, incluindo variáveis. O formato personalizado é compatível com duas variáveis: **CN (Nome Comum)** e **E (Email)**. **CN (Nome Comum)** pode ser definido para qualquer uma das seguintes variáveis:
+
+            - **CN = {{UserName}}**: o nome de princípio do usuário, como janedoe@contoso.com
+            - **CN = {{AAD_Device_ID}}**: uma ID atribuída ao registrar um dispositivo no Azure AD (Active Directory). Essa ID normalmente é usada para autenticar com o Azure AD.
+            - **CN = {{SERIALNUMBER}}**: o SN (número de série) exclusivo normalmente usado pelo fabricante para identificar um dispositivo
+            - **CN = {{IMEINumber}}**: o número exclusivo do IMEI (Identidade Internacional de Equipamento Móvel) usado para identificar um celular
+            - **CN = {{OnPrem_Distinguished_Name}}**: uma sequência de nomes distintos relativos separados por vírgula, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                Para usar a variável `{{OnPrem_Distinguished_Name}}`, sincronize o atributo de usuário `onpremisesdistingishedname` usando o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com seu Azure AD.
+
+            - **CN={{onPremisesSamAccountName}}**: os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD usando o Azure AD Connect em um atributo chamado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de uma solicitação de emissão de certificado no assunto de um certificado do protocolo SCEP.  O atributo samAccountName é o nome de logon do usuário usado para dar suporte a clientes e servidores de uma versão anterior do Windows (pré-Windows 2000). O formato de nome de logon do usuário é: `DomainName\testUser`, ou apenas `testUser`.
+
+                Para usar a variável `{{onPremisesSamAccountName}}`, sincronize o atributo de usuário `onPremisesSamAccountName` usando o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com seu Azure AD.
+
+            Usando uma combinação de uma ou mais dessas variáveis e cadeias de caracteres estáticas, é possível criar um formato de nome de entidade personalizado, como:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            Neste exemplo, você criou um formato de nome de entidade que, além das variáveis CN e E, usa cadeias de caracteres para os valores Unidade Organizacional, Organização, Local, Estado e País. [Função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) descreve essa função e suas cadeias de caracteres compatíveis.
+
+        **Tipo de certificado de dispositivo**  
+
+        Quando você usa o tipo de certificado **Dispositivo**, você também pode usar as seguintes variáveis de certificado do dispositivo para o valor:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Essas variáveis podem ser adicionadas com texto estático em uma caixa de texto de valor personalizada. Por exemplo, o atributo DNS pode ser adicionado como `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - No texto estático do SAN, chaves **{ }**, barras verticais **|** e ponto e vírgulas **;** não funcionam. 
+        >  - Ao usar uma variável de certificado do dispositivo, coloque a variável entre chaves **{}**.
+        >  - `{{FullyQualifiedDomainName}}` funciona somente para dispositivos Windows e unidos ao domínio. 
+        >  -  Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+
+
+   - **Nome alternativo da entidade**: insira como o Intune criará automaticamente os valores para o SAN (nome alternativo da entidade) na solicitação de certificado. As opções serão alteradas se você escolher um tipo de certificado de **usuário** ou um tipo de certificado de **dispositivo**. 
+
+        **Tipo de certificado de usuário**  
+
+        Os seguintes atributos estão disponíveis:
+
+        - Endereço de email
+        - UPN (Nome UPN)
+
+            Por exemplo, se você selecionar um tipo de certificado de usuário, poderá incluir o nome UPN no nome alternativo da entidade. Se um certificado do cliente for usado para se autenticar em um Servidor de Políticas de Rede, defina o nome alternativo da entidade como o UPN. 
+
+        **Tipo de certificado de dispositivo**  
+
+        Uma caixa de texto em formato de tabela que você pode personalizar. Os seguintes atributos estão disponíveis:
+
+        - DNS
+        - Endereço de email
+        - UPN (Nome UPN)
+
+        Com o tipo de certificado **Dispositivo**, é possível usar as seguintes variáveis de certificado do dispositivo para o valor:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Essas variáveis podem ser adicionadas com texto estático na caixa de texto de valor personalizada. Por exemplo, o atributo DNS pode ser adicionado como `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - No texto estático do SAN, chaves **{ }**, barras verticais **|** e ponto e vírgulas **;** não funcionam. 
+        >  - Ao usar uma variável de certificado do dispositivo, coloque a variável entre chaves **{}**.
+        >  - `{{FullyQualifiedDomainName}}` funciona somente para dispositivos Windows e unidos ao domínio. 
+        >  -  Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+
    - **Período de validade do certificado**: se você tiver executado o comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` na AC emissora, o que permite um período de validade personalizado, será possível inserir o tempo restante antes da expiração do certificado.<br>Você pode inserir um valor inferior ao período de validade no modelo de certificado, mas não superior. Por exemplo, se o período de validade do certificado em um modelo de certificado for de dois anos, você poderá inserir um valor de um ano, mas não de cinco anos. O valor também tem que ser inferior ao período de validade restante do certificado da AC emissora. 
    - **KSP (provedor de armazenamento de chaves)** (Windows Phone 8.1, Windows 8.1 e Windows 10): insira o local em que a chave do certificado é armazenada. Escolha um destes valores:
      - **Registrar no KSP do TPM (Trusted Platform Module) se existir; caso contrário, no KSP de Software**
@@ -357,40 +462,17 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
      - **Registrar no Passport; caso contrário, falha (Windows 10 e posterior)**
      - **Registrar no Software KSP**
 
-   - **Formato de nome da entidade**: na lista, selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. Se o certificado for para um usuário, você também pode incluir o endereço de email do usuário no nome da entidade. Escolha:
-     - **Não configurado**
-     - **Nome comum**
-     - **Nome comum incluindo email**
-     - **Nome comum como email**
-     - **IMEI (Identificação Internacional de Equipamento Móvel)**
-     - **Número de série**
-     - **Personalizado** – ao selecionar essa opção, outro campo suspenso será exibido. Use esse campo para inserir um formato de nome da entidade personalizado. O formato personalizado é compatível com duas variáveis: **CN (Nome Comum)** e **E (Email)**. **CN (Nome Comum)** pode ser definido para qualquer uma das seguintes variáveis:
-       - **CN = {{UserName}}**: o nome de princípio do usuário, como janedoe@contoso.com
-       - **CN = {{AAD_Device_ID}}**: uma ID atribuída ao registrar um dispositivo no Azure AD (Active Directory). Essa ID normalmente é usada para autenticar com o Azure AD.
-       - **CN = {{SERIALNUMBER}}**: o SN (número de série) exclusivo normalmente usado pelo fabricante para identificar um dispositivo
-       - **CN = {{IMEINumber}}**: o número exclusivo do IMEI (Identidade Internacional de Equipamento Móvel) usado para identificar um celular
-       - **CN = {{OnPrem_Distinguished_Name}}**: uma sequência de nomes distintos relativos separados por vírgula, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          Para usar a variável `{{OnPrem_Distinguished_Name}}`, sincronize o atributo de usuário `onpremisesdistingishedname` usando o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com seu Azure AD.
-
-       - **CN={{onPremisesSamAccountName}}**: os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD usando o Azure AD Connect em um atributo chamado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de uma solicitação de emissão de certificado no assunto de um certificado do protocolo SCEP.  O atributo samAccountName é o nome de logon do usuário usado para dar suporte a clientes e servidores de uma versão anterior do Windows (pré-Windows 2000). O formato de nome de logon do usuário é: `DomainName\testUser`, ou apenas `testUser`.
-
-          Para usar a variável `{{onPremisesSamAccountName}}`, sincronize o atributo de usuário `onPremisesSamAccountName` usando o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com seu Azure AD.
-
-       Usando uma combinação de uma ou diversas dessas variáveis e cadeias de caracteres estáticas, você pode criar um formato de nome de entidade personalizado, como: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> Neste exemplo, você criou um formato de nome de entidade que, além das variáveis CN e E, usa cadeias de caracteres para os valores Unidade Organizacional, Organização, Local, Estado e País. [Função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) descreve essa função e suas cadeias de caracteres compatíveis.
-
-- **Nome alternativo da entidade**: insira como o Intune criará automaticamente os valores para o SAN (nome alternativo da entidade) na solicitação de certificado. Por exemplo, se você selecionar um tipo de certificado de usuário, poderá incluir o nome UPN no nome alternativo da entidade. Se o certificado do cliente for usado para autenticar em um Servidor de Políticas de Rede, será necessário definir o nome alternativo da entidade como o UPN.
-- **Uso de chave**: insira as opções de uso de chave para o certificado. Suas opções:
-  - **Criptografia de chave:** permita a troca de chaves apenas quando a chave for criptografada
-  - **Assinatura digital**: permita a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave
-- **Tamanho da chave (bits)**: selecione o número de bits contidos na chave
-- **Algoritmo de hash:** (Android, Windows Phone 8.1, Windows 8.1 e Windows 10): selecione um dos tipos de algoritmo de hash disponíveis para ser usado com esse certificado. Selecione o nível mais alto de segurança que dá suporte aos dispositivos de conexão.
-- **Certificado Raiz**: escolha um perfil de Certificado de Autoridade de Certificação raiz configurado anteriormente e atribuído ao usuário ou dispositivo. Esse certificado de Autoridade de Certificação deve ser o certificado raiz da Autoridade de Certificação que emite o certificado que você está configurando neste perfil de certificado.
-- **Uso estendido de chave**: escolha **Adicionar** valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exige a **Autenticação de cliente** para que o usuário ou dispositivo possa autenticar-se em um servidor. No entanto, você pode adicionar outros usos da chave conforme necessário.
-- **Configurações de Registro**
-  - **Limite de renovação (%)**: insira o percentual do tempo de vida do certificado restante antes da renovação das solicitações de dispositivo do certificado.
-  - **URLs de servidor SCEP**: insira uma ou mais URLs para os servidores NDES que emitem certificados por meio do protocolo SCEP.
-  - Selecione **OK** e **Criar** seu perfil.
+   - **Uso de chave**: insira as opções de uso de chave para o certificado. Suas opções:
+     - **Criptografia de chave:** permita a troca de chaves apenas quando a chave for criptografada
+     - **Assinatura digital**: permita a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave
+   - **Tamanho da chave (bits)**: selecione o número de bits contidos na chave
+   - **Algoritmo de hash:** (Android, Windows Phone 8.1, Windows 8.1 e Windows 10): selecione um dos tipos de algoritmo de hash disponíveis para ser usado com esse certificado. Selecione o nível mais alto de segurança que dá suporte aos dispositivos de conexão.
+   - **Certificado Raiz**: escolha um perfil de Certificado de Autoridade de Certificação raiz configurado anteriormente e atribuído ao usuário ou dispositivo. Esse certificado de Autoridade de Certificação deve ser o certificado raiz da Autoridade de Certificação que emite o certificado que você está configurando neste perfil de certificado.
+   - **Uso estendido de chave**: escolha **Adicionar** valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exige a **Autenticação de cliente** para que o usuário ou dispositivo possa autenticar-se em um servidor. No entanto, você pode adicionar outros usos da chave conforme necessário.
+   - **Configurações de Registro**
+     - **Limite de renovação (%)**: insira o percentual do tempo de vida do certificado restante antes da renovação das solicitações de dispositivo do certificado.
+     - **URLs de servidor SCEP**: insira uma ou mais URLs para os servidores NDES que emitem certificados por meio do protocolo SCEP.
+     - Selecione **OK** e **Criar** seu perfil.
 
 O perfil é criado e aparece no painel da lista de perfis.
 

@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147710"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260242"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
 
@@ -80,8 +80,17 @@ Use as etapas a seguir para registrar dispositivos macOS que executam o OS X El 
 
 9. A primeira tela exibida no aplicativo Portal da Empresa solicita que você **Entre**. Use a mesma conta corporativa ou de estudante que você usou para entrar no site Portal da Empresa.
 
-10. O Portal da Empresa confirma suas informações de conta, exibe os status **Registro de Dispositivo** e **Conformidade do Dispositivo**. Triângulos amarelos realçam as ações que você precisa executar para proteger seu dispositivo macOS corporativo ou de estudante. Clique em **Iniciar** para começar o registro. Saiba mais sobre [o que sua organização pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) quando você registra um dispositivo.
+10. O Portal da Empresa confirma as informações da conta e exibe os status **Registro de Dispositivo** e **Conformidade do Dispositivo**. Triângulos amarelos realçam as ações que você precisa executar para proteger seu dispositivo macOS corporativo ou de estudante. Clique em **Iniciar** para começar o registro. 
 
-11. Pode ser solicitado que você forneça informações de logon do seu computador. Pode levar alguns minutos para registrar seu dispositivo no gerenciamento. Durante esse tempo, você pode usar seu dispositivo para outras coisas. Uma mensagem será exibida quando a Instalação do Acesso à Empresa for concluída para informá-lo que ela já terminou.  
+11. Se solicitado, digite suas informações de entrada do seu computador.  
+
+Pode levar alguns minutos para registrar seu dispositivo no gerenciamento. Durante esse tempo, você pode usar seu dispositivo para outras coisas. Uma mensagem será exibida quando a Instalação do Acesso à Empresa for concluída para informá-lo que ela já terminou.  
+
+## <a name="unverified-profiles"></a>Perfis não verificados
+Quando você exibe os perfis do MDM (gerenciamento de dispositivo móvel) instalados para seu dispositivo macOS, alguns perfis podem exibir um status **Não verificado**. Desde que o **Perfil de gerenciamento** exiba um status **Verificado**, não é necessário se preocupar.  
+
+O perfil de gerenciamento é o que define a conexão de canal do MDM. Contanto que o perfil de gerenciamento seja verificado, quaisquer outros perfis entregues ao computador, por meio desse canal, herdam as características secundárias do perfil de gerenciamento.
+
+Além disso, como esses outros perfis não exigem verificações individuais, eles são gerados mais rapidamente e entregues aos dispositivos. 
 
 Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

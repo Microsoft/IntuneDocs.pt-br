@@ -3,8 +3,8 @@ title: Política de conformidade do dispositivo para dispositivos Jamf
 titlesuffix: Microsoft Intune
 description: Use políticas de conformidade do Microsoft Intune com acesso condicional do Azure Active Directory para ajudar a proteger dispositivos gerenciados pelo Jamf.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
+ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34482328"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812814"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs gerenciados com Jamf Pro
 
@@ -73,9 +73,9 @@ Os usuários finais precisam iniciar o aplicativo Portal da Empresa por meio do 
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Removendo um dispositivo gerenciado Jamf do Intune
 
-Você não pode remover um dispositivo gerenciado Jamf do Intune. Você precisa remover dispositivos gerenciados Jamf do Jamf Pro, que então os removerá do Intune. 
+É possível remover um dispositivo gerenciado pelo Jamf do console do Intune selecionando **Excluir** na exibição **Todos os dispositivos**. A exclusão de dispositivos em massa pode ser habilitada selecionando vários aplicativos e clicando em **Excluir**.
 
-Saiba como [remover um dispositivo gerenciado Jamf nos documentos do Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Você também pode registrar um tíquete de suporte com o [Suporte do Jamf](https://www.jamf.com/support/) para obter suporte adicional. 
+Obtenha informações sobre como [remover um dispositivo gerenciado pelo Jamf nos documentos do Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Você também pode registrar um tíquete de suporte com o [Suporte do Jamf](https://www.jamf.com/support/) para obter suporte adicional. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

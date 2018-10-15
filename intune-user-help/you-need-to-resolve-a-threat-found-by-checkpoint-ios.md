@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148024"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828033"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Resolver uma ameaça encontrada pelo SandBlast Mobile Protect
 
@@ -37,7 +37,12 @@ Este artigo descreve como reconhecer alertas de ameaças do Sandblast Mobile Pro
 ## <a name="troubleshoot-virus-or-security-threat"></a>Solucionar problemas de ameaça de vírus ou de segurança  
 Se uma ameaça de segurança ou de vírus for detectada, o aplicativo SandBlast Mobile Protect agirá de acordo com as políticas de acesso da sua organização. As políticas de acesso podem impedir o acesso ao email, aos aplicativos e à rede de trabalho.  
 
-O SandBlast Mobile Protect solicitará que você execute uma ação para recuperar o acesso perdido. Selecione a ameaça e siga as instruções dentro do aplicativo para resolvê-la.  
+![Captura de tela de exemplo de uma mensagem de alerta do aplicativo SEP Mobile.](./media/skycure-list-of-potential-issues-android.png)  
+O SandBlast Mobile Protect solicitará que você execute uma ação para recuperar o acesso perdido. Selecione a ameaça e siga as instruções dentro do aplicativo para resolvê-la.
+
+Como o aplicativo é integrado ao provedor de MDM da empresa, você também verá um aviso sobre acesso restrito no aplicativo Portal da Empresa. O aviso o instrui a abrir o Sandblast Mobile Protect para corrigir a ameaça de vírus ou de segurança.  
+
+  ![Captura de tela de exemplo da página de dispositivo do Portal da Empresa, mostrando o aviso do Sandblast Mobile Protect.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Solucionar problemas de uma ameaça de aplicativo  
 
@@ -45,4 +50,4 @@ Ao instalar um aplicativo identificado como uma ameaça ao dispositivo, você re
 
 Para resolver, selecione o aplicativo na lista de ameaças no SandBlast Mobile Protect. Em seguida, siga as instruções para remover e desinstalar o aplicativo.  
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter informações de contato, confira o [site Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)
+Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
