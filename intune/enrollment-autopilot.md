@@ -6,21 +6,22 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2018
+ms.date: 10/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: a640e6d914da6fead7a64d5235c1cdeac164ac9e
-ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
+ms.openlocfilehash: b6381a7a5a8032340910d2c8ff2a0f7db91ef2dd
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44096530"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828118"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows usando o Windows Autopilot
-O Windows Autopilot simplifica o provisionamento de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o AutoPilot, você pode dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, consulte [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Visão geral do Windows AutoPilot).
+# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows usando o Windows Autopilot  
+O Windows Autopilot simplifica a inscrição de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Registro automático no Windows habilitado](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
@@ -28,15 +29,15 @@ O Windows Autopilot simplifica o provisionamento de dispositivos. Compilar e man
 
 ## <a name="add-devices"></a>Adicionar Dispositivos
 
-Você pode adicionar dispositivos Windows AutoPilot importando um arquivo CSV com as respectivas informações.
+É possível adicionar dispositivos Windows Autopilot importando um arquivo CSV com as respectivas informações.
 
 1. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos** > **Importar**.
 
-    ![Captura de tela de dispositivos Windows AutoPilot](media/enrollment-autopilot/autopilot-import-device.png)
+    ![Captura de tela de dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Em **Adicionar dispositivos do Windows Autopilot**, navegue até um arquivo CSV que inclui a listagem de dispositivos que você pretende adicionar. O arquivo deve incluir os números de série, as IDs de produtos do Windows, os hashes de hardware e as IDs de pedidos opcionais dos dispositivos.
+2. Em **Adicionar dispositivos do Windows Autopilot**, navegue até um arquivo CSV que inclui a listagem de dispositivos que você pretende adicionar. O arquivo deve listar os números de série, as IDs de produtos do Windows, os hashes de hardware e as IDs de pedidos opcionais dos dispositivos.
 
-    ![Captura de tela de adição de dispositivos Windows AutoPilot](media/enrollment-autopilot/autopilot-import-device2.png)
+    ![Captura de tela de adição de dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 
 3. Escolha **Importar** para iniciar a importação de informações do dispositivo. A importação pode demorar vários minutos.
 
@@ -46,7 +47,7 @@ Você pode adicionar dispositivos Windows AutoPilot importando um arquivo CSV co
 
 ## <a name="create-an-autopilot-device-group"></a>Criar um grupo de dispositivos do Autopilot
 
-1. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal) e escolha **Grupos**.
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Grupos** > **Novo grupo**.
 2. Na folha **Grupo**:
     1. Em **Tipo de grupo**, escolha **Segurança**.
     2. Digite o **Nome do grupo** e a **Descrição do grupo**.
@@ -56,31 +57,30 @@ Você pode adicionar dispositivos Windows AutoPilot importando um arquivo CSV co
 4. Se escolheu **Dispositivo Dinâmico** como **Tipo de associação** anteriormente, na folha **Grupo**, escolha **Membros de dispositivo dinâmico** e digite qualquer um dos códigos a seguir na caixa **Regra avançada**.
     - Se pretende criar um grupo que inclui todos os dispositivos do Autopilot, digite `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
     - Se pretende criar um grupo que inclui todos os dispositivos do Autopilot com uma ID do pedido específica, digite: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
-    - Se pretende criar um grupo que inclui todos os dispositivos do Autopilot com uma Identificação da Ordem de Compra específica, digite: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
+    - Se pretende criar um grupo que inclui todos os dispositivos do Autopilot com a ID da Ordem de Compra específica, digite: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Depois de adicionar o código de **Regra avançada**, escolha **Salvar**.
-5. Escolha **Criar**.
+5. Escolha **Criar**.  
 
-
-
-## <a name="create-an-autopilot-deployment-profile"></a>Criar um perfil de implantação do AutoPilot
-Os perfis de implantação do AutoPilot são usados para configurar os dispositivos do AutoPilot.
+## <a name="create-an-autopilot-deployment-profile"></a>Criar um perfil de implantação do Autopilot
+Os perfis de implantação do Autopilot são usados para configurar os dispositivos do Autopilot.
 1. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal) e escolha **Registro de dispositivo** > **Registro do Windows** > **Perfis de Implantação** > **Criar Perfil**.
 2. Forneça um **Nome** e uma **Descrição** opcional.
-3. No caso do **Modo de implantação**, escolha entre duas opções:
-    - **Controlado pelo usuário**: dispositivos com este perfil são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário são necessárias para provisionar o dispositivo.
-    - **Implantação automática (versão prévia)**: (exige o [Build do Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) mais recente) Dispositivos com esse perfil não são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário não são necessárias para provisionar o dispositivo.
-4. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD**.
-5. Escolha **OOBE (configuração inicial pelo usuário)**, configure as opções a seguir e escolha **Salvar**:
+3. Se quiser que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos direcionados em Autopilot** como **Sim**. Todos os dispositivos que não são Autopilot em grupos atribuídos serão registrados com o serviço de implantação do Autopilot. Aguarde 48 horas para que o registro seja processado. Quando o registro do dispositivo é cancelado e redefinido, o Autopilot o registra. Após um dispositivo ser registrado dessa maneira, desabilitar essa opção ou remover a atribuição de perfis não removerá o dispositivo do serviço de implantação do Autopilot. Em vez disso, é necessário [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
+4. No caso do **Modo de implantação**, escolha entre duas opções:
+    - **Controlado pelo usuário**: dispositivos com este perfil são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário são necessárias para registrar o dispositivo.
+    - **Implantação automática (versão prévia)**: (exige o [Build do Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) mais recente) Dispositivos com esse perfil não são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário não são necessárias para registrar o dispositivo.
+5. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD**.
+6. Escolha **OOBE (configuração inicial pelo usuário)**, configure as opções a seguir e escolha **Salvar**:
     - **Idioma (Região)***: escolha o idioma que pretende usar no dispositivo. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
     - **Configurar teclado automaticamente***: se um **Idioma (Região)** estiver selecionado, escolha **Sim** para ignorar a página de seleção de teclado. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
-    - **EULA (Contrato de Licença de Usuário Final)**: (Windows 10, versão 1709 ou posterior) escolha se deseja mostrar ou não o EULA aos usuários.
-    - **Configurações de privacidade**: escolha se deseja mostrar ou não as configurações de privacidade aos usuários.
-    - **Ocultar opções de alteração de conta (somente Windows Insider)**: escolha **Ocultar** para impedir que as opções de alteração de conta sejam exibidas nas páginas de entrada e de erro de domínio da empresa. Essa opção exige que a [identidade visual da empresa seja configurada no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
-    - **Tipo de conta de usuário**: escolha se o tipo de conta do usuário deve ser **Administrador** ou **Padrão**.
-    - **Aplicar modelo de nome do computador (somente Windows Insider)**: escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o provisionamento. Os nomes precisam ter 15 caracteres ou menos e podem conter letras, números e hifens. Os nomes não podem conter apenas números. Use a [macro %%SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico do hardware. Como alternativa, use a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória, em que x é igual ao número de dígitos a serem adicionados. 
+    - **EULA (Contrato de Licença de Usuário Final)**: (Windows 10, versão 1709 ou posterior) Escolha se deseja mostrar o EULA aos usuários.
+    - **Configurações de privacidade**: escolha se deseja mostrar as configurações de privacidade aos usuários.
+    - **Ocultar opções de alteração de conta (somente Participante do Programa Windows Insider)**: escolha **Ocultar** para impedir que as opções de alteração de conta sejam exibidas nas páginas de entrada e de erro de domínio da empresa. Essa opção exige que a [identidade visual da empresa seja configurada no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Tipo de conta do usuário**: escolha o tipo de conta do usuário (usuário **Administrador** ou **Padrão**).
+    - **Aplicar modelo de nome do computador (somente Participante do Programa Windows Insider)**: escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o registro. Os nomes precisam ter 15 caracteres ou menos e podem ter letras, números e hifens. Os nomes não podem conter apenas números. Use a [macro %%SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico do hardware. Ou use a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória, em que x é igual ao número de dígitos a serem adicionados. 
 
-6. Escolha **Criar** para criar o perfil. O perfil de implantação do AutoPilot agora está disponível para ser atribuído aos dispositivos.
+6. Escolha **Criar** para criar o perfil. O perfil de implantação do Autopilot agora está disponível para ser atribuído aos dispositivos.
 
 *As opções **Idioma (Região)** e **Configurar o teclado automaticamente** estão disponíveis apenas quando você escolhe **Implantação automática (versão prévia)** como **Modo de implantação** (exige o [Build do Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) mais recente).
 
@@ -91,11 +91,11 @@ Os perfis de implantação do AutoPilot são usados para configurar os dispositi
 2. Na folha do perfil específico, escolha **Atribuições**. 
 3. Escolha **Selecionar grupos**, em seguida, na folha **Selecionar grupos**, escolha os grupos aos quais deseja atribuir um perfil e escolha **Selecionar**.
 
-## <a name="edit-an-autopilot-deployment-profile"></a>Editar um perfil de implantação do AutoPilot
-Depois de criar um perfil de implantação do AutoPilot, você poderá editar determinadas partes do perfil de implantação.   
+## <a name="edit-an-autopilot-deployment-profile"></a>Editar um perfil de implantação do Autopilot
+Depois de criar um perfil de implantação do Autopilot, será possível editar determinadas partes do perfil de implantação.   
 
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo**.
-2. Em **Registro do Windows**, vá até a seção **Windows Autopilot** e escolha **Perfis de Implantação**.
+2. Em **Registro do Windows**, na seção **Windows Autopilot**, escolha **Perfis de Implantação**.
 3. Selecione o perfil que deseja editar.
 4. Clique em **Propriedades** à esquerda para alterar o nome ou a descrição do perfil de implantação. Clique em **Salvar** depois de fazer as alterações.
 5. Clique em **Configurações** para alterar as configurações de OOBE. Clique em **Salvar** depois de fazer as alterações.
@@ -103,28 +103,36 @@ Depois de criar um perfil de implantação do AutoPilot, você poderá editar de
 > [!NOTE]
 > As alterações feitas no perfil se aplicam aos dispositivos atribuídos a ele. No entanto, o perfil atualizado somente será aplicado a um dispositivo que já foi registrado no Intune depois que o dispositivo for redefinido e registrado novamente.
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Alertas para dispositivos não atribuídos do Windows AutoPilot <!-- 163236 -->
-Você pode exibir um alerta para ver quantos dispositivos do Autopilot não receberam atribuição de perfis de implantação desse programa. Use as informações no alerta para criar perfis e atribuí-los aos dispositivos não atribuídos. Quando você clica no alerta, vê uma lista completa de dispositivos Windows AutoPilot e informações detalhadas sobre eles.
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Alertas para dispositivos não atribuídos do Windows AutoPilot <!-- 163236 -->  
+
+Os alertas mostrarão quantos dispositivos do programa Autopilot não têm os perfis de implantação do Autopilot. Use as informações no alerta para criar perfis e atribuí-los aos dispositivos não atribuídos. Quando você clica no alerta, vê uma lista completa de dispositivos Windows Autopilot e informações detalhadas sobre eles.
+
 
 Para receber alertas sobre dispositivos não atribuídos, vá até o [Intune no portal do Azure](https://aka.ms/intuneportal) e escolha **Registro de dispositivo** > **Visão geral** > **Dispositivos não atribuídos**.  
 
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Atribuir um usuário a um dispositivo específico do Autopilot
 
-Você pode atribuir um usuário a um dispositivo específico do Autopilot. Essa atribuição preenche previamente um usuário do Azure Active Directory na página de entrada [com a identidade visual da empresa](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) durante a instalação do Windows. Ela também permite que você defina um nome de saudação personalizado. Isso não preenche previamente nem modifica o logon do Windows. Somente os usuários licenciados do Intune podem ser atribuídos dessa maneira.
+Você pode atribuir um usuário a um dispositivo específico do Autopilot. Essa atribuição preenche previamente um usuário do Azure Active Directory na página de entrada [com a identidade visual da empresa](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) durante a instalação do Windows. Ela também permite que você defina um nome de saudação personalizado. Ela não preenche previamente nem modifica a entrada do Windows. Somente os usuários licenciados do Intune podem ser atribuídos dessa maneira.
 
 Pré-requisito: o Portal da Empresa do Azure Active Directory configurado e o [Build do Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) mais recente.
 
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos** > escolha o dispositivo > **Atribuir usuário**.
+
     ![Captura de tela de Atribuir usuário](media/enrollment-autopilot/assign-user.png)
+
 2. Selecione um usuário do Azure licenciado para usar o Intune e escolha **Selecionar**.
+
     ![Captura de tela de Selecionar usuário](media/enrollment-autopilot/select-user.png)
-3. Na caixa **Nome Amigável de Usuário**, digite um nome amigável ou simplesmente aceite o padrão. Esse é o nome amigável que será exibido quando o usuário entrar durante a instalação do Windows.
+
+3. Na caixa **Nome Amigável de Usuário**, digite um nome amigável ou simplesmente aceite o padrão. Essa cadeia de caracteres é o nome amigável que será exibido quando o usuário entrar durante a Instalação do Windows.
+
     ![Captura de tela do nome amigável](media/enrollment-autopilot/friendly-name.png)
+
 4. Escolha **OK**.
 
 
-## <a name="delete-autopilot-devices"></a>Excluir dispositivos AutoPilot
+## <a name="delete-autopilot-devices"></a>Excluir dispositivos Autopilot
 
 É possível excluir os dispositivos não registrados do Windows Autopilot.
 
@@ -132,12 +140,13 @@ Pré-requisito: o Portal da Empresa do Azure Active Directory configurado e o [B
 
 2. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos**.
 
-3. Em **Dispositivos do Windows AutoPilot**, escolha os dispositivos que você deseja excluir e, em seguida, escolha **Excluir**.
+3. Em **Dispositivos Windows Autopilot**, escolha os dispositivos que deseja excluir e, em seguida, escolha **Excluir**.
 
 4. Confirmar a exclusão escolhendo **Sim**. A exclusão pode levar alguns minutos.
 
-## <a name="using-autopilot-in-other-portals"></a>Usando o AutoPilot em outros portais
-Caso não tenha interesse em gerenciamento de dispositivo móvel, você pode usar o Autopilot na Microsoft Store para Empresas. Embora haja a opção de usar outros portais, é recomendável usar somente o Intune para gerenciar suas implantações do AutoPilot. Se você usar o Intune e outro portal, o Intune não será capaz de:
+## <a name="using-autopilot-in-other-portals"></a>Usando o Autopilot em outros portais
+Caso não tenha interesse no gerenciamento de dispositivo móvel, é possível usar o Autopilot em outros portais. Embora haja a opção de usar outros portais, é recomendável usar somente o Intune para gerenciar suas implantações do Autopilot. Quando você usar o Intune e outro portal, o Intune não será capaz de:  
+
 - Exibir as alterações dos perfis criados no Intune, mas editados em outro portal
 - Sincronizar os perfis criados em outro portal
 - Exibir alterações em atribuições de perfil feitas em outro portal
@@ -145,4 +154,4 @@ Caso não tenha interesse em gerenciamento de dispositivo móvel, você pode usa
 - Exibir as alterações na lista de dispositivos que foram feitas em outro portal
 
 ## <a name="next-steps"></a>Próximas etapas
-Depois de configurar o Windows AutoPilot para dispositivos Windows 10 registrados, saiba como gerenciar esses dispositivos. Para saber mais, confira [O que é gerenciamento de dispositivos do Microsoft Intune?](https://docs.microsoft.com/intune/device-management)
+Após configurar o Windows Autopilot para dispositivos Windows 10 registrados, saiba como gerenciar esses dispositivos. Para saber mais, confira [O que é gerenciamento de dispositivos do Microsoft Intune?](https://docs.microsoft.com/intune/device-management)
