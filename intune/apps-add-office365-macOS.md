@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8b76de6e9b3a584be7ad324391c1c071140488e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b348d785d12cd044b12dca4cad9d2daaa1baedf4
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329437"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903430"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 para dispositivos macOS com o Microsoft Intune
 
@@ -46,7 +46,7 @@ Adicione o Office 365 desde o painel **Aplicativos**.
 6. Na lista **Tipo de aplicativo**, no grupo **Office 365 Suite**, selecione **macOS**.
 7. Para saber mais sobre o pacote de aplicativos, selecione **Informações do Pacote de Aplicativos**.  
     Essas informações ajudam a identificar o pacote de aplicativos no Intune, e ajudam os usuários a encontrar o pacote de aplicativos no portal da empresa.
-8. Digite as seguintes informações:
+8. Insira as seguintes informações:
     - **Nome do Pacote**: insira o nome do pacote de aplicativos da forma como ele é exibido no portal da empresa. Verifique se todos os nomes de pacotes usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
     - **Descrição do Pacote**: insira uma descrição para o pacote de aplicativos.
     - **Editor**: a Microsoft aparece como o editor.
