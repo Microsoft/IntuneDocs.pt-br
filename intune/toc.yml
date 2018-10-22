@@ -31,6 +31,8 @@ items:
     href: quickstart-create-group.md
   - name: Criar uma política
     href: quickstart-create-policy.md
+  - name: Definir o comprimento de senha do dispositivo
+    href: quickstart-set-password-length-android.md
   - name: Configurar registro automático
     href: quickstart-setup-auto-enrollment.md
   - name: Criar e atribuir uma função personalizada
@@ -823,9 +825,9 @@ items:
       href: intune-legacy-pc-client.md
   - name: Glossário
     href: intune-glossary.md
-ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 5a466a242abd54ccbacbffc0e49fd5aa2acd6cef
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828050"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391664"
