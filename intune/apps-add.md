@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562877"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863137"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
 
@@ -61,6 +61,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativo iOS interno  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativo interno Android  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativos Web  | Aplicativo Web  | Selecione **Link da Web** como o **tipo de aplicativo** e insira uma URL válida apontando para o aplicativo Web.  |
+| Aplicativo do Windows (Win32)  | Aplicativos LOB  | Selecione **aplicativo do Windows (Win32)** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, um arquivo de instalação com a extensão **.intunewin**.  |
 
 Você pode adicionar um aplicativo no Microsoft Intune, selecionando **Aplicativos clientes** > **Aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** aparece e permite que você selecione o **Tipo de aplicativo**. 
 
@@ -194,3 +195,4 @@ Para saber como adicionar aplicativos de cada plataforma ao Intune, veja:
 - [Aplicativos do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicativos do Office 365 para macOS](apps-add-office365-macos.md)
 - [Aplicativos internos](apps-add-built-in.md)
+- [Aplicativos Win32](apps-win32-app-management.md) 
