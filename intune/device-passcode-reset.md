@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300452"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424910"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
@@ -49,7 +49,6 @@ Para dispositivos Android, isso significa que a redefinição de senha no nível
 | Dispositivos Android que executam versões 7.x e anteriores | Não |
 | iOS | Não |
 | macOS | Não |
-| iOS | Não |
 
 Para criar uma nova senha de perfil de trabalho, use a ação de Redefinir senha. Essa ação solicita uma redefinição de senha e cria uma nova senha temporária somente para o perfil de trabalho. 
 

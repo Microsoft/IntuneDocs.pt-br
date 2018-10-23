@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255242"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425148"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
 
@@ -34,7 +34,7 @@ Ao usar o Windows Update para Empresas, você simplifica a experiência de geren
   - Windows Insider &#8208; lento
   - Liberar Windows Insider 
       
-  Para obter detalhes sobre os canais de manutenção disponíveis, consulte [Visão geral do Windows como serviço](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
+  Para obter detalhes sobre os canais de manutenção disponíveis, consulte [Visão geral do Windows como serviço](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Configurações de Adiamento**: defina as configurações de adiamento da atualização para atrasar as instalações da atualização para os grupos de dispositivos. Use essas configurações para preparar sua implantação de atualização para que possa examinar o progresso ao longo do caminho.
 - **Pausando**: adie a instalação das atualizações se você descobrir um problema em algum ponto durante a distribuição de atualização.
 - **Janela de manutenção**: configure o horário em que as atualizações podem ser instaladas.
@@ -148,7 +148,7 @@ Por exemplo, você pode usar os seguintes valores em **Adicionar ou editar a con
 - **Descrição da Configuração**: configurando a ID comercial para soluções Windows Analytics
 - **OMA-URI** (com diferenciação de maiúsculas e minúsculas): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Tipo de Dados**: cadeia de caracteres
-- **Valor**: *use o GUID mostrado na guia Telemetria do Windows em seu espaço de trabalho OMS*>
+- **Valor**: *use o GUID mostrado na guia Telemetria do Windows em seu workspace OMS*>
 
 ![Configuração OMA-URI – editar linha](./media/commID-edit.png)
 
