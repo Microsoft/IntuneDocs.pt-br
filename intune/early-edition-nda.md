@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652131"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>A edição antecipada do Microsoft Intune – Outubro de 2018
 
@@ -44,9 +44,6 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Usar configurações recomendadas pela Microsoft com linhas de base de segurança <!-- 2055484 -->
 O Intune integra-se a outros serviços que têm foco na segurança, incluindo o Windows Defender ATP e o Office 365 ATP. Os clientes estão solicitando uma estratégia comum e um conjunto coeso de fluxos de trabalho de segurança de ponta a ponta entre os serviços do Microsoft 365. Nossa meta é alinhar estratégias para criar soluções que façam a ponte entre operações de segurança e tarefas comuns do administrador. No Intune, nosso objetivo é atingir essa meta publicando um conjunto de "Linhas de base de segurança" recomendadas pela Microsoft (**Intune** > **Linhas de base de segurança**).  Um administrador poderá criar políticas de segurança diretamente com base nessas linhas de base e implantá-las para seus usuários. Eles também poderão personalizar as recomendações de melhores práticas para atender às necessidades de sua organização. O Intune garante que os dispositivos estejam em conformidade com essas linhas de base e notifica os administradores de usuários ou dispositivos que não estão em conformidade.
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>Remover a capacidade dos administradores de apagar dispositivos pessoais e redefinir senhas <!-- 2934699 -->
-Para facilitar os temores de usuários sobre os administradores de empresa com a capacidade de apagar seus dispositivos pessoais, as ações remotas [apagar](devices-wipe.md#wipe) e [Redefinir senha](device-passcode-reset.md) não serão mais aplicáveis a dispositivos pessoais. Alterne o tipo de propriedade do dispositivo para corporativa a fim de habilitar essas ações para dispositivos de propriedade da sua organização.
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>Suporte de piloto automático para dispositivos ingressados no Azure Active Directory híbrido <!-- 1048100 -->
 Será possível configurar dispositivos ingressados no Azure Active Directory híbrido usando o Autopilot. Os dispositivos devem ser ingressados na rede da sua organização para usar o recurso Autopilot híbrido.
 
@@ -56,7 +53,7 @@ Para criar uma marca de escopo, escolha **Funções do Intune** > **Escopo (Marc
 Para adicionar uma marca de escopo a uma atribuição de função, escolha **Funções do Intune** > **Todas as funções** > **Gerenciador de Política e Perfil** > **Atribuições** > **Escopo (Marcas)**.
 Para adicionar uma marca de escopo a um perfil de configuração, escolha **Configuração do dispositivo** > **Perfis** > escolha um perfil > **Propriedades** > **Escopo (Marcas)**.
 
-## <a name="tenant-health-dashboard----1124854---"></a>Painel de Integridade do Locatário <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>Painel de Integridade do Locatário <!-- 1124854 -->
 A página Status do Locatário no Intune fornecerá informações de status do locatário em um único lugar. A página está dividida em quatro seções:  
 - **Detalhes do locatário**: contém informações, como sua Autoridade de MDM, o total de dispositivos registrados no seu locatário e contagens de suas licenças. Esta seção também fornece a versão de serviço atual do seu locatário.
 - **Status do conector**: contém informações para conectores configurados, como o VPP da Apple, Windows Store para Empresas e conectores de certificado. Com base em seu estado atual, os conectores são sinalizados como *Íntegro*, *Aviso* ou *Não íntegro*.
