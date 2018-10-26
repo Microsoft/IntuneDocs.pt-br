@@ -4,6 +4,7 @@ description: Crie uma política de configuração para definir as configuraçõe
 keywords: ''
 author: Erikre
 ms.author: erikre
+ms.reviewer: smithre4
 manager: dougeby
 ms.date: 10/04/2018
 ms.topic: article
@@ -12,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7fc9f34bbd3d14ac4291582247b1e45169c2cccc
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 24ed1a895dd3e4cad6111b40913b43fa9c6a3cec
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828652"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903515"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Definições de configuração do Microsoft Outlook 
 
@@ -29,27 +30,15 @@ Para criar uma política de configuração de aplicativo para dispositivos iOS g
 
 Ao adicionar uma política de configuração no Intune, é possível definir configurações específicas para configurar o Microsoft Outlook. No painel **Definições de configuração**, é possível definir a configuração da conta de email.
 
-### <a name="email-account-settings"></a>Configurações da conta de email
+### <a name="basic-authentication-email-account-settings"></a>Configurações de conta de email de autenticação Básica
+O Outlook para iOS e Android oferece aos administradores do Exchange a capacidade de "enviar por push" configurações de conta para seus usuários locais que usam autenticação Básica com o protocolo ActiveSync. Para obter mais informações, veja [Configuração de conta no Outlook para iOS e Android usando a autenticação Básica](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Para habilitar a configuração de conta, você pode configurar o seguinte:
 
-As definições de configuração a seguir são específicas para o Microsoft Outlook.
-
-- **Servidor de email**: insira o nome do host do servidor Exchange.
+- **Servidor de email**: insira o nome do host do seu servidor Exchange local (por exemplo, mail.contoso.com).
 - **Nome da conta de email**: insira o nome de exibição da conta de email. Esse nome é exibido aos usuários em seus dispositivos.
-- **Atributo de nome de usuário do AAD**: esse nome é o atributo que o Intune obtém do AAD (Azure Active Directory). O Intune gera dinamicamente o nome de usuário que é usado por esse perfil. Suas opções:
+- **Atributo de nome de usuário do AAD**: esse nome é o atributo que o Intune obtém do Microsoft Azure AD (Azure Active Directory). O Intune gera dinamicamente o nome de usuário que é usado por esse perfil. As opções são:
   - **Nome UPN**: obtém o nome, como `user1` ou `user1@contoso.com`
   - **Endereço SMTP primário**: obtém o nome no formato de endereço de email, como `user1@contoso.com`
-  - **Nome da conta sAM**: requer o domínio, como `domain\user1`.
-
-    Insira também:  
-    - **Fonte do nome de domínio do usuário**: escolha **AAD** (Azure Active Directory) ou **Personalizado**.
-
-      Ao escolher obter os atributos do **AAD**, insira:
-      - **Atributo de nome de domínio do usuário do AAD**: escolha obter o atributo **Nome de domínio completo** ou **Nome NetBIOS** do usuário
-
-      Ao escolher usar atributos **Personalizados**, insira:
-      - **Nome de domínio personalizado a ser usado**: insira um valor que o Intune usará para o nome de domínio, como `contoso.com` ou `contoso`
-
-- **Atributo de endereço de email do AAD**: escolha como o endereço de email para o usuário é gerado. Selecione **nome UPN** (`user1@contoso.com` ou `user1`) para usar o nome da entidade completo como o endereço de email, ou **Endereço SMTP primário** (`user1@contoso.com`) para usar o endereço SMTP primário para entrar no Exchange.
+- **Atributo de endereço de email do AAD**: escolha como o endereço de email para o usuário é gerado. Selecione **nome UPN** (`user1@contoso.com` ou `user1`) para usar o nome da entidade completo como o endereço de email, ou **Endereço SMTP primário** (`user1@contoso.com`) para usar o endereço SMTP primário para entrar no Exchange. A recomendação é selecionar **Endereço SMTP primário**.
 - **Domínio da conta**: (opcional) o domínio da conta.
 
 ## <a name="next-steps"></a>Próximas etapas

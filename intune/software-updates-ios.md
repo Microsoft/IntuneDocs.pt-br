@@ -5,25 +5,25 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313489"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101946"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configurar políticas de atualização do iOS no Intune
 
-As políticas de atualização de software permitem que você force os dispositivos iOS supervisionados a instalar automaticamente a última atualização de sistema operacional disponível. Esse recurso só está disponível para dispositivos supervisionados. Ao configurar uma política, você pode adicionar os dias e as horas em que não deseja que os dispositivos instalem uma atualização. 
+As políticas de atualização de software permitem que você force os dispositivos iOS supervisionados a instalar automaticamente a última atualização de sistema operacional disponível. Esse recurso está disponível apenas para dispositivos supervisionados. Ao configurar uma política, você pode adicionar os dias e as horas em que não deseja que os dispositivos instalem uma atualização. 
 
 O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atualização está disponível e não está agendada para um horário restrito, o dispositivo baixa e instala a última atualização do sistema operacional. Não há nenhuma interação do usuário necessária para atualizar o dispositivo. A política não impede que um usuário atualize o sistema operacional manualmente.
 
-Esse recurso dá suporte aos dispositivos que executam o iOS 10.3 e posterior.
+Esse recurso dá suporte a dispositivos que executam o iOS 10.3 e versões posteriores. A configuração de atraso está disponível no iOS 11.3 e versões posteriores.
 
 ## <a name="configure-the-policy"></a>Configurar a política
 1. Entre no [Portal do Azure](https://portal.azure.com).
@@ -32,7 +32,7 @@ Esse recurso dá suporte aos dispositivos que executam o iOS 10.3 e posterior.
 4. Insira um nome e uma descrição para a política.
 5. Selecione **Configurações**. 
 
-    Insira os detalhes de quando os dispositivos iOS não são forçados a instalar as últimas atualizações. Essas configurações criam um período de tempo restrito. Você pode configurar os **Dias** da semana, o **Fuso horário**, a **Hora de início**, a **Hora de término** e se deseja **Atrasar a visibilidade do software de atualização (dias)** para inserir os usuários. Você pode selecionar um intervalo de atraso das atualizações de software de 1 a 90 dias. Para recusar a definição de um atraso de atualização de software, insira 0. Essas configurações de atualização serão aplicadas somente a dispositivos iOS supervisionados.
+    Insira os detalhes de quando os dispositivos iOS não são forçados a instalar as últimas atualizações. Essas configurações criam um período de tempo restrito. Você pode configurar os **Dias** da semana, o **Fuso horário**, a **Hora de início**, a **Hora de término** e se deseja **Atrasar a visibilidade do software de atualização (dias)** para inserir os usuários. Você pode selecionar um intervalo de atraso das atualizações de software de 1 a 90 dias. Para recusar a definição de um atraso de atualização de software, insira 0. Essas configurações de atualização serão aplicáveis apenas aos dispositivos iOS supervisionados.
 
 6. Selecione **OK** para salvar suas alterações. Selecione **Criar** para criar a política.
 

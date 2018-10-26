@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 e posterior
-- Mac OS X 10.11 e posteriores
+- Mac OS X 10.11 e posterior (em dezembro de 2018, a versão com suporte será alterada para 10.12 e posterior)
 
 ### <a name="google"></a>Google
 - Android 4.4 e posterior (incluindo Samsung Knox Standard 4.4 e superior)

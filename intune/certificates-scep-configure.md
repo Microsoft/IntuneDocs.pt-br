@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 838ed3a932d6ff495b9a433d3cabedfa6227ad32
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169508"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -38,9 +38,11 @@ O servidor NDES deve ter ingressado no domínio que hospeda a AC e não estar no
 
   - O conector do Certificado NDES também dá suporte ao modo do padrão FIPS. O FIPS não é necessário, mas você pode emitir e revogar certificados quando ele está habilitado.
 
-- **Servidor Proxy de Aplicativos Web** (opcional): use um servidor que executa o Windows Server 2012 R2 ou posterior como servidor WAP (Proxy de Aplicativo Web). Essa configuração:
+- **Servidor Proxy de Aplicativos Web** (opcional): use um servidor que executa o Windows Server 2012 R2 ou posterior como servidor WAP (Proxy de aplicativo Web). Essa configuração:
   - Permite que os dispositivos recebam certificados usando uma conexão com a Internet.
   - Trata-se de uma recomendação de segurança quando os dispositivos se conectam pela Internet para receber e renovar certificados.
+  
+- **Proxy de Aplicativo do Azure AD** (opcional): o Proxy de Aplicativo do Azure AD pode ser usado em vez de um servidor WAP (Proxy de aplicativo Web) dedicado para publicar o servidor NDES na Internet. Para obter mais informações, confira [Como fornecer acesso remoto seguro a aplicativos locais](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### <a name="additional"></a>Adicional
 
@@ -403,13 +405,14 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
         "{{MEID}}",
         ```
 
-        Essas variáveis podem ser adicionadas com texto estático em uma caixa de texto de valor personalizada. Por exemplo, o atributo DNS pode ser adicionado como `DNS = {{AzureADDeviceId}}.domain.com`.
+        Essas variáveis podem ser adicionadas com texto estático em uma caixa de texto de valor personalizada. Por exemplo, o nome comum pode ser adicionado como `CN = {{DeviceName}}text`.
 
         > [!IMPORTANT]
-        >  - No texto estático do SAN, chaves **{ }**, barras verticais **|** e ponto e vírgulas **;** não funcionam. 
+        >  - No texto estático da entidade, chaves **{ }** não incluídas em uma variável resolvem um erro. 
         >  - Ao usar uma variável de certificado do dispositivo, coloque a variável entre chaves **{}**.
         >  - `{{FullyQualifiedDomainName}}` funciona somente para dispositivos Windows e unidos ao domínio. 
         >  -  Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+        >  - O perfil não será instalado no dispositivo se não houver suporte para as variáveis de dispositivo especificadas. Por exemplo, se {{IMEI}} for usado no nome da entidade do perfil SCEP atribuído a um dispositivo que não tem um número IMEI, ocorrerá falha na instalação do perfil. 
 
 
    - **Nome alternativo da entidade**: insira como o Intune criará automaticamente os valores para o SAN (nome alternativo da entidade) na solicitação de certificado. As opções serão alteradas se você escolher um tipo de certificado de **usuário** ou um tipo de certificado de **dispositivo**. 
@@ -428,8 +431,6 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
         Uma caixa de texto em formato de tabela que você pode personalizar. Os seguintes atributos estão disponíveis:
 
         - DNS
-        - Endereço de email
-        - UPN (Nome UPN)
 
         Com o tipo de certificado **Dispositivo**, é possível usar as seguintes variáveis de certificado do dispositivo para o valor:  
 
@@ -447,13 +448,14 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
         "{{MEID}}",
         ```
 
-        Essas variáveis podem ser adicionadas com texto estático na caixa de texto de valor personalizada. Por exemplo, o atributo DNS pode ser adicionado como `DNS = {{AzureADDeviceId}}.domain.com`.
+        Essas variáveis podem ser adicionadas com texto estático na caixa de texto de valor personalizada. Por exemplo, o atributo DNS pode ser adicionado como `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
         >  - No texto estático do SAN, chaves **{ }**, barras verticais **|** e ponto e vírgulas **;** não funcionam. 
         >  - Ao usar uma variável de certificado do dispositivo, coloque a variável entre chaves **{}**.
         >  - `{{FullyQualifiedDomainName}}` funciona somente para dispositivos Windows e unidos ao domínio. 
         >  -  Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+        >  - O perfil não será instalado no dispositivo se não houver suporte para as variáveis de dispositivo especificadas. Por exemplo, se {{IMEI}} for usado no nome alternativo da entidade do perfil SCEP atribuído a um dispositivo que não tem um número IMEI, ocorrerá falha na instalação do perfil.  
 
    - **Período de validade do certificado**: se você tiver executado o comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` na AC emissora, o que permite um período de validade personalizado, será possível inserir o tempo restante antes da expiração do certificado.<br>Você pode inserir um valor inferior ao período de validade no modelo de certificado, mas não superior. Por exemplo, se o período de validade do certificado em um modelo de certificado for de dois anos, você poderá inserir um valor de um ano, mas não de cinco anos. O valor também tem que ser inferior ao período de validade restante do certificado da AC emissora. 
    - **KSP (provedor de armazenamento de chaves)** (Windows Phone 8.1, Windows 8.1 e Windows 10): insira o local em que a chave do certificado é armazenada. Escolha um destes valores:

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,23 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866347"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075603"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
 Atualmente, o Microsoft Intune dá suporte a uma variedade de tipos de aplicativos e cenários de implantação em dispositivos Windows 10. Depois de adicionar um aplicativo ao Intune, você pode atribuí-lo a usuários e dispositivos. As informações a seguir fornecem mais detalhes relacionados aos cenários do Windows 10 compatíveis. Além disso, as informações a seguir fornecem detalhes importantes a serem observados ao implantar aplicativos no Windows. 
 
-Os aplicativos LOB (linha de negócios) e os aplicativos da Microsoft Store para Empresas são os tipos de aplicativo compatíveis com dispositivos Windows 10. As extensões do arquivo para aplicativos do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  
+Os aplicativos LOB (linha de negócios) e os aplicativos da Microsoft Store para Empresas são os tipos de aplicativo compatíveis com dispositivos Windows 10. As extensões do arquivo para aplicativos do Windows incluem **.msi**, **.appx** e **.appxbundle**.  
 
 > [!Note]
-> A atualização mínima necessária do Windows 10 para implantação de aplicativos no contexto de dispositivo é a de [23 de maio de 2018 – KB4100403 (Build do sistema operacional 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
+> As atualizações mínimas necessárias do Windows 10 para implantar aplicativos modernos são as seguintes:
+> - Para Windows 10 1803, [23 de maio de 2018 – KB4100403 (build do sistema operacional 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
+> - Para Windows 10 1709 [21 de junho de 2018 – KB4284822 (build do sistema operacional 16299.522)](https://support.microsoft.com/help/4284822).
 
 ## <a name="windows-10-line-of-business-apps"></a>Aplicativos de linha de negócios do Windows 10
 
@@ -44,8 +46,13 @@ Dependendo do tipo de aplicativo, o aplicativo pode ser instalado em um disposit
 
 - **Contexto de Usuário**: quando um aplicativo for implantado no contexto de usuário, o aplicativo gerenciado será instalado para esse usuário no dispositivo quando o usuário entrar no dispositivo. Observe que a instalação do aplicativo não funcionará enquanto o usuário não entrar no dispositivo. 
     - Os aplicativos de linha de negócios modernos e os aplicativos da Microsoft Store para Empresas (online e offline) podem ser implantados no contexto de usuário e darão suporte à intenção Obrigatória e Disponível.
+    - Aplicativos do Win32 criados como **Modo de Usuário** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte às intenções **Obrigatória** e **Disponível**. 
 - **Contexto de Dispositivo**: quando um aplicativo for implantado no contexto de dispositivo, o aplicativo gerenciado será instalado diretamente no dispositivo pelo Intune.
     - Somente os aplicativos de linha de negócios modernos e os aplicativos licenciados Online da Microsoft Store para Empresas podem ser implantados no contexto de dispositivo e darão suporte apenas à intenção Obrigatório.
+    - Aplicativos do Win32 criados como **Modo do Computador** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte apenas à intenção **Obrigatória**.
+
+> [!NOTE]
+> Para aplicativos do Win32 criados como **Modo Dual**, você (o administrador) precisará escolher se o aplicativo funcionará como **Modo de Usuário** ou **Modo do Computador** para todas as atribuições associadas a essa instância. O contexto de implantação não pode ser alterado por atribuição.  
 
 Quando um aplicativo é implantado no contexto de dispositivo, a instalação terá êxito apenas quando for direcionada a um dispositivo que dê suporte ao contexto de dispositivo. Além disso, a implantação no contexto de dispositivo dá suporte às seguintes condições:
 - Se um aplicativo for implantado no contexto de dispositivo e direcionado a um usuário, a instalação falhará com o seguinte status e o erro será exibido no console de administração:

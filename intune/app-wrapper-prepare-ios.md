@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169491"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -39,13 +39,13 @@ Antes de executar a Ferramenta de Disposição do Aplicativo, é necessário ate
 
 * Baixe a [Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
 
-* Um computador macOS que executa o OS X 10.8.5 ou posterior e que tem o conjunto de ferramentas do XCode versão 5 ou posterior instalado.
+* Um computador macOS que executa o OS X 10.8.5 ou posterior e que tem o conjunto de ferramentas do Xcode versão 9 ou posterior instalado.
 
 * O aplicativo iOS de entrada deve ser desenvolvido e assinado por sua empresa ou por um ISV (fornecedor independente de software).
 
   * O arquivo do aplicativo de entrada deve ter a extensão **.ipa** ou **.app**.
 
-  * O aplicativo de entrada deve ser compilado para o iOS 8.0. ou posterior.
+  * O aplicativo de entrada precisa ser compilado para o iOS 10 ou posterior.
 
   * O aplicativo de entrada não pode ser criptografado.
 

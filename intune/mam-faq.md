@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d42133d8a2e52300a2414de9105db2ef26bae445
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307416"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
@@ -88,9 +88,7 @@ Qualquer aplicativo que tenha sido integrado com o [SDK do Aplicativo do Intune]
 O Intune marca todos os dados no aplicativo como “corporativos” ou “pessoais”. Os dados são considerados “corporativos” quando tem como origem um local da empresa. Para os aplicativos do Office, o Intune considera o seguinte como locais da empresa: email (Exchange) ou armazenamento em nuvem (aplicativo OneDrive com uma conta do OneDrive para Empresas).
 
 **Quais são os requisitos adicionais para usar o Skype for Business?**<br></br>
-Consulte os requisitos de licença do [Skype for Business](https://products.office.com/skype-for-business/it-pros).
-  >[!NOTE]
-  > No momento, o aplicativo móvel Skype for Business dá suporte apenas ao Skype for Business Online.
+Consulte os requisitos de licença do [Skype for Business](https://products.office.com/skype-for-business/it-pros). Para configurações híbridas e locais do SfB (Skype for Business), confira [A autenticação moderna híbrida para SfB e Exchange torna-se GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) e [Autenticação moderna para SfB local com o AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910), respectivamente.
 
 ## <a name="app-protection-features"></a>Recursos de proteção do aplicativo
 

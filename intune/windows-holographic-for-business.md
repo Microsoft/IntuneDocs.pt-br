@@ -1,31 +1,31 @@
 ---
-title: Gerenciar dispositivos do Windows Holographic com o Microsoft Intune – Azure | Microsoft Docs
-description: Usando o Microsoft Intune, você pode concluir diferentes tarefas em dispositivos que executam o Windows Holographic for Business, incluindo configurar o Portal da Empresa, crie uma política de conformidade, personalizar as configurações do OMA-URI, implantar aplicativos, categorizar dispositivos em grupos, criar perfis, restringir dispositivos, habilitar atualizações de software, definir termos e condições, definir configurações de VPN e Wi-Fi e usar o Hello para Empresas.
+title: Usar dispositivos do Windows Holographic com o Microsoft Intune – Azure | Microsoft Docs
+description: Usando o Microsoft Intune, é possível gerenciar e concluir diferentes tarefas em dispositivos que executam o Windows Holographic for Business e HoloLens, incluindo configurar o Portal da Empresa, crie uma política de conformidade, personalizar as configurações do OMA-URI, implantar aplicativos, categorizar dispositivos em grupos, criar perfis, restringir dispositivos, habilitar atualizações de software, definir termos e condições, definir configurações de VPN e Wi-Fi e usar o Hello para Empresas.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
+ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317892"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49065757"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>Personalizar os dispositivos que executam o Windows Holographic com o Intune
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar os dispositivos Windows Holographic e HoloLens com o Intune
 
-O Microsoft Intune é compatível com dispositivos que executam o Windows Holographic for Business, como o [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
+O Microsoft Intune inclui muitos recursos para ajudar a gerenciar dispositivos que executam o Windows Holographic for Business, como o [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Usando o Intune, é possível confirmar se os dispositivos estão em conformidade com as regras da sua organização, e é possível personalizar o dispositivo adicionando um perfil de VPN ou WiFi. Outro recurso importante é usar o dispositivo como um quiosque e executar um aplicativo específico ou um conjunto de aplicativos específico.
 
-Para gerenciar dispositivos que executam o Windows Holographic com o Microsoft Intune, você deve criar um perfil de Atualização da Edição. Este perfil de atualização realiza o upgrade de dispositivos do Windows Holographic para o Windows Holographic for Business. Para o Microsoft HoloLens, você pode comprar o Commercial Suite para obter a licença necessária para a atualização. Para obter mais informações, consulte [Atualizar dispositivos que executam o Windows Holographic para o Windows Holographic for Business](holographic-upgrade.md).
+As tarefas neste artigo ajudam a gerenciar, personalizar e proteger seus dispositivos que executam o Windows Holographic for Business, incluindo atualizações de software, e que usam o Hello para Empresas.
 
-Para ajudar a gerenciar e personalizar seus dispositivos que executam o Windows Holographic for Business, você pode usar as tarefas neste artigo. Por exemplo, você pode gerenciar atualizações de software, definir as configurações de VPN e muito mais.
+Para usar dispositivos Windows Holographic com o Intune, crie um perfil de atualização de edição. Este perfil de atualização realiza o upgrade de dispositivos do Windows Holographic para o Windows Holographic for Business. Para o Microsoft HoloLens, você pode comprar o Commercial Suite para obter a licença necessária para a atualização. Para obter mais informações, consulte [Atualizar dispositivos que executam o Windows Holographic para o Windows Holographic for Business](holographic-upgrade.md).
 
 ## <a name="azure-active-directory"></a>Active Directory do Azure
 

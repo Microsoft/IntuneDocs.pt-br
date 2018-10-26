@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 723e7584e1aaf22859b293a93ddbead56f6256e7
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 89264dbd2024b976d7c57278b188223679b33836
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169559"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,17 @@ Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sob
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
+#### <a name="access-to-key-profile-properties-using-the-company-portal-app----772203---"></a>Acessar as propriedades de perfil-chave usando o aplicativo de portal da empresa <!-- 772203 -->
+Os usuários finais já podem acessar as propriedades e ações da conta de chave de acesso, como redefinição de senha, do aplicativo Portal da Empresa. 
+
+#### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>Teclados de terceiros podem ser bloqueados por configurações de APP no iOS <!-- 1248481 -->
+Em dispositivos iOS, os administradores do Intune podem bloquear o uso do teclados de terceiros ao acessarem dados da organização em aplicativos protegidos por política. Quando a APP (Política de Proteção de Aplicativo) for definida para bloquear teclados de terceiros, o usuário do dispositivo receberá uma mensagem na primeira vez que interagir com os dados corporativos ao usar um teclado de terceiros. Todas as opções que são não o teclado nativo serão bloqueadas e não serão exibidas para os usuários do dispositivo. Os usuários do dispositivos somente verão a mensagem de caixa de diálogo uma vez. 
+
 #### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices----1248496---"></a>O acesso à conta de usuário de aplicativos do Intune em dispositivos Android e iOS gerenciados <!-- 1248496 -->
 Como administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. 
 
-#### <a name="outlook-mobile-app-configuration-policy---1828527---"></a>Política de configuração do aplicativo móvel do Outlook <!--1828527 -->
-Agora é possível criar uma política de configuração do aplicativo móvel do Outlook para iOS e Android. Outras configurações serão adicionadas à medida que forem habilitadas para o aplicativo móvel do Outlook.
+#### <a name="outlook-ios-and-android-app-configuration-policy---1828527---"></a>Política de configuração de aplicativo do Outlook para iOS e Android <!--1828527 -->
+Agora você pode criar uma política de configuração de aplicativo do Outlook para iOS e Android para usuários locais que aproveitam a autenticação Básica com o protocolo ActiveSync. Outras configurações serão adicionadas à medida que forem habilitadas no Outlook para iOS e Android.
 
 #### <a name="office-365-pro-plus-language-packs----1833450---"></a>Pacotes de idiomas do Office 365 Pro Plus <!-- 1833450 -->
 Como a administração do Intune, você poderá implantar idiomas adicionais para aplicativos do Office 365 Pro Plus gerenciados por meio do Intune. A lista de idiomas disponíveis inclui o **Tipo** de pacote de idiomas (núcleo, parcial e revisão de texto). No portal do Azure, selecione **Microsoft Intune** > **Aplicativos clientes** > **Aplicativos** > **Adicionar**. Na lista **Tipo de aplicativo** da folha **Adicionar aplicativo**, selecione **Windows 10** em **Pacote do Office 365**. Selecione **Idiomas** na folha **Configurações do Pacote de Aplicativos**.
@@ -61,6 +67,11 @@ As extensões de arquivo para aplicativos de LOB do Windows agora incluem *.msi*
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Implantação do aplicativo do Windows 10 usando o Intune <!-- 2309001 -->
 Criado com base no suporte existente para aplicativos LOB (linha de negócios) e aplicativos Microsoft Store para Empresas, os administradores podem usar o Intune para implantar a maioria dos aplicativos existentes de sua organização nos usuários finais em dispositivos Windows 10. Os administradores podem adicionar, instalar e desinstalar aplicativos para usuários do Windows 10 em diversos formatos, como MSIs, Setup.exe ou MSP. O Intune avaliará as regras de requisitos antes de baixar e instalar, notificar os usuários finais do status ou dos requisitos de reinicialização usando a Central de Ações do Windows 10. Essa funcionalidade desbloqueará efetivamente organizações interessadas em deslocar essa carga de trabalho para o Intune e a nuvem. No momento, este recurso está em versão prévia pública e esperamos adicionar novas funcionalidades significativas a ele durante os próximos meses. 
 
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>Dispositivo do usuário final e menu de contexto do aplicativo <!-- 2771453 -->
+Os usuários finais agora podem usar o menu de contexto no dispositivo e aplicativos para disparar ações comuns, como renomear um dispositivo ou verificar a conformidade. 
+
+#### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Atalhos de teclado do Portal da Empresa do Windows <!-- 2771518 -->
+Os usuários finais agora poderão disparar ações de aplicativo e do dispositivo no Portal da Empresa do Windows usando atalhos de teclado (aceleradores).
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
@@ -136,6 +147,12 @@ Aplica-se ao Windows 10 e posteriores
 
 #### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564---"></a>Criar e atribuir vários perfis de Página de Status de Registro para grupos do Azure AD <!-- 2526564 -->
 Agora é possível [criar e atribuir](windows-enrollment-status.md) vários perfis de Página de status de registro a grupos do Azure ADD.
+
+#### <a name="migration-from-device-enrollment-program-to-apple-business-manager-in-intune---2748613--"></a>Migração do Programa de registro de dispositivos para o Apple Business Manager no Intune <!--2748613-->
+O ABM (Apple Business Manager) funciona no Intune, e você pode atualizar sua conta do DEP (Programa de registro de dispositivos) para o ABM. O processo no Intune é o mesmo. Para atualizar sua conta da Apple do DEP para o ABM, vá para [ https://support.apple.com/en-us/HT208817 ]( https://support.apple.com/en-us/HT208817).
+
+### <a name="alert-and-enrollment-status-tabs-on-the-device-enrollment-overview-page---2748656--"></a>Guias de status de alerta e registro na página de visão geral de registro do dispositivo <!--2748656-->
+Alertas e falhas de registro agora são exibidos em guias separadas na página de visão geral de registro do dispositivo.
 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 
@@ -872,7 +889,7 @@ Agora você pode usar a APP (Proteção de Política do Aplicativo) do Intune e 
 
 A Apple acaba de lançar o macOS 10.14. Posteriormente, o Intune mudará para oferecer compatibilidade com o macOS 10.12 e posterior em dezembro de 2018. 
 
-### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
 
 A partir de dezembro, os usuários finais em dispositivos com macOS 10.11 e versões anteriores não poderão usar o Portal da Empresa para registrar-se no Intune. Eles precisarão atualizar os dispositivos para o macOS 10.12 ou posterior e o aplicativo do Portal da Empresa para a versão mais recente para continuar a receber suporte e novos recursos. 
 
@@ -886,13 +903,14 @@ Atualmente, o macOS 10.12 e versões posteriores são compatíveis com:
 
 Depois de dezembro, os usuários finais que têm dispositivos diferentes dos listados acima não poderão acessar a versão mais recente do aplicativo do Portal da Empresa para macOS. Os dispositivos registrados no momento que executam versões incompatíveis anteriores ao macOS 10.12 continuarão a ser gerenciados e listados no Console de Administração do Intune.
 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
 
-Solicite que os usuários finais atualizem os dispositivos deles para uma versão de sistema operacional compatível antes de dezembro de 2018. 
+- Solicite que os usuários finais atualizem os dispositivos deles para uma versão de sistema operacional compatível antes de dezembro de 2018. 
 - Verifique os relatórios do Intune no console do Intune no Azure para ver quais dispositivos ou usuários serão afetados. Acesse Dispositivos > Todos os dispositivos e filtre por sistema operacional. É possível adicionar colunas extras para ajudar a identificar quem na sua organização tem dispositivos que executam o macOS 10.11. 
 - Se você estiver usando o MDM (gerenciamento de dispositivo móvel), acesse Ativos e Conformidade > Dispositivos no console do Configuration Manager, clique com o botão direito do mouse nas colunas para adicionar as colunas de Sistema Operacional e Versão do Cliente e ordene por sistema operacional. Observe que o MDM híbrido foi preterido, e você precisa mudar para o Intune no Azure o mais breve possível. 
  
-Informações adicionais [https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
+#### <a name="additional-information"></a>Informações adicionais
+Para obter mais informações, confira [Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Plano de mudança: experiência de suporte do Intune para clientes do Premier 
@@ -901,9 +919,9 @@ Como um cliente do Premier da Microsoft, atualmente você pode usar o portal do 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
 Após 3 de dezembro, não será possível criar solicitações de suporte no MPO.  Ao tentar fazer isso, você verá um prompt que não poderá ignorar, para ser redirecionado ao Intune no Azure. Lá, é possível criar uma solicitação de suporte que será encaminhada ao Suporte da Microsoft dedicado ao Intune para diagnosticar e resolver o problema de maneira oportuna. As solicitações de suporte criadas no portal do MPO não podem ser exibidas no Portal do Azure, portanto, interrompa a criação de solicitações de suporte no MPO.  
 
-Se você usa o gerenciamento de dispositivo móvel híbrido (MDM híbrido) ou o cogerenciamento, pode continuar a usar o MPO para criar solicitações de suporte para o ConfigMgr, mas usar o Portal do Azure para criar solicitações de suporte do Intune. Como lembrete, o MDM híbrido é preterido, e você deve planejar a migração para o Intune no Azure assim que possível. Para saber mais, confira Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure.
+Se você usa o gerenciamento de dispositivo móvel híbrido (MDM híbrido) ou o cogerenciamento, pode continuar a usar o MPO para criar solicitações de suporte para o ConfigMgr, mas usar o Portal do Azure para criar solicitações de suporte do Intune. Como lembrete, o MDM híbrido é preterido, e você deve planejar a migração para o Intune no Azure assim que possível. Para obter mais informações, confira [Migrar do Gerenciamento de Dispositivo Móvel Híbrido para o Intune no Azure](https://aka.ms/hybrid_notification).
 
-Somente usuários com funções de Administrador global, Administrador de serviços do Intune e Administrador de suporte ao serviço podem criar tíquetes de suporte no Portal do Azure.
+Observe que apenas os usuários com funções de Administrador Global, de Administrador de Serviços do Intune e de Administrador de Suporte de Serviço podem criar tíquetes de suporte no portal do Azure.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
 - Pare de usar o MPO e use o Intune no Azure para criar e gerenciar todas as suas solicitações de suporte do Intune.  
@@ -912,7 +930,8 @@ Somente usuários com funções de Administrador global, Administrador de servi�
 - Para obter mais informações e links úteis, clique em Informações Adicionais.
 
 #### <a name="additional-information"></a>Informações adicionais
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+Para saber mais, confira a [postagem no blog da equipe de suporte do Microsoft Intune](https://aka.ms/IntuneSupport_MPO_to_Azure).
+
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Executar ação: atualize as configurações de senha de política de conformidade ou de restrição do dispositivo Android no Intune
 O Intune removerá o tipo de senha "dispositivo padrão" disponível para dispositivos Android 4.4 superiores. Devido às diferenças em plataformas Android e dispositivos padrão, essa política geralmente é tratada como opcional pelo dispositivo. Para esclarecer dúvidas sobre quando essa configuração é aplicada no Android, removeremos essa configuração da interface do usuário em uma versão futura. 
