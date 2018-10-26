@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
-ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
+ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49065757"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425284"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar os dispositivos Windows Holographic e HoloLens com o Intune
 
@@ -73,7 +73,7 @@ O Microsoft Intune pode implantar os aplicativos Universal Windows nos dispositi
 - Para saber mais sobre o desenvolvimento de aplicativos para o Microsoft HoloLens, veja [Aplicativos de realidade mista para o Microsoft HoloLens](https://www.microsoft.com/hololens/apps). 
 
 > [!NOTE]
-> Os dispositivos do HoloLens que executam o Windows 10 Holographic for Business 1607 não oferecem suporte a aplicativos licenciados online da Microsoft Store para Empresas. Para saber mais, veja [Instalar aplicativos no HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+> Os dispositivos do HoloLens que executam o Windows 10 Holographic for Business 1607 não oferecem suporte a aplicativos licenciados online da Microsoft Store para Empresas. Para saber mais, veja [Instalar aplicativos no HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
 
 ## <a name="device-actions"></a>Ações de dispositivo
 O Intune tem algumas ações internas que permitem que os administradores de TI realizem tarefas diferentes, localmente no dispositivo, ou remotamente usando o Intune no portal do Azure. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos de propriedade pessoal registrados no Intune.

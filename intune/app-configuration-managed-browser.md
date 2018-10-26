@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0b35ed6e32feb29748e023371ed1b2628f2da0d
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075779"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357080"
 ---
 # <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Internet usando um navegador protegido por políticas do Microsoft Intune
 
@@ -287,18 +287,7 @@ Para obter uma lista das configurações armazenadas nos logs de aplicativo, con
 ### <a name="turn-off-usage-data"></a>Desligar os dados de uso
 A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do Managed Browser para melhorar os produtos e serviços Microsoft. Os usuários podem desligar a coleta de dados usando a configuração **Dados de Uso** em seus dispositivos. Você não tem controle sobre a coleta desses dados.
 
-
 -   Em dispositivos iOS, sites visitados por usuários que têm um certificado expirado ou não confiável não pode ser abertos.
--   O Managed Browser não usa as configurações feitas pelos usuários para o navegador interno em seus dispositivos. O Managed Browser não tem acesso a essas configurações.
-
--   Se você configurar as opções **Exigir PIN simples para acesso** ou **Exigir credenciais corporativas para acesso** em uma política de proteção de aplicativo associada ao Managed Browser e um usuário selecionar o link de ajuda na página de autenticação, será possível navegar por sites da Internet, independentemente dele ter sido adicionado a uma lista de bloqueio na política.
-
--   O Managed Browser pode bloquear o acesso a sites apenas quando eles são acessados diretamente. Ele não bloqueia o acesso quando serviços intermediários (como um serviço de tradução) são usados para acessar o site.
-
--   Para permitir a autenticação e acessar a documentação do Intune, **&#42;.microsoft.com** é isento das configurações da lista de permissão ou de bloqueio. Ela é sempre permitida.
-
-### <a name="turn-off-usage-data"></a>Desligar os dados de uso
-A Microsoft coleta automaticamente dados anônimos sobre o desempenho e o uso do Managed Browser para melhorar os produtos e serviços Microsoft. Os usuários podem desligar a coleta de dados usando a configuração **Dados de Uso** em seus dispositivos. Você não tem controle sobre a coleta desses dados.
 
 ## <a name="next-steps"></a>Próximas etapas
 
