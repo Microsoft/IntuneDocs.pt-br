@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edac1701de22fd94eac3990949d18389841a5444
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: a2d2d7eb609db07d4f41254f2937120412f2f4b1
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231505"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643035"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de NAC (controle de acesso de rede) com o Intune
 
@@ -27,7 +27,7 @@ O Intune se integra com os parceiros de controle de acesso de rede para ajudar a
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Como soluções do Intune e de NAC ajudam a proteger os recursos de sua organização?
 
-Soluções NAC verificam o registro do dispositivo e o estado de conformidade com o Intune para tomar decisões de controle de acesso. Se o dispositivo não estiver registrado ou se estiver registrado e não for compatível com políticas de conformidade do dispositivo do Intune, o dispositivo deverá ser redirecionado para o Intune para registro e/ou verificação de conformidade do dispositivo.
+Soluções NAC verificam o registro do dispositivo e o estado de conformidade com o Intune para tomar decisões de controle de acesso. Se o dispositivo não estiver registrado, ou se estiver registrado e não for compatível com políticas de conformidade do dispositivo do Intune, então deve ser redirecionado para o Intune para registro e/ou verificação de conformidade do dispositivo.
 
 ### <a name="example"></a>Exemplo
 

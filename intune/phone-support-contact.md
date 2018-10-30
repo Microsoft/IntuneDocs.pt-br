@@ -15,12 +15,12 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efecd454c2e6ba8454cfd68291a96c6d4c8a2703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030252"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643103"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contatar o suporte do fornecido por telefone assistido do Microsoft Intune
 
@@ -101,7 +101,7 @@ Este tópico lista as informações de contato do suporte telefônico assistido 
 |       Rússia        |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 - 17:00 MSK (UTC +4)   |              Russo&#42;, inglês              |                                                                   8 10 800 2548 1044                                                                   |                                                                         499 922 86 23                                                                         |
 |    Arábia Saudita     |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 17:00 AST (UTC +3)   |                     Inglês                     |                                                                       8008444558                                                                       |                                                                                                                                                               |
 |       Sérvia        |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)   |              Sérvio&#42;, inglês              |                                                                       0800190095                                                                       |                                                                                                                                                               |
-|      Cingapura      |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 18:00 SGT (UTC +8)   |                     Inglês                     |                                                                      18006221816                                                                       |                                                                           66221855                                                                            |
+|      Singapura      |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 18:00 SGT (UTC +8)   |                     Inglês                     |                                                                      18006221816                                                                       |                                                                           66221855                                                                            |
 |      Eslováquia       |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)   |              Eslovaco&#42;, inglês               |                                                                     0 800 102 365                                                                      |                                                                                                                                                               |
 |      Eslovênia       |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 17:00 CET (UTC +1)   |             Esloveno&#42;, inglês             |                                                                       080080922                                                                        |                                                                                                                                                               |
 |    África do Sul     |                        24 horas, 7 dias por semana                         |  Segunda a sexta<br /><br />09:00 – 17:00 SAST (UTC +2)  |                     Inglês                     |                                                                      0800 202 883                                                                      |                                                                                                                                                               |

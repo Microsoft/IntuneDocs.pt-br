@@ -12,17 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652148"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrição de dispositivo para configurações do Windows 10 (e mais recentes) no Intune
 Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!Note]
+> Nem todas as opções estão disponíveis em todas as edições do Windows
 
 ## <a name="general"></a>Geral
 - **Captura de tela (somente dispositivo móvel)** – permite que o usuário capture a tela do dispositivo como uma imagem.
@@ -48,7 +51,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Descoberta de dispositivos** - bloqueia a descoberta de um dispositivo por outros dispositivos.
 - **Alternador de tarefas (somente dispositivos móveis)** - bloqueia o alternador de tarefas no dispositivo.
 - **Diálogo de erro do cartão SIM (somente dispositivos móveis)** - bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
-- **Espaço de trabalho do Ink** – impedir que usuários acessem o espaço de trabalho do Ink. Quando essa configuração não está configurada, o espaço de trabalho do Ink fica habilitado (o recurso é ativado) e o usuário tem permissão para usá-lo sobre a tela de bloqueio.
+- **Workspace do Ink** – impedir que usuários acessem o workspace do Ink. Quando essa configuração não está configurada, o workspace do Ink fica habilitado (o recurso é ativado) e o usuário tem permissão para usá-lo sobre a tela de bloqueio.
 - **Reimplantação automática** – permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
 - **Exigir que os usuários se conectem à rede durante a instalação de dispositivo (somente Windows Insider)** – escolha **Exigir** para exigir que o dispositivo se conecte a uma rede antes de continuar, após da página Rede, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um Windows Insider build 1809 ou posterior é necessário para usar essa configuração.
 
@@ -400,3 +403,6 @@ Se os arquivos na unidade forem somente leitura, o Defender não poderá o remov
 - **Sincronização de mensagem (somente móvel)** – desabilite Mensagens em qualquer lugar e backup e restauração de mensagem de texto.
 - **MMS (somente móvel)** – desabilite a funcionalidade de envio/recebimento de MMS no dispositivo.
 - **RCS (somente móvel)** – desabilite a funcionalidade de envio/recebimento dos Serviços de Comunicação no dispositivo.
+
+## <a name="more-information"></a>Mais Informações
+Confira os detalhes técnicos adicionais sobre cada configuração e quais edições do Windows são compatíveis em [Referência do CSP de política do Windows 10](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)

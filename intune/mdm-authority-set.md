@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906032"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425182"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Defina a autoridade de gerenciamento de dispositivo móvel
 
@@ -32,7 +32,10 @@ As configurações possíveis são:
 
 - **Intune Autônomo** – Gerenciamento apenas na nuvem, que você pode definir usando o Portal do Azure. Inclui o conjunto completo de recursos que o Intune oferece. [Definir a autoridade MDM no console do Intune](#set-mdm-authority-to-intune).
 
-- **Intune Híbrido** – Integração da solução de nuvem Intune com o System Center Configuration Manager. Você configura o Intune usando o console do Configuration Manager. [Definir a autoridade do MDM no Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription).
+- **Intune Híbrido** – Integração da solução de nuvem Intune com o System Center Configuration Manager. Você configura o Intune usando o console do Configuration Manager. [Definir a autoridade do MDM no Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+
+    > [!Important]
+    >A integração de novos clientes MDM híbridos será desativada em uma versão futura. Saiba mais no blog [MC146431 Plan for Change](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/).
 
 - **Gerenciamento de dispositivo móvel para o Office 365** – Integração do Office 365 com a solução de nuvem do Intune. Configure o Intune do seu Centro de Administração do Office 365. Inclui um subconjunto dos recursos que estão disponíveis com o Intune Autônomo. Defina a autoridade MDM no Centro de administração do Office 365.
 
@@ -63,14 +66,14 @@ Os cenários que adicionam um consentimento para compartilhar dados estão inclu
 - Você habilita e carrega Apple MDM Push Certificates.
 - Você habilita qualquer um dos serviços da Apple, como o Programa de registro de dispositivos, o School Manager ou o Volume Purchase Program.
 
-Em cada caso, a autorização é estritamente relacionada à execução de um serviço de gerenciamento de dispositivo móvel, como a confirmação de que um administrador de TI autorizou dispositivos Google ou Apple a se registrarem. A documentação que trata das informações que serão compartilhadas quando os novos fluxos de trabalho forem ativados está disponível nos seguintes locais:
+Em cada caso, o consentimento está estritamente relacionado à execução de um serviço de gerenciamento de dispositivos móveis. Por exemplo, confirmar que um administrador de TI autorizou o Google ou os dispositivos da Apple a se inscreverem. A documentação que trata das informações que serão compartilhadas quando os novos fluxos de trabalho forem ativados está disponível nos seguintes locais:
 - [Dados enviados pelo Intune ao Google](https://aka.ms/Data-intune-sends-to-google)
 - [Dados enviados pelo Intune à Apple](https://aka.ms/data-intune-sends-to-apple)
 
 ## <a name="key-considerations"></a>Principais considerações
-Depois de alternar para a nova autoridade de MDM, provavelmente haverá tempo de transição (até oito horas) antes de o dispositivo fazer o check-in e sincronizar com o serviço. Será necessário definir as configurações na nova autoridade de MDM (híbrido) para garantir que os dispositivos registrados continuarão a ser gerenciado e protegidos após a alteração. 
+Depois de alternar para a nova autoridade de MDM, provavelmente haverá tempo de transição (até oito horas) antes de o dispositivo fazer o check-in e sincronizar com o serviço. É necessário definir as configurações na nova autoridade de MDM (híbrido) para garantir que os dispositivos registrados continuem a ser gerenciados e protegidos após a alteração. 
 - Os dispositivos devem se conectar com o serviço após a alteração para que as configurações da nova autoridade de MDM (Intune autônomo) substituam as configurações existentes no dispositivo.
-- Depois de alterar a autoridade de MDM, algumas das configurações básicas (como perfis) da autoridade de MDM anterior (Intune autônomo) permanecem no dispositivo por até sete dias ou até que o dispositivo se conecte com o serviço pela primeira vez. É recomendável que você configure aplicativos e parâmetros (políticas, perfis, aplicativos etc.) na nova autoridade de MDM (híbrido) assim que possível e implante as configurações para os grupos de usuários que contêm usuários que têm dispositivos registrados. Assim que um dispositivo se conectar ao serviço após a alteração na autoridade de MDM, ele receberá as novas configurações da nova autoridade de MDM e evitará falhas na proteção e no gerenciamento.
+- Depois de alterar a autoridade de MDM, algumas das configurações básicas (como perfis) da autoridade de MDM anterior (Intune autônomo) permanecem no dispositivo por até sete dias ou até que o dispositivo se conecte com o serviço pela primeira vez. Recomenda-se configurar aplicativos e parâmetros (políticas, perfis, aplicativos, etc.) na nova autoridade de MDM (híbrido) assim que possível e implantar as configurações para os grupos de usuários que contêm usuários com dispositivos registrados. Assim que um dispositivo se conectar ao serviço após a alteração na autoridade de MDM, ele receberá as novas configurações da nova autoridade de MDM e evitará falhas na proteção e no gerenciamento.
 - Quando as mesmas categorias de dispositivo existirem no Intune e no Configuration Manager, todas as atribuições de categoria de dispositivo para dispositivos não serão transportadas após você alternar para a nova autoridade de MDM. Para continuar usando categorias de dispositivo, os dispositivos migrados precisam ser adicionados manualmente às coleções apropriadas após a autoridade de MDM ser alterada e serão exibidos no console do Configuration Manager.
 - Os dispositivos que não têm usuários associados (normalmente quando você tem o Programa de registro de dispositivos iOS ou cenários de registro em massa) não são migrados para a nova autoridade de MDM. Para esses dispositivos, você precisa chamar o suporte para obter assistência para movê-los para a nova autoridade de MDM.
 
@@ -79,7 +82,7 @@ Depois de alternar para a nova autoridade de MDM, provavelmente haverá tempo de
 Examine as informações a seguir para se preparar para a alteração para a autoridade de MDM:
 - Você deve ter o Configuration Manager versão 1610 ou superior para que a opção que altera a autoridade de MDM esteja disponível.
 - Pode levar até oito horas para um dispositivo se conectar ao serviço depois que você alterar para a nova autoridade de MDM.
-- Crie uma coleção de usuário do Configuration Manager com todos os usuários atualmente gerenciados pelo Intune autônomo que será usada quando você configurar a assinatura do Intune no console do Configuration Manager. Isso ajuda a garantir que o usuário e seus dispositivos terão uma licença do Configuration Manager atribuída e serão gerenciados no ambiente híbrido após a alteração para a autoridade de MDM.
+- Crie uma coleção de usuário do Configuration Manager com todos os usuários atualmente gerenciados pelo Intune autônomo que será usada quando você configurar a assinatura do Intune no console do Configuration Manager. Essa coleção ajuda a garantir que o usuário e seus dispositivos tenham uma licença do Configuration Manager atribuída e sejam gerenciados no ambiente híbrido após a alteração para a autoridade de MDM.
 - Verifique se o usuário administrador de TI está nesta coleção de usuário também.  
 - Antes da alteração, a autoridade de MDM será exibida como **Definida como Microsoft Intune** (autônomo) no console de administração do Intune.
 - A autoridade de MDM deve exibir **Definir para o Microsoft Intune** (locatário autônomo) no console de administração do Microsoft Intune antes da alteração na autoridade de MDM.
@@ -88,8 +91,8 @@ Examine as informações a seguir para se preparar para a alteração para a aut
 
 - No [Console de Administração do Microsoft Intune](http://manage.microsoft.com), remova a função de Gerenciador de Registro de Dispositivos. Para obter detalhes, veja [Excluir um gerenciador de registro de dispositivos do Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune).
 - Desative os mapeamentos de grupo de dispositivos que estiverem configurados. Para obter detalhes, veja [Categorizar os dispositivos com o mapeamento de grupo de dispositivos no Microsoft Intune](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
-- Não deve haver nenhum impacto perceptível para os usuários finais durante a alteração na autoridade de MDM. No entanto, você talvez deva comunicar esta alteração aos usuários para que eles verifiquem se seus dispositivos estão ligados e se eles conseguem se conectar ao serviço logo após a alteração. Isso garantirá que o máximo de dispositivos possível se conectará e se registrará com o serviço por meio da nova autoridade o mais rápido possível.
-- Se você estiver usando o Intune autônomo para gerenciar dispositivos iOS antes da alteração na autoridade de MDM, deverá garantir que o mesmo certificado Apple Push Notification Service (APNs) que era usado no Intune seja renovado e usado para configurar o locatário novamente no Configuration Manager (híbrido).    
+- Não deve haver nenhum impacto perceptível para os usuários finais durante a alteração na autoridade de MDM. No entanto, você talvez deva comunicar esta alteração aos usuários para que eles verifiquem se seus dispositivos estão ligados e se eles conseguem se conectar ao serviço logo após a alteração. Essa precaução garante que o máximo de dispositivos possível se conecte e se registre com o serviço por meio da nova autoridade o mais rápido possível.
+- Se você estiver usando o Intune autônomo para gerenciar dispositivos iOS antes da alteração na autoridade de MDM, deve garantir que o mesmo certificado Apple Push Notification Service (APNs) que era usado no Intune seja renovado e usado para configurar o locatário novamente no Configuration Manager (híbrido).    
 
     > [!IMPORTANT]  
     > Se um certificado APNs diferente for usado para híbrido, TODOS os dispositivos iOS registrados anteriormente terão o registro cancelado e você precisará passar pelo processo de registrá-los novamente. Antes de fazer a alteração da autoridade de MDM, verifique se você sabe exatamente qual certificado APNs foi usado para gerenciar os dispositivos iOS no Intune. Localize o mesmo certificado listado no Apple Push Certificates Portal (https://identity.apple.com) e verifique se o usuário cuja ID da Apple foi usada para criar o certificado APNs original é identificado e está disponível para renovar o mesmo certificado APNs como parte da mudança para a nova autoridade de MDM.
@@ -102,7 +105,7 @@ Examine as informações a seguir para se preparar para a alteração para a aut
 4. Selecione a coleção de usuário que conterá todos os usuários que continuarão a ser gerenciados pela nova autoridade de MDM híbrida.
 5. Clique em **Próximo** e conclua o assistente. A autoridade de MDM agora é alterada para o **Configuration Manager**.
 6. Faça logon no [Console de administração do Microsoft Intune](http://manage.microsoft.com) usando o mesmo locatário do Intune e confirme que a autoridade de MDM foi alterada para **Definir para o Configuration Manager**.
-7. Depois de alterar a autoridade de MDM para o Configuration Manager, configure o [registro do iOS](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) e o [registro do Android](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-android).
+7. Depois de alterar a autoridade de MDM para o Configuration Manager, configure o [registro do iOS](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) e o [registro do Android](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
 8. No console do Configuration Manager, configure e implante novas configurações e aplicativos da nova autoridade de MDM (híbrido).
 
 Da próxima vez que o dispositivo se conectar ao serviço, ele sincronizará e receberá as novas configurações da nova autoridade de MDM.
@@ -125,13 +128,13 @@ A autoridade de MDM não pode ser alterada novamente para Desconhecida. A autori
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>O que esperar após a alteração da autoridade de MDM
 
-- Quando o serviço Intune detectar que a autoridade de MDM de um locatário foi alterada, ele enviará uma mensagem de notificação para todos os dispositivos registrados para fazer check-in e sincronizar com o serviço (isso ocorre fora do check-in agendado regularmente). Portanto, depois que a autoridade de MDM para o locatário tiver sido alterada de Intune autônomo para híbrida, todos os dispositivos que estiverem ligados e online se conectarão ao serviço, receberão a nova autoridade de MDM e serão gerenciados pelo híbrido no futuro. Não há interrupção para o gerenciamento e a proteção desses dispositivos.
+- Quando o serviço Intune detecta que a autoridade de MDM de um locatário foi alterada, ele envia uma mensagem de notificação para todos os dispositivos registrados para fazer check-in e sincronizar com o serviço (essa notificação ocorre fora do check-in agendado regularmente). Portanto, depois que a autoridade de MDM para o locatário tiver sido alterada de Intune autônomo para híbrida, todos os dispositivos que estiverem ligados e online se conectarão ao serviço, receberão a nova autoridade de MDM e serão gerenciados pelo híbrido no futuro. Não há interrupção para o gerenciamento e a proteção desses dispositivos.
 - Mesmo para os dispositivos ligados e online durante (ou logo após) a alteração na autoridade de MDM, haverá um atraso de até oito horas (dependendo do horário do próximo check-in regular agendado) antes de os dispositivos serem registrados no serviço sob a nova autoridade de MDM.    
 
   > [!IMPORTANT]    
-  > Entre o momento em que você altera a autoridade de MDM e em que o certificado APNs renovado é carregado para a nova autoridade, novos registros de dispositivo e check-in de dispositivo para dispositivos iOS falharão. Portanto, é importante que você analise e carregue o certificado APNs para a nova autoridade assim que possível após a alteração na autoridade de MDM.
+  > Entre o momento em que você altera a autoridade de MDM e em que o certificado APNs renovado é carregado para a nova autoridade, novos registros de dispositivo e check-in de dispositivo para dispositivos iOS falharão. Portanto, é importante que você analise e carregue o certificado de APNs para a nova autoridade assim que possível após a alteração na autoridade de MDM.
 
-- Os usuários podem alterar rapidamente para a nova autoridade de MDM iniciando manualmente um check-in do dispositivo para o serviço. Os usuários podem fazer isso facilmente pelo aplicativo Portal da Empresa e iniciando uma verificação de conformidade do dispositivo.
+- Os usuários podem alterar rapidamente para a nova autoridade de MDM iniciando manualmente um check-in do dispositivo para o serviço. Os usuários podem fazer essa alteração facilmente usando o aplicativo Portal da Empresa e iniciando uma verificação de conformidade do dispositivo.
 - Para validar que as coisas estão funcionando corretamente depois que os dispositivos fizerem check-in e forem sincronizados com o serviço após a alteração na autoridade de MDM, procure os dispositivos no Console do Configuration Manager. Os dispositivos que eram gerenciados anteriormente pelo Intune agora são exibidos como dispositivos gerenciados no console do Configuration Manager.    
 - Há um período provisório em que um dispositivo está offline durante a alteração na autoridade de MDM e quando esse dispositivo faz check-in no serviço. Para ajudar a garantir que o dispositivo permaneça protegido e funcionando durante esse intervalo, os seguintes perfis permanecem no dispositivo por até sete dias (ou até que o dispositivo se conecte com a nova autoridade de MDM e receba novas configurações que substituirão as existentes):
     - Perfil de email
@@ -148,7 +151,7 @@ A autoridade de MDM não pode ser alterada novamente para Desconhecida. A autori
 -  Depois de alterar a autoridade MDM, execute as etapas a seguir para validar que os novos dispositivos sejam registrados com êxito para a nova autoridade:   
     - Registrar um novo dispositivo
     - Verifique se o dispositivo registrado recentemente aparece no console do Configuration Manager.
-    - Execute uma ação, como bloqueio remoto, do console de administração para o dispositivo. Se a ação for bem-sucedida, isso significará que o dispositivo está sendo gerenciado pela nova autoridade de MDM.
+    - Execute uma ação, como bloqueio remoto, do console de administração para o dispositivo. Se a ação for bem-sucedida, isso significa que o dispositivo está sendo gerenciado pela nova autoridade de MDM.
 - Se você tiver problemas com dispositivos específicos, poderá cancelar o registro e registrar novamente os dispositivos para que eles se conectem à nova autoridade e sejam gerenciados o mais rápido possível.
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 85d0df026e49b36e148620ce2d06b4afaaf98ace
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 50fc19410b280e984c8dc3abe620baad7c3267de
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827880"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959529"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos de sua empresa
 
@@ -60,34 +60,34 @@ Para saber mais sobre o registro, confira [O que acontece quando eu instalo o ap
 
 |O que você vê|Explicação|
 |---|---|
-|![Tela de entrada do Portal da Empresa, com o botão "Entrar" na parte inferior.](./media/ios-01-cp-enroll-1802.png)|Abra o aplicativo Portal da Empresa e toque em **Entrar**.|
-|![Prompt de entrada do Azure AD.](./media/ios-02-cp-enroll-1802.png)|Insira seu endereço de email corporativo e toque em **Avançar**.|
-|![Solicitação de senha do Azure AD.](./media/ios-03-cp-enroll-1802.png)|Insira sua senha e toque em **Entrar**.|
-|![Tela inicial do carregamento de recursos da empresa.](./media/ios-04-cp-enroll-1802.png)|Espere até que essa tela seja carregada.|
-|![Página de Termos e Condições.](./media/ios-05-cp-enroll-1802.png)|Leia e **Aceite tudo** dos Termos e Condições.|
-|![Tela Configurar acesso da empresa. Tanto o gerenciamento quanto as configurações necessitam de resolução no momento.](./media/ios-06-cp-enroll-1802.png)|Toque em **Iniciar** para iniciar o processo que permitirá ao seu dispositivo acessar os recursos da empresa. Se você não puder fazer isso agora, poderá **Adiar** o processo, mas você não poderá obter emails, documentos e muito mais.|
-|![Tela O que minha empresa pode ver.](./media/ios-07-cp-enroll-1802.png)|**Saiba mais** sobre o que sua empresa pode ver tocando no link na parte inferior. Se não quiser, toque em **Continuar**.|
-|![Tela O que vem a seguir.](./media/ios-08-cp-enroll-1802.png)|Esta tela explica o que está acontecendo na configuração. Você dedicará um tempo ao Safari, ao aplicativo Configurações e ao aplicativo Portal da Empresa. Toque em **Continuar**.|
-|![Carregando a tela após tocar em Próximo em O que vem a seguir.](./media/ios-09-cp-enroll-1802.png)|Espere até que essa tela seja carregada.|
+|![Tela de entrada do Portal da Empresa, com o botão "Entrar" na parte inferior.](./media/ios-01-cp-enroll-1802.PNG)|Abra o aplicativo Portal da Empresa e toque em **Entrar**.|
+|![Prompt de entrada do Azure AD.](./media/ios-02-cp-enroll-1802.PNG)|Insira seu endereço de email corporativo e toque em **Avançar**.|
+|![Solicitação de senha do Azure AD.](./media/ios-03-cp-enroll-1802.PNG)|Insira sua senha e toque em **Entrar**.|
+|![Tela inicial do carregamento de recursos da empresa.](./media/ios-04-cp-enroll-1802.PNG)|Espere até que essa tela seja carregada.|
+|![Página de Termos e Condições.](./media/ios-05-cp-enroll-1802.PNG)|Leia e **Aceite tudo** dos Termos e Condições.|
+|![Tela Configurar acesso da empresa. Tanto o gerenciamento quanto as configurações necessitam de resolução no momento.](./media/ios-06-cp-enroll-1802.PNG)|Toque em **Iniciar** para iniciar o processo que permitirá ao seu dispositivo acessar os recursos da empresa. Se você não puder fazer isso agora, poderá **Adiar** o processo, mas você não poderá obter emails, documentos e muito mais.|
+|![Tela O que minha empresa pode ver.](./media/ios-07-cp-enroll-1802.PNG)|**Saiba mais** sobre o que sua empresa pode ver tocando no link na parte inferior. Se não quiser, toque em **Continuar**.|
+|![Tela O que vem a seguir.](./media/ios-08-cp-enroll-1802.PNG)|Esta tela explica o que está acontecendo na configuração. Você dedicará um tempo ao Safari, ao aplicativo Configurações e ao aplicativo Portal da Empresa. Toque em **Continuar**.|
+|![Carregando a tela após tocar em Próximo em O que vem a seguir.](./media/ios-09-cp-enroll-1802.PNG)|Espere até que essa tela seja carregada.|
 |![Alternou para o Safari para a inscrição.](./media/ios-cp-sent-to-safari-1808.png)|Você é enviado ao Safari para obter informações de gerenciamento para o seu dispositivo.|
-|![Solicitação do sistema para abertura do aplicativo Ajustes.](./media/ios-8-cp-enroll-1711.png)|Toque em **Permitir** para abrir o aplicativo Ajustes e baixar o arquivo de configuração. Instale isso para permitir que sua empresa gerencie informações corporativas em seu dispositivo.|
-|![Captura da tela Instalar perfil nas configurações do dispositivo.](./media/ios-9-cp-enroll-1711.png)|Toque em **Instalar**.|
-|![Instalando a caixa de diálogo modal do perfil na parte inferior da tela.](./media/ios-10-cp-enroll-1711.png)|Toque em **Instalar**.|
-|![Tela de carregamento O perfil está sendo instalado.](./media/ios-11-cp-enroll-1711.png)|Espere até que essa tela seja carregada.|
-|![Tela de aviso de gerenciamento de perfil.](./media/ios-12-cp-enroll-1711.png)|Este aviso, escrito pela Apple, fala mais sobre os tipos de ações que podem ser realizadas em um dispositivo sob gerenciamento. Saiba mais sobre [quais informações sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
-|![Solicitação do sistema sobre a confiança no gerenciamento remoto.](./media/ios-13-cp-enroll-1711.png)|Toque em **Confiar** para permitir que sua empresa gerencie informações corporativas e configurações em seu dispositivo.|
-|![Tela de carregamento Concluindo a instalação do perfil.](./media/ios-14-cp-enroll-1711.png)|Espere até que essa tela seja carregada.|
-|![Tela Perfil instalado.](./media/ios-15-cp-enroll-1711.png)|Seu perfil está instalado, e as informações corporativas e configurações do seu dispositivo estão muito próximas de serem gerenciadas.|
-|![Alternou para o Safari para a inscrição.](./media/ios-16-cp-enroll-1711.png)|Você é enviado de volta ao Safari para terminar de receber informações de gerenciamento para o seu dispositivo. |
-|![Solicitação do sistema para abrir o portal da empresa.](./media/ios-17-cp-enroll-1711.png)|Toque em **Abrir**.|
-|![Tela Carregando recursos da empresa.](./media/ios-21-cp-enroll-1802.png)|Espere até que essa tela seja carregada.|
-|![Selecione a categoria de dispositivo no aplicativo portal da empresa.](./media/ios-22-cp-enroll-1802.png)|Escolha a melhor categoria para seu dispositivo. Geralmente, isso tem a ver com quem é proprietário do dispositivo, ou sua localização frequente.|
-|![Categoria selecionada.](./media/ios-23-cp-enroll-1802.png)||
-|![Gerenciamento de dispositivo bem-sucedido; agora é necessário atualizar as configurações.](./media/ios-24-cp-enroll-1802.png)|Seu dispositivo está sendo gerenciado. Provavelmente, ainda há configurações que sua empresa precisa atualizar, como o tamanho da senha. Clique em **Continuar** para prosseguir.|
-|![Confirmação das configurações do dispositivo.](./media/ios-25-cp-enroll-1802.png)|O Portal da Empresa verificará se as configurações precisam ser atualizadas.|
-|![Verificação das configurações concluída, com uma versão incorreta do sistema operacional](./media/ios-26-cp-enroll-1802.png)|O Portal da Empresa fornecerá instruções sobre como você pode corrigir quaisquer problemas com as configurações. Ao terminar de corrigir os problemas, toque em **Verificar Configurações**.|
-|![Tela de carregamento Confirmação das configurações do dispositivo](./media/ios-27-cp-enroll-1802.png)|O dispositivo verificará se as configurações estão seguras o suficiente para acessar os recursos da empresa.|
-|![Inscrição bem-sucedida e configurações atualizadas](./media/ios-28-cp-enroll-1802.png)|Parabéns! Agora, seu dispositivo está registrado no Intune.|
+|![Solicitação do sistema para abertura do aplicativo Ajustes.](./media/ios-8-cp-enroll-1711.PNG)|Toque em **Permitir** para abrir o aplicativo Ajustes e baixar o arquivo de configuração. Instale isso para permitir que sua empresa gerencie informações corporativas em seu dispositivo.|
+|![Captura da tela Instalar perfil nas configurações do dispositivo.](./media/ios-9-cp-enroll-1711.PNG)|Toque em **Instalar**.|
+|![Instalando a caixa de diálogo modal do perfil na parte inferior da tela.](./media/ios-10-cp-enroll-1711.PNG)|Toque em **Instalar**.|
+|![Tela de carregamento O perfil está sendo instalado.](./media/ios-11-cp-enroll-1711.PNG)|Espere até que essa tela seja carregada.|
+|![Tela de aviso de gerenciamento de perfil.](./media/ios-12-cp-enroll-1711.PNG)|Este aviso, escrito pela Apple, fala mais sobre os tipos de ações que podem ser realizadas em um dispositivo sob gerenciamento. Saiba mais sobre [quais informações sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
+|![Solicitação do sistema sobre a confiança no gerenciamento remoto.](./media/ios-13-cp-enroll-1711.PNG)|Toque em **Confiar** para permitir que sua empresa gerencie informações corporativas e configurações em seu dispositivo.|
+|![Tela de carregamento Concluindo a instalação do perfil.](./media/ios-14-cp-enroll-1711.PNG)|Espere até que essa tela seja carregada.|
+|![Tela Perfil instalado.](./media/ios-15-cp-enroll-1711.PNG)|Seu perfil está instalado, e as informações corporativas e configurações do seu dispositivo estão muito próximas de serem gerenciadas.|
+|![Alternou para o Safari para a inscrição.](./media/ios-16-cp-enroll-1711.PNG)|Você é enviado de volta ao Safari para terminar de receber informações de gerenciamento para o seu dispositivo. |
+|![Solicitação do sistema para abrir o portal da empresa.](./media/ios-17-cp-enroll-1711.PNG)|Toque em **Abrir**.|
+|![Tela Carregando recursos da empresa.](./media/ios-21-cp-enroll-1802.PNG)|Espere até que essa tela seja carregada.|
+|![Selecione a categoria de dispositivo no aplicativo portal da empresa.](./media/ios-22-cp-enroll-1802.PNG)|Escolha a melhor categoria para seu dispositivo. Geralmente, isso tem a ver com quem é proprietário do dispositivo, ou sua localização frequente.|
+|![Categoria selecionada.](./media/ios-23-cp-enroll-1802.PNG)||
+|![Gerenciamento de dispositivo bem-sucedido; agora é necessário atualizar as configurações.](./media/ios-24-cp-enroll-1802.PNG)|Seu dispositivo está sendo gerenciado. Provavelmente, ainda há configurações que sua empresa precisa atualizar, como o tamanho da senha. Clique em **Continuar** para prosseguir.|
+|![Confirmação das configurações do dispositivo.](./media/ios-25-cp-enroll-1802.PNG)|O Portal da Empresa verificará se as configurações precisam ser atualizadas.|
+|![Verificação das configurações concluída, com uma versão incorreta do sistema operacional](./media/ios-26-cp-enroll-1802.PNG)|O Portal da Empresa fornecerá instruções sobre como você pode corrigir quaisquer problemas com as configurações. Ao terminar de corrigir os problemas, toque em **Verificar Configurações**.|
+|![Tela de carregamento Confirmação das configurações do dispositivo](./media/ios-27-cp-enroll-1802.PNG)|O dispositivo verificará se as configurações estão seguras o suficiente para acessar os recursos da empresa.|
+|![Inscrição bem-sucedida e configurações atualizadas](./media/ios-28-cp-enroll-1802.PNG)|Parabéns! Agora, seu dispositivo está registrado no Intune.|
 
 > [!Note]
 > Talvez ainda haja mais algumas etapas para concluir antes que o dispositivo esteja totalmente gerenciado. Saiba mais sobre como [registrar seu dispositivo usando o gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se sua organização estiver usando o Programa de registro de dispositivos da Apple, descubra mais [aqui](enroll-your-device-dep-ios.md).

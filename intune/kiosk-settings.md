@@ -1,27 +1,31 @@
 ---
 title: Configurações de quiosque para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Configure dispositivos Windows 10 (e posterior) como quiosques de aplicativo único e de vários aplicativos, incluindo a personalização do menu Iniciar, a adição de aplicativos, a barra de tarefas e a configuração de um navegador da Web. Também configure dispositivos Windows Holographic for Business como quiosques de vários aplicativos no Microsoft Intune.
+description: Configure dispositivos Windows 10 (e posteriores) como quiosques de aplicativo único e de vários aplicativos, incluindo a personalização do menu Iniciar, a adição de aplicativos, a barra de tarefas e a configuração de um navegador da Web. Também configure dispositivos Windows Holographic for Business como quiosques de vários aplicativos no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/2/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
+ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562860"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49380024"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configurações de quiosque para Windows 10 (e posteriores) no Intune
 
-Perfis de quiosque são usados para configurar dispositivos Windows 10 para execução de um ou vários aplicativos. Quando você cria um perfil de quiosque, também escolhe se um menu Iniciar é mostrado se um navegador da Web é instalado e muito mais.
+Nos dispositivos Windows 10, você pode usar o Intune para executar esses dispositivos como um quiosque. O quiosque pode executar um único aplicativo ou vários. Você também pode exibir e personalizar um menu Iniciar, adicionar aplicativos diferentes, incluindo aplicativos Win32, adicionar uma página inicial específica a um navegador da Web e muito mais. 
+
+Use as etapas neste artigo para criar um quiosque de aplicativo único ou de vários aplicativos no Intune.
+
+O Intune oferece suporte a um único perfil de quiosque por dispositivo. Se você precisar de vários perfis de quiosque em um único dispositivo, poderá usar um [OMA-URI personalizado](custom-settings-windows-10.md).
 
 ## <a name="kiosk-settings"></a>Configurações do quiosque
 
@@ -30,100 +34,161 @@ Perfis de quiosque são usados para configurar dispositivos Windows 10 para exec
 3. Digite as seguintes propriedades:
 
    - **Nome**: insira um nome descritivo para o novo perfil.
-   - **Descrição:** insira uma descrição para o perfil. Isso é opcional, mas recomendado.
+   - **Descrição:** insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
    - **Plataforma**: selecione **Windows 10 e posteriores**
    - **Tipo de perfil**: selecione **Quiosque (versão prévia)**
-   
-4. Selecione **Quiosque** > **Adicionar**.
-5. Insira um **Nome de configuração de quiosque** para o seu quiosque. Esse nome identifica um grupo de aplicativos, o layout desses aplicativos no menu inicial e os usuários atribuídos a essa configuração de quiosque.
-6. Selecione o **Modo de quiosque**. O **Modo de quiosque** identifica o tipo de modo de quiosque compatível com a política. As opções incluem:
+
+4. Selecione um **modo de quiosque**. O **Modo de quiosque** identifica o tipo de modo de quiosque compatível com a política. As opções incluem:
 
     - **Não Configurado** (padrão): a política não habilita o modo de quiosque.
-    - **Quiosque de aplicativo único de tela inteira**: o perfil permite que o dispositivo seja executado como uma conta de usuário única e bloqueia-a para um único aplicativo UWP (Plataforma Universal do Windows). Assim, quando o usuário faz logon, um aplicativo específico inicia. Esse modo também impede que o usuário abrir novos aplicativos ou alterar o aplicativo em execução.
-    - **Quiosque multiaplicativo**: o perfil permite que o dispositivo execute vários aplicativos UWP (Plataforma Universal do Windows) ou aplicativos Win32. Você também pode atribuir diferentes aplicativos para diferentes contas de usuário. Somente os aplicativos que você adiciona estão disponíveis ao usuário. O benefício de um quiosque de vários aplicativos ou de um dispositivo com finalidade fixa é proporcionar uma experiência fácil para os usuários ao possibilitar acesso somente aos aplicativos de que eles precisam. E também removendo da exibição os aplicativos de que eles não precisam.
+    - **Aplicativo único, quiosque de tela inteira**: o dispositivo é executado como uma única conta de usuário e fica bloqueado com um único aplicativo da Loja. Assim, quando o usuário faz logon, um aplicativo específico inicia. Esse modo também impede que o usuário abrir novos aplicativos ou alterar o aplicativo em execução.
+    - **Quiosque de vários aplicativos**: o dispositivo executa vários aplicativos da Loja, aplicativos do Win32 ou aplicativos básicos do Windows usando a ID de modelo de usuário do aplicativo (AUMID). Somente os aplicativos que você adiciona ficam disponíveis no dispositivo.
 
-#### <a name="single-full-screen-app-kiosks"></a>Quiosques aplicativo de tela inteira único
-Insira as seguintes configurações:
+        O benefício de um quiosque de vários aplicativos ou de um dispositivo com finalidade fixa é proporcionar uma experiência fácil para os usuários ao possibilitar acesso somente aos aplicativos de que eles precisam. E também removendo da exibição os aplicativos de que eles não precisam.
 
-- **Identificador de aplicativo UWP (Plataforma Universal do Windows)**: insira o **AUMID (ID do modelo de usuário do aplicativo)** do aplicativo de quiosque. Ou selecione um aplicativo gerenciado existente que você tenha adicionado usando [Aplicativos Cliente](apps-add.md).
+## <a name="single-full-screen-app-kiosks"></a>Quiosques aplicativo de tela inteira único
+Quando você escolher o modo de quiosque de aplicativo único, insira as seguintes configurações:
 
-    Consulte [Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+- **Tipo de logon do usuário**: os aplicativos que você adiciona são executados com a conta de usuário inserida. Suas opções:
 
-- **Tipo de conta de usuário**: suas opções:
+  - **Logon automático (Windows 10 versão 1803 e posteriores)**: para quiosques em ambientes públicos que não exigem que o usuário faça logon, similar a uma conta de convidado. Essa configuração usa o [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Conta de usuário local**: insira a conta de usuário local (para o dispositivo). A conta inserida é usada para entrar no quiosque.
 
-  - **Logon automático**: para quiosques em ambientes voltados para o público com logon automático habilitado, um usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Para configurar uma conta do Azure AD (Active Directory) para o modo de quiosque, use o formato `AzureAD\user@contoso.com`.
-  - **Conta de usuário local**: insira a conta de usuário local (para o dispositivo) ou o logon da conta do Azure AD associado ao aplicativo de quiosque. Para contas ingressadas em domínios do Azure AD, especifique a conta usando o formato `domain\username@tenant.org`.
+- **Tipo de aplicativo**: selecione **Aplicativo da Loja**.
 
-#### <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
-Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos são os únicos aplicativos que o usuário pode abrir. 
+- **Aplicativo a ser executado no modo de quiosque**: escolha **Adicionar um aplicativo da loja** e selecione um aplicativo na lista.
 
-[Quiosques de vários aplicativos](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) usam uma configuração de quiosque que lista os aplicativos permitidos e outras configurações.
+    Não tem aplicativos listados? Adicione alguns usando as etapas em [Aplicativos cliente](apps-add.md).
 
-Insira as seguintes configurações:
+    Selecione **OK** para salvar suas alterações.
 
-- **Adicionar Aplicativo Win32**: um aplicativo Win32 é um aplicativo da área de trabalho tradicional. Insira o **Nome do aplicativo** e o **Identificador**. O **Identificador** é o nome do caminho totalmente qualificado do executável com relação ao dispositivo.
-- **Adicionar aplicativos gerenciados**: selecione um aplicativo gerenciado existente que você adicionou usando [Aplicativos Cliente no Intune](apps-add.md).
-- **Adicionar aplicativo por AUMID**: insira o [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos da UWP).
-- **Barra de tarefas**: escolha **Habilitar** (mostrar) na barra de tarefas ou mantenha-a como **Não configurada** (oculta) no quiosque.
-- **Layout do menu Iniciar**: insira um arquivo XML que descreve como os aplicativos são exibidos no menu Iniciar, incluindo a ordem dos aplicativos. [Personalizar e exportar o layout inicial](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas diretrizes e XML de exemplo.
+- **Configurações do navegador do quiosque**: essas configurações controlam um aplicativo de navegador da Web no quiosque. Certifique-se de obter o [Aplicativo de navegador quiosque](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) da Loja, adicione-o ao Intune como um [Aplicativo cliente](apps-add.md) e atribua o aplicativo aos dispositivos de quiosque.
 
-  [Criar um quiosque Windows 10 que executa vários aplicativos](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) fornece mais detalhes sobre como usar e criar arquivos XML.
+  Insira as seguintes configurações:
 
-- **Tipo de conta de usuário**: adicione uma ou mais contas de usuário que podem usar os aplicativos que você adicionar. Quando a conta se conecta, apenas os aplicativos definidos na configuração estão disponíveis. A conta pode ser local para o dispositivo ou um logon de conta do Azure AD associado ao aplicativo de quiosque.
+  - **URL da home page padrão**: insira a URL padrão a exibir quando o navegador de quiosque abrir ou quando o navegador reiniciar. Por exemplo, insira `http://bing.com` ou `http://www.contoso.com`.
 
-    Para quiosques em ambientes de público com logon automático habilitado, um tipo de usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Para configurar uma conta do Azure AD (Active Directory) para o modo de quiosque, use o formato `domain\user@tenant.com`.
+  - **Botão Página Inicial**: **Exibir** ou **Ocultar** o botão de página inicial do navegador de quiosque. Por padrão, o botão não é exibido.
 
-## <a name="kiosk-web-browser-settings"></a>Configurações do navegador da Web de quiosque
+  - **Botões de navegação**: **Exibir** ou **Ocultar** os botões Voltar e Avançar. Por padrão, os botões de navegação não são exibidos.
 
-Essas configurações controlam um aplicativo de navegador da Web no quiosque. Você deve ter implantado um aplicativo de navegador da Web para os dispositivos de quiosque usando [Aplicativos Cliente](apps-add.md).
+  - **Botão Encerrar sessão**: **Exibir** ou **Ocultar** o botão para encerrar a sessão. Quando a opção é exibida, o usuário seleciona o botão e o aplicativo solicita o encerramento da sessão. Quando a opção é confirmada, o navegador limpa todos os dados de navegação (cookies, cache e assim por diante) e abre a URL padrão. Por padrão, o botão não é exibido.
 
-1. Insira as seguintes configurações:
+  - **Atualizar o navegador após tempo ocioso**: insira a quantidade de tempo ocioso (1 a 1440 minutos) até que o navegador do quiosque seja reiniciado em um estado novo. Tempo ocioso é a quantidade de minutos desde a última interação do usuário. Por padrão, o valor fica vazio ou em branco, o que significa que não há qualquer tempo limite de ociosidade.
 
-    - **URL da página inicial padrão**: insira a URL padrão que o navegador de quiosque abre quando o navegador é aberto ou reiniciado.
+  - **Sites permitidos**: use essa configuração para permitir que sites específicos sejam abertos. Em outras palavras, use esse recurso para restringir ou impedir sites da Web no dispositivo. Por exemplo, você pode permitir que todos os sites em `http://contoso.com*` sejam abertos. Por padrão, todos os sites são permitidos.
 
-    - **Botão Página Inicial**: mostre (**Permitir**) ou oculte (**Não configurado**) o botão de página inicial do navegador de quiosque. Por padrão, o botão Não está configurado.
+    Para permitir sites específicos, faça o upload de um arquivo .csv que inclua uma lista dos sites permitidos. Se você não adicionar um arquivo .csv, todos os sites serão permitidos. O Intune aceita o asterisco (*) como um caractere curinga.
 
-    - **Botão de navegação**: mostre (**Permitir**) ou oculte (**Não configurado**) os botões Avançar e Voltar. Por padrão, os botões de navegação Não estão configurados.
+  Selecione **OK** para salvar suas alterações.
 
-    - **Botão Encerrar sessão**: mostre (**Permitir**) ou oculte (**Não configurado**) o botão Encerrar sessão. Quando a opção é exibida, o usuário seleciona o botão e o aplicativo solicita o encerramento da sessão. Quando a opção é confirmada, o navegador limpa todos os dados de navegação (cookies, cache e assim por diante) e navega novamente para a URL padrão. Por padrão, o botão Não está configurado. 
+## <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
 
-    - **Atualizar o navegador quando o usuário exceder o limite de tempo ocioso**: insira a quantidade de tempo ocioso da sessão em minutos até que o navegador de quiosque reinicie em um estado novo. O valor é um inteiro de 1 a 1.440 minutos. Por padrão, o valor está vazio ou em branco, que significa que não há nenhum tempo limite de ociosidade.
+Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos são os únicos aplicativos que o usuário pode abrir.
 
-    - **Sites bloqueados**: lista de URLs de sites bloqueados (com suporte a caracteres curinga). Use essa configuração para impedir que o navegador abra sites específicos. Você também pode **Importar** um arquivo .csv que contenha uma lista. Ou criar um arquivo .csv (**Exportar**) que contenha os sites que você adicionar.
+Quando você escolher o modo de quiosque de vários aplicativos, insira as seguintes configurações:
 
-    - **Exceções de site**: lista de exceções para URLs do site bloqueado (com suporte a caracteres curinga). Use essa configuração para permitir que o navegador abra sites específicos. Essas exceções são um subconjunto das URLs bloqueadas. Se uma URL estiver na lista de sites bloqueados e na lista de exceção do site, a exceção entrará em vigor.
+- **Direcionar o Windows 10 em dispositivos no modo S**: escolha **Sim** para permitir aplicativos da loja e aplicativos AUMID (exclui aplicativos Win32) no perfil de quiosque. Escolha **Não** para permitir aplicativos da loja, aplicativos Win32 e aplicativos AUMID no perfil de quiosque. Ao escolher **Não**, esse perfil de quiosque não é implantado em dispositivos de modo S.
 
-    Você também pode **Importar** um arquivo .csv que contenha uma lista. Ou criar um arquivo .csv (**Exportar**) que contenha os sites que você adicionar.
+- **Tipo de logon do usuário**: os aplicativos que você adiciona são executados com a conta de usuário inserida. Suas opções:
 
-2. Selecione **OK** para salvar suas alterações.
+  - **Logon automático (Windows 10 versão 1803 e posteriores)**: para quiosques em ambientes públicos que não exigem que o usuário faça logon, similar a uma conta de convidado. Essa configuração usa o [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Conta de usuário local**: **adicione** a conta de usuário local (para o dispositivo). A conta inserida é usada para entrar no quiosque.
+  - **Usuário ou grupo do Azure AD (versão do Windows 10 1803 e posteriores)**: selecione **Adicionar** para escolher usuários ou grupos do Azure AD na lista. Você pode selecionar vários usuários e grupos. Marque **Selecionar** para salvar suas alterações.
+  - **Visitante do HoloLens**: a conta do visitante é uma conta convidado que não exige as credenciais do usuário nem autenticação, conforme descrito em [Conceitos do modo de computador compartilhado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+
+- **Aplicativos**: adicione os aplicativos a serem executados no dispositivo de quiosque. Lembre-se, você pode adicionar vários aplicativos.
+
+  - **Adicionar aplicativo da Loja**: adicione um aplicativo da Microsoft Store para Empresas. Se você não tiver qualquer aplicativo listado, poderá adquirir aplicativos e [adicioná-los ao Intune](store-apps-windows.md). Por exemplo, você pode adicionar o navegador de quiosque, o Excel, o OneNote e muito mais.
+
+  - **Adicionar aplicativo Win32**: um aplicativo Win32 é um aplicativo de área de trabalho tradicional, como o Visual Studio Code ou o Google Chrome. Digite as seguintes propriedades:
+
+    - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
+    - **Caminho local**: necessário. Insira o caminho para o executável, como `C:\Program Files (x86)\Microsoft VS Code\Code.exe` ou `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
+    - **ID de modelo de usuário do aplicativo (AUMID)**: opcional. Insira a ID do modelo de usuário do aplicativo (AUMID) do aplicativo do Win32. Essa configuração determina o layout inicial do bloco na área de trabalho. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
+  
+  - **Adicionar por AUMID**: use esta opção para adicionar aplicativos básicos do Windows, como o Bloco de Notas ou a Calculadora. Digite as seguintes propriedades: 
+
+    - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
+    - **Modelo de usuário do aplicativo AUMID (ID)**: necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
+
+  > [!TIP]
+  > Após adicionar todos os aplicativos, você pode alterar a ordem de exibição clicando e arrastando os aplicativos na lista.  
+
+  Selecione **OK** para salvar suas alterações.
+
+- **Configurações do navegador do quiosque**: essas configurações controlam um aplicativo de navegador da Web no quiosque. Certifique-se de implantar um aplicativo de navegador da Web para os dispositivos de quiosque usando [Aplicativos cliente](apps-add.md).
+
+  Insira as seguintes configurações:
+
+  - **URL da home page padrão**: insira a URL padrão a exibir quando o navegador de quiosque abrir ou quando o navegador reiniciar. Por exemplo, insira `http://bing.com` ou `http://www.contoso.com`.
+
+  - **Botão Página Inicial**: **Exibir** ou **Ocultar** o botão de página inicial do navegador de quiosque. Por padrão, o botão não é exibido.
+
+  - **Botões de navegação**: **Exibir** ou **Ocultar** os botões Voltar e Avançar. Por padrão, os botões de navegação não são exibidos.
+
+  - **Botão Encerrar sessão**: **Exibir** ou **Ocultar** o botão para encerrar a sessão. Quando a opção é exibida, o usuário seleciona o botão e o aplicativo solicita o encerramento da sessão. Quando a opção é confirmada, o navegador limpa todos os dados de navegação (cookies, cache e assim por diante) e abre a URL padrão. Por padrão, o botão não é exibido.
+
+  - **Atualizar o navegador após tempo ocioso**: insira a quantidade de tempo ocioso (1 a 1440 minutos) até que o navegador do quiosque seja reiniciado em um estado novo. Tempo ocioso é a quantidade de minutos desde a última interação do usuário. Por padrão, o valor fica vazio ou em branco, o que significa que não há qualquer tempo limite de ociosidade.
+
+  - **Sites permitidos**: use essa configuração para permitir que sites específicos sejam abertos. Em outras palavras, use esse recurso para restringir ou impedir sites da Web no dispositivo. Por exemplo, você pode permitir que todos os sites em `contoso.com*` sejam abertos. Por padrão, todos os sites são permitidos.
+
+    Para permitir sites específicos, faça o upload de um arquivo .csv que inclua uma lista dos sites permitidos. Se você não adicionar um arquivo .csv, todos os sites serão permitidos.
+
+  Selecione **OK** para salvar suas alterações.
+
+- **Usar layout alternativo do menu Iniciar**: escolha **Sim** para inserir um arquivo XML que descreve como os aplicativos são exibidos no menu Iniciar, incluindo a ordem dos aplicativos. Use esta opção se você precisar de mais personalização no seu menu Iniciar. [Personalizar e exportar o layout inicial](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas diretrizes e XML de exemplo.
+
+- **Barra de tarefas do Windows**: escolha **Exibir** ou **Ocultar** a barra de tarefas. Por padrão, a barra de tarefas não é exibida.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
-Nos dispositivos Windows Holographic for Business, você pode configurar esses dispositivos para que sejam executados no modo de quiosque de aplicativo único ou de vários aplicativos. 
+Nos dispositivos Windows Holographic for Business, você pode configurar esses dispositivos para que sejam executados no modo de quiosque de aplicativo único ou de vários aplicativos. Não há suporte para alguns recursos no Windows Holographic for Business.
 
 #### <a name="single-full-screen-app-kiosks"></a>Quiosques aplicativo de tela inteira único
-Insira as seguintes configurações:
+Quando você escolher o modo de quiosque de aplicativo único, insira as seguintes configurações:
 
-- **Identificador de aplicativo UWP (Plataforma Universal do Windows)**: insira o **AUMID (ID do modelo de usuário do aplicativo)** do aplicativo de quiosque. Ou selecione um aplicativo gerenciado existente que você tenha adicionado usando [Aplicativos Móveis](apps-add.md).
+- **Tipo de logon de usuário**: selecione **Conta de usuário local** para inserir a conta de usuário local (do dispositivo) ou uma conta Microsoft (MSA) associada ao aplicativo de quiosque. Não há suporte para tipos de conta de usuário de **logon automático** no Windows Holographic for Business.
 
-    Confira [Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) para obter a ID.
+- **Tipo de aplicativo**: selecione **Aplicativo da Loja**.
 
-- **Tipo de conta de usuário**: selecione **Conta de usuário local** para inserir a conta de usuário local (do dispositivo) ou um logon de conta MSA (conta Microsoft) associado ao aplicativo de quiosque. Não há suporte para tipos de conta de usuário de **logon automático** no Windows Holographic for Business.
+- **Aplicativo a ser executado no modo de quiosque**: escolha **Adicionar um aplicativo da loja** e selecione um aplicativo na lista.
+
+    Não tem aplicativos listados? Adicione alguns usando as etapas em [Aplicativos cliente](apps-add.md).
+
+    Selecione **OK** para salvar suas alterações.
 
 #### <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
-Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos são os únicos aplicativos que o usuário pode abrir.
+Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos são os únicos aplicativos que o usuário pode abrir. Quando você escolher o modo de quiosque de vários aplicativos, insira as seguintes configurações:
 
-Insira as seguintes configurações:
+- **Direcionar o Windows 10 em dispositivos no modo S**: escolha **Não**. Não há suporte para o modo S no Windows Holographic for Business.
 
-- **Adicionar aplicativos gerenciados**: selecione um aplicativo gerenciado existente que você adicionou usando [Aplicativos Cliente no Intune](apps-add.md).
-- **Adicionar aplicativo por AUMID**: insira o [AUMID do aplicativo](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicativos da UWP).
-- **Layout do menu Iniciar**: insira um arquivo XML que descreve como os aplicativos são exibidos no menu Iniciar, incluindo a ordem dos aplicativos. [Personalizar e exportar o layout inicial](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) fornece algumas diretrizes e inclui um arquivo XML específico para dispositivos Windows Holographic for Business.
-- **Tipo de conta de usuário**: adicione uma ou mais contas de usuário que podem usar os aplicativos que você adicionar. As opções compatíveis incluem: 
+- **Tipo de logon de usuário**: adicione uma ou mais contas de usuário que podem usar os aplicativos que você adicionar. Suas opções: 
+
+  - **Logon automático**: não tem suporte no Windows Holographic for Business.
+  - **Contas de usuário local**: **adicione** a conta de usuário local (para o dispositivo). A conta inserida é usada para entrar no quiosque.
+  - **Usuário ou grupo do Azure AD (Windows 10, versão 1803 e posteriores)**: exige que as credenciais do usuário façam login no dispositivo. Selecione **Adicionar** para escolher usuários ou grupos do Azure AD na lista. Você pode selecionar vários usuários e grupos. Marque **Selecionar** para salvar suas alterações.
   - **Visitante do HoloLens**: a conta do visitante é uma conta convidado que não exige as credenciais do usuário nem autenticação, conforme descrito em [Conceitos do modo de computador compartilhado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
-  - **Usuários do Azure AD**: exige as credenciais do usuário para entrar no dispositivo. Use o formato `domain\user@tenant.com`.
-  - **Contas de Usuário Locais**: exige as credenciais do usuário para entrar no dispositivo. 
 
-Quando a conta se conecta, apenas os aplicativos definidos na configuração estão disponíveis.
+- **Aplicativos**: adicione os aplicativos a serem executados no dispositivo de quiosque. Lembre-se, você pode adicionar vários aplicativos.
+
+  - **Adicionar aplicativos da Loja**: selecione um aplicativo existente que você adicionou usando [Aplicativos cliente](apps-add.md). Se você não tiver qualquer aplicativo listado, poderá adquirir aplicativos e [adicioná-los ao Intune](store-apps-windows.md).
+  - **Adicionar aplicativo Win32**: não tem suporte no Windows Holographic for Business.
+  - **Adicionar por AUMID**: use essa opção para adicionar aplicativos básicos do Windows. Digite as seguintes propriedades: 
+
+    - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
+    - **Modelo de usuário do aplicativo AUMID (ID)**: necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
+
+- **Configurações do navegador do quiosque**: não tem suporte no Windows Holographic for Business.
+
+- **Usar layout alternativo do menu Iniciar**: escolha **Sim** para inserir um arquivo XML que descreve como os aplicativos são exibidos no menu Iniciar, incluindo a ordem dos aplicativos. Use esta opção se você precisar de mais personalização no seu menu Iniciar. [Personalizar e exportar o layout inicial](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) fornece algumas diretrizes e inclui um arquivo XML específico para dispositivos Windows Holographic for Business.
+
+- **Barra de tarefas do Windows**: não tem suporte no Windows Holographic for Business.
+
+
 
 ## <a name="next-steps"></a>Próximas etapas
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).

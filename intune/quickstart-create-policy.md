@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581508"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391545"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>Início Rápido: adicionar uma política de conformidade do dispositivo para dispositivos Windows 10
 Uma política de conformidade de dispositivos do Intune para Windows especifica as regras e configurações que dispositivos Windows precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com [acesso condicional](https://docs.microsoft.com/intune/conditional-access) para permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade.
@@ -53,4 +53,4 @@ Quando ela não for mais necessária, exclua a política. Para fazer isso, selec
 Neste início rápido, você criou e atribuiu uma política simples de conformidade do dispositivo. Para registrar um dispositivo Windows 10 que receberá a política, continue com o início rápido para configurar o registro automático. 
  
 > [!div class="nextstepaction"]
-> [Configurar registro automático](quickstart-setup-auto-enrollment.md)
+> [Definir o comprimento de senha do dispositivo](quickstart-set-password-length-android.md)

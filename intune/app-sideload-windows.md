@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058890"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425216"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicativos da linha de negócios para que possam ser implantados em dispositivos Windows com o Intune
 
@@ -77,7 +77,7 @@ As etapas a seguir o ajudarão a obter os certificados necessários e assinar os
 
     -   WinPhoneCompanyPortal.ps1 – Um script do PowerShell que você pode usar para assinar o arquivo do aplicativo do Portal da Empresa para que ele pode ser implantado em dispositivos Windows Phone 8.1
 
-    Como alternativa, é possível baixar o Portal da Empresa para Windows Phone 8.1 (pacote licenciado offline) ou o Portal da Empresa para Windows 10 (pacote licenciado offline) da [Microsoft Store para Empresas](http://businessstore.microsoft.com/). O aplicativo de Portal da Empresa precisará ser adquirido com uma licença offline e o pacote apropriado baixado para uso offline. As listagens de plataforma Windows 8 e Windows Phone 8 na seleção fazem referência às suas contrapartes 8.1. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Gerenciar aplicativos adquiridos na Microsoft Store para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Como alternativa, é possível baixar o Portal da Empresa para Windows Phone 8.1 (pacote licenciado offline) ou o Portal da Empresa para Windows 10 (pacote licenciado offline) da [Microsoft Store para Empresas](http://businessstore.microsoft.com/). O aplicativo de Portal da Empresa precisará ser adquirido com uma licença offline e o pacote apropriado baixado para uso offline. As listagens de plataforma Windows 8 e Windows Phone 8 na seleção fazem referência às suas contrapartes 8.1. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Gerenciar aplicativos adquiridos na Microsoft Store para Empresas](windows-store-for-business.md).
 
 2.  **Baixar o SDK do Windows Phone** Baixe o SDK do Windows Phone 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) e instale o SDK no seu computador. O SDK é necessário para gerar um token de registro do aplicativo.
 
@@ -119,7 +119,7 @@ As etapas a seguir o ajudarão a obter os certificados necessários e assinar os
 
     -   `-EnterpriseId` - a ID da empresa. Este argumento ou 'AetxPath' deve ser fornecido. Se esse argumento não for fornecido, a ID da empresa será lida do arquivo AETX. Por exemplo, 1000000001
 
-6.  Implante o aplicativo do Portal da Empresa do Windows Phone 8.1 (SSP.appx). Para obter diretrizes, veja [Como adicionar aplicativos LOB (linha de negócios) do Windows Phone](lob-apps-windows-phone.md) ([Portal Clássico](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Implante o aplicativo do Portal da Empresa do Windows Phone 8.1 (SSP.appx). Saiba mais em [Como adicionar aplicativos de LOB (linha de negócios) do Windows Phone](lob-apps-windows-phone.md).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Como renovar o certificado corporativo de autenticação de código Symantec
 
@@ -141,7 +141,7 @@ O certificado da Symantec usado para implantar aplicativos móveis do Windows e 
 
 3.  Carregue o Portal da Empresa assinado. Você precisará de SSP.xap recentemente assinado e o novo arquivo .PFX que recebeu da Symantec ou o token de registro de aplicativo que foi criado com esse novo arquivo .PFX.
 
-4.  Quando o upload for concluído, remova a versão antiga do Portal da Empresa no espaço de trabalho **Software**  .
+4.  Quando o upload for concluído, remova a versão antiga do Portal da Empresa no workspace **Software** .
 
 5.  Assine todos aplicativos de linha de negócios de empresa novos e atualizados usando o novo certificado. Os aplicativos existentes não precisam ser assinados e reimplantados.
 
