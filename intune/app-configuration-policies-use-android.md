@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102031"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149097"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
@@ -29,9 +29,7 @@ ms.locfileid: "49102031"
 Use as políticas de configuração de aplicativo no Microsoft Intune para fornecer configurações para aplicativos de perfil de trabalho Android. O desenvolvedor do aplicativo deve expor as definições de configuração de aplicativo gerenciado Android para especificar as definições de configuração para o aplicativo. Atribua a política de configuração do aplicativo ao grupo de usuários ao qual você deseja que as configurações sejam aplicadas.  As configurações de política são usadas quando o aplicativo as verifica, normalmente, na primeira vez em que ele é executado.
 
 > [!Note]  
-> Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se ele criou o aplicativo para dar suporte a políticas de configuração de aplicativo.<p></p>
-> Como administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. Os aplicativos de suporte processam a configuração do aplicativo, removem e bloqueiam contas não aprovadas.<p></p>
-> Para o Microsoft Word, Microsoft Excel e Microsoft PowerPoint, use o Android 16.0.9327.1000 e versões posteriores.
+> Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se ele criou o aplicativo para dar suporte a políticas de configuração de aplicativo.
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
@@ -80,7 +78,9 @@ Para dispositivos Android, use os seguintes pares de chave/valor:
 | **Valores** | <ul><li>Um ou mais UPNs delimitados por <code>;</code>.</li><li>Somente contas permitidas são as contas de usuário gerenciado definidas por essa chave.</li><li> Para dispositivos registrados no Intune, o token <code>{{userprincipalname}}</code> pode ser usado para representar a conta de usuário registrado.</li></ul> |
 
    > [!NOTE]
-   > Você deve usar o Outlook para Android 2.2.222 ou posterior ao permitir apenas contas da organização configuradas com várias identidades. 
+   > Você deve usar o Outlook para Android 2.2.222 ou posterior ao permitir apenas contas da organização configuradas com várias identidades.<p></p>
+   > Como administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. Os aplicativos de suporte processam a configuração do aplicativo, removem e bloqueiam contas não aprovadas.<p></p>
+   > Para o Microsoft Word, Microsoft Excel e Microsoft PowerPoint, você deve usar a versão do aplicativo 16.0.9327.1000 e posteriores. 
 
 ## <a name="enter-the-json-editor"></a>Inserir o editor de JSON
 
@@ -96,7 +96,7 @@ Quando o aplicativo atribuído é executado em um dispositivo, ele é executado 
 
 ## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>Pré-configurar o estado de concessão de permissões para aplicativos
 
-Você também pode pré-configurar a permissão para que os aplicativos acessem os recursos do dispositivo Android. Por padrão, os aplicativos Android que exigem permissões de dispositivo – como o acesso à localização ou à câmera do dispositivo – solicitam que os usuários aceitem ou neguem as permissões. Por exemplo, se um aplicativo usar o microfone do dispositivo, o usuário final deverá conceder ao aplicativo permissão para usar o microfone.
+Você também pode pré-configurar a permissão para que os aplicativos acessem os recursos do dispositivo Android. Por padrão, os aplicativos Android que exigem permissões de dispositivo – como o acesso à localização ou à câmera do dispositivo – solicitam que os usuários aceitem ou neguem as permissões. Por exemplo, se um aplicativo usar o microfone do dispositivo, o usuário final deverá conceder ao aplicativo permissão para usar o microfone.
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
