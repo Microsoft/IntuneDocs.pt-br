@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643018"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225447"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
@@ -181,6 +181,15 @@ A política de proteção do aplicativo do Intune não pode controlar a extensã
 As políticas de Proteção de Aplicativo do Intune para acesso serão aplicadas em uma ordem específica nos dispositivos do usuário final à medida que eles tentarem acessar um aplicativo de destino da sua conta corporativa. Em geral, um apagamento teria precedência, seguido por um bloqueio e então um aviso ignorável. Por exemplo, se aplicável ao usuário/aplicativo em questão, uma configuração de sistema operacional mínima do iOS que avisa o usuário para atualizar a versão de iOS, que será aplicada após a configuração de sistema operacional mínima do iOS que bloqueia o acesso do usuário. Portanto, no cenário em que o administrador de TI configura a versão de sistema operacional iOS mínima para 11.0.0.0 e do sistema operacional iOS mínima para 11.1.0.0, enquanto o dispositivo que tenta acessar o aplicativo estava em uma versão de iOS 10, o usuário final seria bloqueado com base a configuração mais restritiva para a versão de sistema operacional iOS mínima que resulta em acesso bloqueado.
 
 Ao lidar com diferentes tipos de configurações, um requisito de versão do SDK do Aplicativo Intune teria precedência, depois um requisito de versão do aplicativo, seguido pelo requisito de versão do sistema operacional iOS. Em seguida, os avisos para todos os tipos de configurações na mesma ordem são verificados. É recomendável que o requisito de versão do SDK do Aplicativo Intune seja configurado somente após a orientação da equipe de produto do Intune para cenários de bloqueio essenciais.
+
+## <a name="app-protection-policies---policy-refresh"></a>Políticas de proteção de aplicativo – atualização de política
+- Os aplicativos fazem check-in no Serviço de Aplicativo a cada 30 minutos.
+- O limite de 30 minutos baseia-se em um temporizador.
+    - Se o aplicativo estiver ativo durante 30 minutos, ele fará check-in em 30 minutos.
+    - Se o aplicativo estiver suspenso durante 30 minutos, ele fará check-in no próximo foco.
+- Se não for atribuída nenhuma política ao usuário, o check-in ocorrerá a cada oito horas.
+- Se não houver nenhuma licença do Intune atribuída, o check-in ocorrerá a cada 24 horas.
+
 
 ## <a name="see-also"></a>Consulte também
 - [Implementar seu plano do Intune](planning-guide-onboarding.md)

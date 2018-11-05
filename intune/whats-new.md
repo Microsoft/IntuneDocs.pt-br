@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3165c29da5cc23e9f206dbe3e1dc0ba72c758d47
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 800d044860a8a264facdeb49f1f59526ee53acdd
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643137"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149114"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,17 @@ Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sob
 ### Role-based access control
 
 -->     
+## <a name="week-of-october-22-2018"></a>Semana de 22 de outubro de 2018
+
+### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>Remover um perfil de email de um dispositivo, mesmo quando há apenas um perfil de email <!-- 1818139 -->
+Anteriormente, não era possível remover um perfil de email de um dispositivo *quando* ele era o único perfil de email. Com essa atualização, esse comportamento foi alterado. Agora, você pode remover um perfil de email, mesmo que ele seja o único perfil de email no dispositivo. Confira [Adicionar configurações de email em dispositivos usando o Intune](email-settings-configure.md) para obter detalhes.
+
+### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>Remover certificados PKCS e SCEP de seus dispositivos <!-- 3218390 -->
+Em alguns cenários, os certificados PKCS e SCEP permaneciam nos dispositivos, mesmo quando uma política era removida de um grupo, quando uma configuração ou implantação de conformidade era excluída ou quando um administrador atualizava um perfil de SCEP ou de PKCS existente. Essa atualização alterou esse comportamento. Há alguns cenários em que os certificados PKCS e SCEP são removidos dos dispositivos e alguns cenários em que eles permanecem no dispositivo. Confira [Remove SCEP and PKCS certificates in Microsoft Intune](remove-certificates.md) (Remover certificados SCEP e PKCS no Microsoft Intune) para conhecer esses cenários.
+
+### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>Módulo do PowerShell para Intune – Versão prévia disponível <!-- wnready 951068 -->
+Um novo módulo do PowerShell, que dá suporte para a API do Intune por meio do Microsoft Graph, agora está disponível em versão prévia no [GitHub]( https://aka.ms/intunepowershell). Para obter detalhes de como usar esse módulo, confira o LEIAME nesse local. 
+
 ## <a name="week-of-october-15-2018"></a>Semana de 15 de outubro de 2018
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>Solicitação de PIN ao alterar impressões digitais ou Face ID em um dispositivo iOS <!-- 2637704  -->
