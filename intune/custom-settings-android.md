@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,44 +14,65 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f9e98575c92d403d51708f7403109bea2184176e
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022043"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983118"
 ---
-# <a name="custom-settings-for-android-devices---intune"></a>Configurações personalizadas para dispositivos Android – Intune
+# <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Use configurações personalizadas para dispositivos Android no Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Usando o Microsoft Intune, você pode adicionar ou criar configurações personalizadas para dispositivos Android usando um "perfil personalizado". Perfis personalizados são um recurso no Intune. Eles são projetados para adicionar configurações de dispositivos e recursos que não são internos ao Intune.
 
-Os perfis personalizados usam as definições do OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir os diversos recursos em dispositivos Android. Essas configurações geralmente são usadas pelos fabricantes de dispositivos móveis para controlar os recursos do dispositivo.
+Os perfis personalizados do Android usam as configurações do OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir os diversos recursos em dispositivos Android. Essas configurações geralmente são usadas pelos fabricantes de dispositivos móveis para controlar esses recursos.
 
-Usando um perfil personalizado, é possível definir e atribuir as seguintes configurações do Android. Essas configurações não são nativas das políticas do Intune:
+Usando um perfil personalizado, é possível definir e atribuir as seguintes configurações do Android. As configurações a seguir não são internas ao Intune:
 
 - [Criar um perfil de Wi-Fi com uma chave pré-compartilhada](/intune/wi-fi-profile-shared-key)
 - [Criar um perfil de VPN por aplicativo](/intune/android-pulse-secure-per-app-vpn)
 - [Permitir e bloquear aplicativos para dispositivos Samsung KNOX Standard](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
-> Somente as configurações listadas podem ser definidas por esse tipo de perfil. Dispositivos Android não expõem uma lista completa das configurações de OMA-URI que é possível configurar. Se você quiser ver mais configurações, vote em mais configurações no [site Intune Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas).
+> Somente as configurações listadas podem ser definidas em um perfil personalizado. Dispositivos Android não expõem uma lista completa das configurações de OMA-URI que é possível configurar. Se você quiser ver mais configurações, vote em mais configurações no [site Intune Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
-## <a name="custom-profile-settings-for-android-devices"></a>Configurações de perfil personalizadas para dispositivos Android
+Este artigo mostra como criar um perfil personalizado para dispositivos Android.
 
-1. Entre no [Portal do Azure](https://portal.azure.com). 
-2. Selecione **Todos os Serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Crie um perfil personalizado usando a plataforma Android. [Definir configurações personalizadas do dispositivo no Microsoft Intune](custom-settings-configure.md) lista as etapas.
-4. Em **Configurações de OMA-URI personalizadas**, selecione **Adicionar** e, em seguida, **Adicionar Linha**.
-5. Digite as seguintes propriedades:
+## <a name="create-the-profile"></a>Criar o perfil
 
-   - **Nome** – Insira um nome exclusivo para a configuração de OMA-URI possa ser facilmente encontrada.
-   - **Descrição** – Insira uma descrição que proporciona uma visão geral da configuração e demais detalhes importantes.
-   - **Tipo de dados** – Insira o tipo de dados usado para essa configuração de OMA-URI. Escolha dentre **Cadeia de caracteres**, **Cadeia de caracteres (XML)**, **Data e hora**, **Inteiro**, **Ponto flutuante** ou **Booliano**.
-   - **OMA-URI** – Insira o OMA-URI que você deseja.
-   - **Valor** – Especifique o valor que você deseja associar ao OMA-URI inserido.
+1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Insira as seguintes configurações:
 
-6. Selecione **OK** para salvar suas alterações. Continue a adicionar mais configurações conforme necessário.
+    - **Nome**: insira um nome para o perfil, como `android custom profile`.
+    - **Descrição:** insira uma descrição para o perfil.
+    - **Plataforma**: escolha **Android**.
+    - **Tipo de perfil**: escolha **Personalizado**.
+
+4. Em **Configurações personalizadas de OMA-URI**, selecione **Adicionar**. Insira as seguintes configurações:
+
+    - **Nome**: insira um nome exclusivo para que a configuração de OMA-URI possa ser facilmente encontrada.
+    - **Descrição**: insira uma descrição que proporciona uma visão geral da configuração e demais detalhes importantes.
+    - **OMA-URI**: insira o OMA-URI que você deseja usar como uma configuração.
+    - **Tipo de dados**: escolha o tipo de dados que você usará para essa configuração de OMA-URI. Suas opções:
+
+      - Cadeia de caracteres
+      - Cadeia de caracteres (arquivo XML)
+      - Data e hora
+      - Inteiro
+      - Ponto flutuante
+      - Booliano
+      - Base64 (arquivo)
+
+    - **Valor** – insira o valor de dados que você deseja associar ao OMA-URI inserido. O valor depende do tipo de dados selecionado. Por exemplo, se você escolher **Data e hora**, selecione o valor em um seletor de data.
+
+    Depois de adicionar algumas configurações, você pode selecionar **Exportar**. **Exportar** cria uma lista de todos os valores que você adicionou em um arquivo de valores separados por vírgulas (.csv).
+
+5. Selecione **OK** para salvar suas alterações. Continue a adicionar mais configurações conforme necessário. 
+6. Quando terminar, escolha **OK** > **Criar** para criar o perfil do Intune. Ao concluir, seu perfil é mostrado na lista **Configuração do dispositivo – Perfis**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Após concluir as configurações, o perfil será criado e aparecerá na lista. Para atribuir esse perfil a grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
+O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md).
+
+Veja como [criar o perfil em dispositivos Android Enterprise](custom-settings-android-for-work.md).

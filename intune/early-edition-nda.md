@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a13d9b6ee37dc42e90d7c99538c9fd2e5e0d1b7b
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652131"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001585"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>A edição antecipada do Microsoft Intune – Outubro de 2018
 
@@ -118,8 +118,9 @@ Os usuários finais poderão acessar ações de conta principal, como a redefini
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Token de VPP da Apple usado por outro MDM <!-- 1488946 -->
 O Intune detectará e mostrará detalhes se um token do VPP (Apple Volume Purchase Program) estiver sendo usado tanto pelo Intune quanto por outro MDM.
 
-### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>O número de versão e o número de build do iOS são mostrados <!-- 1892471 -->
-Em **Conformidade de dispositivos** > **Conformidade de dispositivos**, a versão do sistema operacional iOS é mostrada. Em uma atualização futura, o número de build também será mostrado.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Número de build e números de versão do iOS e do macOS são mostrados <!-- 1892471 -->
+Em **Conformidade do dispositivo** > **Conformidade do dispositivo**, a versão do sistema operacional iOS e macOS é mostrada. Em uma atualização futura, o número de build também será mostrado para ambas as plataformas.
+
 Quando são lançadas atualizações de segurança, a Apple normalmente mantém o número de versão no estado em que se encontra, mas atualiza o número de build. Exibindo o número de build, você pode verificar facilmente se uma atualização de vulnerabilidade está instalada.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivos desativados no painel de conformidade de dispositivos <!-- 1981119 -->

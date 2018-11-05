@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/23/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,42 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 683b5ec7b07d7c270ea30ac438e7fc839b13d5fc
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150337"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959478"
 ---
-# <a name="how-to-remove-your-android-device-from-intune"></a>Como remover seu dispositivo Android do Intune
+# <a name="unenroll-your-android-device-from-management"></a>Cancelar o registro do dispositivo Android do gerenciamento  
 
-Ao remover seu dispositivo Android do Intune, você não poderá mais acessar os recursos da empresa.  Para obter mais informações sobre o que acontece quando você remove um dispositivo do gerenciamento, veja [O que acontece se você cancela o registro do seu dispositivo do Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+Remova um dispositivo Android registrado para que ele não seja gerenciado pela sua organização. Este artigo descreve como remover o dispositivo do aplicativo Portal da Empresa. Depois de remover o dispositivo:  
 
-## <a name="removing-the-device-from-the-company-portal-app"></a>Removendo o dispositivo do aplicativo Portal da Empresa
+* O dispositivo perde o acesso aos recursos e dados protegidos da sua organização.
+* O dispositivo não aparecerá mais no Portal da Empresa.
+* Você não poderá instalar aplicativos do Portal da Empresa.
+* Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.  
 
-Para remover seu dispositivo do Intune e o aplicativo do Portal da Empresa, siga estas etapas:
-
-1. Abra o **menu de ação** tocando nos três pontos verticais no canto superior direito do aplicativo do Portal da Empresa.
+1. No Portal da Empresa, vá para o canto superior direito e toque nos três pontos verticais. Abre o menu de ação é aberto.
 
    ![Uma imagem do aplicativo do Portal da Empresa do Android, com o menu de ação aberto no canto superior direito. A nova opção “Remover o Portal da Empresa” está disponível como a terceira opção, sob “Meu perfil” e “Configurações” e acima de “Termos e condições”, “Ajuda e comentários” e “Sobre”.](./media/android_remove_cp_menu_action_after_1705.png)
 
-2. Toque em **Remover o Portal da Empresa**.
+2. Toque em **Remover o Portal da Empresa**.  
 
-3. Uma confirmação será exibida, perguntando se você tem certeza de que deseja remover o Portal da Empresa. Ela fornecerá algumas informações sobre o que acontece quando você cancela o registro de seu dispositivo. Depois de ler essa mensagem, toque em **OK** para remover o aplicativo.
+3. Será exibida uma mensagem com informações sobre o que acontece depois que você cancela o registro do seu dispositivo. Toque em **OK** para confirmar que você deseja remover o dispositivo do Portal da Empresa.
 
    ![Uma imagem da caixa de diálogo de confirmação, que está disponível após a seleção da nova opção “Remover o Portal da Empresa” no menu de ação. A caixa de diálogo informa o usuário do seguinte: “Ao remover o Portal da Empresa, seu dispositivo não será mais gerenciado pelo suporte de sua empresa e isso poderá remover o acesso a dados, aplicativos e email da empresa”. Em seguida, ela solicita ao usuário que confirme se deseja remover o aplicativo do Portal da Empresa com a seleção de “Sim”.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-## <a name="removing-data-collected-by-the-company-portal-app"></a>Removendo os dados coletados pelo aplicativo Portal da Empresa
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Removendo os dados coletados pelo aplicativo Portal da Empresa  
 
 Para remover todos os dados que o aplicativo Portal da Empresa para Android armazena no seu dispositivo:
 
 -   Limpe os dados do aplicativo em Aplicativos -> Clique no aplicativo -> botão "Limpar dados"
 -   Exclua a pasta '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="uninstall-the-company-portal-app"></a>Desinstalar o aplicativo Portal da Empresa  
+O Portal da Empresa é um aplicativo de gerenciamento de dispositivo, portanto, não pode ser desinstalada até você [cancelar o registro do seu dispositivo do seu gerenciamento](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Depois que for concluído, toque e segure o ícone do aplicativo Portal da Empresa até ver **Desinstalar**. Toque em **Desinstalar** para remover o aplicativo do dispositivo.  
+
+Como alternativa, toque em **Configurações** > **Aplicativos** > **Portal da Empresa** > **Desinstalar**.  
+
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter informações de contato, confira o [site Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)

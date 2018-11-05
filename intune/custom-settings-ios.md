@@ -1,39 +1,72 @@
 ---
-title: Configurações personalizadas do Microsoft Intune para dispositivos que executam o iOS
+title: Adicionar configurações personalizadas a dispositivos iOS no Microsoft Intune ‑ Azure | Microsoft Docs
 titleSuffix: ''
-description: Conheças as configurações que podem ser usadas em um perfil personalizado do iOS no Microsoft Intune.
+description: Exporte configurações do iOS de ferramentas do Apple Configurator ou do Gerenciador de Perfis da Apple e, em seguida, importe-as para o Microsoft Intune. Essas configurações podem criar, usar e controlar configurações e recursos personalizados nos dispositivos iOS. Esse perfil personalizado pode ser atribuído ou distribuído para dispositivos iOS na sua organização para criar uma linha de base ou padrão.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0ae4e757264465043ee6992033710c5a81d7157
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 348a1dbf7b969956bc1ddcfb0f32a994a84e29d4
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831293"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983101"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>Configurações personalizadas de dispositivos do Microsoft Intune para dispositivos que executam o iOS
+# <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Usar configurações personalizadas para dispositivos iOS no Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Usando o Microsoft Intune, você pode adicionar ou criar configurações personalizadas para dispositivos iOS usando "perfis personalizados". Perfis personalizados são um recurso no Intune. Eles são projetados para adicionar configurações de dispositivos e recursos que não são internos ao Intune.
 
-Use o perfil personalizado do iOS do Microsoft Intune para atribuir configurações que você criou usando a [ferramenta Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) em dispositivos iOS. Essa ferramenta permite que você crie várias configurações que controlam a operação desses dispositivos e as exporte para um perfil de configuração. Você poderá, então, importar este perfil de configuração para um perfil personalizado do iOS do Intune e atribuir as configurações aos usuários e dispositivos em sua organização.
+Ao usar dispositivos iOS, há duas maneiras de obter as configurações personalizadas para o Intune:
 
-Essa funcionalidade permite atribuir configurações do iOS que não são configuráveis com outros tipos de perfil do Intune.
+- [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
+- [Gerenciador de Perfis da Apple](https://support.apple.com/profile-manager)
 
+Você pode usar essas ferramentas para exportar as configurações para um perfil de configuração. No Intune, você deve importar esse arquivo e, em seguida, atribuir o perfil aos seus usuários e dispositivos iOS. Uma vez atribuídas, as configurações são distribuídas e também criam uma linha de base ou padrão para o iOS na sua organização.
 
-1. Use as instruções em [Como definir configurações personalizadas do dispositivo no Microsoft Intune](custom-settings-configure.md) para começar.
-2. No painel **Perfil de Configuração Personalizada**, defina todas as configurações a seguir:
+Este artigo mostra como criar um perfil personalizado para dispositivos iOS. Também fornece algumas diretrizes sobre como usar o Apple Configurator e o Gerenciador de Perfis da Apple.
 
-- **Nome do perfil de configuração personalizada** – Forneça um nome para a política que será exibida no dispositivo e no status do Intune.
-- **Arquivo de perfil de configuração** – Navegue até o perfil de configuração criado usando o Apple Configurator.
-Certifique-se de que as configurações que você exportar da ferramenta Apple Configurator seja compatível com a versão do iOS nos dispositivos nos quais você atribuir a política personalizada do iOS. Para obter informações sobre como as incompatibilidades de configuração são resolvidas, pesquise a **Referência de Perfil de Configuração** e a **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).
+## <a name="before-you-begin"></a>Antes de começar
 
-O arquivo importado será exibido na área **Conteúdo do arquivo** do painel.
+- Ao usar o **Apple Configurator** para criar o perfil de configuração, as configurações exportadas devem ser compatíveis com a versão do iOS nos dispositivos que você está usando. Para obter informações sobre como resolver configurações incompatíveis, pesquise **Referência de Perfil de Configuração** e **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).
+
+- Ao usar o **Gerenciador de Perfis da Apple**, não se esqueça de:
+
+  - Habilitar o [gerenciamento de dispositivo móvel](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C) no Gerenciador de Perfis.
+  - Adicione [dispositivos iOS](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984) no Gerenciador de Perfis.
+  - Depois de adicionar um dispositivo no Gerenciador de Perfis, vá para **Na Biblioteca** > **Dispositivos** > selecione seu dispositivo > **Configurações**. Insira as configurações gerais para o dispositivo.
+
+    Baixe e salve esse arquivo. Você inserirá esse arquivo no perfil do Intune.
+
+  - As configurações exportadas do Gerenciador de Perfis da Apple devem ser compatíveis com a versão do iOS nos dispositivos que você está usando. Para obter informações sobre como resolver configurações incompatíveis, pesquise **Referência de Perfil de Configuração** e **Referência de Protocolo de Gerenciamento de Dispositivo Móvel** no site do [Desenvolvedor Apple](https://developer.apple.com/).
+
+## <a name="create-the-profile"></a>Criar o perfil
+
+1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Insira as seguintes configurações:
+
+    - **Nome**: insira um nome para o perfil, como `ios custom profile`.
+    - **Descrição:** insira uma descrição para o perfil.
+    - **Plataforma**: escolha **iOS**.
+    - **Tipo de perfil**: escolha **Personalizado**.
+
+4. Em **Configuração Personalizada**, insira as seguintes configurações:
+
+    - **Nome do perfil de configuração personalizada**: insira um nome para a política. Esse nome é mostrado no dispositivo e no status do Intune.
+    - **Arquivo do perfil de configuração**: navegue até o perfil de configuração que você criou usando o Apple Configurator ou o Gerenciador de Perfis da Apple. O arquivo importado é mostrado na área **Conteúdos do arquivo**.
+
+5. Selecione **OK** > **Criar** para criar o perfil do Intune. Ao concluir, seu perfil é mostrado na lista **Configuração do dispositivo – Perfis**.
+
+## <a name="next-steps"></a>Próximas etapas
+
+O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md).
+
+Veja como [criar o perfil em dispositivos macOS](custom-settings-macos.md). 

@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289016"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959563"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerenciar scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gerenciamento do Intune permite que você carregue scripts do PowerShell no Intune para serem executados em dispositivos Windows 10. A extensão de gerenciamento complementa os recursos de gerenciamento de dispositivo móvel (MDM) do Windows 10 e facilita a mudança para o gerenciamento moderno.
@@ -33,7 +33,7 @@ A extensão de gerenciamento do Intune complementa os recursos de MDM internos d
 
 ## <a name="prerequisites"></a>Pré-requisitos
 A extensão de gerenciamento do Intune tem os seguintes pré-requisitos:
-- Os dispositivos devem ser associados ao Azure AD. Isso não inclui dispositivos ingressados no AD Híbrido.
+- Os dispositivos devem ser associados ao Azure AD. A extensão de gerenciamento do Intune dá suporte a dispositivos Windows ingressados no Azure Active Directory, ingressados no Domínio Híbrido e registrados como Cogerenciados.
 - Os dispositivos devem executar o Windows 10, versão 1607 ou posteriores.
 - O registro automático do MDM deve ser [habilitado no Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), e os dispositivos devem ser registrados automaticamente no Intune.
 

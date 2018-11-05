@@ -1,12 +1,12 @@
 ---
 title: Adicionar aplicativos Win32 ao Microsoft Intune
 titlesuffix: ''
-description: Saiba como adicionar e gerenciar aplicativos Win32 ao Microsoft Intune.
+description: Saiba como adicionar, entregar e gerenciar aplicativos do Win32 com o Microsoft Intune. Este tópico apresenta uma visão geral das funcionalidades de gerenciamento e da entrega de aplicativo do Intune Win32, bem como informações de solução de problemas de aplicativo do Win32.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357097"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959580"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autônomo – gerenciamento de aplicativos Win32 (versão prévia pública)
 
-O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplicativos Win32. Embora seja possível que os clientes conectados na nuvem usem o Configuration Manager para gerenciamento de aplicativos Win32, clientes apenas do Intune terão maiores funcionalidades de gerenciamento para seus aplicativos LOB (linha de negócios) Win32. Este documento oferece uma visão geral do recurso de gerenciamento de aplicativos Win32 e informações de solução de problemas do Intune.
+O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplicativos Win32. Embora seja possível que os clientes conectados na nuvem usem o Configuration Manager para gerenciamento de aplicativos Win32, clientes apenas do Intune terão maiores funcionalidades de gerenciamento para seus aplicativos LOB (linha de negócios) Win32. Este tópico apresenta uma visão geral do recurso de gerenciamento de aplicativos Win32 e informações de solução de problemas do Intune.
 
 ## <a name="prerequisites-for-public-preview"></a>Pré-requisitos para versão prévia pública
 

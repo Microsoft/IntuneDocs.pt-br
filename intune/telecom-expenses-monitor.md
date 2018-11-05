@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562894"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959546"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Intune permite que você gerencie as despesas de telecomunicações decorrentes da utilização de dados em dispositivos móveis corporativos. Para permitir este recurso, o Intune integrou-se à solução de gerenciamento de despesas de telecomunicações Datalert da desenvolvedora de software Saaswedo. O Datalert é um software de gerenciamento de despesas de telecomunicações em tempo real que permite gerenciar o uso de dados de telecomunicações. Ele ajuda a evitar excedentes caros e inesperados de dados e roaming para seus dispositivos gerenciados pelo Intune.
+O Intune permite que você gerencie as despesas de telecomunicações decorrentes da utilização de dados em dispositivos móveis corporativos. Para habilitar essa funcionalidade, o Intune integrou a solução de [gerenciamento de despesas de telecomunicações Datalert](http://datalert.biz/get-started) do desenvolvedor de software de terceiros Saaswedo. O Datalert é um software de gerenciamento de despesas de telecomunicações em tempo real que permite gerenciar o uso de dados de telecomunicações. Ele ajuda a evitar excedentes caros e inesperados de dados e roaming para seus dispositivos gerenciados pelo Intune.
 
 A integração do Intune com o Datalert permite definir, monitorar e impor limites de uso de dados de roaming e doméstico centralmente. Alertas automatizados são disparados quando os limites excedem os valores definidos. Você pode configurar o serviço para aplicar diferentes ações a indivíduos ou grupos de usuários finais, incluindo desabilitar roaming ou exceder o limite. Relatórios que fornecem o uso de dados e informações de monitoramento estão disponíveis no console de gerenciamento Datalert.
 
@@ -61,19 +61,31 @@ Antes de começar, verifique se você já possui uma assinatura do Intune e do s
 
 2. No console de gerenciamento Datalert, vá para a guia **Configurações** e, em seguida, **Configuração MDM**.
 
-3. Selecione **Desbloquear** para permitir que você insira as configurações na página.
+3. Selecione **Desbloquear** na parte inferior da página, o que permite que você modifique as configurações na página.
 
-4. Para **Servidor MDM**, escolha **Microsoft Intune**.
+4. Na seção **Conexão do Datalert/Intune**, escolha **Microsoft Intune** para **servidor MDM**.    
 
-5. Para **domínio do Azure AD**, insira sua ID de locatário do Azure e, em seguida, selecione o botão **Conexão**.
+5. Para **Domínio do Azure AD**, insira sua ID de locatário do Azure e, em seguida, selecione o botão **Conexão**.
 
-    Selecionar **Conexão** faz o serviço do Datalert verificar com o Intune se não existem conexões Datalert já existentes com o Intune. Depois de alguns segundos, uma página de logon do Microsoft aparecerá, seguida da autenticação do Datalert Azure.
+    Quando você seleciona **Conexão**, o serviço Datalert verifica com o Intune se não há conexões Datalert preexistentes com o Intune. Depois de alguns segundos, uma página de logon do Microsoft aparecerá, seguida da autenticação do Datalert Azure.
 
-6. Na página de autenticação da Microsoft, selecione **Aceitar**. Você será redirecionado para uma página de agradecimento, que se fecha depois de alguns segundos. O Datalert valida a conexão e exibe marcas de seleção verde ao lado de uma lista de itens validados. Se a validação falhar, você verá uma mensagem em vermelho e deverá contatar o Suporte da Datalert para obter ajuda.
+6. Na página de autenticação da Microsoft, selecione **Aceitar**. Você será redirecionado para uma página de **agradecimento** do Datalert, que se fecha depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de uma lista de itens validados. Se a validação falhar, você verá uma mensagem em vermelho e deverá contatar o Suporte da Datalert para obter ajuda.
 
     A captura de tela a seguir mostra as marcas de seleção verde que você pode esperar encontrar quando a conexão for bem-sucedida.
 
-   ![Página do Datalert mostrando a conexão bem-sucedida](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Página do Datalert mostrando a conexão bem-sucedida](./media/tem-datalert-connection.png)
+
+7. Na seção **Consentimento ADAL/Aplicativo Datalert**, defina a opção como **Ligada**. Na página de autenticação da Microsoft, selecione **Aceitar**. Você será redirecionado para uma página de **agradecimento** do Datalert, que se fecha depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de uma lista de itens validados. Se a validação falhar, você verá uma mensagem em vermelho e deverá contatar o Suporte da Datalert para obter ajuda.    
+
+    A captura de tela a seguir mostra as marcas de seleção verde que você pode esperar encontrar quando a conexão for bem-sucedida.
+
+   ![Página do Datalert mostrando a conexão bem-sucedida](./media/tem-datalert-adal-consent.png)
+
+8. Na seção **Gerenciamento de Perfis de MDM (opcional)** seção, defina a opção como **Ligada** para permitir que o Datalert leia os perfis disponíveis no Intune para ajudá-lo configurar políticas. Na página de autenticação da Microsoft, selecione **Aceitar**. Você será redirecionado para uma página de **agradecimento** do Datalert, que se fecha depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de uma lista de itens validados. Se a validação falhar, você verá uma mensagem em vermelho e deverá contatar o Suporte da Datalert para obter ajuda.    
+
+    A captura de tela a seguir mostra as marcas de seleção verde que você pode esperar encontrar quando a conexão for bem-sucedida.
+
+   ![Página do Datalert mostrando a conexão bem-sucedida](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Etapa 2: verificar se o recurso de gerenciamento de despesas de telecomunicações está ativo no Intune
 

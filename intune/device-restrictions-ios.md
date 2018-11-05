@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329990"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001602"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configurações de restrição de dispositivo iOS do Microsoft Intune
 
@@ -215,8 +215,8 @@ Você também pode clicar em **Importar** para popular a lista de um arquivo csv
 -   **Ingressar em redes Wi-Fi usando apenas perfis de configuração (apenas supervisionado)** – Permitir apenas que o dispositivo ingresse em redes Wi-Fi que foram configuradas com um perfil de Wi-Fi do Intune.
 
 - **Regras de uso de celular (somente aplicativos gerenciados)** – permite que você defina os tipos de dados que os aplicativos gerenciados podem usar quando estão em redes celulares. Escolha:
-    - **Bloquear o uso de dados do celular** – você pode bloquear o uso de dados do celular para **todos os aplicativos gerenciados** ou **Escolher aplicativos específicos**.
-    - **Bloquear o uso de dados do celular quando em roaming** – você pode bloquear o uso de dados do celular quando estiver em roaming para **todos os aplicativos gerenciados** ou **Escolher aplicativos específicos**.
+    - **Bloquear o uso de dados do celular** – você pode bloquear o uso de dados do celular para **Todos os aplicativos gerenciados** ou **Escolher aplicativos específicos**.
+    - **Bloquear o uso de dados do celular quando em roaming** – você pode bloquear o uso de dados do celular quando estiver em roaming para **Todos os aplicativos gerenciados** ou **Escolher aplicativos específicos**.
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 9aac9d7523673d6907bf75bf91e1e9802a381ec2
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905301"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149046"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Como definir configurações de email no Microsoft Intune
 
@@ -67,9 +67,13 @@ Se você desejar atribuir esse perfil aos grupos, consulte [Como atribuir perfis
 
 ## <a name="further-information"></a>Informações adicionais
 
-### <a name="remove-an-email-profile"></a>Remover um perfil de email
+## <a name="remove-an-email-profile"></a>Remover um perfil de email
 
-Se você quiser remover um perfil de email de um dispositivo, edite a atribuição e remova todos os grupos dos quais o dispositivo é membro. Você não poderá remover um perfil de email dessa forma se este for o único perfil de email em um dispositivo.
+Perfis de email são atribuídos a grupos de dispositivos, não a grupos de usuários. Há diferentes maneiras de remover um perfil de email de um dispositivo, mesmo quando há perfil de apenas um email no dispositivo:
+
+- **Opção 1**: abra o perfil de email (**Configuração do dispositivo** > **Perfis**) e escolha **Atribuições**. A guia **Incluir** mostra os grupos que recebem o perfil. Clique com o botão direito do mouse no grupo > **Remover**. Não se esqueça de **Salvar** suas alterações.
+
+- **Opção 2**: [apagar ou desativar o dispositivo](devices-wipe.md). Você pode usar essas ações para remover total ou seletivamente dados e configurações.
 
 ### <a name="securing-email-access"></a>Proteger o acesso ao email
 

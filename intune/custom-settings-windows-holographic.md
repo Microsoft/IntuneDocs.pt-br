@@ -1,11 +1,11 @@
 ---
 title: Configurações personalizadas para dispositivos do Windows Holographic for Business no Microsoft Intune – Azure | Microsoft Docs
-description: Crie um perfil personalizado para usar as configurações de OMA-URI para dispositivos que executam o Windows Holographic for Business no Microsoft Intune. Você pode definir as configurações do CSP (provedor de serviço de configuração) de política AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates e ApplicationLaunchRestrictions.
+description: Adicione ou crie um perfil personalizado para usar as configurações de OMA-URI para dispositivos que executam o Windows Holographic for Business no Microsoft Intune, incluindo Microsoft Hololens. Você pode definir as configurações do CSP (provedor de serviço de configuração) de política AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates e ApplicationLaunchRestrictions.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/26/2018
+ms.date: 10/24/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,39 +13,57 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ba5078d304c0e9d6b10e4efb868642323c901c
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403571"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983152"
 ---
-# <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Configurações de dispositivo personalizadas para dispositivos que executam o Windows Holographic for Business no Intune
+# <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Usar configurações personalizadas para dispositivos do Windows Holographic for Business no Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Usando o Microsoft Intune, você pode adicionar ou criar configurações personalizadas para dispositivos Windows Holographic for Business usando "perfis personalizados". Perfis personalizados são um recurso no Intune. Eles são projetados para adicionar configurações e recursos de dispositivos que não são internos ao Intune.
 
- Use o perfil **personalizado** do Microsoft Intune para Windows Holographic for Business para implantar configurações de OMA-URI (Open Mobile Alliance Uniform Resource Identifier), que podem ser usadas para controlar recursos em dispositivos. O Windows Holographic for Business disponibiliza muitas configurações de CSPs (Provedores de Serviço de Configuração). Para uma visão geral sobre CSP, consulte [Introdução aos CSPs (Provedores de Serviço de Configuração) para profissionais de TI](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers). Para CSPs específicos compatíveis com o Windows Holographic, consulte [CSPs compatíveis com o Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
+Os perfis personalizados do Windows Holographic for Business usam as configurações do OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir os diversos recursos. Essas configurações geralmente são usadas pelos fabricantes de dispositivos móveis para controlar os recursos do dispositivo.
 
-Se você estiver procurando uma configuração específica, lembre-se que o [perfil de restrição de dispositivo do Windows Holographic for Business](device-restrictions-windows-holographic.md) contém várias configurações internas e não necessita que você especifique valores personalizados.
+O Windows Holographic for Business disponibiliza muitas configurações de CSPs (Provedores de Serviço de Configuração). Para uma visão geral sobre CSP, consulte [Introdução aos CSPs (Provedores de Serviço de Configuração) para profissionais de TI](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers). Para CSPs específicos compatíveis com o Windows Holographic, consulte [CSPs compatíveis com o Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
-## <a name="create-the-custom-oma-uri-profile"></a>Criar o perfil personalizado do OMA-URI
+Se você estiver procurando uma configuração específica, lembre-se de que o [perfil de restrição de dispositivo do Windows Holographic for Business](device-restrictions-windows-holographic.md) inclui várias configurações internas. Dessa forma, talvez você não precise inserir valores personalizados.
 
-1. Use as instruções em [Definir configurações personalizadas do dispositivo no Microsoft Intune](custom-settings-configure.md) para começar.
-2. Em **Criar Perfil**, escolha **Configurações** para adicionar uma ou mais configurações OMA-URI.
-3. Em **Configurações personalizadas de OMA-URI**, clique em **Adicionar** para adicionar um novo valor. Você também pode clicar em **Exportar** para criar uma lista de todos os valores configurados em um arquivo de valores separados por vírgulas (.csv).
-4. Para cada configuração de OMA-URI que você desejar adicionar, insira as informações a seguir:
-  - **Nome da configuração**: insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.
-  - **Descrição da configuração**: opcionalmente, insira uma descrição para a configuração.
-  - **Tipo de dados**: escolha dentre:
-    - **Cadeia de caracteres**
-    - **Cadeia de caracteres (XML)**
-    - **Data e hora**
-    - **Inteiro**
-    - **Ponto flutuante**
-    - **Booliano**
-  - **OMA-URI (com diferenciação de maiúsculas e minúsculas)**: insira o OMA-URI para o qual você deseja fornecer uma configuração.
-  - **Valor**: insira o valor que você deseja associar ao OMA-URI inserido.
-5. Quando terminar, volte para **Criar Perfil** e clique em **Criar**. O perfil é criado e exibido na lista de perfis.
+Este artigo mostra como criar um perfil personalizado para dispositivos Windows Holographic for Business. Também inclui uma lista das configurações OMA-URI recomendadas.
+
+## <a name="create-the-profile"></a>Criar o perfil
+
+1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Insira as seguintes configurações:
+
+    - **Nome**: insira um nome para o perfil, como `hololens custom profile`.
+    - **Descrição:** insira uma descrição para o perfil.
+    - **Plataforma**: escolha **Windows 10 e posterior**.
+    - **Tipo de perfil**: escolha **Personalizado**.
+
+4. Em **Configurações personalizadas de OMA-URI**, selecione **Adicionar**. Insira as seguintes configurações:
+
+    - **Nome**: insira um nome exclusivo para a configuração de OMA-URI para ajudar você a identificá-la na lista de configurações.
+    - **Descrição**: insira uma descrição que proporciona uma visão geral da configuração e demais detalhes importantes.
+    - **OMA-URI** (com diferenciação de maiúsculas e minúsculas): insira o OMA-URI que você deseja usar como configuração.
+    - **Tipo de dados**: escolha o tipo de dados que você usará para essa configuração de OMA-URI. Suas opções:
+
+        - Cadeia de caracteres
+        - Cadeia de caracteres (arquivo XML)
+        - Data e hora
+        - Inteiro
+        - Ponto flutuante
+        - Booliano
+        - Base64 (arquivo)
+
+    - **Valor** – insira o valor de dados que você deseja associar ao OMA-URI inserido. O valor depende do tipo de dados selecionado. Por exemplo, se você escolher **Data e hora**, selecione o valor em um seletor de data.
+
+    Depois de adicionar algumas configurações, você pode selecionar **Exportar**. **Exportar** cria uma lista de todos os valores que você adicionou em um arquivo de valores separados por vírgulas (.csv).
+
+5. Selecione **OK** para salvar suas alterações. Continue a adicionar mais configurações conforme necessário.
+6. Quando terminar, escolha **OK** > **Criar** para criar o perfil do Intune. Ao concluir, seu perfil é mostrado na lista **Configuração do dispositivo – Perfis**.
 
 ## <a name="recommended-custom-settings"></a>Configurações personalizadas recomendadas
 
@@ -145,6 +163,12 @@ As configurações a seguir são úteis para dispositivos que executam o Windows
 
 ## <a name="find-the-policies-you-can-configure"></a>Localizar as políticas que você pode configurar
 
-Você pode encontrar uma lista completa de todos os CSPs (Provedores de Serviço de Configuração) compatíveis com o Windows Holographic em [CSPs compatíveis com o Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens). Nem todas as configurações são compatíveis com todas as versões do Windows Holographic. A tabela no artigo do Windows informa quais versões são compatíveis com cada CSP.
+Você pode encontrar uma lista completa de todos os CSPs (Provedores de Serviço de Configuração) compatíveis com o Windows Holographic em [CSPs compatíveis com o Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens). Nem todas as configurações são compatíveis com todas as versões do Windows Holographic. A tabela em [CSPs compatíveis com o Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) lista as versões com suporte para cada CSP.
 
-Além disso, o Intune não é compatível com todas as configurações listadas no artigo. Para saber se o Intune é compatível com a configuração desejada, abra o artigo dessa configuração. Cada página de configuração mostra a operação de suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar** ou **Substituir**.
+Além disso, o Intune não dá suporte a todas as configurações listadas em [CSPs compatíveis com o Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens). Para saber se o Intune é compatível com a configuração desejada, abra o artigo dessa configuração. Cada página de configuração mostra a operação com suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar** ou **Substituir**.
+
+## <a name="next-steps"></a>Próximas etapas
+
+O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md).
+
+Veja como criar um perfil personalizado em [dispositivos Windows 10](custom-settings-windows-10.md).
