@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: 6df3f16940a9478756cc1f268ad98b7c9d3f044e
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168940"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001551"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Usar o dispositivo Android com o Portal da Empresa do Intune
 
@@ -30,9 +30,9 @@ Este artigo lista as tarefas e informações específicas para o Portal da Empre
 
 ## <a name="supported-versions"></a>Versões com suporte
 
-Atualmente, o Portal da Empresa é compatível com Android 4.4 e posterior. Samsung Knox 4.4 e dispositivos posteriores também são compatíveis.
+Atualmente, o Portal da Empresa é compatível com Android 4.4 e posterior. Isso inclui dispositivos Samsung Knox que executam o Android 4.4 e versões posteriores.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrando no Intune e instalando o Portal da Empresa
+## <a name="enrolling-in-intune-and-installing-the-company-portal"></a>Como registrar o Intune e instalar o Portal da Empresa
 
 - [Registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md)
 - [Criar um perfil de trabalho e registrar seu dispositivo no Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
