@@ -107,11 +107,13 @@
 #### [Minha versão do macOS ainda não é compatível](your-macos-version-isnt-yet-supported.md)
 #### [Atualizar seu dispositivo macOS](you-need-to-update-your-macos-device.md)
 #### [Enviar erros do Portal da Empresa](send-errors-macos.md)
+#### [Dispositivo atribuído a outra pessoa](unable-to-get-macOS-device-managed.md)
 #### [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-macos.md)
 #### [Este dispositivo é um pouco diferente](device-little-different-jamf.md)
 #### [Localizar número de série](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Identificar seu dispositivo](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [O limite do dispositivo foi atingido](device-limit-wpj-macos.md)
+#### [Problemas ao gerenciar uma VM macOS](unable-to-get-macOS-device-managed.md) 
 
 ## [Usando seu dispositivo Windows](using-your-windows-device-with-intune.md)
 ### [O que acontece quando você registra um dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
