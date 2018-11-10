@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828101"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236434"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizar email e adicionar ações para dispositivos não compatíveis – Intune
 
@@ -71,7 +71,7 @@ Para enviar email aos seus usuários, crie um modelo de mensagem de notificaçã
 
    ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/actionsfornoncompliance-1.PNG)
 
-4. Quando terminar de adicionar as informações, escolha **Criar**. O Modelo da mensagem de notificação está disponível para ser usado.
+4. Quando terminar de adicionar as informações, escolha **Criar**. O Modelo da mensagem de notificação está disponível para ser usado. Observe que o logotipo que você faz upload como parte da marca do Portal da Empresa será usado para modelos de email. Para obter mais informações sobre identidade visual do Portal da Empresa, confira [Personalização de marcas de identidade da empresa](company-portal-app.md#company-identity-branding-customization).  
 
 > [!NOTE]
 > Você também pode editar um Modelo de notificação criado anteriormente.

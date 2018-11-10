@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321434"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236400"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos macOS do Intune determina as regras e configurações que os dispositivos macOS precisam cumprir para estarem em conformidade. Quando você usa as políticas de conformidade de dispositivo, é possível permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. As políticas de conformidade de dispositivo de cada plataforma podem ser criadas no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -90,6 +88,17 @@ O firewall protege os dispositivos contra o acesso não autorizado à rede. Voc�
 - **Firewall**: **habilite** para ajudar a proteger os dispositivos contra o acesso não autorizado. A habilitação desse recurso permite que você manipule as conexões de entrada com a Internet e use o modo furtivo. A opção **Não configurado** (padrão) deixa o firewall desativado e o tráfego de rede é permitido (não bloqueado).
 - **Conexões de entrada**: **bloqueie** todas as conexões de rede de entrada, exceto as conexões necessárias para serviços básicos da Internet, como DHCP, Bonjour e IPsec. Essa configuração também bloqueia todos os serviços de compartilhamento, incluindo compartilhamento de tela, acesso remoto, compartilhamento de música do iTunes e muito mais. A opção **Não configurado** (padrão) permite conexões de entrada e serviços de compartilhamento. 
 - **Modo Furtivo**: **habilite** o modo furtivo para impedir que o dispositivo responda a solicitações de investigação, que podem ser feitas por usuários mal-intencionados. Quando essa opção está habilitada, o dispositivo continua respondendo a solicitações de entrada de aplicativos autorizados. A opção **Não configurado** (padrão) deixa o modo furtivo desativado.
+
+### <a name="gatekeeper"></a>Gatekeeper
+
+**Permitir aplicativos baixados destes locais**: permite que aplicativos com suporte sejam instalados em seus dispositivos de diferentes locais. Suas opções de localização:
+
+- **Não configurado**: padrão. A opção gatekeepr não tem impacto sobre conformidade ou não conformidade. 
+- **Mac App Store**: instale somente os aplicativos para a Mac App Store. Não é possível instalar aplicativos de terceiros nem de desenvolvedores identificados. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora da Mac App Store, será considerado que o dispositivo não está em conformidade.
+- **Mac App Store e desenvolvedores identificados**: instale aplicativos para a Mac App Store e desenvolvedores identificados. O macOS verifica a identidade dos desenvolvedores e faz algumas outras verificações para determinar a integridade do aplicativo. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora dessas opções, será considerado que o dispositivo não está em conformidade.
+- **Em qualquer lugar**: os aplicativos podem ser instalados em qualquer lugar e por qualquer desenvolvedor. Essa opção é a menos segura.
+
+Para obter mais detalhes na documentação da Apple, confira [Gatekeeper no macOS](https://support.apple.com/HT202491).
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de usuários
 

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229068"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236655"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usar o portal de solução de problemas para ajudar os usuários na sua empresa
 
@@ -96,13 +96,14 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 | Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**. |
+| Instalação do aplicativo | Indica se ocorreu êxito ou falha na instalação de um aplicativo no dispositivo individual. |
 | SO                 | O sistema operacional instalado no dispositivo.                                                                                       |
 | Versão do SO         | O número de versão do sistema operacional do dispositivo.                                                                                  |
 | Último check-in      | O nome do tipo de dispositivo.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Status de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS (Enterprise Mobility Solution). Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
+Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS (Enterprise Mobility Solution). Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Uma política de proteção do aplicativo está disponível para aplicativos mó
 
 ## <a name="app-protection-policies-reference"></a>Referência de políticas de proteção do aplicativo
 
-Uma política de proteção de aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas oferecem uma linha de base de proteção para seus dados corporativos quando ele é baixado em aplicativos móveis, incluindo aplicativos móveis do Office. 
+Uma política de proteção de aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas oferecem uma linha de base de proteção para seus dados corporativos quando ele é baixado em aplicativos móveis, incluindo aplicativos móveis do Office. 
 
 ### <a name="properties"></a>Propriedades
 
@@ -180,7 +181,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 
 ### <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
+Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ Uma política de proteção do aplicativo está disponível para aplicativos mó
 
 ## <a name="configuration-policies-reference"></a>Referência de políticas de configuração
 
-Uma política de configuração de aplicativo está disponível para aplicativos móveis com configurações específicas do fornecedor. 
+Uma política de configuração de aplicativo está disponível para aplicativos móveis com configurações específicas do fornecedor. 
 
 ### <a name="properties"></a>Propriedades
 
@@ -226,7 +227,7 @@ Dispositivos gerenciados pelo Intune ou por usuários gerenciados pelo Intune ou
 
 ### <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
 
-Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
+Uma política de proteção do aplicativo está disponível para aplicativos móveis que se integram a tecnologias EMS. Essas políticas fornecem uma linha de base de proteção para os dados corporativos quando eles são baixados em aplicativos móveis, incluindo os aplicativos móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

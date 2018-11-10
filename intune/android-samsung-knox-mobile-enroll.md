@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: b722dad629006ac3ea12d59e02a87f359f02e485
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028640"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971407"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung
 
@@ -44,7 +44,7 @@ Uma lista de identificadores de dispositivo (números de série e IMEIs) é adic
 Para inscrever no Intune usando KME, primeiro você precisa registrar a sua empresa no Portal do Samsung Knox executando estas etapas:
 1.  [Verifique se o KME está disponível em sua região](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): o KME está disponível em mais de 55 países. Verifique se o seu país de implantação tem suporte.
 
-2.  [Dispositivos com suporte](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): o KME está disponível em todos os dispositivos Samsung com o Knox 2.4, no mínimo.
+2.  [Dispositivos com suporte](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME está disponível em todos os dispositivos Samsung com um mínimo de Knox 2.4 para registro do Android e um mínimo de 2.8 Knox para registro do Android Enterprise.
 
 3.  [Requisitos de rede](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): verifique se as regras de acesso de rede e de firewall necessárias têm permissão em sua rede.
 
@@ -54,7 +54,25 @@ Para inscrever no Intune usando KME, primeiro você precisa registrar a sua empr
 
 ## <a name="create-mdm-profile"></a>Criar um perfil de MDM
 
-Após o registro bem-sucedido da sua empresa, você pode criar seu perfil de MDM para o Microsoft Intune no Portal do Knox usando as informações a seguir. Para obter orientação passo a passo, consulte as instruções no [Assistente de instalação de Perfil do Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm).
+Após o registro bem-sucedido da sua empresa, você pode criar seu perfil de MDM para o Microsoft Intune no portal do Knox usando as informações a seguir. Você pode criar perfis MDM para Android e Android Enterprise no portal do Knox. 
+
+### <a name="for-android-enterprise"></a>Para Android Enterprise
+
+| Campos do perfil de MDM| Necessário? | Valores | 
+|-------------------|-----------|-------| 
+|URI do servidor MDM     | Não        |Deixe em branco. 
+|Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha. 
+|Descrição        | Não        |Insira um texto que descreva o perfil. 
+|APK do Agente MDM      | Sim       |https://aka.ms/intune_kme_deviceowner 
+|Habilitar este aplicativo como um Proprietário do Dispositivo Google | Sim | Escolha esta opção para registrar no Android Enterprise. 
+|MDM com suporte      | Sim       |Microsoft Intune 
+|Deixe todos os aplicativos do sistema habilitados | Não | Escolha esta opção para garantir que todos os aplicativos estejam habilitados e disponíveis para o perfil. Se essa opção não estiver selecionada, somente um conjunto muito limitado de aplicativos do sistema será exibido na bandeja de aplicativos do dispositivo. Aplicativos como de Email permanecem ocultos. 
+|JSON Personalizado        | Não        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Inserir cadeia de caracteres de token de registro do Intune"}. Aprenda [como criar um perfil de registro](android-kiosk-enroll.md). 
+| Adicionar contratos legais | Não | Deixe em branco. 
+
+### <a name="for-android"></a>Para Android
+
+Para obter orientação passo a passo, consulte as instruções no [Assistente de instalação de Perfil do Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm).
 
 | Campos do perfil de MDM| Necessário? | Valores |
 |-------------------|-----------|-------|
@@ -62,10 +80,11 @@ Após o registro bem-sucedido da sua empresa, você pode criar seu perfil de MDM
 |Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha.
 |descrição        | Não        |Insira um texto que descreva o perfil.
 |APK do Agente MDM      | Sim       |https://aka.ms/intune_kme
+|Habilitar este aplicativo como um Proprietário do Dispositivo Google | Não | Deixe essa opção desmarcada para Android. Isso se aplica somente ao Android Enterprise.
 |Ignorar Assistente de Configuração  | Não        |Escolha essa opção para ignorar os avisos de instalação de dispositivo padrão em nome do usuário final.
 |Permitir que o usuário final cancele o registro | Não | Escolha essa opção para permitir que os usuários cancelem o KME.
 |JSON Personalizado        | Não        |Deixe em branco.
-| EULAs, Termos de Serviço e Contratos de Usuário| Não | Escolha essa opção para mostrar contratos relacionados ao Knox para aceitação do usuário.
+| Adicionar contratos legais | Não | Deixe em branco.
 Associar uma licença do Knox a este perfil | Não | Deixe essa opção desmarcada. Não é necessário ter uma licença Knox para se registrar no Intune usando o KME.
 
 ## <a name="add-devices"></a>Adicionar Dispositivos
@@ -80,7 +99,7 @@ Você deve atribuir um perfil de MDM aos dispositivos adicionados no Portal do K
 
 ## <a name="configure-how-end-users-sign-in"></a>Configurar como os usuários finais entram
 
-Para dispositivos inscritos no Intune usando KME, você pode configurar como um usuário final faz logon da seguinte maneira:
+Para dispositivos inscritos no Intune usando KME para Android, você pode configurar como um usuário final faz logon da seguinte maneira:
 
 - **Sem associação de nome de usuário:** no Portal do Knox, em **Detalhes do dispositivo**, deixe os campos **ID de Usuário** e **Senha** em branco para os dispositivos adicionados. Isso exige que o usuário final insira o nome de usuário e a senha ao se inscrever no Intune.
 
@@ -88,7 +107,7 @@ Para dispositivos inscritos no Intune usando KME, você pode configurar como um 
 
 > [!NOTE]
 >
->Quando a associação do usuário é definida, somente o usuário associado pode registrar o dispositivo usando KME. Isso ocorre mesmo após uma redefinição de apagamento do dispositivo. Quando nenhuma associação de usuário for definida no Portal do Knox, qualquer usuário com uma licença válida do Intune poderá registrar o dispositivo usando KME.
+>Associação de usuário só se aplica ao registro do Android. Quando a associação do usuário é definida, somente o usuário associado pode registrar o dispositivo usando KME. Isso é verdadeiro mesmo após uma redefinição de fábrica do dispositivo. Quando nenhuma associação de usuário for definida no portal do Knox, qualquer usuário com uma licença válida do Intune poderá registrar o dispositivo usando KME.
 >
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -98,13 +117,15 @@ Depois de criar e atribuir um perfil de MDM, associar um nome de usuário e iden
 Ainda precisa de ajuda? Confira o [Guia de Usuário completo de Inscrição Móvel do Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm).
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-- **Conta do Google Play:** não é necessário ter uma conta do Google Play para registrar o dispositivo no Microsoft Intune. Porém, atualizações futuras ao aplicativo Portal da Empresa do Intune podem exigir uma conta do Google Play no dispositivo.
 
-- **Modo Proprietário de Dispositivo Google:** não há suporte para a inscrição no modo Proprietário de Dispositivo Google com o KME nesta Versão prévia. Esse cenário está sendo investigado.
+- **Suporte do Proprietário do Dispositivo:** o Intune dá suporte ao registro de dispositivos somente para modo de quiosque usando o Android Enterprise. Outros modos de proprietário do dispositivo Android Enterprise terão suporte conforme ficarem disponíveis no Intune.
 
-- **O campo "Senha" é ignorado:** se o campo **Senha** estiver preenchido em **Detalhes do dispositivo** no Portal do Knox, ele será ignorado pelo aplicativo Portal da Empresa do Intune. O usuário final deve inserir uma senha no dispositivo para concluir o registro.
+- **Redefinição de fábrica para registro no Android Enterprise:** se estiver adaptando dispositivos já configurados, os dispositivos precisarão ser redefinidos aos padrões de fábrica durante o registro para o Android Enterprise.
 
-- **"Registro Enterprise do Android"**: o KME não dá suporte ao Registro Enterprise do Android.
+- **Atualizações usando a conta do Google Play:** não é necessário ter uma conta do Google Play para registrar o dispositivo no Microsoft Intune. Porém, atualizações futuras ao aplicativo Portal da Empresa do Intune podem exigir uma conta do Google Play no dispositivo. A conta do Google Play não é necessária ao registrar-se para o Proprietário de Dispositivo Google.
+
+- **O campo "Senha" é ignorado:** se o campo **Senha** estiver preenchido em **Detalhes do dispositivo** no Portal do Knox, ele será ignorado pelo aplicativo Portal da Empresa do Intune durante o registro do Android. O usuário final deve inserir uma senha no dispositivo para concluir o registro.
+
 
 ## <a name="getting-support"></a>Como obter suporte
 Saiba mais sobre [como obter suporte para o Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).

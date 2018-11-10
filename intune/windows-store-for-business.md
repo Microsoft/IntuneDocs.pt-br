@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494006"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915743"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos adquiridos na Microsoft Store para Empresas com o Microsoft Intune
 
@@ -89,4 +89,15 @@ Ao atribuir um aplicativo da Microsoft Store para Empresas, uma licença é usad
 * Reduza o escopo da atribuição atual para ser voltada apenas para os usuários para os quais você tem licenças suficientes.
 * Comprar mais cópias do aplicativo da Microsoft Store para Empresas.
 
+## <a name="remove-apps"></a>Remover aplicativos
 
+Para remover um aplicativo sincronizado da Microsoft Store para Empresas, faça logon na Microsoft Store para Empresas e reembolse o aplicativo.
+
+![Captura de tela de detalhes da remoção do aplicativo](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> Remover a visibilidade de um aplicativo no armazenamento privado não impedirá o Intune de sincronizá-los. Você deve reembolsar o aplicativo.
+
+## <a name="next-steps"></a>Próximas etapas
+
+- [Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune](vpp-apps.md)

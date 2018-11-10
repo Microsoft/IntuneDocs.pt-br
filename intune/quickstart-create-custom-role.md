@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410762"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido – Criar e atribuir uma função personalizada
 
@@ -47,7 +47,7 @@ Ao criar uma função personalizada, você pode definir as permissões para uma 
 
 Para que seu operador de segurança possa usar as novas permissões, é preciso atribuir a função a um grupo que contém o usuário de segurança.
 
-1. No Intune, escolha **Funções** > **Todas as funções** > **Suporte técnico do dispositivo remoto**.
+1. No Intune, escolha **Funções** > **Todas as funções** > **Operações de segurança**.
 2. Em **Funções do Intune**, escolha **Atribuições** > **Atribuir**.
 3. Na caixa **Nome da atribuição**, digite *Operações seg*.
 4. Escolha **Membro (Grupos)** > **Adicionar**.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313692"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915726"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Configurações de restrições de dispositivo Android e Samsung KNOX Standard – Microsoft Intune
 
@@ -39,7 +39,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Geolocalização (somente Samsung Knox)** – permite que o dispositivo utilize informações de localização.
 - **Desligar (somente Samsung Knox)** – permite que o usuário desligue o dispositivo.<br>Se estiver desabilitada, a opção **Número de falhas de entrada antes de apagar dispositivo** não poderá ser definida.
 - **Captura de tela (somente Samsung Knox)** – permite que o usuário capture o conteúdo da tela como uma imagem.
-- **Assistente de voz (somente Samsung Knox)** – permite usar o software de assistente de voz no dispositivo.
+- **Assistente de voz (somente Samsung Knox)** – permite o uso do serviço S Voice e o aplicativo no dispositivo. Não se aplica ao Bixby nem ao assistente de voz para acessibilidade que lê em voz alta o conteúdo da tela.
 - **YouTube (somente Samsung Knox)** – permite usar o aplicativo do YouTube no dispositivo.
 - **Dispositivos compartilhados (apenas Samsung Knox)** – configure um dispositivo Samsung Knox Standard gerenciado como compartilhado. Nesse modo, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.<br>Quando usado juntamente com um perfil de certificado SCEP, esse recurso permite aos usuários finais compartilhar um dispositivo com o mesmo conjunto de aplicativos para todos os usuários, mas com seu próprio certificado de usuário SCEP.  Quando os usuários saem, todos os dados do aplicativo são removidos.  Esse recurso está limitado a aplicativos LOB apenas.
 - **Bloquear alterações de data e hora (Samsung Knox)** – impeça que o usuário altere as configurações de data e hora no dispositivo. 

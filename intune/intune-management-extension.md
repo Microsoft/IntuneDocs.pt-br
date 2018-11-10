@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af80dd180e8fdbaeb633bdffaad90ccdf02d5380
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959563"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236332"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerenciar scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gerenciamento do Intune permite que você carregue scripts do PowerShell no Intune para serem executados em dispositivos Windows 10. A extensão de gerenciamento complementa os recursos de gerenciamento de dispositivo móvel (MDM) do Windows 10 e facilita a mudança para o gerenciamento moderno.
@@ -56,7 +56,8 @@ A extensão de gerenciamento do Intune tem os seguintes pré-requisitos:
 
 > [!NOTE]
 > - Os scripts do PowerShell não podem ser aplicados a grupos de computadores.
-> - Os scripts do PowerShell são executados em dispositivos somente quando um usuário do Azure AD (Active Directory) está conectado ao dispositivo.
+> - Os usuários finais não precisam fazer logon no dispositivo para executar scripts do PowerShell. 
+> - Scripts do PowerShell no Intune podem ser direcionados para grupos de segurança de dispositivo do AAD.
 
 A extensão de gerenciamento do Intune é sincronizada com o Intune uma vez a cada hora. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell é executado e os resultados da execução são relatados. 
  

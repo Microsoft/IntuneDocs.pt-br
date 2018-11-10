@@ -1,27 +1,10 @@
 ---
-title: Adicionar aplicativos Win32 ao Microsoft Intune
-titlesuffix: ''
-description: Saiba como adicionar, entregar e gerenciar aplicativos do Win32 com o Microsoft Intune. Este tópico apresenta uma visão geral das funcionalidades de gerenciamento e da entrega de aplicativo do Intune Win32, bem como informações de solução de problemas de aplicativo do Win32.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/23/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959580"
+título: adicionar aplicativos do Win32 ao Microsoft Intune titlesuffix: descrição: Saiba como adicionar, entregar e gerenciar aplicativos do Win32 com o Microsoft Intune. Este tópico apresenta uma visão geral das funcionalidades de gerenciamento e da entrega de aplicativo do Intune Win32, bem como informações de solução de problemas de aplicativo do Win32. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autônomo – gerenciamento de aplicativos Win32 (versão prévia pública)
 
 O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplicativos Win32. Embora seja possível que os clientes conectados na nuvem usem o Configuration Manager para gerenciamento de aplicativos Win32, clientes apenas do Intune terão maiores funcionalidades de gerenciamento para seus aplicativos LOB (linha de negócios) Win32. Este tópico apresenta uma visão geral do recurso de gerenciamento de aplicativos Win32 e informações de solução de problemas do Intune.
@@ -32,7 +15,7 @@ O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplica
 - O cliente do Windows 10 precisa ser: 
     - ingressado no AAD (Azure Active Directory) ou Azure Active Directory Híbrido, e
     - registrado no Intune (gerenciado pelo MDM)
-- O tamanho do aplicativo do Windows tem um limite de 2 GB por aplicativo na visualização pública 
+- O tamanho do aplicativo do Windows tem um limite de 8 GB por aplicativo na versão prévia pública 
 
 > [!NOTE]
 > No momento, estamos testando as edições Pro e Educação do Windows 10 versão 1607 e ficaremos felizes em receber seus comentários.
@@ -109,6 +92,11 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 3.  Adicione a linha de comando de desinstalação completa para desinstalar o aplicativo com base no GUID do aplicativo. 
 
     Por exemplo: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > Você pode configurar um aplicativo Win32 a ser instalado no contexto de **Usuário** ou **Sistema**. O contexto de **Usuário** refere-se a somente um determinado usuário. O contexto de **Sistema** refere-se a todos os usuários de um dispositivo Windows 10.
+    >
+    > Os usuários finais não precisam fazer logon dispositivo para instalar aplicativos Win32.
 
 4.  Quando tiver terminado, selecione **OK**.
 
@@ -233,7 +221,6 @@ Os logons do agente no computador cliente estão comumente no `C:\ProgramData\Mi
 ### <a name="troubleshooting-areas-to-consider"></a>Áreas de solução de problemas a serem consideradas
 - Verifique o direcionamento para garantir que o agente seja instalado no dispositivo – o aplicativo Win32 direcionado a um grupo ou o Script do PowerShell direcionado a um grupo criará a política de instalação do agente para o grupo de segurança.
 - Verificar a versão do sistema operacional – Windows 10 1607 e posterior.  
-- O usuário do AAD está conectado no computador cliente?
 - Verifique o SKU do Windows 10 – O Windows 10 S ou versões do Windows em execução com o modo S habilitado não são compatíveis com a instalação do MSI.
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232799"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679246"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quais informações minha empresa poderá ver quando eu registrar meu dispositivo?
 
@@ -50,5 +50,5 @@ Sua empresa não pode ver suas informações pessoais quando você registra um d
 
 -  Número de telefone: para dispositivos de propriedade **corporativa**, o número de telefone completo pode ser visto. Para dispositivos de propriedade **Pessoal**, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua empresa. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página **Detalhes do Dispositivo** desse dispositivo.
 -  Local: sua empresa nunca verá o local de seu dispositivo, exceto se você tiver um dispositivo iOS supervisionado e que foi perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventário de aplicativo: se sua empresa usa a Defesa contra Ameaças Móveis, ela pode exibir mais detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md).
+- Inventário de aplicativo: se a empresa usa a Defesa contra Ameaças Móveis, ela pode exibir mais detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md).
 - Informações de rede: algumas informações sobre conexões de rede para dispositivos Android podem estar disponíveis ao suporte de sua empresa. Por exemplo, se sua empresa precisar que os dispositivos permaneçam dentro de um determinado edifício, seu dispositivo identificaria a rede onde ele está conectado. 

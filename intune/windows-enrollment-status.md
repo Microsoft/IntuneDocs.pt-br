@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827982"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236485"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante a instalação do dispositivo, a página de status do registro exibe informações de instalação no dispositivo. Alguns aplicativos, perfis e certificados podem não estar totalmente instalados no momento em que um usuário é registrado. A página de status pode ajudar os usuários a entender o status do dispositivo durante e após o registro. É possível ativar a página de status para todos os usuários ou criar perfis para direcionar grupos de usuários específicos.  É possível definir os perfis para mostrar o progresso da instalação, bloquear o uso até a conclusão da instalação, permitir redefinições e assim por diante.
+Durante a instalação do dispositivo, a Página de Status do Registro exibe informações de instalação no dispositivo. Alguns aplicativos, perfis e certificados podem não estar instalados no momento em que um usuário conclui a entrada de registro inicial pelo usuário para o dispositivo. Uma página de status de registro pode ajudar os usuários a entender o status do dispositivo durante a configuração do dispositivo. Você pode criar perfis de página de status de vários registros e aplicá-los a grupos diferentes. Os perfis podem ser definidos como:
+- Mostrar progresso da instalação.
+- Bloquear uso até a instalação ser concluída.
+- Especificar o que um usuário pode fazer se a configuração do dispositivo falhar.
+
+Você também pode definir a ordem de prioridade para cada perfil para levar em conta atribuições de perfil conflitantes do mesmo usuário ou dispositivo.
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Ativar a página de status de registro padrão para todos os usuários
 
-Para ativar a página de status de registro para todos os usuários finais, siga as etapas abaixo.
+Para ativar a página de status de registro, siga as etapas abaixo.
  
-1.  No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **página de Status de Registro (Versão Prévia)**.
-2.  Na folha **Página de Status de Registro**, escolha **Padrão** > **Configurações**.
-3.  Para **Mostrar o progresso da instalação do aplicativo e do perfil**, escolha **Sim**.
-4.  Escolha as outras configurações que você deseja ativar e, em seguida, escolha **Salvar**.
+1. No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **página de Status de Registro (Versão Prévia)**.
+2. Na folha **Página de Status de Registro**, escolha **Padrão** > **Configurações**.
+3. Para **Mostrar o progresso da instalação do aplicativo e do perfil**, escolha **Sim**.
+4. Escolha as outras configurações que você deseja ativar e, em seguida, escolha **Salvar**.
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Criar perfil de página de status de registro para direcionar usuários específicos
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Criar perfil da página de status do registro e atribuir a um grupo
 
-1.  No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Página de status de registro (Versão prévia)** > **Criar perfil**.
+1. No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Página de status de registro (Versão prévia)** > **Criar perfil**.
 2. Forneça um **Nome** e uma **Descrição**.
 3. Escolha **Criar**.
 4. Escolha o novo perfil na lista **Página de status de registro**.
 5. Escolha **Atribuições** > **Selecionar grupos** > escolha os grupos para os quais você deseja adotar esse perfil > **Selecionar** > **Salvar**.
 6. Escolha **Configurações** > escolha as configurações que você deseja aplicar a este perfil > **Salvar**.
+
+## <a name="set-the-enrollment-status-page-priority"></a>Definir a prioridade da página de status do registro
+
+Um dispositivo ou usuário pode estar em vários grupos e ter vários perfis de página de status de registro. Para lidar com esses conflitos, você pode definir as prioridades para cada perfil. Se alguém tiver mais de um perfil de página de status de registro, apenas o perfil com a prioridade mais alta será aplicado.
+
+1. No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **página de Status de Registro (Versão Prévia)**.
+2. Focalize o perfil na lista.
+3. Usando os três pontos verticais, arraste o perfil para a posição desejada na lista.
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informações de acompanhamento da página de status do registro
@@ -65,8 +79,9 @@ Para a configuração do dispositivo, a página de status de registro controlar�
     - Aplicativos MSI de LoB (linha de negócios) por computador.
     - Aplicativos de repositório de LoB com contexto de instalação = Dispositivo.
     - Aplicativos de repositório de LoB e repositório offline com contexto de instalação = Dispositivo.
-- Os perfis de conectividade (VPN e Wi-Fi) ainda não são rastreados; portanto, sempre dirão "0 de 0".
-- Os certificados ainda não são rastreados; portanto, sempre dirão "0 de 0".
+- Perfis de conectividade
+    - Perfis de Wi-Fi ou VPN atribuídos a **Todos os Dispositivos** ou um grupo de dispositivos do qual o dispositivo de registro é um membro, mas somente para dispositivos do Autopilot
+- Perfis de certificado atribuídos a **Todos os Dispositivos** ou a um grupo de dispositivos do qual o dispositivo de registro é um membro, mas somente para dispositivos do Autopilot
 
 ### <a name="account-setup"></a>Configuração da conta
 Para a configuração de conta, a página de status de registro rastreia os seguintes itens:

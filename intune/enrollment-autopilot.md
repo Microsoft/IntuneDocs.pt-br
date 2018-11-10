@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075890"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025178"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -26,6 +26,12 @@ O Windows Autopilot simplifica a inscrição de dispositivos. Compilar e manter 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Registro automático no Windows habilitado](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Assinatura do Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)<!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>Como obter o CSV para Importar no Intune
+
+Confira Entender o cmdlet do PowerShell para obter mais informações sobre como usá-lo.
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>Adicionar Dispositivos
 
@@ -153,15 +159,14 @@ Caso não tenha interesse no gerenciamento de dispositivo móvel, é possível u
 - Sincronizar as atribuições de perfil feitas em outro portal
 - Exibir as alterações na lista de dispositivos que foram feitas em outro portal
 
-## <a name="redeploying-windows-autopilot"></a>Reimplantar o Windows Autopilot
+## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot para dispositivos existentes
 
-Você pode agrupar dispositivos Windows por uma ID de correlação ao registrar usando o [Autopilot para dispositivos existentes](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) por meio do Configuration Manager. A ID de correlação é um parâmetro do arquivo de configuração do Autopilot. O [atributo do dispositivo do Azure AD enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) é definido automaticamente para que ele seja igual a "OfflineAutopilotprofile-<correlator ID>". Isso permite que os grupos dinâmicos arbitrários do Azure AD sejam criados com base na ID de correlação usando o atributo enrollmentprofileName para registros offline do Autopilot.
+Você pode agrupar dispositivos Windows por uma ID de correlação ao registrar usando o [Autopilot para dispositivos existentes](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) por meio do Configuration Manager. A ID de correlação é um parâmetro do arquivo de configuração do Autopilot. O [atributo enrollmentProfileName do dispositivo Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) é definido automaticamente para que seja igual a "OfflineAutopilotprofile-\<correlator ID\>". Isso permite que os grupos dinâmicos arbitrários do Azure AD sejam criados com base na ID de correlação usando o atributo enrollmentprofileName.
 
-Se você estiver atualizando versões antigas do Windows que não dão suporte ao registro do Autopilot, poderá usar um perfil offline do Autopilot. O Autopilot pode ajudar durante uma instalação limpa do Windows 10 1809 ou superior. Como parte do perfil offline, você pode especificar uma ID de correlação. 
-
-AVISO: como a ID de correlação não está previamente listada no Intune, os usuários podem optar por registrar qualquer ID de correlação que desejarem. Se o usuário criar uma ID de correlação correspondente a um nome de perfil do Autopilot ou Apple DEP, o dispositivo será adicionado a qualquer grupo de dispositivos dinâmico do Azure AD com base no atributo enrollmentProfileName. Para evitar esse conflito:
-- Sempre crie regras de grupo dinâmico que correspondam com o valor enrollmentProfileName *inteiro*
-- Nunca nomeie perfis do Autopilot ou do Apple DEP começando com "OfflineAutopilotprofile-".
+>[!WARNING] 
+> Porque a ID de correlação não está previamente listada no Intune, o dispositivo pode relatar qualquer ID de correlação que você desejar. Se o usuário criar uma ID de correlação correspondente a um nome de perfil do Autopilot ou Apple DEP, o dispositivo será adicionado a qualquer grupo de dispositivos dinâmico do Azure AD com base no atributo enrollmentProfileName. Para evitar esse conflito:
+> - Sempre crie regras de grupo dinâmico que correspondam com o valor enrollmentProfileName *inteiro*
+> - Nunca nomeie perfis do Autopilot ou do Apple DEP começando com "OfflineAutopilotprofile-".
 
 ## <a name="next-steps"></a>Próximas etapas
 Após configurar o Windows Autopilot para dispositivos Windows 10 registrados, saiba como gerenciar esses dispositivos. Para saber mais, confira [O que é gerenciamento de dispositivos do Microsoft Intune?](https://docs.microsoft.com/intune/device-management)

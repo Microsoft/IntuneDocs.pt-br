@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 359f423e7b1bd098136670db1d43b2ddec6031a3
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679314"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivo para dispositivos Windows no Intune
 
@@ -168,6 +168,9 @@ Confira [CSP do atestado de integridade](https://docs.microsoft.com/windows/clie
 #### <a name="encryption"></a>Criptografia
 
 - **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
+
+  > [!NOTE]
+  > A configuração **Criptografia de armazenamento de dados em um dispositivo** verifica genericamente a presença de criptografia no dispositivo. Para uma configuração de criptografia mais robusta, considere usar **Requer BitLocker**, que aproveita o Atestado de Integridade de Dispositivo do Windows para validar o status do BitLocker no nível do TPM.
 
 #### <a name="device-security"></a>Segurança de dispositivo
 

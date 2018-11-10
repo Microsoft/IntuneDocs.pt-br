@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075839"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025161"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -94,7 +94,7 @@ Para saber mais sobre essa seção, veja [Gerenciar aplicativos](app-management.
 - **Licenças de aplicativo**: exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte:
     - [Aplicativos do VPP (volume-purchased program) do iOS](vpp-apps-ios.md).
     - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicativos Descobertos**: exibe todos os aplicativos que foram atribuídos pelo Intune e instalados em um dispositivo. Para saber mais, confira [Como monitorar atribuições e informações de aplicativo com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **Aplicativos Descobertos**: exiba todos os aplicativos atribuídos pelo Intune ou instalados em um dispositivo. Para obter mais informações, confira [Exibir detalhes do dispositivo com o Microsoft Intune](device-inventory.md).
 - **Status de instalação do aplicativo**: exibe o status de uma atribuição de aplicativo que você criou. Para saber mais, confira [Como monitorar atribuições e informações de aplicativo com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **Status de proteção do aplicativo**: exibe o status de uma política de proteção de aplicativo para um usuário selecionado.
 - **Logs de auditoria**: exibe a atividade relacionada ao aplicativo do Intune de todos os administradores de TI.

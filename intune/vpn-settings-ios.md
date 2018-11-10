@@ -1,38 +1,36 @@
 ---
-title: Configurações VPN para dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
-description: Exiba as definições de configuração de VPN (rede virtual privada) disponíveis, incluindo detalhes de conexão, métodos de autenticação e túnel dividido nas configurações de base; as configurações personalizadas de VPN com o identificador e os pares de chave e valor; as configurações de VPN por aplicativo que incluem URLs Safari e VPNs sob demanda com domínios de pesquisa SSIDs ou DNS; e as configurações de proxy para incluir um script de configuração, endereço IP ou FQDN e porta TCP no Microsoft Intune em dispositivos que executam o iOS.
+title: Adicionar configurações de VPN a dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
+description: Adicione ou crie um perfil de configuração de VPN usando definições de configuração de VPN (rede virtual privada), incluindo detalhes de conexão, métodos de autenticação e túnel dividido nas configurações de base; as configurações personalizadas de VPN com o identificador e os pares chave-valor; as configurações de VPN por aplicativo que incluem URLs Safari e VPNs sob demanda com domínios de pesquisa SSIDs ou DNS; e as configurações de proxy para incluir um script de configuração, endereço IP ou FQDN e porta TCP no Microsoft Intune em dispositivos que executam o iOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: deb6a230573ff20237e6eee386052baba472832a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313863"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236502"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Definir as configurações de VPN no Microsoft Intune para dispositivos que executam o iOS
+# <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Definir configurações de VPN em dispositivos iOS no Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Este artigo mostra as configurações do Intune que você pode usar para configurar conexões VPN em dispositivos que executam iOS.
-
-Dependendo das configurações que você escolher, nem todos os valores na lista a seguir serão configuráveis.
+O Microsoft Intune inclui várias configurações de VPN que podem ser implantadas em dispositivos iOS. Essas configurações são usadas para criar e configurar conexões VPN à rede da sua organização. Este artigo descreve essas configurações. Algumas configurações só estão disponíveis para alguns clientes VPN, como Citrix, Zscaler e outros.
 
 ## <a name="base-vpn-settings"></a>Configurações de VPN de base
-As configurações reais exibidas na lista a seguir são determinadas pelo tipo de conexão VPN selecionado.  
+
+As configurações mostradas na lista a seguir são determinadas pelo tipo de conexão de VPN escolhido.  
+
 - **Nome da conexão**: os usuários finais verão esse nome ao procurarem no dispositivo uma lista de conexões VPN disponíveis.
-- **Nome de domínio personalizado** (somente Zscaler): preencha previamente o campo de entrada do aplicativo Zscaler com o domínio ao qual seus usuários pertencerem. Por exemplo, se um nome de usuário for **Joe@contoso.net**, o domínio **contoso.net** será exibido estaticamente no campo quando o aplicativo for aberto. Se você não digitar um nome de domínio, será usada a parte de domínio do UPN no Azure Active Directory.
-- **Endereço IP ou FQDN**: o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN ao qual os dispositivos se conectam. Por exemplo, insira **192.168.1.1** ou **vpn.contoso.com**. 
-- **Nome da nuvem da organização** (Zscaler): digite o nome da nuvem em que sua organização está provisionada. Examine a URL usada para entrar no Zscaler para localizar o nome.  
+- **Nome de domínio personalizado** (somente Zscaler): preencha previamente o campo de entrada do aplicativo Zscaler com o domínio ao qual seus usuários pertencerem. Por exemplo, se for um nome de usuário `Joe@contoso.net`, o domínio `contoso.net` aparecerá estaticamente no campo quando o aplicativo for aberto. Se você não inserir um nome de domínio, a parte do domínio do UPN no Azure AD (Active Directory) será usada.
+- **Endereço IP ou FQDN**: o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN ao qual os dispositivos se conectam. Por exemplo, insira `192.168.1.1` ou `vpn.contoso.com`.
+- **Nome da nuvem da organização** (somente Zscaler): insira o nome da nuvem em que sua organização está provisionada. A URL usada para entrar no Zscaler tem o nome.  
 - **Método de autenticação**: escolha como os dispositivos se autenticam no servidor VPN. 
   - **Certificados**: em **Certificado de autenticação**, selecione um perfil de certificado SCEP ou PKCS existente para autenticar a conexão. [Configurar certificados](certificates-configure.md) apresenta algumas diretrizes sobre perfis de certificado.
   - **Nome de usuário e senha**: os usuários finais deverão fornecer um nome de usuário e uma senha para entrar no servidor VPN.  
@@ -53,34 +51,42 @@ As configurações reais exibidas na lista a seguir são determinadas pelo tipo 
   - **Cisco (IPsec)**
   - **Citrix VPN**
   - **SSO da Citrix**
-  - **Zscaler**: exige que você integre o ZPA (Zscaler Private Access) à sua conta do Azure Active Directory. Para obter etapas detalhadas, confira a [Documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+  - **Zscaler**: exige que você integre o ZPA (Zscaler Private Access) à sua conta do Azure AD. Para obter etapas detalhadas, confira a [Documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
   - **VPN personalizado**    
 
     > [!NOTE]
-    > A Cisco, a Citrix, a F5 e a Palo Alto anunciaram que seus clientes herdados não funcionarão mais na próxima versão do iOS 12. Você deve migrar para os novos aplicativos o quanto antes. Para obter mais informações, confira o [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409) (Blog da equipe de suporte do Microsoft Intune).
+    > Cisco, Citrix, F5 e Palo Alto anunciaram que seus clientes herdados não funcionam no iOS 12. Você deve migrar para os novos aplicativos o quanto antes. Para obter mais informações, confira o [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409) (Blog da equipe de suporte do Microsoft Intune).
 
 * **URLs excluídas** (somente Zscaler): quando conectadas à VPN do Zscaler, as URLs listadas podem ser acessadas de fora da nuvem do Zscaler. 
 
-- **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.   
+- **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.
+
+- **Habilitar NAC (controle de acesso à rede)**: essa configuração é um espaço reservado para clientes VPN, como Citrix, para permitir que uma ID de dispositivo esteja no perfil de VPN para uso com o NAC (controle de acesso à rede). Quando você escolhe **Eu concordo**, essa ID do dispositivo é incluída no perfil de VPN. Atualmente, não existem clientes VPN nem soluções de parceiro NAC que deem suporte a essa nova ID, portanto, os dispositivos terão permissão para se conectar à VPN independentemente do status de conformidade. Atualizaremos este documento quando nossos parceiros adicionarem suporte para a ID.
+
+  Detalhes importantes:  
+
+  - Quando essa configuração estiver habilitada, a VPN será desconectada a cada 24 horas.
+  - A ID do dispositivo faz parte do perfil, mas não pode ser vista no Intune nem no perfil. Essa ID não é armazenada em nenhum lugar pela Microsoft e não é compartilhada pela Microsoft. Depois que isso tiver suporte dos parceiros VPN, o cliente VPN, como SSO Citrix, poderá obter a ID e consultar o Intune para confirmar se o dispositivo está registrado e se o perfil de VPN está ou não em conformidade.
+  - Para remover essa configuração, recrie o perfil e não selecione **Eu concordo**. Em seguida, reatribua o perfil.
 
 ## <a name="custom-vpn-settings"></a>Configurações de VPN personalizado
 
 Se você tiver selecionado **VPN Personalizada** como o tipo de conexão, defina as configurações a seguir. Essas configurações também são visíveis para conexões do Zscaler e do Citrix.
 
 - **Identificador de VPN**: um identificador para o aplicativo VPN que você está usando, fornecido pelo seu provedor de VPN.
-- **Inserir pares chave-valor para os atributos de VPN personalizados**: adicione ou importe as **Chaves** e os **Valores** que personalizam sua conexão VPN. Novamente, esses valores geralmente são fornecidos pelo seu provedor de VPN.
+- **Inserir pares chave-valor para os atributos de VPN personalizados**: adicione ou importe as **Chaves** e os **Valores** que personalizam sua conexão VPN. Lembre-se de que esses valores geralmente são fornecidos pelo seu provedor de VPN.
 
 ## <a name="automatic-vpn-settings"></a>Configurações automáticas de VPN
 
-- **VPN por aplicativo**: escolher essa opção habilita a VPN por aplicativo, autorizando a conexão VPN a ser disparada de forma automática quando determinados aplicativos são abertos. Além de escolher essa opção, você também precisará associar os aplicativos a este perfil VPN. Veja mais detalhes nas [instruções para configurar a VPN por aplicativo para iOS](vpn-setting-configure-per-app.md). 
-  - A configuração **Tipo de Provedor** só está disponível para Pulse Secure e VPN personalizada.
-  - Ao usar um perfil **VPN para cada aplicativo** iOS com o Pulse Secure ou com uma VPN personalizada, você pode optar por usar o túnel de camada de aplicativo (proxy de aplicativo) ou o túnel no nível do pacote (túnel de pacote). Defina o valor de **ProviderType** para **proxy de aplicativo** para o túnel de camada de aplicativo ou **túnel de pacote** para o túnel de camada de pacote. Se você não tiver certeza de qual valor usar, confira a documentação do seu provedor de VPN. 
-  - **URLs do Safari que dispararão esta VPN**: selecione para adicionar uma ou mais URLs de site. Quando essas URLs forem acessadas usando o navegador Safari no dispositivo, a conexão VPN será estabelecida automaticamente.
+- **VPN por aplicativo**: habilita a VPN por aplicativo. Permite que a conexão VPN sejam disparadas automaticamente quando determinados aplicativos são abertos. Também associe os aplicativos a esse perfil de VPN. Para obter mais informações, confira [instruções para configurar a VPN por aplicativo para iOS](vpn-setting-configure-per-app.md).
+  - **Tipo de Provedor**: disponível somente para Pulse Secure e VPN Personalizada.
+  - Ao usar um perfil **VPN para cada aplicativo** iOS com o Pulse Secure ou com uma VPN personalizada, opte por usar o túnel de camada de aplicativo (proxy de aplicativo) ou o túnel no nível do pacote (túnel de pacote). Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Se você não tiver certeza de qual valor usar, verifique a documentação do seu provedor VPN.
+  - **URLs do Safari que dispararão esta VPN**: adicione uma ou mais URLs de site. Quando essas URLs forem acessadas usando o navegador Safari no dispositivo, a conexão VPN será estabelecida automaticamente.
 
-- **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição em que, se um dispositivo não puder acessar um domínio de pesquisa DNS especificado, a conexão VPN não será iniciada.
+- **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição em que, se um dispositivo não puder acessar um domínio de pesquisa DNS inserido, a conexão VPN não será iniciada.
 
   - **Domínios de pesquisa de DNS ou SSIDs**: selecione se essa condição usa **SSIDs** de rede sem fio ou **domínios de pesquisa de DNS**. Escolha **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
-  - **Investigação de cadeia de caracteres de URL**: opcional. Insira uma URL que a regra use como teste. Se o dispositivo no qual o perfil estiver instalado puder acessar essa URL sem redirecionamento, a conexão VPN será iniciada e o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
+  - **Investigação de cadeia de caracteres de URL**: opcional. Insira uma URL que a regra use como teste. Se o dispositivo com esse perfil acessar essa URL sem redirecionamento, a conexão VPN será iniciada. E o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
   - **Ação de domínio**: escolha um dos seguintes itens:
     - Conectar se necessário
     - Nunca conectar
@@ -91,9 +97,10 @@ Se você tiver selecionado **VPN Personalizada** como o tipo de conexão, defina
     - Desconectar
 
 ## <a name="proxy-settings"></a>Configurações de proxy
+
 Se você estiver usando um proxy, defina as seguintes configurações. As configurações de proxy não estão disponíveis para conexões VPN do Zscaler.  
 
-- **Script de configuração automática**: use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o arquivo de configuração.
+- **Script de configuração automática**: use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo, `http://proxy.contoso.com`) que inclui o arquivo de configuração.
 - **Endereço**: insira o endereço IP do nome do host totalmente qualificado do servidor proxy.
 - **Número da porta**: insira o número da porta associada ao servidor proxy.
 

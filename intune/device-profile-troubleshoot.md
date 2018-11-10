@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312942"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679297"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comuns e resoluções com perfis de dispositivo no Microsoft Intune
 
@@ -130,9 +130,9 @@ Quando você exclui um perfil ou remove um dispositivo de um grupo que tenha o p
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivo, mas as alterações não entraram em vigor
 Os dispositivos Windows Phone não permitem que as políticas de segurança definidas com uso de MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define uma **Senha com um número mínimo de caracteres** igual a 8 e tenta reduzi-la a 4. O perfil mais restritivo já foi aplicado ao dispositivo.
 
-Dependendo da plataforma do dispositivo, se você quiser alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, no Windows, na área de trabalho, passe o dedo da direita para a esquerda e selecione **Configurações** > **Painel de Controle**. Selecione o miniaplicativo **Contas de Usuário**.
+Se você quiser alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, no Windows 8.1, na área de trabalho, passe o dedo da direita para a esquerda e selecione **Configurações** > **Painel de Controle**. Selecione o miniaplicativo **Contas de Usuário**. No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** (em direção à parte inferior). Selecione-o e, em seguida, escolha **Redefinir Políticas**.
 
-No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** (em direção à parte inferior). Selecione-o e, em seguida, escolha **Redefinir Políticas**. Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior e iOS, precisarão ser desativados e registrados novamente no serviço para aplicar um perfil menos restritivo.
+Outros dispositivos MDM, como Android, Windows Phone 8.1 e posteriores, iOS e Windows 10, precisarão ser desativados e registrados novamente no serviço para aplicar um perfil menos restritivo.
 
 ## <a name="next-steps"></a>Próximas etapas
 Precisa de mais ajuda? Veja [Como obter suporte para o Microsoft Intune](get-support.md).
