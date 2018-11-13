@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbf02fc9633cca5059a6c58c3ef021f05469be60
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 43ca9d165bd44684a23f7e82eaed04f833b30449
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075586"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212335"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do iOS ao Microsoft Intune
 
@@ -55,7 +55,6 @@ Use as informações deste artigo para ajudar a adicionar aplicativos de uma lin
     - **Descrição**: insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
     - **Editor**: insira o nome do editor do aplicativo.
     - **Sistema operacional mínimo**: na lista, escolha a versão mínima do sistema operacional em que o aplicativo pode ser instalado. Se você atribuir o aplicativo a um dispositivo com um sistema operacional mais antigo, ele não será instalado.
-    - **Ignorar versão do aplicativo**: defina como **Sim** se o aplicativo for atualizado automaticamente pelo desenvolvedor do aplicativo.
     - **Categoria**: selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
     - **Exibir como um aplicativo em destaque no Portal da Empresa**: exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
     - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.

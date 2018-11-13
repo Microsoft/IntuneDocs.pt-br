@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e86db15fb4c69b57a1dc572d5a7e4f06eee3b760
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: ff63e3cdf670156c66c156e3defe6d67e7c04044
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602105"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212352"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Windows Phone ao Microsoft Intune
 
@@ -51,7 +51,6 @@ Use as informações deste artigo para adicionar um aplicativo de linha de negó
     - **Nome**: insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido no portal da empresa.
     - **Descrição**: insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
     - **Editor**: insira o nome do editor do aplicativo.
-    - **Ignorar versão do aplicativo**: defina como **Sim** se o aplicativo for atualizado automaticamente pelo desenvolvedor do aplicativo.
     - **Categoria**: selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
     - **Exibir como um aplicativo em destaque no Portal da Empresa**: exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
     - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.

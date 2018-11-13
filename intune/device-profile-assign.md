@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024797"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298064"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de usuário e dispositivo no Microsoft Intune
 
@@ -48,9 +48,6 @@ Por exemplo, digamos que você deseja atribuir um perfil de dispositivo para tod
 A exclusão somente considera os membros diretos dos grupos e não inclui os dispositivos que estão associados a um usuário. Entretanto, dispositivos que não têm um usuário não recebem a política. Isso ocorre porque esses dispositivos não têm nenhuma relação com o grupo **Todos os Usuários**.
 
 Se você incluir **Todos os Dispositivos** e excluir **Todos os Usuários**, todos os dispositivos receberão a política. Nesse cenário a intenção é excluir dessa política os dispositivos que têm um usuário associado. No entanto, isso não exclui os dispositivos pois a exclusão compara apenas os membros diretos do grupo.
-
->[!TIP]
->As exclusões não estão disponíveis para políticas de conformidade ou atribuição de aplicativo. Para excluir membros de uma atribuição, é possível usar as atribuições **Disponível** e **Não aplicável**. Por exemplo, você atribui um aplicativo a **Todos os usuários corporativos** com a designação **Disponível** e atribui o aplicativo à **Equipe de Gerenciamento Sênior** com a designação **Não aplicável**. O aplicativo é atribuído a todos os usuários, *exceto* aos usuários do grupo **Equipe de Gerenciamento Sênior**. Se você atribuir o aplicativo a **Todos os usuários corporativos** com a designação **Necessário**, os usuários do grupo **Equipe de Gerenciamento Sênior** também serão incluídos.
 
 ## <a name="next-steps"></a>Próximas etapas
 Consulte [Como monitorar perfis de dispositivo](device-profile-monitor.md) para diretrizes sobre monitoramento das atribuições de perfil de dispositivo.

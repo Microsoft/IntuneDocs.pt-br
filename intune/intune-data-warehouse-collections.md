@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: e54b35d677d34067bfbd0ad6aad86e3dfe17fb90
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971475"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225944"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
 
@@ -165,7 +165,7 @@ A entidade **DeviceConfigurationProfileDeviceActivity** lista o número de dispo
 | Failed (Falha)    | Número de dispositivos exclusivos no estado de falha.                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
-A entidade  **DeviceConfigurationProfileUserActivity**  lista o número de usuários com o estado de êxito, pendente, com falha ou de erro por dia. O número reflete os perfis de configuração do Dispositivo atribuídos à entidade. Por exemplo, se um usuário estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador com êxito em um para esse dia. Se um usuário tiver dois perfis atribuídos a ele, um no estado de êxito e o outro em um estado de erro, o usuário no estado de erro será contado. A entidade  **DeviceConfigurationProfileUserActivity**  lista quantos usuários estão em qual estado em determinado dia nos últimos 30 dias. 
+A entidade **DeviceConfigurationProfileUserActivity** lista o número de usuários com o estado de êxito, pendente, com falha ou de erro por dia. O número reflete os perfis de configuração do Dispositivo atribuídos à entidade. Por exemplo, se um usuário estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador com êxito em um para esse dia. Se um usuário tiver dois perfis atribuídos a ele, um no estado de êxito e o outro em um estado de erro, o usuário no estado de erro será contado. A entidade **DeviceConfigurationProfileUserActivity** lista quantos usuários estão em qual estado em um determinado dia nos últimos 30 dias. 
 
 | Propriedade  | Descrição  | Exemplo  |
 |------------|----------------------------------------------------------------------------------------------|-----------|
