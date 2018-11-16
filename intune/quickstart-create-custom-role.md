@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410762"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561917"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido – Criar e atribuir uma função personalizada
 
@@ -64,7 +64,9 @@ Se você não quiser mais usar a nova função personalizada, poderá excluí-la
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste início rápido, você criou uma função de operações de segurança personalizada e a atribuiu a um grupo. Saiba mais sobre os problemas de segurança no artigo a seguir.
+Neste início rápido, você criou uma função de operações de segurança personalizada e a atribuiu a um grupo. Para obter mais informações sobre funções no Intune, confira [RBAC (controle de administração baseado em funções) com o Microsoft Intune](role-based-access-control.md)
+
+Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md)
+> [Início Rápido: criar um perfil de dispositivo de email para iOS](quickstart-email-profile.md)

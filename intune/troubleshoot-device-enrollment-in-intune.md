@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237656"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511019"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
 
@@ -392,6 +392,28 @@ Depois de corrigir os problemas do token de VPP, será preciso apagar os disposi
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Instrua os usuários a reiniciarem o processo de registro
 Depois que você tiver apagado os dispositivos bloqueados, instrua os usuários a reiniciar o processo de registro.
 
+## <a name="macos-issues"></a>Problemas do macOS
+
+### <a name="macos-enrollment-errors"></a>Erros de registro do macOS
+**Mensagem de erro 1**: *Parece que você está usando uma máquina virtual. Verifique se você configurou totalmente a máquina virtual, incluindo o número de série e o modelo de hardware. Se ela não for uma máquina virtual, contate o suporte.*  
+
+**Mensagem de erro 2**: *Estamos com dificuldades para gerenciar seu dispositivo. Esse problema poderá ser causado se você estiver usando uma máquina virtual, tiver um número de série restrito ou se esse dispositivo já estiver atribuído a outra pessoa. Saiba como resolver esses problemas ou entre em contato com o suporte da sua empresa.*
+
+**Problema:** essa mensagem pode ser resultado de qualquer um dos seguintes motivos:  
+* Uma VM (máquina virtual) macOS não está configurada corretamente  
+* Você habilitou as restrições de dispositivo que exigem que o dispositivo seja de propriedade corporativa ou tenha um número de série registrado no Intune  
+* O dispositivo já foi registrado e ainda está atribuído a outra pessoa no Intune  
+
+**Resolução:** primeiro, verifique com seu usuário para determinar qual dos problemas afeta o dispositivo. Em seguida, conclua as seguintes soluções mais relevantes:
+* Se o usuário estiver registrando uma VM para teste, verifique se ela está totalmente configurada para que o Intune possa reconhecer seu número de série e modelo de hardware. Saiba mais sobre como [configurar VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) no Intune.  
+* Se a organização tiver ativado restrições de registro que bloqueiam dispositivos macOS pessoais, você precisará [adicionar manualmente o número de série do dispositivo](corporate-identifiers-add.md#manually-enter-corporate-identifiers) ao Intune.  
+* Se o dispositivo ainda estiver atribuído a outro usuário no Intune, seu proprietário antigo não usou o aplicativo de Portal da Empresa para removê-lo ou redefini-lo. Para limpar o registro de dispositivo obsoleto do Intune:  
+
+    1. Acesse o [Intune no portal do Azure](https://portal.manage.microsoft.com) e entre com suas credenciais administrativas.
+    2. Acesse Intune > **Dispositivos** > **Todos os dispositivos**.  
+    3. Localize o dispositivo com o problema de registro. Pesquise por nome do dispositivo ou endereço MAC/de hardware para restringir os resultados.
+    4. Selecione o dispositivo > **Excluir**. Exclua todas as outras entradas associadas ao dispositivo.  
+
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas ao usar o System Center Configuration Manager com o Intune
 ### <a name="mobile-devices-disappear"></a>Dispositivos móveis desaparecem
 **Problema:** após registrar com êxito um dispositivo móvel no Configuration Manager, ele desaparece da coleção de dispositivos móveis. No entanto, o dispositivo ainda tem o Perfil de Gerenciamento e está listado no Gateway de CSS.
@@ -457,7 +479,7 @@ O certificado de conta da conta anterior ainda está presente no computador.
 |0x80CF0437 |O relógio no computador cliente não está definido com a hora correta.|Verifique se o relógio e o fuso horário do computador cliente estão definidos para a hora e o fuso horário corretos.|
 |0x80240438, 0x80CF0438, 0x80CF402C|não é possível se conectar ao serviço do Intune. Verifique as configurações de proxy do cliente.|Verifique se o Intune é compatível com a configuração de proxy no computador cliente. Confirme se o computador cliente tem acesso à Internet.|
 |0x80240438, 0x80CF0438|As configurações de proxy no Internet Explorer e no Sistema Local não estão definidas.|não é possível se conectar ao serviço do Intune. Verifique as configurações de proxy do cliente. Confirme se o Intune é compatível com a configuração de proxy no computador cliente. Confirme se o computador cliente tem acesso à Internet.|
-|0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|O pacote de inscrição está desatualizado.|Baixe e instale o pacote do software cliente atual no espaço de trabalho Administração.|
+|0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|O pacote de inscrição está desatualizado.|Baixe e instale o pacote do software cliente atual no workspace Administração.|
 |0x80043002, 0x80CF3002|A conta está no modo de manutenção.|Não é possível registrar novos computadores cliente quando a conta está no modo de manutenção. Para exibir suas configurações de conta, entre na sua conta.|
 |0x80043003, 0x80CF3003|A conta está excluída.|Verifique se sua conta e assinatura do Intune continuam ativas. Para exibir suas configurações de conta, entre na sua conta.|
 |0x80043005, 0x80CF3005|O computador cliente foi desativado.|Aguarde algumas horas, remova do computador as versões mais antigas do software cliente e tente instalar novamente o software cliente.|

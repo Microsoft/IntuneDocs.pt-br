@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231943"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225740"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início Rápido: criar um perfil de dispositivo de email para iOS
 
@@ -69,7 +69,7 @@ Se você não pretende usar o perfil criado para tutoriais adicionais ou de test
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste início rápido, você criou um perfil de email para dispositivos iOS. Agora você poderá usar esse perfil para determinar se um dispositivo iOS está em conformidade criando uma política de conformidade que marca como não compatível todos os dispositivos iOS que não corresponderem ao perfil. Para aumentar ainda mais a proteção, é possível criar uma política de acesso condicional que impede dispositivos iOS não compatíveis de acessar o email.
+Neste início rápido, você criou um perfil de email para dispositivos iOS. Agora você poderá usar esse perfil para determinar se um dispositivo iOS está em conformidade criando uma política de conformidade que marca como não compatível todos os dispositivos iOS que não corresponderem ao perfil. Para aumentar ainda mais a proteção, é possível criar uma política de acesso condicional que impede dispositivos iOS não compatíveis de acessar o email. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Introdução às políticas de conformidade do dispositivo no Intune](device-compliance-get-started.md)
+> [Tutorial: proteger o email do Exchange Online em dispositivos gerenciados](tutorial-protect-email-on-enrolled-devices.md)

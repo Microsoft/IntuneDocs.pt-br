@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132462"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576997"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -46,7 +46,7 @@ Android Enterprise (anteriormente conhecido como Android for Work) é compatíve
 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportar todos os dispositivos para arquivos CSV no IE, no Microsoft Edge ou no Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>Exportar todos os dispositivos para arquivos CSV no IE, no Microsoft Edge ou no Chrome <!-- 2258071 -->
 Em **Dispositivos** > **Todos os Dispositivos**, você pode **Exportar** os dispositivos para uma lista formatada em CSV. Os usuários do IE (Internet Explorer) com >10.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 10.000 dispositivos.
 
 Os usuários do Edge e do Chrome com > 30.000 dispositivos podem exportar com êxito seus dispositivos para vários arquivos. Cada arquivo tem até 30.000 dispositivos.
@@ -296,8 +296,8 @@ Agora [duas novas configurações de privacidade](device-restrictions-windows-10
 - **Publicar as atividades do usuário**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas.
 - **Apenas atividades locais**: defina como **Bloquear** para evitar experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas com base somente em atividades locais.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Novas configurações para o navegador Microsoft Edge <!--1469166 -->
-Agora há [duas novas configurações](device-restrictions-windows-10.md#edge-browser) disponíveis para dispositivos com o navegador Microsoft Edge: **Caminho para o arquivo de favoritos** e **Alterações aos Favoritos**.
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Novas configurações para o navegador Microsoft Edge <!--1469166 -->
+Agora há [duas novas configurações](device-restrictions-windows-10.md#microsoft-edge-browser) disponíveis para dispositivos com o navegador Microsoft Edge: **Caminho para o arquivo de favoritos** e **Alterações aos Favoritos**.
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -1267,7 +1267,7 @@ Nesta versão, adicionamos novas configurações para o perfil de restrição de
 -  Privacidade
 -  Pesquisar
 -  Destaque do Windows
--  Navegador de borda
+-  Navegador Microsoft Edge
 
 Para obter mais informações sobre as configurações do Windows 10, consulte [Configurações de restrição de dispositivo do Windows 10 e posterior](device-restrictions-windows-10.md).
 

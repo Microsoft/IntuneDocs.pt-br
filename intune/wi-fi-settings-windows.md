@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236468"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298149"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar configurações de Wi-Fi para dispositivos Windows 10 e posterior no Intune
 
@@ -57,6 +57,9 @@ Este artigo descreve essas configurações.
   - **WPA/WPA2-Personal**: uma opção mais segura e normalmente usada para conectividade de Wi-Fi. Para obter mais segurança, você também pode inserir uma chave de rede ou senha de chave pré-compartilhada. 
 
     - **Chave pré-compartilhada** (PSK): opcional. Mostrada quando você escolhe **WPA2/WPA-Personal** como o tipo de segurança. Quando a rede da sua organização é definida ou configurada, uma senha ou chave de rede também é configurada. Insira essa senha ou chave de rede para o valor PSK. Insira uma cadeia de caracteres com 8 a 64 caracteres. Se a senha ou chave de rede tiver 64 caracteres, insira caracteres hexadecimais.
+    
+      > [!NOTE]
+      > Quando você salva o perfil de Wi-Fi, o valor PSK inserido não é mostrado por motivos de segurança. A marca-d'água da chave pré-compartilhada ainda mostra **Não configurado**, embora a PSK esteja salva no perfil. Para alterar a PSK, insira uma nova chave e salve o perfil. Se você salvar uma PSK, edite a política e deixe a PSK em branco e a PSK existente ainda será usada.
 
 - **Configurações de Proxy da Empresa**: opte por usar as configurações de proxy em sua organização. Suas opções:
   - **Nenhum**: nenhuma configuração de proxy é definida.

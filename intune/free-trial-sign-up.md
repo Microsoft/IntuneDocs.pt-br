@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915675"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510985"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: experimente o Microsoft Intune gratuitamente 
 
@@ -51,7 +51,7 @@ Experimentar o Intune gratuitamente por 30 dias. Se você já tem uma conta corp
 
     ![Captura de tela da página da Web de inscrição de conta de Avaliação do Microsoft Intune](./media/account-sign-up-site-user-id.png)
 
-    Se sua organização tiver seu próprio domínio personalizado que deseja usar sem **.onmicrosoft.com**, você poderá alterá-lo no Portal de Administração do Office 365 descrito posteriormente neste artigo.
+    Se a organização tiver seu próprio domínio personalizado que deseja usar sem **.onmicrosoft.com**, você poderá alterá-lo no Portal de Administração do Office 365 descrito posteriormente neste artigo.
 
 3. Veja suas novas informações de conta no fim do processo de criação de conta.
 
@@ -124,7 +124,9 @@ Há dois portais de que você pode usar:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste início rápido, você criou uma assinatura gratuita para experimentar o Intune em um ambiente de teste e, opcionalmente, configurou um nome de domínio personalizado. Para saber mais sobre o Microsoft Intune, prossiga para o próximo início rápido para adicionar usuários e atribuir licenças.
+Neste início rápido, você criou uma assinatura gratuita para experimentar o Intune em um ambiente de teste. Para obter mais informações sobre a configuração do Intune, confira [Configurar o Intune](setup-steps.md).
+
+Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Criar um usuário](quickstart-create-user.md)
+> [Início Rápido: criar um usuário e atribuir uma licença a ele](quickstart-create-user.md)

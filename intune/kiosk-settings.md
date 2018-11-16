@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751636"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298132"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configurações de quiosque para Windows 10 (e posteriores) no Intune
 
@@ -77,8 +77,15 @@ Quando você escolher o modo de quiosque de aplicativo único, insira as seguint
   - **Atualizar o navegador após tempo ocioso**: insira a quantidade de tempo ocioso (1 a 1440 minutos) até que o navegador do quiosque seja reiniciado em um estado novo. Tempo ocioso é a quantidade de minutos desde a última interação do usuário. Por padrão, o valor fica vazio ou em branco, o que significa que não há qualquer tempo limite de ociosidade.
 
   - **Sites permitidos**: use essa configuração para permitir que sites específicos sejam abertos. Em outras palavras, use esse recurso para restringir ou impedir sites da Web no dispositivo. Por exemplo, você pode permitir que todos os sites em `http://contoso.com*` sejam abertos. Por padrão, todos os sites são permitidos.
+ 
+      Para permitir sites específicos, faça upload de um arquivo que inclua uma lista dos sites permitidos em linhas separadas. Se você não adicionar um arquivo, todos os sites serão permitidos. O Intune aceita o asterisco (*) como um caractere curinga.
 
-    Para permitir sites específicos, faça o upload de um arquivo .csv que inclua uma lista dos sites permitidos. Se você não adicionar um arquivo .csv, todos os sites serão permitidos. O Intune aceita o asterisco (*) como um caractere curinga.
+      Seu arquivo de exemplo deverá ser semelhante à seguinte lista:
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   Selecione **OK** para salvar suas alterações.
 

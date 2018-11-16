@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025229"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576963"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sobre [as próximas alterações](#whats-coming), [avisos importantes](#notices) sobre o serviço e informações sobre [versões anteriores](whats-new-archive.md). Alguns recursos podem ser implantados ao longo de várias semanas e podem não estar disponíveis para todos os clientes na primeira semana.
+Conheça as novidades de cada semana do Microsoft Intune. Você também pode obter mais informações sobre as próximas alterações, [notificações importantes](#notices) e [versões anteriores](whats-new-archive.md). Alguns recursos podem ser implantados ao longo de várias semanas e podem não estar disponíveis para todos os clientes na primeira semana.
 
 > [!Note]
 > Para obter informações sobre a nova funcionalidade no MDM (gerenciamento de dispositivo móvel) híbrido, confira a [página de Novidades sobre o MDM híbrido](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -41,6 +41,21 @@ Conheça as novidades de cada semana do Microsoft Intune. Saiba mais também sob
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>Semana de 5 de novembro de 2018
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Suporte para OAuth iOS 12 em perfis de email do iOS <!--2155106 -->
+
+Perfis de email do iOS do Intune oferecem suporte ao OAuth (Open Authorization) do iOS 12. Para ver esse recurso, crie um novo perfil (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Email** para tipo de perfil), ou atualize um perfil de email do iOS existente. Caso habilite o OAuth em um perfil que já esteja implantado para os usuários, os usuários serão solicitados a autenticar novamente e baixar seus emails de novo.
+
+Os [perfis de email do iOS](email-settings-ios.md) têm mais informações sobre como usar o OAuth em um perfil de email.
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Suporte de piloto automático para dispositivos ingressados no Azure Active Directory híbrido (Versão Prévia) <!-- 1048100-->
+Você agora pode configurar dispositivos ingressados no Azure Active Directory híbrido usando o Autopilot. Os dispositivos devem ser ingressados na rede da sua organização para usar o recurso Autopilot híbrido. Para obter mais informações, confira [Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot](windows-autopilot-hybrid.md).
+Esse recurso será implantando em toda a base de usuários nos próximos dias. Portanto, você não poderá seguir estas etapas até que ela seja distribuída para a sua conta.
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Configurações de APP (Política de Proteção de Aplicativo) do aplicativo para dados Web <!-- 2662995  -->
+As configurações de política de aplicativo para conteúdo Web em dispositivos Android e iOS foram atualizadas para lidar melhor com links Web http e https, bem como transferência de dados por meio de Links Universais do iOS e Links de Aplicativo do Android.  
+
 ## <a name="week-of-october-29-2018"></a>Semana de 29 de outubro de 2018
 
 
@@ -112,10 +127,6 @@ Será possível atribuir perfis do Autopilot ao grupo virtual Todos os dispositi
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Recurso Novos termos de uso do Azure Active Directory <!-- 2870393 -->
 O Azure Active Directory tem um recurso de termos de uso que você pode usar em vez dos termos e condições existentes do Intune. O recurso de termos de uso do Azure AD oferece mais flexibilidade sobre quais termos mostrar e quando mostrá-los, melhor suporte à localização, mais controle em como os termos são renderizados e melhor geração de relatórios. O recurso de termos de uso do Azure AD requer o Azure Active Directory Premium P1, que também faz parte do pacote Enterprise Mobility + Security E3. Para obter mais informações, confira o [artigo Gerenciar seus termos e condições da sua empresa para acesso do usuário](terms-and-conditions-create.md).
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Suporte de piloto automático para dispositivos ingressados no Azure Active Directory híbrido (Versão Prévia) <!-- 1048100-->
-Você agora pode configurar dispositivos ingressados no Azure Active Directory híbrido usando o Autopilot. Os dispositivos devem ser ingressados na rede da sua organização para usar o recurso Autopilot híbrido. Para obter mais informações, confira [Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot](windows-autopilot-hybrid.md).
-Esse recurso será implantando em toda a base de usuários nos próximos dias. Portanto, você não poderá seguir estas etapas até que ela seja distribuída para a sua conta.
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Suporte ao modo de Proprietário do Dispositivo Android <!--3188762-->
 Para o Registro Móvel do Samsung Knox, o Intune agora dá suporte ao registro de dispositivos para o modo de Proprietário de Dispositivo Android do gerenciamento. Os usuários em redes de celular ou Wi-Fi podem inscrever seus dispositivos com apenas alguns toques ao o ligarem pela primeira vez. Para saber mais, confira [Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung](android-samsung-knox-mobile-enroll.md).
 
@@ -130,7 +141,10 @@ As políticas de Proteção de Aplicativo do Intune permitem que você defina v�
 - **Requisitos de acesso** – esse grupo contém as opções de PIN por aplicativo que determinam como o usuário final acessa os aplicativos em um contexto de trabalho.  
 - **Inicialização condicional** – esse grupo contém configurações como configurações de sistema operacional mínimo, jailbreak e detecção de dispositivos com raiz e períodos de cortesia offline.  
   
-A funcionalidade das configurações não muda, mas será mais fácil encontrá-la quando você trabalhar na política de fluxo de criação. 
+A funcionalidade das configurações não muda, mas será mais fácil encontrá-la quando você trabalhar na política de fluxo de criação.
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Novo SKU de assinatura do dispositivo Intune!--3312071-->
+Para ajudar a reduzir o custo de dispositivos de gerenciamento nas empresas, um novo SKU de assinatura com base em dispositivo agora está disponível. Este SKU de dispositivo do Intune é licenciado por dispositivo mensalmente. O preço varia de acordo com o programa de licenciamento. Está disponível no Canal Direto, EA (Contrato Enterprise), MPSA (Programa de Produtos e Serviços da Microsoft) e CSP (Provedor de Soluções de Nuvem) em aberto.
 
 ### <a name="intune-apps"></a>Aplicativos do Intune
 
@@ -146,7 +160,7 @@ Quando o Intune instalar o Office nos computadores do seu usuário final, os usu
 ### <a name="monitor-and-troubleshoot"></a>Monitorar e solucionar problemas
 
 #### <a name="new-intune-support-experience-in-the-microsoft-365-device-management-portal----3076965---"></a>Nova Experiência de Suporte do Intune no Portal de Gerenciamento de Dispositivo do Microsoft 365 <!-- 3076965 -->
-Estamos desenvolvendo uma nova experiência de Ajuda e Suporte para o Intune no [Portal de Gerenciamento de Dispositivo do Microsoft 365]( http://devicemanagement.microsoft.com). A nova experiência permite que você descreva seu problema em suas próprias palavras e receba informações de solução de problemas e conteúdo de correção baseado na Web. Essas soluções são oferecidas por meio de um algoritmo de aprendizado de máquina baseado em regras orientado por consultas de usuário.  
+Estamos desenvolvendo uma nova experiência de Ajuda e Suporte para o Intune no [Portal de Gerenciamento de Dispositivo do Microsoft 365]( http://devicemanagement.microsoft.com). A nova experiência permite que você descreva seu problema em suas próprias palavras e receba informações de solução de problemas e conteúdo de correção baseado na Web. Essas soluções são oferecidas por meio de um algoritmo de aprendizado de máquina baseado em regras, orientado por consultas de usuário.  
 
 Além das orientações específicas do problema, você também pode usar o novo fluxo de trabalho de criação do caso para abrir um caso de suporte por email ou telefone.  
 
@@ -619,7 +633,7 @@ Você pode usar o **sAMAccountName** local como o nome de usuário da conta para
 
 Para usar esse recurso, você deve sincronizar o atributo `sAMAccountName` do seu ambiente do Active Directory local com o Azure AD.
 
-Aplica-se a [Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 e posteriores](email-settings-windows-10.md)
+Aplica-se ao: [Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 e posteriores](email-settings-windows-10.md)
 
 #### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>Ver perfis de configuração do dispositivo em conflito <!-- 1556983 -->
 Em **Configuração do Dispositivo**, é mostrada uma lista dos perfis existentes. Com essa atualização, uma nova coluna foi adicionada para fornecer detalhes sobre os perfis que apresentam conflito. Você pode selecionar uma linha em conflito para ver a configuração e o perfil que apresenta o conflito. 
@@ -675,7 +689,7 @@ Agora você pode adicionar manualmente IDs de dispositivo corporativo. Escolha *
 
 ## <a name="week-of-june-18-2018"></a>Semana de 18 de junho de 2018
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Suporte móvel do Edge para políticas de proteção de aplicativo do Intune <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Suporte móvel do Microsoft Edge para políticas de proteção de aplicativo do Intune <!-- 1817882 -->
 
 O navegador Microsoft Edge para dispositivos móveis agora dá suporte a políticas de proteção de aplicativo definidas no Intune.
 
@@ -784,7 +798,7 @@ Para ver o UDID (Identificador Exclusivo de Dispositivo) para dispositivos iOS e
 Em dispositivos gerenciados pelo MDM do Microsoft Intune, as instalações de aplicativos às vezes podem falhar. Quando a instalação desses aplicativos falha, pode ser um desafio entender o motivo da falha ou solucionar o problema. Estamos enviando uma Visualização Pública dos nossos recursos de Solução de Problemas de Aplicativo. Você observará um novo nó em cada dispositivo individual com o nome **Aplicativos Gerenciados**. Ele lista os aplicativos que foram entregues por meio do MDM do Intune. Dentro do nó, você verá uma lista dos estados de instalação do aplicativo. Se você selecionar um aplicativo individual, verá o modo de exibição de solução de problemas desse aplicativo específico. Na exibição de solução de problemas, você verá o ciclo de vida completo do aplicativo, por exemplo, quando o aplicativo foi criado, modificado, direcionado e entregue a um dispositivo. Além disso, se a instalação do aplicativo não for bem-sucedida, você receberá o código de erro e uma mensagem útil sobre a causa do erro. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Políticas de proteção de aplicativo do Intune e Microsoft Edge <!-- 1818968 -->
-O navegador Microsoft Edge para dispositivos móveis (iOS e Android) agora é compatível com as políticas de proteção de aplicativo do Microsoft Intune. Os usuários de dispositivos iOS e Android que entrarem com suas contas corporativas do Azure AD no aplicativo Edge estarão protegidos pelo Intune. Em dispositivos iOS, a política **Exigir navegador gerenciado para conteúdo da Web** permitirá aos usuários abrir links no Microsoft Edge quando ele for gerenciado.
+O navegador Microsoft Edge para dispositivos móveis (iOS e Android) agora é compatível com as políticas de proteção de aplicativo do Microsoft Intune. Os usuários de dispositivos iOS e Android que entrarem com suas contas corporativas do Azure AD no aplicativo Edge estarão protegidos pelo Intune. Em dispositivos iOS, a política **Exigir navegador gerenciado para conteúdo da Web** permitirá aos usuários abrir links no Microsoft Edge quando for gerenciado.
 
 ## <a name="week-of-may-14-2018"></a>Semana de 14 de maio de 2018
 
@@ -1010,6 +1024,21 @@ Para ver a aparência atualizada, vá para [Novidades da interface do usuário d
 Agora você pode usar a APP (Proteção de Política do Aplicativo) do Intune e o AC (Acesso Condicional) para proteger o acesso a dados do Exchange no Local com o Outlook Mobile. Para adicionar ou modificar uma política de proteção de aplicativo no portal do Azure, selecione **Microsoft Intune** > **Aplicativos clientes** > **Políticas de proteção de aplicativo**. Antes de usar esse recurso, verifique se você atende aos [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Avisos
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Plano para mudança: atualizações de desempenho para o Intune para Educação <!--1750215-->
+Estamos adicionando algumas atualizações para o Intune para Educação aumentar a velocidade e a confiabilidade quando você atribuir configurações aos seus usuários ou dispositivos. Como parte dessa alteração, até o final de novembro, levaremos suas políticas ou as atribuições de configurações para novos grupos.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+
+Como um cliente do Intune para Educação, você tem dois grupos dinâmicos do Azure AD (Azure Active Directory): "Todos os Usuários" e "Todos os Dispositivos". Com essas atualizações, esses grupos “Todos os Usuários” e “Todos os dispositivos” do Azure AD não estarão visíveis no console do Intune para Educação. No entanto, ainda estarão visíveis no Intune e no console do Azure e serão renomeados como “Todos os usuários (Obsoletos, não use)” e “Todos os Dispositivos (Obsoletos, não use)”.
+
+Quando as atualizações forem implementadas, você não precisará usar grupos do Azure AD para atribuir aplicativos e configurações no Intune. Em vez disso, levaremos suas atribuições de Configurações para novos grupos no console do Intune para Educação que criaremos para você e elas ainda aparecerão como "Todos os Usuários" e "Todos os Dispositivos" como antes. Essas alterações são no back-end, portanto, você não notará nada de diferente no console do Intune para Educação. Não há nenhum impacto previsto para seus usuários finais ou os dispositivos registrados. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+Você não precisa fazer nada enquanto migramos suas atribuições de política. Se, neste momento, você estiver atribuindo as políticas do Intune para o console do Intune para Educação, continue.
+
+Se, neste momento, você estiver atribuindo políticas aos grupos do Azure AD mencionados acima no Intune no Azure, comece atribuindo-as para o grupo Todos os Usuários e Todos os Dispositivos no console do Intune para Educação. Ao ver a grupos do Azure AD renomeados como obsoletos no console, pare de atribuir políticas no Azure AD. Se, no momento, não estiver usando os grupos renomeados para qualquer outra finalidade, você deverá excluí-los.
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Programe-se para a mudança: o Intune mudará para oferecer compatibilidade com o macOS 10.12 e posterior em dezembro <!--2970975--> 
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321593"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576793"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configurações de restrição de dispositivo para o Windows Holographic for Business no Intune
 
@@ -41,17 +41,17 @@ As seguintes configurações de restrição de dispositivo são compatíveis com
 -   **Instalação de aplicativo confiável** - permite que os aplicativos assinados com um certificado de confiança sejam carregados por sideload.
 -   **Desbloqueio do desenvolvedor** - permite que configurações de desenvolvedor do Windows, como a permissão de sideload de aplicativos, sejam modificadas pelo usuário final.
 
-## <a name="edge-browser"></a>Navegador Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Navegador Microsoft Edge
 
 -   **Cookies** – Permite que o navegador salve cookies da Internet no dispositivo.
 -   **Pop-ups** – Bloqueia janelas pop-up no navegador (aplica-se a somente ao Windows 10 Desktop).
 -   **Sugestões de Pesquisa** – Permite que seu mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa.
--   **Gerenciador de Senhas** – Habilitar ou desabilitar o recurso de Gerenciador de Senhas do Microsoft Edge.
+-   **Gerenciador de Senhas** – Habilite ou desabilite o recurso do Gerenciador de Senhas do Microsoft Edge.
 - **Enviar cabeçalhos Do Not Track** – Configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **SmartScreen para Microsoft Edge** – habilite o SmartScreen do Edge para acessar downloads do site e de arquivos.
+- **SmartScreen para Microsoft Edge** – habilite o SmartScreen do Microsoft Edge para acessar downloads do site e de arquivos.
 
 ## <a name="search"></a>Pesquisar
 - **Local de pesquisa** – Especifique se a pesquisa pode usar a localização. Informações do

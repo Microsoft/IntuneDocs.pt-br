@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357080"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576861"
 ---
-# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Internet usando um navegador protegido por políticas do Microsoft Intune
+# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Internet usando um navegador protegido por políticas do Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,7 +50,7 @@ Versões anteriores do Android e do iOS poderão continuar usando o Managed Brow
 
 ## <a name="application-protection-policies-for-protected-browsers"></a>Políticas de proteção de aplicativo para navegadores protegidos
 
-Como o Edge e o Managed Browser têm integração com o SDK do Intune, você também pode aplicar políticas de proteção de aplicativos a eles, incluindo:
+Como o Microsoft Edge e o Managed Browser têm integração com o SDK do Intune, você também pode aplicar políticas de proteção de aplicativos a eles, incluindo:
 - Controlar o uso de recortar, copiar e colar.
 - Impedir capturas de tela.
 - Garantir que links corporativas sejam abertos somente dentro de aplicativos e navegadores gerenciados.
@@ -65,7 +65,7 @@ Você pode aplicar estas configurações a:
 
 >[!NOTE]
 >Se os usuários instalarem o Managed Browser por meio da loja de aplicativos e o Intune não gerenciá-lo, ele poderá ser usado como um navegador da Web básico, com suporte para Logon Único por meio do site do Microsoft MyApps. Os usuários são levados diretamente ao site do MyApps, no qual poderão ver todos os seus aplicativos SaaS provisionados.
-Embora o Managed Browser e o Edge não sejam gerenciados pelo Intune, eles não podem acessar dados de outros aplicativos gerenciados pelo Intune. 
+Embora o Managed Browser e o Microsoft Edge não sejam gerenciados pelo Intune, eles não podem acessar dados de outros aplicativos gerenciados pelo Intune. 
 
 
 ## <a name="conditional-access-for-protected-browsers"></a>Acesso condicional para navegadores protegidos
@@ -151,30 +151,30 @@ O Microsoft Edge, o Intune Managed Browser e o [Proxy de Aplicativo do Azure AD]
 - Configure os aplicativos internos por meio do Proxy de Aplicativo do Azure AD.
     - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - Você deve estar usando pelo menos a versão mínima 1.2.0 do aplicativo Managed Browser.
-- Os usuários do aplicativo Managed Browser ou Edge têm uma [política de proteção do aplicativo Intune]( app-protection-policy.md) atribuída ao aplicativo.
+- Os usuários do aplicativo Managed Browser ou Microsoft Edge têm uma [política de proteção do aplicativo do Intune]( app-protection-policy.md) atribuída ao aplicativo.
 
     > [!NOTE]
-    > Os dados de redirecionamento do Proxy de Aplicativo atualizados podem levar até 24 horas para entrarem em vigor no Managed Browser e no Edge.
+    > Os dados de redirecionamento do Proxy de Aplicativo atualizados podem levar até 24 horas para entrarem em vigor no Managed Browser e no Microsoft Edge.
 
 
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Etapa 1: Habilitar o redirecionamento automático do Outlook para um navegador protegido
 O Outlook deve ser configurado com uma política de proteção do aplicativo que habilita a configuração para **Restringir conteúdo da Web para exibição no Managed Browser**.
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Etapa 2: Atribuir uma política de configuração de aplicativo atribuída ao navegador protegido.
-Este procedimento configura o aplicativo Managed Browser ou Edge para usar o redirecionamento de proxy de aplicativo. Usando o procedimento para criar uma configuração do aplicativo Edge ou Managed Browser, forneça o seguinte par de chave e valor:
+Este procedimento configura o aplicativo Managed Browser ou Microsoft Edge para usar o redirecionamento de proxy de aplicativo. Usando o procedimento para criar uma configuração do aplicativo Microsoft Edge ou Managed Browser, forneça o seguinte par de chave e valor:
 
 | Chave                                                             | Valor    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-Para saber mais sobre como o Managed Browser, o Edge e o Proxy de Aplicativo do Azure AD podem ser usados em conjunto para obter um acesso contínuo (e protegido) a aplicativos Web locais, confira a postagem no blog Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Melhor juntos: o Intune e o Azure Active Directory se unem para melhorar o acesso do usuário).
+Para saber mais sobre como o Managed Browser, o Microsoft Edge e o Proxy de Aplicativo do Azure AD podem ser usados em conjunto para obter um acesso contínuo (e protegido) a aplicativos Web locais, confira a postagem no blog Enterprise Mobility + Security [Melhores juntos: o Intune e o Azure Active Directory se unem para melhorar o acesso do usuário](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
 > [!NOTE]
-> O Edge usa os mesmos pares de chave e valor do Managed Browser. 
+> O Microsoft Edge usa os mesmos pares de chave e valor do Managed Browser. 
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Como configurar a página inicial de um navegador protegido
 
-Essa definição permite configurar a página inicial que os usuários visualizam ao iniciar um navegador protegido ou criar uma nova guia. Usando o procedimento para criar uma configuração do aplicativo Edge ou Managed Browser, forneça o seguinte par de chave e valor:
+Essa definição permite configurar a página inicial que os usuários visualizam ao iniciar um navegador protegido ou criar uma nova guia. Usando o procedimento para criar uma configuração do aplicativo Microsoft Edge ou Managed Browser, forneça o seguinte par de chave e valor:
 
 |                                Chave                                |                                                           Valor                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -182,13 +182,13 @@ Essa definição permite configurar a página inicial que os usuários visualiza
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>Como configurar indicadores para um navegador protegido
 
-Essa definição permite configurar um conjunto de indicadores disponível para usuários do Edge ou do Managed Browser.
+Essa definição permite configurar um conjunto de indicadores disponível para usuários do Microsoft Edge ou do Managed Browser.
 
 - Esses indicadores não podem ser excluídos ou modificados pelos usuários
 - Eles são exibidos na parte superior da lista. Todos os indicadores que os usuários criar são exibidos abaixo desses indicadores.
 - Se você tiver habilitado o redirecionamento do Proxy de Aplicativo, será possível adicionar aplicativos Web do Proxy de Aplicativo usando sua URL interna ou externa.
 
-Usando o procedimento para criar uma configuração do aplicativo Edge ou Managed Browser, forneça o seguinte par de chave e valor:
+Usando o procedimento para criar uma configuração do aplicativo Microsoft Edge ou Managed Browser, forneça o seguinte par de chave e valor:
 
 |                                Chave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Usando o procedimento para criar uma configuração do aplicativo Edge ou Manage
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Como especificar URLs permitidas e bloqueadas para um navegador protegido
 
-Usando o procedimento para criar uma configuração do aplicativo Edge ou Managed Browser, forneça o seguinte par de chave e valor:
+Usando o procedimento para criar uma configuração do aplicativo Microsoft Edge ou Managed Browser, forneça o seguinte par de chave e valor:
 
 |Chave|Valor|
 |-|-|
