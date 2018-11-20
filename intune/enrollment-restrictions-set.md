@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602139"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610049"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -66,7 +66,7 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 
 ## <a name="set-device-type-restrictions"></a>Definir restrições de tipo de dispositivo
 
-É possível alterar as configurações de uma restrição de tipo de dispositivo seguindo estas etapas. Essas restrições não afetam dispositivos que já foram registrados. Os dispositivos registrados com o [agente Intune PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) não podem ser bloqueados com esse recurso.
+É possível alterar as configurações de uma restrição de tipo de dispositivo seguindo estas etapas. Essas restrições não afetam dispositivos que já foram registrados. Os dispositivos registrados com o [agente Intune PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) não podem ser bloqueados com esse recurso.
 
 1. Entre no Portal do Azure.
 2. Selecione **Mais serviços**, pesquise **Intune** e, em seguida, escolha **Intune**.
@@ -100,11 +100,11 @@ Os métodos a seguir se qualificam como autorizados como um registro corporativo
 - O dispositivo está sendo registrado por meio do [registro automático do SCCM para o cogerenciamento](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 Os seguintes registros são marcados como corporativos pelo Intune, mas como eles não oferecem o controle por dispositivo do administrador do Intune, eles serão bloqueados:
- - [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory durante a instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
-- [Registro automático no MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory na instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
+ - [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory durante a instalação do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
+- [Registro automático no MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [ingresso no Azure Active Directory na instalação do Windows](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
 Os seguintes métodos de registro pessoais também serão bloqueados:
-- [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [Adicionar Conta Corporativa nas Configurações do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
+- [Registro automático do MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) com [Adicionar Conta Corporativa nas Configurações do Windows](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*.
 - A opção [Somente registro do MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) nas Configurações do Windows.
 
 \* Eles não serão bloqueados se registrados com o Autopilot.

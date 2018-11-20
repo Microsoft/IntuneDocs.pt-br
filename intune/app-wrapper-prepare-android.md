@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 32ce1a71911c7a902f2790fef584ab1c3b86a293
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642945"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167443"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -128,7 +128,7 @@ Algumas práticas recomendadas para reencapsulamento incluem:
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilizando certificados de autenticação e encapsulando aplicativos
 O Android exige que todos os aplicativos sejam autenticados por um certificado válido para serem instalados em dispositivos Android.
 
-Os aplicativos encapsulados podem ser autenticados como parte do processo de encapsulamento ou *após* o encapsulamento usando ferramentas de autenticação existentes (toda informação de assinatura no aplicativo antes do encapsulamento é descartada). Se possível, as informações de autenticação já usadas durante o processo de build devem ser usadas durante o encapsulamento. Em determinadas organizações, isso pode exigir trabalhar com quem tenha informações do repositório de chaves (isto é, a equipe do build do aplicativo). 
+Os aplicativos encapsulados podem ser autenticados como parte do processo de encapsulamento ou *após* o encapsulamento usando ferramentas de autenticação existentes (toda informação de assinatura no aplicativo antes do encapsulamento é descartada). Se possível, as informações de autenticação já usadas durante o processo de build devem ser usadas durante o encapsulamento. Em determinadas organizações, isso pode exigir trabalhar com quem tenha informações do repositório de chaves (isto é, a equipe do build do aplicativo). 
 
 Se o certificado de autenticação anterior não puder ser usado ou se o aplicativo ainda não tiver sido implantado, você poderá criar um novo certificado de autenticação seguindo as instruções do [Guia do desenvolvedor do Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
