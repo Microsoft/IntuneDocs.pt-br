@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915709"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167426"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -106,9 +106,6 @@ O Microsoft Intune coleta dados sobre estatísticas de uso para seu aplicativo.
 
     * Se os usuários finais optarem por não enviar esses dados, eles deverão desligar a telemetria em Configurações no aplicativo Portal da Empresa. Para obter mais informações, consulte [Como desligar a coleta de dados de uso da Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
- O número de versão do aplicativo de linha de negócios Android e iOS é visível <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>Números de versão de aplicativo de linha de negócios
 
 Aplicativos de linha de negócios no Intune agora exibem o número de versão para aplicativos iOS e Android. O número é exibido no portal do Azure na lista de aplicativos e na folha de visão geral do aplicativo. Os usuários finais podem ver o número do aplicativo no aplicativo do Portal da Empresa e no portal da web.
@@ -164,6 +161,23 @@ Depois de concluir as etapas necessárias para integrar seu aplicativo iOS ou An
 * **Políticas de proteção do aplicativo do Intune**: para testar seu aplicativo em todas as políticas de proteção do aplicativo do Intune, é necessário saber qual é o comportamento esperado para cada configuração da política. Consulte as descrições de [políticas de proteção do aplicativo do iOS](app-protection-policy-settings-ios.md) e [políticas de proteção do aplicativo do Android](app-protection-policy-settings-android.md).
 
 * **Solução de problemas**: se você encontrar algum problema ao testar manualmente a experiência do usuário durante a instalação do seu aplicativo, confira [Solucionar problemas de instalação do aplicativo](troubleshoot-app-install.md). 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Fornecer ao aplicativo o acesso ao serviço de proteção de aplicativo do Intune (opcional)
+
+Se o aplicativo estiver usando suas próprias configurações personalizadas do Azure Active Directory (AAD) para autenticação, então será necessário executar as etapas a seguir para os aplicativos de repositório público, bem como os aplicativos LOB internos. Não é necessário executar as etapas **se o seu aplicativo estiver usando a ID padrão do cliente do SDK do Intune**. 
+
+Depois que você registrar seu aplicativo no locatário do Azure e ele estiver aparecendo em **Todos os Aplicativos**, você deverá fornecer ao aplicativo o acesso ao serviço de proteção de aplicativo do Intune (anteriormente conhecido como serviço MAM). No portal do Azure:
+
+1.  Acesse a folha **Azure Active Directory**.
+2.  Selecione o **Registro de aplicativo** configurado para o aplicativo.
+3.  Em **Configurações**, no cabeçalho **Acesso à API**, selecione **Permissão obrigatória**. 
+4.  Clique em **+ Adicionar**.
+5.  Clique em **Selecionar uma API**. 
+6.  Na caixa de pesquisa, insira **Gerenciamento de Aplicativo Móvel da Microsoft**.
+7.  Selecione **Gerenciamento de Aplicativo Móvel da Microsoft** na lista de APIs e clique em Selecionar.
+8.  Selecione **Ler e Gravar os Dados de Gerenciamento de Aplicativos do Usuário**.
+9.  Clique em **Concluído**.
+10. Clique em **Conceder permissões** e clique em **Sim**. 
 
 ### <a name="badge-your-app-optional"></a>Marcar com uma notificação no aplicativo (opcional)
 

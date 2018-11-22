@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576963"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167579"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode obt
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>Semana de 12 de novembro de 2018
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>Suporte do Controle de Acesso de Rede (NAC) do Citrix SSO para iOS <!-- 3259404 -->
+
+A Citrix lançou uma atualização para o Citrix Gateway para permitir o Controle de Acesso de Rede (NAC) do Citrix SSO para iOS no Intune. Você pode optar por incluir uma ID de dispositivo em um perfil da VPN no Intune e, em seguida, enviar esse perfil por push para dispositivos iOS. Você precisará instalar a atualização mais recente do Citrix Gateway para usar essa funcionalidade.
+
+[Definir configurações da VPN em dispositivos iOS](vpn-settings-ios.md#base-vpn-settings) fornece mais informações sobre como usar o NAC, incluindo alguns requisitos adicionais. 
+
 ## <a name="week-of-november-5-2018"></a>Semana de 5 de novembro de 2018
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Suporte para OAuth iOS 12 em perfis de email do iOS <!--2155106 -->
@@ -53,11 +62,7 @@ Os [perfis de email do iOS](email-settings-ios.md) têm mais informações sobre
 Você agora pode configurar dispositivos ingressados no Azure Active Directory híbrido usando o Autopilot. Os dispositivos devem ser ingressados na rede da sua organização para usar o recurso Autopilot híbrido. Para obter mais informações, confira [Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot](windows-autopilot-hybrid.md).
 Esse recurso será implantando em toda a base de usuários nos próximos dias. Portanto, você não poderá seguir estas etapas até que ela seja distribuída para a sua conta.
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Configurações de APP (Política de Proteção de Aplicativo) do aplicativo para dados Web <!-- 2662995  -->
-As configurações de política de aplicativo para conteúdo Web em dispositivos Android e iOS foram atualizadas para lidar melhor com links Web http e https, bem como transferência de dados por meio de Links Universais do iOS e Links de Aplicativo do Android.  
-
 ## <a name="week-of-october-29-2018"></a>Semana de 29 de outubro de 2018
-
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -120,9 +125,6 @@ Esta atualização inclui o Gatekeeper para macOS avaliar dispositivos quanto à
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>Relatório de abandono de registro <!-- 1382924 -->
 Um novo relatório que fornece detalhes sobre registros abandonados está disponível em **Registro de dispositivo** > **Monitorar**. Para obter mais informações, confira [Relatório de abandono do portal da empresa](enrollment-report-company-portal-abandon.md).
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos <!--2715522 -->
-Será possível atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos. Para fazer isso, escolha **Registro de dispositivo** > **Registro do Windows** > **Perfis de implantação** > escolha um perfil > **Atribuições** > em **Atribuir a**, escolha **Todos os dispositivos**. Para obter mais informações sobre os perfis do Autopilot, confira [Registrar dispositivos Windows usando o Windows Autopilot](enrollment-autopilot.md).
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Recurso Novos termos de uso do Azure Active Directory <!-- 2870393 -->
 O Azure Active Directory tem um recurso de termos de uso que você pode usar em vez dos termos e condições existentes do Intune. O recurso de termos de uso do Azure AD oferece mais flexibilidade sobre quais termos mostrar e quando mostrá-los, melhor suporte à localização, mais controle em como os termos são renderizados e melhor geração de relatórios. O recurso de termos de uso do Azure AD requer o Azure Active Directory Premium P1, que também faz parte do pacote Enterprise Mobility + Security E3. Para obter mais informações, confira o [artigo Gerenciar seus termos e condições da sua empresa para acesso do usuário](terms-and-conditions-create.md).
@@ -504,17 +506,6 @@ Uma versão atualizada do SDK do Aplicativo do Intune está disponível para for
 
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
-
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>Usar S/MIME para criptografar e assinar vários dispositivos de um usuário  <!-- 1333642 -->
-Essa atualização inclui uma criptografia de email S/MIME usando um novo perfil de certificado importado (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > selecionar a plataforma > tipo de perfil **Certificado PKCS importado**). No Intune, você pode importar certificados no formato PFX. Em seguida, o Intune pode fornecer os mesmos certificados para vários dispositivos registrados por um único usuário. Isso também inclui:
-
-- O perfil de email do iOS nativo permite habilitar a criptografia S/MIME usando certificados importados no formato PFX.
-- O aplicativo de email nativo em dispositivos Windows Phone 10 usam automaticamente o certificado S/MIME.
-- Os certificados privados podem ser entregues em várias plataformas. Porém, nem todos os aplicativos de email são compatíveis com S/MIME.
-- Em outras plataformas, talvez você precise configurar manualmente o aplicativo de email para habilitar o S/MIME.  
-- Os aplicativos de email compatíveis com a criptografia S/MIME podem manipular a recuperação de certificados para criptografia de email S/MIME de uma maneira com a qual o MDM não é compatível, como a leitura do repositório de certificados do editor.
-
-Compatível com: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>Criar política de conformidade do dispositivo usando as configurações do Firewall em dispositivos macOS <!-- 1497640 -->
 Quando você cria uma política de conformidade do macOS (**Conformidade do dispositivo** > **Políticas** > **Criar política** > **Plataforma: macOS** > **Segurança do sistema**), há algumas novas configurações de **Firewall** disponíveis: 

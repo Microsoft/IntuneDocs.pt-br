@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978239"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610015"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerenciar computadores Windows como computadores por meio do cliente de software do Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Use o Microsoft Intune para gerenciar computadores Windows como [dispositivos móveis com o MDM (gerenciamento de dispositivo móvel)](windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes usem a [solução de gerenciamento MDM](windows-enroll.md) sempre que possível.
+> Use o Microsoft Intune para gerenciar computadores Windows como [dispositivos móveis com o MDM (gerenciamento de dispositivo móvel)](windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes usem a [solução de gerenciamento MDM](windows-enroll.md) sempre que possível. Para obter mais informações, consulte [Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis](pc-management-comparison.md) 
 
 O Intune fornece às organizações uma solução abrangente para gerenciar dispositivos móveis. O Intune pode gerenciar computadores Windows como dispositivos móveis usando os recursos modernos de gerenciamento de dispositivo integrados ao sistema operacional Windows 10. Para atender às necessidades de gerenciamento de sua organização, o Intune também pode gerenciar computadores Windows como computadores com o cliente de software do Intune. Esse método de gerenciamento usa recursos tradicionais de gerenciamento de computador no sistema operacional Windows herdado.
 
@@ -40,7 +40,8 @@ O Intune dá suporte ao gerenciamento de computadores Windows como computadores 
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Requisitos para o gerenciamento de cliente de computador do Intune
 
-**Hardware**: veja a seguir os requisitos mínimos de hardware para instalar o software cliente do Intune:
+**Hardware**:  
+Veja a seguir os requisitos mínimos de hardware para instalar o software cliente do Intune:
 
 |Requisito|Mais informações|
 |---------------|--------------------|
@@ -48,7 +49,8 @@ O Intune dá suporte ao gerenciamento de computadores Windows como computadores 
 |Processador e memória|Consulte os requisitos de RAM e de processador para o sistema operacional do PC.|
 |Espaço em disco|200 MB de espaço em disco disponível antes de instalar o software cliente.|
 
-**Software**: veja a seguir os requisitos de software para a instalação do software cliente:
+**Software**:  
+Veja a seguir os requisitos de software para a instalação do software cliente:
 
 |Requisito|Mais informações|
 |---------------|--------------------|

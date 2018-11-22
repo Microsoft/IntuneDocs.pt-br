@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: d7ff5a63b6afb619fbbe762d23208c1058e99943
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410779"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610134"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos por meio do uso de uma conta do gerenciador de registros de dispositivo
 
@@ -34,7 +34,7 @@ Contas de usuário e dispositivos do DEM registrados com uma conta de usuário d
   - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
   - Contas de usuário do DEM não podem usar aplicativos VPP (Apple Volume Purchase Program) com licenças de usuário do Apple VPP devido aos requisitos de ID da Apple para gerenciamento de aplicativo.
   - Os dispositivos poderão instalar aplicativos se tiverem licenças de dispositivo do Apple VPP.
-  
+  - Os dispositivos estão bloqueados para Acesso Condicional, com exceção do Windows 10 1803+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gerenciador de registro de dispositivo

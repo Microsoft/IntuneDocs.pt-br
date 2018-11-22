@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187794"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610083"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -45,7 +45,7 @@ Este artigo mostra como exibir todos os dispositivos e suas propriedades no port
      - Iniciar uma sessão de assistência remota
    - Use **Propriedades** para atribuir uma [categoria de dispositivo que você criar](device-group-mapping.md) e altere a propriedade do dispositivo para um dispositivo pessoal ou um dispositivo corporativo.
    - **Hardware** inclui muitos detalhes sobre o dispositivo, incluindo a ID do dispositivo, o sistema operacional e a versão, o espaço de armazenamento, o modelo e o fabricante, as configurações de acesso condicional e mais detalhes.
-   - **Aplicativos descobertos** lista todos os aplicativos que Intune encontrou instalados no dispositivo e as respectivas versões. Você também pode **Exportar** a lista de aplicativos para um arquivo .csv.
+   - **Aplicativos descobertos** lista todos os aplicativos que Intune encontrou instalados no dispositivo e as respectivas versões. Você também pode **Exportar** a lista de aplicativos para um arquivo .csv. Esta lista é atualizada a cada sete dias.
    - **Conformidade do dispositivo** lista todas as políticas de conformidade atribuídas e se o dispositivo está ou não em conformidade.
    - **Configuração do dispositivo** mostra todas as políticas de configuração de dispositivo atribuídas ao dispositivo e se a política foi bem-sucedida ou falhou.
 
@@ -60,8 +60,10 @@ O Intune coleta uma lista de aplicativos que estão somente em dispositivos corp
 |iOS|Somente aplicativos gerenciados|Todos os aplicativos instalados no dispositivo|
 |macOS|Todos os aplicativos instalados no dispositivo|Todos os aplicativos instalados no dispositivo|  
 |Android|Somente aplicativos gerenciados|Todos os aplicativos instalados no dispositivo|  
+|Android Enterprise|Somente aplicativos gerenciados|Somente os aplicativos instalados no Perfil de Trabalho|  
 
 ## <a name="hardware-device-details"></a>Detalhes do dispositivo de hardware
+Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem ser coletados
 
 |Detalhes|Descrição|Plataforma| 
 |--------------|----------------------|----|  

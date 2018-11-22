@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811522"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funcionalidades por método de registro para dispositivos Windows
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446813"
 O Intune permite gerenciar os dispositivos e os aplicativos da sua força de trabalho e como ela acessa os dados da empresa. Os dispositivos precisam primeiro ser registrados no serviço do Intune. Há vários métodos de registrar os dispositivos da sua força de trabalho. Cada método tem diferentes melhores práticas e funcionalidades, conforme mostrado nas tabelas a seguir.
 
 ## <a name="best-practices-by-enrollment-method"></a>Melhores práticas por método de registro
-| **Práticas recomendadas** | **[Microsoft Azure AD adicionado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Microsoft Azure AD adicionado com o Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Práticas recomendadas** | **[Microsoft Azure AD adicionado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Microsoft Azure AD adicionado com o Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Normalmente usado em EDU|![X](media/xmark.png)|![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Dispositivos podem ser usados como dispositivos compartilhados|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
@@ -36,7 +36,7 @@ O Intune permite gerenciar os dispositivos e os aplicativos da sua força de tra
 
 ## <a name="capabilities-by-enrollment-method"></a>Funcionalidades por método de registro
 
-| **Funcionalidades** | **[Microsoft Azure AD adicionado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Microsoft Azure AD adicionado com o Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Funcionalidades** | **[Microsoft Azure AD adicionado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Microsoft Azure AD adicionado com o Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Acesso condicional                                      |![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|
 |O usuário é associado ao dispositivo                    |![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de seleção](media/checkmark.png)|![Marca de seleção](media/checkmark.png)|
@@ -52,5 +52,5 @@ O Intune permite gerenciar os dispositivos e os aplicativos da sua força de tra
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Opções de registro](enrollment-options.md)
+[Configurar o registro para Windows](windows-enroll.md)
 

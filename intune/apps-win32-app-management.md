@@ -1,10 +1,27 @@
 ---
-título: adicionar aplicativos do Win32 ao Microsoft Intune titlesuffix: descrição: Saiba como adicionar, entregar e gerenciar aplicativos do Win32 com o Microsoft Intune. Este tópico apresenta uma visão geral das funcionalidades de gerenciamento e da entrega de aplicativo do Intune Win32, bem como informações de solução de problemas de aplicativo do Win32. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Adicionar aplicativos Win32 ao Microsoft Intune
+titlesuffix: ''
+description: Saiba como adicionar, entregar e gerenciar aplicativos do Win32 com o Microsoft Intune. Este tópico apresenta uma visão geral das funcionalidades de gerenciamento e da entrega de aplicativo do Intune Win32, bem como informações de solução de problemas de aplicativo do Win32.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830110"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autônomo – gerenciamento de aplicativos Win32 (versão prévia pública)
 
 O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplicativos Win32. Embora seja possível que os clientes conectados na nuvem usem o Configuration Manager para gerenciamento de aplicativos Win32, clientes apenas do Intune terão maiores funcionalidades de gerenciamento para seus aplicativos LOB (linha de negócios) Win32. Este tópico apresenta uma visão geral do recurso de gerenciamento de aplicativos Win32 e informações de solução de problemas do Intune.
@@ -43,6 +60,13 @@ Use a [Ferramenta de preparação para upload de aplicativos Win32 do Microsoft 
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Esse comando exibirá informações de uso da ferramenta.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Esse comando gerará o arquivo `.intunewin` da pasta de origem e do arquivo de instalação especificados. Para o arquivo de instalação do MSI, essa ferramenta recuperará as informações obrigatórias para o Intune. Se o `-q` for especificado, o comando será executado no modo silencioso e, se o arquivo de saída já existir, ele será substituído. Além disso, se a pasta de saída não existir, ela será criada automaticamente.    |
+
+Ao gerar um arquivo *.intunewin*, coloque os arquivos aos quais é necessário referenciar em uma subpasta da pasta de instalação. Em seguida, use um caminho relativo para referenciar o arquivo específico de que você precisa. Por exemplo:
+
+**Pasta de origem de instalação:** *c:\testapp\v1.0*<br>
+**Arquivo de licença:** *c:\testapp\v1.0\licenses\license.txt*
+
+Consulte o arquivo *license. txt* usando o caminho relativo *licenses\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Criar, atribuir e monitorar um aplicativo Win32
 
