@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 459e722e059d2d868c6de52bb11d5a2f52ce94c8
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: f6559b10bb9e3c293a9719235d01d8c7b55ee62f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310582"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185382"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerenciar contratos de licença para software de PC com Windows no Microsoft Intune
 
@@ -33,7 +34,7 @@ O Microsoft Intune permite adicionar e gerenciar informações de contrato de li
 >
 > As licenças que você adiciona ao Intune não afetam seus contratos de licença ou direitos de uso do software. Por exemplo, se você excluir um par contrato/licença do Intune, você não excluirá nem anulará contratos de licença que existem entre você e a Microsoft.
 
-No espaço de trabalho **Licenças** do console de administração do Intune, você pode:
+No workspace de **Licenças** do console de administração do Intune, você pode:
 
 -   Adicionar e editar contratos de Licenciamento por Volume da Microsoft.
 
@@ -46,7 +47,7 @@ No espaço de trabalho **Licenças** do console de administração do Intune, vo
 Adicionalmente, você pode gerar relatórios que mostrem contagens de licenças e de instalação para títulos de software. Relatórios de licenças podem ajudar a avaliar a posição completa de licenças para títulos de softwares da Microsoft ou softwares não Microsoft.
 
 > [!TIP]
-> O espaço de trabalho **Licenças** não é exibido no console do administrador até que você esteja gerenciando pelo menos um computador Windows com o cliente do computador Windows Intune.
+> O workspace de **Licenças** não é exibido no console do administrador até que você esteja gerenciando pelo menos um computador Windows com o cliente do computador Windows Intune.
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Adicionar contratos de licenciamento por volume da Microsoft
 Os contratos de Licenciamento por Volume do Intune fornecem informações sobre licença para softwares que foram adquiridos através de contratos de Licenciamento por Volume da Microsoft. É possível adicionar contratos de Licenciamento por Volume da Microsoft ao Intune fornecendo pares combinados de números de contrato. Os números de contrato ou autorização devem ser correspondentes aos números corretos de licença ou inscrição. Pares de números de contrato são obtidos no [Centro de Atendimento de Licenciamento por Volume (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)quando você adquire seus contratos de licença.
@@ -119,7 +120,7 @@ Para atualizar as informações de licença de volume depois de adicionar os con
 > [!IMPORTANT]
 > Até que as informações de licenciamento por volume sejam atualizadas, talvez você veja informações diferentes na lista de contratos e informações de direito na página **Visão geral de contratos** .
 
-Após atualizar as informações de licenciamento por volume, você pode comparar as informações de licença com o seu software da Microsoft detectado no espaço de trabalho **Aplicativos** . Você também pode executar os relatórios de licença a seguir:
+Após atualizar as informações de licenciamento por volume, você pode comparar as informações de licença com o seu software da Microsoft detectado no workspace **Aplicativos**. Você também pode executar os relatórios de licença a seguir:
 
 -   **Relatórios de aquisição de licenças** - permite exibir os softwares licenciados em grupos de licenças selecionados por você para ajudá-lo a encontrar falhas na cobertura.
 
@@ -180,8 +181,8 @@ Os contratos de licenciamento de software podem ser adicionados aos grupos de li
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            Tarefa            |                                                                                                                                                                                 Detalhes                                                                                                                                                                                  |
-|   Criar um grupo de licenças   |                                                            Na página <strong>Visão Geral</strong> do espaço de trabalho <strong>Licenças</strong>, escolha <strong>Criar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Observação:</strong> é possível criar um total máximo de 500 grupos de licenças.                                                             |
-|   Renomear um grupo de licenças   |                                                                                                      No espaço de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e <strong>Editar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>.                                                                                                       |
-|   Excluir um grupo de licenças   |                                 No espaço de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e, após, escolha <strong>Excluir Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Dica:</strong> Todas as licenças no grupo excluído são movidas para o grupo <strong>Contratos não atribuídos</strong>.                                 |
-| Excluir um contrato de licença | No espaço de trabalho <strong>Licenças</strong>, escolha um contrato e, após, escolha <strong>Excluir</strong>. <strong>Dica:</strong> depois de excluir contratos de Licenciamento por Volume, para atualizar as informações de licença, escolha <strong>Atualizar Agora</strong> na página <strong>Visão Geral de Licenças</strong> ou na guia <strong>Geral</strong> de um grupo de licenças específico. |
+|   Criar um grupo de licenças   |                                                            Na página <strong>Visão Geral</strong> do workspace de <strong>Licenças</strong>, escolha <strong>Criar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Observação:</strong> é possível criar um total máximo de 500 grupos de licenças.                                                             |
+|   Renomear um grupo de licenças   |                                                                                                      No workspace de <strong>Licenças</strong>, escolha um grupo de licenças e <strong>Editar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>.                                                                                                       |
+|   Excluir um grupo de licenças   |                                 No workspace de <strong>Licenças</strong>, escolha um grupo de licenças e, após, escolha <strong>Excluir Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Dica:</strong> Todas as licenças no grupo excluído são movidas para o grupo <strong>Contratos não atribuídos</strong>.                                 |
+| Excluir um contrato de licença | No workspace de <strong>Licenças</strong>, escolha um contrato e, após, escolha <strong>Excluir</strong>. <strong>Dica:</strong> depois de excluir contratos de Licenciamento por Volume, para atualizar as informações de licença, escolha <strong>Atualizar Agora</strong> na página <strong>Visão Geral de Licenças</strong> ou na guia <strong>Geral</strong> de um grupo de licenças específico. |
 

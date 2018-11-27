@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391596"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186725"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS com o Intune
 
@@ -121,7 +122,7 @@ Para autenticação com VPN, WiFi ou outros recursos, é necessário ter um Cert
 
 1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 2. Selecione **Configuração do dispositivo** > **Autoridade de certificação** > **Adicionar**.
-3. Faça o download e salve o arquivo do conector. Salve-o em um local acessível a partir do servidor no qual você instalará o conector.
+3. Faça o download e salve o arquivo do conector. Salve-o em uma localização acessível por meio do servidor no qual você instalará o conector.
 
     ![ConnectorDownload][ConnectorDownload]
 
@@ -143,7 +144,7 @@ Para autenticação com VPN, WiFi ou outros recursos, é necessário ter um Cert
 
 1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 2. Selecione **Configuração do dispositivo** > **Autoridade de certificação** > **Adicionar**
-3. Faça o download e salve o Conector de Certificado PFX do Microsoft Intune. Salve-o em um local acessível a partir do servidor no qual você instalará o conector.
+3. Faça o download e salve o Conector de Certificado PFX do Microsoft Intune. Salve-o em uma localização acessível por meio do servidor no qual você instalará o conector.
 4. Após a conclusão do download, entre no servidor. Em seguida:
 
     1. Verifique se o .NET 4.6 Framework ou superior está instalado, pois ele é necessário para o Conector do Certificado PFX do Microsoft Intune. Se o .NET Framework 4.6 não estiver instalado, o instalador o instalará automaticamente.

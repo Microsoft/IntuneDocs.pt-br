@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c251a45f8c319bdebbc6904c10fbf423bb1c1128
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: be0d80828327550e248d1ed5417b373c273a7a56
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34562153"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184855"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Configurações de restrição de dispositivo do Windows 10 Team no Microsoft Intune
 
@@ -38,7 +39,7 @@ Este artigo mostra as configurações de restrições de dispositivo do Microsof
 ## <a name="azure-operational-insights"></a>Insights operacionais do Azure
 
 - **Insights Operacionais do Azure** – O Insights Operacionais do Azure, que faz parte do pacote do Microsoft Operations Manager, coleta, armazena e analisa os dados de arquivo de log de dispositivos Windows 10 Team.
-Para se conectar aos Insights Operacionais do Azure, você deve especificar uma **ID do Espaço de Trabalho** e uma **Chave do Espaço de Trabalho**.
+Para se conectar aos Insights Operacionais do Azure, você deve especificar uma **ID do Workspace** e uma **Chave do Workspace**.
 
 ## <a name="maintenance"></a>Manutenção
 

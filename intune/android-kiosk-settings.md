@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602173"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185229"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Configurações de quiosque para dispositivos Android no Intune
 
@@ -47,7 +48,7 @@ Quando o perfil de restrição do dispositivo de quiosque está definido como **
 
 Para definir um dispositivo de quiosque Android para vários aplicativos, siga estas etapas principais:
 
-1. [Importar e implantar o aplicativo Tela Inicial Gerenciada por meio do Google Play gerenciado](#import-and -deploy-the-managed-home-screen-app)
+1. [Importar e implantar o aplicativo Tela Inicial Gerenciada por meio do Google Play gerenciado](#import-and-deploy-the-managed-home-screen-app)
 2. [Adicionar e atribuir aplicativos que podem ser usados no modo de quiosque](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Opcional) [Adicionar links da Web que podem ser usados no modo de quiosque](#add-web-links-that-can-be-used-in-kiosk-mode)
 

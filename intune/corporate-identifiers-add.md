@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e46951be5048e0bcf2af5b2d4320744f6d6e47e8
-ms.sourcegitcommit: 3785e506ef5fbc474b3e09e87412d4b673bbdbb8
+ms.openlocfilehash: cc65cc3440d260adc3bd2c7de3a311374681327d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46541948"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183444"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -74,7 +75,7 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
 1. No [Intune no portal do Azure](https://portal.azure.com), escolha **Registro de dispositivos** > **Identificadores de dispositivo corporativo** > **Adicionar** > **Carregar arquivo CSV**.
 
-   ![Espaço de trabalho do identificador de dispositivo corporativo com o botão Adicionar realçado](./media/add-corp-id.png)
+   ![Workspace do identificador de dispositivo corporativo com o botão Adicionar realçado](./media/add-corp-id.png)
 
 2. Na folha **Adicionar identificadores**, especifique o tipo de identificador: **IMEI** ou **Número de série**.
 

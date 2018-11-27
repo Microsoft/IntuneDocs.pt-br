@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864584"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186487"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -34,11 +35,11 @@ O design do Intune se baseia nas informações coletadas e nas decisões tomadas
 
 -   Considerações sobre plataformas de dispositivo
 
--   Requisitos para entrega  
+-   Requisitos para entrega  
 
 Embora haja requisitos mínimos de infraestrutura local, um plano de design ainda é útil para garantir que você tem a solução de gerenciamento de dispositivo móvel correta, que atende a suas metas, seus objetivos e requisitos.
 
-Vamos examinar cada uma dessas áreas mais detalhadamente. 
+Vamos examinar cada uma dessas áreas mais detalhadamente. 
 
 ## <a name="record-your-current-environment"></a>Registrar o ambiente atual
 Além disso, é comum haver alterações de design durante as fases de teste e implementação. Use o plano de design para documentar essas alterações e o raciocínio por trás delas conforme elas ocorrem.

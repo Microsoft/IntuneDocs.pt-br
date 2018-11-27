@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: dd0ce8cd25739113349663de989546dfa9d73d36
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 05cc1971f107c7bc3da371de0a916149c879aae0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310633"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187108"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune
 
@@ -68,7 +69,7 @@ Use as etapas a seguir para ajudá-lo a configurar o Endpoint Protection para o 
 
   ![Configurações do Endpoint Protection](media/pol-sa-pc-endpoint-policy.png)
 
-Também é possível exibir a política do Endpoint Protection implantada na página **Todas as Políticas** do espaço de trabalho **Política**.
+Também é possível exibir a política do Endpoint Protection implantada na página **Todas as Políticas** do workspace **Política**.
 
 ## <a name="specify-endpoint-protection-service-settings"></a>Especificar configurações do serviço Endpoint Protection
 
@@ -151,16 +152,16 @@ Você também pode **Receber definições dinâmicas baseadas nos relatórios do
 ## <a name="choose-management-tasks-for-endpoint-protection"></a>Escolher tarefas de gerenciamento do Endpoint Protection
 As tarefas a seguir lhe ajudarão a realizar várias tarefas de gerenciamento em computadores gerenciados que executam o Endpoint Protection:
 - Atualizar definições de malware
-  - Console do Intune – no espaço de trabalho **Grupos**, selecione os computadores que deseja atualizar. Escolha **Tarefas Remotas** &gt; **Atualizar Definições de Malware**.
+  - Console do Intune – no workspace **Grupos**, selecione os computadores que deseja atualizar. Escolha **Tarefas Remotas** &gt; **Atualizar Definições de Malware**.
   - Computador gerenciado - inicie o software cliente do Endpoint Protection na área de notificação do Windows. Escolha a guia **Atualização** e escolha **Atualizar**.
 - Executar uma verificação de malware:
-  - Console do Intune – no espaço de trabalho **Grupos**, selecione os computadores que deseja verificar. Escolha **Executar verificação completa de malware** ou **Executar verificação rápida de malware**.
+  - Console do Intune – no workspace **Grupos**, selecione os computadores que deseja verificar. Escolha **Executar verificação completa de malware** ou **Executar verificação rápida de malware**.
   - Computador gerenciado - inicie o software cliente do Endpoint Protection na área de notificação do Windows. Selecione **Rápida**, **Completa** ou **Personalizada**, e escolha **Verificar agora**.
 
 É possível exibir o status de uma tarefa remota, escolhendo o link **Tarefas Remotas** no canto inferior direito do console do Intune. A caixa de diálogo **Status da tarefa remota** lista as tarefas remotas atuais, seus status, nome do dispositivo e todos os erros reportados. Ela também fornece um link para informações de solução de problemas, se apropriado.
 
 ## <a name="monitor-endpoint-protection"></a>Monitorar o Endpoint Protection
-Monitore o status de malware em seus computadores, usando o espaço de trabalho **Proteção** do [console de administração do Microsoft Intune](https://manage.microsoft.com/). Esse espaço de trabalho contém duas páginas:
+Monitore o status de malware em seus computadores, usando o workspace **Proteção** do [console de administração do Microsoft Intune](https://manage.microsoft.com/). Esse workspace contém duas páginas:
 - **Visão geral da proteção** – exibe problemas importantes como links nos quais é possível clicar para obter mais informações. Veja a seguir alguns problemas que podem ser exibidos:
   - **Instâncias de malware que precisam de acompanhamento** – clique no link para ver uma lista de problemas de malware, incluindo a ação de acompanhamento que precisa ser tomada para resolver o problema. Também é possível explorar essa lista para ver quais computadores foram afetados.
   - **Computadores com malware que precisam de acompanhamento** – clique no link para ver todos os computadores com problemas de malware não resolvidos, incluindo a ação de acompanhamento que precisa ser tomada para resolver o problema.
@@ -171,7 +172,7 @@ Monitore o status de malware em seus computadores, usando o espaço de trabalho 
   - **Informações sobre este malware** – abre um tópico do Centro de Proteção contra Malware da Microsoft com mais informações sobre o malware.
 
 > [!IMPORTANT]
-> O espaço de trabalho **Proteção** não é exibido no console de administração até que você tenha instalado o cliente e gerencie pelo menos um cliente do computador.
+> O workspace **Proteção** não é exibido no console de administração até que você tenha instalado o cliente e gerencie pelo menos um cliente do computador.
 
   ![Monitorar o Endpoint Protection](media/pol-sa-ep-monitor.png)
 

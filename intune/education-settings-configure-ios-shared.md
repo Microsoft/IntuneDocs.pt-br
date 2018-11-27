@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029801"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181217"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Como definir as configurações de educação do Intune para dispositivos iPad compartilhados
 
@@ -183,7 +184,7 @@ O dispositivo agora está associado à categoria de dispositivo. Repita esse pro
 5. No painel de perfis, escolha **Criar Perfil**.
 6. No painel **Criar Associação**, insira um **Nome** e uma **Descrição**.
 7. Escolha **Selecionar Classes** > **Configurar** para associar grupos ao Perfil do Carrinho.
-8. Escolha as classes a serem incluídas no Perfil do Carrinho e escolha **Selecionar**. 
+8. Escolha as classes a serem incluídas no Perfil do Carrinho e escolha **Selecionar**. 
 9. Escolha **Selecionar Carrinhos** > **Configurar** para associar grupos ao Perfil do Carrinho.
 10. Escolha os grupos que devem ser incluídos no Perfil do Carrinho e escolha **Selecionar**.
 11. No painel **Criar Associação**, escolha **Salvar** para salvar o Perfil do Carrinho.
@@ -198,7 +199,7 @@ O perfil é criado e aparece no painel da lista de perfis.
 4. No painel **Configuração do Dispositivo**, escolha **Monitorar** > **Status de atribuição**.
 5. No painel **Status de atribuição**, selecione o **Perfil do Carrinho** que você criou.
 6. No painel **Perfil do Carrinho**, escolha **Atribuições** e, em seguida, em **Incluir**, escolha **Selecionar grupos a serem incluídos**.
-7. Selecione as classes para as quais você deseja direcionar o perfil do carrinho (não selecione um grupo) e escolha **Selecionar**. 
+7. Selecione as classes para as quais você deseja direcionar o perfil do carrinho (não selecione um grupo) e escolha **Selecionar**. 
 8. Quando você terminar, escolha **Salvar**.
 
 A atribuição é concluída e o Intune implanta o perfil do Classroom para os dispositivos de destino com base na atribuição de sala de aula.

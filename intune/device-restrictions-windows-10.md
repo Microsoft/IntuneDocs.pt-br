@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c49da9c323e1c4124ad76ae64e63a177edfcaa71
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576878"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189972"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrição de dispositivo para configurações do Windows 10 (e mais recentes) no Intune
 Este artigo mostra todas as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o Windows 10.

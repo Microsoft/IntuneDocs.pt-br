@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 6c20a54be851bba4343c383b722ca3e034e76a1c
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 7c6bdbde87f6438696b5a262ba1890532dcfccdd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310616"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180844"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune
 
@@ -30,12 +31,12 @@ O Microsoft Intune pode ajudá-lo a proteger seus computadores gerenciados de v�
 
 Se você ainda não tiver instalado o cliente do Intune em seus computadores, consulte [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar o cliente do computador Windows com o Microsoft Intune).
 
-Quando houver novas atualizações disponíveis no Microsoft Update ou você tiver criado uma atualização de terceiros, e elas forem aplicáveis aos seus computadores gerenciados, é exibida uma notificação na página **Visão Geral** do espaço de trabalho **Atualizações**. Depois de escolher esse link de notificação, você poderá executar várias operações, como exibir mais informações sobre a atualização, aprovar ou recusar a atualização e exibir os computadores que instalarão a atualização, caso seja aprovada.
+Quando houver novas atualizações disponíveis no Microsoft Update ou você tiver criado uma atualização de terceiros, e elas forem aplicáveis aos seus computadores gerenciados, é exibida uma notificação na página **Visão Geral** do workspace de **Atualizações**. Depois de escolher esse link de notificação, você poderá executar várias operações, como exibir mais informações sobre a atualização, aprovar ou recusar a atualização e exibir os computadores que instalarão a atualização, caso seja aprovada.
 
 > [!IMPORTANT]
-> O espaço de trabalho **Atualizações** não é exibido no console do administrador até que você tenha instalado o cliente e gerencie com êxito pelo menos um cliente do computador.
+> O workspace de **Atualizações** não é exibido no console do administrador até que você tenha instalado o cliente e gerencie com êxito pelo menos um cliente do computador.
 
-À medida que as atualizações são aprovadas e instaladas, você pode examinar o êxito ou a falha da instalação no espaço de trabalho **Atualizações** do console do Intune.
+À medida que as atualizações são aprovadas e instaladas, você pode examinar o êxito ou a falha da instalação no workspace de **Atualizações** do console do Intune.
 
 As seções a seguir ajudarão você a manter o software atualizado nos computadores gerenciados.
 
@@ -191,10 +192,10 @@ Algumas atualizações usam interpretações não padrão para códigos de retor
 
 A atualização carregada é colocada em seu armazenamento em nuvem do Intune. Se não tiver espaço livre suficiente para carregar o pacote de atualização, você será notificado durante o processo de upload. O Intune não pode determinar o espaço livre suficiente após o upload de atualização foi iniciado, porque os arquivos de configuração e instalação compactados exigem mais espaço quando são descompactados.
 
-Depois de carregada no Intune, uma atualização de terceiros é exibida no espaço de trabalho **Atualizações**, no painel **Todas as Atualizações**. Você pode aprovar e implantar a atualização. Para obter mais informações, consulte a seguinte seção "Aprovar e recusar atualizações".
+Depois de carregada no Intune, uma atualização de terceiros é exibida no workspace de **Atualizações**, no painel **Todas as Atualizações**. Você pode aprovar e implantar a atualização. Para obter mais informações, consulte a seguinte seção "Aprovar e recusar atualizações".
 
 ## <a name="approve-and-decline-updates"></a>Aprovar e recusar atualizações
-Quando as atualizações estiverem prontas para instalação, é mostrada uma mensagem na página **Visão Geral das Atualizações** do espaço de trabalho **Atualizações** , em **Status da Atualização**. Escolha esta mensagem para abrir a página **Todas as Atualizações** para ver quais atualizações estão prontas para aprovação.
+Quando as atualizações estiverem prontas para instalação, é mostrada uma mensagem na página **Visão Geral das Atualizações** do workspace de **Atualizações**, em **Status da Atualização**. Escolha esta mensagem para abrir a página **Todas as Atualizações** para ver quais atualizações estão prontas para aprovação.
 
 É possível usar a lista **Filtros** para facilitar a localização das atualizações nas janelas. Por exemplo, você pode exibir apenas as atualizações que falharam ou atualizações que foram substituídas.
 
@@ -213,7 +214,7 @@ Ao selecionar uma atualização na lista, outros comandos estão disponíveis, p
 
 1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Atualizações** &gt; **Visão geral** &gt; **Novas atualizações a serem aprovadas**.
 
-    No espaço de trabalho **Atualizações**, escolha **Visão geral** &gt; **Novas atualizações a serem aprovadas**.
+    No workspace de **Atualizações**, escolha **Visão geral**&gt;**Novas atualizações a serem aprovadas**.
 
     > [!NOTE]
     > O link **Novas atualizações a serem aprovadas** aparecerá na área **Status da Atualização** apenas quando houver ao menos um computador gerenciado que precise que uma atualização seja aprovada.

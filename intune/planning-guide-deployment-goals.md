@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961452"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189343"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar as metas, os objetivos e os desafios de implantação
 
@@ -78,7 +79,7 @@ Objetivos de implantação são as medidas que sua organização pode tomar para
 
 Desafios de implantação são problemas prioritários de uma organização e que podem ter um impacto negativo na implantação. Às vezes, eles estão relacionados a problemas que já ocorreram em projetos anteriores e que você gostaria de evitar ou a novos problemas relacionados ao esforço de implantação atual. Veja abaixo uma lista de alguns exemplos de desafios de implantação do Intune, juntamente com as possíveis mitigações.
 
--   A preparação de suporte e a experiência do usuário final não estão incluídos em um escopo do projeto inicial. Isso leva à adoção insatisfatória do usuário final e a desafios para sua organização de suporte.
+-   A preparação de suporte e a experiência do usuário final não estão incluídos em um escopo do projeto inicial. Isso leva à adoção insatisfatória do usuário final e a desafios para sua organização de suporte.
 
     -   **Mitigação:** incorporar o treinamento de suporte. Valide a experiência do usuário final com as métricas de sucesso em seu plano de implantação.
 

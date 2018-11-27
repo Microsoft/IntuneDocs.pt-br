@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117864"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179493"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A ação de dispositivo **Sincronizar** força o dispositivo selecionado a fazer check-in no Intune imediatamente. Quando um dispositivo faz check-in, ele recebe imediatamente as ações pendentes ou políticas que foram atribuídas a ele. Esse recurso pode ajudá-lo a validar e a solucionar problemas das políticas que você atribuiu, imediatamente, sem precisar esperar o próximo check-in agendado.
+A ação de dispositivo **Sincronizar** força o dispositivo selecionado a fazer check-in no Intune imediatamente. Quando um dispositivo faz check-in, ele recebe imediatamente as ações pendentes ou políticas que foram atribuídas a ele. Esse recurso pode ajudá-lo a validar e a solucionar problemas das políticas que você atribuiu, imediatamente, sem precisar esperar o próximo check-in agendado.
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
