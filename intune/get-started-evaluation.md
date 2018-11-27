@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 261d15a2731ef6b388eba0f0c6d5cd025e8c3509
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 8adb038fbd5fa1b4ad2400a215eb228b81433bde
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576710"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186895"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>O que o Intune pode fazer para minha empresa?
 O Microsoft Intune é um serviço de EMM (gerenciamento de mobilidade empresarial) baseado em nuvem que ajuda a habilitar sua força de trabalho a ser produtiva enquanto mantém dados corporativos protegidos.
