@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231467"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187443"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector do Zimperium Mobile Threat Defense ao Intune
 
@@ -58,7 +59,7 @@ Quando aplicativos mal-intencionados, como malwares, são detectados nos disposi
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
-Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes Wi-Fi com base no risco do dispositivo.
+Detecte ameaças como  **Man-in-the-middle**  na rede e proteja o acesso a redes Wi-Fi com base no risco do dispositivo.
 
 **Bloquear o acesso à rede por meio de Wi-Fi:**
 
@@ -70,7 +71,7 @@ Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes W
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
-Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização de arquivos corporativos com base no risco ao dispositivo.
+Detecte ameaças como  **Man-in-the-middle**  na rede e impeça a sincronização de arquivos corporativos com base no risco do dispositivo.
 
 **Bloquear o SharePoint Online quando ameaças à rede forem detectadas:**
 
@@ -94,7 +95,7 @@ Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização 
 
 -   Assinatura do Zimperium Mobile Threat Defense
 
-    -   Para obter mais informações, consulte o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
+    -   Para obter mais informações, consulte [site do Zimperium](https://www.zimperium.com/zips-mobile-ips) para obter mais informações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

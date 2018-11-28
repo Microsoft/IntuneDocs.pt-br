@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310565"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181115"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 
@@ -38,7 +39,7 @@ A política de Firewall do Windows permite criar e implantar as configurações 
 > [!NOTE]
 > Se a política do Microsoft Intune e a Política de grupo estiverem configuradas para gerenciar a mesma configuração no computador, a configuração da Política de grupo substituirá a política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre a política do Intune e a Política de Grupo, consulte [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) (Resolver conflitos de política de GPO e do Microsoft Intune).
 >
-> Se você quiser implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deve primeiro instalar o [Hotfix KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
+> Se desejar implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deverá primeiro instalar o [Hotfix KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
 
 > [!IMPORTANT]
 > Para gerenciar o Firewall do Windows usando o Intune, verifique se os dois serviços a seguir estão habilitados nos computadores que você gerencia:
@@ -54,7 +55,7 @@ A política de Firewall do Windows permite criar e implantar as configurações 
 
     A seção a seguir lista os valores que você pode configurar na política e também os valores padrão que serão usados se a política não for personalizada.
 
-Após implantar uma política de Firewall do Windows, você pode exibir seu status na página **Todas as políticas** no espaço de trabalho **Política**.
+Após implantar uma política de Firewall do Windows, você pode exibir seu status na página **Todas as políticas** no workspace **Política**.
 
 ## <a name="specify-policy-settings-for-windows-firewall"></a>Especificar as configurações de política do Firewall do Windows
 
@@ -79,7 +80,7 @@ Essas configurações de política configuram Firewall do Windows para bloquear 
 O valor padrão para cada uma dessas configurações é **Sim**, que é o valor mais seguro.
 
 > [!IMPORTANT]
-> Se seu ambiente incluir computadores gerenciados que executam o Windows Vista sem service packs instalados, você deverá instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) da Base de Dados de Conhecimento Microsoft ou desabilitar as configurações da política **Bloquear todas as conexões de entrada** nas políticas implantadas nesses computadores.
+> Se o seu ambiente incluir computadores gerenciados que executam o Windows Vista sem service packs instalados, você deverá instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) da Base de Dados de Conhecimento Microsoft ou desabilitar as configurações da política **Bloquear todas as conexões de entrada** nas políticas implantadas nesses computadores.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notificar o usuário quando o Firewall do Windows bloquear um novo programa
 

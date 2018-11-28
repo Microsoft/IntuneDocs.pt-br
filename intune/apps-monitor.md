@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075620"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181880"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -67,7 +68,9 @@ Os gráficos mostram o número de aplicativos para o seguinte status:
 >    - Uma alteração de direcionamento de um aplicativo gerenciado instalado pode fazer com que a contagem de instalações na folha de status diminua, mas continue a ser informada nos aplicativos detectados.
 >    - O direcionamento de várias instâncias do mesmo aplicativo em um locatário resultará em contagens diferentes devido à potencial sobreposição de usuários ou dispositivos. Cada instância do aplicativo contará usuários sobrepostos, mas os aplicativos detectados terão contagens duplicadas.
 >    - Os aplicativos detectados e status de aplicativos são coletados em intervalos de tempo diferentes, o que pode causar uma discrepância na contagem de aplicativos.
- 
+> 
+> Além disso, lembre-se de que os aplicativos Android implantados como **Disponível com ou sem registro** relatam apenas o status de instalação do aplicativo para dispositivos registrados. O status de instalação do aplicativo não está disponível para dispositivos que não estão registrados no Intune.
+
 ### <a name="device-install-status"></a>Status de instalação do dispositivo
 
 Uma lista de status do dispositivo é exibida quando você seleciona **Status de instalação do dispositivo** na seção **Monitorar** do menu. A tabela de detalhes inclui as seguintes colunas:

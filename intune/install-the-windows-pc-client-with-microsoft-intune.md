@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425012"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179058"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
 
@@ -119,7 +120,7 @@ Se os usuários ainda não tiverem recebido uma licença do Intune ou se a autor
 
 Se os usuários tiverem recebido uma licença do Intune e a autoridade de MDM da organização tiver sido definida para o Intune:
 
-- Os usuários do Windows 7 ou Windows 8 podem ver APENAS a opção de registro no Intune, baixando e instalando o software cliente do PC exclusivo de sua organização.
+- Os usuários de computador do Windows 7 ou Windows 8 podem ver APENAS a opção de registro no Intune baixando e instalando o software cliente do computador exclusivo de sua organização.
 
 - Os usuários de do Windows 8.1 ou Windows 10 têm duas opções de registro:
 
@@ -256,7 +257,7 @@ Verifique o "%ProgramFiles%\Microsoft\OnlineManagement" e certifique-se de que s
 
 O processo de cancelamento de registro não remove a pasta OnlineManagement. Aguarde 30 minutos após a desinstalação e, em seguida, execute este comando. Se você o executar muito cedo, a desinstalação poderá ser deixada em um estado desconhecido. Para remover a pasta, inicie um prompt elevado e execute:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Próximas etapas
 [Gerenciar dispositivos com o Microsoft Intune](device-management.md)

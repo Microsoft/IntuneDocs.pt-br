@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167528"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303865"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -66,7 +67,7 @@ Recomendamos publicar o servidor NDES por meio de um proxy reverso, como o [Prox
 |**Modelo de certificado**|Configure este modelo na AC emissora.|
 |**Certificado de autenticação de cliente**|Solicitado pela AC emissora ou pública, você instala este certificado no servidor de NDES.|
 |**Certificado de autenticação de servidor**|Solicitado da AC emissora pública, você instala e associa o certificado SSL no IIS no servidor de NDES. Se o certificado tiver o conjunto de usos de chave de autenticação de cliente e servidor (**Usos de Chave Avançados**), você poderá usar o mesmo certificado.|
-|**Certificado de AC raiz confiável**|Exporte esse certificado como um arquivo **.cer** da AC raiz ou de qualquer dispositivo que confie em sua AC raiz. Em seguida, atribua-o a dispositivos usando o perfil do certificado de autoridade de certificação confiável.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
+|**Certificado de AC raiz confiável**|Exporte esse certificado como um arquivo **.cer** da AC raiz ou de qualquer dispositivo que confie em sua AC raiz. Em seguida, atribua-o a usuários, dispositivos ou ambos usando o perfil do Certificado de Autoridade de Certificação confiável.<br /><b>OBSERVAÇÃO:<b /> quando um perfil de certificado SCEP for atribuído, certifique-se de atribuir o perfil do Certificado raiz confiável referenciado no perfil de certificado SCEP ao mesmo grupo de dispositivos ou usuários.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
 
 ### <a name="accounts"></a>Contas
 
@@ -481,7 +482,7 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
      - **Assinatura digital**: permita a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave
    - **Tamanho da chave (bits)**: selecione o número de bits contidos na chave
    - **Algoritmo de hash:** (Android, Windows Phone 8.1, Windows 8.1 e Windows 10): selecione um dos tipos de algoritmo de hash disponíveis para ser usado com esse certificado. Selecione o nível mais alto de segurança que dá suporte aos dispositivos de conexão.
-   - **Certificado Raiz**: escolha um perfil de Certificado de Autoridade de Certificação raiz configurado anteriormente e atribuído ao usuário ou dispositivo. Esse certificado de Autoridade de Certificação deve ser o certificado raiz da Autoridade de Certificação que emite o certificado que você está configurando neste perfil de certificado.
+   - **Certificado Raiz**: escolha um perfil de Certificado de Autoridade de Certificação raiz configurado anteriormente e atribuído ao usuário e/ou dispositivo. Esse certificado de Autoridade de Certificação deve ser o certificado raiz da Autoridade de Certificação que emite o certificado que você está configurando neste perfil de certificado. Certifique-se de atribuir esse perfil de certificado raiz confiável ao mesmo grupo atribuído no perfil de certificado SCEP.
    - **Uso estendido de chave**: escolha **Adicionar** valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exige a **Autenticação de cliente** para que o usuário ou dispositivo possa autenticar-se em um servidor. No entanto, você pode adicionar outros usos da chave conforme necessário.
    - **Configurações de Registro**
      - **Limite de renovação (%)**: insira o percentual do tempo de vida do certificado restante antes da renovação das solicitações de dispositivo do certificado.
