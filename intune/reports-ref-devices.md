@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181439"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112913"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para entidades de dispositivos
 
@@ -316,7 +316,7 @@ A entidade **DevicePropertyHistory** tem as mesmas propriedades que a tabela de 
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-A entidade **MdmDeviceInventoryHistories** contém instantâneos diários de dados de inventário de dispositivos gerenciados pelo MDM dos últimos 90 dias. A coluna DateKey indica o dia para a linha. Algumas propriedades podem não ser aplicáveis nem preenchidas para todos os dispositivos, por isso, consulte esta página para obter mais detalhes. Para obter mais informações, consulte [Compreenda seus dispositivos com um inventário no Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+A entidade **MdmDeviceInventoryHistories** contém instantâneos diários de dados de inventário de dispositivos gerenciados pelo MDM dos últimos 90 dias. A coluna DateKey indica o dia para a linha. Algumas propriedades podem não ser aplicáveis nem preenchidas para todos os dispositivos, por isso, consulte esta página para obter mais detalhes. Para obter mais informações, consulte [Compreenda seus dispositivos com um inventário no Microsoft Intune](device-inventory.md).
 
 | Propriedade  | Descrição |
 |---------|------------|

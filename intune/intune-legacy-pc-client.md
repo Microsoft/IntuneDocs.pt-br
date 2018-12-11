@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185620"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112316"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune no console do Azure e cliente para PC herdado do Intune
 
@@ -53,7 +53,7 @@ Para Windows 7, que não pode ser gerenciado por meio do MDM, continuaremos a da
 
 ## <a name="mdm-capabilities"></a>Recursos de MDM
 
-Para obter uma comparação detalhada do cliente para PC e dos recursos de MDM, veja [Comparar o gerenciamento de PCs com Windows como computadores ou dispositivos móveis](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison). As atualizações do MDM continuarão a trazer novos recursos de gerenciamento para dispositivos Windows 10 inscritos em MDM, incluindo opções de avaliação para aplicativos Win 32. Confira [Novidades](https://docs.microsoft.com/intune/whats-new) para conhecer as adições à versão mais recente do serviço.
+Para obter uma comparação detalhada do cliente para PC e dos recursos de MDM, veja [Comparar o gerenciamento de PCs com Windows como computadores ou dispositivos móveis](pc-management-comparison.md). As atualizações do MDM continuarão a trazer novos recursos de gerenciamento para dispositivos Windows 10 inscritos em MDM, incluindo opções de avaliação para aplicativos Win 32. Confira [Novidades](https://docs.microsoft.com/intune/whats-new) para conhecer as adições à versão mais recente do serviço.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Alternar do cliente para PC para MDM
 
