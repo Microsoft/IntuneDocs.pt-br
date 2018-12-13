@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0fc0e5bdb261b3cfbc2e5507e1206354d8cc4051
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181324"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630044"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -199,8 +199,9 @@ Se seu aplicativo já usar a ADAL, serão necessárias as seguintes configuraç�
 
 3. Também no dicionário **IntuneMAMSettings** com o nome de chave `ADALRedirectUri`, especifique o URI de redirecionamento a ser usado para chamadas da ADAL. Como alternativa, você poderia especificar `ADALRedirectScheme` em vez disso, se o URI de redirecionamento do aplicativo estiver no formato `scheme://bundle_id`.
 
-
 Além disso, os aplicativos podem substituir essas configurações do Azure AD no tempo de execução. Para fazer isso, basta definir as propriedades `aadAuthorityUriOverride`, `aadClientIdOverride` e `aadRedirectUriOverride` na instância `IntuneMAMPolicyManager`.
+
+4. Certifique-se de seguir as etapas para conceder permissões do aplicativo iOS para o serviço da APP (política de proteção de aplicativo). Use as instruções na [Introdução ao guia do SDK do Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) em "Fornecer ao aplicativo o acesso ao serviço de proteção de aplicativo do Intune (opcional)".  
 
 > [!NOTE]
 > A abordagem do Info.plist é recomendada para todas as configurações estáticas e não precisa ser determinada em tempo de execução. Os valores atribuídos para as propriedades `IntuneMAMPolicyManager` têm precedência sobre valores correspondentes especificados no Info.plist, e serão mantidos até mesmo após a reinicialização do aplicativo. O SDK continuará a usá-los para verificações de política até que o registro do usuário seja cancelado ou os valores sejam limpos ou alterados.

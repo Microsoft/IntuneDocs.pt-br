@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187286"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829140"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autônomo – gerenciamento de aplicativos Win32 (versão prévia pública)
 
@@ -29,15 +29,11 @@ O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplica
 
 ## <a name="prerequisites-for-public-preview"></a>Pré-requisitos para versão prévia pública
 
-- Windows 10 versão 1607 ou posterior (Enterprise)
+- Windows 10 versão 1607 ou posterior (versões Education, Pro e Enterprise)
 - O cliente do Windows 10 precisa ser: 
     - ingressado no AAD (Azure Active Directory) ou Azure Active Directory Híbrido, e
     - registrado no Intune (gerenciado pelo MDM)
 - O tamanho do aplicativo do Windows tem um limite de 8 GB por aplicativo na versão prévia pública 
-
-> [!NOTE]
-> No momento, estamos testando as edições Pro e Educação do Windows 10 versão 1607 e ficaremos felizes em receber seus comentários.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar o conteúdo do aplicativo Win32 para upload
 
@@ -186,7 +182,7 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
     - **Usar um script de detecção personalizado** – Especifique o script do PowerShell que será usado para detectar este aplicativo. 
     
         1.  **Arquivo de script** – Selecione um script do PowerShell que detectará a presença do aplicativo no cliente. O aplicativo será detectado quando o script retornar um código de saída de valor 0 e escrever um valor de cadeia de caracteres em STDOUT.
-        2.  **Executar script como um processo de 32 bits em clientes de 64 bits** – Selecione **Sim** para executar o script usando as credenciais do usuário final conectado. Selecione **Não** (padrão) para executar o script no contexto do sistema.
+        2.  **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script usando as credenciais do usuário final conectado. Selecione **Não** (padrão) para executar o script no contexto do sistema.
         3.  **Impor a verificação da assinatura de script** – Selecione **Sim** para verificar se o script é assinado por um fornecedor confiável, que permitirá que o script seja executado sem a exibição de avisos ou prompts. O script será executado desbloqueado. Selecione **Não** (padrão) para executar o script com a confirmação do usuário final sem verificação de assinatura.
     
         O sidecar do Intune verifica os resultados do script. Ele lê os valores gravados pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se o script for encerrado com um valor diferente de zero, o script falhará e o status de detecção do aplicativo não será instalado. Se o código de saída for zero e STDOUT tiver dados, o status de detecção do aplicativo será Instalado. 
@@ -200,7 +196,7 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 
 1.  No painel **Adicionar aplicativo**, selecione **Códigos de retorno** para adicionar os códigos de retorno usados para especificar o comportamento de repetição da instalação de aplicativo ou o comportamento pós-instalação. As entradas do código de retorno são adicionadas por padrão durante a criação do aplicativo. No entanto, é possível adicionar mais códigos de retorno ou alterar os existentes. 
 2.  No painel **Códigos de retorno**, adicione mais códigos de retorno ou modifique os existentes.
-    - **Com falha** – O valor retornado que indica uma falha na instalação do aplicativo.
+    - **Com falha**: o valor retornado que indica uma falha na instalação do aplicativo.
     - **Reinicialização forçada** – o código de retorno de reinicialização forçada não permite que aplicativos Win32 próximos sejam instalados no cliente sem reinicialização. 
     - **Reinicialização suave** – O código de retorno de reinicialização suave permite que o aplicativo Win32 próximo seja instalado sem a necessidade de uma reinicialização do cliente. A reinicialização é necessária para concluir a instalação do aplicativo atual.
     - **Repetição** – O agente do código de retorno de repetição tentará instalar o aplicativo três vezes. Ele aguardará 5 minutos entre cada tentativa. 
@@ -228,13 +224,17 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 
 Nesse ponto, você concluiu as etapas para adicionar um aplicativo Win32 ao Intune. Para obter informações sobre a atribuição e monitoramento de aplicativos, confira [Atribuir aplicativos a grupos no Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) e [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor) (Monitorar informações e atribuições de aplicativo com o Microsoft Intune).
 
+## <a name="delivery-optimization"></a>Otimização de Entrega
+
+Os clientes do Windows 10 RS3 e superiores baixarão o conteúdo do aplicativo Intune Win32 usando um componente de otimização de entrega no cliente do Windows 10. A otimização de entrega tem a funcionalidade de ponto a ponto ativada por padrão. A otimização de entrega pode ser configurada pela política de grupo e, no futuro, por meio do MDM do Intune. Para saber mais, consulte [Otimização de entrega para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Instalar aplicativos obrigatórios e disponíveis em dispositivos
 
-O usuário final verá as Notificações do sistema do Windows para as instalações de aplicativo obrigatórios e disponíveis. A imagem a seguir mostra um exemplo de notificação do sistema em que a instalação do aplicativo não é concluída até que o dispositivo seja reiniciado. 
+O usuário final verá as Notificações do sistema do Windows para as instalações de aplicativo obrigatórias e disponíveis. A imagem a seguir mostra um exemplo de notificação do sistema em que a instalação do aplicativo não é concluída até que o dispositivo seja reiniciado. 
 
 ![Exemplo de captura de tela das notificações do sistema do Windows para uma instalação de aplicativo](./media/apps-win32-app-08.png)    
 
-A imagem a seguir notifica o usuário final de que alterações no aplicativo estão sendo feitas no dispositivo.
+A imagem a seguir notifica o usuário final de há alterações do aplicativo sendo feitas no dispositivo.
 
 ![Exemplo de captura de tela da notificação do usuário final de que alterações no aplicativo estão sendo feitas no dispositivo](./media/apps-win32-app-09.png)    
 

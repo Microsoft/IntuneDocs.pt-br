@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190397"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829174"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
@@ -639,21 +639,9 @@ Não há valores de manifesto adicionais que precisem ser configurados.
 
 Autoridade e NonBrokerRedirectURI poderão ser especificados, se necessário.
 
-Registre seu aplicativo no Azure AD usando as etapas a seguir.
-
-No portal do Azure:
-1.  Acesse a folha **Azure Active Directory**.
-2.  Selecione o **Registro de aplicativo** configurado para o aplicativo.
-3.  Em **Configurações**, no cabeçalho **Acesso à API**, selecione **Permissão obrigatória**. 
-4.  Clique em **+ Adicionar**.
-5.  Clique em **Selecionar uma API**. 
-6.  Na caixa de pesquisa, insira **Gerenciamento de Aplicativo Móvel da Microsoft**.
-7.  Selecione **Gerenciamento de Aplicativo Móvel da Microsoft** na lista de APIs e clique em Selecionar.
-8.  Selecione **Ler e Gravar os Dados de Gerenciamento de Aplicativos do Usuário**.
-9.  Clique em **Concluído**.
-10. Clique em **Conceder permissões** e clique em **Sim**. 
-
-Confira [aqui](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) informações sobre como registrar um aplicativo no Azure AD. 
+Registre seu aplicativo no Azure AD usando as etapas a seguir:
+* Confira [aqui](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) informações sobre como registrar um aplicativo no Azure AD. 
+* Certifique-se de seguir as etapas para conceder permissões do aplicativo Android para o serviço da APP (política de proteção de aplicativo). Use as instruções na [Introdução ao guia do SDK do Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) em "Fornecer ao aplicativo o acesso ao serviço de proteção de aplicativo do Intune (opcional)". 
 
 Consulte também os requisitos para [Acesso Condicional](#conditional-access) abaixo.
 
@@ -922,7 +910,7 @@ O Intune permite que você utilize todos os [recursos de Backup Automático](htt
     ```
 
 
-2. **[Opcional]**  Se você tiver implementado um BackupAgent personalizado opcional, precisará usar MAMBackupAgent ou MAMBackupAgentHelper. Confira as seções a seguir. Use o **MAMDefaultFullBackupAgent** do Intune (descrito na etapa 1), que fornece backup fácil no Android M e superior.
+2. **[Opcional] ** Se você tiver implementado um BackupAgent personalizado opcional, precisará usar MAMBackupAgent ou MAMBackupAgentHelper. Confira as seções a seguir. Use o **MAMDefaultFullBackupAgent** do Intune (descrito na etapa 1), que fornece backup fácil no Android M e superior.
 
 3. Quando decidir qual tipo de backup completo seu aplicativo deve receber (filtrado, não filtrado ou nenhum), você precisará definir o atributo `android:fullBackupContent` como true, false ou um recurso XML em seu aplicativo.
 

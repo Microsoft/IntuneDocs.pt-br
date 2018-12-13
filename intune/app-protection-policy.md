@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179160"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389862"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
@@ -66,9 +66,9 @@ Há benefícios adicionais ao usar MDM com políticas de proteção de aplicativ
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas com suporte para as políticas de proteção de aplicativo
-O suporte da plataforma de políticas de Proteção de Aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo móvel do Office. Para obter detalhes, confira a seção **Aplicativos móveis** dos [Requisitos de sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+O suporte da plataforma de políticas de proteção de aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo móvel do Office para dispositivos com Android e iOS. Para obter detalhes, confira a seção **Aplicativos móveis** dos [Requisitos de sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Não há suporte para dispositivos Windows. No entanto, quando registra dispositivos Windows 10 no Intune, você pode usar a Proteção de Informações do Windows, que oferece funcionalidades semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Não há suporte para dispositivos Windows. No entanto, você pode usar a Proteção de Informações do Windows, que oferece recursos semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicativo protegem dados do aplicativo
@@ -146,7 +146,9 @@ Embora a política **Global** se aplique a todos os usuários em seu locatário,
 
 Aplicativos que dão suporte a várias identidades permitem usar contas diferentes (pessoal e corporativa) para acessar os mesmos aplicativos. Por outro lado, políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho.
 
-Por exemplo, considere um usuário que inicia o aplicativo OneDrive usando sua conta corporativa. No contexto de trabalho, ele não pode mover arquivos para um local de armazenamento pessoal. Mais tarde, quando ele usa o OneDrive com sua conta pessoal, pode copiar e mover dados do seu OneDrive pessoal sem restrições.
+Para obter um exemplo de um contexto pessoal, considere um usuário que inicia um novo documento no Word, isso é considerado um contexto pessoal, portanto, as políticas de Proteção de Aplicativo do Intune não são aplicadas. Assim que o documento for salvo na conta corporativa do OneDrive, considera-se que tem um contexto corporativo, e as políticas de Proteção de Aplicativo do Intune serão aplicadas.
+
+Como exemplo de contexto de trabalho, considere um usuário que inicia o aplicativo OneDrive usando sua conta corporativa. No contexto de trabalho, ele não pode mover arquivos para um local de armazenamento pessoal. Mais tarde, quando ele usa o OneDrive com sua conta pessoal, pode copiar e mover dados do seu OneDrive pessoal sem restrições.
 
 - Saiba mais sobre os aplicativos que oferecem suporte a [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 

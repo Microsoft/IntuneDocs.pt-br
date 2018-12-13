@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185943"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728830"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configurações de quiosque para Windows 10 (e posteriores) no Intune
 
@@ -200,3 +200,5 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 
 ## <a name="next-steps"></a>Próximas etapas
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
+
+Também é possível criar perfis de quiosque para dispositivos com [Android](device-restrictions-android.md#kiosk) e [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings).

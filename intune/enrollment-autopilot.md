@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180843"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829093"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -82,8 +82,8 @@ Os perfis de implantação do Autopilot são usados para configurar os dispositi
     - **Implantação automática (versão prévia)**: (exige o [Build do Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) mais recente) Dispositivos com esse perfil não são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário não são necessárias para registrar o dispositivo.
 5. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD**.
 6. Escolha **OOBE (configuração inicial pelo usuário)**, configure as opções a seguir e escolha **Salvar**:
-    - **Idioma (Região)***: escolha o idioma que pretende usar no dispositivo. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
-    - **Configurar teclado automaticamente***: se um **Idioma (Região)** estiver selecionado, escolha **Sim** para ignorar a página de seleção de teclado. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
+    - **Idioma (Região)**\*: escolha o idioma que pretende usar no dispositivo. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
+    - **Configurar o teclado automaticamente**\*: se um **Idioma (Região)** estiver selecionado, escolha **Sim** para ignorar a página de seleção de teclado. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
     - **EULA (Contrato de Licença de Usuário Final)**: (Windows 10, versão 1709 ou posterior) Escolha se deseja mostrar o EULA aos usuários.
     - **Configurações de privacidade**: escolha se deseja mostrar as configurações de privacidade aos usuários.
     - **Ocultar opções de alteração de conta (somente Participante do Programa Windows Insider)**: escolha **Ocultar** para impedir que as opções de alteração de conta sejam exibidas nas páginas de entrada e de erro de domínio da empresa. Essa opção exige que a [identidade visual da empresa seja configurada no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).

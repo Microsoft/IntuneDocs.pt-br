@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 51b1df246c23f2e1571b3bccc3f4f26ae91e26dd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0a2a096bfb4b5fafd895425a775abc13afc643e2
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178345"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728529"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Configurações de restrição de dispositivo macOS do Microsoft Intune
 
@@ -28,15 +28,27 @@ ms.locfileid: "52178345"
 Este artigo mostra as configurações de restrições de dispositivo do Microsoft Intune que você pode definir para dispositivos que executam o macOS.
 
 ## <a name="password"></a>Senha
--   **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
-    -   **Tipo de senha necessária** – Especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números). Essa configuração só tem suporte no Mac OS X versão 10.10.3 e posterior.
-    -   **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caractere complexo é um símbolo, por exemplo "**?**".
-    -   **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
-    -   **Senhas simples** – Permita o uso de senhas simples como **0000** ou **1234**.
-    -   **Máximo de minutos após o bloqueio de tela antes da senha ser exigida** – Especifique quanto tempo o computador deverá ficar inativo antes da senha ser necessária para desbloqueá-lo.
-    -   **Máximo de minutos de inatividade para o bloqueio de tela** – Especifique o período que um computador deve permanecer ocioso antes da tela ser bloqueada.
-    -   **Expiração de senha (dias)** – Especifique o número de dias que precisam transcorrer antes que o usuário precise alterar a senha (de **1** a **255** dias).
-    -   **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que não podem ser reutilizadas (de **1** a **24**).
+- **Senha** – Exige que o usuário final insira uma senha para acessar o dispositivo.
+  - **Tipo de senha necessária** – Especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números). Essa configuração só tem suporte no Mac OS X versão 10.10.3 e posterior.
+  - **Número de caracteres não alfanuméricos na senha** – Especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caractere complexo é um símbolo, por exemplo "**?**".
+  - **Tamanho mínimo da senha** – Insira o tamanho mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
+  - **Senhas simples** – Permita o uso de senhas simples como **0000** ou **1234**.
+  - **Máximo de minutos após o bloqueio de tela antes da senha ser exigida** – Especifique quanto tempo o computador deverá ficar inativo antes da senha ser necessária para desbloqueá-lo.
+  - **Máximo de minutos de inatividade para o bloqueio de tela** – Especifique o período que um computador deve permanecer ocioso antes da tela ser bloqueada.
+  - **Expiração de senha (dias)** – Especifique o número de dias que precisam transcorrer antes que o usuário precise alterar a senha (de **1** a **255** dias).
+  - **Impedir a reutilização de senhas anteriores** – Especifique o número de senhas usadas anteriormente que não podem ser reutilizadas (de **1** a **24**).
+
+- **Bloquear o AutoPreenchimento de senha**: escolha **Bloquear** para evitar o uso do recurso de Preenchimento Automático de Senhas no macOS. Escolher **Bloquear** também faz o seguinte:
+
+  - Os usuários não receberão uma solicitação para usar uma senha salva no Safari ou em qualquer outro aplicativo.
+  - As senhas fortes automáticas ficam desabilitadas, e o usuário não recebe sugestões de senhas fortes.
+
+  **Não configurado** permite esses recursos.
+
+- **Bloquear solicitações de proximidade de senha **: escolha **Bloquear** para que um dispositivo de usuário não solicite senhas de dispositivos próximos. **Não configurado** permite essas solicitações de senha.
+
+- **Bloquear o compartilhamento de senha**: **Bloquear** impede o compartilhamento de senhas entre dispositivos usando o AirDrop. **Não configurado** permite o compartilhamento das senhas.
+
 
 ## <a name="restricted-apps"></a>Aplicativos restritos
 

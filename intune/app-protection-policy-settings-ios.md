@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184736"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728949"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ As configurações de política descritas neste artigo podem ser [configuradas](
 
 Há três categorias de configurações de política: *Realocação de dados*, *Requisitos de acesso* e *Inicialização condicional*. Neste artigo, o termo ***aplicativos gerenciados por política*** refere-se a aplicativos configurados com políticas de proteção de aplicativo.
 
-##  <a name="data-relocation-settings"></a>Configurações de realocação de dados
+##  <a name="data-protection-settings"></a>Configurações de proteção de dados
 
 | Setting | Como usar |  
 |------|------| 
@@ -47,7 +47,7 @@ Há três categorias de configurações de política: *Realocação de dados*, *
 
 
 > [!NOTE]
-> Nenhuma das configurações de relocação de dados controla o recurso “Abrir em” gerenciado pela Apple em dispositivos iOS. Para usar o recurso “Open-in” gerenciado pela Apple, consulte [Gerenciar a transferência de dados entre aplicativos iOS com o Microsoft Intune](data-transfer-between-apps-manage-ios.md).
+> Nenhuma das configurações de proteção de dados controla o recurso “Abrir em” gerenciado pela Apple em dispositivos iOS. Para usar o recurso “Open-in” gerenciado pela Apple, consulte [Gerenciar a transferência de dados entre aplicativos iOS com o Microsoft Intune](data-transfer-between-apps-manage-ios.md).
 
 ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185946"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728813"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -74,10 +74,14 @@ Novas políticas criadas não são implantadas para todos os usuários até que 
 
    ![Captura de tela do painel Atribuições com a opção de menu Selecionar grupos para incluir realçada](./media/app-protection-policy-add-users.png)
 
-3.  Uma lista de todos os grupos de segurança no seu **Azure Active Directory** é exibida. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolha **Selecionar**. A escolha de **Selecionar** implanta a política para os usuários.
+3.  Uma lista de todos os grupos de segurança no seu **Azure Active Directory** é exibida. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolha **Selecionar**. 
 
     ![Captura de tela do painel Adicionar grupo de usuários mostrando a lista de usuários do Azure Active Directory](./media/azure-ad-user-group-list.png)
 
+4.  Depois de incluir e excluir grupos, selecione **Salvar** para guardar a configuração e implantar a política aos usuários. Se você selecionar **Descartar** antes de salvar sua configuração, descartará todas as alterações feitas nas guias *Incluir* e *Excluir*.   
+ 
+     ![Captura de tela mostrando as opções para salvar e descartar](./media/save-assignment.png)
+  
 Agora você criou uma política e a implantou para os usuários.
 
 Somente usuários atribuídos com licenças do Microsoft Intune serão afetados pela política. Os usuários do grupo de segurança selecionado, que não têm uma licença do Intune atribuída, não serão afetados.
@@ -109,9 +113,13 @@ Para ver o efeito das alterações imediatamente, o usuário final deve sair do 
 
 2.  No painel *Proteção de Aplicativo do Intune*, selecione **Atribuições** para abrir o painel **Proteção de Aplicativo do Intune – Atribuições**, que mostra a lista atual de grupos de usuários que têm essa política.
 
-3.  Para adicionar um novo grupo de usuários à política, na guia **Incluir**, escolha **Selecionar grupos para incluir** e selecione o grupo de usuários. Escolha **Selecionar** para implantar a política no grupo selecionado.
+3.  Para adicionar um novo grupo de usuários à política, na guia *Incluir*, escolha **Selecionar grupos para incluir** e selecione o grupo de usuários. Escolha **Selecionar** para adicionar o grupo. 
 
-4.  Para excluir um grupo de usuários, na guia **Excluir** escolha **Selecionar grupos para excluir** e selecione o grupo de usuários. Escolha **Selecione** para remover o grupo de usuários.
+4.  Para excluir um grupo de usuários, na guia *Excluir* escolha **Selecionar grupos para excluir** e selecione o grupo de usuários. Escolha **Selecione** para remover o grupo de usuários.  
+
+5.  Para excluir os grupos que foram adicionados anteriormente, nas guias *Incluir* ou *Excluir*, selecione as reticências (...) e **Excluir**. 
+
+5.  Após terminar as alterações às atribuições, selecione **Salvar** para guardar a configuração e implantar a política para o novo conjunto de usuários. Se você selecionar **Descartar** antes de salvar sua configuração, descartará todas as alterações feitas nas guias *Incluir* e *Excluir*.
 
 ### <a name="to-change-policy-settings"></a>Para alterar as configurações de política
 

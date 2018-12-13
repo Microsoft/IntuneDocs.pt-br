@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179398"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579176"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerenciar scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gerenciamento do Intune permite que você carregue scripts do PowerShell no Intune para serem executados em dispositivos Windows 10. A extensão de gerenciamento complementa os recursos de gerenciamento de dispositivo móvel (MDM) do Windows 10 e facilita a mudança para o gerenciamento moderno.
@@ -67,6 +67,12 @@ Você pode monitorar o status de execução de scripts do PowerShell para usuár
 No painel **Scripts do PowerShell**, selecione o script a ser monitorado, escolha **Monitorar** e, em seguida, escolha um dos seguintes relatórios:
    - **Status do dispositivo**
    - **Status do usuário**
+
+## <a name="troubleshoot-powershell-scripts"></a>Solucionar problemas de scripts do PowerShell
+
+Os logs do agente no computador cliente geralmente estão em `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Você pode usar [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) para exibir esses arquivos de log. 
+
+![Captura de tela dos logs do agente](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>Excluir um script do PowerShell
 Em **scripts do PowerShell**, clique com o botão direito do mouse no script e selecione **Excluir**.

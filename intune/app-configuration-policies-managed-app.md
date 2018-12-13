@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181999"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829089"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo
 
@@ -40,7 +40,7 @@ ms.locfileid: "52181999"
       A descrição do perfil que será exibida no Portal do Azure.
     - **Tipo de registro de dispositivo**  
       Selecione **Gerenciar aplicativos**.
-6. Selecione **Aplicativo associado** para escolher o aplicativo que você vai configurar. Selecione o aplicativo na lista de aplicativos que foram aprovados e sincronizados com o Intune.
+6. Selecione **Aplicativo Associado** para escolher o aplicativo que pretende configurar. Selecione o aplicativo na lista de aplicativos que foram aprovados e sincronizados com o Intune.
 7. Para cada configuração compatível no aplicativo, digite o **Nome** e **Valor** e escolha as reticências (**…**).  
     Para excluir uma configuração, escolha as reticências (**…**) e selecione **Excluir**.  
     
