@@ -1,12 +1,12 @@
 ---
-title: Configurar o registro do Intune para dispositivos ingressados no Active Directory híbrido usando o Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Use Windows Autopilot para registrar dispositivos ingressados no Active Directory híbrido no Intune.
+title: Inscrição de dispositivos ingressados no Active Directory híbrido – Windows Autopilot
+titleSuffix: ''
+description: Use o Windows Autopilot para registrar dispositivos ingressados no Active Directory híbrido no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189955"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112435"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot (Versão Prévia)
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory híbrido. Para isso, siga as etapas em abaixo.
@@ -68,7 +68,7 @@ Os dispositivos a serem registrados também devem:
 
 O conector do Intune para o Active Directory cria computadores do Autopilot registrados no domínio do Active Directory Local. O computador que hospeda o Conector do Intune deve ter os direitos de criar os objetos de computador dentro do domínio. 
 
-Em alguns domínios, computadores não recebem os direitos para criar computadores. Ou talvez os Administradores não queiram aumentar o limite de conta de computador de todo o domínio. Nessas situações, os direitos podem ser delegados para a unidade organizacional em dispositivos ingressados no Azure AD híbrido são criados.
+Em alguns domínios, computadores não recebem os direitos para criar computadores. Além disso, os domínios têm um limite integrado (padrão de 10) que se aplica a todos os usuários e computadores que não têm direitos delegados para criar Objetos de Computador. Portanto, os direitos precisam ser delegados a computadores que hospedam o conector do Intune na unidade organizacional em que os dispositivos ingressados no Azure AD híbrido foram criados.
 
 A unidade organizacional que recebeu o direito de criar computadores deve corresponder:
 - à unidade organizacional inserida no perfil do Ingresso no Domínio
@@ -201,7 +201,7 @@ Levará cerca de 15 minutos para que o status do perfil de dispositivo mude de *
 1. No [Intune](https://aka.ms/intuneportal), selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
 2. Digite as seguintes propriedades:
    - **Nome**: insira um nome descritivo para o novo perfil.
-   - **Descrição:** insira uma descrição para o perfil.
+   - **Descrição**: Insira uma descrição para o perfil.
    - **Plataforma**: escolha **Windows 10 e posterior**.
    - **Tipo de perfil**: escolha **Ingresso no Domínio (Versão Prévia)**.
 3. Escolha **Configurações** e informe um **Prefixo do nome do computador**, **Nome de domínio** e **Unidade organizacional** (opcional). 

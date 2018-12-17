@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187830"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112945"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -67,7 +67,7 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 
 ## <a name="set-device-type-restrictions"></a>Definir restrições de tipo de dispositivo
 
-É possível alterar as configurações de uma restrição de tipo de dispositivo seguindo estas etapas. Essas restrições não afetam dispositivos que já foram registrados. Os dispositivos registrados com o [agente Intune PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) não podem ser bloqueados com esse recurso.
+É possível alterar as configurações de uma restrição de tipo de dispositivo seguindo estas etapas. Essas restrições não afetam dispositivos que já foram registrados. Os dispositivos registrados com o [agente Intune PC](manage-windows-pcs-with-microsoft-intune.md) não podem ser bloqueados com esse recurso.
 
 1. Entre no Portal do Azure.
 2. Selecione **Mais serviços**, pesquise **Intune** e, em seguida, escolha **Intune**.
@@ -123,7 +123,7 @@ Os seguintes métodos de registro pessoais também serão bloqueados:
 6. Selecione **Salvar**.
 
 
-Os usuários veem uma notificação informando que eles atingiram o limite de dispositivos registrados. Por exemplo, no iOS, ela teria esta aparência:
+Durante as inscrições de BYOD, os usuários veem uma notificação informando que eles atingiram o limite de dispositivos registrados. Por exemplo, no iOS, ela teria esta aparência:
 
 ![Notificação do limite de dispositivos iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178362"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977296"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -56,7 +56,10 @@ Ao se aprofundar nesse relatório, você também pode visualizar as políticas e
 
 ### <a name="device-compliance-status-report"></a>Relatório de status de conformidade dos dispositivos
 
-O gráfico mostra os estados de conformidade de todos os dispositivos registrados no Intune. Os estados de conformidade dos dispositivos são mantidos em dois bancos de dados diferentes: o Intune e o Azure Active Directory. 
+O gráfico mostra os estados de conformidade de todos os dispositivos registrados no Intune. Os estados de conformidade do dispositivo são mantidos em dois bancos de dados diferentes: Intune e Azure Active Directory. 
+
+> [!IMPORTANT]
+> O Intune segue o agendamento de check-in do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de check-in do dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 Descrições dos diferentes estados da política de conformidade dos dispositivos:
 
@@ -152,7 +155,7 @@ Esse recurso está incluído no relatório de status do dispositivo:
 1. Selecione **Conformidade do dispositivo** > **Políticas**. Uma lista de políticas é exibida, incluindo a plataforma, se a política está atribuída e mais detalhes.
 2. Selecione uma política > **Visão geral**. Nessa exibição, a atribuição de política inclui os seguintes status:
 
-    - Bem-sucedido: a política foi aplicada.
+    - Bem-sucedido: a política é aplicada
     - Erro: houve falha na aplicação da política. A mensagem normalmente é exibida com um código de erro vinculado a uma explicação. 
     - Conflito: duas configurações foram aplicadas ao mesmo dispositivo e o Intune não pode classificar o conflito. Um administrador deve verificar o problema.
     - Pendente: o dispositivo ainda não fez check-in no Intune para receber a política. 

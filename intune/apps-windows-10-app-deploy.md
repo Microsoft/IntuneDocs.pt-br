@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184617"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977279"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
@@ -45,11 +45,11 @@ Aplicativos da Microsoft Store para Empresas que são aplicativos modernos adqui
 ## <a name="installing-apps-on-windows-10-devices"></a>Instalando aplicativos em dispositivos Windows 10
 Dependendo do tipo de aplicativo, o aplicativo pode ser instalado em um dispositivo Windows 10 de uma destas duas maneiras:
 
-- **Contexto de Usuário**: quando um aplicativo for implantado no contexto de usuário, o aplicativo gerenciado será instalado para esse usuário no dispositivo quando o usuário entrar no dispositivo. Observe que a instalação do aplicativo não funcionará enquanto o usuário não entrar no dispositivo. 
+- **Contexto de usuário**: quando um aplicativo for implantado no contexto de usuário, o aplicativo gerenciado será instalado para esse usuário no dispositivo quando o usuário entrar no dispositivo. Observe que a instalação do aplicativo não funcionará enquanto o usuário não entrar no dispositivo. 
     - Os aplicativos de linha de negócios modernos e os aplicativos da Microsoft Store para Empresas (online e offline) podem ser implantados no contexto de usuário e darão suporte à intenção Obrigatória e Disponível.
     - Aplicativos do Win32 criados como **Modo de Usuário** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte às intenções **Obrigatória** e **Disponível**. 
-- **Contexto de Dispositivo**: quando um aplicativo for implantado no contexto de dispositivo, o aplicativo gerenciado será instalado diretamente no dispositivo pelo Intune.
-    - Somente os aplicativos de linha de negócios modernos e os aplicativos licenciados Online da Microsoft Store para Empresas podem ser implantados no contexto de dispositivo e darão suporte apenas à intenção Obrigatório.
+- **Contexto de dispositivo**: quando um aplicativo for implantado no contexto de dispositivo, o aplicativo gerenciado será instalado diretamente no dispositivo pelo Intune.
+    - Somente os aplicativos de linha de negócios modernos e os aplicativos licenciados offline da Microsoft Store para Empresas podem ser implantados no contexto de dispositivo e darão suporte apenas à intenção Obrigatório.
     - Aplicativos do Win32 criados como **Modo do Computador** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte apenas à intenção **Obrigatória**.
 
 > [!NOTE]
@@ -57,10 +57,10 @@ Dependendo do tipo de aplicativo, o aplicativo pode ser instalado em um disposit
 
 Quando um aplicativo é implantado no contexto de dispositivo, a instalação terá êxito apenas quando for direcionada a um dispositivo que dê suporte ao contexto de dispositivo. Além disso, a implantação no contexto de dispositivo dá suporte às seguintes condições:
 - Se um aplicativo for implantado no contexto de dispositivo e direcionado a um usuário, a instalação falhará com o seguinte status e o erro será exibido no console de administração:
-    - Status: com falha.
+    - Status: Falha.
     - Erro: um usuário não pode ser direcionado com uma instalação de contexto de Dispositivo.
 - Se um aplicativo for implantado no contexto de dispositivo, mas direcionado a um dispositivo que não dê suporte ao contexto de dispositivo, a instalação falhará com o seguinte status e erro no console de administração:
-    - Status: com falha.
+    - Status: Falha.
     - Erro: essa plataforma não dá suporte a instalações de contexto de dispositivo. 
 
 > [!Note]

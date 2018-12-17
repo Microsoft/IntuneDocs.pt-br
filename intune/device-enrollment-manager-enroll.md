@@ -1,7 +1,7 @@
 ---
 title: Registrar dispositivos usando uma conta do gerenciador de registros de dispositivo
 titlesuffix: Microsoft Intune
-description: Use a conta do gerenciador de registros de dispositivo para registrar dispositivos no Intune. "
+description: Use a conta do gerenciador de registros de dispositivo para registrar dispositivos no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184906"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031833"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos por meio do uso de uma conta do gerenciador de registros de dispositivo
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos no Intune por meio do uso de uma conta do gerenciador de registro de dispositivos
 
 Você pode registrar até 1.000 dispositivos móveis com uma única conta do Azure Active Directory usando uma conta do DEM (gerenciador de registros de dispositivo). O DEM é uma permissão do Intune que pode ser aplicada a uma conta de usuário do AAD e permite que o usuário registre até 1.000 dispositivos. Uma conta do DEM é útil para cenários em que os dispositivos são registrados e preparados antes de entregá-los aos usuários dos dispositivos.
 

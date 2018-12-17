@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184821"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031986"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro de dispositivos de quiosque Android Enterprise
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro no Intune de dispositivos de quiosque Android Enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -57,7 +57,7 @@ Você precisa criar um perfil de registro para que seja possível registrar os d
 1. Acesse o [Portal do Intune](https://portal.azure.com) e escolha **Registro do dispositivo** > **Registro do Android** > **Registros de dispositivo de quiosque e de tarefa**.
 2. Escolha **Criar** e preencha os campos obrigatórios.
     - **Nome**: digite um nome que você usará ao atribuir o perfil ao grupo de dispositivos dinâmicos.
-    - **Data de expiração do token**: a data em que o token expira. O Google impõe o máximo de 90 dias.
+    - **Data de vencimento do token**: a data em que o token expira. O Google impõe o máximo de 90 dias.
 3. Escolha **Criar** para salvar o perfil.
 
 ### <a name="create-a-device-group"></a>Criar um grupo de dispositivos
@@ -66,7 +66,7 @@ Você pode direcionar aplicativos e políticas a grupos de dispositivos atribuí
 
 1. Acesse o [Portal do Intune](https://portal.azure.com) e escolha **Grupos** > **Todos os grupos** > **Novo grupo**.
 2. Na folha **Grupo**, preencha os campos obrigatórios da seguinte forma:
-    - **Tipo de grupo**: segurança
+    - **Tipo de grupo**: Segurança 
     - **Nome do grupo**: digite um nome intuitivo (como, dispositivos Fábrica 1)
     - **Tipo de associação**: dispositivo dinâmico
 3. Escolha **Adicionar consulta dinâmica**.
@@ -82,7 +82,7 @@ Você pode direcionar aplicativos e políticas a grupos de dispositivos atribuí
 
 Você pode substituir ou remover tokens e os códigos QR.
 
-- **Substituir token**: você pode gerar um novo código QR/token quando um deles se aproximar da expiração usando Substituir Token.
+- **Substituir token**: você pode gerar um novo código QR/token quando um deles se aproximar da expiração usando Substituir token.
 - **Revogar token**: você pode expirar imediatamente o código QR/token. Desse ponto em diante, o código QR/token não é mais utilizável. Use essa opção quando você:
     - compartilhar acidentalmente o código QR/token com uma entidade não autorizada
     - concluir todos os registros e não precisar mais do token/QR código

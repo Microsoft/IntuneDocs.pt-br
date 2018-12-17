@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186997"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112401"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar o registro de dispositivos macOS no Intune
 
@@ -37,7 +37,7 @@ Atenda os seguintes pré-requisitos antes de configurar o registro do dispositiv
 
 - [Configurar domínios](custom-domain-name-configure.md)
 - [Definir a Autoridade MDM](mdm-authority-set.md)
-- [Criar grupos](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Criar grupos](groups-add.md)
 - [Configurar o Portal da Empresa](company-portal-app.md)
 - Atribuir licenças de usuário no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtenha um certificado push de MDM da Apple](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ Atenda os seguintes pré-requisitos antes de configurar o registro do dispositiv
 É possível permitir que os usuários registrem seus dispositivos pessoais para o gerenciamento do Intune, conhecidos como "traga seu próprio dispositivo" ou BYOD. Depois de concluir os pré-requisitos e as licenças de usuários atribuídos, seus usuários poderão inscrever seus dispositivos:
 - acessando o [site do Portal da Empresa](https://portal.manage.microsoft.com) ou
 - baixando o aplicativo do Portal da Empresa.
-Você também pode enviar a eles um link com as etapas do registro online: [Registrar seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Você pode também enviar um link para as etapas de registro online: [Registrar seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
 
@@ -56,8 +56,8 @@ Para saber mais sobre outras tarefas de usuário final, consulte estes artigos:
 
 ## <a name="company-owned-macos-devices"></a>Dispositivos macOS de propriedade da empresa
 Para organizações que adquirem dispositivos para seus usuários, o Intune dá suporte aos seguintes métodos de registro de dispositivos macOS de propriedade da empresa:
-- [DEP (Programa de registro de dispositivos) da Apple](device-enrollment-program-enroll-macos.md): as organizações podem comprar dispositivos macOS por meio do DEP (Programa de registro de dispositivos) da Apple. O DEP permite implantar um perfil de registro “over the air” para trazer dispositivos ao gerenciamento.
-- [Gerenciador de registro de dispositivos (DEM)](device-enrollment-manager-enroll.md): você pode usar uma conta DEM para registrar até 1.000 dispositivos.
+- [DEP (Programa de registro de dispositivos) da Apple](device-enrollment-program-enroll-macos.md): As organizações podem comprar dispositivos macOS por meio do DEP (Programa de registro de dispositivos) da Apple. O DEP permite implantar um perfil de registro “over the air” para trazer dispositivos ao gerenciamento.
+- [DEM (Gerenciador de registro de dispositivos)](device-enrollment-manager-enroll.md): Você pode usar uma conta do DEM para registrar até 1.000 dispositivos.
 
 ## <a name="block-macos-enrollment"></a>Bloquear registro do macOS
 Por padrão, o Intune permite o registro de dispositivos macOS. Para bloquear o registro de dispositivos macOS, consulte [Definir restrições de tipo de dispositivo](enrollment-restrictions-set.md).

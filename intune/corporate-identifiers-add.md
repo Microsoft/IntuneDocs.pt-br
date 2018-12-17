@@ -1,6 +1,6 @@
 ---
 title: Adicionar identificadores empresariais ao Intune
-titlesuffix: Microsoft Intune
+titlesuffix: ''
 description: Saiba como adicionar identificadores empresariais (método de registro, IMEI e número de série) ao Microsoft Intune.
 keywords: ''
 author: ErikjeMS
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: cc65cc3440d260adc3bd2c7de3a311374681327d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183444"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032241"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -77,7 +77,7 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
    ![Workspace do identificador de dispositivo corporativo com o botão Adicionar realçado](./media/add-corp-id.png)
 
-2. Na folha **Adicionar identificadores**, especifique o tipo de identificador: **IMEI** ou **Número de série**.
+2. Na folha **Adicionar Identificadores**, especifique o tipo de identificador: **IMEI** ou **Serial**.
 
 3. Clique no ícone de pasta e especifique o caminho para a lista que quer importar. Navegue até o arquivo .csv e escolha **Adicionar**. 
 
@@ -87,7 +87,7 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
 1. No [Intune no portal do Azure](https://portal.azure.com), escolha **Registro de dispositivo** > **Identificadores de dispositivo corporativo** > **Adicionar** > **Inserir manualmente**.
 
-2. Na folha **Adicionar identificadores**, especifique o tipo de identificador: **IMEI** ou **Número de série**.
+2. Na folha **Adicionar Identificadores**, especifique o tipo de identificador: **IMEI** ou **Serial**.
 
 3. Insira o **Identificador** e os **Detalhes** de cada identificador que você deseja adicionar. Ao terminar de inserir os identificadores, escolha **Adicionar**.
 

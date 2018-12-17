@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179925"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112452"
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
@@ -32,9 +32,9 @@ Recomendamos que você incorpore a equipe de suporte de TI e de assistência té
 
 Recomendamos que você documente o seguinte:
 
--   **Critérios de teste:** identifique os parâmetros de comparação com os quais comparar.
+-   **Critérios de teste:** identifique os parâmetros de comparação para a medição.
 
--   **Componentes de design:** devem existir em pelo menos um critério de teste.
+-   **Componentes de design:** deve haver pelo menos um critério de teste.
 
 Se não houver nenhum componente de design em pelo menos um critério de teste alinhado a um requisito ou cenário, considere se o componente de design é necessário ou não. Além disso, garanta que você tem os seguintes itens:
 
@@ -42,7 +42,7 @@ Se não houver nenhum componente de design em pelo menos um critério de teste a
 
 -   **Dispositivos:** dispositivos que podem ser apagados ou redefinidos para as configurações padrão de fábrica.
 
--   **Componentes de integração:** todos os componentes de integração (Certificate Connector, conector de serviço a serviço do Intune para o Exchange hospedado e Exchange connector local do Intune) devem ser instalados e configurados, se necessário.
+-   **Componentes de integração:** todos os componentes de integração (conector de certificado, conector de serviço a serviço do Intune para o Exchange hospedado e Intune Exchange Connector local) devem ser instalados e configurados, se necessário.
 
 Alterações de design podem ser necessárias para a adequação a problemas imprevistos. Além disso, todas as alterações de design devem ser totalmente documentadas com o motivo de cada alteração. Aqui temos um exemplo para ilustrar o que uma alteração poderia ser:
 
@@ -52,7 +52,7 @@ Você pode enfrentar desafios ou problemas que exigem diretrizes técnicas ou um
 
 -   [Saiba como obter suporte do Intune](get-support.md)
 
--   [Contatar o suporte telefônico assistido do Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Contatar o suporte telefônico assistido do Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Teste de validação funcional
 

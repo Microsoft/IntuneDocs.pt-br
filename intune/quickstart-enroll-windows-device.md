@@ -5,31 +5,31 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183461"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977330"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>Início Rápido: Registrar seu dispositivo Windows 10
+# <a name="quickstart-enroll-your-windows-10-device"></a>Início rápido: Registrar seu dispositivo Windows 10
 
 Neste início rápido, primeiro você assumirá a função de um usuário do Intune e registrará seu dispositivo Windows 10 no Microsoft Intune. Em seguida, retornará para o Intune e confirmará o dispositivo registrado.
 
 Registrar seus dispositivos no Microsoft Intune permite que dispositivos Windows 10 tenham acesso a dados protegidos da sua organização, incluindo email, arquivos e outros recursos. Isso vale para dispositivos com Windows 10 Desktop e Windows 10 Mobile. Registrar seus dispositivos ajuda a proteger o acesso para você e para sua organização e ajuda a manter dados de trabalho separados de dados pessoais.
 
 > [!TIP]
-> Saiba o que acontece quando você [registra seu dispositivo no Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e o que isso significa para as [informações no dispositivo](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+> Saiba o que acontece quando você [registra seu dispositivo no Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) e o que isso significa para as [informações no dispositivo](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de avaliação gratuita](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 4. Confirme se a **versão** do Windows 10 é **1607 ou posterior**.
 
     > [!IMPORTANT]
-    > As etapas apresentadas neste início rápido são para a versão **1607 ou posterior** do Windows 10, se a versão for **1511 ou anterior**, continue com [estas etapas](/intune-user-help/enroll-your-w10-device-your-account.md).
+    > As etapas apresentadas neste início rápido são para a versão **1607 ou posterior** do Windows 10, se a versão for **1511 ou anterior**, continue com [estas etapas](/intune-user-help/enroll-your-w10-device-your-account).
 
 ## <a name="enroll-windows-10-desktop"></a>Registrar o Windows 10 Desktop
 
@@ -85,7 +85,7 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 
    ![Captura de tela da conta recém-adicionada](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Se você seguiu as etapas anteriores, mas ainda não consegue acessar sua conta de email e seus arquivos corporativos ou de estudante, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    Se você seguiu as etapas anteriores, mas ainda não consegue acessar sua conta de email e seus arquivos corporativos ou de estudante, siga as etapas em [As etapas a serem seguidas se você vir Acessar conta corporativa ou de estudante](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Confirmar o registro de dispositivo no Intune
 
@@ -97,13 +97,13 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 
 ## <a name="clean-up-resources"></a>Limpar os recursos
 
-Para cancelar o registro do seu dispositivo Windows, confira [Remover o dispositivo Windows do gerenciamento](/intune-user-help/unenroll-your-device-from-intune-windows.md).
+Para cancelar o registro do seu dispositivo Windows, confira [Remover o dispositivo Windows do gerenciamento](/intune-user-help/unenroll-your-device-from-intune-windows).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste início rápido, você aprendeu como registrar um dispositivo Windows 10 no Intune. Saiba sobre as outras maneiras de registrar dispositivos em todas as plataformas. Para obter mais informações sobre como usar dispositivos com o Intune, confira [Usar dispositivos gerenciados para realizar o trabalho](/intune-user-help/use-managed-devices-to-get-work-done.md).
+Neste início rápido, você aprendeu como registrar um dispositivo Windows 10 no Intune. Saiba sobre as outras maneiras de registrar dispositivos em todas as plataformas. Para obter mais informações sobre como usar dispositivos com o Intune, confira [Usar dispositivos gerenciados para realizar o trabalho](/intune-user-help/use-managed-devices-to-get-work-done).
 
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início Rápido: Configurar um tamanho de senha obrigatório para dispositivos Android](quickstart-set-password-length-android.md)
+> [Início rápido: definir um tamanho de senha obrigatório para dispositivos Android](quickstart-set-password-length-android.md)

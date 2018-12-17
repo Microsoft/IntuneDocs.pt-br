@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185974"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977347"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade do dispositivo no Intune
 
@@ -40,6 +40,9 @@ Os requisitos de conformidade são essencialmente regras, como exigir um PIN do 
 - Requer que o dispositivo esteja em nível igual ou inferior ao da Defesa contra Ameaças Móveis
 
 Você também pode usar políticas de conformidade do dispositivo para monitorar o status de conformidade dos seus dispositivos.
+
+> [!IMPORTANT]
+> O Intune segue o agendamento de check-in do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de check-in do dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
@@ -156,21 +159,21 @@ Você pode implantar a política de conformidade para usuários em grupos de usu
 
 Um conjunto de **Configurações de política de conformidade** interno (portal do Azure > Conformidade do dispositivo) é avaliado em todos os dispositivos registrados no Intune. Como por exemplo:
 
-- **Marcar dispositivos sem nenhuma política de conformidade atribuída como**: essa propriedade tem dois valores:
+- **Marcar dispositivos sem política de conformidade atribuída como**: Essa propriedade tem dois valores:
 
   - **Em conformidade**: o recurso de segurança está desativado
   - **Não em conformidade** (padrão): recurso de segurança ligado
 
   Se um dispositivo não tiver uma política de conformidade atribuída, ele será considerado como não estando em conformidade. Por padrão, os dispositivos são marcados como **Em conformidade**. Se você usa acesso condicional, recomendamos alterar a configuração para **Não em conformidade**. Se um usuário final não estiver em conformidade porque uma política não está atribuída, o Portal da Empresa listará `No compliance policies have been assigned`.
 
-- **Detecção avançada de jailbreak**: quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
+- **Detecção avançada de jailbreak**: Quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
 
   Habilitar essa configuração exige que os dispositivos:
   - Habilitem serviços de localização no nível do sistema operacional
   - Permitam que o Portal da Empresa use serviços de localização
   - Avaliem e relatem o status de jailbreak ao Intune pelo menos uma vez a cada 72 horas. Caso contrário, o dispositivo será marcado como não estando em conformidade. A avaliação é disparada com a abertura do aplicativo do Portal da Empresa ou a movimentação física do dispositivo para 500 metros de distância ou mais.
 
-- **Período de validade do status de conformidade (dias)**: insira o período que os dispositivos relatam o status de todas as políticas de conformidade recebidas. Dispositivos que não retornam o status dentro desse período são tratados como não estando em conformidade. O valor padrão é de 30 dias.
+- **Período de validade do status de conformidade (dias)**: Insira o período que os dispositivos relatam o status de todas as políticas de conformidade recebidas. Dispositivos que não retornam o status dentro desse período são tratados como não estando em conformidade. O valor padrão é de 30 dias.
 
 Todos os dispositivos têm uma **Política de Conformidade do Dispositivo Interna** (portal do Azure > Conformidade do dispositivo > Conformidade de política). Use essa política interna para monitorar essas configurações.
 

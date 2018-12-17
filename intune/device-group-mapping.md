@@ -1,5 +1,5 @@
 ---
-title: Como categorizar dispositivos em grupos no Intune
+title: Categorizar dispositivos em grupos no Intune
 titleSuffix: Microsoft Intune
 description: Saiba como categorizar os dispositivos em grupos para um gerenciamento mais fácil.
 keywords: ''
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189503"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031748"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>Categorizar os dispositivos em grupos para um gerenciamento mais fácil
+# <a name="categorize-devices-into-groups"></a>Categorizar os dispositivos em grupos
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use as categorias de dispositivo Microsoft Intune para adicionar automaticamente os dispositivos a grupos com base em categorias definidas por você. Isso torna mais fácil para você gerenciar esses dispositivos.
+Para facilitar o gerenciamento de dispositivos, você pode usar as categorias de dispositivo Microsoft Intune para adicionar automaticamente os dispositivos a grupos com base em categorias definidas por você.
 
 Categorias de dispositivo usam o seguinte fluxo de trabalho:
 1. Crie categorias para os usuários escolherem quando registrarem seus dispositivos.
@@ -42,7 +42,7 @@ Você pode criar quaisquer categorias de dispositivo que desejar. Por exemplo:
 
 ## <a name="how-to-configure-device-categories"></a>Como definir categorias de dispositivo
 
-### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Etapa 1: criar categorias de dispositivo na folha do Intune no Portal do Azure
+### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Etapa 1: criar categorias de dispositivo na folha do Intune no portal do Azure
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo**.
 2. Na folha **Registro de dispositivo**, escolha **Categorias de dispositivo**.
 3. Na página **Categorias de dispositivo**, escolha **Criar** para adicionar uma nova categoria.

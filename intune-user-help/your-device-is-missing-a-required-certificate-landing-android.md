@@ -1,11 +1,12 @@
 ---
 title: O dispositivo não tem um certificado obrigatório | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: O dispositivo não tem um certificado exigido pelo suporte de sua empresa.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150745"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032207"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>Falta ao dispositivo um certificado necessário
 
@@ -38,6 +39,6 @@ Se o seu dispositivo Android não estiver registrado no Intune e não tiver um c
 
 A primeira etapa que você deve tentar é verificar se o dispositivo [não tem um certificado que normalmente vem pré-instalado nele](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Se isso não funcionar, o suporte de sua empresa poderá [exigir a instalação de um segundo certificado para segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
+Se a resolução de problemas de certificado não funcionar, o suporte de sua empresa poderá [exigir a instalação de um segundo certificado para segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189717"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112911"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
 
@@ -73,7 +73,7 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 
 > [!NOTE]
 > 
-> Você pode evitar o limite de registro de dispositivo usando a conta do Gerenciador de Registro do Dispositivo, conforme descrito em [Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivos no Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> Você pode evitar o limite de registro de dispositivo usando a conta do Gerenciador de Registro do Dispositivo, conforme descrito em [Registrar dispositivos corporativos com o Gerenciador de Registro de Dispositivos no Microsoft Intune](device-enrollment-manager-enroll.md).
 > 
 > Uma conta de usuário que é adicionada à conta de Gerenciadores de Registro de Dispositivos não conseguirá concluir o registro quando a política de acesso condicional for aplicada a esse logon de usuário específico.
 
@@ -220,7 +220,7 @@ Se a Resolução nº2 não funcionar, oriente os usuários a seguir estas etapas
 
 ### <a name="android-certificate-issues"></a>Problemas de certificado do Android
 
-**Problema**: os usuários recebem a seguinte mensagem no dispositivo: *Não é possível se conectar porque o dispositivo não tem um certificado necessário.*
+**Problema**: os usuários recebem a seguinte mensagem no dispositivo: *Você não pode fazer login porque falta ao dispositivo um certificado necessário.*
 
 **Resolução 1**:
 
@@ -271,7 +271,7 @@ A tabela a seguir lista os erros que os usuários finais podem encontrar durante
 |AccountNotOnboarded|Há um problema com o certificado que permite que o dispositivo móvel se comunique com a rede da empresa.<br /><br />|O APNs (Apple Push Notification Service) fornece um canal para contatar os dispositivos iOS registrados. O registro falhará e essa mensagem será exibida se:<ul><li>As etapas para obter um certificado APNs não forem concluídas, ou</li><li>O certificado APNs expirou.</li></ul>Para obter mais informações, examine [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) (Configurar gerenciamento de iOS e Mac com o Microsoft Intune).|
 |DeviceTypeNotSupported|O usuário pode ter tentado se registrar usando um dispositivo não iOS. O tipo de dispositivo móvel que você está tentando registrar não é compatível.<br /><br />Confirme se o dispositivo está executando o iOS versão 8.0 ou posterior.<br /><br />|Verifique se o dispositivo do usuário está executando o iOS versão 8.0 ou posterior.|
 |UserLicenseTypeInvalid|Não foi possível registrar o dispositivo porque a conta do usuário ainda não é membro de um grupo de usuários obrigatório.<br /><br />|Antes que possam registrar seus dispositivos, os usuários devem ser membros do grupo de usuários correto. Esta mensagem indica que eles têm o tipo de licença errado para a autoridade de gerenciamento de dispositivo móvel. Por exemplo, eles verão esse erro se ambos os pontos a seguir forem verdadeiros:<ol><li>O Intune foi definido como a autoridade de gerenciamento de dispositivo móvel</li><li>eles estão usando uma licença do System Center 2012 R2 Configuration Manager.</li></ol>Examine os artigos a seguir para obter mais informações:<br /><br />Examine [Configurar gerenciamento de iOS e Mac com o Microsoft Intune](ios-enroll.md) e as informações sobre como configurar usuários no [Sincronizar o Active Directory e adicionar usuários ao Intune](users-add.md) e em [Organizando usuários e dispositivos](groups-add.md).|
-|MdmAuthorityNotDefined|A autoridade de gerenciamento de dispositivo móvel não foi definida.<br /><br />|A autoridade de gerenciamento de dispositivo móvel não foi definida no Intune.<br /><br />Examine o item nº 1 na seção "Etapa 6: registrar dispositivos móveis e instalar um aplicativo” em [Começar com uma avaliação de 30 dias do Microsoft Intune](free-trial-sign-up.md).|
+|MdmAuthorityNotDefined|A autoridade de gerenciamento de dispositivo móvel não foi definida.<br /><br />|A autoridade de gerenciamento de dispositivo móvel não foi definida no Intune.<br /><br />Revise o item 1 na "Etapa 6: registrar dispositivos móveis e instalar um aplicativo” em [Começar com uma avaliação de 30 dias do Microsoft Intune](free-trial-sign-up.md).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Os dispositivos estão inativos ou o console de administração não pode se comunicar com eles
 **Problema:** os dispositivos iOS não estão fazendo check-in no serviço do Intune. Os dispositivos devem fazer o check-in no serviço periodicamente para manter o acesso aos recursos corporativos protegidos. Se os dispositivos não fizerem o check-in:
@@ -396,9 +396,9 @@ Depois que você tiver apagado os dispositivos bloqueados, instrua os usuários 
 ## <a name="macos-issues"></a>Problemas do macOS
 
 ### <a name="macos-enrollment-errors"></a>Erros de registro do macOS
-**Mensagem de erro 1**: *Parece que você está usando uma máquina virtual. Verifique se você configurou totalmente a máquina virtual, incluindo o número de série e o modelo de hardware. Se ela não for uma máquina virtual, contate o suporte.*  
+**Mensagem de erro 1:** *Parece que você está usando uma máquina virtual. Verifique se você configurou totalmente a máquina virtual, incluindo o número de série e o modelo de hardware. Se ela não for uma máquina virtual, contate o suporte.*  
 
-**Mensagem de erro 2**: *Estamos com dificuldades para gerenciar seu dispositivo. Esse problema poderá ser causado se você estiver usando uma máquina virtual, tiver um número de série restrito ou se esse dispositivo já estiver atribuído a outra pessoa. Saiba como resolver esses problemas ou entre em contato com o suporte da sua empresa.*
+**Mensagem de erro 2:** *Estamos com dificuldades para gerenciar seu dispositivo. Esse problema poderá ser causado se você estiver usando uma máquina virtual, tiver um número de série restrito ou se esse dispositivo já estiver atribuído a outra pessoa. Saiba como resolver esses problemas ou entre em contato com o suporte da sua empresa.*
 
 **Problema:** essa mensagem pode ser resultado de qualquer um dos seguintes motivos:  
 * Uma VM (máquina virtual) macOS não está configurada corretamente  
@@ -464,9 +464,9 @@ O certificado de conta da conta anterior ainda está presente no computador.
 1. Clique duas vezes em **Certificados**, escolha a **Conta de computador** > **Avançar** e selecione **Computador Local**.
 1. Clique duas vezes em **Certificados (computador local)** e escolha **Pessoal/Certificados**.
 1. Procure pelo certificado Intune emitido por Sc_Online_Issuing e exclua-o, se estiver presente.
-1. Se a chave do Registro a seguir existir, exclua-a: existir: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
+1. Se a seguinte chave de registro existir, exclua-a: **regkey HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement** e todas as subchaves.
 1. Tente registrar novamente.
-1. Se o computador ainda não conseguir se registrar, procure e exclua esta chave, se existir: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Se ainda não é possível registrar o PC, procure e exclua essa chave, caso ela exista: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Tente registrar novamente.
 
     > [!IMPORTANT]
@@ -491,7 +491,7 @@ O certificado de conta da conta anterior ainda está presente no computador.
 |0x80043008, 0x80CF3008|Falha ao iniciar o serviço de atualizações do Microsoft Online Management.|Entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](get-support.md) (Como obter suporte para o Microsoft Intune).|
 |0x80043009, 0x80CF3009|O computador cliente já está inscrito no serviço.|Você deve retirar o computador cliente antes de ser possível registrá-lo novamente no serviço.|
 |0x8004300B, 0x80CF300B|Não foi possível executar o pacote de instalação do software cliente porque a versão do Windows que está em execução no cliente não é compatível.|O Intune não é compatível com a versão do Windows em execução no computador cliente.|
-|0xAB2|O Windows Installer não pode acessar o tempo de execução do VBScript para uma ação personalizada.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas em [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038) (Suporte da Microsoft KB198038: Ferramentas úteis para problemas de implantação e pacote).|
+|0xAB2|O Windows Installer não pode acessar o tempo de execução do VBScript para uma ação personalizada.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas no [Suporte da Microsoft KB198038: Ferramentas úteis para problemas de implantação e pacote](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|A conexão com o ponto de extremidade do serviço foi encerrada.|A conta de avaliação ou paga está suspensa. Criar uma nova conta de avaliação ou paga e registrar novamente.|
 
 

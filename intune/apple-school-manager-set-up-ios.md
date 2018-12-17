@@ -1,12 +1,12 @@
 ---
-title: Configurar o registro do Programa do Apple School Manager em dispositivos iOS
+title: Registro do Programa do Apple School Manager em dispositivos iOS
 titleSuffix: Microsoft Intune
 description: Saiba como configurar o registro do programa do Apple School Manager em dispositivos iOS de propriedade corporativa com o Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: fdda0edd8c7bf67dbfce9d428f1b3ce0266b3726
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190329"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032411"
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitar o registro de dispositivo iOS com o Apple School Manager
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurar o registro de dispositivo iOS com o Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artigo o ajuda a habilitar o registro de dispositivo iOS em dispositivos comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
+Você pode configurar o Intune para registrar dispositivos iOS comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
 
 Para habilitar o registro do Apple School Manager, é necessário usar os portais do Intune e do Apple School Manager. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
 
@@ -108,7 +108,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
     Os usuários são notificados de que seus dispositivos são supervisionados de duas maneiras:
 
-   - A tela de bloqueio diz: "Este iPhone é gerenciado pela Contoso".
+   - A tela de bloqueio diz: "Este iPhone é gerenciado pela Contoso."
    - A tela **Configurações** > **Geral** > **Sobre** diz: "Este iPhone é supervisionado. A Contoso pode monitorar o tráfego de Internet e localizar este dispositivo."
 
      > [!NOTE]

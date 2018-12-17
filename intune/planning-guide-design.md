@@ -1,5 +1,5 @@
 ---
-title: Criar um design
+title: Criar o design do Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Este artigo ajuda você a criar um design para um design e uma implementação somente na nuvem do Microsoft Intune.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186487"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112979"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -211,7 +211,7 @@ O Intune gerencia dispositivos móveis para proteger dados corporativos e permit
 
 O Intune oferece suporte a dispositivos corporativos e dispositivos pessoais. Um dispositivo será considerado corporativo se for registrado por um gerenciador de registros do dispositivo ou pelo programa de registro de dispositivos. Por exemplo, um dispositivo foi registrado por meio do DEP (Programa de Registro de Dispositivos) da Apple, marcado como corporativo e colocado em um grupo de dispositivos que recebe políticas e aplicativos corporativos direcionados.
 
-Consulte a [Seção 3: Determinar os requisitos de cenários de caso de uso](planning-guide-requirements.md) para obter mais informações sobre casos de uso corporativo e BYOD.
+Consulte a [Seção 3: Determinar os requisitos de cenários de caso de uso](planning-guide-requirements.md) para saber mais sobre casos de uso corporativo e BYOD.
 
 ### <a name="bulk-enrollment"></a>Registro em massa
 
@@ -402,7 +402,7 @@ O acesso condicional é usado para permitir que apenas os dispositivos em confor
 
 Para o acesso online, defina quais plataformas e grupos de usuários serão o destino das políticas de acesso condicional. Além disso, determine se é necessário instalar ou configurar o conector serviço a serviço do Intune para o Exchange Online ou para o Exchange local. Saiba mais como instalar e configurar conectores serviço a serviço do Intune: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange local](exchange-connector-install.md)
 

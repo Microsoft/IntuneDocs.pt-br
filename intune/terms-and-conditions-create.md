@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181353"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032292"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Gerenciar os termos e condições de acesso de usuário da sua empresa
+# <a name="terms-and-conditions-for-user-access"></a>Termos e condições para acesso do usuário
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -57,8 +57,8 @@ Conclua estas etapas para criar termos e condições. O nome de exibição e a d
    ![Captura da tela de aceitação de termos e condições do usuário final com o resumo dos termos](./media/terms-summary-create.png)
 
    - **Título**: o nome dos termos que os usuários veem no Portal da Empresa acima de **Resumo**.
-   - **Resumo dos Termos**: texto que explica a implicação de os usuários aceitarem os termos. Por exemplo, "Ao registrar seu dispositivo, você concorda com os termos de uso definidos pela Contoso". Leia os termos com atenção antes de continuar".
-   - **Termos e Condições**: os termos e condições que os usuários veem e devem aceitar ou rejeitar.
+   - **Resumo dos termos**: texto que explica a implicação de os usuários aceitarem os termos. Por exemplo, "Ao registrar seu dispositivo, você concorda com os termos de uso definidos pela Contoso". Leia os termos com atenção antes de continuar".
+   - **Termos e condições**: os termos e condições que os usuários veem e devem aceitar ou rejeitar.
 
 5. Escolha **OK** > **Criar**.
 

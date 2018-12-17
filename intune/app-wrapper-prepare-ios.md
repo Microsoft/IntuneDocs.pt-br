@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182101"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112845"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182101"
 
 Use a Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS para habilitar políticas de proteção do aplicativo do Intune em aplicativos iOS internos sem alterar o código do aplicativo em si.
 
-A ferramenta é um aplicativo de linha de comando do macOS que cria um wrapper em torno de um aplicativo. Quando um aplicativo é processado, é possível alterar sua funcionalidade implantando [políticas de proteção de aplicativo](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) nele.
+A ferramenta é um aplicativo de linha de comando do macOS que cria um wrapper em torno de um aplicativo. Quando um aplicativo é processado, é possível alterar sua funcionalidade implantando [políticas de proteção de aplicativo](app-protection-policies.md) nele.
 
 Para baixar a ferramenta, consulte [Ferramenta de Disposição do Aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
 
@@ -186,7 +186,7 @@ Abra o terminal do macOS e execute o seguinte comando:
 > [!NOTE]
 > Alguns parâmetros são opcionais, conforme mostrado na tabela a seguir.
 
-**Exemplo:** o comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
+**Exemplo:** O comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -278,7 +278,7 @@ Se a ferramenta de disposição do aplicativo não for concluída com êxito, um
 |O aplicativo de entrada especificado não está assinado. Especifique um aplicativo assinado válido.|A ferramenta de encapsulamento de aplicativo requer que os aplicativos sejam assinados. Consulte a documentação do desenvolvedor para saber como assinar um aplicativo encapsulado.|
 |O aplicativo de entrada especificado deve estar no formato .ipa ou .app.|Somente as extensões .app e .ipa são aceitas pela ferramenta de encapsulamento de aplicativo. Verifique se o arquivo de entrada tem uma extensão válida e foi compilado como um arquivo .app ou .ipa.|
 |O aplicativo de entrada especificado já foi encapsulado e está na versão mais recente de modelo de política.|A Ferramenta de Disposição do Aplicativo não encapsula novamente um aplicativo encapsulado existente com a versão mais recente do modelo de política.|
-|AVISO: você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Especifique um hash SHA1 válido seguindo o sinalizador de linha de comando –c. |
+|AVISO: Você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Especifique um hash SHA1 válido seguindo o sinalizador de linha de comando –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Arquivos de log para a Ferramenta de Disposição do Aplicativo
 Aplicativos que foram encapsulados usando a Ferramenta de Disposição do Aplicativo geram logs que são gravados no console do dispositivo de cliente do iOS. Essas informações são úteis quando você tem problemas com o aplicativo e precisa determinar se o problema está relacionado à Ferramenta de Disposição do Aplicativo. Para recuperar as informações, execute as seguintes etapas:
@@ -439,5 +439,5 @@ Use as etapas a seguir para obter logs para seus aplicativos encapsulados durant
 
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](app-sdk.md)

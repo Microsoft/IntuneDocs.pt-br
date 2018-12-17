@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183036"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112367"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -31,7 +31,7 @@ Use este artigo para saber mais sobre os problemas conhecidos no Microsoft Intun
 
 Se você deseja relatar um bug que não está listado aqui, [abra uma solicitação de suporte](get-support.md).
 
-Caso você queira solicitar um novo recurso para o Intune, considere registrar um relatório em nosso site [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Se quiser solicitar um novo recurso para o Intune, considere preencher um relatório de [Comentários do Microsoft Intune](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migração
 
@@ -44,13 +44,13 @@ As políticas de conformidade criadas no Portal Clássico do Azure serão preter
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Os recursos herdados do PC cliente do Intune só estão disponíveis no console do Silverlight
 
-A capacidade de gerenciar o Windows 10 no Intune no Portal do Azure está disponível por meio do registro de MDM do Windows. Para obter mais informações, consulte [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure) (Intune no console do Azure e PC cliente herdado do Intune).
+A capacidade de gerenciar o Windows 10 no Intune no Portal do Azure está disponível por meio do registro de MDM do Windows. Para obter mais informações, consulte [Intune on Azure console and legacy Intune PC Client](intune-legacy-pc-client.md) (Intune no console do Azure e PC cliente herdado do Intune).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Os grupos criados pelo Intune durante a migração podem afetar a funcionalidade de outros produtos da Microsoft
 
 Ao migrar do Intune para o Portal do Azure, você poderá ver um novo grupo chamado **Todos os Usuários –b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Esse grupo contém todos os usuários em seu Azure Active Directory, não apenas os usuários licenciados do Intune. Esse uso pode causar problemas com outros produtos da Microsoft, caso você espere que alguns usuários novos ou existentes não sejam membros de nenhum grupo.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>As folhas de status das políticas migradas não funcionam
+### <a name="status-blades-for-migrated-policies-dont-work"></a>As folhas de status das políticas migradas não funcionam
 
 Não é possível exibir informações de status de políticas que foram migradas do Portal Clássico do Azure no Portal do Azure. No entanto, você pode continuar exibindo relatórios dessas políticas no Portal Clássico. Para exibir informações de status das políticas de configuração migradas, recrie-as no portal do Azure.
 

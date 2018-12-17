@@ -1,11 +1,11 @@
 ---
-title: Decidir como preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune
+title: Preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune
 description: As informações neste tópico ajudam você a decidir quando deve usar a Ferramenta de Disposição do Aplicativo e o SDK do Aplicativo para permitir que seus aplicativos de linha de negócios personalizados usem políticas de gerenciamento de aplicativos móveis.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181965"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112418"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -35,7 +35,7 @@ O código-fonte para usar a ferramenta não é necessário, mas você precisa de
 
 A Ferramenta de Disposição de Aplicativo **não** dá suporte a aplicativos da App Store da Apple ou da Google Play Store. Ele também não dá suporte a alguns recursos que exigem integração do desenvolvedor (consulte a tabela de comparação de recursos a seguir).
 
-Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativos para políticas de proteção de aplicativos em dispositivos que não estão registrados no Intune, consulte [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune) (Proteger aplicativos e dados de linha de negócios em dispositivos não registrados no Microsoft Intune).
+Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativos para políticas de proteção de aplicativos em dispositivos que não estão registrados no Intune, consulte [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](apps-add.md) (Proteger aplicativos e dados de linha de negócios em dispositivos não registrados no Microsoft Intune).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para usar a Ferramenta de Encapsulamento de Aplicativos
 * Seu aplicativo não tem recursos internos para proteção de dados
@@ -117,4 +117,4 @@ Para saber mais sobre as políticas de proteção de aplicativos e o Intune, con
 
   - [Ferramenta de disposição do aplicativo Android](app-wrapper-prepare-android.md)</br>
   - [Ferramenta de encapsulamento de aplicativos do iOS](app-wrapper-prepare-ios.md)</br>
-  - [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](app-sdk.md)

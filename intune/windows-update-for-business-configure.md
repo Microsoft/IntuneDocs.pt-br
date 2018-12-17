@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189246"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112758"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
 
@@ -28,7 +28,7 @@ O Windows como serviço é a maneira de atualizar dispositivos Windows 10. Com o
 
 Ao usar o Windows Update para Empresas, você simplifica a experiência de gerenciamento de atualizações. Você não precisa aprovar as atualizações individuais para grupos de dispositivos. Você pode gerenciar o risco em seus ambientes configurando uma estratégia de distribuição de atualização. E o Windows Update garante que as atualizações estejam instaladas no momento certo. O Microsoft Intune possibilita definir as configurações da atualização nos dispositivos e permite adiar a instalação da atualização. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acessam diretamente as atualizações do Windows Update. Use o Intune para configurar e gerenciar os **grupos de atualização do Windows 10**. Um anel de atualização inclui um grupo de configurações que definem quando e como as atualizações do Windows 10 são instaladas. Por exemplo, você pode definir as seguintes configurações:
 
-- **Canal de Manutenção do Windows 10**: escolha o canal de manutenção do qual você deseja que os grupos de dispositivos recebam atualizações. Os seguintes canais estão disponíveis: 
+- **Canal de manutenção do Windows 10**: escolha o canal de manutenção do qual você deseja que os grupos de dispositivos recebam atualizações. Os seguintes canais estão disponíveis: 
   - Canal Semestral
   - Canal Semestral (direcionado)
   - Windows Insider &#8208; rápido
@@ -36,12 +36,12 @@ Ao usar o Windows Update para Empresas, você simplifica a experiência de geren
   - Liberar Windows Insider 
       
   Para obter detalhes sobre os canais de manutenção disponíveis, consulte [Visão geral do Windows como serviço](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
-- **Configurações de Adiamento**: defina as configurações de adiamento da atualização para atrasar as instalações da atualização para os grupos de dispositivos. Use essas configurações para preparar sua implantação de atualização para que possa examinar o progresso ao longo do caminho.
+- **Configurações de adiamento**: defina as configurações de adiamento da atualização para atrasar as instalações da atualização para os grupos de dispositivos. Use essas configurações para preparar sua implantação de atualização para que possa examinar o progresso ao longo do caminho.
 - **Pausando**: se houver um problema durante a distribuição da atualização, você poderá adiar a instalação da atualização. 
 - **Janela de manutenção**: configure o horário em que as atualizações podem ser instaladas.
-- **Tipo de atualização**: escolha os tipos de atualizações instaladas. Por exemplo, Atualizações de Qualidade, Atualizações de Recursos ou drivers.
+- **Tipo de atualização**: escolha os tipos de atualizações a instalar. Por exemplo, Atualizações de Qualidade, Atualizações de Recursos ou drivers.
 - **Comportamento da instalação**: configura como a atualização é instalada. Por exemplo, o dispositivo reinicia automaticamente após a instalação?
-- **Download de par**: você optar por configurar o download de par. Se configurado, quando um dispositivo tiver terminado o download de uma atualização, outros dispositivos poderão baixar a atualização desse dispositivo. Essa configuração acelera o processo de download.
+- **Download de par**: você escolhe como configurar o download de par. Se configurado, quando um dispositivo tiver terminado o download de uma atualização, outros dispositivos poderão baixar a atualização desse dispositivo. Essa configuração acelera o processo de download.
 
 Depois de criar anéis de atualização, você poderá atribuí-los em grupos de dispositivos. Usando anéis de atualização, você pode criar uma estratégia de atualização que espelha suas necessidades de negócios. Para obter mais informações, consulte [Gerenciar as atualizações usando o Windows Update para Empresas](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -78,27 +78,27 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 3. Insira um nome, uma descrição (opcional) e, em seguida, escolha **configurar**.
 4. Em **Configurações**, insira as seguintes informações:
 
-   - **Manutenção de canal**: defina o canal do qual o dispositivo recebe atualizações do Windows.
-   - **Atualizações de produto da Microsoft**: escolha examinar se há atualizações de aplicativo no Microsoft Update.
+   - **Canal de manutenção**: defina o canal pelo qual o dispositivo recebe atualizações do Windows.
+   - **Atualizações de produto da Microsoft**: escolha examinar se há atualizações de aplicativos no Microsoft Update.
    - **Drivers do Windows**: escolha se deseja excluir os drivers do Windows Update durante as atualizações.
-   - **Comportamento de atualização automática**: escolha como as atualizações automáticas são instaladas, quando reiniciar ou reinicializar. Para obter detalhes, consulte [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Frequência de comportamento automático**: se você selecionar **Instalar e reiniciar automaticamente no horário agendado** para o comportamento de atualização, essa configuração será mostrada. Use essa configuração para agendar quando as atualizações serão instaladas, incluindo o dia, a semana e a hora.
+   - **Comportamento de atualização automática**: escolha como as atualizações automáticas são instaladas e quando reiniciar. Para obter detalhes, consulte [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+     - **Frequência de comportamento automático**: se você selecionar **Instalar e reiniciar automaticamente no horário agendado** como o comportamento de atualização, essa configuração será mostrada. Use essa configuração para agendar quando as atualizações serão instaladas, incluindo o dia, a semana e a hora.
 
-   - **Reiniciar verificações**: habilitado por padrão. Quando você reinicia um dispositivo, ocorrem algumas verificações, incluindo a verificação de usuários ativos, níveis de bateria, jogos em execução e muito mais. Para ignorar essas verificações ao reiniciar um dispositivo, selecione **Ignorar**.
+   - **Reiniciar verificações**: Habilitado por padrão. Quando você reinicia um dispositivo, ocorrem algumas verificações, incluindo a verificação de usuários ativos, níveis de bateria, jogos em execução e muito mais. Para ignorar essas verificações ao reiniciar um dispositivo, selecione **Ignorar**.
 
-   - **Período de adiamento da atualização de qualidade (dias)**: insira o número de dias para os quais as atualizações de qualidade serão adiadas. Você pode adiar o recebimento dessas Atualizações de Qualidade por até 30 dias da liberação.
+   - **Período de adiamento da atualização de qualidade (dias)**: insira o número de dias pelos quais as atualizações de qualidade serão adiadas. Você pode adiar o recebimento dessas Atualizações de Qualidade por até 30 dias da liberação.
 
      Atualizações de Qualidade normalmente são correções e aprimoramentos para a funcionalidade existente do Windows e são publicadas na segunda terça-feira de cada mês. As atualizações de qualidade por meio do Windows Update para Empresas só recebem essas atualizações (a versão 'B'), embora outras atualizações possam ser liberadas a qualquer momento pela Microsoft. Você pode definir se e por quanto tempo adiará o recebimento das Atualizações de Qualidade depois que estiverem disponíveis no Windows Update. Para obter mais informações, confira [Implantar atualizações usando o Windows Update para Empresas](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
-   - **Período de adiamento da atualização de recurso (dias)**: especifique o número de dias para os quais as Atualizações de Recurso serão adiadas. Você pode adiar o recebimento de Atualizações de Recurso por até 180 dias da liberação.
+   - **Período de adiamento da atualização de recurso (dias)**: insira o número de dias pelos quais as atualizações de recursos serão adiadas. Você pode adiar o recebimento de Atualizações de Recurso por até 180 dias da liberação.
 
      As Atualizações do Recurso são geralmente novos recursos para o Windows. Depois de definir a configuração **Canal de manutenção**, você poderá definir se e por quanto tempo deve adiar o recebimento de Atualizações do Recurso depois que estiverem disponíveis no Windows Update.
 
-     Por exemplo: **se o Canal de manutenção estiver definido como Canal Semestral (Direcionado) e o período de adiamento for de 30 dias**: vamos supor que a Atualização do Recurso X esteja publicamente disponível no Windows Update como um Canal Semestral (Direcionado) em janeiro. O dispositivo não receberá a atualização até fevereiro – 30 dias depois.
+     Por exemplo: **Se o canal de manutenção estiver definido como Canal Semestral (direcionado) e o período de adiamento for de 30 dias**: Digamos que a Atualização do Recurso X foi disponibilizada publicamente no Windows Update como um Canal Semestral (direcionado) em janeiro. O dispositivo não receberá a atualização até fevereiro – 30 dias depois.
 
-     **Se o Canal de manutenção estiver definido como Canal Semestral e o período de adiamento for 30 dias**: vamos supor que a Atualização do Recurso X está publicamente disponível no Windows Update como um Canal Semestral (direcionado) em janeiro. Quatro meses depois, em abril, a Atualização do Recurso X será lançada para o Canal Semestral. O dispositivo recebe a atualização de recursos 30 dias após esta liberação de Canal Semestral e é atualizado em maio.
+     **Se o canal de manutenção estiver definido como Canal Semestral e o período de adiamento for de 30 dias**: Digamos que a Atualização do Recurso X foi disponibilizada publicamente no Windows Update como um Canal Semestral (direcionado) em janeiro. Quatro meses depois, em abril, a Atualização do Recurso X será lançada para o Canal Semestral. O dispositivo recebe a atualização de recursos 30 dias após esta liberação de Canal Semestral e é atualizado em maio.
 
-   - **Modo de download de otimização da entrega**: escolha o método para o qual os dispositivos baixam as atualizações do Windows. Para obter detalhes, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Modo de download de otimização de entrega**: escolha o método pelo qual os dispositivos baixarão as atualizações do Windows. Para obter detalhes, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. Ao terminar, selecione **OK**. Em **Criar anel de atualização**, selecione **Criar**.
 
@@ -131,16 +131,16 @@ Você pode exibir a conformidade de atualizações no Intune ou usando uma solu�
 ### <a name="review-update-compliance-using-oms"></a>Examinar conformidade de atualizações usando o OMS
 Você pode monitorar as distribuições de atualização do Windows 10 usando uma solução gratuita denominada Conformidade de Atualizações. Para obter detalhes, consulte [Monitorar as Atualizações do Windows com a Conformidade da Atualização](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando você usa essa solução, pode implantar uma ID comercial para qualquer dispositivo do Windows 10 gerenciado pelo Intune para o qual deseja relatar a conformidade da atualização.
 
-No Intune, você pode usar as configurações OMA-URI de uma política personalizada para configurar a ID comercial. Para obter detalhes, consulte [Configurações da política do Intune para os dispositivos do Windows 10 no Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
+No Intune, você pode usar as configurações OMA-URI de uma política personalizada para configurar a ID comercial. Para obter detalhes, consulte [Configurações da política do Intune para os dispositivos do Windows 10 no Microsoft Intune](custom-settings-windows-10.md).   
 
 O caminho OMA-URI (diferencia maiúsculas de minúsculas) para configurar a ID comercial é: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 Por exemplo, você pode usar os seguintes valores em **Adicionar ou editar a configuração OMA-URI**:
 
 - **Nome da Configuração**: ID comercial do Windows Analytics
-- **Descrição da Configuração**: configurando a ID comercial para soluções Windows Analytics
+- **Descrição da Configuração**: configurando a ID comercial para soluções do Windows Analytics
 - **OMA-URI** (com diferenciação de maiúsculas e minúsculas): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Tipo de Dados**: cadeia de caracteres
+- **Tipo de dados**: Cadeia de caracteres
 - **Valor**: *use o GUID mostrado na guia Telemetria do Windows em seu workspace OMS*>
 
 ![Configuração OMA-URI – editar linha](./media/commID-edit.png)
@@ -174,4 +174,4 @@ O Windows Holographic for Business é compatível com as seguintes configuraçõ
 
 - **Comportamento de atualização automática**
 - **Atualizações de produto da Microsoft**
-- **Canal de manutenção**: dá suporte às opções **Canal semestral** e **Canal semestral (destino)**
+- **Canal de manutenção**: dá suporte às opções **Canal Semestral** e **Canal Semestral (direcionado)**
