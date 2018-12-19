@@ -1,12 +1,12 @@
 ---
 title: 'Registro de dispositivos macOS: Programa de registro de dispositivos ou Apple School Manager'
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: Saiba como registrar dispositivos macOS de propriedade corporativa usando o Programa de registro de dispositivos.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728745"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032343"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Registre automaticamente dispositivos macOS no Programa de registro de dispositivos ou no Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artigo vai ajudá-lo a configurar o registro de dispositivos macOS comprados por meio do [DEP (Programa de registro de dispositivos)](https://deploy.apple.com) ou do [Apple School Manager](https://school.apple.com/) da Apple. Você pode usar esses dois registros para um grande número de dispositivos sem nunca precisar tocá-los. É possível enviar dispositivos macOS diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento do Intune.
+Configure o registro do Intune para dispositivos macOS comprados por meio do [DEP (Programa de registro de dispositivos)](https://deploy.apple.com) ou do [Apple School Manager](https://school.apple.com/) da Apple. Você pode usar esses dois registros para um grande número de dispositivos sem nunca precisar tocá-los. É possível enviar dispositivos macOS diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento do Intune.
 
 Para configurar o registro, use os portais do Intune e Apple DEP. Crie perfis de registro que contêm configurações que são aplicadas aos dispositivos durante o registro.
 
@@ -54,7 +54,7 @@ Para registrar dispositivos macOS com o DEP ou Apple School Manager, é necessá
 Você pode usar o portal da Apple para criar um token. Também pode usar o portal da Apple para atribuir dispositivos ao Intune para gerenciamento.
 
 > [!NOTE]
-> Caso exclua o token do portal clássico do Intune antes de migrar para o Azure, o Intune pode restaurar um token da Apple. Você pode excluir o token novamente no portal do Azure.
+> Caso exclua o token do portal clássico do Intune antes de migrar para o Azure, o Intune pode restaurar um token da Apple. Você pode excluir o token novamente no Portal do Azure.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token.
 
@@ -123,7 +123,7 @@ Agora que você instalou o token, pode criar um perfil de registro para os dispo
  
 7. Selecione **OK**.
 
-8. Escolha as **Configurações do Assistente de Configuração** para definir as seguintes configurações de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. Escolha as **Configurações do Assistente de Configuração** para definir as seguintes configurações de perfil:  ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Configurações de departamento | Descrição |
     |---|---|
@@ -178,7 +178,7 @@ Atribua um perfil do Programa de Registro aos dispositivos antes de registrá-lo
 
 Você pode escolher um perfil padrão do macOS e do iOS a ser aplicado a todos os dispositivos que se registrem com um token específico. 
 
-1. No Intune, no portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista.
+1. No Intune, no Portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista.
 2. Escolha **Definir como Perfil Padrão**, selecione um perfil na lista suspensa e escolha **Salvar**. Este perfil será aplicado a todos os dispositivos registrados com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -192,7 +192,7 @@ Você habilitou o gerenciamento e a sincronização entre a Apple e o Intune e a
     ![Captura de tela de geração de novo token.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. Escolha **Token do Seu Servidor**.  
-5. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token.
+5. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token.
     ![Captura de tela de tokens do programa de registro.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. Escolha **Renovar token** e insira a ID da Apple usada para criar o token original.  

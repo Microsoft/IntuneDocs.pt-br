@@ -1,7 +1,7 @@
 ---
 title: Configurar uma página de status de registro
 titleSuffix: Microsoft Intune
-description: Saúde seus usuários que estão registrando dispositivos Windows 10.
+description: Configure uma página de saudação para usuários que estão registrando dispositivos com Windows 10.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729034"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032088"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante a instalação do dispositivo, a Página de Status do Registro exibe informações de instalação no dispositivo. Alguns aplicativos, perfis e certificados podem não estar instalados no momento em que um usuário conclui a entrada de registro inicial pelo usuário para o dispositivo. Uma página de status de registro pode ajudar os usuários a entender o status do dispositivo durante a configuração do dispositivo. Você pode criar perfis de página de status de vários registros e aplicá-los a grupos diferentes. Os perfis podem ser definidos como:
+Durante a instalação do dispositivo usando o Intune, a Página de Status do Registro exibe informações de instalação no dispositivo. Alguns aplicativos, perfis e certificados podem não estar instalados no momento em que um usuário conclui a entrada de registro inicial pelo usuário para o dispositivo. Uma página de status de registro pode ajudar os usuários a entender o status do dispositivo durante a configuração do dispositivo. Você pode criar perfis de página de status de vários registros e aplicá-los a grupos diferentes. Os perfis podem ser definidos como:
 - Mostrar progresso da instalação.
 - Bloquear uso até a instalação ser concluída.
 - Especificar o que um usuário pode fazer se a configuração do dispositivo falhar.

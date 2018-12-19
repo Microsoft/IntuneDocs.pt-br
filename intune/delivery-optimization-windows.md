@@ -5,34 +5,36 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730393"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977262"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Configurações de otimização de entrega do Windows 10 (e mais recentes) no Microsoft Intune
 
-Este artigo lista e descreve todas as configurações de otimização de entrega que é possível configurar para dispositivos com Windows 10. Essas configurações são adicionadas a um perfil de configuração do dispositivo e, em seguida, atribuídas ou implantadas em seus dispositivos usando o Microsoft Intune.
+Este artigo lista e descreve todas as configurações de otimização de entrega que é possível configurar para dispositivos com Windows 10. Essas configurações são adicionadas a um perfil de configuração do dispositivo e, em seguida, atribuídas ou implantadas em seus dispositivos usando o Microsoft Intune. 
+
+[Atualizações de otimização de entrega](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) é um excelente recurso para saber mais sobre a otimização de entrega no Windows 10.
 
 ## <a name="settings"></a>Configurações
 
-**Modo de download de otimização de entrega**: escolha como as atualizações são entregues aos seus dispositivos. Suas opções:
+**Modo de download de otimização de entrega**: Escolha como as atualizações são entregues aos seus dispositivos. Suas opções:
 
-- **Não configurado**: os usuários finais atualizam seus dispositivos usando seus próprios métodos, que podem ser pelas configurações do **Windows Update** ou de **Otimização de Entrega** que acompanham o sistema operacional.
-- **HTTP apenas, sem emparelhamento**: obter atualizações somente pela Internet. Não receber atualizações de outros computadores na sua rede (chamado de emparelhamento ou ponto a ponto).
-- **HTTP combinado com emparelhamento por trás do mesmo NAT HTTP combinado com emparelhamento um grupo privado**: obtenha as atualizações pela Internet e por outros computadores na sua rede. O emparelhamento ocorre em dispositivos no mesmo Site do Active Directory (se houver) ou no mesmo domínio. Quando essa opção está selecionada, o emparelhamento cruza seus endereços IP de conversão de endereços de rede (NATs).
-- **HTTP combinado com emparelhamento de Internet**: obtenha as atualizações pela Internet e por outros computadores na sua rede.
-- **Modo de download simples sem emparelhamento**: obtém atualizações pela Internet, diretamente do proprietário da atualização, como a Microsoft. Não entra em contato com os serviços de nuvem de otimização de entrega.
-- **Modo bypass**: use a otimização do BITS (Serviço de Transferência Inteligente em Segundo Plano) para receber atualizações. Não use a otimização de entrega.
+- **Não configurado**: Os usuários finais atualizam seus dispositivos usando seus próprios métodos, que podem ser pelas configurações do **Windows Update** ou de **Otimização de Entrega** que acompanham o sistema operacional.
+- **HTTP apenas, sem emparelhamento**: Obtenha atualizações somente pela Internet. Não receber atualizações de outros computadores na sua rede (chamado de emparelhamento ou ponto a ponto).
+- **HTTP combinado com emparelhamento por trás do mesmo NAT HTTP combinado com emparelhamento em um grupo privado**: Obtenha as atualizações pela Internet e por outros computadores na sua rede. O emparelhamento ocorre em dispositivos no mesmo Site do Active Directory (se houver) ou no mesmo domínio. Quando essa opção está selecionada, o emparelhamento cruza seus endereços IP de conversão de endereços de rede (NATs).
+- **HTTP combinado com emparelhamento de Internet**: Obtenha as atualizações pela Internet e por outros computadores na sua rede.
+- **Modo de download simples sem emparelhamento**: Obtém atualizações pela Internet, diretamente do proprietário da atualização, como a Microsoft. Não entra em contato com os serviços de nuvem de otimização de entrega.
+- **Modo bypass**: Use a otimização do BITS (Serviço de Transferência Inteligente em Segundo Plano) para receber atualizações. Não use a otimização de entrega.
 
 ## <a name="move-from-existing-update-rings-to-delivery-optimization"></a>Mover de anéis de atualização existentes para otimização de entrega
 

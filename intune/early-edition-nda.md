@@ -1,6 +1,7 @@
 ---
-title: Edição antecipada
-description: ''
+title: Edição antecipada - Microsoft Intune
+titlesuffix: ''
+description: Edição antecipada do Microsoft Intune
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,18 +16,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829123"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112826"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Edição antecipada do Microsoft Intune: dezembro de 2018
 
 > [!Note]
-> Notificação sobre o NDA: as alterações a seguir estão em desenvolvimento para o Intune. Essas informações são compartilhadas nos termos do NDA de forma muito limitada. Não poste nenhuma dessas informações em mídia social nem em sites públicos, como Twitter, UserVoice, Reddit e assim por diante. 
+> Notificação de NDA: As seguintes alterações estão em desenvolvimento para o Intune. Essas informações são compartilhadas nos termos do NDA de forma muito limitada. Não poste nenhuma dessas informações em mídia social nem em sites públicos, como Twitter, UserVoice, Reddit e assim por diante. 
 
 A **edição antecipada** fornece uma lista de recursos, compartilhados nos termos do NDA, que estarão disponíveis em versões futuras do Microsoft Intune. Essas informações são fornecidas de forma limitada e estão sujeitas a alterações. Não tweet, poste no UserVoice nem compartilhe de nenhuma outra forma essas informações fora de sua empresa. Alguns recursos listados aqui correm o risco de não estarem prontos na data de fechamento e serem atrasados até uma versão futura. Outros recursos estão sendo testados em um piloto (liberação de versões de pré-lançamento) para garantir que fiquem prontos para o cliente. Fale com seu contato do grupo de produtos da Microsoft em caso de perguntas ou dúvidas.
 
@@ -38,7 +39,7 @@ Esta página é atualizada periodicamente. Volte a ela para verificar se há atu
 ## Notices
 -->
  
-## <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
+## <a name="intune-in-the-azure-portal"></a>Intune no Portal do Azure
 
 <!-- 1812 start -->
 
@@ -48,10 +49,21 @@ Para dispositivos Android em um cenário de implantação APP-WE (Política de p
 ### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Novas opções para se conectar automaticamente e manter as regras ao usar configurações de DNS em dispositivos com Windows 10 e versões posteriores <!-- 1333665, 2999078 -->
 Em dispositivos com Windows 10 e posteriores, é possível criar um perfil de configuração de VPN que inclui uma lista de servidores DNS para resolver domínios, por exemplo, contoso.com. Isso inclui novas configurações de resolução de nome (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > escolha **Windows 10 e posterior** para a plataforma > escolha **VPN** para o tipo de perfil > **Configurações de DNS** >**Adicionar**): 
 
-- **Conectar-se automaticamente**: quando essa opção está **Habilitada**, o dispositivo se conecta automaticamente à VPN quando um dispositivo entra em contato com um domínio inserido por você, por exemplo, contoso.com.
-- **Persistente**: por padrão, todas as regras de NRPT (Tabela de Políticas de Resolução de Nomes) estão ativas, desde que o dispositivo esteja conectado usando esse perfil de VPN. Quando essa configuração está **Habilitada** em uma regra de NRPT, a regra permanece ativa no dispositivo, mesmo quando a VPN se desconectar ou o perfil de VPN for removido. A regra permanece até que seja removida manualmente, o que pode ser feito usando o PowerShell.
+- **Conectar automaticamente**: Quando essa opção está **Habilitada**, o dispositivo se conecta automaticamente à VPN quando um dispositivo entra em contato com um domínio inserido por você, por exemplo, contoso.com.
+- **Persistente**: Por padrão, todas as regras de NRPT (Tabela de Políticas de Resolução de Nomes) estão ativas, desde que o dispositivo esteja conectado usando esse perfil de VPN. Quando essa configuração está **Habilitada** em uma regra de NRPT, a regra permanece ativa no dispositivo, mesmo quando a VPN se desconectar ou o perfil de VPN for removido. A regra permanece até que seja removida manualmente, o que pode ser feito usando o PowerShell.
 
 [Configurações de VPN do Windows 10](vpn-settings-windows-10.md) descreve a lista atual das configurações. 
+
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Usar S/MIME para criptografar e assinar vários dispositivos de um usuário  <!-- 1333642 eeready -->
+Criptografia de email S/MIME usando um novo perfil de certificado importado (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > selecione a plataforma > tipo de perfil **Certificado PKCS importado**). No Intune, você pode importar certificados no formato PFX. Em seguida, o Intune pode fornecer os mesmos certificados para vários dispositivos registrados por um único usuário. Isso também inclui:
+
+- O perfil de email do iOS nativo permite habilitar a criptografia S/MIME usando certificados importados no formato PFX.
+- O aplicativo de email nativo em dispositivos Windows Phone 10 usam automaticamente o certificado S/MIME.
+- Os certificados privados podem ser entregues em várias plataformas. Porém, nem todos os aplicativos de email são compatíveis com S/MIME.
+- Em outras plataformas, talvez você precise configurar manualmente o aplicativo de email para habilitar o S/MIME.  
+- Os aplicativos de email compatíveis com a criptografia S/MIME podem manipular a recuperação de certificados para criptografia de email S/MIME de uma maneira com a qual o MDM não é compatível, como a leitura do repositório de certificados do editor.
+
+Com suporte em: Windows, Windows Phone 10, macOS, iOS, Android
 
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Página de Ajuda e Suporte no Aplicativo Portal da Empresa do Windows <!-- 1488939 -->
 Uma nova página é adicionada ao aplicativo Portal da Empresa do Windows. A página de ajuda e suporte fornece informações de contato da assistência técnica. Além disso, os usuários finais podem enviar logs do Portal da Empresa, caso tenham problemas. A página também fornece uma seção de perguntas frequentes para ajudar os usuários finais.
@@ -59,9 +71,6 @@ Uma nova página é adicionada ao aplicativo Portal da Empresa do Windows. A pá
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Usar a detecção de rede confiável para perfis de VPN em dispositivos com Windows 10 <!-- 1500165 -->
 Ao usar a detecção de rede confiável, é possível impedir que os perfis de VPN criem automaticamente uma conexão VPN quando o usuário já estiver em uma rede confiável. É possível adicionar sufixos DNS para habilitar a detecção de rede confiável em dispositivos que executam o Windows 10 e posterior (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **Windows 10 e posterior** para a plataforma > **VPN** para o tipo de perfil).
 [Configurações de VPN do Windows 10](vpn-settings-windows-10.md) lista as configurações de VPN atuais.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Suporte para dispositivos Android corporativos, totalmente gerenciados <!-- 574342 -->
-O Intune oferece suporte a dispositivos Android totalmente gerenciados, um cenário de "proprietário do dispositivo" corporativo no qual os dispositivos são gerenciados com rigidez pelo departamento de TI e são afiliados a usuários individuais. Isso permite aos administradores gerenciar todo o dispositivo, impor uma extensa variedade de controles de política não disponíveis aos perfis de trabalho e restringe a instalação de aplicativos por parte dos usuários apenas à Google Play gerenciada. Para configurar dispositivos totalmente gerenciados do Android, acesse **Registro de dispositivo** > **Registro do Android** > **Dispositivos corporativos totalmente gerenciados**.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>O SDK de Aplicativo do Intune oferece suporte a chaves de criptografia de 256 bits <!-- 1832174 -->
 O SDK de Aplicativo do Intune para iOS usa as chaves de criptografia de 256 bits quando a criptografia é habilitada por Políticas de Proteção de Aplicativo. O SDK continua a fornecer suporte a chaves de 128 bits para compatibilidade com o conteúdo e aplicativos que usam versões mais antigas do SDK.
@@ -77,14 +86,14 @@ O Intune não oferecerá mais suporte, para certos dispositivos, ao aplicativo P
 * Apple School Manager
 * Programa de registro de dispositivos (DEP) da Apple
 
-Se os usuários instalarem o aplicativo Portal da Empresa pela loja de aplicativos e tentarem registrar esses dispositivos por meio do aplicativo, receberão um erro. Esses dispositivos só devem usar o Portal da Empresa quando ele for enviado por push, automaticamente, pelo Intune durante o registro. Os perfis de registro no Intune, no portal do Azure, serão atualizados para que você possa especificar como os dispositivos são autenticados, e se o usuário recebe o aplicativo Portal da Empresa. Se você quiser que os usuários de dispositivos DEP tenham o Portal da Empresa, especifique suas preferências em um perfil de registro. Além disso, a tela **Identifique o dispositivo** no aplicativo Portal da Empresa logo se tornará obsoleta.  
+Se os usuários instalarem o aplicativo Portal da Empresa pela loja de aplicativos e tentarem registrar esses dispositivos por meio do aplicativo, receberão um erro. Esses dispositivos só devem usar o Portal da Empresa quando ele for enviado por push, automaticamente, pelo Intune durante o registro. Os perfis de registro no Intune, no Portal do Azure, serão atualizados para que você possa especificar como os dispositivos são autenticados, e se o usuário recebe o aplicativo Portal da Empresa. Se você quiser que os usuários de dispositivos DEP tenham o Portal da Empresa, especifique suas preferências em um perfil de registro. Além disso, a tela **Identifique o dispositivo** no aplicativo Portal da Empresa logo se tornará obsoleta.  
 Para instalar o Portal da Empresa em dispositivos DEP já registrados, acesse Intune > Aplicativos cliente, e envie-o como um aplicativo gerenciado com políticas de configuração de aplicativo. Os detalhes sobre como executar essas etapas serão descritos em documentos futuros.
 
 ### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379---"></a>Aqueles que não são administradores podem habilitar o BitLocker em dispositivos com Windows 10 registrados no Azure AD<!-- 2147379 -->
 Ao habilitar as configurações do BitLocker em dispositivos com Windows 10 (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **Windows 10 e posterior** para a plataforma > **Endpoint Protection** para o tipo de perfil > **Criptografia do Windows**), você adiciona as configurações do BitLocker. Esta atualização inclui uma nova configuração de BitLocker para permitir que os usuários padrão (não administradores) habilitem a criptografia. Para ver as configurações atuais, consulte [Configurações de proteção do ponto de extremidade para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 
 ### <a name="intune-app-pin----2298397---"></a>PIN do aplicativo Intune <!-- 2298397 -->
-Como administrador(a) de TI, é possível configurar o número de dias que um usuário final pode esperar até que o PIN do aplicativo Intune precise ser alterado. A nova configuração será disponibilizada no portal do Azure ao selecionar **Intune** > **Aplicativos cliente** > **Políticas de proteção do aplicativo** > **Criar política** > **Configurações** > **Requisitos de acesso**. Esse recurso será disponibilizado em dispositivos Android e iOS. Essa configuração oferece suporte a um valor inteiro positivo.
+Como administrador(a) de TI, é possível configurar o número de dias que um usuário final pode esperar até que o PIN do aplicativo Intune precise ser alterado. A nova configuração será disponibilizada no Portal do Azure ao selecionar **Intune** > **Aplicativos cliente** > **Políticas de proteção do aplicativo** > **Criar política** > **Configurações** > **Requisitos de acesso**. Esse recurso será disponibilizado em dispositivos Android e iOS. Essa configuração oferece suporte a um valor inteiro positivo.
 
 ### <a name="new-windows-10-update-settings----2626030-2512994---"></a>Novas configurações de Atualização do Windows 10 <!-- 2626030 2512994 -->
 Para seus Anéis de Atualização do Windows 10, é possível:
@@ -99,17 +108,20 @@ Para seus Anéis de Atualização do Windows 10, é possível:
 [Definições de configuração de email do iOS](email-settings-ios.md) lista as configurações atuais.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Ignorar mais telas do Assistente de Configuração em um dispositivo DEP com iOS <!-- 2687509 -->
-Além das telas que você já pode ignorar, é possível configurar os dispositivos DEP com iOS para ignorar as telas a seguir no Assistente de Configuração durante o registro do dispositivo pelo usuário: Exibir Sinal, Privacidade, Migração do Android, Botão de Início, iMessage e FaceTime, Integração, Migração do Watch, Aparência, Tempo de Tela, Atualização de Software, Instalação do SIM.
+Além das telas que você pode pular no momento, você poderá definir dispositivos iOS DEP para ignorar as telas a seguir no Assistente de Configuração, quando um usuário registrar o dispositivo: Exiba tom, Privacidade, Migração do Android, botão Página Inicial, iMessage e FaceTime, Integração, Migração de Inspeção, Aparência, Hora na Tela, Atualização de Software, Configuração do SIM.
 Para escolher quais telas ignorar, acesse **Registro do dispositivo** > **Registro da Apple** > **Tokens do programa de registro** > escolha um token > **Perfis** > escolha um perfil > **Propriedades** > **Personalização do Assistente de Configuração** > escolha **Ocultar** para as telas que você deseja ignorar > **OK**.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Algumas configurações do BitLocker oferecem suporte à edição Windows 10 Pro<!-- 2727036 -->
 É possível criar um perfil de configuração que define as configurações de proteção do ponto de extremidade em dispositivos com Windows 10, incluindo o BitLocker. Isso adiciona suporte ao Windows 10 Professional para algumas configurações do BitLocker. Para ver as configurações atuais do Windows 10, consulte [Configurações de proteção do ponto de extremidade para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 O Intune fornece campos adicionais de informações sobre o dispositivo, incluindo o fabricante, o modelo e a versão do patch de segurança do Android, bem como o modelo do iOS. No Intune, esses campos estão disponíveis ao selecionar **Aplicativos cliente** > **Status de Proteção do Aplicativo** e **Relatório de proteção do aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista **Permissão** para o fabricante do dispositivo (Android), a lista **Permissão** para o modelo do dispositivo (Android e iOS) e a configuração de versão mínima do patch de segurança do Android. 
 
-### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>A configuração de dispositivos compartilhados foi renomeada para Mensagem de Tela de Bloqueio para dispositivos iOS no portal do Azure <!-- 2809362 -->
+### <a name="intune-device-reporting-fields----2748738---"></a>Campos de relatório de dispositivo do Intune <!-- 2748738 -->
+O Intune fornece campos adicionais de informações sobre o dispositivo, incluindo o fabricante, o modelo e a versão do patch de segurança do Android, bem como o modelo do iOS. No Intune, esses campos estão disponíveis ao selecionar **Aplicativos cliente** > **Status de Proteção do Aplicativo** e **Relatório de proteção do aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista **Permissão** para o fabricante do dispositivo (Android), a lista **Permissão** para o modelo do dispositivo (Android e iOS) e a configuração de versão mínima do patch de segurança do Android. 
+
+### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>A configuração de dispositivos compartilhados foi renomeada para Mensagem de Tela de Bloqueio para dispositivos iOS no Portal do Azure <!-- 2809362 -->
 Ao criar um perfil de configuração para dispositivos iOS, é possível adicionar ajustes de **Configuração de Dispositivo Compartilhado** para mostrar um texto específico na tela de bloqueio. Isso inclui estas alterações: 
 
-- A **Configuração de Dispositivo Compartilhado** no portal do Azure foi renomeada para "Mensagem na Tela de Bloqueio (apenas supervisionada)" (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > escolha **iOS** para a plataforma > escolha **Recursos do dispositivo** para o tipo de perfil > **Mensagem na Tela de Bloqueio**).
+- A **Configuração de Dispositivo Compartilhado** no Portal do Azure foi renomeada para "Mensagem na Tela de Bloqueio (apenas supervisionada)" (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > escolha **iOS** para a plataforma > escolha **Recursos do dispositivo** para o tipo de perfil > **Mensagem na Tela de Bloqueio**).
 - Ao adicionar mensagens na tela de bloqueio, é possível inserir um número de série, um nome de dispositivo ou outro valor específico ao dispositivo como variável em **Informações de marca do ativo**. Por exemplo, é possível inserir `Device name: {{device name}}` ou `Serial number is {{serial number}}` usando colchetes. [Tokens de iOS](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) lista os tokens disponíveis que podem ser usados.
 
 [Configurações para exibir mensagens na tela de bloqueio](shared-device-settings-ios.md) lista as configurações atuais.
@@ -133,10 +145,10 @@ Nesta atualização, é possível usar as conexões VPN Sempre Ativa em disposit
 ### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Nova configuração para encerrar processos no Gerenciador de Tarefas em dispositivos com Windows 10 <!-- 3285177 --> 
 Esta atualização inclui uma nova configuração para encerrar processos usando o Gerenciador de Tarefas em dispositivos com Windows 10. Usando um perfil de configuração do dispositivo (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > em **Plataforma** , escolha **Windows 10** > no **Tipo de perfil**, escolha **Restrições de dispositivo** > **Geral**), é possível permitir ou impedir essa configuração.
 Para ver as configurações atuais, acesse [Configurações de restrição de dispositivo do Windows 10](device-restrictions-windows-10.md).
-Aplica-se ao Windows 10 e posteriores
+Aplica-se a: Windows 10 e posterior
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Os modelos administrativos estão em versão prévia pública e mudaram para o perfil de configuração próprio <!-- 3322847 -->
-Os modelos administrativos no Intune (**Configuração do dispositivo** > **Modelos administrativos**) estão em versão prévia privada. Com essa atualização: os modelos administrativos incluem aproximadamente 300 configurações que podem ser gerenciadas no Intune. Anteriormente, essas configurações só existiam no editor de política de grupo.
+Os modelos administrativos no Intune (**Configuração do dispositivo** > **Modelos administrativos**) estão em versão prévia privada. Com esta atualização: Modelos administrativos incluem aproximadamente 300 configurações que podem ser gerenciadas no Intune. Anteriormente, essas configurações só existiam no editor de política de grupo.
 Os modelos administrativos estão disponíveis na versão prévia pública. Os modelos administrativos estão mudando de **Configuração do dispositivo** > **Modelos administrativos** para **Configuração do dispositivo** > **Perfis** >**Criar perfil** > em **Plataforma**, escolha **Windows 10 e posterior**, em **Tipo de perfil**, escolha **Modelos administrativos**.
 A criação de relatórios está habilitada. Aplica-se a: Windows 10 e posterior
 
@@ -154,14 +166,14 @@ Para adicionar uma marca de escopo a um perfil de configuração, escolha **Conf
 
 ### <a name="tenant-health-dashboard----1124854---"></a>Painel de Integridade do Locatário <!-- 1124854 -->
 A página Status do Locatário no Intune fornecerá informações de status do locatário em um único lugar. A página está dividida em quatro seções:  
-- **Detalhes do locatário**: contém informações, como sua Autoridade de MDM, o total de dispositivos registrados no seu locatário e contagens de suas licenças. Esta seção também fornece a versão de serviço atual do seu locatário.
-- **Status do conector**: contém informações para conectores configurados, como o VPP da Apple, Windows Store para Empresas e conectores de certificado. Com base em seu estado atual, os conectores são sinalizados como *Íntegro*, *Aviso* ou *Não íntegro*.
-- **Integridade do serviço do Intune**: contém incidentes interrupções ativos do seu locatário. As informações desta seção são recuperadas diretamente do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
-- **Notícias sobre o Intune**: contém mensagens ativas para seu locatário, que inclui itens como notificações de que seu locatário recebeu os recursos mais recentes do Intune. As informações desta seção são recuperadas diretamente do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
+- **Detalhes do locatário**: Contém informações, como sua Autoridade de MDM, o total de dispositivos registrados no seu locatário e contagens de suas licenças. Esta seção também fornece a versão de serviço atual do seu locatário.
+- **Status do Conector**: Contém informações para conectores configurados, como o VPP da Apple, Windows Store para Empresas e conectores de certificado. Com base em seu estado atual, os conectores são sinalizados como *Íntegro*, *Aviso* ou *Não íntegro*.
+- **Integridade do Serviço do Intune**: Contém incidentes ativos ou interrupções para o seu locatário. As informações desta seção são recuperadas diretamente do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
+- **Notícias sobre o Intune**: Contém mensagens ativas para seu locatário, que inclui itens como notificações de que seu locatário recebeu os recursos mais recentes do Intune. As informações desta seção são recuperadas diretamente do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
 
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Políticas de WIP implantadas sem o registro do usuário <!-- 1434452 -->
-Políticas de WIP (Proteção de Informações do Windows) poderão ser implantadas sem que os usuários do MDM registrem seu dispositivo Windows 10. Essa configuração permite que as empresas protejam seus documentos corporativos com base na configuração do WIP, enquanto permitem que o usuário mantenha o gerenciamento dos seus próprios dispositivos Windows. Depois que os documentos forem protegidos com uma política de WIP, os dados protegidos poderão ser apagados seletivamente por um administrador do Intune. Selecionando o usuário e o dispositivo, e enviando uma solicitação de apagamento, todos os dados protegidos por meio da política de WIP ficarão inutilizáveis. No Intune no portal do Azure, selecione **Aplicativo móvel** > **Apagamento seletivo do aplicativo**.
+Políticas de WIP (Proteção de Informações do Windows) poderão ser implantadas sem que os usuários do MDM registrem seu dispositivo Windows 10. Essa configuração permite que as empresas protejam seus documentos corporativos com base na configuração do WIP, enquanto permitem que o usuário mantenha o gerenciamento dos seus próprios dispositivos Windows. Depois que os documentos forem protegidos com uma política de WIP, os dados protegidos poderão ser apagados seletivamente por um administrador do Intune. Selecionando o usuário e o dispositivo, e enviando uma solicitação de apagamento, todos os dados protegidos por meio da política de WIP ficarão inutilizáveis. No Intune no Portal do Azure, selecione **Aplicativo móvel** > **Apagamento seletivo do aplicativo**.
 
 
 <!-- 1809 start -->  
