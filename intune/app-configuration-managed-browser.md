@@ -122,7 +122,7 @@ O SSO requer que seu dispositivo seja registrado pelo aplicativo Microsoft Authe
 4.  Na folha **Políticas de configuração de aplicativo**, escolha **Adicionar**.
 5.  Na folha **Adicionar política configuração**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
 6.  Para o tipo **Registro de Dispositivo**, escolha **Aplicativos gerenciados**.
-7.  Escolha **Selecionar o aplicativo necessário** e, em seguida, na folha **Aplicativos direcionados**, escolha o **Managed Browser** e/ou **Edge** para iOS, Android ou ambos.
+7.  Escolha **Selecionar o aplicativo necessário** e, em seguida, na folha **Aplicativos direcionados**, escolha o **Managed Browser** e/ou **Microsoft Edge** para iOS, Android ou ambos.
 8.  Escolha **OK** para retornar à folha **Adicionar política de configuração**.
 9.  Escolha **Definições de configuração**. Na folha **Configuração**, defina os pares de chave e valor para fornecer as configurações do Managed Browser. Use as próximas seções deste artigo para saber mais sobre os diferentes pares de chave e valor que podem ser definidos.
 10. Quando terminar, escolha **OK**.

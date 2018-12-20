@@ -61,7 +61,7 @@ A lista a seguir descreve as configurações de que o suporte da sua empresa pod
 
 * Acesso a sites específicos  
 
-* Acesso a sites internos da empresa usando o proxy do Azure Active Directory e do Edge  
+* Acesso a sites internos da empresa usando o proxy do Azure Active Directory e do Microsoft Edge  
 
 * Versão mínima do aplicativo, versão do sistema operacional
 
