@@ -45,7 +45,7 @@ Este artigo mostra as configurações de restrições de dispositivo do Microsof
 
   **Não configurado** permite esses recursos.
 
-- **Bloquear solicitações de proximidade de senha **: escolha **Bloquear** para que um dispositivo de usuário não solicite senhas de dispositivos próximos. **Não configurado** permite essas solicitações de senha.
+- **Bloquear solicitações de proximidade de senha**: escolha **Bloquear** para que um dispositivo de usuário não solicite senhas de dispositivos próximos. **Não configurado** permite essas solicitações de senha.
 
 - **Bloquear o compartilhamento de senha**: **Bloquear** impede o compartilhamento de senhas entre dispositivos usando o AirDrop. **Não configurado** permite o compartilhamento das senhas.
 

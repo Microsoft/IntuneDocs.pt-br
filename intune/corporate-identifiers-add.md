@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032241"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324851"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -43,7 +43,7 @@ Após o registro, você pode [alterar a configuração de propriedade](#change-d
 
 Como administrador do Intune, você pode criar e importar um arquivo .csv (valores separados por vírgula) que liste os números IMEI ou os números de série. O Intune usa esses identificadores para especificar a propriedade do dispositivo como corporativo durante o registro. Você pode declarar números IMEI em todas as plataformas com suporte. Somente é possível declarar o número de série para dispositivos iOS, macOS e Android. Cada número IMEI ou de série pode ter detalhes especificados na lista para fins administrativos.
 
-<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [Saiba como localizar o número de série de um dispositivo Apple](https://support.apple.com/HT204308).<br>
 [Saiba como localizar o número de série do seu dispositivo Android](https://support.google.com/store/answer/3333000).

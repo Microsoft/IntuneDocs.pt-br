@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180129"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305923"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicativos a dispositivos de perfil de trabalho Android com o Intune
 
@@ -56,7 +56,7 @@ Verifique se você configurou o Intune e os perfis de trabalho Android para trab
 
     ![Opções para gerencia novas solicitações de permissão de aplicativo](media/approve-app-settings.png)
 
-    O aplicativo é aprovado e exibido no console do administrador de TI. Em seguida, você poderá [sincronizar o aplicativo de perfil de trabalho Android com o Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    O aplicativo é aprovado e exibido no console do administrador de TI. Em seguida, você poderá [sincronizar o aplicativo de perfil de trabalho Android com o Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizar um aplicativo do Google Play gerenciado com o Intune
 
@@ -84,7 +84,7 @@ Quando um desenvolvedor de aplicativo atualiza as permissões com uma nova vers�
 
 Periodicamente, acesse o console gerenciado do Google Play para verificar se há novas permissões. Você pode configurar o Google Play para enviar um email a você ou a outras pessoas quando novas permissões forem necessárias para um aplicativo aprovado. Se você atribuir um aplicativo e observar que ele não está instalado nos dispositivos, verifique as novas permissões seguindo estas etapas:
 
-1. Vá ao [Google Play](http://play.google.com/work).
+1. Vá ao [Google Play](https://play.google.com/work).
 2. Entre com a conta do Google usada para publicar e aprovar os aplicativos.
 3. Selecione a guia **Atualizações** e verifique se todos os aplicativos precisam de atualização.  
     Os aplicativos listados exigem novas permissões e só são atribuídos quando elas são aplicadas.
