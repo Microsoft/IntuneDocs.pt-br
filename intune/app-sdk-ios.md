@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 0fc0e5bdb261b3cfbc2e5507e1206354d8cc4051
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630044"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657824"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -45,13 +45,13 @@ O SDK de Aplicativos do Intune para iOS inclui uma biblioteca estática, arquivo
 
 Este guia aborda o uso dos seguintes componentes do SDK de Aplicativos do Intune para iOS:
 
-* **libIntuneMAM.a**: a biblioteca estática do SDK de Aplicativos do Intune. Se o aplicativo não usar extensões, vincule essa biblioteca ao seu projeto para habilitar o aplicativo para o gerenciamento de aplicativo de cliente do Intune.
+* **libIntuneMAM.a**: A biblioteca estática do SDK de Aplicativos do Intune. Se o aplicativo não usar extensões, vincule essa biblioteca ao seu projeto para habilitar o aplicativo para o gerenciamento de aplicativo de cliente do Intune.
 
-* **IntuneMAM.framework**: a estrutura do SDK de Aplicativos do Intune. Vincule essa estrutura ao projeto para habilitar o aplicativo para o gerenciamento de aplicativo cliente do Intune. Use a estrutura em vez da biblioteca estática se o aplicativo usar extensões, para que o projeto não crie várias cópias da biblioteca estática.
+* **IntuneMAM.framework**: A estrutura de SDK de Aplicativos do Intune. Vincule essa estrutura ao projeto para habilitar o aplicativo para o gerenciamento de aplicativo cliente do Intune. Use a estrutura em vez da biblioteca estática se o aplicativo usar extensões, para que o projeto não crie várias cópias da biblioteca estática.
 
-* **IntuneMAMResources.bundle**: um pacote de recursos que contém recursos dos quais o SDK depende.
+* **IntuneMAMResources.bundle**: Um pacote dos recursos usados pelo SDK.
 
-* **Cabeçalhos**: expõem as APIs do SDK de Aplicativos do Intune. Se você usar uma API, precisará incluir o arquivo de cabeçalho que contém a API. Os Arquivos de Cabeçalho a seguir incluem APIs, tipos de dados e protocolos que o SDK do aplicativo do Intune disponibiliza para desenvolvedores:
+* **Cabeçalhos**: Expõem as APIs do SDK de Aplicativos do Intune. Se você usar uma API, precisará incluir o arquivo de cabeçalho que contém a API. Os Arquivos de Cabeçalho a seguir incluem APIs, tipos de dados e protocolos que o SDK do aplicativo do Intune disponibiliza para desenvolvedores:
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -81,12 +81,12 @@ O objetivo do SDK do Intune APP para iOS é adicionar recursos de gerenciamento 
 
 Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
 
-1. **Opção 1 (recomendado)**: vincule `IntuneMAM.framework` ao seu projeto. Arraste `IntuneMAM.framework` para a lista **Binários inseridos** do destino do projeto.
+1. **Opção 1 (recomendada)**: Vincule `IntuneMAM.framework` ao seu projeto. Arraste `IntuneMAM.framework` para a lista **Binários inseridos** do destino do projeto.
 
    > [!NOTE]
    > Se você usar a estrutura, precisará remover manualmente as arquiteturas de simulador da estrutura universal antes de enviar seu aplicativo à App Store. Confira [Enviar seu aplicativo à App Store](#Submit-your-app-to-the-App-Store) para obter mais detalhes.
 
-   **Opção 2**: link para a biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` na lista **Estruturas e Bibliotecas Vinculadas** do destino do projeto.
+   **Opção 2**: Link para a biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` na lista **Estruturas e Bibliotecas Vinculadas** do destino do projeto.
 
     ![SDK de Aplicativos do Intune para iOS: estruturas e bibliotecas vinculadas](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -127,21 +127,21 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
 
 4. Depois que você habilitar o compartilhamento de conjunto de chaves, siga estas etapas para criar um grupo de acesso separado no qual o SDK de Aplicativos do Intune armazenará seus dados. Você pode criar um grupo de acesso do conjunto de chaves usando a interface do usuário ou o arquivo de direitos. Se você estiver usando a interface do usuário para criar o grupo de acesso do conjunto de chaves, certifique-se de seguir as etapas abaixo:
 
-   1. Se seu aplicativo móvel não tiver grupos de acesso do conjunto de chaves definidos, adicione a ID do lote do aplicativo como o **primeiro** grupo.
-
-   2. Adicione o grupo de conjunto de chaves compartilhado `com.microsoft.intune.mam` aos grupos de acesso existentes. O SDK de Aplicativos do Intune usa esse grupo de acesso para armazenar dados.
-
-   3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
-
-       ![SDK de Aplicativo do Intune para iOS: compartilhamento de conjunto de chaves](./media/intune-app-sdk-ios-keychain-sharing.png)
-
-   4. Se você estiver editando o arquivo de direitos diretamente, em vez de usar a interface do usuário do Xcode exibida acima para criar os grupos de acesso do conjunto de chaves, preceda os grupos de acesso do conjunto de chaves com `$(AppIdentifierPrefix)` (o Xcode gerenciará isso automaticamente). Por exemplo:
-
-           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
-
-      > [!NOTE]
-      > Um arquivo de direitos é um arquivo XML exclusivo ao aplicativo móvel. Ele é usado para especificar funcionalidades e permissões especiais em seu aplicativo iOS. Se o seu aplicativo não tinha um arquivo de direitos anteriormente, habilitar o compartilhamento do conjunto de chaves (etapa 3) deve fazer o Xcode gerar um para seu aplicativo. Verifique se a ID do lote do aplicativo é a primeira entrada na lista.
+    1. Se seu aplicativo móvel não tiver grupos de acesso do conjunto de chaves definidos, adicione a ID do lote do aplicativo como o **primeiro** grupo.
+    
+    2. Adicione o grupo de conjunto de chaves compartilhado `com.microsoft.intune.mam` aos grupos de acesso existentes. O SDK de Aplicativos do Intune usa esse grupo de acesso para armazenar dados.
+    
+    3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
+    
+        ![SDK de Aplicativo do Intune para iOS: compartilhamento de conjunto de chaves](./media/intune-app-sdk-ios-keychain-sharing.png)
+    
+    4. Se você estiver editando o arquivo de direitos diretamente, em vez de usar a interface do usuário do Xcode exibida acima para criar os grupos de acesso do conjunto de chaves, preceda os grupos de acesso do conjunto de chaves com `$(AppIdentifierPrefix)` (o Xcode gerenciará isso automaticamente). Por exemplo:
+    
+        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+    
+        > [!NOTE]
+        > Um arquivo de direitos é um arquivo XML exclusivo ao aplicativo móvel. Ele é usado para especificar funcionalidades e permissões especiais em seu aplicativo iOS. Se o seu aplicativo não tinha um arquivo de direitos anteriormente, habilitar o compartilhamento do conjunto de chaves (etapa 3) deve fazer o Xcode gerar um para seu aplicativo. Verifique se a ID do lote do aplicativo é a primeira entrada na lista.
 
 5. Inclua todos os protocolos que o aplicativo passar para `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do arquivo Info.plist do aplicativo. Salve as alterações antes de prosseguir para a próxima etapa.
 
@@ -231,8 +231,8 @@ ContainingAppBundleId | Cadeia de caracteres | Especifica a ID do pacote do apli
 DebugSettingsEnabled| Booliano | Se definido como SIM, as políticas de teste do pacote de Configurações podem ser aplicadas. Os aplicativos *não* devem ser fornecidos com essa configuração habilitada. | Opcional. Usa Não como padrão.|
 MainNibFile <br> MainNibFile~ipad  | Cadeia de caracteres  | Essa configuração deve conter o nome do arquivo nib principal do aplicativo.  | Obrigatório se o aplicativo definir MainNibFile em Info.plist. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | Cadeia de caracteres  | Essa configuração deve conter o nome do arquivo de storyboard principal do aplicativo. | Necessário se o aplicativo definir UIMainStoryboardFile em Info.plist. |
-MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de APP do Intune. O padrão é NÃO. <br><br> Observação: os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. | Opcional. Usa Não como padrão.|
-MAMPolicyWarnAbsent | Booliano| Especifica se o aplicativo alertará o usuário durante a inicialização se ele não tiver a política de APP do Intune. <br><br> Observação: os usuários ainda poderão usar o aplicativo sem política após ignorarem o aviso. | Opcional. Usa Não como padrão. |
+MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de APP do Intune. O padrão é NÃO. <br><br> Observação: Os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. | Opcional. Usa Não como padrão.|
+MAMPolicyWarnAbsent | Booliano| Especifica se o aplicativo alertará o usuário durante a inicialização se ele não tiver a política de APP do Intune. <br><br> Observação: Os usuários ainda poderão usar o aplicativo sem política após ignorarem o aviso. | Opcional. Usa Não como padrão. |
 MultiIdentity | Booliano| Especifica se o aplicativo reconhece várias identidades. | Opcional. Usa Não como padrão. |
 SplashIconFile <br> SplashIconFile~ipad | Cadeia de caracteres  | Especifica o arquivo de ícone de abertura (inicialização) do Intune. | Opcional. |
 SplashDuration | Número | Quantidade mínima de tempo, em segundos, pela qual a tela inicial do Intune será exibida na inicialização do aplicativo. O padrão é 1,5. | Opcional. |
@@ -304,8 +304,8 @@ Caso deseje que o SDK do Intune manipule toda a autenticação usando a ADAL e o
 
 Setting  | Tipo  | Definição |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Booliano| Especifica se o aplicativo deverá tentar se registrar automaticamente na inicialização se uma identidade gerenciada existente for detectada e ainda não tiver feito o registro. O padrão é NÃO. <br><br> Observação: se nenhuma identidade gerenciada for encontrada ou nenhum token válido para a identidade estiver disponível no cache da ADAL, a tentativa de registro falhará silenciosamente sem solicitar credenciais, a menos que o aplicativo também tenha definido MAMPolicyRequired como SIM. |
-MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de proteção de aplicativo do Intune. O padrão é NÃO. <br><br> Observação: os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. Ao configurar o MAMPolicyRequired como SIM, o AutoEnrollOnLaunch também deverá ser definido como SIM. |
+AutoEnrollOnLaunch| Booliano| Especifica se o aplicativo deverá tentar se registrar automaticamente na inicialização se uma identidade gerenciada existente for detectada e ainda não tiver feito o registro. O padrão é NÃO. <br><br> Observação: Se nenhuma identidade gerenciada for encontrada ou nenhum token válido para a identidade estiver disponível no cache da ADAL, a tentativa de registro falhará silenciosamente sem solicitar credenciais, a menos que o aplicativo também tenha definido MAMPolicyRequired como SIM. |
+MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de proteção de aplicativo do Intune. O padrão é NÃO. <br><br> Observação: Os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. Ao configurar o MAMPolicyRequired como SIM, o AutoEnrollOnLaunch também deverá ser definido como SIM. |
 
 Se você escolher essa opção para seu aplicativo, não precisará manipular a reinicialização do aplicativo após o registro.
 
@@ -432,7 +432,7 @@ O SDK do Aplicativo do Intune tem várias APIs que você pode chamar para obter 
 
 Classe | Descrição
 ----- | -----------
-IntuneMAMPolicyManager.h | A classe IntuneMAMPolicyManager expõe a política de APP do Intune implantada no aplicativo. Em especial, ela expõe APIs que são úteis para [Habilitar várias identidades](#-enable-multi-identity-optional). |
+IntuneMAMPolicyManager.h | A classe IntuneMAMPolicyManager expõe a política de APP do Intune implantada no aplicativo. Em especial, ela expõe APIs que são úteis para [Habilitar várias identidades](app-sdk-ios.md#enable-multi-identity-optional). |
 IntuneMAMPolicy.h | A classe IntuneMAMPolicy expõe algumas configurações de política de MAM que se aplicam ao aplicativo. Essas configurações de política são expostas para que o aplicativo possa personalizar sua interface do usuário. A maioria das configurações de política é imposta pelo SDK e não pelo aplicativo. A única configuração que o aplicativo deve implementar é o controle Salvar como. Essa classe expõe algumas APIs necessárias para implementar Salvar como. |
 IntuneMAMFileProtectionManager.h | A classe IntuneMAMFileProtectionManager expõe as APIs que o aplicativo pode usar para proteger os arquivos e os diretórios explicitamente com base em uma identidade fornecida. A identidade pode ser gerenciada pelo Intune ou não gerenciada, e o SDK aplicará a política de MAM apropriada. O uso dessa classe é opcional. |
 IntuneMAMDataProtectionManager.h | A classe IntuneMAMDataProtectionManager expõe as APIs que o aplicativo pode usar para proteger os buffers de dados considerando uma identidade fornecida. A identidade pode ser gerenciada pelo Intune ou não gerenciada, e o SDK aplicará a criptografia adequadamente. |
@@ -484,7 +484,7 @@ Ao compartilhar documentos por meio de `UIActivityViewController` e `UIDocumentI
 
 6. Configure a `NSExtensionActivationRule` para dar suporte a um único arquivo e a todos os tipos de `CFBundleDocumentTypes` do aplicativo prefixados com `com.microsoft.intune.mam`. Por exemplo, se o aplicativo der suporte a public.text e public.image, a regra de ativação seria:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -500,41 +500,41 @@ Ao compartilhar documentos por meio de `UIActivityViewController` e `UIDocumentI
 
 Caso o aplicativo já contenha extensões de Ação ou de Compartilhamento, a `NSExtensionActivationRule` precisará ser modificada para permitir os tipos do Intune. Para cada tipo compatível com a extensão, adicione outro tipo prefixado com `com.microsoft.intune.mam`. Por exemplo, se a regra de ativação existente for:  
 
-    ```
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
     ).@count > 0
-    ```
+).@count > 0
+```
 
 Ela deve ser alterada para:
 
-    ```
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
     ).@count > 0
-    ```
+).@count > 0
+```
 
 > [!NOTE]
 > A ferramenta IntuneMAMConfigurator pode ser usada para adicionar os tipos de Intune à regra de ativação. Se a regra de ativação existente usar as constantes de cadeia de caracteres predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText etc.), a sintaxe de predicado poderá ficar muito complexa. A ferramenta IntuneMAMConfigurator também pode ser usada para converter a regra de ativação das constantes de cadeia de caracteres em uma cadeia de caracteres de predicado enquanto se adicionam os tipos do Intune.
@@ -543,11 +543,11 @@ Ela deve ser alterada para:
 
 Interface do usuário antiga:
 
-![Interface do usuário de compartilhamento antiga](./media/sharing-UI-old.png)
+![Compartilhamento de dados – antiga interface do usuário de compartilhamento do iOS](./media/sharing-UI-old.png)
 
 Nova interface do usuário:
 
-![Nova interface do usuário de compartilhamento](./media/sharing-UI-new.png)
+![Compartilhamento de dados – nova interface do usuário de compartilhamento do iOS](./media/sharing-UI-new.png)
 
 ## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>Habilitar a configuração direcionada (configuração de aplicativo de APP/MAM) para aplicativos iOS
 
@@ -571,11 +571,11 @@ Para obter mais informações sobre como criar uma política de configuração d
 
 Por padrão, o SDK do Aplicativo do Intune para iOS coleta telemetria dos seguintes tipos de eventos:
 
-* **Inicialização do aplicativo**: para ajudar o Microsoft Intune a obter informações sobre o uso de aplicativos habilitados para MAM por tipo de gerenciamento (MAM com MDM, MAM sem registro de MDM etc.).
+* **Inicialização de aplicativo**: Para ajudar o Microsoft Intune a obter informações sobre o uso de aplicativos habilitados para MAM por tipo de gerenciamento (MAM com MDM, MAM sem registro de MDM, etc.).
 
-* **Chamadas de registro**: para ajudar o Microsoft Intune a obter informações sobre a taxa de sucesso e outras métricas de desempenho de chamadas de registro iniciadas do lado do cliente.
+* **Chamadas de registro**: Para ajudar o Microsoft Intune a obter informações sobre a taxa de sucesso e outras métricas de desempenho de chamadas de registro iniciadas do lado do cliente.
 
-* **Ações do Intune**: para ajudar a diagnosticar problemas e garantir a funcionalidade do Intune, coletamos informações sobre as ações do SDK do Intune.
+* **Ações do Intune**: Para ajudar a diagnosticar problemas e garantir a funcionalidade do Intune, coletamos informações sobre as ações do SDK do Intune.
 
 > [!NOTE]
 > Se optar por não enviar dados de telemetria do SDK de Aplicativos do Intune para o Microsoft Intune do seu aplicativo móvel, você deverá desabilitar a captura de telemetria pelo SDK de Aplicativos do Intune. Defina a propriedade `MAMTelemetryDisabled` como SIM no dicionário IntuneMAMSettings.
@@ -592,17 +592,17 @@ Observe que uma identidade é definida simplesmente como uma cadeia de caractere
 
 Uma identidade é simplesmente o nome de usuário de uma conta (por exemplo, user@contoso.com). Os desenvolvedores podem definir a identidade do aplicativo nos níveis a seguir:
 
-* **Identidade de processo**: define a identidade de todo o processo e é usada principalmente para aplicativos de identidade única. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
+* **Identidade de processo**: Define a identidade de todo o processo e é usada principalmente para aplicativos de identidade única. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
 
-* **Identidade de interface do usuário**: determina quais políticas são aplicadas às tarefas de interface do usuário no thread principal, como recortar/copiar/colar, PIN, autenticação e compartilhamento de dados. A identidade de interface do usuário não afeta as tarefas de arquivo como criptografia e backup.
+* **Identidade da interface do usuário**: Determina quais políticas são aplicadas às tarefas de interface do usuário no thread principal, como recortar/copiar/colar, PIN, autenticação e compartilhamento de dados. A identidade de interface do usuário não afeta as tarefas de arquivo como criptografia e backup.
 
-* **Identidade de thread**: afeta quais políticas são aplicadas no thread atual. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
+* **Identidade de thread**: Afeta quais políticas são aplicadas no thread atual. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
 
 É responsabilidade do aplicativo configurar as identidades adequadamente, quer o usuário seja gerenciado ou não.
 
 A qualquer momento, todo thread tem uma identidade efetiva para tarefas de interface do usuário e tarefas de arquivo. Essa é a identidade usada para verificar quais políticas, se houver, devem ser aplicadas. Se a identidade for "nenhuma identidade" ou o usuário não for gerenciado, nenhuma política será aplicada. Os diagramas a seguir mostram como as identidades efetivas são determinadas.
 
-  ![SDK de Aplicativos do Intune para iOS: estruturas e bibliotecas vinculadas](./media/ios-thread-identities.png)
+  ![SDK de Aplicativo do Intune para iOS: Processo de determinação de identidade](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Filas de thread
 

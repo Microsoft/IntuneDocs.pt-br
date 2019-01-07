@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553649"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -81,7 +81,7 @@ As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicativos da empresa e dados associados instalados pelo Intune|**Aplicativos instalados usando o Portal da empresa:** todos os dados de aplicativos e os aplicativos são removidos. Esses aplicativos incluem os aplicativos instalados originalmente da App Store e posteriormente gerenciados como aplicativos da empresa. <br /><br /> **Aplicativos da Microsoft que usam o gerenciamento de aplicativos móveis e foram instalados da App Store:** Os dados de aplicativo pessoal são removidos. Os dados de aplicativo da empresa e os aplicativos não são removidos.|
+|Aplicativos da empresa e dados associados instalados pelo Intune|**Aplicativos instalados usando o Portal da empresa:** todos os dados de aplicativos e os aplicativos são removidos. Esses aplicativos incluem os aplicativos instalados originalmente da App Store e posteriormente gerenciados como aplicativos da empresa. <br /><br /> **Aplicativos da Microsoft que usam o gerenciamento de aplicativos móveis e foram instalados da App Store:** Dados de aplicativo da empresa são removidos. Os dados pessoais de aplicativos e os aplicativos não são removidos.|
 |Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|

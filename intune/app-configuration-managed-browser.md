@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630010"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324966"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Internet usando um navegador protegido por políticas do Microsoft Intune
 
@@ -150,7 +150,7 @@ O Microsoft Edge, o Intune Managed Browser e o [Proxy de Aplicativo do Azure AD]
 ### <a name="before-you-start"></a>Antes de começar
 
 - Configure os aplicativos internos por meio do Proxy de Aplicativo do Azure AD.
-    - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+    - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started). 
 - Você deve estar usando pelo menos a versão mínima 1.2.0 do aplicativo Managed Browser.
 - Os usuários do aplicativo Managed Browser ou Microsoft Edge têm uma [política de proteção do aplicativo do Intune]( app-protection-policy.md) atribuída ao aplicativo.
 
@@ -168,7 +168,7 @@ Este procedimento configura o aplicativo Managed Browser ou Microsoft Edge para 
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-Para saber mais sobre como o Managed Browser, o Microsoft Edge e o Proxy de Aplicativo do Azure AD podem ser usados em conjunto para obter um acesso contínuo (e protegido) a aplicativos Web locais, confira a postagem no blog Enterprise Mobility + Security [Melhores juntos: o Intune e o Azure Active Directory se unem para melhorar o acesso do usuário](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
+Para saber mais sobre como o Managed Browser, o Microsoft Edge e o Proxy de Aplicativo do Azure AD podem ser usados em conjunto para obter um acesso contínuo (e protegido) a aplicativos Web locais, confira a postagem no blog Enterprise Mobility + Security [Melhores juntos: O Intune e o Azure Active Directory se unem para melhorar o acesso do usuário](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
 > [!NOTE]
 > O Microsoft Edge usa os mesmos pares de chave e valor do Managed Browser. 
@@ -261,6 +261,19 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Abertura de links no Intune Managed Browser X Microsoft Edge 
+
+Agora o Intune Managed Browser e o Microsoft Edge são considerados navegadores protegidos/gerenciados por política. Atualmente as políticas existentes de proteção de aplicativos causam a abertura de links da web de aplicativos gerenciados no Intune em um navegador específico, dependendo do cenário e da plataforma. 
+
+No Android: 
+* Managed Browser, se o MB e o Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política.  
+* Microsoft Edge, se só houver ele no dispositivo e se for o destino da política.
+* Managed Browser se só houver ele no dispositivo e se for o destino da política. 
+
+No iOS, para aplicativos integrados com o SDK do Intune para iOS v. 9.0.9 e superiores: 
+* Managed Browser se o MB e o Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política **ou** Microsoft Edge se estiver instalado e tiver recebido a política. 
+* Microsoft Edge, se só houver ele no dispositivo, for o destino e tiver recebido a política. 
+* Managed Browser, se só houver ele no dispositivo, for o destino e tiver recebido a política.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Como acessar logs de aplicativos gerenciados usando o Managed Browser no iOS
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267247"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734265"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -29,20 +29,22 @@ ms.locfileid: "52267247"
 
 Depois de [adicionar um aplicativo](apps-add.md) ao Microsoft Intune, é possível atribuí-lo a usuários e dispositivos. É importante observar que você pode atribuir um aplicativo a um dispositivo seja ou não esse dispositivo gerenciado pelo Intune. 
 
+> [!NOTE]
+> Não há suporte para a intenção de implantação disponível para grupos de dispositivos, há suporte apenas para os grupos de usuários.
+
 A tabela a seguir lista as várias opções para atribuir aplicativos para usuários e dispositivos:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Dispositivos registrados com o Intune**|**Dispositivos não registrados com o Intune**|
-|Atribuir a usuários|Sim|Sim|
-|Atribuir a dispositivos|Sim|Não|
-|Atribuir aplicativos encapsulados ou aplicativos que incorporam o SDK do Intune (para políticas de proteção de aplicativo)|Sim|Sim|
-|Atribuir aplicativos conforme a disponibilidade|Sim|Sim|
-|Atribuir aplicativos conforme necessário|Sim|Não|
-|Desinstalar aplicativos|Sim|Não|
-|Receber atualizações de aplicativos do Intune|Sim|Não|
-|Os usuários finais instalam aplicativos disponíveis do aplicativo do Portal da Empresa|Sim|Não|
-|Os usuários finais instalam aplicativos disponíveis do Portal da Empresa baseado na Web|Sim|Sim|
+|   | Dispositivos registrados com o Intune | Dispositivos não registrados com o Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Atribuir a usuários | Sim | Sim |
+| Atribuir a dispositivos | Sim | Não |
+| Atribuir aplicativos encapsulados ou aplicativos que incorporam o SDK do Intune (para políticas de proteção de aplicativo) | Sim | Sim |
+| Atribuir aplicativos conforme a disponibilidade | Sim | Sim |
+| Atribuir aplicativos conforme necessário | Sim | Não |
+| Desinstalar aplicativos | Sim | Não |
+| Receber atualizações de aplicativos do Intune | Sim | Não |
+| Os usuários finais instalam aplicativos disponíveis do aplicativo do Portal da Empresa | Sim | Não |
+| Os usuários finais instalam aplicativos disponíveis do Portal da Empresa baseado na Web | Sim | Sim |
 
 > [!NOTE]
 > No momento, é possível atribuir aplicativos iOS e Android (tanto aplicativos de linha de negócios quanto comprados na loja) a dispositivos que não estão inscritos no Intune.
@@ -59,15 +61,15 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
 6. Na seção **Gerenciar** do menu, selecione **Atribuições**.
 7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** relacionado ao aplicativo.
 8. Para o aplicativo específico, selecione um **tipo de atribuição**:
-   - **Disponível para dispositivos inscritos**: atribua o aplicativo aos grupos de usuários que podem instalar o aplicativo no site ou do aplicativo Portal da Empresa.
-   - **Disponível com ou sem registro**: atribua este aplicativo a grupos de usuários cujos dispositivos não estão registrados no Intune. Os aplicativos do Google Play Gerenciado não são compatíveis com essa opção. 
-   - **Obrigatório**: o aplicativo é instalado nos dispositivos nos grupos selecionados.
-   - **Desinstalar**: o aplicativo é desinstalado de dispositivos nos grupos selecionados.
+   - **Disponível para dispositivos registrados**: Atribua o aplicativo aos grupos de usuários que podem instalar o aplicativo no site ou do aplicativo Portal da Empresa.
+   - **Disponível com ou sem registro**: Atribua este aplicativo a grupos de usuários cujos dispositivos não estão registrados no Intune. Os aplicativos do Google Play Gerenciado não são compatíveis com essa opção. É necessário atribuir uma licença do Intune a esses usuários, consulte [Licenças do Intune](licenses.md).
+   - **Obrigatório**: O aplicativo é instalado nos dispositivos dos grupos selecionados. Algumas plataformas podem ter solicitações adicionais para o usuário final confirmar antes do início da instalação do aplicativo.
+   - **Desinstalação**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados se o Intune tiver instalado anteriormente o aplicativo no dispositivo por meio de uma atribuição "Disponível para dispositivos registrados" ou "Obrigatória" usando a mesma implantação. Links da Web não podem ser removidos após a implantação.
 
      > [!NOTE]
-     > **Somente para aplicativos iOS**: se você tiver criado um perfil VPN do iOS contendo configurações de VPN por aplicativo, poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](vpn-settings-ios.md).
+     > **Somente para aplicativos iOS**: Se você tiver criado um perfil VPN do iOS contendo configurações de VPN por aplicativo, poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](vpn-settings-ios.md).
      >
-     > **Apenas para aplicativos Android**: se você implantar um aplicativo Android como **Disponível com ou sem registro**, o status de relatório ficará disponível apenas em dispositivos registrados.
+     > **Somente para aplicativos Android**: Se você implantar um aplicativo Android como **Disponível com ou sem registro**, o status de relatório ficará disponível apenas em dispositivos registrados.
 
 9. Para selecionar os grupos de usuários afetados por esta atribuição de aplicativo, selecione **Grupos Incluídos**.
 10. Depois de selecionar um ou mais grupos a serem incluídos, clique em **Selecionar**.
@@ -83,9 +85,8 @@ Agora o aplicativo foi atribuído aos grupos selecionados. Para obter mais infor
 
 Às vezes, o mesmo aplicativo é atribuído a vários grupos, mas com intenções diferentes. As informações na tabela a seguir podem ajudá-lo a entender a intenção resultante quando isso ocorre:
 
-||||
-|-|-|-|
-|**Intenção do grupo 1**|**Intenção do grupo 2**|**Intenção resultante**|
+| Intenção do grupo 1 | Intenção do grupo 2 | Intenção resultante |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Necessário para o usuário|Disponível para o usuário|Necessária e Disponível|
 |Necessário para o usuário|Não Disponível para o Usuário|Necessária|
 |Necessário para o usuário|Desinstalação do usuário|Necessária|

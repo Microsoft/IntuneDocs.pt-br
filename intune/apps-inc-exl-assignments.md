@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181506"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737926"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicativo no Microsoft Intune
 
@@ -50,7 +50,7 @@ Para atribuir um aplicativo a grupos usando a atribuição de incluir e excluir:
 5. Selecione o aplicativo que você deseja atribuir. Um painel exibe informações sobre o aplicativo. 
 6. Na seção **Gerenciar** do menu, selecione **Atribuições**. 
 
-    ![Atribuições de aplicativo do Intune](./media/apps-inc-exl-01.png)
+    ![Incluir as atribuições de aplicativo durante a atribuição de aplicativos](./media/apps-inc-exl-01.png)
 7. Selecione **Adicionar grupo** para adicionar os grupos de usuários que são atribuídos ao aplicativo. 
 8. No painel **Adicionar grupo**, selecione um **Tipo de atribuição** nos tipos de atribuição disponíveis.
 9. Para o tipo de atribuição, selecione **Disponível com ou sem registro**.

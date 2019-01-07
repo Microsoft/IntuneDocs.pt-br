@@ -1,7 +1,7 @@
 ---
 title: Log de alterações do Intune Data Warehouse
 titlesuffix: Microsoft Intune
-description: Uma lista de alterações na API do Intune Data Warehouse.
+description: Este tópico fornece uma lista de alterações para a API do Microsoft Intune Data Warehouse.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189938"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642754"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
@@ -95,4 +95,4 @@ Agora você pode criar relatórios e visualizações de dados usando as informa�
 
 ## <a name="next-steps"></a>Próximas etapas
  - Conheça as [novidades de cada semana no Intune](whats-new.md). Saiba mais também sobre as próximas alterações, avisos importantes sobre o serviço e informações sobre versões anteriores.
- - Leia o [Blog do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Leia o [Blog do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

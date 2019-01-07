@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a0fb9aca406c1a49c979b59e5d879d66a730c1c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9cd03d4953376d20e96ec146ece91120d592cb99
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185877"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429773"
 ---
-# <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune
+# <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -99,8 +99,8 @@ Use o [Guia de planejamento de implantação, design e implementação do Intune
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Determinar o tipo de aplicativo para sua solução
 
 Você pode escolher entre os seguintes tipos de aplicativo:
-- **Aplicativos da Store**: aplicativos que foram carregados na Microsoft Store, na Store do iOS ou na Store do Android são aplicativos da Store. O provedor de um aplicativo da Store mantém e fornece atualizações do aplicativo. Selecione o aplicativo na lista da Store e adicione-o usando o Intune como um aplicativo disponível para seus usuários.
-- **Aplicativos escritos internamente (linha de negócios)**: aplicativos criados internamente são aplicativos LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Intune, como Windows, iOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune.
+- **Aplicativos da loja**: Aplicativos que foram carregados na Microsoft Store, na Store do iOS ou na Store do Android são aplicativos da Store. O provedor de um aplicativo da Store mantém e fornece atualizações do aplicativo. Selecione o aplicativo na lista da Store e adicione-o usando o Intune como um aplicativo disponível para seus usuários.
+- **Aplicativos escritos internamente (linha de negócios)**: Aplicativos criados internamente são aplicativos LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Intune, como Windows, iOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune.
 - **Aplicativos na Web**: aplicativos Web são aplicativos de cliente-servidor. O servidor fornece o aplicativo Web, que inclui a interface do usuário, o conteúdo e a funcionalidade. Além disso, plataformas modernas de hospedagem na Web geralmente oferecem segurança, balanceamento de carga e outros benefícios. Este tipo de aplicativo é mantido separadamente na Web. Você usa o Intune para apontar para esse tipo de aplicativo. Além disso, você especifica quais grupos de usuários podem acessar o aplicativo. Observe que Android não dá suporte a aplicativos Web.
 
 Ao determinar os aplicativos necessários para a sua organização, considere como os aplicativos são integrados a serviços de nuvem, quais dados os aplicativos acessam, se os aplicativos estão disponíveis para os usuários de BYOD e se os aplicativos precisam de acesso à Internet.
@@ -118,9 +118,9 @@ Os aplicativos gerenciados pelo Intune também podem habilitar a proteção do a
 
 ### <a name="understanding-licensed-apps"></a>Noções básicas sobre aplicativos licenciados
 Além de entender os aplicativos Web, os aplicativos da Store e os aplicativos LOB, você também deve saber qual é o destino dos aplicativos do programa de compra por volume e dos aplicativos licenciados, como: 
-- **Programa de Compra por Volume da Apple para Empresas (iOS)**: a App Store do iOS permite comprar várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
-- **Perfil de trabalho Android**: a maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Todos os aplicativos instalados nos perfis de trabalho Android vêm da Google Play Store gerenciada. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
-- **Microsoft Store para Empresas (Windows 10)**: a Microsoft Store para Empresas oferece um local para encontrar e comprar aplicativos para a sua organização, individualmente ou em volume. Conectando a Store ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md).
+- **Programa de compra em volume para empresas da Apple (iOS)**: A App Store da iOS permite que você compre várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
+- **Perfil de trabalho do Android**: A maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Todos os aplicativos instalados nos perfis de trabalho Android vêm da Google Play Store gerenciada. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
+- **Microsoft Store para Empresas (Windows 10)**: Microsoft Store para Empresas é um local para encontrar e comprar aplicativos para organizações, uso individual ou com base em volume. Conectando a Store ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md).
 
     > [!NOTE]
     > As extensões de arquivo para aplicativos do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  

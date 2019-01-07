@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182254"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266963"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -70,17 +70,17 @@ Nesta etapa, você fornece informações sobre o pacote de aplicativos. Essas in
 
 1. No painel **Adicionar Aplicativo**, selecione **Informações do Pacote de Aplicativos**.
 2. No painel **Informações do Pacote de Aplicativos**, faça o seguinte:
-    - **Nome do Pacote**: insira o nome do pacote de aplicativos da forma como ele é exibido no portal da empresa. Verifique se todos os nomes de pacotes usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
-    - **Descrição do Pacote**: insira uma descrição para o pacote de aplicativos. Por exemplo, você pode listar os aplicativos que você selecionou para serem incluídos.
+    - **Nome do Pacote**: Insira o nome do pacote de aplicativos da forma como ele é exibido no portal da empresa. Verifique se todos os nomes de pacotes usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
+    - **Descrição do Pacote**: Insira uma descrição para o pacote de aplicativos. Por exemplo, você pode listar os aplicativos que você selecionou para serem incluídos.
     - **Editor**: a Microsoft aparece como o editor.
-    - **Categoria**: como opção, selecione uma ou mais das categorias de aplicativo internas ou uma categoria criada por você. Essa configuração facilita para os usuários localizarem o pacote de aplicativos enquanto navegam pelo Portal da Empresa.
-    - **Exibir como um aplicativo em destaque no Portal da Empresa**: selecione esta opção para exibir o pacote de aplicativos de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
-    - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
-    - **URL de Privacidade**: opcionalmente, insira a URL de um site que contém informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
+    - **Categoria**: Opcionalmente, selecione uma ou mais categorias de aplicativo internas ou uma categoria criada por você. Essa configuração facilita para os usuários localizarem o pacote de aplicativos enquanto navegam pelo Portal da Empresa.
+    - **Exibir como um aplicativo em destaque no Portal da Empresa**: Selecione essa opção para destacar o pacote de aplicativos na página principal do Portal da Empresa quando os usuários procurarem por aplicativos.
+    - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
+    - **URL de Privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
     - **Desenvolvedor**: a Microsoft aparece como o desenvolvedor.
     - **Proprietário**: a Microsoft aparece como o proprietário.
-    - **Observações**: digite as observações que você deseja associar a esse aplicativo.
-    - **Logotipo**: o logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
+    - **Logotipo**: O logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3. Selecione **OK**.
 
 ## <a name="configure-app-settings"></a>Definir configurações do aplicativo
@@ -89,8 +89,8 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
 
 1. No painel **Adicionar Aplicativo**, selecione **Configurações do Pacote de Aplicativos**.
 2. No painel **Configurações do Pacote de Aplicativos**, faça o seguinte:
-    - **Versão do Office**: escolha se você deseja atribuir a versão de 32 bits ou de 64 bits do Office. Você pode instalar a versão de 32 bits em dispositivos de 32 bits e 64 bits, mas você só pode instalar a versão de 64 bits em dispositivos de 64 bits.
-    - **Canal de Atualização**: escolha como o Office é atualizado nos dispositivos. Para obter informações sobre os vários canais de atualização, consulte [Visão geral dos canais de atualização para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Escolha:
+    - **Versão do Office**: Escolha se deseja atribuir a versão de 32 bits ou de 64 bits do Office. Você pode instalar a versão de 32 bits em dispositivos de 32 bits e 64 bits, mas você só pode instalar a versão de 64 bits em dispositivos de 64 bits.
+    - **Atualizar Canal**: Escolha como o Office é atualizado nos dispositivos. Para obter informações sobre os vários canais de atualização, consulte [Visão geral dos canais de atualização para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Escolha:
         - **Mensalmente**
         - **Mensal (Direcionada)**
         - **Semestral**
@@ -105,9 +105,9 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
         Para mais informações, confira [Visão geral dos canais de atualização do Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
     - **Remover MSI de dispositivos de usuários finais** – escolha se deseja remover os aplicativos .MSI do Office já existentes dos dispositivos de usuários finais. A instalação não será bem-sucedida se já houver aplicativos .MSI existentes nos dispositivos de usuários finais. Os aplicativos a serem desinstalados não estão limitados aos aplicativos selecionados para instalação em **Configurar Pacote de Aplicativos**, pois essa ação removerá todos os aplicativos do Office (MSI) dos dispositivos de usuários finais. Para obter mais informações, confira [Remover versões de MSI existentes do Office ao atualizar para o Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). Quando o Intune reinstalar o Office nos computadores do seu usuário final, os usuários finais obterão automaticamente os mesmos pacotes de idioma que eles tinham com as instalações anteriores do .MSI Office. 
-    - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo**: selecione essa opção se você não exigir que os usuários finais aceitem o contrato de licença. Com isso, o Intune aceitará automaticamente o contrato.
-    - **Usar ativação do computador compartilhado**: selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
-    - **Idiomas**: o Office é instalado automaticamente em qualquer um dos idiomas com suporte instalados com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos. <p></p>
+    - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo**: Selecione essa opção se você não quiser exigir que os usuários finais aceitem o contrato de licença. Com isso, o Intune aceitará automaticamente o contrato.
+    - **Usar ativação de computador compartilhado**: Selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
+    - **Idiomas**: o Office é instalado automaticamente em qualquer um dos idiomas compatíveis instalados com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos. <p></p>
     É possível implantar idiomas adicionais para aplicativos do Office 365 Pro Plus gerenciados por meio do Intune. A lista de idiomas disponíveis inclui o **Tipo** de pacote de idiomas (núcleo, parcial e revisão de texto). No portal do Azure, selecione **Microsoft Intune** > **Aplicativos clientes** > **Aplicativos** > **Adicionar**. Na lista **Tipo de aplicativo** da folha **Adicionar aplicativo**, selecione **Windows 10** em **Pacote do Office 365**. Selecione **Idiomas** na folha **Configurações do Pacote de Aplicativos**. Para obter mais informações, confira [Visão geral da implantação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="finish-up"></a>Concluir
@@ -120,33 +120,31 @@ A tabela a seguir lista os códigos de erro comuns que você pode encontrar e os
 
 ### <a name="status-for-office-csp"></a>Status do CSP do Office
 
-||||
-|-|-|-|
-|Status|Fase|Descrição|
-|1460 (ERROR_TIMEOUT)|Baixar|Falha ao baixar a Ferramenta de Implantação do Office|    
-|13 (ERROR_INVALID_DATA)|-|Não é possível verificar a assinatura da Ferramenta de Implantação do Office baixada|
-|Código de erro de CertVerifyCertificateChainPolicy|-|Falha na verificação de certificação da Ferramenta de Implantação do Office baixada|    
-|997|WIP|Instalando|
-|0|Após a instalação|Instalação bem-sucedida|    
-|1603 (ERROR_INSTALL_FAILURE)|-|Falha em qualquer verificação de pré-requisito, como:<ul><li>SxS (tentativa de instalação quando o MSI 2016 está instalado)</li><li>Incompatibilidade de versão</li><li>Outros</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Tentativa de desinstalação quando não há nenhum Clique para Executar do Office no computador|     
-|17002|-|Falha ao concluir o cenário (instalar). Motivos possíveis:<ul><li>Instalação cancelada pelo usuário</li><li>Instalação cancelada por outra instalação</li><li>Espaço em disco esgotado durante a instalação</li><li>ID de idioma desconhecida</li></ul>|
-|17004|-|SKUs desconhecidos|   
+| Status | Fase | Descrição |
+|--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1460 (ERROR_TIMEOUT) | Baixar | Falha ao baixar a Ferramenta de Implantação do Office |
+| 13 (ERROR_INVALID_DATA) | - | Não é possível verificar a assinatura da Ferramenta de Implantação do Office baixada |
+| Código de erro de CertVerifyCertificateChainPolicy | - | Falha na verificação de certificação da Ferramenta de Implantação do Office baixada |
+| 997 | WIP | Instalando |
+| 0 | Após a instalação | Instalação bem-sucedida |
+| 1603 (ERROR_INSTALL_FAILURE) | - | Falha de qualquer verificação de pré-requisitos, como: SxS (tentativa de instalação quando o 2016 MSI está instalado)Incompatibilidade de versãoOutros |
+| 0x8000ffff (E_UNEXPECTED) | - | Tentativa de desinstalação quando não há nenhum Clique para Executar do Office no computador |
+| 17002 | - | Falha ao concluir o cenário (instalar). Possíveis motivos: instalação cancelada pelo usuárioInstalação cancelada por outra instalaçãoSem espaço em disco durante a InstalaçãoID de idioma desconhecido |
+| 17004 | - | SKUs desconhecidos |
 
 
 ### <a name="office-deployment-tool-error-codes"></a>Códigos de erro da Ferramenta de Implantação do Office
 
-|||||
-|-|-|-|-|
-|Cenário|Código de retorno|Interface do usuário|Observação|
-|Esforço de desinstalação quando não há nenhuma instalação Clique para Executar ativa|– 2147418113, 0x8000ffff ou 2147549183|Código do erro: 30088-1008<br>Código do erro: 30125-1011 (404)|Ferramenta de Implantação do Office|
-|Instalação quando há uma versão do MSI instalada|1603|-|Ferramenta de Implantação do Office|
-|Instalação cancelada pelo usuário ou por outra instalação|17002|-|Clique para Executar|
-|Tentativa de instalar 64 bits em um dispositivo com 32 bits instalados.|1603|-|Código de retorno da Ferramenta de Implantação do Office|
-|Tentativa de instalar um SKU desconhecido (não é um caso de uso legítimo para o CSP do Office, já que devemos apenas passar em SKUs válidos)|17004|-|Clique para Executar|
-|Falta de espaço|17002|-|Clique para Executar|
-|Falha ao iniciar o cliente Clique para Executar (inesperada)|17000|-|Clique para Executar|
-|Falha ao colocar na fila o cenário do cliente Clique para Executar (inesperada)|17001|-|Clique para Executar|
+| Cenário | Código de retorno | Interface do usuário | Observação |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
+| Esforço de desinstalação quando não há nenhuma instalação Clique para Executar ativa | – 2147418113, 0x8000ffff ou 2147549183 | Código de erro: 30088-1008Código de erro: 30125-1011 (404) | Ferramenta de Implantação do Office |
+| Instalação quando há uma versão do MSI instalada | 1603 | - | Ferramenta de Implantação do Office |
+| Instalação cancelada pelo usuário ou por outra instalação | 17002 | - | Clique para Executar |
+| Tentativa de instalar 64 bits em um dispositivo com 32 bits instalados. | 1603 | - | Código de retorno da Ferramenta de Implantação do Office |
+| Tentativa de instalar um SKU desconhecido (não é um caso de uso legítimo para o CSP do Office, já que devemos apenas passar em SKUs válidos) | 17004 | - | Clique para Executar |
+| Falta de espaço | 17002 | - | Clique para Executar |
+| Falha ao iniciar o cliente Clique para Executar (inesperada) | 17000 | - | Clique para Executar |
+| Falha ao colocar na fila o cenário do cliente Clique para Executar (inesperada) | 17001 | - | Clique para Executar |
 
 ## <a name="next-steps"></a>Próximas etapas
 

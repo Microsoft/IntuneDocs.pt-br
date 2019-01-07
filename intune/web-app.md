@@ -1,12 +1,12 @@
 ---
 title: Adicionar aplicativos Web ao Microsoft Intune
 titleSuffix: ''
-description: Saiba como adicionar aplicativos Web ao Microsoft Intune.
+description: Saiba como adicionar aplicativos Web (aplicativos de cliente-servidor) ao Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ace65aab5ded1449b1e1fd092936e9e2a019f6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4f0c5d79c17c3cc2ada275337d266c134eed7e91
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187626"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642533"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
@@ -46,18 +46,18 @@ Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, fa
 6. No painel **Adicionar aplicativo**, selecione o tipo **Link da Web** na lista suspensa **Tipo de aplicativo**.
 7. Selecione **Configurar**.
 8. No painel **Informações do aplicativo**, adicione as seguintes informações:
-    - **Nome**: insira o nome do aplicativo como ele será exibido no portal da empresa. 
+    - **Nome**:  Insira o nome do aplicativo como ele será exibido no Portal da Empresa. 
     
         > [!NOTE]
         > Se você alterar o nome do aplicativo por meio do portal do Azure do Intune depois de ter implantado e instalado o aplicativo, o aplicativo não poderá mais ser direcionado usando comandos.
     
-    - **Descrição**: insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
-    - **Editor**: insira o nome do editor desse aplicativo.
-    - **URL do aplicativo**: insira a URL do site da web que hospeda o aplicativo que você deseja atribuir.
-    - **Categoria**: como opção, selecione uma ou mais das categorias de aplicativo internas ou uma categoria criada por você. Isso facilita a localização do aplicativo pelos usuários quando navegam pelo portal da empresa.
-    - **Exibir como um aplicativo em destaque no Portal da Empresa**: selecione esta opção para exibir o pacote de aplicativos de forma proeminente na página principal do portal da empresa quando os usuários procurarem aplicativos.
-    - **Requer um navegador gerenciado para abrir esse link**: selecione essa opção para atribuir a seus usuários um link para um site ou aplicativo Web que eles possam abrir no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.
-    - **Logotipo**: carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Descrição**: Insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
+    - **Editor**: Insira o nome do editor desse aplicativo.
+    - **URL do Aplicativo**: Insira a URL do site da web que hospeda o aplicativo que você deseja atribuir.
+    - **Categoria**: Como opção, selecione uma ou mais categorias de aplicativo internas ou uma categoria criada por você. Isso facilita a localização do aplicativo pelos usuários quando navegam pelo portal da empresa.
+    - **Exibir isso como um aplicativo em destaque no Portal da Empresa**: Selecione essa opção para destacar o pacote de aplicativos na página principal do Portal da Empresa quando os usuários procurarem por aplicativos.
+    - **É necessário usar um managed browser para abrir este link**: Selecione essa opção para atribuir a seus usuários um link para um site ou aplicativo Web que eles possam abrir no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.
+    - **Logotipo**: Carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 9. Selecione **OK**.
 10. No painel **Adicionar aplicativo**, selecione **Adicionar**.
 

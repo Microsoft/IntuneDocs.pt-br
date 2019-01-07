@@ -1,12 +1,12 @@
 ---
 title: Adicionar um aplicativo de linha de negócios do Windows Phone ao Microsoft Intune
 titlesuffix: ''
-description: Saiba como adicionar um aplicativo de linha de negócios do Windows Phone ao Intune.
+description: Saiba como adicionar aplicativos de linha de negócios (LOB) do Windows Phone usando o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9bce677f21967a79214a5cafbab4ce40b754b333
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9fa39f212c9979a9986bba5537f0c9a2b5e01c8c
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183019"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642635"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Windows Phone ao Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "52183019"
 
 Use as informações deste artigo para adicionar um aplicativo de linha de negócios (LOB) do Windows Phone ao Microsoft Intune. Um aplicativo de LOB é um aplicativo que pode ser adicionado ao Intune a partir de um arquivo de instalação de aplicativo. Esse tipo de aplicativo normalmente é escrito internamente. O Intune instala o aplicativo de LOB no dispositivo do usuário. 
 
-## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar os arquivos de instalação de software
+## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar o arquivo de instalação do software
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
@@ -38,7 +38,7 @@ Use as informações deste artigo para adicionar um aplicativo de linha de negó
 5. Acima da lista de aplicativos, selecione **Adicionar**.
 6. No painel **Adicionar aplicativo**, selecione **Aplicativo de linha de negócios**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Etapa 2: configurar o arquivo de pacote do aplicativo
+## <a name="step-2-configure-the-app-package-file"></a>Etapa 2: Configurar o arquivo de pacote do aplicativo
 
 1. No painel **Adicionar aplicativo**, selecione o **Arquivo do pacote do aplicativo**.
 2. No painel **Arquivo do pacote do aplicativo**, selecione o botão Procurar. Em seguida, selecione um arquivo de instalação do Windows Phone com a extensão **.xap**.
@@ -49,20 +49,20 @@ Use as informações deste artigo para adicionar um aplicativo de linha de negó
 
 1. No painel **Adicionar aplicativo**, selecione **Informações do aplicativo**.
 2. No painel **Informações do aplicativo**, configure as informações do aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ser preenchidos automaticamente.
-    - **Nome**: insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido no portal da empresa.
-    - **Descrição**: insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
-    - **Editor**: insira o nome do editor do aplicativo.
-    - **Categoria**: selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
-    - **Exibir como um aplicativo em destaque no Portal da Empresa**: exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
-    - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
-    - **URL de Privacidade**: opcionalmente, insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
-    - **Desenvolvedor**: opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário**: opcionalmente, insira um nome para o proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
-    - **Observações**: digite as observações que você deseja associar a esse aplicativo.
-    - **Logotipo**: carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Nome**: Insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido no portal da empresa.
+    - **Descrição**: Insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
+    - **Editor**: Insira o nome do editor do aplicativo.
+    - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
+    - **Exibir isso como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
+    - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
+    - **URL de privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
+    - **Desenvolvedor**: Opcionalmente, insira o nome do desenvolvedor do aplicativo.
+    - **Proprietários**: Opcionalmente, insira um nome para o proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
+    - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
+    - **Logotipo**: Carregue um ícone associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3. Quando tiver terminado, selecione **OK**.
 
-## <a name="step-4-finish-up"></a>Etapa 4: concluir
+## <a name="step-4-finish-up"></a>Etapa 4: Concluir
 
 1. No painel **Adicionar aplicativo**, verifique se você configurou as informações corretamente.
 2. Selecione **Adicionar** para carregar o aplicativo no Intune.

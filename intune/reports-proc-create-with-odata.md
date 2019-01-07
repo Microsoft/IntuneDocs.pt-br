@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182985"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429705"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
@@ -45,7 +45,7 @@ Trabalha-se com tabelas no Power BI. Uma tabela contém campos de dados. Cada ca
 
 ## <a name="install-power-bi-desktop"></a>Instalar o Power BI Desktop
 
-Instale a última versão do Power BI Desktop. Você pode baixar o Power BI Desktop em: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Instale a última versão do Power BI Desktop. Você pode fazer o download do Power BI Desktop em: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>Conecte-se ao feed OData do Data Warehouse do Intune do seu locatário
 
@@ -106,7 +106,7 @@ Agora você tem uma representação visual que mostra a distribuição dos fabri
 Você pode adicionar um filtro no mapa de árvore para poder responder perguntas adicionais usando o aplicativo.
 
 
-1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, o **ícone Segmentação** (![Mapa de árvore com os dados](media/reports-create-slicer.png)) em **Visualizações**.
+1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, o **ícone Segmentação** (![Mapa de árvore com modelo de dados e relações suportadas](media/reports-create-slicer.png)) em **Visualizações**.
 2. Localize a tabela **ownerTypes** e arraste o campo de dados **ownerTypeName** na seção **Filtros** no painel **visualizações**.  
 
    Na tabela Dispositivos, há um campo de dados chamado **OwnerTypeKey** que contém um código que indica se o dispositivo é de propriedade pessoal ou da empresa. Como você deseja mostrar nomes amigáveis nesse filtro, procure a tabela **ownerTypes** e arraste o **ownerTypeName**. Este exemplo mostra como o modelo de dados dá suporte a relações entre as tabelas.

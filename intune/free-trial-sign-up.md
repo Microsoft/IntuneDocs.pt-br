@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189173"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737909"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: experimente o Microsoft Intune gratuitamente 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente o Microsoft Intune gratuitamente 
 
 O Microsoft Intune ajuda você a proteger os dados corporativos da sua força de trabalho por meio do gerenciamento de dispositivos e aplicativos. Neste início rápido, você criará uma assinatura gratuita para experimentar o Intune em um ambiente de teste.
 
@@ -50,7 +50,7 @@ Experimentar o Intune gratuitamente por 30 dias. Se você já tem uma conta corp
 
 2. Crie uma conta usando o nome da sua empresa seguido de **.onmicrosoft.com**. 
 
-    ![Captura de tela da página da Web de inscrição de conta de Avaliação do Microsoft Intune](./media/account-sign-up-site-user-id.png)
+    ![Captura de tela do novo processo de credencial da conta de Avaliação do Microsoft Intune](./media/account-sign-up-site-user-id.png)
 
     Se a organização tiver seu próprio domínio personalizado que deseja usar sem **.onmicrosoft.com**, você poderá alterá-lo no Portal de Administração do Office 365 descrito posteriormente neste artigo.
 
@@ -106,13 +106,13 @@ Como mencionado acima, se sua organização tiver seu próprio domínio personal
 
 3. Digite seu nome de domínio personalizado. Em seguida, selecione **Avançar**.
 
-   ![Captura de tela do Centro de Administração do Office 365 com a opção Configurações > Domínios selecionada e um novo nome de domínio sendo adicionado](./media/domain-custom-add.png)
+   ![Captura de tela do Centro de Administração do Office 365 - Adicionar domínio](./media/domain-custom-add.png)
 
 4. Verifique se que você é o proprietário do domínio inserido anteriormente. 
     
     Selecionar **enviar código por email** enviará um email para o contato registrado do seu domínio. Depois de receber o email, copie o código e insira-o no campo de rotulado **Digite seu código de verificação aqui**. Se o código de verificação for correspondente, o domínio será adicionado ao seu locatário. O email exibido pode não parecer familiar. Alguns registradores ocultam o endereço de email real que foi fornecido quando o domínio foi registrado.
 
-   ![Captura de tela do Centro de Administração do Office 365 – Confirmar o nome de domínio que está sendo adicionado](./media/domain-custom-verify.png)
+   ![Captura de tela do Centro de Administração do Office 365 - Verificar domínio](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > Para obter os detalhes de verificação de registro TXT, consulte [Criar registros DNS em qualquer provedor de hospedagem de DNS para o Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -130,4 +130,4 @@ Neste início rápido, você criou uma assinatura gratuita para experimentar o I
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início Rápido: criar um usuário e atribuir uma licença a ele](quickstart-create-user.md)
+> [Início rápido: Criar um usuário e atribuir uma licença a ele](quickstart-create-user.md)

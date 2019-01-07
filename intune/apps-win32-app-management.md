@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829140"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734282"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autônomo – gerenciamento de aplicativos Win32 (versão prévia pública)
 
@@ -69,20 +69,20 @@ Consulte o arquivo *license. txt* usando o caminho relativo *licenses\license.tx
 
 De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possível adicionar um aplicativo Win32 ao Microsoft Intune. Normalmente, esse tipo de aplicativo é escrito internamente ou por um terceiro. As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicativo Windows ao Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar os arquivos de instalação de software
+### <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar o arquivo de instalação do software
 
 1.  Entre no [Portal do Azure](https://portal.azure.com/).
 2.  Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
 3.  No painel do **Intune**, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
 4.  No painel do aplicativo **Adicionar**, selecione **Aplicativo do Windows (Win32) – versão prévia** na lista suspensa fornecida.
 
-    ![Captura de tela Adicionar aplicativo – Caixa Adicionar lista suspensa de tipo](./media/apps-win32-app-01.png)
+    ![Captura de tela da folha Adicionar aplicativo – Caixa de lista suspensa Adicionar tipo](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Etapa 2: Fazer upload do arquivo do pacote do aplicativo
 
 1.  No painel **Adicionar aplicativo**, selecione **Arquivo do pacote do aplicativo** para selecionar um arquivo. O painel Arquivo do pacote do aplicativo será exibido.
 
-    ![Captura de tela Arquivo do pacote do aplicativo](./media/apps-win32-app-02.png)
+    ![Captura de tela da folha do arquivo de pacote do Aplicativo](./media/apps-win32-app-02.png)
 
 2.  No painel **Arquivo do pacote do aplicativo**, selecione o botão Procurar. Em seguida, selecione um arquivo de instalação do Windows com a extensão *.intunewin*.
 3.  Quando tiver terminado, selecione **OK**.
@@ -91,17 +91,17 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 
 1.  Na folha **Adicionar aplicativo**, selecione **Informações do aplicativo** para configurar o aplicativo.
 2.  No painel **Informações do aplicativo**, configure as seguintes informações. Alguns dos valores neste painel podem ser sido preenchidos automaticamente.
-    - **Nome**: insira o nome do aplicativo como ele é exibido no portal da empresa. Se o mesmo nome de aplicativo existir duas vezes, cada aplicativo será exibido no Portal da Empresa.
-    - **Descrição**: insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
-    - **Editor**: insira o nome do editor do aplicativo.
-    - **Categoria**: selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
-    - **Exibir como um aplicativo em destaque no Portal da Empresa**: exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
-    - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre o aplicativo. A URL será exibida no portal da empresa.
-    - **URL de Privacidade**: opcionalmente, insira a URL de um site que contém informações de privacidade do aplicativo. A URL será exibida no portal da empresa.
-    - **Desenvolvedor**: opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário**: opcionalmente, insira um nome para o proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
-    - **Observações**: digite as observações que você deseja associar a esse aplicativo.
-    - **Logotipo**: carregue um ícone que será associado ao aplicativo. O ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Nome**: Insira o nome do aplicativo como ele é exibido no portal da empresa. Se o mesmo nome de aplicativo existir duas vezes, cada aplicativo será exibido no Portal da Empresa.
+    - **Descrição**: Insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
+    - **Editor**: Insira o nome do editor do aplicativo.
+    - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
+    - **Exibir como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
+    - **URL de Informações**: Opcionalmente, Insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
+    - **URL de Privacidade**: Opcionalmente, Insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
+    - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
+    - **Proprietário**: Opcionalmente, Insira o nome do proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
+    - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
+    - **Logotipo**: Carregue um ícone associado ao aplicativo. O ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3.  Quando tiver terminado, selecione **OK**.
 
 ### <a name="step-4-configure-app-installation-details"></a>Etapa 4: Configurar detalhes de instalação do aplicativo
@@ -125,12 +125,12 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 
 1.  No painel **Adicionar aplicativo**, selecione **Requisitos** para configurar os requisitos aos quais os dispositivos devem atender antes de o aplicativo ser instalado.
 2.  No painel **Requisitos**, configure as seguintes informações. Alguns dos valores neste painel podem ser sido preenchidos automaticamente.
-    - **Arquitetura do sistema operacional**: escolha as arquiteturas necessárias para instalar o aplicativo.
-    - **Sistema operacional mínimo**: selecione o sistema operacional mínimo necessário para instalar o aplicativo.
-    - **Espaço em disco necessário (MB)**: opcionalmente, adicione o espaço em disco livre necessário na unidade do sistema para instalar o aplicativo.
-    - **Memória física necessária (MB)**: opcionalmente, adicione a memória física (RAM) necessária para instalar o aplicativo.
-    - **Número mínimo de processadores lógicos necessários**: opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar o aplicativo.
-    - **Velocidade mínima da CPU necessária (MHz)**: opcionalmente, adicione a velocidade mínima da CPU necessária para instalar o aplicativo.
+    - **Arquitetura do sistema operacional**: Escolha as arquiteturas necessárias para instalar o aplicativo.
+    - **Sistema operacional mínimo**: Selecione o sistema operacional mínimo necessário para instalar o aplicativo.
+    - **Espaço em disco necessário (MB)**: Opcionalmente, adicione o espaço em disco livre necessário na unidade do sistema para instalar o aplicativo.
+    - **Memória física necessária (MB)**: Opcionalmente, adicione a memória física (RAM) necessária para instalar o aplicativo.
+    - **Número mínimo necessário de processadores lógicos**: Opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar o aplicativo.
+    - **Velocidade mínima necessária de CPU (MHz)**: Opcionalmente, adicione o número mínimo necessário de processadores lógicos para instalar o aplicativo.
 3.  Quando tiver terminado, selecione **OK**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Etapa 6: Configurar regras de detecção de aplicativo
@@ -182,15 +182,17 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
     - **Usar um script de detecção personalizado** – Especifique o script do PowerShell que será usado para detectar este aplicativo. 
     
         1.  **Arquivo de script** – Selecione um script do PowerShell que detectará a presença do aplicativo no cliente. O aplicativo será detectado quando o script retornar um código de saída de valor 0 e escrever um valor de cadeia de caracteres em STDOUT.
-        2.  **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script usando as credenciais do usuário final conectado. Selecione **Não** (padrão) para executar o script no contexto do sistema.
+
+        2.  **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script como um processo de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para executar o script como um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
+
         3.  **Impor a verificação da assinatura de script** – Selecione **Sim** para verificar se o script é assinado por um fornecedor confiável, que permitirá que o script seja executado sem a exibição de avisos ou prompts. O script será executado desbloqueado. Selecione **Não** (padrão) para executar o script com a confirmação do usuário final sem verificação de assinatura.
     
-        O sidecar do Intune verifica os resultados do script. Ele lê os valores gravados pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se o script for encerrado com um valor diferente de zero, o script falhará e o status de detecção do aplicativo não será instalado. Se o código de saída for zero e STDOUT tiver dados, o status de detecção do aplicativo será Instalado. 
-    
-        > [!NOTE]
-        > Quando o script tiver sido encerrado com um valor de 0, a execução do script terá sido bem-sucedida. O segundo canal de saída indica que o aplicativo foi detectado – os dados STDOUT indicam que o aplicativo foi encontrado no cliente. Não procuramos uma cadeia de caracteres específica do STDOUT.
-    
-3.  Após adicionar suas regras, selecione **Adicionar** > **OK**.
+            O agente do Intune verifica os resultados do script. Ele lê os valores gravados pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se o script for encerrado com um valor diferente de zero, o script falhará e o status de detecção do aplicativo não será instalado. Se o código de saída for zero e STDOUT tiver dados, o status de detecção do aplicativo será Instalado. 
+
+            > [!NOTE]
+            > Quando o script tiver sido encerrado com um valor de 0, a execução do script terá sido bem-sucedida. O segundo canal de saída indica que o aplicativo foi detectado – os dados STDOUT indicam que o aplicativo foi encontrado no cliente. Não procuramos uma cadeia de caracteres específica do STDOUT.
+
+        4.  Após adicionar suas regras, selecione **Adicionar** > **OK**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Etapa 7: Configurar códigos de retorno do aplicativo
 
@@ -213,9 +215,9 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 1.  No painel de aplicativos, selecione **Atribuições**.
 2.  Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** relacionado ao aplicativo.
 3.  Para o aplicativo específico, selecione um **tipo de atribuição**:
-    - **Disponível para dispositivos inscritos**: os usuários instalam o aplicativo no aplicativo ou no site do Portal da Empresa.
-    - **Obrigatório**: o aplicativo é instalado nos dispositivos nos grupos selecionados.
-    - **Desinstalar**: o aplicativo é desinstalado de dispositivos nos grupos selecionados.
+    - **Disponível para dispositivos registrados**: Os usuários instalam o aplicativo no site ou aplicativo do Portal da Empresa.
+    - **Obrigatório**: O aplicativo é instalado nos dispositivos dos grupos selecionados.
+    - **Desinstalação**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
 4.  Selecione **Grupos incluídos** e atribua os grupos que usarão esse aplicativo.
 5.  No painel **Atribuir**, selecione **OK** para concluir a seleção de grupos incluídos.
 6.  Se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo, selecione **Excluir Grupos**.
@@ -232,16 +234,16 @@ Os clientes do Windows 10 RS3 e superiores baixarão o conteúdo do aplicativo I
 
 O usuário final verá as Notificações do sistema do Windows para as instalações de aplicativo obrigatórias e disponíveis. A imagem a seguir mostra um exemplo de notificação do sistema em que a instalação do aplicativo não é concluída até que o dispositivo seja reiniciado. 
 
-![Exemplo de captura de tela das notificações do sistema do Windows para uma instalação de aplicativo](./media/apps-win32-app-08.png)    
+![Captura de tela das notificações do sistema do Windows para uma instalação de aplicativo](./media/apps-win32-app-08.png)    
 
 A imagem a seguir notifica o usuário final de há alterações do aplicativo sendo feitas no dispositivo.
 
-![Exemplo de captura de tela da notificação do usuário final de que alterações no aplicativo estão sendo feitas no dispositivo](./media/apps-win32-app-09.png)    
+![Captura de tela notificando o usuário de que estão sendo feitas alterações no aplicativo](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Solucionar problemas do aplicativo Win32
 Os logons do agente no computador cliente estão comumente no `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. É possível usar o `CMTrace.exe` para exibir esses arquivos de log. *CMTrace.exe* pode ser baixado de [Ferramentas de cliente do SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Captura de tela dos logs do agente](./media/apps-win32-app-10.png)    
+![Captura de tela de logs do Agente no computador cliente](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Áreas de solução de problemas a serem consideradas
 - Verifique o direcionamento para garantir que o agente seja instalado no dispositivo – o aplicativo Win32 direcionado a um grupo ou o Script do PowerShell direcionado a um grupo criará a política de instalação do agente para o grupo de segurança.

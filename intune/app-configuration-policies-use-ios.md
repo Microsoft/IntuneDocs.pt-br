@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184600"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324932"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
 
@@ -100,14 +100,14 @@ Os caracteres \{\{ e \}\} são usados apenas por tipos de token e não devem ser
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir somente contas da organização configuradas em aplicativos de várias identidades 
 
-Para dispositivos Android, use os seguintes pares de chave/valor:
+Para dispositivos iOS, use os seguintes pares de chave/valor:
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Valores** | <ul><li>**Habilitado**: a única conta permitida é a conta de usuário gerenciado definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desabilitado** (ou qualquer valor que não seja uma correspondência que diferencia maiúsculas e minúsculas com **Habilitado**): qualquer conta é permitida.</li></ul> |
+| **Valores** | <ul><li>**Habilitado**: A única conta permitida é a conta de usuário gerenciado definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desabilitado** (ou qualquer valor que não seja uma correspondência que diferencia maiúsculas e minúsculas para **Habilitado**): Qualquer conta é permitida.</li></ul> |.
 
    > [!NOTE]
-   > Você deve usar o OneDrive para iOS 10.34 ou posterior e o Outlook para iOS 2.99.0 ou posterior ao permitir apenas contas da organização configuradas com várias identidades.
+   > Você deve usar o OneDrive para iOS 10.34 ou posterior e o Outlook para iOS 2.99.0 ou posterior, e o aplicativo deve ser direcionado com as [políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas da organização configuradas com várias identidades.
 
 ## <a name="enter-xml-data"></a>Inserir dados XML
 
@@ -123,7 +123,7 @@ Para saber mais sobre listas de propriedades XML:
 
 Quando você cria um arquivo de configuração de aplicativo, você pode especificar um ou mais dos seguintes valores usando este formato:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181880"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325170"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -36,7 +36,7 @@ O Intune fornece várias maneiras de monitorar as propriedades dos aplicativos q
 5. Na lista de aplicativos, selecione um aplicativo para monitorar. Em seguida, você verá o painel de aplicativos com uma visão geral do status do dispositivo e do status do usuário.
 
 > [!NOTE]
-> Os aplicativos da Android Store implantados como **Disponíveis** não relatam o próprio status de instalação.
+> Os aplicativos da Android Store que são implantados como **Disponível** e aplicativos de LOB Android implantados como **Disponível com ou sem registro** não relatam seu status de instalação.
 
 ## <a name="app-overview-pane"></a>Painel de visão geral do aplicativo
 

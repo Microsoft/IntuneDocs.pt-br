@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570784"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Uma conta de email da empresa existente foi encontrada
 
-Você já tem uma conta de email com sua organização ou empresa e agora deseja acessá-la em seu dispositivo móvel. O suporte de sua empresa precisa de sua ajuda para proteger o acesso ao email em seu trajeto da pessoa que o enviou para seu dispositivo. Seu email atual pode ter funcionado, mas executar essas etapas manterá as informações mais seguras.
+Talvez você tivesse acesso de dispositivo móvel à sua conta de email corporativa ou de estudante *antes* de gerenciar seu dispositivo. Se, agora, seu dispositivo for gerenciado, recomendamos que você:
 
-1.  Encontre as **Configurações** em seu dispositivo e remova a conexão configurada anteriormente para o email da empresa.  Por exemplo, em um dispositivo iOS, toque **Configurações** > **Email** > **Contas**. Selecione sua conta de email de trabalho e, em seguida, toque em **Excluir**.
+* Desconecte-se da conta de email corporativa existente em seu dispositivo.
+* Ressincronize as configurações do dispositivo do aplicativo Portal da Empresa.  
 
-2.  Saia das **Configurações** e abra o aplicativo do Portal da Empresa no dispositivo.  
+Essas etapas garantirão que o dispositivo atenda aos requisitos de segurança da sua empresa, e que seus emails permaneçam seguros.
 
-3. Vá para **Dispositivo** e selecione o dispositivo que você deseja atualizar.
+1.  Em seu dispositivo, acesse **Configurações** e encontre suas contas conectadas. Em um dispositivo iOS 11+, por exemplo, selecione **Senhas & Contas**.
+ 
+2. Selecione e remova sua conta de email corporativa.
 
-4. Selecione **Verificar Configurações**. Em poucos instantes, o dispositivo é atualizado com as novas configurações de email.
+3. Abra o aplicativo Portal da Empresa no dispositivo.  
+
+4. Em sua lista de dispositivos, selecione o dispositivo que você quer atualizar.
+
+5. Selecione **Verificar configurações**. Em poucos instantes, o dispositivo sincronizará suas novas configurações de email.
+
+6. Entre em sua conta corporativa ou de estudante.
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter suas informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188119"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266997"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalação do aplicativo
 
@@ -84,6 +84,19 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre os erros d
 |    O usuário rejeitou a oferta para atualizar o aplicativo. (0x87D13B63)    |    O usuário final clicou em Cancelar durante o processo de atualização.     |
 |    Erro desconhecido (0x87D103E8)    |    Ocorreu um erro de instalação de aplicativo desconhecido. Esse é o erro resultante quando o outro erro não ocorre.    |
 
+### <a name="other-installation-errors"></a>Outros erros de instalação
+
+|    Mensagem/código do erro    |    Descrição    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF,   0x80CF201C (erro de cliente)    |    Para instalar esse aplicativo, você deve ter um sistema habilitado para carregamento. Verifique se o pacote do aplicativo foi assinado com uma assinatura confiável e instalado em um dispositivo com domínio associado que tenha a política **AllowAllTrustedApps** habilitada ou um dispositivo que tenha uma licença do Windows Sideloading com a política **AllowAllTrustedApps** habilitada. Para mais informações, veja [Solucionando empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).     |
+|    0x80073CF0    |    Não foi possível abrir o pacote. Possíveis causas:<ul><li> O pacote não está assinado.</li><li> O nome do publicador não corresponde ao assunto do certificado de assinatura.</li></ul> Consulte o log de eventos de **AppxPackagingOM** para obter mais informações. Para saber mais, veja [Solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CF3    |    Falha na atualização do pacote, dependência ou validação de conflito. Possíveis causas:<ul><li> O pacote de entrada está em conflito com um pacote instalado.</li><li> Uma dependência de pacote especificada não foi encontrada.</li><li> O pacote não oferece suporte à arquitetura de processador correta.</li></ul> Consulte o log de eventos de **AppXDeployment-Server** para obter mais informações. Para saber mais, veja [Solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CFB    |    O pacote fornecido já foi instalado e sua reinstalação está bloqueada. Talvez você receba esse erro se estiver instalando um pacote que não é idêntico ao pacote já instalado. Confirme se a assinatura digital também faz parte do pacote. Quando um pacote é recriado ou assinado novamente, ele não é mais idêntico bit a bit ao pacote instalado anteriormente. Duas opções possíveis para corrigir esse erro são as seguintes:<ul><li> Aumente o número de versão do aplicativo e recrie e assine novamente o pacote.</li><li> Remova o pacote antigo para cada usuário no sistema antes de instalar o novo pacote.</li></ul> Para saber mais, veja [Solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x87D1041C    |    Êxito na instalação do aplicativo, mas o aplicativo não foi detectado. O aplicativo foi implantado com êxito pelo Intune e depois foi desinstalado. Os motivos para desinstalar o aplicativo incluem:<ul><li> O usuário final desinstalou o aplicativo.</li><li> As informações de identidade no pacote não correspondem ao que o dispositivo relata sobre aplicativos incorretos.</li><li>Para MSIs de atualização automática, a versão do produto não coincide com as informações do aplicativo após sua atualização fora do Intune.</li></ul> Instrua o usuário a reinstalar o aplicativo do portal da empresa. Observe que os aplicativos necessários serão reinstalados automaticamente na próxima vez em que o dispositivo fizer check-in.    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Solução de problemas dos aplicativos da Microsoft Store
+
+As informações no tópico [Solução de problemas de empacotamento, implantação e consulta de aplicativos da Microsoft Store](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) ajudam a solucionar problemas comuns que podem ocorrer ao instalar aplicativos da Microsoft Store, usando o Intune ou por outros meios.
 
 ## <a name="next-steps"></a>Próximas etapas
 

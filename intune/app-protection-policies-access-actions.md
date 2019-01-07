@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032043"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734231"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Apagar dados seletivamente usando ações de acesso da política de proteção de aplicativo no Intune
 
@@ -110,7 +110,7 @@ A lista a seguir fornece a lista de ações comuns:
 
 Em alguns casos, como a configuração **Versão mínima do sistema operacional**, você pode definir a configuração para executar todas as ações aplicáveis, com base em números de versão diferentes. 
 
-![Captura de tela das ações de acesso da proteção de aplicativo do Intune – versão mínima do sistema operacional](./media/apps-selective-wipe-access-actions05.png)
+![Captura de tela das ações de acesso da proteção de aplicativo – versão mínima do sistema operacional](./media/apps-selective-wipe-access-actions05.png)
 
 Depois que uma configuração estiver totalmente configurada, a linha aparecerá em uma exibição somente leitura e estará disponível para ser editada a qualquer momento. Além disso, a linha terá uma lista suspensa disponível para seleção na coluna **Configuração**. As configurações que já foram definidas e que não permitem várias ações não estarão disponíveis para seleção na lista suspensa.
 

@@ -1,12 +1,12 @@
 ---
 title: O que é gerenciamento de aplicativo no Microsoft Intune?
 titlesuffix: ''
-description: Conheça os fundamentos do gerenciamento de aplicativos com o Microsoft Intune.
+description: Saiba mais sobre os recursos de gerenciamento de aplicativo cliente por plataforma para o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179177"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642822"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -74,17 +74,17 @@ Encontre a maioria das informações relacionadas a aplicativos na carga de trab
 As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos clientes**.
 
 ### <a name="manage"></a>Gerenciar
-- **Aplicativos**: selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos que sua força de trabalho usa. Para obter mais informações, consulte:
+- **Aplicativos**: Selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos usados por sua força de trabalho. Para obter mais informações, consulte:
     - [Adicionar aplicativos](apps-add.md).
     - [Atribuir aplicativos](apps-deploy.md).
     - [Monitorar aplicativos](apps-monitor.md).
-- **Políticas de configuração de aplicativo**: selecione essa opção para fornecer as configurações que possam ser necessárias quando um usuário executar um aplicativo. Para obter mais informações, consulte:
+- **Políticas de configuração de aplicativo**: Selecione essa opção para fornecer as configurações que possam ser necessárias quando um usuário executar um aplicativo. Para obter mais informações, consulte:
     - [Políticas de configuração de aplicativo para o Intune](app-configuration-policies-overview.md).
         - [Políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md).
         - [Políticas de configuração de aplicativo do Android](app-configuration-policies-use-android.md).
-- **Políticas de proteção de aplicativo**: selecione essa opção para associar as configurações de um aplicativo e ajudar a proteger os dados da empresa que ele usa. Por exemplo, você pode restringir os recursos de um aplicativo em se comunicar com outros aplicativos ou exigir que o usuário insira um PIN para acessar um aplicativo da empresa. Para obter mais informações, consulte:
+- **Políticas de proteção de aplicativo**: Selecione essa opção para associar as configurações de um aplicativo e ajudar a proteger os dados da empresa que ele usa. Por exemplo, você pode restringir os recursos de um aplicativo em se comunicar com outros aplicativos ou exigir que o usuário insira um PIN para acessar um aplicativo da empresa. Para obter mais informações, consulte:
     - [Políticas de Proteção de Aplicativo](app-protection-policies.md).
-- **Apagamento seletivo de aplicativos**: selecione esta opção para remover apenas os dados corporativos do dispositivo de um usuário selecionado. Para obter mais informações, consulte:
+- **Apagamento seletivo de aplicativos**: Selecione esta opção para remover apenas os dados corporativos do dispositivo de um usuário selecionado. Para obter mais informações, consulte:
     - [Apagamento seletivo de aplicativos](apps-selective-wipe.md).
 - **Perfis de provisionamento de aplicativo do iOS**: os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração. Para obter mais informações, consulte:
     - [Perfis de provisionamento de aplicativo iOS](app-provisioning-profile-ios.md).
@@ -92,33 +92,33 @@ As quatro seções a seguir descrevem as opções disponíveis no painel **Aplic
 Para saber mais sobre essa seção, veja [Gerenciar aplicativos](app-management.md).
 
 ### <a name="monitor"></a>Monitor
-- **Licenças de aplicativo**: exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte:
+- **Licenças de aplicativo**: Exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte:
     - [Aplicativos do VPP (volume-purchased program) do iOS](vpp-apps-ios.md).
     - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicativos Descobertos**: exiba todos os aplicativos atribuídos pelo Intune ou instalados em um dispositivo. Para obter mais informações, confira [Exibir detalhes do dispositivo com o Microsoft Intune](device-inventory.md).
-- **Status de instalação do aplicativo**: exibe o status de uma atribuição de aplicativo que você criou. Para saber mais, confira [Como monitorar atribuições e informações de aplicativo com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
-- **Status de proteção do aplicativo**: exibe o status de uma política de proteção de aplicativo para um usuário selecionado.
-- **Logs de auditoria**: exibe a atividade relacionada ao aplicativo do Intune de todos os administradores de TI.
+- **Aplicativos Descobertos**: Exiba todos os aplicativos atribuídos pelo Intune ou instalados em um dispositivo. Para obter mais informações, confira [Exibir detalhes do dispositivo com o Microsoft Intune](device-inventory.md).
+- **Status de Instalação do Aplicativo**: Exiba o status de uma atribuição de aplicativo que você criou. Para saber mais, confira [Como monitorar atribuições e informações de aplicativo com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **Status de proteção do aplicativo**: Exiba o status de uma política de proteção de aplicativo para um usuário selecionado.
+- **Logs de auditoria**: Exiba a atividade relacionada ao aplicativo do Intune de todos os administradores de TI.
 
 Para saber mais sobre essa seção, veja [Monitorar aplicativos](apps-monitor.md).
 
 ### <a name="set-up"></a>Configurar
-- **Tokens VPP iOS**: aplique e exiba sua licenças VPP (Programa de compra por volume) do iOS. Para obter mais informações, consulte:
+- **Tokens do VPP de iOS**: Aplique e Exiba sua licenças VPP (Programa de compra em volume) do iOS. Para obter mais informações, consulte:
     - [Aplicativos iOS comprados por volume](vpp-apps-ios.md)
-- **Certificado corporativo do Windows**: aplique ou exiba o status de um certificado de assinatura de código usado para distribuir aplicativos de linha de negócios para dispositivos com Windows gerenciados.
-- **Certificado da Symantec do Windows**: aplique ou exiba o status de um certificado de assinatura de código da Symantec, o qual é necessário para distribuir arquivos appx XAP e WP8.x para dispositivos com Windows 10 Mobile.
-- **Microsoft Store para Empresas**: configure a integração com a Microsoft Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças. Para obter mais informações, consulte:
+- **Certificado corporativo do Windows**: Aplique ou Exiba o status de um certificado de assinatura de código usado para distribuir aplicativos de linha de negócios para dispositivos com Windows gerenciados.
+- **Certificado da Symantec do Windows**: Aplique ou Exiba o status de um certificado de assinatura de código da Symantec, o qual é necessário para distribuir arquivos appx XAP e WP8.x para dispositivos com Windows 10 Mobile.
+- **Microsoft Store para Empresas**: Configure uma integração com a Microsoft Store para Empresas. Depois, você pode sincronizar os aplicativos comprados com o Intune, atribuí-los e acompanhar o uso de licenças. Para obter mais informações, consulte:
     - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Chaves de sideload do Windows**: adicione uma chave de sideload do Windows que pode ser usada para instalar um aplicativo diretamente nos dispositivos em vez de publicar e baixar o aplicativo da Windows store. Para obter mais informações, consulte:
+- **Chaves de sideload do Windows**: Adicione uma chave de sideload do Windows que pode ser usada para instalar um aplicativo diretamente nos dispositivos em vez de publicar e baixar o aplicativo da Windows store. Para obter mais informações, consulte:
     - [Sideload um aplicativo do Windows](app-sideload-windows.md).
-- **Identidade visual do Portal da Empresa**: personalize o Portal da Empresa para dar a identidade visual de sua empresa. Para obter mais informações, consulte:
+- **Identidade visual do Portal da Empresa**: Personalize o Portal da Empresa para dar a identidade visual de sua empresa. Para obter mais informações, consulte:
     - [Configuração do Portal da Empresa](company-portal-app.md).
-- **Categorias de aplicativo**: adicione, fixe e exclua os nomes de categoria de aplicativo.
-- **Perfil de trabalho Android**: aprove e sincronize os aplicativos que você aprovou para sua empresa. Para obter mais informações, consulte:
+- **Todas as categorias**: Adicione, fixe e exclua os nomes de categoria de aplicativo.
+- **Perfil de trabalho do Android**: Aprove e sincronize os aplicativos que você aprovou para sua empresa. Para obter mais informações, consulte:
     - [Aplicativos do perfil de trabalho Android](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Ajuda e suporte
-- **Ajuda e Suporte**: Solucione problemas, solicite suporte ou exiba o status do Intune. Para obter mais informações, consulte:
+- **Ajuda e suporte**: Solucione problemas, solicite suporte ou Exiba o status do Intune. Para obter mais informações, consulte:
     - [Solucionar problemas](help-desk-operators.md).
 
 ## <a name="next-steps"></a>Próximas etapas

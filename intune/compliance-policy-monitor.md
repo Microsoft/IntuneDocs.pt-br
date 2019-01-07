@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977296"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642805"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -69,7 +69,12 @@ Descrições dos diferentes estados da política de conformidade dos dispositivo
 
   - Saiba mais sobre [Ações para dispositivos fora de conformidade](actions-for-noncompliance.md).
 
-- **Não avaliado**: um estado inicial para dispositivos registrados recentemente. Ou para dispositivos que não são atribuídos a uma política de conformidade e não têm um gatilho para verificar a conformidade.
+- **Não avaliado**: um estado inicial para dispositivos registrados recentemente. As possíveis razões para esse estado incluem:
+
+  - Dispositivos que não estão atribuídos a uma política de conformidade e não têm um gatilho para verificar a conformidade
+  - Dispositivos que ainda não fizeram check-in desde que a política de conformidade foi atualizada pela última vez
+  - Dispositivos não associados a um usuário específico
+  - Dispositivos registrados com uma conta de gerenciador de registro do dispositivo (DEM)
 
 - **Fora de conformidade:** o dispositivo não conseguiu aplicar uma ou mais configurações da política de conformidade de dispositivos. Ou o usuário não está em conformidade com as políticas.
 

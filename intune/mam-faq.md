@@ -15,12 +15,12 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181183"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306008"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
@@ -37,9 +37,9 @@ O MAM protege os dados de uma organização em um aplicativo. Com o MAM sem regi
 
 **Quais configurações de dispositivo têm suporte no MAM?**<br></br>
 O Intune MAM dá suporte a duas configurações:
-- **Intune MDM + MAM**: os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console do Intune no portal do Azure em https://portal.azure.com.
+- **Intune MDM + MAM**: Os administradores de TI apenas podem gerenciar aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos registrados no Intune MDM (gerenciamento de dispositivo móvel). Para gerenciar aplicativos usando o MDM + MAM, os clientes devem usar o console do Intune no portal do Azure em https://portal.azure.com.
 
-- **MAM sem registro de dispositivo**: o MAM sem registro de dispositivo, ou MAM-WE, permite que os administradores de TI gerenciem aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos não registrados no Intune MDM. Isso significa que os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados em provedores de EMM de terceiros. Para gerenciar aplicativos usando o MAM-WE, os clientes devem usar o console do Intune no portal do Azure em http://portal.azure.com. Além disso, os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados com provedores de Gerenciamento de Mobilidade Empresarial (EMM) de terceiros ou não registrados com um MDM.
+- **MAM sem registro de dispositivo**: o MAM sem registro de dispositivo, ou MAM-WE, permite que os administradores de TI gerenciem aplicativos usando o MAM e políticas de proteção do aplicativo em dispositivos não registrados no Intune MDM. Isso significa que os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados em provedores de EMM de terceiros. Para gerenciar aplicativos usando o MAM-WE, os clientes devem usar o console do Intune no portal do Azure em https://portal.azure.com. Além disso, os aplicativos podem ser gerenciados pelo Intune em dispositivos registrados com provedores de Gerenciamento de Mobilidade Empresarial (EMM) de terceiros ou não registrados com um MDM.
 
 
 ## <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
@@ -61,7 +61,7 @@ Qualquer aplicativo que tenha sido integrado com o [SDK do Aplicativo do Intune]
 
 - O usuário final deve ter uma licença do Microsoft Intune atribuída à sua conta do Azure Active Directory. Confira [Gerenciar licenças do Intune](/intune/licenses-assign) para saber como atribuir licenças do Intune aos usuários finais.
 
-- O usuário final deve pertencer a um grupo de segurança destinado a uma política de proteção do aplicativo. A mesma política de proteção do aplicativo deve ter como destino o aplicativo específico utilizado. Políticas de proteção do aplicativo podem ser criadas e implantadas no console do Intune no [portal do Azure](http://portal.azure.com). No momento, grupos de segurança podem ser criados no [portal do Office](http://portal.office.com).
+- O usuário final deve pertencer a um grupo de segurança destinado a uma política de proteção do aplicativo. A mesma política de proteção do aplicativo deve ter como destino o aplicativo específico utilizado. Políticas de proteção do aplicativo podem ser criadas e implantadas no console do Intune no [portal do Azure](https://portal.azure.com). No momento, grupos de segurança podem ser criados no [portal do Office](https://portal.office.com).
 
 - O usuário final deve se conectar ao aplicativo usando sua conta do AAD.
 
@@ -76,7 +76,7 @@ Qualquer aplicativo que tenha sido integrado com o [SDK do Aplicativo do Intune]
 
 **Quais são os requisitos adicionais para usar os [aplicativos Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-- O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](https://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - O usuário final deve configurar um local gerenciado usando o salvamento granular como funcionalidade, na configuração "Impedir Salvar como" da política de proteção do aplicativo. Por exemplo, se o local gerenciado for o OneDrive, será necessário configurar o aplicativo [OneDrive](https://onedrive.live.com/about/) no aplicativo Word, Excel ou PowerPoint do usuário final.
 
@@ -109,9 +109,9 @@ O PIN (Número de Identificação Pessoal) é uma senha usada para verificar se 
 
 - **Com que frequência o PIN do Intune será solicitado ao usuário?**<br></br> O administrador de TI pode definir a política de proteção do aplicativo Intune configurando "Verificar novamente os requisitos de acesso após (minutos)" no console de administrador do Intune. Essa configuração especifica a quantidade de tempo até os requisitos de acesso serem verificados no dispositivo e a tela PIN do aplicativo ser exibida novamente. No entanto, detalhes importantes sobre o PIN que afetam a frequência com que o usuário será consultado são: 
 
-    - **O PIN é compartilhado entre aplicativos do mesmo fornecedor para melhorar a usabilidade:** no iOS, um PIN de aplicativo é compartilhado entre todos os aplicativos **do mesmo fornecedor**. No Android, o PIN de um aplicativo é compartilhado com todos os aplicativos.
-    - **O comportamento de “Verificar novamente os requisitos de acesso após (minutos)” depois de uma reinicialização do dispositivo:** um “temporizador do PIN” rastreia o número de minutos de inatividade que determina quando mostrar o PIN do aplicativo do Intune da próxima vez. No iOS, o temporizador do PIN não é afetado pela reinicialização do dispositivo. Portanto, a reinicialização do dispositivo não tem nenhum efeito sobre o número de minutos que o usuário esteve inativo em um aplicativo iOS com a política de PIN do Intune. No Android, o temporizador do PIN é redefinido na reinicialização do dispositivo. Portanto, os aplicativos Android com a política de PIN do Intune provavelmente solicitarão um PIN do aplicativo, seja qual for o valor da configuração 'Verificar novamente os requisitos de acesso após (minutos)' **após uma reinicialização do dispositivo**.  
-    - **A natureza constante do temporizador com o PIN:** uma vez que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o segundo plano (foco de entrada principal) no dispositivo, o temporizador do PIN é redefinido para esse PIN. Qualquer aplicativo (aplicativo B) que compartilhe esse PIN não solicitará ao usuário para inserir o PIN porque o temporizador foi redefinido. A solicitação será exibida novamente quando o valor "Verificar novamente os requisitos de acesso após (minutos)" for atendido novamente.
+    - **O PIN é compartilhado entre aplicativos do mesmo editor para melhorar a usabilidade:** No iOS, um PIN de aplicativo é compartilhado entre todos os aplicativos **do mesmo editor de aplicativo**. No Android, o PIN de um aplicativo é compartilhado com todos os aplicativos.
+    - **O comportamento "Verificar novamente os requisitos de acesso após (minutos)" após uma reinicialização do dispositivo:** Um "temporizador do PIN" rastreia o número de minutos de inatividade que determinam quando mostrar o PIN do aplicativo Intune. No iOS, o temporizador do PIN não é afetado pela reinicialização do dispositivo. Portanto, a reinicialização do dispositivo não tem nenhum efeito sobre o número de minutos que o usuário esteve inativo em um aplicativo iOS com a política de PIN do Intune. No Android, o temporizador do PIN é redefinido na reinicialização do dispositivo. Portanto, os aplicativos Android com a política de PIN do Intune provavelmente solicitarão um PIN do aplicativo, seja qual for o valor da configuração 'Verificar novamente os requisitos de acesso após (minutos)' **após uma reinicialização do dispositivo**.  
+    - **A natureza em constante movimento do temporizador associada ao PIN:** Uma vez que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o segundo plano (foco de entrada principal) no dispositivo, o temporizador do PIN é redefinido para esse PIN. Qualquer aplicativo (aplicativo B) que compartilhe esse PIN não solicitará ao usuário para inserir o PIN porque o temporizador foi redefinido. A solicitação será exibida novamente quando o valor "Verificar novamente os requisitos de acesso após (minutos)" for atendido novamente.
 
 Para dispositivos iOS, mesmo se o PIN for compartilhado entre aplicativos de diferentes fornecedores, a solicitação será exibida novamente quando o valor **Verificar novamente os requisitos de acesso após (minutos)** for atendido novamente para o aplicativo que não é o foco principal da entrada. Por exemplo, um usuário tem o aplicativo _A_ do fornecedor _X_ e o aplicativo _B_ do fornecedor _Y_, e esses dois aplicativos compartilham o mesmo PIN. O usuário está concentrado no aplicativo _A_ (primeiro plano), e o aplicativo _B_ está minimizado. Depois que o valor **Verificar novamente os requisitos de acesso após (minutos)** for atendido e o usuário alternar para o aplicativo _B_, o PIN será necessário.
 

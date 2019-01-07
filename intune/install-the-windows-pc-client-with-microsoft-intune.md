@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553632"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Use o Microsoft Intune para gerenciar computadores Windows como [dispositivos móveis com o MDM (gerenciamento de dispositivo móvel)](windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes usem a [solução de gerenciamento MDM](windows-enroll.md) sempre que possível.
+> Use o Microsoft Intune para gerenciar computadores Windows como [dispositivos móveis com o MDM (gerenciamento de dispositivo móvel)](windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes usem a [solução de gerenciamento MDM](windows-enroll.md) sempre que possível. Para saber mais, confira [Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis](pc-management-comparison.md) 
 
 
 Computadores Windows podem ser registrados instalando o software cliente do Intune. É possível instalar o software cliente do Intune usando os seguintes métodos:
@@ -124,8 +124,8 @@ Se os usuários tiverem recebido uma licença do Intune e a autoridade de MDM da
 
 - Os usuários de do Windows 8.1 ou Windows 10 têm duas opções de registro:
 
-  -  **Registrar o PC como um dispositivo móvel**: os usuários clicam no botão **Saiba mais sobre como se registrar** e recebem instruções sobre como registrar seu PC como um dispositivo móvel. Esse botão é exibido em destaque, porque o registro do MDM é considerado padrão e a opção de registro preferida. No entanto, a opção de MDM não é aplicável a esse tópico, que aborda somente a instalação do software cliente.
-  - **Registrar o PC usando o software cliente do Intune**: você precisará pedir que os usuários selecionem o link **Clique aqui para baixá-lo**, que leva à instalação do software cliente.
+  -  **Inscrever o PC como um dispositivo móvel**: Os usuários clicam no botão **Saiba mais sobre como se registrar** e recebem instruções sobre como registrar seu PC como um dispositivo móvel. Esse botão é exibido em destaque, porque o registro do MDM é considerado padrão e a opção de registro preferida. No entanto, a opção de MDM não é aplicável a esse tópico, que aborda somente a instalação do software cliente.
+  - **Inscrever o PC usando o software cliente do Intune**: Você precisará pedir que os usuários selecionem o link **Clique aqui para baixá-lo**, que leva à instalação do software cliente.
 
 A tabela a seguir resume as opções.
 
@@ -260,4 +260,4 @@ O processo de cancelamento de registro não remove a pasta OnlineManagement. Agu
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Próximas etapas
-[Gerenciar dispositivos com o Microsoft Intune](device-management.md)
+[Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

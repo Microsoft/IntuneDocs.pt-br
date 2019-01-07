@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185416"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738011"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -72,7 +72,7 @@ Aplique uma cor de tema ao Portal da Empresa. Selecione uma cor padrão ou insir
 |**Selecione uma cor padrão ou insira um código hexadecimal de seis dígitos**| Escolha **Padrão** para selecionar visualmente uma cor. Escolha **Personalizado** para selecionar uma cor específica com base em um valor de código hexadecimal.|
 |**Escolher cor do tema**| Selecione uma cor de tema para aplicar ao Portal da Empresa. Você pode escolher uma cor padrão ou inserir um código hexadecimal específico. |
 |**Exibir**| Selecione se deseja exibir o **Logotipo e o nome da empresa**, **Apenas o logotipo da empresa** ou **Apenas o nome de empresa**. |
-|**Fazer upload do logotipo da empresa**|Você pode fazer upload do logotipo da empresa para mostrar no Portal da Empresa. Observe que a cor do texto será escolhida automaticamente para fornecer o mais alto nível de contraste. Para melhorar a aparência, faça upload de um logotipo com uma tela de fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 px x 400 px</li><li>Tamanho máximo do arquivo: 750 KB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
+|**Fazer upload do logotipo da empresa**|Você pode fazer upload do logotipo da empresa para mostrar no Portal da Empresa. Observe que a cor do texto será escolhida automaticamente para fornecer o mais alto nível de contraste. Para melhorar a aparência, faça upload de um logotipo com uma tela de fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400px x 400px</li><li>Tamanho máximo do arquivo: 750 KB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
 
 Depois de fazer upload do logotipo, a área de visualização mostrará o logotipo com a cor de tema. Se você optar por exibir o nome da sua empresa, ele será mostrado em preto ou branco no Portal da Empresa e escolhido automaticamente para fornecer o mais alto nível de contraste com base na cor do seu tema. A área de visualização na tela não mostrará o nome da empresa. 
 
@@ -81,7 +81,7 @@ Escolha um logotipo que tenha a melhor aparência em telas de fundo claras ou br
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Fazer upload do seu logotipo**| Essa opção estará disponível se você tiver escolhido mostrar o logotipo da empresa. Para melhorar a aparência, faça upload de um logotipo com uma tela de fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 px x 400 px</li><li>Tamanho máximo do arquivo: 750 KB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
+|**Fazer upload do seu logotipo**| Essa opção estará disponível se você tiver escolhido mostrar o logotipo da empresa. Para melhorar a aparência, faça upload de um logotipo com uma tela de fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400px x 400px</li><li>Tamanho máximo do arquivo: 750 KB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Imagem de marca para o Portal da Empresa
 
@@ -89,7 +89,7 @@ Exiba uma imagem de marca que reflita a marca da empresa. Depois de salvar suas 
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Fazer upload de sua imagem de marca**| Essa opção está disponível para que você possa exibir uma imagem de tela de fundo na página de perfil do usuário no aplicativo Portal da Empresa.<p>*Observação*: a imagem pode ser exibida de forma diferente para diversas plataformas.<p><ul><li>Largura de imagem recomendada: superior a 1.125 px, mas não inferior a 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
+|**Fazer upload de sua imagem de marca**| Essa opção está disponível para que você possa exibir uma imagem de tela de fundo na página de perfil do usuário no aplicativo Portal da Empresa.<p>*Observação*: A imagem pode ser exibida de forma diferente para diversas plataformas.<p><ul><li>Largura da imagem recomendada: Superior a 1.125px, mas não inferior a 640px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca certa pode melhorar a confiança do usuário no Portal da Empresa, apresentando um forte senso de marca da sua empresa. Aqui estão algumas dicas que você talvez queira considerar para adquirir, escolher e otimizar a imagem do Portal da Empresa. 
 
@@ -138,7 +138,7 @@ Os atalhos de teclado a seguir estão disponíveis no aplicativo do Portal da Em
 
 Os usuários finais também poderão ver os atalhos disponíveis no aplicativo do Portal da Empresa do Windows.
 
-![Captura de tela dos atalhos disponíveis no aplicativo do Portal da Empresa do Windows](media/company-portal-app/company-portal-app-01.png)
+![Captura de tela dos atalhos disponíveis no Portal da Empresa do Windows](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 

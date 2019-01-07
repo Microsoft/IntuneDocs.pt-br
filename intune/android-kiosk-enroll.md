@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031986"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626077"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro no Intune de dispositivos de quiosque Android Enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Android dá suporte a dispositivos no estilo quiosque com seu conjunto de soluções de uso único de propriedade corporativa. Esses dispositivos são usados para uma finalidade única, como sinalização digital, impressão de tíquete ou gerenciamento de inventário, para mencionar apenas alguns. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
+O Android dá suporte a dispositivos no estilo quiosque com seu conjunto de soluções de [Dispositivos Dedicados](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use). Esses dispositivos são usados para uma finalidade única, como sinalização digital, impressão de tíquete ou gerenciamento de inventário, para mencionar apenas alguns. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
 
 O Intune ajuda você a implantar aplicativos e configurações em dispositivos de quiosque Android. Para obter detalhes específicos sobre o Android Enterprise, confira [Requisitos do Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 

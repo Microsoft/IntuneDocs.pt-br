@@ -1,12 +1,12 @@
 ---
 title: Adicionar manualmente o aplicativo Portal da Empresa ao Windows 10
 titleSuffix: Microsoft Intune
-description: Saiba como adicionar manualmente o aplicativo Portal da Empresa ao Windows 10.
+description: Saiba como sua força de trabalho pode adicionar manualmente o aplicativo Portal da Empresa do Windows 10 aos seus PCs na Microsoft Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190261"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642584"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adicionar manualmente o aplicativo do Portal da Empresa ao Windows 10 usando o Microsoft Intune
 
@@ -51,7 +51,7 @@ Para gerenciar dispositivos e instalar aplicativos, os usuários podem instalar 
 
 7. Baixe todos os pacotes em "Estruturas Necessárias" ao selecionar **Download**.  
     Essa ação deve ser concluída para as arquiteturas x86, x64 e ARM, resultando em um total de 12 pacotes.
-8. Antes de carregar o aplicativo do Portal da Empresa no Intune, crie uma pasta (por exemplo, C:\Portal da Empresa) com os pacotes estruturados da seguinte maneira:
+8. Antes de carregar o aplicativo do Portal da Empresa no Intune, crie uma pasta (por exemplo: C:\Portal da Empresa) com os pacotes estruturados da seguinte maneira:
    - Coloque o pacote Portal da Empresa em C:\Portal da Empresa. Crie uma subpasta *Dependências* nesse local também.  
 
      ![Pasta Dependências salva com o arquivo APPXBUN](./media/Win10CP-Dependencies-save.png)

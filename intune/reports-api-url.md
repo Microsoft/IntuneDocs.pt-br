@@ -1,7 +1,7 @@
 ---
 title: Ponto de extremidade de API do Intune Data Warehouse
 titlesuffix: Microsoft Intune
-description: O tópico de referência descreve a estrutura de URL da API do Intune Data Warehouse.
+description: Este tópico de referência descreve a estrutura de URL da API do Microsoft Intune Data Warehouse. Exemplos de filtro são fornecidos.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180588"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642737"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto de extremidade de API do Intune Data Warehouse
 

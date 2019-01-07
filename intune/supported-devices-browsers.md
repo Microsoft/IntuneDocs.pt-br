@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 2d47a8f61c85b390ae53311154f27d2d85860840
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112588"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626027"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Navegadores e sistemas operacionais compatíveis no Intune
 
@@ -30,6 +30,8 @@ ms.locfileid: "53112588"
 Antes de configurar o Microsoft Intune, examine os sistemas operacionais e navegadores compatíveis.
 
 Para obter ajuda de como instalar o Intune em seu dispositivo, confira [usando dispositivos gerenciados para realizar o trabalho](/intune-user-help/company-portal-frequently-asked-questions) e o [uso da largura de banda da rede do Intune](network-bandwidth-use.md).
+
+Para saber mais sobre o suporte à configuração do provedor de serviço, visite a [Referência do provedor do serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operacionais compatíveis com o Intune
 

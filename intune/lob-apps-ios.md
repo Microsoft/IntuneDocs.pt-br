@@ -1,7 +1,7 @@
 ---
 title: Adicionar um aplicativo de linha de negócios do iOS ao Microsoft Intune
 titlesuffix: ''
-description: Saiba como adicionar um aplicativo de linha de negócios (LOB) do iOS ao Microsoft Intune.
+description: Saiba como adicionar um aplicativo de linha de negócios (LOB) iOS ao Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7e3f00f129b5b344fc357be83c4d66f220035bd0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e5daa24261d2a26e289649ec6f964c5de55f0da0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180707"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642720"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do iOS ao Microsoft Intune
 
@@ -32,7 +32,7 @@ Use as informações deste artigo para ajudar a adicionar aplicativos de uma lin
 >[!NOTE]
 >Os usuários de dispositivos iOS possam remover alguns dos aplicativos iOS internos, por exemplo, Ações e Mapas. Você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários excluírem esses aplicativos, eles deverão acessar a loja de aplicativos e reinstalá-los manualmente.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar os arquivos de instalação de software
+## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar o arquivo de instalação do software
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
@@ -41,7 +41,7 @@ Use as informações deste artigo para ajudar a adicionar aplicativos de uma lin
 5. Acima da lista de aplicativos, selecione **Adicionar**.
 6. No painel **Adicionar aplicativo**, selecione **Aplicativo de linha de negócios**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Etapa 2: Configurar o arquivo de pacote de aplicativos
+## <a name="step-2-configure-the-app-package-file"></a>Etapa 2: Configurar o arquivo de pacote do aplicativo
 
 1. No painel **Adicionar aplicativo**, selecione o **Arquivo do pacote do aplicativo**.
 2. No painel **Arquivo do pacote do aplicativo**, selecione o botão Procurar. Em seguida, selecione um arquivo de instalação do iOS com a extensão **.ipa**.
@@ -52,21 +52,21 @@ Use as informações deste artigo para ajudar a adicionar aplicativos de uma lin
 
 1. No painel **Adicionar aplicativo**, selecione **Informações do aplicativo**.
 2. No painel **Informações do aplicativo**, adicione os detalhes do seu aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ser preenchidos automaticamente.
-    - **Nome**: insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido no portal da empresa.
-    - **Descrição**: insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
-    - **Editor**: insira o nome do editor do aplicativo.
-    - **Sistema operacional mínimo**: na lista, escolha a versão mínima do sistema operacional em que o aplicativo pode ser instalado. Se você atribuir o aplicativo a um dispositivo com um sistema operacional mais antigo, ele não será instalado.
-    - **Categoria**: selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
-    - **Exibir como um aplicativo em destaque no Portal da Empresa**: exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
-    - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
-    - **URL de Privacidade**: opcionalmente, insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
-    - **Desenvolvedor**: opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário**: opcionalmente, insira um nome para o proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
-    - **Observações**: digite as observações que você deseja associar a esse aplicativo.
-    - **Logotipo**: carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Nome**: Insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido no portal da empresa.
+    - **Descrição**: Insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
+    - **Editor**: Insira o nome do editor do aplicativo.
+    - **Sistema operacional mínimo**: Na lista, escolha a versão mínima do sistema operacional em que o aplicativo pode ser instalado. Se você atribuir o aplicativo a um dispositivo com um sistema operacional mais antigo, ele não será instalado.
+    - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
+    - **Exibir isso como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
+    - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
+    - **URL de privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
+    - **Desenvolvedor**: Opcionalmente, insira o nome do desenvolvedor do aplicativo.
+    - **Proprietários**: Opcionalmente, insira um nome para o proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
+    - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
+    - **Logotipo**: Carregue um ícone associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3. Quando tiver terminado, selecione **OK**.
 
-## <a name="step-4-finish-up"></a>Etapa 4: Conclusão
+## <a name="step-4-finish-up"></a>Etapa 4: Concluir
 
 1. No painel **Adicionar aplicativo**, confirme se os detalhes do seu aplicativo estão corretos.
 2. Selecione **Adicionar** para carregar o aplicativo no Intune.
@@ -76,7 +76,7 @@ O aplicativo que você criou agora aparece na lista de aplicativos. Na lista, vo
 > [!NOTE]
 > Os perfis de provisionamento para aplicativos LOB do iOS têm um aviso de 30 dias antes de expirarem.
 
-## <a name="step-5-update-a-line-of-business-app"></a>Etapa 5: atualizar um aplicativo de linha de negócios
+## <a name="step-5-update-a-line-of-business-app"></a>Etapa 5: Atualizar um aplicativo de linha de negócios
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

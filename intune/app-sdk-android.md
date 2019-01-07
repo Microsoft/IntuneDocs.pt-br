@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168021"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53378276"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
@@ -86,7 +86,7 @@ As ferramentas executam apenas [substituições diretas](#class-and-method-repla
 ### <a name="gradle-build-plugin"></a>Plug-in de build do Gradle
 Se o aplicativo não for compilado com o gradle, vá para [Integrando-se à ferramenta de linha de comando](#command-line-build-tool). 
 
-O plug-in do SDK do aplicativo é distribuído como parte do SDK como **GradlePlugin/com.microsoft.intune.mam.build.jar**. Para que o Gradle consiga localizar o plug-in, ele deve ser adicionado ao classpath de buildscript. O plug-in depende do [Javassist](http://jboss-javassist.github.io/javassist/), que também deve ser adicionado. Para adicioná-los ao classpath, adicione o seguinte ao `build.gradle` raiz
+O plug-in do SDK do aplicativo é distribuído como parte do SDK como **GradlePlugin/com.microsoft.intune.mam.build.jar**. Para que o Gradle consiga localizar o plug-in, ele deve ser adicionado ao classpath de buildscript. O plug-in depende do [Javassist](https://jboss-javassist.github.io/javassist/), que também deve ser adicionado. Para adicioná-los ao classpath, adicione o seguinte ao `build.gradle` raiz
 
 ```groovy
 buildscript {
@@ -170,7 +170,7 @@ Se você responder 'sim' para as duas perguntas, será necessário incluir essa 
 
 #### <a name="dependencies"></a>Dependências
 
-O plug-in gradle tem uma dependência em [Javassist](http://jboss-javassist.github.io/javassist/), que deve estar disponível para a resolução de dependência do Gradle (conforme descrito acima). O Javassist é usado exclusivamente em tempo de build ao executar o plug-in. Nenhum código Javassist será adicionado ao seu aplicativo.
+O plug-in gradle tem uma dependência em [Javassist](https://jboss-javassist.github.io/javassist/), que deve estar disponível para a resolução de dependência do Gradle (conforme descrito acima). O Javassist é usado exclusivamente em tempo de build ao executar o plug-in. Nenhum código Javassist será adicionado ao seu aplicativo.
 
 > [!NOTE]
 > Você deve estar usando a versão 3.0 ou mais recente do plug-in Gradle do Android e Gradle 4.1 ou mais recente.
@@ -338,7 +338,7 @@ A Biblioteca de Autenticação do Azure Active Directory ([ADAL](https://azure.m
 
 O registro em log deve ser inicializado no início para obter o máximo dos dados registrados. O `Application.onMAMCreate()` normalmente é o melhor lugar para inicializar o registro em log.
 
-Para receber logs do MAM em seu aplicativo, crie um [manipulador Java](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) e adicione-o ao `MAMLogHandlerWrapper`. Isso irá chamar o `publish()` no manipulador de aplicativo para cada mensagem de log.
+Para receber logs do MAM em seu aplicativo, crie um [manipulador Java](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) e adicione-o ao `MAMLogHandlerWrapper`. Isso irá chamar o `publish()` no manipulador de aplicativo para cada mensagem de log.
 
 ```java
 /**
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... onde `service` é um dos seguintes SaveLocations:
+O parâmetro `service` deve ser um dos seguintes valores de `SaveLocation`:
 
 
-    * SaveLocation.ONEDRIVE_FOR_BUSINESS
-    * SaveLocation.LOCAL
-    * SaveLocation.SHAREPOINT
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 O método anterior para determinar se a política de um usuário permitia que eles salvassem dados em vários locais era `getIsSaveToPersonalAllowed()` dentro da mesma classe **AppPolicy**. Essa função está agora **preterida** e não deve ser usada, a chamada a seguir é equivalente a `getIsSaveToPersonalAllowed()`:
 
@@ -664,7 +664,7 @@ CA (Acesso Condicional) é um [recurso](https://docs.microsoft.com/azure/active-
 
 3. Defina os parâmetros de metadados de manifesto conforme as [Configurações comuns ADAL](#common-adal-configurations), item 2, acima.
 
-4. Teste se tudo está configurado corretamente habilitando o [CA baseado em dispositivo](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) pelo [Portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) e confirmando
+4. Teste se tudo está configurado corretamente habilitando o [CA baseado em dispositivo](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) pelo [portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) e confirmando
 * Que a conexão ao seu aplicativo solicita a instalação e o registro do Portal da Empresa do Intune
 * Que, após o registro, a conexão ao seu aplicativo é concluída com êxito.
 
@@ -798,7 +798,7 @@ Result getRegisteredAccountStatus(String upn);
 
 Aplicativos que [reconhecem nuvem soberana](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) **devem** fornecer o `authority` para `registerAccountForMAM()`.  Isso pode ser obtido fornecendo `instance_aware=true` em acquireToken extraQueryParameters do ADAL [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) seguido por invocar `getAuthority()` em AuthenticationCallback AuthenticationResult.
 
-```
+```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
         new AuthenticationCallback<AuthenticationResult>() {
             @Override
@@ -817,7 +817,8 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 > [!NOTE]
 > Não defina a autoridade de metadados AndroidManifest.xml.
 <br/>
-```
+
+```xml
 <meta-data
     android:name="com.microsoft.intune.mam.aad.Authority"
     android:value="https://AAD authority/" />
@@ -892,7 +893,7 @@ O status da conta de usuário registrado poderá ser alterado quando um registro
 
 ## <a name="protecting-backup-data"></a>Proteção de dados de backup
 
-A partir do Android Marshmallow (API 23), o Android tem duas formas para um aplicativo fazer backup de seus dados. Cada opção está disponível para seu aplicativo e requer etapas diferentes para garantir que a proteção de dados do Intune seja implementada corretamente. Examine a tabela abaixo para ver as ações correspondentes necessárias para o comportamento correto de proteção de dados.  Leia mais sobre os métodos de backup no [Guia da API do Android](http://developer.android.com/guide/topics/data/backup.html).
+A partir do Android Marshmallow (API 23), o Android tem duas formas para um aplicativo fazer backup de seus dados. Cada opção está disponível para seu aplicativo e requer etapas diferentes para garantir que a proteção de dados do Intune seja implementada corretamente. Examine a tabela abaixo para ver as ações correspondentes necessárias para o comportamento correto de proteção de dados.  Leia mais sobre os métodos de backup no [Guia da API do Android](https://developer.android.com/guide/topics/data/backup.html).
 
 ### <a name="auto-backup-for-apps"></a>Backup automático de aplicativos
 
@@ -1413,7 +1414,7 @@ Um aplicativo que esteja se registrando para `WIPE_USER_DATA` não receberá o b
 Pares chave-valor específico do aplicativo podem ser configurados no console do Intune. Esses pares chave-valor não são interpretados pelo Intune de nenhuma forma, mas simplesmente passados para o aplicativo. Os aplicativos que desejam receber essa configuração podem usar as classes `MAMAppConfigManager` e `MAMAppConfig` para isso. Se várias políticas estiverem direcionadas ao mesmo aplicativo, poderá haver vários valores conflitantes disponíveis para a mesma chave.
 
 ### <a name="example"></a>Exemplo
-```
+```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
@@ -1434,7 +1435,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="mamappconfig-reference"></a>Referência de MAMAppConfig
 
-```
+```java
 public interface MAMAppConfig {
     /**
      * Conflict resolution types for Boolean values.
@@ -1609,20 +1610,27 @@ Essas instruções são específicas a todos os desenvolvedores de aplicativos A
    > O termo "ID do cliente" vinculado ao aplicativo é o mesmo que o termo "ID do aplicativo" do Portal do Azure. 
 2. Para habilitar o SSO, é necessária a "Configuração da ADAL comum" nº2.
 
-3. Habilite o registro padrão, colocando o seguinte valor no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+3. Habilite a inscrição predefinida colocando o seguinte valor no manifesto:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > Essa deve ser a única integração de MAM-WE no aplicativo. Se houver outras tentativas de chamar APIs MAMEnrollmentManager, poderão ocorrer conflitos.
 
-4. Habilite a política de MAM necessária colocando o seguinte valor no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. Habilite a política de MAM necessária colocando o seguinte valor no manifesto:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > Isso força o usuário a baixar o Portal da Empresa no dispositivo e concluir o fluxo de registro padrão antes de usar.
    >
    > Essa deve ser a única integração de MAM-WE no aplicativo. Se houver outras tentativas de chamar APIs MAMEnrollmentManager, ocorrerão conflitos.
 
 3. Habilite a política de MAM necessária colocando o seguinte valor no manifesto:
-```xml
-<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-```
+
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
 
 > [!NOTE] 
 > Isso força o usuário a baixar o Portal da Empresa no dispositivo e concluir o fluxo de registro padrão antes de usar.
