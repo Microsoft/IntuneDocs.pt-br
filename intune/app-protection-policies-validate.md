@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816949"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Como validar sua configuração de política de proteção de aplicativo
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247060"
 
 Verifique se a política de proteção de aplicativo está funcionando e configurada corretamente. Estas diretrizes se aplicam às políticas de proteção de aplicativo no portal do Azure.
 
-### <a name="checking-for-symptoms"></a>Verificar sintomas
+## <a name="checking-for-symptoms"></a>Verificar sintomas
 Não é provável que os usuários relatem problemas, pois a proteção de aplicativo é uma ferramenta de proteção de dados. Se houver algum problema com a configuração da proteção de aplicativo, o usuário terá acesso irrestrito, como teria sem a proteção de aplicativo, e não saberá que há um problema. Por esse motivo, é recomendável que você valide a configuração de proteção de aplicativo, realizando um piloto das políticas de proteção de aplicativo com um pequeno grupo de usuários que podem testar deliberadamente as restrições de proteção de aplicativo.
 
 
-### <a name="what-to-check"></a>O que verificar
+## <a name="what-to-check"></a>O que verificar
 
 Se o teste mostrar que o comportamento da política de proteção de aplicativo não funciona como o esperado, verifique estes itens:
 
@@ -41,7 +41,7 @@ Se o teste mostrar que o comportamento da política de proteção de aplicativo 
 - Os usuários estão licenciados para o O365?
 - O status de cada um dos aplicativos de proteção de aplicativo dos usuários. Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**.
 
-#### <a name="user-app-protection-status"></a>Status de proteção de aplicativo do usuário
+### <a name="user-app-protection-status"></a>Status de proteção de aplicativo do usuário
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. Selecione **Aplicativos cliente** > **Monitor** >  **Status de proteção do aplicativo** e escolha o bloco **Usuários atribuídos**. 
@@ -50,7 +50,7 @@ Se o teste mostrar que o comportamento da política de proteção de aplicativo 
 
 
 
-### <a name="what-to-do"></a>O que fazer
+## <a name="what-to-do"></a>O que fazer
 Aqui estão as ações necessárias com base no status do usuário:
 
 - Se o usuário não tiver a licença da proteção de aplicativo, atribua uma licença do Intune ao usuário.
@@ -58,6 +58,6 @@ Aqui estão as ações necessárias com base no status do usuário:
 - Se um aplicativo do usuário estiver listado como **Não submetido a check-in**, verifique se você configurou corretamente uma política de proteção de aplicativo para esse aplicativo.
 - Verifique se essas condições se aplicam a todos os usuários para os quais você deseja que as políticas de proteção de aplicativo sejam aplicadas.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [O que é a política de proteção de aplicativo do Intune?](app-protection-policies.md)
