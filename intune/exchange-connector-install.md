@@ -1,12 +1,11 @@
 ---
-title: Configurar o conector do Exchange local do Microsoft Intune
-titleSuffix: ''
+title: Configurar o conector do Exchange no Local do Microsoft Intune | Microsoft Intune
 description: Use o conector do Exchange local para gerenciar o acesso de dispositivo às caixas de correio do Exchange com base no registro do Intune e no EAS (Exchange Active Sync).
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817255"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o conector do Exchange local do Intune no Microsoft Intune Azure
 
@@ -71,7 +70,7 @@ A tabela a seguir lista os requisitos para o computador no qual o conector do Ex
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Baixe o pacote de instalação de software do conector do Exchange local
 
-1. Em um sistema operacional Windows Server compatível para o conector do Exchange local, abra o [portal do Azure](http://portal.azure.com) e entre com uma conta de usuário que seja um administrador no Exchange Server local e que tenha licença para usar o Exchange Server.
+1. Em um sistema operacional Windows Server compatível para o conector do Exchange local, abra o [portal do Azure](https://portal.azure.com) e entre com uma conta de usuário que seja um administrador no Exchange Server local e que tenha licença para usar o Exchange Server.
 
 2. Escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 

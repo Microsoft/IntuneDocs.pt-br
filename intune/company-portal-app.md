@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817374"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -89,7 +89,7 @@ Exiba uma imagem de marca que reflita a marca da empresa. Depois de salvar suas 
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Fazer upload de sua imagem de marca**| Essa opção está disponível para que você possa exibir uma imagem de tela de fundo na página de perfil do usuário no aplicativo Portal da Empresa.<p>*Observação*: A imagem pode ser exibida de forma diferente para diversas plataformas.<p><ul><li>Largura da imagem recomendada: Superior a 1.125px, mas não inferior a 640px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
+|**Fazer upload de sua imagem de marca**| Essa opção está disponível para que você possa exibir uma imagem de tela de fundo na página de perfil do usuário no aplicativo Portal da Empresa.<p>*Observação*: A imagem pode ser exibida de forma diferente para diversas plataformas.<p><ul><li>Largura da imagem recomendada: Inferior a 1.125 px, mas não inferior a 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca certa pode melhorar a confiança do usuário no Portal da Empresa, apresentando um forte senso de marca da sua empresa. Aqui estão algumas dicas que você talvez queira considerar para adquirir, escolher e otimizar a imagem do Portal da Empresa. 
 

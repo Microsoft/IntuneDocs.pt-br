@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389862"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006277"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
@@ -37,14 +37,14 @@ Você pode usar políticas de proteção de aplicativo do Intune **independentem
 
 As políticas de proteção de aplicativo podem ser configuradas para aplicativos em execução em dispositivos que são:
 
-- **Registrados no Microsoft Intune:** esses dispositivos normalmente são corporativos.
+- **Registrados no Microsoft Intune:** Esses dispositivos normalmente são corporativos.
 
-- **Registrados em uma solução de MDM (gerenciamento de dispositivo móvel) de terceiros:** esses dispositivos normalmente são corporativos.
+- **Registrados em uma solução de MDM (Gerenciamento de dispositivo móvel) de terceiros:** Esses dispositivos normalmente são corporativos.
 
   > [!NOTE]
   > Políticas de gerenciamento de aplicativo móvel não devem ser usadas com o gerenciamento de aplicativos móveis de terceiros ou com soluções seguras de contêiner.
 
-- **Não registrados em nenhuma solução de gerenciamento de dispositivo móvel:** os dispositivos normalmente são dispositivos de funcionários que não são gerenciados ou registrados no Intune nem em outras soluções de MDM.
+- **Não registrados em nenhuma solução de gerenciamento de dispositivo móvel:** Os dispositivos dessa categoria normalmente são dispositivos de funcionários que não são gerenciados nem registrados no Intune nem em outras soluções de MDM.
 
 > [!IMPORTANT]
 > Você pode criar políticas de gerenciamento para aplicativos móveis do Office que se conectam aos serviços do Office 365. Você também pode proteger o acesso às caixas de correio locais do Exchange criando políticas de proteção de aplicativos do Intune para o Outlook para iOS e Android habilitado com Autenticação Moderna híbrida. Antes de usar esse recurso, verifique se você atende aos [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). As políticas de proteção de aplicativos não são compatíveis com outros aplicativos que se conectam a serviços locais do Exchange ou do SharePoint.
@@ -75,14 +75,14 @@ Não há suporte para dispositivos Windows. No entanto, você pode usar a Prote�
 
 #### <a name="apps-without-app-protection-policies"></a>Aplicativos sem políticas de proteção de aplicativo
 
-![Imagem que mostra que os dados pode ser movidos livremente entre aplicativos quando não há nenhuma política de proteção de aplicativo em vigor](./media/apps-without-protection-policies.png)
+![Imagem conceitual para movimentação de dados entre aplicativos sem nenhuma política em vigor](./media/apps-without-protection-policies.png)
 
 Quando os aplicativos são usados sem restrições, os dados corporativos e pessoais podem se misturar. Os dados corporativos podem acabar em locais como um armazenamento pessoal ou podem ser transferidos para aplicativos fora do seu alcance, resultando na perda de dados. As setas no diagrama anterior mostram a movimentação de dados irrestrita entre aplicativos corporativos e pessoais, além de locais de armazenamento.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Proteção de dados com as políticas de proteção de aplicativo
 
-![Imagem que mostra como os dados da empresa são protegidos quando as políticas de proteção de aplicativo são aplicadas ](./media/apps-with-protection-policies.png)
+![Imagem conceitual que mostra os dados da empresa sendo protegidos por políticas](./media/apps-with-protection-policies.png)
 
 
 Você pode usar as políticas de proteção de aplicativo para impedir que os dados da empresa sejam salvos no armazenamento local do dispositivo. Você também pode restringir a movimentação de dados para outros aplicativos que não estão protegidos pelas políticas de proteção do aplicativo. As configurações de política de proteção de aplicativo incluem:
@@ -146,7 +146,7 @@ Embora a política **Global** se aplique a todos os usuários em seu locatário,
 
 Aplicativos que dão suporte a várias identidades permitem usar contas diferentes (pessoal e corporativa) para acessar os mesmos aplicativos. Por outro lado, políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho.
 
-Para obter um exemplo de um contexto pessoal, considere um usuário que inicia um novo documento no Word, isso é considerado um contexto pessoal, portanto, as políticas de Proteção de Aplicativo do Intune não são aplicadas. Assim que o documento for salvo na conta corporativa do OneDrive, considera-se que tem um contexto corporativo, e as políticas de Proteção de Aplicativo do Intune serão aplicadas.
+Para obter um exemplo de um contexto pessoal, considere um usuário que inicia um novo documento no Word, isso é considerado um contexto pessoal, portanto, as políticas de Proteção de Aplicativo do Intune não são aplicadas. Assim que o documento for salvo na conta corporativa do OneDrive, ele será considerado um contexto corporativo e as políticas de Proteção de Aplicativo do Intune serão aplicadas.
 
 Como exemplo de contexto de trabalho, considere um usuário que inicia o aplicativo OneDrive usando sua conta corporativa. No contexto de trabalho, ele não pode mover arquivos para um local de armazenamento pessoal. Mais tarde, quando ele usa o OneDrive com sua conta pessoal, pode copiar e mover dados do seu OneDrive pessoal sem restrições.
 

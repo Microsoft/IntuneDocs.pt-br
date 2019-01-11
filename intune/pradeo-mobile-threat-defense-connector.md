@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
-ms.openlocfilehash: bf08796be801e1947fc1b18f2b5d2c49a5db945d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f565697d9c76f8a2990074b072ed43547284c29b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816881"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças Móveis do Pradeo com o Intune
 
@@ -48,7 +48,7 @@ Quando aplicativos mal-intencionados, como malware, são detectados nos disposit
 
 **Bloquear quando aplicativos mal-intencionados forem detectados:**
 
-![Aplicativos mal-intencionados detectados](./media/pradeo_maliciousapps_blocked.png)
+![Imagem conceitual de aplicativos mal-intencionados detectados](./media/pradeo_maliciousapps_blocked.png)
 
 **Concessão do acesso após a correção:**
 
@@ -64,7 +64,7 @@ Detecta ameaças à rede, como ataques **Man-in-the-middle** e protege o acesso 
 
 **Concessão do acesso após a correção:**
 
-![Acesso concedido após a correção](./media/pradeo_network_wifi_unblocked.png)
+![Imagem conceitual de Acesso concedido após a correção](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
@@ -76,7 +76,7 @@ Detecta ameaças à rede, como ataques **Man-in-the-middle** e impede a sincroni
 
 **Concessão do acesso após a correção:**
 
-![Acesso concedido após correção para exemplo do Sharepoint](./media/pradeo_network_spo_unblocked.png)
+![Imagem conceitual de Acesso concedido após a correção para exemplo do Sharepoint](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 

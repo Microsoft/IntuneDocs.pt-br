@@ -1,12 +1,12 @@
 ---
-title: Política de conformidade do dispositivo para dispositivos Jamf
+title: Política de conformidade do dispositivo para dispositivos Jamf | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Use políticas de conformidade do Microsoft Intune com acesso condicional do Azure Active Directory para ajudar a proteger dispositivos gerenciados pelo Jamf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817221"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs gerenciados com Jamf Pro
 
-Aplica-se a: Intune no Portal do Azure
+Aplica-se a: Intune no portal do Azure
 
 Você pode usar o Azure Active Directory e as políticas de acesso condicional do Microsoft Intune para garantir que os usuários finais estejam em conformidade com os requisitos organizacionais. Você pode aplicar essas políticas aos Macs [gerenciados com Jamf Pro](conditional-access-integrate-jamf.md). Isso exige acesso aos consoles do Intune e do Jamf Pro.
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Configurar as políticas de conformidade do dispositivo no Intune
 
-1. Abra o Microsoft Azure, então navegue até **Intune** > **Conformidade do Dispositivo** > **Políticas**. Você pode criar políticas para macOS, incluindo a escolha de uma série de ações (por exemplo, enviar emails de aviso) para usuários e grupos que não estão em conformidade.
+1. Abra o Microsoft Azure, então navegue até **Intune** > **Conformidade do Dispositivo** > **Políticas**. Você pode criar políticas para o macOS, incluindo a escolha de uma série de ações (por exemplo, enviar emails de aviso) para usuários e grupos que não estão em conformidade.
 2. Procure os grupos que você quer e aplique as políticas neles.
 
 > [!Note]
@@ -57,7 +57,7 @@ Você deve implantar o aplicativo de Portal da Empresa para macOS no Jamf Pro co
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Criar uma política no Jamf Pro para fazer os usuários registrarem seus dispositivos com o Azure Active Directory
 
 > [!NOTE]
-> Você precisa [implantar o Portal da Empresa](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) para macOS antes de executar as próximas etapas.  
+> Você precisa [implantar o Portal da Empresa](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) para macOS antes de executar as próximas etapas.  
 
 Os usuários finais precisam iniciar o aplicativo Portal da Empresa por meio do Serviço de Autoatendimento do Jamf para registrar o dispositivo com o Azure AD como um dispositivo gerenciado pelo Jamf Pro. Isso exigirá que os usuários finais executem uma ação. É recomendável que você [contate seu usuário final](end-user-educate.md) por email, por notificações do Jamf Pro ou por quaisquer outros métodos para notificar os usuários finais a clicar no botão no Autoatendimento do Jamf.
 

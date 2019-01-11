@@ -1,6 +1,5 @@
 ---
-title: Monitorar o acesso condicional do Exchange no Microsoft Intune
-titlesuffix: ''
+title: Monitorar o acesso condicional do Exchange no Microsoft Intune | Microsoft Intune
 description: Monitorar a conformidade de acesso condicional para o Exchange local e o Exchange Online por meio do Portal do Azure no Intune.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816763"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorar a conformidade de acesso condicional do Exchange Local e do Exchange Online no Intune
 
@@ -56,16 +55,16 @@ Você também poderá fazer uma busca detalhada em dispositivos específicos par
 
 No painel de detalhes do dispositivo, é possível ver mais informações:
 
--   **Visão geral:** é possível ver as propriedades do dispositivo como: versão do sistema operacional, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e última vez que o dispositivo fez check-in.
+-   **Visão geral:** É possível pode ver as propriedades do dispositivo como: Versão do sistema operacional, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e última vez que o dispositivo fez check-in.
 
--   **Propriedades:** você pode definir a propriedade do dispositivo (pessoal ou corporativa).
+-   **Propriedades:** É possível definir a propriedade do dispositivo (Pessoal ou Corporativa).
 
--   **Hardware:** fornece as informações que você vê na Visão Geral e também os detalhes de armazenamento (espaço total e livre), compartimento do sistema, detalhes da rede, serviço de rede e mais detalhes de bloqueio de acesso condicional.
+-   **Hardware:** Fornece as informações exibidas na Visão Geral e também os detalhes de armazenamento (espaço total e livre), compartimento do sistema, detalhes da rede, serviço de rede e mais detalhes sobre o bloqueio de acesso condicional.
 
--   **Aplicativos descobertos:** mostra todos os aplicativos instalados no seu dispositivo. Você também pode exportar a lista de aplicativos instalados para o formato .CSV.
+-   **Aplicativos Descobertos:** Mostra todos os aplicativos instalados no dispositivo. Você também pode exportar a lista de aplicativos instalados para o formato .CSV.
 
--   **Conformidade:** mostra todos os detalhes da política de conformidade do dispositivo.
+-   **Conformidade:** Mostra todos os detalhes da política de conformidade do dispositivo.
 
--   **Configuração do dispositivo:** mostra todos os detalhes de configuração do dispositivo.
+-   **Configuração do Dispositivo:** Mostra todos os detalhes da configuração do dispositivo.
 
--   **Acesso do Exchange:** aqui você pode aprender mais sobre o estado do dispositivo após a aplicação de políticas de acesso condicional.
+-   **Acesso do Exchange:** Aqui você poderá saber mais sobre o estado do dispositivo após a aplicação de políticas de acesso condicional.

@@ -1,23 +1,23 @@
 ---
-title: Gerenciar versões do sistema operacional com o Microsoft Intune
+title: Gerenciar versões do sistema operacional com o Microsoft Intune | Microsoft Intune
 description: Saiba como gerenciar versões do sistema operacional em diferentes plataformas com o Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
-ms.openlocfilehash: c75956cd1e3e9bba0017a624b99dcc090d32978b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 27a581a72c20c940a04a791ef9e63a2dc8bf5b24
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816983"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerenciar versões do sistema operacional com o Intune
 Em plataformas móveis e de área de trabalho modernas, atualizações, patches e novas versões principais são liberadas em um ritmo acelerado. Você tem controles para gerenciar totalmente as atualizações e patches no Windows, mas outras plataformas como iOS e Android exigem que os usuários finais participem do processo.  O Microsoft Intune tem os recursos para ajudá-lo a estruturar o gerenciamento de versão do sistema operacional em diferentes plataformas.
@@ -59,13 +59,12 @@ Para obter detalhes, consulte [Introdução às políticas de conformidade do di
 As configurações de acesso a políticas de proteção de aplicativo do Intune e do MAM (gerenciamento de aplicativos móveis) permitem que você especifique a versão mínima do sistema operacional na camada do aplicativo. Isso permite informar e incentivar ou exigir que os usuários finais atualizem o sistema operacional para uma versão mínima especificada.
  
 Você tem duas opções diferentes: 
+- **Avisar** – A opção Avisar informa ao usuário final de que ele deverá fazer a atualização se abrir um aplicativo com uma política de proteção de aplicativo ou com configurações de acesso do MAM em um dispositivo com uma versão de sistema operacional abaixo da versão especificada. O acesso será permitido para o aplicativo e para dados organizacionais.
+  ![Imagem da caixa de diálogo de aviso de atualização do Android](./media/os-version-update-warning.png) 
 
-|Aviso  |Bloquear  |
-|---------|---------|
-|Avisar informará ao usuário final que ele deve atualizar se ele abrir um aplicativo com uma configuração de política de proteção do aplicativo ou de acesso de MAM em um dispositivo com uma versão de sistema operacional abaixo da versão especificada. O acesso será permitido para o aplicativo e para dados organizacionais.|Bloquear informará ao usuário final que ele deve atualizar quando ele abrir um aplicativo com uma configuração de política de proteção do aplicativo ou de acesso de MAM em um dispositivo com uma versão de sistema operacional abaixo da versão especificada. O acesso não será permitido para o aplicativo e para dados organizacionais.|
-|![Caixa de diálogo de aviso de atualização do Android](./media/os-version-update-warning.png)    |![Caixa de diálogo de bloqueio de acesso do aplicativo](./media/os-version-access-blocked.png)          |
+- **Bloquear** – A opção Bloquear informa ao usuário final de que ele deverá fazer a atualização quando abrir um aplicativo com uma política de proteção de aplicativo ou com configurações de acesso do MAM em um dispositivo com uma versão de sistema operacional abaixo da versão especificada. O acesso não será permitido para o aplicativo e para dados organizacionais.
+  ![Imagem da caixa de diálogo Acesso bloqueado ao aplicativo](./media/os-version-access-blocked.png)
 
- 
 ### <a name="in-practice"></a>Na prática
 Atualmente, as organizações estão usando configurações de política de proteção do aplicativo quando os aplicativos são abertos ou retomados como uma maneira de instruir os usuários finais sobre a necessidade de manter seus aplicativos atualizados. Um exemplo de configuração é que os usuários finais são avisados quando estão uma versão abaixo da atual e bloqueados quando estão duas versões abaixo da atual.
  
@@ -74,12 +73,12 @@ Para obter detalhes, consulte [Como criar e implantar políticas de proteção d
 ## <a name="managing-a-new-operating-system-version-rollout"></a>Gerenciando a distribuição de uma nova versão do sistema operacional
 Você pode usar os recursos do Intune descritos neste artigo para ajudar a passar a sua organização para uma nova versão de sistema operacional dentro do prazo que você definir. As seguintes etapas fornecem um exemplo de modelo de implantação para passar os usuários do sistema operacional v1 para o sistema operacional v2 em sete dias.
 - **Etapa 1**: Usar restrições de registro para exigir o sistema operacional v2 como a versão mínima para registrar o dispositivo. Isso garante que novos dispositivos de usuários finais estejam em conformidade no momento do registro.
-- **Etapa 2a**: Usar as políticas de proteção de aplicativo do Intune para avisar os usuários que é necessário ter o sistema operacional v2 quando o aplicativo for aberto ou retomado.
+- **Etapa 2a**: Usar políticas de proteção de aplicativo do Intune para avisar os usuários de que é necessário ter o sistema operacional v2 quando o aplicativo for aberto ou retomado.
 - **Etapa 2b**. Usar políticas de conformidade de dispositivo para exigir o sistema operacional v2 como a versão mínima para que um dispositivo esteja em conformidade. Use **Ações** em caso de não conformidade para conceder um período de cortesia de sete dias e enviar aos usuários finais uma notificação por email com o prazo e os requisitos.
   -  Essas políticas informarão aos usuários finais que os dispositivos existentes precisam ser atualizados por email, pelo Portal da Empresa do Intune e quando o aplicativo for aberto para aplicativos habilitados com uma política de proteção do aplicativo.
   - Você pode executar um relatório de conformidade para identificar os usuários que estão fora de conformidade. 
-- **Etapa 3a**: Usar as políticas de proteção de aplicativo do Intune para bloquear os usuários quando um aplicativo for aberto ou retomado se o dispositivo não estiver executando o sistema operacional v2.
-- **Etapa 3b**: Usar as políticas de conformidade do dispositivo para exigir o sistema operacional v2 como a versão mínima para que um dispositivo esteja em conformidade.
+- **Etapa 3a**: Usar políticas de proteção de aplicativo do Intune para bloquear os usuários quando um aplicativo for aberto ou retomado se o dispositivo não estiver executando o sistema operacional v2.
+- **Etapa 3b**: Usar políticas de conformidade de dispositivo para exigir o sistema operacional v2 como a versão mínima para que um dispositivo esteja em conformidade.
   - Essas políticas exigem que os dispositivos sejam atualizados para que possam continuar a acessar os dados organizacionais. Os serviços protegidos são bloqueados quando usados com acesso condicional do dispositivo. Os aplicativos habilitados com uma política de proteção do aplicativo são bloqueados quando são abertos ou quando acessam dados organizacionais.
 
 ## <a name="next-steps"></a>Próximas etapas

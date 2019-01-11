@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816833"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,15 +48,15 @@ Há três locais diferentes para monitorar o status de conformidade:
 
 ![Bloco de Resumo do painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-user-status-summary.png)
 
--   **Usuários**: o número total de usuários da sua empresa que usam um aplicativo associado à política em um contexto de trabalho.
+-   **Usuários**: O número total de usuários em sua empresa que estão usando um aplicativo associado à política em um contexto de trabalho.
 
--   **GERENCIADO POR POLÍTICA**: o número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho.
+-   **GERENCIADO POR POLÍTICA**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho.
 
--   **Nenhuma política**: o número de usuários que estão usando um aplicativo que não é afetado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
+-   **NENHUMA POLÍTICA**: O número de usuários que estão usando um aplicativo que não é afetado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
     > [!NOTE]
     > Se você tem várias políticas por plataforma, um usuário é considerado gerenciado por política quando tem pelo menos uma política atribuída a ele.
 
-- **Usuários sinalizados**: o número de usuários que estão tendo problemas. Atualmente, apenas usuários com dispositivos com jailbreak são relatados em **Usuários sinalizados**.
+- **Usuários sinalizados**: O número de usuários que estão tendo problemas. Atualmente, apenas usuários com dispositivos com jailbreak são relatados em **Usuários sinalizados**.
 
 
 ## <a name="detailed-view"></a>Exibição detalhada
@@ -70,9 +70,9 @@ Você pode pesquisar por um único usuário e verificar o status de conformidade
 
 - Status:
 
-  - **Check-in**: a política foi implantada para o usuário e o aplicativo foi usado no contexto de trabalho pelo menos uma vez.
+  - **Com check-in**: A política foi implantada para o usuário e o aplicativo foi usado no contexto de trabalho pelo menos uma vez.
 
-  - **Check-in não realizado**: a política foi implantada para o usuário, mas o aplicativo ainda não foi usado no contexto de trabalho.
+  - **Sem check-in**: A política foi implantada para o usuário, mas o aplicativo não foi usado no contexto de trabalho desde então.
 
 >[!NOTE]
 > Se os usuários pesquisados não tiverem a política de MAM implantada, você verá uma mensagem informando que o usuário não é direcionado por nenhuma política de MAM.
@@ -81,11 +81,11 @@ Para ver o relatório para um usuário, siga estas etapas:
 
 1.  Para selecionar um usuário, escolha o bloco **Resumo**.
 
-    ![Captura de tela realçando o bloco Resumo na folha de Configurações do gerenciamento de aplicativos móveis do Intune](./media/MAM-reporting-6.png)
+    ![Captura de tela do bloco Resumo do gerenciamento de aplicativo móvel do Intune](./media/MAM-reporting-6.png)
 
 2. No painel **Relatório de aplicativo** que é aberto, escolha **Selecionar usuário** para pesquisar um usuário do Azure Active Directory.
 
-    ![Captura de tela realçando a opção Selecionar usuário no painel Relatório de aplicativo](./media/MAM-reporting-2.png)
+    ![Captura de tela da opção Selecionar usuário no painel Relatório de aplicativo](./media/MAM-reporting-2.png)
 
 3. Selecione um usuário da lista. Você pode ver os detalhes do status de conformidade desse usuário.
 
@@ -98,28 +98,28 @@ Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios
 
 ![Captura de tela realçando dois relatórios disponíveis no painel Configurações](./media/MAM-reporting-7.png)
 
--   **App protection user report (Relatório de usuário da proteção do aplicativo):** descreve as mesmas informações que podem ser encontradas no relatório **Status do usuário** na exibição detalhada acima.
+-   **Relatório de usuário de proteção de aplicativo:** Descreve as mesmas informações que podem ser encontradas no relatório **Status do usuário** na seção Exibição detalhada acima.
 
--   **Relatório de aplicativo de proteção do aplicativo:** fornece dois status de proteção de aplicativo diferentes que os administradores podem selecionar antes de gerar o relatório. Os status podem ser protegidos ou não protegidos.
+-   **Relatório de aplicativo de proteção de aplicativo:** Fornece dois status de proteção de aplicativo diferentes que os administradores podem selecionar antes de gerar o relatório. Os status podem ser protegidos ou não protegidos.
 
-    -   Status do usuário para a atividade de MAM gerenciada (protegido): este relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário.
+    -   Status do usuário para a atividade de MAM gerenciado (Protegido): Esse relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário.
 
         -   Ele mostra todos os aplicativos alvo das políticas de MAM para cada usuário e divide o status de cada aplicativo como com check-in feito nas políticas de MAM ou que eram alvo de uma política de MAM, mas nunca foi feito o check-in do aplicativo.
 <br></br>
-    -   Status do usuário para a atividade de MAM não gerenciada (desprotegido): este relatório descreve a atividade de aplicativos habilitados para MAM atualmente não gerenciados, por usuário. Isso pode acontecer de acordo com os seguintes motivos:
+    -   Status do usuário para a atividade de MAM não gerenciado (Desprotegido): Esse relatório descreve a atividade de aplicativos habilitados para MAM atualmente não gerenciados, por usuário. Isso pode acontecer de acordo com os seguintes motivos:
 
         -   Esses aplicativos estão sendo usados por um usuário ou um aplicativo que no momento não é alvo de uma política de MAM.
 
         -   Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de MAM.
 
-![Captura de tela mostrando uma folha Relatório de aplicativo de um usuário, com uma tabela de detalhes de três aplicativos registrados](./media/MAM-reporting-4.png)
+![Captura de tela da folha Relatório de aplicativo de um usuário com detalhes de três aplicativos](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupamento de tabela
 
 Depois que os dados do **Relatório do usuário de proteção de aplicativo** aparecerem, você poderá agregar os dados fazendo o seguinte:
 
-- **Resultado da validação:** os dados aparecem agrupados pelo status de proteção do aplicativo, que pode ser êxito, aviso ou falha.
-- **Nome do aplicativo:** os dados aparecem agrupados por aplicativos (o nome real do aplicativo) com falha, aviso ou êxito.
+- **Resultado da validação:** Os dados aparecem agrupados pelo status de proteção de aplicativo, que pode ser falha, aviso ou êxito.
+- **Nome do aplicativo:** Os dados aparecem agrupados por aplicativos (o nome real do aplicativo) com falha, aviso ou êxito.
 
 ## <a name="export-app-protection-activities-to-csv"></a>Exportar as atividades de proteção do aplicativo para CSV
 
@@ -129,7 +129,7 @@ Siga estas etapas para gerar o relatório de proteção do aplicativo:
 
 1. No painel Gerenciamento de aplicativo móvel do Intune, escolha **Relatório de proteção de aplicativo**.
 
-    ![Captura de tela realçando o link de download da Proteção de aplicativo no painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-report-csv-2.png)
+    ![Captura de tela do link de download da Proteção de aplicativo](./media/app-protection-report-csv-2.png)
 
 2. Escolha Sim para salvar o relatório, escolha Salvar como e selecione a pasta na qual você deseja salvar o relatório.
 

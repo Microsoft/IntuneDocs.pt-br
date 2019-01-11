@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429705"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067441"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
@@ -61,7 +61,7 @@ Instale a última versão do Power BI Desktop. Você pode fazer o download do Po
 7. Cole a URL personalizada do feed na caixa de URL na janela **Feed OData**.
 8. Selecione **Básico**.
 
-    ![Feed OData](media/reports-create-01-odatafeed.png)
+    ![Feed OData do Intune Data Warehouse de seu locatário](media/reports-create-01-odatafeed.png)
 
 9. Selecione **OK**.
 10. Selecione **Conta da organização** e entre com suas credenciais do Intune.
@@ -70,7 +70,7 @@ Instale a última versão do Power BI Desktop. Você pode fazer o download do Po
 
 11. Selecione **Conectar**. O navegador será aberto e mostrará a lista de tabelas no Data Warehouse do Intune.
 
-    ![O navegador](media/reports-create-02-loadentities.png)
+    ![Captura de tela do Navegador – a lista de tabelas do Data Warehouse](media/reports-create-02-loadentities.png)
 
 12. Selecione as tabelas **Dispositivos** e **ownerTypes**.  Selecione **Carregar**. O Power BI carrega os dados no modelo.
 
@@ -78,7 +78,7 @@ Instale a última versão do Power BI Desktop. Você pode fazer o download do Po
 
 Você pode importar várias tabelas para analisar não apenas os dados em uma única tabela, mas também os dados relacionados entre as tabelas.  O PowerBI tem um recurso chamado **detecção automática** que tenta localizar e criar relações para você. As tabelas no Data Warehouse foram criadas para funcionar com o recurso de detecção automática do PowerBI. No entanto, mesmo se o PowerBI não localizar as relações automaticamente, você ainda poderá gerenciá-las.
 
-![Gerenciar relações](media/reports-create-03-managerelationships.png)
+![Gerenciar relações de dados relacionados em tabelas](media/reports-create-03-managerelationships.png)
 
 1. Selecione **Gerenciar Relações**.
 2. Selecione **Detectar automaticamente...** se o Power BI ainda não tiver detectado as relações.
@@ -99,7 +99,7 @@ Um gráfico de mapa de árvore mostra dados hierárquicos, como caixas dentro de
 
 Agora você tem uma representação visual que mostra a distribuição dos fabricantes de dispositivos na sua organização.
 
-![Mapa de árvore com os dados](media/reports-create-06-treemapwdata.png)
+![Mapa de árvore com os dados – a distribuição dos fabricantes de dispositivos](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Adicionar um filtro
 
@@ -111,7 +111,7 @@ Você pode adicionar um filtro no mapa de árvore para poder responder perguntas
 
    Na tabela Dispositivos, há um campo de dados chamado **OwnerTypeKey** que contém um código que indica se o dispositivo é de propriedade pessoal ou da empresa. Como você deseja mostrar nomes amigáveis nesse filtro, procure a tabela **ownerTypes** e arraste o **ownerTypeName**. Este exemplo mostra como o modelo de dados dá suporte a relações entre as tabelas.
 
-![Mapa de árvore com filtro](media/reports-create-08_ownertype.png)
+![Mapa de árvore com o filtro – dá suporte a relações entre tabelas](media/reports-create-08_ownertype.png)
 
 Agora você tem um filtro interativo que pode ser usado para alternar entre dispositivos de propriedade da empresa e de propriedade pessoal. Use esse filtro para ver como a distribuição é alterada.
 

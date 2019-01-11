@@ -1,6 +1,5 @@
 ---
-title: Criar e implantar a política de proteção do aplicativo da WIP (Proteção de Informações do Windows)
-titlesuffix: Microsoft Intune
+title: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) | Microsoft Intune
 description: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) com o Microsoft Intune
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817306"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -35,15 +34,15 @@ Você precisa compreender alguns conceitos ao adicionar uma política de WIP:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lista de aplicativos permitidos e isentos
 
--   **Aplicativos protegidos**: estes são os aplicativos que precisam atender a esta política.
+-   **Aplicativos protegidos:** Esses são os aplicativos que precisam seguir esta política.
 
--   **Aplicativos isentos**: estes aplicativos são isentos desta política e podem acessar dados corporativos sem restrições.
+-   **Aplicativos isentos:** Esses aplicativos são isentos desta política e podem acessar dados corporativos sem restrições.
 
 ### <a name="types-of-apps"></a>Tipos de aplicativos
 
--   **Aplicativos recomendados:** uma lista pré-populada de aplicativos (principalmente do Microsoft Office) que pode ser importada facilmente para a política.
--   **Aplicativos da loja:** é possível adicionar qualquer aplicativo da Windows Store à política.
--   **Aplicativos da área de trabalho do Windows:** é possível adicionar qualquer aplicativo tradicional de área de trabalho do Windows à política (por exemplo, .exe, .dll etc.)
+-   **Aplicativos recomendados:** Uma lista pré-populada de aplicativos (principalmente do Microsoft Office) que pode ser importada com facilidade para a política.
+-   **Aplicativos da loja:** Adicione qualquer aplicativo da Windows Store à política.
+-   **Aplicativos da área de trabalho do Windows:** Adicione aplicativos tradicionais da área de trabalho do Windows à política (por exemplo, .exe e .dll)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -75,10 +74,10 @@ Depois de configurar o Intune em sua organização, você poderá criar uma pol�
 4. Selecione **Políticas de proteção de aplicativos** na folha **Aplicativos Clientes**.
 5. Selecione **Adicionar uma política** para exibir a folha **Adicionar uma política**.
 6. Adicione os seguintes valores:
-    - **Nome:** digite um nome (obrigatório) para a nova política.
-    - **Descrição:** (opcional) digite uma descrição.
-    - **Plataforma:** escolha **Windows 10** como uma plataforma com suporte para a política de proteção do aplicativo.
-    - **Estado do registro:** escolha **Sem registro** como o estado de registro para a política.
+    - **Nome:** Digite um nome (obrigatório) para a nova política.
+    - **Descrição:** (Opcional) Digite uma descrição.
+    - **Plataforma:** Escolha **Windows 10** como uma plataforma compatível com a política de proteção de aplicativo.
+    - **Estado de registro:** Escolha **Sem registro** como o estado de registro da política.
 7.  Escolha **Criar**. A política é criada e aparece na tabela na folha **Políticas de proteção de aplicativo**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Como adicionar aplicativos recomendados à sua lista de aplicativos protegidos
@@ -149,7 +148,7 @@ Depois de desativar o WIP, é feita uma tentativa de descriptografar arquivos ma
 
 1.  Na folha **Política de aplicativo**, escolha o nome da política e, em seguida, escolha **Configurações necessárias**.
 
-    ![Captura de tela do modo de aprendizado](./media/learning-mode-sc1.png)
+    ![Captura de tela do painel Modo de Aprendizado](./media/learning-mode-sc1.png)
 
 1.  Selecione uma configuração e, em seguida, escolha **Salvar**.
 

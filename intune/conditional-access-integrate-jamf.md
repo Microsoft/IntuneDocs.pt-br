@@ -1,6 +1,5 @@
 ---
-title: Integrar o Jamf Pro ao Microsoft Intune para fins de conformidade
-titlesuffix: ''
+title: Integrar o Jamf Pro ao Microsoft Intune para fins de conformidade | Microsoft Intune
 description: Use políticas de conformidade do Microsoft Intune com acesso condicional do Azure Active Directory para ajudar a proteger dispositivos gerenciados pelo Jamf.
 keywords: ''
 author: brenduns
@@ -16,16 +15,16 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816813"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro ao Intune para fins de conformidade
 
-Aplica-se a: Intune no Portal do Azure
+Aplica-se a: Intune no portal do Azure
 
 Se sua organização usar o [Jamf Pro](https://www.jamf.com) para gerenciar os Macs de seus usuários finais, use as políticas de conformidade do Microsoft Intune com acesso condicional do Azure Active Directory para garantir que os dispositivos em sua organização estejam em conformidade.
 

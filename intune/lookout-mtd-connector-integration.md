@@ -1,12 +1,11 @@
 ---
-title: Configurar a integração de bloqueio com o Microsoft Intune
-titlesuffix: ''
+title: Configurar a integração do Lookout ao Microsoft Intune | Microsoft Intune
 description: Saiba como integrar o Intune com a Defesa contra Ameaças Móveis do Lookout para controlar o acesso de dispositivos móveis aos recursos corporativos.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816864"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a integração da Defesa contra Ameaças Móveis do Lookout com o Intune
 
@@ -56,8 +55,8 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 2. Ao escolher o nome de sua assinatura, a URL resultante incluirá a ID da assinatura.  Se você tiver problemas para localizar sua ID da assinatura, consulte este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter dicas sobre como encontrar sua ID de assinatura.
 
 3. Encontre sua ID do Grupo do Azure AD. O console do Lookout dá suporte a 2 níveis de acesso:  
-   * **Acesso completo:** o administrador do Azure AD pode criar um grupo de usuários com Acesso completo e, opcionalmente, criar um grupo de usuários com Acesso restrito.  Somente os usuários nesses grupos poderão fazer logon no **console do Lookout**.
-   * **Acesso restrito:** os usuários neste grupo não terão acesso a várias configurações e módulos relacionados ao registro do console do Lookout e terão acesso somente leitura ao módulo de **Política de segurança** do console do Lookout.  
+   * **Acesso completo:** O administrador do Azure AD pode criar um grupo de usuários que têm Acesso Completo e, opcionalmente, criar um grupo de usuários que terá Acesso Restrito.  Somente os usuários nesses grupos poderão fazer logon no **console do Lookout**.
+   * **Acesso Restrito:** Os usuários nesse grupo não terão acesso a vários módulos relacionados à configuração e ao registro do console do Lookout, tendo acesso somente leitura ao módulo **Política de Segurança** do console do Lookout.  
 
      > [!TIP] 
      > Para obter mais detalhes sobre as permissões, leia [este artigo](https://personal.support.lookout.com/hc/articles/114094105653) no site do Lookout.
@@ -77,11 +76,11 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 
 3. No [Console do Lookout](https://aad.lookout.com), no módulo **Sistema**, escolha a guia **Conectores** e selecione **Intune**.
 
-   ![captura de tela do console do Lookout com a guia Conectores aberta e a opção Intune realçada](./media/lookout_mtp_setup-intune-connector.png)
+   ![Imagem do console do Lookout com a opção Intune na guia Conectores](./media/lookout_mtp_setup-intune-connector.png)
 
 4. Acesse **Conectores** > **Configurações de Conexão** e especifique a **Frequência de Pulsação** em minutos.
 
-   ![captura de tela da guia Configurações de conexão mostrando a frequência de pulsação configurada](./media/lookout-mtp-connection-settings.png)
+   ![Imagem de guia Configurações de conexão com a frequência de pulsação configurada](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Configurar grupos de registro
 1. Como prática recomendada, crie um grupo de segurança do Azure AD no [Portal de Gerenciamento do Azure AD](https://manage.windowsazure.com) que contém um pequeno número de usuários para testar a integração do Lookout.
@@ -95,10 +94,10 @@ Use as etapas a seguir para coletar as informações de que precisa para fornece
 
     >[!IMPORTANT]
     > O **Nome de Exibição** diferencia maiúsculas de minúsculas, conforme mostrado nas **Propriedades** do grupo de segurança no Portal do Azure. Conforme é mostrado na imagem abaixo, o **Nome de Exibição** do grupo de segurança apresenta letras minúsculas concatenadas, enquanto o título apresenta todas as letras minúsculas. No console do Lookout, faça a correspondência de maiúsculas e minúsculas do **Nome de Exibição** do grupo de segurança.
-    >![captura de tela do portal do Azure, serviço do Azure Active Directory, página de propriedades](./media/aad-group-display-name.png)
+    >![Imagem do portal do Azure, serviço Azure Active Directory, página de propriedades](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >A melhor prática é deixar o padrão (5 minutos) para o incremento de tempo para verificar se há novos dispositivos. Limitações atuais, **O Lookout não consegue validar os nomes de exibição do grupo:** Verifique se o campo **NOME DE EXIBIÇÃO** no Portal do Azure corresponde exatamente ao grupo de segurança do Azure AD. **Não há suporte para a criação de grupos aninhados:** os grupos de segurança do Azure AD usados no Lookout devem conter somente usuários. Eles não podem conter outros grupos.
+    >A melhor prática é deixar o padrão (5 minutos) para o incremento de tempo para verificar se há novos dispositivos. Limitações atuais: **o Lookout não pode validar nomes de exibição de grupos:** Verifique se o campo **NOME DE EXIBIÇÃO** no Portal do Azure corresponde exatamente ao grupo de segurança do Azure AD. **Não há suporte para a criação de grupos de aninhamento:**  Os grupos de segurança do Azure AD usados no Lookout devem conter somente usuários. Eles não podem conter outros grupos.
 
 3.  Depois que um grupo for adicionado, na próxima vez que um usuário abrir o aplicativo Lookout for Work em seu dispositivo com suporte, o dispositivo estará ativado no Lookout.
 
@@ -115,7 +114,7 @@ Na opção **Gerenciamento de Erros**, insira o endereço de email que deve rece
 ## <a name="configure-enrollment-settings"></a>Definir configurações de registro
 No módulo **Sistema**, na página **Conectores**, especifique o número de dias antes que um dispositivo seja considerado desconectado.  Dispositivos desconectados são considerados não compatíveis e serão impedidos de acessar seus aplicativos corporativos com base nas políticas de acesso condicional do Intune. Você pode especificar valores entre 1 e 90 dias.
 
-![Configurações de registro do Lookout](./media/lookout-console-enrollment-settings.png)
+![Configurações de registro do Lookout no módulo Sistema](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>Configurar notificações por email
 Se desejar receber alertas de ameaças por email, conecte-se ao [console do Lookout](https://aad.lookout.com) com a conta de usuário que deverá receber as notificações. Na guia **Preferências** do módulo **Sistema**, escolha os níveis de ameaças que devem emitir notificações e defina-os como **ATIVADO**. Salve as alterações.
@@ -123,7 +122,7 @@ Se desejar receber alertas de ameaças por email, conecte-se ao [console do Look
 ![captura de tela da página Preferências com a conta de usuário exibida](./media/lookout-mtp-email-notifications.png) Se não quiser receber notificações por email, defina as notificações como **DESATIVADO** e salve as alterações.
 
 ### <a name="configure-threat-classification"></a>Configurar a classificação de ameaças
-A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/articles/114094130693) têm níveis de risco padrão associados a elas. Elas podem ser alteradas a qualquer momento de acordo com os requisitos de sua empresa.
+A Defesa contra Ameaças Móveis do Lookout classifica ameaças móveis de vários tipos. As [classificações de ameaças do Lookout](https://personal.support.lookout.com/hc/articles/114094130693) têm níveis de risco padrão associados a elas. Elas podem ser alteradas a qualquer momento de acordo com os requisitos de sua empresa.
 
 ![captura de tela da página de política mostrando ameaças e classificações](./media/lookout-mtp-threat-classification.png)
 

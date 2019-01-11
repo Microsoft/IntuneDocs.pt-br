@@ -1,5 +1,5 @@
 ---
-title: Examinar logs da política de proteção do aplicativo
+title: Examinar os logs da política de proteção de aplicativo | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Saiba mais sobre as configurações que você pode examinar nos logs de proteção do aplicativo.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817204"
 ---
 # <a name="review-client-app-protection-logs"></a>Examine os logs de proteção do aplicativo de cliente
 
@@ -39,8 +39,8 @@ A tabela a seguir lista o nome e uma explicação das configurações registrada
 
 | Nome                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Configuração no Portal de Gerenciamento de Aplicativos Móveis do Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Cortesia Offline<br>Observação: esse é período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente, se o dispositivo estiver offline.             |
-| AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso - Tempo limite.<br>Observação: esse é período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente após a inicialização do aplicativo, se o dispositivo estiver offline. |
+| AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Cortesia Offline<br>Observação: Esse é período antes de os requisitos de acesso do aplicativo serem verificados novamente, caso o dispositivo esteja offline.             |
+| AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso - Tempo limite.<br>Observação: Esse é o período antes de os requisitos de acesso do aplicativo serem verificados novamente após a inicialização do aplicativo caso o dispositivo esteja online. |
 | AppPinDisabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Nenhum aplicativo<br>1 = Aplicativos gerenciados<br>2 = Qualquer aplicativo.                                                                                                                                                                                                                                                              | [Realocação de Dados] Permitir que este aplicativo receba dados de outros aplicativos.                                                                                                                        |
 | AppSharingToLevel           | 0 = Nenhum aplicativo<br>1 = Aplicativos gerenciados<br>2 = Qualquer aplicativo.                                                                                                                                                                                                                                                              | [Realocação de Dados] Permitir que este aplicativo transfira dados para outros aplicativos.                                                                                                                         |

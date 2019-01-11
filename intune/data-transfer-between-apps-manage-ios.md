@@ -1,6 +1,5 @@
 ---
-title: Gerenciar a transferência de dados entre aplicativos iOS
-titlesuffix: Microsoft Intune
+title: Gerenciar a transferência de dados entre aplicativos do iOS | Microsoft Intune
 description: Entenda como usar políticas de gerenciamento de aplicativo móvel no Microsoft Intune para gerenciar transferências de dados entre aplicativos.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bbd0272b37b56f9f9e66cdf00ddc89a827f3c875
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816966"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 
@@ -36,11 +35,11 @@ O recurso **Abrir em gerenciamento** para dispositivos iOS pode limitar as trans
 ##  <a name="use-app-protection-with-ios-apps"></a>Usar a proteção do aplicativo com aplicativos iOS
 Use as políticas de proteção de aplicativo com o recurso **Abrir no gerenciamento** do iOS para proteger os dados da empresa das seguintes maneiras:
 
--   **Dispositivos do funcionário não gerenciados por nenhuma solução de MDM:** defina as configurações de política de proteção de aplicativo como **Permitir que o aplicativo transfira dados somente para aplicativos Gerenciados por Política**. O comportamento de *Abrir em* em um aplicativo Gerenciado por Política apresentará apenas outros aplicativos Gerenciados por Política como opção de compartilhamento. Se um usuário tentar enviar um arquivo protegido por política como um anexo no OneDrive no aplicativo de email nativo, esse arquivo ficará ilegível.
+-   **Dispositivos de funcionários não gerenciados por nenhuma solução de MDM:** Defina as configurações da política de proteção de aplicativo como **Permitir que o aplicativo transfira dados somente para aplicativos Gerenciados por Política**. O comportamento de *Abrir em* em um aplicativo Gerenciado por Política apresentará apenas outros aplicativos Gerenciados por Política como opção de compartilhamento. Se um usuário tentar enviar um arquivo protegido por política como um anexo no OneDrive no aplicativo de email nativo, esse arquivo ficará ilegível.
 
--   **Dispositivos gerenciados pelo Intune:** para dispositivos registrados no Intune, transferência de dados entre aplicativos com as políticas de proteção de aplicativo e outros aplicativos do iOS gerenciado implantados por meio do Intune é permitida automaticamente. Para especificar como você deseja permitir a transferência de dados para outros aplicativos, habilite **Permitir que o aplicativo transfira dados para outros aplicativos** e escolha o nível preferencial de compartilhamento. Para especificar como você deseja permitir que um aplicativo receba dados de outros aplicativos, habilite **Permitir que o aplicativo receba dados de outros aplicativos** e escolha o nível preferencial de recebimento de dados. Você pode usar o recurso **Aberto em gerenciamento** para controlar a transferência de dados entre aplicativos que são implantados pelo Intune. Para obter mais informações sobre como receber e compartilhar de dados de aplicativo, confira [Configurações de realocação de dados](app-protection-policy-settings-ios.md#data-protection-settings).   
+-   **Dispositivos gerenciados pelo Intune:** Para os dispositivos registrados no Intune, a transferência de dados entre aplicativos com políticas de proteção de aplicativo e outros aplicativos do iOS gerenciados implantados por meio do Intune é permitida automaticamente. Para especificar como você deseja permitir a transferência de dados para outros aplicativos, habilite **Permitir que o aplicativo transfira dados para outros aplicativos** e escolha o nível preferencial de compartilhamento. Para especificar como você deseja permitir que um aplicativo receba dados de outros aplicativos, habilite **Permitir que o aplicativo receba dados de outros aplicativos** e escolha o nível preferencial de recebimento de dados. Você pode usar o recurso **Aberto em gerenciamento** para controlar a transferência de dados entre aplicativos que são implantados pelo Intune. Para obter mais informações sobre como receber e compartilhar de dados de aplicativo, confira [Configurações de realocação de dados](app-protection-policy-settings-ios.md#data-protection-settings).   
 
--   **Dispositivos gerenciados por uma solução MDM de terceiros:** você pode restringir a transferência de dados somente para aplicativos gerenciados usando o recurso **Aberto em gerenciamento** do iOS.
+-   **Dispositivos gerenciados por uma solução de MDM de terceiros:** Restrinja a transferência de dados somente a aplicativos gerenciados usando o recurso **Abrir no gerenciamento** do iOS.
 Para verificar se os aplicativos implantados usando a solução de MDM de terceiros também estão associados às políticas de proteção de aplicativo do Intune, defina a configuração de UPN do usuário conforme descrito na seção a seguir, [Definir configuração de UPN do usuário](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Quando os aplicativos são implantados com a configuração de UPN do usuário, as políticas de proteção de aplicativo são aplicadas ao aplicativo quando o usuário entra usando sua conta corporativa.
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Definir configuração de UPN do usuário para Microsoft Intune ou EMM de terceiros
@@ -59,7 +58,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 4.  Implante a política **Abrir no gerenciamento** usando o Intune ou o provedor de MDM de terceiros para dispositivos registrados.
 
 
-### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Exemplo 1: experiência de Administrador no Intune ou no console do MDM de terceiros
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Exemplo 1: Experiência de administrador no Intune ou em um console de MDM de terceiros
 
 1. Vá para o console de administração do Intune ou do seu provedor de MDM de terceiros. Vá para a seção do console em que você implanta as definições de configuração de aplicativo para dispositivos iOS registrados.
 
@@ -77,7 +76,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Cadeia de caracteres | %upn% |
 
 
-### <a name="example-2-end-user-experience"></a>Exemplo 2: experiência do usuário final
+### <a name="example-2-end-user-experience"></a>Exemplo 2: Experiência do usuário final
 
 1.  O usuário instala o aplicativo Microsoft Word em um dispositivo.
 
