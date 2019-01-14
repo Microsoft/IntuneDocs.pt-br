@@ -130,6 +130,7 @@
 ### [O que acontece se você redefinir seu dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Desligar a coleta de dados de uso da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sincronizar o dispositivo manualmente](sync-your-device-manually-windows.md)
+### [Obter ajuda e suporte](help-support-windows-cpapp.md)
 
 ### [Solucionar problemas comuns para Windows](troubleshoot-your-device-windows.md)
 #### [Resolver as restrições de ponto de acesso](resolve-access-point-restrictions.md)
