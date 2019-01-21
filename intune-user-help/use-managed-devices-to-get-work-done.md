@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150659"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203138"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos gerenciados para realizar o trabalho
-O Microsoft Intune é um software que permite às organizações gerenciar dispositivos (como smartphones, tablets e computadores), aplicativos e outros recursos corporativos como email. Isso concede aos funcionários acesso às suas informações de trabalho de praticamente qualquer lugar em quase qualquer dispositivo, ajudando a proteger informações corporativas.
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>Usar dispositivos gerenciados para acessar recursos corporativos ou de estudante
+O Microsoft Intune é um sistema de gerenciamento de dispositivos que permite às organizações gerenciar o acesso a dispositivos, aplicativos e emails. O gerenciamento de dispositivos permite que você, outros funcionários e alunos, acessem as informações de trabalho de praticamente qualquer lugar, em quase todos os dispositivos. Mesmo quando você está trabalhando remotamente, você e as informações de sua organização permanecem seguras.
 
-Quando você registra um dispositivo de gerenciamento com o Intune, o departamento de TI pode gerenciar tais recursos de trabalho ou escola, mantendo o dispositivo mais seguro, dando a você e a seus funcionários a liberdade de usar seu dispositivo preferencial para realizar seu trabalho. Um dos principais meios de fazer isso é registrar o dispositivo para o gerenciamento por meio do Portal da Empresa.
+O Microsoft Intune é o software usado por sua empresa para configurar os requisitos de segurança e de dispositivos. Quando você estiver pronto para gerenciar seu dispositivo, você usará o aplicativo Portal da Empresa do Intune. Com esse aplicativo, você poderá usar seu dispositivo preferido para acessar recursos corporativos ou de estudante. 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Quais informações minha empresa poderá ver quando eu registrar meu dispositivo no Intune?
-O suporte da sua empresa pode ver informações relevantes ao trabalho, mas não suas informações pessoais. Isso é especialmente importante para saber se você está registrando um dispositivo pessoal para uso no trabalho. Detalhamos o que eles [podem ou não ver no próximo artigo, na ajuda do usuário](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>Quais informações minha empresa poderá ver quando eu gerenciar meu dispositivo?
+Depois que você estiver configurado no Portal da Empresa, o suporte de sua empresa só poderá ver informações relevantes ao trabalho. Ela não poderá ver suas informações pessoais. Isso é especialmente importante para saber se você está registrando um dispositivo pessoal para uso no trabalho. Saiba exatamente o que ela [pode e não pode ver no próximo artigo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-## <a name="how-do-i-get-the-company-portal"></a>Como fazer para obter o Portal da Empresa?
-Você pode obter o Portal da Empresa de duas diferentes maneiras:
+## <a name="how-do-i-get-company-portal"></a>Como fazer para obter o Portal da Empresa?
+Obtenha o Portal da Empresa:
 
-- Instalando o aplicativo do Portal da Empresa no seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o suporte de sua empresa também pode instalá-lo para você.
-- Acessando o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) que o suporte da empresa configurou.
+- Instalando o aplicativo Portal da Empresa em seu dispositivo. Geralmente, você obtém o aplicativo do Portal da Empresa na loja de aplicativos do dispositivo, mas o suporte de sua empresa também pode instalá-lo para você.
+- Acessando o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) configurado pelo suporte de sua empresa.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre o aplicativo e o site?
 Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. Algumas tarefas que você pode fazer são:

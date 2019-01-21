@@ -1,12 +1,12 @@
 ---
-title: Atribuir aplicativos a dispositivos de perfil de trabalho Android
+title: Atribuir aplicativos do Google Play Gerenciado a dispositivos empresariais Android
 titlesuffix: Microsoft Intune
-description: Entenda como sincronizar e atribuir aplicativos a dispositivos de perfil de trabalho Android por meio da Google Play Store gerenciada.
+description: Entenda como sincronizar e atribuir aplicativos a dispositivos empresariais Android por meio da Google Play Store Gerenciada.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239567"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicativos a dispositivos de perfil de trabalho Android com o Intune
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Atribuir aplicativos do Google Play Gerenciado a dispositivos empresariais Android com o Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Android Enterprise é um programa para dispositivos de perfil de trabalho Android e dispositivos de quiosque. Para dispositivos de perfil de trabalho Android, o Android Enterprise é um conjunto de recursos e serviços que separam os aplicativos e dados pessoais dos aplicativos e dados de trabalho. O Android Enterprise oferece privacidade e opções de gerenciamento adicionais quando as pessoas usam seus dispositivos Android para trabalhar. O Intune ajuda você a implantar aplicativos e configurações em dispositivos de perfil de trabalho Android para garantir que suas informações pessoais e de trabalho fiquem separadas. Todos os aplicativos instalados nos dispositivos de perfil de trabalho Android vêm da Google Play Store gerenciada. A maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
+O Android Enterprise é um programa para dispositivos de perfil de trabalho do Android, dispositivos de quiosque/dedicados e dispositivos totalmente gerenciados. Para dispositivos de perfil de trabalho Android, o Android Enterprise é um conjunto de recursos e serviços que separam os aplicativos e dados pessoais dos aplicativos e dados de trabalho. O Android Enterprise oferece privacidade e opções de gerenciamento adicionais quando as pessoas usam seus dispositivos Android para trabalhar. O Intune ajuda você a implantar aplicativos e configurações em dispositivos de perfil de trabalho Android para garantir que suas informações pessoais e de trabalho fiquem separadas. Todos os aplicativos instalados nos dispositivos de perfil de trabalho Android vêm da Google Play Store gerenciada. A maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Faça logon na Store, procure os aplicativos desejados e aprove-os. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
 
 Além disso, se você criou seus próprios aplicativos LOB (linha de negócios), poderá atribuí-los da seguinte maneira:
 - Inscreva-se em uma conta de Desenvolvedor do Google que permite publicar aplicativos em uma área particular da Google Play Store.

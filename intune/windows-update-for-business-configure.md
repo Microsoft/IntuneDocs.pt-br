@@ -2,10 +2,10 @@
 title: Configurar o Windows Update para Empresas no Microsoft Intune – Azure | Microsoft Docs
 description: Atualize as configurações de Atualização de Software em um perfil para criar um anel de atualização, examine a conformidade e pause as atualizações no Windows Update para Empresas usando o Microsoft Intune em dispositivos Windows 10.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112758"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297376"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
 
@@ -76,16 +76,12 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 2. Selecione **Atualizações de software** > **Anéis de Atualização do Windows 10** > **Criar**.
 3. Insira um nome, uma descrição (opcional) e, em seguida, escolha **configurar**.
-4. Em **Configurações**, insira as seguintes informações:
+4. Em **Configurações**, insira as seguintes informações:  
 
+   **Configurações de Atualização**  
    - **Canal de manutenção**: defina o canal pelo qual o dispositivo recebe atualizações do Windows.
    - **Atualizações de produto da Microsoft**: escolha examinar se há atualizações de aplicativos no Microsoft Update.
    - **Drivers do Windows**: escolha se deseja excluir os drivers do Windows Update durante as atualizações.
-   - **Comportamento de atualização automática**: escolha como as atualizações automáticas são instaladas e quando reiniciar. Para obter detalhes, consulte [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Frequência de comportamento automático**: se você selecionar **Instalar e reiniciar automaticamente no horário agendado** como o comportamento de atualização, essa configuração será mostrada. Use essa configuração para agendar quando as atualizações serão instaladas, incluindo o dia, a semana e a hora.
-
-   - **Reiniciar verificações**: Habilitado por padrão. Quando você reinicia um dispositivo, ocorrem algumas verificações, incluindo a verificação de usuários ativos, níveis de bateria, jogos em execução e muito mais. Para ignorar essas verificações ao reiniciar um dispositivo, selecione **Ignorar**.
-
    - **Período de adiamento da atualização de qualidade (dias)**: insira o número de dias pelos quais as atualizações de qualidade serão adiadas. Você pode adiar o recebimento dessas Atualizações de Qualidade por até 30 dias da liberação.
 
      Atualizações de Qualidade normalmente são correções e aprimoramentos para a funcionalidade existente do Windows e são publicadas na segunda terça-feira de cada mês. As atualizações de qualidade por meio do Windows Update para Empresas só recebem essas atualizações (a versão 'B'), embora outras atualizações possam ser liberadas a qualquer momento pela Microsoft. Você pode definir se e por quanto tempo adiará o recebimento das Atualizações de Qualidade depois que estiverem disponíveis no Windows Update. Para obter mais informações, confira [Implantar atualizações usando o Windows Update para Empresas](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
@@ -96,9 +92,21 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 
      Por exemplo: **Se o canal de manutenção estiver definido como Canal Semestral (direcionado) e o período de adiamento for de 30 dias**: Digamos que a Atualização do Recurso X foi disponibilizada publicamente no Windows Update como um Canal Semestral (direcionado) em janeiro. O dispositivo não receberá a atualização até fevereiro – 30 dias depois.
 
-     **Se o canal de manutenção estiver definido como Canal Semestral e o período de adiamento for de 30 dias**: Digamos que a Atualização do Recurso X foi disponibilizada publicamente no Windows Update como um Canal Semestral (direcionado) em janeiro. Quatro meses depois, em abril, a Atualização do Recurso X será lançada para o Canal Semestral. O dispositivo recebe a atualização de recursos 30 dias após esta liberação de Canal Semestral e é atualizado em maio.
+     **Se o canal de manutenção estiver definido como Canal Semestral e o período de adiamento for de 30 dias**: Digamos que a Atualização do Recurso X foi disponibilizada publicamente no Windows Update como um Canal Semestral (direcionado) em janeiro. Quatro meses depois, em abril, a Atualização do Recurso X será lançada para o Canal Semestral. O dispositivo recebe a atualização de recursos 30 dias após esta liberação de Canal Semestral e é atualizado em maio.  
 
-   - **Modo de download de otimização de entrega**: escolha o método pelo qual os dispositivos baixarão as atualizações do Windows. Para obter detalhes, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   **Configurações da experiência do usuário**
+   
+   - **Comportamento de atualização automática**: escolha como as atualizações automáticas são instaladas e quando reiniciar. Para obter detalhes, consulte [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+
+     Uma configuração *Redefinir para padrão* restaurará as configurações originais de atualização automática em computadores Windows 10 que executam a *Atualização de outubro de 2018* ou posterior.  
+
+     - **Frequência de comportamento automático**: se você selecionar **Instalar e reiniciar automaticamente no horário agendado** como o comportamento de atualização, essa configuração será mostrada. Use essa configuração para agendar quando as atualizações serão instaladas, incluindo o dia, a semana e a hora.
+
+   - **Reiniciar verificações**: Habilitado por padrão. Quando você reinicia um dispositivo, ocorrem algumas verificações, incluindo a verificação de usuários ativos, níveis de bateria, jogos em execução e muito mais. Para ignorar essas verificações ao reiniciar um dispositivo, selecione **Ignorar**.
+
+   - **Impedir que o usuário pause as atualizações do Windows**: Permitido por padrão. Use essa configuração para impedir ou permitir que os usuários pausem uma instalação de atualização nas *Configurações* de seus computadores. 
+      
+   - **Modo de download de otimização de entrega**: A otimização de entrega não está mais configurada como parte de um Grupo de Atualização do Windows 10 em Atualizações de Software. Agora, a Otimização de Entrega é definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis no console. Remova essas configurações anteriores editando-as para *Não configurado*, mas, de outro modo, elas não podem ser modificadas. Para evitar conflitos entre políticas novas e antigas, confira [Mover de grupos de atualização existentes para a Otimização de Entrega](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) e, em seguida, mova as configurações para um perfil de Otimização de Entrega. 
 
 5. Ao terminar, selecione **OK**. Em **Criar anel de atualização**, selecione **Criar**.
 

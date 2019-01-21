@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817153"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122580"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são maneiras comuns de usar o acesso condicional com o Intune?
 
@@ -39,15 +39,14 @@ O Intune e o Azure Active Directory trabalham juntos para garantir que somente d
 O Intune fornece funcionalidades de política de conformidade do dispositivo que avaliam o status de conformidade dos dispositivos. O status da conformidade é relatado ao Azure Active Directory, que usa isso para impor a política de acesso condicional criada no Azure Active Directory quando o usuário tenta acessar os recursos da empresa.
 
 As políticas de acesso condicional baseado no dispositivo para o Exchange Online e outros produtos do Office 365 são configuradas por meio do [Portal do Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
-
--   Saiba mais sobre o [acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+-   Saiba mais sobre [Exigir dispositivos gerenciados com o acesso condicional no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices).
 
 -   Saiba mais sobre [Conformidade de dispositivo do Intune](device-compliance.md).
 
--   Saiba mais sobre a [proteção de email, o Office 365 e outros serviços usando o acesso condicional com o Intune](app-based-conditional-access-intune.md).
+-   Saiba mais sobre [Navegadores compatíveis com o acesso condicional no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
 > [!NOTE]
-> Em dispositivos Android, ao habilitar o Acesso Baseado em Dispositivo para o Sharepoint Online, os usuários precisam habilitar a opção **Habilitar o Acesso do Navegador** no dispositivo registrado, da seguinte maneira:
+> Em dispositivos Android, quando você habilita o Acesso Baseado em Dispositivo para o SharePoint Online ou para acesso baseado em Navegador ao Exchange Online, os usuários precisam habilitar a opção **Habilitar o Acesso do Navegador** no dispositivo registrado, da seguinte maneira:
 > 1. Inicie o **aplicativo do Portal da Empresa**.
 > 2. Vá para a página **Configurações** por meio dos três pontos (...) ou do botão de menu do hardware.
 > 3. Pressione o botão **Habilitar o Acesso do Navegador** . 
@@ -146,7 +145,9 @@ O acesso condicional para computadores fornece recursos semelhantes aos disponí
 
 #### <a name="bring-your-own-device-byod"></a>BYOD (Traga seu próprio dispositivo)
 
--   **Ingresso no local de trabalho e gerenciamento do Intune:** o usuário pode ingressar seus dispositivos pessoais para acessar recursos e serviços corporativos. Use o Ingresso no local de trabalho e registre dispositivos no Intune para receber políticas no dispositivo, que também é outra opção para avaliar os critérios de acesso condicional.
+-   **Ingresso no local de trabalho e gerenciamento do Intune:** o usuário pode ingressar seus dispositivos pessoais para acessar recursos e serviços corporativos. Use o Ingresso no local de trabalho e registre dispositivos no MDM do Intune para receber políticas no dispositivo, que também é outra opção para avaliar os critérios de acesso condicional.
+
+Saiba mais sobre [Gerenciamento de dispositivos no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 ## <a name="app-based-conditional-access"></a>Acesso condicional baseado no aplicativo
 

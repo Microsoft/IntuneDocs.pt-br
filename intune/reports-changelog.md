@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642754"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297223"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manter-se atualizado sobre as atualizações para o Intune Data Warehouse.
+
+## <a name="1812"></a>1812 
+_Lançado em dezembro de 2018_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Coleção de Atividades de Registro lançada como v1.0 
+
+A coleção de Atividades de Registro agora está disponível na v1.0. Use essa coleção para entender o volume de falhas de registro e as tendências em seu ambiente. Para obter mais informações, confira [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) e [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## <a name="1808"></a>1808
 _Lançado em agosto de 2018_
@@ -36,9 +43,9 @@ _Lançado em agosto de 2018_
 
 Agora é possível usar a versão v1.0 do Intune Data Warehouse, definindo o parâmetro de consulta `api-version=v1.0`. As atualizações em coleções no Data Warehouse são suplementares por natureza e não interrompem cenários existentes.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Coleção Falha de Registro liberada para a versão Beta
+### <a name="enrollment-activities-collection-released-to-beta"></a>Coleção de Atividades de Registro lançada como beta
 
-A nova coleção `Enrollment Failure` foi lançada como beta. Você pode usar essa coleção para entender a situação do seu registro, exibindo as falhas mais comuns. 
+A nova coleção `Enrollment Activities` foi lançada como beta. Você pode usar essa coleção para entender a situação do seu registro, exibindo as falhas mais comuns. 
 
 
 ## <a name="1805"></a>1805

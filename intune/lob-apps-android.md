@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210815"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Android ao Microsoft Intune
 
@@ -31,6 +31,9 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
 
 > [!Note]
 > Para saber mais sobre aplicativos de LOB na Google Play Store gerenciada, confira [Trabalhando com aplicativos de linha de negócios da Google Play Store gerenciada](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
+
+> [!Note]
+> Para dispositivos Android for Work, siga [este artigo](https://docs.microsoft.com/intune/apps-add-android-for-work). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar o arquivo de instalação do software
 
@@ -57,11 +60,11 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
     - **Editor**: Insira o nome do editor do aplicativo.
     - **Sistema operacional mínimo**: Na lista, escolha a versão mínima do sistema operacional em que o aplicativo pode ser instalado. Se você atribuir o aplicativo a um dispositivo com um sistema operacional mais antigo, ele não será instalado.
     - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
-    - **Exibir isso como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
+    - **Exibir como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
     - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
     - **URL de privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
-    - **Desenvolvedor**: Opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietários**: Opcionalmente, insira um nome para o proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
+    - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
+    - **Proprietário**: Opcionalmente, Insira o nome do proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
     - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
     - **Logotipo**: Carregue um ícone associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3. Quando tiver terminado, selecione **OK**.

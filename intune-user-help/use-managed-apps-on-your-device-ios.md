@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147495"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203256"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicativos gerenciados no seu dispositivo iOS
 
@@ -34,7 +34,7 @@ Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensage
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?
+## <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?  
 Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
 -   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou o suporte de sua empresa pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Registrar o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
@@ -43,7 +43,16 @@ Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
 Às vezes, o suporte de sua empresa pode comprar várias licenças para um aplicativo que você instala. Caso veja uma mensagem para aceitar o contrato do Apple Volume Purchase Program, isso é normal e você pode aceitá-lo. Caso não o aceite, você não poderá instalar o aplicativo.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>O que o suporte da minha empresa pode gerenciar em um aplicativo?
+## <a name="available-apps"></a>Aplicativos disponíveis   
+ Sua organização seleciona aplicativos que são apropriados e úteis para você no trabalho ou na escola. Esses aplicativos são os únicos que você encontrará no Portal da Empresa.   
+
+ Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se estiver usando o aplicativo Portal da Empresa para iOS, você terá acesso aos aplicativos do iOS, mas não aos aplicativos do Android.   
+
+## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para uso corporativo ou de estudante   
+ Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Encontre os detalhes de contato da **Assistência técnica** na guia **Suporte** do aplicativo Portal da Empresa. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>O que o suporte da minha empresa pode gerenciar em um aplicativo?  
 Aqui estão alguns exemplos de opções que o suporte de sua empresa pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
 
 -   Acesso a sites específicos

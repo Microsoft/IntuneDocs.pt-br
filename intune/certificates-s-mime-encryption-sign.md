@@ -1,41 +1,46 @@
 ---
-title: Autenticação e criptografia de email S/MIME – Azure | Microsoft Docs
-description: Usar ou habilitar o S/MIME a autenticar e criptografar emails no Microsoft Intune
+title: Assinar e criptografar emails usando o S/MIME – Microsoft Intune – Azure | Microsoft Docs
+description: Saiba como usar certificados digitais de emails no Microsoft Intune para assinar e criptografar emails nos dispositivos. Esses certificados são chamados de S/MIME e são configurados usando perfis de configuração do dispositivo. Os certificados de assinatura e criptografia usam PKCS ou certificados privados e usam um conector para importar os certificados.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: eaa85870b289bb3b65ce997d8610324f43d69452
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185637"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203120"
 ---
-# <a name="smime-email-signing-and-encryption-in-intune"></a>Autenticação e criptografia de email S/MIME no Intune
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Visão geral do S/MIME para assinar e criptografar emails no Intune
 
-> [!IMPORTANT]
-> Estamos fazendo algumas melhorias no recurso S/MIME descrito neste artigo. Como resultado, o recurso S/MIME foi temporariamente removido do Intune. Quando este recurso for liberado, removeremos esta nota.
+Certificados de email, também conhecidos como certificado S/MIME, fornecem segurança extra para as comunicações de email usando criptografia e descriptografia. O Microsoft Intune pode usar certificados S/MIME para assinar e criptografar emails em dispositivos móveis que executam as seguintes plataformas:
 
-O S/MIME fornece um nível extra de segurança para suas comunicações por email usando a criptografia e a descriptografia. O Microsoft Intune pode usar o S/MIME para autenticar e criptografar emails para dispositivos móveis que executam o iOS, o Windows, o Windows Phone, o Android e o macOS.
+- Android
+- iOS
+- macOS
+- Windows 10 e posterior
+- Windows Phone
 
-Em dispositivos iOS, você pode criar um perfil de email gerenciado pelo Intune que usa o S/MIME e certificados para autenticar e criptografar emails de entrada e de saída. Para outras plataformas, o S/MIME pode ou não ter suporte. Se ele tiver suporte, você poderá instalar certificados que usam a autenticação e a criptografia S/MIME. Em seguida, um usuário final pode habilitar o S/MIME em seus aplicativos de email.
+Em dispositivos iOS, você pode criar um perfil de email gerenciado pelo Intune que usa o S/MIME e certificados para autenticar e criptografar emails de entrada e de saída. Para outras plataformas, o S/MIME pode ou não ter suporte. Se ele tiver suporte, instale certificados que usam a assinatura e a criptografia S/MIME. Em seguida, um usuário final habilitará o S/MIME em seus aplicativos de email.
 
-Para obter mais informações sobre a autenticação e a criptografia de email S/MIME, confira [Autenticação e criptografia de mensagens S/MIME](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+Para obter mais informações sobre a assinatura e a criptografia de email S/MIME, confira [S/MIME para assinatura e criptografia de mensagens](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+
+Este artigo fornece uma visão geral de como usar certificados S/MIME para assinar e criptografar emails nos dispositivos.
 
 ## <a name="signing-certificates"></a>Certificados de autenticação
 
 Os certificados usados na autenticação permitem que o aplicativo cliente de email se comunique com segurança com o servidor de email.
 
-Para usar certificados de autenticação, crie um modelo na autoridade de certificação que se concentra na conexão. Na Autoridade de Certificação do Microsoft Active Directory, [Configurar o modelo de certificado do servidor](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) lista as etapas usadas para criar modelos de certificado.
+Para usar certificados de autenticação, crie um modelo na AC (autoridade de certificação) voltado para a assinatura. Na Autoridade de Certificação do Microsoft Active Directory, [Configurar o modelo de certificado do servidor](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) lista as etapas usadas para criar modelos de certificado.
 
 Os certificados de autenticação do Intune usam certificados PKCS. [Configurar e usar certificados PKCS](certficates-pfx-configure.md) descreve como implantar e usar o certificado PKCS no ambiente do Intune. Essas etapas incluem:
 
@@ -71,3 +76,10 @@ Para implantar um certificado PKCS importado no Intune usado para criptografia d
 ## <a name="smime-email-profiles"></a>Perfis de email do S/MIME
 
 Depois de criar perfis de certificado de autenticação e criptografia S/MIME, você pode [habilitar o S/MIME para email nativo do iOS](email-settings-ios.md).
+
+## <a name="next-steps"></a>Próximas etapas
+
+- [Usar certificados SCEP](certificates-scep-configure.md)
+- [Usar certificados PKCS](certficates-pfx-configure.md)
+- [Usar uma AC de parceiros](certificate-authority-add-scep-overview.md)
+- [Emitir certificados PKCS em um serviço Web do Symantec PKI Manager](certificates-symantec-configure.md)

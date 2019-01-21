@@ -3,10 +3,10 @@ title: Como monitorar as políticas de proteção de aplicativo
 titleSuffix: Microsoft Intune
 description: Monitore o status de conformidade das políticas de gerenciamento de aplicativo móvel no Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816833"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297291"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Há três locais diferentes para monitorar o status de conformidade:
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
 3. No painel **Intune**, escolha **Aplicativos clientes**.
-4. Na carga de trabalho **Aplicativos clientes**, escolha **Monitorar** > **Status de proteção do aplicativo**, para ver a exibição resumida:
+4. Na carga de trabalho **Aplicativos cliente**, escolha **Status de proteção do aplicativo** na seção **Monitorar** para ver a exibição resumida:
 
 ![Bloco de Resumo do painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-user-status-summary.png)
 
--   **Usuários**: O número total de usuários em sua empresa que estão usando um aplicativo associado à política em um contexto de trabalho.
+-   **Usuários atribuídos**: O número total de usuários atribuídos em sua empresa que estão usando um aplicativo associado a uma política em um contexto de trabalho e que estão protegidos e licenciados, bem como os usuários atribuídos que não estão protegidos nem licenciados.
+-   **Usuários sinalizados**: O número de usuários que estão tendo problemas. Os dispositivos com jailbreak são relatados em **Usuários sinalizados**.
+-   **Status do usuário para iOS** e **Status do usuário para Android**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho para a plataforma relacionada. Essas informações mostram o número de usuários gerenciados pela política, bem como o número de usuários que estão usando um aplicativo que não é direcionado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
 
--   **GERENCIADO POR POLÍTICA**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho.
-
--   **NENHUMA POLÍTICA**: O número de usuários que estão usando um aplicativo que não é afetado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
     > [!NOTE]
     > Se você tem várias políticas por plataforma, um usuário é considerado gerenciado por política quando tem pelo menos uma política atribuída a ele.
-
-- **Usuários sinalizados**: O número de usuários que estão tendo problemas. Atualmente, apenas usuários com dispositivos com jailbreak são relatados em **Usuários sinalizados**.
-
 
 ## <a name="detailed-view"></a>Exibição detalhada
 Você pode obter a exibição detalhada do resumo escolhendo os blocos **Status do usuário** (com base na plataforma do sistema operacional) e **Usuários sinalizados**.
@@ -79,7 +75,7 @@ Você pode pesquisar por um único usuário e verificar o status de conformidade
 
 Para ver o relatório para um usuário, siga estas etapas:
 
-1.  Para selecionar um usuário, escolha o bloco **Resumo**.
+1.  Para selecionar um usuário, escolha o bloco de resumo **Status do usuário**.
 
     ![Captura de tela do bloco Resumo do gerenciamento de aplicativo móvel do Intune](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado 
 
 ## <a name="reporting-view"></a>Exibição de Relatórios
 
-Você pode encontrar os mesmos relatórios da exibição detalhada e relatórios adicionais para ajudá-lo com o status de conformidade de política de MAM:
+Encontre os mesmos relatórios na folha **Status de proteção do aplicativo**.
 
-![Captura de tela realçando dois relatórios disponíveis no painel Configurações](./media/MAM-reporting-7.png)
+> [!NOTE]
+> O Intune fornece campos adicionais de relatórios do dispositivo, incluindo a ID de Registro do Aplicativo, o fabricante do Android, o modelo e a versão do patch de segurança, bem como o modelo do iOS. No Intune, esses campos estão disponíveis pela seleção de **Aplicativos cliente** > **Status de proteção do aplicativo** e escolha de **Relatório de Proteção do Aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista **Permissão** para o fabricante do dispositivo (Android), a lista **Permissão** para o modelo do dispositivo (Android e iOS) e a configuração de versão mínima do patch de segurança do Android. 
 
--   **Relatório de usuário de proteção de aplicativo:** Descreve as mesmas informações que podem ser encontradas no relatório **Status do usuário** na seção Exibição detalhada acima.
+Relatórios adicionais estão disponíveis para ajudá-lo com o status de conformidade da política de MAM. Para exibir esses relatórios, selecione **Aplicativos cliente** > **Status de proteção do aplicativo** > **Relatórios**. 
 
--   **Relatório de aplicativo de proteção de aplicativo:** Fornece dois status de proteção de aplicativo diferentes que os administradores podem selecionar antes de gerar o relatório. Os status podem ser protegidos ou não protegidos.
+A folha **Relatórios** fornece vários relatórios com base no usuário e no aplicativo, incluindo os seguintes:
+
+
+-   **Relatório de usuário**: Esse relatório apresenta as mesmas informações que podem ser encontradas no relatório **Status do usuário** na seção Exibição detalhada acima.
+
+-   **Relatório de aplicativo**: Esse relatório fornece dois status de proteção do aplicativo diferentes que os administradores podem selecionar antes de gerar o relatório. Os status podem ser protegidos ou não protegidos.
 
     -   Status do usuário para a atividade de MAM gerenciado (Protegido): Esse relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário.
 
         -   Ele mostra todos os aplicativos alvo das políticas de MAM para cada usuário e divide o status de cada aplicativo como com check-in feito nas políticas de MAM ou que eram alvo de uma política de MAM, mas nunca foi feito o check-in do aplicativo.
-<br></br>
+<br><br>
     -   Status do usuário para a atividade de MAM não gerenciado (Desprotegido): Esse relatório descreve a atividade de aplicativos habilitados para MAM atualmente não gerenciados, por usuário. Isso pode acontecer de acordo com os seguintes motivos:
 
         -   Esses aplicativos estão sendo usados por um usuário ou um aplicativo que no momento não é alvo de uma política de MAM.

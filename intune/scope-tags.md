@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187150"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203324"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>Usar marcas de escopo para filtrar políticas
 
-As marcas de escopo permitem filtrar as políticas com marcas personalizadas criadas por você.
+As marcas de escopo permitem filtrar as políticas com marcas personalizadas criadas por você. Você pode aplicar marcas de escopo a funções e aplicativos.
 
 Por exemplo, crie uma marca de escopo chamada "Departamento de engenharia" e atribua-a aos perfis de configuração relacionados ao departamento de engenharia. Atribua essa mesma marca a uma função de "Administradores de engenharia". Eles verão somente as políticas com a marca "Departamento de engenharia".
 
@@ -38,6 +38,11 @@ Escolha **Configuração do dispositivo** > **Perfis** > escolha um perfil > **P
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma marca de escopo a uma função
 
 Escolha **Funções** > **Todas as funções** > **Gerenciador de Política e Perfil** > **Atribuições** > **Escopo (Marcas)**.
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>Para atribuir uma tag de escopo a um aplicativo
+
+Escolha **Aplicativos cliente** > **Aplicativos** > escolha um aplicativo > **Propriedades** > **Escopo (Marcas)** > **Adicionar** > escolha as marcas > **Selecionar** > **OK** > **Salvar**.
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

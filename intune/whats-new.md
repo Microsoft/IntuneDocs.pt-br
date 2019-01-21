@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
-ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
+ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210900"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,131 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode obt
 ### Role-based access control
 
 -->     
+
+
+## <a name="week-of-january-7-2019"></a>Semana de 7 de janeiro de 2019
+
+### <a name="app-management"></a>Gerenciamento de aplicativos
+
+#### <a name="intune-app-pin----2298397---"></a>PIN do aplicativo Intune <!-- 2298397 -->
+Como administrador de TI, você pode configurar o número de dias que um usuário final pode aguardar até que o PIN do aplicativo Intune precise ser alterado. A nova configuração é *Redefinição de PIN após o número de dias* e será disponibilizada no portal do Azure pela seleção de **Intune** > **Aplicativos cliente** > **Políticas de proteção do aplicativo** > **Criar Política** > **Configurações** > **Requisitos de acesso**. Disponível para dispositivos [iOS](app-protection-policy-settings-ios.md) e [Android](app-protection-policy-settings-android.md), esse recurso dá suporte a um valor inteiro positivo.
+
+
+#### <a name="intune-device-reporting-fields----2748738---"></a>Campos de relatório de dispositivo do Intune <!-- 2748738 -->
+O Intune fornece campos adicionais de relatórios do dispositivo, incluindo a ID de Registro do Aplicativo, o fabricante do Android, o modelo e a versão do patch de segurança, bem como o modelo do iOS. No Intune, esses campos estão disponíveis pela seleção de **Aplicativos cliente** > **Status de proteção do aplicativo** e escolha de **Relatório de Proteção do Aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista **Permissão** para o fabricante do dispositivo (Android), a lista **Permissão** para o modelo do dispositivo (Android e iOS) e a configuração de versão mínima do patch de segurança do Android. 
+
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Os modelos administrativos estão em versão prévia pública e mudaram para o perfil de configuração próprio <!-- 3322847 -->
+
+Os modelos administrativos no Intune (**Configuração do dispositivo** > **Modelos administrativos**) estão em versão prévia privada. Com esta atualização:
+
+- Os modelos administrativos incluem aproximadamente 300 configurações que podem ser gerenciadas no Intune. Anteriormente, essas configurações só existiam no editor de política de grupo.
+- Os modelos administrativos estão disponíveis na versão prévia pública.
+- Os modelos administrativos estão sendo transferidos de **Configuração do dispositivo** > **Modelos administrativos** para **Configuração do dispositivo** > **Perfis** > **Criar perfil** > em **Plataforma**, escolha **Windows 10 e posterior**, em **Tipo de perfil**, escolha **Modelos administrativos**.
+- O relatório está habilitado
+
+Para ler mais sobre esse recurso, acesse [Modelos do Windows 10 para definir as configurações da Política de Grupo](administrative-templates-windows.md).
+
+Aplica-se a: Windows 10 e posterior
+
+#### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user-----1333642---"></a>Usar o S/MIME para criptografar e assinar vários dispositivos para um usuário <!-- 1333642 -->
+Essa atualização inclui uma criptografia de email S/MIME usando um novo perfil de certificado importado (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > selecionar a plataforma > tipo de perfil **Certificado PKCS importado**). No Intune, você pode importar certificados no formato PFX. Em seguida, o Intune pode fornecer os mesmos certificados para vários dispositivos registrados por um único usuário. Isso também inclui:
+- O perfil de email do iOS nativo permite habilitar a criptografia S/MIME usando certificados importados no formato PFX.
+- O aplicativo de email nativo em dispositivos Windows Phone 10 usam automaticamente o certificado S/MIME.
+- Os certificados privados podem ser entregues em várias plataformas. Porém, nem todos os aplicativos de email são compatíveis com S/MIME.
+- Em outras plataformas, talvez você precise configurar manualmente o aplicativo de email para habilitar o S/MIME.  
+- Os aplicativos de email compatíveis com a criptografia S/MIME podem manipular a recuperação de certificados para criptografia de email S/MIME de uma maneira com a qual o MDM não é compatível, como a leitura do repositório de certificados do editor.
+Para obter mais informações sobre esse recurso, confira [Visão geral do S/MIME para assinar e criptografar emails](certificates-s-mime-encryption-sign.md).
+Com suporte em: Windows, Windows Phone 10, macOS, iOS, Android
+
+#### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Novas opções para se conectar automaticamente e manter as regras ao usar configurações de DNS em dispositivos com Windows 10 e versões posteriores <!-- 1333665, 2999078 -->
+Em dispositivos Windows 10 e posterior, é possível criar um perfil de configuração de VPN que inclua uma lista de servidores DNS para resolver domínios, por exemplo, contoso.com. Essa atualização inclui novas configurações de resolução de nomes (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > escolha **Windows 10 e posterior** para a plataforma > escolha **VPN** para o tipo de perfil > **Configurações de DNS** >**Adicionar**): 
+- **Conectar automaticamente**: Quando essa opção está **Habilitada**, o dispositivo se conecta automaticamente à VPN quando um dispositivo entra em contato com um domínio inserido por você, por exemplo, contoso.com.
+- **Persistente**: Por padrão, todas as regras de NRPT (Tabela de Políticas de Resolução de Nomes) estão ativas, desde que o dispositivo esteja conectado usando esse perfil de VPN. Quando essa configuração está **Habilitada** em uma regra de NRPT, a regra permanece ativa no dispositivo, mesmo quando a VPN desconectar. A regra permanece até que o perfil de VPN seja removido ou até que a regra seja removida manualmente, o que pode ser feito com o PowerShell.
+[Configurações de VPN do Windows 10](vpn-settings-windows-10.md) descreve as configurações. 
+
+#### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Usar a detecção de rede confiável para perfis de VPN em dispositivos com Windows 10 <!-- 1500165 -->
+Ao usar a detecção de rede confiável, é possível impedir que os perfis de VPN criem automaticamente uma conexão VPN quando o usuário já está em uma rede confiável. Com essa atualização, é possível adicionar sufixos DNS para habilitar a detecção de rede confiável em dispositivos que executam o Windows 10 e posterior (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **Windows 10 e posterior** para a plataforma > **VPN** para o tipo de perfil).
+[Configurações de VPN do Windows 10](vpn-settings-windows-10.md) lista as configurações de VPN atuais.
+
+#### <a name="manage-windows-holographic-for-business-devices-used-by-multiple-users----1907917-1063203---"></a>Gerenciar dispositivos Windows Holographic for Business usados por vários usuários <!-- 1907917, 1063203 -->
+No momento, é possível definir as configurações de computador compartilhado em dispositivos Windows 10 e Windows Holographic for Business usando uma configuração personalizada de OMA-URI. Com essa atualização, um novo perfil é adicionado para definir as configurações de dispositivo compartilhado (**Configuração do dispositivo** > **Perfis** > **Criar Perfil** > **Windows 10 e posterior** > **Dispositivo multiusuário compartilhado**).
+Para saber mais sobre esse recurso, acesse [Configurações do Intune para gerenciar dispositivos compartilhados](shared-user-device-settings.md).
+Aplica-se a: Windows 10 e posteriores, Windows Holographic for Business
+
+#### <a name="new-windows-10-update-settings---2626030--2512994----"></a>Novas configurações de Atualização do Windows 10 <!--2626030  2512994  -->
+Para os [Grupos de Atualização do Windows 10](windows-update-for-business-configure.md), é possível configurar:
+- **Comportamento de atualização automática** – use uma nova opção, *Redefinir para padrão*, para restaurar as configurações originais de atualização automática em um computador Windows 10 em computadores que executam a *Atualização de outubro de 2018*
+- **Impedir que o usuário pause as atualizações do Windows** – defina uma nova configuração de atualizações de Software para impedir ou permitir que os usuários pausem uma instalação de atualização nas *Configurações* de seus computadores. 
+
+#### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>Perfis de email do iOS podem usar assinatura e criptografia S/MIME <!-- 2662949 -->
+É possível criar um perfil de email que inclua configurações diferentes. Essa atualização inclui configurações de S/MIME que podem ser usadas para assinar e criptografar comunicações por email em dispositivos iOS (**Configurações do dispositivo** > **Perfis** > **Criar perfil** > escolha **iOS** para a plataforma > **Email** para o tipo de perfil).
+[Definições de configuração de email do iOS](email-settings-ios.md) lista as configurações.
+
+#### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Algumas configurações do BitLocker oferecem suporte à edição Windows 10 Pro<!-- 2727036 -->
+É possível criar um perfil de configuração que defina as configurações do Endpoint Protection em dispositivos Windows 10, incluindo o BitLocker. Essa atualização adiciona suporte à edição Windows 10 Professional em algumas configurações do BitLocker. Para ver essas configurações de proteção, acesse [Configurações do Endpoint Protection do Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+
+#### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal---2809362---"></a>A configuração de dispositivo compartilhado foi renomeada para Mensagem da Tela de Bloqueio para dispositivos iOS no portal do Azure<!-- 2809362 -->
+Ao criar um perfil de configuração para dispositivos iOS, é possível adicionar definições de **Configuração de Dispositivo Compartilhado** para mostrar um texto específico na tela de bloqueio. Essa atualização inclui as seguintes alterações: 
+- A **Configuração de Dispositivo Compartilhado** no portal do Azure foi renomeada para "Mensagem na Tela de Bloqueio (apenas supervisionada)" (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > escolha **iOS** para a plataforma > escolha **Recursos do dispositivo** para o tipo de perfil > **Mensagem na Tela de Bloqueio**).
+- Ao adicionar mensagens da tela de bloqueio, é possível inserir um número de série, um nome de dispositivo ou outro valor específico do dispositivo como variável em **Informações da tag do ativo** e **Nota de rodapé da tela de bloqueio**. Por exemplo, é possível inserir `Device name: {{devicename}}` ou `Serial number is {{serialnumber}}` usando colchetes. [Tokens de iOS](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) lista os tokens disponíveis que podem ser usados.
+[Configurações para exibir mensagens na tela de bloqueio](shared-device-settings-ios.md) lista as configurações.
+
+#### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Novas configurações de restrição de dispositivo de App Store, Exibição de Documentos, Jogos adicionadas a dispositivos iOS <!-- 2827760-->
+Em **Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Restrições de dispositivo** para o tipo de perfil > **App Store, Exibição de Documentos, Jogos**, as seguintes configurações são adicionadas: Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciadas (somente supervisionado) Permitir que aplicativos não gerenciados leiam contas de contatos gerenciadas (somente supervisionado) Para ver essas configurações, acesse [Restrições de dispositivo do iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+#### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Novas configurações de notificação, dicas e keyguard para dispositivos do Android Enterprise<!-- 3201839 3201843 -->
+Esta atualização inclui vários recursos novos em dispositivos com Android Enterprise durante a execução como proprietário do dispositivo. Para usar esses recursos, acesse **Configuração do dispositivo** > **Perfis** > **Criar perfil** > em **Plataforma**, escolha **Android Enterprise** > em **Tipo de perfil**, escolha **Somente proprietário do dispositivo** > **Restrições do Dispositivo**.
+Os novos recursos incluem: 
+- Desabilitar a exibição de notificações do sistema, incluindo chamadas recebidas, alertas do sistema, erros de sistema e muito mais
+- Sugestão de ignorar os tutoriais iniciais e as dicas para aplicativos abertos pela primeira vez
+- Desabilitar as configurações avançadas de keyguard, como a câmera, notificações, o desbloqueio com impressão digital, entre outros Para ver as configurações, acesse [Configurações de restrição de dispositivo empresarial Android](device-restrictions-android-for-work.md).
+
+#### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Dispositivos de proprietário com Android Enterprise podem usar conexões VPN Always On <!-- 3202194 -->
+Nesta atualização, é possível usar as conexões VPN Sempre Ativa em dispositivos com Android Enterprise. As conexões VPN sempre ativadas permanecem conectadas ou são reconectadas imediatamente quando o usuário desbloqueia o dispositivo, quando o dispositivo é reiniciado ou quando a rede sem fio é alterada. Você também pode colocar a conexão em modo de "bloqueio", o que bloqueia todo o tráfego até que a conexão VPN seja ativada.
+É possível habilitar a VPN Sempre Ativa em **Configuração do dispositivo** > **Perfis** > **Criar perfil** > **Android Enterprise** para plataforma > **Restrições de dispositivo** para Somente Proprietário do Dispositivo > **Conectividade**. Para ver as configurações, acesse [Configurações de restrição de dispositivo empresarial Android](device-restrictions-android-for-work.md).
+
+#### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Nova configuração para encerrar processos no Gerenciador de Tarefas em dispositivos com Windows 10 <!-- 3285177 --> 
+Esta atualização inclui uma nova configuração para encerrar processos usando o Gerenciador de Tarefas em dispositivos com Windows 10. Usando um perfil de configuração do dispositivo (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > em **Plataforma** , escolha **Windows 10** > no **Tipo de perfil**, escolha **Restrições de dispositivo** > **Geral**), é possível permitir ou impedir essa configuração.
+Para ver essas configurações, acesse [Configurações de restrição de dispositivo do Windows 10](device-restrictions-windows-10.md).
+Aplica-se a: Windows 10 e posterior
+
+
+### <a name="device-enrollment"></a>Registro de dispositivo
+
+#### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Mensagem mais detalhada sobre a falha de restrição de registro <!-- 3111564 -->
+Mensagens de erro mais detalhadas estão disponíveis quando as restrições de registro não são atendidas. Para ver essas mensagens, acesse **Intune** > **Solucionar problemas** e verifique a tabela Falhas de registro. Para obter mais informações, confira a [lista de falhas de registro](help-desk-operators.md#configuration-policies-reference).
+
+#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Ignorar mais telas do Assistente de Configuração em um dispositivo DEP com iOS <!-- 2687509 -->
+Além das telas que você pode ignorar no momento, você poderá definir dispositivos iOS DEP para ignorar as seguintes telas no Assistente de Configuração quando um usuário registrar o dispositivo: Exiba tom, Privacidade, Migração do Android, botão Página Inicial, iMessage e FaceTime, Integração, Migração de Inspeção, Aparência, Hora na Tela, Atualização de Software, Configuração do SIM.
+Para escolher quais telas ignorar, acesse **Registro do dispositivo** > **Registro da Apple** > **Tokens do programa de registro** > escolha um token > **Perfis** > escolha um perfil > **Propriedades** > **Personalização do Assistente de Configuração** > escolha **Ocultar** para as telas que você deseja ignorar > **OK**.
+
+
+### <a name="monitor-and-troubleshoot"></a>Monitorar e solucionar problemas
+
+#### <a name="tenant-status-dashboard-----1124854---"></a>Painel Status do Locatário <!-- 1124854 -->
+A nova [página Status do Locatário](tenant-status.md) fornece uma localização única em que você pode exibir o status e os detalhes relacionados de seu locatário.  O painel é dividido em quatro áreas:
+- **Detalhes do Locatário** – exibe informações que incluem o nome do Locatário e a localização, a Autoridade de MDM, o total dos dispositivos registrados no locatário e contagens de licenças. Essa seção também lista a versão de serviço atual do locatário.
+- **Status do Conector** – exibe informações sobre os conectores disponíveis configurados e também pode listar aqueles que ainda não foram habilitados.  
+   Com base no estado atual de cada conector, eles são sinalizados como Íntegros, Aviso ou Não Íntegros. Selecione um conector para examiná-lo e exibir detalhes ou configurar informações adicionais para ele.
+-  **Integridade do Serviço Intune** – exibe detalhes sobre incidentes ativos ou interrupções do locatário. As informações desta seção são recuperadas diretamente do Centro de Mensagens do Office.
+-  **Notícias do Intune** – exibe as mensagens ativas do locatário. As mensagens incluem itens como notificações quando seu locatário receber os últimos recursos do Intune.  As informações desta seção são recuperadas diretamente do Centro de Mensagens do Office.
+
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10----1488939--"></a>Nova experiência de ajuda e suporte no Portal da Empresa para Windows 10 <!-- 1488939-->
+A nova página Ajuda e suporte do Portal da Empresa ajuda os usuários a solucionar problemas e solicitar ajuda para problemas de acesso e de aplicativo. Na nova página, eles podem enviar por email detalhes do log de diagnóstico e de erro e encontrar os detalhes da Assistência Técnica de sua organização. Eles também encontrarão uma seção de perguntas frequentes com links para a documentação relevante do Intune. 
+
+#### <a name="new-help-and-support-experience-for-intune------3307080---"></a>Nova experiência de Ajuda e Suporte do Intune <!-- #3307080 -->
+Estamos distribuindo a nova experiência de Ajuda e Suporte a todos os locatários nos próximos dias. Essa nova experiência está disponível para o Intune e pode ser acessada ao usar as folhas do Intune no [portal do Azure](https://portal.azure.com/).
+A nova experiência permite que você descreva seu problema em suas próprias palavras e receba informações de solução de problemas e conteúdo de correção baseado na Web. Essas soluções são oferecidas por meio de um algoritmo de aprendizado de máquina baseado em regras, orientado por consultas de usuário. Além das diretrizes específicas do problema, você usa o novo fluxo de trabalho de criação de caso para abrir um caso de suporte por email ou telefone. Essa nova experiência substitui a experiência anterior de Ajuda e Suporte de um conjunto estático de opções pré-selecionadas com base na área do console em que você está quando abre a Ajuda e Suporte. Para obter mais informações, confira [Como obter suporte para o Microsoft Intune](get-support.md).
+
+### <a name="role-based-access-control"></a>Controle de acesso baseado em função
+
+#### <a name="scope-tags-for-apps----1081941---"></a>Marcas de escopo para aplicativos <!-- 1081941 -->
+Você pode criar marcas de escopo para limitar o acesso para funções e aplicativos. Você pode adicionar uma tag de escopo a um aplicativo para que somente as pessoas com as funções também atribuídas a essa tag de escopo tenham acesso ao aplicativo. Para obter mais informações, confira [Usar marcas de escopo para filtrar políticas](scope-tags.md).
+
+
 
 ## <a name="week-of-december-10-2018"></a>Semana de 10 de dezembro de 2018
 
@@ -244,7 +369,7 @@ O Azure Active Directory tem um recurso de termos de uso que você pode usar em 
 Para o Registro Móvel do Samsung Knox, o Intune agora dá suporte ao registro de dispositivos para o modo de Proprietário de Dispositivo Android do gerenciamento. Os usuários em redes de celular ou Wi-Fi podem inscrever seus dispositivos com apenas alguns toques ao o ligarem pela primeira vez. Para saber mais, confira [Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung](android-samsung-knox-mobile-enroll.md).
 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
-#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>Novas configurações de atualizações de software <!-- 1907869  wnready -->  
+#### <a name="new-settings-for-software-updates------1907869---"></a>Novas configurações de atualizações de software <!-- 1907869 -->  
 - Agora, você pode configurar algumas notificações para alertar os usuários finais sobre reinicializações exigidas para concluir a instalação das atualizações de software mais recentes.   
 - Agora, você pode configurar um prompt de aviso de reinicialização para reinicializações que ocorrem fora do horário de trabalho, o que dá suporte a cenários de BYOD.
 
@@ -281,7 +406,7 @@ Para clientes que fazem parte da implementação, essa nova experiência substit
 
 *Esta nova experiência de Ajuda e Suporte está sendo distribuída a alguns, mas não todos, os locatários e está disponível no Portal de Gerenciamento de Dispositivo. Os participantes dessa nova experiência são selecionados aleatoriamente entre os locatários do Intune disponíveis. Novos locatários serão adicionados à medida que expandirmos a distribuição.*  
 
-Para obter mais informações, confira [Nova experiência de Ajuda e Suporte](get-support.md#new-help-and-support-experience) em Como obter suporte para o Microsoft Intune.  
+Para obter mais informações, confira [Experiência de Ajuda e Suporte](get-support.md#help-and-support-experience) em Como obter suporte para o Microsoft Intune.  
 
 ### <a name="powershell-module-for-intune--preview-available----951068---"></a>Módulo do PowerShell para Intune – Versão prévia disponível <!-- 951068 -->
 Um novo módulo do PowerShell, que dá suporte para a API do Intune por meio do Microsoft Graph, agora está disponível em versão prévia no [GitHub]( https://aka.ms/intunepowershell). Para obter detalhes de como usar esse módulo, confira o LEIAME nesse local. 

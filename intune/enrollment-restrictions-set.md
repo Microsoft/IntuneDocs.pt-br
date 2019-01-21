@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112945"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122530"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -81,6 +81,8 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
     - O perfil de trabalho Android dá suporte para major.minor.rev.build.
     - O iOS é compatível com o major.minor.rev. As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator.
     - O Windows é compatível com minor.rev.build somente para Windows 10.
+> [!Note]
+> O Windows 10 não fornece o número de build durante o registro. Portanto, para a instância, se você inserir 10.0.17134.100 e o dispositivo for 10.0.17134.174, ele será bloqueado durante o registro.
 8. Escolha se deseja **Permitir** ou **Bloquear** dispositivos de **Propriedade pessoal** para cada plataforma listada.
 9. Selecione **OK**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146732"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203307"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Enviar logs para o suporte de sua empresa no aplicativo de Configurações para Windows 10
 
-Se você receber um erro enquanto estiver usando o dispositivo Windows 10 gerenciado por sua empresa, poderá ajudar o suporte de sua empresa a solucionar o problema enviando informações por email. Essas informações são mantidas em seu dispositivo, em um documento especial chamado _log de diagnóstico_.
+Use o aplicativo Configurações para solucionar problemas do Portal da Empresa para Windows 10. Caso tenha problemas ao usar o aplicativo no dispositivo Windows 10, envie um email à equipe de suporte para obter ajuda. Os eventos e erros que ocorrem no aplicativo Portal da Empresa são salvos em seu dispositivo em um documento especial chamado de _log de diagnóstico_. Eles podem conter insights adicionais sobre o erro e, quando exportados, são úteis para as equipes de suporte.
 
-1. Abra o aplicativo **Configurações** do Windows acessando o **menu Iniciar** e selecionando o botão **Configurações**. Também é possível pesquisar “configurações” na barra de pesquisa.
+1. Para abrir o aplicativo **Configurações**, acesse o menu **Iniciar** > **Configurações**. Pesquise também *configurações* na barra de pesquisa.
 2. Acesse **Contas** > **Acessar conta corporativa ou de estudante**.
-3. Selecione “Exportar arquivos de log de gerenciamento”.
+3. Selecione **Exportar arquivos de log de gerenciamento**.
 
    ![A “tela Acessar conta corporativa ou de estudante”, que apresenta a opção Exportar abaixo do cabeçalho “Configurações relacionadas”.](./media/w10-export-logs.png)
 

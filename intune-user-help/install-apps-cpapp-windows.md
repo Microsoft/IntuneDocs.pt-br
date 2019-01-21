@@ -1,11 +1,11 @@
 ---
 title: Instalar aplicativos do aplicativo do Portal da Empresa do Intune para Windows
-description: Saiba como instalar e compartilhar aplicativos no aplicativo Portal da Empresa para Windows
+description: Instalar e compartilhar aplicativos no aplicativo Portal da Empresa para Windows
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863086"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203222"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e compartilhar aplicativos no seu dispositivo
 Instale aplicativos em seu dispositivo pelo aplicativo Portal da Empresa para Windows.
@@ -34,11 +34,11 @@ Instale aplicativos em seu dispositivo pelo aplicativo Portal da Empresa para Wi
     ![O aplicativo Portal da Empresa para a página inicial do Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Encontre e instale aplicativos de qualquer uma das seguintes seções do aplicativo Portal da Empresa:  
 
-    * **Página Inicial**: selecione de uma lista contendo os aplicativos em destaque da sua organização.  
-    * **Mostrar tudo**: na seção **Página Inicial** > **Aplicativos**, clique em **Mostrar tudo** para ver todos os aplicativos disponíveis.  
-    * **Todos os aplicativos**: selecione esta página no painel de navegação para ver todos os aplicativos disponíveis, incluindo os instalados e em destaque.  
-    * **Pesquisar aplicativos**: uma barra de pesquisa estática encontra-se no painel de navegação do aplicativo.  Para localizar seus aplicativos disponíveis, pesquise pelo nome ou distribuidor do aplicativo.  
-    * **Todos os aplicativos**: exibir, classificar e filtrar todos os aplicativos disponíveis. Os resultados da pesquisa são classificados automaticamente por relevância.  
+    * **Página Inicial**: Selecione um aplicativo em uma lista dos aplicativos em destaque de sua organização.  
+    * **Mostrar tudo**: Na seção **Home page** > **Aplicativos**, clique em **Mostrar tudo** para exibir todos os aplicativos disponíveis.  
+    * **Todos os aplicativos**: Selecione essa página no painel de navegação para ver todos os aplicativos disponíveis, incluindo os instalados e em destaque.  
+    * **Pesquisar aplicativos**: Há uma barra de pesquisa estática no painel de navegação do aplicativo.  Para localizar seus aplicativos disponíveis, pesquise pelo nome ou distribuidor do aplicativo.  
+    * **Todos os aplicativos**: Exiba, classifique e filtre todos os aplicativos disponíveis. Os resultados da pesquisa são classificados automaticamente por relevância.  
 
 3. Selecione um aplicativo.   
 4. Na página de detalhes dos aplicativos, clique em **Instalar**. Após a instalação ser concluída, você verá um status **Instalado**.  
@@ -63,4 +63,16 @@ Compartilhe e recomende aplicativos aos seus contatos do trabalho ou da escola. 
 
 Depois de compartilhar, o destinatário receberá um link e uma mensagem para ver detalhes do aplicativo. O link abre a página **Detalhes do aplicativo** no Portal da Empresa. 
 
-Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="available-apps"></a>Aplicativos disponíveis  
+
+Sua organização seleciona aplicativos que são apropriados e úteis para você no trabalho ou na escola. Esses aplicativos são os únicos que você encontrará no Portal da Empresa.  
+
+Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se estiver usando o aplicativo Portal da Empresa para Windows, você terá acesso aos aplicativos do Windows, mas não aos aplicativos do iOS.  
+
+## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para uso corporativo ou de estudante  
+Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Encontre os detalhes de contato da **Assistência técnica** no aplicativo Portal da Empresa, na página Ajuda e suporte. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![O aplicativo Portal da Empresa para Windows 10, página Ajuda e Suporte, realçando os detalhes da Assistência técnica. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

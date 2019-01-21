@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067441"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210713"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
@@ -89,7 +89,7 @@ A relação é exibida em uma coluna De para uma coluna Para. Neste exemplo, o c
 
 Um gráfico de mapa de árvore mostra dados hierárquicos, como caixas dentro de caixas. Cada branch da hierarquia é uma caixa que contém caixas menores, mostrando sub-branches. Você pode usar o Power BI Desktop para criar um mapa de árvore dos dados do Intune.
 
-![Visualizações > mapa de árvore](media/reports-create-03-treemap.png)
+![Visualizações de mapa de árvore do Power BI](media/reports-create-03-treemap.png)
 
 1. Selecione um tipo de gráfico. Selecione **Mapa de árvore**.
 2. No modelo de dados, encontre a tabela **Dispositivos**.

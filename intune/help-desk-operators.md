@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190295"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203545"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usar o portal de solução de problemas para ajudar os usuários na sua empresa
 
@@ -271,6 +271,15 @@ Quando você escolhe uma linha de falha, mais detalhes são fornecidos.
 | Falha de autorização de registro | Ocorreu uma tentativa de registro usando uma versão antiga do portal da empresa. |
 | Dispositivo incompatível | O dispositivo não cumpre os requisitos mínimos para registro no Intune. |
 | Restrições de registro não cumpridas | Esse registro foi bloqueado devido a uma restrição de registro configurada pelo administrador. |
+| Versão de dispositivo muito anterior | O administrador configurou uma restrição de registro que exige uma versão posterior do dispositivo. |
+| Versão de dispositivo muito posterior | O administrador configurou uma restrição de registro que exige uma versão anterior do dispositivo. |
+| O dispositivo não pode ser registrado como pessoal | O administrador configurou uma restrição de registro para bloquear registros pessoais e o dispositivo com falha não foi predefinido como corporativo. |
+| Plataforma de dispositivo bloqueada | O administrador configurou uma restrição de registro que bloqueia a plataforma do dispositivo. |
+| Token em massa expirado | O token em massa no pacote de provisionamento expirou. |
+| Dispositivo Autopilot ou detalhes não encontrados | O dispositivo Autopilot não foi encontrado ao tentar se registrar. |
+| Perfil do Autopilot não encontrado ou não atribuído | O dispositivo não tem um perfil ativo do Autopilot. |
+| Método de registro inesperado do Autopilot | O dispositivo tentou se registrar usando um método não permitido. |
+| Dispositivo Autopilot removido | O dispositivo que está tentando se registrar foi removido do Autopilot para esta conta. |
 | Limite do dispositivo associado | Esse registro foi bloqueado devido a uma restrição de limite de registro configurada pelo administrador. |
 | Integração de Apple | Todos os dispositivos iOS foram impedidos de se registrar no momento devido à ausência ou expiração de um Apple MDM Push Certificate no Intune. |
 | Dispositivo não pré-registrado | O dispositivo não foi previamente registrado como corporativo e todos os registros pessoais foram bloqueados por um administrador. |

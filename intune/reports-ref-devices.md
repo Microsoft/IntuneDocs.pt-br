@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738062"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297512"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para entidades de dispositivos
 
@@ -46,7 +46,7 @@ A entidade **DeviceTypes** representa o tipo de dispositivo referenciado por out
 | DeviceTypeKey |Identificador exclusivo do tipo de dispositivo no data warehouse – chave substituta |
 | DeviceTypeName |Tipo de dispositivo |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | deviceTypeID  | Nome | Descrição |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ A entidade **ClientRegistrationStateTypes** representa o tipo de registro refere
 | clientRegisterationStateKey |Identificador exclusivo do estado do registro dispositivo no data warehouse – chave substituta |
 | clientRegisterationStateName |Estado do Registro |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | ClientRegisterationStateID  | Nome | Descrição |
 |---------|------------|--------|
@@ -95,6 +95,93 @@ A entidade **ClientRegistrationStateTypes** representa o tipo de registro refere
 | 7 |NotRegisteredPendingEnrollment |Inscrição pendente não registrada |
 | 8 |Unknown |Estado desconhecido |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+A entidade **EnrollmentActivity** indica a atividade de um registro de dispositivo.
+
+| Propriedade                      | Descrição                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | Chave da data em que essa atividade de registro foi gravada.               |
+| deviceEnrollmentTypeKey       | Chave do tipo do registro.                                        |
+| deviceTypeKey                 | Chave do tipo de dispositivo.                                                |
+| enrollmentEventStatusKey      | Chave do status indicando o êxito ou a falha do registro.    |
+| enrollmentFailureCategoryKey  | Chave da categoria de falha do registro (se o registro falhou).        |
+| enrollmentFailureReasonKey    | Chave do motivo da falha do registro (se o registro falhou).          |
+| osVersion                     | A versão do sistema operacional do dispositivo.                               |
+| count                         | Contagem total de atividades de registro correspondentes às classificações acima.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+A entidade **EnrollmentEventStatus** indica o resultado de um registro de dispositivo.
+
+| Propriedade                   | Descrição                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | Identificador exclusivo do status de registro no data warehouse (chave alternativa)  |
+| enrollmentEventStatusName  | O nome do status de registro. Veja exemplos abaixo.                            |
+
+### <a name="example"></a>Exemplo
+
+| enrollmentEventStatusName  | Descrição                            |
+|----------------------------|----------------------------------------|
+| Êxito                    | Um registro de dispositivo bem-sucedido         |
+| Failed (Falha)                     | Um registro de dispositivo com falha             |
+| Não disponível              | O status de registro é não disponível.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+A entidade **EnrollmentFailureCategory** indica o motivo da falha de um registro de dispositivo. 
+
+| Propriedade                       | Descrição                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Identificador exclusivo da categoria de falha do registro no data warehouse (chave alternativa)  |
+| enrollmentFailureCategoryName  | O nome da categoria de falha do registro. Veja exemplos abaixo.                            |
+
+### <a name="example"></a>Exemplo
+
+| enrollmentFailureCategoryName   | Descrição                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Não Aplicável                  | A categoria de falha do registro não é aplicável.                                                            |
+| Não disponível                   | A categoria de falha do registro não está disponível.                                                             |
+| Unknown                         | Erro desconhecido.                                                                                                |
+| Autenticação                  | Falha na autenticação.                                                                                        |
+| Authorization                   | A chamada foi autenticada, mas não está autorizada a se registrar.                                                         |
+| AccountValidation               | Falha ao validar a conta para o registro. (Conta bloqueada, registro não habilitado)                      |
+| UserValidation                  | Não foi possível validar o usuário. (O usuário não existe; licença ausente)                                           |
+| DeviceNotSupported              | Não há suporte para o dispositivo no gerenciamento de dispositivo móvel.                                                         |
+| InMaintenance                   | A conta está em manutenção.                                                                                    |
+| BadRequest                      | O cliente enviou uma solicitação que não é compreendida pelo serviço nem compatível com ele.                                        |
+| FeatureNotSupported             | Não há suporte para os recursos usados por este registro nesta conta.                                        |
+| EnrollmentRestrictionsEnforced  | As restrições de registro configuradas pelo administrador bloquearam esse registro.                                          |
+| ClientDisconnected              | O cliente atingiu o tempo limite ou o registro foi anulado pelo usuário final.                                                        |
+| UserAbandonment                 | O registro foi abandonado pelo usuário final. (O usuário final iniciou a integração, mas não conseguiu concluí-la em tempo hábil)  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+A entidade **EnrollmentFailureReason** indica um motivo mais detalhado para uma falha de registro de dispositivo em determinada categoria de falha.  
+
+| Propriedade                     | Descrição                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Identificador exclusivo do motivo da falha do registro no data warehouse (chave alternativa)  |
+| enrollmentFailureReasonName  | O nome do motivo da falha do registro. Veja exemplos abaixo.                            |
+
+### <a name="example"></a>Exemplo
+
+| enrollmentFailureReasonName      | Descrição                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Não Aplicável                   | O motivo da falha do registro não é aplicável.                                                                                                                                                       |
+| Não disponível                    | O motivo da falha do registro não está disponível.                                                                                                                                                        |
+| Unknown                          | Erro Desconhecido.                                                                                                                                                                                         |
+| UserNotLicensed                  | O usuário não foi encontrado no Intune ou não tem uma licença válida.                                                                                                                                     |
+| UserUnknown                      | O usuário não é conhecido para o Intune.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Apenas um usuário pode registrar um dispositivo. Este dispositivo foi registrado anteriormente por outro usuário.                                                                                                                |
+| EnrollmentOnboardingIssue        | A autoridade de MDM (gerenciamento de dispositivo móvel) do Intune ainda não está configurada.                                                                                                                                 |
+| AppleChallengeIssue              | A instalação do perfil de gerenciamento do iOS está atrasada ou falhou.                                                                                                                                         |
+| AppleOnboardingIssue             | Um Apple MDM Push Certificate é necessário para se registrar no Intune.                                                                                                                                       |
+| DeviceCap                        | O usuário tentou registrar mais dispositivos do que o máximo permitido.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | O serviço de registro do Intune não pôde autorizar esta solicitação.                                                                                                                                            |
+| UnsupportedDeviceType            | Este dispositivo não atende aos requisitos mínimos para registro do Intune.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | Este dispositivo não pôde se registrar devido a uma regra de restrição de registro configurada.                                                                                                                          |
+| BulkDeviceNotPreregistered       | O IMEI (identificador internacional de equipamento móvel) ou o número de série do dispositivo não foi encontrado.  Sem esse identificador, os dispositivos são reconhecidos como dispositivos pessoais que atualmente estão bloqueados.  |
+| FeatureNotSupported              | O usuário estava tentando acessar um recurso que ainda não foi liberado para todos os clientes ou que não é compatível com a configuração do Intune.                                                            |
+| UserAbandonment                  | O registro foi abandonado pelo usuário final. (O usuário final iniciou a integração, mas não conseguiu concluí-la em tempo hábil)                                                                                           |
+| APNSCertificateExpired           | Os dispositivos Apple não podem ser gerenciados com um Apple MDM Push Certificate expirado.                                                                                                                            |
+
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 A entidade **EnrollmentTypes** indica cmo um dispositivo foi inscrito. O tipo de registro captura o método de registro. Exemplos listam os diferentes tipos de registro e o que eles significam.
@@ -105,7 +192,7 @@ A entidade **EnrollmentTypes** indica cmo um dispositivo foi inscrito. O tipo de
 | managementStateKey |Identificador exclusivo do estado de gerenciamento no data warehouse – chave substituta. |
 | managementStateName |Indica o estado da ação remota aplicada a esse dispositivo. |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | enrollmentTypeID  | Nome | Descrição |
 |---------|------------|--------|
@@ -140,7 +227,7 @@ A entidade **MdmStatuses** indica o estado de conformidade do dispositivo.
 | ComplianceStatus |Estado de conformidade do dispositivo. Deve ter um dos valores da tabela a seguir | 
 
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | MdmStatusID  | ComplianceStatus | Descrição |
 |---------|------------|--------|
@@ -161,7 +248,7 @@ A entidade **ManagementStates** fornece detalhes sobre o estado do dispositivo. 
 | managementStateKey | Identificador exclusivo do estado de gerenciamento no data warehouse – chave substituta. |
 | managementStateName | Indica o estado da ação remota aplicada a esse dispositivo. |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | managementStateID  | Nome | Descrição |
 |---------|------------|--------|
@@ -188,7 +275,7 @@ A entidade **WorkPlaceJoinStateTypes** representa o estado de ingresso no local 
 | WorkPlaceJoinStateKey | Identificador exclusivo do estado de ingresso do local de trabalho no data warehouse – chave substituta |
 | WorkPlaceJoinStateName | Estado do ingresso do local de trabalho |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | workPlaceJoinStateID  | Nome | Descrição |
 |---------|------------|--------|
@@ -212,7 +299,7 @@ A entidade **ManagementAgentTypes** representa os agentes usados para gerenciar 
 | ManagementAgentTypeKey | Identificador exclusivo do tipo de agente de gerenciamento no data warehouse – chave alternativa. |
 | ManagementAgentTypeName |Indica qual tipo de agente é usado para gerenciar o dispositivo. |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | ManagementAgentTypeID  | Nome | Descrição |
 |---------|------------|--------|

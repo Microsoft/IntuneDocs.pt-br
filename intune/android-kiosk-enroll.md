@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626077"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098310"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar o registro no Intune de dispositivos de quiosque Android Enterprise
 
@@ -112,7 +112,7 @@ Para dispositivos Android 5.1 e posteriores compatíveis com NFC, você pode pro
 
 ### <a name="enroll-by-using-a-token"></a>Registrar usando um token
 
-Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de Código QR ao usar o método de registro **aft#setup**.
+Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de código QR ao usar o método de registro **afw#setup**.
 
 1. Ligue o dispositivo apagado.
 2. Na tela **Boas-vindas**, selecione seu idioma.

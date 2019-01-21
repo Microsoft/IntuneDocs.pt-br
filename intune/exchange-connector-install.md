@@ -15,16 +15,16 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239584"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o conector do Exchange local do Intune no Microsoft Intune Azure
 
-Em um ambiente do Exchange Server local, o acesso condicional do Intune pode ser usado para permitir ou bloquear o acesso a caixas de correio locais do Exchange. Use os conectores locais do Exchange Active Sync para conectar o Intune às suas organizações do Exchange e configurar o acesso condicional do Intune junto com as políticas de conformidade do dispositivo. Em seguida, quando um dispositivo tentar se conectar ao Exchange, o Intune determinará se o dispositivo está registrado no Intune e está em conformidade. Para determinar quais dispositivos estão registrados no Intune, o conector do Exchange local mapeia registros EAS (Exchange Active Sync) no Exchange Server para registros do Intune. Para obter mais informações sobre como isso funciona, consulte [Quais são as maneiras comuns de usar o acesso condicional com o Intune?](conditional-access-intune-common-ways-use.md)
+Em um ambiente do Exchange Server local, o acesso condicional do Intune pode ser usado para permitir ou bloquear o acesso a caixas de correio locais do Exchange. Use os conectores locais do Exchange Active Sync para conectar o Intune às suas organizações do Exchange e configurar o acesso condicional do Intune junto com as políticas de conformidade do dispositivo. Em seguida, quando um dispositivo tentar se conectar ao Exchange, o Intune determinará se o dispositivo está registrado no Intune e se está em conformidade. Para determinar quais dispositivos estão registrados no Intune, o conector do Exchange local mapeia registros EAS (Exchange Active Sync) no Exchange Server para registros do Intune. Para obter mais informações sobre como isso funciona, consulte [Quais são as maneiras comuns de usar o acesso condicional com o Intune?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Agora, o Intune é compatível com vários conectores do Exchange locais por assinatura. Se você tiver mais de uma organização do Exchange local, poderá configurar um conector separado para cada organização do Exchange.
@@ -42,7 +42,7 @@ A tabela a seguir lista os requisitos para o computador no qual o conector do Ex
 
 |            Requisito             |                                                                                                                                                                                                        Mais informações                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         Sistemas operacionais          |                                                               O Intune é compatível como o conector do Exchange local em um computador que execute qualquer edição do Windows Server 2008 SP2 64 bits, do Windows Server 2008 R2, do Windows Server 2012, do Windows Server 2012 R2 ou do Windows Server 2016.<br /><br />O conector não tem suporte em instalações Server Core.                                                                |
+|         Sistemas operacionais          |                                                               O Intune é compatível como o conector do Exchange local em um computador que execute qualquer edição do Windows Server 2008 SP2 64 bits, do Windows Server 2008 R2, do Windows Server 2012, do Windows Server 2012 R2 ou do Windows Server 2016.<br /><br />O conector não é compatível com nenhuma instalação Server Core.                                                                |
 |         Microsoft Exchange         |                                                                           Os conectores locais exigem o Microsoft Exchange 2010 SP3 ou posteriores ou o Exchange Online Dedicado herdado. Para determinar se o seu ambiente do Exchange Online Dedicated está na configuração <strong>nova</strong> ou <strong>herdada</strong>, entre em contato com seu gerente de conta.                                                                           |
 | Autoridade de gerenciamento de dispositivo móvel |                                                                                                                              [Defina a autoridade de gerenciamento de dispositivo móvel para o Intune](mdm-authority-set.md).                                                                                                                               |
 |              Hardware              |                                                                                                                                                     O computador em que você instala o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e 10 GB de espaço livre em disco.                                                                                                                                                      |
@@ -78,7 +78,7 @@ A tabela a seguir lista os requisitos para o computador no qual o conector do Ex
 
 4. em **Configuração**, escolha **Conectores do Exchange ActiveSync** e, em seguida, escolha **Baixar o conector local**.
 
-5.  O conector do Exchange local está contido em uma pasta compactada (.zip) que pode ser aberta ou salva. Na caixa de diálogo **Download de Arquivos**, clique em **Salvar** para armazenar a pasta compactada em um local seguro.
+5.  O Exchange Connector local está em uma pasta compactada (.zip) que pode ser aberta ou salva. Na caixa de diálogo **Download de Arquivos**, clique em **Salvar** para armazenar a pasta compactada em um local seguro.
 
     > [!IMPORTANT]
     > Não renomeie nem mova os arquivos que estão na pasta do conector do Exchange local. Mover ou renomear o conteúdo da pasta causará falha na instalação do conector do Exchange.
@@ -97,7 +97,7 @@ Execute as seguintes etapas para instalar o conector do Exchange local do Intune
 
    ![Imagem mostrando onde escolher o tipo de Exchange Server](./media/intune-sa-exchange-connector-config.png)
 
-   Para um Exchange Server local, informe o nome do servidor ou um nome de domínio totalmente qualificado do Exchange Server que hospede a função de **Servidor de Acesso para Cliente**.
+   Para um Exchange Server local, forneça o nome do servidor ou um nome de domínio totalmente qualificado do Exchange Server que hospeda a função de **servidor Acesso para Cliente**.
 
    Para um Exchange Server hospedado, forneça o endereço do Exchange Server. Para encontrar o URL do Exchange Server Hospedado:
 
@@ -116,20 +116,20 @@ Execute as seguintes etapas para instalar o conector do Exchange local do Intune
 
        4. Selecione **OK**.
 
-   5. Nos campos **Usuário (Domínio\usuário)** e **Senha**, insira as credenciais necessárias para se conectar ao Exchange Server.
+4. Nos campos **Usuário (Domínio\usuário)** e **Senha**, insira as credenciais necessárias para se conectar ao Exchange Server.
 
-   6.  Forneça as credenciais necessárias para enviar notificações para a caixa de entrada do Exchange Server do usuário. Este usuário pode ser dedicado a apenas notificações. O usuário das notificações precisa de uma caixa de correio do Exchange para poder enviar notificações por email. Você pode configurar essas notificações com políticas de acesso condicional no Intune.  
+5. Forneça as credenciais necessárias para enviar notificações para a caixa de entrada do Exchange Server do usuário. Este usuário pode ser dedicado a apenas notificações. O usuário das notificações precisa de uma caixa de correio do Exchange para poder enviar notificações por email. Você pode configurar essas notificações com políticas de acesso condicional no Intune.  
 
-       Verifique se o serviço Descoberta Automática e os Serviços Web do Exchange estão configurados no Servidor de Acesso para Cliente do Exchange. Para obter mais informações, consulte [Servidor de Acesso para Cliente](https://technet.microsoft.com/library/dd298114.aspx).
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  No campo **Senha**, forneça a senha da conta para habilitar o Intune a acessar o Exchange Server.
+6. No campo **Senha**, forneça a senha da conta para habilitar o Intune a acessar o Exchange Server.
 
-   8. Selecione **Conectar**.
+7. Selecione **Conectar**.
 
    > [!NOTE]
    > Podem ser necessários alguns minutos para que a conexão seja configurada.
 
-Durante a configuração, o conector do Exchange armazena as configurações de proxy para habilitar o acesso à Internet. Se as configurações de proxy forem alteradas, você precisará reconfigurar o conector do Exchange para aplicar as configurações de proxy atualizadas ao conector do Exchange.
+Durante a configuração, o conector do Exchange armazena as configurações de proxy para habilitar o acesso à Internet. Se as configurações de proxy forem alteradas, você precisará reconfigurar o Exchange Connector para aplicar as configurações de proxy atualizadas a ele.
 
 Após o conector do Exchange configurar a conexão, os dispositivos móveis associados aos usuários que são gerenciados no Exchange serão automaticamente sincronizados e adicionados ao conector do Exchange. Pode levar algum tempo até que a sincronização seja concluída.
 
@@ -142,7 +142,7 @@ O Intune é compatível com vários conectores do Exchange locais por assinatura
 Os recursos de alta disponibilidade, monitoramento e sincronização manual descritos nas seções a seguir têm suporte para cada organização do Exchange conectada ao Intune.
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>Suporte de alta disponibilidade do Exchange Connector local 
-Após o Exchange Connector criar uma conexão com o Exchange usando o CAS especificado, o conector terá a capacidade de descobrir outros CASs. Se o CAS principal ficar desabilitado, o conector realizará o failover para outro CAS, se houver um disponível, até que o CAS principal fique disponível. Esse recurso está ativado por padrão. Você pode desativar esse recurso usando o procedimento a seguir:
+Depois que o Exchange Connector criar uma conexão com o Exchange usando o CAS especificado, o conector poderá descobrir outros CASs. Se o CAS principal ficar desabilitado, o conector realizará o failover para outro CAS, se houver um disponível, até que o CAS principal fique disponível. Esse recurso está ativado por padrão. Desligue esse recurso usando o seguinte procedimento:
 1. No servidor em que o Exchange Connector está instalado, vá para %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Usando um editor de texto, abra **OnPremisesExchangeConnectorServiceConfiguration.xml**.
 3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desabilitar o recurso.    
@@ -157,12 +157,12 @@ Após configurar os conectores do Exchange com êxito, você pode exibir o statu
 
 Você também pode verificar a hora e data da última tentativa de sincronização bem-sucedida.
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>Pacote de gerenciamento do SCOM (System Center Operations Manager)
+### <a name="system-center-operations-manager-management-pack"></a>Pacote de gerenciamento do System Center Operations Manager
 
-A partir do Intune versão 1710, é possível usar o [pacote de gerenciamento do SCOM para o conector do Exchange e Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Isso oferecerá diferentes maneiras de monitorar o conector do Exchange quando for necessário solucionar problemas.
+Na versão 1710 do Intune em diante, você poderá usar o [pacote de gerenciamento do Operations Manager para Exchange Connector e Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Isso oferecerá diferentes maneiras de monitorar o conector do Exchange quando for necessário solucionar problemas.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forçar manualmente uma sincronização rápida ou completa
-Um conector do Exchange local sincroniza de modo automático os registros de dispositivo EAS e Intune regularmente. Se o status de conformidade de um dispositivo for alterado, o processo de sincronização automática atualizará regularmente os registros para que o acesso ao dispositivo possa ser bloqueado ou permitido adequadamente.
+Um Exchange Connector local sincroniza de modo automático os registros de dispositivo do EAS e do Intune regularmente. Se o status de conformidade de um dispositivo for alterado, o processo de sincronização automática atualizará regularmente os registros para que o acesso ao dispositivo possa ser bloqueado ou permitido adequadamente.
 
    - **Sincronização rápida** ocorre regularmente, várias vezes ao dia. Uma sincronização rápida recupera informações de dispositivo para usuários almejados por acesso condicional do Exchange local e licenciados pelo Intune que foram alterados desde a última sincronização.
 

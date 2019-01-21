@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210781"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comuns e resoluções com perfis de dispositivo no Microsoft Intune
 
@@ -48,17 +48,17 @@ Quando uma política ou um aplicativo é atribuído, o Intune imediatamente come
 
 Se um dispositivo não fizer o check-in para obter a política após a primeira notificação ser enviada, o Intune fará mais três tentativas. Se o dispositivo estiver offline (por exemplo, desligado ou não conectado a uma rede), ele poderá não receber as notificações. Nesse caso, o dispositivo obterá a política em seu próximo check-in agendado com o serviço do Intune da seguinte maneira:
 
-- iOS e macOS: a cada seis horas
-- Android: a cada oito horas
-- Windows Phone: a cada oito horas
-- Computadores Windows 8.1 e Windows 10 registrados como dispositivos: a cada oito horas
+- iOS e macOS: A cada seis horas
+- Android: A cada oito horas
+- Windows Phone: A cada oito horas
+- Computadores Windows 8.1 e Windows 10 registrados como dispositivos: A cada oito horas
 
 Se o dispositivo for recém-registrado, a frequência do check-in será maior, desta forma:
 
-- iOS e macOS: a cada 15 minutos, durante seis horas e, então, a cada seis horas
-- Android: a cada três minutos, durante 15 minutos e, então, a cada 15 minutos, durante duas horas e, depois, a cada oito horas
-- Windows Phone: a cada cinco minutos, durante 15 minutos, então, a cada 15 minutos, durante duas horas e, depois, a cada oito horas
-- Computadores Windows registrados como dispositivos: a cada três minutos, durante 30 minutos e, então, a cada 8 horas
+- iOS e macOS: A cada 15 minutos, durante seis horas e, posteriormente, a cada seis horas
+- Android: A cada três minutos, durante 15 minutos; a cada 15 minutos, durante duas horas e, posteriormente, a cada oito horas
+- Windows Phone: A cada cinco minutos, durante 15 minutos; a cada 15 minutos, durante duas horas e, posteriormente, a cada oito horas
+- Computadores Windows registrados como dispositivos: A cada três minutos, durante 30 minutos e, posteriormente, a cada oito horas
 
 Se quiserem verificar imediatamente a política a qualquer momento, os usuários também poderão abrir o aplicativo Portal da Empresa e sincronizar o dispositivo.
 
@@ -72,11 +72,11 @@ Outras alterações, como revisar as informações de contato no portal da empre
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se várias políticas forem atribuídas ao mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?
 Se duas ou mais políticas forem atribuídas ao mesmo usuário ou dispositivo, a decisão de qual configuração aplicar ocorrerá no nível da configuração individual:
 
--   Configurações de política de conformidade sempre têm precedência sobre configurações da política
+- Configurações de política de conformidade sempre têm precedência sobre configurações da política
 
--   Se uma política de conformidade for avaliada em relação à mesma configuração em uma política de conformidade diferente, a configuração de política de conformidade mais restritiva será aplicada.
+- Se uma política de conformidade for avaliada em relação à mesma configuração em uma política de conformidade diferente, a configuração de política de conformidade mais restritiva será aplicada.
 
--   Se uma definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no Portal do Azure. Nessa situação, resolva os conflitos manualmente.
+- Se uma definição de uma política de configuração estiver em conflito com uma configuração em uma política de configuração diferente, esse conflito será exibido no Portal do Azure. Nessa situação, resolva os conflitos manualmente.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicativo entram em conflito umas com as outras? Qual delas será aplicada ao aplicativo?
 Os valores de conflito são as configurações mais restritivas disponíveis em uma política de proteção de aplicativo, exceto pelos campos de entrada de número (como as tentativas de PIN antes de redefinir). Os campos de entrada de número serão definidos com valores iguais aos de uma política de MAM criada no console usando a opção de configurações recomendadas.
@@ -93,40 +93,43 @@ Quando você atribui um perfil personalizado, garanta que as configurações def
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>O que acontece quando um perfil é excluído ou não é mais aplicável?
 Quando você exclui um perfil ou remove um dispositivo de um grupo que tenha o perfil, o perfil e as configurações são removidos do dispositivo de acordo com as listas a seguir:
 
-- Perfis de email, certificado, VPN e Wi-Fi: esses perfis são removidos de todos os dispositivos registrados com suporte.
+- Perfis de Wi-Fi, VPN, certificado e email: Esses perfis são removidos de todos os dispositivos registrados compatíveis.
 - Todos os outros tipos de perfil:  
-    - **Dispositivos Android e Windows**: as configurações não são removidas do dispositivo
-    - **Dispositivos Windows Phone 8.1**: as configurações a seguir são removidas:  
-        - Exigir uma senha para desbloquear os dispositivos móveis
-        - Permitir senha simples
-        - Comprimento mínimo da senha
-        - Tipo de senha necessária
-        - Expiração da senha (dias)
-        - Lembrar de histórico de senha
-        - Número de falhas de logon repetidas permitido antes do dispositivo ser apagado
-        - Minutos de inatividade antes de a senha ser necessária
-        - Tipo de senha necessária – o número mínimo de conjuntos de caracteres
-        - Permitir câmera
-        - Exigir criptografia no dispositivo móvel
-        - Permitir armazenamento removível
-        - Permitir navegador da web
-        - Permitir loja de aplicativo
-        - Permitir captura de tela
-        - Permitir localização geográfica
-        - Permitir conta da Microsoft
-        - Permitir copiar e colar
-        - Permitir compartilhamento de Internet por Wi-Fi
-        - Permitir conexão automática para liberar pontos de acesso Wi-Fi
-        - Permitir relatórios de pontos de acesso Wi-Fi
-        - Permitir apagamento
-        - Permitir Bluetooth
-        - Permitir NFC
-        - Permitir Wi-Fi
 
-    - **iOS**: todas as configurações são removidas, exceto:
-        - Permitir roaming de Voz
-        - Permitir roaming de Dados
-        - Permitir sincronização automática durante roaming
+  - **Dispositivos Windows e Android**: As configurações não são removidas do dispositivo
+  - **Dispositivos Windows Phone 8.1**: As seguintes configurações são removidas:  
+  
+    - Exigir uma senha para desbloquear os dispositivos móveis
+    - Permitir senha simples
+    - Comprimento mínimo da senha
+    - Tipo de senha necessária
+    - Expiração da senha (dias)
+    - Lembrar de histórico de senha
+    - Número de falhas de logon repetidas permitido antes do dispositivo ser apagado
+    - Minutos de inatividade antes de a senha ser necessária
+    - Tipo de senha necessária – o número mínimo de conjuntos de caracteres
+    - Permitir câmera
+    - Exigir criptografia no dispositivo móvel
+    - Permitir armazenamento removível
+    - Permitir navegador da web
+    - Permitir loja de aplicativo
+    - Permitir captura de tela
+    - Permitir localização geográfica
+    - Permitir conta da Microsoft
+    - Permitir copiar e colar
+    - Permitir compartilhamento de Internet por Wi-Fi
+    - Permitir conexão automática para liberar pontos de acesso Wi-Fi
+    - Permitir relatórios de pontos de acesso Wi-Fi
+    - Permitir apagamento
+    - Permitir Bluetooth
+    - Permitir NFC
+    - Permitir Wi-Fi
+
+  - **iOS**: Todas as configurações são removidas, exceto:
+  
+    - Permitir roaming de Voz
+    - Permitir roaming de Dados
+    - Permitir sincronização automática durante roaming
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivo, mas as alterações não entraram em vigor
 Os dispositivos Windows Phone não permitem que as políticas de segurança definidas com uso de MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define uma **Senha com um número mínimo de caracteres** igual a 8 e tenta reduzi-la a 4. O perfil mais restritivo já foi aplicado ao dispositivo.
@@ -134,6 +137,14 @@ Os dispositivos Windows Phone não permitem que as políticas de segurança defi
 Se você quiser alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, no Windows 8.1, na área de trabalho, passe o dedo da direita para a esquerda e selecione **Configurações** > **Painel de Controle**. Selecione o miniaplicativo **Contas de Usuário**. No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** (em direção à parte inferior). Selecione-o e, em seguida, escolha **Redefinir Políticas**.
 
 Outros dispositivos MDM, como Android, Windows Phone 8.1 e posteriores, iOS e Windows 10, precisarão ser desativados e registrados novamente no serviço para aplicar um perfil menos restritivo.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Algumas configurações em um perfil do Windows 10 retornam "Não Aplicável"
+Algumas configurações em dispositivos Windows 10 pode ser exibidas como "Não Aplicável". Quando isso acontecer, essa configuração específica não será compatível com a versão ou a edição do Windows em execução no dispositivo. Essa mensagem pode ocorrer pelos seguintes motivos:
+
+- A configuração só está disponível para versões mais recentes do Windows, não para a versão atual de sistema operacional do dispositivo.
+- A configuração só está disponível para edições ou SKUs específicos do Windows, como Home, Professional, Enterprise e Education.
+
+Para saber mais sobre os requisitos de versão e SKU para as diferentes configurações, confira a [Referência do CSP (Provedor de Serviços de Configuração)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="next-steps"></a>Próximas etapas
 Precisa de mais ajuda? Veja [Como obter suporte para o Microsoft Intune](get-support.md).

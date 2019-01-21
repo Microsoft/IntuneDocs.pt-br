@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642839"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203409"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
@@ -192,7 +192,15 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     | <strong>Zoom</strong> | Dará ao usuário a opção para aplicar zoom na exibição quando ele configurar o dispositivo. |
     | <strong>Siri</strong> | Dará ao usuário a opção de configurar o Siri. |
     | <strong>Dados de diagnóstico</strong> | Exibir a tela **Diagnóstico** para o usuário. Esta tela fornece ao usuário a opção de enviar dados de diagnóstico para a Apple. |
-
+    | <strong>Exibir Tom</strong> | Forneça ao usuário a opção de ativar a configuração Exibir Tom. |
+    | <strong>Privacidade</strong> | Exiba a tela Privacidade para o usuário. |
+    | <strong>Migração do Android</strong> | Forneça ao usuário a opção de migrar a data de um dispositivo Android. |
+    | <strong>iMessage e FaceTime</strong> | Forneça ao usuário a opção de configurar o iMessage e o FaceTime. |
+    | <strong>Integração</strong> | Exiba telas informativas de integração para educação do usuário, como Folha de Rosto, Multitarefa e Centro de Controle. |
+    | <strong>Migração de Relógio</strong> | Forneça ao usuário a opção de migrar dados de um dispositivo de relógio. |
+    | <strong>Tempo da Tela</strong> | Exiba a tela Tempo da Tela. |
+    | <strong>Atualização de Software</strong> | Exiba a tela de atualização de software obrigatória. |
+    | <strong>Instalação de SIM</strong> | Forneça ao usuário a opção de adicionar um plano de celular. |
 
 14. Selecione **OK**.
 

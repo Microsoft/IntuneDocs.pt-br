@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180724"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297393"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar VPN (rede virtual privada) por aplicativo no Intune para dispositivos iOS
 
@@ -33,9 +33,9 @@ A VPN por aplicativo está disponível para os seguintes provedores:
  - Citrix
  - F5
  - Pulse Connect Secure
+ - Redes de Palo Alto
  - SonicWall
- - Palo Alto Networks GlobalProtect
- - Zscaler
+ - Acesso Privado do Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Pré-requisitos para a VPN por aplicativo
 
@@ -186,10 +186,12 @@ Com a VPN por aplicativo configurada e associada ao seu aplicativo, verifique se
     - Conexão de cápsula do ponto de verificação
     - Cisco AnyConnect
     - VPN Citrix
+    - SSO da Citrix
     - Acesso por F5
+    - Palo Alto Networks GlobalProtect
     - Pulse Secure
     - SonicWall Mobile Connect
-    - Aplicativo Zscaler
+    - Zscaler
 
     > [!NOTE]
     > Se você estiver usando o aplicativo de VPN da Pulse Secure, haverá a opção de usar o túnel de camada de pacote ou de camada de aplicativo. Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote.

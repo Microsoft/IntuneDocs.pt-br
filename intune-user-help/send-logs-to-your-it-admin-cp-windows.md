@@ -1,11 +1,11 @@
 ---
 title: Enviar logs para o suporte de sua empresa de dispositivos Windows 10 | Microsoft Docs
-description: Enviar detalhes do erro para ajudar a empresa a dar suporte à correção de problemas do aplicativo
+description: Enviar erro por email e registrar em log os detalhes para ajudar o suporte da empresa a corrigir problemas de aplicativo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,32 +17,44 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.openlocfilehash: 3c68f5f89098a5e294644973f23f57c038936d40
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006311"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54202967"
 ---
-# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Enviar logs de diagnóstico ao suporte de sua empresa no Portal da Empresa para Windows
+# <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Enviar um email ao suporte da empresa sobre o problema por meio do Portal da Empresa para Windows
 
-Solucione problemas de aplicativo no Portal da Empresa para Windows 10. Se você tiver problemas ao usar o aplicativo em seu dispositivo com Windows 10, envie um email à sua equipe de suporte para obter ajuda. Os eventos e erros que ocorrem no aplicativo Portal da Empresa são salvos em seu dispositivo em um documento especial chamado de _log de diagnóstico_. Quando você pede ajuda, o aplicativo abre um email previamente preenchido com a ID de diagnóstico, para que você possa obter rapidamente a ajuda que necessita.
+Solucione problemas de aplicativo no aplicativo Portal da Empresa para Windows 10. Caso tenha problemas em seu dispositivo Windows 10, envie um email à equipe de suporte para obter ajuda. 
+
+Quando você solicitar ajuda, um email pré-populado será aberto, no qual você poderá descrever o problema em detalhes. Ele também inclui uma ID de log de diagnóstico. Caso a equipe de suporte não consiga resolver o problema de acordo com sua descrição, ela contatará a Microsoft para obter ajuda. A Microsoft precisará da ID de diagnóstico para referenciar os logs do aplicativo.   
+
 
 > [!Note]       
-> Depois de clicar em **Obter ajuda**, o Portal da Empresa enviará automaticamente os logs à equipe de suporte da Microsoft. Esta etapa é proativa, o que facilita a solução de problemas relacionados à Microsoft.  
+> Depois de clicar em **Obter ajuda**, o Portal da Empresa enviará automaticamente os logs à equipe de suporte da Microsoft. Esta etapa é proativa, o que facilita a solução de problemas escalonados ao Suporte da Microsoft. Conforme mencionado acima, a equipe de suporte da Microsoft pode extrair os logs usando a ID de diagnóstico em seu email.  
+
+## <a name="what-is-a-diagnostic-log"></a>O que é um log de diagnóstico?
+
+Os eventos e erros que ocorrem no aplicativo Portal da Empresa são salvos em seu dispositivo em um documento especial chamado de _log de diagnóstico_. Os logs podem revelar:  
+* Quando um problema ocorreu.  
+* As etapas anteriores ao problema.  
+* O estado do aplicativo no momento em que o problema surgiu.   
+
+## <a name="steps-to-get-help"></a>Etapas para obter ajuda  
 
 1. Abra o aplicativo do **Portal da Empresa**.
-2. Selecione **Configurações** > **Obter ajuda**.  
+2. Selecione **Ajuda e suporte** > **Obter ajuda**.  
 
-   ![Captura de tela da página Configurações, destacando as Configurações e a seção e o botão Obter ajuda.](./media/1811_Get_Help_Windows_Cpapp.png)    
+   ![Captura de tela da página Ajuda e suporte, realçando a barra de navegação à esquerda e a seção Obter Ajuda.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
-3. Quando a tela **Compartilhar** aparecer, selecione **Email**. O aplicativo **Email** criará uma mensagem de email para você. Digite uma descrição do problema para que a equipe de suporte tenha uma ideia do que procurar nos logs.
+3. Quando a tela **Compartilhar** aparecer, selecione **Email**. O aplicativo **Email** criará uma mensagem de email para você. Digite uma descrição do problema que você enfrentou para que a equipe de suporte tenha uma ideia do que procurar.  
 
    ![Captura da tela Compartilhar, realçando o ícone do aplicativo Email.](./media/1811_Mail_Logs_Windows_CPapp.png)  
 
 
    ![Captura de tela do email previamente preenchido aberto no aplicativo Email.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
 
-Se a sua empresa precisar de outras informações sobre a atividade do aplicativo ou do dispositivo, talvez também seja necessário enviar os [logs do aplicativo Configurações](send-logs-to-your-it-admin-settings-windows.md).  
+Caso sua empresa precise de mais informações sobre a atividade do aplicativo ou do dispositivo, talvez seja necessário enviar os [logs do aplicativo Configurações](send-logs-to-your-it-admin-settings-windows.md).  
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
