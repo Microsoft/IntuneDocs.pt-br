@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324898"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316909"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -147,39 +147,6 @@ Para evitar potenciais falsificações, divulgações de informações e aumento
 -   Certifique-se de que o aplicativo é proveniente de uma fonte confiável.
 
 -   Proteja o diretório de saída que contém o aplicativo encapsulado. Considere usar um diretório de nível de usuário para a saída.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Exigindo prompt de logon de usuário para um registro de serviço APP-WE automático, exigindo políticas de proteção de aplicativo do Intune para usar o aplicativo de LOB Android encapsulado e habilitando o SSO da ADAL (opcional)
-
-Este é um guia para exigir o prompt do usuário na inicialização do aplicativo para um registro de serviço de APP-WE automático, (chamado de **registro padrão**, nesta seção), exigindo políticas de proteção de aplicativo do Intune para permitir que apenas usuários protegidos pelo Intune usem seu aplicativo de LOB Android encapsulado. Ele também aborda como habilitar o SSO para o aplicativo de LOB Android encapsulado. 
-
-> [!NOTE] 
-> Os benefícios do **registro padrão** incluem um método simplificado de obter a política de serviço do APP-WE para um aplicativo no dispositivo.
-
-### <a name="general-requirements"></a>Requisitos gerais
-* A equipe do SDK do Intune exigirá a ID do aplicativo. Uma maneira de localizar isso é pelo [Portal do Azure](https://portal.azure.com/), em **Todos os Aplicativos**, na coluna **ID do Aplicativo**. Uma boa maneira de contatar a equipe do SDK do Intune é enviando um email para msintuneappsdk@microsoft.com.
-     
-### <a name="working-with-the-intune-sdk"></a>Trabalhando com o SDK do Intune
-Essas instruções são específicas para todos os aplicativos Android e Xamarin que devem exigir políticas de proteção de aplicativo do Intune para serem usados em um dispositivo de usuário final.
-
-1. Configure a ADAL usando as etapas definidas no [Guia do SDK do Intune para Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
-
-> [!NOTE]
-> O termo "ID do cliente" vinculado ao aplicativo é o mesmo que o termo "ID do aplicativo" do Portal do Azure vinculado ao aplicativo. 
-> * Para habilitar o SSO, é necessária a "Configuração da ADAL comum" nº2.
-
-2. Habilite o registro padrão, colocando o seguinte valor no manifesto:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Essa deve ser a única integração de MAM-WE no aplicativo. Se houver outras tentativas de chamar APIs MAMEnrollmentManager, poderão ocorrer conflitos.
-
-3. Habilite a política de MAM necessária colocando o seguinte valor no manifesto:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Isso força o usuário a baixar o Portal da Empresa no dispositivo e concluir o fluxo de registro padrão antes de usar.
 
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)
