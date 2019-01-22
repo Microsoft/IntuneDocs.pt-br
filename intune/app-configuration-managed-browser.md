@@ -176,7 +176,7 @@ Para saber mais sobre como o Managed Browser, o Microsoft Edge e o Proxy de Apli
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Como configurar a página inicial de um navegador protegido
 
 Essa definição permite configurar a página inicial que os usuários visualizam ao iniciar um navegador protegido ou criar uma nova guia. 
-- Essa configuração mostrará a página da Web no Managed Browser.  Ao invés disso, o Edge exibirá um atalho da página inicial.
+- Essa configuração mostrará a página da Web no Managed Browser.  Ao invés disso, o Microsoft Edge exibirá um atalho da página inicial.
 - O ícone de atalho da página inicial é exibido como um ícone sob o controle de pesquisa.  Ele não pode ser editado ou excluído.
 - O atalho da página inicial exibirá o nome da sua organização para diferenciá-lo.  Ele sempre será exibido como o primeiro ícone.
 
@@ -266,12 +266,12 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
 Agora o Intune Managed Browser e o Microsoft Edge são considerados navegadores protegidos/gerenciados por política. Atualmente as políticas existentes de proteção de aplicativos causam a abertura de links da web de aplicativos gerenciados no Intune em um navegador específico, dependendo do cenário e da plataforma. 
 
 No Android: 
-* Managed Browser, se o MB e o Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política.  
+* Managed Browser, se o MB e o Microsoft Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política.  
 * Microsoft Edge, se só houver ele no dispositivo e se for o destino da política.
 * Managed Browser se só houver ele no dispositivo e se for o destino da política. 
 
 No iOS, para aplicativos integrados com o SDK do Intune para iOS v. 9.0.9 e superiores: 
-* Managed Browser se o MB e o Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política **ou** Microsoft Edge se estiver instalado e tiver recebido a política. 
+* Managed Browser se o MB e o Microsoft Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política **ou** Microsoft Edge se estiver instalado e tiver recebido a política. 
 * Microsoft Edge, se só houver ele no dispositivo, for o destino e tiver recebido a política. 
 * Managed Browser, se só houver ele no dispositivo, for o destino e tiver recebido a política.
 
