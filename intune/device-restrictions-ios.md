@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203664"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380499"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS para permitir ou restringir recursos usando o Intune
 
@@ -151,12 +151,12 @@ O modo supervisionado do iOS só pode ser habilitado durante a instalação inic
 - **Conteúdo adulto de música, podcast ou notícias do iTunes (somente supervisionado)**: Escolha **Bloquear** para impedir o conteúdo adulto de música, podcast ou notícias do iTunes. **Não configurado** permite ao dispositivo acessar o conteúdo classificado como adulto na loja.
 - **Baixar conteúdo da iBook Store sinalizado como 'Erotismo'**: Escolha **Bloquear** para impedir os usuários de baixar uma mídia da iBook Store que esteja marcada como Erotismo. **Não configurado** permite que o usuário baixe livros da categoria "Erotismo".
 - **Exibindo documentos corporativos em aplicativos não gerenciados**: A opção **Bloquear** impede a exibição de documentos não corporativos em aplicativos não gerenciados. **Não configurado** permite que documentos corporativos sejam exibidos em qualquer aplicativo. Por exemplo, você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como **Bloquear**. Após o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permite mais salvar.
-  - **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciadas (somente supervisionado)**: Quando essa opção é definida como **Permitir**, os usuários podem adicionar ou sincronizar as informações de contato do Outlook de qualquer pessoa, incluindo contatos empresariais e corporativos, ao/com o aplicativo Contatos interno do dispositivo. Quando essa opção é definida como **Não configurado**, os usuários não podem adicionar contatos do Outlook ao aplicativo Contatos interno do dispositivo.
+  - **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciadas**: Quando essa opção é definida como **Permitir**, os usuários podem adicionar ou sincronizar as informações de contato do Outlook de qualquer pessoa, incluindo contatos empresariais e corporativos, ao/com o aplicativo Contatos interno do dispositivo. Quando essa opção é definida como **Não configurado**, os usuários não podem adicionar contatos do Outlook ao aplicativo Contatos interno do dispositivo.
   
     Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
   
 - **Exibindo documentos não corporativos em aplicativos corporativos**: A opção **Bloquear** impede a exibição de documentos não corporativos em aplicativos corporativos. **Não configurado** permite que qualquer documento seja exibido em aplicativos gerenciados corporativos.
-  - **Permitir que aplicativos não gerenciados leiam contas de contatos gerenciadas (somente supervisionado)**: Quando essa opção é definida como **Permitir**, os usuários podem adicionar as informações de contato do aplicativo iContacts de qualquer pessoa ao Outlook. A opção **Não configurado** impede a leitura, incluindo a remoção de duplicatas, do aplicativo Contatos interno do dispositivo.
+  - **Permitir que aplicativos não gerenciados leiam contas de contatos gerenciadas**: Quando essa opção é definida como **Permitir**, os usuários podem adicionar as informações de contato do aplicativo iContacts de qualquer pessoa ao Outlook. A opção **Não configurado** impede a leitura, incluindo a remoção de duplicatas, do aplicativo Contatos interno do dispositivo.
   
     Para usar essa configuração, defina a configuração **Exibindo documentos não corporativos em aplicativos corporativos** como **Bloquear**.
   

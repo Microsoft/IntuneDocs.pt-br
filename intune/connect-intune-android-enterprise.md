@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 698bc4e7e2d2cf8ece1b1c17b091a91c76a7d178
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184279"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386902"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Conectar sua conta do Intune à sua conta do Android Enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para dar suporte a dispositivos de perfil de trabalho Android e a dispositivos de quiosque Android, você precisa conectar sua conta de locatário do Intune à sua conta do Android Enterprise. 
+Para dar suporte a dispositivos de [perfil de trabalho Android](android-work-profile-enroll.md), [dispositivos Android totalmente gerenciados](android-fully-managed-enroll.md) e [dispositivos Android dedicados](android-kiosk-enroll.md), você precisa conectar sua conta de locatário do Intune à sua conta corporativa do Android.  
 
 > [!NOTE]
 > Devido à interação entre os domínios da Google e da Microsoft, esta etapa pode exigir que você ajuste as configurações do navegador.  Verifique se "portal.azure.com" e "play.google.com" estão na mesma zona de segurança em seu navegador.

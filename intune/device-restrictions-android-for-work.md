@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203596"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387006"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -87,7 +87,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 
 ### <a name="kiosk-settings"></a>Configurações do quiosque
 
-É possível configurar um dispositivo para executar um ou vários aplicativos. Quando um dispositivo está no modo de quiosque, somente os aplicativos que você adiciona ficam disponíveis.
+É possível configurar um dispositivo para executar um ou vários aplicativos. Quando um dispositivo está no modo de quiosque, somente os aplicativos que você adiciona ficam disponíveis. Essas configurações se aplicam a dispositivos Android dedicados, mas não a dispositivos Android dedicados e totalmente gerenciados.
 
 **Modo de quiosque**: Escolha se o dispositivo executará um ou vários aplicativos.
 

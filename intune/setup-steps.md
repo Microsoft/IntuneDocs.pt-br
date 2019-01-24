@@ -15,12 +15,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: db499f2d55318919f420e03be0883ec70d949d20
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 576e690e6f77480756e1406e6c0bea8696c422ea
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180350"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380459"
 ---
 # <a name="set-up-intune"></a>Configurar Intune
 
@@ -30,7 +30,7 @@ Essas etapas de configuração ajudam a habilitar o MDM (gerenciamento de dispos
 
 Algumas etapas, como configurar uma assinatura do Intune e configurar a autoridade de MDM, são necessárias para a maioria dos cenários. Outras etapas, como configurar um domínio personalizado ou adicionar aplicativos, são opcionais, dependendo das necessidades da sua empresa.
 
-Caso esteja usando o Microsoft System Center Configuration Manager para gerenciar computadores e servidores, é possível [estender o Configuration Manager para gerenciar dispositivos móveis](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Caso esteja usando o Microsoft System Center Configuration Manager para gerenciar computadores e servidores, é possível [anexar o Configuration Manager À nuvem com cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview).
 
 >[!TIP]
 >Você pode usar o *Benefício do FastTrack Center* ao comprar no mínimo 150 licenças para o Intune em um plano qualificado. Com esse serviço, os especialistas da Microsoft trabalharão junto a você para deixar o ambiente pronto para o Intune. Consulte [Benefício do FastTrack Center para o EMS (Enterprise Mobility + Security)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
