@@ -389,6 +389,11 @@ items:
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md
+      - name: Linhas de base de segurança
+        href: security-baselines.md
+        items:
+        - name: Monitorar as linhas de base
+          href: security-baselines-monitor.md
       - name: Endpoint Protection
         href: endpoint-protection-configure.md
     - name: Controle de acesso à rede
@@ -442,7 +447,7 @@ items:
           items:
           - name: Adicionar manualmente o aplicativo Portal da Empresa
             href: store-apps-company-portal-app.md
-        - name: Aplicativos de perfil de trabalho do Android
+        - name: Aplicativos Google Play gerenciados
           href: apps-add-android-for-work.md
         - name: Aplicativos do Office 365 para Windows 10
           href: apps-add-office365.md
@@ -569,6 +574,8 @@ items:
         href: troubleshoot-app-install.md
       - name: Logs de auditoria de atividades do Intune
         href: monitor-audit-logs.md
+      - name: Examinar logs com o Azure Monitor
+        href: review-logs-using-azure-monitor.md
       - name: Examine os logs de proteção do aplicativo
         href: app-protection-policy-settings-log.md
       - name: Solucionar problemas de perfis de email
@@ -938,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir vazamento de dados em dispositivos não gerenciados
       href: data-leak-prevention.md
-ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: 70240d3c6969ffe86d3b32b14b50b390020b10b0
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899120"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072483"
