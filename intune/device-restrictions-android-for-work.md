@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387006"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072551"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -48,7 +48,6 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 - **Alterações na configuração de Wi-Fi**: Escolha **Bloquear** para impedir que os usuários alterem as configurações de Wi-Fi criadas pelo proprietário do dispositivo. Os usuários podem criar suas próprias configurações de Wi-Fi. **Não configurado** permite que os usuários alterem as configurações de Wi-Fi no dispositivo.
 - **Configuração de ponto de acesso Wi-Fi**: Escolha **Bloquear** para impedir que os usuários criem ou alterem as configurações de Wi-Fi. **Não configurado** permite que os usuários alterem as configurações de Wi-Fi no dispositivo.
 - **Configuração de Bluetooth**: Escolha **Bloquear** para impedir que os usuários configurem o Bluetooth no dispositivo. **Não configurado** permite o uso de Bluetooth no dispositivo.
-- **Compartilhamento de contatos por Bluetooth**: Escolha **Bloquear** para impedir o acesso a contatos de trabalho de outro dispositivo, por exemplo, em um sistema de carro, quando o dispositivo Android estiver emparelhado via Bluetooth. **Não configurado** permite acesso aos contatos de trabalho em outro dispositivo Bluetooth que esteja emparelhado com o dispositivo Android.
 - **Compartilhamento de internet e acesso a pontos de acesso**: Escolha **Bloquear** para impedir o compartilhamento e o acesso a pontos de acesso portáteis. **Não configurado** permite o compartilhamento e acesso a pontos de acesso portáteis.
 - **Armazenamento USB**: Escolha **Permitir** para acessar o armazenamento USB no dispositivo. **Não configurado** impede o acesso ao armazenamento USB.
 - **Transferência de arquivo por USB**: Escolha **Bloquear** para evitar a transferência de arquivos por USB. **Não configurado** permite a transferência de arquivos.

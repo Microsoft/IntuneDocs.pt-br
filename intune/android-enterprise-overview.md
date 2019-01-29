@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f3bea9b1678669aa568c44e63f57aebd832cf203
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751171"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerenciar dispositivos de perfil de trabalho Android com o Intune
 
@@ -67,7 +67,7 @@ As políticas de proteção do aplicativo aplicadas são totalmente compatíveis
 
 O suporte a VPN é semelhante aos perfis VPN do Android. Os mesmos provedores VPN e opções de configuração básicas estão disponíveis para o gerenciamento do Android Enterprise com duas diferenças:
 
--  **VPN com escopo de perfil de trabalho** – as conexões VPN são limitadas apenas aos aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android Enterpise podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada. Para obter mais informações, confira [Configurações de VPN do Android Enterprise](vpn-settings-android.md#android-for-work-vpn-settings).
+-  **VPN com escopo de perfil de trabalho** – as conexões VPN são limitadas apenas aos aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android Enterpise podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada. Para obter mais informações, confira [Configurações de VPN do Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 -  **VPN específica do aplicativo** – a VPN específica do aplicativo pode ser configurada no Intune quando o provedor VPN dá suporte para:
     - configuração para VPN específica do aplicativo

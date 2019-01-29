@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387199"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146903"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Configurar o registro do Intune para dispositivos Android totalmente gerenciados (versão prévia)
 
@@ -38,7 +38,7 @@ Você deve ter um locatário autônomo do Intune para gerenciar dispositivos And
 
 Os dispositivos precisam atender a esses requisitos para serem gerenciados como um dispositivo Android totalmente gerenciado:
 
-- Sistema operacional Android versão 6.0 e posterior.
+- Sistema operacional Android versão 5.1 e posterior.
 - Os dispositivos precisam executar um build do Android que tenha conectividade com GMS (Google Mobile Services). Os dispositivos precisam ter o GMS disponível e conseguir se conectar a ele.
 
 Não haverá nenhuma restrição de OEM da fabricante do dispositivo se os requisitos acima forem atendidos.

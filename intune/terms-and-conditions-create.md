@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831506"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Termos e condições para acesso do usuário
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032292"
 
 Como um administrador do Intune, você pode exigir que os usuários aceitem os termos e condições da sua empresa antes de usarem o Portal da Empresa para:
 - registrar dispositivos
-- acessar recursos como email e aplicativos da empresa.
+- acessar recursos como email e aplicativos da empresa.    
 A configuração dos termos e condições é opcional.
 
 Você pode criar vários conjuntos de termos e atribuí-los a grupos diferentes, por exemplo, para oferecer suporte a idiomas diferentes.

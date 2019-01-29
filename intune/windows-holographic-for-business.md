@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831591"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar diferentes recursos de gerenciamento de dispositivo em dispositivos do Windows Holographic e HoloLens com o Intune
 
@@ -108,7 +108,7 @@ Em seus perfis, você pode usar o OMA-URI para personalizar algumas configuraç�
 
 Para definir configurações do OMA-URI (Open Mobile Alliance Uniform Resource Identifier), você pode criar um perfil personalizado do Intune. Use as configurações de OMA-URI para controlar recursos diferentes em seus dispositivos Windows Holographic for Business, como habilitação de VPN ou verificar se há atualizações no Microsoft Update.
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Configurar o modo de quiosque](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Configurar o modo de quiosque](kiosk-settings-holographic.md)
 
 Usando os recursos de computador compartilhados ou convidados disponíveis no Intune, você pode configurar dispositivos do Windows Holographic for Business para serem executados como um quiosque. Esses dispositivos podem executar um aplicativo (modo de quiosque de aplicativo único) ou vários aplicativos (modo de quiosque de vários aplicativos).
 

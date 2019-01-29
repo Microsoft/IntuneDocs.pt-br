@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068281"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Registre automaticamente dispositivos macOS no Programa de registro de dispositivos ou no Apple School Manager
 
@@ -54,7 +54,7 @@ Para registrar dispositivos macOS com o DEP ou Apple School Manager, é necessá
 Você pode usar o portal da Apple para criar um token. Também pode usar o portal da Apple para atribuir dispositivos ao Intune para gerenciamento.
 
 > [!NOTE]
-> Caso exclua o token do portal clássico do Intune antes de migrar para o Azure, o Intune pode restaurar um token da Apple. Você pode excluir o token novamente no Portal do Azure.
+> Caso exclua o token do portal clássico do Intune antes de migrar para o Azure, o Intune pode restaurar um token da Apple. Você pode excluir o token novamente no portal do Azure.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Etapa 1. Baixe o certificado de chave pública do Intune necessário para criar um token.
 
@@ -150,7 +150,7 @@ Agora que você instalou o token, pode criar um perfil de registro para os dispo
     | <strong>FileVault</strong> | Dará ao usuário a opção de configurar a criptografia do FileVault. |
     | <strong>Diagnóstico do iCloud</strong> | Dará ao usuário a opção de enviar dados de diagnóstico do iCloud para a Apple. |
     | <strong>Registro</strong>| Exigirá que o usuário registre o dispositivo. |
-
+    
    
 
 10. Selecione **OK**.
@@ -178,7 +178,7 @@ Atribua um perfil do Programa de Registro aos dispositivos antes de registrá-lo
 
 Você pode escolher um perfil padrão do macOS e do iOS a ser aplicado a todos os dispositivos que se registrem com um token específico. 
 
-1. No Intune, no Portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista.
+1. No Intune, no portal do Azure, escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista.
 2. Escolha **Definir como Perfil Padrão**, selecione um perfil na lista suspensa e escolha **Salvar**. Este perfil será aplicado a todos os dispositivos registrados com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -192,7 +192,7 @@ Você habilitou o gerenciamento e a sincronização entre a Apple e o Intune e a
     ![Captura de tela de geração de novo token.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. Escolha **Token do Seu Servidor**.  
-5. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token.
+5. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivos** > **Registro da Apple** > **Tokens do programa de registro** > escolha o token.
     ![Captura de tela de tokens do programa de registro.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. Escolha **Renovar token** e insira a ID da Apple usada para criar o token original.  

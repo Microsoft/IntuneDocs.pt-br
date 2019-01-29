@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831557"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
 
@@ -106,7 +106,7 @@ Depois de criar anéis de atualização, você poderá atribuí-los em grupos de
 
    - **Impedir que o usuário pause as atualizações do Windows**: Permitido por padrão. Use essa configuração para impedir ou permitir que os usuários pausem uma instalação de atualização nas *Configurações* de seus computadores. 
       
-   - **Modo de download de otimização de entrega**: A otimização de entrega não está mais configurada como parte de um Grupo de Atualização do Windows 10 em Atualizações de Software. Agora, a Otimização de Entrega é definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis no console. Remova essas configurações anteriores editando-as para *Não configurado*, mas, de outro modo, elas não podem ser modificadas. Para evitar conflitos entre políticas novas e antigas, confira [Mover de grupos de atualização existentes para a Otimização de Entrega](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) e, em seguida, mova as configurações para um perfil de Otimização de Entrega. 
+   - **Modo de download de otimização de entrega**: A otimização de entrega não está mais configurada como parte de um Grupo de Atualização do Windows 10 em Atualizações de Software. Agora, a Otimização de Entrega é definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis no console. Remova essas configurações anteriores editando-as para *Não configurado*, mas, de outro modo, elas não podem ser modificadas. Para evitar conflitos entre políticas novas e antigas, confira [Mover de grupos de atualização existentes para a Otimização de Entrega](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) e, em seguida, mova as configurações para um perfil de Otimização de Entrega. 
 
 5. Ao terminar, selecione **OK**. Em **Criar anel de atualização**, selecione **Criar**.
 

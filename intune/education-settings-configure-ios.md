@@ -16,18 +16,19 @@ ms.reviewer: derriw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd71af5d52f81d05ce424212e029f01c59a33a8d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831574"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como definir as configurações do Intune para o aplicativo Sala de Aula para iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
->[!NOTE]
->Configurações do Intune para o Aplicativo de Sala de Aula se tornaram obsoletas no Intune. Este artigo é aplicável somente para usuários com perfis de treinamento existentes no Intune.
+
+> [!NOTE]
+> As configurações do Intune para o Aplicativo de Sala de Aula estão obsoletas no Intune. Este artigo é aplicável somente para usuários com perfis de treinamento existentes no Intune.
 
 ## <a name="introduction"></a>Introdução
 [Sala de aula](https://itunes.apple.com/app/id1085319084) é um aplicativo que ajuda os professores a orientar o aprendizado e controlar os dispositivos dos alunos na sala de aula. Por exemplo, o aplicativo permite aos professores:
