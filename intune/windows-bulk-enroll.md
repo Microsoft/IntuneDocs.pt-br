@@ -3,7 +3,7 @@ title: Registro em massa no Windows 10
 titlesuffix: Microsoft Intune
 description: Criar um pacote de registro em massa para o Microsoft Intune
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184804"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751188"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -48,9 +48,8 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
    - **Pasta do projeto** – local de gravação do projeto
    - **Descrição** - uma descrição opcional do projeto ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-name.png)
 
-4. Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
-
-   ![Captura de tela da especificação do nome e da chave do produto (Product Key) no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
+4. Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%SERIAL%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
+   ![Captura de tela da especificação do nome e da chave do produto no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se os dispositivos de rede não estiverem configurados, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
    ![Captura de tela da habilitação de Wi-Fi, incluindo as opções de SSID da Rede e o Tipo da rede, no aplicativo Windows Configuration Designer](media/bulk-enroll-network.png)

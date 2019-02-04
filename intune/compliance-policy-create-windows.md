@@ -1,11 +1,11 @@
 ---
-title: Criar política de conformidade para dispositivo Windows no Microsoft Intune – Azure | Microsoft Docs
+title: Verificar a conformidade para dispositivo Windows no Microsoft Intune – Azure | Microsoft Docs
 description: Criar ou configurar uma política de conformidade de dispositivo do Microsoft Intune para Windows Phone 8.1, Windows 8.1 e posterior e dispositivos com Windows 10 e posteriores. Verifique a conformidade com o sistema operacional mínimo e máximo, defina restrições e comprimento de senha, exija o BitLocker, verifique se há soluções de antivírus de terceiros, defina o nível de ameaça aceitável e habilite a criptografia no armazenamento de dados, incluindo o Surface Hub e o Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,20 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e0772f4e577f6660926f6827a7fda8e51bcdd280
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 518bb2ab0f59b5692ff2c2391fe971abba0639c6
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182951"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072517"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivo para dispositivos Windows no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Uma política de conformidade de dispositivos do Intune para Windows especifica as regras e configurações que dispositivos Windows precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. As políticas de conformidade de dispositivo são criadas para cada plataforma no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos do Intune inclui regras e configurações que dispositivos precisam cumprir para serem considerados em conformidade. Use essas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da organização. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade.
+
+Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
 A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
 
@@ -71,8 +73,8 @@ Essas configurações de política aplicam-se a dispositivos que executam as seg
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Sistema operacional mínimo exigido**: quando um dispositivo não atender ao requisito mínimo da versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seu dispositivo e, depois disso, poderá ter acesso aos recursos da empresa.
-- **Versão do sistema operacional máxima permitida**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado. O usuário deverá contatar seu administrador de TI. Até que haja uma alteração de regra para permitir a versão do sistema operacional, este dispositivo não poderá acessar os recursos da empresa.
+- **SO mínimo exigido**: Quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seu dispositivo e, depois disso, poderá ter acesso aos recursos da empresa.
+- **Versão máxima do SO permitida**: Quando um dispositivo estiver usando uma versão de sistema operacional inserida na regra, o acesso aos recursos da empresa será bloqueado. O usuário deverá contatar seu administrador de TI. Até que você altere a regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
 Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do sistema operacional for definida como Windows 8.1 para Windows, então o dispositivo será relatado como não compatível mesmo que o dispositivo tenha o Windows 8.1.
 
@@ -80,79 +82,92 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
 
 #### <a name="password"></a>Senha
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo.
-- **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
-- **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
+- **Exigir uma senha para desbloquear os dispositivos móveis**: **Exige** que os usuários insiram uma senha antes que possam acessar seu dispositivo.
+- **Senhas simples**: Defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
+- **Comprimento mínimo da senha**: Insira o número mínimo de dígitos ou caracteres que a senha deve ter.
 
   Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não consegue avaliar corretamente:
   - Se o comprimento mínimo da senha tiver mais de oito caracteres
   - Ou se o número mínimo de conjunto de caracteres for maior que dois
 
-- **Tipo de senha**: escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
+- **Tipo de senha**: Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
   
-  - **Número de caracteres não alfanuméricos na senha:** se o **Tipo de senha necessário** for definido como **Alfanumérico**, essa configuração especificará o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
+  - **Número de caracteres não alfanuméricos na senha**: Se **Tipo de Senha Necessário** é definido como **Alfanumérico**, essa configuração especifica o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
     - Letras minúsculas
     - Letras maiúsculas
     - Símbolos
     - Números
 
-    Definir um número mais alto exige que o usuário crie uma senha mais complexa. Para dispositivos que executam o Windows e são acessados com uma conta da Microsoft, a política de conformidade não é avaliada corretamente quando o comprimento mínimo da senha tem mais de oito caracteres ou o número mínimo de conjuntos de caracteres é maior que dois.
+    Definir um número mais alto exige que o usuário crie uma senha mais complexa. Para dispositivos que são acessados com uma conta da Microsoft, a política de conformidade não consegue avaliar corretamente:
 
-- **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
-- **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
+    - Se o comprimento mínimo da senha tiver mais de oito caracteres
+    - Ou se o número mínimo de conjuntos de caracteres for maior que dois
+
+- **Máximo de minutos de inatividade antes de a senha ser necessária**: Insira o tempo ocioso antes que o usuário precise inserir novamente sua senha.
+- **Expiração da senha (dias)**: Selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Número de senhas anteriores para evitar a reutilização**: Insira o número de senhas usadas anteriormente e que não podem ser usadas.
 
 #### <a name="encryption"></a>Criptografia
 
-- **Exigir criptografia no dispositivo móvel**: **exigir** que o dispositivo seja criptografado para se conectar aos recursos de armazenamento de dados.
+- **Exigir criptografia no dispositivo móvel**: **Exigir** que o dispositivo seja criptografado para se conectar aos recursos de armazenamento de dados.
 
 ## <a name="windows-10-and-later-policy-settings"></a>Configurações de política do Windows 10 e posteriores
 
-### <a name="device-health"></a>Device health
+### <a name="device-health"></a>Integridade do dispositivo
 
-- **Exigir BitLocker**: quando o BitLocker está ativado, o dispositivo pode proteger os dados armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados do usuário. Ele também ajuda a garantir que um computador não seja violado, mesmo se ficar aberto, se for perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Como resultado, as chaves não podem ser acessadas até que o TPM tenha verificado o estado do computador.
-- **Exigir que a Inicialização Segura seja habilitada no dispositivo:** quando a Inicialização Segura está habilitada, o sistema é forçado a inicializar para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se todos os arquivos foram violados, interrompendo sua assinatura, o sistema não inicializará.
+- **Habilitar o BitLocker**: Quando o BitLocker está ativado, o dispositivo pode proteger os dados armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra no modo de hibernação. A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o TPM para ajudar a proteger o sistema operacional Windows e os dados do usuário. Ele ajuda a confirmar que um computador não será adulterado, mesmo se ficar sem supervisão, for perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Como resultado, as chaves não poderão ser acessadas até que o TPM confirme o estado do computador.
+- **Exigir que a Inicialização Segura esteja habilitada no dispositivo**: Quando a Inicialização Segura é habilitada, o sistema será forçado a inicialização para um estado confiável de fábrica. Além disso, quando a Inicialização Segura é habilitada, os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que são confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se algum arquivo for violado, interrompendo sua assinatura, o sistema não inicializará.
 
   > [!NOTE]
   > A configuração **Requer que Inicialização Segura esteja habilitada no dispositivo** é compatível com dispositivos TPM 1.2 e 2.0. Para dispositivos que não dão suporte a TPM 2.0 ou posterior, o status da política do Intune aparece como **Não em Conformidade**. Essa é uma limitação do serviço [Atestado de Integridade do Dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) no Windows 10.
 
-- **Exigir integridade de código:** a integridade de código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade de código detecta quando um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Ou se um arquivo de sistema foi modificado por software mal-intencionado executado por uma conta de usuário com privilégios de administrador.
+- **Exigir a integridade de código**: A integridade do código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade de código detecta quando um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Ele também detecta se um arquivo de sistema foi modificado por um software mal-intencionado executado por uma conta de usuário com privilégios de administrador.
 
 Confira [CSP do atestado de integridade](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) para obter detalhes de como funciona o serviço HAS.
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Versão mínima do SO**: insira a versão mínima permitida no formato **número major.minor.build.CU**. Para obter o valor correto, abra um prompt de comando e digite `ver`. O comando `ver` retorna a versão no seguinte formato:
+- **Versão mínima do SO**: Insira a versão mínima permitida no formato **número major.minor.build.CU**. Para obter o valor correto, abra um prompt de comando e digite `ver`. O comando `ver` retorna a versão no seguinte formato:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
-  Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
+  Quando um dispositivo tiver uma versão mais antiga que a versão do sistema operacional que você inseriu, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar o dispositivo. Após a atualização, ele poderá acessar recursos da empresa.
 
-- **Versão máxima do SO**: insira a versão máxima permitida no formato de **número major.minor.build.revision**. Para obter o valor correto, abra um prompt de comando e digite `ver`. O comando `ver` retorna a versão no seguinte formato:
+- **Versão máxima do SO**: Insira a versão máxima permitida no formato **número major.minor.build.revision**. Para obter o valor correto, abra um prompt de comando e digite `ver`. O comando `ver` retorna a versão no seguinte formato:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
-  Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+  Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela inserida na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até uma regra ser alterada para permitir a versão do sistema operacional, este dispositivo não poderá acessar os recursos da empresa.
 
-- **Sistema operacional mínimo necessário para dispositivos móveis**: insira a versão mínima permitida, no formato de número major.minor.build.
+- **Versão mínima do SO exigida para dispositivos móveis**: Insira a versão mínima permitida no formato número major.minor.build.
 
-  Quando um dispositivo tem uma versão mais antiga que a versão de sistema operacional especificada, ele é relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seus dispositivos, quando então será possível acessar os recursos da empresa.
+  Quando um dispositivo tiver uma versão mais antiga que a versão do sistema operacional que você inseriu, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar o dispositivo. Após a atualização, ele poderá acessar recursos da empresa.
 
-- **Sistema operacional máximo necessário para dispositivos móveis**: insira a versão máxima permitida, no número major.minor.build.
+- **Versão máxima do SO exigida para dispositivos móveis**: Insira a versão máxima permitida no formato número major.minor.build.
 
-  Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até que haja uma alteração na regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+  Quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela que você inseriu, o acesso aos recursos da empresa será bloqueado e o usuário será solicitado a entrar em contato com o administrador de TI. Até uma regra ser alterada para permitir a versão do sistema operacional, este dispositivo não poderá acessar os recursos da empresa.
 
-- **Versões de sistema operacional válidas**: insira um intervalo para as versões de sistemas de operacionais aceitáveis, incluindo uma mínima e uma máxima. Também é possível **Exportar** uma lista de arquivos CSV (valores separados por vírgula) desses números de build de SO aceitáveis.
+- **Versões de sistema operacional válidas**: Insira um intervalo para as versões de sistemas de operacionais aceitáveis, incluindo uma mínima e uma máxima. Também é possível **Exportar** uma lista de arquivos CSV (valores separados por vírgula) desses números de build de SO aceitáveis.
+
+### <a name="configuration-manager-compliance"></a>Conformidade do Configuration Manager
+
+Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os dispositivos que usam apenas o Intune retornam um status não disponível.
+
+- **Exigir a conformidade do dispositivo do System Center Configuration Manager**: Escolha **Exigir** para forçar todas as configurações (itens de configuração) no System Center Configuration Manager a serem compatíveis. 
+
+  Por exemplo, você pode exigir que todas as atualizações de software sejam instaladas nos dispositivos. No Configuration Manager, esse requisito tem o estado "Instalado". Se algum programa no dispositivo estiver em um estado desconhecido, o dispositivo estará como não compatível no Intune.
+  
+  Se o estado for **Não configurado**, o Intune não verificará a conformidade das configurações do Configuration Manager.
 
 ### <a name="system-security-settings"></a>Configurações de segurança do sistema
 
 #### <a name="password"></a>Senha
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo.
-- **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
-- **Tipo de senha**: escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
+- **Exigir uma senha para desbloquear os dispositivos móveis**: **Exige** que os usuários insiram uma senha antes que possam acessar seu dispositivo.
+- **Senhas simples**: Defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
+- **Tipo de senha**: Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
 
-  - **Número de caracteres não alfanuméricos na senha:** se o **Tipo de senha necessário** for definido como **Alfanumérico**, essa configuração especificará o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
+  - **Número de caracteres não alfanuméricos na senha**: Se **Tipo de Senha Necessário** é definido como **Alfanumérico**, essa configuração especifica o número mínimo de conjuntos de caracteres que a senha deve conter. Os quatro conjuntos de caracteres são:
     - Letras minúsculas
     - Letras maiúsculas
     - Símbolos
@@ -160,31 +175,31 @@ Confira [CSP do atestado de integridade](https://docs.microsoft.com/windows/clie
 
     Definir um número mais alto exige que o usuário crie uma senha mais complexa.
 
-- **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
-- **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
-- **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
-- **Exigir senha quando o dispositivo retornar do estado ocioso (Mobile e Holographic)**: forçar os usuários a inserirem a senha sempre que o dispositivo retornar do estado ocioso.
+- **Comprimento mínimo da senha**: Insira o número mínimo de dígitos ou caracteres que a senha deve ter.
+- **Máximo de minutos de inatividade antes de a senha ser necessária**: Insira o tempo ocioso antes que o usuário precise inserir novamente sua senha.
+- **Expiração da senha (dias)**: Selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Número de senhas anteriores para evitar a reutilização**: Insira o número de senhas usadas anteriormente e que não podem ser usadas.
+- **Exigir senha quando o dispositivo retorna do estado ocioso (somente Mobile e Holographic)**: Forçar os usuários a inserir a senha sempre que o dispositivo retornar do estado ocioso.
 
 #### <a name="encryption"></a>Criptografia
 
-- **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
+- **Criptografia de armazenamento de dados em um dispositivo**: Escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
 
   > [!NOTE]
   > A configuração **Criptografia de armazenamento de dados em um dispositivo** verifica genericamente a presença de criptografia no dispositivo. Para uma configuração de criptografia mais robusta, considere usar **Requer BitLocker**, que aproveita o Atestado de Integridade de Dispositivo do Windows para validar o status do BitLocker no nível do TPM.
 
 #### <a name="device-security"></a>Segurança de dispositivo
 
-- **Antivírus**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções antivírus registradas na Central de Segurança do Windows, como Symantec e Windows Defender. Quando **Não configurado**, o Intune não verifica se há soluções antivírus instaladas no dispositivo.
-- **Software antispyware**: quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções de software antispyware registradas na Central de Segurança do Windows, como Symantec e Windows Defender. Quando **Não configurado**, o Intune não verifica se há alguma solução de software antispyware instalada no dispositivo.
+- **Antivírus**: Quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções antivírus registradas na Central de Segurança do Windows, como Symantec e Windows Defender. Quando **Não configurado**, o Intune não verifica se há soluções antivírus instaladas no dispositivo.
+- **AntiSpyware**: Quando definido como **Obrigatório**, você pode verificar a conformidade usando soluções de antispyware registradas na Central de Segurança do Windows, como Symantec e Windows Defender. Quando **Não configurado**, o Intune não verifica se há alguma solução de software antispyware instalada no dispositivo.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
-- **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo**: use essa configuração para utilizar a avaliação de risco dos seus serviços de ameaça de defesa como uma condição para a conformidade. Selecione o nível máximo de ameaça permitido:
-  - **Limpar**: essa opção é a mais segura, porque o dispositivo não pode ter nenhuma ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
-  - **Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Médio**: o dispositivo será avaliado como em conformidade se as ameaças existentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele é não compatível.
-  - **Alta**: esta opção é a menos segura e permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
+- **Requer que o dispositivo esteja em nível igual ou inferior à classificação de risco do computador**: Use essa configuração para fazer a avaliação de risco dos serviços de defesa contra ameaças como uma condição para conformidade. Selecione o nível máximo de ameaça permitido:
+  - **Limpar**: Essa opção é a mais segura, porque o dispositivo não pode ter nenhuma ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não compatível.
+  - **Baixo**: O dispositivo será avaliado como compatível se houver apenas ameaças de nível baixo. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Médio**: O dispositivo será avaliado como em conformidade se as ameaças existentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
+  - **Alto**: Esta opção é a menos segura e permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
   
   Para configurar o Windows Defender ATP (Proteção Avançada contra Ameaças) como seu serviço de defesa contra ameaças, veja [Habilitar o Windows Defender ATP com acesso condicional](advanced-threat-protection.md).
 
@@ -197,7 +212,7 @@ O Windows Holographic for Business usa a plataforma **Windows 10 e posterior**. 
 Para verificar a criptografia do dispositivo no Microsoft HoloLens, consulte [Verificar criptografia do dispositivo](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
 ## <a name="surface-hub"></a>Surface Hub
-O Surface Hub usa a plataforma **Windows 10 e posterior**. Os Surface Hubs têm suporte para conformidade e acesso condicional. Para habilitar esses recursos em Surface Hubs, recomendamos que você [habilite o registro automático do Windows 10](windows-enroll.md) no Intune (também exige o Azure Active Directory (AAD)) e marque os dispositivos do Surface Hub como grupos de dispositivos. Os Surface Hubs deve ser unidos no Azure Active Directory para que funciona a conformidade e o acesso condicional.
+O Surface Hub usa a plataforma **Windows 10 e posterior**. Os Surface Hubs têm suporte para conformidade e acesso condicional. Para habilitar esses recursos em Surface Hubs, recomendamos que você [habilite o registro automático do Windows 10](windows-enroll.md) no Intune (também exige o Azure Active Directory (Azure AD)) e marque os dispositivos do Surface Hub como grupos de dispositivos. Os Surface Hubs precisam ser adicionados ao Azure AD para fins de conformidade e acesso condicional ao trabalho.
 
 Veja [configurar o registro para dispositivos Windows](windows-enroll.md) para obter diretrizes.
 
@@ -207,7 +222,7 @@ Veja [configurar o registro para dispositivos Windows](windows-enroll.md) para o
 2. Escolha a política e as **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure AD.
 3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolha **Salvar** para implantar a política.
 
-Você aplicou a política. Os dispositivos usados pelos usuários que são direcionados pela política são avaliados quanto à conformidade.
+Você aplicou a política. Os dispositivos usados pelos usuários afetados pela política são avaliados quanto à conformidade.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Automatizar email e adicionar ações para dispositivos não compatíveis](actions-for-noncompliance.md)  

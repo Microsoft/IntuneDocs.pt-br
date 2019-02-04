@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387212"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146886"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Registrar dispositivos Android totalmente gerenciados ou dedicados (versão prévia)
 
 Depois de configurar seus [dispositivos Android dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, você poderá registrá-los. A maneira de registrar seus dispositivos Android depende do sistema operacional.
 
-| Método de registro | Versão mínima do sistema operacional Android para dispositivos dedicados | Versão mínima do sistema operacional Android para dispositivos totalmente gerenciados |
-| ----- | ----- | ----- |
-| Comunicação a curta distância | 5.1 | 6.0 |
-| Entrada de token | 6.0 | 6.0 |
-| Código QR | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| Método de registro | Versão mínima do sistema operacional Android para dispositivos dedicados e totalmente gerenciados |
+| ----- | ----- |
+| Comunicação a curta distância | 5.1 |
+| Entrada de token | 6.0 |
+| Código QR | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* em fabricantes participantes.
 
@@ -42,7 +42,7 @@ Para dispositivos compatíveis com NFC, você pode provisionar os dispositivos c
 
 ### <a name="enroll-by-using-a-token"></a>Registrar usando um token
 
-Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de Código QR ao usar o método de registro **aft#setup**.
+Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de código QR ao usar o método de registro **afw#setup**.
 
 1. Ligue o dispositivo apagado.
 2. Na tela **Boas-vindas**, selecione seu idioma.

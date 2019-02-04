@@ -1,68 +1,64 @@
 ---
 title: Criar perfil de dispositivo iOS ou macOS com o Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou crie um perfil de dispositivo iOS ou macOS e, em seguida, defina as configurações de AirPrint, de AirPlay, de layout da tela inicial, de notificações do aplicativo, de dispositivo compartilhado, de logon único e de filtro de conteúdo da Web no Microsoft Intune.
+description: Adicione ou crie um perfil de dispositivo iOS ou macOS e, em seguida, defina as configurações de AirPrint, de layout da tela inicial, de notificações do aplicativo, de dispositivo compartilhado, de logon único e de filtro de conteúdo da Web no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831268"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar configurações de recursos do dispositivo iOS ou macOS no Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+O Intune inclui muitos recursos e configurações que ajudam os administradores a controlarem dispositivos iOS e macOS. Por exemplo, os administradores podem:
 
-Os recursos do dispositivo permitem controlar uma variedade de configurações e recursos nos dispositivos iOS e macOS, como:
+- Permitir aos usuários acesso a impressoras AirPrint em sua rede
+- Adicionar aplicativos e pastas à tela inicial, incluindo a adição de novas páginas
+- Escolher se, e como, as notificações de aplicativo são exibidas
+- Configurar a tela de bloqueio para mostrar uma mensagem ou a marca do ativo, especialmente para dispositivos compartilhados
+- Conceder aos usuários uma experiência de logon único segura para compartilhar credenciais entre aplicativos
+- Filtrar sites que usem linguagem adulta e permitir ou bloquear sites específicos
 
-- Configurações de AirPrint e AirPlay
-- Layout da tela inicial
-- Notificações de aplicativos
-- Mensagem da Tela de Bloqueio
-- Configuração de logon único
-- Filtragem de conteúdo da Web
+Esses recursos estão disponíveis no Intune e podem ser configurados pelo administrador. O Intune usa "perfis de configuração" para criar e personalizar essas configurações de acordo com as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, você pode enviar por push ou implantar o perfil para dispositivos iOS e macOS em sua organização.
 
-Este artigo mostra as noções básicas de como configurar perfis de recurso do dispositivo iOS. Em seguida, você poderá acessar artigos adicionais para definir configurações específicas da plataforma dos dispositivos.
+Este artigo mostra como criar um perfil de configuração de dispositivos. Você também pode ver todas as configurações disponíveis para dispositivos [iOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md).
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre pelo **Intune** e, em seguida, selecione **Microsoft Intune**.
-3. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
-4. Insira as seguintes propriedades:
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre por **Intune** > selecione **Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Insira as seguintes propriedades:
 
-   - **Nome**: insira um nome descritivo para o novo perfil.
-   - **Descrição**: Insira uma descrição para o perfil. (Essa configuração é opcional, mas recomendada.)
-   - **Plataforma**: Selecione o tipo de plataforma:
-     - **iOS**
-     - **macOS**
-   - **Tipo de perfil**: Selecione **Recursos do dispositivo**.
-   - **Configurações**: As configurações dependem da plataforma escolhida. Os artigos a seguir descrevem as configurações de cada tipo de perfil:
+    - **Nome**: insira um nome descritivo para o novo perfil.
+    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
+    - **Plataforma**: Selecione sua plataforma:
+        - **iOS**
+        - **macOS**
+    - **Tipo de perfil**: Selecione **Recursos do dispositivo**.
+    - **Configurações**: Insira as configurações que você deseja definir. Para obter uma lista de todas as configurações e o que elas fazem, confira:
 
-     - [Configurações do AirPrint para iOS e MacOS](air-print-settings-ios-macos.md)
-     - [Configurações do AirPlay para iOS](airplay-settings-ios.md)
-     - [Configurações do layout da Tela inicial para iOS](home-screen-settings-ios.md)
-     - [Configurações de notificação de aplicativos para iOS](app-notification-settings-ios.md)
-     - [Configurações da Mensagem da Tela de Bloqueio para iOS](shared-device-settings-ios.md)
-     - [Configurar o Intune para logon único de dispositivo iOS](sso-ios.md)
-     - [Configurações de filtro de conteúdo da Web para iOS](web-content-filter-settings-ios.md)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. Quando terminar, selecione **OK** e escolha **Criar** para salvar suas alterações.
+4. Quando terminar, selecione **OK** e escolha **Criar** para salvar suas alterações.
 
-O perfil será criado e aparecerá na lista.
+O perfil é criado e exibido na lista. [Atribua o perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
-## <a name="next-step"></a>Próxima etapa
+## <a name="next-steps"></a>Próximas etapas
 
-Para atribuir esse perfil a grupos, consulte [Como atribuir perfis de dispositivo](device-profile-assign.md).
+Depois que o perfil é criado, ele está pronto para ser atribuído. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
+
+Exiba todas as configurações de recurso de dispositivo para dispositivos [iOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md).

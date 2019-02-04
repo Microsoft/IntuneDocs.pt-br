@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032088"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105180"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -83,10 +83,10 @@ Para a preparação do dispositivo, a página de status do registro rastreia tes
 ### <a name="device-setup"></a>Configuração do dispositivo
 
 Para a configuração do dispositivo, a página de status de registro controlará os seguintes itens se eles tiverem sido atribuídos a Todos os dispositivos:
-- Diretivas de segurança
+- Políticas de segurança
     - Um CSP (provedor de serviço de configuração) para todos os registros.
     - CSPs reais configurados pelo Intune não são rastreados aqui.
-- Aplicativos
+- Aplicativo
     - Aplicativos MSI de LoB (linha de negócios) por computador.
     - Aplicativos de repositório de LoB com contexto de instalação = Dispositivo.
     - Aplicativos de repositório de LoB e repositório offline com contexto de instalação = Dispositivo.
@@ -96,10 +96,10 @@ Para a configuração do dispositivo, a página de status de registro controlar�
 
 ### <a name="account-setup"></a>Configuração da conta
 Para a configuração de conta, a página de status de registro rastreia os seguintes itens:
-- Diretivas de segurança
+- Políticas de segurança
     - Um CSP para todos os registros.
     - CSPs reais configurados pelo Intune não são rastreados aqui.
-- Aplicativos
+- Aplicativo
     - Aplicativos MSI de LoB por usuário atribuídos a Todos os Dispositivos, Todos os Usuários ou a um grupo de usuário do qual o usuário que está registrando o dispositivo é membro.
     - Aplicativos MSI de LoB por computador atribuídos a Todos os Usuários ou a um grupo de usuários do qual o dispositivo de registro de usuário é membro.
     - Os aplicativos de armazenamento LoB, online e offline estão atribuídos a qualquer um dos seguintes:

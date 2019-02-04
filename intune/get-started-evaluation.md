@@ -1,12 +1,12 @@
 ---
-title: Introdução ao Microsoft Intune
+title: O que o Microsoft Intune pode fazer para minha empresa
 titleSuffix: ''
-description: Acompanhe uma série de inícios rápidos práticos para aprender mais sobre o Intune.
+description: Problemas de negócios comuns que o Microsoft Intune ajuda a resolver.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8adb038fbd5fa1b4ad2400a215eb228b81433bde
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c8e15675beb97b396c9340e2ab3bfa86a3a43f76
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831421"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>O que o Intune pode fazer para minha empresa?
 O Microsoft Intune é um serviço de EMM (gerenciamento de mobilidade empresarial) baseado em nuvem que ajuda a habilitar sua força de trabalho a ser produtiva enquanto mantém dados corporativos protegidos.
@@ -42,7 +42,7 @@ Com o Intune, você pode:
 * [Habilitar os funcionários a acessarem o Office 365 de forma segura de um quiosque público não gerenciado](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [Emitir tablets compartilhados de uso limitado para seus funcionários](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
-## <a name="quickstarts"></a>Guias de início rápido
+## <a name="quickstarts"></a>Inícios rápidos
 
 Sabemos que pode ser difícil iniciar o gerenciamento de dispositivos móveis, porque há muitas decisões diferentes que você precisa tomar em nome da sua empresa. Os inícios rápidos a seguir ajudam você a se familiarizar com o Intune e realizar algumas tarefas comuns em um curto espaço de tempo.
 

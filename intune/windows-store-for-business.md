@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187904"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460048"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos adquiridos na Microsoft Store para Empresas com o Microsoft Intune
 
@@ -52,12 +52,12 @@ Além disso, os conjuntos relacionados e aplicativos licenciados offline sincron
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associe sua conta da Microsoft Store para Empresas ao Intune
 Antes de habilitar a sincronização no console do Intune, você deve configurar sua conta de repositório para usar o Intune como uma ferramenta de gerenciamento:
-1. Certifique-se de entrar no repositório de negócios usando a mesma conta de locatário usada para entrar no Intune.
-2. Na Business Store, escolha **Configurações** > **Ferramentas de gerenciamento**.
-3. Na página Ferramentas de gerenciamento, escolha **Adicionar uma ferramenta de gerenciamento** e escolha **Microsoft Intune**.
+1. Entre na [Microsoft Store para Empresas](https://www.microsoft.com/business-store) usando a mesma conta de locatário usada para entrar no Intune.
+2. No Business Store, escolha a guia **Gerenciar**, **Configurações** e a guia **Distribuir**.
+3. Se você não tiver especificamente o **Microsoft Intune** disponível como ferramenta de gerenciamento de dispositivos móveis, escolha **Adicionar ferramenta de gerenciamento** para adicionar o **Microsoft Intune**. Se você não tiver o **Microsoft Intune** ativado como sua ferramenta de gerenciamento de dispositivos móveis, clique em **Ativar** ao lado de **Microsoft Intune**. Observe que você deve ativar o **Microsoft Intune** em vez do **Registro do Microsoft Intune**.
 
 > [!NOTE]
-> Anteriormente, era possível associar apenas uma ferramenta de gerenciamento para atribuir a aplicativos com a Microsoft Store para Empresas. Agora você pode associar várias ferramentas de gerenciamento ao armazenamento, por exemplo, o Intune e o Configuration Manager.
+> Anteriormente, era possível associar apenas uma ferramenta de gerenciamento para atribuir a aplicativos com a Microsoft Store para Empresas. Agora você pode associar várias ferramentas de gerenciamento ao armazenamento, por exemplo, o Intune e o Configuration Manager. 
 
 Agora você pode continuar e configurar a sincronização no console do Intune.
 
@@ -92,12 +92,12 @@ Ao atribuir um aplicativo da Microsoft Store para Empresas, uma licença é usad
 
 ## <a name="remove-apps"></a>Remover aplicativos
 
-Para remover um aplicativo sincronizado da Microsoft Store para Empresas, faça logon na Microsoft Store para Empresas e reembolse o aplicativo.
+Para remover um aplicativo sincronizado da Microsoft Store para Empresas, faça logon na Microsoft Store para Empresas e reembolse o aplicativo. O processo é o mesmo se o aplicativo é gratuito ou não. No caso de aplicativos gratuitos, o repositório devolverá US$ 0. O exemplo a seguir exibe o reembolso de um aplicativo gratuito. 
 
 ![Captura de tela de detalhes da remoção do aplicativo](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Remover a visibilidade de um aplicativo no armazenamento privado não impedirá o Intune de sincronizá-los. Você deve reembolsar o aplicativo.
+> Remover a visibilidade de um aplicativo no armazenamento privado não impedirá o Intune de sincronizá-lo. Você deve reembolsar o aplicativo para removê-lo completamente.
 
 ## <a name="next-steps"></a>Próximas etapas
 

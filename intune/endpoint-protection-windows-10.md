@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203528"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072568"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune
 
@@ -57,11 +57,11 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
 
 Compatível com as seguintes edições do Windows 10:
-- Início
+- Inicial
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 
@@ -81,7 +81,7 @@ Essas configurações são aplicáveis a todos os tipos de rede.
 - **Encontrar uma correspondência oportuna de conjunto de autenticação por módulo de chave**: Escolha **Habilitar** para forçar os módulos de chave a ignorar somente os conjuntos de autenticação aos quais eles não dão suporte. Quando essa opção é **Não configurado**, os módulos para chave DEVEM ignorar o conjunto completo de autenticação caso eles não deem suporte a todos os pacotes de autenticação especificados no conjunto.
 - **Enfileiramento de pacotes**: Informe como o dimensionamento de software no lado do recebimento é habilitado para o recebimento criptografado e o encaminhamento de texto não criptografado para o cenário de gateway de túnel IPsec. Essa configuração confirma que a ordem de pacote é preservada.
 
-### <a name="network-settings"></a>Configurações de rede
+### <a name="network-settings"></a>Configurações da rede
 
 Essas configurações aplicam-se a tipos de rede específicos, incluindo **Rede de domínio (local de trabalho)**, **Rede privada (detectável)** e **Rede pública (não detectável)**.
 
@@ -104,11 +104,11 @@ Essas configurações aplicam-se a tipos de rede específicos, incluindo **Rede 
 ## <a name="windows-defender-smartscreen-settings"></a>Configurações do Windows Defender SmartScreen
 
 Compatível com as seguintes edições do Windows 10 com o Microsoft Edge instalado:
-- Início
+- Inicial
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 
@@ -126,7 +126,7 @@ Compatível com as seguintes edições do Windows 10:
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 
@@ -144,7 +144,7 @@ Compatível com as seguintes edições do Windows 10:
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 - Professional
@@ -152,6 +152,9 @@ Compatível com as seguintes edições do Windows 10:
 As configurações básicas são as configurações universais do BitLocker para todos os tipos de unidades de dados. Essas configurações gerenciam quais tarefas de criptografia de unidade ou opções de configuração o usuário final pode modificar em todos os tipos de unidades de dados.
 
 - **Aviso para outras criptografias de disco**: Selecione **Bloquear** para desabilitar o prompt de aviso se outro serviço de criptografia de disco estiver no dispositivo. A opção **Não configurado** (padrão) permite que o aviso seja mostrado.
+    - **Permitir que usuários padrão habilitem a criptografia durante o ingresso no Azure AD**: Quando você escolhe **Permitir**, usuários padrão/não administradores podem habilitar a criptografia BitLocker após a entrada do usuário. Essa configuração só se aplica a dispositivos do Azure Active Directory Ingressados (Azure ADJ). **Não configurado** só permite que os Administradores habilitem a criptografia do BitLocker no dispositivo.
+      
+      Essa configuração só se aplica a dispositivos do Azure Active Directory Ingressados (Azure ADJ). Ela também exige que a configuração **Aviso para outra criptografia de disco** seja definida como **Bloquear**.
 - **Configurar métodos de criptografia**: **Habilite** essa configuração para definir algoritmos de criptografia para o sistema operacional, os dados e as unidades removíveis. Quando essa opção está definida como **Não configurado** (padrão), o BitLocker usa o XTS-AES de 128 bits como o método de criptografia padrão ou usa o método de criptografia especificado por qualquer script de instalação.
   - **Criptografia para unidades do sistema operacional**: Escolha o método de criptografia para unidades do sistema operacional. Recomendamos que você use o algoritmo XTS-AES.
   - **Criptografia para unidades de dados fixas**: Escolha o método de criptografia para unidades de dados fixas (internas). Recomendamos que você use o algoritmo XTS-AES.
@@ -161,7 +164,7 @@ As configurações básicas são as configurações universais do BitLocker para
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 - Professional
@@ -198,7 +201,7 @@ Essas configurações aplicam-se especificamente às unidades de dados do sistem
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 - Professional
@@ -222,7 +225,7 @@ Compatível com as seguintes edições do Windows 10:
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 - Professional
@@ -236,11 +239,11 @@ Compatível com as seguintes edições do Windows 10:
 
 Compatível com as seguintes edições do Windows 10:
 
-- Início
+- Inicial
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 
@@ -315,7 +318,7 @@ Compatível com as seguintes edições do Windows 10:
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 
@@ -356,11 +359,11 @@ Quando você habilita o Credential Guard, os seguintes recursos obrigatórios ta
 
 Compatível com as seguintes edições do Windows 10:
 
-- Início
+- Inicial
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 - Celular
 - Mobile Enterprise
 
@@ -389,11 +392,11 @@ Forneça as informações de contato de TI que aparecem no aplicativo da Central
 
 Compatível com as seguintes edições do Windows 10:
  
-- Início
+- Inicial
 - Professional
 - Negócios
 - Enterprise
-- Educação
+- Formação educacional
 
 Use estas opções para definir as configurações de segurança locais em dispositivos Windows 10.
 
@@ -435,7 +438,7 @@ Use estas opções para definir as configurações de segurança locais em dispo
 
     [Opções de LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fornecem mais detalhes.
 
-#### <a name="display"></a>Vídeo
+#### <a name="display"></a>Exibição
 
 - **Informações do usuário na tela de bloqueio**: Configure as informações do usuário exibidas quando a sessão é bloqueada. Se não configurado, o nome de exibição do usuário, o domínio e o nome de usuário serão mostrados.
   - **Não configurado**
