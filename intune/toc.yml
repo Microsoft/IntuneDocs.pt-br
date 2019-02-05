@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Configurar conformidade do dispositivo
     items:
-    - name: Visão geral da conformidade do dispositivo
+    - name: Visão geral de conformidade
       href: device-compliance-get-started.md
-    - name: Criar uma política do Android
+    - name: Conformidade do Android
       href: compliance-policy-create-android.md
-    - name: Criar uma política de perfil do Android Enterprise
+    - name: Conformidade do Android Enterprise
       href: compliance-policy-create-android-for-work.md
-    - name: Criar uma política para habilitar o Google Play Protect
+    - name: Habilitar o Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Criar uma política do iOS
+    - name: Conformidade do iOS
       href: compliance-policy-create-ios.md
-    - name: Criar uma política do Windows
+    - name: Conformidade do Windows
       href: compliance-policy-create-windows.md
-    - name: Política baseada em local
+    - name: Conformidade baseada na localização
       href: use-network-locations.md
     - name: Avaliar política
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Monitorar a conformidade do dispositivo
       href: compliance-policy-monitor.md
-  - name: Configurar dispositivos
+  - name: Definir configurações de dispositivo
     items:
-    - name: Configurar dispositivos usando perfis
+    - name: Visão geral da configuração do dispositivo
       href: device-profiles.md
     - name: Perfis de dispositivo
       href: device-profile-create.md
     - name: Modelos administrativos
       href: administrative-templates-windows.md
-    - name: Recursos do dispositivo (iOS e MacOS)
+    - name: Recursos de dispositivo
       href: device-features-configure.md
-    - name: Restrições de dispositivo
+    - name: Restringir recursos e configurações do dispositivo
       href: device-restrictions-configure.md
-    - name: Otimização de entrega
+    - name: Entregar atualizações
       href: delivery-optimization-windows.md
-    - name: Atualização de edição e alternância de modo
+    - name: Atualizar edições e modo S
       href: edition-upgrade-configure-windows-10.md
-    - name: Configurações de email
+    - name: Configurar email
       href: email-settings-configure.md
-    - name: Configurações do quiosque
+    - name: Habilitar modo de quiosque
       href: kiosk-settings.md
-    - name: Configurações de VPN
+    - name: Adicionar uma VPN
       href: vpn-settings-configure.md
       items:
       - name: VPN por aplicativo para Android
         href: android-pulse-secure-per-app-vpn.md
       - name: VPN por aplicativo para iOS
         href: vpn-setting-configure-per-app.md
-    - name: Configurações de Wi-Fi
+    - name: Adicionar uma rede Wi-Fi sem fio
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi com uma chave pré-compartilhada
         href: wi-fi-profile-shared-key.md
-    - name: Configurações para Educação
+    - name: Aplicativo educacional Fazer um Teste
       href: education-settings-configure.md
     - name: Dispositivos compartilhados de multiusuários
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Monitorar perfis
       href: device-profile-monitor.md
-    - name: Solucionar problemas de perfis
+    - name: Perguntas e respostas comuns
       href: device-profile-troubleshoot.md
   - name: Proteger os dados do dispositivo
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Referência da API do Intune
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: APIs do Graph usadas para configurar dispositivos
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Recursos
   items:
   - name: Guia de documentação do Microsoft Intune
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir vazamento de dados em dispositivos não gerenciados
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504537"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645182"
