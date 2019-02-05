@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58d0cbbd503697575cd63e66fff80bd91e742e5e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831438"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229892"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 
@@ -37,7 +37,7 @@ Use as políticas de proteção de aplicativo com o recurso **Abrir no gerenciam
 
 -   **Dispositivos de funcionários não gerenciados por nenhuma solução de MDM:** Defina as configurações da política de proteção de aplicativo como **Permitir que o aplicativo transfira dados somente para aplicativos Gerenciados por Política**. O comportamento de *Abrir em* em um aplicativo Gerenciado por Política apresentará apenas outros aplicativos Gerenciados por Política como opção de compartilhamento. Se um usuário tentar enviar um arquivo protegido por política como um anexo no OneDrive no aplicativo de email nativo, esse arquivo ficará ilegível.
 
--   **Dispositivos gerenciados pelo Intune:** Para os dispositivos registrados no Intune, a transferência de dados entre aplicativos com políticas de proteção de aplicativo e outros aplicativos do iOS gerenciados implantados por meio do Intune é permitida automaticamente. Para especificar como você deseja permitir a transferência de dados para outros aplicativos, habilite **Permitir que o aplicativo transfira dados para outros aplicativos** e escolha o nível preferencial de compartilhamento. Para especificar como você deseja permitir que um aplicativo receba dados de outros aplicativos, habilite **Permitir que o aplicativo receba dados de outros aplicativos** e escolha o nível preferencial de recebimento de dados. Você pode usar o recurso **Aberto em gerenciamento** para controlar a transferência de dados entre aplicativos que são implantados pelo Intune. Para obter mais informações sobre como receber e compartilhar de dados de aplicativo, confira [Configurações de realocação de dados](app-protection-policy-settings-ios.md#data-protection-settings).   
+-   **Dispositivos gerenciados pelo Intune:** Para os dispositivos registrados no Intune, a transferência de dados entre aplicativos com políticas de proteção de aplicativo e outros aplicativos do iOS gerenciados implantados por meio do Intune é permitida automaticamente. Para especificar como você deseja permitir a transferência de dados para outros aplicativos, habilite **Permitir que o aplicativo transfira dados para outros aplicativos** e escolha o nível preferencial de compartilhamento. Para especificar como você deseja permitir que um aplicativo receba dados de outros aplicativos, habilite **Permitir que o aplicativo receba dados de outros aplicativos** e escolha o nível preferencial de recebimento de dados. Você pode usar o recurso **Aberto em gerenciamento** para controlar a transferência de dados entre aplicativos que são implantados pelo Intune. Para obter mais informações sobre como receber e compartilhar de dados de aplicativo, confira [Configurações de realocação de dados](app-protection-policy-settings-ios.md#data-protection).   
 
 -   **Dispositivos gerenciados por uma solução de MDM de terceiros:** Restrinja a transferência de dados somente a aplicativos gerenciados usando o recurso **Abrir no gerenciamento** do iOS.
 Para verificar se os aplicativos implantados usando a solução de MDM de terceiros também estão associados às políticas de proteção de aplicativo do Intune, defina a configuração de UPN do usuário conforme descrito na seção a seguir, [Definir configuração de UPN do usuário](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Quando os aplicativos são implantados com a configuração de UPN do usuário, as políticas de proteção de aplicativo são aplicadas ao aplicativo quando o usuário entra usando sua conta corporativa.
