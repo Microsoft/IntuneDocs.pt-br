@@ -35,7 +35,7 @@ O código-fonte para usar a ferramenta não é necessário, mas você precisa de
 
 A Ferramenta de Disposição de Aplicativo **não** dá suporte a aplicativos da App Store da Apple ou da Google Play Store. Ele também não dá suporte a alguns recursos que exigem integração do desenvolvedor (consulte a tabela de comparação de recursos a seguir).
 
-Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativos para políticas de proteção de aplicativos em dispositivos que não estão registrados no Intune, consulte [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](apps-add.md) (Proteger aplicativos e dados de linha de negócios em dispositivos não registrados no Microsoft Intune).
+Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativos para políticas de proteção de aplicativos em dispositivos que não estão registrados no Intune, consulte [Proteger aplicativos e dados de linha de negócios em dispositivos não registrados no Microsoft Intune](apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para usar a Ferramenta de Encapsulamento de Aplicativos
 * Seu aplicativo não tem recursos internos para proteção de dados
