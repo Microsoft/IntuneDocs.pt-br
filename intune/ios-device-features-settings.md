@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072534"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431483"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>Configurações de recursos de dispositivo do iOS no Intune
 
@@ -177,16 +177,23 @@ Escolha como os aplicativos instalados em um dispositivo iOS enviam notificaçõ
 
 Use essas configurações para mostrar uma mensagem ou um texto personalizado na janela de entrada e na tela de bloqueio. Por exemplo, insira uma mensagem "Em caso de perda, devolver a" e informações da tag do ativo. 
 
-Essa configuração dá suporte a dispositivos supervisionados que executam o iOS 9.3 e posterior.
+Esse recurso dá suporte a dispositivos supervisionados que executam:
 
-1. Em **Ajustes**, selecione **Configuração de dispositivo compartilhado (somente supervisionado)**.
+- iOS 9.3 e posterior
+
+1. Em **Configurações**, selecione **Mensagem da Tela de Bloqueio (somente supervisionado)**.
 2. Insira as seguintes configurações:
 
-    - **Informações da tag do ativo**: Insira informações sobre a tag do ativo do dispositivo. Por exemplo, insira `Owned by Contoso Corp`. 
+    - **Informações da tag do ativo**: Insira informações sobre a tag do ativo do dispositivo. Por exemplo, insira `Owned by Contoso Corp` ou `Serial Number: {{serialnumber}}`. 
 
       O texto inserido é mostrado na janela de entrada e na tela de bloqueio do dispositivo.
 
-    - **Nota de rodapé da tela de bloqueio**: Em caso de perda ou roubo do dispositivo, insira uma observação que pode ajudar na devolução do dispositivo. Por exemplo, insira algo como `If found, call Contoso at ...`.
+    - **Nota de rodapé da tela de bloqueio**: Em caso de perda ou roubo do dispositivo, insira uma observação que pode ajudar na devolução do dispositivo. É possível inserir qualquer texto desejado. Por exemplo, insira algo como `If found, call Contoso at ...`.
+
+    Os tokens de dispositivo também podem ser usados para adicionar informações específicas do dispositivo a esses campos. Por exemplo, para mostrar o número de série, insira `Serial Number: {{serialnumber}}`. Na tela de bloqueio, o texto mostra algo semelhante a `Serial Number 123456789ABC`. Ao inserir variáveis, lembre-se de usar chaves `{{ }}`. [Tokens de configuração de aplicativo](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) inclui uma lista das variáveis que podem ser usadas. Use também `deviceName` ou qualquer outro valor específico do dispositivo.
+
+    > [!NOTE]
+    > Variáveis não são validadas na interface do usuário. Como resultado, você pode ver perfis salvos com uma entrada incorreta. Por exemplo, se você digitar `{{Devicename}}` em vez de `{{devicename}}`, a cadeia de caracteres literal será mostrada em lugar do nome exclusivo do dispositivo.
 
 3. Após terminar, selecione **OK** para salvar suas alterações.
 
@@ -280,6 +287,8 @@ Essas configurações controlam o acesso de URL do navegador em dispositivos iOS
 
 Adicione uma imagem .png, .jpg ou .jpeg personalizada aos seus dispositivos iOS supervisionados. Por exemplo, use um logotipo da empresa na tela de bloqueio.
 
+Você pode enfrentar um comportamento inesperado quando um perfil sem nenhuma imagem é atribuído a dispositivos com uma imagem existente. Por exemplo, você pode criar um perfil sem uma imagem. Este perfil é atribuído a dispositivos que já têm uma imagem. Nesse cenário, a imagem pode ser alterada para o padrão do dispositivo ou a imagem original pode permanecer no dispositivo. Esse comportamento é controlado e limitado pela plataforma de MDM da Apple.
+
 - **Local de exibição do papel de parede**: escolha um local no dispositivo para mostrar a imagem. Suas opções:
   - **Não configurado**: Uma imagem personalizada não é adicionada ao dispositivo. O dispositivo usa o sistema operacional padrão.
   - **Tela de bloqueio**: adiciona a imagem à tela de bloqueio.
@@ -319,7 +328,7 @@ A lista a seguir mostra a ID do pacote de alguns aplicativos iOS nativos comuns.
 |Mensagens|com.apple.MobileSMS|
 |Música|com.apple.Music|
 |News|com.apple.news|
-|Observações|com.apple.mobilenotes|
+|Anotações|com.apple.mobilenotes|
 |Números|com.apple.Numbers|
 |Páginas|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|

@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5abe78389d58043b44ba6e7f31854407019c0d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190042"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834119"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis de celular eSIM no Intune – versão prévia pública
 
@@ -35,7 +36,7 @@ No Intune, você pode importar códigos de ativação de uso avulso fornecidos p
 
 Para implantar o eSIM em dispositivos usando o Intune, os seguintes itens são necessários:
 
-- **Dispositivos compatíveis com eSIM**, como o Surface LTE: confira [se o dispositivo dá suporte ao eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). Se preferir, veja uma lista de [alguns dos dispositivos compatíveis com eSIM conhecidos](#esim-capable-devices) (neste artigo).
+- **Dispositivos compatíveis com eSIM**, tais como o Surface LTE: Confira [se o dispositivo dá suporte a eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). Se preferir, veja uma lista de [alguns dos dispositivos compatíveis com eSIM conhecidos](#esim-capable-devices) (neste artigo).
 - **Um computador com o Windows 10 Fall Creators Update** (1709 ou posterior) que esteja registrado e com o MDM gerenciado pelo Intune
 - **Códigos de ativação** fornecidos pela operadora móvel. Esses códigos de ativação de uso avulso são adicionados ao Intune e implantados nos dispositivos compatíveis com eSIM. Contate a operadora móvel para adquirir os códigos de ativação do eSIM.
 
@@ -65,6 +66,9 @@ Os dispositivos a seguir foram anunciados como compatíveis com eSIM ou estão n
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>Etapa 1: Adicionar códigos de ativação de celular
 
@@ -92,7 +96,7 @@ Ao trabalhar com o arquivo CSV com os códigos de ativação, verifique se você
 2. A segunda linha e todas as linhas posteriores são códigos de ativação de uso avulso exclusivos que incluem dois valores:
 
     1. A primeira coluna é a ICCID exclusiva (o identificador do chip SIM)
-    2. A segunda coluna é a ID de Correspondência com apenas uma vírgula separando-as (sem vírgula no final). Consulte o exemplo a seguir:
+    2. A segunda coluna é a ID de Correspondência com apenas uma vírgula separando-as (sem vírgula no final). Veja o exemplo a seguir:
 
         ![Arquivo CSV de exemplo de código de ativação da operadora móvel](./media/esim-device-configuration/url-activation-code-examples.png)
 
@@ -145,10 +149,10 @@ Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses g
 
     O Intune mostra o status de entrega e de instalação para o código de ativação destinado aos dispositivos.
 
-    - **Dispositivo não sincronizado**: o dispositivo de destino não contatou o Intune desde que a política de implantação do eSIM foi criada
-    - **Ativação pendente**: um estado transitório quando o Intune está instalando ativamente o código de ativação no dispositivo
-    - **Ativo**: instalação de código de ativação bem-sucedida
-    - **Falha de ativação**: instalação de código de ativação com falha – confira o guia de solução de problemas.
+    - **Dispositivo não sincronizado**: O dispositivo de destino não contatou o Intune desde que a política de implantação do eSIM foi criada
+    - **Ativação pendente**: Um estado transitório quando o Intune está instalando ativamente o código de ativação no dispositivo
+    - **Ativo**: Instalação de código de ativação bem-sucedida
+    - **Falha de ativação**: Instalação de código de ativação com falha – confira o guia de solução de problemas.
 
 #### <a name="view-the-detailed-device-status"></a>Exibir o status detalhado do dispositivo
 
@@ -157,12 +161,12 @@ Monitore e exiba uma lista detalhada de dispositivos que podem ser exibidos no S
 1. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
 2. Selecione **Status do Dispositivo**. O Intune mostra detalhes adicionais sobre o dispositivo:
 
-  - **Nome do Dispositivo**: nome do dispositivo de destino
-  - **Usuário**: usuário do dispositivo registrado
-  - **ICCID**: código exclusivo fornecido pela operadora móvel no código de ativação instalado no dispositivo
-  - **Status de Ativação**: status de entrega e instalação do Intune do código de ativação no dispositivo
-  - **Status do celular**: estado fornecido pela operadora móvel. Faça um acompanhamento com a operadora móvel para solucionar problemas.
-  - **Último Check-In**: data da última comunicação do dispositivo com o Intune
+  - **Nome do Dispositivo**: Nome do dispositivo de destino
+  - **Usuário**: Usuário do dispositivo registrado
+  - **ICCID**: Código exclusivo fornecido pela operadora móvel no código de ativação instalado no dispositivo
+  - **Status de Ativação**: Status de entrega e instalação do Intune do código de ativação no dispositivo
+  - **Status do celular**: Estado fornecido pela operadora móvel. Faça um acompanhamento com a operadora móvel para solucionar problemas.
+  - **Último check-in**: Data da última comunicação do dispositivo com o Intune
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorar os detalhes do perfil do eSIM no dispositivo real
 
@@ -190,8 +194,8 @@ O perfil do eSIM também é removido quando o dispositivo é [desativado](device
 - Verifique se o arquivo CSV está formatado corretamente. Confirme se o arquivo não inclui códigos duplicados, não inclui várias operadoras móveis ou não inclui planos de dados diferentes. Lembre-se de que cada arquivo precisa ser exclusivo para uma operadora móvel e um plano de dados da rede celular.
 - Crie um grupo de dispositivos estáticos do Azure AD que inclui apenas os dispositivos do eSIM de destino.
 - Se houver um problema com o status da implantação, verifique o seguinte:
-  - **Formato de arquivo não adequado**: confira **Etapa 1: Adicionar códigos de ativação de celular** (neste artigo) para saber como formatar o arquivo corretamente.
-  - **Falha na ativação de celular, contate a operadora móvel**: o código de ativação pode não estar ativado na rede. Ou o download do perfil e a ativação de celular falhou.
+  - **Formato de arquivo não adequado**: Consulte a **Etapa 1: Adicionar códigos de ativação de celular** (neste artigo) para saber como formatar o arquivo corretamente.
+  - **Falha de ativação de celular, entre em contato com operador móvel**: O código de ativação não pode ser ativado em sua rede. Ou o download do perfil e a ativação de celular falhou.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Configurar perfis do dispositivo](device-profiles.md)

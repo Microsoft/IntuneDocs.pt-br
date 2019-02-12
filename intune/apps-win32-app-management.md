@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068315"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290750"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autônomo – gerenciamento de aplicativos Win32 (versão prévia pública)
+# <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
 O Intune autônomo permitirá maiores funcionalidades de gerenciamento de aplicativos Win32. Embora seja possível que os clientes conectados na nuvem usem o Configuration Manager para gerenciamento de aplicativos Win32, clientes apenas do Intune terão maiores funcionalidades de gerenciamento para seus aplicativos LOB (linha de negócios) Win32. Este tópico apresenta uma visão geral do recurso de gerenciamento de aplicativos Win32 e informações de solução de problemas do Intune.
 
-## <a name="prerequisites-for-public-preview"></a>Pré-requisitos para versão prévia pública
+## <a name="prerequisites"></a>Pré-requisitos
 
 - Windows 10 versão 1607 ou posterior (versões Education, Pro e Enterprise)
 - O cliente do Windows 10 precisa ser: 
     - ingressado no AAD (Azure Active Directory) ou Azure Active Directory Híbrido, e
     - registrado no Intune (gerenciado pelo MDM)
-- O tamanho do aplicativo do Windows tem um limite de 8 GB por aplicativo na versão prévia pública 
+- O tamanho do aplicativo do Windows tem um limite de 8 GB por aplicativo
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar o conteúdo do aplicativo Win32 para upload
 
-Use a [Ferramenta de preparação para upload de aplicativos Win32 do Microsoft Intune](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) para pré-processar aplicativos Win32. A ferramenta de empacotamento converte arquivos de instalação de aplicativo no formato *.intunewin*. A ferramenta de empacotamento também detecta alguns dos recursos exigidos pelo Intune para determinar o estado de instalação do aplicativo. Depois de usar essa ferramenta na pasta do instalador do aplicativo, você poderá criar um aplicativo Win32 no console do Intune.
+Use a [Ferramenta de Preparação de Conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) para pré-processar aplicativos Win32. A ferramenta converte arquivos de instalação de aplicativo no formato *.intunewin*. Ela também detecta alguns dos recursos exigidos pelo Intune para determinar o estado de instalação do aplicativo. Depois de usar essa ferramenta na pasta do instalador do aplicativo, você poderá criar um aplicativo Win32 no console do Intune.
 
-É possível baixar a [Ferramenta de preparação para upload de aplicativos Win32 do Microsoft Intune](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) no GitHub.
+É possível baixar a [Ferramenta de Preparação de Conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) no GitHub.
 
 ### <a name="available-command-line-parameters"></a>Parâmetros de linha de comando disponíveis 
 
@@ -74,7 +74,7 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 1.  Entre no [Portal do Azure](https://portal.azure.com/).
 2.  Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
 3.  No painel do **Intune**, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
-4.  No painel do aplicativo **Adicionar**, selecione **Aplicativo do Windows (Win32) – versão prévia** na lista suspensa fornecida.
+4.  No painel do aplicativo **Adicionar**, selecione **Aplicativo do Windows (Win32)** na lista suspensa fornecida.
 
     ![Captura de tela da folha Adicionar aplicativo – Caixa de lista suspensa Adicionar tipo](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
     ![Captura de tela da folha do arquivo de pacote do Aplicativo](./media/apps-win32-app-02.png)
 
 2.  No painel **Arquivo do pacote do aplicativo**, selecione o botão Procurar. Em seguida, selecione um arquivo de instalação do Windows com a extensão *.intunewin*.
+
+    > [!IMPORTANT]
+    > Certifique-se de usar a versão mais recente da Ferramenta de Preparação de Conteúdo do Microsoft Win32. Se você não usar a versão mais recente, verá um aviso indicando que o aplicativo foi empacotado usando uma versão mais antiga da Ferramenta de Preparação de Conteúdo do Microsoft Win32. 
+
 3.  Quando tiver terminado, selecione **OK**.
 
 ### <a name="step-3-configure-app-information"></a>Etapa 3: Configurar informações do aplicativo
@@ -171,7 +175,7 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
             
                 ![Captura de tela do painel da regra de detecção – a chave do Registro existe](./media/apps-win32-app-05.png)    
             
-            2.  Verifique se o valor de Registro existe (**Não disponível em versão prévia**).
+            2.  Verifique se o valor do registro existe.
         
                 ![Captura de tela do painel da regra de detecção – o valor de Registro existe](./media/apps-win32-app-06.png)    
         

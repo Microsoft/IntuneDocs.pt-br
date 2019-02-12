@@ -2,8 +2,8 @@
 title: Redefinir dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs
 description: Use Novo Início para remover ou desinstalar aplicativos em computadores Windows 10 usando o Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2018
 ms.topic: article
@@ -14,12 +14,13 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 781e82e64cda747f602b305fda74fd25e0362d7d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188731"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846495"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Usar o Novo Início para redefinir dispositivos Windows 10 com o Intune
 
@@ -33,10 +34,11 @@ A ação do dispositivo **Novo Início** remove todos os aplicativos instalados 
 3. Clique em **Novo Início**. 
 4. Selecione **manter os dados de usuário neste dispositivo** para:
    * Manter o dispositivo do Azure AD conectado
-    * Manter o dispositivo inscrito no gerenciamento de dispositivos móveis 
+    * O dispositivo é registrado no gerenciamento de dispositivo móvel novamente quando um usuário habilitado do Azure Active Directory entra no dispositivo.
     * Manter o conteúdo da pasta base do usuário e remover aplicativos e configurações  
   > [!IMPORTANT]
- > Se você não mantiver os dados do usuário, o dispositivo será restaurado para seu estado inicial. Ele será retirado do Azure AD e do gerenciamento de dispositivos móveis. 
+ > Se você não mantiver os dados do usuário, o dispositivo será restaurado para seu estado inicial. Os dispositivos BYOD terão seus registros do Azure AD e do gerenciamento de dispositivos móveis cancelados.
+ > Os dispositivos ingressados no Azure AD serão registrados no gerenciamento de dispositivo móvel novamente quando um usuário habilitado do Azure Active Directory entrar no dispositivo.
  
 5. Clique em **OK**.   
 6. Para ver o status dessa ação, volte para **Dispositivos** e clique em **Ações do dispositivo**.  

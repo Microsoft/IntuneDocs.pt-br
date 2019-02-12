@@ -28,7 +28,9 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
    - **Todos** - todos os usuários podem inscrever seus dispositivos com Windows 10 automaticamente
 
       > [!IMPORTANT]
-      > Se **Escopo de usuário do MAM** e registro automático do MDM (**Escopo de usuário do MDM**) estiverem habilitados para um grupo, apenas o MAM será habilitado. Apenas o MAM é adicionado para usuários nesse grupo quando eles ingressam o dispositivo pessoal no local de trabalho. Os dispositivos não são automaticamente registrados no MDM.
+      > Para dispositivos BYOD, o escopo do usuário de MAM terá precedência se o escopo do usuário de MAM e o escopo do usuário de MDM (registro automático de MDM) estiverem habilitados para todos os usuários (ou para os mesmos grupos de usuários). Se você tiver configurado as políticas de WIP (Proteção de Informações do Windows), o dispositivo as usará em vez de registrar-se no MDM.
+      >
+      > Para dispositivos corporativos, o escopo do usuário MDM terá precedência se ambos os escopos estiverem habilitados. Os dispositivos são registrados no MDM.
 
    ![Captura de tela do portal do Azure](../media/auto-enroll-scope.png)
 

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203138"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690675"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Usar dispositivos gerenciados para acessar recursos corporativos ou de estudante
 O Microsoft Intune é um sistema de gerenciamento de dispositivos que permite às organizações gerenciar o acesso a dispositivos, aplicativos e emails. O gerenciamento de dispositivos permite que você, outros funcionários e alunos, acessem as informações de trabalho de praticamente qualquer lugar, em quase todos os dispositivos. Mesmo quando você está trabalhando remotamente, você e as informações de sua organização permanecem seguras.
@@ -39,16 +39,9 @@ Obtenha o Portal da Empresa:
 - Acessando o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) configurado pelo suporte de sua empresa.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre o aplicativo e o site?
-Existem algumas pequenas diferenças entre o aplicativo do Portal da Empresa e o site do Portal da Empresa, mas você pode fazer a maior parte das tarefas em ambos. Algumas tarefas que você pode fazer são:
+Cada aplicativo de Portal da Empresa para Android, iOS, macOS e Windows 10 se integra perfeitamente à respectiva plataforma do seu dispositivo. O site pode ser acessado de qualquer dispositivo e proporciona a mesma experiência universal, independentemente de qual dispositivo você está usando. 
 
-- Registrar seus dispositivos no gerenciamento
-- Ver o status dos dispositivos
-- Baixar aplicativos recomendados e necessários para sua organização
-- Renomear o dispositivo
-- Redefinir o PIN ou senha do dispositivo
-- Contatar o departamento de TI para obter ajuda
-
-Para ver o que você pode fazer usando o site do Portal da Empresa versus o que você pode fazer no aplicativo do Portal da Empresa no seu dispositivo, escolha um dos seguintes links:
+Você encontrará diretrizes de Portal da Empresa específicas à plataforma do dispositivo, começando com as etapas de registro, nos links a seguir:  
 
 - [Usando seu dispositivo Android](using-your-android-device-with-intune.md)
 - [Usar seu dispositivo iOS](using-your-ios-device-with-intune.md)

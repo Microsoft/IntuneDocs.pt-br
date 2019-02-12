@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7886f533f6ffa379132ac7c898bc5c1a1dac9111
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199414"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836533"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque no Intune
 
@@ -101,7 +102,7 @@ Quando você escolher o modo de quiosque de vários aplicativos, insira as segui
 
     - **Nome do aplicativo**: Obrigatório. Insira um nome para o aplicativo.
     - **Caminho local**: Obrigatório. Insira o caminho para o executável, como `C:\Program Files (x86)\Microsoft VS Code\Code.exe` ou `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **AUMID (ID do modelo de usuário do aplicativo)**: Insira a ID do modelo de usuário do aplicativo (AUMID) do aplicativo do Win32. Essa configuração determina o layout inicial do bloco na área de trabalho. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
+    - **AUMID (ID do modelo de usuário do aplicativo)**: Insira a ID do modelo de usuário do aplicativo (AUMID) do aplicativo do Win32. Essa configuração determina o layout inicial do bloco na área de trabalho. Para obter essa ID, consulte [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
     - **Tamanho do bloco**: Obrigatório. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
   
   - **Adicionar pela AUMID**: Use essa opção para adicionar aplicativos da caixa de entrada do Windows, como o Bloco de notas ou a Calculadora. Insira as seguintes propriedades: 

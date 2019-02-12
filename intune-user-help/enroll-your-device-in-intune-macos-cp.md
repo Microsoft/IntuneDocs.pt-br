@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260242"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690794"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
 
@@ -57,7 +57,7 @@ Use as etapas a seguir para registrar dispositivos macOS que executam o OS X El 
 
 4. A página __Dispositivos__ mostrará uma lista dos dispositivos gerenciados ou uma faixa. O conteúdo exibido depende da presença de um dispositivo gerenciado. 
     * Para adicionar um dispositivo que não está listado, selecione a faixa com informa **Toque aqui para informar qual dispositivo você está usando ou adicionar um novo dispositivo.**
-    * Se você não tiver nenhum dispositivo, a faixa informará: **Você não tem nenhum dispositivo gerenciado. Adicione este ao tocar aqui.** Clique na faixa para adicionar seu dispositivo.  
+    * Se você não tem nenhum dispositivo, o banner lê: **Você não tem nenhum dispositivo gerenciado. Adicione este ao tocar aqui.** Clique na faixa para adicionar seu dispositivo.  
 
      ![Uma captura de tela da página Dispositivos, com um quadrado vermelho em torno da opção de faixa para realçar onde clicar.](./media/CP-enroll-MACOS-1808.png)  
 5.  Conclua a etapa abaixo que corresponde à mensagem exibida atualmente no Portal da Empresa.  
@@ -93,4 +93,11 @@ O perfil de gerenciamento é o que define a conexão de canal do MDM. Contanto q
 
 Além disso, como esses outros perfis não exigem verificações individuais, eles são gerados mais rapidamente e entregues aos dispositivos. 
 
-Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+## <a name="updating-the-company-portal-app"></a>Atualizando o aplicativo do Portal da Empresa
+
+Atualizar o aplicativo do Portal da Empresa é feito da mesma maneira que qualquer outro aplicativo do Office, por meio do Microsoft AutoUpdate for Mac. Descubra mais sobre [como atualizar aplicativos da Microsoft para macOS aqui](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+
+## <a name="next-steps"></a>Próximas etapas  
+Precisa de ajuda adicional? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

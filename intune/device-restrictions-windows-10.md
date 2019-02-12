@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203630"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230113"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -420,7 +420,7 @@ Você pode configurar as informações que todos os aplicativos no dispositivo p
 
 - **Layout do menu Iniciar**: Para personalizar o menu Iniciar em dispositivos de desktop, você pode carregar um arquivo XML que inclua suas personalizações, incluindo a ordem em que os aplicativos são listados, entre outros. Os usuários não podem alterar o layout do menu Iniciar que você inserir.
 - **Fixar sites como blocos no menu Iniciar**: Importe imagens do Microsoft Edge mostradas como links no menu Iniciar do Windows para dispositivos de desktop.
-- **Desafixar aplicativos da barra de tarefas**: Escolha **Bloquear** para impedir o usuário de desafixar aplicativos no menu Iniciar.
+- **Desafixar aplicativos da barra de tarefas**: Escolha **Bloquear** para impedir o usuário de desafixar aplicativos da barra de tarefas.
 - **Troca Rápida de Usuário**: Escolha **Bloquear** para impedir a troca entre os usuários que estão conectados simultaneamente sem fazer logoff.
 - **Aplicativos mais usados**: Escolha **Bloquear** para ocultar a exibição dos aplicativos mais usados no menu Iniciar. Isso também desabilita a alternância correspondente no aplicativo Configurações.
 - **Aplicativos adicionados recentemente**: Escolha **Bloquear** para ocultar a exibição dos aplicativos adicionados recentemente no menu Iniciar. Isso também desabilita a alternância correspondente no aplicativo Configurações.

@@ -2,24 +2,25 @@
 title: Usar certificados SCEP com o Microsoft Intune – Azure | Microsoft Docs
 description: Para usar certificados SCEP no Microsoft Intune, configure seu domínio do AD local, crie uma autoridade de certificação, configure o servidor NDES e instale o Conector de Certificado do Intune. Em seguida, crie um perfil de certificado SCEP e atribua esse perfil a grupos. Consulte também as IDs de eventos diferentes e suas descrições e os códigos de diagnósticos para o serviço do conector do Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597368"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838112"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -67,7 +68,7 @@ Recomendamos publicar o servidor NDES por meio de um proxy reverso, como o [Prox
 |**Modelo de certificado**|Configure este modelo na AC emissora.|
 |**Certificado de autenticação de cliente**|Solicitado pela AC emissora ou pública, você instala este certificado no servidor de NDES.|
 |**Certificado de autenticação de servidor**|Solicitado da AC emissora pública, você instala e associa o certificado SSL no IIS no servidor de NDES. Se o certificado tiver o conjunto de usos de chave de autenticação de cliente e servidor (**Usos de Chave Avançados**), você poderá usar o mesmo certificado.|
-|**Certificado de AC raiz confiável**|Exporte esse certificado como um arquivo **.cer** da AC raiz ou de qualquer dispositivo que confie em sua AC raiz. Em seguida, atribua-o a usuários, dispositivos ou ambos usando o perfil do Certificado de Autoridade de Certificação confiável.<br /><b>OBSERVAÇÃO:<b /> quando um perfil de certificado SCEP for atribuído, certifique-se de atribuir o perfil do Certificado raiz confiável referenciado no perfil de certificado SCEP ao mesmo grupo de dispositivos ou usuários.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
+|**Certificado de AC raiz confiável**|Exporte esse certificado como um arquivo **.cer** da AC raiz ou de qualquer dispositivo que confie em sua AC raiz. Em seguida, atribua-o a usuários, dispositivos ou a ambos, usando o perfil do Certificado de Autoridade de Certificação confiável.<br /><b>OBSERVAÇÃO:<b /> quando um perfil de certificado SCEP for atribuído, certifique-se de atribuir o perfil do Certificado raiz confiável referenciado no perfil de certificado SCEP ao mesmo grupo de dispositivos ou usuários.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
 
 ### <a name="accounts"></a>Contas
 
@@ -562,3 +563,4 @@ Da versão 6.1806.x.x em diante, o Serviço do Conector do Intune registra em lo
 
 - [Usar certificados PKCS](certficates-pfx-configure.md) ou [emitir certificados PKCS de um serviço Web do gerenciador do Symantec PKI](certificates-symantec-configure.md)
 - [Adicionar uma AC de terceiros para usar o SCEP com o Intune](certificate-authority-add-scep-overview.md)
+- Para obter assistência adicional, use a guia [Solucionar problemas na implantação do perfil de certificado SCEP no Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune).
