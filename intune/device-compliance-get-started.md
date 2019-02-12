@@ -14,12 +14,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a2a3a9838043d4e9b69c6369da87a6f54087f76c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199397"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849995"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade do dispositivo no Intune
 
@@ -128,7 +129,7 @@ Para obter mais informações sobre como monitorar políticas de conformidade de
 
 Se um dispositivo tiver várias políticas de conformidade e diferentes status de conformidade para duas ou mais das políticas de conformidade atribuídas, um único status de conformidade resultante será atribuído. Essa atribuição é baseada em um nível de gravidade conceitual atribuído a cada status de conformidade. Cada status de conformidade tem o seguinte nível de gravidade:
 
-|Status  |Gravidade  |
+|Status  |Severidade  |
 |---------|---------|
 |Unknown     |1|
 |NotApplicable     |2|
@@ -152,7 +153,7 @@ Você também pode usar políticas de conformidade do dispositivo sem qualquer a
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Maneiras de implantar políticas de conformidade do dispositivo
 Você pode implantar a política de conformidade para usuários em grupos de usuários ou dispositivos em grupos de dispositivo. Quando uma política de conformidade é implantada para um usuário, a conformidade de todos os dispositivos do usuário é verificada. No Windows 10 versão 1803 e dispositivos mais recentes, recomendamos implantar em grupos de dispositivos *se* o usuário principal não registrou o dispositivo. Usar grupos de dispositivos neste cenário ajuda os relatórios de conformidade.
 
-Um conjunto de configurações de política de conformidade interno (**Intune** > **Conformidade do dispositivo**) é avaliado em todos os dispositivos registrados no Intune. Entre elas estão:
+Um conjunto de configurações de política de conformidade interno (**Intune** > **Conformidade do dispositivo**) é avaliado em todos os dispositivos registrados no Intune. Como por exemplo:
 
 - **Marcar dispositivos sem política de conformidade atribuída como**: Essa propriedade tem dois valores:
 

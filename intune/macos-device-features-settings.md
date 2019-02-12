@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: cdc5f5fe2c94dee2349cab777c7671c2673f52b2
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: db89dd2cce679597533d2861a43a7a2fd82abd14
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831949"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850566"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configurações de recursos do dispositivo macOS no Intune
 
@@ -38,7 +39,7 @@ O Intune inclui algumas configurações internas para permitir que os usuários 
     - **Porta**: Insira a porta de escuta do destino do AirPrint. Se você deixar essa propriedade em branco, o AirPrint usará a porta padrão. Disponível no iOS 11.0 e posterior.
     - **TLS**: Escolha **Habilitar** para proteger as conexões do AirPrint com o protocolo TLS. Disponível no iOS 11.0 e posterior.
 
-2. Selecione **Adicionar**. O servidor AirPrint é adicionado à lista. Você pode adicionar vários servidores AirPrint.
+2. Selecione **Adicionar**. O servidor do AirPrint é adicionado à lista. Você pode adicionar vários servidores AirPrint.
 
     Você também pode **Importar** um arquivo .csv (separado por vírgula) que inclui uma lista de impressoras AirPrint. Além disso, depois de adicionar impressoras AirPrint no Intune, você pode **Exportar** essa lista.
 
@@ -55,7 +56,7 @@ Para adicionar servidores AirPrinter, você precisa ter o endereço IP da impres
 
 3. No Terminal, digite `ping myprinter.local` e escolha Enter.
 
-   Observe o endereço IP. Por exemplo, pode retornar algo semelhante a `PING myprinter.local (10.50.25.21)`.
+   Anote o endereço IP. Por exemplo, pode retornar algo semelhante a `PING myprinter.local (10.50.25.21)`.
 
 4. Use os valores do endereço IP e do caminho de recursos. Neste exemplo, o endereço IP é `10.50.25.21` e o caminho do recurso é `/ipp/port1`.
 

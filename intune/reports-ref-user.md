@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 52201b68e946ec59b7c70ea5ff735c26728e27ce
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 61ec5fbe3504f972085af49e6860f4258cfc9484
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429722"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835258"
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de usuário
 
@@ -38,7 +39,7 @@ A coleção de entidades **Usuário** contém dados do usuário. Esses registros
 | UserKey |Identificador exclusivo do usuário no data warehouse – chave alternativa. |123 |
 | UserId |Identificador exclusivo do usuário – semelhante à UserKey, mas é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Endereço de email do usuário. |John@constoso.com |
-| UPN | Nome principal de usuário do usuário. | John@constoso.com |
+| UPN | Nome UPN do usuário. | John@constoso.com |
 | DisplayName |Nome de exibição do usuário. |John |
 | IntuneLicensed |Especifica se este usuário é Intune licenciado ou não. |Verdadeiro/Falso |
 | IsDeleted | Indica se todas as licenças do usuário expiraram e se o usuário foi, portanto, removido do Intune. Para um único registro, esse sinalizador não é alterado. Em vez disso, um novo registro é criado para um novo estado do usuário. |Verdadeiro/Falso |

@@ -15,12 +15,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f87c2fa5fcb7e76fa8d398018e87ec0b15c05e9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072568"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843384"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune
 
@@ -57,11 +58,11 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
 
 Compatível com as seguintes edições do Windows 10:
-- Inicial
+- Início
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 
@@ -81,7 +82,7 @@ Essas configurações são aplicáveis a todos os tipos de rede.
 - **Encontrar uma correspondência oportuna de conjunto de autenticação por módulo de chave**: Escolha **Habilitar** para forçar os módulos de chave a ignorar somente os conjuntos de autenticação aos quais eles não dão suporte. Quando essa opção é **Não configurado**, os módulos para chave DEVEM ignorar o conjunto completo de autenticação caso eles não deem suporte a todos os pacotes de autenticação especificados no conjunto.
 - **Enfileiramento de pacotes**: Informe como o dimensionamento de software no lado do recebimento é habilitado para o recebimento criptografado e o encaminhamento de texto não criptografado para o cenário de gateway de túnel IPsec. Essa configuração confirma que a ordem de pacote é preservada.
 
-### <a name="network-settings"></a>Configurações da rede
+### <a name="network-settings"></a>Configurações de rede
 
 Essas configurações aplicam-se a tipos de rede específicos, incluindo **Rede de domínio (local de trabalho)**, **Rede privada (detectável)** e **Rede pública (não detectável)**.
 
@@ -104,11 +105,11 @@ Essas configurações aplicam-se a tipos de rede específicos, incluindo **Rede 
 ## <a name="windows-defender-smartscreen-settings"></a>Configurações do Windows Defender SmartScreen
 
 Compatível com as seguintes edições do Windows 10 com o Microsoft Edge instalado:
-- Inicial
+- Início
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 
@@ -126,7 +127,7 @@ Compatível com as seguintes edições do Windows 10:
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 
@@ -144,7 +145,7 @@ Compatível com as seguintes edições do Windows 10:
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 - Professional
@@ -164,7 +165,7 @@ As configurações básicas são as configurações universais do BitLocker para
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 - Professional
@@ -201,7 +202,7 @@ Essas configurações aplicam-se especificamente às unidades de dados do sistem
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 - Professional
@@ -225,7 +226,7 @@ Compatível com as seguintes edições do Windows 10:
 Compatível com as seguintes edições do Windows 10:
 
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 - Professional
@@ -239,11 +240,11 @@ Compatível com as seguintes edições do Windows 10:
 
 Compatível com as seguintes edições do Windows 10:
 
-- Inicial
+- Início
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 
@@ -318,7 +319,7 @@ Compatível com as seguintes edições do Windows 10:
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 
@@ -359,11 +360,11 @@ Quando você habilita o Credential Guard, os seguintes recursos obrigatórios ta
 
 Compatível com as seguintes edições do Windows 10:
 
-- Inicial
+- Início
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 - Celular
 - Mobile Enterprise
 
@@ -392,11 +393,11 @@ Forneça as informações de contato de TI que aparecem no aplicativo da Central
 
 Compatível com as seguintes edições do Windows 10:
  
-- Inicial
+- Início
 - Professional
 - Negócios
 - Enterprise
-- Formação educacional
+- Educação
 
 Use estas opções para definir as configurações de segurança locais em dispositivos Windows 10.
 
@@ -438,7 +439,7 @@ Use estas opções para definir as configurações de segurança locais em dispo
 
     [Opções de LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fornecem mais detalhes.
 
-#### <a name="display"></a>Exibição
+#### <a name="display"></a>Vídeo
 
 - **Informações do usuário na tela de bloqueio**: Configure as informações do usuário exibidas quando a sessão é bloqueada. Se não configurado, o nome de exibição do usuário, o domínio e o nome de usuário serão mostrados.
   - **Não configurado**

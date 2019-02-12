@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 745fd366520ba55e54a5b666d47469debb241ab9
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08e6c7657eeba7a41b9927e736fe7f4fc07e25e6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831523"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848569"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>RBAC (Controle de administração baseada em funções) com o Microsoft Intune
 
@@ -68,14 +69,14 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 
     |Permissão|Operação|
     |---|---|
-    |Dados de Auditoria|Leitura|
+    |Dados de Auditoria|Ler|
     |DeviceConfigurations|Atribuir, criar, excluir, ler, atualizar|
     |Gerenciadores de Registro de Dispositivos|Ler, atualizar|
     |Dispositivos Gerenciados|Ler, atualizar<!--, Delete [To be added in 1803]-->|
     |Aplicativos móveis|Atribuir, criar, excluir, ler, atualizar|
-    |Relatórios|Leitura|
+    |Relatórios|Ler|
     |Ações remotas|Limpar computador, reinicializar, bloqueio remoto, desativar, sincronizar dispositivos, apagar|
-    |Organização|Leitura|
+    |Organização|Ler|
 
 ### <a name="to-assign-a-built-in-role"></a>Para atribuir uma função interna
 
