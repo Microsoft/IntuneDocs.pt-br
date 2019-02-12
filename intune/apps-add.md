@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5cab9a2316357f8e8b32c76c9618ce0b60d403b2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105214"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851612"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
@@ -35,7 +36,7 @@ Os usuários de aplicativos e dispositivos na empresa (a força de trabalho da e
 
 O Intune é compatível com uma ampla variedade de tipos de aplicativos. As opções disponíveis são diferentes para cada tipo de aplicativo. O Intune permite que você adicione e atribua os seguintes tipos de aplicativo:
 
-| Tipos de aplicativo | Instalação | Atualizações |
+| Tipos de aplicativo | Instalação | Updates |
 |---|---|---|
 | Aplicativos da loja (aplicativos da loja) | O Intune instala o aplicativo no dispositivo.  | As atualizações de aplicativo são automáticas.   |
 | Aplicativos escritos internamente (linha de negócios)  | O Intune instala o aplicativo no dispositivo (você fornece o arquivo de instalação).     | É necessário atualizar o aplicativo.  |

@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0762c099d30cbeda37ffdaffcb0bed2091f7b9c1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105180"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837077"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -86,7 +87,7 @@ Para a configuração do dispositivo, a página de status de registro controlar�
 - Políticas de segurança
     - Um CSP (provedor de serviço de configuração) para todos os registros.
     - CSPs reais configurados pelo Intune não são rastreados aqui.
-- Aplicativo
+- Aplicativos
     - Aplicativos MSI de LoB (linha de negócios) por computador.
     - Aplicativos de repositório de LoB com contexto de instalação = Dispositivo.
     - Aplicativos de repositório de LoB e repositório offline com contexto de instalação = Dispositivo.
@@ -99,7 +100,7 @@ Para a configuração de conta, a página de status de registro rastreia os segu
 - Políticas de segurança
     - Um CSP para todos os registros.
     - CSPs reais configurados pelo Intune não são rastreados aqui.
-- Aplicativo
+- Aplicativos
     - Aplicativos MSI de LoB por usuário atribuídos a Todos os Dispositivos, Todos os Usuários ou a um grupo de usuário do qual o usuário que está registrando o dispositivo é membro.
     - Aplicativos MSI de LoB por computador atribuídos a Todos os Usuários ou a um grupo de usuários do qual o dispositivo de registro de usuário é membro.
     - Os aplicativos de armazenamento LoB, online e offline estão atribuídos a qualquer um dos seguintes:

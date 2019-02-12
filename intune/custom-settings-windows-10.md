@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184447"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842773"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Usar configurações personalizadas para dispositivos Windows 10 no Intune
 
@@ -43,15 +44,15 @@ Este artigo mostra:
 3. Insira as seguintes configurações:
 
     - **Nome**: insira um nome para o perfil, como `windows 10 custom profile`.
-    - **Descrição:** insira uma descrição para o perfil.
+    - **Descrição**: Insira uma descrição para o perfil.
     - **Plataforma**: escolha **Windows 10 e posterior**.
     - **Tipo de perfil**: escolha **Personalizado**.
 
 4. Em **Configurações personalizadas de OMA-URI**, selecione **Adicionar**. Insira as seguintes configurações:
 
-    - **Nome**: insira um nome exclusivo para a configuração de OMA-URI para ajudar você a identificá-la na lista de configurações.
+    - **Nome**: Insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.
     - **Descrição**: insira uma descrição que proporciona uma visão geral da configuração e demais detalhes importantes.
-    - **OMA-URI** (com diferenciação de maiúsculas e minúsculas): insira o OMA-URI que você deseja usar como configuração.
+    - **OMA-URI** (diferencia maiúsculas de minúsculas): insira o OMA-URI que você deseja usar como uma configuração.
     - **Tipo de dados**: escolha o tipo de dados que você usará para essa configuração de OMA-URI. Suas opções:
 
         - Cadeia de caracteres
@@ -62,7 +63,7 @@ Este artigo mostra:
         - Booliano
         - Base64 (arquivo)
 
-    - **Valor** – insira o valor de dados que você deseja associar ao OMA-URI inserido. O valor depende do tipo de dados selecionado. Por exemplo, se você escolher **Data e hora**, selecione o valor em um seletor de data.
+    - **Valor**: insira o valor de dados que você deseja associar ao OMA-URI inserido. O valor depende do tipo de dados selecionado. Por exemplo, se você escolher **Data e hora**, selecione o valor em um seletor de data.
 
     Depois de adicionar algumas configurações, você pode selecionar **Exportar**. **Exportar** cria uma lista de todos os valores que você adicionou em um arquivo de valores separados por vírgulas (.csv).
 

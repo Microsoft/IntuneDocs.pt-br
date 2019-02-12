@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
-ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9fdd1891f8a0e893d61ac3a0b40dac5a01f602c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266895"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851331"
 ---
 # <a name="reference-for-current-user-entity"></a>Referência da entidade de usuário atual
 
@@ -37,7 +38,7 @@ A entidade **Usuário Atual** lista todos os usuários do Azure AD (Azure Active
 | UserKey |Identificador exclusivo do usuário no data warehouse – chave alternativa. |123 |
 | UserId |Identificador exclusivo do usuário – semelhante à UserKey, mas é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Endereço de email do usuário. |John@constoso.com |
-| UPN | Nome principal de usuário do usuário. | John@constoso.com |
+| UPN | Nome UPN do usuário. | John@constoso.com |
 | DisplayName |Nome de exibição do usuário. |John |
 | IntuneLicensed |Especifica se este usuário é Intune licenciado ou não. |Verdadeiro/Falso |
 | StartDateInclusiveUTC |Data e hora em UTC em que esse usuário foi criado no data warehouse. |23/11/2016 12:00:00 AM |

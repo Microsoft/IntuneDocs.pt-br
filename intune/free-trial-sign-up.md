@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067424"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834170"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente o Microsoft Intune gratuitamente 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: Experimente o Microsoft Intune gratuitamente 
 
 O Microsoft Intune ajuda você a proteger os dados corporativos da sua força de trabalho por meio do gerenciamento de dispositivos e aplicativos. Neste início rápido, você criará uma assinatura gratuita para experimentar o Intune em um ambiente de teste.
 

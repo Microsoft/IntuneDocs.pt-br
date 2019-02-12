@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c8e15675beb97b396c9340e2ab3bfa86a3a43f76
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1df3676b4259ac84cf1ae5f0ce76ee300aa92f85
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831421"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839134"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>O que o Intune pode fazer para minha empresa?
 O Microsoft Intune é um serviço de EMM (gerenciamento de mobilidade empresarial) baseado em nuvem que ajuda a habilitar sua força de trabalho a ser produtiva enquanto mantém dados corporativos protegidos.
@@ -42,7 +43,7 @@ Com o Intune, você pode:
 * [Habilitar os funcionários a acessarem o Office 365 de forma segura de um quiosque público não gerenciado](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [Emitir tablets compartilhados de uso limitado para seus funcionários](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
-## <a name="quickstarts"></a>Inícios rápidos
+## <a name="quickstarts"></a>Guias de início rápido
 
 Sabemos que pode ser difícil iniciar o gerenciamento de dispositivos móveis, porque há muitas decisões diferentes que você precisa tomar em nome da sua empresa. Os inícios rápidos a seguir ajudam você a se familiarizar com o Intune e realizar algumas tarefas comuns em um curto espaço de tempo.
 
