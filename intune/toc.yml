@@ -229,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Solucionar problemas de registro de dispositivo
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Gerenciar dispositivos
+    href: device-management.md
+    items:
+    - name: Recursos de gerenciamento de dispositivos
+      href: device-management-capabilities.md
+    - name: Ignorar bloqueio de ativação
+      href: device-activation-lock-bypass.md
+    - name: Gerenciar o Novo Início do Windows
+      href: device-fresh-start.md
+    - name: Localizar um dispositivo iOS perdido
+      href: device-locate.md
+    - name: Habilitar o modo perdido do iOS
+      href: device-lost-mode.md
+    - name: Ativar o modo supervisionado do iOS
+      href: device-supervised-mode.md
+    - name: Bloquear dispositivo
+      href: device-remote-lock.md
+    - name: Redefinir senha
+      href: device-passcode-reset.md
+    - name: Reiniciar dispositivo
+      href: device-restart.md
+    - name: Fazer logoff de usuário atual
+      href: device-logout-user.md
+    - name: Remover usuário
+      href: device-remove-user.md
+    - name: Apagar dispositivo
+      href: device-erase.md
+    - name: Dispositivos móveis com controle remoto
+      href: device-profile-android-teamviewer.md
+    - name: Redefinir o PIN do Windows 10
+      href: device-windows-pin-reset.md
+    - name: Instalar o conector de serviço do Exchange
+      href: exchange-service-connector-configure.md
+    - name: Sincronizar dispositivo
+      href: device-sync.md
+    - name: Examinar o inventário do dispositivo
+      href: device-inventory.md
+    - name: Remover dispositivos
+      href: devices-wipe.md
   - name: Configurar conformidade do dispositivo
     items:
     - name: Visão geral de conformidade
@@ -959,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir vazamento de dados em dispositivos não gerenciados
       href: data-leak-prevention.md
-ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
-ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56240037"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302193"
