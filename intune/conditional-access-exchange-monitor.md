@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 951db22026725c2ec2e9c2be340bcccd44b2528b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 383370aaaca10cb44b614be6e250218106406cb4
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848093"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307746"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorar a conformidade de acesso condicional do Exchange Local e do Exchange Online no Intune
 
@@ -36,11 +36,11 @@ A partir da versão 1704 do Intune, os administradores podem ver informações d
 
 1.  Vá para o [Portal do Azure](https://portal.azure.com/) e entre com suas credenciais do Intune.
 
-2.  Depois de entrar com êxito, você verá o **Painel do Azure**.
+2.  Quando entrar com êxito, você verá o **Painel do Azure**.
 
-3.  Escolha  **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
+3.  Escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
-4.  Escolha **Intune** e você verá o **Painel do Intune**.
+4.  Escolha **Intune** e você verá o **Painel do Intune**.
 
 5.  Escolha **Acesso condicional** e, em seguida, escolha **Visão Geral**.
 
@@ -50,7 +50,7 @@ A partir da versão 1704 do Intune, os administradores podem ver informações d
 
 Depois de escolher uma das três áreas, você poderá ver mais detalhes sobre os dispositivos que foram permitidos, bloqueados ou colocados em quarentena.
 
-Você também poderá fazer uma busca detalhada em dispositivos específicos para ver mais detalhes. Por exemplo, o dispositivo escolhido na imagem a seguir está bloqueado. O Intune dá a opção de remover dados corporativos do painel de relatórios de conformidade de acesso condicional.
+Você também poderá analisar em dispositivos específicos para ver mais detalhes. Por exemplo, o dispositivo escolhido na imagem a seguir está bloqueado. O Intune dá a opção de remover dados corporativos do painel de relatórios de conformidade de acesso condicional.
 
 ![Imagem do Relatório de detalhes do dispositivo de acesso condicional](./media/CA-reporting-intune-3.png)
 
