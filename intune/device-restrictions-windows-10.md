@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230113"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307882"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -70,6 +71,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Conta Microsoft**: Permite que o usuário associe uma conta da Microsoft ao dispositivo.
 - **Conta não Microsoft**: Permite que os usuários adicionem ao dispositivo contas de email que não estejam associadas a uma conta Microsoft.
 - **Sincronização de configurações de conta Microsoft**: Permite que as configurações de dispositivo e de aplicativo associadas a uma conta Microsoft sejam sincronizadas entre dispositivos.
+- **Assistente de conexão de conta da Microsoft**: Escolha **Desabilitar** para impedir que os usuários finais controlem o serviço de Assistente de Entrada da Microsoft (wlidsvc), como interromper ou iniciar o serviço manualmente. Quando definido como **Não configurado**, o serviço do wlidsvc NT usa o sistema operacional (SO) padrão, que pode permitir que os usuários finais iniciem e parem o serviço. Esse serviço é usado pelo sistema operacional para permitir que os usuários entre em suas contas da Microsoft.
 
 ## <a name="cloud-printer"></a>Impressora de Nuvem
 
@@ -136,6 +138,10 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Workspace do Ink**: Impede que os usuários acessem o Workspace do Ink. **Não configurado** habilita o espaço de trabalho do Ink e o usuário tem permissão para usá-lo na tela de bloqueio.
 - **Reimplantação automática**: Permite que os usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **CTRL+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
 - **Exigir que os usuários se conectem à rede durante a instalação do dispositivo (somente Participante do Programa Windows Insider)**: Escolha **Exigir** para que o dispositivo se conecte a uma rede antes de continuar, após a página Rede, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um Windows Insider build 1809 ou posterior é necessário para usar essa configuração.
+- **Acesso Direto à Memória**: **Bloquear** impede o DMA (acesso direto à memória) para todas as portas downstream PCI com hot-plug até um usuário entre no Windows. **Habilitado** (padrão) permite o acesso a DMA, mesmo quando um usuário não esteja conectado.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **Encerrar processos do Gerenciador de Tarefas**: Essa configuração determina se não administradores podem usar o Gerenciador de Tarefas para encerrar tarefas. **Bloquear** impede que os usuários padrão (não administradores) usem o Gerenciador de Tarefas para encerrar um processo ou uma tarefa no dispositivo. A opção **Não configurado** (padrão) permite que os usuários padrão encerrem um processo ou uma tarefa usando o Gerenciador de Tarefas.
 
 ## <a name="kiosk-preview---obsolete"></a>Quiosque (versão prévia) – obsoleto
@@ -192,7 +198,7 @@ Use o botão **Adicionar** para criar uma configuração de quiosque (ou selecio
 ## <a name="locked-screen-experience"></a>Experiência na tela bloqueada
 
 - **Notificações da central de ações (somente dispositivo móvel)**: Permite que as notificações da central de ações sejam exibidas na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
-- **URL da imagem de tela bloqueada (somente Área de Trabalho)**: Insira a URL para uma imagem no formato JPEG que será usada como o papel de parede da tela de bloqueio do Windows. Os usuários não podem alterar essa configuração.
+- **URL da imagem de tela bloqueada (somente Área de Trabalho)**: Insira a URL para uma imagem no formato JPEG que será usada como o papel de parede da tela de bloqueio do Windows. Essa configuração bloqueia a imagem. A imagem não pode ser alterada posteriormente.
 - **Tempo limite de tela configurável do usuário (somente dispositivos móveis)**: Permite que os usuários configurem o tempo 
 - **Cortana na tela bloqueada (somente área de trabalho)**: Não permite que o usuário interaja com a Cortana quando o dispositivo está na tela de bloqueio (somente Windows 10 Desktop).
 - **Notificações do sistema na tela bloqueada**: Bloqueia a exibição de mensagens de alerta na tela de bloqueio do dispositivo.
@@ -313,7 +319,6 @@ Use o botão **Adicionar** para criar uma configuração de quiosque (ou selecio
   - **Evitar a reutilização de senhas anteriores**: Especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.
   - **Exigir senha quando o dispositivo retorna do estado ocioso (somente Mobile)**: Especifica que o usuário deverá inserir uma senha para desbloquear o dispositivo (somente para Windows 10 Mobile).
   - **Senhas simples**: Permite o uso de senhas simples, como 1111 ou 1234. Essa configuração também permite ou bloqueia o uso de senhas de imagem do Windows.
-- **Criptografia**: Habilitar a criptografia em dispositivos de destino.
 
 ## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicativo
 

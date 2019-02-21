@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08e6c7657eeba7a41b9927e736fe7f4fc07e25e6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a57dca7f6b817177cbd131e969c1b5aa52a248a8
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848569"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307763"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>RBAC (Controle de administração baseada em funções) com o Microsoft Intune
 
@@ -29,7 +29,8 @@ O RBAC ajuda você a controlar quem pode realizar as várias tarefas do Intune e
 
 - **Definição de função**: o nome de uma função, os recursos gerenciados por ela e as permissões concedidas a cada recurso.
 - **Membros**: os grupos de usuários que recebem as permissões.
-- **Escopo**: os grupos de usuários ou dispositivos que podem ser gerenciados pelos membros.
+- **Escopo (Grupos)**: os grupos de usuários ou dispositivos que podem ser gerenciados pelos membros.
+- **[Escopo (Marcas)](https://docs.microsoft.com/intune/scope-tags)**: Marcas nas quais a atribuição de função se aplica.
 - **Atribuição**: após a configuração da definição, dos membros e do escopo, a função é atribuída.
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
@@ -82,20 +83,22 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No painel **Intune**, escolha **Funções** > **Todas as funções**.
-4. No painel **Funções do Intune – Todas as funções**, escolha a função interna que você deseja atribuir.
+3. Na folha **Intune**, escolha **Funções** > **Todas as funções**.
+4. Na folha **Funções do Intune – Todas as funções**, escolha a função interna que você deseja atribuir.
 
-5. No painel <*nome da função*> – **Visão Geral**, escolha **Gerenciar** e **Atribuições**.
+5. Na folha <*nome da função*> – **Visão Geral**, escolha **Gerenciar** > **Atribuições**.
 
-6. No painel da função personalizada, escolha **Atribuir**.
+6. Na folha da função personalizada, escolha **Atribuir**.
 
-7. No painel **Atribuições de Função**, insira um **Nome** e uma **Descrição** opcional para a atribuição.
+7. Na folha **Atribuições de Função**, insira um **Nome de Atribuição** e uma **Descrição de atribuição** opcional para a atribuição.
 
-8. Para **Membros**, escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
+8. Para **Membros (Grupos)**, escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
 
-9. Para **Escopo**, escolha um grupo que contém os usuários que o membro acima terá permissão para gerenciar.
-<br></br>
-10. Quando terminar, escolha **OK**. A nova atribuição é exibida na lista de atribuições.
+9. Para **Escopo (Grupos)**, escolha um grupo que contém os usuários que o membro acima terá permissão para gerenciar.
+
+10. Para **Escopo (Marcas)**, escolha as marcas nas quais essa atribuição de função será aplicada.
+
+11. Quando terminar, escolha **OK**. A nova atribuição é exibida na lista de atribuições.
 
 ### <a name="intune-rbac-table"></a>Tabela do RBAC do Intune
 
@@ -116,31 +119,21 @@ Você pode criar uma função personalizada que inclui as permissões necessári
 
 2. Escolha **Todos os serviços** no menu à esquerda e digite **Intune** no filtro da caixa de texto.
 
-3. Escolha **Intune** > **Funções** > **Todas as funções** > **Adicionar personalizada**.
+3. Escolha **Intune** > **Funções** > **Todas as funções** > **Adicionar**.
 
-4. No painel **Adicionar Função Personalizada**, insira um nome e uma descrição para a nova função e clique em **Permissões**.
+4. Na folha **Adicionar Função Personalizada**, insira um nome e uma descrição para a nova função e clique em **Permissões**.
 
-5. No painel **Permissões**, escolha as permissões que você deseja usar com essa função. Use a [tabela do RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais permissões você deseja aplicar.
+5. Na folha **Permissões**, escolha as permissões que você deseja usar com essa função. Use a [tabela do RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais permissões você deseja aplicar.
 
-6. Quando terminar, escolha **OK**.
+6. Na folha **Escopo (Marcas)**, escolha as marcas nas quais essa função personalizada será aplicada.
 
-7. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista no painel **Funções do Intune – Todas as funções**.
+7. Quando terminar, escolha **OK**.
+
+7. Na folha **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **Funções do Intune – Todas as funções**.
 
 ### <a name="to-assign-a-custom-role"></a>Para atribuir uma função personalizada
 
-1. No painel **Funções do Intune – Todas as funções**, escolha a função personalizada que você deseja atribuir.
-
-2. No painel <*nome da função*> – **Visão Geral**, escolha **Gerenciar** e **Atribuições**. Nesse painel, também é possível editar ou excluir as funções existentes.
-
-3. No painel da função personalizada, escolha **Atribuir**.
-
-4. No painel **Atribuições de Função**, insira um **Nome** e uma **Descrição** opcional para a atribuição.
-
-5. Para **Membros**, escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
-
-6. Para **Escopo**, escolha um grupo que contém os usuários que o membro acima terá permissão para gerenciar.
-
-7. Quando terminar, escolha **OK**. A nova atribuição é exibida na lista de atribuições.
+Execute as mesmas etapas descritas em [Atribuir uma função interna](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role) e selecione a função personalizada.
 
 ## <a name="next-steps"></a>Próximas etapas
 

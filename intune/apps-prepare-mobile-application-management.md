@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834764"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325428"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -87,7 +87,6 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Permitir que o aplicativo receba dados de outros aplicativos|X|X|
 |Restringir recortar, copiar e colar com outros aplicativos|X|X|
 |Solicitar PIN simples para acesso|X|X|
-|Substituir o PIN do aplicativo interno pelo PIN do Intune|X||
 |Especificar o número de tentativas antes da redefinição do PIN|X|X|
 |Permitir a impressão digital em vez do PIN|X|X|
 |Permitir reconhecimento facial, em vez de PIN (somente iOS)|X|X|
@@ -98,8 +97,8 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Especificar o período de cortesia offline|X|X|
 |Bloquear captura de tela (somente para Android)|X|X|
 |Suporte para MAM sem registro de dispositivo|X|X|
-|Apagamento completo|X|X|
-|Apagamento seletivo <br><br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
+|Apagamento completo de dados de aplicativo|X|X|
+|Apagamento Seletivo de dados corporativos e de estudante em cenários com várias identidades <br><br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
 |Impedir "Salvar como"|X||
 |Configuração de aplicativo direcionado|X||
 |Suporte para múltiplas identidades|X||

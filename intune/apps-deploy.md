@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838760"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240054"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Depois de [adicionar um aplicativo](apps-add.md) ao Microsoft Intune, é possível atribuí-lo a usuários e dispositivos. É importante observar que você pode atribuir um aplicativo a um dispositivo seja ou não esse dispositivo gerenciado pelo Intune. 
+Depois de [adicionar um aplicativo](apps-add.md) ao Microsoft Intune, é possível atribuí-lo a usuários e dispositivos. É importante observar que você pode atribuir um aplicativo a um dispositivo seja ou não esse dispositivo gerenciado pelo Intune.
 
 > [!NOTE]
 > Não há suporte para a intenção de implantação disponível para grupos de dispositivos, há suporte apenas para os grupos de usuários.
@@ -124,8 +124,19 @@ Agora o aplicativo foi atribuído aos grupos selecionados. Para obter mais infor
 > Apenas para aplicativos gerenciados da loja do iOS, quando você os adiciona ao Microsoft Intune e os atribui como **Obrigatório**, eles são criados automaticamente com as intenções **Obrigatório** e **Disponível**.<br><br>
 > Aplicativos da iOS Store (não aplicativos VPP do iOS) que são almejados com intenção obrigatória serão impostos no dispositivo no momento do check-in do dispositivo e também serão exibidos no aplicativo do Portal da Empresa.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Implantação do aplicativo APP-WE do Android Enterprise
-Para dispositivos Android em um cenário de implantação APP-WE (Política de proteção de aplicativo sem registro), é possível usar o Google Play gerenciado para implantar aplicativos da loja e aplicativos de LOB para os usuários. Especificamente, é possível fornecer aos usuários finais uma experiência de catálogo e instalação de aplicativos que não exige mais que eles afrouxem a postura de segurança de seus dispositivos ao permitir instalações de fontes desconhecidas. Além disso, esse cenário de implantação fornece uma experiência aprimorada ao usuário final. Para etapas para atribuir um aplicativo, consulte [Atribuir um aplicativo](apps-deploy.md#assign-an-app).
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implantação de aplicativo do Google Play Gerenciado em dispositivos não gerenciados
+Para dispositivos Android em um cenário de implantação APP-WE (Política de Proteção de Aplicativo sem registro) não registrado, é possível usar o Google Play Gerenciado para implantar aplicativos da loja e aplicativos de LOB (linha de negócios) para os usuários. Os aplicativos do Google Play Gerenciado direcionados como **Disponíveis com ou sem registro** serão exibidos no aplicativo da Play Store no dispositivo do usuário final, e não no aplicativo Portal da Empresa. O usuário final procurará e instalará aplicativos implantados dessa maneira do aplicativo Play. Como os aplicativos estão sendo instalados do Google Play Gerenciado, o usuário final não precisará alterar as configurações do dispositivo para permitir a instalação do aplicativo de fontes desconhecidas, o que significa que os dispositivos ficarão mais seguros. Se o desenvolvedor do aplicativo publicar no Play uma nova versão do aplicativo instalado no dispositivo do usuário, o aplicativo será atualizado automaticamente pelo Play. 
+
+Etapas para atribuição de um aplicativo do Google Play Gerenciado em dispositivos não gerenciados:
+
+1. Conecte seu locatário do Intune no Google Play gerenciado. Se já tiver feito isso para gerenciar os dispositivos de perfil de trabalho, dedicados ou totalmente gerenciados do Android Enterprise, você não precisará fazê-lo novamente.
+2. Adicione aplicativos do Google Play gerenciado ao seu console do Intune.
+3. Direcione aplicativos do Google Play gerenciados como **Disponíveis com ou sem registro** ao grupo de usuários desejado. Os direcionamentos de aplicativo **Obrigatório** e **Desinstalar** não têm suporte para dispositivos não registrados.
+4. Atribuir uma Política de Proteção de Aplicativo ao grupo de usuário.
+5. Na próxima vez em que o usuário final abrir o aplicativo Portal da Empresa, ele verá uma mensagem indicando que há aplicativos disponíveis no aplicativo da Play Store.  O usuário pode tocar nessa notificação para acessar diretamente o aplicativo da Play e ver os aplicativos corporativos, ou pode navegar até o aplicativo da Play Store separadamente.
+6. O usuário final pode expandir o menu de contexto dentro do aplicativo da Play Store e alternar entre sua conta pessoal do Google (onde estão seus aplicativos pessoais) e sua conta de trabalho (onde estão aplicativos da loja e LOB direcionados a eles). Os usuários finais instalam os aplicativos tocando em Instalar no aplicativo da Play Store.
+
+Quando um apagamento seletivo do APP é emitido no console do Intune, a conta de trabalho é automaticamente removida do aplicativo do Play Store, e o usuário final não verá mais os aplicativos de trabalho no catálogo de aplicativos da Play Store. Quando a conta de trabalho for removida de um dispositivo, os aplicativos instalados da Play Store permanecerão instalados no dispositivo e não serão desinstalados. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

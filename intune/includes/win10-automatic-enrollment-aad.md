@@ -32,6 +32,9 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
       >
       > Para dispositivos corporativos, o escopo do usuário MDM terá precedência se ambos os escopos estiverem habilitados. Os dispositivos são registrados no MDM.
 
+   > [!NOTE]
+   > O escopo do usuário MAM deve ser definido para um grupo de usuários ou uma coleção.
+
    ![Captura de tela do portal do Azure](../media/auto-enroll-scope.png)
 
 5. Use os valores padrão para as seguintes URLs:
