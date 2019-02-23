@@ -25,7 +25,6 @@
 
 ### [Corrigindo problemas comuns com o Android](troubleshoot-your-device-android.md)
 #### [Verificar a conformidade do dispositivo](check-compliance-on-your-device-android.md)
-#### [Sincronização de email do Outlook com o modo de economia de bateria](power-saving-mode-android.md)
 #### [Corrigindo problemas comuns com o Samsung Knox](samsung-knox-errors-android.md)
 #### [Atualizar o dispositivo para instalar o Outlook](update-device-outlook-android.md)
 
