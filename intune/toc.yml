@@ -13,7 +13,7 @@ items:
     - name: Novidades na interface do usuário do aplicativo
       href: whats-new-app-ui.md
   expanded: true
-- name: Guias de início rápido
+- name: Inícios rápidos
   items:
   - name: Experimente o Intune gratuitamente
     href: free-trial-sign-up.md
@@ -140,7 +140,7 @@ items:
       href: account-sign-up.md
     - name: Configurar domínios
       href: custom-domain-name-configure.md
-    - name: Adicionar usuários
+    - name: Adicione usuários
       href: users-add.md
     - name: Adicionar grupos
       href: groups-add.md
@@ -199,15 +199,15 @@ items:
         href: android-enroll.md
       - name: Conectar o Intune ao Android Enterprise
         href: connect-intune-android-enterprise.md
-      - name: Configurar o registro de perfil de trabalho do Android
+      - name: Registro do perfil de trabalho do Android Enterprise
         href: android-work-profile-enroll.md
-      - name: Configurar o registro de dispositivos dedicados do Android
+      - name: Registro de dispositivo dedicados do Android Enterprise
         href: android-kiosk-enroll.md
-      - name: Configurar o registro totalmente gerenciado do Android
+      - name: Registro de dispositivos totalmente gerenciados do Android Enterprise
         href: android-fully-managed-enroll.md
-      - name: Registrar dispositivos dedicados ou totalmente gerenciados do Android
+      - name: Registrar dispositivos dedicados ou totalmente gerenciados do Android Enterprise
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Gerenciar os dispositivos de perfil de trabalho do Android
+      - name: Gerenciar dispositivos de perfil de trabalho do Android Enterprise
         href: android-enterprise-overview.md
       - name: Registro no Samsung Knox Mobile
         href: android-samsung-knox-mobile-enroll.md
@@ -250,6 +250,8 @@ items:
       href: device-remote-lock.md
     - name: Redefinir senha
       href: device-passcode-reset.md
+    - name: Renomear dispositivo
+      href: device-rename.md
     - name: Reiniciar dispositivo
       href: device-restart.md
     - name: Fazer logoff de usuário atual
@@ -578,6 +580,8 @@ items:
             href: app-protection-policies-exception.md
         - name: Validar políticas de proteção do aplicativo
           href: app-protection-policies-validate.md
+        - name: Entrega da política de proteção do aplicativo
+          href: app-protection-policy-delivery.md
         - name: Monitorar o status de usuário de proteção do aplicativo
           href: app-protection-policies-monitor.md
         - name: Preparar-se para as políticas de proteção do aplicativo WIP
@@ -612,7 +616,7 @@ items:
       href: data-google-sends-to-intune.md
   - name: Obter ajuda e suporte
     items:
-    - name: Solucionar problemas
+    - name: Solução de problemas
       items:
       - name: Ajudar os usuários a solucionar problemas
         href: help-desk-operators.md
@@ -648,7 +652,7 @@ items:
     items:
     - name: Android
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-android.md
       - name: Definições do perfil de configuração
         items:
@@ -675,7 +679,7 @@ items:
             href: samsung-knox-apps-allow-block.md
     - name: Android Enterprise
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-android-for-work.md
       - name: Definições do perfil de configuração
         items:
@@ -699,7 +703,7 @@ items:
           href: custom-settings-android-for-work.md
     - name: iOS
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-ios.md
       - name: Definições do perfil de configuração
         items:
@@ -723,7 +727,7 @@ items:
           href: custom-settings-ios.md
     - name: macOS
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-mac-os.md
       - name: Definições do perfil de configuração
         items:
@@ -749,7 +753,7 @@ items:
         href: security-baseline-settings-windows.md
     - name: Windows 10 e posterior
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Definições do perfil de configuração
         items:
@@ -799,7 +803,7 @@ items:
         href: custom-settings-windows-holographic.md
     - name: Windows 8.1
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
       - name: Definições do perfil de configuração
         items:
@@ -815,7 +819,7 @@ items:
           href: wi-fi-settings-import-windows-8-1.md
     - name: Windows Phone 8.1
       items:
-      - name: Configurações de política de conformidade
+      - name: Configurações da política de conformidade
         href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
       - name: Definições do perfil de configuração
         items:
@@ -910,7 +914,7 @@ items:
   items:
   - name: Guia de documentação do Microsoft Intune
     href: intune-documentation.md
-  - name: Solucionar problemas
+  - name: Solução de problemas
     items:
     - name: Ajudar os usuários a solucionar problemas
       href: help-desk-operators.md
@@ -1001,9 +1005,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir vazamento de dados em dispositivos não gerenciados
       href: data-leak-prevention.md
-ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458902"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742815"
