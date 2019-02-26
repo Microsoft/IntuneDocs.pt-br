@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086141"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655384"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas do gerenciamento de aplicativos móveis
 
@@ -78,7 +78,7 @@ Mensagem de erro ou caixa de diálogo | Causa | Remediação |
 **Aplicativo não configurado**: Este aplicativo não foi configurado para uso. Entre em contato com seu administrador de TI para obter ajuda. | Falha ao detectar uma política de proteção de aplicativo necessária para o aplicativo. |Verifique se uma política de proteção de aplicativo iOS está implantada no grupo de segurança do usuário e se ela se destina a esse aplicativo.
 **Bem-vindo ao Intune Managed Browser**: Este aplicativo funciona melhor quando gerenciado pelo Microsoft Intune. Sempre é possível usar esse aplicativo para navegar na Web e, quando ele é gerenciado pelo Microsoft Intune, você obtém acesso a recursos adicionais de proteção de dados. | Falha ao detectar uma política de proteção de aplicativo necessária para o aplicativo do Intune Managed Browser. <br><br>O usuário ainda pode usar o aplicativo para navegar na Web, mas ele não é gerenciado pelo Intune. | Verifique se uma política de proteção de aplicativo iOS está implantada no grupo de segurança do usuário e se ela se destina ao aplicativo do Intune Managed Browser.
 **Falha ao entrar**: Não é possível entrar neste momento. Tente novamente mais tarde. | Falha ao registrar o usuário com o serviço de MAM depois que o usuário tenta entrar com a conta corporativa ou de estudante. | Verifique se uma política de proteção de aplicativo iOS está implantada no grupo de segurança do usuário e se ela se destina a esse aplicativo.
-**Conta não configurada**: A organização não configurou sua conta para acessar dados corporativos ou de estudante. Entre em contato com o administrador de TI para obter ajuda. | A conta de usuário não tem uma licença do Intune A Direct. | Verifique se a conta do usuário tem uma licença do Intune atribuída no [Portal do Office](http://portal.office.com).
+**Conta não configurada**: A organização não configurou sua conta para acessar dados corporativos ou de estudante. Entre em contato com o administrador de TI para obter ajuda. | A conta de usuário não tem uma licença do Intune A Direct. | Verifique se a conta do usuário tem uma licença do Intune atribuída no [Portal do Office](https://portal.office.com).
 **Dispositivo não compatível**: Este aplicativo não pode ser utilizado porque você está usando um dispositivo com jailbreak. Entre em contato com seu administrador de TI para obter ajuda. | Intune detectou que o usuário está em um dispositivo com jailbreak. | Redefina o dispositivo para as configurações padrão de fábrica. Siga [estas instruções](https://support.apple.com/HT201274) do site de suporte da Apple.
 **Conexão à Internet necessária**: É necessário estar conectado à Internet para verificar se você pode usar este aplicativo. | Este dispositivo não está conectado à Internet. | Conecte o dispositivo a uma rede WiFi ou de Dados.
 **Falha desconhecida**: Tente reiniciar este aplicativo. Se o problema persistir, entre em contato com o administrador de TI para obter ajuda. | Ocorreu uma falha desconhecida. | Aguarde um momento e tente novamente. Se o erro persistir, crie um [tíquete de suporte](get-support.md#create-an-online-support-ticket) com o Intune.
@@ -97,7 +97,7 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 **Falha ao entrar**: Tente se conectar novamente. Se o problema persistir, entre em contato com o administrador de TI para obter ajuda. | Falha ao autenticar a conta com a qual o usuário tentou entrar. | Certifique-se de que o usuário entre com a conta corporativa ou de estudante registrada com o serviço de MAM do Intune (a primeira conta corporativa ou de estudante a entrar com êxito no aplicativo). <br><br> Limpe os dados do aplicativo. <br><br> Verifique se a versão do aplicativo está atualizada. <br><br> Verifique se a versão do Portal da Empresa está atualizada.
 **Conexão à Internet necessária**: É necessário estar conectado à Internet para verificar se você pode usar este aplicativo. | Este dispositivo não está conectado à Internet. | Conecte o dispositivo a uma rede WiFi ou de Dados.
 **Dispositivo não compatível**: Este aplicativo não pode ser utilizado porque você está usando um dispositivo desbloqueado por rooting. Entre em contato com seu administrador de TI para obter ajuda. | O Intune detectou que o usuário está usando um dispositivo com raiz. | Redefina o dispositivo para as configurações padrão de fábrica.
-**Conta não configurada**: Esse aplicativo deve ser gerenciado pelo Microsoft Intune, mas sua conta não foi configurada. Entre em contato com seu administrador de TI para obter ajuda. | A conta de usuário não tem uma licença do Intune A Direct. | Verifique se a conta do usuário tem uma licença do Intune atribuída no [Portal do Office](http://portal.office.com).
+**Conta não configurada**: Esse aplicativo deve ser gerenciado pelo Microsoft Intune, mas sua conta não foi configurada. Entre em contato com seu administrador de TI para obter ajuda. | A conta de usuário não tem uma licença do Intune A Direct. | Verifique se a conta do usuário tem uma licença do Intune atribuída no [Portal do Office](https://portal.office.com).
 **Não é possível registrar o aplicativo**: O aplicativo deve ser gerenciado pelo Microsoft Intune, mas não foi possível registrá-lo agora. Entre em contato com seu administrador de TI para obter ajuda. | Falha ao registrar automaticamente o aplicativo com o serviço MAM quando a política de proteção de aplicativo é solicitada. | Limpe os dados do aplicativo. <br><br> Envie os logs ao Intune por meio do aplicativo do Portal da Empresa ou emita um tíquete de suporte. Para obter mais informações, confira [Como obter suporte para o Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>Próximas etapas

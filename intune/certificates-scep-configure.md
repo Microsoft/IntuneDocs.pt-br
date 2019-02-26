@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838112"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742730"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -364,10 +364,12 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
 6. Insira as seguintes configurações:
 
    - **Tipo de certificado**: Escolha **Usuário** para ver os certificados de usuário. Escolha **Dispositivo** para dispositivos sem usuário, como quiosques. Os certificados do **dispositivo** estão disponíveis para as seguintes plataformas:  
+     - Android Enterprise
      - iOS
+     - macOS
      - Windows 8.1 e posterior
      - Windows 10 e posterior
-     - Android Enterprise
+
 
    - **Formato de nome de entidade**: Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções serão alteradas se você escolher um tipo de certificado de **usuário** ou um tipo de certificado de **dispositivo**. 
 
