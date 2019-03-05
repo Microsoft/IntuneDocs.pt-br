@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840205"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335064"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o dispositivo Windows manualmente
 
 Quando a velocidade de instalação do aplicativo é inferior ao ideal, inicie uma sincronização manual do dispositivo. Sincronizações manuais forçam o dispositivo a se conectar com o Intune para receber as atualizações e comunicações mais recentes. A velocidade da instalação pode aumentar após a conclusão da sincronização do dispositivo.
 
-O Intune dá suporte à sincronização manual por meio do aplicativo Portal da Empresa, da barra de tarefas da área de trabalho ou do menu Iniciar e também usando o aplicativo Configurações do dispositivo. 
-
-A funcionalidade do aplicativo Portal da Empresa tem suporte em dispositivos com Windows 10 que executam a Atualização do Criador (1703) ou posterior. 
-* [Sincronizar no aplicativo Portal da Empresa](#Sync-from-Company-Portal-app-for-Windows)  
+O Intune dá suporte à sincronização manual por meio do aplicativo Portal da Empresa, da barra de tarefas da área de trabalho ou do menu Iniciar e também usando o aplicativo Configurações do dispositivo. A funcionalidade do aplicativo Portal da Empresa tem suporte em dispositivos com Windows 10 que executam a Atualização do Criador (1703) ou posterior. 
 
 Todos os dispositivos com Windows podem ser sincronizados a partir do aplicativo Configurações do dispositivo, incluindo:
 
@@ -75,11 +72,11 @@ Conclua estas etapas para sincronizar manualmente seu Microsoft HoloLens, sua á
 
 3. Há várias versões do Windows 10 para desktops. Compare sua tela com as capturas de tela a seguir para determinar qual conjunto de etapas seguir. 
 
-    * Se a sua tela mostrar **Acesso corporativo ou de estudante**, confira as etapas em [Acesso corporativo ou de estudante](#access-work-or-school).
+    * Se a sua tela mostrar **Acesso corporativo ou de estudante**, confira as etapas em [Acesso corporativo ou de estudante](#access-work-or-school-steps).
 
     ![Opção de Acesso corporativo ou de estudante no aplicativo Configurações](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Se sua tela mostrar **Acesso corporativo**, confira as etapas em [Acesso corporativo](#work-access).  
+    * Se sua tela mostrar **Acesso corporativo**, confira as etapas em [Acesso corporativo](#work-access-steps).  
 
     ![Escolha acesso corporativo como tipo de conta](./media/win10pc-sync-3-work-access.png)
 

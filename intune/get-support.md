@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66ade3d833a82e717284c4abfe48b2c1b6d85add
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836499"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334962"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -50,7 +50,7 @@ A experiência de Ajuda e suporte para o Intune está disponível no [Portal de 
 ![Folhas do Intune](./media/get-support/intune-blades.png)
 
 
-Essa nova experiência é semelhante à experiência vista no [centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home) e substitui a [experiência anterior de Ajuda e suporte](#azure-help-+-and-support-experience). 
+Essa nova experiência é semelhante à experiência vista no [centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home) e substitui a [experiência anterior de Ajuda e suporte](#azure-help-+-support-experience). 
 
 Para acessar a Ajuda e suporte, use o seguinte:  
 - **Painel de Gerenciamento de Dispositivos:**

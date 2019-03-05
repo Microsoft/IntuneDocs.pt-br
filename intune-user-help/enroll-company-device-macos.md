@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f84eddaf9fac6dd678c7046664bf1feb9ea8cfc1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848212"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335234"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrar no gerenciamento o dispositivo macOS fornecido pela organização
 
@@ -64,7 +64,7 @@ Conclua as etapas a seguir para registrar seu dispositivo macOS no gerenciamento
     * Configure seu Mac  
 ## <a name="get-the-company-portal-app"></a>Obtenha o aplicativo Portal da Empresa      
 Baixe o aplicativo de Portal da Empresa do Intune para macOS no seu dispositivo. O aplicativo permite que você monitore, sincronize, adicione e remove seu dispositivo do gerenciamento e que instale aplicativos. Essas etapas também descrevem como registrar seu dispositivo no Portal da Empresa.  
-1. No seu dispositivo macOS, acesse http://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
+1. No seu dispositivo macOS, acesse https://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
 2. Entre no site Portal da Empresa com sua conta corporativa ou de estudante. 
 3. Clique em **Obter o aplicativo** para baixar o instalador do Portal da Empresa para macOS.
 4. Quando solicitado, abra o arquivo .pkg e conclua as etapas de instalação.
