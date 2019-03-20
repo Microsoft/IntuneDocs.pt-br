@@ -1,15 +1,16 @@
 ---
 title: Examinar os logs da política de proteção de aplicativo | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: Saiba mais sobre as configurações que você pode examinar nos logs de proteção do aplicativo.
+description: Este tópico descreve como configurar logs de política (aplicativo) de proteção do aplicativo do Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/20/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d5ffdb67a6243bf34db03fb8394763e1a1c1f0e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847158"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460488"
 ---
 # <a name="review-client-app-protection-logs"></a>Examine os logs de proteção do aplicativo de cliente
 
@@ -40,8 +41,8 @@ A tabela a seguir lista o nome e uma explicação das configurações registrada
 
 | Nome                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Configuração no Portal de Gerenciamento de Aplicativos Móveis do Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Cortesia Offline<br>Observação: Esse é período antes de os requisitos de acesso do aplicativo serem verificados novamente, caso o dispositivo esteja offline.             |
-| AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso - Tempo limite.<br>Observação: Esse é o período antes de os requisitos de acesso do aplicativo serem verificados novamente após a inicialização do aplicativo caso o dispositivo esteja online. |
+| AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Cortesia Offline<br>Observação: esse é período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente, se o dispositivo estiver offline.             |
+| AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso - Tempo limite.<br>Observação: esse é período de tempo antes que os requisitos de acesso ao aplicativo sejam verificados novamente após a inicialização do aplicativo, se o dispositivo estiver offline. |
 | AppPinDisabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Desabilitar o PIN do aplicativo quando o PIN do dispositivo for gerenciado.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Nenhum aplicativo<br>1 = Aplicativos gerenciados<br>2 = Qualquer aplicativo.                                                                                                                                                                                                                                                              | [Realocação de Dados] Permitir que este aplicativo receba dados de outros aplicativos.                                                                                                                        |
 | AppSharingToLevel           | 0 = Nenhum aplicativo<br>1 = Aplicativos gerenciados<br>2 = Qualquer aplicativo.                                                                                                                                                                                                                                                              | [Realocação de Dados] Permitir que este aplicativo transfira dados para outros aplicativos.                                                                                                                         |

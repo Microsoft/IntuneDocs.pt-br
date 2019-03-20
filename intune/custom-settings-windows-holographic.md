@@ -9,18 +9,19 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.topic: conceptual
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c6ec55db072cd02fae2b4eef659f601b63bb850
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231682"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566158"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Usar configurações personalizadas para dispositivos do Windows Holographic for Business no Intune
 
@@ -41,15 +42,15 @@ Este artigo mostra como criar um perfil personalizado para dispositivos Windows 
 3. Insira as seguintes configurações:
 
     - **Nome**: insira um nome para o perfil, como `hololens custom profile`.
-    - **Descrição**: Insira uma descrição para o perfil.
+    - **Descrição:** insira uma descrição para o perfil.
     - **Plataforma**: escolha **Windows 10 e posterior**.
     - **Tipo de perfil**: escolha **Personalizado**.
 
 4. Em **Configurações personalizadas de OMA-URI**, selecione **Adicionar**. Insira as seguintes configurações:
 
-    - **Nome**: Insira um nome exclusivo para a configuração de OMA-URI para ajudar a identificá-la na lista de configurações.
+    - **Nome**: insira um nome exclusivo para a configuração de OMA-URI para ajudar você a identificá-la na lista de configurações.
     - **Descrição**: insira uma descrição que proporciona uma visão geral da configuração e demais detalhes importantes.
-    - **OMA-URI** (diferencia maiúsculas de minúsculas): insira o OMA-URI que você deseja usar como uma configuração.
+    - **OMA-URI** (com diferenciação de maiúsculas e minúsculas): insira o OMA-URI que você deseja usar como configuração.
     - **Tipo de dados**: escolha o tipo de dados que você usará para essa configuração de OMA-URI. Suas opções:
 
         - Cadeia de caracteres
@@ -60,7 +61,7 @@ Este artigo mostra como criar um perfil personalizado para dispositivos Windows 
         - Booliano
         - Base64 (arquivo)
 
-    - **Valor**: insira o valor de dados que você deseja associar ao OMA-URI inserido. O valor depende do tipo de dados selecionado. Por exemplo, se você escolher **Data e hora**, selecione o valor em um seletor de data.
+    - **Valor** – insira o valor de dados que você deseja associar ao OMA-URI inserido. O valor depende do tipo de dados selecionado. Por exemplo, se você escolher **Data e hora**, selecione o valor em um seletor de data.
 
     Depois de adicionar algumas configurações, você pode selecionar **Exportar**. **Exportar** cria uma lista de todos os valores que você adicionou em um arquivo de valores separados por vírgulas (.csv).
 
