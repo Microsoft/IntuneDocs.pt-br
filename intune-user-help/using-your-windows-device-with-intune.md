@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844540"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Usar o dispositivo Windows com o Portal da Empresa do Intune
@@ -46,7 +46,7 @@ No momento, o Portal da Empresa dá suporte a dispositivos que executam as segui
 Há suporte para outras versões do Windows, como a [Windows 10 Holographic](https://www.microsoft.com/hololens), no Portal da Empresa. No entanto, essas versões não são abordadas neste artigo, porque destinam-se a usos bastante específicos.
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>Configurar o dispositivo no Portal da Empresa
-- [Obter meu dispositivo Windows gerenciado no Portal da Empresa](enroll-your-device-in-intune-windows.md)
+- [Obter meu dispositivo Windows gerenciado no Portal da Empresa](windows-enrollment-company-portal.md)  
 - [O que significa *gerenciar* meu dispositivo?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Quais informações minha empresa pode ver no meu dispositivo?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Criptografar meu dispositivo](encrypt-your-device-windows.md)

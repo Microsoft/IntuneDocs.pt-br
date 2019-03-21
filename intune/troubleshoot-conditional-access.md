@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 522e2e8b424c3c8865b29a5503c301b80b3c36ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 50c147e13a59df00ce9527a0843784d223afec20
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845392"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460709"
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acesso condicional
 
@@ -74,7 +75,7 @@ Se você encontrar um dispositivo que não é compatível, mas continua tendo ac
 - Analise os grupos de Destino e Exclusão. Se um usuário não estiver no grupo de destino correto ou estiver no grupo de exclusão, ele não será bloqueado. Somente os dispositivos de usuários em um grupo de Destino são verificados quanto à conformidade.
 - Certifique-se de que o dispositivo esteja sendo descoberto. O Exchange Connector está apontando para uma CAS do Exchange 2010 enquanto o usuário está em um servidor Exchange 2013? Nesse caso, se a regra padrão do Exchange for Permitir, mesmo se o usuário estiver no grupo de Destino, o Intune não poderá estar ciente da conexão do dispositivo com o Exchange.
 - Verifique a existência/estado de acesso do dispositivo no Exchange:
-  - Use este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Caso o dispositivo não esteja listado, isso indicará que ele não está acessando o Exchange.
+  - Use este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Caso o dispositivo não esteja listado, isso indicará que ele não está acessando o Exchange.
   - Se o dispositivo estiver listado, use cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre seu estado de acesso e fornecer essas informações ao Suporte da Microsoft.
 
 ## <a name="next-steps"></a>Próximas etapas

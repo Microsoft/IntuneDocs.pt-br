@@ -5,9 +5,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 ms.date: 07/13/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48079adfd8ff2f635ebf63370da62f7e428dcb40
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: d68f4151dc8b10ef716524f2422f532dec6693f9
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238499"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461236"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
 
@@ -125,8 +126,8 @@ Se os usuários tiverem recebido uma licença do Intune e a autoridade de MDM da
 
 - Os usuários de do Windows 8.1 ou Windows 10 têm duas opções de registro:
 
-  -  **Inscrever o PC como um dispositivo móvel**: Os usuários clicam no botão **Saiba mais sobre como se registrar** e recebem instruções sobre como registrar seu PC como um dispositivo móvel. Esse botão é exibido em destaque, porque o registro do MDM é considerado padrão e a opção de registro preferida. No entanto, a opção de MDM não é aplicável a esse tópico, que aborda somente a instalação do software cliente.
-  - **Inscrever o PC usando o software cliente do Intune**: Você precisará pedir que os usuários selecionem o link **Clique aqui para baixá-lo**, que leva à instalação do software cliente.
+  -  **Registrar o PC como um dispositivo móvel**: os usuários clicam no botão **Saiba mais sobre como se registrar** e recebem instruções sobre como registrar seu PC como um dispositivo móvel. Esse botão é exibido em destaque, porque o registro do MDM é considerado padrão e a opção de registro preferida. No entanto, a opção de MDM não é aplicável a esse tópico, que aborda somente a instalação do software cliente.
+  - **Registrar o PC usando o software cliente do Intune**: você precisará pedir que os usuários selecionem o link **Clique aqui para baixá-lo**, que leva à instalação do software cliente.
 
 A tabela a seguir resume as opções.
 

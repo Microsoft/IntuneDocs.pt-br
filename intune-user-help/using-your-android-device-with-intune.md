@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b21a2efc67773f1762e422af5fe8e576b1a97db
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55843452"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Usar o dispositivo Android com o Portal da Empresa do Intune
@@ -52,5 +52,5 @@ Atualmente, o Portal da Empresa é compatível com Android 4.4 e posterior. Isso
 - [Cancelar o registro do dispositivo no Intune](unenroll-your-device-from-intune-android.md)
 - [Cancelar o registro do dispositivo se você tiver recusado os Termos de Uso](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [O que acontece quando você cancela o registro do dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
-- [O que acontece quando você restaura o dispositivo Android usando o aplicativo do Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+- [O que acontece quando você redefine o dispositivo Android usando o aplicativo de Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
   <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

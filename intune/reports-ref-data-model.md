@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e305d419a101410a9a934a200dfcfb1c3488ff7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238278"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565513"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de dados do Microsoft Intune Data Warehouse
 
 O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma exibição histórica do ambiente de dispositivos móveis em constante mudança. A exibição é composta por entidades relacionadas no tempo.
 
-## <a name="entities-entity-sets"></a>Entidades: Conjuntos de entidades
+## <a name="entities-entity-sets"></a>Entidade: conjuntos de entidades
 
 O warehouse expõe dados nas seguintes áreas de alto nível:
 
@@ -49,7 +50,7 @@ Essas áreas contêm entidades que são significativas para seu ambiente do Intu
   -  [Usuário Atual](reports-ref-current-user.md)
   -  [Associações de Dispositivo de Usuário](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>Relações: Modelo de esquema em estrela
+## <a name="relationships-star-schema-model"></a>Relações: modelo de esquema em estrela
 
 O warehouse organiza as entidades em relações que são significativas para o tipo de perguntas que você deseja fazer. Por exemplo, você pode examinar o número de instalações de um aplicativo do Android desenvolvido internamente. A estrutura do data warehouse permite que você se aprofunde no seu ambiente móvel. Por sua vez, as ferramentas analíticas, como o Microsoft Power BI, podem usar o modelo de dados de Data Warehouse para criar visualizações e dashboards dinâmicos.
 
@@ -57,7 +58,7 @@ As entidades e relações usam um modelo de esquema em estrela. Um esquema em es
 
 Um modelo de esquema em estrela é otimizado para análise de dados e flexibilidade para que você possa criar os relatórios necessários para entender seu ambiente móvel em evolução.
 
-## <a name="time-daily-snapshots"></a>Hora: Instantâneos diários
+## <a name="time-daily-snapshots"></a>Tempo: Instantâneos diários
 
 O warehouse segue o downstream, partindo dos seus dados no Intune. O Intune tira um instantâneo diário à meia-noite UTC, e armazena o instantâneo no warehouse. A duração dos instantâneos mantidos varia de acordo com a tabela de fatos. Algumas podem manter por sete dias, outras por 30 dias e algumas por períodos até mais longos.
 

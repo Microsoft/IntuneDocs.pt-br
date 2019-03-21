@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849196"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566651"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -187,7 +188,7 @@ Abra o terminal do macOS e execute o seguinte comando:
 > [!NOTE]
 > Alguns parâmetros são opcionais, conforme mostrado na tabela a seguir.
 
-**Exemplo:** O comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
+**Exemplo:** o comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -279,7 +280,7 @@ Se a ferramenta de disposição do aplicativo não for concluída com êxito, um
 |O aplicativo de entrada especificado não está assinado. Especifique um aplicativo assinado válido.|A ferramenta de encapsulamento de aplicativo requer que os aplicativos sejam assinados. Consulte a documentação do desenvolvedor para saber como assinar um aplicativo encapsulado.|
 |O aplicativo de entrada especificado deve estar no formato .ipa ou .app.|Somente as extensões .app e .ipa são aceitas pela ferramenta de encapsulamento de aplicativo. Verifique se o arquivo de entrada tem uma extensão válida e foi compilado como um arquivo .app ou .ipa.|
 |O aplicativo de entrada especificado já foi encapsulado e está na versão mais recente de modelo de política.|A Ferramenta de Disposição do Aplicativo não encapsula novamente um aplicativo encapsulado existente com a versão mais recente do modelo de política.|
-|AVISO: Você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Especifique um hash SHA1 válido seguindo o sinalizador de linha de comando –c. |
+|AVISO: você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Especifique um hash SHA1 válido seguindo o sinalizador de linha de comando –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Arquivos de log para a Ferramenta de Disposição do Aplicativo
 Aplicativos que foram encapsulados usando a Ferramenta de Disposição do Aplicativo geram logs que são gravados no console do dispositivo de cliente do iOS. Essas informações são úteis quando você tem problemas com o aplicativo e precisa determinar se o problema está relacionado à Ferramenta de Disposição do Aplicativo. Para recuperar as informações, execute as seguintes etapas:
@@ -438,7 +439,8 @@ Use as etapas a seguir para obter logs para seus aplicativos encapsulados durant
 > [!NOTE]
 > A funcionalidade de registro em log está habilitada para aplicativos encapsulados com a Ferramenta de Encapsulamento de Aplicativo do Intune versão 7.1.13 ou superior.
 
-### <a name="see-also"></a>Consulte também
-- [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## <a name="see-also"></a>Consulte também
+
+- [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)
+- [Perguntas comuns, problemas e resoluções com perfis e políticas de dispositivo](device-profile-troubleshoot.md)
 - [Usar o SDK para habilitar aplicativos para o gerenciamento de aplicativo móvel](app-sdk.md)

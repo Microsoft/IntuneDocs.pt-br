@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834714"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
@@ -58,7 +58,7 @@ Use as etapas a seguir para registrar dispositivos macOS que executam o OS X El 
 
 4. A página __Dispositivos__ mostrará uma lista dos dispositivos gerenciados ou uma faixa. O conteúdo exibido depende da presença de um dispositivo gerenciado. 
     * Para adicionar um dispositivo que não está listado, selecione a faixa com informa **Toque aqui para informar qual dispositivo você está usando ou adicionar um novo dispositivo.**
-    * Se você não tem nenhum dispositivo, o banner lê: **Você não tem nenhum dispositivo gerenciado. Adicione este ao tocar aqui.** Clique na faixa para adicionar seu dispositivo.  
+    * Se você não tiver nenhum dispositivo, a faixa informará: **Você não tem nenhum dispositivo gerenciado. Adicione este ao tocar aqui.** Clique na faixa para adicionar seu dispositivo.  
 
      ![Uma captura de tela da página Dispositivos, com um quadrado vermelho em torno da opção de faixa para realçar onde clicar.](./media/CP-enroll-MACOS-1808.png)  
 5.  Conclua a etapa abaixo que corresponde à mensagem exibida atualmente no Portal da Empresa.  

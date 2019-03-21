@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283562"
 ---
 # <a name="metadata-and-markdown-template"></a>Modelo de markdown e de metadados
@@ -34,10 +34,10 @@ O bloco de metadados completo está acima, dividido nos campos necessários e op
 
 - Você **precisa** ter um espaço entre os dois-pontos (:) e o valor de um elemento de metadados.
 - Se um elemento de metadados opcional não tiver um valor, remova o comentário do elemento com um # (não deixe em branco ou use "na"). Se você estiver adicionando um valor a um elemento que teve o comentário removido, não deixe de remover o #.
-- Dois-pontos em um valor (por exemplo, um título) interrompem o analisador de metadados. Em seu lugar, use a codificação HTML &#58; (por exemplo, "title: Azure Rights Management&#58; noções básicas | Azure RMS").
+- Dois-pontos em um valor (por exemplo, um título) interrompem o analisador de metadados. Em seu lugar, use a codificação HTML &#58; (por exemplo, "title: Azure Rights Management& #58; noções básicas | Azure RMS").
 - **title**: esse título aparecerá nos resultados da pesquisa. O título deve terminar com uma barra vertical (|) seguida do nome do serviço (por exemplo, veja acima). O título não precisa (e provavelmente não deve) ser idêntico ao título do seu cabeçalho H1. Ele deve ter aproximadamente 65 caracteres (incluindo | NOME DO SERVIÇO)
 - **author**, **manager**, **reviewer**: o campo author deve conter o **nome de usuário Github** do autor, não seu alias.  Por outro lado, os campos "manager" e "reviewer" devem conter aliases. ms.reviewer especifica o nome do PM associado ao artigo ou serviço.
-- **ms.assetid**: esse é o GUID do artigo do CAPS. Ao criar um novo arquivo de markdown, obtenha um GUID em [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.assetid**: esse é o GUID do artigo do CAPS. Ao criar um novo arquivo markdown, obtenha um GUID em [https://www.guidgenerator.com](https://www.guidgenerator.com). 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: os valores possíveis para esses elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>GFM e markdown básico

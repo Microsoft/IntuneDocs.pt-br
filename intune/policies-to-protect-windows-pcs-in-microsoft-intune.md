@@ -6,10 +6,11 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 784ad8366391c55a97ac58d9c1f7ab7707062aa8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845655"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460072"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Usar políticas para ajudar a proteger computadores Windows que executam o software cliente do Intune
 
@@ -43,7 +44,6 @@ O Firewall do Windows ajuda a manter hackers, malware e outras ameaças longe do
 
 Como administrador de TI, uma das suas principais prioridades é [manter os computadores Windows que você gerencia livre de malware e vírus](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). O Intune integra-se ao Endpoint Protection para oferece proteção em tempo real contra ameaças de malware, mantém definições de malware atualizadas e examina automaticamente os computadores. O Endpoint Protection também fornece ferramentas que ajudam a gerenciar e monitorar ataques de malware.
 
+## <a name="see-also"></a>Consulte também
 
-
-### <a name="see-also"></a>Consulte também
-[Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Perguntas, problemas comuns e resoluções com perfis e políticas de dispositivo](device-profile-troubleshoot.md)

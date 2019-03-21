@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834646"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742526"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e compartilhar aplicativos no seu dispositivo
 Instale aplicativos em seu dispositivo pelo aplicativo Portal da Empresa para Windows.
@@ -35,11 +35,12 @@ Instale aplicativos em seu dispositivo pelo aplicativo Portal da Empresa para Wi
     ![O aplicativo Portal da Empresa para a página inicial do Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Encontre e instale aplicativos de qualquer uma das seguintes seções do aplicativo Portal da Empresa:  
 
-    * **Página Inicial**: Selecione um aplicativo em uma lista dos aplicativos em destaque de sua organização.  
-    * **Mostrar tudo**: Na seção **Home page** > **Aplicativos**, clique em **Mostrar tudo** para exibir todos os aplicativos disponíveis.  
-    * **Todos os aplicativos**: Selecione essa página no painel de navegação para ver todos os aplicativos disponíveis, incluindo os instalados e em destaque.  
-    * **Pesquisar aplicativos**: Há uma barra de pesquisa estática no painel de navegação do aplicativo.  Para localizar seus aplicativos disponíveis, pesquise pelo nome ou distribuidor do aplicativo.  
-    * **Todos os aplicativos**: Exiba, classifique e filtre todos os aplicativos disponíveis. Os resultados da pesquisa são classificados automaticamente por relevância.  
+    * **Página Inicial**: selecione de uma lista contendo os aplicativos em destaque da sua organização.  
+    * **Mostrar tudo**: na seção **Página Inicial** > **Aplicativos**, clique em **Mostrar tudo** para ver todos os aplicativos disponíveis.  
+    * **Todos os aplicativos**: selecione esta página no painel de navegação para ver todos os aplicativos disponíveis, incluindo os instalados e em destaque.  
+    * **Categorias de aplicativo**: Selecione esta página no painel de navegação para escolher os aplicativos com base no tipo ou função. Aplicativos são classificados em categorias, como **em destaque**, **educação**, e **produtividade**.  
+    * **Pesquisar aplicativos**: uma barra de pesquisa estática encontra-se no painel de navegação do aplicativo.  Para localizar seus aplicativos disponíveis, pesquise pelo nome ou distribuidor do aplicativo.  
+    * **Todos os aplicativos**: exibir, classificar e filtrar todos os aplicativos disponíveis. Os resultados da pesquisa são classificados automaticamente por relevância.  
 
 3. Selecione um aplicativo.   
 4. Na página de detalhes dos aplicativos, clique em **Instalar**. Após a instalação ser concluída, você verá um status **Instalado**.  
