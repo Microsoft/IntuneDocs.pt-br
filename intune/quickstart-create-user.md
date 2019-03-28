@@ -4,6 +4,7 @@ description: Início Rápido – Criar um usuário no Intune.
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189479"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991079"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início Rápido: criar um usuário e atribuir uma licença a ele
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início Rápido: Criar um usuário e atribuir uma licença a ele
 
 Neste início rápido, você criará um usuário e atribuirá uma licença a esse usuário. Ao usar o Intune, cada pessoa que você deseja que tenha acesso aos dados da empresa precisa ter uma conta de usuário. Os administradores do Intune depois podem configurar esses usuários para gerenciar o controle de acesso.
 
@@ -45,9 +47,9 @@ As pessoas precisam ter uma conta de usuário para se registrarem no gerenciamen
 
 ## <a name="assign-a-license-to-the-user"></a>Atribuir uma licença ao usuário
 
-Depois de criar um usuário, será necessário usar o [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a esse ele. Sem atribuir uma licença, não será possível registrar o dispositivo no Intune. 
+Depois de criar um usuário, será necessário usar o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a ele. Sem atribuir uma licença, não será possível registrar o dispositivo no Intune. 
 
-1. Entre no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as mesmas credenciais que você usou para entrar no Intune.
+1. Entre no [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as mesmas credenciais que você usou para entrar no Intune.
 2. Escolha **Usuários** > **Usuários Ativos** > escolha o usuário que você acabou de criar.
 3. Ao lado de **Licenças de produto**, selecione **Editar**.
 4. Em **Local**, escolha um local para o usuário.
@@ -61,7 +63,7 @@ O novo usuário ativo do Intune agora mostrará que está usando uma licença do
 
 ## <a name="clean-up-resources"></a>Limpar os recursos
 
-Se você não precisar mais desse usuário, poderá excluí-lo navegando até o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolhendo **Usuários** > **Usuários ativos** > *escolha o usuário na lista* > **Excluir usuário** > **Excluir usuário** > **Confirmar alterações** > **Fechar**.
+Se você não precisar mais desse usuário, poderá excluí-lo navegando até o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolhendo **Usuários** > **Usuários ativos** > *escolha o usuário na lista* > **Excluir usuário** > **Excluir usuário** > **Confirmar alterações** > **Fechar**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -70,4 +72,4 @@ Neste início rápido, você criou um usuário e atribuiu uma licença a ele. Pa
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início Rápido: Criar um grupo para gerenciar usuários](quickstart-create-group.md)
+> [Início rápido: Criar um grupo para gerenciar usuários](quickstart-create-group.md)

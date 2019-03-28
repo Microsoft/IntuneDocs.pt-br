@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179059"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393355"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início Rápido: criar e atribuir uma política de proteção de aplicativo
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início Rápido: Criar e atribuir uma política de proteção de aplicativo
 
 Nesse início rápido, você usará o Intune para criar e atribuir uma política de proteção de aplicativo para um aplicativo cliente no dispositivo do usuário final. O Intune usa políticas de proteção de aplicativo para confirmar que seus aplicativos atendem aos requisitos de proteção de dados da sua organização.
 
@@ -45,9 +47,9 @@ Use as seguintes etapas para criar uma política de proteção do aplicativo:
 2. Insira os seguintes detalhes: 
 
     - **Nome**: *proteção de conteúdo do Windows 10*
-    - **Descrição**: *os usuários associados a essa política não poderão recortar, copiar ou colar qualquer conteúdo entre o aplicativo atribuído e outros aplicativos não gerenciados no dispositivo.*
+    - **Descrição**: *os usuários associados a essa política não poderão recortar, copiar nem colar nenhum conteúdo entre o aplicativo atribuído e outros aplicativos não gerenciados no dispositivo.*
     - **Plataforma**: *Windows 10*
-    - **Estado do registro**: *com o registro*
+    - **Estado de registro**: *com registro*
 
 3. Selecione **Aplicativos protegidos** para escolher os aplicativos que devem aderir a esta política.
 4. Clique em **Adicionar aplicativos**.
@@ -84,4 +86,4 @@ Neste início rápido, você criou um usuário e atribuiu uma política de prote
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início Rápido: criar e atribuir uma função personalizada](quickstart-create-custom-role.md)
+> [Início rápido: Criar e atribuir uma função personalizada](quickstart-create-custom-role.md)

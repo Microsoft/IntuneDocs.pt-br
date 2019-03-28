@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184498"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391878"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Início Rápido: adicionar e atribuir um aplicativo cliente
+# <a name="quickstart-add-and-assign-a-client-app"></a>Início Rápido: Adicionar e atribuir um aplicativo cliente
 
 Neste início rápido, você usará o Intune para adicionar e atribuir um aplicativo cliente à força de trabalho da sua empresa. Uma das prioridades do administrador é garantir que os usuários finais tenham acesso aos aplicativos necessários para realizar seu trabalho. 
 
@@ -103,4 +105,4 @@ Neste início rápido, você adicionou aplicativos ao Intune, atribuiu aplicativ
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início Rápido: criar e atribuir uma política de proteção de aplicativo](quickstart-create-assign-app-policy.md)
+> [Início rápido: Criar e atribuir uma política de proteção de aplicativo](quickstart-create-assign-app-policy.md)
