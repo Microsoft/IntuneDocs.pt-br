@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186249"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991116"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início Rápido: Enviar notificações para dispositivos não compatíveis
 
@@ -50,9 +52,9 @@ Para enviar email aos seus usuários, crie um modelo de mensagem de notificaçã
    - **Nome**: *Administrador da Contoso*
    - **Assunto**: *Conformidade do dispositivo*
    - **Mensagem**: *No momento, seu dispositivo não atende aos nossos requisitos de conformidade de organizações.*
-   - **Cabeçalho do email – incluir o logotipo da empresa**: Configurar como **Habilitado** para mostrar o logotipo da organização.
-   - **Rodapé do email – incluir o nome da empresa**: Defina como **Habilitado** para mostrar o nome da organização.
-   - **Rodapé do email – incluir as informações de contato**: Defina como **Habilitado** para mostrar as informações de contato da sua organização.
+   - **Cabeçalho do email – Incluir o logotipo da empresa**: Defina como **Habilitado** para mostrar o logotipo da sua organização.
+   - **Rodapé do email – Incluir o nome da empresa**: Defina como **Habilitado** para mostrar o nome da sua organização.
+   - **Rodapé do email – Incluir informações de contato**: Defina como **Habilitado** para mostrar as informações de contato da sua organização.
 
    ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/quickstart-send-notification-01.png)
 
@@ -74,7 +76,7 @@ As etapas a seguir criarão uma política de conformidade para dispositivos Wind
 3. Insira as seguintes informações:
 
    - **Nome**: *Conformidade do Windows 10*
-   - **Descrição**: *Política de conformidade do Windows 10*
+   - **Descrição**: *política de conformidade do Windows 10*
    - **Plataforma**: Windows 10 e posterior
 
 4. Selecione **Configurações** > **Segurança do Sistema** para exibir as configurações relacionadas à segurança do dispositivo.
@@ -84,7 +86,7 @@ As etapas a seguir criarão uma política de conformidade para dispositivos Wind
     ![Configurações de segurança do sistema para uma nova política de conformidade](./media/quickstart-send-notification-02.png) 
 
 7. Clique em **Ok**, **Ok** e **criar** para criar a política de conformidade.
-8. Selecione o nome da nova política: **Conformidade do Windows 10**.
+8. Selecione o nome da nova política: **conformidade do Windows 10**.
 9. Selecione **Propriedades** > **Ação de não conformidade** > **Adicionar**.
 10. Na caixa suspensa **Ação**, confirme se a opção **Enviar um email para os usuários finais** está selecionada.
 11. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que você criou anteriormente neste tópico.
@@ -112,4 +114,4 @@ Neste início rápido, você usou o Intune para criar e atribuir uma política d
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início Rápido: adicionar e atribuir um aplicativo cliente](quickstart-add-assign-app.md)
+> [Início rápido: Adicionar e atribuir um aplicativo cliente](quickstart-add-assign-app.md)
