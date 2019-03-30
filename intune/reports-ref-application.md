@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566022"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358180"
 ---
 # <a name="reference-for-application-entities"></a>Referência para entidades de aplicativo
 
@@ -128,17 +128,5 @@ A entidade **MobileAppInstallState** representa o estado de instalação de um a
 | AppInstallState | Valor de enumeração do estado de instalação do aplicativo. |
 | AppInstallStateName | Nome do estado de instalação do aplicativo. |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-O **MobileAppDeviceUserInstallStatus** representa um status de instalação de aplicativo móvel para um determinado dispositivo e usuário.
-
-
-|      Propriedade      |                                                         Descrição                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  Chave da data quando o status de instalação do aplicativo foi registrado.                                  |
-|       AppKey       |                             Chave do aplicativo móvel usado para identificar uma instância de AppRevision.                              |
-|     DeviceKey      |                              Chave de um dispositivo direcionado usado para identificar uma instância do Dispositivo.                               |
-|      UserKey       |                                Chave de um usuários direcionado usado para identificar uma instância do Usuário.                                 |
-| AppInstallStateKey |                     Chave do estado de instalação do aplicativo usada para identificar uma instância de MobileAppInstallState.                     |
-|     Código de Erro      | O código de erro retornado pelo instalador do aplicativo, a plataforma móvel ou o serviço referente à instalação do aplicativo. |
 

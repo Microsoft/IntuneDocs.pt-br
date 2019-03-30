@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565462"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394874"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -87,6 +87,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Permitir que o aplicativo transfira dados para outros aplicativos|X|X|
 |Permitir que o aplicativo receba dados de outros aplicativos|X|X|
 |Restringir recortar, copiar e colar com outros aplicativos|X|X|
+|Especifique o número de caracteres que podem ser recortados ou copiados de um aplicativo gerenciado|X|X|
 |Solicitar PIN simples para acesso|X|X|
 |Especificar o número de tentativas antes da redefinição do PIN|X|X|
 |Permitir a impressão digital em vez do PIN|X|X|

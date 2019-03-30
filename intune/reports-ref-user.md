@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566243"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358163"
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de usuário
 
@@ -40,13 +40,10 @@ A coleção de entidades **Usuário** contém dados do usuário. Esses registros
 | UserKey |Identificador exclusivo do usuário no data warehouse – chave alternativa. |123 |
 | UserId |Identificador exclusivo do usuário – semelhante à UserKey, mas é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Endereço de email do usuário. |John@constoso.com |
-| UPN | Nome UPN do usuário. | John@constoso.com |
+| userPrincipalName | Nome UPN do usuário. | John@constoso.com |
 | DisplayName |Nome de exibição do usuário. |John |
 | IntuneLicensed |Especifica se este usuário é Intune licenciado ou não. |Verdadeiro/Falso |
 | IsDeleted | Indica se todas as licenças do usuário expiraram e se o usuário foi, portanto, removido do Intune. Para um único registro, esse sinalizador não é alterado. Em vez disso, um novo registro é criado para um novo estado do usuário. |Verdadeiro/Falso |
-| StartDateInclusiveUTC |Se IsDeleted = FALSE, DateTime em UTC de quando o usuário recebeu uma licença e começou a ter presença no Intune. Se IsDeleted = verdadeiro, DateTime em UTC de quando as licenças do usuário expiraram e foram removidas do Intune. |23/11/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Se IsDeleted = FALSE, DateTime em UTC de quando a licença do usuário expirou e foi removida do Intune. A licença expirou em algum momento durante o dia anterior. Se IsDeleted = TRUE, DateTime em UTC de quando o usuário recuperou uma nova licença e foi recriado no Intune.  |23/11/2016 12:00:00 AM |
-| IsCurrent |Indica se este registro representa o estado mais recente do usuário. Podem existir vários registros para um único usuário, mas somente um deles representa o estado atual.  |Verdadeiro/Falso |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC de quando o registro foi modificado pela última vez no data warehouse  |23/11/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Próximas etapas
