@@ -2,8 +2,8 @@
 title: Configurações de proteção para dispositivos Windows 10 no Microsoft Intune – Azure | Microsoft Docs
 description: Em dispositivos Windows 10, use ou defina as configurações de proteção de ponto de extremidade para habilitar inclusões do recurso Windows Defender, Application Guard, Firewall, SmartScreen, criptografia e bitLocker, Exploit Guard, Controle de Aplicativos, Central de Segurança e segurança em dispositivos locais no Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566685"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342990"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune
 
@@ -87,8 +87,7 @@ Essas configurações são aplicáveis a todos os tipos de rede.
 
 Essas configurações aplicam-se a tipos de rede específicos, incluindo **Rede de domínio (local de trabalho)**, **Rede privada (detectável)** e **Rede pública (não detectável)**.
 
-#### <a name="general-settings"></a>Configurações gerais
-
+#### <a name="general-settings"></a>Configurações gerais  
 - **Windows Defender Firewall**: escolha **Habilitar** para ativar o firewall e a segurança avançada. **Não configurado** (padrão) permite todo o tráfego de rede, independentemente de outras configurações de política.
 - **Modo furtivo**: selecione **Bloquear** a operação do firewall em modo furtivo. O bloqueio do modo furtivo permite bloquear também a **Isenção de pacote protegido por IPsec**. **Não configurado** (padrão) opera o firewall no modo furtivo, o que ajuda a prevenir respostas a solicitações de investigação.
 - **Blindado**: a opção **Bloquear** desliga esse recurso. **Não configurado** (padrão) habilita essa configuração. Quando essa configuração e o Windows Defender Firewall estão ativados, todo o tráfego de entrada é bloqueado, independentemente de outras configurações de política.

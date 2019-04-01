@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565342"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330412"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo macOS para permitir ou restringir recursos usando o Intune
 
@@ -46,7 +46,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   Esse recurso aplica-se a:  
   - macOS 10.13 e posterior
 
-- **Adiar atualizações de software (somente supervisionadas)**: quando definido como **não configurado** (padrão), as atualizações de software são exibidas no dispositivo com Apple as libera. Por exemplo, se uma atualização do macOS obtém lançada pela Apple em uma data específica, em seguida, essa atualização naturalmente aparecerá no dispositivo em torno da data de lançamento.
+- **Adiar atualizações de software**: quando definido como **não configurado** (padrão), as atualizações de software são exibidas no dispositivo com Apple as libera. Por exemplo, se uma atualização do macOS obtém lançada pela Apple em uma data específica, em seguida, essa atualização naturalmente aparecerá no dispositivo em torno da data de lançamento. Atualizações de compilação de semente são permitidas sem atraso.
 
   **Habilitar** permite que você atrasar quando as atualizações de software são mostradas em dispositivos, de 0 a 90 dias. Essa configuração não controla quando as atualizações são ou não estão instaladas. 
 

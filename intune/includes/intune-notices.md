@@ -1,23 +1,30 @@
 ---
-ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+title: incluir arquivo
+description: incluir arquivo
+author: ErikjeMS
+ms.service: microsoft-intune
+ms.topic: include
+ms.date: 03/28/2019
+ms.author: erikje
+ms.custom: include file
+ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
+ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57736843"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675486"
 ---
-
 Esses avisos fornecem importantes de informações que podem ajudar você a se preparar para recursos e alterações futuras do Intune. 
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Alteração no fluxo de trabalho do registro com o Portal da empresa do Intune em dispositivos iOS corporativos autenticando com o Assistente de instalação <!-- 1927359 -->
 Há uma alteração futura no fluxo de trabalho para o registro de dispositivos iOS por meio de um dos métodos de registro de dispositivo corporativo da Apple - Configurator da Apple, gerente de negócios da Apple, Apple School Manager ou o Apple dispositivo registro programa (DEP), ao usar o programa de instalação Assistente para autenticação. Essa alteração se aplica somente a dispositivos registrados com afinidade do usuário.
 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Quando essa alteração for distribuída em ~~março~~ abril, os perfis de registro no Intune no portal do Azure serão atualizados para que você possa especificar como os dispositivos são autenticados e se o usuário recebe o aplicativo Portal da Empresa. Haverá um fluxo de trabalho aperfeiçoado para registrar dispositivos iOS por meio dos métodos listados acima. Observação:
+Quando essa alteração for distribuída em ~~março~~ abril, os perfis de registro no Intune no portal do Azure serão atualizados para que você possa especificar como os dispositivos são autenticados e se o usuário recebe o aplicativo Portal da Empresa. Haverá um fluxo de trabalho aperfeiçoado para registrar dispositivos iOS por meio dos métodos listados acima. 
 
 - Quando registrar novos dispositivos e autenticar com o Assistente de instalação, você poderá escolher se deseja ou não implantar automaticamente o aplicativo Portal da empresa. Os usuários finais não verão a tela de "Identifique seu dispositivo" e a tela de "Confirmar seu dispositivo" no fluxo de registro.  
 - Em dispositivos já registrados por meio do Assistente de instalação por meio de um dos métodos de registro de dispositivo corporativo da Apple, é necessário tomar providências para habilitar o acesso condicional. Você precisará configurar uma política de configuração de aplicativo com um xml específico para enviar por push o Portal da empresa para esses dispositivos. Orientações para fazer isso estão na postagem do blog no link de informações adicionais. Se você optar por enviar por push o Portal da empresa dessa maneira, os usuários finais não verão a tela de "Identifique seu dispositivo" e a tela de "Confirmar seu dispositivo" no fluxo de registro. 
-- Depois que essa alteração é distribuída, se você ainda não implantou o Portal da empresa com o perfil de configuração de aplicativo mencionados acima e se vai armazenar o aplicativo de Portal da empresa do aplicativo, que vai possam se conectar, de download de usuários finais, mas eles receberá uma mensagem de erro. Eles não poderão usar o aplicativo para acesso condicional. 
+- Depois que essa alteração é distribuída, se você ainda não implantou o Portal da empresa com o perfil de configuração de aplicativo mencionados acima e se vai armazenar o aplicativo de Portal da empresa do aplicativo, que ele possa entrar de download de usuários finais, mas eles receberá uma mensagem de erro. Eles não poderão usar o aplicativo para acesso condicional. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
 Se você planeja usar o fluxo de trabalho modificado, você desejará atualizar suas diretrizes do usuário final para indicar que:
@@ -32,52 +39,6 @@ Consulte nosso blog de suporte a postagem no link de informações adicionais pa
 #### <a name="additional-information"></a>Informações adicionais 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
-
-### <a name="company-portal-changes-for-ios-122-enrollment-in-intune"></a>Alterações de portal da empresa para iOS 12.2 registro no Intune
-Compartilhamos em MC172534 que a Apple anunciou algumas alterações relacionadas ao registro de dispositivos iOS em serviços de MDM (gerenciamento de dispositivo móvel). A alteração provavelmente será vista a versão do iOS chegando em março de 2019, bem como todas as versões futuras do iOS. Estamos fazendo algumas atualizações no Portal da empresa para refletir as alterações da Apple. 
- 
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Se os usuários finais atualizarem seus dispositivos para o iOS 12.2 e acima, sabe que há um fluxo de trabalho modificado e eles devem executar etapas adicionais para concluir o registro no Intune. Após a atualização de março para o Intune, aqui está o que eles farão-  
-
-- Iniciar o processo de registro no aplicativo Portal da empresa para baixar um perfil de gerenciamento
-- Vá para Configurações > Geral > perfis e procure uma notificação vermelho
-- Selecione o perfil correto e clique para instalar
-- Retornar ao Portal da empresa para concluir o registro
-
-Para obter informações detalhadas sobre o fluxo de registro, clique em obter informações adicionais.
-
-A menos que eles estão cancelados e precisam de um novo registro, os dispositivos que já estão registrados e atualizar para o iOS 12.2 e acima não devem ser afetado. A experiência de registro em dispositivos que executam o iOS 12.1 ou anterior não será alterada com essa nova versão pela Apple. Dispositivos registrados por meio de um ou métodos de registro corporativo da Apple (programa de registro de dispositivo Apple School Manager ou o gerente de negócios da Apple) não serão afetados.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
-Você deve planejar atualizar a documentação e as diretrizes do usuário final. Você talvez queira informar a assistência técnica sobre essas alterações. Manteremos você informado por meio de nossa página novidades quando essa alteração for lançada. 
-
-Se você quiser tirar proveito das alterações de Portal da empresa, estamos introduzindo, peça aos usuários finais que atualizar seu dispositivo para a nova versão do iOS após a atualização de março, o Intune de serviço ao Portal da empresa 3.9.0 de versão do aplicativo. é liberado.
-
-Clique em obter informações adicionais para uma postagem de blog de suporte com capturas de tela de visualização das alterações de Portal da empresa.
-
-Informações adicionais [https://aka.ms/CP_changes_iOS12](https://aka.ms/CP_changes_iOS12)
-
-### <a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Plano para mudança: fluxo de trabalho é alterado para o registro do iOS 12 no Intune
-A Apple anunciou algumas alterações relacionadas ao registro de dispositivos iOS em serviços de MDM (gerenciamento de dispositivo móvel). A alteração provavelmente será vista a versão da primavera de 2019 do iOS, bem como em todas as versões futuras do iOS.
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Se os usuários finais atualizarem seus dispositivos para essa nova versão do iOS 12 na primavera, saiba que há um fluxo de trabalho modificado e que eles precisarão executar etapas adicionais para concluir o registro no Intune. Quando Apple apresenta essas alterações, os usuários finais terá que:
-
-- Iniciar o processo de registro no aplicativo Portal da empresa para baixar um perfil de gerenciamento
-- Vá para Configurações > Geral > perfis
-- Selecione o perfil correto e clique para instalar
-- Retornar ao Portal da empresa para concluir o registro 
-
-Dispositivos que já estiverem registrados e atualizarem para a nova versão do iOS não deverão ser afetados, a menos que eles não estejam registrados e precisem de um novo registro.
-
-A experiência de registro em dispositivos que executam o iOS 12.1 ou anterior não será alterada com essa nova versão pela Apple.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
-Você deve planejar atualizar a documentação e as diretrizes do usuário final. Você talvez queira informar a assistência técnica sobre essas alterações. Manteremos você informado por meio do Centro de Mensagens e da nossa página Novidades quando essa alteração for lançada.
-
-#### <a name="additional-information"></a>Informações adicionais
-[Suporte a postagem de blog com capturas de tela e o vídeo do fluxo de registro esperado](https://aka.ms/iOS_enrollment_changes).
-
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Plano para alteração: atualização de experiência do usuário para o aplicativo Portal da Empresa do Intune para iOS
 Estamos felizes em compartilhar que o Intune em breve lançará uma grande atualização de experiência do usuário para o aplicativo de Portal da Empresa para iOS. A atualização apresentará uma reformulação visual da home page, com filtros avançados e acesso mais rápido a aplicativos e livros.
 
@@ -88,35 +49,13 @@ Essa atualização da experiência do usuário manterá a funcionalidade atual d
 - Capacidade de pesquisar livros eletrônicos
 - Histórico de pesquisa para aplicativos e livros eletrônicos
 
-Se fizer parte do programa TestFlight da Apple, você será notificado sobre a versão de pré-lançamento do aplicativo Portal da Empresa do Intune iOS atualizado quando ele estiver disponível. Se você não faz parte do programa TestFlight da Apple, não é tarde demais para se registrar. O registro permite que você use o aplicativo do Portal da Empresa atualizado antes que ele esteja disponível para seus usuários finais. Você pode também fornecer seus comentários diretamente para a equipe do Intune.  
+Se fizer parte do programa TestFlight da Apple, você será notificado sobre a versão de pré-lançamento do aplicativo Portal da Empresa do Intune iOS atualizado quando ele estiver disponível. Se você não faz parte do programa TestFlight da Apple, não é tarde demais para se registrar. O registro permite que você use o aplicativo do Portal da Empresa atualizado antes que ele esteja disponível para seus usuários finais. Você também pode fornecer seus comentários diretamente para a equipe do Intune.  
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
 Você não precisa tomar nenhuma providência; essas alterações serão lançadas em uma versão futura do aplicativo do Portal da Empresa do iOS. 
 
 #### <a name="additional-information"></a>Informações adicionais
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors----3105122---"></a>Lembrete: Remoção dos existentes o Exchange Online para conectores do Intune <!-- 3105122 -->
-MC165575, compartilhamos que estamos poderia ser removendo o Exchange Online para a funcionalidade do conector do Intune 'Serviço' em uma atualização futura. Com a atualização de fevereiro para o serviço Intune, será desabilitamos o botão configurar novos conectores. Estamos planejando remover todos os existentes Exchange Online para conectores do Intune em março de 2019.
- 
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Você está recebendo esta mensagem porque nossos registros indicam que você pode estar usando a funcionalidade do conector Service to Service em seu ambiente. O conector Service to Service dá suporte ao gerenciamento do Intune para dispositivos somente do Exchange Active Sync para o Exchange Online,e não dá suporte à infraestrutura local. Esse conector, devido à maneira como é exibido no console, parece ser necessário para o Acesso Condicional (CA), quando, na realidade, não é. Você pode ter sido usando esse conector para entender o uso do Exchange Online antes de aplicar o acesso condicional. Essas informações já são fornecidas pelo Centro de administração do Microsoft 365. Aqui, você encontrará fornece relatórios de uso para o Exchange Online incluindo o aplicativo de tipo que está sendo usado para entre 7 e 180 dias. Para obter mais informações, consulte [relatórios do Office 365 no Centro de administração - uso de aplicativos de Email](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide).  
- 
-Se você usar esses conectores em seu ambiente, não poderá monitorar ou apagar dispositivos somente do Exchange Active Sync no Intune após a desabilitação dos conectores em fevereiro. Não há nenhum impacto previsto para seus usuários finais durante essa alteração.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
-Se você tiver o conector Service to Service configurado e tiver dispositivos somente do Exchange Active Sync, alterne para outros métodos de gerenciamento de dispositivos. Você tem as seguintes opções:
-
-- Registrar dispositivos no Gerenciamento de Dispositivo Móvel (MDM) 
-- Usar políticas de Proteção de Aplicativo do Intune para gerenciar seus dispositivos 
-- Use os controles do Exchange, conforme descrito [nesta](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) documentação 
-
-#### <a name="additional-information"></a>Informações adicionais  
-https://docs.microsoft.com/intune/exchange-service-connector-configure
-
-
-
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Verifique sua configuração de "Atraso a visibilidade de atualizações de Software" no Intune 
 
@@ -140,3 +79,38 @@ Consulte nosso blog de suporte a postar informações adicionais para obter deta
 
 #### <a name="additional-information"></a>Informações adicionais 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
+
+### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>Plano para mudança: correção futura para perfis de email do Windows 10 no Intune <!--3904031-->
+Estamos atualizando a maneira como o Intune grava email perfis para Windows 10 de abril de atualização para o serviço do Intune para corrigir um bug, bem como para garantir que seus perfis de email continuem a funcionar em futuras versões do Windows 10. Não há ação que você precisa realizar depois que essa correção é implantada.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Essa alteração afeta você, se você usar perfis de email do Windows 10 com
+- O cliente de email nativo em áreas de trabalho do Windows 10 ou
+- O cliente de email do Outlook no Windows 10 Mobile
+
+Isso afeta os dois clientes de gerenciamento de dispositivo móvel (MDM) do Intune autônomo e híbrido.
+
+Depois que distribui a atualização de abril, você precisará recriar esses perfis no console do Intune (no console do administrador do Configuration Manager se você estiver usando o MDM híbrido).
+
+Se você não tomar uma providência, aqui está o que você verá para perfis criados antes da atualização de abril:
+
+- Os perfis de email existentes aparecerão no estado de erro no console do Intune ou do console de administração do Configuration Manager, mas os usuários finais ainda terá acesso ao email. No entanto, após uma atualização subsequente do Windows for distribuída, esses perfis não funcionará. Os usuários finais em dispositivos de destino com esses perfis perderão o acesso ao email.
+- As edições feitas a esses perfis depois de abril não será refletida em dispositivos de destino.
+- Apagamento seletivo não funcionará para remover esses perfis, mesmo após a correção é distribuída em abril.
+
+Se você agir e crie novamente os perfis de email, os usuários finais terão percorrer etapas semelhantes àquelas quando um perfil de email é implantado pela primeira vez. Seu email será impedido de sincronização até que ele aceite a atualização que aplica o novo perfil.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+Você precisará agir somente depois que a correção é distribuída com a atualização de abril. Entraremos em contato para você por meio do Centro de mensagens quando essa alteração for lançada, para que você possa começar recriar os perfis no Intune.
+
+Se você usar perfis de email do Windows 10 no Intune, você precisará executar as seguintes etapas:
+
+1. Capturar configurações de perfil existentes do Windows 10
+2. Cancelar a atribuição de e/ou excluir perfis existentes
+3. Criar novos perfis usando as configurações capturadas e atribuir novos perfis aos mesmos grupos
+
+Você precisa notificar os usuários finais e avise a assistência técnica dessa alteração. Consulte a postagem do blog de suporte em informações adicionais para detalhes do erro e instruções para recriar esses perfis.
+
+#### <a name="additional-information"></a>Informações adicionais
+https://aka.ms/Win10EmailProfiles
+

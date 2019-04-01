@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068880"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514490"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Certifique-se de que seu aplicativo utiliza o `resourceId` e `aadId` parâmetros passados para `acquireToken()` para que o token correto é adquirido.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1103,7 +1103,7 @@ O Intune permite que você utilize todos os [recursos de Backup Automático](htt
     ```
 
 
-2. **[Opcional] ** Se você tiver implementado um BackupAgent personalizado opcional, precisará usar MAMBackupAgent ou MAMBackupAgentHelper. Confira as seções a seguir. Use o **MAMDefaultFullBackupAgent** do Intune (descrito na etapa 1), que fornece backup fácil no Android M e superior.
+2. **[Opcional]**  Se você tiver implementado um BackupAgent personalizado opcional, precisará usar MAMBackupAgent ou MAMBackupAgentHelper. Confira as seções a seguir. Use o **MAMDefaultFullBackupAgent** do Intune (descrito na etapa 1), que fornece backup fácil no Android M e superior.
 
 3. Quando decidir qual tipo de backup completo seu aplicativo deve receber (filtrado, não filtrado ou nenhum), você precisará definir o atributo `android:fullBackupContent` como true, false ou um recurso XML em seu aplicativo.
 
@@ -1633,7 +1633,7 @@ Se um aplicativo de várias identidade registrar-se para a notificação `WIPE_U
 
 Um aplicativo que esteja se registrando para `WIPE_USER_DATA` não receberá o benefício de comportamento de apagamento seletivo padrão do SDK. Para aplicativos com reconhecimento de várias identidades, essa perda pode ser mais significativo, uma vez que o apagamento seletivo padrão do MAM apagará apenas os arquivos cujas identidades são direcionadas por um apagamento. Se um aplicativo com reconhecimento de várias identidade deseja que o apagamento seletivo padrão do MAM seja feito _**e**_ deseja realizar suas próprias ações de apagamento, ele deve se registrar para as notificações do `WIPE_USER_AUXILIARY_DATA`. Essa notificação será enviada imediatamente pelo SDK antes de executar o apagamento seletivo padrão do MAM. Um aplicativo nunca deve se registrar para `WIPE_USER_DATA` e `WIPE_USER_AUXILIARY_DATA` simultaneamente.
 
-O apagamento seletivo padrão será fechado normalmente, o aplicativo concluir atividades e eliminar o processo de aplicativo. Se seu aplicativo substitui o apagamento de seletive padrão, convém considerar a fechar o aplicativo manualmente para impedir que o usuário acesse dados na memória após um apagamento ocorre.
+O apagamento seletivo padrão será fechado normalmente, o aplicativo concluir atividades e eliminar o processo de aplicativo. Se seu aplicativo substitui o apagamento seletivo padrão, convém considerar a fechar o aplicativo manualmente para impedir que o usuário acesse dados na memória após um apagamento ocorre.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Habilitando a configuração direcionada ao MAM para seus aplicativos Android (opcional)
@@ -1785,7 +1785,7 @@ O SDK do Intune mantém o contrato fornecido pela API do Android, embora condiç
 
 ## <a name="telemetry"></a>Telemetria
 
-O SDK de Aplicativo do Intune para Android não controla a coleta de dados do aplicativo. Por padrão, o aplicativo Portal da Empresa registra em log os dados de telemetria. Esses dados são enviados para o Microsoft Intune. De acordo com a Microsoft Policy, nós não coletamos PII (informações de identificação pessoal).
+O SDK de Aplicativo do Intune para Android não controla a coleta de dados do aplicativo. O aplicativo de Portal da empresa registra dados gerados pelo sistema por padrão. Esses dados são enviados para o Microsoft Intune. De acordo com a Microsoft Policy, que não coletamos dados pessoais.
 
 > [!NOTE]
 > Se os usuários finais optarem por não enviar esses dados, eles deverão desligar a telemetria em Configurações no aplicativo Portal da Empresa. Para obter mais informações, consulte [Como desligar a coleta de dados de uso da Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

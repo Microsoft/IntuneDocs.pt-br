@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565733"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429684"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque no Intune
 
@@ -176,6 +176,7 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 
       Selecione **OK** para salvar suas alterações.
 
+    - **AutoLaunch**: opcional. Escolha um aplicativo para AutoLaunch quando o usuário faz logon. Apenas um único aplicativo pode ser AutoLaunched.
     - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
 
   > [!TIP]
@@ -184,6 +185,8 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 - **Usar layout alternativo do menu Iniciar**: escolha **Sim** para inserir um arquivo XML que descreve como os aplicativos são exibidos no menu Iniciar, incluindo a ordem dos aplicativos. Use esta opção se você precisar de mais personalização no seu menu Iniciar. [Personalizar e exportar o layout inicial](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas diretrizes e XML de exemplo.
 
 - **Barra de tarefas do Windows**: escolha **Exibir** ou **Ocultar** a barra de tarefas. Por padrão, a barra de tarefas não é exibida. Ícones, como o ícone de Wi-Fi, são mostrados, mas as configurações não podem ser alteradas pelos usuários finais.
+
+- **Permitir o acesso à pasta de Downloads**: escolha **Sim** para permitir que os usuários acessem a pasta Downloads no Windows Explorer. Por padrão, o acesso à pasta de Downloads está desabilitado. Esse recurso é comumente usado para os usuários finais para acessar itens baixados em um navegador.
 
 Selecione **OK** para salvar suas alterações.
 
