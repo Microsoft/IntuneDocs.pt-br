@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ac6591256e1bb45c0e2ac9c1d6fe9ac213b106a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234028"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58068828"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Usar o Microsoft Intune Data Warehouse
 
@@ -42,7 +43,7 @@ O Data Warehouse fornece acesso a mais informações sobre seu ambiente móvel d
   -  Um modelo de dados usando o padrão OData
 
 > [!Note]
-> Se você estiver usando o gerenciamento de dispositivo móvel (MDM) híbrido com o System Center Configuration Manager e o Microsoft Intune, desejará recuperar seus dados do SCCM. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um dashboard do SCCM Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
+> Se estiver usando o MDM (gerenciamento de dispositivo móvel) cogerenciado com o System Center Configuration Manager e o Microsoft Intune, você precisará recuperar seus dados do Configuration Manager. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um painel do Gerenciador de configuração do Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
 
 > [!Important]  
 > Agora é possível usar a versão v1.0 do Intune Data Warehouse, definindo o parâmetro de consulta  `api-version=v1.0`. As atualizações em coleções no Data Warehouse são suplementares por natureza e não interrompem cenários existentes.<br><br>
@@ -52,4 +53,4 @@ O Data Warehouse fornece acesso a mais informações sobre seu ambiente móvel d
 
 - Obtenha um link e use o Power BI para obter informações. Para obter instruções, consulte [Conectar o Intune Data Warehouse com o Power BI](reports-proc-get-a-link-powerbi.md).
 - Com o link, crie um relatório personalizado com o Power BI. Para obter instruções, consulte [Create a report from the OData feed with Power BI](reports-proc-create-with-odata.md) (Criar um relatório do feed OData com o Power BI).
-- Obtenha mais informações sobre a API do Intune Data Warehouse, o modelo de dados e relações entre entidades<!-- , and an example of creating a custom client to retrieve data,-->, consulte [API Intune Data Warehouse](reports-nav-intune-data-warehouse.md).
+- Obtenha mais informações sobre a API do Intune Data Warehouse, o modelo de dados e relações entre entidades<!-- , and an example of creating a custom client to retrieve data,--> Veja [API do Intune Data Warehouse](reports-nav-intune-data-warehouse.md).

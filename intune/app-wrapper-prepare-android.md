@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b554bd4eb6aa5e49354501e69326b6eeb11098ef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236952"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566039"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -30,7 +31,6 @@ ms.locfileid: "57236952"
 Use a Ferramenta de Disposição do Aplicativo do Microsoft Intune para Android para alterar o comportamento dos aplicativos iOS internos restringindo as funcionalidades do aplicativo sem alterar seu código.
 
 A ferramenta é um aplicativo de linha de comando do Windows que é executado no PowerShell e cria um wrapper em torno de seu aplicativo Android. Após o aplicativo ser encapsulado, você pode alterar sua funcionalidade configurando as [políticas de gerenciamento de aplicativo móvel](app-protection-policies.md) no Intune.
-
 
 Antes de executar a ferramenta, consulte [Considerações de segurança para executar a Ferramenta de Disposição do Aplicativo](#security-considerations-for-running-the-app-wrapping-tool). Para baixar a ferramenta, acesse [Ferramenta de Disposição do Aplicativo do Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) no GitHub.
 
@@ -53,10 +53,12 @@ Antes de executar a ferramenta, consulte [Considerações de segurança para exe
 
 - O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Para a **reutilização** de certificados existentes e orientações do certificado de autenticação geral, consulte [Reutilizando certificados de autenticação e encapsulando aplicativos](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). O executável Java keytool.exe é usado para gerar **novas** credenciais necessárias para assinar o aplicativo de saída encapsulado. Todas as senhas definidas devem ser seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
 
-> [!NOTE]
-> A Ferramenta de Disposição do Aplicativo do Intune não oferece suporte aos esquemas de assinatura v2 e o futuro v3 para autenticação do aplicativo. Depois de ter disposto o arquivo .apk usando a Ferramenta de Disposição do Aplicativo do Intune, a recomendação é usar [a ferramenta Apksigner fornecida pelo Google]( https://developer.android.com/studio/command-line/apksigner). Isso garantirá que, assim que seu aplicativo chegar aos dispositivos dos usuários finais, ele possa ser iniciado corretamente pelos padrões do Android. 
+    > [!NOTE]
+    > A Ferramenta de Disposição do Aplicativo do Intune não oferece suporte aos esquemas de assinatura v2 e o futuro v3 para autenticação do aplicativo. Depois de ter disposto o arquivo .apk usando a Ferramenta de Disposição do Aplicativo do Intune, a recomendação é usar [a ferramenta Apksigner fornecida pelo Google]( https://developer.android.com/studio/command-line/apksigner). Isso garantirá que, assim que seu aplicativo chegar aos dispositivos dos usuários finais, ele possa ser iniciado corretamente pelos padrões do Android. 
 
-- (Opcional) Habilitar Multidex dentro do aplicativo de entrada. Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. Nesse cenário, a melhor prática seria habilitar Multidex dentro do próprio aplicativo. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo). 
+- (Opcional) Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. A ferramenta de encapsulamento de aplicativo do Intune manipula automaticamente o estouro de arquivos DEX durante o encapsulamento de aplicativos com um mínimo de API de nível 21 ou superior (como de [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Para aplicativos com um nível de API 21 < min, a prática recomendada seria aumentar o número mínimo de nível de API usando o wrapper `-UseMinAPILevelForNativeMultiDex` sinalizador. Para os clientes que não é possível aumentar o nível mínimo de API do aplicativo, as seguintes soluções alternativas estouro DEX estão disponíveis. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo):
+* Use o ProGuard para eliminar as referências a classes não utilizadas do arquivo primário de DEX do aplicativo.
+* Para clientes que usam v3.1.0 ou mais recente do que o plug-in Gradle Android, desabilite o [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
 
@@ -93,6 +95,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquiv
 |**-KeyAlias**&lt;String&gt;|Nome da chave a ser usada para assinatura.| |
 |**-KeyPassword**&lt;SecureString&gt;|Senha usada para descriptografar a chave privada que será usada para a assinatura.| |
 |**-SigAlg**&lt;SecureString&gt;| (Opcional) Nome do algoritmo de assinatura a ser usado para assinatura. O algoritmo deve ser compatível com a chave privada.|Exemplos: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (Opcional) Use esse sinalizador para aumentar o nível mínimo de API do aplicativo Android de origem para 21. Esse sinalizador solicitará confirmação conforme ele limitará quem pode instalar este aplicativo. Os usuários podem ignorar a caixa de diálogo de confirmação, acrescentando o parâmetro "-Confirmar: $false" ao seu comando de PowerShell. O sinalizador só deve ser usado por clientes em aplicativos com a API de min < 21 que não obedecem a ser encapsulado com êxito devido a erros de estouro DEX. | |
 | **&lt;CommonParameters&gt;** | (Opcional) O comando dá suporte a parâmetros comuns do PowerShell, como verbose, debug etc. |
 
 

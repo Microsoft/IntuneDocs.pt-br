@@ -6,21 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/05/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0707226412d314ac1d44ba339b4c9151b394919
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 4973dc5038ecfe9a8e909df1a1db3feceb30979b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233892"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565325"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configurações de recursos do dispositivo macOS no Intune
 
@@ -34,10 +35,10 @@ O Intune inclui algumas configurações internas para permitir que os usuários 
 
 1. Em **Configurações**, escolha **AirPrint**. Insira as seguintes propriedades do servidor AirPrint:
 
-    - **Endereço IP**: Insira o endereço IPv4 ou IPv6 da impressora. Se você usar nomes de host para identificar as impressoras, obtenha o endereço IP ao executar o ping da impressora no aplicativo Terminal. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
-    - **Caminho**: Insira o caminho da impressora. Geralmente, o caminho é `ipp/print` para impressoras na rede. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
-    - **Porta**: Insira a porta de escuta do destino do AirPrint. Se você deixar essa propriedade em branco, o AirPrint usará a porta padrão. Disponível no iOS 11.0 e posterior.
-    - **TLS**: Escolha **Habilitar** para proteger as conexões do AirPrint com o protocolo TLS. Disponível no iOS 11.0 e posterior.
+    - **Endereço IP**: insira o endereço IPv4 ou IPv6 da impressora. Se você usar nomes de host para identificar as impressoras, obtenha o endereço IP ao executar o ping da impressora no aplicativo Terminal. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
+    - **Caminho**: insira o caminho da impressora. Geralmente, o caminho é `ipp/print` para impressoras na rede. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
+    - **Porta**: insira a porta de escuta do destino do AirPrint. Se você deixar essa propriedade em branco, o AirPrint usará a porta padrão. Disponível no iOS 11.0 e posterior.
+    - **TLS**: escolha **Habilitar** para proteger as conexões do AirPrint com o protocolo TLS. Disponível no iOS 11.0 e posterior.
 
 2. Selecione **Adicionar**. O servidor do AirPrint é adicionado à lista. Você pode adicionar vários servidores AirPrint.
 

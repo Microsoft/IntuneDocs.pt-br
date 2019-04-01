@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837570"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solucionar problemas de registro de dispositivo do Windows 10
-Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de área de trabalho do Windows 10 no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não consegue acessar seu email ou arquivos corporativos ou de estudante, tente estas etapas de solução de problemas.
+Se você tiver registrado seu dispositivo, mas ainda não consegue acessar seu email da escola e arquivos corporativos ou, tente estas etapas de solução de problemas.  
 
 1.  Examine as duas próximas telas e localize a que é semelhante ao que você vê em seu dispositivo. Siga as etapas fornecidas com a tela que você vê em seu dispositivo.
 
@@ -44,17 +44,17 @@ Se você seguiu as etapas em [Registrar seu dispositivo Windows Mobile 10 ou de 
 
 2. Realize um dos seguintes procedimentos:
 
-   - Se você vir uma conexão semelhante à imagem abaixo, toque nela e verifique se vê as opções Gerenciar, Informações e Desconectar. Se você vir essa opção, estará agora registrado e conectado.
+   - Se você vir uma conexão semelhante à imagem abaixo, toque nela e verifique se vê as opções Gerenciar, Informações e Desconectar. Se você vir essas opções, estará agora registrado e conectado.
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Se você não vir as informações de conexão mostradas acima ou se as vir, mas não algumas das opções estiverem ausentes, toque em **Conectar** e entre com suas credenciais corporativas ou de estudante. Agora você deve estar conectado.
+   - Se você não vir as informações de conexão mostradas acima, ou você vê-lo, mas não tem algumas das opções, toque em **Connect**. Entre com as suas credenciais corporativas ou de estudante para se conectar.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Etapas de solução de problemas a serem seguidas se você vir “Sua conta”
 
 Se tiver seguido as etapas acima, mas não conseguir acessar seu email corporativo ou de estudante, arquivos e outros dados, volte para **Contas** e toque em **Acesso corporativo**.
 
-- Se você vir seu trabalho ou conta da escola, parabéns. Você está conectado.
+- Se você ver seu trabalho ou escola conta listada, você está conectado.  
 
 - Se você não ver a sua conta do trabalho ou de estudante, toque em **Conectar** e entre com as suas credenciais corporativas ou de estudante.
 

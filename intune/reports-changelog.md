@@ -6,10 +6,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
@@ -17,18 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834000"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565631"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manter-se atualizado sobre as atualizações para o Intune Data Warehouse.
+
+## <a name="1902"></a>1902 
+_Lançado em fevereiro de 2019_
+
+### <a name="power-bi-compliance-app"></a>Aplicativo de conformidade do Power BI 
+
+Acessar seu Data Warehouse do Intune no Power BI Online usando o [conformidade do Intune (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicativo. Com este aplicativo do Power BI, agora você pode acessar e compartilhar relatórios previamente criados sem nenhuma configuração e sem sair do seu navegador da web. 
+
+> [!NOTE]
+> Há dois filtros adicionais, que você pode aplicar para o aplicativo de conformidade do Intune.
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Adicionar filtros adicionais para o aplicativo de conformidade do Intune
+1. Abra o [conformidade do Intune (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicativo em seus navegadores da web.
+2. Clique em **dispositivos não compatível** e selecione **incompatível** no **complianceStatus** filtro. 
+3. Clique em **dispositivos desconhecido** e selecione **ainda não está disponível** no **complianceStatus** filtro. 
 
 ## <a name="1812"></a>1812 
 _Lançado em dezembro de 2018_
@@ -64,7 +80,7 @@ _Lançado em janeiro de 2018_
 
 Você pode configurar um aplicativo usando o Azure Active Directory (Azure AD) e autenticar para o Intune Data Warehouse. Para obter mais informações, consulte [Autenticação somente no aplicativo Intune Data Warehouse](data-warehouse-app-only-auth.md).
 
-### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Requisitos de credencial do Intune e do Azure AD <!-- 2077525 -->
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Requisitos de credencial do Intune e Azure AD <!-- 2077525 -->
 
 - Já não é mais necessário atribuir uma licença do Intune ao acessar o Intune Data Warehouse (incluindo a API).
 - O nome da função do Intune foi alterado de **Relatórios** para **Intune data warehouse**. 
@@ -96,7 +112,7 @@ _Lançado em outubro de 2017_
 
 Agora você pode criar relatórios e visualizações de dados usando as informações de associação de dispositivo de usuário que associam as coleções de entidades do usuário e do dispositivo. O modelo de dados pode ser acessado por meio do arquivo do Power BI (PBIX) recuperado da página do Intune Data Warehouse, por meio do ponto de extremidade OData ou desenvolvendo um cliente personalizado. Para saber mais, veja a [Associação de dispositivo de usuário](reports-ref-user-device.md).
 
-### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Novas entidades no modelo de dados de Data Warehouse <!-- 1479526 --><!-- -->
+### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Novas entidades no modelo de dados do Data Warehouse <!-- 1479526 --><!-- -->
 
  - A entidade, [**UserDeviceAssociation**](reports-ref-user-device.md), adicionada. **UserDeviceAssociation** contém associações de dispositivo de usuário em sua organização. Agora você pode criar relatórios e visualizações de dados usando as informações de associação de dispositivo de usuário que associam as coleções de entidades do usuário e do dispositivo.  
  - A entidade, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), adicionada. **IntuneManagementExtension** contém entidade para dispositivos móveis que acompanham informações como versão e status de instalação.

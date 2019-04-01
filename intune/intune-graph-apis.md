@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187439"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566549"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como usar o Azure AD para acessar as APIs do Intune no Microsoft Graph
 
@@ -146,13 +148,13 @@ __Executar ações remotas que afetam o usuário em dispositivos Microsoft Intun
 __Ler e gravar dispositivos Microsoft Intune__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Ler dispositivos Microsoft Intune__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Ler e gravar configurações de RBAC do Microsoft Intune__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Ler configurações de RBAC do Microsoft Intune__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Ler configurações de RBAC do Microsoft Intune__ | DeviceManagementRBAC.Read.All
 __Ler e gravar em aplicativos do Microsoft Intune__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Ler aplicativos do Microsoft Intune__ | [DeviceManagementApps.Read.All](#app-ro)
-__Ler e gravar as Políticas e a Configuração de Dispositivo do Microsoft Intune__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Ler e gravar as Políticas e a Configuração de Dispositivo do Microsoft Intune__ | DeviceManagementConfiguration.ReadWrite.All
 __Ler as Políticas e a Configuração de Dispositivo do Microsoft Intune__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Ler e gravar a configuração do Microsoft Intune__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Ler a configuração do Microsoft Intune__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Ler a configuração do Microsoft Intune__ | DeviceManagementServiceConfig.Read.All
 
 A tabela lista as configurações na ordem em que são exibidas no Portal do Azure. As próximas seções descrevem os escopos em ordem alfabética.
 
@@ -588,7 +590,7 @@ Lembre-se de adicionar o usuário a outras funções, conforme necessário. Por 
 
 Também:
 
-- Use https://portal.office.com para atribuir uma licença do Intune à sua conta de usuário.
+- Use https://admin.microsoft.com para atribuir uma licença do Intune à sua conta de usuário.
 
 - Atualize o código do aplicativo para autenticação no domínio de locatário do Azure AD do cliente, em vez de em seu próprio.
 

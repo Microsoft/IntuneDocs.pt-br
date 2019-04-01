@@ -6,9 +6,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32c15037bad21ca90f81ed239ac24a9bac8d7499
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228316"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564849"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Configurar o aplicativo Take a Test em dispositivos com Windows 10 usando o Intune
 
@@ -37,7 +38,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="take-a-test-settings"></a>Configurações de Take a Test
 
-- **Tipo de conta**: escolha como os usuários entram no teste. Suas opções:
+- **Tipo de conta**: escolha como os usuários entram teste. Suas opções:
   - Conta do Azure AD
   - Conta de domínio
   - Conta local
@@ -46,9 +47,9 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   - `domain\username`
   - `user@contoso.com`
   - `computerName\username`
-- **URL de avaliação**: insira a URL do teste o qual você deseja que os usuários realizem. Para saber mais sobre como obter a URL, veja a [documentação do Take a Test](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
-- **Monitoramento de tela**: Escolha **Permitir** para monitorar a atividade de tela, enquanto os usuários realizam um teste. **Não configurado** impede que você monitore a tela durante o teste.
-- **Sugestão de texto**: Escolha **Permitir** para que os participantes de teste possam ver sugestões de texto. **Não configurado** bloqueia sugestões de texto enquanto os usuários realizam um teste.
+- **URL de avaliação**: forneça a URL do teste o qual você deseja que os usuários realizem. Para saber mais sobre como obter a URL, veja a [documentação do Take a Test](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+- **Monitoramento de tela**: escolha **Permitir** para monitorar a atividade de tela, enquanto os usuários realizam um teste. **Não configurado** impede que você monitore a tela durante o teste.
+- **Sugestão de texto**: escolha **Permitir** para que os participantes de teste possam ver sugestões de texto. **Não configurado** bloqueia sugestões de texto enquanto os usuários realizam um teste.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90c92eb7ea08fbe89464911c9f1eb5c6aea452db
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237496"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460505"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e de perfis e no Intune
 
@@ -49,25 +50,25 @@ Este artigo lista algumas técnicas de solução de problemas comuns e descreve 
 
 5. Sob **Dispositivos**, localize o dispositivo com um problema. Examine as colunas diferentes:
 
-    - **Gerenciados**: Para um dispositivo receber políticas de conformidade ou de configuração, essa propriedade deve mostrar **MDM** ou **EAS/MDM**.
+    - **Gerenciado**: para um dispositivo receber políticas de conformidade ou de configuração, essa propriedade deve mostrar **MDM** ou **EAS/MDM**.
 
       - Se **Gerenciados** não está definido como **MDM** ou **EAS/MDM**, o dispositivo não está registrado. Ele não recebe as políticas de conformidade ou de configuração até que seja registrado.
 
       - Políticas de proteção de aplicativo (gerenciamento de aplicativos móveis) não exigem que os dispositivos sejam registrados. Para obter mais informações, veja [criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
 
-    - **Tipo de Ingresso no Azure AD**: Deve ser definido como **Local de trabalho** ou **AzureAD**.
+    - **Tipo de junção do Azure AD**: deve ser definido como **Workplace** ou **AzureAD**.
  
       - Se essa coluna é **Não Registrado**, pode haver um problema com o registro. Normalmente, cancelar o registro do dispositivo e registrá-lo novamente resolve esse estado.
 
-    - **Conformidade com o Intune**: Deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
+    - **Compatível com o Intune**: deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
 
       Para mais informações, consulte [introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
-    - **Em conformidade com o Azure AD**: Deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
+    - **Em conformidade com Azure AD**: deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
 
       Para mais informações, consulte [introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
-    - **Último Check-in**: Deve ser em uma hora e data recentes. Por padrão, os dispositivos do Intune fazem check-in a cada 8 horas.
+    - **Último check-in**: deve ser uma data e hora recentes. Por padrão, os dispositivos do Intune fazem check-in a cada 8 horas.
 
       - Se o **Último check-in** for há mais de 24 horas, pode haver um problema com o dispositivo. Um dispositivo que não faz check-in não pode receber as políticas do Intune.
 
@@ -86,10 +87,10 @@ Este artigo lista algumas técnicas de solução de problemas comuns e descreve 
 
       **Estados de Política**:
 
-      - **Não Aplicável**: Essa política não tem suporte nesta plataforma. Por exemplo, políticas de iOS não funcionam no Android. As políticas do Samsung KNOX não funcionam em dispositivos do Windows.
-      - **Conflito**: Há uma configuração existente no dispositivo que o Intune não pode substituir. Ou você implantou duas políticas com a mesma configuração usando valores diferentes.
-      - **Pendente**: O dispositivo ainda não fez a verificação no Intune para obter a política. Ou o dispositivo recebeu a política, mas não relatou o status para o Intune.
-      - **Erros**: Pesquisar erros e possíveis resoluções em [Solucionar problemas de acesso de recursos da empresa](troubleshoot-company-resource-access-problems.md).
+      - **Não aplicável**: essa política não tem suporte nesta plataforma. Por exemplo, políticas de iOS não funcionam no Android. As políticas do Samsung KNOX não funcionam em dispositivos do Windows.
+      - **Conflito**: há uma configuração existente no dispositivo que o Intune não pode substituir. Ou você implantou duas políticas com a mesma configuração usando valores diferentes.
+      - **Pendente**: o dispositivo ainda não fez a verificação no Intune para obter a política. Ou o dispositivo recebeu a política, mas não relatou o status para o Intune.
+      - **Erros**: pesquisar erros e possíveis resoluções em [Solucionar problemas de acesso de recursos da empresa](troubleshoot-company-resource-access-problems.md).
 
       **Links Úteis**: 
 
@@ -103,20 +104,20 @@ Este artigo lista algumas técnicas de solução de problemas comuns e descreve 
 
     Todos os dispositivos listam seus perfis. Cada perfil tem um **Status**. O status se aplica quando todos os perfis atribuídos, incluindo requisitos de hardware e restrições do sistema operacional, são considerados em conjunto. Os status possíveis incluem:
 
-    - **Em conformidade**: O dispositivo recebeu o perfil e relata ao Intune que ele está em conformidade com a configuração.
+    - **Em conformidade**: o dispositivo recebeu o perfil e relata ao Intune que ele está em conformidade com a configuração.
 
-    - **Não aplicável**: A configuração do perfil não é aplicável. Por exemplo, configurações de email para dispositivos iOS não se aplicam a um dispositivo Android.
+    - **Não aplicável**: a configuração do perfil não é aplicável. Por exemplo, configurações de email para dispositivos iOS não se aplicam a um dispositivo Android.
 
-    - **Pendente**: O perfil é enviado para o dispositivo, mas não relatou o status para o Intune. Por exemplo, a criptografia no Android exige que o usuário habilite a criptografia e, portanto, pode ser mostrada como pendente.
+    - **Pendente**: o perfil é enviado para o dispositivo, mas não relatou o status para o Intune. Por exemplo, a criptografia no Android exige que o usuário habilite a criptografia e, portanto, pode ser mostrada como pendente.
 
-**Links Úteis**: [Monitorar perfis de configuração de dispositivo](device-profile-monitor.md)
+**Links úteis**: [monitorar perfis de configuração do dispositivo](device-profile-monitor.md)
 
 > [!NOTE]
 > Quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva é aplicada.
 
-## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: Falha ao salvar regras de acesso ao Exchange
+## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: falha ao salvar regras de acesso ao Exchange
 
-**Problema**: Você recebe o alerta **Falha ao salvar as Regras de Acesso ao Exchange** no console do administrador.
+**Problema**: você recebe o alerta **Falha ao salvar as regras de acesso ao Exchange** no console do administrador.
 
 Se você criar políticas no workspace de Políticas do Exchange Local (Console de Administração), mas estiver usando o O365, as configurações definidas para a política não serão impostas pelo Intune. No alerta, observe a origem da política. No workspace de Políticas do Exchange Local, exclua as regras herdadas. Elas são regras globais do Exchange no Intune para o Exchange local e não são relevantes para o O365. Em seguida, crie uma nova política para o O365.
 

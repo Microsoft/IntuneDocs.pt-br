@@ -6,10 +6,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238754"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565682"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referência para entidades de MAM (gerenciamento de aplicativo móvel)
 
@@ -83,12 +84,12 @@ A entidade **MamCheckin** representa os dados reunidos quando uma instância de 
 | Propriedade | Descrição | Exemplo |
 |---------|------------|--------|
 | DateKey |Chave de data em que o check-in do aplicativo de MAM foi registrado no data warehouse. | 20160703 |
-| ApplicationInstanceKey |Chave da instância do aplicativo associada ao check-in desse aplicativo de MAM. |5/2/1900 12:00:00 AM |
-| UserKey |Chave do usuário associada ao check-in desse aplicativo de MAM. |1/12/1900 12:00:00 AM |
-| ApplicationKey |Chave do aplicativo de MAM que fez check-in. |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |Chave do DeviceHealth associada ao check-in desse aplicativo de MAM. |1/2/1900 12:00:00 AM |
-| PlatformKey |Representa a plataforma do dispositivo associado ao check-in desse aplicativo de MAM. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |Representa a política aplicada efetivada associada ao aplicativo MAM que fez check-in. Uma política aplicada efetivada resulta da mesclagem de todas as políticas relevantes para um determinado aplicativo e usuário. |5/2/1900 12:00:00 AM |
+| ApplicationInstanceKey |Chave da instância do aplicativo associada ao check-in desse aplicativo de MAM. | 123 |
+| UserKey |Chave do usuário associada ao check-in desse aplicativo de MAM. | 4323 |
+| ApplicationKey |Chave do aplicativo de MAM que fez check-in. |234 |
+| DeviceHealthKey |Chave do DeviceHealth associada ao check-in desse aplicativo de MAM. | 321 |
+| PlatformKey |Representa a plataforma do dispositivo associado ao check-in desse aplicativo de MAM. |123 |
+| EffectiveAppliedPolicyKey |Representa a política aplicada efetivada associada ao aplicativo MAM que fez check-in. Uma política aplicada efetivada resulta da mesclagem de todas as políticas relevantes para um determinado aplicativo e usuário. | 322 |
 | LastCheckInDate |Data e hora em que este aplicativo MAM fez check-in pela última vez. O valor pode ser nulo. |23/11/2016 12:00:00 AM |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ A entidade **MamDeviceHealth** representa os dispositivos que têm políticas de
 
 | Propriedade | Descrição | Exemplo |
 |---------|------------|--------|
-| DeviceHealthKey |Identificador exclusivo do dispositivo e sua integridade associada no data warehouse – chave alternativa. |1/1/1900 12:00:00 AM |
-| DeviceHealth |Identificador exclusivo do dispositivo e sua integridade associada – semelhante a DeviceHealthKey, mas o identificador é uma chave natural. |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |Identificador exclusivo do dispositivo e sua integridade associada no data warehouse – chave alternativa. |123 |
+| DeviceHealth |Identificador exclusivo do dispositivo e sua integridade associada – semelhante a DeviceHealthKey, mas o identificador é uma chave natural. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Representa o status do dispositivo. <br>Não disponível – não há informações sobre este dispositivo. <br>Íntegro – o dispositivo não está desbloqueado. <br>Não íntegro – o dispositivo está desbloqueado. |Não disponível Íntegro Não íntegro |
 | RowLastModifiedDateTimeUtc |Data e hora em UTC em que a Integridade desse dispositivo de MAM específico foi modificada pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
 

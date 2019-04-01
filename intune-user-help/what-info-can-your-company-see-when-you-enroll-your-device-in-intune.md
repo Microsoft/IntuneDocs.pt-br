@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846971"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quais informações minha organização poderá ver quando eu registrar meu dispositivo?
@@ -43,7 +43,7 @@ Sua organização não pode ver suas informações pessoais quando você registr
 - Modelo do dispositivo, como Google Pixel
 - Fabricante do dispositivo, como Microsoft
 - Sistema operacional e versão, como o iOS 12.0.1
-- Nomes de aplicativo, como Microsoft Word: Em dispositivos pessoais, sua organização poderá ver apenas seu inventário de aplicativos gerenciados. Em dispositivos corporativos, sua organização pode ver todo o seu inventário de aplicativos.
+- Nomes de aplicativo, como Microsoft Word: em dispositivos pessoais, sua organização poderá ver apenas seu inventário de aplicativos gerenciados. Em dispositivos corporativos, sua organização pode ver todo o seu inventário de aplicativos.
 - Proprietário do dispositivo
 - Nome do dispositivo
 - Número de série do dispositivo
@@ -51,8 +51,8 @@ Sua organização não pode ver suas informações pessoais quando você registr
 
 **O que sua organização pode conseguir ver:**
 
--  Número de telefone: Para dispositivos de propriedade **corporativa**, o número de telefone completo pode ser visto. Para dispositivos de propriedade **pessoal**, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua organização. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página **Detalhes do Dispositivo** desse dispositivo.
-- Espaço de armazenamento do dispositivo: Se você não puder instalar um aplicativo necessário, sua organização poderá observar o espaço de armazenamento do seu dispositivo para descobrir se há pouco espaço.  
--  Local: Sua organização nunca poderá ver o local do seu dispositivo, a menos que você precise recuperar um dispositivo iOS perdido, supervisionado. Visite a [documentação do Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) para saber mais sobre dispositivos supervisionados.  
-- Inventário de aplicativos: Se a organização usar a Defesa contra Ameaças Móveis, ela poderá exibir mais detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md).
-- Informação de rede: Algumas informações sobre conexões de rede para dispositivos Android podem estar disponíveis ao suporte de sua organização. Por exemplo, se a organização precisar que os dispositivos permaneçam dentro de um determinado edifício, seu dispositivo identificará a rede em que ele está conectado. 
+-  Número de telefone: para dispositivos de propriedade **corporativa**, o número de telefone completo pode ser visto. Para dispositivos de propriedade **pessoal**, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua organização. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página **Detalhes do Dispositivo** desse dispositivo.
+- Espaço de armazenamento do dispositivo: se você não puder instalar um aplicativo necessário, sua organização poderá observar o espaço de armazenamento do seu dispositivo para descobrir se há pouco espaço.  
+-  Localização: a organização nunca poderá ver a localização do seu dispositivo, a menos que você precise recuperar um dispositivo iOS perdido, supervisionado. Visite a [documentação do Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) para saber mais sobre dispositivos supervisionados.  
+- Inventário de aplicativo: se a organização usar a Defesa contra Ameaças Móveis, ela poderá exibir detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md).
+- Informações de rede: algumas informações sobre conexões de rede para dispositivos Android podem estar disponíveis ao suporte de sua organização. Por exemplo, se a organização precisar que os dispositivos permaneçam dentro de um determinado edifício, seu dispositivo identificará a rede em que ele está conectado. 

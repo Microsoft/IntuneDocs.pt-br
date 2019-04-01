@@ -6,28 +6,29 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 02/19/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839370"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57577839"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalação do aplicativo
 
 Em dispositivos gerenciados pelo MDM do Microsoft Intune, as instalações de aplicativos às vezes podem falhar. Quando a instalação desses aplicativos falha, pode ser um desafio entender o motivo da falha ou solucionar o problema. O Microsoft Intune fornece detalhes sobre falha na instalação do aplicativo, com os quais os operadores de suporte técnico e os administradores dessa plataforma podem exibir informações do aplicativo para atender às solicitações de ajuda dos usuários. O painel de solução de problemas do Intune fornece os detalhes da falha, inclusive sobre aplicativos gerenciados no dispositivo do usuário. Fornecemos detalhes sobre o ciclo de vida de ponta a ponta de um aplicativo em cada dispositivo individual, no painel **Aplicativos Gerenciados**. Você pode exibir problemas de instalação, por exemplo, quando o aplicativo for criado, modificado, direcionado e baixado em um dispositivo. 
 
-## <a name="to-review-app-troubleshooting-details"></a>Para examinar os detalhes da solução de problemas do aplicativo
+## <a name="app-troubleshooting-details"></a>Detalhes da solução de problemas do aplicativo
 
 O Intune fornece detalhes da solução de problemas do aplicativo, de acordo com os aplicativos instalados no dispositivo de um usuário específico.
 
@@ -52,6 +53,47 @@ Os detalhes do erro de instalação do aplicativo indicarão o problema. Use ess
 > [!Note]  
 > Você também pode acessar o painel **solução de problemas** apontando o navegador para: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
+## <a name="win32-app-installation-troubleshooting"></a>Guia de instalação de aplicativo Win32
+
+Selecione o aplicativo do Win32 que foi implantado usando a extensão de gerenciamento do Intune. Você pode selecionar o **coletar logs** opção quando a instalação do aplicativo Win32 falha. 
+
+> [!IMPORTANT]
+> O **coletar logs** opção não será habilitada quando o aplicativo Win32 tiver sido instalado com êxito no dispositivo.<p>Antes de coletar informações de log de aplicativo do Win32, a extensão de gerenciamento do Intune deve ser instalada no cliente Windows. A extensão de gerenciamento do Intune é instalada quando um script do PowerShell ou um aplicativo Win32 é implantado em um grupo de segurança de usuários ou dispositivos. Para obter mais informações, consulte [extensão de gerenciamento do Intune – pré-requisitos](intune-management-extension.md#prerequisites).
+
+### <a name="collect-log-file"></a>Coletar o arquivo de log
+
+Para coletar seus logs de instalação de aplicativos do Win32, primeiro siga as etapas fornecidas na seção [detalhes de solução de problemas do aplicativo](troubleshoot-app-install.md#app-troubleshooting-details). Em seguida, continue com as seguintes etapas:
+
+1. Clique o **coletar logs** opção a **detalhes da instalação** folha.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Fornecer caminhos de arquivo com o log de nomes de arquivo para iniciar o processo de coleta de arquivo de log e clique em **Okey**.
+    
+    > [!NOTE]
+    > Coleta de log levará menos de duas horas. Tipos de arquivo com suporte: *. log,. txt,. dmp,. cab,. zip,. XML,. evtx e .evtl*. Um máximo de 25 caminhos de arquivo são permitidos.
+
+3. Depois que os arquivos de log foram coletados, você pode selecionar o **logs** link para baixar os arquivos de log.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > Uma notificação será exibida indicando o êxito da coleção de log do aplicativo.
+
+#### <a name="win32-log-collection-requirements"></a>Requisitos de coleção de log do Win32
+
+Há requisitos específicos que devem ser seguidos para coletar arquivos de log:
+
+- Você deve especificar o caminho do arquivo de log completo. 
+- Você pode especificar variáveis de ambiente para a coleção de log, como o seguinte:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Somente as extensões de arquivo exatos são permitidas, tais como:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- O arquivo de log máximo para carregar é de 60 MB ou 25 arquivos, o que ocorrer primeiro. 
+- Coleta de log de instalação de aplicativo do Win32 está habilitada para aplicativos que atendem aos necessária, disponível e desinstalar a intenção de atribuição de aplicativo.
+- Os logs armazenados são criptografados para proteger todas as informações PII existentes nos logs.
+- Embora os tíquetes de suporte de abertura para falhas de aplicativo do Win32, anexe os logs de falha relacionada à usando as etapas fornecidas acima.
+
 ## <a name="app-installation-errors"></a>Erros de instalação do aplicativo
 
 As seguintes mensagens de erro e descrições fornecem detalhes sobre os erros de instalação no Android e no iOS. 
@@ -72,18 +114,28 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre os erros d
 
 ### <a name="ios-errors"></a>Erros no iOS
 
-|    Mensagem/código do erro    |    Descrição    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    Agente do Apple MDM retornou que o comando de instalação falhou.        |
-|    (0x87D1313C)    |    A conexão de rede foi perdida enquanto a URL do serviço de download atualizada era enviada para o dispositivo. Especificamente, um servidor com o nome do host especificado não pôde ser encontrado.    |
-|    O dispositivo iOS está ocupado no momento. (0x87D11388)    |    O dispositivo iOS estava ocupado, o que resultou em erro.    |
-|    A instalação do aplicativo falhou. (0x87D13B64)    |    Ocorreu uma falha na instalação do aplicativo. Os logs do XCODE são necessários para solucionar esse erro.    |
-|    O aplicativo é gerenciado, mas expirou ou foi removido pelo usuário. (0x87D13B66)    |    O usuário desinstalou o aplicativo explicitamente. O aplicativo expirou, mas seu download falhou, ou a detecção do aplicativo não corresponde à resposta do dispositivo.   Além disso, esse erro pode ocorrer com base em um bug da plataforma iOS 9.2.2.    |
-|    O aplicativo está agendado para instalação, mas precisa de um código de resgate para que a transação seja concluída.   (0x87D13B60)    |    Esse erro normalmente ocorre com os aplicativos da iOS Store que são pagos.     |
-|    O aplicativo ainda não foi detectado depois que a desinstalação foi concluída com sucesso. (0x87D1041C)    |    O processo de detecção do aplicativo não correspondeu à resposta do dispositivo.    |
-|    O usuário rejeitou a oferta para instalar o aplicativo. (0x87D13B62)    |    Durante a instalação inicial do aplicativo, o usuário clicou em Cancelar.    |
-|    O usuário rejeitou a oferta para atualizar o aplicativo. (0x87D13B63)    |    O usuário final clicou em Cancelar durante o processo de atualização.     |
-|    Erro desconhecido (0x87D103E8)    |    Ocorreu um erro de instalação de aplicativo desconhecido. Esse é o erro resultante quando o outro erro não ocorre.    |
+| Mensagem/código do erro | Dicas de solução de problemas/descrição |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | Agente do Apple MDM retornou que o comando de instalação falhou. |
+| (0x87D1313C) | A conexão de rede foi perdida enquanto a URL do serviço de download atualizada era enviada para o dispositivo. Especificamente, um servidor com o nome do host especificado não pôde ser encontrado. |
+| O dispositivo iOS está ocupado no momento. (0x87D11388) | O dispositivo iOS estava ocupado, o que resultou em erro. |
+| A instalação do aplicativo falhou. (0x87D13B64) | Ocorreu uma falha na instalação do aplicativo. Os logs do XCODE são necessários para solucionar esse erro. |
+| O aplicativo é gerenciado, mas expirou ou foi removido pelo usuário. (0x87D13B66) | O usuário desinstalou o aplicativo explicitamente. O aplicativo expirou, mas seu download falhou, ou a detecção do aplicativo não corresponde à resposta do dispositivo.   Além disso, esse erro pode ocorrer com base em um bug da plataforma iOS 9.2.2. |
+| O aplicativo está agendado para instalação, mas precisa de um código de resgate para que a transação seja concluída. (0x87D13B60) | Esse erro normalmente ocorre com os aplicativos da iOS Store que são pagos. |
+| O aplicativo ainda não foi detectado depois que a desinstalação foi concluída com sucesso.   (0x87D1041C) | O processo de detecção do aplicativo não correspondeu à resposta do dispositivo. |
+| O usuário rejeitou a oferta para instalar o aplicativo. (0x87D13B62) | Durante a instalação inicial do aplicativo, o usuário clicou em Cancelar. |
+| O usuário rejeitou a oferta para atualizar o aplicativo. (0x87D13B63) | O usuário final clicou em Cancelar durante o processo de atualização. |
+| Erro desconhecido (0x87D103E8) | Ocorreu um erro de instalação de aplicativo desconhecido. Esse é o erro resultante quando o outro erro não ocorre. |
+| Só é possível instalar aplicativos de VPP no iPad compartilhado (-2016330861). | Os aplicativos devem ser obtidos usando o Apple Volume Purchase Program para instalar em um iPad compartilhado. |
+| Não é possível instalar aplicativos quando o aplicativo Store está desabilitado (-2016330860).  | O aplicativo Store deve ser habilitado para o usuário instalar o aplicativo. |
+| Não é possível localizar a licença do VPP para o aplicativo (-2016330859).  | Tente Revogando e reatribuir a licença do aplicativo. |
+| Não é possível instalar aplicativos do sistema com seu provedor MDM (-2016330858). | Instalar aplicativos que são instalados previamente pelo sistema operacional iOS não é um cenário com suporte. |
+| Não é possível instalar aplicativos, quando o dispositivo estiver no modo perdido (-2016330857). | Todo o uso do dispositivo está bloqueado no modo perdido.   Desabilite modo perdido para instalar aplicativos. |
+| Não é possível instalar aplicativos, quando o dispositivo estiver no modo de quiosque (-2016330856). | Tente adicionar este dispositivo a um grupo de exclusão para política de configuração do modo de quiosque para instalar aplicativos. |
+| Não é possível instalar aplicativos de 32 bits neste dispositivo (-2016330852). | O dispositivo não dá suporte a instalação de aplicativos de 32 bits. Tente implantar a versão de 64 bits do aplicativo. |
+| Usuário deve entrar para a Store do aplicativo (-2016330855). | O usuário precisa entrar para a App Store antes do aplicativo pode ser instalado. |
+| Problema desconhecido. Tente novamente (-2016330854). | A instalação do aplicativo falhou devido a um motivo desconhecido.   Tente novamente mais tarde. |
+| A instalação do aplicativo falhou. Intune tentará novamente na próxima vez que o dispositivo for sincronizado (-2016330853). | A instalação do aplicativo encontrou um erro de dispositivo. Sincronize o dispositivo e tente reinstalar o aplicativo. |
 
 ### <a name="other-installation-errors"></a>Outros erros de instalação
 

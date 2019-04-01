@@ -10,18 +10,20 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297495"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400476"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
 
@@ -505,7 +507,10 @@ A entidade **ownerType** indica se um dispositivo é corporativo, pessoal ou des
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificador exclusivo do tipo de proprietário.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificador exclusivo do tipo de proprietário no data warehouse – chave alternativa.                                                                                                       |                            |
-| ownerTypeName | Representa o tipo de proprietário dos dispositivos:  Empresa – o dispositivo é de propriedade da empresa.  Pessoal – o dispositivo de propriedade pessoal (BYOD).   Desconhecido – não há informações sobre este dispositivo. | Equipe da empresa desconhecida |
+| ownerTypeName | Representa o tipo de proprietário dos dispositivos: corporativo– o dispositivo é de propriedade da empresa.  Pessoal – o dispositivo de propriedade pessoal (BYOD).   Desconhecido – não há informações sobre este dispositivo. | Desconhecido corporativo de pessoal |
+
+> [!Note]  
+> Para o `ownerTypeName` filtro no Azure AD durante a criação de grupos dinâmicos para dispositivos, você precisará definir o valor `deviceOwnership` como `Company`. Para obter mais informações, consulte [regras para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>diretivas
 A entidade **Política** lista perfis de configuração do dispositivo, perfis de configuração do aplicativo e as políticas de conformidade. Você pode atribuir as políticas com o Gerenciamento de dispositivo móvel (MDM) a um grupo em sua empresa.

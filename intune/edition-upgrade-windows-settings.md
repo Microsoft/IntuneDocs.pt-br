@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38087afa95dc5933b55e6342ad46386cf0185f42
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c2a8c234c305744c48785763c87913c2635276ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228962"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565597"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Configurações de dispositivo com Windows 10 (e mais recente) para atualizar edições ou habilitar o modo S no Intune
 
@@ -37,15 +38,15 @@ Para saber mais sobre esse recurso, consulte [Atualizar edições Windows 10 ou 
 
 ## <a name="edition-upgrade"></a>Atualização de edição
 
-- **Edição da atualização**: selecione a edição do Windows 10 que você está atualizando. Os dispositivos de destino desta política são atualizados para a edição que você escolher.
-- **Chave do produto**: insira a chave do produto (Product Key) que você recebeu da Microsoft. Depois de criar a política com a chave do produto (Product Key), a chave não pode ser atualizada e é ocultada por motivos de segurança. Para alterar a chave do produto (Product Key), insira a chave inteira novamente.
-- **Arquivo de licença**: para o **Windows 10 Holographic for Business** ou o **Windows 10 Mobile Edition**, escolha **Procurar** para selecionar o arquivo de licença que você recebeu do Microsoft. Esse arquivo de licença inclui informações de licença das edições para as quais você está atualizando os dispositivos.
+- **Edição para a qual atualizar**: selecione a edição do Windows 10 que você está atualizando. Os dispositivos de destino desta política são atualizados para a edição que você escolher.
+- **Chave do Produto (Product Key)**: insira a chave do produto (Product Key) que você recebeu da Microsoft. Depois de criar a política com a chave do produto (Product Key), a chave não pode ser atualizada e é ocultada por motivos de segurança. Para alterar a chave do produto (Product Key), insira a chave inteira novamente.
+- **Arquivo de Licença**: para o **Windows 10 Holographic for Business** ou o **Windows 10 Mobile Edition**, escolha **Procurar** para selecionar o arquivo de licença que você recebeu do Microsoft. Esse arquivo de licença inclui informações de licença das edições para as quais você está atualizando os dispositivos.
 
 ## <a name="mode-switch"></a>Alternar modo
 
-- **Sem configuração**: Um dispositivo no modo S permanece no modo S. Um usuário final pode tirar o dispositivo do modo S.
+- **Nenhuma configuração**: um dispositivo no modo S permanece no modo S. Um usuário final pode tirar o dispositivo do modo S.
 - **Ficar no modo S**: impede o usuário final de tirar o dispositivo do modo S.
-- **Alternar**: tira o dispositivo do modo S.
+- **Alternância**: tira o dispositivo do modo S.
 
 ## <a name="next-steps"></a>Próximas etapas
 

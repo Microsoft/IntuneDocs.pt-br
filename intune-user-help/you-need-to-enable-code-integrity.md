@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839934"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56426919"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>É necessário habilitar a Integridade de Código
+# <a name="enable-code-integrity"></a>Habilitar a integridade de código
 
-Manter as informações organizacionais exige diferentes tipos de segurança para prevenir diferentes tipos de problemas. Uma maneira pela qual as organizações desejam manter a segurança é usar a Integridade de Código do Windows, que garante que os programas de nível de profundidade (drivers) e os arquivos do sistema não são modificados.
+Sua organização poderá exigir a seu computador para ser habilitado com um recurso de proteção contra ameaças chamado *integridade de código*. Verificações de integridade de código os drivers e arquivos de sistema em seu dispositivo em busca de sinais de corrupção ou de software mal-intencionado. Para a integridade de código trabalhar em seu dispositivo, outro recurso de segurança chamado [ *inicialização segura* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) também deve ser habilitado. 
 
-A Integridade de Código é ativada automaticamente quando o sistema usa a Inicialização Segura de forma ativa.
+Se seu computador não está em conformidade porque a integridade do código está desabilitada, você deverá contatar da sua organização IT equipe de suporte. Eles ajudarão você a habilitar a inicialização segura, que irá disparar a integridade de código na próxima vez que iniciar o seu dispositivo. 
 
-> [!Tip]
-> Habilitar a Inicialização Segura é uma tarefa avançada. Recomendamos que você contate o suporte de sua empresa para obter assistência com essa tarefa.
+Se você identificar como um usuário avançado de dispositivos e experimentar as etapas por conta própria, consulte [reabilitar a inicialização segura](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-Se estiver à vontade para avançar, leia a seção “Para reabilitar a Inicialização Segura” na página [Desabilitar Inicialização Segura](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tentar habilitar a Inicialização Segura por conta própria.
+## <a name="additional-resources-for-it-administrators"></a>Recursos adicionais para os administradores de TI  
+Se você for um administrador do Intune e deseja saber mais sobre as configurações de conformidade de integridade de dispositivo do Intune, consulte [adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte a [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## <a name="next-steps"></a>Próximas etapas  
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

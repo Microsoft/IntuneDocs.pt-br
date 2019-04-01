@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "58068820"
+---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de Software Livre da Microsoft
 
 Este projeto adotou o [Código de Conduta de Software Livre da Microsoft](https://opensource.microsoft.com/codeofconduct/).
@@ -8,13 +16,28 @@ Para saber mais, confira as [Perguntas frequentes sobre o Código de Conduta](ht
 Você encontrou um dos repositórios GitHub que hospeda a fonte de conteúdo publicada em [https://docs.microsoft.com](https://docs.microsoft.com/.), lugar de todo o conteúdo técnico para a Divisão de Nuvem e Divisão Corporativa da Microsoft.
 
 ## <a name="contribute-to-your-documentation"></a>Contribuir com a documentação
-**Desejamos e incentivamos contribuições** da nossa comunidade (usuários, clientes, parceiros) e funcionários da Microsoft para melhorar a documentação. Aqui estão algumas dicas:
+**Desejamos e incentivamos contribuições** da nossa comunidade (usuários, clientes, parceiros, amigos em outros planetas) e funcionários da Microsoft para melhorar a documentação. Aqui estão algumas dicas:
 
 * **Crie uma conta GitHub**: a inscrição é gratuita em [GitHub.com](https://www.github.com).
 
-* **Use o navegador**: se você estiver familiarizado com o GitHub, encontre o artigo neste repositório e faça as atualizações. Ou acesse o artigo sobre [https://docs.microsoft.com/intune/](https://docs.microsoft.com/intune/) e selecione o link **Editar**. Isso abrirá a fonte do GitHub para o artigo. Em seguida, use apenas a interface do usuário do GitHub em seu navegador da Web para fazer as atualizações. 
+* **Use seu navegador**: há duas opções: 
+
+    **Opção 1: Editar diretamente do docs.microsoft.com**  
+    1. Vá para o tópico, como [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
+    2. Selecione **editar** (parte superior direita). Isso mostra o arquivo markdown no repositório do GitHub.
+    3. Selecione o ícone de lápis. Quando você passa o mouse sobre o ícone de lápis, você verá a **editar esse arquivo** dica de ferramenta. 
+    4. Faça as alterações e, em seguida **confirmação** suas alterações. 
+    5. Crie a solicitação de pull.
+    
+    **Opção 2: Localize o artigo neste repositório e atualizar**  
+    1.  A maioria dos tópicos estão em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nessa pasta, procurar o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
+    2. Selecione o link e clique no ícone de lápis. Quando você passa o mouse sobre o ícone de lápis, você verá a **editar esse arquivo** dica de ferramenta. 
+    3. Faça as alterações e, em seguida **confirmação** suas alterações. 
+    4. Crie a solicitação de pull. 
 
   Ao fazer uma atualização, você precisará assinar um contrato de licença. Essa é uma tarefa única. Portanto, futuras atualizações em seu nome de usuário do GitHub não precisarão de assinatura novamente. 
+  
+  O valor no `author` metadados (na parte superior de cada tópico) lista o autor do GitHub. No `troubleshoot-policies-in-microsoft-intune` exemplo, você verá `MandiOhlinger`. Na sua solicitação de pull, você também pode mencionar (@*authorValue*) o autor se desejar.
   
 * **Funcionários da MSFT**: depois de criar uma conta do GitHub, vincule-a ao seu endereço de email da Microsoft. Quando a conta estiver vinculada, você não precisará assinar um contrato de licença para fazer uma atualização. Etapas:
 
@@ -29,7 +52,7 @@ Você encontrou um dos repositórios GitHub que hospeda a fonte de conteúdo pub
   3. Selecione o ícone de lápis e faça as alterações. 
 
 ## <a name="use-markdown-to-format-your-topic"></a>Use markdown para formatar seu tópico
-Todos os artigos neste repositório usam markdown específico do GitHub.  Aqui está uma lista de recursos para começar:
+Todos os artigos neste repositório usam markdown específico do GitHub. Aqui está uma lista de recursos para começar:
 
-* [Noções básicas de redução](https://help.github.com/articles/markdown-basics/)
-* [Folha de consulta imprimível de redução](./contributor-guide/media/documents/markdown-cheatsheet.pdf?raw=true)
+* [Noções básicas de redução](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Folha de consulta imprimível de redução](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

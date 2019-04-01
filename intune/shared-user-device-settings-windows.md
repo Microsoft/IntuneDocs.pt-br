@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 707bb84df55fa202e3dc5241e3d7212039b17b3b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841735"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566447"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Configurações do Windows 10 e posterior para gerenciar dispositivos compartilhados usando o Intune
 
@@ -39,24 +40,24 @@ Para obter mais informações sobre este recurso no Intune, confira [Controlar o
 
 ## <a name="shared-multi-user-device-settings"></a>Configurações de dispositivo multiusuário compartilhado
 
-- **Modo de computador compartilhado**: Escolha **Habilitar** para ativar o modo de computador compartilhado. Nesse modo, apenas um usuário entra no dispositivo por vez. Nenhum outro usuário poderá entrar enquanto o primeiro usuário não sair. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
-- **Conta Convidado**: Escolha a criação de uma opção de Convidado na tela de entrada. As contas Convidado não exigem credenciais do usuário nem autenticação. Essa configuração cria uma conta local sempre que ela é usada. Suas opções:
-  - **Convidado**: Cria uma conta Convidado localmente no dispositivo.
-  - **Domínio**: Cria uma conta Convidado no Azure AD (Active Directory).
-  - **Convidado e domínio**: Cria uma conta Convidado localmente no dispositivo e no Azure AD (Active Directory).
-- **Gerenciamento de contas**: Defina essa opção como **Habilitar** para excluir automaticamente as contas locais criadas por convidados e as contas do AD e do Azure AD. Quando um usuário se desconecta do dispositivo ou quando a manutenção do sistema é executada, essas contas são excluídas. Quando essa opção estiver habilitada, também defina:
-  - **Exclusão da Conta**: Escolha quando as contas serão excluídas: **No limite do espaço de armazenamento**, **No limite do espaço de armazenamento e limite inativo** ou **Imediatamente após o logoff**. Insira também:
-    - **Iniciar limite de exclusão (%)**: Insira um percentual (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento fica abaixo do valor inserido, as contas armazenadas em cache são excluídas. Ele exclui continuamente as contas para recuperar o espaço em disco. As contas que estão inativas por mais tempo são excluídas primeiro.
-    - **Parar limite de exclusão (%)**: Insira um percentual (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento atende ao valor inserido, a exclusão é interrompida.
+- **Modo de PC compartilhado**: escolha **habilitar** para ativar o modo de PC compartilhado. Nesse modo, apenas um usuário entra no dispositivo por vez. Nenhum outro usuário poderá entrar enquanto o primeiro usuário não sair. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
+- **Conta convidado**: escolha a criação de uma opção de Convidado na tela de entrada. As contas Convidado não exigem credenciais do usuário nem autenticação. Essa configuração cria uma conta local sempre que ela é usada. Suas opções:
+  - **Convidado**: cria uma conta Convidado localmente no dispositivo.
+  - **Domínio**: cria uma conta Convidado no Azure AD (Active Directory).
+  - **Convidado e domínio**: cria uma conta Convidado localmente no dispositivo e no Azure AD (Active Directory).
+- **Gerenciamento de conta**: definido para **Habilitar** para excluir automaticamente as contas locais criadas por convidados e as contas do AD e do Azure AD. Quando um usuário se desconecta do dispositivo ou quando a manutenção do sistema é executada, essas contas são excluídas. Quando essa opção estiver habilitada, também defina:
+  - **Exclusão da conta**: escolha quando as contas serão excluídas: **no limite de espaço de armazenamento**, **no limite de espaço de armazenamento e o limite inativo**, ou **imediatamente depois de logoff** . Insira também:
+    - **Iniciar a exclusão threshold(%)**: insira uma porcentagem (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento fica abaixo do valor inserido, as contas armazenadas em cache são excluídas. Ele exclui continuamente as contas para recuperar o espaço em disco. As contas que estão inativas por mais tempo são excluídas primeiro.
+    - **Parar exclusão threshold(%)**: insira uma porcentagem (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento atende ao valor inserido, a exclusão é interrompida.
 
   Defina essa opção como **Desabilitar** para manter as contas locais, do AD e do Azure AD criadas por convidados.
 
-- **Armazenamento Local**: Escolha **Habilitado** para impedir que os usuários salvem e exibam arquivos no disco rígido do dispositivo. Escolha **Desabilitado** para permitir que os usuários vejam e salvem arquivos localmente usando o Explorador de Arquivos. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
-- **Políticas de Energia**: Quando essa opção é definida como **Habilitado**, os usuários não podem desligar a hibernação, não podem substituir todas as ações de suspensão (como o fechamento da tampa) e não podem alterar as configurações de energia. Quando essa opção é definida como **Desabilitado**, os usuários podem hibernar o dispositivo, podem fechar a tampa para suspender o dispositivo e alterar as configurações de energia. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
-- **Tempo limite de suspensão (em segundos)**: Insira o número de segundos inativos (0 a 100) antes de o dispositivo entrar no modo de suspensão. Se você não definir um tempo, o dispositivo entrará em suspensão após 60 minutos.
-- **Conectar-se quando o computador for ativado**: Defina essa opção como **Habilitado** para exigir que os usuários entrem com uma senha quando o dispositivo sair do modo de suspensão. Escolha **Desabilitado** para que os usuários não precisem inserir seus nomes de usuário e suas senhas. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
-- **Tempo de início da manutenção (em minutos a partir da meia-noite)**: Insira o tempo em minutos (0 a 1440) quando são executadas tarefas de manutenção automática, como o Windows Update. A hora de início padrão é meia-noite ou zero (`0`) minutos. Altere a hora de início inserindo uma hora de início em minutos a partir da meia-noite. Por exemplo, caso deseje que a manutenção seja iniciada às 2h, insira `120`. Caso deseje que a manutenção seja iniciada às 20h, insira `1200`.
-- **Políticas de educação**: Escolha **Habilitado** para usar as configurações recomendadas para dispositivos usados em escolas, que são mais restritivas. Escolha **Desabilitado** para que as políticas de educação recomendadas e padrão não sejam usadas. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
+- **Armazenamento Local**: escolha **Habilitado** para impedir que os usuários salvem e exibam arquivos no disco rígido do dispositivo. Escolha **Desabilitado** para permitir que os usuários vejam e salvem arquivos localmente usando o Explorador de Arquivos. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
+- **Políticas de Energia**: quando essa opção é definida como **Habilitado**, os usuários não podem desligar a hibernação, não podem substituir todas as ações de suspensão (como o fechamento da tampa) e não podem alterar as configurações de energia. Quando essa opção é definida como **Desabilitado**, os usuários podem hibernar o dispositivo, podem fechar a tampa para suspender o dispositivo e alterar as configurações de energia. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
+- **Tempo limite de suspensão (em segundos)**: insira o número de segundos de inativos (0 a 100) antes do dispositivo entra em modo de suspensão. Se você não definir um tempo, o dispositivo entrará em suspensão após 60 minutos.
+- **Entre quando o computador for ativado**: defina essa opção como **Habilitado** para exigir que os usuários entrem com uma senha quando o dispositivo sair do modo de suspensão. Escolha **Desabilitado** para que os usuários não precisem inserir seus nomes de usuário e suas senhas. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
+- **Tempo (em minutos após a meia-noite) de início da manutenção**: digite o tempo em minutos (1440 0) quando executar tarefas de manutenção automática, como o Windows Update,. A hora de início padrão é meia-noite ou zero (`0`) minutos. Altere a hora de início inserindo uma hora de início em minutos a partir da meia-noite. Por exemplo, caso deseje que a manutenção seja iniciada às 2h, insira `120`. Caso deseje que a manutenção seja iniciada às 20h, insira `1200`.
+- **Políticas de educação**: escolha **Habilitado** para usar as configurações recomendadas para dispositivos usados em escolas, que são mais restritivas. Escolha **Desabilitado** para que as políticas de educação recomendadas e padrão não sejam usadas. A opção **Não configurado** (padrão) mantém essa configuração não gerenciada pelo Intune e não envia por push nenhuma política para controlar essa configuração em um dispositivo.
 
   Para obter mais informações sobre as ações das políticas de educação, confira [Recomendações de configuração do Windows 10 para clientes de educação](https://docs.microsoft.com/education/windows/configure-windows-for-education).
 

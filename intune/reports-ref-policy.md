@@ -6,22 +6,23 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f5b7a37e1ed21c4680a57098bdd0a43a79346
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: af0c544540798a52dc018c749909da6cea50df6c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238397"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566668"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para entidades de política
 
@@ -59,7 +60,7 @@ A entidade **PolicyType** lista os tipos de perfis de configuração do disposit
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-A entidade **DeviceConfigurationProfileDeviceActivity** lista o número de dispositivos com o estado de êxito, pendente, com falha ou de erro por dia. O número reflete os perfis de configuração do Dispositivo atribuídos à entidade. Por exemplo, se um dispositivo estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador com êxito em um para esse dia. Se um dispositivo tem dois perfis atribuídos a ele, um no estado de êxito e outro em um estado de erro, a entidade incrementa o contador de Êxito e coloca o dispositivo no estado de erro. A entidade lista quantos dispositivos estão em qual estado em um determinado dia nos últimos 30 dias.
+A entidade **DeviceConfigurationProfileDeviceActivity** lista o número de **dispositivos** com o estado de êxito, pendente, com falha ou de erro por dia. O número reflete os perfis de configuração do Dispositivo atribuídos à entidade. Por exemplo, se um **dispositivo** estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador com êxito em um para esse dia. Se um dispositivo tem dois perfis atribuídos a ele, um no estado de êxito e outro em um estado de erro, a entidade incrementa o contador de Êxito e coloca o dispositivo no estado de erro. A entidade lista quantos dispositivos estão em qual estado em um determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
@@ -69,9 +70,7 @@ A entidade **DeviceConfigurationProfileDeviceActivity** lista o número de dispo
 | Erro do |Número de dispositivos exclusivos no estado de erro. |10 |
 | Failed (Falha) |Número de dispositivos exclusivos no estado de falha. |2 |
 
-
-
-A entidade **DeviceConfigurationProfileUserActivity** lista o número de usuários com o estado de êxito, pendente, com falha ou de erro por dia. O número reflete os perfis de configuração do Dispositivo atribuídos à entidade. Por exemplo, se um usuário estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador com êxito em um para esse dia. Se um usuário tiver dois perfis atribuídos a ele, um no estado de êxito e o outro em um estado de erro, o usuário no estado de erro será contado.  A entidade **DeviceConfigurationProfileUserActivity** lista quantos usuários estão em qual estado em um determinado dia nos últimos 30 dias.
+A entidade **DeviceConfigurationProfileUserActivity** lista o número de **usuários** com o estado de êxito, pendente, com falha ou de erro por dia. O número reflete os perfis de configuração do Dispositivo atribuídos à entidade. Por exemplo, se um **usuário** estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador com êxito em um para esse dia. Se um usuário tiver dois perfis atribuídos a ele, um no estado de êxito e o outro em um estado de erro, o usuário no estado de erro será contado.  A entidade **DeviceConfigurationProfileUserActivity** lista quantos usuários estão em qual estado em um determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|

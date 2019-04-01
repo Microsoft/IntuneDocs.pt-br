@@ -6,20 +6,21 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
-ms.translationtype: HT
+ms.openlocfilehash: ef626523898a8873bde9851664b4ade85c2b0a23
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334979"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566532"
 ---
 # <a name="windows-update-settings-for-intune"></a>Configurações de atualização do Windows para Intune  
 
@@ -33,8 +34,8 @@ As configurações de atualização controlam quais partes um dispositivo baixar
 
 ### <a name="servicing-channel"></a>Canal de manutenção  
 
-- **Padrão**: Canal Semestral (direcionado)  
-- **Documentação de referência do Windows**: [Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel)  
+- **Padrão**: Canal Semianual (de destino)  
+- **Documentação de referência do Windows**: [BranchReadinessLevel/atualização](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel)  
 Defina o canal (branch) pelo qual o dispositivo recebe atualizações do Windows. Canais diferentes podem usar períodos de adiamento diferente antes da entrega das atualizações.  
 
 Por exemplo, o *Canal Semestral* tem um adiamento de seis meses. Isso significa que se você usar esse canal sem adiamentos adicionais deste corpo de configurações, o dispositivo instalará a atualização seis meses após seu lançamento.  
@@ -57,22 +58,22 @@ Se você selecionar um canal Insider, o Intune definirá automaticamente a confi
 
 ### <a name="microsoft-product-updates"></a>Atualizações de produto da Microsoft  
 
-- **Padrão**:  Allow
-- **Documentação de referência do Windows**: [Update/AllowMUUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
+- **Padrão**: permitir
+- **Documentação de referência do Windows**: [AllowMUUpdateService/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
 
 Escolha *Allow* para buscar atualizações de aplicativos no Microsoft Update.    
 
 ### <a name="windows-drivers"></a>Drivers do Windows  
 
-- **Padrão**:  Allow
-- **Documentação de referência do Windows**: [Update/ExcludeWUDriversInQualityUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate)
+- **Padrão**: permitir
+- **Documentação de referência do Windows**: [ExcludeWUDriversInQualityUpdate/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate)
 
 Escolha *Allow* para incluir os drivers do Windows Update durante as atualizações
 
 ### <a name="quality-update-deferral-period-days"></a>Período de adiamento da atualização de qualidade (dias)  
 
 - **Padrão**: 0  
-- **Documentação de referência do Windows**: [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)  
+- **Documentação de referência do Windows**: [DeferQualityUpdatesPeriodInDays/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)  
 
 Especifique o número de dias de 0 a 30 para adiamento das Atualizações de Qualidade. Esse período ocorre como adição a qualquer período de adiamento do canal de serviço selecionado. O período de adiamento começa quando a política é recebida pelo dispositivo.  
 
@@ -81,20 +82,20 @@ Normalmente, as Atualizações de Qualidade são correções e aprimoramentos pa
 ### <a name="feature-update-deferral-period-days"></a>Período de adiamento da atualização de recurso (dias)  
 
 - **Padrão**: 0  
-- **Documentação de referência do Windows**: [Update/PauseFeatureUpdatesPeriodInDays](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)  
+- **Documentação de referência do Windows**: [PauseFeatureUpdatesPeriodInDays/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)  
 
 Especifique o número de dias pelos quais as Atualizações de Recursos serão adiadas. Esse período ocorre como adição a qualquer período de adiamento do canal de serviço selecionado. O período de adiamento começa quando a política é recebida pelo dispositivo.  
 Período de adiamento com suporte:  
 
-- *Versão 1709 do Windows ou posterior*: 0 a 365 dias  
-- *Versão 1703 do Windows*:  0 a 180 dias  
+- *Windows versão 1709 ou posterior*: 0 a 365 dias  
+- *Windows versão 1703*: 0 a 180 dias  
 
 As Atualizações do Recurso são geralmente novos recursos para o Windows.  
 
 ### <a name="set-feature-update-uninstall-period-2--60-days"></a>Definir período de desinstalação da atualização do recurso (2 a 60 dias)  
 
 - **Padrão**: 10  
-- **Documentação de referência do Windows**:  [Update/ConfigureFeatureUpdateUninstallPeriod](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-configurefeatureupdateuninstallperiod)  
+- **Documentação de referência do Windows**: [ConfigureFeatureUpdateUninstallPeriod/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-configurefeatureupdateuninstallperiod)  
 
 Configure um limite de tempo após o qual as atualizações de recurso não podem ser desinstaladas.  
 
@@ -109,7 +110,7 @@ As configurações de experiência do usuário controlam a experiência do usuá
 
 ### <a name="automatic-update-behavior"></a>Comportamento de atualização automática  
 
-- **Padrão**: Instalação e reinício automáticos em um momento agendado  
+- **Padrão**: instalação e reinício automáticos em um momento agendado  
 - **Documentação de referência do Windows**: [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
 Escolha como as atualizações automáticas são instaladas e, se necessário, quando reiniciar o dispositivo.  
@@ -122,39 +123,39 @@ Confira a documentação de referência do Windows para ver todas as opções co
 
   Essa opção pode reiniciar um dispositivo automaticamente após a instalação da atualização. Use as configurações de **Horas ativas** para definir um período durante o qual as reinicializações automáticas ficam bloqueadas:  
 
-  - **Início das horas ativas**: Especifique uma hora de início para a supressão das reinicializações devido a instalações de atualização.  
-    **Documentação de referência do Windows**:  [Update/ActiveHoursStart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
-    **Padrão**: 8h  
+  - **Início das horas de atividade**: especifique uma hora de início para a supressão das reinicializações devido a instalações de atualização.  
+    **Documentação de referência do Windows**: [ActiveHoursStart/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
+    **Padrão**: 8H  
   
-  - **Término das horas ativas**: Especifique uma hora de término para a supressão das reinicializações devido a instalações de atualização.  
-    **Documentação de referência do Windows**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
-    **Padrão**: 17h  
+  - **Término das horas de atividade**: especifique uma hora de término para a supressão das reinicializações devido a instalações de atualização.  
+    **Documentação de referência do Windows**: [ActiveHoursEnd/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
+    **Padrão**: 5 PM  
 
 - **Instalação e reinício automáticos no momento da manutenção**: as atualizações são baixadas automaticamente e instaladas durante a Manutenção Automática, quando o dispositivo não está em uso ou funcionando com bateria. Quando o reinício for necessário, o dispositivo será reiniciado quando não estiver sendo usado. (Esse é o padrão para dispositivos não gerenciados.)  
 
   Essa opção pode reiniciar um dispositivo automaticamente após a instalação da atualização. O uso das configurações de **Horas ativas** não está descrito nas configurações do Windows Update, mas elas podem ser usadas pelo Intune para definir um período durante o qual as reinicializações automáticas ficam bloqueadas:  
 
-  - **Início das horas ativas**: Especifique uma hora de início para a supressão das reinicializações devido a instalações de atualização.  
-    **Documentação de referência do Windows**:  [Update/ActiveHoursStart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
-    **Padrão**: 8h  
+  - **Início das horas de atividade**: especifique uma hora de início para a supressão das reinicializações devido a instalações de atualização.  
+    **Documentação de referência do Windows**: [ActiveHoursStart/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
+    **Padrão**: 8H  
 
-  - **Término das horas ativas**: Especifique uma hora de término para a supressão das reinicializações devido a instalações de atualização.  
-    **Documentação de referência do Windows**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
-    **Padrão**: 17h  
+  - **Término das horas de atividade**: especifique uma hora de término para a supressão das reinicializações devido a instalações de atualização.  
+    **Documentação de referência do Windows**: [ActiveHoursEnd/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
+    **Padrão**: 5 PM  
 
 - **Instalar e reiniciar automaticamente no horário agendado**: especifique um dia e hora para a instalação. Se não for especificado, a instalação será executada diariamente às 3h, seguida por uma contagem regressiva de 15 minutos para o reinício. Os usuários conectados podem atrasar a contagem regressiva e o reinício.  
   
   Essa opção dá suporte a configurações adicionais.  
-  **Documentação de referência do Windows**:  [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
+  **Documentação de referência do Windows**: [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
-  - **Frequência de comportamento automático**: Use essa configuração para agendar quando as atualizações serão instaladas, incluindo o dia, a semana e a hora.  
-    **Padrão**: Toda semana
+  - **Frequência de comportamento automático**: use essa configuração para agendar quando as atualizações serão instaladas, incluindo o dia, a semana e a hora.  
+    **Padrão**: toda semana
 
-  - **Dia de instalação agendado**:  Especifique em qual dia da semana você deseja instalar as atualizações.  
-    **Padrão**: Qualquer dia  
+  - **Dia de instalação agendado**: especificar em qual dia da semana que você deseja atualizações a serem instaladas.  
+    **Padrão**: qualquer dia  
 
-  - **Hora de instalação agendada**:  Especifique a hora do dia em que deseja instalar as atualizações.  
-    **Padrão**: 3h  
+  - **Hora de instalação agendada**: especifique a hora do dia em que deseja instalar as atualizações.  
+    **Padrão**: 3 AM  
 
 - **Instalação e reinício automática sem o controle do usuário final**: as atualizações são baixadas automaticamente e instaladas durante a Manutenção Automática, quando o dispositivo não está em uso ou está funcionando com bateria. Quando o reinício for necessário, o dispositivo será reiniciado quando não estiver sendo usado. Essa opção define o painel de controle de usuários finais como somente leitura.  
 
@@ -163,47 +164,47 @@ Confira a documentação de referência do Windows para ver todas as opções co
 
 ### <a name="restart-checks"></a>Reiniciar verificações  
 
-- **Padrão**: Allow  
-- **Documentação de referência do Windows**: [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart)  
+- **Padrão**: permitir  
+- **Documentação de referência do Windows**: [SetEDURestart/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart)  
 
 Essa configuração tem resultados diferentes dependendo da versão de dispositivos do Windows:  
 
-- Versão 1703 do Windows e anteriores: Quando você reinicia um dispositivo, ocorrem algumas verificações, incluindo a verificação de usuários ativos, níveis de bateria, jogos em execução e muito mais. Para ignorar essas verificações ao reiniciar um dispositivo, selecione **Ignorar**.  
-- A partir da versão 1709 do Windows: Durante as Horas Ativas, os processos a seguir não são executados para atualizações: examinar, baixar, instalar e reinicializar. Após as Horas Ativas, os processos de atualização são executados e podem tirar o dispositivo do modo de suspensão, examinar, baixar, instalar e reiniciar o dispositivo, desde que as verificações de bateria e de energia sejam aprovadas. Para saber mais, confira [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart).  
+- Windows versão 1703 e anterior: quando você reinicia um dispositivo, ocorrem algumas verificações, incluindo a verificação de usuários ativos, níveis de bateria, jogos em execução e muito mais. Para ignorar essas verificações ao reiniciar um dispositivo, selecione **Ignorar**.  
+- Começando com o Windows versão 1709: durante as Horas Ativas, os processos a seguir não são executados para atualizações: examinar, baixar, instalar e reinicializar. Após as Horas Ativas, os processos de atualização são executados e podem tirar o dispositivo do modo de suspensão, examinar, baixar, instalar e reiniciar o dispositivo, desde que as verificações de bateria e de energia sejam aprovadas. Para saber mais, confira [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart).  
 
 ### <a name="block-user-from-pausing-windows-updates"></a>Impedir que o usuário pause as atualizações do Windows  
 
-- **Padrão**: Allow  
-- **Documentação de referência do Windows**: [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
+- **Padrão**: permitir  
+- **Documentação de referência do Windows**: [SetDisablePauseUXAccess/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
 
 Permitir ou bloquear que um usuário de dispositivo pause a instalação de uma atualização.  
 
 ### <a name="require-users-approval-to-restart-outside-of-work-hours"></a>Exigir aprovação do usuário para reiniciar fora das horas de trabalho  
 
-- **Padrão**: Não configurado  
-- **Documentação de referência do Windows**: [Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- **Padrão**: não configurado  
+- **Documentação de referência do Windows**: [AutoRestartRequiredNotificationDismissal/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
   
 Selecione *Obrigatório* para exigir que um usuário aprove o reinício de um dispositivo fora do horário de trabalho.  
    
 ### <a name="remind-user-prior-to-required-auto-restart-with-dismissible-reminder-hours"></a>Lembrar o usuário antes do reinício automático obrigatório com um lembrete dispensável (horas)  
 
-- **Padrão**: *Isso não está configurado por padrão, e nenhum lembrete é apresentado aos usuários*.  
-- **Documentação de referência do Windows**: [Update/ScheduleRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
+- **Padrão**: *isso não está configurado por padrão e nenhum lembrete é apresentado aos usuários*.  
+- **Documentação de referência do Windows**: [ScheduleRestartWarning/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
 
 Especifique quando exibir uma notificação dispensável a um usuário de dispositivo antes do reinício automático. É possível usar os valores de **2**, **4**, **8**, **12** ou **24** horas.  
 
 ### <a name="remind-user-prior-to-required-auto-restart-with-permanent-reminder-minutes"></a>Lembrar o usuário antes do reinício automático obrigatório com um lembrete permanente (minutos)  
 
-- **Padrão**: *Isso não está configurado por padrão, e nenhum lembrete é apresentado aos usuários*.  
-- **Documentação de referência do Windows**: [Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) 
+- **Padrão**: *isso não está configurado por padrão e nenhum lembrete é apresentado aos usuários*.  
+- **Documentação de referência do Windows**: [ScheduleImminentRestartWarning/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) 
 
 Especifique por quanto tempo antes de um reinício automático exibir um aviso não dispensável sobre o reinício. É possível usar os valores de **15**, **30**, ou **60** minutos.  
  
 ### <a name="allow-user-to-restart-engaged-restart"></a>Permitir que o usuário reinicie (reinício estabelecido)  
 
-- **Padrão**: Não configurado  
-- **Documentação de referência do Windows**: *Não aplicável*  
-- **Versão do Windows**: Com suporte para Windows 10 versão 1803 e posterior  
+- **Padrão**: não configurado  
+- **Documentação de referência do Windows**: *não aplicável*  
+- **Versão do Windows**: suporte para Windows 10 versão 1803 e posterior  
 
   > [!NOTE]  
   > O Windows 10 versão 1809 apresenta configurações adicionais de reinício estabelecido que habilitam a aplicação de configurações separadas às atualizações de recurso e de qualidade. No entanto, as configurações gerenciadas pelo Intune não aplicadas separadamente a diferentes tipos de atualizações. Em vez disso, o Intune aplica os mesmos valores às atualizações de recurso e de qualidade.  
@@ -215,24 +216,24 @@ Para saber mais sobre essa opção, confira [Reinício estabelecido](https://doc
 As configurações a seguir são usadas para controlar quando ocorrem as ações de reinício estabelecido.  
 
 - **Fazer a transição dos usuários para o reinício estabelecido após um reinício automático (dias)**  
-  - **Padrão**:  Por padrão, isso não está configurado, mas dá suporte a um valor de **2** à **30**.  
-  - **Documentação de referência do Windows**: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
+  - **Padrão**: por padrão, isso não está configurado, mas dá suporte a um valor de **2** a **30**.  
+  - **Documentação de referência do Windows**: [EngagedRestartTransitionSchedule/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
   Especifique quanto tempo após instalação da atualização o dispositivo deve assumir o comportamento de reinício estabelecido. Após o número configurado de dias, os usuários receberão uma solicitação para reiniciar o dispositivo.  
 
 - **Lembrete de reinício estabelecido com adiamento (dias)**  
-  - **Padrão**:  Por padrão, isso não está configurado, mas dá suporte a um valor de **1** à **3**.  
-  - **Documentação de referência do Windows**: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
+  - **Padrão**: por padrão, isso não está configurado, mas dá suporte a um valor de **1** a **3**.  
+  - **Documentação de referência do Windows**: [EngagedRestartSnoozeSchedule/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
   Especifique por quanto tempo uma solicitação de reinício pode ser adiada.  Após o período de adiamento, a solicitação de reinício é oferecida novamente. O usuário pode continuar adiando o lembrete até que o prazo de instalação seja atingido.  
 
 - **Definir prazo para reinício pendente (dias)**  
-  - **Padrão**:  Por padrão, isso não está configurado, mas dá suporte a um valor de **2** à **30**.  
-  - **Documentação de referência do Windows**: [Update/EngagedRestartDeadline](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
+  - **Padrão**: por padrão, isso não está configurado, mas dá suporte a um valor de **2** a **30**.  
+  - **Documentação de referência do Windows**: [EngagedRestartDeadline/atualização](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
   Especifique o número máximo de dias a aguardar após o início do comportamento de reinício estabelecido antes que o dispositivo imponha um reinício obrigatória. Esse reinício solicitará aos usuários que salvem seu trabalho
 
 ### <a name="delivery-optimization-download-mode"></a>Modo de download de otimização de entrega  
 
-- **Padrão**:  Não Aplicável
-- **Documentação de referência do Windows**: *Não aplicável*
+- **Padrão**: não aplicável
+- **Documentação de referência do Windows**: *não aplicável*
 
 A otimização de entrega não está mais configurada como parte de um Grupo de Atualização do Windows 10 em Atualizações de Software. Agora, a Otimização de Entrega é definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis no console. Remova essas configurações anteriores editando-as para *Não configurado*, mas, de outro modo, elas não podem ser modificadas. 
 
