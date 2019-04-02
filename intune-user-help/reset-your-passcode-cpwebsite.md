@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838029"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163421"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
@@ -32,7 +32,7 @@ Se você perder o PIN ou a senha do dispositivo, use o [site Portal da Empresa](
 Se você estiver usando um dispositivo corporativo registrado, talvez a opção para redefinir a senha do dispositivo não seja exibida. Contate o suporte da empresa para redefinir a senha para você.
 
    > [!NOTE]
-   > Não é possível redefinir a senha para dispositivos com Android 7.0 e posterior. Se você esquecer a senha, será necessário redefinir o dispositivo para as configurações de fábrica. 
+   > Não é possível redefinir a senha para dispositivos executando Android 7.0 e posterior. Se você esquecer sua senha, será necessário redefinir o dispositivo para as configurações de fábrica. 
 
 ## <a name="reset-your-passcode"></a>Redefinir senha
 

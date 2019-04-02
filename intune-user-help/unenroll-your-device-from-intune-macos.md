@@ -1,11 +1,11 @@
 ---
-title: Cancelar o registro do dispositivo macOS no Intune | Microsoft Docs
-description: Descreve como cancelar o registro de um dispositivo macOS do Intune
+title: Cancelar o registro do seu dispositivo macOS no Portal da Empresa do Intune | Microsoft Docs
+description: Descreve como cancelar o registro de um dispositivo macOS no Portal da Empresa
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839942"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330391"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>Cancelar o registro do dispositivo macOS do Intune
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Cancelar o registro do seu dispositivo macOS do Portal da empresa
 
-Depois de cancelar o registro do dispositivo com macOS no Intune, você não poderá mais acessar os recursos da empresa.
+Ao cancelar o registro do dispositivo macOS do Intune, você não poderá mais acessar os recursos da empresa.
 
 Siga estas etapas para cancelar o registro do seu dispositivo macOS do gerenciamento:
 
-1.  No aplicativo do Portal da Empresa, em **Meus Dispositivos**, selecione o dispositivo cujo registro deseja cancelar.
+1.  Entre no aplicativo Portal da Empresa para macOS.
+2.  Acesse **Dispositivos** e selecione o dispositivo cujo registro deseja cancelar.
 
-2.  Clique em **remover** > **Remover**.
+3.  Selecione o ícone do menu de reticências > **remover**.
+4.  Uma mensagem de confirmação é exibida. Selecione **remover** cancelar o registro do seu dispositivo. 
 
 Quando você cancela o registro de dispositivo do Intune, o seguinte acontece:
 

@@ -4,7 +4,7 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231240"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646481"
 ---
 # <a name="what-is-device-management"></a>O que é o gerenciamento de dispositivo? 
 
-Uma tarefa essencial de qualquer Administrador é proteger os recursos e os dados de uma organização. Essa tarefa é o gerenciamento de dispositivo. Os usuários têm muitos dispositivos nos quais eles abrem e compartilham arquivos pessoais, visitam sites e instalam aplicativos e jogos. Esses mesmos usuários também são funcionários e alunos, e querem usar seus dispositivos para acessar os recursos do trabalho e da escola, como o email e o OneNote. O *Gerenciamento de dispositivo* permite às organizações proteger os recursos e os dados. 
+Uma tarefa essencial de qualquer Administrador é proteger os recursos e os dados de uma organização. Essa tarefa é o *gerenciamento de dispositivo*. Os usuários têm muitos dispositivos nos quais eles abrem e compartilham arquivos pessoais, visitam sites e instalam aplicativos e jogos. Esses mesmos usuários também são funcionários e alunos, e querem usar seus dispositivos para acessar os recursos do trabalho e da escola, como o email e o OneNote. O Gerenciamento de dispositivo permite às organizações proteger os recursos e os dados. 
 
 Usando um provedor de gerenciamento de dispositivo, as organizações podem garantir que somente indivíduos e dispositivos autorizados tenham acesso às informações proprietárias. Da mesma forma, os usuários de dispositivos podem se sentir à vontade para acessar dados de trabalho de seu próprio smartphone, pois sabem que seus dispositivos atendem aos requisitos de segurança da organização. Como uma organização, você pode perguntar – **O que podemos usar para proteger nossos recursos?**
 

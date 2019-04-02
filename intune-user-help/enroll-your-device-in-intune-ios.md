@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,83 +14,110 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: esmich
+ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7db319586b9375b8c88f177197e2fdf15378ab4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ee0f438d929abd6b5b90acbaeeddc41e3ce11f98
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847294"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490635"
 ---
-# <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos de sua empresa
+# <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos de sua empresa  
 
 Registre seu dispositivo iOS no aplicativo Portal da Empresa do Intune para obter acesso seguro ao email, aos arquivos e aos aplicativos da organização.
 
-Antes de ter a permissão para acessar dados proprietários em um dispositivo corporativo ou pessoal, é necessário gerenciar seu dispositivo. Depois que seu dispositivo se tornar gerenciado, sua organização atribuirá políticas e aplicativos ao dispositivo por meio do provedor de MDM (gerenciamento de dispositivo móvel). 
+Antes de acessar os dados proprietários em um dispositivo corporativo ou pessoal, é necessário gerenciar seu dispositivo. Depois que seu dispositivo se tornar gerenciado, sua organização atribuirá políticas e aplicativos ao dispositivo por meio de um provedor de MDM (gerenciamento de dispositivo móvel), como o Intune. 
 
-Para manter o acesso a informações corporativas ou de estudante em seu dispositivo, é necessário configurá-lo para corresponder às configurações preferenciais da sua organização. Este artigo descreve como o Portal da Empresa ajuda você a registrar, configurar e manter seu dispositivo para atender a esses requisitos.
+Para manter o acesso a informações corporativas ou de estudante em seu dispositivo, é necessário configurá-lo para corresponder às configurações preferenciais da sua organização. Este artigo descreve como usar o Portal da empresa para registrar você dispositivo e manter os requisitos de configuração de sua organização. 
 
 > [!NOTE]
-> Se você tentou acessar o email da empresa no aplicativo de email e recebeu um prompt para gerenciar seu dispositivo, você está no lugar certo. Siga as instruções abaixo para obter acesso ao seu email e a outros recursos da empresa em seu dispositivo iOS.
+> Se você tentou acessar o email da empresa no aplicativo de email e recebeu um prompt para gerenciar seu dispositivo, você está no lugar certo. Siga as instruções abaixo para obter acesso ao seu email e a outros recursos da empresa em seu dispositivo iOS.  
 
-## <a name="what-to-expect-from-the-company-portal-app"></a>O que esperar do aplicativo Portal da Empresa
+## <a name="what-to-expect-from-the-company-portal-app"></a>O que esperar do aplicativo Portal da Empresa  
 
-### <a name="security"></a>Segurança 
-Durante a instalação inicial, o aplicativo requer que você se autentique na organização. Em seguida, ele informa sobre as configurações do dispositivo que você deve atualizar. Por exemplo, as organizações geralmente definem os requisitos de mínimo e máximo de caracteres de senha que você deverá atender.    
+### <a name="security"></a>Segurança   
+Durante a instalação inicial, o aplicativo requer que você se autentique na organização. Em seguida, ele informa sobre as configurações do dispositivo que você deve atualizar. Por exemplo, as organizações geralmente definem os requisitos de mínimo e máximo de caracteres de senha que você deverá atender.     
 
-### <a name="protection"></a>Proteção
-Depois que o dispositivo for registrado, o aplicativo Portal da Empresa continuará a verificar se o dispositivo está protegido. Se você instalar um aplicativo de uma fonte não confiável, por exemplo, o aplicativo o alertará e, às vezes, revogará o acesso aos dados da empresa. As políticas de proteção do aplicativo como esta são comuns em organizações. Elas geralmente exigem que você desinstale o aplicativo não confiável antes de poder recuperar o acesso.
+### <a name="protection"></a>Proteção  
+Depois que o dispositivo for registrado, o aplicativo Portal da Empresa continuará a verificar se o dispositivo está protegido. Se você instalar um aplicativo de uma fonte não confiável, por exemplo, o aplicativo o alertará e, às vezes, revogará o acesso aos dados da empresa. Uma política assim é comum em organizações e geralmente exige que você desinstale o aplicativo não confiável antes de recuperar o acesso.  
 
-### <a name="setting-notifications"></a>Definindo notificações
+### <a name="setting-notifications"></a>Definindo notificações  
 Se, após o registro, sua organização impuser um novo requisito de segurança, como a autenticação multifator, o aplicativo Portal da Empresa emitirá uma notificação. Você terá a oportunidade de ajustar as configurações para que possa continuar a trabalhar usando seu dispositivo.  
 
-Para saber mais sobre o registro, confira [O que acontece quando eu instalo o aplicativo Portal da Empresa e registro meu dispositivo?](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios). 
+Para saber mais sobre o registro, confira [O que acontece quando eu instalo o aplicativo Portal da Empresa e registro meu dispositivo?](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios).  
 
-## <a name="before-you-start"></a>Antes de começar
+## <a name="enroll-your-ios-device"></a>Registrar seu dispositivo iOS   
 
-- Após começar o registro, conclua todo o processo. Se você pausar por mais do que alguns minutos, a instalação poderá ser encerrada e exigir que você comece novamente.  
-- Se esse processo falhar, retorne ao aplicativo Portal da Empresa e tente novamente.  
-- Verifique se o Wi-Fi está funcionando e se o Safari funciona no dispositivo.
-- Baixe e instale o [aplicativo do Portal da Empresa do Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).  
+> [!IMPORTANT]
+> As capturas de tela desta seção mostram a experiência para dispositivos que executam o iOS versão 12.1 e versões anteriores. Quando aplicável, incluímos instruções específicas para o iOS versão 12.2 e posteriores. Se você perceber que sua experiência é diferente de capturas de tela mostradas, consulte as 12.2 instruções.      
+
+Vá para a App store para baixar e instalar o [aplicativo de Portal da empresa Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md) ao seu dispositivo. Durante o registro, você também precisará uma conexão Wi-Fi e acesso para o Safari. 
+
+Se você pausar por mais de alguns minutos, durante o registro, o aplicativo pode fechar ou finalizar a instalação. Se isso acontecer, abra o aplicativo de Portal da empresa e tente novamente.  
+
+1. Abra o Portal da Empresa e entre com sua conta corporativa ou de estudante. 
+
+    ![Captura de tela de exemplo de aplicativo de Portal da empresa, de entrada.](./media/ios-01-cp-enroll-1903.PNG)  
+
+2. Quando solicitado para receber notificações do Portal da empresa, toque em **permitir.** Portal da empresa usa notificações para alertá-lo se, por exemplo, as configurações do dispositivo precisarão ser atualizadas. 
+
+    ![Captura de tela de exemplo da home page do Portal da empresa, o prompt de "Notificações".](./media/ios-04-cp-enroll-1903.PNG)  
+
+3. Sobre o **configurar o acesso** tela, selecione **começar.**  
+
+     ![Captura de tela de exemplo do Portal da empresa, a tela "Set up acesso".](./media/ios-05-cp-enroll-1903.PNG)  
+
+4. Leia a lista de informações de dispositivo, sua organização pode ver ou não. [Detalhes adicionais sobre este tópico](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md) podem ser encontrados por meio de **Saiba mais** link. Quando tiver terminado, toque **continuar**.  
+
+    ![Captura de tela de exemplo de aplicativo de Portal da empresa, "O que vemos minha organização", com o botão continuar.](./media/ios-06-cp-enroll-1903.PNG)  
+ 
+5. O **próximas etapas?** tela resume as etapas restantes. Essas etapas podem ser diferentes dependendo da sua versão do iOS. 
+    * **iOS 12.2 e posterior**: sua experiência em vez disso, pode exigir que você:  
+
+        a. **Permitir o download do perfil de gerenciamento**: seu navegador abrirá o site de Portal da empresa e solicitará que você permita o download. O download será salvo no seu aplicativo de configurações.  
+
+        b. **Abra o aplicativo de configurações e instalar o perfil**: você precisará ir para o aplicativo de configurações e instalar o perfil de gerenciamento.  
+
+        c. **Retorne ao aplicativo Portal da empresa**: você precisará retornar para o aplicativo de Portal da empresa para concluir a instalação.  
+
+    Quando estiver pronto para baixar o perfil de gerenciamento, toque **continuar**.  
+
+6. Safari abre o site de Portal da empresa. Quando solicitado a baixar o perfil de configuração, toque **permitir**.  
+    * **iOS 12.2 e posterior**: Aguarde até que o perfil para concluir o download no Safari e toque em **feito**. Em seguida, abra o aplicativo **Configurações** em seu dispositivo.  
+
+    > [!IMPORTANT]
+    > Você deve ir para o **configurações** aplicativo e instalar este perfil dentro de 8 minutos de baixá-lo. Se você não fizer isso, o perfil será removido e você terá que reiniciar o registro. 
+
+7. No **as configurações** aplicativo, toque em **instalar o perfil baixado** > **instalar**. Se **instalar o perfil baixado** não aparecem como uma opção, vá para **gerais** > **perfis**. Se você não vir o perfil, você talvez precise baixá-lo novamente.  
+
+    ![Captura de tela de exemplo do aplicativo configurações, a configuração de instalar o perfil baixado, com um selo vermelho que indica um perfil baixado recentemente.](./media/ios-10-cp-enroll-1903.PNG)  
+    
+8. Se solicitado, insira sua senha do dispositivo. Em seguida, toque **instalar**.      
+
+9. A tela seguinte é um aviso de sistema padrão para o gerenciamento de dispositivo. Para saber mais sobre o que sua organização pode e não pode ver no seu dispositivo, consulte o relevantes [artigo do Intune docs](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). Para continuar a instalação, toque em **instalar**. Se for solicitado que você confie no gerenciamento remoto, toque em **confiança**.  
+
+    ![Captura de tela de exemplo de aplicativo de configurações, a tela de aviso de sistema padrão para o certificado raiz e o gerenciamento de dispositivo móvel.](./media/ios-15-cp-enroll-1903.PNG)  
+
+10. Após a instalação for concluída, toque em **feito**. Para verificar que o perfil foi instalado, vá para o **perfis e gerenciamento de dispositivo** configurações. Você deve ver o perfil listado em **gerenciamento de dispositivo móvel**.   
+
+    ![Captura de tela de exemplo de configurações de aplicativo, perfis e gerenciamento de dispositivo configurações, mostrando o perfil de gerenciamento.](./media/ios-00-cp-enroll-1903.PNG)  
 
 
-## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Usar o aplicativo Portal da Empresa para configurar o acesso aos recursos da empresa
+11. Retorne ao aplicativo **Portal da Empresa**. Portal da empresa começam a sincronizar e configurar seu dispositivo. Portal da empresa pode solicitar que você atualize as configurações de dispositivos adicionais. Se ele, toque em **continuar**.
 
-|O que você vê|Explicação|
-|---|---|
-|![Tela de entrada do Portal da Empresa, com o botão "Entrar" na parte inferior.](./media/ios-01-cp-enroll-1802.PNG)|Abra o aplicativo Portal da Empresa e toque em **Entrar**.|
-|![Prompt de entrada do Azure AD.](./media/ios-02-cp-enroll-1802.PNG)|Insira seu endereço de email corporativo e toque em **Avançar**.|
-|![Solicitação de senha do Azure AD.](./media/ios-03-cp-enroll-1802.PNG)|Insira sua senha e toque em **Entrar**.|
-|![Tela inicial do carregamento de recursos da empresa.](./media/ios-04-cp-enroll-1802.PNG)|Espere até que essa tela seja carregada.|
-|![Página de Termos e Condições.](./media/ios-05-cp-enroll-1802.PNG)|Leia e **Aceite tudo** dos Termos e Condições.|
-|![Tela Configurar acesso da empresa. Tanto o gerenciamento quanto as configurações necessitam de resolução no momento.](./media/ios-06-cp-enroll-1802.PNG)|Toque em **Iniciar** para iniciar o processo que permitirá ao seu dispositivo acessar os recursos da empresa. Se você não puder fazer isso agora, poderá **Adiar** o processo, mas você não poderá obter emails, documentos e muito mais.|
-|![Tela O que minha empresa pode ver.](./media/ios-07-cp-enroll-1802.PNG)|**Saiba mais** sobre o que sua empresa pode ver tocando no link na parte inferior. Se não quiser, toque em **Continuar**.|
-|![Tela O que vem a seguir.](./media/ios-08-cp-enroll-1802.PNG)|Esta tela explica o que está acontecendo na configuração. Você dedicará um tempo ao Safari, ao aplicativo Configurações e ao aplicativo Portal da Empresa. Toque em **Continuar**.|
-|![Carregando a tela após tocar em Próximo em O que vem a seguir.](./media/ios-09-cp-enroll-1802.PNG)|Espere até que essa tela seja carregada.|
-|![Alternou para o Safari para a inscrição.](./media/ios-cp-sent-to-safari-1808.png)|Você é enviado ao Safari para obter informações de gerenciamento para o seu dispositivo.|
-|![Solicitação do sistema para abertura do aplicativo Ajustes.](./media/ios-8-cp-enroll-1711.PNG)|Toque em **Permitir** para abrir o aplicativo Ajustes e baixar o arquivo de configuração. Instale isso para permitir que sua empresa gerencie informações corporativas em seu dispositivo.|
-|![Captura da tela Instalar perfil nas configurações do dispositivo.](./media/ios-9-cp-enroll-1711.PNG)|Toque em **Instalar**.|
-|![Instalando a caixa de diálogo modal do perfil na parte inferior da tela.](./media/ios-10-cp-enroll-1711.PNG)|Toque em **Instalar**.|
-|![Tela de carregamento O perfil está sendo instalado.](./media/ios-11-cp-enroll-1711.PNG)|Espere até que essa tela seja carregada.|
-|![Tela de aviso de gerenciamento de perfil.](./media/ios-12-cp-enroll-1711.PNG)|Este aviso, escrito pela Apple, fala mais sobre os tipos de ações que podem ser realizadas em um dispositivo sob gerenciamento. Saiba mais sobre [quais informações sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
-|![Solicitação do sistema sobre a confiança no gerenciamento remoto.](./media/ios-13-cp-enroll-1711.PNG)|Toque em **Confiar** para permitir que sua empresa gerencie informações corporativas e configurações em seu dispositivo.|
-|![Tela de carregamento Concluindo a instalação do perfil.](./media/ios-14-cp-enroll-1711.PNG)|Espere até que essa tela seja carregada.|
-|![Tela Perfil instalado.](./media/ios-15-cp-enroll-1711.PNG)|Seu perfil está instalado, e as informações corporativas e configurações do seu dispositivo estão muito próximas de serem gerenciadas.|
-|![Alternou para o Safari para a inscrição.](./media/ios-16-cp-enroll-1711.PNG)|Você é enviado de volta ao Safari para terminar de receber informações de gerenciamento para o seu dispositivo. |
-|![Solicitação do sistema para abrir o portal da empresa.](./media/ios-17-cp-enroll-1711.PNG)|Toque em **Abrir**.|
-|![Tela Carregando recursos da empresa.](./media/ios-21-cp-enroll-1802.PNG)|Espere até que essa tela seja carregada.|
-|![Selecione a categoria de dispositivo no aplicativo portal da empresa.](./media/ios-22-cp-enroll-1802.PNG)|Escolha a melhor categoria para seu dispositivo. Geralmente, isso tem a ver com quem é proprietário do dispositivo, ou sua localização frequente.|
-|![Categoria selecionada.](./media/ios-23-cp-enroll-1802.PNG)||
-|![Gerenciamento de dispositivo bem-sucedido; agora é necessário atualizar as configurações.](./media/ios-24-cp-enroll-1802.PNG)|Seu dispositivo está sendo gerenciado. Provavelmente, ainda há configurações que sua empresa precisa atualizar, como o tamanho da senha. Clique em **Continuar** para prosseguir.|
-|![Confirmação das configurações do dispositivo.](./media/ios-25-cp-enroll-1802.PNG)|O Portal da Empresa verificará se as configurações precisam ser atualizadas.|
-|![Verificação das configurações concluída, com uma versão incorreta do sistema operacional](./media/ios-26-cp-enroll-1802.PNG)|O Portal da Empresa fornecerá instruções sobre como você pode corrigir quaisquer problemas com as configurações. Ao terminar de corrigir os problemas, toque em **Verificar Configurações**.|
-|![Tela de carregamento Confirmação das configurações do dispositivo](./media/ios-27-cp-enroll-1802.PNG)|O dispositivo verificará se as configurações estão seguras o suficiente para acessar os recursos da empresa.|
-|![Inscrição bem-sucedida e configurações atualizadas](./media/ios-28-cp-enroll-1802.PNG)|Parabéns! Agora, seu dispositivo está registrado no Intune.|
+    ![Captura de tela de exemplo do Portal da empresa, tela de "Set up acesso", com um triângulo amarelo ao lado do requisito de configuração.](./media/ios-12-cp-enroll-1903.PNG)  
+
+12. Você saberá que a instalação é concluída quando todos os itens na lista de mostram um círculo verde. Toque em **Concluído**.  
+    
+    ![Captura de tela de exemplo do Portal da empresa, "você está pronto!" tela, mostrando todos os círculos verdes.](./media/ios-13-cp-enroll-1903.PNG)  
 
 > [!Note]
-> Talvez ainda haja mais algumas etapas para concluir antes que o dispositivo esteja totalmente gerenciado. Saiba mais sobre como [registrar seu dispositivo usando o gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se sua organização estiver usando o Programa de registro de dispositivos da Apple, descubra mais [aqui](enroll-your-device-dep-ios.md).
+> Se sua organização monitora os limites de voz e dados, ou fornece um dispositivo da empresa, você pode ter mais algumas etapas para concluir. Se você for solicitado a instalar o **Datalert** aplicativo, consulte [registrar seu dispositivo no gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se sua organização faz parte do programa de registro de dispositivo da Apple, descubra [como registrar seu dispositivo da empresa](enroll-your-device-dep-ios.md).  
+
+## <a name="next-steps"></a>Próximas etapas  
+Encontre aplicativos que lhe ajudarão no trabalho ou escola. Saiba mais [como aplicativos são disponibilizados](use-managed-apps-on-your-device-ios.md) para você por meio do Portal da empresa.  
 
 Ainda precisa de ajuda? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
