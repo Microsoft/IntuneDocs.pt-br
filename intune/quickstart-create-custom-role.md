@@ -6,19 +6,19 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 03/26/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
+ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400272"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477121"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: Criar e atribuir uma função personalizada
 
@@ -32,7 +32,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune.
+Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="create-a-custom-role"></a>Criar uma função personalizada
 
