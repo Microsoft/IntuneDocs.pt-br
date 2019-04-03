@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756795"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658542"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Usar marcas de escopo e o RBAC para distribuído IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar o controle de acesso baseado em função (RBAC) e marcas de escopo para distribuído IT
 
-Você pode usar o controle de acesso baseado em função (RBAC) e marcas de escopo para certificar-se de que os administradores direita tem o acesso correto e a visibilidade aos objetos do Intune à direita. As funções determinam qual acesso de administradores têm a quais objetos. Marcas de escopo determinam quais objetos os administradores podem ver.
+Você pode usar marcas de controle e o escopo de acesso baseado em função para certificar-se de que os administradores direita tem o acesso correto e a visibilidade aos objetos do Intune à direita. As funções determinam qual acesso de administradores têm a quais objetos. Marcas de escopo determinam quais objetos os administradores podem ver.
 
 Por exemplo, digamos que um administrador de escritório regional de Seattle é atribuído à função de gerente de política e perfil. Você deseja que esse administrador para ver e gerenciar apenas os perfis e políticas que se aplicam somente a dispositivos de Seattle. Para fazer isso, você pode:
 
@@ -83,6 +83,21 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 3. Sob **selecionar marcas**, escolha as marcas que você deseja adicionar ao perfil.
 4. Escolher **selecionar** > **Okey** > **salvar**.
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Para atribuir uma marca de escopo a uma política de configuração de aplicativo
+Para dispositivos com **tipo de registro de dispositivo** definido como **dispositivos gerenciados**:
+1. Escolher **aplicativos de cliente** > **políticas de configuração de aplicativo** > escolha uma política de configuração do aplicativo.
+2. Escolher **propriedades** > **escopo (marcas)** > escolha as marcas que você deseja atribuir à política.
+
+Para dispositivos com **tipo de registro de dispositivo** definido como **aplicativos gerenciados**:
+1. Escolher **aplicativos de cliente** > **políticas de configuração de aplicativo** > escolha uma política de configuração do aplicativo.
+2. Escolher **escopo (marcas)** > escolha as marcas que você deseja atribuir à política.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Para atribuir uma marca de escopo a um perfil de provisionamento de aplicativo do iOS
+1. No Intune, escolha **aplicativos de cliente** > **perfis de provisionamento de aplicativo iOS** > escolha um perfil.
+2. Escolher **propriedades** > **escopo (marcas)** > escolha as marcas que você deseja atribuir o perfil.
+3. Escolher **selecionar** > **Okey** > **salvar**.
+
 ## <a name="scope-tag-details"></a>Detalhes da marca de escopo
 Ao trabalhar com marcas de escopo, lembre-se esses detalhes:
 
@@ -96,20 +111,13 @@ Ao trabalhar com marcas de escopo, lembre-se esses detalhes:
     - Políticas de configuração de aplicativo – os dispositivos gerenciados
     - Scripts do PowerShell
     - Tokens de DEP
+    - Perfil de provisionamento de aplicativo iOS
 - Quando um administrador cria um objeto no Intune, todas as marcas de escopo atribuídas para esse administrador serão atribuídas automaticamente ao novo objeto.
 - RBAC do Intune não se aplica a funções do Active Directory do Azure. Dessa forma, as funções de administradores de serviço do Intune e os administradores globais têm acesso de administrador completo para o Intune não importa quais marcas de escopo que eles têm.
 - Os administradores em uma atribuição de função com marcas de escopo também podem ver os objetos do Intune sem marcas de escopo.
 - Você só pode atribuir uma marca de escopo que você tem em suas atribuições de função.
 - Você pode apenas os grupos de destino que estão listados no escopo (grupos) de sua atribuição de função.
 - Se você tiver uma marca de escopo atribuída à sua função, você não pode excluir todas as marcas de escopo em um objeto do Intune. Marca de pelo menos um escopo é necessária.
-- Se um usuário tiver várias atribuições de função, as permissões nessas atribuições de função estendem a objetos diferentes da seguinte maneira:
-    - Atribuir permissões se aplicam somente aos objetos (como políticas ou aplicativos) na atribuição da função escopo (grupos). Atribuir permissões não se aplicam a objetos em outras atribuições de função, a menos que a atribuição de outra conceda especificamente.
-    - Outras permissões (como criar e de leitura), se aplicam a todos os objetos do mesmo tipo (como todas as políticas ou todos os aplicativos) em qualquer uma das atribuições do usuário.
-    - Permissões para objetos de tipos diferentes (como políticas ou aplicativos), não se aplicam ao outro. Uma permissão de leitura para uma política, por exemplo, não fornece uma permissão de leitura para aplicativos em atribuições do usuário.
-
-
-
-
 
 ## <a name="next-steps"></a>Próximas etapas
 

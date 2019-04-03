@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566804"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306835"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivo para dispositivos Windows no Intune
 
@@ -125,7 +125,10 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
 
 - **Exigir integridade de código:** a integridade de código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória. A integridade de código detecta quando um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Ele também detecta se um arquivo de sistema foi modificado por um software mal-intencionado executado por uma conta de usuário com privilégios de administrador.
 
-Confira [CSP do atestado de integridade](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) para obter detalhes de como funciona o serviço HAS.
+Recursos adicionais:
+
+- O [CSP do Atestado de Integridade](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) tem detalhes de como funciona o serviço HAS.
+- [Dica de suporte: Usando configurações de atestado de integridade do dispositivo como parte de sua política de conformidade do Intune ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 

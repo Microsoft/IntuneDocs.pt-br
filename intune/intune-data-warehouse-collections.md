@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400476"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358310"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
 
@@ -85,7 +85,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 | DateKey       | A chave de data quando o resumo foi criado para a política de conformidade.                                                                                                                   | 20161204 |
 | Unknown       | O número de dispositivos que estão offline ou falharam ao se comunicar com o Intune ou com o Azure AD por outras razões.                                                                           | 5        |
 | NotApplicable | O número de dispositivos em que as políticas de conformidade do dispositivo direcionadas pelo administrador não são aplicáveis.                                                                                     | 201      |
-| Compatível     | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 4083     |
+| Compliant     | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 4083     |
 | InGracePeriod | O número de dispositivos que não estão em conformidade, mas estão em um período de carência definido pelo administrador.                                                                                  | 57       |
 | NonCompliant  | O número de dispositivos que falharam ao aplicar uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador ou em que o usuário não está em conformidade com as políticas direcionadas pelo administrador. | 43       |
 |    Erro do      |    O número de dispositivos que falharam ao se comunicar com o Intune ou com o Azure AD e retornaram uma mensagem de erro.                                                                          |    3     |
@@ -118,7 +118,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    Desconhecida.                                                                        |
 |    Compatível       |    Compatível.                                                                      |
-|    Fora de Conformidade    |       O dispositivo não está em conformidade e é bloqueado de recursos corporativos.             |
+|    Não compatível    |       O dispositivo não está em conformidade e é bloqueado de recursos corporativos.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
 |    Erro do           |       Erro.                                                                       |
 |    ConfigManager   |    Gerenciado pelo Config Manager.                                                      |
@@ -281,7 +281,7 @@ A entidade **deviceType** representa o tipo de dispositivo referenciado por outr
 | 12           | ISocConsumer      | Dispositivo iSoc Consumer                                |
 | 13           | Unix              | Dispositivo Unix                                         |
 | 14           | MacMDM            | Dispositivo Mac OS X gerenciado com o agente MDM interno |
-| 15           | HoloLens          | Dispositivo Holo Lens                                    |
+| 15           | HoloLens          | Dispositivos do HoloLens                                       |
 | 16           | SurfaceHub        | Dispositivo Surface Hub                                  |
 | 17           | AndroidForWork    | Gerenciado pelo dispositivo Android usando o proprietário do perfil do Android  |
 | 18           | AndroidEnterprise | Dispositivo Android Enterprise.                          |
@@ -311,7 +311,7 @@ A entidade **deviceEnrollmentType** indica como um dispositivo foi inscrito. O t
 | 6                | WindowsBulkUserless                | Registro em massa do Windows 10 por meio do ICD com certificado.                               |
 | 7                | WindowsAutoEnrollment              | Registro automático do Windows 10.   (Adicionar conta de trabalho)                                    |
 | 8                | WindowsBulkAzureDomainJoin         | Ingresso em massa no Azure AD do Windows 10.                                                           |
-| 9                | WindowsCoManagement                | Cogerenciamento do Windows 10 disparado por Autopilot ou por Política de Grupo.                       |
+| 9                | WindowsCoManagement                | Cogerenciamento do Windows 10 disparado por AutoPilot ou por Política de Grupo.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Ingresso no Azure AD do Windows 10 usando Device Auth.                                            |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
@@ -448,7 +448,7 @@ A entidade **managementAgentType** representa os agentes usados para gerenciar u
 | 5                     | EasIntuneClient                   | O dispositivo é gerenciado pelo Exchange ActiveSync e pelo PC Intune |
 | 8                     | ConfigManagerClient               | O dispositivo é gerenciado pelo agente do System Center Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | O dispositivo é gerenciado pelo Configuration Manager e MDM.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerenciado pelo Configuration Manager, MDM e Eas.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerenciado pelo Configuration Manager, o MDM e o Exchange Active Sync.               |
 | 16                    | Unknown                           | O tipo de agente de gerenciamento desconhecido                                              |
 | 32                    | Jamf                              | Os atributos do dispositivo serão buscados no Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  O dispositivo é gerenciado pelo CloudDPC do Google.                                 |
@@ -512,7 +512,7 @@ A entidade **ownerType** indica se um dispositivo é corporativo, pessoal ou des
 > [!Note]  
 > Para o `ownerTypeName` filtro no Azure AD durante a criação de grupos dinâmicos para dispositivos, você precisará definir o valor `deviceOwnership` como `Company`. Para obter mais informações, consulte [regras para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
-## <a name="policies"></a>diretivas
+## <a name="policies"></a>políticas
 A entidade **Política** lista perfis de configuração do dispositivo, perfis de configuração do aplicativo e as políticas de conformidade. Você pode atribuir as políticas com o Gerenciamento de dispositivo móvel (MDM) a um grupo em sua empresa.
 
 |          Propriedade          |                                                                       Descrição                                                                      |                Exemplo               |
@@ -617,7 +617,7 @@ A coleção de entidades **usuário** contém dados do usuário. Esses registros
 | UserKey                    | Identificador exclusivo do usuário no data warehouse – chave alternativa.                                                                                                                                                         | 123                                  |
 | UserId                     | O identificador exclusivo do usuário – semelhante à UserKey, mas é uma chave natural.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Endereço de email do usuário.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | Nome UPN do usuário.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | Nome UPN do usuário.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nome de exibição do usuário.                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Especifica se este usuário é Intune licenciado ou não.                                                                                                                                                                              | Verdadeiro/Falso                           |
 | IsDeleted                  | Indica se todas as licenças do usuário expiraram e se o usuário foi, portanto, removido do Intune. Para um único registro, esse sinalizador não é alterado. Em vez disso, um novo registro é criado para um novo estado do usuário. | Verdadeiro/Falso                           |

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566702"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490719"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS para permitir ou restringir recursos usando o Intune
 
@@ -43,7 +43,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
     Esse recurso aplica-se a:  
     - iOS 9.3.2 e posterior
 
-- **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou outras capturas no dispositivo. **Não configurado** (padrão) permite que o usuário capture o conteúdo da tela como uma imagem.
+- **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou outras capturas no dispositivo. No iOS 9.0 e posterior, isso também inclui gravações de tela de bloqueio. **Não configurado** (padrão) permite que o usuário capture o conteúdo da tela como uma imagem ou um vídeo.
   - **Observação de tela remota pelo aplicativo Classroom (apenas supervisionado)**: escolha **Bloquear** para impedir que o aplicativo Classroom observe remotamente a tela no dispositivo. **Não configurado** (padrão) permite que o aplicativo Classroom da Apple exiba a tela.
 
     Esse recurso aplica-se a:  
@@ -142,7 +142,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 <sup>1</sup>Se você definir as configurações **Máximo de minutos de inatividade até o bloqueio da tela** e **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**, elas são aplicadas em sequência. Por exemplo, se você definir o valor das duas configurações como **5** minutos, a tela desligará automaticamente após cinco minutos e o dispositivo será bloqueado após outros cinco minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo será bloqueado cinco minutos depois que o usuário desligar a tela.
 
-## <a name="locked-screen-experience"></a>Experiência de tela bloqueada
+## <a name="locked-screen-experience"></a>Experiência de Tela Bloqueada
 
 - **Acesso ao centro de controle enquanto o dispositivo está bloqueado**: escolha **Bloquear** para impedir o acesso ao aplicativo Centro de Controle quando o dispositivo estiver bloqueado. **Não configurado** permite que o usuário acesse o aplicativo Centro de Controle quando o dispositivo estiver bloqueado.
 - **Notificações enquanto o dispositivo está bloqueado**: **Bloquear** impede o acesso às notificações quando o dispositivo estiver bloqueado. **Não configurado** permite que o usuário acesse as notificações sem desbloquear o dispositivo.
@@ -158,7 +158,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo a partir da loja. **Não configurado** permite compras na loja em um aplicativo em execução.
 - **Conteúdo explícito de música, podcast ou notícias do iTunes (apenas no modo supervisionado)**: escolha **Bloquear** para impedir conteúdo explícito em músicas, podcasts ou notícias do iTunes. **Não configurado** permite ao dispositivo acessar o conteúdo classificado como adulto na loja.
 - **Baixar o conteúdo da iBook Store sinalizado como "Erotismo"**: escolha **Bloquear** para impedir que os usuários baixem mídias da iBook Store marcadas como erotismo. **Não configurado** permite que o usuário baixe livros da categoria "Erotismo".
-- **Exibindo documentos corporativos em aplicativos não gerenciados**: **Bloquear** impede a exibição de documentos não corporativos em aplicativos não gerenciados. **Não configurado** permite que documentos corporativos sejam exibidos em qualquer aplicativo. Por exemplo, você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como **Bloquear**. Após o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permite mais salvar.
+- **Exibição de documentos corporativos em aplicativos não gerenciados**: **Bloquear** impede a exibição de documentos corporativos em aplicativos não gerenciados. **Não configurado** permite que documentos corporativos sejam exibidos em qualquer aplicativo. Por exemplo, você deseja impedir que os usuários salvem arquivos do aplicativo OneDrive no Dropbox. Defina essa configuração como **Bloquear**. Após o dispositivo receber a política (por exemplo, após uma reinicialização), ele não permite mais salvar.
   - **Permitir que aplicativos gerenciados gravar contatos em contas de contatos não gerenciado**: quando definido como **permitir**, os usuários podem adicionar ou sincronizar Outlook informações de contato qualquer pessoa, incluindo contatos corporativos e negócios para o aplicativo de contatos nativo no dispositivo. Quando essa opção é definida como **Não configurado**, os usuários não podem adicionar contatos do Outlook ao aplicativo Contatos interno do dispositivo.
   
     Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
@@ -198,7 +198,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Safari**: **bloqueie** o uso do navegador Safari no dispositivo. **Não configurado** permite que os usuários utilizem o navegador Safari.
 - **Preenchimento automático**: **Bloquear** desabilita o recurso de preenchimento automático do Safari no dispositivo. **Não configurado** permite que os usuários alterem as configurações de preenchimento automático no navegador da Web.
 - **Cookies**: escolha como lidar com os cookies no dispositivo. Suas opções:
-  - Allow
+  - Permitir
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
@@ -255,7 +255,7 @@ Para adicionar aplicativos a essas listas, você pode:
   Esse recurso aplica-se a:  
   - iOS 11.0 e posterior
 
-- **Hotspot Pessoal**: **Bloquear** impede que o dispositivo seja usado como um ponto de acesso pessoal. Essa configuração pode não ser compatíveis com algumas operadoras. **Não configurado** (padrão) permite que esse recurso.
+- **Ponto de acesso pessoal**: **bloco** desativa o ponto de acesso pessoal no dispositivo dos usuários com a sincronização de cada dispositivo. Essa configuração pode não ser compatíveis com algumas operadoras. **Não configurado** (padrão) mantém a configuração de ponto de acesso pessoal, como o padrão definido pelo usuário.
 - **Entrar nas redes Wi-Fi utilizando somente perfis de configuração (somente supervisionado)**: **Exigir** força o dispositivo a usar apenas as configurações de redes Wi-Fi por meio de perfis de configuração do Intune. **Não configurado** (padrão) permite que o dispositivo use outras redes Wi-Fi.
 - **Regras de uso da rede celular (somente aplicativos gerenciados)**: define os tipos de dados que os aplicativos gerenciados podem usar em redes celulares. Suas opções:
   - **Bloquear uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **Todos os aplicativos gerenciados** ou **Escolha aplicativos específicos**.

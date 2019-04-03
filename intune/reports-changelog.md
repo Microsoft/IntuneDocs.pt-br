@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565631"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358251"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Log de alterações para a API do Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manter-se atualizado sobre as atualizações para o Intune Data Warehouse.
+
+## <a name="1903"></a>1903
+_Lançado em março de 2019_
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>Alterações de v 1.0 refletir o beta
+Quando a versão 1.0 foi introduzido pela primeira vez no 1808, eram diferentes de algumas maneiras significativas da versão beta API. 1903 essas alterações serão refletidas volta para a versão beta da API. Se você tiver relatórios importantes que usam a versão beta da API, é altamente recomendável alternar esses relatórios para v 1.0 para evitar alterações significativas. Consulte a [informações de versão de API](reports-api-url.md) para obter mais informações sobre as versões de API do Data Warehouse e para trás compatibilidade. 
 
 ## <a name="1902"></a>1902 
 _Lançado em fevereiro de 2019_
@@ -44,7 +50,7 @@ Acessar seu Data Warehouse do Intune no Power BI Online usando o [conformidade d
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Adicionar filtros adicionais para o aplicativo de conformidade do Intune
 1. Abra o [conformidade do Intune (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicativo em seus navegadores da web.
 2. Clique em **dispositivos não compatível** e selecione **incompatível** no **complianceStatus** filtro. 
-3. Clique em **dispositivos desconhecido** e selecione **ainda não está disponível** no **complianceStatus** filtro. 
+3. Clique em **dispositivos desconhecidos** e selecione **ainda não está disponível** no **complianceStatus** filtro. 
 
 ## <a name="1812"></a>1812 
 _Lançado em dezembro de 2018_
@@ -93,7 +99,7 @@ Você pode usar <code>$select</code> como um parâmetro de consulta do OData. A 
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Novas entidades no modelo de dados do Data Warehouse <!-- 2077804 -->
 
- - A entidade [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus), foi adicionada. O **MobileAppDeviceUserInstallStatus** representa um status de instalação de aplicativo móvel para um determinado dispositivo e usuário.
+ - A entidade [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md), foi adicionada. O **MobileAppDeviceUserInstallStatus** representa um status de instalação de aplicativo móvel para um determinado dispositivo e usuário.
  - A entidade [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate), foi adicionada. A entidade **MobileAppInstallState** representa o estado de instalação de um aplicativo móvel após sua atribuição a um grupo que contém dispositivos, usuários ou ambos. 
 
 ## <a name="1710"></a>1710

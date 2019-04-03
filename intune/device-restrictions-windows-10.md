@@ -1,11 +1,11 @@
 ---
 title: Configurações de restrições de dispositivo para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Veja uma lista de todas as configurações e suas descrições para a criação de restrições de dispositivo no Windows 10 e em versões posteriores. Use essas configurações em um perfil de configuração para controlar capturas de tela, requisitos de senha, configurações de quiosque, aplicativos na loja, navegador Microsoft Edge, Windows Defender, acesso à nuvem, menu Iniciar e muito mais no Microsoft Intune.
+description: Veja uma lista de todas as configurações e suas descrições para a criação de restrições de dispositivo no Windows 10 e em versões posteriores. Use essas definições em um perfil de configuração para controlar capturas de tela, requisitos de senha, configurações de quiosque, aplicativos na loja, o navegador Microsoft Edge, o Windows Defender, o acesso à nuvem, o menu Iniciar e muito mais no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566736"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394993"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -29,7 +29,7 @@ Este artigo lista e descreve todas as diferentes configurações que você pode 
 Essas configurações são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implantadas em dispositivos Windows 10.
 
 > [!Note]
-> Nem todas as opções estão disponíveis em todas as edições do Windows
+> Nem todas as opções estão disponíveis em todas as edições do Windows. Para ver as edições com suporte, consulte o [diretiva CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (abre outro site da web).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -64,8 +64,8 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Wi-Fi**: permite que o usuário habilite e configure o Wi-Fi no dispositivo (somente Windows 10 Mobile).
 - **Conectar-se automaticamente a pontos de acesso Wi-Fi**: permite que o dispositivo se conecte automaticamente a pontos de acesso Wi-Fi gratuitos e aceite os possíveis termos e condições da conexão automaticamente.
 - **Configuração manual do Wi-Fi**: controla se o usuário pode configurar suas próprias conexões Wi-Fi ou se pode usar somente as conexões configuradas por um perfil Wi-Fi (somente Windows 10 Mobile).
-- **Intervalo de verificação de Wi-Fi**: especifique com que frequência os dispositivos devem procurar por redes Wi-Fi. Especifique um valor de 1 (mais frequentes) a 500 (menos frequente).
-- **Serviços Bluetooth permitidos**: especifique uma lista de serviços e perfis de Bluetooth permitidos usando cadeias de caracteres hexadecimais.
+- **Intervalo de verificação de Wi-Fi**: insira a frequência com que os dispositivos devem procurar por redes Wi-Fi. Insira um valor de 1 (mais frequente) a 500 (menos frequente).
+- **Serviços Bluetooth permitidos**: insira uma lista de serviços e perfis de Bluetooth permitidos usando cadeias de caracteres hexadecimais.
 
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 
@@ -116,7 +116,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Captura de tela (somente dispositivo móvel)**: permite que o usuário capture a tela do dispositivo como uma imagem.
 - **Copiar e colar (somente dispositivo móvel)**: permitir utilizar ações de copiar e colar entre os aplicativos do dispositivo.
 - **Cancelamento de registro manual**: permite que o usuário exclua manualmente a conta de trabalho do dispositivo.
-  - Essa configuração de política não será aplicada se o computador estiver ingressado no Azure AD e o registro automático estiver habilitado. 
+  - Essa configuração de política não será aplicada se o computador estiver ingressado no Microsoft Azure AD e o registro automático estiver habilitado. 
   - Essa configuração de política não se aplica a computadores que executam o Windows 10 Home.
 - **Instalação manual do certificado raiz (somente dispositivo móvel)**: impede que o usuário instale manualmente os certificados raiz e certificados CAP intermediários.
 
@@ -138,15 +138,14 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Diálogo de erro do cartão SIM (somente dispositivos móveis)**: bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
 - **Espaço de Trabalho do Ink**: impedir que usuários acessem o espaço de trabalho do Ink. **Não configurado** habilita o espaço de trabalho do Ink e o usuário tem permissão para usá-lo na tela de bloqueio.
 - **Reimplantação automática**: permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
-- **Exigir que os usuários se conectem à rede durante a instalação de dispositivo (somente para Windows Insider)**: escolha **Exigir** para que o dispositivo se conecte a uma rede após da página Rede e antes de continuar, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um Windows Insider build 1809 ou posterior é necessário para usar essa configuração.
+- **Exigir que os usuários se conectem à rede durante a instalação de dispositivo (somente para Windows Insider)**: escolha **Exigir** para que o dispositivo se conecte a uma rede após da página Rede e antes de continuar, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um build 1809 ou posterior do Windows Insider é necessário para usar essa configuração.
 - **Acesso Direto à Memória**: **Bloquear** impede o DMA (acesso direto à memória) para todas as portas downstream PCI com hot-plug até um usuário entre no Windows. **Habilitado** (padrão) permite o acesso a DMA, mesmo quando um usuário não esteja conectado.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **Encerrar os processos do Gerenciador de tarefas**: essa configuração determina se o não-administradores podem usar o Gerenciador de tarefas para finalizar tarefas. **Bloquear** impede que os usuários padrão (não administradores) usem o Gerenciador de Tarefas para encerrar um processo ou uma tarefa no dispositivo. A opção **Não configurado** (padrão) permite que os usuários padrão encerrem um processo ou uma tarefa usando o Gerenciador de Tarefas.
 
-
-## <a name="locked-screen-experience"></a>Experiência na tela bloqueada
+## <a name="locked-screen-experience"></a>Experiência de Tela Bloqueada
 
 - **Notificações da central de ações (somente dispositivos móveis)**: permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
 - **URL da imagem de tela bloqueada (somente Desktop)**: insira a URL para uma imagem no formato JPEG que deve ser usada como papel de parede na tela bloqueada do Windows. Essa configuração bloqueia a imagem. A imagem não pode ser alterada posteriormente.
@@ -157,7 +156,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="messaging"></a>Sistema de mensagens
 
-- **Sincronização de mensagem (somente móvel)**: desabilite as Mensagens em qualquer lugar e o backup e a restauração de mensagens de texto.
+- **Sincronização de mensagem (somente dispositivo móvel)**: desabilite mensagens em qualquer lugar e faça backup e restauração de mensagens de texto.
 - **MMS (somente móvel)**: desabilite o recurso de envio/recebimento de MMS no dispositivo.
 - **RCS (somente móvel)**: desabilite a funcionalidade de envio/recebimento dos Serviços de Comunicação Avançados no dispositivo.
 
@@ -168,25 +167,25 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 Alterar as configurações disponíveis dependendo do que você escolhe. Suas opções:
 
 - **Não** (padrão): Microsoft Edge não está em execução no modo de quiosque. Todas as configurações do Microsoft Edge estão disponíveis para você altere e configurar.
-- **Sinalização de digitais/interativo (quiosque de aplicativo único)**: configurações de borda de filtros que são aplicáveis para o modo de quiosque de borda de sinalização Digital/interativo para uso apenas em quiosques de aplicativo único do Windows 10. Escolha esta configuração para abrir uma tela inteira da URL e mostrar apenas o conteúdo no site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
-- **Público a navegação inPrivate (quiosque de aplicativo único)**: configurações de borda de filtros que são aplicáveis para o modo InPrivate quiosque de borda de navegação público para uso em quiosques de aplicativo único do Windows 10. Executa uma versão com várias guia do Microsoft Edge.
-- **Modo normal (quiosque de vários aplicativos)**: configurações de borda de filtros que são aplicáveis para o modo de quiosque de borda Normal. Executa uma versão completa do Microsoft Edge com todos os recursos de navegação.
-- **Público (quiosque de vários aplicativos) de navegação**: configurações de borda de filtros que são aplicáveis para navegação pública em um quiosque de vários aplicativos do Windows 10.  Executa uma versão com várias guia do Microsoft Edge InPrivate.
+- **Sinalização de digitais/interativo (quiosque de aplicativo único)**: configurações de borda da Microsoft de filtros que são aplicáveis para o modo de quiosque de borda do Microsoft de sinalização Digital/interativo para uso apenas em quiosques de aplicativo único do Windows 10. Escolha esta configuração para abrir uma tela inteira da URL e mostrar apenas o conteúdo no site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
+- **Público a navegação inPrivate (quiosque de aplicativo único)**: configurações de borda da Microsoft de filtros que são aplicáveis para o modo InPrivate navegação Microsoft Edge quiosque público para uso em quiosques de aplicativo único do Windows 10. Executa uma versão com várias guia do Microsoft Edge.
+- **Modo normal (quiosque de vários aplicativos)**: configurações de filtros Microsoft Edge que são aplicáveis para o modo de quiosque de borda do Microsoft Normal. Executa uma versão completa do Microsoft Edge com todos os recursos de navegação.
+- **Público (quiosque de vários aplicativos) de navegação**: configurações de filtros Microsoft Edge que são aplicáveis para navegação pública em um quiosque de vários aplicativos do Windows 10.  Executa uma versão com várias guia do Microsoft Edge InPrivate.
 
 > [!TIP]
 > Para obter mais informações sobre o que fazem essas opções, consulte [tipos de configuração de modo de quiosque do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Este perfil de restrições de dispositivo está diretamente relacionado ao perfil do kiosk você cria usando o [as configurações de quiosque do Windows](kiosk-settings-windows.md). Para resumir:
 
-1. Criar o [as configurações de quiosque do Windows](kiosk-settings-windows.md) perfil para executar o dispositivo no modo de quiosque. Selecione Microsoft Edge como o aplicativo e defina o modo de quiosque de borda no perfil de quiosque.
-2. Criar o perfil de restrições de dispositivo descrito neste artigo e configurar recursos específicos e as configurações de permissão no Microsoft Edge. Certifique-se de escolher o mesmo tipo de modo de quiosque de borda conforme selecionado no seu perfil de quiosque ([as configurações de quiosque do Windows](kiosk-settings-windows.md)). 
+1. Criar o [as configurações de quiosque do Windows](kiosk-settings-windows.md) perfil para executar o dispositivo no modo de quiosque. Selecione Microsoft Edge como o aplicativo e defina o modo de quiosque do Microsoft Edge no perfil de quiosque.
+2. Criar o perfil de restrições de dispositivo descrito neste artigo e configurar recursos específicos e as configurações de permissão no Microsoft Edge. Certifique-se de escolher o mesmo tipo de modo de quiosque Microsoft Edge conforme selecionado no seu perfil de quiosque ([as configurações de quiosque do Windows](kiosk-settings-windows.md)). 
 
     [Suporte para configurações do modo de quiosque](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) é um excelente recurso.
 
 > [!IMPORTANT] 
 > Certifique-se de atribuir a esse perfil do Microsoft Edge para os mesmos dispositivos como seu perfil de quiosque ([as configurações de quiosque do Windows](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Experiência de inicialização
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Senha**: exige que o usuário final insira uma senha para acessar o dispositivo.
   - **Tipo de senha exigida**: especifica se a senha deve ser apenas numérica ou alfanumérica.
   - **Comprimento mínimo da senha**: aplicável somente a Windows 10 Mobile.
-  - **Número de falhas de entrada antes de apagar o dispositivo**: para dispositivos que executam o Windows 10, se este tiver o BitLocker habilitado, será colocado no modo de recuperação do BitLocker após a entrada falhar o número de vezes especificado. Se o dispositivo não tiver o BitLocker habilitado, essa configuração não se aplica. Para dispositivos que executam o Windows Mobile 10, após a entrada falhar o número de vezes especificado, o dispositivo será apagado.
+  - **Número de falhas de entrada antes de apagar o dispositivo**: para dispositivos que executam o Windows 10, se este tiver o BitLocker habilitado, será colocado no modo de recuperação do BitLocker após a entrada falhar o número de vezes especificado. Se o dispositivo não tiver o BitLocker habilitado, essa configuração não se aplica. Para dispositivos que executam o Windows Mobile 10, após a entrada falhar pelo número de vezes inserido, o dispositivo será apagado.
   - **Máximo de minutos de inatividade até o bloqueio de tela**: especifica o período que um dispositivo deve permanecer ocioso antes de a tela ser bloqueada.
   - **Expiração de senha (dias)**: especifica o período após o qual a senha do dispositivo deve ser alterada.
   - **Impedir a reutilização de senhas anteriores**: especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.
@@ -331,7 +330,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 - **Telefone**: defina se este aplicativo pode acessar o telefone.
 - **Rádios**: alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados, e precisam ativar ou desativar essas rádios. Defina se este aplicativo pode controlar essas rádios.
 - **Tarefas**: defina se este aplicativo pode acessar suas tarefas.
-- **Dispositivos confiáveis**: defina se este aplicativo pode usar dispositivos confiáveis, isto é, hardware que você já conectou ou que acompanha o dispositivo. Por exemplo, usar TVs, projetores e assim por diante como dispositivos confiáveis.
+- **Dispositivos confiáveis**: escolha se este aplicativo pode usar dispositivos confiáveis. Os dispositivos confiáveis são o hardware que você já conectou ou o que acompanha o dispositivo. Por exemplo, usar TVs, projetores e assim por diante como dispositivos confiáveis.
 - **Comentários e diagnóstico**: defina se este aplicativo pode acessar informações de diagnóstico.
 - **Sincronização com dispositivos**: escolha se este aplicativo pode compartilhar e sincronizar automaticamente informações com dispositivos sem fio que não emparelham explicitamente com este dispositivo.
 
@@ -352,7 +351,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 - **Publicar as atividades do usuário**: **bloquear** evita o compartilhamento de experiências e a descoberta de recursos usados recentemente no alternador de tarefas.
 - **Apenas atividades locais**: **bloquear** evita o compartilhamento de experiências e a descoberta de recursos usados recentemente no alternador de tarefas com base somente em atividades locais.
 
-Você pode configurar as informações que todos os aplicativos no dispositivo podem acessar. Você pode definir exceções de acordo com o aplicativo que usa **Exceções de privacidade por aplicativo**.
+Você pode configurar as informações que todos os aplicativos no dispositivo podem acessar. Defina também as exceções de acordo com o aplicativo que usa **Exceções de privacidade por aplicativo**.
 
 ### <a name="exceptions"></a>Exceções
 
@@ -371,7 +370,7 @@ Você pode configurar as informações que todos os aplicativos no dispositivo p
 - **Telefone**: defina se este aplicativo pode acessar o telefone.
 - **Rádios**: alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados, e precisam ativar ou desativar essas rádios. Defina se este aplicativo pode controlar essas rádios.
 - **Tarefas**: defina se este aplicativo pode acessar suas tarefas.
-- **Dispositivos confiáveis**: escolha se este aplicativo pode usar dispositivos confiáveis. Dispositivos confiáveis são o hardware que você já conectou ou que acompanha o dispositivo. Por exemplo, usar TVs, projetores etc. como dispositivos confiáveis.
+- **Dispositivos confiáveis**: escolha se este aplicativo pode usar dispositivos confiáveis. Os dispositivos confiáveis são o hardware que você já conectou ou o que acompanha o dispositivo. Por exemplo, usar TVs, projetores e assim por diante como dispositivos confiáveis.
 - **Comentários e diagnóstico**: defina se este aplicativo pode acessar informações de diagnóstico.
 - **Sincronização com dispositivos** – defina se este aplicativo pode compartilhar e sincronizar automaticamente informações com dispositivos sem fio que não emparelham explicitamente com este computador, tablet ou telefone.
 
@@ -385,7 +384,7 @@ Você pode configurar as informações que todos os aplicativos no dispositivo p
 
 - **Compartilhar dados de uso**: escolha o nível de dados de diagnóstico que são enviados. Suas opções:
   - Segurança 
-  - Basic
+  - Básico
   - Avançado
   - Completo
 - **Enviar dados de navegação do Microsoft Edge para a Análise do Microsoft 365**: para usar esse recurso, defina as configurações de **Compartilhar dados de uso** como **Avançado** ou **Completo**. Esse recurso controla quais dados de dispositivos corporativos com uma ID comercial configurada o Microsoft Edge envia para a Análise do Microsoft 365. Suas opções:
@@ -393,7 +392,7 @@ Você pode configurar as informações que todos os aplicativos no dispositivo p
   - **Enviar somente dados da Intranet**: permite que o administrador envie o histórico de dados da Intranet
   - **Enviar somente dados da Internet**: permite que o administrador envie o histórico de dados da Internet
   - **Enviar dados da Intranet e da Internet**: permite que o administrador envie o histórico de dados da Intranet e da Internet
-- **Servidor proxy de telemetria**: insira o FQDN (nome de domínio totalmente qualificado) ou o endereço IP de um servidor proxy para encaminhar solicitações de Experiências e Telemetria de Usuário Conectado usando uma conexão SSL (Secure Sockets Layer). O formato para essa configuração é *servidor*:*porta*. Se o proxy nomeado falhar ou se não for inserido um proxy ao habilitar essa política, os dados de Experiências e Telemetria do Usuário Conectado não serão enviados e permanecerão no dispositivo local.
+- **Servidor proxy de telemetria**: insira o FQDN (nome de domínio totalmente qualificado) ou o endereço IP de um servidor proxy para encaminhar solicitações de Experiências e Telemetria de Usuário Conectado usando uma conexão SSL (Secure Sockets Layer). O formato para essa configuração é *servidor*:*porta*. Se o proxy nomeado falhar ou se não for inserido um proxy durante a habilitação dessa política, os dados de Experiências e Telemetria do Usuário Conectado não serão enviados e permanecerão no dispositivo local.
 
   Formatos de exemplo:
 
@@ -467,27 +466,49 @@ Você pode configurar as informações que todos os aplicativos no dispositivo p
 - **Examinar todos os downloads**: controla se o Defender examina todos os arquivos baixados da Internet.
 - **Examinar scripts carregados nos navegadores da Web da Microsoft**: permite que o Defender verifique os scripts que são usados no Internet Explorer.
 - **Acesso do usuário final ao Defender**: controla se a interface do usuário do Windows Defender fica oculta para usuários finais. Quando alterada, esta configuração entra em vigor na próxima vez em que o computador do usuário final for reiniciado.
-- **Intervalo de atualização da assinatura (em horas)**: especifique o intervalo para o Defender verificar novos arquivos de assinatura.
+- **Intervalo de atualização da assinatura (em horas)**: insira o intervalo para o Defender verificar novos arquivos de assinatura.
 - **Monitorar a atividade de arquivos e programas**: permite que o Defender monitore a atividade de arquivos e programas nos dispositivos.
-- **Dias antes da exclusão de malware em quarentena**: permite que o Defender continue a rastrear o malware resolvido pelo número de dias que for especificado, para que você possa examinar manualmente os dispositivos afetados anteriormente. Se você definir o número de dias como **0**, o malware permanecerá na pasta de Quarentena e não será removido automaticamente.
-- **Limite de uso de CPU durante uma verificação**: permite limitar quanto da CPU é usada durante as verificações (de **1** a **100**).
+- **Dias antes de excluir malware em quarentena**: continuar o acompanhamento de malware resolvido para o número de dias que você inserir para que você possa verificar manualmente os dispositivos afetados previamente. Se você definir o número de dias como **0**, o malware permanecerá na pasta de Quarentena e não será removido automaticamente.
+- **Limite de uso de CPU durante uma verificação**: estipule um limite de quanto a CPU pode ser usada durante as verificações, de **1** a **100**.
 - **Verificar arquivos mortos**: permite que o Defender examine arquivos compactados, como ZIP ou CAB.
 - **Examinar mensagens de email de entrada**: permite que o Defender examine mensagens de email assim que elas chegarem ao dispositivo.
 - **Examinar unidades removíveis durante a varredura completa**: permite que o Defender examine unidades removíveis como pen drives.
 - **Examinar unidades de rede mapeadas durante uma verificação completa**: permite que o Defender examine arquivos em unidades de rede mapeadas.
   Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
 - **Examinar arquivos abertos de pastas de rede**: permite que o Defender verifique arquivos em unidades de rede compartilhadas (por exemplo, arquivos acessados de um caminho UNC). Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
-- **Proteção da nuvem**: permite ou bloqueia o Microsoft Active Protection Service de receber informações sobre a atividade de malware de dispositivos gerenciados. Essas informações são usadas para aprimorar o serviço futuramente.
+- **Proteção da nuvem**: permite ou bloqueia o Microsoft Active Protection Service de receber informações sobre a atividade de malware de dispositivos gerenciados. Essas informações melhora o serviço no futuro.
 - **Avisar os usuários antes de envio de amostras**: controla se os arquivos potencialmente mal-intencionados que podem exigir mais análise são enviados automaticamente para a Microsoft.
-- **Hora para realizar uma verificação rápida diária**: permite agendar uma verificação rápida que ocorre diariamente na hora que você selecionar.
-- **Tipo de verificação do sistema a executar**: insira o nível de verificação executado ao agendar uma verificação do sistema.
+- **Tempo para executar uma verificação rápida diária**: escolha a hora para executar uma verificação rápida diária. **Não configurado** não executa uma verificação diária. Se você quiser mais personalização, configure a **tipo de verificação do sistema para executar** configuração.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Tipo de verificação do sistema para executar**: Agendar uma verificação do sistema, incluindo o nível de verificação e o dia e hora para executar o exame. Suas opções:
+  - **Não configurado**: não agenda uma verificação de sistema no dispositivo. Os usuários finais pode manualmente executar verificações conforme necessário ou desejado em seus dispositivos.
+  - **Desabilitar**: desabilita a qualquer sistema de verificação no dispositivo. Escolha esta opção se você estiver usando uma solução de antivírus do parceiro que verifica os dispositivos.
+  - **Verificação rápida**: examina os locais comuns nos quais poderia haver malware registrado, tais como chaves de registro e conhecido pastas de inicialização do Windows.
+    - **Dia agendado**: escolha o dia para executar o exame.
+    - **Hora agendada**: escolha a hora para executar a verificação.
+  - **Verificação completa**: examina os locais comuns nos quais poderia haver malware registrado e também examina cada arquivo e pasta no dispositivo.
+    - **Dia agendado**: escolha o dia para executar o exame.
+    - **Hora agendada**: escolha a hora para executar a verificação.
+
+  Essa configuração pode entrar em conflito com o **tempo para executar uma verificação rápida diária** configuração. Algumas recomendações:
+
+  - Para executar uma verificação rápida diária, configurar o **tempo para executar uma verificação rápida diária** configuração.
+  - Para executar uma verificação rápida diária e uma verificação completa de todas as semanas, em seguida, configure a **tempo para executar uma verificação rápida diária**e defina **tipo de verificação do sistema para executar** para uma verificação completa com o dia e hora.
+  - Não configure a **tempo para executar uma verificação rápida diária** definindo simultaneamente com o **tipo de verificação do sistema para realizar** definido como **verificação rápida**. Essas configurações podem entrar em conflito e pode não ser executada uma verificação.
+  - Para executar uma verificação rápida às terças-feiras às 6H, configurar o **tipo de verificação do sistema para executar** configuração.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Detectar aplicativos potencialmente indesejados**: escolha o nível de proteção quando o Windows detecta aplicativos potencialmente indesejados:
   - **Bloquear**
   - **Auditoria**. Para saber mais sobre aplicativos potencialmente indesejados, consulte [Detectar e bloquear aplicativos potencialmente indesejados](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Ações sobre ameaças de malware detectadas**: use esta opção para escolher as ações que o Defender deve realizar para cada nível de ameaça detectada (Baixa, Moderada, Alta e Grave). Suas opções:
+- **Ações sobre ameaças de malware detectadas**: escolha as ações que o Defender deve realizar para cada nível de ameaça detectada: baixa, moderada, alta e grave. Suas opções:
   - **Apagar**
   - **Quarentena**
-  - **Removerr**
+  - **Remover**
   - **Permitir**
   - **Definido pelo usuário**
   - **Bloquear**
