@@ -1,6 +1,6 @@
 ---
 title: Início Rápido – Experimente o Microsoft Intune gratuitamente
-titlesuffix: ''
+titleSuffix: ''
 description: Neste início rápido você criará uma assinatura de avaliação gratuita, entenderá as configurações compatíveis e os requisitos de rede e, opcionalmente, configurará seu nome de domínio.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756846"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871388"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: Experimente o Microsoft Intune gratuitamente 
 
@@ -110,7 +110,7 @@ Como mencionado acima, se sua organização tiver seu próprio domínio personal
 
    ![Captura de tela do Centro de administração do Microsoft 365 – Adicionar domínio](./media/domain-custom-add.png)
 
-4. Verifique se que você é o proprietário do domínio inserido anteriormente. 
+4. Verifique se que você é o proprietário do domínio inserido na etapa anterior. 
     
     Selecionar **enviar código por email** enviará um email para o contato registrado do seu domínio. Depois de receber o email, copie o código e insira-o no campo de rotulado **Digite seu código de verificação aqui**. Se o código de verificação for correspondente, o domínio será adicionado ao seu locatário. O email exibido pode não parecer familiar. Alguns registradores ocultam o endereço de email real. Além disso, o endereço de email pode ser diferente do que foi fornecido quando o domínio foi registrado.
 

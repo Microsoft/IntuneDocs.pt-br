@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389972"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871409"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Início Rápido: Registrar seu dispositivo Windows 10
 
@@ -72,7 +72,7 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 
     ![Selecione Acessar conta corporativa ou de estudante](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Entre no Intune com sua conta corporativa ou de estudante e selecione **Avançar**. Se você seguiu o início rápido [criar um usuário e atribuir uma licença], poderá entrar com a conta de usuário que você criou.
+3. Entre no Intune com sua conta corporativa ou de estudante e selecione **Avançar**. Se você seguiu o início rápido [criar um usuário e atribuir uma licença](quickstart-create-user.md), poderá entrar com a conta de usuário que você criou.
 
     > [!NOTE]
     > Se você configurar um ".onmicrosoft.com", a conta de usuário terá **.onmicrosoft.com** como parte do endereço dela. 

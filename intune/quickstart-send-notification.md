@@ -1,12 +1,12 @@
 ---
 title: Início Rápido – Enviar notificações para dispositivos não compatíveis
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Neste início rápido você usará o Microsoft Intune para enviar notificações por email para dispositivos não compatíveis.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991116"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871426"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início Rápido: Enviar notificações para dispositivos não compatíveis
 
@@ -40,7 +40,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no portal do [Intune](https://aka.ms/intuneportal) como um [administrador global](users-add.md#types-of-administrators) ou um [administrador de serviços](users-add.md#types-of-administrators) do Intune. 
+Entre no portal do [Intune](https://aka.ms/intuneportal) como um [administrador global](users-add.md#types-of-administrators) ou um [administrador de serviços](users-add.md#types-of-administrators) do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="create-a-notification-message-template"></a>Criar um modelo da mensagem de notificação
 
@@ -83,14 +83,13 @@ As etapas a seguir criarão uma política de conformidade para dispositivos Wind
 5. Defina **Exigir uma senha para desbloquear os dispositivos móveis** como **Exigir**. Essa configuração especifica se os usuários terão que inserir uma senha antes do acesso ser concedido às informações em seus dispositivos móveis. 
 6. Defina **Comprimento mínimo da senha** como **6**. Essa configuração especifica o número mínimo de dígitos ou caracteres na senha.
 
-    ![Configurações de segurança do sistema para uma nova política de conformidade](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Clique em **Ok**, **Ok** e **criar** para criar a política de conformidade.
-8. Selecione o nome da nova política: **conformidade do Windows 10**.
-9. Selecione **Propriedades** > **Ação de não conformidade** > **Adicionar**.
-10. Na caixa suspensa **Ação**, confirme se a opção **Enviar um email para os usuários finais** está selecionada.
-11. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que você criou anteriormente neste tópico.
-12. Selecione **Ok** > **Ok** > **Salvar** para salvar suas alterações.
+8. Selecione **Propriedades** > **Ação de não conformidade** > **Adicionar**.
+9. Na caixa suspensa **Ação**, confirme se a opção **Enviar um email para os usuários finais** está selecionada.
+10. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que você criou anteriormente neste tópico.
+11. Selecione **ADICIONAR** > **Ok** > **Salvar** para salvar suas alterações.
 
 ## <a name="assign-the-policy"></a>Atribuir a política
 

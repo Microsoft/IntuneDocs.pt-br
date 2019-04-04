@@ -1,12 +1,12 @@
 ---
 title: Início Rápido – Adicionar e atribuir um aplicativo cliente
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Neste início rápido, você usará o Microsoft Intune para adicionar e atribuir um aplicativo cliente.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391878"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798736"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Início Rápido: Adicionar e atribuir um aplicativo cliente
 
@@ -37,7 +37,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Intune](https://aka.ms/intuneportal) como um [administrador global ou um administrador de serviços do Intune](users-add.md#types-of-administrators). Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
+Entre no [Intune](https://aka.ms/intuneportal) como um [Administrador Global ou um Administrador de Serviços do Intune](users-add.md#types-of-administrators). Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="add-the-client-app-to-intune"></a>Adicione o aplicativo cliente ao Intune
 
@@ -66,7 +66,7 @@ Use as seguintes etapas para adicionar um aplicativo ao Intune:
 Depois de adicionar um aplicativo ao Microsoft Intune, é possível atribuí-lo a grupos de usuários ou dispositivos.
 
 > [!NOTE]
-> Esse build de início rápido nos inícios rápidos anteriores nesta série. Consulte [pré-requisitos](quickstart-add-assign-app.md#prerequisites) neste início rápido para obter detalhes.
+> Este início rápido se baseia nos guias de início rápido anteriores desta série. Consulte [pré-requisitos](quickstart-add-assign-app.md#prerequisites) neste início rápido para obter detalhes.
 
 Use as seguintes etapas para atribuir um aplicativo a um grupo:
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicativos cliente** > **Aplicativos**. 

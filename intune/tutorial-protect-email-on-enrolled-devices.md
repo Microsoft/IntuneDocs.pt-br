@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: proteger o email do Exchange Online em dispositivos gerenciados pelo Intune'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como proteger o Exchange Online com políticas de conformidade do Intune para iOS e acesso condicional do Azure AD para exigir dispositivos gerenciados e o aplicativo do Outlook.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528200"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799761"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos gerenciados
 Saiba como usar políticas de conformidade de dispositivo com acesso condicional para garantir que os dispositivos iOS acessem emails do Exchange Online somente se forem gerenciados pelo Intune e usarem um aplicativo de email aprovado. 
@@ -43,7 +43,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune. O Intune encontra-se no portal do Azure, escolha **Todos os serviços** > **Intune**.
+Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>Criar a política de conformidade para o dispositivo iOS
 Definir uma política de conformidade do Intune para dispositivos a fim de definir as condições que um dispositivo deve atender para ser considerado compatível. Para este tutorial, criaremos uma política de conformidade do dispositivo para dispositivos iOS. As políticas de conformidade são específicas da plataforma, portanto, você precisa de uma política de conformidade separada para cada plataforma de dispositivo que deseja avaliar.
@@ -93,7 +93,7 @@ Agora, criaremos uma política de acesso condicional que exige que todas as plat
 5.  Em **Atribuições**, selecione **Condições** > **Plataformas de dispositivos**.
      
     1. Em **Configurar**, selecione **Sim**.
-    2. Na guia **Incluir**, selecione **Todas as plataformas (incluindo sem suporte)** e, em seguida, selecione **Concluído**. 
+    2. Na guia **Incluir**, selecione **Todos os dispositivos** e, em seguida, **Concluído**. 
     3. Selecione **Concluído** novamente.
    
     ![Selecionar o aplicativo do Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

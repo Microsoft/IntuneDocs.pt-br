@@ -1,12 +1,12 @@
 ---
 title: Início Rápido – Criar uma política de conformidade de senha para dispositivos Android
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Neste início rápido, você usará o Microsoft Intune para configurar um comprimento de senha obrigatório para dispositivos Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397203"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799651"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início Rápido: Criar uma política de conformidade de senha para dispositivos Android
 
@@ -49,7 +49,8 @@ Para este início rápido, você usará o Intune para exigir que os usuários do
 3. Para **Plataforma**, selecione **Android**. 
 4. Selecione **Configurações** > **Segurança do Sistema** para exibir a folha **Segurança do Sistema** do Android.
 5. Clique em **Exigir** ao lado de **Exigir uma senha para desbloquear dispositivos móveis**.
-6. Insira **6** ao lado de **Comprimento mínimo da senha**. 
+6. Selecione **Ao menos numérico** ao lado de **Tipo de senha obrigatório**.
+7. Insira **6** ao lado de **Comprimento mínimo da senha**. 
 
     ![Captura de tela da criação de um grupo no Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

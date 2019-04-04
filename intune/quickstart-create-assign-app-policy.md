@@ -1,12 +1,12 @@
 ---
 title: Início Rápido – Criar e atribuir uma política de proteção de aplicativo
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Neste início rápido, você usará o Microsoft Intune para criar e atribuir uma política de proteção de aplicativo.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393355"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871354"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início Rápido: Criar e atribuir uma política de proteção de aplicativo
 
@@ -72,7 +72,7 @@ Use as seguintes etapas para atribuir a política de proteção do aplicativo:
 3.  Selecione **Atribuições**.
 4.  Clique em **Selecionar grupos para incluir** na guia **Incluir**.
 5.  Selecione **Testadores Contoso** como grupo para incluir.
-6.  Clique em **Selecionar**. 
+6.  Clique em **Selecionar** > **Salvar**. 
 
 Você agora atribuiu a política de proteção de aplicativo.
 

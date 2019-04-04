@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como proteger o Office 365 Exchange Online com as políticas de proteção de aplicativo do Intune e acesso condicional do Azure AD.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528268"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798777"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados
 
@@ -91,8 +91,8 @@ Agora, vamos criar duas políticas de acesso condicional para cobrir todas as pl
 5.  Em **Atribuições**, selecione **Condições** > **Plataformas de dispositivos**.
      
     1. Em **Configurar**, selecione **Sim**.
-    2. Na guia **Incluir**, selecione **Todas as plataformas (incluindo sem suporte)**. 
-    3. Selecione **Concluído**.
+    2. Na guia **Incluir**, selecione **Qualquer dispositivo**.
+    1. Selecione **Concluído**.
    
 6.  No painel **Condições**, selecione **Aplicativos clientes**.
      
@@ -136,7 +136,7 @@ A política de acesso condicional para clientes de autenticação moderna foi cr
 5.  Em **Atribuições**, selecione **Condições** > **Plataformas de dispositivos**.
      
     1. Em **Configurar**, selecione **Sim**.
-    2. Na guia **Incluir**, selecione **Todas as plataformas (incluindo sem suporte)** e, em seguida, selecione **Concluído**. 
+    2. Na guia **Incluir**, selecione **Todos os dispositivos** e, em seguida, **Concluído**. 
     3. Selecione **Concluído** novamente.
 
 6.  No painel **Condições**, selecione **Aplicativos clientes**.
