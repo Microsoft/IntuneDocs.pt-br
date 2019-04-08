@@ -1,6 +1,6 @@
 ---
 title: Exibir o inventário de software e hardware para computadores Windows
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Como exibir informações de hardware e software sobre áreas de trabalho do Windows gerenciadas como computadores com o cliente de software do Intune.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45cff8fced4683ca2850a06506a7ff154611d2b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1de4783d9d6e151f616406cc6a2f80406f58e408
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459995"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798558"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Exibir o inventário de software e hardware para computadores Windows
 

@@ -1,6 +1,6 @@
 ---
 title: Data – Intune Data Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Tópico de referência para a categoria de Data de coleções de entidade na API Intune Data Warehouse.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2813c2b3f94bf0d57d63b75250239149eb2c1726
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565988"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798487"
 ---
 # <a name="reference-for-date-entity"></a>Referência para a entidade de Data
 

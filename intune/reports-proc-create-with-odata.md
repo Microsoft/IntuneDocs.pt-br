@@ -1,6 +1,6 @@
 ---
 title: Criar um relatório do feed OData com o Power BI
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Crie uma visualização de mapa de árvore usando o Power BI Desktop com um filtro interativo da API do Data Warehouse do Intune.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cd0f8b5337ad562bddd65bc449a35ec0773f5ed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b9cfb464122018c6e77d5ea1395b699bafa81f33
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565614"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799029"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
