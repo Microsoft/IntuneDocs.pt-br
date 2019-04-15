@@ -1,5 +1,6 @@
 ---
-title: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) | Microsoft Intune
+title: Criar e implantar a política de proteção do aplicativo da WIP (Proteção de Informações do Windows)
+titleSuffix: Microsoft Intune
 description: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) com o Microsoft Intune
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231563"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569760"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -125,7 +127,8 @@ Depois de adicionar os aplicativos que deseja proteger com WIP, você precisará
 
 O Aprendizado da WIP é um relatório que permite monitorar aplicativos habilitados para WIP e desconhecidos da WIP. Os aplicativos desconhecidos são aqueles que não são implantados pelo departamento de TI da sua organização. É possível exportar esses aplicativos do relatório e adicioná-los às políticas de WIP para evitar a interrupção de produtividade antes que eles imponham o WIP no modo "Bloquear".
 
-<!-- 1631908 --> Além de exibir informações sobre aplicativos habilitados para WIP, você pode exibir um resumo dos dispositivos que compartilharam dados de trabalho com sites. Com essas informações, é possível determinar quais sites devem ser adicionados às políticas de WIP de grupo e de usuário. O resumo mostra quais URLs de site são acessadas pelos aplicativos habilitados pela WIP.
+<!-- 1631908 -->
+Além de exibir informações sobre aplicativos habilitados para WIP, você pode exibir um resumo dos dispositivos que compartilharam dados de trabalho com sites. Com essas informações, é possível determinar quais sites devem ser adicionados às políticas de WIP de grupo e de usuário. O resumo mostra quais URLs de site são acessadas pelos aplicativos habilitados pela WIP.
 
 Ao trabalhar com aplicativos habilitados para a WIP e aplicativos desconhecidos da WIP, recomendamos que você inicie com **Silencioso** ou **Permitir Substituições** durante a verificação com um pequeno grupo que você tenha os aplicativos certos em sua lista de aplicativos protegidos. Depois de terminar, você poderá alterar sua política de imposição final, **Bloquear**.
 

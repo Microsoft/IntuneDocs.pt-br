@@ -1,6 +1,6 @@
 ---
 title: Adicionar aplicativos ao Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como adicionar aplicativos ao Microsoft Intune para poder atribui-los a usuários e dispositivos. O Intune é compatível com uma ampla variedade de tipos de aplicativos.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c0f7723e242a77b85db1f9007f26697769edd
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3dfd2442d737b91d5722f26313ac1d0200a341a7
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229880"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568369"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 

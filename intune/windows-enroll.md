@@ -1,6 +1,6 @@
 ---
 title: Configurar o registro para dispositivos Windows usando o Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Configurar o registro para dispositivos Windows.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2192b6d653bfb51503b006a5045d454c202618f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234096"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567290"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar o registro para dispositivos Windows
 
@@ -42,8 +43,8 @@ Dois fatores determinam como você pode simplificar o registro de dispositivos d
 
 ||**Azure AD Premium**|**Outro AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Registro automático](#enable-windows-10-automatic-enrollment) |[Registro de usuário](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Versões anteriores do Windows**|[Registro de usuário](#enable-windows-enrollment-without-azure-ad-premium)|[Registro de usuário](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Registro automático](#enable-windows-10-automatic-enrollment) |Registro de usuários|
+|**Versões anteriores do Windows**|Registro de usuários|Registro de usuários|
 
 As organizações que podem usar o registro automático também podem configurar [dispositivos de registro em massa](windows-bulk-enroll.md) usando o aplicativo de Designer de Configuração do Windows.
 

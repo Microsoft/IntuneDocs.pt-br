@@ -1,15 +1,16 @@
 ---
 title: O que é gerenciamento de aplicativo no Microsoft Intune?
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba mais sobre os recursos de gerenciamento de aplicativo cliente por plataforma para o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850889"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569058"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -44,7 +45,7 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Adicionar e atribuir aplicativos a dispositivos e usuários | Sim | Sim | Sim | Sim | Sim |
 | Atribuir aplicativos a dispositivos não registrados com o Intune | Sim | Sim | Não | Não | Não |
-| Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos | Não | Sim | Não | Não | Não |
+| Usar políticas de configuração de aplicativo para controlar o comportamento de inicialização de aplicativos | Sim | Sim | Não | Não | Não |
 | Usar políticas de provisionamento de aplicativo móvel para renovar aplicativos expirados | Não | Sim | Não | Não | Não |
 | Proteger os dados corporativos em aplicativos com as políticas de proteção de aplicativo | Sim | Sim | Não | Nº 1 | Não |
 | Remover apenas dados corporativos de um aplicativo instalado (apagamento seletivo do aplicativo) | Sim | Sim | Não | Sim | Sim |
