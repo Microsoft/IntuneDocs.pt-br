@@ -10,6 +10,7 @@ ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fd91a3537b9350b1cf647f203fb1454cd17a62d
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 73808499aa4f70b4a05e5e7984eaf3af6e7654c9
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238958"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389329"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -84,7 +85,7 @@ Para a preparação do dispositivo, a página de status do registro rastreia tes
 ### <a name="device-setup"></a>Configuração do dispositivo
 
 Para a configuração do dispositivo, a página de status de registro controlará os seguintes itens se eles tiverem sido atribuídos a Todos os dispositivos:
-- Políticas de segurança
+- Diretivas de segurança
     - Um CSP (provedor de serviço de configuração) para todos os registros.
     - CSPs reais configurados pelo Intune não são rastreados aqui.
 - Aplicativos
@@ -97,7 +98,7 @@ Para a configuração do dispositivo, a página de status de registro controlar�
 
 ### <a name="account-setup"></a>Configuração da conta
 Para a configuração de conta, a página de status de registro rastreia os seguintes itens:
-- Políticas de segurança
+- Diretivas de segurança
     - Um CSP para todos os registros.
     - CSPs reais configurados pelo Intune não são rastreados aqui.
 - Aplicativos
