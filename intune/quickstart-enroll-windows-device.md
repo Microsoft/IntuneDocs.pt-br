@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 872cbd203a57976bd1bceb83e5fbf95a15721ff4
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: b774235e896c4dcbc548d4c8c65b4c6ab218ea28
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292293"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587477"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Início Rápido: Registrar seu dispositivo Windows 10
 
@@ -60,7 +60,7 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 4. Confirme se a **versão** do Windows 10 é **1607 ou posterior**.
 
     > [!IMPORTANT]
-    > As etapas apresentadas neste início rápido são para a versão **1607 ou posterior** do Windows 10, se a versão for **1511 ou anterior**, continue com [estas etapas](/intune-user-help/enroll-windows-10-device.md).  
+    > As etapas apresentadas neste início rápido são para a versão **1607 ou posterior** do Windows 10, se a versão for **1511 ou anterior**, continue com [estas etapas](/intune-user-help/enroll-windows-10-device).  
 
 ## <a name="enroll-windows-10-desktop"></a>Registrar o Windows 10 Desktop
 
