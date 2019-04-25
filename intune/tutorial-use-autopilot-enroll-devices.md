@@ -20,11 +20,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511501"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Usar o Autopilot para registrar dispositivos Windows no Intune
 O Windows Autopilot simplifica a inscrição de dispositivos. Com o Microsoft Intune e o Autopilot, você pode fornecer novos dispositivos aos usuários finais sem a necessidade de criar, manter e aplicar imagens personalizadas do sistema operacional. 
